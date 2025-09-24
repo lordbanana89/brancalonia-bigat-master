@@ -744,4 +744,5 @@ function applyMenagramoToRoll(actor, config) {
     ui.notifications.warn("Il Menagramo colpisce pesantemente!");
   }
 }
+
 export { MenagramoSystem };
