@@ -52,17 +52,6 @@
       }
     },
     {
-      "name": "classi",
-      "label": "Classi di Brancalonia",
-      "path": "packs/classi",
-      "type": "Item",
-      "system": "dnd5e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
       "name": "equipaggiamento",
       "label": "Equipaggiamento Scadente",
       "path": "packs/equipaggiamento",
@@ -191,7 +180,6 @@
       "packs": [
         "backgrounds",
         "brancalonia-features",
-        "classi",
         "emeriticenze",
         "equipaggiamento",
         "incantesimi",
