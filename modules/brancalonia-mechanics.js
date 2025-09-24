@@ -236,8 +236,7 @@ export class BrancaloniaMechanics {
           ui.notifications.info("Trappola piazzata. Ricorda di nasconderla!");
         `
       });
-    });
-  }
+    };
 
   /**
    * Sistema Padrini/Mentori
