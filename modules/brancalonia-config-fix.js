@@ -70,11 +70,23 @@ Hooks.once("ready", () => {
           reference: "Compendium.brancalonia-bigat.regole.JournalEntry.menagramo",
           statuses: ["menagramo"]
         },
-        ubriaco: {
+        drunk: {
           name: "Ubriaco",
           img: "modules/brancalonia-bigat/assets/icons/ubriaco.svg",
           reference: "Compendium.brancalonia-bigat.regole.JournalEntry.ubriachezza",
           statuses: ["ubriaco"]
+        },
+        batosta: {
+          name: "Batosta",
+          img: "modules/brancalonia-bigat/assets/icons/batosta.svg",
+          reference: "Compendium.brancalonia-bigat.regole.JournalEntry.risse",
+          statuses: ["batosta"]
+        },
+        incapacitato: {
+          name: "Incapacitato",
+          img: "modules/brancalonia-bigat/assets/icons/incapacitato.svg",
+          reference: "Compendium.brancalonia-bigat.regole.JournalEntry.risse",
+          statuses: ["incapacitato"]
         }
       });
     }

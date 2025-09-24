@@ -27,6 +27,31 @@ Hooks.once("init", () => {
   // Le configurazioni CONFIG sono spostate in brancalonia-config-fix.js per evitare conflitti
   // con altri moduli che fanno deepClone durante init
 
+  // Registra gli status effects custom
+  CONFIG.statusEffects.push({
+    id: "menagramo",
+    name: "Menagramo",
+    img: "modules/brancalonia-bigat/assets/icons/menagramo.svg"
+  });
+
+  CONFIG.statusEffects.push({
+    id: "ubriaco",
+    name: "Ubriaco",
+    img: "modules/brancalonia-bigat/assets/icons/ubriaco.svg"
+  });
+
+  CONFIG.statusEffects.push({
+    id: "batosta",
+    name: "Batosta",
+    img: "modules/brancalonia-bigat/assets/icons/batosta.svg"
+  });
+
+  CONFIG.statusEffects.push({
+    id: "incapacitato",
+    name: "Incapacitato",
+    img: "modules/brancalonia-bigat/assets/icons/incapacitato.svg"
+  });
+
   // Registra template paths - Usa il nuovo namespace per Foundry v13
   foundry.applications.handlebars.loadTemplates([
     "modules/brancalonia-bigat/templates/infamia-tracker.hbs",
