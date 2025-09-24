@@ -13,7 +13,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!contatore-baraonda_0"
     },
     {
       "_id": "contatore-baraonda_1",
@@ -24,7 +25,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!contatore-baraonda_1"
     },
     {
       "_id": "contatore-baraonda_2",
@@ -35,7 +37,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!contatore-baraonda_2"
     },
     {
       "_id": "contatore-baraonda_3",
@@ -46,7 +49,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!contatore-baraonda_3"
     },
     {
       "_id": "contatore-baraonda_4",
@@ -57,7 +61,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!contatore-baraonda_4"
     },
     {
       "_id": "contatore-baraonda_5",
@@ -68,7 +73,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!contatore-baraonda_5"
     }
   ],
   "formula": "1d6",
@@ -83,5 +89,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!contatore-baraonda"
 }

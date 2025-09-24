@@ -13,7 +13,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_0"
     },
     {
       "_id": "malattie-brancalonia_1",
@@ -24,7 +25,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_1"
     },
     {
       "_id": "malattie-brancalonia_2",
@@ -35,7 +37,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_2"
     },
     {
       "_id": "malattie-brancalonia_3",
@@ -46,7 +49,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_3"
     },
     {
       "_id": "malattie-brancalonia_4",
@@ -57,7 +61,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_4"
     },
     {
       "_id": "malattie-brancalonia_5",
@@ -68,7 +73,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_5"
     },
     {
       "_id": "malattie-brancalonia_6",
@@ -79,7 +85,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_6"
     },
     {
       "_id": "malattie-brancalonia_7",
@@ -90,7 +97,8 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_7"
     },
     {
       "_id": "malattie-brancalonia_8",
@@ -101,7 +109,8 @@
         9,
         9
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_8"
     },
     {
       "_id": "malattie-brancalonia_9",
@@ -112,7 +121,8 @@
         10,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!malattie-brancalonia_9"
     }
   ],
   "formula": "1d10",
@@ -127,5 +137,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!malattie-brancalonia"
 }

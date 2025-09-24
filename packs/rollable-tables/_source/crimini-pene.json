@@ -13,7 +13,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_0"
     },
     {
       "_id": "crimini-pene_1",
@@ -24,7 +25,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_1"
     },
     {
       "_id": "crimini-pene_2",
@@ -35,7 +37,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_2"
     },
     {
       "_id": "crimini-pene_3",
@@ -46,7 +49,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_3"
     },
     {
       "_id": "crimini-pene_4",
@@ -57,7 +61,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_4"
     },
     {
       "_id": "crimini-pene_5",
@@ -68,7 +73,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_5"
     },
     {
       "_id": "crimini-pene_6",
@@ -79,7 +85,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_6"
     },
     {
       "_id": "crimini-pene_7",
@@ -90,7 +97,8 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_7"
     },
     {
       "_id": "crimini-pene_8",
@@ -101,7 +109,8 @@
         9,
         9
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_8"
     },
     {
       "_id": "crimini-pene_9",
@@ -112,7 +121,8 @@
         10,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_9"
     },
     {
       "_id": "crimini-pene_10",
@@ -123,7 +133,8 @@
         11,
         11
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_10"
     },
     {
       "_id": "crimini-pene_11",
@@ -134,7 +145,8 @@
         12,
         12
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!crimini-pene_11"
     }
   ],
   "formula": "1d12",
@@ -149,5 +161,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!crimini-pene"
 }

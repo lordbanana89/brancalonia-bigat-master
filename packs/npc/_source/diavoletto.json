@@ -5,18 +5,85 @@
   "img": "icons/creatures/unholy/imp-horned-wings-red.webp",
   "system": {
     "abilities": {
-      "str": {"value": 6, "proficient": 0, "bonuses": {"check": "", "save": ""}},
-      "dex": {"value": 17, "proficient": 0, "bonuses": {"check": "", "save": ""}},
-      "con": {"value": 13, "proficient": 0, "bonuses": {"check": "", "save": ""}},
-      "int": {"value": 11, "proficient": 0, "bonuses": {"check": "", "save": ""}},
-      "wis": {"value": 12, "proficient": 0, "bonuses": {"check": "", "save": ""}},
-      "cha": {"value": 14, "proficient": 0, "bonuses": {"check": "", "save": ""}}
+      "str": {
+        "value": 6,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 17,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 11,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
     },
     "attributes": {
-      "ac": {"flat": 13, "calc": "default", "formula": ""},
-      "hp": {"value": 10, "max": 10, "temp": 0, "tempmax": 0, "formula": "3d4+3"},
-      "movement": {"burrow": 0, "climb": 0, "fly": 40, "swim": 0, "walk": 20, "units": "ft", "hover": false},
-      "senses": {"darkvision": 120, "blindsight": 0, "tremorsense": 0, "truesight": 0, "units": "ft", "special": ""},
+      "ac": {
+        "flat": 13,
+        "calc": "default",
+        "formula": ""
+      },
+      "hp": {
+        "value": 10,
+        "max": 10,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "3d4+3"
+      },
+      "movement": {
+        "burrow": 0,
+        "climb": 0,
+        "fly": 40,
+        "swim": 0,
+        "walk": 20,
+        "units": "ft",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": 120,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
       "spellcasting": "",
       "prof": 2
     },
@@ -36,65 +103,287 @@
       "environment": "urban, infernal",
       "cr": 1,
       "spellLevel": 0,
-      "xp": {"value": 200},
+      "xp": {
+        "value": 200
+      },
       "source": "Tomo dei Mostri Tascabili"
     },
     "traits": {
       "size": "tiny",
-      "di": {"value": ["fire", "cold"], "custom": ""},
-      "dr": {"value": [], "custom": "Resistenza ai danni da freddo; resistenza ai danni contundenti, perforanti e taglienti da attacchi non magici che non siano fatti con armi d'argento"},
-      "dv": {"value": [], "custom": ""},
-      "ci": {"value": ["poisoned"], "custom": ""},
+      "di": {
+        "value": [
+          "fire",
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": "Resistenza ai danni da freddo; resistenza ai danni contundenti, perforanti e taglienti da attacchi non magici che non siano fatti con armi d'argento"
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
+      },
       "languages": {
-        "value": ["common", "infernal"],
+        "value": [
+          "common",
+          "infernal"
+        ],
         "custom": "Comune e Infernale"
       }
     },
-    "currency": {"pp": 0, "gp": 0, "ep": 0, "sp": 0, "cp": 0},
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
     "skills": {
-      "acr": {"value": 0, "ability": "dex", "bonuses": {"check": "", "passive": ""}},
-      "ani": {"value": 0, "ability": "wis", "bonuses": {"check": "", "passive": ""}},
-      "arc": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
-      "ath": {"value": 0, "ability": "str", "bonuses": {"check": "", "passive": ""}},
-      "dec": {"value": 1, "ability": "cha", "bonuses": {"check": "", "passive": ""}},
-      "his": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
-      "ins": {"value": 1, "ability": "wis", "bonuses": {"check": "", "passive": ""}},
-      "inti": {"value": 0, "ability": "cha", "bonuses": {"check": "", "passive": ""}},
-      "inv": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
-      "med": {"value": 0, "ability": "wis", "bonuses": {"check": "", "passive": ""}},
-      "nat": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
-      "prc": {"value": 1, "ability": "wis", "bonuses": {"check": "", "passive": ""}},
-      "prf": {"value": 0, "ability": "cha", "bonuses": {"check": "", "passive": ""}},
-      "per": {"value": 1, "ability": "cha", "bonuses": {"check": "", "passive": ""}},
-      "rel": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
-      "slt": {"value": 0, "ability": "dex", "bonuses": {"check": "", "passive": ""}},
-      "ste": {"value": 1, "ability": "dex", "bonuses": {"check": "", "passive": ""}},
-      "sur": {"value": 0, "ability": "wis", "bonuses": {"check": "", "passive": ""}}
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "dec": {
+        "value": 1,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ins": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "inti": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "per": {
+        "value": 1,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      }
     },
     "spells": {
-      "spell1": {"value": 0, "override": null, "max": 0},
-      "spell2": {"value": 0, "override": null, "max": 0},
-      "spell3": {"value": 0, "override": null, "max": 0},
-      "spell4": {"value": 0, "override": null, "max": 0},
-      "spell5": {"value": 0, "override": null, "max": 0},
-      "spell6": {"value": 0, "override": null, "max": 0},
-      "spell7": {"value": 0, "override": null, "max": 0},
-      "spell8": {"value": 0, "override": null, "max": 0},
-      "spell9": {"value": 0, "override": null, "max": 0},
-      "pact": {"value": 0, "override": null, "max": 0, "level": 0}
+      "spell1": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell2": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell3": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell4": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell5": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell6": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell7": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell8": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell9": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "pact": {
+        "value": 0,
+        "override": null,
+        "max": 0,
+        "level": 0
+      }
     },
     "bonuses": {
-      "mwak": {"attack": "", "damage": ""},
-      "rwak": {"attack": "", "damage": ""},
-      "msak": {"attack": "", "damage": ""},
-      "rsak": {"attack": "", "damage": ""},
-      "abilities": {"check": "", "save": "", "skill": ""},
-      "spell": {"dc": ""}
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
     },
     "resources": {
-      "legact": {"value": 0, "max": 0},
-      "legres": {"value": 0, "max": 0},
-      "lair": {"value": false, "initiative": 0}
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 0
+      }
     }
   },
   "items": [
@@ -168,7 +457,8 @@
           "value": null,
           "charged": false
         }
-      }
+      },
+      "_key": "!items!invisibility001"
     },
     {
       "_id": "sting001",
@@ -232,7 +522,16 @@
           "damage": ""
         },
         "damage": {
-          "parts": [["1d4+3", "piercing"], ["3d6", "poison"]],
+          "parts": [
+            [
+              "1d4+3",
+              "piercing"
+            ],
+            [
+              "3d6",
+              "poison"
+            ]
+          ],
           "versatile": ""
         },
         "formula": "",
@@ -254,7 +553,8 @@
         "baseItem": "",
         "properties": {},
         "proficient": true
-      }
+      },
+      "_key": "!items!sting001"
     }
   ],
   "effects": [],
@@ -291,8 +591,12 @@
     "alpha": 1,
     "disposition": -1,
     "displayBars": 0,
-    "bar1": {"attribute": "attributes.hp"},
-    "bar2": {"attribute": null},
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
     "light": {
       "alpha": 0.5,
       "angle": 360,
@@ -329,5 +633,6 @@
     "detectionModes": [],
     "flags": {},
     "randomImg": false
-  }
+  },
+  "_key": "!actors!diavoletto001"
 }

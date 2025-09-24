@@ -13,7 +13,8 @@
         1,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_0"
     },
     {
       "_id": "incontri-strada_1",
@@ -24,7 +25,8 @@
         3,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_1"
     },
     {
       "_id": "incontri-strada_2",
@@ -35,7 +37,8 @@
         5,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_2"
     },
     {
       "_id": "incontri-strada_3",
@@ -46,7 +49,8 @@
         7,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_3"
     },
     {
       "_id": "incontri-strada_4",
@@ -57,7 +61,8 @@
         9,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_4"
     },
     {
       "_id": "incontri-strada_5",
@@ -68,7 +73,8 @@
         11,
         12
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_5"
     },
     {
       "_id": "incontri-strada_6",
@@ -79,7 +85,8 @@
         13,
         14
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_6"
     },
     {
       "_id": "incontri-strada_7",
@@ -90,7 +97,8 @@
         15,
         16
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_7"
     },
     {
       "_id": "incontri-strada_8",
@@ -101,7 +109,8 @@
         17,
         18
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_8"
     },
     {
       "_id": "incontri-strada_9",
@@ -112,7 +121,8 @@
         19,
         19
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_9"
     },
     {
       "_id": "incontri-strada_10",
@@ -123,7 +133,8 @@
         20,
         20
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!incontri-strada_10"
     }
   ],
   "formula": "1d20",
@@ -138,5 +149,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!incontri-strada"
 }

@@ -47,6 +47,9 @@ Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema 
 - Foundry VTT v13.0.0 o superiore (testato fino a v13.347)
 - Sistema D&D 5e v5.0.0 o superiore (ottimizzato per v5.1.9)
 
+#### ⚠️ Nota Importante per gli Sviluppatori
+I compendi di Foundry v13 richiedono il campo `_key` in formato `!collection!id` per ogni documento JSON. Senza questo campo, il CLI di Foundry creerà database vuoti. Vedi la sezione Sviluppo per dettagli.
+
 #### Metodo 1: URL Manifest (Raccomandato)
 1. In Foundry VTT, vai su **Add-on Modules** → **Install Module**
 2. Incolla questo URL nel campo Manifest:
@@ -149,6 +152,58 @@ I contenuti di Brancalonia sono proprietà di Acheron Games.
 
 ---
 
-**Versione**: 3.1.3
+## 🔧 Sviluppo
+
+### Compilazione dei Compendi
+
+#### Requisiti Tecnici
+- Node.js v18+
+- Foundry VTT CLI v3.0.0+
+- Libreria classic-level
+
+#### Formato Documenti JSON
+**IMPORTANTE**: Ogni documento JSON nei compendi DEVE includere il campo `_key` nel formato:
+```json
+{
+  "_key": "!collection!document_id",
+  "_id": "document_id",
+  "name": "Nome Documento",
+  // ... altri campi
+}
+```
+
+Dove `collection` può essere:
+- `items` - per oggetti, talenti, features, backgrounds, ecc.
+- `actors` - per PNG e creature
+- `journal` - per regole e journal entries
+- `tables` - per tabelle casuali (RollTable)
+- `macros` - per le macro
+
+#### Script di Compilazione
+```bash
+# Aggiunge i _key mancanti
+node add-keys.cjs
+
+# Compila tutti i pack
+./build-packs.sh
+
+# Verifica i database creati
+node verify-packs.cjs
+```
+
+#### Problema Noto con CLI v3.0.0
+Il CLI di Foundry v3.0.0 salta silenziosamente i documenti senza il campo `_key`, creando database vuoti. Non viene mostrato alcun errore, ma il database risultante non conterrà documenti.
+
+### Struttura Directory
+```
+packs/
+├── [nome-pack]/
+│   ├── _source/        # File JSON sorgente
+│   └── [nome-pack]/    # Database LevelDB compilato
+```
+
+---
+
+**Versione**: 3.1.4
 **Compatibilità**: Foundry VTT v13.0.0+ | D&D 5e v5.0.0+
-**Ultimo Aggiornamento**: Settembre 2024
+**Ultimo Aggiornamento**: Settembre 2025

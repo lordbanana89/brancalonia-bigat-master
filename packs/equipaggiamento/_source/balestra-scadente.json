@@ -58,7 +58,12 @@
       "damage": ""
     },
     "damage": {
-      "parts": [["1d8", "piercing"]],
+      "parts": [
+        [
+          "1d8",
+          "piercing"
+        ]
+      ],
       "versatile": ""
     },
     "formula": "",
@@ -114,5 +119,6 @@
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null
-  }
+  },
+  "_key": "!items!balestrascadente001"
 }

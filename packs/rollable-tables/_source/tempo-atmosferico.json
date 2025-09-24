@@ -13,7 +13,8 @@
         1,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_0"
     },
     {
       "_id": "tempo-atmosferico_1",
@@ -24,7 +25,8 @@
         3,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_1"
     },
     {
       "_id": "tempo-atmosferico_2",
@@ -35,7 +37,8 @@
         5,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_2"
     },
     {
       "_id": "tempo-atmosferico_3",
@@ -46,7 +49,8 @@
         7,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_3"
     },
     {
       "_id": "tempo-atmosferico_4",
@@ -57,7 +61,8 @@
         9,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_4"
     },
     {
       "_id": "tempo-atmosferico_5",
@@ -68,7 +73,8 @@
         11,
         12
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_5"
     },
     {
       "_id": "tempo-atmosferico_6",
@@ -79,7 +85,8 @@
         13,
         14
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_6"
     },
     {
       "_id": "tempo-atmosferico_7",
@@ -90,7 +97,8 @@
         15,
         16
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_7"
     },
     {
       "_id": "tempo-atmosferico_8",
@@ -101,7 +109,8 @@
         17,
         18
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_8"
     },
     {
       "_id": "tempo-atmosferico_9",
@@ -112,7 +121,8 @@
         19,
         19
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_9"
     },
     {
       "_id": "tempo-atmosferico_10",
@@ -123,7 +133,8 @@
         20,
         20
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_10"
     }
   ],
   "formula": "1d20",
@@ -138,5 +149,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!tempo-atmosferico"
 }

@@ -1,0 +1,88 @@
+{
+  "_id": "background_azzeccagarbugli",
+  "name": "Azzeccagarbugli",
+  "type": "background",
+  "img": "icons/skills/social/diplomacy-writing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Azzeccagarbugli</h2><p>Notai, legulei e pennivendoli del Regno conoscono cavilli e codicilli meglio di chiunque altro. Gli azzeccagarbugli sanno aggirare Equitaglia, corrompere birri e far sparire scartoffie compromettenti.</p><h3>Competenze</h3><ul><li><strong>Abilità:</strong> Indagare, Persuasione</li><li><strong>Strumenti:</strong> Arnesi da falsario</li><li><strong>Linguaggi:</strong> Maccheronico</li></ul><h3>Equipaggiamento</h3><p>Un libro di leggi locali, un calamaio con pennino e pergamena, un abito pregiato, una borsa con 20 ma</p><h3>Privilegio: Risolvere Guai</h3><p>Puoi annullare una Malefatta tua o di un alleato pagando un ammontare pari al Valore di Taglia corrispondente, purché intervieni prima che sia aggiunta alla Taglia del personaggio.</p><p><em>Vedi il manuale di Brancalonia per tabelle di tratti, ideali, legami e difetti suggeriti.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!background_azzeccagarbugli"
+}

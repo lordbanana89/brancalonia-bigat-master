@@ -13,7 +13,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_0"
     },
     {
       "_id": "mestieri-popolani_1",
@@ -24,7 +25,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_1"
     },
     {
       "_id": "mestieri-popolani_2",
@@ -35,7 +37,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_2"
     },
     {
       "_id": "mestieri-popolani_3",
@@ -46,7 +49,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_3"
     },
     {
       "_id": "mestieri-popolani_4",
@@ -57,7 +61,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_4"
     },
     {
       "_id": "mestieri-popolani_5",
@@ -68,7 +73,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_5"
     },
     {
       "_id": "mestieri-popolani_6",
@@ -79,7 +85,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_6"
     },
     {
       "_id": "mestieri-popolani_7",
@@ -90,7 +97,8 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_7"
     },
     {
       "_id": "mestieri-popolani_8",
@@ -101,7 +109,8 @@
         9,
         9
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_8"
     },
     {
       "_id": "mestieri-popolani_9",
@@ -112,7 +121,8 @@
         10,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_9"
     },
     {
       "_id": "mestieri-popolani_10",
@@ -123,7 +133,8 @@
         11,
         11
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_10"
     },
     {
       "_id": "mestieri-popolani_11",
@@ -134,7 +145,8 @@
         12,
         12
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_11"
     },
     {
       "_id": "mestieri-popolani_12",
@@ -145,7 +157,8 @@
         13,
         13
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_12"
     },
     {
       "_id": "mestieri-popolani_13",
@@ -156,7 +169,8 @@
         14,
         14
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_13"
     },
     {
       "_id": "mestieri-popolani_14",
@@ -167,7 +181,8 @@
         15,
         15
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_14"
     },
     {
       "_id": "mestieri-popolani_15",
@@ -178,7 +193,8 @@
         16,
         16
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_15"
     },
     {
       "_id": "mestieri-popolani_16",
@@ -189,7 +205,8 @@
         17,
         17
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_16"
     },
     {
       "_id": "mestieri-popolani_17",
@@ -200,7 +217,8 @@
         18,
         18
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_17"
     },
     {
       "_id": "mestieri-popolani_18",
@@ -211,7 +229,8 @@
         19,
         19
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_18"
     },
     {
       "_id": "mestieri-popolani_19",
@@ -222,7 +241,8 @@
         20,
         20
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_19"
     }
   ],
   "formula": "1d20",
@@ -237,5 +257,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!mestieri-popolani"
 }

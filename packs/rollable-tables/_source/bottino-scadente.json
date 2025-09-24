@@ -13,7 +13,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_0"
     },
     {
       "_id": "bottino-scadente_1",
@@ -24,7 +25,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_1"
     },
     {
       "_id": "bottino-scadente_2",
@@ -35,7 +37,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_2"
     },
     {
       "_id": "bottino-scadente_3",
@@ -46,7 +49,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_3"
     },
     {
       "_id": "bottino-scadente_4",
@@ -57,7 +61,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_4"
     },
     {
       "_id": "bottino-scadente_5",
@@ -68,7 +73,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_5"
     },
     {
       "_id": "bottino-scadente_6",
@@ -79,7 +85,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_6"
     },
     {
       "_id": "bottino-scadente_7",
@@ -90,7 +97,8 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_7"
     },
     {
       "_id": "bottino-scadente_8",
@@ -101,7 +109,8 @@
         9,
         9
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_8"
     },
     {
       "_id": "bottino-scadente_9",
@@ -112,7 +121,8 @@
         10,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_9"
     },
     {
       "_id": "bottino-scadente_10",
@@ -123,7 +133,8 @@
         11,
         11
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_10"
     },
     {
       "_id": "bottino-scadente_11",
@@ -134,7 +145,8 @@
         12,
         12
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_11"
     },
     {
       "_id": "bottino-scadente_12",
@@ -145,7 +157,8 @@
         13,
         13
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_12"
     },
     {
       "_id": "bottino-scadente_13",
@@ -156,7 +169,8 @@
         14,
         14
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_13"
     },
     {
       "_id": "bottino-scadente_14",
@@ -167,7 +181,8 @@
         15,
         15
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_14"
     },
     {
       "_id": "bottino-scadente_15",
@@ -178,7 +193,8 @@
         16,
         16
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_15"
     },
     {
       "_id": "bottino-scadente_16",
@@ -189,7 +205,8 @@
         17,
         17
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_16"
     },
     {
       "_id": "bottino-scadente_17",
@@ -200,7 +217,8 @@
         18,
         18
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_17"
     },
     {
       "_id": "bottino-scadente_18",
@@ -211,7 +229,8 @@
         19,
         19
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_18"
     },
     {
       "_id": "bottino-scadente_19",
@@ -222,7 +241,8 @@
         20,
         20
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bottino-scadente_19"
     }
   ],
   "formula": "1d20",
@@ -237,5 +257,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!bottino-scadente"
 }

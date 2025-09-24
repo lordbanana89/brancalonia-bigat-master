@@ -106,7 +106,9 @@
         "_id": "size001",
         "type": "Size",
         "configuration": {
-          "sizes": ["med"]
+          "sizes": [
+            "med"
+          ]
         },
         "value": {},
         "level": 1,
@@ -118,7 +120,9 @@
         "_id": "movement001",
         "type": "Trait",
         "configuration": {
-          "grants": ["movement:fly:50"],
+          "grants": [
+            "movement:fly:50"
+          ],
           "choices": [],
           "mode": "default"
         },
@@ -134,7 +138,9 @@
         "_id": "trait001",
         "type": "Trait",
         "configuration": {
-          "grants": ["skills:prc"],
+          "grants": [
+            "skills:prc"
+          ],
           "choices": [],
           "mode": "expertise"
         },
@@ -150,7 +156,9 @@
         "_id": "trait002",
         "type": "Trait",
         "configuration": {
-          "grants": ["weapon:nat:talons"],
+          "grants": [
+            "weapon:nat:talons"
+          ],
           "choices": [],
           "mode": "default"
         },
@@ -166,7 +174,10 @@
         "_id": "languages",
         "type": "Trait",
         "configuration": {
-          "grants": ["languages:common", "languages:aarakocra"],
+          "grants": [
+            "languages:common",
+            "languages:aarakocra"
+          ],
           "choices": [],
           "mode": "default"
         },
@@ -194,5 +205,6 @@
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null
-  }
+  },
+  "_key": "!items!giffonita001"
 }

@@ -58,7 +58,12 @@
       "damage": ""
     },
     "damage": {
-      "parts": [["1d6", "piercing"]],
+      "parts": [
+        [
+          "1d6",
+          "piercing"
+        ]
+      ],
       "versatile": "1d8"
     },
     "formula": "",
@@ -114,5 +119,6 @@
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null
-  }
+  },
+  "_key": "!items!forchettonedaguerra001"
 }

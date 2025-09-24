@@ -13,7 +13,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_0"
     },
     {
       "_id": "background-canaglie_1",
@@ -24,7 +25,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_1"
     },
     {
       "_id": "background-canaglie_2",
@@ -35,7 +37,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_2"
     },
     {
       "_id": "background-canaglie_3",
@@ -46,7 +49,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_3"
     },
     {
       "_id": "background-canaglie_4",
@@ -57,7 +61,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_4"
     },
     {
       "_id": "background-canaglie_5",
@@ -68,7 +73,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_5"
     },
     {
       "_id": "background-canaglie_6",
@@ -79,7 +85,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_6"
     },
     {
       "_id": "background-canaglie_7",
@@ -90,7 +97,8 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_7"
     },
     {
       "_id": "background-canaglie_8",
@@ -101,7 +109,8 @@
         9,
         9
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_8"
     },
     {
       "_id": "background-canaglie_9",
@@ -112,7 +121,8 @@
         10,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_9"
     },
     {
       "_id": "background-canaglie_10",
@@ -123,7 +133,8 @@
         11,
         11
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_10"
     },
     {
       "_id": "background-canaglie_11",
@@ -134,7 +145,8 @@
         12,
         12
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_11"
     },
     {
       "_id": "background-canaglie_12",
@@ -145,7 +157,8 @@
         13,
         13
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_12"
     },
     {
       "_id": "background-canaglie_13",
@@ -156,7 +169,8 @@
         14,
         14
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_13"
     },
     {
       "_id": "background-canaglie_14",
@@ -167,7 +181,8 @@
         15,
         15
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_14"
     },
     {
       "_id": "background-canaglie_15",
@@ -178,7 +193,8 @@
         16,
         16
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_15"
     },
     {
       "_id": "background-canaglie_16",
@@ -189,7 +205,8 @@
         17,
         17
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_16"
     },
     {
       "_id": "background-canaglie_17",
@@ -200,7 +217,8 @@
         18,
         18
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_17"
     },
     {
       "_id": "background-canaglie_18",
@@ -211,7 +229,8 @@
         19,
         19
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_18"
     },
     {
       "_id": "background-canaglie_19",
@@ -222,7 +241,8 @@
         20,
         20
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!background-canaglie_19"
     }
   ],
   "formula": "1d20",
@@ -237,5 +257,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!background-canaglie"
 }

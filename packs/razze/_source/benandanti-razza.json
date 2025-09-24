@@ -210,7 +210,8 @@
         "brancalonia": {
           "racialTrait": true
         }
-      }
+      },
+      "_key": "!effects!benandanti_saves"
     }
   ],
   "folder": null,
@@ -233,5 +234,6 @@
     "lastModifiedBy": null,
     "compendiumSource": null,
     "duplicateSource": null
-  }
+  },
+  "_key": "!items!benandanti_race"
 }

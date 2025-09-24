@@ -13,7 +13,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_0"
     },
     {
       "_id": "intrugli-dubbi_1",
@@ -24,7 +25,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_1"
     },
     {
       "_id": "intrugli-dubbi_2",
@@ -35,7 +37,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_2"
     },
     {
       "_id": "intrugli-dubbi_3",
@@ -46,7 +49,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_3"
     },
     {
       "_id": "intrugli-dubbi_4",
@@ -57,7 +61,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_4"
     },
     {
       "_id": "intrugli-dubbi_5",
@@ -68,7 +73,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_5"
     },
     {
       "_id": "intrugli-dubbi_6",
@@ -79,7 +85,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_6"
     },
     {
       "_id": "intrugli-dubbi_7",
@@ -90,7 +97,8 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_7"
     },
     {
       "_id": "intrugli-dubbi_8",
@@ -101,7 +109,8 @@
         9,
         9
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_8"
     },
     {
       "_id": "intrugli-dubbi_9",
@@ -112,7 +121,8 @@
         10,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_9"
     },
     {
       "_id": "intrugli-dubbi_10",
@@ -123,7 +133,8 @@
         11,
         11
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_10"
     },
     {
       "_id": "intrugli-dubbi_11",
@@ -134,7 +145,8 @@
         12,
         12
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_11"
     }
   ],
   "formula": "1d12",
@@ -149,5 +161,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!intrugli-dubbi"
 }

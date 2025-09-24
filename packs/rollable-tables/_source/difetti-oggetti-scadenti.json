@@ -13,7 +13,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_0"
     },
     {
       "_id": "difetti-oggetti-scadenti_1",
@@ -24,7 +25,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_1"
     },
     {
       "_id": "difetti-oggetti-scadenti_2",
@@ -35,7 +37,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_2"
     },
     {
       "_id": "difetti-oggetti-scadenti_3",
@@ -46,7 +49,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_3"
     },
     {
       "_id": "difetti-oggetti-scadenti_4",
@@ -57,7 +61,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_4"
     },
     {
       "_id": "difetti-oggetti-scadenti_5",
@@ -68,7 +73,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_5"
     },
     {
       "_id": "difetti-oggetti-scadenti_6",
@@ -79,7 +85,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_6"
     },
     {
       "_id": "difetti-oggetti-scadenti_7",
@@ -90,7 +97,8 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_7"
     },
     {
       "_id": "difetti-oggetti-scadenti_8",
@@ -101,7 +109,8 @@
         9,
         9
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_8"
     },
     {
       "_id": "difetti-oggetti-scadenti_9",
@@ -112,7 +121,8 @@
         10,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!difetti-oggetti-scadenti_9"
     }
   ],
   "formula": "1d10",
@@ -127,5 +137,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!difetti-oggetti-scadenti"
 }

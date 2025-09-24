@@ -1,0 +1,88 @@
+{
+  "_id": "background_ambulante",
+  "name": "Ambulante",
+  "type": "background",
+  "img": "icons/containers/bags/satchel-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Ambulante</h2><p>Ambulanti, guitti, ciarlatani e merciai viaggiatori portano spettacoli e novità da un borgo all'altro del Regno. Sono abituati alla strada, alle usanze locali e a cavarsela con fascino e parlantina.</p><h3>Competenze</h3><ul><li><strong>Abilità:</strong> Intrattenere, Storia</li><li><strong>Strumenti:</strong> Uno strumento da artigiano a scelta</li><li><strong>Linguaggi:</strong> Baccaglio</li></ul><h3>Equipaggiamento</h3><p>Un monile dedicato a Santa Percorrenza, un abito da viaggiatore, una borsa con 15 ma</p><h3>Privilegio: Storie della Strada</h3><p>Quando raccogli dicerie ottieni sempre un'informazione aggiuntiva. Effettui con vantaggio le prove per percorrere le Strade che non vanno da nessuna parte (Brancalonia, pag. 84).</p><p><em>Vedi il manuale di Brancalonia per tabelle di tratti, ideali, legami e difetti suggeriti.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!background_ambulante"
+}

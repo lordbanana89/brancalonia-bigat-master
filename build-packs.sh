@@ -12,14 +12,12 @@ packs=("backgrounds" "brancalonia-features" "emeriticenze" "equipaggiamento" "in
 for pack in "${packs[@]}"; do
   echo "📦 Processando $pack..."
 
-  # Crea directory src se non esiste
-  mkdir -p "packs/$pack/src"
-
-  # Non spostare più i file, sono già in _source
-
-  # Compila con il CLI di Foundry usando _source
+  # Verifica che esista la directory _source
   if [ -d "packs/$pack/_source" ] && [ "$(ls -A packs/$pack/_source 2>/dev/null)" ]; then
-    fvtt package pack "packs/$pack" --type Module
+    # Rimuovi database esistente
+    rm -rf "packs/$pack/$pack"
+    # Compila con il CLI di Foundry usando la sintassi corretta
+    fvtt package pack "$pack" --in "./packs/$pack/_source" --out "./packs/$pack"
     if [ $? -eq 0 ]; then
       echo "✅ $pack compilato con successo"
     else

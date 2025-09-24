@@ -13,7 +13,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_0"
     },
     {
       "_id": "complicazioni-lavori_1",
@@ -24,7 +25,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_1"
     },
     {
       "_id": "complicazioni-lavori_2",
@@ -35,7 +37,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_2"
     },
     {
       "_id": "complicazioni-lavori_3",
@@ -46,7 +49,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_3"
     },
     {
       "_id": "complicazioni-lavori_4",
@@ -57,7 +61,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_4"
     },
     {
       "_id": "complicazioni-lavori_5",
@@ -68,7 +73,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_5"
     },
     {
       "_id": "complicazioni-lavori_6",
@@ -79,7 +85,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_6"
     },
     {
       "_id": "complicazioni-lavori_7",
@@ -90,7 +97,8 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_7"
     },
     {
       "_id": "complicazioni-lavori_8",
@@ -101,7 +109,8 @@
         9,
         9
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_8"
     },
     {
       "_id": "complicazioni-lavori_9",
@@ -112,7 +121,8 @@
         10,
         10
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!complicazioni-lavori_9"
     }
   ],
   "formula": "1d10",
@@ -127,5 +137,6 @@
     "brancalonia-bigat": {
       "isOfficial": true
     }
-  }
+  },
+  "_key": "!tables!complicazioni-lavori"
 }

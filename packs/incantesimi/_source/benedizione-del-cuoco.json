@@ -50,7 +50,12 @@
       "damage": ""
     },
     "damage": {
-      "parts": [["1d4 + @mod", "healing"]],
+      "parts": [
+        [
+          "1d4 + @mod",
+          "healing"
+        ]
+      ],
       "versatile": ""
     },
     "formula": "1d4",
@@ -97,5 +102,6 @@
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null
-  }
+  },
+  "_key": "!items!benedizionedelcuoco001"
 }

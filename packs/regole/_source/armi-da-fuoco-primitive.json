@@ -6,7 +6,7 @@
   "system": {},
   "pages": [
     {
-      "_id": "page001",
+      "_id": "armiDaFuocoPrimitive001_page_1",
       "name": "Armi da Fuoco Primitive",
       "type": "text",
       "title": {
@@ -27,7 +27,8 @@
       "ownership": {
         "default": -1
       },
-      "flags": {}
+      "flags": {},
+      "_key": "!pages!armiDaFuocoPrimitive001_page_1"
     }
   ],
   "folder": null,
@@ -43,5 +44,6 @@
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null
-  }
+  },
+  "_key": "!journal!armiDaFuocoPrimitive001"
 }

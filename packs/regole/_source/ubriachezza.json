@@ -6,7 +6,7 @@
   "system": {},
   "pages": [
     {
-      "_id": "ubriachezza_page",
+      "_id": "ubriachezza_page_1",
       "name": "Ubriachezza",
       "type": "text",
       "title": {
@@ -27,7 +27,8 @@
       "ownership": {
         "default": -1
       },
-      "flags": {}
+      "flags": {},
+      "_key": "!pages!ubriachezza_page_1"
     }
   ],
   "folder": null,
@@ -43,5 +44,6 @@
     "createdTime": null,
     "modifiedTime": null,
     "lastModifiedBy": null
-  }
+  },
+  "_key": "!journal!ubriachezza"
 }
