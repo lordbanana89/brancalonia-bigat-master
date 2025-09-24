@@ -1,0 +1,49 @@
+{
+  "_id": "regoleStrada001",
+  "name": "Regole della Strada",
+  "type": "journalEntry",
+  "img": "icons/environment/settlement/wagon-black.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "regoleStrada001_page_1",
+      "name": "Regole della Strada",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>🛤️ Regole della Strada</h1><p><em>\"Sulla strada del Regno vigono leggi non scritte più sacre di qualsiasi editto reale.\"</em></p><h2>📜 Il Codice dei Viandanti</h2><div class='note'><h3>Le Cinque Regole Sacre</h3><ol><li>Chi offre ospitalità va rispettato</li><li>Il pane si divide sempre</li><li>Le notizie si scambiano gratis</li><li>I morti sulla strada si seppelliscono</li><li>Il fuoco del campo è sacro</li></ol></div><h2>🏕️ Diritto di Campo</h2><table><thead><tr><th>Luogo</th><th>Permesso</th><th>Tributo</th><th>Protezione</th></tr></thead><tbody><tr><td>Crocevia</td><td>Libero</td><td>-</td><td>Nessuna</td></tr><tr><td>Ponte</td><td>Pedaggio</td><td>2-5 mr</td><td>Guardie</td></tr><tr><td>Bosco Reale</td><td>Vietato</td><td>Multa 10 mo</td><td>Rangers ostili</td></tr><tr><td>Campi Aperti</td><td>Tollerato</td><td>1 mr al contadino</td><td>Cani</td></tr><tr><td>Rovine</td><td>A proprio rischio</td><td>-</td><td>Mostri</td></tr></tbody></table><h2>🤝 Incontri sulla Strada</h2><h3>Protocollo d'Incontro</h3><ol><li><strong>Saluto:</strong> A 30 passi, mano alzata</li><li><strong>Approccio:</strong> Armi abbassate/riposte</li><li><strong>Scambio:</strong> Nome, destinazione, notizie</li><li><strong>Commiato:</strong> Auguri di buon viaggio</li></ol><h3>Segnali di Pericolo</h3><ul><li>⚠️ <strong>Cappuccio alzato:</strong> Non disturbare</li><li>🚫 <strong>Arma in vista:</strong> State lontani</li><li>✋ <strong>Palmo aperto:</strong> Pace/Commercio</li><li>👊 <strong>Pugno chiuso:</strong> Pericolo avanti</li></ul><h2>🛡️ Carovane e Compagnie</h2><table><thead><tr><th>Tipo</th><th>Velocità</th><th>Protezione</th><th>Costo Unirsi</th></tr></thead><tbody><tr><td>Mercanti</td><td>Lenta</td><td>Guardie mercenarie</td><td>5 mo + turni guardia</td></tr><tr><td>Pellegrini</td><td>Media</td><td>Numeri + fede</td><td>Preghiere + storie</td></tr><tr><td>Militare</td><td>Veloce</td><td>Soldati armati</td><td>Servizio ausiliario</td></tr><tr><td>Zingari</td><td>Variabile</td><td>Astuzia + magia</td><td>Intrattenimento</td></tr><tr><td>Nobili</td><td>Comoda</td><td>Scorta pesante</td><td>Non accettano</td></tr></tbody></table><h2>⚖️ Giustizia Stradale</h2><h3>Crimini e Punizioni</h3><table><thead><tr><th>Crimine</th><th>Punizione Tradizionale</th></tr></thead><tbody><tr><td>Rubare a viandante</td><td>Mano tagliata</td></tr><tr><td>Falso pellegrino</td><td>Marchio sulla fronte</td></tr><tr><td>Avvelenare pozzo</td><td>Morte per annegamento</td></tr><tr><td>Brigantaggio</td><td>Impiccagione al crocevia</td></tr><tr><td>Violazione ospitalità</td><td>Esilio e infamia</td></tr></tbody></table><h2>🎭 Figure della Strada</h2><div class='note'><ul><li><strong>Il Vagabondo Saggio:</strong> Offre consigli per cibo</li><li><strong>La Vecchia del Crocevia:</strong> Vende amuleti e maledizioni</li><li><strong>Il Brigante Gentiluomo:</strong> Ruba solo ai ricchi</li><li><strong>Il Falso Pellegrino:</strong> Truffatore con tonaca</li><li><strong>Il Corriere Reale:</strong> Intoccabile per legge</li></ul></div><h2>🗺️ Segnaletica Stradale</h2><table><thead><tr><th>Segno</th><th>Significato</th><th>Chi lo Lascia</th></tr></thead><tbody><tr><td>☠️ Teschio su palo</td><td>Pericolo mortale</td><td>Autorità/Briganti</td></tr><tr><td>🏠 Casa con X</td><td>Peste/Malattia</td><td>Guaritori</td></tr><tr><td>⭐ Stella a 5 punte</td><td>Locanda sicura</td><td>Viaggiatori</td></tr><tr><td>🔄 Spirale</td><td>Territorio magico</td><td>Maghi/Streghe</td></tr><tr><td>➡️ Freccia con numero</td><td>Distanza in giorni</td><td>Mercanti</td></tr></tbody></table><h2>🌙 Viaggi Notturni</h2><h3>Rischi e Regole</h3><ul><li><strong>Mai da soli:</strong> Minimo 3 persone</li><li><strong>Torce sempre:</strong> 1 ogni 2 persone</li><li><strong>Turni guardia:</strong> 2 ore ciascuno</li><li><strong>Fuochi segnale:</strong> 3 fuochi = aiuto</li></ul><h2>💰 Pedaggi e Gabelle</h2><table><thead><tr><th>Passaggio</th><th>Costo Base</th><th>Evitabile Con</th></tr></thead><tbody><tr><td>Ponte</td><td>2 mr a persona</td><td>Guado pericoloso</td></tr><tr><td>Porta città</td><td>5 mr + ispezione</td><td>Corruzione guardie</td></tr><tr><td>Traghetto</td><td>1 mo per carro</td><td>Nuoto (rischio)</td></tr><tr><td>Passo montano</td><td>3 mo carovana</td><td>Sentiero dei contrabbandieri</td></tr></tbody></table><h2>🏃 Diritto di Fuga</h2><p>Un viandante inseguito che raggiunge:</p><ul><li><strong>Chiesa:</strong> Santuario per 3 giorni</li><li><strong>Locanda:</strong> Protezione se paga</li><li><strong>Crocevia:</strong> Può invocare duello</li><li><strong>Confine:</strong> Nuova giurisdizione</li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_key": "!pages!regoleStrada001_page_1"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!journal!regoleStrada001"
+}
