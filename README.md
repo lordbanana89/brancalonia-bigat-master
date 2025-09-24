@@ -154,53 +154,132 @@ I contenuti di Brancalonia sono proprietà di Acheron Games.
 
 ## 🔧 Sviluppo
 
-### Compilazione dei Compendi
+### ⚠️ SCOPERTA CRITICA: Compilazione Compendi per Foundry v13
 
-#### Requisiti Tecnici
-- Node.js v18+
-- Foundry VTT CLI v3.0.0+
-- Libreria classic-level
+#### Il Problema dei Compendi Vuoti
+Durante lo sviluppo abbiamo scoperto che **Foundry VTT v13 NON carica i compendi** se non rispettano requisiti specifici non documentati:
 
-#### Formato Documenti JSON
-**IMPORTANTE**: Ogni documento JSON nei compendi DEVE includere il campo `_key` nel formato:
+1. **Campo `_key` obbligatorio**: Ogni documento DEVE avere un campo `_key` in formato `!collection!id`
+2. **Il CLI v3.0.0 rimuove `_key`**: Il Foundry CLI v3.0.0 elimina silenziosamente il campo `_key` durante la compilazione
+3. **Struttura directory specifica**: Il database deve essere direttamente in `packs/nome-pack/`, NON in `packs/nome-pack/nome-pack/`
+
+#### Soluzione Funzionante
+
+##### 1. Preparazione Documenti JSON
+Ogni documento in `_source/` deve avere questa struttura:
 ```json
 {
-  "_key": "!collection!document_id",
-  "_id": "document_id",
+  "_id": "documento_id",
+  "_key": "!items!documento_id",  // CRITICO: Senza questo, il compendio sarà vuoto!
   "name": "Nome Documento",
+  "type": "feat",
   // ... altri campi
 }
 ```
 
-Dove `collection` può essere:
-- `items` - per oggetti, talenti, features, backgrounds, ecc.
-- `actors` - per PNG e creature
-- `journal` - per regole e journal entries
-- `tables` - per tabelle casuali (RollTable)
-- `macros` - per le macro
+Collezioni valide per `_key`:
+- `!items!` - per Item (oggetti, talenti, features, backgrounds, sottoclassi)
+- `!actors!` - per Actor (PNG, creature)
+- `!journal!` - per JournalEntry (regole, documentazione)
+- `!tables!` - per RollTable (tabelle casuali)
+- `!macros!` - per Macro
 
-#### Script di Compilazione
+##### 2. Script di Compilazione Customizzato
+**NON usare** `fvtt package pack` perché rimuove il campo `_key`!
+
+Usa invece il nostro script `compile-with-keys.cjs`:
+```javascript
+// compile-with-keys.cjs
+const { ClassicLevel } = require('classic-level');
+const fs = require('fs');
+const path = require('path');
+
+async function compilePack(packName, collectionType) {
+  const sourcePath = path.join(__dirname, 'packs', packName, '_source');
+  const dbPath = path.join(__dirname, 'packs', packName); // IMPORTANTE: Non in sottocartella!
+
+  const db = new ClassicLevel(dbPath, { valueEncoding: 'json' });
+  await db.open();
+
+  const files = fs.readdirSync(sourcePath).filter(f => f.endsWith('.json'));
+  for (const file of files) {
+    const content = JSON.parse(fs.readFileSync(path.join(sourcePath, file), 'utf8'));
+    const key = `!${collectionType}!${content._id}`;
+
+    // CRITICO: Preservare _key nel documento salvato
+    const docToSave = { ...content, _key: key };
+    await db.put(key, docToSave);
+  }
+
+  await db.close();
+}
+```
+
+##### 3. Processo di Build Completo
 ```bash
-# Aggiunge i _key mancanti
+# 1. Aggiungi _key a tutti i documenti esistenti
 node add-keys.cjs
 
-# Compila tutti i pack
-./build-packs.sh
+# 2. Compila con _key preservato (NON usare fvtt CLI!)
+node compile-with-keys.cjs
 
-# Verifica i database creati
+# 3. Verifica che i documenti abbiano _key
 node verify-packs.cjs
 ```
 
-#### Problema Noto con CLI v3.0.0
-Il CLI di Foundry v3.0.0 salta silenziosamente i documenti senza il campo `_key`, creando database vuoti. Non viene mostrato alcun errore, ma il database risultante non conterrà documenti.
-
-### Struttura Directory
+#### Struttura Directory Corretta
 ```
 packs/
-├── [nome-pack]/
-│   ├── _source/        # File JSON sorgente
-│   └── [nome-pack]/    # Database LevelDB compilato
+├── nome-pack/
+│   ├── _source/         # File JSON sorgente con _key
+│   ├── 000005.ldb       # Database LevelDB compilato
+│   ├── CURRENT          # DIRETTAMENTE qui, non in sottocartella!
+│   ├── LOG
+│   └── MANIFEST-*
 ```
+
+⚠️ **SBAGLIATO** (non funziona in Foundry v13):
+```
+packs/nome-pack/nome-pack/  # ❌ Database in sottocartella = compendi vuoti!
+```
+
+#### Verifica Database
+Per verificare che un database sia compilato correttamente:
+```javascript
+const { ClassicLevel } = require('classic-level');
+const db = new ClassicLevel('./packs/nome-pack', { valueEncoding: 'json' });
+await db.open();
+
+for await (const [key, value] of db.iterator()) {
+  console.log('Key:', key);           // Deve essere !collection!id
+  console.log('_key:', value._key);   // DEVE esistere e corrispondere a key
+  console.log('_id:', value._id);     // Deve esistere
+  break;
+}
+await db.close();
+```
+
+#### Problemi Noti e Soluzioni
+
+| Problema | Causa | Soluzione |
+|----------|-------|-----------|
+| Compendi vuoti in Foundry | Manca campo `_key` | Usa `compile-with-keys.cjs`, non il CLI |
+| "Cannot read database" | Database in sottocartella | Sposta file DB direttamente in `packs/nome/` |
+| CLI non segnala errori | CLI v3.0.0 salta silenziosamente documenti senza `_key` | Verifica sempre con `verify-packs.cjs` |
+
+### Script di Utility
+
+#### add-keys.cjs
+Aggiunge il campo `_key` a tutti i documenti JSON in `_source/`
+
+#### compile-with-keys.cjs
+Compila i pack preservando il campo `_key` (alternativa al CLI)
+
+#### fix-pack-structure.cjs
+Corregge la struttura delle directory spostando i DB nella posizione corretta
+
+#### verify-packs.cjs
+Verifica che tutti i documenti nei database abbiano il campo `_key`
 
 ---
 
