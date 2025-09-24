@@ -3,6 +3,13 @@
  * Carica le configurazioni DOPO che tutti gli altri moduli sono stati inizializzati
  */
 
+console.log("Brancalonia | CONFIG-FIX file caricato");
+
+// Proviamo più hook per trovare il momento giusto
+Hooks.once("setup", () => {
+  console.log("Brancalonia | Hook setup attivato");
+});
+
 // Usa "ready" per essere sicuri che tutti gli altri moduli siano caricati
 Hooks.once("ready", () => {
   console.log("Brancalonia | Applicazione configurazioni CONFIG dopo caricamento altri moduli...");
