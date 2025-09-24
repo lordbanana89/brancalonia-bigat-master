@@ -15,17 +15,11 @@ for pack in "${packs[@]}"; do
   # Crea directory src se non esiste
   mkdir -p "packs/$pack/src"
 
-  # Sposta i file JSON nella directory src
-  for file in packs/$pack/*.json; do
-    if [[ -f "$file" && "$file" != *"_source.json" && "$file" != *"_sources.json" ]]; then
-      filename=$(basename "$file")
-      mv "$file" "packs/$pack/src/$filename" 2>/dev/null || true
-    fi
-  done
+  # Non spostare più i file, sono già in _source
 
-  # Compila con il CLI di Foundry
-  if [ -d "packs/$pack/src" ] && [ "$(ls -A packs/$pack/src 2>/dev/null)" ]; then
-    fvtt package pack "packs/$pack/src" --out "packs/$pack" --type Module
+  # Compila con il CLI di Foundry usando _source
+  if [ -d "packs/$pack/_source" ] && [ "$(ls -A packs/$pack/_source 2>/dev/null)" ]; then
+    fvtt package pack "packs/$pack" --type Module
     if [ $? -eq 0 ]; then
       echo "✅ $pack compilato con successo"
     else

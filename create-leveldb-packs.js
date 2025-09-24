@@ -3,12 +3,17 @@ const path = require('path');
 const { ClassicLevel } = require('classic-level');
 
 async function createLevelDBPack(packName) {
-  const srcDir = path.join(__dirname, 'packs', packName, 'src');
+  // Prova prima _source, poi src
+  let srcDir = path.join(__dirname, 'packs', packName, '_source');
+  if (!fs.existsSync(srcDir)) {
+    srcDir = path.join(__dirname, 'packs', packName, 'src');
+  }
+
   const dbDir = path.join(__dirname, 'packs', packName);
 
   // Verifica che esistano file sorgente
   if (!fs.existsSync(srcDir)) {
-    console.log(`⚠️  No src directory for ${packName}`);
+    console.log(`⚠️  No source directory for ${packName}`);
     return;
   }
 
