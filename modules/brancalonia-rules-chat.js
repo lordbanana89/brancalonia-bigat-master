@@ -163,21 +163,10 @@ function creaLinkRegola(regola) {
     data-regola-id="${regola.id}"
     data-pack="brancalonia-bigat.regole"
     data-type="JournalEntry"
-    draggable="true"
-    style="
-      background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
-      color: white;
-      padding: 2px 8px;
-      border-radius: 4px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-weight: bold;
-      border: 1px solid #654321;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    ">
-    <i class="fas fa-scroll" style="font-size: 0.9em;"></i>
+    data-id="${regola.id}"
+    data-uuid="Compendium.brancalonia-bigat.regole.${regola.id}"
+    draggable="true">
+    <i class="fas fa-scroll"></i>
     ${regola.nome}
   </a>`;
 }
@@ -199,6 +188,27 @@ $(document).on("click", ".regola-link", async function(e) {
     }
   } else {
     ui.notifications.error("Compendio Regole di Brancalonia non trovato!");
+  }
+});
+
+/**
+ * Gestisce il drag delle regole
+ */
+$(document).on("dragstart", ".regola-link", async function(e) {
+  const regolaId = $(this).data("regola-id");
+  const pack = game.packs.get("brancalonia-bigat.regole");
+
+  if (pack) {
+    const documento = await pack.getDocument(regolaId);
+    if (documento) {
+      const dragData = {
+        type: "JournalEntry",
+        pack: "brancalonia-bigat.regole",
+        id: regolaId,
+        uuid: `Compendium.brancalonia-bigat.regole.${regolaId}`
+      };
+      e.originalEvent.dataTransfer.setData("text/plain", JSON.stringify(dragData));
+    }
   }
 });
 
@@ -243,34 +253,15 @@ async function mostraRegolaInChat(nomeRegola) {
     user: game.user.id,
     speaker: ChatMessage.getSpeaker(),
     content: `
-      <div class="brancalonia-regola-chat" style="
-        border: 2px solid #8B4513;
-        border-radius: 8px;
-        padding: 10px;
-        background: linear-gradient(135deg, #FFF8DC 0%, #F5DEB3 100%);
-      ">
-        <h3 style="
-          margin: 0 0 10px 0;
-          color: #654321;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-        ">
+      <div class="brancalonia-regola-chat">
+        <h3>
           <i class="fas fa-scroll"></i>
           ${regola.nome}
         </h3>
-        <div style="
-          padding: 8px;
-          background: white;
-          border-radius: 4px;
-          border: 1px solid #D2691E;
-        ">
+        <div class="content">
           ${contenuto}
         </div>
-        <div style="
-          margin-top: 10px;
-          text-align: right;
-        ">
+        <div style="margin-top: 12px; text-align: right;">
           ${creaLinkRegola(regola)}
         </div>
       </div>
