@@ -240,7 +240,7 @@ class BrancaloniaConditions {
   static async createIncapacitatoEffect(actor, rounds = 1) {
     const effectData = {
       name: "Incapacitato",
-      img: "modules/brancalonia-bigat/assets/icons/incapacitato.svg",
+      img: "icons/svg/daze.svg",
       origin: actor.uuid,
       disabled: false,
       duration: {

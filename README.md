@@ -4,7 +4,7 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## Versione 3.1.3 - Implementazione Completa
+## Versione 3.4.0 - Condizioni Custom e Bug Fix
 
 Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema D&D 5e v5.x.
 
@@ -26,6 +26,14 @@ Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema 
 - **Duelli Formali**: 6 tipi di duello, 5 stili di combattimento
 - **Sistema Fazioni**: 7 fazioni con reputazione, guerre e quest
 - **Reputazione Positiva**: 5 tipi con benefici progressivi
+- **Sistema Equitaglia**: Gestione taglie e malefatte con bounty hunter
+- **Rischi del Mestiere**: 23 eventi casuali per lavori sporchi
+
+#### 🆕 Condizioni Custom (v3.4.0)
+- **Menagramo**: Maledizione con svantaggi e -2 CA
+- **Ubriaco**: Modifiche alle caratteristiche (+2 Car, -2 Des/Sag)
+- **Batosta**: Sistema contatore per risse (KO a 3 batoste)
+- **Incapacitato**: Impedisce azioni, reazioni e movimento
 
 #### 📊 Contenuti (234 elementi totali)
 - **12 Stirpi/Razze** complete
@@ -132,6 +140,21 @@ Accedi alle impostazioni del modulo da **Configurazione** → **Impostazioni Mod
 - ✅ **Solo hook ufficiali** utilizzati
 - ✅ **Active Effects** standard V13
 - ✅ **Advancement API** per progressione personaggi
+
+### 📋 Changelog v3.4.0
+
+#### Nuove Funzionalità
+- Implementate 4 condizioni custom con icone SVG dedicate
+- Sistema completo Equitaglia per taglie e malefatte
+- Sistema Rischi del Mestiere con 23 eventi casuali
+- Active Effects automatici per tutte le condizioni
+
+#### Bug Fix
+- Corretto errore "Invalid status ID" per condizioni custom
+- Risolto problema deprecazione `icon` → `img` per ActiveEffect
+- Sistemato async/await per Roll.evaluate() in v13
+- Corretti flag scope da "brancalonia" a "brancalonia-bigat"
+- Eliminati tutti i warning di deprecazione
 
 ### 🐛 Segnalazione Bug
 
@@ -283,6 +306,6 @@ Verifica che tutti i documenti nei database abbiano il campo `_key`
 
 ---
 
-**Versione**: 3.1.4
+**Versione**: 3.4.0
 **Compatibilità**: Foundry VTT v13.0.0+ | D&D 5e v5.0.0+
 **Ultimo Aggiornamento**: Settembre 2025

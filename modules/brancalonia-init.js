@@ -49,7 +49,7 @@ Hooks.once("init", () => {
   CONFIG.statusEffects.push({
     id: "incapacitato",
     name: "Incapacitato",
-    img: "modules/brancalonia-bigat/assets/icons/incapacitato.svg"
+    img: "icons/svg/daze.svg"
   });
 
   // Registra template paths - Usa il nuovo namespace per Foundry v13

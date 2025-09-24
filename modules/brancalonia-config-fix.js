@@ -84,7 +84,7 @@ Hooks.once("ready", () => {
         },
         incapacitato: {
           name: "Incapacitato",
-          img: "modules/brancalonia-bigat/assets/icons/incapacitato.svg",
+          img: "icons/svg/daze.svg",
           reference: "Compendium.brancalonia-bigat.regole.JournalEntry.risse",
           statuses: ["incapacitato"]
         }
