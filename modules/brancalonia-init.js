@@ -46,12 +46,6 @@ Hooks.once("init", () => {
     img: "modules/brancalonia-bigat/assets/icons/batosta.svg"
   });
 
-  CONFIG.statusEffects.push({
-    id: "incapacitato",
-    name: "Incapacitato",
-    img: "icons/svg/daze.svg"
-  });
-
   // Registra template paths - Usa il nuovo namespace per Foundry v13
   foundry.applications.handlebars.loadTemplates([
     "modules/brancalonia-bigat/templates/infamia-tracker.hbs",

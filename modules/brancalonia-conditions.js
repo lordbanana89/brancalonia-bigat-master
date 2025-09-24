@@ -30,9 +30,6 @@ class BrancaloniaConditions {
       case "batosta":
         await this.applyBatostaEffect(effect);
         break;
-      case "incapacitato":
-        await this.applyIncapacitatoEffect(effect);
-        break;
       case "menagramo":
         await this.applyMenagramoEffect(effect);
         break;
@@ -58,9 +55,6 @@ class BrancaloniaConditions {
     switch(statusId) {
       case "batosta":
         await this.removeBatostaEffect(actor);
-        break;
-      case "incapacitato":
-        await this.removeIncapacitatoEffect(actor);
         break;
     }
   }
@@ -101,51 +95,6 @@ class BrancaloniaConditions {
     ui.notifications.info(`${actor.name} si è ripreso dalle batoste!`);
   }
 
-  /**
-   * Applica l'effetto Incapacitato
-   * Non può effettuare azioni o reazioni
-   */
-  static async applyIncapacitatoEffect(effect) {
-    const actor = effect.parent;
-    if (!actor) return;
-
-    // Aggiungi i changes all'effetto per impedire azioni
-    const changes = [
-      {
-        key: "system.attributes.movement.all",
-        mode: CONST.ACTIVE_EFFECT_MODES.OVERRIDE,
-        value: "0"
-      },
-      {
-        key: "flags.midi-qol.incapacitated",
-        mode: CONST.ACTIVE_EFFECT_MODES.OVERRIDE,
-        value: "1"
-      }
-    ];
-
-    await effect.update({changes: changes});
-
-    ChatMessage.create({
-      content: `<div class="brancalonia-condition">
-        <h3>Incapacitato!</h3>
-        <p><strong>${actor.name}</strong> è incapacitato!</p>
-        <ul>
-          <li>Non può muoversi</li>
-          <li>Non può effettuare azioni o reazioni</li>
-          <li>Fallisce automaticamente i TS su Forza e Destrezza</li>
-          <li>Gli attacchi contro di lui hanno vantaggio</li>
-        </ul>
-      </div>`,
-      speaker: ChatMessage.getSpeaker({actor: actor})
-    });
-  }
-
-  /**
-   * Rimuove l'effetto Incapacitato
-   */
-  static async removeIncapacitatoEffect(actor) {
-    ui.notifications.info(`${actor.name} non è più incapacitato!`);
-  }
 
   /**
    * Applica l'effetto Menagramo (già gestito altrove ma aggiungiamo info)
@@ -234,28 +183,6 @@ class BrancaloniaConditions {
     await actor.createEmbeddedDocuments("ActiveEffect", [effectData]);
   }
 
-  /**
-   * Crea un effetto Incapacitato
-   */
-  static async createIncapacitatoEffect(actor, rounds = 1) {
-    const effectData = {
-      name: "Incapacitato",
-      img: "icons/svg/daze.svg",
-      origin: actor.uuid,
-      disabled: false,
-      duration: {
-        rounds: rounds
-      },
-      statuses: ["incapacitato"],
-      flags: {
-        "brancalonia-bigat": {
-          type: "incapacitato"
-        }
-      }
-    };
-
-    await actor.createEmbeddedDocuments("ActiveEffect", [effectData]);
-  }
 }
 
 // Inizializza quando il gioco è pronto

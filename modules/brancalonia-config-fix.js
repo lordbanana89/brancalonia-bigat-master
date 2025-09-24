@@ -61,36 +61,6 @@ Hooks.once("ready", () => {
       });
     }
 
-    // Condizioni custom
-    if (CONFIG.DND5E?.conditionTypes) {
-      foundry.utils.mergeObject(CONFIG.DND5E.conditionTypes, {
-        menagramo: {
-          name: "Menagramo",
-          img: "modules/brancalonia-bigat/assets/icons/menagramo.svg",
-          reference: "Compendium.brancalonia-bigat.regole.JournalEntry.menagramo",
-          statuses: ["menagramo"]
-        },
-        drunk: {
-          name: "Ubriaco",
-          img: "modules/brancalonia-bigat/assets/icons/ubriaco.svg",
-          reference: "Compendium.brancalonia-bigat.regole.JournalEntry.ubriachezza",
-          statuses: ["ubriaco"]
-        },
-        batosta: {
-          name: "Batosta",
-          img: "modules/brancalonia-bigat/assets/icons/batosta.svg",
-          reference: "Compendium.brancalonia-bigat.regole.JournalEntry.risse",
-          statuses: ["batosta"]
-        },
-        incapacitato: {
-          name: "Incapacitato",
-          img: "icons/svg/daze.svg",
-          reference: "Compendium.brancalonia-bigat.regole.JournalEntry.risse",
-          statuses: ["incapacitato"]
-        }
-      });
-    }
-
     // Tools
     if (CONFIG.DND5E?.tools) {
       foundry.utils.mergeObject(CONFIG.DND5E.tools, {
