@@ -18,8 +18,8 @@ Hooks.once("init", () => {
     shoddyItems: null
   };
 
-  // Configurazione valute di Brancalonia
-  CONFIG.DND5E.currencies = {
+  // Configurazione valute di Brancalonia - Merge invece di sovrascrivere
+  foundry.utils.mergeObject(CONFIG.DND5E.currencies, {
     du: {
       label: "BRANCALONIA.Currency.Ducati",
       abbreviation: "du",
@@ -40,55 +40,67 @@ Hooks.once("init", () => {
       abbreviation: "de",
       conversion: { into: "du", each: 0.1 }
     }
-  };
+  });
 
-  // Aggiungi abilità custom di Brancalonia
-  CONFIG.DND5E.skills.streetwise = {
-    label: "BRANCALONIA.Skills.Streetwise",
-    ability: "wis",
-    fullKey: "streetwise",
-    icon: "systems/dnd5e/icons/skills/shadow_17.jpg"
-  };
+  // Aggiungi abilità custom di Brancalonia - Merge invece di assegnazione diretta
+  if (!CONFIG.DND5E.skills) CONFIG.DND5E.skills = {};
 
-  CONFIG.DND5E.skills.gambling = {
-    label: "BRANCALONIA.Skills.Gambling",
-    ability: "cha",
-    fullKey: "gambling",
-    icon: "systems/dnd5e/icons/skills/ice_17.jpg"
-  };
+  foundry.utils.mergeObject(CONFIG.DND5E.skills, {
+    streetwise: {
+      label: "BRANCALONIA.Skills.Streetwise",
+      ability: "wis",
+      fullKey: "streetwise",
+      icon: "systems/dnd5e/icons/skills/shadow_17.jpg"
+    },
+    gambling: {
+      label: "BRANCALONIA.Skills.Gambling",
+      ability: "cha",
+      fullKey: "gambling",
+      icon: "systems/dnd5e/icons/skills/ice_17.jpg"
+    }
+  });
 
-  // Condizioni custom di Brancalonia
-  CONFIG.DND5E.conditionTypes.menagramo = {
-    label: "BRANCALONIA.Conditions.Menagramo",
-    icon: "icons/magic/death/skull-evil-grin-red.webp",
-    reference: "Compendium.brancalonia-bigat.regole.JournalEntry.menagramo",
-    statuses: ["menagramo"]
-  };
+  // Condizioni custom di Brancalonia - Merge invece di assegnazione diretta
+  if (!CONFIG.DND5E.conditionTypes) CONFIG.DND5E.conditionTypes = {};
 
-  CONFIG.DND5E.conditionTypes.ubriaco = {
-    label: "BRANCALONIA.Conditions.Drunk",
-    icon: "icons/consumables/drinks/wine-bottle-table-brown.webp",
-    reference: "Compendium.brancalonia-bigat.regole.JournalEntry.ubriachezza",
-    statuses: ["drunk"]
-  };
+  foundry.utils.mergeObject(CONFIG.DND5E.conditionTypes, {
+    menagramo: {
+      label: "BRANCALONIA.Conditions.Menagramo",
+      icon: "icons/magic/death/skull-evil-grin-red.webp",
+      reference: "Compendium.brancalonia-bigat.regole.JournalEntry.menagramo",
+      statuses: ["menagramo"]
+    },
+    ubriaco: {
+      label: "BRANCALONIA.Conditions.Drunk",
+      icon: "icons/consumables/drinks/wine-bottle-table-brown.webp",
+      reference: "Compendium.brancalonia-bigat.regole.JournalEntry.ubriachezza",
+      statuses: ["drunk"]
+    }
+  });
 
-  // Tool proficiencies custom
-  CONFIG.DND5E.toolProficiencies.cardsGambling = {
+  // Tool proficiencies custom - Usa il nuovo sistema tools
+  if (!CONFIG.DND5E.tools) CONFIG.DND5E.tools = {};
+
+  CONFIG.DND5E.tools.cardsGambling = {
     label: "BRANCALONIA.Tools.Cards",
     ability: "int"
   };
 
-  CONFIG.DND5E.toolProficiencies.diceGambling = {
+  CONFIG.DND5E.tools.diceGambling = {
     label: "BRANCALONIA.Tools.Dice",
     ability: "wis"
   };
 
-  // Tipi di danno aggiuntivi per risse
-  CONFIG.DND5E.damageTypes.nonlethal = {
-    label: "BRANCALONIA.DamageTypes.NonLethal",
-    icon: "icons/skills/melee/unarmed-punch-fist.webp",
-    reference: ""
-  };
+  // Tipi di danno aggiuntivi per risse - Merge invece di assegnazione diretta
+  if (!CONFIG.DND5E.damageTypes) CONFIG.DND5E.damageTypes = {};
+
+  foundry.utils.mergeObject(CONFIG.DND5E.damageTypes, {
+    nonlethal: {
+      label: "BRANCALONIA.DamageTypes.NonLethal",
+      icon: "icons/skills/melee/unarmed-punch-fist.webp",
+      reference: ""
+    }
+  });
 
   // Non sovrascriviamo più documentClass per evitare conflitti con dnd5e v5.x
 

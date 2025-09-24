@@ -224,7 +224,7 @@ export class ShoddyEquipment {
     itemData.flags.brancalonia.isShoddy = true;
 
     // Crea nuovo oggetto scadente
-    const shoddyItem = new CONFIG.Item.documentClass(itemData);
+    const shoddyItem = new Item(itemData);
     this._applyShoddyModifiers(shoddyItem);
 
     // Se specificato, crea l'oggetto
