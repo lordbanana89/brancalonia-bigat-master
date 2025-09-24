@@ -321,6 +321,87 @@ fvtt package pack nome-pack --compendiumType JournalEntry --in packs/nome/_sourc
 }
 ```
 
+### ⚠️ SCOPERTA CRITICA: Fix Tooltip D&D 5e System
+
+#### Il Problema dei Tooltip in Foundry v13
+Durante lo sviluppo abbiamo scoperto un problema critico con i tooltip del sistema D&D 5e quando si usano compendi custom:
+
+**Errore**: `Cannot read properties of null (reading 'richTooltip')`
+
+Questo errore si verifica quando:
+1. Si passa il mouse sopra un link a un item di Brancalonia
+2. L'item non ha la struttura `richTooltip` nella description
+3. Il metodo `_onHoverContentLink` del sistema D&D 5e riceve un parametro `doc` (non `event`!)
+
+#### Soluzione Implementata
+
+##### 1. Aggiungere richTooltip a tutti gli Item
+Tutti gli item nei compendi devono avere questa struttura:
+```json
+{
+  "system": {
+    "description": {
+      "value": "<p>Descrizione dell'oggetto</p>",
+      "richTooltip": {
+        "content": "<p>Testo del tooltip (max 200 caratteri)</p>",
+        "flavor": ""
+      }
+    }
+  }
+}
+```
+
+Script per aggiungere richTooltip a tutti gli item:
+```javascript
+// add-richtooltip.js
+const tooltipContent = description.value
+  .replace(/<[^>]*>/g, '') // Rimuove HTML
+  .substring(0, 200);       // Max 200 caratteri
+
+data.system.description.richTooltip = {
+  content: `<p>${tooltipContent}...</p>`,
+  flavor: ''
+};
+```
+
+##### 2. Override del metodo _onHoverContentLink
+**IMPORTANTE**: Il parametro è `doc`, NON `event`!
+
+```javascript
+// modules/brancalonia-tooltip-override.js
+Tooltips5e.prototype._onHoverContentLink = async function(doc) {
+  // NOTA: doc è il documento, NON un event!
+  if (!doc) return;
+
+  // Fix per description null o mancante
+  if (doc.system && !doc.system.description) {
+    doc.system.description = {
+      value: doc.name || '',
+      richTooltip: {
+        content: `<p>${doc.name}</p>`,
+        flavor: ''
+      }
+    };
+  }
+
+  return await original_onHoverContentLink.call(this, doc);
+}
+```
+
+#### Errori Comuni e Soluzioni
+
+| Errore | Causa | Soluzione |
+|--------|-------|-----------|
+| "Cannot read properties of null (reading 'richTooltip')" | Item senza richTooltip | Aggiungere richTooltip a tutti gli item |
+| "Cannot read properties of null (reading 'currentTarget')" | Override usa `event` invece di `doc` | Usare parametro `doc`, non `event` |
+| "Tooltip non mostra contenuto" | richTooltip.content vuoto | Generare content da description.value |
+
+#### Verifica Fix
+Per verificare che il fix funzioni:
+1. Passa il mouse su un link UUID di un item Brancalonia
+2. Il tooltip deve apparire senza errori in console
+3. Controllare che `doc.system.description.richTooltip` esista
+
 ### Script di Utility
 
 #### add-keys.cjs
@@ -334,6 +415,9 @@ Corregge la struttura delle directory spostando i DB nella posizione corretta
 
 #### verify-packs.cjs
 Verifica che tutti i documenti nei database abbiano il campo `_key`
+
+#### add-richtooltip.js
+Aggiunge la struttura richTooltip a tutti gli item per compatibilità con D&D 5e v3.3+
 
 ---
 
