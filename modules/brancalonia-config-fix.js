@@ -66,13 +66,13 @@ Hooks.once("ready", () => {
       foundry.utils.mergeObject(CONFIG.DND5E.conditionTypes, {
         menagramo: {
           name: "BRANCALONIA.Conditions.Menagramo",
-          img: "icons/magic/death/skull-evil-grin-red.webp",
+          img: "modules/brancalonia-bigat/assets/icons/menagramo.svg",
           reference: "Compendium.brancalonia-bigat.regole.JournalEntry.menagramo",
           statuses: ["menagramo"]
         },
         ubriaco: {
           name: "BRANCALONIA.Conditions.Drunk",
-          img: "icons/consumables/drinks/wine-bottle-table-brown.webp",
+          img: "modules/brancalonia-bigat/assets/icons/ubriaco.svg",
           reference: "Compendium.brancalonia-bigat.regole.JournalEntry.ubriachezza",
           statuses: ["drunk"]
         }
