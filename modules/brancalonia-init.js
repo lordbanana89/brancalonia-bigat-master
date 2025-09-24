@@ -65,13 +65,13 @@ Hooks.once("init", () => {
 
   foundry.utils.mergeObject(CONFIG.DND5E.conditionTypes, {
     menagramo: {
-      label: "BRANCALONIA.Conditions.Menagramo",
+      name: "BRANCALONIA.Conditions.Menagramo",
       icon: "icons/magic/death/skull-evil-grin-red.webp",
       reference: "Compendium.brancalonia-bigat.regole.JournalEntry.menagramo",
       statuses: ["menagramo"]
     },
     ubriaco: {
-      label: "BRANCALONIA.Conditions.Drunk",
+      name: "BRANCALONIA.Conditions.Drunk",
       icon: "icons/consumables/drinks/wine-bottle-table-brown.webp",
       reference: "Compendium.brancalonia-bigat.regole.JournalEntry.ubriachezza",
       statuses: ["drunk"]
@@ -162,7 +162,7 @@ async function applyMenagramo(actor, duration = "1d4") {
   // Applica active effect
   const roll = await new Roll(duration).evaluate();
   const effect = {
-    label: "Menagramo",
+    name: "Menagramo",
     icon: "icons/magic/death/skull-evil-grin-red.webp",
     origin: actor.uuid,
     disabled: false,
