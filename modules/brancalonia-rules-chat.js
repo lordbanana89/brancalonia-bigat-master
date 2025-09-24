@@ -131,10 +131,13 @@ Hooks.once("ready", () => {
 /**
  * Processa i messaggi chat per convertire i tag @Regola in link
  */
-Hooks.on("renderChatMessage", (message, html) => {
+Hooks.on("renderChatMessageHTML", (message, html) => {
+  // html è ora un HTMLElement, non jQuery
   // Trova tutti i tag @Regola[nome]
-  const content = html.find(".message-content");
-  let htmlContent = content.html();
+  const content = html.querySelector(".message-content");
+  if (!content) return;
+
+  let htmlContent = content.innerHTML;
 
   // Pattern per trovare @Regola[qualsiasi cosa]
   const pattern = /@Regola\[([^\]]+)\]/g;
@@ -152,7 +155,7 @@ Hooks.on("renderChatMessage", (message, html) => {
     return match; // Se non trova, lascia il testo originale
   });
 
-  content.html(htmlContent);
+  content.innerHTML = htmlContent;
 });
 
 /**
