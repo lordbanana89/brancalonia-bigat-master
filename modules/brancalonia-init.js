@@ -48,19 +48,19 @@ Hooks.once("init", () => {
 // Helper functions per Brancalonia invece di estendere la classe
 function initializeBrancaloniaData(actor) {
   // Aggiungi dati Brancalonia usando flags
-  if (!actor.getFlag("brancalonia", "initialized")) {
-    actor.setFlag("brancalonia", "initialized", true);
-    actor.setFlag("brancalonia", "infamia", 0);
-    actor.setFlag("brancalonia", "menagramo", false);
+  if (!actor.getFlag("brancalonia-bigat", "initialized")) {
+    actor.setFlag("brancalonia-bigat", "initialized", true);
+    actor.setFlag("brancalonia-bigat", "infamia", 0);
+    actor.setFlag("brancalonia-bigat", "menagramo", false);
   }
 }
 
 // Metodi helper per aggiungere funzionalità Brancalonia agli attori
 async function addInfamia(actor, value) {
-  const currentInfamia = actor.getFlag("brancalonia", "infamia") || 0;
+  const currentInfamia = actor.getFlag("brancalonia-bigat", "infamia") || 0;
   const newInfamia = Math.max(0, Math.min(100, currentInfamia + value));
 
-  await actor.setFlag("brancalonia", "infamia", newInfamia);
+  await actor.setFlag("brancalonia-bigat", "infamia", newInfamia);
 
   // Notifica
   ui.notifications.info(`${actor.name} guadagna ${value} punti Infamia (Totale: ${newInfamia})`);
@@ -82,8 +82,8 @@ function checkInfamiaEffects(actor, infamiaLevel) {
 
 // Metodo per applicare menagramo
 async function applyMenagramo(actor, duration = "1d4") {
-  await actor.setFlag("brancalonia", "menagramo", true);
-  await actor.setFlag("brancalonia", "menagramoDuration", duration);
+  await actor.setFlag("brancalonia-bigat", "menagramo", true);
+  await actor.setFlag("brancalonia-bigat", "menagramoDuration", duration);
 
   // Applica active effect
   const roll = await new Roll(duration).evaluate();
@@ -266,7 +266,7 @@ Hooks.on("renderActorSheet5e", (app, html, data) => {
   if (data.actor.type !== "character") return;
 
   // Inizializza se non già fatto
-  if (!data.actor.getFlag("brancalonia", "initialized")) {
+  if (!data.actor.getFlag("brancalonia-bigat", "initialized")) {
     initializeBrancaloniaData(data.actor);
   }
 
@@ -276,7 +276,7 @@ Hooks.on("renderActorSheet5e", (app, html, data) => {
   }
 
   // Aggiungi indicatore menagramo
-  if (data.actor.flags.brancalonia?.menagramo) {
+  if (data.actor.flags?.["brancalonia-bigat"]?.menagramo) {
     const header = html.find(".window-header");
     header.append(`<span class="menagramo-indicator" title="Sotto effetto del Menagramo!">☠️</span>`);
   }
@@ -285,7 +285,7 @@ Hooks.on("renderActorSheet5e", (app, html, data) => {
 // Hook per modificare i tiri
 Hooks.on("dnd5e.preRollAbilityTest", (actor, rollData, messageData) => {
   // Applica effetti menagramo
-  if (actor.flags.brancalonia?.menagramo) {
+  if (actor.flags?.["brancalonia-bigat"]?.menagramo) {
     rollData.disadvantage = true;
     ui.notifications.warn("Menagramo! Tiro con svantaggio!");
   }
@@ -293,7 +293,7 @@ Hooks.on("dnd5e.preRollAbilityTest", (actor, rollData, messageData) => {
 
 // Hook per gestire danno non letale nelle risse
 Hooks.on("dnd5e.applyDamage", (actor, damage, options) => {
-  if (options.nonLethal || actor.flags.brancalonia?.inBrawl) {
+  if (options.nonLethal || actor.flags?.["brancalonia-bigat"]?.inBrawl) {
     // Converti in danno temporaneo invece che reale
     const tempHp = actor.system.attributes.hp.temp || 0;
     const newTempDamage = Math.max(0, tempHp - damage);

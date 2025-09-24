@@ -135,11 +135,11 @@ export class LevelCapSystem {
       const xp = getProperty(actor, "system.details.xp.value");
       if (xp === undefined) return;
 
-      const taken = actor.getFlag("brancalonia", "emeriticenze") ?? 0;
+      const taken = actor.getFlag("brancalonia-bigat", "emeriticenze") ?? 0;
       const nextThreshold = this.BASE_EMERITICENZA_XP + (taken + 1) * this.EMERITICENZA_STEP;
 
       if (xp >= nextThreshold) {
-        actor.setFlag("brancalonia", "emeriticenze", taken + 1);
+        actor.setFlag("brancalonia-bigat", "emeriticenze", taken + 1);
         this._notifyEmeriticenza(actor, taken + 1);
       }
     });
@@ -154,7 +154,7 @@ export class LevelCapSystem {
    * Dialog per scegliere un'emeriticenza
    */
   _showEmeriticenzaDialog(actor, totalEmeriticenze) {
-    const takenEmeriticenze = actor.getFlag("brancalonia", "emeriticenzeTaken") || {};
+    const takenEmeriticenze = actor.getFlag("brancalonia-bigat", "emeriticenzeTaken") || {};
     const availableEmeriticenze = this._getAvailableEmeriticenze(actor, takenEmeriticenze);
 
     if (availableEmeriticenze.length === 0) {
@@ -258,9 +258,9 @@ export class LevelCapSystem {
     if (!em) return;
 
     // Registra la scelta
-    const taken = actor.getFlag("brancalonia", "emeriticenzeTaken") || {};
+    const taken = actor.getFlag("brancalonia-bigat", "emeriticenzeTaken") || {};
     taken[emeriticenzaKey] = (taken[emeriticenzaKey] || 0) + 1;
-    await actor.setFlag("brancalonia", "emeriticenzeTaken", taken);
+    await actor.setFlag("brancalonia-bigat", "emeriticenzeTaken", taken);
 
     // Applica l'effetto
     await em.apply(actor);
@@ -565,8 +565,8 @@ export class LevelCapSystem {
 
   async _applyBrawlerPro(actor) {
     // Aggiungi slot mossa e nuova mossa
-    const currentSlots = actor.getFlag("brancalonia", "brawlMoveSlots") || 2;
-    await actor.setFlag("brancalonia", "brawlMoveSlots", currentSlots + 1);
+    const currentSlots = actor.getFlag("brancalonia-bigat", "brawlMoveSlots") || 2;
+    await actor.setFlag("brancalonia-bigat", "brawlMoveSlots", currentSlots + 1);
 
     // Notifica per scegliere nuova mossa
     ui.notifications.info("Scegli una nuova mossa base dal sistema Risse");

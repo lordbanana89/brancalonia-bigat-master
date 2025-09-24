@@ -397,7 +397,7 @@ export class HavenSystem {
     havenData.comfort = this._calculateComfort(havenData.rooms);
     havenData.capacity = this._calculateCapacity(havenData.rooms);
 
-    await haven.setFlag("brancalonia", "havenData", havenData);
+    await haven.setFlag("brancalonia-bigat", "havenData", havenData);
 
     // Aggiorna pagine journal
     const roomsPage = haven.pages.find(p => p.name === "Stanze");
@@ -466,7 +466,7 @@ export class HavenSystem {
       havenData.defense += defense.defenseBonus;
     }
 
-    await haven.setFlag("brancalonia", "havenData", havenData);
+    await haven.setFlag("brancalonia-bigat", "havenData", havenData);
 
     ChatMessage.create({
       content: `${defense.name} installato/a al rifugio ${haven.name}!`,
@@ -506,7 +506,7 @@ export class HavenSystem {
         const degradation = Math.floor(Math.random() * 3) + 1;
         havenData.comfort = Math.max(0, havenData.comfort - degradation);
 
-        await haven.setFlag("brancalonia", "havenData", havenData);
+        await haven.setFlag("brancalonia-bigat", "havenData", havenData);
 
         ChatMessage.create({
           content: `
@@ -522,7 +522,7 @@ export class HavenSystem {
 
       // Aggiorna data ultimo mantenimento
       havenData.lastMaintenance = new Date().toISOString();
-      await haven.setFlag("brancalonia", "havenData", havenData);
+      await haven.setFlag("brancalonia-bigat", "havenData", havenData);
     }
   }
 

@@ -195,7 +195,7 @@ export class InfamiaTracker {
     const current = actor.flags.brancalonia?.infamia || 0;
     const newValue = Math.max(0, Math.min(100, current + delta));
 
-    await actor.setFlag("brancalonia", "infamia", newValue);
+    await actor.setFlag("brancalonia-bigat", "infamia", newValue);
 
     // Notifica cambio livello
     const oldLevel = this._getInfamiaLevel(current);
@@ -454,7 +454,7 @@ export class InfamiaTracker {
     let value = amount || reduction.base;
 
     if (method === "change_identity") {
-      await actor.setFlag("brancalonia", "infamia", 0);
+      await actor.setFlag("brancalonia-bigat", "infamia", 0);
       ChatMessage.create({
         content: `${actor.name} ha cambiato identità! Infamia azzerata.`,
         speaker: ChatMessage.getSpeaker({actor: actor})

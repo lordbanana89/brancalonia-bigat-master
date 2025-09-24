@@ -101,10 +101,10 @@ export class FavoriSystem {
    */
   _renderFavoriUI(app, html, data) {
     const actor = app.actor;
-    const nomea = actor.getFlag("brancalonia", "nomea") || 0;
+    const nomea = actor.getFlag("brancalonia-bigat", "nomea") || 0;
     const nomeaBonus = Math.floor(nomea / 25); // Bonus ogni 25 punti nomea
-    const favoriUsed = actor.getFlag("brancalonia", "favoriUsed") || 0;
-    const favoriDebts = actor.getFlag("brancalonia", "favoriDebts") || 0;
+    const favoriUsed = actor.getFlag("brancalonia-bigat", "favoriUsed") || 0;
+    const favoriDebts = actor.getFlag("brancalonia-bigat", "favoriDebts") || 0;
     const favoriRemaining = Math.max(0, nomeaBonus - favoriUsed);
 
     const favoriHtml = `
@@ -162,9 +162,9 @@ export class FavoriSystem {
    * Dialog per richiedere un favore
    */
   _openFavoreRequestDialog(actor) {
-    const nomea = actor.getFlag("brancalonia", "nomea") || 0;
+    const nomea = actor.getFlag("brancalonia-bigat", "nomea") || 0;
     const nomeaBonus = Math.floor(nomea / 25);
-    const favoriUsed = actor.getFlag("brancalonia", "favoriUsed") || 0;
+    const favoriUsed = actor.getFlag("brancalonia-bigat", "favoriUsed") || 0;
     const favoriRemaining = Math.max(0, nomeaBonus - favoriUsed);
     const isOwnBand = true; // TODO: determinare se è la propria banda
 
@@ -342,9 +342,9 @@ export class FavoriSystem {
    * Processa la richiesta di favore
    */
   async _processFavoreRequest(actor, type, otherBand, details) {
-    const nomea = actor.getFlag("brancalonia", "nomea") || 0;
+    const nomea = actor.getFlag("brancalonia-bigat", "nomea") || 0;
     const nomeaBonus = Math.floor(nomea / 25);
-    const favoriUsed = actor.getFlag("brancalonia", "favoriUsed") || 0;
+    const favoriUsed = actor.getFlag("brancalonia-bigat", "favoriUsed") || 0;
     const favoriRemaining = Math.max(0, nomeaBonus - favoriUsed);
 
     let cost = 0;
@@ -374,13 +374,13 @@ export class FavoriSystem {
     }
 
     if (debt > 0) {
-      const currentDebt = actor.getFlag("brancalonia", "favoriDebts") || 0;
-      await actor.setFlag("brancalonia", "favoriDebts", currentDebt + debt);
+      const currentDebt = actor.getFlag("brancalonia-bigat", "favoriDebts") || 0;
+      await actor.setFlag("brancalonia-bigat", "favoriDebts", currentDebt + debt);
     }
 
     // Incrementa favori usati
     if (favoriRemaining > 0) {
-      await actor.setFlag("brancalonia", "favoriUsed", favoriUsed + 1);
+      await actor.setFlag("brancalonia-bigat", "favoriUsed", favoriUsed + 1);
     }
 
     // Registra il favore
@@ -479,7 +479,7 @@ export class FavoriSystem {
    * Esegue Barattiere - cancella ultima malefatta
    */
   async _executeBarattiere(actor) {
-    const malefatte = actor.getFlag("brancalonia", "malefatte") || [];
+    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
 
     if (malefatte.length === 0) {
       ui.notifications.warn("Nessuna malefatta da insabbiare!");
@@ -506,11 +506,11 @@ export class FavoriSystem {
             const index = parseInt(html.find('select[name="malefatta"]').val());
             const removed = malefatte.splice(index, 1)[0];
 
-            await actor.setFlag("brancalonia", "malefatte", malefatte);
+            await actor.setFlag("brancalonia-bigat", "malefatte", malefatte);
 
             // Ricalcola taglia
             const newTaglia = malefatte.reduce((sum, m) => sum + m.value, 0);
-            await actor.setFlag("brancalonia", "taglia", newTaglia);
+            await actor.setFlag("brancalonia-bigat", "taglia", newTaglia);
 
             ChatMessage.create({
               content: `Il Barattiere ha insabbiato: ${removed.name} (-${removed.value} mo di taglia)`,
@@ -564,7 +564,7 @@ export class FavoriSystem {
     const granlussoKey = details.granlusso;
 
     // Applica flag temporaneo per il granlusso
-    await actor.setFlag("brancalonia", `tempGranlusso_${granlussoKey}`, true);
+    await actor.setFlag("brancalonia-bigat", `tempGranlusso_${granlussoKey}`, true);
 
     ChatMessage.create({
       content: `${actor.name} può usare ${granlussoKey} per questo lavoretto!`,
@@ -606,7 +606,7 @@ export class FavoriSystem {
    * Esegue Viaggio in Incognito
    */
   async _executeViaggioIncognito(actor, details) {
-    await actor.setFlag("brancalonia", "safeTravel", {
+    await actor.setFlag("brancalonia-bigat", "safeTravel", {
       destination: details.destination,
       expires: Date.now() + (7 * 24 * 60 * 60 * 1000) // 1 settimana
     });
@@ -628,7 +628,7 @@ export class FavoriSystem {
     const actors = game.actors.filter(a =>
       a.type === "character" &&
       a.hasPlayerOwner &&
-      (a.getFlag("brancalonia", "recentMalefatte") || []).length > 0
+      (a.getFlag("brancalonia-bigat", "recentMalefatte") || []).length > 0
     );
 
     actors.forEach(actor => {
@@ -652,7 +652,7 @@ export class FavoriSystem {
    * Paga debiti di favori
    */
   async payFavoriDebt(actor, amount) {
-    const currentDebt = actor.getFlag("brancalonia", "favoriDebts") || 0;
+    const currentDebt = actor.getFlag("brancalonia-bigat", "favoriDebts") || 0;
     const currentMoney = actor.system.currency.gp || 0;
 
     const toPay = Math.min(amount, currentDebt, currentMoney);
@@ -666,7 +666,7 @@ export class FavoriSystem {
       "system.currency.gp": currentMoney - toPay
     });
 
-    await actor.setFlag("brancalonia", "favoriDebts", currentDebt - toPay);
+    await actor.setFlag("brancalonia-bigat", "favoriDebts", currentDebt - toPay);
 
     ChatMessage.create({
       content: `${actor.name} paga ${toPay} mo di debiti di favori. Debito rimanente: ${currentDebt - toPay} mo`,

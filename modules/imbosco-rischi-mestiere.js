@@ -129,7 +129,7 @@ export class ImboscoRischiSystem {
   _trackImboscoChoices() {
     const imboscati = game.actors.filter(a =>
       a.type === "character" &&
-      a.getFlag("brancalonia", "sbracoChoice") === "imbosco"
+      a.getFlag("brancalonia-bigat", "sbracoChoice") === "imbosco"
     );
 
     if (imboscati.length > 0) {
@@ -157,12 +157,12 @@ export class ImboscoRischiSystem {
    * Applica effetti Imbosco (chiamato da rest-system.js)
    */
   async applyImbosco(actor) {
-    const currentTaglia = actor.getFlag("brancalonia", "taglia") || 0;
+    const currentTaglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
     const reduction = Math.floor(Math.random() * 6) + 5; // 5-10
     const newTaglia = Math.max(0, currentTaglia - reduction);
 
-    await actor.setFlag("brancalonia", "taglia", newTaglia);
-    await actor.setFlag("brancalonia", "imboscato", true);
+    await actor.setFlag("brancalonia-bigat", "taglia", newTaglia);
+    await actor.setFlag("brancalonia-bigat", "imboscato", true);
 
     // Applica restrizioni come Active Effect temporaneo
     const effect = {
@@ -384,8 +384,8 @@ export class ImboscoRischiSystem {
     switch(event.effect) {
       case "increaseAllTaglie":
         for (const actor of actors) {
-          const current = actor.getFlag("brancalonia", "taglia") || 0;
-          await actor.setFlag("brancalonia", "taglia", current + event.value);
+          const current = actor.getFlag("brancalonia-bigat", "taglia") || 0;
+          await actor.setFlag("brancalonia-bigat", "taglia", current + event.value);
         }
         break;
 
@@ -426,8 +426,8 @@ export class ImboscoRischiSystem {
 
       case "equitagliaAgent":
         for (const actor of actors) {
-          const current = actor.getFlag("brancalonia", "taglia") || 0;
-          await actor.setFlag("brancalonia", "taglia", Math.ceil(current * event.multiplier));
+          const current = actor.getFlag("brancalonia-bigat", "taglia") || 0;
+          await actor.setFlag("brancalonia-bigat", "taglia", Math.ceil(current * event.multiplier));
         }
         break;
 
@@ -446,7 +446,7 @@ export class ImboscoRischiSystem {
     );
 
     const spy = actors[Math.floor(Math.random() * actors.length)];
-    await spy.setFlag("brancalonia", "secretSpy", true);
+    await spy.setFlag("brancalonia-bigat", "secretSpy", true);
 
     // Notifica solo al GM
     ChatMessage.create({

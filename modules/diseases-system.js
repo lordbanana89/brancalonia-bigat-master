@@ -352,7 +352,7 @@ export class DiseasesSystem {
     const currentDiseases = actor.flags.brancalonia?.diseases || [];
     currentDiseases.push(diseaseData);
 
-    await actor.setFlag("brancalonia", "diseases", currentDiseases);
+    await actor.setFlag("brancalonia-bigat", "diseases", currentDiseases);
 
     // Messaggio
     ChatMessage.create({
@@ -473,7 +473,7 @@ export class DiseasesSystem {
       }
     }
 
-    await actor.setFlag("brancalonia", "diseases", diseases);
+    await actor.setFlag("brancalonia-bigat", "diseases", diseases);
   }
 
   /**
@@ -510,7 +510,7 @@ export class DiseasesSystem {
     }
 
     if (recovered.length > 0) {
-      await actor.setFlag("brancalonia", "diseases", diseases);
+      await actor.setFlag("brancalonia-bigat", "diseases", diseases);
 
       ChatMessage.create({
         content: `<div class="brancalonia-disease-recovery">
@@ -554,7 +554,7 @@ export class DiseasesSystem {
 
     // Rimuovi malattia
     diseases.splice(diseaseIndex, 1);
-    await actor.setFlag("brancalonia", "diseases", diseases);
+    await actor.setFlag("brancalonia-bigat", "diseases", diseases);
 
     // Rimuovi effetto
     const effect = actor.effects.find(e =>
@@ -642,8 +642,8 @@ export class DiseasesSystem {
 
     for (let npc of npcs) {
       if (Math.random() < infectionRate) {
-        await npc.setFlag("brancalonia", "diseased", true);
-        await npc.setFlag("brancalonia", "diseases", [{
+        await npc.setFlag("brancalonia-bigat", "diseased", true);
+        await npc.setFlag("brancalonia-bigat", "diseases", [{
           key: Object.keys(this.diseases).find(k => this.diseases[k] === disease),
           stage: Math.floor(Math.random() * 3) + 1
         }]);

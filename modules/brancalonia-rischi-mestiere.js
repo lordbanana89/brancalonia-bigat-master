@@ -170,7 +170,7 @@ class BrancaloniaRischiMestiere {
   /**
    * Tira i Rischi del Mestiere per la Cricca
    */
-  tiraRischiMestiere(cricca, modificatore = 0) {
+  async tiraRischiMestiere(cricca, modificatore = 0) {
     // Calcola il modificatore totale
     let modTotale = modificatore;
 
@@ -192,7 +192,7 @@ class BrancaloniaRischiMestiere {
 
     // Tira il dado
     const roll = new Roll(`1d100 + ${modTotale}`);
-    roll.evaluate({ async: false });
+    await roll.evaluate();
 
     const risultato = roll.total;
 
@@ -390,7 +390,7 @@ class BrancaloniaRischiMestiere {
     let bonusNomeaTotale = 0;
 
     for (const membro of cricca) {
-      const nomea = membro.getFlag("brancalonia", "nomea") || 0;
+      const nomea = membro.getFlag("brancalonia-bigat", "nomea") || 0;
       nomeaMax = Math.max(nomeaMax, nomea);
       bonusNomeaTotale += Math.floor(nomea / 10);
     }
@@ -402,7 +402,7 @@ class BrancaloniaRischiMestiere {
         <h3>Cricca Attuale</h3>
         <ul>
           ${cricca.map(m => {
-            const nomea = m.getFlag("brancalonia", "nomea") || 0;
+            const nomea = m.getFlag("brancalonia-bigat", "nomea") || 0;
             return `<li>${m.name} (Nomea: ${nomea})</li>`;
           }).join('')}
         </ul>
@@ -430,7 +430,7 @@ class BrancaloniaRischiMestiere {
           callback: async (html) => {
             const modExtra = parseInt(html.find('[name="modExtra"]').val()) || 0;
 
-            const risultato = this.tiraRischiMestiere(
+            const risultato = await this.tiraRischiMestiere(
               cricca.map(a => ({ actor: a })),
               modExtra
             );

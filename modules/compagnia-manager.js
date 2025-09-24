@@ -99,8 +99,8 @@ export class CompagniaManager {
 
     // Imposta flag su ogni membro
     for (const actor of actors) {
-      await actor.setFlag("brancalonia", "compagniaId", compagnia.id);
-      await actor.setFlag("brancalonia", "compagniaRole", null);
+      await actor.setFlag("brancalonia-bigat", "compagniaId", compagnia.id);
+      await actor.setFlag("brancalonia-bigat", "compagniaRole", null);
     }
 
     // Notifica creazione
@@ -142,9 +142,9 @@ export class CompagniaManager {
       share: 1
     });
 
-    await compagnia.setFlag("brancalonia", "members", members);
-    await actor.setFlag("brancalonia", "compagniaId", compagnia.id);
-    await actor.setFlag("brancalonia", "compagniaRole", role);
+    await compagnia.setFlag("brancalonia-bigat", "members", members);
+    await actor.setFlag("brancalonia-bigat", "compagniaId", compagnia.id);
+    await actor.setFlag("brancalonia-bigat", "compagniaRole", role);
 
     // Notifica
     ChatMessage.create({
@@ -162,11 +162,11 @@ export class CompagniaManager {
 
     members = members.filter(m => m.actorId !== actorId);
 
-    await compagnia.setFlag("brancalonia", "members", members);
+    await compagnia.setFlag("brancalonia-bigat", "members", members);
 
     if (actor) {
-      await actor.unsetFlag("brancalonia", "compagniaId");
-      await actor.unsetFlag("brancalonia", "compagniaRole");
+      await actor.unsetFlag("brancalonia-bigat", "compagniaId");
+      await actor.unsetFlag("brancalonia-bigat", "compagniaRole");
     }
 
     ChatMessage.create({
@@ -198,11 +198,11 @@ export class CompagniaManager {
     const memberIndex = members.findIndex(m => m.actorId === actorId);
     if (memberIndex >= 0) {
       members[memberIndex].role = role;
-      await compagnia.setFlag("brancalonia", "members", members);
+      await compagnia.setFlag("brancalonia-bigat", "members", members);
 
       const actor = game.actors.get(actorId);
       if (actor) {
-        await actor.setFlag("brancalonia", "compagniaRole", role);
+        await actor.setFlag("brancalonia-bigat", "compagniaRole", role);
 
         ChatMessage.create({
           content: `${actor.name} è ora ${this.compagniaRoles[role].label} della compagnia!`,
@@ -229,7 +229,7 @@ export class CompagniaManager {
     }
 
     const collectiveInfamia = count > 0 ? Math.floor(totalInfamia / count) : 0;
-    await compagnia.setFlag("brancalonia", "infamiaCollettiva", collectiveInfamia);
+    await compagnia.setFlag("brancalonia-bigat", "infamiaCollettiva", collectiveInfamia);
 
     return collectiveInfamia;
   }
@@ -241,7 +241,7 @@ export class CompagniaManager {
     const currentTreasury = compagnia.flags.brancalonia.treasury || 0;
     const newTreasury = Math.max(0, currentTreasury + amount);
 
-    await compagnia.setFlag("brancalonia", "treasury", newTreasury);
+    await compagnia.setFlag("brancalonia-bigat", "treasury", newTreasury);
 
     // Log transazione
     const transaction = {
@@ -253,7 +253,7 @@ export class CompagniaManager {
 
     const transactions = compagnia.flags.brancalonia.transactions || [];
     transactions.push(transaction);
-    await compagnia.setFlag("brancalonia", "transactions", transactions);
+    await compagnia.setFlag("brancalonia-bigat", "transactions", transactions);
 
     // Notifica
     ChatMessage.create({

@@ -571,7 +571,7 @@ export class EnvironmentalHazardsSystem {
       effect: hazard.effect.ongoing
     });
 
-    await actor.setFlag("brancalonia", "ongoingHazards", ongoingHazards);
+    await actor.setFlag("brancalonia-bigat", "ongoingHazards", ongoingHazards);
 
     // Programma check periodici
     if (hazard.effect.ongoing.includes("round")) {
@@ -723,7 +723,7 @@ export class EnvironmentalHazardsSystem {
       triggered: false
     });
 
-    await canvas.scene.setFlag("brancalonia", "hazards", sceneHazards);
+    await canvas.scene.setFlag("brancalonia-bigat", "hazards", sceneHazards);
 
     ui.notifications.info(`Hazard ${hazard.name} piazzato`);
   }
@@ -742,7 +742,7 @@ export class EnvironmentalHazardsSystem {
 
     const sceneHazards = canvas.scene.flags.brancalonia?.hazards || [];
     const filtered = sceneHazards.filter(h => h.type !== hazardName);
-    await canvas.scene.setFlag("brancalonia", "hazards", filtered);
+    await canvas.scene.setFlag("brancalonia-bigat", "hazards", filtered);
   }
 
   /**

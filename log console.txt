@@ -1,0 +1,1249 @@
+VM19367:7 Console was cleared
+VM19367:8 ╔═══════════════════════════════════════════════════════╗
+VM19367:9 ║     🎭 TEST AUTOMATICO BRANCALONIA v3.2.2 🎭         ║
+VM19367:10 ╚═══════════════════════════════════════════════════════╝
+
+VM19367:17 📦 TEST 1: CARICAMENTO MODULO
+VM19367:21    ✅ Modulo caricato
+VM19367:22    → Versione: 3.2.2
+VM19367:23    → File JS: 5
+VM19367:32 
+🔧 TEST 2: SISTEMI ATTIVI
+VM19367:37    ✅ Sistemi principali attivi
+VM19367:38    → Sistemi trovati: 23
+VM19367:47 
+🚩 TEST 3: SISTEMA FLAG
+foundry.mjs:6724 Error: You are accessing globalThis.getProperty which must now be accessed via foundry.utils.getProperty
+Deprecated since Version 12
+Backwards-compatible support will be removed in Version 14
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180510:9)
+    at Object.fn (level-cap.js:135:18)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:58:7)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180510
+(anonymous) @ level-cap.js:135
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+testBrancaloniaCompleto @ VM19367:58
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'updateActor'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+testBrancaloniaCompleto @ VM19367:58
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'updateActor'. Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:58:7)Caused by: Error: Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Actor5e.getFlag (foundry.mjs:12853:42)
+    at Object.fn (level-cap.js:138:27)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:58:7)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+testBrancaloniaCompleto @ VM19367:58
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+VM19367:61    ✅ Flag system funziona
+foundry.mjs:6724 Error: You are accessing globalThis.getProperty which must now be accessed via foundry.utils.getProperty
+Deprecated since Version 12
+Backwards-compatible support will be removed in Version 14
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180510:9)
+    at Object.fn (level-cap.js:135:18)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:64:7)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180510
+(anonymous) @ level-cap.js:135
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+unsetFlag @ foundry.mjs:12912
+testBrancaloniaCompleto @ VM19367:64
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'updateActor'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+unsetFlag @ foundry.mjs:12912
+testBrancaloniaCompleto @ VM19367:64
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'updateActor'. Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:64:7)Caused by: Error: Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Actor5e.getFlag (foundry.mjs:12853:42)
+    at Object.fn (level-cap.js:138:27)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:64:7)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+unsetFlag @ foundry.mjs:12912
+testBrancaloniaCompleto @ VM19367:64
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+VM19367:74 
+⚖️ TEST 4: SISTEMA EQUITAGLIA
+foundry.mjs:6724 Error: You are accessing globalThis.getProperty which must now be accessed via foundry.utils.getProperty
+Deprecated since Version 12
+Backwards-compatible support will be removed in Version 14
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180510:9)
+    at Object.fn (level-cap.js:135:18)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:293:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:85:7)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180510
+(anonymous) @ level-cap.js:135
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+aggiungiMalefatta @ brancalonia-equitaglia.js:293
+testBrancaloniaCompleto @ VM19367:85
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'updateActor'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+aggiungiMalefatta @ brancalonia-equitaglia.js:293
+testBrancaloniaCompleto @ VM19367:85
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'updateActor'. Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:293:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:85:7)Caused by: Error: Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Actor5e.getFlag (foundry.mjs:12853:42)
+    at Object.fn (level-cap.js:138:27)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:293:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:85:7)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+aggiungiMalefatta @ brancalonia-equitaglia.js:293
+testBrancaloniaCompleto @ VM19367:85
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:6724 Error: You are accessing globalThis.getProperty which must now be accessed via foundry.utils.getProperty
+Deprecated since Version 12
+Backwards-compatible support will be removed in Version 14
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180510:9)
+    at Object.fn (level-cap.js:135:18)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:327:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:85:7)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180510
+(anonymous) @ level-cap.js:135
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:327
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:85
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'updateActor'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:327
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:85
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'updateActor'. Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:327:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:85:7)Caused by: Error: Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Actor5e.getFlag (foundry.mjs:12853:42)
+    at Object.fn (level-cap.js:138:27)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:327:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:85:7)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:327
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:85
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:6724 Error: You are accessing globalThis.getProperty which must now be accessed via foundry.utils.getProperty
+Deprecated since Version 12
+Backwards-compatible support will be removed in Version 14
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180510:9)
+    at Object.fn (level-cap.js:135:18)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:331:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:85:7)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180510
+(anonymous) @ level-cap.js:135
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:331
+await in ricalcolaTaglia
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:85
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'updateActor'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:331
+await in ricalcolaTaglia
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:85
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'updateActor'. Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:331:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:85:7)Caused by: Error: Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Actor5e.getFlag (foundry.mjs:12853:42)
+    at Object.fn (level-cap.js:138:27)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:331:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:85:7)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:331
+await in ricalcolaTaglia
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:85
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:6724 Error: You are accessing globalThis.getProperty which must now be accessed via foundry.utils.getProperty
+Deprecated since Version 12
+Backwards-compatible support will be removed in Version 14
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180510:9)
+    at Object.fn (level-cap.js:135:18)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:293:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:89:7)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180510
+(anonymous) @ level-cap.js:135
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+aggiungiMalefatta @ brancalonia-equitaglia.js:293
+testBrancaloniaCompleto @ VM19367:89
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'updateActor'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+aggiungiMalefatta @ brancalonia-equitaglia.js:293
+testBrancaloniaCompleto @ VM19367:89
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'updateActor'. Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:293:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:89:7)Caused by: Error: Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Actor5e.getFlag (foundry.mjs:12853:42)
+    at Object.fn (level-cap.js:138:27)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:293:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:89:7)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+aggiungiMalefatta @ brancalonia-equitaglia.js:293
+testBrancaloniaCompleto @ VM19367:89
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:6724 Error: You are accessing globalThis.getProperty which must now be accessed via foundry.utils.getProperty
+Deprecated since Version 12
+Backwards-compatible support will be removed in Version 14
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180510:9)
+    at Object.fn (level-cap.js:135:18)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:327:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:89:7)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180510
+(anonymous) @ level-cap.js:135
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:327
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:89
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'updateActor'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:327
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:89
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'updateActor'. Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:327:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:89:7)Caused by: Error: Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Actor5e.getFlag (foundry.mjs:12853:42)
+    at Object.fn (level-cap.js:138:27)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:327:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:89:7)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:327
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:89
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:6724 Error: You are accessing globalThis.getProperty which must now be accessed via foundry.utils.getProperty
+Deprecated since Version 12
+Backwards-compatible support will be removed in Version 14
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180510:9)
+    at Object.fn (level-cap.js:135:18)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:331:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:89:7)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180510
+(anonymous) @ level-cap.js:135
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:331
+await in ricalcolaTaglia
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:89
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'updateActor'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:331
+await in ricalcolaTaglia
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:89
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'updateActor'. Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:331:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:89:7)Caused by: Error: Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Actor5e.getFlag (foundry.mjs:12853:42)
+    at Object.fn (level-cap.js:138:27)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async BrancaloniaEquitaglia.ricalcolaTaglia (brancalonia-equitaglia.js:331:5)
+    at async BrancaloniaEquitaglia.aggiungiMalefatta (brancalonia-equitaglia.js:296:5)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:89:7)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+ricalcolaTaglia @ brancalonia-equitaglia.js:331
+await in ricalcolaTaglia
+aggiungiMalefatta @ brancalonia-equitaglia.js:296
+await in aggiungiMalefatta
+testBrancaloniaCompleto @ VM19367:89
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+VM19367:95    ✅ Equitaglia funziona
+VM19367:96    → Taglia totale: 102 gransoldi
+VM19367:106 
+🎲 TEST 5: RISCHI DEL MESTIERE
+foundry.mjs:6724 Error: You are accessing globalThis.getProperty which must now be accessed via foundry.utils.getProperty
+Deprecated since Version 12
+Backwards-compatible support will be removed in Version 14
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180510:9)
+    at Object.fn (level-cap.js:135:18)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:114:7)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180510
+(anonymous) @ level-cap.js:135
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+testBrancaloniaCompleto @ VM19367:114
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'updateActor'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+testBrancaloniaCompleto @ VM19367:114
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'updateActor'. Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:114:7)Caused by: Error: Flag scope "brancalonia" is not valid or not currently active
+[Detected 1 package: brancalonia-bigat(3.2.2)]
+    at Actor5e.getFlag (foundry.mjs:12853:42)
+    at Object.fn (level-cap.js:138:27)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at foundry.mjs:58785:17
+    at foundry.mjs:58791:41
+    at Array.map (<anonymous>)
+    at #handleUpdateDocuments (foundry.mjs:58791:31)
+    at async Actor5e.updateDocuments (foundry.mjs:12537:21)
+    at async Actor5e.update (foundry.mjs:12649:21)
+    at async testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:114:7)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+(anonymous) @ foundry.mjs:58785
+(anonymous) @ foundry.mjs:58791
+#handleUpdateDocuments @ foundry.mjs:58791
+await in #handleUpdateDocuments
+_updateDocuments @ foundry.mjs:58665
+await in _updateDocuments
+update @ foundry.mjs:58219
+await in update
+updateDocuments @ foundry.mjs:12537
+update @ foundry.mjs:12649
+setFlag @ foundry.mjs:12889
+setFlag @ flags.mjs:40
+testBrancaloniaCompleto @ VM19367:114
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+foundry.mjs:6724 Error: The async option for Roll#evaluate has been removed. Use Roll#evaluateSync for synchronous roll evaluation.
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Roll.evaluate (foundry.mjs:30480:21)
+    at BrancaloniaRischiMestiere.tiraRischiMestiere (brancalonia-rischi-mestiere.js:195:10)
+    at testBrancaloniaCompleto (eval at <anonymous> (game:6:5), <anonymous>:117:57)
+logCompatibilityWarning @ foundry.mjs:6724
+evaluate @ foundry.mjs:30480
+tiraRischiMestiere @ brancalonia-rischi-mestiere.js:195
+testBrancaloniaCompleto @ VM19367:117
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+VM19367:125    ✅ Rischi del Mestiere funziona
+VM19367:126    → Risultato tiro: 0
+VM19367:127    → Evento: Nessuno
+VM19367:137 
+📋 TEST 6: UI SCHEDA PERSONAGGIO
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/character-header.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/character-sidebar.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-details.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-inventory.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/inventory.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/activity.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/encumbrance.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/containers.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/capacity.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/uses.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/controls.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/formula.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/price.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/range.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/recovery.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/roll.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/school.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/target.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/time.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/quantity.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/inventory/columns/weight.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-features.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/creature-spells.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/actor-effects.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-biography.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-bastion.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/creature-special-traits.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/character-ability-scores.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-warnings-dialog.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/sidebar-tabs.hbs
+2foundry.mjs:6724 Error: The `icon` property of status conditions has been deprecated in place of using `img`.
+Deprecated since Version DnD5e 5.0
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at base-actor-sheet.mjs:241:23
+    at Array.reduce (<anonymous>)
+    at CharacterActorSheet._prepareEffectsContext (base-actor-sheet.mjs:226:70)
+    at CharacterActorSheet._prepareEffectsContext (character-sheet.mjs:375:27)
+    at CharacterActorSheet._preparePartContext (character-sheet.mjs:198:35)
+    at async CharacterActorSheet._renderHTML (foundry.mjs:28595:29)
+    at async #render (foundry.mjs:27223:22)
+    at async #try (foundry.mjs:7166:17)
+logCompatibilityWarning @ foundry.mjs:6724
+(anonymous) @ base-actor-sheet.mjs:241
+_prepareEffectsContext @ base-actor-sheet.mjs:226
+_prepareEffectsContext @ character-sheet.mjs:375
+_preparePartContext @ character-sheet.mjs:198
+await in _preparePartContext
+_renderHTML @ foundry.mjs:28595
+await in _renderHTML
+#render @ foundry.mjs:27223
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+testBrancaloniaCompleto @ VM19367:143
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+VM19367:144    ✅ Scheda renderizzata
+VM19367:145    → Controlla sezione Equitaglia nella scheda!
+VM19367:155 
+💬 TEST 7: MESSAGGI CHAT
+VM19367:165    ✅ Messaggio chat creato
+VM19367:174 
+⚙️ TEST 8: IMPOSTAZIONI
+icon.mjs:90 
+            
+            
+           GET http://51.68.35.33:30000/icons/magic/death/skull-evil-grin-red.webp 404 (Not Found)
+fetch @ icon.mjs:90
+connectedCallback @ icon.mjs:77
+_insertElement @ foundry.mjs:27514
+#render @ foundry.mjs:27238
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+testBrancaloniaCompleto @ VM19367:143
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+icon.mjs:90 
+            
+            
+           GET http://51.68.35.33:30000/icons/consumables/drinks/wine-bottle-table-brown.webp 404 (Not Found)
+fetch @ icon.mjs:90
+connectedCallback @ icon.mjs:77
+_insertElement @ foundry.mjs:27514
+#render @ foundry.mjs:27238
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+testBrancaloniaCompleto @ VM19367:143
+await in testBrancaloniaCompleto
+eval @ VM19367:221
+setTimeout
+eval @ VM19367:221
+(anonymous) @ VM19366:6
+await in (anonymous)
+(anonymous) @ VM19366:7
+VM19367:185    ✅ Settings funzionano
+VM19367:194 
+╔═══════════════════════════════════════════════════════╗
+VM19367:195 ║                  RISULTATI TEST                       ║
+VM19367:196 ╚═══════════════════════════════════════════════════════╝
+VM19367:201 
+📊 RIEPILOGO: 8/8 test passati (100%)
+VM19367:204 🎉 TUTTI I TEST SONO PASSATI! Il modulo funziona perfettamente!
+VM19367:215 
+✅ Test automatico completato!

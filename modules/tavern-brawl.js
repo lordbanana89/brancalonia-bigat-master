@@ -296,7 +296,7 @@ export class TavernBrawlSystem {
   _setupHooks() {
     // Hook per modificare il combattimento quando è una rissa
     Hooks.on("combatStart", (combat, options) => {
-      if (combat.getFlag("brancalonia", "isBrawl")) {
+      if (combat.getFlag("brancalonia-bigat", "isBrawl")) {
         this.activeBrawl = true;
         this.brawlCombat = combat;
         ui.notifications.info("Modalità Rissa Attivata!");
@@ -726,7 +726,7 @@ export class TavernBrawlSystem {
       pericoli.push(pericolo);
     }
 
-    await combat.setFlag("brancalonia", "pericoliVaganti", pericoli);
+    await combat.setFlag("brancalonia-bigat", "pericoliVaganti", pericoli);
 
     await ChatMessage.create({
       content: `
@@ -747,7 +747,7 @@ export class TavernBrawlSystem {
   async activatePericoloVagante() {
     if (!this.brawlCombat) return;
 
-    const pericoli = this.brawlCombat.getFlag("brancalonia", "pericoliVaganti");
+    const pericoli = this.brawlCombat.getFlag("brancalonia-bigat", "pericoliVaganti");
     if (!pericoli || pericoli.length === 0) return;
 
     const pericolo = pericoli[Math.floor(Math.random() * pericoli.length)];

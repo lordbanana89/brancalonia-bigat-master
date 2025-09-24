@@ -121,7 +121,7 @@ export class BrancaloniaMechanics {
         if (game.combat) {
           const target = game.user.targets.first();
           if (target?.actor) {
-            target.actor.setFlag("brancalonia", "nonLethalDamage", true);
+            target.actor.setFlag("brancalonia-bigat", "nonLethalDamage", true);
           }
         }
       }
@@ -137,7 +137,7 @@ export class BrancaloniaMechanics {
       if (hp <= 0 && nonLethal) {
         // Applica KO invece di morte
         actor.toggleStatusEffect("unconscious", { active: true });
-        actor.unsetFlag("brancalonia", "nonLethalDamage");
+        actor.unsetFlag("brancalonia-bigat", "nonLethalDamage");
 
         ChatMessage.create({
           content: `${actor.name} è stato messo KO! (danno non letale)`,
@@ -290,7 +290,7 @@ export class BrancaloniaMechanics {
     const patron = CONFIG.BRANCALONIA.patrons.types[patronType];
     if (!patron) return;
 
-    await actor.setFlag("brancalonia", "patron", {
+    await actor.setFlag("brancalonia-bigat", "patron", {
       type: patronType,
       name: patron.name,
       reputation: 0,

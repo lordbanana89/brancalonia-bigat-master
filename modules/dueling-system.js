@@ -657,18 +657,18 @@ export class DuelingSystem {
     // Controlli vantaggi/svantaggi da mosse speciali
     if (actor.flags.brancalonia?.nextAttackAdvantage) {
       config.advantage = true;
-      actor.unsetFlag("brancalonia", "nextAttackAdvantage");
+      actor.unsetFlag("brancalonia-bigat", "nextAttackAdvantage");
     }
     if (actor.flags.brancalonia?.nextAttackDisadvantage) {
       config.disadvantage = true;
-      actor.unsetFlag("brancalonia", "nextAttackDisadvantage");
+      actor.unsetFlag("brancalonia-bigat", "nextAttackDisadvantage");
     }
 
     // Power attack
     const powerAttack = actor.flags.brancalonia?.powerAttack;
     if (powerAttack) {
       config.parts.push(`${powerAttack.attack}[Colpo Mirato]`);
-      actor.unsetFlag("brancalonia", "powerAttack");
+      actor.unsetFlag("brancalonia-bigat", "powerAttack");
     }
   }
 
@@ -713,17 +713,17 @@ export class DuelingSystem {
         break;
 
       case "Finta":
-        await actor.setFlag("brancalonia", "nextAttackAdvantage", true);
+        await actor.setFlag("brancalonia-bigat", "nextAttackAdvantage", true);
         break;
 
       case "Provocazione":
         if (target) {
-          await target.setFlag("brancalonia", "nextAttackDisadvantage", true);
+          await target.setFlag("brancalonia-bigat", "nextAttackDisadvantage", true);
         }
         break;
 
       case "Colpo Mirato":
-        await actor.setFlag("brancalonia", "powerAttack", { attack: -5, damage: 10 });
+        await actor.setFlag("brancalonia-bigat", "powerAttack", { attack: -5, damage: 10 });
         break;
     }
   }
@@ -790,11 +790,11 @@ export class DuelingSystem {
       // Infamia
       if (rewards.winner.infamy) {
         const currentInfamia = winner.flags.brancalonia?.infamia || 0;
-        await winner.setFlag("brancalonia", "infamia", currentInfamia + rewards.winner.infamy);
+        await winner.setFlag("brancalonia-bigat", "infamia", currentInfamia + rewards.winner.infamy);
       }
       if (rewards.loser.infamy) {
         const currentInfamia = loser.flags.brancalonia?.infamia || 0;
-        await loser.setFlag("brancalonia", "infamia", currentInfamia + rewards.loser.infamy);
+        await loser.setFlag("brancalonia-bigat", "infamia", currentInfamia + rewards.loser.infamy);
       }
 
       // Reputazione
@@ -860,7 +860,7 @@ export class DuelingSystem {
    */
   async _adjustReputation(actor, amount) {
     const currentRep = actor.flags.brancalonia?.reputation || 0;
-    await actor.setFlag("brancalonia", "reputation", currentRep + amount);
+    await actor.setFlag("brancalonia-bigat", "reputation", currentRep + amount);
 
     const emoji = amount > 0 ? "📈" : "📉";
     ui.notifications.info(`${emoji} ${actor.name}: Reputazione ${amount > 0 ? '+' : ''}${amount}`);

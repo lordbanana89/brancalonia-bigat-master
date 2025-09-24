@@ -451,7 +451,7 @@ export class FactionsSystem {
     // Salva nel flag dell'attore
     const factionReps = actor.flags.brancalonia?.factionReputations || {};
     factionReps[factionKey] = newRep;
-    await actor.setFlag("brancalonia", "factionReputations", factionReps);
+    await actor.setFlag("brancalonia-bigat", "factionReputations", factionReps);
 
     // Controlla cambio rango
     const oldRank = this._getRank(faction, currentRep);

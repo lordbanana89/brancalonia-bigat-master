@@ -230,14 +230,14 @@ export class BagordiSystem {
     }
 
     // Registra l'evento nei flag del personaggio
-    const bagordiHistory = actor.getFlag("brancalonia", "bagordiHistory") || [];
+    const bagordiHistory = actor.getFlag("brancalonia-bigat", "bagordiHistory") || [];
     bagordiHistory.push({
       date: new Date().toISOString(),
       result: result.title,
       goldSpent: goldSpent,
       roll: result.roll
     });
-    await actor.setFlag("brancalonia", "bagordiHistory", bagordiHistory);
+    await actor.setFlag("brancalonia-bigat", "bagordiHistory", bagordiHistory);
   }
 
   /**

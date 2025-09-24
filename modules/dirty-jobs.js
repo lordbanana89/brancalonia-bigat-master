@@ -503,7 +503,7 @@ export class DirtyJobsSystem {
           finalReward: finalReward,
           finalInfamy: finalInfamy
         });
-        await comp.setFlag("brancalonia", "jobs", jobs);
+        await comp.setFlag("brancalonia-bigat", "jobs", jobs);
       }
     }
   }

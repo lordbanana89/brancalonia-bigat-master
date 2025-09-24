@@ -189,7 +189,7 @@ export class BrancaloniaRestSystem {
     ui.notifications.info(`${actor.name} si è imboscato per una settimana`);
 
     // Applica il modificatore ai Rischi del Mestiere
-    await actor.setFlag("brancalonia", "imboscoModifier", -3);
+    await actor.setFlag("brancalonia-bigat", "imboscoModifier", -3);
 
     // Recupero parziale (metà del normale)
     const updates = {
@@ -234,7 +234,7 @@ export class BrancaloniaRestSystem {
    */
   async checkSafeLocation(actor) {
     // Verifica se è nel Covo o in una Bettola amica
-    const location = actor.getFlag("brancalonia", "currentLocation");
+    const location = actor.getFlag("brancalonia-bigat", "currentLocation");
 
     if (location === "covo" || location === "bettola_amica") {
       return true;

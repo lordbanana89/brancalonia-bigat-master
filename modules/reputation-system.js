@@ -210,7 +210,7 @@ export class ReputationSystem {
     const newValue = Math.max(0, Math.min(repType.max, current + amount));
 
     reps[type] = newValue;
-    await actor.setFlag("brancalonia", "reputations", reps);
+    await actor.setFlag("brancalonia-bigat", "reputations", reps);
 
     // Controlla benefici
     await this._checkReputationBenefits(actor, type, current, newValue);
@@ -353,8 +353,8 @@ export class ReputationSystem {
     const total = this.getTotalReputation(actor);
     const level = this._getReputationLevel(total);
 
-    await actor.setFlag("brancalonia", "totalReputation", total);
-    await actor.setFlag("brancalonia", "reputationLevel", level);
+    await actor.setFlag("brancalonia-bigat", "totalReputation", total);
+    await actor.setFlag("brancalonia-bigat", "reputationLevel", level);
 
     // Aggiorna nome visualizzato se configurato
     if (game.settings.get("brancalonia-bigat", "showReputationTitle")) {
@@ -433,7 +433,7 @@ export class ReputationSystem {
     }
 
     if (changed) {
-      await actor.setFlag("brancalonia", "reputations", reps);
+      await actor.setFlag("brancalonia-bigat", "reputations", reps);
       ui.notifications.info(`${actor.name}: Reputazione decade nel tempo`);
     }
   }

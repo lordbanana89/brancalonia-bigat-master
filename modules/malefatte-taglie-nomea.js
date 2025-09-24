@@ -197,10 +197,10 @@ export class MalefatteTaglieNomeaSystem {
     const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
     const nomea = this._calculateNomea(taglia);
 
-    await actor.setFlag("brancalonia", "malefatte", malefatte);
-    await actor.setFlag("brancalonia", "taglia", taglia);
-    await actor.setFlag("brancalonia", "nomea", nomea.level);
-    await actor.setFlag("brancalonia", "nomeaName", nomea.name);
+    await actor.setFlag("brancalonia-bigat", "malefatte", malefatte);
+    await actor.setFlag("brancalonia-bigat", "taglia", taglia);
+    await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
+    await actor.setFlag("brancalonia-bigat", "nomeaName", nomea.name);
 
     ChatMessage.create({
       content: `
@@ -238,9 +238,9 @@ export class MalefatteTaglieNomeaSystem {
    */
   _renderTagliaSection(app, html, data) {
     const actor = app.actor;
-    const malefatte = actor.getFlag("brancalonia", "malefatte") || [];
-    const taglia = actor.getFlag("brancalonia", "taglia") || 0;
-    const nomeaLevel = actor.getFlag("brancalonia", "nomea") || "maltagliato";
+    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
+    const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
+    const nomeaLevel = actor.getFlag("brancalonia-bigat", "nomea") || "maltagliato";
     const nomea = this.nomeaLevels[nomeaLevel];
 
     const tagliaHtml = `
@@ -547,21 +547,21 @@ export class MalefatteTaglieNomeaSystem {
    * Aggiungi malefatta a un attore
    */
   async _addMalefatta(actor, malefatta) {
-    const malefatte = actor.getFlag("brancalonia", "malefatte") || [];
+    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
     malefatte.push(malefatta);
 
     const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
     const nomea = this._calculateNomea(taglia);
 
-    await actor.setFlag("brancalonia", "malefatte", malefatte);
-    await actor.setFlag("brancalonia", "taglia", taglia);
-    await actor.setFlag("brancalonia", "nomea", nomea.level);
-    await actor.setFlag("brancalonia", "nomeaName", nomea.name);
+    await actor.setFlag("brancalonia-bigat", "malefatte", malefatte);
+    await actor.setFlag("brancalonia-bigat", "taglia", taglia);
+    await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
+    await actor.setFlag("brancalonia-bigat", "nomeaName", nomea.name);
 
     // Segna come recente per il Barattiere
-    const recentMalefatte = actor.getFlag("brancalonia", "recentMalefatte") || [];
+    const recentMalefatte = actor.getFlag("brancalonia-bigat", "recentMalefatte") || [];
     recentMalefatte.push(malefatta);
-    await actor.setFlag("brancalonia", "recentMalefatte", recentMalefatte);
+    await actor.setFlag("brancalonia-bigat", "recentMalefatte", recentMalefatte);
 
     ChatMessage.create({
       content: `
@@ -581,16 +581,16 @@ export class MalefatteTaglieNomeaSystem {
    * Rimuovi malefatta
    */
   async _removeMalefatta(actor, index) {
-    const malefatte = actor.getFlag("brancalonia", "malefatte") || [];
+    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
     if (index < 0 || index >= malefatte.length) return;
 
     const removed = malefatte.splice(index, 1)[0];
     const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
     const nomea = this._calculateNomea(taglia);
 
-    await actor.setFlag("brancalonia", "malefatte", malefatte);
-    await actor.setFlag("brancalonia", "taglia", taglia);
-    await actor.setFlag("brancalonia", "nomea", nomea.level);
+    await actor.setFlag("brancalonia-bigat", "malefatte", malefatte);
+    await actor.setFlag("brancalonia-bigat", "taglia", taglia);
+    await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
 
     ChatMessage.create({
       content: `Rimossa malefatta: ${removed.name} (-${removed.value} mo)`,
@@ -602,8 +602,8 @@ export class MalefatteTaglieNomeaSystem {
    * Dialog per gestire la taglia
    */
   _showManageTagliaDialog(actor) {
-    const malefatte = actor.getFlag("brancalonia", "malefatte") || [];
-    const taglia = actor.getFlag("brancalonia", "taglia") || 0;
+    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
+    const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
 
     const content = `
       <div class="manage-taglia">
@@ -670,7 +670,7 @@ export class MalefatteTaglieNomeaSystem {
       },
       render: (html) => {
         html.find('.clear-recent').click(async () => {
-          await actor.unsetFlag("brancalonia", "recentMalefatte");
+          await actor.unsetFlag("brancalonia-bigat", "recentMalefatte");
           ui.notifications.info("Malefatte recenti pulite");
           dialog.close();
         });
@@ -705,7 +705,7 @@ export class MalefatteTaglieNomeaSystem {
    * Dialog per pagare parte della taglia
    */
   _showPayTagliaDialog(actor) {
-    const taglia = actor.getFlag("brancalonia", "taglia") || 0;
+    const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
     const money = actor.system.currency.gp || 0;
 
     const content = `
@@ -727,7 +727,7 @@ export class MalefatteTaglieNomeaSystem {
             const amount = parseInt(html.find('input[name="amount"]').val());
             if (amount > 0) {
               await actor.update({"system.currency.gp": money - amount});
-              await actor.setFlag("brancalonia", "taglia", Math.max(0, taglia - amount));
+              await actor.setFlag("brancalonia-bigat", "taglia", Math.max(0, taglia - amount));
 
               ChatMessage.create({
                 content: `${actor.name} paga ${amount} mo per ridurre la taglia`,
@@ -744,9 +744,9 @@ export class MalefatteTaglieNomeaSystem {
    * Esporta scheda taglia
    */
   _exportTagliaSheet(actor) {
-    const malefatte = actor.getFlag("brancalonia", "malefatte") || [];
-    const taglia = actor.getFlag("brancalonia", "taglia") || 0;
-    const nomea = this.nomeaLevels[actor.getFlag("brancalonia", "nomea") || "maltagliato"];
+    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
+    const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
+    const nomea = this.nomeaLevels[actor.getFlag("brancalonia-bigat", "nomea") || "maltagliato"];
 
     const sheet = `
       <div style="border: 3px solid #8B4513; padding: 20px; background: #FFF8DC;">
@@ -801,7 +801,7 @@ export class MalefatteTaglieNomeaSystem {
 
         <div class="actor-list">
           ${actors.map(actor => {
-            const recent = actor.getFlag("brancalonia", "recentMalefatte") || [];
+            const recent = actor.getFlag("brancalonia-bigat", "recentMalefatte") || [];
             return `
               <div style="margin: 10px 0; padding: 10px; border: 1px solid #ccc;">
                 <h4>${actor.name}</h4>
@@ -834,7 +834,7 @@ export class MalefatteTaglieNomeaSystem {
         html.find('.confirm-malefatte').click(async (e) => {
           const actorId = e.currentTarget.dataset.actor;
           const actor = game.actors.get(actorId);
-          await actor.unsetFlag("brancalonia", "recentMalefatte");
+          await actor.unsetFlag("brancalonia-bigat", "recentMalefatte");
           ui.notifications.info(`Malefatte confermate per ${actor.name}`);
           dialog.close();
           this._updateAllTaglie(); // Riapri

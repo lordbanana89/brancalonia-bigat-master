@@ -260,7 +260,7 @@ export class CovoGranlussiSystem {
    */
   _renderCovoUI(app, html, data) {
     const actor = app.actor;
-    const covo = actor.getFlag("brancalonia", "covo") || {};
+    const covo = actor.getFlag("brancalonia-bigat", "covo") || {};
 
     const covoHtml = `
       <div class="brancalonia-covo-section" style="border: 2px solid #8B4513; padding: 10px; margin: 10px 0;">
@@ -320,7 +320,7 @@ export class CovoGranlussiSystem {
    * Dialog per gestione del Covo
    */
   _openCovoManagementDialog(actor) {
-    const covo = actor.getFlag("brancalonia", "covo") || {};
+    const covo = actor.getFlag("brancalonia-bigat", "covo") || {};
     const money = actor.system.currency?.gp || 0;
 
     let content = `
@@ -401,11 +401,11 @@ export class CovoGranlussiSystem {
     });
 
     // Aumenta livello Granlusso
-    const covo = actor.getFlag("brancalonia", "covo") || {};
+    const covo = actor.getFlag("brancalonia-bigat", "covo") || {};
     const currentLevel = covo[granlussoKey] || 0;
     covo[granlussoKey] = currentLevel + 1;
 
-    await actor.setFlag("brancalonia", "covo", covo);
+    await actor.setFlag("brancalonia-bigat", "covo", covo);
 
     // Notifica
     const granlusso = this.granlussi[granlussoKey];
@@ -426,7 +426,7 @@ export class CovoGranlussiSystem {
    */
   async _applyGranlussiBenefits(actors) {
     for (const actor of actors) {
-      const covo = actor.getFlag("brancalonia", "covo") || {};
+      const covo = actor.getFlag("brancalonia-bigat", "covo") || {};
 
       // Cantina - razioni gratuite
       if (covo.cantina > 0) {
@@ -446,7 +446,7 @@ export class CovoGranlussiSystem {
       // Fucina - ignora qualità scadente
       if (covo.fucina > 0) {
         const level = covo.fucina;
-        await actor.setFlag("brancalonia", "fucinaLevel", level);
+        await actor.setFlag("brancalonia-bigat", "fucinaLevel", level);
 
         // Permetti di selezionare oggetti da migliorare
         if (level >= 1) {
@@ -462,13 +462,13 @@ export class CovoGranlussiSystem {
       // Borsa Nera - oggetti magici mensili
       if (covo.borsaNera > 0) {
         // Controlla se è passato un mese
-        const lastCheck = actor.getFlag("brancalonia", "borsaNeraLastCheck") || 0;
+        const lastCheck = actor.getFlag("brancalonia-bigat", "borsaNeraLastCheck") || 0;
         const now = Date.now();
         const monthInMs = 30 * 24 * 60 * 60 * 1000;
 
         if (now - lastCheck > monthInMs) {
           await this._generateMagicItems(actor, covo.borsaNera);
-          await actor.setFlag("brancalonia", "borsaNeraLastCheck", now);
+          await actor.setFlag("brancalonia-bigat", "borsaNeraLastCheck", now);
         }
       }
     }
@@ -550,7 +550,7 @@ export class CovoGranlussiSystem {
             for (const itemId of selected) {
               const item = actor.items.get(itemId);
               if (item) {
-                await item.setFlag("brancalonia", "temporaryImproved", true);
+                await item.setFlag("brancalonia-bigat", "temporaryImproved", true);
                 ChatMessage.create({
                   content: `${item.name} temporaneamente migliorato dalla Fucina.`,
                   speaker: ChatMessage.getSpeaker({actor})
@@ -633,7 +633,7 @@ export class CovoGranlussiSystem {
             if (vehicle) loans.push({type: "vehicle", name: vehicle});
 
             if (loans.length > 0) {
-              await actor.setFlag("brancalonia", "scuderieLoan", loans);
+              await actor.setFlag("brancalonia-bigat", "scuderieLoan", loans);
 
               const loanText = loans.map(l =>
                 cleanName(l.name).replace('_', ' ')
@@ -749,7 +749,7 @@ export class CovoGranlussiSystem {
     });
 
     // Applica come sconto al prossimo upgrade
-    await actor.setFlag("brancalonia", `${granlussoKey}Discount`, totalValue);
+    await actor.setFlag("brancalonia-bigat", `${granlussoKey}Discount`, totalValue);
   }
 
   /**
