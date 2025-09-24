@@ -100,7 +100,7 @@ export class LevelCapSystem {
       const actor = item.parent;
       if (!actor || actor.type !== "character") return;
 
-      const newLevels = getProperty(update, "system.levels");
+      const newLevels = foundry.utils.getProperty(update, "system.levels");
       if (newLevels === undefined) return;
 
       const otherLevels = actor.items
@@ -132,7 +132,7 @@ export class LevelCapSystem {
     // Controlla XP per emergiticenze
     Hooks.on("updateActor", (actor, updateData) => {
       if (actor.type !== "character") return;
-      const xp = getProperty(actor, "system.details.xp.value");
+      const xp = foundry.utils.getProperty(actor, "system.details.xp.value");
       if (xp === undefined) return;
 
       const taken = actor.getFlag("brancalonia-bigat", "emeriticenze") ?? 0;
