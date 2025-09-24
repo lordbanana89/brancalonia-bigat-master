@@ -1,0 +1,54 @@
+{
+  "_id": "cavaliereerrante001",
+  "name": "Cavaliere Errante (Giuramento dell'Erranza)",
+  "type": "subclass",
+  "img": "icons/commodities/treasure/medal-ribbon-gold.webp",
+  "system": {
+    "identifier": "cavaliere-errante",
+    "classIdentifier": "paladin",
+    "description": {
+      "value": "<p>I cavalieri erranti sono nobili decaduti e vagabondi che vivono per l'onore, la baldanza e la difesa dei bisognosi. Il loro giuramento li guida sulle strade del Regno.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "advancement": [
+      {
+        "_id": "cavalier_lvl3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.cavaliere_errante_oath_spells",
+            "Compendium.brancalonia-bigat.brancalonia-features.cavaliere_errante_proteggere",
+            "Compendium.brancalonia-bigat.brancalonia-features.cavaliere_errante_ispirare"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Giuramento dell'Erranza",
+        "icon": "icons/weapons/swords/shortsword-broad-blue.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "full",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "_id": "giocoAzzardo001",
+  "name": "Gioco d'Azzardo e Scommesse",
+  "type": "journalEntry",
+  "img": "icons/tools/gaming/cards-hand.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "page001",
+      "name": "Gioco d'Azzardo e Scommesse",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Gioco d'Azzardo e Scommesse</h1><p>Il gioco d'azzardo è profondamente radicato nella cultura di Brancalonia, dalle umili taverne ai palazzi nobiliari.</p><h2>Tipi di Gioco</h2><h3>Dadi</h3><ul><li><strong>Puntata Base:</strong> 1 soldo - 5 ducati</li><li><strong>Abilità:</strong> Percezione (individuare dadi truccati), Inganno (barare)</li><li><strong>Durata:</strong> 10 minuti per partita</li></ul><h3>Carte</h3><ul><li><strong>Puntata Base:</strong> 5 soldi - 10 ducati</li><li><strong>Abilità:</strong> Intuizione (leggere gli avversari), Inganno (bluffare)</li><li><strong>Durata:</strong> 30 minuti per partita</li></ul><h3>Corse di Cavalli</h3><ul><li><strong>Puntata Base:</strong> 1 - 50 ducati</li><li><strong>Abilità:</strong> Addestrare Animali (conoscere i cavalli)</li><li><strong>Durata:</strong> Evento giornaliero</li></ul><h3>Combattimenti di Galli</h3><ul><li><strong>Puntata Base:</strong> 5 soldi - 5 ducati</li><li><strong>Abilità:</strong> Addestrare Animali, Intuizione</li><li><strong>Durata:</strong> 5 minuti per incontro</li></ul><h2>Meccaniche di Gioco</h2><h3>Sistema Base</h3><p>Per ogni sessione di gioco, il giocatore:</p><ol><li><strong>Sceglie la puntata</strong> (minima e massima del tavolo)</li><li><strong>Dichiara se bara</strong> o gioca onestamente</li><li><strong>Effettua i tiri richiesti</strong> dal tipo di gioco</li><li><strong>Risolve il risultato</strong> e le eventuali conseguenze</li></ol><h3>Tiri per Dadi</h3><ul><li><strong>Gioco Onesto:</strong> 3d6, punteggio 11+ vince</li><li><strong>Con Dadi Truccati:</strong> Vantaggio, ma rischio di essere scoperti</li><li><strong>Rilevamento Truffe:</strong> Percezione CD 13</li></ul><h3>Tiri per Carte</h3><ul><li><strong>Fortuna:</strong> 1d20 + mod Carisma</li><li><strong>Bluff:</strong> Prova contrapposta Inganno vs Intuizione</li><li><strong>Lettura Avversari:</strong> Intuizione CD 12-18</li></ul><h2>Risultati delle Scommesse</h2><h3>Vittoria</h3><ul><li><strong>Vincita Normale:</strong> 1.5x la puntata</li><li><strong>Vincita Fortunata:</strong> 2x la puntata (20 naturale)</li><li><strong>Jackpot:</strong> 5x la puntata (eventi speciali)</li></ul><h3>Sconfitta</h3><ul><li><strong>Perdita Normale:</strong> Si perde la puntata</li><li><strong>Sfortuna Nera:</strong> Perdita doppia (1 naturale)</li></ul><h2>Barare al Gioco</h2><h3>Metodi di Imbroglio</h3><ul><li><strong>Dadi Truccati:</strong> +2 Inganno, CD Percezione 13</li><li><strong>Carte Segnate:</strong> +3 Inganno, CD Percezione 15</li><li><strong>Complici:</strong> +1 Inganno per ogni complice</li><li><strong>Distrazioni:</strong> Vantaggio alla prova di Inganno</li></ul><h3>Conseguenze</h3><p>Se scoperti a barare:</p><ul><li><strong>Taverne Popolari:</strong> Rissa generale, buttati fuori</li><li><strong>Case da Gioco Rispettabili:</strong> Banditi permanentemente</li><li><strong>Nobiltà:</strong> Duello d'onore, perdita di reputazione</li><li><strong>Criminali:</strong> Dita spezzate, minacce gravi</li></ul><h2>Dipendenza dal Gioco</h2><p>Rischio di sviluppare dipendenza patologica:</p><ul><li><strong>Dopo 5 sessioni:</strong> TS Saggezza CD 10</li><li><strong>Dopo 10 sessioni:</strong> TS Saggezza CD 15</li><li><strong>Se dipendente:</strong> Deve giocare almeno una volta a settimana o subire svantaggio a tutte le prove</li></ul><h2>Case da Gioco Famose</h2><h3>La Rosa d'Oro</h3><ul><li><strong>Tipo:</strong> Casa da gioco nobiliare</li><li><strong>Puntate:</strong> 10-500 ducati</li><li><strong>Clientela:</strong> Nobili, mercanti ricchi</li><li><strong>Specialità:</strong> Carte, scacchi viventi</li></ul><h3>Il Dado Fortunato</h3><ul><li><strong>Tipo:</strong> Taverna popolare</li><li><strong>Puntate:</strong> 1 soldo - 5 ducati</li><li><strong>Clientela:</strong> Vagabondi, soldati</li><li><strong>Specialità:</strong> Dadi, corse di galli</li></ul><h3>I Sotterranei</h3><ul><li><strong>Tipo:</strong> Bische illegali</li><li><strong>Puntate:</strong> Qualsiasi cosa di valore</li><li><strong>Clientela:</strong> Criminali, disperati</li><li><strong>Specialità:</strong> Combattimenti clandestini</li></ul><h2>Eventi Speciali</h2><h3>Tornei</h3><ul><li><strong>Festival Annuali:</strong> Premi eccezionali, partecipazione prestigiosa</li><li><strong>Quote Entry:</strong> 50-200 ducati</li><li><strong>Premi:</strong> 500-2000 ducati plus oggetti magici</li></ul><h3>Scommesse Irregolari</h3><ul><li>Sfide impossibili (\"Scommetto che riesco a...\")</li><li>Duelli improvvisati</li><li>Gare di bevute</li><li>Contest di abilità bizzarre</li></ul><h2>Protezioni e Talismani</h2><p>Oggetti che influenzano la fortuna nel gioco:</p><ul><li><strong>Dadi d'Osso di Santo:</strong> +1 a tutti i tiri sui dadi</li><li><strong>Ferro di Cavallo:</strong> Rilanciare 1 volta per sessione</li><li><strong>Moneta Benedetta:</strong> Vantaggio su 1 tiro per giorno</li><li><strong>Talismano Maledetto:</strong> Svantaggio costante ma invisibile</li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

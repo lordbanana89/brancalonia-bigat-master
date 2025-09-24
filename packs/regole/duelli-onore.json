@@ -1,0 +1,47 @@
+{
+  "_id": "duelliOnore001",
+  "name": "Duelli e Codice d'Onore",
+  "type": "journalEntry",
+  "img": "icons/weapons/swords/rapier-jeweled.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "page001",
+      "name": "Duelli e Codice d'Onore",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Duelli e Codice d'Onore</h1><p>Nonostante la natura ruvida di Brancalonia, esistono ancora codici d'onore che regolano i duelli tra gentiluomini e dame.</p><h2>Tipi di Duello</h2><h3>Duello d'Onore</h3><ul><li><strong>Cause:</strong> Insulti all'onore, calunnie, questioni di precedenza</li><li><strong>Armi:</strong> Spade da duello, stocchi, pugnali</li><li><strong>Condizioni:</strong> Primo sangue, resa o morte</li></ul><h3>Duello Legale</h3><ul><li><strong>Cause:</strong> Dispute legali, controversie di proprietà</li><li><strong>Supervisione:</strong> Giudice o notabile locale</li><li><strong>Risultato:</strong> Il vincitore ha ragione per legge</li></ul><h3>Duello della Taverna</h3><ul><li><strong>Cause:</strong> Bevute, scommesse, questioni di orgoglio</li><li><strong>Armi:</strong> Qualsiasi cosa a portata di mano</li><li><strong>Regole:</strong> Nessuna regola, solo sopravvivere</li></ul><h2>Meccaniche del Duello Formale</h2><h3>Preparazione</h3><ol><li><strong>Sfida:</strong> Deve essere lanciata pubblicamente</li><li><strong>Padrini:</strong> Ogni duellante sceglie un testimone</li><li><strong>Armi:</strong> Lo sfidato sceglie le armi</li><li><strong>Luogo:</strong> All'alba, in un posto isolato</li></ol><h3>Svolgimento</h3><ul><li><strong>Iniziativa:</strong> Chi ha Destrezza più alta inizia</li><li><strong>Attacchi:</strong> Solo attacchi con l'arma da duello</li><li><strong>Parata:</strong> +2 CA se si usa solo azioni di Difesa</li><li><strong>Finte:</strong> Prova di Inganno vs Intuizione per vantaggio</li></ul><h3>Condizioni di Vittoria</h3><ul><li><strong>Primo Sangue:</strong> Primo colpo che causa danni</li><li><strong>Resa:</strong> Un duellante si dichiara sconfitto</li><li><strong>Morte:</strong> Fino alla morte (raro nei duelli d'onore)</li><li><strong>Disarmo:</strong> Far cadere l'arma dell'avversario</li></ul><h2>Conseguenze del Duello</h2><h3>Per il Vincitore</h3><ul><li>Guadagna 1 punto Onore</li><li>Risolve la questione a proprio favore</li><li>Può guadagnare Reputazione (+1 se duello famoso)</li></ul><h3>Per il Perdente</h3><ul><li>Perde 1 punto Onore</li><li>Deve accettare le condizioni del vincitore</li><li>Possibile perdita di status sociale</li></ul><h2>Codice Cavalleresco</h2><p>I veri duellanti seguono regole non scritte:</p><ul><li><strong>Mai colpire un avversario disarmato</strong></li><li><strong>Rispettare la resa dell'avversario</strong></li><li><strong>Non rivelare i dettagli del duello</strong></li><li><strong>Assistere medicamente l'avversario ferito</strong></li></ul><h2>Punti Onore</h2><p>Sistema opzionale per tracciare l'onore del personaggio:</p><ul><li><strong>Onore 0-2:</strong> Vigliacco, nessuno ti sfida</li><li><strong>Onore 3-5:</strong> Rispettabile, duelli normali</li><li><strong>Onore 6-8:</strong> Onorevole, vantaggio sociale</li><li><strong>Onore 9-10:</strong> Leggenda vivente, maestro spadaccino</li></ul><h2>Varianti Regionali</h2><ul><li><strong>Nord:</strong> Duelli con spade pesanti, spesso mortali</li><li><strong>Sud:</strong> Duelli con stocchi, eleganti e precisi</li><li><strong>Isole:</strong> Duelli navali, sul ponte delle navi</li><li><strong>Campagna:</strong> Duelli con falci e forconi</li></ul><h2>Interferenze e Tradimenti</h2><p>Non tutti rispettano il codice d'onore:</p><ul><li><strong>Padrini Sleali:</strong> Possono interferire illecitamente</li><li><strong>Armi Avvelenate:</strong> Disonorevole ma efficace</li><li><strong>Cecchini:</strong> Colpi da lontano durante il duello</li><li><strong>Guardie Cittadine:</strong> Potrebbero interrompere duelli illegali</li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "_id": "malebranche_malefiamme",
+  "name": "Malefiamme",
+  "type": "feat",
+  "img": "icons/magic/fire/explosion-fireball-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Come azione puoi esalare fiamme in un cono di 4,5 m oppure in una linea di 1,5 x 9 m. Le creature nell'area devono effettuare un tiro salvezza su Destrezza (CD 8 + il tuo modificatore di Costituzione + il tuo bonus di competenza) subendo 2d6 danni da fuoco (o metà con un TS riuscito). I danni aumentano a 3d6 al 6° livello. Dopo aver usato questo tratto devi completare un riposo breve o lungo per riutilizzarlo.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

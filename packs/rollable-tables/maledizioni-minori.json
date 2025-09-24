@@ -1,0 +1,131 @@
+{
+  "_id": "maledizioni-minori",
+  "name": "Maledizioni Minori",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Maledizioni Minori",
+  "results": [
+    {
+      "_id": "maledizioni-minori_0",
+      "type": 0,
+      "text": "Prurito incessante (-2 alle prove di Concentrazione)",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "maledizioni-minori_1",
+      "type": 0,
+      "text": "Singhiozzo continuo per 1 ora",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "maledizioni-minori_2",
+      "type": 0,
+      "text": "Puoi parlare solo sussurrando",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "maledizioni-minori_3",
+      "type": 0,
+      "text": "Ridi in modo incontrollabile nei momenti sbagliati",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "maledizioni-minori_4",
+      "type": 0,
+      "text": "Emani un odore di uova marce",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "maledizioni-minori_5",
+      "type": 0,
+      "text": "Attiri sciami di mosche",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "maledizioni-minori_6",
+      "type": 0,
+      "text": "I tuoi capelli diventano verde brillante",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "maledizioni-minori_7",
+      "type": 0,
+      "text": "Lasci impronte luminose per 24 ore",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "maledizioni-minori_8",
+      "type": 0,
+      "text": "Starnutisci violentemente quando menti",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "maledizioni-minori_9",
+      "type": 0,
+      "text": "Canti invece di parlare normalmente",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false
+    }
+  ],
+  "formula": "1d10",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 900,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "_id": "miracolaro_recitare_calendario",
+  "name": "Incanalare Divinità: Recitare il Calendario",
+  "type": "feat",
+  "img": "icons/magic/holy/chalice-glowing-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Con la tua azione puoi spendere un utilizzo di Incanalare Divinità per far ottenere vantaggio in un tiro (a loro scelta) a un numero di creature amiche entro 9 metri pari al tuo modificatore di Saggezza. Il beneficio deve essere usato entro la fine del turno successivo della creatura.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

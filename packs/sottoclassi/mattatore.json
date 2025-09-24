@@ -1,0 +1,53 @@
+{
+  "_id": "mattatore001",
+  "name": "Mattatore",
+  "type": "subclass",
+  "img": "icons/commodities/treasure/medal-ribbon-gold.webp",
+  "system": {
+    "identifier": "mattatore",
+    "classIdentifier": "ranger",
+    "description": {
+      "value": "<p>I mattatori catturano e domano bestie feroci, trasformando la caccia in spettacolo. Sono addestratori, gladiatori e cacciatori di mostri.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "advancement": [
+      {
+        "_id": "mattatore_lvl3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.mattatore_maestro_esibizione",
+            "Compendium.brancalonia-bigat.brancalonia-features.mattatore_occhio"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Maestro dell'Esibizione",
+        "icon": "icons/magic/control/bondage-fetters-blue.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

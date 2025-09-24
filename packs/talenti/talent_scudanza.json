@@ -1,0 +1,87 @@
+{
+  "_id": "talent_scudanza",
+  "name": "Scudanza",
+  "type": "feat",
+  "img": "icons/equipment/shield/kite-wooden-brown.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Scudanza</h2>\n<h3>Benefici</h3>\n<ul>\n  <li>Aumenta di 1 il tuo punteggio di Forza o Costituzione, fino a un massimo di 20.</li>\n  <li>Ottieni competenza negli scudi.</li>\n  <li>Quando usi l'azione Schivata ottieni un ulteriore +2 alla CA e ignori la qualità scadente dello scudo.</li>\n</ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

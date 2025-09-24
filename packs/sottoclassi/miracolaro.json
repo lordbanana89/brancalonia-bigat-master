@@ -1,0 +1,83 @@
+{
+  "_id": "miracolaro001",
+  "name": "Miracolaro (Dominio del Calendario)",
+  "type": "subclass",
+  "img": "icons/commodities/treasure/medal-ribbon-gold.webp",
+  "system": {
+    "identifier": "miracolaro",
+    "classIdentifier": "cleric",
+    "description": {
+      "value": "<p>I miracolari invocano i santi del Calendario per proteggere il popolo e distribuire benedizioni. Percorrono il Regno portando guarigioni, cialtronate e prodigi.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "advancement": [
+      {
+        "_id": "miracolaro_lvl1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.miracolaro_domain_spells",
+            "Compendium.brancalonia-bigat.brancalonia-features.miracolaro_tirare_giu_i_santi"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Dominio del Calendario",
+        "icon": "icons/magic/time/hourglass-amber.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "miracolaro_lvl2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.miracolaro_recitare_calendario"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Recitare il Calendario",
+        "icon": "icons/magic/holy/chalice-glowing-gold.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "miracolaro_lvl6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.miracolaro_per_tutti_i_santi"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Per Tutti i Santi",
+        "icon": "icons/magic/holy/hand-glow-yellow.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

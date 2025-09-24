@@ -1,0 +1,47 @@
+{
+  "_id": "menagramo",
+  "name": "Menagramo",
+  "type": "journalEntry",
+  "img": "icons/magic/death/skull-fanged-horned-pink.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "menagramo_page",
+      "name": "Menagramo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Menagramo</h1><p>Il menagramo è una sfortuna persistente che aleggia su briganti e venturieri. Chi è colpito da questa maledizione subisce svantaggio ai tiri chiave e attira guai a ogni angolo. Il menagramo può essere alleviato solo con rituali specifici o grandi gesti eroici.</p><h2>Effetti Comuni</h2><ul><li>Svantaggio ai tiri di abilità sociali con autorità e religiosi.</li><li>Evento sfortunato al giorno determinato dal GM.</li><li>Gli incantesimi di benedizione hanno efficacia ridotta.</li></ul><h2>Rimozione</h2><p>Per togliere il menagramo occorrono sacrifici costosi, un rituale condotto da un sapiente oppure il completamento di un’impresa epica che restituisca la fiducia degli spiriti benevoli.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "_id": "background_duro",
+  "name": "Duro",
+  "type": "background",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Duro</h2><p>Temprato da angherie e violenze, il duro porta sul volto una maschera imperturbabile. La sua reputazione precede ogni parola.</p><h3>Competenze</h3><ul><li><strong>Abilità:</strong> Atletica, Intimidire</li><li><strong>Strumenti:</strong> Un gioco a scelta</li><li><strong>Linguaggi:</strong> Baccaglio</li></ul><h3>Equipaggiamento</h3><p>Un ciondolo di Santa Predatoria, un mazzo di minchiate o altro gioco, un abito comune, una borsa con 15 ma</p><h3>Privilegio: Faccia da Duro</h3><p>Quando interagisci con PNG sfruttando la tua Nomea, considerala di un livello superiore.</p><p><em>Vedi il manuale di Brancalonia per tabelle di tratti, ideali, legami e difetti suggeriti.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

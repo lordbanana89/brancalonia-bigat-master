@@ -1,0 +1,101 @@
+{
+  "_id": "creapastasciutta001",
+  "name": "Crea Pastasciutta",
+  "type": "spell",
+  "img": "icons/consumables/food/bowl-steaming-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Con un gesto teatrale e una serie di parole in dialetto, evochi una generosa porzione di pastasciutta fumante condita con sugo di pomodoro e formaggio.</p><p>Crei fino a 3 razioni di pasta nutriente che possono sfamare fino a 3 creature per 24 ore. La pasta ha un sapore delizioso e fornisce tutti i nutrienti necessari. Chiunque mangi una razione completa recupera 1 punto ferita e ottiene vantaggio al prossimo tiro salvezza contro malattie per 8 ore.</p><p>Se lanciato a livelli superiori, per ogni slot incantesimo di livello superiore al 1° puoi creare 2 razioni aggiuntive di pasta.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "24",
+      "units": "hour"
+    },
+    "target": {
+      "value": 3,
+      "width": null,
+      "units": "",
+      "type": "space"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 1,
+    "school": "con",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "2"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "_id": "armaturadecuoiorappezzata001",
+  "name": "Armatura di Cuoio Rappezzata",
+  "type": "equipment",
+  "img": "icons/equipment/chest/leather-studded-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Armatura di cuoio borchiato riparata più volte con pezzi di materiali diversi.</p><p><strong>Raffazzonata:</strong> Quando subisci un colpo critico, tira 1d6. Con 1-2 l'armatura perde 1 CA permanentemente fino a riparazione (2 mo).</p><p><strong>CA:</strong> 12 + Mod Des</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "quantity": 1,
+    "weight": 13,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "armor": {
+      "value": 12,
+      "type": "light",
+      "dex": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "baseItem": "studded",
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "stealth": false,
+    "proficient": 1,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "_id": "amuletodisanpancrazio001",
+  "name": "Amuleto di San Pancrazio",
+  "type": "equipment",
+  "img": "icons/equipment/neck/amulet-symbol-holy-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un medaglione benedetto (forse) con l'immagine di San Pancrazio, santo patrono dei disperati.</p><p><strong>Benedizione Dubbia:</strong> Una volta al giorno puoi baciarlo e ritirare un tiro salvezza fallito. Se ottieni ancora un fallimento, l'amuleto si rompe permanentemente.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "quantity": 1,
+    "weight": 0.1,
+    "price": {
+      "value": 10,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "activation": {
+      "type": "special",
+      "cost": 0,
+      "condition": "Dopo aver fallito un tiro salvezza"
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "day",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": 1
+    },
+    "ability": "",
+    "actionType": "other",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "baseItem": "",
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "stealth": false,
+    "proficient": 1,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "_id": "vinodellaverita001",
+  "name": "Vino della Verità",
+  "type": "spell",
+  "img": "icons/consumables/drinks/wine-bottle-table-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Trasformi magicamente del vino comune in un elisir che allenta le lingue e rivela i segreti.</p><p>Benedici fino a 1 litro di vino, che acquisisce un sapore particolarmente invitante e un leggero bagliore dorato. Qualsiasi creatura che beva almeno un bicchiere (circa 150ml) deve fare un tiro salvezza su Saggezza.</p><p>Se fallisce, per i prossimi 10 minuti la creatura:</p><ul><li>Ha svantaggio alle prove di Inganno</li><li>È incline a rivelare informazioni che normalmente terrebbe segrete</li><li>Deve fare un tiro salvezza su Saggezza (CD 10) prima di dire una bugia intenzionale, fallendo la quale dice la verità</li><li>Ottiene vantaggio alle prove di Persuasione grazie alla sua natura più aperta e amichevole</li></ul><p>Le creature che bevono una seconda porzione nello stesso giorno sono automaticamente affette dall'incantesimo senza possibilità di tiro salvezza.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "activation": {
+      "type": "minute",
+      "cost": 10,
+      "condition": ""
+    },
+    "duration": {
+      "value": "24",
+      "units": "hour"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "object"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "enc",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "vino del valore di almeno 1 moneta d'oro e una perla schiacciata del valore di 50 mo",
+      "consumed": true,
+      "cost": 50,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

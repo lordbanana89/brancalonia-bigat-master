@@ -1,0 +1,47 @@
+{
+  "_id": "ubriachezza",
+  "name": "Ubriachezza",
+  "type": "journalEntry",
+  "img": "icons/consumables/drinks/beer-stein-wooden.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "ubriachezza_page",
+      "name": "Ubriachezza",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Ubriachezza</h1><p>Le bevute memorabili sono parte integrante della vita nel Regno di Taglia, ma l’ubriachezza porta con sé vantaggi e svantaggi.</p><h2>Livelli di Ebbrezza</h2><ul><li><strong>Allegro:</strong> +1 alle prove di Carisma sociali, -1 alle prove di Destrezza fine.</li><li><strong>Brillo:</strong> Vantaggio ai TS contro paura, svantaggio ai tiri di Attacco a distanza.</li><li><strong>Sbronzo:</strong> Immunità agli effetti di dolore, svantaggio ai tiri salvezza su Destrezza e Intelligenza.</li></ul><h2>Sobrietà</h2><p>Ogni ora di riposo riduce l’ebbrezza di un livello. Un magister o un rimedio alchemico possono ripristinare immediatamente la sobrietà.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

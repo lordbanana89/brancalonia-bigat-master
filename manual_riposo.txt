@@ -1,0 +1,369 @@
+
+
+--- PAGINA 58 ---
+
+- 56 -
+Botte da orbi
+e bisacce sfondate
+Avversari e come crearli
+Bifolchi ubriachi in cerca di rogne, incarognite cricche di 
+attaccabrighe, briganti in attesa dei soggetti giusti su cui af-
+filar le nocche, birri in congedo con la smania di menar le 
+mani… le bettole del Regno pullulano dei peggiori balordi 
+e rissaioli, e mentre alcuni di loro cadranno come mosche 
+sotto le tempeste di schiaffi delle canaglie, altri daranno loro 
+parecchio filo da torcere.
+Gli Avversari in una rissa si dividono in due categorie, Capoc -
+cia e Marmaglia.
+Il Capoccia è un singolo individuo potente, solitamente a 
+capo di un nutrito gruppo di rissaioli.
+La Marmaglia invece è formata da un gruppo di individui 
+che agisce separatamente ma che può subire un numero limi -
+tato di Batoste.
+Gli avversari da rissa sono png ma usano le seguenti statistiche:- Alle botte con onore - 
+ Il Manuale del Perfetto Rissaiolo
+La consuetudine, le regole d’onore tra canaglie e banditi, 
+e persino la legislazione vigente nei vari domini del Regno 
+stabiliscono pratiche molto precise riguardo alle risse. Ecco 
+le tre regole principali.
+Né per fame né pe’l rame,  
+mai si snudino le lame
+Una rissa è uno scontro non letale, che tale deve rimanere. 
+Se infatti venisse versato sangue o ci si ritrovasse dei morti 
+per la via o nella bettola, da semplice “disturbo della pub-
+blica quiete” (di cui non importa nulla a nessuno) la cosa 
+verrebbe etichettata come omicidio o strage, e sulla testa dei 
+colpevoli le Taglie si alzerebbero a dismisura. La rissa è rissa 
+e non ci deve scappare il morto. Per questo motivo, nessun 
+partecipante utilizza le proprie armi o, più in generale, col-
+pisce per uccidere.
+Pe’ danni e malanni a taverne scalcagnate, 
+l’osti prendon tutto a fine saccagnate
+Le regole della rissa sanciscono – anche nei confronti della 
+legge – la tradizionale norma secondo cui chiunque a fine 
+rissa giaccia incosciente all’interno di una bettola o esercizio 
+analogo (o entro 10 passi da essa), possa essere spogliato di 
+beni e averi dai proprietari della medesima, a titolo di risar-
+cimento per i danni arrecati dai rissaioli.
+Fin dai giochi al Colosseo,  
+chi trionfa c’ha il trofeo
+Come sancito anche dalle antiche Leggi Draconiane ri-
+guardo i combattimenti tra colossi negli anfiteatri, ciascun 
+vincitore di una rissa ha diritto a prendere agli sconfitti un 
+“T rofeo” (uno solo per rissa, qualsiasi sia il numero degli 
+sconfitti) e questo gesto non si configura come furto, bensì 
+come giusta ricompensa per la vittoria. Questo T rofeo può 
+essere:
+• 1 Cimelio (vedi pag. 69).
+• 1 singola moneta, a scelta del vincitore.
+• 1 oggetto equivalente a un Cimelio e di valore simbolico, 
+anche quando unico e prezioso per il possessore (per 
+esempio: una mappa, un foglio di diario, un ritratto, un 
+ricordo, un sigillo).
+• 1 Schiaffo Morale: ovvero un ceffone ulteriore dato con 
+tutta la propria tracotanza al perdente. Non ci si mette 
+nulla in tasca, ma quanta soddisfazione…Marmaglia 
+Classe Armatura: Pari a quella del png scelto
+Tiri per Colpire con Mosse e Saccagnate: +4
+Batoste: Ogni membro della Marmaglia possiede da 
+2 a 4 livelli di Batoste invece dei normali 6
+Mosse:  2 a scelta tra le Mosse Generiche
+Slot Mossa: 2
+Capoccia 
+Classe Armatura: Pari a quella del png scelto
+Tiri per Colpire con Mosse e Saccagnate: +7
+Batoste: 6
+Mosse:  3 Mosse e 1 Asso nella Manica che possono 
+essere scelti da qualunque lista. Possiede inoltre la 
+Mossa speciale Scudo Umano
+Slot Mossa: 5
+Speciale: Possiede i privilegi da rissa Ignoranza 
+Eroica e Mascella di Ferro
+Scudo umano (Mossa) . Quando un Capoccia 
+è attaccato da una creatura, può usare la sua 
+reazione per afferrare un membro della marmaglia 
+che subisce il colpo al suo posto.
+B
+“Ho speso gran parte dei miei denari per 
+donne, vino e cavalli. Il resto l’ho sperperato"
+-ser giorgio  de’ m igliori  
+  c avaliere  errante -
+
+--- PAGINA 59 ---
+
+Giochi da Bettola
+- 57 -
+Giochi da Bettola
+Da nord a sud, il sinistro stivale e le sue isole sono costellati 
+(e insozzati, in buona parte) da taverne, locande, osterie, 
+cantine e topaie di varia (e dubbia, il più delle volte) qualità.
+Tra un incarico e l’altro con la Cricca, un piatto di sbobba e 
+un po’ di vino, il vociare di banditori e cantori, un sonnellino 
+al tepore di un focolare o un po’ di compagnia per la notte 
+sono i più efficaci strumenti che ogni canaglia ha a propria 
+disposizione per rifocillare il corpo e rinfrancar lo spirito.
+Quelli che però non possono davvero mancare in ogni buca 
+per Taglie che pretenda rispetto sono giochi e passatempi: 
+una ridda di piccole e grandi competizioni nate per far girare 
+un po’ di denaro, scacciare la noia e farsi due risate a scapito 
+di gonzi e ubriachi. Ognuno di questi giochi, con un poco 
+di buona sorte, può far sì che un’onesta canaglia si possa 
+riempire la borsa di petecchioni sonanti!
+Le minchiate  (gioco di carte)
+I mazzi delle minchiate nascono in Torrigiana, dove ancora 
+oggi si contano alcuni tra i più grandi esperti e i cartai più pre -
+stigiosi. Le minchiate sono di fatto un tipo di mazzo di carte, 
+con il quale si possono svolgere molti giochi diversi, anche se 
+il più famoso tra questi è conosciuto con il medesimo nome.
+La ricetta del gioco d’azzardo brancalone per eccellenza si 
+compone di un gran numero di ingredienti quali fortuna, 
+rapidità di mano, intuito, acume, buon occhio, ma anche… 
+l’imbroglio!
+Già, per questo gioco – pensato per sordide ciurmaglie della 
+più infima risma – le scorrettezze sono parte integrante e rego -
+lamentata del gioco, a patto che il baro sia abile abbastanza 
+da non farsi scoprire e che, se colto a truccare le carte – e 
+denunziato a gran voce, al grido di “Minchiate!”– rimpolpi 
+il “Coperto” (il piatto delle puntate) di una quota aggiuntiva, 
+oppure abbandoni il tavolo.
+Svolgimento
+Per gestire una veloce partita al gioco delle Minchiate in una 
+sessione di Brancalonia, Condottiero e giocatori possono 
+utilizzare il seguente regolamento, che simula circa 1 ora di 
+gioco al tavolo dell’osteria.
+Ogni personaggio partecipante mette una puntata sul tavolo, 
+concordata e uguale per tutti, e inizia il gioco.
+1. Ogni personaggio partecipante sceglie 2 abilità che 
+rappresentano il suo approccio alla partita, con cui 
+effettuare una prova. Di seguito, alcuni esempi:• Indagare (INT): fare un conto obiettivo delle 
+probabilità, monitorando i risultati dei dadi.
+• Intuizione (SAG): svelare i bluff degli avversari.
+• Inganno (CAR): bluffare alla grande.
+• Rapidità di mano (DES): tentare di barare [un 
+fallimento determina l’incremento del piatto di una 
+quota aggiuntiva a spese del personaggio, o il suo ritiro 
+dal gioco].
+2. Per tutte le prove di abilità al tavolo delle Minchiate, la CD è 
+pari a 10, +1 per ogni giocatore compreso chi effettua la prova.
+3. Ogni successo nelle prove di abilità determina un 
+incremento del Dado Vincita di ogni giocatore, come segue:  
+0 successi = 1d6; 1 successo = 1d8; 2 successi = 1d10.
+4. Il tiro del Dado Vincita bilancia l’abilità mostrata dalla 
+canaglia al tavolo e lo volere de’ Santi.
+5. Il giocatore che ottiene il risultato più alto tirando il 
+proprio Dado Vincita, porta a casa il malloppo.
+In caso di pareggio, i vincitori si spartiscono la vincita… o, 
+più di sovente, vengono alle mani!
+Botte alla Botte
+Questo antico gioco da bettola nacque come allegorica 
+reinterpretazione del noto detto popolare “Non se pos -
+saria aver la botte piena e la mogliera mbriaca”, e vede i 
+partecipanti sfidarsi in una prova che unisce resistenza (al 
+vino), abilità (nell’arme) e un poco di buona sorte (sempre 
+che sia lo volere de’ Santi)!
+Ogni osteria che si rispetti, e anche le altre, ha il suo angolo 
+targato Botte alla Botte.
+La Botte – così chiamata che si tratti effettivamente di una 
+botte, di una pignatta, di una cassa da morto o di un qualsiasi 
+altro contenitore – è solitamente ben robusta o anche rinfor-
+zata, e ondeggia sorretta da corde cigolanti, o più di rado da 
+catene. Il bottino che conserva e protegge si compone delle 
+puntate raccolte tra i partecipanti alla sfida.
+Prima di cominciare, il Condottiero decide CA e Punti Ferita 
+della Botte, e se questa possiede dei tratti o delle peculiarità speciali.
+Svolgimento
+1. Ogni partecipante alla sfida mette una puntata nella botte 
+(uguale per tutti), poi la botte viene appesa e inizia il gioco.
+2. Ogni partecipante sceglie quanti tiri effettuare contro la 
+botte, che equivale a quanti boccali di birra dovrà scolarsi 
+prima di lanciare.
+
+--- PAGINA 60 ---
+
+- 58 -
+Botte da orbi
+e bisacce sfondate3. Ogni giocatore deve superare un tiro salvezza su Costituzione 
+con difficoltà pari a 10+1 per ogni boccale consumato, 
+altrimenti è ubriaco, e i tiri subiscono svantaggio.
+4. Partendo dal giocatore che ha bevuto di più, fino a quello 
+che ha bevuto meno, si tira un singolo colpo alla botte, 
+continuando il giro fintanto che ci sono giocatori con 
+ancora tiri a disposizione, o fino alla rottura della botte.
+Nota: Un colpo critico infrange la botte.
+5. Quando la botte si rompe o quando i partecipanti finiscono 
+i loro tiri, il gioco finisce. Colui che ha inferto il colpo di 
+grazia è il vincitore delle botte alla botte e otterrà tutte le 
+monete poste all’interno. Se la botte invece è ancora integra 
+alla fine dei lanci, sarà il locandiere a ottenere il premio ma 
+nessun partecipante pagherà le birre consumate.
+Ogni taverna ha la sua versione del gioco delle Botte alla 
+Botte, con differenti armi da lanciare, botti più o meno resi-
+stenti o agghindate (alcune taverne offrono anche un costume 
+particolare da far indossare ai partecipanti).
+Gara di Mangiate
+Sono tra i giochi preferiti da morganti e fratacchioni, ma 
+spesso tutte le canaglie in circolazione premono per par -
+teciparvi. Dopotutto, anche se la gara va male, si saranno 
+riempiti lo stomaco per pochi petecchioni.
+La gara è divisa in Mance, dette così perché ogni parteci-
+pante deve lasciare la mancia al tenutario della Bettola che 
+diviene la posta della sfida. Per ogni Mancia, la quota di 
+partecipazione è generalmente di 1 ma.
+Svolgimento
+1. Il Condottiero pone 1d6 al centro del tavolo con la 
+faccia che mostra 1 rivolta verso l’alto, questo è il Dado 
+Mangiata. A ogni Mancia, il Dado aumenta il suo 
+punteggio di 1, quindi alla seconda Mancia sarà 2, alla 
+terza 3, ecc. Nel caso si arrivi a 6 sul Dado Mangiata si 
+continua fino allo sfinimento dei partecipanti.
+2. A ogni Mancia, tutti i partecipanti alla gara effettuano 
+contemporaneamente un tiro salvezza su Costituzione con 
+CD pari a 10 + il valore del Dado Mangiata, altrimenti 
+subiscono un numero di Batoste pari al valore del Dado 
+Mangiata (vedi le regole per le Batoste a pag. 51).
+3. La gara prosegue fino a che non rimane in piedi un solo 
+partecipante, che guadagnerà la metà della posta in gioco. 
+Nel caso non rimanga in piedi nessuno al termine della 
+sfida, tutte le Mance accumulate vanno al locandiere.
+Nota: Il Muro dell’Appetito. Se il valore del Dado Mangiata 
+supera il bonus di Costituzione di un partecipante alla Gara 
+di Mangiate, questi avrà raggiunto il Muro dell’Appetito e 
+subirà svantaggio nei successivi tiri salvezza di ogni Mancia.
+Piatti di Cibanza Epica
+Sagra della pizza o della pasta. I partecipanti alla Gara di 
+Mangiate ignorano gli effetti del Muro dell’Appetito.
+Vino buono. Una buona bottiglia di vino bevuta in 
+compagnia aiuta a far scendere meglio la sbobba nel gargarozzo. La CD dei tiri salvezza per la Gara di Mangiate 
+cala di 2.
+Carnazza o caponata. La carne e le verdure fritte sono 
+squisite e costose, e solo i più grandi esperti sono in grado di 
+sopravvivere a una Gara di Mangiate a base di questi cibi. La 
+CD dei tiri salvezza per la Gara di Mangiate aumenta di 2.
+Giostra dei poveri
+Quando ti trovi in mezzo alla giostra e non vedi il somaro,  
+vuol dire che il somaro sei tu.
+-antico  detto  alaziale -
+La giostra dei poveri è uno scontro tra due coppie, che 
+schernisce le giostre dei cavalieri, i quali a loro volta non 
+possono che ricambiare lo scherno. Un “cavaliere” sale sulle 
+spalle di un compagno, il “cavallo”. Il cavaliere brandendo 
+una scopa a mo’ di lancia sprona il suo cavallo e carica la 
+coppia di avversari, che si apprestano a fare la medesima cosa.
+Ogni coppia partecipante possiede un Dado Giostra (d8) 
+che servirà per disarcionare gli avversari. Durante la giostra 
+i partecipanti dovranno effettuare alcune prove, che in base 
+all’esito, modificheranno il tipo di dado a disposizione della 
+coppia. Per ogni prova fallita il dado cala di una categoria, 
+mentre per ogni prova riuscita il dado aumenta di una.
+d4 - d6 - d8 - d10 - d12
+Svolgimento
+1. Le due coppie si dispongono una di fronte all’altra, e 
+il cavaliere monta a cavallo effettuando una prova di 
+Destrezza (Acrobazia) con CD 10.
+2. Il cavallo parte alla carica effettuando una prova di Forza 
+(Atletica) con CD 12.
+3. A questo punto il cavaliere tenta di disarcionare l’avversario 
+con la sua scopa. Entrambi i cavalieri effettuano un tiro per 
+colpire subendo svantaggio e sommano al tiro il risultato 
+del loro Dado Giostra. Chi viene colpito, cade a terra 
+disarcionato e perde la gara. Se nessuno viene colpito la 
+Giostra ricomincia dal punto 2. Se invece entrambi cadono 
+a terra, la Giostra finisce in pareggio.
+Equipaggiamento da Giostra dei Poveri
+Armatura di pentole. Ogni cavaliere deve equipaggiarsi 
+con un’armatura di pentole e padelle che conferisce CA 16 
+(nessun bonus di Destrezza). Inoltre, qualsiasi attacco effettuato 
+indossando l’armatura subisce svantaggio a causa della pentola 
+usata come elmo, che rende quasi impossibile la visuale.
+Scopa da Cavaliere. T rattasi di una scopa usata per 
+disarcionare l’avversario. Viene considerata come un’arma 
+semplice ai fini della Giostra dei Poveri.
+Bardatura a Quadri. Nobile tovaglia che viene lanciata 
+sopra al cavallo prima di salirci in groppa. Quando effettua 
+la prova di Forza (Atletica) durante la Giostra, se il risultato 
+del dado è 1, il cavallo inciampa nella bardatura e il Dado 
+Giostra cala di due categorie invece che di una.
+
+--- PAGINA 61 ---
+
+Bagordi 
+- 59 -
+Bagordi
+Al ritorno dai propri lavoretti, spesso le canaglie si trovano 
+con un’abbondanza di denari e soldoni in tasca.
+Alcuni di essi investono queste sudate ricompense in redditizie 
+attività, altri li donano ai bisognosi o si comprano cavalcature 
+ed equipaggiamento migliore per le avventure successive. Altri, 
+infine, li vanno scialacquando a destra e a manca in bettole, sale 
+da gioco, scommesse, profezie e bagordi di ogni genere.
+Cosa può accadere in quest’ultimo caso?Quando una canaglia decide di utilizzare 1 settimana di 
+Sbraco per darsi ai Bagordi deve innanzitutto trovare un luogo 
+idoneo, poco lontano dal Covo:
+In un villaggio si possono dilapidare in Bagordi 5-10 mo a 
+settimana.
+In una cittadina si possono dilapidare 10-20 mo a settimana.
+In una città maggiore si possono dilapidare 20-50 mo a 
+settimana.
+
+
+--- PAGINA 62 ---
+
+- 60 -
+Botte da orbi
+e bisacce sfondate
+d20 Risultato
+1Buttate fuori questo sacco di letame! Ti hanno completamente derubato e spogliato di qualsiasi cosa possedessi, abbandonan-
+doti in un fetido rigagnolo. Inoltre, i birri ti trascinano via nel pubblico ludibrio e ti gettano in gattabuia. Cancella tutti i tuoi oggetti 
+comuni e i Cimeli che ti portavi dietro. Inoltre, per farti tirare fuori di galera senza troppe conseguenze, hai usato un Favore.
+2Mamma! C’è qualcuno nudo nella stalla! Ti hanno completamente derubato e spogliato di qualsiasi cosa possedessi. Lo so, non è 
+una bella situazione, ma poteva andare peggio… Cancella tutti i tuoi oggetti comuni e i Cimeli che ti portavi dietro.
+3 Certo! Solo il tempo di prendere il borsello… Qualcuno ti ha tagliato via la borsa, con tutto quello che c’era dentro.
+4Senti come puzza questa feccia! Ti fai una pessima fama nei dintorni, di molesto ubriacone, donnaiolo e compagnia disonore-
+vole. Durante il prossimo tiro per i Rischi del Mestiere devi aggiungere 5 al totale del gruppo.
+5Chiedo scusa, non volevo versargliela addosso. Hai scatenato la rissa più spaventosa che si fosse vista in città negli ultimi 
+anni. T u, i tuoi sconosciuti avversari e i tuoi ancora più sconosciuti alleati avete letteralmente distrutto una Bettola. Devi 
+pagare un’altra volta la cifra che hai dilapidato o Sfascio di Bettole Aggravato (30 mo) verrà aggiunto alla lista delle tue 
+malefatte.
+6T utto sul mio conto! La situazione ti è sfuggita di mano e sei riuscito a dilapidare in una sola notte il doppio del previsto. Se 
+non possiedi abbastanza denaro, hai contratto dei debiti e un’accusa di Insolvenza (per un numero di mo pari al debito) verrà 
+aggiunta alla lista delle tue malefatte.
+7Secondino! Ancora un po’ di quella sbobba, di grazia. I tuoi schiamazzi notturni hanno attirato le guardie. T u e quelle canaglie 
+con cui stavi cantando sguaiatamente “L’uccellin della comare” siete finiti in galera. Devi pagare 2 mo o rimanere in prigione 
+per altri 3 giorni, e a quel punto tutti si accorgeranno della T aglia che pende sulla tua testa.
+8Un’offerta che non puoi rifiutare. Un pericoloso malvivente del luogo ti ha seguito tutta la notte, coprendo i tuoi debiti e offren-
+dosi di pagare per te. All’inizio sei stato compiaciuto di questa cosa (recuperi la somma dilapidata), ma adesso hai un debito 
+nei suoi confronti. E lui ha un favore da chiederti.
+9Ehi tu, porco, levale le mani di dosso! Quella che sembrava una laida donnaccia, si rivela essere la sussiegosa moglie di un 
+funzionario del Duca-Conte, che non gradisce le tue attenzioni verso la consorte. Il potente individuo farà di tutto d’ora in poi 
+per ostacolare i tuoi interessi e facendo di tutto per mandarti al bando o in galera. Aggiungi 2 a tutti i prossimi tiri per i Rischi 
+del Mestiere a cui partecipi.
+10Amore! La colazione è pronta! Al mattino scopri di avere sposato una persona del posto e a quanto pare l’unione risulta con-
+fermata dal Credo. Magari la cosa non è così brutta come credevi… ma se per caso già stai pensando di abbandonare il tetto 
+coniugale ricorda che si tratta di una vera e propria malefatta!
+11Come osi, vile marrano? Mai litigare da ubriachi. Prima di poterti dedicare al prossimo lavoretto, ti aspetta un duello al primo 
+sangue con il figlio del Conestabile. Forse è meglio farsi sconfiggere senza troppo clamore…
+12Questo posto è un vero mortorio! Nonostante le tue pessime intenzioni, vanno tutti a letto presto e nessuno ti dà retta. Riesci a 
+dilapidare solo metà della cifra prevista.
+13T u, tu, tu e tu… e anche tu! È stata la notte brava più devastante della tua vita. T utto come da programma. Complimenti! Per 
+tutto il prossimo lavoretto, considera un +1 alla tua Nomea.
+14E questo che diavolo è? Ti ritrovi in tasca l’atto di proprietà di una cosa chiamata “Vecchia Babbiona” . Per quello che ne sai, 
+potrebbe essere una vacca, un ronzino, la mappa di un tesoro, una magione fuori città o quella bagnarola a vela ancorata al 
+porto. In alternativa, puoi aggiungere 1 Cimelio ai tuoi averi.
+15Che cosa hai detto di voler essere, tu? Un giovane non proprio in gamba ha deciso di diventare tuo tirapiedi, per imparare da te 
+come si vive l’avventura.
+16… e poi è entrata una marionetta vestita da scimmia… Serata epica! La più colossale rassegna di nefandezze, dissolutezze e 
+cialtronerie che tu abbia mai visto. C’erano donne, narghilè, botti usate come piscine, maiali, pappagalli e un caimano. Per 
+tutto il prossimo lavoretto, considera un +2 alla tua Nomea.
+17Oh, ecco il mio caro amico! Un estroverso pezzo grosso della città ti ha preso in simpatia quando siete scappati dal bordello in 
+fiamme, saltando via sui tetti. Adesso, questo influente personaggio è ben felice di ricambiarti un favore.
+18Prendo la vecchia! Una serata splendida, a base di eccessi e turpitudini. Il mattino dopo ti rendi conto che quella che credevi 
+un’attempata baldracca era davvero la ricca baronessa che diceva di essere. E ha pagato tutto di tasca propria. Chissà per 
+quale motivo, ti ritrovi il sedere arrossato e nel borsello la cifra che avevi deciso di dilapidare più un’ulteriore pari quantità di 
+monete.
+19Non ho mai visto tanti assi in un solo mazzo! Hai giocato a tutti i tavoli della città e vinto e perso intere fortune. Alla fine della 
+nottata ti ritrovi in tasca 4 volte la cifra che avevi deciso di dilapidare, in aggiunta a tutto quello che possedevi già.
+20+Per Donna Lama, questa città sembra l’anticamera dell’Inferno! Contagiata dal tuo inesauribile entusiasmo, l’intera città 
+cede alla rivoluzione che le imponi. Per una notte il vino scorre a fiumi, i bordelli sono pieni, le piazze gremite di gente ubriaca 
+e felice. Una notte che non verrà dimenticata mai più! E in tutta la confusione sei riuscito anche a non tirar fuori un soldo… 
+Recuperi il denaro che avevi dilapidato e considera permanentemente la tua Nomea come di un livello superiore.Dopo aver deciso la cifra, questa va cancellata dai propri averi. Poi il giocatore lancia 1d20 e somma al risultato la Nomea 
+della canaglia:

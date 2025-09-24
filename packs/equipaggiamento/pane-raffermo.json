@@ -1,0 +1,90 @@
+{
+  "_id": "paneraffermo001",
+  "name": "Pane Raffermo",
+  "type": "consumable",
+  "img": "icons/consumables/food/bread-loaf-brown-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una pagnotta di pane dura come pietra, dimenticata per giorni.</p><p><strong>Cibo di Emergenza:</strong> Soddisfa il fabbisogno di cibo per un giorno, ma devi fare un tiro salvezza su Costituzione CD 12 o avere mal di stomaco (-1 a tutte le prove per 4 ore).</p><p><strong>Arma Improvvisata:</strong> Può essere lanciato come arma improvvisata (1d4 danni contundenti, gittata 20/60).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "4",
+      "units": "hour"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "charges",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": 1
+    },
+    "ability": "",
+    "actionType": "other",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": 12,
+      "scaling": "flat"
+    },
+    "consumableType": "food",
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

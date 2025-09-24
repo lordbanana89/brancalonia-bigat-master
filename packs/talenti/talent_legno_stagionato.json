@@ -1,0 +1,87 @@
+{
+  "_id": "talent_legno_stagionato",
+  "name": "Legno Stagionato",
+  "type": "feat",
+  "img": "icons/magic/nature/leaf-glow-teal.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Legno Stagionato</h2>\n<p><em>Prerequisito: Marionetta</em></p>\n<h3>Benefici</h3>\n<ul>\n  <li>Aumenta di 1 un punteggio di caratteristica a tua scelta, fino a un massimo di 20.</li>\n  <li>Ottieni scurovisione 18 m.</li>\n  <li>Hai vantaggio ai tiri salvezza su Intelligenza, Saggezza e Carisma contro la magia (Furbanza Fandonica).</li>\n</ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

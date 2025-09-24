@@ -1,0 +1,153 @@
+{
+  "_id": "sogni-presagi",
+  "name": "Sogni e Presagi",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Sogni e Presagi",
+  "results": [
+    {
+      "_id": "sogni-presagi_0",
+      "type": 0,
+      "text": "Corvi neri - Morte imminente",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_1",
+      "type": 0,
+      "text": "Oro che diventa cenere - Perdita di ricchezza",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_2",
+      "type": 0,
+      "text": "Ponte che crolla - Tradimento di un alleato",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_3",
+      "type": 0,
+      "text": "Sole nero - Grande sventura",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_4",
+      "type": 0,
+      "text": "Acqua che diventa sangue - Battaglia in arrivo",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_5",
+      "type": 0,
+      "text": "Torre che cade - Caduta di un potente",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_6",
+      "type": 0,
+      "text": "Serpente che si morde la coda - Ciclo che si ripete",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_7",
+      "type": 0,
+      "text": "Albero secco che fiorisce - Speranza inaspettata",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_8",
+      "type": 0,
+      "text": "Luna piena rossa - Magia oscura",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_9",
+      "type": 0,
+      "text": "Specchio infranto - Sette anni di sfortuna",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_10",
+      "type": 0,
+      "text": "Gatto nero - Menagramo in arrivo",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sogni-presagi_11",
+      "type": 0,
+      "text": "Arcobaleno doppio - Fortuna incredibile",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 2900,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  }
+}

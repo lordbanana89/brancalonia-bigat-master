@@ -1,0 +1,554 @@
+
+
+--- PAGINA 86 ---
+
+- 84 -
+La Condotta 
+Strade che non vanno da nessuna parte
+Il Regno è pieno di strade che non vanno da nessuna parte. Forse 
+sono resti di antiche vie draconiane, forse sono piste di briganti, 
+viottoli abbandonati o sentieri delle fate. Chi le ha tracciate? 
+Cosa si rischia di incontrarci, percorrendole? Sarà vero che non 
+portano da nessuna parte?
+Questa tabella può essere utilizzata dai Condottieri per creare 
+una versione un po’ particolare di incontri casuali, dove l’in -
+contro non è un posto, un avversario o un mostro, bensì una 
+strada misteriosa, come ce ne sono a centinaia sparse per tutte 
+le regioni del Regno.Tali strade possono apparire ai lati del percorso che le canaglie 
+stanno percorrendo, sul retro di una bettola, a poca distanza da 
+un Covo, ai margini di un villaggio. Non sono magiche o speciali 
+di per sé (almeno non tutte), anzi la loro caratteristica principale 
+è che sembrano tanto banali e trascurabili che a nessuno importa 
+sapere dove vadano.
+Ogni Strada che non va da nessuna parte ha 4 tratti distintivi, 
+che possono essere scelti tra le tabelle seguenti oppure tirati a caso. 
+T utte le voci presentate sono anche e soprattutto degli spunti che 
+il Condottiero può definire, variare o approfondire a piacimento.
+d6 Tipo di strada 
+1Un’antica strada lastricata draconiana dimenticata che 
+emerge dall’erba.
+2Una pista tracciata da un qualche strano animale. Grosso. 
+Molto grosso.
+3Un sentiero aperto da taglialegna o carbonai. O da con-
+trabbandieri e briganti, naturalmente.
+4Una via magica, che sembra apparire e scomparire. È 
+opera delle fate?
+5Un tratturo aperto da pastori e dai loro greggi. Le pecore 
+conoscono sempre la via migliore.
+6 Un viottolo poco appariscente.
+d6 Per poterla percorrere  
+1Per poterla seguire, per prima cosa bisogna notare 
+l’imbocco, e non è affatto facile. I personaggi devono 
+superare una prova di Saggezza (Percezione) con CD 18.
+2La strada si trova dietro un ostacolo iniziale: un muro, un 
+cancello, un masso. Non solo è difficile superarlo, ma non 
+è possibile transitarvi con cavalcature e carri. I personaggi 
+devono superare una prova di Forza (Atletica) con CD 16.
+3All’imbocco della strada c’è un “guardiano” che non 
+intende lasciare il passo: potrebbe essere un animale 
+feroce, un burbero contadino, un diavolo tentatore, uno 
+spaventapasseri animato.
+4Imboccare la strada è facile, ma questa quasi subito 
+appare e scompare tra l’erba e le fratte, e non è affatto 
+facile percorrerla. I personaggi devono superare una 
+prova di Saggezza (Sopravvivenza) con CD 17 .
+5Imboccare la strada è facile, ma questa quasi subito 
+diventa impervia da seguire, tra dirupi e asperità del 
+terreno. I personaggi devono superare una prova di 
+Destrezza (Acrobazia) con CD 15.
+6La strada è pervasa da un qualche enigma magico o per 
+percorrerla serve una prova o un approccio di intelligen-
+za. I personaggi devono superare una prova di Intelligen-
+za (Arcana o Indagare) con CD 19.d20 Cosa ci si incontra 
+1 Un tipico animale selvatico del luogo.
+2 1d4 birri, a caccia di ricercati.
+3 Uno stormo di uccelli paduli che volano bassi.
+4 Un cianciaroccio, particolarmente ispirato.
+5 Un rinoceronte da latte, abbastanza mansueto.
+6 Un branco di foionchi, che spiano i viandanti da lontano.
+7 Una coppia di elusivi spaturni.
+8 Un lonfo, che sdilenca un poco e gnagio s’archipatta.
+9Una fantasima dolente, che chiede di ascoltare e risol-
+vere il suo dramma.
+10 Un orco cattivo, con un inquietante sacco sulla schiena.
+11 Una befana dei dintorni, che ha un favore da chiedere.
+12 Un folletto della zona, con un indovinello da risolvere.
+13Un postiglione tenero e untuoso come una palla di 
+burro, una bocchina che ride sempre e una voce sottile 
+e carezzevole.
+14Una compagnia di guitti fantasma, che eseguono ogni 
+notte il medesimo spettacolo.
+15Un malacoda che attende vicino a un ponte. Il primo ad 
+attraversare la struttura è suo per legge infernale.
+16Una Cricca di canaglie che viene nella direzione contra-
+ria. Hanno appena imboccato una strada che non va in 
+nessun posto.
+17Una capra dal vello turchino, che cerca un concorrente 
+per una gara di animali meccanici che si terrà di lì a 
+poco. Purtroppo non è interessata ai personaggi.
+18 Un frate marionetta che cerca di evangelizzare gli alberi.
+19 Un enigmatico eremita che vive su una colonna da anni.
+20Un condottiero Inesistente, che sembra guidare a gran 
+voce un esercito di esseri invisibili, impalpabili e silenziosi.
+
+--- PAGINA 87 ---
+
+- 85 -Strade che non vanno  
+da nessuna parte
+d20 Dove va la strada
+1-10Da nessuna parte. A volte succede. Le canaglie devono tor -
+nare indietro e hanno perso in tutto 2d4 ore di cammino.
+11 Al cancello coperto di edera di una villa abbandonata.
+12Al Covo di una banda del luogo. Potrebbe essere ostile 
+o amichevole.
+13A una dimenticata necropoli, dove sono seppelliti 
+numerosi Patriarchi dell’Impero. Si dice che di notte 
+si possano ricevere indicazioni e consigli magici dagli 
+antichi aristocratici.
+14 In mezzo alla Fumarea, per una via ignota a chiunque.
+15In una regione confinante: un ottimo percorso se si 
+vuole fuggire ai birri o contrabbandare qualcosa.
+16Alla destinazione voluta, in maniera molto più veloce 
+del previsto.
+17A un corso d’acqua navigabile, proprio in prossimità di 
+un molo e di una bella chiatta ormeggiata.
+18A un convento di suore isolate da anni. Potrebbero 
+essere dedite al Di Vino Amore, all’ Accoglienza e al 
+Sollievo dei Viaggiatori, a culti terribili e innominabili, 
+alle T redici Penitenze, oppure, naturalmente, alla 
+Condotta Manesca.
+19 Nelle Contrade Dimenticate.
+20In una valle perduta, abitata da morganti delle caverne, 
+terrasche, bavalischi e bigatti colossali.
+All’uscita del paese si dividevano tre strade: una 
+andava verso il mare, la seconda verso la città e 
+la terza non andava in nessun posto. Martino lo 
+sapeva perché lo aveva chiesto un po’ a tutti e 
+da tutti aveva ricevuto la stessa risposta:
+“Quella strada lì? Non va in nessun posto. È 
+inutile camminarci.”
+“E fin dove arriva?.”
+“Non arriva da nessuna parte.”
+“Ma allora perché l’hanno fatta?.”
+“Non l’ha fatta nessuno, è sempre stata lì.”
+“Ma nessuno è mai andato a vedere?”
+“Sei una bella testa dura: se ti diciamo che non 
+c’è niente da vedere…”
+-d on giovanni  dei rodari - 
+-La strada che non andava da nessuna parte-
+
+--- PAGINA 88 ---
+
+- 86 -
+La Condotta 
+Piazzare delle Profezie
+“Scrivi:  parlerò all’orecchio di un poveraccio direttamente 
+dalle mie mani, e a rispondermi sarà un uomo con due teschi.”
+Il contrabbandiere mugugnò.
+Il guercio si avvicinò a tiro di sussurro. “Entro sera, la striscia 
+del mio rasoio accarezzerà la gola di quell’uomo, che solo 
+una volta morto ricorderà chi era. Non riceverò alcuna con -
+danna per l’omicidio e l’inquisitore in persona mi benedirà.” 
+Nel Regno, le scommesse sono spesso proibite e chi le prende 
+rischia la gogna e la prigione.
+Per ovviare a questo piccolo contrattempo, le canaglie di 
+Penumbria, e da lì in poi di tutto il Regno, hanno trovato una 
+soluzione. Loro non prendono scommesse. Prendono Profezie.
+Piazzare delle Profezie è un modo – assolutamente opzio -
+nale – per le canaglie di tirare su qualche moneta in più durante 
+un lavoretto. Una Profezia è una predizione di qualcosa che 
+avverrà da lì a sera, al giorno dopo o ai giorni successivi, 
+espressa in maniera enigmatica ed evocativa, o che comunque 
+non sia facilmente comprensibile al momento di piazzarla.
+Qualsiasi profeta/scommettitore può piazzare la sua profezia 
+presso un oracolo/allibratore assieme a una puntata e riscuotere 
+la posta in caso la sua profezia si avveri. La Cupola dei Don 
+criminesi, in particolare i Malavita, controllano l’intero giro 
+d’affari delle profezie penumbre.
+Per prima cosa, la canaglia deve trovare qualcuno che accetti 
+Profezie, e gli allibratori non sono molti fuori dalla Penumbria. 
+In genere è possibile trovarli in alcune Bettole specializzate oppure 
+nei quartieri più malfamati delle maggiori città del Regno.
+Una volta trovato qualcuno a cui piazzarla, la Profezia va 
+Formulata. Il giocatore deve scrivere la sua Profezia e conse-
+gnarla al Condottiero.Ogni Profezia deve:
+• Contenere il tempo e il luogo verificabili della sua realizzazione 
+(per esempio, “entro sera, in Piazza Maggiore…”); profezie 
+di difficile o impossibile verifica non saranno accettate o 
+avranno un costo aggiuntivo alla puntata.
+• Contenere da 1 a 4 elementi enigmatici, ciascuno 
+formulato in una frase specifica e ben precisa. È necessario 
+che ciascun elemento sia criptico nella formulazione, ma 
+che il suo significato sia chiaro quando si realizza. Per ogni 
+elemento enigmatico della Profezia, la quota della Profezia 
+raddoppia la posta in caso di vincita, fino a un massimo 
+di 4 elementi (x16).
+Il Galateo del Profeta
+Le Profezie sono soggette a regole di condotta molto strin-
+genti, altrimenti non saranno decretate valide, e la discussio-
+ne potrebbe risolversi a coltellate…
+• Ogni elemento della Profezia deve essere enigmatico 
+e simbolico, e non valgono maschere, trasformazioni 
+e travestimenti. Per esempio, se si piazza la seguente 
+Profezia: “domani all’alba un Cavallo Bianco volerà sui 
+cieli della città”. Non può essere un vero cavallo bianco 
+volante a solcare i cieli, altrimenti la Profezia non sarà 
+valida. Non può essere neppure qualcosa di volante con 
+una maschera o un travestimento da cavallo. Può essere 
+però un drago bianco su cui qualcuno sta cavalcando.
+• A seconda di quanto la Profezia può sembrare semplice o 
+illogica, l’oracolo può inoltre aggiungere o diminuire la 
+percentuale della posta.
+• La Profezia deve avverarsi in maniera incontrovertibile, 
+con tutti i simboli finalmente compresi in maniera 
+trasparente. Per evitare di essere accusati di frode dalle 
+altre canaglie, in presenza di una Profezia correttamente 
+avvenuta, nessun Oracolo negherà mai davvero di pagare 
+la posta pattuita.
+Non si possano piazzare più Profezie uguali a Oracoli diversi, 
+e non si possono piazzare più Profezie prima che quella pre-
+cedente si sia realizzata o sia stata sconfessata. Il Condottiero 
+può anche decidere di non accettare più di una Profezia per 
+canaglia per ogni lavoretto.
+
+
+--- PAGINA 89 ---
+
+- 87 - 
+Le avventure delle canaglie di Brancalonia si svolgono in quello che tutti gli abitanti chiamano sempli -
+cemente “il Regno”, e quanto stabilito dal Cancelliere dell’Imperatore d’Altomagna è dopotutto vero: 
+codesto Regno di fatto non esiste!
+I territori della Penisola dello Stivale e delle isole vicine non sono altro che un possedimento secondario 
+dell’Impero, ceduto come beneficio vassallatico alla Regina Menalda di Catozza cento anni fa e mai più 
+recuperato, anche dopo che la linea dinastica dei Catozzi si fu sfaldata tra intrighi, complotti e una dozzina 
+di pretendenti alla Corona di Ferro.
+La Taglia in questione era quella sulla testa di Buemondo il Grosso di Aurocastro, che dal fondo del “sinistro 
+stivale” aveva messo in piedi una confederazione di banditi, signorotti e briganti che imperversava dalla 
+Piccadora al Falcamonte, assaltando ogni armata imperiale e rifiutando di versare tasse, decime e tributi. In 
+cambio della testa di Buemondo, pesata si dice quaranta ponderi, Menalda ottenne la reggenza del paese 
+per conto dello Imperatore e da allora, trascorso un secolo, tutta la penisola è di fatto fuori dal controllo 
+altomanno… né vi è alcuno interessato a riconquistarla.
+Attualmente perduta la Corona di Ferro di Menalda e indecisa l’araldica sulla successione, il Regno è 
+suddiviso in oltre una dozzina di regioni indipendenti, a loro volta frammentate in potentati locali, feudi, 
+contee, borghi, marche, ducati, baronie, alleanze, cavalierati, campanili e leghe commerciali, il tutto senza 
+considerare gli indistinti confini tra i domini e le terre di nessuno tutt’intorno…
+Ciascuna di queste regioni può essere teatro di lavoretti e situazioni dalle atmosfere molto specifiche, data 
+l’ampia varietà di temi e toni che si possono utilizzare giocando a Brancalonia.CIl Regno
+
+--- PAGINA 90 ---
+
+- 88 -
+Il Regno 
+Storia sbrigativa  del Regno
+La Notte dei Tempi
+Per quello che ne sanno sapienti, antiquari e professoroni, 
+le prime popolazioni che vissero negli attuali territori del 
+Regno erano comunità di selvatici di ogni tipo e variante, i 
+perduti ciclopi che erigevano fortezze e mura megalitiche, e 
+un esiguo numero di popolazioni civilizzate provenienti da 
+oltremare. Le coste occidentali del Regno, e in particolare 
+quelle di Torrigiana e Ausonia, erano punteggiate da inse -
+diamenti di Esperia, le coste orientali erano frequentate da 
+navigatori pelagici e quelle delle isole dai Sidoni. Queste an -
+tichissime popolazioni furono per lunghi secoli alternativa -
+mente in accordo e in conflitto tra loro, e la maggior parte 
+delle vicende più importanti ebbero luogo sulla costa o per 
+mare, dove si fronteggiavano le loro navi.
+Fu proprio in quel periodo, mentre i Pelagici assoggettavano 
+e sgominavano i ciclopi, i Sidoni conquistavano le terre dei 
+morganti a Zagara e Tasinnanta, e gli Esperiani si espandevano 
+lungo la costa di ponente, che l’unione degli stranieri con i 
+selvatici diede vita a nuove culture locali.
+La Fondazione di Plutonia
+Mille anni più tardi, le coste e i corsi dei fiumi della pe -
+nisola e delle isole vicine erano ormai contrade esplora -
+te e coltivate, e i territori delle popolazioni primigenie si 
+andavano riducendo sempre più, tra conflitti sanguinosi e 
+incessanti rivalità.
+Mentre a sudest si andavano diffondendo le colonie della 
+Magna Arcaia e a nordovest venivano innalzate le prime città 
+dei Porsenni, nel cuore dell’Alazia venne fondata Plutonia, 
+una federazione di villaggi unificati e governati da ambiziosi 
+combattenti. Nel corso dei secoli successivi, i T redici Re di 
+Plutonia espansero il loro dominio per tutto il territorio dell’at -
+tuale Alazia, per poi discendere verso la fertile Volturnia e la 
+raffinata Torrigiana. Terminate quelle prime annessioni, l’antica 
+monarchia si trasformò in Patriziato, e nei secoli successivi, 
+tramite diplomazia e guerre continue, Plutonia finì per asservire 
+l’intero Stivale, le tre isole maggiori e molti territori limitrofi.
+L ’Impero Draconiano
+Cresciute a dismisura in pochi secoli la ricchezza e l’in -
+fluenza di Plutonia, negli ultimi decenni del Patriziato la 
+penisola venne scossa da guerre civili, rivolte, assalti dall’e -
+sterno e intrighi di palazzo. A porre fine a questa fase venne 
+Dracone, discendente dell’antica casata reale plutoniana, 
+che assunse il controllo delle legioni e instaurò una ditta -
+tura durissima e intransigente. In pochi decenni, la crisi fu superata e Plutonia divenne la capitale di un impero 
+di nuovo in espansione. Con i discendenti di Dracone, 
+l’Impero raggiunse le coste di Meridiana, conquistò tutto 
+il Mare di Mezzo e annesse buona parte dell’Occasia, spin -
+gendosi fino a Gibralcanda e alla Soldania. Le leggi dra -
+coniane erano impostate sull’obbedienza e sul rigore più 
+assoluti, ma in quella fase l’Impero pacificò e unì territori 
+vastissimi, portando una crescita incommensurabile della 
+cultura, dell’alfabetizzazione, della scienza e della filosofia 
+di tutti i popoli assoggettati.
+La Caduta di Plutonia
+Circa mille anni or sono, schiacciata nuovamente da crisi 
+interminabili e dalla pressione di invasioni, guerre civili e 
+rivolte, Plutonia affrontò la sua peggior crisi dai tempi di 
+Dracone. Prima che un nuovo condottiero potesse ergersi 
+a restaurare i frammenti dell’Impero che stava andando in 
+pezzi, un terremoto di proporzioni apocalittiche aprì una 
+fenditura proprio nel punto in cui si trovava la sua immensa 
+capitale. In un giorno e una notte terrificanti, Plutonia spro -
+fondò nella profonda voragine in cui si trova ancora, causan -
+do la morte di milioni di abitanti e l’immediata dissoluzione 
+del potere imperiale. Allo stesso tempo, sul fondo dell’abisso 
+di rovine così creato emerse la Porta Eterna che connette il 
+mondo di superficie con l’Inferno. Questo evento impreve -
+dibile causò l’infestazione delle rovine di Plutonia di ogni 
+sorta di orrori, l’arrivo dei primi malebranche nel Regno e 
+il diffondersi a macchia d’olio del Credo del Calendario: se 
+l’Inferno esiste e il suo ingresso è a due passi dal mondo degli 
+uomini, allora bisogna riporre la propria fede nei Sette Cieli 
+e nel Padre Terno, da cui può provenire l’unica salvezza…
+La Guerra dei Mille Anni
+Dopo la Caduta di Plutonia, tutte le regioni e i territori 
+dell’Impero si rivoltarono e si dichiararono indipendenti, 
+oppure cercarono di sopraffarsi gli uni con le altre. Gli stori-
+ci e gli annalisti, che tengono il conto di Lunari e Calendari 
+partendo proprio dalla data della distruzione di Plutonia, 
+calcolano che da quel momento non sia trascorso neppure 
+un anno senza guerra, e dunque tale periodo di continua 
+devastazione viene chiamato la Guerra dei Mille Anni, che 
+si concluderà solamente quando un nuovo Re o Imperatore 
+porrà fine alle angosce del popolo.
+In realtà, molte delle provincie più lontane del Vecchio 
+Impero sono da tempo grossomodo pacificate e hanno dato 
+vita a nuovi regni, feudi e domini: l’Impero di Altomagna ne 
+
+--- PAGINA 91 ---
+
+- 89 -Storia sbrigativa del Regno 
+è l’esempio più illustre, ma la stessa cosa vale per la Soldania, 
+la Frangia, la Gran Brigantia, l’Illusitania e tante altre terre 
+così lontane che oggi gli abitanti del Regno neanche sanno 
+dove siano. Quello che è rimasto del tutto in preda a bande 
+armate, condottieri senza scrupoli, compagnie di ventura, 
+principi e aristocratici senza futuro è il Regno.
+La Guerra Segreta
+Sapienti e minchioni dibattono ancora sull’esistenza della 
+Guerra Segreta, un conflitto occulto che si dipanerebbe nel-
+le pieghe della storia da secoli, e forse dall’era dell’Impero 
+Draconiano.
+Questa battaglia senza tempo sarebbe combattuta princi -
+palmente da esseri soprannaturali e dai loro agenti terreni, 
+come guerlocchi, guiscardi, scaramanti e stregoni, tramite 
+poteri magici e influssi arcani. Quale che sia l’esito o lo scopo 
+della guerra, pare che alcuni eventi cataclismatici avvenuti in 
+passato nel Regno siano dovuti a essa: la Caduta di Plutonia, 
+la comparsa della Fumarea e la maledizione che affligge le 
+Contrade Dimenticate, quale che sia.
+Il Regno, oggi
+Le vicende risalenti a un secolo fa e alla forgiatura della Co-
+rona di Ferro hanno contribuito a rendere gli abitanti della 
+Penisola, di Zagara, Callista e Tasinnanta vagamente con-
+sapevoli di avere un passato e un presente comune. A oggi, 
+molte casate aristocratiche, principi decaduti e nobili di an-tica schiatta provano ad arrogarsi il prestigio di “legittimo 
+re del Regno”, ma le loro pretese raramente vanno oltre la 
+cerchia dei più fedeli sostenitori e la contrada di provenien-
+za, e l’ultimo dei pretendenti è morto la scorsa primavera, 
+senza aver concluso nulla.
+T utti i trucchi magici o mondani, le alleanze e gli accordi 
+diplomatici tentati per riunificare il Regno hanno finora fallito, 
+né è dato davvero di sapere se esista ancora un vero successore 
+degno di portare la corona che fu della Regina Menalda. E 
+tuttavia, la corsa alla Corona è sempre aperta, e si guarda a 
+ogni possibile pretendente con rinnovato interesse. Dopotutto, 
+avere un Regno coeso e unificato farebbe gola a tanti… Il 
+problema è solo capire chi questo successore debba essere!
+“Il Regno di Taglia è solo  
+un’espressione geografica!”
+-c lemente  pomponio ,  c ancelliere  d’altomagna - 
+
+
+--- PAGINA 92 ---
+
+- 90 -
+Il Regno 
+
+
+--- PAGINA 93 ---
+
+- 91 -Storia sbrigativa del Regno 
+
+
+--- PAGINA 94 ---
+
+- 92 -
+Il Regno 
+Secondo le leggende, la Quinotaria è il luogo dove una be-
+stia mitica chiamata Quinotauro si sarebbe trascinata fuori 
+dalle acque secoli or sono e si sarebbe accoppiata con la mo-
+glie del lontano Re Clodione d’Oltremonte, di cui gli attuali 
+sovrani di Quinotaria sarebbero lontani discendenti.
+La costa e le valli di questa regione sono punteggiate da anti-
+chissime rovine, simili a quelle ciclopiche che si trovano più a 
+sud lungo lo stivale, e la cui natura è sconosciuta. Le dicerie più 
+inquietanti su queste contrade parlano dei draci, un popolo di 
+uomini deformi e simili ad anfibi che vivrebbero lungo la costa, 
+dei gorgoni, esseri innaturali discendenti del Quinotauro, e 
+dei Segni, abominevoli deformazioni corporee che marchiereb -
+bero alcuni abitanti e conferirebbero loro poteri innominabili. 
+Nonostante non ne sia la capitale, la città più importante della 
+regione è Lungariva, gestita da ricchissimi mercanti.
+A volo di grifone
+La Quinotaria è una regione costiera di antica storia e passa-
+ta ricchezza, ma appare oggi come una terra dura, selvaggia e 
+per vasta parte abbandonata, con alcune strade e diverse città 
+mercantili di grande importanza, circondate tuttavia da co-
+ste selvagge, montagne scoscese e foreste oscure e pericolose.
+La Marca Marittima è la più nordoccidentale delle quattro 
+province che la costituiscono, e si sviluppa attorno alla Baia 
+Fonda: un susseguirsi di piccoli villaggi, torri d’avvistamento, 
+fortezze e fari sparsi su promontori, scogli e isolotti, costruiti 
+per difendersi dai predoni del mare. Qui la popolazione è 
+molto chiusa, legata a tradizioni segrete e a remote e ancestrali 
+religioni marinare. Queste genti, spesso relegate a condizione 
+servile o ridotte a manodopera di basso costo per le flotte di 
+Vetera e Lungariva, sono ancora oggi abbastanza diffuse nei 
+villaggi litoranei, nelle grotte costiere, sulle isole e nel cuore 
+di strette valli isolate. Non mancano eretici e pagani, che 
+adorano ancora il Padre degli Abissi e i suoi discendenti, e 
+gli inquietanti draci, i selvatici della regione, che posseggono 
+tratti anfibi invece che selvaggi. La città di Vetera, che si trova 
+al limite meridionale della Baia, ne rappresenta il centro prin -
+cipale ed è la storica capitale della regione.A sudovest della Marca Marittima si trova la provincia di 
+Vestria, completamente votata alle attività marinare, che fa 
+capo alla più recente città di Lungariva, una delle più ricche 
+del Regno.
+A est della Vestria e della Marca Marittima si trova poi l’O-
+stria, una provincia interna percorsa da strade e valichi che 
+conducono verso il Falcamonte, come il Giogo, che segna il 
+punto in cui Monti della Corona e Dorso del Titano si uni-
+scono, o il pericoloso Passo del T urchino. Queste contrade 
+sono punteggiate da castelli, covi di banditi e fortezze, che 
+appartengono a famiglie cadette imparentate con quelle di 
+Lungariva e delle regioni orientali.
+Infine, a sud, delimitata da alti monti cupi e dal corso della 
+Verna, vi è la Marca Guasta, o Vecchia Langa. Si tratta della 
+provincia più selvaggia e meno popolata, costituita da monti, 
+burroni e colline, e abitata soprattutto da minatori, fonditori, 
+cacciatori, pellicciai e conciatori. Sui monti vi sono alcune 
+miniere di ferro e d’argento che costituiscono la più impor-
+tante risorsa della regione, l’unico motivo del presidio militare 
+qui voluto dai principi mercanti di Vetera. Il feroce Barone 
+Rogerio, detto “Cane Nero”, la difende con pugno di ferro da 
+predoni e condottieri di Pianaverna e Torrigiana, e gestisce i 
+campi di lavoro dei Fossi, una delle peggiori prigioni del Regno.
+Lungariva, città di naviganti e albergatori
+Lungariva è un porto mercantile aperto verso l’estremo occi-
+dente, con contatti navali e politici continui con la Frangia, 
+Mortecarlo, Marsina e Gibralcanda. Grazie all’importanza 
+del porto, i principali investitori venuti a fondare la città 
+dalla più antica Vetera ottennero di poter erigere e gestire 
+importanti catene di Alberghi, che svolgevano al contempo 
+ruolo di locande, taverne, botteghe e cambiavalute. Le licen-
+ze per gli Alberghi divennero presto ristrettissime, un privi-
+legio raro, e gli Albergatori acquisirono ogni singola bettola 
+della città per poterla gestire come un impero economico, 
+dando vita a una classe dominante unica al mondo.Quinotaria
+o di rovine  ancestrali , m ostri  m arini  e gorgoni
+
+
+--- PAGINA 95 ---
+
+- 93 -Quinotaria
+Oggi gli Albergatori di Lungariva sono detti “Magnifici” e hanno il vero con-
+trollo della città e dei suoi traffici commerciali, eleggendo di volta in volta persino 
+i duchi che mantengano l’ordine e gestiscano gli affari militari. Per tradizione, 
+anche i palazzi di famiglia devono essere utilizzati come Alberghi, sebbene nelle 
+dimore più lussuose l’accesso sia possibile solo a principi stranieri e opulenti mer-
+canti d’oltremare. Grazie ai Magnifici e alla guida dell’attuale Duca Iorio Zani, le 
+banche e le flotte con lo stemma del Grifone di Lungariva sono le più potenti dei 
+mari occidentali e riversano in città ogni sorta di bene di lusso: armi altomanne, 
+ambra e pellicce brigantiane, spezie di sidonia ed essenze odorose di Zagara. Lun-
+go la pittoresca Via della Ripa si può acquistare ogni merce che si possa legitti-
+mamente desiderare, e nei vicoli più oscuri e reconditi alle spalle del porto si può 
+comprare anche ciò che legittimo non è… Nonostante i tumulti continui nella 
+regione e i conflitti tra gli Albergatori, Lungariva non è mai stata conquistata negli 
+ultimi mille anni, ed è difesa anche da terra da mura imprendibili e plotoni di 
+balestrieri e picchieri, ben addestrati e ben pagati.
+Lavoretti in Quinotaria
+Le potenti famiglie che affollano la città vecchia con Alberghi sempre più lussuosi 
+e ordiscono trame contorte, la mescolanza di genti di mille provenienze diverse, e 
+le spedizioni commerciali, esplorative e avventurose che prendono il via da Lun-
+gariva ne fanno un luogo di partenza, arrivo e residenza privilegiato per canaglie 
+in cerca di ingaggi remunerativi.
+Al contrario, per la mancanza di controlli e per la concreta possibilità di venire 
+ingaggiati su un veliero senza alcuna domanda, le vie e i moli di Vetera attirano 
+spesso ricercati, reietti, e disertori, in fuga dal passato o dalla giustizia, e questa 
+atmosfera di promiscuità e abbandono finisce per far convergere qui anche poeti, 
+cantori e artisti di ogni genere, che ne adorano la malinconica e suadente vita 
+notturna. Qui le canaglie possono imbarcarsi e far perdere le proprie tracce per 
+sempre, oppure venire a cercare qualche Infame in fuga, da vendere alle guardie. 
+Anche l’entroterra è luogo di raccolta per bande e cricche: qui si radunano molti 
+fedeli del Re di Denari e diverse armate di baroni e nobili di Falcamonte accorro-
+no nella contrada regolarmente per tentare di sgominarli. Qualunque sia l’incli-
+nazione o la fazione delle canaglie, tra il Falcamonte e l’Ostria c’è sempre di che 
+menare le mani. Perfino i Fossi della Marca Guasta sono un luogo ben frequentato 
+da canaglie di ogni genere: evadere o far evadere qualcuno da questa terribile pri-
+gione potrebbe essere l’inizio di molte avventure. Non manca infine in Quinotaria 
+la possibilità di mettere le mani su antiche conoscenze e artefatti portentosi: le 
+grotte e le rovine ancestrali che punteggiano la regione hanno ancora moltissimi 
+segreti da rivelare, spesso terrificanti.principali  alBerghi  di 
+lungariva
+Salvaghi: Famiglia di morganti sel -
+vatici di origine sidonia, noti per i 
+loro banchetti luculliani. I cuochi al 
+loro servizio sono considerati tra i 
+migliori del Regno. Il loro stemma è 
+un morgante nero in campo verde.
+D’Auria: Discendenti dalla leggenda -
+ria Auria, la Guerriera Dorata figlia 
+del mitico Re Clodione. Si conside -
+rano superiori agli altri e di più antica 
+nobiltà. Celebri come ammiragli e 
+capitani, alcuni di loro continuano la 
+tradizione di servire come cavalieri e 
+mercenari. Il loro stemma è un’aquila 
+nera in campo oro.
+Spinolla: Il nome deriva dalla spina 
+della botte. Possiedono sterminati 
+vigneti per tutta la Vestria e i vini 
+serviti nel loro Primo Albergo sono 
+inarrivabili. Il loro stemma è una 
+spina dorata in campo rosso.
+Felischi: Famiglia di antica schiatta 
+quinotara, altezzosa al pari dei D’ Au -
+ria e nota per lo zelo religioso e la 
+sbandierata severità morale. Sono 
+da sempre associati a diverse 
+famiglie di Gatti Lupeschi, che ne 
+rappresentano i più fidati emissari, 
+cortigiani e capitani. Il loro stemma 
+è il gatto azzurro in campo bianco, 
+il loro motto “Gatto e Libertà!” è un 
+celebre grido di battaglia che risuona 
+spesso per i Sette Mari e Mezzo.
+Embricati: La famiglia un tempo più 
+potente, e ben radicata a Vetera, oggi 
+in forte declino. Il suo capostipite 
+Guglielmo T esta di Maglio è ancora 
+oggi noto come esempio di valore in 
+battaglia, capacità strategica, acume 
+commerciale e competenza marit -
+tima. I suoi discendenti non sono 
+stati alla sua altezza e oggi il loro 
+Primo Albergo, situato sul Colle del 
+Castello, giace in stato di abbandono, 
+inutilizzato a causa di una presunta 
+infestazione di spettri, un problema 
+che nessuna Cricca di mercenari è 
+ancora riuscita a risolvere…

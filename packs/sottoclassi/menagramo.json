@@ -1,0 +1,68 @@
+{
+  "_id": "menagramo001",
+  "name": "Menagramo (Madama Sventura)",
+  "type": "subclass",
+  "img": "icons/commodities/treasure/medal-ribbon-gold.webp",
+  "system": {
+    "identifier": "menagramo",
+    "classIdentifier": "warlock",
+    "description": {
+      "value": "<p>I menagrami stringono patti con Madama Sventura, l'incarnazione della malasorte, per scagliare malocchi e miserie su chi li ostacola.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "advancement": [
+      {
+        "_id": "menagramo_lvl1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.menagramo_lista_incantesimi",
+            "Compendium.brancalonia-bigat.brancalonia-features.menagramo_iattura"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Malasorte",
+        "icon": "icons/magic/death/projectile-skull-pink.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "menagramo_lvl6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.menagramo_tocco"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Il Tocco della Malasorte",
+        "icon": "icons/magic/unholy/hand-claw-red.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "pact",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "_id": "combattimentoSporco001",
+  "name": "Combattimento Sporco",
+  "type": "journalEntry",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "page001",
+      "name": "Combattimento Sporco",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Combattimento Sporco</h1><p>Nelle strade di Brancalonia, l'onore è un lusso che pochi possono permettersi. Il combattimento sporco è spesso l'unica differenza tra la vita e la morte.</p><h2>Tecniche Sporche</h2><p>Tutti i personaggi possono usare queste tattiche una volta per combattimento:</p><ul><li><strong>Sabbia negli Occhi:</strong> Azione bonus per rendere accecato un nemico adiacente fino alla fine del suo prossimo turno (TS Costituzione CD 10 + bonus competenza per negare).</li><li><strong>Calcio Basso:</strong> Come parte di un attacco senz'armi, riduci la velocità del bersaglio a 0 fino alla fine del suo prossimo turno.</li><li><strong>Finta Sleale:</strong> Prima di attaccare, fingi di essere in difficoltà. Il prossimo attacco ha vantaggio ma subisci svantaggio alla CA fino al tuo prossimo turno.</li></ul><h2>Armi Improvvisate</h2><p>Qualsiasi oggetto può diventare un'arma nelle mani disperate:</p><ul><li><strong>Oggetti Leggeri:</strong> 1d4 danni, gittata 20/60 se lanciati</li><li><strong>Oggetti Pesanti:</strong> 1d6 danni, due mani richieste</li><li><strong>Oggetti Appuntiti:</strong> 1d4 danni perforanti</li><li><strong>Oggetti Contundenti:</strong> 1d4 danni contundenti</li></ul><h2>Risse da Taverna</h2><p>Regole speciali per i combattimenti non letali tipici di Brancalonia:</p><ul><li>Tutti i danni sono non letali (knockout invece di morte)</li><li>+2 bonus agli attacchi per chi usa armi improvvisate</li><li>L'ambiente può essere utilizzato: tavoli da rovesciare, boccali da lanciare, ecc.</li><li>Chi viene ridotto a 0 PF è stordito per 1d4 round invece di morire</li></ul><h2>Conseguenze del Combattimento Sporco</h2><p>Usare tattiche sleali può avere conseguenze sociali: alcuni PNG potrebbero perdere rispetto per personaggi che combattono \"senza onore\".</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

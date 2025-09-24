@@ -1,0 +1,87 @@
+{
+  "_id": "miracolaro_tirare_giu_i_santi",
+  "name": "Tirare Giù i Santi",
+  "type": "feat",
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Quando fallisci un tiro o vieni colpito da un attacco puoi usare la reazione per aggiungere il tuo modificatore di Saggezza al tiro effettuato oppure sottrarre lo stesso valore al tiro per colpire dell'attaccante. Puoi usare questa capacità un numero di volte pari al tuo modificatore di Saggezza (minimo una volta) e recuperi tutti gli usi al termine di un riposo lungo.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

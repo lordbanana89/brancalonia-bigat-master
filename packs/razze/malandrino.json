@@ -1,0 +1,204 @@
+{
+  "_id": "malandrino001",
+  "name": "Malandrino",
+  "type": "race",
+  "img": "icons/equipment/head/hat-feathered-red.webp",
+  "system": {
+    "movement": {
+      "walk": 30,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "senses": {},
+    "languages": {
+      "value": [
+        "common"
+      ],
+      "custom": ""
+    },
+    "description": {
+      "value": "<h2>Malandrino</h2><p>I Malandrini sono umani di Brancalonia che hanno abbracciato pienamente lo stile di vita vagabondo e avventuroso del regno. Sono furbi, adattabili e sempre pronti a cogliere al volo ogni opportunità che la vita gli presenta.</p><h3>Tratti Razziali</h3><ul><li><strong>Aumento Caratteristiche:</strong> Tre caratteristiche diverse a tua scelta aumentano di 1 ciascuna.</li><li><strong>Età:</strong> I Malandrini maturano e invecchiano come gli umani normali.</li><li><strong>Taglia:</strong> Media</li><li><strong>Velocità:</strong> La tua velocità base di camminata è di 9 metri.</li><li><strong>Versatilità:</strong> Ottieni competenza in un'abilità a tua scelta.</li><li><strong>Talento:</strong> Ottieni un talento a tua scelta al 1° livello.</li><li><strong>Fortuna del Vagabondo:</strong> Quando tiri un 1 naturale su un tiro di attacco, prova di caratteristica o tiro salvezza, puoi ritirare il dado e devi usare il nuovo risultato. Puoi usare questa capacità una volta, e la recuperi quando completi un riposo lungo.</li><li><strong>Adattabilità:</strong> Quando completi un riposo lungo in un insediamento, guadagni informazioni locali utili. Hai vantaggio alla prossima prova di Carisma (Persuasione) o Carisma (Inganno) fatta per interagire con i locali.</li><li><strong>Linguaggi:</strong> Parli, leggi e scrivi Comune e un linguaggio extra a tua scelta.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "advancement": [
+      {
+        "_id": "ability001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {},
+          "points": 3,
+          "cap": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 1,
+        "title": "Aumento Caratteristiche",
+        "icon": "icons/equipment/head/hat-feathered-red.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "size001",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 1,
+        "title": "Taglia",
+        "icon": "icons/equipment/head/hat-feathered-red.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "skill001",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "skills:*"
+          ],
+          "choices": [],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Versatilità",
+        "icon": "icons/equipment/head/hat-feathered-red.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "feat001",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "feat:*"
+          ],
+          "choices": [],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Talento Bonus",
+        "icon": "icons/equipment/head/hat-feathered-red.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "luck001",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "feature:vagabond-luck"
+          ],
+          "choices": [],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Fortuna del Vagabondo",
+        "icon": "icons/equipment/head/hat-feathered-red.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "adapt001",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "feature:adaptability"
+          ],
+          "choices": [],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Adattabilità",
+        "icon": "icons/equipment/head/hat-feathered-red.webp",
+        "classRestriction": ""
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

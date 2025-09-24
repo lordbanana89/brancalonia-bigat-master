@@ -1,0 +1,101 @@
+{
+  "_id": "ditaappiccicose001",
+  "name": "Dita Appiccicose",
+  "type": "spell",
+  "img": "icons/skills/social/theft-pickpocket-purse.webp",
+  "system": {
+    "description": {
+      "value": "<p>Le tue dita diventano magicamente agili e appiccicose, permettendoti di manipolare oggetti con destrezza soprannaturale.</p><p>Per la durata dell'incantesimo, ottieni i seguenti benefici:</p><ul><li>Vantaggio alle prove di Destrezza (Rapidità di Mano)</li><li>Puoi tentare di borseggiare o manipolare oggetti a distanza fino a 3 metri da te, come se li stessi toccando</li><li>Puoi eseguire azioni di interazione con oggetti come azione bonus invece che come azione</li><li>Gli oggetti leggeri (peso massimo 1 kg) che tocchi si attaccano magicamente alle tue dita - puoi decidere quando rilasciarli, e non possono essere strappati via da te a meno che tu non sia incapacitato</li><li>Hai vantaggio ai tiri per evitare di far cadere oggetti che stai impugnando</li></ul><p>Tuttavia, hai svantaggio alle prove per liberarti da prese o legami che coinvolgono le tue mani.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 2,
+    "school": "trs",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "un pezzetto di ragnatela e una goccia di miele",
+      "consumed": true,
+      "cost": 1,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

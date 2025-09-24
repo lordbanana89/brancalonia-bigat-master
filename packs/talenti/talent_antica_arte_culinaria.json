@@ -1,0 +1,87 @@
+{
+  "_id": "talent_antica_arte_culinaria",
+  "name": "Antica Arte Culinaria",
+  "type": "feat",
+  "img": "icons/tools/cooking/pot-steam.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Antica Arte Culinaria</h2>\n<p>Le ricette tramandate da nonna in nonna sono il tuo tesoro più prezioso.</p>\n<h3>Benefici</h3>\n<ul>\n  <li>Ottieni competenza negli utensili da cuoco, raddoppi il bonus di competenza nelle prove che li usano e ignori la qualità scadente di tali utensili.</li>\n  <li>Puoi usare gli utensili da cuoco come armi improvvisate di cui sei competente.</li>\n  <li>Durante un riposo breve puoi cucinare un pasto speciale: chi lo consuma ottiene punti ferita temporanei pari al tuo modificatore di Costituzione (minimo 1). Recuperi questa capacità dopo un riposo breve o lungo.</li>\n  <li>Se esamini cibi o bevande per 1 minuto puoi stabilire se sono avvelenati o portatori di malattie.</li>\n</ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

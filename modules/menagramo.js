@@ -1,0 +1,746 @@
+/**
+ * Sistema Menagramo (Sfortuna) per Brancalonia
+ * Completamente compatibile con dnd5e system per Foundry VTT v13
+ */
+
+export class MenagramoSystem {
+  constructor() {
+    // Livelli di menagramo con effetti conformi a dnd5e
+    this.menagramoLevels = {
+      minor: {
+        name: "Menagramo Minore",
+        icon: "icons/magic/death/skull-humanoid-crown-white.webp",
+        duration: "1d4",
+        effects: [
+          {
+            key: "flags.midi-qol.disadvantage.ability.check",
+            mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
+            value: "1",
+            priority: 20
+          }
+        ],
+        description: "Svantaggio su una prova di caratteristica a scelta del GM"
+      },
+      moderate: {
+        name: "Menagramo Moderato",
+        icon: "icons/magic/death/skull-humanoid-crown-yellow.webp",
+        duration: "2d4",
+        effects: [
+          {
+            key: "flags.midi-qol.disadvantage.attack.all",
+            mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
+            value: "1",
+            priority: 20
+          },
+          {
+            key: "flags.midi-qol.disadvantage.save.all",
+            mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
+            value: "1",
+            priority: 20
+          }
+        ],
+        description: "Svantaggio su tutti i tiri di attacco e salvezza"
+      },
+      major: {
+        name: "Menagramo Maggiore",
+        icon: "icons/magic/death/skull-humanoid-crown-red.webp",
+        duration: "3d4",
+        effects: [
+          {
+            key: "flags.midi-qol.disadvantage.all",
+            mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
+            value: "1",
+            priority: 20
+          },
+          {
+            key: "system.attributes.ac.bonus",
+            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+            value: "-2",
+            priority: 20
+          }
+        ],
+        description: "Svantaggio su TUTTI i tiri, -2 CA"
+      },
+      catastrophic: {
+        name: "Menagramo Catastrofico",
+        icon: "icons/magic/death/skull-humanoid-crown-black.webp",
+        duration: "1d6 + 1",
+        effects: [
+          {
+            key: "flags.midi-qol.disadvantage.all",
+            mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
+            value: "1",
+            priority: 20
+          },
+          {
+            key: "system.attributes.ac.bonus",
+            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+            value: "-4",
+            priority: 20
+          },
+          {
+            key: "system.attributes.movement.walk",
+            mode: CONST.ACTIVE_EFFECT_MODES.MULTIPLY,
+            value: "0.5",
+            priority: 20
+          }
+        ],
+        description: "Svantaggio su tutto, -4 CA, velocità dimezzata"
+      }
+    };
+
+    // Tabella eventi sfortunati
+    this.misfortuneEvents = [
+      // Eventi minori (1-10)
+      { range: [1, 2], event: "Inciampi e cadi prono", effect: "prone" },
+      { range: [3, 4], event: "La tua arma scivola di mano", effect: "disarm" },
+      { range: [5, 6], event: "Colpisci un alleato per sbaglio", effect: "friendlyFire" },
+      { range: [7, 8], event: "Ti distrai completamente", effect: "skipTurn" },
+      { range: [9, 10], event: "Rompi un pezzo d'equipaggiamento", effect: "breakItem" },
+
+      // Eventi moderati (11-15)
+      { range: [11, 12], event: "Attiri l'attenzione nemica", effect: "targeted" },
+      { range: [13, 14], event: "Perdi oggetti dalla borsa", effect: "loseGold" },
+      { range: [15, 15], event: "Ti ferisci da solo", effect: "selfDamage" },
+
+      // Eventi maggiori (16-19)
+      { range: [16, 17], event: "Crollo strutturale sopra di te", effect: "fallingDebris" },
+      { range: [18, 19], event: "Maledizione temporanea", effect: "curse" },
+
+      // Evento catastrofico (20)
+      { range: [20, 20], event: "Disastro totale!", effect: "disaster" }
+    ];
+
+    // Metodi per rimuovere il menagramo
+    this.removalMethods = {
+      blessing: {
+        name: "Benedizione Religiosa",
+        cost: 50,
+        check: { ability: "rel", dc: 15 },
+        description: "Un chierico benedice per rimuovere la sfortuna"
+      },
+      ritual: {
+        name: "Rituale di Purificazione",
+        cost: 100,
+        time: "1 ora",
+        description: "Complesso rituale per eliminare il menagramo"
+      },
+      goodDeed: {
+        name: "Atto di Bontà",
+        check: { ability: "cha", dc: 13 },
+        infamyLoss: 5,
+        description: "Un atto altruistico può spezzare la sfortuna"
+      },
+      offering: {
+        name: "Offerta agli Spiriti",
+        cost: "2d6 * 10",
+        description: "Offerta monetaria per placare gli spiriti"
+      },
+      quest: {
+        name: "Missione di Redenzione",
+        description: "Completa una missione per rimuovere il menagramo"
+      }
+    };
+
+    this._setupHooks();
+    this._setupMenagramoRolls();
+  }
+
+  _setupHooks() {
+    // Hook per applicare sfortuna ai tiri
+    Hooks.on("dnd5e.preRollAttack", (item, config) => {
+      const actor = item.parent;
+      if (this._hasMenagramo(actor)) {
+        this._applyMisfortune(actor, config, "attack");
+      }
+    });
+
+    Hooks.on("dnd5e.preRollAbilityTest", (actor, config, abilityId) => {
+      if (this._hasMenagramo(actor)) {
+        this._applyMisfortune(actor, config, "ability");
+      }
+    });
+
+    Hooks.on("dnd5e.preRollAbilitySave", (actor, config, abilityId) => {
+      if (this._hasMenagramo(actor)) {
+        this._applyMisfortune(actor, config, "save");
+      }
+    });
+
+    // Hook per eventi casuali di sfortuna
+    Hooks.on("updateCombat", (combat, update, options, userId) => {
+      if (update.turn === undefined) return;
+
+      const combatant = combat.combatant;
+      if (!combatant) return;
+
+      const actor = combatant.actor;
+      if (this._hasMenagramo(actor) && Math.random() < 0.1) {
+        this._triggerMisfortuneEvent(actor);
+      }
+    });
+
+    // Hook per 1 naturale sotto menagramo
+    Hooks.on("dnd5e.rollAttack", (item, roll, ammo) => {
+      const actor = item.parent;
+      if (!actor) return;
+
+      // Se tira 1 naturale con menagramo
+      if (roll.dice[0]?.results[0]?.result === 1 && this._hasMenagramo(actor)) {
+        this._criticalMisfortune(actor);
+      }
+    });
+  }
+
+  _setupMenagramoRolls() {
+    // Usa il sistema di modificatori standard invece di override della classe Roll
+    // I modificatori vengono applicati direttamente nei hooks
+  }
+
+  /**
+   * Applica menagramo a un attore
+   */
+  async applyMenagramo(actor, level = "minor", reason = "Sfortuna") {
+    const menagramoData = this.menagramoLevels[level];
+    if (!menagramoData) {
+      ui.notifications.error("Livello menagramo non valido!");
+      return;
+    }
+
+    // Rimuovi menagramo esistente
+    const existing = actor.effects.find(e => e.flags.brancalonia?.isMenagramo);
+    if (existing) {
+      await existing.delete();
+    }
+
+    // Calcola durata in round
+    const durationRoll = await new Roll(menagramoData.duration).evaluate();
+    const duration = durationRoll.total;
+
+    // Crea active effect conforme a dnd5e
+    const effectData = {
+      name: menagramoData.name,
+      icon: menagramoData.icon,
+      origin: actor.uuid,
+      duration: {
+        rounds: duration,
+        startRound: game.combat?.round,
+        startTurn: game.combat?.turn
+      },
+      changes: menagramoData.effects,
+      flags: {
+        brancalonia: {
+          isMenagramo: true,
+          menagramoLevel: level,
+          reason: reason
+        },
+        dnd5e: {
+          type: "curse"
+        }
+      },
+      statuses: ["menagramo"],
+      description: menagramoData.description
+    };
+
+    const effect = await actor.createEmbeddedDocuments("ActiveEffect", [effectData]);
+
+    // Messaggio drammatico
+    await ChatMessage.create({
+      content: `
+        <div class="brancalonia-menagramo">
+          <h3>☠️ ${menagramoData.name}! ☠️</h3>
+          <p><strong>${actor.name}</strong> è colpito dalla sfortuna!</p>
+          <p><em>Motivo: ${reason}</em></p>
+          <p>Durata: ${duration} round</p>
+          <p class="description">${menagramoData.description}</p>
+        </div>
+      `,
+      speaker: ChatMessage.getSpeaker({ actor }),
+      flags: { brancalonia: { menagramo: true } }
+    });
+
+    // Se catastrofico, aggiungi effetto visivo
+    if (level === "catastrophic") {
+      this._addCatastrophicVisual(actor);
+    }
+
+    return effect[0];
+  }
+
+  /**
+   * Rimuove il menagramo
+   */
+  async removeMenagramo(actor, method = null) {
+    const effect = actor.effects.find(e => e.flags.brancalonia?.isMenagramo);
+    if (!effect) {
+      ui.notifications.info("Nessun menagramo da rimuovere");
+      return;
+    }
+
+    if (method) {
+      const removal = this.removalMethods[method];
+      if (!removal) {
+        ui.notifications.error("Metodo di rimozione non valido!");
+        return;
+      }
+
+      // Applica costo o conseguenze
+      if (removal.cost) {
+        const cost = typeof removal.cost === "string"
+          ? (await new Roll(removal.cost).evaluate()).total
+          : removal.cost;
+
+        const currentMoney = actor.system.currency?.du || 0;
+        if (currentMoney < cost) {
+          ui.notifications.error(`Servono ${cost} ducati per questo metodo!`);
+          return;
+        }
+
+        await actor.update({
+          "system.currency.du": currentMoney - cost
+        });
+      }
+
+      if (removal.check) {
+        const roll = await actor.rollAbilityTest(removal.check.ability);
+        if (roll.total < removal.check.dc) {
+          ui.notifications.warn("Tentativo fallito! Il menagramo persiste.");
+          return;
+        }
+      }
+
+      if (removal.infamyLoss && actor.flags.brancalonia?.infamia) {
+        await actor.update({
+          "flags.brancalonia.infamia": Math.max(0,
+            actor.flags.brancalonia.infamia - removal.infamyLoss
+          )
+        });
+      }
+    }
+
+    // Rimuovi effetto
+    await effect.delete();
+
+    ChatMessage.create({
+      content: `
+        <div class="brancalonia-menagramo-removed">
+          <h3>✨ Menagramo Rimosso! ✨</h3>
+          <p><strong>${actor.name}</strong> è finalmente libero dalla sfortuna!</p>
+          ${method ? `<p>Metodo: ${this.removalMethods[method].name}</p>` : ''}
+        </div>
+      `,
+      speaker: ChatMessage.getSpeaker({ actor })
+    });
+  }
+
+  /**
+   * Controlla se l'attore ha menagramo
+   */
+  _hasMenagramo(actor) {
+    return actor?.effects.some(e => e.flags.brancalonia?.isMenagramo) || false;
+  }
+
+  /**
+   * Applica effetti sfortuna ai tiri
+   */
+  _applyMisfortune(actor, config, rollType) {
+    // Usa la funzione helper standard
+    applyMenagramoToRoll(actor, config);
+
+    const effect = actor.effects.find(e => e.flags.brancalonia?.isMenagramo);
+    if (!effect) return;
+
+    // Notifica sfortuna occasionale
+    if (Math.random() < 0.3) {
+      const messages = [
+        "Il menagramo interferisce!",
+        "La sfortuna colpisce!",
+        "Qualcosa va storto...",
+        "Il destino è contro di te!"
+      ];
+      ui.notifications.warn(messages[Math.floor(Math.random() * messages.length)]);
+    }
+  }
+
+  /**
+   * Attiva evento di sfortuna casuale
+   */
+  async _triggerMisfortuneEvent(actor) {
+    const roll = await new Roll("1d20").evaluate();
+    const event = this.misfortuneEvents.find(e =>
+      roll.total >= e.range[0] && roll.total <= e.range[1]
+    );
+
+    if (!event) return;
+
+    ChatMessage.create({
+      content: `
+        <div class="brancalonia-misfortune-event">
+          <h3>⚡ Evento Sfortunato! ⚡</h3>
+          <p><strong>${actor.name}:</strong> ${event.event}</p>
+        </div>
+      `,
+      speaker: ChatMessage.getSpeaker({ actor })
+    });
+
+    // Applica effetto
+    await this._applyMisfortuneEffect(actor, event.effect);
+  }
+
+  /**
+   * Applica effetto specifico di sfortuna
+   */
+  async _applyMisfortuneEffect(actor, effectType) {
+    switch (effectType) {
+      case "prone":
+        await actor.toggleStatusEffect("prone");
+        break;
+
+      case "disarm":
+        // Rimuovi arma equipaggiata
+        const weapon = actor.items.find(i =>
+          i.type === "weapon" && i.system.equipped
+        );
+        if (weapon) {
+          await weapon.update({ "system.equipped": false });
+          ui.notifications.info(`${weapon.name} cade a terra!`);
+        }
+        break;
+
+      case "friendlyFire":
+        // Colpisci alleato casuale
+        const allies = canvas.tokens.placeables.filter(t =>
+          t.actor && t.actor.id !== actor.id &&
+          t.disposition === CONST.TOKEN_DISPOSITIONS.FRIENDLY
+        );
+        if (allies.length > 0) {
+          const target = allies[Math.floor(Math.random() * allies.length)];
+          const damage = await new Roll("1d4").evaluate();
+          await target.actor.applyDamage(damage.total);
+          ChatMessage.create({
+            content: `${actor.name} colpisce ${target.name} per sbaglio! (${damage.total} danni)`
+          });
+        }
+        break;
+
+      case "skipTurn":
+        // Salta turno (se in combattimento)
+        if (game.combat) {
+          const combatant = game.combat.combatants.find(c => c.actor?.id === actor.id);
+          if (combatant) {
+            await combatant.update({ defeated: true });
+            setTimeout(() => combatant.update({ defeated: false }), 6000);
+          }
+        }
+        break;
+
+      case "breakItem":
+        // Rompi oggetto casuale
+        const items = actor.items.filter(i =>
+          i.type === "equipment" || i.type === "weapon" || i.type === "armor"
+        );
+        if (items.length > 0) {
+          const item = items[Math.floor(Math.random() * items.length)];
+          await item.update({
+            "flags.brancalonia.broken": true,
+            name: `${item.name} (Rotto)`
+          });
+          ui.notifications.warn(`${item.name} si è rotto!`);
+        }
+        break;
+
+      case "loseGold":
+        // Perdi oro
+        const goldLost = Math.floor(Math.random() * 20) + 1;
+        const currentGold = actor.system.currency?.du || 0;
+        await actor.update({
+          "system.currency.du": Math.max(0, currentGold - goldLost)
+        });
+        ui.notifications.info(`Persi ${goldLost} ducati!`);
+        break;
+
+      case "selfDamage":
+        // Danno a se stesso
+        const selfDamage = await new Roll("1d6").evaluate();
+        await actor.applyDamage(selfDamage.total);
+        break;
+
+      case "curse":
+        // Applica maledizione temporanea
+        await actor.createEmbeddedDocuments("ActiveEffect", [{
+          name: "Maledizione Temporanea",
+          icon: "icons/magic/death/hand-undead-skeleton-fire-green.webp",
+          duration: { rounds: 3 },
+          changes: [{
+            key: "system.attributes.ac.bonus",
+            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+            value: -2
+          }]
+        }]);
+        break;
+
+      case "disaster":
+        // Disastro totale!
+        await this.applyMenagramo(actor, "catastrophic", "Disastro totale!");
+        break;
+    }
+  }
+
+  /**
+   * Sfortuna critica su 1 naturale
+   */
+  async _criticalMisfortune(actor) {
+    const roll = await new Roll("1d6").evaluate();
+
+    const criticalEffects = [
+      "L'arma si rompe!",
+      "Colpisci te stesso!",
+      "Cadi prono e perdi l'arma!",
+      "Provochi un attacco di opportunità!",
+      "Il menagramo peggiora!",
+      "Attiri una maledizione!"
+    ];
+
+    const effect = criticalEffects[roll.total - 1];
+
+    ChatMessage.create({
+      content: `
+        <div class="brancalonia-critical-misfortune">
+          <h3>💀 SFORTUNA CRITICA! 💀</h3>
+          <p><strong>${actor.name}:</strong> ${effect}</p>
+        </div>
+      `,
+      speaker: ChatMessage.getSpeaker({ actor }),
+      flags: { brancalonia: { criticalMisfortune: true } }
+    });
+
+    // Applica effetto basato sul risultato
+    switch (roll.total) {
+      case 1: // Arma rotta
+        const weapon = actor.items.find(i => i.type === "weapon" && i.system.equipped);
+        if (weapon) {
+          await weapon.update({
+            "flags.brancalonia.broken": true,
+            name: `${weapon.name} (Rotta)`
+          });
+        }
+        break;
+      case 2: // Danno a se stesso
+        const damage = await new Roll("1d6").evaluate();
+        await actor.applyDamage(damage.total);
+        break;
+      case 3: // Prono + disarmato
+        await actor.toggleStatusEffect("prone");
+        const equippedWeapon = actor.items.find(i => i.type === "weapon" && i.system.equipped);
+        if (equippedWeapon) {
+          await equippedWeapon.update({ "system.equipped": false });
+        }
+        break;
+      case 5: // Peggiora menagramo
+        const currentLevel = actor.effects.find(e => e.flags.brancalonia?.isMenagramo)
+          ?.flags.brancalonia.menagramoLevel;
+        const levels = ["minor", "moderate", "major", "catastrophic"];
+        const nextLevel = levels[Math.min(levels.indexOf(currentLevel) + 1, 3)];
+        await this.applyMenagramo(actor, nextLevel, "Peggioramento critico!");
+        break;
+      case 6: // Maledizione
+        await this.applyMenagramo(actor, "moderate", "Maledizione critica!");
+        break;
+    }
+  }
+
+  /**
+   * Aggiunge effetto visivo per menagramo catastrofico
+   */
+  _addCatastrophicVisual(actor) {
+    const token = actor.getActiveTokens()[0];
+    if (!token) return;
+
+    // Aggiunge aura oscura al token
+    token.document.update({
+      light: {
+        dim: 5,
+        bright: 0,
+        color: "#800080",
+        animation: {
+          type: "pulse",
+          speed: 2,
+          intensity: 3
+        }
+      }
+    });
+  }
+
+  /**
+   * Crea macro per gestione menagramo
+   */
+  static createMenagramoMacros() {
+    const macros = [
+      {
+        name: "Applica Menagramo",
+        type: "script",
+        img: "icons/magic/death/skull-humanoid-crown-white.webp",
+        command: `
+          const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
+          if (actor) {
+            game.brancalonia.menagramo.showMenagramoDialog(actor);
+          } else {
+            ui.notifications.warn("Seleziona un personaggio!");
+          }
+        `
+      },
+      {
+        name: "Rimuovi Menagramo",
+        type: "script",
+        img: "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+        command: `
+          const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
+          if (actor) {
+            game.brancalonia.menagramo.showRemovalDialog(actor);
+          } else {
+            ui.notifications.warn("Seleziona un personaggio!");
+          }
+        `
+      }
+    ];
+
+    macros.forEach(macroData => {
+      Macro.create(macroData);
+    });
+
+    ui.notifications.info("Macro Menagramo create");
+  }
+
+  /**
+   * Mostra dialog per applicare menagramo
+   */
+  showMenagramoDialog(actor) {
+    const content = `
+      <form>
+        <div class="form-group">
+          <label>Livello Menagramo:</label>
+          <select id="menagramo-level">
+            <option value="minor">Minore (1d4 round)</option>
+            <option value="moderate">Moderato (2d4 round)</option>
+            <option value="major">Maggiore (3d4 round)</option>
+            <option value="catastrophic">Catastrofico (1d6+1 round)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Motivo:</label>
+          <input type="text" id="menagramo-reason" placeholder="Causa della sfortuna..." />
+        </div>
+      </form>
+    `;
+
+    new Dialog({
+      title: `Applica Menagramo - ${actor.name}`,
+      content: content,
+      buttons: {
+        apply: {
+          label: "Applica",
+          callback: html => {
+            const level = html.find('#menagramo-level').val();
+            const reason = html.find('#menagramo-reason').val() || "Sfortuna";
+            this.applyMenagramo(actor, level, reason);
+          }
+        },
+        cancel: {
+          label: "Annulla"
+        }
+      },
+      default: "apply"
+    }).render(true);
+  }
+
+  /**
+   * Mostra dialog per rimuovere menagramo
+   */
+  showRemovalDialog(actor) {
+    const content = `
+      <form>
+        <div class="form-group">
+          <label>Metodo di Rimozione:</label>
+          <select id="removal-method">
+            <option value="">Rimozione Gratuita (GM)</option>
+            ${Object.entries(this.removalMethods).map(([key, method]) => `
+              <option value="${key}">${method.name}</option>
+            `).join('')}
+          </select>
+        </div>
+        <div id="method-details"></div>
+      </form>
+    `;
+
+    const dialog = new Dialog({
+      title: `Rimuovi Menagramo - ${actor.name}`,
+      content: content,
+      buttons: {
+        remove: {
+          label: "Rimuovi",
+          callback: html => {
+            const method = html.find('#removal-method').val() || null;
+            this.removeMenagramo(actor, method);
+          }
+        },
+        cancel: {
+          label: "Annulla"
+        }
+      },
+      default: "remove",
+      render: html => {
+        html.find('#removal-method').change(ev => {
+          const method = ev.target.value;
+          if (method && this.removalMethods[method]) {
+            const details = this.removalMethods[method];
+            html.find('#method-details').html(`
+              <div class="form-group">
+                <p><strong>Descrizione:</strong> ${details.description}</p>
+                ${details.cost ? `<p><strong>Costo:</strong> ${details.cost} ducati</p>` : ''}
+                ${details.check ? `<p><strong>Prova:</strong> ${CONFIG.DND5E.abilities[details.check.ability].label} CD ${details.check.dc}</p>` : ''}
+                ${details.infamyLoss ? `<p><strong>Perdita Infamia:</strong> -${details.infamyLoss}</p>` : ''}
+              </div>
+            `);
+          } else {
+            html.find('#method-details').empty();
+          }
+        });
+      }
+    });
+
+    dialog.render(true);
+  }
+}
+
+/**
+ * Funzione helper per applicare modificatori menagramo usando API standard
+ */
+function applyMenagramoToRoll(actor, config) {
+  if (!actor?.effects.some(e => e.flags.brancalonia?.isMenagramo)) return;
+
+  const effect = actor.effects.find(e => e.flags.brancalonia?.isMenagramo);
+  const level = effect?.flags.brancalonia.menagramoLevel;
+
+  // Usa il sistema di modificatori standard di dnd5e
+  config.parts = config.parts || [];
+
+  // Aggiungi penalità basata sul livello di menagramo
+  if (level === "minor") {
+    // Solo svantaggio (già gestito da Active Effects)
+  } else if (level === "moderate") {
+    config.parts.push("-1d4[Menagramo]");
+  } else if (level === "major") {
+    config.parts.push("-1d6[Menagramo]");
+  } else if (level === "catastrophic") {
+    config.parts.push("-2d4[Menagramo]");
+  }
+
+  // Aggiungi flavor text
+  config.flavor = (config.flavor || "") + " (Menagramo)";
+
+  // 10% di probabilità di fallimento critico
+  if (Math.random() < 0.1 && (level === "major" || level === "catastrophic")) {
+    config.critical = 1; // Forza threshold critico a 1
+    ui.notifications.warn("Il Menagramo colpisce pesantemente!");
+  }
+}

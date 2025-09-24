@@ -1,0 +1,118 @@
+{
+  "_id": "spadaccioarrugginito001",
+  "name": "Spadaccio Arrugginito",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-runed-magic.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una spada lunga che ha visto giorni migliori. La lama è macchiata di ruggine e l'elsa è allentata.</p><p><strong>Scadente:</strong> Su un 1 naturale al tiro per colpire, l'arma si danneggia. Subisce -1 al colpire e ai danni finché non viene riparata (costo: 2,5 mo).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": "str",
+    "actionType": "mwak",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [["1d8", "slashing"]],
+      "versatile": "1d10"
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "weaponType": "martialM",
+    "baseItem": "longsword",
+    "properties": {
+      "ver": true,
+      "amm": false,
+      "fin": false,
+      "fir": false,
+      "foc": false,
+      "hvy": false,
+      "lgt": false,
+      "lod": false,
+      "rch": false,
+      "rel": false,
+      "ret": false,
+      "spc": false,
+      "thr": false,
+      "two": false,
+      "mgc": false
+    },
+    "proficient": 1,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

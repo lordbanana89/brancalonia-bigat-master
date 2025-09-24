@@ -1,0 +1,87 @@
+{
+  "_id": "attaccabrighe001",
+  "name": "Attaccabrighe",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Attaccabrighe</h2><p>Sei un esperto rissaiolo da taverna, abile nel combattimento a mani nude e con armi improvvisate.</p><p><strong>Prerequisiti:</strong> Forza 13 o superiore</p><h3>Benefici</h3><ul><li>I tuoi attacchi senz'armi infliggono 1d4 + modificatore di Forza danni contundenti invece di 1 + modificatore di Forza.</li><li>Sei competente con le armi improvvisate e puoi aggiungere il tuo bonus di competenza ai tiri di attacco con esse.</li><li>Quando colpisci una creatura con un attacco senz'armi o un'arma improvvisata, puoi spingere la creatura di 1,5 metri lontano da te se è di taglia Media o inferiore.</li><li>Hai vantaggio alle prove di Forza (Atletica) fatte per afferrare o spingere una creatura.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Forza 13",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

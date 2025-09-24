@@ -1,0 +1,30 @@
+<article class="brancalonia-dirty-job">
+  <header>
+    <h2>{{title}}</h2>
+    {{#if employer}}
+      <p class="job-employer">Committente: {{employer}}</p>
+    {{/if}}
+  </header>
+  {{#if reward}}
+    <p class="job-reward">Ricompensa: {{reward}}</p>
+  {{/if}}
+  {{#if risks}}
+    <h3>Rischi</h3>
+    <ul>
+      {{#each risks}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#if objectives}}
+    <h3>Obiettivi</h3>
+    <ul>
+      {{#each objectives}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#if description}}
+    <div class="job-description">{{{description}}}</div>
+  {{/if}}
+</article>

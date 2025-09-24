@@ -1,0 +1,47 @@
+{
+  "_id": "corruzioneTangenti001",
+  "name": "Corruzione e Tangenti",
+  "type": "journalEntry",
+  "img": "icons/commodities/currency/coins-assorted-mix.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "page001",
+      "name": "Corruzione e Tangenti",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Corruzione e Tangenti</h1><p>A Brancalonia, l'oro spesso parla più forte della legge. La corruzione permea tutti i livelli della società.</p><h2>Livelli di Corruzione</h2><h3>Guardie Cittadine</h3><ul><li><strong>Chiudere un Occhio:</strong> 1-5 ducati (piccoli crimini)</li><li><strong>Informazioni:</strong> 5-15 ducati (movimenti di pattuglie, prigionieri)</li><li><strong>Libertà:</strong> 25-100 ducati (rilascio da cella, cancellare accuse minori)</li></ul><h3>Funzionari Minori</h3><ul><li><strong>Documenti Falsi:</strong> 10-50 ducati (permessi di viaggio, lasciapassare)</li><li><strong>Licenze Commerciali:</strong> 25-100 ducati (autorizzazioni irregolari)</li><li><strong>Informazioni Riservate:</strong> 20-75 ducati (registri, indagini)</li></ul><h3>Magistrati e Giudici</h3><ul><li><strong>Sentenza Favorevole:</strong> 100-500 ducati (processi civili)</li><li><strong>Riduzione Pena:</strong> 200-1000 ducati (crimini gravi)</li><li><strong>Assoluzione:</strong> 500-2000 ducati (solo per crimini non capitale)</li></ul><h3>Nobili e Politici</h3><ul><li><strong>Protezione:</strong> 1000+ ducati (patrocinio politico)</li><li><strong>Titoli Nobiliari:</strong> 5000+ ducati (acquisire status)</li><li><strong>Monopoli Commerciali:</strong> 10000+ ducati (controllo mercati)</li></ul><h2>Meccaniche della Corruzione</h2><h3>Identificare Target</h3><p>Prova di Saggezza (Intuizione) per identificare funzionari corruttibili:</p><ul><li><strong>CD 10:</strong> Guardie ovviamente venali</li><li><strong>CD 15:</strong> Funzionari discretamente corrotti</li><li><strong>CD 20:</strong> Magistrati che accettano \"donazioni\"</li><li><strong>CD 25:</strong> Nobili che vendono favori</li></ul><h3>Approccio Iniziale</h3><p>Prova di Carisma (Persuasione o Inganno):</p><ul><li><strong>Successo:</strong> Il target è interessato, negoziazioni possibili</li><li><strong>Fallimento:</strong> Rifiuto, possibile offesa</li><li><strong>Fallimento Critico:</strong> Target ostile, possibili conseguenze legali</li></ul><h3>Negoziazione</h3><ul><li><strong>Offerta Base:</strong> Prezzo standard per il servizio</li><li><strong>Contrattazione:</strong> Prove opposte Persuasione vs Inganno</li><li><strong>Fattori Modificanti:</strong> Urgenza (+25%), rischio (+50%), relazioni personali (-25%)</li></ul><h2>Rischi e Conseguenze</h2><h3>Scoperta</h3><p>Ogni tentativo di corruzione comporta rischi:</p><ul><li><strong>1-2% per volta:</strong> Rischio di essere scoperti da terzi</li><li><strong>Conseguenze:</strong> Arresto, multa, perdita reputazione</li><li><strong>Ricatto:</strong> Il corrotto può diventare ricattabile</li></ul><h3>Double Cross</h3><p>I corrotti potrebbero tradire:</p><ul><li><strong>Intrappolati:</strong> Fingono di accettare per catturare il corruttore</li><li><strong>Avidità:</strong> Chiedono sempre più denaro</li><li><strong>Cambi di Alleanza:</strong> Vendono informazioni al miglior offerente</li></ul><h2>Reti di Corruzione</h2><h3>Il Sistema</h3><p>La corruzione spesso funziona a catena:</p><ul><li><strong>Mediatori:</strong> Intermediari che organizzano tangenti</li><li><strong>Quote Percentuali:</strong> Ogni livello prende la sua parte</li><li><strong>Protezione:</strong> Chi paga è protetto dalle indagini</li></ul><h3>Famiglie Influenti</h3><ul><li><strong>I Visconti:</strong> Controllano il porto, tangenti su importazioni</li><li><strong>Casa Grimaldi:</strong> Monopolio giudiziale, sentenze su commissione</li><li><strong>Mercanti del Carbone:</strong> Corruzione industriale, permessi ambientali</li></ul><h2>Forme Alternative di Pagamento</h2><h3>Servizi</h3><ul><li><strong>Favori Personali:</strong> Risolvere problemi del corrotto</li><li><strong>Informazioni:</strong> Segreti utilizzabili come ricatto</li><li><strong>Protezione:</strong> Servizi di guardia del corpo</li></ul><h3>Oggetti</h3><ul><li><strong>Oggetti Magici:</strong> Particolarmente appetibili</li><li><strong>Opere d'Arte:</strong> Facili da nascondere, di valore</li><li><strong>Armi Rare:</strong> Per collezionisti o uso personale</li></ul><h2>Anti-Corruzione</h2><h3>Inquisitori</h3><p>Agenti speciali che investigano la corruzione:</p><ul><li><strong>Metodi:</strong> Infiltrazione, test di integrità</li><li><strong>Punizioni:</strong> Destituzione, multa, prigione</li><li><strong>Corruttibilità:</strong> Anche loro hanno un prezzo...</li></ul><h3>Magistrati Incorruttibili</h3><p>Rari funzionari che non accettano tangenti:</p><ul><li><strong>Identificazione:</strong> CD 20 Intuizione</li><li><strong>Conseguenze:</strong> Arresto immediato se tentate corruzione</li><li><strong>Rispetto:</strong> Guadagnano stima ma vivono pericolosamente</li></ul><h2>Economia della Corruzione</h2><h3>Inflazione Morale</h3><p>Prezzi che aumentano con:</p><ul><li><strong>Campagne Anti-corruzione:</strong> +100% temporaneo</li><li><strong>Cambi di Governo:</strong> Reset prezzi, nuove reti</li><li><strong>Guerra:</strong> Disperazione aumenta disponibilità</li></ul><h3>Investimenti a Lungo Termine</h3><ul><li><strong>Funzionari Personali:</strong> Stipendi regolari per lealtà</li><li><strong>Reti di Informatori:</strong> Pagamenti costanti per intelligence</li><li><strong>Protezione Politica:</strong> Assicurazione contro persecuzioni</li></ul><h2>Tabella Prezzi Tangenti</h2><table><thead><tr><th>Servizio</th><th>Prezzo Base</th><th>Note</th></tr></thead><tbody><tr><td>Ignorare furto minore</td><td>1-3 ducati</td><td>Solo guardie locali</td></tr><tr><td>Passaggio segreto</td><td>5-15 ducati</td><td>Attraversare controlli</td></tr><tr><td>Informazioni sui prigionieri</td><td>10-25 ducati</td><td>Carcerieri e guardie</td></tr><tr><td>Documenti falsi</td><td>25-50 ducati</td><td>Buona qualità</td></tr><tr><td>Licenza commerciale irregolare</td><td>50-100 ducati</td><td>Funzionari municipali</td></tr><tr><td>Processo favorevole</td><td>200-500 ducati</td><td>Crimini non capitali</td></tr><tr><td>Protezione politica</td><td>1000+ ducati</td><td>Nobili influenti</td></tr></tbody></table>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

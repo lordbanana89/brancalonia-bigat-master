@@ -1,0 +1,47 @@
+{
+  "_id": "equipaggiamentoScadente001",
+  "name": "Equipaggiamento Scadente",
+  "type": "journalEntry",
+  "img": "icons/weapons/swords/sword-worn-rusted-red.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "page001",
+      "name": "Equipaggiamento Scadente",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Equipaggiamento Scadente</h1><p>Non tutto l'equipaggiamento di Brancalonia è di prima qualità. Spesso i vagabondi devono accontentarsi di armi e armature di seconda mano.</p><h2>Armi Scadenti</h2><p>Le armi scadenti sono danneggiate, maltenute o di qualità inferiore:</p><ul><li><strong>Proprietà Scadente:</strong> Su un 1 naturale al tiro per colpire, l'arma si danneggia.</li><li><strong>Arma Danneggiata:</strong> -1 al tiro per colpire e ai danni finché non viene riparata.</li><li><strong>Costo di Riparazione:</strong> Metà del valore originale dell'arma.</li><li><strong>Tempo di Riparazione:</strong> 1 giorno per ogni 10 mo di costo.</li></ul><h2>Armature Raffazzonate</h2><p>Le armature raffazzonate sono ricucite, rappezzate o improvvisate:</p><ul><li><strong>Proprietà Raffazzonata:</strong> Quando subisci un colpo critico, tira 1d6.</li><li><strong>Risultato 1-2:</strong> L'armatura perde 1 CA permanentemente.</li><li><strong>Riparazione:</strong> Costo pari a 1/4 del valore originale, tempo 1 giorno.</li></ul><h2>Identificare Equipaggiamento Scadente</h2><p>Una prova di Intelligenza (Indagare) CD 12 rivela se un pezzo di equipaggiamento è scadente prima dell'acquisto.</p><h2>Prezzi Ridotti</h2><p>L'equipaggiamento scadente costa il 50-75% del prezzo normale, ma i rischi sono evidenti.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

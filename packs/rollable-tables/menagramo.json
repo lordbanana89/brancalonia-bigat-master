@@ -1,0 +1,241 @@
+{
+  "_id": "menagramo",
+  "name": "Tabella del Menagramo",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Tabella del Menagramo",
+  "results": [
+    {
+      "_id": "menagramo_0",
+      "type": 0,
+      "text": "Scivoli su escrementi. Svantaggio alle prove di Destrezza per 1 ora.",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_1",
+      "type": 0,
+      "text": "Ti cade addosso un vaso da notte pieno. Subisci 1d4 danni e puzzi terribilmente.",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_2",
+      "type": 0,
+      "text": "Inciampi e cadi rovinosamente. Prono e subisci 1d6 danni contundenti.",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_3",
+      "type": 0,
+      "text": "Un corvo (o piccione) ti defeca in testa. Svantaggio alle prove di Carisma per 1 ora.",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_4",
+      "type": 0,
+      "text": "Perdi 1d10 monete che cadono in una fogna o pozzo.",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_5",
+      "type": 0,
+      "text": "La tua arma si rompe al prossimo 1 naturale su un tiro per colpire.",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_6",
+      "type": 0,
+      "text": "I tuoi vestiti si strappano vistosamente. -1 CA fino a riparazione.",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_7",
+      "type": 0,
+      "text": "Vieni morso da un cane rabbioso. Salvezza Costituzione CD 12 o contrai la rabbia.",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_8",
+      "type": 0,
+      "text": "Mangi cibo avariato. Sei avvelenato per 1 ora.",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_9",
+      "type": 0,
+      "text": "Il tuo cavallo/mulo si imbizzarrisce e scappa via.",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_10",
+      "type": 0,
+      "text": "Attiri l'attenzione indesiderata delle guardie. +1 Infamia.",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_11",
+      "type": 0,
+      "text": "Bestemmi involontariamente davanti a un religioso. Problemi con la Chiesa.",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_12",
+      "type": 0,
+      "text": "Perdi un oggetto importante che cade in un pozzo o canale.",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_13",
+      "type": 0,
+      "text": "Ti rubano la borsa con metà delle tue monete.",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_14",
+      "type": 0,
+      "text": "Un ubriaco molesto ti sfida a duello per futili motivi.",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_15",
+      "type": 0,
+      "text": "Vieni scambiato per un criminale ricercato dalle guardie.",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_16",
+      "type": 0,
+      "text": "Inizia a piovere solo su di te per 1 ora (effetto magico).",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_17",
+      "type": 0,
+      "text": "Tutti i tuoi tiri hanno -1 per la prossima ora.",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_18",
+      "type": 0,
+      "text": "Attiri uno sciame di vespe inferocite. Subisci 2d4 danni.",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "menagramo_19",
+      "type": 0,
+      "text": "Doppio Menagramo! Tira due volte e applica entrambi gli effetti.",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false
+    }
+  ],
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  }
+}

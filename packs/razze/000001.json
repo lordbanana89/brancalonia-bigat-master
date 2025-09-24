@@ -1,0 +1,160 @@
+{
+  "_id": "malebranche001",
+  "name": "Malebranche",
+  "type": "race",
+  "img": "icons/creatures/mammals/goat-horned-red.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Malebranche</h2><p>I Malebranche sono diavoli minori del Regno di Taglia, creature dall'aspetto demoniaco con corna ricurve, zoccoli caprini e code biforcute.</p><h3>Tratti Razziali</h3><ul><li><strong>Aumento Caratteristiche:</strong> Il tuo punteggio di Carisma aumenta di 2 e un'altra caratteristica a tua scelta aumenta di 1.</li><li><strong>Età:</strong> I Malebranche maturano come gli umani ma vivono fino a 150 anni.</li><li><strong>Taglia:</strong> Media</li><li><strong>Velocità:</strong> 9 metri</li><li><strong>Scurovisione:</strong> Puoi vedere nell'oscurità entro 18 metri come se fosse luce fioca.</li><li><strong>Resistenza Infernale:</strong> Hai resistenza ai danni da fuoco.</li><li><strong>Corna:</strong> Le tue corna sono un'arma naturale con cui puoi portare attacchi senz'armi. Se colpisci, infliggi 1d4 + modificatore di Forza danni contundenti.</li><li><strong>Linguaggi:</strong> Parli, leggi e scrivi Comune e Infernale.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "advancement": [
+      {
+        "_id": "ability001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {
+            "cha": 2
+          },
+          "points": 1,
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 1,
+        "title": "Ability Score Improvement",
+        "icon": "icons/creatures/mammals/goat-horned-red.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "size001",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 1,
+        "title": "Size",
+        "icon": "icons/creatures/mammals/goat-horned-red.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "darkvision001",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Darkvision",
+        "icon": "icons/creatures/mammals/goat-horned-red.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "resistance001",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Infernal Resistance",
+        "icon": "icons/creatures/mammals/goat-horned-red.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "horns001",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Horns",
+        "icon": "icons/creatures/mammals/goat-horned-red.webp",
+        "classRestriction": ""
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

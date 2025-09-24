@@ -1,0 +1,68 @@
+{
+  "_id": "scaramante001",
+  "name": "Scaramante",
+  "type": "subclass",
+  "img": "icons/commodities/treasure/medal-ribbon-gold.webp",
+  "system": {
+    "identifier": "scaramante",
+    "classIdentifier": "sorcerer",
+    "description": {
+      "value": "<p>Gli scaramanti manipolano la Fandonia e la sorte, intrecciando scongiuri, superstizioni e rituali protettivi.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "advancement": [
+      {
+        "_id": "scaramante_lvl1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.scaramante_magia_protezione",
+            "Compendium.brancalonia-bigat.brancalonia-features.scaramante_protetto_fato"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Magia di Protezione",
+        "icon": "icons/magic/control/energy-stream-purple.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "scaramante_lvl6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.scaramante_rituale"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Rituale Scaramantico",
+        "icon": "icons/magic/defensive/illusion-evasion-spiral-blue.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "BRANCALONIA": {
+    "Title": "Brancalonia",
+    "Description": "Il Regno di Taglia",
+    "Settings": {
+      "InfamiaTracker": "Tracciatore Infamia",
+      "InfamiaTrackerHint": "Abilita il sistema di tracciamento dell'infamia per i personaggi",
+      "BotteOrbi": "Regole Botte da Orbi",
+      "BotteOrbiHint": "Abilita le regole per i combattimenti di massa",
+      "OggettiScadenti": "Oggetti Scadenti",
+      "OggettiScadentiHint": "Abilita le regole per equipaggiamento di scarsa qualità",
+      "CompagniaVentura": "Sistema Compagnia di Ventura",
+      "CompagniaVenturaHint": "Abilita la gestione delle compagnie mercenarie"
+    },
+    "Race": {
+      "Malebranche": "Malebranche",
+      "Morgante": "Morgante",
+      "Marionetta": "Marionetta",
+      "Pantegana": "Pantegana",
+      "Giffonita": "Giffonita",
+      "Silfo": "Silfo",
+      "Malandrino": "Malandrino"
+    },
+    "Subclass": {
+      "CapitanoVentura": "Capitano di Ventura",
+      "Tagliagole": "Tagliagole",
+      "Benedicente": "Benedicente",
+      "Fattucchiera": "Fattucchiera",
+      "Giullare": "Giullare Errante",
+      "Rissaiolo": "Rissaiolo"
+    },
+    "Equipment": {
+      "Scadente": "Scadente",
+      "Archibugio": "Archibugio",
+      "Mazzafrusto": "Mazzafrusto",
+      "Stiletto": "Stiletto",
+      "PozioneDubbia": "Pozione Dubbia",
+      "AmulettoMenagramo": "Amuleto del Menagramo",
+      "Ducato": "Ducato",
+      "VinoTaverna": "Vino della Taverna"
+    },
+    "Feat": {
+      "BaroProfessionista": "Baro Professionista",
+      "Rissaiolo": "Rissaiolo",
+      "Linguacciuto": "Linguacciuto",
+      "StomacoFerro": "Stomaco di Ferro",
+      "FortunaMenagramo": "Fortuna del Menagramo",
+      "ColpoBasso": "Colpo Basso",
+      "Maledetto": "Maledetto",
+      "VeteranoCompagnie": "Veterano delle Compagnie"
+    },
+    "Rules": {
+      "BotteOrbi": "Botte da Orbi",
+      "SistemaInfamia": "Sistema Infamia",
+      "OggettiScadenti": "Oggetti Scadenti",
+      "RisseTaverna": "Risse da Taverna",
+      "CompagniaVentura": "Compagnia di Ventura",
+      "PreseCombattimento": "Prese di Combattimento",
+      "BackgroundBrancaloniani": "Background Brancaloniani"
+    },
+    "UI": {
+      "Infamia": "Infamia",
+      "Notorieta": "Notorietà",
+      "Ducati": "Ducati",
+      "Compagnia": "Compagnia",
+      "Grado": "Grado",
+      "Capitano": "Capitano",
+      "Luogotenente": "Luogotenente",
+      "Sergente": "Sergente",
+      "Soldato": "Soldato",
+      "Recluta": "Recluta"
+    },
+    "Chat": {
+      "BotteOrbiInizio": "{name} inizia una Botte da Orbi!",
+      "OggettoRotto": "Il tuo {item} si è rotto!",
+      "InfamiaAumentata": "La tua infamia aumenta di {value}!",
+      "InfamiaDiminuita": "La tua infamia diminuisce di {value}!",
+      "PresaEseguita": "{attacker} esegue una {presa} su {target}!",
+      "RissaIniziata": "È scoppiata una rissa nella taverna!"
+    },
+    "Dialog": {
+      "ConfermaRottura": "L'oggetto {item} si romperà. Continuare?",
+      "ScegliPresa": "Scegli una Presa di Combattimento",
+      "TiraInfamia": "Tira per l'Infamia",
+      "CreaCompagnia": "Crea una Compagnia di Ventura"
+    },
+    "Tooltip": {
+      "Scadente": "Questo oggetto è scadente: -1 ai tiri, può rompersi con 1 naturale",
+      "Infamia": "Il tuo livello di infamia nel Regno di Taglia",
+      "Ducato": "La moneta standard di Brancalonia",
+      "Compagnia": "La tua compagnia di ventura"
+    }
+  }
+}

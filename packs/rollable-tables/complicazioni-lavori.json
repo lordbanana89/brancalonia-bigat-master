@@ -1,0 +1,131 @@
+{
+  "_id": "complicazioni-lavori",
+  "name": "Complicazioni Lavori Sporchi",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Complicazioni Lavori Sporchi",
+  "results": [
+    {
+      "_id": "complicazioni-lavori_0",
+      "type": 0,
+      "text": "Il cliente è in realtà una spia delle guardie che vi tende una trappola.",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "complicazioni-lavori_1",
+      "type": 0,
+      "text": "Il bersaglio è segretamente protetto da una fazione potente.",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "complicazioni-lavori_2",
+      "type": 0,
+      "text": "C'è già una taglia sulla vostra testa per crimini passati.",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "complicazioni-lavori_3",
+      "type": 0,
+      "text": "Un'altra banda di criminali sta cercando lo stesso obiettivo.",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "complicazioni-lavori_4",
+      "type": 0,
+      "text": "Le informazioni fornite sono completamente sbagliate.",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "complicazioni-lavori_5",
+      "type": 0,
+      "text": "È una trappola! Il cliente vuole eliminarvi.",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "complicazioni-lavori_6",
+      "type": 0,
+      "text": "Il cliente non ha intenzione di pagare il compenso pattuito.",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "complicazioni-lavori_7",
+      "type": 0,
+      "text": "Le guardie sono già state allertate della vostra presenza.",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "complicazioni-lavori_8",
+      "type": 0,
+      "text": "Un testimone inaspettato complica l'operazione.",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "complicazioni-lavori_9",
+      "type": 0,
+      "text": "Il maltempo rende tutto più difficile e pericoloso.",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false
+    }
+  ],
+  "formula": "1d10",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 200,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  }
+}

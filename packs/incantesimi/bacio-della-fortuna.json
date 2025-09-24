@@ -1,0 +1,101 @@
+{
+  "_id": "baciodellafortuna001",
+  "name": "Bacio della Fortuna",
+  "type": "spell",
+  "img": "icons/magic/symbols/question-mark-stone-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Benedici una creatura con un bacio magico (simbolico) che porta fortuna straordinaria per un breve periodo.</p><p>Tocchi una creatura consenziente e la benedici con fortuna. Per la durata dell'incantesimo, ogni volta che il bersaglio tira un d20 per un tiro di attacco, prova di caratteristica o tiro salvezza, può scegliere di tirare un d20 aggiuntivo e usare il risultato più alto.</p><p>Questa capacità può essere usata un numero di volte pari al tuo modificatore di caratteristica da incantatore (minimo 1), dopo di che l'incantesimo termina.</p><p>Inoltre, se il bersaglio ottiene un 20 naturale durante la durata dell'incantesimo, recupera uno slot incantesimo del livello più basso che ha usato (se ne ha).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "div",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "una moneta d'oro fortunata che è stata vinta in una scommessa",
+      "consumed": false,
+      "cost": 1,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "_id": "talismanoPortafortuna001",
+  "name": "Talismano Portafortuna",
+  "type": "equipment",
+  "img": "icons/equipment/neck/amulet-bone-fangs.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un ciondolo con simboli scaramantici di dubbia origine. Potrebbe portare fortuna... o sfortuna.</p><p><strong>Fortuna Incerta:</strong> Una volta al giorno puoi ritirare un dado, ma devi prendere il secondo risultato anche se peggiore.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "quantity": 1,
+    "weight": 0.1,
+    "price": {
+      "value": 15,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "activation": {
+      "type": "special",
+      "cost": 0,
+      "condition": "Dopo aver tirato un dado"
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "day",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": 1
+    },
+    "ability": "",
+    "actionType": "other",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "baseItem": "",
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "stealth": false,
+    "proficient": 1,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "_id": "frate001",
+  "name": "Frate (Via della Condotta Manesca)",
+  "type": "subclass",
+  "img": "icons/commodities/treasure/medal-ribbon-gold.webp",
+  "system": {
+    "identifier": "frate",
+    "classIdentifier": "monk",
+    "description": {
+      "value": "<p>I frati menaniti portano il credo nelle strade e non esitano a usare pugni benedetti per difendere il prossimo. La condotta manesca li rende maestri di colpi rapidi e spietati.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "advancement": [
+      {
+        "_id": "frate_lvl3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.frate_porgi_altra_guancia"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Porgi l'Altra Guancia",
+        "icon": "icons/magic/life/heart-cross-hands-purple.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "frate_lvl6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.frate_tecnica_mano"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Tecnica della Mano di Ferro e di Piuma",
+        "icon": "icons/skills/melee/unarmed-punch-fist-brown.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

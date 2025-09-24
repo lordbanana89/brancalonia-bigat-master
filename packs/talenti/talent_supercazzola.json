@@ -1,0 +1,87 @@
+{
+  "_id": "talent_supercazzola",
+  "name": "Supercazzola",
+  "type": "feat",
+  "img": "icons/magic/control/tongue-coil-green.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Supercazzola</h2>\n<p><em>Prerequisito: Carisma 13 o superiore</em></p>\n<h3>Benefici</h3>\n<ul>\n  <li>Ottieni competenza prematurata per due, anche un pochino antani in prefettura.</li>\n  <li>Ottieni 2 dadi di supercazzola (d4). Recuperi tutti i dadi spesi quando completi un riposo breve o lungo.</li>\n  <li>Come reazione, quando una creatura entro 18 metri effettua un tiro per colpire, una prova di caratteristica o un tiro per i danni, puoi spendere un dado di supercazzola e sottrarre il risultato dal tiro. Devi farlo prima che il Condottiero dichiari l'esito. La creatura è immune se non può sentirti o se non può essere affascinata.</li>\n</ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

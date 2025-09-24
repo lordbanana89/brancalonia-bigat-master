@@ -1,0 +1,67 @@
+{
+  "_id": "brigante001",
+  "name": "Brigante",
+  "type": "subclass",
+  "img": "icons/commodities/treasure/medal-ribbon-gold.webp",
+  "system": {
+    "identifier": "brigante",
+    "classIdentifier": "rogue",
+    "description": {
+      "value": "<p>I briganti sono ladri di strada e di campagna che tendono agguati a viandanti e convogli. Conoscono la natura e sanno scomparire fra boschi e colline.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "advancement": [
+      {
+        "_id": "brigante_lvl3a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.brigante_brigantaggio"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Brigantaggio",
+        "icon": "icons/skills/movement/feet-sprint-green.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "brigante_lvl3b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.brigante_arte_imboscata"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Arte dell'Imboscata",
+        "icon": "icons/skills/movement/arrow-pocket-red.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

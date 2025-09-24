@@ -1,0 +1,83 @@
+{
+  "_id": "guiscardo001",
+  "name": "Guiscardo (Tradizione Arcana)",
+  "type": "subclass",
+  "img": "icons/commodities/treasure/medal-ribbon-gold.webp",
+  "system": {
+    "identifier": "guiscardo",
+    "classIdentifier": "wizard",
+    "description": {
+      "value": "<p>I guiscardi sono maghi cacciatori di reliquie che vivono di spedizioni, imbrogli e scoperte. Le loro conoscenze li rendono esperti di manufatti e chincaglierie magiche.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "advancement": [
+      {
+        "_id": "guiscardo_lvl1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.guiscardo_esperto_oggetti"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Esperto di Oggetti Magici",
+        "icon": "icons/magic/light/explosion-star-yellow.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "guiscardo_lvl2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.guiscardo_cercatore",
+            "Compendium.brancalonia-bigat.brancalonia-features.guiscardo_chincaglieria"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Cercatore di Tesori",
+        "icon": "icons/containers/chest/chest-studded-purple.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "guiscardo_lvl6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.guiscardo_maestria"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Maestria Fandonica",
+        "icon": "icons/magic/control/control-hand-energy-green.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

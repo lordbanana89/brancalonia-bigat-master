@@ -1,0 +1,131 @@
+{
+  "_id": "malattie-brancalonia",
+  "name": "Malattie del Regno di Taglia",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Malattie del Regno di Taglia",
+  "results": [
+    {
+      "_id": "malattie-brancalonia_0",
+      "type": 0,
+      "text": "Peste Nera - Salvezza Costituzione CD 15, -2 Costituzione/giorno",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "malattie-brancalonia_1",
+      "type": 0,
+      "text": "Febbre del Goblin - Allucinazioni e -1 Intelligenza/giorno",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "malattie-brancalonia_2",
+      "type": 0,
+      "text": "Putridume - Ferite non guariscono naturalmente",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "malattie-brancalonia_3",
+      "type": 0,
+      "text": "Rabbia - Attacchi selvaggi incontrollati",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "malattie-brancalonia_4",
+      "type": 0,
+      "text": "Scaglie di Drago - Pelle si squama, -2 Carisma",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "malattie-brancalonia_5",
+      "type": 0,
+      "text": "Tosse del Minatore - -10 piedi movimento, tossisce sangue",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "malattie-brancalonia_6",
+      "type": 0,
+      "text": "Maledizione del Lupo - Licantropia minore",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "malattie-brancalonia_7",
+      "type": 0,
+      "text": "Febbre Palustre - Esausto, non recupera con riposo",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "malattie-brancalonia_8",
+      "type": 0,
+      "text": "Lebbra - Parti del corpo diventano insensibili",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "malattie-brancalonia_9",
+      "type": 0,
+      "text": "Peste del Menagramo - Sfortuna estrema, svantaggio a tutto",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false
+    }
+  ],
+  "formula": "1d10",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 1200,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  }
+}

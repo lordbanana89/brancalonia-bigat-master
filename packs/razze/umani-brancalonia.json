@@ -1,0 +1,230 @@
+{
+  "_id": "umani_brancalonia",
+  "name": "Umano",
+  "type": "race",
+  "img": "icons/creatures/humanoid/human-barbarian.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Umano</h2>\n<p>Gli umani sono la popolazione di gran lunga più diffusa nel Regno di Taglia. Pragmatici, adattabili e pronti a tutto, costituiscono nove persone su dieci che si incontrano nelle città e lungo le strade del Sinistro Stivale.</p>\n<p>La loro varietà di usi, costumi e aspirazioni fa sì che vengano visti come il metro di paragone da tutte le altre stirpi: per alcuni sono semplicemente la gente comune, per altri l’esempio da emulare, per molti un mistero inesauribile.</p>\n<h3>Tratti degli Umani</h3>\n<ul>\n  <li><strong>Incremento dei Punteggi di Caratteristica.</strong> Due punteggi di caratteristica diversi a tua scelta aumentano di 1.</li>\n  <li><strong>Abilità.</strong> Ottieni competenza in un’abilità a tua scelta.</li>\n  <li><strong>Talento.</strong> Ottieni un talento a tua scelta.</li>\n  <li><strong>Età.</strong> Raggiungi la maturità tra i 18 e i 20 anni e vivi in genere meno di un secolo.</li>\n  <li><strong>Taglia.</strong> Sei una creatura di taglia Media.</li>\n  <li><strong>Velocità.</strong> La tua velocità sul terreno è di 9 metri.</li>\n  <li><strong>Linguaggi.</strong> Parli, leggi e scrivi Comune e un altro linguaggio a tua scelta.</li>\n  <li><strong>Privilegio da Rissa – Versatilità.</strong> Ottieni +1 slot mossa quando prendi parte a una rissa.</li>\n</ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "advancement": [
+      {
+        "_id": "human_asi",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {},
+          "points": 2,
+          "cap": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 1,
+        "title": "Aumento Caratteristiche",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "human_size",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 1,
+        "title": "Taglia",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "human_skill",
+        "type": "Trait",
+        "configuration": {
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Abilità Versatili",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "human_feat",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [],
+          "spell": null,
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": ""
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "level": 1,
+        "title": "Talento Umano",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "human_languages",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "languages:common"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Linguaggi",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "human_rissa",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.umano_privilegio_versatilita"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Privilegio da Rissa",
+        "icon": "icons/skills/social/handshake-brown.webp",
+        "classRestriction": ""
+      }
+    ],
+    "movement": {
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 0,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0,
+      "units": "ft",
+      "special": ""
+    },
+    "languages": {
+      "value": [
+        "common"
+      ],
+      "custom": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

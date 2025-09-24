@@ -1,0 +1,490 @@
+
+
+--- PAGINA 68 ---
+
+Denaro ed Equipaggiamento
+ghiacciato Cocito. Purtroppo questo ingrediente causa lo 
+stesso problema nel corpo del bevitore.
+Effetto: Quando un personaggio beve questo distillato, 
+diventa pallido, bluastro e continui brividi gli corrono lungo 
+la schiena. Il gelido effetto protegge dalle alte temperature e 
+il personaggio dispone di vantaggio alle prove di Carisma 
+(Inganno), per fingersi malato.
+Gli effetti del tonico durano 48 ore, al termine delle quali il 
+colorito del personaggio torna al suo stato naturale.
+Infernet Malebranca
+La ricetta di questa infernale acquavite proviene da alcuni 
+distillatori malebranche di Galaverna, una famiglia resa ricca 
+e celebre grazie a questo ritrovato, che utilizza anche zolfo e 
+sali amari tra gli ingredienti.
+Effetto: Quando un personaggio beve questo distillato, 
+vampe di calore lo colgono dall’interno, la pelle diventa 
+rubizza e barba, capelli e sopracciglia prendono una tinta 
+vagamente rossiccia.
+Questo effetto protegge dalle basse temperature e qualunque 
+prova per appurare l’identità del personaggio viene effettuata 
+subendo svantaggio, Gli effetti del tonico durano 48 ore, al 
+termine delle quali il la peluria torna del colore normale.
+Intruglio della Forza
+Secoli orsono l’impero draconiano aveva conquistato tutto il 
+territorio dell’attuale Frangia, eccetto un piccolo villaggio, che 
+continuava a resistere grazie a – si dice – una pozione di vischio, 
+menta, radici, fiori di campo, vino rosso, sale, pepe, olio di roc -
+cia, estratto di barbabietola e datteri. Aggiungere astice, pesce 
+fresco e fragole o melograno per dare un piacevole retrogusto.
+Effetto: Quando un personaggio assume questo intruglio, 
+dispone di vantaggio alle prove di Forza e la sua capacità di 
+trasporto raddoppia. L ’effetto dell’intruglio termina dopo 1 
+ora, o se il personaggio fallisce una prova di Forza.
+Panacea dei Fieronzi
+Bollitura di cetosella, cicoria, zolfone, malva, finocchio, tutto 
+insieme. Bere a digiuno: ti ribolle dentro come sciacquare una 
+botte, poi per lo dietro ti esce uno gran foco… e sei guarito!
+Effetto: Quando un personaggio assume questo intruglio 
+può rimuovere una malattia o una condizione che lo affligge 
+tra accecato, assordato, avvelenato o paralizzato. L ’effetto del 
+tonico può affaticare il fisico di chi lo beve. Il personaggio 
+deve superare un tiro salvezza su Costituzione con CD 12, 
+altrimenti subisce 1 livello di indebolimento.
+Presenzio
+Anche chiamato “la Fata Nera”, è un distillato da sempre proi-
+bito in tutto il Regno, per le sue potenzialità dirompenti e in-
+naturali. Ha un retrogusto di liquorizia e scorzanera, e si beve 
+sciogliendo dei sali di antimonio nel bicchiere da un apposito 
+cucchiaio bucato.
+Effetto: Quando una creatura beve questo distillato, ottiene 
+la capacità di contattare mentalmente uno spirito di un 
+sapiente defunto da tempo o qualche altra misteriosa presenza 
+paranormale. Contattare questa entità può spossare o perfino sconvolgere la mente. Quando il personaggio beve questo 
+distillato, effettua un tiro salvezza su Intelligenza con CD 13. 
+Se lo fallisce, subisce 4d6 danni psichici e diventa pazzo finché 
+non completa un riposo lungo. Finché è pazzo, non può 
+effettuare azioni, non capisce ciò che dicono le altre creature, 
+non sa leggere e dice solo parole senza senso. Un incantesimo 
+Ristorare Inferiore lanciato su di lui termina questo effetto.
+Se supera il tiro salvezza, può porre all’entità un massimo di 
+tre domande. Il Condottiero risponde a ogni domanda con una 
+parola, come “sì”, “no”, “forse”, “mai”,”irrilevante” o “ignoto” 
+(se l’entità non conosce la risposta alla domanda). Se una rispo -
+sta di una sola parola può risultare fuorviante, il Condottiero 
+può invece fornire una breve frase come risposta (per esempio 
+“Vattene all’Inferno”).
+Richiamino
+Un celebre distillato officinale spesso realizzato da monaci e 
+religiosi. Alcuni lo chiamano anche “Cinquerbe”, perché in 
+teoria sarebbe un Centerbe ma di questi tempi anche con le 
+erbe si va al risparmio…
+Effetto: Quando un personaggio beve questo distillato, 
+può ripetere un tiro salvezza contro malattia o veleno.
+intrugli  scadenti
+Se realizzati con strumenti o ingredienti scadenti, anche 
+gli Intrugli finiscono per essere altrettanto scadenti. In 
+questo caso, al momento dell’uso, chi li consuma tira 1d10 
+e ottiene anche uno dei seguenti inconvenienti:
+d10 Inconveniente
+1tanfo nau SeaB ondo . L’intruglio è inutilizzabile e bisogna 
+buttare via anche il contenitore.
+2truffa . L’intruglio sembra proprio a posto e presenta 
+l’odore e il sapore corretti, ma non ha alcun effetto 
+speciale.
+3odore cattivo . L’alito e il fetore delle canaglie non sanno mai 
+di rose. Dopo aver assunto questo intruglio peggioreranno.
+4flatulenza  tonante . Qualcosa nell’intruglio ha fermenta-
+to causando rumori di pancia molesti.
+5peSantezza . L’intruglio ha effetto, ma durante il prossimo 
+riposo breve il personaggio non riesce a riposare a dove-
+re e non ottiene i benefici del riposo.
+6miracolo  di San croSta. T utte le vecchie ferite del 
+personaggio cominciano nuovamente a cicatrizzarsi 
+creando uno spiacevole effetto di prurito. Il personaggio 
+è incapacitato per 1 minuto, poiché dovrà assolutamen-
+te grattarsi senza sosta.
+7coma intruglico . Dopo 1 minuto dall’ingestione dell’in-
+truglio, il personaggio deve effettuare un tiro salvezza 
+su Costituzione con CD 16, altrimenti cade privo di 
+sensi per 1d4 minuti.
+8macchie  e petecchie . La pelle del personaggio si riempie di 
+macchie e bozzi inquietanti, che dureranno per 1d4 giorni.
+9avvelenamento . Il personaggio è avvelenato fino al ter -
+mine di un riposo breve o lungo.
+10viSioni  miStiche . Il personaggio è incapacitato per 2d4 
+minuti; nello stesso periodo di tempo è in grado di 
+comprendere la Lingua Ignota e sembra conversare con 
+esseri invisibili.
+
+--- PAGINA 69 ---
+
+- 67 -Ciarpame Magico 
+Ciarpame Magico
+Non potete neppure immaginare la quantità di chincaglieria 
+arcana, paccottiglia magica, cianfrusaglie stregate e bigiot-
+teria sacra che si trova in giro per il Regno. Ecco, qualche 
+esempio di questa roba, da inserire nei vostri lavoretti come 
+ricompense speciali, tesori e ritrovamenti fortunati.
+Anello del desiderio estinto
+Anello, non comune (richiede sintonia)
+Questo anello magico della moderazione aiuta a combatte-
+re il fascino dei vizi e le tentazioni. Quando il personaggio 
+fallisce un tiro salvezza per resistere a un effetto che impone 
+la condizione affascinato, può invece scegliere di superarlo.Arma lunatica
+Arma (qualsiasi), comune (richiede sintonia)
+“Spada lunare? Paisà, mi sono sbagliato! Volevo dire 
+Lunatica! Nessun rimborso!”
+Quando il personaggio effettua una attacco con quest’arma 
+magica e ottiene 1 al tiro per colpire, l’arma cambia e diven-
+ta un’arma differente casuale (il Condottiero sceglie quale).
+Bacchetta del due su tre
+Bacchetta, non comune (richiede sintonia)
+Esistono vari tipi di bacchette del due su tre, ognuna capace 
+di un diverso tipo di trucchetto magico. Il personaggio che 
+la impugna può usare la bacchetta per lanciare il trucchetto 
+infuso in essa. Dopo che il personaggio ha usato la bacchet-
+ta, deve tirare 1d6: con un risultato di 1 o 2 la Bacchetta non 
+funziona più fino al termine di un riposo breve.
+Briglie di San Sirio il Draconiano
+Reliquia, raro
+Qualunque cavalcatura equipaggiata con queste briglie 
+perde la qualità scadente e ottiene +3 metri al movimento. 
+Chiunque cavalchi la creatura dispone di vantaggio alle pro-
+ve per rimanere in sella. Se un personaggio usa queste briglie 
+durante una Giostra dei Poveri effettuerà le prove disponen-
+do di vantaggio.
+Calice del cantiniere
+Oggetto meraviglioso, non comune (richiede sintonia)
+Qualunque sostanza versata in questo calice, dopo averla fat-
+ta ruotare, annusata e assaggiata con aria concentrata, viene 
+purificata da veleni o malattie.
+Cannocchiale del belvedere
+Oggetto meraviglioso, non comune (richiede sintonia)
+Quando guardi un bersaglio tramite il cannocchiale puoi lan-
+ciare l’incantesimo Ingrandire/Ridurre ma il personaggio non 
+può scegliere quale effetto applicare che invece viene generato 
+casualmente tirando 1d6: con un risultato di 1, 2 o 3 il bersa-
+glio viene ridotto, mentre con 4, 5 o 6 viene ingrandito. Dopo 
+aver usato l’oggetto magico per lanciare l’incantesimo, non 
+funziona più fino al termine di un riposo lungo.
+
+
+--- PAGINA 70 ---
+
+- 68 -
+Denaro ed Equipaggiamento 
+Giranello magico
+Anello, molto raro (richiede sintonia)
+Questo anello possiede 3 cariche e recupera 1d3 cariche spese 
+ogni giorno all’alba. Finché il personaggio indossa l’anello, può 
+lanciare dall’anello gli incantesimi seguenti, spendendo il nu-
+mero necessario di cariche (CD 13 del tiro salvezza): Amicizia 
+con gli Animali (1 carica), T rova Cavalcatura (2 cariche), Ca-
+panna (2 cariche) o Banchetto degli Eroi (3 cariche).
+Il pelo perduto del lupo
+Oggetto meraviglioso, raro (richiede sintonia)
+Questa pelle di lupo magica permette al personaggio di usa-
+re un’azione per lanciare l’incantesimo metamorfosi su se 
+stesso per trasformarsi in un lupo feroce. In forma di lupo 
+feroce mantiene i suoi punteggi di Intelligenza, Saggezza e 
+Carisma. Il vello non può essere riutilizzato in questo modo 
+fino al tramonto successivo.
+La Zappa di Scippo
+Arma (zappa), leggendaria (richiede sintonia)
+Nonostante sia magica, questa zappa +1 è comunque di qua-
+lità scadente.
+La Spada di Scippo
+Arma (stocco), leggendaria
+Nonostante sia magico, questo stocco +1 è comunque di 
+qualità scadente.
+Le Armi di Scippo
+Per entrare in sintonia con quest’arma, il personaggio deve 
+essere in sintonia con la Zappa di Scippo. La sintonia termi-
+na se il personaggio perde una delle due armi.
+Se il personaggio impugna entrambe le armi, queste diven-
+tano +3, perdono la qualità scadente e contano come leggere.
+Posate di San Mangio
+Reliquia, raro
+Qualunque cosa un personaggio mangi tramite queste po-
+sate diviene commestibile e viene considerato al pari di una 
+Razione ma non ne cambia però il sapore. Se un personag-
+gio partecipa a una Gara di Mangiate usando queste posate 
+ottiene un modificatore di +5 a ogni tiro.Pugnale del terrore
+Arma (pugnale), comune (richiede sintonia)
+Quest’arma forse maledetta, non sembra voler nuocere alle 
+persone e per qualche ragione sconosciuta è in grado di ur-
+lare avvertimenti a chi viene attaccato da essa. Quando il 
+personaggio effettua un attacco contro un umanoide, il pu-
+gnale urla in Volgare:
+ “CORRI! TI VUOLE PUGNALARE, CORRI!”
+Randellone di San Cagnate
+Arma Reliquia (randello pesante), leggendaria (richiede sinto-
+nia)
+Questo incredibile randello pesante +2 è pregno del sangue 
+di innumerevoli immondi colpiti a morte da San Cagnate 
+in persona. I colpi inflitti da quest’arma ignorano qualun-
+que resistenza ai danni. Quando il personaggio ottiene un 
+20 a un tiro per colpire con quest’arma, il bersaglio cade 
+a terra prono.
+Scudo biscottato
+Armatura (scudo), comune (richiede sintonia)
+Quando il personaggio che imbraccia questa protezione su-
+bisce un colpo critico, lo scudo si distrugge in tanti pezzi ma 
+il proprietario non subisce alcun danno dall’attacco. I fram-
+menti dello scudo non possono essere ricomposti, ma diven-
+tano di biscotto commestibile, equivalenti a 2d4 Razioni.
+T rattato noiosissimo del Regno di Fandonia
+Oggetto meraviglioso, non comune (richiede sintonia)
+Se il personaggio entra in sintonia con questo oggetto, può 
+usarlo come libro degli incantesimi e richiede la metà del 
+normale costo delle componenti, per trascrivere nuovi in-
+cantesimi. Chiunque altro provi a leggerlo, lo vedrà invece 
+come un trattato noiosissimo e di nessuna utilità.
+“A dirtel tosto, io non credo più al nero ch'a l'azzurro
+ma nel cappone, o lesso o vuogli arrosto
+e credo alcuna volta anco nel burro
+nella cervogia, e quando io n'ho, nel mosto
+e molto più nell'aspro che il mangurro;
+ma sopra tutto nel buon vino ho fede
+e credo che sia salvo chi gli crede" 
+-c anto  popolare  dei m organti -
+
+--- PAGINA 71 ---
+
+- 69 -Cimeli
+Cimeli
+I Cimeli sono oggetti insoliti e privi di alcun valore commer -
+ciale, che possono appartenere alle canaglie all’inizio delle loro 
+imprese, possono essere presi ad altri perdigiorno a seguito 
+delle risse come fossero un T rofeo (vedi a pag. 51), o pos -
+sono essere trovati in giro in cento occasioni. Consigliamo di 
+assegnarne uno per canaglia alla creazione del personaggio.
+Per essere tale, un Cimelio deve:
+• Avere un valore economico nullo e nessuna utilità 
+concreta. In genere non si può rivendere.
+• Essere originale. Un Cimelio non può essere scadente o 
+contraffatto, o se lo fosse non cambierebbe comunque 
+nulla.
+• Essere talmente bizzarro e particolare da non poter essere 
+confuso con altro. Ogni Cimelio è unico.Ogni Cimelio può essere usato, una e una sola volta, per 
+un qualche effetto sorprendente e imprevedibile ad arbitrio del 
+proprietario, purché abbia un qualche senso logico accettabile. 
+Usare un Cimelio in questo modo può offrire Ispirazione a 
+un personaggio oppure offrire un vantaggio narrativo simile.  
+Per esempio, un’inutile chiave da postribolo che la canaglia 
+potrebbe aver trafugato come ricordo alla tenutaria di un sor -
+dido lupanare dopo una notte d’amore, potrebbe un giorno, 
+anni dopo, adattarsi perfettamente allo scrigno nascosto nel 
+castello di un Orco. “Ehi, lo sapevo che mi avrebbe portato 
+fortuna…”
+Ecco una tabella per generare casualmente dei Cimeli o per 
+trarne spunto nel creare i vostri.
+Cimeli 
+1 Una splendida zappa. Davvero un ottimo strumento, in buone condizioni e di eccezionale qualità.
+2Stivali spaiati di Belgaratto. Una coppia di stivali, diversi per colore, misura e foggia. Paradossalmente, entrambi gli stivali calzano 
+perfettamente ai piedi della canaglia.
+3Il Cappello dell’ Ammazzasette. Un cappellaccio sdrucito a tesa larga, all’uso dei bravi, su cui qualche pallone gonfiato ha ricamato a 
+lettere d’oro le parole “Ammazzasette Seminarovina” .
+4 Coda di cane essiccata. Un vecchio talismano imbalsamato.
+5 Due di schiaffi. Una carta da Minchiate su cui qualche burlone ha disegnato sopra due palme aperte.
+6 Scherza coi fanti. Un breviario umoristico scritto a mano, che raccoglie battute molto comuni nelle caserme.
+7 Lascia stare i santi. Un breviario religioso scritto a mano, che contiene formule e informazioni su tutti i Santi del Regno.
+8Mamiononmami. Un fiore essiccato con un solo petalo rimasto attaccato. Nessuno sa però se l’ultimo petalo indica un amore non 
+corrisposto o meno. Vuoi davvero scoprirlo?
+9 Un dente umano nero. Non annerito o marcio: completamente nero come se fosse d’ebano o di carbone.
+10 T reccia della Befana. Una treccia realizzata con i capelli di una strega morta sul rogo.
+11 Copricapo di latta del Sor Mentecatti. È solo una scodella, ma nessuno ha il cuore di dirlo.
+12Incisivo Firulante. Un dente di morgante grosso come un uovo di gallina. Ha un buco dovuto alla carie, e soffiandoci attraverso pro-
+duce un suono simile a quello di un’armonica.
+13 Dentiera del giudizio. Un malassortito insieme di denti neri, marroni e gialli.
+14Penna dell’uccello gazolbinello. Una lunga penna caudale screziata di verde, bianco e bronzo. Si dice renda meravigliosa la grafia di 
+chi la adopera. È però molto fragile e si consuma dopo un solo utilizzo.
+15 Ramaiolo di zia Marcolfa. In rame, comodo per bere dalle fontanelle.
+16 Frizzi e lazzi. Un borsello pieno di foglietti con su scritte battutacce da osteria. Da usare con cautela.
+17Barattolo da lucciole con inserti di vetro. Le lucciole illuminano e consumano poco, ma sicuramente non sono una lanterna; si dice 
+rischiarino i sentieri fatati.
+18 Due palle. Proprio due sfere di metallo magnetizzate, che spesso girano su loro stesse.
+19 Mantellaccia de’ sorci verdi. Una cappa lacera e maleodorante, fatta di pellicce di topo e curiosamente verdastra.
+20Forbice Monolama di Falcamonte. Di fatto, un coltello dozzinale, ma proclamarlo Forbice Monolama di Falcamonte è molto più 
+tonante e gratificante.
+
+
+--- PAGINA 72 ---
+
+- 70 -
+Denaro ed Equipaggiamento 
+21Piede di Forco. Il dito nero di una celebre T aglia Forte, impiccato durante una notte di novilunio. È nero e bitorzoluto, quasi mummifi-
+cato.
+22 Siero della Verità. È solo grappa, ma di quella forte come acqua ragia.
+23 Le scarpe dei Sacripanti. Famose per il tacco davanti; misteriosamente considerate utili per andare in salita.
+24Grangetto dei T urchini. Un bottone di metallo con una zigrinatura al centro. Alcuni mercanti lo accettano come moneta di poco 
+valore. T orna sempre in tasca del proprietario.
+25La contessa. Un vecchio neo finto che qualche arcizia arcicontessa usava per apparir più elegante e altolocata. Per qualche strano 
+motivo, anche se finto, il neo è peloso. Chissà che uomini importanti avrà baciato.
+26La rontina. Un oggettino metallico, un po’ corto un po’ lungo, leggermente attorcigliato ma dritto. Dà l’impressione di poter entrare in 
+ogni giuntura, ma se uno ci prova sia di dritto che di rovescio non entra in nulla. Chissà a cosa serviva?
+27 Cuscino di piume d’orca. Un cuscino rotondo e molto duro, imbottito dei peli delle gambe di una terribile orchessa.
+28 Ciondolo con ciocca di capelli in argento. Reca l’iscrizione “il mio vero amore” . Contiene lana di capra.
+29 Scatoletta da cucito. Cinque aghi, un ditale, tre rocchetti di filo (bianco, rosso, blu), tre bottoni scompagnati.
+30 Bracciale zigano. Una fascia in argento, finemente cesellata, con una iscrizione illeggibile all’interno.
+31 Fiasca bucata. Una fiasca ricavata da una zucca, con un vistoso foro sul fondo; incisa sulla superficie interna c’è una mappa.
+32 Cornetto di corallo. Ha le dimensioni di un mignolo di un adulto, in corallo rosso; dicono porti fortuna.
+33Cavatappi delle meraviglie. Un classico cavatappi a spirale, col manico di legno lucido; stappa solo le bottiglie di vino buono, 
+quelle di vino cattivo esplodono.
+34Mazzo di carte bucate. Un comune mazzo di carte da gioco; tutti gli occhi delle carte figurate sono stati forati con un chiodo. 
+Giocare controluce con un gonzo permette di barare con estrema facilità.
+35Anello in argentone con sigillo. Il sigillo è abbastanza generico da potersi adattare a qualunque casata o corporazione; ha 
+uno scomparto segreto, grande quanto un fagiolo.
+36 Clessidra tascabile. Due ampolle di cristallo riempite di sabbia bianca; l’etichetta dice “cinque lassi” ma in realtà sono sette.
+37Liuto “Figlio di Ghibba” . Costruito in legno di fanfaluco, è in grado di memorizzare fino a otto canzoni una volta suonate, ma 
+non ha alcuna intenzione di farlo.
+38 Coppa del nonno. Una coppa metallica proveniente da Zagara, ideale per il sorbetto.
+39 Petardo Fischione. Un classico per le feste, emette un lungo sibilo e poi un gran botto.
+40Uovo da rammendo. Un uovo di legno utile per rammendare calzini e altri indumenti. E se fosse di fanfaluco? Che animale 
+mai ne uscirebbe?
+41T rappola per topi. Un classico dell’ingegnosità umana; armata con formaggio, permette di acchiappare un topo non troppo 
+sveglio.
+42Lettera di presentazione. La lettera identifica il portatore come agente del Conte Notte, e autorizza il portatore a ottenere 
+servizi, provviste o denari a credito fino a 200 monete d’oro. Il Conte Notte vorrà essere rimborsato.
+43Padella dello scudiero. Una padella di ferro, col fondo traforato, utile per cucinare caldarroste sul fuoco e utilizzabile come 
+scudo piccolo; non protegge dalle frecce.
+44 Scatola musicale tascabile. Girando la manovella, suona “Le belle donne di T auringa” .
+45Sigillo del gran siniscalco di Costantinapoli. Simbolo del potere e del prestigio del siniscalco; un grossolano falso, utilizzabile 
+come schiaccianoci.
+46 Grattaschiena. Una manina d’avorio montata su un manico di legno d’ebano lungo due spanne; utile per grattarsi la schiena.
+47Ritratto del bevitore di vino. Un classico di T eomondo Scrofalo; c’è una possibilità su 1.000 che sia l’originale, che tuttavia ha 
+lo stesso valore delle 999 copie.
+48La rotolarella. Un rotolo di spago composto da decine di pezzi di spago di diversa lunghezza legati assieme; lunghezza tota-
+le: cento piedi.
+49 Parrucca gentilizia. In autentico crine di cavallo, acconciata secondo la moda di cinquanta anni or sono.
+50 Ventaglio di seta di Serindia, portato dall’oriente ai mercanti di Vortiga. La seta è un po’ sbiadita, ma la fattura è di pregio.
+
+--- PAGINA 73 ---
+
+- 71 - 
+C
+Bentrovati, Condottieri: voi avete l’arduo compito di arbitrare e coordinare quella cricca di braccia rubate 
+all’agricoltura che sono i vostri giocatori . Questo capitolo è dedicato a voi, e contiene dritte, informazioni 
+utili e qualche tabella per gestire e arricchire i dietro le quinte dei lavoretti e semplificare la vostra parte 
+del gioco al tavolo.
+Rispetto a quanto viene già suggerito e spiegato ai Game Master nel regolamento base, aggiungiamo 
+soprattutto consigli e materiale specifici per Brancalonia , ma potete fare comunque sempre riferimento 
+alla vostra esperienza e a ogni sorta di contenuto e spiegazione che insegnino a condurre, arbitrare e 
+narrare il gioco.La Condotta
+
+
+--- PAGINA 74 ---
+
+- 72 -
+La Condotta 
+Se avete già sfogliato questo Manuale di Ambientazione, vi 
+sarete fatti un’idea di cosa contraddistingue Brancalonia ri-
+spetto alle altre ambientazioni.
+Noi suggeriamo di creare e inserire nelle vostre sessioni delle 
+atmosfere, delle situazioni, degli incontri, dei lavoretti e delle 
+trovate di gioco che abbiano questi aspetti, più o meno marcati:
+• Low magic – Molti aspetti e regole di questo Manuale 
+di Ambientazione parlano chiaro: il Regno è un luogo 
+dove eventi prodigiosi e soprannaturali possono essere 
+all’ordine del giorno, ma il livello di magia e potere a 
+disposizione della gente comune e dei personaggi è quasi 
+sempre bassissimo. Alcune canaglie avranno delle formule 
+e delle preghiere da usare ogni tanto, ma solo l’ingegno, 
+le capacità pratiche e un piano astuto possono portare alla 
+risoluzione dei lavoretti.
+• T ono scanzonato – Brancalonia è un setting volutamente 
+cialtronesco, pecoreccio, picaresco e frescaccione. Molti 
+personaggi sono macchiettistici e molte situazioni 
+paradossali, citazionistiche e umoristiche. Questo non vuol 
+dire che il gioco debba scadere nel demenziale, anzi!, ma 
+l’approccio consigliato è sempre quello ironico e leggero, 
+e magari un po’ sboccato. I personaggi di Brancalonia non 
+si prendono mai troppo sul serio, e nemmeno fanno lo 
+stesso con la vita, la morte, la religione e l’amore. È tutto 
+un gioco delle parti, una grande commedia.
+• Tragedia e Commedia – Una delle caratteristiche del 
+fantasy all’italiana è un approccio tragicomico ai grandi 
+temi e dilemmi della vita: come nei nostri film e libri di 
+genere, la vita è amara, ma va presa con un sorriso; magari 
+si finisce sul patibolo, ma con un’ultima battuta per sto 
+’moriammazzato del boia che è pronto a farci la festa; 
+“Biondo, lo sai di chi sei figlio tu?”
+• Zappa e Spada – La vita quotidiana nel Regno si basa 
+sulla banalità del lavoro di contadini e pescatori, artigiani e 
+mercanti, ambulanti e pastori, attorno ai quali si aggira una 
+malnutrita popolazione di pezzi grossi, religiosi, uomini 
+d’arme, notabili, mendicanti, ciarlatani, intrattenitori 
+e imbonitori. T utto il resto è un di più, qualcosa di 
+talmente trascurabile che se non esistesse nessuno se ne 
+accorgerebbe. Considerate sempre come gira il mondo da 
+queste parti e cercate di trasmettere il contesto terra-terra 
+dell’ambientazione.• Niente soldi per gli effetti speciali – Quando siete 
+in dubbio su come descrivere le vostre scene o non 
+sapete quali elementi, mostri e personaggi inserire 
+nelle sessioni, questo consiglio può darvi un’idea delle 
+atmosfere del gioco. Immaginate di essere sul set di un 
+film spaghetti fantasy e di non avere soldi per gli effetti 
+speciali: cosa fate entrare in scena? Comparse straccione, 
+caratteristi riciclati, fondali naturali o miserabili villaggi 
+di provincia, campagne abbandonate, qualche vecchio 
+rudere dell’impero sullo sfondo, magia da quattro soldi 
+e mostri che si vedono e non si vedono… se iniziate a 
+descrivere il mondo di gioco in quest’ottica, avrete carpito 
+perfettamente il colore e le atmosfere del Regno.
+• Verosimiglianza – Il Regno è un insieme di regioni che 
+cerca di essere verosimile nei suoi aspetti sociali, economici, 
+giuridici, bellici, naturalistici e culturali. Dopotutto noi 
+crediamo fortemente che il fantastico, per essere avvincente, 
+deve essere credibile, e che il verosimile debba essere il 
+vero dell’arte. Ciò non significa che il Regno sia un luogo 
+“realistico” o storicamente accurato… ve ne sarete già accorti! 
+T uttavia, ogni cosa che accade in gioco e ogni reazione all’agire 
+dei personaggi dovrebbe essere improntata principalmente a 
+criteri di verosimiglianza e coerenza interna.
+• Fantasy di Menare – Anche la menanza ha il suo posto 
+d’onore in Brancalonia, ve ne sarete già accorti. Come nei 
+migliori film italiani di genere, scazzottate, schiaffoni e 
+spadate la fanno da padrone in molti lavoretti pubblicati, 
+ufficiali o meno. Le regole per la rissa servono proprio a 
+restituire quelle atmosfere, senza che ogni mischia in cui 
+i personaggi si trovano finisca in un bagno di sangue. 
+Questo concetto del fantasy manesco si narra sia stato 
+ideato dai farabutti di Ignoranza Eroica: in Brancalonia lo 
+abbiamo ripreso e, in parte, modificato.
+• Granguignolesco – Alcune zone di Brancalonia sono 
+ottime per giocare un fantasy granguignolesco ed estremo, 
+grimdark, horror, macabro e paradossale. Parliamo della 
+Penumbria, dove il livello di violenza e orrore è molto più 
+alto di quello del resto del Regno e il fantasy di menare 
+diventa rapidamente fantasy di sbudellare. Anche in 
+questo caso, tuttavia, molti altri punti di questo elenco 
+sono validi: ironia amara, low magic, zappa e spada e 
+niente soldi per gli effetti speciali…Spaghetti Fantasy
+
+--- PAGINA 75 ---
+
+Spaghetti Fantasy
+- 73 -
+l’atteggiamento  al tavolo
+Quello che succede nelle vostre sessioni private è naturalmente solo cosa vostra, ma Brancalonia e Acheron Games 
+hanno delle linee editoriali, tematiche e di comportamento che vogliamo condividere con voi, e che valgono per il 
+gioco organizzato e per tutti gli eventi, le sessioni e i canali ufficiali, patrocinati e accreditati.
+Violenza in gioco: Nell’immaginario Regno si combatte, si usano armi, si feriscono e percuotono animali e persone, 
+ma è sconsigliato indulgere inutilmente in situazioni o descrizioni efferate. Molti avversari e nemici possono essere 
+semplicemente “sconfitti” , catturati o messi in fuga senza che questo tolga nulla alle dinamiche di combattimento, 
+magia e avventura del gioco. Uccidere o torturare altri individui, anche per legittima difesa, rende soggetti alla 
+Giustizia del Regno e fa aumentare le T aglie delle canaglie. Perfino tra i Fratelli di T aglia ci sono dei precisi codici 
+di condotta per chi versa o vuole versare sangue di birri, altre canaglie o comuni popolani. E chi esagera rischia di 
+diventare Infame o diventare preda di Equitaglia.
+Tematiche di carattere sessuale: Come da lunga tradizione di genere, scene piccanti, situazioni amorose e cliché 
+del romance e del pecoreccio sono benvenute in Brancalonia, ma il focus del gioco sono avventure, cialtronate e 
+imprese fantastiche.
+Discriminazione e campanilismi: In un mondo dove vanno in giro topi parlanti, fate onnipotenti, diavoli dell’Inferno 
+e marionette sboccacciate, ogni etnia, razza, classe, mestiere, background, origine, provenienza, lingua, cultura, 
+sesso, genere, religione, stato socio-economico e preferenza alimentare dei personaggi, anche la più bislacca, è 
+rispettata con un’alzata di spalle. Qualsiasi popolano, bandito o nobile incontrato dalle canaglie non farà altro che 
+insultarle dalla testa ai piedi, attribuire loro epiteti ingiuriosi e prenderle in giro per i loro tratti e la loro natura. Ma 
+tutto questo avverrà senza vero odio o disprezzo, solo per spirito campanilistico, burla e sfottò: è la natura degli 
+abitanti del Regno. Né la giustizia, né i pezzi grossi, né i Fratelli di T aglia discriminano o giudicano davvero qualcuno 
+per com’è fatto… al limite lo faranno per come si comporterà…
+Nel Regno vige l’uguaglianza: non conta nulla nessuno.
+Gli unici che davvero vengono discriminati sono gli intolleranti, i prepotenti e quelli che si atteggiano a grand’uomini… 
+il dileggio e il fastidio verso di loro è sempre generalizzato.
+In generale, Brancalonia è un setting che per temi e contenuti ci piacerebbe vedere adeguato a un’audience di gio-
+catori dai 13 anni in su.

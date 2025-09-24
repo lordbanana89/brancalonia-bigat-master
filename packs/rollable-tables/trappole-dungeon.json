@@ -1,0 +1,153 @@
+{
+  "_id": "trappole-dungeon",
+  "name": "Trappole nei Dungeon",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Trappole nei Dungeon",
+  "results": [
+    {
+      "_id": "trappole-dungeon_0",
+      "type": 0,
+      "text": "Botola con spuntoni - 2d10 danni perforanti",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_1",
+      "type": 0,
+      "text": "Dardi avvelenati - 1d6 + veleno CD 13",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_2",
+      "type": 0,
+      "text": "Lama a pendolo - 2d8 danni taglienti",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_3",
+      "type": 0,
+      "text": "Gas soporifero - Salvezza CD 14 o addormentato",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_4",
+      "type": 0,
+      "text": "Pavimento che crolla - Caduta 20 piedi",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_5",
+      "type": 0,
+      "text": "Ago avvelenato nella serratura - Paralisi 1 ora",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_6",
+      "type": 0,
+      "text": "Masso rotolante - 3d10 danni contundenti",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_7",
+      "type": 0,
+      "text": "Rete che cade - Intrappolato e immobilizzato",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_8",
+      "type": 0,
+      "text": "Getto di fiamme - 2d6 danni da fuoco",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_9",
+      "type": 0,
+      "text": "Sabbie mobili magiche - Risucchio lento",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_10",
+      "type": 0,
+      "text": "Illusione di tesoro - Nasconde botola",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "trappole-dungeon_11",
+      "type": 0,
+      "text": "Allarme rumoroso - Attira 1d4 mostri erranti",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 1700,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  }
+}

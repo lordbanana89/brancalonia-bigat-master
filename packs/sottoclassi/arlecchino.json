@@ -1,0 +1,83 @@
+{
+  "_id": "arlecchino001",
+  "name": "Arlecchino (Collegio del Carnevale)",
+  "type": "subclass",
+  "img": "icons/commodities/treasure/medal-ribbon-gold.webp",
+  "system": {
+    "identifier": "arlecchino",
+    "classIdentifier": "bard",
+    "description": {
+      "value": "<p>I bardi del Collegio del Carnevale incarnano le maschere e i lazzi delle arlecchinate. Le loro performance colorate confondono i nemici e incantano il pubblico con gesti e scherzi irresistibili.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "advancement": [
+      {
+        "_id": "arlecchino_lvl3_a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.arlecchino_competenze"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Competenze del Carnevale",
+        "icon": "icons/tools/hand/paintbrush-blue.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "arlecchino_lvl3_b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.arlecchino_batocchio",
+            "Compendium.brancalonia-bigat.brancalonia-features.arlecchino_difesa_senza_armatura"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Batocchio e Difesa",
+        "icon": "icons/tools/hand/paintbrush-blue.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "arlecchino_lvl6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.arlecchino_silenzio"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Silenzio in Sala",
+        "icon": "icons/magic/control/mute-red.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

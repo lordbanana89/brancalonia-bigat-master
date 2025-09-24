@@ -1,0 +1,333 @@
+{
+  "_id": "salamebipede001",
+  "name": "Salame Bipede",
+  "type": "npc",
+  "img": "icons/consumables/meat/sausage-links-brown.webp",
+  "system": {
+    "abilities": {
+      "str": {"value": 4, "proficient": 0, "bonuses": {"check": "", "save": ""}},
+      "dex": {"value": 11, "proficient": 0, "bonuses": {"check": "", "save": ""}},
+      "con": {"value": 12, "proficient": 0, "bonuses": {"check": "", "save": ""}},
+      "int": {"value": 2, "proficient": 0, "bonuses": {"check": "", "save": ""}},
+      "wis": {"value": 12, "proficient": 0, "bonuses": {"check": "", "save": ""}},
+      "cha": {"value": 5, "proficient": 0, "bonuses": {"check": "", "save": ""}}
+    },
+    "attributes": {
+      "ac": {"flat": 10, "calc": "default", "formula": ""},
+      "hp": {"value": 3, "max": 3, "temp": 0, "tempmax": 0, "formula": "1d4+1"},
+      "movement": {"burrow": 5, "climb": 0, "fly": 0, "swim": 0, "walk": 20, "units": "ft", "hover": false},
+      "senses": {"darkvision": 30, "blindsight": 0, "tremorsense": 0, "truesight": 0, "units": "ft", "special": ""},
+      "spellcasting": "",
+      "prof": 2
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Salame Bipede</strong></p><p>Un salame con i piedi, apparentemente delizioso. In qualche modo parla e comprende il Volgare. Questa bizzarra creatura è una delle manifestazioni più surreali della Fandonia di Brancalonia.</p><p>Nonostante il suo aspetto commestibile, il Salame Bipede è una creatura senziente con una propria personalità. Spesso cerca di convincere gli altri che non dovrebbe essere mangiato, usando il suo limitato vocabolario per comunicare.</p><p>È particolarmente abile nel nascondersi tra il cibo vero e nel scappare attraverso piccoli spazi usando la sua capacità di scavare.</p>",
+        "public": ""
+      },
+      "alignment": "neutral good",
+      "race": "",
+      "type": {
+        "value": "construct",
+        "subtype": "living food",
+        "swarm": "",
+        "custom": ""
+      },
+      "environment": "urban, kitchens",
+      "cr": 0,
+      "spellLevel": 0,
+      "xp": {"value": 10},
+      "source": "Tomo dei Mostri Tascabili"
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {"value": [], "custom": ""},
+      "dr": {"value": [], "custom": ""},
+      "dv": {"value": ["fire"], "custom": ""},
+      "ci": {"value": [], "custom": ""},
+      "languages": {
+        "value": ["common"],
+        "custom": "Parla e comprende il Volgare"
+      }
+    },
+    "currency": {"pp": 0, "gp": 0, "ep": 0, "sp": 0, "cp": 0},
+    "skills": {
+      "acr": {"value": 0, "ability": "dex", "bonuses": {"check": "", "passive": ""}},
+      "ani": {"value": 0, "ability": "wis", "bonuses": {"check": "", "passive": ""}},
+      "arc": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
+      "ath": {"value": 0, "ability": "str", "bonuses": {"check": "", "passive": ""}},
+      "dec": {"value": 0, "ability": "cha", "bonuses": {"check": "", "passive": ""}},
+      "his": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
+      "ins": {"value": 0, "ability": "wis", "bonuses": {"check": "", "passive": ""}},
+      "inti": {"value": 0, "ability": "cha", "bonuses": {"check": "", "passive": ""}},
+      "inv": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
+      "med": {"value": 0, "ability": "wis", "bonuses": {"check": "", "passive": ""}},
+      "nat": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
+      "prc": {"value": 1, "ability": "wis", "bonuses": {"check": "", "passive": ""}},
+      "prf": {"value": 0, "ability": "cha", "bonuses": {"check": "", "passive": ""}},
+      "per": {"value": 1, "ability": "cha", "bonuses": {"check": "", "passive": ""}},
+      "rel": {"value": 0, "ability": "int", "bonuses": {"check": "", "passive": ""}},
+      "slt": {"value": 0, "ability": "dex", "bonuses": {"check": "", "passive": ""}},
+      "ste": {"value": 1, "ability": "dex", "bonuses": {"check": "", "passive": ""}},
+      "sur": {"value": 0, "ability": "wis", "bonuses": {"check": "", "passive": ""}}
+    },
+    "spells": {
+      "spell1": {"value": 0, "override": null, "max": 0},
+      "spell2": {"value": 0, "override": null, "max": 0},
+      "spell3": {"value": 0, "override": null, "max": 0},
+      "spell4": {"value": 0, "override": null, "max": 0},
+      "spell5": {"value": 0, "override": null, "max": 0},
+      "spell6": {"value": 0, "override": null, "max": 0},
+      "spell7": {"value": 0, "override": null, "max": 0},
+      "spell8": {"value": 0, "override": null, "max": 0},
+      "spell9": {"value": 0, "override": null, "max": 0},
+      "pact": {"value": 0, "override": null, "max": 0, "level": 0}
+    },
+    "bonuses": {
+      "mwak": {"attack": "", "damage": ""},
+      "rwak": {"attack": "", "damage": ""},
+      "msak": {"attack": "", "damage": ""},
+      "rsak": {"attack": "", "damage": ""},
+      "abilities": {"check": "", "save": "", "skill": ""},
+      "spell": {"dc": ""}
+    },
+    "resources": {
+      "legact": {"value": 0, "max": 0},
+      "legres": {"value": 0, "max": 0},
+      "lair": {"value": false, "initiative": 0}
+    }
+  },
+  "items": [
+    {
+      "_id": "salamekick001",
+      "name": "Pedata",
+      "type": "weapon",
+      "img": "icons/skills/melee/kick-stomping-brown.webp",
+      "system": {
+        "description": {
+          "value": "<p>Un piccolo calcetto con i suoi minuscoli piedi.</p>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "quantity": 1,
+        "weight": 0,
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "attunement": 0,
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "target": {
+          "value": 1,
+          "width": null,
+          "units": "",
+          "type": "creature"
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": ""
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [["1", "bludgeoning"]],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true
+      }
+    },
+    {
+      "_id": "appeal001",
+      "name": "Appello Disperato",
+      "type": "feat",
+      "img": "icons/magic/control/fear-fright-white.webp",
+      "system": {
+        "description": {
+          "value": "<p>Come azione, il Salame Bipede può tentare di convincere una creatura a non attaccarlo o mangiarlo. La creatura bersaglio deve effettuare un tiro salvezza su Saggezza CD 8. Se fallisce, è affascinata dal salame per 1 minuto e non può attaccarlo volontariamente.</p>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "target": {
+          "value": 1,
+          "width": null,
+          "units": "",
+          "type": "creature"
+        },
+        "range": {
+          "value": 30,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": 1,
+          "max": "1",
+          "per": "sr",
+          "recovery": ""
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "save",
+        "attackBonus": "",
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "wis",
+          "dc": 8,
+          "scaling": "spell"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "token": {
+    "name": "Salame Bipede",
+    "displayName": 0,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/consumables/meat/sausage-links-brown.webp",
+      "scaleX": 0.5,
+      "scaleY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 0.5,
+    "height": 0.5,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 0,
+    "bar1": {"attribute": "attributes.hp"},
+    "bar2": {"attribute": null},
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "gradual": true,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false,
+        "type": null
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "vision": {
+      "angle": 360,
+      "enabled": false,
+      "range": 0,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  }
+}

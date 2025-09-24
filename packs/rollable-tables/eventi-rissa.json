@@ -1,0 +1,153 @@
+{
+  "_id": "eventi-rissa",
+  "name": "Eventi durante una Rissa da Taverna",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Eventi durante una Rissa da Taverna",
+  "results": [
+    {
+      "_id": "eventi-rissa_0",
+      "type": 0,
+      "text": "Un tavolo si rovescia! L'area diventa terreno difficile.",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_1",
+      "type": 0,
+      "text": "Bottiglia rotta! Può essere usata come arma improvvisata (1d4 danni).",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_2",
+      "type": 0,
+      "text": "Uno sgabello vola! Attacco a distanza casuale (1d6 danni).",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_3",
+      "type": 0,
+      "text": "Birra negli occhi! Un combattente è accecato per 1 round.",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_4",
+      "type": 0,
+      "text": "Scivolone sulla birra! Salvezza Destrezza CD 12 o cadi prono.",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_5",
+      "type": 0,
+      "text": "L'oste si arrabbia! Minaccia tutti con un grosso randello.",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_6",
+      "type": 0,
+      "text": "Le guardie arriveranno in 1d4 round!",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_7",
+      "type": 0,
+      "text": "Altri avventori si uniscono! +1d4 partecipanti alla rissa.",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_8",
+      "type": 0,
+      "text": "Il lampadario cade! 2d6 danni in un'area di 3 metri.",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_9",
+      "type": 0,
+      "text": "Il musicista continua a suonare imperturbato (momento comico).",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_10",
+      "type": 0,
+      "text": "Un cane morde a caso! 1d4 danni a un combattente casuale.",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "eventi-rissa_11",
+      "type": 0,
+      "text": "Un barile di birra esplode! Tutti nel raggio sono fradici.",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 400,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  }
+}

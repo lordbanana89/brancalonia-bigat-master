@@ -1,0 +1,337 @@
+
+
+--- PAGINA 63 ---
+
+- 61 - 
+Denaro ed Equipaggiamento
+Su e giù per le carrarecce del Regno girano molte valute, vecchi conii, monetaglia pezzente e pezzi di 
+scambio. Per chi non si vuole fare troppi problemi, le monete sono sempre le stesse del regolamento base: 
+monete d’oro, d’argento e di rame, con lo stesso valore d’acquisto e gli stessi prezzari di sempre. Chia-
+matele seguendo il tipo di metallo usato, e passa la paura… unica differenza: nel Regno il platino non si 
+vede neanche con il cannocchiale e l’electrum non lo sanno neanche pronunciare. Al posto dell’electrum 
+in Brancalonia  c’è il ferro, con lo stesso valore di quello.
+In generale, dunque, le monete di valore più basso sono in rame: paccottiglia buona solo per comprare 
+uova al mercato e genericamente dette ramini, spicci o piccioli (a Zagara, per esempio).
+10 spicci di rame (mr) valgono 1 denaro d’argento (ma). Sulle monete d’argento si basano gli scambi più 
+importanti e comuni, e ogni regione del Regno batte i propri conii. Nel Regno delle Due Scille si chia-
+mano taralli, in Penumbria baiocchi; fiorini, trisceli e zecchini rispettivamente in Torrigiana, Quinotaria 
+e Vortigana. Marche è il nome che prendono in Spoletaria, sesterzi in Alazia, bissoni in Galaverna e 
+Pianaverna, e lire in Falcamonte.
+Comunque si chiamino, il peso e il valore di tutti questi denari è grossomodo analogo.
+Come abbiamo detto, l’electrum non esiste, e al suo posto abbiamo il soldo di ferro (mf ); 5 monete d’ar-
+gento corrispondono a 1 soldone di ferro. Se questo vi sembra strano è perché non avete visto le monete: 
+quella d’argento e quella d’oro sono piccole e sottili, mentre quelle di ferro sono grosse come medaglie 
+e vengono anche dette soldoni o petecchioni, visto quanto pesano.
+Infine le monete d’oro, quelle che il popolo chiama gransoldi (mo). Alcune città coniano zecchini e fiorini 
+d’oro, altri usano pesi e ponderi del vecchio conio draconiano o altro. Anche in questo caso, tuttavia, 
+grossomodo 1 moneta d’oro vale sempre come 10 d’argento.
+Non ci capite nulla? È normale… neppure la gente del Regno!C
+
+--- PAGINA 64 ---
+
+- 62 -
+Denaro ed Equipaggiamento 
+Equipaggiamento scadente
+In Brancalonia, gli oggetti comuni costano come sempre, se-
+condo i più comuni listini di prezzi. T uttavia, la disponibilità 
+di denaro delle canaglie è in genere molto più bassa e spesso 
+queste avranno a disposizione solamente equipaggiamento 
+scadente. Oggetti e servizi scadenti sono malamente realizzati 
+e offerti da imbroglioni e cialtroni. Hanno un aspetto poco 
+affidabile, un gusto poco invitante o un odore ambiguo, e 
+sembrano pronti a cadere a pezzi al primo utilizzo.
+Gli oggetti scadenti hanno un costo inferiore rispetto a quelli 
+standard, solitamente un decimo del prezzo.
+Strumenti
+Quando si utilizza un oggetto o uno strumento di qualità 
+scadente in una prova, è possibile incorrere in qualche in-
+conveniente. Il Condottiero può scegliere di volta in volta 
+quali effetti applicare in base alla situazione e all’oggetto. 
+Inoltre, se la prova viene fallita di 5 o più, l’oggetto si rompe.
+Armi
+Quando un personaggio effettua un attacco con un’arma 
+scadente e il risultato del dado è 1, l’arma si smonta, e tutti i 
+tiri successivi subiscono svantaggio. Questo effetto dura fin-
+ché il personaggio non usa un’azione per sistemarla.
+Armature
+Queste armature cadono a pezzi, letteralmente. Ogni volta 
+che un personaggio viene colpito con un 20 naturale, un 
+pezzo di armatura vola via e la sua CA cala di 2. Nel caso un 
+personaggio impugni uno scudo, questo sarà il primo a vola-
+re di mano. L ’effetto dura finché il personaggio non recupera 
+i pezzi perduti e usa un’azione per sistemarli.
+Cavalli, monte e animali
+Quando si effettua una prova, se il risultato del dado è un 1, 
+l’animale si azzoppa e non è più in grado di proseguire per 24 
+ore. Un animale scadente si muove inoltre a una velocità di 3 
+m inferiore rispetto a un animale comune dello stesso tipo.
+La Magia Scadente
+Le componenti magiche sono costose e rare, per questo le 
+genti del Regno capaci di lanciare incantamenti e miracoli 
+usano solitamente una versione scadente della vera magia. 
+Questo spesso porta a incidenti e stravaganze, che hanno in-
+fluito sulla reputazione della magia, tacciata di imprevedibilità e bizzarria, oltre che di ciarlataneria appannaggio di pezzenti, 
+maghi da operetta e iettatori di campagna.
+Gli effetti causati dall’uso di componenti e materiali sca -
+denti si riflettono sull’aspetto delle magie ma non sul loro 
+funzionamento pratico. Per esempio, un famiglio evocato 
+con componenti scadenti potrebbe avere un aspetto buffo o 
+grottesco; una palla di fuoco potrebbe lasciare un odore di 
+uova marce.
+T utto il resto
+Per tutto ciò che non è elencato precedentemente, la qualità 
+scadente si manifesta in innumerevoli modi differenti, ed è 
+impossibile creare un effetto per ogni situazione. Quando 
+un personaggio usufruisce di qualcosa di scadente, il Con-
+dottiero utilizza uno dei seguenti effetti in maniera consona 
+alla situazione:
+Piccolo incidente. Un inconveniente buffo e senza 
+conseguenze.
+La difficoltà aumenta. Se viene effettuata una prova con una 
+CD questa aumenterà o diminuirà in maniera sfavorevole.
+Malfunzionamento. La natura scadente porta a un 
+malfunzionamento imprevisto.
+Danneggiato. Dopo l’uso l’oggetto si danneggia e necessita 
+di essere riparato prima di poterlo utilizzare di nuovo.
+Non funziona. Se l’oggetto è consumabile o con un numero 
+limitato di utilizzi (per esempio fiale di acido, ampolle di 
+acqua santa o pozione di guarigione), tira 1d6: solo con 
+un risultato di 4 o più l’oggetto funziona normalmente, 
+altrimenti è una fregatura malfatta e viene sprecato.
+Inconveniente antipatico. Uno spiacevole inconveniente, 
+come una Faretra che perde 1d4 munizioni trasportate 
+durante un viaggio, o durante un passaggio in nave tutte 
+le Razioni si sono inzuppate a causa di una infiltrazione 
+d’acqua e diventano immangiabili.
+Equipaggiamento Contraffatto
+Il Regno è noto per le sue merci contraffatte: documenti 
+e conio falso girano più che quelli veri, reliquie e opere 
+d’arte taroccate hanno interi mercati di vendita al detta-
+glio e all’ingrosso, la stessa capitale di Alazia, Porto Patac-
+ca, prende il nome dalle fregature che qui si rifilano agli 
+ingenui, e ogni oggetto o servizio che appare in gioco può 
+essere Contraffatto.
+
+--- PAGINA 65 ---
+
+- 63 -Equipaggiamento scadente
+L ’Equipaggiamento Contraffatto ha 3 caratteristiche fondamentali:
+• Sembra molto conveniente: costa infatti in genere il 50% del corrispondente 
+Oggetto secondo i prezzari ufficiali. Alla sospettosa domanda degli acquirenti, 
+il venditore spesso prova a giustificarsi dicendo che è stato regolarmente rubato 
+o è “di seconda mano” (che poi è la stessa cosa). Ma non è vero quasi mai: è 
+semplicemente contraffatto!
+• Esteticamente sembra Equipaggiamento comune: l’Equipaggiamento 
+Contraffatto non causa malus alle reazioni sociali come quello Scadente (vedi 
+riquadro qui accanto).
+• Funziona come quello Scadente: a parte il suddetto malus alle reazioni sociali, 
+l’Equipaggiamento Contraffatto condivide gli stessi problemi e causa gli stessi 
+svantaggi della sua versione Scadente.
+oggetti  falsi , taroccati  e contraffatti
+Come già detto, qualsiasi cosa nel Regno potrebbe venire falsificata, taroccata e 
+contraffatta, secondo le regole che trovate subito qui sopra.
+Ci sono tuttavia degli oggetti di Equipaggiamento speciali, che nascono già diret-
+tamente falsi e sono soggetti a opzioni ulteriori.
+Attenzione però: falsificare documenti, reliquie, monete e opere d’arte è una ma-
+lefatta bella e buona, che potrebbe aumentare di parecchio la Taglia delle canaglie!
+Documenti falsi
+Un qualsiasi tipo di documento falso, da una bolla di trasporto a un invito a una 
+festa o evento. Se esaminati con attenzione, è possibile capire che si tratta di docu-
+menti falsi con una prova di Intelligenza (Indagare) con CD 20 (CD 15 in caso di 
+Documento falso di qualità Scadente).
+Mappe false
+“Avete voluto pagare così poco per una mappa?  
+Adesso non vi lamentate!”
+-m astro  faBio perfidia , c artografo  ducale  di tarantasia -
+Create da grandi falsari e artisti, queste mappe possono avere molti usi e creare 
+incredibili inganni. Si dice che nel Regno ve ne siano molteplici, che girano di 
+mano in mano ingannando i più sprovveduti.
+Oggetti di pregio falsi
+Il Regno è la patria di virtuosi e artisti di ogni genere, tra i migliori di Occasia, e molti 
+di costoro girano per il Regno a dipingere quadri e scolpire statue per i più ricchi signo-
+ri, disposti a spendere capitali incredibili per le loro opere. Attorno a queste ultime, il 
+mercato dei falsi e delle copie ha una diffusione colossale.
+Patenti di Nobiltà
+Con questi documenti di araldica è possibile fingere la propria appartenenza alla No -
+biltà. Funzionano esattamente come i più comuni Documenti falsi, se non per il fatto 
+che costano molto di più a causa dei numerosi accorgimenti necessari, della cartapecora 
+filigranata e dei sigilli reali tarocchi da dover impiegare.
+Reliquie false
+Dopo secoli di frodi e fregature, è impossibile persino per le canaglie più carismatiche 
+piazzare l’ennesimo pezzo di stinco di santo mezzo rosicchiato dai cani a un campagno-
+lo credulone o a un pio monaco. Per creare una falsa reliquia che si rispetti oggi servono 
+perlomeno castoni d’oro e argento, qualche pietra dura incassata nella montatura, o 
+un reliquario di velluto e cristallo. Fatto questo, l’unico limite per l’imbroglio è il cielo!equipaggiamento  
+ scadente   
+e reazioni  sociali
+Oltre a tutti gli effetti spiegati sopra 
+per i diversi tipi di equipaggiamento, 
+chi si serve di oggetti e servizi sca-
+denti potrebbe incorrere nel disgu -
+sto, nel fastidio, nella diffidenza e 
+nella riprovazione di notabili e pezzi 
+grossi. Quando una canaglia usa in 
+maniera evidente abiti, armi, servizi, 
+armature, cavalcature, oggetti d’av -
+ventura, intrugli, pozioni o compo-
+nenti di incantesimi scadenti di 
+fronte a persone altolocate o bene -
+stanti, queste ultime vedranno la 
+canaglia sempre e comunque come 
+un inaffidabile pezzente da quattro 
+soldi. Il Condottiero può applicare 
+dei malus di -1 o -2, o infliggere 
+svantaggio, alle relative prove di 
+Carisma.
+Oggetti falsi, taroccati e contraffatti
+Nome Costo
+Documenti falsi 10 mo
+Mappe false 10 mo
+Oggetti di pregio falsi 30 mo
+Patenti di Nobiltà 25 mo
+Reliquie false 30 mo
+
+
+--- PAGINA 66 ---
+
+- 64 -
+Denaro ed Equipaggiamento 
+Nuovo Equipaggiamento
+Equipaggiamento d'Avventura
+Nome Costo Peso
+Sella della donzella in pericolo 30 mo 10kgNuove Armi
+Nome Costo Danni Peso Proprietà
+Forcone d’ Arme 3 mo 1d10 perforanti 3 kg Due Mani, Pesante
+Lingua del Mattatore 4 mo 1d4 taglienti 1,5 kg Accurata, Portata, Speciale
+Schiavona 15 mo 1d8 perforanti o taglienti 1,5 kg -
+Zappa d’ Arme 2 mo 1d6 taglienti 2 kg Versatile (1d8)
+Nuove Armature
+Nome Costo Classe Armatura (CA) Forza Furtività Peso Proprietà
+Scudetto 5 mo +1 - - 1,5 kg SpecialeArmi e Armature
+Forcone d’Arme
+Il forcone è uno strumento usato per la raccolta di fieno, 
+paglia, letame e terriccio. Per la fatica che spesso si fa nell’u-
+tilizzarlo viene spesso colloquialmente chiamato anche “por-
+cone”. La versione “d’Arme” è più costosa, e pensata espres-
+samente per alternare il lavoro nei campi con la difesa dei 
+granai contro banditi, lupi e predoni.
+Lingua del Mattatore
+Questa lunga e flessuosa frusta di pelle viene usata dai mat-
+tatori di Penumbria per tenere a bada le bestie e compiere 
+acrobazie incredibili.
+Può essere utilizzata per aiutarsi in una prova di Atletica 
+o Acrobazia, disponendo di vantaggio. Permette anche di 
+usare Addestrare Animali al posto di Intimidire nelle prove 
+contro bestie.
+Schiavona
+Spada con un’elaborata guardia a gabbia metallica, ottima 
+sia negli affondi che nei colpi di taglio.
+Scudetto
+Questo piccolo scudo da parata porta le insegne della città di 
+appartenenza ed è un vanto per chi segue il gioco del Calcio 
+Draconiano.Araldica del Calcio Draconiano: conferisce +1 alle prove di 
+Carisma nei confronti degli abitanti della città alla quale lo 
+scudetto è consacrato.
+Zappa d’Arme
+La zappa è un glorioso strumento contadino, diffuso e utiliz-
+zato con maestria dai campagnoli di ogni parte del mondo. 
+Assieme alla Spada costituisce uno dei simboli del Regno. La 
+versione “d’Arme” è più costosa, e pensata espressamente per 
+alternare il lavoro nei campi con la difesa dei granai contro 
+banditi, lupi e predoni.
+Equipaggiamento d’Avventura
+Sella della donzella in pericolo
+Inventata dalla brigantessa Cinquina d’Oltrefossa per inse -
+gnare agli incauti che non vi sono donzelle in pericolo 
+nel Regno. T ramite un comodo meccanismo nascosto in 
+questa sella particolare è possibile far cascare lateralmente 
+la persona che la usa, ponendola in una situazione di appa -
+rente difficoltà. 
+Tramite lo stesso portentoso meccanismo la sella torna al suo 
+posto, permettendo di tornare a cavalcare normalmente.
+Effetto: Quando il personaggio monta su questa sella ed 
+effettua una prova di Carisma (Inganno) per fingersi in 
+difficoltà, dispone di vantaggio.
+
+--- PAGINA 67 ---
+
+- 65 -Intrugli
+Intrugli
+La gente del Regno ama preparare e consumare distillati, tin-
+ture, tonici e intrugli di ogni genere, specialmente se illegali e 
+realizzati con strumenti di fortuna: dai frati erboristi che dedi-
+cano intere camerate alla più sofisticata e attenta preparazione, 
+ai montanari che si fanno il Richiamino nelle stalle, accanto ai 
+ricoveri dei somari.
+In ogni caso, le formule speciali degli intrugli garantiscono loro 
+ottime proprietà aggiuntive che altri liquori e balsami non hanno.
+Per la comodità dei pastori e dei viaggiatori, gli intrugli ven -
+gono spesso conservati e venduti in comode fiasche di coccio, 
+di metallo o di vescica di capra.
+Gli intrugli rimangono stabili per una settimana, dopodiché 
+perdono i proprie effetti speciali rimanendo semplici bevande 
+e distillati.
+Acquamorte
+Una delle grappe più forti del Regno, colpisce come una 
+coltellata nelle viscere ed è altrettanto gustosa.
+Effetto: Quando un personaggio beve questo distillato, 
+recupera 1d4+1 punti ferita e deve superare un tiro Salvezza su 
+Costituzione con CD 10, altrimenti è avvelenato per 1 minuto.
+Afrore di Servatico
+Fango di pelo di cinghiale, muschio di sottobosco, sgrassa-
+tura di scroto di muflone e acqua di pozzanghera di foresta.
+Effetto: Quando un personaggio si cosparge di questa 
+tintura prodigiosa, dispone di vantaggio alle prove di Saggezza 
+(Addestrare Animali). A causa delle componenti disgustose, 
+il personaggio subisce tuttavia anche svantaggio nelle prove 
+di Carisma. Gli effetti dell’intruglio terminano dopo 1 ora.
+Cordiale Biondino
+Il torcibudelle che fa impazzire le donzelle: un celebre tonico 
+limpidissimo, che per sapore non conosce rivali tra pozioni 
+magiche, aperitivi e farmacopedie.
+Effetto: Quando un personaggio beve questo intruglio 
+recupera 1d4+1 punti ferita e riduce di 1 il suo livello di 
+indebolimento. Inoltre, per 8 ore il personaggio ignora gli 
+effetti di indebolimento e guadagna ispirazione.
+Estratto di Fandonia
+La Fandonia liquida è una sostanza iridescente e cangiante, che 
+si dice venga prodotta direttamente nel Paese della Cuccagna.
+Effetto: Quando si consuma una fiala di Estratto di 
+Fandonia si diventa soggetti agli effetti del Fato Padrino: la mediocrità sfugge alla Fandonia e il Fato Padrino ricerca 
+gli estremi (vedi Macaronicon). In caso di una prova di 
+caratteristica, tiro per colpire o tiro salvezza, se il tiro del d20 
+fornisce come risultato un 18, 19, 20, il tiro è considerato un 
+successo, (o nel caso di un tiro per colpire un colpo critico).
+Se il tiro del d20 fornisce come risultato un 1, 2 o 3, il tiro è 
+considerato un fallimento. La durata dell’effetto è solitamente 
+casuale (1d4 ore). Sotto gli effetti dell’estratto, tutti i colori 
+divengono cangianti e tutti i suoni più dolci e melodici. Per 
+questo motivo chi la assume subisce svantaggio alle prove di 
+Saggezza (Percezione), e -5 alla Percezione Passiva.
+Fuoco d’Aspromonti
+Questa grappa dalla gradazione fuori scala viene realizzata 
+dalla distillazione dei celebri peperoncini rozzi di Piccadora. 
+La sua potenza estrema si dice possa resuscitare i morti.
+Effetto: Se viene fatto bere a una creatura morta entro 
+l’ultimo minuto, quella creatura torna in vita con 1 punto 
+ferita e diventa incapacitata per 1 ora. Ristorare Inferiore 
+rimuove la condizione di incapacitato. Questo distillato non 
+può riportare in vita una creatura morta di vecchiaia e non 
+può ripristinare le eventuali parti del corpo mancanti.
+Grattachecca del Cocito
+Nota specialità alaziale, la grattachecca è una grappa forte-
+mente alcolica, tenuta sempre gelata grazie a una compo-
+nente arcana di contrabbando che proviene dalle profondità 
+delle rovine di Plutonia: alcune gocce dell’infernale lago T abella degli Intrugli 
+Nome Peso Costo
+Acquamorte 0,5 kg 3 ma
+Afrore di Servatico 0,5 kg 3 mo
+Cordiale Biondino 0,5 kg 12 mo
+Estratto di Fandonia 0,5 kg 10 mo
+Fuoco d’ Aspromonti 0,5 kg 25 mo
+Grattachecca del Cocito 0,5 kg 3 mo
+Infernet Malebranca 0,5 kg 3 mo
+Intruglio della Forza 0,5 kg 5 mo
+Panacea dei Fieronzi 0,5 kg 20 mo
+Presenzio 0,5 kg 20 mo
+Richiamino 0,5 kg 1 mo

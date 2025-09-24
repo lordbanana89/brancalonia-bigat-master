@@ -1,0 +1,47 @@
+{
+  "_id": "vitaDaVagabondo001",
+  "name": "Vita da Vagabondo",
+  "type": "journalEntry",
+  "img": "icons/environment/settlement/wagon.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "page001",
+      "name": "Vita da Vagabondo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Vita da Vagabondo</h1><p>Essere un vagabondo in Brancalonia significa vivere di espedienti, muoversi costantemente e fare affidamento sui propri compagni di viaggio.</p><h2>Sostentamento Quotidiano</h2><p>Ogni giorno i personaggi devono procurarsi cibo e riparo:</p><ul><li><strong>Costo Base:</strong> 2 mr per cibo e 1 mr per riparo al giorno per personaggio.</li><li><strong>Vita Frugale:</strong> 1 mr totale, ma TS Costituzione CD 10 o recuperare 1 PF in meno dai riposi.</li><li><strong>Vita Confortevole:</strong> 1 mo totale, riposo migliore (+1 PF dai riposi brevi).</li></ul><h2>Accampamento</h2><p>Quando si accampa all'aperto:</p><ul><li><strong>Senza Equipaggiamento:</strong> Riposi brevi non recuperano PF, riposi lunghi recuperano solo metà PF.</li><li><strong>Equipaggiamento Base:</strong> Riposi normali.</li><li><strong>Equipaggiamento Confortevole:</strong> +1 PF ai riposi brevi.</li></ul><h2>Trovare Lavoro</h2><p>I vagabondi possono cercare lavori temporanei in ogni insediamento:</p><ul><li><strong>Lavori Semplici:</strong> 1d4 mr al giorno, prove di Forza o Costituzione.</li><li><strong>Lavori Specializzati:</strong> 1d6 + mod. caratteristica mr al giorno, competenza negli strumenti richiesta.</li><li><strong>Lavori Pericolosi:</strong> 2d6 mr al giorno, ma rischi evidenti.</li></ul><h2>Mendicità</h2><p>Come ultima risorsa, i personaggi possono mendicare:</p><ul><li><strong>Prova Base:</strong> Carisma (Persuasione) CD 12 per 1d4 mr.</li><li><strong>Aspetto Misero:</strong> Vantaggio alla prova se si appare genuinamente bisognosi.</li><li><strong>Limiti:</strong> Solo una volta per insediamento per personaggio.</li></ul><h2>Solidarietà tra Vagabondi</h2><p>I vagabondi tendono ad aiutarsi a vicenda:</p><ul><li>Condividere informazioni sui pericoli locali</li><li>Avvertire sui posti dove non sono benvenuti</li><li>Offrire riparo temporaneo in case di fortuna</li><li>Prestare piccole somme senza interesse</li></ul><h2>Reputazione Locale</h2><p>Le azioni dei personaggi influenzano come vengono percepiti:</p><ul><li><strong>Rispettati:</strong> Sconto del 10% sui servizi, informazioni gratuite.</li><li><strong>Tollerati:</strong> Prezzi normali, atteggiamento neutrale.</li><li><strong>Malvisti:</strong> Prezzi maggiorati del 25%, servizi negati.</li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

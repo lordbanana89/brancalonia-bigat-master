@@ -1,0 +1,101 @@
+{
+  "_id": "travestimentoperfetto001",
+  "name": "Travestimento Perfetto",
+  "type": "spell",
+  "img": "icons/equipment/head/mask-carved-scream-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ti trasformi magicamente per assumere l'aspetto di un'altra persona, con dettagli così convincenti da ingannare anche i conoscenti della persona imitata.</p><p>Assumi l'aspetto di un umanoide specifico che hai visto almeno una volta. La trasformazione include abbigliamento, voce, andatura e manierismi, ma non le capacità o i ricordi del bersaglio.</p><p>Per la durata dell'incantesimo:</p><ul><li>Il tuo aspetto fisico cambia completamente per corrispondere a quello del bersaglio</li><li>La tua voce, odore e andatura corrispondono perfettamente</li><li>Hai vantaggio alle prove di Carisma (Inganno) per fingere di essere quella persona</li><li>Le prove di Saggezza (Intuizione) contro il tuo travestimento hanno svantaggio</li><li>Conosci automaticamente alcune informazioni di base sulla persona (nome completo, occupazione generale, relazioni familiari ovvie) se le osservi per almeno 1 minuto prima di lanciare l'incantesimo</li></ul><p>L'incantesimo non cambia le tue statistiche di gioco o ti conferisce le capacità specifiche del bersaglio.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "8",
+      "units": "hour"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 4,
+    "school": "ill",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "un oggetto personale appartenuto al bersaglio (capello, oggetto toccato, ecc.) e polvere di diamante del valore di 100 mo",
+      "consumed": true,
+      "cost": 100,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "_id": "frate_tecnica_mano",
+  "name": "Tecnica della Mano di Ferro e di Piuma",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Quando colpisci con un attacco della tua Raffica di Colpi puoi scegliere uno dei seguenti effetti: far cadere prono il bersaglio (TS Destrezza), spingerlo di 3 metri (TS Forza; il bersaglio o un ostacolo subisce i danni del tuo attacco senz'armi), oppure imporgli svantaggio ai suoi attacchi nel turno successivo (TS Costituzione).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

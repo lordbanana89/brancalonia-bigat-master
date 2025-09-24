@@ -1,0 +1,47 @@
+{
+  "_id": "superstizioniETradizioni001",
+  "name": "Superstizioni e Tradizioni",
+  "type": "journalEntry",
+  "img": "icons/magic/symbols/rune-sigil-ancient-purple.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "page001",
+      "name": "Superstizioni e Tradizioni",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Superstizioni e Tradizioni</h1><p>Brancalonia è ricca di superstizioni, tradizioni popolari e credenze che influenzano la vita quotidiana dei suoi abitanti.</p><h2>Superstizioni Comuni</h2><ul><li><strong>Ferro di Cavallo:</strong> Portarne uno dà +1 ai tiri salvezza contro la paura per una sessione.</li><li><strong>Sale Versato:</strong> Versare sale porta sfortuna (-1 al prossimo tiro d20), a meno che non se ne getti un pizzico dietro la spalla sinistra.</li><li><strong>Specchi Rotti:</strong> Rompere uno specchio causa sfortuna persistente per 7 giorni (-1 a tutti i tiri di fortuna).</li><li><strong>Gatti Neri:</strong> Attraversare la strada davanti a un gatto nero richiede una prova di Saggezza CD 10 o subire svantaggio al prossimo tiro d20.</li></ul><h2>Rituali Protettivi</h2><p>I personaggi possono eseguire rituali durante i riposi per ottenere piccoli benefici:</p><ul><li><strong>Cerchio di Sale:</strong> 10 mo di sale, protegge da intrusion notturne (vantaggio a Percezione durante riposi).</li><li><strong>Benedizione del Pane:</strong> Condividere pane benedetto con la compagnia dà +1 ai tiri salvezza fino al prossimo riposo lungo.</li><li><strong>Acqua Santa Improvvisata:</strong> Benedire l'acqua con preghiere sincere la rende efficace contro non morti minori.</li></ul><h2>Tradizioni Regionali</h2><ul><li><strong>Nord:</strong> Non si deve mai rifiutare l'ospitalità offerta tre volte.</li><li><strong>Sud:</strong> I duelli d'onore si combattono sempre all'alba.</li><li><strong>Isole:</strong> È tradizione lasciare offerte al mare prima di navigare.</li><li><strong>Montagne:</strong> Si deve sempre salutare i viandanti che si incontrano sui sentieri.</li></ul><h2>Feste e Celebrazioni</h2><ul><li><strong>Festa del Raccolto:</strong> Tutti i prezzi del cibo si dimezzano per una settimana.</li><li><strong>Notte delle Lanterne:</strong> I non morti sono più deboli (-2 ai loro tiri di attacco).</li><li><strong>Carnevale del Giullare:</strong> Vantaggio a tutte le prove di Carisma per una settimana.</li></ul><h2>Malocchio e Benedizioni</h2><p>Alcuni PNG possono lanciare il malocchio (sfortuna minore) o dare benedizioni (fortuna minore) basate sulle interazioni con i personaggi.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

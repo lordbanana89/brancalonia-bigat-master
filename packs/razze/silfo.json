@@ -1,0 +1,210 @@
+{
+  "_id": "silfo001",
+  "name": "Silfo",
+  "type": "race",
+  "img": "icons/creatures/fey/fairy-humanoid-winged-green.webp",
+  "system": {
+    "movement": {
+      "walk": 30,
+      "climb": 0,
+      "fly": 30,
+      "swim": 0
+    },
+    "senses": {},
+    "languages": {
+      "value": [
+        "common",
+        "sylvan"
+      ],
+      "custom": ""
+    },
+    "description": {
+      "value": "<h2>Silfo</h2><p>I Silfi sono creature fatate di piccola statura che vivono nei boschi e nelle radure di Brancalonia. Sono esseri magici con una natura giocosa e curiosa, spesso invischiati in scherzi innocui e avventure impreviste.</p><h3>Tratti Razziali</h3><ul><li><strong>Aumento Caratteristiche:</strong> Il tuo punteggio di Destrezza aumenta di 1 e il tuo punteggio di Carisma aumenta di 2.</li><li><strong>Età:</strong> I Silfi maturano alla stessa velocità degli umani ma possono vivere fino a 200 anni.</li><li><strong>Taglia:</strong> Piccola. Sei alto tra 0,6 e 1,2 metri.</li><li><strong>Velocità:</strong> La tua velocità base di camminata è di 9 metri.</li><li><strong>Volo:</strong> Grazie alle tue ali magiche, hai una velocità di volo di 9 metri. Non puoi volare se indossi armature medie o pesanti.</li><li><strong>Magia Fatata:</strong> Conosci il trucchetto <em>luci danzanti</em>. Quando raggiungi il 3° livello, puoi lanciare l'incantesimo <em>charme su persone</em> una volta con questo tratto. Quando raggiungi il 5° livello, puoi anche lanciare l'incantesimo <em>suggestione</em> una volta con questo tratto. Recuperi la capacità di lanciare questi incantesimi quando completi un riposo lungo. Il Carisma è la tua caratteristica da incantatore per questi incantesimi.</li><li><strong>Parlare con le Bestie:</strong> Attraverso suoni e gesti, puoi comunicare idee semplici con bestie di taglia Piccola o inferiore.</li><li><strong>Natura Fatata:</strong> Hai vantaggio ai tiri salvezza contro essere affascinato, e la magia non può farti dormire.</li><li><strong>Linguaggi:</strong> Parli, leggi e scrivi Comune e Silvano.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "advancement": [
+      {
+        "_id": "ability001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {
+            "dex": 1,
+            "cha": 2
+          },
+          "points": 0,
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 1,
+        "title": "Aumento Caratteristiche",
+        "icon": "icons/creatures/fey/fairy-humanoid-winged-green.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "size001",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {},
+        "level": 1,
+        "title": "Taglia",
+        "icon": "icons/creatures/fey/fairy-humanoid-winged-green.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "flight001",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "movement:fly:30"
+          ],
+          "choices": [],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Volo",
+        "icon": "icons/creatures/fey/fairy-humanoid-winged-green.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "magic001",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "spell:dancing-lights",
+            "spell:charm-person",
+            "spell:suggestion"
+          ],
+          "choices": [],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Magia Fatata",
+        "icon": "icons/creatures/fey/fairy-humanoid-winged-green.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "speak001",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "feature:speak-with-beasts"
+          ],
+          "choices": [],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Parlare con le Bestie",
+        "icon": "icons/creatures/fey/fairy-humanoid-winged-green.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "nature001",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "feature:fey-nature"
+          ],
+          "choices": [],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Natura Fatata",
+        "icon": "icons/creatures/fey/fairy-humanoid-winged-green.webp",
+        "classRestriction": ""
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

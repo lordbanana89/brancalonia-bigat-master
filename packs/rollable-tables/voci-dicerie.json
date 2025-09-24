@@ -1,0 +1,153 @@
+{
+  "_id": "voci-dicerie",
+  "name": "Voci e Dicerie",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Voci e Dicerie",
+  "results": [
+    {
+      "_id": "voci-dicerie_0",
+      "type": 0,
+      "text": "Il Duca è segretamente morto e sostituito da un sosia",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_1",
+      "type": 0,
+      "text": "C'è un tesoro nascosto nelle fogne della città",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_2",
+      "type": 0,
+      "text": "I ratti stanno diventando intelligenti e si organizzano",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_3",
+      "type": 0,
+      "text": "Guerra imminente con il regno vicino",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_4",
+      "type": 0,
+      "text": "Il pane del fornaio contiene segatura",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_5",
+      "type": 0,
+      "text": "Le streghe si riuniscono di notte al cimitero",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_6",
+      "type": 0,
+      "text": "Le tasse aumenteranno del doppio il mese prossimo",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_7",
+      "type": 0,
+      "text": "Un drago è stato avvistato nelle montagne vicine",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_8",
+      "type": 0,
+      "text": "La moglie del sindaco è segretamente una strega",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_9",
+      "type": 0,
+      "text": "I banditi controllano la strada nord",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_10",
+      "type": 0,
+      "text": "C'è la peste nel villaggio vicino",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "voci-dicerie_11",
+      "type": 0,
+      "text": "Il vescovo locale è corrotto e ricatta i nobili",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 700,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  }
+}

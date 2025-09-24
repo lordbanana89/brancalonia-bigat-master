@@ -1,0 +1,47 @@
+{
+  "_id": "armiDaFuocoPrimitive001",
+  "name": "Armi da Fuoco Primitive",
+  "type": "journalEntry",
+  "img": "icons/weapons/guns/gun-pistol-flintlock.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "page001",
+      "name": "Armi da Fuoco Primitive",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Armi da Fuoco Primitive</h1><p>Le armi da fuoco hanno fatto la loro comparsa a Brancalonia, ma sono ancora primitive, inaffidabili e costose.</p><h2>Tipi di Armi da Fuoco</h2><ul><li><strong>Archibugio:</strong> 1d12 danni perforanti, gittata 40/120, proprietà: munizioni, caricamento, due mani</li><li><strong>Pistola:</strong> 1d10 danni perforanti, gittata 30/90, proprietà: munizioni, caricamento, leggera</li><li><strong>Moschetto:</strong> 1d12 danni perforanti, gittata 80/240, proprietà: munizioni, caricamento, due mani, pesante</li></ul><h2>Regole Speciali</h2><h3>Inaffidabilità</h3><p>Le armi da fuoco primitive sono notoriamente inaffidabili:</p><ul><li><strong>Inceppamento:</strong> Su un 1-2 naturale al tiro per colpire, l'arma si inceppa.</li><li><strong>Riparazione:</strong> Azione intera per liberare l'inceppamento.</li><li><strong>Esplosione:</strong> Su un 1 naturale, l'arma esplode causando 1d6 danni da fuoco al portatore.</li></ul><h3>Munizioni</h3><ul><li><strong>Palle di Piombo:</strong> 4 mr per 10 munizioni, peso 2 libbre per 10.</li><li><strong>Polvere da Sparo:</strong> Necessaria per ogni colpo, inclusa nel costo delle munizioni.</li><li><strong>Miccia:</strong> Deve rimanere asciutta, inutilizzabile se bagnata.</li></ul><h3>Manutenzione</h3><p>Le armi da fuoco richiedono manutenzione costante:</p><ul><li><strong>Pulizia Quotidiana:</strong> 10 minuti con kit di pulizia.</li><li><strong>Senza Manutenzione:</strong> +1 alla probabilità di inceppamento per ogni giorno saltato.</li><li><strong>Kit di Pulizia:</strong> 2 mo, peso 1 libbra.</li></ul><h2>Vantaggi e Svantaggi</h2><h3>Vantaggi</h3><ul><li>Ignorano la resistenza alle armi non magiche</li><li>Danni elevati per armi a distanza</li><li>Effetto psicologico intimidatorio (+2 a Intimidire)</li></ul><h3>Svantaggi</h3><ul><li>Molto costose (10 volte il prezzo di armi equivalenti)</li><li>Rumorose (si sentono fino a 1 km di distanza)</li><li>Lente da ricaricare</li><li>Inutilizzabili sotto la pioggia senza protezione</li></ul><h2>Disponibilità</h2><p>Le armi da fuoco sono rare e costose:</p><ul><li><strong>Città Grandi:</strong> 25% di probabilità di trovarle</li><li><strong>Città Piccole:</strong> 10% di probabilità</li><li><strong>Villaggi:</strong> Non disponibili normalmente</li><li><strong>Mercato Nero:</strong> Sempre disponibili ma a prezzi maggiorati del 50%</li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "id": "brancalonia-bigat",
+  "title": "Brancalonia - Il Regno di Taglia",
+  "description": "Modulo completo per giocare a Brancalonia nel Regno di Taglia. Include tutte le meccaniche del manuale: Infamia, Compagnia, Haven, Risse da Taverna, Lavori Sporchi, Menagramo, Oggetti Scadenti, Malattie, Hazard Ambientali, Duelli, Fazioni e Reputazione. Compatibile con D&D 5e.",
+  "version": "3.0.0",
+  "compatibility": {
+    "minimum": "13.0.0",
+    "verified": "13.347",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "Brancalonia Community",
+      "discord": "brancalonia#0001"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.3.0",
+          "verified": "3.3.1"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "modules/brancalonia-init.js"
+  ],
+  "styles": [
+    "brancalonia.css"
+  ],
+  "languages": [
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "lang/it.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "razze",
+      "label": "Stirpi di Brancalonia",
+      "path": "packs/razze",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "classi",
+      "label": "Classi di Brancalonia",
+      "path": "packs/classi",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "equipaggiamento",
+      "label": "Equipaggiamento Scadente",
+      "path": "packs/equipaggiamento",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "talenti",
+      "label": "Talenti di Brancalonia",
+      "path": "packs/talenti",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "incantesimi",
+      "label": "Incantesimi di Brancalonia",
+      "path": "packs/incantesimi",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rollable-tables",
+      "label": "Tabelle Casuali (310)",
+      "path": "packs/rollable-tables",
+      "type": "RollTable",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "regole",
+      "label": "Regole di Brancalonia",
+      "path": "packs/regole",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "npc",
+      "label": "PNG di Brancalonia",
+      "path": "packs/npc",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macro",
+      "label": "Macro di Brancalonia",
+      "path": "packs/macro",
+      "type": "Macro",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "brancalonia-features",
+      "label": "Privilegi di Brancalonia",
+      "path": "packs/brancalonia-features",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Brancalonia",
+      "sorting": "a",
+      "packs": [
+        "brancalonia-features",
+        "classi",
+        "equipaggiamento",
+        "incantesimi",
+        "macro",
+        "npc",
+        "razze",
+        "regole",
+        "rollable-tables",
+        "talenti"
+      ]
+    }
+  ],
+  "flags": {
+    "brancalonia-bigat": {
+      "fullImplementation": true,
+      "mechanicsCount": 283,
+      "tablesCount": 310
+    }
+  },
+  "url": "https://github.com/brancalonia-community/brancalonia-bigat",
+  "manifest": "https://raw.githubusercontent.com/brancalonia-community/brancalonia-bigat/main/module.json",
+  "download": "https://github.com/brancalonia-community/brancalonia-bigat/releases/latest/download/brancalonia-bigat.zip",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "media": [
+    {
+      "type": "icon",
+      "url": "assets/artwork/fond.webp"
+    },
+    {
+      "type": "cover",
+      "url": "assets/artwork/cover.webp"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "_id": "bisacciabucata001",
+  "name": "Bisaccia Bucata",
+  "type": "loot",
+  "img": "icons/containers/bags/pack-leather-worn-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una bisaccia di cuoio con un buco nascosto nel fondo che fa perdere oggetti piccoli.</p><p><strong>Perdita Casuale:</strong> Ogni giorno c'è il 10% di probabilità di perdere un oggetto piccolo casuale contenuto nella bisaccia.</p><p><strong>Capacità:</strong> Può contenere fino a 30 libbre di equipaggiamento.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}
