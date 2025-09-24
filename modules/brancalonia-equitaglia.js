@@ -6,7 +6,6 @@
 export class BrancaloniaEquitaglia {
   constructor() {
     this.setupEquitaglia();
-    this.registerHooks();
   }
 
   setupEquitaglia() {
@@ -377,51 +376,6 @@ export class BrancaloniaEquitaglia {
     return ricompensa;
   }
 
-  /**
-   * Hook per aggiungere UI e funzionalità
-   */
-  registerHooks() {
-    // Aggiungi pulsanti alla scheda attore
-    Hooks.on("renderActorSheet", (app, html, data) => {
-      if (app.actor.type !== "character") return;
-
-      const taglia = app.actor.getFlag("brancalonia", "taglia") || 0;
-      const malefatte = app.actor.getFlag("brancalonia", "malefatte") || [];
-
-      // Aggiungi sezione Equitaglia alla scheda
-      const equitagliaSection = `
-        <div class="brancalonia-section equitaglia">
-          <h3>⚖️ Equitaglia - Registro Malefatte</h3>
-          <div class="taglia-display">
-            <span>Taglia Totale: <strong>${taglia} gransoldi</strong></span>
-            <span>Pena Potenziale: <strong>${this.calcolaPena(taglia)} giorni</strong></span>
-          </div>
-          <div class="malefatte-list">
-            ${malefatte.map(m => `
-              <div class="malefatta-entry">
-                <span>${m.nome}</span>
-                <span>${m.valore} mo</span>
-              </div>
-            `).join('')}
-          </div>
-          <div class="equitaglia-controls">
-            <button class="aggiungi-malefatta" title="Aggiungi Malefatta">
-              <i class="fas fa-gavel"></i> Nuova Malefatta
-            </button>
-            <button class="cattura-malfattore" title="Cattura!">
-              <i class="fas fa-handcuffs"></i> Cattura
-            </button>
-          </div>
-        </div>
-      `;
-
-      html.find(".tab.biography").append(equitagliaSection);
-
-      // Event handlers
-      html.find(".aggiungi-malefatta").click(() => this.mostraDialogoMalefatta(app.actor));
-      html.find(".cattura-malfattore").click(() => this.mostraDialogoCattura(app.actor));
-    });
-  }
 
   /**
    * Mostra dialogo per aggiungere una malefatta
@@ -529,6 +483,55 @@ export class BrancaloniaEquitaglia {
     }).render(true);
   }
 }
+
+// Registra hooks prima del ready
+Hooks.once("init", () => {
+  // Registra hook per UI qui, prima che le schede vengano aperte
+  Hooks.on("renderActorSheet", (app, html, data) => {
+    if (app.actor.type !== "character") return;
+    if (!game.brancalonia?.equitaglia) return; // Aspetta che il sistema sia pronto
+
+    const taglia = app.actor.getFlag("brancalonia", "taglia") || 0;
+    const malefatte = app.actor.getFlag("brancalonia", "malefatte") || [];
+
+    // Aggiungi sezione Equitaglia alla scheda
+    const equitagliaSection = `
+      <div class="brancalonia-section equitaglia">
+        <h3>⚖️ Equitaglia - Registro Malefatte</h3>
+        <div class="taglia-display">
+          <span>Taglia Totale: <strong>${taglia} gransoldi</strong></span>
+          <span>Pena Potenziale: <strong>${taglia * 10} giorni</strong></span>
+        </div>
+        <div class="malefatte-list">
+          ${malefatte.map(m => `
+            <div class="malefatta-entry">
+              <span>${m.nome}</span>
+              <span>${m.valore} mo</span>
+            </div>
+          `).join('')}
+        </div>
+        <div class="equitaglia-controls">
+          <button class="aggiungi-malefatta" title="Aggiungi Malefatta">
+            <i class="fas fa-gavel"></i> Nuova Malefatta
+          </button>
+          <button class="cattura-malfattore" title="Cattura!">
+            <i class="fas fa-handcuffs"></i> Cattura
+          </button>
+        </div>
+      </div>
+    `;
+
+    html.find(".tab.biography").append(equitagliaSection);
+
+    // Event handlers
+    html.find(".aggiungi-malefatta").click(() => {
+      game.brancalonia.equitaglia.mostraDialogoMalefatta(app.actor);
+    });
+    html.find(".cattura-malfattore").click(() => {
+      game.brancalonia.equitaglia.mostraDialogoCattura(app.actor);
+    });
+  });
+});
 
 // Inizializza il sistema
 Hooks.once("ready", () => {
