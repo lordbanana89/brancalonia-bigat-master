@@ -8,36 +8,8 @@ Hooks.once('ready', () => {
   console.log('🛠️ Brancalonia - Fix Tooltip Attivato');
 });
 
-// Sovrascrivi il comportamento dei tooltip per gli oggetti Brancalonia
-Hooks.on('renderCompendiumDirectory', (app, html, data) => {
-  // Aggiungi gestione tooltip personalizzata per i compendi Brancalonia
-  const brancaloniaCompendiums = [
-    'brancalonia-bigat.equipaggiamento',
-    'brancalonia-bigat.talenti',
-    'brancalonia-bigat.incantesimi',
-    'brancalonia-bigat.regole'
-  ];
-
-  // Hook per gestire i link UUID nei journal
-  if (game.system.id === 'dnd5e') {
-    const originalEnrichHTML = TextEditor.enrichHTML;
-
-    TextEditor.enrichHTML = function(content, options = {}) {
-      // Prima applica l'enrichHTML originale
-      let enriched = originalEnrichHTML.call(this, content, options);
-
-      // Poi aggiungi data-tooltip per i link Brancalonia
-      enriched = enriched.replace(
-        /data-uuid="Compendium\.(brancalonia-bigat)\.([\w-]+)\.([\w]+)"/g,
-        (match, module, pack, id) => {
-          return `${match} data-tooltip="Compendium.${module}.${pack}.${id}"`;
-        }
-      );
-
-      return enriched;
-    };
-  }
-});
+// Non sovrascrivi enrichHTML direttamente per evitare conflitti
+// Usa invece hook più sicuri per gestire i tooltip
 
 // Fix specifico per il sistema dnd5e Tooltips
 Hooks.on('dnd5eRenderTooltip', (tooltip, html, data) => {
@@ -50,42 +22,23 @@ Hooks.on('dnd5eRenderTooltip', (tooltip, html, data) => {
   }
 });
 
-// Patch per prevenire l'errore quando richTooltip è null
-Hooks.once('init', () => {
-  // Intercetta e gestisci l'errore dei tooltip
-  if (game.system.id === 'dnd5e') {
-    libWrapper?.register('brancalonia-bigat', 'CONFIG.DND5E.tooltips._onHoverContentLink', function (wrapped, ...args) {
-      try {
-        // Prova ad eseguire la funzione originale
-        return wrapped(...args);
-      } catch (error) {
-        // Se c'è un errore relativo a richTooltip, gestiscilo silenziosamente
-        if (error.message?.includes('richTooltip')) {
-          console.warn('Tooltip non disponibile per questo oggetto Brancalonia');
-          return;
-        }
-        // Altrimenti rilancia l'errore
-        throw error;
-      }
-    }, 'WRAPPER');
-  }
-});
+// Gestione semplificata dei tooltip senza libWrapper
+Hooks.once('ready', () => {
+  // Aggiungi gestione errori base per i tooltip
+  document.addEventListener('mouseover', async (event) => {
+    const link = event.target.closest('a[data-uuid]');
+    if (link?.dataset?.uuid?.includes('brancalonia-bigat')) {
+      // Previeni l'errore aggiungendo attributi tooltip
+      if (!link.dataset.tooltip) {
+        link.dataset.tooltip = link.dataset.uuid;
+        link.dataset.tooltipClass = 'brancalonia-item';
 
-// Fallback se libWrapper non è disponibile
-if (!window.libWrapper) {
-  Hooks.once('ready', () => {
-    // Aggiungi gestione errori base per i tooltip
-    document.addEventListener('mouseover', (event) => {
-      const link = event.target.closest('a[data-uuid]');
-      if (link?.dataset?.uuid?.includes('brancalonia-bigat')) {
-        // Previeni l'errore aggiungendo un tooltip placeholder
-        if (!link.dataset.tooltip) {
-          link.dataset.tooltip = link.dataset.uuid;
-        }
+        // Previeni l'errore del sistema dnd5e
+        link.dataset.tooltipDirection = 'UP';
       }
-    }, true);
-  });
-}
+    }
+  }, true);
+});
 
 // Hook per aggiungere tooltip ai documenti renderizzati
 Hooks.on('renderJournalSheet', (app, html, data) => {
