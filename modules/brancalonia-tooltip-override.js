@@ -36,9 +36,9 @@ Hooks.once('ready', () => {
   // Override con versione sicura - NOTA: il parametro è doc, non event!
   Tooltips5e.prototype._onHoverContentLink = async function(doc) {
     try {
-      // Se non c'è documento, esci
+      // Se non c'è documento, esci silenziosamente
       if (!doc) {
-        console.warn('Tooltip chiamato senza documento');
+        // Non loggare - succede normalmente quando si muove il mouse fuori dal link
         return;
       }
 
