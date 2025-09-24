@@ -1,7 +1,0 @@
-2023/09/02-06:52:08.023 1a10 Recovering log #28
-2023/09/02-06:52:08.030 1a10 Delete type=0 #28
-2023/09/02-06:52:08.031 1a10 Delete type=3 #26
-2023/09/02-07:04:41.133 28c8 Level-0 table #33: started
-2023/09/02-07:04:41.133 28c8 Level-0 table #33: 0 bytes OK
-2023/09/02-07:04:41.136 28c8 Delete type=0 #31
-2023/09/02-07:04:41.145 28c8 Manual compaction at level-0 from '!users!FuuSNPsTkw5TuF7m' @ 72057594037927935 : 1 .. '!users!FuuSNPsTkw5TuF7m' @ 0 : 0; will stop at (end)
