@@ -33,31 +33,18 @@ Hooks.once('ready', () => {
   // Salva il metodo originale
   const original_onHoverContentLink = Tooltips5e.prototype._onHoverContentLink;
 
-  // Override con versione sicura
-  Tooltips5e.prototype._onHoverContentLink = async function(event) {
+  // Override con versione sicura - NOTA: il parametro è doc, non event!
+  Tooltips5e.prototype._onHoverContentLink = async function(doc) {
     try {
-      // Ottieni il link e UUID
-      const link = event.currentTarget;
-      const uuid = link?.dataset?.uuid;
-
-      // Log per debug
-      if (uuid?.includes('brancalonia-bigat')) {
-        console.log(`🔍 Tooltip per: ${uuid}`);
-      }
-
-      // Carica il documento
-      let doc = null;
-      try {
-        doc = await fromUuid(uuid);
-      } catch (e) {
-        console.warn('Errore caricamento documento:', e);
-        return;
-      }
-
-      // Se non trova il documento, esci
+      // Se non c'è documento, esci
       if (!doc) {
-        console.warn('Documento non trovato:', uuid);
+        console.warn('Tooltip chiamato senza documento');
         return;
+      }
+
+      // Log per debug documenti Brancalonia
+      if (doc.uuid?.includes('brancalonia-bigat') || doc.pack?.includes('brancalonia-bigat')) {
+        console.log(`🔍 Tooltip per: ${doc.name} (${doc.uuid})`);
       }
 
       // FIX CRITICO: Assicurati che la struttura esista
@@ -95,29 +82,32 @@ Hooks.once('ready', () => {
       }
 
       // Ora chiama il metodo originale con il documento fixato
-      return await original_onHoverContentLink.call(this, event);
+      return await original_onHoverContentLink.call(this, doc);
 
     } catch (error) {
       // Se c'è ancora un errore, loggalo ma non crashare
       console.error('Errore nel tooltip:', error);
 
-      // Se l'errore è il solito richTooltip, mostra un tooltip di fallback
-      if (error.message?.includes('richTooltip')) {
-        const link = event.currentTarget;
-        const uuid = link?.dataset?.uuid;
+      // Se l'errore è il solito richTooltip, usa il documento che abbiamo
+      if (error.message?.includes('richTooltip') && doc) {
+        console.warn(`Tooltip fallback per ${doc.name}`);
 
-        // Prova a mostrare almeno il nome
-        try {
-          const doc = await fromUuid(uuid);
-          if (doc) {
-            // Usa il sistema tooltip di Foundry direttamente
-            game.tooltip.activate(link, {
-              content: `<div class="item-tooltip"><strong>${doc.name}</strong><br>${doc.type || 'Item'}</div>`,
-              direction: 'UP'
-            });
-          }
-        } catch (e) {
-          console.warn('Anche il fallback ha fallito:', e);
+        // Crea un contenuto tooltip di base
+        const fallbackContent = `
+          <div class="item-tooltip">
+            <strong>${doc.name}</strong>
+            <div class="item-type">${doc.type || 'Item'}</div>
+            ${doc.system?.description?.value ?
+              `<div class="item-desc">${doc.system.description.value.substring(0, 100)}...</div>` :
+              ''}
+          </div>
+        `;
+
+        // Prova a mostrare il tooltip usando il metodo interno
+        if (this.tooltip) {
+          this.tooltip.innerHTML = fallbackContent;
+          this.tooltip.classList.remove('theme-dark');
+          // Il tooltip dovrebbe già essere posizionato
         }
       }
 
