@@ -1,5 +1,5 @@
-2025/09/24-18:28:39.095698 171697000 Delete type=3 #1
-2025/09/24-18:28:39.098371 171f2f000 Level-0 table #5: started
-2025/09/24-18:28:39.099006 171f2f000 Level-0 table #5: 54281 bytes OK
-2025/09/24-18:28:39.099082 171f2f000 Delete type=0 #3
-2025/09/24-18:28:39.099156 171f2f000 Manual compaction at level-0 from '!journal!armiDaFuocoPrimitive001' @ 72057594037927935 : 1 .. '!pages!vitaDaVagabondo001_page_1' @ 0 : 0; will stop at (end)
+2025/09/24-18:29:52.177465 17351f000 Delete type=3 #1
+2025/09/24-18:29:52.179818 173db7000 Level-0 table #5: started
+2025/09/24-18:29:52.180487 173db7000 Level-0 table #5: 54281 bytes OK
+2025/09/24-18:29:52.180626 173db7000 Delete type=0 #3
+2025/09/24-18:29:52.180688 173db7000 Manual compaction at level-0 from '!journal!armiDaFuocoPrimitive001' @ 72057594037927935 : 1 .. '!pages!vitaDaVagabondo001_page_1' @ 0 : 0; will stop at (end)
