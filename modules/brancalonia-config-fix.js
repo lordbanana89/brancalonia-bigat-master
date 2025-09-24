@@ -50,13 +50,13 @@ Hooks.once("ready", () => {
           label: "BRANCALONIA.Skills.Streetwise",
           ability: "wis",
           fullKey: "streetwise",
-          icon: "systems/dnd5e/icons/skills/shadow_17.jpg"
+          img: "systems/dnd5e/icons/skills/shadow_17.jpg"
         },
         gambling: {
           label: "BRANCALONIA.Skills.Gambling",
           ability: "cha",
           fullKey: "gambling",
-          icon: "systems/dnd5e/icons/skills/ice_17.jpg"
+          img: "systems/dnd5e/icons/skills/ice_17.jpg"
         }
       });
     }
@@ -66,13 +66,13 @@ Hooks.once("ready", () => {
       foundry.utils.mergeObject(CONFIG.DND5E.conditionTypes, {
         menagramo: {
           name: "BRANCALONIA.Conditions.Menagramo",
-          icon: "icons/magic/death/skull-evil-grin-red.webp",
+          img: "icons/magic/death/skull-evil-grin-red.webp",
           reference: "Compendium.brancalonia-bigat.regole.JournalEntry.menagramo",
           statuses: ["menagramo"]
         },
         ubriaco: {
           name: "BRANCALONIA.Conditions.Drunk",
-          icon: "icons/consumables/drinks/wine-bottle-table-brown.webp",
+          img: "icons/consumables/drinks/wine-bottle-table-brown.webp",
           reference: "Compendium.brancalonia-bigat.regole.JournalEntry.ubriachezza",
           statuses: ["drunk"]
         }
@@ -98,7 +98,7 @@ Hooks.once("ready", () => {
       foundry.utils.mergeObject(CONFIG.DND5E.damageTypes, {
         nonlethal: {
           label: "BRANCALONIA.DamageTypes.NonLethal",
-          icon: "icons/skills/melee/unarmed-punch-fist.webp",
+          img: "icons/skills/melee/unarmed-punch-fist.webp",
           reference: ""
         }
       });
