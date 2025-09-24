@@ -38,6 +38,12 @@ Hooks.once("init", () => {
   // Registra settings
   registerBrancaloniaSettings();
 
+  // Registra il flag scope per Brancalonia
+  CONFIG.Actor.documentClass.registerFlagScope("brancalonia");
+  CONFIG.Item.documentClass.registerFlagScope("brancalonia");
+  CONFIG.Token.documentClass.registerFlagScope("brancalonia");
+  console.log("Brancalonia | Flag scope registrato per Actor, Item e Token");
+
   console.log("Brancalonia | Inizializzazione completata");
 });
 
