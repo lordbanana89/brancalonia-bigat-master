@@ -90,8 +90,7 @@ Hooks.once("init", () => {
     reference: ""
   };
 
-  // Registra flag per actor
-  CONFIG.Actor.documentClass = BrancaloniaActor;
+  // Non sovrascriviamo più documentClass per evitare conflitti con dnd5e v5.x
 
   // Registra template paths
   loadTemplates([
@@ -107,83 +106,72 @@ Hooks.once("init", () => {
   console.log("Brancalonia | Inizializzazione completata");
 });
 
-// Estensione della classe Actor per Brancalonia
-class BrancaloniaActor extends CONFIG.Actor.documentClass {
-  prepareData() {
-    super.prepareData();
-
-    // Aggiungi dati Brancalonia
-    if (!this.flags.brancalonia) {
-      this.flags.brancalonia = {};
-    }
-
-    // Inizializza infamia
-    if (this.flags.brancalonia.infamia === undefined) {
-      this.flags.brancalonia.infamia = 0;
-    }
-
-    // Inizializza stato menagramo
-    if (this.flags.brancalonia.menagramo === undefined) {
-      this.flags.brancalonia.menagramo = false;
-    }
+// Helper functions per Brancalonia invece di estendere la classe
+function initializeBrancaloniaData(actor) {
+  // Aggiungi dati Brancalonia usando flags
+  if (!actor.getFlag("brancalonia", "initialized")) {
+    actor.setFlag("brancalonia", "initialized", true);
+    actor.setFlag("brancalonia", "infamia", 0);
+    actor.setFlag("brancalonia", "menagramo", false);
   }
+}
 
-  // Metodo per aggiungere infamia
-  async addInfamia(value) {
-    const currentInfamia = this.flags.brancalonia?.infamia || 0;
-    const newInfamia = Math.max(0, Math.min(100, currentInfamia + value));
+// Metodi helper per aggiungere funzionalità Brancalonia agli attori
+async function addInfamia(actor, value) {
+  const currentInfamia = actor.getFlag("brancalonia", "infamia") || 0;
+  const newInfamia = Math.max(0, Math.min(100, currentInfamia + value));
 
-    await this.setFlag("brancalonia", "infamia", newInfamia);
+  await actor.setFlag("brancalonia", "infamia", newInfamia);
 
-    // Notifica
-    ui.notifications.info(`${this.name} guadagna ${value} punti Infamia (Totale: ${newInfamia})`);
+  // Notifica
+  ui.notifications.info(`${actor.name} guadagna ${value} punti Infamia (Totale: ${newInfamia})`);
 
-    // Controlla livelli infamia per effetti
-    this.checkInfamiaEffects(newInfamia);
+  // Controlla livelli infamia per effetti
+  checkInfamiaEffects(actor, newInfamia);
+}
+
+// Controlla effetti basati sul livello di infamia
+function checkInfamiaEffects(actor, infamiaLevel) {
+  if (infamiaLevel >= 75) {
+    ui.notifications.warn(`${actor.name} è ora un Fuorilegge Ricercato!`);
+  } else if (infamiaLevel >= 50) {
+    ui.notifications.warn(`${actor.name} ha una Taglia sulla testa!`);
+  } else if (infamiaLevel >= 25) {
+    ui.notifications.info(`${actor.name} è Mal Visto dalle autorità`);
   }
+}
 
-  // Controlla effetti basati sul livello di infamia
-  checkInfamiaEffects(infamiaLevel) {
-    if (infamiaLevel >= 75) {
-      ui.notifications.warn(`${this.name} è ora un Fuorilegge Ricercato!`);
-    } else if (infamiaLevel >= 50) {
-      ui.notifications.warn(`${this.name} ha una Taglia sulla testa!`);
-    } else if (infamiaLevel >= 25) {
-      ui.notifications.info(`${this.name} è Mal Visto dalle autorità`);
-    }
-  }
+// Metodo per applicare menagramo
+async function applyMenagramo(actor, duration = "1d4") {
+  await actor.setFlag("brancalonia", "menagramo", true);
+  await actor.setFlag("brancalonia", "menagramoDuration", duration);
 
-  // Metodo per applicare menagramo
-  async applyMenagramo(duration = "1d4") {
-    await this.setFlag("brancalonia", "menagramo", true);
-    await this.setFlag("brancalonia", "menagramoDuration", duration);
-
-    // Applica active effect
-    const effect = {
-      label: "Menagramo",
-      icon: "icons/magic/death/skull-evil-grin-red.webp",
-      origin: this.uuid,
-      disabled: false,
-      duration: {
-        rounds: await new Roll(duration).evaluate().then(r => r.total)
-      },
-      changes: [
-        {
-          key: "flags.midi-qol.disadvantage.all",
-          mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
-          value: "1"
-        }
-      ],
-      flags: {
-        brancalonia: {
-          isMenagramo: true
-        }
+  // Applica active effect
+  const roll = await new Roll(duration).evaluate();
+  const effect = {
+    label: "Menagramo",
+    icon: "icons/magic/death/skull-evil-grin-red.webp",
+    origin: actor.uuid,
+    disabled: false,
+    duration: {
+      rounds: roll.total
+    },
+    changes: [
+      {
+        key: "flags.midi-qol.disadvantage.all",
+        mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
+        value: "1"
       }
-    };
+    ],
+    flags: {
+      brancalonia: {
+        isMenagramo: true
+      }
+    }
+  };
 
-    await this.createEmbeddedDocuments("ActiveEffect", [effect]);
-    ui.notifications.warn(`${this.name} è sotto l'effetto del Menagramo!`);
-  }
+  await actor.createEmbeddedDocuments("ActiveEffect", [effect]);
+  ui.notifications.warn(`${actor.name} è sotto l'effetto del Menagramo!`);
 }
 
 // Registrazione settings del modulo
@@ -316,10 +304,22 @@ Hooks.once("ready", async () => {
   }
 });
 
+// Hook per inizializzare nuovi attori
+Hooks.on("createActor", (actor, options, userId) => {
+  if (actor.type === "character") {
+    initializeBrancaloniaData(actor);
+  }
+});
+
 // Hook per modificare sheet degli attori
 Hooks.on("renderActorSheet5e", (app, html, data) => {
   // Solo per PG
   if (data.actor.type !== "character") return;
+
+  // Inizializza se non già fatto
+  if (!data.actor.getFlag("brancalonia", "initialized")) {
+    initializeBrancaloniaData(data.actor);
+  }
 
   // Aggiungi tracker infamia
   if (game.settings.get("brancalonia-bigat", "trackInfamia")) {
@@ -369,8 +369,8 @@ Hooks.on("dnd5e.applyDamage", (actor, damage, options) => {
 
 // Esporta per uso globale
 window.BrancaloniaSystem = {
-  addInfamia: (actor, value) => actor.addInfamia(value),
-  applyMenagramo: (actor, duration) => actor.applyMenagramo(duration),
+  addInfamia: (actor, value) => addInfamia(actor, value),
+  applyMenagramo: (actor, duration) => applyMenagramo(actor, duration),
   startBrawl: () => game.brancalonia.tavernBrawl?.startBrawl(),
   generateJob: (type, level) => game.brancalonia.dirtyJobs?.generateJob(type, level),
   createCompagnia: (actors) => game.brancalonia.compagniaManager?.createCompagnia(actors),
