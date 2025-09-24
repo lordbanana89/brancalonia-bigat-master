@@ -504,7 +504,11 @@ export class BrancaloniaRischiMestiere {
 
 // Inizializza il sistema
 Hooks.once("ready", () => {
-  if (!game.brancalonia) game.brancalonia = {};
+  // NON sovrascrivere game.brancalonia, solo aggiungere rischiMestiere
+  if (!game.brancalonia) {
+    console.error("Brancalonia | game.brancalonia non trovato!");
+    return;
+  }
   game.brancalonia.rischiMestiere = new BrancaloniaRischiMestiere();
   console.log("Brancalonia | Sistema Rischi del Mestiere inizializzato");
 });

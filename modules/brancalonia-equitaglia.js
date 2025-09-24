@@ -535,7 +535,11 @@ Hooks.once("init", () => {
 
 // Inizializza il sistema
 Hooks.once("ready", () => {
-  if (!game.brancalonia) game.brancalonia = {};
+  // NON sovrascrivere game.brancalonia, solo aggiungere equitaglia
+  if (!game.brancalonia) {
+    console.error("Brancalonia | game.brancalonia non trovato!");
+    return;
+  }
   game.brancalonia.equitaglia = new BrancaloniaEquitaglia();
   console.log("Brancalonia | Sistema Equitaglia inizializzato");
 });
