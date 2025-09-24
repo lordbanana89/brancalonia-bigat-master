@@ -36,10 +36,31 @@ Hooks.once('ready', () => {
   // Override con versione sicura - NOTA: il parametro è doc, non event!
   Tooltips5e.prototype._onHoverContentLink = async function(doc) {
     try {
-      // Se non c'è documento, esci silenziosamente
+      // Se non c'è documento, proviamo a crearlo dal link
       if (!doc) {
-        // Non loggare - succede normalmente quando si muove il mouse fuori dal link
-        return;
+        console.warn('Tooltip chiamato senza documento - provo a recuperarlo dal link');
+
+        // Cerca l'elemento con UUID nel DOM che ha triggerato il tooltip
+        const activeElement = document.querySelector('[data-uuid]:hover');
+        if (activeElement) {
+          const uuid = activeElement.dataset.uuid;
+          console.log(`Recupero documento da UUID: ${uuid}`);
+
+          try {
+            // Prova a recuperare il documento dall'UUID
+            doc = await fromUuid(uuid);
+            if (!doc) {
+              console.warn(`Non riesco a recuperare documento per UUID: ${uuid}`);
+              return;
+            }
+          } catch (e) {
+            console.error(`Errore recuperando documento da UUID ${uuid}:`, e);
+            return;
+          }
+        } else {
+          // Nessun elemento con UUID trovato
+          return;
+        }
       }
 
       // Log per debug documenti Brancalonia
