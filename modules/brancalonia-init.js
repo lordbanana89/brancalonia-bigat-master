@@ -92,8 +92,8 @@ Hooks.once("init", () => {
 
   // Non sovrascriviamo più documentClass per evitare conflitti con dnd5e v5.x
 
-  // Registra template paths
-  loadTemplates([
+  // Registra template paths - Usa il nuovo namespace per Foundry v13
+  foundry.applications.handlebars.loadTemplates([
     "modules/brancalonia-bigat/templates/infamia-tracker.hbs",
     "modules/brancalonia-bigat/templates/compagnia-sheet.hbs",
     "modules/brancalonia-bigat/templates/haven-manager.hbs",
