@@ -4,7 +4,7 @@ const path = require('path');
 
 async function compilePack(packName, collectionType) {
   const sourcePath = path.join(__dirname, 'packs', packName, '_source');
-  const dbPath = path.join(__dirname, 'packs', packName, packName);
+  const dbPath = path.join(__dirname, 'packs', packName); // Database direttamente nella cartella pack
 
   // Rimuovi il database esistente
   if (fs.existsSync(dbPath)) {
