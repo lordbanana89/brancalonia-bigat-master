@@ -1,0 +1,26 @@
+{
+  "_id": "testMinimal001",
+  "name": "Test Minimo",
+  "type": "journalEntry",
+  "_key": "!journal!testMinimal001",
+  "pages": [
+    {
+      "_id": "testMinimal001_page_1",
+      "name": "Pagina Test",
+      "type": "text",
+      "text": {
+        "content": "<h1>Test</h1><p>Questo è un test minimo.</p>",
+        "format": 1
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347"
+  }
+}

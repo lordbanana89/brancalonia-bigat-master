@@ -1,5 +1,0 @@
-2025/09/24-18:53:23.528940 16f867000 Delete type=3 #1
-2025/09/24-18:53:23.531218 16f8f3000 Level-0 table #5: started
-2025/09/24-18:53:23.532080 16f8f3000 Level-0 table #5: 52804 bytes OK
-2025/09/24-18:53:23.532152 16f8f3000 Delete type=0 #3
-2025/09/24-18:53:23.532230 16f8f3000 Manual compaction at level-0 from '!journal!armiDaFuocoPrimitive001' @ 72057594037927935 : 1 .. '!pages!vitaDaVagabondo001_page_1' @ 0 : 0; will stop at (end)
