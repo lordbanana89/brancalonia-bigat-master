@@ -5,7 +5,7 @@
   "img": "icons/magic/control/mute-red.webp",
   "system": {
     "description": {
-      "value": "<p>Puoi lanciare l'incantesimo <em>silenzio</em> senza spendere slot un numero di volte pari al tuo modificatore di Carisma (minimo una volta) e recuperi tutti gli usi al termine di un riposo lungo. Inoltre puoi sostituire la componente verbale dei tuoi incantesimi con una componente somatica, e i bersagli della tua Ispirazione Bardica non devono udirti se possono vederti.</p>",
+      "value": "<p>Puoi lanciare l'incantesimo <em>silenzio</em> senza spendere slot un numero di volte pari al tuo modificatore di Carisma (minimo una volta) e recuperi tutti gli usi al termine di un riposo lungo. Inoltre puoi sostituire la componente verbale dei tuoi incantesimi con una componente somatica, e i bersagli della tua Ispirazione Bardica non devono udirti se possono vederti.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

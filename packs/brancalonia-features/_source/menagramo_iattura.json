@@ -5,7 +5,7 @@
   "img": "icons/magic/death/projectile-skull-pink.webp",
   "system": {
     "description": {
-      "value": "<p>Come azione scegli una creatura entro 40 metri che possa udirti. Il bersaglio subisce svantaggio al prossimo tiro salvezza contro una magia che lanci. Recuperi l'uso di questa capacità dopo un riposo breve o lungo.</p>",
+      "value": "<p>Come azione scegli una creatura entro 40 metri che possa udirti. Il bersaglio subisce svantaggio al prossimo tiro salvezza contro una magia che lanci. Recuperi l'uso di questa capacità dopo un riposo breve o lungo.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

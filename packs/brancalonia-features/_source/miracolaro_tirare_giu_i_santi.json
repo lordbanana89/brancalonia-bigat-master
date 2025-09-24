@@ -5,7 +5,7 @@
   "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Quando fallisci un tiro o vieni colpito da un attacco puoi usare la reazione per aggiungere il tuo modificatore di Saggezza al tiro effettuato oppure sottrarre lo stesso valore al tiro per colpire dell'attaccante. Puoi usare questa capacità un numero di volte pari al tuo modificatore di Saggezza (minimo una volta) e recuperi tutti gli usi al termine di un riposo lungo.</p>",
+      "value": "<p>Quando fallisci un tiro o vieni colpito da un attacco puoi usare la reazione per aggiungere il tuo modificatore di Saggezza al tiro effettuato oppure sottrarre lo stesso valore al tiro per colpire dell'attaccante. Puoi usare questa capacità un numero di volte pari al tuo modificatore di Saggezza (minimo una volta) e recuperi tutti gli usi al termine di un riposo lungo.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

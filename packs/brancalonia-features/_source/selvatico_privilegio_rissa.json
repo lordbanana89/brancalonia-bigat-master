@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/strike-claw-blood-red.webp",
   "system": {
     "description": {
-      "value": "<p>Durante una rissa ignori gli effetti secondari dei primi due livelli di Batoste subiti.</p>",
+      "value": "<p>Durante una rissa ignori gli effetti secondari dei primi due livelli di Batoste subiti.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"risse-taverna\" draggable=\"true\">📜 Risse Taverna</span> <span class=\"regola-tag\" data-regola=\"combattimento-sporco\" draggable=\"true\">📜 Combattimento Sporco</span></div>",
       "chat": "",
       "unidentified": ""
     },

@@ -5,7 +5,7 @@
   "img": "icons/magic/control/silence-mute-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Puoi lanciare <em>charme su persone</em> una volta con questo tratto e recuperi la capacità dopo un riposo lungo. Carisma è la caratteristica da incantatore.</p>",
+      "value": "<p>Puoi lanciare <em>charme su persone</em> una volta con questo tratto e recuperi la capacità dopo un riposo lungo. Carisma è la caratteristica da incantatore.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

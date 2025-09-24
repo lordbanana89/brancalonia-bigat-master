@@ -5,7 +5,7 @@
   "img": "icons/magic/symbols/rune-spiral-green.webp",
   "system": {
     "description": {
-      "value": "<p>Scegli una scuola di magia (Abiurazione, Ammaliamento, Divinazione, Evocazione, Illusione, Invocazione, Necromanzia o Trasmutazione). Apprendi un trucchetto e un incantesimo di 1° livello della scuola scelta. Puoi lanciare ciascun incantesimo una volta senza slot e recuperi questa capacità dopo un riposo lungo; utilizza Saggezza o Carisma come caratteristica da incantatore (a tua scelta).</p>",
+      "value": "<p>Scegli una scuola di magia (Abiurazione, Ammaliamento, Divinazione, Evocazione, Illusione, Invocazione, Necromanzia o Trasmutazione). Apprendi un trucchetto e un incantesimo di 1° livello della scuola scelta. Puoi lanciare ciascun incantesimo una volta senza slot e recuperi questa capacità dopo un riposo lungo; utilizza Saggezza o Carisma come caratteristica da incantatore (a tua scelta).</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

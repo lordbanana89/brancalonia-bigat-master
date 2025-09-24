@@ -5,7 +5,7 @@
   "img": "icons/weapons/swords/sword-falchion-gold.webp",
   "system": {
     "description": {
-      "value": "<p>Apprendi tecniche schermistiche.</p><ul><li><strong>Studiare l'avversario.</strong> Quando usi Schivata, il prossimo attacco effettuato prima della fine del tuo turno successivo ha vantaggio.</li><li><strong>Zappa e Spada.</strong> Ottieni un bonus di +1 alla CA mentre impugni un'arma da mischia in ogni mano.</li><li><strong>Duello.</strong> Se nessun'altra creatura si trova entro 1,5 m da te oltre al tuo bersaglio, aggiungi il tuo bonus di competenza ai danni degli attacchi in mischia contro quel bersaglio.</li></ul>",
+      "value": "<p>Apprendi tecniche schermistiche.</p><ul><li><strong>Studiare l'avversario.</strong> Quando usi Schivata, il prossimo attacco effettuato prima della fine del tuo turno successivo ha vantaggio.</li><li><strong>Zappa e Spada.</strong> Ottieni un bonus di +1 alla CA mentre impugni un'arma da mischia in ogni mano.</li><li><strong>Duello.</strong> Se nessun'altra creatura si trova entro 1,5 m da te oltre al tuo bersaglio, aggiungi il tuo bonus di competenza ai danni degli attacchi in mischia contro quel bersaglio.</li></ul><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"combattimento-sporco\" draggable=\"true\">📜 Combattimento Sporco</span> <span class=\"regola-tag\" data-regola=\"duelli-codice-onore\" draggable=\"true\">📜 Duelli Codice Onore</span></div>",
       "chat": "",
       "unidentified": ""
     },

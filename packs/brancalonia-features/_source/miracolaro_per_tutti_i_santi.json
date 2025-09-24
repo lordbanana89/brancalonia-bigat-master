@@ -5,7 +5,7 @@
   "img": "icons/magic/holy/hand-glow-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Quando una creatura amica entro 9 metri fallisce un tiro o viene colpita da un attacco puoi usare la reazione per applicare Tirare Giù i Santi su di lei. Inoltre recuperi tutti gli usi di Tirare Giù i Santi al termine di un riposo breve o lungo.</p>",
+      "value": "<p>Quando una creatura amica entro 9 metri fallisce un tiro o viene colpita da un attacco puoi usare la reazione per applicare Tirare Giù i Santi su di lei. Inoltre recuperi tutti gli usi di Tirare Giù i Santi al termine di un riposo breve o lungo.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

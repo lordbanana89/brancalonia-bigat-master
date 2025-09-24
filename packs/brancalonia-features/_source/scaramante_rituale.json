@@ -5,7 +5,7 @@
   "img": "icons/magic/defensive/illusion-evasion-spiral-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Con un rituale di 10 minuti puoi proteggere te stesso o un alleato conferendo uno dei seguenti benefici per 24 ore: resistenza a un tipo di danni (a scelta); possibilità di ritirare i risultati di 1 su prove e tiri salvezza; rimanere a 1 pf quando si scenderebbe a 0. Dopo aver applicato questo effetto non puoi usarlo di nuovo finché non completi un riposo lungo (puoi estenderlo di 24 ore spendendo 2 punti stregoneria).</p>",
+      "value": "<p>Con un rituale di 10 minuti puoi proteggere te stesso o un alleato conferendo uno dei seguenti benefici per 24 ore: resistenza a un tipo di danni (a scelta); possibilità di ritirare i risultati di 1 su prove e tiri salvezza; rimanere a 1 pf quando si scenderebbe a 0. Dopo aver applicato questo effetto non puoi usarlo di nuovo finché non completi un riposo lungo (puoi estenderlo di 24 ore spendendo 2 punti stregoneria).</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

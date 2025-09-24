@@ -5,7 +5,7 @@
   "img": "icons/equipment/torso/coat-leather-magenta.webp",
   "system": {
     "description": {
-      "value": "<p>Finché non indossi armature e non impugni uno scudo, la tua Classe Armatura è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Carisma.</p>",
+      "value": "<p>Finché non indossi armature e non impugni uno scudo, la tua Classe Armatura è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Carisma.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"combattimento-sporco\" draggable=\"true\">📜 Combattimento Sporco</span></div>",
       "chat": "",
       "unidentified": ""
     },

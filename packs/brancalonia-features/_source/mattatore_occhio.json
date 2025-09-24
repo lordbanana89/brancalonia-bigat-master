@@ -5,7 +5,7 @@
   "img": "icons/magic/control/bondage-fetters-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Come azione bonus scegli una creatura entro 18 metri. Per 1 minuto ottieni i seguenti benefici contro di essa: aggiungi il tuo bonus di competenza ai danni, realizzi un colpo critico con 19-20 e aggiungi il tuo modificatore di Saggezza alla CA contro i suoi attacchi. Puoi usare questa capacità una volta per riposo breve o lungo.</p>",
+      "value": "<p>Come azione bonus scegli una creatura entro 18 metri. Per 1 minuto ottieni i seguenti benefici contro di essa: aggiungi il tuo bonus di competenza ai danni, realizzi un colpo critico con 19-20 e aggiungi il tuo modificatore di Saggezza alla CA contro i suoi attacchi. Puoi usare questa capacità una volta per riposo breve o lungo.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

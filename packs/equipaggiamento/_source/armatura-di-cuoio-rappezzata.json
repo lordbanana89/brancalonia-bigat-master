@@ -5,7 +5,7 @@
   "img": "icons/equipment/chest/leather-studded-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Armatura di cuoio borchiato riparata più volte con pezzi di materiali diversi.</p><p><strong>Raffazzonata:</strong> Quando subisci un colpo critico, tira 1d6. Con 1-2 l'armatura perde 1 CA permanentemente fino a riparazione (2 mo).</p><p><strong>CA:</strong> 12 + Mod Des</p>",
+      "value": "<p>Armatura di cuoio borchiato riparata più volte con pezzi di materiali diversi.</p><p><strong>Raffazzonata:</strong> Quando subisci un colpo critico, tira 1d6. Con 1-2 l'armatura perde 1 CA permanentemente fino a riparazione (2 mo).</p><p><strong>CA:</strong> 12 + Mod Des</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"equipaggiamento-scadente\" draggable=\"true\">📜 Equipaggiamento Scadente</span></div>",
       "chat": "",
       "unidentified": ""
     },

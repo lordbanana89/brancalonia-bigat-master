@@ -5,7 +5,7 @@
   "img": "icons/tools/navigation/map-marked-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Una mappa dettagliata di... qualche altro posto completamente diverso da dove ti trovi.</p><p><strong>Navigazione Errata:</strong> Se la segui, hai svantaggio alle prove di Sopravvivenza per orientarti.</p><p><strong>Scoperte Casuali:</strong> Potresti scoprire luoghi interessanti per puro caso (a discrezione del DM).</p>",
+      "value": "<p>Una mappa dettagliata di... qualche altro posto completamente diverso da dove ti trovi.</p><p><strong>Navigazione Errata:</strong> Se la segui, hai svantaggio alle prove di Sopravvivenza per orientarti.</p><p><strong>Scoperte Casuali:</strong> Potresti scoprire luoghi interessanti per puro caso (a discrezione del DM).</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"sistema-taglie\" draggable=\"true\">📜 Sistema Taglie</span></div>",
       "chat": "",
       "unidentified": ""
     },

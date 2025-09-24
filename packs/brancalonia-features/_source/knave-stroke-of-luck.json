@@ -5,7 +5,7 @@
   "img": "icons/magic/control/energy-stream-link-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Al 20° livello puoi trasformare un fallimento critico in un successo automatico una volta per riposo breve o lungo.</p>",
+      "value": "<p>Al 20° livello puoi trasformare un fallimento critico in un successo automatico una volta per riposo breve o lungo.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"fortuna-sfortuna\" draggable=\"true\">📜 Fortuna Sfortuna</span> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

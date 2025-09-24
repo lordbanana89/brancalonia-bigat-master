@@ -5,7 +5,7 @@
   "img": "icons/skills/trades/smithing-tongs-hold-pocketwatch.webp",
   "system": {
     "description": {
-      "value": "<p>Apprendi il linguaggio in codice dei Knave, permettendoti di trasmettere e riconoscere messaggi segreti durante le tue avventure nel Regno di Taglia.</p>",
+      "value": "<p>Apprendi il linguaggio in codice dei Knave, permettendoti di trasmettere e riconoscere messaggi segreti durante le tue avventure nel Regno di Taglia.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"sistema-taglie\" draggable=\"true\">📜 Sistema Taglie</span></div>",
       "chat": "",
       "unidentified": ""
     },

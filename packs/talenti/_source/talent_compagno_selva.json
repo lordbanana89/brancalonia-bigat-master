@@ -5,7 +5,7 @@
   "img": "icons/creatures/abilities/paw-print-turquoise.webp",
   "system": {
     "description": {
-      "value": "<h2>Compagno della Selva</h2>\n<p><em>Prerequisito: Selvatico</em></p>\n<h3>Benefici</h3>\n<ul>\n  <li>Raddoppi il bonus di competenza nelle prove di Natura e Sopravvivenza.</li>\n  <li>Attraverso un rito di 8 ore stringi un legame con una bestia amica di taglia Media o inferiore con GS 1/4 o minore. Agisce al tuo turno e obbedisce ai tuoi ordini (vedi manuale per i dettagli). Se sei incapacitato la bestia agisce per proteggere sé e te.</li>\n</ul>",
+      "value": "<h2>Compagno della Selva</h2>\n<p><em>Prerequisito: Selvatico</em></p>\n<h3>Benefici</h3>\n<ul>\n  <li>Raddoppi il bonus di competenza nelle prove di Natura e Sopravvivenza.</li>\n  <li>Attraverso un rito di 8 ore stringi un legame con una bestia amica di taglia Media o inferiore con GS 1/4 o minore. Agisce al tuo turno e obbedisce ai tuoi ordini (vedi manuale per i dettagli). Se sei incapacitato la bestia agisce per proteggere sé e te.</li>\n</ul><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"sistema-taglie\" draggable=\"true\">📜 Sistema Taglie</span></div>",
       "chat": "",
       "unidentified": ""
     },

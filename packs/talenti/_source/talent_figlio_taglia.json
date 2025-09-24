@@ -5,7 +5,7 @@
   "img": "icons/skills/social/diplomacy-handshake-brown.webp",
   "system": {
     "description": {
-      "value": "<h2>Figlio di Taglia</h2>\n<h3>Benefici</h3>\n<ul>\n  <li>Aumenta il tuo punteggio di Carisma di 1, fino a un massimo di 20.</li>\n  <li>Quando interagisci con altre taglie consideri la tua Reputazione di un livello superiore.</li>\n  <li>Ottieni il privilegio Gergo Ladresco.</li>\n</ul>",
+      "value": "<h2>Figlio di Taglia</h2>\n<h3>Benefici</h3>\n<ul>\n  <li>Aumenta il tuo punteggio di Carisma di 1, fino a un massimo di 20.</li>\n  <li>Quando interagisci con altre taglie consideri la tua Reputazione di un livello superiore.</li>\n  <li>Ottieni il privilegio Gergo Ladresco.</li>\n</ul><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"sistema-taglie\" draggable=\"true\">📜 Sistema Taglie</span></div>",
       "chat": "",
       "unidentified": ""
     },

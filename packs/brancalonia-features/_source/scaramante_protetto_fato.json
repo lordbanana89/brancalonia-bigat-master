@@ -5,7 +5,7 @@
   "img": "icons/magic/control/energy-stream-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Una volta per turno, quando effettui un tiro per colpire, una prova di caratteristica o un tiro salvezza puoi tirare un d20 aggiuntivo e scegliere quale risultato usare. Puoi anche usare questa capacità quando un attacco ti colpisce, sostituendo il tiro dell'attaccante con il tuo d20. Recuperi l'uso dopo un riposo lungo.</p>",
+      "value": "<p>Una volta per turno, quando effettui un tiro per colpire, una prova di caratteristica o un tiro salvezza puoi tirare un d20 aggiuntivo e scegliere quale risultato usare. Puoi anche usare questa capacità quando un attacco ti colpisce, sostituendo il tiro dell'attaccante con il tuo d20. Recuperi l'uso dopo un riposo lungo.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

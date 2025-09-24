@@ -5,7 +5,7 @@
   "img": "icons/tools/hand/mechanical-hand-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Puoi usare un braccio staccabile come oggetto di scena in rissa; a differenza degli altri oggetti di scena non lo perdi dopo l'uso.</p>",
+      "value": "<p>Puoi usare un braccio staccabile come oggetto di scena in rissa; a differenza degli altri oggetti di scena non lo perdi dopo l'uso.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"risse-taverna\" draggable=\"true\">📜 Risse Taverna</span> <span class=\"regola-tag\" data-regola=\"combattimento-sporco\" draggable=\"true\">📜 Combattimento Sporco</span></div>",
       "chat": "",
       "unidentified": ""
     },

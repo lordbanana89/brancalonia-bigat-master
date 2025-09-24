@@ -5,7 +5,7 @@
   "img": "icons/magic/symbols/rune-sigil-brown.webp",
   "system": {
     "description": {
-      "value": "<h2>Fortuna del Bifolco</h2><p>La tua vita di stenti e privazioni ti ha reso incredibilmente resistente ai capricci del destino.</p><h3>Benefici</h3><ul><li>Aumenta il tuo punteggio di Costituzione di 1, fino a un massimo di 20.</li><li>Quando tiri un 1 naturale su un tiro salvezza su Morte, puoi ritirare il dado e devi usare il nuovo risultato.</li><li>Una volta per riposo lungo, quando scendi a 0 punti ferita ma non muori sul colpo, puoi scegliere di rimanere cosciente con 1 punto ferita.</li><li>Hai vantaggio ai tiri salvezza contro malattie e veleni.</li></ul>",
+      "value": "<h2>Fortuna del Bifolco</h2><p>La tua vita di stenti e privazioni ti ha reso incredibilmente resistente ai capricci del destino.</p><h3>Benefici</h3><ul><li>Aumenta il tuo punteggio di Costituzione di 1, fino a un massimo di 20.</li><li>Quando tiri un 1 naturale su un tiro salvezza su Morte, puoi ritirare il dado e devi usare il nuovo risultato.</li><li>Una volta per riposo lungo, quando scendi a 0 punti ferita ma non muori sul colpo, puoi scegliere di rimanere cosciente con 1 punto ferita.</li><li>Hai vantaggio ai tiri salvezza contro malattie e veleni.</li></ul><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"fortuna-sfortuna\" draggable=\"true\">📜 Fortuna Sfortuna</span> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
       "unidentified": ""
     },

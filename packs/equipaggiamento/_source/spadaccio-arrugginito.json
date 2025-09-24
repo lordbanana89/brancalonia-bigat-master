@@ -5,7 +5,7 @@
   "img": "icons/weapons/swords/sword-runed-magic.webp",
   "system": {
     "description": {
-      "value": "<p>Una spada lunga che ha visto giorni migliori. La lama è macchiata di ruggine e l'elsa è allentata.</p><p><strong>Scadente:</strong> Su un 1 naturale al tiro per colpire, l'arma si danneggia. Subisce -1 al colpire e ai danni finché non viene riparata (costo: 2,5 mo).</p>",
+      "value": "<p>Una spada lunga che ha visto giorni migliori. La lama è macchiata di ruggine e l'elsa è allentata.</p><p><strong>Scadente:</strong> Su un 1 naturale al tiro per colpire, l'arma si danneggia. Subisce -1 al colpire e ai danni finché non viene riparata (costo: 2,5 mo).</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"equipaggiamento-scadente\" draggable=\"true\">📜 Equipaggiamento Scadente</span></div>",
       "chat": "",
       "unidentified": ""
     },
