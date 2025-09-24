@@ -33,10 +33,11 @@ export class BrancaloniaMechanics {
    * Setup tabelle casuali conformi a dnd5e
    */
   setupRandomTables() {
-    // Registra tabelle nel CONFIG
-    CONFIG.BRANCALONIA = CONFIG.BRANCALONIA || {};
+    // Registra tabelle nel CONFIG - Usa mergeObject per evitare problemi
+    if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
+    if (!CONFIG.BRANCALONIA.tables) CONFIG.BRANCALONIA.tables = {};
 
-    CONFIG.BRANCALONIA.tables = {
+    foundry.utils.mergeObject(CONFIG.BRANCALONIA.tables, {
       // Tabella Complicazioni Generiche
       complications: {
         name: "Complicazioni di Brancalonia",
@@ -92,7 +93,7 @@ export class BrancaloniaMechanics {
           { range: [10], text: "Il sindaco nasconde un segreto" }
         ]
       }
-    };
+    });
   }
 
   /**
@@ -106,7 +107,7 @@ export class BrancaloniaMechanics {
       rollData.dialogOptions.nonLethal = {
         label: "Danno Non Letale (KO)",
         checked: false
-      };
+      });
     });
 
     // Hook per applicare danno non letale
@@ -152,7 +153,9 @@ export class BrancaloniaMechanics {
    * Sistema Trabocchetti conforme a dnd5e
    */
   setupTraps() {
-    CONFIG.BRANCALONIA.traps = {
+    if (!CONFIG.BRANCALONIA.traps) CONFIG.BRANCALONIA.traps = {};
+
+    foundry.utils.mergeObject(CONFIG.BRANCALONIA.traps, {
       // Trappola base template
       template: {
         name: "Trappola Base",
@@ -195,7 +198,7 @@ export class BrancaloniaMechanics {
           description: "Un allarme che attira guardie"
         }
       }
-    };
+    });
 
     // Macro per piazzare trappole
     this.createTrapMacro = function(trapType) {
@@ -227,20 +230,22 @@ export class BrancaloniaMechanics {
                 trapDC: ${trap.save.dc}
               }
             }
-          };
+          });
 
           canvas.tokens.createMany([trapData]);
           ui.notifications.info("Trappola piazzata. Ricorda di nasconderla!");
         `
       });
-    };
+    });
   }
 
   /**
    * Sistema Padrini/Mentori
    */
   setupPatronSystem() {
-    CONFIG.BRANCALONIA.patrons = {
+    if (!CONFIG.BRANCALONIA.patrons) CONFIG.BRANCALONIA.patrons = {};
+
+    foundry.utils.mergeObject(CONFIG.BRANCALONIA.patrons, {
       types: {
         noble: {
           name: "Nobile Corrotto",
@@ -273,7 +278,7 @@ export class BrancaloniaMechanics {
           resources: { gold: "low", connections: "low", danger: "high" }
         }
       }
-    };
+    });
 
     // Funzione per assegnare un patrono
     this.assignPatron = async function(actor, patronType) {
@@ -298,14 +303,16 @@ export class BrancaloniaMechanics {
         `,
         speaker: ChatMessage.getSpeaker({ actor })
       });
-    };
+    });
   }
 
   /**
    * Oggetti magici specifici di Brancalonia
    */
   setupBrancaloniaItems() {
-    CONFIG.BRANCALONIA.magicItems = {
+    if (!CONFIG.BRANCALONIA.magicItems) CONFIG.BRANCALONIA.magicItems = {};
+
+    foundry.utils.mergeObject(CONFIG.BRANCALONIA.magicItems, {
       // Reliquie religiose
       relics: {
         "santo-dito": {
@@ -362,7 +369,7 @@ export class BrancaloniaMechanics {
           description: "Una pessima imitazione della spada di Orlando. +1 al colpire, si rompe con 1-2."
         }
       }
-    };
+    });
   }
 
   /**
@@ -465,7 +472,7 @@ export class BrancaloniaMechanics {
       male: ["Beppe", "Gino", "Tonio", "Carletto", "Piero", "Matteo", "Franco", "Luigi"],
       female: ["Maria", "Rosa", "Lucia", "Giovanna", "Teresa", "Anna", "Carmela", "Francesca"],
       surnames: ["il Gobbo", "Mangiafuoco", "Zampacorta", "Bevilacqua", "Malaparte", "Dentineri", "lo Storto"]
-    };
+    });
 
     const occupations = ["Locandiere", "Mercante", "Guardia", "Ladro", "Contadino", "Artigiano", "Prete", "Menestrello"];
 
@@ -495,7 +502,7 @@ export class BrancaloniaMechanics {
         hp: Math.floor(Math.random() * 20) + 5,
         speed: 30
       }
-    };
+    });
   }
 
   /**

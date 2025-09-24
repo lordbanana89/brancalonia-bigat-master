@@ -78,18 +78,19 @@ Hooks.once("init", () => {
     }
   });
 
-  // Tool proficiencies custom - Usa il nuovo sistema tools
+  // Tool proficiencies custom - Usa il nuovo sistema tools con merge
   if (!CONFIG.DND5E.tools) CONFIG.DND5E.tools = {};
 
-  CONFIG.DND5E.tools.cardsGambling = {
-    label: "BRANCALONIA.Tools.Cards",
-    ability: "int"
-  };
-
-  CONFIG.DND5E.tools.diceGambling = {
-    label: "BRANCALONIA.Tools.Dice",
-    ability: "wis"
-  };
+  foundry.utils.mergeObject(CONFIG.DND5E.tools, {
+    cardsGambling: {
+      label: "BRANCALONIA.Tools.Cards",
+      ability: "int"
+    },
+    diceGambling: {
+      label: "BRANCALONIA.Tools.Dice",
+      ability: "wis"
+    }
+  });
 
   // Tipi di danno aggiuntivi per risse - Merge invece di assegnazione diretta
   if (!CONFIG.DND5E.damageTypes) CONFIG.DND5E.damageTypes = {};
