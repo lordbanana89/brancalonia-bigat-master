@@ -10,7 +10,7 @@ export class DuelingSystem {
     this.duelTypes = {
       "primo_sangue": {
         name: "Al Primo Sangue",
-        icon: "icons/skills/wounds/blood-drip-red.webp",
+        img: "icons/skills/wounds/blood-drip-red.webp",
         description: "Il duello termina al primo colpo che causa danno",
         rules: {
           endCondition: "first-blood",
@@ -27,7 +27,7 @@ export class DuelingSystem {
 
       "sottomissione": {
         name: "Alla Sottomissione",
-        icon: "icons/skills/social/wave-halt-stop.webp",
+        img: "icons/skills/social/wave-halt-stop.webp",
         description: "Il duello termina quando uno si arrende",
         rules: {
           endCondition: "submission",
@@ -44,7 +44,7 @@ export class DuelingSystem {
 
       "morte": {
         name: "All'Ultimo Respiro",
-        icon: "icons/magic/death/skull-humanoid-white.webp",
+        img: "icons/magic/death/skull-humanoid-white.webp",
         description: "Duello mortale fino alla fine",
         rules: {
           endCondition: "death",
@@ -61,7 +61,7 @@ export class DuelingSystem {
 
       "incapacitazione": {
         name: "All'Incapacitazione",
-        icon: "icons/magic/control/debuff-energy-hold-yellow.webp",
+        img: "icons/magic/control/debuff-energy-hold-yellow.webp",
         description: "Il duello termina quando uno è reso incapace",
         rules: {
           endCondition: "incapacitated",
@@ -78,7 +78,7 @@ export class DuelingSystem {
 
       "campione": {
         name: "Duello dei Campioni",
-        icon: "icons/equipment/chest/breastplate-armor-studded-yellow.webp",
+        img: "icons/equipment/chest/breastplate-armor-studded-yellow.webp",
         description: "Duello formale con campioni che rappresentano le parti",
         rules: {
           endCondition: "submission",
@@ -96,7 +96,7 @@ export class DuelingSystem {
 
       "giudiziario": {
         name: "Duello Giudiziario",
-        icon: "icons/tools/instruments/scales-merchant-gray.webp",
+        img: "icons/tools/instruments/scales-merchant-gray.webp",
         description: "Duello per risolvere una disputa legale",
         rules: {
           endCondition: "first-blood",
@@ -419,7 +419,7 @@ export class DuelingSystem {
 
     const effectData = {
       name: `Stile di Duello: ${style.name}`,
-      icon: "icons/skills/melee/swords-crossed-silver.webp",
+      img: "icons/skills/melee/swords-crossed-silver.webp",
       origin: actor.uuid,
       duration: {},
       changes: changes,

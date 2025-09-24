@@ -9,7 +9,7 @@ export class MenagramoSystem {
     this.menagramoLevels = {
       minor: {
         name: "Menagramo Minore",
-        icon: "icons/magic/death/skull-humanoid-crown-white.webp",
+        img: "icons/magic/death/skull-humanoid-crown-white.webp",
         duration: "1d4",
         effects: [
           {
@@ -23,7 +23,7 @@ export class MenagramoSystem {
       },
       moderate: {
         name: "Menagramo Moderato",
-        icon: "icons/magic/death/skull-humanoid-crown-yellow.webp",
+        img: "icons/magic/death/skull-humanoid-crown-yellow.webp",
         duration: "2d4",
         effects: [
           {
@@ -43,7 +43,7 @@ export class MenagramoSystem {
       },
       major: {
         name: "Menagramo Maggiore",
-        icon: "icons/magic/death/skull-humanoid-crown-red.webp",
+        img: "icons/magic/death/skull-humanoid-crown-red.webp",
         duration: "3d4",
         effects: [
           {
@@ -63,7 +63,7 @@ export class MenagramoSystem {
       },
       catastrophic: {
         name: "Menagramo Catastrofico",
-        icon: "icons/magic/death/skull-humanoid-crown-black.webp",
+        img: "icons/magic/death/skull-humanoid-crown-black.webp",
         duration: "1d6 + 1",
         effects: [
           {
@@ -220,7 +220,7 @@ export class MenagramoSystem {
     // Crea active effect conforme a dnd5e
     const effectData = {
       name: menagramoData.name,
-      icon: menagramoData.icon,
+      img: menagramoData.img,
       origin: actor.uuid,
       duration: {
         rounds: duration,

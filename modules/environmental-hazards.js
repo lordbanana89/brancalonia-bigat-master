@@ -12,7 +12,7 @@ export class EnvironmentalHazardsSystem {
       "palude_malsana": {
         name: "Palude Malsana",
         type: "naturale",
-        icon: "icons/magic/nature/root-vine-fire-entangle-green.webp",
+        img: "icons/magic/nature/root-vine-fire-entangle-green.webp",
         dc: 12,
         trigger: "Attraversamento",
         effect: {
@@ -29,7 +29,7 @@ export class EnvironmentalHazardsSystem {
       "sabbie_mobili": {
         name: "Sabbie Mobili",
         type: "naturale",
-        icon: "icons/magic/earth/projectiles-stone-salvo.webp",
+        img: "icons/magic/earth/projectiles-stone-salvo.webp",
         dc: 14,
         trigger: "Movimento nell'area",
         effect: {
@@ -47,7 +47,7 @@ export class EnvironmentalHazardsSystem {
       "nebbia_velenosa": {
         name: "Nebbia Velenosa delle Paludi",
         type: "naturale",
-        icon: "icons/magic/air/fog-gas-smoke-swirling-green.webp",
+        img: "icons/magic/air/fog-gas-smoke-swirling-green.webp",
         dc: 13,
         trigger: "Inizio turno nell'area",
         effect: {
@@ -66,7 +66,7 @@ export class EnvironmentalHazardsSystem {
       "frana": {
         name: "Frana Improvvisa",
         type: "naturale",
-        icon: "icons/magic/earth/boulder-stone-impact-gray.webp",
+        img: "icons/magic/earth/boulder-stone-impact-gray.webp",
         dc: 15,
         trigger: "Rumore forte o vibrazione",
         effect: {
@@ -85,7 +85,7 @@ export class EnvironmentalHazardsSystem {
       "ghiaccio_sottile": {
         name: "Ghiaccio Sottile",
         type: "naturale",
-        icon: "icons/magic/water/barrier-ice-crystal-wall-jagged-blue.webp",
+        img: "icons/magic/water/barrier-ice-crystal-wall-jagged-blue.webp",
         dc: 12,
         trigger: "Peso superiore a 100 kg",
         effect: {
@@ -104,7 +104,7 @@ export class EnvironmentalHazardsSystem {
       "tempesta_improvvisa": {
         name: "Tempesta del Menagramo",
         type: "naturale",
-        icon: "icons/magic/lightning/bolt-strike-clouds-blue.webp",
+        img: "icons/magic/lightning/bolt-strike-clouds-blue.webp",
         dc: 14,
         trigger: "Casuale (10% ogni ora di viaggio)",
         effect: {
@@ -124,7 +124,7 @@ export class EnvironmentalHazardsSystem {
       "vicolo_malfamato": {
         name: "Vicolo Malfamato",
         type: "urbano",
-        icon: "icons/environment/settlement/alley-narrow-night.webp",
+        img: "icons/environment/settlement/alley-narrow-night.webp",
         dc: null,
         trigger: "Passaggio di notte",
         effect: {
@@ -141,7 +141,7 @@ export class EnvironmentalHazardsSystem {
       "ponte_marcio": {
         name: "Ponte Marcio",
         type: "urbano",
-        icon: "icons/environment/wilderness/bridge-rope.webp",
+        img: "icons/environment/wilderness/bridge-rope.webp",
         dc: 11,
         trigger: "Attraversamento",
         effect: {
@@ -160,7 +160,7 @@ export class EnvironmentalHazardsSystem {
       "fogna_allagata": {
         name: "Fogna Allagata",
         type: "urbano",
-        icon: "icons/environment/wilderness/cave-entrance-hollow.webp",
+        img: "icons/environment/wilderness/cave-entrance-hollow.webp",
         dc: 13,
         trigger: "Esplorazione",
         effect: {
@@ -178,7 +178,7 @@ export class EnvironmentalHazardsSystem {
       "tetto_instabile": {
         name: "Tetto Instabile",
         type: "urbano",
-        icon: "icons/environment/settlement/house-roof-tiles-green.webp",
+        img: "icons/environment/settlement/house-roof-tiles-green.webp",
         dc: 12,
         trigger: "Movimento sui tetti",
         effect: {
@@ -197,7 +197,7 @@ export class EnvironmentalHazardsSystem {
       "stanza_allagata": {
         name: "Stanza Allagata",
         type: "dungeon",
-        icon: "icons/magic/water/water-surface.webp",
+        img: "icons/magic/water/water-surface.webp",
         dc: 10,
         trigger: "Ingresso nella stanza",
         effect: {
@@ -215,7 +215,7 @@ export class EnvironmentalHazardsSystem {
       "gas_allucinogeno": {
         name: "Gas Allucinogeno",
         type: "dungeon",
-        icon: "icons/magic/control/hypnosis-mesmerism-eye.webp",
+        img: "icons/magic/control/hypnosis-mesmerism-eye.webp",
         dc: 14,
         trigger: "Apertura porta/cofano",
         effect: {
@@ -233,7 +233,7 @@ export class EnvironmentalHazardsSystem {
       "pavimento_traditore": {
         name: "Pavimento Traditore",
         type: "dungeon",
-        icon: "icons/environment/wilderness/trap-pit-spikes-yellow.webp",
+        img: "icons/environment/wilderness/trap-pit-spikes-yellow.webp",
         dc: 15,
         trigger: "Pressione (50+ kg)",
         effect: {
@@ -252,7 +252,7 @@ export class EnvironmentalHazardsSystem {
       "muro_di_lame": {
         name: "Muro di Lame Rotanti",
         type: "dungeon",
-        icon: "icons/weapons/swords/swords-crossed-black.webp",
+        img: "icons/weapons/swords/swords-crossed-black.webp",
         dc: 16,
         trigger: "Leva/piastra di pressione",
         effect: {
@@ -272,7 +272,7 @@ export class EnvironmentalHazardsSystem {
       "zona_di_menagramo": {
         name: "Zona di Menagramo Persistente",
         type: "magico",
-        icon: "icons/magic/death/skull-humanoid-crown-white-purple.webp",
+        img: "icons/magic/death/skull-humanoid-crown-white-purple.webp",
         dc: null,
         trigger: "Permanente nell'area",
         effect: {
@@ -290,7 +290,7 @@ export class EnvironmentalHazardsSystem {
       "portale_instabile": {
         name: "Portale Instabile",
         type: "magico",
-        icon: "icons/magic/movement/portal-vortex-purple.webp",
+        img: "icons/magic/movement/portal-vortex-purple.webp",
         dc: 15,
         trigger: "Avvicinamento a 3 metri",
         effect: {
@@ -309,7 +309,7 @@ export class EnvironmentalHazardsSystem {
       "guardiano_spettrale": {
         name: "Guardiano Spettrale Vincolato",
         type: "magico",
-        icon: "icons/magic/death/undead-ghost-spirit-teal.webp",
+        img: "icons/magic/death/undead-ghost-spirit-teal.webp",
         dc: null,
         trigger: "Violazione area protetta",
         effect: {
@@ -543,7 +543,7 @@ export class EnvironmentalHazardsSystem {
 
     const activeEffect = {
       name: `${hazard.name} - ${condition}`,
-      icon: hazard.icon,
+      img: hazard.img,
       origin: actor.uuid,
       duration: hazard.duration ? { seconds: hazard.duration * 3600 } : {},
       changes: [effectData],
@@ -696,7 +696,7 @@ export class EnvironmentalHazardsSystem {
 
     // Crea tile per rappresentare l'hazard
     const tileData = {
-      img: hazard.icon,
+      img: hazard.img,
       x: x,
       y: y,
       width: 100,

@@ -10,7 +10,7 @@ export class ReputationSystem {
     this.reputationTypes = {
       "onore": {
         name: "Onore",
-        icon: "icons/skills/social/diplomacy-handshake-yellow.webp",
+        img: "icons/skills/social/diplomacy-handshake-yellow.webp",
         description: "Rispetto guadagnato attraverso azioni nobili",
         max: 100,
         benefits: {
@@ -26,7 +26,7 @@ export class ReputationSystem {
       },
       "fama": {
         name: "Fama",
-        icon: "icons/skills/social/party-crowd-celebration.webp",
+        img: "icons/skills/social/party-crowd-celebration.webp",
         description: "Notorietà per le proprie imprese",
         max: 100,
         benefits: {
@@ -42,7 +42,7 @@ export class ReputationSystem {
       },
       "gloria": {
         name: "Gloria",
-        icon: "icons/equipment/head/crown-gold-laurel.webp",
+        img: "icons/equipment/head/crown-gold-laurel.webp",
         description: "Gloria ottenuta in battaglia e duelli",
         max: 100,
         benefits: {
@@ -55,7 +55,7 @@ export class ReputationSystem {
       },
       "santita": {
         name: "Santità",
-        icon: "icons/magic/holy/angel-wings-gray.webp",
+        img: "icons/magic/holy/angel-wings-gray.webp",
         description: "Devozione religiosa e miracoli",
         max: 100,
         benefits: {
@@ -68,7 +68,7 @@ export class ReputationSystem {
       },
       "saggezza": {
         name: "Saggezza",
-        icon: "icons/tools/scribal/scroll-bound-brown.webp",
+        img: "icons/tools/scribal/scroll-bound-brown.webp",
         description: "Rispetto per conoscenza e buon consiglio",
         max: 100,
         benefits: {
@@ -311,7 +311,7 @@ export class ReputationSystem {
 
     const effectData = {
       name: `${this.reputationTypes[type].name} ${threshold}`,
-      icon: this.reputationTypes[type].icon,
+      img: this.reputationTypes[type].img,
       origin: actor.uuid,
       duration: {},
       changes: [{

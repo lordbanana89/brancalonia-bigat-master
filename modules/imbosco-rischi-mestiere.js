@@ -167,7 +167,7 @@ export class ImboscoRischiSystem {
     // Applica restrizioni come Active Effect temporaneo
     const effect = {
       name: "Imboscato",
-      icon: "icons/environment/wilderness/tree-oak.webp",
+      img: "icons/environment/wilderness/tree-oak.webp",
       duration: { seconds: 604800 }, // 1 settimana
       changes: [
         {
@@ -607,7 +607,7 @@ export class ImboscoRischiSystem {
     for (const actor of actors) {
       const effect = {
         name: "Maledizione della Banda",
-        icon: "icons/magic/unholy/orb-glowing-purple.webp",
+        img: "icons/magic/unholy/orb-glowing-purple.webp",
         duration: { rounds: 100 }, // Durata simbolica
         changes: [],
         flags: {

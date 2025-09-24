@@ -365,7 +365,7 @@ export class LevelCapSystem {
     // Crea un Active Effect per il bonus ai danni
     const effect = {
       name: "Arma Preferita",
-      icon: "icons/skills/melee/sword-katana-red.webp",
+      img: "icons/skills/melee/sword-katana-red.webp",
       origin: actor.uuid,
       duration: {},
       changes: [],
@@ -384,7 +384,7 @@ export class LevelCapSystem {
     // Modifica il bonus di competenza
     const effect = {
       name: "Emeriticenza Assoluta",
-      icon: "icons/magic/control/buff-flight-wings-blue.webp",
+      img: "icons/magic/control/buff-flight-wings-blue.webp",
       origin: actor.uuid,
       duration: {},
       changes: [{
@@ -508,7 +508,7 @@ export class LevelCapSystem {
     // Crea Active Effect per immunità a spaventato
     const effect = {
       name: "Indomito",
-      icon: "icons/magic/control/debuff-fear-terror-purple.webp",
+      img: "icons/magic/control/debuff-fear-terror-purple.webp",
       origin: actor.uuid,
       duration: {},
       changes: [{

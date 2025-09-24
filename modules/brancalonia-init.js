@@ -89,7 +89,7 @@ async function applyMenagramo(actor, duration = "1d4") {
   const roll = await new Roll(duration).evaluate();
   const effect = {
     name: "Menagramo",
-    icon: "icons/magic/death/skull-evil-grin-red.webp",
+    img: "icons/magic/death/skull-evil-grin-red.webp",
     origin: actor.uuid,
     disabled: false,
     duration: {

@@ -11,7 +11,7 @@ export class DiseasesSystem {
       // Malattie Comuni
       "febbre_palustre": {
         name: "Febbre Palustre",
-        icon: "icons/magic/unholy/silhouette-evil-horned-red.webp",
+        img: "icons/magic/unholy/silhouette-evil-horned-red.webp",
         dc: 12,
         incubation: "1d4 giorni",
         symptoms: {
@@ -50,7 +50,7 @@ export class DiseasesSystem {
 
       "peste_nera": {
         name: "Peste Nera di Taglia",
-        icon: "icons/magic/death/skull-horned-goat-green.webp",
+        img: "icons/magic/death/skull-horned-goat-green.webp",
         dc: 15,
         incubation: "1d3 giorni",
         symptoms: {
@@ -89,7 +89,7 @@ export class DiseasesSystem {
 
       "mal_di_strada": {
         name: "Mal di Strada",
-        icon: "icons/skills/wounds/injury-pain-body-orange.webp",
+        img: "icons/skills/wounds/injury-pain-body-orange.webp",
         dc: 10,
         incubation: "immediato",
         symptoms: {
@@ -111,7 +111,7 @@ export class DiseasesSystem {
 
       "follia_lunare": {
         name: "Follia Lunare",
-        icon: "icons/magic/control/fear-fright-monster-purple.webp",
+        img: "icons/magic/control/fear-fright-monster-purple.webp",
         dc: 14,
         incubation: "luna piena",
         symptoms: {
@@ -139,7 +139,7 @@ export class DiseasesSystem {
 
       "morbo_putrescente": {
         name: "Morbo Putrescente",
-        icon: "icons/magic/death/hand-undead-skeleton-fire-green.webp",
+        img: "icons/magic/death/hand-undead-skeleton-fire-green.webp",
         dc: 13,
         incubation: "1 giorno",
         symptoms: {
@@ -162,7 +162,7 @@ export class DiseasesSystem {
 
       "scorbuto": {
         name: "Scorbuto del Marinaio",
-        icon: "icons/consumables/food/apple-rotten-brown.webp",
+        img: "icons/consumables/food/apple-rotten-brown.webp",
         dc: 11,
         incubation: "2d6 giorni senza frutta",
         symptoms: {
@@ -184,7 +184,7 @@ export class DiseasesSystem {
 
       "vaiolo_goblin": {
         name: "Vaiolo dei Malandrini",
-        icon: "icons/magic/unholy/orb-beam-pink.webp",
+        img: "icons/magic/unholy/orb-beam-pink.webp",
         dc: 12,
         incubation: "1d4 giorni",
         symptoms: {
@@ -208,7 +208,7 @@ export class DiseasesSystem {
 
       "rabbia_selvatica": {
         name: "Rabbia Selvatica",
-        icon: "icons/creatures/abilities/mouth-teeth-sharp-red.webp",
+        img: "icons/creatures/abilities/mouth-teeth-sharp-red.webp",
         dc: 14,
         incubation: "2d4 giorni",
         symptoms: {
@@ -417,7 +417,7 @@ export class DiseasesSystem {
     // Crea active effect
     const effectData = {
       name: `${disease.name} - Stadio ${stage}`,
-      icon: disease.icon,
+      img: disease.img,
       origin: actor.uuid,
       duration: duration,
       changes: stageData.effects,

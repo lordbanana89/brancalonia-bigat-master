@@ -525,7 +525,7 @@ export class TavernBrawlSystem {
     } else {
       await actor.createEmbeddedDocuments("ActiveEffect", [{
         name: this.batosteLevels[participantData.batoste - 1].name,
-        icon: "icons/skills/wounds/injury-pain-body-orange.webp",
+        img: "icons/skills/wounds/injury-pain-body-orange.webp",
         changes: [{
           key: "system.attributes.ac.bonus",
           mode: CONST.ACTIVE_EFFECT_MODES.ADD,
@@ -550,7 +550,7 @@ export class TavernBrawlSystem {
       // Applica condizione incosciente
       await actor.createEmbeddedDocuments("ActiveEffect", [{
         name: "Incosciente (Rissa)",
-        icon: "icons/svg/unconscious.svg",
+        img: "icons/svg/unconscious.svg",
         statuses: ["unconscious"],
         flags: { brancalonia: { brawlKO: true } }
       }]);
