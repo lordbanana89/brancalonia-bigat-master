@@ -2,7 +2,7 @@
   "id": "brancalonia-bigat",
   "title": "Brancalonia - Il Regno di Taglia",
   "description": "Modulo completo per giocare a Brancalonia nel Regno di Taglia. Include tutte le meccaniche del manuale: Infamia, Compagnia, Haven, Risse da Taverna, Lavori Sporchi, Menagramo, Oggetti Scadenti, Malattie, Hazard Ambientali, Duelli, Fazioni e Reputazione. Compatibile con D&D 5e.",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "compatibility": {
     "minimum": "13.0.0",
     "verified": "13.347",
@@ -20,8 +20,8 @@
         "id": "dnd5e",
         "type": "system",
         "compatibility": {
-          "minimum": "3.3.0",
-          "verified": "3.3.1"
+          "minimum": "5.0.0",
+          "verified": "5.0.0"
         }
       }
     ]
@@ -149,6 +149,39 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "backgrounds",
+      "label": "Background di Brancalonia",
+      "path": "packs/backgrounds",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "sottoclassi",
+      "label": "Sottoclassi di Brancalonia",
+      "path": "packs/sottoclassi",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "emeriticenze",
+      "label": "Emeriticenze",
+      "path": "packs/emeriticenze",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -156,8 +189,10 @@
       "name": "Brancalonia",
       "sorting": "a",
       "packs": [
+        "backgrounds",
         "brancalonia-features",
         "classi",
+        "emeriticenze",
         "equipaggiamento",
         "incantesimi",
         "macro",
@@ -165,6 +200,7 @@
         "razze",
         "regole",
         "rollable-tables",
+        "sottoclassi",
         "talenti"
       ]
     }

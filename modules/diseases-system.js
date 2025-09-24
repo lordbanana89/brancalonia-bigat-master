@@ -267,7 +267,7 @@ export class DiseasesSystem {
     });
 
     // Hook per contatto con creature infette
-    Hooks.on("dnd5e.damageActor", (actor, damageTotal, options) => {
+    Hooks.on("dnd5e.applyDamage", (actor, damage, options) => {
       if (options.attackerId) {
         const attacker = game.actors.get(options.attackerId);
         if (attacker?.flags?.brancalonia?.diseased) {

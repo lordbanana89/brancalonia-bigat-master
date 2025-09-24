@@ -1,6 +1,6 @@
 /**
  * Brancalonia - Inizializzazione Sistema
- * Compatibile con Foundry VTT v13 e D&D 5e v3.3.1
+ * Compatibile con Foundry VTT v13 e D&D 5e v5.x
  */
 
 // Registrazione modulo
@@ -254,8 +254,8 @@ Hooks.once("ready", async () => {
   console.log("Brancalonia | Sistema pronto");
 
   // Verifica compatibilità sistema
-  if (!game.system.version.startsWith("3.3")) {
-    ui.notifications.warn("Brancalonia richiede dnd5e system v3.3.x per funzionare correttamente");
+  if (!game.system.version.startsWith("5.")) {
+    ui.notifications.warn("Brancalonia richiede dnd5e system v5.x per funzionare correttamente");
   }
 
   // Inizializza TUTTI i moduli
@@ -334,20 +334,20 @@ Hooks.on("renderActorSheet5e", (app, html, data) => {
 });
 
 // Hook per modificare i tiri
-Hooks.on("dnd5e.preRollAbilityTest", (actor, config, abilityId) => {
+Hooks.on("dnd5e.preRollAbilityTest", (actor, rollData, messageData) => {
   // Applica effetti menagramo
   if (actor.flags.brancalonia?.menagramo) {
-    config.disadvantage = true;
+    rollData.disadvantage = true;
     ui.notifications.warn("Menagramo! Tiro con svantaggio!");
   }
 });
 
 // Hook per gestire danno non letale nelle risse
-Hooks.on("dnd5e.damageActor", (actor, damageTotal, options) => {
+Hooks.on("dnd5e.applyDamage", (actor, damage, options) => {
   if (options.nonLethal || actor.flags.brancalonia?.inBrawl) {
     // Converti in danno temporaneo invece che reale
     const tempHp = actor.system.attributes.hp.temp || 0;
-    const newTempDamage = Math.max(0, tempHp - damageTotal);
+    const newTempDamage = Math.max(0, tempHp - damage);
 
     actor.update({
       "system.attributes.hp.temp": newTempDamage
@@ -355,7 +355,7 @@ Hooks.on("dnd5e.damageActor", (actor, damageTotal, options) => {
 
     // Se arriva a 0, è KO non morto
     if (newTempDamage <= 0) {
-      actor.addCondition("unconscious");
+      actor.toggleStatusEffect("unconscious");
       ChatMessage.create({
         content: `${actor.name} è stato messo KO nella rissa!`,
         speaker: ChatMessage.getSpeaker({actor: actor})

@@ -37,13 +37,13 @@ export class InfamiaTracker {
 
   _setupHooks() {
     // Hook per aggiungere controlli infamia ai tiri
-    Hooks.on("dnd5e.preRollAbilityTest", (actor, config, abilityId) => {
-      if (abilityId === "per" && this._isAuthorityCheck(actor)) {
+    Hooks.on("dnd5e.preRollAbilityTest", (actor, rollData, messageData) => {
+      if (rollData.ability === "per" && this._isAuthorityCheck(actor)) {
         const infamia = actor.flags.brancalonia?.infamia || 0;
         const penalty = this._getInfamiaPenalty(infamia);
 
         if (penalty) {
-          config.parts.push(`-${penalty}[Infamia]`);
+          rollData.parts.push(`-${penalty}[Infamia]`);
           ui.notifications.info(`Penalità Infamia: -${penalty}`);
         }
       }

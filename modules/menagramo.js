@@ -148,22 +148,22 @@ export class MenagramoSystem {
 
   _setupHooks() {
     // Hook per applicare sfortuna ai tiri
-    Hooks.on("dnd5e.preRollAttack", (item, config) => {
+    Hooks.on("dnd5e.preRollAttack", (item, rollData, messageData) => {
       const actor = item.parent;
       if (this._hasMenagramo(actor)) {
-        this._applyMisfortune(actor, config, "attack");
+        this._applyMisfortune(actor, rollData, "attack");
       }
     });
 
-    Hooks.on("dnd5e.preRollAbilityTest", (actor, config, abilityId) => {
+    Hooks.on("dnd5e.preRollAbilityTest", (actor, rollData, messageData) => {
       if (this._hasMenagramo(actor)) {
-        this._applyMisfortune(actor, config, "ability");
+        this._applyMisfortune(actor, rollData, "ability");
       }
     });
 
-    Hooks.on("dnd5e.preRollAbilitySave", (actor, config, abilityId) => {
+    Hooks.on("dnd5e.preRollAbilitySave", (actor, rollData, messageData) => {
       if (this._hasMenagramo(actor)) {
-        this._applyMisfortune(actor, config, "save");
+        this._applyMisfortune(actor, rollData, "save");
       }
     });
 

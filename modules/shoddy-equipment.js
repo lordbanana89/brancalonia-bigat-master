@@ -86,14 +86,14 @@ export class ShoddyEquipment {
     });
 
     // Hook per controllo rottura su 1 naturale (armi)
-    Hooks.on("dnd5e.rollAttack", (item, roll, ammo) => {
+    Hooks.on("dnd5e.rollAttack", (item, roll) => {
       if (roll.dice[0]?.results[0]?.result === 1) {
         this._checkWeaponBreak(item);
       }
     });
 
     // Hook per controllo rottura su critico ricevuto (armature)
-    Hooks.on("dnd5e.damageActor", (actor, damageTotal, options) => {
+    Hooks.on("dnd5e.applyDamage", (actor, damage, options) => {
       if (options.critical) {
         this._checkArmorBreak(actor);
       }

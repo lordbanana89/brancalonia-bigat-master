@@ -100,10 +100,10 @@ export class BrancaloniaMechanics {
    */
   setupNonLethalCombat() {
     // Hook per gestire dichiarazione di danno non letale
-    Hooks.on("dnd5e.preRollDamage", (item, rollConfig) => {
+    Hooks.on("dnd5e.preRollDamage", (item, rollData, messageData) => {
       // Aggiungi opzione nel dialog
-      rollConfig.dialogOptions = rollConfig.dialogOptions || {};
-      rollConfig.dialogOptions.nonLethal = {
+      rollData.dialogOptions = rollData.dialogOptions || {};
+      rollData.dialogOptions.nonLethal = {
         label: "Danno Non Letale (KO)",
         checked: false
       };

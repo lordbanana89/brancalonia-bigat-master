@@ -370,7 +370,7 @@ export class FactionsSystem {
 
   _setupHooks() {
     // Hook per conseguenze azioni (usando hook ufficiale)
-    Hooks.on("dnd5e.damageActor", (target, damage, options) => {
+    Hooks.on("dnd5e.applyDamage", (target, damage, options) => {
       if (target.flags.brancalonia?.faction) {
         const attacker = options.attacker;
         if (attacker?.hasPlayerOwner) {

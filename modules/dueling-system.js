@@ -210,7 +210,7 @@ export class DuelingSystem {
     });
 
     // Hook per attacchi in duello
-    Hooks.on("dnd5e.preRollAttack", (item, config) => {
+    Hooks.on("dnd5e.preRollAttack", (item, rollData, messageData) => {
       const combat = game.combat;
       if (!combat?.flags?.brancalonia?.isDuel) return;
 
@@ -218,12 +218,12 @@ export class DuelingSystem {
       const duel = this.activeDuels.get(duelId);
 
       if (duel) {
-        this._applyDuelModifiers(item, config, duel);
+        this._applyDuelModifiers(item, rollData, duel);
       }
     });
 
     // Hook per danni in duello
-    Hooks.on("dnd5e.preRollDamage", (item, config) => {
+    Hooks.on("dnd5e.preRollDamage", (item, rollData, messageData) => {
       const combat = game.combat;
       if (!combat?.flags?.brancalonia?.isDuel) return;
 

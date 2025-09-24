@@ -129,12 +129,12 @@ export class ReputationSystem {
     });
 
     // Hook per modifiche sociali basate su reputazione
-    Hooks.on("dnd5e.preRollAbilityTest", (actor, config, abilityId) => {
-      if (["per", "dec", "int", "prf"].includes(abilityId)) {
+    Hooks.on("dnd5e.preRollAbilityTest", (actor, rollData, messageData) => {
+      if (["per", "dec", "int", "prf"].includes(rollData.ability)) {
         const repBonus = this._getSocialModifier(actor);
         if (repBonus !== 0) {
-          config.parts = config.parts || [];
-          config.parts.push(`${repBonus > 0 ? '+' : ''}${repBonus}[Reputazione]`);
+          rollData.parts = rollData.parts || [];
+          rollData.parts.push(`${repBonus > 0 ? '+' : ''}${repBonus}[Reputazione]`);
         }
       }
     });
