@@ -1,0 +1,49 @@
+{
+  "_id": "lavoriSporchi001",
+  "name": "Lavori Sporchi",
+  "type": "journalEntry",
+  "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+  "system": {},
+  "pages": [
+    {
+      "_id": "lavoriSporchi001_page_1",
+      "name": "Lavori Sporchi",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>💰 Lavori Sporchi</h1><p><em>\"Nel Regno, c'è sempre qualcuno disposto a pagare per un lavoretto fatto bene e senza troppe domande.\"</em></p><h2>🎲 Trovare Lavori</h2><table><thead><tr><th>Luogo</th><th>Tipo di Lavoro</th><th>CD Cercare</th><th>Paga Base</th></tr></thead><tbody><tr><td>Bettola</td><td>Furto, Rissa, Estorsione</td><td>10</td><td>10-50 mo</td></tr><tr><td>Mercato</td><td>Contrabbando, Truffa</td><td>12</td><td>20-100 mo</td></tr><tr><td>Porto</td><td>Contrabbando, Pirateria</td><td>11</td><td>30-150 mo</td></tr><tr><td>Palazzo Nobile</td><td>Spionaggio, Ricatto</td><td>15</td><td>50-500 mo</td></tr><tr><td>Tempio</td><td>Recupero Reliquie, Eresia</td><td>14</td><td>40-200 mo</td></tr><tr><td>Gilda Ladri</td><td>Qualsiasi</td><td>8</td><td>Variabile -20%</td></tr></tbody></table><h2>📋 Tipi di Lavori Sporchi</h2><h3>1. Furto e Rapina</h3><ul><li><strong>Borseggio:</strong> Des (Rapidità) CD 10-20, bottino 1d10 mo</li><li><strong>Scasso:</strong> Attrezzi da Ladro CD 12-18, bottino 2d20 mo</li><li><strong>Rapina:</strong> Intimidire CD 15, bottino 3d20 mo + Taglia</li><li><strong>Furto Grosso:</strong> Pianificazione + esecuzione, 100+ mo</li></ul><h3>2. Contrabbando</h3><ul><li><strong>Merci Comuni:</strong> 10 mo per carico, rischio basso</li><li><strong>Armi:</strong> 25 mo per carico, rischio medio</li><li><strong>Veleni/Droghe:</strong> 50 mo per carico, rischio alto</li><li><strong>Oggetti Magici:</strong> 100+ mo, rischio estremo</li></ul><h3>3. Estorsione e Ricatto</h3><ul><li><strong>Protezione:</strong> 5-20 mo/settimana per negozio</li><li><strong>Ricatto:</strong> Indagare CD 15 + Intimidire, 50-500 mo</li><li><strong>Rapimento:</strong> Pianificazione complessa, 200+ mo + Infamia</li></ul><h3>4. Spionaggio</h3><ul><li><strong>Informazioni:</strong> Furtività + Percezione, 10-50 mo</li><li><strong>Documenti:</strong> Furto + falsificazione, 30-100 mo</li><li><strong>Sabotaggio:</strong> Varia per obiettivo, 50-200 mo</li></ul><h2>⚠️ Complicazioni (1d20)</h2><table><thead><tr><th>Tiro</th><th>Complicazione</th></tr></thead><tbody><tr><td>1-2</td><td>Trappola! Era una trappola dei birri</td></tr><tr><td>3-4</td><td>Doppio gioco - Il cliente vi tradisce</td></tr><tr><td>5-6</td><td>Concorrenza - Un'altra banda vuole il lavoro</td></tr><tr><td>7-8</td><td>Testimone scomodo da eliminare/corrompere</td></tr><tr><td>9-10</td><td>Il bersaglio è protetto da qualcuno di potente</td></tr><tr><td>11-12</td><td>Informazioni sbagliate - Il lavoro è più difficile</td></tr><tr><td>13-14</td><td>Cacciatore di taglie sulle vostre tracce</td></tr><tr><td>15-16</td><td>Il bottino è maledetto/marcato</td></tr><tr><td>17-18</td><td>Infiltrato nella banda</td></tr><tr><td>19</td><td>Il cliente non paga/è morto</td></tr><tr><td>20</td><td>Tira due volte!</td></tr></tbody></table><h2>💸 Calcolo della Paga</h2><p><strong>Paga Finale = Paga Base × Modificatori</strong></p><table><thead><tr><th>Modificatore</th><th>Moltiplicatore</th></tr></thead><tbody><tr><td>Lavoro facile/di routine</td><td>×0.5</td></tr><tr><td>Tempo limitato (urgente)</td><td>×1.5</td></tr><tr><td>Alto rischio (Taglia garantita)</td><td>×2</td></tr><tr><td>Bersaglio importante</td><td>×2</td></tr><tr><td>Nessuna domanda</td><td>×1.5</td></tr><tr><td>Lavoro per la Gilda</td><td>×0.8</td></tr><tr><td>Primo lavoro per cliente</td><td>×0.7</td></tr></tbody></table><h2>🎯 Contatti e Intermediari</h2><ul><li><strong>Topo di Fogna:</strong> Informazioni base, lavori semplici</li><li><strong>Ricettatore:</strong> Smaltisce refurtiva, -30% valore</li><li><strong>Faccendiere:</strong> Lavori medi, garanzie, -10% paga</li><li><strong>Mediatore Nobile:</strong> Lavori importanti, protezione legale</li><li><strong>Capo Gilda:</strong> Accesso a tutto ma vuole la sua parte (20%)</li></ul><h2>📊 Reputazione Criminale</h2><table><thead><tr><th>Livello</th><th>Reputazione</th><th>Effetti</th></tr></thead><tbody><tr><td>0-10</td><td>Novellino</td><td>Solo lavori base, paga minima</td></tr><tr><td>11-30</td><td>Conosciuto</td><td>Lavori medi, paga standard</td></tr><tr><td>31-60</td><td>Rispettato</td><td>Lavori importanti, +20% paga</td></tr><tr><td>61-90</td><td>Temuto</td><td>Lavori esclusivi, +50% paga</td></tr><tr><td>91-100</td><td>Leggendario</td><td>Scelgono loro, paga doppia</td></tr></tbody></table><h2>🔒 Codice dei Ladri</h2><div class='note'><ul><li>Mai tradire un altro ladro alla legge</li><li>La refurtiva si divide equamente</li><li>Non rubare nel territorio di un'altra banda senza permesso</li><li>Chi sgarra paga con gli interessi o con il sangue</li><li>I civili non si toccano (tranne i ricchi)</li></ul></div><h2>⚡ Lavori Rapidi (1d6 ore)</h2><table><thead><tr><th>Lavoro</th><th>CD</th><th>Paga</th></tr></thead><tbody><tr><td>Consegna sospetta</td><td>10</td><td>2d6 mo</td></tr><tr><td>Fare il palo</td><td>12</td><td>1d6 mo</td></tr><tr><td>Intimidire debitore</td><td>14</td><td>3d6 mo</td></tr><tr><td>Falsificare documento</td><td>15</td><td>4d6 mo</td></tr><tr><td>Pedinare bersaglio</td><td>13</td><td>2d6 mo</td></tr></tbody></table>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_key": "!pages!lavoriSporchi001_page_1"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!journal!lavoriSporchi001"
+}
