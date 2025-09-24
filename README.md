@@ -289,6 +289,37 @@ await db.close();
 | Compendi vuoti in Foundry | Manca campo `_key` | Usa `compile-with-keys.cjs`, non il CLI |
 | "Cannot read database" | Database in sottocartella | Sposta file DB direttamente in `packs/nome/` |
 | CLI non segnala errori | CLI v3.0.0 salta silenziosamente documenti senza `_key` | Verifica sempre con `verify-packs.cjs` |
+| Pagine journal vuote v13 | Formato NeDB vs LevelDB | Usa formato NeDB (.db file) con CLI ufficiale |
+
+### ⚠️ IMPORTANTE: Compendi di Journal Entry in Foundry v13
+
+#### Il Problema delle Pagine Vuote
+Durante lo sviluppo abbiamo scoperto che i Journal Entry in Foundry v13 potrebbero mostrare solo titoli senza contenuto. Questo succede quando:
+1. Si usa il formato LevelDB invece di NeDB per i compendi
+2. Le pagine hanno strutture JSON non compatibili con v13
+3. Il contenuto HTML è troppo complesso o contiene caratteri problematici
+
+#### Soluzione Funzionante per Journal Entry
+```bash
+# 1. Pulire il contenuto HTML (rimuovere emoji, caratteri speciali)
+python3 clean-rules-emoji.py
+
+# 2. Compilare con formato NeDB usando CLI ufficiale
+fvtt package pack nome-pack --compendiumType JournalEntry --in packs/nome/_source --nedb
+
+# 3. Il file risultante sarà packs/nome.db (NON una cartella)
+```
+
+#### Struttura Corretta module.json
+```json
+{
+  "name": "regole",
+  "label": "Regole di Brancalonia",
+  "path": "packs/regole.db",  // File .db, NON cartella!
+  "type": "JournalEntry",
+  "system": "dnd5e"
+}
+```
 
 ### Script di Utility
 
