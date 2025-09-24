@@ -1,0 +1,124 @@
+{
+  "_id": "pistolascadente001",
+  "name": "Pistola Scadente",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-pistol-worn.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una pistola primitiva, più piccola e maneggevole dell'archibugio ma altrettanto inaffidabile.</p><p><strong>Inaffidabile:</strong> Su un 1-2 naturale al tiro per colpire, l'arma si inceppa e richiede un'azione per essere ricaricata. Su un 1 naturale, esplode causando 1d4 danni da fuoco a chi la impugna.</p><p><strong>Proprietà:</strong> Munizioni (gittata 30/90), caricamento, leggera</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"armi-da-fuoco-primitive\" draggable=\"true\">📜 Armi Da Fuoco Primitive</span> <span class=\"regola-tag\" data-regola=\"equipaggiamento-scadente\" draggable=\"true\">📜 Equipaggiamento Scadente</span></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": 90,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "ammo",
+      "target": null,
+      "amount": 1
+    },
+    "ability": "dex",
+    "actionType": "rwak",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d10",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "weaponType": "martialR",
+    "baseItem": "",
+    "properties": {
+      "ver": false,
+      "amm": true,
+      "fin": false,
+      "fir": false,
+      "foc": false,
+      "hvy": false,
+      "lgt": true,
+      "lod": true,
+      "rch": false,
+      "rel": false,
+      "ret": false,
+      "spc": false,
+      "thr": false,
+      "two": false,
+      "mgc": false
+    },
+    "proficient": 1,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!pistolascadente001"
+}
