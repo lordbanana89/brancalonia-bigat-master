@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Un mantello fatto di toppe di diversi colori e tessuti, cucite insieme in modo approssimativo.</p><p><strong>Protezione dal Freddo:</strong> +1 alle prove di Sopravvivenza per ripararsi dal freddo.</p><p><strong>Apparenza Misera:</strong> -2 alle prove di Persuasione con nobili e mercanti ricchi.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Un mantello fatto di toppe di diversi colori e tessuti, cucite insieme in modo approssimativo.Protezione dal Freddo: +1 alle prove di Sopravvivenza per ripararsi dal freddo.Apparenza Misera: -2 alle p...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

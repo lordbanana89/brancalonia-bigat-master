@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Oltremodo Dotato</h2>\n<p><em>Prerequisito: Dotato</em></p>\n<h3>Benefici</h3>\n<ul>\n  <li>Aumenta di 1 la caratteristica usata per gli incantesimi derivanti da Influsso Magico.</li>\n  <li>Apprendi un incantesimo di 2° livello della stessa scuola scelta per Influsso Magico.</li>\n  <li>Risonanza Magica può recuperare uno slot incantesimo di 1° o 2° livello.</li>\n</ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Oltremodo Dotato\nPrerequisito: Dotato\nBenefici\n\n  Aumenta di 1 la caratteristica usata per gli incantesimi derivanti da Influsso Magico.\n  Apprendi un incantesimo di 2° livello della stessa scuola sce...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

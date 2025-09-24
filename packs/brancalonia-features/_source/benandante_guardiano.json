@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Le creature non morte che ti attaccano devono superare un tiro salvezza su Saggezza contro la tua CD degli incantesimi da druido; se falliscono devono scegliere un bersaglio diverso o l'attacco fallisce automaticamente. Se hanno successo sono immuni a questo effetto per 24 ore.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Le creature non morte che ti attaccano devono superare un tiro salvezza su Saggezza contro la tua CD degli incantesimi da druido; se falliscono devono scegliere un bersaglio diverso o l'attacco fallis...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

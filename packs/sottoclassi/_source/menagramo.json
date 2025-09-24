@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I menagrami stringono patti con Madama Sventura, l'incarnazione della malasorte, per scagliare malocchi e miserie su chi li ostacola.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I menagrami stringono patti con Madama Sventura, l'incarnazione della malasorte, per scagliare malocchi e miserie su chi li ostacola.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

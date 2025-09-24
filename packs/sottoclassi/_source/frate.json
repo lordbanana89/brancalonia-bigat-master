@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I frati menaniti portano il credo nelle strade e non esitano a usare pugni benedetti per difendere il prossimo. La condotta manesca li rende maestri di colpi rapidi e spietati.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I frati menaniti portano il credo nelle strade e non esitano a usare pugni benedetti per difendere il prossimo. La condotta manesca li rende maestri di colpi rapidi e spietati.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

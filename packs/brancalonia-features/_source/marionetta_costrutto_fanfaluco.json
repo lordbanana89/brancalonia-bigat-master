@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Sei un costrutto animato: sei immune alle malattie, non hai bisogno di mangiare, bere o respirare ed entri in uno stato di inattività consapevole per completare i riposi lunghi.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Sei un costrutto animato: sei immune alle malattie, non hai bisogno di mangiare, bere o respirare ed entri in uno stato di inattività consapevole per completare i riposi lunghi.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

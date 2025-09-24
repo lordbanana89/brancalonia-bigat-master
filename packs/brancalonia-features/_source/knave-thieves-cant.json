@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Apprendi il linguaggio in codice dei Knave, permettendoti di trasmettere e riconoscere messaggi segreti durante le tue avventure nel Regno di Taglia.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"sistema-taglie\" draggable=\"true\">📜 Sistema Taglie</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Apprendi il linguaggio in codice dei Knave, permettendoti di trasmettere e riconoscere messaggi segreti durante le tue avventure nel Regno di Taglia.Regole Correlate: 📜 Sistema Taglie</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

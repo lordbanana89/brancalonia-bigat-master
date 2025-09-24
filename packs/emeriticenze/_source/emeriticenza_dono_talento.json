@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Il Dono del Talento</h2>\n<p><em>Può essere scelta fino a due volte.</em></p>\n<p>Ottieni un talento a tua scelta.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Il Dono del Talento\nPuò essere scelta fino a due volte.\nOttieni un talento a tua scelta.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

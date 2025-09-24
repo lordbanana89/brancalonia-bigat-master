@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I briganti sono ladri di strada e di campagna che tendono agguati a viandanti e convogli. Conoscono la natura e sanno scomparire fra boschi e colline.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I briganti sono ladri di strada e di campagna che tendono agguati a viandanti e convogli. Conoscono la natura e sanno scomparire fra boschi e colline.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

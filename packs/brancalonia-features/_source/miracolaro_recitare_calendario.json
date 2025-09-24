@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Con la tua azione puoi spendere un utilizzo di Incanalare Divinità per far ottenere vantaggio in un tiro (a loro scelta) a un numero di creature amiche entro 9 metri pari al tuo modificatore di Saggezza. Il beneficio deve essere usato entro la fine del turno successivo della creatura.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Con la tua azione puoi spendere un utilizzo di Incanalare Divinità per far ottenere vantaggio in un tiro (a loro scelta) a un numero di creature amiche entro 9 metri pari al tuo modificatore di Saggez...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

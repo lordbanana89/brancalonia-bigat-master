@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Una bisaccia di cuoio con un buco nascosto nel fondo che fa perdere oggetti piccoli.</p><p><strong>Perdita Casuale:</strong> Ogni giorno c'è il 10% di probabilità di perdere un oggetto piccolo casuale contenuto nella bisaccia.</p><p><strong>Capacità:</strong> Può contenere fino a 30 libbre di equipaggiamento.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Una bisaccia di cuoio con un buco nascosto nel fondo che fa perdere oggetti piccoli.Perdita Casuale: Ogni giorno c'è il 10% di probabilità di perdere un oggetto piccolo casuale contenuto nella bisacci...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

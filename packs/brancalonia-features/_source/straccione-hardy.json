@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Ottieni punti ferita temporanei pari al tuo modificatore di Costituzione all’inizio di ogni combattimento e vantaggio ai TS contro malattie.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Ottieni punti ferita temporanei pari al tuo modificatore di Costituzione all’inizio di ogni combattimento e vantaggio ai TS contro malattie.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Hai una velocità di scalata di 6 metri grazie agli artigli; puoi usare gli artigli per attacchi senz'armi che infliggono 1d4 danni da taglio + il tuo modificatore di Forza.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Hai una velocità di scalata di 6 metri grazie agli artigli; puoi usare gli artigli per attacchi senz'armi che infliggono 1d4 danni da taglio + il tuo modificatore di Forza.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

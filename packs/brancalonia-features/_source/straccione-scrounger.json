@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Sei bravo a trovare ciò che serve: ottieni vantaggio alle prove per reperire oggetti comuni e riduci del 50% il costo degli attrezzi improvvisati.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Sei bravo a trovare ciò che serve: ottieni vantaggio alle prove per reperire oggetti comuni e riduci del 50% il costo degli attrezzi improvvisati.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

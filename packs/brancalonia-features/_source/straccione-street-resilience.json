@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Quando spendi Dadi Vita durante un riposo breve aggiungi un d6 extra al totale di guarigione.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"gioco-azzardo\" draggable=\"true\">📜 Gioco Azzardo</span> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Quando spendi Dadi Vita durante un riposo breve aggiungi un d6 extra al totale di guarigione.Regole Correlate: 📜 Gioco Azzardo 📜 Riposo Canaglia</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

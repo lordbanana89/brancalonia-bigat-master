@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Le tue dita diventano magicamente agili e appiccicose, permettendoti di manipolare oggetti con destrezza soprannaturale.</p><p>Per la durata dell'incantesimo, ottieni i seguenti benefici:</p><ul><li>Vantaggio alle prove di Destrezza (Rapidità di Mano)</li><li>Puoi tentare di borseggiare o manipolare oggetti a distanza fino a 3 metri da te, come se li stessi toccando</li><li>Puoi eseguire azioni di interazione con oggetti come azione bonus invece che come azione</li><li>Gli oggetti leggeri (peso massimo 1 kg) che tocchi si attaccano magicamente alle tue dita - puoi decidere quando rilasciarli, e non possono essere strappati via da te a meno che tu non sia incapacitato</li><li>Hai vantaggio ai tiri per evitare di far cadere oggetti che stai impugnando</li></ul><p>Tuttavia, hai svantaggio alle prove per liberarti da prese o legami che coinvolgono le tue mani.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Le tue dita diventano magicamente agili e appiccicose, permettendoti di manipolare oggetti con destrezza soprannaturale.Per la durata dell'incantesimo, ottieni i seguenti benefici:Vantaggio alle prove...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia Macaronicon",
     "activation": {

@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Aggiungi i seguenti incantesimi alla tua lista di incantesimi da warlock: 1° livello <em>anatema, sonno</em>; 2° livello <em>accecare/assordare, crescita di spine</em>; 3° livello <em>animare i morti, scagliare maledizione</em>.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Aggiungi i seguenti incantesimi alla tua lista di incantesimi da warlock: 1° livello anatema, sonno; 2° livello accecare/assordare, crescita di spine; 3° livello animare i morti, scagliare maledizione...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

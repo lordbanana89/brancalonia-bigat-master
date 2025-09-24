@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I benandanti sono difensori delle campagne che trattano con gli spiriti dei morti e le fantasime. La Danza Macabra dona loro sguardo oltre il velo e poteri rituali.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I benandanti sono difensori delle campagne che trattano con gli spiriti dei morti e le fantasime. La Danza Macabra dona loro sguardo oltre il velo e poteri rituali.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

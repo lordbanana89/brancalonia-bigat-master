@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Ottieni il trucchetto <em>fiamma sacra</em> e prepari sempre gli incantesimi del Circolo della Danza Macabra. Essi non contano contro il numero di incantesimi che puoi preparare.</p><ul><li>1° livello: <em>eroismo, protezione dal bene e dal male</em></li><li>2° livello: <em>arma spirituale, ristorare inferiore</em></li><li>3° livello: <em>guardiani spirituali, rimuovi maledizione</em></li></ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Ottieni il trucchetto fiamma sacra e prepari sempre gli incantesimi del Circolo della Danza Macabra. Essi non contano contro il numero di incantesimi che puoi preparare.1° livello: eroismo, protezione...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

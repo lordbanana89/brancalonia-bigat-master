@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Una pagnotta di pane dura come pietra, dimenticata per giorni.</p><p><strong>Cibo di Emergenza:</strong> Soddisfa il fabbisogno di cibo per un giorno, ma devi fare un tiro salvezza su Costituzione CD 12 o avere mal di stomaco (-1 a tutte le prove per 4 ore).</p><p><strong>Arma Improvvisata:</strong> Può essere lanciato come arma improvvisata (1d4 danni contundenti, gittata 20/60).</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Una pagnotta di pane dura come pietra, dimenticata per giorni.Cibo di Emergenza: Soddisfa il fabbisogno di cibo per un giorno, ma devi fare un tiro salvezza su Costituzione CD 12 o avere mal di stomac...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

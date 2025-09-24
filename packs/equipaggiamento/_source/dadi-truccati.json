@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Set di dadi d'osso pesati male per barare al gioco. La loro imperfezione li rende evidenti agli occhi esperti.</p><p><strong>Barare:</strong> +2 alle prove di Inganno per barare al gioco d'azzardo.</p><p><strong>Conseguenze:</strong> Se vieni scoperto a barare, le conseguenze sono... spiacevoli. Il DM decide la punizione appropriata.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"gioco-azzardo\" draggable=\"true\">📜 Gioco Azzardo</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Set di dadi d'osso pesati male per barare al gioco. La loro imperfezione li rende evidenti agli occhi esperti.Barare: +2 alle prove di Inganno per barare al gioco d'azzardo.Conseguenze: Se vieni scope...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

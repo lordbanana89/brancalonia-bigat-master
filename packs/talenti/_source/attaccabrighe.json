@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Attaccabrighe</h2><p>Sei un esperto rissaiolo da taverna, abile nel combattimento a mani nude e con armi improvvisate.</p><p><strong>Prerequisiti:</strong> Forza 13 o superiore</p><h3>Benefici</h3><ul><li>I tuoi attacchi senz'armi infliggono 1d4 + modificatore di Forza danni contundenti invece di 1 + modificatore di Forza.</li><li>Sei competente con le armi improvvisate e puoi aggiungere il tuo bonus di competenza ai tiri di attacco con esse.</li><li>Quando colpisci una creatura con un attacco senz'armi o un'arma improvvisata, puoi spingere la creatura di 1,5 metri lontano da te se è di taglia Media o inferiore.</li><li>Hai vantaggio alle prove di Forza (Atletica) fatte per afferrare o spingere una creatura.</li></ul><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"combattimento-sporco\" draggable=\"true\">📜 Combattimento Sporco</span> <span class=\"regola-tag\" data-regola=\"risse-taverna\" draggable=\"true\">📜 Risse Taverna</span> <span class=\"regola-tag\" data-regola=\"sistema-taglie\" draggable=\"true\">📜 Sistema Taglie</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>AttaccabrigheSei un esperto rissaiolo da taverna, abile nel combattimento a mani nude e con armi improvvisate.Prerequisiti: Forza 13 o superioreBeneficiI tuoi attacchi senz'armi infliggono 1d4 + modif...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

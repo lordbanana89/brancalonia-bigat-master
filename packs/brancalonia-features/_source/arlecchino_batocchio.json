@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Come reazione, quando vieni bersagliato da un attacco puoi spendere un uso di Ispirazione Bardica per costringere l'attaccante a effettuare un tiro salvezza su Saggezza contro la tua CD degli incantesimi da bardo. Se fallisce, perde l'attacco ed è affascinato da te fino all'inizio del suo prossimo turno.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Come reazione, quando vieni bersagliato da un attacco puoi spendere un uso di Ispirazione Bardica per costringere l'attaccante a effettuare un tiro salvezza su Saggezza contro la tua CD degli incantes...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Quando impari un nuovo trucchetto o incantesimo da stregone puoi scegliere incantesimi di Abiurazione dalla lista dello stregone.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Quando impari un nuovo trucchetto o incantesimo da stregone puoi scegliere incantesimi di Abiurazione dalla lista dello stregone.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

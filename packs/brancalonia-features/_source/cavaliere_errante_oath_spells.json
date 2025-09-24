@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Ottieni gli incantesimi del Giuramento della Cavalleresca Erranza. Sono sempre considerati preparati e non contano contro il numero di incantesimi che puoi preparare.</p><ul><li>3° livello: <em>benedizione, comando</em></li><li>5° livello: <em>passo senza tracce, evoca cavalcatura</em></li></ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Ottieni gli incantesimi del Giuramento della Cavalleresca Erranza. Sono sempre considerati preparati e non contano contro il numero di incantesimi che puoi preparare.3° livello: benedizione, comando5°...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

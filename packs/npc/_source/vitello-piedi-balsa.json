@@ -380,6 +380,15 @@
         "value": false,
         "initiative": 0
       }
+    },
+    "description": {
+      "value": "",
+      "chat": "",
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Vitello dai Piedi di Balsa</p>",
+        "flavor": ""
+      }
     }
   },
   "items": [

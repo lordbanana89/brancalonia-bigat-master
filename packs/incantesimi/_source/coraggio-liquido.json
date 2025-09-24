@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Infondi una bevanda alcolica con magia che ispira coraggio e audacia in chi la beve.</p><p>Tocchi una bevanda alcolica e la benedici con coraggio magico. Fino a 6 creature che bevono dalla bevanda entro l'ora successiva ottengono i seguenti benefici per 1 ora:</p><ul><li>Immunità alla condizione di spavento</li><li>Vantaggio ai tiri salvezza contro essere affascinati</li><li>+2 bonus ai danni da mischia e a distanza</li><li>Possono usare un'azione bonus per fare un grido di battaglia che dà a tutti gli alleati entro 9 metri vantaggio al prossimo tiro di attacco</li></ul><p>Tuttavia, chi beneficia dell'incantesimo diventa anche eccessivamente sicuro di sé:</p><ul><li>Svantaggio alle prove di Saggezza (Percezione)</li><li>Deve fare un tiro salvezza su Saggezza (CD 12) per ritirarsi da un combattimento o evitare una sfida diretta</li></ul><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"ubriachezza\" draggable=\"true\">📜 Ubriachezza</span> <span class=\"regola-tag\" data-regola=\"duelli-codice-onore\" draggable=\"true\">📜 Duelli Codice Onore</span> <span class=\"regola-tag\" data-regola=\"sistema-taglie\" draggable=\"true\">📜 Sistema Taglie</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Infondi una bevanda alcolica con magia che ispira coraggio e audacia in chi la beve.Tocchi una bevanda alcolica e la benedici con coraggio magico. Fino a 6 creature che bevono dalla bevanda entro l'or...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia Macaronicon",
     "activation": {

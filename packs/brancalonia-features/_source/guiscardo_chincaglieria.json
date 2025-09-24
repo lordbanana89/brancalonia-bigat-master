@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Puoi usare qualsiasi oggetto magico in tuo possesso come focus arcano e ottieni un oggetto magico non comune a scelta dalla lista del Ciarpame Magico (o simili).</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Puoi usare qualsiasi oggetto magico in tuo possesso come focus arcano e ottieni un oggetto magico non comune a scelta dalla lista del Ciarpame Magico (o simili).</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

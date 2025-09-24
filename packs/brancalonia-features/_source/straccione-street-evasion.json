@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Quando usi Disimpegno, puoi muoverti attraverso lo spazio di creature più grandi senza penalità. Ottieni vantaggio alle prove per nasconderti in città.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Quando usi Disimpegno, puoi muoverti attraverso lo spazio di creature più grandi senza penalità. Ottieni vantaggio alle prove per nasconderti in città.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

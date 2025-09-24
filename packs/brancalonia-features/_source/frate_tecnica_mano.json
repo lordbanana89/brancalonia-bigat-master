@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Quando colpisci con un attacco della tua Raffica di Colpi puoi scegliere uno dei seguenti effetti: far cadere prono il bersaglio (TS Destrezza), spingerlo di 3 metri (TS Forza; il bersaglio o un ostacolo subisce i danni del tuo attacco senz'armi), oppure imporgli svantaggio ai suoi attacchi nel turno successivo (TS Costituzione).</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Quando colpisci con un attacco della tua Raffica di Colpi puoi scegliere uno dei seguenti effetti: far cadere prono il bersaglio (TS Destrezza), spingerlo di 3 metri (TS Forza; il bersaglio o un ostac...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

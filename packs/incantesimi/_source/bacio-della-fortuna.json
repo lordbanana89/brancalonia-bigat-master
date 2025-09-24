@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Benedici una creatura con un bacio magico (simbolico) che porta fortuna straordinaria per un breve periodo.</p><p>Tocchi una creatura consenziente e la benedici con fortuna. Per la durata dell'incantesimo, ogni volta che il bersaglio tira un d20 per un tiro di attacco, prova di caratteristica o tiro salvezza, può scegliere di tirare un d20 aggiuntivo e usare il risultato più alto.</p><p>Questa capacità può essere usata un numero di volte pari al tuo modificatore di caratteristica da incantatore (minimo 1), dopo di che l'incantesimo termina.</p><p>Inoltre, se il bersaglio ottiene un 20 naturale durante la durata dell'incantesimo, recupera uno slot incantesimo del livello più basso che ha usato (se ne ha).</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"fortuna-sfortuna\" draggable=\"true\">📜 Fortuna Sfortuna</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Benedici una creatura con un bacio magico (simbolico) che porta fortuna straordinaria per un breve periodo.Tocchi una creatura consenziente e la benedici con fortuna. Per la durata dell'incantesimo, o...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia Macaronicon",
     "activation": {

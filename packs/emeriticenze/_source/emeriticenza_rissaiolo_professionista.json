@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Rissaiolo Professionista</h2>\n<p><em>Può essere scelta fino a due volte.</em></p>\n<p>Ottieni 1 slot mossa aggiuntivo e apprendi una nuova mossa dalla lista delle mosse base.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"risse-taverna\" draggable=\"true\">📜 Risse Taverna</span> <span class=\"regola-tag\" data-regola=\"combattimento-sporco\" draggable=\"true\">📜 Combattimento Sporco</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Rissaiolo Professionista\nPuò essere scelta fino a due volte.\nOttieni 1 slot mossa aggiuntivo e apprendi una nuova mossa dalla lista delle mosse base.Regole Correlate: 📜 Risse Taverna 📜 Combattimento...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

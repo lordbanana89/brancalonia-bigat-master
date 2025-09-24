@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Un forcone agricolo utilizzato come arma improvvisata. Efficace ma goffo.</p><p><strong>Intimidazione Rurale:</strong> +2 alle prove di Intimidire contro contadini e popolani, -2 alle prove di Intimidire contro soldati professionisti.</p><p><strong>Proprietà:</strong> Versatile, portata</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Un forcone agricolo utilizzato come arma improvvisata. Efficace ma goffo.Intimidazione Rurale: +2 alle prove di Intimidire contro contadini e popolani, -2 alle prove di Intimidire contro soldati profe...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

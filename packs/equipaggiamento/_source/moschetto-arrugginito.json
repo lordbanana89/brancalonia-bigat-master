@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Un moschetto pesante e potente, con una canna lunga che promette precisione... quando non esplode.</p><p><strong>Inaffidabile:</strong> Su un 1-3 naturale al tiro per colpire, l'arma si inceppa e richiede un'azione per essere ricaricata. Su un 1 naturale, esplode causando 2d6 danni da fuoco a chi la impugna.</p><p><strong>Proprietà:</strong> Munizioni (gittata 80/240), caricamento (3), due mani, pesante</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"armi-da-fuoco-primitive\" draggable=\"true\">📜 Armi Da Fuoco Primitive</span> <span class=\"regola-tag\" data-regola=\"equipaggiamento-scadente\" draggable=\"true\">📜 Equipaggiamento Scadente</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Un moschetto pesante e potente, con una canna lunga che promette precisione... quando non esplode.Inaffidabile: Su un 1-3 naturale al tiro per colpire, l'arma si inceppa e richiede un'azione per esser...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

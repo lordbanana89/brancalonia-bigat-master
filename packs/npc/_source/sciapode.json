@@ -378,6 +378,15 @@
         "value": false,
         "initiative": 0
       }
+    },
+    "description": {
+      "value": "",
+      "chat": "",
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Sciapode</p>",
+        "flavor": ""
+      }
     }
   },
   "items": [

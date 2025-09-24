@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I pagani sono guerrieri delle campagne del Regno che sublimano la propria violenza in un cammino disciplinato dalla tradizione. Affrontano i conflitti con ferocia istintiva e movimenti da predatore, pronti a scattare e a colpire per primi.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I pagani sono guerrieri delle campagne del Regno che sublimano la propria violenza in un cammino disciplinato dalla tradizione. Affrontano i conflitti con ferocia istintiva e movimenti da predatore, p...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

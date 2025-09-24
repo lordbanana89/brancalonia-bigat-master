@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Con un gesto teatrale e una serie di parole in dialetto, evochi una generosa porzione di pastasciutta fumante condita con sugo di pomodoro e formaggio.</p><p>Crei fino a 3 razioni di pasta nutriente che possono sfamare fino a 3 creature per 24 ore. La pasta ha un sapore delizioso e fornisce tutti i nutrienti necessari. Chiunque mangi una razione completa recupera 1 punto ferita e ottiene vantaggio al prossimo tiro salvezza contro malattie per 8 ore.</p><p>Se lanciato a livelli superiori, per ogni slot incantesimo di livello superiore al 1° puoi creare 2 razioni aggiuntive di pasta.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Con un gesto teatrale e una serie di parole in dialetto, evochi una generosa porzione di pastasciutta fumante condita con sugo di pomodoro e formaggio.Crei fino a 3 razioni di pasta nutriente che poss...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia Macaronicon",
     "activation": {

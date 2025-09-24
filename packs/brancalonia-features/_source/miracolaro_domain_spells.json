@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Ottieni gli incantesimi del Dominio del Calendario. Sono sempre considerati preparati e non contano contro il numero di incantesimi che puoi preparare.</p><ul><li>1° livello: <em>protezione dal bene e dal male, purificare cibo e bevande</em></li><li>2° livello: <em>caratteristica potenziata, ristorare inferiore</em></li><li>3° livello: <em>creare cibo e acqua, dissolvi magie</em></li></ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Ottieni gli incantesimi del Dominio del Calendario. Sono sempre considerati preparati e non contano contro il numero di incantesimi che puoi preparare.1° livello: protezione dal bene e dal male, purif...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

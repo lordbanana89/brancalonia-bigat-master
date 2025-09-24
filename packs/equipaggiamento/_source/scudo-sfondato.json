@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Uno scudo di legno con un grosso buco al centro. Offre protezione limitata ma permette di guardare attraverso il buco.</p><p><strong>Danneggiato:</strong> +1 CA invece di +2. Puoi guardare attraverso il buco senza penalità alla percezione.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"equipaggiamento-scadente\" draggable=\"true\">📜 Equipaggiamento Scadente</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Uno scudo di legno con un grosso buco al centro. Offre protezione limitata ma permette di guardare attraverso il buco.Danneggiato: +1 CA invece di +2. Puoi guardare attraverso il buco senza penalità a...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

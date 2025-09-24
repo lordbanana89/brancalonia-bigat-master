@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Ottieni competenza nel kit da truccatore, negli strumenti da tessitore e in un gioco a tua scelta. Se sei già competente in uno di questi strumenti, raddoppi il bonus di competenza quando lo utilizzi.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Ottieni competenza nel kit da truccatore, negli strumenti da tessitore e in un gioco a tua scelta. Se sei già competente in uno di questi strumenti, raddoppi il bonus di competenza quando lo utilizzi....</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

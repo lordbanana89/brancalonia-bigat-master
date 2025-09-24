@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Piccole ali caprine ti permettono di planare: se cadi mentre puoi usare le ali non subisci danni da caduta.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Piccole ali caprine ti permettono di planare: se cadi mentre puoi usare le ali non subisci danni da caduta.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

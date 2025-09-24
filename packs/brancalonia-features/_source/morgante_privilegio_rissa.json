@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Quando prendi parte a una rissa puoi raccogliere oggetti di scena epici come azione bonus.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"risse-taverna\" draggable=\"true\">📜 Risse Taverna</span> <span class=\"regola-tag\" data-regola=\"combattimento-sporco\" draggable=\"true\">📜 Combattimento Sporco</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Quando prendi parte a una rissa puoi raccogliere oggetti di scena epici come azione bonus.Regole Correlate: 📜 Risse Taverna 📜 Combattimento Sporco</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>Gli spadaccini del Regno affinano tecniche di scherma nelle scuole cittadine, divenendo maestri di duello, schermaglie e rapidi assalti fra le vie.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Gli spadaccini del Regno affinano tecniche di scherma nelle scuole cittadine, divenendo maestri di duello, schermaglie e rapidi assalti fra le vie.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

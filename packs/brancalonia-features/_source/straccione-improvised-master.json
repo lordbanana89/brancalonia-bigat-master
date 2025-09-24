@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Sei competente con le armi improvvisate e tratti i loro danni come 1d6. Puoi applicare i benefici dello Stile di Combattimento improvvisato.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Sei competente con le armi improvvisate e tratti i loro danni come 1d6. Puoi applicare i benefici dello Stile di Combattimento improvvisato.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

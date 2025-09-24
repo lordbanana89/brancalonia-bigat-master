@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Specialista delle Armi Improvvisate</h2><p>Sei un maestro nell'usare qualsiasi oggetto come arma, trasformando utensili quotidiani in strumenti di combattimento letali.</p><h3>Benefici</h3><ul><li>Aumenta il tuo punteggio di Forza o Destrezza di 1, fino a un massimo di 20.</li><li>Sei competente con tutte le armi improvvisate.</li><li>Le armi improvvisate che usi infliggono 1d6 danni invece di 1d4, e hanno la proprietà versatile (1d8 se usate a due mani quando possibile).</li><li>Quando colpisci una creatura con un'arma improvvisata, puoi scegliere di spezzare l'arma per infliggere 1d6 danni extra del tipo appropriato.</li><li>Puoi tirare un'arma improvvisata leggera con gittata 20/60 piedi, anche se normalmente non ha la proprietà da lancio.</li></ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Specialista delle Armi ImprovvisateSei un maestro nell'usare qualsiasi oggetto come arma, trasformando utensili quotidiani in strumenti di combattimento letali.BeneficiAumenta il tuo punteggio di Forz...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

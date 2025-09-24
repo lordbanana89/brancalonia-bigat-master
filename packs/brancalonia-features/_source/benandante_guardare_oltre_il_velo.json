@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Ottieni scurovisione fino a 36 metri e percepisci la presenza di non morti entro 18 metri.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Ottieni scurovisione fino a 36 metri e percepisci la presenza di non morti entro 18 metri.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

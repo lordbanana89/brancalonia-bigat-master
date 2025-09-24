@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Puoi essere in sintonia con quattro oggetti magici contemporaneamente e ignori i prerequisiti necessari alla sintonia.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Puoi essere in sintonia con quattro oggetti magici contemporaneamente e ignori i prerequisiti necessari alla sintonia.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

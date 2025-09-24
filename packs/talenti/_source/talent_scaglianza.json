@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Scaglianza</h2>\n<h3>Benefici</h3>\n<ul>\n  <li>Le armi senza la proprietà da lancio considerate come tali quando le scagli (gittata 3/6).</li>\n  <li>Quando usi un'arma con la proprietà da lancio la consideri accurata.</li>\n  <li>La gittata normale e lunga delle armi da lancio aumenta di 3 metri.</li>\n</ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Scaglianza\nBenefici\n\n  Le armi senza la proprietà da lancio considerate come tali quando le scagli (gittata 3/6).\n  Quando usi un'arma con la proprietà da lancio la consideri accurata.\n  La gittata no...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

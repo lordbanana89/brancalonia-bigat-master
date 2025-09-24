@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Gioco di Squadra</h2>\n<p>Puoi usare l'azione Aiuto come azione bonus.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Gioco di Squadra\nPuoi usare l'azione Aiuto come azione bonus.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

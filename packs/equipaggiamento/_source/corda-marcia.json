@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>15 metri di corda che puzza di muffa e ha segni evidenti di usura.</p><p><strong>Inaffidabile:</strong> Ha il 25% di probabilità di rompersi quando usata per sostenere più di 50 kg (tira 1d4, si rompe con 1).</p><p><strong>Utilità:</strong> Può comunque essere usata per legare oggetti leggeri o come corda di sicurezza con dovute precauzioni.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>15 metri di corda che puzza di muffa e ha segni evidenti di usura.Inaffidabile: Ha il 25% di probabilità di rompersi quando usata per sostenere più di 50 kg (tira 1d4, si rompe con 1).Utilità: Può com...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Dal 18° livello, nessun attacco ha vantaggio contro di te finché non sei incapacitato, rendendoti un bersaglio quasi impossibile.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Dal 18° livello, nessun attacco ha vantaggio contro di te finché non sei incapacitato, rendendoti un bersaglio quasi impossibile.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

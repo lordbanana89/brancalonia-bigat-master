@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Questo pugnale porta sfortuna a chi lo impugna. È maledetto da antica magia.</p><p><strong>Maledetto:</strong> Quando tiri 1 o 2 naturale al tiro per colpire, colpisci accidentalmente un alleato adiacente per 1 danno perforante.</p><p><strong>Proprietà:</strong> Accurata, leggera, da lancio (gittata 20/60)</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"fortuna-sfortuna\" draggable=\"true\">📜 Fortuna Sfortuna</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Questo pugnale porta sfortuna a chi lo impugna. È maledetto da antica magia.Maledetto: Quando tiri 1 o 2 naturale al tiro per colpire, colpisci accidentalmente un alleato adiacente per 1 danno perfora...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

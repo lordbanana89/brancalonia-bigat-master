@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Emeriticenza Assoluta</h2>\n<p><em>Richiede due altre emeriticenze.</em></p>\n<p>Il tuo bonus di competenza diventa +4.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Emeriticenza Assoluta\nRichiede due altre emeriticenze.\nIl tuo bonus di competenza diventa +4.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

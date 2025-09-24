@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Energumeno</h2>\n<p>I tuoi punti ferita massimi aumentano di 6 + il tuo modificatore di Costituzione.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Energumeno\nI tuoi punti ferita massimi aumentano di 6 + il tuo modificatore di Costituzione.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

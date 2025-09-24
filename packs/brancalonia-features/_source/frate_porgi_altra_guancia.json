@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Puoi usare la Forza al posto della Destrezza per Difesa Senza Armatura e Deviare Proiettili. Inoltre, quando subisci un attacco in mischia puoi spendere 1 punto ki per effettuare un colpo senz'armi come reazione.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Puoi usare la Forza al posto della Destrezza per Difesa Senza Armatura e Deviare Proiettili. Inoltre, quando subisci un attacco in mischia puoi spendere 1 punto ki per effettuare un colpo senz'armi co...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

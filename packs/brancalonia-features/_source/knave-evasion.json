@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Al 7° livello, ti muovi con tale agilità da evitare gli effetti ad area: subisci metà danno se fallisci un TS Des, nessun danno se lo superi.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Al 7° livello, ti muovi con tale agilità da evitare gli effetti ad area: subisci metà danno se fallisci un TS Des, nessun danno se lo superi.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

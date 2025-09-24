@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I guiscardi sono maghi cacciatori di reliquie che vivono di spedizioni, imbrogli e scoperte. Le loro conoscenze li rendono esperti di manufatti e chincaglierie magiche.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I guiscardi sono maghi cacciatori di reliquie che vivono di spedizioni, imbrogli e scoperte. Le loro conoscenze li rendono esperti di manufatti e chincaglierie magiche.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Il tuo massimo di punti ferita aumenta di 1 e aumenta nuovamente di 1 ogni volta che acquisisci un livello. Ricordati di applicare manualmente questo incremento.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Il tuo massimo di punti ferita aumenta di 1 e aumenta nuovamente di 1 ogni volta che acquisisci un livello. Ricordati di applicare manualmente questo incremento.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

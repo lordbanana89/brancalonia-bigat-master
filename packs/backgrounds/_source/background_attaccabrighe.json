@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Attaccabrighe</h2><p>Nel caos delle bettole l'attaccabrighe vive di schiaffi e gozzoviglie, sempre pronto a provocare la prossima rissa. È un campione dei giochi da taverna e un maestro delle saccagnate.</p><h3>Competenze</h3><ul><li><strong>Abilità:</strong> Intrattenere, Intuizione</li><li><strong>Strumenti:</strong> Due giochi a scelta</li><li><strong>Linguaggi:</strong> —</li></ul><h3>Equipaggiamento</h3><p>Un trofeo da rissa (tira un Cimelio aggiuntivo), una mappa con le locande della città natale, un abito comune, una borsa con 15 ma</p><h3>Privilegio: Rissaiolo</h3><p>Ottieni 1 slot mossa aggiuntivo quando partecipi a una rissa.</p><p><em>Vedi il manuale di Brancalonia per tabelle di tratti, ideali, legami e difetti suggeriti.</em></p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>AttaccabrigheNel caos delle bettole l'attaccabrighe vive di schiaffi e gozzoviglie, sempre pronto a provocare la prossima rissa. È un campione dei giochi da taverna e un maestro delle saccagnate.Compe...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Una balestra con meccanismo allentato e corda logora. Funziona ma non è affidabile.</p><p><strong>Scadente:</strong> Su un 1 naturale al tiro per colpire, la corda si spezza e l'arma diventa inutilizzabile fino a riparazione (2 mo).</p><p><strong>Proprietà:</strong> Munizioni (gittata 80/320), caricamento, due mani</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"equipaggiamento-scadente\" draggable=\"true\">📜 Equipaggiamento Scadente</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Una balestra con meccanismo allentato e corda logora. Funziona ma non è affidabile.Scadente: Su un 1 naturale al tiro per colpire, la corda si spezza e l'arma diventa inutilizzabile fino a riparazione...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

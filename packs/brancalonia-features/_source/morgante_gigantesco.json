@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Conti come una creatura di una taglia più grande ai fini della capacità di trasporto, del trascinamento e dello spingere oggetti.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"sistema-taglie\" draggable=\"true\">📜 Sistema Taglie</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Conti come una creatura di una taglia più grande ai fini della capacità di trasporto, del trascinamento e dello spingere oggetti.Regole Correlate: 📜 Sistema Taglie</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

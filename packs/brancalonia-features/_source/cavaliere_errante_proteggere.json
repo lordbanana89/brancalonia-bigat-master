@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Come azione bonus puoi spendere un uso di Incanalare Divinità per proteggere una creatura che puoi vedere. Per 1 minuto gli attacchi contro quella creatura subiscono svantaggio fintanto che rimane entro 1,5 metri da te.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Come azione bonus puoi spendere un uso di Incanalare Divinità per proteggere una creatura che puoi vedere. Per 1 minuto gli attacchi contro quella creatura subiscono svantaggio fintanto che rimane ent...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

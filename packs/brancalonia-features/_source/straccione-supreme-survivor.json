@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Recuperi punti ferita pari al tuo livello da straccione all’inizio di ogni turno in cui hai meno della metà dei tuoi PF massimi.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Recuperi punti ferita pari al tuo livello da straccione all’inizio di ogni turno in cui hai meno della metà dei tuoi PF massimi.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

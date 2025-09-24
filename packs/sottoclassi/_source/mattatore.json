@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I mattatori catturano e domano bestie feroci, trasformando la caccia in spettacolo. Sono addestratori, gladiatori e cacciatori di mostri.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I mattatori catturano e domano bestie feroci, trasformando la caccia in spettacolo. Sono addestratori, gladiatori e cacciatori di mostri.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

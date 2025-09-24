@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Devi consumare il doppio del cibo necessario a un umano medio, ma hai vantaggio sulle prove che coinvolgono il consumo di cibi e bevande (incluse le prove per resistere a effetti dovuti a bagordi o scommesse culinarie).</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"gioco-azzardo\" draggable=\"true\">📜 Gioco Azzardo</span> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Devi consumare il doppio del cibo necessario a un umano medio, ma hai vantaggio sulle prove che coinvolgono il consumo di cibi e bevande (incluse le prove per resistere a effetti dovuti a bagordi o sc...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

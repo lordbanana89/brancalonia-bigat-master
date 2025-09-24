@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Dal 5° livello, quando un attacco che puoi vedere ti colpisce, puoi usare la tua Reazione per dimezzare i danni subiti.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Dal 5° livello, quando un attacco che puoi vedere ti colpisce, puoi usare la tua Reazione per dimezzare i danni subiti.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

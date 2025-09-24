@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Fai sì che un nemico inciampi e cada in modo spettacolarmente ridicolo, causando risate tra chi assiste.</p><p>Scegli una creatura che puoi vedere entro gittata. Il bersaglio deve fare un tiro salvezza su Destrezza. Se fallisce, cade prono in modo particolarmente goffo e buffo.</p><p>Inoltre, tutte le creature ostili al bersaglio entro 9 metri che possono vederlo devono fare un tiro salvezza su Saggezza o essere incapacitate dalle risate fino alla fine del loro prossimo turno.</p><p>Se lanciato a livelli superiori, puoi scegliere una creatura aggiuntiva per ogni slot incantesimo di livello superiore al 1°. Ogni bersaglio deve fare il proprio tiro salvezza.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Fai sì che un nemico inciampi e cada in modo spettacolarmente ridicolo, causando risate tra chi assiste.Scegli una creatura che puoi vedere entro gittata. Il bersaglio deve fare un tiro salvezza su De...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia Macaronicon",
     "activation": {

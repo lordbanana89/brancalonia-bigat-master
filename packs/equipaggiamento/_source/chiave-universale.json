@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Un grimaldello rozzo che funziona solo il 30% delle volte. Quando fallisce, si rompe nella serratura.</p><p><strong>Scassinare:</strong> 30% di probabilità di aprire qualsiasi serratura semplice.</p><p><strong>Rottura:</strong> Quando non funziona, si rompe nella serratura rendendo impossibile aprirla con altri mezzi.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Un grimaldello rozzo che funziona solo il 30% delle volte. Quando fallisce, si rompe nella serratura.Scassinare: 30% di probabilità di aprire qualsiasi serratura semplice.Rottura: Quando non funziona,...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

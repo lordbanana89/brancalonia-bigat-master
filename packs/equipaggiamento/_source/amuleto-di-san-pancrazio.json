@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Un medaglione benedetto (forse) con l'immagine di San Pancrazio, santo patrono dei disperati.</p><p><strong>Benedizione Dubbia:</strong> Una volta al giorno puoi baciarlo e ritirare un tiro salvezza fallito. Se ottieni ancora un fallimento, l'amuleto si rompe permanentemente.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Un medaglione benedetto (forse) con l'immagine di San Pancrazio, santo patrono dei disperati.Benedizione Dubbia: Una volta al giorno puoi baciarlo e ritirare un tiro salvezza fallito. Se ottieni ancor...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

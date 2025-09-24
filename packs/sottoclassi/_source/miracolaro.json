@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I miracolari invocano i santi del Calendario per proteggere il popolo e distribuire benedizioni. Percorrono il Regno portando guarigioni, cialtronate e prodigi.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I miracolari invocano i santi del Calendario per proteggere il popolo e distribuire benedizioni. Percorrono il Regno portando guarigioni, cialtronate e prodigi.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

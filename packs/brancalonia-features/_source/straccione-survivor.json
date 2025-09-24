@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Profondi tagli non ti fermano: ottieni resistenza ai danni contundenti delle risse e puoi ignorare gli svantaggi dovuti a fame e sete.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Profondi tagli non ti fermano: ottieni resistenza ai danni contundenti delle risse e puoi ignorare gli svantaggi dovuti a fame e sete.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Fandonia Migliorata</h2>\n<p><em>Richiede la capacità di lanciare incantesimi.</em></p>\n<p>Ottieni uno slot incantesimo aggiuntivo di un livello a tua scelta tra quelli che puoi lanciare.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Fandonia Migliorata\nRichiede la capacità di lanciare incantesimi.\nOttieni uno slot incantesimo aggiuntivo di un livello a tua scelta tra quelli che puoi lanciare.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

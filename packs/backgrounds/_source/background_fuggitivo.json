@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Fuggitivo</h2><p>Evaso, disertore o condannato alla macchia, il fuggitivo vive braccato dalla giustizia del Regno e continua a guardarsi alle spalle.</p><h3>Competenze</h3><ul><li><strong>Abilità:</strong> Furtività, Sopravvivenza</li><li><strong>Strumenti:</strong> —</li><li><strong>Linguaggi:</strong> Baccaglio</li></ul><h3>Equipaggiamento</h3><p>Un pugnale, un ricordo della sua vita passata, un abito da viaggiatore sgualcito, una borsa con 10 ma</p><h3>Privilegio: Reietto</h3><p>La tua Taglia aumenta di 100 monete d'oro a causa delle malefatte (vere o presunte) che ti vengono attribuite.</p><p><em>Vedi il manuale di Brancalonia per tabelle di tratti, ideali, legami e difetti suggeriti.</em></p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>FuggitivoEvaso, disertore o condannato alla macchia, il fuggitivo vive braccato dalla giustizia del Regno e continua a guardarsi alle spalle.CompetenzeAbilità: Furtività, SopravvivenzaStrumenti: —Ling...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

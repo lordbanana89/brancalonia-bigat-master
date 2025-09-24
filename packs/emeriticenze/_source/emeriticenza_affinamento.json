@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Affinamento</h2>\n<p><em>Può essere scelta fino a due volte.</em></p>\n<p>Aumenti due caratteristiche di 1 oppure una singola caratteristica di 2, fino a un massimo di 20.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Affinamento\nPuò essere scelta fino a due volte.\nAumenti due caratteristiche di 1 oppure una singola caratteristica di 2, fino a un massimo di 20.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

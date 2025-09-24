@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Brado</h2><p>Cresciuto tra tribù selvatiche, eremiti o gatti lupeschi, il brado vive in comunione con boschi e montagne. La civiltà gli sta stretta e preferisce il richiamo della foresta.</p><h3>Competenze</h3><ul><li><strong>Abilità:</strong> Addestrare Animali, Atletica</li><li><strong>Strumenti:</strong> Borsa da erborista</li><li><strong>Linguaggi:</strong> Petroglifico</li></ul><h3>Equipaggiamento</h3><p>Un bastone, un ciondolo d'ossa, pigmenti colorati, un abito da viaggiatore, una borsa con 10 ma</p><h3>Privilegio: Dimestichezza Selvatica</h3><p>Tu e fino a cinque compagni potete attraversare territori selvaggi senza attirare l'attenzione delle bestie ostili.</p><p><em>Vedi il manuale di Brancalonia per tabelle di tratti, ideali, legami e difetti suggeriti.</em></p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>BradoCresciuto tra tribù selvatiche, eremiti o gatti lupeschi, il brado vive in comunione con boschi e montagne. La civiltà gli sta stretta e preferisce il richiamo della foresta.CompetenzeAbilità: Ad...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

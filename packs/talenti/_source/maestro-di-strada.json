@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Maestro di Strada</h2><p>Conosci i segreti della vita urbana e sai come muoverti nei bassifondi e nelle vie delle città.</p><h3>Benefici</h3><ul><li>Aumenta il tuo punteggio di Destrezza o Saggezza di 1, fino a un massimo di 20.</li><li>Sei competente nelle abilità Furtività e Sopravvivenza. Se sei già competente in una di queste abilità, il tuo bonus di competenza è raddoppiato per le prove che usano quella competenza in ambienti urbani.</li><li>Puoi muoverti a piena velocità mentre usi Furtività in ambienti urbani senza penalità.</li><li>Conosci sempre la direzione generale dei quartieri principali di qualsiasi città in cui ti trovi.</li><li>Hai vantaggio alle prove di Carisma per interagire con criminali, mendicanti e altri emarginati.</li></ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Maestro di StradaConosci i segreti della vita urbana e sai come muoverti nei bassifondi e nelle vie delle città.BeneficiAumenta il tuo punteggio di Destrezza o Saggezza di 1, fino a un massimo di 20.S...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

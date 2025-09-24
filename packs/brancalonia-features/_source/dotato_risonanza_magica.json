@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Al termine di un riposo breve puoi recuperare uno slot incantesimo di 1° livello. Questo privilegio rappresenta il legame istintivo dei dotati con la magia del Regno.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Al termine di un riposo breve puoi recuperare uno slot incantesimo di 1° livello. Questo privilegio rappresenta il legame istintivo dei dotati con la magia del Regno.Regole Correlate: 📜 Riposo Canagl...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

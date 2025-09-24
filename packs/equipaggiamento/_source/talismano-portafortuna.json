@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Un ciondolo con simboli scaramantici di dubbia origine. Potrebbe portare fortuna... o sfortuna.</p><p><strong>Fortuna Incerta:</strong> Una volta al giorno puoi ritirare un dado, ma devi prendere il secondo risultato anche se peggiore.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"fortuna-sfortuna\" draggable=\"true\">📜 Fortuna Sfortuna</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Un ciondolo con simboli scaramantici di dubbia origine. Potrebbe portare fortuna... o sfortuna.Fortuna Incerta: Una volta al giorno puoi ritirare un dado, ma devi prendere il secondo risultato anche s...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

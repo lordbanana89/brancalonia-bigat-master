@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Un libro sacro macchiato di vino e unto di cibo. Le pagine sono illeggibili ma l'aspetto è convincente.</p><p><strong>Finzione Religiosa:</strong> +2 alle prove di Inganno per fingere devozione religiosa quando interagisci con chierici e persone devote.</p><p><strong>Illeggibile:</strong> Le pagine sono troppo macchiate per essere lette, quindi non può essere usato per rituali o incantesimi.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"ubriachezza\" draggable=\"true\">📜 Ubriachezza</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Un libro sacro macchiato di vino e unto di cibo. Le pagine sono illeggibili ma l'aspetto è convincente.Finzione Religiosa: +2 alle prove di Inganno per fingere devozione religiosa quando interagisci c...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

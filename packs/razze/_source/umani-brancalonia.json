@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Umano</h2>\n<p>Gli umani sono la popolazione di gran lunga più diffusa nel Regno di Taglia. Pragmatici, adattabili e pronti a tutto, costituiscono nove persone su dieci che si incontrano nelle città e lungo le strade del Sinistro Stivale.</p>\n<p>La loro varietà di usi, costumi e aspirazioni fa sì che vengano visti come il metro di paragone da tutte le altre stirpi: per alcuni sono semplicemente la gente comune, per altri l’esempio da emulare, per molti un mistero inesauribile.</p>\n<h3>Tratti degli Umani</h3>\n<ul>\n  <li><strong>Incremento dei Punteggi di Caratteristica.</strong> Due punteggi di caratteristica diversi a tua scelta aumentano di 1.</li>\n  <li><strong>Abilità.</strong> Ottieni competenza in un’abilità a tua scelta.</li>\n  <li><strong>Talento.</strong> Ottieni un talento a tua scelta.</li>\n  <li><strong>Età.</strong> Raggiungi la maturità tra i 18 e i 20 anni e vivi in genere meno di un secolo.</li>\n  <li><strong>Taglia.</strong> Sei una creatura di taglia Media.</li>\n  <li><strong>Velocità.</strong> La tua velocità sul terreno è di 9 metri.</li>\n  <li><strong>Linguaggi.</strong> Parli, leggi e scrivi Comune e un altro linguaggio a tua scelta.</li>\n  <li><strong>Privilegio da Rissa – Versatilità.</strong> Ottieni +1 slot mossa quando prendi parte a una rissa.</li>\n</ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Umano\nGli umani sono la popolazione di gran lunga più diffusa nel Regno di Taglia. Pragmatici, adattabili e pronti a tutto, costituiscono nove persone su dieci che si incontrano nelle città e lungo le...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

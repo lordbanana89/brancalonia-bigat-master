@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Stivali di cuoio con evidenti buchi nelle suole. Fanno rumore su terreno bagnato ma ti fanno sembrare autentico.</p><p><strong>Svantaggio:</strong> Svantaggio alle prove di Furtività su terreno bagnato o fangoso.</p><p><strong>Vantaggio:</strong> +2 alle prove di Carisma per sembrare un poveraccio bisognoso.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Stivali di cuoio con evidenti buchi nelle suole. Fanno rumore su terreno bagnato ma ti fanno sembrare autentico.Svantaggio: Svantaggio alle prove di Furtività su terreno bagnato o fangoso.Vantaggio: +...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

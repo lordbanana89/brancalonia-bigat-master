@@ -21,7 +21,11 @@
     "description": {
       "value": "<h2>Silfo</h2><p>I Silfi sono creature fatate di piccola statura che vivono nei boschi e nelle radure di Brancalonia. Sono esseri magici con una natura giocosa e curiosa, spesso invischiati in scherzi innocui e avventure impreviste.</p><h3>Tratti Razziali</h3><ul><li><strong>Aumento Caratteristiche:</strong> Il tuo punteggio di Destrezza aumenta di 1 e il tuo punteggio di Carisma aumenta di 2.</li><li><strong>Età:</strong> I Silfi maturano alla stessa velocità degli umani ma possono vivere fino a 200 anni.</li><li><strong>Taglia:</strong> Piccola. Sei alto tra 0,6 e 1,2 metri.</li><li><strong>Velocità:</strong> La tua velocità base di camminata è di 9 metri.</li><li><strong>Volo:</strong> Grazie alle tue ali magiche, hai una velocità di volo di 9 metri. Non puoi volare se indossi armature medie o pesanti.</li><li><strong>Magia Fatata:</strong> Conosci il trucchetto <em>luci danzanti</em>. Quando raggiungi il 3° livello, puoi lanciare l'incantesimo <em>charme su persone</em> una volta con questo tratto. Quando raggiungi il 5° livello, puoi anche lanciare l'incantesimo <em>suggestione</em> una volta con questo tratto. Recuperi la capacità di lanciare questi incantesimi quando completi un riposo lungo. Il Carisma è la tua caratteristica da incantatore per questi incantesimi.</li><li><strong>Parlare con le Bestie:</strong> Attraverso suoni e gesti, puoi comunicare idee semplici con bestie di taglia Piccola o inferiore.</li><li><strong>Natura Fatata:</strong> Hai vantaggio ai tiri salvezza contro essere affascinato, e la magia non può farti dormire.</li><li><strong>Linguaggi:</strong> Parli, leggi e scrivi Comune e Silvano.</li></ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>SilfoI Silfi sono creature fatate di piccola statura che vivono nei boschi e nelle radure di Brancalonia. Sono esseri magici con una natura giocosa e curiosa, spesso invischiati in scherzi innocui e a...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

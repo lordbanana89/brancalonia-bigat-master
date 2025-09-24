@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Selvatico</h2>\n<p>I selvatici sono gli eredi delle tribù ferine che abitavano il Regno prima delle grandi città. Vivono tra boschi e montagne, portando con sé un istinto primordiale che li rende formidabili esploratori e cacciatori.</p>\n<p>La loro cultura orale è ricca di canti e tradizioni, e sebbene il popolino li abbia a lungo considerati trogloditi, oggi sono compagni affidabili e persone a pieno titolo.</p>\n<h3>Tratti dei Selvatici</h3>\n<ul>\n  <li><strong>Incremento dei Punteggi di Caratteristica.</strong> Il tuo punteggio di Costituzione aumenta di 2, il tuo punteggio di Saggezza aumenta di 1 e puoi incrementare di 1 un altro punteggio di caratteristica a tua scelta.</li>\n  <li><strong>Cresciuto nella Selva.</strong> Puoi tentare di nasconderti anche quando sei occultato solo da fenomeni naturali.</li>\n  <li><strong>Istinto Primordiale.</strong> Ottieni competenza in Percezione e Sopravvivenza.</li>\n  <li><strong>Età.</strong> Vivi quanto un umano, anche se chi rimane nelle terre selvagge può invecchiare più in fretta.</li>\n  <li><strong>Taglia.</strong> Sei una creatura di taglia Media.</li>\n  <li><strong>Velocità.</strong> La tua velocità sul terreno è di 9 metri.</li>\n  <li><strong>Linguaggi.</strong> Parli, leggi e scrivi Comune.</li>\n  <li><strong>Privilegio da Rissa – Tosto.</strong> Ignori gli effetti secondari delle prime due Batoste durante una rissa.</li>\n</ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Selvatico\nI selvatici sono gli eredi delle tribù ferine che abitavano il Regno prima delle grandi città. Vivono tra boschi e montagne, portando con sé un istinto primordiale che li rende formidabili e...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Benandanti</h2><p>I Benandanti sono umani benedetti (o maledetti) nati con la camicia, ovvero con il sacco amniotico intatto. Secondo le credenze popolari, questo li rende naturalmente predisposti a combattere spiriti maligni e streghe. Nel Regno di Taglia, i Benandanti sono rispettati e temuti in egual misura.</p><h3>Tratti dei Benandanti</h3><ul><li><strong>Incremento dei Punteggi di Caratteristica:</strong> Il tuo punteggio di Saggezza aumenta di 2, e un altro punteggio di caratteristica a tua scelta aumenta di 1.</li><li><strong>Età:</strong> I Benandanti invecchiano come gli umani normali.</li><li><strong>Allineamento:</strong> I Benandanti tendono verso il bene, ma non sempre.</li><li><strong>Taglia:</strong> Media.</li><li><strong>Velocità:</strong> La tua velocità base di camminata è di 9 metri.</li><li><strong>Vista Spirituale:</strong> Puoi vedere creature invisibili e etere entro 3 metri da te.</li><li><strong>Nato con la Camicia:</strong> Hai vantaggio sui tiri salvezza contro charme, paura e possessione.</li><li><strong>Combattente degli Spiriti:</strong> I tuoi attacchi contano come magici per superare resistenze e immunità di non morti e spiriti.</li><li><strong>Benedizione Protettiva:</strong> Una volta per riposo lungo, puoi lanciare <em>protezione dal bene e dal male</em> senza usare slot incantesimi.</li><li><strong>Sensibilità Spirituale:</strong> Hai competenza nell'abilità Percezione e hai vantaggio nelle prove di Percezione per individuare non morti, demoni e spiriti.</li><li><strong>Linguaggi:</strong> Puoi parlare, leggere e scrivere Comune e Celestiale.</li></ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>BenandantiI Benandanti sono umani benedetti (o maledetti) nati con la camicia, ovvero con il sacco amniotico intatto. Secondo le credenze popolari, questo li rende naturalmente predisposti a combatter...</p>",
+        "flavor": ""
+      }
     },
     "source": {
       "custom": "Brancalonia"

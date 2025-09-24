@@ -22,7 +22,11 @@
     "description": {
       "value": "<h2>Pantegana</h2><p>Le Pantegane sono ratti antropomorfi che vivono nelle fogne e nei bassifondi delle città di Brancalonia. Sono creature astute e sopravvissute, abili nel commercio di informazioni e nell'arte del sopravvivere negli ambienti urbani più duri.</p><h3>Tratti Razziali</h3><ul><li><strong>Aumento Caratteristiche:</strong> Il tuo punteggio di Destrezza aumenta di 2 e il tuo punteggio di Intelligenza aumenta di 1.</li><li><strong>Età:</strong> Le Pantegane maturano rapidamente, raggiungendo l'età adulta a 12 anni, ma vivono solo fino a 60-70 anni.</li><li><strong>Taglia:</strong> Piccola. Sei alto tra 0,9 e 1,2 metri e pesi circa 18-22 chilogrammi.</li><li><strong>Velocità:</strong> La tua velocità base di camminata è di 7,5 metri.</li><li><strong>Scurovisione:</strong> Puoi vedere nell'oscurità entro 18 metri come se fosse luce fioca, e nell'oscurità come se fosse luce fioca.</li><li><strong>Sensi Acuti:</strong> Hai competenza nell'abilità Percezione.</li><li><strong>Resilienza della Pantegana:</strong> Hai vantaggio ai tiri salvezza contro malattie e veleni.</li><li><strong>Arrampicata Urbana:</strong> Hai una velocità di scalata di 6 metri, ma solo su superfici artificiali come muri di pietra, legno, o mattoni.</li><li><strong>Istinto di Sopravvivenza:</strong> Puoi muoverti attraverso lo spazio di qualsiasi creatura di taglia Media o più grande. Inoltre, hai vantaggio alle prove di Furtività quando ti nascondi in ambienti urbani.</li><li><strong>Linguaggi:</strong> Parli, leggi e scrivi Comune e Pantegano (una forma corrotta del Comune parlata nei bassifondi).</li></ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>PanteganaLe Pantegane sono ratti antropomorfi che vivono nelle fogne e nei bassifondi delle città di Brancalonia. Sono creature astute e sopravvissute, abili nel commercio di informazioni e nell'arte ...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

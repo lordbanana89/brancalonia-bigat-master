@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Un'accozzaglia di pezzi di cuoio e metallo legati insieme con corde e filo di ferro.</p><p><strong>Raffazzonata:</strong> Quando subisci un colpo critico, tira 1d6. Con 1-2 l'armatura perde 1 CA permanentemente fino a riparazione (costo: 1 mo).</p><p><strong>CA:</strong> 11 + Mod Des</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Un'accozzaglia di pezzi di cuoio e metallo legati insieme con corde e filo di ferro.Raffazzonata: Quando subisci un colpo critico, tira 1d6. Con 1-2 l'armatura perde 1 CA permanentemente fino a ripara...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

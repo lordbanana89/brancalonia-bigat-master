@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>Gli scaramanti manipolano la Fandonia e la sorte, intrecciando scongiuri, superstizioni e rituali protettivi.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Gli scaramanti manipolano la Fandonia e la sorte, intrecciando scongiuri, superstizioni e rituali protettivi.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

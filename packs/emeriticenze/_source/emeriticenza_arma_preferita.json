@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Arma Preferita</h2>\n<p><em>Disponibile solo a barbari, guerrieri, paladini e ranger.</em></p>\n<p>Scegli un tipo di arma. Quando lo impugni aggiungi il tuo bonus di competenza ai tiri per i danni.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"combattimento-sporco\" draggable=\"true\">📜 Combattimento Sporco</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Arma Preferita\nDisponibile solo a barbari, guerrieri, paladini e ranger.\nScegli un tipo di arma. Quando lo impugni aggiungi il tuo bonus di competenza ai tiri per i danni.Regole Correlate: 📜 Combatti...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

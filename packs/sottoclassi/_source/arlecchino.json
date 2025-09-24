@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I bardi del Collegio del Carnevale incarnano le maschere e i lazzi delle arlecchinate. Le loro performance colorate confondono i nemici e incantano il pubblico con gesti e scherzi irresistibili.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I bardi del Collegio del Carnevale incarnano le maschere e i lazzi delle arlecchinate. Le loro performance colorate confondono i nemici e incantano il pubblico con gesti e scherzi irresistibili.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

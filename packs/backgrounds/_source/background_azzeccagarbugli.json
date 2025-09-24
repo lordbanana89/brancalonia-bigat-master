@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Azzeccagarbugli</h2><p>Notai, legulei e pennivendoli del Regno conoscono cavilli e codicilli meglio di chiunque altro. Gli azzeccagarbugli sanno aggirare Equitaglia, corrompere birri e far sparire scartoffie compromettenti.</p><h3>Competenze</h3><ul><li><strong>Abilità:</strong> Indagare, Persuasione</li><li><strong>Strumenti:</strong> Arnesi da falsario</li><li><strong>Linguaggi:</strong> Maccheronico</li></ul><h3>Equipaggiamento</h3><p>Un libro di leggi locali, un calamaio con pennino e pergamena, un abito pregiato, una borsa con 20 ma</p><h3>Privilegio: Risolvere Guai</h3><p>Puoi annullare una Malefatta tua o di un alleato pagando un ammontare pari al Valore di Taglia corrispondente, purché intervieni prima che sia aggiunta alla Taglia del personaggio.</p><p><em>Vedi il manuale di Brancalonia per tabelle di tratti, ideali, legami e difetti suggeriti.</em></p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>AzzeccagarbugliNotai, legulei e pennivendoli del Regno conoscono cavilli e codicilli meglio di chiunque altro. Gli azzeccagarbugli sanno aggirare Equitaglia, corrompere birri e far sparire scartoffie ...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Malebranche</h2>\n<p>Un tempo diavoli dell’Inferno, i malebranche hanno compiuto il Gran Rifiuto per tornare nel mondo mortale. Portano ancora corna, zoccoli e uno humour sulfureo, ma cercano una nuova vita tra le canaglie del Regno.</p>\n<p>La loro presenza è segno di redenzione per il Credo e motivo di sospetto per il popolino, mentre i loro tratti infernali emergono a seconda del maletratto che manifestano.</p>\n<h3>Tratti dei Malebranche</h3>\n<ul>\n  <li><strong>Incremento dei Punteggi di Caratteristica.</strong> Il tuo punteggio di Carisma aumenta di 2 e quello di Costituzione aumenta di 1.</li>\n  <li><strong>Scurovisione.</strong> Grazie al retaggio infernale vedi nell’oscurità fino a 36 metri come in luce fioca e distingui la luce fioca come luce intensa.</li>\n  <li><strong>Malitratti Infernali.</strong> Scegli due malitratti dalla lista (Maleali, Malefiamme, Malegambe, Malavoce, Malemani, Malerecchie).</li>\n  <li><strong>Età.</strong> Nasci nel momento del Gran Rifiuto e invecchi come un umano.</li>\n  <li><strong>Taglia.</strong> Sei una creatura di taglia Media.</li>\n  <li><strong>Velocità.</strong> La tua velocità sul terreno è di 9 metri.</li>\n  <li><strong>Linguaggi.</strong> Parli, leggi e scrivi Comune e Infernale.</li>\n  <li><strong>Privilegio da Rissa – Malebotte.</strong> Hai vantaggio ai tiri salvezza durante le risse.</li>\n</ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Malebranche\nUn tempo diavoli dell’Inferno, i malebranche hanno compiuto il Gran Rifiuto per tornare nel mondo mortale. Portano ancora corna, zoccoli e uno humour sulfureo, ma cercano una nuova vita tr...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

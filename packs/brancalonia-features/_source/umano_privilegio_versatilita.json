@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Durante le risse gli umani sanno cavarsela in qualunque situazione: ottieni +1 slot mossa quando partecipa a una rissa secondo le regole di Brancalonia.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"risse-taverna\" draggable=\"true\">📜 Risse Taverna</span> <span class=\"regola-tag\" data-regola=\"combattimento-sporco\" draggable=\"true\">📜 Combattimento Sporco</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Durante le risse gli umani sanno cavarsela in qualunque situazione: ottieni +1 slot mossa quando partecipa a una rissa secondo le regole di Brancalonia.Regole Correlate: 📜 Risse Taverna 📜 Combattime...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

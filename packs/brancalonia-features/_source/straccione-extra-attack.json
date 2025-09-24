@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>A partire dal 5° livello puoi attaccare due volte, invece di una, quando compi l’azione Attacco nel tuo turno.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>A partire dal 5° livello puoi attaccare due volte, invece di una, quando compi l’azione Attacco nel tuo turno.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

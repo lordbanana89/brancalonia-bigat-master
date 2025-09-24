@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Hai vantaggio alle prove di Carisma per influenzare classi sociali basse e puoi reclutare seguaci mendicanti per ottenere informazioni.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Hai vantaggio alle prove di Carisma per influenzare classi sociali basse e puoi reclutare seguaci mendicanti per ottenere informazioni.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

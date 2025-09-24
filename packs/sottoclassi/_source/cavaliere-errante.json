@@ -9,7 +9,11 @@
     "description": {
       "value": "<p>I cavalieri erranti sono nobili decaduti e vagabondi che vivono per l'onore, la baldanza e la difesa dei bisognosi. Il loro giuramento li guida sulle strade del Regno.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>I cavalieri erranti sono nobili decaduti e vagabondi che vivono per l'onore, la baldanza e la difesa dei bisognosi. Il loro giuramento li guida sulle strade del Regno.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "advancement": [

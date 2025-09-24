@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Raddoppi il bonus di competenza nelle prove di caratteristica che coinvolgono oggetti o congegni magici.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Raddoppi il bonus di competenza nelle prove di caratteristica che coinvolgono oggetti o congegni magici.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

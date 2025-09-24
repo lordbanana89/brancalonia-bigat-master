@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Finché sei in ira e non indossi un'armatura pesante, le creature che ti attaccano a distanza hanno svantaggio. Inoltre mentre sei in ira puoi usare la tua azione bonus per effettuare l'azione Scatto.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Finché sei in ira e non indossi un'armatura pesante, le creature che ti attaccano a distanza hanno svantaggio. Inoltre mentre sei in ira puoi usare la tua azione bonus per effettuare l'azione Scatto.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

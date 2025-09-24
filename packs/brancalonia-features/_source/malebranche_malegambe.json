@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>La tua velocità sul terreno aumenta a 12 metri grazie alle gambe caprine.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>La tua velocità sul terreno aumenta a 12 metri grazie alle gambe caprine.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

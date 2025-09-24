@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Benedici un pasto o una preparazione culinaria con poteri magici che nutrono corpo e spirito.</p><p>Tocchi del cibo non magico e lo benedici. Fino a 6 creature che consumano questo cibo entro l'ora successiva ottengono i seguenti benefici per 8 ore:</p><ul><li>Recuperano 1d4 + il tuo modificatore di caratteristica da incantatore in punti ferita</li><li>Hanno vantaggio ai tiri salvezza contro veleni e malattie</li><li>Ottengono 1d4 punti ferita temporanei che durano per tutta la durata dell'incantesimo</li></ul><p>Il cibo mantiene anche il suo valore nutritivo normale e ha un sapore particolarmente delizioso.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Benedici un pasto o una preparazione culinaria con poteri magici che nutrono corpo e spirito.Tocchi del cibo non magico e lo benedici. Fino a 6 creature che consumano questo cibo entro l'ora successiv...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia Macaronicon",
     "activation": {

@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Giffonita</h2><p>Le Giffonite sono creature alate con tratti aquilini che vivono sulle montagne e nelle regioni elevate di Brancalonia. Sono fiere e nobili, con un forte senso dell'onore e una naturale inclinazione per la giustizia e la protezione degli innocenti.</p><h3>Tratti Razziali</h3><ul><li><strong>Aumento Caratteristiche:</strong> Il tuo punteggio di Destrezza aumenta di 2 e il tuo punteggio di Saggezza aumenta di 1.</li><li><strong>Età:</strong> Le Giffonite maturano alla stessa velocità degli umani ma vivono fino a 120 anni.</li><li><strong>Taglia:</strong> Media</li><li><strong>Velocità:</strong> La tua velocità base di camminata è di 9 metri.</li><li><strong>Volo:</strong> Hai una velocità di volo di 15 metri. Per usare questa velocità, non puoi indossare armature medie o pesanti.</li><li><strong>Artigli:</strong> I tuoi artigli sono armi naturali con cui puoi portare attacchi senz'armi. Se colpisci con essi, infliggi 1d4 + il tuo modificatore di Forza danni taglienti.</li><li><strong>Vista Acuta:</strong> Hai competenza nell'abilità Percezione e raddoppi il tuo bonus di competenza per le prove di Percezione che si basano sulla vista.</li><li><strong>Picchiata:</strong> Se voli almeno 6 metri dritto verso un bersaglio e poi lo colpisci con un attacco in mischia nello stesso turno, l'attacco infligge 1d6 danni extra del tipo dell'arma al bersaglio.</li><li><strong>Linguaggi:</strong> Parli, leggi e scrivi Comune e Aarakocra.</li></ul>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>GiffonitaLe Giffonite sono creature alate con tratti aquilini che vivono sulle montagne e nelle regioni elevate di Brancalonia. Sono fiere e nobili, con un forte senso dell'onore e una naturale inclin...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

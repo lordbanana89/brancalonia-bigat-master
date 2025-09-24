@@ -7,7 +7,11 @@
     "description": {
       "value": "<h2>Fandonia Potenziata</h2>\n<p>Puoi lanciare un incantesimo che conosci o hai preparato come se impiegassi uno slot di un livello superiore. Dopo averlo fatto devi completare un riposo breve prima di poter usare di nuovo questa emeriticenza.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Fandonia Potenziata\nPuoi lanciare un incantesimo che conosci o hai preparato come se impiegassi uno slot di un livello superiore. Dopo averlo fatto devi completare un riposo breve prima di poter usare...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

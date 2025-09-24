@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Ottieni competenza in Percezione e raddoppi il bonus di competenza per le prove di Percezione basate sull'udito.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Ottieni competenza in Percezione e raddoppi il bonus di competenza per le prove di Percezione basate sull'udito.</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Un elmo di ferro con corna di capra incollate malamente sui lati. Non offre protezione reale ma può impressionare.</p><p><strong>Nessuna Protezione:</strong> Non aumenta la CA.</p><p><strong>Intimidazione:</strong> Vantaggio alle prove di Intimidazione contro persone superstiziose o paurose.</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Un elmo di ferro con corna di capra incollate malamente sui lati. Non offre protezione reale ma può impressionare.Nessuna Protezione: Non aumenta la CA.Intimidazione: Vantaggio alle prove di Intimidaz...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

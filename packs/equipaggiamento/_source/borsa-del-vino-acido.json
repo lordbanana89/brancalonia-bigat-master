@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Contiene 4 pinte di vino di pessima qualità che sa di aceto.</p><p><strong>Effetto:</strong> Bere una pinta ti dà 1d4 punti ferita temporanei per 1 ora, ma devi fare un tiro salvezza su Costituzione CD 10 o essere Avvelenato per 1 ora.</p><p><strong>Usi:</strong> 4 pinte</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"veleni-antidoti\" draggable=\"true\">📜 Veleni Antidoti</span> <span class=\"regola-tag\" data-regola=\"ubriachezza\" draggable=\"true\">📜 Ubriachezza</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Contiene 4 pinte di vino di pessima qualità che sa di aceto.Effetto: Bere una pinta ti dà 1d4 punti ferita temporanei per 1 ora, ma devi fare un tiro salvezza su Costituzione CD 10 o essere Avvelenato...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Quando spendi Dadi Vita durante un riposo breve aggiungi 2d8 al numero totale di Dadi Vita che puoi spendere per ripararti. Recuperi i dadi extra al termine di un riposo lungo.</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"gioco-azzardo\" draggable=\"true\">📜 Gioco Azzardo</span> <span class=\"regola-tag\" data-regola=\"riposo-canaglia\" draggable=\"true\">📜 Riposo Canaglia</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Quando spendi Dadi Vita durante un riposo breve aggiungi 2d8 al numero totale di Dadi Vita che puoi spendere per ripararti. Recuperi i dadi extra al termine di un riposo lungo.Regole Correlate: 📜 Gio...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "activation": {

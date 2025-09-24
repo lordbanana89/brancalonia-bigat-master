@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Una pistola primitiva, più piccola e maneggevole dell'archibugio ma altrettanto inaffidabile.</p><p><strong>Inaffidabile:</strong> Su un 1-2 naturale al tiro per colpire, l'arma si inceppa e richiede un'azione per essere ricaricata. Su un 1 naturale, esplode causando 1d4 danni da fuoco a chi la impugna.</p><p><strong>Proprietà:</strong> Munizioni (gittata 30/90), caricamento, leggera</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"armi-da-fuoco-primitive\" draggable=\"true\">📜 Armi Da Fuoco Primitive</span> <span class=\"regola-tag\" data-regola=\"equipaggiamento-scadente\" draggable=\"true\">📜 Equipaggiamento Scadente</span></div>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Una pistola primitiva, più piccola e maneggevole dell'archibugio ma altrettanto inaffidabile.Inaffidabile: Su un 1-2 naturale al tiro per colpire, l'arma si inceppa e richiede un'azione per essere ric...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,

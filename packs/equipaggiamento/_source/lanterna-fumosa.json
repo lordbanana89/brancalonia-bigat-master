@@ -7,7 +7,11 @@
     "description": {
       "value": "<p>Una lanterna di latta malridotta che brucia olio di pessima qualità producendo molto fumo.</p><p><strong>Illuminazione:</strong> Illumina 6 metri di luce fioca e 3 metri di luce intensa.</p><p><strong>Fumo:</strong> Chi sta entro 1,5 metri deve fare un tiro salvezza su Costituzione CD 8 ogni round o tossire rumorosamente (svantaggio a Furtività).</p>",
       "chat": "",
-      "unidentified": ""
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Una lanterna di latta malridotta che brucia olio di pessima qualità producendo molto fumo.Illuminazione: Illumina 6 metri di luce fioca e 3 metri di luce intensa.Fumo: Chi sta entro 1,5 metri deve far...</p>",
+        "flavor": ""
+      }
     },
     "source": "Brancalonia",
     "quantity": 1,
