@@ -35,6 +35,7 @@ export class BrancaloniaMechanics {
   setupRandomTables() {
     // Registra tabelle nel CONFIG - Usa mergeObject per evitare problemi
     if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
+    if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
     if (!CONFIG.BRANCALONIA.tables) CONFIG.BRANCALONIA.tables = {};
 
     foundry.utils.mergeObject(CONFIG.BRANCALONIA.tables, {
@@ -153,6 +154,7 @@ export class BrancaloniaMechanics {
    * Sistema Trabocchetti conforme a dnd5e
    */
   setupTraps() {
+    if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
     if (!CONFIG.BRANCALONIA.traps) CONFIG.BRANCALONIA.traps = {};
 
     foundry.utils.mergeObject(CONFIG.BRANCALONIA.traps, {
@@ -242,6 +244,7 @@ export class BrancaloniaMechanics {
    * Sistema Padrini/Mentori
    */
   setupPatronSystem() {
+    if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
     if (!CONFIG.BRANCALONIA.patrons) CONFIG.BRANCALONIA.patrons = {};
 
     foundry.utils.mergeObject(CONFIG.BRANCALONIA.patrons, {
@@ -309,6 +312,7 @@ export class BrancaloniaMechanics {
    * Oggetti magici specifici di Brancalonia
    */
   setupBrancaloniaItems() {
+    if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
     if (!CONFIG.BRANCALONIA.magicItems) CONFIG.BRANCALONIA.magicItems = {};
 
     foundry.utils.mergeObject(CONFIG.BRANCALONIA.magicItems, {
