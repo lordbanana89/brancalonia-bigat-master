@@ -3,7 +3,7 @@
  * Basato sul manuale di Brancalonia (pag. 78-79)
  */
 
-export class BrancaloniaEquitaglia {
+class BrancaloniaEquitaglia {
   constructor() {
     this.setupEquitaglia();
   }

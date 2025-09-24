@@ -3,7 +3,7 @@
  * Basato sul manuale di Brancalonia (pag. 49-52)
  */
 
-export class BrancaloniaRischiMestiere {
+class BrancaloniaRischiMestiere {
   constructor() {
     this.setupRischi();
     this.registerHooks();
