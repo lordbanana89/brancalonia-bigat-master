@@ -176,9 +176,9 @@
       "tablesCount": 310
     }
   },
-  "url": "https://github.com/brancalonia-community/brancalonia-bigat",
-  "manifest": "https://raw.githubusercontent.com/brancalonia-community/brancalonia-bigat/main/module.json",
-  "download": "https://github.com/brancalonia-community/brancalonia-bigat/releases/latest/download/brancalonia-bigat.zip",
+  "url": "https://github.com/lordbanana89/brancalonia-bigat-master",
+  "manifest": "https://raw.githubusercontent.com/lordbanana89/brancalonia-bigat-master/main/module.json",
+  "download": "https://github.com/lordbanana89/brancalonia-bigat-master/archive/refs/heads/main.zip",
   "license": "LICENSE",
   "readme": "README.md",
   "media": [
