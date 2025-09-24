@@ -41,10 +41,13 @@
   "esmodules": [
     "modules/brancalonia-suppress-warnings-simple.js",
     "modules/brancalonia-config-fix.js",
-    "modules/brancalonia-init.js"
+    "modules/brancalonia-init.js",
+    "modules/brancalonia-equitaglia.js",
+    "modules/brancalonia-rischi-mestiere.js"
   ],
   "styles": [
-    "brancalonia.css"
+    "brancalonia.css",
+    "styles/brancalonia-systems.css"
   ],
   "languages": [
     {

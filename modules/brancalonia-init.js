@@ -15,7 +15,13 @@ Hooks.once("init", () => {
     tavernBrawl: null,
     dirtyJobs: null,
     menagramo: null,
-    shoddyItems: null
+    shoddyItems: null,
+    equitaglia: null,
+    rischiMestiere: null,
+    generatoreBettole: null,
+    stradeMisteriose: null,
+    giochiDaBettola: null,
+    intrugli: null
   };
 
   // Le configurazioni CONFIG sono spostate in brancalonia-config-fix.js per evitare conflitti
