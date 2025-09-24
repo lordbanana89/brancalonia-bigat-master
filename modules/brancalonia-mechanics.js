@@ -107,7 +107,7 @@ export class BrancaloniaMechanics {
       rollData.dialogOptions.nonLethal = {
         label: "Danno Non Letale (KO)",
         checked: false
-      });
+      };
     });
 
     // Hook per applicare danno non letale
