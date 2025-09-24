@@ -39,7 +39,7 @@
     ]
   },
   "esmodules": [
-    "modules/brancalonia-deprecation-fix.js",
+    "modules/brancalonia-suppress-warnings.js",
     "modules/brancalonia-config-fix.js",
     "modules/brancalonia-init.js"
   ],

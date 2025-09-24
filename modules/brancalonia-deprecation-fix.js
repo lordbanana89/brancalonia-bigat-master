@@ -23,16 +23,28 @@ Hooks.once("init", () => {
       console.log("Brancalonia | Rimosso polymorphSettings deprecato");
     }
 
+    // Rimuovi polymorphEffectSettings se esiste
+    if (CONFIG.DND5E.polymorphEffectSettings) {
+      delete CONFIG.DND5E.polymorphEffectSettings;
+      console.log("Brancalonia | Rimosso polymorphEffectSettings deprecato");
+    }
+
+    // Rimuovi transformationPresets se esiste
+    if (CONFIG.DND5E.transformationPresets) {
+      delete CONFIG.DND5E.transformationPresets;
+      console.log("Brancalonia | Rimosso transformationPresets deprecato");
+    }
+
     // Rimuovi spellcastingTypes se esiste
     if (CONFIG.DND5E.spellcastingTypes) {
       delete CONFIG.DND5E.spellcastingTypes;
       console.log("Brancalonia | Rimosso spellcastingTypes deprecato");
     }
 
-    // Rimuovi toolProficiencies se esiste (sostituito da tools)
+    // NON rimuovere toolProficiencies perché altri moduli potrebbero usarlo
+    // Solo logga se esiste
     if (CONFIG.DND5E.toolProficiencies) {
-      delete CONFIG.DND5E.toolProficiencies;
-      console.log("Brancalonia | Rimosso toolProficiencies deprecato");
+      console.log("Brancalonia | toolProficiencies presente (mantenuto per compatibilità)");
     }
   }
 }, { order: -1000 }); // Esegui molto presto con priorità negativa
