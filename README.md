@@ -1,8 +1,12 @@
 # Brancalonia - Il Regno di Taglia per Foundry VTT
 
-## Versione 3.0.0 - Implementazione Completa
+![Foundry v13](https://img.shields.io/badge/Foundry-v13-informational)
+![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
+[![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema D&D 5e.
+## Versione 3.1.3 - Implementazione Completa
+
+Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema D&D 5e v5.x.
 
 ### 🎯 Caratteristiche
 
@@ -23,28 +27,34 @@ Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema 
 - **Sistema Fazioni**: 7 fazioni con reputazione, guerre e quest
 - **Reputazione Positiva**: 5 tipi con benefici progressivi
 
-#### 📊 Contenuti
-- 10 Stirpi/Razze complete
-- 2 Classi complete (Knave, Straccione) + template per altre
-- 25+ Equipaggiamenti scadenti
-- 8+ Talenti specifici
-- Tabelle casuali del manuale
-- PNG e mostri di Brancalonia
+#### 📊 Contenuti (234 elementi totali)
+- **12 Stirpi/Razze** complete
+- **6 Background** di Brancalonia
+- **75 Privilegi** (features)
+- **12 Sottoclassi** specifiche
+- **23 Talenti** di Brancalonia
+- **12 Emeriticenze** (tratti)
+- **23 Equipaggiamenti** scadenti
+- **12 Incantesimi** specifici
+- **8 PNG** di Brancalonia
+- **15 Regole** (journal entries)
+- **31 Tabelle Casuali**
+- **5 Macro** automatiche
 
 ### 📦 Installazione
 
 #### Requisiti
 - Foundry VTT v13.0.0 o superiore (testato fino a v13.347)
-- Sistema D&D 5e v3.3.0 o superiore (testato con v3.3.1)
+- Sistema D&D 5e v5.0.0 o superiore (ottimizzato per v5.1.9)
 
-#### Metodo 1: URL Manifest
-1. In Foundry VTT, vai su **Configurazione** → **Moduli**
-2. Clicca **Installa Modulo**
-3. Incolla questo URL nel campo Manifest:
+#### Metodo 1: URL Manifest (Raccomandato)
+1. In Foundry VTT, vai su **Add-on Modules** → **Install Module**
+2. Incolla questo URL nel campo Manifest:
 ```
-https://raw.githubusercontent.com/brancalonia-community/brancalonia-bigat/main/module.json
+https://raw.githubusercontent.com/lordbanana89/brancalonia-bigat-master/main/module.json
 ```
-4. Clicca **Installa**
+3. Clicca **Install**
+4. Attiva il modulo nel tuo mondo
 
 #### Metodo 2: Installazione Manuale
 1. Scarica l'ultima release da GitHub
@@ -123,7 +133,7 @@ Accedi alle impostazioni del modulo da **Configurazione** → **Impostazioni Mod
 ### 🐛 Segnalazione Bug
 
 Se trovi problemi, segnalali su:
-- GitHub Issues: [Link al repository]
+- GitHub Issues: [https://github.com/lordbanana89/brancalonia-bigat-master/issues](https://github.com/lordbanana89/brancalonia-bigat-master/issues)
 - Discord Brancalonia: #foundry-vtt
 
 ### 📜 Licenza
@@ -139,6 +149,6 @@ I contenuti di Brancalonia sono proprietà di Acheron Games.
 
 ---
 
-**Versione**: 3.0.0
-**Compatibilità**: Foundry VTT v13.0.0+ | D&D 5e v3.3.0+
-**Ultimo Aggiornamento**: 2025-01-24
+**Versione**: 3.1.3
+**Compatibilità**: Foundry VTT v13.0.0+ | D&D 5e v5.0.0+
+**Ultimo Aggiornamento**: Settembre 2024
