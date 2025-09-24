@@ -3,7 +3,7 @@
  * Completamente compatibile con dnd5e system per Foundry VTT v13
  */
 
-export class MenagramoSystem {
+class MenagramoSystem {
   constructor() {
     // Livelli di menagramo con effetti conformi a dnd5e
     this.menagramoLevels = {
