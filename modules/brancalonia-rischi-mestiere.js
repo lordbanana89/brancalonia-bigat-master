@@ -179,7 +179,7 @@ class BrancaloniaRischiMestiere {
     let bonusNomeaTotale = 0;
 
     for (const membro of cricca) {
-      const nomea = membro.actor.getFlag("brancalonia", "nomea") || 0;
+      const nomea = membro.actor.getFlag("brancalonia-bigat", "nomea") || 0;
       nomeaMax = Math.max(nomeaMax, nomea);
       bonusNomeaTotale += Math.floor(nomea / 10); // +1 ogni 10 punti di nomea
     }
@@ -187,7 +187,7 @@ class BrancaloniaRischiMestiere {
     modTotale += nomeaMax + bonusNomeaTotale;
 
     // Applica modificatori per Imbosco
-    const settimaneImbosco = game.settings.get("brancalonia", "settimaneImbosco") || 0;
+    const settimaneImbosco = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
     modTotale -= (settimaneImbosco * 3);
 
     // Tira il dado
@@ -277,8 +277,8 @@ class BrancaloniaRischiMestiere {
         contenutoChat += `<p>💰 Taglia supplementare: +${evento.tagliaExtra} gransoldi su ogni membro!</p>`;
         // Applica automaticamente la taglia extra
         for (const membro of cricca) {
-          const tagliaAttuale = membro.actor.getFlag("brancalonia", "taglia") || 0;
-          await membro.actor.setFlag("brancalonia", "taglia", tagliaAttuale + evento.tagliaExtra);
+          const tagliaAttuale = membro.actor.getFlag("brancalonia-bigat", "taglia") || 0;
+          await membro.actor.setFlag("brancalonia-bigat", "taglia", tagliaAttuale + evento.tagliaExtra);
         }
         break;
 
@@ -319,10 +319,10 @@ class BrancaloniaRischiMestiere {
    * Applica settimane di Imbosco durante lo Sbraco
    */
   async applicaImbosco(settimane) {
-    const imboscoAttuale = game.settings.get("brancalonia", "settimaneImbosco") || 0;
+    const imboscoAttuale = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
     const nuovoImbosco = imboscoAttuale + settimane;
 
-    await game.settings.set("brancalonia", "settimaneImbosco", nuovoImbosco);
+    await game.settings.set("brancalonia-bigat", "settimaneImbosco", nuovoImbosco);
 
     ChatMessage.create({
       content: `<div class="brancalonia-imbosco">
@@ -337,7 +337,7 @@ class BrancaloniaRischiMestiere {
    * Resetta l'imbosco dopo un lavoretto
    */
   async resetImbosco() {
-    await game.settings.set("brancalonia", "settimaneImbosco", 0);
+    await game.settings.set("brancalonia-bigat", "settimaneImbosco", 0);
   }
 
   registerHooks() {
@@ -395,7 +395,7 @@ class BrancaloniaRischiMestiere {
       bonusNomeaTotale += Math.floor(nomea / 10);
     }
 
-    const imbosco = game.settings.get("brancalonia", "settimaneImbosco") || 0;
+    const imbosco = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
 
     const content = `
       <div class="rischi-mestiere-dialog">
@@ -463,7 +463,7 @@ class BrancaloniaRischiMestiere {
    * Mostra dialogo per gestire l'Imbosco
    */
   async mostraDialogoImbosco() {
-    const imboscoAttuale = game.settings.get("brancalonia", "settimaneImbosco") || 0;
+    const imboscoAttuale = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
 
     const content = `
       <div class="imbosco-dialog">

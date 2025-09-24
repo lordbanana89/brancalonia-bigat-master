@@ -38,11 +38,9 @@ Hooks.once("init", () => {
   // Registra settings
   registerBrancaloniaSettings();
 
-  // Registra il flag scope per Brancalonia
-  CONFIG.Actor.documentClass.registerFlagScope("brancalonia");
-  CONFIG.Item.documentClass.registerFlagScope("brancalonia");
-  CONFIG.Token.documentClass.registerFlagScope("brancalonia");
-  console.log("Brancalonia | Flag scope registrato per Actor, Item e Token");
+  // In Foundry v13, i flag non hanno bisogno di registrazione esplicita
+  // Sono automaticamente disponibili quando il modulo è attivo
+  console.log("Brancalonia | Sistema flags pronto (Foundry v13)");
 
   console.log("Brancalonia | Inizializzazione completata");
 });
@@ -175,6 +173,16 @@ function registerBrancaloniaSettings() {
     config: true,
     type: Boolean,
     default: true
+  });
+
+  // Setting per sistema Imbosco (Rischi del Mestiere)
+  game.settings.register("brancalonia-bigat", "settimaneImbosco", {
+    name: "Settimane di Imbosco",
+    hint: "Numero di settimane trascorse in imbosco (-3 per settimana al tiro Rischi)",
+    scope: "world",
+    config: false,
+    type: Number,
+    default: 0
   });
 }
 

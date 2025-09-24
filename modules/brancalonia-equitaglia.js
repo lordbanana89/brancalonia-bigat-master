@@ -279,7 +279,7 @@ class BrancaloniaEquitaglia {
    */
   async aggiungiMalefatta(actor, malefatta, opzioni = {}) {
     const valoreTaglia = this.calcolaValoretaglia(malefatta, opzioni);
-    const malefatte = actor.getFlag("brancalonia", "malefatte") || [];
+    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
 
     malefatte.push({
       tipo: malefatta,
@@ -290,7 +290,7 @@ class BrancaloniaEquitaglia {
       modificatori: opzioni.modificatori || []
     });
 
-    await actor.setFlag("brancalonia", "malefatte", malefatte);
+    await actor.setFlag("brancalonia-bigat", "malefatte", malefatte);
 
     // Ricalcola la taglia totale
     await this.ricalcolaTaglia(actor);
@@ -317,18 +317,18 @@ class BrancaloniaEquitaglia {
    * Ricalcola la taglia totale di un attore
    */
   async ricalcolaTaglia(actor) {
-    const malefatte = actor.getFlag("brancalonia", "malefatte") || [];
+    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
     let tagliatotale = 0;
 
     for (const malefatta of malefatte) {
       tagliatotale += malefatta.valore || 0;
     }
 
-    await actor.setFlag("brancalonia", "taglia", tagliatotale);
+    await actor.setFlag("brancalonia-bigat", "taglia", tagliatotale);
 
     // Aggiorna anche la nomea se necessario
     const nomea = Math.floor(tagliatotale / 10);
-    await actor.setFlag("brancalonia", "nomea", nomea);
+    await actor.setFlag("brancalonia-bigat", "nomea", nomea);
 
     return tagliatotale;
   }
@@ -337,7 +337,7 @@ class BrancaloniaEquitaglia {
    * Gestisce la cattura e il pagamento della taglia
    */
   async catturaMalfattore(actor, catturatoDa = "birri") {
-    const taglia = actor.getFlag("brancalonia", "taglia") || 0;
+    const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
 
     if (taglia === 0) {
       ui.notifications.info("Nessuna taglia su questa canaglia!");
@@ -366,7 +366,7 @@ class BrancaloniaEquitaglia {
     });
 
     // Segna l'inizio della pena
-    await actor.setFlag("brancalonia", "pena", {
+    await actor.setFlag("brancalonia-bigat", "pena", {
       giorni: giorniPena,
       tipo: tipoPena,
       iniziata: game.time.worldTime,
@@ -491,8 +491,8 @@ Hooks.once("init", () => {
     if (app.actor.type !== "character") return;
     if (!game.brancalonia?.equitaglia) return; // Aspetta che il sistema sia pronto
 
-    const taglia = app.actor.getFlag("brancalonia", "taglia") || 0;
-    const malefatte = app.actor.getFlag("brancalonia", "malefatte") || [];
+    const taglia = app.actor.getFlag("brancalonia-bigat", "taglia") || 0;
+    const malefatte = app.actor.getFlag("brancalonia-bigat", "malefatte") || [];
 
     // Aggiungi sezione Equitaglia alla scheda
     const equitagliaSection = `
