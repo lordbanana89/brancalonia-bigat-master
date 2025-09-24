@@ -203,7 +203,9 @@ export class BrancaloniaMechanics {
     });
 
     // Macro per piazzare trappole
-    this.createTrapMacro = function(trapType) {
+  }
+
+  createTrapMacro(trapType) {
       const trap = CONFIG.BRANCALONIA.traps.types[trapType];
       if (!trap) return;
 
@@ -238,7 +240,7 @@ export class BrancaloniaMechanics {
           ui.notifications.info("Trappola piazzata. Ricorda di nasconderla!");
         `
       });
-    };
+    }
 
   /**
    * Sistema Padrini/Mentori
@@ -281,30 +283,30 @@ export class BrancaloniaMechanics {
         }
       }
     });
+  }
 
-    // Funzione per assegnare un patrono
-    this.assignPatron = async function(actor, patronType) {
-      const patron = CONFIG.BRANCALONIA.patrons.types[patronType];
-      if (!patron) return;
+  // Funzione per assegnare un patrono
+  async assignPatron(actor, patronType) {
+    const patron = CONFIG.BRANCALONIA.patrons.types[patronType];
+    if (!patron) return;
 
-      await actor.setFlag("brancalonia", "patron", {
-        type: patronType,
-        name: patron.name,
-        reputation: 0,
-        favors: 0,
-        debt: 0
-      });
+    await actor.setFlag("brancalonia", "patron", {
+      type: patronType,
+      name: patron.name,
+      reputation: 0,
+      favors: 0,
+      debt: 0
+    });
 
-      ChatMessage.create({
-        content: `
-          <div class="brancalonia-patron">
-            <h3>Nuovo Patrono: ${patron.name}</h3>
-            <p><strong>Benefici:</strong> ${patron.benefits.join(", ")}</p>
-            <p><strong>Obblighi:</strong> ${patron.obligations.join(", ")}</p>
-          </div>
-        `,
-        speaker: ChatMessage.getSpeaker({ actor })
-      });
+    ChatMessage.create({
+      content: `
+        <div class="brancalonia-patron">
+          <h3>Nuovo Patrono: ${patron.name}</h3>
+          <p><strong>Benefici:</strong> ${patron.benefits.join(", ")}</p>
+          <p><strong>Obblighi:</strong> ${patron.obligations.join(", ")}</p>
+        </div>
+      `,
+      speaker: ChatMessage.getSpeaker({ actor })
     });
   }
 
@@ -475,7 +477,7 @@ export class BrancaloniaMechanics {
       male: ["Beppe", "Gino", "Tonio", "Carletto", "Piero", "Matteo", "Franco", "Luigi"],
       female: ["Maria", "Rosa", "Lucia", "Giovanna", "Teresa", "Anna", "Carmela", "Francesca"],
       surnames: ["il Gobbo", "Mangiafuoco", "Zampacorta", "Bevilacqua", "Malaparte", "Dentineri", "lo Storto"]
-    });
+    };
 
     const occupations = ["Locandiere", "Mercante", "Guardia", "Ladro", "Contadino", "Artigiano", "Prete", "Menestrello"];
 
@@ -505,7 +507,7 @@ export class BrancaloniaMechanics {
         hp: Math.floor(Math.random() * 20) + 5,
         speed: 30
       }
-    });
+    };
   }
 
   /**
