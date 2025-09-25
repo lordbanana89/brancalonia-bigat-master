@@ -1,14 +1,5 @@
-2025/09/25-11:10:16.143655 16fdaf000 Recovering log #10
-2025/09/25-11:10:16.144587 16fdaf000 Delete type=0 #10
-2025/09/25-11:10:16.144621 16fdaf000 Delete type=3 #9
-2025/09/25-11:10:16.146822 16fe3b000 Level-0 table #14: started
-2025/09/25-11:10:16.147192 16fe3b000 Level-0 table #14: 23724 bytes OK
-2025/09/25-11:10:16.147277 16fe3b000 Delete type=0 #12
-2025/09/25-11:10:16.147347 16fe3b000 Manual compaction at level-0 from '!items!benandanti_race' @ 72057594037927935 : 1 .. '!items!umani_brancalonia' @ 0 : 0; will stop at '!items!umani_brancalonia' @ 11 : 1
-2025/09/25-11:10:16.147353 16fe3b000 Compacting 2@0 + 0@1 files
-2025/09/25-11:10:16.147759 16fe3b000 Generated table #15@0: 11 keys, 23724 bytes
-2025/09/25-11:10:16.147773 16fe3b000 Compacted 2@0 + 0@1 files => 23724 bytes
-2025/09/25-11:10:16.147829 16fe3b000 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/09/25-11:10:16.147859 16fe3b000 Delete type=2 #14
-2025/09/25-11:10:16.147934 16fe3b000 Delete type=2 #5
-2025/09/25-11:10:16.148030 16fe3b000 Manual compaction at level-0 from '!items!umani_brancalonia' @ 11 : 1 .. '!items!umani_brancalonia' @ 0 : 0; will stop at (end)
+2025/09/26-01:44:50.506763 16f783000 Recovering log #3
+2025/09/26-01:44:50.506805 16f783000 Level-0 table #5: started
+2025/09/26-01:44:50.507010 16f783000 Level-0 table #5: 2375 bytes OK
+2025/09/26-01:44:50.507472 16f783000 Delete type=0 #3
+2025/09/26-01:44:50.507541 16f783000 Delete type=3 #2

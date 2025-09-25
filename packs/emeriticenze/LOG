@@ -1,14 +1,5 @@
-2025/09/25-11:10:15.677329 16fdcf000 Recovering log #12
-2025/09/25-11:10:15.678249 16fdcf000 Delete type=0 #12
-2025/09/25-11:10:15.678284 16fdcf000 Delete type=3 #11
-2025/09/25-11:10:15.680254 16fe5b000 Level-0 table #16: started
-2025/09/25-11:10:15.680454 16fe5b000 Level-0 table #16: 6679 bytes OK
-2025/09/25-11:10:15.680532 16fe5b000 Delete type=0 #14
-2025/09/25-11:10:15.680597 16fe5b000 Manual compaction at level-0 from '!items!emeriticenza_affinamento' @ 72057594037927935 : 1 .. '!items!emeriticenza_santa_fortuna' @ 0 : 0; will stop at '!items!emeriticenza_santa_fortuna' @ 12 : 1
-2025/09/25-11:10:15.680602 16fe5b000 Compacting 2@0 + 0@1 files
-2025/09/25-11:10:15.680800 16fe5b000 Generated table #17@0: 12 keys, 6679 bytes
-2025/09/25-11:10:15.680809 16fe5b000 Compacted 2@0 + 0@1 files => 6679 bytes
-2025/09/25-11:10:15.680861 16fe5b000 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/09/25-11:10:15.680889 16fe5b000 Delete type=2 #16
-2025/09/25-11:10:15.680938 16fe5b000 Delete type=2 #5
-2025/09/25-11:10:15.680999 16fe5b000 Manual compaction at level-0 from '!items!emeriticenza_santa_fortuna' @ 12 : 1 .. '!items!emeriticenza_santa_fortuna' @ 0 : 0; will stop at (end)
+2025/09/26-01:44:50.526676 16ff8f000 Recovering log #3
+2025/09/26-01:44:50.526714 16ff8f000 Level-0 table #5: started
+2025/09/26-01:44:50.526889 16ff8f000 Level-0 table #5: 3534 bytes OK
+2025/09/26-01:44:50.527435 16ff8f000 Delete type=0 #3
+2025/09/26-01:44:50.527497 16ff8f000 Delete type=3 #2

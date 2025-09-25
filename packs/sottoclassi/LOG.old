@@ -1,14 +1,1 @@
-2025/09/25-10:57:21.647268 30181f000 Recovering log #12
-2025/09/25-10:57:21.648157 30181f000 Delete type=0 #12
-2025/09/25-10:57:21.648193 30181f000 Delete type=3 #10
-2025/09/25-10:57:21.649598 16fdd7000 Level-0 table #18: started
-2025/09/25-10:57:21.649932 16fdd7000 Level-0 table #18: 9279 bytes OK
-2025/09/25-10:57:21.650010 16fdd7000 Delete type=0 #16
-2025/09/25-10:57:21.650149 16fdd7000 Manual compaction at level-0 from '!items!arlecchino001' @ 72057594037927935 : 1 .. '!items!tradizione_mangiafuoco001' @ 0 : 0; will stop at '!items!tradizione_mangiafuoco001' @ 54 : 1
-2025/09/25-10:57:21.650168 16fdd7000 Compacting 1@0 + 1@1 files
-2025/09/25-10:57:21.650553 16fdd7000 Generated table #19@0: 14 keys, 9279 bytes
-2025/09/25-10:57:21.650565 16fdd7000 Compacted 1@0 + 1@1 files => 9279 bytes
-2025/09/25-10:57:21.650620 16fdd7000 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/09/25-10:57:21.650660 16fdd7000 Delete type=2 #14
-2025/09/25-10:57:21.650742 16fdd7000 Delete type=2 #18
-2025/09/25-10:57:21.650815 16fdd7000 Manual compaction at level-0 from '!items!tradizione_mangiafuoco001' @ 54 : 1 .. '!items!tradizione_mangiafuoco001' @ 0 : 0; will stop at (end)
+2025/09/26-01:44:28.799401 171f9f000 Delete type=3 #1

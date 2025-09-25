@@ -1,15 +1,5 @@
-2025/09/25-11:10:15.585347 171c03000 Recovering log #22
-2025/09/25-11:10:15.586694 171c03000 Delete type=3 #21
-2025/09/25-11:10:15.586743 171c03000 Delete type=0 #22
-2025/09/25-11:10:15.588878 17249b000 Level-0 table #26: started
-2025/09/25-11:10:15.589067 17249b000 Level-0 table #26: 3185 bytes OK
-2025/09/25-11:10:15.589153 17249b000 Delete type=0 #24
-2025/09/25-11:10:15.589223 17249b000 Manual compaction at level-0 from '!items!burattinaio001' @ 72057594037927935 : 1 .. '!items!burattinaio001' @ 0 : 0; will stop at (end)
-2025/09/25-11:10:15.589237 17249b000 Manual compaction at level-1 from '!items!burattinaio001' @ 72057594037927935 : 1 .. '!items!burattinaio001' @ 0 : 0; will stop at '!items!burattinaio001' @ 5 : 1
-2025/09/25-11:10:15.589242 17249b000 Compacting 1@1 + 1@2 files
-2025/09/25-11:10:15.589404 17249b000 Generated table #27@1: 1 keys, 3185 bytes
-2025/09/25-11:10:15.589411 17249b000 Compacted 1@1 + 1@2 files => 3185 bytes
-2025/09/25-11:10:15.589467 17249b000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/25-11:10:15.589495 17249b000 Delete type=2 #20
-2025/09/25-11:10:15.589557 17249b000 Delete type=2 #26
-2025/09/25-11:10:15.589600 17249b000 Manual compaction at level-1 from '!items!burattinaio001' @ 5 : 1 .. '!items!burattinaio001' @ 0 : 0; will stop at (end)
+2025/09/26-01:44:50.528500 16e76b000 Recovering log #3
+2025/09/26-01:44:50.528523 16e76b000 Level-0 table #5: started
+2025/09/26-01:44:50.528672 16e76b000 Level-0 table #5: 805 bytes OK
+2025/09/26-01:44:50.529101 16e76b000 Delete type=0 #3
+2025/09/26-01:44:50.529155 16e76b000 Delete type=3 #2
