@@ -4,7 +4,7 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## Versione 3.11.5 - Sistema Tooltip Avanzato e Collegamenti Interattivi
+## Versione 3.12.0 - Collegamenti Completi e Oggetti Mancanti
 
 Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema D&D 5e v5.x.
 
@@ -148,6 +148,18 @@ Accedi alle impostazioni del modulo da **Configurazione** → **Impostazioni Mod
 - ✅ **Advancement API** per progressione personaggi
 
 ### 📋 Changelog
+
+#### v3.12.0 - Collegamenti Completi e Validazione (Settembre 2025)
+##### Nuove Funzionalità
+- Aggiunti oggetti mancanti: Bombarda Tascabile e Trombone da Guerra
+- Implementati collegamenti bidirezionali tra regole e oggetti
+- Sistema di validazione automatica dei collegamenti
+- Standardizzazione completa degli ID nei compendi
+
+##### Bug Fix
+- Corretti tutti gli UUID rotti nelle regole
+- Risolti collegamenti mancanti tra regole e oggetti
+- Fix completo per armi da fuoco primitive
 
 #### v3.11.5 - Sistema Tooltip e Collegamenti (Settembre 2025)
 ##### Nuove Funzionalità
@@ -462,6 +474,6 @@ Rimuove titoli H1 duplicati dalle regole per formattazione pulita
 
 ---
 
-**Versione**: 3.11.5
+**Versione**: 3.12.0
 **Compatibilità**: Foundry VTT v13.0.0+ | D&D 5e v5.0.0+
 **Ultimo Aggiornamento**: Settembre 2025
