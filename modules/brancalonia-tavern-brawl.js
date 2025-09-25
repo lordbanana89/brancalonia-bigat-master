@@ -317,7 +317,7 @@ class RissaTaverna {
 /**
  * Aggiungi controlli UI per le risse
  */
-Hooks.on("renderChatMessage", (message, html, data) => {
+Hooks.on("renderChatMessageHTML", (message, html) => {
     // Aggiungi bottoni per mosse rissa se in rissa
     if (RissaTaverna.rissaAttiva && game.user.character) {
         if (RissaTaverna.partecipanti.has(game.user.character.id)) {
@@ -329,13 +329,18 @@ Hooks.on("renderChatMessage", (message, html, data) => {
                     <button class="rissa-move" data-move="oggettoImprovvisato">🪑 Oggetto</button>
                 </div>`;
 
-            html.find(".message-content").append(buttons);
+            const messageContent = html.querySelector(".message-content");
+            if (messageContent) {
+                messageContent.insertAdjacentHTML('beforeend', buttons);
 
-            html.find(".rissa-move").click((event) => {
-                const move = event.currentTarget.dataset.move;
-                const target = game.user.targets.first();
-                RissaTaverna.eseguiMossa(game.user.character, move, target);
-            });
+                html.querySelectorAll(".rissa-move").forEach(button => {
+                    button.addEventListener("click", (event) => {
+                        const move = event.currentTarget.dataset.move;
+                        const target = game.user.targets.first();
+                        RissaTaverna.eseguiMossa(game.user.character, move, target);
+                    });
+                });
+            }
         }
     }
 });

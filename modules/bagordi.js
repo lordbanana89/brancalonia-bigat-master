@@ -298,7 +298,7 @@ export class BagordiSystem {
 }
 
 // Hook per aggiungere il sistema ai personaggi
-Hooks.on("renderActorSheet", (app, html, data) => {
+Hooks.on("renderActorSheetV2", (app, html, data) => {
   if (data.actor.type !== "character") return;
 
   const bagordiBtn = $(`<a class="bagordi-btn" title="Darsi ai Bagordi"><i class="fas fa-wine-bottle"></i> Bagordi</a>`);

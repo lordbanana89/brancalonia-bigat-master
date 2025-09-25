@@ -84,7 +84,7 @@ export class FavoriSystem {
 
   _setupHooks() {
     // Hook per UI favori
-    Hooks.on("renderActorSheet", (app, html, data) => {
+    Hooks.on("renderActorSheetV2", (app, html, data) => {
       if (data.actor.type === "character") {
         this._renderFavoriUI(app, html, data);
       }

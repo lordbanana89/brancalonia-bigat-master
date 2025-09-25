@@ -487,7 +487,7 @@ class BrancaloniaEquitaglia {
 // Registra hooks prima del ready
 Hooks.once("init", () => {
   // Registra hook per UI qui, prima che le schede vengano aperte
-  Hooks.on("renderActorSheet", (app, html, data) => {
+  Hooks.on("renderActorSheetV2", (app, html, data) => {
     if (app.actor.type !== "character") return;
     if (!game.brancalonia?.equitaglia) return; // Aspetta che il sistema sia pronto
 

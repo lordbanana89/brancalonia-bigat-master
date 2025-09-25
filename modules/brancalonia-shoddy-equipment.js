@@ -125,7 +125,7 @@ class DifettiScadenti {
 /**
  * UI per marcare oggetti come scadenti
  */
-Hooks.on("renderItemSheet", (app, html, data) => {
+Hooks.on("renderItemSheetV2", (app, html, data) => {
     const item = app.object;
 
     // Solo per equipaggiamento

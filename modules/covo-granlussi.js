@@ -236,7 +236,7 @@ export class CovoGranlussiSystem {
 
   _setupHooks() {
     // Hook per aggiungere UI del Covo
-    Hooks.on("renderActorSheet", (app, html, data) => {
+    Hooks.on("renderActorSheetV2", (app, html, data) => {
       if (game.user.isGM && data.actor.type === "character") {
         this._renderCovoUI(app, html, data);
       }

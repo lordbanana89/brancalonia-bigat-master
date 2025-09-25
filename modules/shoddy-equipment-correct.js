@@ -93,7 +93,7 @@ export class ShoddyEquipmentCorrect {
     });
 
     // Hook per aggiungere opzione scadente nella scheda oggetto
-    Hooks.on("renderItemSheet", (app, html, data) => {
+    Hooks.on("renderItemSheetV2", (app, html, data) => {
       if (game.user.isGM) {
         this._addShoddyToggle(app, html, data);
       }

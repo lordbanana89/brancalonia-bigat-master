@@ -100,7 +100,7 @@ export class ShoddyEquipment {
     });
 
     // Hook per aggiungere opzione scadente alla creazione oggetti
-    Hooks.on("renderItemSheet", (app, html, data) => {
+    Hooks.on("renderItemSheetV2", (app, html, data) => {
       if (game.user.isGM) {
         this._addShoddyOption(app, html, data);
       }

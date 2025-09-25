@@ -262,7 +262,7 @@ Hooks.on("updateItem", async (item, changes, options, userId) => {
 /**
  * Hook per identificazione cimeli
  */
-Hooks.on("renderItemSheet", (app, html, data) => {
+Hooks.on("renderItemSheetV2", (app, html, data) => {
     const item = app.object;
 
     if (item.flags?.brancalonia?.categoria !== "cimelo") return;
@@ -285,7 +285,10 @@ Hooks.on("renderItemSheet", (app, html, data) => {
             </div>
         </div>`;
 
-    html.find(".tab.details").prepend(cimeloInfo);
+    const tabDetails = html.querySelector(".tab.details");
+    if (tabDetails) {
+        tabDetails.insertAdjacentHTML('afterbegin', cimeloInfo);
+    }
 });
 
 /**
