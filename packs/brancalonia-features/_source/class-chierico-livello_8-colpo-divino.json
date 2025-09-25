@@ -45,9 +45,15 @@
     }
   },
   "domini_divine_strike": [
-    "Life", "Nature", "Tempest", 
-    "Trickery", "War", "Death",
-    "Forge", "Grave", "Order"
+    "Life",
+    "Nature",
+    "Tempest",
+    "Trickery",
+    "War",
+    "Death",
+    "Forge",
+    "Grave",
+    "Order"
   ],
   "sinergie_build": {
     "war_priest": "Bonus action attack = 2 chance",
@@ -136,5 +142,6 @@
     "santo_guerriero": "Combattente benedetto"
   },
   "note_dm": "Divine Strike rende i chierici combattenti competitivi in mischia. Gratis e affidabile, compensa la mancanza di Extra Attack. Ottimo per build ibride.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58",
+  "name": "Colpo Divino"
 }

@@ -12,7 +12,9 @@
   },
   "durata": "Istantanea",
   "descrizione": "Una radianza simile a fiamma discende su una creatura che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Destrezza o subire 1d8 danni radiosi. Il bersaglio non ottiene beneficio da copertura per questo tiro salvezza.",
-  "classi": ["Chierico"],
+  "classi": [
+    "Chierico"
+  ],
   "danno_scaling": {
     "livello_1": "1d8",
     "livello_5": "2d8",
@@ -49,5 +51,6 @@
     "vs_toll_the_dead": "Meno danno ma più affidabile"
   },
   "note_dm": "Sacred Flame unico per ignorare copertura. Ottimo vs nemici dietro ripari. DEX save invece di attack utile in certe situazioni.",
-  "fonte": "D&D 5e PHB p.272"
+  "fonte": "D&D 5e PHB p.272",
+  "name": "Spell Sacra Fiamma"
 }

@@ -13,7 +13,11 @@
   },
   "durata": "Concentrazione, fino a 10 minuti",
   "descrizione": "Oscurità magica si diffonde da un punto che scegli entro gittata per riempire una sfera del raggio di 15 piedi per la durata. L'oscurità si diffonde attorno agli angoli. Una creatura con scurovisione non può vedere attraverso questa oscurità, e luce non magica non può illuminarla. Se il punto che scegli è su un oggetto che stai tenendo o uno che non è indossato o trasportato, l'oscurità emana dall'oggetto e si muove con esso. Coprire completamente la fonte dell'oscurità con un oggetto opaco blocca l'oscurità. Se qualsiasi area di questo incantesimo si sovrappone con un'area di luce creata da un incantesimo di 2° livello o inferiore, l'incantesimo che ha creato la luce è dissolto.",
-  "classi": ["Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 2,
@@ -67,5 +71,6 @@
     "AoE che non richiede vista"
   ],
   "note_dm": "Darkness è controllo battlefield potente. Blocca anche darkvision è chiave. Devil's Sight combo può dominare.",
-  "fonte": "D&D 5e PHB p.230"
+  "fonte": "D&D 5e PHB p.230",
+  "name": "Spell Oscurita"
 }

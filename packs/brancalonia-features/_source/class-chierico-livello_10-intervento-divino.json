@@ -144,5 +144,6 @@
     "sacrificio": "Successo automatico con grande sacrificio"
   },
   "note_dm": "Divine Intervention è l'asso nella manica del chierico. Usalo per creare momenti memorabili, non per risolvere tutto.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+  "name": "Intervento Divino"
 }

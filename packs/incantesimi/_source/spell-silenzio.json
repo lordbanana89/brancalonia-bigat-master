@@ -13,7 +13,11 @@
   },
   "durata": "Concentrazione, fino a 10 minuti",
   "descrizione": "Per la durata, nessun suono può essere creato all'interno o passare attraverso una sfera del raggio di 20 piedi centrata su un punto che scegli entro gittata. Qualsiasi creatura o oggetto interamente dentro la sfera è immune ai danni da tuono, e le creature sono assordate mentre sono interamente al suo interno. Lanciare un incantesimo che include una componente verbale è impossibile lì.",
-  "classi": ["Bardo", "Chierico", "Ranger"],
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Ranger"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 2,
@@ -68,5 +72,6 @@
     "perception": "Hearing-based auto-fail"
   },
   "note_dm": "Silence è il caster shutdown definitivo. 20 ft radius è enorme. Ritual option lo rende versatile. Posizionamento critico.",
-  "fonte": "D&D 5e PHB p.275"
+  "fonte": "D&D 5e PHB p.275",
+  "name": "Spell Silenzio"
 }

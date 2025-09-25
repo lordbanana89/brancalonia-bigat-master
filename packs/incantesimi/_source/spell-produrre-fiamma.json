@@ -12,7 +12,9 @@
   },
   "durata": "10 minuti",
   "descrizione": "Una fiamma tremolante appare nella tua mano. La fiamma vi rimane per la durata e non ti ferisce né danneggia il tuo equipaggiamento. La fiamma fornisce luce intensa in un raggio di 10 piedi e luce fioca per altri 10 piedi. L'incantesimo termina se lo congedi come azione o se lo lanci di nuovo. Puoi anche attaccare con la fiamma, anche se farlo termina l'incantesimo. Quando lanci questo incantesimo, o come azione in un turno successivo, puoi scagliare la fiamma verso una creatura entro 30 piedi da te. Effettua un attacco a distanza con incantesimo. Se colpisci, il bersaglio subisce 1d8 danni da fuoco.",
-  "classi": ["Druido"],
+  "classi": [
+    "Druido"
+  ],
   "danno_scaling": {
     "livello_1": "1d8",
     "livello_5": "2d8",
@@ -49,5 +51,6 @@
     "Accendere fuochi da campo"
   ],
   "note_dm": "Produce Flame è versatile utilità/combat. Ottimo per druidi che vogliono luce senza occupare slot. Attacco termina incantesimo.",
-  "fonte": "D&D 5e PHB p.269"
+  "fonte": "D&D 5e PHB p.269",
+  "name": "Spell Produrre Fiamma"
 }

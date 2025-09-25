@@ -12,7 +12,10 @@
   },
   "durata": "Istantanea",
   "descrizione": "Lanci una bolla acida. Scegli una creatura entro gittata, o scegli due creature entro gittata che si trovano entro 5 piedi l'una dall'altra. Un bersaglio deve superare un tiro salvezza su Destrezza o subire 1d6 danni da acido.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "danno_scaling": {
     "livello_1": "1d6",
     "livello_5": "2d6",
@@ -45,5 +48,6 @@
     "affidabilità": "Save binario, no danno metà"
   },
   "note_dm": "Acid Splash è debole per danno singolo ma unico per doppio target. DEX save invece di attack roll può essere utile vs high AC.",
-  "fonte": "D&D 5e PHB p.211"
+  "fonte": "D&D 5e PHB p.211",
+  "name": "Spell Fiotto Acido"
 }

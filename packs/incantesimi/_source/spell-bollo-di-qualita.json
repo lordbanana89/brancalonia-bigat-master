@@ -13,7 +13,9 @@
   "durata": "1 ora",
   "descrizione": "L'incantatore tocca un oggetto o una creatura di qualità scadente e, finché l'incantesimo non termina, il bersaglio perde la qualità scadente.",
   "livelli_superiori": "Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 3° livello, la durata aumenta a 8 ore.",
-  "classi": ["Mago"],
+  "classi": [
+    "Mago"
+  ],
   "scaling": {
     "slot_1": "1 ora",
     "slot_3": "8 ore"
@@ -56,5 +58,6 @@
     "creativita": "Soluzioni arrangiate"
   },
   "note_dm": "Bollo di Qualità è spell unico di Brancalonia che riflette l'economia povera del setting. Utile per superare limitazioni equipment scadente.",
-  "fonte": "Brancalonia Macaronicon p.51"
+  "fonte": "Brancalonia Macaronicon p.51",
+  "name": "Spell Bollo Di Qualita"
 }

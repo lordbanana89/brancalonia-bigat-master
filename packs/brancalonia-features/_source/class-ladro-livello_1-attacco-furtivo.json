@@ -29,7 +29,12 @@
       "metodo_1": {
         "nome": "Vantaggio",
         "descrizione": "Hai vantaggio al tiro per colpire",
-        "esempi": ["Nascosto", "Invisibile", "Target prono", "Aiuto alleato"]
+        "esempi": [
+          "Nascosto",
+          "Invisibile",
+          "Target prono",
+          "Aiuto alleato"
+        ]
       },
       "metodo_2": {
         "nome": "Alleato vicino",
@@ -147,5 +152,6 @@
     "affidabilita": "Dipende da setup tattico"
   },
   "note_dm": "Sneak Attack è il cuore del ladro. Assicurati che il giocatore possa attivarlo quasi ogni turno o la classe diventa inutile.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
+  "name": "Attacco Furtivo"
 }

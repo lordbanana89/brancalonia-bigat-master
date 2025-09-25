@@ -11,7 +11,10 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "Ogni oggetto in un cubo di 20 piedi entro gittata è contornato da luce blu, verde o violetta (a tua scelta). Qualsiasi creatura nell'area quando l'incantesimo è lanciato è anche contornata di luce se fallisce un tiro salvezza su Destrezza. Per la durata, gli oggetti e le creature influenzate emettono luce fioca in un raggio di 10 piedi. Qualsiasi tiro per colpire contro una creatura o oggetto influenzato ha vantaggio se l'attaccante può vederlo, e la creatura o oggetto influenzato non può beneficiare dell'essere invisibile.",
-  "classi": ["Bardo", "Druido"],
+  "classi": [
+    "Bardo",
+    "Druido"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 1,
@@ -52,5 +55,6 @@
     "concentrazione": "Compete per concentration"
   },
   "note_dm": "Faerie Fire è uno dei migliori debuff. Advantage per tutti è enorme. DEX save unica debolezza. Ottimo vs invisible.",
-  "fonte": "D&D 5e PHB p.239"
+  "fonte": "D&D 5e PHB p.239",
+  "name": "Spell Passo Fatato"
 }

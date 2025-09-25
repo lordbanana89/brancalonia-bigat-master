@@ -44,7 +44,11 @@
   "ritual_casting": {
     "speciale": "Puoi castare ritual dal libro senza prepararli",
     "vantaggi": "Risparmia slot preparati",
-    "rituali_utili": ["Detect Magic", "Identify", "Find Familiar"]
+    "rituali_utili": [
+      "Detect Magic",
+      "Identify",
+      "Find Familiar"
+    ]
   },
   "confronto_classi": {
     "vs_sorcerer": "Mago più spell ma deve preparare",
@@ -58,8 +62,12 @@
     "gilde": "Accesso a biblioteche"
   },
   "spell_essenziali_livello_1": [
-    "Shield", "Mage Armor", "Magic Missile",
-    "Detect Magic", "Sleep", "Thunderwave"
+    "Shield",
+    "Mage Armor",
+    "Magic Missile",
+    "Detect Magic",
+    "Sleep",
+    "Thunderwave"
   ],
   "personalizzazione": {
     "descrizione_fisica": [
@@ -88,5 +96,6 @@
     "potere": "La vera forza è conoscenza"
   },
   "note_dm": "Il libro degli incantesimi definisce il mago. La sua perdita è catastrofica. Usa come ricompensa (spell da copiare) e vulnerabilità (può essere rubato/distrutto).",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.114"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.114",
+  "name": "Libro Incantesimi"
 }

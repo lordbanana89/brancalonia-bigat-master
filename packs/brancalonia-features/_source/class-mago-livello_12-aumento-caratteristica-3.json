@@ -18,5 +18,6 @@
     "destrezza": "+2 DEX per AC e iniziativa"
   },
   "note_dm": "Al 12°, molti maghi prendono talenti per specializzazione avendo già INT 20.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Aumento Caratteristica 3"
 }

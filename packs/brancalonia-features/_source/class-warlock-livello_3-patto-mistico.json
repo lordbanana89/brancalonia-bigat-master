@@ -13,25 +13,38 @@
       "nome": "Patto della Lama",
       "descrizione": "Crea pact weapon, competenza",
       "benefici": "Arma magica evocabile, può essere qualsiasi",
-      "invocazioni_chiave": ["Thirsting Blade (extra attack)", "Lifedrinker (+CHA damage)", "Eldritch Smite"]
+      "invocazioni_chiave": [
+        "Thirsting Blade (extra attack)",
+        "Lifedrinker (+CHA damage)",
+        "Eldritch Smite"
+      ]
     },
     "pact_of_chain": {
       "nome": "Patto della Catena",
       "descrizione": "Find Familiar potenziato",
       "benefici": "Famiglio speciale: Imp, Pseudodragon, Quasit, Sprite",
-      "invocazioni_chiave": ["Investment of Chain Master", "Voice of Chain Master"]
+      "invocazioni_chiave": [
+        "Investment of Chain Master",
+        "Voice of Chain Master"
+      ]
     },
     "pact_of_tome": {
       "nome": "Patto del Tomo",
       "descrizione": "Book of Shadows con 3 cantrip",
       "benefici": "3 cantrip da qualsiasi classe",
-      "invocazioni_chiave": ["Book of Ancient Secrets (tutti rituali)", "Aspect of Moon (no sleep)"]
+      "invocazioni_chiave": [
+        "Book of Ancient Secrets (tutti rituali)",
+        "Aspect of Moon (no sleep)"
+      ]
     },
     "pact_of_talisman": {
       "nome": "Patto del Talismano",
       "descrizione": "Talismano che dà bonus",
       "benefici": "+1d4 a ability check falliti",
-      "invocazioni_chiave": ["Rebuke of the Talisman", "Protection of the Talisman"],
+      "invocazioni_chiave": [
+        "Rebuke of the Talisman",
+        "Protection of the Talisman"
+      ],
       "fonte": "Tasha's"
     }
   },
@@ -83,5 +96,6 @@
     "talisman": "Oggetto benedetto/maledetto"
   },
   "note_dm": "Il patto definisce il playstyle. Blade per melee, Chain per scout/utility, Tome per versatility, Talisman per support.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107-108"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107-108",
+  "name": "Dono del Patto"
 }

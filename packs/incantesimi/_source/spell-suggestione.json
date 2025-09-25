@@ -13,7 +13,12 @@
   },
   "durata": "Concentrazione, fino a 8 ore",
   "descrizione": "Suggerisci un corso di attività (limitato a una o due frasi) e influenzi magicamente una creatura che puoi vedere entro gittata e che può sentirti e capirti. Creature che non possono essere affascinate sono immuni a questo effetto. La suggestione deve essere formulata in modo che il corso d'azione sembri ragionevole. Chiedere alla creatura di pugnalarsi, lanciarsi su una lancia, immolarsi o fare qualche altro atto ovviamente dannoso termina automaticamente l'incantesimo. Il bersaglio deve effettuare un tiro salvezza su Saggezza. Con un fallimento, segue il corso d'azione che hai descritto al meglio delle sue capacità. Il corso d'azione suggerito può continuare per l'intera durata. Se l'attività suggerita può essere completata in un tempo più breve, l'incantesimo termina quando il soggetto finisce ciò che gli è stato chiesto di fare.",
-  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Bardo",
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 2,
@@ -52,5 +57,6 @@
     "durata": "Mass dura 24 ore"
   },
   "note_dm": "Suggestion richiede creatività. 'Ragionevole' è soggettivo - DM decide. 8 ore durata lo rende potentissimo se usato bene.",
-  "fonte": "D&D 5e PHB p.279"
+  "fonte": "D&D 5e PHB p.279",
+  "name": "Spell Suggestione"
 }

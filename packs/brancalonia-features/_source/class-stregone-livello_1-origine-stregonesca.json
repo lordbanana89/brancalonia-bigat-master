@@ -7,7 +7,12 @@
   "descrizione": "Scegli un'origine stregonesca che descrive la fonte del tuo potere magico innato.",
   "meccaniche": {
     "scelta_sottoclasse": true,
-    "privilegi_livelli": [1, 6, 14, 18]
+    "privilegi_livelli": [
+      1,
+      6,
+      14,
+      18
+    ]
   },
   "origini_principali": {
     "draconic_bloodline": {
@@ -48,9 +53,18 @@
     }
   },
   "valutazione": {
-    "tier_s": ["Clockwork (spell list)", "Aberrant Mind (subtle spell gratis)"],
-    "tier_a": ["Divine Soul (versatile)", "Draconic (tanky)"],
-    "tier_b": ["Shadow (utility)", "Storm (mobility)"],
+    "tier_s": [
+      "Clockwork (spell list)",
+      "Aberrant Mind (subtle spell gratis)"
+    ],
+    "tier_a": [
+      "Divine Soul (versatile)",
+      "Draconic (tanky)"
+    ],
+    "tier_b": [
+      "Shadow (utility)",
+      "Storm (mobility)"
+    ],
     "tier_c": "Wild Magic (troppo random per essere affidabile)"
   },
   "impatto_build": {
@@ -59,5 +73,6 @@
     "versatilità": "Divine Soul = healing in party"
   },
   "note_dm": "L'origine definisce completamente lo stregone. Aberrant Mind e Clockwork Soul (Tasha) sono notevolmente più potenti.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.99"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.99",
+  "name": "Origine Stregonesca"
 }

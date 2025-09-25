@@ -152,5 +152,6 @@
     "con_rogue_vs_rogue": "Entrambi possono usare UD"
   },
   "note_dm": "Uncanny Dodge è vitale per la sopravvivenza del ladro. Senza, è troppo fragile in melee. Ricorda che usa la reazione.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
+  "name": "Schivata Prodigiosa"
 }

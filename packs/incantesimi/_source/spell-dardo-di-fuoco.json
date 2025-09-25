@@ -13,7 +13,10 @@
   },
   "durata": "Istantanea",
   "descrizione": "Scagli una particella di fuoco verso una creatura o oggetto entro gittata. Fai un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, il bersaglio subisce 1d10 danni da fuoco. Un oggetto infiammabile colpito da questo incantesimo prende fuoco se non è indossato o trasportato.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "danno_scaling": {
     "livello_1": "1d10",
     "livello_5": "2d10",
@@ -34,5 +37,6 @@
     "vs_ray_of_frost": "Fire più danno, Frost rallenta"
   },
   "note_dm": "Fire Bolt è il cantrip damage standard per wizard/sorcerer. Può accendere oggetti, utile per puzzle.",
-  "fonte": "D&D 5e PHB p.242"
+  "fonte": "D&D 5e PHB p.242",
+  "name": "Spell Dardo Di Fuoco"
 }

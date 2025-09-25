@@ -12,7 +12,12 @@
   },
   "durata": "Istantanea",
   "descrizione": "Un'onda di forza tonante si propaga da te. Ogni creatura in un cubo di 15 piedi che origina da te deve effettuare un tiro salvezza su Costituzione. Con un fallimento, una creatura subisce 2d8 danni da tuono ed è spinta di 10 piedi lontano da te. Con un successo, la creatura subisce metà danni e non è spinta. Inoltre, oggetti non fissati che sono completamente dentro l'area di effetto sono automaticamente spinti 10 piedi lontano da te dall'effetto dell'incantesimo, e l'incantesimo emette un boato tonante udibile fino a 300 piedi.",
-  "classi": ["Bardo", "Druido", "Mago", "Stregone"],
+  "classi": [
+    "Bardo",
+    "Druido",
+    "Mago",
+    "Stregone"
+  ],
   "scaling": {
     "slot_1": "2d8 tuono",
     "slot_2": "3d8 tuono",
@@ -55,5 +60,6 @@
     "Thunder damage a volte resistito"
   ],
   "note_dm": "Thunderwave ottimo controllo livello 1. Push 10 ft molto utile tatticamente. Rumore 300 ft è svantaggio importante.",
-  "fonte": "D&D 5e PHB p.282"
+  "fonte": "D&D 5e PHB p.282",
+  "name": "Spell Onda Tonante"
 }

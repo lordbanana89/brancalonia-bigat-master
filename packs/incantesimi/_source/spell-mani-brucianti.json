@@ -12,7 +12,10 @@
   },
   "durata": "Istantanea",
   "descrizione": "Mentre tieni le mani con i pollici che si toccano e le dita allargate, un sottile velo di fiamme si sprigiona dalle tue dita tese. Ogni creatura in un cono di 15 piedi deve effettuare un tiro salvezza su Destrezza. Una creatura subisce 3d6 danni da fuoco con un tiro salvezza fallito, o la metà dei danni con uno riuscito. Il fuoco incendia qualsiasi oggetto infiammabile nell'area che non sia indossato o trasportato.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "scaling": {
     "slot_1": "3d6",
     "slot_2": "4d6",
@@ -54,5 +57,6 @@
     "Allies in area problema"
   ],
   "note_dm": "Burning Hands è AoE economico livello 1. Cono corto richiede posizionamento aggressivo. Può accendere ambiente.",
-  "fonte": "D&D 5e PHB p.220"
+  "fonte": "D&D 5e PHB p.220",
+  "name": "Spell Mani Brucianti"
 }

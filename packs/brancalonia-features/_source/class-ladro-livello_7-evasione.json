@@ -144,5 +144,6 @@
     "no_dex_save": "Se impedito TS DEX, no Evasion"
   },
   "note_dm": "Evasion è uno dei privilegi difensivi più forti del gioco. Cambia completamente come il ladro affronta minacce AoE.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
+  "name": "Evasione"
 }

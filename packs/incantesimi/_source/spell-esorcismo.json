@@ -14,7 +14,10 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "L'incantatore pronuncia invocazioni al Padre Terno, alla Cinquina o a tutto il Tombolone e sceglie un folletto, un immondo o un non morto entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti sarà incapacitato per la durata dell'incantesimo e deve spendere i suoi turni tentando di allontanarsi il più possibile dall'incantatore; inoltre, non può volontariamente muoversi in uno spazio entro 9 metri da lui. Alla fine di ogni suo turno, il bersaglio può effettuare un altro tiro salvezza su Saggezza. Se lo supera, l'incantesimo su di esso termina. Per la durata dell'incantesimo, l'incantatore può usare la funzione speciale seguente. Spezzare Ammaliamento: Con la sua azione, l'incantatore tocca una creatura situata entro la sua portata che sia affascinata, spaventata o posseduta da un immondo, folletto o non morto. La creatura toccata non è più affascinata, spaventata o posseduta da tali creature.",
-  "classi": ["Chierico", "Druido"],
+  "classi": [
+    "Chierico",
+    "Druido"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 2,
@@ -26,7 +29,11 @@
     "condizione": "incapacitated"
   },
   "meccaniche_brancalonia": {
-    "target_types": ["Folletto", "Immondo", "Non morto"],
+    "target_types": [
+      "Folletto",
+      "Immondo",
+      "Non morto"
+    ],
     "effetto_principale": "Incapacitated + fuga forzata",
     "no_approach": "Non può avvicinarsi entro 9m",
     "save_ripetuto": "WIS save ogni turno",
@@ -58,5 +65,6 @@
     "Esorcismi rituali roleplay"
   ],
   "note_dm": "Esorcismo è spell tematico di Brancalonia. Mix tra Turn Undead e Protection from Evil. Forte vs specifici nemici.",
-  "fonte": "Brancalonia Macaronicon p.52"
+  "fonte": "Brancalonia Macaronicon p.52",
+  "name": "Spell Esorcismo"
 }

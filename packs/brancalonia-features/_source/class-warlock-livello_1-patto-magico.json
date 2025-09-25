@@ -7,14 +7,38 @@
   "descrizione": "La tua ricerca arcana e la magia concessati dal tuo patrono ti hanno dato facilità con gli incantesimi. Hai slot incantesimi che si ricaricano con riposo breve, tutti dello stesso livello.",
   "meccaniche": {
     "slot_patto": {
-      "livello_1": {"numero": 1, "livello": "1°"},
-      "livello_2": {"numero": 2, "livello": "1°"},
-      "livello_3": {"numero": 2, "livello": "2°"},
-      "livello_5": {"numero": 2, "livello": "3°"},
-      "livello_7": {"numero": 2, "livello": "4°"},
-      "livello_9": {"numero": 2, "livello": "5°"},
-      "livello_11": {"numero": 3, "livello": "5°"},
-      "livello_17": {"numero": 4, "livello": "5°"}
+      "livello_1": {
+        "numero": 1,
+        "livello": "1°"
+      },
+      "livello_2": {
+        "numero": 2,
+        "livello": "1°"
+      },
+      "livello_3": {
+        "numero": 2,
+        "livello": "2°"
+      },
+      "livello_5": {
+        "numero": 2,
+        "livello": "3°"
+      },
+      "livello_7": {
+        "numero": 2,
+        "livello": "4°"
+      },
+      "livello_9": {
+        "numero": 2,
+        "livello": "5°"
+      },
+      "livello_11": {
+        "numero": 3,
+        "livello": "5°"
+      },
+      "livello_17": {
+        "numero": 4,
+        "livello": "5°"
+      }
     },
     "recupero": "Riposo breve o lungo",
     "trucchetti": {
@@ -48,5 +72,6 @@
     "nota": "Vedi Invocazioni Occulte al 2° livello",
     "potenziamento": "Modificano capacità base"
   },
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107",
+  "name": "Magia del Patto"
 }

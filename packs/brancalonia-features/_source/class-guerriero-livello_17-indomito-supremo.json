@@ -50,7 +50,7 @@
   },
   "uso_pratico": [
     "Round 1: Save vs Maze, usa Indomito",
-    "Round 3: Save vs Feeblemind, usa secondo",  
+    "Round 3: Save vs Feeblemind, usa secondo",
     "Round 5: Save vs Power Word Stun, usa terzo",
     "Flessibile per tutto il combattimento"
   ],
@@ -72,5 +72,6 @@
     "leggenda": "Resistenza sovrumana"
   },
   "note_dm": "Tre usi di Indomito al 17° rendono il guerriero estremamente resiliente contro effetti save-or-suck di alto livello. Praticamente immunità a singoli effetti devastanti.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "name": "Indomito Supremo"
 }

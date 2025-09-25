@@ -6,7 +6,11 @@
   "tipo": "advancement",
   "descrizione": "All'8° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, o due punteggi di 1. Come di norma, non puoi aumentare sopra 20. In alternativa puoi scegliere un talento.",
   "meccaniche": {
-    "opzioni": ["+2 a una stat", "+1 a due stat", "1 talento"],
+    "opzioni": [
+      "+2 a una stat",
+      "+1 a due stat",
+      "1 talento"
+    ],
     "limite": "Max 20"
   },
   "implementazione_foundry": {
@@ -25,5 +29,6 @@
     "tradizione_bonus": "Alcuni privilegi scalano con INT"
   },
   "note_dm": "La maggior parte dei maghi raggiunge INT 20 all'8° livello, massimizzando efficacia spell.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Aumento Caratteristica 2"
 }

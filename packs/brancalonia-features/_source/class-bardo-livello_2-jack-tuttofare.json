@@ -9,7 +9,12 @@
     "beneficio": {
       "formula": "Competenza ÷ 2 (arrotondato difetto)",
       "applicazione": "Prove senza competenza",
-      "include": ["Abilità", "Iniziativa", "Arnesi", "Prove pure caratteristica"]
+      "include": [
+        "Abilità",
+        "Iniziativa",
+        "Arnesi",
+        "Prove pure caratteristica"
+      ]
     },
     "progressione": {
       "livello_2": "+1",
@@ -50,5 +55,6 @@
     }
   },
   "note_dm": "Jack of All Trades rende il bardo utile in ogni situazione. Non sottovalutare il bonus iniziativa.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.54"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.54",
+  "name": "Jack Tuttofare"
 }

@@ -10,7 +10,12 @@
     "benefici": {
       "incantesimi_giuramento": "Sempre preparati, non contano",
       "incanalare_divinita": "2 opzioni uniche",
-      "privilegi_livello": [3, 7, 15, 20]
+      "privilegi_livello": [
+        3,
+        7,
+        15,
+        20
+      ]
     }
   },
   "giuramenti_disponibili": {
@@ -19,34 +24,58 @@
         "nome": "Giuramento di Devozione",
         "nome_brancalonia": "Voto della Fede",
         "tema": "Onore e giustizia classici",
-        "incantesimi_3": ["Protection from Evil", "Sanctuary"],
-        "channel": ["Sacred Weapon", "Turn Unholy"]
+        "incantesimi_3": [
+          "Protection from Evil",
+          "Sanctuary"
+        ],
+        "channel": [
+          "Sacred Weapon",
+          "Turn Unholy"
+        ]
       },
       "ancients": {
         "nome": "Giuramento degli Antichi",
         "nome_brancalonia": "Voto della Natura",
         "tema": "Proteggere la vita e la luce",
-        "incantesimi_3": ["Ensnaring Strike", "Speak with Animals"],
-        "channel": ["Nature's Wrath", "Turn Faithless"]
+        "incantesimi_3": [
+          "Ensnaring Strike",
+          "Speak with Animals"
+        ],
+        "channel": [
+          "Nature's Wrath",
+          "Turn Faithless"
+        ]
       },
       "vengeance": {
         "nome": "Giuramento di Vendetta",
         "nome_brancalonia": "Voto del Vendicatore",
         "tema": "Punire il male a ogni costo",
-        "incantesimi_3": ["Bane", "Hunter's Mark"],
-        "channel": ["Abjure Enemy", "Vow of Enmity"]
+        "incantesimi_3": [
+          "Bane",
+          "Hunter's Mark"
+        ],
+        "channel": [
+          "Abjure Enemy",
+          "Vow of Enmity"
+        ]
       }
     },
     "xanathars": {
       "conquest": {
         "nome": "Giuramento di Conquista",
         "tema": "Dominare attraverso la paura",
-        "incantesimi_3": ["Armor of Agathys", "Command"]
+        "incantesimi_3": [
+          "Armor of Agathys",
+          "Command"
+        ]
       },
       "redemption": {
         "nome": "Giuramento di Redenzione",
         "tema": "Pace e perdono",
-        "incantesimi_3": ["Sanctuary", "Sleep"]
+        "incantesimi_3": [
+          "Sanctuary",
+          "Sleep"
+        ]
       }
     },
     "dmg": {
@@ -54,14 +83,32 @@
         "nome": "Spergiuro",
         "tema": "Paladino caduto",
         "requisiti": "Rompere giuramento",
-        "incantesimi_3": ["Hellish Rebuke", "Inflict Wounds"]
+        "incantesimi_3": [
+          "Hellish Rebuke",
+          "Inflict Wounds"
+        ]
       }
     }
   },
   "principi_giuramenti": {
-    "devotion": ["Onestà", "Coraggio", "Compassione", "Onore", "Dovere"],
-    "ancients": ["Accendi la Luce", "Proteggi la Luce", "Preserva la Tua Luce", "Sii la Luce"],
-    "vengeance": ["Combatti il Male Maggiore", "Nessuna Pietà", "Con Ogni Mezzo"]
+    "devotion": [
+      "Onestà",
+      "Coraggio",
+      "Compassione",
+      "Onore",
+      "Dovere"
+    ],
+    "ancients": [
+      "Accendi la Luce",
+      "Proteggi la Luce",
+      "Preserva la Tua Luce",
+      "Sii la Luce"
+    ],
+    "vengeance": [
+      "Combatti il Male Maggiore",
+      "Nessuna Pietà",
+      "Con Ogni Mezzo"
+    ]
   },
   "aura_progression": {
     "livello_7": "Aura unica del giuramento (3m)",
@@ -122,5 +169,6 @@
     "custom": "Giuramento del Regno Caduto"
   },
   "note_dm": "Il giuramento definisce completamente l'identità del paladino. I principi devono essere seguiti o rischia di diventare Oathbreaker.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
+  "name": "Giuramento Sacro"
 }

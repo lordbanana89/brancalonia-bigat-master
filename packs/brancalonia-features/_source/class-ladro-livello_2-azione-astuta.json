@@ -34,7 +34,11 @@
     },
     "macro": {
       "tipo": "quick_menu",
-      "opzioni": ["Dash", "Disengage", "Hide"]
+      "opzioni": [
+        "Dash",
+        "Disengage",
+        "Hide"
+      ]
     }
   },
   "combo_tattiche": {
@@ -120,5 +124,6 @@
     }
   },
   "note_dm": "Cunning Action definisce lo stile di combattimento del ladro. Senza di essa, il ladro è troppo fragile.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
+  "name": "Azione Astuta"
 }

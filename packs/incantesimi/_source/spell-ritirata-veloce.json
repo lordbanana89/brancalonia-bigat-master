@@ -12,7 +12,11 @@
   },
   "durata": "Concentrazione, fino a 10 minuti",
   "descrizione": "Questo incantesimo ti permette di muoverti a velocità incredibile. Quando lanci questo incantesimo, e poi come azione bonus in ognuno dei tuoi turni fino al termine dell'incantesimo, puoi effettuare l'azione Scatto.",
-  "classi": ["Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 1,
@@ -62,5 +66,6 @@
     "Action Surge fighter combo"
   ],
   "note_dm": "Expeditious Retreat è mobilità sostenuta economica. Nome inganna - ottimo anche per inseguire. Concentrazione è costo reale.",
-  "fonte": "D&D 5e PHB p.238"
+  "fonte": "D&D 5e PHB p.238",
+  "name": "Spell Ritirata Veloce"
 }

@@ -14,7 +14,14 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "Scegli un umanoide che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza o essere paralizzato per la durata. Alla fine di ognuno dei suoi turni, il bersaglio può effettuare un altro tiro salvezza su Saggezza. Con un successo, l'incantesimo termina sul bersaglio.",
-  "classi": ["Bardo", "Chierico", "Druido", "Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Druido",
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "scaling": {
     "descrizione": "+1 creatura per slot level sopra 2°",
     "slot_3": "2 creature",
@@ -62,5 +69,6 @@
     "worth_upcast": "Molto efficiente scaled"
   },
   "note_dm": "Hold Person è save-or-die virtuale. Paralyzed + auto-crit devastante. Solo umanoidi lo bilancia. Save ripetuti danno speranza.",
-  "fonte": "D&D 5e PHB p.251"
+  "fonte": "D&D 5e PHB p.251",
+  "name": "Spell Blocca Persone"
 }

@@ -15,5 +15,6 @@
     "party_buff": "Tutto gruppo immune"
   },
   "note_dm": "Aura of Courage neutralizza fear effects. Molto potente contro draghi e demon.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
+  "name": "Aura del Coraggio"
 }

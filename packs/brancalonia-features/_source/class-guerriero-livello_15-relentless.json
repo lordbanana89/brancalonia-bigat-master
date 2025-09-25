@@ -116,5 +116,6 @@
     "leggendario": "Mai colto impreparato"
   },
   "note_dm": "Relentless elimina l'ansia da gestione risorse del Battle Master. Garantisce sempre almeno una manovra per combattimento. Cambia drasticamente lo stile di gioco.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.74"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.74",
+  "name": "Relentless"
 }

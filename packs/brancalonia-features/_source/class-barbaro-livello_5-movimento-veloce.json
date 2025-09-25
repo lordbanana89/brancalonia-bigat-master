@@ -72,5 +72,6 @@
     "esplorazione_dungeon": "Permette di esplorare più rapidamente"
   },
   "note_dm": "Ricorda di applicare il bonus solo se non indossa armatura pesante. Il bonus è sempre attivo, non richiede attivazione.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
+  "name": "Movimento Veloce"
 }

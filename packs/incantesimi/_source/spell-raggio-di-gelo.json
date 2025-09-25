@@ -12,7 +12,10 @@
   },
   "durata": "Istantanea",
   "descrizione": "Un raggio gelido di luce bianco-blu sfreccia verso una creatura entro gittata. Effettua un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, subisce 1d8 danni da freddo e la sua velocità è ridotta di 10 piedi fino all'inizio del tuo prossimo turno.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "danno_scaling": {
     "livello_1": "1d8",
     "livello_5": "2d8",
@@ -46,5 +49,6 @@
     "Combo con area control"
   ],
   "note_dm": "Ray of Frost è controllo più che danno. -10 speed può essere cruciale tatticamente. Ottimo per wizard che vuole mantenere distanza.",
-  "fonte": "D&D 5e PHB p.271"
+  "fonte": "D&D 5e PHB p.271",
+  "name": "Spell Raggio Di Gelo"
 }

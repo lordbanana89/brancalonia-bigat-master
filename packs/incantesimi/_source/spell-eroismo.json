@@ -12,7 +12,10 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "Una creatura consenziente che tocchi è pervasa da coraggio. Fino al termine dell'incantesimo, la creatura è immune all'essere spaventata e ottiene punti ferita temporanei pari al tuo modificatore di caratteristica da incantatore all'inizio di ognuno dei suoi turni. Quando l'incantesimo termina, il bersaglio perde tutti i punti ferita temporanei rimanenti da questo incantesimo.",
-  "classi": ["Bardo", "Paladino"],
+  "classi": [
+    "Bardo",
+    "Paladino"
+  ],
   "scaling": {
     "descrizione": "+1 creatura per slot sopra 1°",
     "slot_2": "2 creature",
@@ -64,5 +67,6 @@
     "THP non stackano con altri"
   ],
   "note_dm": "Heroism è ottimo sustained protection. THP ogni turno accumula molto. Fear immunity situazionale ma potente quando serve.",
-  "fonte": "D&D 5e PHB p.250"
+  "fonte": "D&D 5e PHB p.250",
+  "name": "Spell Eroismo"
 }

@@ -19,13 +19,35 @@
       "livello_17": "CR 4 o meno"
     },
     "non_morti_comuni": {
-      "cr_0": ["Crawling Claw"],
-      "cr_1_4": ["Skeleton", "Zombie"],
-      "cr_1_2": ["Shadow", "Specter"],
-      "cr_1": ["Ghoul", "Specter"],
-      "cr_2": ["Ghast", "Minotaur Skeleton", "Will-o'-Wisp"],
-      "cr_3": ["Mummy", "Wight"],
-      "cr_4": ["Banshee", "Flameskull", "Ghost"]
+      "cr_0": [
+        "Crawling Claw"
+      ],
+      "cr_1_4": [
+        "Skeleton",
+        "Zombie"
+      ],
+      "cr_1_2": [
+        "Shadow",
+        "Specter"
+      ],
+      "cr_1": [
+        "Ghoul",
+        "Specter"
+      ],
+      "cr_2": [
+        "Ghast",
+        "Minotaur Skeleton",
+        "Will-o'-Wisp"
+      ],
+      "cr_3": [
+        "Mummy",
+        "Wight"
+      ],
+      "cr_4": [
+        "Banshee",
+        "Flameskull",
+        "Ghost"
+      ]
     }
   },
   "implementazione_foundry": {
@@ -58,16 +80,38 @@
   },
   "calcoli_efficacia": {
     "livello_5": {
-      "distrugge": ["Skeleton", "Zombie", "Shadow"],
-      "turn_only": ["Ghoul", "Specter", "Wight"]
+      "distrugge": [
+        "Skeleton",
+        "Zombie",
+        "Shadow"
+      ],
+      "turn_only": [
+        "Ghoul",
+        "Specter",
+        "Wight"
+      ]
     },
     "livello_11": {
-      "distrugge": ["Ghoul", "Ghast", "Specter"],
-      "turn_only": ["Mummy", "Vampire Spawn"]
+      "distrugge": [
+        "Ghoul",
+        "Ghast",
+        "Specter"
+      ],
+      "turn_only": [
+        "Mummy",
+        "Vampire Spawn"
+      ]
     },
     "livello_17": {
-      "distrugge": ["Mummy", "Wight", "Banshee"],
-      "turn_only": ["Vampire", "Lich"]
+      "distrugge": [
+        "Mummy",
+        "Wight",
+        "Banshee"
+      ],
+      "turn_only": [
+        "Vampire",
+        "Lich"
+      ]
     }
   },
   "confronto": {
@@ -120,5 +164,6 @@
     ]
   },
   "note_dm": "Destroy Undead può trivializzare incontri con non morti deboli. Bilancia con CR misti o non morti potenti.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+  "name": "Distruggere Non Morti"
 }

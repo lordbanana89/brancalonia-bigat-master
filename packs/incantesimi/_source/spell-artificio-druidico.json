@@ -12,7 +12,9 @@
   },
   "durata": "Istantanea",
   "descrizione": "Sussurrando agli spiriti della natura, crei uno dei seguenti effetti entro gittata: Crei un piccolo effetto sensoriale innocuo che predice le condizioni meteorologiche per le prossime 24 ore. Fai sbocciare istantaneamente un fiore, aprire un seme o germogliare una foglia. Crei un effetto sensoriale istantaneo e innocuo, come foglie che cadono, un soffio di vento, il suono di un piccolo animale o il debole odore di una puzzola. Accendi o spegni istantaneamente una candela, torcia o piccolo fuoco da campo.",
-  "classi": ["Druido"],
+  "classi": [
+    "Druido"
+  ],
   "implementazione_foundry": {
     "tipo": "cantrip",
     "attivazione": "action",
@@ -44,5 +46,6 @@
     "pratico": "Meteo utile per planning"
   },
   "note_dm": "Druidcraft è il più debole dei cantrip utility ma perfetto per flavor druido. Previsione meteo unica meccanica utile.",
-  "fonte": "D&D 5e PHB p.236"
+  "fonte": "D&D 5e PHB p.236",
+  "name": "Spell Artificio Druidico"
 }

@@ -119,5 +119,6 @@
     "veterano_supremo": "Battaglia è casa sua"
   },
   "note_dm": "Due Action Surge rendono il Fighter 17+ una forza devastante. Può nova due volte per short rest. Con 4 attacchi base, significa 8 attacchi quando serve.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "name": "Action Surge Migliorato"
 }

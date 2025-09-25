@@ -64,10 +64,26 @@
     }
   },
   "build_paths": {
-    "eldritch_blaster": ["Agonizing Blast", "Eldritch Spear", "Lance of Lethargy"],
-    "melee_hexblade": ["Thirsting Blade", "Lifedrinker", "Eldritch Smite"],
-    "utility": ["Book of Ancient Secrets", "Mask of Many Faces", "Eldritch Sight"],
-    "tank": ["Armor of Shadows", "Fiendish Vigor", "Tomb of Levistus"]
+    "eldritch_blaster": [
+      "Agonizing Blast",
+      "Eldritch Spear",
+      "Lance of Lethargy"
+    ],
+    "melee_hexblade": [
+      "Thirsting Blade",
+      "Lifedrinker",
+      "Eldritch Smite"
+    ],
+    "utility": [
+      "Book of Ancient Secrets",
+      "Mask of Many Faces",
+      "Eldritch Sight"
+    ],
+    "tank": [
+      "Armor of Shadows",
+      "Fiendish Vigor",
+      "Tomb of Levistus"
+    ]
   },
   "calcoli_impatto": {
     "agonizing_blast": {
@@ -93,5 +109,6 @@
     "late": "Potenti effetti unici"
   },
   "note_dm": "Le invocazioni definiscono il warlock. Agonizing Blast è quasi necessario. Devil's Sight + Darkness può essere problematico.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107",
+  "name": "Invocazioni Occulte"
 }

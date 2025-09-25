@@ -14,7 +14,12 @@
   },
   "durata": "Concentrazione, fino a 1 ora",
   "descrizione": "Una creatura che tocchi diventa invisibile fino al termine dell'incantesimo. Qualsiasi cosa il bersaglio stia indossando o trasportando è invisibile finché resta sulla persona del bersaglio. L'incantesimo termina per un bersaglio che attacca o lancia un incantesimo.",
-  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Bardo",
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "scaling": {
     "descrizione": "+1 creatura per slot level sopra 2°",
     "slot_3": "2 creature",
@@ -67,5 +72,6 @@
     "durata": "Greater solo 1 minuto"
   },
   "note_dm": "Invisibility è utility/escape potente. Termina con azioni offensive lo bilancia. Ottimo per infiltrazione e scouting.",
-  "fonte": "D&D 5e PHB p.254"
+  "fonte": "D&D 5e PHB p.254",
+  "name": "Spell Invisibilita"
 }

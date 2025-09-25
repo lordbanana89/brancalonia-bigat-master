@@ -8,11 +8,22 @@
   "meccaniche": {
     "scelta": "Permanente al 1° livello",
     "benefici": {
-      "livello_1": ["Incantesimi dominio", "Privilegio dominio"],
-      "livello_2": ["Incanalare Divinità opzione"],
-      "livello_6": ["Privilegio dominio"],
-      "livello_8": ["Privilegio dominio potente"],
-      "livello_17": ["Capstone dominio"]
+      "livello_1": [
+        "Incantesimi dominio",
+        "Privilegio dominio"
+      ],
+      "livello_2": [
+        "Incanalare Divinità opzione"
+      ],
+      "livello_6": [
+        "Privilegio dominio"
+      ],
+      "livello_8": [
+        "Privilegio dominio potente"
+      ],
+      "livello_17": [
+        "Capstone dominio"
+      ]
     }
   },
   "domini_brancalonia": {
@@ -21,7 +32,10 @@
       "nome_brancalonia": "Via della Guarigione",
       "divinita": "Santi guaritori",
       "bonus": "Armature pesanti, guarigione potenziata",
-      "incantesimi_1": ["Bless", "Cure Wounds"],
+      "incantesimi_1": [
+        "Bless",
+        "Cure Wounds"
+      ],
       "tema": "Guarigione e protezione"
     },
     "luce": {
@@ -29,7 +43,10 @@
       "nome_brancalonia": "Via del Sole",
       "divinita": "San Michele",
       "bonus": "Trucchetto Light, Warding Flare",
-      "incantesimi_1": ["Burning Hands", "Faerie Fire"],
+      "incantesimi_1": [
+        "Burning Hands",
+        "Faerie Fire"
+      ],
       "tema": "Danno radioso e protezione"
     },
     "tempesta": {
@@ -37,7 +54,10 @@
       "nome_brancalonia": "Via del Tuono",
       "divinita": "Santi del mare",
       "bonus": "Armature pesanti, Wrath of Storm",
-      "incantesimi_1": ["Fog Cloud", "Thunderwave"],
+      "incantesimi_1": [
+        "Fog Cloud",
+        "Thunderwave"
+      ],
       "tema": "Controllo elementi"
     },
     "inganno": {
@@ -45,7 +65,10 @@
       "nome_brancalonia": "Via della Maschera",
       "divinita": "Santi ladri",
       "bonus": "Blessing of Trickster",
-      "incantesimi_1": ["Charm Person", "Disguise Self"],
+      "incantesimi_1": [
+        "Charm Person",
+        "Disguise Self"
+      ],
       "tema": "Illusione e sotterfugio"
     },
     "guerra": {
@@ -53,7 +76,10 @@
       "nome_brancalonia": "Via della Spada",
       "divinita": "San Giorgio",
       "bonus": "Armature pesanti, War Priest",
-      "incantesimi_1": ["Divine Favor", "Shield of Faith"],
+      "incantesimi_1": [
+        "Divine Favor",
+        "Shield of Faith"
+      ],
       "tema": "Combattimento divino"
     }
   },
@@ -87,5 +113,6 @@
     "livello_17": "Capstone devastante"
   },
   "note_dm": "Il dominio definisce completamente lo stile di gioco del chierico. Considera il setting quando approvi domini.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+  "name": "Dominio Divino"
 }

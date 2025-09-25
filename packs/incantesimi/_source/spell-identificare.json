@@ -15,7 +15,10 @@
   },
   "durata": "Istantanea",
   "descrizione": "Scegli un oggetto che devi toccare durante il lancio dell'incantesimo. Se è un oggetto magico o un altro oggetto infuso di magia, apprendi le sue proprietà e come usarle, se richiede attunement per essere usato, e quante cariche ha, se presenti. Apprendi se qualche incantesimo sta influenzando l'oggetto e cosa sono. Se l'oggetto è stato creato da un incantesimo, apprendi quale incantesimo lo ha creato. Se invece tocchi una creatura durante il lancio, apprendi quali incantesimi, se presenti, la stanno attualmente influenzando.",
-  "classi": ["Bardo", "Mago"],
+  "classi": [
+    "Bardo",
+    "Mago"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 1,
@@ -54,5 +57,6 @@
     "party_utility": "Wizard/Bard servizio party"
   },
   "note_dm": "Identify essenziale per loot magico. Non rivela curse è importante per tensione. Perla da 100mo è investimento iniziale.",
-  "fonte": "D&D 5e PHB p.252"
+  "fonte": "D&D 5e PHB p.252",
+  "name": "Spell Identificare"
 }

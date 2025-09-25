@@ -12,7 +12,10 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "Tocchi una creatura consenziente. Una volta prima che l'incantesimo finisca, il bersaglio può tirare un d4 e aggiungere il numero tirato a una prova di caratteristica a sua scelta. Può tirare il dado prima o dopo aver effettuato la prova. L'incantesimo poi termina.",
-  "classi": ["Chierico", "Druido"],
+  "classi": [
+    "Chierico",
+    "Druido"
+  ],
   "implementazione_foundry": {
     "tipo": "cantrip",
     "attivazione": "action",
@@ -32,5 +35,6 @@
     "spam_potenziale": "Ricastabile dopo uso"
   },
   "note_dm": "Guidance è uno dei migliori cantrip. +1d4 è significativo. Alcuni tavoli limitano lo spam continuo.",
-  "fonte": "D&D 5e PHB p.248"
+  "fonte": "D&D 5e PHB p.248",
+  "name": "Spell Guida"
 }

@@ -8,7 +8,10 @@
   "meccaniche": {
     "formula_ca": {
       "base": 10,
-      "modificatori": ["Destrezza", "Costituzione"],
+      "modificatori": [
+        "Destrezza",
+        "Costituzione"
+      ],
       "formula_completa": "10 + mod_Des + mod_Cos",
       "compatibile_con_scudo": true
     },
@@ -88,5 +91,6 @@
     "descrizione": "I Pagani di Brancalonia spesso combattono a torso nudo per mostrare le cicatrici",
     "beneficio_sociale": "Intimidire +1 quando combatti senza armatura (opzionale)"
   },
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48",
+  "name": "Difesa Senza Armatura"
 }

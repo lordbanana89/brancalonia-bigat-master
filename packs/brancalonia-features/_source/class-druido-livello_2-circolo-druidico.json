@@ -7,7 +7,12 @@
   "descrizione": "Al 2° livello, scegli di identificarti con un circolo di druidi.",
   "meccaniche": {
     "scelta_sottoclasse": true,
-    "privilegi": [2, 6, 10, 14]
+    "privilegi": [
+      2,
+      6,
+      10,
+      14
+    ]
   },
   "circoli_principali": {
     "land": {
@@ -48,10 +53,17 @@
   },
   "valutazione": {
     "tier_s": "Moon (combat), Stars (versatile)",
-    "tier_a": ["Shepherd (summons)", "Land (full caster)"],
-    "tier_b": ["Dreams (healing)", "Wildfire (damage)"],
+    "tier_a": [
+      "Shepherd (summons)",
+      "Land (full caster)"
+    ],
+    "tier_b": [
+      "Dreams (healing)",
+      "Wildfire (damage)"
+    ],
     "tier_c": "Spores (MAD, melee fragile)"
   },
   "note_dm": "Il circolo cambia completamente il druido. Moon per tank/damage, Land per full caster, Stars per versatile.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.68"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.68",
+  "name": "Circolo Druidico"
 }

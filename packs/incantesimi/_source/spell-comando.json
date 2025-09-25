@@ -18,7 +18,10 @@
     "cadi": "Cade prono e poi termina il suo turno",
     "fermati": "Non si muove e non effettua azioni. Una creatura volante rimane in aria se può"
   },
-  "classi": ["Chierico", "Paladino"],
+  "classi": [
+    "Chierico",
+    "Paladino"
+  ],
   "scaling": {
     "descrizione": "+1 creatura per slot level sopra 1°",
     "slot_2": "2 creature",
@@ -60,5 +63,6 @@
     "escape": "'Fuggi' per creare spazio"
   },
   "note_dm": "Command è controllo potente ma breve. Creatività nei comandi premiata. WIS save comune problema. Scaling ottimo.",
-  "fonte": "D&D 5e PHB p.223"
+  "fonte": "D&D 5e PHB p.223",
+  "name": "Spell Comando"
 }

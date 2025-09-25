@@ -14,5 +14,6 @@
     "smite_opportunità": "2 chance per round"
   },
   "note_dm": "Extra Attack raddoppia output del paladino e chance di smite.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
+  "name": "Attacco Extra"
 }

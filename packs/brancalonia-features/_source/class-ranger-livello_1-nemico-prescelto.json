@@ -19,13 +19,26 @@
   },
   "implementazione_foundry": {
     "tipo": "favored_enemy",
-    "advantage_checks": ["Survival (tracking)", "Intelligence (recall)"]
+    "advantage_checks": [
+      "Survival (tracking)",
+      "Intelligence (recall)"
+    ]
   },
   "tipi_nemici": [
-    "Aberrazioni", "Bestie", "Celestiali", "Costrutti",
-    "Draghi", "Elementali", "Folletti", "Immondi",
-    "Giganti", "Melme", "Mostruosità", "Non-morti",
-    "Piante", "Umanoidi (2 razze)"
+    "Aberrazioni",
+    "Bestie",
+    "Celestiali",
+    "Costrutti",
+    "Draghi",
+    "Elementali",
+    "Folletti",
+    "Immondi",
+    "Giganti",
+    "Melme",
+    "Mostruosità",
+    "Non-morti",
+    "Piante",
+    "Umanoidi (2 razze)"
   ],
   "tasha_alternative": {
     "favored_foe": "1d4/1d6 danno concentrazione",
@@ -56,5 +69,6 @@
     "studio": "Anni di osservazione"
   },
   "note_dm": "Favored Enemy è molto situazionale. Coordina con DM per scegliere nemici rilevanti alla campagna. Tasha's Favored Foe più versatile.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91",
+  "name": "Nemico Prescelto"
 }

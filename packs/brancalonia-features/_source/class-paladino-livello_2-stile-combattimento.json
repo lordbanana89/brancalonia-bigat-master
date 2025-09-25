@@ -6,7 +6,12 @@
   "tipo": "passivo",
   "descrizione": "Al 2° livello, adotti uno stile di combattimento come tua specialità.",
   "meccaniche": {
-    "opzioni": ["Defense", "Dueling", "Great Weapon Fighting", "Protection"]
+    "opzioni": [
+      "Defense",
+      "Dueling",
+      "Great Weapon Fighting",
+      "Protection"
+    ]
   },
   "stili": {
     "defense": "+1 CA con armatura",
@@ -15,5 +20,6 @@
     "protection": "Shield reaction per disadvantage"
   },
   "note_dm": "Fighting Style definisce build del paladino. Defense universale, GWF per two-handed, Dueling per sword&board.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84",
+  "name": "Stile di Combattimento"
 }

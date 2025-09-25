@@ -163,5 +163,6 @@
     "impatto": "Uno dei power spike più grandi del ladro"
   },
   "note_dm": "Reliable Talent rimuove la casualità dalle specializzazioni del ladro. Pianifica sfide con CD 25+ per mantenere tensione.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
+  "name": "Talento Affidabile"
 }

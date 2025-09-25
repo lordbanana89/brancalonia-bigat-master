@@ -14,7 +14,12 @@
   "durata": "1 minuto",
   "descrizione": "Una mano spettrale fluttuante appare in un punto a tua scelta entro gittata. La mano dura per la durata o finché non la congedi come azione. La mano svanisce se si trova a più di 30 piedi da te o se lanci di nuovo questo incantesimo. Puoi usare la tua azione per controllare la mano. Puoi usare la mano per manipolare un oggetto, aprire una porta o contenitore non chiuso a chiave, riporre o recuperare un oggetto da un contenitore aperto, o versare il contenuto di una fiala. Puoi muovere la mano fino a 30 piedi ogni volta che la usi. La mano non può attaccare, attivare oggetti magici o trasportare più di 10 libbre.",
   "livelli_superiori": null,
-  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Bardo",
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "sottoclassi_bonus": {
     "arcane_trickster": "Mage Hand Legerdemain - invisibile e bonus azioni"
   },
@@ -66,5 +71,6 @@
     "interazione_creature": "Non può toccare creature ostili"
   },
   "note_dm": "Mage Hand è utility pura. Arcane Trickster la rende eccezionale per ladri. Ricorda che non può attaccare o attivare magic items.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.256"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.256",
+  "name": "Spell Trucchetto Della Mano"
 }

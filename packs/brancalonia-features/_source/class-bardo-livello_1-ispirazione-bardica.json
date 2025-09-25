@@ -64,5 +64,6 @@
     "presenza": "Carisma che motiva"
   },
   "note_dm": "Bardic Inspiration è il cuore del bardo. Supporto flessibile che scala bene. Short rest recovery al 5° è game changer.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.53"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.53",
+  "name": "Ispirazione Bardica"
 }

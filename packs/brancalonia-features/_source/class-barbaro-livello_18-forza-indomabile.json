@@ -120,5 +120,6 @@
     "reputazione": "Diventa leggenda vivente di forza"
   },
   "note_dm": "Privilegio molto cinematografico. Permette momenti eroici garantiti. Ricorda che non si applica ai tiri salvezza per bilanciamento.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
+  "name": "Forza Indomabile"
 }

@@ -12,7 +12,9 @@
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "L'incantatore narra un racconto inquietante che soltanto una creatura a sua scelta e situata entro gittata è in grado di udire; la mente del bersaglio viene sconvolta dall'energia psychica generata dall'incantesimo. Il bersaglio deve effettuare un tiro salvezza su Saggezza. Se lo fallisce, diventa spaventato per la durata dell'incantesimo. Alla fine di ogni turno del bersaglio, prima che l'incantesimo termini, il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti subirà 1d8 danni psichici. Se lo supera, l'incantesimo termina.",
   "livelli_superiori": "Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 2° livello o superiore, i danni aumentano di 1d8 per ogni slot di livello superiore al 1°.",
-  "classi": ["Bardo"],
+  "classi": [
+    "Bardo"
+  ],
   "scaling": {
     "slot_1": "1d8 psichici",
     "slot_2": "2d8 psichici",
@@ -66,5 +68,6 @@
     "Boss killer se fallisce saves"
   ],
   "note_dm": "Racconto Agghiacciante è spell bardo Brancalonia che combina controllo e danno. Bonus action eccellente. Flavor narrativo perfetto per setting.",
-  "fonte": "Brancalonia Macaronicon p.52"
+  "fonte": "Brancalonia Macaronicon p.52",
+  "name": "Spell Racconto Agghiacciante"
 }

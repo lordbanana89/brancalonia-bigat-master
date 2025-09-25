@@ -11,7 +11,11 @@
   },
   "durata": "Istantanea",
   "descrizione": "Tenti di interrompere una creatura nel processo di lancio di un incantesimo. Se la creatura sta lanciando un incantesimo di 3° livello o inferiore, il suo incantesimo fallisce e non ha effetto. Se sta lanciando un incantesimo di 4° livello o superiore, effettua una prova di caratteristica usando la tua caratteristica da incantatore. La CD è uguale a 10 + il livello dell'incantesimo. Con un successo, l'incantesimo della creatura fallisce e non ha effetto.",
-  "classi": ["Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "scaling": {
     "descrizione": "Auto-counter spell di livello = slot usato",
     "slot_4": "Auto-counter livello 4 o meno",
@@ -61,5 +65,6 @@
     "Una reaction per round"
   ],
   "note_dm": "Counterspell definisce meta high-level. Reaction economy cruciale. Identificare spell optional ma utile. Counter-war può dominare combat.",
-  "fonte": "D&D 5e PHB p.228"
+  "fonte": "D&D 5e PHB p.228",
+  "name": "Spell Controincantesimo"
 }

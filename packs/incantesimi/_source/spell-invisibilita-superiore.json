@@ -12,7 +12,11 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "Tu o una creatura che tocchi diventate invisibili fino al termine dell'incantesimo. Qualsiasi cosa il bersaglio stia indossando o trasportando è invisibile fintanto che resta sulla persona del bersaglio.",
-  "classi": ["Bardo", "Mago", "Stregone"],
+  "classi": [
+    "Bardo",
+    "Mago",
+    "Stregone"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 4,
@@ -64,5 +68,6 @@
     "Sorcerer Subtle Spell combo"
   ],
   "note_dm": "Greater Invisibility è top tier combat buff. Advantage/disadvantage ogni round è enorme. Solo 1 minuto bilancia potenza.",
-  "fonte": "D&D 5e PHB p.246"
+  "fonte": "D&D 5e PHB p.246",
+  "name": "Spell Invisibilita Superiore"
 }

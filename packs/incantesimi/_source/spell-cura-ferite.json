@@ -12,7 +12,13 @@
   },
   "durata": "Istantanea",
   "descrizione": "Una creatura che tocchi recupera un numero di punti ferita pari a 1d8 + il tuo modificatore di caratteristica da incantatore. Questo incantesimo non ha effetto su non morti o costrutti.",
-  "classi": ["Bardo", "Chierico", "Druido", "Paladino", "Ranger"],
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Druido",
+    "Paladino",
+    "Ranger"
+  ],
   "scaling": {
     "slot_1": "1d8 + mod",
     "slot_2": "2d8 + mod",
@@ -57,5 +63,6 @@
     "esempio": "1d8+3+3 con slot 1°"
   },
   "note_dm": "Cure Wounds è healing efficiente ma touch range limita. Meglio out of combat. Life Domain lo rende eccellente.",
-  "fonte": "D&D 5e PHB p.230"
+  "fonte": "D&D 5e PHB p.230",
+  "name": "Spell Cura Ferite"
 }

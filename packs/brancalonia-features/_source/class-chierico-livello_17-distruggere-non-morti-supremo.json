@@ -16,7 +16,7 @@
   },
   "non_morti_cr_2_notabili": [
     "Ghast",
-    "Ogre Zombie", 
+    "Ogre Zombie",
     "Will-o'-Wisp",
     "Poltergeist",
     "Specter Poltergeist"
@@ -52,5 +52,6 @@
     "leggenda_vivente": "Non-morti fuggono al solo vederti"
   },
   "note_dm": "CR 2 include molti non-morti pericolosi. A livello 17, il chierico diventa una macchina anti-non-morti.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+  "name": "Distruggere Non Morti Supremo"
 }

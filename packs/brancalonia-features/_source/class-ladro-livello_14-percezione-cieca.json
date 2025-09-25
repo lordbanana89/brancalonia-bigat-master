@@ -167,5 +167,6 @@
     "tier_4": "Più nemici con invisibilità/oscurità"
   },
   "note_dm": "Blindsense è situazionale ma potente quando rilevante. Non renderlo più forte di quanto sia (solo 3m, solo creature).",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
+  "name": "Percezione Cieca"
 }

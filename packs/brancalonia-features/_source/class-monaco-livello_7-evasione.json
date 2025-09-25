@@ -14,7 +14,13 @@
     "tipo": "evasion",
     "automatico": true
   },
-  "spell_comuni_evasi": ["Fireball", "Lightning Bolt", "Cone of Cold", "Dragon Breath", "Burning Hands"],
+  "spell_comuni_evasi": [
+    "Fireball",
+    "Lightning Bolt",
+    "Cone of Cold",
+    "Dragon Breath",
+    "Burning Hands"
+  ],
   "calcoli_sopravvivenza": {
     "fireball_8d6": {
       "normale_fail": "28 medi",
@@ -23,5 +29,6 @@
     }
   },
   "note_dm": "Evasion rende il monaco molto resistente a damage AoE. Combinato con alta DEX e Diamond Soul, quasi immunità.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
+  "name": "Evasione"
 }

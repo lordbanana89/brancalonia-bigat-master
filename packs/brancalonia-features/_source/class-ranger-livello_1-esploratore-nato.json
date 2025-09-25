@@ -25,8 +25,14 @@
     "expertise_terreno": true
   },
   "tipi_terreno": [
-    "Artico", "Costa", "Deserto", "Foresta",
-    "Montagna", "Palude", "Pianura", "Sottoterra"
+    "Artico",
+    "Costa",
+    "Deserto",
+    "Foresta",
+    "Montagna",
+    "Palude",
+    "Pianura",
+    "Sottoterra"
   ],
   "tasha_alternative": {
     "deft_explorer": {
@@ -57,5 +63,6 @@
     "esploratori": "Mappano l'ignoto"
   },
   "note_dm": "Natural Explorer brilla nel terreno giusto, inutile altrove. Deft Explorer (Tasha) più versatile e sempre utile.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91",
+  "name": "Esploratore Nato"
 }

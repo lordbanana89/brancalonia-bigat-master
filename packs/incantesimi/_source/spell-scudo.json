@@ -12,7 +12,10 @@
   },
   "durata": "1 round",
   "descrizione": "Una barriera invisibile di forza magica appare e ti protegge. Fino all'inizio del tuo prossimo turno, hai un bonus di +5 alla CA, incluso contro l'attacco che ha innescato l'incantesimo, e non subisci danni da dardo incantato.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 1,
@@ -46,5 +49,6 @@
     "Funziona vs attacchi multipli stesso round"
   ],
   "note_dm": "Shield è tra i migliori spell difensivi. Reaction dopo sapere hit è potentissimo. Immunity a Magic Missile bonus.",
-  "fonte": "D&D 5e PHB p.275"
+  "fonte": "D&D 5e PHB p.275",
+  "name": "Spell Scudo"
 }

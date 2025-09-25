@@ -28,11 +28,29 @@
     "concentrazione": "Mantieni spell concentration"
   },
   "forme_popolari": {
-    "combattimento": ["Brown Bear (34 HP, multiattack)", "Giant Spider (web)", "Dire Wolf (pack tactics)"],
-    "esplorazione": ["Spider (climb)", "Cat (stealth)", "Horse (speed)"],
-    "infiltrazione": ["Rat", "Fly", "Cat"],
-    "volo_8": ["Giant Eagle", "Giant Owl"],
-    "acquatiche_4": ["Crocodile", "Reef Shark"]
+    "combattimento": [
+      "Brown Bear (34 HP, multiattack)",
+      "Giant Spider (web)",
+      "Dire Wolf (pack tactics)"
+    ],
+    "esplorazione": [
+      "Spider (climb)",
+      "Cat (stealth)",
+      "Horse (speed)"
+    ],
+    "infiltrazione": [
+      "Rat",
+      "Fly",
+      "Cat"
+    ],
+    "volo_8": [
+      "Giant Eagle",
+      "Giant Owl"
+    ],
+    "acquatiche_4": [
+      "Crocodile",
+      "Reef Shark"
+    ]
   },
   "circle_differenze": {
     "moon": {
@@ -63,5 +81,6 @@
     "protezione": "Guardiani in forma bestiale"
   },
   "note_dm": "Wild Shape definisce il druido. Circle of Moon la rende combat-viable, altri circles più utility. HP pool extra è molto potente.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.66"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.66",
+  "name": "Forma Selvatica"
 }

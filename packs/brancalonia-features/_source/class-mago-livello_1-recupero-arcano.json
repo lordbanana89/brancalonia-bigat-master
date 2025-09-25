@@ -105,5 +105,6 @@
     "saggezza_antica": "Tecniche dei maestri"
   },
   "note_dm": "Arcane Recovery è il 'secondo fiato' del mago. Equivale a circa 30-40% di risorse extra al giorno. Fondamentale per giornate lunghe.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Recupero Arcano"
 }

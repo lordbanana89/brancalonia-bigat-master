@@ -43,5 +43,6 @@
     "melee": "Defense o Two-Weapon",
     "versatile": "Druidic Warrior per utility"
   },
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91",
+  "name": "Stile di Combattimento"
 }

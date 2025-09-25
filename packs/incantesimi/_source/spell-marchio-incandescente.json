@@ -12,7 +12,9 @@
   "durata": "Concentrazione, fino a 1 ora",
   "descrizione": "L'incantatore sceglie una creatura entro gittata e che egli sia in grado di vedere e la marchia con il simbolo del fuoco. Finché l'incantesimo non termina, l'incantatore infligge 1d6 danni da fuoco extra al bersaglio ogni volta che lo colpisce con un attacco con un'arma. Finché l'incantesimo non termina, la creatura proietta luce intensa entro un raggio di 6 metri e luce fioca per altri 6 metri.",
   "livelli_superiori": "Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 2° livello o superiore, i danni aumentano di 1d6 per ogni slot di livello superiore al 1°.",
-  "classi": ["Ranger"],
+  "classi": [
+    "Ranger"
+  ],
   "scaling": {
     "slot_1": "1d6 fuoco",
     "slot_2": "2d6 fuoco",
@@ -61,5 +63,6 @@
     "Combo con attacchi multipli ranger"
   ],
   "note_dm": "Marchio Incandescente è versione Brancalonia di Hunter's Mark con twist fire/light. Ottimo per ranger piromani. Luce può essere tattica.",
-  "fonte": "Brancalonia Macaronicon p.52"
+  "fonte": "Brancalonia Macaronicon p.52",
+  "name": "Spell Marchio Incandescente"
 }

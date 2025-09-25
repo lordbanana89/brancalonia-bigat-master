@@ -88,5 +88,6 @@
     "velocità": "Sfocato agli occhi nemici"
   },
   "note_dm": "Unarmored Movement rende il monaco il più mobile del gioco. A livelli alti, copre distanze enormi. Combina con terrain verticale per massimo effetto.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78",
+  "name": "Movimento senza Armatura"
 }

@@ -94,7 +94,12 @@
   "implementazione_foundry": {
     "tipo": "subclass_choice",
     "sistema": "Sblocca privilegi sottoclasse",
-    "progressione": [2, 6, 10, 14]
+    "progressione": [
+      2,
+      6,
+      10,
+      14
+    ]
   },
   "impatto_build": {
     "specializzazione": "Definisce stile di gioco",
@@ -109,14 +114,46 @@
     "chronurgy": "Controllo supremo"
   },
   "sinergie_spell": {
-    "abjuration": ["Shield", "Counterspell", "Dispel Magic"],
-    "conjuration": ["Misty Step", "Dimension Door", "Teleport"],
-    "divination": ["Detect Magic", "See Invisibility", "True Seeing"],
-    "enchantment": ["Charm Person", "Hold Person", "Dominate"],
-    "evocation": ["Fireball", "Lightning Bolt", "Cone of Cold"],
-    "illusion": ["Disguise Self", "Mirror Image", "Major Image"],
-    "necromancy": ["False Life", "Vampiric Touch", "Animate Dead"],
-    "transmutation": ["Alter Self", "Polymorph", "True Polymorph"]
+    "abjuration": [
+      "Shield",
+      "Counterspell",
+      "Dispel Magic"
+    ],
+    "conjuration": [
+      "Misty Step",
+      "Dimension Door",
+      "Teleport"
+    ],
+    "divination": [
+      "Detect Magic",
+      "See Invisibility",
+      "True Seeing"
+    ],
+    "enchantment": [
+      "Charm Person",
+      "Hold Person",
+      "Dominate"
+    ],
+    "evocation": [
+      "Fireball",
+      "Lightning Bolt",
+      "Cone of Cold"
+    ],
+    "illusion": [
+      "Disguise Self",
+      "Mirror Image",
+      "Major Image"
+    ],
+    "necromancy": [
+      "False Life",
+      "Vampiric Touch",
+      "Animate Dead"
+    ],
+    "transmutation": [
+      "Alter Self",
+      "Polymorph",
+      "True Polymorph"
+    ]
   },
   "progressione_potere": {
     "livello_2": "Savant + capacità base",
@@ -142,5 +179,6 @@
     "rivalità": "Competizione tra scuole"
   },
   "note_dm": "La scelta della tradizione arcana definisce completamente il tipo di mago. Divination's Portent e Evocation's Sculpt Spell sono particolarmente impattanti.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Tradizione Arcana"
 }

@@ -11,7 +11,11 @@
   },
   "durata": "Istantanea",
   "descrizione": "Brevemente circondato da nebbia argentata, ti teletrasporti fino a 30 piedi in uno spazio non occupato che puoi vedere.",
-  "classi": ["Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 2,
@@ -53,5 +57,6 @@
     "vs_disengage": "Migliore ma costa slot"
   },
   "note_dm": "Misty Step è escape/mobilità premium. Bonus action lo rende eccezionale. Solo verbale permette cast in situazioni difficili.",
-  "fonte": "D&D 5e PHB p.260"
+  "fonte": "D&D 5e PHB p.260",
+  "name": "Spell Passo Traslato"
 }

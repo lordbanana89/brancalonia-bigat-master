@@ -15,14 +15,53 @@
       "tempo": "1 minuto per livello incantesimo"
     },
     "slot_incantesimi": {
-      "livello_1": {"1°": 2},
-      "livello_2": {"1°": 3},
-      "livello_3": {"1°": 4, "2°": 2},
-      "livello_5": {"1°": 4, "2°": 3, "3°": 2},
-      "livello_7": {"1°": 4, "2°": 3, "3°": 3, "4°": 1},
-      "livello_9": {"1°": 4, "2°": 3, "3°": 3, "4°": 2, "5°": 1},
-      "livello_11": {"1°": 4, "2°": 3, "3°": 3, "4°": 3, "5°": 2, "6°": 1},
-      "livello_20": {"1°": 4, "2°": 3, "3°": 3, "4°": 3, "5°": 3, "6°": 2, "7°": 2, "8°": 1, "9°": 1}
+      "livello_1": {
+        "1°": 2
+      },
+      "livello_2": {
+        "1°": 3
+      },
+      "livello_3": {
+        "1°": 4,
+        "2°": 2
+      },
+      "livello_5": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 2
+      },
+      "livello_7": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 1
+      },
+      "livello_9": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 2,
+        "5°": 1
+      },
+      "livello_11": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 3,
+        "5°": 2,
+        "6°": 1
+      },
+      "livello_20": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 3,
+        "5°": 3,
+        "6°": 2,
+        "7°": 2,
+        "8°": 1,
+        "9°": 1
+      }
     },
     "trucchetti": {
       "progressione": {
@@ -79,12 +118,33 @@
     }
   },
   "liste_incantesimi_brancalonia": {
-    "guarigione": ["Cure Wounds", "Healing Word", "Mass Healing Word"],
-    "protezione": ["Shield of Faith", "Sanctuary", "Aid"],
-    "supporto": ["Bless", "Guidance", "Enhance Ability"],
-    "controllo": ["Hold Person", "Command", "Silence"],
-    "danno": ["Guiding Bolt", "Spiritual Weapon", "Spirit Guardians"]
+    "guarigione": [
+      "Cure Wounds",
+      "Healing Word",
+      "Mass Healing Word"
+    ],
+    "protezione": [
+      "Shield of Faith",
+      "Sanctuary",
+      "Aid"
+    ],
+    "supporto": [
+      "Bless",
+      "Guidance",
+      "Enhance Ability"
+    ],
+    "controllo": [
+      "Hold Person",
+      "Command",
+      "Silence"
+    ],
+    "danno": [
+      "Guiding Bolt",
+      "Spiritual Weapon",
+      "Spirit Guardians"
+    ]
   },
   "note_dm": "Il chierico è l'incantatore divino più versatile, con accesso all'intera lista quando prepara.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58",
+  "name": "Incantesimi"
 }

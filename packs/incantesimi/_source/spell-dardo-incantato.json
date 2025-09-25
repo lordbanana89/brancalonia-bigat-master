@@ -14,7 +14,10 @@
   "durata": "Istantanea",
   "descrizione": "Crei tre dardi di forza magica incandescente. Ogni dardo colpisce una creatura a tua scelta che puoi vedere entro gittata. Un dardo infligge 1d4+1 danni da forza al suo bersaglio. I dardi colpiscono tutti simultaneamente e puoi dirigerli per colpire una creatura o diverse.",
   "livelli_superiori": "Quando lanci questo incantesimo usando uno slot di 2° livello o superiore, l'incantesimo crea un dardo aggiuntivo per ogni livello dello slot sopra il 1°.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 1,
@@ -73,5 +76,6 @@
     "resistenze": "Si applica a ogni dardo"
   },
   "note_dm": "Magic Missile è l'incantesimo più affidabile. Sempre colpisce, ottimo per finire nemici o rompere concentrazione. Shield è il counter perfetto.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.257"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.257",
+  "name": "Spell Dardo Incantato"
 }

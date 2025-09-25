@@ -17,16 +17,30 @@
       "linguaggio": "1 lingua del nemico (se esiste)"
     },
     "tipi_nemici": [
-      "Aberrazioni", "Bestie", "Celestiali", "Costrutti",
-      "Draghi", "Elementali", "Folletti", "Immondi",
-      "Giganti", "Melme", "Mostruosità", "Non morti",
-      "Piante", "Umanoidi (2 razze)"
+      "Aberrazioni",
+      "Bestie",
+      "Celestiali",
+      "Costrutti",
+      "Draghi",
+      "Elementali",
+      "Folletti",
+      "Immondi",
+      "Giganti",
+      "Melme",
+      "Mostruosità",
+      "Non morti",
+      "Piante",
+      "Umanoidi (2 razze)"
     ]
   },
   "implementazione_foundry": {
     "tipo": "feature_choice",
     "flags": {
-      "favoredEnemy": ["tipo1", "tipo2", "tipo3"]
+      "favoredEnemy": [
+        "tipo1",
+        "tipo2",
+        "tipo3"
+      ]
     }
   },
   "revisione_tasha": {
@@ -37,12 +51,21 @@
     }
   },
   "scelte_ottimali": {
-    "campagna_standard": ["Umanoidi", "Non morti", "Draghi"],
-    "brancalonia": ["Umanoidi (banditi)", "Bestie", "Non morti"]
+    "campagna_standard": [
+      "Umanoidi",
+      "Non morti",
+      "Draghi"
+    ],
+    "brancalonia": [
+      "Umanoidi (banditi)",
+      "Bestie",
+      "Non morti"
+    ]
   },
   "limitazioni": {
     "situazionale": "Inutile se nemico non presente",
     "no_combat_bonus": "No bonus danno o attacco base"
   },
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91",
+  "name": "Nemico Prescelto"
 }

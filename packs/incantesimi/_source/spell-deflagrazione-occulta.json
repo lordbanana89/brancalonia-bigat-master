@@ -13,7 +13,9 @@
   },
   "durata": "Istantanea",
   "descrizione": "Un raggio di energia crepitante sfreccia verso una creatura entro gittata. Effettua un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, il bersaglio subisce 1d10 danni da forza. L'incantesimo crea più raggi quando raggiungi livelli superiori.",
-  "classi": ["Warlock"],
+  "classi": [
+    "Warlock"
+  ],
   "raggi_per_livello": {
     "livello_1": "1 raggio",
     "livello_5": "2 raggi",
@@ -47,5 +49,6 @@
     "confronto": "Migliore cantrip damage del gioco con invocations"
   },
   "note_dm": "Eldritch Blast è IL cantrip del warlock. Con invocazioni diventa attacco base migliore di molte armi. Ogni raggio è attacco separato.",
-  "fonte": "D&D 5e PHB p.237"
+  "fonte": "D&D 5e PHB p.237",
+  "name": "Spell Deflagrazione Occulta"
 }

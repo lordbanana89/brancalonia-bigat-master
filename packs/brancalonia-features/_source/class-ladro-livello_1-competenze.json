@@ -35,7 +35,10 @@
         "choices": {
           "2": {
             "count": 2,
-            "pool": ["skills", "thieves-tools"]
+            "pool": [
+              "skills",
+              "thieves-tools"
+            ]
           }
         }
       }
@@ -46,7 +49,10 @@
         "choices": {
           "2": {
             "count": 2,
-            "pool": ["skills", "thieves-tools"]
+            "pool": [
+              "skills",
+              "thieves-tools"
+            ]
           }
         }
       }
@@ -55,15 +61,30 @@
   },
   "scelte_ottimali": {
     "infiltrator": {
-      "priorita": ["Furtività", "Arnesi da scasso", "Inganno", "Investigare"],
+      "priorita": [
+        "Furtività",
+        "Arnesi da scasso",
+        "Inganno",
+        "Investigare"
+      ],
       "build": "Specialista infiltrazione"
     },
     "face": {
-      "priorita": ["Persuasione", "Inganno", "Intuizione", "Intimidire"],
+      "priorita": [
+        "Persuasione",
+        "Inganno",
+        "Intuizione",
+        "Intimidire"
+      ],
       "build": "Volto del party"
     },
     "scout": {
-      "priorita": ["Percezione", "Furtività", "Sopravvivenza", "Investigare"],
+      "priorita": [
+        "Percezione",
+        "Furtività",
+        "Sopravvivenza",
+        "Investigare"
+      ],
       "build": "Esploratore esperto"
     }
   },
@@ -115,5 +136,6 @@
     ]
   },
   "note_dm": "Expertise rende il ladro IL specialista del party. Lascia che brilli nelle sue aree di competenza.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
+  "name": "Competenze"
 }

@@ -14,7 +14,10 @@
   },
   "durata": "Concentrazione, fino a 10 minuti",
   "descrizione": "Una creatura o un oggetto a tua scelta che puoi vedere entro gittata si alza verticalmente, fino a 20 piedi, e rimane sospeso lì per la durata. L'incantesimo può levitare un bersaglio che pesa fino a 500 libbre. Una creatura non consenziente che ha successo su un tiro salvezza su Costituzione non è influenzata. Il bersaglio può muoversi solo spingendo o tirando contro un oggetto fisso o una superficie a portata (come un muro o un soffitto), che gli permette di muoversi come se si stesse arrampicando. Puoi cambiare l'altitudine del bersaglio di fino a 20 piedi in entrambe le direzioni nel tuo turno. Se sei il bersaglio, puoi muoverti su o giù come parte del tuo movimento. Altrimenti, puoi usare la tua azione per muovere il bersaglio, che deve rimanere entro la gittata dell'incantesimo. Quando l'incantesimo termina, il bersaglio fluttua gentilmente a terra se è ancora in aria.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 2,
@@ -62,5 +65,6 @@
     "drop_damage": "Levita poi drop = 2d6/10ft"
   },
   "note_dm": "Levitate è controllo e utility. Movimento limitato lo bilancia. Gentle landing previene abusi. CON save inusuale ma sensato.",
-  "fonte": "D&D 5e PHB p.255"
+  "fonte": "D&D 5e PHB p.255",
+  "name": "Spell Levitazione"
 }

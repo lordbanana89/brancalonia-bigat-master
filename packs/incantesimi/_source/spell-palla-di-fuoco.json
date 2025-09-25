@@ -14,7 +14,10 @@
   },
   "durata": "Istantanea",
   "descrizione": "Un bagliore luminoso sfreccia dalla tua punta del dito verso un punto a tua scelta entro gittata e poi sboccia con un rombo sordo in un'esplosione di fiamme. Ogni creatura in una sfera di 20 piedi di raggio centrata su quel punto deve effettuare un tiro salvezza su Destrezza. Un bersaglio subisce 8d6 danni da fuoco con un tiro salvezza fallito, o metà danni con uno riuscito. Il fuoco si espande intorno agli angoli. Incendia oggetti infiammabili nell'area che non sono indossati o trasportati.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "scaling": {
     "slot_3": "8d6",
     "slot_4": "9d6",
@@ -70,5 +73,6 @@
     "oggetti": "Brucia tutto non indossato"
   },
   "note_dm": "Fireball è iconico e intenzionalmente overpower. 8d6 in 20ft radius è devastante. Evocation wizard lo rende sicuro per party.",
-  "fonte": "D&D 5e PHB p.241"
+  "fonte": "D&D 5e PHB p.241",
+  "name": "Spell Palla Di Fuoco"
 }

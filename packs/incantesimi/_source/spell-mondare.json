@@ -14,7 +14,10 @@
   },
   "durata": "Finché non viene dissolto",
   "descrizione": "L'incantatore tocca un punto e infonde un flusso di potere sacro (o sacrilego) in un'area del raggio massimo di 18 metri. L'incantesimo fallisce se il raggio include già un'area sotto l'effetto di un incantesimo mondare. Folletti, immondi e non morti non possono entrare nell'area e non possono affascinare, spaventare o possedere le creature all'interno dell'area. Ogni creatura affascinata, spaventata o posseduta da una creatura del genere non è più affascinata, spaventata e posseduta una volta entrata nell'area. L'incantatore può escludere uno o più tipi di creature dal subire questo effetto. Inoltre, per tutta la durata, l'incantatore può porre un effetto addizionale: ogni immondo, folletto o non morto che entra nell'area per la prima volta in un turno o che vi inizia il proprio turno deve effettuare un tiro salvezza su Carisma. Se lo fallisce, la creatura non può entrare nell'area o, nel caso vi si trovi già, deve usare il proprio movimento per lasciarla nel modo più diretto. L'area si muove con l'incantatore.",
-  "classi": ["Chierico", "Druido"],
+  "classi": [
+    "Chierico",
+    "Druido"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 3,
@@ -68,5 +71,6 @@
     "componenti_costose": "50 mo consumate"
   },
   "note_dm": "Mondare è versione Brancalonia economica di Hallow. 12 ore cast time lo rende strategico non tattico. Ottimo per basi.",
-  "fonte": "Brancalonia Macaronicon p.52"
+  "fonte": "Brancalonia Macaronicon p.52",
+  "name": "Spell Mondare"
 }

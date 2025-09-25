@@ -54,11 +54,26 @@
     }
   },
   "combinazioni_ottimali": {
-    "control_combo": ["Counterspell", "Hypnotic Pattern"],
-    "damage_combo": ["Fireball", "Lightning Bolt"],
-    "utility_combo": ["Fly", "Haste"],
-    "defense_combo": ["Counterspell", "Dispel Magic"],
-    "versatile_combo": ["Counterspell", "Fireball"]
+    "control_combo": [
+      "Counterspell",
+      "Hypnotic Pattern"
+    ],
+    "damage_combo": [
+      "Fireball",
+      "Lightning Bolt"
+    ],
+    "utility_combo": [
+      "Fly",
+      "Haste"
+    ],
+    "defense_combo": [
+      "Counterspell",
+      "Dispel Magic"
+    ],
+    "versatile_combo": [
+      "Counterspell",
+      "Fireball"
+    ]
   },
   "confronto_capstone": {
     "vs_sorcerer_restoration": "Mago spell gratis, sorc punti",
@@ -84,9 +99,16 @@
     "sostenibilità": "Regge giorni lunghi meglio"
   },
   "spell_da_evitare": {
-    "troppo_situazionali": ["Water Breathing", "Tongues"],
-    "scaling_povero": ["Vampiric Touch"],
-    "rimpiazzabili": ["Spell con versioni superiori"]
+    "troppo_situazionali": [
+      "Water Breathing",
+      "Tongues"
+    ],
+    "scaling_povero": [
+      "Vampiric Touch"
+    ],
+    "rimpiazzabili": [
+      "Spell con versioni superiori"
+    ]
   },
   "tattiche_dungeon_crawl": {
     "room_clearing": "Fireball signature per minion",
@@ -112,5 +134,6 @@
     "eredità": "Spell che passano alla storia"
   },
   "note_dm": "Signature Spells rendono il Mago 20 estremamente affidabile. Due spell di 3° sempre pronti e castabili gratis ogni short rest sono enormi. Counterspell è quasi obbligatorio.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Signature Spells"
 }

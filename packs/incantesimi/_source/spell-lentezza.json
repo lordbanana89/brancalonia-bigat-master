@@ -14,7 +14,10 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "Alteri il tempo intorno a fino a sei creature a tua scelta in un cubo di 40 piedi entro gittata. Ogni bersaglio deve superare un tiro salvezza su Saggezza o essere influenzato da questo incantesimo per la durata. Un bersaglio influenzato ha la sua velocità dimezzata, subisce una penalità di -2 alla CA e ai tiri salvezza su Destrezza, e non può usare reazioni. Nel suo turno, può usare un'azione o un'azione bonus, non entrambe. Indipendentemente dalle abilità o oggetti magici della creatura, non può effettuare più di un attacco in mischia o a distanza durante il suo turno. Se la creatura tenta di lanciare un incantesimo con tempo di lancio di 1 azione, tira un d20. Con 11 o più, l'incantesimo non ha effetto fino al prossimo turno della creatura, e la creatura deve usare la sua azione in quel turno per completare l'incantesimo. Se non può, l'incantesimo è sprecato. Una creatura influenzata da questo incantesimo effettua un altro tiro salvezza su Saggezza alla fine del suo turno. Con un successo, l'effetto termina per essa.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 3,
@@ -56,5 +59,6 @@
     "area_control": "40 ft cube enorme"
   },
   "note_dm": "Slow è uno dei migliori debuff. Colpisce tutto: movement, defense, offense, casting. 6 targets in 40ft cube è enorme.",
-  "fonte": "D&D 5e PHB p.277"
+  "fonte": "D&D 5e PHB p.277",
+  "name": "Spell Lentezza"
 }

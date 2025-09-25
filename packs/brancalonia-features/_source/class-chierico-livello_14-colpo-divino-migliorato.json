@@ -91,5 +91,6 @@
     "campione_fede": "Ogni colpo una preghiera"
   },
   "note_dm": "Il raddoppio a 2d8 al 14° rende il chierico combattente molto più minaccioso. 9 danni medi gratuiti ogni turno sono significativi nel tier 3.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58",
+  "name": "Colpo Divino Migliorato"
 }

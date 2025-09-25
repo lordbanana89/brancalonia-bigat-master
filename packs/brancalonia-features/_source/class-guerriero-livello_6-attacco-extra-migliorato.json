@@ -13,7 +13,15 @@
     },
     "frequenza": {
       "guerriero": "7 ASI totali (più di ogni classe)",
-      "livelli": [4, 6, 8, 12, 14, 16, 19]
+      "livelli": [
+        4,
+        6,
+        8,
+        12,
+        14,
+        16,
+        19
+      ]
     },
     "limite": "Max 20 per caratteristica"
   },
@@ -41,16 +49,37 @@
   },
   "scelte_comuni": {
     "strength_build": {
-      "priorità": ["STR 20", "CON 18+", "Talenti"],
-      "talenti_popolari": ["Great Weapon Master", "Polearm Master"]
+      "priorità": [
+        "STR 20",
+        "CON 18+",
+        "Talenti"
+      ],
+      "talenti_popolari": [
+        "Great Weapon Master",
+        "Polearm Master"
+      ]
     },
     "dexterity_build": {
-      "priorità": ["DEX 20", "CON 16+", "WIS 14+"],
-      "talenti_popolari": ["Sharpshooter", "Crossbow Expert"]
+      "priorità": [
+        "DEX 20",
+        "CON 16+",
+        "WIS 14+"
+      ],
+      "talenti_popolari": [
+        "Sharpshooter",
+        "Crossbow Expert"
+      ]
     },
     "tank_build": {
-      "priorità": ["CON 20", "STR/DEX 18+", "Talenti difensivi"],
-      "talenti_popolari": ["Tough", "Heavy Armor Master"]
+      "priorità": [
+        "CON 20",
+        "STR/DEX 18+",
+        "Talenti difensivi"
+      ],
+      "talenti_popolari": [
+        "Tough",
+        "Heavy Armor Master"
+      ]
     }
   },
   "calcoli_impatto": {
@@ -65,10 +94,24 @@
     }
   },
   "talenti_consigliati": {
-    "damage": ["Great Weapon Master", "Sharpshooter", "Polearm Master"],
-    "difesa": ["Heavy Armor Master", "Tough", "Shield Master"],
-    "utility": ["Alert", "Lucky", "Mobile"],
-    "brancalonia": ["Talenti del Regno specifici"]
+    "damage": [
+      "Great Weapon Master",
+      "Sharpshooter",
+      "Polearm Master"
+    ],
+    "difesa": [
+      "Heavy Armor Master",
+      "Tough",
+      "Shield Master"
+    ],
+    "utility": [
+      "Alert",
+      "Lucky",
+      "Mobile"
+    ],
+    "brancalonia": [
+      "Talenti del Regno specifici"
+    ]
   },
   "ottimizzazione": {
     "early_game": "Max stat principale",
@@ -77,5 +120,6 @@
     "multiclasse": "Considera requisiti MAD"
   },
   "note_dm": "Il guerriero ha più ASI di tutte le classi, permettendo build molto versatili o specializzate. Considera l'impatto dei talenti sulla campagna.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "name": "Attacco Extra (Migliorato)"
 }

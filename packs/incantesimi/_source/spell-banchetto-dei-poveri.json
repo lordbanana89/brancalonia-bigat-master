@@ -14,7 +14,10 @@
   },
   "durata": "Istantanea",
   "descrizione": "L'incantatore evoca un grande banchetto, a base di pasta, pizza, vino e altre pietanze tipiche della regione di appartenenza dell'incantatore. Pasteggiare al banchetto richiede 1 ora, al termine della quale il banchetto scompare; gli effetti benefici del banchetto non si applicano finché l'ora non è trascorsa. Fino a un massimo di altre dodici creature possono partecipare al banchetto. Ogni creatura che partecipa al banchetto ottiene i benefici di un riposo breve e riduce di 1 il suo livello di indebolimento.",
-  "classi": ["Chierico", "Druido"],
+  "classi": [
+    "Chierico",
+    "Druido"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 3,
@@ -64,5 +67,6 @@
     "soffritto": "Base cucina mediterranea"
   },
   "note_dm": "Banchetto dei Poveri è versione Brancalonia di Heroes' Feast. Più accessibile ma meno potente. Ottimo per recupero e flavor.",
-  "fonte": "Brancalonia Macaronicon p.50"
+  "fonte": "Brancalonia Macaronicon p.50",
+  "name": "Spell Banchetto Dei Poveri"
 }

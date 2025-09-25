@@ -11,7 +11,9 @@
   },
   "durata": "Fino a 1 minuto",
   "descrizione": "Manifesti un segno minore del potere soprannaturale entro gittata. Crei uno dei seguenti effetti magici entro gittata: La tua voce risuona fino a tre volte più forte del normale per 1 minuto. Fai tremolare fiamme, illuminare, affievolire o cambiare colore per 1 minuto. Causi tremori innocui nel terreno per 1 minuto. Crei un suono istantaneo che origina da un punto a tua scelta entro gittata. Fai sbattere improvvisamente aperta o chiusa una porta o finestra non barrata. Alteri l'aspetto dei tuoi occhi per 1 minuto. Se lanci questo incantesimo più volte, puoi avere fino a tre dei suoi effetti di 1 minuto attivi alla volta.",
-  "classi": ["Chierico"],
+  "classi": [
+    "Chierico"
+  ],
   "implementazione_foundry": {
     "tipo": "cantrip",
     "attivazione": "action",
@@ -46,5 +48,6 @@
     "Misdirection tattica"
   ],
   "note_dm": "Thaumaturgy è puro roleplay/utility. Nessun effetto meccanico diretto ma ottimo per flavor clericale e social encounters.",
-  "fonte": "D&D 5e PHB p.282"
+  "fonte": "D&D 5e PHB p.282",
+  "name": "Spell Taumaturgia"
 }

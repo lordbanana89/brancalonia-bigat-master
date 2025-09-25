@@ -66,10 +66,24 @@
     "careful_hypnotic": "Hypnotic Pattern senza colpire alleati"
   },
   "ottimizzazione": {
-    "blaster": ["Empowered", "Quickened"],
-    "controller": ["Careful", "Heightened", "Subtle"],
-    "support": ["Twinned", "Extended"],
-    "versatile": ["Quickened", "Subtle", "Twinned"]
+    "blaster": [
+      "Empowered",
+      "Quickened"
+    ],
+    "controller": [
+      "Careful",
+      "Heightened",
+      "Subtle"
+    ],
+    "support": [
+      "Twinned",
+      "Extended"
+    ],
+    "versatile": [
+      "Quickened",
+      "Subtle",
+      "Twinned"
+    ]
   },
   "calcoli_valore": {
     "quickened": {
@@ -104,5 +118,6 @@
     "quicken_leveled": "Solo 1 leveled spell per turno"
   },
   "note_dm": "Metamagia definisce il sorcerer. Quickened e Subtle possono essere molto potenti. Twin raddoppia efficienza.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.101"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.101",
+  "name": "Metamagia"
 }

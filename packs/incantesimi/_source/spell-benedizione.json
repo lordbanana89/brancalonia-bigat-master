@@ -14,7 +14,10 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "Benedici fino a tre creature a tua scelta entro gittata. Ogni volta che un bersaglio effettua un tiro per colpire o un tiro salvezza prima che l'incantesimo finisca, il bersaglio può tirare un d4 e aggiungere il numero tirato al tiro per colpire o tiro salvezza.",
-  "classi": ["Chierico", "Paladino"],
+  "classi": [
+    "Chierico",
+    "Paladino"
+  ],
   "scaling": {
     "descrizione": "+1 creatura per slot level sopra 1°",
     "slot_2": "4 creature",
@@ -60,5 +63,6 @@
     "target_caster": "Nemici focussano caster"
   },
   "note_dm": "Bless è uno dei migliori buff. +1d4 sembra poco ma su 3+ alleati per minuto è enorme value. Compete per concentration.",
-  "fonte": "D&D 5e PHB p.219"
+  "fonte": "D&D 5e PHB p.219",
+  "name": "Spell Benedizione"
 }

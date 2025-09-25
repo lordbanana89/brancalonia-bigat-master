@@ -10,7 +10,15 @@
     "costo": "1 spell slot",
     "durata": "1 minuto per livello slot",
     "range": "1 miglio (6 nel terreno prescelto)",
-    "rileva": ["Aberrazioni", "Celestiali", "Draghi", "Elementali", "Folletti", "Immondi", "Non-morti"]
+    "rileva": [
+      "Aberrazioni",
+      "Celestiali",
+      "Draghi",
+      "Elementali",
+      "Folletti",
+      "Immondi",
+      "Non-morti"
+    ]
   },
   "implementazione_foundry": {
     "tipo": "spell_like_ability",
@@ -28,5 +36,6 @@
     "sicurezza": "Verifica area sicura"
   },
   "note_dm": "Primeval Awareness è detect su scala enorme. 6 miglia nel terreno prescelto è vastissimo.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.92"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.92",
+  "name": "Consapevolezza Primordiale"
 }

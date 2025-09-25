@@ -21,10 +21,24 @@
     "effetto": "Instant destruction"
   },
   "non_morti_comuni_distrutti": {
-    "cr_1/2": ["Shadow", "Warhorse Skeleton"],
-    "cr_1": ["Ghoul", "Specter", "Skeleton Minotaur"],
-    "cr_2": ["Ghast", "Ogre Zombie", "Will-o'-Wisp"],
-    "cr_3": ["Mummy", "Wight"]
+    "cr_1/2": [
+      "Shadow",
+      "Warhorse Skeleton"
+    ],
+    "cr_1": [
+      "Ghoul",
+      "Specter",
+      "Skeleton Minotaur"
+    ],
+    "cr_2": [
+      "Ghast",
+      "Ogre Zombie",
+      "Will-o'-Wisp"
+    ],
+    "cr_3": [
+      "Mummy",
+      "Wight"
+    ]
   },
   "calcoli_impatto": {
     "minion_clearing": {
@@ -133,5 +147,6 @@
     "benedetto": "Tocco divino distrugge male"
   },
   "note_dm": "Destroy Undead trasforma Turn Undead da controllo a eliminazione. Contro orde di non-morti bassi è devastante. Bilancia encounter di conseguenza.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+  "name": "Distruggere Non Morti"
 }

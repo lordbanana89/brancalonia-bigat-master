@@ -11,7 +11,9 @@
   },
   "durata": "Concentrazione, fino a 10 minuti",
   "descrizione": "L'incantatore tocca una creatura consenziente che viene pervasa da un'aura di energia angelica e delle ali di luce si sprigionano dalla sua schiena. Finché l'incantesimo non termina, la creatura ottiene una velocità di volare di 9 metri, non può diventare malata, è dotata di resistenza ai danni da veleno e dispone di vantaggio ai tiri salvezza contro gli effetti che provocano qualsiasi condizione tra le seguenti: accecato, affascinato, assordato, avvelenato, paralizzato, spaventato e stordito.",
-  "classi": ["Chierico"],
+  "classi": [
+    "Chierico"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 3,
@@ -66,5 +68,6 @@
     "protezione": "Benedizione dei santi"
   },
   "note_dm": "Emanazione Angelica è buff potente multiuso di Brancalonia. Combina mobilità e protezione. Ali luminose hanno impatto roleplay.",
-  "fonte": "Brancalonia Macaronicon p.51"
+  "fonte": "Brancalonia Macaronicon p.51",
+  "name": "Spell Emanazione Angelica"
 }

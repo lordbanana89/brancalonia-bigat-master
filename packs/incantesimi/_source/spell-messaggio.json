@@ -14,7 +14,11 @@
   },
   "durata": "1 round",
   "descrizione": "Punti il dito verso una creatura entro gittata e sussurri un messaggio. Il bersaglio (e solo il bersaglio) sente il messaggio e può rispondere con un sussurro che solo tu puoi sentire. Puoi lanciare questo incantesimo attraverso oggetti solidi se conosci il bersaglio e sai che si trova oltre la barriera. Silenzio magico, 1 piede di pietra, 1 pollice di metallo comune, una sottile lamina di piombo o 3 piedi di legno bloccano l'incantesimo. L'incantesimo non deve seguire una linea retta e può viaggiare liberamente dietro gli angoli o attraverso aperture.",
-  "classi": ["Bardo", "Mago", "Stregone"],
+  "classi": [
+    "Bardo",
+    "Mago",
+    "Stregone"
+  ],
   "implementazione_foundry": {
     "tipo": "cantrip",
     "attivazione": "action",
@@ -43,5 +47,6 @@
     "Passare informazioni segrete"
   ],
   "note_dm": "Message è ottimo per comunicazione tattica. Non è telepathy, richiede sussurro verbale. Utile per split party.",
-  "fonte": "D&D 5e PHB p.259"
+  "fonte": "D&D 5e PHB p.259",
+  "name": "Spell Messaggio"
 }

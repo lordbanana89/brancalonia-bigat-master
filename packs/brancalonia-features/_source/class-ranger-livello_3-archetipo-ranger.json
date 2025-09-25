@@ -7,7 +7,12 @@
   "descrizione": "Al 3° livello, scegli un archetipo che emuli: Hunter, Beast Master, o altri.",
   "meccaniche": {
     "scelta_sottoclasse": true,
-    "livelli_privilegi": [3, 7, 11, 15]
+    "livelli_privilegi": [
+      3,
+      7,
+      11,
+      15
+    ]
   },
   "archetipi_principali": {
     "hunter": {
@@ -54,10 +59,18 @@
   },
   "valutazione_archetipi": {
     "tier_s": "Gloom Stalker (iniziativa e damage)",
-    "tier_a": ["Hunter (versatile)", "Swarmkeeper (controllo)"],
-    "tier_b": ["Horizon Walker", "Fey Wanderer", "Monster Slayer"],
+    "tier_a": [
+      "Hunter (versatile)",
+      "Swarmkeeper (controllo)"
+    ],
+    "tier_b": [
+      "Horizon Walker",
+      "Fey Wanderer",
+      "Monster Slayer"
+    ],
     "tier_c": "Beast Master PHB (Tasha's versione A tier)"
   },
   "note_dm": "L'archetipo definisce il ranger. Gloom Stalker domina, Hunter versatile, Beast Master richiede Tasha's fix.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.92"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.92",
+  "name": "Archetipo Ranger"
 }

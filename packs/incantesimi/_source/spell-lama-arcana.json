@@ -12,13 +12,22 @@
   },
   "durata": "1 round",
   "descrizione": "Estendi la tua mano e tracci un sigillo di protezione nell'aria. Fino alla fine del tuo prossimo turno, hai resistenza contro i danni contundenti, perforanti e taglienti inflitti da attacchi con arma.",
-  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Bardo",
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "implementazione_foundry": {
     "tipo": "cantrip",
     "attivazione": "action",
     "range": "self",
     "durata": "1 round",
-    "resistenze": ["bludgeoning", "piercing", "slashing"]
+    "resistenze": [
+      "bludgeoning",
+      "piercing",
+      "slashing"
+    ]
   },
   "analisi_problemi": {
     "action_economy": "Costa azione intera",
@@ -44,5 +53,6 @@
     "valore_azione": "Raramente vale un'azione"
   },
   "note_dm": "Blade Ward è considerato uno dei peggiori cantrip. Action economy terribile. Casi d'uso estremamente limitati.",
-  "fonte": "D&D 5e PHB p.218"
+  "fonte": "D&D 5e PHB p.218",
+  "name": "Spell Lama Arcana"
 }

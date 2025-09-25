@@ -96,5 +96,6 @@
     "multiclasse": "Conta solo livelli da guerriero"
   },
   "note_dm": "Privilegio che rende il guerriero molto autonomo. Considera che si ricarica con riposo breve quando bilanci gli incontri.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "name": "Recupero Energie"
 }

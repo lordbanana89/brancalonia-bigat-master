@@ -1,6 +1,6 @@
 {
   "id": "spell-colpo-shocking",
-  "nome": "Colpo Shocking",  
+  "nome": "Colpo Shocking",
   "nome_inglese": "Shocking Grasp",
   "livello": 0,
   "scuola": "Invocazione",
@@ -12,7 +12,10 @@
   },
   "durata": "Istantanea",
   "descrizione": "Un fulmine balza dalla tua mano per dare una scossa a una creatura che cerchi di toccare. Effettua un attacco in mischia con incantesimo contro il bersaglio. Hai vantaggio sul tiro per colpire se il bersaglio indossa armatura di metallo. Se colpisci, il bersaglio subisce 1d8 danni da fulmine e non può effettuare reazioni fino all'inizio del suo prossimo turno.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "danno_scaling": {
     "livello_1": "1d8",
     "livello_5": "2d8",
@@ -52,5 +55,6 @@
     "War Caster per opportunity attack"
   ],
   "note_dm": "Shocking Grasp è escape tool per wizard in melee. No reaction è potentissimo. Advantage vs metal armor lo rende anti-knight.",
-  "fonte": "D&D 5e PHB p.275"
+  "fonte": "D&D 5e PHB p.275",
+  "name": "Spell Colpo Shocking"
 }

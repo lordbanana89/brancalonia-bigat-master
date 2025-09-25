@@ -12,7 +12,9 @@
   },
   "durata": "Istantanea",
   "descrizione": "Effettua un attacco con incantesimo in mischia contro una creatura che puoi raggiungere. Se colpisci, il bersaglio subisce 3d10 danni necrotici.",
-  "classi": ["Chierico"],
+  "classi": [
+    "Chierico"
+  ],
   "scaling": {
     "slot_1": "3d10",
     "slot_2": "4d10",
@@ -69,5 +71,6 @@
     "danno_totale": "3d10 + 1d8+mod"
   },
   "note_dm": "Inflict Wounds è il più alto danno single-target livello 1. Touch range lo bilancia. Ottimo per cleric aggressivi.",
-  "fonte": "D&D 5e PHB p.253"
+  "fonte": "D&D 5e PHB p.253",
+  "name": "Spell Infliggi Ferite"
 }

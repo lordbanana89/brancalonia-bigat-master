@@ -7,7 +7,12 @@
   "descrizione": "Al 3° livello, scegli un archetipo che emuli nell'esercizio delle tue capacità da ladro. Il tuo archetipo ti garantisce privilegi al 3° livello e poi di nuovo al 9°, 13° e 17° livello.",
   "meccaniche": {
     "scelta": "Permanente al 3° livello",
-    "progressione_privilegi": [3, 9, 13, 17],
+    "progressione_privilegi": [
+      3,
+      9,
+      13,
+      17
+    ],
     "cambio": "Solo con DM permission e narrativa"
   },
   "archetipi_disponibili": {
@@ -66,18 +71,38 @@
   },
   "impatto_build": {
     "thief": {
-      "pro": ["Mobilità estrema", "Fast Hands versatile", "Use magic items"],
-      "contro": ["No danno extra", "No magia"],
+      "pro": [
+        "Mobilità estrema",
+        "Fast Hands versatile",
+        "Use magic items"
+      ],
+      "contro": [
+        "No danno extra",
+        "No magia"
+      ],
       "ideale": "Utility e esplorazione"
     },
     "assassin": {
-      "pro": ["Danno devastante round 1", "Infiltrazione perfetta"],
-      "contro": ["Solo forte in sorpresa", "Meno utile in combat lungo"],
+      "pro": [
+        "Danno devastante round 1",
+        "Infiltrazione perfetta"
+      ],
+      "contro": [
+        "Solo forte in sorpresa",
+        "Meno utile in combat lungo"
+      ],
       "ideale": "One-shot kills"
     },
     "arcane_trickster": {
-      "pro": ["Versatilità magica", "Invisible mage hand", "Shield spell"],
-      "contro": ["Progressione lenta spell", "MAD per INT"],
+      "pro": [
+        "Versatilità magica",
+        "Invisible mage hand",
+        "Shield spell"
+      ],
+      "contro": [
+        "Progressione lenta spell",
+        "MAD per INT"
+      ],
       "ideale": "Jack of all trades"
     }
   },
@@ -127,7 +152,9 @@
     "livello": 3,
     "scelta": {
       "type": "ItemChoice",
-      "pool": ["roguish-archetypes"]
+      "pool": [
+        "roguish-archetypes"
+      ]
     },
     "effetti": "Varia per archetipo scelto"
   },
@@ -137,5 +164,6 @@
     "versatilita": "AT più versatile, Assassin più specializzato"
   },
   "note_dm": "L'archetipo definisce completamente lo stile del ladro. Considera il tipo di campagna quando consigli archetipi.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
+  "name": "Archetipo Ladresco"
 }

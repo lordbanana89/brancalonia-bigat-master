@@ -12,7 +12,9 @@
   },
   "durata": "Istantanea",
   "descrizione": "Tocchi una creatura vivente che ha 0 punti ferita. La creatura diventa stabile. Questo incantesimo non ha effetto su non morti o costrutti.",
-  "classi": ["Chierico"],
+  "classi": [
+    "Chierico"
+  ],
   "implementazione_foundry": {
     "tipo": "cantrip",
     "attivazione": "action",
@@ -49,5 +51,6 @@
     "Un colpo li rimette dying"
   ],
   "note_dm": "Spare the Dying è situazionale ma vitale quando serve. Touch range limita in combat. Grave Domain lo rende eccellente.",
-  "fonte": "D&D 5e PHB p.277"
+  "fonte": "D&D 5e PHB p.277",
+  "name": "Spell Vita Falsata"
 }

@@ -43,7 +43,10 @@
       "flag": "flags.brancalonia.iraImplacabileCD",
       "default": 10,
       "incremento": "currentCD + 5",
-      "reset_on": ["shortRest", "longRest"]
+      "reset_on": [
+        "shortRest",
+        "longRest"
+      ]
     },
     "tiro_salvezza": {
       "formula": "1d20 + @abilities.con.save",
@@ -108,5 +111,6 @@
     "risse_estreme": "Sopravvivere a risse che vanno male",
     "leggenda": "Crea storie di Pagani 'immortali'"
   },
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
+  "name": "Ira Implacabile"
 }

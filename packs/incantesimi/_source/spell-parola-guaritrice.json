@@ -11,7 +11,11 @@
   },
   "durata": "Istantanea",
   "descrizione": "Una creatura a tua scelta che puoi vedere entro gittata recupera punti ferita pari a 1d4 + il tuo modificatore di caratteristica da incantatore. Questo incantesimo non ha effetto su non morti o costrutti.",
-  "classi": ["Bardo", "Chierico", "Druido"],
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Druido"
+  ],
   "scaling": {
     "slot_1": "1d4 + mod",
     "slot_2": "2d4 + mod",
@@ -54,5 +58,6 @@
     "svantaggio": "Non castable in silence"
   },
   "note_dm": "Healing Word è il miglior combat healing per action economy. Range + bonus action lo rende superiore a Cure Wounds in fight.",
-  "fonte": "D&D 5e PHB p.250"
+  "fonte": "D&D 5e PHB p.250",
+  "name": "Spell Parola Guaritrice"
 }

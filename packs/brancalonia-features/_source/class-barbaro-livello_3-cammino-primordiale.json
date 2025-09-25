@@ -7,7 +7,12 @@
   "descrizione": "Al 3° livello, scegli un cammino che plasma la natura della tua ira. La tua scelta ti conferisce privilegi al 3° livello e poi di nuovo al 6°, 10° e 14° livello.",
   "meccaniche": {
     "tipo_scelta": "Sottoclasse permanente",
-    "livelli_privilegi": [3, 6, 10, 14],
+    "livelli_privilegi": [
+      3,
+      6,
+      10,
+      14
+    ],
     "cambio_possibile": "Solo con consenso del DM e giustificazione narrativa"
   },
   "cammini_disponibili": {
@@ -159,5 +164,6 @@
     "totem": "cammini/totem/index.json",
     "montanaro": "cammini/montanaro/index.json"
   },
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49-50"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49-50",
+  "name": "Cammino Primordiale"
 }

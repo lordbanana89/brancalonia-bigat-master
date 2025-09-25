@@ -11,7 +11,13 @@
       "+1 a due caratteristiche",
       "1 talento"
     ],
-    "livelli_disponibili": [4, 8, 12, 16, 19],
+    "livelli_disponibili": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "limite": "Max 20 per caratteristica"
   },
   "implementazione_foundry": {
@@ -122,5 +128,6 @@
     "talenti": "Tecniche segrete scoperte"
   },
   "note_dm": "I maghi di solito massimizzano INT rapidamente (livello 8), poi si concentrano su sopravvivenza (CON/talenti difensivi). War Caster è quasi obbligatorio.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Aumento Caratteristica"
 }

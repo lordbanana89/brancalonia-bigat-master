@@ -14,7 +14,10 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "Fino a tre creature a tua scelta che puoi vedere entro gittata devono effettuare tiri salvezza su Carisma. Ogni volta che un bersaglio che fallisce questo tiro salvezza effettua un tiro per colpire o un tiro salvezza prima che l'incantesimo finisca, il bersaglio deve tirare un d4 e sottrarre il numero tirato dal tiro per colpire o tiro salvezza.",
-  "classi": ["Bardo", "Chierico"],
+  "classi": [
+    "Bardo",
+    "Chierico"
+  ],
   "scaling": {
     "descrizione": "+1 creatura per slot level sopra 1°",
     "slot_2": "4 creature",
@@ -62,5 +65,6 @@
     "Setup per hold person/monster"
   ],
   "note_dm": "Bane sottovalutato ma potente. -1d4 su nemici multipli riduce molto threat. CHA save spesso fallisce. Compete per concentration.",
-  "fonte": "D&D 5e PHB p.216"
+  "fonte": "D&D 5e PHB p.216",
+  "name": "Spell Anatema"
 }

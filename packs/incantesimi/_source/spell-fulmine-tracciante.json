@@ -12,7 +12,9 @@
   },
   "durata": "1 round",
   "descrizione": "Un lampo di luce sfreccia verso una creatura a tua scelta entro gittata. Effettua un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, il bersaglio subisce 4d6 danni radiosi, e il prossimo tiro per colpire effettuato contro questo bersaglio prima della fine del tuo prossimo turno ha vantaggio, grazie alla fioca luce mistica che brilla sul bersaglio fino ad allora.",
-  "classi": ["Chierico"],
+  "classi": [
+    "Chierico"
+  ],
   "scaling": {
     "slot_1": "4d6 radiosi",
     "slot_2": "5d6 radiosi",
@@ -58,5 +60,6 @@
     "Vantaggio sprecato se target muore"
   ],
   "note_dm": "Guiding Bolt è il miglior damage spell clerico livello 1. Vantaggio bonus è ottimo per teamwork. Range 120 eccellente.",
-  "fonte": "D&D 5e PHB p.248"
+  "fonte": "D&D 5e PHB p.248",
+  "name": "Spell Fulmine Tracciante"
 }

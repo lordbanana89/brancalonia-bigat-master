@@ -12,7 +12,11 @@
   },
   "durata": "1 round",
   "descrizione": "Crei una mano scheletrica spettrale nello spazio di una creatura entro gittata. Effettua un attacco a distanza con incantesimo contro la creatura per assalirla con il freddo della tomba. Se colpisci, il bersaglio subisce 1d8 danni necrotici e non può recuperare punti ferita fino all'inizio del tuo prossimo turno. Fino ad allora, la mano si aggrappa al bersaglio. Se colpisci un non morto, ha anche svantaggio sui tiri per colpire contro di te fino alla fine del tuo prossimo turno.",
-  "classi": ["Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "danno_scaling": {
     "livello_1": "1d8",
     "livello_5": "2d8",
@@ -26,7 +30,10 @@
     "attacco": "ranged spell",
     "danno": "1d8",
     "danno_tipo": "necrotic",
-    "effetti": ["no healing", "undead disadvantage"]
+    "effetti": [
+      "no healing",
+      "undead disadvantage"
+    ]
   },
   "meccaniche_uniche": {
     "anti_healing": "Blocca OGNI cura per 1 round",
@@ -46,5 +53,6 @@
     "necrotic": "Danni necrotici invece"
   },
   "note_dm": "Chill Touch nome sbagliato (non è freddo né touch). Anti-healing unico tra cantrip. Ottimo vs regeneration.",
-  "fonte": "D&D 5e PHB p.221"
+  "fonte": "D&D 5e PHB p.221",
+  "name": "Spell Tocco Gelido"
 }

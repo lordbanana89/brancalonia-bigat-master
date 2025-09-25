@@ -14,7 +14,12 @@
   },
   "durata": "Concentrazione, fino a 1 minuto",
   "descrizione": "Per la durata, hai vantaggio a tutte le prove di Carisma dirette verso una creatura a tua scelta che non ti è ostile. Quando l'incantesimo finisce, la creatura si rende conto che hai usato la magia per influenzare il suo umore e diventa ostile verso di te.",
-  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Bardo",
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "implementazione_foundry": {
     "tipo": "cantrip",
     "attivazione": "action",
@@ -33,5 +38,6 @@
     "reputazione": "Danneggia relazioni permanentemente"
   },
   "note_dm": "Friends è potente ma pericoloso. L'ostilità dopo è garantita. Utile solo per situazioni usa e getta.",
-  "fonte": "D&D 5e PHB p.244"
+  "fonte": "D&D 5e PHB p.244",
+  "name": "Spell Amicizia"
 }

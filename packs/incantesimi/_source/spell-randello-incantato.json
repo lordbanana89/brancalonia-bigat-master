@@ -14,7 +14,9 @@
   },
   "durata": "1 minuto",
   "descrizione": "Il legno di un bastone o quarterstaff che impugni è infuso del potere della natura. Per la durata, puoi usare la tua caratteristica da incantatore invece della Forza per i tiri per colpire e danno degli attacchi in mischia usando quell'arma, e il dado di danno dell'arma diventa un d8. L'arma diventa anche magica, se già non lo era. L'incantesimo termina se lo lanci di nuovo o se lasci andare l'arma.",
-  "classi": ["Druido"],
+  "classi": [
+    "Druido"
+  ],
   "implementazione_foundry": {
     "tipo": "cantrip",
     "attivazione": "bonus",
@@ -50,5 +52,6 @@
     "Occupa bonus action round 1"
   ],
   "note_dm": "Shillelagh trasforma druido in melee viable. Bonus action cast importante per action economy. Ottimo per druidi non-moon.",
-  "fonte": "D&D 5e PHB p.275"
+  "fonte": "D&D 5e PHB p.275",
+  "name": "Spell Randello Incantato"
 }

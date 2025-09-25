@@ -29,13 +29,50 @@
       "livello_10": 5
     },
     "slot_incantesimi": {
-      "livello_1": {"1°": 2},
-      "livello_3": {"1°": 4, "2°": 2},
-      "livello_5": {"1°": 4, "2°": 3, "3°": 2},
-      "livello_7": {"1°": 4, "2°": 3, "3°": 3, "4°": 1},
-      "livello_9": {"1°": 4, "2°": 3, "3°": 3, "4°": 2, "5°": 1},
-      "livello_11": {"1°": 4, "2°": 3, "3°": 3, "4°": 3, "5°": 2, "6°": 1},
-      "livello_20": {"1°": 4, "2°": 3, "3°": 3, "4°": 3, "5°": 3, "6°": 2, "7°": 2, "8°": 1, "9°": 1}
+      "livello_1": {
+        "1°": 2
+      },
+      "livello_3": {
+        "1°": 4,
+        "2°": 2
+      },
+      "livello_5": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 2
+      },
+      "livello_7": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 1
+      },
+      "livello_9": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 2,
+        "5°": 1
+      },
+      "livello_11": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 3,
+        "5°": 2,
+        "6°": 1
+      },
+      "livello_20": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 3,
+        "5°": 3,
+        "6°": 2,
+        "7°": 2,
+        "8°": 1,
+        "9°": 1
+      }
     }
   },
   "implementazione_foundry": {
@@ -94,11 +131,31 @@
     }
   },
   "incantesimi_iconici": {
-    "livello_1": ["Shield", "Magic Missile", "Mage Armor", "Find Familiar"],
-    "livello_3": ["Fireball", "Counterspell", "Haste"],
-    "livello_5": ["Wall of Force", "Teleportation Circle"],
-    "livello_7": ["Forcecage", "Teleport", "Simulacrum"],
-    "livello_9": ["Wish", "Time Stop", "Meteor Swarm"]
+    "livello_1": [
+      "Shield",
+      "Magic Missile",
+      "Mage Armor",
+      "Find Familiar"
+    ],
+    "livello_3": [
+      "Fireball",
+      "Counterspell",
+      "Haste"
+    ],
+    "livello_5": [
+      "Wall of Force",
+      "Teleportation Circle"
+    ],
+    "livello_7": [
+      "Forcecage",
+      "Teleport",
+      "Simulacrum"
+    ],
+    "livello_9": [
+      "Wish",
+      "Time Stop",
+      "Meteor Swarm"
+    ]
   },
   "brancalonia_flavor": {
     "libro_nome": "Grimorio del Guiscardo",
@@ -107,5 +164,6 @@
     "reputazione": "Rispettato e temuto per il sapere"
   },
   "note_dm": "Il mago è l'incantatore più versatile se ha accesso a molti incantesimi. Controlla disponibilità di spell nel mondo.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.114"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.114",
+  "name": "Incantesimi"
 }

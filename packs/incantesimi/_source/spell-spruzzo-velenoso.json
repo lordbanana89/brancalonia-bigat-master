@@ -12,7 +12,12 @@
   },
   "durata": "Istantanea",
   "descrizione": "Estendi la mano verso una creatura che puoi vedere entro gittata e proietti uno sbuffo di gas nocivo dal tuo palmo. La creatura deve superare un tiro salvezza su Costituzione o subire 1d12 danni da veleno.",
-  "classi": ["Druido", "Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Druido",
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "danno_scaling": {
     "livello_1": "1d12",
     "livello_5": "2d12",
@@ -46,5 +51,6 @@
     "Build tanky caster"
   ],
   "note_dm": "Poison Spray ha il danno più alto ma enormi limitazioni. Range 10 ft lo rende rischioso. Poison resistance/immunity molto comune.",
-  "fonte": "D&D 5e PHB p.266"
+  "fonte": "D&D 5e PHB p.266",
+  "name": "Spell Spruzzo Velenoso"
 }

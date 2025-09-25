@@ -7,7 +7,11 @@
   "descrizione": "Al 3° livello, approfondisci le tecniche avanzate di un collegio bardico a tua scelta.",
   "meccaniche": {
     "scelta_sottoclasse": true,
-    "privilegi_livelli": [3, 6, 14]
+    "privilegi_livelli": [
+      3,
+      6,
+      14
+    ]
   },
   "collegi_disponibili": {
     "lore": {
@@ -47,11 +51,21 @@
     }
   },
   "valutazione": {
-    "tier_s": ["Eloquence (social god)", "Lore (versatilità)"],
-    "tier_a": ["Swords (gish)", "Glamour (support)"],
-    "tier_b": ["Valor (tank)", "Creation (utility)"],
+    "tier_s": [
+      "Eloquence (social god)",
+      "Lore (versatilità)"
+    ],
+    "tier_a": [
+      "Swords (gish)",
+      "Glamour (support)"
+    ],
+    "tier_b": [
+      "Valor (tank)",
+      "Creation (utility)"
+    ],
     "tier_c": "Whispers (troppo situazionale)"
   },
   "note_dm": "Il collegio definisce completamente il bardo. Lore per caster puro, Swords/Valor per gish, Eloquence per sociale.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.54"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.54",
+  "name": "Collegio Bardico"
 }

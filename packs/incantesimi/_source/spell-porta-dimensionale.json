@@ -11,7 +11,12 @@
   },
   "durata": "Istantanea",
   "descrizione": "Ti teletrasporti dalla tua posizione attuale a qualsiasi altro punto entro gittata. Arrivi esattamente nel punto desiderato. Può essere un luogo che puoi vedere, uno che puoi visualizzare, o uno che puoi descrivere indicando distanza e direzione. Puoi portare oggetti con te fintanto che il loro peso non supera ciò che puoi trasportare. Puoi anche portare una creatura consenziente della tua taglia o più piccola che sta trasportando equipaggiamento fino alla sua capacità di carico. La creatura deve essere entro 5 piedi da te quando lanci questo incantesimo. Se arriveresti in un luogo già occupato da un oggetto o una creatura, tu e qualsiasi creatura che viaggia con te subite 4d6 danni da forza, e l'incantesimo fallisce nel teletrasportarvi.",
-  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "classi": [
+    "Bardo",
+    "Mago",
+    "Stregone",
+    "Warlock"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 4,
@@ -61,5 +66,6 @@
     "Arcane Eye + precise teleport"
   ],
   "note_dm": "Dimension Door è escape/infiltrazione definitiva. 500 ft copre la maggior parte delle situazioni. Solo verbale lo rende unstoppable.",
-  "fonte": "D&D 5e PHB p.233"
+  "fonte": "D&D 5e PHB p.233",
+  "name": "Spell Porta Dimensionale"
 }

@@ -14,7 +14,12 @@
   },
   "durata": "8 ore",
   "descrizione": "Tocchi una creatura consenziente per concederle la capacità di vedere al buio. Per la durata, quella creatura ha scurovisione fino a una gittata di 60 piedi.",
-  "classi": ["Druido", "Mago", "Ranger", "Stregone"],
+  "classi": [
+    "Druido",
+    "Mago",
+    "Ranger",
+    "Stregone"
+  ],
   "implementazione_foundry": {
     "tipo": "spell",
     "livello": 2,
@@ -58,5 +63,6 @@
     "differenza": "120 ft e vede tutto"
   },
   "note_dm": "Darkvision livella playing field per party miste. 8 ore senza concentrazione ottimo. Elimina necessità torce in dungeon.",
-  "fonte": "D&D 5e PHB p.230"
+  "fonte": "D&D 5e PHB p.230",
+  "name": "Spell Scurovisione"
 }

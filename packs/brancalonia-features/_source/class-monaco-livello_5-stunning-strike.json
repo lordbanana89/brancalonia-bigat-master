@@ -90,5 +90,6 @@
     ]
   },
   "note_dm": "Stunning Strike può dominare combattimenti. Nemici con CON alta o immunità sono necessari per bilanciare.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
+  "name": "Stunning Strike"
 }

@@ -12,7 +12,10 @@
   },
   "durata": "Istantanea",
   "descrizione": "Crei tre raggi di fuoco e li scagli verso bersagli entro gittata. Puoi scagliarli verso un bersaglio o diversi. Effettua un attacco a distanza con incantesimo per ogni raggio. Se colpisci, il bersaglio subisce 2d6 danni da fuoco.",
-  "classi": ["Mago", "Stregone"],
+  "classi": [
+    "Mago",
+    "Stregone"
+  ],
   "scaling": {
     "slot_2": "3 raggi",
     "slot_3": "4 raggi",
@@ -63,5 +66,6 @@
     "potent": "Affidabilità migliorata"
   },
   "note_dm": "Scorching Ray è il single-target damage di livello 2. Flessibilità bersagli ottima. Scaling lineare efficiente. Fire damage limitante.",
-  "fonte": "D&D 5e PHB p.273"
+  "fonte": "D&D 5e PHB p.273",
+  "name": "Spell Raggio Rovente"
 }

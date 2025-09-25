@@ -9,7 +9,12 @@
     "azione": "Action",
     "durata": "Fino fine prossimo turno",
     "range": "60 ft",
-    "rileva": ["Celestiali", "Demoni", "Non-morti", "Consacrato/Dissacrato"],
+    "rileva": [
+      "Celestiali",
+      "Demoni",
+      "Non-morti",
+      "Consacrato/Dissacrato"
+    ],
     "usi": "1 + CHA mod per riposo lungo"
   },
   "implementazione_foundry": {
@@ -33,5 +38,6 @@
     "esplorazione": "Evita imboscate"
   },
   "note_dm": "Divine Sense è molto specifico. Non è detect evil generico ma rileva solo tipi creature specifici.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84"
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84",
+  "name": "Senso Divino"
 }
