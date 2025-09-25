@@ -1,0 +1,69 @@
+{
+  "_id": "tradizione_mangiafuoco001",
+  "name": "Tradizione di Mangiafuoco",
+  "type": "subclass",
+  "img": "icons/magic/fire/flame-burning-creature-yellow.webp",
+  "system": {
+    "identifier": "mangiafuoco",
+    "classIdentifier": "puppeteer",
+    "description": {
+      "value": "<p>I burattinai che seguono la tradizione di Mangiafuoco sono teatranti e manipolatori che vedono le marionette come strumenti per spettacoli grandiosi e truffe elaborate. Maestri nell'arte dell'inganno e dell'intrattenimento, questi burattinai usano i Fili invisibili per far compiere alle loro creature le azioni più spettacolari.</p><p>I Mangiafuoco sono famosi per i loro spettacoli itineranti, dove mescolano magia, illusione e abilità teatrale per incantare (e spesso alleggerire le tasche) del pubblico.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "advancement": [
+      {
+        "_id": "mangiafuoco_lvl1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.mangiafuoco_maestro_teatrante",
+            "Compendium.brancalonia-bigat.brancalonia-features.mangiafuoco_fili_invisibili"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Maestro Teatrante",
+        "icon": "icons/skills/social/diplomacy-handshake-yellow.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "mangiafuoco_lvl6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.mangiafuoco_gran_teatro"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Il Gran Teatro del Mondo",
+        "icon": "icons/environment/settlement/theater-stage.webp",
+        "classRestriction": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!tradizione_mangiafuoco001"
+}

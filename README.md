@@ -4,7 +4,7 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## Versione 3.12.0 - Collegamenti Completi e Oggetti Mancanti
+## Versione 3.13.0 - Classe Burattinaio dal Macaronicon
 
 Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema D&D 5e v5.x.
 

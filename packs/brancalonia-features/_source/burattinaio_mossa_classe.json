@@ -1,0 +1,92 @@
+{
+  "_id": "burattinaio_mossa_classe",
+  "name": "Mossa di Classe: Spettacolo di Marionette",
+  "type": "feat",
+  "img": "icons/skills/social/wave-halt-stop.webp",
+  "system": {
+    "description": {
+      "value": "<p>Al 2° livello, il burattinaio sviluppa una mossa speciale da usare durante le risse.</p><h3>Spettacolo di Marionette</h3><p><strong>Azione:</strong> Il burattinaio fa esibire la sua marionetta in una performance caotica e distraente.</p><p><strong>Effetto:</strong> Tutte le creature ostili entro 4,5 metri dalla marionetta devono effettuare un tiro salvezza su Saggezza (CD = 8 + bonus competenza + modificatore di Carisma) o subire svantaggio al prossimo tiro per colpire. Inoltre, la marionetta può effettuare immediatamente un attacco come reazione.</p><p><strong>Utilizzi:</strong> Una volta per rissa.</p><p>Durante una rissa, la marionetta infligge batoste invece di danni normali (1 batosta per colpo andato a segno).</p>",
+      "richTooltip": {
+        "content": "<p>Mossa rissa: performance distraente. Nemici entro 4,5m TS Sag o svantaggio. 1/rissa.</p>",
+        "flavor": ""
+      },
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "Durante una rissa"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": 4.5,
+      "width": null,
+      "units": "m",
+      "type": "radius"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "charges",
+      "recovery": "Durante una rissa"
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": "cha",
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Burattinaio livello 2",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!burattinaio_mossa_classe"
+}

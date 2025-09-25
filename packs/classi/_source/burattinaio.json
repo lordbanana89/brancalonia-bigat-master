@@ -1,0 +1,266 @@
+{
+  "_id": "burattinaio001",
+  "name": "Burattinaio",
+  "type": "class",
+  "img": "icons/creatures/magical/construct-wood-humanoid-brown.webp",
+  "system": {
+    "identifier": "puppeteer",
+    "description": {
+      "value": "<p>Un pantegano dall'aria bonaria finisce di ritoccare le sue marionette nel fondo di una fumosa bottega. Appoggia la sua ultima creazione sul ripiano del tavolo e gli sussurra \"avanti, Gnappo, mostrami cosa sai fare!\"</p><p>Ma il Burattinaio con la B maiuscola non è un semplice falegname o imbonitore: le sue creazioni sono animate, prodigiose, a volte anche senzienti! La classe del burattinaio di Brancalonia rappresenta quegli artefici che hanno imparato come impiegare il legno turchino per le loro creazioni, e che ora usano queste ultime per spettacoli, combattimenti, loschi affari e ogni sorta di imprese furfantesche!</p><h2>Privilegi di Classe</h2><p><strong>Punti Ferita</strong></p><ul><li><strong>Dadi Vita:</strong> 1d8 per ogni livello da burattinaio</li><li><strong>Punti Ferita al 1° Livello:</strong> 8 + modificatore di Costituzione</li><li><strong>Punti Ferita ai Livelli Successivi:</strong> 1d8 (o 5) + modificatore di Costituzione</li></ul><p><strong>Competenze</strong></p><ul><li><strong>Armature:</strong> Armature leggere</li><li><strong>Armi:</strong> Armi semplici</li><li><strong>Strumenti:</strong> Strumenti da Costruttore, Strumenti da Intagliatore, Strumenti da Inventore</li><li><strong>Tiri Salvezza:</strong> Destrezza, Intelligenza</li><li><strong>Abilità:</strong> Due a scelta tra Arcano, Inganno, Intrattenere, Persuasione, Rapidità di Mano e Storia</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "levels": 1,
+    "hitDice": "d8",
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "burattinaio_hp",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "level": 1,
+        "title": "Punti Ferita",
+        "icon": "icons/magic/life/heart-cross-red.webp"
+      },
+      {
+        "_id": "burattinaio_saves",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": ["dex", "int"],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Tiri Salvezza",
+        "icon": "icons/magic/defensive/shield-barrier-blue.webp"
+      },
+      {
+        "_id": "burattinaio_skills",
+        "type": "Trait",
+        "configuration": {
+          "mode": "choose",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": ["arc", "dec", "prf", "per", "sle", "his"]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Abilità",
+        "icon": "icons/sundries/books/book-red-exclamation.webp"
+      },
+      {
+        "_id": "burattinaio_armor",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": ["lgt"],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Competenza Armature",
+        "icon": "icons/equipment/chest/breastplate-leather-brown.webp"
+      },
+      {
+        "_id": "burattinaio_weapons",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": ["sim"],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Competenza Armi",
+        "icon": "icons/weapons/daggers/dagger-straight-blue.webp"
+      },
+      {
+        "_id": "burattinaio_tools",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": ["carpenter", "woodcarver", "tinker"],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Competenza Strumenti",
+        "icon": "icons/tools/hand/hammer-and-nail.webp"
+      },
+      {
+        "_id": "burattinaio_marionetta",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.burattinaio_marionetta_compagna"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Marionetta Compagna",
+        "icon": "icons/creatures/magical/construct-wood-humanoid-brown.webp"
+      },
+      {
+        "_id": "burattinaio_tradizione",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "1": {
+              "label": "Tradizione del Burattinaio",
+              "items": [
+                "Compendium.brancalonia-bigat.sottoclassi.tradizione_geppetto",
+                "Compendium.brancalonia-bigat.sottoclassi.tradizione_mangiafuoco"
+              ]
+            }
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "level": 1,
+        "title": "Tradizione del Burattinaio"
+      },
+      {
+        "_id": "burattinaio_teatro",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.burattinaio_teatro_fandonia"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Teatro di Fandonia",
+        "icon": "icons/environment/settlement/theater.webp"
+      },
+      {
+        "_id": "burattinaio_mossa",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.burattinaio_mossa_classe"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Mossa di Classe",
+        "icon": "icons/skills/melee/strike-punch-fist.webp"
+      },
+      {
+        "_id": "burattinaio_asi4",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "burattinaio_arte",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.burattinaio_arte_messa_scena"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "L'Arte della Messa in Scena",
+        "icon": "icons/skills/social/diplomacy-handshake-yellow.webp"
+      },
+      {
+        "_id": "burattinaio_tradizione6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Privilegio della Tradizione",
+        "icon": "icons/magic/symbols/runes-star-yellow.webp"
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    },
+    "startingEquipment": [
+      {
+        "_id": "burattinaio_eq1",
+        "type": "linked",
+        "linkedId": "Compendium.dnd5e.items.Item.M1zwGNekLVUCyXlV",
+        "img": "icons/weapons/crossbows/crossbow-simple-brown.webp",
+        "count": 1,
+        "name": "Balestra leggera"
+      },
+      {
+        "_id": "burattinaio_eq2",
+        "type": "linked",
+        "linkedId": "Compendium.dnd5e.items.Item.zgrsNWsFP8VwRDiV",
+        "img": "icons/weapons/ammunition/bolts-crossbow-yellow.webp",
+        "count": 20,
+        "name": "Quadrelli"
+      },
+      {
+        "_id": "burattinaio_eq3",
+        "type": "linked",
+        "linkedId": "Compendium.dnd5e.items.Item.6HEHhPBc9mjx8qKJ",
+        "img": "icons/tools/navigation/map-marked-blue.webp",
+        "count": 1,
+        "name": "Strumenti da Intagliatore"
+      }
+    ],
+    "saves": {
+      "dex": 1,
+      "int": 1
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!burattinaio001"
+}

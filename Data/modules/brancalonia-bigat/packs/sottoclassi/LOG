@@ -1,0 +1,5 @@
+2025/09/25-10:14:29.273473 16f0d3000 Delete type=3 #1
+2025/09/25-10:14:29.275276 16f96b000 Level-0 table #5: started
+2025/09/25-10:14:29.275613 16f96b000 Level-0 table #5: 9279 bytes OK
+2025/09/25-10:14:29.275701 16f96b000 Delete type=0 #3
+2025/09/25-10:14:29.275770 16f96b000 Manual compaction at level-0 from '!items!arlecchino001' @ 72057594037927935 : 1 .. '!items!tradizione_mangiafuoco001' @ 0 : 0; will stop at (end)

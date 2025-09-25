@@ -1,0 +1,92 @@
+{
+  "_id": "burattinaio_marionetta_compagna",
+  "name": "Marionetta Compagna",
+  "type": "feat",
+  "img": "icons/creatures/magical/construct-wood-humanoid-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Al 1° livello, il burattinaio possiede una marionetta magica che obbedisce ai suoi comandi. La marionetta è un costrutto di taglia Piccola che può assumere diverse forme.</p><h3>Statistiche della Marionetta</h3><ul><li><strong>Classe Armatura:</strong> 11 + bonus di competenza del burattinaio</li><li><strong>Punti Ferita:</strong> 5 + modificatore di Intelligenza del burattinaio + (livello del burattinaio × 5)</li><li><strong>Velocità:</strong> 9 metri</li><li><strong>Immunità:</strong> Veleno, charme, paura, paralisi</li></ul><h3>Azioni della Marionetta</h3><p>Durante il turno del burattinaio, può usare un'azione bonus per comandare alla marionetta di:</p><ul><li>Muoversi fino alla sua velocità</li><li>Effettuare un'azione tra: Attacco, Aiuto, Schivata, Scatto o Nascondersi</li><li>Interagire con un oggetto</li></ul><p>Se il burattinaio è incapacitato o assente, la marionetta non può agire e rimane immobile.</p><h3>Riparazione</h3><p>Se la marionetta viene distrutta, il burattinaio può ricostruirla durante un riposo lungo spendendo 25 mo in materiali.</p>",
+      "richTooltip": {
+        "content": "<p>Marionetta magica che obbedisce ai comandi del burattinaio. CA 11+prof, PF 5+Int+(liv×5).</p>",
+        "flavor": ""
+      },
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Burattinaio livello 1",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!burattinaio_marionetta_compagna"
+}

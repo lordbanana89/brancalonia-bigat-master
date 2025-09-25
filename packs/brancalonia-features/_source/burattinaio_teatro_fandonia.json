@@ -1,0 +1,92 @@
+{
+  "_id": "burattinaio_teatro_fandonia",
+  "name": "Teatro di Fandonia",
+  "type": "feat",
+  "img": "icons/environment/settlement/theater-curtains-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Al 1° livello, il burattinaio impara a creare un piccolo teatro portatile magico.</p><p>Una volta per riposo lungo, può spendere 10 minuti per allestire il suo Teatro di Fandonia in uno spazio di 3×3 metri. Il teatro rimane attivo per 1 ora e fornisce i seguenti benefici:</p><ul><li>Le creature amichevoli entro 9 metri dal teatro hanno vantaggio alle prove di Intrattenere</li><li>Il burattinaio può usare un'azione per far esibire la sua marionetta, costringendo fino a 6 creature che possono vederla a effettuare un tiro salvezza su Saggezza (CD = 8 + bonus competenza + modificatore di Carisma). Chi fallisce è affascinato dalla marionetta per 1 minuto</li><li>Durante uno spettacolo, il burattinaio può tentare di guadagnare monete: tira 1d6 + modificatore di Carisma, il risultato indica i mo guadagnati</li></ul><p>Il teatro scompare se il burattinaio si allontana più di 30 metri o se viene dissipato come azione.</p>",
+      "richTooltip": {
+        "content": "<p>Teatro magico portatile. 1/riposo lungo, dura 1 ora. Vantaggio a Intrattenere, può affascinare il pubblico.</p>",
+        "flavor": ""
+      },
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon",
+    "activation": {
+      "type": "minute",
+      "cost": 10,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "value": 3,
+      "width": 3,
+      "units": "m",
+      "type": "square"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": "cha",
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "1d6 + @mod",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Burattinaio livello 1",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!burattinaio_teatro_fandonia"
+}
