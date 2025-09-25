@@ -115,7 +115,14 @@
   "ownership": {
     "default": 0
   },
-  "flags": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "relatedRules": [
+        "armiDaFuocoPrimitive001",
+        "equipaggiamentoScadente001"
+      ]
+    }
+  },
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.3.1",

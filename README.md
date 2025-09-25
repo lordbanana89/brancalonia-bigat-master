@@ -4,7 +4,7 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## Versione 3.4.0 - Condizioni Custom e Bug Fix
+## Versione 3.11.5 - Sistema Tooltip Avanzato e Collegamenti Interattivi
 
 Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema D&D 5e v5.x.
 
@@ -29,13 +29,19 @@ Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema 
 - **Sistema Equitaglia**: Gestione taglie e malefatte con bounty hunter
 - **Rischi del Mestiere**: 23 eventi casuali per lavori sporchi
 
-#### 🆕 Condizioni Custom (v3.4.0)
+#### 🆕 Sistema Avanzato Tooltip e Collegamenti (v3.11.5)
+- **Sistema Tooltip Completo**: Fix definitivo per tooltip D&D 5e con oggetti Brancalonia
+- **Collegamenti Interattivi**: Link diretti tra regole e oggetti nei compendi
+- **Chat Interattiva**: Sistema di riferimenti nelle chat per regole e oggetti
+- **Armi da Fuoco**: Aggiunte Pistola scadente e Moschetto arrugginito
+
+#### Condizioni Custom
 - **Menagramo**: Maledizione con svantaggi e -2 CA
 - **Ubriaco**: Modifiche alle caratteristiche (+2 Car, -2 Des/Sag)
 - **Batosta**: Sistema contatore per risse (KO a 3 batoste)
 - **Incapacitato**: Impedisce azioni, reazioni e movimento
 
-#### 📊 Contenuti (234 elementi totali)
+#### 📊 Contenuti (oltre 300 elementi totali)
 - **12 Stirpi/Razze** complete
 - **6 Background** di Brancalonia
 - **75 Privilegi** (features)
@@ -46,8 +52,8 @@ Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema 
 - **12 Incantesimi** specifici
 - **8 PNG** di Brancalonia
 - **15 Regole** (journal entries)
-- **31 Tabelle Casuali**
-- **5 Macro** automatiche
+- **310 Tabelle Casuali**
+- **Macro** automatiche e interattive
 
 ### 📦 Installazione
 
@@ -141,15 +147,38 @@ Accedi alle impostazioni del modulo da **Configurazione** → **Impostazioni Mod
 - ✅ **Active Effects** standard V13
 - ✅ **Advancement API** per progressione personaggi
 
-### 📋 Changelog v3.4.0
+### 📋 Changelog
 
-#### Nuove Funzionalità
-- Implementate 4 condizioni custom con icone SVG dedicate
+#### v3.11.5 - Sistema Tooltip e Collegamenti (Settembre 2025)
+##### Nuove Funzionalità
+- Sistema tooltip avanzato con recupero automatico documenti da UUID
+- Collegamenti interattivi tra compendi e regole
+- Sistema chat con riferimenti agli oggetti
+- Aggiunte 2 nuove armi da fuoco: Pistola scadente e Moschetto arrugginito
+- 75 nuovi privilegi nel compendio brancalonia-features
+
+##### Bug Fix Critici
+- Risolto definitivamente errore "Cannot read properties of null (reading 'richTooltip')"
+- Fix override `_onHoverContentLink` con parametro corretto (doc, non event)
+- Rimossi tutti i warning per tooltip senza documento
+
+#### v3.6.x - v3.10.x - Miglioramenti Progressivi
+- Sistema completo di collegamenti tra compendi
+- Pulizia emoji e formattazione regole
+- Conversione database da LevelDB a NeDB per Journal Entry
+- Fix pagine vuote nei compendi regole
+- Aggiornamento hook deprecati (`renderChatMessage`)
+- Correzione errori `enrichHTML.replace is not a function`
+- Implementazione CSS medievale per regole
+
+#### v3.5.0 - Sistema Equitaglia e Rischi (Precedente)
 - Sistema completo Equitaglia per taglie e malefatte
 - Sistema Rischi del Mestiere con 23 eventi casuali
-- Active Effects automatici per tutte le condizioni
+- UI dedicata per Equitaglia nell'actor sheet
 
-#### Bug Fix
+#### v3.4.0 - Condizioni Custom (Documentata)
+- Implementate 4 condizioni custom con icone SVG dedicate
+- Active Effects automatici per tutte le condizioni
 - Corretto errore "Invalid status ID" per condizioni custom
 - Risolto problema deprecazione `icon` → `img` per ActiveEffect
 - Sistemato async/await per Roll.evaluate() in v13
@@ -419,8 +448,20 @@ Verifica che tutti i documenti nei database abbiano il campo `_key`
 #### add-richtooltip.js
 Aggiunge la struttura richTooltip a tutti gli item per compatibilità con D&D 5e v3.3+
 
+#### clean-rules-emoji.py
+Rimuove emoji e pulisce la formattazione dalle regole per compatibilità v13
+
+#### link-items-in-rules.js
+Crea collegamenti automatici tra regole e oggetti nei compendi (294 righe)
+
+#### map-content-links.js
+Mappa tutti i collegamenti tra contenuti per il sistema interattivo (188 righe)
+
+#### remove-h1-titles.py
+Rimuove titoli H1 duplicati dalle regole per formattazione pulita
+
 ---
 
-**Versione**: 3.4.0
+**Versione**: 3.11.5
 **Compatibilità**: Foundry VTT v13.0.0+ | D&D 5e v5.0.0+
 **Ultimo Aggiornamento**: Settembre 2025
