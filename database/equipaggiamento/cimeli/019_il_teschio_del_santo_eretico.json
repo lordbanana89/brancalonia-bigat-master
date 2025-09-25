@@ -1,0 +1,16 @@
+{
+  "id": "019",
+  "nome": "Il Teschio del Santo Eretico",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Teschio umano con aureola dipinta",
+  "proprieta": "Protegge da possessione e controllo mentale in 3m",
+  "valore": "400 mo",
+  "storia": "Santo scomunicato per aver dubitato del Papa",
+  "controindicazione": "I chierici lo considerano blasfemo",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

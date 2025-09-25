@@ -1,0 +1,17 @@
+{
+  "totale": 2,
+  "tratti": [
+    {
+      "id": "race-umano-tratto-adattabile",
+      "nome": "Adattabile",
+      "categoria": "brancalonia",
+      "file": "tratto-002_adattabile.json"
+    },
+    {
+      "id": "race-umano-tratto-privilegio_da_rissa",
+      "nome": "Privilegio Da Rissa",
+      "categoria": "brancalonia",
+      "file": "tratto-001_privilegio_da_rissa.json"
+    }
+  ]
+}

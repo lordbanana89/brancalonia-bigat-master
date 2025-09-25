@@ -1,0 +1,159 @@
+{
+  "_id": "spellbollodiqualitadf8a69",
+  "_key": "!item!spellbollodiqualitadf8a69",
+  "name": "Bollo di Qualità",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>L'incantatore tocca un oggetto o una creatura di qualità scadente e, finché l'incantesimo non termina, il bersaglio perde la qualità scadente.</p><h3>Ai Livelli Superiori</h3><p>Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 3° livello, la durata aumenta a 8 ore.</p><h3>Utilizzi Tipici</h3><ul><li>Rendere utilizzabile equipaggiamento scarso</li><li>Preparare armi per battaglia importante</li><li>Vendere oggetti a prezzo pieno temporaneamente</li><li>Impressionare con equipaggiamento 'migliore'</li><li>Superare prove con strumenti scadenti</li></ul><h3>Note per il DM</h3><p><em>Bollo di Qualità è spell unico di Brancalonia che riflette l'economia povera del setting. Utile per superare limitazioni equipment scadente.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.51",
+    "level": 1,
+    "school": "trs",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "6brnegp9dfd",
+      "name": "Bollo di Qualità",
+      "icon": "icons/magic/symbols/rune-sigil-red.webp",
+      "origin": null,
+      "transfer": true,
+      "duration": {
+        "startTime": null,
+        "seconds": 3600,
+        "turns": null
+      },
+      "disabled": false,
+      "changes": [
+        {
+          "key": "flags.brancalonia.qualita_scadente",
+          "mode": 5,
+          "value": "false",
+          "priority": 20
+        }
+      ]
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-bollo-di-qualita",
+      "fonte": "Brancalonia Macaronicon p.51",
+      "meccaniche": {
+        "qualita_scadente": "Rimuove temporaneamente",
+        "oggetti": "Armi, armature, strumenti",
+        "creature": "Anche creature scadenti",
+        "bonus_action": "Non usa azione principale"
+      },
+      "qualita_scadente": {
+        "armi": "-1 attacco/danno normalmente",
+        "armature": "-1 AC normalmente",
+        "strumenti": "Svantaggio alle prove",
+        "con_bollo": "Funzionano normalmente"
+      },
+      "utilizzi": [
+        "Rendere utilizzabile equipaggiamento scarso",
+        "Preparare armi per battaglia importante",
+        "Vendere oggetti a prezzo pieno temporaneamente",
+        "Impressionare con equipaggiamento 'migliore'",
+        "Superare prove con strumenti scadenti"
+      ],
+      "note_dm": "Bollo di Qualità è spell unico di Brancalonia che riflette l'economia povera del setting. Utile per superare limitazioni equipment scadente.",
+      "flavor": {
+        "certificazione": "Come marchio CE magico",
+        "contraffazione": "Migliora temporaneamente",
+        "economia_povera": "Riflette setting povero",
+        "creativita": "Soluzioni arrangiate"
+      },
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "attivazione": "bonus",
+        "range": "touch",
+        "durata": "1 hour"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Trasmutazione",
+        "level": 1
+      }
+    }
+  }
+}

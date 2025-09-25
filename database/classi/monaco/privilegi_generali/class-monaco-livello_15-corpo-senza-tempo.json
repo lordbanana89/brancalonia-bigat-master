@@ -1,0 +1,26 @@
+{
+  "id": "class-monaco-livello_15-corpo-senza-tempo",
+  "nome": "Corpo Senza Tempo",
+  "nome_brancalonia": "Eternità della Carne",
+  "livello": 15,
+  "tipo": "passivo",
+  "descrizione": "Al 15° livello, il tuo ki ti sostiene così che non subisci le fragilità della vecchiaia e non puoi essere invecchiato magicamente. Puoi ancora morire di vecchiaia, tuttavia. Inoltre, non hai più bisogno di cibo o acqua.",
+  "meccaniche": {
+    "no_aging_penalties": "Nessun malus da età",
+    "immune_magical_aging": "Ghost, Time effects",
+    "no_food_water": "Sostentamento dal ki"
+  },
+  "implementazione_foundry": {
+    "tipo": "immunity",
+    "aging_immunity": true,
+    "sustenance": "none_required"
+  },
+  "vantaggi": {
+    "esplorazione": "Viaggi senza provviste",
+    "sopravvivenza": "Immune a fame/sete",
+    "prigione": "Non può essere affamato",
+    "longevità": "Vive al massimo potenziale"
+  },
+  "note_dm": "Timeless Body è principalmente flavor ma ha applicazioni pratiche in survival e contro aging attacks.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79"
+}

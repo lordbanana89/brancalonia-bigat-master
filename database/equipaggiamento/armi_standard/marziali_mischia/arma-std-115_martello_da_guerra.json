@@ -1,0 +1,20 @@
+{
+  "id": "arma-std-115",
+  "nome": "Martello da Guerra",
+  "categoria": "arma_standard",
+  "tipo": "marziale_mischia",
+  "costo": "15 mo",
+  "danni": "1d8 contundenti",
+  "proprieta": [
+    "Versatile (1d10)"
+  ],
+  "peso": "0.9 kg",
+  "descrizione": "Martello pesante con due teste contrapposte.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

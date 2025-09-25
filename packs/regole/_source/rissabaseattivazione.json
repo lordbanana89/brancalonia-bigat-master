@@ -1,0 +1,19 @@
+{
+  "_id": "rissabaseattivazione",
+  "_key": "!journal!rissabaseattivazione",
+  "name": "attivazione",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-base-attivazione",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "JournalEntry"
+}

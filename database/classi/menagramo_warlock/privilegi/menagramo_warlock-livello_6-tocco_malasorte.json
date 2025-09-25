@@ -1,0 +1,15 @@
+{
+  "id": "menagramo_warlock-livello_6-tocco_malasorte",
+  "livello": 6,
+  "nome": "tocco_malasorte",
+  "tipo": "attivo",
+  "descrizione": "Area 6m: tutte le creature (tranne warlock) hanno svantaggio ad attacchi/prove/TS per CAR mod round. Dopo l'uso, warlock a 0 PF",
+  "implementazione": {
+    "aura_sfortuna": "flags.brancalonia-bigat.toccoMalasorte = true",
+    "durata": "flags.brancalonia-bigat.malaforteDuration = '@abilities.cha.mod'"
+  },
+  "mode": 5,
+  "raggio": "6 metri",
+  "conseguenza": "Warlock scende a 0 PF quando termina",
+  "usi": "1/riposo lungo"
+}

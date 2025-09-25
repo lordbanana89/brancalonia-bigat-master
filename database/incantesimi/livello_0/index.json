@@ -1,0 +1,136 @@
+{
+  "livello": "0",
+  "totale": 26,
+  "incantesimi": [
+    {
+      "nome": "Amicizia",
+      "scuola": "Ammaliamento",
+      "file": "spell-amicizia.json"
+    },
+    {
+      "nome": "Artificio Druidico",
+      "scuola": "Trasmutazione",
+      "file": "spell-artificio-druidico.json"
+    },
+    {
+      "nome": "Beffa Crudele",
+      "scuola": "Ammaliamento",
+      "file": "spell-beffa-crudele.json"
+    },
+    {
+      "nome": "Colpo Accurato",
+      "scuola": "Divinazione",
+      "file": "spell-colpo-accurato.json"
+    },
+    {
+      "nome": "Colpo Shocking",
+      "scuola": "Invocazione",
+      "file": "spell-colpo-shocking.json"
+    },
+    {
+      "nome": "Dardo di Fuoco",
+      "scuola": "Invocazione",
+      "file": "spell-dardo-di-fuoco.json"
+    },
+    {
+      "nome": "Deflagrazione Occulta",
+      "scuola": "Invocazione",
+      "file": "spell-deflagrazione-occulta.json"
+    },
+    {
+      "nome": "Fiotto Acido",
+      "scuola": "Evocazione",
+      "file": "spell-fiotto-acido.json"
+    },
+    {
+      "nome": "Guida",
+      "scuola": "Divinazione",
+      "file": "spell-guida.json"
+    },
+    {
+      "nome": "Illusione Minore",
+      "scuola": "Illusione",
+      "file": "spell-illusione-minore.json"
+    },
+    {
+      "nome": "Lama Arcana",
+      "scuola": "Abiurazione",
+      "file": "spell-lama-arcana.json"
+    },
+    {
+      "nome": "Luce",
+      "scuola": "Invocazione",
+      "file": "spell-luce.json"
+    },
+    {
+      "nome": "Mano Magica",
+      "scuola": "Evocazione",
+      "file": "spell-mano-magica.json"
+    },
+    {
+      "nome": "Messaggio",
+      "scuola": "Trasmutazione",
+      "file": "spell-messaggio.json"
+    },
+    {
+      "nome": "Prestidigitazione",
+      "scuola": "Trasmutazione",
+      "file": "spell-prestidigitazione.json"
+    },
+    {
+      "nome": "Produrre Fiamma",
+      "scuola": "Evocazione",
+      "file": "spell-produrre-fiamma.json"
+    },
+    {
+      "nome": "Raggio di Gelo",
+      "scuola": "Invocazione",
+      "file": "spell-raggio-di-gelo.json"
+    },
+    {
+      "nome": "Randello Incantato",
+      "scuola": "Trasmutazione",
+      "file": "spell-randello-incantato.json"
+    },
+    {
+      "nome": "Resistenza",
+      "scuola": "Abiurazione",
+      "file": "spell-resistenza.json"
+    },
+    {
+      "nome": "Riparare",
+      "scuola": "Trasmutazione",
+      "file": "spell-riparare.json"
+    },
+    {
+      "nome": "Sacra Fiamma",
+      "scuola": "Invocazione",
+      "file": "spell-sacra-fiamma.json"
+    },
+    {
+      "nome": "Spruzzo Velenoso",
+      "scuola": "Evocazione",
+      "file": "spell-spruzzo-velenoso.json"
+    },
+    {
+      "nome": "Taumaturgia",
+      "scuola": "Trasmutazione",
+      "file": "spell-taumaturgia.json"
+    },
+    {
+      "nome": "Tocco Gelido",
+      "scuola": "Necromanzia",
+      "file": "spell-tocco-gelido.json"
+    },
+    {
+      "nome": "Trucchetto della Mano",
+      "scuola": "Evocazione",
+      "file": "spell-trucchetto-della-mano.json"
+    },
+    {
+      "nome": "Vita Falsata",
+      "scuola": "Necromanzia",
+      "file": "spell-vita-falsata.json"
+    }
+  ]
+}

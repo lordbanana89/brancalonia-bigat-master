@@ -1,0 +1,115 @@
+{
+  "_id": "spellbenedizione27f52c",
+  "_key": "!item!spellbenedizione27f52c",
+  "name": "Benedizione",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Benedici fino a tre creature a tua scelta entro gittata. Ogni volta che un bersaglio effettua un tiro per colpire o un tiro salvezza prima che l'incantesimo finisca, il bersaglio può tirare un d4 e aggiungere il numero tirato al tiro per colpire o tiro salvezza.</p><h3>Note per il DM</h3><p><em>Bless è uno dei migliori buff. +1d4 sembra poco ma su 3+ alleati per minuto è enorme value. Compete per concentration.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.219",
+    "level": 1,
+    "school": "enc",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-benedizione",
+      "fonte": "D&D 5e PHB p.219",
+      "note_dm": "Bless è uno dei migliori buff. +1d4 sembra poco ma su 3+ alleati per minuto è enorme value. Compete per concentration.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "attivazione": "action",
+        "range": 30,
+        "bersagli": 3,
+        "durata": "1 minute",
+        "concentrazione": true,
+        "bonus": "1d4 to attacks and saves"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Ammaliamento",
+        "level": 1
+      }
+    }
+  }
+}

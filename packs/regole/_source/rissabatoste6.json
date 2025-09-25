@@ -1,0 +1,19 @@
+{
+  "_id": "rissabatoste6",
+  "_key": "!journal!rissabatoste6",
+  "name": "All'Ospedale",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-batoste-6",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "JournalEntry"
+}

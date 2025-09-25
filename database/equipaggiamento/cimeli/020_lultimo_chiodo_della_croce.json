@@ -1,0 +1,16 @@
+{
+  "id": "020",
+  "nome": "L'Ultimo Chiodo della Croce",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Chiodo arrugginito lungo 15cm",
+  "proprieta": "Danni x2 contro demoni e non morti",
+  "valore": "1500 mo",
+  "storia": "Si dice sia un vero chiodo della Crocifissione",
+  "attivazione": "Deve essere conficcato nell'arma",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

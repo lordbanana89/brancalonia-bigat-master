@@ -1,0 +1,21 @@
+{
+  "id": "mac-spell-008",
+  "livello": 2,
+  "nome": "Confessione Forzata",
+  "scuola": "Ammaliamento",
+  "tempo_lancio": "1 azione",
+  "gittata": "9 metri",
+  "componenti": "V, S, M (simbolo sacro)",
+  "durata": "Concentrazione, fino a 1 minuto",
+  "descrizione": "Il bersaglio deve fare TS Saggezza o non può mentire. Può rifiutarsi di rispondere ma non può dire bugie.",
+  "classi": [
+    "Chierico",
+    "Paladino"
+  ],
+  "rituale": false,
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

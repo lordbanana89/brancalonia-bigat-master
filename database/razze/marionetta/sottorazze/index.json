@@ -1,0 +1,15 @@
+{
+  "totale": 2,
+  "sottorazze": [
+    {
+      "id": "race-marionetta-sottorazza-pinocchio",
+      "nome": "Pinocchio",
+      "file": "sottorazza-pinocchio.json"
+    },
+    {
+      "id": "race-marionetta-sottorazza-pupo",
+      "nome": "Pupo",
+      "file": "sottorazza-pupo.json"
+    }
+  ]
+}

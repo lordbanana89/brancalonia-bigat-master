@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-017",
+  "nome": "Tamburo del Cantastorie",
+  "rarita": "Non comune",
+  "tipo": "Oggetto meraviglioso",
+  "sintonia": "Sì (bardo)",
+  "descrizione": "Tamburo che amplifica le storie",
+  "proprieta": [
+    "Doppio raggio per Ispirazione Bardica",
+    "Vantaggio a Intrattenere",
+    "1 volta al giorno: affascinare pubblico (TS Saggezza CD 15)"
+  ],
+  "effetti_speciali": {
+    "maledizione": null,
+    "note": null,
+    "restrizione": null,
+    "rischio": null,
+    "effetto_collaterale": null,
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "036",
+  "nome": "Il Tamburo di Guerra Silenzioso",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Tamburo che non emette suono",
+  "proprieta": "Il suo ritmo si sente solo nella mente, coordina perfettamente le truppe",
+  "valore": "750 mo",
+  "storia": "Il tamburino continuò a suonare anche da morto",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

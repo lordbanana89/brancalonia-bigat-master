@@ -1,0 +1,16 @@
+{
+  "id": "043",
+  "nome": "Il Dado del Destino",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Dado a 20 facce di ossidiana",
+  "proprieta": "Una volta nella vita, puoi decidere il risultato prima di tirare",
+  "valore": "2000 mo",
+  "storia": "Il Fato stesso lo perse giocando",
+  "limite": "Dopo l'uso diventa un normale dado",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

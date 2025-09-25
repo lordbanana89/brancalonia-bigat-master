@@ -1,0 +1,16 @@
+{
+  "id": "gear-cloth-002",
+  "nome": "Abito da Viaggio",
+  "categoria": "oggetto_comune",
+  "sottotipo": "abbigliamento",
+  "costo": "2 mo",
+  "peso": "2 kg",
+  "descrizione": "Vestiario resistente con cappuccio e mantello cerato per lunghi viaggi.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

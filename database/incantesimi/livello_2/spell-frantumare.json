@@ -1,0 +1,68 @@
+{
+  "id": "spell-frantumare",
+  "nome": "Frantumare",
+  "nome_inglese": "Shatter",
+  "livello": 2,
+  "scuola": "Invocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "60 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Una scheggia di mica"
+  },
+  "durata": "Istantanea",
+  "descrizione": "Un rumore improvvisamente intenso e dolorosamente acuto squarcia da un punto a tua scelta entro gittata. Ogni creatura in una sfera di 10 piedi di raggio centrata su quel punto deve effettuare un tiro salvezza su Costituzione. Una creatura subisce 3d8 danni da tuono con un tiro salvezza fallito, o metà danni con uno riuscito. Una creatura fatta di materiale inorganico come pietra, cristallo o metallo ha svantaggio su questo tiro salvezza. Un oggetto non magico che non è indossato o trasportato subisce anche il danno se è nell'area dell'incantesimo.",
+  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "scaling": {
+    "slot_2": "3d8",
+    "slot_3": "4d8",
+    "slot_4": "5d8",
+    "slot_5": "6d8",
+    "slot_6": "7d8"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 2,
+    "attivazione": "action",
+    "range": 60,
+    "area": "10 ft radius sphere",
+    "save": "constitution",
+    "danno": "3d8",
+    "danno_tipo": "thunder",
+    "half_on_save": true
+  },
+  "meccaniche_speciali": {
+    "vs_construtti": "Svantaggio per inorganici",
+    "danno_oggetti": "Danneggia oggetti non magici",
+    "no_componente_verbale": "Solo S e M (silenziabile)",
+    "rumore": "Udibile molto lontano"
+  },
+  "utilizzi": [
+    "Anti-costrutto/golem",
+    "Distruggere porte/finestre",
+    "Rompere equipaggiamento nemico",
+    "AoE damage economico",
+    "Combo con silence (no rumore)"
+  ],
+  "danno_oggetti": {
+    "automatico": "No save per oggetti",
+    "non_magici": "Solo oggetti mundane",
+    "strutture": "Può danneggiare muri/porte",
+    "vetro_cristallo": "Devastante vs vetro"
+  },
+  "confronto": {
+    "vs_thunderwave": "Range migliore, no push",
+    "vs_scorching_ray": "AoE vs single target",
+    "danno": "3d8 (13.5) discreto per lv2"
+  },
+  "problemi": [
+    "Rumore attira attenzione",
+    "10 ft radius piccolo",
+    "CON save spesso alto",
+    "Thunder non sempre utile"
+  ],
+  "note_dm": "Shatter è versatile damage/utility. Svantaggio per costrutti unico. Distruzione oggetti utile per puzzle. Rumore fattore tattico.",
+  "fonte": "D&D 5e PHB p.275"
+}

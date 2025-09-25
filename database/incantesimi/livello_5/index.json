@@ -1,0 +1,11 @@
+{
+  "livello": "5",
+  "totale": 1,
+  "incantesimi": [
+    {
+      "nome": "Blocca Mostri",
+      "scuola": "Ammaliamento",
+      "file": "spell-blocca-mostri.json"
+    }
+  ]
+}

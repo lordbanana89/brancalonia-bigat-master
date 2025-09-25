@@ -1,0 +1,72 @@
+{
+  "_id": "classpaladinolivello1imposizionemanidd913f",
+  "_key": "!item!classpaladinolivello1imposizionemanidd913f",
+  "name": "Imposizione delle Mani",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Il tuo tocco benedetto può guarire ferite. Hai una riserva di potere curativo che si ricarica quando fai un riposo lungo. Con quella riserva, puoi ripristinare un numero totale di punti ferita pari al tuo livello da paladino × 5.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.84",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-paladino-livello_1-imposizione-mani",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84"
+    }
+  }
+}

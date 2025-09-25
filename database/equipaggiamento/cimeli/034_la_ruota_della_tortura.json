@@ -1,0 +1,16 @@
+{
+  "id": "034",
+  "nome": "La Ruota della Tortura",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Miniatura di ruota di tortura in legno",
+  "proprieta": "Girandola, infligge dolore a distanza a chi hai toccato nelle ultime 24 ore",
+  "meccanica": "Bersaglio subisce 1d4 danni e svantaggio per 1 turno",
+  "valore": "400 mo",
+  "storia": "Modellino della ruota dove morirono 100 eretici",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": true,
+    "active_effects": []
+  }
+}

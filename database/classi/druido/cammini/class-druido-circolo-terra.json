@@ -1,0 +1,50 @@
+{
+  "id": "class-druido-circolo-terra",
+  "nome": "Circolo della Terra",
+  "fonte": "Manuale del Giocatore p.68",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Trucchetto Bonus",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bonus Cantrip (Land)"
+        }
+      },
+      {
+        "nome": "Recupero Naturale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Natural Recovery"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Passo della Terra",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Land's Stride"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Guardiano della Natura",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Nature's Ward"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Santuario della Natura",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Nature's Sanctuary"
+        }
+      }
+    ]
+  }
+}

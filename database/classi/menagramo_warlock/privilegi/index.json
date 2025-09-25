@@ -1,0 +1,23 @@
+{
+  "totale": 3,
+  "privilegi": [
+    {
+      "id": "menagramo_warlock-livello_1-iattura",
+      "livello": 1,
+      "nome": "iattura",
+      "file": "menagramo_warlock-livello_1-iattura.json"
+    },
+    {
+      "id": "menagramo_warlock-livello_1-lista_ampliata",
+      "livello": 1,
+      "nome": "lista_ampliata",
+      "file": "menagramo_warlock-livello_1-lista_ampliata.json"
+    },
+    {
+      "id": "menagramo_warlock-livello_6-tocco_malasorte",
+      "livello": 6,
+      "nome": "tocco_malasorte",
+      "file": "menagramo_warlock-livello_6-tocco_malasorte.json"
+    }
+  ]
+}

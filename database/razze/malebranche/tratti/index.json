@@ -1,0 +1,29 @@
+{
+  "totale": 4,
+  "tratti": [
+    {
+      "id": "race-malebranche-tratto-eredita_infernale",
+      "nome": "Eredita Infernale",
+      "categoria": "base",
+      "file": "tratto-002_eredita_infernale.json"
+    },
+    {
+      "id": "race-malebranche-tratto-resistenza_infernale",
+      "nome": "Resistenza Infernale",
+      "categoria": "base",
+      "file": "tratto-001_resistenza_infernale.json"
+    },
+    {
+      "id": "race-malebranche-tratto-marchio_del_diavolo",
+      "nome": "Marchio Del Diavolo",
+      "categoria": "brancalonia",
+      "file": "tratto-004_marchio_del_diavolo.json"
+    },
+    {
+      "id": "race-malebranche-tratto-puzza_di_zolfo",
+      "nome": "Puzza Di Zolfo",
+      "categoria": "brancalonia",
+      "file": "tratto-003_puzza_di_zolfo.json"
+    }
+  ]
+}

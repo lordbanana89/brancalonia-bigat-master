@@ -1,0 +1,119 @@
+{
+  "_id": "spellemanazioneangelicab169c7",
+  "_key": "!item!spellemanazioneangelicab169c7",
+  "name": "Emanazione Angelica",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>L'incantatore tocca una creatura consenziente che viene pervasa da un'aura di energia angelica e delle ali di luce si sprigionano dalla sua schiena. Finché l'incantesimo non termina, la creatura ottiene una velocità di volare di 9 metri, non può diventare malata, è dotata di resistenza ai danni da veleno e dispone di vantaggio ai tiri salvezza contro gli effetti che provocano qualsiasi condizione tra le seguenti: accecato, affascinato, assordato, avvelenato, paralizzato, spaventato e stordito.</p><h3>Note per il DM</h3><p><em>Emanazione Angelica è buff potente multiuso di Brancalonia. Combina mobilità e protezione. Ali luminose hanno impatto roleplay.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.51",
+    "level": 3,
+    "school": "abj",
+    "components": {
+      "vocal": true,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-emanazione-angelica",
+      "fonte": "Brancalonia Macaronicon p.51",
+      "note_dm": "Emanazione Angelica è buff potente multiuso di Brancalonia. Combina mobilità e protezione. Ali luminose hanno impatto roleplay.",
+      "flavor": {
+        "angeli": "Presenze divine minori",
+        "santità": "Manifestazione miracolosa",
+        "protezione": "Benedizione dei santi"
+      },
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 3,
+        "attivazione": "action",
+        "range": "touch",
+        "durata": "10 minutes",
+        "concentrazione": true,
+        "fly_speed": 30
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Abiurazione",
+        "level": 3
+      }
+    }
+  }
+}

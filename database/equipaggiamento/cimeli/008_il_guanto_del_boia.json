@@ -1,0 +1,17 @@
+{
+  "id": "008",
+  "nome": "Il Guanto del Boia",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Guanto di cuoio nero macchiato di sangue",
+  "proprieta": "Chi lo indossa sa sempre se qualcuno mente sulla propria colpevolezza",
+  "maledizione": "Le mani puzzano sempre di sangue",
+  "valore": "250 mo",
+  "storia": "Il boia giustiziò 1000 persone, metà innocenti",
+  "maledizione_specifica": "Le mani puzzano sempre di sangue",
+  "implementazione": {
+    "tipo": "maledetto",
+    "attivo": false,
+    "active_effects": []
+  }
+}

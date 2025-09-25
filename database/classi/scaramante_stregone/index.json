@@ -1,0 +1,44 @@
+{
+  "nome": "Scaramante",
+  "classe_base": "Stregone",
+  "fonte": "Manuale Base p.28",
+  "descrizione": "Manipolatori della Fandonia fatata, esperti di superstizioni e protezioni",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Origine Stregonesca - Fandonia",
+  "validazione": {
+    "implementato": true,
+    "file_id": "scaramante_protetto_fato",
+    "compendio": "brancalonia-features"
+  },
+  "privilegi": {
+    "totale": 3,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 1,
+      "privilegi": [
+        {
+          "id": "scaramante_stregone-livello_1-magia_protezione",
+          "nome": "magia_protezione",
+          "file": "privilegi/scaramante_stregone-livello_1-magia_protezione.json"
+        },
+        {
+          "id": "scaramante_stregone-livello_1-protetto_dal_fato",
+          "nome": "protetto_dal_fato",
+          "file": "privilegi/scaramante_stregone-livello_1-protetto_dal_fato.json"
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "privilegi": [
+        {
+          "id": "scaramante_stregone-livello_6-rituale_scaramantico",
+          "nome": "rituale_scaramantico",
+          "file": "privilegi/scaramante_stregone-livello_6-rituale_scaramantico.json"
+        }
+      ]
+    }
+  ]
+}

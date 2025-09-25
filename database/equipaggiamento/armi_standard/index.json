@@ -1,0 +1,26 @@
+{
+  "categoria": "Armi Standard",
+  "descrizione": "Armi comuni del Manuale Base suddivise per categoria.",
+  "sottoinsiemi": [
+    {
+      "chiave": "semplici_mischia",
+      "label": "Armi Semplici da Mischia",
+      "index": "semplici_mischia/index.json"
+    },
+    {
+      "chiave": "semplici_distanza",
+      "label": "Armi Semplici a Distanza",
+      "index": "semplici_distanza/index.json"
+    },
+    {
+      "chiave": "marziali_mischia",
+      "label": "Armi Marziali da Mischia",
+      "index": "marziali_mischia/index.json"
+    },
+    {
+      "chiave": "marziali_distanza",
+      "label": "Armi Marziali a Distanza",
+      "index": "marziali_distanza/index.json"
+    }
+  ]
+}

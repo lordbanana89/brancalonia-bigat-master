@@ -1,0 +1,22 @@
+{
+  "id": "mac-spell-003",
+  "livello": 0,
+  "nome": "Segno della Superstizione",
+  "scuola": "Divinazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Personale",
+  "componenti": "S",
+  "durata": "1 ora",
+  "descrizione": "Fai un gesto scaramantico. Ottieni +1 al prossimo tiro salvezza contro paura o charme.",
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Stregone"
+  ],
+  "rituale": true,
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

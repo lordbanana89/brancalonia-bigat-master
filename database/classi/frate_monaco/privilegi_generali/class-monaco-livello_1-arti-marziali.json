@@ -1,0 +1,46 @@
+{
+  "id": "class-monaco-livello_1-arti-marziali",
+  "nome": "Arti Marziali",
+  "nome_brancalonia": "Pugni del Frate",
+  "livello": 1,
+  "tipo": "passivo",
+  "descrizione": "La tua pratica delle arti marziali ti dà padronanza degli stili di combattimento che usano colpi senz'armi e armi da monaco. Ottieni i seguenti benefici mentre sei senz'armatura e non impugni scudo.",
+  "meccaniche": {
+    "dado_arti_marziali": {
+      "livello_1": "1d4",
+      "livello_5": "1d6",
+      "livello_11": "1d8",
+      "livello_17": "1d10"
+    },
+    "benefici": [
+      "Puoi usare DES invece di FOR per attacchi e danni con armi monaco",
+      "Puoi tirare d4 (scala) invece del dado normale per danni",
+      "Quando usi Attacco con colpo senz'armi o arma monaco, puoi fare un colpo senz'armi come azione bonus"
+    ],
+    "armi_monaco": ["Shortsword", "Armi semplici senza proprietà due mani o pesante"]
+  },
+  "implementazione_foundry": {
+    "tipo": "feature",
+    "scaling": "@scale.monk.martial-arts",
+    "flags": {
+      "dnd5e.martialArts": true
+    }
+  },
+  "calcoli_dps": {
+    "livello_1": {
+      "attacchi": "2 (1 azione + 1 bonus)",
+      "danno_per_attacco": "1d4+3 (5.5)",
+      "totale": "11 DPR"
+    },
+    "livello_5": {
+      "attacchi": "3 (2 azione + 1 bonus)",
+      "danno": "1d6+4 (7.5)",
+      "totale": "22.5 DPR"
+    }
+  },
+  "tattiche": {
+    "mobility": "Attacca e muoviti senza opportunity",
+    "stunning": "Più attacchi = più chance stun"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78"
+}

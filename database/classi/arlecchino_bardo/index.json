@@ -1,0 +1,50 @@
+{
+  "nome": "Arlecchino",
+  "classe_base": "Bardo",
+  "fonte": "Manuale Base p.18",
+  "descrizione": "Attori della Commedia dell'Arte con maschere e costumi colorati",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Collegio del Carnevale",
+  "validazione": {
+    "implementato": true,
+    "file_id": "arlecchino_batocchio",
+    "compendio": "brancalonia-features",
+    "note": "Alcuni privilegi trovati come features separate"
+  },
+  "privilegi": {
+    "totale": 4,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "id": "arlecchino_bardo-livello_3-batocchio",
+          "nome": "batocchio",
+          "file": "privilegi/arlecchino_bardo-livello_3-batocchio.json"
+        },
+        {
+          "id": "arlecchino_bardo-livello_3-competenze_bonus",
+          "nome": "competenze_bonus",
+          "file": "privilegi/arlecchino_bardo-livello_3-competenze_bonus.json"
+        },
+        {
+          "id": "arlecchino_bardo-livello_3-difesa_senza_armatura",
+          "nome": "difesa_senza_armatura",
+          "file": "privilegi/arlecchino_bardo-livello_3-difesa_senza_armatura.json"
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "privilegi": [
+        {
+          "id": "arlecchino_bardo-livello_6-silenzio_in_sala",
+          "nome": "silenzio_in_sala",
+          "file": "privilegi/arlecchino_bardo-livello_6-silenzio_in_sala.json"
+        }
+      ]
+    }
+  ]
+}

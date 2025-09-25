@@ -1,0 +1,5 @@
+2025/09/26-00:35:22.481804 171c67000 Delete type=3 #1
+2025/09/26-00:35:22.484234 171cf3000 Level-0 table #5: started
+2025/09/26-00:35:22.484874 171cf3000 Level-0 table #5: 66358 bytes OK
+2025/09/26-00:35:22.484962 171cf3000 Delete type=0 #3
+2025/09/26-00:35:22.485035 171cf3000 Manual compaction at level-0 from '!items!arlecchinobardolivello3batocchio68d64d' @ 72057594037927935 : 1 .. '!items!tratto007animalisensiacutie8416b' @ 0 : 0; will stop at (end)

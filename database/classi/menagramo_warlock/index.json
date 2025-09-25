@@ -1,0 +1,44 @@
+{
+  "nome": "Menagramo",
+  "classe_base": "Warlock",
+  "fonte": "Manuale Base p.29",
+  "descrizione": "Iettatori che traggono potere da Madama Sventura, portano maledizioni e sfortuna",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Patrono Ultraterreno - Malasorte",
+  "validazione": {
+    "implementato": true,
+    "file_id": "menagramo_tocco",
+    "compendio": "brancalonia-features"
+  },
+  "privilegi": {
+    "totale": 3,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 1,
+      "privilegi": [
+        {
+          "id": "menagramo_warlock-livello_1-iattura",
+          "nome": "iattura",
+          "file": "privilegi/menagramo_warlock-livello_1-iattura.json"
+        },
+        {
+          "id": "menagramo_warlock-livello_1-lista_ampliata",
+          "nome": "lista_ampliata",
+          "file": "privilegi/menagramo_warlock-livello_1-lista_ampliata.json"
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "privilegi": [
+        {
+          "id": "menagramo_warlock-livello_6-tocco_malasorte",
+          "nome": "tocco_malasorte",
+          "file": "privilegi/menagramo_warlock-livello_6-tocco_malasorte.json"
+        }
+      ]
+    }
+  ]
+}

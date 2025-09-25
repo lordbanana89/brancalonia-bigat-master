@@ -1,0 +1,23 @@
+{
+  "id": "benandante_druido-livello_3-incantesimi_circolo",
+  "livello": 3,
+  "nome": "incantesimi_circolo",
+  "tipo": "advancement",
+  "descrizione": "Ottiene fiamma sacra e incantesimi del circolo sempre preparati",
+  "implementazione": "Gestito da Advancement API - Circle Spells",
+  "lista_incantesimi": {
+    "1": [
+      "eroismo",
+      "protezione dal bene e dal male"
+    ],
+    "2": [
+      "arma spirituale",
+      "ristorare inferiore"
+    ],
+    "3": [
+      "guardiani spirituali",
+      "rimuovi maledizione"
+    ],
+    "cantrip": "fiamma sacra"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "png_minori-003",
+  "nome": "Monaco Corrotto",
+  "grado_sfida": "3",
+  "tipo": "Umanoide",
+  "allineamento": "Legale Malvagio",
+  "caratteristiche": {
+    "for": 11,
+    "des": 13,
+    "cos": 12,
+    "int": 14,
+    "sag": 16,
+    "car": 13
+  },
+  "incantesimi": "Trucchetti e incantesimi fino al 3° livello",
+  "descrizione": "Religioso che usa la fede per i propri fini",
+  "segreti": "Traffica reliquie false, ricatta con confessioni",
+  "azioni_speciali": "Scacciare non morti corrotto (danneggia anche vivi)",
+  "fonte": "Brancalonia Macaronicon p.160-172"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "class-monaco",
+  "nome": "Monaco",
+  "tipo": "classe",
+  "fonte": "Manuale del Giocatore p.76",
+  "descrizione": "Asceta marziale che incanala il ki per trasformare il corpo in un'arma perfetta.",
+  "dado_vita": "d8",
+  "punti_ferita": {
+    "al_1_livello": "8 + modificatore Costituzione",
+    "livelli_successivi": "1d8 (o 5) + modificatore Costituzione per livello"
+  },
+  "competenze": {
+    "armature": "Nessuna",
+    "armi": [
+      "Armi semplici",
+      "Spade corte"
+    ],
+    "attrezzi": "Una scelta tra strumenti artigianali o kit da gioco",
+    "tiri_salvezza": [
+      "Forza",
+      "Destrezza"
+    ],
+    "abilita": {
+      "numero": 2,
+      "scelte": [
+        "Acrobazia",
+        "Atletica",
+        "Storia",
+        "Intuizione",
+        "Religione",
+        "Stealth"
+      ]
+    }
+  },
+  "equipaggiamento_iniziale": [
+    "(a) una spada corta oppure (b) qualsiasi arma semplice",
+    "(a) un equipaggiamento da artista marziale oppure (b) un equipaggiamento da esploratore",
+    "10 dardi"
+  ],
+  "multiclasse": {
+    "requisiti": "Destrezza 13 e Saggezza 13",
+    "competenze_ottenute": [
+      "Armi semplici",
+      "Spade corte"
+    ]
+  },
+  "note_brancalonia": {
+    "privilegio_rissa": "Danze Ubriache concede vantaggi alle mosse di presa",
+    "integrazione_dnd5e": "Privilegi invariati demandati al compendio dnd5e"
+  },
+  "validazione": {
+    "stato": "in_progress",
+    "note": "Controllare progressione delle tradizioni e automatismi del ki"
+  },
+  "collegamenti": {
+    "privilegi_generali": "privilegi_generali/index.json",
+    "progressione": "progressione/progressione.json",
+    "cammini": "cammini/index.json"
+  }
+}

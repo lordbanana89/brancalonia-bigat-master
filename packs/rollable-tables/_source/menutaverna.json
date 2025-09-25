@@ -1,0 +1,166 @@
+{
+  "_id": "menutaverna",
+  "name": "Menu della Taverna",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Menu della Taverna",
+  "results": [
+    {
+      "_id": "menu-taverna_0",
+      "type": 0,
+      "text": "Zuppa del giorno (ieri l'altro) - 2 denari",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_0"
+    },
+    {
+      "_id": "menu-taverna_1",
+      "type": 0,
+      "text": "Stufato misterioso - 3 denari",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_1"
+    },
+    {
+      "_id": "menu-taverna_2",
+      "type": 0,
+      "text": "Pane duro e formaggio ammuffito - 1 denaro",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_2"
+    },
+    {
+      "_id": "menu-taverna_3",
+      "type": 0,
+      "text": "Pollo (forse) arrosto - 5 denari",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_3"
+    },
+    {
+      "_id": "menu-taverna_4",
+      "type": 0,
+      "text": "Trippa in umido - 4 denari",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_4"
+    },
+    {
+      "_id": "menu-taverna_5",
+      "type": 0,
+      "text": "Pesce 'fresco' (3 giorni fa) - 4 denari",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_5"
+    },
+    {
+      "_id": "menu-taverna_6",
+      "type": 0,
+      "text": "Minestra di verdure dubbie - 2 denari",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_6"
+    },
+    {
+      "_id": "menu-taverna_7",
+      "type": 0,
+      "text": "Salsicce di origine ignota - 3 denari",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_7"
+    },
+    {
+      "_id": "menu-taverna_8",
+      "type": 0,
+      "text": "Uova marce con pancetta - 3 denari",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_8"
+    },
+    {
+      "_id": "menu-taverna_9",
+      "type": 0,
+      "text": "Torta di carne (quale carne?) - 4 denari",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_9"
+    },
+    {
+      "_id": "menu-taverna_10",
+      "type": 0,
+      "text": "Bollito di scarti - 1 denaro",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_10"
+    },
+    {
+      "_id": "menu-taverna_11",
+      "type": 0,
+      "text": "Specialità dello chef (non chiedere) - 6 denari",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!menu-taverna_11"
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 2400,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!menutaverna"
+}

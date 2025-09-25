@@ -1,0 +1,39 @@
+{
+  "nome": "Frate",
+  "classe_base": "Monaco",
+  "fonte": "Manuale Base p.25",
+  "descrizione": "Monaci degli Ordini Maneschi che praticano 'Ora et Menora'",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Via della Condotta Manesca",
+  "validazione": {
+    "implementato": true,
+    "file_id": "frate_porgi_altra_guancia",
+    "compendio": "brancalonia-features"
+  },
+  "privilegi": {
+    "totale": 2,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "id": "frate_monaco-livello_3-porgi_altra_guancia",
+          "nome": "porgi_altra_guancia",
+          "file": "privilegi/frate_monaco-livello_3-porgi_altra_guancia.json"
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "privilegi": [
+        {
+          "id": "frate_monaco-livello_6-tecnica_mano_ferro_piuma",
+          "nome": "tecnica_mano_ferro_piuma",
+          "file": "privilegi/frate_monaco-livello_6-tecnica_mano_ferro_piuma.json"
+        }
+      ]
+    }
+  ]
+}

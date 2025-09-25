@@ -1,0 +1,13 @@
+{
+  "id": "mostri_minori-003",
+  "nome": "Ombra del Bestemmiatore",
+  "grado_sfida": "2",
+  "tipo": "Non morto",
+  "descrizione": "Spirito di chi è morto bestemmiando",
+  "pf": "33",
+  "ca": "12",
+  "attacchi": "Tocco gelido 2d6 necrotico",
+  "abilita_speciali": "Incorporeo, Aura di bestemmie (svantaggio a TS Saggezza)",
+  "debolezze": "Simboli sacri lo tengono a bada",
+  "fonte": "Brancalonia Macaronicon p.160-172"
+}

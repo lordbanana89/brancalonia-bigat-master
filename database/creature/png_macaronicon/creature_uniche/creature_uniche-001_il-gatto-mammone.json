@@ -1,0 +1,19 @@
+{
+  "id": "creature_uniche-001",
+  "nome": "Il Gatto Mammone",
+  "grado_sfida": "10",
+  "tipo": "Immondo",
+  "descrizione": "Enorme gatto demoniaco che appare di notte",
+  "pf": "180",
+  "ca": "19",
+  "dimensioni": "Enorme",
+  "abilita_speciali": [
+    "Nove vite (ritorna dopo essere ucciso)",
+    "Salto tra dimensioni",
+    "Aura di paura",
+    "Controllo sui gatti"
+  ],
+  "debolezze": "Campanelli benedetti lo infastidiscono",
+  "leggenda": "Si dice sia il famiglio del Diavolo stesso",
+  "fonte": "Brancalonia Macaronicon p.160-172"
+}

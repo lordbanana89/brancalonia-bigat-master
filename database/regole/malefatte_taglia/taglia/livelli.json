@@ -1,0 +1,56 @@
+[
+  {
+    "malefatte": "0",
+    "livello": "Incensurato",
+    "taglia": "0 mo",
+    "conseguenze": "Nessuna"
+  },
+  {
+    "malefatte": "1-5",
+    "livello": "Piccolo criminale",
+    "taglia": "10-50 mo",
+    "conseguenze": "Multe, prigione 1-7 giorni"
+  },
+  {
+    "malefatte": "6-10",
+    "livello": "Delinquente",
+    "taglia": "60-100 mo",
+    "conseguenze": "Prigione 1-4 settimane"
+  },
+  {
+    "malefatte": "11-20",
+    "livello": "Criminale",
+    "taglia": "110-200 mo",
+    "conseguenze": "Prigione 1-6 mesi, frustate"
+  },
+  {
+    "malefatte": "21-30",
+    "livello": "Fuorilegge",
+    "taglia": "210-300 mo",
+    "conseguenze": "Prigione 1-2 anni, marchio"
+  },
+  {
+    "malefatte": "31-50",
+    "livello": "Brigante ricercato",
+    "taglia": "310-500 mo",
+    "conseguenze": "Galera 2-10 anni, mutilazione"
+  },
+  {
+    "malefatte": "51-75",
+    "livello": "Nemico pubblico",
+    "taglia": "510-750 mo",
+    "conseguenze": "Ergastolo o impiccagione"
+  },
+  {
+    "malefatte": "76-100",
+    "livello": "Flagello del Regno",
+    "taglia": "760-1000 mo",
+    "conseguenze": "Esecuzione pubblica spettacolare"
+  },
+  {
+    "malefatte": "100+",
+    "livello": "Leggenda del crimine",
+    "taglia": "1000+ mo",
+    "conseguenze": "Caccia nazionale, esecuzione creativa"
+  }
+]

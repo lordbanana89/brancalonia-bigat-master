@@ -1,0 +1,16 @@
+{
+  "id": "030",
+  "nome": "Il Crocifisso Capovolto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Croce d'argento che si capovolge da sola",
+  "proprieta": "Protegge dai demoni ma attira l'Inquisizione",
+  "meccanica": "+5 ai TS contro demoni, -5 alle prove sociali con religiosi",
+  "valore": "250 mo",
+  "storia": "Benedetto per errore durante messa nera",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": true,
+    "active_effects": []
+  }
+}

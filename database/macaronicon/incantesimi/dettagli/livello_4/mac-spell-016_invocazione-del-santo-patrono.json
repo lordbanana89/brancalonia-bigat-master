@@ -1,0 +1,21 @@
+{
+  "id": "mac-spell-016",
+  "livello": 4,
+  "nome": "Invocazione del Santo Patrono",
+  "scuola": "Evocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Personale",
+  "componenti": "V, S, M (reliquia del santo)",
+  "durata": "Concentrazione, fino a 1 minuto",
+  "descrizione": "Invochi il potere di un santo. Ottieni resistenza a tutti i danni, +2 CA, vantaggio a tutti i TS. Dopo, 1 livello indebolimento.",
+  "classi": [
+    "Chierico",
+    "Paladino"
+  ],
+  "rituale": false,
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

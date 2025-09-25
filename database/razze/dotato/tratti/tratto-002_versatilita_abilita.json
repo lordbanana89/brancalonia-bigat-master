@@ -1,0 +1,10 @@
+{
+  "id": "race-dotato-tratto-versatilita_abilita",
+  "nome": "Versatilita Abilita",
+  "categoria": "base",
+  "dettagli": {
+    "descrizione": "Competenza in due abilità a scelta",
+    "meccanica": "Scegli 2 abilità qualsiasi"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

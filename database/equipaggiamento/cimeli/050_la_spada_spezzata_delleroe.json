@@ -1,0 +1,16 @@
+{
+  "id": "050",
+  "nome": "La Spada Spezzata dell'Eroe",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Metà di una spada leggendaria",
+  "proprieta": "Anche spezzata conta come +2, se riforgiata diventa +5",
+  "valore": "3000 mo (30000 se completa)",
+  "storia": "Si spezzò uccidendo il drago",
+  "ricerca": "L'altra metà è perduta da secoli",
+  "implementazione": {
+    "tipo": "magico_minore",
+    "attivo": false,
+    "active_effects": []
+  }
+}

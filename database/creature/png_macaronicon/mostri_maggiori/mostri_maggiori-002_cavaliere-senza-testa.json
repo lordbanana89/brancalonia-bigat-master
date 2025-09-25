@@ -1,0 +1,17 @@
+{
+  "id": "mostri_maggiori-002",
+  "nome": "Cavaliere Senza Testa",
+  "grado_sfida": "6",
+  "tipo": "Non morto",
+  "descrizione": "Spirito di cavaliere decapitato che cerca vendetta",
+  "pf": "93",
+  "ca": "18",
+  "equipaggiamento": "Armatura spettrale, Spada fiammeggiante",
+  "abilita_speciali": [
+    "Immune a charme e paura",
+    "Carica devastante",
+    "Cerca la sua testa"
+  ],
+  "debolezza": "Trovare e restituire la testa lo placa",
+  "fonte": "Brancalonia Macaronicon p.160-172"
+}

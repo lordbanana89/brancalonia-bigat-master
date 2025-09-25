@@ -1,0 +1,64 @@
+{
+  "id": "spell-comando",
+  "nome": "Comando",
+  "nome_inglese": "Command",
+  "livello": 1,
+  "scuola": "Ammaliamento",
+  "tempo_lancio": "1 azione",
+  "gittata": "60 piedi",
+  "componenti": {
+    "verbale": true
+  },
+  "durata": "1 round",
+  "descrizione": "Dai un comando di una parola a una creatura che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza o seguire il comando nel suo prossimo turno. L'incantesimo non ha effetto se il bersaglio è non morto, se non comprende il tuo linguaggio, o se il tuo comando è direttamente dannoso per esso.",
+  "comandi_tipici": {
+    "avvicinati": "Si muove verso di te per la via più breve e diretta",
+    "lascia": "Lascia cadere ciò che sta tenendo e poi termina il suo turno",
+    "fuggi": "Si allontana da te nel modo più veloce possibile",
+    "cadi": "Cade prono e poi termina il suo turno",
+    "fermati": "Non si muove e non effettua azioni. Una creatura volante rimane in aria se può"
+  },
+  "classi": ["Chierico", "Paladino"],
+  "scaling": {
+    "descrizione": "+1 creatura per slot level sopra 1°",
+    "slot_2": "2 creature",
+    "slot_3": "3 creature",
+    "slot_4": "4 creature",
+    "slot_5": "5 creature"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "action",
+    "range": 60,
+    "save": "wisdom",
+    "durata": "1 round"
+  },
+  "limitazioni": [
+    "Una sola parola",
+    "Non può essere dannoso diretto",
+    "Deve capire la lingua",
+    "No effect su undead",
+    "Dura solo 1 turno"
+  ],
+  "comandi_creativi": [
+    "Betrayed! (attacca alleati)",
+    "Confess! (ammette crimini)",
+    "Betray! (tradisce)",
+    "Grovel! (si prostra)",
+    "Surrender! (si arrende)"
+  ],
+  "interpretazione_dm": {
+    "flessibilita": "DM decide comando valido",
+    "ragionevolezza": "Target usa metodo ragionevole",
+    "non_suicida": "No azioni ovviamente letali"
+  },
+  "valore_tattico": {
+    "action_economy": "Nemico perde turno",
+    "prone_combo": "'Cadi' per advantage melee",
+    "disarm_effect": "'Lascia' per disarmare",
+    "escape": "'Fuggi' per creare spazio"
+  },
+  "note_dm": "Command è controllo potente ma breve. Creatività nei comandi premiata. WIS save comune problema. Scaling ottimo.",
+  "fonte": "D&D 5e PHB p.223"
+}

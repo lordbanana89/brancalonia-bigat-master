@@ -1,0 +1,53 @@
+{
+  "id": "mac-sub-003",
+  "nome": "Esorcista",
+  "classe_base": "Chierico",
+  "categoria": "Dominio dell'Esorcismo",
+  "fonte": {
+    "manuale": "Brancalonia Macaronicon",
+    "pagine": "23"
+  },
+  "descrizione": "Sacerdoti itineranti incaricati di stanare maledizioni, posseduti e infestazioni infernali.",
+  "progressione": [
+    {
+      "livello": 1,
+      "privilegi": [
+        {
+          "nome": "Lo Martello che Schiaccia lo Male",
+          "descrizione": "Ottieni competenza nelle armi da guerra e nelle armature pesanti."
+        },
+        {
+          "nome": "La Favella Magna",
+          "descrizione": "Con un'azione pronunci la preghiera di rivelazione: percepisci entro 18 m luoghi, oggetti o creature maledette, possedute o sotto influenza maligna e ne comprendi la natura. Usabile un numero di volte pari al modificatore di Saggezza (minimo 1), ricarica con riposo lungo."
+        }
+      ]
+    },
+    {
+      "livello": 2,
+      "privilegi": [
+        {
+          "nome": "L'Ispecchio della Verità",
+          "descrizione": "Quando usi Scacciare Non Morti l'effetto si applica anche a fatati e immondi; riveli la loro forma reale se occultata."
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "privilegi": [
+        {
+          "nome": "La Fiamma dello Giusto",
+          "descrizione": "La Favella Magna fornisce dettagli aggiuntivi (storia, potere, debolezze o metodo per spezzare la maledizione). Quando scacci, puoi scegliere di trattenere invece che allontanare le creature che falliscono il TS."
+        }
+      ]
+    }
+  ],
+  "incantesimi_dominio": [
+    { "livello": 1, "incantesimi": ["individuazione del bene e del male", "marchio incandescente*"] },
+    { "livello": 2, "incantesimi": ["esorcismo*", "zona di verità"] },
+    { "livello": 3, "incantesimi": ["cerchio magico", "mondare*"] }
+  ],
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo_fino_a_livello": 6
+  }
+}

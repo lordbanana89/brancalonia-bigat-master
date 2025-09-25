@@ -1,0 +1,111 @@
+{
+  "categoria": "Incantesimi Base (mapping compendio dnd5e)",
+  "totale": 21,
+  "elementi": [
+    {
+      "id": "spell-base-001",
+      "nome": "Benedizione",
+      "file": "spell-base-001_benedizione.json"
+    },
+    {
+      "id": "spell-base-002",
+      "nome": "Purificare Cibo e Bevande",
+      "file": "spell-base-002_purificare_cibo_e_bevande.json"
+    },
+    {
+      "id": "spell-base-003",
+      "nome": "Caratteristica Potenziata",
+      "file": "spell-base-003_caratteristica_potenziata.json"
+    },
+    {
+      "id": "spell-base-004",
+      "nome": "Ristorare Inferiore",
+      "file": "spell-base-004_ristorare_inferiore.json"
+    },
+    {
+      "id": "spell-base-005",
+      "nome": "Creare Cibo e Acqua",
+      "file": "spell-base-005_creare_cibo_e_acqua.json"
+    },
+    {
+      "id": "spell-base-006",
+      "nome": "Dissolvi Magie",
+      "file": "spell-base-006_dissolvi_magie.json"
+    },
+    {
+      "id": "spell-base-007",
+      "nome": "Fiamma Sacra",
+      "file": "spell-base-007_fiamma_sacra.json"
+    },
+    {
+      "id": "spell-base-008",
+      "nome": "Eroismo",
+      "file": "spell-base-008_eroismo.json"
+    },
+    {
+      "id": "spell-base-009",
+      "nome": "Protezione dal Bene e dal Male",
+      "file": "spell-base-009_protezione_dal_bene_e_dal_male.json"
+    },
+    {
+      "id": "spell-base-010",
+      "nome": "Arma Spirituale",
+      "file": "spell-base-010_arma_spirituale.json"
+    },
+    {
+      "id": "spell-base-011",
+      "nome": "Guardiani Spirituali",
+      "file": "spell-base-011_guardiani_spirituali.json"
+    },
+    {
+      "id": "spell-base-012",
+      "nome": "Rimuovi Maledizione",
+      "file": "spell-base-012_rimuovi_maledizione.json"
+    },
+    {
+      "id": "spell-base-013",
+      "nome": "Comando",
+      "file": "spell-base-013_comando.json"
+    },
+    {
+      "id": "spell-base-014",
+      "nome": "Passo senza Tracce",
+      "file": "spell-base-014_passo_senza_tracce.json"
+    },
+    {
+      "id": "spell-base-015",
+      "nome": "Evoca Cavalcatura",
+      "file": "spell-base-015_evoca_cavalcatura.json"
+    },
+    {
+      "id": "spell-base-016",
+      "nome": "Anatema",
+      "file": "spell-base-016_anatema.json"
+    },
+    {
+      "id": "spell-base-017",
+      "nome": "Sonno",
+      "file": "spell-base-017_sonno.json"
+    },
+    {
+      "id": "spell-base-018",
+      "nome": "Accecare/Assordare",
+      "file": "spell-base-018_accecare_assordare.json"
+    },
+    {
+      "id": "spell-base-019",
+      "nome": "Crescita di Spine",
+      "file": "spell-base-019_crescita_di_spine.json"
+    },
+    {
+      "id": "spell-base-020",
+      "nome": "Animare i Morti",
+      "file": "spell-base-020_animare_i_morti.json"
+    },
+    {
+      "id": "spell-base-021",
+      "nome": "Scagliare Maledizione",
+      "file": "spell-base-021_scagliare_maledizione.json"
+    }
+  ]
+}

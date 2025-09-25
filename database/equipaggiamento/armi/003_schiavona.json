@@ -1,0 +1,20 @@
+{
+  "id": "arma-base-003",
+  "nome": "Schiavona",
+  "categoria": "arma",
+  "sottotipo": "mischia",
+  "costo": "15 mo",
+  "danni": "1d8 perforanti o taglienti",
+  "peso": "1.5 kg",
+  "proprieta": [],
+  "descrizione": "Spada con elaborata guardia a gabbia, efficace negli affondi e nei colpi di taglio.",
+  "note_meccaniche": null,
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "estratto_da": "manuale_brancalonia.txt",
+    "stato": "da_validare"
+  }
+}

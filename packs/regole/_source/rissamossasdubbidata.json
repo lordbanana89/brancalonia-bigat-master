@@ -1,0 +1,19 @@
+{
+  "_id": "rissamossasdubbidata",
+  "_key": "!journal!rissamossasdubbidata",
+  "name": "Sdubbidata",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-sdubbidata",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "JournalEntry"
+}

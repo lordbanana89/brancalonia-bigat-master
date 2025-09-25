@@ -1,0 +1,38 @@
+{
+  "categoria": "Incantesimi del Macaronicon",
+  "descrizione": "Nuovi incantesimi tipici di Brancalonia",
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "totale": 18,
+  "livelli": [
+    {
+      "livello": 0,
+      "totale": 3,
+      "directory": "dettagli/livello_0"
+    },
+    {
+      "livello": 1,
+      "totale": 4,
+      "directory": "dettagli/livello_1"
+    },
+    {
+      "livello": 2,
+      "totale": 4,
+      "directory": "dettagli/livello_2"
+    },
+    {
+      "livello": 3,
+      "totale": 3,
+      "directory": "dettagli/livello_3"
+    },
+    {
+      "livello": 4,
+      "totale": 2,
+      "directory": "dettagli/livello_4"
+    },
+    {
+      "livello": 5,
+      "totale": 2,
+      "directory": "dettagli/livello_5"
+    }
+  ]
+}

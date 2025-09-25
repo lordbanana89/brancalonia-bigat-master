@@ -1,0 +1,11 @@
+{
+  "id": "race-malebranche-tratto-puzza_di_zolfo",
+  "nome": "Puzza Di Zolfo",
+  "categoria": "brancalonia",
+  "dettagli": {
+    "descrizione": "Odore leggero ma percepibile di zolfo",
+    "sociale": "Svantaggio a nascondersi da animali",
+    "beneficio": "+1 Intimidire contro superstiziosi"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

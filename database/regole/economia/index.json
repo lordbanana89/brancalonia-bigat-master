@@ -1,0 +1,43 @@
+{
+  "titolo": "Economia e Equipaggiamento",
+  "descrizione": "Descrive il sistema di valute del Regno e le due qualita alternative dell'equipaggiamento: scadente e contraffatto.",
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "63-70"
+  },
+  "sezioni": [
+    {
+      "nome": "Valute del Regno",
+      "pagine": "63",
+      "stato": "da_trascrivere",
+      "riassunto": "Convertitori tra ramini (mr), denari d'argento (ma), soldoni di ferro (mf) e gransoldi (mo); esempi di conii regionali.",
+      "note": "Creare un file JSON con tabelle di conversione e alias regionali da collegare agli strumenti di calcolo prezzi."
+    },
+    {
+      "nome": "Equipaggiamento scadente",
+      "pagine": "64-65",
+      "file": "../../equipaggiamento/scadente/scadente-000_panorama.json",
+      "stato": "parziale",
+      "riassunto": "Panoramica e suddivisione per categorie (strumenti, armi, armature, cavalcature, componenti magici) gia trascritte nella cartella equipaggiamento/scadente.",
+      "note": "Verificare che ogni file scadente-00X includa gli effetti di malfunzionamento e collegarlo agli Items Foundry."
+    },
+    {
+      "nome": "Oggetti contraffatti",
+      "pagine": "64-65",
+      "file": "../../equipaggiamento/oggetti_contraffatti/index.json",
+      "stato": "parziale",
+      "riassunto": "Documenti, mappe, reliquie e patenti false: costano il 50% dell'originale ma applicano gli stessi malus degli scadenti.",
+      "note": "Gli item sono gia elencati; restano da impostare i flag di rischio (prove di Indagare CD 15/20) e le azioni per Foundry."
+    },
+    {
+      "nome": "Ciarpame magico e intrugli",
+      "pagine": "66-70",
+      "file": "../../equipaggiamento/ciarpame_magico.json",
+      "stato": "parziale",
+      "riassunto": "Oggetti magici di bassa lega e intrugli brancalonici hanno gia schede dedicate ma necessitano di convalida effetti.",
+      "note": "Passare in rassegna gli intrugli in equipaggiamento/intrugli e associare effetti condizionati al modulo dnd5e."
+    }
+  ],
+  "stato": "parziale",
+  "note": "Aggiungere un file valute, validare gli item scadenti/contraffatti esistenti e completare gli Active Effect del ciarpame magico."
+}

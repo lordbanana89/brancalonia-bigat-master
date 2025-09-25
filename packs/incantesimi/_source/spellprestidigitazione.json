@@ -1,0 +1,113 @@
+{
+  "_id": "spellprestidigitazioned715c3",
+  "_key": "!item!spellprestidigitazioned715c3",
+  "name": "Prestidigitazione",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Questo trucchetto è un addestramento base per maghi novizi. Con esso, crei uno dei seguenti effetti magici entro gittata: Un effetto sensoriale innocuo e istantaneo, come una pioggia di scintille, una folata di vento, deboli note musicali, o un odore strano. Accendi o spegni istantaneamente una candela, una torcia o un piccolo fuoco da campo. Pulisci o sporchi istantaneamente un oggetto non più grande di 1 piede cubo. Raffreddi, riscaldi o insaporisci fino a 1 piede cubo di materia inanimata per 1 ora. Fai apparire un colore, un piccolo marchio o un simbolo su un oggetto o una superficie per 1 ora. Crei un gingillo non magico o un'immagine illusoria che può stare nel palmo della tua mano e che dura fino alla fine del tuo prossimo turno.</p><h3>Note per il DM</h3><p><em>Prestidigitation è estremamente versatile per situazioni non-combat. I giocatori creativi possono trovare usi infiniti. Ricorda il limite di 3 effetti non-istantanei attivi.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.267",
+    "level": 0,
+    "school": "trs",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": 10,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-prestidigitazione",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.267",
+      "note_dm": "Prestidigitation è estremamente versatile per situazioni non-combat. I giocatori creativi possono trovare usi infiniti. Ricorda il limite di 3 effetti non-istantanei attivi.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": 10,
+        "durata_valore": 1,
+        "durata_unita": "hour",
+        "scuola_abbreviata": "trs"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Trasmutazione",
+        "level": 0
+      }
+    }
+  }
+}

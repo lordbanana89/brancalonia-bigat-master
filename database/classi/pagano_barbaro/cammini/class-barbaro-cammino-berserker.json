@@ -1,0 +1,18 @@
+{
+  "id": "class-barbaro-cammino-berserker",
+  "nome": "berserker",
+  "livelli": {
+    "livello_3": {
+      "frenesia": "Attacco bonus come azione bonus mentre in ira, 1 livello indebolimento dopo"
+    },
+    "livello_6": {
+      "ira_senza_mente": "Immune a charme e paura mentre in ira"
+    },
+    "livello_10": {
+      "presenza_intimidatoria": "Azione per spaventare creatura entro 9m"
+    },
+    "livello_14": {
+      "rappresaglia": "Reazione per attaccare chi ti colpisce in mischia"
+    }
+  }
+}

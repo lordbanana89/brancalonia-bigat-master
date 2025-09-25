@@ -1,0 +1,20 @@
+{
+  "id": "arma-std-001",
+  "nome": "Bastone Ferrato",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "1 ma",
+  "danni": "1d4 contundenti",
+  "proprieta": [
+    "Leggera"
+  ],
+  "peso": "0.9 kg",
+  "descrizione": "Clava corta di legno duro, bilanciata per colpire rapidamente.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

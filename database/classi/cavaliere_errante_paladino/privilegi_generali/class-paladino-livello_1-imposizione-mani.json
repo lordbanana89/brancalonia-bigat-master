@@ -1,0 +1,56 @@
+{
+  "id": "class-paladino-livello_1-imposizione-mani",
+  "nome": "Imposizione delle Mani",
+  "nome_brancalonia": "Tocco Miracoloso",
+  "livello": 1,
+  "tipo": "attivo",
+  "descrizione": "Il tuo tocco benedetto può guarire le ferite. Hai una riserva di potere curativo che si ricarica quando fai un riposo lungo. Con quella riserva, puoi ripristinare un numero totale di punti ferita pari al tuo livello da paladino × 5. Come azione, puoi toccare una creatura e attingere potere dalla riserva per ripristinare un numero di punti ferita a quella creatura, fino al massimo rimanente nella tua riserva. In alternativa, puoi spendere 5 punti ferita dalla tua riserva per curare il bersaglio di una malattia o neutralizzare un veleno che lo affligge.",
+  "meccaniche": {
+    "pool": {
+      "formula": "Livello paladino × 5",
+      "recupero": "Riposo lungo",
+      "esempi": {
+        "livello_1": "5 PF",
+        "livello_5": "25 PF",
+        "livello_10": "50 PF",
+        "livello_20": "100 PF"
+      }
+    },
+    "guarigione": {
+      "tipo": "azione",
+      "raggio": "tocco",
+      "quantità": "Qualsiasi fino a max pool"
+    },
+    "cura_condizioni": {
+      "costo": "5 PF dal pool",
+      "effetto": "Cura 1 malattia O 1 veleno",
+      "nota": "Non multiple condizioni insieme"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "pool_resource",
+    "configurazione": {
+      "system.resources.lay-on-hands": {
+        "value": "@classes.paladin.levels * 5",
+        "max": "@classes.paladin.levels * 5"
+      }
+    }
+  },
+  "confronto_guarigione": {
+    "vs_cure_wounds": {
+      "spell": "1d8+mod istantaneo",
+      "lay_hands": "Esatto controllo quantità"
+    },
+    "efficienza": "1 PF = 1 PF, molto efficiente"
+  },
+  "tattiche": {
+    "combattimento": "Stabilizzare/salvare alleati",
+    "fuori_combattimento": "Top up economico",
+    "emergenze": "Rimuovere veleni letali"
+  },
+  "sinergie": {
+    "con_aura_protezione": "Guarisce alleati protetti",
+    "con_divine_health": "Immune a malattie può curare altri"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-buttafuori",
+  "nome": "Buttafuori",
+  "requisiti": "Forza 15+, taglia Grande",
+  "costo": "2 slot",
+  "effetto": "Sollevi e lanci il bersaglio fino a 3m. 2d6 Batoste + prono",
+  "limitazione": "Solo su creature di una taglia inferiore",
+  "fonte": "Brancalonia Manuale Base"
+}

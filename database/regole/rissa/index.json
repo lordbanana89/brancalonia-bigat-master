@@ -1,0 +1,31 @@
+{
+  "nome": "Sistema Rissa",
+  "descrizione": "Sistema di combattimento non letale per zuffe da taverna e scontri di strada",
+  "fonte": "Brancalonia Manuale Base",
+  "sezioni": [
+    {
+      "nome": "Regole base",
+      "path": "regole_base/index.json"
+    },
+    {
+      "nome": "Livelli Batoste",
+      "path": "livelli_batoste/index.json"
+    },
+    {
+      "nome": "Mosse base",
+      "path": "mosse_base/index.json"
+    },
+    {
+      "nome": "Slot Mossa",
+      "path": "slot_mossa/progressione.json"
+    },
+    {
+      "nome": "Mosse Speciali",
+      "path": "mosse_speciali/index.json"
+    },
+    {
+      "nome": "Armi improvvisate",
+      "path": "armi_improvvisate/armi.json"
+    }
+  ]
+}

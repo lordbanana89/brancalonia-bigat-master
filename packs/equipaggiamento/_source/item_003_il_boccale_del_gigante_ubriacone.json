@@ -1,0 +1,86 @@
+{
+  "_id": "ilboccaledelgiganteubriacone138759",
+  "_key": "!item!ilboccaledelgiganteubriacone138759",
+  "name": "Il Boccale del Gigante Ubriacone",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Enorme boccale di peltro ammaccato</p><h3>Proprietà</h3><p>Non si svuota mai completamente di birra</p><h3>Storia</h3><p><em>Appartenuto al gigante Bevo che morì affogato nella birra</em></p><h3>Maledizione</h3><p><strong>Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora</strong></p><p>Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora</p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": {
+      "mgc": true,
+      "cursed": true
+    },
+    "cursed": true,
+    "curse": "Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "003",
+      "categoria": "cimelo",
+      "storia": "Appartenuto al gigante Bevo che morì affogato nella birra",
+      "proprieta_originale": "Non si svuota mai completamente di birra",
+      "maledizione": "Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora",
+      "maledizione_specifica": "Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora",
+      "implementazione": {
+        "tipo": "maledetto",
+        "attivo": true,
+        "active_effects": []
+      }
+    }
+  }
+}

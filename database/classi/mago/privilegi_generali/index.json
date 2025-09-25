@@ -1,0 +1,85 @@
+{
+  "classe": "mago",
+  "categoria": "Privilegi Generali",
+  "totale": 13,
+  "privilegi": [
+    {
+      "id": "class-mago-livello_1-libro-incantesimi",
+      "nome": "Grimorio del Sapiente",
+      "file": "class-mago-livello_1-libro-incantesimi.json",
+      "livello": 1
+    },
+    {
+      "id": "class-mago-livello_1-recupero-arcano",
+      "nome": "Meditazione Mistica",
+      "file": "class-mago-livello_1-recupero-arcano.json",
+      "livello": 1
+    },
+    {
+      "id": "class-mago-livello_2-tradizione-arcana",
+      "nome": "Scuola di Magia",
+      "file": "class-mago-livello_2-tradizione-arcana.json",
+      "livello": 2
+    },
+    {
+      "id": "class-mago-livello_4-aumento-caratteristica",
+      "nome": "Crescita del Sapiente",
+      "file": "class-mago-livello_4-aumento-caratteristica.json",
+      "livello": 4
+    },
+    {
+      "id": "class-mago-livello_6-tradizione-arcana-privilegio",
+      "nome": "Maestria della Scuola",
+      "file": "class-mago-livello_6-tradizione-arcana-privilegio.json",
+      "livello": 6
+    },
+    {
+      "id": "class-mago-livello_8-aumento-caratteristica-2",
+      "nome": "Evoluzione del Sapiente",
+      "file": "class-mago-livello_8-aumento-caratteristica-2.json",
+      "livello": 8
+    },
+    {
+      "id": "class-mago-livello_10-tradizione-arcana-maestria",
+      "nome": "Arcimago della Scuola",
+      "file": "class-mago-livello_10-tradizione-arcana-maestria.json",
+      "livello": 10
+    },
+    {
+      "id": "class-mago-livello_12-aumento-caratteristica-3",
+      "nome": "Perfezionamento Arcano",
+      "file": "class-mago-livello_12-aumento-caratteristica-3.json",
+      "livello": 12
+    },
+    {
+      "id": "class-mago-livello_14-tradizione-arcana-suprema",
+      "nome": "Gran Maestro Arcano",
+      "file": "class-mago-livello_14-tradizione-arcana-suprema.json",
+      "livello": 14
+    },
+    {
+      "id": "class-mago-livello_16-aumento-caratteristica-4",
+      "nome": "Apice del Sapere",
+      "file": "class-mago-livello_16-aumento-caratteristica-4.json",
+      "livello": 16
+    },
+    {
+      "id": "class-mago-livello_18-padronanza-incantesimi",
+      "nome": "Maestria Arcana Suprema",
+      "file": "class-mago-livello_18-padronanza-incantesimi.json",
+      "livello": 18
+    },
+    {
+      "id": "class-mago-livello_19-aumento-caratteristica-5",
+      "nome": "Perfezione Arcana",
+      "file": "class-mago-livello_19-aumento-caratteristica-5.json",
+      "livello": 19
+    },
+    {
+      "id": "class-mago-livello_20-signature-spells",
+      "nome": "Magie Leggendarie",
+      "file": "class-mago-livello_20-signature-spells.json",
+      "livello": 20
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "png_leggendari-001",
+  "nome": "Il Patriarca Re",
+  "grado_sfida": "15",
+  "tipo": "Umanoide",
+  "classe": "Chierico 15°/Guerriero 5°",
+  "descrizione": "Sovrano spirituale e temporale del Regno",
+  "caratteristiche": {
+    "for": 14,
+    "des": 10,
+    "cos": 16,
+    "int": 16,
+    "sag": 20,
+    "car": 18
+  },
+  "equipaggiamento": [
+    "Corona del Regno (+2 Saggezza)",
+    "Scettro del Comando (Dominare persone 3/giorno)",
+    "Armatura Consacrata (resistenza a tutto)"
+  ],
+  "abilita_leggendarie": [
+    "Azioni leggendarie (3)",
+    "Resistenze leggendarie (3/giorno)",
+    "Aura divina (30m)"
+  ],
+  "guardie": "Sempre circondato da Guardie Svanziche (GS 5 ciascuna)",
+  "fonte": "Brancalonia Macaronicon p.160-172"
+}

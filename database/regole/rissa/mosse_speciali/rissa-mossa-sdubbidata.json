@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-sdubbidata",
+  "nome": "Sdubbidata",
+  "requisiti": "Forza 13+",
+  "costo": "1 slot",
+  "effetto": "Pugno potente che infligge 2d6 + For Batoste",
+  "speciale": "Con critico il bersaglio vola 3m indietro",
+  "fonte": "Brancalonia Manuale Base"
+}

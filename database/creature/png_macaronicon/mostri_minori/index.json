@@ -1,0 +1,21 @@
+{
+  "categoria": "mostri_minori",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "mostri_minori-001",
+      "nome": "Cane Infernale di Quartiere",
+      "file": "mostri_minori-001_cane-infernale-di-quartiere.json"
+    },
+    {
+      "id": "mostri_minori-002",
+      "nome": "Spiritello della Cantina",
+      "file": "mostri_minori-002_spiritello-della-cantina.json"
+    },
+    {
+      "id": "mostri_minori-003",
+      "nome": "Ombra del Bestemmiatore",
+      "file": "mostri_minori-003_ombra-del-bestemmiatore.json"
+    }
+  ]
+}

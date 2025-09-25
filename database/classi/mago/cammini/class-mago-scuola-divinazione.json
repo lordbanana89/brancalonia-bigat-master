@@ -1,0 +1,50 @@
+{
+  "id": "class-mago-scuola-divinazione",
+  "nome": "Scuola di Divinazione",
+  "fonte": "Manuale del Giocatore p.83",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Savant della Divinazione",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Divination Savant"
+        }
+      },
+      {
+        "nome": "Portento",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Portent"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Divinazione Esperta",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Expert Divination"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Terzo Occhio",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "The Third Eye"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Portento Superiore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Greater Portent"
+        }
+      }
+    ]
+  }
+}

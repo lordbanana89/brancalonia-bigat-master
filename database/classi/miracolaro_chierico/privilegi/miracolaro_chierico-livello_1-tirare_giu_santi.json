@@ -1,0 +1,12 @@
+{
+  "id": "miracolaro_chierico-livello_1-tirare_giu_santi",
+  "livello": 1,
+  "nome": "tirare_giu_santi",
+  "tipo": "attivo",
+  "descrizione": "Competenza in Religione, expertise se già competente",
+  "implementazione": {
+    "competenza": "system.skills.rel.value = 1",
+    "expertise": "system.skills.rel.value = 2"
+  },
+  "mode": 5
+}

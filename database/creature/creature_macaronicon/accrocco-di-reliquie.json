@@ -1,0 +1,103 @@
+{
+  "id": "creature-accrocco-di-reliquie",
+  "nome": "Accrocco di Reliquie",
+  "nome_inglese": "Relic Construct",
+  "descrizione": "Il più grande segreto contenuto nelle Catacombe di San Terraneo di Città del Vaticinio è l'arma che i vertici dei Reliquari e degli ordinali del Credo stanno assemblando da generazioni. Lo chiamano Ognissanti, un accrocco di reliquie ritrovate nelle catacombe di tutto il Regno e fuse o ricucite insieme, per costruire una sorta di automa rianimato di parti del corpo miracolose e mummificate, alcune delle quali ancora coperte di gioielli o incastonate in antiche custodie.",
+  "tipo": "Costrutto",
+  "taglia": "Grande",
+  "allineamento": "Senza allineamento",
+  "classe_armatura": {
+    "valore": 14,
+    "tipo": "naturale"
+  },
+  "punti_ferita": {
+    "valore": 133,
+    "formula": "14d10 + 56"
+  },
+  "velocita": {
+    "camminare": "9 m"
+  },
+  "caratteristiche": {
+    "forza": 20,
+    "destrezza": 10,
+    "costituzione": 18,
+    "intelligenza": 3,
+    "saggezza": 14,
+    "carisma": 5
+  },
+  "modificatori": {
+    "forza": "+5",
+    "destrezza": "+0",
+    "costituzione": "+4",
+    "intelligenza": "-4",
+    "saggezza": "+2",
+    "carisma": "-3"
+  },
+  "immunita_danni": ["necrotico", "psichico", "radioso", "veleno", "contundente, perforante e tagliente da attacchi non magici"],
+  "immunita_condizioni": ["affascinato", "avvelenato", "indebolimento", "paralizzato", "pietrificato", "spaventato"],
+  "sensi": {
+    "percezione_passiva": 12,
+    "scurovisione": "36 m"
+  },
+  "linguaggi": "capisce i linguaggi del suo creatore ma non può parlarli",
+  "grado_sfida": 8,
+  "punti_esperienza": 3900,
+  "tratti": [
+    {
+      "nome": "Assorbimento Divino",
+      "descrizione": "Ogni volta che l'accrocco di reliquie è soggetto a danni radiosi o necrotici, non subisce danni e recupera invece un numero di punti ferita pari ai danni inflitti."
+    },
+    {
+      "nome": "Forma Immutabile",
+      "descrizione": "L'accrocco di reliquie è immune a qualsiasi incantesimo o effetto che tenti di alterare la sua forma."
+    },
+    {
+      "nome": "Resistenza alla Magia",
+      "descrizione": "L'accrocco di reliquie dispone di vantaggio ai tiri salvezza contro incantesimi e altri effetti magici."
+    },
+    {
+      "nome": "Armi Magiche",
+      "descrizione": "Gli attacchi con arma dell'accrocco di reliquie sono magici."
+    },
+    {
+      "nome": "Benedetto",
+      "descrizione": "L'accrocco di reliquie emana un'aura benedetta che irradia chiunque gli sia vicino. Ogni volta che una creatura situata entro 6 m dall'accrocco, effettua un tiro per colpire o un tiro salvezza può tirare 1d4 e aggiungere il numero ottenuto al tiro per colpire o al tiro salvezza."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Multiattacco",
+      "descrizione": "L'accrocco effettua due attacchi con schianto."
+    },
+    {
+      "nome": "Schianto",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+8",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "16 (2d10 + 5) danni contundenti"
+    },
+    {
+      "nome": "Anatema (Ricarica 6)",
+      "descrizione": "L'accrocco bersaglia da una a tre creature situate entro 9 metri da lui e che esso sia in grado di vedere. Ogni bersaglio deve effettuare un tiro salvezza su Carisma con CD 15 contro questa magia; se lo fallisce, ogni volta che effettua un tiro per colpire o un tiro salvezza deve tirare un d4 e sottrarre il numero ottenuto dal tiro per colpire o dal tiro salvezza. Questo effetto dura 1 minuto. Un bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto per lui termina."
+    }
+  ],
+  "note_brancalonia": {
+    "origine": "Creato dai Reliquari e ordinali del Credo",
+    "ubicazione": "Catacombe di San Terraneo, Città del Vaticinio",
+    "nome_alternativo": "Ognissanti",
+    "composizione": "Reliquie di tutto il Regno fuse insieme",
+    "natura": "Automa di parti del corpo miracolose mummificate",
+    "decorazioni": "Gioielli e antiche custodie",
+    "sviluppo": "Potenziato continuamente con nuove reliquie",
+    "utilizzo": "Testato contro malacoda, eresiarchi e criminali",
+    "segreto": "Scopo finale sconosciuto"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 8,
+    "size": "lg",
+    "type": "construct"
+  },
+  "fonte": "Brancalonia Macaronicon p.78-79"
+}

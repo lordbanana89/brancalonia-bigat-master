@@ -1,0 +1,21 @@
+{
+  "categoria": "Razze",
+  "totale": 3,
+  "razze": [
+    {
+      "nome": "Gatto Lupesco",
+      "file": "gatto_lupesco.json",
+      "fonte": "Brancalonia Macaronicon p.7"
+    },
+    {
+      "nome": "Inesistente",
+      "file": "inesistente.json",
+      "fonte": "Brancalonia Macaronicon p.8-9"
+    },
+    {
+      "nome": "Pantegano",
+      "file": "pantegano.json",
+      "fonte": "Brancalonia Macaronicon p.10-11"
+    }
+  ]
+}

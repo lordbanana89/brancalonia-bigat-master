@@ -1,0 +1,35 @@
+{
+  "totale": 6,
+  "elementi": [
+    {
+      "id": "rissa-base-attivazione",
+      "titolo": "attivazione",
+      "file": "rissa-base-attivazione.json"
+    },
+    {
+      "id": "rissa-base-danni",
+      "titolo": "danni",
+      "file": "rissa-base-danni.json"
+    },
+    {
+      "id": "rissa-base-ko",
+      "titolo": "ko",
+      "file": "rissa-base-ko.json"
+    },
+    {
+      "id": "rissa-base-recupero",
+      "titolo": "recupero",
+      "file": "rissa-base-recupero.json"
+    },
+    {
+      "id": "rissa-base-armi",
+      "titolo": "armi",
+      "file": "rissa-base-armi.json"
+    },
+    {
+      "id": "rissa-base-magia",
+      "titolo": "magia",
+      "file": "rissa-base-magia.json"
+    }
+  ]
+}

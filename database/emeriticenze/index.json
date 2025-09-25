@@ -1,0 +1,50 @@
+{
+  "categoria": "Emeriticenze",
+  "totale": 11,
+  "emeriticenze": [
+    {
+      "nome": "Affinamento",
+      "file": "affinamento.json"
+    },
+    {
+      "nome": "Arma Preferita",
+      "file": "arma_preferita.json"
+    },
+    {
+      "nome": "Emeriticenza Assoluta",
+      "file": "emeriticenza_assoluta.json"
+    },
+    {
+      "nome": "Energumeno",
+      "file": "energumeno.json"
+    },
+    {
+      "nome": "Fandonia Migliorata",
+      "file": "fandonia_migliorata.json"
+    },
+    {
+      "nome": "Fandonia Potenziata",
+      "file": "fandonia_potenziata.json"
+    },
+    {
+      "nome": "Gioco di Squadra",
+      "file": "gioco_di_squadra.json"
+    },
+    {
+      "nome": "Il Dono del Talento",
+      "file": "il_dono_del_talento.json"
+    },
+    {
+      "nome": "Indomito",
+      "file": "indomito.json"
+    },
+    {
+      "nome": "Recupero Migliorato",
+      "file": "recupero_migliorato.json"
+    },
+    {
+      "nome": "Rissaiolo Professionista",
+      "file": "rissaiolo_professionista.json"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "_id": "spellinvisibilitasuperiored6fbc0",
+  "_key": "!item!spellinvisibilitasuperiored6fbc0",
+  "name": "Invisibilità Superiore",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tu o una creatura che tocchi diventate invisibili fino al termine dell'incantesimo. Qualsiasi cosa il bersaglio stia indossando o trasportando è invisibile fintanto che resta sulla persona del bersaglio.</p><h3>Note per il DM</h3><p><em>Greater Invisibility è top tier combat buff. Advantage/disadvantage ogni round è enorme. Solo 1 minuto bilancia potenza.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.246",
+    "level": 4,
+    "school": "ill",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-invisibilita-superiore",
+      "fonte": "D&D 5e PHB p.246",
+      "note_dm": "Greater Invisibility è top tier combat buff. Advantage/disadvantage ogni round è enorme. Solo 1 minuto bilancia potenza.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 4,
+        "attivazione": "action",
+        "range": "touch",
+        "durata": "1 minute",
+        "concentrazione": true,
+        "condizione": "invisible"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Illusione",
+        "level": 4
+      }
+    }
+  }
+}

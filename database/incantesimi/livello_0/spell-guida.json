@@ -1,0 +1,36 @@
+{
+  "id": "spell-guida",
+  "nome": "Guida",
+  "nome_inglese": "Guidance",
+  "livello": 0,
+  "scuola": "Divinazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Contatto",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "Concentrazione, fino a 1 minuto",
+  "descrizione": "Tocchi una creatura consenziente. Una volta prima che l'incantesimo finisca, il bersaglio può tirare un d4 e aggiungere il numero tirato a una prova di caratteristica a sua scelta. Può tirare il dado prima o dopo aver effettuato la prova. L'incantesimo poi termina.",
+  "classi": ["Chierico", "Druido"],
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "action",
+    "range": "touch",
+    "durata": "1 minute",
+    "concentrazione": true,
+    "effetto": "1d4 bonus to ability check"
+  },
+  "utilizzo": {
+    "skill_checks": "+1d4 a qualsiasi prova abilità",
+    "non_combat": "Initiative non è ability check",
+    "single_use": "Si usa una volta poi finisce"
+  },
+  "valore": {
+    "media_bonus": "+2.5 medio",
+    "sempre_utile": "Applicabile a quasi tutto",
+    "spam_potenziale": "Ricastabile dopo uso"
+  },
+  "note_dm": "Guidance è uno dei migliori cantrip. +1d4 è significativo. Alcuni tavoli limitano lo spam continuo.",
+  "fonte": "D&D 5e PHB p.248"
+}

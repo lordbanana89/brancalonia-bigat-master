@@ -1,0 +1,17 @@
+{
+  "id": "037",
+  "nome": "L'Uncino del Pirata Fantasma",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Uncino arrugginito che gocciola acqua salata",
+  "proprieta": "Può toccare e ferire creature incorporee",
+  "maledizione": "Il braccio si paralizza durante le tempeste",
+  "valore": "550 mo",
+  "storia": "Il pirata cerca ancora la sua mano",
+  "maledizione_specifica": "Il braccio si paralizza durante le tempeste",
+  "implementazione": {
+    "tipo": "maledetto",
+    "attivo": false,
+    "active_effects": []
+  }
+}

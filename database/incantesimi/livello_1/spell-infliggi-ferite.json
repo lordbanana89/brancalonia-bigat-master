@@ -1,0 +1,73 @@
+{
+  "id": "spell-infliggi-ferite",
+  "nome": "Infliggi Ferite",
+  "nome_inglese": "Inflict Wounds",
+  "livello": 1,
+  "scuola": "Necromanzia",
+  "tempo_lancio": "1 azione",
+  "gittata": "Contatto",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "Istantanea",
+  "descrizione": "Effettua un attacco con incantesimo in mischia contro una creatura che puoi raggiungere. Se colpisci, il bersaglio subisce 3d10 danni necrotici.",
+  "classi": ["Chierico"],
+  "scaling": {
+    "slot_1": "3d10",
+    "slot_2": "4d10",
+    "slot_3": "5d10",
+    "slot_4": "6d10",
+    "slot_5": "7d10",
+    "slot_6": "8d10"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "action",
+    "range": "touch",
+    "attacco": "melee spell",
+    "danno": "3d10",
+    "danno_tipo": "necrotic"
+  },
+  "danno_analisi": {
+    "medio": "16.5 danni (3d10)",
+    "minimo": "3 danni",
+    "massimo": "30 danni",
+    "confronto": "Highest damage lv1 spell"
+  },
+  "confronto_damage_lv1": {
+    "vs_guiding_bolt": "3d10 vs 4d6 ma melee",
+    "vs_chromatic_orb": "3d10 vs 3d8 ma touch",
+    "vs_burning_hands": "Single target vs AoE"
+  },
+  "problemi": [
+    "Melee range pericoloso per cleric",
+    "Può missare (attack roll)",
+    "Necrotic a volte resistito",
+    "No rider effects"
+  ],
+  "quando_usare": [
+    "Cleric già in melee",
+    "Target immobilizzato",
+    "War/Tempest/Death domain",
+    "Finishing blow"
+  ],
+  "domain_synergy": {
+    "death_domain": "Bonus necrotic damage",
+    "war_domain": "Bonus attack possibili",
+    "tempest": "Meno synergy ma tanky"
+  },
+  "scaling_efficienza": {
+    "buono": "+1d10 per level",
+    "confronto": "Scala meglio di cure wounds",
+    "high_level": "8d10 a 6° livello devastante"
+  },
+  "spiritual_weapon_combo": {
+    "azione": "Inflict Wounds",
+    "bonus": "Spiritual Weapon attack",
+    "danno_totale": "3d10 + 1d8+mod"
+  },
+  "note_dm": "Inflict Wounds è il più alto danno single-target livello 1. Touch range lo bilancia. Ottimo per cleric aggressivi.",
+  "fonte": "D&D 5e PHB p.253"
+}

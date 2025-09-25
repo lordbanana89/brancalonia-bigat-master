@@ -1,0 +1,24 @@
+{
+  "id": "gioco-gara-di-mangiate",
+  "titolo": "Gara di Mangiate",
+  "descrizione": "Competizione culinaria a manche, molto amata da morganti e fratacchioni, dove resistere alle abbuffate porta alla vittoria.",
+  "posta": "Ogni manche richiede 1 ma di mancia; il montepremi finale e la meta della posta accumulata (il resto va al locandiere).",
+  "svolgimento": [
+    "Posizionare un d6 al centro del tavolo con valore iniziale 1: rappresenta il Dado Mangiata e aumenta di 1 a ogni manche.",
+    "Ogni manche tutti effettuano un tiro salvezza su Costituzione CD 10 + valore del Dado Mangiata; chi fallisce subisce batoste pari al valore del dado.",
+    "La competizione continua finche resta in piedi un solo partecipante (vince meta della posta) oppure fino a che tutti crollano (la posta resta al locandiere)."
+  ],
+  "regola_speciale": {
+    "nome": "Muro dell'Appetito",
+    "effetto": "Quando il Dado Mangiata supera il bonus di Costituzione di un partecipante, questi subisce svantaggio ai successivi tiri della gara."
+  },
+  "piatti_epici": [
+    "Sagra della pizza o della pasta: ignora il Muro dell'Appetito.",
+    "Vino buono: riduce di 2 la CD dei tiri salvezza.",
+    "Carnazza o caponata: aumenta di 2 la CD dei tiri salvezza."
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "58-59"
+  }
+}

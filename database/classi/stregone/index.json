@@ -1,0 +1,70 @@
+{
+  "id": "class-stregone",
+  "nome": "Stregone",
+  "tipo": "classe",
+  "fonte": "Manuale del Giocatore p.100",
+  "descrizione": "Incantatore istintivo che alimenta la magia con il potere della propria stirpe o di una forza caotica.",
+  "dado_vita": "d6",
+  "punti_ferita": {
+    "al_1_livello": "6 + modificatore Costituzione",
+    "livelli_successivi": "1d6 (o 4) + modificatore Costituzione per livello"
+  },
+  "competenze": {
+    "armature": "Nessuna",
+    "armi": [
+      "Pugnali",
+      "Dardo",
+      "Fionda",
+      "Bastone ferrato",
+      "Balestra leggera"
+    ],
+    "attrezzi": "Nessuno",
+    "tiri_salvezza": [
+      "Costituzione",
+      "Carisma"
+    ],
+    "abilita": {
+      "numero": 2,
+      "scelte": [
+        "Arcano",
+        "Inganno",
+        "Intimidazione",
+        "Persuasione",
+        "Religione"
+      ]
+    }
+  },
+  "equipaggiamento_iniziale": [
+    "(a) una balestra leggera e 20 quadrelli oppure (b) qualsiasi arma semplice",
+    "(a) un kit da componente oppure (b) un focus arcano",
+    "(a) un equipaggiamento da artigiano oppure (b) un equipaggiamento da esploratore",
+    "Due pugnali"
+  ],
+  "multiclasse": {
+    "requisiti": "Carisma 13",
+    "competenze_ottenute": [
+      "Pugnali",
+      "Dardo",
+      "Fionda",
+      "Bastone ferrato",
+      "Balestra leggera"
+    ]
+  },
+  "incantesimi": {
+    "lista": "database/incantesimi/stregone.json",
+    "caratteristica": "Carisma"
+  },
+  "note_brancalonia": {
+    "privilegio_rissa": "Scintille di Fandonia aggiungono danni caotici nelle risse",
+    "integrazione_dnd5e": "Metamagia e punti stregoneria restano agganciati al compendio ufficiale"
+  },
+  "validazione": {
+    "stato": "in_progress",
+    "note": "Verificare armonizzazione con le origini aggiuntive e gestione dei punti"
+  },
+  "collegamenti": {
+    "privilegi_generali": "privilegi_generali/index.json",
+    "progressione": "progressione/progressione.json",
+    "cammini": "cammini/index.json"
+  }
+}

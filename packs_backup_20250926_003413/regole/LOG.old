@@ -1,0 +1,15 @@
+2025/09/25-10:57:21.450379 16f317000 Recovering log #8
+2025/09/25-10:57:21.451334 16f317000 Delete type=3 #6
+2025/09/25-10:57:21.451410 16f317000 Delete type=0 #8
+2025/09/25-10:57:21.453795 16fbaf000 Level-0 table #14: started
+2025/09/25-10:57:21.454397 16fbaf000 Level-0 table #14: 52117 bytes OK
+2025/09/25-10:57:21.454473 16fbaf000 Delete type=0 #12
+2025/09/25-10:57:21.454545 16fbaf000 Manual compaction at level-0 from '!journal!armiDaFuocoPrimitive001' @ 72057594037927935 : 1 .. '!pages!vitaDaVagabondo001_page_1' @ 0 : 0; will stop at (end)
+2025/09/25-10:57:21.454559 16fbaf000 Manual compaction at level-1 from '!journal!armiDaFuocoPrimitive001' @ 72057594037927935 : 1 .. '!pages!vitaDaVagabondo001_page_1' @ 0 : 0; will stop at '!pages!vitaDaVagabondo001_page_1' @ 108 : 1
+2025/09/25-10:57:21.454567 16fbaf000 Compacting 1@1 + 1@2 files
+2025/09/25-10:57:21.455304 16fbaf000 Generated table #15@1: 36 keys, 52117 bytes
+2025/09/25-10:57:21.455319 16fbaf000 Compacted 1@1 + 1@2 files => 52117 bytes
+2025/09/25-10:57:21.455378 16fbaf000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/25-10:57:21.455414 16fbaf000 Delete type=2 #14
+2025/09/25-10:57:21.455482 16fbaf000 Delete type=2 #10
+2025/09/25-10:57:21.455573 16fbaf000 Manual compaction at level-1 from '!pages!vitaDaVagabondo001_page_1' @ 108 : 1 .. '!pages!vitaDaVagabondo001_page_1' @ 0 : 0; will stop at (end)

@@ -1,0 +1,11 @@
+{
+  "id": "scaramante_stregone-livello_1-protetto_dal_fato",
+  "livello": 1,
+  "nome": "protetto_dal_fato",
+  "tipo": "attivo",
+  "descrizione": "Tira 1d20 extra per attacchi/prove/TS (o contro attacchi subiti), sceglie quale usare. 1/riposo lungo",
+  "implementazione": "flags.brancalonia-bigat.protettoFato = true",
+  "mode": 5,
+  "usi": "1/riposo lungo",
+  "nota": "Simile a Lucky feat ma più potente"
+}

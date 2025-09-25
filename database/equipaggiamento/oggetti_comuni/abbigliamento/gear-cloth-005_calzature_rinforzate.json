@@ -1,0 +1,16 @@
+{
+  "id": "gear-cloth-005",
+  "nome": "Calzature Rinforzate",
+  "categoria": "oggetto_comune",
+  "sottotipo": "abbigliamento",
+  "costo": "5 ma",
+  "peso": "1 kg",
+  "descrizione": "Stivali di cuoio con suole chiodate utili su terreni scivolosi.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Scaglianza",
+  "fonte": "Manuale Base p.39",
+  "tipo": "talento",
+  "descrizione": "Maestria nel lanciare oggetti con precisione assoluta",
+  "requisiti": "Nessuno",
+  "meccaniche": {
+    "lancio_universale": {
+      "tipo": "narrativo",
+      "descrizione": "Armi senza proprietà lancio ottengono lancio (3/6)",
+      "nota": "Richiede override sistema di combattimento"
+    },
+    "lancio_accurato": {
+      "tipo": "narrativo",
+      "descrizione": "Armi con lancio considerate come accurate",
+      "nota": "Richiede modifica proprietà armi"
+    },
+    "gittata_estesa": {
+      "tipo": "attivo",
+      "descrizione": "Gittata normale e lunga +3 metri per armi da lancio",
+      "implementazione": "flags.brancalonia-bigat.scaglianza = true",
+      "mode": 2
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "scaglianza",
+    "compendio": "talenti"
+  }
+}

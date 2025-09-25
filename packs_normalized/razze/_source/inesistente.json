@@ -1,0 +1,67 @@
+{
+  "_id": "inesistente66a334",
+  "_key": "!items!inesistente66a334",
+  "name": "Inesistente",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pura coscienza astratta racchiusa in abiti vuoti, armature o mantelli che si muovono da soli</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.8-9",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.8-9",
+      "validazione": {
+        "implementato": false,
+        "file_id": "inesistente_macaronicon",
+        "compendio": "razze_macaronicon"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cavaliere_errante_paladino-livello_3-ispirare_compagni",
+  "livello": 3,
+  "nome": "ispirare_compagni",
+  "tipo": "attivo",
+  "descrizione": "Incanalare Divinità (azione): 6 creature entro 9m ottengono PF temp = CAR mod, immuni a spaventato, vantaggio TS SAG per 1 min",
+  "implementazione": {
+    "pf_temp": "flags.brancalonia-bigat.ispirareHP = '@abilities.cha.mod'",
+    "immunita": "flags.brancalonia-bigat.ispirareImmune = 'frightened'",
+    "vantaggio": "flags.brancalonia-bigat.ispirareAdvantage = 'wis'"
+  },
+  "mode": 2,
+  "durata": "1 minuto"
+}

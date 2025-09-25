@@ -1,0 +1,71 @@
+{
+  "fonte": "Manuale Base Brancalonia",
+  "sezioni": [
+    {
+      "chiave": "cimeli",
+      "file": "cimeli.json"
+    },
+    {
+      "chiave": "combattimento",
+      "index": "combattimento/index.json",
+      "titolo": "Regole di Combattimento",
+      "stato": "parziale"
+    },
+    {
+      "chiave": "condizioni",
+      "index": "condizioni/index.json",
+      "titolo": "Condizioni e Stati",
+      "stato": "collegato"
+    },
+    {
+      "chiave": "economia",
+      "index": "economia/index.json",
+      "titolo": "Economia e Equipaggiamento",
+      "stato": "parziale"
+    },
+    {
+      "chiave": "esplorazione",
+      "index": "esplorazione/index.json",
+      "titolo": "Esplorazione e Vita nel Regno",
+      "stato": "parziale"
+    },
+    {
+      "chiave": "malefatte_taglia",
+      "index": "malefatte_taglia/index.json",
+      "titolo": null,
+      "stato": null
+    },
+    {
+      "chiave": "nomea_sbraco",
+      "index": "nomea_sbraco/index.json",
+      "titolo": "Nomea, Taglie e Sbraco",
+      "stato": "parziale"
+    },
+    {
+      "chiave": "prove_caratteristica",
+      "index": "prove_caratteristica/index.json",
+      "titolo": "Prove di Caratteristica e Competenze",
+      "stato": "parziale"
+    },
+    {
+      "chiave": "riposi_guarigione",
+      "index": "riposi_guarigione/index.json",
+      "titolo": "Riposi, Guarigione e Sbraco",
+      "stato": "parziale"
+    },
+    {
+      "chiave": "rissa",
+      "index": "rissa/index.json",
+      "titolo": null,
+      "stato": null
+    },
+    {
+      "chiave": "sistema_malefatte_taglia",
+      "file": "sistema_malefatte_taglia.json"
+    },
+    {
+      "chiave": "sistema_rissa",
+      "file": "sistema_rissa.json"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "animal-001",
+  "nome": "Asino o Mulo",
+  "categoria": "animale_equipaggiamento",
+  "tipo": "bestia_da_soma",
+  "costo": "8 mo",
+  "velocita": "12 m",
+  "capacita_carico": "190 kg",
+  "descrizione": "Utilizzato per trasportare merci o trainare piccoli carri. Non può combattere se sovraccarico.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Cavalcature e Animali"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

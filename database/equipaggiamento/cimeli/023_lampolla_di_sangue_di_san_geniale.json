@@ -1,0 +1,15 @@
+{
+  "id": "023",
+  "nome": "L'Ampolla di Sangue di San Geniale",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Fiala di cristallo con sangue che si liquefa",
+  "proprieta": "Si liquefa in presenza di pericolo mortale entro 30m",
+  "valore": "5000 mo",
+  "storia": "San Geniale fu martirizzato 7 volte",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "047",
+  "nome": "L'Icona Piangente",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Dipinto sacro che piange sangue",
+  "proprieta": "Predice disgrazie (piange 24 ore prima)",
+  "valore": "800 mo",
+  "storia": "Pianse per 7 giorni prima della peste",
+  "utilita": "Permette di prepararsi al peggio",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

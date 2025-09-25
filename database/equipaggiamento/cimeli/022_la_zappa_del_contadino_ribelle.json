@@ -1,0 +1,16 @@
+{
+  "id": "022",
+  "nome": "La Zappa del Contadino Ribelle",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Zappa rugginosa ma ancora tagliente",
+  "proprieta": "Conta come arma +1 contro nobili e soldati",
+  "valore": "100 mo",
+  "storia": "Usata per decapitare il Barone oppressore",
+  "bonus": "Il portatore non può essere intimidito da autorità",
+  "implementazione": {
+    "tipo": "magico_minore",
+    "attivo": false,
+    "active_effects": []
+  }
+}

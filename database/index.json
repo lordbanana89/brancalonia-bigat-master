@@ -1,0 +1,162 @@
+{
+  "schema_version": "2024-04-30",
+  "categories": [
+    {
+      "group": "Manuale Base",
+      "key": "backgrounds_base",
+      "label": "Backgrounds",
+      "path": "database/backgrounds",
+      "expected": 6,
+      "present": 6,
+      "status": "complete",
+      "notes": "Attaccabrighe, Ambulante, Azzeccagarbugli, Brado, Duro, Fuggitivo (index presente)"
+    },
+    {
+      "group": "Manuale Base",
+      "key": "classi_base",
+      "label": "Classi e Archetipi di Canaglia",
+      "path": "database/classi",
+      "expected": 12,
+      "present": 12,
+      "status": "complete",
+      "notes": "Tutte le classi migrate: privilegi individuali e progressioni collegati (vedi database/classi/index)."
+    },
+    {
+      "group": "Manuale Base",
+      "key": "razze_base",
+      "label": "Razze",
+      "path": "database/razze",
+      "expected": 6,
+      "present": 6,
+      "status": "complete",
+      "notes": "Razze strutturate con tratti, varianti e sottorazze separate (database/razze/index)."
+    },
+    {
+      "group": "Manuale Base",
+      "key": "talenti_base",
+      "label": "Talenti",
+      "path": "database/talenti",
+      "expected": 8,
+      "present": 8,
+      "status": "incomplete",
+      "notes": "Necessaria validazione effetti e riferimenti"
+    },
+    {
+      "group": "Manuale Base",
+      "key": "emeriticenze_base",
+      "label": "Emeriticenze",
+      "path": "database/emeriticenze",
+      "expected": 12,
+      "present": 12,
+      "status": "incomplete",
+      "notes": "Structure ok; active effects da revisionare"
+    },
+    {
+      "group": "Manuale Base",
+      "key": "regole_base",
+      "label": "Regole principali",
+      "path": "database/regole",
+      "expected": 6,
+      "present": 5,
+      "status": "incomplete",
+      "notes": "Rissa e Malefatte/Taglia migrati. Mancano regole combattimento, esplorazione, tabelle varie"
+    },
+    {
+      "group": "Manuale Base",
+      "key": "equipaggiamento_base",
+      "label": "Equipaggiamento",
+      "path": "database/equipaggiamento",
+      "expected": 6,
+      "present": 6,
+      "status": "incomplete",
+      "notes": "Cimeli, intrugli, armi/armature standard, oggetti scadenti, oggetti contraffatti, provviste e animali strutturati. Restano da integrare listini completi e validazione."
+    },
+    {
+      "group": "Macaronicon",
+      "key": "backgrounds_mac",
+      "label": "Backgrounds",
+      "path": "database/macaronicon/backgrounds",
+      "expected": 8,
+      "present": 8,
+      "status": "complete",
+      "notes": "Ogni background in file singolo + index json"
+    },
+    {
+      "group": "Macaronicon",
+      "key": "sottoclassi_mac",
+      "label": "Sottoclassi",
+      "path": "database/macaronicon/sottoclassi",
+      "expected": 10,
+      "present": 10,
+      "status": "complete",
+      "notes": "Index + file numerati completati"
+    },
+    {
+      "group": "Macaronicon",
+      "key": "incantesimi_mac",
+      "label": "Incantesimi",
+      "path": "database/macaronicon/incantesimi/dettagli",
+      "expected": 18,
+      "present": 18,
+      "status": "complete",
+      "notes": "Livelli 0-3 suddivisi, mancano liste per classe"
+    },
+    {
+      "group": "Macaronicon",
+      "key": "equipaggiamento_ciamp_mac",
+      "label": "Ciarpame Magico",
+      "path": "database/macaronicon/equipaggiamento/ciarpame_magico",
+      "expected": 18,
+      "present": 18,
+      "status": "complete",
+      "notes": "Scritte singole + index"
+    },
+    {
+      "group": "Macaronicon",
+      "key": "equipaggiamento_altro_mac",
+      "label": "Equipaggiamento aggiuntivo",
+      "path": "database/macaronicon/equipaggiamento",
+      "expected": 4,
+      "present": 4,
+      "status": "incomplete",
+      "notes": "Ciarpame magico completo; aggiunte armi, armature e oggetti speciali del Macaronicon. Da verificare se servono ulteriori sostanze o liste per altre sezioni."
+    },
+    {
+      "group": "Macaronicon",
+      "key": "png_mac",
+      "label": "PNG e Mostri",
+      "path": "database/macaronicon/png_mostri",
+      "expected": 4,
+      "present": 4,
+      "status": "complete",
+      "notes": "Categorie (png/mostri minori/maggiori) con index dedicati"
+    },
+    {
+      "group": "Macaronicon",
+      "key": "avventure_mac",
+      "label": "Avventure",
+      "path": "database/macaronicon/avventure",
+      "expected": 12,
+      "present": 12,
+      "status": "complete",
+      "notes": "12 cartelle (01_-12_) con index"
+    }
+  ],
+  "scripts": [
+    "scripts/split-macaronicon-incantesimi.mjs",
+    "scripts/split-macaronicon-ciarpame.mjs",
+    "database/split_cimeli.mjs",
+    "scripts/split-regole-rissa.mjs",
+    "scripts/split-regole-malefatte.mjs",
+    "scripts/split-classi-pagano.mjs",
+    "scripts/split-razze-base.mjs",
+    "scripts/split-intrugli.mjs",
+    "scripts/split-macaronicon-avventure.mjs",
+    "scripts/split-macaronicon-espansioni.mjs",
+    "scripts/split-macaronicon-png.mjs"
+  ],
+  "todo": [
+    "Estrarre equipaggiamento comune (armi, armature, oggetti)",
+    "Strutturare regole comb. generale / esplorazione"
+  ]
+}

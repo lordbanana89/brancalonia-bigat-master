@@ -1,0 +1,22 @@
+{
+  "id": "menagramo_warlock-livello_1-lista_ampliata",
+  "livello": 1,
+  "nome": "lista_ampliata",
+  "tipo": "advancement",
+  "descrizione": "Lista incantesimi ampliata della Malasorte",
+  "implementazione": "Gestito da Advancement API - Expanded Spell List",
+  "lista_incantesimi": {
+    "1": [
+      "anatema",
+      "sonno"
+    ],
+    "2": [
+      "accecare/assordare",
+      "crescita di spine"
+    ],
+    "3": [
+      "animare i morti",
+      "scagliare maledizione"
+    ]
+  }
+}

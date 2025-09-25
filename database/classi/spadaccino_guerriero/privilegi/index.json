@@ -1,0 +1,11 @@
+{
+  "totale": 1,
+  "privilegi": [
+    {
+      "id": "spadaccino_guerriero-livello_3-scuola_scherma",
+      "livello": 3,
+      "nome": "scuola_scherma",
+      "file": "spadaccino_guerriero-livello_3-scuola_scherma.json"
+    }
+  ]
+}

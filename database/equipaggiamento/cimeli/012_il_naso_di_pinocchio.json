@@ -1,0 +1,16 @@
+{
+  "id": "012",
+  "nome": "Il Naso di Pinocchio",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Pezzo di legno a forma di naso",
+  "proprieta": "Si allunga quando il portatore mente",
+  "valore": "200 mo",
+  "storia": "Tagliato dal famoso burattino quando divenne bambino vero",
+  "utilizzo": "Rivela automaticamente le bugie del portatore",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "categoria": "Liste Incantesimi Manuale Base",
+  "descrizione": "Placeholder in attesa di estrazione completa dalle pagine del manuale.",
+  "classi": [
+    {
+      "classe": "chierico",
+      "file": "chierico.json",
+      "totale": 6,
+      "note": "Dominio del Calendario"
+    },
+    {
+      "classe": "druido",
+      "file": "druido.json",
+      "totale": 7,
+      "note": "Circolo della Danza Macabra"
+    },
+    {
+      "classe": "bardo",
+      "file": "bardo.json",
+      "totale": 0,
+      "note": "Da popolare con incantesimi per livello"
+    },
+    {
+      "classe": "paladino",
+      "file": "paladino.json",
+      "totale": 4,
+      "note": "Giuramento della Cavalleresca Erranza"
+    },
+    {
+      "classe": "ranger",
+      "file": "ranger.json",
+      "totale": 0,
+      "note": "Da popolare con incantesimi per livello"
+    },
+    {
+      "classe": "mago",
+      "file": "mago.json",
+      "totale": 0,
+      "note": "Da popolare con incantesimi per livello"
+    },
+    {
+      "classe": "stregone",
+      "file": "stregone.json",
+      "totale": 0,
+      "note": "Da popolare con incantesimi per livello"
+    },
+    {
+      "classe": "warlock",
+      "file": "warlock.json",
+      "totale": 6,
+      "note": "Patrono della Malasorte"
+    }
+  ],
+  "risorse_base": "base/index.json"
+}

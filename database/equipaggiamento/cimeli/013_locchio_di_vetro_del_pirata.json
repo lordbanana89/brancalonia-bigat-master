@@ -1,0 +1,16 @@
+{
+  "id": "013",
+  "nome": "L'Occhio di Vetro del Pirata",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Occhio di vetro con pupilla dorata",
+  "proprieta": "Chi lo mette nell'orbita vede attraverso nebbia e tempeste",
+  "valore": "1000 mo",
+  "storia": "Il pirata Guercio vide il tesoro ma morì prima di raggiungerlo",
+  "prezzo": "Deve sacrificare un occhio vero",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

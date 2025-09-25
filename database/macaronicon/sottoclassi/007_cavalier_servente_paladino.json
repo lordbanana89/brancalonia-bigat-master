@@ -1,0 +1,38 @@
+{
+  "id": "mac-sub-007",
+  "nome": "Cavalier Servente",
+  "classe_base": "Paladino",
+  "categoria": "Giuramento d'Amore",
+  "fonte": {
+    "manuale": "Brancalonia Macaronicon",
+    "pagine": "30-31"
+  },
+  "descrizione": "Paladini votati all'Amor Cortese e al servizio di un'unica Dama o Sire, guidati da poesia, cortesia e giustizia.",
+  "dettami": [
+    "Servizio d'amore: agisci sempre per rendere orgoglioso il tuo Amante.",
+    "Fedeltà d'amore: incarna gentilezza, benevolenza, giustizia, amistà e passione cortese."
+  ],
+  "progressione": [
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "nome": "Incantesimi del Giuramento",
+          "descrizione": "Ottieni incantesimi aggiuntivi ai livelli da paladino indicati nella tabella omonima."
+        },
+        {
+          "nome": "Incanalare Divinità",
+          "descrizione": "Sblocchi due opzioni: Divino amore (resistenza a tutti i danni per 1 min, senza poter lanciare o concentrare incantesimi) e Inno all'amore (danni radiosi e sordità con TS Saggezza a 9 m)."
+        }
+      ]
+    }
+  ],
+  "incantesimi_giuramento": [
+    { "livello": 3, "incantesimi": ["charme su persone", "eroismo"] },
+    { "livello": 5, "incantesimi": ["calmare emozioni", "vincolo di interdizione"] }
+  ],
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo_fino_a_livello": 3
+  }
+}

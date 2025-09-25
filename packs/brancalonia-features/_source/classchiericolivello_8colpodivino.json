@@ -1,0 +1,72 @@
+{
+  "_id": "classchiericolivello8colpodivino3c6978",
+  "_key": "!item!classchiericolivello8colpodivino3c6978",
+  "name": "Colpo Divino",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>All'8° livello, ottieni la capacità di infondere i tuoi colpi con energia divina. Una volta per ogni tuo turno quando colpisci una creatura con un attacco con arma, puoi far sì che l'attacco infligga 1d8 danni radianti extra al bersaglio. Quando raggiungi il 14° livello, i danni extra aumentano a 2d8.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.58",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-chierico-livello_8-colpo-divino",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58"
+    }
+  }
+}

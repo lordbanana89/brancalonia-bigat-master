@@ -1,0 +1,18 @@
+{
+  "id": "arma-std-007",
+  "nome": "Mazza",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "5 mo",
+  "danni": "1d6 contundenti",
+  "proprieta": [],
+  "peso": "1.8 kg",
+  "descrizione": "Arma contundente con testa metallica pesante.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

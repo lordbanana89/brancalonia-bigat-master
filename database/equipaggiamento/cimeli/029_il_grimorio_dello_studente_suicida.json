@@ -1,0 +1,17 @@
+{
+  "id": "029",
+  "nome": "Il Grimorio dello Studente Suicida",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Libro di incantesimi con pagine macchiate di sangue",
+  "proprieta": "Contiene 3 incantesimi casuali di 1°-3° livello",
+  "maledizione": "Ogni incantesimo imparato costa 1 punto Saggezza permanente",
+  "valore": "1200 mo",
+  "storia": "Lo studente impazzì cercando la formula perfetta",
+  "maledizione_specifica": "Ogni incantesimo imparato costa 1 punto Saggezza permanente",
+  "implementazione": {
+    "tipo": "maledetto",
+    "attivo": false,
+    "active_effects": []
+  }
+}

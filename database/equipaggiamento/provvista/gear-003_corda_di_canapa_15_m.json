@@ -1,0 +1,15 @@
+{
+  "id": "gear-003",
+  "nome": "Corda di Canapa (15 m)",
+  "categoria": "provvista_avventuriera",
+  "costo": "1 mo",
+  "peso": "5 kg",
+  "descrizione": "Robusta corda di canapa lunga 15 metri, può supportare fino a 250 kg.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

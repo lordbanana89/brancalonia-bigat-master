@@ -1,0 +1,59 @@
+{
+  "id": "class-chierico-dominio-tempesta",
+  "nome": "Dominio della Tempesta",
+  "fonte": "Manuale del Giocatore p.61",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Competenze Marziali",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bonus Proficiencies (Tempest)"
+        }
+      },
+      {
+        "nome": "Ira della Tempesta",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Wrath of the Storm"
+        }
+      }
+    ],
+    "livello_2": [
+      {
+        "nome": "Incanalare Divinità: Ira Distruttiva",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Destructive Wrath"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Colpo del Fulmine",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Thunderbolt Strike"
+        }
+      }
+    ],
+    "livello_8": [
+      {
+        "nome": "Colpo Divino (tuono/fulmine)",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Divine Strike (Tempest)"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Nato dalla Tempesta",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Stormborn"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-010",
+  "nome": "Lancia",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "1 mo",
+  "danni": "1d6 perforanti",
+  "proprieta": [
+    "Versatile (1d8)",
+    "Lancio (6/18 m)"
+  ],
+  "peso": "1.4 kg",
+  "descrizione": "Arma a punta utilizzabile sia in mischia sia da lancio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

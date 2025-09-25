@@ -1,0 +1,77 @@
+{
+  "_id": "scadente003armature8af0fb",
+  "_key": "!item!scadente003armature8af0fb",
+  "name": "Armature Scadenti",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Corazze arrugginite, cuoi induriti e scudi sgangherati pronti a cadere a pezzi.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "armor": {
+      "value": 10,
+      "type": "light",
+      "dex": null
+    },
+    "strength": 0,
+    "stealth": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "scadente-003",
+      "fonte": {
+        "manuale": "Manuale Base",
+        "pagine": "62-63"
+      },
+      "validazione": {
+        "stato": "da_validare",
+        "estratto_da": "manuale_brancalonia.txt"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "titolo": "Malefatte",
+  "elementi": [
+    {
+      "tipo": "descrizione",
+      "file": "descrizione.json"
+    },
+    {
+      "tipo": "modificatori",
+      "file": "modificatori.json"
+    },
+    {
+      "tipo": "tabella_crimini",
+      "file": "tabella_crimini.json"
+    }
+  ]
+}

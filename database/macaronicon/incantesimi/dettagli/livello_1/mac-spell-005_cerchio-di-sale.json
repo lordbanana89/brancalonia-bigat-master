@@ -1,0 +1,22 @@
+{
+  "id": "mac-spell-005",
+  "livello": 1,
+  "nome": "Cerchio di Sale",
+  "scuola": "Abiurazione",
+  "tempo_lancio": "1 minuto",
+  "gittata": "Personale",
+  "componenti": "V, S, M (sale benedetto del valore di 10 mo)",
+  "durata": "8 ore",
+  "descrizione": "Crei un cerchio di 3m di raggio. Spiriti, non morti e fatati non possono entrare. TS Carisma CD 15 per tentare.",
+  "classi": [
+    "Chierico",
+    "Mago",
+    "Paladino"
+  ],
+  "rituale": true,
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

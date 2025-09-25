@@ -1,0 +1,34 @@
+{
+  "nome": "Mattatore",
+  "classe_base": "Ranger",
+  "fonte": "Manuale Base p.27",
+  "descrizione": "Cacciatori e catturatori di mostri per arene e circhi, esperti di Penumbria",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Archetipo Ranger",
+  "validazione": {
+    "implementato": true,
+    "file_id": "mattatore_maestro_esibizione",
+    "compendio": "brancalonia-features"
+  },
+  "privilegi": {
+    "totale": 2,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "id": "mattatore_ranger-livello_3-maestro_esibizione",
+          "nome": "maestro_esibizione",
+          "file": "privilegi/mattatore_ranger-livello_3-maestro_esibizione.json"
+        },
+        {
+          "id": "mattatore_ranger-livello_3-occhio_mattatore",
+          "nome": "occhio_mattatore",
+          "file": "privilegi/mattatore_ranger-livello_3-occhio_mattatore.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-016",
+  "nome": "Talismano di San Cagnate",
+  "rarita": "Raro",
+  "tipo": "Oggetto meraviglioso",
+  "sintonia": "No",
+  "descrizione": "Medaglione che protegge in combattimento",
+  "proprieta": [
+    "+1 CA",
+    "1 volta al giorno: ignorare un colpo critico",
+    "Deve essere baciato prima di ogni combattimento"
+  ],
+  "effetti_speciali": {
+    "maledizione": null,
+    "note": null,
+    "restrizione": null,
+    "rischio": null,
+    "effetto_collaterale": null,
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

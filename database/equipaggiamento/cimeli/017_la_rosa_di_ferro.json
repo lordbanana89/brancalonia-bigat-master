@@ -1,0 +1,17 @@
+{
+  "id": "017",
+  "nome": "La Rosa di Ferro",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Rosa di ferro battuto perfettamente realistica",
+  "proprieta": "Chi la regala fa automaticamente colpo (successo automatico Persuasione in corteggiamento)",
+  "maledizione": "L'amore dura solo fino al prossimo tramonto",
+  "valore": "300 mo",
+  "storia": "Forgiata da un fabbro per la donna che lo rifiutò",
+  "maledizione_specifica": "L'amore dura solo fino al prossimo tramonto",
+  "implementazione": {
+    "tipo": "maledetto",
+    "attivo": false,
+    "active_effects": []
+  }
+}

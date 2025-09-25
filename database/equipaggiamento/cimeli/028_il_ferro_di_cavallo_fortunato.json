@@ -1,0 +1,16 @@
+{
+  "id": "028",
+  "nome": "Il Ferro di Cavallo Fortunato",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Ferro di cavallo dorato trovato sulla strada",
+  "proprieta": "Una volta al giorno trasforma un fallimento critico in successo normale",
+  "valore": "300 mo",
+  "storia": "Dal cavallo che vinse 100 corse",
+  "durata": "Perde potere dopo 77 utilizzi",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

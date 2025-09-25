@@ -1,0 +1,67 @@
+{
+  "_id": "gattolupescoc729ef",
+  "_key": "!items!gattolupescoc729ef",
+  "name": "Gatto Lupesco",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p>Felini antropomorfi della grandezza di lonze e gattopardi con postura eretta</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.7",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.7",
+      "validazione": {
+        "implementato": false,
+        "file_id": "gatto_lupesco_macaronicon",
+        "compendio": "razze_macaronicon"
+      }
+    }
+  }
+}

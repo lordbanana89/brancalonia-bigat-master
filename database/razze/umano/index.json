@@ -1,0 +1,25 @@
+{
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione_globale": "Dettagli meccanici completi di tutte le razze giocabili",
+  "nome": "Umano",
+  "descrizione": "La razza più comune, adattabile e ambiziosa del Regno",
+  "aumento_caratteristiche": {
+    "standard": "+1 a tutte le caratteristiche",
+    "variante": "+1 a due caratteristiche a scelta"
+  },
+  "eta": {
+    "maturita": "18 anni",
+    "vita_media": "80 anni"
+  },
+  "allineamento": "Tendono verso nessun allineamento particolare",
+  "taglia": "Media",
+  "velocita": "9 metri",
+  "linguaggi": [
+    "Comune",
+    "Un linguaggio extra a scelta"
+  ],
+  "collegamenti": {
+    "tratti": "tratti/index.json",
+    "varianti": "varianti/index.json"
+  }
+}

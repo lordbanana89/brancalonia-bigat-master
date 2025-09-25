@@ -1,0 +1,25 @@
+{
+  "classe": "stregone",
+  "categoria": "Privilegi Generali",
+  "totale": 3,
+  "privilegi": [
+    {
+      "id": "class-stregone-livello_1-origine-stregonesca",
+      "nome": "Sangue Magico",
+      "file": "class-stregone-livello_1-origine-stregonesca.json",
+      "livello": 1
+    },
+    {
+      "id": "class-stregone-livello_2-fonte-magia",
+      "nome": "Potere Interiore",
+      "file": "class-stregone-livello_2-fonte-magia.json",
+      "livello": 2
+    },
+    {
+      "id": "class-stregone-livello_3-metamagia",
+      "nome": "Distorsione Arcana",
+      "file": "class-stregone-livello_3-metamagia.json",
+      "livello": 3
+    }
+  ]
+}

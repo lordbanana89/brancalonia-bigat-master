@@ -1,0 +1,20 @@
+{
+  "id": "png_minori-002",
+  "nome": "Brigante Veterano",
+  "grado_sfida": "2",
+  "tipo": "Umanoide",
+  "allineamento": "Caotico Neutrale",
+  "caratteristiche": {
+    "for": 15,
+    "des": 14,
+    "cos": 14,
+    "int": 10,
+    "sag": 13,
+    "car": 11
+  },
+  "abilita": "Atletica +4, Furtività +4, Sopravvivenza +3",
+  "descrizione": "Brigante esperto che ha sopravvissuto a molti scontri",
+  "equipaggiamento": "Spada, arco lungo, armatura di cuoio borchiato",
+  "azioni_speciali": "Multiattacco (2), Attacco furtivo (2d6)",
+  "fonte": "Brancalonia Macaronicon p.160-172"
+}

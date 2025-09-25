@@ -1,0 +1,38 @@
+{
+  "nome": "Speziale",
+  "fonte": "Manuale Base p.39",
+  "tipo": "talento",
+  "descrizione": "Esperto di erbe e rimedi antichi, crea intrugli e preparati medicinali",
+  "requisiti": "Nessuno",
+  "meccaniche": {
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Competenza borsa erborista, scorte alchimista, scorte mescitore",
+      "implementazione": {
+        "erborista": "system.tools.herbalism.value = 1",
+        "alchimista": "system.tools.alchemist.value = 1",
+        "mescitore": "system.tools.brewer.value = 1"
+      },
+      "mode": 5
+    },
+    "recupero_migliorato": {
+      "tipo": "narrativo",
+      "descrizione": "Riposo breve: fino a 6 creature sommano competenza a PF recuperati con DV"
+    },
+    "cura_condizioni": {
+      "tipo": "narrativo",
+      "descrizione": "Con borsa guaritore permette nuovo TS contro malattia/veleno"
+    },
+    "expertise_medicina": {
+      "tipo": "attivo",
+      "descrizione": "Competenza Medicina e bonus raddoppiato",
+      "implementazione": "system.skills.med.value = 2",
+      "mode": 5
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "speziale",
+    "compendio": "talenti"
+  }
+}

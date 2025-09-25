@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-003",
+  "nome": "Bisaccia del Contrabbandiere",
+  "rarita": "Non comune",
+  "tipo": "Oggetto meraviglioso",
+  "sintonia": "No",
+  "descrizione": "Borsa con spazio extradimensionale nascosto",
+  "proprieta": [
+    "Contiene fino a 30 kg in spazio nascosto",
+    "Ispezione normale non rivela contenuto segreto",
+    "CD 20 Investigare per scoprire il trucco"
+  ],
+  "effetti_speciali": {
+    "maledizione": null,
+    "note": null,
+    "restrizione": null,
+    "rischio": "10% di perdere oggetti nello spazio extradimensionale",
+    "effetto_collaterale": null,
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

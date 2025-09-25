@@ -1,0 +1,47 @@
+{
+  "id": "spell-messaggio",
+  "nome": "Messaggio",
+  "nome_inglese": "Message",
+  "livello": 0,
+  "scuola": "Trasmutazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "120 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Un pezzo di filo di rame"
+  },
+  "durata": "1 round",
+  "descrizione": "Punti il dito verso una creatura entro gittata e sussurri un messaggio. Il bersaglio (e solo il bersaglio) sente il messaggio e può rispondere con un sussurro che solo tu puoi sentire. Puoi lanciare questo incantesimo attraverso oggetti solidi se conosci il bersaglio e sai che si trova oltre la barriera. Silenzio magico, 1 piede di pietra, 1 pollice di metallo comune, una sottile lamina di piombo o 3 piedi di legno bloccano l'incantesimo. L'incantesimo non deve seguire una linea retta e può viaggiare liberamente dietro gli angoli o attraverso aperture.",
+  "classi": ["Bardo", "Mago", "Stregone"],
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "action",
+    "range": 120,
+    "durata": "1 round",
+    "comunicazione": "bidirezionale"
+  },
+  "meccaniche": {
+    "privacy": "Solo mittente e destinatario sentono",
+    "risposta": "Destinatario può rispondere",
+    "attraversamento": "Passa attraverso muri sottili",
+    "percorso": "Non serve linea retta"
+  },
+  "blocchi": [
+    "Silenzio magico",
+    "1 piede di pietra",
+    "1 pollice di metallo",
+    "Lamina di piombo",
+    "3 piedi di legno"
+  ],
+  "utilizzi_tattici": [
+    "Coordinamento silenzioso in stealth",
+    "Comunicare attraverso porte",
+    "Avvertire alleati di pericoli",
+    "Interrogatori discreti",
+    "Passare informazioni segrete"
+  ],
+  "note_dm": "Message è ottimo per comunicazione tattica. Non è telepathy, richiede sussurro verbale. Utile per split party.",
+  "fonte": "D&D 5e PHB p.259"
+}

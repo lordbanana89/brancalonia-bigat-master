@@ -1,0 +1,25 @@
+{
+  "categoria": "equipaggiamento_macaronicon",
+  "sezioni": [
+    {
+      "chiave": "armi",
+      "totale": 2,
+      "index": "armi/index.json"
+    },
+    {
+      "chiave": "armature",
+      "totale": 2,
+      "index": "armature/index.json"
+    },
+    {
+      "chiave": "oggetti_speciali",
+      "totale": 7,
+      "index": "oggetti_speciali/index.json"
+    },
+    {
+      "chiave": "ciarpame_magico",
+      "totale": 18,
+      "index": "ciarpame_magico/index.json"
+    }
+  ]
+}

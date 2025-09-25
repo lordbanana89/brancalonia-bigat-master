@@ -1,0 +1,58 @@
+{
+  "classe": "druido",
+  "fonte": "Manuale Base",
+  "categorie": [
+    {
+      "nome": "Circolo della Danza Macabra",
+      "descrizione": "Incantesimi sempre preparati per i benandanti legati al regno dei morti.",
+      "trucchi": [
+        {
+          "id": "spell-base-007",
+          "nome": "Fiamma Sacra"
+        }
+      ],
+      "livelli": [
+        {
+          "livello": 1,
+          "incantesimi": [
+            {
+              "id": "spell-base-008",
+              "nome": "Eroismo"
+            },
+            {
+              "id": "spell-base-009",
+              "nome": "Protezione dal Bene e dal Male"
+            }
+          ]
+        },
+        {
+          "livello": 2,
+          "incantesimi": [
+            {
+              "id": "spell-base-010",
+              "nome": "Arma Spirituale"
+            },
+            {
+              "id": "spell-base-004",
+              "nome": "Ristorare Inferiore"
+            }
+          ]
+        },
+        {
+          "livello": 3,
+          "incantesimi": [
+            {
+              "id": "spell-base-011",
+              "nome": "Guardiani Spirituali"
+            },
+            {
+              "id": "spell-base-012",
+              "nome": "Rimuovi Maledizione"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totale": 7
+}

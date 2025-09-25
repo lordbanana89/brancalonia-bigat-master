@@ -1,0 +1,72 @@
+{
+  "_id": "classdruidolivello1druidico4259b9",
+  "_key": "!item!classdruidolivello1druidico4259b9",
+  "name": "Druidico",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Conosci il Druidico, il linguaggio segreto dei druidi. Puoi parlare il linguaggio e usarlo per lasciare messaggi nascosti. Tu e altri che conoscono questo linguaggio notate automaticamente tali messaggi. Altri notano la presenza del messaggio con una prova riuscita di Saggezza (Percezione) CD 15 ma non possono decifrarlo senza magia.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.66",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-druido-livello_1-druidico",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.66"
+    }
+  }
+}

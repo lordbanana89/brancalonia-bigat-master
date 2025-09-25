@@ -1,0 +1,87 @@
+{
+  "id": "class-mago-livello_2-tradizione-arcana",
+  "nome": "Tradizione Arcana",
+  "nome_brancalonia": "Scuola del Guiscardo",
+  "livello": 2,
+  "tipo": "sottoclasse",
+  "descrizione": "Al 2° livello, scegli una tradizione arcana, plasmando la tua pratica della magia attraverso una delle scuole di magia. La tua scelta ti garantisce privilegi al 2° livello e di nuovo al 6°, 10° e 14° livello.",
+  "meccaniche": {
+    "scelta": "Permanente al 2° livello",
+    "privilegi_livelli": [2, 6, 10, 14]
+  },
+  "scuole_disponibili": {
+    "abiurazione": {
+      "nome": "Scuola di Abiurazione",
+      "tema": "Protezione e difesa magica",
+      "privilegio_2": "Arcane Ward",
+      "focus": "Tank magico"
+    },
+    "ammaliamento": {
+      "nome": "Scuola di Ammaliamento",
+      "tema": "Controllo mentale e charme",
+      "privilegio_2": "Hypnotic Gaze",
+      "focus": "Controllo sociale"
+    },
+    "divinazione": {
+      "nome": "Scuola di Divinazione",
+      "tema": "Preveggenza e conoscenza",
+      "privilegio_2": "Portent",
+      "focus": "Manipolare probabilità"
+    },
+    "evocazione": {
+      "nome": "Scuola di Evocazione",
+      "tema": "Danno e distruzione",
+      "privilegio_2": "Sculpt Spells",
+      "focus": "Blaster"
+    },
+    "illusione": {
+      "nome": "Scuola di Illusione",
+      "tema": "Inganni e miraggi",
+      "privilegio_2": "Improved Minor Illusion",
+      "focus": "Versatilità creativa"
+    },
+    "invocazione": {
+      "nome": "Scuola di Invocazione",
+      "tema": "Evocazioni e teletrasporto",
+      "privilegio_2": "Minor Conjuration",
+      "focus": "Utility e summon"
+    },
+    "necromanzia": {
+      "nome": "Scuola di Necromanzia",
+      "tema": "Morte e non morti",
+      "privilegio_2": "Grim Harvest",
+      "focus": "Sustain e minions"
+    },
+    "trasmutazione": {
+      "nome": "Scuola di Trasmutazione",
+      "tema": "Trasformazione e alchimia",
+      "privilegio_2": "Minor Alchemy",
+      "focus": "Versatilità"
+    }
+  },
+  "vantaggi_scuola": {
+    "savant": {
+      "descrizione": "Copia spell della scuola a metà tempo e costo",
+      "risparmio": "50% su incantesimi specializzati"
+    },
+    "privilegi_unici": "Ogni scuola ha meccaniche uniche potenti"
+  },
+  "confronto_scuole": {
+    "più_forte": {
+      "divinazione": "Portent è game-breaking",
+      "abiurazione": "Miglior sopravvivenza",
+      "evocazione": "Massimo danno"
+    },
+    "più_versatile": {
+      "illusione": "Creatività infinita",
+      "trasmutazione": "Cambia tutto",
+      "invocazione": "Utility estrema"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "subclass",
+    "effetti": "Varia per scuola scelta"
+  },
+  "note_dm": "La tradizione arcana definisce completamente lo stile del mago.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+}

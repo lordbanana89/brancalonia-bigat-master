@@ -1,0 +1,23 @@
+{
+  "totale": 3,
+  "privilegi": [
+    {
+      "id": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento",
+      "livello": 3,
+      "nome": "incantesimi_giuramento",
+      "file": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento.json"
+    },
+    {
+      "id": "cavaliere_errante_paladino-livello_3-ispirare_compagni",
+      "livello": 3,
+      "nome": "ispirare_compagni",
+      "file": "cavaliere_errante_paladino-livello_3-ispirare_compagni.json"
+    },
+    {
+      "id": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi",
+      "livello": 3,
+      "nome": "proteggere_bisognosi",
+      "file": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi.json"
+    }
+  ]
+}

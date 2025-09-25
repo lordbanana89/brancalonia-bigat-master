@@ -1,0 +1,35 @@
+{
+  "totale": 5,
+  "tratti": [
+    {
+      "id": "race-morgante-tratto-attacchi_selvaggi",
+      "nome": "Attacchi Selvaggi",
+      "categoria": "base",
+      "file": "tratto-002_attacchi_selvaggi.json"
+    },
+    {
+      "id": "race-morgante-tratto-costituzione_possente",
+      "nome": "Costituzione Possente",
+      "categoria": "base",
+      "file": "tratto-003_costituzione_possente.json"
+    },
+    {
+      "id": "race-morgante-tratto-resilienza_implacabile",
+      "nome": "Resilienza Implacabile",
+      "categoria": "base",
+      "file": "tratto-001_resilienza_implacabile.json"
+    },
+    {
+      "id": "race-morgante-tratto-fame_insaziabile",
+      "nome": "Fame Insaziabile",
+      "categoria": "brancalonia",
+      "file": "tratto-005_fame_insaziabile.json"
+    },
+    {
+      "id": "race-morgante-tratto-minaccioso",
+      "nome": "Minaccioso",
+      "categoria": "brancalonia",
+      "file": "tratto-004_minaccioso.json"
+    }
+  ]
+}

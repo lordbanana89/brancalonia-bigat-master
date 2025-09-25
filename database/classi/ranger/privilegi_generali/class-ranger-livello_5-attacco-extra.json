@@ -1,0 +1,13 @@
+{
+  "id": "class-ranger-livello_5-attacco-extra",
+  "nome": "Attacco Extra",
+  "nome_brancalonia": "Raffica del Cacciatore",
+  "livello": 5,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 5° livello, puoi attaccare due volte invece di una quando usi l'azione di Attacco nel tuo turno.",
+  "meccaniche": {
+    "numero_attacchi": 2
+  },
+  "note_dm": "Extra Attack raddoppia output del ranger.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.92"
+}

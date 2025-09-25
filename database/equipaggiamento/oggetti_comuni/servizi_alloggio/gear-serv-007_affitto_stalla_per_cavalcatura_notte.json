@@ -1,0 +1,16 @@
+{
+  "id": "gear-serv-007",
+  "nome": "Affitto Stalla per Cavalcatura (notte)",
+  "categoria": "oggetto_comune",
+  "sottotipo": "servizi_alloggio",
+  "costo": "5 ma",
+  "peso": "—",
+  "descrizione": "Box con foraggio e acqua fresca per una cavalcatura.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

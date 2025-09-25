@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-015",
+  "nome": "Spadone del Cavaliere Decaduto",
+  "rarita": "Raro",
+  "tipo": "Arma magica",
+  "sintonia": "Sì",
+  "descrizione": "Spadone +1 di un paladino caduto",
+  "proprieta": [
+    "+1 a colpire e danni",
+    "+2d6 danni radiosi a demoni e non morti",
+    "Punisce chi rompe giuramenti: il portatore subisce 1d6 danni psichici"
+  ],
+  "effetti_speciali": {
+    "maledizione": "Costringe a mantenere ogni promessa fatta",
+    "note": null,
+    "restrizione": null,
+    "rischio": null,
+    "effetto_collaterale": null,
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

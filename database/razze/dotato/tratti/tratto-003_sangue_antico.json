@@ -1,0 +1,11 @@
+{
+  "id": "race-dotato-tratto-sangue_antico",
+  "nome": "Sangue Antico",
+  "categoria": "brancalonia",
+  "dettagli": {
+    "descrizione": "Percepisci la magia antica e le presenze fatate",
+    "meccanica": "Senti presenza di magia entro 3m come sensazione",
+    "non_identificazione": "Non sai tipo o scuola, solo presenza"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

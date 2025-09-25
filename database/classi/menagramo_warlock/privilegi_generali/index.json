@@ -1,0 +1,13 @@
+{
+  "classe": "menagramo_warlock",
+  "categoria": "Privilegi Generali",
+  "totale": 1,
+  "privilegi": [
+    {
+      "id": "class-warlock-livello_1-patto-magico",
+      "nome": "Contratto del Menagramo",
+      "file": "class-warlock-livello_1-patto-magico.json",
+      "livello": 1
+    }
+  ]
+}

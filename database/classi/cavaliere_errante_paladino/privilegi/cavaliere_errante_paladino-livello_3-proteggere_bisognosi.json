@@ -1,0 +1,10 @@
+{
+  "id": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi",
+  "livello": 3,
+  "nome": "proteggere_bisognosi",
+  "tipo": "attivo",
+  "descrizione": "Incanalare Divinità (azione bonus): per 1 min attacchi contro creatura protetta hanno svantaggio (entro 1.5m)",
+  "implementazione": "flags.brancalonia-bigat.proteggereBisognosi = true",
+  "mode": 5,
+  "nota": "Richiede aura condizionale"
+}

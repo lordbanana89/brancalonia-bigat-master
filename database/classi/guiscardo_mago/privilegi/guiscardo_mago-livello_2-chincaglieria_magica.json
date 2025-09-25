@@ -1,0 +1,12 @@
+{
+  "id": "guiscardo_mago-livello_2-chincaglieria_magica",
+  "livello": 2,
+  "nome": "chincaglieria_magica",
+  "tipo": "attivo",
+  "descrizione": "Può usare qualunque oggetto magico come focus arcano, ottiene un oggetto non comune dal Ciarpame Magico",
+  "implementazione": {
+    "focus_universale": "flags.brancalonia-bigat.anyMagicFocus = true",
+    "oggetto_bonus": "flags.brancalonia-bigat.chincaglieria = true"
+  },
+  "mode": 5
+}

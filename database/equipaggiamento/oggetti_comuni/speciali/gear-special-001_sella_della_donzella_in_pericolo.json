@@ -1,0 +1,18 @@
+{
+  "id": "oggetto-base-001",
+  "nome": "Sella della Donzella in Pericolo",
+  "categoria": "equipaggiamento",
+  "sottotipo": "oggetto_avventura",
+  "costo": "30 mo",
+  "peso": "10 kg",
+  "descrizione": "Sella con meccanismo a scatto ideata da Cinquina d'Oltrefossa per fingere situazioni di difficoltà.",
+  "effetto": "Vantaggio alle prove di Carisma (Inganno) per fingersi in pericolo mentre la si cavalca.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "estratto_da": "manuale_brancalonia.txt",
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "titolo": "Bagordi",
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "61-63"
+  },
+  "sezioni": [
+    {
+      "id": "bagordi-introduzione",
+      "titolo": "Regole di Bagordi",
+      "file": "bagordi-introduzione.json"
+    },
+    {
+      "id": "bagordi-tabella-botte-da-orbi",
+      "titolo": "Botte da Orbi e Bisacce Sfondate",
+      "file": "bagordi-tabella.json"
+    },
+    {
+      "id": "bagordi-istruzioni",
+      "titolo": "Applicare la Tabella",
+      "file": "bagordi-istruzioni.json"
+    }
+  ],
+  "stato": "completo"
+}

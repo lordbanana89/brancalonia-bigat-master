@@ -1,0 +1,55 @@
+{
+  "nome": "Duro",
+  "fonte": "Manuale Base p.35",
+  "tipo": "background",
+  "descrizione": "Cresciuto tra angherie e violenze, temprato dalle difficoltà estreme",
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Atletica e Intimidire",
+      "implementazione": {
+        "atletica": "system.skills.ath.value = 1",
+        "intimidire": "system.skills.itm.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Un tipo di gioco",
+      "implementazione": "flags.brancalonia-bigat.gameChoice = true",
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Baccaglio (gergo furfantesco)",
+      "implementazione": "system.traits.languages.value.push('baccaglio')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Ciondolo di Santa Predatoria, mazzo di minchiate o altro gioco, abito comune, borsa 15 ma"
+    },
+    "privilegio_faccia_da_duro": {
+      "tipo": "attivo",
+      "descrizione": "Quando interagisce usando la Nomea, considerala di un livello superiore",
+      "implementazione": "flags.brancalonia-bigat.facciaDaDuro = 1",
+      "mode": 2,
+      "nota": "Modifica livello Nomea in interazioni sociali"
+    }
+  },
+  "caratterizzazione": {
+    "origine": "Spesso dalla Penumbria o dai peggiori quartieri cittadini",
+    "tratti": [
+      "Cattiveria visibile a prima vista",
+      "Tempra d'acciaio forgiata dalle privazioni",
+      "Nessun ostacolo lo può fermare"
+    ],
+    "ideali": "Vari in base all'origine specifica"
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "duro001",
+    "compendio": "backgrounds",
+    "nota": "Non trovato tra i backgrounds implementati nel modulo attuale"
+  }
+}

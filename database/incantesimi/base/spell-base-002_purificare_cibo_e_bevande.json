@@ -1,0 +1,19 @@
+{
+  "id": "spell-base-002",
+  "nome": "Purificare Cibo e Bevande",
+  "nome_originale": "Purify Food and Drink",
+  "livello": 1,
+  "scuola": "Trasmutazione",
+  "classi": [
+    "Chierico",
+    "Druido",
+    "Paladino"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Purify Food and Drink",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Purify Food and Drink).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale."
+}

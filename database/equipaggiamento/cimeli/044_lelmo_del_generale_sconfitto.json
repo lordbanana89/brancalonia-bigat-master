@@ -1,0 +1,16 @@
+{
+  "id": "044",
+  "nome": "L'Elmo del Generale Sconfitto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Elmo piumato sfarzoso ma ammaccato",
+  "proprieta": "+2 Carisma per comandare truppe, -2 a strategie militari",
+  "valore": "500 mo",
+  "storia": "Perse 13 battaglie consecutive",
+  "ironia": "Bellissimo ma inutile in battaglia",
+  "implementazione": {
+    "tipo": "magico_minore",
+    "attivo": false,
+    "active_effects": []
+  }
+}

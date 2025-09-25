@@ -1,0 +1,16 @@
+{
+  "id": "021",
+  "nome": "Il Violino del Diavolo",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Violino di legno nero con corde d'argento",
+  "proprieta": "Chi suona ottiene competenza immediata, musica affascina chi ascolta",
+  "valore": "2000 mo",
+  "storia": "Paganini ci suonò il suo ultimo concerto",
+  "prezzo": "Ogni canzone costa 1 giorno di vita",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

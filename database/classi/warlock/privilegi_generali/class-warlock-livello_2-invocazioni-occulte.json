@@ -1,0 +1,97 @@
+{
+  "id": "class-warlock-livello_2-invocazioni-occulte",
+  "nome": "Invocazioni Occulte",
+  "nome_brancalonia": "Patti Segreti",
+  "livello": 2,
+  "tipo": "passivo",
+  "descrizione": "Nel tuo studio dell'occulto, hai portato alla luce invocazioni occulte, frammenti di conoscenza proibita che ti infondono abilità magiche permanenti. Al 2° livello, guadagni due invocazioni occulte a tua scelta.",
+  "meccaniche": {
+    "numero_invocazioni": {
+      "livello_2": 2,
+      "livello_5": 3,
+      "livello_7": 4,
+      "livello_9": 5,
+      "livello_12": 6,
+      "livello_15": 7,
+      "livello_18": 8
+    },
+    "cambio": "Puoi sostituire una invocazione quando sali di livello"
+  },
+  "invocazioni_popolari": {
+    "agonizing_blast": {
+      "nome": "Agonizing Blast",
+      "requisiti": "Eldritch Blast",
+      "effetto": "+CHA danni a Eldritch Blast",
+      "valore": "Quasi obbligatorio"
+    },
+    "armor_of_shadows": {
+      "nome": "Armor of Shadows",
+      "effetto": "Mage Armor at will",
+      "valore": "13+DEX CA sempre"
+    },
+    "devils_sight": {
+      "nome": "Devil's Sight",
+      "effetto": "Vedi nel buio magico 120ft",
+      "combo": "Darkness spell"
+    },
+    "eldritch_sight": {
+      "nome": "Eldritch Sight",
+      "effetto": "Detect Magic at will"
+    },
+    "mask_many_faces": {
+      "nome": "Mask of Many Faces",
+      "effetto": "Disguise Self at will"
+    },
+    "eldritch_mind": {
+      "nome": "Eldritch Mind",
+      "effetto": "Vantaggio concentrazione",
+      "fonte": "Tasha's"
+    }
+  },
+  "invocazioni_pact": {
+    "pact_blade": {
+      "thirsting_blade": "Extra Attack con pact weapon",
+      "lifedrinker": "+CHA danni necrotici",
+      "eldritch_smite": "Smite con pact slots"
+    },
+    "pact_tome": {
+      "book_ancient_secrets": "Ritual casting tutti",
+      "aspect_moon": "No sleep needed"
+    },
+    "pact_chain": {
+      "voice_chain_master": "Parla attraverso familiar",
+      "investment_chain": "Familiar potenziato"
+    }
+  },
+  "build_paths": {
+    "eldritch_blaster": ["Agonizing Blast", "Eldritch Spear", "Lance of Lethargy"],
+    "melee_hexblade": ["Thirsting Blade", "Lifedrinker", "Eldritch Smite"],
+    "utility": ["Book of Ancient Secrets", "Mask of Many Faces", "Eldritch Sight"],
+    "tank": ["Armor of Shadows", "Fiendish Vigor", "Tomb of Levistus"]
+  },
+  "calcoli_impatto": {
+    "agonizing_blast": {
+      "danno_extra": "+3-5 per raggio",
+      "livello_5": "+6-10 totale (2 raggi)",
+      "livello_11": "+9-15 totale (3 raggi)",
+      "livello_17": "+12-20 totale (4 raggi)"
+    }
+  },
+  "confronto": {
+    "vs_class_features": "Simili a privilegi di classe",
+    "vs_feats": "Più potenti di molti talenti",
+    "personalizzazione": "Massima customizzazione warlock"
+  },
+  "errori_comuni": {
+    "prerequisiti": "Alcune richiedono livello/pact",
+    "at_will": "At will = infinite, no slot",
+    "once_per_rest": "Alcune 1/rest non infinite"
+  },
+  "evoluzione": {
+    "early": "Utility e sopravvivenza",
+    "mid": "Danno e versatilità",
+    "late": "Potenti effetti unici"
+  },
+  "note_dm": "Le invocazioni definiscono il warlock. Agonizing Blast è quasi necessario. Devil's Sight + Darkness può essere problematico.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "048",
+  "nome": "La Lettera Mai Consegnata",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Lettera sigillata che non si può aprire",
+  "proprieta": "Chi la porta trova sempre la strada verso casa",
+  "valore": "200 mo",
+  "storia": "Contiene un perdono che avrebbe cambiato la storia",
+  "mistero": "Il destinatario è morto 100 anni fa",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

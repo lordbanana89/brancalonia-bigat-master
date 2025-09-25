@@ -1,0 +1,18 @@
+{
+  "id": "mostri_maggiori-003",
+  "nome": "Strega della Palude",
+  "grado_sfida": "7",
+  "tipo": "Umanoide",
+  "classe": "Stregone 9°",
+  "descrizione": "Vecchia megera che vive nella palude",
+  "pf": "67",
+  "ca": "15 (Armatura magica)",
+  "incantesimi": "Fino al 5° livello, specializzata in maledizioni",
+  "abilita_speciali": [
+    "Famiglio (Rospo gigante)",
+    "Metamorfosi",
+    "Pozioni e veleni"
+  ],
+  "patteggiare": "Scambia favori per anni di vita",
+  "fonte": "Brancalonia Macaronicon p.160-172"
+}

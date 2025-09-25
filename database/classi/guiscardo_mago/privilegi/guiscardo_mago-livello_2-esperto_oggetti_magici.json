@@ -1,0 +1,10 @@
+{
+  "id": "guiscardo_mago-livello_2-esperto_oggetti_magici",
+  "livello": 2,
+  "nome": "esperto_oggetti_magici",
+  "tipo": "attivo",
+  "descrizione": "Bonus competenza raddoppia per prove con oggetti/congegni magici",
+  "implementazione": "flags.brancalonia-bigat.magicItemExpertise = true",
+  "mode": 5,
+  "nota": "Richiede macro per raddoppiare bonus situazionale"
+}

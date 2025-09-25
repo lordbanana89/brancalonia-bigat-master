@@ -1,0 +1,61 @@
+{
+  "nome": "Attaccabrighe",
+  "fonte": "Manuale Base p.32",
+  "tipo": "background",
+  "descrizione": "Provocatore di risse e scazzottate, campione di bettola",
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Intrattenere e Intuizione",
+      "implementazione": {
+        "intrattenere": "system.skills.prf.value = 1",
+        "intuizione": "system.skills.ins.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Due tipi di gioco",
+      "implementazione": {
+        "gioco1": "system.tools.game1.value = 1",
+        "gioco2": "system.tools.game2.value = 1"
+      },
+      "mode": 5
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Trofeo da rissa (Cimelio extra), mappa locande città origine, abito comune, borsa 15 ma"
+    },
+    "privilegio_rissaiolo": {
+      "tipo": "attivo",
+      "descrizione": "Ottiene 1 slot mossa aggiuntivo",
+      "implementazione": "flags.brancalonia-bigat.mosseRissa = 1",
+      "mode": 2
+    }
+  },
+  "caratterizzazione": {
+    "tratti": [
+      "Cerca ogni occasione per buttarla in caciara",
+      "Non resiste a una rissa quando c'è",
+      "Presuntuoso che si dichiara sempre superiore",
+      "Pronto a tutto per l'onore",
+      "Smargiasso che racconta panzane",
+      "Passa giornate in bettola mangiando e bevendo",
+      "Importuna continuamente chi trova attraente",
+      "Fanfarone che mangia a scrocco"
+    ],
+    "ideali": [
+      "Onore (Buono)",
+      "Gloria (Legale)",
+      "Bagordi (Caotico)",
+      "Guadagno (Malvagio)",
+      "Vittoria (Neutrale)",
+      "Pancia piena (Qualsiasi)"
+    ]
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "attaccabrighe001",
+    "compendio": "backgrounds"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "animal-006",
+  "nome": "Pony",
+  "categoria": "animale_equipaggiamento",
+  "tipo": "cavalcatura",
+  "costo": "30 mo",
+  "velocita": "12 m",
+  "capacita_carico": "105 kg",
+  "descrizione": "Cavalcatura adatta a piccoli umanoidi o terreni accidentati.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Cavalcature e Animali"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

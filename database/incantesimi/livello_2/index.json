@@ -1,0 +1,66 @@
+{
+  "livello": "2",
+  "totale": 12,
+  "incantesimi": [
+    {
+      "nome": "Blocca Persone",
+      "scuola": "Ammaliamento",
+      "file": "spell-blocca-persone.json"
+    },
+    {
+      "nome": "Esorcismo",
+      "scuola": "Abiurazione",
+      "file": "spell-esorcismo.json"
+    },
+    {
+      "nome": "Frantumare",
+      "scuola": "Invocazione",
+      "file": "spell-frantumare.json"
+    },
+    {
+      "nome": "Invisibilità",
+      "scuola": "Illusione",
+      "file": "spell-invisibilita.json"
+    },
+    {
+      "nome": "Levitazione",
+      "scuola": "Trasmutazione",
+      "file": "spell-levitazione.json"
+    },
+    {
+      "nome": "Oscurità",
+      "scuola": "Invocazione",
+      "file": "spell-oscurita.json"
+    },
+    {
+      "nome": "Passo Traslato",
+      "scuola": "Evocazione",
+      "file": "spell-passo-traslato.json"
+    },
+    {
+      "nome": "Raggio Rovente",
+      "scuola": "Invocazione",
+      "file": "spell-raggio-rovente.json"
+    },
+    {
+      "nome": "Ragnatela",
+      "scuola": "Evocazione",
+      "file": "spell-ragnatela.json"
+    },
+    {
+      "nome": "Scurovisione",
+      "scuola": "Trasmutazione",
+      "file": "spell-scurovisione.json"
+    },
+    {
+      "nome": "Silenzio",
+      "scuola": "Illusione",
+      "file": "spell-silenzio.json"
+    },
+    {
+      "nome": "Suggestione",
+      "scuola": "Ammaliamento",
+      "file": "spell-suggestione.json"
+    }
+  ]
+}

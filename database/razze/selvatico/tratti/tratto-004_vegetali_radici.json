@@ -1,0 +1,10 @@
+{
+  "id": "race-selvatico-tratto-vegetali_radici",
+  "nome": "Radici",
+  "categoria": "vegetali",
+  "dettagli": {
+    "descrizione": "Vantaggio contro essere mosso contro volontà",
+    "meccanica": "Vantaggio contro spinte e simili"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

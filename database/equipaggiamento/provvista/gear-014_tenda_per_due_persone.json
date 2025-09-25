@@ -1,0 +1,15 @@
+{
+  "id": "gear-014",
+  "nome": "Tenda per Due Persone",
+  "categoria": "provvista_avventuriera",
+  "costo": "2 mo",
+  "peso": "10 kg",
+  "descrizione": "Tenda leggera che offre riparo a due creature di taglia Media.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

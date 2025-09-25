@@ -1,0 +1,30 @@
+{
+  "categoria": "Oggetti e Servizi Comuni",
+  "sottoinsiemi": [
+    {
+      "chiave": "abbigliamento",
+      "label": "Abbigliamento e Accessori",
+      "index": "abbigliamento/index.json"
+    },
+    {
+      "chiave": "kit_e_strumenti",
+      "label": "Kit e Strumenti",
+      "index": "kit_e_strumenti/index.json"
+    },
+    {
+      "chiave": "veicoli",
+      "label": "Veicoli e Traini",
+      "index": "veicoli/index.json"
+    },
+    {
+      "chiave": "servizi_alloggio",
+      "label": "Servizi e Alloggio",
+      "index": "servizi_alloggio/index.json"
+    },
+    {
+      "chiave": "speciali",
+      "label": "Oggetti Speciali",
+      "index": "speciali/index.json"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-013",
+  "nome": "Rosario del Penitente",
+  "rarita": "Non comune",
+  "tipo": "Oggetto meraviglioso",
+  "sintonia": "Sì (chierico o paladino)",
+  "descrizione": "Rosario che potenzia preghiere",
+  "proprieta": [
+    "+1 CD incantesimi divini",
+    "1 slot incantesimo extra di 1° livello",
+    "Deve pregare 1 ora al giorno o perde i poteri"
+  ],
+  "effetti_speciali": {
+    "maledizione": null,
+    "note": null,
+    "restrizione": null,
+    "rischio": null,
+    "effetto_collaterale": null,
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

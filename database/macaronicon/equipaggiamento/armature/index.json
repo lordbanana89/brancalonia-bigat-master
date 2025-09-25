@@ -1,0 +1,18 @@
+{
+  "categoria": "armature",
+  "fonte": "Brancalonia Macaronicon p.46",
+  "descrizione": "Modifiche e scudi usati da esploratori macaronici",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "mac-arm-001",
+      "nome": "Armatura Brunita",
+      "file": "mac-arm-001_armatura_brunita.json"
+    },
+    {
+      "id": "mac-arm-002",
+      "nome": "Pavese",
+      "file": "mac-arm-002_pavese.json"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "_id": "classbarbarolivello2attaccoirruento996be5",
+  "_key": "!items!classbarbarolivello2attaccoirruento996be5",
+  "name": "Attacco Irruento",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>A partire dal 2° livello, puoi gettare da parte qualsiasi preoccupazione per la difesa e attaccare con selvaggia disperazione. Quando effettui il tuo primo attacco nel turno, puoi decidere di attaccare in modo irruento. Se lo fai, hai vantaggio ai tiri per colpire con attacchi in mischia che usano Forza durante questo turno, ma i tiri per colpire contro di te hanno vantaggio fino al tuo prossimo turno.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.48",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-barbaro-livello_2-attacco-irruento",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48"
+    }
+  }
+}

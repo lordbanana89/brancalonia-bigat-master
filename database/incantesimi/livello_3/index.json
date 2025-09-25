@@ -1,0 +1,51 @@
+{
+  "livello": "3",
+  "totale": 9,
+  "incantesimi": [
+    {
+      "nome": "Assicurazione",
+      "scuola": "Invocazione",
+      "file": "spell-assicurazione.json"
+    },
+    {
+      "nome": "Banchetto dei Poveri",
+      "scuola": "Evocazione",
+      "file": "spell-banchetto-dei-poveri.json"
+    },
+    {
+      "nome": "Controincantesimo",
+      "scuola": "Abiurazione",
+      "file": "spell-controincantesimo.json"
+    },
+    {
+      "nome": "Emanazione Angelica",
+      "scuola": "Abiurazione",
+      "file": "spell-emanazione-angelica.json"
+    },
+    {
+      "nome": "Lentezza",
+      "scuola": "Trasmutazione",
+      "file": "spell-lentezza.json"
+    },
+    {
+      "nome": "Mondare",
+      "scuola": "Invocazione",
+      "file": "spell-mondare.json"
+    },
+    {
+      "nome": "Palla di Fuoco",
+      "scuola": "Invocazione",
+      "file": "spell-palla-di-fuoco.json"
+    },
+    {
+      "nome": "Velocità",
+      "scuola": "Trasmutazione",
+      "file": "spell-velocita.json"
+    },
+    {
+      "nome": "Volare",
+      "scuola": "Trasmutazione",
+      "file": "spell-volare.json"
+    }
+  ]
+}

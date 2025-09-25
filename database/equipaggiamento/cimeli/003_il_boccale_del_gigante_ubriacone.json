@@ -1,0 +1,17 @@
+{
+  "id": "003",
+  "nome": "Il Boccale del Gigante Ubriacone",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Enorme boccale di peltro ammaccato",
+  "proprieta": "Non si svuota mai completamente di birra",
+  "maledizione": "Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora",
+  "valore": "150 mo",
+  "storia": "Appartenuto al gigante Bevo che morì affogato nella birra",
+  "maledizione_specifica": "Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora",
+  "implementazione": {
+    "tipo": "maledetto",
+    "attivo": true,
+    "active_effects": []
+  }
+}

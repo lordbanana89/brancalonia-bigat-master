@@ -1,0 +1,25 @@
+{
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "rissa-mossa-base-pugno",
+      "nome": "Pugno/Calcio",
+      "file": "rissa-mossa-base-pugno.json"
+    },
+    {
+      "id": "rissa-mossa-base-testata",
+      "nome": "Testata",
+      "file": "rissa-mossa-base-testata.json"
+    },
+    {
+      "id": "rissa-mossa-base-oggetto-improvvisato",
+      "nome": "Colpo con Oggetto",
+      "file": "rissa-mossa-base-oggetto-improvvisato.json"
+    },
+    {
+      "id": "rissa-mossa-base-spinta",
+      "nome": "Spinta",
+      "file": "rissa-mossa-base-spinta.json"
+    }
+  ]
+}

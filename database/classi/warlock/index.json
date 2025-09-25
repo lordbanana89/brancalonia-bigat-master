@@ -1,0 +1,68 @@
+{
+  "id": "class-warlock",
+  "nome": "Warlock",
+  "tipo": "classe",
+  "fonte": "Manuale del Giocatore p.105",
+  "descrizione": "Negromante del patto che stringe accordi con potenze ultraterrene per brandire magie innaturali.",
+  "dado_vita": "d8",
+  "punti_ferita": {
+    "al_1_livello": "8 + modificatore Costituzione",
+    "livelli_successivi": "1d8 (o 5) + modificatore Costituzione per livello"
+  },
+  "competenze": {
+    "armature": [
+      "Armature leggere"
+    ],
+    "armi": [
+      "Armi semplici"
+    ],
+    "attrezzi": "Nessuno",
+    "tiri_salvezza": [
+      "Saggezza",
+      "Carisma"
+    ],
+    "abilita": {
+      "numero": 2,
+      "scelte": [
+        "Arcano",
+        "Inganno",
+        "Intimidazione",
+        "Investigazione",
+        "Natura",
+        "Religione",
+        "Storia"
+      ]
+    }
+  },
+  "equipaggiamento_iniziale": [
+    "(a) una balestra leggera e 20 quadrelli oppure (b) qualsiasi arma semplice",
+    "(a) un focus arcano oppure (b) un kit da componente",
+    "(a) un equipaggiamento da studio oppure (b) un equipaggiamento da esploratore",
+    "Due pugnali"
+  ],
+  "multiclasse": {
+    "requisiti": "Carisma 13",
+    "competenze_ottenute": [
+      "Armi semplici",
+      "Armature leggere"
+    ]
+  },
+  "incantesimi": {
+    "lista": "database/incantesimi/warlock.json",
+    "caratteristica": "Carisma",
+    "tipo": "Magia del Patto"
+  },
+  "note_brancalonia": {
+    "privilegio_rissa": "Sfortuna del Menagramo riversa maledizioni rapide",
+    "integrazione_dnd5e": "Patti, invocazioni e arcanum fanno riferimento al compendio dnd5e"
+  },
+  "validazione": {
+    "stato": "in_progress",
+    "note": "Verificare il conteggio delle invocazioni e le nuove patron ances"
+  },
+  "collegamenti": {
+    "privilegi_generali": "privilegi_generali/index.json",
+    "progressione": "progressione/progressione.json",
+    "cammini": "cammini/index.json"
+  }
+}

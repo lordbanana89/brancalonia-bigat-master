@@ -1,0 +1,22 @@
+{
+  "_id": "cimeli",
+  "_key": "!journal!cimeli",
+  "name": "Cimeli",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "condotta-cimeli",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "69-70"
+      }
+    }
+  },
+  "type": "JournalEntry"
+}

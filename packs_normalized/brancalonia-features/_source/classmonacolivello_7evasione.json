@@ -1,0 +1,72 @@
+{
+  "_id": "classmonacolivello7evasionef6e511",
+  "_key": "!items!classmonacolivello7evasionef6e511",
+  "name": "Evasione",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Al 7° livello, la tua agilità istintiva ti permette di schivare certi effetti area. Quando sei soggetto a un effetto che ti permette di fare un tiro salvezza Destrezza per dimezzare i danni, non subisci danni se superi il tiro salvezza, e solo metà danni se fallisci.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.79",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-monaco-livello_7-evasione",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79"
+    }
+  }
+}

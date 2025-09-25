@@ -1,0 +1,76 @@
+{
+  "categoria": "Backgrounds",
+  "totale": 14,
+  "elementi": [
+    {
+      "nome": "Ambulante",
+      "file": "ambulante.json",
+      "fonte": "Manuale Base p.31"
+    },
+    {
+      "nome": "Attaccabrighe",
+      "file": "attaccabrighe.json",
+      "fonte": "Manuale Base p.32"
+    },
+    {
+      "nome": "Azzeccagarbugli",
+      "file": "azzeccagarbugli.json",
+      "fonte": "Manuale Base p.33"
+    },
+    {
+      "nome": "Bargello",
+      "file": "bargello.json",
+      "fonte": "Brancalonia Macaronicon p.36-37"
+    },
+    {
+      "nome": "Brado",
+      "file": "brado.json",
+      "fonte": "Manuale Base p.34"
+    },
+    {
+      "nome": "Cantastorie",
+      "file": "cantastorie.json",
+      "fonte": "Brancalonia Macaronicon p.37-38"
+    },
+    {
+      "nome": "Cialtrone",
+      "file": "cialtrone.json",
+      "fonte": "Brancalonia Macaronicon p.38-39"
+    },
+    {
+      "nome": "Contrabbandiere",
+      "file": "contrabbandiere.json",
+      "fonte": "Brancalonia Macaronicon p.39-40"
+    },
+    {
+      "nome": "Disertore",
+      "file": "disertore.json",
+      "fonte": "Brancalonia Macaronicon p.40-41"
+    },
+    {
+      "nome": "Duro",
+      "file": "duro.json",
+      "fonte": "Manuale Base p.35"
+    },
+    {
+      "nome": "Fuggitivo",
+      "file": "fuggitivo.json",
+      "fonte": "Manuale Base p.36"
+    },
+    {
+      "nome": "Locandiere",
+      "file": "locandiere.json",
+      "fonte": "Brancalonia Macaronicon p.41-42"
+    },
+    {
+      "nome": "Pellegrino",
+      "file": "pellegrino.json",
+      "fonte": "Brancalonia Macaronicon p.42-43"
+    },
+    {
+      "nome": "Villano",
+      "file": "villano.json",
+      "fonte": "Brancalonia Macaronicon p.43-44"
+    }
+  ]
+}

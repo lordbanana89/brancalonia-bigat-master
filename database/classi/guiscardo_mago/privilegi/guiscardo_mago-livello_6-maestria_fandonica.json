@@ -1,0 +1,12 @@
+{
+  "id": "guiscardo_mago-livello_6-maestria_fandonica",
+  "livello": 6,
+  "nome": "maestria_fandonica",
+  "tipo": "attivo",
+  "descrizione": "Sintonia con 4 oggetti invece di 3, ignora prerequisiti sintonia",
+  "implementazione": {
+    "sintonia_extra": "system.attributes.attunement.max = 4",
+    "ignora_prerequisiti": "flags.brancalonia-bigat.ignoreAttunementReq = true"
+  },
+  "mode": 5
+}

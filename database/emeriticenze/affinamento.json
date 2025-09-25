@@ -1,0 +1,22 @@
+{
+  "nome": "Affinamento",
+  "fonte": "Manuale Base p.40",
+  "tipo": "emeriticenza",
+  "descrizione": "Migliora punteggi caratteristica",
+  "requisiti": "6° livello + 9000 PE extra",
+  "usi_massimi": 2,
+  "meccaniche": {
+    "incremento_caratteristiche": {
+      "tipo": "attivo",
+      "descrizione": "+2 a una caratteristica o +1 a due caratteristiche (max 20)",
+      "implementazione": "flags.brancalonia-bigat.asi = true",
+      "mode": 2,
+      "scelta": "Manuale durante level up"
+    }
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "emeriticenza_affinamento",
+    "compendio": "emeriticenze"
+  }
+}

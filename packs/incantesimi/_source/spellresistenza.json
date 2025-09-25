@@ -1,0 +1,113 @@
+{
+  "_id": "spellresistenza509a42",
+  "_key": "!item!spellresistenza509a42",
+  "name": "Resistenza",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tocchi una creatura consenziente. Una volta prima che l'incantesimo termini, il bersaglio può tirare un d4 e aggiungere il numero tirato a un tiro salvezza di sua scelta. Può tirare il dado prima o dopo aver effettuato il tiro salvezza. L'incantesimo poi termina.</p><h3>Note per il DM</h3><p><em>Resistance meno popolare di Guidance ma saves sono più critici. Concentrazione lo rende inefficiente. Meglio in preparazione che reazione.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.272",
+    "level": 0,
+    "school": "abj",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-resistenza",
+      "fonte": "D&D 5e PHB p.272",
+      "note_dm": "Resistance meno popolare di Guidance ma saves sono più critici. Concentrazione lo rende inefficiente. Meglio in preparazione che reazione.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": "touch",
+        "durata": "1 minute",
+        "concentrazione": true,
+        "effetto": "1d4 bonus to save"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Abiurazione",
+        "level": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "classe": "druido",
+  "categoria": "Privilegi Generali",
+  "totale": 3,
+  "privilegi": [
+    {
+      "id": "class-druido-livello_1-druidico",
+      "nome": "Lingua della Natura",
+      "file": "class-druido-livello_1-druidico.json",
+      "livello": 1
+    },
+    {
+      "id": "class-druido-livello_2-circolo-druidico",
+      "nome": "Cerchio dei Benandanti",
+      "file": "class-druido-livello_2-circolo-druidico.json",
+      "livello": 2
+    },
+    {
+      "id": "class-druido-livello_2-forma-selvatica",
+      "nome": "Mutaforma Naturale",
+      "file": "class-druido-livello_2-forma-selvatica.json",
+      "livello": 2
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "classe": "bardo",
+  "categoria": "Privilegi Generali",
+  "totale": 3,
+  "privilegi": [
+    {
+      "id": "class-bardo-livello_1-ispirazione-bardica",
+      "nome": "Parole di Incoraggiamento",
+      "file": "class-bardo-livello_1-ispirazione-bardica.json",
+      "livello": 1
+    },
+    {
+      "id": "class-bardo-livello_2-jack-tuttofare",
+      "nome": "Maestro di Mille Arti",
+      "file": "class-bardo-livello_2-jack-tuttofare.json",
+      "livello": 2
+    },
+    {
+      "id": "class-bardo-livello_3-collegio-bardico",
+      "nome": "Scuola degli Artisti",
+      "file": "class-bardo-livello_3-collegio-bardico.json",
+      "livello": 3
+    }
+  ]
+}

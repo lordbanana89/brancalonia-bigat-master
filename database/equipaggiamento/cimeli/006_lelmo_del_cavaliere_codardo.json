@@ -1,0 +1,15 @@
+{
+  "id": "006",
+  "nome": "L'Elmo del Cavaliere Codardo",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Elmo lucido che sembra sempre nuovo",
+  "proprieta": "+1 CA ma svantaggio ai TS contro paura",
+  "valore": "300 mo",
+  "storia": "Il cavaliere fuggì da 100 battaglie e morì nel suo letto",
+  "implementazione": {
+    "tipo": "magico_minore",
+    "attivo": true,
+    "active_effects": []
+  }
+}

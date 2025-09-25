@@ -1,0 +1,16 @@
+{
+  "id": "042",
+  "nome": "La Candela del Vegliardo",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Candela che brucia senza consumarsi",
+  "proprieta": "Chi veglia alla sua luce non ha bisogno di dormire",
+  "valore": "1000 mo",
+  "storia": "Il vegliardo visse 30 anni senza dormire",
+  "prezzo": "Ogni notte costa 1 anno di vita",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

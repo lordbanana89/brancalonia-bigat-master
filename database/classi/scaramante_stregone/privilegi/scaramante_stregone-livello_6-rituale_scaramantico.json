@@ -1,0 +1,16 @@
+{
+  "id": "scaramante_stregone-livello_6-rituale_scaramantico",
+  "livello": 6,
+  "nome": "rituale_scaramantico",
+  "tipo": "attivo",
+  "descrizione": "Rito 10 min protegge creatura per 24h con uno dei seguenti: resistenza a un danno, riroll su 1 naturale, evita KO (1PF invece di 0)",
+  "implementazione": "flags.brancalonia-bigat.ritualeScramantico = true",
+  "mode": 5,
+  "effetti_scelta": {
+    "resistenza": "Un tipo di danno a scelta",
+    "riroll": "Su 1 naturale in prove/TS",
+    "morte": "Rimane a 1 PF invece di 0"
+  },
+  "durata": "24 ore o nuovo uso",
+  "estensione": "2 punti stregoneria per +24h"
+}

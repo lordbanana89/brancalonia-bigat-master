@@ -1,0 +1,58 @@
+{
+  "nome": "Azzeccagarbugli",
+  "fonte": "Manuale Base p.33",
+  "tipo": "background",
+  "descrizione": "Faccendiere, notaio e leguleio esperto di burocrazia e cavilli legali",
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Indagare e Persuasione",
+      "implementazione": {
+        "indagare": "system.skills.inv.value = 1",
+        "persuasione": "system.skills.per.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Arnesi da falsario",
+      "implementazione": "system.tools.forgerykit.value = 1",
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Maccheronico (lingua burocratica e religiosa)",
+      "implementazione": "system.traits.languages.value.push('maccheronico')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Libro leggi regionali, calamaio, pennino, pergamena, abito pregiato, borsa 20 ma"
+    },
+    "privilegio_risolvere_guai": {
+      "tipo": "attivo",
+      "descrizione": "Può annullare una Malefatta (propria o della banda) pagando il Valore di Taglia, prima che venga aggiunta",
+      "implementazione": "flags.brancalonia-bigat.risolvereGuai = true",
+      "mode": 5,
+      "nota": "Meccanica specifica di Brancalonia per gestione Taglia"
+    }
+  },
+  "caratterizzazione": {
+    "parlata": "Spesso in Maccheronico o linguaggio tecnico-legale",
+    "competenze": "Conosce cavilli, codicilli e scappatoie",
+    "ruolo_banda": "Contabile, notaio, scrivano, furiere",
+    "ideali": [
+      "Parità di opportunità (Buono)",
+      "Uguaglianza (Legale)",
+      "Giustizia dei ladri (Caotico)",
+      "Avvocato del diavolo (Malvagio)",
+      "Equanimità (Neutrale)",
+      "Ordine (Qualsiasi)"
+    ]
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "azzeccagarbugli001",
+    "compendio": "backgrounds"
+  }
+}

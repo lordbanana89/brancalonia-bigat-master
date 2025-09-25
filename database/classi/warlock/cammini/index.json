@@ -1,0 +1,26 @@
+{
+  "totale": 4,
+  "cammini": [
+    {
+      "id": "class-warlock-patrono-fiend",
+      "nome": "Patrono Immondo",
+      "file": "class-warlock-patrono-fiend.json"
+    },
+    {
+      "id": "class-warlock-patrono-signore_fatato",
+      "nome": "Patrono Signore Fatato",
+      "file": "class-warlock-patrono-signore_fatato.json"
+    },
+    {
+      "id": "class-warlock-patrono-grande_antico",
+      "nome": "Patrono del Grande Antico",
+      "file": "class-warlock-patrono-grande_antico.json"
+    },
+    {
+      "id": "menagramo_warlock",
+      "nome": "Patrono del Malocchio",
+      "file": "../menagramo_warlock/index.json",
+      "nota": "Nuovo patrono di Brancalonia"
+    }
+  ]
+}

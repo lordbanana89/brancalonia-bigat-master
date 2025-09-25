@@ -1,0 +1,46 @@
+{
+  "categoria": "Cavalcature e Animali da Equipaggiamento",
+  "totale": 8,
+  "elementi": [
+    {
+      "id": "animal-001",
+      "nome": "Asino o Mulo",
+      "file": "animal-001_asino_o_mulo.json"
+    },
+    {
+      "id": "animal-002",
+      "nome": "Bue",
+      "file": "animal-002_bue.json"
+    },
+    {
+      "id": "animal-003",
+      "nome": "Cammello",
+      "file": "animal-003_cammello.json"
+    },
+    {
+      "id": "animal-004",
+      "nome": "Cavallo da Sella Leggero",
+      "file": "animal-004_cavallo_da_sella_leggero.json"
+    },
+    {
+      "id": "animal-005",
+      "nome": "Cavallo da Guerra",
+      "file": "animal-005_cavallo_da_guerra.json"
+    },
+    {
+      "id": "animal-006",
+      "nome": "Pony",
+      "file": "animal-006_pony.json"
+    },
+    {
+      "id": "animal-007",
+      "nome": "Mastino",
+      "file": "animal-007_mastino.json"
+    },
+    {
+      "id": "animal-008",
+      "nome": "Elefante",
+      "file": "animal-008_elefante.json"
+    }
+  ]
+}

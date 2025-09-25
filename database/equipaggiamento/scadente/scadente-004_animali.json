@@ -1,0 +1,20 @@
+{
+  "id": "scadente-004",
+  "nome": "Monte e Animali Scadenti",
+  "categoria": "equipaggiamento_scadente",
+  "costo_relativo": "1/10 del prezzo standard rispetto all'animale comune",
+  "descrizione": "Bestie spelacchiate, cavalcature zoppe e animali addestrati male.",
+  "effetti_meccanici": {
+    "malus": "Se ottieni 1 naturale in una prova con l'animale, questo si azzoppa e non può proseguire per 24 ore.",
+    "velocita": "La velocità base è ridotta di 3 metri rispetto alla controparte comune."
+  },
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "62-63"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  },
+  "dettagli": "Quando si effettua una prova con una cavalcatura scadente e il risultato è 1, l'animale si azzoppa e non è più in grado di proseguire per 24 ore. La velocità di un animale scadente è inoltre ridotta di 3 metri rispetto a un esemplare comune dello stesso tipo."
+}

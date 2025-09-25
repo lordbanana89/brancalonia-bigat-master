@@ -1,0 +1,49 @@
+{
+  "id": "class-paladino-giuramento-antichi",
+  "nome": "Giuramento degli Antichi",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Canalizzare Divinità: Ira della Natura",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Nature's Wrath"
+        }
+      },
+      {
+        "nome": "Canalizzare Divinità: Bandire i Corrotti",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Turn the Faithless"
+        }
+      }
+    ],
+    "livello_7": [
+      {
+        "nome": "Aura della Salvaguardia",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Aura of Warding"
+        }
+      }
+    ],
+    "livello_15": [
+      {
+        "nome": "Sentinella Imperitura",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Undying Sentinel"
+        }
+      }
+    ],
+    "livello_20": [
+      {
+        "nome": "Campione Antico",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Elder Champion"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "scadente001",
+  "name": "🗡️ Oggetto Scadente - Rottura",
+  "type": "script",
+  "author": "Brancalonia",
+  "img": "icons/weapons/swords/sword-rusted-broken.webp",
+  "scope": "global",
+  "command": "// OGGETTO SCADENTE - Sistema Rottura\n// Macro da usare quando ottieni 1 naturale con un'arma scadente\n\nconst actor = game.user.character || canvas.tokens.controlled[0]?.actor;\nif (!actor) {\n  ui.notifications.warn(\"Seleziona un personaggio!\");\n  return;\n}\n\n// Dialog per scegliere l'oggetto\nconst weapons = actor.items.filter(i => \n  i.type === \"weapon\" && \n  (i.name.toLowerCase().includes(\"scadent\") || i.name.toLowerCase().includes(\"arrugginit\"))\n);\n\nif (weapons.length === 0) {\n  ui.notifications.info(\"Nessun oggetto scadente equipaggiato!\");\n  return;\n}\n\nconst buttons = {};\nweapons.forEach(w => {\n  buttons[w.id] = {\n    label: w.name,\n    callback: async () => {\n      // Tira per la rottura\n      const roll = await new Roll(\"1d6\").evaluate({async: true});\n      \n      let result = \"\";\n      let broken = false;\n      \n      switch(roll.total) {\n        case 1:\n          result = \"💥 L'arma ESPLODE! Subisci 1d4 danni!\";\n          const dmg = await new Roll(\"1d4\").evaluate({async: true});\n          await actor.applyDamage(dmg.total);\n          broken = true;\n          break;\n        case 2:\n        case 3:\n          result = \"💔 L'arma si ROMPE definitivamente!\";\n          broken = true;\n          break;\n        case 4:\n        case 5:\n          result = \"🔨 L'arma si danneggia (-1 colpire/danni fino a riparazione)\";\n          await w.update({\"system.attackBonus\": \"-1\", \"system.damage.parts\": [[w.system.damage.parts[0][0] + \" - 1\", w.system.damage.parts[0][1]]]});\n          break;\n        case 6:\n          result = \"⚔️ Ultimo colpo eroico! Danno massimo poi si rompe!\";\n          broken = true;\n          ui.notifications.info(\"Applica danno massimo per questo attacco!\");\n          break;\n      }\n      \n      // Messaggio in chat\n      ChatMessage.create({\n        speaker: ChatMessage.getSpeaker({actor}),\n        content: `<h3>🗡️ Rottura Oggetto Scadente!</h3>\n        <p><strong>${w.name}</strong></p>\n        <p>Tiro rottura: [[${roll.total}]]</p>\n        <p><strong>${result}</strong></p>\n        ${broken ? `<p style=\"color:red;\">⚠️ Rimuovi l'oggetto dall'inventario!</p>` : \"\"}`\n      });\n      \n      // Rimuovi se rotto\n      if (broken && roll.total !== 6) {\n        await w.delete();\n      }\n    }\n  };\n});\n\nnew Dialog({\n  title: \"Quale oggetto si è rotto?\",\n  buttons: buttons,\n  default: Object.keys(buttons)[0]\n}).render(true);",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Macro.scadente001"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347"
+  },
+  "_key": "!macros!scadente001"
+}

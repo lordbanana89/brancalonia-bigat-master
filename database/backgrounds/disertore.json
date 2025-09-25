@@ -1,0 +1,60 @@
+{
+  "nome": "Disertore",
+  "fonte": "Brancalonia Macaronicon p.40-41",
+  "descrizione": "Ex soldato fuggito dall'esercito, in fuga dalla giustizia militare",
+  "caratteristiche": [
+    "Addestramento militare completo",
+    "Sempre all'erta per evitare cattura",
+    "Conosce tattiche e strategie militari",
+    "Vive con il rimorso o con orgoglio della sua scelta"
+  ],
+  "competenze": {
+    "abilita": ["Atletica", "Sopravvivenza"],
+    "strumenti": ["Un tipo di gioco (dadi o carte)"],
+    "linguaggi": ["Uno a scelta"],
+    "implementazione": {
+      "atletica": "system.skills.ath.value = 1",
+      "sopravvivenza": "system.skills.sur.value = 1"
+    }
+  },
+  "equipaggiamento": {
+    "oggetti": [
+      "Uniforme militare rovinata e senza insegne",
+      "Un'arma semplice dell'esercito",
+      "Coperta militare",
+      "Set di dadi o carte",
+      "Borsa con 10 monete d'oro"
+    ]
+  },
+  "privilegio": {
+    "nome": "Cameratismo Militare",
+    "descrizione": "Altri veterani e soldati riconoscono il personaggio come uno di loro. Anche se disertore, molti veterani lo aiuteranno per solidarietà, offrendo rifugio, cibo o informazioni.",
+    "meccanica": "narrativo",
+    "utilizzo": "Ottiene aiuto da altri veterani che comprendono la sua situazione"
+  },
+  "motivi_diserzione": [
+    "Ordini disonorevoli rifiutati",
+    "Paura della morte in battaglia",
+    "Tradimento dei superiori",
+    "Amore proibito da seguire",
+    "Scoperta di complotto militare"
+  ],
+  "conoscenze_militari": [
+    "Punti deboli delle fortificazioni",
+    "Tattiche standard dell'esercito",
+    "Nomi e abitudini degli ufficiali",
+    "Posizione di armerie segrete",
+    "Codici e segnali militari"
+  ],
+  "suggerimenti_interpretazione": [
+    "Soldato idealista deluso",
+    "Codardo che è fuggito dalla battaglia",
+    "Eroe che ha rifiutato ordini immorali",
+    "Mercenario che ha tradito per denaro"
+  ],
+  "validazione": {
+    "implementato": false,
+    "file_id": "disertore_background_macaronicon",
+    "compendio": "backgrounds_macaronicon"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "rischimestieretabella",
+  "_key": "!journal!rischimestieretabella",
+  "name": "Tabella dei Rischi del Mestiere",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rischi-mestiere-tabella",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "50"
+      }
+    }
+  },
+  "type": "JournalEntry"
+}

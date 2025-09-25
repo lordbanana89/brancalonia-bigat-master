@@ -1,0 +1,36 @@
+{
+  "categoria": "Veicoli e Traini",
+  "totale": 6,
+  "elementi": [
+    {
+      "id": "gear-veh-001",
+      "nome": "Carretto",
+      "file": "gear-veh-001_carretto.json"
+    },
+    {
+      "id": "gear-veh-002",
+      "nome": "Carro",
+      "file": "gear-veh-002_carro.json"
+    },
+    {
+      "id": "gear-veh-003",
+      "nome": "Carrozza",
+      "file": "gear-veh-003_carrozza.json"
+    },
+    {
+      "id": "gear-veh-004",
+      "nome": "Slitta",
+      "file": "gear-veh-004_slitta.json"
+    },
+    {
+      "id": "gear-veh-005",
+      "nome": "Barca a Remi",
+      "file": "gear-veh-005_barca_a_remi.json"
+    },
+    {
+      "id": "gear-veh-006",
+      "nome": "Zattera",
+      "file": "gear-veh-006_zattera.json"
+    }
+  ]
+}

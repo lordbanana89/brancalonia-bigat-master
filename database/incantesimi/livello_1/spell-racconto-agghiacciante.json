@@ -1,0 +1,70 @@
+{
+  "id": "spell-racconto-agghiacciante",
+  "nome": "Racconto Agghiacciante",
+  "nome_inglese": "Chilling Tale",
+  "livello": 1,
+  "scuola": "Ammaliamento",
+  "tempo_lancio": "1 azione bonus",
+  "gittata": "27 metri",
+  "componenti": {
+    "verbale": true
+  },
+  "durata": "Concentrazione, fino a 1 minuto",
+  "descrizione": "L'incantatore narra un racconto inquietante che soltanto una creatura a sua scelta e situata entro gittata è in grado di udire; la mente del bersaglio viene sconvolta dall'energia psychica generata dall'incantesimo. Il bersaglio deve effettuare un tiro salvezza su Saggezza. Se lo fallisce, diventa spaventato per la durata dell'incantesimo. Alla fine di ogni turno del bersaglio, prima che l'incantesimo termini, il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti subirà 1d8 danni psichici. Se lo supera, l'incantesimo termina.",
+  "livelli_superiori": "Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 2° livello o superiore, i danni aumentano di 1d8 per ogni slot di livello superiore al 1°.",
+  "classi": ["Bardo"],
+  "scaling": {
+    "slot_1": "1d8 psichici",
+    "slot_2": "2d8 psichici",
+    "slot_3": "3d8 psichici",
+    "slot_4": "4d8 psichici"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "bonus",
+    "range": 90,
+    "save": "wisdom",
+    "durata": "1 minute",
+    "concentrazione": true,
+    "condizione": "frightened"
+  },
+  "meccaniche_uniche": {
+    "racconto_personale": "Solo target sente",
+    "frightened_iniziale": "Save fallito = frightened",
+    "danno_continuo": "1d8 ogni turno se fail save",
+    "save_per_terminare": "Success = spell finisce",
+    "bonus_action": "Lascia azione libera"
+  },
+  "condizione_frightened": {
+    "disadvantage": "Svantaggio ability check e attack",
+    "no_approach": "Non può avvicinarsi volontariamente",
+    "movimento": "Deve allontanarsi se possibile"
+  },
+  "danno_progressivo": {
+    "ogni_turno": "Fine turno del target",
+    "save_o_danno": "WIS save o 1d8 psychic",
+    "accumulo": "Può fare molto danno nel tempo",
+    "terminazione": "Un save riuscito termina tutto"
+  },
+  "confronto_spell": {
+    "vs_cause_fear": "Più danno ma single target",
+    "vs_dissonant_whispers": "Frightened + damage over time",
+    "vs_phantasmal_force": "Meno versatile ma bonus action"
+  },
+  "flavor_bardo": {
+    "narrativa": "Storia terrificante personalizzata",
+    "psicologico": "Attacco mentale tramite parole",
+    "culturale": "Tradizione orale italiana",
+    "esempi": "Storie di streghe, morti, maledizioni"
+  },
+  "utilizzi": [
+    "Shutdown single target",
+    "Danno over time economico",
+    "Forzare ritirata nemico",
+    "Combo con altri fear effects",
+    "Boss killer se fallisce saves"
+  ],
+  "note_dm": "Racconto Agghiacciante è spell bardo Brancalonia che combina controllo e danno. Bonus action eccellente. Flavor narrativo perfetto per setting.",
+  "fonte": "Brancalonia Macaronicon p.52"
+}

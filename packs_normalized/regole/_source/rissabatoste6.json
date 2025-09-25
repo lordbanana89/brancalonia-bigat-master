@@ -1,0 +1,39 @@
+{
+  "_id": "rissabatoste6cb3c3d",
+  "_key": "!journal!rissabatoste6cb3c3d",
+  "name": "All'Ospedale",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "rissabatoste6cb3c3dpage1",
+      "name": "All'Ospedale",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<p>K.O. + danni extra</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-batoste-6",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

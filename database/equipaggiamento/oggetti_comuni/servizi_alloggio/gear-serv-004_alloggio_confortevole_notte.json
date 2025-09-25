@@ -1,0 +1,16 @@
+{
+  "id": "gear-serv-004",
+  "nome": "Alloggio Confortevole (notte)",
+  "categoria": "oggetto_comune",
+  "sottotipo": "servizi_alloggio",
+  "costo": "2 mo",
+  "peso": "—",
+  "descrizione": "Camera privata con letto, bacinella e chiusura semplice.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

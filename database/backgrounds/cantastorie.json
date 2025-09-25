@@ -1,0 +1,53 @@
+{
+  "nome": "Cantastorie",
+  "fonte": "Brancalonia Macaronicon p.37-38",
+  "descrizione": "Narratore itinerante che racconta leggende, storie e panzane per le piazze del Regno",
+  "caratteristiche": [
+    "Maestro nell'arte della narrazione",
+    "Conosce leggende e storie di tutto il Regno",
+    "Abile nell'inventare panzane credibili",
+    "Sempre accolto nelle piazze e osterie"
+  ],
+  "competenze": {
+    "abilita": ["Intrattenere", "Storia"],
+    "linguaggi": ["Due a scelta"],
+    "strumenti": ["Uno strumento musicale"],
+    "implementazione": {
+      "intrattenere": "system.skills.prf.value = 1",
+      "storia": "system.skills.his.value = 1"
+    }
+  },
+  "equipaggiamento": {
+    "oggetti": [
+      "Strumento musicale (liuto, flauto o tamburello)",
+      "Costume colorato da cantastorie",
+      "Cappello per raccogliere monete",
+      "Raccolta di storie scritte",
+      "Borsa con 15 monete d'oro"
+    ]
+  },
+  "privilegio": {
+    "nome": "Pubblico Garantito",
+    "descrizione": "Il personaggio trova sempre qualcuno disposto ad ascoltare le sue storie. In ogni insediamento può guadagnare vitto e alloggio raccontando storie, e ottiene informazioni locali dal pubblico.",
+    "meccanica": "narrativo",
+    "utilizzo": "Ottiene automaticamente vitto e alloggio modesti nelle città"
+  },
+  "repertorio": [
+    "Le gesta di Orlando e Rinaldo",
+    "Le avventure del Gatto Mammone",
+    "La leggenda di San Giorgio",
+    "Storie di briganti famosi",
+    "Favole morali e apologhi"
+  ],
+  "suggerimenti_interpretazione": [
+    "Cantore di gesta eroiche",
+    "Racconta-panzane professionista",
+    "Custode di antiche leggende",
+    "Spia che usa le storie come copertura"
+  ],
+  "validazione": {
+    "implementato": false,
+    "file_id": "cantastorie_background_macaronicon",
+    "compendio": "backgrounds_macaronicon"
+  }
+}

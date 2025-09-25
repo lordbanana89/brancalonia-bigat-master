@@ -1,0 +1,112 @@
+{
+  "_id": "spellpassotraslato15fdd1",
+  "_key": "!item!spellpassotraslato15fdd1",
+  "name": "Passo Traslato",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Brevemente circondato da nebbia argentata, ti teletrasporti fino a 30 piedi in uno spazio non occupato che puoi vedere.</p><h3>Note per il DM</h3><p><em>Misty Step è escape/mobilità premium. Bonus action lo rende eccezionale. Solo verbale permette cast in situazioni difficili.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.260",
+    "level": 2,
+    "school": "evo",
+    "components": {
+      "vocal": true,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-passo-traslato",
+      "fonte": "D&D 5e PHB p.260",
+      "note_dm": "Misty Step è escape/mobilità premium. Bonus action lo rende eccezionale. Solo verbale permette cast in situazioni difficili.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "attivazione": "bonus",
+        "range": "self",
+        "teleport": "30 ft"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Evocazione",
+        "level": 2
+      }
+    }
+  }
+}

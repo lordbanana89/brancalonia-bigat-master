@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-201",
+  "nome": "Cerbottana",
+  "categoria": "arma_standard",
+  "tipo": "marziale_distanza",
+  "costo": "10 mo",
+  "danni": "1 perforante",
+  "proprieta": [
+    "Munizioni (7,5/30 m)",
+    "Ricarica"
+  ],
+  "peso": "0.5 kg",
+  "descrizione": "Tubo sottile che scaglia dardi minuscoli spesso avvelenati.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

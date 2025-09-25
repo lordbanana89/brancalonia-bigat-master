@@ -1,0 +1,19 @@
+{
+  "_id": "rissamossabasepugno",
+  "_key": "!journal!rissamossabasepugno",
+  "name": "Pugno/Calcio",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-base-pugno",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "JournalEntry"
+}

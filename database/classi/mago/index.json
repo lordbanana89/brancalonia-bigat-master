@@ -1,0 +1,69 @@
+{
+  "id": "class-mago",
+  "nome": "Mago",
+  "tipo": "classe",
+  "fonte": "Manuale del Giocatore p.78",
+  "descrizione": "Studioso delle arti arcane che trasforma intuizione e studio in potere magico puro.",
+  "dado_vita": "d6",
+  "punti_ferita": {
+    "al_1_livello": "6 + modificatore Costituzione",
+    "livelli_successivi": "1d6 (o 4) + modificatore Costituzione per livello"
+  },
+  "competenze": {
+    "armature": "Nessuna",
+    "armi": [
+      "Pugnale",
+      "Dardo",
+      "Fionda",
+      "Bastone ferrato",
+      "Balestra leggera"
+    ],
+    "attrezzi": "Nessuno",
+    "tiri_salvezza": [
+      "Intelligenza",
+      "Saggezza"
+    ],
+    "abilita": {
+      "numero": 2,
+      "scelte": [
+        "Arcano",
+        "Storia",
+        "Intuizione",
+        "Investigazione",
+        "Medicina",
+        "Religione"
+      ]
+    }
+  },
+  "equipaggiamento_iniziale": [
+    "(a) una balestra leggera e 20 quadrelli oppure (b) qualsiasi arma semplice",
+    "(a) un focus arcano oppure (b) un kit da componente",
+    "(a) un equipaggiamento da studioso oppure (b) un equipaggiamento da esploratore",
+    "Un libro degli incantesimi"
+  ],
+  "multiclasse": {
+    "requisiti": "Intelligenza 13",
+    "competenze_ottenute": [
+      "Balestra leggera",
+      "Pugnali"
+    ]
+  },
+  "incantesimi": {
+    "lista": "database/incantesimi/mago.json",
+    "caratteristica": "Intelligenza",
+    "preparazione": "Livello + modificatore Intelligenza"
+  },
+  "note_brancalonia": {
+    "privilegio_rissa": "Strattone di Cappello concede svantaggio ai duelli dialettici",
+    "integrazione_dnd5e": "Capacità condivise dipendono dagli entry del compendio dnd5e"
+  },
+  "validazione": {
+    "stato": "in_progress",
+    "note": "Verificare scuole arcane aggiuntive e compatibilità spellbook"
+  },
+  "collegamenti": {
+    "privilegi_generali": "privilegi_generali/index.json",
+    "progressione": "progressione/progressione.json",
+    "cammini": "cammini/index.json"
+  }
+}

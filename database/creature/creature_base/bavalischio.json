@@ -1,0 +1,79 @@
+{
+  "id": "creature-bavalischio",
+  "nome": "Bavalischio",
+  "nome_inglese": "Bavalisk",
+  "descrizione": "Questa sorta di cane a sei zampe troppo cresciuto, è un mostro di natura fandonica e innaturale. La sua caratteristica principale è quella di possedere un alito e una bava nauseabondi che trasformano in pietra chiunque ne venga in contatto. Il Bavalischio consumerà poi la vittima sgranocchiandola ben bene mentre quella inizia a ritornare di carne.",
+  "tipo": "Mostruosità",
+  "taglia": "Media",
+  "allineamento": "Senza allineamento",
+  "classe_armatura": {
+    "valore": 14,
+    "tipo": "armatura naturale"
+  },
+  "punti_ferita": {
+    "valore": 60,
+    "formula": "8d8 + 24"
+  },
+  "velocita": {
+    "camminare": "15 m"
+  },
+  "caratteristiche": {
+    "forza": 17,
+    "destrezza": 15,
+    "costituzione": 16,
+    "intelligenza": 2,
+    "saggezza": 10,
+    "carisma": 7
+  },
+  "modificatori": {
+    "forza": "+3",
+    "destrezza": "+2",
+    "costituzione": "+3",
+    "intelligenza": "-4",
+    "saggezza": "+0",
+    "carisma": "-2"
+  },
+  "abilita": {
+    "furtivita": "+4",
+    "percezione": "+2"
+  },
+  "sensi": {
+    "percezione_passiva": 12,
+    "scurovisione": "18 m"
+  },
+  "linguaggi": "-",
+  "grado_sfida": 3,
+  "punti_esperienza": 700,
+  "azioni": [
+    {
+      "nome": "Morso",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+5",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "10 (2d6 + 3) danni perforanti più 7 (2d6) danni da veleno",
+      "effetto_aggiuntivo": "Il bersaglio deve superare un tiro salvezza su Costituzione con CD 13, altrimenti inizia a trasformarsi in pietra ed è trattenuto. Il bersaglio trattenuto deve ripetere il tiro salvezza alla fine del suo turno successivo. Se lo supera, l'effetto per lui termina; mentre se lo fallisce, è pietrificato finché non viene liberato da un incantesimo ristorare superiore o da una magia analoga."
+    },
+    {
+      "nome": "Fiatella Pietrificante",
+      "ricarica": "5-6",
+      "tipo": "Soffio",
+      "area": "cono di 4,5 metri",
+      "tiro_salvezza": "Costituzione CD 13",
+      "effetto": "Ogni creatura in quell'area deve superare un tiro salvezza su Costituzione con CD 13, altrimenti inizia a trasformarsi in pietra ed è trattenuta. Il bersaglio trattenuto deve ripetere il tiro salvezza alla fine del suo turno successivo. Se lo supera, l'effetto per lui termina; mentre se lo fallisce, è pietrificato finché non viene liberato da un incantesimo ristorare superiore o da una magia analoga."
+    }
+  ],
+  "note_brancalonia": {
+    "origine": "Creatura di natura fandonica",
+    "sei_zampe": "Caratteristica distintiva",
+    "pietrificazione_parziale": "Mangia le vittime mentre tornano di carne",
+    "ispirazione": "Parodia del basilisco classico"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 3,
+    "size": "med",
+    "type": "monstrosity"
+  },
+  "fonte": "Brancalonia Manuale Base p.165"
+}

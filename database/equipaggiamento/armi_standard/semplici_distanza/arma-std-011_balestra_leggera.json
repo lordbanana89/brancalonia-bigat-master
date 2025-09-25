@@ -1,0 +1,22 @@
+{
+  "id": "arma-std-011",
+  "nome": "Balestra Leggera",
+  "categoria": "arma_standard",
+  "tipo": "semplice_distanza",
+  "costo": "25 mo",
+  "danni": "1d8 perforanti",
+  "proprieta": [
+    "Munizioni (24/96 m)",
+    "Ricarica",
+    "Due Mani"
+  ],
+  "peso": "2.3 kg",
+  "descrizione": "Balestra compatta a singolo colpo.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

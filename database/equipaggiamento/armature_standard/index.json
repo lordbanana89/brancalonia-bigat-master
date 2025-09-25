@@ -1,0 +1,26 @@
+{
+  "categoria": "Armature Standard",
+  "descrizione": "Armature comuni del Manuale Base suddivise in categorie.",
+  "sottoinsiemi": [
+    {
+      "chiave": "leggere",
+      "label": "Armature Leggere",
+      "index": "leggere/index.json"
+    },
+    {
+      "chiave": "medie",
+      "label": "Armature Medie",
+      "index": "medie/index.json"
+    },
+    {
+      "chiave": "pesanti",
+      "label": "Armature Pesanti",
+      "index": "pesanti/index.json"
+    },
+    {
+      "chiave": "scudi",
+      "label": "Scudi",
+      "index": "scudi/index.json"
+    }
+  ]
+}

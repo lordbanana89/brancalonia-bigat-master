@@ -1,0 +1,187 @@
+{
+  "tabella": [
+    {
+      "livello": 1,
+      "bonus_competenza": 2,
+      "privilegi": [
+        "Ira",
+        "Difesa Senza Armatura"
+      ],
+      "ira_usi": 2,
+      "danno_ira": "+2"
+    },
+    {
+      "livello": 2,
+      "bonus_competenza": 2,
+      "privilegi": [
+        "Attacco Irruento",
+        "Percezione del Pericolo"
+      ],
+      "ira_usi": 2,
+      "danno_ira": "+2"
+    },
+    {
+      "livello": 3,
+      "bonus_competenza": 2,
+      "privilegi": [
+        "Cammino Primordiale"
+      ],
+      "ira_usi": 3,
+      "danno_ira": "+2"
+    },
+    {
+      "livello": 4,
+      "bonus_competenza": 2,
+      "privilegi": [
+        "Aumento Punteggi Caratteristica"
+      ],
+      "ira_usi": 3,
+      "danno_ira": "+2"
+    },
+    {
+      "livello": 5,
+      "bonus_competenza": 3,
+      "privilegi": [
+        "Attacco Extra",
+        "Movimento Veloce"
+      ],
+      "ira_usi": 3,
+      "danno_ira": "+2"
+    },
+    {
+      "livello": 6,
+      "bonus_competenza": 3,
+      "privilegi": [
+        "Privilegio del Cammino"
+      ],
+      "ira_usi": 4,
+      "danno_ira": "+2"
+    },
+    {
+      "livello": 7,
+      "bonus_competenza": 3,
+      "privilegi": [
+        "Istinto Ferino"
+      ],
+      "ira_usi": 4,
+      "danno_ira": "+2"
+    },
+    {
+      "livello": 8,
+      "bonus_competenza": 3,
+      "privilegi": [
+        "Aumento Punteggi Caratteristica"
+      ],
+      "ira_usi": 4,
+      "danno_ira": "+2"
+    },
+    {
+      "livello": 9,
+      "bonus_competenza": 4,
+      "privilegi": [
+        "Critico Brutale (1 dado)"
+      ],
+      "ira_usi": 4,
+      "danno_ira": "+3"
+    },
+    {
+      "livello": 10,
+      "bonus_competenza": 4,
+      "privilegi": [
+        "Privilegio del Cammino"
+      ],
+      "ira_usi": 4,
+      "danno_ira": "+3"
+    },
+    {
+      "livello": 11,
+      "bonus_competenza": 4,
+      "privilegi": [
+        "Ira Implacabile"
+      ],
+      "ira_usi": 4,
+      "danno_ira": "+3"
+    },
+    {
+      "livello": 12,
+      "bonus_competenza": 4,
+      "privilegi": [
+        "Aumento Punteggi Caratteristica"
+      ],
+      "ira_usi": 5,
+      "danno_ira": "+3"
+    },
+    {
+      "livello": 13,
+      "bonus_competenza": 5,
+      "privilegi": [
+        "Critico Brutale (2 dadi)"
+      ],
+      "ira_usi": 5,
+      "danno_ira": "+3"
+    },
+    {
+      "livello": 14,
+      "bonus_competenza": 5,
+      "privilegi": [
+        "Privilegio del Cammino"
+      ],
+      "ira_usi": 5,
+      "danno_ira": "+3"
+    },
+    {
+      "livello": 15,
+      "bonus_competenza": 5,
+      "privilegi": [
+        "Ira Persistente"
+      ],
+      "ira_usi": 5,
+      "danno_ira": "+3"
+    },
+    {
+      "livello": 16,
+      "bonus_competenza": 5,
+      "privilegi": [
+        "Aumento Punteggi Caratteristica"
+      ],
+      "ira_usi": 5,
+      "danno_ira": "+4"
+    },
+    {
+      "livello": 17,
+      "bonus_competenza": 6,
+      "privilegi": [
+        "Critico Brutale (3 dadi)"
+      ],
+      "ira_usi": 6,
+      "danno_ira": "+4"
+    },
+    {
+      "livello": 18,
+      "bonus_competenza": 6,
+      "privilegi": [
+        "Forza Indomabile"
+      ],
+      "ira_usi": 6,
+      "danno_ira": "+4"
+    },
+    {
+      "livello": 19,
+      "bonus_competenza": 6,
+      "privilegi": [
+        "Aumento Punteggi Caratteristica"
+      ],
+      "ira_usi": 6,
+      "danno_ira": "+4"
+    },
+    {
+      "livello": 20,
+      "bonus_competenza": 6,
+      "privilegi": [
+        "Campione Primordiale"
+      ],
+      "ira_usi": "Illimitati",
+      "danno_ira": "+4"
+    }
+  ]
+}

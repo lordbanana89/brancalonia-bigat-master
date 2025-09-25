@@ -1,0 +1,17 @@
+{
+  "id": "001",
+  "nome": "L'Anello del Vescovo Ladrone",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Anello d'oro con rubino, appartenuto a un vescovo corrotto",
+  "proprieta": "Chi lo indossa ha vantaggio alle prove di Inganno quando mente su questioni religiose",
+  "maledizione": "Svantaggio ai TS contro effetti divini",
+  "valore": "500 mo",
+  "storia": "Appartenuto al Vescovo Arnaldo, scomunicato per simonia",
+  "maledizione_specifica": "Svantaggio ai TS contro effetti divini",
+  "implementazione": {
+    "tipo": "magico_minore",
+    "attivo": true,
+    "active_effects": []
+  }
+}

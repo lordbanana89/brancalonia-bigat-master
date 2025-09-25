@@ -1,0 +1,21 @@
+{
+  "totale": 3,
+  "cammini": [
+    {
+      "id": "class-druido-circolo-terra",
+      "nome": "Circolo della Terra",
+      "file": "class-druido-circolo-terra.json"
+    },
+    {
+      "id": "class-druido-circolo-luna",
+      "nome": "Circolo della Luna",
+      "file": "class-druido-circolo-luna.json"
+    },
+    {
+      "id": "benandante_druido",
+      "nome": "Circolo dei Benandanti",
+      "file": "../benandante_druido/index.json",
+      "nota": "Nuovo circolo di Brancalonia"
+    }
+  ]
+}

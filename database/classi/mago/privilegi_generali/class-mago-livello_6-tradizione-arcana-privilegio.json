@@ -1,0 +1,132 @@
+{
+  "id": "class-mago-livello_6-tradizione-arcana-privilegio",
+  "nome": "Privilegio della Tradizione Arcana",
+  "nome_brancalonia": "Maestria della Scuola",
+  "livello": 6,
+  "tipo": "varia",
+  "descrizione": "Al 6° livello, ottieni un privilegio dalla tua Tradizione Arcana scelta.",
+  "meccaniche": {
+    "tipo_privilegio": "Dipende dalla scuola",
+    "potenza": "Capacità definitoria della scuola"
+  },
+  "privilegi_per_scuola": {
+    "abjuration": {
+      "nome": "Projected Ward",
+      "effetto": "Usa Arcane Ward su alleati entro 30ft",
+      "reaction": "Proteggi altri col tuo scudo"
+    },
+    "conjuration": {
+      "nome": "Benign Transposition",
+      "effetto": "Teleport 30ft o scambia con alleato",
+      "recupero": "1/turno o cast conjuration spell"
+    },
+    "divination": {
+      "nome": "Expert Divination",
+      "effetto": "Recupera slot quando cast divination 2+",
+      "valore": "Slot di livello spell-1 recuperato"
+    },
+    "enchantment": {
+      "nome": "Split Enchantment",
+      "effetto": "Enchantment single target colpisce 2",
+      "limitazione": "Spell 1° livello o superiore"
+    },
+    "evocation": {
+      "nome": "Potent Cantrip",
+      "effetto": "Cantrip danno = metà su save riuscito",
+      "affidabilità": "Danno garantito"
+    },
+    "illusion": {
+      "nome": "Malleable Illusions",
+      "effetto": "Cambia illusioni con azione",
+      "versatilità": "Illusioni dinamiche"
+    },
+    "necromancy": {
+      "nome": "Undead Thralls",
+      "effetto": "+1 non-morto, +HP e +damage",
+      "potenziamento": "Wizard level a HP, prof a damage"
+    },
+    "transmutation": {
+      "nome": "Transmuter's Stone",
+      "effetto": "Pietra con benefici variabili",
+      "opzioni": "Darkvision, speed, prof CON save, resist"
+    },
+    "war_magic": {
+      "nome": "Power Surge",
+      "effetto": "Store power, add to damage",
+      "accumulo": "Quando dispel o counterspell"
+    },
+    "bladesinging": {
+      "nome": "Extra Attack",
+      "effetto": "2 attacchi o 1 attacco + cantrip",
+      "unico": "Cantrip al posto di un attacco"
+    },
+    "order_scribes": {
+      "nome": "Manifest Mind",
+      "effetto": "Libro diventa spettro esploratore",
+      "utilità": "Cast spell da sua posizione"
+    },
+    "chronurgy": {
+      "nome": "Momentary Stasis",
+      "effetto": "Freeze creatura con INT save",
+      "usi": "INT modifier per long rest"
+    },
+    "graviturgy": {
+      "nome": "Gravity Well",
+      "effetto": "Muovi creature colpite da spell",
+      "distanza": "5ft per spell hit"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "subclass_feature",
+    "livello_sblocco": 6,
+    "varia_per_sottoclasse": true
+  },
+  "impatto_build": {
+    "definizione_stile": "Cementa specializzazione",
+    "power_spike": "Notevole aumento potere",
+    "sinergie": "Potenzia spell scuola"
+  },
+  "valutazione_privilegi": {
+    "top_tier": [
+      "Benign Transposition (mobilità)",
+      "Expert Divination (risorse)",
+      "Bladesinging Extra Attack (azione economia)"
+    ],
+    "strong": [
+      "Projected Ward (protezione gruppo)",
+      "Potent Cantrip (affidabilità)",
+      "Split Enchantment (doppio target)"
+    ],
+    "situational": [
+      "Undead Thralls (richiede non-morti)",
+      "Transmuter's Stone (preparazione)"
+    ]
+  },
+  "combo_spell_6": {
+    "abjuration": "Ward protegge mentre counterspell",
+    "conjuration": "Misty Step poi Benign Transposition",
+    "divination": "Spam divination per slot recovery",
+    "enchantment": "Hold Person su 2 target",
+    "evocation": "Firebolt sempre danneggia",
+    "illusion": "Major Image modificabile real-time",
+    "necromancy": "Animate Dead potenziato",
+    "transmutation": "Stone + Polymorph combo"
+  },
+  "considerazioni_multiclasse": {
+    "richiede_mago_6": "No scorciatoie",
+    "investimento_significativo": "Vale per build dedicate",
+    "alcuni_eccezionali": "Bladesinger Extra Attack unico"
+  },
+  "errori_comuni": {
+    "dimenticare_privilegio": "Non usare capacità scuola",
+    "non_sinergia": "Ignorare combo con spell",
+    "conservare_risorse": "Non usare per paura spreco"
+  },
+  "narrazione_brancalonia": {
+    "specializzazione": "Vero esperto della scuola",
+    "riconoscimento": "Titolo nelle accademie",
+    "insegnamento": "Può prendere apprendisti"
+  },
+  "note_dm": "I privilegi di 6° livello definiscono veramente la scuola. Alcuni (Bladesinger Extra Attack, Expert Divination) sono game-changing.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115-119"
+}

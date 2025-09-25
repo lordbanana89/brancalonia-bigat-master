@@ -1,0 +1,122 @@
+{
+  "_id": "spellindividuazionemagiafe25e4",
+  "_key": "!item!spellindividuazionemagiafe25e4",
+  "name": "Individuazione del Magico",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Per la durata, percepisci la presenza di magia entro 30 piedi da te. Se percepisci magia in questo modo, puoi usare la tua azione per vedere una debole aura intorno a qualsiasi creatura o oggetto visibile nell'area che porta magia, e apprendi la sua scuola di magia, se presente. L'incantesimo può penetrare la maggior parte delle barriere, ma è bloccato da 1 piede di pietra, 1 pollice di metallo comune, una sottile lamina di piombo o 3 piedi di legno o terra.</p><h3>Utilizzi Tipici</h3><ul><li>Cercare oggetti magici</li><li>Identificare illusioni</li><li>Trovare trappole magiche</li><li>Verificare se NPC è sotto spell</li><li>Scoprire oggetti nascosti magici</li></ul><h3>Note per il DM</h3><p><em>Detect Magic è utilità essenziale. Ritual lo rende gratuito. Utile per puzzle e trappole magiche. Non sostituisce Identify.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.231",
+    "level": 1,
+    "school": "div",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": true,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-individuazione-magia",
+      "fonte": "D&D 5e PHB p.231",
+      "utilizzi": [
+        "Cercare oggetti magici",
+        "Identificare illusioni",
+        "Trovare trappole magiche",
+        "Verificare se NPC è sotto spell",
+        "Scoprire oggetti nascosti magici"
+      ],
+      "note_dm": "Detect Magic è utilità essenziale. Ritual lo rende gratuito. Utile per puzzle e trappole magiche. Non sostituisce Identify.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "rituale": true,
+        "attivazione": "action",
+        "range": "self",
+        "area": "30 ft radius",
+        "durata": "10 minutes",
+        "concentrazione": true
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Divinazione",
+        "level": 1
+      }
+    }
+  }
+}

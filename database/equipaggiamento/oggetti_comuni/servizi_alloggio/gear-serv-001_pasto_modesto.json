@@ -1,0 +1,16 @@
+{
+  "id": "gear-serv-001",
+  "nome": "Pasto Modesto",
+  "categoria": "oggetto_comune",
+  "sottotipo": "servizi_alloggio",
+  "costo": "5 ma",
+  "peso": "—",
+  "descrizione": "Pasto caldo in taverna con pane, zuppa e vino della casa.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

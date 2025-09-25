@@ -1,0 +1,44 @@
+{
+  "id": "class-stregone-livello_2-punti-stregoneria",
+  "nome": "Punti Stregoneria",
+  "nome_brancalonia": "Potere del Scaramante",
+  "livello": 2,
+  "tipo": "risorsa",
+  "descrizione": "Al 2° livello, attingi a una profonda fonte di magia dentro di te. Questa fonte è rappresentata dai punti stregoneria, che ti permettono di creare una varietà di effetti magici.",
+  "meccaniche": {
+    "punti": {
+      "formula": "Livello stregone",
+      "recupero": "Riposo lungo"
+    },
+    "font_of_magic": {
+      "creare_slot": {
+        "costo": {
+          "1°": "2 punti",
+          "2°": "3 punti",
+          "3°": "5 punti",
+          "4°": "6 punti",
+          "5°": "7 punti"
+        }
+      },
+      "convertire_slot": {
+        "guadagno": "Punti = livello slot"
+      }
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "resource",
+    "system.resources.sorcery": {
+      "value": "@classes.sorcerer.levels",
+      "max": "@classes.sorcerer.levels"
+    }
+  },
+  "metamagia": {
+    "nota": "Vedi privilegio Metamagia al 3° livello",
+    "usi": "Modifica spell con punti stregoneria"
+  },
+  "gestione": {
+    "efficienza": "Slot alti → punti → slot bassi inefficiente",
+    "coffeelock": "Warlock/Sorcerer combo controversa"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.101"
+}

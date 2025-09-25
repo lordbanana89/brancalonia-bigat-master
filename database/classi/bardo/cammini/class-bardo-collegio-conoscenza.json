@@ -1,0 +1,42 @@
+{
+  "id": "class-bardo-collegio-conoscenza",
+  "nome": "Collegio della Conoscenza",
+  "fonte": "Manuale del Giocatore p.54",
+  "descrizione": "Studiosi della storia e della poesia che usano parola e magia per smascherare menzogne e tagliare l'arroganza altrui.",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Competenze Supplementari",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bonus Proficiencies (Lore)"
+        }
+      },
+      {
+        "nome": "Parole Taglienti",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Cutting Words"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Segreti Magici Aggiuntivi",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Additional Magical Secrets"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Talento Impareggiabile",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Peerless Skill"
+        }
+      }
+    ]
+  }
+}

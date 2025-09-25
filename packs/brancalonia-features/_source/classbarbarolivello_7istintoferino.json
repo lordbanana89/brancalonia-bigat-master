@@ -1,0 +1,72 @@
+{
+  "_id": "classbarbarolivello7istintoferinof119f7",
+  "_key": "!item!classbarbarolivello7istintoferinof119f7",
+  "name": "Istinto Ferino",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Al 7° livello, i tuoi istinti sono così affinati che hai vantaggio ai tiri per l'iniziativa. Inoltre, se sei sorpreso all'inizio del combattimento e non sei incapacitato, puoi agire normalmente nel tuo primo turno, ma solo se entri in ira prima di fare qualsiasi altra cosa in quel turno.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.49",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-barbaro-livello_7-istinto-ferino",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49"
+    }
+  }
+}

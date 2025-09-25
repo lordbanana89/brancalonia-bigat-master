@@ -1,0 +1,17 @@
+{
+  "id": "creature_uniche-002",
+  "nome": "Lo Scarrafone d'Oro",
+  "grado_sfida": "5",
+  "tipo": "Costrutto",
+  "descrizione": "Scarabeo dorato animato che porta fortuna o sventura",
+  "pf": "76",
+  "ca": "18",
+  "abilita_speciali": [
+    "Aura di fortuna/sfortuna (casuale)",
+    "Immune a magia",
+    "Rigenerazione"
+  ],
+  "tesoro": "Vale 5000 mo se catturato vivo",
+  "leggenda": "Creato da antico alchimista",
+  "fonte": "Brancalonia Macaronicon p.160-172"
+}

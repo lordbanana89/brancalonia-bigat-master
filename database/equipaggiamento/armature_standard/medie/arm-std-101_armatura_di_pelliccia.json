@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-101",
+  "nome": "Armatura di Pelliccia",
+  "categoria": "armatura_standard",
+  "tipo": "media",
+  "costo": "10 mo",
+  "classe_armatura": "12 + Mod Destrezza (max 2)",
+  "bonus_ca": null,
+  "forza_minima": "—",
+  "furtivita": "—",
+  "peso": "5.4 kg",
+  "descrizione": "Pelli e pellicce ispessite sovrapposte.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

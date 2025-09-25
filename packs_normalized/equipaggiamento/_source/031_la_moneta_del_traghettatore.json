@@ -1,0 +1,81 @@
+{
+  "_id": "lamonetadeltraghettatoree04bd5",
+  "_key": "!items!lamonetadeltraghettatoree04bd5",
+  "name": "La Moneta del Traghettatore",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Antica moneta sempre fredda</p><h3>Proprietà</h3><p>Chi muore con essa può tornare in vita una volta (una sola volta nella vita)</p><h3>Storia</h3><p><em>Rubata a Caronte stesso</em></p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": {
+      "mgc": true
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "031",
+      "categoria": "cimelo",
+      "storia": "Rubata a Caronte stesso",
+      "proprieta_originale": "Chi muore con essa può tornare in vita una volta (una sola volta nella vita)",
+      "implementazione": {
+        "tipo": "narrativo",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

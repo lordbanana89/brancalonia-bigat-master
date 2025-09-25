@@ -1,0 +1,31 @@
+{
+  "categoria": "Armature Medie",
+  "totale": 5,
+  "elementi": [
+    {
+      "id": "arm-std-101",
+      "nome": "Armatura di Pelliccia",
+      "file": "arm-std-101_armatura_di_pelliccia.json"
+    },
+    {
+      "id": "arm-std-102",
+      "nome": "Corazza di Maglia",
+      "file": "arm-std-102_corazza_di_maglia.json"
+    },
+    {
+      "id": "arm-std-103",
+      "nome": "Corazza di Scaglie",
+      "file": "arm-std-103_corazza_di_scaglie.json"
+    },
+    {
+      "id": "arm-std-104",
+      "nome": "Corazza Pettorale",
+      "file": "arm-std-104_corazza_pettorale.json"
+    },
+    {
+      "id": "arm-std-105",
+      "nome": "Mezza Armatura a Piastre",
+      "file": "arm-std-105_mezza_armatura_a_piastre.json"
+    }
+  ]
+}

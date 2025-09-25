@@ -1,0 +1,94 @@
+{
+  "id": "class-monaco-livello_5-stunning-strike",
+  "nome": "Colpo Stordente",
+  "nome_brancalonia": "Pugno Paralizzante",
+  "livello": 5,
+  "tipo": "attivo",
+  "descrizione": "A partire dal 5° livello, puoi interferire con il flusso del ki nel corpo di un avversario. Quando colpisci un'altra creatura con un attacco con arma da mischia, puoi spendere 1 punto ki per tentare un colpo stordente. Il bersaglio deve superare un tiro salvezza su Costituzione o essere stordito fino alla fine del tuo prossimo turno.",
+  "meccaniche": {
+    "attivazione": {
+      "trigger": "Dopo aver colpito con attacco melee",
+      "costo": "1 ki point",
+      "tipo": "Nessuna azione aggiuntiva"
+    },
+    "effetto": {
+      "tiro_salvezza": "Costituzione",
+      "cd": "8 + bonus competenza + mod Saggezza",
+      "condizione": "Stordito",
+      "durata": "Fino fine tuo prossimo turno"
+    },
+    "condizione_stordito": {
+      "incapacitato": true,
+      "non_può_muovere": true,
+      "non_può_parlare": true,
+      "fallisce_ts_for_des": true,
+      "attacchi_hanno_vantaggio": true
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "on_hit_effect",
+    "risorsa": "ki",
+    "costo": 1,
+    "save": {
+      "ability": "con",
+      "dc": "8 + @prof + @abilities.wis.mod"
+    },
+    "effect": {
+      "status": "stunned",
+      "duration": {
+        "rounds": 1
+      }
+    }
+  },
+  "calcoli_efficacia": {
+    "probabilita_stun": {
+      "vs_con_10": "~50% con DC 15",
+      "vs_con_14": "~35% con DC 15",
+      "vs_con_20": "~15% con DC 15"
+    },
+    "tentativi_turno": {
+      "livello_5": "3-4 attacchi = 3-4 tentativi",
+      "ki_cost": "3-4 ki per tentare tutti"
+    }
+  },
+  "valore_tattico": {
+    "shutdown_boss": "Nega turno completo al nemico",
+    "action_economy": "1 ki = potenzialmente 1 turno nemico",
+    "team_synergy": "Vantaggio per tutti gli alleati"
+  },
+  "confronto": {
+    "vs_hold_person": "Stun funziona su tutti, Hold solo umanoidi",
+    "vs_other_stuns": "Più tentativi del monaco",
+    "efficienza": "Migliore stun/controllo del gioco per costo"
+  },
+  "gestione_ki": {
+    "priorita": "Spesso migliore uso del ki",
+    "conservazione": "Salvare per nemici pericolosi",
+    "spam": "Su boss tentare ogni colpo"
+  },
+  "counter_strategie": {
+    "high_con_saves": "Meno efficace",
+    "legendary_resistance": "Brucia resistenze",
+    "immune_stun": "Alcuni nemici immuni"
+  },
+  "combo": {
+    "focus_fire": "Stun + party elimina",
+    "lockdown": "Stun ripetuto ogni turno",
+    "flurry_stun": "4 tentativi in un turno"
+  },
+  "bilanciamento": {
+    "forte": "Miglior controllo single target",
+    "debole": "Dipende da ki e CON saves",
+    "design": "Signature ability del monaco"
+  },
+  "narrazione_brancalonia": {
+    "descrizione": "Il Frate colpisce punti di pressione vitali",
+    "effetti": [
+      "Blocca il respiro",
+      "Paralizza i muscoli",
+      "Interrompe il chi"
+    ]
+  },
+  "note_dm": "Stunning Strike può dominare combattimenti. Nemici con CON alta o immunità sono necessari per bilanciare.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79"
+}

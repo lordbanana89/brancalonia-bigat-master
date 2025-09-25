@@ -1,0 +1,15 @@
+{
+  "id": "035",
+  "nome": "Lo Stendardo Strappato",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Vessillo di battaglia lacerato e bruciato",
+  "proprieta": "Alleati entro 9m hanno vantaggio contro paura ma svantaggio a ritirarsi",
+  "valore": "600 mo",
+  "storia_tragica": "L'ultimo vessillo della battaglia perduta",
+  "implementazione": {
+    "tipo": "magico_minore",
+    "attivo": true,
+    "active_effects": []
+  }
+}

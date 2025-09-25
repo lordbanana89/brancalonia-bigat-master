@@ -1,0 +1,20 @@
+{
+  "numero": 7,
+  "titolo": "La Congiura dei Pugnali",
+  "pagine": "p.131-137",
+  "livello_consigliato": "5-7",
+  "ambientazione": "Repubblica di Spolenia",
+  "trama_breve": "I personaggi vengono coinvolti in un complotto per rovesciare il governo della repubblica.",
+  "png_principali": [
+    "Il Doge Corrotto",
+    "La Società dei Pugnali",
+    "Il Capitano del Popolo"
+  ],
+  "ricompense": [
+    "Influenza politica",
+    "Palazzo in città",
+    "Titolo onorifico"
+  ],
+  "meccaniche": "Politica, spionaggio, combattimenti urbani",
+  "fonte": "Brancalonia Macaronicon p.89-159"
+}

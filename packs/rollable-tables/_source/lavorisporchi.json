@@ -1,0 +1,166 @@
+{
+  "_id": "lavorisporchi",
+  "name": "Generatore Lavori Sporchi",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Generatore Lavori Sporchi",
+  "results": [
+    {
+      "_id": "lavori-sporchi_0",
+      "type": 0,
+      "text": "FURTO: Rubare un oggetto prezioso da un mercante",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_0"
+    },
+    {
+      "_id": "lavori-sporchi_1",
+      "type": 0,
+      "text": "ASSASSINIO: Eliminare un rivale di qualcuno",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_1"
+    },
+    {
+      "_id": "lavori-sporchi_2",
+      "type": 0,
+      "text": "RAPIMENTO: Catturare una persona importante",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_2"
+    },
+    {
+      "_id": "lavori-sporchi_3",
+      "type": 0,
+      "text": "CONTRABBANDO: Trasportare merce illegale",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_3"
+    },
+    {
+      "_id": "lavori-sporchi_4",
+      "type": 0,
+      "text": "ESTORSIONE: Convincere qualcuno a pagare protezione",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_4"
+    },
+    {
+      "_id": "lavori-sporchi_5",
+      "type": 0,
+      "text": "SABOTAGGIO: Distruggere la proprietà di un rivale",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_5"
+    },
+    {
+      "_id": "lavori-sporchi_6",
+      "type": 0,
+      "text": "SPIONAGGIO: Raccogliere informazioni segrete",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_6"
+    },
+    {
+      "_id": "lavori-sporchi_7",
+      "type": 0,
+      "text": "SCORTA: Proteggere una carovana o persona",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_7"
+    },
+    {
+      "_id": "lavori-sporchi_8",
+      "type": 0,
+      "text": "RECUPERO: Trovare e riportare un oggetto perduto",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_8"
+    },
+    {
+      "_id": "lavori-sporchi_9",
+      "type": 0,
+      "text": "INGANNO: Truffare un nobile credulone",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_9"
+    },
+    {
+      "_id": "lavori-sporchi_10",
+      "type": 0,
+      "text": "RISCATTO: Liberare un prigioniero",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_10"
+    },
+    {
+      "_id": "lavori-sporchi_11",
+      "type": 0,
+      "text": "VENDETTA: Punire chi ha fatto un torto al cliente",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!lavori-sporchi_11"
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 100,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!lavorisporchi"
+}

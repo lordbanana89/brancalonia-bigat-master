@@ -1,0 +1,30 @@
+{
+  "titolo": "Corte e Nobiltà",
+  "pagine": "p.65-70",
+  "tipo": "Intrigo politico",
+  "contenuto": {
+    "descrizione": "Sistema per gestire politica e vita di corte",
+    "meccaniche": [
+      "Reputazione a corte",
+      "Favori e debiti",
+      "Duelli d'onore",
+      "Matrimoni combinati",
+      "Scandali e pettegolezzi"
+    ],
+    "titoli_nobiliari": [
+      "Duca/Duchessa (controllo provincia)",
+      "Conte/Contessa (controllo contea)",
+      "Barone/Baronessa (controllo baronia)",
+      "Cavaliere/Dama (titolo onorifico)",
+      "Patrizio (nobiltà cittadina)"
+    ],
+    "eventi_corte": [
+      "Ballo mascherato",
+      "Torneo cavalleresco",
+      "Caccia al cinghiale",
+      "Processo per tradimento",
+      "Investitura cavalleresca"
+    ]
+  },
+  "fonte": "Brancalonia Macaronicon p.53-88"
+}

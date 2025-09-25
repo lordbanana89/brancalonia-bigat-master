@@ -1,0 +1,21 @@
+{
+  "id": "mac-spell-006",
+  "livello": 1,
+  "nome": "Fiuto del Contrabbandiere",
+  "scuola": "Divinazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Personale",
+  "componenti": "V, S",
+  "durata": "10 minuti",
+  "descrizione": "Percepisci la presenza di compartimenti segreti, oggetti nascosti e passaggi celati entro 9 metri.",
+  "classi": [
+    "Ladro",
+    "Ranger"
+  ],
+  "rituale": true,
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "mattatore_ranger-livello_3-occhio_mattatore",
+  "livello": 3,
+  "nome": "occhio_mattatore",
+  "tipo": "attivo",
+  "descrizione": "Azione bonus: per 1 min contro una creatura entro 18m: +prof ai danni, critico 19-20, +SAG a CA contro suoi attacchi",
+  "implementazione": {
+    "bonus_danni": "flags.brancalonia-bigat.mattatoreTargetDamage = '@proficiencyBonus'",
+    "critico_esteso": "flags.brancalonia-bigat.mattatoreCrit = 19",
+    "bonus_ca": "flags.brancalonia-bigat.mattatoreAC = '@abilities.wis.mod'"
+  },
+  "mode": 2,
+  "durata": "1 minuto",
+  "usi": "1/riposo breve o lungo"
+}

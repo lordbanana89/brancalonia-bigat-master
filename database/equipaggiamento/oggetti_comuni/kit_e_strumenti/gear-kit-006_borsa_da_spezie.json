@@ -1,0 +1,16 @@
+{
+  "id": "gear-kit-006",
+  "nome": "Borsa da Spezie",
+  "categoria": "oggetto_comune",
+  "sottotipo": "kit_e_strumenti",
+  "costo": "3 mo",
+  "peso": "0.5 kg",
+  "descrizione": "Miscele aromatiche per insaporire i pasti e coprire il gusto dell’equipaggiamento scadente.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

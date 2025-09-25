@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-009",
+  "nome": "Lucerna del Becchino",
+  "rarita": "Non comune",
+  "tipo": "Oggetto meraviglioso",
+  "sintonia": "No",
+  "descrizione": "Lanterna che rivela non morti",
+  "proprieta": [
+    "I non morti entro 9m brillano di luce spettrale",
+    "Luce normale 6m, fioca 6m aggiuntivi",
+    "3 cariche al giorno: può paralizzare un non morto (TS Saggezza CD 13)"
+  ],
+  "effetti_speciali": {
+    "maledizione": "Attira non morti nel raggio di 150m",
+    "note": null,
+    "restrizione": null,
+    "rischio": null,
+    "effetto_collaterale": null,
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

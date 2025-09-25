@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-008",
+  "nome": "Fiasca del Montanaro",
+  "rarita": "Raro",
+  "tipo": "Oggetto meraviglioso",
+  "sintonia": "No",
+  "descrizione": "Fiasca che trasforma l'acqua in grappa",
+  "proprieta": [
+    "Trasforma 1 litro d'acqua in grappa forte una volta al giorno",
+    "La grappa cura 1d4 PF ma causa svantaggio a Destrezza per 1 ora",
+    "Immunità al freddo per 1 ora dopo aver bevuto"
+  ],
+  "effetti_speciali": {
+    "maledizione": null,
+    "note": null,
+    "restrizione": null,
+    "rischio": null,
+    "effetto_collaterale": "Alito pesante (-2 Persuasione) per 4 ore",
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

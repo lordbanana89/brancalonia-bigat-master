@@ -1,0 +1,16 @@
+{
+  "livello": "4",
+  "totale": 2,
+  "incantesimi": [
+    {
+      "nome": "Invisibilità Superiore",
+      "scuola": "Illusione",
+      "file": "spell-invisibilita-superiore.json"
+    },
+    {
+      "nome": "Porta Dimensionale",
+      "scuola": "Evocazione",
+      "file": "spell-porta-dimensionale.json"
+    }
+  ]
+}

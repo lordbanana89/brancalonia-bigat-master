@@ -1,0 +1,97 @@
+{
+  "id": "class-barbaro-livello_2-attacco-irruento",
+  "nome": "Attacco Irruento",
+  "nome_brancalonia": "Carica del Pagano",
+  "livello": 2,
+  "tipo": "attivo",
+  "descrizione": "A partire dal 2° livello, puoi gettare da parte qualsiasi preoccupazione per la difesa e attaccare con selvaggia disperazione. Quando effettui il tuo primo attacco nel turno, puoi decidere di attaccare in modo irruento. Se lo fai, hai vantaggio ai tiri per colpire con attacchi in mischia che usano Forza durante questo turno, ma i tiri per colpire contro di te hanno vantaggio fino al tuo prossimo turno.",
+  "meccaniche": {
+    "attivazione": {
+      "trigger": "Primo attacco del turno",
+      "tipo": "decisione_tattica",
+      "costo": "Nessuno"
+    },
+    "benefici": {
+      "vantaggio_attacchi": {
+        "descrizione": "Vantaggio a tutti gli attacchi in mischia con Forza per il turno",
+        "durata": "Fino alla fine del turno corrente",
+        "requisiti": "Attacchi in mischia basati su Forza"
+      }
+    },
+    "controindicazioni": {
+      "vulnerabilita_difensiva": {
+        "descrizione": "Tutti gli attacchi contro di te hanno vantaggio",
+        "durata": "Fino all'inizio del tuo prossimo turno",
+        "nota": "Si applica a TUTTI gli attacchi, non solo in mischia"
+      }
+    },
+    "interazione_ira": {
+      "sinergia": "Si combina con i bonus danni dell'Ira",
+      "vantaggio_cumulativo": "No (vantaggio non si cumula)",
+      "strategia": "Ottimo per eliminare nemici rapidamente"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "toggle",
+    "active_effects": [
+      {
+        "label": "Attacco Irruento - Vantaggio Attacchi",
+        "key": "flags.dnd5e.advantage.attack.mwak",
+        "mode": 5,
+        "value": "1",
+        "duration": {
+          "turns": 1,
+          "startTurn": "current"
+        }
+      },
+      {
+        "label": "Attacco Irruento - Vulnerabilità",
+        "key": "flags.dnd5e.grants.advantage.attack.all",
+        "mode": 5,
+        "value": "1",
+        "duration": {
+          "rounds": 1,
+          "startRound": "next"
+        }
+      }
+    ],
+    "macro": {
+      "tipo": "ChatMessage",
+      "contenuto": "Attacco Irruento attivato! Hai vantaggio agli attacchi in mischia con Forza questo turno, ma i nemici hanno vantaggio contro di te fino al tuo prossimo turno."
+    }
+  },
+  "tattiche_consigliate": {
+    "quando_usare": [
+      "Contro nemici con bassa CA",
+      "Quando hai bisogno di eliminare un bersaglio rapidamente",
+      "In combinazione con Critico Brutale (livelli alti)",
+      "Quando hai alleati che possono proteggerti"
+    ],
+    "quando_evitare": [
+      "Circondato da molti nemici",
+      "Contro nemici con multiattacco potente",
+      "Quando hai pochi punti ferita",
+      "Contro arcieri o incantatori a distanza"
+    ]
+  },
+  "esempi_gioco": {
+    "scenario_1": {
+      "situazione": "Barbaro livello 2 con Forza 16 (+3) attacca un goblin",
+      "senza_irruento": "1d20+5 per colpire",
+      "con_irruento": "2d20kh1+5 per colpire (vantaggio)",
+      "rischio": "Il goblin attacca con vantaggio il turno successivo"
+    },
+    "scenario_2": {
+      "situazione": "Barbaro in Ira con Ascia Bipenne",
+      "danno_base": "1d12+3 (Forza) +2 (Ira)",
+      "con_irruento": "Maggiore probabilità di critico (19-20 diventa ~19% con vantaggio)",
+      "calcolo": "Vantaggio aumenta chance critico dal 10% al 19%"
+    }
+  },
+  "note_dm": "Privilegio risk/reward che incoraggia scelte tattiche. Barbari inesperti tendono ad abusarne, quelli esperti lo usano strategicamente.",
+  "interazioni_brancalonia": {
+    "rissa": "Funziona anche nelle Risse, il vantaggio si applica alle Batoste",
+    "nomea": "Usare spesso Attacco Irruento aumenta la reputazione di 'temerario'"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48"
+}

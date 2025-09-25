@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-randellata",
+  "nome": "Randellata",
+  "requisiti": "Forza 15+",
+  "costo": "2 slot",
+  "effetto": "Richiede oggetto pesante. 3d6 + For Batoste",
+  "speciale": "Ignora resistenze alle Batoste",
+  "fonte": "Brancalonia Manuale Base"
+}

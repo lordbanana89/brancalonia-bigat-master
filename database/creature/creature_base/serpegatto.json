@@ -1,0 +1,94 @@
+{
+  "id": "creature-serpegatto",
+  "nome": "Serpegatto",
+  "nome_inglese": "Serpent Cat",
+  "descrizione": "Questa creatura prodigiosa è diffusa in tutti gli ambienti del Regno: coste, paludi, montagne e foreste; a volte persino ruderi, fognature e campagne. Appare come un ibrido tra un lungo pitone guizzante e un gattopardo. Il suo movimento è completamente mutuato da quello dei serpenti e usa la lunga coda per stritolare e bloccare le prede. Può inoltre usare l'unica coppia di zampe per afferrare meglio le sue vittime o altri oggetti, con una destrezza molto sviluppata.",
+  "tipo": "Mostruosità",
+  "taglia": "Media",
+  "allineamento": "Senza allineamento",
+  "classe_armatura": {
+    "valore": 13,
+    "tipo": "naturale"
+  },
+  "punti_ferita": {
+    "valore": 27,
+    "formula": "6d8 + 6"
+  },
+  "velocita": {
+    "camminare": "12 m",
+    "nuotare": "6 m"
+  },
+  "caratteristiche": {
+    "forza": 12,
+    "destrezza": 17,
+    "costituzione": 12,
+    "intelligenza": 7,
+    "saggezza": 13,
+    "carisma": 7
+  },
+  "modificatori": {
+    "forza": "+1",
+    "destrezza": "+3",
+    "costituzione": "+1",
+    "intelligenza": "-2",
+    "saggezza": "+1",
+    "carisma": "-2"
+  },
+  "tiri_salvezza": {
+    "destrezza": "+5"
+  },
+  "abilita": {
+    "furtivita": "+5",
+    "percezione": "+3"
+  },
+  "sensi": {
+    "percezione_passiva": 13,
+    "scurovisione": "18 m"
+  },
+  "linguaggi": "-",
+  "grado_sfida": 1,
+  "punti_esperienza": 200,
+  "tratti": [
+    {
+      "nome": "Olfatto e Udito Acuti",
+      "descrizione": "Il serpegatto dispone di vantaggio alle prove di Saggezza (Percezione) basate sull'olfatto o sull'udito."
+    },
+    {
+      "nome": "Balzo",
+      "descrizione": "Se il serpegatto si muove di almeno 6 metri in linea retta verso una creatura e poi la colpisce con un attacco con gli artigli nello stesso turno, quel bersaglio deve superare un tiro salvezza su Forza con CD 12, altrimenti cade a terra prono. Se il bersaglio è prono, il serpegatto può effettuare un attacco con il morso contro di esso come azione bonus."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Morso",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+5",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "8 (2d4+3) danni perforanti"
+    },
+    {
+      "nome": "Artigli",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+5",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "5 (1d4+3) danni taglienti"
+    }
+  ],
+  "note_brancalonia": {
+    "diffusione": "Presente in tutti gli ambienti del Regno",
+    "habitat": "Coste, paludi, montagne, foreste, ruderi, fognature, campagne",
+    "anatomia": "Ibrido pitone-gattopardo",
+    "movimento": "Serpentino con uso della coda per stritolare",
+    "caratteristiche": "Una coppia di zampe con destrezza sviluppata",
+    "comportamento": "Usa le zampe per afferrare prede e oggetti"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 1,
+    "size": "med",
+    "type": "monstrosity"
+  },
+  "fonte": "Brancalonia Manuale Base p.180"
+}

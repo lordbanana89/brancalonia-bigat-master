@@ -1,0 +1,5 @@
+2025/09/26-00:51:08.479077 171b6f000 Delete type=3 #1
+2025/09/26-00:51:08.481015 172407000 Level-0 table #5: started
+2025/09/26-00:51:08.481302 172407000 Level-0 table #5: 4688 bytes OK
+2025/09/26-00:51:08.481382 172407000 Delete type=0 #3
+2025/09/26-00:51:08.481439 172407000 Manual compaction at level-0 from '!journal!armi' @ 72057594037927935 : 1 .. '!journal!tabellacrimini' @ 0 : 0; will stop at (end)

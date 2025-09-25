@@ -1,0 +1,53 @@
+{
+  "id": "spell-produrre-fiamma",
+  "nome": "Produrre Fiamma",
+  "nome_inglese": "Produce Flame",
+  "livello": 0,
+  "scuola": "Evocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Personale",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "10 minuti",
+  "descrizione": "Una fiamma tremolante appare nella tua mano. La fiamma vi rimane per la durata e non ti ferisce né danneggia il tuo equipaggiamento. La fiamma fornisce luce intensa in un raggio di 10 piedi e luce fioca per altri 10 piedi. L'incantesimo termina se lo congedi come azione o se lo lanci di nuovo. Puoi anche attaccare con la fiamma, anche se farlo termina l'incantesimo. Quando lanci questo incantesimo, o come azione in un turno successivo, puoi scagliare la fiamma verso una creatura entro 30 piedi da te. Effettua un attacco a distanza con incantesimo. Se colpisci, il bersaglio subisce 1d8 danni da fuoco.",
+  "classi": ["Druido"],
+  "danno_scaling": {
+    "livello_1": "1d8",
+    "livello_5": "2d8",
+    "livello_11": "3d8",
+    "livello_17": "4d8"
+  },
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "action",
+    "range": 30,
+    "durata": "10 minutes",
+    "attacco": "ranged spell",
+    "danno": "1d8",
+    "danno_tipo": "fire",
+    "luce": {
+      "bright": 10,
+      "dim": 20
+    }
+  },
+  "doppia_funzione": {
+    "utilità": "Fonte di luce per 10 minuti",
+    "combattimento": "Attacco 1d8 fire (termina spell)",
+    "flessibilità": "Scegli quando attaccare"
+  },
+  "confronto": {
+    "vs_light": "Meno luce ma può attaccare",
+    "vs_firebolt": "Meno danno ma ha utilità",
+    "versatilita": "Unico cantrip luce+danno"
+  },
+  "tattiche": [
+    "Tenere pronta per emergenza combat",
+    "Illuminazione gratuita in esplorazione",
+    "Segnale visivo per alleati",
+    "Accendere fuochi da campo"
+  ],
+  "note_dm": "Produce Flame è versatile utilità/combat. Ottimo per druidi che vogliono luce senza occupare slot. Attacco termina incantesimo.",
+  "fonte": "D&D 5e PHB p.269"
+}

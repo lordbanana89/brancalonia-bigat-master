@@ -1,0 +1,115 @@
+{
+  "_id": "spellbloccapersone0b7189",
+  "_key": "!items!spellbloccapersone0b7189",
+  "name": "Blocca Persone",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Scegli un umanoide che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza o essere paralizzato per la durata. Alla fine di ognuno dei suoi turni, il bersaglio può effettuare un altro tiro salvezza su Saggezza. Con un successo, l'incantesimo termina sul bersaglio.</p><h3>Note per il DM</h3><p><em>Hold Person è save-or-die virtuale. Paralyzed + auto-crit devastante. Solo umanoidi lo bilancia. Save ripetuti danno speranza.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.251",
+    "level": 2,
+    "school": "enc",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-blocca-persone",
+      "fonte": "D&D 5e PHB p.251",
+      "note_dm": "Hold Person è save-or-die virtuale. Paralyzed + auto-crit devastante. Solo umanoidi lo bilancia. Save ripetuti danno speranza.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "attivazione": "action",
+        "range": 60,
+        "save": "wisdom",
+        "durata": "1 minute",
+        "concentrazione": true,
+        "condizione": "paralyzed"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Ammaliamento",
+        "level": 2
+      }
+    }
+  }
+}

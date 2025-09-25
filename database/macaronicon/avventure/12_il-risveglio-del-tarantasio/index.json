@@ -1,0 +1,20 @@
+{
+  "numero": 12,
+  "titolo": "Il Risveglio del Tarantasio",
+  "pagine": "p.159",
+  "livello_consigliato": "8-10",
+  "ambientazione": "Palude di Torremarza",
+  "trama_breve": "L'antico drago Tarantasio si risveglia e minaccia di distruggere il Regno. Avventura epica finale.",
+  "png_principali": [
+    "Il Tarantasio (drago antico)",
+    "Cultisti del Drago",
+    "Eroi leggendari del passato"
+  ],
+  "ricompense": [
+    "Tesoro del drago",
+    "Salvezza del Regno",
+    "Fama eterna"
+  ],
+  "climax": "Boss fight epico, salvare il Regno",
+  "fonte": "Brancalonia Macaronicon p.89-159"
+}

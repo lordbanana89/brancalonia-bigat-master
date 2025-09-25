@@ -1,0 +1,44 @@
+{
+  "titolo": "Il Mondo Criminale",
+  "pagine": "p.77-82",
+  "tipo": "Crimine organizzato",
+  "contenuto": {
+    "descrizione": "Gilde di ladri e organizzazioni criminali",
+    "organizzazioni": [
+      {
+        "nome": "La Mano Nera",
+        "tipo": "Estorsione e protezione",
+        "territorio": "Città maggiori",
+        "codice": "Omertà assoluta"
+      },
+      {
+        "nome": "I Figli della Notte",
+        "tipo": "Furti e contrabbando",
+        "territorio": "Porti e frontiere",
+        "codice": "Mai rubare ai poveri"
+      },
+      {
+        "nome": "La Società del Pugnale",
+        "tipo": "Assassini su commissione",
+        "territorio": "Ovunque",
+        "codice": "Contratto è sacro"
+      }
+    ],
+    "attivita_criminali": [
+      "Estorsione (pizzo)",
+      "Contrabbando",
+      "Gioco d'azzardo clandestino",
+      "Prestito a usura",
+      "Ricettazione",
+      "Rapimenti per riscatto"
+    ],
+    "gergo_criminale": {
+      "lavoro": "crimine",
+      "famiglia": "organizzazione",
+      "pulire": "uccidere",
+      "pesce": "vittima",
+      "ferro": "arma"
+    }
+  },
+  "fonte": "Brancalonia Macaronicon p.53-88"
+}

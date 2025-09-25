@@ -1,0 +1,17 @@
+{
+  "id": "animal-007",
+  "nome": "Mastino",
+  "categoria": "animale_equipaggiamento",
+  "tipo": "animale_da_guardia",
+  "costo": "25 mo",
+  "velocita": "12 m",
+  "capacita_carico": "45 kg",
+  "descrizione": "Cane addestrato per sorveglianza e supporto in combattimento.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Cavalcature e Animali"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

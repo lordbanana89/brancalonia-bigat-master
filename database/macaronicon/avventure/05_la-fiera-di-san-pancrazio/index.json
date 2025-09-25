@@ -1,0 +1,20 @@
+{
+  "numero": 5,
+  "titolo": "La Fiera di San Pancrazio",
+  "pagine": "p.117-123",
+  "livello_consigliato": "2-4",
+  "ambientazione": "Grande fiera commerciale annuale",
+  "trama_breve": "Durante la fiera, i personaggi devono recuperare una reliquia rubata prima che scateni una maledizione.",
+  "png_principali": [
+    "Mercante Pantalone",
+    "La Compagnia della Gazza",
+    "Il Monaco Folle"
+  ],
+  "ricompense": [
+    "Merci rare",
+    "Contatti commerciali",
+    "Oggetto magico casuale"
+  ],
+  "elementi": "Commercio, furti, gare popolari",
+  "fonte": "Brancalonia Macaronicon p.89-159"
+}

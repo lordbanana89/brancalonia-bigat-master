@@ -1,0 +1,19 @@
+{
+  "_id": "rissabatoste4",
+  "_key": "!journal!rissabatoste4",
+  "name": "Conciato per le Feste",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-batoste-4",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "JournalEntry"
+}

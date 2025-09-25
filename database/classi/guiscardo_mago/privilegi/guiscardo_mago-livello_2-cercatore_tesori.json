@@ -1,0 +1,14 @@
+{
+  "id": "guiscardo_mago-livello_2-cercatore_tesori",
+  "livello": 2,
+  "nome": "cercatore_tesori",
+  "tipo": "attivo",
+  "descrizione": "Competenza in Indagare, Percezione, armature leggere e un'arma da guerra a una mano",
+  "implementazione": {
+    "indagare": "system.skills.inv.value = 1",
+    "percezione": "system.skills.prc.value = 1",
+    "armature_leggere": "system.traits.armorProf.value.push('light')",
+    "arma_guerra": "flags.brancalonia-bigat.weaponChoice = true"
+  },
+  "mode": 5
+}

@@ -1,0 +1,154 @@
+{
+  "_id": "tempoatmosferico",
+  "name": "Tempo Atmosferico",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Tempo Atmosferico",
+  "results": [
+    {
+      "_id": "tempo-atmosferico_0",
+      "type": 0,
+      "text": "Sole splendente, caldo torrido",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_0"
+    },
+    {
+      "_id": "tempo-atmosferico_1",
+      "type": 0,
+      "text": "Parzialmente nuvoloso, temperatura mite",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_1"
+    },
+    {
+      "_id": "tempo-atmosferico_2",
+      "type": 0,
+      "text": "Nuvoloso, grigio e deprimente",
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_2"
+    },
+    {
+      "_id": "tempo-atmosferico_3",
+      "type": 0,
+      "text": "Pioggerella fastidiosa",
+      "weight": 1,
+      "range": [
+        7,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_3"
+    },
+    {
+      "_id": "tempo-atmosferico_4",
+      "type": 0,
+      "text": "Pioggia moderata",
+      "weight": 1,
+      "range": [
+        9,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_4"
+    },
+    {
+      "_id": "tempo-atmosferico_5",
+      "type": 0,
+      "text": "Pioggia torrenziale",
+      "weight": 1,
+      "range": [
+        11,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_5"
+    },
+    {
+      "_id": "tempo-atmosferico_6",
+      "type": 0,
+      "text": "Temporale con fulmini",
+      "weight": 1,
+      "range": [
+        13,
+        14
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_6"
+    },
+    {
+      "_id": "tempo-atmosferico_7",
+      "type": 0,
+      "text": "Nebbia fitta (visibilità 10 metri)",
+      "weight": 1,
+      "range": [
+        15,
+        16
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_7"
+    },
+    {
+      "_id": "tempo-atmosferico_8",
+      "type": 0,
+      "text": "Vento forte (svantaggio agli attacchi a distanza)",
+      "weight": 1,
+      "range": [
+        17,
+        18
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_8"
+    },
+    {
+      "_id": "tempo-atmosferico_9",
+      "type": 0,
+      "text": "Grandine (1d4 danni ogni minuto all'aperto)",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_9"
+    },
+    {
+      "_id": "tempo-atmosferico_10",
+      "type": 0,
+      "text": "Evento meteorologico anomalo (magico)",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "_key": "!results!tempo-atmosferico_10"
+    }
+  ],
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 2800,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!tempoatmosferico"
+}

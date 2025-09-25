@@ -1,0 +1,13 @@
+{
+  "classe": "arlecchino_bardo",
+  "categoria": "Privilegi Generali",
+  "totale": 1,
+  "privilegi": [
+    {
+      "id": "class-bardo-livello_1-ispirazione-bardica",
+      "nome": "Verve dell'Arlecchino",
+      "file": "class-bardo-livello_1-ispirazione-bardica.json",
+      "livello": 1
+    }
+  ]
+}

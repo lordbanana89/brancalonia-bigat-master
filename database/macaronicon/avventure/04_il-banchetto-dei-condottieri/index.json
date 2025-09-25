@@ -1,0 +1,20 @@
+{
+  "numero": 4,
+  "titolo": "Il Banchetto dei Condottieri",
+  "pagine": "p.110-116",
+  "livello_consigliato": "4-6",
+  "ambientazione": "Castello di Rocca Tempesta",
+  "trama_breve": "Invitati a un banchetto di pace tra condottieri rivali, i personaggi devono prevenire un assassinio.",
+  "png_principali": [
+    "Capitano Fieramosca",
+    "Il Duca di Ferro",
+    "L'Assassino mascherato"
+  ],
+  "ricompense": [
+    "Contratto da mercenari",
+    "Alleanze politiche",
+    "Informazioni su complotto maggiore"
+  ],
+  "meccaniche": "Intrigo sociale, investigazione",
+  "fonte": "Brancalonia Macaronicon p.89-159"
+}

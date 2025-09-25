@@ -1,0 +1,77 @@
+{
+  "categoria": "Creature e PNG di Brancalonia",
+  "descrizione": "Database completo di creature, mostri e PNG del Regno di Brancalonia",
+  "fonte": "Brancalonia Manuale Base + Macaronicon",
+  "ultima_modifica": "2025-09-25",
+  "struttura": {
+    "creature_base": {
+      "descrizione": "Creature uniche del manuale base di Brancalonia",
+      "totale": 12,
+      "directory": "creature_base"
+    },
+    "png_base": {
+      "descrizione": "PNG e avversari ricorrenti del manuale base",
+      "totale": 12,
+      "directory": "png_base"
+    },
+    "creature_macaronicon": {
+      "descrizione": "Creature uniche del Macaronicon",
+      "totale": 4,
+      "directory": "creature_macaronicon"
+    },
+    "png_macaronicon": {
+      "descrizione": "PNG e mostri del Macaronicon organizzati per categoria",
+      "totale": 16,
+      "directory": "png_macaronicon",
+      "sottocategorie": [
+        "png_minori",
+        "png_maggiori",
+        "mostri_minori",
+        "mostri_maggiori",
+        "creature_uniche",
+        "png_leggendari"
+      ]
+    }
+  },
+  "statistiche": {
+    "totale_creature_base": 12,
+    "totale_png_base": 12,
+    "totale_creature_macaronicon": 4,
+    "totale_png_macaronicon": 16,
+    "totale_complessivo": 44
+  },
+  "creature_base": [
+    "Anguana",
+    "Bavalischio",
+    "Befana",
+    "Bigatto",
+    "Confinato",
+    "Foionco",
+    "Malacoda",
+    "Marroca",
+    "Orco Cattivo",
+    "Sciame di Corvoragni",
+    "Serpegatto",
+    "Vilupera"
+  ],
+  "png_base": [
+    "Agente di Equitaglia",
+    "Animali Parlanti",
+    "Bagatto",
+    "Birro",
+    "Capobirro",
+    "Cacciatore di Equitaglia",
+    "Comandante",
+    "Dragone",
+    "Duellante",
+    "Folla Inferocita",
+    "Pagano",
+    "Tagliagole"
+  ],
+  "creature_macaronicon": [
+    "Folletto",
+    "Alimentale di Polenta",
+    "Accrocco di Reliquie",
+    "Leone di Nemea"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "class-druido-circolo-luna",
+  "nome": "Circolo della Luna",
+  "fonte": "Manuale del Giocatore p.69",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Forma Selvatica da Combattimento",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Combat Wild Shape"
+        }
+      },
+      {
+        "nome": "Forme del Circolo",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Circle Forms"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Colpo Primordiale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Primal Strike"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Forma Selvatica Elementale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Elemental Wild Shape"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Mille Forme",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Thousand Forms"
+        }
+      }
+    ]
+  }
+}

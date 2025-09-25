@@ -1,0 +1,49 @@
+{
+  "nome": "Benandante",
+  "classe_base": "Druido",
+  "fonte": "Manuale Base p.21",
+  "descrizione": "Druidi protettori contro spiriti, streghe e fantasmi, vivono tra mondo degli spiriti e foresta",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Circolo della Danza Macabra",
+  "validazione": {
+    "implementato": true,
+    "file_id": "benandante_guardiano",
+    "compendio": "brancalonia-features"
+  },
+  "privilegi": {
+    "totale": 3,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 2,
+      "privilegi": [
+        {
+          "id": "benandante_druido-livello_2-guardare_oltre_velo",
+          "nome": "guardare_oltre_velo",
+          "file": "privilegi/benandante_druido-livello_2-guardare_oltre_velo.json"
+        }
+      ]
+    },
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "id": "benandante_druido-livello_3-incantesimi_circolo",
+          "nome": "incantesimi_circolo",
+          "file": "privilegi/benandante_druido-livello_3-incantesimi_circolo.json"
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "privilegi": [
+        {
+          "id": "benandante_druido-livello_6-guardiano_danza_macabra",
+          "nome": "guardiano_danza_macabra",
+          "file": "privilegi/benandante_druido-livello_6-guardiano_danza_macabra.json"
+        }
+      ]
+    }
+  ]
+}

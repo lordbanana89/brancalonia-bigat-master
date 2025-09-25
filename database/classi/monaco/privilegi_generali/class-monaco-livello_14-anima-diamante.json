@@ -1,0 +1,33 @@
+{
+  "id": "class-monaco-livello_14-anima-diamante",
+  "nome": "Anima di Diamante",
+  "nome_brancalonia": "Spirito Indomito",
+  "livello": 14,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 14° livello, la tua padronanza del ki ti garantisce competenza in tutti i tiri salvezza. Inoltre, quando fai un tiro salvezza e fallisci, puoi spendere 1 punto ki per ritirarlo e prendere il secondo risultato.",
+  "meccaniche": {
+    "competenza_tutti_save": "Aggiungi proficiency a TUTTI i save",
+    "reroll_save": "1 ki per ritirare save fallito"
+  },
+  "implementazione_foundry": {
+    "tipo": "all_saves_proficiency",
+    "ki_reroll": true
+  },
+  "calcoli_save": {
+    "con_prof_5": {
+      "str": "+8 minimo",
+      "dex": "+10 con DEX 20",
+      "con": "+8 con CON 16",
+      "int": "+5 base",
+      "wis": "+10 con WIS 20",
+      "cha": "+5 base"
+    }
+  },
+  "confronto": {
+    "vs_paladin_aura": "Monaco personale, paladin gruppo",
+    "vs_resilient": "Diamond tutti, resilient uno",
+    "valore": "= 5 feat Resilient!"
+  },
+  "note_dm": "Diamond Soul rende il monaco quasi immune a save effects. Competenza in tutti i save è enorme.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79"
+}

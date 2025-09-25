@@ -1,0 +1,71 @@
+{
+  "id": "class-barbaro-pagano",
+  "nome": "Pagano",
+  "classe_base": "Barbaro",
+  "descrizione": "Guerriero selvaggio che attinge alla furia primordiale. Combattente brutale che disprezza la civiltà.",
+  "fonte": "Brancalonia Manuale Base",
+  "dado_vita": "d12",
+  "punti_ferita": {
+    "al_1_livello": "12 + modificatore Costituzione",
+    "livelli_successivi": "1d12 (o 7) + modificatore Costituzione per livello"
+  },
+  "competenze": {
+    "armature": [
+      "Armature leggere",
+      "Armature medie",
+      "Scudi"
+    ],
+    "armi": [
+      "Armi semplici",
+      "Armi da guerra"
+    ],
+    "attrezzi": "Nessuno",
+    "tiri_salvezza": [
+      "Forza",
+      "Costituzione"
+    ],
+    "abilita": {
+      "numero": 2,
+      "scelte": [
+        "Addestrare Animali",
+        "Atletica",
+        "Intimidire",
+        "Natura",
+        "Percezione",
+        "Sopravvivenza"
+      ]
+    }
+  },
+  "equipaggiamento_iniziale": [
+    "(a) Ascia bipenne o (b) qualsiasi arma da guerra da mischia",
+    "(a) 2 asce o (b) qualsiasi arma semplice",
+    "Dotazione da esploratore e 4 giavellotti"
+  ],
+  "multiclasse": {
+    "requisiti": "Forza 13",
+    "competenze_ottenute": [
+      "Scudi",
+      "Armi semplici",
+      "Armi da guerra"
+    ]
+  },
+  "note_brancalonia": {
+    "privilegio_rissa": "L'Ira funziona anche in Rissa, danni bonus si applicano alle Batoste",
+    "nomea": "Pagani famosi ottengono rispetto tra barbari e disprezzo tra civilizzati",
+    "background_consigliati": [
+      "Brado",
+      "Duro",
+      "Fuggitivo"
+    ]
+  },
+  "validazione": {
+    "completamento": "100%",
+    "file_id": "pagano_barbaro_completo",
+    "compendio": "classi_base"
+  },
+  "collegamenti": {
+    "progressione": "progressione/progressione.json",
+    "privilegi_generali": "privilegi_generali/index.json",
+    "cammini": "cammini/index.json"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-raffica-di-pugni",
+  "nome": "Raffica di Pugni",
+  "requisiti": "Destrezza 15+",
+  "costo": "2 slot",
+  "effetto": "3 attacchi con pugno in un turno",
+  "penalita": "-2 a ogni attacco",
+  "fonte": "Brancalonia Manuale Base"
+}

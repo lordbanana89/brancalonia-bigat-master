@@ -1,0 +1,16 @@
+{
+  "id": "045",
+  "nome": "La Fiala delle Lacrime di Gioia",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Piccola fiala di cristallo con liquido iridescente",
+  "proprieta": "Una goccia rimuove depressione e tristezza per 7 giorni",
+  "valore": "350 mo",
+  "storia": "Raccolta al matrimonio prima della tragedia",
+  "rovescio": "L'ottavo giorno, tristezza doppia",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "scadente-005",
+  "nome": "Componenti Magici Scadenti",
+  "categoria": "equipaggiamento_scadente",
+  "costo_relativo": "1/10 del prezzo standard delle componenti",
+  "descrizione": "Materiali magici raccogliticci usati dai maghi pezzenti del Regno.",
+  "effetti_meccanici": {
+    "malus": "Non alterano l'effetto meccanico dell'incantesimo ma ne rendono l'aspetto grottesco o imprevedibile.",
+    "nota": "Il Condottiero può descrivere effetti collaterali scenici o buffi."
+  },
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "62-63"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  },
+  "dettagli": "Le componenti magiche scadenti alterano l'aspetto degli incantesimi senza modificarne l'effetto meccanico: famigli buffi, palle di fuoco dall'odore di uova marce, ecc."
+}

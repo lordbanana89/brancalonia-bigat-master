@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-301",
+  "nome": "Scudo",
+  "categoria": "armatura_standard",
+  "tipo": "scudo",
+  "costo": "10 mo",
+  "classe_armatura": null,
+  "bonus_ca": "+2",
+  "forza_minima": "—",
+  "furtivita": "—",
+  "peso": "2.7 kg",
+  "descrizione": "Scudo rotondo o rettangolare da impugnare con il braccio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

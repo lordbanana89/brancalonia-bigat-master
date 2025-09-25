@@ -1,0 +1,121 @@
+{
+  "livello": "1",
+  "totale": 23,
+  "incantesimi": [
+    {
+      "nome": "Anatema",
+      "scuola": "Ammaliamento",
+      "file": "spell-anatema.json"
+    },
+    {
+      "nome": "Armatura Magica",
+      "scuola": "Abiurazione",
+      "file": "spell-armatura-magica.json"
+    },
+    {
+      "nome": "Benedizione",
+      "scuola": "Ammaliamento",
+      "file": "spell-benedizione.json"
+    },
+    {
+      "nome": "Bollo di Qualità",
+      "scuola": "Trasmutazione",
+      "file": "spell-bollo-di-qualita.json"
+    },
+    {
+      "nome": "Charme",
+      "scuola": "Ammaliamento",
+      "file": "spell-charme.json"
+    },
+    {
+      "nome": "Comando",
+      "scuola": "Ammaliamento",
+      "file": "spell-comando.json"
+    },
+    {
+      "nome": "Comprensione dei Linguaggi",
+      "scuola": "Divinazione",
+      "file": "spell-comprensione-linguaggi.json"
+    },
+    {
+      "nome": "Cura Ferite",
+      "scuola": "Invocazione",
+      "file": "spell-cura-ferite.json"
+    },
+    {
+      "nome": "Dardo Incantato",
+      "scuola": "Invocazione",
+      "file": "spell-dardo-incantato.json"
+    },
+    {
+      "nome": "Eroismo",
+      "scuola": "Ammaliamento",
+      "file": "spell-eroismo.json"
+    },
+    {
+      "nome": "Fulmine Tracciante",
+      "scuola": "Invocazione",
+      "file": "spell-fulmine-tracciante.json"
+    },
+    {
+      "nome": "Identificare",
+      "scuola": "Divinazione",
+      "file": "spell-identificare.json"
+    },
+    {
+      "nome": "Individuazione del Magico",
+      "scuola": "Divinazione",
+      "file": "spell-individuazione-magia.json"
+    },
+    {
+      "nome": "Infliggi Ferite",
+      "scuola": "Necromanzia",
+      "file": "spell-infliggi-ferite.json"
+    },
+    {
+      "nome": "Mani Brucianti",
+      "scuola": "Invocazione",
+      "file": "spell-mani-brucianti.json"
+    },
+    {
+      "nome": "Marchio Incandescente",
+      "scuola": "Trasmutazione",
+      "file": "spell-marchio-incandescente.json"
+    },
+    {
+      "nome": "Onda Tonante",
+      "scuola": "Invocazione",
+      "file": "spell-onda-tonante.json"
+    },
+    {
+      "nome": "Parola Guaritrice",
+      "scuola": "Invocazione",
+      "file": "spell-parola-guaritrice.json"
+    },
+    {
+      "nome": "Passo Fatato",
+      "scuola": "Invocazione",
+      "file": "spell-passo-fatato.json"
+    },
+    {
+      "nome": "Racconto Agghiacciante",
+      "scuola": "Ammaliamento",
+      "file": "spell-racconto-agghiacciante.json"
+    },
+    {
+      "nome": "Ritirata Veloce",
+      "scuola": "Trasmutazione",
+      "file": "spell-ritirata-veloce.json"
+    },
+    {
+      "nome": "Scudo",
+      "scuola": "Abiurazione",
+      "file": "spell-scudo.json"
+    },
+    {
+      "nome": "Sonno",
+      "scuola": "Ammaliamento",
+      "file": "spell-sonno.json"
+    }
+  ]
+}

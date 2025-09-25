@@ -1,0 +1,16 @@
+{
+  "id": "026",
+  "nome": "Il Diario del Condannato",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Libro con pagine che si scrivono da sole",
+  "proprieta": "Scrive automaticamente i peccati di chi lo possiede",
+  "valore": "400 mo",
+  "storia": "Il condannato era innocente ma il diario lo incastrò",
+  "utilita": "Può essere usato come prova in tribunale",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

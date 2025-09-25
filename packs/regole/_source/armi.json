@@ -1,0 +1,16 @@
+{
+  "_id": "armi",
+  "_key": "!journal!armi",
+  "name": "Armi",
+  "type": "JournalEntry",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {}
+  }
+}

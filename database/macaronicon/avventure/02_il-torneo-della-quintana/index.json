@@ -1,0 +1,20 @@
+{
+  "numero": 2,
+  "titolo": "Il Torneo della Quintana",
+  "pagine": "p.96-102",
+  "livello_consigliato": "2-4",
+  "ambientazione": "Città di Fioraccia durante il torneo annuale",
+  "trama_breve": "I personaggi partecipano a un torneo truccato dove devono scoprire chi sta sabotando i cavalieri onesti.",
+  "png_principali": [
+    "Ser Lancillotto del Porcile (cavaliere corrotto)",
+    "Madonna Fiordilatte (dama misteriosa)",
+    "Il Nero Cavaliere (campione misterioso)"
+  ],
+  "ricompense": [
+    "Premio del torneo (500 mo)",
+    "Cavallo da guerra",
+    "Favore di un nobile importante"
+  ],
+  "sfide_speciali": "Giostre, duelli, prove di abilità",
+  "fonte": "Brancalonia Macaronicon p.89-159"
+}

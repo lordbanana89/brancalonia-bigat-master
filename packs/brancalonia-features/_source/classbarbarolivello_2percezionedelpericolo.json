@@ -1,0 +1,72 @@
+{
+  "_id": "classbarbarolivello2percezionedelpericolod45416",
+  "_key": "!item!classbarbarolivello2percezionedelpericolod45416",
+  "name": "Percezione del Pericolo",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Al 2° livello ottieni un senso straordinario quando le cose intorno a te non sono come dovrebbero essere, che ti offre un vantaggio quando schivi il pericolo. Hai vantaggio ai tiri salvezza di Destrezza contro effetti che puoi vedere, come trappole e incantesimi. Per ottenere questo beneficio, non devi essere accecato, assordato o incapacitato.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.48",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-barbaro-livello_2-percezione-del-pericolo",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48"
+    }
+  }
+}

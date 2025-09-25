@@ -1,0 +1,127 @@
+{
+  "id": "creature-leone-di-nemea",
+  "nome": "Leone di Nemea",
+  "nome_inglese": "Nemean Lion",
+  "descrizione": "Il feroce campione indiscusso dell'arena, una mostruosità leggendaria di incredibile potenza fisica e abilità combattiva. È mediamente intelligente ed è in grado di parlare il Draconiano, sebbene con uno strano accento gutturale. Il Leone di Nemea rappresenta la sfida definitiva per qualsiasi gladiatore che osi affrontarlo nell'arena.",
+  "tipo": "Mostruosità",
+  "taglia": "Grande",
+  "allineamento": "Legale neutrale",
+  "classe_armatura": {
+    "valore": 16,
+    "tipo": "armatura cuoio borchiato"
+  },
+  "punti_ferita": {
+    "valore": 152,
+    "formula": "16d10 + 64"
+  },
+  "velocita": {
+    "camminare": "12 m"
+  },
+  "caratteristiche": {
+    "forza": 24,
+    "destrezza": 12,
+    "costituzione": 18,
+    "intelligenza": 10,
+    "saggezza": 12,
+    "carisma": 14
+  },
+  "modificatori": {
+    "forza": "+7",
+    "destrezza": "+1",
+    "costituzione": "+4",
+    "intelligenza": "+0",
+    "saggezza": "+1",
+    "carisma": "+2"
+  },
+  "tiri_salvezza": {
+    "forza": "+12",
+    "costituzione": "+9"
+  },
+  "abilita": {
+    "atletica": "+12",
+    "intimidire": "+7",
+    "percezione": "+6"
+  },
+  "sensi": {
+    "percezione_passiva": 11
+  },
+  "linguaggi": "Draconiano, Volgare",
+  "grado_sfida": 9,
+  "punti_esperienza": 5000,
+  "tratti": [
+    {
+      "nome": "Impavido",
+      "descrizione": "Il Leone di Nemea dispone di vantaggio ai tiri salvezza contro la condizione di spaventato."
+    },
+    {
+      "nome": "Bruto",
+      "descrizione": "Quando il Leone di Nemea colpisce con un'arma da mischia, l'attacco infligge un dado extra del tipo di danno dell'arma (già incluso nell'attacco)."
+    },
+    {
+      "nome": "Resistenza Leggendaria (3/Giorno)",
+      "descrizione": "Se il Leone di Nemea fallisce un tiro salvezza, può scegliere invece di superarlo."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Multiattacco",
+      "descrizione": "Il Leone di Nemea effettua tre attacchi in mischia."
+    },
+    {
+      "nome": "Artigli",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+11",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "14 (2d6 + 7) danni taglienti"
+    },
+    {
+      "nome": "Catena Uncinata",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+11",
+      "portata": "3 m",
+      "bersagli": "un bersaglio",
+      "danno": "14 (2d6 + 7) danni taglienti",
+      "effetto_aggiuntivo": "Il bersaglio è afferrato (CD 17 per sfuggire), se il Leone di Nemea non sta già afferrando una creatura. Finché il Leone di Nemea afferra il bersaglio, quest'ultimo è trattenuto e subisce 7 (2d6) danni perforanti all'inizio di ogni suo turno."
+    },
+    {
+      "nome": "Ruggito (Ricarica 6)",
+      "descrizione": "Il Leone di Nemea emette un ruggito magico. Ogni creatura entro 9 m che fallisce un tiro salvezza su Saggezza con CD 15 è spaventata per 1 minuto. Una creatura spaventata può ripetere il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto per lei termina."
+    }
+  ],
+  "reazioni": [
+    {
+      "nome": "Parata",
+      "descrizione": "Il Leone di Nemea aggiunge 4 alla sua CA contro un attacco in mischia che lo colpirebbe. Per farlo, il Leone di Nemea deve vedere l'attaccante e deve impugnare un'arma da mischia."
+    }
+  ],
+  "azioni_leggendarie": [
+    {
+      "nome": "Movimento",
+      "descrizione": "Il Leone di Nemea si muove fino alla sua velocità senza provocare attacchi di opportunità."
+    },
+    {
+      "nome": "Attacco (Costa 2 Azioni)",
+      "descrizione": "Il Leone di Nemea effettua un attacco in mischia."
+    },
+    {
+      "nome": "Ruggito",
+      "descrizione": "Il Leone di Nemea usa il suo ruggito."
+    }
+  ],
+  "note_brancalonia": {
+    "ruolo": "Campione dell'arena di Aegis",
+    "caratteristiche": "Mediamente intelligente",
+    "linguaggio": "Parla Draconiano con accento gutturale",
+    "comportamento": "Interessato all'oro e agli oggetti",
+    "arena": "Combatte nell'arena contro gladiatori",
+    "leggenda": "Creatura mitica e temuta"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 9,
+    "size": "lg",
+    "type": "monstrosity"
+  },
+  "fonte": "Brancalonia Macaronicon p.146"
+}

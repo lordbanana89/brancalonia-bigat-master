@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-012",
+  "nome": "Dardo",
+  "categoria": "arma_standard",
+  "tipo": "semplice_distanza",
+  "costo": "5 mr",
+  "danni": "1d4 perforanti",
+  "proprieta": [
+    "Accurata",
+    "Lancio (6/18 m)"
+  ],
+  "peso": "0.1 kg",
+  "descrizione": "Piccolo proiettile metallico bilanciato per il lancio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

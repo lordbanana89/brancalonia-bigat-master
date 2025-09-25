@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-105",
+  "nome": "Spadone",
+  "categoria": "arma_standard",
+  "tipo": "marziale_mischia",
+  "costo": "50 mo",
+  "danni": "2d6 taglienti",
+  "proprieta": [
+    "Pesante",
+    "Due Mani"
+  ],
+  "peso": "2.7 kg",
+  "descrizione": "Spada a due mani con lama larga e affilata.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

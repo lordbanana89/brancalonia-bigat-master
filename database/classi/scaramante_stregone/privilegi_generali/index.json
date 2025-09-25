@@ -1,0 +1,13 @@
+{
+  "classe": "scaramante_stregone",
+  "categoria": "Privilegi Generali",
+  "totale": 1,
+  "privilegi": [
+    {
+      "id": "class-stregone-livello_2-punti-stregoneria",
+      "nome": "Potere del Scaramante",
+      "file": "class-stregone-livello_2-punti-stregoneria.json",
+      "livello": 2
+    }
+  ]
+}

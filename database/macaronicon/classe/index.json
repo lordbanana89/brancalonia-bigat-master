@@ -1,0 +1,11 @@
+{
+  "categoria": "Classi Macaronicon",
+  "totale": 1,
+  "classi": [
+    {
+      "nome": "Burattinaio",
+      "file": "burattinaio.json",
+      "tipo": "classe"
+    }
+  ]
+}

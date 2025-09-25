@@ -1,0 +1,17 @@
+{
+  "id": "oggetto-contraff-003",
+  "nome": "Oggetti di Pregio Falsi",
+  "categoria": "oggetto_contraffatto",
+  "costo": "30 mo",
+  "descrizione": "Repliche taroccate di gioielli, reliquie o cimeli preziosi, spesso usate per frodare nobili e collezionisti.",
+  "utilizzo": "Servono come esche o sostituzioni in truffe e scambi. Valgono come oggetti scadenti: al primo esame accurato c'è il rischio che vengano riconosciuti come falsi.",
+  "note_meccaniche": "Quando utilizzati per impressionare o vendere, il Condottiero applica le regole dell'equipaggiamento scadente/contraffatto (CD aumentata o rischio malfunzionamento narrativo).",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  }
+}

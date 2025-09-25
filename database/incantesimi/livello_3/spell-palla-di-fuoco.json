@@ -1,0 +1,74 @@
+{
+  "id": "spell-palla-di-fuoco",
+  "nome": "Palla di Fuoco",
+  "nome_inglese": "Fireball",
+  "livello": 3,
+  "scuola": "Invocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "150 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Una piccola palla di guano di pipistrello e zolfo"
+  },
+  "durata": "Istantanea",
+  "descrizione": "Un bagliore luminoso sfreccia dalla tua punta del dito verso un punto a tua scelta entro gittata e poi sboccia con un rombo sordo in un'esplosione di fiamme. Ogni creatura in una sfera di 20 piedi di raggio centrata su quel punto deve effettuare un tiro salvezza su Destrezza. Un bersaglio subisce 8d6 danni da fuoco con un tiro salvezza fallito, o metà danni con uno riuscito. Il fuoco si espande intorno agli angoli. Incendia oggetti infiammabili nell'area che non sono indossati o trasportati.",
+  "classi": ["Mago", "Stregone"],
+  "scaling": {
+    "slot_3": "8d6",
+    "slot_4": "9d6",
+    "slot_5": "10d6",
+    "slot_6": "11d6",
+    "slot_7": "12d6",
+    "slot_8": "13d6",
+    "slot_9": "14d6"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 3,
+    "attivazione": "action",
+    "range": 150,
+    "area": "20 ft radius sphere",
+    "save": "dexterity",
+    "danno": "8d6",
+    "danno_tipo": "fire",
+    "half_on_save": true
+  },
+  "area_effetto": {
+    "raggio": "20 piedi (4 quadretti)",
+    "forma": "Sfera",
+    "volume": "33,510 piedi cubici",
+    "caselle_colpite": "~44 quadretti su griglia"
+  },
+  "danno_analisi": {
+    "medio": "28 danni (8d6)",
+    "save_riuscito": "14 danni",
+    "confronto_lightning": "Stesso danno ma area migliore",
+    "overtuned": "Intenzionalmente sopra curva"
+  },
+  "tattiche": [
+    "Opener devastante",
+    "Clear minions istantaneo",
+    "Combo con crowd control",
+    "Area denial con ambiente"
+  ],
+  "problemi": [
+    "Friendly fire facile",
+    "Fire immunity/resistance comune",
+    "Ambiente infiammabile problema",
+    "Slot level 3 prezioso"
+  ],
+  "evocation_wizard": {
+    "sculpt_spell": "Protegge alleati in area",
+    "empowered": "+INT a un dado",
+    "overchannel": "Max damage a lv 14"
+  },
+  "ruling_comuni": {
+    "cover": "DEX save può usare cover",
+    "espansione": "Gira angoli come scritto",
+    "oggetti": "Brucia tutto non indossato"
+  },
+  "note_dm": "Fireball è iconico e intenzionalmente overpower. 8d6 in 20ft radius è devastante. Evocation wizard lo rende sicuro per party.",
+  "fonte": "D&D 5e PHB p.241"
+}

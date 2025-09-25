@@ -1,0 +1,13 @@
+{
+  "classe": "mattatore_ranger",
+  "categoria": "Privilegi Generali",
+  "totale": 1,
+  "privilegi": [
+    {
+      "id": "class-ranger-livello_1-nemico-favorito",
+      "nome": "Preda del Mattatore",
+      "file": "class-ranger-livello_1-nemico-favorito.json",
+      "livello": 1
+    }
+  ]
+}

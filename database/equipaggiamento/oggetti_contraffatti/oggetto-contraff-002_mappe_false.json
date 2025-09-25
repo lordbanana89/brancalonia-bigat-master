@@ -1,0 +1,17 @@
+{
+  "id": "oggetto-contraff-002",
+  "nome": "Mappe False",
+  "categoria": "oggetto_contraffatto",
+  "costo": "10 mo",
+  "descrizione": "Riproduzioni artefatte di mappe nautiche o terrestri, spesso usate per depistare o raggirare avventurieri.",
+  "utilizzo": "Consentono truffe e depistaggi finché nessuno confronta la mappa con il territorio; considerate scadenti ai fini di prove di orientamento o navigazione.",
+  "note_meccaniche": "Applicano gli effetti dell'equipaggiamento scadente/contraffatto quando utilizzate per prove di Sopravvivenza o Navigatori.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "nome": "Antica Arte Culinaria",
+  "fonte": "Manuale Base p.37",
+  "tipo": "talento",
+  "descrizione": "Esperto dell'arte culinaria del Regno tramandata di generazione",
+  "requisiti": "Nessuno",
+  "meccaniche": {
+    "competenza_utensili": {
+      "tipo": "attivo",
+      "descrizione": "Competenza utensili da cuoco, bonus raddoppiato, ignora qualità scadente",
+      "implementazione": "system.tools.cook.value = 2",
+      "mode": 5
+    },
+    "armi_improvvisate": {
+      "tipo": "narrativo",
+      "descrizione": "Usa utensili da cuoco come armi improvvisate con competenza"
+    },
+    "pasto_speciale": {
+      "tipo": "attivo",
+      "descrizione": "Pasto conferisce PF temporanei = mod Costituzione (min 1), 1/riposo",
+      "implementazione": "flags.brancalonia-bigat.pastoSpeciale = true",
+      "mode": 2
+    },
+    "individua_veleni": {
+      "tipo": "narrativo",
+      "descrizione": "Esamina cibi/bevande per 1 minuto per rilevare veleni o malattie"
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "antica_arte_culinaria",
+    "compendio": "talenti"
+  }
+}

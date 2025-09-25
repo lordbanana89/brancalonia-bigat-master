@@ -1,0 +1,70 @@
+{
+  "id": "class-chierico",
+  "nome": "Chierico",
+  "tipo": "classe",
+  "fonte": "Manuale del Giocatore p.56",
+  "descrizione": "Servitore devoto di un potere divino che canalizza miracoli per sostenere, punire e guidare.",
+  "dado_vita": "d8",
+  "punti_ferita": {
+    "al_1_livello": "8 + modificatore Costituzione",
+    "livelli_successivi": "1d8 (o 5) + modificatore Costituzione per livello"
+  },
+  "competenze": {
+    "armature": [
+      "Armature leggere",
+      "Armature medie",
+      "Scudi"
+    ],
+    "armi": [
+      "Armi semplici"
+    ],
+    "attrezzi": "Nessuno",
+    "tiri_salvezza": [
+      "Saggezza",
+      "Carisma"
+    ],
+    "abilita": {
+      "numero": 2,
+      "scelte": [
+        "Storia",
+        "Intuizione",
+        "Medicina",
+        "Persuasione",
+        "Religione"
+      ]
+    }
+  },
+  "equipaggiamento_iniziale": [
+    "(a) un mazzafrusto oppure (b) un martello da guerra (se competente)",
+    "(a) una cotta di scaglie oppure (b) un'armatura di cuoio",
+    "(a) una balestra leggera e 20 quadrelli oppure (b) qualsiasi arma semplice",
+    "(a) un equipaggiamento da sacerdote oppure (b) un equipaggiamento da esploratore",
+    "Un simbolo sacro e uno scudo"
+  ],
+  "multiclasse": {
+    "requisiti": "Saggezza 13",
+    "competenze_ottenute": [
+      "Armature leggere",
+      "Armature medie",
+      "Scudi"
+    ]
+  },
+  "incantesimi": {
+    "lista": "database/incantesimi/chierico.json",
+    "caratteristica": "Saggezza",
+    "preparazione": "Livello + modificatore Saggezza"
+  },
+  "note_brancalonia": {
+    "privilegio_rissa": "Predica Orecchie conferisce svantaggio agli avversari infami",
+    "integrazione_dnd5e": "Le meccaniche generiche rimandano al compendio dnd5e"
+  },
+  "validazione": {
+    "stato": "in_progress",
+    "note": "Verificare trasposizione domini e Channel Divinity con modulo ufficiale"
+  },
+  "collegamenti": {
+    "privilegi_generali": "privilegi_generali/index.json",
+    "progressione": "progressione/progressione.json",
+    "cammini": "cammini/index.json"
+  }
+}

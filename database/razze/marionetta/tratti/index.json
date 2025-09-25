@@ -1,0 +1,23 @@
+{
+  "totale": 3,
+  "tratti": [
+    {
+      "id": "race-marionetta-tratto-costrutto",
+      "nome": "Costrutto",
+      "categoria": "base",
+      "file": "tratto-001_costrutto.json"
+    },
+    {
+      "id": "race-marionetta-tratto-riparazione",
+      "nome": "Riparazione",
+      "categoria": "base",
+      "file": "tratto-002_riparazione.json"
+    },
+    {
+      "id": "race-marionetta-tratto-vulnerabilita",
+      "nome": "Vulnerabilita",
+      "categoria": "base",
+      "file": "tratto-003_vulnerabilita.json"
+    }
+  ]
+}

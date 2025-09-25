@@ -1,0 +1,125 @@
+{
+  "id": "creature-confinato",
+  "nome": "Confinato",
+  "nome_inglese": "Confined Spirit",
+  "descrizione": "I Confinati sono probabilmente i più potenti tra gli spettri e le fantasime che le canaglie possono incontrare nel Regno. Si tratta di esseri di antico dolore, oscuri intenti e grandi poteri, che per qualche motivo rimangono a infestare il luogo dove sono morti. Le loro tenebrose capacità sono talmente estese e radicate nel luogo che infestano da riuscire a dare vita a fenomeni paranormali di ogni tipo: poltergeist, possessione, incendi, disgregazione della materia e persino controllo di cadaveri e altri spettri.",
+  "tipo": "Non morto",
+  "taglia": "Media",
+  "allineamento": "Neutrale malvagio",
+  "classe_armatura": {
+    "valore": 12,
+    "tipo": "naturale"
+  },
+  "punti_ferita": {
+    "valore": 94,
+    "formula": "12d8 + 40"
+  },
+  "velocita": {
+    "camminare": "0 m",
+    "volare": "18 m (fluttuare)"
+  },
+  "caratteristiche": {
+    "forza": 6,
+    "destrezza": 14,
+    "costituzione": 18,
+    "intelligenza": 12,
+    "saggezza": 14,
+    "carisma": 17
+  },
+  "modificatori": {
+    "forza": "-2",
+    "destrezza": "+2",
+    "costituzione": "+4",
+    "intelligenza": "+1",
+    "saggezza": "+2",
+    "carisma": "+3"
+  },
+  "immunita_danni": ["freddo", "necrotico", "veleno"],
+  "resistenza_danni": ["acido", "fuoco", "fulmine", "tuono", "contundente, perforante e tagliente da attacchi non magici"],
+  "immunita_condizioni": ["affascinato", "afferrato", "avvelenato", "indebolimento", "paralizzato", "pietrificato", "privo di sensi", "prono", "spaventato", "trattenuto"],
+  "sensi": {
+    "percezione_passiva": 12,
+    "scurovisione": "18 m"
+  },
+  "linguaggi": "Linguaggi che conosceva in vita",
+  "grado_sfida": 7,
+  "punti_esperienza": 2900,
+  "tratti": [
+    {
+      "nome": "Resistenza Leggendaria",
+      "descrizione": "Se il confinato fallisce un tiro salvezza, può scegliere invece di superarlo. (1/Giorno per Magnitudo 2, 3/Giorno per Magnitudo 3)"
+    },
+    {
+      "nome": "Movimento Incorporeo",
+      "descrizione": "Il confinato può muoversi attraverso altre creature e oggetti come se fossero terreno difficile. Subisce 5 (1d10) danni da forza se termina il suo turno all'interno di un oggetto."
+    },
+    {
+      "nome": "Sensibilità alla Luce del Sole",
+      "descrizione": "Finché è esposto alla luce del sole, il confinato subisce svantaggio ai tiri per colpire, oltre che alle prove di Saggezza (Percezione) basate sulla vista."
+    },
+    {
+      "nome": "Debolezze dei Confinati",
+      "descrizione": "Il confinato possiede i seguenti difetti: Vincolato (non può varcare i confini della sua tana), Resti mortali (se le vestigia mortali vengono bruciate o ottengono una degna sepoltura, viene distrutto istantaneamente), Pace agognata (se viene data pace sanando il dissidio che lo tormenta, scomparirà per sempre)."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Tocco di Decomposizione",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+5 (+1 per livello di Magnitudo)",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "16 (4d6 + 2) danni necrotici",
+      "effetto_aggiuntivo": "Il bersaglio deve superare un tiro salvezza su Costituzione con CD 13 + livello di Magnitudo, altrimenti il suo massimo dei punti ferita è ridotto di un ammontare pari ai danni subiti. Questa riduzione permane finché il bersaglio non completa un riposo lungo. Se questo effetto riduce il suo massimo dei punti ferita a 0, il bersaglio muore."
+    }
+  ],
+  "azioni_leggendarie": [
+    {
+      "nome": "Movimento",
+      "descrizione": "Il confinato si muove fino alla sua velocità senza provocare attacchi di opportunità."
+    },
+    {
+      "nome": "Potere Unico (Costa 2 Azioni)",
+      "descrizione": "Il confinato utilizza un potere unico tra quelli a sua disposizione."
+    },
+    {
+      "nome": "Tocco di Decomposizione",
+      "descrizione": "Il confinato effettua un attacco di Tocco di Decomposizione."
+    }
+  ],
+  "poteri_unici": [
+    "Controllo Telecinetico",
+    "Signore degli Insoluti",
+    "Combustione",
+    "Possessione",
+    "Sguardo Terrificante",
+    "Affogamento Spettrale",
+    "Sguardo Gelido"
+  ],
+  "azioni_di_tana": [
+    "Chiamare spiriti per infliggere 3d6 danni necrotici per livello di Magnitudo",
+    "Evocare un non morto presente nella sua tana",
+    "Lanciare Scagliare Maledizione (CD 13 + livello di Magnitudo)"
+  ],
+  "magnitudo": {
+    "descrizione": "Il livello di magnitudo determina il potere del confinato e si somma alla CD dei tiri salvezza, al tiro per colpire e alle prove di abilità.",
+    "livelli": {
+      "1": {"gs": 7, "pe": 2900, "statistiche": "Base"},
+      "2": {"gs": 9, "pe": 5000, "statistiche": "PF 119 (14d8 + 56), Resistenza Leggendaria (1/Giorno), Azioni Leggendarie"},
+      "3": {"gs": 13, "pe": 10000, "statistiche": "PF 136 (16d8 + 64), Resistenza Leggendaria (3/Giorno), Azioni Leggendarie, Multiattacco (2)"}
+    }
+  },
+  "note_brancalonia": {
+    "natura": "Spirito potentissimo vincolato a una tana",
+    "origine": "Esseri di antico dolore e oscuri intenti",
+    "fenomeni": "Poltergeist, possessione, incendi, disgregazione",
+    "tana": "Castello, sotterraneo, veliero, villaggio, città"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 7,
+    "size": "med",
+    "type": "undead"
+  },
+  "fonte": "Brancalonia Manuale Base p.172-174"
+}

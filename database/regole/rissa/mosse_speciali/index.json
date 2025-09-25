@@ -1,0 +1,80 @@
+{
+  "totale": 15,
+  "elementi": [
+    {
+      "id": "rissa-mossa-saccagnata",
+      "nome": "Saccagnata",
+      "file": "rissa-mossa-saccagnata.json"
+    },
+    {
+      "id": "rissa-mossa-sdubbidata",
+      "nome": "Sdubbidata",
+      "file": "rissa-mossa-sdubbidata.json"
+    },
+    {
+      "id": "rissa-mossa-sgrinfia",
+      "nome": "Sgrinfia",
+      "file": "rissa-mossa-sgrinfia.json"
+    },
+    {
+      "id": "rissa-mossa-inciampo",
+      "nome": "Inciampo",
+      "file": "rissa-mossa-inciampo.json"
+    },
+    {
+      "id": "rissa-mossa-morso",
+      "nome": "Morso",
+      "file": "rissa-mossa-morso.json"
+    },
+    {
+      "id": "rissa-mossa-randellata",
+      "nome": "Randellata",
+      "file": "rissa-mossa-randellata.json"
+    },
+    {
+      "id": "rissa-mossa-presa-dell-orso",
+      "nome": "Presa dell'Orso",
+      "file": "rissa-mossa-presa-dell-orso.json"
+    },
+    {
+      "id": "rissa-mossa-cazzottone-rotante",
+      "nome": "Cazzottone Rotante",
+      "file": "rissa-mossa-cazzottone-rotante.json"
+    },
+    {
+      "id": "rissa-mossa-provocazione",
+      "nome": "Provocazione",
+      "file": "rissa-mossa-provocazione.json"
+    },
+    {
+      "id": "rissa-mossa-finta",
+      "nome": "Finta",
+      "file": "rissa-mossa-finta.json"
+    },
+    {
+      "id": "rissa-mossa-bicchierata",
+      "nome": "Bicchierata",
+      "file": "rissa-mossa-bicchierata.json"
+    },
+    {
+      "id": "rissa-mossa-sediata",
+      "nome": "Sediata",
+      "file": "rissa-mossa-sediata.json"
+    },
+    {
+      "id": "rissa-mossa-capocciata",
+      "nome": "Capocciata",
+      "file": "rissa-mossa-capocciata.json"
+    },
+    {
+      "id": "rissa-mossa-buttafuori",
+      "nome": "Buttafuori",
+      "file": "rissa-mossa-buttafuori.json"
+    },
+    {
+      "id": "rissa-mossa-raffica-di-pugni",
+      "nome": "Raffica di Pugni",
+      "file": "rissa-mossa-raffica-di-pugni.json"
+    }
+  ]
+}

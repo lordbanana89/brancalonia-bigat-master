@@ -1,0 +1,22 @@
+{
+  "id": "class-mago-livello_19-aumento-caratteristica-5",
+  "nome": "Aumento dei Punteggi di Caratteristica",
+  "nome_brancalonia": "Perfezione Arcana",
+  "livello": 19,
+  "tipo": "advancement",
+  "descrizione": "Al 19° livello, puoi aumentare un punteggio di caratteristica di 2, o due punteggi di 1, o scegliere un talento.",
+  "meccaniche": {
+    "ultimo_asi": "5° e finale per mago"
+  },
+  "implementazione_foundry": {
+    "tipo": "advancement",
+    "advancement_type": "AbilityScoreImprovement"
+  },
+  "completamento_build": {
+    "stats_finali": "INT 20, CON 18-20, DEX 14-16 tipici",
+    "talenti_totali": "2-3 talenti comuni",
+    "ottimizzazione": "Build completamente ottimizzata"
+  },
+  "note_dm": "L'ultimo ASI del mago. La maggior parte ha già tutto ottimizzato e prende talenti flavor o utility.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+}

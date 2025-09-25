@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-003",
+  "nome": "Armatura di Cuoio Borchiato",
+  "categoria": "armatura_standard",
+  "tipo": "leggera",
+  "costo": "45 mo",
+  "classe_armatura": "12 + Mod Destrezza",
+  "bonus_ca": null,
+  "forza_minima": "—",
+  "furtivita": "—",
+  "peso": "5.9 kg",
+  "descrizione": "Cuoio rinforzato da piccoli rivetti metallici.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

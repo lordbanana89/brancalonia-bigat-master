@@ -1,0 +1,124 @@
+{
+  "id": "class-guerriero-livello_18-survivor",
+  "nome": "Survivor (Archetipo Champion)",
+  "nome_brancalonia": "Sopravvissuto Eterno",
+  "livello": 18,
+  "tipo": "passivo",
+  "descrizione": "Al 18° livello, raggiungi l'apice della resilienza in battaglia. All'inizio di ciascuno dei tuoi turni, recuperi punti ferita pari a 5 + il tuo modificatore di Costituzione se non hai più della metà dei tuoi punti ferita rimanenti. Non guadagni questo beneficio se hai 0 punti ferita.",
+  "nota_importante": "Questo è specifico per Champion. Altri archetipi ricevono privilegi diversi.",
+  "meccaniche": {
+    "trigger": "Inizio del tuo turno",
+    "condizione": "HP ≤ 50% del massimo E HP > 0",
+    "recupero": "5 + modificatore Costituzione",
+    "automatico": "Nessuna azione richiesta"
+  },
+  "implementazione_foundry": {
+    "tipo": "regeneration",
+    "formula": "5 + @abilities.con.mod",
+    "condizione": "@attributes.hp.value <= @attributes.hp.max / 2 && @attributes.hp.value > 0"
+  },
+  "archetipi_alternativi_18": {
+    "battle_master": {
+      "privilegio": "Improved Combat Superiority",
+      "effetto": "Dadi superiorità diventano d12"
+    },
+    "eldritch_knight": {
+      "privilegio": "Improved War Magic",
+      "effetto": "Spell + attacco bonus (qualsiasi livello)"
+    },
+    "samurai": {
+      "privilegio": "Strength Before Death",
+      "effetto": "Turno extra quando scendi a 0 HP"
+    },
+    "cavalier": {
+      "privilegio": "Vigilant Defender migliorato",
+      "effetto": "Reazione ogni turno creatura"
+    }
+  },
+  "calcoli_rigenerazione": {
+    "con_16": "8 HP/turno (48 HP/minuto)",
+    "con_18": "9 HP/turno (54 HP/minuto)",
+    "con_20": "10 HP/turno (60 HP/minuto)",
+    "con_24": "12 HP/turno (72 HP/minuto)"
+  },
+  "analisi_sostenibilità": {
+    "danni_medi_sostenibili": {
+      "rigenerazione": "10 HP/round",
+      "second_wind": "1d10+18 (23.5) per short rest",
+      "totale": "33.5 HP recuperabili/round primo round"
+    },
+    "combattimento_5_round": {
+      "rigenerazione": "40-50 HP totali",
+      "equivalenza": "Come Cure Wounds 7° livello"
+    }
+  },
+  "trigger_ottimale": {
+    "hp_200_max": {
+      "attiva_a": "100 HP o meno",
+      "sweet_spot": "51-100 HP",
+      "pericolo": "Sotto 50 HP ancora attiva"
+    },
+    "gestione": {
+      "intenzionale": "Stare a metà HP",
+      "yo-yo": "Sali e scendi naturalmente"
+    }
+  },
+  "confronto_rigenerazione": {
+    "vs_troll": "Meno ma non stoppabile",
+    "vs_vampiric_touch": "Passiva vs richiede azione",
+    "vs_cure_wounds": "Gratuita vs spell slot",
+    "vs_healing_spirit": "Sempre attiva in combat"
+  },
+  "sinergie_build": {
+    "tough_feat": "+40 HP = più tempo in sweet spot",
+    "high_con": "Massimizza rigenerazione",
+    "adamantine_armor": "No critici = danno prevedibile",
+    "resistance": "Dimezza danni per durare"
+  },
+  "tattiche_champion": {
+    "tank_sostenibile": "Assorbe danni continui",
+    "no_healer_needed": "Autosufficiente",
+    "attrito": "Vince battaglie lunghe",
+    "intimidazione": "Nemici vedono rigenerazione"
+  },
+  "vs_danni_burst": {
+    "problema": "Burst può uccidere da sopra 50%",
+    "soluzione": "Second Wind + Indomito",
+    "matematica": "Serve 100+ danni per one-shot"
+  },
+  "dungeon_crawling": {
+    "tra_combattimenti": "1 minuto = full heal",
+    "no_riposi_brevi": "Recupera camminando",
+    "risorse_risparmiate": "No pozioni/spell slots"
+  },
+  "limitazioni": {
+    "non_funziona": [
+      "A 0 HP (KO)",
+      "Sopra 50% HP",
+      "Contro instant death"
+    ],
+    "contromisure_nemici": [
+      "Burst damage",
+      "Riduzione HP max",
+      "Effetti no-heal"
+    ]
+  },
+  "psicologia_avversari": {
+    "frustrazione": "'Non muore mai!'",
+    "cambio_tattica": "Focus fire necessario",
+    "morale": "Demoralizzante per nemici"
+  },
+  "combo_oggetti": {
+    "periapt_wound_closure": "Stabilizza automaticamente",
+    "ring_regeneration": "Stack rigenerazione",
+    "armor_resistance": "Dimezza danni subiti"
+  },
+  "narrazione_brancalonia": {
+    "veterano_immortale": "Troppe battaglie per morire",
+    "benedetto": "Protetto dal destino",
+    "mostro_umano": "Rigenerazione innaturale",
+    "leggenda": "Il guerriero che non cade"
+  },
+  "note_dm": "Survivor rende il Champion quasi imbattibile in combattimenti di attrito. 10 HP/round gratuiti sono enormi. Richiede burst damage o controllo per sconfiggerlo.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.73"
+}

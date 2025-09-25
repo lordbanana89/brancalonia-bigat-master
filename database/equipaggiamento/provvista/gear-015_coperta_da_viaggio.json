@@ -1,0 +1,15 @@
+{
+  "id": "gear-015",
+  "nome": "Coperta da Viaggio",
+  "categoria": "provvista_avventuriera",
+  "costo": "5 mr",
+  "peso": "1.5 kg",
+  "descrizione": "Coperta spessa di lana o feltro per i bivacchi notturni.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "arma-std-008",
+  "nome": "Bastone",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "2 ma",
+  "danni": "1d6 contundenti",
+  "proprieta": [
+    "Versatile (1d8)"
+  ],
+  "peso": "1.8 kg",
+  "descrizione": "Asta di legno robusto usata come supporto o arma.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

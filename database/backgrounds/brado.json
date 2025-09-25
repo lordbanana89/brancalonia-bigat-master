@@ -1,0 +1,65 @@
+{
+  "nome": "Brado",
+  "fonte": "Manuale Base p.34",
+  "tipo": "background",
+  "descrizione": "Cresciuto selvaggio tra comunità selvatiche, eremiti e pagani isolati",
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Addestrare Animali e Atletica",
+      "implementazione": {
+        "addestrare": "system.skills.ani.value = 1",
+        "atletica": "system.skills.ath.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Borsa da erborista",
+      "implementazione": "system.tools.herbalism.value = 1",
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Petroglifico (linguaggio ancestrale su pietra)",
+      "implementazione": "system.traits.languages.value.push('petroglifico')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Bastone, ciondolo d'ossa, pigmenti colorati, abito viaggiatore, borsa 10 ma"
+    },
+    "privilegio_dimestichezza_selvatica": {
+      "tipo": "attivo",
+      "descrizione": "Lui +5 persone possono attraversare territori selvaggi senza incontrare bestie ostili",
+      "implementazione": "flags.brancalonia-bigat.dimestichezzaSelvatica = true",
+      "mode": 5,
+      "nota": "Influenza solo incontri con bestie, non altri tipi"
+    }
+  },
+  "caratterizzazione": {
+    "tratti": [
+      "Non tiene conto di nobiltà e titoli",
+      "Nostalgico e inquieto lontano dalle terre selvagge",
+      "Si sente in gabbia nei luoghi chiusi",
+      "Non sopporta folla e città",
+      "Aggressivo con chi invade spazio personale",
+      "Si intenerisce per gentilezza spontanea",
+      "Ama insegnare arti pratiche",
+      "Preferisce animali a umani"
+    ],
+    "ideali": [
+      "Rispetto reciproco (Buono)",
+      "Leggi della selva (Legale)",
+      "Libertà selvaggia (Caotico)",
+      "Legge del più forte (Malvagio)",
+      "Sopravvivenza (Neutrale)",
+      "Contemplazione (Qualsiasi)"
+    ]
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "brado001",
+    "compendio": "backgrounds"
+  }
+}

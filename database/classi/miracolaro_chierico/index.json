@@ -1,0 +1,54 @@
+{
+  "nome": "Miracolaro",
+  "classe_base": "Chierico",
+  "fonte": "Manuale Base p.19",
+  "descrizione": "Chierici del Credo che invocano i Santi del Calendario",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Dominio del Calendario",
+  "validazione": {
+    "implementato": true,
+    "file_id": "miracolaro_per_tutti_i_santi",
+    "compendio": "brancalonia-features"
+  },
+  "privilegi": {
+    "totale": 4,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 1,
+      "privilegi": [
+        {
+          "id": "miracolaro_chierico-livello_1-dominio_calendario",
+          "nome": "dominio_calendario",
+          "file": "privilegi/miracolaro_chierico-livello_1-dominio_calendario.json"
+        },
+        {
+          "id": "miracolaro_chierico-livello_1-tirare_giu_santi",
+          "nome": "tirare_giu_santi",
+          "file": "privilegi/miracolaro_chierico-livello_1-tirare_giu_santi.json"
+        }
+      ]
+    },
+    {
+      "livello": 2,
+      "privilegi": [
+        {
+          "id": "miracolaro_chierico-livello_2-incanalare_divinita_recitare",
+          "nome": "incanalare_divinita_recitare",
+          "file": "privilegi/miracolaro_chierico-livello_2-incanalare_divinita_recitare.json"
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "privilegi": [
+        {
+          "id": "miracolaro_chierico-livello_6-per_tutti_santi",
+          "nome": "per_tutti_santi",
+          "file": "privilegi/miracolaro_chierico-livello_6-per_tutti_santi.json"
+        }
+      ]
+    }
+  ]
+}

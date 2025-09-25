@@ -1,0 +1,111 @@
+{
+  "_id": "armastd202balestraamano2c53a7",
+  "_key": "!items!armastd202balestraamano2c53a7",
+  "name": "Balestra a Mano",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Balestra compatta impugnabile con una mano.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 1.4,
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "attuned": false,
+    "equipped": false,
+    "weaponType": "simpleR",
+    "baseItem": "lightCrossbow",
+    "properties": {
+      "amm": true,
+      "lgt": true,
+      "lod": true
+    },
+    "magicalBonus": 0,
+    "proficient": true,
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": "",
+    "actionType": "mwak",
+    "attackBonus": "0",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d6",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "flat"
+    },
+    "ammunition": {
+      "value": "",
+      "consumed": true
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arma-std-202",
+      "categoria": "arma_standard",
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

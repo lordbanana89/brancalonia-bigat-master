@@ -1,0 +1,175 @@
+{
+  "id": "creature-bigatto",
+  "nome": "Bigatto",
+  "nome_inglese": "Bigatto",
+  "descrizione": "Il Bigatto è una creatura leggendaria che compare spesso nelle storie popolari che si raccontano lungo il fiume Fossa. Nelle leggende, il mostro si presenta come una specie di drago senza ali, un grosso lucertolone, o anche come un enorme bruco peloso. È una creatura fortemente territoriale, che evita i luoghi abitati e predilige le zone selvagge e umide. Tradizionalmente, il Bigatto raccoglie nel corso della sua esistenza un tesoro, che conserva e difende all'interno della propria tana.",
+  "tipo": "Drago",
+  "varianti": {
+    "comune": {
+      "taglia": "Grande",
+      "classe_armatura": {
+        "valore": 14,
+        "tipo": "armatura naturale"
+      },
+      "punti_ferita": {
+        "valore": 110,
+        "formula": "13d10 + 39"
+      },
+      "caratteristiche": {
+        "forza": 19,
+        "destrezza": 12,
+        "costituzione": 16,
+        "intelligenza": 5,
+        "saggezza": 12,
+        "carisma": 6
+      },
+      "modificatori": {
+        "forza": "+4",
+        "destrezza": "+1",
+        "costituzione": "+3",
+        "intelligenza": "-3",
+        "saggezza": "+1",
+        "carisma": "-2"
+      },
+      "grado_sfida": 5,
+      "punti_esperienza": 1800,
+      "danno_morso": "13 (2d8 + 4)",
+      "danno_artigli": "11 (2d6 + 4)",
+      "danno_coda": "11 (2d6 + 4)",
+      "danno_urlo": "18 (4d8)"
+    },
+    "antico": {
+      "taglia": "Enorme",
+      "classe_armatura": {
+        "valore": 15,
+        "tipo": "armatura naturale"
+      },
+      "punti_ferita": {
+        "valore": 184,
+        "formula": "16d12 + 80"
+      },
+      "caratteristiche": {
+        "forza": 22,
+        "destrezza": 10,
+        "costituzione": 20,
+        "intelligenza": 7,
+        "saggezza": 14,
+        "carisma": 8
+      },
+      "modificatori": {
+        "forza": "+6",
+        "destrezza": "+0",
+        "costituzione": "+5",
+        "intelligenza": "-2",
+        "saggezza": "+2",
+        "carisma": "-1"
+      },
+      "grado_sfida": 10,
+      "punti_esperienza": 5900,
+      "danno_morso": "19 (3d8 + 6)",
+      "danno_artigli": "13 (2d6 + 6)",
+      "danno_coda": "16 (3d6 + 6)",
+      "danno_urlo": "36 (8d8)"
+    }
+  },
+  "allineamento": "Senza allineamento",
+  "velocita": {
+    "camminare": "12 m",
+    "nuotare": "12 m",
+    "scavare": "6 m"
+  },
+  "abilita": {
+    "furtivita": "+4",
+    "percezione": "+4"
+  },
+  "immunita": {
+    "condizioni": "affascinato"
+  },
+  "sensi": {
+    "percezione_passiva": 14,
+    "scurovisione": "18 m"
+  },
+  "linguaggi": "-",
+  "tratti": [
+    {
+      "nome": "Trattenere il Respiro",
+      "descrizione": "Il Bigatto può trattenere il respiro per 1 ora."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Multiattacco",
+      "descrizione": "Il Bigatto effettua tre attacchi, uno con il morso, uno con gli artigli e uno con la coda."
+    },
+    {
+      "nome": "Morso",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": {
+        "comune": "+7",
+        "antico": "+10"
+      },
+      "portata": "1,5 m",
+      "bersagli": "una creatura",
+      "danno": {
+        "comune": "13 (2d8 + 4) danni perforanti",
+        "antico": "19 (3d8 + 6) danni perforanti"
+      }
+    },
+    {
+      "nome": "Artigli",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": {
+        "comune": "+7",
+        "antico": "+10"
+      },
+      "portata": "1,5 m",
+      "bersagli": "una creatura",
+      "danno": {
+        "comune": "11 (2d6 + 4) danni taglienti",
+        "antico": "13 (2d6 + 6) danni taglienti"
+      }
+    },
+    {
+      "nome": "Coda",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": {
+        "comune": "+7",
+        "antico": "+10"
+      },
+      "portata": "3 m",
+      "bersagli": "una creatura",
+      "danno": {
+        "comune": "11 (2d6 + 4) danni contundenti",
+        "antico": "16 (3d6 + 6) danni contundenti"
+      }
+    },
+    {
+      "nome": "Urlo Belluino",
+      "ricarica": "6",
+      "descrizione": "Il Bigatto emette un'esplosione di rumore assordante.",
+      "area": "9 metri",
+      "tiro_salvezza": {
+        "comune": "Costituzione CD 14",
+        "antico": "Costituzione CD 17"
+      },
+      "effetto": {
+        "comune": "18 (4d8) danni da tuono e assordato per 1 minuto",
+        "antico": "36 (8d8) danni da tuono e assordato per 1 minuto"
+      }
+    }
+  ],
+  "note_brancalonia": {
+    "origine": "Creatura leggendaria del fiume Fossa",
+    "aspetto": "Drago senza ali, lucertolone o bruco peloso gigante",
+    "comportamento": "Territoriale, evita luoghi abitati",
+    "tesoro": "Accumula tesori nella tana",
+    "habitat": "Zone selvagge e umide"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr_variabile": [5, 10],
+    "size_variabile": ["lg", "huge"],
+    "type": "dragon"
+  },
+  "fonte": "Brancalonia Manuale Base p.170-171"
+}

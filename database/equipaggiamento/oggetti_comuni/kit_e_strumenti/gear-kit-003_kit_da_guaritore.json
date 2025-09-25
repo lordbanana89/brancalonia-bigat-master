@@ -1,0 +1,16 @@
+{
+  "id": "gear-kit-003",
+  "nome": "Kit da Guaritore",
+  "categoria": "oggetto_comune",
+  "sottotipo": "kit_e_strumenti",
+  "costo": "5 mo",
+  "peso": "1.5 kg",
+  "descrizione": "Bende, unguenti e aghi sterili; consente di stabilizzare una creatura senza prova (10 usi).",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

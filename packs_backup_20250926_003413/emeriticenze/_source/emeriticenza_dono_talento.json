@@ -1,0 +1,96 @@
+{
+  "_id": "emeriticenza_dono_talento",
+  "name": "Il Dono del Talento",
+  "type": "feat",
+  "img": "icons/magic/life/heart-hands-hold-green.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Il Dono del Talento</h2>\n<p><em>Può essere scelta fino a due volte.</em></p>\n<p>Ottieni un talento a tua scelta.</p>",
+      "chat": "",
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Il Dono del Talento\nPuò essere scelta fino a due volte.\nOttieni un talento a tua scelta.</p>",
+        "flavor": ""
+      }
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": "",
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "emeriticenza": true
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!emeriticenza_dono_talento"
+}

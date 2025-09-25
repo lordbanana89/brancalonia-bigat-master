@@ -1,0 +1,82 @@
+{
+  "id": "png-animali-parlanti",
+  "nome": "Animali Parlanti",
+  "nome_inglese": "Talking Animals",
+  "descrizione": "Qualsiasi bestia colpita a vario titolo dagli effetti della Fandonia può diventare un animale parlante. Non tutti gli animali parlanti sono ugualmente scaltri o carismatici, come gli uomini d'altra parte. Il valore delle caratteristiche di Intelligenza, Saggezza e Carisma di un animale parlante varia da individuo a individuo ma sono generalmente pari a quelle di un popolano. Inoltre gli animali parlanti ottengono il dono della parola, conoscono la lingua Volgare e sviluppano un allineamento.",
+  "tipo": "Bestia",
+  "esempio": {
+    "nome": "Franceschello il Mulo parlante",
+    "taglia": "Media",
+    "allineamento": "Caotico buono",
+    "classe_armatura": {
+      "valore": 10,
+      "tipo": "naturale"
+    },
+    "punti_ferita": {
+      "valore": 11,
+      "formula": "2d8 + 2"
+    },
+    "velocita": {
+      "camminare": "12 m"
+    },
+    "caratteristiche": {
+      "forza": 14,
+      "destrezza": 10,
+      "costituzione": 13,
+      "intelligenza": 12,
+      "saggezza": 11,
+      "carisma": 10
+    },
+    "modificatori": {
+      "forza": "+2",
+      "destrezza": "+0",
+      "costituzione": "+1",
+      "intelligenza": "+1",
+      "saggezza": "+0",
+      "carisma": "+0"
+    },
+    "abilita": {
+      "atletica": "+4",
+      "percezione": "+2"
+    },
+    "sensi": {
+      "percezione_passiva": 10
+    },
+    "linguaggi": "Volgare",
+    "grado_sfida": "1/8",
+    "punti_esperienza": 25,
+    "tratti": [
+      {
+        "nome": "Bestia da Soma",
+        "descrizione": "France' è considerato un animale Grande al fine di determinare la sua capacità di trasporto."
+      },
+      {
+        "nome": "Ben Piantato",
+        "descrizione": "France' dispone di vantaggio ai tiri salvezza su Forza e Destrezza contro gli effetti che lo butterebbero a terra prono."
+      }
+    ],
+    "azioni": [
+      {
+        "nome": "Zoccoli",
+        "tipo": "Attacco con Arma da Mischia",
+        "bonus_attacco": "+2",
+        "portata": "1,5 m",
+        "bersagli": "un bersaglio",
+        "danno": "4 (1d4+2) danni contundenti"
+      }
+    ]
+  },
+  "note_brancalonia": {
+    "origine": "Effetti della Fandonia",
+    "variabilita": "INT, SAG e CAR variabili per individuo",
+    "linguaggio": "Sempre parlano Volgare",
+    "allineamento": "Sviluppano un allineamento individuale"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": "1/8",
+    "size": "var",
+    "type": "beast"
+  },
+  "fonte": "Brancalonia Manuale Base p.183"
+}

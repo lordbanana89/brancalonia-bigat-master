@@ -1,0 +1,15 @@
+{
+  "id": "gear-013",
+  "nome": "Kit da Scalata",
+  "categoria": "provvista_avventuriera",
+  "costo": "25 mo",
+  "peso": "5 kg",
+  "descrizione": "Comprende imbragature, ramponi, martello, chiodi speciali, piccozza e corde di sicurezza.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

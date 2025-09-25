@@ -1,0 +1,21 @@
+{
+  "id": "mac-spell-017",
+  "livello": 5,
+  "nome": "Giudizio Divino",
+  "scuola": "Divinazione",
+  "tempo_lancio": "1 ora",
+  "gittata": "Tocco",
+  "componenti": "V, S, M (bilancia d'oro del valore di 1000 mo)",
+  "durata": "Istantanea",
+  "descrizione": "Determini se una creatura è colpevole o innocente di un crimine specifico. La creatura deve essere presente e consenziente o incosciente.",
+  "classi": [
+    "Chierico",
+    "Paladino"
+  ],
+  "rituale": true,
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

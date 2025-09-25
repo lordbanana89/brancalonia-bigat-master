@@ -1,0 +1,67 @@
+{
+  "_id": "armstd103corazzadiscaglie518cfe",
+  "_key": "!item!armstd103corazzadiscaglie518cfe",
+  "name": "Corazza di Scaglie",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Piastre di metallo sovrapposte cucite su un supporto di cuoio.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 20.4,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "armor",
+      "subtype": "light",
+      "baseItem": "scalemail"
+    },
+    "armor": {
+      "value": 14,
+      "type": "light",
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": "—",
+    "stealth": false,
+    "proficient": true,
+    "properties": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arm-std-103",
+      "categoria": "armatura_standard",
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "007",
+  "nome": "Il Fazzoletto della Dama Nera",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Fazzoletto di seta nera profumato",
+  "proprieta": "Chi lo annusa ha vantaggio alle prove di Carisma con il sesso opposto per 1 ora",
+  "maledizione": "Deve fare TS Saggezza CD 13 o innamorarsi della prima persona che vede",
+  "valore": "400 mo",
+  "storia": "La Dama Nera ebbe 13 amanti che si uccisero per lei",
+  "maledizione_specifica": "Deve fare TS Saggezza CD 13 o innamorarsi della prima persona che vede",
+  "implementazione": {
+    "tipo": "magico_minore",
+    "attivo": true,
+    "active_effects": []
+  }
+}

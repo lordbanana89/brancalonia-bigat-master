@@ -1,0 +1,56 @@
+{
+  "id": "spell-passo-fatato",
+  "nome": "Passo Fatato",
+  "nome_inglese": "Faerie Fire",
+  "livello": 1,
+  "scuola": "Invocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "60 piedi",
+  "componenti": {
+    "verbale": true
+  },
+  "durata": "Concentrazione, fino a 1 minuto",
+  "descrizione": "Ogni oggetto in un cubo di 20 piedi entro gittata è contornato da luce blu, verde o violetta (a tua scelta). Qualsiasi creatura nell'area quando l'incantesimo è lanciato è anche contornata di luce se fallisce un tiro salvezza su Destrezza. Per la durata, gli oggetti e le creature influenzate emettono luce fioca in un raggio di 10 piedi. Qualsiasi tiro per colpire contro una creatura o oggetto influenzato ha vantaggio se l'attaccante può vederlo, e la creatura o oggetto influenzato non può beneficiare dell'essere invisibile.",
+  "classi": ["Bardo", "Druido"],
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "action",
+    "range": 60,
+    "area": "20 ft cube",
+    "save": "dexterity",
+    "durata": "1 minute",
+    "concentrazione": true,
+    "effetto": "advantage on attacks"
+  },
+  "effetti": {
+    "outline": "Contorno luminoso visibile",
+    "luce_fioca": "10 ft dim light",
+    "vantaggio": "Tutti attacks hanno advantage",
+    "no_invisibilita": "Cancella e previene invisibility"
+  },
+  "valore_tattico": {
+    "advantage_party": "Tutto party ottiene advantage",
+    "anti_stealth": "Impossibile nascondersi",
+    "anti_invisibility": "Counter perfetto",
+    "focus_fire": "Marca bersagli prioritari"
+  },
+  "save_iniziale": {
+    "solo_una_volta": "Save solo quando cast",
+    "no_save_dopo": "No save ripetuti",
+    "durata_piena": "1 minuto se fail"
+  },
+  "utilizzi": [
+    "Setup per party damage",
+    "Counter creature invisibili",
+    "Marcare boss/priority target",
+    "Aiutare ranged attackers"
+  ],
+  "confronto": {
+    "vs_bless": "Advantage > +1d4",
+    "vs_guiding_bolt": "Multi-target e durata",
+    "concentrazione": "Compete per concentration"
+  },
+  "note_dm": "Faerie Fire è uno dei migliori debuff. Advantage per tutti è enorme. DEX save unica debolezza. Ottimo vs invisible.",
+  "fonte": "D&D 5e PHB p.239"
+}

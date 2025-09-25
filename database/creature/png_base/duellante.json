@@ -1,0 +1,94 @@
+{
+  "id": "png-duellante",
+  "nome": "Duellante",
+  "nome_inglese": "Duelist",
+  "descrizione": "Come gli spadaccini, i duellanti sono combattenti professionisti e virtuosi della scherma, che prestano la loro opera in genere come guardie del corpo, maestri di spada e lame mercenarie.",
+  "tipo": "Umanoide",
+  "taglia": "Media",
+  "allineamento": "Qualsiasi",
+  "classe_armatura": {
+    "valore": 16,
+    "tipo": "cuoio borchiato"
+  },
+  "punti_ferita": {
+    "valore": 26,
+    "formula": "4d8 + 8"
+  },
+  "velocita": {
+    "camminare": "9 m"
+  },
+  "caratteristiche": {
+    "forza": 11,
+    "destrezza": 17,
+    "costituzione": 14,
+    "intelligenza": 10,
+    "saggezza": 12,
+    "carisma": 14
+  },
+  "modificatori": {
+    "forza": "+0",
+    "destrezza": "+3",
+    "costituzione": "+2",
+    "intelligenza": "+0",
+    "saggezza": "+1",
+    "carisma": "+2"
+  },
+  "abilita": {
+    "atletica": "+2",
+    "intrattenere": "+4"
+  },
+  "sensi": {
+    "percezione_passiva": 11
+  },
+  "linguaggi": "Volgare",
+  "grado_sfida": 1,
+  "punti_esperienza": 200,
+  "tratti": [
+    {
+      "nome": "Duello",
+      "descrizione": "Se il duellante si trova entro un 1,5 m da un avversario e non è presente nessun'altra creatura entro 1,5 m da lui, aggiunge 3 (1d6) ai tiri per i danni."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Multiattacco",
+      "descrizione": "Il duellante effettua tre attacchi in mischia: due con lo stocco e uno con il pugnale."
+    },
+    {
+      "nome": "Stocco",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+5",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "7 (1d8 + 3) danni perforanti"
+    },
+    {
+      "nome": "Pugnale",
+      "tipo": "Attacco con Arma da Mischia o a Distanza",
+      "bonus_attacco": "+5",
+      "portata": "1,5 m",
+      "gittata": "6/18 m",
+      "bersagli": "un bersaglio",
+      "danno": "5 (1d4 + 3) danni perforanti"
+    }
+  ],
+  "reazioni": [
+    {
+      "nome": "Parata",
+      "descrizione": "Il duellante aggiunge 2 alla sua CA contro un attacco in mischia che lo colpirebbe. Per farlo, il duellante deve vedere l'attaccante e deve impugnare un'arma da mischia."
+    }
+  ],
+  "note_brancalonia": {
+    "ruolo": "Spadaccino professionista",
+    "specialita": "Combattimento uno contro uno",
+    "servizi": "Guardia del corpo, maestro di spada, mercenario",
+    "stile": "Virtuoso della scherma"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 1,
+    "size": "med",
+    "type": "humanoid"
+  },
+  "fonte": "Brancalonia Manuale Base p.187"
+}

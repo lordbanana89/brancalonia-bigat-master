@@ -1,0 +1,10 @@
+{
+  "id": "miracolaro_chierico-livello_6-per_tutti_santi",
+  "livello": 6,
+  "nome": "per_tutti_santi",
+  "tipo": "attivo",
+  "descrizione": "Quando lancia incantesimo guarigione, bersaglio recupera anche PF = 2 + livello incantesimo",
+  "implementazione": "flags.brancalonia-bigat.bonusHealing = '2 + @item.level'",
+  "mode": 2,
+  "nota": "Applicato a incantesimi di guarigione"
+}

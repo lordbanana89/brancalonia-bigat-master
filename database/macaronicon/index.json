@@ -1,0 +1,57 @@
+{
+  "fonte": "Brancalonia Macaronicon",
+  "sezioni": [
+    {
+      "chiave": "avventure",
+      "index": "avventure/index.json",
+      "totale": 12,
+      "descrizione": "12 avventure complete per Brancalonia"
+    },
+    {
+      "chiave": "backgrounds",
+      "index": "backgrounds/index.json",
+      "totale": 8,
+      "descrizione": "Backgrounds Macaronicon"
+    },
+    {
+      "chiave": "classe",
+      "index": "classe/index.json",
+      "totale": 1,
+      "descrizione": "Classi Macaronicon"
+    },
+    {
+      "chiave": "equipaggiamento",
+      "index": "equipaggiamento/index.json",
+      "totale": null,
+      "descrizione": "equipaggiamento_macaronicon"
+    },
+    {
+      "chiave": "espansioni_tematiche",
+      "index": "espansioni_tematiche/index.json",
+      "totale": 6,
+      "descrizione": "Espansioni tematiche e regole opzionali per Brancalonia"
+    },
+    {
+      "chiave": "nuove_razze",
+      "file": "nuove_razze.json"
+    },
+    {
+      "chiave": "png_mostri",
+      "index": "png_mostri/index.json",
+      "totale": null,
+      "descrizione": "PNG e creature per avventure di Brancalonia"
+    },
+    {
+      "chiave": "razze",
+      "index": "razze/index.json",
+      "totale": 3,
+      "descrizione": "Razze Macaronicon"
+    },
+    {
+      "chiave": "sottoclassi",
+      "index": "sottoclassi/index.json",
+      "totale": 10,
+      "descrizione": "Estensioni di classe introdotte in Brancalonia Macaronicon"
+    }
+  ]
+}

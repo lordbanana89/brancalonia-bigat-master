@@ -1,0 +1,17 @@
+{
+  "id": "038",
+  "nome": "La Veste del Monaco Apostata",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Saio con simboli sacri scuciti",
+  "proprieta": "Immunità a individuazione magica e divinazione",
+  "maledizione": "Non può entrare in luoghi consacrati",
+  "valore": "400 mo",
+  "storia": "Il monaco rinnegò 7 religioni",
+  "maledizione_specifica": "Non può entrare in luoghi consacrati",
+  "implementazione": {
+    "tipo": "maledetto",
+    "attivo": false,
+    "active_effects": []
+  }
+}

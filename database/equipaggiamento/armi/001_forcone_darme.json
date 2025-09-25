@@ -1,0 +1,20 @@
+{
+  "id": "arma-base-001",
+  "nome": "Forcone d'Arme",
+  "categoria": "arma",
+  "sottotipo": "mischia",
+  "costo": "3 mo",
+  "danni": "1d10 perforanti",
+  "peso": "3 kg",
+  "proprieta": ["Due Mani", "Pesante"],
+  "descrizione": "Versione rinforzata del forcone contadino, pensata per difendere granai e cortili da predoni e bestie.",
+  "note_meccaniche": null,
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "estratto_da": "manuale_brancalonia.txt",
+    "stato": "da_validare"
+  }
+}

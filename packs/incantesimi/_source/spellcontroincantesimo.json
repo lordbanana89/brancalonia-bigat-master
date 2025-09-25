@@ -1,0 +1,112 @@
+{
+  "_id": "spellcontroincantesimoca23d4",
+  "_key": "!item!spellcontroincantesimoca23d4",
+  "name": "Controincantesimo",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tenti di interrompere una creatura nel processo di lancio di un incantesimo. Se la creatura sta lanciando un incantesimo di 3° livello o inferiore, il suo incantesimo fallisce e non ha effetto. Se sta lanciando un incantesimo di 4° livello o superiore, effettua una prova di caratteristica usando la tua caratteristica da incantatore. La CD è uguale a 10 + il livello dell'incantesimo. Con un successo, l'incantesimo della creatura fallisce e non ha effetto.</p><h3>Note per il DM</h3><p><em>Counterspell definisce meta high-level. Reaction economy cruciale. Identificare spell optional ma utile. Counter-war può dominare combat.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.228",
+    "level": 3,
+    "school": "abj",
+    "components": {
+      "vocal": false,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-controincantesimo",
+      "fonte": "D&D 5e PHB p.228",
+      "note_dm": "Counterspell definisce meta high-level. Reaction economy cruciale. Identificare spell optional ma utile. Counter-war può dominare combat.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 3,
+        "attivazione": "reaction",
+        "range": 60,
+        "durata": "instantaneous"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Abiurazione",
+        "level": 3
+      }
+    }
+  }
+}

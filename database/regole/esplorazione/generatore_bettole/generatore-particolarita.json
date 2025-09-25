@@ -1,0 +1,31 @@
+{
+  "id": "generatore-bettole-particolarita",
+  "titolo": "Particolarita",
+  "dado": "1d20",
+  "voci": [
+    {"tiro": 1, "descrizione": "Parete con mosaico bianco e nero composto dai denti raccolti dopo le risse; il mosaico e in continuo ampliamento."},
+    {"tiro": 2, "descrizione": "Nel sottoscala si tengono risse clandestine: chi non paga viene spesso costretto a combattere."},
+    {"tiro": 3, "descrizione": "Una sola grande tavola ricavata da una quercia dove tutti mangiano insieme."},
+    {"tiro": 4, "descrizione": "Il tenutario e un capobanda e la Bettola funge da copertura per la banda."},
+    {"tiro": 5, "descrizione": "Una volta per luna si svolge la cavalcata del porco ubriaco: occorre restare in groppa a un maiale selvatico ricolmo di vino."},
+    {"tiro": 6, "descrizione": "Con un paio di pasti e un po' di vino si possono acquistare animali anziani e zoppi."},
+    {"tiro": 7, "descrizione": "Proprietario razzista: rifiuta una razza tirata con 1d8 (1 umani, 2 dotati, 3 morganti, 4 selvatici, 5 marionette, 6 malebranche, 7 razza di un personaggio, 8 tutte le razze tranne lancia 1d6)."},
+    {"tiro": 8, "descrizione": "Ottimo stufato di carne e verdure; esiste un accesso separato per pantegani e mandragole."},
+    {"tiro": 9, "descrizione": "Cucina favolosa ma costosissima: chi non puo pagare finisce ai ceppi finche non salda."},
+    {"tiro": 10, "descrizione": "Alla chiusura il tenutario lascia sempre prosciutto e vino nel vicolo sul retro, \"per i folletti\"."},
+    {"tiro": 11, "descrizione": "Dietro il bancone spiccano sette randelli, ognuno dedicato a una virtu."},
+    {"tiro": 12, "descrizione": "I bicchieri brillano della miglior sputazza del contado, ma restano segnati da dita rosse."},
+    {"tiro": 13, "descrizione": "Le canaglie possono sfidare i tenutari a un Gioco da Bettola in cui dichiarano di eccellere; se li si lascia vincere offrono da bere."},
+    {"tiro": 14, "descrizione": "La Bettola insulta i clienti dalla testa ai piedi come forma di attrazione. Se reagiscono, vengono anche picchiati."},
+    {"tiro": 15, "descrizione": "Ritrovo per carrettieri: si mangia tra ruote, fango e letame di somaro; prezzi bassissimi e paglia gratis per gli animali."},
+    {"tiro": 16, "descrizione": "Vicino a una piazza di Calcio Draconiano: il locale brulica di tifosi esagitati."},
+    {"tiro": 17, "descrizione": "Per un vecchio giuramento dei tenutari, i personaggi di una classe determinata con 1d12 non pagano vitto e alloggio."},
+    {"tiro": 18, "descrizione": "Aperta giorno e notte: bande rivali usano la Bettola come terreno neutrale grazie all'affidabilita del padrone."},
+    {"tiro": 19, "descrizione": "Prezzi modesti, cucina popolare eccellente e ambiente insospettabilmente pulito."},
+    {"tiro": 20, "descrizione": "Decorazioni con pelli, stoffe e oggetti esotici raccolti dal precedente tenutario, che ora osserva da un sedile in disparte."}
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "84"
+  }
+}

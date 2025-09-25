@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-012",
+  "nome": "Pipa del Contemplatore",
+  "rarita": "Non comune",
+  "tipo": "Oggetto meraviglioso",
+  "sintonia": "Sì",
+  "descrizione": "Pipa che aiuta la concentrazione",
+  "proprieta": [
+    "Vantaggio alle prove di Intelligenza mentre si fuma",
+    "Può creare nuvola di fumo 3m raggio 1 volta al giorno",
+    "Richiede tabacco speciale (5 mo a utilizzo)"
+  ],
+  "effetti_speciali": {
+    "maledizione": null,
+    "note": null,
+    "restrizione": null,
+    "rischio": null,
+    "effetto_collaterale": null,
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

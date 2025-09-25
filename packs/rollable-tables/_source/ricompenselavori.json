@@ -1,0 +1,166 @@
+{
+  "_id": "ricompenselavori",
+  "name": "Ricompense per Lavori Sporchi",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Ricompense per Lavori Sporchi",
+  "results": [
+    {
+      "_id": "ricompense-lavori_0",
+      "type": 0,
+      "text": "10d10 denari (lavoro facile)",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_0"
+    },
+    {
+      "_id": "ricompense-lavori_1",
+      "type": 0,
+      "text": "5d10 talleri (lavoro normale)",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_1"
+    },
+    {
+      "_id": "ricompense-lavori_2",
+      "type": 0,
+      "text": "2d10 scudi (lavoro difficile)",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_2"
+    },
+    {
+      "_id": "ricompense-lavori_3",
+      "type": 0,
+      "text": "1d10 ducati (lavoro molto difficile)",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_3"
+    },
+    {
+      "_id": "ricompense-lavori_4",
+      "type": 0,
+      "text": "Favore da un potente (invece di denaro)",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_4"
+    },
+    {
+      "_id": "ricompense-lavori_5",
+      "type": 0,
+      "text": "Informazione preziosa (posizione tesoro)",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_5"
+    },
+    {
+      "_id": "ricompense-lavori_6",
+      "type": 0,
+      "text": "Oggetto magico minore",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_6"
+    },
+    {
+      "_id": "ricompense-lavori_7",
+      "type": 0,
+      "text": "Riduzione Infamia (-1d4 punti)",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_7"
+    },
+    {
+      "_id": "ricompense-lavori_8",
+      "type": 0,
+      "text": "Contatto importante (nuovo PNG alleato)",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_8"
+    },
+    {
+      "_id": "ricompense-lavori_9",
+      "type": 0,
+      "text": "Mappa di un dungeon",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_9"
+    },
+    {
+      "_id": "ricompense-lavori_10",
+      "type": 0,
+      "text": "Ricetta alchemica segreta",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_10"
+    },
+    {
+      "_id": "ricompense-lavori_11",
+      "type": 0,
+      "text": "Metà ora, metà dopo (possibile truffa)",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!ricompense-lavori_11"
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 1500,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!ricompenselavori"
+}

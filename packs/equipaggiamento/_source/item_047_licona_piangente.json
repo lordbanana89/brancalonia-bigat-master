@@ -1,0 +1,81 @@
+{
+  "_id": "liconapiangente2a9387",
+  "_key": "!item!liconapiangente2a9387",
+  "name": "L'Icona Piangente",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Dipinto sacro che piange sangue</p><h3>Proprietà</h3><p>Predice disgrazie (piange 24 ore prima)</p><h3>Storia</h3><p><em>Pianse per 7 giorni prima della peste</em></p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 800,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": {
+      "mgc": true
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "047",
+      "categoria": "cimelo",
+      "storia": "Pianse per 7 giorni prima della peste",
+      "proprieta_originale": "Predice disgrazie (piange 24 ore prima)",
+      "implementazione": {
+        "tipo": "narrativo",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

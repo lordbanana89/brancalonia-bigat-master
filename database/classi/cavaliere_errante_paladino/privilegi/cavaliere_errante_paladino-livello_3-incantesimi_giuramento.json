@@ -1,0 +1,18 @@
+{
+  "id": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento",
+  "livello": 3,
+  "nome": "incantesimi_giuramento",
+  "tipo": "advancement",
+  "descrizione": "Incantesimi di giuramento specifici",
+  "implementazione": "Gestito da Advancement API - Oath Spells",
+  "lista_incantesimi": {
+    "3": [
+      "benedizione",
+      "comando"
+    ],
+    "5": [
+      "passo senza tracce",
+      "evoca cavalcatura"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "classe": "spadaccino_guerriero",
+  "categoria": "Privilegi Generali",
+  "totale": 16,
+  "privilegi": [
+    {
+      "id": "class-guerriero-livello_1-stile-combattimento",
+      "nome": "Scuola di Scherma",
+      "file": "class-guerriero-livello_1-stile-combattimento.json",
+      "livello": 1
+    },
+    {
+      "id": "class-guerriero-livello_1-recupero-energie",
+      "nome": "Secondo Fiato",
+      "file": "class-guerriero-livello_1-recupero-energie.json",
+      "livello": 1
+    },
+    {
+      "id": "class-guerriero-livello_2-azione-impetuosa",
+      "nome": "Assalto Furioso",
+      "file": "class-guerriero-livello_2-azione-impetuosa.json",
+      "livello": 2
+    },
+    {
+      "id": "class-guerriero-livello_3-archetipo-marziale",
+      "nome": "Scuola di Scherma",
+      "file": "class-guerriero-livello_3-archetipo-marziale.json",
+      "livello": 3
+    },
+    {
+      "id": "class-guerriero-livello_5-attacco-extra",
+      "nome": "Raffica di Colpi",
+      "file": "class-guerriero-livello_5-attacco-extra.json",
+      "livello": 5
+    },
+    {
+      "id": "class-guerriero-livello_6-attacco-extra-migliorato",
+      "nome": "Veterano Temprato",
+      "file": "class-guerriero-livello_6-attacco-extra-migliorato.json",
+      "livello": 6
+    },
+    {
+      "id": "class-guerriero-livello_7-maestro-combattente",
+      "nome": "Conoscere il Nemico",
+      "file": "class-guerriero-livello_7-maestro-combattente.json",
+      "livello": 7
+    },
+    {
+      "id": "class-guerriero-livello_9-indomito",
+      "nome": "Tenacia del Veterano",
+      "file": "class-guerriero-livello_9-indomito.json",
+      "livello": 9
+    },
+    {
+      "id": "class-guerriero-livello_9-indomabile",
+      "nome": "Volontà di Ferro",
+      "file": "class-guerriero-livello_9-indomabile.json",
+      "livello": 9
+    },
+    {
+      "id": "class-guerriero-livello_11-attacco-extra-superiore",
+      "nome": "Furia del Veterano",
+      "file": "class-guerriero-livello_11-attacco-extra-superiore.json",
+      "livello": 11
+    },
+    {
+      "id": "class-guerriero-livello_13-indomito-migliorato",
+      "nome": "Resilienza Leggendaria",
+      "file": "class-guerriero-livello_13-indomito-migliorato.json",
+      "livello": 13
+    },
+    {
+      "id": "class-guerriero-livello_15-relentless",
+      "nome": "Inarrestabile",
+      "file": "class-guerriero-livello_15-relentless.json",
+      "livello": 15
+    },
+    {
+      "id": "class-guerriero-livello_17-action-surge-migliorato",
+      "nome": "Frenesia di Battaglia",
+      "file": "class-guerriero-livello_17-action-surge-migliorato.json",
+      "livello": 17
+    },
+    {
+      "id": "class-guerriero-livello_17-indomito-supremo",
+      "nome": "Volontà Incrollabile",
+      "file": "class-guerriero-livello_17-indomito-supremo.json",
+      "livello": 17
+    },
+    {
+      "id": "class-guerriero-livello_18-survivor",
+      "nome": "Sopravvissuto Eterno",
+      "file": "class-guerriero-livello_18-survivor.json",
+      "livello": 18
+    },
+    {
+      "id": "class-guerriero-livello_20-attacco-extra-supremo",
+      "nome": "Tempesta di Lame",
+      "file": "class-guerriero-livello_20-attacco-extra-supremo.json",
+      "livello": 20
+    }
+  ]
+}

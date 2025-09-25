@@ -1,0 +1,17 @@
+{
+  "id": "strade-accesso",
+  "titolo": "Per poterla percorrere",
+  "dado": "1d6",
+  "voci": [
+    { "tiro": 1, "descrizione": "Per notare l'imbocco bisogna superare una prova di Saggezza (Percezione) CD 18." },
+    { "tiro": 2, "descrizione": "All'ingresso c'e un ostacolo (muro, cancello, masso) che impedisce il passaggio a cavalcature e carri: serve prova di Forza (Atletica) CD 16." },
+    { "tiro": 3, "descrizione": "Un guardiano (animale feroce, contadino burbero, diavolo tentatore, spaventapasseri animato) blocca l'accesso." },
+    { "tiro": 4, "descrizione": "La strada appare e scompare tra erba e fratte: serve prova di Saggezza (Sopravvivenza) CD 17 per seguirla." },
+    { "tiro": 5, "descrizione": "Il percorso diventa impervio tra dirupi e asperita: serve prova di Destrezza (Acrobazia) CD 15." },
+    { "tiro": 6, "descrizione": "La strada e avvolta da enigmatici effetti magici: serve prova di Intelligenza (Arcana o Indagare) CD 19." }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "86"
+  }
+}

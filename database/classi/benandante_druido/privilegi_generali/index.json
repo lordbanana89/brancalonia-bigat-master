@@ -1,0 +1,13 @@
+{
+  "classe": "benandante_druido",
+  "categoria": "Privilegi Generali",
+  "totale": 1,
+  "privilegi": [
+    {
+      "id": "class-druido-livello_2-forma-selvatica",
+      "nome": "Mutaforma del Benandante",
+      "file": "class-druido-livello_2-forma-selvatica.json",
+      "livello": 2
+    }
+  ]
+}

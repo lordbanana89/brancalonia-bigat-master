@@ -1,0 +1,21 @@
+{
+  "id": "spell-base-004",
+  "nome": "Ristorare Inferiore",
+  "nome_originale": "Lesser Restoration",
+  "livello": 2,
+  "scuola": "Abiurazione",
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Druido",
+    "Paladino",
+    "Ranger"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Lesser Restoration",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Lesser Restoration).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale."
+}

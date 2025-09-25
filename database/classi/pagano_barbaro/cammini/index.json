@@ -1,0 +1,15 @@
+{
+  "totale": 2,
+  "cammini": [
+    {
+      "id": "class-barbaro-cammino-berserker",
+      "nome": "berserker",
+      "file": "class-barbaro-cammino-berserker.json"
+    },
+    {
+      "id": "class-barbaro-cammino-totem",
+      "nome": "totem",
+      "file": "class-barbaro-cammino-totem.json"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "spell-silenzio",
+  "nome": "Silenzio",
+  "nome_inglese": "Silence",
+  "livello": 2,
+  "scuola": "Illusione",
+  "rituale": true,
+  "tempo_lancio": "1 azione",
+  "gittata": "120 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "Concentrazione, fino a 10 minuti",
+  "descrizione": "Per la durata, nessun suono può essere creato all'interno o passare attraverso una sfera del raggio di 20 piedi centrata su un punto che scegli entro gittata. Qualsiasi creatura o oggetto interamente dentro la sfera è immune ai danni da tuono, e le creature sono assordate mentre sono interamente al suo interno. Lanciare un incantesimo che include una componente verbale è impossibile lì.",
+  "classi": ["Bardo", "Chierico", "Ranger"],
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 2,
+    "rituale": true,
+    "attivazione": "action",
+    "range": 120,
+    "area": "20 ft radius sphere",
+    "durata": "10 minutes",
+    "concentrazione": true
+  },
+  "effetti_silenzio": {
+    "no_suoni": "Zero suoni in area",
+    "immune_thunder": "Immunità danni tuono",
+    "deafened": "Tutti assordati dentro",
+    "no_verbal_spells": "Blocca spell con V"
+  },
+  "blocca_incantesimi": {
+    "componente_v": "TUTTI spell con Verbal",
+    "counterspell": "Non castable (ha V)",
+    "healing_word": "Non castable (ha V)",
+    "subtle_spell": "Sorcerer può aggirare"
+  },
+  "utilizzi_tattici": [
+    "Shutdown casters nemici",
+    "Stealth operations silenziose",
+    "Prevenire allarmi",
+    "Counter thunder damage",
+    "Bloccare counterspell war"
+  ],
+  "ritual_cast": {
+    "10_minuti": "No slot richiesto",
+    "preparazione": "Setup prima combat",
+    "exploration": "Stealth missions"
+  },
+  "posizionamento": {
+    "point_space": "Non serve superficie",
+    "mobile": "NON segue oggetti",
+    "statico": "Resta dove cast",
+    "120ft_range": "Cast da lontano"
+  },
+  "counters": [
+    "Spell senza V component",
+    "Subtle Spell metamagic",
+    "Abilità non-spell",
+    "Muoversi fuori area",
+    "Dispel Magic"
+  ],
+  "interazioni": {
+    "thunder_damage": "Immunizza da Shatter etc",
+    "verbal_only": "Alcuni spell hanno solo V",
+    "comunicazione": "No comunicazione verbale",
+    "perception": "Hearing-based auto-fail"
+  },
+  "note_dm": "Silence è il caster shutdown definitivo. 20 ft radius è enorme. Ritual option lo rende versatile. Posizionamento critico.",
+  "fonte": "D&D 5e PHB p.275"
+}

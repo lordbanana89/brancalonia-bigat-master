@@ -1,0 +1,122 @@
+{
+  "_id": "trombonedaguerra001",
+  "name": "Trombone da Guerra",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blunderbuss-bronze.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un'arma da fuoco primitiva a canna larga che spara una rosa di pallettoni in un cono devastante. Micidiale a corta distanza.</p><p><strong>Colpo a Cono:</strong> Il trombone colpisce tutte le creature in un cono di 15 piedi. Ogni creatura nell'area deve effettuare un TS Destrezza CD 14 o subire i danni completi (metà con un successo).</p><p><strong>Inaffidabile:</strong> Su un 1-2 naturale al tiro per colpire, l'arma si inceppa e richiede 2 turni per essere ricaricata. Su un 1 naturale, esplode causando 1d8 danni da fuoco a chi la impugna.</p><p><strong>Proprietà:</strong> Munizioni (cono 15 piedi), caricamento (2), due mani, pesante</p><div class=\"regole-correlate\"><strong>Regole Correlate:</strong> <span class=\"regola-tag\" data-regola=\"armi-da-fuoco-primitive\" draggable=\"true\">📜 Armi Da Fuoco Primitive</span> <span class=\"regola-tag\" data-regola=\"equipaggiamento-scadente\" draggable=\"true\">📜 Equipaggiamento Scadente</span></div>",
+      "chat": "",
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Arma da fuoco che spara pallettoni in cono. Cono 15 piedi, caricamento (2 turni). Devastante a corta distanza.</p>",
+        "flavor": ""
+      }
+    },
+    "source": "Brancalonia",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 120,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": 15,
+      "width": null,
+      "units": "ft",
+      "type": "cone"
+    },
+    "range": {
+      "value": 15,
+      "long": 30,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": 14,
+      "scaling": "flat"
+    },
+    "armor": {
+      "value": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "weaponType": "martialR",
+    "baseItem": "",
+    "properties": {
+      "amm": true,
+      "hvy": true,
+      "lod": true,
+      "two": true,
+      "spc": true
+    },
+    "proficient": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "relatedRules": [
+        "armiDaFuocoPrimitive001",
+        "equipaggiamentoScadente001"
+      ]
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!trombonedaguerra001"
+}

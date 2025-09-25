@@ -1,0 +1,16 @@
+{
+  "id": "gear-veh-004",
+  "nome": "Slitta",
+  "categoria": "oggetto_comune",
+  "sottotipo": "veicoli",
+  "costo": "20 mo",
+  "peso": "30 kg",
+  "descrizione": "Slitta di legno per terreni innevati, trainata da cavalli o mastini.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "mac-armi-001",
+  "nome": "Lanterna d'Arme",
+  "categoria": "arma",
+  "sottotipo": "mischia",
+  "costo": "15 mo",
+  "danni": "1d6 contundenti",
+  "peso": "2 kg",
+  "proprieta": ["Versatile (1d8)", "Speciale"],
+  "descrizione": "Lanterna rinforzata che illumina tombaroli e cacciatori di reliquie mentre colpiscono in mischia.",
+  "note_meccaniche": "Proietta luce intensa per 4,5 m (fioca per ulteriori 9 m) per 6 ore con 0,5 l di olio. Se accesa e usata in attacco infligge +1 danno da fuoco senza spegnersi.",
+  "fonte": {
+    "manuale": "Brancalonia Macaronicon",
+    "pagine": "46"
+  },
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "stato": "da_validare"
+  }
+}

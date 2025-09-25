@@ -1,0 +1,13 @@
+{
+  "id": "benandante_druido-livello_2-guardare_oltre_velo",
+  "livello": 2,
+  "nome": "guardare_oltre_velo",
+  "tipo": "attivo",
+  "descrizione": "Vede nell'oscurità magica e comune fino a 36m, percepisce non morti entro 18m",
+  "implementazione": {
+    "scurovisione": "system.attributes.senses.darkvision = 120",
+    "trueseeing": "system.attributes.senses.truesight = 120",
+    "percezione_non_morti": "flags.brancalonia-bigat.senseUndead = 60"
+  },
+  "mode": 5
+}

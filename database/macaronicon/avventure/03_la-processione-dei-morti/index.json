@@ -1,0 +1,20 @@
+{
+  "numero": 3,
+  "titolo": "La Processione dei Morti",
+  "pagine": "p.103-109",
+  "livello_consigliato": "3-5",
+  "ambientazione": "Villaggio di Camposanto durante la festa dei morti",
+  "trama_breve": "Durante la processione annuale dei morti, i defunti non tornano alle tombe e iniziano a terrorizzare il villaggio.",
+  "png_principali": [
+    "Fra' Benedetto (prete corrotto)",
+    "Lo Spettro del Conte",
+    "Famiglia di non morti senzienti"
+  ],
+  "ricompense": [
+    "Reliquia sacra",
+    "Gratitudine del villaggio",
+    "Accesso alle catacombe antiche"
+  ],
+  "temi": "Horror gotico, tradizioni popolari",
+  "fonte": "Brancalonia Macaronicon p.89-159"
+}

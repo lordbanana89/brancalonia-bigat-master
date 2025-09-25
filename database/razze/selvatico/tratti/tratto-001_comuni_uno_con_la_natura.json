@@ -1,0 +1,10 @@
+{
+  "id": "race-selvatico-tratto-comuni_uno_con_la_natura",
+  "nome": "Uno Con La Natura",
+  "categoria": "comuni",
+  "dettagli": {
+    "descrizione": "Vantaggio a interagire con piante e animali",
+    "meccanica": "Vantaggio Natura e Addestrare Animali"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

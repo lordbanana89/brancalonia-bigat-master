@@ -1,0 +1,22 @@
+{
+  "id": "mac-spell-014",
+  "livello": 3,
+  "nome": "Processione dei Morti",
+  "scuola": "Necromanzia",
+  "tempo_lancio": "1 minuto",
+  "gittata": "9 metri",
+  "componenti": "V, S, M (terra di cimitero)",
+  "durata": "Concentrazione, fino a 1 ora",
+  "descrizione": "Evochi spiriti di 3 morti che seguono i tuoi comandi semplici. Non combattono ma possono trasportare, cercare o spaventare.",
+  "classi": [
+    "Chierico",
+    "Warlock",
+    "Mago"
+  ],
+  "rituale": true,
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

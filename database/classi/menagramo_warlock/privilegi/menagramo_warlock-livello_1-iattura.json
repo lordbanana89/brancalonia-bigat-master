@@ -1,0 +1,11 @@
+{
+  "id": "menagramo_warlock-livello_1-iattura",
+  "livello": 1,
+  "nome": "iattura",
+  "tipo": "attivo",
+  "descrizione": "Creatura entro 40m che può sentire: svantaggio al prossimo TS contro magia del warlock. 1/riposo breve o lungo",
+  "implementazione": "flags.brancalonia-bigat.iattura = true",
+  "mode": 5,
+  "portata": "40 metri",
+  "usi": "1/riposo breve o lungo"
+}

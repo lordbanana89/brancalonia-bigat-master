@@ -1,0 +1,43 @@
+{
+  "titolo": "Magia Popolare",
+  "pagine": "p.71-76",
+  "tipo": "Sistema magico alternativo",
+  "contenuto": {
+    "descrizione": "Magia basata su superstizioni e tradizioni popolari",
+    "tipi_magia": [
+      {
+        "nome": "Malocchio e Benedizioni",
+        "praticanti": "Fattucchiere, Guaritrici",
+        "componenti": "Gesti, parole, amuleti",
+        "effetti": "Fortuna/sfortuna, protezione, maledizioni minori"
+      },
+      {
+        "nome": "Divinazione Contadina",
+        "praticanti": "Indovini, Cartomanti",
+        "strumenti": "Carte, fondi di vino, interiora",
+        "effetti": "Predire tempo, trovare oggetti, presagi"
+      },
+      {
+        "nome": "Erboristeria Magica",
+        "praticanti": "Speziali, Streghe",
+        "componenti": "Erbe, pozioni, unguenti",
+        "effetti": "Cure, veleni, trasformazioni minori"
+      }
+    ],
+    "superstizioni_attive": [
+      "Ferro contro fatati",
+      "Sale contro spiriti",
+      "Aglio contro vampiri",
+      "Corna contro malocchio",
+      "Croce contro demoni"
+    ],
+    "tabù_magici": [
+      "Non nominare il Diavolo",
+      "Non fischiare di notte",
+      "Non contare le stelle",
+      "Non guardare la luna attraverso vetro",
+      "Non passare sotto scale"
+    ]
+  },
+  "fonte": "Brancalonia Macaronicon p.53-88"
+}

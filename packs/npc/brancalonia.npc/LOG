@@ -1,0 +1,5 @@
+2025/09/26-00:51:33.527028 17981f000 Delete type=3 #1
+2025/09/26-00:51:33.529817 16fcd7000 Level-0 table #5: started
+2025/09/26-00:51:33.530969 16fcd7000 Level-0 table #5: 158284 bytes OK
+2025/09/26-00:51:33.531058 16fcd7000 Delete type=0 #3
+2025/09/26-00:51:33.531132 16fcd7000 Manual compaction at level-0 from '!actors!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!items!viluperac949b2trait2' @ 0 : 0; will stop at (end)

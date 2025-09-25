@@ -1,0 +1,17 @@
+{
+  "id": "032",
+  "nome": "L'Orecchio del Confessore",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Orecchio mummificato in scatola",
+  "proprieta": "Posto contro un muro, permette di sentire attraverso",
+  "maledizione": "Si sentono anche confessioni di peccati casuali",
+  "valore": "350 mo",
+  "storia": "Il confessore vendeva i segreti ai potenti",
+  "maledizione_specifica": "Si sentono anche confessioni di peccati casuali",
+  "implementazione": {
+    "tipo": "maledetto",
+    "attivo": false,
+    "active_effects": []
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "crimine": "Insulto pubblico a autorità",
+    "malefatte": 1,
+    "esempi": "Insultare guardie, bestemmiare in chiesa"
+  },
+  {
+    "crimine": "Furto minore",
+    "malefatte": "1-2",
+    "esempi": "Borseggio, furto sotto 10 mo"
+  },
+  {
+    "crimine": "Rissa in luogo pubblico",
+    "malefatte": 2,
+    "esempi": "Scazzottata in taverna, duello non autorizzato"
+  },
+  {
+    "crimine": "Furto maggiore",
+    "malefatte": "3-5",
+    "esempi": "Furto 10-100 mo, scasso"
+  },
+  {
+    "crimine": "Aggressione a guardia",
+    "malefatte": 5,
+    "esempi": "Attaccare forze dell'ordine"
+  },
+  {
+    "crimine": "Contrabbando",
+    "malefatte": "3-6",
+    "esempi": "Merci illegali, evasione dazi"
+  },
+  {
+    "crimine": "Rapina",
+    "malefatte": "5-8",
+    "esempi": "Rapina a mano armata, estorsione"
+  },
+  {
+    "crimine": "Incendio doloso",
+    "malefatte": "7-10",
+    "esempi": "Bruciare proprietà, campi"
+  },
+  {
+    "crimine": "Brigantaggio",
+    "malefatte": "8-12",
+    "esempi": "Assalto a carovane, pirateria"
+  },
+  {
+    "crimine": "Omicidio comune",
+    "malefatte": "10-15",
+    "esempi": "Uccidere popolano, mercante"
+  },
+  {
+    "crimine": "Eresia",
+    "malefatte": "10-20",
+    "esempi": "Blasfemia pubblica, stregoneria"
+  },
+  {
+    "crimine": "Assassinio nobile",
+    "malefatte": "20-30",
+    "esempi": "Uccidere nobile, chierico alto"
+  },
+  {
+    "crimine": "Tradimento",
+    "malefatte": "25-40",
+    "esempi": "Tradire il Regno, cospirazione"
+  },
+  {
+    "crimine": "Regicidio",
+    "malefatte": "50+",
+    "esempi": "Tentato o riuscito assassinio reale"
+  }
+]

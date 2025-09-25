@@ -1,0 +1,42 @@
+{
+  "titolo": "Esplorazione e Vita nel Regno",
+  "descrizione": "Strumenti narrativi per movimentare il tempo di Sbraco, i viaggi e le soste delle canaglie nella quotidianita brancalonica.",
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "61-87"
+  },
+  "sezioni": [
+    {
+      "nome": "Bagordi (Sbraco)",
+      "pagine": "61-63",
+      "file": "bagordi/index.json",
+      "stato": "completo",
+      "riassunto": "Regole complete sui bagordi: costi per insediamento, istruzioni di lancio con Nomea e tabella 1d20 'Botte da Orbi e Bisacce Sfondate'."
+    },
+    {
+      "nome": "Generatore di bettole",
+      "pagine": "83-85",
+      "file": "generatore_bettole/index.json",
+      "stato": "completo",
+      "riassunto": "Tabelle per tipologia, nomi, tenutari, particolarita, specialita e bevande; utilizzabili per creare taverne brancaloniche."
+    },
+    {
+      "nome": "Strade che non vanno da nessuna parte",
+      "pagine": "86-87",
+      "stato": "completo",
+      "riassunto": "Quattro passaggi (tipo, accesso, incontri, destinazione) per generare una strada misteriosa.",
+      "note": "Tabelle pronte per RollTable Foundry.",
+      "file": "strade_misteriose/index.json"
+    },
+    {
+      "nome": "Condotta del Condottiero",
+      "pagine": "71-82",
+      "stato": "parziale",
+      "riassunto": "Generatori e suggerimenti per i Condottieri; include la tabella 1d50 dei Cimeli e il resto del capitolo narrativo.",
+      "note": "Tabella dei cimeli digitalizzata; il resto della sezione rimane testuale/da trasformare in journal se serve.",
+      "file": "condotta/index.json"
+    }
+  ],
+  "stato": "parziale",
+  "note": "Strade misteriose completate; condotta contiene gia il generatore di cimeli ma resta materiale narrativo da convertire solo se necessario."
+}

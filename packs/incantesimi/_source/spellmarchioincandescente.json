@@ -1,0 +1,113 @@
+{
+  "_id": "spellmarchioincandescente3f97cc",
+  "_key": "!item!spellmarchioincandescente3f97cc",
+  "name": "Marchio Incandescente",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>L'incantatore sceglie una creatura entro gittata e che egli sia in grado di vedere e la marchia con il simbolo del fuoco. Finché l'incantesimo non termina, l'incantatore infligge 1d6 danni da fuoco extra al bersaglio ogni volta che lo colpisce con un attacco con un'arma. Finché l'incantesimo non termina, la creatura proietta luce intensa entro un raggio di 6 metri e luce fioca per altri 6 metri.</p><h3>Ai Livelli Superiori</h3><p>Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 2° livello o superiore, i danni aumentano di 1d6 per ogni slot di livello superiore al 1°.</p><h3>Note per il DM</h3><p><em>Marchio Incandescente è versione Brancalonia di Hunter's Mark con twist fire/light. Ottimo per ranger piromani. Luce può essere tattica.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.52",
+    "level": 1,
+    "school": "trs",
+    "components": {
+      "vocal": true,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": 90,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-marchio-incandescente",
+      "fonte": "Brancalonia Macaronicon p.52",
+      "note_dm": "Marchio Incandescente è versione Brancalonia di Hunter's Mark con twist fire/light. Ottimo per ranger piromani. Luce può essere tattica.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "attivazione": "bonus",
+        "range": 90,
+        "durata": "1 hour",
+        "concentrazione": true
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Trasmutazione",
+        "level": 1
+      }
+    }
+  }
+}

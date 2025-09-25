@@ -1,0 +1,20 @@
+{
+  "id": "arma-std-003",
+  "nome": "Grande Randello",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "2 ma",
+  "danni": "1d8 contundenti",
+  "proprieta": [
+    "Due Mani"
+  ],
+  "peso": "4.5 kg",
+  "descrizione": "Massiccio randello ricavato da un tronco di legno, richiede entrambe le mani.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

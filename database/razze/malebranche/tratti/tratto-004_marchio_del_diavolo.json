@@ -1,0 +1,16 @@
+{
+  "id": "race-malebranche-tratto-marchio_del_diavolo",
+  "nome": "Marchio Del Diavolo",
+  "categoria": "brancalonia",
+  "dettagli": {
+    "descrizione": "Segno visibile dell'eredità (corna, coda, occhi)",
+    "esempi": [
+      "Piccole corna",
+      "Coda prensile",
+      "Occhi rossi o gialli",
+      "Pelle rossastra",
+      "Zoccoli invece di piedi"
+    ]
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

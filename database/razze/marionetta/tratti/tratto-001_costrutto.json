@@ -1,0 +1,14 @@
+{
+  "id": "race-marionetta-tratto-costrutto",
+  "nome": "Costrutto",
+  "categoria": "base",
+  "dettagli": {
+    "descrizione": "Non necessiti aria, cibo, acqua o sonno",
+    "immunita": [
+      "Veleno",
+      "Malattie"
+    ],
+    "limitazione": "Non benefici da cure magiche normali"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

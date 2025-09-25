@@ -1,0 +1,16 @@
+{
+  "id": "gear-kit-005",
+  "nome": "Strumento Musicale (Generico)",
+  "categoria": "oggetto_comune",
+  "sottotipo": "kit_e_strumenti",
+  "costo": "30 mo",
+  "peso": "1.5 kg",
+  "descrizione": "Liuto, flauto, cornamusa o altro strumento tipico dei cantastorie.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

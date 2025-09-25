@@ -1,0 +1,19 @@
+{
+  "_id": "rissabasearmi",
+  "_key": "!journal!rissabasearmi",
+  "name": "armi",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-base-armi",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "JournalEntry"
+}

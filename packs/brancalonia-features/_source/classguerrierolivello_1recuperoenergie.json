@@ -1,0 +1,72 @@
+{
+  "_id": "classguerrierolivello1recuperoenergie129161",
+  "_key": "!item!classguerrierolivello1recuperoenergie129161",
+  "name": "Recupero Energie",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Hai una riserva di resistenza limitata a cui puoi attingere per proteggerti dai danni. Nel tuo turno, puoi usare un'azione bonus per riguadagnare punti ferita pari a 1d10 + il tuo livello da guerriero. Una volta usato questo privilegio, devi completare un riposo breve o lungo prima di poterlo usare di nuovo.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-guerriero-livello_1-recupero-energie",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72"
+    }
+  }
+}

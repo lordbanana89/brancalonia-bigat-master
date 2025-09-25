@@ -1,0 +1,51 @@
+{
+  "totale": 9,
+  "cammini": [
+    {
+      "id": "class-mago-scuola-abiurazione",
+      "nome": "Scuola di Abiurazione",
+      "file": "class-mago-scuola-abiurazione.json"
+    },
+    {
+      "id": "class-mago-scuola-evocazione",
+      "nome": "Scuola di Evocazione",
+      "file": "class-mago-scuola-evocazione.json"
+    },
+    {
+      "id": "class-mago-scuola-divinazione",
+      "nome": "Scuola di Divinazione",
+      "file": "class-mago-scuola-divinazione.json"
+    },
+    {
+      "id": "class-mago-scuola-ammaliamento",
+      "nome": "Scuola di Ammaliamento",
+      "file": "class-mago-scuola-ammaliamento.json"
+    },
+    {
+      "id": "class-mago-scuola-invocazione",
+      "nome": "Scuola di Invocazione",
+      "file": "class-mago-scuola-invocazione.json"
+    },
+    {
+      "id": "class-mago-scuola-illusione",
+      "nome": "Scuola di Illusione",
+      "file": "class-mago-scuola-illusione.json"
+    },
+    {
+      "id": "class-mago-scuola-necromanzia",
+      "nome": "Scuola di Necromanzia",
+      "file": "class-mago-scuola-necromanzia.json"
+    },
+    {
+      "id": "class-mago-scuola-trasmutazione",
+      "nome": "Scuola di Trasmutazione",
+      "file": "class-mago-scuola-trasmutazione.json"
+    },
+    {
+      "id": "guiscardo_mago",
+      "nome": "Tradizione dei Guiscardi",
+      "file": "../guiscardo_mago/index.json",
+      "nota": "Nuova tradizione di Brancalonia"
+    }
+  ]
+}

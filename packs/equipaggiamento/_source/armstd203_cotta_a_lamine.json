@@ -1,0 +1,67 @@
+{
+  "_id": "armstd203cottaalamine3a6533",
+  "_key": "!item!armstd203cottaalamine3a6533",
+  "name": "Cotta a Lamine",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Piastre metalliche lunghe sovrapposte e fissate su cuoio.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 27.2,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "armor",
+      "subtype": "light",
+      "baseItem": ""
+    },
+    "armor": {
+      "value": 17,
+      "type": "light",
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": "15",
+    "stealth": false,
+    "proficient": true,
+    "properties": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arm-std-203",
+      "categoria": "armatura_standard",
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "categoria": "Provviste e Equipaggiamento da Avventura",
+  "totale": 16,
+  "elementi": [
+    {
+      "id": "gear-001",
+      "nome": "Razioni (1 giorno)",
+      "file": "gear-001_razioni_1_giorno.json"
+    },
+    {
+      "id": "gear-002",
+      "nome": "Otre",
+      "file": "gear-002_otre.json"
+    },
+    {
+      "id": "gear-003",
+      "nome": "Corda di Canapa (15 m)",
+      "file": "gear-003_corda_di_canapa_15_m.json"
+    },
+    {
+      "id": "gear-004",
+      "nome": "Corda di Seta (15 m)",
+      "file": "gear-004_corda_di_seta_15_m.json"
+    },
+    {
+      "id": "gear-005",
+      "nome": "Torcia",
+      "file": "gear-005_torcia.json"
+    },
+    {
+      "id": "gear-006",
+      "nome": "Lanterna Schermata",
+      "file": "gear-006_lanterna_schermata.json"
+    },
+    {
+      "id": "gear-007",
+      "nome": "Olio (fiaschetta)",
+      "file": "gear-007_olio_fiaschetta.json"
+    },
+    {
+      "id": "gear-008",
+      "nome": "Zaino",
+      "file": "gear-008_zaino.json"
+    },
+    {
+      "id": "gear-009",
+      "nome": "Sacco",
+      "file": "gear-009_sacco.json"
+    },
+    {
+      "id": "gear-010",
+      "nome": "Gancio da Arrampicata",
+      "file": "gear-010_gancio_da_arrampicata.json"
+    },
+    {
+      "id": "gear-011",
+      "nome": "Martello",
+      "file": "gear-011_martello.json"
+    },
+    {
+      "id": "gear-012",
+      "nome": "Chiodi da Arrampicata (10)",
+      "file": "gear-012_chiodi_da_arrampicata_10.json"
+    },
+    {
+      "id": "gear-013",
+      "nome": "Kit da Scalata",
+      "file": "gear-013_kit_da_scalata.json"
+    },
+    {
+      "id": "gear-014",
+      "nome": "Tenda per Due Persone",
+      "file": "gear-014_tenda_per_due_persone.json"
+    },
+    {
+      "id": "gear-015",
+      "nome": "Coperta da Viaggio",
+      "file": "gear-015_coperta_da_viaggio.json"
+    },
+    {
+      "id": "gear-016",
+      "nome": "Pelle d Acqua",
+      "file": "gear-016_pelle_d_acqua.json"
+    }
+  ]
+}

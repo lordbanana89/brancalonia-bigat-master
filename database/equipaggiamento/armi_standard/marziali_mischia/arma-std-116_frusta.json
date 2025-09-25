@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-116",
+  "nome": "Frusta",
+  "categoria": "arma_standard",
+  "tipo": "marziale_mischia",
+  "costo": "2 mo",
+  "danni": "1d4 taglienti",
+  "proprieta": [
+    "Accurata",
+    "Portata"
+  ],
+  "peso": "1.4 kg",
+  "descrizione": "Lunga frusta intrecciata per colpire a distanza ravvicinata.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

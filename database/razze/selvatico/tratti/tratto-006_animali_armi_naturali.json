@@ -1,0 +1,10 @@
+{
+  "id": "race-selvatico-tratto-animali_armi_naturali",
+  "nome": "Armi Naturali",
+  "categoria": "animali",
+  "dettagli": {
+    "descrizione": "Artigli o morso che fanno 1d4 + For danni",
+    "tipo": "Taglienti (artigli) o perforanti (morso)"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

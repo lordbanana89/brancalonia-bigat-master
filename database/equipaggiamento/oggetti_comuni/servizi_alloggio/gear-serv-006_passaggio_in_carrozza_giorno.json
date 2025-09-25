@@ -1,0 +1,16 @@
+{
+  "id": "gear-serv-006",
+  "nome": "Passaggio in Carrozza (giorno)",
+  "categoria": "oggetto_comune",
+  "sottotipo": "servizi_alloggio",
+  "costo": "2 mo",
+  "peso": "—",
+  "descrizione": "Trasporto cittadino con carrozza pubblica, spazio limitato ai bagagli.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

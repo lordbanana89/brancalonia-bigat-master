@@ -1,0 +1,12 @@
+{
+  "id": "arlecchino_bardo-livello_6-silenzio_in_sala",
+  "livello": 6,
+  "nome": "silenzio_in_sala",
+  "tipo": "attivo",
+  "descrizione": "Lancia Silenzio CAR volte, sostituisce componenti verbali con somatiche, ispirazione funziona con vista",
+  "implementazione": {
+    "silenzio_usi": "flags.brancalonia-bigat.silenzioUses = '@abilities.cha.mod'",
+    "componenti": "flags.brancalonia-bigat.sostituisciComponenti = true"
+  },
+  "mode": 5
+}

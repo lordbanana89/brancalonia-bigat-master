@@ -1,0 +1,26 @@
+{
+  "totale": 4,
+  "cammini": [
+    {
+      "id": "class-monaco-via-mano_aperta",
+      "nome": "Via della Mano Aperta",
+      "file": "class-monaco-via-mano_aperta.json"
+    },
+    {
+      "id": "class-monaco-via-ombra",
+      "nome": "Via dell'Ombra",
+      "file": "class-monaco-via-ombra.json"
+    },
+    {
+      "id": "class-monaco-via-quattro_elementi",
+      "nome": "Via dei Quattro Elementi",
+      "file": "class-monaco-via-quattro_elementi.json"
+    },
+    {
+      "id": "frate_monaco",
+      "nome": "Via dei Frati Coatti",
+      "file": "../frate_monaco/index.json",
+      "nota": "Tradizione monastica di Brancalonia"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "classe": "miracolaro_chierico",
+  "categoria": "Privilegi Generali",
+  "totale": 5,
+  "privilegi": [
+    {
+      "id": "class-chierico-livello_1-incantesimi",
+      "nome": "Miracoli Divini",
+      "file": "class-chierico-livello_1-incantesimi.json",
+      "livello": 1
+    },
+    {
+      "id": "class-chierico-livello_1-dominio-divino",
+      "nome": "Via del Miracolaro",
+      "file": "class-chierico-livello_1-dominio-divino.json",
+      "livello": 1
+    },
+    {
+      "id": "class-chierico-livello_2-incanalare-divinita",
+      "nome": "Potere dei Santi",
+      "file": "class-chierico-livello_2-incanalare-divinita.json",
+      "livello": 2
+    },
+    {
+      "id": "class-chierico-livello_5-distruggere-non-morti",
+      "nome": "Purificare i Dannati",
+      "file": "class-chierico-livello_5-distruggere-non-morti.json",
+      "livello": 5
+    },
+    {
+      "id": "class-chierico-livello_10-intervento-divino",
+      "nome": "Miracolo dei Santi",
+      "file": "class-chierico-livello_10-intervento-divino.json",
+      "livello": 10
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "_id": "spelloscuritaf7c36d",
+  "_key": "!item!spelloscuritaf7c36d",
+  "name": "Oscurità",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Oscurità magica si diffonde da un punto che scegli entro gittata per riempire una sfera del raggio di 15 piedi per la durata. L'oscurità si diffonde attorno agli angoli. Una creatura con scurovisione non può vedere attraverso questa oscurità, e luce non magica non può illuminarla. Se il punto che scegli è su un oggetto che stai tenendo o uno che non è indossato o trasportato, l'oscurità emana dall'oggetto e si muove con esso. Coprire completamente la fonte dell'oscurità con un oggetto opaco blocca l'oscurità. Se qualsiasi area di questo incantesimo si sovrappone con un'area di luce creata da un incantesimo di 2° livello o inferiore, l'incantesimo che ha creato la luce è dissolto.</p><h3>Note per il DM</h3><p><em>Darkness è controllo battlefield potente. Blocca anche darkvision è chiave. Devil's Sight combo può dominare.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.230",
+    "level": 2,
+    "school": "con",
+    "components": {
+      "vocal": true,
+      "somatic": false,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-oscurita",
+      "fonte": "D&D 5e PHB p.230",
+      "note_dm": "Darkness è controllo battlefield potente. Blocca anche darkvision è chiave. Devil's Sight combo può dominare.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "attivazione": "action",
+        "range": 60,
+        "area": "15 ft radius sphere",
+        "durata": "10 minutes",
+        "concentrazione": true
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Invocazione",
+        "level": 2
+      }
+    }
+  }
+}

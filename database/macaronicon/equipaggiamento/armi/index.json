@@ -1,0 +1,18 @@
+{
+  "categoria": "armi",
+  "fonte": "Brancalonia Macaronicon p.46",
+  "descrizione": "Nuove armi improvvisate da tombaroli e monaci combattenti",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "mac-armi-001",
+      "nome": "Lanterna d'Arme",
+      "file": "mac-armi-001_lanterna_darme.json"
+    },
+    {
+      "id": "mac-armi-002",
+      "nome": "Vanga d'Arme",
+      "file": "mac-armi-002_vanga_darme.json"
+    }
+  ]
+}

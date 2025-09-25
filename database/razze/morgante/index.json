@@ -1,0 +1,27 @@
+{
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione_globale": "Dettagli meccanici completi di tutte le razze giocabili",
+  "nome": "Morgante",
+  "altri_nomi": "Gigante, Orco civilizzato",
+  "descrizione": "Discendenti di giganti e orchi, grandi e forti",
+  "aumento_caratteristiche": {
+    "forza": "+2",
+    "costituzione": "+1"
+  },
+  "eta": {
+    "maturita": "14 anni",
+    "vita_media": "75 anni"
+  },
+  "allineamento": "Tendenza caotica, spesso neutrali",
+  "taglia": "Media (al limite con Grande)",
+  "velocita": "9 metri",
+  "scurovisione": "18 metri",
+  "linguaggi": [
+    "Comune",
+    "Gigante"
+  ],
+  "limitazioni": "Difficoltà con equipaggiamento di taglia normale, costi extra",
+  "collegamenti": {
+    "tratti": "tratti/index.json"
+  }
+}

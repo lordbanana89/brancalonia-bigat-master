@@ -1,0 +1,16 @@
+{
+  "id": "040",
+  "nome": "L'Anello Spezzato",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Due metà di un anello nuziale",
+  "proprieta": "Chi possiede entrambe le metà può controllare chi indossa una metà",
+  "valore": "300 mo per metà",
+  "storia": "Gli amanti furono divisi dalla guerra",
+  "tragedia": "Le metà si respingono magneticamente",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

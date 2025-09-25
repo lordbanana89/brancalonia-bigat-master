@@ -1,0 +1,20 @@
+{
+  "id": "scadente-003",
+  "nome": "Armature Scadenti",
+  "categoria": "equipaggiamento_scadente",
+  "costo_relativo": "1/10 del prezzo standard",
+  "descrizione": "Corazze arrugginite, cuoi induriti e scudi sgangherati pronti a cadere a pezzi.",
+  "effetti_meccanici": {
+    "malus": "Quando subisci un colpo con 20 naturale, la CA si riduce di 2 (lo scudo scadente è il primo a volare via).",
+    "recupero": "Serve recuperare i pezzi e spendere un'azione per riassestarla."
+  },
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "62-63"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  },
+  "dettagli": "Queste armature cadono a pezzi: ogni volta che un personaggio viene colpito con un 20 naturale, un pezzo di armatura vola via e la CA cala di 2 (lo scudo è il primo a partire). L'effetto dura finché il personaggio non recupera i pezzi perduti e usa un'azione per sistemarli."
+}

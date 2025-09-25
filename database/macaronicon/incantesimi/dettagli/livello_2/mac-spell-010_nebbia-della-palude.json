@@ -1,0 +1,22 @@
+{
+  "id": "mac-spell-010",
+  "livello": 2,
+  "nome": "Nebbia della Palude",
+  "scuola": "Evocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "36 metri",
+  "componenti": "V, S, M (acqua stagnante)",
+  "durata": "Concentrazione, fino a 1 ora",
+  "descrizione": "Crei nebbia malsana in 6m di raggio. Area pesantemente oscurata. Creature che iniziano turno dentro: TS Costituzione o avvelenate.",
+  "classi": [
+    "Druido",
+    "Stregone",
+    "Warlock"
+  ],
+  "rituale": false,
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

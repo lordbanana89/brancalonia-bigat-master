@@ -1,0 +1,15 @@
+{
+  "id": "027",
+  "nome": "L'Elmetto del Soldato Sconosciuto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Elmetto ammaccato senza insegne",
+  "proprieta": "Chi lo indossa viene dimenticato appena esce dalla vista",
+  "valore": "600 mo",
+  "storia": "Il soldato salvò il Regno ma nessuno lo ricorda",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

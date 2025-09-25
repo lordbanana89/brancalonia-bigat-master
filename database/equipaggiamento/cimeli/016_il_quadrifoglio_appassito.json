@@ -1,0 +1,16 @@
+{
+  "id": "016",
+  "nome": "Il Quadrifoglio Appassito",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Quadrifoglio secco in ampolla di vetro",
+  "proprieta": "Una volta al giorno, puoi ritirare un tiro di dado",
+  "valore": "777 mo",
+  "storia": "L'uomo più fortunato del mondo morì il giorno che lo trovò",
+  "limite": "Dopo 7 usi si sbriciola",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": true,
+    "active_effects": []
+  }
+}

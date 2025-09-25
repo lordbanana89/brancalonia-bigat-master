@@ -1,0 +1,21 @@
+{
+  "livello": 3,
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "mac-spell-012",
+      "nome": "Apparizione Divina",
+      "file": "mac-spell-012_apparizione-divina.json"
+    },
+    {
+      "id": "mac-spell-013",
+      "nome": "Maledizione del Gufo",
+      "file": "mac-spell-013_maledizione-del-gufo.json"
+    },
+    {
+      "id": "mac-spell-014",
+      "nome": "Processione dei Morti",
+      "file": "mac-spell-014_processione-dei-morti.json"
+    }
+  ]
+}

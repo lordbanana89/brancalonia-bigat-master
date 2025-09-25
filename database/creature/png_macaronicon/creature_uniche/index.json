@@ -1,0 +1,16 @@
+{
+  "categoria": "creature_uniche",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "creature_uniche-001",
+      "nome": "Il Gatto Mammone",
+      "file": "creature_uniche-001_il-gatto-mammone.json"
+    },
+    {
+      "id": "creature_uniche-002",
+      "nome": "Lo Scarrafone d'Oro",
+      "file": "creature_uniche-002_lo-scarrafone-d-oro.json"
+    }
+  ]
+}

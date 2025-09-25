@@ -1,0 +1,359 @@
+{
+  "tabella": [
+    {
+      "livello": 1,
+      "bonus_competenza": 2,
+      "slot_incantesimo": {},
+      "privilegi": [
+        {
+          "id": "class-ranger-livello_1-nemico-prescelto",
+          "nome": "Nemico Prescelto",
+          "file": "../privilegi_generali/class-ranger-livello_1-nemico-prescelto.json"
+        },
+        {
+          "id": "class-ranger-livello_1-esploratore-nato",
+          "nome": "Esploratore Nato",
+          "file": "../privilegi_generali/class-ranger-livello_1-esploratore-nato.json"
+        }
+      ]
+    },
+    {
+      "livello": 2,
+      "bonus_competenza": 2,
+      "slot_incantesimo": {
+        "1": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Incantesimi da Ranger",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Spellcasting (Ranger)"
+          }
+        },
+        {
+          "id": "class-ranger-livello_2-stile-combattimento",
+          "nome": "Stile di Combattimento",
+          "file": "../privilegi_generali/class-ranger-livello_2-stile-combattimento.json"
+        }
+      ]
+    },
+    {
+      "livello": 3,
+      "bonus_competenza": 2,
+      "slot_incantesimo": {
+        "1": 3
+      },
+      "privilegi": [
+        {
+          "id": "class-ranger-livello_3-archetipo-ranger",
+          "nome": "Archetipo del Ranger",
+          "file": "../privilegi_generali/class-ranger-livello_3-archetipo-ranger.json"
+        },
+        {
+          "id": "class-ranger-livello_3-consapevolezza-primordiale",
+          "nome": "Consapevolezza Primordiale",
+          "file": "../privilegi_generali/class-ranger-livello_3-consapevolezza-primordiale.json"
+        }
+      ]
+    },
+    {
+      "livello": 4,
+      "bonus_competenza": 2,
+      "slot_incantesimo": {
+        "1": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 5,
+      "bonus_competenza": 3,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 2
+      },
+      "privilegi": [
+        {
+          "id": "class-ranger-livello_5-attacco-extra",
+          "nome": "Attacco Extra",
+          "file": "../privilegi_generali/class-ranger-livello_5-attacco-extra.json"
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "bonus_competenza": 3,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 2
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 7,
+      "bonus_competenza": 3,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Privilegio dell'Archetipo",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ranger Archetype Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 8,
+      "bonus_competenza": 3,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 9,
+      "bonus_competenza": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 10,
+      "bonus_competenza": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Nascondersi alla Luce",
+          "fonte": "Manuale del Giocatore p.91",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Hide in Plain Sight"
+          }
+        },
+        {
+          "nome": "Privilegio dell'Archetipo",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ranger Archetype Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 11,
+      "bonus_competenza": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Privilegio dell'Archetipo",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ranger Archetype Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 12,
+      "bonus_competenza": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 13,
+      "bonus_competenza": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 14,
+      "bonus_competenza": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Svanire",
+          "fonte": "Manuale del Giocatore p.91",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Vanish"
+          }
+        },
+        {
+          "nome": "Privilegio dell'Archetipo",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ranger Archetype Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 15,
+      "bonus_competenza": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 16,
+      "bonus_competenza": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 17,
+      "bonus_competenza": 6,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 18,
+      "bonus_competenza": 6,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Sensi Ferali",
+          "fonte": "Manuale del Giocatore p.91",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Feral Senses"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 19,
+      "bonus_competenza": 6,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.90",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 20,
+      "bonus_competenza": 6,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Cacciatore Supremo",
+          "fonte": "Manuale del Giocatore p.91",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Foe Slayer"
+          }
+        }
+      ]
+    }
+  ]
+}

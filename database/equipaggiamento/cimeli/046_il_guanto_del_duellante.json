@@ -1,0 +1,16 @@
+{
+  "id": "046",
+  "nome": "Il Guanto del Duellante",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Guanto bianco macchiato di sangue",
+  "proprieta": "Chi viene schiaffeggiato deve accettare la sfida o subire -4 Carisma per 1 mese",
+  "valore": "400 mo",
+  "storia": "Il duellante morì al suo 100° duello",
+  "onore": "Il possessore non può rifiutare sfide",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

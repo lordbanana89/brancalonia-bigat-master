@@ -1,0 +1,49 @@
+{
+  "id": "class-paladino-giuramento-devozione",
+  "nome": "Giuramento di Devozione",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Canalizzare Divinità: Arma Sacra",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Sacred Weapon"
+        }
+      },
+      {
+        "nome": "Canalizzare Divinità: Bandire il Profano",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Turn the Unholy"
+        }
+      }
+    ],
+    "livello_7": [
+      {
+        "nome": "Aura della Devozione",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Aura of Devotion"
+        }
+      }
+    ],
+    "livello_15": [
+      {
+        "nome": "Purità dello Spirito",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Purity of Spirit"
+        }
+      }
+    ],
+    "livello_20": [
+      {
+        "nome": "Nimbus Sacro",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Holy Nimbus"
+        }
+      }
+    ]
+  }
+}

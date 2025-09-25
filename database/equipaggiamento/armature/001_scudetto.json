@@ -1,0 +1,20 @@
+{
+  "id": "armatura-base-001",
+  "nome": "Scudetto",
+  "categoria": "armatura",
+  "tipo": "scudo",
+  "bonus_ca": "+1",
+  "costo": "5 mo",
+  "peso": "1.5 kg",
+  "proprieta": ["Speciale"],
+  "descrizione": "Piccolo scudo da parata ornato con le insegne di una città dedita al Calcio Draconiano.",
+  "note_meccaniche": "+1 alle prove di Carisma con gli abitanti della città a cui è consacrato.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "estratto_da": "manuale_brancalonia.txt",
+    "stato": "da_validare"
+  }
+}

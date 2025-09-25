@@ -1,0 +1,20 @@
+{
+  "numero": 9,
+  "titolo": "La Nave Fantasma",
+  "pagine": "p.145-151",
+  "livello_consigliato": "5-7",
+  "ambientazione": "Costa e mare aperto",
+  "trama_breve": "Una nave fantasma appare nel porto, portando peste e maledizioni. I personaggi devono salire a bordo.",
+  "png_principali": [
+    "Capitano Barbablù (non morto)",
+    "Equipaggio fantasma",
+    "La Sirena Nera"
+  ],
+  "ricompense": [
+    "Nave (se purificata)",
+    "Tesoro dei pirati",
+    "Mappa di isola segreta"
+  ],
+  "atmosfera": "Horror marinaro, maledizioni",
+  "fonte": "Brancalonia Macaronicon p.89-159"
+}

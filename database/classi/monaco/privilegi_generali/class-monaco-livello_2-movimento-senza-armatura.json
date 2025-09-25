@@ -1,0 +1,92 @@
+{
+  "id": "class-monaco-livello_2-movimento-senza-armatura",
+  "nome": "Movimento Senza Armatura",
+  "nome_brancalonia": "Passo del Vento",
+  "livello": 2,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 2° livello, la tua velocità aumenta di 10 piedi mentre non indossi armatura e non usi scudo. Questo bonus aumenta quando raggiungi certi livelli da monaco.",
+  "meccaniche": {
+    "requisiti": "No armatura, no scudo",
+    "bonus_velocità": {
+      "livello_2": "+10 ft",
+      "livello_6": "+15 ft",
+      "livello_10": "+20 ft",
+      "livello_14": "+25 ft",
+      "livello_18": "+30 ft"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "speed_bonus",
+    "scala_con_livello": true,
+    "condizione": "No armor/shield"
+  },
+  "velocità_totali": {
+    "razza_30ft": {
+      "livello_2": "40 ft",
+      "livello_6": "45 ft",
+      "livello_10": "50 ft",
+      "livello_14": "55 ft",
+      "livello_18": "60 ft"
+    },
+    "razza_35ft_elf": {
+      "livello_2": "45 ft",
+      "livello_10": "55 ft",
+      "livello_18": "65 ft"
+    }
+  },
+  "confronto_movimento": {
+    "vs_dash_action": "Monaco sempre veloce senza azione",
+    "vs_horse": "Livello 18 monaco = cavallo da guerra",
+    "vs_haste": "Stack con haste per 120ft+",
+    "vs_altre_classi": "Nessuna classe eguaglia base"
+  },
+  "vantaggi_tattici": {
+    "kiting": "Colpisci e scappa senza opportunity",
+    "chase": "Raggiunge/fugge da chiunque",
+    "positioning": "Sempre posizione ottimale",
+    "battlefield_control": "Copre tutto il campo"
+  },
+  "sinergie": {
+    "mobile_feat": "+10 extra = 70ft al 18°",
+    "longstrider": "+10 = 70ft al 18°",
+    "haste": "Raddoppia velocità",
+    "boots_of_speed": "Raddoppia per 10 min"
+  },
+  "step_of_wind_combo": {
+    "dash": "Movimento ×2 + bonus dash",
+    "livello_2": "40ft base = 120ft totale",
+    "livello_18": "60ft base = 180ft totale!"
+  },
+  "calcoli_pratici": {
+    "round_movimento": {
+      "normale": "Muovi + attacca + muovi",
+      "con_mobile": "Nessun opportunity attack",
+      "tattica": "Hit and run perfetto"
+    },
+    "copertura_area": {
+      "livello_10": "100ft diametro minaccia",
+      "livello_18": "120ft diametro controllo"
+    }
+  },
+  "limitazioni": {
+    "terreno_difficile": "Dimezza come normale",
+    "indoor": "Spazio limita utilità",
+    "no_volo": "Solo movimento terra (base)"
+  },
+  "wall_running_preview": {
+    "livello_9": "Corri su muri/acqua",
+    "combo": "60ft verticale al 18°"
+  },
+  "errori_comuni": {
+    "dimenticare_bonus": "Non aggiungere speed",
+    "armor_tentazione": "Indossare armor = perde bonus",
+    "non_sfruttare": "Stare fermo in combat"
+  },
+  "narrazione_brancalonia": {
+    "leggerezza": "Muove come foglia nel vento",
+    "grazia": "Passi di danza mortale",
+    "velocità": "Sfocato agli occhi nemici"
+  },
+  "note_dm": "Unarmored Movement rende il monaco il più mobile del gioco. A livelli alti, copre distanze enormi. Combina con terrain verticale per massimo effetto.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78"
+}

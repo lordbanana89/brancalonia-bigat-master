@@ -1,0 +1,21 @@
+{
+  "categoria": "mostri_maggiori",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "mostri_maggiori-001",
+      "nome": "Drago delle Paludi (Tarantasio Minore)",
+      "file": "mostri_maggiori-001_drago-delle-paludi-tarantasio-minore.json"
+    },
+    {
+      "id": "mostri_maggiori-002",
+      "nome": "Cavaliere Senza Testa",
+      "file": "mostri_maggiori-002_cavaliere-senza-testa.json"
+    },
+    {
+      "id": "mostri_maggiori-003",
+      "nome": "Strega della Palude",
+      "file": "mostri_maggiori-003_strega-della-palude.json"
+    }
+  ]
+}

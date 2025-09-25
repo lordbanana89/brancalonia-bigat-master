@@ -1,0 +1,6 @@
+{
+  "descrizione": "Ricompensa offerta per la cattura basata sulle Malefatte accumulate",
+  "calcolo": "Malefatte × 10 = Taglia base in monete d'oro",
+  "malefatte_to_taglia": null,
+  "fonte": "Brancalonia Manuale Base"
+}

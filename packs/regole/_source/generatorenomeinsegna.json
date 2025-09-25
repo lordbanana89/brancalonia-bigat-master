@@ -1,0 +1,22 @@
+{
+  "_id": "generatorenomeinsegna",
+  "_key": "!journal!generatorenomeinsegna",
+  "name": "Nome e insegna",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "generatore-bettole-nome-insegna",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "83"
+      }
+    }
+  },
+  "type": "JournalEntry"
+}

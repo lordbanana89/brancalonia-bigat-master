@@ -1,0 +1,34 @@
+{
+  "nome": "Brigante",
+  "classe_base": "Ladro",
+  "fonte": "Manuale Base p.23",
+  "descrizione": "Banditi e ladroni di strada, maestri di agguati e imboscate",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Archetipo Ladresco",
+  "validazione": {
+    "implementato": true,
+    "file_id": "brigante_arte_imboscata",
+    "compendio": "brancalonia-features"
+  },
+  "privilegi": {
+    "totale": 2,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "id": "brigante_ladro-livello_3-arte_imboscata",
+          "nome": "arte_imboscata",
+          "file": "privilegi/brigante_ladro-livello_3-arte_imboscata.json"
+        },
+        {
+          "id": "brigante_ladro-livello_3-brigantaggio",
+          "nome": "brigantaggio",
+          "file": "privilegi/brigante_ladro-livello_3-brigantaggio.json"
+        }
+      ]
+    }
+  ]
+}

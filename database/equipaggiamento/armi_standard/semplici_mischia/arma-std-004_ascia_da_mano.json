@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-004",
+  "nome": "Ascia da Mano",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "5 mo",
+  "danni": "1d6 taglienti",
+  "proprieta": [
+    "Leggera",
+    "Lancio (6/18 m)"
+  ],
+  "peso": "0.9 kg",
+  "descrizione": "Ascia compatta da lanciare o usare in mischia.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

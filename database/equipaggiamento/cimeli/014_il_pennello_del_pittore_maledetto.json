@@ -1,0 +1,17 @@
+{
+  "id": "014",
+  "nome": "Il Pennello del Pittore Maledetto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Pennello che gocciola sempre vernice rossa",
+  "proprieta": "Dipinti sembrano vivi, soggetti si muovono",
+  "maledizione": "I ritratti invecchiano al posto del soggetto",
+  "valore": "750 mo",
+  "storia": "Il pittore dipinse il Diavolo dal vero",
+  "maledizione_specifica": "I ritratti invecchiano al posto del soggetto",
+  "implementazione": {
+    "tipo": "maledetto",
+    "attivo": false,
+    "active_effects": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mostri_minori-001",
+  "nome": "Cane Infernale di Quartiere",
+  "grado_sfida": "1",
+  "tipo": "Immondo",
+  "descrizione": "Cane randagio posseduto da spirito minore",
+  "pf": "22",
+  "ca": "13",
+  "attacchi": "Morso 1d6+2 danni da fuoco",
+  "abilita_speciali": "Immune al fuoco, Fiuta il peccato",
+  "debolezze": "Acqua santa lo danneggia doppio",
+  "fonte": "Brancalonia Macaronicon p.160-172"
+}

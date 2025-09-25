@@ -1,0 +1,18 @@
+{
+  "id": "mac-obj-007",
+  "nome": "Veleno Spritzabudella",
+  "categoria": "veleno",
+  "tipo": "ingestione",
+  "costo": "180 mo",
+  "peso": "-",
+  "descrizione": "Mistura di arsenico e viscere di maiale, famigerata e crudele nel Regno.",
+  "note_meccaniche": "TS Costituzione CD 15. Fallimento: 2d6 danni da veleno e condizione avvelenato. La creatura ripete il TS ogni 24 ore; con ogni fallimento subisce altri 2d6 danni da veleno. Finché l'effetto persiste i danni inflitti dal veleno non possono essere curati. Dopo tre successi il veleno termina.",
+  "fonte": {
+    "manuale": "Brancalonia Macaronicon",
+    "pagine": "47"
+  },
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "stato": "da_validare"
+  }
+}

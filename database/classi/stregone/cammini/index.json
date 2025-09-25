@@ -1,0 +1,21 @@
+{
+  "totale": 3,
+  "cammini": [
+    {
+      "id": "class-stregone-origine-draconica",
+      "nome": "Discendenza Draconica",
+      "file": "class-stregone-origine-draconica.json"
+    },
+    {
+      "id": "class-stregone-origine-magia_selvaggia",
+      "nome": "Magia Selvaggia",
+      "file": "class-stregone-origine-magia_selvaggia.json"
+    },
+    {
+      "id": "scaramante_stregone",
+      "nome": "Origine Scaramantesca",
+      "file": "../scaramante_stregone/index.json",
+      "nota": "Nuova origine di Brancalonia"
+    }
+  ]
+}

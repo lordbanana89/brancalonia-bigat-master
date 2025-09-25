@@ -1,0 +1,29 @@
+{
+  "titolo": "La Guerra delle Compagnie",
+  "pagine": "p.53-58",
+  "tipo": "Regole per campagne militari",
+  "contenuto": {
+    "descrizione": "Sistema per gestire compagnie mercenarie e battaglie",
+    "meccaniche": [
+      "Creazione della Compagnia",
+      "Reclutamento truppe",
+      "Gestione morale",
+      "Combattimenti di massa semplificati",
+      "Contratti e paghe"
+    ],
+    "tabelle": [
+      "Tipi di truppe e costi",
+      "Eventi casuali in guerra",
+      "Bottini di guerra",
+      "Reputazione militare"
+    ],
+    "ruoli_pg": [
+      "Capitano (comandante)",
+      "Luogotenente (vice)",
+      "Tesoriere (gestisce finanze)",
+      "Sergente (addestramento)",
+      "Esploratore (intelligence)"
+    ]
+  },
+  "fonte": "Brancalonia Macaronicon p.53-88"
+}

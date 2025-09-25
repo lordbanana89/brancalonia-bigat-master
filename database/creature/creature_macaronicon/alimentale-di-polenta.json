@@ -1,0 +1,88 @@
+{
+  "id": "creature-alimentale-di-polenta",
+  "nome": "Alimentale di Polenta",
+  "nome_inglese": "Polenta Foodmental",
+  "descrizione": "Un costrutto magico creato da polenta animata, probabilmente il peggiore di tutti i non morti del Regno. Questo essere di polenta bollente si muove in modo fluido e può assumere forme diverse, rappresentando una minaccia sia fisica che termica per chiunque gli si avvicini.",
+  "tipo": "Costrutto",
+  "taglia": "Grande",
+  "allineamento": "Senza allineamento",
+  "classe_armatura": {
+    "valore": 13,
+    "tipo": "armatura naturale"
+  },
+  "punti_ferita": {
+    "valore": 114,
+    "formula": "12d10+48"
+  },
+  "velocita": {
+    "camminare": "9 m"
+  },
+  "caratteristiche": {
+    "forza": 18,
+    "destrezza": 10,
+    "costituzione": 18,
+    "intelligenza": 3,
+    "saggezza": 10,
+    "carisma": 5
+  },
+  "modificatori": {
+    "forza": "+4",
+    "destrezza": "+0",
+    "costituzione": "+4",
+    "intelligenza": "-4",
+    "saggezza": "+0",
+    "carisma": "-3"
+  },
+  "resistenza_danni": ["fuoco", "veleno", "contundente, perforante e tagliente da attacchi non magici"],
+  "immunita_condizioni": ["afferrato", "affascinato", "avvelenato", "indebolimento", "paralizzato", "pietrificato", "privo di sensi", "spaventato", "trattenuto"],
+  "sensi": {
+    "percezione_passiva": 10,
+    "scurovisione": "18 m"
+  },
+  "linguaggi": "capisce i linguaggi del suo creatore ma non può parlarli",
+  "grado_sfida": 5,
+  "punti_esperienza": 1800,
+  "tratti": [
+    {
+      "nome": "Forma di Polenta",
+      "descrizione": "L'alimentale può muoversi attraverso uno spazio stretto fino a 2,5 centimetri senza doversi stringere. Una creatura che tocca l'alimentale o lo colpisce con un attacco in mischia mentre si trova entro 1,5 metri da esso subisce 3 (1d6) danni da fuoco. Inoltre, l'alimentale può entrare nello spazio di una creatura ostile e fermarvisi. La prima volta che entra nello spazio di una creatura in un turno, quella creatura subisce 3 (1d6) danni da fuoco."
+    },
+    {
+      "nome": "Congelamento",
+      "descrizione": "Se l'alimentale subisce danni da freddo, si congela parzialmente; la sua velocità è ridotta di 6 metri fino alla fine del suo turno successivo."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Multiattacco",
+      "descrizione": "L'alimentale effettua due attacchi con schianto."
+    },
+    {
+      "nome": "Schianto",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+7",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "13 (2d8 + 4) danni contundenti più 3 (1d6) danni da fuoco"
+    },
+    {
+      "nome": "Sommergere (Ricarica 4-6)",
+      "descrizione": "Ogni creatura nello spazio dell'alimentale deve effettuare un tiro salvezza su Forza con CD 15; se lo fallisce, subisce 13 (2d8 + 4) danni contundenti più 3 (1d6) danni da fuoco. Se la creatura è di taglia Grande o inferiore, è anche afferrata (CD 14 per sfuggire). Finché l'alimentale afferra il bersaglio, quest'ultimo è trattenuto. Se il bersaglio supera il tiro salvezza, viene spinto fuori dallo spazio dell'alimentale. L'alimentale può afferrare una creatura Grande o un massimo di due creature Medie o di taglia inferiore contemporaneamente tramite questa capacità. All'inizio di ogni turno dell'alimentale, ogni bersaglio afferrato subisce 13 (2d8 + 4) danni contundenti più 3 (1d6) danni da fuoco."
+    }
+  ],
+  "note_brancalonia": {
+    "natura": "Costrutto di polenta animata",
+    "pericolo": "Considerato tra i peggiori non morti del Regno",
+    "caratteristiche": "Polenta bollente e fluida",
+    "capacita": "Può assumere forme diverse",
+    "minaccia": "Fisica e termica",
+    "vulnerabilita": "Susceptibile al freddo"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 5,
+    "size": "lg",
+    "type": "construct"
+  },
+  "fonte": "Brancalonia Macaronicon p.73"
+}

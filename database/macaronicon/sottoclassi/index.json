@@ -1,0 +1,18 @@
+{
+  "categoria": "Sottoclassi Macaronicon",
+  "descrizione": "Estensioni di classe introdotte in Brancalonia Macaronicon",
+  "fonte": "Brancalonia Macaronicon p.21-35",
+  "totale": 10,
+  "elementi": [
+    { "id": "mac-sub-001", "classe_base": "Barbaro", "nome": "Montanaro", "file": "001_montanaro_barbaro.json" },
+    { "id": "mac-sub-002", "classe_base": "Bardo", "nome": "Guappo", "file": "002_guappo_bardo.json" },
+    { "id": "mac-sub-003", "classe_base": "Chierico", "nome": "Esorcista", "file": "003_esorcista_chierico.json" },
+    { "id": "mac-sub-004", "classe_base": "Guerriero", "nome": "Bravo", "file": "004_bravo_guerriero.json" },
+    { "id": "mac-sub-005", "classe_base": "Ladro", "nome": "Congegnere", "file": "005_congegnere_ladro.json" },
+    { "id": "mac-sub-006", "classe_base": "Monaco", "nome": "Guardia Svanzica", "file": "006_guardia_svanzica_monaco.json" },
+    { "id": "mac-sub-007", "classe_base": "Paladino", "nome": "Cavalier Servente", "file": "007_cavalier_servente_paladino.json" },
+    { "id": "mac-sub-008", "classe_base": "Ranger", "nome": "Acchiapparatti", "file": "008_acchiapparatti_ranger.json" },
+    { "id": "mac-sub-009", "classe_base": "Stregone", "nome": "Eresiarca", "file": "009_eresiarca_stregone.json" },
+    { "id": "mac-sub-010", "classe_base": "Warlock", "nome": "Talismante", "file": "010_talismante_warlock.json" }
+  ]
+}

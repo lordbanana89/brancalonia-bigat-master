@@ -1,0 +1,43 @@
+{
+  "id": "mac-sub-002",
+  "nome": "Guappo",
+  "classe_base": "Bardo",
+  "categoria": "Collegio della Guapparia",
+  "fonte": {
+    "manuale": "Brancalonia Macaronicon",
+    "pagine": "22"
+  },
+  "descrizione": "Cantori popolari, stornellatori e spadaccini di quartiere che tengono a bada bulli e guardie con carisma e coltello.",
+  "progressione": [
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "nome": "Competenze Bonus",
+          "descrizione": "Ottieni competenza in Intimidire e il privilegio Gergo Ladresco."
+        },
+        {
+          "nome": "Canzonetta Sottintesa",
+          "descrizione": "Dopo un'esibizione di almeno 1 minuto puoi scegliere un numero di umanoidi pari al tuo modificatore di Carisma (minimo 1) entro 36 m che ti hanno ascoltato: ogni bersaglio effettua un TS Saggezza contro la CD degli incantesimi bardici o è spaventato fino a fine turno. Usa dopo un riposo breve o lungo."
+        },
+        {
+          "nome": "Violenza Benintesa",
+          "descrizione": "Quando effettui un tiro per colpire puoi spendere Ispirazione Bardica. Se l'attacco colpisce aggiungi il risultato del dado ai danni psichici e il bersaglio deve superare un TS Saggezza o restare spaventato per un numero di round pari al risultato (TS ripetibile a fine turno)."
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "privilegi": [
+        {
+          "nome": "Infierire",
+          "descrizione": "Hai vantaggio ai tiri per colpire contro creature afferrate, avvelenate, incapaci o spaventate."
+        }
+      ]
+    }
+  ],
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo_fino_a_livello": 6
+  }
+}

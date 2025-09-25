@@ -1,0 +1,15 @@
+{
+  "id": "frate_monaco-livello_6-tecnica_mano_ferro_piuma",
+  "livello": 6,
+  "nome": "tecnica_mano_ferro_piuma",
+  "tipo": "attivo",
+  "descrizione": "Con Raffica di Colpi può imporre un effetto: prone (TS DES), spinta 3m (TS FOR), svantaggio prossimo attacco (TS CON)",
+  "implementazione": "flags.brancalonia-bigat.manoFerroPiuma = true",
+  "mode": 5,
+  "effetti": {
+    "prone": "TS Destrezza o cade prone",
+    "spinta": "TS Forza o spinto 3m (danno se colpisce ostacolo)",
+    "svantaggio": "TS Costituzione o svantaggio al prossimo attacco"
+  },
+  "nota": "Richiede macro per gestire effetti su Raffica"
+}

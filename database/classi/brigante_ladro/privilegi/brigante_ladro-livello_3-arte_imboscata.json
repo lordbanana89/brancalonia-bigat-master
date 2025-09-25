@@ -1,0 +1,13 @@
+{
+  "id": "brigante_ladro-livello_3-arte_imboscata",
+  "livello": 3,
+  "nome": "arte_imboscata",
+  "tipo": "attivo",
+  "descrizione": "Vantaggio ai tiri iniziativa e a qualunque azione nel primo turno di combattimento",
+  "implementazione": {
+    "iniziativa": "system.attributes.init.bonus = 1d4",
+    "primo_turno": "flags.brancalonia-bigat.arteImboscata = true"
+  },
+  "mode": 2,
+  "nota": "Bonus iniziativa simulato, vantaggio primo turno richiede macro"
+}

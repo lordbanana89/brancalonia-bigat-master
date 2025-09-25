@@ -1,0 +1,16 @@
+{
+  "id": "041",
+  "nome": "Il Bicchiere Avvelenato",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Calice d'argento con serpenti incisi",
+  "proprieta": "Neutralizza qualsiasi veleno versato dentro",
+  "valore": "650 mo",
+  "storia": "Il Re paranoico morì di sete",
+  "ironia": "L'acqua pura diventa leggermente tossica",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

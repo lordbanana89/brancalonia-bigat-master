@@ -1,0 +1,67 @@
+{
+  "categoria": "equipaggiamento",
+  "fonte": "Manuale Base",
+  "sottoinsiemi": [
+    {
+      "chiave": "armature_standard",
+      "totale": 13,
+      "index": "armature_standard/index.json"
+    },
+    {
+      "chiave": "armi_standard",
+      "totale": 35,
+      "index": "armi_standard/index.json"
+    },
+    {
+      "chiave": "armi",
+      "totale": 4,
+      "index": "armi/index.json"
+    },
+    {
+      "chiave": "armature",
+      "totale": 1,
+      "index": "armature/index.json"
+    },
+    {
+      "chiave": "oggetti_comuni",
+      "totale": 1,
+      "index": "oggetti_comuni/index.json"
+    },
+    {
+      "chiave": "scadente",
+      "totale": 8,
+      "index": "scadente/index.json"
+    },
+    {
+      "chiave": "oggetti_contraffatti",
+      "totale": 5,
+      "index": "oggetti_contraffatti/index.json"
+    },
+    {
+      "chiave": "intrugli",
+      "totale": 11,
+      "index": "intrugli.json"
+    },
+    {
+      "chiave": "cimeli",
+      "totale": 50,
+      "index": "cimeli/index.json"
+    },
+    {
+      "chiave": "ciarpame_magico",
+      "totale": 18,
+      "index": "ciarpame_magico.json",
+      "note": "Rimando alle schede del Macaronicon"
+    },
+    {
+      "chiave": "animali",
+      "totale": 8,
+      "index": "animali/index.json"
+    },
+    {
+      "chiave": "provviste",
+      "totale": 16,
+      "index": "provvista/index.json"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "_id": "malebranche001",
+  "name": "Malebranche",
+  "type": "race",
+  "img": "icons/creatures/humanoid/devil-horned-red.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Malebranche</h2>\n<p>Un tempo diavoli dell’Inferno, i malebranche hanno compiuto il Gran Rifiuto per tornare nel mondo mortale. Portano ancora corna, zoccoli e uno humour sulfureo, ma cercano una nuova vita tra le canaglie del Regno.</p>\n<p>La loro presenza è segno di redenzione per il Credo e motivo di sospetto per il popolino, mentre i loro tratti infernali emergono a seconda del maletratto che manifestano.</p>\n<h3>Tratti dei Malebranche</h3>\n<ul>\n  <li><strong>Incremento dei Punteggi di Caratteristica.</strong> Il tuo punteggio di Carisma aumenta di 2 e quello di Costituzione aumenta di 1.</li>\n  <li><strong>Scurovisione.</strong> Grazie al retaggio infernale vedi nell’oscurità fino a 36 metri come in luce fioca e distingui la luce fioca come luce intensa.</li>\n  <li><strong>Malitratti Infernali.</strong> Scegli due malitratti dalla lista (Maleali, Malefiamme, Malegambe, Malavoce, Malemani, Malerecchie).</li>\n  <li><strong>Età.</strong> Nasci nel momento del Gran Rifiuto e invecchi come un umano.</li>\n  <li><strong>Taglia.</strong> Sei una creatura di taglia Media.</li>\n  <li><strong>Velocità.</strong> La tua velocità sul terreno è di 9 metri.</li>\n  <li><strong>Linguaggi.</strong> Parli, leggi e scrivi Comune e Infernale.</li>\n  <li><strong>Privilegio da Rissa – Malebotte.</strong> Hai vantaggio ai tiri salvezza durante le risse.</li>\n</ul>",
+      "chat": "",
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Malebranche\nUn tempo diavoli dell’Inferno, i malebranche hanno compiuto il Gran Rifiuto per tornare nel mondo mortale. Portano ancora corna, zoccoli e uno humour sulfureo, ma cercano una nuova vita tr...</p>",
+        "flavor": ""
+      }
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "advancement": [
+      {
+        "_id": "maleb_asi",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {
+            "cha": 2,
+            "con": 1
+          },
+          "points": 0,
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 1,
+        "title": "Retaggio Infernale",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "maleb_size",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 1,
+        "title": "Taglia",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "maleb_traits",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.malebranche_privilegio_rissa"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Privilegio da Rissa",
+        "icon": "icons/skills/melee/unarmed-punch-fist.webp",
+        "classRestriction": ""
+      },
+      {
+        "_id": "maleb_vision",
+        "type": "Trait",
+        "configuration": {
+          "grants": [
+            "senses:darkvision:120"
+          ],
+          "choices": [],
+          "mode": "default"
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Scurovisione",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "maleb_choice",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 2,
+              "replacement": false,
+              "pool": [
+                "Compendium.brancalonia-bigat.brancalonia-features.malebranche_maleali",
+                "Compendium.brancalonia-bigat.brancalonia-features.malebranche_malefiamme",
+                "Compendium.brancalonia-bigat.brancalonia-features.malebranche_malegambe",
+                "Compendium.brancalonia-bigat.brancalonia-features.malebranche_malavoce",
+                "Compendium.brancalonia-bigat.brancalonia-features.malebranche_malemani",
+                "Compendium.brancalonia-bigat.brancalonia-features.malebranche_malerecchie"
+              ]
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [],
+          "spell": null,
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": ""
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "level": 1,
+        "title": "Malitratti Infernali",
+        "icon": "icons/magic/unholy/silhouette-evil-horned.webp",
+        "classRestriction": ""
+      }
+    ],
+    "movement": {
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 120,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0,
+      "units": "ft",
+      "special": ""
+    },
+    "languages": {
+      "value": [
+        "common",
+        "infernal"
+      ],
+      "custom": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "hasActiveEffects": true
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!malebranche001"
+}

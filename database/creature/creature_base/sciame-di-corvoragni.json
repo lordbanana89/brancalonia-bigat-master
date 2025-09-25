@@ -1,0 +1,88 @@
+{
+  "id": "creature-sciame-di-corvoragni",
+  "nome": "Sciame di Corvoragni",
+  "nome_inglese": "Swarm of Ravenspiders",
+  "descrizione": "Il corvoragno è un volatile mostruoso di media letalità, originario della Penumbria dov'è utilizzato come simbolo della cosca dei Malavita. Il suo aspetto accomuna i tratti dell'aracnide a quelli di una cornacchia. Il becco a rostro è la sua arma più letale, visto che occulta mandibole robuste e cheliceri fitti di piccole zanne a sega. Se gli esemplari di maggiori dimensioni possono raggiungere la taglia di falchi o avvoltoi, la maggior parte delle nidiate è composta da sciami di creature minuscole che si organizzano per cacciare insieme.",
+  "tipo": "Sciame Medio di Mostruosità Minuscole",
+  "taglia": "Media",
+  "allineamento": "Senza allineamento",
+  "classe_armatura": {
+    "valore": 13,
+    "tipo": "naturale"
+  },
+  "punti_ferita": {
+    "valore": 31,
+    "formula": "7d8"
+  },
+  "velocita": {
+    "camminare": "6 m",
+    "volare": "9 m"
+  },
+  "caratteristiche": {
+    "forza": 5,
+    "destrezza": 16,
+    "costituzione": 10,
+    "intelligenza": 2,
+    "saggezza": 10,
+    "carisma": 3
+  },
+  "modificatori": {
+    "forza": "-3",
+    "destrezza": "+3",
+    "costituzione": "+0",
+    "intelligenza": "-4",
+    "saggezza": "+0",
+    "carisma": "-4"
+  },
+  "resistenza_danni": ["contundente", "perforante", "tagliente"],
+  "immunita_condizioni": ["affascinato", "afferrato", "paralizzato", "pietrificato", "prono", "spaventato", "stordito", "trattenuto"],
+  "sensi": {
+    "percezione_passiva": 10,
+    "scurovisione": "9 m"
+  },
+  "linguaggi": "-",
+  "grado_sfida": 1,
+  "punti_esperienza": 200,
+  "tratti": [
+    {
+      "nome": "Movimenti del Ragno",
+      "descrizione": "Lo sciame può scalare le superfici difficili, inclusi i soffitti, lungo i quali si muove a testa in giù, senza effettuare una prova di caratteristica."
+    },
+    {
+      "nome": "Percezione della Ragnatela",
+      "descrizione": "Finché è in contatto con una ragnatela, lo sciame conosce l'ubicazione esatta di ogni altra creatura a contatto con essa."
+    },
+    {
+      "nome": "Andatura sulla Ragnatela",
+      "descrizione": "Lo sciame ignora le restrizioni di movimento causate dalle ragnatele."
+    },
+    {
+      "nome": "Sciame",
+      "descrizione": "Lo sciame può occupare lo spazio di un'altra creatura e viceversa, e può muoversi attraverso qualsiasi apertura sufficientemente larga da far passare un corvoragno Minuscolo. Lo sciame non può recuperare punti ferita, né ottenere punti ferita temporanei."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Morsi",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+5",
+      "portata": "0 m",
+      "bersagli": "una creatura nello spazio dello sciame",
+      "danno": "7 (2d6) danni perforanti o 3 (1d6) danni perforanti se lo sciame possiede la metà dei suoi punti ferita o meno",
+      "effetto_aggiuntivo": "Il bersaglio deve effettuare un tiro salvezza su Costituzione con CD 10; se lo fallisce, subisce 7 (2d6) danni da veleno, mentre se lo supera, subisce la metà di quei danni."
+    }
+  ],
+  "note_brancalonia": {
+    "origine": "Originario della Penumbria",
+    "simbolo": "Cosca dei Malavita",
+    "aspetto": "Ibrido aracnide-cornacchia",
+    "comportamento": "Caccia in sciami organizzati"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 1,
+    "size": "med",
+    "type": "swarm"
+  },
+  "fonte": "Brancalonia Manuale Base p.175"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "039",
+  "nome": "Lo Zufolo del Pifferaio",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Flauto di osso decorato",
+  "proprieta": "I topi (e i bambini sotto i 10 anni) devono seguire la musica",
+  "valore": "900 mo",
+  "storia": "Il pifferaio non fu mai pagato",
+  "pericolo": "Dopo 1 ora di uso, TS Carisma CD 15 o perdita controllo",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": true,
+    "active_effects": []
+  }
+}

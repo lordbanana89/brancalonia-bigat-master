@@ -1,0 +1,16 @@
+{
+  "id": "024",
+  "nome": "Il Bastone del Mendicante Re",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Bastone nodoso che sembra senza valore",
+  "proprieta": "Chi lo porta viene sempre sfamato da sconosciuti",
+  "valore": "10 mo (10000 mo se identificato)",
+  "storia": "Il Re visse come mendicante per conoscere il suo popolo",
+  "segreto": "È lo scettro reale mascherato",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

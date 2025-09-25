@@ -1,0 +1,15 @@
+{
+  "id": "gear-001",
+  "nome": "Razioni (1 giorno)",
+  "categoria": "provvista_avventuriera",
+  "costo": "5 ma",
+  "peso": "1 kg",
+  "descrizione": "Razionamento di cibo secco, carne salata e biscotti duri per una persona.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

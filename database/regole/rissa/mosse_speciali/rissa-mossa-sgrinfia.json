@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-sgrinfia",
+  "nome": "Sgrinfia",
+  "requisiti": "Destrezza 13+",
+  "costo": "1 slot",
+  "effetto": "Graffi al viso. 1d4 + Des Batoste e bersaglio ha svantaggio a Percezione per 1 turno",
+  "bonus": "+2 al tiro per colpire",
+  "fonte": "Brancalonia Manuale Base"
+}

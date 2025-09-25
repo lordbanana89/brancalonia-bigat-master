@@ -1,0 +1,17 @@
+{
+  "id": "strade-tipo",
+  "titolo": "Tipo di strada",
+  "dado": "1d6",
+  "voci": [
+    { "tiro": 1, "descrizione": "Antica strada lastricata draconiana dimenticata che emerge dall'erba." },
+    { "tiro": 2, "descrizione": "Pista tracciata da uno strano animale. Grosso, molto grosso." },
+    { "tiro": 3, "descrizione": "Sentiero aperto da taglialegna o carbonai, oppure da contrabbandieri e briganti." },
+    { "tiro": 4, "descrizione": "Via magica che sembra apparire e scomparire: forse opera delle fate." },
+    { "tiro": 5, "descrizione": "Tratturo creato da pastori e greggi: le pecore conoscono sempre la via migliore." },
+    { "tiro": 6, "descrizione": "Viottolo poco appariscente." }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "86"
+  }
+}

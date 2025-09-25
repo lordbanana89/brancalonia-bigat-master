@@ -1,0 +1,73 @@
+{
+  "id": "class-warlock-livello_1-magia-del-patto",
+  "nome": "Magia del Patto",
+  "nome_brancalonia": "Potere Pattizio",
+  "livello": 1,
+  "tipo": "passivo",
+  "descrizione": "La tua ricerca arcana e la magia conferitati dal tuo patrono ti hanno fornito incantesimi. Il tuo potere magico funziona diversamente dalle altre classi.",
+  "meccaniche": {
+    "spell_slots": {
+      "numero": "1-4 slot (scala con livello)",
+      "livello_slot": "Tutti stesso livello (1°-5°)",
+      "recupero": "RIPOSO BREVE o lungo"
+    },
+    "progressione_slot": {
+      "livello_1": "1 slot 1° livello",
+      "livello_2": "2 slot 1° livello",
+      "livello_3": "2 slot 2° livello",
+      "livello_5": "2 slot 3° livello",
+      "livello_7": "2 slot 4° livello",
+      "livello_9": "2 slot 5° livello",
+      "livello_11": "3 slot 5° livello",
+      "livello_17": "4 slot 5° livello"
+    },
+    "spell_conosciuti": "2-15 (scala con livello)",
+    "cantrip": "2-4 (scala con livello)"
+  },
+  "implementazione_foundry": {
+    "tipo": "pact_magic",
+    "slot_type": "pact",
+    "recovery": "short-rest"
+  },
+  "confronto_casting": {
+    "vs_wizard": "Meno slot ma recupero short rest",
+    "vs_sorcerer": "Meno flessibilità ma slot alti sempre",
+    "vs_cleric": "Meno spell ma sempre massimo livello"
+  },
+  "vantaggi_unici": {
+    "short_rest_recovery": "2-3x risorse al giorno",
+    "sempre_upcast": "Spell sempre al massimo",
+    "pochi_ma_potenti": "Qualità > quantità"
+  },
+  "gestione_slot": {
+    "conservazione": "Solo 2-4 slot, usa saggiamente",
+    "short_rest_focus": "Cerca riposi brevi frequenti",
+    "eldritch_blast": "Cantrip per damage consistente"
+  },
+  "spell_warlock_only": {
+    "hex": "Bonus damage e debuff",
+    "armor_of_agathys": "Temp HP e damage reflect",
+    "hunger_of_hadar": "Area denial potente"
+  },
+  "multiclasse_interaction": {
+    "slot_separati": "Pact slots separati da altri",
+    "ma_utilizzabili": "Puoi usare per qualsiasi spell",
+    "coffeelock": "Sorcerer + Warlock combo"
+  },
+  "mystic_arcanum": {
+    "livello_11+": "Spell 6°-9° livello 1/long rest",
+    "separati": "Non usano pact slots"
+  },
+  "errori_comuni": {
+    "conservare_troppo": "Recuperi short rest!",
+    "dimenticare_upcast": "Tuoi slot sempre max livello",
+    "ignorare_cantrip": "Eldritch Blast è essenziale"
+  },
+  "narrazione_brancalonia": {
+    "patto_vincolante": "Potere ha un prezzo",
+    "patrono_esigente": "Richieste e missioni",
+    "magia_aliena": "Diversa da studio tradizionale"
+  },
+  "note_dm": "Pact Magic è unica. Short rest recovery la rende molto forte in giorni con multiple battaglie. Pochi slot ma sempre potenti.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107"
+}

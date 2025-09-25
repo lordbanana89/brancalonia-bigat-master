@@ -1,0 +1,81 @@
+{
+  "_id": "ilviolinodeldiavoloe39da9",
+  "_key": "!items!ilviolinodeldiavoloe39da9",
+  "name": "Il Violino del Diavolo",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Violino di legno nero con corde d'argento</p><h3>Proprietà</h3><p>Chi suona ottiene competenza immediata, musica affascina chi ascolta</p><h3>Storia</h3><p><em>Paganini ci suonò il suo ultimo concerto</em></p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": {
+      "mgc": true
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "021",
+      "categoria": "cimelo",
+      "storia": "Paganini ci suonò il suo ultimo concerto",
+      "proprieta_originale": "Chi suona ottiene competenza immediata, musica affascina chi ascolta",
+      "implementazione": {
+        "tipo": "narrativo",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

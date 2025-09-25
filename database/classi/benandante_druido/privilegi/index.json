@@ -1,0 +1,23 @@
+{
+  "totale": 3,
+  "privilegi": [
+    {
+      "id": "benandante_druido-livello_2-guardare_oltre_velo",
+      "livello": 2,
+      "nome": "guardare_oltre_velo",
+      "file": "benandante_druido-livello_2-guardare_oltre_velo.json"
+    },
+    {
+      "id": "benandante_druido-livello_3-incantesimi_circolo",
+      "livello": 3,
+      "nome": "incantesimi_circolo",
+      "file": "benandante_druido-livello_3-incantesimi_circolo.json"
+    },
+    {
+      "id": "benandante_druido-livello_6-guardiano_danza_macabra",
+      "livello": 6,
+      "nome": "guardiano_danza_macabra",
+      "file": "benandante_druido-livello_6-guardiano_danza_macabra.json"
+    }
+  ]
+}

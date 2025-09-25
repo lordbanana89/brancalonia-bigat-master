@@ -1,0 +1,15 @@
+{
+  "id": "gear-012",
+  "nome": "Chiodi da Arrampicata (10)",
+  "categoria": "provvista_avventuriera",
+  "costo": "5 ma",
+  "peso": "0.25 kg",
+  "descrizione": "Punte metalliche da piantare nelle fessure per assicurare corde e ganci.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "spadaccino_guerriero-livello_3-scuola_scherma",
+  "livello": 3,
+  "nome": "scuola_scherma",
+  "tipo": "multiplo",
+  "descrizione": "Tre tecniche di combattimento",
+  "tecniche": {
+    "studiare_avversario": {
+      "tipo": "attivo",
+      "descrizione": "Quando usa Schivata, prossimo attacco ha vantaggio (entro prossimo turno)",
+      "implementazione": "flags.brancalonia-bigat.studiareAvversario = true",
+      "mode": 5,
+      "condizione": "Dopo azione Schivata"
+    },
+    "zappa_e_spada": {
+      "tipo": "attivo",
+      "descrizione": "+1 CA con arma da mischia in ogni mano",
+      "implementazione": "system.attributes.ac.bonus = 1",
+      "mode": 2,
+      "condizione": "Due armi impugnate"
+    },
+    "duello": {
+      "tipo": "attivo",
+      "descrizione": "Aggiunge bonus competenza ai danni se solo un nemico entro 1.5m e nessun altro",
+      "implementazione": "flags.brancalonia-bigat.duello = '@proficiencyBonus'",
+      "mode": 2,
+      "condizione": "Solo un nemico entro 1.5m"
+    }
+  }
+}

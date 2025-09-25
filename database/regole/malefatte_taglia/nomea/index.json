@@ -1,0 +1,9 @@
+{
+  "titolo": "Nomea",
+  "elementi": [
+    {
+      "tipo": "descrizione",
+      "file": "descrizione.json"
+    }
+  ]
+}

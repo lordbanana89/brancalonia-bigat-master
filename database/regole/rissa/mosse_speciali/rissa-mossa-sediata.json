@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-sediata",
+  "nome": "Sediata",
+  "requisiti": "Forza 13+",
+  "costo": "1 slot",
+  "effetto": "Colpisci con una sedia. 2d4 + For Batoste",
+  "distruzione": "La sedia si rompe sempre",
+  "fonte": "Brancalonia Manuale Base"
+}

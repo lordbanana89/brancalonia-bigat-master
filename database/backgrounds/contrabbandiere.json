@@ -1,0 +1,60 @@
+{
+  "nome": "Contrabbandiere",
+  "fonte": "Brancalonia Macaronicon p.39-40",
+  "descrizione": "Esperto di commerci illeciti, vie segrete e merci proibite attraverso i confini del Regno",
+  "caratteristiche": [
+    "Conosce tutte le vie segrete del Regno",
+    "Abile nel nascondere merci illegali",
+    "Ha contatti in ogni porto e dogana",
+    "Esperto nel corrompere guardie"
+  ],
+  "competenze": {
+    "abilita": ["Inganno", "Sopravvivenza"],
+    "strumenti": ["Kit del falsario o Attrezzi da ladro"],
+    "linguaggi": ["Uno a scelta"],
+    "implementazione": {
+      "inganno": "system.skills.dec.value = 1",
+      "sopravvivenza": "system.skills.sur.value = 1"
+    }
+  },
+  "equipaggiamento": {
+    "oggetti": [
+      "Merce di contrabbando nascosta",
+      "Mappa delle vie segrete (in codice)",
+      "Documenti falsi",
+      "Nascondiglio segreto per merci",
+      "Borsa con 25 monete d'oro"
+    ]
+  },
+  "privilegio": {
+    "nome": "Vie del Contrabbando",
+    "descrizione": "Il personaggio conosce passaggi segreti, sentieri nascosti e vie di contrabbando tra le varie regioni del Regno. Sa sempre come evitare dogane e posti di blocco.",
+    "meccanica": "narrativo",
+    "utilizzo": "Conosce automaticamente vie segrete per attraversare confini"
+  },
+  "merci_tipiche": [
+    "Spezie esotiche di Levantia",
+    "Armi proibite",
+    "Libri messi all'indice",
+    "Vini pregiati senza dazio",
+    "Reliquie false o rubate"
+  ],
+  "contatti": [
+    "Doganieri corrotti",
+    "Capitani di nave compiacenti",
+    "Locandieri che nascondono merci",
+    "Altri contrabbandieri",
+    "Nobili che comprano merci illegali"
+  ],
+  "suggerimenti_interpretazione": [
+    "Mercante onesto costretto all'illegalità",
+    "Avventuriero che ama il rischio",
+    "Patriota che rifornisce ribelli",
+    "Criminale senza scrupoli"
+  ],
+  "validazione": {
+    "implementato": false,
+    "file_id": "contrabbandiere_background_macaronicon",
+    "compendio": "backgrounds_macaronicon"
+  }
+}

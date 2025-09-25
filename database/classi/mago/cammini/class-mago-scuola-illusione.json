@@ -1,0 +1,50 @@
+{
+  "id": "class-mago-scuola-illusione",
+  "nome": "Scuola di Illusione",
+  "fonte": "Manuale del Giocatore p.85",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Savant dell'Illusione",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Illusion Savant"
+        }
+      },
+      {
+        "nome": "Illusione Migliorata",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Improved Minor Illusion"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Illusioni Malleabili",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Malleable Illusions"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Io Illusorio",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Illusory Self"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Realtà Illusoria",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Illusory Reality"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "race-marionetta-tratto-vulnerabilita",
+  "nome": "Vulnerabilita",
+  "categoria": "base",
+  "dettagli": {
+    "fuoco": "Per marionette di legno",
+    "ruggine": "Per marionette di metallo"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

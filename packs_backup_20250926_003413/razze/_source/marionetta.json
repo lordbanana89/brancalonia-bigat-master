@@ -1,0 +1,168 @@
+{
+  "_id": "marionetta001",
+  "name": "Marionetta",
+  "type": "race",
+  "img": "icons/creatures/magical/construct-wood.webp",
+  "system": {
+    "description": {
+      "value": "<h2>Marionetta</h2>\n<p>Le marionette animate dal fanfaluco sono costrutti coscienti diffusi nei teatri e nelle bande del Regno. Il loro corpo ligneo si deteriora con il tempo, ma la scintilla che li anima li rende compagni leali e creativi.</p>\n<h3>Tratti delle Marionette</h3>\n<ul>\n  <li><strong>Incremento dei Punteggi di Caratteristica.</strong> Il tuo punteggio di Costituzione e quello di Destrezza aumentano di 1.</li>\n  <li><strong>Costrutto di Fanfaluco.</strong> Sei immune alle malattie, non hai bisogno di mangiare, bere o respirare e rimani cosciente durante il riposo lungo.</li>\n  <li><strong>Magico ma Sempre Legno.</strong> Sei vulnerabile ai danni da fuoco.</li>\n  <li><strong>Aggiustarsi.</strong> Finché il nucleo resta intatto puoi spendere 2d8 Dadi Vita aggiuntivi durante i riposi brevi.</li>\n  <li><strong>Età.</strong> \"Nasci\" con l’età conferita dal falegname e raramente superi il mezzo secolo.</li>\n  <li><strong>Taglia.</strong> Sei una creatura di taglia Piccola.</li>\n  <li><strong>Velocità.</strong> La tua velocità sul terreno è di 7,5 metri.</li>\n  <li><strong>Linguaggi.</strong> Parli, leggi e scrivi Comune.</li>\n  <li><strong>Privilegio da Rissa – Braccio Smontabile.</strong> Puoi usare un braccio come oggetto di scena senza perderlo.</li>\n  <li><strong>Diverse Fogge.</strong> Varianti come Pinocchio o Pupo aggiungono caratteristiche particolari a discrezione del Condottiero.</li>\n</ul>",
+      "chat": "",
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Marionetta\nLe marionette animate dal fanfaluco sono costrutti coscienti diffusi nei teatri e nelle bande del Regno. Il loro corpo ligneo si deteriora con il tempo, ma la scintilla che li anima li rend...</p>",
+        "flavor": ""
+      }
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "construct",
+      "subtype": ""
+    },
+    "advancement": [
+      {
+        "_id": "marionetta_asi",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {
+            "con": 1,
+            "dex": 1
+          },
+          "points": 0,
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 1,
+        "title": "Legno Animato",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "marionetta_size",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {},
+        "level": 1,
+        "title": "Taglia",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "marionetta_traits",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia-bigat.brancalonia-features.marionetta_costrutto_fanfaluco",
+            "Compendium.brancalonia-bigat.brancalonia-features.marionetta_magico_legno",
+            "Compendium.brancalonia-bigat.brancalonia-features.marionetta_aggiustarsi",
+            "Compendium.brancalonia-bigat.brancalonia-features.marionetta_privilegio_rissa"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Tratti della Marionetta",
+        "icon": "icons/creatures/magical/construct-wood-brass.webp",
+        "classRestriction": ""
+      }
+    ],
+    "movement": {
+      "walk": 25,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 0,
+      "blindsight": 0,
+      "tremorsense": 0,
+      "truesight": 0,
+      "units": "ft",
+      "special": ""
+    },
+    "languages": {
+      "value": [
+        "common"
+      ],
+      "custom": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "hasActiveEffects": true
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!marionetta001"
+}

@@ -1,0 +1,86 @@
+{
+  "_id": "ilpennellodelpittoremaledettoe56b5d",
+  "_key": "!items!ilpennellodelpittoremaledettoe56b5d",
+  "name": "Il Pennello del Pittore Maledetto",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pennello che gocciola sempre vernice rossa</p><h3>Proprietà</h3><p>Dipinti sembrano vivi, soggetti si muovono</p><h3>Storia</h3><p><em>Il pittore dipinse il Diavolo dal vero</em></p><h3>Maledizione</h3><p><strong>I ritratti invecchiano al posto del soggetto</strong></p><p>I ritratti invecchiano al posto del soggetto</p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 750,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": {
+      "mgc": true,
+      "cursed": true
+    },
+    "cursed": true,
+    "curse": "I ritratti invecchiano al posto del soggetto"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "014",
+      "categoria": "cimelo",
+      "storia": "Il pittore dipinse il Diavolo dal vero",
+      "proprieta_originale": "Dipinti sembrano vivi, soggetti si muovono",
+      "maledizione": "I ritratti invecchiano al posto del soggetto",
+      "maledizione_specifica": "I ritratti invecchiano al posto del soggetto",
+      "implementazione": {
+        "tipo": "maledetto",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

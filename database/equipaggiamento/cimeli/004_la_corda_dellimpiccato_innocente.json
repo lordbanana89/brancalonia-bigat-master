@@ -1,0 +1,16 @@
+{
+  "id": "004",
+  "nome": "La Corda dell'Impiccato Innocente",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Pezzo di corda con nodo scorsoio",
+  "proprieta": "Impossibile da spezzare con la forza (richiede taglio)",
+  "effetto_speciale": "Chi la tocca sente il collo stringersi per un momento",
+  "valore": "100 mo",
+  "storia": "Usata per impiccare un innocente che maledisse i suoi carnefici",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

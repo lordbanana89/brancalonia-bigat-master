@@ -1,0 +1,85 @@
+{
+  "classe": "pagano_barbaro",
+  "categoria": "Privilegi Generali",
+  "totale": 13,
+  "privilegi": [
+    {
+      "id": "class-barbaro-livello_1-ira",
+      "nome": "Furia Pagana",
+      "file": "class-barbaro-livello_1-ira.json",
+      "livello": 1
+    },
+    {
+      "id": "class-barbaro-livello_1-difesa-senza-armatura",
+      "nome": "Pelle Dura del Pagano",
+      "file": "class-barbaro-livello_1-difesa-senza-armatura.json",
+      "livello": 1
+    },
+    {
+      "id": "class-barbaro-livello_2-attacco-irruento",
+      "nome": "Carica del Pagano",
+      "file": "class-barbaro-livello_2-attacco-irruento.json",
+      "livello": 2
+    },
+    {
+      "id": "class-barbaro-livello_2-percezione-del-pericolo",
+      "nome": "Istinto del Pagano",
+      "file": "class-barbaro-livello_2-percezione-del-pericolo.json",
+      "livello": 2
+    },
+    {
+      "id": "class-barbaro-livello_3-cammino-primordiale",
+      "nome": "Via del Pagano",
+      "file": "class-barbaro-livello_3-cammino-primordiale.json",
+      "livello": 3
+    },
+    {
+      "id": "class-barbaro-livello_5-attacco-extra",
+      "nome": "Furia Raddoppiata",
+      "file": "class-barbaro-livello_5-attacco-extra.json",
+      "livello": 5
+    },
+    {
+      "id": "class-barbaro-livello_5-movimento-veloce",
+      "nome": "Passo del Cacciatore",
+      "file": "class-barbaro-livello_5-movimento-veloce.json",
+      "livello": 5
+    },
+    {
+      "id": "class-barbaro-livello_7-istinto-ferino",
+      "nome": "Sensi del Predatore",
+      "file": "class-barbaro-livello_7-istinto-ferino.json",
+      "livello": 7
+    },
+    {
+      "id": "class-barbaro-livello_9-critico-brutale",
+      "nome": "Colpo Devastante",
+      "file": "class-barbaro-livello_9-critico-brutale.json",
+      "livello": 9
+    },
+    {
+      "id": "class-barbaro-livello_11-ira-implacabile",
+      "nome": "Furia Che Non Muore",
+      "file": "class-barbaro-livello_11-ira-implacabile.json",
+      "livello": 11
+    },
+    {
+      "id": "class-barbaro-livello_15-ira-persistente",
+      "nome": "Furia Eterna",
+      "file": "class-barbaro-livello_15-ira-persistente.json",
+      "livello": 15
+    },
+    {
+      "id": "class-barbaro-livello_18-forza-indomabile",
+      "nome": "Possanza Leggendaria",
+      "file": "class-barbaro-livello_18-forza-indomabile.json",
+      "livello": 18
+    },
+    {
+      "id": "class-barbaro-livello_20-campione-primordiale",
+      "nome": "Avatar della Furia",
+      "file": "class-barbaro-livello_20-campione-primordiale.json",
+      "livello": 20
+    }
+  ]
+}

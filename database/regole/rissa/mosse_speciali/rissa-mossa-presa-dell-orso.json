@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-presa-dell-orso",
+  "nome": "Presa dell'Orso",
+  "requisiti": "Forza 15+, taglia Media o superiore",
+  "costo": "1 slot",
+  "effetto": "Afferri e stritoli. Bersaglio afferrato subisce 1d6 Batoste/turno",
+  "mantenimento": "Azione per mantenere, bersaglio può tentare di liberarsi",
+  "fonte": "Brancalonia Manuale Base"
+}

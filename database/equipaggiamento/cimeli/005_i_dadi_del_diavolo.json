@@ -1,0 +1,16 @@
+{
+  "id": "005",
+  "nome": "I Dadi del Diavolo",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Coppia di dadi d'osso sempre freddi al tatto",
+  "proprieta": "Con doppio 6 vinci sempre la posta, con doppio 1 perdi l'anima",
+  "meccanica": "Se esce doppio 1, il personaggio è maledetto finché non vince una scommessa impossibile",
+  "valore": "666 mo",
+  "storia": "Vinti al Diavolo stesso da un giocatore fortunato",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

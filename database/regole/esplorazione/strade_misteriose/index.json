@@ -1,0 +1,15 @@
+{
+  "titolo": "Strade che non vanno da nessuna parte",
+  "descrizione": "Generatore a step per sentieri misteriosi incontrati durante i viaggi.",
+  "sezioni": [
+    { "id": "strade-tipo", "titolo": "Tipo di strada", "file": "strade-tipo.json" },
+    { "id": "strade-accesso", "titolo": "Per poterla percorrere", "file": "strade-accesso.json" },
+    { "id": "strade-incontri", "titolo": "Cosa ci si incontra", "file": "strade-incontri.json" },
+    { "id": "strade-destinazioni", "titolo": "Dove va la strada", "file": "strade-destinazioni.json" }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "86-87"
+  },
+  "stato": "completo"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "oggetto-contraff-004",
+  "nome": "Patenti di Nobiltà",
+  "categoria": "oggetto_contraffatto",
+  "costo": "25 mo",
+  "descrizione": "Documenti apocrifi che attestano titoli cavallereschi o genealogie fittizie, ricchi di sigilli e araldica fasulla.",
+  "utilizzo": "Permettono di spacciarsi per nobili o cortigiani fino a verifica approfondita; come equipaggiamento scadente possono causare gravi reazioni se scoperti.",
+  "note_meccaniche": "Quando usati per prove di Carisma o Status, applicare le regole dell'equipaggiamento contraffatto: fallimenti possono aumentare la CD e far fallire automaticamente la messinscena.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  }
+}

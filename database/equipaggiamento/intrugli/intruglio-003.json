@@ -1,0 +1,9 @@
+{
+  "id": "intruglio-003",
+  "nome": "Cordiale Biondino",
+  "costo": "12 mo",
+  "peso": "0.5 kg",
+  "effetto": "Recupera 1d4+1 PF, -1 indebolimento, ignora indebolimento e guadagna ispirazione per 8 ore",
+  "tipo_meccanica": "consumabile",
+  "fonte": "Manuale Base p.65-66"
+}

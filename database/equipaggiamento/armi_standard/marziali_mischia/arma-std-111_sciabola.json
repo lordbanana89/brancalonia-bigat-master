@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-111",
+  "nome": "Sciabola",
+  "categoria": "arma_standard",
+  "tipo": "marziale_mischia",
+  "costo": "25 mo",
+  "danni": "1d6 taglienti",
+  "proprieta": [
+    "Leggera",
+    "Accurata"
+  ],
+  "peso": "1.4 kg",
+  "descrizione": "Spada ricurva ideale per colpi rapidi.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

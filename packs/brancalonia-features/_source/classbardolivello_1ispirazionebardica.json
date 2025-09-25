@@ -1,0 +1,72 @@
+{
+  "_id": "classbardolivello1ispirazionebardica08daac",
+  "_key": "!item!classbardolivello1ispirazionebardica08daac",
+  "name": "Ispirazione Bardica",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Puoi ispirare gli altri attraverso parole o musica. Per farlo, usi un'azione bonus nel tuo turno per scegliere una creatura diversa da te entro 60 piedi che possa sentirti. Quella creatura guadagna un dado di Ispirazione Bardica.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.53",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-bardo-livello_1-ispirazione-bardica",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.53"
+    }
+  }
+}

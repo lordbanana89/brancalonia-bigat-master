@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-capocciata",
+  "nome": "Capocciata",
+  "requisiti": "Costituzione 15+",
+  "costo": "1 slot",
+  "effetto": "2d6 + Cos Batoste al bersaglio, 1d4 a te stesso",
+  "critico": "Con 20 naturale, il bersaglio è stordito 1 turno",
+  "fonte": "Brancalonia Manuale Base"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "race-malebranche-tratto-resistenza_infernale",
+  "nome": "Resistenza Infernale",
+  "categoria": "base",
+  "dettagli": {
+    "descrizione": "Resistenza ai danni da fuoco",
+    "meccanica": "Dimezza danni da fuoco"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

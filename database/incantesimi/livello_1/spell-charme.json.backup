@@ -1,0 +1,62 @@
+{
+  "id": "spell-charme",
+  "nome": "Charme",
+  "nome_inglese": "Charm Person",
+  "livello": 1,
+  "scuola": "Ammaliamento",
+  "tempo_lancio": "1 azione",
+  "gittata": "30 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "1 ora",
+  "descrizione": "Tenti di affascinare un umanoide che puoi vedere entro gittata. Deve effettuare un tiro salvezza su Saggezza, e lo fa con vantaggio se tu o i tuoi compagni state combattendo contro di esso. Se fallisce il tiro salvezza, è affascinato da te fino a quando l'incantesimo termina o fino a quando tu o i tuoi compagni fate qualcosa di dannoso nei suoi confronti. La creatura affascinata ti considera un conoscente amichevole. Quando l'incantesimo termina, la creatura sa di essere stata affascinata da te.",
+  "classi": ["Bardo", "Druido", "Mago", "Stregone", "Warlock"],
+  "scaling": {
+    "descrizione": "Con slot superiore, bersagli +1 per livello sopra il 1°",
+    "slot_2": "2 bersagli",
+    "slot_3": "3 bersagli",
+    "slot_4": "4 bersagli"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "action",
+    "range": 30,
+    "save": "wisdom",
+    "durata": "1 hour",
+    "condizione": "charmed"
+  },
+  "condizione_charmed": {
+    "no_attack": "Non può attaccarti",
+    "no_target": "Non può bersagliarti con abilità dannose",
+    "vantaggio_social": "Hai vantaggio su check sociali"
+  },
+  "limitazioni": [
+    "Solo umanoidi",
+    "Vantaggio se in combat",
+    "Sa dopo che era charmed",
+    "Non è controllo totale"
+  },
+  "cosa_non_fa": [
+    "Non dà controllo diretto",
+    "Non forza obbedienza",
+    "Non cambia allineamento",
+    "Target agisce secondo sua natura"
+  ],
+  "utilizzi": [
+    "Evitare combattimenti",
+    "Ottenere informazioni",
+    "Passare guardie",
+    "Negoziazioni migliori",
+    "Creare distrazioni"
+  ],
+  "conseguenze": {
+    "dopo_spell": "Target sa di essere stato charmato",
+    "reputazione": "Può danneggiare relazioni",
+    "legale": "Illegale in molte città"
+  },
+  "note_dm": "Charm Person non è controllo mentale. Target diventa amichevole, non servo. Conseguenze sociali dopo importante.",
+  "fonte": "D&D 5e PHB p.221"
+}

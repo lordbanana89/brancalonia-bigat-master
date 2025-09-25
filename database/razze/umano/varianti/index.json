@@ -1,0 +1,20 @@
+{
+  "totale": 3,
+  "varianti": [
+    {
+      "id": "race-umano-variante-bracaloniani",
+      "nome": "Bracaloniani",
+      "file": "variante-bracaloniani.json"
+    },
+    {
+      "id": "race-umano-variante-levantini",
+      "nome": "Levantini",
+      "file": "variante-levantini.json"
+    },
+    {
+      "id": "race-umano-variante-svanzici",
+      "nome": "Svanzici",
+      "file": "variante-svanzici.json"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "_id": "armstd105mezzaarmaturaapiastre50134e",
+  "_key": "!items!armstd105mezzaarmaturaapiastre50134e",
+  "name": "Mezza Armatura a Piastre",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Piastre sagomate che coprono il corpo, lasciando alcune aree protette da cuoio.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 18.1,
+    "price": {
+      "value": 750,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "armor",
+      "subtype": "heavy",
+      "baseItem": "halfPlate"
+    },
+    "armor": {
+      "value": 15,
+      "type": "heavy",
+      "dex": 0,
+      "magicalBonus": 0
+    },
+    "strength": "—",
+    "stealth": false,
+    "proficient": true,
+    "properties": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arm-std-105",
+      "categoria": "armatura_standard",
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

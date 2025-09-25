@@ -1,0 +1,13 @@
+{
+  "id": "arlecchino_bardo-livello_3-competenze_bonus",
+  "livello": 3,
+  "nome": "competenze_bonus",
+  "tipo": "attivo",
+  "descrizione": "Competenza in trucchi camuffamento, strumenti tessitore, un gioco a scelta",
+  "implementazione": {
+    "camuffamento": "system.tools.disguisekit.value = 1",
+    "tessitore": "system.tools.weaverstools.value = 1",
+    "gioco": "flags.brancalonia-bigat.gameChoice = true"
+  },
+  "mode": 5
+}

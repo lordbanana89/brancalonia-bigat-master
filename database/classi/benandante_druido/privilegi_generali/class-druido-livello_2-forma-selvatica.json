@@ -1,0 +1,55 @@
+{
+  "id": "class-druido-livello_2-forma-selvatica",
+  "nome": "Forma Selvatica",
+  "nome_brancalonia": "Mutaforma del Benandante",
+  "livello": 2,
+  "tipo": "attivo",
+  "descrizione": "A partire dal 2° livello, puoi usare la tua azione per assumere magicamente la forma di una bestia che hai visto prima. Puoi usare questo privilegio due volte. Recuperi gli usi spesi quando completi un riposo breve o lungo.",
+  "meccaniche": {
+    "usi": {
+      "livello_2": "2 per riposo breve",
+      "livello_20": "Illimitati (Archdruid)"
+    },
+    "durata": "Livello druido ÷ 2 ore (minimo 1)",
+    "limitazioni_cr": {
+      "livello_2": "Max CR 1/4, no nuoto/volo",
+      "livello_4": "Max CR 1/2, nuoto ok",
+      "livello_8": "Max CR 1",
+      "circle_moon": "CR = livello druido ÷ 3"
+    },
+    "regole": [
+      "Statistiche bestia sostituiscono le tue",
+      "Mantieni allineamento, INT, SAG, CAR",
+      "PF bestia sono PF temporanei extra",
+      "Non puoi lanciare spell (ma concentrazione ok)"
+    ]
+  },
+  "implementazione_foundry": {
+    "tipo": "polymorph",
+    "uses": {
+      "value": 2,
+      "max": 2,
+      "per": "sr"
+    },
+    "durata": "@classes.druid.levels / 2 hours"
+  },
+  "forme_comuni": {
+    "cr_1_4": ["Wolf", "Giant Spider", "Panther"],
+    "cr_1_2": ["Brown Bear", "Reef Shark"],
+    "cr_1": ["Dire Wolf", "Giant Eagle", "Giant Spider"],
+    "cr_2_moon": ["Saber-toothed Tiger", "Giant Scorpion"]
+  },
+  "tattiche": {
+    "combattimento": "Tank extra HP + attacchi bestia",
+    "esplorazione": "Spider per climb, eagle per volo",
+    "infiltrazione": "Cat per stealth, mouse per nascondersi",
+    "utility": "Horse per trasporto, fish per acqua"
+  },
+  "circle_impact": {
+    "moon": "Combat wild shape potente",
+    "land": "Più spell, meno combat forms",
+    "dreams": "Focus su guarigione non forme",
+    "spores": "Usi alternativi del wild shape"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.66"
+}

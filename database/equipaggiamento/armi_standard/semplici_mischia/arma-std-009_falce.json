@@ -1,0 +1,20 @@
+{
+  "id": "arma-std-009",
+  "nome": "Falce",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "1 mo",
+  "danni": "1d4 taglienti",
+  "proprieta": [
+    "Leggera"
+  ],
+  "peso": "0.9 kg",
+  "descrizione": "Attrezzo agricolo adattato per colpi rapidi e curvi.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

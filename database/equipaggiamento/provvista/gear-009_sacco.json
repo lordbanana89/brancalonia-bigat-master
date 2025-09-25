@@ -1,0 +1,15 @@
+{
+  "id": "gear-009",
+  "nome": "Sacco",
+  "categoria": "provvista_avventuriera",
+  "costo": "1 mr",
+  "peso": "0.25 kg",
+  "descrizione": "Sacco di tela lacerabile per trasportare oggetti sciolti.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

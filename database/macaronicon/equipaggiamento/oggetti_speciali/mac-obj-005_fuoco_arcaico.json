@@ -1,0 +1,18 @@
+{
+  "id": "mac-obj-005",
+  "nome": "Fuoco Arcaico",
+  "categoria": "consumabile",
+  "tipo": "miscela incendiaria",
+  "costo": "25 mo",
+  "peso": "2 kg",
+  "descrizione": "Miscela navale che esplode a contatto con l'acqua e continua a bruciare ferocemente.",
+  "note_meccaniche": "Venduto in vasi da 1 l. Lanciabile a 6 m come arma improvvisata; all'impatto ricopre il bersaglio. Contatto con l'acqua: 1d6 danni da fuoco in 1,5 m. Versato a terra copre un quadrato di 1,5 m; una volta incendiato brucia 1 minuto infliggendo 1d4 danni da fuoco a chi entra o termina il turno nell'area (una volta per turno).",
+  "fonte": {
+    "manuale": "Brancalonia Macaronicon",
+    "pagine": "47"
+  },
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "stato": "da_validare"
+  }
+}

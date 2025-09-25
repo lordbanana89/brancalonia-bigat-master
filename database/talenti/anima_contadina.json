@@ -1,0 +1,33 @@
+{
+  "nome": "Anima Contadina",
+  "fonte": "Manuale Base p.37",
+  "tipo": "talento",
+  "descrizione": "Forte affinità con passato contadino e maestria con strumenti umili",
+  "requisiti": "Nessuno",
+  "meccaniche": {
+    "incremento_caratteristica": {
+      "tipo": "advancement",
+      "descrizione": "Forza o Costituzione +1 (max 20)",
+      "implementazione": "Scelto durante level up",
+      "mode": "advancement"
+    },
+    "competenza_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Addestrare Animali",
+      "implementazione": "system.skills.ani.value = 1",
+      "mode": 5
+    },
+    "critico_migliorato": {
+      "tipo": "attivo",
+      "descrizione": "Critico su 19-20 con falcetto, zappa d'arme o forcone d'arme",
+      "implementazione": "flags.brancalonia-bigat.animaContadinaCrit = true",
+      "mode": 2,
+      "nota": "Richiede gestione custom per armi specifiche"
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "anima_contadina",
+    "compendio": "talenti"
+  }
+}

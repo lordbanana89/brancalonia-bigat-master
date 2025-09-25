@@ -1,0 +1,19 @@
+{
+  "_id": "rissamossasaccagnata",
+  "_key": "!journal!rissamossasaccagnata",
+  "name": "Saccagnata",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-saccagnata",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "JournalEntry"
+}

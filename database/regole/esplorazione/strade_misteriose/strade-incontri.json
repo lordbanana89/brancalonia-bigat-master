@@ -1,0 +1,31 @@
+{
+  "id": "strade-incontri",
+  "titolo": "Cosa ci si incontra",
+  "dado": "1d20",
+  "voci": [
+    { "tiro": 1, "descrizione": "Un tipico animale selvatico del luogo." },
+    { "tiro": 2, "descrizione": "1d4 birri a caccia di ricercati." },
+    { "tiro": 3, "descrizione": "Uno stormo di uccelli paduli che volano bassi." },
+    { "tiro": 4, "descrizione": "Un cianciaroccio particolarmente ispirato." },
+    { "tiro": 5, "descrizione": "Un rinoceronte da latte, mansueto." },
+    { "tiro": 6, "descrizione": "Un branco di foionchi che spiano i viandanti da lontano." },
+    { "tiro": 7, "descrizione": "Una coppia di elusivi spaturni." },
+    { "tiro": 8, "descrizione": "Un lonfo che sdilenca un poco e gnagio s'archipatta." },
+    { "tiro": 9, "descrizione": "Una fantasima dolente che chiede di ascoltare e risolvere il suo dramma." },
+    { "tiro": 10, "descrizione": "Un orco cattivo con un inquietante sacco sulla schiena." },
+    { "tiro": 11, "descrizione": "Una befana dei dintorni che ha un favore da chiedere." },
+    { "tiro": 12, "descrizione": "Un folletto della zona con un indovinello da risolvere." },
+    { "tiro": 13, "descrizione": "Un postiglione tenero e untuoso come una palla di burro, sempre sorridente." },
+    { "tiro": 14, "descrizione": "Una compagnia di guitti fantasma che replica ogni notte lo stesso spettacolo." },
+    { "tiro": 15, "descrizione": "Un malacoda in attesa vicino a un ponte: il primo che lo attraversa diventa suo." },
+    { "tiro": 16, "descrizione": "Una cricca di canaglie che procede nella direzione opposta: anche loro hanno imboccato la strada sbagliata." },
+    { "tiro": 17, "descrizione": "Una capra dal vello turchino in cerca di concorrenti per una gara di animali meccanici." },
+    { "tiro": 18, "descrizione": "Un frate marionetta intento a evangelizzare gli alberi." },
+    { "tiro": 19, "descrizione": "Un enigmatico eremita che vive su una colonna da anni." },
+    { "tiro": 20, "descrizione": "Un condottiero inesistente che guida un esercito di esseri invisibili e silenziosi." }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "86"
+  }
+}

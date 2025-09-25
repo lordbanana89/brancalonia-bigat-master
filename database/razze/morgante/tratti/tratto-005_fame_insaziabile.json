@@ -1,0 +1,11 @@
+{
+  "id": "race-morgante-tratto-fame_insaziabile",
+  "nome": "Fame Insaziabile",
+  "categoria": "brancalonia",
+  "dettagli": {
+    "descrizione": "Necessiti il doppio del cibo normale",
+    "costo_vita": "×2 per vitto",
+    "sociale": "Spesso non gradito a cene eleganti"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "miracolaro_chierico-livello_2-incanalare_divinita_recitare",
+  "livello": 2,
+  "nome": "incanalare_divinita_recitare",
+  "tipo": "attivo",
+  "descrizione": "Usa Incanalare Divinità per recitare il Calendario (effetto specifico da definire)",
+  "implementazione": "flags.brancalonia-bigat.recitareCalendario = true",
+  "mode": 5,
+  "nota": "Richiede definizione effetto specifico"
+}

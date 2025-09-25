@@ -1,0 +1,18 @@
+{
+  "id": "spell-base-019",
+  "nome": "Crescita di Spine",
+  "nome_originale": "Spike Growth",
+  "livello": 2,
+  "scuola": "Trasmutazione",
+  "classi": [
+    "Druido",
+    "Ranger"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Spike Growth",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Spike Growth).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale."
+}

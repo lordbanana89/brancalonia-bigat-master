@@ -1,0 +1,110 @@
+{
+  "_id": "schiavonac9746a",
+  "_key": "!item!schiavonac9746a",
+  "name": "Schiavona",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Spada con elaborata guardia a gabbia, efficace negli affondi e nei colpi di taglio.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 1.5,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "attuned": false,
+    "equipped": false,
+    "weaponType": "simpleM",
+    "baseItem": "",
+    "properties": {},
+    "magicalBonus": 0,
+    "proficient": true,
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": "",
+    "actionType": "mwak",
+    "attackBonus": "0",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d8",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "flat"
+    },
+    "ammunition": {
+      "value": "",
+      "consumed": true
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arma-base-003",
+      "categoria": "arma",
+      "sottotipo": "mischia",
+      "note_meccaniche": null,
+      "validazione": {
+        "estratto_da": "manuale_brancalonia.txt",
+        "stato": "da_validare"
+      }
+    }
+  }
+}

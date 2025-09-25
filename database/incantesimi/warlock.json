@@ -1,0 +1,52 @@
+{
+  "classe": "warlock",
+  "fonte": "Manuale Base",
+  "categorie": [
+    {
+      "nome": "Patrono della Malasorte",
+      "descrizione": "Lista ampliata concessa da Madama Sventura ai menagrami.",
+      "livelli": [
+        {
+          "livello": 1,
+          "incantesimi": [
+            {
+              "id": "spell-base-016",
+              "nome": "Anatema"
+            },
+            {
+              "id": "spell-base-017",
+              "nome": "Sonno"
+            }
+          ]
+        },
+        {
+          "livello": 2,
+          "incantesimi": [
+            {
+              "id": "spell-base-018",
+              "nome": "Accecare/Assordare"
+            },
+            {
+              "id": "spell-base-019",
+              "nome": "Crescita di Spine"
+            }
+          ]
+        },
+        {
+          "livello": 3,
+          "incantesimi": [
+            {
+              "id": "spell-base-020",
+              "nome": "Animare i Morti"
+            },
+            {
+              "id": "spell-base-021",
+              "nome": "Scagliare Maledizione"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totale": 6
+}

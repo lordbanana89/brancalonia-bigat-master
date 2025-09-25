@@ -1,0 +1,7 @@
+2025/09/26-00:44:41.917197 16efbf000 Recovering log #11
+2025/09/26-00:44:41.919078 16efbf000 Delete type=0 #11
+2025/09/26-00:44:41.919116 16efbf000 Delete type=3 #10
+2025/09/26-00:44:41.921430 16f857000 Level-0 table #15: started
+2025/09/26-00:44:41.922170 16f857000 Level-0 table #15: 75436 bytes OK
+2025/09/26-00:44:41.922282 16f857000 Delete type=0 #13
+2025/09/26-00:44:41.922349 16f857000 Manual compaction at level-0 from '!item!animal001asinoomuloa0a104' @ 72057594037927935 : 1 .. '!item!zappadarme1f9dac' @ 0 : 0; will stop at (end)

@@ -1,0 +1,335 @@
+{
+  "tabella": [
+    {
+      "livello": 1,
+      "bonus_competenza": 2,
+      "dado_arti_marziali": "1d4",
+      "punti_ki": 0,
+      "movimento_senza_armatura": 0,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_1-difesa-senza-armatura",
+          "nome": "Difesa Senza Armatura",
+          "file": "../privilegi_generali/class-monaco-livello_1-difesa-senza-armatura.json"
+        },
+        {
+          "id": "class-monaco-livello_1-arti-marziali",
+          "nome": "Arti Marziali",
+          "file": "../privilegi_generali/class-monaco-livello_1-arti-marziali.json"
+        }
+      ]
+    },
+    {
+      "livello": 2,
+      "bonus_competenza": 2,
+      "dado_arti_marziali": "1d4",
+      "punti_ki": 2,
+      "movimento_senza_armatura": 10,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_2-ki",
+          "nome": "Ki",
+          "file": "../privilegi_generali/class-monaco-livello_2-ki.json"
+        },
+        {
+          "id": "class-monaco-livello_2-movimento-senza-armatura",
+          "nome": "Movimento Senza Armatura",
+          "file": "../privilegi_generali/class-monaco-livello_2-movimento-senza-armatura.json"
+        }
+      ]
+    },
+    {
+      "livello": 3,
+      "bonus_competenza": 2,
+      "dado_arti_marziali": "1d4",
+      "punti_ki": 3,
+      "movimento_senza_armatura": 10,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_3-tradizione-monastica",
+          "nome": "Tradizione Monastica",
+          "file": "../privilegi_generali/class-monaco-livello_3-tradizione-monastica.json"
+        },
+        {
+          "id": "class-monaco-livello_3-deviare-proiettili",
+          "nome": "Deviare Proiettili",
+          "file": "../privilegi_generali/class-monaco-livello_3-deviare-proiettili.json"
+        }
+      ]
+    },
+    {
+      "livello": 4,
+      "bonus_competenza": 2,
+      "dado_arti_marziali": "1d4",
+      "punti_ki": 4,
+      "movimento_senza_armatura": 10,
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.78",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        },
+        {
+          "id": "class-monaco-livello_4-caduta-lenta",
+          "nome": "Caduta Lenta",
+          "file": "../privilegi_generali/class-monaco-livello_4-caduta-lenta.json"
+        }
+      ]
+    },
+    {
+      "livello": 5,
+      "bonus_competenza": 3,
+      "dado_arti_marziali": "1d6",
+      "punti_ki": 5,
+      "movimento_senza_armatura": 10,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_5-attacco-extra",
+          "nome": "Attacco Extra",
+          "file": "../privilegi_generali/class-monaco-livello_5-attacco-extra.json"
+        },
+        {
+          "id": "class-monaco-livello_5-stunning-strike",
+          "nome": "Colpo Stordente",
+          "file": "../privilegi_generali/class-monaco-livello_5-stunning-strike.json"
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "bonus_competenza": 3,
+      "dado_arti_marziali": "1d6",
+      "punti_ki": 6,
+      "movimento_senza_armatura": 15,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_6-colpi-ki",
+          "nome": "Colpi Potenziati dal Ki",
+          "file": "../privilegi_generali/class-monaco-livello_6-colpi-ki.json"
+        }
+      ]
+    },
+    {
+      "livello": 7,
+      "bonus_competenza": 3,
+      "dado_arti_marziali": "1d6",
+      "punti_ki": 7,
+      "movimento_senza_armatura": 15,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_7-evasione",
+          "nome": "Evasione",
+          "file": "../privilegi_generali/class-monaco-livello_7-evasione.json"
+        },
+        {
+          "id": "class-monaco-livello_7-quiete-mentale",
+          "nome": "Quiete Mentale",
+          "file": "../privilegi_generali/class-monaco-livello_7-quiete-mentale.json"
+        }
+      ]
+    },
+    {
+      "livello": 8,
+      "bonus_competenza": 3,
+      "dado_arti_marziali": "1d6",
+      "punti_ki": 8,
+      "movimento_senza_armatura": 15,
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.78",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 9,
+      "bonus_competenza": 4,
+      "dado_arti_marziali": "1d6",
+      "punti_ki": 9,
+      "movimento_senza_armatura": 15,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_9-movimento-muri-acqua",
+          "nome": "Camminare su Muri e Acqua",
+          "file": "../privilegi_generali/class-monaco-livello_9-movimento-muri-acqua.json"
+        }
+      ]
+    },
+    {
+      "livello": 10,
+      "bonus_competenza": 4,
+      "dado_arti_marziali": "1d6",
+      "punti_ki": 10,
+      "movimento_senza_armatura": 20,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_10-purezza-corpo",
+          "nome": "Purezza del Corpo",
+          "file": "../privilegi_generali/class-monaco-livello_10-purezza-corpo.json"
+        }
+      ]
+    },
+    {
+      "livello": 11,
+      "bonus_competenza": 4,
+      "dado_arti_marziali": "1d8",
+      "punti_ki": 11,
+      "movimento_senza_armatura": 20,
+      "privilegi": [
+        {
+          "nome": "Privilegio del Cammino",
+          "fonte": "Manuale del Giocatore p.78",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Monastic Tradition Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 12,
+      "bonus_competenza": 4,
+      "dado_arti_marziali": "1d8",
+      "punti_ki": 12,
+      "movimento_senza_armatura": 20,
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.78",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 13,
+      "bonus_competenza": 5,
+      "dado_arti_marziali": "1d8",
+      "punti_ki": 13,
+      "movimento_senza_armatura": 20,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_13-lingua-sole-luna",
+          "nome": "Lingua del Sole e della Luna",
+          "file": "../privilegi_generali/class-monaco-livello_13-lingua-sole-luna.json"
+        }
+      ]
+    },
+    {
+      "livello": 14,
+      "bonus_competenza": 5,
+      "dado_arti_marziali": "1d8",
+      "punti_ki": 14,
+      "movimento_senza_armatura": 25,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_14-anima-diamante",
+          "nome": "Anima di Diamante",
+          "file": "../privilegi_generali/class-monaco-livello_14-anima-diamante.json"
+        }
+      ]
+    },
+    {
+      "livello": 15,
+      "bonus_competenza": 5,
+      "dado_arti_marziali": "1d8",
+      "punti_ki": 15,
+      "movimento_senza_armatura": 25,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_15-corpo-senza-tempo",
+          "nome": "Corpo Senza Tempo",
+          "file": "../privilegi_generali/class-monaco-livello_15-corpo-senza-tempo.json"
+        }
+      ]
+    },
+    {
+      "livello": 16,
+      "bonus_competenza": 5,
+      "dado_arti_marziali": "1d8",
+      "punti_ki": 16,
+      "movimento_senza_armatura": 25,
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.78",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 17,
+      "bonus_competenza": 6,
+      "dado_arti_marziali": "1d10",
+      "punti_ki": 17,
+      "movimento_senza_armatura": 25,
+      "privilegi": [
+        {
+          "nome": "Privilegio del Cammino",
+          "fonte": "Manuale del Giocatore p.78",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Monastic Tradition Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 18,
+      "bonus_competenza": 6,
+      "dado_arti_marziali": "1d10",
+      "punti_ki": 18,
+      "movimento_senza_armatura": 30,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_18-corpo-vuoto",
+          "nome": "Corpo Vuoto",
+          "file": "../privilegi_generali/class-monaco-livello_18-corpo-vuoto.json"
+        }
+      ]
+    },
+    {
+      "livello": 19,
+      "bonus_competenza": 6,
+      "dado_arti_marziali": "1d10",
+      "punti_ki": 19,
+      "movimento_senza_armatura": 30,
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.78",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 20,
+      "bonus_competenza": 6,
+      "dado_arti_marziali": "1d10",
+      "punti_ki": 20,
+      "movimento_senza_armatura": 30,
+      "privilegi": [
+        {
+          "id": "class-monaco-livello_20-perfezione-interiore",
+          "nome": "Perfezione Interiore",
+          "file": "../privilegi_generali/class-monaco-livello_20-perfezione-interiore.json"
+        }
+      ]
+    }
+  ]
+}

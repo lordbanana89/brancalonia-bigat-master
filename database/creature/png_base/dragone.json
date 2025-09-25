@@ -1,0 +1,85 @@
+{
+  "id": "png-dragone",
+  "nome": "Dragone",
+  "nome_inglese": "Dragoon",
+  "descrizione": "Soldato di fanteria pesante, veterano di molte battaglie. I dragoni sono truppe d'élite, spesso al servizio di nobili o compagnie mercenarie importanti.",
+  "tipo": "Umanoide",
+  "taglia": "Media",
+  "allineamento": "Qualsiasi",
+  "classe_armatura": {
+    "valore": 18,
+    "tipo": "armatura completa"
+  },
+  "punti_ferita": {
+    "valore": 52,
+    "formula": "7d8 + 21"
+  },
+  "velocita": {
+    "camminare": "9 m"
+  },
+  "caratteristiche": {
+    "forza": 16,
+    "destrezza": 13,
+    "costituzione": 16,
+    "intelligenza": 10,
+    "saggezza": 11,
+    "carisma": 10
+  },
+  "modificatori": {
+    "forza": "+3",
+    "destrezza": "+1",
+    "costituzione": "+3",
+    "intelligenza": "+0",
+    "saggezza": "+0",
+    "carisma": "+0"
+  },
+  "tiri_salvezza": {
+    "forza": "+5",
+    "costituzione": "+5"
+  },
+  "abilita": {
+    "atletica": "+5",
+    "percezione": "+2"
+  },
+  "sensi": {
+    "percezione_passiva": 12
+  },
+  "linguaggi": "Volgare",
+  "grado_sfida": 3,
+  "punti_esperienza": 700,
+  "azioni": [
+    {
+      "nome": "Multiattacco",
+      "descrizione": "Il dragone effettua due attacchi con l'alabarda."
+    },
+    {
+      "nome": "Alabarda",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+5",
+      "portata": "3 m",
+      "bersagli": "un bersaglio",
+      "danno": "8 (1d10 + 3) danni taglienti"
+    },
+    {
+      "nome": "Balestra Pesante",
+      "tipo": "Attacco con Arma a Distanza",
+      "bonus_attacco": "+3",
+      "gittata": "30/120 m",
+      "bersagli": "un bersaglio",
+      "danno": "6 (1d10 + 1) danni perforanti"
+    }
+  ],
+  "note_brancalonia": {
+    "ruolo": "Fanteria pesante d'élite",
+    "equipaggiamento": "Armatura completa e alabarda",
+    "esperienza": "Veterano di molte battaglie",
+    "impiego": "Truppe di nobili o compagnie mercenarie"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 3,
+    "size": "med",
+    "type": "humanoid"
+  },
+  "fonte": "Brancalonia Manuale Base p.186"
+}

@@ -1,0 +1,13 @@
+{
+  "titolo": "Taglia",
+  "elementi": [
+    {
+      "tipo": "descrizione",
+      "file": "descrizione.json"
+    },
+    {
+      "tipo": "livelli",
+      "file": "livelli.json"
+    }
+  ]
+}

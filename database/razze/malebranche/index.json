@@ -1,0 +1,27 @@
+{
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione_globale": "Dettagli meccanici completi di tutte le razze giocabili",
+  "nome": "Malebranche",
+  "altri_nomi": "Diavolo minore, Tiefling",
+  "descrizione": "Discendenti di diavoli, con eredità infernale visibile",
+  "aumento_caratteristiche": {
+    "carisma": "+2",
+    "intelligenza": "+1"
+  },
+  "eta": {
+    "maturita": "18 anni",
+    "vita_media": "100 anni"
+  },
+  "allineamento": "Tendenza malvagia ma non automatica",
+  "taglia": "Media",
+  "velocita": "9 metri",
+  "scurovisione": "18 metri",
+  "linguaggi": [
+    "Comune",
+    "Infernale"
+  ],
+  "pregiudizi": "Temuti e odiati, spesso ingiustamente accusati",
+  "collegamenti": {
+    "tratti": "tratti/index.json"
+  }
+}

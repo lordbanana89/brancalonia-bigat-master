@@ -1,0 +1,16 @@
+{
+  "id": "gear-veh-001",
+  "nome": "Carretto",
+  "categoria": "oggetto_comune",
+  "sottotipo": "veicoli",
+  "costo": "15 mo",
+  "peso": "45 kg",
+  "descrizione": "Veicolo a due ruote trainato da un asino o mulo; trasporta fino a 300 kg.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

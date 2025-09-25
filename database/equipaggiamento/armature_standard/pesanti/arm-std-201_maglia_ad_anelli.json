@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-201",
+  "nome": "Maglia ad Anelli",
+  "categoria": "armatura_standard",
+  "tipo": "pesante",
+  "costo": "30 mo",
+  "classe_armatura": "14",
+  "bonus_ca": null,
+  "forza_minima": "—",
+  "furtivita": "Svantaggio",
+  "peso": "18.1 kg",
+  "descrizione": "Abito di cuoio con anelli metallici cuciti sopra.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

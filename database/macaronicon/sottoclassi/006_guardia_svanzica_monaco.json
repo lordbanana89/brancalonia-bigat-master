@@ -1,0 +1,35 @@
+{
+  "id": "mac-sub-006",
+  "nome": "Guardia Svanzica",
+  "classe_base": "Monaco",
+  "categoria": "Tradizione Monastica",
+  "fonte": {
+    "manuale": "Brancalonia Macaronicon",
+    "pagine": "28-29"
+  },
+  "descrizione": "Monaci d'élite al servizio del Credo, addestrati all'alabarda e ai sacri dogmi svanzici.",
+  "progressione": [
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "nome": "Addestramento della Guardia",
+          "descrizione": "Ottieni competenza in Religione e nell'alabarda (conta come arma da monaco). Schivando con l'alabarda impugnata ottieni +2 CA, puoi effettuare attacchi di opportunità quando le creature entrano nella tua portata, e spendendo 1 punto ki dopo un attacco con l'alabarda imponi un TS Costituzione al bersaglio o cade prono."
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "privilegi": [
+        {
+          "nome": "Sacri dogmi di Svanzica",
+          "descrizione": "Con un'azione puoi spendere 2 punti ki per lanciare faro di speranza, guardiani spirituali, punizione marchiante o scudo della fede senza componenti materiali. Ottieni inoltre il trucchetto taumaturgia, se non lo conoscevi già."
+        }
+      ]
+    }
+  ],
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo_fino_a_livello": 6
+  }
+}

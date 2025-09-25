@@ -1,0 +1,67 @@
+{
+  "id": "class-monaco-livello_2-ki",
+  "nome": "Ki",
+  "nome_brancalonia": "Spirito del Frate",
+  "livello": 2,
+  "tipo": "risorsa",
+  "descrizione": "Il tuo addestramento ti permette di sfruttare l'energia mistica del ki. Il tuo accesso a questa energia è rappresentato da un numero di punti ki. Il tuo livello da monaco determina il numero di punti che hai. Puoi spendere questi punti per alimentare vari privilegi ki. Inizi conoscendo tre di questi privilegi: Raffica di Colpi, Difesa Paziente e Passo del Vento. Recuperi tutti i punti ki spesi quando completi un riposo breve o lungo.",
+  "meccaniche": {
+    "punti_ki": {
+      "formula": "Livello monaco",
+      "recupero": "Riposo breve o lungo",
+      "progressione": {
+        "livello_2": 2,
+        "livello_5": 5,
+        "livello_10": 10,
+        "livello_15": 15,
+        "livello_20": 20
+      }
+    },
+    "cd_ki": {
+      "formula": "8 + bonus competenza + mod Saggezza"
+    },
+    "abilita_base": {
+      "raffica_colpi": {
+        "costo": "1 ki",
+        "effetto": "2 colpi senz'armi come azione bonus"
+      },
+      "difesa_paziente": {
+        "costo": "1 ki",
+        "effetto": "Azione Schivata come azione bonus"
+      },
+      "passo_vento": {
+        "costo": "1 ki",
+        "effetto": "Dash o Disengage + salto raddoppiato"
+      }
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "resource",
+    "configurazione": {
+      "system.resources.ki": {
+        "value": "@classes.monk.levels",
+        "max": "@classes.monk.levels"
+      }
+    }
+  },
+  "calcoli_efficienza": {
+    "raffica": {
+      "danno_extra": "2d4+6 al livello 2",
+      "valore": "Migliore uso offensivo base"
+    },
+    "difesa": {
+      "svantaggio_attacchi": "~25% miss rate increase",
+      "valore": "Sopravvivenza in situazioni difficili"
+    }
+  },
+  "gestione_risorse": {
+    "livello_basso": "2-5 ki, usare con parsimonia",
+    "livello_medio": "6-10 ki, più libertà",
+    "livello_alto": "11+ ki, spam abilities"
+  },
+  "sinergie": {
+    "con_stunning_strike": "Più attacchi = più stun",
+    "con_mobility": "Step of Wind per super mobilità"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78"
+}

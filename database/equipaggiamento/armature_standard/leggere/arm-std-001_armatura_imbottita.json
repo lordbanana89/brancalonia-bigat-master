@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-001",
+  "nome": "Armatura Imbottita",
+  "categoria": "armatura_standard",
+  "tipo": "leggera",
+  "costo": "5 mo",
+  "classe_armatura": "11 + Mod Destrezza",
+  "bonus_ca": null,
+  "forza_minima": "—",
+  "furtivita": "Svantaggio",
+  "peso": "3.6 kg",
+  "descrizione": "Giacca trapuntata imbottita di lana o cotone.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

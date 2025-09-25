@@ -1,0 +1,30 @@
+{
+  "nome": "Spadaccino",
+  "classe_base": "Guerriero",
+  "fonte": "Manuale Base p.22",
+  "descrizione": "Maestri d'arme e duellanti delle scuole di scherma del Regno",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Archetipo Marziale",
+  "validazione": {
+    "implementato": true,
+    "file_id": "spadaccino_scuola",
+    "compendio": "brancalonia-features",
+    "note": "Richiede condizioni per applicare bonus situazionali"
+  },
+  "privilegi": {
+    "totale": 1,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "id": "spadaccino_guerriero-livello_3-scuola_scherma",
+          "nome": "scuola_scherma",
+          "file": "privilegi/spadaccino_guerriero-livello_3-scuola_scherma.json"
+        }
+      ]
+    }
+  ]
+}

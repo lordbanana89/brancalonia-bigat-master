@@ -1,0 +1,64 @@
+{
+  "categoria": "intrugli",
+  "fonte": "Manuale Base p.65-66",
+  "descrizione": "Distillati, tinture e tonici speciali del Regno",
+  "nota_generale": "Gli intrugli rimangono stabili per una settimana, poi perdono effetti speciali",
+  "totale": 11,
+  "elementi": [
+    {
+      "id": "intruglio-001",
+      "nome": "Acquamorte",
+      "file": "intruglio-001.json"
+    },
+    {
+      "id": "intruglio-002",
+      "nome": "Afrore di Servatico",
+      "file": "intruglio-002.json"
+    },
+    {
+      "id": "intruglio-003",
+      "nome": "Cordiale Biondino",
+      "file": "intruglio-003.json"
+    },
+    {
+      "id": "intruglio-004",
+      "nome": "Estratto di Fandonia",
+      "file": "intruglio-004.json"
+    },
+    {
+      "id": "intruglio-005",
+      "nome": "Fuoco d'Aspromonti",
+      "file": "intruglio-005.json"
+    },
+    {
+      "id": "intruglio-006",
+      "nome": "Grattachecca del Cocito",
+      "file": "intruglio-006.json"
+    },
+    {
+      "id": "intruglio-007",
+      "nome": "Infernet Malebranche",
+      "file": "intruglio-007.json"
+    },
+    {
+      "id": "intruglio-008",
+      "nome": "Intruglio della Forza",
+      "file": "intruglio-008.json"
+    },
+    {
+      "id": "intruglio-009",
+      "nome": "Panacea dei Fieronzi",
+      "file": "intruglio-009.json"
+    },
+    {
+      "id": "intruglio-010",
+      "nome": "Presenzio",
+      "file": "intruglio-010.json"
+    },
+    {
+      "id": "intruglio-011",
+      "nome": "Richiamino",
+      "file": "intruglio-011.json"
+    }
+  ]
+}

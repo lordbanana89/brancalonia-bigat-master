@@ -1,0 +1,11 @@
+{
+  "categoria": "Oggetti Speciali",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "oggetto-base-001",
+      "nome": "Sella della Donzella in Pericolo",
+      "file": "gear-special-001_sella_della_donzella_in_pericolo.json"
+    }
+  ]
+}

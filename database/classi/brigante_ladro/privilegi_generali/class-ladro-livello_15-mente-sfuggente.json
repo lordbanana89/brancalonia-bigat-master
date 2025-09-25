@@ -1,0 +1,151 @@
+{
+  "id": "class-ladro-livello_15-mente-sfuggente",
+  "nome": "Mente Sfuggente",
+  "nome_brancalonia": "Volontà del Libero",
+  "livello": 15,
+  "tipo": "passivo",
+  "descrizione": "Al 15° livello, hai acquisito una forza mentale superiore. Ottieni competenza nei tiri salvezza su Saggezza.",
+  "meccaniche": {
+    "beneficio": {
+      "tipo": "Competenza TS Saggezza",
+      "bonus": "Aggiunge bonus competenza",
+      "progressione": {
+        "livello_15": "+5",
+        "livello_17": "+6",
+        "livello_20": "+6"
+      }
+    },
+    "se_gia_competente": {
+      "RAW": "Non stack (già competente)",
+      "house_rule_comune": "Alcuni DM danno expertise",
+      "alternativa": "Scegli altro TS"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "competenza_ts",
+    "configurazione": {
+      "system.abilities.wis.proficient": 1
+    },
+    "se_multiclasse": {
+      "check": "Se già competente, nessun beneficio",
+      "nota": "Non dà expertise RAW"
+    }
+  },
+  "calcoli_ts": {
+    "con_saggezza_14": {
+      "bonus_base": "+2",
+      "con_competenza": "+7 al livello 15",
+      "probabilita_cd_15": "65% successo",
+      "probabilita_cd_20": "40% successo"
+    },
+    "con_saggezza_16": {
+      "bonus_base": "+3",
+      "con_competenza": "+8 al livello 15",
+      "probabilita_cd_15": "70% successo",
+      "probabilita_cd_20": "45% successo"
+    }
+  },
+  "importanza": {
+    "vs_controllo_mentale": {
+      "spell_comuni": [
+        "Hold Person",
+        "Charm Person",
+        "Dominate Person",
+        "Fear",
+        "Command"
+      ],
+      "impatto": "Riduce vulnerabilità principale del ladro"
+    },
+    "vs_percezione": {
+      "monster_abilities": "Molte abilità frightening",
+      "trappole": "Alcune trappole mentali"
+    }
+  },
+  "confronto_difese_mentali": {
+    "vs_paladino_aura": {
+      "paladino": "+CHA a tutti TS in 10ft",
+      "ladro": "+5/6 solo Saggezza",
+      "differenza": "Paladino aiuta party"
+    },
+    "vs_monaco_diamond_soul": {
+      "monaco": "Competenza TUTTI i TS",
+      "ladro": "Solo Saggezza",
+      "livello": "Monaco al 14°, Ladro al 15°"
+    },
+    "vs_berserker_mindless": {
+      "berserker": "Immune charm/fear in rage",
+      "ladro": "Bonus TS sempre",
+      "affidabilita": "Ladro sempre, berserker condizionale"
+    }
+  },
+  "sinergie": {
+    "con_indomitable": "Fighter multiclass per reroll",
+    "con_resilient": "Talento per altro TS mentale",
+    "con_lucky": "Reroll per TS critici",
+    "con_wisdom_items": {
+      "periapt_wisdom": "+2 Saggezza",
+      "tome_understanding": "+2 Saggezza permanente"
+    }
+  },
+  "build_considerations": {
+    "ASI_priority": {
+      "principale": "DEX sempre primaria",
+      "secondaria": "CON per sopravvivenza",
+      "terziaria": "WIS ora vale la pena"
+    },
+    "talenti_utili": [
+      "Resilient (CON) per concentrazione",
+      "Alert per iniziativa e no sorpresa",
+      "Lucky per reroll TS"
+    ]
+  },
+  "scenari_tipici": {
+    "vs_vampire_charm": {
+      "cd": "CD 17 tipicamente",
+      "senza": "+2 WIS = 20% successo",
+      "con": "+7 WIS = 50% successo"
+    },
+    "vs_ancient_dragon_fear": {
+      "cd": "CD 21",
+      "senza": "+2 = 15% successo",
+      "con": "+8 = 40% successo"
+    },
+    "vs_aboleth_enslave": {
+      "cd": "CD 18",
+      "senza": "+2 = 25% successo",
+      "con": "+7 = 45% successo"
+    }
+  },
+  "valore_progression": {
+    "pre_15": "Vulnerabile a controllo mentale",
+    "post_15": "Significativamente più resistente",
+    "tier_4": "Fondamentale contro minacce high-level"
+  },
+  "multiclasse_impact": {
+    "da_monk": "Già competente, no beneficio",
+    "da_druid": "Già competente, no beneficio",
+    "da_cleric": "Già competente, no beneficio",
+    "consiglio": "Evita multiclasse WIS casters"
+  },
+  "narrazione_brancalonia": {
+    "descrizione": "Il Brigante ha visto troppo per essere ingannato",
+    "flavor": [
+      "Mente temprata da anni di pericoli",
+      "Volontà forgiata nelle ombre",
+      "Impossibile da controllare o corrompere"
+    ],
+    "background": "Veterano di mille inganni"
+  },
+  "house_rules_comuni": {
+    "expertise_variant": "Alcuni DM danno expertise se già competente",
+    "choice_variant": "Scegli altro TS se già WIS",
+    "all_mental": "Tutti i TS mentali migliorati"
+  },
+  "limitazioni": {
+    "solo_saggezza": "Non aiuta INT o CHA saves",
+    "no_immunity": "Non immune, solo bonus",
+    "tardi": "Arriva al 15° livello"
+  },
+  "note_dm": "Slippery Mind colma una debolezza critica del ladro. Semplice ma importante per sopravvivenza high-level.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97"
+}

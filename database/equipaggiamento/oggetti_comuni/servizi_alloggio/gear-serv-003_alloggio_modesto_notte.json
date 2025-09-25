@@ -1,0 +1,16 @@
+{
+  "id": "gear-serv-003",
+  "nome": "Alloggio Modesto (notte)",
+  "categoria": "oggetto_comune",
+  "sottotipo": "servizi_alloggio",
+  "costo": "5 ma",
+  "peso": "—",
+  "descrizione": "Branda in dormitorio comune con biancheria logora.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

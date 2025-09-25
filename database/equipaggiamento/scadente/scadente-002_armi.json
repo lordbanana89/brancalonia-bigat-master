@@ -1,0 +1,20 @@
+{
+  "id": "scadente-002",
+  "nome": "Armi Scadenti",
+  "categoria": "equipaggiamento_scadente",
+  "costo_relativo": "1/10 del prezzo standard",
+  "descrizione": "Armi improvvisate o maltenute che tendono a smontarsi al primo colpo.",
+  "effetti_meccanici": {
+    "malus": "Quando ottieni 1 naturale al tiro per colpire, l'arma si smonta.",
+    "conseguenza": "Finché non spendi un'azione per sistemarla, gli attacchi successivi con l'arma subiscono svantaggio."
+  },
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "62-63"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  },
+  "dettagli": "Quando un personaggio effettua un attacco con un'arma scadente e il risultato del dado è 1, l'arma si smonta, e tutti i tiri successivi subiscono svantaggio finché il personaggio non usa un'azione per sistemarla."
+}

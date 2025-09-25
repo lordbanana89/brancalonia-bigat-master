@@ -1,0 +1,26 @@
+{
+  "totale": 4,
+  "cammini": [
+    {
+      "id": "class-paladino-giuramento-devozione",
+      "nome": "Giuramento di Devozione",
+      "file": "class-paladino-giuramento-devozione.json"
+    },
+    {
+      "id": "class-paladino-giuramento-antichi",
+      "nome": "Giuramento degli Antichi",
+      "file": "class-paladino-giuramento-antichi.json"
+    },
+    {
+      "id": "class-paladino-giuramento-vendetta",
+      "nome": "Giuramento di Vendetta",
+      "file": "class-paladino-giuramento-vendetta.json"
+    },
+    {
+      "id": "cavaliere_errante_paladino",
+      "nome": "Giuramento della Cavalleresca Erranza",
+      "file": "../cavaliere_errante_paladino/index.json",
+      "nota": "Nuovo giuramento di Brancalonia"
+    }
+  ]
+}

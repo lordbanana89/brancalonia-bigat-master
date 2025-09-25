@@ -1,0 +1,10 @@
+{
+  "id": "benandante_druido-livello_6-guardiano_danza_macabra",
+  "livello": 6,
+  "nome": "guardiano_danza_macabra",
+  "tipo": "attivo",
+  "descrizione": "Non morti devono TS SAG per attaccarlo o scelgono altro bersaglio",
+  "implementazione": "flags.brancalonia-bigat.undeadProtection = true",
+  "mode": 5,
+  "nota": "Richiede macro per gestire TS automatico"
+}

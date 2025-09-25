@@ -1,0 +1,21 @@
+{
+  "nome": "Il Dono del Talento",
+  "fonte": "Manuale Base p.40",
+  "tipo": "emeriticenza",
+  "descrizione": "Ottiene un talento",
+  "requisiti": "6° livello + 9000 PE extra",
+  "usi_massimi": 2,
+  "meccaniche": {
+    "talento_aggiuntivo": {
+      "tipo": "advancement",
+      "descrizione": "Ottiene un talento a scelta",
+      "implementazione": "Gestito tramite Advancement API",
+      "mode": "advancement"
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "emeriticenza_il_dono_del_talento",
+    "compendio": "emeriticenze"
+  }
+}

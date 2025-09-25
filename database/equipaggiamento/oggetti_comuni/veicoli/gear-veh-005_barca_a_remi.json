@@ -1,0 +1,16 @@
+{
+  "id": "gear-veh-005",
+  "nome": "Barca a Remi",
+  "categoria": "oggetto_comune",
+  "sottotipo": "veicoli",
+  "costo": "50 mo",
+  "peso": "180 kg",
+  "descrizione": "Piccola imbarcazione che può trasportare quattro persone e bagagli.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

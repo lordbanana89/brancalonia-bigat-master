@@ -1,0 +1,69 @@
+{
+  "_id": "animal004cavallodasellaleggero3ea43b",
+  "_key": "!items!animal004cavallodasellaleggero3ea43b",
+  "name": "Cavallo da Sella Leggero",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cavallo rapido per spostamenti veloci; non addestrato al combattimento.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "animal-004",
+      "fonte": {
+        "manuale": "Manuale Base",
+        "pagine": "Tabella Cavalcature e Animali"
+      },
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

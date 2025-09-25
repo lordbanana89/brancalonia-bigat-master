@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-002",
+  "nome": "Anello del Patto Nuziale",
+  "rarita": "Raro",
+  "tipo": "Anello",
+  "sintonia": "Sì (coppia)",
+  "descrizione": "Coppia di anelli che lega due persone",
+  "proprieta": [
+    "I portatori sanno sempre la direzione e distanza dell'altro",
+    "Possono comunicare telepaticamente 1 volta al giorno per 1 minuto",
+    "Se uno muore, l'altro subisce 1 livello di indebolimento"
+  ],
+  "effetti_speciali": {
+    "maledizione": null,
+    "note": "Richiede cerimonia di matrimonio per attivazione",
+    "restrizione": null,
+    "rischio": null,
+    "effetto_collaterale": null,
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "id": "creature-folletto",
+  "nome": "Folletto",
+  "nome_inglese": "Pixie",
+  "descrizione": "I folletti del Regno sono esseri fatati dispettosi e imprevedibili, dotati di poteri magici notevoli. Possiedono una natura caotica e neutrale, e amano giocare scherzi agli abitanti del Regno, spesso con conseguenze inaspettate.",
+  "tipo": "Fata",
+  "taglia": "Piccola",
+  "allineamento": "Caotico neutrale",
+  "classe_armatura": {
+    "valore": 14,
+    "tipo": "naturale"
+  },
+  "punti_ferita": {
+    "valore": 22,
+    "formula": "5d6 + 5"
+  },
+  "velocita": {
+    "camminare": "9 m",
+    "nuotare": "12 m"
+  },
+  "caratteristiche": {
+    "forza": 7,
+    "destrezza": 18,
+    "costituzione": 12,
+    "intelligenza": 15,
+    "saggezza": 14,
+    "carisma": 16
+  },
+  "modificatori": {
+    "forza": "-2",
+    "destrezza": "+4",
+    "costituzione": "+1",
+    "intelligenza": "+2",
+    "saggezza": "+2",
+    "carisma": "+3"
+  },
+  "abilita": {
+    "furtivita": "+6",
+    "inganno": "+5",
+    "percezione": "+4",
+    "persuasione": "+5",
+    "rapidita_di_mano": "+6"
+  },
+  "immunita_danni": ["contundente, perforante e tagliente da attacchi non magici"],
+  "sensi": {
+    "percezione_passiva": 14,
+    "scurovisione": "18 m"
+  },
+  "linguaggi": "Volgare",
+  "grado_sfida": 2,
+  "punti_esperienza": 450,
+  "tratti": [
+    {
+      "nome": "Resistenza alla Magia",
+      "descrizione": "Il folletto dispone di vantaggio ai tiri salvezza contro incantesimi e altri effetti magici."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Pungolo",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+6",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "6 (1d4 + 4) danni perforanti"
+    },
+    {
+      "nome": "Mutaforma",
+      "descrizione": "Il folletto può usare la sua azione per trasformarsi in un gatto, una marmotta, una volpe, un gufo, o animali simili, o tornare alla sua forma naturale. Le sue statistiche, a eccezione della taglia e della velocità, non cambiano. Ogni oggetto che indossa si trasforma assieme a lui, ma non quelli che trasporta. Se muore, il folletto torna alla sua forma naturale."
+    },
+    {
+      "nome": "Polvere di Fatanza (Ricarica 6)",
+      "descrizione": "Il folletto esala uno sbuffo di polvere turchina su una creatura entro 1,5 metri da lui. Il bersaglio deve superare un tiro salvezza su Saggezza con CD 13, altrimenti per 1 minuto non può effettuare reazioni e deve tirare 1d6 all'inizio di ogni suo turno: 1-2 danza comicamente, 3-4 cade prono ridendo, 5-6 può solo tentare un tiro salvezza per liberarsi."
+    },
+    {
+      "nome": "Invisibilità",
+      "descrizione": "Il folletto diventa magicamente invisibile finché non attacca, non lancia un incantesimo o la sua concentrazione non termina. Ogni oggetto che il folletto indossa o trasporta diventa invisibile assieme a lui."
+    },
+    {
+      "nome": "Teletrasporto (Ricarica 4-6)",
+      "descrizione": "Il folletto si teletrasporta magicamente, assieme a ogni oggetto che indossa o trasporta, fino a uno spazio libero situato entro 12 metri e che esso sia in grado di vedere. Prima o dopo essersi teletrasportato, il folletto può effettuare un attacco con il pungolo."
+    }
+  ],
+  "poteri_unici": [
+    {
+      "nome": "Incantesimi Innati",
+      "caratteristica": "Carisma",
+      "cd_tiro_salvezza": 13,
+      "bonus_attacco": "+5",
+      "note": "Non richiedono componenti materiali",
+      "a_volonta": ["illusione minore", "luci danzanti", "mano magica", "passo velato", "risata incontenibile"],
+      "1_giorno": ["immagine speculare", "suggestione", "terreno illusorio"]
+    },
+    {
+      "nome": "Imitare",
+      "descrizione": "Il folletto può imitare i versi degli animali e le voci degli umanoidi. Una creatura che sente il suono può capire che si tratta di un'imitazione effettuando con successo una prova di Saggezza (Intuizione) con CD 13."
+    },
+    {
+      "nome": "Sensi Acuti",
+      "descrizione": "Il folletto dispone di vantaggio alle prove di Saggezza (Percezione) basate sulla vista, sull'udito o sull'olfatto."
+    },
+    {
+      "nome": "Telepatia Limitata",
+      "descrizione": "Il folletto può trasmettere telepaticamente idee, emozioni e immagini semplici a qualsiasi creatura situata entro 30 metri da lui e che sia in grado di comprendere un linguaggio."
+    },
+    {
+      "nome": "Immunità agli Incantesimi",
+      "descrizione": "Il folletto è immune a tre incantesimi, che variano da un folletto a un altro."
+    }
+  ],
+  "note_brancalonia": {
+    "natura": "Essere fatato del Regno",
+    "comportamento": "Dispettoso e imprevedibile",
+    "poteri": "Magici e fatati notevoli",
+    "scherzi": "Ama fare scherzi agli abitanti",
+    "variabilita": "Ogni folletto ha poteri unici diversi"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 2,
+    "size": "sm",
+    "type": "fey"
+  },
+  "fonte": "Brancalonia Macaronicon p.70"
+}

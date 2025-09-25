@@ -1,0 +1,12 @@
+{
+  "id": "brigante_ladro-livello_3-brigantaggio",
+  "livello": 3,
+  "nome": "brigantaggio",
+  "tipo": "attivo",
+  "descrizione": "Competenza in Natura e Sopravvivenza",
+  "implementazione": {
+    "natura": "system.skills.nat.value = 1",
+    "sopravvivenza": "system.skills.sur.value = 1"
+  },
+  "mode": 5
+}

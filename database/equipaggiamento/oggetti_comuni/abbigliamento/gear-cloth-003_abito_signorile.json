@@ -1,0 +1,16 @@
+{
+  "id": "gear-cloth-003",
+  "nome": "Abito Signorile",
+  "categoria": "oggetto_comune",
+  "sottotipo": "abbigliamento",
+  "costo": "15 mo",
+  "peso": "3 kg",
+  "descrizione": "Vesti ricamate, gioielli di scena e profumi adeguati per corti e salotti.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

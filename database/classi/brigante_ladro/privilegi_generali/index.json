@@ -1,0 +1,79 @@
+{
+  "classe": "brigante_ladro",
+  "categoria": "Privilegi Generali",
+  "totale": 12,
+  "privilegi": [
+    {
+      "id": "class-ladro-livello_1-competenze",
+      "nome": "Abilità del Brigante",
+      "file": "class-ladro-livello_1-competenze.json",
+      "livello": 1
+    },
+    {
+      "id": "class-ladro-livello_1-attacco-furtivo",
+      "nome": "Colpo alle Spalle",
+      "file": "class-ladro-livello_1-attacco-furtivo.json",
+      "livello": 1
+    },
+    {
+      "id": "class-ladro-livello_1-gergo-ladresco",
+      "nome": "Parlata dei Mariuoli",
+      "file": "class-ladro-livello_1-gergo-ladresco.json",
+      "livello": 1
+    },
+    {
+      "id": "class-ladro-livello_2-azione-astuta",
+      "nome": "Mossa del Mariuolo",
+      "file": "class-ladro-livello_2-azione-astuta.json",
+      "livello": 2
+    },
+    {
+      "id": "class-ladro-livello_3-archetipo-ladresco",
+      "nome": "Via del Brigante",
+      "file": "class-ladro-livello_3-archetipo-ladresco.json",
+      "livello": 3
+    },
+    {
+      "id": "class-ladro-livello_5-schivata-prodigiosa",
+      "nome": "Riflessi del Gatto",
+      "file": "class-ladro-livello_5-schivata-prodigiosa.json",
+      "livello": 5
+    },
+    {
+      "id": "class-ladro-livello_7-evasione",
+      "nome": "Schivare l'Impossibile",
+      "file": "class-ladro-livello_7-evasione.json",
+      "livello": 7
+    },
+    {
+      "id": "class-ladro-livello_11-talento-affidabile",
+      "nome": "Maestria Assoluta",
+      "file": "class-ladro-livello_11-talento-affidabile.json",
+      "livello": 11
+    },
+    {
+      "id": "class-ladro-livello_14-percezione-cieca",
+      "nome": "Sensi del Pipistrello",
+      "file": "class-ladro-livello_14-percezione-cieca.json",
+      "livello": 14
+    },
+    {
+      "id": "class-ladro-livello_15-mente-sfuggente",
+      "nome": "Volontà del Libero",
+      "file": "class-ladro-livello_15-mente-sfuggente.json",
+      "livello": 15
+    },
+    {
+      "id": "class-ladro-livello_18-inafferrabile",
+      "nome": "Ombra Intoccabile",
+      "file": "class-ladro-livello_18-inafferrabile.json",
+      "livello": 18
+    },
+    {
+      "id": "class-ladro-livello_20-colpo-di-fortuna",
+      "nome": "Destino del Maestro Ladro",
+      "file": "class-ladro-livello_20-colpo-di-fortuna.json",
+      "livello": 20
+    }
+  ]
+}

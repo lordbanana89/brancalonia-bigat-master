@@ -1,0 +1,120 @@
+{
+  "_id": "spellscurovisione0214fd",
+  "_key": "!item!spellscurovisione0214fd",
+  "name": "Scurovisione",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tocchi una creatura consenziente per concederle la capacità di vedere al buio. Per la durata, quella creatura ha scurovisione fino a una gittata di 60 piedi.</p><h3>Utilizzi Tipici</h3><ul><li>Esplorazione dungeon</li><li>Guardie notturne</li><li>Stealth missions</li><li>Combattimento al buio</li><li>Underwater vision</li></ul><h3>Note per il DM</h3><p><em>Darkvision livella playing field per party miste. 8 ore senza concentrazione ottimo. Elimina necessità torce in dungeon.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.230",
+    "level": 2,
+    "school": "trs",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 8,
+      "units": "hour"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-scurovisione",
+      "fonte": "D&D 5e PHB p.230",
+      "utilizzi": [
+        "Esplorazione dungeon",
+        "Guardie notturne",
+        "Stealth missions",
+        "Combattimento al buio",
+        "Underwater vision"
+      ],
+      "note_dm": "Darkvision livella playing field per party miste. 8 ore senza concentrazione ottimo. Elimina necessità torce in dungeon.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "attivazione": "action",
+        "range": "touch",
+        "durata": "8 hours",
+        "visione": "darkvision 60 ft"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Trasmutazione",
+        "level": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "class-ladro-livello_2-azione-astuta",
+  "nome": "Azione Astuta",
+  "nome_brancalonia": "Mossa del Mariuolo",
+  "livello": 2,
+  "tipo": "azione_bonus",
+  "descrizione": "A partire dal 2° livello, il tuo pensiero rapido e la tua agilità ti permettono di muoverti e agire velocemente. Puoi effettuare un'azione bonus in ognuno dei tuoi turni in combattimento. Questa azione può essere usata solo per Dash, Disimpegno o Nascondersi.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione_bonus",
+      "ogni_turno": true,
+      "costo": "Nessuno"
+    },
+    "opzioni_disponibili": {
+      "dash": {
+        "effetto": "Movimento extra = velocità base",
+        "uso": "Riposizionamento, fuga, inseguimento"
+      },
+      "disengage": {
+        "effetto": "Nessun attacco opportunità per il turno",
+        "uso": "Ritirata sicura, movimento tattico"
+      },
+      "hide": {
+        "effetto": "Tentativo di nascondersi",
+        "requisiti": "Copertura pesante o oscurità",
+        "beneficio": "Vantaggio al prossimo attacco"
+      }
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "abilita_permanente",
+    "flags": {
+      "dnd5e.cunningAction": true
+    },
+    "macro": {
+      "tipo": "quick_menu",
+      "opzioni": ["Dash", "Disengage", "Hide"]
+    }
+  },
+  "combo_tattiche": {
+    "hit_and_run": {
+      "turno": "Attacco con Sneak → Disengage bonus → Allontanarsi",
+      "efficacia": "Danno pieno senza rischio"
+    },
+    "sniper": {
+      "turno": "Attacco ranged → Hide bonus → Vantaggio prossimo turno",
+      "requisiti": "Copertura disponibile"
+    },
+    "mobility": {
+      "turno": "Movimento → Attacco → Dash bonus",
+      "copertura": "18m (60ft) totali di movimento"
+    }
+  },
+  "sinergie": {
+    "con_sneak_attack": {
+      "hide": "Garantisce vantaggio per SA",
+      "disengage": "Permette guerrilla tactics"
+    },
+    "con_sottoclassi": {
+      "thief": "Fast Hands aggiunge più opzioni",
+      "scout": "Extra movimento gratuito",
+      "swashbuckler": "Disengage gratis su attacco"
+    },
+    "con_talenti": {
+      "mobile": "Stacka con disengage naturale",
+      "skulker": "Hide più facilmente",
+      "alert": "Agire prima e nascondersi"
+    }
+  },
+  "calcoli_movimento": {
+    "umano_base": {
+      "normale": "9m",
+      "con_dash": "18m",
+      "mobile_feat": "21m con dash"
+    },
+    "wood_elf": {
+      "normale": "10.5m",
+      "con_dash": "21m"
+    },
+    "tabaxi": {
+      "normale": "9m",
+      "feline_agility": "36m con dash doubled"
+    }
+  },
+  "confronto_mobilita": {
+    "vs_monk": "Monk Step of Wind costa ki",
+    "vs_barbaro": "No disengage, solo movimento",
+    "vs_fighter": "Nessuna mobilità bonus",
+    "vantaggio": "Gratis ogni turno"
+  },
+  "errori_comuni": {
+    "attacco_bonus": "NON permette attacchi bonus",
+    "altre_azioni": "SOLO Dash, Disengage, Hide",
+    "doppio_hide": "Non puoi Hide due volte per turno"
+  },
+  "progressione_importanza": {
+    "tier_1": "Sopravvivenza cruciale",
+    "tier_2": "Ancora fondamentale",
+    "tier_3": "Rimane rilevante",
+    "tier_4": "Core identity del ladro"
+  },
+  "narrazione_brancalonia": {
+    "dash": "Scatto tra i vicoli di Torrigiana",
+    "disengage": "Sgusciare tra le guardie",
+    "hide": "Sparire nelle ombre dei palazzi",
+    "flavor": "L'agilità tipica dei briganti del Regno"
+  },
+  "build_esempi": {
+    "ranged_assassin": {
+      "tattica": "Hide ogni turno per vantaggio",
+      "arma": "Arco lungo o balestra"
+    },
+    "melee_skirmisher": {
+      "tattica": "Hit and disengage",
+      "arma": "Rapier + shield"
+    },
+    "scout": {
+      "tattica": "Dash per esplorazione veloce",
+      "focus": "Mobilità estrema"
+    }
+  },
+  "note_dm": "Cunning Action definisce lo stile di combattimento del ladro. Senza di essa, il ladro è troppo fragile.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96"
+}

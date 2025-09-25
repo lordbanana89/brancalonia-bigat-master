@@ -1,0 +1,17 @@
+{
+  "totale": 2,
+  "privilegi": [
+    {
+      "id": "frate_monaco-livello_3-porgi_altra_guancia",
+      "livello": 3,
+      "nome": "porgi_altra_guancia",
+      "file": "frate_monaco-livello_3-porgi_altra_guancia.json"
+    },
+    {
+      "id": "frate_monaco-livello_6-tecnica_mano_ferro_piuma",
+      "livello": 6,
+      "nome": "tecnica_mano_ferro_piuma",
+      "file": "frate_monaco-livello_6-tecnica_mano_ferro_piuma.json"
+    }
+  ]
+}

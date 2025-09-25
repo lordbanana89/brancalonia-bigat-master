@@ -1,0 +1,5 @@
+2025/09/26-00:35:23.316694 17981f000 Delete type=3 #1
+2025/09/26-00:35:23.318428 16f9eb000 Level-0 table #5: started
+2025/09/26-00:35:23.318598 16f9eb000 Level-0 table #5: 2532 bytes OK
+2025/09/26-00:35:23.318669 16f9eb000 Delete type=0 #3
+2025/09/26-00:35:23.318731 16f9eb000 Manual compaction at level-0 from '!items!animacontadina84ec09' @ 72057594037927935 : 1 .. '!items!supercazzola0a1867' @ 0 : 0; will stop at (end)

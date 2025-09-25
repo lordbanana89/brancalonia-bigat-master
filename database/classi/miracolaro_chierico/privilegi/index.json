@@ -1,0 +1,29 @@
+{
+  "totale": 4,
+  "privilegi": [
+    {
+      "id": "miracolaro_chierico-livello_1-dominio_calendario",
+      "livello": 1,
+      "nome": "dominio_calendario",
+      "file": "miracolaro_chierico-livello_1-dominio_calendario.json"
+    },
+    {
+      "id": "miracolaro_chierico-livello_1-tirare_giu_santi",
+      "livello": 1,
+      "nome": "tirare_giu_santi",
+      "file": "miracolaro_chierico-livello_1-tirare_giu_santi.json"
+    },
+    {
+      "id": "miracolaro_chierico-livello_2-incanalare_divinita_recitare",
+      "livello": 2,
+      "nome": "incanalare_divinita_recitare",
+      "file": "miracolaro_chierico-livello_2-incanalare_divinita_recitare.json"
+    },
+    {
+      "id": "miracolaro_chierico-livello_6-per_tutti_santi",
+      "livello": 6,
+      "nome": "per_tutti_santi",
+      "file": "miracolaro_chierico-livello_6-per_tutti_santi.json"
+    }
+  ]
+}

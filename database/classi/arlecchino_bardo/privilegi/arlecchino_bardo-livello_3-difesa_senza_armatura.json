@@ -1,0 +1,10 @@
+{
+  "id": "arlecchino_bardo-livello_3-difesa_senza_armatura",
+  "livello": 3,
+  "nome": "difesa_senza_armatura",
+  "tipo": "attivo",
+  "descrizione": "CA = 10 + DES + CAR senza armatura/scudo",
+  "implementazione": "flags.brancalonia-bigat.unarmoredDefense = 'arlecchino'",
+  "mode": 5,
+  "nota": "Richiede calcolo CA personalizzato"
+}

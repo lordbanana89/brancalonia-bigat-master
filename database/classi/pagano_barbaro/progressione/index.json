@@ -1,0 +1,12 @@
+{
+  "classe": "pagano_barbaro",
+  "categoria": "Progressione",
+  "totale": 1,
+  "elementi": [
+    {
+      "file": "progressione.json",
+      "voci": 20,
+      "tipo": "tabella"
+    }
+  ]
+}

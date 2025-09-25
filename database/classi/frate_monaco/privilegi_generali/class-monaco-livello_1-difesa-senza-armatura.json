@@ -1,0 +1,58 @@
+{
+  "id": "class-monaco-livello_1-difesa-senza-armatura",
+  "nome": "Difesa Senza Armatura",
+  "nome_brancalonia": "Vesti del Frate",
+  "livello": 1,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 1° livello, mentre non indossi armatura e non impugni uno scudo, la tua CA è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Saggezza.",
+  "meccaniche": {
+    "formula_ca": {
+      "base": 10,
+      "modificatori": ["Destrezza", "Saggezza"],
+      "formula": "10 + mod_DES + mod_SAG"
+    },
+    "requisiti": {
+      "armatura": "Nessuna",
+      "scudo": "Nessuno",
+      "nota": "Se indossi armatura o scudo, usi CA normale"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "formula_ac",
+    "active_effects": [
+      {
+        "key": "system.attributes.ac.calc",
+        "mode": 5,
+        "value": "custom"
+      },
+      {
+        "key": "system.attributes.ac.formula",
+        "mode": 5,
+        "value": "10 + @abilities.dex.mod + @abilities.wis.mod"
+      }
+    ]
+  },
+  "calcoli_esempio": {
+    "build_standard": {
+      "des_16_sag_16": "10+3+3 = 16 CA",
+      "des_18_sag_16": "10+4+3 = 17 CA",
+      "des_20_sag_20": "10+5+5 = 20 CA"
+    },
+    "confronto": {
+      "studded_leather": "12+DEX (max 14-17)",
+      "monaco": "Potenziale 20+ CA"
+    }
+  },
+  "progressione": {
+    "livello_1": "~14-16 CA tipica",
+    "livello_8": "~17-18 CA con ASI",
+    "livello_20": "20-22 CA possibile"
+  },
+  "sinergie": {
+    "con_bracers_defense": "Non compatibile (richiedono no armatura E no scudo)",
+    "con_ring_protection": "+1 CA si somma",
+    "con_shield_spell": "Non disponibile al monaco base"
+  },
+  "note_dm": "Il monaco può raggiungere CA molto alta ma richiede investimento in due caratteristiche.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78"
+}

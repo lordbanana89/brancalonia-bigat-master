@@ -1,0 +1,96 @@
+{
+  "_id": "straccione_hardy",
+  "name": "Tempra del Bigat",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-triple-slash-bleed.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ottieni punti ferita temporanei pari al tuo modificatore di Costituzione all’inizio di ogni combattimento e vantaggio ai TS contro malattie.</p>",
+      "chat": "",
+      "unidentified": "",
+      "richTooltip": {
+        "content": "<p>Ottieni punti ferita temporanei pari al tuo modificatore di Costituzione all’inizio di ogni combattimento e vantaggio ai TS contro malattie.</p>",
+        "flavor": ""
+      }
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "hasActiveEffects": true
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "13.347",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!straccione_hardy"
+}

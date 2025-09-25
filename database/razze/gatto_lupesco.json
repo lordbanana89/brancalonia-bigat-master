@@ -1,0 +1,78 @@
+{
+  "nome": "Gatto Lupesco",
+  "fonte": "Brancalonia Macaronicon p.7",
+  "tipo": "razza",
+  "descrizione": "Felini antropomorfi della grandezza di lonze e gattopardi con postura eretta",
+  "origine": "Probabile origine fandonica, apparsi durante Guerra dei Mille Anni",
+  "meccaniche": {
+    "incremento_caratteristiche": {
+      "tipo": "passivo",
+      "descrizione": "Destrezza +2, Carisma +1",
+      "implementazione": {
+        "destrezza": "system.abilities.dex.value + 2",
+        "carisma": "system.abilities.cha.value + 1"
+      },
+      "mode": 2
+    },
+    "eta": {
+      "tipo": "narrativo",
+      "maturita": "9-10 anni",
+      "vita_massima": "50 anni circa"
+    },
+    "taglia": {
+      "tipo": "passivo",
+      "valore": "Piccola",
+      "altezza": "130 cm",
+      "peso": "25 kg"
+    },
+    "velocita": {
+      "tipo": "attivo",
+      "descrizione": "Velocità base 9 metri",
+      "implementazione": "system.attributes.movement.walk = 30",
+      "mode": 5
+    },
+    "scurovisione": {
+      "tipo": "attivo",
+      "descrizione": "Vista superiore fino a 36 metri",
+      "implementazione": "system.attributes.senses.darkvision = 120",
+      "mode": 5
+    },
+    "graffio": {
+      "tipo": "attivo",
+      "descrizione": "Artigli naturali 1d4 + mod Destrezza danni taglio",
+      "implementazione": "flags.brancalonia-bigat.naturalWeapon.claw = '1d4'",
+      "mode": 2
+    },
+    "balzo": {
+      "tipo": "narrativo",
+      "descrizione": "Salta metri = movimento, no prove su terreno difficile"
+    },
+    "truffaldino": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Inganno e Percezione",
+      "implementazione": {
+        "inganno": "system.skills.dec.value = 1",
+        "percezione": "system.skills.prc.value = 1"
+      },
+      "mode": 5
+    },
+    "acquanera": {
+      "tipo": "narrativo",
+      "descrizione": "Svantaggio prove Atletica per nuotare"
+    },
+    "privilegio_rissa_occhi_gatto": {
+      "tipo": "narrativo",
+      "descrizione": "Azione bonus: sottrae oggetto scena comune, 1/rissa"
+    }
+  },
+  "nomi_tipici": {
+    "maschili": ["Beltrame", "Fortunato", "Rodilardo", "Rodomonte", "Straparola", "Tabarino"],
+    "femminili": ["Alinora", "Cleope", "Esmeralda", "Miralda", "Nives", "Scaramuccia", "Sutica", "Zelda"]
+  },
+  "soprannomi": ["Gatti con gli stivali", "Lonze", "Micetti", "Miciomicio", "Palle di pelo"],
+  "validazione": {
+    "implementato": false,
+    "file_id": "gatto_lupesco_macaronicon",
+    "compendio": "razze_macaronicon"
+  }
+}

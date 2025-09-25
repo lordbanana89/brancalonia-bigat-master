@@ -1,0 +1,19 @@
+{
+  "_id": "rissamossarafficadipugni",
+  "_key": "!journal!rissamossarafficadipugni",
+  "name": "Raffica di Pugni",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-raffica-di-pugni",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "JournalEntry"
+}

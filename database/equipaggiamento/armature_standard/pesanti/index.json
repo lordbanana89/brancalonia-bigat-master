@@ -1,0 +1,26 @@
+{
+  "categoria": "Armature Pesanti",
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "arm-std-201",
+      "nome": "Maglia ad Anelli",
+      "file": "arm-std-201_maglia_ad_anelli.json"
+    },
+    {
+      "id": "arm-std-202",
+      "nome": "Cotta di Maglia",
+      "file": "arm-std-202_cotta_di_maglia.json"
+    },
+    {
+      "id": "arm-std-203",
+      "nome": "Cotta a Lamine",
+      "file": "arm-std-203_cotta_a_lamine.json"
+    },
+    {
+      "id": "arm-std-204",
+      "nome": "Armatura Completa",
+      "file": "arm-std-204_armatura_completa.json"
+    }
+  ]
+}

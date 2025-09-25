@@ -1,0 +1,11 @@
+{
+  "id": "race-morgante-tratto-resilienza_implacabile",
+  "nome": "Resilienza Implacabile",
+  "categoria": "base",
+  "dettagli": {
+    "descrizione": "Una volta per riposo lungo, quando scendi a 0 PF, torni a 1 PF",
+    "meccanica": "1/riposo lungo, 0 PF → 1 PF",
+    "attivazione": "Reazione quando ridotto a 0"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

@@ -1,0 +1,26 @@
+{
+  "livello": 2,
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "mac-spell-008",
+      "nome": "Confessione Forzata",
+      "file": "mac-spell-008_confessione-forzata.json"
+    },
+    {
+      "id": "mac-spell-009",
+      "nome": "Esorcismo",
+      "file": "mac-spell-009_esorcismo.json"
+    },
+    {
+      "id": "mac-spell-010",
+      "nome": "Nebbia della Palude",
+      "file": "mac-spell-010_nebbia-della-palude.json"
+    },
+    {
+      "id": "mac-spell-011",
+      "nome": "Protezione del Pellegrino",
+      "file": "mac-spell-011_protezione-del-pellegrino.json"
+    }
+  ]
+}

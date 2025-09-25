@@ -1,0 +1,15 @@
+{
+  "id": "gear-004",
+  "nome": "Corda di Seta (15 m)",
+  "categoria": "provvista_avventuriera",
+  "costo": "10 mo",
+  "peso": "3 kg",
+  "descrizione": "Corda leggera ma resistente, spesso usata dagli avventurieri più ricchi.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

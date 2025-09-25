@@ -1,0 +1,61 @@
+{
+  "nome": "Burattinaio",
+  "fonte": "Brancalonia Macaronicon p.12-19",
+  "tipo": "classe",
+  "descrizione": "Artigiani e intrattenitori esperti nel costruire e manovrare marionette animate con fanfaluco",
+  "caratteristica_primaria": "Intelligenza",
+  "dado_vita": "d8",
+  "competenze": {
+    "tiri_salvezza": ["Costituzione", "Intelligenza"],
+    "abilita": "2 tra Acrobazia, Addestrare Animali, Arcano, Intrattenere, Intuizione, Percezione, Persuasione",
+    "armature": "Armature leggere",
+    "armi": "Armi semplici, spada corta, stocco",
+    "strumenti": "Strumenti da falegname, strumenti da intagliatore"
+  },
+  "equipaggiamento_iniziale": [
+    "(a) stocco o (b) 2 pugnali",
+    "(a) borsa da studioso o (b) borsa da intrattenitore",
+    "Armatura di cuoio, 3 burattini animati, strumenti da falegname"
+  ],
+  "progressione": [
+    {"livello": 1, "privilegi": "Tradizione del Burattinaio, Teatro di Fandonia", "burattini": 3, "distanza": "15m", "canoni": 0},
+    {"livello": 2, "privilegi": "Canoni", "burattini": 3, "distanza": "18m", "canoni": 2},
+    {"livello": 3, "privilegi": "Vocazione Artistica", "burattini": 4, "distanza": "18m", "canoni": 3},
+    {"livello": 4, "privilegi": "ASI", "burattini": 4, "distanza": "24m", "canoni": 3},
+    {"livello": 5, "privilegi": "Capolavoro", "burattini": 5, "distanza": "24m", "canoni": 4},
+    {"livello": 6, "privilegi": "Privilegio Tradizione", "burattini": 5, "distanza": "30m", "canoni": 4}
+  ],
+  "privilegi_classe": {
+    "teatro_fandonia": {
+      "livello": 1,
+      "descrizione": "Crea e controlla burattini animati (marotte) con fanfaluco"
+    },
+    "canoni": {
+      "livello": 2,
+      "descrizione": "Apprende tecniche speciali per i burattini"
+    },
+    "vocazione_artistica": {
+      "livello": 3,
+      "descrizione": "Sceglie sottoclasse tra tradizioni"
+    },
+    "capolavoro": {
+      "livello": 5,
+      "descrizione": "Crea un burattino speciale superiore"
+    }
+  },
+  "tradizioni": [
+    "Tradizione dei Carnefici (controllo e combattimento)",
+    "Tradizione dei Geppetti (creazione e ingegno)",
+    "Tradizione dei Mangiafuoco (spettacolo e inganno)"
+  ],
+  "note_meccaniche": {
+    "burattini_animati": "Pupazzi con cuore di fanfaluco, animati ma non senzienti",
+    "fili": "Controllo magico dei burattini entro distanza",
+    "differenza_marionette": "Le vere Marionette sono senzienti e non controllabili"
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "burattinaio_macaronicon",
+    "compendio": "classi_macaronicon"
+  }
+}

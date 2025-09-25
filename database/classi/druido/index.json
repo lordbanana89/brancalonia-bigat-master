@@ -1,0 +1,80 @@
+{
+  "id": "class-druido",
+  "nome": "Druido",
+  "tipo": "classe",
+  "fonte": "Manuale del Giocatore p.64",
+  "descrizione": "Custode dei cicli naturali che richiama la magia della terra e muta forma per proteggere il reame.",
+  "dado_vita": "d8",
+  "punti_ferita": {
+    "al_1_livello": "8 + modificatore Costituzione",
+    "livelli_successivi": "1d8 (o 5) + modificatore Costituzione per livello"
+  },
+  "competenze": {
+    "armature": [
+      "Armature leggere (non metalliche)",
+      "Armature medie (non metalliche)",
+      "Scudi (non metallici)"
+    ],
+    "armi": [
+      "Clava",
+      "Pugnale",
+      "Dardo",
+      "Giavellotto",
+      "Mazza",
+      "Bastone ferrato",
+      "Scimitarra",
+      "Falcetto",
+      "Fionda",
+      "Lancia"
+    ],
+    "attrezzi": "Kit da erborista",
+    "tiri_salvezza": [
+      "Intelligenza",
+      "Saggezza"
+    ],
+    "abilita": {
+      "numero": 2,
+      "scelte": [
+        "Arcano",
+        "Addestrare Animali",
+        "Intuizione",
+        "Medicina",
+        "Natura",
+        "Percezione",
+        "Religione",
+        "Sopravvivenza"
+      ]
+    }
+  },
+  "equipaggiamento_iniziale": [
+    "(a) uno scudo di legno oppure (b) qualsiasi arma semplice",
+    "(a) una scimitarra oppure (b) qualsiasi arma semplice da mischia",
+    "Armatura di cuoio, un equipaggiamento da esploratore e un focus druidico"
+  ],
+  "multiclasse": {
+    "requisiti": "Saggezza 13",
+    "competenze_ottenute": [
+      "Armature leggere (non metalliche)",
+      "Armature medie (non metalliche)",
+      "Scudi (non metallici)"
+    ]
+  },
+  "incantesimi": {
+    "lista": "database/incantesimi/druido.json",
+    "caratteristica": "Saggezza",
+    "preparazione": "Livello + modificatore Saggezza"
+  },
+  "note_brancalonia": {
+    "privilegio_rissa": "Furba di Bosco concede vantaggi nelle mosse di sbraco",
+    "integrazione_dnd5e": "Le capacità condivise fanno capo al compendio dnd5e"
+  },
+  "validazione": {
+    "stato": "in_progress",
+    "note": "Verificare limitazioni sull'equipaggiamento metallico e la gestione delle forme selvatiche"
+  },
+  "collegamenti": {
+    "privilegi_generali": "privilegi_generali/index.json",
+    "progressione": "progressione/progressione.json",
+    "cammini": "cammini/index.json"
+  }
+}

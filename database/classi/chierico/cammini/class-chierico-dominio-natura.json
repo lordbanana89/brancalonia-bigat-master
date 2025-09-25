@@ -1,0 +1,59 @@
+{
+  "id": "class-chierico-dominio-natura",
+  "nome": "Dominio della Natura",
+  "fonte": "Manuale del Giocatore p.61",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Acolito della Natura",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Acolyte of Nature"
+        }
+      },
+      {
+        "nome": "Competenza nelle Armature Pesanti",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bonus Proficiency (Nature)"
+        }
+      }
+    ],
+    "livello_2": [
+      {
+        "nome": "Incanalare Divinità: Ammaliare Animali e Piante",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Charm Animals and Plants"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Smorzare gli Elementi",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Dampen Elements"
+        }
+      }
+    ],
+    "livello_8": [
+      {
+        "nome": "Colpo Divino (freddo/fulmine/tuono)",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Divine Strike (Nature)"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Maestro della Natura",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Master of Nature"
+        }
+      }
+    ]
+  }
+}

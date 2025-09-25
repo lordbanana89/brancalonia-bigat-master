@@ -1,0 +1,13 @@
+{
+  "id": "frate_monaco-livello_3-porgi_altra_guancia",
+  "livello": 3,
+  "nome": "porgi_altra_guancia",
+  "tipo": "attivo",
+  "descrizione": "Usa FOR invece di DES per Difesa Senza Armatura e Deviare Proiettili, reazione: spende 1 ki per colpo senz'armi quando colpito",
+  "implementazione": {
+    "forza_per_ca": "flags.brancalonia-bigat.strForUnarmoredDef = true",
+    "contrattacco": "flags.brancalonia-bigat.porgiAltraGuancia = true"
+  },
+  "mode": 5,
+  "nota": "Richiede calcolo CA personalizzato e macro reazione"
+}

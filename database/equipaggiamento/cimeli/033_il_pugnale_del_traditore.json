@@ -1,0 +1,17 @@
+{
+  "id": "033",
+  "nome": "Il Pugnale del Traditore",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Pugnale con elsa a forma di serpente",
+  "proprieta": "+3 a colpire e danni contro alleati e amici",
+  "maledizione": "Costringe a fare TS Saggezza CD 15 per non tradire alleati in momenti critici",
+  "valore": "500 mo",
+  "storia": "Usato per pugnalare Cesare",
+  "maledizione_specifica": "Costringe a fare TS Saggezza CD 15 per non tradire alleati in momenti critici",
+  "implementazione": {
+    "tipo": "magico_minore",
+    "attivo": true,
+    "active_effects": []
+  }
+}

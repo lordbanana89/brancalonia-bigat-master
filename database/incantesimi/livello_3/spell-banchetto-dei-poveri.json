@@ -1,0 +1,68 @@
+{
+  "id": "spell-banchetto-dei-poveri",
+  "nome": "Banchetto dei Poveri",
+  "nome_inglese": "Feast of the Poor",
+  "livello": 3,
+  "scuola": "Evocazione",
+  "tempo_lancio": "10 minuti",
+  "gittata": "9 metri",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Cipolla, sedano, carota e odori"
+  },
+  "durata": "Istantanea",
+  "descrizione": "L'incantatore evoca un grande banchetto, a base di pasta, pizza, vino e altre pietanze tipiche della regione di appartenenza dell'incantatore. Pasteggiare al banchetto richiede 1 ora, al termine della quale il banchetto scompare; gli effetti benefici del banchetto non si applicano finché l'ora non è trascorsa. Fino a un massimo di altre dodici creature possono partecipare al banchetto. Ogni creatura che partecipa al banchetto ottiene i benefici di un riposo breve e riduce di 1 il suo livello di indebolimento.",
+  "classi": ["Chierico", "Druido"],
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 3,
+    "attivazione": "10 minutes",
+    "range": 30,
+    "durata": "instantaneous",
+    "partecipanti": 13
+  },
+  "meccaniche_brancalonia": {
+    "tempo_consumo": "1 ora per mangiare",
+    "benefici": "Riposo breve + -1 indebolimento",
+    "max_creature": "12 + incantatore",
+    "cibo_regionale": "Varia per regione",
+    "effetti_dopo": "Solo dopo 1 ora completa"
+  },
+  "cibo_evocato": [
+    "Pasta di vari tipi",
+    "Pizza tradizionale",
+    "Vino locale",
+    "Pietanze regionali",
+    "Soffritto base (cipolla, sedano, carota)"
+  ],
+  "benefici_meccanici": {
+    "riposo_breve": "HD spesi + recupero abilità",
+    "indebolimento": "-1 livello exhaustion",
+    "tempo_richiesto": "1 ora piena",
+    "interruzione": "Perde benefici se interrotto"
+  },
+  "confronto_heroes_feast": {
+    "livello": "3° vs 6°",
+    "benefici": "Minori ma utili",
+    "costo": "Componenti economiche",
+    "durata": "1 ora vs istantaneo",
+    "flavor": "Popolare vs eroico"
+  },
+  "utilizzi": [
+    "Recupero durante esplorazione",
+    "Ridurre exhaustion party",
+    "Riposo breve sicuro",
+    "Momento roleplay conviviale",
+    "Diplomazia tramite cibo"
+  ],
+  "flavor_brancalonia": {
+    "cucina_povera": "Piatti tradizionali popolari",
+    "regionalità": "Menu cambia per zona",
+    "convivialità": "Spirito italiano del pasto",
+    "soffritto": "Base cucina mediterranea"
+  },
+  "note_dm": "Banchetto dei Poveri è versione Brancalonia di Heroes' Feast. Più accessibile ma meno potente. Ottimo per recupero e flavor.",
+  "fonte": "Brancalonia Macaronicon p.50"
+}

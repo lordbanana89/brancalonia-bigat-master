@@ -1,0 +1,31 @@
+{
+  "id": "generatore-bettole-specialita",
+  "titolo": "Specialita della casa",
+  "dado": "1d20",
+  "voci": [
+    {"tiro": 1, "descrizione": "Linguine al freddo: pasta lunga con avanzi assortiti, spesso rimasta nelle teglie e servita fredda ai piu disperati."},
+    {"tiro": 2, "descrizione": "Spaghetti e bucatini al cartoccio perche mancano i piatti."},
+    {"tiro": 3, "descrizione": "Pasta alla meretriciana."},
+    {"tiro": 4, "descrizione": "Grappa e distillati di contrabbando."},
+    {"tiro": 5, "descrizione": "Vino bianco e zuppe di pesce boccalone, con o senza coda."},
+    {"tiro": 6, "descrizione": "Uno sfilatino tutto speciale, pane duro da canaglie."},
+    {"tiro": 7, "descrizione": "Tranci di focaccia condita di vari gusti."},
+    {"tiro": 8, "descrizione": "Formaggi di ogni genere, ottimi ma dall'odore micidiale; tutto in cucina e fatto col formaggio."},
+    {"tiro": 9, "descrizione": "Frittatone di cipolle e birra ghiacciata: in sala vige il rutto libero."},
+    {"tiro": 10, "descrizione": "Padellone di fagioli e lardo con pane a volonta; i fagioli sono famigerati per quanto fanno schifo."},
+    {"tiro": 11, "descrizione": "Maccheroni all'Estrema Unzione: unti e piccantissimi, fino a provocare lacrime o malori."},
+    {"tiro": 12, "descrizione": "Salsicce di qualsivoglia provenienza, anche dai tagli piu dubbi; nessuno vede maiali entrare in cucina."},
+    {"tiro": 13, "descrizione": "Enormi bolliti di bestie non meglio identificate, con intingoli d'erbe e aglio e vino rosso scurissimo."},
+    {"tiro": 14, "descrizione": "Insalata di porco: spezzatino di maiale e verdure."},
+    {"tiro": 15, "descrizione": "Zuppa di topolini bianchi, da leccarsi i baffi."},
+    {"tiro": 16, "descrizione": "Fantasia di Perdenza, spezzatino di animale sconosciuto simile al coniglio."},
+    {"tiro": 17, "descrizione": "Vino rosso a damigiane, pane nero e prosciutto definito \"uno zucchero\"."},
+    {"tiro": 18, "descrizione": "Fritto misto: qualsiasi cosa commestibile portata dagli avventori viene fritta gratis se si ordina da bere."},
+    {"tiro": 19, "descrizione": "Grigliata di carne mista; e davvero mista e meglio non chiedere altro."},
+    {"tiro": 20, "descrizione": "Gamberi rossi, triglie alle erbe, lepre in dolceforte con pollastre e galletti, vino scuro che stende mezz'ora per finirlo."}
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "85"
+  }
+}

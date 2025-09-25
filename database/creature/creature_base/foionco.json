@@ -1,0 +1,77 @@
+{
+  "id": "creature-foionco",
+  "nome": "Foionco",
+  "nome_inglese": "Foionco",
+  "descrizione": "Questa creatura elusiva sarebbe secondo la leggenda un incrocio tra la faina e qualche peloso e lurido uccello, forse una sorta di mammifero volatile a metà tra il vespertilio e la lupa volante. Si dice abbia tre zampe, ma probabilmente una di esse sarebbe un altro membro sproporzionato della sua fisiologia.",
+  "tipo": "Mostruosità",
+  "taglia": "Minuscola",
+  "allineamento": "Senza allineamento",
+  "classe_armatura": {
+    "valore": 12,
+    "tipo": "naturale"
+  },
+  "punti_ferita": {
+    "valore": 3,
+    "formula": "1d4 + 1"
+  },
+  "velocita": {
+    "camminare": "3 m",
+    "volare": "12 m"
+  },
+  "caratteristiche": {
+    "forza": 4,
+    "destrezza": 14,
+    "costituzione": 13,
+    "intelligenza": 2,
+    "saggezza": 12,
+    "carisma": 6
+  },
+  "modificatori": {
+    "forza": "-3",
+    "destrezza": "+2",
+    "costituzione": "+1",
+    "intelligenza": "-4",
+    "saggezza": "+1",
+    "carisma": "-2"
+  },
+  "abilita": {
+    "furtivita": "+4"
+  },
+  "sensi": {
+    "percezione_passiva": 12,
+    "scurovisione": "18 m"
+  },
+  "linguaggi": "-",
+  "grado_sfida": "1/8",
+  "punti_esperienza": 25,
+  "tratti": [
+    {
+      "nome": "Ladro Silenzioso",
+      "descrizione": "Se il foionco riesce ad avvicinarsi alla sua preda furtivamente, potrà succhiarle il sangue senza che questa se ne accorga e senza dover effettuare prima un attacco con il becco."
+    }
+  ],
+  "azioni": [
+    {
+      "nome": "Becco Rubasangue",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+4",
+      "portata": "1,5 m",
+      "bersagli": "una creatura",
+      "danno": "4 (1d4 + 2) danni perforanti",
+      "effetto_aggiuntivo": "Il foionco si avvinghia al bersaglio. Finché è avvinghiato, il foionco non attacca. All'inizio di ogni turno del foionco, il bersaglio perde 1 punto ferita a causa del dissanguamento. Il foionco può staccarsi da solo spendendo 1,5 metri del suo movimento. Lo fa dopo aver risucchiato 5 punti ferita di sangue dal bersaglio o se il bersaglio muore. Una creatura incluso il bersaglio, può usare la sua azione per staccare il foionco."
+    }
+  ],
+  "note_brancalonia": {
+    "natura": "Creatura elusiva e misteriosa",
+    "anatomia": "Ibrido faina-uccello con tre zampe",
+    "comportamento": "Succhiasangue silenzioso",
+    "leggenda": "Mammifero volatile tra vespertilio e lupa volante"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 0.125,
+    "size": "tiny",
+    "type": "monstrosity"
+  },
+  "fonte": "Brancalonia Manuale Base p.175"
+}

@@ -1,0 +1,14 @@
+2025/09/25-10:57:21.077152 173543000 Recovering log #12
+2025/09/25-10:57:21.078085 173543000 Delete type=0 #12
+2025/09/25-10:57:21.078117 173543000 Delete type=3 #10
+2025/09/25-10:57:21.079970 173ddb000 Level-0 table #18: started
+2025/09/25-10:57:21.080322 173ddb000 Level-0 table #18: 16884 bytes OK
+2025/09/25-10:57:21.080402 173ddb000 Delete type=0 #16
+2025/09/25-10:57:21.080468 173ddb000 Manual compaction at level-0 from '!items!baciodellafortuna001' @ 72057594037927935 : 1 .. '!items!vinodellaverita001' @ 0 : 0; will stop at '!items!vinodellaverita001' @ 48 : 1
+2025/09/25-10:57:21.080474 173ddb000 Compacting 1@0 + 1@1 files
+2025/09/25-10:57:21.080829 173ddb000 Generated table #19@0: 12 keys, 16884 bytes
+2025/09/25-10:57:21.080834 173ddb000 Compacted 1@0 + 1@1 files => 16884 bytes
+2025/09/25-10:57:21.080875 173ddb000 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/09/25-10:57:21.080902 173ddb000 Delete type=2 #14
+2025/09/25-10:57:21.080971 173ddb000 Delete type=2 #18
+2025/09/25-10:57:21.081023 173ddb000 Manual compaction at level-0 from '!items!vinodellaverita001' @ 48 : 1 .. '!items!vinodellaverita001' @ 0 : 0; will stop at (end)

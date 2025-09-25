@@ -1,0 +1,166 @@
+{
+  "_id": "criminipene",
+  "name": "Crimini e Punizioni",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Crimini e Punizioni",
+  "results": [
+    {
+      "_id": "crimini-pene_0",
+      "type": 0,
+      "text": "Furto minore - 10 frustate",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_0"
+    },
+    {
+      "_id": "crimini-pene_1",
+      "type": 0,
+      "text": "Bestemmia - Lingua bruciata",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_1"
+    },
+    {
+      "_id": "crimini-pene_2",
+      "type": 0,
+      "text": "Ubriachezza - Notte alla gogna",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_2"
+    },
+    {
+      "_id": "crimini-pene_3",
+      "type": 0,
+      "text": "Rissa - Multa di 10 ducati",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_3"
+    },
+    {
+      "_id": "crimini-pene_4",
+      "type": 0,
+      "text": "Adulterio - Esposto alla berlina",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_4"
+    },
+    {
+      "_id": "crimini-pene_5",
+      "type": 0,
+      "text": "Bracconaggio - Mano tagliata",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_5"
+    },
+    {
+      "_id": "crimini-pene_6",
+      "type": 0,
+      "text": "Tradimento - Impiccagione",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_6"
+    },
+    {
+      "_id": "crimini-pene_7",
+      "type": 0,
+      "text": "Stregoneria - Rogo",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_7"
+    },
+    {
+      "_id": "crimini-pene_8",
+      "type": 0,
+      "text": "Omicidio - Squartamento",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_8"
+    },
+    {
+      "_id": "crimini-pene_9",
+      "type": 0,
+      "text": "Eresia - Tortura e morte",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_9"
+    },
+    {
+      "_id": "crimini-pene_10",
+      "type": 0,
+      "text": "Diserzione - Fucilazione",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_10"
+    },
+    {
+      "_id": "crimini-pene_11",
+      "type": 0,
+      "text": "Debiti - Prigione fino al saldo",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!crimini-pene_11"
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 2700,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!criminipene"
+}

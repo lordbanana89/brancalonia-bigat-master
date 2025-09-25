@@ -1,0 +1,10 @@
+{
+  "id": "race-dotato-tratto-ascendenza_fatata",
+  "nome": "Ascendenza Fatata",
+  "categoria": "base",
+  "dettagli": {
+    "descrizione": "Vantaggio ai TS contro charme, immune a sonno magico",
+    "meccanica": "Vantaggio TS charme, immunità sleep"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

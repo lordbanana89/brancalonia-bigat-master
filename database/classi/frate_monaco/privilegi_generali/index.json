@@ -1,0 +1,25 @@
+{
+  "classe": "frate_monaco",
+  "categoria": "Privilegi Generali",
+  "totale": 3,
+  "privilegi": [
+    {
+      "id": "class-monaco-livello_1-arti-marziali",
+      "nome": "Pugni del Frate",
+      "file": "class-monaco-livello_1-arti-marziali.json",
+      "livello": 1
+    },
+    {
+      "id": "class-monaco-livello_1-difesa-senza-armatura",
+      "nome": "Vesti del Frate",
+      "file": "class-monaco-livello_1-difesa-senza-armatura.json",
+      "livello": 1
+    },
+    {
+      "id": "class-monaco-livello_2-ki",
+      "nome": "Spirito del Frate",
+      "file": "class-monaco-livello_2-ki.json",
+      "livello": 2
+    }
+  ]
+}

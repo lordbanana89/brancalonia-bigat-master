@@ -1,0 +1,56 @@
+{
+  "id": "spell-suggestione",
+  "nome": "Suggestione",
+  "nome_inglese": "Suggestion",
+  "livello": 2,
+  "scuola": "Ammaliamento",
+  "tempo_lancio": "1 azione",
+  "gittata": "30 piedi",
+  "componenti": {
+    "verbale": true,
+    "materiale": true,
+    "materiale_descrizione": "Una lingua di serpente e un favo di miele o una goccia di olio dolce"
+  },
+  "durata": "Concentrazione, fino a 8 ore",
+  "descrizione": "Suggerisci un corso di attività (limitato a una o due frasi) e influenzi magicamente una creatura che puoi vedere entro gittata e che può sentirti e capirti. Creature che non possono essere affascinate sono immuni a questo effetto. La suggestione deve essere formulata in modo che il corso d'azione sembri ragionevole. Chiedere alla creatura di pugnalarsi, lanciarsi su una lancia, immolarsi o fare qualche altro atto ovviamente dannoso termina automaticamente l'incantesimo. Il bersaglio deve effettuare un tiro salvezza su Saggezza. Con un fallimento, segue il corso d'azione che hai descritto al meglio delle sue capacità. Il corso d'azione suggerito può continuare per l'intera durata. Se l'attività suggerita può essere completata in un tempo più breve, l'incantesimo termina quando il soggetto finisce ciò che gli è stato chiesto di fare.",
+  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 2,
+    "attivazione": "action",
+    "range": 30,
+    "save": "wisdom",
+    "durata": "8 hours",
+    "concentrazione": true
+  },
+  "chiave_successo": {
+    "ragionevolezza": "DEVE sembrare ragionevole",
+    "formulazione": "Creatività nella richiesta",
+    "contesto": "Considera situazione/personalità",
+    "non_dannoso": "No autolesionismo ovvio"
+  },
+  "esempi_validi": [
+    "Il tuo capo ti aspetta urgentemente al quartier generale",
+    "Questi non sono i droidi che stai cercando",
+    "Dovresti andare a casa e ripensare la tua vita",
+    "Il ponte è pericoloso, meglio prendere la strada lunga",
+    "Quell'armatura ti rallenta, meglio toglierla"
+  ],
+  "esempi_non_validi": [
+    "Salta dal dirupo",
+    "Attacca il tuo migliore amico",
+    "Dacci tutti i tuoi averi (troppo ovvio)",
+    "Diventa mio servo per sempre"
+  ],
+  "durata_8_ore": {
+    "valore": "Può durare tutto il giorno",
+    "task_lunghi": "Viaggi, attese, ricerche",
+    "termina_se": "Completa il task richiesto"
+  },
+  "mass_suggestion": {
+    "differenza": "Mass è 6° livello, 12 creature",
+    "durata": "Mass dura 24 ore"
+  },
+  "note_dm": "Suggestion richiede creatività. 'Ragionevole' è soggettivo - DM decide. 8 ore durata lo rende potentissimo se usato bene.",
+  "fonte": "D&D 5e PHB p.279"
+}

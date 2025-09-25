@@ -1,0 +1,80 @@
+{
+  "categoria": "Avventure Macaronicon",
+  "descrizione": "12 avventure complete per Brancalonia",
+  "fonte": "Brancalonia Macaronicon p.89-159",
+  "totale": 12,
+  "avventure": [
+    {
+      "numero": 1,
+      "titolo": "La Locanda del Gatto Nero",
+      "directory": "01_la-locanda-del-gatto-nero",
+      "file": "01_la-locanda-del-gatto-nero/index.json"
+    },
+    {
+      "numero": 2,
+      "titolo": "Il Torneo della Quintana",
+      "directory": "02_il-torneo-della-quintana",
+      "file": "02_il-torneo-della-quintana/index.json"
+    },
+    {
+      "numero": 3,
+      "titolo": "La Processione dei Morti",
+      "directory": "03_la-processione-dei-morti",
+      "file": "03_la-processione-dei-morti/index.json"
+    },
+    {
+      "numero": 4,
+      "titolo": "Il Banchetto dei Condottieri",
+      "directory": "04_il-banchetto-dei-condottieri",
+      "file": "04_il-banchetto-dei-condottieri/index.json"
+    },
+    {
+      "numero": 5,
+      "titolo": "La Fiera di San Pancrazio",
+      "directory": "05_la-fiera-di-san-pancrazio",
+      "file": "05_la-fiera-di-san-pancrazio/index.json"
+    },
+    {
+      "numero": 6,
+      "titolo": "Il Matrimonio Maledetto",
+      "directory": "06_il-matrimonio-maledetto",
+      "file": "06_il-matrimonio-maledetto/index.json"
+    },
+    {
+      "numero": 7,
+      "titolo": "La Congiura dei Pugnali",
+      "directory": "07_la-congiura-dei-pugnali",
+      "file": "07_la-congiura-dei-pugnali/index.json"
+    },
+    {
+      "numero": 8,
+      "titolo": "Il Tesoro del Brigante",
+      "directory": "08_il-tesoro-del-brigante",
+      "file": "08_il-tesoro-del-brigante/index.json"
+    },
+    {
+      "numero": 9,
+      "titolo": "La Nave Fantasma",
+      "directory": "09_la-nave-fantasma",
+      "file": "09_la-nave-fantasma/index.json"
+    },
+    {
+      "numero": 10,
+      "titolo": "Il Carnevale della Morte",
+      "directory": "10_il-carnevale-della-morte",
+      "file": "10_il-carnevale-della-morte/index.json"
+    },
+    {
+      "numero": 11,
+      "titolo": "L'Assedio di Monteforte",
+      "directory": "11_l-assedio-di-monteforte",
+      "file": "11_l-assedio-di-monteforte/index.json"
+    },
+    {
+      "numero": 12,
+      "titolo": "Il Risveglio del Tarantasio",
+      "directory": "12_il-risveglio-del-tarantasio",
+      "file": "12_il-risveglio-del-tarantasio/index.json"
+    }
+  ]
+}

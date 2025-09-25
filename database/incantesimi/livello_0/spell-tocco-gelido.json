@@ -1,0 +1,50 @@
+{
+  "id": "spell-tocco-gelido",
+  "nome": "Tocco Gelido",
+  "nome_inglese": "Chill Touch",
+  "livello": 0,
+  "scuola": "Necromanzia",
+  "tempo_lancio": "1 azione",
+  "gittata": "120 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "1 round",
+  "descrizione": "Crei una mano scheletrica spettrale nello spazio di una creatura entro gittata. Effettua un attacco a distanza con incantesimo contro la creatura per assalirla con il freddo della tomba. Se colpisci, il bersaglio subisce 1d8 danni necrotici e non può recuperare punti ferita fino all'inizio del tuo prossimo turno. Fino ad allora, la mano si aggrappa al bersaglio. Se colpisci un non morto, ha anche svantaggio sui tiri per colpire contro di te fino alla fine del tuo prossimo turno.",
+  "classi": ["Mago", "Stregone", "Warlock"],
+  "danno_scaling": {
+    "livello_1": "1d8",
+    "livello_5": "2d8",
+    "livello_11": "3d8",
+    "livello_17": "4d8"
+  },
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "action",
+    "range": 120,
+    "attacco": "ranged spell",
+    "danno": "1d8",
+    "danno_tipo": "necrotic",
+    "effetti": ["no healing", "undead disadvantage"]
+  },
+  "meccaniche_uniche": {
+    "anti_healing": "Blocca OGNI cura per 1 round",
+    "vs_undead": "Disadvantage attacks se undead",
+    "range_120": "Tra i più lunghi cantrip",
+    "necrotic": "Raro tipo di danno per cantrip"
+  },
+  "valore_tattico": {
+    "shutdown_regen": "Blocca rigenerazione troll/vampire",
+    "anti_healing": "Counter a healing word",
+    "undead_defense": "Protection vs undead",
+    "long_range": "Sniper cantrip"
+  },
+  "nome_ingannevole": {
+    "non_freddo": "NO danni da freddo",
+    "non_tocco": "Range 120 ft non touch",
+    "necrotic": "Danni necrotici invece"
+  },
+  "note_dm": "Chill Touch nome sbagliato (non è freddo né touch). Anti-healing unico tra cantrip. Ottimo vs regeneration.",
+  "fonte": "D&D 5e PHB p.221"
+}

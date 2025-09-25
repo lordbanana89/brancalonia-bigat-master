@@ -1,0 +1,108 @@
+{
+  "id": "class-stregone-livello_3-metamagia",
+  "nome": "Metamagia",
+  "nome_brancalonia": "Distorsione Arcana",
+  "livello": 3,
+  "tipo": "attivo",
+  "descrizione": "Al 3° livello, ottieni la capacità di distorcere i tuoi incantesimi per adattarli ai tuoi bisogni. Guadagni due delle seguenti opzioni di Metamagia a tua scelta. Ne guadagni un'altra al 10° e 17° livello.",
+  "meccaniche": {
+    "opzioni_conosciute": {
+      "livello_3": 2,
+      "livello_10": 3,
+      "livello_17": 4
+    },
+    "opzioni_disponibili": {
+      "careful_spell": {
+        "nome": "Incantesimo Attento",
+        "costo": "1 punto",
+        "effetto": "CHA creature auto-salvano"
+      },
+      "distant_spell": {
+        "nome": "Incantesimo Distante",
+        "costo": "1 punto",
+        "effetto": "Raddoppia raggio o +30ft"
+      },
+      "empowered_spell": {
+        "nome": "Incantesimo Potenziato",
+        "costo": "1 punto",
+        "effetto": "Ritira CHA dadi danno"
+      },
+      "extended_spell": {
+        "nome": "Incantesimo Esteso",
+        "costo": "1 punto",
+        "effetto": "Durata raddoppiata (max 24h)"
+      },
+      "heightened_spell": {
+        "nome": "Incantesimo Intensificato",
+        "costo": "3 punti",
+        "effetto": "Svantaggio al primo save"
+      },
+      "quickened_spell": {
+        "nome": "Incantesimo Rapido",
+        "costo": "2 punti",
+        "effetto": "1 azione → bonus action"
+      },
+      "subtle_spell": {
+        "nome": "Incantesimo Sottile",
+        "costo": "1 punto",
+        "effetto": "No componenti V o S"
+      },
+      "twinned_spell": {
+        "nome": "Incantesimo Gemello",
+        "costo": "Livello spell punti",
+        "effetto": "Due bersagli invece di uno"
+      }
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "metamagic_options",
+    "risorse": "sorcery_points",
+    "applicazione": "Modifica spell al cast"
+  },
+  "combo_popolari": {
+    "quicken_fireball": "Fireball + Fire Bolt stesso turno",
+    "twin_haste": "Haste su 2 alleati",
+    "subtle_counterspell": "Counterspell non contrastabile",
+    "careful_hypnotic": "Hypnotic Pattern senza colpire alleati"
+  },
+  "ottimizzazione": {
+    "blaster": ["Empowered", "Quickened"],
+    "controller": ["Careful", "Heightened", "Subtle"],
+    "support": ["Twinned", "Extended"],
+    "versatile": ["Quickened", "Subtle", "Twinned"]
+  },
+  "calcoli_valore": {
+    "quickened": {
+      "azione_economia": "2 spell per turno",
+      "danno_extra": "Cantrip extra = 2d10-4d10"
+    },
+    "twinned": {
+      "efficienza": "2 spell al prezzo di 1",
+      "valore_slot": "Raddoppia valore spell slot"
+    },
+    "subtle": {
+      "non_contrastabile": "Bypassa Counterspell",
+      "sociale": "Cast invisibile"
+    }
+  },
+  "gestione_risorse": {
+    "punti_limitati": "= livello sorcerer",
+    "priorita": [
+      "Twin su spell potenti",
+      "Quicken per burst",
+      "Subtle situazionale"
+    ]
+  },
+  "confronto": {
+    "vs_wizard": "Flessibilità vs versatilità",
+    "vs_warlock": "Metamagic vs invocations",
+    "unicità": "Solo sorcerer può modificare spell così"
+  },
+  "errori_comuni": {
+    "multiple_metamagic": "Solo 1 per spell (eccetto Empowered)",
+    "twin_aoe": "Non funziona su AoE",
+    "quicken_leveled": "Solo 1 leveled spell per turno"
+  },
+  "note_dm": "Metamagia definisce il sorcerer. Quickened e Subtle possono essere molto potenti. Twin raddoppia efficienza.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.101"
+}

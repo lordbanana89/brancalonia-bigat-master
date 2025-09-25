@@ -1,0 +1,68 @@
+{
+  "id": "png-birro",
+  "nome": "Birro",
+  "nome_inglese": "Birro",
+  "descrizione": "Il birro è la classica guardia del Regno: svogliata, annoiata, corrotta, fanfarona, parassitaria e raccomandata; arrogante con i deboli e genuflessa ai capricci dei potenti. Soldati di stanza, sentinelle, piedipiatti di ronda, guardie forestali e di confine, vigili comunali, carcerieri, scorte ed esattori delle tasse... per il popolino e le canaglie tutte queste divisioni non hanno senso, e si riferiscono a loro sempre genericamente come 'birri'.",
+  "tipo": "Umanoide",
+  "taglia": "Media",
+  "allineamento": "Qualsiasi",
+  "classe_armatura": {
+    "valore": 16,
+    "tipo": "corazza a scaglie e scudetto"
+  },
+  "punti_ferita": {
+    "valore": 11,
+    "formula": "2d8 + 2"
+  },
+  "velocita": {
+    "camminare": "9 m"
+  },
+  "caratteristiche": {
+    "forza": 14,
+    "destrezza": 13,
+    "costituzione": 14,
+    "intelligenza": 10,
+    "saggezza": 12,
+    "carisma": 11
+  },
+  "modificatori": {
+    "forza": "+2",
+    "destrezza": "+1",
+    "costituzione": "+2",
+    "intelligenza": "+0",
+    "saggezza": "+1",
+    "carisma": "+0"
+  },
+  "abilita": {
+    "percezione": "+3"
+  },
+  "sensi": {
+    "percezione_passiva": 13
+  },
+  "linguaggi": "Volgare",
+  "grado_sfida": "1/8",
+  "punti_esperienza": 25,
+  "azioni": [
+    {
+      "nome": "Mazza",
+      "tipo": "Attacco con Arma da Mischia",
+      "bonus_attacco": "+4",
+      "portata": "1,5 m",
+      "bersagli": "un bersaglio",
+      "danno": "5 (1d6+2) danni contundenti"
+    }
+  ],
+  "note_brancalonia": {
+    "carattere": "Svogliato, corrotto, fanfarone",
+    "comportamento": "Arrogante coi deboli, servile coi potenti",
+    "ruoli": "Soldato, sentinella, guardia, carceriere, esattore",
+    "reputazione": "Genericamente disprezzato dal popolino"
+  },
+  "implementazione_foundry": {
+    "tipo": "npc",
+    "cr": 0.125,
+    "size": "med",
+    "type": "humanoid"
+  },
+  "fonte": "Brancalonia Manuale Base p.184"
+}

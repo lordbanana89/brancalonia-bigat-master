@@ -1,0 +1,26 @@
+{
+  "id": "mac-ciarp-011",
+  "nome": "Occhiali del Dotto",
+  "rarita": "Non comune",
+  "tipo": "Oggetto meraviglioso",
+  "sintonia": "No",
+  "descrizione": "Lenti che permettono di leggere qualsiasi lingua",
+  "proprieta": [
+    "Comprensione di lingue scritte 1 ora al giorno",
+    "Vantaggio a prove di Investigare su documenti",
+    "Causano mal di testa: 1 livello indebolimento dopo 1 ora d'uso"
+  ],
+  "effetti_speciali": {
+    "maledizione": null,
+    "note": null,
+    "restrizione": null,
+    "rischio": null,
+    "effetto_collaterale": null,
+    "difetto": null
+  },
+  "fonte": "Brancalonia Macaronicon p.48-49",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

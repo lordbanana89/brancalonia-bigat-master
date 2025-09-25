@@ -1,0 +1,19 @@
+{
+  "_id": "rissabatoste1",
+  "_key": "!journal!rissabatoste1",
+  "name": "Ammaccato",
+  "img": "icons/svg/book.svg",
+  "pages": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-batoste-1",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "JournalEntry"
+}

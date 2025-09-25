@@ -1,0 +1,129 @@
+{
+  "id": "generatore-bettole-tipo",
+  "titolo": "Tipo e sottotipo",
+  "dado": "1d8 (+1d8 opzionale)",
+  "voci": [
+    {
+      "tiro": 1,
+      "etichetta": "Osteria",
+      "descrizione": "Si consumano soprattutto vini e simili, con qualche piatto di accompagnamento.",
+      "secondo_dado": {
+        "dado": "1d8",
+        "voci": [
+          "Vineria (buona selezione di vini)",
+          "Cantina (sotterranea, con botti da spillare)",
+          "Mescita (vini e vinacci locali)",
+          "Distilleria (birra, grappa e altre bevande)",
+          "Osteria",
+          "Osteria",
+          "Osteria",
+          "Osteria"
+        ]
+      }
+    },
+    {
+      "tiro": 2,
+      "etichetta": "Locanda",
+      "descrizione": "Principale dotazione di alloggi con cene e colazioni incluse."
+    },
+    {
+      "tiro": 3,
+      "etichetta": "Taverna",
+      "descrizione": "Nessun alloggio: solo cibo, vino, giochi da bettola e risse."
+    },
+    {
+      "tiro": 4,
+      "etichetta": "Lupanare",
+      "descrizione": "Gioco d'azzardo, spettacoli discinti e casa di appuntamenti oltre a cibo e alloggio.",
+      "secondo_dado": {
+        "dado": "1d8",
+        "voci": [
+          "Casa",
+          "Casetta",
+          "Casina",
+          "Casino",
+          "Casotto",
+          "Casonne",
+          "Casona",
+          "Casaccia"
+        ]
+      }
+    },
+    {
+      "tiro": 5,
+      "etichetta": "Ritrovo",
+      "descrizione": "Base o rifugio per una o piu bande del circondario.",
+      "secondo_dado": {
+        "dado": "1d8",
+        "voci": [
+          "Tana",
+          "Buco",
+          "Covo",
+          "Posto",
+          "Angolo",
+          "Grottino",
+          "Spaccio",
+          "Portico"
+        ]
+      }
+    },
+    {
+      "tiro": 6,
+      "etichetta": "Foresteria",
+      "descrizione": "Dedicata ai viaggiatori: cibo e alloggi semplici, stalle e piccola merceria.",
+      "secondo_dado": {
+        "dado": "1d8",
+        "voci": [
+          "Rifugio",
+          "Ristoro",
+          "Ostello",
+          "Stazione",
+          "Stalla",
+          "Casale",
+          "Nido",
+          "Antro"
+        ]
+      }
+    },
+    {
+      "tiro": 7,
+      "etichetta": "Pizzicheria",
+      "descrizione": "Ritrovo all'aperto o su carrozzone, senza alloggi, con cibo e vino dozzinali.",
+      "secondo_dado": {
+        "dado": "1d8",
+        "voci": [
+          "Frasca",
+          "Norcitaneria",
+          "Tripperia",
+          "Mangiatoia",
+          "Trogolo",
+          "Rusticheria",
+          "Focacceria",
+          "Pasteria"
+        ]
+      }
+    },
+    {
+      "tiro": 8,
+      "etichetta": "Speciale",
+      "descrizione": "Bettola ricavata da altre strutture insolite.",
+      "secondo_dado": {
+        "dado": "1d8",
+        "voci": [
+          "Chiatta (barcone arenato)",
+          "Stamberga",
+          "Baracca",
+          "Caverna",
+          "Mulino",
+          "Ovile",
+          "Capanno",
+          "Carrozzone"
+        ]
+      }
+    }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "83"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "categoria": "Talenti",
+  "totale": 8,
+  "talenti": [
+    {
+      "nome": "Anima Contadina",
+      "file": "anima_contadina.json"
+    },
+    {
+      "nome": "Antica Arte Culinaria",
+      "file": "antica_arte_culinaria.json"
+    },
+    {
+      "nome": "Compagno della Selva",
+      "file": "compagno_della_selva.json"
+    },
+    {
+      "nome": "Sangue della Vilupera",
+      "file": "sangue_della_vilupera.json"
+    },
+    {
+      "nome": "Scaglianza",
+      "file": "scaglianza.json"
+    },
+    {
+      "nome": "Scudanza",
+      "file": "scudanza.json"
+    },
+    {
+      "nome": "Speziale",
+      "file": "speziale.json"
+    },
+    {
+      "nome": "Supercazzola",
+      "file": "supercazzola.json"
+    }
+  ]
+}

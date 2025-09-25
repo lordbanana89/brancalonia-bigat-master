@@ -1,0 +1,15 @@
+{
+  "id": "gear-007",
+  "nome": "Olio (fiaschetta)",
+  "categoria": "provvista_avventuriera",
+  "costo": "1 ma",
+  "peso": "0.5 kg",
+  "descrizione": "Può essere usato come combustibile (brucia 6 ore in una lanterna) o versato per creare un piccolo incendio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "totale": 4,
+  "tratti": [
+    {
+      "id": "race-dotato-tratto-ascendenza_fatata",
+      "nome": "Ascendenza Fatata",
+      "categoria": "base",
+      "file": "tratto-001_ascendenza_fatata.json"
+    },
+    {
+      "id": "race-dotato-tratto-versatilita_abilita",
+      "nome": "Versatilita Abilita",
+      "categoria": "base",
+      "file": "tratto-002_versatilita_abilita.json"
+    },
+    {
+      "id": "race-dotato-tratto-fascino_innato",
+      "nome": "Fascino Innato",
+      "categoria": "brancalonia",
+      "file": "tratto-004_fascino_innato.json"
+    },
+    {
+      "id": "race-dotato-tratto-sangue_antico",
+      "nome": "Sangue Antico",
+      "categoria": "brancalonia",
+      "file": "tratto-003_sangue_antico.json"
+    }
+  ]
+}

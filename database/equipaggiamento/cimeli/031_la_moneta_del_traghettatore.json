@@ -1,0 +1,16 @@
+{
+  "id": "031",
+  "nome": "La Moneta del Traghettatore",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Antica moneta sempre fredda",
+  "proprieta": "Chi muore con essa può tornare in vita una volta (una sola volta nella vita)",
+  "valore": "Inestimabile",
+  "storia": "Rubata a Caronte stesso",
+  "attivazione": "Deve essere tenuta sotto la lingua al momento della morte",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

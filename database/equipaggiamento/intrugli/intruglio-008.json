@@ -1,0 +1,9 @@
+{
+  "id": "intruglio-008",
+  "nome": "Intruglio della Forza",
+  "costo": "5 mo",
+  "peso": "0.5 kg",
+  "effetto": "Vantaggio prove Forza, capacità trasporto x2. Durata 1 ora o fino a fallimento prova Forza",
+  "tipo_meccanica": "consumabile",
+  "fonte": "Manuale Base p.65-66"
+}

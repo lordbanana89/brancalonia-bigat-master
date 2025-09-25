@@ -1,0 +1,17 @@
+{
+  "id": "049",
+  "nome": "La Mappa del Tesoro Maledetto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Mappa che cambia ogni volta che la guardi",
+  "proprieta": "Porta sempre a un tesoro, mai lo stesso",
+  "maledizione": "Il tesoro vale sempre meno del viaggio",
+  "valore": "Variable",
+  "storia": "1000 avventurieri la seguirono, 10 tornarono",
+  "maledizione_specifica": "Il tesoro vale sempre meno del viaggio",
+  "implementazione": {
+    "tipo": "maledetto",
+    "attivo": false,
+    "active_effects": []
+  }
+}

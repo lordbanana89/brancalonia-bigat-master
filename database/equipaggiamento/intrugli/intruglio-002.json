@@ -1,0 +1,9 @@
+{
+  "id": "intruglio-002",
+  "nome": "Afrore di Servatico",
+  "costo": "3 mo",
+  "peso": "0.5 kg",
+  "effetto": "Vantaggio Addestrare Animali, svantaggio Carisma per 1 ora",
+  "tipo_meccanica": "consumabile",
+  "fonte": "Manuale Base p.65-66"
+}

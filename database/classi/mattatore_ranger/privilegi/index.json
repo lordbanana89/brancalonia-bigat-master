@@ -1,0 +1,17 @@
+{
+  "totale": 2,
+  "privilegi": [
+    {
+      "id": "mattatore_ranger-livello_3-maestro_esibizione",
+      "livello": 3,
+      "nome": "maestro_esibizione",
+      "file": "mattatore_ranger-livello_3-maestro_esibizione.json"
+    },
+    {
+      "id": "mattatore_ranger-livello_3-occhio_mattatore",
+      "livello": 3,
+      "nome": "occhio_mattatore",
+      "file": "mattatore_ranger-livello_3-occhio_mattatore.json"
+    }
+  ]
+}

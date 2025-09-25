@@ -1,0 +1,20 @@
+{
+  "id": "mac-spell-018",
+  "livello": 5,
+  "nome": "Miracolo Minore",
+  "scuola": "Trasmutazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Tocco",
+  "componenti": "V, S, M (reliquia sacra)",
+  "durata": "Istantanea",
+  "descrizione": "Compi un piccolo miracolo: curi tutte le malattie, ripristini arti perduti, o rimuovi maledizioni da una creatura.",
+  "classi": [
+    "Chierico"
+  ],
+  "rituale": false,
+  "fonte": "Brancalonia Macaronicon p.50-52",
+  "validazione": {
+    "estratto_da": "Brancalonia-Macaronicon-ITA-2-2.txt",
+    "completo": true
+  }
+}

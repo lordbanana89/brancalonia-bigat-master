@@ -1,0 +1,21 @@
+{
+  "totale": 3,
+  "cammini": [
+    {
+      "id": "class-bardo-collegio-conoscenza",
+      "nome": "Collegio della Conoscenza",
+      "file": "class-bardo-collegio-conoscenza.json"
+    },
+    {
+      "id": "class-bardo-collegio-valore",
+      "nome": "Collegio del Valore",
+      "file": "class-bardo-collegio-valore.json"
+    },
+    {
+      "id": "arlecchino_bardo",
+      "nome": "Collegio del Carnevale",
+      "file": "../arlecchino_bardo/index.json",
+      "nota": "Sottoclasse esclusiva di Brancalonia"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-105",
+  "nome": "Mezza Armatura a Piastre",
+  "categoria": "armatura_standard",
+  "tipo": "media",
+  "costo": "750 mo",
+  "classe_armatura": "15 + Mod Destrezza (max 2)",
+  "bonus_ca": null,
+  "forza_minima": "—",
+  "furtivita": "Svantaggio",
+  "peso": "18.1 kg",
+  "descrizione": "Piastre sagomate che coprono il corpo, lasciando alcune aree protette da cuoio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "_id": "mestieripopolani",
+  "name": "Mestieri del Popolino",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Mestieri del Popolino",
+  "results": [
+    {
+      "_id": "mestieri-popolani_0",
+      "type": 0,
+      "text": "Raccoglitore di letame",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_0"
+    },
+    {
+      "_id": "mestieri-popolani_1",
+      "type": 0,
+      "text": "Venditore di sanguisughe",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_1"
+    },
+    {
+      "_id": "mestieri-popolani_2",
+      "type": 0,
+      "text": "Pulitore di latrine",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_2"
+    },
+    {
+      "_id": "mestieri-popolani_3",
+      "type": 0,
+      "text": "Accattone professionista",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_3"
+    },
+    {
+      "_id": "mestieri-popolani_4",
+      "type": 0,
+      "text": "Portatore d'acqua",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_4"
+    },
+    {
+      "_id": "mestieri-popolani_5",
+      "type": 0,
+      "text": "Spazzacamino",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_5"
+    },
+    {
+      "_id": "mestieri-popolani_6",
+      "type": 0,
+      "text": "Venditore di topi",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_6"
+    },
+    {
+      "_id": "mestieri-popolani_7",
+      "type": 0,
+      "text": "Raccoglitore di stracci",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_7"
+    },
+    {
+      "_id": "mestieri-popolani_8",
+      "type": 0,
+      "text": "Cavadenti improvvisato",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_8"
+    },
+    {
+      "_id": "mestieri-popolani_9",
+      "type": 0,
+      "text": "Piagnone a pagamento",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_9"
+    },
+    {
+      "_id": "mestieri-popolani_10",
+      "type": 0,
+      "text": "Assaggiatore di cibo",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_10"
+    },
+    {
+      "_id": "mestieri-popolani_11",
+      "type": 0,
+      "text": "Acchiapparatti",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_11"
+    },
+    {
+      "_id": "mestieri-popolani_12",
+      "type": 0,
+      "text": "Portatore di bara",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_12"
+    },
+    {
+      "_id": "mestieri-popolani_13",
+      "type": 0,
+      "text": "Venditore di amuleti falsi",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_13"
+    },
+    {
+      "_id": "mestieri-popolani_14",
+      "type": 0,
+      "text": "Cantastorie ubriaco",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_14"
+    },
+    {
+      "_id": "mestieri-popolani_15",
+      "type": 0,
+      "text": "Lavandaia",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_15"
+    },
+    {
+      "_id": "mestieri-popolani_16",
+      "type": 0,
+      "text": "Maniscalco zoppo",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_16"
+    },
+    {
+      "_id": "mestieri-popolani_17",
+      "type": 0,
+      "text": "Pescivendolo puzzolente",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_17"
+    },
+    {
+      "_id": "mestieri-popolani_18",
+      "type": 0,
+      "text": "Conciatore di pelli",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_18"
+    },
+    {
+      "_id": "mestieri-popolani_19",
+      "type": 0,
+      "text": "Disoccupato cronico",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "_key": "!results!mestieri-popolani_19"
+    }
+  ],
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 2600,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!mestieripopolani"
+}

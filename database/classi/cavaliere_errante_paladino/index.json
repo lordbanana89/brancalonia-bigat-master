@@ -1,0 +1,39 @@
+{
+  "nome": "Cavaliere Errante",
+  "classe_base": "Paladino",
+  "fonte": "Manuale Base p.26",
+  "descrizione": "Nobili decaduti e rampolli con alti ideali, aristocrazia dei pezzenti",
+  "tipo": "sottoclasse",
+  "sottoclasse": "Giuramento della Cavalleresca Erranza",
+  "validazione": {
+    "implementato": true,
+    "file_id": "cavaliere_errante_ispirare",
+    "compendio": "brancalonia-features"
+  },
+  "privilegi": {
+    "totale": 3,
+    "index": "privilegi/index.json"
+  },
+  "progressione": [
+    {
+      "livello": 3,
+      "privilegi": [
+        {
+          "id": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento",
+          "nome": "incantesimi_giuramento",
+          "file": "privilegi/cavaliere_errante_paladino-livello_3-incantesimi_giuramento.json"
+        },
+        {
+          "id": "cavaliere_errante_paladino-livello_3-ispirare_compagni",
+          "nome": "ispirare_compagni",
+          "file": "privilegi/cavaliere_errante_paladino-livello_3-ispirare_compagni.json"
+        },
+        {
+          "id": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi",
+          "nome": "proteggere_bisognosi",
+          "file": "privilegi/cavaliere_errante_paladino-livello_3-proteggere_bisognosi.json"
+        }
+      ]
+    }
+  ]
+}

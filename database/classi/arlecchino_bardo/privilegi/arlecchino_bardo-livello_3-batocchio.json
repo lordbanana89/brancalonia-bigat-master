@@ -1,0 +1,10 @@
+{
+  "id": "arlecchino_bardo-livello_3-batocchio",
+  "livello": 3,
+  "nome": "batocchio",
+  "tipo": "attivo",
+  "descrizione": "Reazione con dado ispirazione: nemico TS SAG o perde attacco ed è affascinato fino al suo turno",
+  "implementazione": "flags.brancalonia-bigat.batocchio = true",
+  "mode": 5,
+  "nota": "Richiede macro per reazione"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "018",
+  "nome": "Lo Specchio della Strega",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Piccolo specchio d'argento annerito",
+  "proprieta": "Mostra il vero aspetto di chi si specchia (rivela travestimenti e illusioni)",
+  "valore": "500 mo",
+  "storia": "La strega vi intrappolò 7 anime",
+  "pericolo": "1 su 20 mostra qualcosa che non dovrebbe esistere",
+  "implementazione": {
+    "tipo": "narrativo",
+    "attivo": false,
+    "active_effects": []
+  }
+}

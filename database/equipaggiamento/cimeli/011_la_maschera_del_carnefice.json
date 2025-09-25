@@ -1,0 +1,17 @@
+{
+  "id": "011",
+  "nome": "La Maschera del Carnefice",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Cappuccio nero con buchi per gli occhi",
+  "proprieta": "Immunità a essere riconosciuto, +2 Intimidire",
+  "maledizione": "Non può essere tolta per 24 ore una volta indossata",
+  "valore": "350 mo",
+  "storia": "Il carnefice giustiziò suo fratello senza saperlo",
+  "maledizione_specifica": "Non può essere tolta per 24 ore una volta indossata",
+  "implementazione": {
+    "tipo": "magico_minore",
+    "attivo": false,
+    "active_effects": []
+  }
+}

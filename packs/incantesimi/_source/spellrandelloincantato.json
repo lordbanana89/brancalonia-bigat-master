@@ -1,0 +1,116 @@
+{
+  "_id": "spellrandelloincantato7d30bf",
+  "_key": "!item!spellrandelloincantato7d30bf",
+  "name": "Randello Incantato",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Il legno di un bastone o quarterstaff che impugni è infuso del potere della natura. Per la durata, puoi usare la tua caratteristica da incantatore invece della Forza per i tiri per colpire e danno degli attacchi in mischia usando quell'arma, e il dado di danno dell'arma diventa un d8. L'arma diventa anche magica, se già non lo era. L'incantesimo termina se lo lanci di nuovo o se lasci andare l'arma.</p><h3>Note per il DM</h3><p><em>Shillelagh trasforma druido in melee viable. Bonus action cast importante per action economy. Ottimo per druidi non-moon.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.275",
+    "level": 0,
+    "school": "trs",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-randello-incantato",
+      "fonte": "D&D 5e PHB p.275",
+      "note_dm": "Shillelagh trasforma druido in melee viable. Bonus action cast importante per action economy. Ottimo per druidi non-moon.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "bonus",
+        "range": "touch",
+        "durata": "1 minute",
+        "weapon_enhancement": {
+          "danno": "1d8",
+          "magico": true,
+          "stat": "spellcasting ability"
+        }
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Trasmutazione",
+        "level": 0
+      }
+    }
+  }
+}

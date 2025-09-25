@@ -1,0 +1,26 @@
+{
+  "livello": 1,
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "mac-spell-004",
+      "nome": "Anatema del Bestemmiatore",
+      "file": "mac-spell-004_anatema-del-bestemmiatore.json"
+    },
+    {
+      "id": "mac-spell-005",
+      "nome": "Cerchio di Sale",
+      "file": "mac-spell-005_cerchio-di-sale.json"
+    },
+    {
+      "id": "mac-spell-006",
+      "nome": "Fiuto del Contrabbandiere",
+      "file": "mac-spell-006_fiuto-del-contrabbandiere.json"
+    },
+    {
+      "id": "mac-spell-007",
+      "nome": "Grappa del Coraggio",
+      "file": "mac-spell-007_grappa-del-coraggio.json"
+    }
+  ]
+}

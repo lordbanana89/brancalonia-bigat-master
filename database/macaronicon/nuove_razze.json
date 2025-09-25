@@ -1,0 +1,34 @@
+{
+  "fonte": "Brancalonia Macaronicon p.7-11",
+  "nuove_razze": [
+    {
+      "nome": "Gatto Lupesco",
+      "descrizione": "Felini antropomorfi grandi come lonze e gattopardi",
+      "origine": "Probabile origine fandonica, apparsi durante Guerra dei Mille Anni",
+      "caratteristiche": [
+        "Postura eretta e linguaggio umano",
+        "Abili spadaccini e musicisti",
+        "Usano titoli nobiliari inventati"
+      ],
+      "soprannomi": ["Gatti con gli stivali", "Lonze", "Micetti", "Miciomicio", "Palle di pelo"],
+      "nomi_tipici": {
+        "maschili": ["Beltrame", "Fortunato", "Rodilardo", "Rodomonte", "Straparola", "Tabarino"],
+        "femminili": ["Alinora", "Cleope", "Esmeralda", "Miralda", "Nives", "Scaramuccia", "Sutica", "Zelda"]
+      }
+    },
+    {
+      "nome": "Inesistente",
+      "descrizione": "Esseri che esistono e non esistono contemporaneamente",
+      "pagina": "p.8-9"
+    },
+    {
+      "nome": "Pantegano",
+      "descrizione": "Topi antropomorfi",
+      "pagina": "p.10-11"
+    }
+  ],
+  "nuove_sottorazze_marionette": {
+    "descrizione": "Nuove varianti per la razza Marionetta",
+    "pagina": "p.6"
+  }
+}

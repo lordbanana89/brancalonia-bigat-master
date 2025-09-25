@@ -1,0 +1,10 @@
+{
+  "id": "intruglio-011",
+  "nome": "Richiamino",
+  "costo": "1 mo",
+  "peso": "0.5 kg",
+  "effetto": "Può ripetere un tiro salvezza contro malattia o veleno",
+  "tipo_meccanica": "consumabile",
+  "nota": "Chiamato anche 'Cinquerbe', distillato officinale monastico",
+  "fonte": "Manuale Base p.65-66"
+}
