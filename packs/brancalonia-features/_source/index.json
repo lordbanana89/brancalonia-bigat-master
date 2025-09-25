@@ -1,69 +1,31 @@
 {
-  "_id": "index13fda2",
-  "_key": "!item!index13fda2",
-  "name": "Item",
-  "type": "feat",
-  "img": "icons/skills/yellow/affinity-puzzle.webp",
-  "system": {
-    "description": {
-      "value": "",
-      "chat": "",
-      "unidentified": ""
+  "classe": "warlock",
+  "categoria": "Privilegi Generali",
+  "totale": 4,
+  "privilegi": [
+    {
+      "id": "class-warlock-livello_1-patrono-ultraterreno",
+      "nome": "Patto con l'Entità",
+      "file": "class-warlock-livello_1-patrono-ultraterreno.json",
+      "livello": 1
     },
-    "source": "Brancalonia",
-    "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+    {
+      "id": "class-warlock-livello_1-magia-del-patto",
+      "nome": "Potere Pattizio",
+      "file": "class-warlock-livello_1-magia-del-patto.json",
+      "livello": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
+    {
+      "id": "class-warlock-livello_2-invocazioni-occulte",
+      "nome": "Patti Segreti",
+      "file": "class-warlock-livello_2-invocazioni-occulte.json",
+      "livello": 2
     },
-    "target": {
-      "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
-    "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    },
-    "equipped": false,
-    "identified": true,
-    "quantity": 1,
-    "weight": 0,
-    "price": {
-      "value": 0,
-      "denomination": "gp"
-    },
-    "rarity": "common",
-    "attunement": 0,
-    "requirements": "",
-    "type": {
-      "value": "class",
-      "subtype": ""
-    },
-    "recharge": {
-      "value": null,
-      "charged": false
+    {
+      "id": "class-warlock-livello_3-patto-mistico",
+      "nome": "Dono del Patrono",
+      "file": "class-warlock-livello_3-patto-mistico.json",
+      "livello": 3
     }
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {
-    "brancalonia": {}
-  }
+  ]
 }

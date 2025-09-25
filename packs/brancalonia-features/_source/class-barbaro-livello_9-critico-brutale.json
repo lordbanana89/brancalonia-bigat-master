@@ -1,0 +1,110 @@
+{
+  "id": "class-barbaro-livello_9-critico-brutale",
+  "nome": "Critico Brutale",
+  "nome_brancalonia": "Colpo Devastante",
+  "livello": 9,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 9° livello, puoi tirare un dado dell'arma addizionale quando determini i danni extra di un colpo critico con un attacco in mischia. Questo aumenta a due dadi addizionali al 13° livello e a tre dadi addizionali al 17° livello.",
+  "meccaniche": {
+    "funzionamento": {
+      "trigger": "Colpo critico con attacco in mischia",
+      "effetto": "Dadi arma extra ai danni critici",
+      "progressione": {
+        "livello_9": "1 dado arma extra",
+        "livello_13": "2 dadi arma extra",
+        "livello_17": "3 dadi arma extra"
+      }
+    },
+    "calcolo_danni_critico": {
+      "base_critico": "Raddoppia tutti i dadi dell'arma",
+      "critico_brutale": "AGGIUNGI dadi extra dopo il raddoppio",
+      "formula": "(Dadi arma × 2) + Dadi Critico Brutale + modificatori"
+    },
+    "esempi_per_arma": {
+      "ascia_bipenne_d12": {
+        "normale": "1d12 + mod",
+        "critico_base": "2d12 + mod",
+        "livello_9": "3d12 + mod",
+        "livello_13": "4d12 + mod",
+        "livello_17": "5d12 + mod"
+      },
+      "spada_lunga_d8": {
+        "normale": "1d8 + mod",
+        "critico_base": "2d8 + mod",
+        "livello_9": "3d8 + mod",
+        "livello_13": "4d8 + mod",
+        "livello_17": "5d8 + mod"
+      },
+      "pugnale_d4": {
+        "normale": "1d4 + mod",
+        "critico_base": "2d4 + mod",
+        "livello_9": "3d4 + mod",
+        "livello_13": "4d4 + mod",
+        "livello_17": "5d4 + mod"
+      }
+    },
+    "interazioni": {
+      "con_ira": "Il bonus danni dell'Ira NON viene raddoppiato",
+      "con_mezzorco": "Colpo Selvaggio del mezzorco si somma",
+      "con_champion": "Critico Migliorato aumenta frequenza critici",
+      "con_attacco_irruento": "Vantaggio aumenta probabilità critico"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "passivo",
+    "configurazione": {
+      "system.attributes.critical.damage": "@scale.barbarian.brutal-critical"
+    },
+    "scale_values": {
+      "livello_9": "1",
+      "livello_13": "2",
+      "livello_17": "3"
+    },
+    "note": "Foundry gestisce automaticamente i dadi extra sui critici"
+  },
+  "calcoli_danni_medi": {
+    "ascia_bipenne_esempio": {
+      "setup": "Forza 20 (+5), Ira attiva (+3 danni)",
+      "attacco_normale": "1d12+8 (media 14.5)",
+      "critico_livello_9": "3d12+8 (media 27.5)",
+      "critico_livello_13": "4d12+8 (media 34)",
+      "critico_livello_17": "5d12+8 (media 40.5)",
+      "incremento_danno": "+90% al 9°, +134% al 13°, +179% al 17°"
+    }
+  },
+  "probabilita_critico": {
+    "base": "5% (20 naturale)",
+    "con_attacco_irruento": "9.75% (vantaggio)",
+    "con_champion_3": "10% (19-20)",
+    "irruento_champion": "19% (19-20 con vantaggio)",
+    "calcolo_dps": "Aumenta DPS medio del 2-10% a seconda della build"
+  },
+  "ottimizzazione": {
+    "priorita_armi": [
+      "Ascia bipenne (d12) - massimizza dado",
+      "Spadone (2d6) - più dadi = più bonus",
+      "Lancia (d12 versatile) - buon compromesso"
+    ],
+    "tattiche": [
+      "Usare Attacco Irruento per più critici",
+      "Focus su nemici con CA bassa",
+      "Multiclasse Champion per critico migliorato"
+    ]
+  },
+  "confronto_classi": {
+    "paladino": "Punizione Divina su critico è devastante ma usa slot",
+    "barbaro": "Danni critici costanti senza risorse",
+    "champion": "Più critici ma meno danni per critico",
+    "assassino": "Critico automatico su sorpresa"
+  },
+  "narrazione_brancalonia": {
+    "descrizione": "Il Pagano sferra colpi così brutali da spaccare elmi e scudi",
+    "effetti_scenici": [
+      "Decapitazioni drammatiche",
+      "Arti mozzati",
+      "Armi nemiche distrutte"
+    ]
+  },
+  "note_dm": "Critico Brutale rende i critici del barbaro molto swingy. Un critico al momento giusto può cambiare l'esito della battaglia.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49"
+}

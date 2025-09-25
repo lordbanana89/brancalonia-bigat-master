@@ -4,7 +4,7 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## 🎉 MEGA UPDATE v3.14.1 - Compatibilità Completa Foundry v13
+## 🎉 MEGA UPDATE v3.14.2 - Compatibilità Completa Foundry v13
 
 ### 🚀 Aggiornamento Massiccio del 26 Settembre 2024
 

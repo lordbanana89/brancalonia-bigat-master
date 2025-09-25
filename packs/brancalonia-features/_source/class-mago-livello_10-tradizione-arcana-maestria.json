@@ -1,0 +1,132 @@
+{
+  "id": "class-mago-livello_10-tradizione-arcana-maestria",
+  "nome": "Maestria della Tradizione Arcana",
+  "nome_brancalonia": "Arcimago della Scuola",
+  "livello": 10,
+  "tipo": "varia",
+  "descrizione": "Al 10° livello, ottieni un privilegio dalla tua Tradizione Arcana scelta.",
+  "privilegi_per_scuola": {
+    "abjuration": {
+      "nome": "Improved Abjuration",
+      "effetto": "Aggiungi prof a check Dispel/Counterspell",
+      "potenza": "Quasi auto-successo dispel bassi"
+    },
+    "conjuration": {
+      "nome": "Focused Conjuration",
+      "effetto": "Concentrazione conjuration non si rompe per danno",
+      "valore": "Conjure elemental inarrestabili"
+    },
+    "divination": {
+      "nome": "The Third Eye",
+      "effetto": "Scegli: See Ethereal, Darkvision, See Invisible, Read Language",
+      "durata": "Fino a riposo, azione per attivare"
+    },
+    "enchantment": {
+      "nome": "Alter Memories",
+      "effetto": "Creature charmate dimenticano esser state charmate",
+      "aggiuntivo": "1 creatura dimentica 1h con spell slot"
+    },
+    "evocation": {
+      "nome": "Empowered Evocation",
+      "effetto": "+INT modifier a damage roll evocation",
+      "applicazione": "Una volta per spell (non ogni missile)"
+    },
+    "illusion": {
+      "nome": "Illusory Self",
+      "effetto": "Reaction: attacco manca automaticamente",
+      "recupero": "1/rest o cast illusion 1+"
+    },
+    "necromancy": {
+      "nome": "Inured to Undeath",
+      "effetto": "Resistenza danni necrotici, HP max immune riduzione",
+      "durabilità": "Tank vs non-morti e necromanzia"
+    },
+    "transmutation": {
+      "nome": "Shapechanger",
+      "effetto": "Polymorph self gratuitamente 1/rest",
+      "CR": "CR 1, poi recupera con transmutation cast"
+    },
+    "war_magic": {
+      "nome": "Durable Magic",
+      "effetto": "+2 AC e saves mentre concentri",
+      "sempre_attivo": "Con qualsiasi concentrazione"
+    },
+    "bladesinging": {
+      "nome": "Song of Defense",
+      "effetto": "Spendi slot per ridurre danni (5/livello slot)",
+      "reaction": "Dopo essere colpito"
+    },
+    "order_scribes": {
+      "nome": "Master Scrivener",
+      "effetto": "Crea scroll veloce ed economico, 1/long rest cast a +1 livello",
+      "valore": "Fireball 4° livello gratis"
+    },
+    "chronurgy": {
+      "nome": "Arcane Abeyance",
+      "effetto": "Metti spell in perlina per altri",
+      "durata": "1h, altri possono usare"
+    },
+    "graviturgy": {
+      "nome": "Violent Attraction",
+      "effetto": "Aumenta danno arma o muovi creature",
+      "reaction": "1d10 extra o pull/push 5ft"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "subclass_feature_10",
+    "potenza": "Major power spike"
+  },
+  "valutazione_tier_3": {
+    "game_changing": [
+      "Focused Conjuration (concentrazione perfetta)",
+      "Durable Magic (+2 AC/saves sempre)",
+      "Empowered Evocation (+5 damage)"
+    ],
+    "molto_forti": [
+      "Improved Abjuration (dispel garantiti)",
+      "Illusory Self (negazione attacco)",
+      "Song of Defense (damage reduction)"
+    ],
+    "utili": [
+      "Third Eye (visioni varie)",
+      "Shapechanger (polymorph gratis)",
+      "Alter Memories (manipolazione)"
+    ]
+  },
+  "combo_potenti_10": {
+    "abjuration": "Counterspell con +5-6 al check = auto-successo",
+    "conjuration": "Summon Elemental che non si perde mai",
+    "evocation": "Fireball 8d6+5 = 33 medi",
+    "war_magic": "Haste self = AC 20+ con Mage Armor",
+    "bladesinging": "Riduzione danni massiccia con slot alti"
+  },
+  "impatto_matematico": {
+    "evocation_dpr": "+5 per spell è enorme",
+    "abjuration_dispel": "75%+ successo anche vs spell alti",
+    "war_magic_ac": "Da AC 15 a AC 17 base",
+    "conjuration_uptime": "100% concentrazione garantita"
+  },
+  "scaling_tier_3": {
+    "spell_5": "Privilegi potenziano spell potenti",
+    "multiattack": "Più attacchi nemici = più valore difese",
+    "save_dc_alti": "Protezioni diventano vitali"
+  },
+  "build_defining": {
+    "blaster": "Evocation quasi obbligatorio",
+    "summoner": "Conjuration per concentrazione",
+    "tank_mage": "War Magic o Abjuration",
+    "gish": "Bladesinging necessario"
+  },
+  "errori_comuni": {
+    "sottovalutare": "Non capire potenza privilegio",
+    "non_applicare": "Dimenticare bonus damage/AC",
+    "conservare": "Non usare abilità recuperabili"
+  },
+  "narrazione_brancalonia": {
+    "riconoscimento": "Vero maestro della scuola",
+    "rispetto": "Altri maghi riconoscono maestria",
+    "insegnamento": "Può fondare propria scuola"
+  },
+  "note_dm": "I privilegi di 10° sono power spike enormi per i maghi. Focused Conjuration e Durable Magic in particolare cambiano completamente il gioco.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115-119"
+}

@@ -1,0 +1,137 @@
+{
+  "id": "class-chierico-livello_11-distruggere-non-morti",
+  "nome": "Distruggere Non-Morti",
+  "nome_brancalonia": "Purificazione Sacra",
+  "livello": 11,
+  "tipo": "passivo",
+  "descrizione": "A partire dall'11° livello, quando un non-morto fallisce il suo tiro salvezza contro la tua caratteristica Scacciare Non-Morti, la creatura è istantaneamente distrutta se il suo grado di sfida è pari o inferiore a una certa soglia.",
+  "meccaniche": {
+    "trigger": "Non-morto fallisce save vs Turn Undead",
+    "effetto": "Distruzione istantanea se CR ≤ soglia",
+    "soglie_cr": {
+      "livello_11": "CR 1/2 o meno",
+      "livello_14": "CR 1 o meno",
+      "livello_17": "CR 2 o meno",
+      "livello_20": "CR 3 o meno"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "turn_undead_upgrade",
+    "condizione": "@attributes.cr <= threshold",
+    "effetto": "Instant destruction"
+  },
+  "non_morti_comuni_distrutti": {
+    "cr_1/2": ["Shadow", "Warhorse Skeleton"],
+    "cr_1": ["Ghoul", "Specter", "Skeleton Minotaur"],
+    "cr_2": ["Ghast", "Ogre Zombie", "Will-o'-Wisp"],
+    "cr_3": ["Mummy", "Wight"]
+  },
+  "calcoli_impatto": {
+    "minion_clearing": {
+      "zombie_orde": "30ft raggio = ~28 quadretti",
+      "scheletri_esercito": "Elimina dozzine istantaneamente",
+      "efficienza_azione": "1 azione = multipli nemici morti"
+    }
+  },
+  "confronto_damage_spells": {
+    "vs_fireball": {
+      "fireball": "8d6 (28 medi), save dimezza",
+      "destroy_undead": "Morte istantanea, no HP"
+    },
+    "vs_turn": {
+      "normale_turn": "Fuggono per 1 minuto",
+      "destroy": "Eliminati permanentemente"
+    }
+  },
+  "tattiche_ottimali": {
+    "posizionamento": "Centro massa non-morti",
+    "timing": "Quando raggruppati",
+    "combo": "Sanctuary per avvicinarsi sicuro"
+  },
+  "scaling_campagna": {
+    "tier_2_11-13": "Utile vs minion",
+    "tier_3_14-16": "Ancora rilevante",
+    "tier_4_17-20": "CR 3 sempre utili"
+  },
+  "sinergie_spell": {
+    "spirit_guardians": "Rallenta per Turn Undead",
+    "daylight": "Svantaggio vampiri poi destroy",
+    "circle_of_power": "Protegge mentre ti posizioni"
+  },
+  "channel_divinity_economy": {
+    "livello_11": "1-2 usi, molto prezioso",
+    "livello_18": "3 usi, più liberale",
+    "short_rest": "Recuperi tra combattimenti"
+  },
+  "domini_synergy": {
+    "light": "Radiance + Destroy combo",
+    "life": "Preserve living, destroy undead",
+    "grave": "Tematico e potente",
+    "death": "Controllo non-morti totale"
+  },
+  "campagne_non_morti": {
+    "curse_of_strahd": "Essenziale",
+    "tomb_of_annihilation": "Molto utile",
+    "normale": "Situazionale ma potente"
+  },
+  "interpretazione_distruzione": {
+    "disintegrazione": "Cenere al vento",
+    "purificazione": "Luce li consuma",
+    "pace_finale": "Spiriti liberati",
+    "esplosione_sacra": "Esplodono in luce"
+  },
+  "limitazioni": {
+    "solo_non_morti": "Inutile vs altri",
+    "cr_cap": "Boss immuni",
+    "save_richiesto": "Devono fallire prima",
+    "range": "30ft non enorme"
+  },
+  "build_specializzazione": {
+    "focus_non_morti": {
+      "feat": "Observant per Initiative",
+      "items": "Holy Symbol +X per DC",
+      "spells": "Detect Evil, Protection"
+    }
+  },
+  "confronto_paladin": {
+    "chierico": "AoE distruzione massa",
+    "paladino": "Singolo smite potente",
+    "insieme": "Combo devastante"
+  },
+  "economia_azioni": {
+    "1_azione": "Elimina 5-10+ nemici",
+    "vs_attacchi": "Molto più efficiente",
+    "vs_spell_slot": "No risorse consumate"
+  },
+  "cr_effectiveness": {
+    "sempre_utile": [
+      "Zombie (CR 1/4)",
+      "Skeleton (CR 1/4)",
+      "Crawling Claw (CR 0)"
+    ],
+    "diventa_utile": [
+      "Ghoul al 14°",
+      "Wight al 20°"
+    ]
+  },
+  "momenti_epici": {
+    "esempi": [
+      "Fermare orda zombie",
+      "Purificare cimitero",
+      "Liberare villaggio",
+      "Distruggere esercito non-morto"
+    ]
+  },
+  "errori_comuni": {
+    "dimenticare_cr": "Non controllare CR limite",
+    "sprecare": "Usare su 1-2 nemici",
+    "posizione": "Troppo lontano da massa"
+  },
+  "narrazione_brancalonia": {
+    "santo_purificatore": "Luce divina purifica",
+    "esorcista": "Bandisce spiriti maligni",
+    "benedetto": "Tocco divino distrugge male"
+  },
+  "note_dm": "Destroy Undead trasforma Turn Undead da controllo a eliminazione. Contro orde di non-morti bassi è devastante. Bilancia encounter di conseguenza.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+}

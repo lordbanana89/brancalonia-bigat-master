@@ -1,0 +1,111 @@
+{
+  "id": "class-mago-livello_1-incantesimi",
+  "nome": "Incantesimi",
+  "nome_brancalonia": "Arte Arcana",
+  "livello": 1,
+  "tipo": "incantatore",
+  "descrizione": "Come studioso della magia arcana, hai un libro degli incantesimi che contiene incantesimi che mostrano i primi barlumi del tuo vero potere.",
+  "meccaniche": {
+    "tipo_incantatore": "Preparato da libro",
+    "caratteristica": "Intelligenza",
+    "focus": "Bacchetta, bastone, cristallo, globo, verga",
+    "libro_incantesimi": {
+      "iniziali": "6 incantesimi 1° livello",
+      "per_livello": "2 incantesimi gratuiti",
+      "copiare": {
+        "tempo": "2 ore per livello spell",
+        "costo": "50 mo per livello spell"
+      }
+    },
+    "preparazione": {
+      "formula": "Modificatore INT + livello mago",
+      "minimo": "1 incantesimo",
+      "quando": "Dopo riposo lungo",
+      "tempo": "1 minuto per livello incantesimo"
+    },
+    "trucchetti": {
+      "livello_1": 3,
+      "livello_4": 4,
+      "livello_10": 5
+    },
+    "slot_incantesimi": {
+      "livello_1": {"1°": 2},
+      "livello_3": {"1°": 4, "2°": 2},
+      "livello_5": {"1°": 4, "2°": 3, "3°": 2},
+      "livello_7": {"1°": 4, "2°": 3, "3°": 3, "4°": 1},
+      "livello_9": {"1°": 4, "2°": 3, "3°": 3, "4°": 2, "5°": 1},
+      "livello_11": {"1°": 4, "2°": 3, "3°": 3, "4°": 3, "5°": 2, "6°": 1},
+      "livello_20": {"1°": 4, "2°": 3, "3°": 3, "4°": 3, "5°": 3, "6°": 2, "7°": 2, "8°": 1, "9°": 1}
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "spellcasting",
+    "configurazione": {
+      "type": "leveled",
+      "ability": "int",
+      "preparation": "prepared",
+      "rituals": true
+    },
+    "spellbook": {
+      "type": "spellbook",
+      "capacity": "unlimited"
+    }
+  },
+  "libro_incantesimi": {
+    "meccaniche": {
+      "capacita": "Illimitata",
+      "perdita": "Serve backup o ricostruire",
+      "rituale": "Può lanciare rituali dal libro senza prepararli"
+    },
+    "costi_copia": {
+      "da_altro_libro": "50 mo × livello, 2 ore × livello",
+      "da_scroll": "Come da libro ma scroll consumato",
+      "experimental": "DM può richiedere prove Arcana"
+    }
+  },
+  "recupero_arcano": {
+    "nota": "Vedi privilegio separato livello 1"
+  },
+  "cd_tiro_salvezza": {
+    "formula": "8 + bonus competenza + mod INT",
+    "esempi": {
+      "livello_1": "8+2+3 = 13",
+      "livello_5": "8+3+4 = 15",
+      "livello_20": "8+6+5 = 19"
+    }
+  },
+  "confronto_incantatori": {
+    "vs_sorcerer": "Più incantesimi ma meno flessibilità",
+    "vs_warlock": "Più slot ma recupero più lento",
+    "vs_cleric": "Lista limitata da libro non da divinità",
+    "vs_druid": "Deve trovare/comprare incantesimi"
+  },
+  "strategie_libro": {
+    "priorita_copia": [
+      "Ritual spells (gratis da lanciare)",
+      "Utility spells versatili",
+      "Defensive spells (Shield, Absorb Elements)",
+      "Damage variety per resistenze"
+    ],
+    "gestione_oro": {
+      "livello_basso": "Priorità essenziali",
+      "livello_medio": "Espandere versatilità",
+      "livello_alto": "Completezza lista"
+    }
+  },
+  "incantesimi_iconici": {
+    "livello_1": ["Shield", "Magic Missile", "Mage Armor", "Find Familiar"],
+    "livello_3": ["Fireball", "Counterspell", "Haste"],
+    "livello_5": ["Wall of Force", "Teleportation Circle"],
+    "livello_7": ["Forcecage", "Teleport", "Simulacrum"],
+    "livello_9": ["Wish", "Time Stop", "Meteor Swarm"]
+  },
+  "brancalonia_flavor": {
+    "libro_nome": "Grimorio del Guiscardo",
+    "descrizione": "Tomo rilegato in pelle con simboli arcani",
+    "tradizione": "Conoscenza rubata o ereditata",
+    "reputazione": "Rispettato e temuto per il sapere"
+  },
+  "note_dm": "Il mago è l'incantatore più versatile se ha accesso a molti incantesimi. Controlla disponibilità di spell nel mondo.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.114"
+}
