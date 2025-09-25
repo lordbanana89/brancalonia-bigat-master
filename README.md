@@ -4,7 +4,10 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## 🎉 MEGA UPDATE v3.14.2 - Compatibilità Completa Foundry v13
+## 🎉 MEGA UPDATE v3.14.4 - Fix Critico Compendi Vuoti
+
+### 🔧 HOTFIX v3.14.4 - Risolto Problema Compendi Vuoti
+**CRITICO**: Risolto il problema dei compendi che apparivano vuoti in Foundry v13. Il CLI di Foundry v3.0.0 rimuove silenziosamente il campo `_key` necessario per il caricamento. Ora tutti i 640 documenti sono compilati correttamente con script custom.
 
 ### 🚀 Aggiornamento Massiccio del 26 Settembre 2024
 
