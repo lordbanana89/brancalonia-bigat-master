@@ -1,0 +1,65 @@
+{
+  "id": "spell-marchio-incandescente",
+  "nome": "Marchio Incandescente",
+  "nome_inglese": "Searing Mark",
+  "livello": 1,
+  "scuola": "Trasmutazione",
+  "tempo_lancio": "1 azione bonus",
+  "gittata": "27 metri",
+  "componenti": {
+    "verbale": true
+  },
+  "durata": "Concentrazione, fino a 1 ora",
+  "descrizione": "L'incantatore sceglie una creatura entro gittata e che egli sia in grado di vedere e la marchia con il simbolo del fuoco. Finché l'incantesimo non termina, l'incantatore infligge 1d6 danni da fuoco extra al bersaglio ogni volta che lo colpisce con un attacco con un'arma. Finché l'incantesimo non termina, la creatura proietta luce intensa entro un raggio di 6 metri e luce fioca per altri 6 metri.",
+  "livelli_superiori": "Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 2° livello o superiore, i danni aumentano di 1d6 per ogni slot di livello superiore al 1°.",
+  "classi": ["Ranger"],
+  "scaling": {
+    "slot_1": "1d6 fuoco",
+    "slot_2": "2d6 fuoco",
+    "slot_3": "3d6 fuoco",
+    "slot_4": "4d6 fuoco"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "bonus",
+    "range": 90,
+    "durata": "1 hour",
+    "concentrazione": true
+  },
+  "meccaniche": {
+    "bonus_action": "Cast veloce",
+    "danno_extra": "+1d6 fire per hit",
+    "solo_armi": "Weapon attacks only",
+    "marchio_visibile": "Simbolo di fuoco",
+    "illuminazione": "6m bright + 6m dim light"
+  },
+  "confronto_hunters_mark": {
+    "danno": "1d6 fire vs 1d6 generico",
+    "tipo": "Fire può essere resistito",
+    "luce": "Marchio illumina target",
+    "tracking": "No tracking bonus",
+    "movimento": "No trasferimento se muore"
+  },
+  "vantaggi": [
+    "Danno fire utile vs vulnerabili",
+    "Illumina target nell'oscurità",
+    "Stack con Hunter's Mark",
+    "Solo componente verbale"
+  ],
+  "svantaggi": [
+    "Fire spesso resistito",
+    "Target illuminato può nascondersi meno",
+    "No trasferimento a nuovo target",
+    "Concentrazione occupata"
+  ],
+  "utilizzi_tattici": [
+    "Marcare boss per focus fire",
+    "Illuminare nemici invisibili",
+    "Extra damage su target prioritario",
+    "Segnalare target agli alleati",
+    "Combo con attacchi multipli ranger"
+  ],
+  "note_dm": "Marchio Incandescente è versione Brancalonia di Hunter's Mark con twist fire/light. Ottimo per ranger piromani. Luce può essere tattica.",
+  "fonte": "Brancalonia Macaronicon p.52"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "spell-mano-magica",
+  "nome": "Mano Magica",
+  "nome_inglese": "Mage Hand",
+  "livello": 0,
+  "scuola": "Evocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "30 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "1 minuto",
+  "descrizione": "Una mano spettrale fluttuante appare in un punto a tua scelta entro gittata. La mano dura per la durata o finché non la congedi come azione. La mano svanisce se si trova a più di 30 piedi da te o se lanci di nuovo questo incantesimo. Puoi usare la tua azione per controllare la mano. Può manipolare oggetti, aprire porte e contenitori non chiusi a chiave, riporre o recuperare oggetti da contenitori aperti, o versare il contenuto di una fiala. Può muoversi fino a 30 piedi ogni volta che la usi. La mano non può attaccare, attivare oggetti magici o trasportare più di 10 libbre.",
+  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "action",
+    "range": 30,
+    "durata": "1 minute",
+    "controllo": "azione per muovere"
+  },
+  "capacità": {
+    "peso_massimo": "10 libbre (4.5 kg)",
+    "movimento": "30 piedi per azione",
+    "manipolazione": "Oggetti semplici",
+    "limitazioni": [
+      "No attacchi",
+      "No oggetti magici",
+      "No creature"
+    ]
+  },
+  "utilizzi_comuni": [
+    "Disarmare trappole a distanza",
+    "Recuperare oggetti pericolosi",
+    "Aprire porte sospette",
+    "Rubare chiavi dalle cinture",
+    "Versare pozioni"
+  ],
+  "arcane_trickster": {
+    "mage_hand_legerdemain": "Può borseggiare, aprire serrature, disarmare trappole",
+    "invisibile": "La mano è invisibile per Arcane Trickster",
+    "bonus_action": "Controllo con bonus action"
+  },
+  "note_dm": "Mage Hand è versatile utilità. Arcane Trickster la rende molto più potente. Utile per puzzle e esplorazione sicura.",
+  "fonte": "D&D 5e PHB p.256"
+}

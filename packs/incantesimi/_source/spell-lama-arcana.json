@@ -1,0 +1,48 @@
+{
+  "id": "spell-lama-arcana",
+  "nome": "Lama Arcana",
+  "nome_inglese": "Blade Ward",
+  "livello": 0,
+  "scuola": "Abiurazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Personale",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "1 round",
+  "descrizione": "Estendi la tua mano e tracci un sigillo di protezione nell'aria. Fino alla fine del tuo prossimo turno, hai resistenza contro i danni contundenti, perforanti e taglienti inflitti da attacchi con arma.",
+  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "action",
+    "range": "self",
+    "durata": "1 round",
+    "resistenze": ["bludgeoning", "piercing", "slashing"]
+  },
+  "analisi_problemi": {
+    "action_economy": "Costa azione intera",
+    "opportunita_persa": "Non attacchi/cast spell",
+    "solo_weapon_attacks": "Non protegge da spell/saves",
+    "durata_breve": "Solo fino prossimo turno"
+  },
+  "quando_pessimo": [
+    "Meglio uccidere/disabilitare nemico",
+    "Dodge action spesso migliore",
+    "Disengage per fuggire meglio",
+    "Attaccare quasi sempre better"
+  ],
+  "quando_forse_utile": [
+    "Eldritch Knight con War Magic",
+    "Aspettare rinforzi",
+    "Tanking inevitabile",
+    "Buying time situazioni disperate"
+  ],
+  "matematica": {
+    "riduzione": "50% danni fisici",
+    "confronto_dodge": "Dodge può evitare tutto",
+    "valore_azione": "Raramente vale un'azione"
+  },
+  "note_dm": "Blade Ward è considerato uno dei peggiori cantrip. Action economy terribile. Casi d'uso estremamente limitati.",
+  "fonte": "D&D 5e PHB p.218"
+}

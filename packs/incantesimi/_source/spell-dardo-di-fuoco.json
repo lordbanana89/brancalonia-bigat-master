@@ -1,0 +1,38 @@
+{
+  "id": "spell-dardo-di-fuoco",
+  "nome": "Dardo di Fuoco",
+  "nome_inglese": "Fire Bolt",
+  "livello": 0,
+  "scuola": "Invocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "120 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": false
+  },
+  "durata": "Istantanea",
+  "descrizione": "Scagli una particella di fuoco verso una creatura o oggetto entro gittata. Fai un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, il bersaglio subisce 1d10 danni da fuoco. Un oggetto infiammabile colpito da questo incantesimo prende fuoco se non è indossato o trasportato.",
+  "classi": ["Mago", "Stregone"],
+  "danno_scaling": {
+    "livello_1": "1d10",
+    "livello_5": "2d10",
+    "livello_11": "3d10",
+    "livello_17": "4d10"
+  },
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "action",
+    "range": 120,
+    "attacco": "ranged spell",
+    "danno": "1d10",
+    "danno_tipo": "fire",
+    "scaling": "cantrip"
+  },
+  "confronto_cantrip": {
+    "vs_eldritch_blast": "Fire Bolt d10 ma singolo, EB d10 multi-ray",
+    "vs_ray_of_frost": "Fire più danno, Frost rallenta"
+  },
+  "note_dm": "Fire Bolt è il cantrip damage standard per wizard/sorcerer. Può accendere oggetti, utile per puzzle.",
+  "fonte": "D&D 5e PHB p.242"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "spell-base-006",
+  "nome": "Dissolvi Magie",
+  "nome_originale": "Dispel Magic",
+  "livello": 3,
+  "scuola": "Abiurazione",
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Druido",
+    "Paladino",
+    "Stregone",
+    "Mago",
+    "Warlock"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Dispel Magic",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Dispel Magic).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "spell-sacra-fiamma",
+  "nome": "Sacra Fiamma",
+  "nome_inglese": "Sacred Flame",
+  "livello": 0,
+  "scuola": "Invocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "60 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "Istantanea",
+  "descrizione": "Una radianza simile a fiamma discende su una creatura che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Destrezza o subire 1d8 danni radiosi. Il bersaglio non ottiene beneficio da copertura per questo tiro salvezza.",
+  "classi": ["Chierico"],
+  "danno_scaling": {
+    "livello_1": "1d8",
+    "livello_5": "2d8",
+    "livello_11": "3d8",
+    "livello_17": "4d8"
+  },
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "action",
+    "range": 60,
+    "save": "dexterity",
+    "danno": "1d8",
+    "danno_tipo": "radiant",
+    "ignora_copertura": true
+  },
+  "meccaniche_uniche": {
+    "no_copertura": "Ignora TUTTI i bonus copertura",
+    "save_non_attack": "DEX save invece di attack roll",
+    "radiant_damage": "Ottimo vs undead/fiend"
+  },
+  "vantaggi": [
+    "Ignora copertura totalmente",
+    "Radiant raramente resistito",
+    "60 ft range sicuro",
+    "No attack roll (no disadvantage)"
+  ],
+  "svantaggi": [
+    "DEX save spesso alto",
+    "d8 danno medio",
+    "Tutto o niente (no half damage)"
+  ],
+  "confronto_cantrip": {
+    "vs_firebolt": "Meno danno ma ignora cover",
+    "vs_toll_the_dead": "Meno danno ma più affidabile"
+  },
+  "note_dm": "Sacred Flame unico per ignorare copertura. Ottimo vs nemici dietro ripari. DEX save invece di attack utile in certe situazioni.",
+  "fonte": "D&D 5e PHB p.272"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "spell-base-011",
+  "nome": "Guardiani Spirituali",
+  "nome_originale": "Spirit Guardians",
+  "livello": 3,
+  "scuola": "Evocazione",
+  "classi": [
+    "Chierico"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Spirit Guardians",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Spirit Guardians).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale."
+}

@@ -1,0 +1,5 @@
+2025/09/26-01:38:46.446116 16ef2b000 Delete type=3 #1
+2025/09/26-01:38:46.448586 16f7c3000 Level-0 table #5: started
+2025/09/26-01:38:46.449628 16f7c3000 Level-0 table #5: 82329 bytes OK
+2025/09/26-01:38:46.449714 16f7c3000 Delete type=0 #3
+2025/09/26-01:38:46.449801 16f7c3000 Manual compaction at level-0 from '!item!spellamicizia627513' @ 72057594037927935 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at (end)

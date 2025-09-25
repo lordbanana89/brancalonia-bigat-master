@@ -1,0 +1,21 @@
+{
+  "id": "spell-base-021",
+  "nome": "Scagliare Maledizione",
+  "nome_originale": "Bestow Curse",
+  "livello": 3,
+  "scuola": "Necromanzia",
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Stregone",
+    "Mago",
+    "Warlock"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Bestow Curse",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Bestow Curse).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale."
+}

@@ -1,0 +1,77 @@
+{
+  "id": "spell-dardo-incantato",
+  "nome": "Dardo Incantato",
+  "nome_inglese": "Magic Missile",
+  "livello": 1,
+  "scuola": "Invocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "120 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": false
+  },
+  "durata": "Istantanea",
+  "descrizione": "Crei tre dardi di forza magica incandescente. Ogni dardo colpisce una creatura a tua scelta che puoi vedere entro gittata. Un dardo infligge 1d4+1 danni da forza al suo bersaglio. I dardi colpiscono tutti simultaneamente e puoi dirigerli per colpire una creatura o diverse.",
+  "livelli_superiori": "Quando lanci questo incantesimo usando uno slot di 2° livello o superiore, l'incantesimo crea un dardo aggiuntivo per ogni livello dello slot sopra il 1°.",
+  "classi": ["Mago", "Stregone"],
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "action",
+    "range": 120,
+    "danno_formula": "1d4+1",
+    "danno_tipo": "force",
+    "scaling": {
+      "mode": "level",
+      "formula": "1d4+1"
+    },
+    "bersagli": "1-3+ creatures",
+    "auto_hit": true
+  },
+  "meccaniche_speciali": {
+    "colpo_automatico": "Nessun tiro per colpire richiesto",
+    "nessun_save": "Nessun tiro salvezza",
+    "simultaneità": "Tutti i dardi colpiscono insieme",
+    "shield_interaction": "Shield spell blocca completamente"
+  },
+  "danni_per_livello": {
+    "livello_1": "3d4+3 (10.5 medi) totali",
+    "livello_2": "4d4+4 (14 medi)",
+    "livello_3": "5d4+5 (17.5 medi)",
+    "livello_4": "6d4+6 (21 medi)",
+    "livello_5": "7d4+7 (24.5 medi)",
+    "livello_6": "8d4+8 (28 medi)",
+    "livello_7": "9d4+9 (31.5 medi)",
+    "livello_8": "10d4+10 (35 medi)",
+    "livello_9": "11d4+11 (38.5 medi)"
+  },
+  "tattiche": {
+    "concentrazione": "Ottimo per rompere concentrazione (colpi multipli)",
+    "finisher": "Perfetto per nemici con pochi HP",
+    "invisibilità": "Colpisce creature invisibili se le vedi",
+    "distribuzioneèfocus": "Scegli se spread o focus fire"
+  },
+  "evocazione_builds": {
+    "evocation_wizard": "+INT a un dardo (Empowered Evocation)",
+    "hexblade_warlock": "Hex aggiunge danno per dardo",
+    "sorcerer_meta": "Empowered per reroll dadi bassi"
+  },
+  "counters": {
+    "shield": "Blocca completamente Magic Missile",
+    "brooch_shielding": "Immunità a Magic Missile",
+    "counterspell": "Può essere contrastato normalmente"
+  },
+  "confronto_spell_1": {
+    "vs_chromatic_orb": "MM sempre colpisce, CO più danni",
+    "vs_guiding_bolt": "MM no miss, GB vantaggio prossimo",
+    "vs_burning_hands": "MM single target, BH area"
+  },
+  "ruling_controversi": {
+    "death_saves": "Ogni dardo = 1 fallimento morte",
+    "concentrazione": "Ogni dardo = 1 save concentrazione",
+    "resistenze": "Si applica a ogni dardo"
+  },
+  "note_dm": "Magic Missile è l'incantesimo più affidabile. Sempre colpisce, ottimo per finire nemici o rompere concentrazione. Shield è il counter perfetto.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.257"
+}

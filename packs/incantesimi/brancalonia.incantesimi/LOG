@@ -1,7 +1,0 @@
-2025/09/26-00:45:24.405841 17981f000 Recovering log #3
-2025/09/26-00:45:24.406894 17981f000 Delete type=0 #3
-2025/09/26-00:45:24.406931 17981f000 Delete type=3 #2
-2025/09/26-00:45:24.409146 16ff3f000 Level-0 table #7: started
-2025/09/26-00:45:24.409967 16ff3f000 Level-0 table #7: 82329 bytes OK
-2025/09/26-00:45:24.410082 16ff3f000 Delete type=0 #5
-2025/09/26-00:45:24.410183 16ff3f000 Manual compaction at level-0 from '!item!spellamicizia627513' @ 72057594037927935 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at (end)

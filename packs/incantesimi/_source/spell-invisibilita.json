@@ -1,0 +1,71 @@
+{
+  "id": "spell-invisibilita",
+  "nome": "Invisibilità",
+  "nome_inglese": "Invisibility",
+  "livello": 2,
+  "scuola": "Illusione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Contatto",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Una ciglia avvolta in gomma arabica"
+  },
+  "durata": "Concentrazione, fino a 1 ora",
+  "descrizione": "Una creatura che tocchi diventa invisibile fino al termine dell'incantesimo. Qualsiasi cosa il bersaglio stia indossando o trasportando è invisibile finché resta sulla persona del bersaglio. L'incantesimo termina per un bersaglio che attacca o lancia un incantesimo.",
+  "classi": ["Bardo", "Mago", "Stregone", "Warlock"],
+  "scaling": {
+    "descrizione": "+1 creatura per slot level sopra 2°",
+    "slot_3": "2 creature",
+    "slot_4": "3 creature",
+    "slot_5": "4 creature"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 2,
+    "attivazione": "action",
+    "range": "touch",
+    "durata": "1 hour",
+    "concentrazione": true,
+    "condizione": "invisible"
+  },
+  "condizione_invisible": {
+    "impossibile_vedere": "Heavily obscured per vista",
+    "attack_disadvantage": "Attacchi del target hanno vantaggio",
+    "defense_advantage": "Attacchi contro hanno svantaggio",
+    "stealth": "Può nascondersi ovunque"
+  },
+  "termina_con": [
+    "Attacco (qualsiasi)",
+    "Cast spell",
+    "Concentrazione persa",
+    "1 ora passata"
+  ],
+  "cosa_non_termina": [
+    "Dash/dodge/help",
+    "Usare oggetti magici",
+    "Abilità non-spell",
+    "Movimento normale"
+  ],
+  "tattiche": [
+    "Scouting sicuro",
+    "Positioning prima combat",
+    "Fuga garantita",
+    "Infiltrazione",
+    "Setup imboscate"
+  ],
+  "detection": {
+    "see_invisibility": "Vede attraverso",
+    "true_sight": "Vede attraverso",
+    "tracce": "Impronte, suoni rimangono",
+    "faerie_fire": "Contorna e cancella"
+  },
+  "greater_invisibility": {
+    "differenza": "Greater non termina con attacchi",
+    "livello": "Greater è 4° livello",
+    "durata": "Greater solo 1 minuto"
+  },
+  "note_dm": "Invisibility è utility/escape potente. Termina con azioni offensive lo bilancia. Ottimo per infiltrazione e scouting.",
+  "fonte": "D&D 5e PHB p.254"
+}
