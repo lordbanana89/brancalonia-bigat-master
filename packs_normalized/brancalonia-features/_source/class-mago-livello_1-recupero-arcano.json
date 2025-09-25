@@ -1,0 +1,72 @@
+{
+  "_id": "classmagolivello1recuperoarcanob51348",
+  "_key": "!items!classmagolivello1recuperoarcanob51348",
+  "name": "Recupero Arcano",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Hai imparato a recuperare parte della tua energia magica studiando il tuo libro degli incantesimi. Una volta al giorno quando finisci un riposo breve, puoi scegliere slot incantesimi spesi da recuperare. Gli slot possono avere un livello combinato pari o inferiore alla metà del tuo livello da mago (arrotondato per eccesso), e nessuno degli slot può essere di 6° livello o superiore.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-mago-livello_1-recupero-arcano",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+    }
+  }
+}

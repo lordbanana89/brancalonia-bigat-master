@@ -13,6 +13,7 @@ import { fileURLToPath } from 'url';
 import { convertSpell } from './converters/spell-converter.mjs';
 import { convertWeapon, convertArmor, convertMagicItem } from './converters/equipment-converter.mjs';
 import convertCreature from './converters/creature-converter.mjs';
+import convertBackground from './converters/background-converter.mjs';
 import { generateFoundryId, getDefaultImage } from './utils/common.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -31,7 +32,7 @@ const CONFIG = {
 const MAPPING_RULES = [
   // === BACKGROUNDS ===
   { pattern: /^backgrounds\/index\.json$/, skip: true }, // Skip index first
-  { pattern: /^backgrounds\/[^\/]+\.json$/, pack: 'backgrounds', type: 'background', converter: 'item' },
+  { pattern: /^backgrounds\/[^\/]+\.json$/, pack: 'backgrounds', type: 'background', converter: 'background' },
 
   // === RAZZE ===
   { pattern: /^razze\/index\.json$/, skip: true }, // Skip index
@@ -521,6 +522,9 @@ async function processFile(filePath, relativePath) {
           break;
         case 'table':
           converted = convertTable(data, filePath);
+          break;
+        case 'background':
+          converted = convertBackground(data, filePath);
           break;
         case 'consumable':
         case 'equipment':

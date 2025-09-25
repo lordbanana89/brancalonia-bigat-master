@@ -1,0 +1,39 @@
+{
+  "_id": "rissamossapresadellorsof7e419",
+  "_key": "!journal!rissamossapresadellorsof7e419",
+  "name": "Presa dell'Orso",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "rissamossapresadellorsof7e419page1",
+      "name": "Presa dell'Orso",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-presa-dell-orso",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

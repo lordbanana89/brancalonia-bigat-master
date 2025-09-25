@@ -1,0 +1,72 @@
+{
+  "_id": "classmonacolivello13linguasoleluna47f25e",
+  "_key": "!items!classmonacolivello13linguasoleluna47f25e",
+  "name": "Lingua del Sole e della Luna",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>A partire dal 13° livello, impari a toccare il ki di altre menti così che comprendi tutti i linguaggi parlati. Inoltre, qualsiasi creatura che può capire un linguaggio può capire ciò che dici.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.79",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-monaco-livello_13-lingua-sole-luna",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "_id": "fratemonacolivello3porgialtraguancia7b3534",
+  "_key": "!items!fratemonacolivello3porgialtraguancia7b3534",
+  "name": "porgi_altra_guancia",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Usa FOR invece di DES per Difesa Senza Armatura e Deviare Proiettili, reazione: spende 1 ki per colpo senz'armi quando colpito</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "frate_monaco-livello_3-porgi_altra_guancia"
+    }
+  }
+}

@@ -1,53 +1,65 @@
 {
-  "_id": "fuggitivofa90bf",
-  "_key": "!items!fuggitivofa90bf",
+  "_id": "fuggitivo5phjum",
+  "_key": "!items!fuggitivo5phjum",
   "name": "Fuggitivo",
   "type": "background",
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p>Evaso, disertore o datosi alla macchia, braccato dalla giustizia del Regno</p>",
+      "value": "<p>Evaso, disertore o datosi alla macchia, braccato dalla giustizia del Regno</p><h4>Tratti Personalità</h4><ul><li>Tiene profilo basso e si guarda le spalle</li><li>Evita birri e notabili</li><li>Non si fida di nessuno</li><li>Odia autorità e giustizia</li><li>Controlla sempre vie di fuga</li><li>Solidale con i perseguitati</li><li>Nervoso se sta troppo ferimo</li><li>Ha un piano per lasciare la regione</li></ul><h4>Ideali</h4><ul><li>Solidarietà (Buono)</li><li>Giustizia per tutti (Legale)</li><li>Libertà (Caotico)</li><li>Indifferenza (Malvagio)</li><li>Buon senso (Neutrale)</li><li>Ambizione di redimersi (Qualsiasi)</li></ul>",
       "chat": "",
       "unidentified": ""
     },
     "source": "Manuale Base p.36",
-    "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
-    "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    },
-    "equipped": false,
-    "identified": true,
-    "quantity": 1,
-    "weight": 0,
-    "price": {
-      "value": 0,
-      "denomination": "gp"
-    },
-    "rarity": "common",
-    "attunement": 0,
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "k5htk43m4z",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [
+              "ste",
+              "sur"
+            ],
+            "fixed": [
+              "ste",
+              "sur"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "ste",
+            "sur"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze Abilità",
+        "icon": null,
+        "classRestriction": ""
+      }
+    ],
+    "startingEquipment": [
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "Pugnale"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "ricordo vita passata"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "abito viaggiatore sgualcito"
+      },
+      {
+        "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
+        "quantity": 10
+      }
+    ]
   },
   "effects": [],
   "folder": null,

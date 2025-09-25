@@ -1,53 +1,70 @@
 {
-  "_id": "brado80d13f",
-  "_key": "!item!brado80d13f",
+  "_id": "bradozrzvgu",
+  "_key": "!items!bradozrzvgu",
   "name": "Brado",
   "type": "background",
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p>Cresciuto selvaggio tra comunità selvatiche, eremiti e pagani isolati</p>",
+      "value": "<p>Cresciuto selvaggio tra comunità selvatiche, eremiti e pagani isolati</p><h4>Tratti Personalità</h4><ul><li>Non tiene conto di nobiltà e titoli</li><li>Nostalgico e inquieto lontano dalle terre selvagge</li><li>Si sente in gabbia nei luoghi chiusi</li><li>Non sopporta folla e città</li><li>Aggressivo con chi invade spazio personale</li><li>Si intenerisce per gentilezza spontanea</li><li>Ama insegnare arti pratiche</li><li>Preferisce animali a umani</li></ul><h4>Ideali</h4><ul><li>Rispetto reciproco (Buono)</li><li>Leggi della selva (Legale)</li><li>Libertà selvaggia (Caotico)</li><li>Legge del più forte (Malvagio)</li><li>Sopravvivenza (Neutrale)</li><li>Contemplazione (Qualsiasi)</li></ul>",
       "chat": "",
       "unidentified": ""
     },
     "source": "Manuale Base p.34",
-    "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
-    "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    },
-    "equipped": false,
-    "identified": true,
-    "quantity": 1,
-    "weight": 0,
-    "price": {
-      "value": 0,
-      "denomination": "gp"
-    },
-    "rarity": "common",
-    "attunement": 0,
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "62zjtpwwcpx",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [
+              "ani",
+              "ath"
+            ],
+            "fixed": [
+              "ani",
+              "ath"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "ani",
+            "ath"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze Abilità",
+        "icon": null,
+        "classRestriction": ""
+      }
+    ],
+    "startingEquipment": [
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "Bastone"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "ciondolo d'ossa"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "pigmenti colorati"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "abito viaggiatore"
+      },
+      {
+        "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
+        "quantity": 10
+      }
+    ]
   },
   "effects": [],
   "folder": null,

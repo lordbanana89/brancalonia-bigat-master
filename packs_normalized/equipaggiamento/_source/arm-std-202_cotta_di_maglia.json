@@ -1,0 +1,67 @@
+{
+  "_id": "armstd202cottadimaglia943fb7",
+  "_key": "!items!armstd202cottadimaglia943fb7",
+  "name": "Cotta di Maglia",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tunica di anelli intrecciati con imbottitura interna.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 24.9,
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "armor",
+      "subtype": "medium",
+      "baseItem": "ringmail"
+    },
+    "armor": {
+      "value": 16,
+      "type": "medium",
+      "dex": 2,
+      "magicalBonus": 0
+    },
+    "strength": "13",
+    "stealth": false,
+    "proficient": true,
+    "properties": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arm-std-202",
+      "categoria": "armatura_standard",
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

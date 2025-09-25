@@ -1,0 +1,72 @@
+{
+  "_id": "classmagolivello20signaturespells0edd90",
+  "_key": "!items!classmagolivello20signaturespells0edd90",
+  "name": "Incantesimi Distintivi",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Al 20° livello, ottieni la padronanza di due potenti incantesimi e puoi lanciarli con poco sforzo. Scegli due incantesimi da mago di 3° livello nel tuo libro degli incantesimi come tuoi incantesimi distintivi. Hai sempre questi incantesimi preparati, non contano nel numero di incantesimi preparati e puoi lanciare ciascuno di essi una volta al 3° livello senza spendere uno slot. Quando lo fai, non puoi farlo di nuovo finché non finisci un riposo breve o lungo. Se vuoi lanciare uno di questi incantesimi a un livello superiore, devi spendere uno slot normalmente.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-mago-livello_20-signature-spells",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+    }
+  }
+}

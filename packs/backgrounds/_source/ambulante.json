@@ -1,53 +1,60 @@
 {
-  "_id": "ambulante82cf5b",
-  "_key": "!item!ambulante82cf5b",
+  "_id": "ambulantea8bs0l",
+  "_key": "!items!ambulantea8bs0l",
   "name": "Ambulante",
   "type": "background",
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p>Girovaghi, teatranti, zigani, venditori itineranti e tutto il popolo viaggiante</p>",
+      "value": "<p>Girovaghi, teatranti, zigani, venditori itineranti e tutto il popolo viaggiante</p><h4>Tratti Personalità</h4><ul><li>Parla spesso in Baccaglio e deride gli stanziali</li><li>Persona solida con soluzioni pratiche</li><li>Sognatore irrequieto</li><li>Curioso di ogni dettaglio locale</li><li>Ama i piaceri della vita</li><li>Appassionato di arte e spettacolo</li><li>Usa toni fascinosi e nomi d'arte</li><li>Segue moda e stile della comunità</li></ul><h4>Ideali</h4><ul><li>Fratellanza (Buono)</li><li>Rispetto (Legale)</li><li>Buon senso (Caotico)</li><li>Interesse personale (Malvagio)</li><li>Legge della strada (Neutrale)</li><li>Viaggio (Qualsiasi)</li></ul>",
       "chat": "",
       "unidentified": ""
     },
     "source": "Manuale Base p.31",
-    "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
-    "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    },
-    "equipped": false,
-    "identified": true,
-    "quantity": 1,
-    "weight": 0,
-    "price": {
-      "value": 0,
-      "denomination": "gp"
-    },
-    "rarity": "common",
-    "attunement": 0,
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "5w1flh01l7k",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [
+              "prf",
+              "his"
+            ],
+            "fixed": [
+              "prf",
+              "his"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "prf",
+            "his"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze Abilità",
+        "icon": null,
+        "classRestriction": ""
+      }
+    ],
+    "startingEquipment": [
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "Monile di Santa Percorrenza"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "abito viaggiatore"
+      },
+      {
+        "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
+        "quantity": 15
+      }
+    ]
   },
   "effects": [],
   "folder": null,

@@ -1,53 +1,90 @@
 {
-  "_id": "duro209b41",
-  "_key": "!item!duro209b41",
+  "_id": "durophhoxz",
+  "_key": "!items!durophhoxz",
   "name": "Duro",
   "type": "background",
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p>Cresciuto tra angherie e violenze, temprato dalle difficoltà estreme</p>",
+      "value": "<p>Cresciuto tra angherie e violenze, temprato dalle difficoltà estreme</p><h4>Tratti Personalità</h4><ul><li>Cattiveria visibile a prima vista</li><li>Tempra d'acciaio forgiata dalle privazioni</li><li>Nessun ostacolo lo può fermare</li></ul><h4>Ideali</h4><p>Vari in base all'origine specifica</p>",
       "chat": "",
       "unidentified": ""
     },
     "source": "Manuale Base p.35",
-    "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
-    "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    },
-    "equipped": false,
-    "identified": true,
-    "quantity": 1,
-    "weight": 0,
-    "price": {
-      "value": 0,
-      "denomination": "gp"
-    },
-    "rarity": "common",
-    "attunement": 0,
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "jxxgezrg3oi",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [
+              "ath",
+              "itm"
+            ],
+            "fixed": [
+              "ath",
+              "itm"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "ath",
+            "itm"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze Abilità",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "t36ba0p13nh",
+        "type": "Improvement",
+        "configuration": {
+          "tools": {
+            "chosen": [
+              "game",
+              "dice",
+              "card"
+            ],
+            "fixed": []
+          }
+        },
+        "value": {
+          "tools": [
+            "game",
+            "dice",
+            "card"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze Strumenti",
+        "icon": null,
+        "classRestriction": ""
+      }
+    ],
+    "startingEquipment": [
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "Ciondolo di Santa Predatoria"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "mazzo di minchiate o altro gioco"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "abito comune"
+      },
+      {
+        "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
+        "quantity": 15
+      }
+    ]
   },
   "effects": [],
   "folder": null,

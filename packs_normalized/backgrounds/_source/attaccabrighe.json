@@ -1,53 +1,107 @@
 {
-  "_id": "attaccabrighe5a7351",
-  "_key": "!items!attaccabrighe5a7351",
+  "_id": "attaccabrighehny4ls",
+  "_key": "!items!attaccabrighehny4ls",
   "name": "Attaccabrighe",
   "type": "background",
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p>Provocatore di risse e scazzottate, campione di bettola</p>",
+      "value": "<p>Provocatore di risse e scazzottate, campione di bettola</p><h4>Tratti Personalità</h4><ul><li>Cerca ogni occasione per buttarla in caciara</li><li>Non resiste a una rissa quando c'è</li><li>Presuntuoso che si dichiara sempre superiore</li><li>Pronto a tutto per l'onore</li><li>Smargiasso che racconta panzane</li><li>Passa giornate in bettola mangiando e bevendo</li><li>Importuna continuamente chi trova attraente</li><li>Fanfarone che mangia a scrocco</li></ul><h4>Ideali</h4><ul><li>Onore (Buono)</li><li>Gloria (Legale)</li><li>Bagordi (Caotico)</li><li>Guadagno (Malvagio)</li><li>Vittoria (Neutrale)</li><li>Pancia piena (Qualsiasi)</li></ul>",
       "chat": "",
       "unidentified": ""
     },
     "source": "Manuale Base p.32",
-    "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
-    "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    },
-    "equipped": false,
-    "identified": true,
-    "quantity": 1,
-    "weight": 0,
-    "price": {
-      "value": 0,
-      "denomination": "gp"
-    },
-    "rarity": "common",
-    "attunement": 0,
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "o1mxxbd7aai",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [
+              "prf",
+              "ins"
+            ],
+            "fixed": [
+              "prf",
+              "ins"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "prf",
+            "ins"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze Abilità",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "z4gcxbaain",
+        "type": "Improvement",
+        "configuration": {
+          "tools": {
+            "chosen": [
+              "game",
+              "dice",
+              "card"
+            ],
+            "fixed": []
+          }
+        },
+        "value": {
+          "tools": [
+            "game",
+            "dice",
+            "card"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze Strumenti",
+        "icon": null,
+        "classRestriction": ""
+      },
+      {
+        "_id": "ci7k3dpurn",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.privilegio_rissaiolo",
+              "optional": false
+            }
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Ottiene 1 slot mossa aggiuntivo",
+        "icon": null,
+        "classRestriction": ""
+      }
+    ],
+    "startingEquipment": [
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "Trofeo da rissa (Cimelio extra)"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "mappa locande città origine"
+      },
+      {
+        "uuid": null,
+        "quantity": 1,
+        "name": "abito comune"
+      },
+      {
+        "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
+        "quantity": 15
+      }
+    ]
   },
   "effects": [],
   "folder": null,

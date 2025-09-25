@@ -1,0 +1,72 @@
+{
+  "_id": "classbarbarolivello3camminoprimordialeba07fc",
+  "_key": "!items!classbarbarolivello3camminoprimordialeba07fc",
+  "name": "Cammino Primordiale",
+  "type": "feat",
+  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "system": {
+    "description": {
+      "value": "<p>Al 3° livello, scegli un cammino che plasma la natura della tua ira. La tua scelta ti conferisce privilegi al 3° livello e poi di nuovo al 6°, 10° e 14° livello.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.49-50",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-barbaro-livello_3-cammino-primordiale",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49-50"
+    }
+  }
+}
