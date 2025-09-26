@@ -237,8 +237,8 @@ export class CovoGranlussiSystem {
   _setupHooks() {
     // Hook per aggiungere UI del Covo
     Hooks.on("renderActorSheetV2", (app, html, data) => {
-      if (game.user.isGM && data.actor.type === "character") {
-        this._renderCovoUI(app, html, data);
+      if (game.user.isGM && app.actor.type === "character") {
+        this._renderCovoUI(app, html);
       }
     });
 
@@ -258,7 +258,7 @@ export class CovoGranlussiSystem {
   /**
    * Renderizza UI del Covo sulla scheda
    */
-  _renderCovoUI(app, html, data) {
+  _renderCovoUI(app, html) {
     const actor = app.actor;
     const covo = actor.getFlag("brancalonia-bigat", "covo") || {};
 

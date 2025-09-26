@@ -23,8 +23,8 @@ export class CompagniaManager {
   _setupHooks() {
     // Hook per aggiungere tab Compagnia alle schede
     Hooks.on("renderActorSheetV2", (app, html, data) => {
-      if (data.actor.type === "character" && this._isInCompagnia(data.actor)) {
-        this._addCompagniaTab(app, html, data);
+      if (app.actor.type === "character" && this._isInCompagnia(app.actor)) {
+        this._addCompagniaTab(app, html);
       }
     });
 
@@ -361,8 +361,8 @@ export class CompagniaManager {
   /**
    * Aggiunge tab Compagnia alla scheda del personaggio
    */
-  _addCompagniaTab(app, html, data) {
-    const compagniaId = data.actor.flags.brancalonia?.compagniaId;
+  _addCompagniaTab(app, html) {
+    const compagniaId = app.actor.flags.brancalonia?.compagniaId;
     if (!compagniaId) return;
 
     const compagnia = game.actors.get(compagniaId);
@@ -412,12 +412,12 @@ export class CompagniaManager {
 
         <h3>Il Mio Ruolo</h3>
         <div class="my-role">
-          <strong>${data.actor.flags.brancalonia?.compagniaRole ?
-            this.compagniaRoles[data.actor.flags.brancalonia.compagniaRole]?.label :
+          <strong>${app.actor.flags.brancalonia?.compagniaRole ?
+            this.compagniaRoles[app.actor.flags.brancalonia.compagniaRole]?.label :
             "Nessun ruolo assegnato"
           }</strong>
-          ${data.actor.flags.brancalonia?.compagniaRole ?
-            `<p>${this.compagniaRoles[data.actor.flags.brancalonia.compagniaRole]?.benefits}</p>` :
+          ${app.actor.flags.brancalonia?.compagniaRole ?
+            `<p>${this.compagniaRoles[app.actor.flags.brancalonia.compagniaRole]?.benefits}</p>` :
             ""
           }
         </div>

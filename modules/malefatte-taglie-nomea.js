@@ -86,8 +86,8 @@ export class MalefatteTaglieNomeaSystem {
   _setupHooks() {
     // Hook per scheda personaggio
     Hooks.on("renderActorSheetV2", (app, html, data) => {
-      if (data.actor.type === "character") {
-        this._renderTagliaSection(app, html, data);
+      if (app.actor.type === "character") {
+        this._renderTagliaSection(app, html);
       }
     });
 
@@ -236,7 +236,7 @@ export class MalefatteTaglieNomeaSystem {
   /**
    * Renderizza sezione Taglia sulla scheda
    */
-  _renderTagliaSection(app, html, data) {
+  _renderTagliaSection(app, html) {
     const actor = app.actor;
     const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
     const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;

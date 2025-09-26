@@ -85,8 +85,8 @@ export class FavoriSystem {
   _setupHooks() {
     // Hook per UI favori
     Hooks.on("renderActorSheetV2", (app, html, data) => {
-      if (data.actor.type === "character") {
-        this._renderFavoriUI(app, html, data);
+      if (app.actor.type === "character") {
+        this._renderFavoriUI(app, html);
       }
     });
 
@@ -99,7 +99,7 @@ export class FavoriSystem {
   /**
    * Renderizza UI Favori sulla scheda
    */
-  _renderFavoriUI(app, html, data) {
+  _renderFavoriUI(app, html) {
     const actor = app.actor;
     const nomea = actor.getFlag("brancalonia-bigat", "nomea") || 0;
     const nomeaBonus = Math.floor(nomea / 25); // Bonus ogni 25 punti nomea
