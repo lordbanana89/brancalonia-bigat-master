@@ -3,7 +3,7 @@
   "_key": "!actors!tagliagoledfb057",
   "name": "Tagliagole",
   "type": "npc",
-  "img": "icons/creatures/humanoids/human-villager-green.webp",
+  "img": "icons/creatures/humanoids/humanoid-standing-green.webp",
   "system": {
     "abilities": {
       "str": {

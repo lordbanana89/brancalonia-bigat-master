@@ -3,7 +3,7 @@
   "_key": "!actors!anguana299a0a",
   "name": "Anguana",
   "type": "npc",
-  "img": "icons/creatures/aberrations/beast-tentacles-eyes-red.webp",
+  "img": "icons/creatures/aberrations/eye-tentacle-green.webp",
   "system": {
     "abilities": {
       "str": {

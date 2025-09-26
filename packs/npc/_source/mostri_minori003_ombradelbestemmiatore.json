@@ -3,7 +3,7 @@
   "_key": "!actors!mostriminori003ombradelbestemmiatore2e7b7c",
   "name": "Ombra del Bestemmiatore",
   "type": "npc",
-  "img": "icons/creatures/undead/ghost-ghoul-gray.webp",
+  "img": "icons/creatures/undead/ghost-blue.webp",
   "system": {
     "abilities": {
       "str": {

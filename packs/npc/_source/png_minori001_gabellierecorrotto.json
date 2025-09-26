@@ -3,7 +3,7 @@
   "_key": "!actors!pngminori001gabellierecorrotto4fcfed",
   "name": "Gabelliere Corrotto",
   "type": "npc",
-  "img": "icons/creatures/humanoids/human-villager-green.webp",
+  "img": "icons/creatures/humanoids/humanoid-standing-green.webp",
   "system": {
     "abilities": {
       "str": {

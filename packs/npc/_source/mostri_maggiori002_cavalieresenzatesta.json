@@ -3,7 +3,7 @@
   "_key": "!actors!mostrimaggiori002cavalieresenzatesta7686a2",
   "name": "Cavaliere Senza Testa",
   "type": "npc",
-  "img": "icons/creatures/undead/ghost-ghoul-gray.webp",
+  "img": "icons/creatures/undead/ghost-blue.webp",
   "system": {
     "abilities": {
       "str": {

@@ -3,7 +3,7 @@
   "_key": "!item!classmonacolivello3deviareproiettili7f4635",
   "name": "Deviare Proiettili",
   "type": "feat",
-  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
       "value": "<p>A partire dal 3° livello, puoi usare la tua reazione per deviare o afferrare il proiettile quando vieni colpito da un attacco con arma a distanza. Quando lo fai, il danno che subisci dall'attacco è ridotto di 1d10 + il tuo modificatore di Destrezza + il tuo livello da monaco. Se riduci il danno a 0, puoi afferrare il proiettile se è abbastanza piccolo da tenere in una mano e hai almeno una mano libera. Se afferri un proiettile in questo modo, puoi spendere 1 punto ki per fare un attacco a distanza con l'arma o munizione appena afferrata.</p>",

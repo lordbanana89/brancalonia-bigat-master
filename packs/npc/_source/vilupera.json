@@ -3,7 +3,7 @@
   "_key": "!actors!viluperac949b2",
   "name": "Vilupera",
   "type": "npc",
-  "img": "icons/creatures/aberrations/beast-tentacles-eyes-red.webp",
+  "img": "icons/creatures/aberrations/eye-tentacle-green.webp",
   "system": {
     "abilities": {
       "str": {

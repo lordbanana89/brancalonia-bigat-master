@@ -3,7 +3,7 @@
   "_key": "!actors!accroccodireliquie23736a",
   "name": "Accrocco di Reliquie",
   "type": "npc",
-  "img": "icons/creatures/magical/construct-stone-earth-golem.webp",
+  "img": "icons/creatures/magical/construct-stone-tan-blue.webp",
   "system": {
     "abilities": {
       "str": {

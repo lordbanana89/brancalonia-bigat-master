@@ -3,7 +3,7 @@
   "_key": "!item!classladrolivello1attaccofurtivoe312ff",
   "name": "Attacco Furtivo",
   "type": "feat",
-  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
       "value": "<p>A partire dal 1° livello, sai come colpire sottilmente e sfruttare la distrazione del nemico. Una volta per turno, puoi infliggere 1d6 danni extra a una creatura che colpisci con un attacco se hai vantaggio al tiro per colpire. L'attacco deve usare un'arma con proprietà accurata o a distanza. Non hai bisogno di vantaggio al tiro per colpire se un altro nemico del bersaglio si trova entro 1,5 metri da esso, quel nemico non è incapacitato, e tu non hai svantaggio al tiro per colpire. Il danno extra aumenta mentre avanzi di livello.</p>",

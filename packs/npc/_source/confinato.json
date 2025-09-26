@@ -3,7 +3,7 @@
   "_key": "!actors!confinatob91a75",
   "name": "Confinato",
   "type": "npc",
-  "img": "icons/creatures/undead/ghost-ghoul-gray.webp",
+  "img": "icons/creatures/undead/ghost-blue.webp",
   "system": {
     "abilities": {
       "str": {

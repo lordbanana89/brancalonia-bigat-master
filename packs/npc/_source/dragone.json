@@ -3,7 +3,7 @@
   "_key": "!actors!dragonee90116",
   "name": "Dragone",
   "type": "npc",
-  "img": "icons/creatures/humanoids/human-villager-green.webp",
+  "img": "icons/creatures/humanoids/humanoid-standing-green.webp",
   "system": {
     "abilities": {
       "str": {

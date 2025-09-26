@@ -3,7 +3,7 @@
   "_key": "!actors!orcocattivo9780db",
   "name": "Orco Cattivo",
   "type": "npc",
-  "img": "icons/creatures/giants/giant-stone-club.webp",
+  "img": "icons/creatures/magical/giant-stone-green.webp",
   "system": {
     "abilities": {
       "str": {

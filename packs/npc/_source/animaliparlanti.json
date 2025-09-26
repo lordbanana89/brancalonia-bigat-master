@@ -3,7 +3,7 @@
   "_key": "!actors!animaliparlantia2bc20",
   "name": "Animali Parlanti",
   "type": "npc",
-  "img": "icons/creatures/mammals/wolf-black-howl.webp",
+  "img": "icons/creatures/mammals/wolf-howl.webp",
   "system": {
     "abilities": {
       "str": {

@@ -3,7 +3,7 @@
   "_key": "!actors!pngmaggiori001capitanofieramoscac37475",
   "name": "Capitano Fieramosca",
   "type": "npc",
-  "img": "icons/creatures/humanoids/human-villager-green.webp",
+  "img": "icons/creatures/humanoids/humanoid-standing-green.webp",
   "system": {
     "abilities": {
       "str": {

@@ -3,7 +3,7 @@
   "_key": "!actors!alimentaledipolentabf01a5",
   "name": "Alimentale di Polenta",
   "type": "npc",
-  "img": "icons/creatures/magical/construct-stone-earth-golem.webp",
+  "img": "icons/creatures/magical/construct-stone-tan-blue.webp",
   "system": {
     "abilities": {
       "str": {

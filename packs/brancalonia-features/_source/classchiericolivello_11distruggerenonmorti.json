@@ -3,7 +3,7 @@
   "_key": "!item!classchiericolivello11distruggerenonmorti450a12",
   "name": "Distruggere Non-Morti",
   "type": "feat",
-  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
       "value": "<p>A partire dall'11° livello, quando un non-morto fallisce il suo tiro salvezza contro la tua caratteristica Scacciare Non-Morti, la creatura è istantaneamente distrutta se il suo grado di sfida è pari o inferiore a una certa soglia.</p>",

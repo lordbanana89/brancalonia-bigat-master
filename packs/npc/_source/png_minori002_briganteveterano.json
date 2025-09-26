@@ -3,7 +3,7 @@
   "_key": "!actors!pngminori002briganteveterano9ca2f4",
   "name": "Brigante Veterano",
   "type": "npc",
-  "img": "icons/creatures/humanoids/human-villager-green.webp",
+  "img": "icons/creatures/humanoids/humanoid-standing-green.webp",
   "system": {
     "abilities": {
       "str": {

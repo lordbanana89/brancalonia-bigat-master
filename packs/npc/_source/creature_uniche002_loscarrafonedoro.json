@@ -3,7 +3,7 @@
   "_key": "!actors!creatureuniche002loscarrafonedoro0f08c1",
   "name": "Lo Scarrafone d'Oro",
   "type": "npc",
-  "img": "icons/creatures/magical/construct-stone-earth-golem.webp",
+  "img": "icons/creatures/magical/construct-stone-tan-blue.webp",
   "system": {
     "abilities": {
       "str": {

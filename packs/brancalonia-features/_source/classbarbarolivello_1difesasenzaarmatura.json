@@ -3,7 +3,7 @@
   "_key": "!item!classbarbarolivello1difesasenzaarmaturad1d8e3",
   "name": "Difesa Senza Armatura",
   "type": "feat",
-  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
       "value": "<p>Mentre non indossi armatura, la tua Classe Armatura è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Costituzione. Puoi usare uno scudo e ottenere comunque questo beneficio.</p>",

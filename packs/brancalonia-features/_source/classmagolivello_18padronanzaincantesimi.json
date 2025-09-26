@@ -3,7 +3,7 @@
   "_key": "!item!classmagolivello18padronanzaincantesimi6fcbd8",
   "name": "Padronanza degli Incantesimi",
   "type": "feat",
-  "img": "icons/skills/yellow/affinity-puzzle.webp",
+  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
       "value": "<p>Al 18° livello, hai raggiunto tale padronanza su certi incantesimi che puoi lanciarli a volontà. Scegli un incantesimo da mago di 1° livello e un incantesimo da mago di 2° livello nel tuo libro degli incantesimi. Puoi lanciare quegli incantesimi al loro livello più basso senza spendere uno slot incantesimo quando li hai preparati. Se vuoi lanciare uno di questi incantesimi a un livello superiore, devi spendere uno slot incantesimo come normale.</p>",

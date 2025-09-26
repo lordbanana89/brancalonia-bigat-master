@@ -3,7 +3,7 @@
   "_key": "!actors!folletto48cb8b",
   "name": "Folletto",
   "type": "npc",
-  "img": "icons/creatures/magical/fae-fairy-winged-glowing.webp",
+  "img": "icons/creatures/magical/fairy-pixie-blue-green.webp",
   "system": {
     "abilities": {
       "str": {

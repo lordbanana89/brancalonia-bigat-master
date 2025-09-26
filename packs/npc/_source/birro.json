@@ -3,7 +3,7 @@
   "_key": "!actors!birro848176",
   "name": "Birro",
   "type": "npc",
-  "img": "icons/creatures/humanoids/human-villager-green.webp",
+  "img": "icons/creatures/humanoids/humanoid-standing-green.webp",
   "system": {
     "abilities": {
       "str": {

@@ -3,7 +3,7 @@
   "_key": "!actors!pagano9ceb7b",
   "name": "Pagano",
   "type": "npc",
-  "img": "icons/creatures/humanoids/human-villager-green.webp",
+  "img": "icons/creatures/humanoids/humanoid-standing-green.webp",
   "system": {
     "abilities": {
       "str": {

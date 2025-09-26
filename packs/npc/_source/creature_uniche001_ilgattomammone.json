@@ -3,7 +3,7 @@
   "_key": "!actors!creatureuniche001ilgattomammone06bda5",
   "name": "Il Gatto Mammone",
   "type": "npc",
-  "img": "icons/creatures/unholy/demon-horned-winged-pink.webp",
+  "img": "icons/creatures/unholy/demon-horned-winged-purple.webp",
   "system": {
     "abilities": {
       "str": {

@@ -3,7 +3,7 @@
   "_key": "!items!attaccabrighexzrwou",
   "name": "Attaccabrighe",
   "type": "background",
-  "img": "icons/skills/melee/unarmed-punch-fist-yellow.webp",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
   "system": {
     "description": {
       "value": "<p><em>Provocatore di risse e scazzottate, campione di bettola</em></p>\n<p><strong>Skill Proficiencies:</strong> Performance, Insight</p>\n<p><strong>Tool Proficiencies:</strong> Due tipi di gioco</p>\n<p><strong>Equipment:</strong> Trofeo da rissa (Cimelio extra), mappa locande città origine, abito comune, borsa 15 ma</p>\n<h3>Feature: Rissaiolo</h3>\n<p>Ottiene 1 slot mossa aggiuntivo</p>\n<h3>Suggested Characteristics</h3>\n<p>I attaccabrighe di Brancalonia sono caratterizzati da:</p>\n<table><thead><tr><th>d8</th><th>Personality Trait</th></tr></thead><tbody><tr><td>1</td><td>Cerca ogni occasione per buttarla in caciara</td></tr><tr><td>2</td><td>Non resiste a una rissa quando c'è</td></tr><tr><td>3</td><td>Presuntuoso che si dichiara sempre superiore</td></tr><tr><td>4</td><td>Pronto a tutto per l'onore</td></tr><tr><td>5</td><td>Smargiasso che racconta panzane</td></tr><tr><td>6</td><td>Passa giornate in bettola mangiando e bevendo</td></tr><tr><td>7</td><td>Importuna continuamente chi trova attraente</td></tr><tr><td>8</td><td>Fanfarone che mangia a scrocco</td></tr></tbody></table>\n<table><thead><tr><th>d6</th><th>Ideal</th></tr></thead><tbody><tr><td>1</td><td>Onore (Buono)</td></tr><tr><td>2</td><td>Gloria (Legale)</td></tr><tr><td>3</td><td>Bagordi (Caotico)</td></tr><tr><td>4</td><td>Guadagno (Malvagio)</td></tr><tr><td>5</td><td>Vittoria (Neutrale)</td></tr><tr><td>6</td><td>Pancia piena (Qualsiasi)</td></tr></tbody></table>\n",
