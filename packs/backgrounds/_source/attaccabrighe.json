@@ -25,7 +25,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "prf",
+            "ins"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -45,7 +50,11 @@
             "fixed": []
           }
         },
-        "value": {},
+        "value": {
+          "tools": {
+            "chosen": []
+          }
+        },
         "level": 0,
         "title": "Strumenti del Background",
         "classRestriction": "",
@@ -64,37 +73,35 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "Rissaiolo",
         "classRestriction": "",
         "appliedEffects": []
-      },
-      {
-        "_id": "ba0461b5aa7746b0",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-attaccabrighe-abito",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-attaccabrighe-borsa",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 0,
-        "title": "Equipaggiamento Iniziale",
-        "classRestriction": "",
-        "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "42cbb83f4d774c23",
+        "group": "",
+        "sort": 200000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-attaccabrighe-abito"
+      },
+      {
+        "_id": "c042ba4c69fe414a",
+        "group": "",
+        "sort": 300000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-attaccabrighe-borsa"
+      }
+    ],
+    "wealth": "1d4 + 1"
   },
   "effects": [],
   "folder": null,
@@ -107,6 +114,9 @@
       "fonte": "Manuale Base p.32",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

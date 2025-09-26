@@ -25,7 +25,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "dec",
+            "per"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -45,7 +50,11 @@
             "fixed": []
           }
         },
-        "value": {},
+        "value": {
+          "tools": {
+            "chosen": []
+          }
+        },
         "level": 0,
         "title": "Strumenti del Background",
         "classRestriction": "",
@@ -62,7 +71,11 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "languages": [
+            "cant"
+          ]
+        },
         "level": 0,
         "title": "Linguaggi del Background",
         "classRestriction": "",
@@ -81,37 +94,35 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "A cena con le Fate",
         "classRestriction": "",
         "appliedEffects": []
-      },
-      {
-        "_id": "20f666fe93bf457f",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-lucignolo-abito",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-lucignolo-borsa",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 0,
-        "title": "Equipaggiamento Iniziale",
-        "classRestriction": "",
-        "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "cd0cab3cccb94144",
+        "group": "",
+        "sort": 0,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-lucignolo-abito"
+      },
+      {
+        "_id": "a08b83bcf2cc4cb0",
+        "group": "",
+        "sort": 200000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-lucignolo-borsa"
+      }
+    ],
+    "wealth": "1d4 + 1"
   },
   "effects": [],
   "folder": null,
@@ -124,6 +135,9 @@
       "fonte": "Brancalonia Macaronicon p.40-41",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

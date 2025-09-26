@@ -25,7 +25,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "ste",
+            "sur"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -42,7 +47,11 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "languages": [
+            "cant"
+          ]
+        },
         "level": 0,
         "title": "Linguaggi del Background",
         "classRestriction": "",
@@ -61,37 +70,35 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "Senza Confini",
         "classRestriction": "",
         "appliedEffects": []
-      },
-      {
-        "_id": "3ab5f68890164e93",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-passatore-abito",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-passatore-borsa",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 0,
-        "title": "Equipaggiamento Iniziale",
-        "classRestriction": "",
-        "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "5b3683be54904f00",
+        "group": "",
+        "sort": 0,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-passatore-abito"
+      },
+      {
+        "_id": "034b19ad02464014",
+        "group": "",
+        "sort": 100000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-passatore-borsa"
+      }
+    ],
+    "wealth": "1d4 + 1"
   },
   "effects": [],
   "folder": null,
@@ -104,6 +111,9 @@
       "fonte": "Brancalonia Macaronicon p.41-42",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

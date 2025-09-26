@@ -24,7 +24,11 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "ath"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -41,7 +45,11 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "languages": [
+            "primordial"
+          ]
+        },
         "level": 0,
         "title": "Linguaggi del Background",
         "classRestriction": "",
@@ -60,37 +68,34 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "Dimestichezza Selvatica",
         "classRestriction": "",
         "appliedEffects": []
-      },
-      {
-        "_id": "b1fc6ef2fd07439a",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-brado-abito",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-brado-borsa",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 0,
-        "title": "Equipaggiamento Iniziale",
-        "classRestriction": "",
-        "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "61c66dba473e4d7b",
+        "group": "",
+        "sort": 300000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-brado-abito"
+      },
+      {
+        "_id": "c6015109ab5c4c35",
+        "group": "",
+        "sort": 400000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-brado-borsa"
+      }
+    ]
   },
   "effects": [],
   "folder": null,
@@ -103,6 +108,9 @@
       "fonte": "Manuale Base p.34",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

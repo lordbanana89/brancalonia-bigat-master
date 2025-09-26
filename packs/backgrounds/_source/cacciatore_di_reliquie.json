@@ -25,7 +25,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "inv",
+            "his"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -42,7 +47,11 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "languages": [
+            "latin"
+          ]
+        },
         "level": 0,
         "title": "Linguaggi del Background",
         "classRestriction": "",
@@ -56,14 +65,35 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "Studioso di Reliquie",
         "classRestriction": "",
         "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "731fe46a4a7b48b7",
+        "group": "",
+        "sort": 200000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-cacciatore_di_reliquie-abito"
+      },
+      {
+        "_id": "69e3cb21fc264570",
+        "group": "",
+        "sort": 300000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-cacciatore_di_reliquie-borsa"
+      }
+    ],
+    "wealth": "1d4"
   },
   "effects": [],
   "folder": null,
@@ -76,6 +106,9 @@
       "fonte": "Brancalonia Macaronicon p.36-37",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

@@ -25,7 +25,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "ath",
+            "sur"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -44,37 +49,42 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "Con la Pioggia o con il Vento...",
         "classRestriction": "",
         "appliedEffects": []
-      },
-      {
-        "_id": "9dbb99221fb34593",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-staffetta-abito",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-staffetta-borsa",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 0,
-        "title": "Equipaggiamento Iniziale",
-        "classRestriction": "",
-        "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "e8ca954ab81942c9",
+        "group": "",
+        "sort": 100000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-staffetta-borsa"
+      },
+      {
+        "_id": "059ec050db2d418b",
+        "group": "",
+        "sort": 300000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-staffetta-abito"
+      },
+      {
+        "_id": "9a5b0912da744a57",
+        "group": "",
+        "sort": 400000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-staffetta-borsa"
+      }
+    ]
   },
   "effects": [],
   "folder": null,
@@ -87,6 +97,9 @@
       "fonte": "Brancalonia Macaronicon p.44-45",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

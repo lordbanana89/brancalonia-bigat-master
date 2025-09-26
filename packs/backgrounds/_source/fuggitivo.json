@@ -13,7 +13,8 @@
     "source": "Manuale Base p.36",
     "identifier": "fuggitivo",
     "advancement": [],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": []
   },
   "effects": [],
   "folder": null,
@@ -26,6 +27,9 @@
       "fonte": "Manuale Base p.36",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

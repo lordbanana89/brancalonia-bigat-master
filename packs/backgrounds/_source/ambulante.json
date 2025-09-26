@@ -25,7 +25,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "prf",
+            "his"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -45,7 +50,11 @@
             "fixed": []
           }
         },
-        "value": {},
+        "value": {
+          "tools": {
+            "chosen": []
+          }
+        },
         "level": 0,
         "title": "Strumenti del Background",
         "classRestriction": "",
@@ -62,7 +71,11 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "languages": [
+            "cant"
+          ]
+        },
         "level": 0,
         "title": "Linguaggi del Background",
         "classRestriction": "",
@@ -81,41 +94,43 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "Storie della Strada",
         "classRestriction": "",
         "appliedEffects": []
-      },
-      {
-        "_id": "cd4af077825f430f",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-ambulante-monile",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-ambulante-abito",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-ambulante-borsa",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 0,
-        "title": "Equipaggiamento Iniziale",
-        "classRestriction": "",
-        "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "5aad15e8391f4cd2",
+        "group": "",
+        "sort": 0,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-ambulante-monile"
+      },
+      {
+        "_id": "634bf3c3e42e4c05",
+        "group": "",
+        "sort": 100000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-ambulante-abito"
+      },
+      {
+        "_id": "6629ea08b1a54ee8",
+        "group": "",
+        "sort": 200000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-ambulante-borsa"
+      }
+    ],
+    "wealth": "1d4 + 1"
   },
   "effects": [],
   "folder": null,
@@ -128,6 +143,9 @@
       "fonte": "Manuale Base p.31",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

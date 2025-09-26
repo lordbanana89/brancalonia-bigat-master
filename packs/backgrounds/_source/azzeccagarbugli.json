@@ -25,7 +25,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "inv",
+            "per"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -42,7 +47,11 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "languages": [
+            "latin"
+          ]
+        },
         "level": 0,
         "title": "Linguaggi del Background",
         "classRestriction": "",
@@ -61,37 +70,34 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "Risolvere Guai",
         "classRestriction": "",
         "appliedEffects": []
-      },
-      {
-        "_id": "3495f70c364d47d6",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-azzeccagarbugli-abito",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-azzeccagarbugli-borsa",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 0,
-        "title": "Equipaggiamento Iniziale",
-        "classRestriction": "",
-        "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "b125b5da62254f6c",
+        "group": "",
+        "sort": 400000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-azzeccagarbugli-abito"
+      },
+      {
+        "_id": "0bdb3447605a4f9d",
+        "group": "",
+        "sort": 500000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-azzeccagarbugli-borsa"
+      }
+    ]
   },
   "effects": [],
   "folder": null,
@@ -104,6 +110,9 @@
       "fonte": "Manuale Base p.33",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

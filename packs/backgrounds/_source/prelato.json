@@ -25,7 +25,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "per",
+            "rel"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -43,7 +48,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "languages": [
+            "draconiano",
+            "lingua_ignota"
+          ]
+        },
         "level": 0,
         "title": "Linguaggi del Background",
         "classRestriction": "",
@@ -62,33 +72,26 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "Rispetto e Influenza",
         "classRestriction": "",
         "appliedEffects": []
-      },
-      {
-        "_id": "9d55db2cd707441a",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-prelato-borsa",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 0,
-        "title": "Equipaggiamento Iniziale",
-        "classRestriction": "",
-        "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "0a0016afb1b24f95",
+        "group": "",
+        "sort": 300000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-prelato-borsa"
+      }
+    ]
   },
   "effects": [],
   "folder": null,
@@ -101,6 +104,9 @@
       "fonte": "Brancalonia Macaronicon p.42-43",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

@@ -25,7 +25,12 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "skills": [
+            "ath",
+            "itm"
+          ]
+        },
         "level": 0,
         "title": "Competenze del Background",
         "classRestriction": "",
@@ -45,7 +50,11 @@
             "fixed": []
           }
         },
-        "value": {},
+        "value": {
+          "tools": {
+            "chosen": []
+          }
+        },
         "level": 0,
         "title": "Strumenti del Background",
         "classRestriction": "",
@@ -62,7 +71,11 @@
             ]
           }
         },
-        "value": {},
+        "value": {
+          "languages": [
+            "cant"
+          ]
+        },
         "level": 0,
         "title": "Linguaggi del Background",
         "classRestriction": "",
@@ -81,41 +94,43 @@
           "optional": false,
           "spell": null
         },
-        "value": {},
+        "value": {
+          "items": []
+        },
         "level": 0,
         "title": "Faccia da Duro",
         "classRestriction": "",
         "appliedEffects": []
-      },
-      {
-        "_id": "9be5ed892e6743ee",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-duro-monile",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-duro-abito",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-duro-borsa",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 0,
-        "title": "Equipaggiamento Iniziale",
-        "classRestriction": "",
-        "appliedEffects": []
       }
     ],
-    "traits": {}
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "479271fd6f8b4270",
+        "group": "",
+        "sort": 0,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-duro-monile"
+      },
+      {
+        "_id": "4f09cc73cb40480e",
+        "group": "",
+        "sort": 200000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-duro-abito"
+      },
+      {
+        "_id": "fc112606cfe54698",
+        "group": "",
+        "sort": 300000,
+        "type": "linked",
+        "count": 1,
+        "key": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-duro-borsa"
+      }
+    ],
+    "wealth": "1d4 + 1"
   },
   "effects": [],
   "folder": null,
@@ -128,6 +143,9 @@
       "fonte": "Manuale Base p.35",
       "tipo": "background",
       "database_complete": true
+    },
+    "dnd5e": {
+      "backgroundConfigured": true
     }
   }
 }

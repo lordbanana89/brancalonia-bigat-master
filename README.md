@@ -4,7 +4,16 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## 🎉 MEGA UPDATE v3.20.2 - Background con ItemGrant Funzionanti
+## 🎉 MEGA UPDATE v3.20.3 - Background Structure Fixed per D&D 5e
+
+### 🔧 HOTFIX v3.20.3 - Struttura Background Corretta
+**FIX DEFINITIVO**:
+- Ripristinato campo `startingEquipment` con struttura D&D 5e corretta
+- Popolati campi `value` in tutti gli advancement
+- Skills, tools e languages ora vengono applicati automaticamente
+- Equipaggiamento iniziale gestito tramite `startingEquipment` (non ItemGrant)
+- Aggiunto campo `wealth` per denaro iniziale
+- Compatibilità completa con lifecycle hooks D&D 5e
 
 ### 🔧 HOTFIX v3.20.2 - ItemGrant e Equipaggiamento Background
 **FIX COMPLETO**:
@@ -728,25 +737,29 @@ talenti:              23 file  - Talenti Brancaloni
 Molti items apparentemente "narrativi" hanno meccaniche nascoste nelle descrizioni che richiedono Active Effects per funzionare correttamente in gioco.
 **RISULTATO FINALE: 100% copertura Active Effects per tutti gli items con meccaniche reali.**
 
-### 12. SCOPERTA CRITICA: ItemGrant Advancement Requirements (v3.20.2)
+### 12. SCOPERTA CRITICA: Background Structure Requirements (v3.20.3)
 
-**Problema**: Gli ItemGrant advancement nei background non funzionavano perché avevano array `items` vuoti.
+**Problema Identificato**: I background non applicano automaticamente advancement (skills, tools, languages, equipment).
 
-**Causa**: ItemGrant richiede riferimenti a item esistenti nei compendi tramite UUID nel formato:
-```
-"uuid": "Compendium.{scope}.{pack}.Item.{itemId}"
-```
+**Causa Root**: Struttura completamente errata. I background D&D 5e NON sono item generici con advancement manuali.
 
-**Soluzione Implementata**:
-1. Creati 13 feature items per i privilegi dei background (feat-bg-{background})
-2. Creati 24 equipment items per l'equipaggiamento iniziale (equip-bg-{background}-{type})
-3. Aggiornati tutti gli ItemGrant advancement per referenziare questi items
-4. Aggiunti advancement separati per features ed equipment
+**Requisiti Reali del Sistema D&D 5e**:
+1. **StartingEquipmentTemplate**: I background DEVONO usare il campo `startingEquipment` (non ItemGrant per equipment)
+2. **Advancement Auto-generati**: Il sistema crea automaticamente gli advancement tramite `_preCreate()`
+3. **Lifecycle Hooks**: `_onCreate()` applica automaticamente gli advancement al personaggio
+4. **Campo `value` popolato**: Gli advancement devono avere valori pre-configurati, non vuoti
 
-**Files Creati**:
-- `scripts/create-background-features.py`: Genera feature e equipment items
-- `scripts/update-background-itemgrants.py`: Aggiorna riferimenti negli advancement
-- `scripts/add-equipment-grants.py`: Aggiunge equipment grants
+**Differenze Critiche**:
+- ❌ ItemGrant per equipment → ✅ `startingEquipment` field
+- ❌ Advancement vuoti (`value: {}`) → ✅ Advancement con valori default
+- ❌ Configurazione manuale → ✅ Auto-generazione tramite hooks
+- ❌ Feature e equipment nello stesso modo → ✅ ItemGrant SOLO per features
+
+**Soluzione v3.20.3**:
+1. Ripristinare campo `startingEquipment` con struttura corretta
+2. Popolare campo `value` negli advancement
+3. Mantenere ItemGrant SOLO per background features
+4. Implementare struttura compatibile con lifecycle hooks
 
 ### 11. STATISTICHE FINALI COPERTURA (v3.14.2)
 
