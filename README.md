@@ -737,6 +737,71 @@ talenti:              23 file  - Talenti Brancaloni
 Molti items apparentemente "narrativi" hanno meccaniche nascoste nelle descrizioni che richiedono Active Effects per funzionare correttamente in gioco.
 **RISULTATO FINALE: 100% copertura Active Effects per tutti gli items con meccaniche reali.**
 
+### 13. SCOPERTE CRITICHE: Foundry v13 & D&D 5e Requirements (v3.20.4)
+
+**A. Hook renderActorSheetV2 Changes**
+- ❌ `data.actor` → ✅ `app.actor`
+- ❌ `html` jQuery object → ✅ DOM element (necessita `$(html)`)
+
+**B. Background Structure Requirements**
+- ❌ ItemGrant per equipment → ✅ `startingEquipment` template field
+- ❌ `value: {}` vuoto → ✅ `value` popolato con defaults
+- ❌ Manual configuration → ✅ Auto-generation via lifecycle hooks
+
+**C. Item Type Specific Templates (D&D 5e v5.x)**
+Ogni tipo di item in D&D 5e ha template e requisiti specifici:
+
+1. **Background**:
+   - `StartingEquipmentTemplate`
+   - `AdvancementTemplate`
+   - Auto-population via `_preCreate()`
+
+2. **Class**:
+   - `ItemDescriptionTemplate`
+   - `StartingEquipmentTemplate`
+   - `AdvancementTemplate`
+   - Hit dice configuration
+   - Spellcasting configuration
+
+3. **Race/Species**:
+   - `AdvancementTemplate`
+   - Size, speed, senses configuration
+   - Trait grants
+
+4. **Subclass**:
+   - `AdvancementTemplate`
+   - `ItemDescriptionTemplate`
+   - Class restriction field
+
+**D. Advancement Application Issues**
+- Gli advancement devono essere "applied" non solo "configured"
+- Il campo `value` deve contenere le scelte applicate
+- Lifecycle hooks (`_onCreate`) triggerano l'applicazione
+
+**E. ANALISI CRITICA COMPENDI (2024-11-27)**
+Risultato analisi strutturale completa:
+
+| Compendio | Items Totali | Con Errori | % Errato | Problema Principale |
+|-----------|-------------|------------|----------|---------------------|
+| Backgrounds | 13 | 0 | 0% | ✅ Fixed in v3.20.3 |
+| **Classes** | **12** | **12** | **100%** | ❌ Struttura hd errata, no advancement |
+| **Races** | **8** | **8** | **100%** | ❌ Template equipment invece di race |
+| Subclasses | N/A | 0 | 0% | ✅ OK |
+
+**Problemi Critici Identificati:**
+
+1. **CLASSI (100% errate)**:
+   - `hitDice` è stringa invece di oggetto `hd: {denomination: "d12"}`
+   - Manca `primaryAbility`
+   - Manca `startingEquipment`
+   - `advancement` array vuoto (dovrebbe avere HP, ASI, subclass)
+
+2. **RAZZE (100% errate)**:
+   - Usano template equipment (activation, duration, uses, price, etc.)
+   - Mancano campi essenziali: movement, senses, type
+   - No advancement per Size, traits
+   - Struttura completamente incompatibile
+
 ### 12. SCOPERTA CRITICA: Background Structure Requirements (v3.20.3)
 
 **Problema Identificato**: I background non applicano automaticamente advancement (skills, tools, languages, equipment).
