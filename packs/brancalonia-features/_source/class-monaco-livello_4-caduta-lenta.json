@@ -79,5 +79,6 @@
   },
   "note_dm": "Slow Fall elimina falling damage come minaccia. Permette scene cinematiche di salti estremi. A livello 20, 100ft immunità è quasi totale.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
-  "name": "Caduta Lenta"
+  "name": "Caduta Lenta",
+  "img": "icons/magic/air/wind-vortex-swirl-blue.webp"
 }

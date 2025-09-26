@@ -58,5 +58,6 @@
   },
   "note_dm": "Identify essenziale per loot magico. Non rivela curse è importante per tensione. Perla da 100mo è investimento iniziale.",
   "fonte": "D&D 5e PHB p.252",
-  "name": "Spell Identificare"
+  "name": "Spell Identificare",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

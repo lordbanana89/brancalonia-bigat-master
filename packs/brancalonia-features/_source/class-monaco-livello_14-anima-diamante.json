@@ -30,5 +30,6 @@
   },
   "note_dm": "Diamond Soul rende il monaco quasi immune a save effects. Competenza in tutti i save è enorme.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
-  "name": "Anima Diamante"
+  "name": "Anima Diamante",
+  "img": "icons/commodities/gems/gem-faceted-radiant-white.webp"
 }

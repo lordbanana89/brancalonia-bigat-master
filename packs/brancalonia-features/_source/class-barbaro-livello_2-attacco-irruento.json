@@ -94,5 +94,6 @@
     "nomea": "Usare spesso Attacco Irruento aumenta la reputazione di 'temerario'"
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48",
-  "name": "Attacco Irruento"
+  "name": "Attacco Irruento",
+  "img": "icons/skills/melee/hand-grip-sword-red.webp"
 }

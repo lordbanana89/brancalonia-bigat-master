@@ -114,5 +114,6 @@
   },
   "note_dm": "Il dominio definisce completamente lo stile di gioco del chierico. Considera il setting quando approvi domini.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
-  "name": "Dominio Divino"
+  "name": "Dominio Divino",
+  "img": "icons/magic/holy/yin-yang-balance-symbol.webp"
 }

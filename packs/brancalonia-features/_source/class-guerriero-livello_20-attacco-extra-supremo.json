@@ -144,5 +144,6 @@
   },
   "note_dm": "Il Guerriero 20 con 4 attacchi è il pinnacolo del combattimento marziale in D&D. Nessun'altra classe può eguagliare il suo output di danno consistente round dopo round.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
-  "name": "Attacco Extra Supremo"
+  "name": "Attacco Extra Supremo",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
 }

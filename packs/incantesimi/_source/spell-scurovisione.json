@@ -64,5 +64,6 @@
   },
   "note_dm": "Darkvision livella playing field per party miste. 8 ore senza concentrazione ottimo. Elimina necessità torce in dungeon.",
   "fonte": "D&D 5e PHB p.230",
-  "name": "Spell Scurovisione"
+  "name": "Spell Scurovisione",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

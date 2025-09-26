@@ -113,5 +113,6 @@
   },
   "note_dm": "Martial Arts è il cuore del monaco. Il bonus action attack gratuito lo rende competitivo nel damage dal livello 1. Il dado scaling mantiene rilevanza.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78",
-  "name": "Arti Marziali"
+  "name": "Arti Marziali",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow.webp"
 }

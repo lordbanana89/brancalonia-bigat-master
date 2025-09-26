@@ -64,5 +64,6 @@
   },
   "note_dm": "Command è controllo potente ma breve. Creatività nei comandi premiata. WIS save comune problema. Scaling ottimo.",
   "fonte": "D&D 5e PHB p.223",
-  "name": "Spell Comando"
+  "name": "Spell Comando",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

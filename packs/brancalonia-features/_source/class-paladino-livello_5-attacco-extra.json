@@ -15,5 +15,6 @@
   },
   "note_dm": "Extra Attack raddoppia output del paladino e chance di smite.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
-  "name": "Attacco Extra"
+  "name": "Attacco Extra",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
 }

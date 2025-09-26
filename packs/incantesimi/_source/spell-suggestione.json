@@ -58,5 +58,6 @@
   },
   "note_dm": "Suggestion richiede creatività. 'Ragionevole' è soggettivo - DM decide. 8 ore durata lo rende potentissimo se usato bene.",
   "fonte": "D&D 5e PHB p.279",
-  "name": "Spell Suggestione"
+  "name": "Spell Suggestione",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

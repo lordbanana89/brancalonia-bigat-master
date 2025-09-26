@@ -70,5 +70,6 @@
   },
   "note_dm": "Favored Enemy è molto situazionale. Coordina con DM per scegliere nemici rilevanti alla campagna. Tasha's Favored Foe più versatile.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91",
-  "name": "Nemico Prescelto"
+  "name": "Nemico Prescelto",
+  "img": "icons/skills/targeting/crosshair-creature-red.webp"
 }

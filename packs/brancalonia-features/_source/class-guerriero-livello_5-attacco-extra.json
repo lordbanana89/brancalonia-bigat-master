@@ -116,5 +116,6 @@
   },
   "note_dm": "Il Guerriero con 3-4 attacchi è una macchina da guerra. Considera l'output di danno estremo quando progetti incontri di alto livello.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
-  "name": "Attacco Extra"
+  "name": "Attacco Extra",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
 }

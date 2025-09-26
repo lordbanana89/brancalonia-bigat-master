@@ -67,5 +67,6 @@
   },
   "note_dm": "Scorching Ray è il single-target damage di livello 2. Flessibilità bersagli ottima. Scaling lineare efficiente. Fire damage limitante.",
   "fonte": "D&D 5e PHB p.273",
-  "name": "Spell Raggio Rovente"
+  "name": "Spell Raggio Rovente",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

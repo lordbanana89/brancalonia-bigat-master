@@ -64,5 +64,6 @@
   ],
   "note_dm": "Marchio Incandescente è versione Brancalonia di Hunter's Mark con twist fire/light. Ottimo per ranger piromani. Luce può essere tattica.",
   "fonte": "Brancalonia Macaronicon p.52",
-  "name": "Spell Marchio Incandescente"
+  "name": "Spell Marchio Incandescente",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

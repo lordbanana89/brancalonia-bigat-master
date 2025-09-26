@@ -137,5 +137,6 @@
   },
   "note_dm": "Expertise rende il ladro IL specialista del party. Lascia che brilli nelle sue aree di competenza.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
-  "name": "Competenze"
+  "name": "Competenze",
+  "img": "icons/sundries/gaming/dice-pair-blue.webp"
 }

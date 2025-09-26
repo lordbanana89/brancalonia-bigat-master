@@ -73,5 +73,6 @@
   },
   "note_dm": "Ricorda di applicare il bonus solo se non indossa armatura pesante. Il bonus è sempre attivo, non richiede attivazione.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
-  "name": "Movimento Veloce"
+  "name": "Movimento Veloce",
+  "img": "icons/magic/movement/trail-streak-pink.webp"
 }

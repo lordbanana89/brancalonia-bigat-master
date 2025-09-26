@@ -67,5 +67,6 @@
     "no_combat_bonus": "No bonus danno o attacco base"
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91",
-  "name": "Nemico Prescelto"
+  "name": "Nemico Prescelto",
+  "img": "icons/skills/targeting/crosshair-creature-red.webp"
 }

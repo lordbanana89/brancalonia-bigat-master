@@ -97,5 +97,6 @@
   },
   "note_dm": "Il libro degli incantesimi definisce il mago. La sua perdita è catastrofica. Usa come ricompensa (spell da copiare) e vulnerabilità (può essere rubato/distrutto).",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.114",
-  "name": "Libro Incantesimi"
+  "name": "Libro Incantesimi",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

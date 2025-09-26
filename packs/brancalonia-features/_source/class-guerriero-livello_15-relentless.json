@@ -117,5 +117,6 @@
   },
   "note_dm": "Relentless elimina l'ansia da gestione risorse del Battle Master. Garantisce sempre almeno una manovra per combattimento. Cambia drasticamente lo stile di gioco.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.74",
-  "name": "Relentless"
+  "name": "Relentless",
+  "img": "icons/magic/control/buff-strength-muscle-damage.webp"
 }

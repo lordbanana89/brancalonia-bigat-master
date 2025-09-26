@@ -73,5 +73,6 @@
   },
   "note_dm": "Invisibility è utility/escape potente. Termina con azioni offensive lo bilancia. Ottimo per infiltrazione e scouting.",
   "fonte": "D&D 5e PHB p.254",
-  "name": "Spell Invisibilita"
+  "name": "Spell Invisibilita",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

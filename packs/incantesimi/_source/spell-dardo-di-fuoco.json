@@ -38,5 +38,6 @@
   },
   "note_dm": "Fire Bolt è il cantrip damage standard per wizard/sorcerer. Può accendere oggetti, utile per puzzle.",
   "fonte": "D&D 5e PHB p.242",
-  "name": "Spell Dardo Di Fuoco"
+  "name": "Spell Dardo Di Fuoco",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

@@ -100,5 +100,6 @@
     "intimidazione": "Reputazione di 'Pagano inarrestabile'"
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
-  "name": "Ira Persistente"
+  "name": "Ira Persistente",
+  "img": "icons/magic/control/buff-strength-muscle-damage.webp"
 }

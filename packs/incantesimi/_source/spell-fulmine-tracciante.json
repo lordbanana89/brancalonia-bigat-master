@@ -61,5 +61,6 @@
   ],
   "note_dm": "Guiding Bolt è il miglior damage spell clerico livello 1. Vantaggio bonus è ottimo per teamwork. Range 120 eccellente.",
   "fonte": "D&D 5e PHB p.248",
-  "name": "Spell Fulmine Tracciante"
+  "name": "Spell Fulmine Tracciante",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

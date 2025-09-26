@@ -49,5 +49,6 @@
   },
   "note_dm": "Extra Attack raddoppia l'output del monaco e le chance di applicare effetti ki.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
-  "name": "Attacco Extra"
+  "name": "Attacco Extra",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
 }

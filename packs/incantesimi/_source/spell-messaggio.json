@@ -48,5 +48,6 @@
   ],
   "note_dm": "Message è ottimo per comunicazione tattica. Non è telepathy, richiede sussurro verbale. Utile per split party.",
   "fonte": "D&D 5e PHB p.259",
-  "name": "Spell Messaggio"
+  "name": "Spell Messaggio",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

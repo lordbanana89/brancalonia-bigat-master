@@ -180,5 +180,6 @@
   },
   "note_dm": "La scelta della tradizione arcana definisce completamente il tipo di mago. Divination's Portent e Evocation's Sculpt Spell sono particolarmente impattanti.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
-  "name": "Tradizione Arcana"
+  "name": "Tradizione Arcana",
+  "img": "icons/sundries/books/book-open-purple.webp"
 }

@@ -99,5 +99,6 @@
   },
   "note_dm": "Deflect Missiles rende il monaco anti-ranged. A livelli alti, normale ranged damage è quasi inutile. Il return fire è più psychological che pratico.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
-  "name": "Deviare Proiettili"
+  "name": "Deviare Proiettili",
+  "img": "icons/weapons/thrown/arrow-split-y-thin.webp"
 }

@@ -73,5 +73,6 @@
   },
   "note_dm": "Silence è il caster shutdown definitivo. 20 ft radius è enorme. Ritual option lo rende versatile. Posizionamento critico.",
   "fonte": "D&D 5e PHB p.275",
-  "name": "Spell Silenzio"
+  "name": "Spell Silenzio",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

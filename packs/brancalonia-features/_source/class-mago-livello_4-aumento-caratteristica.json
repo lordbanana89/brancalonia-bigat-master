@@ -129,5 +129,6 @@
   },
   "note_dm": "I maghi di solito massimizzano INT rapidamente (livello 8), poi si concentrano su sopravvivenza (CON/talenti difensivi). War Caster è quasi obbligatorio.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
-  "name": "Aumento Caratteristica"
+  "name": "Aumento Caratteristica",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp"
 }

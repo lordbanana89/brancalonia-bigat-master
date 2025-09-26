@@ -143,5 +143,6 @@
   },
   "note_dm": "Indomitable è la risposta del guerriero agli effetti magici devastanti. Non forte come Legendary Resistance ma permette momenti eroici.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
-  "name": "Indomabile"
+  "name": "Indomabile",
+  "img": "icons/equipment/shield/buckler-wooden-boss-steel.webp"
 }

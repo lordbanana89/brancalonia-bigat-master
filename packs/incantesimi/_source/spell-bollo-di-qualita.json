@@ -59,5 +59,6 @@
   },
   "note_dm": "Bollo di Qualità è spell unico di Brancalonia che riflette l'economia povera del setting. Utile per superare limitazioni equipment scadente.",
   "fonte": "Brancalonia Macaronicon p.51",
-  "name": "Spell Bollo Di Qualita"
+  "name": "Spell Bollo Di Qualita",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

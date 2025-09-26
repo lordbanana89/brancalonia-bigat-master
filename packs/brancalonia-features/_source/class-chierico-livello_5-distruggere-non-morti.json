@@ -165,5 +165,6 @@
   },
   "note_dm": "Destroy Undead può trivializzare incontri con non morti deboli. Bilancia con CR misti o non morti potenti.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
-  "name": "Distruggere Non Morti"
+  "name": "Distruggere Non Morti",
+  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp"
 }

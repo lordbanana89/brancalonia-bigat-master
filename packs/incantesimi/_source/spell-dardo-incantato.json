@@ -77,5 +77,6 @@
   },
   "note_dm": "Magic Missile è l'incantesimo più affidabile. Sempre colpisce, ottimo per finire nemici o rompere concentrazione. Shield è il counter perfetto.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.257",
-  "name": "Spell Dardo Incantato"
+  "name": "Spell Dardo Incantato",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

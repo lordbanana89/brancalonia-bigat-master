@@ -121,5 +121,6 @@
   },
   "note_dm": "Survivor rende il Champion quasi imbattibile in combattimenti di attrito. 10 HP/round gratuiti sono enormi. Richiede burst damage o controllo per sconfiggerlo.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.73",
-  "name": "Survivor"
+  "name": "Survivor",
+  "img": "icons/magic/life/heart-cross-strong-flame-purple.webp"
 }

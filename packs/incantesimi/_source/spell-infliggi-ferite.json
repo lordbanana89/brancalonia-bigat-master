@@ -72,5 +72,6 @@
   },
   "note_dm": "Inflict Wounds è il più alto danno single-target livello 1. Touch range lo bilancia. Ottimo per cleric aggressivi.",
   "fonte": "D&D 5e PHB p.253",
-  "name": "Spell Infliggi Ferite"
+  "name": "Spell Infliggi Ferite",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

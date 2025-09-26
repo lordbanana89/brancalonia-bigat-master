@@ -72,5 +72,6 @@
   },
   "note_dm": "L'archetipo definisce il ranger. Gloom Stalker domina, Hunter versatile, Beast Master richiede Tasha's fix.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.92",
-  "name": "Archetipo Ranger"
+  "name": "Archetipo Ranger",
+  "img": "icons/sundries/flags/banner-flag-blue.webp"
 }

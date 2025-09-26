@@ -59,5 +59,6 @@
   },
   "note_dm": "Healing Word è il miglior combat healing per action economy. Range + bonus action lo rende superiore a Cure Wounds in fight.",
   "fonte": "D&D 5e PHB p.250",
-  "name": "Spell Parola Guaritrice"
+  "name": "Spell Parola Guaritrice",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

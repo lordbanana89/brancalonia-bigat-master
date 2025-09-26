@@ -39,5 +39,6 @@
   },
   "note_dm": "Friends è potente ma pericoloso. L'ostilità dopo è garantita. Utile solo per situazioni usa e getta.",
   "fonte": "D&D 5e PHB p.244",
-  "name": "Spell Amicizia"
+  "name": "Spell Amicizia",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

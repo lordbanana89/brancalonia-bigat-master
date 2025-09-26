@@ -10,5 +10,6 @@
   },
   "note_dm": "Extra Attack raddoppia output del ranger.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.92",
-  "name": "Attacco Extra"
+  "name": "Attacco Extra",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
 }

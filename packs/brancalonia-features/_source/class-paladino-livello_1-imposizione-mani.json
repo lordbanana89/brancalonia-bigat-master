@@ -42,5 +42,6 @@
   },
   "note_dm": "Lay on Hands è healing affidabile e flessibile. Pool scaling lineare la mantiene rilevante. Cure disease/poison utility.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84",
-  "name": "Imposizione Mani"
+  "name": "Imposizione Mani",
+  "img": "icons/magic/life/cross-column-gold.webp"
 }

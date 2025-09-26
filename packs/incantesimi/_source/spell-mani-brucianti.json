@@ -58,5 +58,6 @@
   ],
   "note_dm": "Burning Hands è AoE economico livello 1. Cono corto richiede posizionamento aggressivo. Può accendere ambiente.",
   "fonte": "D&D 5e PHB p.220",
-  "name": "Spell Mani Brucianti"
+  "name": "Spell Mani Brucianti",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

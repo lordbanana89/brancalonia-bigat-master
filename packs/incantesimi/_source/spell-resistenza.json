@@ -50,5 +50,6 @@
   ],
   "note_dm": "Resistance meno popolare di Guidance ma saves sono più critici. Concentrazione lo rende inefficiente. Meglio in preparazione che reazione.",
   "fonte": "D&D 5e PHB p.272",
-  "name": "Spell Resistenza"
+  "name": "Spell Resistenza",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

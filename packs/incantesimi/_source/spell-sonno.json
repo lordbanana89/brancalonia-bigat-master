@@ -60,5 +60,6 @@
   ],
   "note_dm": "Sleep potentissimo a bassi livelli, debole dopo. No save lo rende affidabile vs minions. Immunità elfi importante.",
   "fonte": "D&D 5e PHB p.276",
-  "name": "Spell Sonno"
+  "name": "Spell Sonno",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

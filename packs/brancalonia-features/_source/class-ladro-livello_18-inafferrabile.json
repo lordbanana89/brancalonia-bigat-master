@@ -164,5 +164,6 @@
   },
   "note_dm": "Elusive è una delle migliori difese passive del gioco. Cambia completamente la matematica degli incontri di alto livello.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
-  "name": "Inafferrabile"
+  "name": "Inafferrabile",
+  "img": "icons/skills/trades/thievery-pickpocket-bribery-brown.webp"
 }

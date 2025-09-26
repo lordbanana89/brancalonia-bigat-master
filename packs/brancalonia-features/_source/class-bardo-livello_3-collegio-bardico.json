@@ -67,5 +67,6 @@
   },
   "note_dm": "Il collegio definisce completamente il bardo. Lore per caster puro, Swords/Valor per gish, Eloquence per sociale.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.54",
-  "name": "Collegio Bardico"
+  "name": "Collegio Bardico",
+  "img": "icons/sundries/books/book-embossed-gold-red.webp"
 }

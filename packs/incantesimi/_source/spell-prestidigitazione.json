@@ -50,5 +50,6 @@
   ],
   "note_dm": "Prestidigitation è estremamente versatile per situazioni non-combat. I giocatori creativi possono trovare usi infiniti. Ricorda il limite di 3 effetti non-istantanei attivi.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.267",
-  "name": "Spell Prestidigitazione"
+  "name": "Spell Prestidigitazione",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

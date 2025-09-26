@@ -168,5 +168,6 @@
   },
   "note_dm": "Blindsense è situazionale ma potente quando rilevante. Non renderlo più forte di quanto sia (solo 3m, solo creature).",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
-  "name": "Percezione Cieca"
+  "name": "Percezione Cieca",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp"
 }

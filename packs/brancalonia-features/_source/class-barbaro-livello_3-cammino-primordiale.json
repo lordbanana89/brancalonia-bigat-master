@@ -165,5 +165,6 @@
     "montanaro": "cammini/montanaro/index.json"
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49-50",
-  "name": "Cammino Primordiale"
+  "name": "Cammino Primordiale",
+  "img": "icons/environment/wilderness/path-dirt.webp"
 }

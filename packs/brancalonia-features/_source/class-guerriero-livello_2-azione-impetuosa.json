@@ -118,5 +118,6 @@
   },
   "note_dm": "Action Surge è il privilegio signature del guerriero. Molto potente ma limitato. I giocatori esperti lo conservano per momenti critici.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
-  "name": "Azione Impetuosa"
+  "name": "Azione Impetuosa",
+  "img": "icons/skills/movement/arrow-upward-yellow.webp"
 }

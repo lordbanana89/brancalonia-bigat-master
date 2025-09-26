@@ -58,5 +58,6 @@
   },
   "note_dm": "Misty Step è escape/mobilità premium. Bonus action lo rende eccezionale. Solo verbale permette cast in situazioni difficili.",
   "fonte": "D&D 5e PHB p.260",
-  "name": "Spell Passo Traslato"
+  "name": "Spell Passo Traslato",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

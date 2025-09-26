@@ -74,5 +74,6 @@
   },
   "note_dm": "Haste è risk/reward massimo. Potentissimo ma letargia punisce concentration loss. Trasforma martials in macchine da guerra.",
   "fonte": "D&D 5e PHB p.250",
-  "name": "Spell Velocita"
+  "name": "Spell Velocita",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

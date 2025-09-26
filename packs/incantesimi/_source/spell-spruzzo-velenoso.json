@@ -52,5 +52,6 @@
   ],
   "note_dm": "Poison Spray ha il danno più alto ma enormi limitazioni. Range 10 ft lo rende rischioso. Poison resistance/immunity molto comune.",
   "fonte": "D&D 5e PHB p.266",
-  "name": "Spell Spruzzo Velenoso"
+  "name": "Spell Spruzzo Velenoso",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

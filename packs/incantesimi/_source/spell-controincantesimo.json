@@ -66,5 +66,6 @@
   ],
   "note_dm": "Counterspell definisce meta high-level. Reaction economy cruciale. Identificare spell optional ma utile. Counter-war può dominare combat.",
   "fonte": "D&D 5e PHB p.228",
-  "name": "Spell Controincantesimo"
+  "name": "Spell Controincantesimo",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

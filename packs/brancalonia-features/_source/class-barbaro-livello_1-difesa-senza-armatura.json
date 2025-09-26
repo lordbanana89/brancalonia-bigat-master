@@ -92,5 +92,6 @@
     "beneficio_sociale": "Intimidire +1 quando combatti senza armatura (opzionale)"
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48",
-  "name": "Difesa Senza Armatura"
+  "name": "Difesa Senza Armatura",
+  "img": "icons/equipment/chest/breastplate-scale-grey.webp"
 }

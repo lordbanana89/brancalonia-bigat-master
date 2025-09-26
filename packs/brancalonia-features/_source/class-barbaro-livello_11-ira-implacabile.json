@@ -112,5 +112,6 @@
     "leggenda": "Crea storie di Pagani 'immortali'"
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
-  "name": "Ira Implacabile"
+  "name": "Ira Implacabile",
+  "img": "icons/magic/control/buff-strength-muscle-damage.webp"
 }

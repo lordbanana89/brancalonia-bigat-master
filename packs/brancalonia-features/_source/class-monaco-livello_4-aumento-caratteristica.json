@@ -47,5 +47,6 @@
   },
   "note_dm": "I monaci sono MAD (DEX e WIS), quindi spesso massimizzano stats invece di talenti.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
-  "name": "Aumento Caratteristica"
+  "name": "Aumento Caratteristica",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp"
 }

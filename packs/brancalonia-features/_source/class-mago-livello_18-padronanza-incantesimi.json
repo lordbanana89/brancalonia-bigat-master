@@ -78,5 +78,6 @@
   },
   "note_dm": "Spell Mastery cambia completamente il resource management del mago. Shield infinito lo rende molto più tanky.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
-  "name": "Padronanza Incantesimi"
+  "name": "Padronanza Incantesimi",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

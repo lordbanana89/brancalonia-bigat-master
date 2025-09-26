@@ -165,5 +165,6 @@
   },
   "note_dm": "Il mago è l'incantatore più versatile se ha accesso a molti incantesimi. Controlla disponibilità di spell nel mondo.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.114",
-  "name": "Incantesimi"
+  "name": "Incantesimi",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

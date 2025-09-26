@@ -47,5 +47,6 @@
   },
   "note_dm": "Druidcraft è il più debole dei cantrip utility ma perfetto per flavor druido. Previsione meteo unica meccanica utile.",
   "fonte": "D&D 5e PHB p.236",
-  "name": "Spell Artificio Druidico"
+  "name": "Spell Artificio Druidico",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

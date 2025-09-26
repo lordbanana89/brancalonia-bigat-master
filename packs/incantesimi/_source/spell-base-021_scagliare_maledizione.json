@@ -18,5 +18,6 @@
   },
   "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Bestow Curse).",
   "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
-  "name": "Spell Base 021 Scagliare Maledizione"
+  "name": "Spell Base 021 Scagliare Maledizione",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

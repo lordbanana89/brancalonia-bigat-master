@@ -67,5 +67,6 @@
   ],
   "note_dm": "Dimension Door è escape/infiltrazione definitiva. 500 ft copre la maggior parte delle situazioni. Solo verbale lo rende unstoppable.",
   "fonte": "D&D 5e PHB p.233",
-  "name": "Spell Porta Dimensionale"
+  "name": "Spell Porta Dimensionale",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

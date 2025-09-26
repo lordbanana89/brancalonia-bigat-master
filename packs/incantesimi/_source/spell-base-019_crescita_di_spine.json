@@ -15,5 +15,6 @@
   },
   "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Spike Growth).",
   "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
-  "name": "Spell Base 019 Crescita Di Spine"
+  "name": "Spell Base 019 Crescita Di Spine",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

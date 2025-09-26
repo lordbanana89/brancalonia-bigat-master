@@ -17,5 +17,6 @@
   },
   "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Blindness/Deafness).",
   "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
-  "name": "Spell Base 018 Accecare Assordare"
+  "name": "Spell Base 018 Accecare Assordare",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

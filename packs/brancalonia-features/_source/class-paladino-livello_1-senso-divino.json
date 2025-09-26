@@ -39,5 +39,6 @@
   },
   "note_dm": "Divine Sense è molto specifico. Non è detect evil generico ma rileva solo tipi creature specifici.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84",
-  "name": "Senso Divino"
+  "name": "Senso Divino",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-yellow.webp"
 }

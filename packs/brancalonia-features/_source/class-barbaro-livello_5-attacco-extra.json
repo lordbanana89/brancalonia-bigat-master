@@ -90,5 +90,6 @@
   },
   "note_dm": "Attacco Extra rappresenta un salto di potenza significativo al 5° livello. Bilanciare gli incontri di conseguenza.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
-  "name": "Attacco Extra"
+  "name": "Attacco Extra",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
 }

@@ -82,5 +82,6 @@
   },
   "note_dm": "Wild Shape definisce il druido. Circle of Moon la rende combat-viable, altri circles più utility. HP pool extra è molto potente.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.66",
-  "name": "Forma Selvatica"
+  "name": "Forma Selvatica",
+  "img": "icons/magic/nature/wolf-paw-glow-large-green.webp"
 }

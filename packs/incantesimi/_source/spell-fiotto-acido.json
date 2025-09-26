@@ -49,5 +49,6 @@
   },
   "note_dm": "Acid Splash è debole per danno singolo ma unico per doppio target. DEX save invece di attack roll può essere utile vs high AC.",
   "fonte": "D&D 5e PHB p.211",
-  "name": "Spell Fiotto Acido"
+  "name": "Spell Fiotto Acido",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

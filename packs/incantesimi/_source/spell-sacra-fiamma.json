@@ -52,5 +52,6 @@
   },
   "note_dm": "Sacred Flame unico per ignorare copertura. Ottimo vs nemici dietro ripari. DEX save invece di attack utile in certe situazioni.",
   "fonte": "D&D 5e PHB p.272",
-  "name": "Spell Sacra Fiamma"
+  "name": "Spell Sacra Fiamma",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

@@ -17,5 +17,6 @@
   },
   "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Animate Dead).",
   "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
-  "name": "Spell Base 020 Animare I Morti"
+  "name": "Spell Base 020 Animare I Morti",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

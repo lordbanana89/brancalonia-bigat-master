@@ -54,5 +54,6 @@
   },
   "note_dm": "Chill Touch nome sbagliato (non è freddo né touch). Anti-healing unico tra cantrip. Ottimo vs regeneration.",
   "fonte": "D&D 5e PHB p.221",
-  "name": "Spell Tocco Gelido"
+  "name": "Spell Tocco Gelido",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

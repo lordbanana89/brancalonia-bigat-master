@@ -148,5 +148,6 @@
   },
   "note_dm": "Destroy Undead trasforma Turn Undead da controllo a eliminazione. Contro orde di non-morti bassi è devastante. Bilancia encounter di conseguenza.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
-  "name": "Distruggere Non Morti"
+  "name": "Distruggere Non Morti",
+  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp"
 }

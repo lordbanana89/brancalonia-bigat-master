@@ -16,5 +16,6 @@
   },
   "note_dm": "Aura of Courage neutralizza fear effects. Molto potente contro draghi e demon.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
-  "name": "Aura del Coraggio"
+  "name": "Aura del Coraggio",
+  "img": "icons/magic/holy/barrier-shield-dome-gold.webp"
 }

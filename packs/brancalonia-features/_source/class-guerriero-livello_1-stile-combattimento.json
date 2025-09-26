@@ -120,5 +120,6 @@
   },
   "note_dm": "Lo stile di combattimento definisce molto del ruolo del guerriero in battaglia. È una scelta permanente importante.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
-  "name": "Stile di Combattimento"
+  "name": "Stile di Combattimento",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp"
 }

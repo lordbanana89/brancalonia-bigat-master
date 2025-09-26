@@ -48,5 +48,6 @@
   },
   "note_dm": "Divine Smite è il signature del paladino. Nova potential alto ma brucia risorse velocemente.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
-  "name": "Punizione Divina"
+  "name": "Punizione Divina",
+  "img": "icons/magic/holy/projectiles-blades-salvo-yellow.webp"
 }

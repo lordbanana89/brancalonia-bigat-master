@@ -72,5 +72,6 @@
   },
   "note_dm": "Mage Hand è utility pura. Arcane Trickster la rende eccezionale per ladri. Ricorda che non può attaccare o attivare magic items.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.256",
-  "name": "Spell Trucchetto Della Mano"
+  "name": "Spell Trucchetto Della Mano",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }

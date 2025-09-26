@@ -96,5 +96,6 @@
   },
   "note_dm": "Ricorda al giocatore l'opzione di usare Ira contro sorpresa. È una scelta tattica importante che consuma risorse.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
-  "name": "Istinto Ferino"
+  "name": "Istinto Ferino",
+  "img": "icons/creatures/abilities/paw-print-orange.webp"
 }

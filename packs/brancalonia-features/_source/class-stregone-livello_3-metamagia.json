@@ -119,5 +119,6 @@
   },
   "note_dm": "Metamagia definisce il sorcerer. Quickened e Subtle possono essere molto potenti. Twin raddoppia efficienza.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.101",
-  "name": "Metamagia"
+  "name": "Metamagia",
+  "img": "icons/magic/symbols/cog-orange.webp"
 }

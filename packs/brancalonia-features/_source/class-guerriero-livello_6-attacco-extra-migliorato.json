@@ -121,5 +121,6 @@
   },
   "note_dm": "Il guerriero ha più ASI di tutte le classi, permettendo build molto versatili o specializzate. Considera l'impatto dei talenti sulla campagna.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
-  "name": "Attacco Extra (Migliorato)"
+  "name": "Attacco Extra (Migliorato)",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
 }

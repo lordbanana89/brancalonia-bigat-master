@@ -71,5 +71,6 @@
   ],
   "note_dm": "Fly cambia encounter design. 60 ft speed è velocissimo. Concentrazione è unico limite reale. Indoor/underground limita utilità.",
   "fonte": "D&D 5e PHB p.243",
-  "name": "Spell Volare"
+  "name": "Spell Volare",
+  "img": "icons/magic/symbols/star-pointed-purple.webp"
 }
