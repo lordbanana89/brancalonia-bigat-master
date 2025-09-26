@@ -1,18 +1,18 @@
 {
-  "_id": "villanorh3jv8",
-  "_key": "!items!villanorh3jv8",
+  "_id": "villanopttqgm",
+  "_key": "!items!villanopttqgm",
   "name": "Villano",
   "type": "background",
-  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "img": "icons/tools/hand/shovel-spade-brown-grey.webp",
   "system": {
     "description": {
-      "value": "<p>Contadino, bracciante o servo della gleba fuggito dalle campagne per cercare fortuna</p>",
+      "value": "<p><em>Contadino, bracciante o servo della gleba fuggito dalle campagne per cercare fortuna</em></p>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Brancalonia Macaronicon p.43-44",
-    "advancement": [],
-    "startingEquipment": []
+    "identifier": "villano",
+    "advancement": []
   },
   "effects": [],
   "folder": null,

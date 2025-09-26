@@ -16,11 +16,8 @@ export default function convertBackground(doc) {
         unidentified: ''
       },
       source: doc.fonte || 'Brancalonia',
-
-      // Skill proficiencies
+      identifier: doc.nome.toLowerCase().replace(/[^a-z0-9]/g, ''),
       advancement: [],
-
-      // Starting equipment
       startingEquipment: []
     },
     effects: [],

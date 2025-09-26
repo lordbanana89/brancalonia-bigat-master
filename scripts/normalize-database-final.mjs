@@ -13,7 +13,7 @@ import { fileURLToPath } from 'url';
 import { convertSpell } from './converters/spell-converter.mjs';
 import { convertWeapon, convertArmor, convertMagicItem } from './converters/equipment-converter.mjs';
 import convertCreature from './converters/creature-converter.mjs';
-import convertBackground from './converters/background-converter.mjs';
+import convertBackground from './converters/background-converter-v2.mjs';
 import { generateFoundryId, getDefaultImage } from './utils/common.mjs';
 
 const __filename = fileURLToPath(import.meta.url);

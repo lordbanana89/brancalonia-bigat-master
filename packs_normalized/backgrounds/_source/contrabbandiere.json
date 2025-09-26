@@ -1,18 +1,18 @@
 {
-  "_id": "contrabbandiereetvj6b",
-  "_key": "!items!contrabbandiereetvj6b",
+  "_id": "contrabbandierezulgk6",
+  "_key": "!items!contrabbandierezulgk6",
   "name": "Contrabbandiere",
   "type": "background",
-  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "img": "icons/containers/bags/pack-leather-black-white.webp",
   "system": {
     "description": {
-      "value": "<p>Esperto di commerci illeciti, vie segrete e merci proibite attraverso i confini del Regno</p>",
+      "value": "<p><em>Esperto di commerci illeciti, vie segrete e merci proibite attraverso i confini del Regno</em></p>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Brancalonia Macaronicon p.39-40",
-    "advancement": [],
-    "startingEquipment": []
+    "identifier": "contrabbandiere",
+    "advancement": []
   },
   "effects": [],
   "folder": null,

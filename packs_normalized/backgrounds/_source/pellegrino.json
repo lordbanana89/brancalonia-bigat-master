@@ -1,18 +1,18 @@
 {
-  "_id": "pellegrinofg0m5s",
-  "_key": "!items!pellegrinofg0m5s",
+  "_id": "pellegrinovu1zl4",
+  "_key": "!items!pellegrinovu1zl4",
   "name": "Pellegrino",
   "type": "background",
-  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "img": "icons/magic/holy/saint-glass-portrait-halo.webp",
   "system": {
     "description": {
-      "value": "<p>Viaggiatore devoto in cerca di luoghi sacri, reliquie e illuminazione spirituale</p>",
+      "value": "<p><em>Viaggiatore devoto in cerca di luoghi sacri, reliquie e illuminazione spirituale</em></p>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Brancalonia Macaronicon p.42-43",
-    "advancement": [],
-    "startingEquipment": []
+    "identifier": "pellegrino",
+    "advancement": []
   },
   "effects": [],
   "folder": null,

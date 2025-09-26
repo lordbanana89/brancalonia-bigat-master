@@ -1,54 +1,72 @@
 {
-  "_id": "ambulantea8bs0l",
-  "_key": "!items!ambulantea8bs0l",
+  "_id": "ambulanteysa2on",
+  "_key": "!items!ambulanteysa2on",
   "name": "Ambulante",
   "type": "background",
-  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "img": "icons/environment/people/commoner.webp",
   "system": {
     "description": {
-      "value": "<p>Girovaghi, teatranti, zigani, venditori itineranti e tutto il popolo viaggiante</p><h4>Tratti Personalità</h4><ul><li>Parla spesso in Baccaglio e deride gli stanziali</li><li>Persona solida con soluzioni pratiche</li><li>Sognatore irrequieto</li><li>Curioso di ogni dettaglio locale</li><li>Ama i piaceri della vita</li><li>Appassionato di arte e spettacolo</li><li>Usa toni fascinosi e nomi d'arte</li><li>Segue moda e stile della comunità</li></ul><h4>Ideali</h4><ul><li>Fratellanza (Buono)</li><li>Rispetto (Legale)</li><li>Buon senso (Caotico)</li><li>Interesse personale (Malvagio)</li><li>Legge della strada (Neutrale)</li><li>Viaggio (Qualsiasi)</li></ul>",
+      "value": "<p><em>Girovaghi, teatranti, zigani, venditori itineranti e tutto il popolo viaggiante</em></p>\n<p><strong>Skill Proficiencies:</strong> Performance, History</p>\n<p><strong>Tool Proficiencies:</strong> Uno strumento da artigianato a scelta</p>\n<p><strong>Languages:</strong> Baccaglio (gergo furfantesco)</p>\n<p><strong>Equipment:</strong> Monile di Santa Percorrenza, abito viaggiatore, borsa con 15 ma</p>\n<h3>Suggested Characteristics</h3>\n<p>I ambulante di Brancalonia sono caratterizzati da:</p>\n<table><thead><tr><th>d8</th><th>Personality Trait</th></tr></thead><tbody><tr><td>1</td><td>Parla spesso in Baccaglio e deride gli stanziali</td></tr><tr><td>2</td><td>Persona solida con soluzioni pratiche</td></tr><tr><td>3</td><td>Sognatore irrequieto</td></tr><tr><td>4</td><td>Curioso di ogni dettaglio locale</td></tr><tr><td>5</td><td>Ama i piaceri della vita</td></tr><tr><td>6</td><td>Appassionato di arte e spettacolo</td></tr><tr><td>7</td><td>Usa toni fascinosi e nomi d'arte</td></tr><tr><td>8</td><td>Segue moda e stile della comunità</td></tr></tbody></table>\n<table><thead><tr><th>d6</th><th>Ideal</th></tr></thead><tbody><tr><td>1</td><td>Fratellanza (Buono)</td></tr><tr><td>2</td><td>Rispetto (Legale)</td></tr><tr><td>3</td><td>Buon senso (Caotico)</td></tr><tr><td>4</td><td>Interesse personale (Malvagio)</td></tr><tr><td>5</td><td>Legge della strada (Neutrale)</td></tr><tr><td>6</td><td>Viaggio (Qualsiasi)</td></tr></tbody></table>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Manuale Base p.31",
+    "identifier": "ambulante",
     "advancement": [
       {
-        "_id": "5w1flh01l7k",
+        "_id": "4nmkw401bt8",
         "type": "Improvement",
         "configuration": {
           "skills": {
-            "chosen": [
-              "prf",
-              "his"
-            ],
+            "chosen": [],
             "fixed": [
               "prf",
               "his"
             ]
           }
         },
-        "value": {
-          "skills": [
-            "prf",
-            "his"
-          ]
-        },
+        "value": {},
         "level": 0,
-        "title": "Competenze Abilità",
-        "classRestriction": ""
+        "title": "",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "86zxsi52n23",
+        "type": "Improvement",
+        "configuration": {
+          "tools": {
+            "chosen": [],
+            "fixed": [
+              "music"
+            ]
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "lsulc5do4ak",
+        "type": "Improvement",
+        "configuration": {
+          "languages": {
+            "chosen": [],
+            "fixed": [
+              "cant"
+            ]
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "",
+        "classRestriction": "",
+        "appliedEffects": []
       }
     ],
     "startingEquipment": [
-      {
-        "uuid": null,
-        "quantity": 1,
-        "name": "Monile di Santa Percorrenza"
-      },
-      {
-        "uuid": null,
-        "quantity": 1,
-        "name": "abito viaggiatore"
-      },
       {
         "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
         "quantity": 15

@@ -1,18 +1,18 @@
 {
-  "_id": "bargellogijf2k",
-  "_key": "!items!bargellogijf2k",
+  "_id": "bargellos9ghr8",
+  "_key": "!items!bargellos9ghr8",
   "name": "Bargello",
   "type": "background",
-  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "img": "icons/equipment/shield/heater-shield-steel-worn.webp",
   "system": {
     "description": {
-      "value": "<p>Guardia cittadina, sbirro o aguzzino al soldo del potere locale</p>",
+      "value": "<p><em>Guardia cittadina, sbirro o aguzzino al soldo del potere locale</em></p>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Brancalonia Macaronicon p.36-37",
-    "advancement": [],
-    "startingEquipment": []
+    "identifier": "bargello",
+    "advancement": []
   },
   "effects": [],
   "folder": null,

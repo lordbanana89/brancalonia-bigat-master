@@ -1,83 +1,72 @@
 {
-  "_id": "durophhoxz",
-  "_key": "!items!durophhoxz",
+  "_id": "duroebu75z",
+  "_key": "!items!duroebu75z",
   "name": "Duro",
   "type": "background",
-  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "img": "icons/skills/melee/shield-damaged-broken-orange.webp",
   "system": {
     "description": {
-      "value": "<p>Cresciuto tra angherie e violenze, temprato dalle difficoltà estreme</p><h4>Tratti Personalità</h4><ul><li>Cattiveria visibile a prima vista</li><li>Tempra d'acciaio forgiata dalle privazioni</li><li>Nessun ostacolo lo può fermare</li></ul><h4>Ideali</h4><p>Vari in base all'origine specifica</p>",
+      "value": "<p><em>Cresciuto tra angherie e violenze, temprato dalle difficoltà estreme</em></p>\n<p><strong>Skill Proficiencies:</strong> Athletics, Intimidation</p>\n<p><strong>Tool Proficiencies:</strong> Un tipo di gioco</p>\n<p><strong>Languages:</strong> Baccaglio (gergo furfantesco)</p>\n<p><strong>Equipment:</strong> Ciondolo di Santa Predatoria, mazzo di minchiate o altro gioco, abito comune, borsa 15 ma</p>\n<h3>Suggested Characteristics</h3>\n<p>I duro di Brancalonia sono caratterizzati da:</p>\n<table><thead><tr><th>d8</th><th>Personality Trait</th></tr></thead><tbody><tr><td>1</td><td>Cattiveria visibile a prima vista</td></tr><tr><td>2</td><td>Tempra d'acciaio forgiata dalle privazioni</td></tr><tr><td>3</td><td>Nessun ostacolo lo può fermare</td></tr></tbody></table>\n<p><strong>Ideals:</strong> Vari in base all'origine specifica</p>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Manuale Base p.35",
+    "identifier": "duro",
     "advancement": [
       {
-        "_id": "jxxgezrg3oi",
+        "_id": "vck3rr0day",
         "type": "Improvement",
         "configuration": {
           "skills": {
-            "chosen": [
-              "ath",
-              "itm"
-            ],
+            "chosen": [],
             "fixed": [
               "ath",
               "itm"
             ]
           }
         },
-        "value": {
-          "skills": [
-            "ath",
-            "itm"
-          ]
-        },
+        "value": {},
         "level": 0,
-        "title": "Competenze Abilità",
-        "classRestriction": ""
+        "title": "",
+        "classRestriction": "",
+        "appliedEffects": []
       },
       {
-        "_id": "t36ba0p13nh",
+        "_id": "h2d5dximni",
         "type": "Improvement",
         "configuration": {
           "tools": {
-            "chosen": [
-              "game",
-              "dice",
-              "card"
-            ],
-            "fixed": []
+            "chosen": [],
+            "fixed": [
+              "game"
+            ]
           }
         },
-        "value": {
-          "tools": [
-            "game",
-            "dice",
-            "card"
-          ]
-        },
+        "value": {},
         "level": 0,
-        "title": "Competenze Strumenti",
-        "classRestriction": ""
+        "title": "",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "k3yw2t9kdo",
+        "type": "Improvement",
+        "configuration": {
+          "languages": {
+            "chosen": [],
+            "fixed": [
+              "cant"
+            ]
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "",
+        "classRestriction": "",
+        "appliedEffects": []
       }
     ],
     "startingEquipment": [
-      {
-        "uuid": null,
-        "quantity": 1,
-        "name": "Ciondolo di Santa Predatoria"
-      },
-      {
-        "uuid": null,
-        "quantity": 1,
-        "name": "mazzo di minchiate o altro gioco"
-      },
-      {
-        "uuid": null,
-        "quantity": 1,
-        "name": "abito comune"
-      },
       {
         "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
         "quantity": 15

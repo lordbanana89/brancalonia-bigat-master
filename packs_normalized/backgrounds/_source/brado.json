@@ -1,65 +1,53 @@
 {
-  "_id": "bradozrzvgu",
-  "_key": "!items!bradozrzvgu",
+  "_id": "bradouljygb",
+  "_key": "!items!bradouljygb",
   "name": "Brado",
   "type": "background",
-  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "img": "icons/environment/wilderness/tree-oak.webp",
   "system": {
     "description": {
-      "value": "<p>Cresciuto selvaggio tra comunità selvatiche, eremiti e pagani isolati</p><h4>Tratti Personalità</h4><ul><li>Non tiene conto di nobiltà e titoli</li><li>Nostalgico e inquieto lontano dalle terre selvagge</li><li>Si sente in gabbia nei luoghi chiusi</li><li>Non sopporta folla e città</li><li>Aggressivo con chi invade spazio personale</li><li>Si intenerisce per gentilezza spontanea</li><li>Ama insegnare arti pratiche</li><li>Preferisce animali a umani</li></ul><h4>Ideali</h4><ul><li>Rispetto reciproco (Buono)</li><li>Leggi della selva (Legale)</li><li>Libertà selvaggia (Caotico)</li><li>Legge del più forte (Malvagio)</li><li>Sopravvivenza (Neutrale)</li><li>Contemplazione (Qualsiasi)</li></ul>",
+      "value": "<p><em>Cresciuto selvaggio tra comunità selvatiche, eremiti e pagani isolati</em></p>\n<p><strong>Skill Proficiencies:</strong> Animal Handling, Athletics</p>\n<p><strong>Tool Proficiencies:</strong> Borsa da erborista</p>\n<p><strong>Languages:</strong> Petroglifico (linguaggio ancestrale su pietra)</p>\n<p><strong>Equipment:</strong> Bastone, ciondolo d'ossa, pigmenti colorati, abito viaggiatore, borsa 10 ma</p>\n<h3>Suggested Characteristics</h3>\n<p>I brado di Brancalonia sono caratterizzati da:</p>\n<table><thead><tr><th>d8</th><th>Personality Trait</th></tr></thead><tbody><tr><td>1</td><td>Non tiene conto di nobiltà e titoli</td></tr><tr><td>2</td><td>Nostalgico e inquieto lontano dalle terre selvagge</td></tr><tr><td>3</td><td>Si sente in gabbia nei luoghi chiusi</td></tr><tr><td>4</td><td>Non sopporta folla e città</td></tr><tr><td>5</td><td>Aggressivo con chi invade spazio personale</td></tr><tr><td>6</td><td>Si intenerisce per gentilezza spontanea</td></tr><tr><td>7</td><td>Ama insegnare arti pratiche</td></tr><tr><td>8</td><td>Preferisce animali a umani</td></tr></tbody></table>\n<table><thead><tr><th>d6</th><th>Ideal</th></tr></thead><tbody><tr><td>1</td><td>Rispetto reciproco (Buono)</td></tr><tr><td>2</td><td>Leggi della selva (Legale)</td></tr><tr><td>3</td><td>Libertà selvaggia (Caotico)</td></tr><tr><td>4</td><td>Legge del più forte (Malvagio)</td></tr><tr><td>5</td><td>Sopravvivenza (Neutrale)</td></tr><tr><td>6</td><td>Contemplazione (Qualsiasi)</td></tr></tbody></table>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Manuale Base p.34",
+    "identifier": "brado",
     "advancement": [
       {
-        "_id": "62zjtpwwcpx",
+        "_id": "mcmwgzd2is",
         "type": "Improvement",
         "configuration": {
           "skills": {
-            "chosen": [
-              "ani",
-              "ath"
-            ],
+            "chosen": [],
             "fixed": [
               "ani",
               "ath"
             ]
           }
         },
-        "value": {
-          "skills": [
-            "ani",
-            "ath"
-          ]
-        },
+        "value": {},
         "level": 0,
-        "title": "Competenze Abilità",
-        "icon": null,
-        "classRestriction": ""
+        "title": "",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "ug5eecfrfcd",
+        "type": "Improvement",
+        "configuration": {
+          "languages": {
+            "chosen": [],
+            "fixed": []
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "",
+        "classRestriction": "",
+        "appliedEffects": []
       }
     ],
     "startingEquipment": [
-      {
-        "uuid": null,
-        "quantity": 1,
-        "name": "Bastone"
-      },
-      {
-        "uuid": null,
-        "quantity": 1,
-        "name": "ciondolo d'ossa"
-      },
-      {
-        "uuid": null,
-        "quantity": 1,
-        "name": "pigmenti colorati"
-      },
-      {
-        "uuid": null,
-        "quantity": 1,
-        "name": "abito viaggiatore"
-      },
       {
         "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
         "quantity": 10

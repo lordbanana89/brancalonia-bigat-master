@@ -1,18 +1,18 @@
 {
-  "_id": "locandierext3iqg",
-  "_key": "!items!locandierext3iqg",
+  "_id": "locandierevcqp61",
+  "_key": "!items!locandierevcqp61",
   "name": "Locandiere",
   "type": "background",
-  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "img": "icons/environment/settlement/tavern-interior.webp",
   "system": {
     "description": {
-      "value": "<p>Gestore di osteria, taverna o locanda, esperto nell'arte dell'ospitalità e del pettegolezzo</p>",
+      "value": "<p><em>Gestore di osteria, taverna o locanda, esperto nell'arte dell'ospitalità e del pettegolezzo</em></p>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Brancalonia Macaronicon p.41-42",
-    "advancement": [],
-    "startingEquipment": []
+    "identifier": "locandiere",
+    "advancement": []
   },
   "effects": [],
   "folder": null,

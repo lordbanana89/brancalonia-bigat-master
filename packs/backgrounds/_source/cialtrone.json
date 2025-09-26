@@ -1,18 +1,18 @@
 {
-  "_id": "cialtronelug0ii",
-  "_key": "!items!cialtronelug0ii",
+  "_id": "cialtroned4x7kf",
+  "_key": "!items!cialtroned4x7kf",
   "name": "Cialtrone",
   "type": "background",
-  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "img": "icons/skills/social/theft-pickpocket-bribery.webp",
   "system": {
     "description": {
-      "value": "<p>Fannullone professionista, scroccone e perdigiorno che vive alle spalle altrui</p>",
+      "value": "<p><em>Fannullone professionista, scroccone e perdigiorno che vive alle spalle altrui</em></p>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Brancalonia Macaronicon p.38-39",
-    "advancement": [],
-    "startingEquipment": []
+    "identifier": "cialtrone",
+    "advancement": []
   },
   "effects": [],
   "folder": null,
