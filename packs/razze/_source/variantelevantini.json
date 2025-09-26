@@ -11,42 +11,36 @@
       "unidentified": ""
     },
     "source": "Brancalonia Manuale Base",
-    "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+    "movement": {
+      "walk": 30,
+      "units": "ft",
+      "hover": false
     },
-    "duration": {
-      "value": "",
-      "units": ""
+    "senses": {
+      "darkvision": 0,
+      "units": "ft"
     },
-    "target": {
-      "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+    "type": {
+      "value": "humanoid",
+      "subtype": "",
+      "custom": ""
     },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
-    "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    },
-    "equipped": false,
-    "identified": true,
-    "quantity": 1,
-    "weight": 0,
-    "price": {
-      "value": 0,
-      "denomination": "gp"
-    },
-    "rarity": "common",
-    "attunement": 0
+    "advancement": [
+      {
+        "_id": "size_advancement",
+        "type": "size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Size",
+        "icon": "",
+        "classRestriction": "primary"
+      }
+    ]
   },
   "effects": [],
   "folder": null,

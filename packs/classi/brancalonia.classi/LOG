@@ -1,0 +1,5 @@
+2025/09/27-01:13:39.618926 16f89f000 Delete type=3 #1
+2025/09/27-01:13:39.620915 16f92b000 Level-0 table #5: started
+2025/09/27-01:13:39.621184 16f92b000 Level-0 table #5: 6200 bytes OK
+2025/09/27-01:13:39.621268 16f92b000 Delete type=0 #3
+2025/09/27-01:13:39.621349 16f92b000 Manual compaction at level-0 from '!items!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at (end)

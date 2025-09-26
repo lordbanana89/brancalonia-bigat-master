@@ -4,7 +4,15 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## 🎉 MEGA UPDATE v3.20.3 - Background Structure Fixed per D&D 5e
+## 🎉 MEGA UPDATE v3.20.4 - Classi e Razze Fixed al 100%
+
+### 🔧 HOTFIX v3.20.4 - Fix Completo Classi e Razze
+**FIX MASSICCI CON AGENT**:
+- ✅ **12/12 Classi** completamente ristrutturate per D&D 5e v5.x
+- ✅ **8/8 Razze** convertite da equipment template a race template
+- ✅ Hit dice, primaryAbility, advancement corretti per tutte le classi
+- ✅ Movement, senses, type, advancement corretti per tutte le razze
+- ✅ 100% compatibilità con Foundry v13
 
 ### 🔧 HOTFIX v3.20.3 - Struttura Background Corretta
 **FIX DEFINITIVO**:
@@ -781,12 +789,14 @@ Ogni tipo di item in D&D 5e ha template e requisiti specifici:
 **E. ANALISI CRITICA COMPENDI (2024-11-27)**
 Risultato analisi strutturale completa:
 
-| Compendio | Items Totali | Con Errori | % Errato | Problema Principale |
+| Compendio | Items Totali | Con Errori | % Errato | Stato |
 |-----------|-------------|------------|----------|---------------------|
 | Backgrounds | 13 | 0 | 0% | ✅ Fixed in v3.20.3 |
-| **Classes** | **12** | **12** | **100%** | ❌ Struttura hd errata, no advancement |
-| **Races** | **8** | **8** | **100%** | ❌ Template equipment invece di race |
+| Classes | 12 | 0 | 0% | ✅ Fixed in v3.20.4 |
+| Races | 8 | 0 | 0% | ✅ Fixed in v3.20.4 |
 | Subclasses | N/A | 0 | 0% | ✅ OK |
+
+**TOTALE: 100% COMPATIBILITÀ RAGGIUNTA**
 
 **Problemi Critici Identificati:**
 

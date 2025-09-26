@@ -13,9 +13,99 @@
     "source": "Manuale del Giocatore p.78",
     "identifier": "mago",
     "levels": 20,
-    "hitDice": "6",
     "hitDiceUsed": 0,
-    "advancement": [],
+    "advancement": [
+      {
+        "_id": "HitPoints.1",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "level": 1,
+        "title": "",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ASI.4",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {},
+          "points": 2,
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ASI.8",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {},
+          "points": 2,
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ASI.12",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {},
+          "points": 2,
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ASI.16",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {},
+          "points": 2,
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ASI.19",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "fixed": {},
+          "points": 2,
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "",
+        "icon": "",
+        "classRestriction": "primary"
+      }
+    ],
     "saves": [],
     "skills": {
       "number": 2,
@@ -25,7 +115,15 @@
     "spellcasting": {
       "progression": "full",
       "ability": "int"
-    }
+    },
+    "hd": {
+      "denomination": "d6",
+      "spent": 0
+    },
+    "primaryAbility": [
+      "int"
+    ],
+    "startingEquipment": []
   },
   "effects": [],
   "folder": null,
