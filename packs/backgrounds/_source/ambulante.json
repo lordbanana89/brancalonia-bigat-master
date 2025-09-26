@@ -83,35 +83,8 @@
         "appliedEffects": []
       }
     ],
-    "startingEquipment": [
-      {
-        "type": "default",
-        "item": "Monile di Santa Percorrenza"
-      },
-      {
-        "type": "default",
-        "item": "Abito da viaggiatore"
-      },
-      {
-        "type": "default",
-        "item": "Borsa con 15 ma"
-      }
-    ],
-    "traits": {
-      "personalityTraits": {
-        "table": "sypi3Ek9Fmg6ZU2E"
-      },
-      "ideals": {
-        "table": "oNkYUcmF0kFMq39e"
-      },
-      "bonds": {
-        "table": "CLh8GivenPA6Zhsx"
-      },
-      "flaws": {
-        "table": "VqSVoJr6pzsJVJ4h"
-      }
-    },
-    "wealth": "15 ma"
+    "traits": {},
+    "wealth": "15gp"
   },
   "effects": [],
   "folder": null,

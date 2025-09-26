@@ -83,39 +83,8 @@
         "appliedEffects": []
       }
     ],
-    "startingEquipment": [
-      {
-        "type": "default",
-        "item": "Ciondolo di Santa Predatoria"
-      },
-      {
-        "type": "default",
-        "item": "Mazzo di minchiate o altro gioco"
-      },
-      {
-        "type": "default",
-        "item": "Abito comune"
-      },
-      {
-        "type": "default",
-        "item": "Borsa con 15 ma"
-      }
-    ],
-    "traits": {
-      "personalityTraits": {
-        "table": "TWxnY4wl0JMME4kC"
-      },
-      "ideals": {
-        "table": "dsZf0wLpGp1wFYQa"
-      },
-      "bonds": {
-        "table": "6Te8PzC08Lpuqm2S"
-      },
-      "flaws": {
-        "table": "lPlRuiRkpbpPvxPB"
-      }
-    },
-    "wealth": "15 ma"
+    "traits": {},
+    "wealth": "15gp"
   },
   "effects": [],
   "folder": null,

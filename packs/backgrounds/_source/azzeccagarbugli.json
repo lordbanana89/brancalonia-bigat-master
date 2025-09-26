@@ -63,47 +63,8 @@
         "appliedEffects": []
       }
     ],
-    "startingEquipment": [
-      {
-        "type": "default",
-        "item": "Libro sulle leggi della regione di provenienza"
-      },
-      {
-        "type": "default",
-        "item": "Calamaio di inchiostro nero"
-      },
-      {
-        "type": "default",
-        "item": "Pennino"
-      },
-      {
-        "type": "default",
-        "item": "Pergamena"
-      },
-      {
-        "type": "default",
-        "item": "Abito pregiato"
-      },
-      {
-        "type": "default",
-        "item": "Borsa con 20 ma"
-      }
-    ],
-    "traits": {
-      "personalityTraits": {
-        "table": "LXdcSl5hOvoAHJem"
-      },
-      "ideals": {
-        "table": "Z3ttpwt33ocfKWrL"
-      },
-      "bonds": {
-        "table": "95AEUOAmoAnfPOPj"
-      },
-      "flaws": {
-        "table": "guZkWls5xXTw5pOs"
-      }
-    },
-    "wealth": "10 ma"
+    "traits": {},
+    "wealth": "10gp"
   },
   "effects": [],
   "folder": null,

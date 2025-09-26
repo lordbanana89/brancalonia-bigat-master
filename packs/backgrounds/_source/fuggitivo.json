@@ -13,16 +13,8 @@
     "source": "Manuale Base p.36",
     "identifier": "fuggitivo",
     "advancement": [],
-    "startingEquipment": [],
-    "traits": {
-      "personalityTraits": {
-        "table": "aq80wkHHJ0h6wfxf"
-      },
-      "ideals": {
-        "table": "10JcVrQVTvsqKVFq"
-      }
-    },
-    "wealth": "10 ma"
+    "traits": {},
+    "wealth": "10gp"
   },
   "effects": [],
   "folder": null,

@@ -62,43 +62,8 @@
         "appliedEffects": []
       }
     ],
-    "startingEquipment": [
-      {
-        "type": "default",
-        "item": "Bastone"
-      },
-      {
-        "type": "default",
-        "item": "Ciondolo d’ossa d’animale"
-      },
-      {
-        "type": "default",
-        "item": "Pigmenti colorati"
-      },
-      {
-        "type": "default",
-        "item": "Abito da viaggiatore"
-      },
-      {
-        "type": "default",
-        "item": "Borsa con 10 ma"
-      }
-    ],
-    "traits": {
-      "personalityTraits": {
-        "table": "3T9fromL6DAvhmdj"
-      },
-      "ideals": {
-        "table": "KVbKEG128y8QpLJT"
-      },
-      "bonds": {
-        "table": "39dqqetVmHXWVOjm"
-      },
-      "flaws": {
-        "table": "vzIfx2SrJlAl8b9s"
-      }
-    },
-    "wealth": "10 ma"
+    "traits": {},
+    "wealth": "10gp"
   },
   "effects": [],
   "folder": null,
