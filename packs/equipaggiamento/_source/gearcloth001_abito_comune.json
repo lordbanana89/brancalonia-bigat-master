@@ -3,7 +3,7 @@
   "_key": "!item!gearcloth001abitocomuneb29c60",
   "name": "Abito Comune",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Tunica, pantaloni e mantello di lana grezza adatti alla gente del popolo.</p>",

@@ -3,7 +3,7 @@
   "_key": "!item!gearserv002pastoricco8a25ad",
   "name": "Pasto Ricco",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Tavola imbandita con varie portate, dessert e vino scelto.</p>",

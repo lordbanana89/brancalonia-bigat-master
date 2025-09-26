@@ -3,7 +3,7 @@
   "_key": "!item!lazappadelcontadinoribellef51c1e",
   "name": "La Zappa del Contadino Ribelle",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Zappa rugginosa ma ancora tagliente</p><h3>Proprietà</h3><p>Conta come arma +1 contro nobili e soldati</p><h3>Storia</h3><p><em>Usata per decapitare il Barone oppressore</em></p>",

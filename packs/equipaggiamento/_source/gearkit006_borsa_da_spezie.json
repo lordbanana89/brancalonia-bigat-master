@@ -3,7 +3,7 @@
   "_key": "!item!gearkit006borsadaspezie5d4da5",
   "name": "Borsa da Spezie",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Miscele aromatiche per insaporire i pasti e coprire il gusto dell’equipaggiamento scadente.</p>",

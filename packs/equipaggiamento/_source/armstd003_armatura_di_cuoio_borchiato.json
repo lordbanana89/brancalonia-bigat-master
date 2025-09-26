@@ -3,7 +3,7 @@
   "_key": "!item!armstd003armaturadicuoioborchiatoe6f0db",
   "name": "Armatura di Cuoio Borchiato",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Cuoio rinforzato da piccoli rivetti metallici.</p>",

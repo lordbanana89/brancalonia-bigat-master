@@ -3,7 +3,7 @@
   "_key": "!item!lafialadellelacrimedigioia093c04",
   "name": "La Fiala delle Lacrime di Gioia",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Piccola fiala di cristallo con liquido iridescente</p><h3>Proprietà</h3><p>Una goccia rimuove depressione e tristezza per 7 giorni</p><h3>Storia</h3><p><em>Raccolta al matrimonio prima della tragedia</em></p>",

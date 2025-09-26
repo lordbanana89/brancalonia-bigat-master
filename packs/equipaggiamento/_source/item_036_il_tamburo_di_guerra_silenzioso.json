@@ -3,7 +3,7 @@
   "_key": "!item!iltamburodiguerrasilenziosoa18b25",
   "name": "Il Tamburo di Guerra Silenzioso",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Tamburo che non emette suono</p><h3>Proprietà</h3><p>Il suo ritmo si sente solo nella mente, coordina perfettamente le truppe</p><h3>Storia</h3><p><em>Il tamburino continuò a suonare anche da morto</em></p>",

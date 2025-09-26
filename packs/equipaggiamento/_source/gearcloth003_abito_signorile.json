@@ -3,7 +3,7 @@
   "_key": "!item!gearcloth003abitosignorile0fec1e",
   "name": "Abito Signorile",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Vesti ricamate, gioielli di scena e profumi adeguati per corti e salotti.</p>",

@@ -3,7 +3,7 @@
   "_key": "!item!ilguantodelboiad803a0",
   "name": "Il Guanto del Boia",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Guanto di cuoio nero macchiato di sangue</p><h3>Proprietà</h3><p>Chi lo indossa sa sempre se qualcuno mente sulla propria colpevolezza</p><h3>Storia</h3><p><em>Il boia giustiziò 1000 persone, metà innocenti</em></p><h3>Maledizione</h3><p><strong>Le mani puzzano sempre di sangue</strong></p><p>Le mani puzzano sempre di sangue</p>",

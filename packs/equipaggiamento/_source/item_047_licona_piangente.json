@@ -3,7 +3,7 @@
   "_key": "!item!liconapiangente2a9387",
   "name": "L'Icona Piangente",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Dipinto sacro che piange sangue</p><h3>Proprietà</h3><p>Predice disgrazie (piange 24 ore prima)</p><h3>Storia</h3><p><em>Pianse per 7 giorni prima della peste</em></p>",

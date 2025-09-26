@@ -3,7 +3,7 @@
   "_key": "!item!oggettocontraff004patentinobilta10a5e7",
   "name": "Patenti di Nobiltà",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Documenti apocrifi che attestano titoli cavallereschi o genealogie fittizie, ricchi di sigilli e araldica fasulla.</p>",

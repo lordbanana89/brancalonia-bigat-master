@@ -3,7 +3,7 @@
   "_key": "!item!lavestedelmonacoapostatae28560",
   "name": "La Veste del Monaco Apostata",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Saio con simboli sacri scuciti</p><h3>Proprietà</h3><p>Immunità a individuazione magica e divinazione</p><h3>Storia</h3><p><em>Il monaco rinnegò 7 religioni</em></p><h3>Maledizione</h3><p><strong>Non può entrare in luoghi consacrati</strong></p><p>Non può entrare in luoghi consacrati</p>",

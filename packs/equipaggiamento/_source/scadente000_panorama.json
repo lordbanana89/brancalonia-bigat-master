@@ -3,7 +3,7 @@
   "_key": "!item!scadente000panorama4d37e8",
   "name": "Panoramica Equipaggiamento Scadente",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Sintesi delle regole generali per gli oggetti e servizi scadenti nel Regno di Taglia.</p>",

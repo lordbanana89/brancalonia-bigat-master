@@ -3,7 +3,7 @@
   "_key": "!item!lampolladisanguedisangeniale24206f",
   "name": "L'Ampolla di Sangue di San Geniale",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Fiala di cristallo con sangue che si liquefa</p><h3>Proprietà</h3><p>Si liquefa in presenza di pericolo mortale entro 30m</p><h3>Storia</h3><p><em>San Geniale fu martirizzato 7 volte</em></p>",

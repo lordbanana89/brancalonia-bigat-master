@@ -3,7 +3,7 @@
   "_key": "!item!gearserv007affittostallapercavalcaturanotte1c6585",
   "name": "Affitto Stalla per Cavalcatura (notte)",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Box con foraggio e acqua fresca per una cavalcatura.</p>",

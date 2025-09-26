@@ -3,7 +3,7 @@
   "_key": "!item!laletteramaiconsegnatab0d3ba",
   "name": "La Lettera Mai Consegnata",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Lettera sigillata che non si può aprire</p><h3>Proprietà</h3><p>Chi la porta trova sempre la strada verso casa</p><h3>Storia</h3><p><em>Contiene un perdono che avrebbe cambiato la storia</em></p>",

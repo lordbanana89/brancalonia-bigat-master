@@ -3,7 +3,7 @@
   "_key": "!item!lacatenadelcaneinfernale65c15c",
   "name": "La Catena del Cane Infernale",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Catena di ferro che scotta al tocco</p><h3>Proprietà</h3><p>Può trattenere qualsiasi creatura (Forza CD 30 per spezzare)</p><h3>Storia</h3><p><em>Usata per incatenare Cerbero per una notte</em></p><h3>Maledizione</h3><p><strong>Attira cani infernali nel raggio di 1 km</strong></p><p>Attira cani infernali nel raggio di 1 km</p>",

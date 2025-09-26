@@ -3,7 +3,7 @@
   "_key": "!item!armstd204armaturacompletaa9c3cc",
   "name": "Armatura Completa",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Armatura interamente in piastre su misura per il portatore.</p>",

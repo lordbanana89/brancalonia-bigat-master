@@ -3,7 +3,7 @@
   "_key": "!item!lelmettodelsoldatosconosciuto8f6056",
   "name": "L'Elmetto del Soldato Sconosciuto",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Elmetto ammaccato senza insegne</p><h3>Proprietà</h3><p>Chi lo indossa viene dimenticato appena esce dalla vista</p><h3>Storia</h3><p><em>Il soldato salvò il Regno ma nessuno lo ricorda</em></p>",

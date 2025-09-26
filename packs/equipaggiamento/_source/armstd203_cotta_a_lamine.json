@@ -3,7 +3,7 @@
   "_key": "!item!armstd203cottaalamine3a6533",
   "name": "Cotta a Lamine",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Piastre metalliche lunghe sovrapposte e fissate su cuoio.</p>",

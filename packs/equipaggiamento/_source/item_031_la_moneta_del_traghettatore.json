@@ -3,7 +3,7 @@
   "_key": "!item!lamonetadeltraghettatoree04bd5",
   "name": "La Moneta del Traghettatore",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Antica moneta sempre fredda</p><h3>Proprietà</h3><p>Chi muore con essa può tornare in vita una volta (una sola volta nella vita)</p><h3>Storia</h3><p><em>Rubata a Caronte stesso</em></p>",

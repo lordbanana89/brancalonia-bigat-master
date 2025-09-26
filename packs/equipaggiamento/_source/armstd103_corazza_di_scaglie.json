@@ -3,7 +3,7 @@
   "_key": "!item!armstd103corazzadiscaglie518cfe",
   "name": "Corazza di Scaglie",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Piastre di metallo sovrapposte cucite su un supporto di cuoio.</p>",

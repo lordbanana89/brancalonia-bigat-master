@@ -3,7 +3,7 @@
   "_key": "!item!armstd105mezzaarmaturaapiastre50134e",
   "name": "Mezza Armatura a Piastre",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Piastre sagomate che coprono il corpo, lasciando alcune aree protette da cuoio.</p>",

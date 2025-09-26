@@ -3,7 +3,7 @@
   "_key": "!item!lalanternadelguardianodelfarob41ec0",
   "name": "La Lanterna del Guardiano del Faro",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Lanterna che brucia senza olio</p><h3>Proprietà</h3><p>Luce penetra nebbia magica e oscurità, rivela creature invisibili</p><h3>Storia</h3><p><em>Il guardiano lasciò spegnere il faro causando 100 morti</em></p><h3>Maledizione</h3><p><strong>Attira spiriti dei naufraghi (1 incontro casuale extra di notte)</strong></p><p>Attira spiriti dei naufraghi (1 incontro casuale extra di notte)</p>",

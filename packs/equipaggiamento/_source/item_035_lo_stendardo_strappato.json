@@ -3,7 +3,7 @@
   "_key": "!item!lostendardostrappatob67a6e",
   "name": "Lo Stendardo Strappato",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Vessillo di battaglia lacerato e bruciato</p><h3>Proprietà</h3><p>Alleati entro 9m hanno vantaggio contro paura ma svantaggio a ritirarsi</p>",

@@ -3,7 +3,7 @@
   "_key": "!item!lidolopagano10819a",
   "name": "L'Idolo Pagano",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Statuetta di legno di divinità dimenticata</p><h3>Proprietà</h3><p>Una volta al giorno può rispondere a una domanda con sì/no</p><h3>Storia</h3><p><em>Ultimo idolo di un culto sterminato dall'Inquisizione</em></p>",

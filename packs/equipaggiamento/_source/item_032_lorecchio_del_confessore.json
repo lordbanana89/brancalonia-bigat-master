@@ -3,7 +3,7 @@
   "_key": "!item!lorecchiodelconfessoreeb6aec",
   "name": "L'Orecchio del Confessore",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Orecchio mummificato in scatola</p><h3>Proprietà</h3><p>Posto contro un muro, permette di sentire attraverso</p><h3>Storia</h3><p><em>Il confessore vendeva i segreti ai potenti</em></p><h3>Maledizione</h3><p><strong>Si sentono anche confessioni di peccati casuali</strong></p><p>Si sentono anche confessioni di peccati casuali</p>",

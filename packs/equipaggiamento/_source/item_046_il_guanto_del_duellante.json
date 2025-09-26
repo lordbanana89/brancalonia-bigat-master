@@ -3,7 +3,7 @@
   "_key": "!item!ilguantodelduellantef6fee3",
   "name": "Il Guanto del Duellante",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Guanto bianco macchiato di sangue</p><h3>Proprietà</h3><p>Chi viene schiaffeggiato deve accettare la sfida o subire -4 Carisma per 1 mese</p><h3>Storia</h3><p><em>Il duellante morì al suo 100° duello</em></p>",

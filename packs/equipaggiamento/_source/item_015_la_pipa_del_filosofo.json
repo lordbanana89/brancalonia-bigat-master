@@ -3,7 +3,7 @@
   "_key": "!item!lapipadelfilosofof6c8da",
   "name": "La Pipa del Filosofo",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Pipa elaborata che fuma da sola</p><h3>Proprietà</h3><p>+2 Intelligenza mentre si fuma, dura 10 minuti</p><h3>Storia</h3><p><em>Il filosofo scoprì la verità ultima e impazzì</em></p>",

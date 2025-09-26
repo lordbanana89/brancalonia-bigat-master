@@ -3,7 +3,7 @@
   "_key": "!item!ilpugnaledeltraditore27f43c",
   "name": "Il Pugnale del Traditore",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp",
   "system": {
     "description": {
       "value": "<p>Pugnale con elsa a forma di serpente</p><h3>Proprietà</h3><p>+3 a colpire e danni contro alleati e amici</p><h3>Storia</h3><p><em>Usato per pugnalare Cesare</em></p><h3>Maledizione</h3><p><strong>Costringe a fare TS Saggezza CD 15 per non tradire alleati in momenti critici</strong></p><p>Costringe a fare TS Saggezza CD 15 per non tradire alleati in momenti critici</p>",
