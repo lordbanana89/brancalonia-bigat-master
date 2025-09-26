@@ -97,6 +97,6 @@
   "note_dm": "Unarmored Defense rende il monaco unico. Richiede investimento in due stats ma premia con CA competitiva e totale libertà di movimento.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78",
   "name": "Difesa Senza Armatura",
-  "img": "icons/equipment/chest/breastplate-scale-grey.webp",
+  "img": "systems/dnd5e/icons/items/armor/plate.webp-scale-grey.webp",
   "_id": "class-monaco-livello_1-difesa-senza-armatura"
 }
