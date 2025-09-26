@@ -104,6 +104,230 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "SpellcastingValue.2",
+        "type": "SpellcastingValue",
+        "configuration": {
+          "progression": "half",
+          "ability": "wis",
+          "spells": "",
+          "rituals": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Incantesimi",
+        "icon": "icons/svg/book.svg",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.1.class-ranger-livello_1-nemico-prescelto",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-ranger-livello_1-nemico-prescelto",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Nemico Prescelto",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.1.class-ranger-livello_1-esploratore-nato",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-ranger-livello_1-esploratore-nato",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Esploratore Nato",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.2.class-ranger-livello_2-stile-combattimento",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-ranger-livello_2-stile-combattimento",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Stile di Combattimento",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.3.class-ranger-livello_3-archetipo-ranger",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-ranger-livello_3-archetipo-ranger",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Archetipo del Ranger",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.3.class-ranger-livello_3-consapevolezza-primordiale",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-ranger-livello_3-consapevolezza-primordiale",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Consapevolezza Primordiale",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.4.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 4,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.5.class-ranger-livello_5-attacco-extra",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-ranger-livello_5-attacco-extra",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Attacco Extra",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.8.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 8,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.12.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 12,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.16.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 16,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.19.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 19,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
       }
     ],
     "saves": [],

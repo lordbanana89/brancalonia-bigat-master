@@ -104,6 +104,268 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "SpellcastingValue.1",
+        "type": "SpellcastingValue",
+        "configuration": {
+          "progression": "full",
+          "ability": "int",
+          "spells": "",
+          "rituals": true
+        },
+        "value": {},
+        "level": 1,
+        "title": "Incantesimi",
+        "icon": "icons/svg/book.svg",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.1.class-mago-livello_1-libro-incantesimi",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_1-libro-incantesimi",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Libro degli Incantesimi",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.1.class-mago-livello_1-recupero-arcano",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_1-recupero-arcano",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Recupero Arcano",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.2.class-mago-livello_2-tradizione-arcana",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_2-tradizione-arcana",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Tradizione Arcana",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.4.class-mago-livello_4-aumento-caratteristica",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_4-aumento-caratteristica",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 4,
+        "title": "Aumento dei Punteggi (1)",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.6.class-mago-livello_6-tradizione-arcana-privilegio",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_6-tradizione-arcana-privilegio",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Tradizione Arcana - Privilegio",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.8.class-mago-livello_8-aumento-caratteristica-2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_8-aumento-caratteristica-2",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 8,
+        "title": "Aumento dei Punteggi (2)",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.10.class-mago-livello_10-tradizione-arcana-maestria",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_10-tradizione-arcana-maestria",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Tradizione Arcana - Maestria",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.12.class-mago-livello_12-aumento-caratteristica-3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_12-aumento-caratteristica-3",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 12,
+        "title": "Aumento dei Punteggi (3)",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.14.class-mago-livello_14-tradizione-arcana-suprema",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_14-tradizione-arcana-suprema",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Tradizione Arcana - Suprema",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.16.class-mago-livello_16-aumento-caratteristica-4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_16-aumento-caratteristica-4",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 16,
+        "title": "Aumento dei Punteggi (4)",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.18.class-mago-livello_18-padronanza-incantesimi",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_18-padronanza-incantesimi",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "Padronanza degli Incantesimi",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.19.class-mago-livello_19-aumento-caratteristica-5",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_19-aumento-caratteristica-5",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 19,
+        "title": "Aumento dei Punteggi (5)",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.20.class-mago-livello_20-signature-spells",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_20-signature-spells",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "title": "Incantesimi Firma",
+        "icon": "",
+        "classRestriction": "primary"
       }
     ],
     "saves": [],

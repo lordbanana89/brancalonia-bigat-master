@@ -104,6 +104,192 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "SpellcastingValue.1",
+        "type": "SpellcastingValue",
+        "configuration": {
+          "progression": "pact",
+          "ability": "cha",
+          "spells": "",
+          "rituals": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Incantesimi",
+        "icon": "icons/svg/book.svg",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.1.class-warlock-livello_1-patrono-ultraterreno",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-warlock-livello_1-patrono-ultraterreno",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Patrono Ultraterreno",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.1.class-warlock-livello_1-magia-del-patto",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-warlock-livello_1-magia-del-patto",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Magia del Patto",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.2.class-warlock-livello_2-invocazioni-occulte",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-warlock-livello_2-invocazioni-occulte",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Invocazioni Occulte",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.3.class-warlock-livello_3-patto-mistico",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-warlock-livello_3-patto-mistico",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Patto Mistico",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.4.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 4,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.8.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 8,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.12.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 12,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.16.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 16,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.19.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 19,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
       }
     ],
     "saves": [],

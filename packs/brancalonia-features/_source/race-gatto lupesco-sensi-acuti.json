@@ -1,0 +1,25 @@
+{
+  "_id": "hk78tuhegw6cgz7b",
+  "_key": "!items!hk78tuhegw6cgz7b",
+  "name": "Sensi Acuti",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Competenza in Percezione. Vantaggio nelle prove di Percezione basate su olfatto.",
+      "chat": ""
+    },
+    "requirements": "Gatto Lupesco",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

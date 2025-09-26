@@ -1,0 +1,25 @@
+{
+  "_id": "031rgwh3ckrtq09x",
+  "_key": "!items!031rgwh3ckrtq09x",
+  "name": "Corpo di Legno",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Resistenza ai danni da fuoco. Vulnerabilità ai danni da acido.",
+      "chat": ""
+    },
+    "requirements": "Pinocchio",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

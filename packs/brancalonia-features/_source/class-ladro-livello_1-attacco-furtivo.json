@@ -1,159 +1,31 @@
 {
-  "id": "class-ladro-livello_1-attacco-furtivo",
-  "nome": "Attacco Furtivo",
-  "nome_brancalonia": "Colpo alle Spalle",
-  "livello": 1,
-  "tipo": "passivo",
-  "descrizione": "A partire dal 1° livello, sai come colpire sottilmente e sfruttare la distrazione del nemico. Una volta per turno, puoi infliggere 1d6 danni extra a una creatura che colpisci con un attacco se hai vantaggio al tiro per colpire. L'attacco deve usare un'arma con proprietà accurata o a distanza. Non hai bisogno di vantaggio al tiro per colpire se un altro nemico del bersaglio si trova entro 1,5 metri da esso, quel nemico non è incapacitato, e tu non hai svantaggio al tiro per colpire. Il danno extra aumenta mentre avanzi di livello.",
-  "meccaniche": {
-    "attivazione": {
-      "frequenza": "Una volta per turno",
-      "requisiti": [
-        "Colpire con arma accurata o a distanza",
-        "Avere vantaggio O alleato entro 1.5m dal bersaglio"
-      ]
-    },
-    "progressione_danni": {
-      "livello_1": "1d6",
-      "livello_3": "2d6",
-      "livello_5": "3d6",
-      "livello_7": "4d6",
-      "livello_9": "5d6",
-      "livello_11": "6d6",
-      "livello_13": "7d6",
-      "livello_15": "8d6",
-      "livello_17": "9d6",
-      "livello_19": "10d6"
-    },
-    "condizioni_attivazione": {
-      "metodo_1": {
-        "nome": "Vantaggio",
-        "descrizione": "Hai vantaggio al tiro per colpire",
-        "esempi": [
-          "Nascosto",
-          "Invisibile",
-          "Target prono",
-          "Aiuto alleato"
-        ]
-      },
-      "metodo_2": {
-        "nome": "Alleato vicino",
-        "requisiti": [
-          "Alleato entro 1.5m dal bersaglio",
-          "Alleato non incapacitato",
-          "Tu non hai svantaggio"
-        ]
-      }
-    },
-    "limitazioni": {
-      "per_turno": "Solo una volta per turno (non round)",
-      "tipo_arma": "Solo armi accurate o a distanza",
-      "no_svantaggio": "Non funziona con svantaggio"
-    }
-  },
-  "implementazione_foundry": {
-    "tipo": "passivo_condizionale",
-    "formula_danno": "@scale.rogue.sneak-attack",
-    "scale_formula": "ceil(@classes.rogue.levels/2)d6",
-    "flags": {
-      "dnd5e.sneakAttack": true
-    },
-    "condizioni_check": [
-      "advantage === true OR",
-      "(enemy.within(1.5) AND !disadvantage)"
-    ]
-  },
-  "calcoli_danni": {
-    "danni_medi": {
-      "livello_1": "3.5",
-      "livello_5": "10.5",
-      "livello_10": "17.5",
-      "livello_15": "28",
-      "livello_20": "35"
-    },
-    "confronto_classi": {
-      "vs_guerriero": "Meno attacchi ma danno concentrato",
-      "vs_paladino": "Più consistente di Smite, no risorse",
-      "vs_barbaro": "Più danno singolo, meno tanky"
-    },
-    "dps_turno": {
-      "esempio_livello_5": {
-        "attacco_base": "1d8+4 (8.5)",
-        "sneak_attack": "3d6 (10.5)",
-        "totale": "19 danni"
-      }
-    }
-  },
-  "tattiche_attivazione": {
-    "nascondersi": {
-      "metodo": "Azione bonus con Cunning Action",
-      "pro": "Vantaggio garantito se successo",
-      "contro": "Richiede copertura"
-    },
-    "alleato_in_mischia": {
-      "metodo": "Posizionarsi con tank alleato",
-      "pro": "Sempre disponibile",
-      "contro": "Richiede coordinazione"
-    },
-    "steady_aim": {
-      "metodo": "Tasha optional, no movimento = vantaggio",
-      "pro": "Sempre disponibile",
-      "contro": "Zero mobilità"
-    }
-  },
-  "interazioni_speciali": {
-    "reaction_attacks": {
-      "opportunity": "SA funziona se condizioni ok",
-      "commander_strike": "SA su attacco alleato",
-      "sentinel": "SA su reaction se condizioni"
-    },
-    "multiclasse": {
-      "guerriero": "Action Surge = 2 SA per round",
-      "ranger": "Hunter's Mark si somma",
-      "assassino": "Auto-crit = SA raddoppiato"
-    }
-  },
-  "ottimizzazione": {
-    "garantire_sa": [
-      "Familiar con Help action",
-      "Steady Aim di Tasha",
-      "Bonus action Hide",
-      "Swashbuckler sempre 1v1"
-    ],
-    "massimizzare_danno": [
-      "Assassinate per critico automatico",
-      "Booming Blade non compatibile normalmente",
-      "Magic Initiate per Find Familiar"
-    ]
-  },
-  "errori_comuni": {
-    "per_round": "È per TURNO non per round",
-    "reaction": "Funziona anche su reaction",
-    "ranged_melee": "Funziona sia melee che ranged"
-  },
-  "sinergie_sottoclassi": {
-    "assassino": "Critico automatico = SA doppio",
-    "swashbuckler": "SA anche 1v1 senza alleati",
-    "inquisitive": "SA con Insightful Fighting",
-    "phantom": "SA extra a secondo bersaglio"
-  },
-  "narrazione_brancalonia": {
-    "descrizione": "Il Brigante colpisce nei punti vitali",
-    "esempi": [
-      "Pugnalata ai reni",
-      "Freccia nell'occhio",
-      "Lama tra le costole"
-    ],
-    "nomea": "Conosciuto per colpi sleali ma efficaci"
-  },
-  "bilanciamento": {
-    "design": "Alto danno burst, bassa sopravvivenza",
-    "scaling": "Lineare e prevedibile",
-    "affidabilita": "Dipende da setup tattico"
-  },
-  "note_dm": "Sneak Attack è il cuore del ladro. Assicurati che il giocatore possa attivarlo quasi ogni turno o la classe diventa inutile.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
+  "_id": "7yvfgsm4pj5lxzs0",
+  "_key": "!items!7yvfgsm4pj5lxzs0",
   "name": "Attacco Furtivo",
-  "img": "icons/skills/melee/strike-dagger-arcane-purple.webp",
-  "_id": "class-ladro-livello_1-attacco-furtivo"
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Infliggi danni extra con attacchi precisi",
+      "chat": ""
+    },
+    "requirements": "Livello 1",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
 }

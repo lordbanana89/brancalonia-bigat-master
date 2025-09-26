@@ -1,171 +1,31 @@
 {
-  "id": "class-ladro-livello_3-archetipo-ladresco",
-  "nome": "Archetipo Ladresco",
-  "nome_brancalonia": "Via del Brigante",
-  "livello": 3,
-  "tipo": "sottoclasse",
-  "descrizione": "Al 3° livello, scegli un archetipo che emuli nell'esercizio delle tue capacità da ladro. Il tuo archetipo ti garantisce privilegi al 3° livello e poi di nuovo al 9°, 13° e 17° livello.",
-  "meccaniche": {
-    "scelta": "Permanente al 3° livello",
-    "progressione_privilegi": [
-      3,
-      9,
-      13,
-      17
-    ],
-    "cambio": "Solo con DM permission e narrativa"
-  },
-  "archetipi_disponibili": {
-    "manuale_base": {
-      "thief": {
-        "nome": "Ladro",
-        "nome_brancalonia": "Mariuolo Classico",
-        "tema": "Agilità e furto supremi",
-        "privilegio_3": "Fast Hands, Second-Story Work",
-        "focus": "Mobilità e utility"
-      },
-      "assassin": {
-        "nome": "Assassino",
-        "nome_brancalonia": "Lama nell'Ombra",
-        "tema": "Primo colpo letale",
-        "privilegio_3": "Assassinate, Proficiency disguise/poisoner",
-        "focus": "Alpha strike damage"
-      },
-      "arcane_trickster": {
-        "nome": "Imbroglione Arcano",
-        "nome_brancalonia": "Ladro Incantatore",
-        "tema": "Magia e furto",
-        "privilegio_3": "Spellcasting, Mage Hand Legerdemain",
-        "focus": "Versatilità magica"
-      }
-    },
-    "xanathars": {
-      "inquisitive": {
-        "nome": "Inquisitore",
-        "tema": "Detective e investigatore",
-        "privilegio_3": "Ear for Deceit, Eye for Detail, Insightful Fighting"
-      },
-      "mastermind": {
-        "nome": "Mastermind",
-        "tema": "Manipolatore e spia",
-        "privilegio_3": "Master of Intrigue, Master of Tactics"
-      },
-      "scout": {
-        "nome": "Scout",
-        "tema": "Esploratore e tiratore",
-        "privilegio_3": "Skirmisher, Survivalist"
-      },
-      "swashbuckler": {
-        "nome": "Swashbuckler",
-        "tema": "Duellante carismatico",
-        "privilegio_3": "Fancy Footwork, Rakish Audacity"
-      }
-    },
-    "brancalonia_custom": {
-      "brigante": {
-        "nome": "Brigante di Strada",
-        "tema": "Criminale urbano del Regno",
-        "privilegio_3": "Contatti criminali, Intimidazione bonus"
-      }
-    }
-  },
-  "impatto_build": {
-    "thief": {
-      "pro": [
-        "Mobilità estrema",
-        "Fast Hands versatile",
-        "Use magic items"
-      ],
-      "contro": [
-        "No danno extra",
-        "No magia"
-      ],
-      "ideale": "Utility e esplorazione"
-    },
-    "assassin": {
-      "pro": [
-        "Danno devastante round 1",
-        "Infiltrazione perfetta"
-      ],
-      "contro": [
-        "Solo forte in sorpresa",
-        "Meno utile in combat lungo"
-      ],
-      "ideale": "One-shot kills"
-    },
-    "arcane_trickster": {
-      "pro": [
-        "Versatilità magica",
-        "Invisible mage hand",
-        "Shield spell"
-      ],
-      "contro": [
-        "Progressione lenta spell",
-        "MAD per INT"
-      ],
-      "ideale": "Jack of all trades"
-    }
-  },
-  "sinergie_archetipi": {
-    "thief_mobile": "Climbing speed + Mobile feat",
-    "assassin_alert": "Alert + Assassinate = sempre primo",
-    "trickster_ritual": "Ritual Caster per più utility",
-    "swashbuckler_charisma": "CHA build per face",
-    "scout_sharpshooter": "Ranged sneak attack build",
-    "mastermind_social": "Ultimate manipulator",
-    "inquisitive_wisdom": "WIS secondary per investigation"
-  },
-  "progressione_potere": {
-    "livello_3": "Definisce identità e playstyle",
-    "livello_9": "Potenziamento significativo",
-    "livello_13": "Abilità unica potente",
-    "livello_17": "Capstone devastante"
-  },
-  "esempi_privilegi_17": {
-    "thief": "Thief's Reflexes - 2 turni round 1",
-    "assassin": "Death Strike - Doppio danno",
-    "trickster": "Spell Thief - Ruba incantesimi"
-  },
-  "multiclasse_synergy": {
-    "thief_fighter": "Action surge + magic items",
-    "assassin_fighter": "Action surge per 2 assassinate",
-    "trickster_wizard": "Più spell slots",
-    "swashbuckler_battlemaster": "Manovre + sneak attack",
-    "scout_ranger": "Ultimate survivalist"
-  },
-  "consigli_scelta": {
-    "nuovo_giocatore": "Thief - semplice ed efficace",
-    "ottimizzatore": "Assassin o Arcane Trickster",
-    "roleplay": "Mastermind o Swashbuckler",
-    "combattimento": "Assassin o Swashbuckler",
-    "utilita": "Thief o Arcane Trickster",
-    "sociale": "Mastermind o Inquisitive"
-  },
-  "brancalonia_flavor": {
-    "thief": "Classico ladro dei vicoli di Torrigiana",
-    "assassin": "Sicario delle famiglie nobili",
-    "trickster": "Ladro che ha rubato segreti magici",
-    "custom": "Brigante delle strade del Regno"
-  },
-  "implementazione_foundry": {
-    "tipo": "subclass_choice",
-    "livello": 3,
-    "scelta": {
-      "type": "ItemChoice",
-      "pool": [
-        "roguish-archetypes"
-      ]
-    },
-    "effetti": "Varia per archetipo scelto"
-  },
-  "bilanciamento": {
-    "tutti_viabili": true,
-    "power_level": "Simile ma focus diverso",
-    "versatilita": "AT più versatile, Assassin più specializzato"
-  },
-  "note_dm": "L'archetipo definisce completamente lo stile del ladro. Considera il tipo di campagna quando consigli archetipi.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
+  "_id": "4eorwj8ailot169t",
+  "_key": "!items!4eorwj8ailot169t",
   "name": "Archetipo Ladresco",
-  "img": "icons/sundries/flags/banner-flag-blue.webp",
-  "_id": "class-ladro-livello_3-archetipo-ladresco"
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Scegli un archetipo ladresco",
+      "chat": ""
+    },
+    "requirements": "Livello 3",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
 }

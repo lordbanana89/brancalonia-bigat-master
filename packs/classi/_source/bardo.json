@@ -104,6 +104,230 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "SpellcastingValue.1",
+        "type": "SpellcastingValue",
+        "configuration": {
+          "progression": "full",
+          "ability": "cha",
+          "spells": "",
+          "rituals": true
+        },
+        "value": {},
+        "level": 1,
+        "title": "Incantesimi",
+        "icon": "icons/svg/book.svg",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.1.class-bardo-livello_1-ispirazione-bardica",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_1-ispirazione-bardica",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Parole di Incoraggiamento",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.2.class-bardo-livello_2-jack-tuttofare",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_2-jack-tuttofare",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Maestro di Mille Arti",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.3.class-bardo-livello_3-collegio-bardico",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_3-collegio-bardico",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Scuola degli Artisti",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.4.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 4,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.5.class-bardo-livello_1-ispirazione-bardica",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_1-ispirazione-bardica",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Ispirazione Bardica (d8)",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.8.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 8,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.10.class-bardo-livello_1-ispirazione-bardica",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_1-ispirazione-bardica",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Ispirazione Bardica (d10)",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.12.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 12,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.15.class-bardo-livello_1-ispirazione-bardica",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_1-ispirazione-bardica",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Ispirazione Bardica (d12)",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.16.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 16,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.19.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 19,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
       }
     ],
     "saves": [],

@@ -1,0 +1,40 @@
+{
+  "_id": "u87hef3825t64h7w",
+  "_key": "!items!u87hef3825t64h7w",
+  "name": "Sangue Levantino",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "I Levantini sono robusti e resistenti. +2 Costituzione.",
+      "chat": ""
+    },
+    "requirements": "Levantini",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "zaqai7vfynoe2tck",
+      "name": "Bonus con",
+      "icon": "icons/svg/upgrade.svg",
+      "changes": [
+        {
+          "key": "system.abilities.con.value",
+          "mode": 2,
+          "value": 2
+        }
+      ],
+      "disabled": false,
+      "transfer": true
+    }
+  ],
+  "flags": {}
+}

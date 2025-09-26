@@ -104,6 +104,192 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "SpellcastingValue.1",
+        "type": "SpellcastingValue",
+        "configuration": {
+          "progression": "full",
+          "ability": "wis",
+          "spells": "",
+          "rituals": true
+        },
+        "value": {},
+        "level": 1,
+        "title": "Incantesimi",
+        "icon": "icons/svg/book.svg",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.1.class-druido-livello_1-druidico",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-druido-livello_1-druidico",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Druidico",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.2.class-druido-livello_2-forma-selvatica",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-druido-livello_2-forma-selvatica",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Forma Selvatica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.2.class-druido-livello_2-circolo-druidico",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-druido-livello_2-circolo-druidico",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Circolo Druidico",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.4.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 4,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.8.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 8,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.12.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 12,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.16.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 16,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.18.class-monaco-livello_15-corpo-senza-tempo",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-monaco-livello_15-corpo-senza-tempo",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "Corpo senza Tempo",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ItemGrant.19.classmagolivello12aumentocaratteristica30637c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 19,
+        "title": "Aumento dei Punteggi di Caratteristica",
+        "icon": "",
+        "classRestriction": "primary"
       }
     ],
     "saves": [],

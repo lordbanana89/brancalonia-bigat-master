@@ -1,122 +1,31 @@
 {
-  "id": "class-guerriero-livello_5-attacco-extra",
-  "nome": "Attacco Extra",
-  "nome_brancalonia": "Raffica di Colpi",
-  "livello": 5,
-  "tipo": "passivo",
-  "descrizione": "A partire dal 5° livello, puoi attaccare due volte, invece di una, ogni volta che esegui l'azione di Attacco nel tuo turno. Il numero di attacchi aumenta a tre quando raggiungi l'11° livello in questa classe e a quattro quando raggiungi il 20° livello.",
-  "meccaniche": {
-    "progressione": {
-      "livello_5": "2 attacchi",
-      "livello_11": "3 attacchi",
-      "livello_20": "4 attacchi"
-    },
-    "funzionamento": {
-      "trigger": "Azione di Attacco",
-      "nota": "Solo il Guerriero arriva a 3-4 attacchi"
-    },
-    "interazioni": {
-      "con_action_surge": "Raddoppia tutti gli attacchi",
-      "con_due_armi": "+1 attacco bonus con mano secondaria",
-      "con_manovre": "Più opportunità di applicare manovre"
-    }
-  },
-  "implementazione_foundry": {
-    "tipo": "advancement",
-    "configurazione": {
-      "system.attributes.attacksPerAction": "@scale.fighter.extra-attacks"
-    },
-    "scale_values": {
-      "livello_1_4": 1,
-      "livello_5_10": 2,
-      "livello_11_19": 3,
-      "livello_20": 4
-    }
-  },
-  "calcoli_dps": {
-    "progressione_base": {
-      "livello_5": "2× danno rispetto a livello 4",
-      "livello_11": "3× danno rispetto a livello 4",
-      "livello_20": "4× danno rispetto a livello 4"
-    },
-    "esempi_numerici": {
-      "spada_lunga": {
-        "attacco_base": "1d8+5 (9.5 media)",
-        "livello_5": "19 danni/turno",
-        "livello_11": "28.5 danni/turno",
-        "livello_20": "38 danni/turno"
-      }
-    },
-    "con_talenti": {
-      "gwm": "4×(2d6+15) = 88 danni medi",
-      "sharpshooter": "4×(1d8+15) = 76 danni medi"
-    }
-  },
-  "confronto_classi": {
-    "guerriero": "Unica classe con 3-4 attacchi",
-    "altre_marziali": "Massimo 2 attacchi (livello 5)",
-    "monk": "2 attacchi + raffica",
-    "vantaggio_guerriero": "50-100% più attacchi"
-  },
-  "sinergie_build": {
-    "critico_champion": {
-      "19_20": "Più attacchi = più chance critici",
-      "calcolo": "20% chance critico per turno al 20°"
-    },
-    "manovre_battlemaster": {
-      "dadi_superiority": "Più chance di usarli",
-      "controllo": "Trip, disarm, push multipli"
-    },
-    "eldritch_knight": {
-      "booming_blade": "Non compatibile con attacchi extra",
-      "shield_spell": "Protezione dopo attacchi"
-    }
-  },
-  "tattiche_per_livello": {
-    "livello_5_10": {
-      "focus": "Eliminare minion rapidamente",
-      "split_damage": "Dividere attacchi su più nemici"
-    },
-    "livello_11_19": {
-      "focus": "DPS consistente su boss",
-      "controllo": "Applicare condizioni multiple"
-    },
-    "livello_20": {
-      "focus": "Distruzione totale",
-      "nova": "8 attacchi con Action Surge"
-    }
-  },
-  "ottimizzazione": {
-    "armi_consigliate": [
-      "Armi +3 per massimizzare accuratezza",
-      "Armi con effetti on-hit",
-      "Flame Tongue per danni extra"
-    ],
-    "talenti_chiave": [
-      "Great Weapon Master",
-      "Sharpshooter",
-      "Polearm Master",
-      "Crossbow Expert"
-    ]
-  },
-  "narrazione_brancalonia": {
-    "livello_5": "Spadaccino veloce e preciso",
-    "livello_11": "Maestro di scherma leggendario",
-    "livello_20": "Turbine di lame inarrestabile",
-    "descrizioni": [
-      "Colpi così veloci che sembrano simultanei",
-      "La lama danza tra i nemici",
-      "Nessuno può parare tutti i colpi"
-    ]
-  },
-  "bilanciamento": {
-    "forte": "Miglior DPS sostenuto del gioco",
-    "debole": "Nessun burst magico come Paladin/Rogue",
-    "ruolo": "Consistent damage dealer"
-  },
-  "note_dm": "Il Guerriero con 3-4 attacchi è una macchina da guerra. Considera l'output di danno estremo quando progetti incontri di alto livello.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "_id": "qyqfqdjimw924kqi",
+  "_key": "!items!qyqfqdjimw924kqi",
   "name": "Attacco Extra",
-  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
-  "_id": "class-guerriero-livello_5-attacco-extra"
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Puoi attaccare due volte",
+      "chat": ""
+    },
+    "requirements": "Livello 5",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
 }

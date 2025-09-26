@@ -1,0 +1,25 @@
+{
+  "_id": "4k9xwije9dhh1egq",
+  "_key": "!items!4k9xwije9dhh1egq",
+  "name": "Memoria Evanescente",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Le creature hanno svantaggio per ricordarsi di te dopo 1 ora dall'ultimo incontro.",
+      "chat": ""
+    },
+    "requirements": "Inesistente",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

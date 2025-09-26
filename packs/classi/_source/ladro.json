@@ -16,6 +16,30 @@
     "hitDiceUsed": 0,
     "advancement": [
       {
+        "_id": "aftujwgywfu4142r",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "sneak-attack",
+          "type": "dice",
+          "distance": null,
+          "label": "Attacco Furtivo"
+        },
+        "value": {
+          "1": "1d6",
+          "3": "2d6",
+          "5": "3d6",
+          "7": "4d6",
+          "9": "5d6",
+          "11": "6d6",
+          "13": "7d6",
+          "15": "8d6",
+          "17": "9d6",
+          "19": "10d6"
+        },
+        "title": "Dadi Attacco Furtivo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "HitPoints.1",
         "type": "HitPoints",
         "configuration": {},
@@ -24,6 +48,76 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "j865bdjsuo6mpmd9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.aa33nc6mnppjlu9s"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Competenza Esperta",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "cvf2qd5ydoggezpc",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.7yvfgsm4pj5lxzs0"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Attacco Furtivo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "g5msktt0mjum7aui",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.2v2ro9agupg6c2wj"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Gergo Ladresco",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "obrraqskwwpb9te2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.zuarigv2rnpvoap8"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Azione Scaltra",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "0kbgq5lxktephj0l",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.4eorwj8ailot169t"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Archetipo Ladresco",
+        "icon": "icons/svg/upgrade.svg"
       },
       {
         "_id": "ASI.4",
@@ -42,6 +136,34 @@
         "classRestriction": "primary"
       },
       {
+        "_id": "8ycv2jsmbq0076an",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.wsnko47fg25zj8au"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "Schivata Prodigiosa",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "8fk4zbsy6vcych6j",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.d2exnzrsnoj2sd2x"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 7,
+        "title": "Evasione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "ASI.8",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -56,6 +178,48 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "xd3yvemnfa8s5rnm",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.qn1205o6nh2bdpxy"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 8,
+        "title": "Competenza Esperta (2)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "ncn29xviicpn7010",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.3f0gl2szwm6eb91n"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 9,
+        "title": "Privilegio dell'Archetipo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "xgjqj0x05ar4xvo9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.ololne3m6gday6zz"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 11,
+        "title": "Talento Affidabile",
+        "icon": "icons/svg/upgrade.svg"
       },
       {
         "_id": "ASI.12",
@@ -74,6 +238,48 @@
         "classRestriction": "primary"
       },
       {
+        "_id": "azkpv0hk7t1k88j8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.0gg4x1sa8mk9myzl"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 13,
+        "title": "Privilegio dell'Archetipo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "z4idcxudekwyb2jd",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.igtl29mejpj8jmeu"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 14,
+        "title": "Senso Cieco",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "lgfd6oynhmfthy17",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.pgbqe11y9iefwt0g"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 15,
+        "title": "Mente Sfuggente",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "ASI.16",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -90,6 +296,34 @@
         "classRestriction": "primary"
       },
       {
+        "_id": "ya75t9dkbsfq5lq2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.ss2ihf6zhwayayl3"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Privilegio dell'Archetipo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "1ovneswi7n0nmx97",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.0m6xbj3fgtjk9w9b"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 18,
+        "title": "Elusivo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "ASI.19",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -104,6 +338,20 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "8nxp1kjg4tkm6l1k",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.jq1aw3zxni77etrk"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Colpo di Fortuna",
+        "icon": "icons/svg/upgrade.svg"
       }
     ],
     "saves": [

@@ -1,0 +1,31 @@
+{
+  "_id": "aaktddet9dlln6r4",
+  "_key": "!items!aaktddet9dlln6r4",
+  "name": "Stile di Combattimento",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Scegli uno stile di combattimento",
+      "chat": ""
+    },
+    "requirements": "Livello 1",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

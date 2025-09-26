@@ -1,0 +1,5 @@
+2025/09/27-01:53:11.919146 16fa1b000 Delete type=3 #1
+2025/09/27-01:53:11.921275 16faa7000 Level-0 table #5: started
+2025/09/27-01:53:11.921673 16faa7000 Level-0 table #5: 12293 bytes OK
+2025/09/27-01:53:11.921749 16faa7000 Delete type=0 #3
+2025/09/27-01:53:11.921825 16faa7000 Manual compaction at level-0 from '!macros!banda001' @ 72057594037927935 : 1 .. '!macros!scadente001' @ 0 : 0; will stop at (end)

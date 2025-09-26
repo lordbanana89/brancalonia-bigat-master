@@ -27,6 +27,21 @@
     },
     "advancement": [
       {
+        "_id": "cwhc4p0zrw1iuoni",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "size_advancement",
         "type": "size",
         "configuration": {
@@ -39,6 +54,48 @@
         "title": "Size",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "255pmob8pwhbx394",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.5imw6a1fznbp23ia"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Astuzia Svanzica",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "fuoscfu8s4ciajdw",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.0tpwpq7igg47zzb9"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Parlantina",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "zif1a0z5zehbj1vb",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.xkrv1rh8u323o6mg"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Fortuna del Briccone",
+        "icon": "icons/svg/upgrade.svg"
       }
     ]
   },

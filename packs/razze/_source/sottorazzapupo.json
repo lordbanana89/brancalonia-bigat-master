@@ -27,6 +27,21 @@
     },
     "advancement": [
       {
+        "_id": "oz25ni960utfrxy4",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {
+          "size": "sm"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "size_advancement",
         "type": "size",
         "configuration": {
@@ -53,6 +68,45 @@
         "title": "Construct Nature",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "spdhyykpsyz3y58l",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.classladrolivello20colpodifortunaee8fd2"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Fortuna"
+      },
+      {
+        "_id": "tu761ltosegwdq5p",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.mcrstie13fxz5fdd"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Coraggioso"
+      },
+      {
+        "_id": "jlzdqsclpx7sylc6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.640osjf8ykome9vu"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Agilità Halfling"
       }
     ]
   },

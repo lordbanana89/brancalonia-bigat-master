@@ -1,157 +1,31 @@
 {
-  "id": "class-ladro-livello_20-colpo-di-fortuna",
-  "nome": "Colpo di Fortuna",
-  "nome_brancalonia": "Destino del Maestro Ladro",
-  "livello": 20,
-  "tipo": "attivo",
-  "descrizione": "Al 20° livello, hai un talento incredibile per riuscire quando ne hai bisogno. Se il tuo attacco manca un bersaglio nel raggio, puoi trasformarlo in un colpo. In alternativa, se fallisci una prova di caratteristica, puoi trattare il tiro di d20 come un 20. Una volta usato questo privilegio, non puoi usarlo di nuovo finché non completi un riposo breve o lungo.",
-  "meccaniche": {
-    "opzioni": {
-      "opzione_1": {
-        "nome": "Colpo Automatico",
-        "trigger": "Manchi un attacco",
-        "effetto": "Trasforma in colpo",
-        "limitazione": "Bersaglio nel raggio"
-      },
-      "opzione_2": {
-        "nome": "20 Automatico",
-        "trigger": "Fallisci prova caratteristica",
-        "effetto": "Conta come 20 naturale",
-        "nota": "Non è critico per attacchi"
-      }
+  "_id": "jq1aw3zxni77etrk",
+  "_key": "!items!jq1aw3zxni77etrk",
+  "name": "Colpo di Fortuna",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
     },
-    "recupero": "Riposo breve o lungo",
-    "usi": "1 per riposo"
-  },
-  "implementazione_foundry": {
-    "tipo": "risorsa_limitata",
+    "description": {
+      "value": "Trasforma fallimento in successo",
+      "chat": ""
+    },
+    "requirements": "Livello 20",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
     "uses": {
-      "value": 1,
-      "max": 1,
-      "per": "sr"
-    },
-    "macro": {
-      "opzione_attacco": "Trasforma miss in hit",
-      "opzione_prova": "Sostituisci con 20"
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
     }
   },
-  "uso_attacco": {
-    "quando_usare": [
-      "Garantire Sneak Attack importante",
-      "Colpire boss con AC alta",
-      "Ultimo colpo per uccidere nemico",
-      "Attacco con veleno/effetto critico"
-    ],
-    "calcolo_danno": {
-      "livello_20_sa": "10d6 (35 medi)",
-      "attacco_base": "1d8+5 (9.5)",
-      "totale": "~45 danni garantiti"
-    },
-    "con_assassinate": {
-      "scenario": "Primo turno surpresa",
-      "beneficio": "Garantisce critico automatico",
-      "danno": "20d6 + weapon raddoppiato"
-    }
-  },
-  "uso_abilita": {
-    "quando_usare": [
-      "Prova critica per la quest",
-      "Salvare la vita con Acrobatics",
-      "Thieves' Tools su serratura impossibile",
-      "Persuasion con il re"
-    ],
-    "con_expertise": {
-      "bonus_tipico": "+17",
-      "risultato_20": "20+17 = 37",
-      "successo": "Batte quasi ogni CD"
-    },
-    "con_reliable_talent": {
-      "nota": "Già hai minimo 10",
-      "stroke": "Garantisce 20 quando serve"
-    }
-  },
-  "confronto_capstone": {
-    "vs_barbaro": "Barbaro +4 stats permanenti",
-    "vs_fighter": "Fighter 4 attacchi sempre",
-    "vs_wizard": "Wizard spell mastery",
-    "valutazione": "Situazionale ma clutch"
-  },
-  "tattiche_ottimali": {
-    "conservare_per": [
-      "Boss fight momento critico",
-      "Skill check impossibile",
-      "Salvare alleato con azione"
-    ],
-    "non_sprecare": [
-      "Nemici minori",
-      "Prove con CD bassa",
-      "Quando hai vantaggio"
-    ]
-  },
-  "sinergie": {
-    "con_sneak_attack": "Garantisce 10d6 danni",
-    "con_assassination": "Garantisce critico sorpresa",
-    "con_expertise": "37+ alle prove",
-    "con_magic_items": {
-      "vorpal": "Garantisce chance decapitazione",
-      "nove_vite": "Due chance di sopravvivenza"
-    }
-  },
-  "scenari_iconici": {
-    "boss_fight": {
-      "situazione": "Boss a 40 HP, AC 22",
-      "tiro": "Serve 19+ per colpire",
-      "stroke": "Colpo garantito, boss morto"
-    },
-    "impossibile_serratura": {
-      "cd": "CD 35",
-      "normale": "Serve 18+ con +17",
-      "stroke": "20+17 = 37, successo"
-    },
-    "salto_mortale": {
-      "situazione": "Saltare voragine per fuggire",
-      "cd": "CD 30 Athletics",
-      "stroke": "Garantisce sopravvivenza"
-    }
-  },
-  "multiclasse_considerazioni": {
-    "fighter_action_surge": "Due tentativi per turno",
-    "lucky_feat": "Più rirolls disponibili",
-    "halfling_luck": "Riroll 1 naturali"
-  },
-  "valore_pratico": {
-    "affidabilita": "100% successo quando serve",
-    "frequenza": "1/short rest buona",
-    "impatto": "Può cambiare l'incontro"
-  },
-  "paragone_altri_20": {
-    "paladino": "Trasformazione 1 minuto",
-    "druido": "Wild shape illimitato",
-    "chierico": "Intervento divino garantito",
-    "ladro": "Più situazionale ma versatile"
-  },
-  "narrazione_brancalonia": {
-    "descrizione": "Il fato stesso favorisce il Maestro Ladro",
-    "momenti_epici": [
-      "Pugnalata impossibile al cuore del drago",
-      "Scassinare la cassaforte del re",
-      "Convincere il diavolo a fare un patto"
-    ],
-    "leggenda": "Una volta nella vita, non falliscono mai"
-  },
-  "house_rules": {
-    "potenziamento": "2 usi invece di 1",
-    "critico": "Colpo diventa critico",
-    "ricarica": "1/giorno invece di riposo breve"
-  },
-  "note_finali": {
-    "design": "Safety net per momenti critici",
-    "bilanciamento": "Potente ma molto limitato",
-    "soddisfazione": "Momento 'clutch' garantito"
-  },
-  "note_dm": "Stroke of Luck è il momento cinematografico del ladro. Lascia che sia epico quando viene usato.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
-  "name": "Colpo Di Fortuna",
-  "img": "icons/magic/lightning/bolt-strike-forked-yellow.webp",
-  "_id": "class-ladro-livello_20-colpo-di-fortuna"
+  "effects": [],
+  "flags": {}
 }

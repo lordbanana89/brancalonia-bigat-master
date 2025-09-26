@@ -27,6 +27,21 @@
     },
     "advancement": [
       {
+        "_id": "bwpmrvzpw9vs28nt",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "size_advancement",
         "type": "size",
         "configuration": {
@@ -53,6 +68,76 @@
         "title": "Darkvision",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "sgflanndq587jrip",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.zixqjkp2goed9pkw"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Scurovisione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "vslsmbyf4kpgn2fu",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.fi4a731y2546z6pb"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Furtività Naturale",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "bfo3m3kt1v6sddbf",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.ki65iso5zc1zdyu5"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Resistenza alle Malattie",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "wxaq4g16hwuf6wm3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.2jnuwl880de0jbsh"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Morso Affilato",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "qcxyzljzsv1b0qvh",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.ntj6q6vs6pkzks2k"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Agilità del Ratto",
+        "icon": "icons/svg/upgrade.svg"
       }
     ]
   },

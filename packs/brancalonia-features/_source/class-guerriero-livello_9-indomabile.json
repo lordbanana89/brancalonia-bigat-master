@@ -1,149 +1,31 @@
 {
-  "id": "class-guerriero-livello_9-indomabile",
-  "nome": "Indomabile",
-  "nome_brancalonia": "Volontà di Ferro",
-  "livello": 9,
-  "tipo": "reazione",
-  "descrizione": "A partire dal 9° livello, puoi ritirare un tiro salvezza fallito. Se lo fai, devi usare il nuovo tiro, e non puoi usare di nuovo questo privilegio fino a che non completi un riposo lungo. Puoi usare questo privilegio due volte tra i riposi lunghi a partire dal 13° livello e tre volte a partire dal 17° livello.",
-  "meccaniche": {
-    "attivazione": {
-      "trigger": "Fallire un tiro salvezza",
-      "tipo": "nessun costo azione",
-      "timing": "Immediatamente dopo il fallimento"
-    },
-    "effetto": {
-      "meccanica": "Ritira il d20 del tiro salvezza",
-      "obbligatorio": "DEVI usare il nuovo risultato",
-      "nota": "Può peggiorare la situazione (1 naturale)"
-    },
-    "usi_progressione": {
-      "livello_9_12": "1 uso per riposo lungo",
-      "livello_13_16": "2 usi per riposo lungo",
-      "livello_17_20": "3 usi per riposo lungo"
-    },
-    "applicazione": {
-      "tutti_ts": "Funziona su qualsiasi tiro salvezza",
-      "inclusi": [
-        "Tiri salvezza su caratteristiche",
-        "Tiri salvezza contro morte",
-        "Tiri salvezza contro incantesimi",
-        "Tiri salvezza contro abilità"
-      ]
-    }
-  },
-  "implementazione_foundry": {
-    "tipo": "consumabile",
-    "risorse": {
-      "uses": "@scale.fighter.indomitable",
-      "max": "@scale.fighter.indomitable",
-      "per": "lr"
-    },
-    "scale_values": {
-      "livello_9_12": 1,
-      "livello_13_16": 2,
-      "livello_17_20": 3
-    },
-    "macro": {
-      "trigger": "Dopo tiro salvezza fallito",
-      "effetto": "Prompt per ritirare"
-    }
-  },
-  "calcoli_probabilita": {
-    "miglioramento_medio": {
-      "da_fallimento": "~45% di trasformare in successo",
-      "dipende_da": "CD del tiro salvezza e bonus"
-    },
-    "esempi": {
-      "ts_saggezza_cd15": {
-        "bonus_0": "25% → 45% successo",
-        "bonus_5": "50% → 70% successo"
-      },
-      "ts_costituzione_cd20": {
-        "bonus_8": "45% → 65% successo",
-        "bonus_12": "65% → 80% successo"
-      }
-    },
-    "vs_vantaggio": {
-      "indomabile": "Ritiro completo",
-      "vantaggio": "Meglio di base ma solo pre-tiro",
-      "differenza": "Indomabile usabile DOPO sapere il fallimento"
-    }
-  },
-  "confronto_abilita": {
-    "vs_legendary_resistance": {
-      "mostri": "Successo automatico 3/giorno",
-      "indomabile": "Solo ritiro, può fallire ancora",
-      "bilanciamento": "Più debole ma per PG"
-    },
-    "vs_portent_diviner": {
-      "portent": "Sostituisce con numero predeterminato",
-      "indomitable": "Ritira e spera",
-      "affidabilita": "Portent più affidabile"
-    },
-    "vs_lucky_feat": {
-      "lucky": "3/riposo lungo, più versatile",
-      "indomitable": "1-3/riposo lungo, solo TS",
-      "sovrapposizione": "Stackano insieme"
-    }
-  },
-  "uso_strategico": {
-    "priorita_alta": [
-      "Save-or-die effects",
-      "Controllo mentale (Dominate Person)",
-      "Pietrificazione",
-      "Disintegrazione"
-    ],
-    "priorita_media": [
-      "Stun/Paralisi",
-      "Fear effects",
-      "Banishment"
-    ],
-    "priorita_bassa": [
-      "Danni dimezzabili",
-      "Effetti minori",
-      "Condizioni temporanee"
-    ]
-  },
-  "sinergie": {
-    "con_resilient": "Migliora TS base, Indomitable per backup",
-    "con_lucky": "Due chance di ritiro",
-    "con_bless": "d4 su entrambi i tiri",
-    "multiclasse": {
-      "paladino": "Aura di protezione + Indomitable",
-      "monaco": "Diamond Soul + Indomitable"
-    }
-  },
-  "punti_deboli": {
-    "ts_mentali": "Guerriero spesso debole INT/WIS/CHA",
-    "ritiro_forzato": "Può ottenere 1 naturale",
-    "risorse_limitate": "Max 3/giorno anche al 20°",
-    "no_garantito": "Non garantisce successo"
-  },
-  "consigli_build": {
-    "talenti_utili": [
-      "Resilient (Wisdom) per TS mentali",
-      "Lucky per più ritirate",
-      "Alert per evitare sorprese"
-    ],
-    "priorita_asi": "Saggezza terziaria dopo STR/CON"
-  },
-  "narrazione_brancalonia": {
-    "descrizione": "La pura forza di volontà dello Spadaccino",
-    "esempi": [
-      "Resistere al fascino della Strega",
-      "Rimanere in piedi contro magia devastante",
-      "Spezzare controllo mentale con determinazione"
-    ],
-    "flavor": "L'esperienza in battaglia tempra la mente"
-  },
-  "progressione_importanza": {
-    "tier_2": "Salva vita contro save-or-suck",
-    "tier_3": "2 usi permettono più rischi",
-    "tier_4": "3 usi quasi garantiscono sopravvivenza"
-  },
-  "note_dm": "Indomitable è la risposta del guerriero agli effetti magici devastanti. Non forte come Legendary Resistance ma permette momenti eroici.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "_id": "mn1q8memfl06e866",
+  "_key": "!items!mn1q8memfl06e866",
   "name": "Indomabile",
-  "img": "icons/equipment/shield/buckler-wooden-boss-steel.webp",
-  "_id": "class-guerriero-livello_9-indomabile"
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Puoi ritirare un tiro salvezza",
+      "chat": ""
+    },
+    "requirements": "Livello 9",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
 }

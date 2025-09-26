@@ -1,124 +1,31 @@
 {
-  "id": "class-guerriero-livello_2-azione-impetuosa",
-  "nome": "Azione Impetuosa",
-  "nome_brancalonia": "Assalto Furioso",
-  "livello": 2,
-  "tipo": "attivo",
-  "descrizione": "A partire dal 2° livello, puoi spingerti oltre i tuoi normali limiti per un istante. Nel tuo turno, puoi effettuare un'azione aggiuntiva oltre alla tua azione regolare e a una possibile azione bonus. Una volta usato questo privilegio, devi completare un riposo breve o lungo prima di poterlo usare di nuovo. A partire dal 17° livello, puoi usarlo due volte prima di un riposo, ma solo una volta nello stesso turno.",
-  "meccaniche": {
-    "attivazione": {
-      "tipo": "nessun_costo_azione",
-      "effetto": "Ottieni un'azione aggiuntiva nel turno",
-      "timing": "Durante il tuo turno"
-    },
-    "limitazioni": {
-      "per_turno": "Una volta per turno",
-      "per_riposo": {
-        "livello_2_16": "1 uso per riposo breve/lungo",
-        "livello_17_20": "2 usi per riposo breve/lungo"
-      }
-    },
-    "azioni_possibili": [
-      "Attacco (beneficia di Attacco Extra)",
-      "Dash (doppio movimento)",
-      "Schivata (svantaggio agli attacchi contro di te)",
-      "Disimpegno (nessun attacco di opportunità)",
-      "Aiuto (vantaggio a un alleato)",
-      "Nascondersi (se possibile)",
-      "Preparare (prepara azione con trigger)",
-      "Lanciare incantesimo (se multiclasse)",
-      "Usare oggetto"
-    ]
-  },
-  "implementazione_foundry": {
-    "tipo": "consumabile",
-    "risorse": {
-      "uses": 1,
-      "max": "@scale.fighter.action-surge",
-      "per": "sr"
-    },
-    "scale_values": {
-      "livello_2_16": 1,
-      "livello_17_20": 2
-    },
-    "effetto": "Permette azione aggiuntiva immediata",
-    "macro": "Notifica giocatore di azione extra disponibile"
-  },
-  "esempi_uso": {
-    "doppio_attacco": {
-      "setup": "Guerriero livello 5 con Attacco Extra",
-      "turno_normale": "2 attacchi",
-      "con_action_surge": "4 attacchi totali",
-      "danno_nova": "Raddoppia output in un turno"
-    },
-    "attacco_e_fuga": {
-      "azione_1": "Attacco (2 attacchi con Extra)",
-      "action_surge": "Dash per allontanarsi",
-      "risultato": "Hit and run tattico"
-    },
-    "salvataggio_disperato": {
-      "situazione": "Alleato morente a 10 metri",
-      "azione_1": "Dash per raggiungerlo",
-      "action_surge": "Stabilizzare o dare pozione",
-      "risultato": "Salva alleato che sarebbe morto"
-    }
-  },
-  "calcoli_dps": {
-    "burst_damage": {
-      "livello_5": "4 attacchi invece di 2 (+100%)",
-      "livello_11": "6 attacchi invece di 3 (+100%)",
-      "livello_20": "8 attacchi invece di 4 (+100%)"
-    },
-    "con_talenti": {
-      "sharpshooter": "4×(1d8+15) = ~76 danni",
-      "gwm": "4×(2d6+15) = ~88 danni",
-      "polearm_master": "5 attacchi con bonus action"
-    }
-  },
-  "sinergie": {
-    "con_attacco_extra": "Moltiplica numero attacchi",
-    "con_recupero_energie": "Usabili stesso turno",
-    "con_manovre": "Più attacchi = più manovre",
-    "multiclasse": {
-      "barbaro": "4 attacchi con bonus Ira",
-      "paladino": "Più chance di punizione",
-      "ranger": "Hunter's Mark su più attacchi"
-    }
-  },
-  "confronto_nova": {
-    "vs_paladino_smite": "Più attacchi ma meno danno per hit",
-    "vs_barbaro_reckless": "Più sicuro, nessuno svantaggio",
-    "vs_rogue_sneak": "Più affidabile, meno dipendente",
-    "valutazione": "Miglior nova sostenibile del gioco"
-  },
-  "tattiche_avanzate": {
-    "alpha_strike": "Eliminare bersaglio prioritario turno 1",
-    "controllo": "Attacco + Shove prone + Grapple",
-    "sostenibilità": "Conservare per momenti critici",
-    "combo": "Con manovre per controllo battlefield"
-  },
-  "progressione": {
-    "tier_1_2": "Game changer, permette nova damage",
-    "tier_3": "Ancora ottimo per burst",
-    "tier_4_17": "2 usi = flessibilità estrema",
-    "capstone": "Con 4 attacchi base = devastante"
-  },
-  "limitazioni_importanti": {
-    "una_volta_per_turno": "Mai 2 action surge stesso turno",
-    "non_stacka": "Non dà azioni bonus extra",
-    "risorse_limitate": "Solo 1-2 per riposo breve"
-  },
-  "narrazione_brancalonia": {
-    "descrizione": "Lo spadaccino si muove in un turbine di lame",
-    "esempi": [
-      "Assalto alla guardia del ponte",
-      "Duello disperato contro più avversari",
-      "Salvataggio eroico dell'ultimo momento"
-    ]
-  },
-  "note_dm": "Action Surge è il privilegio signature del guerriero. Molto potente ma limitato. I giocatori esperti lo conservano per momenti critici.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "_id": "3kifh3c02sr69gff",
+  "_key": "!items!3kifh3c02sr69gff",
   "name": "Azione Impetuosa",
-  "img": "icons/skills/movement/arrow-upward-yellow.webp",
-  "_id": "class-guerriero-livello_2-azione-impetuosa"
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Un'azione aggiuntiva per turno",
+      "chat": ""
+    },
+    "requirements": "Livello 2",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
 }

@@ -27,6 +27,21 @@
     },
     "advancement": [
       {
+        "_id": "0fezlv6cal6vzxgl",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "size_advancement",
         "type": "size",
         "configuration": {
@@ -39,6 +54,48 @@
         "title": "Size",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "fvkve257kikpboda",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.u87hef3825t64h7w"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Sangue Levantino",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "112ebm40myqsa6ck",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.720xg91y2380m1e6"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Cultura Marittima",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "aoldj9blai38o5fs",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.lgxz1pmyqawx0eek"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Resistenza al Mare",
+        "icon": "icons/svg/upgrade.svg"
       }
     ]
   },

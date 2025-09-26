@@ -1,151 +1,31 @@
 {
-  "id": "class-ladro-livello_7-evasione",
-  "nome": "Evasione",
-  "nome_brancalonia": "Schivare l'Impossibile",
-  "livello": 7,
-  "tipo": "passivo",
-  "descrizione": "A partire dal 7° livello, puoi schivare agilmente certi effetti ad area, come il soffio infuocato di un drago rosso o un incantesimo fulmine. Quando sei soggetto a un effetto che ti permette di effettuare un tiro salvezza su Destrezza per dimezzare i danni, non subisci danni se superi il tiro salvezza, e solo metà danni se lo fallisci.",
-  "meccaniche": {
-    "funzionamento": {
-      "trigger": "TS Destrezza per dimezzare danni",
-      "successo": "0 danni invece di metà",
-      "fallimento": "Metà danni invece di pieni"
-    },
-    "applicazione": {
-      "sempre_attivo": true,
-      "nessun_costo": true,
-      "automatico": true
-    },
-    "esempi_effetti": [
-      "Palla di Fuoco (Fireball)",
-      "Fulmine (Lightning Bolt)",
-      "Soffio del Drago",
-      "Cono di Freddo",
-      "Esplosioni",
-      "Trappole con TS Destrezza"
-    ],
-    "non_funziona": [
-      "TS diversi da Destrezza",
-      "Effetti senza opzione dimezzare",
-      "Danni automatici senza TS"
-    ]
-  },
-  "implementazione_foundry": {
-    "tipo": "passivo_permanente",
-    "active_effects": [
-      {
-        "label": "Evasione",
-        "key": "flags.dnd5e.evasion",
-        "mode": 5,
-        "value": true
-      }
-    ],
-    "automazione": "Modifica automatica risultati TS Destrezza"
-  },
-  "calcoli_riduzione": {
-    "danno_normale": {
-      "fireball_8d6": {
-        "danno_base": "28 medi",
-        "fallimento_normale": "28 danni",
-        "fallimento_evasion": "14 danni",
-        "successo_normale": "14 danni",
-        "successo_evasion": "0 danni"
-      }
-    },
-    "riduzione_effettiva": {
-      "su_fallimento": "50% riduzione",
-      "su_successo": "100% riduzione",
-      "media_statistica": "75% riduzione totale"
-    }
-  },
-  "sinergie_difensive": {
-    "con_uncanny_dodge": {
-      "copertura": "UD per attacchi, Evasion per AoE",
-      "completezza": "Copre maggior parte danni"
-    },
-    "con_shield_master": {
-      "feat": "Bonus scudo al TS + Evasion",
-      "combo": "Quasi immune a DEX saves"
-    },
-    "con_resistenze": {
-      "anello_resistenza": "Stack per 75% o 100% riduzione",
-      "tiefling": "Resistenza fuoco + Evasion"
-    },
-    "con_advantage": {
-      "danger_sense": "Vantaggio + Evasion",
-      "probabilita": "~90% di 0 danni"
-    }
-  },
-  "confronto_classi": {
-    "monk": "Ottiene Evasion al 7°",
-    "ranger_hunter": "Può prendere al 15°",
-    "ring_of_evasion": "Oggetto magico 3 cariche/giorno",
-    "unicita": "Solo Monk e Rogue al 7°"
-  },
-  "valore_sopravvivenza": {
-    "tier_2": {
-      "fireball": "Da letale a gestibile",
-      "dragon_breath": "Sopravvivenza garantita"
-    },
-    "tier_3": {
-      "meteor_swarm": "40d6 → 20d6 → 10d6/0",
-      "ancient_dragon": "Breath weapon trivializzato"
-    }
-  },
-  "build_ottimizzate": {
-    "dex_max": {
-      "obiettivo": "DEX 20 per +5 TS",
-      "resilient_dex": "Se non competente",
-      "risultato": "+11 o più al TS"
-    },
-    "defensive": {
-      "shield_master": "Evasion potenziata",
-      "lucky": "Reroll TS falliti",
-      "risultato": "Quasi immune a AoE"
-    }
-  },
-  "esempi_iconici": {
-    "dragon_fight": {
-      "situazione": "Ancient Red Dragon breath",
-      "danno": "26d6 (91 medi)",
-      "con_evasion_successo": "0 danni",
-      "con_evasion_fallimento": "45 danni",
-      "narrativa": "Schiva completamente il soffio"
-    },
-    "trap_dungeon": {
-      "trappola": "Lame rotanti, TS DEX 15",
-      "normale": "4d10 o metà",
-      "con_evasion": "0 o 2d10",
-      "vantaggio": "Esplorazione più sicura"
-    }
-  },
-  "tattiche_party": {
-    "tank_aoe": "Ladro può stare in mezzo a AoE",
-    "bait": "Attirare nemici a usare AoE",
-    "posizionamento": "Meno preoccupazione per fireball"
-  },
-  "limitazioni": {
-    "solo_destrezza": "Non aiuta con altri TS",
-    "richiede_ts": "Non funziona su danni automatici",
-    "non_stacka": "Multiple fonti di Evasion non si sommano"
-  },
-  "narrazione_brancalonia": {
-    "descrizione": "Il Brigante si muove come il vento stesso",
-    "esempi_flavor": [
-      "Tuffarsi attraverso le fiamme illeso",
-      "Danzare tra i fulmini",
-      "Rotolare via da esplosioni"
-    ],
-    "reputazione": "Impossibile da colpire con magie d'area"
-  },
-  "ruling_importanti": {
-    "half_on_miss": "DEVE essere effetto che dimezza su successo",
-    "unconscious": "Non funziona se incosciente",
-    "no_dex_save": "Se impedito TS DEX, no Evasion"
-  },
-  "note_dm": "Evasion è uno dei privilegi difensivi più forti del gioco. Cambia completamente come il ladro affronta minacce AoE.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
+  "_id": "d2exnzrsnoj2sd2x",
+  "_key": "!items!d2exnzrsnoj2sd2x",
   "name": "Evasione",
-  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
-  "_id": "class-ladro-livello_7-evasione"
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Dimezza o annulla danni ad area",
+      "chat": ""
+    },
+    "requirements": "Livello 7",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
 }

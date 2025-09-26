@@ -1,15 +1,3 @@
-2025/09/27-00:31:52.368491 16f44f000 Recovering log #4
-2025/09/27-00:31:52.369608 16f44f000 Delete type=0 #4
-2025/09/27-00:31:52.369649 16f44f000 Delete type=3 #2
-2025/09/27-00:31:52.373643 16fce7000 Level-0 table #9: started
-2025/09/27-00:31:52.374394 16fce7000 Level-0 table #9: 72466 bytes OK
-2025/09/27-00:31:52.374479 16fce7000 Delete type=0 #7
-2025/09/27-00:31:52.374550 16fce7000 Manual compaction at level-0 from '!item!arlecchinobardolivello3batocchio68d64d' @ 72057594037927935 : 1 .. '!items!feat-bg-staffetta' @ 0 : 0; will stop at (end)
-2025/09/27-00:31:52.374568 16fce7000 Manual compaction at level-1 from '!item!arlecchinobardolivello3batocchio68d64d' @ 72057594037927935 : 1 .. '!items!feat-bg-staffetta' @ 0 : 0; will stop at '!items!feat-bg-staffetta' @ 323 : 1
-2025/09/27-00:31:52.374572 16fce7000 Compacting 1@1 + 1@2 files
-2025/09/27-00:31:52.375778 16fce7000 Generated table #10@1: 189 keys, 71856 bytes
-2025/09/27-00:31:52.375788 16fce7000 Compacted 1@1 + 1@2 files => 71856 bytes
-2025/09/27-00:31:52.375854 16fce7000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-00:31:52.375920 16fce7000 Delete type=2 #5
-2025/09/27-00:31:52.376272 16fce7000 Delete type=2 #9
-2025/09/27-00:31:52.376411 16fce7000 Manual compaction at level-1 from '!items!feat-bg-staffetta' @ 323 : 1 .. '!items!feat-bg-staffetta' @ 0 : 0; will stop at (end)
+2025/09/27-01:53:11.456282 17308f000 Recovering log #8
+2025/09/27-01:53:11.457247 17308f000 Delete type=3 #6
+2025/09/27-01:53:11.457295 17308f000 Delete type=0 #8

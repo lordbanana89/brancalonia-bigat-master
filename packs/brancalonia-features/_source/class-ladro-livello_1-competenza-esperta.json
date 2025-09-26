@@ -1,0 +1,31 @@
+{
+  "_id": "aa33nc6mnppjlu9s",
+  "_key": "!items!aa33nc6mnppjlu9s",
+  "name": "Competenza Esperta",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Raddoppia il bonus di competenza per due abilità",
+      "chat": ""
+    },
+    "requirements": "Livello 1",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

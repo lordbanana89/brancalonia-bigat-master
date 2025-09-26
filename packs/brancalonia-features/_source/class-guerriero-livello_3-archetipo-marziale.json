@@ -1,145 +1,31 @@
 {
-  "id": "class-guerriero-livello_3-archetipo-marziale",
-  "nome": "Archetipo Marziale",
-  "nome_brancalonia": "Scuola di Scherma",
-  "livello": 3,
-  "tipo": "sottoclasse",
-  "descrizione": "Al 3° livello, scegli un archetipo che lotti per emulare nei tuoi stili e tecniche di combattimento. L'archetipo che scegli ti garantisce privilegi al 3° livello e di nuovo al 7°, 10°, 15° e 18° livello.",
-  "meccaniche": {
-    "scelta": "Permanente al 3° livello",
-    "progressione_privilegi": [
-      3,
-      7,
-      10,
-      15,
-      18
-    ]
-  },
-  "archetipi_disponibili": {
-    "manuale_base": {
-      "champion": {
-        "nome": "Campione",
-        "nome_brancalonia": "Maestro d'Armi",
-        "tema": "Eccellenza fisica e combattimento puro",
-        "privilegio_3": "Critico Migliorato",
-        "focus": "Semplicità e affidabilità"
-      },
-      "battle_master": {
-        "nome": "Maestro di Battaglia",
-        "nome_brancalonia": "Stratega della Lama",
-        "tema": "Tattiche superiori e manovre",
-        "privilegio_3": "Superiorità di Combattimento",
-        "focus": "Controllo del battlefield"
-      },
-      "eldritch_knight": {
-        "nome": "Cavaliere Mistico",
-        "nome_brancalonia": "Spadaccino Incantatore",
-        "tema": "Fusione magia e acciaio",
-        "privilegio_3": "Incantesimi",
-        "focus": "Versatilità magica"
-      }
-    },
-    "xanathars": {
-      "arcane_archer": {
-        "nome": "Arciere Arcano",
-        "tema": "Frecce magiche",
-        "privilegio_3": "Arcane Shot"
-      },
-      "cavalier": {
-        "nome": "Cavaliere",
-        "tema": "Difensore montato",
-        "privilegio_3": "Born to the Saddle"
-      },
-      "samurai": {
-        "nome": "Samurai",
-        "tema": "Determinazione e precisione",
-        "privilegio_3": "Fighting Spirit"
-      }
-    },
-    "brancalonia_custom": {
-      "spadaccino": {
-        "nome": "Spadaccino di Torrigiana",
-        "tema": "Duellante urbano elegante",
-        "focus": "Duelli e finezza"
-      }
-    }
-  },
-  "impatto_build": {
-    "champion": {
-      "pro": [
-        "Semplice",
-        "Affidabile",
-        "Passivo"
-      ],
-      "contro": [
-        "Poca versatilità",
-        "Noioso per alcuni"
-      ],
-      "ideale": "Nuovi giocatori o chi ama semplicità"
-    },
-    "battle_master": {
-      "pro": [
-        "Manovre versatili",
-        "Controllo tattico",
-        "Danno extra"
-      ],
-      "contro": [
-        "Gestione risorse",
-        "Complessità"
-      ],
-      "ideale": "Giocatori tattici"
-    },
-    "eldritch_knight": {
-      "pro": [
-        "Magia + combat",
-        "Shield spell",
-        "Versatilità"
-      ],
-      "contro": [
-        "MAD",
-        "Progressione lenta"
-      ],
-      "ideale": "Chi vuole fighter/wizard"
-    }
-  },
-  "confronto_archetipi": {
-    "danno": {
-      "battle_master": "Burst con manovre",
-      "champion": "Consistente con critici",
-      "samurai": "Nova con advantage"
-    },
-    "sopravvivenza": {
-      "eldritch_knight": "Shield + Absorb Elements",
-      "cavalier": "Tank con marking",
-      "samurai": "Temp HP + resistenza"
-    },
-    "versatilita": {
-      "eldritch_knight": "Spell utility",
-      "battle_master": "Manovre situazionali",
-      "arcane_archer": "Trick shots"
-    }
-  },
-  "progressione_potere": {
-    "livello_3": "Definisce identità combattimento",
-    "livello_7": "Potenziamento significativo",
-    "livello_10": "Abilità utility o difesa",
-    "livello_15": "Power spike importante",
-    "livello_18": "Capstone archetipo"
-  },
-  "multiclasse_sinergie": {
-    "battle_master_rogue": "Manovre + Sneak Attack",
-    "eldritch_knight_wizard": "Più spell slots",
-    "champion_barbarian": "Critici + Brutal Critical",
-    "samurai_gloomstalker": "Alpha strike devastante"
-  },
-  "implementazione_foundry": {
-    "tipo": "subclass_choice",
-    "livello": 3,
-    "configurazione": "Varia per archetipo"
-  },
-  "note_dm": "L'archetipo marziale definisce completamente lo stile di combattimento del guerriero. Battle Master è il più versatile, Champion il più semplice, Eldritch Knight il più complesso.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "_id": "p0tuefcj0cltebe9",
+  "_key": "!items!p0tuefcj0cltebe9",
   "name": "Archetipo Marziale",
-  "img": "icons/sundries/flags/banner-flag-blue.webp",
-  "_id": "class-guerriero-livello_3-archetipo-marziale"
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Scegli un archetipo marziale",
+      "chat": ""
+    },
+    "requirements": "Livello 3",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
 }

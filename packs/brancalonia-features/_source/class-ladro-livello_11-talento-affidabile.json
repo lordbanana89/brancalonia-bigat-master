@@ -1,170 +1,31 @@
 {
-  "id": "class-ladro-livello_11-talento-affidabile",
-  "nome": "Talento Affidabile",
-  "nome_brancalonia": "Maestria Assoluta",
-  "livello": 11,
-  "tipo": "passivo",
-  "descrizione": "All'11° livello, hai raffinato le tue abilità fino a raggiungere la perfezione. Ogni volta che effettui una prova di caratteristica che ti permette di aggiungere il tuo bonus di competenza, puoi trattare un tiro di d20 di 9 o meno come un 10.",
-  "meccaniche": {
-    "funzionamento": {
-      "condizione": "Prova con competenza",
-      "effetto": "Minimo 10 sul d20",
-      "calcolo": "Se tiri 1-9, diventa 10"
-    },
-    "applicazione": {
-      "abilita_competenti": "Sempre attivo",
-      "arnesi_competenti": "Sempre attivo",
-      "iniziativa": "SI (è prova Destrezza)",
-      "tiri_salvezza": "NO (non sono prove)",
-      "attacchi": "NO (non sono prove)"
-    },
-    "con_expertise": {
-      "livello_11": {
-        "bonus_expertise": "+8",
-        "minimo_totale": "10+8 = 18"
-      },
-      "livello_17": {
-        "bonus_expertise": "+12",
-        "minimo_totale": "10+12 = 22"
-      },
-      "livello_20": {
-        "bonus_expertise": "+12",
-        "minimo_totale": "10+12 = 22"
-      }
-    }
-  },
-  "implementazione_foundry": {
-    "tipo": "passivo_automatico",
-    "flags": {
-      "dnd5e.reliableTalent": true
-    },
-    "effetto": "Modifica automatica tiri sotto 10",
-    "formula": "Math.max(10, d20Roll) + modifiers"
-  },
-  "calcoli_affidabilita": {
-    "con_expertise": {
-      "furtivita_+12": {
-        "minimo": "22",
-        "successo_automatico": [
-          "CD 22 o meno SEMPRE",
-          "CD 25 - 85% successo",
-          "CD 30 - 60% successo"
-        ]
-      },
-      "arnesi_scasso_+12": {
-        "minimo": "22",
-        "serrature": [
-          "Semplici (CD 15): Auto-successo",
-          "Moderate (CD 20): Auto-successo",
-          "Difficili (CD 25): 85% successo",
-          "Leggendarie (CD 30): 60% successo"
-        ]
-      }
-    },
-    "senza_expertise": {
-      "abilita_+4": {
-        "minimo": "14",
-        "affidabilita": "CD 14 o meno garantite"
-      }
-    }
-  },
-  "confronto_abilita": {
-    "vs_barbaro_indomitable_might": {
-      "barbaro": "Minimo = punteggio Forza",
-      "ladro": "Minimo 10 + bonus",
-      "differenza": "Barbaro solo Forza, Ladro tutto"
-    },
-    "vs_bardo_jack_all_trades": {
-      "bardo": "Metà competenza a tutto",
-      "ladro": "Minimo 10 se competente",
-      "sinergia": "Bardo/Ladro multiclass devastante"
-    },
-    "vs_guidance": {
-      "guidance": "+1d4 medio +2.5",
-      "reliable": "Minimo 10",
-      "combo": "Reliable + Guidance = OP"
-    }
-  },
-  "applicazioni_pratiche": {
-    "infiltrazione": {
-      "furtivita": "Minimo 22+ invisibilità garantita",
-      "deception": "Minimo 18+ per false identità",
-      "sleight_of_hand": "Minimo 22+ borseggio perfetto"
-    },
-    "esplorazione": {
-      "percezione": "Minimo 18+ trova tutto",
-      "investigazione": "Minimo 18+ risolve misteri",
-      "survival": "Minimo 14+ non perdersi mai"
-    },
-    "sociale": {
-      "persuasione": "Minimo 18+ diplomatico affidabile",
-      "intimidazione": "Minimo 14+ sempre minaccioso",
-      "insight": "Minimo 18+ legge tutti"
-    }
-  },
-  "combo_build": {
-    "skill_monkey": {
-      "expertise_4": "4 abilità con minimo 22",
-      "competenze_8": "8+ abilità con minimo 14",
-      "risultato": "Migliore skill user del gioco"
-    },
-    "infiltrator": {
-      "stealth_22": "Invisibile praticamente",
-      "thieves_tools_22": "Apre quasi tutto",
-      "deception_22": "Inganna chiunque"
-    },
-    "face": {
-      "persuasion_22": "Diplomatico supremo",
-      "insight_22": "Detector di bugie",
-      "investigation_22": "Sherlock Holmes"
-    }
-  },
-  "sinergie_multiclasse": {
-    "bardo": "Jack of all trades + Reliable",
-    "ranger": "Più competenze + Reliable",
-    "knowledge_cleric": "Expertise extra + Reliable"
-  },
-  "impatto_gioco": {
-    "tier_3": "Cambia completamente skill checks",
-    "affidabilita": "Rimuove RNG dalle abilità core",
-    "party_role": "IL specialista definitivo",
-    "dm_challenge": "CD devono essere 25+ per sfidare"
-  },
-  "esempi_iconici": {
-    "heist": {
-      "serratura_cd_25": "85% successo minimo",
-      "guardie_percezione": "Stealth 22+ le batte",
-      "trappole_investigation": "18+ le trova tutte"
-    },
-    "sociale": {
-      "re_persuasion_cd_20": "Successo automatico",
-      "detective_insight_cd_22": "Successo automatico",
-      "disguise_deception": "Minimo 22 con kit"
-    }
-  },
-  "limitazioni": {
-    "solo_competenza": "Non funziona senza competenza",
-    "no_combat": "Non si applica ad attacchi/TS",
-    "no_vantaggio": "Non sostituisce vantaggio",
-    "1_naturale": "1 naturale può ancora essere critico fallimento (DM dipendente)"
-  },
-  "narrazione_brancalonia": {
-    "descrizione": "Il Brigante ha perfezionato le sue arti",
-    "esempi": [
-      "Scassinatore che non sbaglia mai",
-      "Ombra che nessuno vede",
-      "Bugiardo che inganna il diavolo"
-    ],
-    "reputazione": "Maestro indiscusso del suo campo"
-  },
-  "progressione_importanza": {
-    "pre_11": "Affidamento su fortuna e expertise",
-    "post_11": "Consistenza assoluta",
-    "impatto": "Uno dei power spike più grandi del ladro"
-  },
-  "note_dm": "Reliable Talent rimuove la casualità dalle specializzazioni del ladro. Pianifica sfide con CD 25+ per mantenere tensione.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
+  "_id": "ololne3m6gday6zz",
+  "_key": "!items!ololne3m6gday6zz",
   "name": "Talento Affidabile",
-  "img": "icons/magic/control/energy-stream-link-teal.webp",
-  "_id": "class-ladro-livello_11-talento-affidabile"
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Minimo 10 nelle prove di abilità",
+      "chat": ""
+    },
+    "requirements": "Livello 11",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
 }

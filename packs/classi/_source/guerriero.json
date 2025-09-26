@@ -26,6 +26,62 @@
         "classRestriction": "primary"
       },
       {
+        "_id": "441pwdrs7ppq80so",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.aaktddet9dlln6r4"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Stile di Combattimento",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "rhx7c819aa3pdi67",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.vrnj87v48izm3x4v"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Recupero Straordinario",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "kbzbtbr8u57346p6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.3kifh3c02sr69gff"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Azione Impetuosa",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "5gqo9465yjeg61n6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.p0tuefcj0cltebe9"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Archetipo Marziale",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "ASI.4",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -40,6 +96,20 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "aj0j1jezzmasktf1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.qyqfqdjimw924kqi"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "Attacco Extra",
+        "icon": "icons/svg/upgrade.svg"
       },
       {
         "_id": "ASI.8",
@@ -58,6 +128,34 @@
         "classRestriction": "primary"
       },
       {
+        "_id": "9n5t3t04opl34jzp",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.mn1q8memfl06e866"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 9,
+        "title": "Indomabile",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "w0qdwn287cyasgv9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.015u1bo01qsnatrm"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 11,
+        "title": "Attacco Extra (2)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "ASI.12",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -72,6 +170,34 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "kmrvk54ltws7q0z0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.9uf7e998wx6wu6v0"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 13,
+        "title": "Indomabile (2)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "v16w1ujg19j5dg5l",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.j7d5m4t3xvkqhju2"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 15,
+        "title": "Archetipo Marziale - Maestria",
+        "icon": "icons/svg/upgrade.svg"
       },
       {
         "_id": "ASI.16",
@@ -90,6 +216,34 @@
         "classRestriction": "primary"
       },
       {
+        "_id": "w4up315hbmq7n7y0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.5h68josfwm7hwzel"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Azione Impetuosa (2)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "peg950tkj5p2ku4o",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.rwmdbjy28l36vo3r"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Indomabile (3)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
         "_id": "ASI.19",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -104,6 +258,20 @@
         "title": "",
         "icon": "",
         "classRestriction": "primary"
+      },
+      {
+        "_id": "7r9zsi76m1oc5gaf",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.a9vwi3v4i7ukrikd"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Attacco Extra (3)",
+        "icon": "icons/svg/upgrade.svg"
       }
     ],
     "saves": [
