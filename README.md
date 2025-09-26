@@ -92,7 +92,7 @@ Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema 
 1. **Campo _key obbligatorio**: Ogni documento richiede `_key: "!collection!id"`
 2. **Campo _id obbligatorio**: Ogni documento DEVE avere un campo `_id` valido
 3. **Bug del CLI**: Il comando `fvtt package pack` rimuove silenziosamente `_key`
-4. **Background validation D&D 5e**: `startingEquipment` non supportato, `wealth` richiede formato dice (es: "10gp" non "10 ma")
+4. **Background validation D&D 5e**: `startingEquipment` non supportato, `wealth` non è un campo standard per backgrounds
 5. **Icon paths**: Usare sempre percorsi del sistema D&D 5e (es: `systems/dnd5e/icons/items/armor/plate.webp`)
 
 **Soluzione Implementata:**
