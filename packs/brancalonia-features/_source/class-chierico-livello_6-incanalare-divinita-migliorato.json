@@ -90,5 +90,6 @@
   "note_dm": "Due usi di Channel Divinity rendono il chierico molto più attivo in combattimento. Considera l'impatto del dominio specifico quando bilanci encounter.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58",
   "name": "Incanalare Divinita Migliorato",
-  "img": "icons/magic/symbols/cross-circle-blue.webp"
+  "img": "icons/magic/symbols/cross-circle-blue.webp",
+  "_id": "class-chierico-livello_6-incanalare-divinita-migliorato"
 }

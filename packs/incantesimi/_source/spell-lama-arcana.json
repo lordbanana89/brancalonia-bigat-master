@@ -55,5 +55,6 @@
   "note_dm": "Blade Ward è considerato uno dei peggiori cantrip. Action economy terribile. Casi d'uso estremamente limitati.",
   "fonte": "D&D 5e PHB p.218",
   "name": "Spell Lama Arcana",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-lama-arcana"
 }

@@ -53,5 +53,6 @@
   "note_dm": "Produce Flame è versatile utilità/combat. Ottimo per druidi che vogliono luce senza occupare slot. Attacco termina incantesimo.",
   "fonte": "D&D 5e PHB p.269",
   "name": "Spell Produrre Fiamma",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-produrre-fiamma"
 }

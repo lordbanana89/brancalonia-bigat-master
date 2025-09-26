@@ -154,5 +154,6 @@
   "note_dm": "Sneak Attack è il cuore del ladro. Assicurati che il giocatore possa attivarlo quasi ogni turno o la classe diventa inutile.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
   "name": "Attacco Furtivo",
-  "img": "icons/skills/melee/strike-dagger-arcane-purple.webp"
+  "img": "icons/skills/melee/strike-dagger-arcane-purple.webp",
+  "_id": "class-ladro-livello_1-attacco-furtivo"
 }

@@ -75,5 +75,6 @@
   "note_dm": "L'origine definisce completamente lo stregone. Aberrant Mind e Clockwork Soul (Tasha) sono notevolmente più potenti.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.99",
   "name": "Origine Stregonesca",
-  "img": "icons/magic/lightning/orb-ball-purple.webp"
+  "img": "icons/magic/lightning/orb-ball-purple.webp",
+  "_id": "class-stregone-livello_1-origine-stregonesca"
 }

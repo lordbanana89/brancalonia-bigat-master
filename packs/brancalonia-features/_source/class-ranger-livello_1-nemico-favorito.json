@@ -68,5 +68,6 @@
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91",
   "name": "Nemico Prescelto",
-  "img": "icons/skills/targeting/crosshair-creature-red.webp"
+  "img": "icons/skills/targeting/crosshair-creature-red.webp",
+  "_id": "class-ranger-livello_1-nemico-favorito"
 }

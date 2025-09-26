@@ -20,5 +20,6 @@
   "note_dm": "Al 12°, molti maghi prendono talenti per specializzazione avendo già INT 20.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
   "name": "Aumento Caratteristica 3",
-  "img": "icons/magic/control/buff-flight-wings-blue.webp"
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "_id": "class-mago-livello_12-aumento-caratteristica-3"
 }

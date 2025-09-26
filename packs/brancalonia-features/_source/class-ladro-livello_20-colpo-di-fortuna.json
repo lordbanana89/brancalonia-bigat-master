@@ -152,5 +152,6 @@
   "note_dm": "Stroke of Luck è il momento cinematografico del ladro. Lascia che sia epico quando viene usato.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
   "name": "Colpo Di Fortuna",
-  "img": "icons/magic/lightning/bolt-strike-forked-yellow.webp"
+  "img": "icons/magic/lightning/bolt-strike-forked-yellow.webp",
+  "_id": "class-ladro-livello_20-colpo-di-fortuna"
 }

@@ -53,5 +53,6 @@
   "note_dm": "Spare the Dying è situazionale ma vitale quando serve. Touch range limita in combat. Grave Domain lo rende eccellente.",
   "fonte": "D&D 5e PHB p.277",
   "name": "Spell Vita Falsata",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-vita-falsata"
 }

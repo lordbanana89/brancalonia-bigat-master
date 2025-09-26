@@ -31,5 +31,6 @@
   "note_dm": "Evasion rende il monaco molto resistente a damage AoE. Combinato con alta DEX e Diamond Soul, quasi immunità.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
   "name": "Evasione",
-  "img": "icons/skills/movement/feet-winged-boots-brown.webp"
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "_id": "class-monaco-livello_7-evasione"
 }

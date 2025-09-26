@@ -1,6 +1,6 @@
 {
   "categoria": "Backgrounds",
-  "totale": 14,
+  "totale": 13,
   "elementi": [
     {
       "nome": "Ambulante",
@@ -18,34 +18,9 @@
       "fonte": "Manuale Base p.33"
     },
     {
-      "nome": "Bargello",
-      "file": "bargello.json",
-      "fonte": "Brancalonia Macaronicon p.36-37"
-    },
-    {
       "nome": "Brado",
       "file": "brado.json",
       "fonte": "Manuale Base p.34"
-    },
-    {
-      "nome": "Cantastorie",
-      "file": "cantastorie.json",
-      "fonte": "Brancalonia Macaronicon p.37-38"
-    },
-    {
-      "nome": "Cialtrone",
-      "file": "cialtrone.json",
-      "fonte": "Brancalonia Macaronicon p.38-39"
-    },
-    {
-      "nome": "Contrabbandiere",
-      "file": "contrabbandiere.json",
-      "fonte": "Brancalonia Macaronicon p.39-40"
-    },
-    {
-      "nome": "Disertore",
-      "file": "disertore.json",
-      "fonte": "Brancalonia Macaronicon p.40-41"
     },
     {
       "nome": "Duro",
@@ -58,19 +33,39 @@
       "fonte": "Manuale Base p.36"
     },
     {
-      "nome": "Locandiere",
-      "file": "locandiere.json",
+      "nome": "Cacciatore di reliquie",
+      "file": "cacciatore_di_reliquie.json",
+      "fonte": "Brancalonia Macaronicon p.36-37"
+    },
+    {
+      "nome": "Impresario",
+      "file": "impresario.json",
+      "fonte": "Brancalonia Macaronicon p.37-38"
+    },
+    {
+      "nome": "Innamorato",
+      "file": "innamorato.json",
+      "fonte": "Brancalonia Macaronicon p.38-39"
+    },
+    {
+      "nome": "Lucignolo",
+      "file": "lucignolo.json",
+      "fonte": "Brancalonia Macaronicon p.40-41"
+    },
+    {
+      "nome": "Passatore",
+      "file": "passatore.json",
       "fonte": "Brancalonia Macaronicon p.41-42"
     },
     {
-      "nome": "Pellegrino",
-      "file": "pellegrino.json",
+      "nome": "Prelato",
+      "file": "prelato.json",
       "fonte": "Brancalonia Macaronicon p.42-43"
     },
     {
-      "nome": "Villano",
-      "file": "villano.json",
-      "fonte": "Brancalonia Macaronicon p.43-44"
+      "nome": "Staffetta",
+      "file": "staffetta.json",
+      "fonte": "Brancalonia Macaronicon p.44-45"
     }
   ]
 }

@@ -65,5 +65,6 @@
   "note_dm": "Detect Magic è utilità essenziale. Ritual lo rende gratuito. Utile per puzzle e trappole magiche. Non sostituisce Identify.",
   "fonte": "D&D 5e PHB p.231",
   "name": "Spell Individuazione Magia",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-individuazione-magia"
 }

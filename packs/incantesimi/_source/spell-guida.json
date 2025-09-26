@@ -37,5 +37,6 @@
   "note_dm": "Guidance è uno dei migliori cantrip. +1d4 è significativo. Alcuni tavoli limitano lo spam continuo.",
   "fonte": "D&D 5e PHB p.248",
   "name": "Spell Guida",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-guida"
 }

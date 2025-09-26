@@ -65,5 +65,6 @@
   "note_dm": "Cure Wounds è healing efficiente ma touch range limita. Meglio out of combat. Life Domain lo rende eccellente.",
   "fonte": "D&D 5e PHB p.230",
   "name": "Spell Cura Ferite",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-cura-ferite"
 }

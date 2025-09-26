@@ -147,5 +147,6 @@
   "note_dm": "Il chierico è l'incantatore divino più versatile, con accesso all'intera lista quando prepara.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58",
   "name": "Incantesimi",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "class-chierico-livello_1-incantesimi"
 }

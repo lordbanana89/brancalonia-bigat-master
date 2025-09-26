@@ -40,5 +40,6 @@
   "note_dm": "True Strike è considerato uno dei peggiori cantrip. Action economy terribile. Quasi sempre meglio attaccare due volte.",
   "fonte": "D&D 5e PHB p.284",
   "name": "Spell Colpo Accurato",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-colpo-accurato"
 }

@@ -74,5 +74,6 @@
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107",
   "name": "Magia del Patto",
-  "img": "icons/sundries/documents/document-sealed-red.webp"
+  "img": "icons/sundries/documents/document-sealed-red.webp",
+  "_id": "class-warlock-livello_1-patto-magico"
 }

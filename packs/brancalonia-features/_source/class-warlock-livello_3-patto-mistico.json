@@ -98,5 +98,6 @@
   "note_dm": "Il patto definisce il playstyle. Blade per melee, Chain per scout/utility, Tome per versatility, Talisman per support.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107-108",
   "name": "Dono del Patto",
-  "img": "icons/sundries/documents/document-sealed-red.webp"
+  "img": "icons/sundries/documents/document-sealed-red.webp",
+  "_id": "class-warlock-livello_3-patto-mistico"
 }

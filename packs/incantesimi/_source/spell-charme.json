@@ -66,5 +66,6 @@
   "note_dm": "Charm Person non è controllo mentale. Target diventa amichevole, non servo. Conseguenze sociali dopo importante.",
   "fonte": "D&D 5e PHB p.221",
   "name": "Spell Charme",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-charme"
 }

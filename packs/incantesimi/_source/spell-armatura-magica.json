@@ -47,5 +47,6 @@
   "note_dm": "Mage Armor è essenziale per wizard/sorcerer. 8 ore = tutto il giorno con 1 slot. Non concentrazione.",
   "fonte": "D&D 5e PHB p.256",
   "name": "Spell Armatura Magica",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-armatura-magica"
 }

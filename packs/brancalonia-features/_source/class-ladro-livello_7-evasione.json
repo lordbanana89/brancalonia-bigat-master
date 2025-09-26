@@ -146,5 +146,6 @@
   "note_dm": "Evasion è uno dei privilegi difensivi più forti del gioco. Cambia completamente come il ladro affronta minacce AoE.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
   "name": "Evasione",
-  "img": "icons/skills/movement/feet-winged-boots-brown.webp"
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "_id": "class-ladro-livello_7-evasione"
 }

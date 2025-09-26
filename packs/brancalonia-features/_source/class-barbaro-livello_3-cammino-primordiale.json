@@ -166,5 +166,6 @@
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49-50",
   "name": "Cammino Primordiale",
-  "img": "icons/environment/wilderness/path-dirt.webp"
+  "img": "icons/environment/wilderness/path-dirt.webp",
+  "_id": "class-barbaro-livello_3-cammino-primordiale"
 }

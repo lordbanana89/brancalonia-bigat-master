@@ -171,5 +171,6 @@
   "note_dm": "Il giuramento definisce completamente l'identità del paladino. I principi devono essere seguiti o rischia di diventare Oathbreaker.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
   "name": "Giuramento Sacro",
-  "img": "icons/sundries/documents/document-sealed-yellow.webp"
+  "img": "icons/sundries/documents/document-sealed-yellow.webp",
+  "_id": "class-paladino-livello_3-giuramento-sacro"
 }

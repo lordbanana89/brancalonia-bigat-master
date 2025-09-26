@@ -68,5 +68,6 @@
   "note_dm": "Comprehend Languages è utility essenziale per esplorazione. Ritual lo rende sempre disponibile. Non traduce codici è limitazione importante.",
   "fonte": "D&D 5e PHB p.224",
   "name": "Spell Comprensione Linguaggi",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-comprensione-linguaggi"
 }

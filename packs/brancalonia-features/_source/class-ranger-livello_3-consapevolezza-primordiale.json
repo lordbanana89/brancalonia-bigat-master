@@ -38,5 +38,6 @@
   "note_dm": "Primeval Awareness è detect su scala enorme. 6 miglia nel terreno prescelto è vastissimo.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.92",
   "name": "Consapevolezza Primordiale",
-  "img": "icons/magic/perception/orb-eye-scrying-orange.webp"
+  "img": "icons/magic/perception/orb-eye-scrying-orange.webp",
+  "_id": "class-ranger-livello_3-consapevolezza-primordiale"
 }

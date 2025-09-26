@@ -54,5 +54,6 @@
   "note_dm": "CR 3 include non-morti molto pericolosi. Il chierico 20 diventa il nemico supremo di qualsiasi non-morto.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
   "name": "Distruggere Non Morti Finale",
-  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp"
+  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
+  "_id": "class-chierico-livello_20-distruggere-non-morti-finale"
 }

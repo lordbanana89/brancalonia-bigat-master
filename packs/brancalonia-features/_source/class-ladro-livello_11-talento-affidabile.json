@@ -165,5 +165,6 @@
   "note_dm": "Reliable Talent rimuove la casualità dalle specializzazioni del ladro. Pianifica sfide con CD 25+ per mantenere tensione.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
   "name": "Talento Affidabile",
-  "img": "icons/magic/control/energy-stream-link-teal.webp"
+  "img": "icons/magic/control/energy-stream-link-teal.webp",
+  "_id": "class-ladro-livello_11-talento-affidabile"
 }

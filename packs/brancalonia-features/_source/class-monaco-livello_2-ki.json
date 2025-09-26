@@ -118,5 +118,6 @@
   "note_dm": "Ki definisce il monaco. Sistema di risorse unico che recupera con short rest. Stunning Strike (livello 5) è l'uso più potente. Gestione ki separa monaci buoni da grandi.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78",
   "name": "Ki",
-  "img": "icons/magic/light/orb-lightbulb-white.webp"
+  "img": "icons/magic/light/orb-lightbulb-white.webp",
+  "_id": "class-monaco-livello_2-ki"
 }

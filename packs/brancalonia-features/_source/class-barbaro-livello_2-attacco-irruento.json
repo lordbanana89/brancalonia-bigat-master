@@ -95,5 +95,6 @@
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48",
   "name": "Attacco Irruento",
-  "img": "icons/skills/melee/hand-grip-sword-red.webp"
+  "img": "icons/skills/melee/hand-grip-sword-red.webp",
+  "_id": "class-barbaro-livello_2-attacco-irruento"
 }

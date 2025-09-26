@@ -75,5 +75,6 @@
   "note_dm": "Fireball è iconico e intenzionalmente overpower. 8d6 in 20ft radius è devastante. Evocation wizard lo rende sicuro per party.",
   "fonte": "D&D 5e PHB p.241",
   "name": "Spell Palla Di Fuoco",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-palla-di-fuoco"
 }

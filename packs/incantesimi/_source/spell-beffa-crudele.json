@@ -49,5 +49,6 @@
   "note_dm": "Vicious Mockery è il cantrip signature del bardo. Danno basso ma disadvantage è potente. Incoraggia creatività negli insulti.",
   "fonte": "D&D 5e PHB p.285",
   "name": "Spell Beffa Crudele",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-beffa-crudele"
 }

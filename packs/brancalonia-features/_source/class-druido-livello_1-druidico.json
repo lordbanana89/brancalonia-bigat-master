@@ -60,5 +60,6 @@
   "note_dm": "Druidico è ottimo per worldbuilding e comunicazione segreta. Usa per dare informazioni uniche al druido.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.66",
   "name": "Druidico",
-  "img": "icons/magic/nature/root-vine-entangled-green.webp"
+  "img": "icons/magic/nature/root-vine-entangled-green.webp",
+  "_id": "class-druido-livello_1-druidico"
 }

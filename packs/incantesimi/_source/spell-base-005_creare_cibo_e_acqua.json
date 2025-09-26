@@ -17,5 +17,6 @@
   "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Create Food and Water).",
   "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
   "name": "Spell Base 005 Creare Cibo E Acqua",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-base-005_creare_cibo_e_acqua"
 }

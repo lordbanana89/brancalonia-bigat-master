@@ -61,5 +61,6 @@
   "note_dm": "Slow è uno dei migliori debuff. Colpisce tutto: movement, defense, offense, casting. 6 targets in 40ft cube è enorme.",
   "fonte": "D&D 5e PHB p.277",
   "name": "Spell Lentezza",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-lentezza"
 }

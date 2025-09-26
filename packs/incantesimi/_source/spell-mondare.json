@@ -73,5 +73,6 @@
   "note_dm": "Mondare è versione Brancalonia economica di Hallow. 12 ore cast time lo rende strategico non tattico. Ottimo per basi.",
   "fonte": "Brancalonia Macaronicon p.52",
   "name": "Spell Mondare",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-mondare"
 }

@@ -26,5 +26,6 @@
   "note_dm": "Ki-Empowered Strikes rimuove la necessità di magic items per il monaco. Critico per tier 2+.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
   "name": "Colpi Ki",
-  "img": "icons/magic/light/orb-lightbulb-white.webp"
+  "img": "icons/magic/light/orb-lightbulb-white.webp",
+  "_id": "class-monaco-livello_6-colpi-ki"
 }

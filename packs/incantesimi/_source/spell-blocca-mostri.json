@@ -76,5 +76,6 @@
   "note_dm": "Hold Monster è il save-or-die definitivo. Funziona su quasi tutto tranne undead. Paralyzed è game over se falliscono saves.",
   "fonte": "D&D 5e PHB p.251",
   "name": "Spell Blocca Mostri",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-blocca-mostri"
 }

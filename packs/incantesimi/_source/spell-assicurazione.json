@@ -54,5 +54,6 @@
   "note_dm": "Assicurazione è spell unico di Brancalonia. Permette contingency povera ma utile. Componente deve restare addosso è vulnerabilità.",
   "fonte": "Brancalonia Macaronicon p.50",
   "name": "Spell Assicurazione",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-assicurazione"
 }

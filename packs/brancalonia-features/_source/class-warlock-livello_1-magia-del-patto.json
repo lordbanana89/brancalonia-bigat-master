@@ -71,5 +71,6 @@
   "note_dm": "Pact Magic è unica. Short rest recovery la rende molto forte in giorni con multiple battaglie. Pochi slot ma sempre potenti.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.107",
   "name": "Magia Del Patto",
-  "img": "icons/sundries/documents/document-sealed-red.webp"
+  "img": "icons/sundries/documents/document-sealed-red.webp",
+  "_id": "class-warlock-livello_1-magia-del-patto"
 }

@@ -80,8 +80,18 @@ Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema 
 - Foundry VTT v13.0.0 o superiore (testato fino a v13.347)
 - Sistema D&D 5e v5.0.0 o superiore (ottimizzato per v5.1.9)
 
-#### ⚠️ Nota Importante per gli Sviluppatori
-I compendi di Foundry v13 richiedono il campo `_key` in formato `!collection!id` per ogni documento JSON. Senza questo campo, il CLI di Foundry creerà database vuoti. Vedi la sezione Sviluppo per dettagli.
+#### ⚠️ Nota Critica per Foundry v13
+**PROBLEMA RISOLTO:** Il CLI di Foundry v3.0.0 ha un bug che rimuove il campo `_key` durante la compilazione, causando compendi vuoti.
+
+**Scoperte Importanti:**
+1. **Campo _key obbligatorio**: Ogni documento richiede `_key: "!collection!id"`
+2. **Campo _id obbligatorio**: Ogni documento DEVE avere un campo `_id` valido
+3. **Bug del CLI**: Il comando `fvtt package pack` rimuove silenziosamente `_key`
+
+**Soluzione Implementata:**
+- Script custom `compile-with-keys.cjs` che preserva il campo _key
+- Script `add-missing-ids.py` che aggiunge _id mancanti (trovati 215 file senza _id!)
+- Tutti i 859 documenti ora compilano correttamente
 
 #### Metodo 1: URL Manifest (Raccomandato)
 1. In Foundry VTT, vai su **Add-on Modules** → **Install Module**
@@ -239,12 +249,15 @@ I contenuti di Brancalonia sono proprietà di Acheron Games.
 
 ### ⚠️ SCOPERTA CRITICA: Compilazione Compendi per Foundry v13
 
-#### Il Problema dei Compendi Vuoti
-Durante lo sviluppo abbiamo scoperto che **Foundry VTT v13 NON carica i compendi** se non rispettano requisiti specifici non documentati:
+#### Il Problema dei Compendi Vuoti/Incompleti
+Durante lo sviluppo abbiamo scoperto che **Foundry VTT v13 NON carica correttamente i compendi** se non rispettano requisiti specifici:
 
-1. **Campo `_key` obbligatorio**: Ogni documento DEVE avere un campo `_key` in formato `!collection!id`
-2. **Il CLI v3.0.0 rimuove `_key`**: Il Foundry CLI v3.0.0 elimina silenziosamente il campo `_key` durante la compilazione
-3. **Struttura directory specifica**: Il database deve essere direttamente in `packs/nome-pack/`, NON in `packs/nome-pack/nome-pack/`
+1. **Campo `_id` mancante = compilazione parziale**: Se un file JSON non ha il campo `_id`, il compilatore crea una chiave `!collection!undefined` che blocca la compilazione dei file successivi
+2. **Campo `_key` obbligatorio**: Ogni documento DEVE avere un campo `_key` in formato `!collection!id`
+3. **Il CLI v3.0.0 rimuove `_key`**: Il Foundry CLI v3.0.0 elimina silenziosamente il campo `_key` durante la compilazione
+4. **Struttura directory specifica**: Il database deve essere direttamente in `packs/nome-pack/`, NON in `packs/nome-pack/nome-pack/`
+
+**Scoperta chiave:** Su 859 file totali, 215 non avevano il campo `_id` (94 incantesimi, 121 features), causando la compilazione di solo 646 documenti invece di 859!
 
 #### Soluzione Funzionante
 

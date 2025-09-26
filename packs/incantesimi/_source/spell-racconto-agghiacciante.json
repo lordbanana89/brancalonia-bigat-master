@@ -70,5 +70,6 @@
   "note_dm": "Racconto Agghiacciante è spell bardo Brancalonia che combina controllo e danno. Bonus action eccellente. Flavor narrativo perfetto per setting.",
   "fonte": "Brancalonia Macaronicon p.52",
   "name": "Spell Racconto Agghiacciante",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-racconto-agghiacciante"
 }

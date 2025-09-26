@@ -67,5 +67,6 @@
   "note_dm": "Esorcismo è spell tematico di Brancalonia. Mix tra Turn Undead e Protection from Evil. Forte vs specifici nemici.",
   "fonte": "Brancalonia Macaronicon p.52",
   "name": "Spell Esorcismo",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-esorcismo"
 }

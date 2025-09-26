@@ -53,5 +53,6 @@
   "note_dm": "Font of Magic è la flessibilità dello stregone. Permette nova rounds potenti ma brucia risorse velocemente.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.101",
   "name": "Fonte Magia",
-  "img": "icons/magic/water/orb-water-bubbles.webp"
+  "img": "icons/magic/water/orb-water-bubbles.webp",
+  "_id": "class-stregone-livello_2-fonte-magia"
 }

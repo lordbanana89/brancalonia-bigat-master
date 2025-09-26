@@ -62,5 +62,6 @@
   "note_dm": "Thunderwave ottimo controllo livello 1. Push 10 ft molto utile tatticamente. Rumore 300 ft è svantaggio importante.",
   "fonte": "D&D 5e PHB p.282",
   "name": "Spell Onda Tonante",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-onda-tonante"
 }

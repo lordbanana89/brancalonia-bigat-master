@@ -113,5 +113,6 @@
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
   "name": "Ira Implacabile",
-  "img": "icons/magic/control/buff-strength-muscle-damage.webp"
+  "img": "icons/magic/control/buff-strength-muscle-damage.webp",
+  "_id": "class-barbaro-livello_11-ira-implacabile"
 }

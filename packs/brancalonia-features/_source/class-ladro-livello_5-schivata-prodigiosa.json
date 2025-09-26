@@ -154,5 +154,6 @@
   "note_dm": "Uncanny Dodge è vitale per la sopravvivenza del ladro. Senza, è troppo fragile in melee. Ricorda che usa la reazione.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
   "name": "Schivata Prodigiosa",
-  "img": "icons/skills/movement/feet-direction-arrows-green.webp"
+  "img": "icons/skills/movement/feet-direction-arrows-green.webp",
+  "_id": "class-ladro-livello_5-schivata-prodigiosa"
 }

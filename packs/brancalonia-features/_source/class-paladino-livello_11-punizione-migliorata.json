@@ -17,5 +17,6 @@
   "note_dm": "Improved Divine Smite è +1d8 gratis su ogni attacco. Aumenta DPR costante significativamente.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
   "name": "Punizione Migliorata",
-  "img": "icons/magic/holy/projectiles-blades-salvo-yellow.webp"
+  "img": "icons/magic/holy/projectiles-blades-salvo-yellow.webp",
+  "_id": "class-paladino-livello_11-punizione-migliorata"
 }

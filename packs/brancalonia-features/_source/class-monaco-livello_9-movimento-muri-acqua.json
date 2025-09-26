@@ -29,5 +29,6 @@
   "note_dm": "Wall/water running trasforma il monaco in ninja. Cambia completamente movement options e tattiche.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
   "name": "Movimento Muri Acqua",
-  "img": "icons/magic/movement/trail-streak-pink.webp"
+  "img": "icons/magic/movement/trail-streak-pink.webp",
+  "_id": "class-monaco-livello_9-movimento-muri-acqua"
 }

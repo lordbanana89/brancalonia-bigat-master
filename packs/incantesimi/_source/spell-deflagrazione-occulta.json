@@ -51,5 +51,6 @@
   "note_dm": "Eldritch Blast è IL cantrip del warlock. Con invocazioni diventa attacco base migliore di molte armi. Ogni raggio è attacco separato.",
   "fonte": "D&D 5e PHB p.237",
   "name": "Spell Deflagrazione Occulta",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-deflagrazione-occulta"
 }

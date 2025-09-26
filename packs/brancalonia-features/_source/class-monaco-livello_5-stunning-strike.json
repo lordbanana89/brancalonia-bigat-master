@@ -92,5 +92,6 @@
   "note_dm": "Stunning Strike può dominare combattimenti. Nemici con CON alta o immunità sono necessari per bilanciare.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
   "name": "Stunning Strike",
-  "img": "icons/skills/melee/unarmed-punch-fist.webp"
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "_id": "class-monaco-livello_5-stunning-strike"
 }

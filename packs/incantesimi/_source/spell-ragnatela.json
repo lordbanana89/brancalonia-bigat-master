@@ -63,5 +63,6 @@
   "note_dm": "Web è controllo eccellente. Restrained è condizione potentissima. Richiede ancoraggi lo bilancia. Fire interaction interessante.",
   "fonte": "D&D 5e PHB p.287",
   "name": "Spell Ragnatela",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-ragnatela"
 }

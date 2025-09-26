@@ -20,5 +20,6 @@
   "note_dm": "L'ultimo ASI del mago. La maggior parte ha già tutto ottimizzato e prende talenti flavor o utility.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
   "name": "Aumento Caratteristica 5",
-  "img": "icons/magic/control/buff-flight-wings-blue.webp"
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "_id": "class-mago-livello_19-aumento-caratteristica-5"
 }

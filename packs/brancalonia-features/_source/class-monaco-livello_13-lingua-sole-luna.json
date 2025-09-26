@@ -22,5 +22,6 @@
   "note_dm": "Tongue of Sun and Moon è Tongues permanente e migliore. Rimuove barriere linguistiche completamente.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
   "name": "Lingua Sole Luna",
-  "img": "icons/skills/social/diplomacy-conversation.webp"
+  "img": "icons/skills/social/diplomacy-conversation.webp",
+  "_id": "class-monaco-livello_13-lingua-sole-luna"
 }

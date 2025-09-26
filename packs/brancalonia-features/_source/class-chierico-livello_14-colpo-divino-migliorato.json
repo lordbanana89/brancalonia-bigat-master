@@ -93,5 +93,6 @@
   "note_dm": "Il raddoppio a 2d8 al 14° rende il chierico combattente molto più minaccioso. 9 danni medi gratuiti ogni turno sono significativi nel tier 3.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58",
   "name": "Colpo Divino Migliorato",
-  "img": "icons/magic/lightning/bolt-strike-forked-yellow.webp"
+  "img": "icons/magic/lightning/bolt-strike-forked-yellow.webp",
+  "_id": "class-chierico-livello_14-colpo-divino-migliorato"
 }

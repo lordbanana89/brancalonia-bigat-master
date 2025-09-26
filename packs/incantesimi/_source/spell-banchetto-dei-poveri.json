@@ -69,5 +69,6 @@
   "note_dm": "Banchetto dei Poveri è versione Brancalonia di Heroes' Feast. Più accessibile ma meno potente. Ottimo per recupero e flavor.",
   "fonte": "Brancalonia Macaronicon p.50",
   "name": "Spell Banchetto Dei Poveri",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-banchetto-dei-poveri"
 }

@@ -96,5 +96,6 @@
   "note_dm": "Ricorda al giocatore di questo privilegio quando chiedi TS Destrezza contro effetti visibili. Molti giocatori lo dimenticano.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48",
   "name": "Percezione Del Pericolo",
-  "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp"
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+  "_id": "class-barbaro-livello_2-percezione-del-pericolo"
 }

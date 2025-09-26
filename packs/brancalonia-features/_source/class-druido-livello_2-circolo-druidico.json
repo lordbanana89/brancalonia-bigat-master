@@ -66,5 +66,6 @@
   "note_dm": "Il circolo cambia completamente il druido. Moon per tank/damage, Land per full caster, Stars per versatile.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.68",
   "name": "Circolo Druidico",
-  "img": "icons/magic/nature/symbol-moon-stars-white.webp"
+  "img": "icons/magic/nature/symbol-moon-stars-white.webp",
+  "_id": "class-druido-livello_2-circolo-druidico"
 }

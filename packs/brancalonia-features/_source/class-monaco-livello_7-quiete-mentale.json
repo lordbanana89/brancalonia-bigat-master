@@ -22,5 +22,6 @@
   "note_dm": "Stillness of Mind è get-out-of-jail-free per charm/fear. Costa un'azione ma garantisce libertà.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
   "name": "Quiete Mentale",
-  "img": "icons/magic/control/silhouette-grow-blue.webp"
+  "img": "icons/magic/control/silhouette-grow-blue.webp",
+  "_id": "class-monaco-livello_7-quiete-mentale"
 }

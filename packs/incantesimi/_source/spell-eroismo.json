@@ -69,5 +69,6 @@
   "note_dm": "Heroism è ottimo sustained protection. THP ogni turno accumula molto. Fear immunity situazionale ma potente quando serve.",
   "fonte": "D&D 5e PHB p.250",
   "name": "Spell Eroismo",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-eroismo"
 }

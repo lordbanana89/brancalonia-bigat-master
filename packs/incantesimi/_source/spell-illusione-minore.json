@@ -54,5 +54,6 @@
   "note_dm": "Minor Illusion è limitato ma creativo. No componente verbale lo rende ottimo per stealth. Investigation check permette di scoprirla.",
   "fonte": "D&D 5e PHB p.260",
   "name": "Spell Illusione Minore",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-illusione-minore"
 }

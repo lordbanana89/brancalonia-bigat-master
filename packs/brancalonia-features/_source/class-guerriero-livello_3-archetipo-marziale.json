@@ -140,5 +140,6 @@
   "note_dm": "L'archetipo marziale definisce completamente lo stile di combattimento del guerriero. Battle Master è il più versatile, Champion il più semplice, Eldritch Knight il più complesso.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
   "name": "Archetipo Marziale",
-  "img": "icons/sundries/flags/banner-flag-blue.webp"
+  "img": "icons/sundries/flags/banner-flag-blue.webp",
+  "_id": "class-guerriero-livello_3-archetipo-marziale"
 }

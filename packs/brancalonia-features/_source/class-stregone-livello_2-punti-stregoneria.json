@@ -42,5 +42,6 @@
   },
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.101",
   "name": "Punti Stregoneria",
-  "img": "icons/commodities/currency/coin-inset-snail-silver.webp"
+  "img": "icons/commodities/currency/coin-inset-snail-silver.webp",
+  "_id": "class-stregone-livello_2-punti-stregoneria"
 }

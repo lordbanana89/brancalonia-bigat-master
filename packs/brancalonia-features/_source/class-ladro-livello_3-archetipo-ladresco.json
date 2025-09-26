@@ -166,5 +166,6 @@
   "note_dm": "L'archetipo definisce completamente lo stile del ladro. Considera il tipo di campagna quando consigli archetipi.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
   "name": "Archetipo Ladresco",
-  "img": "icons/sundries/flags/banner-flag-blue.webp"
+  "img": "icons/sundries/flags/banner-flag-blue.webp",
+  "_id": "class-ladro-livello_3-archetipo-ladresco"
 }

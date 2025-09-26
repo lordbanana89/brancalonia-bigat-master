@@ -45,5 +45,6 @@
   "note_dm": "Light è utilità base. Non richiede concentrazione. Può essere lanciato su oggetti nemici per renderli visibili.",
   "fonte": "D&D 5e PHB p.255",
   "name": "Spell Luce",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-luce"
 }

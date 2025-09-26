@@ -104,5 +104,6 @@
   "note_dm": "Channel Divinity offre versatilità unica per situazioni specifiche. Turn Undead può trivializzare incontri con non morti.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
   "name": "Incanalare Divinita",
-  "img": "icons/magic/symbols/cross-circle-blue.webp"
+  "img": "icons/magic/symbols/cross-circle-blue.webp",
+  "_id": "class-chierico-livello_2-incanalare-divinita"
 }

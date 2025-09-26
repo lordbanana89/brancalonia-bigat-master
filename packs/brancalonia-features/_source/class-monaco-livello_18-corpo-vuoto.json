@@ -34,5 +34,6 @@
   "note_dm": "Empty Body è quasi god-mode per 1 minuto. Invisibilità + resistenza a tutto è devastante.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
   "name": "Corpo Vuoto",
-  "img": "icons/magic/life/heart-shadow-purple.webp"
+  "img": "icons/magic/life/heart-shadow-purple.webp",
+  "_id": "class-monaco-livello_18-corpo-vuoto"
 }

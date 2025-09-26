@@ -71,5 +71,6 @@
   "note_dm": "Shatter è versatile damage/utility. Svantaggio per costrutti unico. Distruzione oggetti utile per puzzle. Rumore fattore tattico.",
   "fonte": "D&D 5e PHB p.275",
   "name": "Spell Frantumare",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-frantumare"
 }

@@ -57,5 +57,6 @@
   "note_dm": "Faerie Fire è uno dei migliori debuff. Advantage per tutti è enorme. DEX save unica debolezza. Ottimo vs invisible.",
   "fonte": "D&D 5e PHB p.239",
   "name": "Spell Passo Fatato",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-passo-fatato"
 }

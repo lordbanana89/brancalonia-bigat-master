@@ -19,5 +19,6 @@
   "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Lesser Restoration).",
   "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
   "name": "Spell Base 004 Ristorare Inferiore",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-base-004_ristorare_inferiore"
 }

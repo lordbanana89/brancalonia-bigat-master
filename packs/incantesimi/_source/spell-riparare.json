@@ -48,5 +48,6 @@
   "note_dm": "Mending è utility pura. Tempo lancio 1 minuto lo rende inutile in combat. Ottimo per mantenimento equipment e investigazione.",
   "fonte": "D&D 5e PHB p.259",
   "name": "Spell Riparare",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-riparare"
 }

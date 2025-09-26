@@ -54,5 +54,6 @@
   "note_dm": "Shillelagh trasforma druido in melee viable. Bonus action cast importante per action economy. Ottimo per druidi non-moon.",
   "fonte": "D&D 5e PHB p.275",
   "name": "Spell Randello Incantato",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-randello-incantato"
 }

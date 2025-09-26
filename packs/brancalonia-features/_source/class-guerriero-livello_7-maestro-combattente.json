@@ -95,5 +95,6 @@
   "note_dm": "Know Your Enemy è utile per intelligence gathering. Richiede setup ma fornisce info tattiche preziose. Funziona solo per Battle Master.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.73-74",
   "name": "Maestro Combattente",
-  "img": "icons/equipment/weapons/sword-guard-gold.webp"
+  "img": "icons/equipment/weapons/sword-guard-gold.webp",
+  "_id": "class-guerriero-livello_7-maestro-combattente"
 }

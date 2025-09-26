@@ -21,5 +21,6 @@
   "note_dm": "Oath capstone al 20 sono trasformazioni uniche e potenti. 1 minuto di quasi-divinità.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85-88",
   "name": "Campione Giuramento",
-  "img": "icons/sundries/documents/document-sealed-yellow.webp"
+  "img": "icons/sundries/documents/document-sealed-yellow.webp",
+  "_id": "class-paladino-livello_20-campione-giuramento"
 }

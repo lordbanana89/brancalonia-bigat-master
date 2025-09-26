@@ -54,5 +54,6 @@
   "note_dm": "CR 2 include molti non-morti pericolosi. A livello 17, il chierico diventa una macchina anti-non-morti.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
   "name": "Distruggere Non Morti Supremo",
-  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp"
+  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
+  "_id": "class-chierico-livello_17-distruggere-non-morti-supremo"
 }

@@ -71,5 +71,6 @@
   "note_dm": "Hold Person è save-or-die virtuale. Paralyzed + auto-crit devastante. Solo umanoidi lo bilancia. Save ripetuti danno speranza.",
   "fonte": "D&D 5e PHB p.251",
   "name": "Spell Blocca Persone",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-blocca-persone"
 }

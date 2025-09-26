@@ -51,5 +51,6 @@
   "note_dm": "Ray of Frost è controllo più che danno. -10 speed può essere cruciale tatticamente. Ottimo per wizard che vuole mantenere distanza.",
   "fonte": "D&D 5e PHB p.271",
   "name": "Spell Raggio Di Gelo",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-raggio-di-gelo"
 }

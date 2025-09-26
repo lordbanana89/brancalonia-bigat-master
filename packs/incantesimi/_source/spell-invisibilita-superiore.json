@@ -70,5 +70,6 @@
   "note_dm": "Greater Invisibility è top tier combat buff. Advantage/disadvantage ogni round è enorme. Solo 1 minuto bilancia potenza.",
   "fonte": "D&D 5e PHB p.246",
   "name": "Spell Invisibilita Superiore",
-  "img": "icons/magic/symbols/star-pointed-purple.webp"
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-invisibilita-superiore"
 }

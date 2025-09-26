@@ -19,5 +19,6 @@
   "note_dm": "Cleansing Touch è dispel magic automatico limitato ma garantito. Ottimo vs debuff.",
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
   "name": "Tocco Purificante",
-  "img": "icons/magic/holy/hand-glowing-yellow.webp"
+  "img": "icons/magic/holy/hand-glowing-yellow.webp",
+  "_id": "class-paladino-livello_14-tocco-purificante"
 }
