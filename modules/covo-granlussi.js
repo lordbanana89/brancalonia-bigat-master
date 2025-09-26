@@ -259,6 +259,8 @@ export class CovoGranlussiSystem {
    * Renderizza UI del Covo sulla scheda
    */
   _renderCovoUI(app, html) {
+    // Converti html in jQuery object per Foundry v13
+    const $html = $(html);
     const actor = app.actor;
     const covo = actor.getFlag("brancalonia-bigat", "covo") || {};
 
@@ -276,15 +278,15 @@ export class CovoGranlussiSystem {
     `;
 
     // Inserisci dopo l'inventario
-    const inventoryTab = html.find('.tab.inventory');
+    const inventoryTab = $html.find('.tab.inventory');
     if (inventoryTab.length) {
       inventoryTab.append(covoHtml);
     } else {
-      html.find('.sheet-body').append(covoHtml);
+      $html.find('.sheet-body').append(covoHtml);
     }
 
     // Event listener
-    html.find('.manage-covo').click(() => {
+    $html.find('.manage-covo').click(() => {
       this._openCovoManagementDialog(actor);
     });
   }

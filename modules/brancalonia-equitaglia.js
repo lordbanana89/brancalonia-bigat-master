@@ -491,6 +491,9 @@ Hooks.once("init", () => {
     if (app.actor.type !== "character") return;
     if (!game.brancalonia?.equitaglia) return; // Aspetta che il sistema sia pronto
 
+    // Converti html in jQuery object per Foundry v13
+    const $html = $(html);
+
     const taglia = app.actor.getFlag("brancalonia-bigat", "taglia") || 0;
     const malefatte = app.actor.getFlag("brancalonia-bigat", "malefatte") || [];
 
@@ -521,13 +524,13 @@ Hooks.once("init", () => {
       </div>
     `;
 
-    html.find(".tab.biography").append(equitagliaSection);
+    $html.find(".tab.biography").append(equitagliaSection);
 
     // Event handlers
-    html.find(".aggiungi-malefatta").click(() => {
+    $html.find(".aggiungi-malefatta").click(() => {
       game.brancalonia.equitaglia.mostraDialogoMalefatta(app.actor);
     });
-    html.find(".cattura-malfattore").click(() => {
+    $html.find(".cattura-malfattore").click(() => {
       game.brancalonia.equitaglia.mostraDialogoCattura(app.actor);
     });
   });

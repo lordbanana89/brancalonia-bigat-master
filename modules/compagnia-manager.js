@@ -362,6 +362,9 @@ export class CompagniaManager {
    * Aggiunge tab Compagnia alla scheda del personaggio
    */
   _addCompagniaTab(app, html) {
+    // Converti html in jQuery object per Foundry v13
+    const $html = $(html);
+
     const compagniaId = app.actor.flags.brancalonia?.compagniaId;
     if (!compagniaId) return;
 
@@ -369,7 +372,7 @@ export class CompagniaManager {
     if (!compagnia) return;
 
     // Aggiungi tab
-    const tabs = html.find('.tabs[data-group="primary"]');
+    const tabs = $html.find('.tabs[data-group="primary"]');
     tabs.append('<a class="item" data-tab="compagnia">Compagnia</a>');
 
     // Crea contenuto tab
@@ -430,13 +433,13 @@ export class CompagniaManager {
       </div>
     `;
 
-    const sheetBody = html.find('.sheet-body');
+    const sheetBody = $html.find('.sheet-body');
     sheetBody.append(tabContent);
 
     // Event handlers
-    html.find('.compagnia-treasury').click(() => this._showTreasuryDialog(compagnia));
-    html.find('.compagnia-jobs').click(() => this._showJobsDialog(compagnia));
-    html.find('.compagnia-charter').click(() => this._showCharterDialog(compagnia));
+    $html.find('.compagnia-treasury').click(() => this._showTreasuryDialog(compagnia));
+    $html.find('.compagnia-jobs').click(() => this._showJobsDialog(compagnia));
+    $html.find('.compagnia-charter').click(() => this._showCharterDialog(compagnia));
 
     // CSS per il tab
     if (!$('#brancalonia-compagnia-styles').length) {

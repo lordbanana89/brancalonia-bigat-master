@@ -301,8 +301,11 @@ export class BagordiSystem {
 Hooks.on("renderActorSheetV2", (app, html, data) => {
   if (app.actor.type !== "character") return;
 
+  // Converti html in jQuery object per Foundry v13
+  const $html = $(html);
+
   const bagordiBtn = $(`<a class="bagordi-btn" title="Darsi ai Bagordi"><i class="fas fa-wine-bottle"></i> Bagordi</a>`);
-  html.find(".window-header .window-title").after(bagordiBtn);
+  $html.find(".window-header .window-title").after(bagordiBtn);
 
   bagordiBtn.click(async (ev) => {
     ev.preventDefault();
