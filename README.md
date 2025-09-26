@@ -4,10 +4,15 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## 🎉 MEGA UPDATE v3.14.5 - Background Completi
+## 🎉 MEGA UPDATE v3.20.1 - Background Completi con RollTable
 
-### 🔧 HOTFIX v3.14.5 - Background con Dati Completi
-**FIX**: I background ora includono tutti i dati corretti: skill proficiencies, starting equipment, tratti personalità e ideali. Creato converter dedicato per mappare correttamente tutte le meccaniche dei background.
+### 🔧 HOTFIX v3.20.1 - Background D&D 5e Standard Compliant
+**FIX COMPLETO**:
+- Background completamente ristrutturati secondo standard D&D 5e
+- Aggiunte 50 RollTable per caratterizzazioni (tratti, ideali, legami, difetti)
+- Advancement configurati (skill, tools, languages, features)
+- Corretti errori di validazione (`startingEquipment` rimosso, `wealth` in formato dice)
+- Fix percorsi icone per compatibilità con sistema D&D 5e
 
 ### 🔧 HOTFIX v3.14.4 - Risolto Problema Compendi Vuoti
 **CRITICO**: Risolto il problema dei compendi che apparivano vuoti in Foundry v13. Il CLI di Foundry v3.0.0 rimuove silenziosamente il campo `_key` necessario per il caricamento. Ora tutti i 640 documenti sono compilati correttamente con script custom.
@@ -87,6 +92,8 @@ Modulo completo per giocare a **Brancalonia** su Foundry VTT v13 con il sistema 
 1. **Campo _key obbligatorio**: Ogni documento richiede `_key: "!collection!id"`
 2. **Campo _id obbligatorio**: Ogni documento DEVE avere un campo `_id` valido
 3. **Bug del CLI**: Il comando `fvtt package pack` rimuove silenziosamente `_key`
+4. **Background validation D&D 5e**: `startingEquipment` non supportato, `wealth` richiede formato dice (es: "10gp" non "10 ma")
+5. **Icon paths**: Usare sempre percorsi del sistema D&D 5e (es: `systems/dnd5e/icons/items/armor/plate.webp`)
 
 **Soluzione Implementata:**
 - Script custom `compile-with-keys.cjs` che preserva il campo _key
