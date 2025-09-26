@@ -1,0 +1,30 @@
+{
+  "_id": "innamorato",
+  "_key": "!items!innamorato",
+  "name": "Innamorato",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cortigiano raffinato dell'Amor Cortese, addestrato a poesia, diplomazia e seduzione</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.38-39",
+    "identifier": "innamorato",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.38-39",
+      "tipo": "background",
+      "database_source": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "prelato",
+  "_key": "!items!prelato",
+  "name": "Prelato",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Alto membro del Credo o di un culto, rispettato ma disposto a sporcarsi le mani come canaglia</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.42-43",
+    "identifier": "prelato",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.42-43",
+      "tipo": "background",
+      "database_source": true
+    }
+  }
+}

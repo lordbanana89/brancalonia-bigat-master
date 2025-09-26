@@ -1,0 +1,30 @@
+{
+  "_id": "staffetta",
+  "_key": "!items!staffetta",
+  "name": "Staffetta",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Corriere militare temprato da guerre interminabili, capace di consegnare dispacci in ogni condizione</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.44-45",
+    "identifier": "staffetta",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.44-45",
+      "tipo": "background",
+      "database_source": true
+    }
+  }
+}

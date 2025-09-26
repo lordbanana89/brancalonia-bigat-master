@@ -1,0 +1,30 @@
+{
+  "_id": "passatore",
+  "_key": "!items!passatore",
+  "name": "Passatore",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Contrabbandiere di sentieri nascosti che guida persone e merci oltre confini e paludi</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.41-42",
+    "identifier": "passatore",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.41-42",
+      "tipo": "background",
+      "database_source": true
+    }
+  }
+}

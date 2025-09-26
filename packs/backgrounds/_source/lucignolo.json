@@ -1,0 +1,30 @@
+{
+  "_id": "lucignolo",
+  "_key": "!items!lucignolo",
+  "name": "Lucignolo",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Ambasciatore tra Fandonia e Regno, abituato a trattare con fate, buffardelli e umani</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.40-41",
+    "identifier": "lucignolo",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.40-41",
+      "tipo": "background",
+      "database_source": true
+    }
+  }
+}

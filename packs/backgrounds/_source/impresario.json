@@ -1,0 +1,30 @@
+{
+  "_id": "impresario",
+  "_key": "!items!impresario",
+  "name": "Impresario",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Faccendiere dello spettacolo che organizza compagnie, intrattenimenti e truffe sceniche in tutto il Regno</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.37-38",
+    "identifier": "impresario",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.37-38",
+      "tipo": "background",
+      "database_source": true
+    }
+  }
+}

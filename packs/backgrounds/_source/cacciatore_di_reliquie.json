@@ -1,0 +1,30 @@
+{
+  "_id": "cacciatore-di-reliquie",
+  "_key": "!items!cacciatore-di-reliquie",
+  "name": "Cacciatore di reliquie",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Esploratore di cripte incaricato di recuperare reliquie sacre o preziose, tra licenze del Credo e tombaroli spregiudicati</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.36-37",
+    "identifier": "cacciatore-di-reliquie",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.36-37",
+      "tipo": "background",
+      "database_source": true
+    }
+  }
+}
