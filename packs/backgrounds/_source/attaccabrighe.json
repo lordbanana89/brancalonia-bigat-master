@@ -14,7 +14,7 @@
     "identifier": "attaccabrighe",
     "advancement": [
       {
-        "_id": "wverxdtgmd8",
+        "_id": "Hr2Umbhk0fIsQDog",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -32,7 +32,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "8026ahvf3we",
+        "_id": "Xfch0hCW7WYbJCZj",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -49,7 +49,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "kpahv5n0yc",
+        "_id": "Tk2vVLdR1Bpt691J",
         "type": "ItemGrant",
         "configuration": {
           "items": [],
