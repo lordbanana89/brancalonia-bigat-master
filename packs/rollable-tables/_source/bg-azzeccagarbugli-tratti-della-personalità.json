@@ -1,0 +1,118 @@
+{
+  "_id": "LXdcSl5hOvoAHJem",
+  "_key": "!tables!LXdcSl5hOvoAHJem",
+  "name": "Azzeccagarbugli - Tratti della Personalità",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d8",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "L2C5KMPiP54GPkb8",
+      "type": 0,
+      "text": "È maestro nelle supercazzole e rifila cavilli al primo che incontra.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "GJf47IWx6KdZaYUL",
+      "type": 0,
+      "text": "Accetta favori e pagamenti di ogni tipo pur di chiudere un affare.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "ExOKpdaGwBn6bQ0p",
+      "type": 0,
+      "text": "Colleziona leggi e testi scritti che studia in ogni momento libero.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "DYbS8wavbiZbzDLQ",
+      "type": 0,
+      "text": "Ama infiorettare i discorsi con frasi e motti in Maccheronico.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "xEL8CTaPcbkINxNW",
+      "type": 0,
+      "text": "Adora confrontarsi con notabili e riesce a zittire anche nobili e ordinali.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "X03TlxwQcgIrHt79",
+      "type": 0,
+      "text": "Si incaponisce nel risolvere i problemi più intricati e difficili.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "O7VhglepcN1ZZOk4",
+      "type": 0,
+      "text": "Ha una parlantina inarrestabile ed è capace di vendere ghiaccio ai varaghi.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "6fZT3R0TLdbkNJg6",
+      "type": 0,
+      "text": "Sfoggia un nome d’arte pomposo, eredità della sua professione.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "azzeccagarbugli",
+      "tipo": "tratti della personalità"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

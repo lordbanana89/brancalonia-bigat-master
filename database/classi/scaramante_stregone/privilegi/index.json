@@ -4,19 +4,19 @@
     {
       "id": "scaramante_stregone-livello_1-magia_protezione",
       "livello": 1,
-      "nome": "magia_protezione",
+      "nome": "Magia di Protezione",
       "file": "scaramante_stregone-livello_1-magia_protezione.json"
     },
     {
       "id": "scaramante_stregone-livello_1-protetto_dal_fato",
       "livello": 1,
-      "nome": "protetto_dal_fato",
+      "nome": "Protetto dal Fato",
       "file": "scaramante_stregone-livello_1-protetto_dal_fato.json"
     },
     {
       "id": "scaramante_stregone-livello_6-rituale_scaramantico",
       "livello": 6,
-      "nome": "rituale_scaramantico",
+      "nome": "Rituale Scaramantico",
       "file": "scaramante_stregone-livello_6-rituale_scaramantico.json"
     }
   ]

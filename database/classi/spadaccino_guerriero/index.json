@@ -1,15 +1,21 @@
 {
   "nome": "Spadaccino",
   "classe_base": "Guerriero",
-  "fonte": "Manuale Base p.22",
-  "descrizione": "Maestri d'arme e duellanti delle scuole di scherma del Regno",
+  "fonte": "Manuale Base p.22-23",
+  "descrizione": "Duellanti delle scuole di scherma del Regno, più avvezzi ai palchi e alle corti che alle mischie fangose.",
   "tipo": "sottoclasse",
-  "sottoclasse": "Archetipo Marziale",
+  "sottoclasse": "Archetipo dello Spadaccino",
+  "testo": {
+    "introduzione": [
+      "La guerra perenne ha reso celebri i maestri di scherma: ogni città vanta le proprie scuole e stili.",
+      "Gli spadaccini vendono la propria lama a nobili, mercanti o compagnie mercenarie, preferendo duelli eleganti a scontri campali.",
+      "Si allenano a studiare l'avversario, alternare colpi rapidi e difese serrate, trasformando ogni duello in una coreografia." 
+    ]
+  },
   "validazione": {
     "implementato": true,
     "file_id": "spadaccino_scuola",
-    "compendio": "brancalonia-features",
-    "note": "Richiede condizioni per applicare bonus situazionali"
+    "compendio": "brancalonia-features"
   },
   "privilegi": {
     "totale": 1,
@@ -21,8 +27,9 @@
       "privilegi": [
         {
           "id": "spadaccino_guerriero-livello_3-scuola_scherma",
-          "nome": "scuola_scherma",
-          "file": "privilegi/spadaccino_guerriero-livello_3-scuola_scherma.json"
+          "nome": "Scuola di Scherma",
+          "file": "privilegi/spadaccino_guerriero-livello_3-scuola_scherma.json",
+          "fonte": "Manuale Base p.23"
         }
       ]
     }

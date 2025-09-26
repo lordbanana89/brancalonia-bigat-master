@@ -4,13 +4,13 @@
     {
       "id": "frate_monaco-livello_3-porgi_altra_guancia",
       "livello": 3,
-      "nome": "porgi_altra_guancia",
+      "nome": "Porgi l'Altra Guancia",
       "file": "frate_monaco-livello_3-porgi_altra_guancia.json"
     },
     {
       "id": "frate_monaco-livello_6-tecnica_mano_ferro_piuma",
       "livello": 6,
-      "nome": "tecnica_mano_ferro_piuma",
+      "nome": "Tecnica della Mano di Ferro e di Piuma",
       "file": "frate_monaco-livello_6-tecnica_mano_ferro_piuma.json"
     }
   ]

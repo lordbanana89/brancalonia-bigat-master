@@ -1,10 +1,18 @@
 {
   "id": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi",
   "livello": 3,
-  "nome": "proteggere_bisognosi",
+  "nome": "Incanalare Divinità: Proteggere i Bisognosi",
   "tipo": "attivo",
-  "descrizione": "Incanalare Divinità (azione bonus): per 1 min attacchi contro creatura protetta hanno svantaggio (entro 1.5m)",
-  "implementazione": "flags.brancalonia-bigat.proteggereBisognosi = true",
-  "mode": 5,
-  "nota": "Richiede aura condizionale"
+  "fonte": "Manuale Base p.27",
+  "descrizione": "Ti voti alla difesa di chi non può proteggersi. Con un giuramento pronunciato sottovoce ti interponi fra il nemico e il compagno indifeso.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione_bonus",
+      "durata": "1 minuto",
+      "risorsa": "Incanalare Divinità"
+    },
+    "bersaglio": "Una creatura che puoi vedere entro 1,5 metri",
+    "effetto": "Gli attacchi contro la creatura difesa hanno svantaggio finché resta entro 1,5 metri da te"
+  },
+  "note": "Se la creatura si allontana oltre 1,5 metri l'effetto termina immediatamente."
 }

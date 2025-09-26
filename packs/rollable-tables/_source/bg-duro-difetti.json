@@ -1,0 +1,94 @@
+{
+  "_id": "lPlRuiRkpbpPvxPB",
+  "_key": "!tables!lPlRuiRkpbpPvxPB",
+  "name": "Duro - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "6NvMJa1fgGzrom94",
+      "type": 0,
+      "text": "Disprezzo chi non si dimostra un bravo combattente.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "VGcluE9KBJVt0Alh",
+      "type": 0,
+      "text": "Le cicatrici dell’anima non guariranno mai.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "ymxMGQgCCormYF3R",
+      "type": 0,
+      "text": "Non mi fido di nessuno e dormo con un occhio aperto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "Y2hKng7NnTv9Ox3s",
+      "type": 0,
+      "text": "Se serve a salvarmi, tradirò anche i compagni.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "e5C6Mpi590TdFHyX",
+      "type": 0,
+      "text": "Non sono più capace di amare niente e nessuno.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "O8a8ijhIR9f5L0pU",
+      "type": 0,
+      "text": "Sono sanguinario e violento fino all’efferatezza.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "duro",
+      "tipo": "difetti"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

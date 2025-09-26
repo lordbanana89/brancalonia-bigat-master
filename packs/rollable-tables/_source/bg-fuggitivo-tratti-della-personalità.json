@@ -1,0 +1,118 @@
+{
+  "_id": "aq80wkHHJ0h6wfxf",
+  "_key": "!tables!aq80wkHHJ0h6wfxf",
+  "name": "Fuggitivo - Tratti della Personalità",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d8",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "TMl7kwE8QnmaG4s3",
+      "type": 0,
+      "text": "Tiene profilo basso e si guarda le spalle",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "G0FvM4z6SrPGLqLu",
+      "type": 0,
+      "text": "Evita birri e notabili",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "OPmLvdEuh2uLora2",
+      "type": 0,
+      "text": "Non si fida di nessuno",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "it3NU8skQ2JWXLOf",
+      "type": 0,
+      "text": "Odia autorità e giustizia",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "dGs2jpxz7SblnZts",
+      "type": 0,
+      "text": "Controlla sempre vie di fuga",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "fmowUAlg3leZFOXG",
+      "type": 0,
+      "text": "Solidale con i perseguitati",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "BW7Swo4LvciXC2sY",
+      "type": 0,
+      "text": "Nervoso se sta troppo ferimo",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "guVZMY18rEWmHJwv",
+      "type": 0,
+      "text": "Ha un piano per lasciare la regione",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "fuggitivo",
+      "tipo": "tratti della personalità"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

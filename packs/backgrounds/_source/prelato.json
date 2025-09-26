@@ -63,7 +63,40 @@
         "classRestriction": "",
         "appliedEffects": []
       }
-    ]
+    ],
+    "startingEquipment": [
+      {
+        "type": "default",
+        "item": "Simbolo sacro d'oro"
+      },
+      {
+        "type": "default",
+        "item": "Libro di preghiere"
+      },
+      {
+        "type": "default",
+        "item": "Vesti da sacerdote"
+      },
+      {
+        "type": "default",
+        "item": "Borsa con 25 ma"
+      }
+    ],
+    "traits": {
+      "personalityTraits": {
+        "table": "rXDsVCInTuPkK1Bz"
+      },
+      "ideals": {
+        "table": "USxxzTyEbr3pHVXq"
+      },
+      "bonds": {
+        "table": "H0VAsJ5fouWHChyX"
+      },
+      "flaws": {
+        "table": "aTnOFtBBIPEAI8Z3"
+      }
+    },
+    "wealth": "5 ma"
   },
   "effects": [],
   "folder": null,

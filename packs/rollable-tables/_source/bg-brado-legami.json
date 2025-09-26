@@ -1,0 +1,94 @@
+{
+  "_id": "39dqqetVmHXWVOjm",
+  "_key": "!tables!39dqqetVmHXWVOjm",
+  "name": "Brado - Legami",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "0mzkcYnSbgFKtOp0",
+      "type": 0,
+      "text": "I membri della mia tribù o famiglia lasciati chissà dove.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "uwBJyfGqkD4DMPLV",
+      "type": 0,
+      "text": "Il villaggio vicino alla nostra selva, gli unici civili che mi abbiano mostrato amicizia.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "vRCmEQ9D30fwkswB",
+      "type": 0,
+      "text": "La cacciatrice errante che mi ha preso con sé e mi ha insegnato la vita della selva.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "iwg6OJGzUa83NMBu",
+      "type": 0,
+      "text": "Un animale che mi segue da anni mantenendo le distanze.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "YKjbkxTcCPCqFdpI",
+      "type": 0,
+      "text": "Un fratello o una sorella di sangue con cui condivido un legame profondo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "t58xFcqVgFV1xGjy",
+      "type": 0,
+      "text": "Il capo della mia gente che mi ha salvato la vita e a cui devo tutto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "brado",
+      "tipo": "legami"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

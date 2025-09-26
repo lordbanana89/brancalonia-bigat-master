@@ -1,13 +1,12 @@
 {
   "id": "frate_monaco-livello_3-porgi_altra_guancia",
   "livello": 3,
-  "nome": "porgi_altra_guancia",
-  "tipo": "attivo",
-  "descrizione": "Usa FOR invece di DES per Difesa Senza Armatura e Deviare Proiettili, reazione: spende 1 ki per colpo senz'armi quando colpito",
-  "implementazione": {
-    "forza_per_ca": "flags.brancalonia-bigat.strForUnarmoredDef = true",
-    "contrattacco": "flags.brancalonia-bigat.porgiAltraGuancia = true"
-  },
-  "mode": 5,
-  "nota": "Richiede calcolo CA personalizzato e macro reazione"
+  "nome": "Porgi l'Altra Guancia",
+  "tipo": "reazione",
+  "fonte": "Manuale Base p.25",
+  "descrizione": "Le massime degli Ordini Maneschi ti permettono di rispondere ai colpi con la stessa prontezza con cui predichi la pazienza. La tua forza interiore sostituisce l'agilità istintiva e ti concede di controbattere all'istante.",
+  "effetti": [
+    "Puoi utilizzare il punteggio di Forza al posto di Destrezza per Difesa Senza Armatura e Deviare Proiettili",
+    "Quando una creatura ti colpisce con un attacco in mischia puoi spendere 1 punto ki per effettuare un colpo senz'armi immediato come reazione"
+  ]
 }

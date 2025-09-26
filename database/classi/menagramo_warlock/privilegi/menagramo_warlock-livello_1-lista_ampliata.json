@@ -1,22 +1,31 @@
 {
   "id": "menagramo_warlock-livello_1-lista_ampliata",
   "livello": 1,
-  "nome": "lista_ampliata",
-  "tipo": "advancement",
-  "descrizione": "Lista incantesimi ampliata della Malasorte",
-  "implementazione": "Gestito da Advancement API - Expanded Spell List",
-  "lista_incantesimi": {
-    "1": [
-      "anatema",
-      "sonno"
-    ],
-    "2": [
-      "accecare/assordare",
-      "crescita di spine"
-    ],
-    "3": [
-      "animare i morti",
-      "scagliare maledizione"
-    ]
-  }
+  "nome": "Lista Ampliata degli Incantesimi",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.29",
+  "descrizione": "Madama Sventura ti concede nuovi strumenti per seminare malaugurio. Quando apprendi un incantesimo da warlock, puoi scegliere anche fra quelli seguenti.",
+  "incantesimi": [
+    {
+      "livello": 1,
+      "lista": [
+        "Anatema",
+        "Sonno"
+      ]
+    },
+    {
+      "livello": 2,
+      "lista": [
+        "Accecare/Assordare",
+        "Crescita di Spine"
+      ]
+    },
+    {
+      "livello": 3,
+      "lista": [
+        "Animare i Morti",
+        "Scagliare Maledizione"
+      ]
+    }
+  ]
 }

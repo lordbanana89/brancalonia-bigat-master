@@ -1,11 +1,17 @@
 {
   "id": "menagramo_warlock-livello_1-iattura",
   "livello": 1,
-  "nome": "iattura",
+  "nome": "Iattura",
   "tipo": "attivo",
-  "descrizione": "Creatura entro 40m che può sentire: svantaggio al prossimo TS contro magia del warlock. 1/riposo breve o lungo",
-  "implementazione": "flags.brancalonia-bigat.iattura = true",
-  "mode": 5,
-  "portata": "40 metri",
-  "usi": "1/riposo breve o lungo"
+  "fonte": "Manuale Base p.29",
+  "descrizione": "Con un sussurro velenoso instilli dubbio e malasorte nella vittima. Il semplice pensiero di ciò che potrebbe andare storto basta a rovinarle l'incantesimo successivo.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione",
+      "raggio": "40 metri",
+      "requisito": "Il bersaglio deve poterti sentire",
+      "ricarica": "Riposo breve o lungo"
+    },
+    "effetto": "Il bersaglio subisce svantaggio al prossimo tiro salvezza contro una magia lanciata da te"
+  }
 }

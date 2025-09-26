@@ -1,0 +1,94 @@
+{
+  "_id": "guZkWls5xXTw5pOs",
+  "_key": "!tables!guZkWls5xXTw5pOs",
+  "name": "Azzeccagarbugli - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "fSwct3LQnCp5UEJZ",
+      "type": 0,
+      "text": "È avido e valuta ogni azione solo in base al guadagno.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "ZsFe2L9tBTLt0AAD",
+      "type": 0,
+      "text": "È borioso e presuntuoso: pensa di sapere tutto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "FN5EaIDXwKwuSUBZ",
+      "type": 0,
+      "text": "Ambisce a comandare la banda e farà di tutto per riuscirci.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "EchaXKQFjXFIwBQo",
+      "type": 0,
+      "text": "Vuole sempre avere l’ultima parola su ogni questione.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "V5IkADMwVS1sVtDW",
+      "type": 0,
+      "text": "Pensa soltanto a se stesso ed è pronto a tradire chiunque.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "hzhs2jx4Tbeotdf6",
+      "type": 0,
+      "text": "Considera i compagni della Cricca come propri tirapiedi personali.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "azzeccagarbugli",
+      "tipo": "difetti"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

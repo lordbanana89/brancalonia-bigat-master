@@ -2,9 +2,16 @@
   "nome": "Menagramo",
   "classe_base": "Warlock",
   "fonte": "Manuale Base p.29",
-  "descrizione": "Iettatori che traggono potere da Madama Sventura, portano maledizioni e sfortuna",
+  "descrizione": "Iettatori al servizio di Madama Sventura, capaci di deviare il destino con uno sguardo di traverso.",
   "tipo": "sottoclasse",
-  "sottoclasse": "Patrono Ultraterreno - Malasorte",
+  "sottoclasse": "Patrono Ultraterreno: Malasorte",
+  "testo": {
+    "introduzione": [
+      "Dal settentrione giungono come guerlocchi, ma a sud li chiamano menagrami, vindici e iettatori. Un semplice sguardo basta a rovinare la giornata a chiunque.",
+      "Madama Sventura osserva il mondo e offre il suo potere a chi accetta di spargere un po' di malasorte in cambio.",
+      "In Volturnia e Tarantasia i menagrami sono temuti e ricercati: con una parola possono piegare il fato di battaglie e carovane." 
+    ]
+  },
   "validazione": {
     "implementato": true,
     "file_id": "menagramo_tocco",
@@ -20,13 +27,15 @@
       "privilegi": [
         {
           "id": "menagramo_warlock-livello_1-iattura",
-          "nome": "iattura",
-          "file": "privilegi/menagramo_warlock-livello_1-iattura.json"
+          "nome": "Iattura",
+          "file": "privilegi/menagramo_warlock-livello_1-iattura.json",
+          "fonte": "Manuale Base p.29"
         },
         {
           "id": "menagramo_warlock-livello_1-lista_ampliata",
-          "nome": "lista_ampliata",
-          "file": "privilegi/menagramo_warlock-livello_1-lista_ampliata.json"
+          "nome": "Lista Ampliata degli Incantesimi",
+          "file": "privilegi/menagramo_warlock-livello_1-lista_ampliata.json",
+          "fonte": "Manuale Base p.29"
         }
       ]
     },
@@ -35,8 +44,9 @@
       "privilegi": [
         {
           "id": "menagramo_warlock-livello_6-tocco_malasorte",
-          "nome": "tocco_malasorte",
-          "file": "privilegi/menagramo_warlock-livello_6-tocco_malasorte.json"
+          "nome": "Il Tocco della Malasorte",
+          "file": "privilegi/menagramo_warlock-livello_6-tocco_malasorte.json",
+          "fonte": "Manuale Base p.29"
         }
       ]
     }

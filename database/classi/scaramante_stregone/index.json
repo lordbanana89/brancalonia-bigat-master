@@ -1,10 +1,17 @@
 {
   "nome": "Scaramante",
   "classe_base": "Stregone",
-  "fonte": "Manuale Base p.28",
-  "descrizione": "Manipolatori della Fandonia fatata, esperti di superstizioni e protezioni",
+  "fonte": "Manuale Base p.28-29",
+  "descrizione": "Taumaturgo della Fandonia che combina superstizioni, invocazioni fatate e malocchi.",
   "tipo": "sottoclasse",
-  "sottoclasse": "Origine Stregonesca - Fandonia",
+  "sottoclasse": "Origine Stregonesca della Fandonia",
+  "testo": {
+    "introduzione": [
+      "Gli scaramanti manipolano il potere delle fate, delle T re Madri e della superstizione popolare.",
+      "Possono recidere malocchi, incidere glifi sui granai o vendere protezioni contro menagrami e fantasime.",
+      "Alcuni servono congreghe, altri agiscono da soli: in ogni caso il loro sangue scintilla di Fandonia." 
+    ]
+  },
   "validazione": {
     "implementato": true,
     "file_id": "scaramante_protetto_fato",
@@ -20,13 +27,15 @@
       "privilegi": [
         {
           "id": "scaramante_stregone-livello_1-magia_protezione",
-          "nome": "magia_protezione",
-          "file": "privilegi/scaramante_stregone-livello_1-magia_protezione.json"
+          "nome": "Magia di Protezione",
+          "file": "privilegi/scaramante_stregone-livello_1-magia_protezione.json",
+          "fonte": "Manuale Base p.28"
         },
         {
           "id": "scaramante_stregone-livello_1-protetto_dal_fato",
-          "nome": "protetto_dal_fato",
-          "file": "privilegi/scaramante_stregone-livello_1-protetto_dal_fato.json"
+          "nome": "Protetto dal Fato",
+          "file": "privilegi/scaramante_stregone-livello_1-protetto_dal_fato.json",
+          "fonte": "Manuale Base p.28"
         }
       ]
     },
@@ -35,8 +44,9 @@
       "privilegi": [
         {
           "id": "scaramante_stregone-livello_6-rituale_scaramantico",
-          "nome": "rituale_scaramantico",
-          "file": "privilegi/scaramante_stregone-livello_6-rituale_scaramantico.json"
+          "nome": "Rituale Scaramantico",
+          "file": "privilegi/scaramante_stregone-livello_6-rituale_scaramantico.json",
+          "fonte": "Manuale Base p.28"
         }
       ]
     }

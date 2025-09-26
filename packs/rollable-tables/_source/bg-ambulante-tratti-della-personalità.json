@@ -1,0 +1,118 @@
+{
+  "_id": "sypi3Ek9Fmg6ZU2E",
+  "_key": "!tables!sypi3Ek9Fmg6ZU2E",
+  "name": "Ambulante - Tratti della Personalità",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d8",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "bPycP4vdSdxES2Zp",
+      "type": 0,
+      "text": "Parla spesso in Baccaglio e deride gli stanziali",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "YOBvvhP3L8W9FFFR",
+      "type": 0,
+      "text": "Persona solida con soluzioni pratiche",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "NFM3ooBqNeRnY74Z",
+      "type": 0,
+      "text": "Sognatore irrequieto",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "M7dde63yMbpbeLKo",
+      "type": 0,
+      "text": "Curioso di ogni dettaglio locale",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "z7eRaAJz5mtQk1Cv",
+      "type": 0,
+      "text": "Ama i piaceri della vita",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "DEHd4V5N6mU9K8ew",
+      "type": 0,
+      "text": "Appassionato di arte e spettacolo",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "QdBT8KPllJ5ocdck",
+      "type": 0,
+      "text": "Usa toni fascinosi e nomi d'arte",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "sMnAKzvr2vxFGIMa",
+      "type": 0,
+      "text": "Segue moda e stile della comunità",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "ambulante",
+      "tipo": "tratti della personalità"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,11 +1,16 @@
 {
   "id": "scaramante_stregone-livello_1-protetto_dal_fato",
   "livello": 1,
-  "nome": "protetto_dal_fato",
-  "tipo": "attivo",
-  "descrizione": "Tira 1d20 extra per attacchi/prove/TS (o contro attacchi subiti), sceglie quale usare. 1/riposo lungo",
-  "implementazione": "flags.brancalonia-bigat.protettoFato = true",
-  "mode": 5,
-  "usi": "1/riposo lungo",
-  "nota": "Simile a Lucky feat ma più potente"
+  "nome": "Protetto dal Fato",
+  "tipo": "reazione",
+  "fonte": "Manuale Base p.28",
+  "descrizione": "La Fandonia ti avvolge come un mantello. Puoi manipolare il risultato di un tiro – tuo o altrui – tirando un secondo d20 e scegliendo quale destino seguire.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "reazione",
+      "momento": "Quando effettui un tiro per colpire, una prova, un tiro salvezza o quando una creatura effettua un tiro per colpire contro di te",
+      "ricarica": "Riposo lungo"
+    },
+    "effetto": "Tira 1d20 aggiuntivo e scegli quale risultato utilizzare"
+  }
 }

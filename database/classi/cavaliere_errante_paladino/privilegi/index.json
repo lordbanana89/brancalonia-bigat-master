@@ -4,20 +4,20 @@
     {
       "id": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento",
       "livello": 3,
-      "nome": "incantesimi_giuramento",
+      "nome": "Incantesimi del Giuramento",
       "file": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento.json"
-    },
-    {
-      "id": "cavaliere_errante_paladino-livello_3-ispirare_compagni",
-      "livello": 3,
-      "nome": "ispirare_compagni",
-      "file": "cavaliere_errante_paladino-livello_3-ispirare_compagni.json"
     },
     {
       "id": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi",
       "livello": 3,
-      "nome": "proteggere_bisognosi",
+      "nome": "Incanalare Divinità: Proteggere i Bisognosi",
       "file": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi.json"
+    },
+    {
+      "id": "cavaliere_errante_paladino-livello_3-ispirare_compagni",
+      "livello": 3,
+      "nome": "Incanalare Divinità: Ispirare i Compagni",
+      "file": "cavaliere_errante_paladino-livello_3-ispirare_compagni.json"
     }
   ]
 }

@@ -2,9 +2,21 @@
   "nome": "Guiscardo",
   "classe_base": "Mago",
   "fonte": "Manuale Base p.24",
-  "descrizione": "Maghi cercatori di tesori arcani, bari e ciarlatani di strada",
+  "descrizione": "Appartenente alla Gilda dei Guiscardi, miscela di truffatori, prestigiatori e studiosi di reliquie arcane.",
   "tipo": "sottoclasse",
-  "sottoclasse": "Tradizione Arcana - Gilda dei Guiscardi",
+  "sottoclasse": "Tradizione Arcana della Gilda dei Guiscardi",
+  "testo": {
+    "introduzione": [
+      "I guiscardi sono un collegio esclusivo di maghi dediti a recuperare artefatti e sapienze perdute dell'era draconiana.",
+      "Terminato l'apprendistato, viaggiano in solitaria o con le Cricche, seguendo mappe, enigmi e rovine alla ricerca di potere e ricchezza.",
+      "Nel Regno sono famosi per l'abilità con gli oggetti magici, gli espedienti da imbroglioni e la lingua sciolta: li cercano bande e birri in egual misura." 
+    ],
+    "tratti": [
+      "Cercatori di tesori arcani",
+      "Prestigiatori e ciarlatani",
+      "Abili sintonizzatori di oggetti magici"
+    ]
+  },
   "validazione": {
     "implementato": true,
     "file_id": "guiscardo_cercatore",
@@ -20,18 +32,21 @@
       "privilegi": [
         {
           "id": "guiscardo_mago-livello_2-cercatore_tesori",
-          "nome": "cercatore_tesori",
-          "file": "privilegi/guiscardo_mago-livello_2-cercatore_tesori.json"
-        },
-        {
-          "id": "guiscardo_mago-livello_2-chincaglieria_magica",
-          "nome": "chincaglieria_magica",
-          "file": "privilegi/guiscardo_mago-livello_2-chincaglieria_magica.json"
+          "nome": "Cercatore di Tesori",
+          "file": "privilegi/guiscardo_mago-livello_2-cercatore_tesori.json",
+          "fonte": "Manuale Base p.24"
         },
         {
           "id": "guiscardo_mago-livello_2-esperto_oggetti_magici",
-          "nome": "esperto_oggetti_magici",
-          "file": "privilegi/guiscardo_mago-livello_2-esperto_oggetti_magici.json"
+          "nome": "Esperto di Oggetti Magici",
+          "file": "privilegi/guiscardo_mago-livello_2-esperto_oggetti_magici.json",
+          "fonte": "Manuale Base p.24"
+        },
+        {
+          "id": "guiscardo_mago-livello_2-chincaglieria_magica",
+          "nome": "Chincaglieria Magica",
+          "file": "privilegi/guiscardo_mago-livello_2-chincaglieria_magica.json",
+          "fonte": "Manuale Base p.24"
         }
       ]
     },
@@ -40,8 +55,9 @@
       "privilegi": [
         {
           "id": "guiscardo_mago-livello_6-maestria_fandonica",
-          "nome": "maestria_fandonica",
-          "file": "privilegi/guiscardo_mago-livello_6-maestria_fandonica.json"
+          "nome": "Maestria Fandonica",
+          "file": "privilegi/guiscardo_mago-livello_6-maestria_fandonica.json",
+          "fonte": "Manuale Base p.24"
         }
       ]
     }

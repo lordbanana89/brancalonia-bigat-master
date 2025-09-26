@@ -4,25 +4,25 @@
     {
       "id": "miracolaro_chierico-livello_1-dominio_calendario",
       "livello": 1,
-      "nome": "dominio_calendario",
+      "nome": "Dominio del Calendario",
       "file": "miracolaro_chierico-livello_1-dominio_calendario.json"
     },
     {
       "id": "miracolaro_chierico-livello_1-tirare_giu_santi",
       "livello": 1,
-      "nome": "tirare_giu_santi",
+      "nome": "Tirare Giù i Santi",
       "file": "miracolaro_chierico-livello_1-tirare_giu_santi.json"
     },
     {
       "id": "miracolaro_chierico-livello_2-incanalare_divinita_recitare",
       "livello": 2,
-      "nome": "incanalare_divinita_recitare",
+      "nome": "Incanalare Divinità: Recitare il Calendario",
       "file": "miracolaro_chierico-livello_2-incanalare_divinita_recitare.json"
     },
     {
       "id": "miracolaro_chierico-livello_6-per_tutti_santi",
       "livello": 6,
-      "nome": "per_tutti_santi",
+      "nome": "Per Tutti i Santi!",
       "file": "miracolaro_chierico-livello_6-per_tutti_santi.json"
     }
   ]

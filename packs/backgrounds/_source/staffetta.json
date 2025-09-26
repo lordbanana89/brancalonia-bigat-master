@@ -45,7 +45,44 @@
         "classRestriction": "",
         "appliedEffects": []
       }
-    ]
+    ],
+    "startingEquipment": [
+      {
+        "type": "default",
+        "item": "Mostrina con i gradi"
+      },
+      {
+        "type": "default",
+        "item": "Borsa con tasca segreta per dispacci"
+      },
+      {
+        "type": "default",
+        "item": "Serie di dadi o mazzo di minchiate"
+      },
+      {
+        "type": "default",
+        "item": "Abito comune"
+      },
+      {
+        "type": "default",
+        "item": "Borsa con 10 ma"
+      }
+    ],
+    "traits": {
+      "personalityTraits": {
+        "table": "mn4JitpBzFsTUhF4"
+      },
+      "ideals": {
+        "table": "fJv9SQ54DMAOeKZd"
+      },
+      "bonds": {
+        "table": "MXcznG6DodwrOVt0"
+      },
+      "flaws": {
+        "table": "Qz23Yi0E1c9qosGU"
+      }
+    },
+    "wealth": "10 ma"
   },
   "effects": [],
   "folder": null,

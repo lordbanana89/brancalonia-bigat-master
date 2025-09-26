@@ -62,7 +62,40 @@
         "classRestriction": "",
         "appliedEffects": []
       }
-    ]
+    ],
+    "startingEquipment": [
+      {
+        "type": "default",
+        "item": "Custodia per pergamene con appunti di studio"
+      },
+      {
+        "type": "default",
+        "item": "Piede di porco"
+      },
+      {
+        "type": "default",
+        "item": "Abito da viaggiatore"
+      },
+      {
+        "type": "default",
+        "item": "Borsa con 10 ma"
+      }
+    ],
+    "traits": {
+      "personalityTraits": {
+        "table": "sjGqPpbdPjvCi2PW"
+      },
+      "ideals": {
+        "table": "L36J31zX9hVzRyRL"
+      },
+      "bonds": {
+        "table": "yXHEPjJaMTmqqzN4"
+      },
+      "flaws": {
+        "table": "C16hAwvA96CYe2h9"
+      }
+    },
+    "wealth": "10 ma"
   },
   "effects": [],
   "folder": null,

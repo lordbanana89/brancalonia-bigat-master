@@ -1,10 +1,17 @@
 {
   "nome": "Mattatore",
   "classe_base": "Ranger",
-  "fonte": "Manuale Base p.27",
-  "descrizione": "Cacciatori e catturatori di mostri per arene e circhi, esperti di Penumbria",
+  "fonte": "Manuale Base p.27-28",
+  "descrizione": "Addestratori di belve feroci che cacciano, catturano e mettono in scena mostruosità per arene e corride.",
   "tipo": "sottoclasse",
-  "sottoclasse": "Archetipo Ranger",
+  "sottoclasse": "Archetipo del Mattatore",
+  "testo": {
+    "introduzione": [
+      "I mattatori sono cacciatori di mostri che trasformano ogni cattura in spettacolo, trascinando belve in città, circhi e arene crudeli.",
+      "Vivono ai margini, disprezzati da cacciatori e guardacaccia ma richiesti da gladiatori e nobili in cerca di emozioni forti.",
+      "I più temuti provengono dalla Penumbria, dove la fauna è tanto letale da rendere i mostri del Regno mansueti agnellini." 
+    ]
+  },
   "validazione": {
     "implementato": true,
     "file_id": "mattatore_maestro_esibizione",
@@ -20,13 +27,15 @@
       "privilegi": [
         {
           "id": "mattatore_ranger-livello_3-maestro_esibizione",
-          "nome": "maestro_esibizione",
-          "file": "privilegi/mattatore_ranger-livello_3-maestro_esibizione.json"
+          "nome": "Maestro dell'Esibizione",
+          "file": "privilegi/mattatore_ranger-livello_3-maestro_esibizione.json",
+          "fonte": "Manuale Base p.27"
         },
         {
           "id": "mattatore_ranger-livello_3-occhio_mattatore",
-          "nome": "occhio_mattatore",
-          "file": "privilegi/mattatore_ranger-livello_3-occhio_mattatore.json"
+          "nome": "Occhio del Mattatore",
+          "file": "privilegi/mattatore_ranger-livello_3-occhio_mattatore.json",
+          "fonte": "Manuale Base p.27"
         }
       ]
     }

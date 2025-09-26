@@ -1,0 +1,94 @@
+{
+  "_id": "Vhptb105HeLya8CD",
+  "_key": "!tables!Vhptb105HeLya8CD",
+  "name": "Passatore - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "9sioDJUrZtgFBV2q",
+      "type": 0,
+      "text": "Morale. Non guido tagliagole e razziatori. (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "Nk8yAVfMkt9tZpwj",
+      "type": 0,
+      "text": "Onestà. Consegno merci e persone in tempo e al giusto prezzo. (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "nTmEgGxJuZGjPLjF",
+      "type": 0,
+      "text": "Libertà. Le leggi delle città non valgono nei boschi. (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "DpcSzq4HPE1XlIKl",
+      "type": 0,
+      "text": "Furberia. Qualcuno muore? Io salvo equipaggiamento e merci. (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "At2rhqyPskQejIne",
+      "type": 0,
+      "text": "Esplorazione. Vivo per tracciare nuovi sentieri. (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "u5l2fPJdlL93QcPb",
+      "type": 0,
+      "text": "Aspirazione. Voglio percorrere il Cammino di Casseoula in meno di dodici giorni. (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "passatore",
+      "tipo": "ideali"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

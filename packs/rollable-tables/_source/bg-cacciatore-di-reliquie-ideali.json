@@ -1,0 +1,94 @@
+{
+  "_id": "L36J31zX9hVzRyRL",
+  "_key": "!tables!L36J31zX9hVzRyRL",
+  "name": "Cacciatore di reliquie - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "8WOvBeadURctNkJ2",
+      "type": 0,
+      "text": "Ricerca. Restituire una reliquia al Credo significa onorare i Santi. (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "PEmrTRawSyMDzc3J",
+      "type": 0,
+      "text": "Conservazione. Una reliquia è preziosa e dovrebbe stare in un museo. (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "NhQfCKzkbxxQSzrn",
+      "type": 0,
+      "text": "Rischio. I pericoli rendono ogni spedizione degna di essere vissuta. (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "DfcS0PDHg2S0iSBN",
+      "type": 0,
+      "text": "Cupidigia. Prometto la stessa reliquia a più acquirenti e raccolgo tutto il denaro. (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "HZWFWy1PiDwvHHI6",
+      "type": 0,
+      "text": "Riposo. Ciò che resiste alla morte va esorcizzato o consegnato a mani sicure. (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "x4oA4T39fspdunbG",
+      "type": 0,
+      "text": "Mistero. L'ignoto che avvolge tombe e mausolei è la vera ricompensa. (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "cacciatore-di-reliquie",
+      "tipo": "ideali"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

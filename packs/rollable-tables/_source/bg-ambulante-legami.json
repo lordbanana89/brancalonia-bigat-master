@@ -1,0 +1,94 @@
+{
+  "_id": "CLh8GivenPA6Zhsx",
+  "_key": "!tables!CLh8GivenPA6Zhsx",
+  "name": "Ambulante - Legami",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "XrOdRb5MTgJbBkQJ",
+      "type": 0,
+      "text": "La mia comunità viaggiante è la mia unica famiglia.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "mzgfrBaZYBKR0mHg",
+      "type": 0,
+      "text": "La gente del villaggio d'origine che ho lasciato anni fa.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "uf6BorMKpA70bhFa",
+      "type": 0,
+      "text": "La matriarca della nostra carovana, capace di leggermi nell'animo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "iFhRqCKVrwxVuZVW",
+      "type": 0,
+      "text": "La paisà che un giorno mi ha fregato lasciandomi di stucco.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "CoqT8VXutN4CwZ5O",
+      "type": 0,
+      "text": "Il teatrante che mi ha insegnato i segreti della commedia.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "R7MBH4Yl510ZWSky",
+      "type": 0,
+      "text": "Il ciarlatano dai mille volti che continua a incrociare la mia strada.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "ambulante",
+      "tipo": "legami"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

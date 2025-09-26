@@ -1,0 +1,94 @@
+{
+  "_id": "ZRrdlTm7PuiiDB4m",
+  "_key": "!tables!ZRrdlTm7PuiiDB4m",
+  "name": "Lucignolo - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "IvD0ERf6RhU5uBG3",
+      "type": 0,
+      "text": "Sono ossessionato dall'idea che tutti mi giudichino dall'alto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "z7wlRQbooUWRTHzc",
+      "type": 0,
+      "text": "Dipendo dall'Estratto di Fandonia.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "BnuVD4AGrRy4Hf0n",
+      "type": 0,
+      "text": "Sono uno sbruffone e un codardo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "2tlUTcrYUaIRlLgg",
+      "type": 0,
+      "text": "Nel profondo disprezzo gli umani.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "YiS2VlwUOvE0vrmI",
+      "type": 0,
+      "text": "Cerco di imbrogliare chiunque per divertimento.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "3BrSobO4F3nn5Thb",
+      "type": 0,
+      "text": "Non so resistere alla tentazione di stuzzicare il can che dorme.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "lucignolo",
+      "tipo": "difetti"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

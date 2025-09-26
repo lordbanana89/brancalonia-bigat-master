@@ -82,7 +82,36 @@
         "classRestriction": "",
         "appliedEffects": []
       }
-    ]
+    ],
+    "startingEquipment": [
+      {
+        "type": "default",
+        "item": "Abito comune"
+      },
+      {
+        "type": "default",
+        "item": "Cimelio aggiuntivo"
+      },
+      {
+        "type": "default",
+        "item": "Borsa con 15 ma"
+      }
+    ],
+    "traits": {
+      "personalityTraits": {
+        "table": "HyLzspJGdc8RRjF7"
+      },
+      "ideals": {
+        "table": "vMJPF4oeXbLPBKA0"
+      },
+      "bonds": {
+        "table": "Q9zsJPlVja31uQ2z"
+      },
+      "flaws": {
+        "table": "ZRrdlTm7PuiiDB4m"
+      }
+    },
+    "wealth": "15 ma"
   },
   "effects": [],
   "folder": null,

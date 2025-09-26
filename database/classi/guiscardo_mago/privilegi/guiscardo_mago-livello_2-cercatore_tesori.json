@@ -1,14 +1,17 @@
 {
   "id": "guiscardo_mago-livello_2-cercatore_tesori",
   "livello": 2,
-  "nome": "cercatore_tesori",
-  "tipo": "attivo",
-  "descrizione": "Competenza in Indagare, Percezione, armature leggere e un'arma da guerra a una mano",
-  "implementazione": {
-    "indagare": "system.skills.inv.value = 1",
-    "percezione": "system.skills.prc.value = 1",
-    "armature_leggere": "system.traits.armorProf.value.push('light')",
-    "arma_guerra": "flags.brancalonia-bigat.weaponChoice = true"
+  "nome": "Cercatore di Tesori",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.24",
+  "descrizione": "I guiscardi apprendono presto a leggere tracce, indizi e serrature arcane. Conosci ogni trucco per smascherare trappole, mappe e passaggi segreti.",
+  "benefici": {
+    "competenze": [
+      "Indagare",
+      "Percezione",
+      "Armature leggere",
+      "Una arma da guerra a una mano a scelta"
+    ]
   },
-  "mode": 5
+  "note": "Se possiedi già una delle competenze elencate puoi scegliere una diversa abilità o arma consentita ai maghi." 
 }

@@ -1,0 +1,94 @@
+{
+  "_id": "fJv9SQ54DMAOeKZd",
+  "_key": "!tables!fJv9SQ54DMAOeKZd",
+  "name": "Staffetta - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "TrAZvJrqExc9RdoF",
+      "type": 0,
+      "text": "Sacrificio. Preferisco morire piuttosto che fallire una consegna. (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "J6j2YaUYhGkzDPqe",
+      "type": 0,
+      "text": "Dovere. Obbedisco agli ordini senza distrazioni. (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "VMpTfqSk1qukU38U",
+      "type": 0,
+      "text": "Istinto. Seguo l'intuito quando la strada sicura fallisce. (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "mtLi82nxqaAY7QKJ",
+      "type": 0,
+      "text": "Opportunismo. Ogni consegna ha un prezzo e la mia vita ne vale uno alto. (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "oa5jJKaHPyCUv9rU",
+      "type": 0,
+      "text": "Neutralità. Servo chiunque mi ingaggi, con imparzialità. (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "EBFun14SSgKi5aZU",
+      "type": 0,
+      "text": "Ineluttabilità. Se qualcosa deve accadere, accadrà comunque. (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "staffetta",
+      "tipo": "ideali"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

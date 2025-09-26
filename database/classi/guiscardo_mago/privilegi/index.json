@@ -4,25 +4,25 @@
     {
       "id": "guiscardo_mago-livello_2-cercatore_tesori",
       "livello": 2,
-      "nome": "cercatore_tesori",
+      "nome": "Cercatore di Tesori",
       "file": "guiscardo_mago-livello_2-cercatore_tesori.json"
-    },
-    {
-      "id": "guiscardo_mago-livello_2-chincaglieria_magica",
-      "livello": 2,
-      "nome": "chincaglieria_magica",
-      "file": "guiscardo_mago-livello_2-chincaglieria_magica.json"
     },
     {
       "id": "guiscardo_mago-livello_2-esperto_oggetti_magici",
       "livello": 2,
-      "nome": "esperto_oggetti_magici",
+      "nome": "Esperto di Oggetti Magici",
       "file": "guiscardo_mago-livello_2-esperto_oggetti_magici.json"
+    },
+    {
+      "id": "guiscardo_mago-livello_2-chincaglieria_magica",
+      "livello": 2,
+      "nome": "Chincaglieria Magica",
+      "file": "guiscardo_mago-livello_2-chincaglieria_magica.json"
     },
     {
       "id": "guiscardo_mago-livello_6-maestria_fandonica",
       "livello": 6,
-      "nome": "maestria_fandonica",
+      "nome": "Maestria Fandonica",
       "file": "guiscardo_mago-livello_6-maestria_fandonica.json"
     }
   ]

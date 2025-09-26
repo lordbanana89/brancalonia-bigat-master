@@ -1,0 +1,94 @@
+{
+  "_id": "KVbKEG128y8QpLJT",
+  "_key": "!tables!KVbKEG128y8QpLJT",
+  "name": "Brado - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "E44OtTwdkH2PSeJ4",
+      "type": 0,
+      "text": "Rispetto. Selvaggi e cittadini dovrebbero vivere in comunione. (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "8zSvi5yXI1jCHLo1",
+      "type": 0,
+      "text": "Leggi della selva. Solo le leggi naturali meritano rispetto. (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "nNugSz6fQuGzzrna",
+      "type": 0,
+      "text": "Libertà. Tutti dovrebbero vivere allo stato brado. (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "cmIW8lAxziUToTzI",
+      "type": 0,
+      "text": "Legge del più forte. In natura comanda chi è più forte. (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "q9sv3ydK56Luhj3i",
+      "type": 0,
+      "text": "Sopravvivenza. La vita viene prima di tutto. (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "5DCX7CiuQ2jIbjPU",
+      "type": 0,
+      "text": "Contemplazione. Il cielo stellato sopra di me, la legge dei bradi dentro di me. (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "brado",
+      "tipo": "ideali"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

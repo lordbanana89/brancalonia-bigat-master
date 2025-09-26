@@ -62,7 +62,48 @@
         "classRestriction": "",
         "appliedEffects": []
       }
-    ]
+    ],
+    "startingEquipment": [
+      {
+        "type": "default",
+        "item": "Strumento musicale a scelta"
+      },
+      {
+        "type": "default",
+        "item": "Raccolta di lettere d'amore"
+      },
+      {
+        "type": "default",
+        "item": "Libro di poesie"
+      },
+      {
+        "type": "default",
+        "item": "Calamaio di inchiostro nero"
+      },
+      {
+        "type": "default",
+        "item": "Pennino"
+      },
+      {
+        "type": "default",
+        "item": "Borsa con 15 ma"
+      }
+    ],
+    "traits": {
+      "personalityTraits": {
+        "table": "ZqcLh8MRFkRMabQZ"
+      },
+      "ideals": {
+        "table": "QVjvKkxpFcYC3oUw"
+      },
+      "bonds": {
+        "table": "Gi9KqhXHntIq2Vzf"
+      },
+      "flaws": {
+        "table": "7y7WV5SWVe5uxRar"
+      }
+    },
+    "wealth": "15 ma"
   },
   "effects": [],
   "folder": null,

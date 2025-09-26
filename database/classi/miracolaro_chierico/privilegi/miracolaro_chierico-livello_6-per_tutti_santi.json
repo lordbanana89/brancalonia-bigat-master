@@ -1,10 +1,12 @@
 {
   "id": "miracolaro_chierico-livello_6-per_tutti_santi",
   "livello": 6,
-  "nome": "per_tutti_santi",
-  "tipo": "attivo",
-  "descrizione": "Quando lancia incantesimo guarigione, bersaglio recupera anche PF = 2 + livello incantesimo",
-  "implementazione": "flags.brancalonia-bigat.bonusHealing = '2 + @item.level'",
-  "mode": 2,
-  "nota": "Applicato a incantesimi di guarigione"
+  "nome": "Per Tutti i Santi!",
+  "tipo": "reazione",
+  "fonte": "Manuale Base p.20",
+  "descrizione": "Il miracolaro condivide la fortuna ricevuta: la benedizione corre veloce lungo la compagnia.",
+  "meccaniche": {
+    "estensione": "Puoi usare Tirare Giù i Santi anche quando una creatura amica entro 9 metri fallisce un tiro o viene colpita",
+    "ricarica": "Recuperi gli usi di Tirare Giù i Santi con un riposo breve o lungo"
+  }
 }

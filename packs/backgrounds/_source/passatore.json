@@ -62,7 +62,32 @@
         "classRestriction": "",
         "appliedEffects": []
       }
-    ]
+    ],
+    "startingEquipment": [
+      {
+        "type": "default",
+        "item": "Abito da viaggiatore"
+      },
+      {
+        "type": "default",
+        "item": "Borsa con 15 ma"
+      }
+    ],
+    "traits": {
+      "personalityTraits": {
+        "table": "Smb0AXuQOeKzGNPW"
+      },
+      "ideals": {
+        "table": "Vhptb105HeLya8CD"
+      },
+      "bonds": {
+        "table": "JT0e1uzJfNFr3TV3"
+      },
+      "flaws": {
+        "table": "7SAkD1FqB7wamtEa"
+      }
+    },
+    "wealth": "15 ma"
   },
   "effects": [],
   "folder": null,

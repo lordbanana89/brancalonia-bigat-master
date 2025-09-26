@@ -1,0 +1,94 @@
+{
+  "_id": "H0VAsJ5fouWHChyX",
+  "_key": "!tables!H0VAsJ5fouWHChyX",
+  "name": "Prelato - Legami",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "TxKvksvP4iOmma5d",
+      "type": 0,
+      "text": "Devo la vita a Padre Sgroppino che mi salvò e mi istruì.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "0Gb4TzY7XIHBXlhx",
+      "type": 0,
+      "text": "Il mio simbolo sacro d'oro vale più della mia stessa vita.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "CVpX0pvLOt0iKHVr",
+      "type": 0,
+      "text": "Mi prendo cura degli infanti del Regno come anime da guidare.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "CA4UD235Nskeq9vP",
+      "type": 0,
+      "text": "Uno dei miei genitori è l'ultimo legame con la vita prima della prelatura.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "hNGKrNSXFFyhbpvP",
+      "type": 0,
+      "text": "Considero la mia comunità religiosa come una famiglia.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "GG5KeFSgDKqkqzAG",
+      "type": 0,
+      "text": "Cerco vendetta contro l'eresiarca che rapì le mie sorelle.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "prelato",
+      "tipo": "legami"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

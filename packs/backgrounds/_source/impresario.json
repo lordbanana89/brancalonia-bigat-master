@@ -83,7 +83,36 @@
         "classRestriction": "",
         "appliedEffects": []
       }
-    ]
+    ],
+    "startingEquipment": [
+      {
+        "type": "default",
+        "item": "Libro con i nomi di aspiranti teatranti"
+      },
+      {
+        "type": "default",
+        "item": "Abito di buona fattura"
+      },
+      {
+        "type": "default",
+        "item": "Borsa con 20 ma"
+      }
+    ],
+    "traits": {
+      "personalityTraits": {
+        "table": "OIepYgqBsVWw3WaW"
+      },
+      "ideals": {
+        "table": "CMrZE6owY2hymXZ0"
+      },
+      "bonds": {
+        "table": "0FZT854Jzjt6H0z7"
+      },
+      "flaws": {
+        "table": "Ot4awt6F31DrGt65"
+      }
+    },
+    "wealth": "10 ma"
   },
   "effects": [],
   "folder": null,

@@ -1,0 +1,94 @@
+{
+  "_id": "aTnOFtBBIPEAI8Z3",
+  "_key": "!tables!aTnOFtBBIPEAI8Z3",
+  "name": "Prelato - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "gTGZxsPRbpVgiPYg",
+      "type": 0,
+      "text": "Sono un inguaribile avvinazzato.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "TlXhJIvJGYXL4Gv2",
+      "type": 0,
+      "text": "Sono un impostore che conosce a malapena il Segno della Tombola.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "Bzwie0e3Nta88IiE",
+      "type": 0,
+      "text": "Mi fido troppo della bontà delle persone.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "azZeIze5G57J9aw0",
+      "type": 0,
+      "text": "Ho il terrore di perdere la mia fede.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "IvxWL2vFBQ6CJlqY",
+      "type": 0,
+      "text": "Aborro la fatica.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "OamVnAkzINcuP6nj",
+      "type": 0,
+      "text": "Coltivo un vizio poco consono alla mia carica.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "prelato",
+      "tipo": "difetti"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

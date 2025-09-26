@@ -65,7 +65,40 @@
         "classRestriction": "",
         "appliedEffects": []
       }
-    ]
+    ],
+    "startingEquipment": [
+      {
+        "type": "default",
+        "item": "Trofeo da rissa (Cimelio extra)"
+      },
+      {
+        "type": "default",
+        "item": "Mappa con la lista di tutte le locande della città d'origine"
+      },
+      {
+        "type": "default",
+        "item": "Abito comune"
+      },
+      {
+        "type": "default",
+        "item": "Borsa con 15 ma"
+      }
+    ],
+    "traits": {
+      "personalityTraits": {
+        "table": "SmWPN92vVjhaznoI"
+      },
+      "ideals": {
+        "table": "mCXI60x6Eq7NTIAo"
+      },
+      "bonds": {
+        "table": "w1cx9eMh06XFaGBG"
+      },
+      "flaws": {
+        "table": "8chDmml0WSo7ngS5"
+      }
+    },
+    "wealth": "15 ma"
   },
   "effects": [],
   "folder": null,

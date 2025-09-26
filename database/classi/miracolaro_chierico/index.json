@@ -1,10 +1,17 @@
 {
   "nome": "Miracolaro",
   "classe_base": "Chierico",
-  "fonte": "Manuale Base p.19",
-  "descrizione": "Chierici del Credo che invocano i Santi del Calendario",
+  "fonte": "Manuale Base p.19-20",
+  "descrizione": "Devoto del Credo che invoca i Santi del Calendario per elargire miracoli, ammonizioni e mazzate benedette.",
   "tipo": "sottoclasse",
   "sottoclasse": "Dominio del Calendario",
+  "testo": {
+    "introduzione": [
+      "Il Credo scandisce la vita del Regno con il Calendario dei Santi. I miracolari sono i fedeli che traggono potere da quelle figure, pronti a tirare giù un nome santo per ogni occasione.",
+      "Possono essere laici o clerici ordinati, cappellani militari o guaritori di campagna: girano per il Regno incassando offerte e distribuendo miracoli.",
+      "Quando incantano, i loro trucchetti diventano invocazioni: Santa Polenta purifica, San Assistenziale protegge, Madama Sventura viene scansata con un segno della croce." 
+    ]
+  },
   "validazione": {
     "implementato": true,
     "file_id": "miracolaro_per_tutti_i_santi",
@@ -20,13 +27,15 @@
       "privilegi": [
         {
           "id": "miracolaro_chierico-livello_1-dominio_calendario",
-          "nome": "dominio_calendario",
-          "file": "privilegi/miracolaro_chierico-livello_1-dominio_calendario.json"
+          "nome": "Dominio del Calendario",
+          "file": "privilegi/miracolaro_chierico-livello_1-dominio_calendario.json",
+          "fonte": "Manuale Base p.20"
         },
         {
           "id": "miracolaro_chierico-livello_1-tirare_giu_santi",
-          "nome": "tirare_giu_santi",
-          "file": "privilegi/miracolaro_chierico-livello_1-tirare_giu_santi.json"
+          "nome": "Tirare Giù i Santi",
+          "file": "privilegi/miracolaro_chierico-livello_1-tirare_giu_santi.json",
+          "fonte": "Manuale Base p.20"
         }
       ]
     },
@@ -35,8 +44,9 @@
       "privilegi": [
         {
           "id": "miracolaro_chierico-livello_2-incanalare_divinita_recitare",
-          "nome": "incanalare_divinita_recitare",
-          "file": "privilegi/miracolaro_chierico-livello_2-incanalare_divinita_recitare.json"
+          "nome": "Incanalare Divinità: Recitare il Calendario",
+          "file": "privilegi/miracolaro_chierico-livello_2-incanalare_divinita_recitare.json",
+          "fonte": "Manuale Base p.20"
         }
       ]
     },
@@ -45,8 +55,9 @@
       "privilegi": [
         {
           "id": "miracolaro_chierico-livello_6-per_tutti_santi",
-          "nome": "per_tutti_santi",
-          "file": "privilegi/miracolaro_chierico-livello_6-per_tutti_santi.json"
+          "nome": "Per Tutti i Santi!",
+          "file": "privilegi/miracolaro_chierico-livello_6-per_tutti_santi.json",
+          "fonte": "Manuale Base p.20"
         }
       ]
     }

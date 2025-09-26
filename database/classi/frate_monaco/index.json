@@ -2,9 +2,16 @@
   "nome": "Frate",
   "classe_base": "Monaco",
   "fonte": "Manuale Base p.25",
-  "descrizione": "Monaci degli Ordini Maneschi che praticano 'Ora et Menora'",
+  "descrizione": "Monaci degli Ordini Maneschi che alternano misericordia e mazzate seguendo la via 'Ora et Menora'.",
   "tipo": "sottoclasse",
   "sottoclasse": "Via della Condotta Manesca",
+  "testo": {
+    "introduzione": [
+      "Gli Ordini Maneschi raccolgono frati questuanti, predicatori e monasteri che non temono di sporcarsi le mani per proteggere il gregge.",
+      "La condotta insegna precetti come 'Porgi l'altro palmo' e 'La tua mano sappia essere ferro e piuma', trasformando monaci devoti in guardiani inflessibili.",
+      "Tra le congregazioni più celebri spiccano l'Ordine della Divina Cinquina, la Regola della Mano di Travertino e l'Ordine di Santa Ragione di Darsele." 
+    ]
+  },
   "validazione": {
     "implementato": true,
     "file_id": "frate_porgi_altra_guancia",
@@ -20,8 +27,9 @@
       "privilegi": [
         {
           "id": "frate_monaco-livello_3-porgi_altra_guancia",
-          "nome": "porgi_altra_guancia",
-          "file": "privilegi/frate_monaco-livello_3-porgi_altra_guancia.json"
+          "nome": "Porgi l'Altra Guancia",
+          "file": "privilegi/frate_monaco-livello_3-porgi_altra_guancia.json",
+          "fonte": "Manuale Base p.25"
         }
       ]
     },
@@ -30,8 +38,9 @@
       "privilegi": [
         {
           "id": "frate_monaco-livello_6-tecnica_mano_ferro_piuma",
-          "nome": "tecnica_mano_ferro_piuma",
-          "file": "privilegi/frate_monaco-livello_6-tecnica_mano_ferro_piuma.json"
+          "nome": "Tecnica della Mano di Ferro e di Piuma",
+          "file": "privilegi/frate_monaco-livello_6-tecnica_mano_ferro_piuma.json",
+          "fonte": "Manuale Base p.25"
         }
       ]
     }

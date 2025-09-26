@@ -1,0 +1,94 @@
+{
+  "_id": "JT0e1uzJfNFr3TV3",
+  "_key": "!tables!JT0e1uzJfNFr3TV3",
+  "name": "Passatore - Legami",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "GISNWvgj3X1fPhaA",
+      "type": 0,
+      "text": "Il bastone da camminata tramandato nella mia famiglia.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "PbsHplT5RB7SIkJ3",
+      "type": 0,
+      "text": "Conosco una comunità segreta di animali parlanti che vado a trovare.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "R4srl47aMPYpKBPZ",
+      "type": 0,
+      "text": "Leggo sempre la fiaba degli Stivali delle Sette Miglia prima di dormire.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "E567yoxGmwVTeTB7",
+      "type": 0,
+      "text": "Ho un conto aperto con una cacciatrice di taglie e cerco di incrociarla di nuovo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "yU27BJOsCx41v3Nd",
+      "type": 0,
+      "text": "Solo nei boschi posso sfuggire a un sicario che mi insegue.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "LqVbLmSr2OMweIOn",
+      "type": 0,
+      "text": "Verso parte dei proventi a un villaggio che mi diede rifugio.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "passatore",
+      "tipo": "legami"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

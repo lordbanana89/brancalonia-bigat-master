@@ -1,9 +1,32 @@
 {
   "id": "miracolaro_chierico-livello_1-dominio_calendario",
   "livello": 1,
-  "nome": "dominio_calendario",
-  "tipo": "advancement",
-  "descrizione": "Incantesimi di dominio basati sui Santi",
-  "implementazione": "Gestito da Advancement API - Domain Spells",
-  "lista_incantesimi": "Specifica per livello, varia per santo invocato"
+  "nome": "Dominio del Calendario",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.20",
+  "descrizione": "I Santi del Calendario ti ispirano formule dedicate. Quando prepari gli incantesimi da chierico aggiungi automaticamente quelli elencati nella tabella seguente.",
+  "incantesimi": [
+    {
+      "livello": 1,
+      "lista": [
+        "Protezione dal Bene e dal Male",
+        "Purificare Cibo e Bevande"
+      ]
+    },
+    {
+      "livello": 2,
+      "lista": [
+        "Caratteristica Potenziata",
+        "Ristorare Inferiore"
+      ]
+    },
+    {
+      "livello": 3,
+      "lista": [
+        "Creare Cibo e Acqua",
+        "Dissolvi Magie"
+      ]
+    }
+  ],
+  "note": "Gli incantesimi sono sempre preparati e non contano al fine del numero di incantesimi che puoi preparare ogni giorno." 
 }

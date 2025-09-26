@@ -1,12 +1,15 @@
 {
   "id": "mattatore_ranger-livello_3-maestro_esibizione",
   "livello": 3,
-  "nome": "maestro_esibizione",
-  "tipo": "attivo",
-  "descrizione": "Competenza in Addestrare Animali e Intrattenere, expertise (bonus raddoppiato) in entrambe",
-  "implementazione": {
-    "addestrare": "system.skills.ani.value = 2",
-    "intrattenere": "system.skills.prf.value = 2"
-  },
-  "mode": 5
+  "nome": "Maestro dell'Esibizione",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.27",
+  "descrizione": "Nel circo e nell'arena il pubblico paga per vedere sangue e spettacolo. Sai addestrare le tue prede tanto quanto aizzarle.",
+  "benefici": {
+    "competenze": [
+      "Addestrare Animali",
+      "Intrattenere"
+    ],
+    "competenza_raddoppiata": "Raddoppi il bonus di competenza alle prove di Addestrare Animali e Intrattenere"
+  }
 }

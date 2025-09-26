@@ -1,30 +1,23 @@
 {
   "id": "spadaccino_guerriero-livello_3-scuola_scherma",
   "livello": 3,
-  "nome": "scuola_scherma",
+  "nome": "Scuola di Scherma",
   "tipo": "multiplo",
-  "descrizione": "Tre tecniche di combattimento",
+  "fonte": "Manuale Base p.23",
+  "descrizione": "L'addestramento nelle scuole cittadine ti concede tre tecniche coreografiche che alternano difesa, offesa e studio dell'avversario.",
   "tecniche": {
-    "studiare_avversario": {
+    "Studiare l'Avversario": {
       "tipo": "attivo",
-      "descrizione": "Quando usa Schivata, prossimo attacco ha vantaggio (entro prossimo turno)",
-      "implementazione": "flags.brancalonia-bigat.studiareAvversario = true",
-      "mode": 5,
-      "condizione": "Dopo azione Schivata"
+      "descrizione": "Quando usi l'azione Schivata, il tuo prossimo attacco entro la fine del turno successivo ha vantaggio",
+      "condizione": "Devi effettuare l'attacco prima dell'inizio del tuo turno successivo"
     },
-    "zappa_e_spada": {
-      "tipo": "attivo",
-      "descrizione": "+1 CA con arma da mischia in ogni mano",
-      "implementazione": "system.attributes.ac.bonus = 1",
-      "mode": 2,
-      "condizione": "Due armi impugnate"
+    "Zappa e Spada": {
+      "tipo": "passivo",
+      "descrizione": "+1 alla CA mentre impugni un'arma da mischia in ciascuna mano"
     },
-    "duello": {
+    "Duello": {
       "tipo": "attivo",
-      "descrizione": "Aggiunge bonus competenza ai danni se solo un nemico entro 1.5m e nessun altro",
-      "implementazione": "flags.brancalonia-bigat.duello = '@proficiencyBonus'",
-      "mode": 2,
-      "condizione": "Solo un nemico entro 1.5m"
+      "descrizione": "Se sei entro 1,5 metri da un solo avversario, aggiungi il tuo bonus di competenza ai danni delle armi da mischia contro di lui"
     }
   }
 }

@@ -1,0 +1,94 @@
+{
+  "_id": "7y7WV5SWVe5uxRar",
+  "_key": "!tables!7y7WV5SWVe5uxRar",
+  "name": "Innamorato - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "GFjIVjGoZHfJnkw4",
+      "type": 0,
+      "text": "Cerco di sedurre qualsiasi adulto consenziente.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "Vwxnd0OB3e3LnEiE",
+      "type": 0,
+      "text": "Sono eccessivamente pieno di me stesso.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "Vn2flmEeO1H6o7Qy",
+      "type": 0,
+      "text": "Sono un ritardatario cronico e inaffidabile.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "AeBLQ6TMTWaDhTRN",
+      "type": 0,
+      "text": "Sono insensatamente competitivo, anche con gli amici.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "2rcifqaOsXw9voQe",
+      "type": 0,
+      "text": "Nascondo un segreto che mi marchierebbe come Infame.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false
+    },
+    {
+      "_id": "ohTWZkopia6cbXCI",
+      "type": 0,
+      "text": "Non so accettare un rifiuto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "innamorato",
+      "tipo": "difetti"
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}
