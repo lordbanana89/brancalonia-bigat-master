@@ -35,13 +35,41 @@
         "_id": "EpB8e0rsmyFEGuZy",
         "type": "ItemGrant",
         "configuration": {
-          "items": [],
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.feat-bg-staffetta",
+              "optional": false
+            }
+          ],
           "optional": false,
           "spell": null
         },
         "value": {},
         "level": 0,
         "title": "Con la Pioggia o con il Vento...",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "9dbb99221fb34593",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-staffetta-abito",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-staffetta-borsa",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Equipaggiamento Iniziale",
         "classRestriction": "",
         "appliedEffects": []
       }

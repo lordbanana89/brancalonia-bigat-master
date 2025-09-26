@@ -1,0 +1,5 @@
+2025/09/27-00:31:52.472119 16fd2f000 Delete type=3 #1
+2025/09/27-00:31:52.474040 16fdbb000 Level-0 table #5: started
+2025/09/27-00:31:52.474317 16fdbb000 Level-0 table #5: 7986 bytes OK
+2025/09/27-00:31:52.474438 16fdbb000 Delete type=0 #3
+2025/09/27-00:31:52.474526 16fdbb000 Manual compaction at level-0 from '!items!equip-bg-ambulante-abito' @ 72057594037927935 : 1 .. '!items!equip-bg-staffetta-borsa' @ 0 : 0; will stop at (end)

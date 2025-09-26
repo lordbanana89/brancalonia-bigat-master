@@ -52,13 +52,41 @@
         "_id": "Qh3AZY4144g9fv1g",
         "type": "ItemGrant",
         "configuration": {
-          "items": [],
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.feat-bg-azzeccagarbugli",
+              "optional": false
+            }
+          ],
           "optional": false,
           "spell": null
         },
         "value": {},
         "level": 0,
         "title": "Risolvere Guai",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "3495f70c364d47d6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-azzeccagarbugli-abito",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-azzeccagarbugli-borsa",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Equipaggiamento Iniziale",
         "classRestriction": "",
         "appliedEffects": []
       }

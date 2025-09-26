@@ -51,13 +51,41 @@
         "_id": "V2LLnnox9rvQbRcT",
         "type": "ItemGrant",
         "configuration": {
-          "items": [],
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.feat-bg-brado",
+              "optional": false
+            }
+          ],
           "optional": false,
           "spell": null
         },
         "value": {},
         "level": 0,
         "title": "Dimestichezza Selvatica",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "b1fc6ef2fd07439a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-brado-abito",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-brado-borsa",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Equipaggiamento Iniziale",
         "classRestriction": "",
         "appliedEffects": []
       }

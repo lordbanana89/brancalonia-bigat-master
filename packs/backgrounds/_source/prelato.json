@@ -53,13 +53,37 @@
         "_id": "VzCaLYTOl6oa2qhp",
         "type": "ItemGrant",
         "configuration": {
-          "items": [],
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.feat-bg-prelato",
+              "optional": false
+            }
+          ],
           "optional": false,
           "spell": null
         },
         "value": {},
         "level": 0,
         "title": "Rispetto e Influenza",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "9d55db2cd707441a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-prelato-borsa",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Equipaggiamento Iniziale",
         "classRestriction": "",
         "appliedEffects": []
       }

@@ -73,13 +73,41 @@
         "_id": "ppV98nwCZGBCFb64",
         "type": "ItemGrant",
         "configuration": {
-          "items": [],
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.feat-bg-impresario",
+              "optional": false
+            }
+          ],
           "optional": false,
           "spell": null
         },
         "value": {},
         "level": 0,
         "title": "Arte di Arrangiarsi",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "b10d9bdbc7a74324",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-impresario-abito",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-equipment.Item.equip-bg-impresario-borsa",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Equipaggiamento Iniziale",
         "classRestriction": "",
         "appliedEffects": []
       }

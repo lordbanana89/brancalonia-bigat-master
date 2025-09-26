@@ -4,7 +4,15 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## 🎉 MEGA UPDATE v3.20.1 - Background Completi con RollTable
+## 🎉 MEGA UPDATE v3.20.2 - Background con ItemGrant Funzionanti
+
+### 🔧 HOTFIX v3.20.2 - ItemGrant e Equipaggiamento Background
+**FIX COMPLETO**:
+- Creati 13 feature items per i privilegi dei background
+- Creati 24 equipment items per l'equipaggiamento iniziale
+- ItemGrant advancement ora referenzia correttamente gli item dei compendi
+- Equipaggiamento iniziale viene assegnato automaticamente al personaggio
+- Background completamente funzionali con advancement operativi
 
 ### 🔧 HOTFIX v3.20.1 - Background D&D 5e Standard Compliant
 **FIX COMPLETO**:
@@ -719,6 +727,26 @@ talenti:              23 file  - Talenti Brancaloni
 #### Pattern Identificato
 Molti items apparentemente "narrativi" hanno meccaniche nascoste nelle descrizioni che richiedono Active Effects per funzionare correttamente in gioco.
 **RISULTATO FINALE: 100% copertura Active Effects per tutti gli items con meccaniche reali.**
+
+### 12. SCOPERTA CRITICA: ItemGrant Advancement Requirements (v3.20.2)
+
+**Problema**: Gli ItemGrant advancement nei background non funzionavano perché avevano array `items` vuoti.
+
+**Causa**: ItemGrant richiede riferimenti a item esistenti nei compendi tramite UUID nel formato:
+```
+"uuid": "Compendium.{scope}.{pack}.Item.{itemId}"
+```
+
+**Soluzione Implementata**:
+1. Creati 13 feature items per i privilegi dei background (feat-bg-{background})
+2. Creati 24 equipment items per l'equipaggiamento iniziale (equip-bg-{background}-{type})
+3. Aggiornati tutti gli ItemGrant advancement per referenziare questi items
+4. Aggiunti advancement separati per features ed equipment
+
+**Files Creati**:
+- `scripts/create-background-features.py`: Genera feature e equipment items
+- `scripts/update-background-itemgrants.py`: Aggiorna riferimenti negli advancement
+- `scripts/add-equipment-grants.py`: Aggiunge equipment grants
 
 ### 11. STATISTICHE FINALI COPERTURA (v3.14.2)
 
