@@ -1,0 +1,181 @@
+Fuggitivo
+Reietto, evaso di prigione, dalle galee o dai lavori forzati, 
+disertore di armate e compagnie di ventura, datosi alla mac-
+chia dopo aver attaccato una guardia o un nobile: che quan-
+to si dice su di lui sia vero o falso, il fuggitivo è accusato di 
+essere fuggito dalla “giustizia” del Regno e si è unito alla 
+banda perché non aveva altre prospettive.
+Competenze nelle Abilità: Furtività, Sopravvivenza
+Linguaggi: Baccaglio
+Equipaggiamento: Un pugnale, un ricordo della tua vita 
+passata, un abito da viaggiatore sgualcito, una borsa con 10 ma
+Privilegio: Reietto
+La Taglia del fuggitivo è più alta del consueto a causa di una 
+grave malefatta che gli è stata (giustamente o ingiustamente) 
+attribuita, assieme ad alcune aggravanti.
+La sua Taglia aumenta di 100 mo.
+Caratteristiche Suggerite
+Il fuggitivo è una canaglia braccata già all’inizio del gioco, con 
+una Taglia probabilmente superiore a quella dei suoi com-
+pagni. Potrebbe essere un povero disgraziato ingiustamente 
+accusato di una malefatta mai commessa, qualcuno che si è 
+ribellato a un’ingiustizia, un idealista che si è schierato contro 
+birri e nobili presuntuosi, o semplicemente un vero criminale 
+matricolato che non si lascia mettere le mani addosso.d10 Reietto d10 Reietto
+1 Evasione 6 Ferimento di Birri
+2 Diserzione 7 Sedizione
+3 T radimento 8 Rivolta
+4Interruzione di pub-
+blica esecuzione9Brigantaggio
+5 Resistenza all’arresto 10 Saccheggio
+d8 T ratto Caratteriale
+1Il fuggitivo tiene sempre un profilo basso e si guarda 
+costantemente le spalle.
+2Il fuggitivo evita se possibile di parlare con i birri e i 
+notabili.
+3Il fuggitivo non si fida di nessuno e ha costantemente 
+paura che qualcuno lo denunci.
+4Il fuggitivo non sopporta l’autorità e la giustizia. Pensa 
+che siano sempre e solo contro i poveracci.
+5Ogni volta che entra in un luogo chiuso, il fuggitivo 
+controlla con lo sguardo tutte le vie di fuga.
+6Il fuggitivo è sempre solidale con coloro che vengono 
+perseguitati dalla legge.
+7Se rimane troppo tempo nello stesso luogo, il fuggitivo 
+inizia a essere nervoso e cerca un modo per spostarsi 
+altrove.
+8Il fuggitivo ha un piano per lasciare la regione e trovare 
+un luogo dove la sua faccia non compare sulle taglie.d6 Difetto
+1Il fuggitivo non sopporta più alcuna costrizione, 
+neanche dai compagni.
+2Dopo esser stato tradito, il fuggitivo non riesce più a 
+fidarsi di nessuno.
+3Il fuggitivo ha spesso incubi e terribili ricordi della sua 
+prigionia.
+4Il fuggitivo ha sviluppato manie e fobie legate ai traumi 
+precedenti.
+5Per colpa di quanto è successo, il fuggitivo non riesce 
+più a rispettare alcuna autorità.
+6 Il fuggitivo cova rancore e odio verso chi lo ha reso tale.d6 Ideale
+1Solidarietà. I poveracci e i disgraziati dovrebbero essere 
+lasciati in pace. (Buono)
+2Giustizia. Verrà un giorno in cui anche i potenti saranno 
+soggetti alla legge e questa sarà uguale per tutti. (Legale)
+3Libertà. Non esiste vera libertà per chi non può andare 
+dove desideri o tentare di redimersi. (Caotico)
+4Indifferenza. Vadano tutti all’Inferno, l’unica cosa che 
+conta è che nessuno mi metta più i ferri ai polsi. (Mal-
+vagio)
+5Buon senso. Che senso ha un sistema di leggi, se chi le 
+fa applicare è peggiore di chi le infrange? (Neutrale)
+6Ambizione. Il fuggitivo ambisce a trovare un giorno le 
+prove della propria innocenza o il denaro bastante a 
+saldare il proprio debito. (Qualsiasi)
+d6 Legame
+1 Le amicizie nate in prigione non si possono spezzare.
+2Il ricordo di una persona cara è l’unico legame che gli 
+resta dei giorni precedenti alla vita da cui è fuggito.
+3C’è una persona che ha salvato il fuggitivo e gli ha per -
+messo di darsela a gambe. A quella persona, il fuggitivo 
+sente di dovere tutto.
+4Chi non ha più nessuno, instaura un rapporto fraterno 
+con i nuovi compagni, che diventano una nuova famiglia.
+5Anche sapendo chi fosse e da cosa fuggisse, qualcuno 
+lo ha trattato con gentilezza, e il fuggitivo non lo dimen-
+ticherà mai.
+6C’è una sola persona che è la causa di tutti i suoi guai.  
+E il giorno della vendetta prima o poi arriverà!
+
+
+=== PAGINA 39 ===
+- 37 -Talenti Brancaloni
+Talenti Brancaloni
+I talenti di Brancalonia funzionano esattamente come quelli 
+del regolamento base, e possono essere scelti e acquisiti dalle 
+canaglie con le stesse meccaniche.
+Molti dei talenti dei manuali della 5a Edizione possono essere 
+usati in Brancalonia senza bisogno di particolari accorgimenti. 
+Ecco invece una prima selezione di talenti propri di Brancalo-
+nia, espressamente ideati per le canaglie del Regno.
+Anima Contadina
+Il personaggio ha una forte affinità con il suo passato conta-
+dino, sa come comportarsi con gli animali e sa come usare 
+al meglio anche lo strumento più umile. Ottiene i benefici 
+seguenti:
+• Il suo punteggio di Forza o Costituzione aumenta di 1, 
+fino a un massimo di 20.
+• Ottiene competenza in Addestrare Animali.
+• Quando usa un falcetto, una zappa d’arme o un forcone 
+d’arme, mette a segno un colpo critico con un risultato di 
+19 e 20 al tiro.
+Antica Arte Culinaria
+Il personaggio è un grande esperto dell’arte culinaria del 
+Regno, tramandata di nonna in nonna. Ottiene i benefici 
+seguenti:
+• Ottiene competenza negli utensili da cuoco, il suo bonus 
+di competenza raddoppia per ogni prova di caratteristica 
+effettuata usandoli e ignora la qualità scadente degli 
+utensili da cuoco.
+• Può usare gli utensili da cuoco come armi improvvisate di 
+cui possiede la competenza.
+• Può cucinare un pasto speciale che conferisce a chi lo 
+consuma un numero di punti ferita temporanei pari al 
+proprio modificatore di Costituzione (minimo 1). Una 
+volta utilizzata questa capacità, non può più utilizzarla 
+finché non completa un riposo breve o lungo.
+• Esaminando cibi o bevande per 1 minuto, può capire se 
+sono avvelenati o se possono portare malattie.
+Compagno della Selva
+Prerequisito: Selvatico
+Il selvatico ha una speciale affinità con la selva, con i suoi 
+equilibri e con i suoi abitanti, ed è in grado di creare un 
+legame unico con un animale selvatico, un legame di ugua-
+glianza, amicizia e collaborazione. Il personaggio ottiene i 
+benefici seguenti:• Il suo bonus di competenza raddoppia per ogni prova di 
+caratteristica effettuata usando Natura e Sopravvivenza.
+• T ramite un rito della durata di 8 ore, crea un legame 
+con un bestia amica. Questa deve essere di taglia Media 
+o inferiore con un grado di sfida pari o inferiore a 1/4. 
+La bestia obbedisce ai comandi del personaggio al meglio 
+delle sue possibilità. Svolge il suo turno all’iniziativa 
+del personaggio, ma non effettua un’azione a meno che 
+il personaggio non glielo ordini. Nel proprio turno, il 
+personaggio può ordinare verbalmente alla bestia dove 
+muoversi (nessuna azione richiesta). Il personaggio può 
+anche usare la sua azione per ordinare verbalmente alla 
+bestia di effettuare l’azione di Aiuto, Attacco, Disimpegno, 
+Scatto o Schivata. Se ottiene il privilegio di Attacco Extra, 
+il personaggio può effettuare un attacco con un’arma 
+mentre ordina alla bestia di effettuare l’azione di Attacco. 
+Se il personaggio è incapacitato o assente, la bestia agisce 
+da sola, concentrandosi sulla protezione del personaggio 
+e di se stessa. La bestia non necessita del comando del 
+personaggio per usare la sua reazione, per esempio per 
+effettuare un attacco di opportunità.
+Figlio delle Stelle e delle Stalle
+Prerequisito: Umano
+Il personaggio è capace di dormire in ogni dove, sia sotto 
+un cielo stellato che circondato dall’odore acre di una stalla. 
+Ottiene i benefici seguenti:
+• Il suo punteggio di una statistica a scelta aumenta di 1, 
+fino a un massimo di 20.
+• Quando spende uno o più Dadi Vita al termine di un 
+riposo breve, può ritirare i dadi che hanno un risultato 
+inferiore al suo modificatore di Costituzione.
+• Può spendere 2 Dadi Vita per recuperare un livello di 
+indebolimento.
+Figlio di Pantagruele
+Prerequisito: Morgante
+Il personaggio discende da una schiatta particolarmente anti-
+ca e imponente di morganti e presto o tardi questa caratteri-
+stica emerge in maniera evidente. Ottiene i benefici seguenti:
+• Il suo punteggio di Forza o Costituzione aumenta di 1, 
+fino a un massimo di 20.
+• Quando effettua un riposo lungo recupera 1 livello di 
+indebolimento aggiuntivo.
+
+=== PAGINA 40 ===
+- 38 -
+Canaglie di Brancalonia 
+• Il massimo dei punti ferita del personaggio aumenta di 
+un ammontare pari al suo livello quando il personaggio 

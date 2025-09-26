@@ -1,0 +1,42 @@
+{
+  "_id": "class-warlock-p0p6u4",
+  "_key": "!items!class-warlock-p0p6u4",
+  "name": "Warlock",
+  "type": "class",
+  "img": "icons/magic/unholy/orb-glowing-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Negromante del patto che stringe accordi con potenze ultraterrene per brandire magie innaturali.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.105",
+    "identifier": "warlock",
+    "levels": 20,
+    "hitDice": "8",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "pact",
+      "ability": "cha"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.105",
+      "tipo": "classe"
+    }
+  }
+}

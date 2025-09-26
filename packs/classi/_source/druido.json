@@ -1,0 +1,42 @@
+{
+  "_id": "class-druido-e31618",
+  "_key": "!items!class-druido-e31618",
+  "name": "Druido",
+  "type": "class",
+  "img": "icons/magic/nature/tree-oak-brown-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Custode dei cicli naturali che richiama la magia della terra e muta forma per proteggere il reame.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.64",
+    "identifier": "druido",
+    "levels": 20,
+    "hitDice": "8",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "wis"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.64",
+      "tipo": "classe"
+    }
+  }
+}

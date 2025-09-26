@@ -1,0 +1,42 @@
+{
+  "_id": "class-chierico-lvrhc0",
+  "_key": "!items!class-chierico-lvrhc0",
+  "name": "Chierico",
+  "type": "class",
+  "img": "icons/magic/holy/saint-glass-portrait-halo-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Servitore devoto di un potere divino che canalizza miracoli per sostenere, punire e guidare.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.56",
+    "identifier": "chierico",
+    "levels": 20,
+    "hitDice": "8",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "wis"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.56",
+      "tipo": "classe"
+    }
+  }
+}

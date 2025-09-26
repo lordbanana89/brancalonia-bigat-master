@@ -3,6 +3,17 @@
   "fonte": "Manuale Base p.33",
   "tipo": "background",
   "descrizione": "Faccendiere, notaio e leguleio esperto di burocrazia e cavilli legali",
+  "testo": {
+    "introduzione": [
+      "Simbolo della vita civile del Regno, l’azzeccagarbugli è faccendiere, notaio e pennivendolo che conosce a menadito cavilli, codicilli e vizi di forma.",
+      "Metà funzionario e metà canaglia, naviga tra tribunali, birri ed Equitaglia per aggirare le leggi e farle piegare ai propri clienti.",
+      "Le bande lo assoldano quando serve una lingua affilata capace di trattare, corrompere o confondere magistrati, nobili e pezzi grossi."
+    ],
+    "privilegio": {
+      "nome": "Risolvere Guai",
+      "descrizione": "Può annullare una Malefatta sua o di un compagno pagando subito un ammontare pari al Valore di Taglia, prima che venga registrata."
+    }
+  },
   "meccaniche": {
     "competenze_abilita": {
       "tipo": "attivo",
@@ -37,18 +48,95 @@
       "nota": "Meccanica specifica di Brancalonia per gestione Taglia"
     }
   },
-  "caratterizzazione": {
-    "parlata": "Spesso in Maccheronico o linguaggio tecnico-legale",
-    "competenze": "Conosce cavilli, codicilli e scappatoie",
-    "ruolo_banda": "Contabile, notaio, scrivano, furiere",
-    "ideali": [
-      "Parità di opportunità (Buono)",
-      "Uguaglianza (Legale)",
-      "Giustizia dei ladri (Caotico)",
-      "Avvocato del diavolo (Malvagio)",
-      "Equanimità (Neutrale)",
-      "Ordine (Qualsiasi)"
+  "dettagli": {
+    "identificatore": "azzeccagarbugli",
+    "ricchezza_iniziale": "20 ma",
+    "equipaggiamento": [
+      "Libro sulle leggi della regione di provenienza",
+      "Calamaio di inchiostro nero",
+      "Pennino",
+      "Pergamena",
+      "Abito pregiato",
+      "Borsa con 20 ma"
     ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "indagare",
+        "persuasione"
+      ]
+    },
+    {
+      "tipo": "competenze_strumenti",
+      "elenco": [
+        "arnesi_da_falsario"
+      ]
+    },
+    {
+      "tipo": "linguaggi",
+      "elenco": [
+        "maccheronico"
+      ]
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "Risolvere Guai",
+      "descrizione": "Può annullare una Malefatta propria o della banda pagando il relativo Valore di Taglia prima che venga registrata.",
+      "fonte": "Manuale Base p.33",
+      "implementazione": {
+        "risolvere_guai": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "È maestro nelle supercazzole e rifila cavilli al primo che incontra.",
+        "Accetta favori e pagamenti di ogni tipo pur di chiudere un affare.",
+        "Colleziona leggi e testi scritti che studia in ogni momento libero.",
+        "Ama infiorettare i discorsi con frasi e motti in Maccheronico.",
+        "Adora confrontarsi con notabili e riesce a zittire anche nobili e ordinali.",
+        "Si incaponisce nel risolvere i problemi più intricati e difficili.",
+        "Ha una parlantina inarrestabile ed è capace di vendere ghiaccio ai varaghi.",
+        "Sfoggia un nome d’arte pomposo, eredità della sua professione."
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Parità di opportunità. Anche i poveri devono potersi difendere. (Buono)",
+        "Uguaglianza. Leggi e trattamenti devono essere uguali per tutti. (Legale)",
+        "Giustizia dei ladri. Le canaglie meritano i loro cavilli. (Caotico)",
+        "Avvocato del diavolo. Difende tiranni e criminali per tornaconto. (Malvagio)",
+        "Equanimità. Accetta colpe e pene, ma anche i modi per evitarle. (Neutrale)",
+        "Ordine. Il mondo deve funzionare come un meccanismo oliato. (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "Il maestro di retorica e diritto che gli ha insegnato a rubare.",
+        "Un parente che lo disprezza perché ha tradito la professione per diventare canaglia.",
+        "Il capobanda inflessibile di cui è stato consigliere.",
+        "La persona che lo ha costretto a diventare una canaglia tradendo la professione.",
+        "Il cliente che non è riuscito a salvare e che marcisce ancora in prigione.",
+        "La persona che ha sempre amato ed è stata uccisa per colpa del suo mestiere."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "È avido e valuta ogni azione solo in base al guadagno.",
+        "È borioso e presuntuoso: pensa di sapere tutto.",
+        "Ambisce a comandare la banda e farà di tutto per riuscirci.",
+        "Vuole sempre avere l’ultima parola su ogni questione.",
+        "Pensa soltanto a se stesso ed è pronto a tradire chiunque.",
+        "Considera i compagni della Cricca come propri tirapiedi personali."
+      ]
+    }
   },
   "validazione": {
     "implementato": true,

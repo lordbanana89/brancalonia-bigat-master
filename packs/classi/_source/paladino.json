@@ -1,0 +1,42 @@
+{
+  "_id": "class-paladino-276y9b",
+  "_key": "!items!class-paladino-276y9b",
+  "name": "Paladino",
+  "type": "class",
+  "img": "icons/equipment/shield/heater-shield-winged-gold-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Campione giurato che incarna ideali sacri, combina arti marziali e potere divino.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.82",
+    "identifier": "paladino",
+    "levels": 20,
+    "hitDice": "10",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "half",
+      "ability": "cha"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.82",
+      "tipo": "classe"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "class-stregone-q36spo",
+  "_key": "!items!class-stregone-q36spo",
+  "name": "Stregone",
+  "type": "class",
+  "img": "icons/magic/fire/orb-fireball-red-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Incantatore istintivo che alimenta la magia con il potere della propria stirpe o di una forza caotica.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.100",
+    "identifier": "stregone",
+    "levels": 20,
+    "hitDice": "6",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "cha"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.100",
+      "tipo": "classe"
+    }
+  }
+}

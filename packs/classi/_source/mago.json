@@ -1,0 +1,42 @@
+{
+  "_id": "class-mago-8q84b7",
+  "_key": "!items!class-mago-8q84b7",
+  "name": "Mago",
+  "type": "class",
+  "img": "icons/magic/symbols/runes-star-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Studioso delle arti arcane che trasforma intuizione e studio in potere magico puro.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.78",
+    "identifier": "mago",
+    "levels": 20,
+    "hitDice": "6",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "int"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.78",
+      "tipo": "classe"
+    }
+  }
+}

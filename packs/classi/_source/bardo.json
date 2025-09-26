@@ -1,0 +1,42 @@
+{
+  "_id": "class-bardo-uh05kq",
+  "_key": "!items!class-bardo-uh05kq",
+  "name": "Bardo",
+  "type": "class",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Artista e sciamano della parola che intreccia musica e magia per ispirare, ingannare e incantare.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.51",
+    "identifier": "bardo",
+    "levels": 20,
+    "hitDice": "8",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "cha"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.51",
+      "tipo": "classe"
+    }
+  }
+}

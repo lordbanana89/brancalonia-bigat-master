@@ -1,0 +1,42 @@
+{
+  "_id": "class-ranger-fu3aut",
+  "_key": "!items!class-ranger-fu3aut",
+  "name": "Ranger",
+  "type": "class",
+  "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cacciatore errante e guida selvaggia, padrone dei territori sconosciuti e delle imboscate.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.89",
+    "identifier": "ranger",
+    "levels": 20,
+    "hitDice": "10",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "half",
+      "ability": "wis"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.89",
+      "tipo": "classe"
+    }
+  }
+}

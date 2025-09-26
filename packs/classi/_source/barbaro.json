@@ -1,0 +1,51 @@
+{
+  "_id": "class-barbarian-v7jhif",
+  "_key": "!items!class-barbarian-v7jhif",
+  "name": "Barbaro",
+  "type": "class",
+  "img": "icons/skills/melee/strike-axe-blood-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Guerriero selvaggio dalla furia primordiale.</em></p>\n<p>Vedi il Manuale del Giocatore per i dettagli completi.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.46",
+    "identifier": "barbarian",
+    "levels": 20,
+    "hitDice": "12",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [
+      "str",
+      "con"
+    ],
+    "skills": {
+      "number": 2,
+      "choices": [
+        "ani",
+        "ath",
+        "itm",
+        "nat",
+        "prc",
+        "sur"
+      ]
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.46",
+      "tipo": "classe_base"
+    }
+  }
+}

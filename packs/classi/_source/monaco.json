@@ -1,0 +1,42 @@
+{
+  "_id": "class-monaco-uhh8nq",
+  "_key": "!items!class-monaco-uhh8nq",
+  "name": "Monaco",
+  "type": "class",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Asceta marziale che incanala il ki per trasformare il corpo in un'arma perfetta.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.76",
+    "identifier": "monaco",
+    "levels": 20,
+    "hitDice": "8",
+    "hitDiceUsed": 0,
+    "advancement": [],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.76",
+      "tipo": "classe"
+    }
+  }
+}
