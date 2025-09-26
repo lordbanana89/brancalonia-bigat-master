@@ -1,12 +1,12 @@
 {
-  "_id": "duroebu75z",
-  "_key": "!items!duroebu75z",
+  "_id": "duro",
+  "_key": "!items!duro",
   "name": "Duro",
   "type": "background",
-  "img": "icons/skills/melee/shield-damaged-broken-orange.webp",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p><em>Cresciuto tra angherie e violenze, temprato dalle difficoltà estreme</em></p>\n<p><strong>Skill Proficiencies:</strong> Athletics, Intimidation</p>\n<p><strong>Tool Proficiencies:</strong> Un tipo di gioco</p>\n<p><strong>Languages:</strong> Baccaglio (gergo furfantesco)</p>\n<p><strong>Equipment:</strong> Ciondolo di Santa Predatoria, mazzo di minchiate o altro gioco, abito comune, borsa 15 ma</p>\n<h3>Suggested Characteristics</h3>\n<p>I duro di Brancalonia sono caratterizzati da:</p>\n<table><thead><tr><th>d8</th><th>Personality Trait</th></tr></thead><tbody><tr><td>1</td><td>Cattiveria visibile a prima vista</td></tr><tr><td>2</td><td>Tempra d'acciaio forgiata dalle privazioni</td></tr><tr><td>3</td><td>Nessun ostacolo lo può fermare</td></tr></tbody></table>\n<p><strong>Ideals:</strong> Vari in base all'origine specifica</p>\n",
+      "value": "<p><em>Cresciuto tra angherie e violenze, temprato dalle difficoltà estreme</em></p>\n\n<p>Il duro è nato e cresciuto in mezzo a soprusi, privazioni e pestaggi, ma quella vita lo ha temprato invece di piegarlo.</p>\n<p>Conosce il peggio del Regno, non teme intimidazioni e affronta ogni minaccia con lo sguardo di chi ha già visto l’inferno.</p>\n<p>Che provenga dalla Penumbria o dai quartieri più malfamati, rimane un avversario la cui pazienza è meglio non mettere alla prova.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Atletica e Intimidire</p>\n<p><strong>Competenze Strumenti:</strong> Un tipo di gioco a scelta</p>\n<p><strong>Linguaggi:</strong> Baccaglio (gergo furfantesco)</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Ciondolo di Santa Predatoria</li>\n<li>Mazzo di minchiate o altro gioco</li>\n<li>Abito comune</li>\n<li>Borsa con 15 ma</li>\n</ul>\n\n<h3>Privilegio: Faccia da Duro</h3>\n<p>Quando sfrutta la sua Nomea per incutere timore, la considera di un livello superiore.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Tratto</th></tr></thead><tbody>\n<tr><td>1</td><td>Non abbasso mai lo sguardo e non chiedo scusa a nessuno.</td></tr>\n<tr><td>2</td><td>Ho solo due espressioni: con la pipa e senza la pipa.</td></tr>\n<tr><td>3</td><td>Non darmi fastidio né farmi complimenti, o ne farai una tragedia.</td></tr>\n<tr><td>4</td><td>Sotto questa scorza ho un cuore tenero ma farò di tutto per nasconderlo.</td></tr>\n<tr><td>5</td><td>Mi interessa solo contare denaro e taglie.</td></tr>\n<tr><td>6</td><td>Credo che gli uomini siano mostri, ma amo gli animali e non farei loro del male.</td></tr>\n<tr><td>7</td><td>Non sopporto la compagnia e preferisco restare solo.</td></tr>\n<tr><td>8</td><td>Parlo solo se indispensabile: una parola è troppa, due sono poche.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Ideale</th></tr></thead><tbody>\n<tr><td>1</td><td>Cuore d’oro. Non c’è cattivo più cattivo di un buono che diventa cattivo. (Buono)</td></tr>\n<tr><td>2</td><td>Intransigenza. Se questo è l’ordine, va eseguito a ogni costo. (Legale)</td></tr>\n<tr><td>3</td><td>Cinismo. Il mondo va in rovina: pensiamo a noi stessi. (Caotico)</td></tr>\n<tr><td>4</td><td>Potere. Con le lame come nella vita vince il più forte. (Malvagio)</td></tr>\n<tr><td>5</td><td>Banderuola. Con Frangia o Altomagna, purché se magna. (Neutrale)</td></tr>\n<tr><td>6</td><td>Bottino. Riempirsi le tasche e andare a bere: non c’è altro. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Legame</th></tr></thead><tbody>\n<tr><td>1</td><td>Morirei solo per chi combatte al mio fianco.</td></tr>\n<tr><td>2</td><td>Ho una lista di chi mi ha fatto un torto e la recito ogni sera.</td></tr>\n<tr><td>3</td><td>L’unica persona che mi abbia amato: non la dimenticherò mai.</td></tr>\n<tr><td>4</td><td>Sono stato tradito molte volte, ma uno in particolare la pagherà.</td></tr>\n<tr><td>5</td><td>Porto con me una vecchia taglia di qualcuno che inseguo da anni.</td></tr>\n<tr><td>6</td><td>Se il mio vecchio capitano mi chiamasse, rimetterei in piedi la banda in un attimo.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Difetto</th></tr></thead><tbody>\n<tr><td>1</td><td>Disprezzo chi non si dimostra un bravo combattente.</td></tr>\n<tr><td>2</td><td>Le cicatrici dell’anima non guariranno mai.</td></tr>\n<tr><td>3</td><td>Non mi fido di nessuno e dormo con un occhio aperto.</td></tr>\n<tr><td>4</td><td>Se serve a salvarmi, tradirò anche i compagni.</td></tr>\n<tr><td>5</td><td>Non sono più capace di amare niente e nessuno.</td></tr>\n<tr><td>6</td><td>Sono sanguinario e violento fino all’efferatezza.</td></tr>\n</tbody></table>\n",
       "chat": "",
       "unidentified": ""
     },
@@ -14,7 +14,7 @@
     "identifier": "duro",
     "advancement": [
       {
-        "_id": "79C21RFNTxI9A0kV",
+        "_id": "x6ZDsOhxTjQXjnYf",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -27,29 +27,32 @@
         },
         "value": {},
         "level": 0,
-        "title": "",
+        "title": "Competenze del Background",
         "classRestriction": "",
         "appliedEffects": []
       },
       {
-        "_id": "9boMU5XzHzGv5lbm",
+        "_id": "jlVNUSn7MA7qqOEt",
         "type": "Improvement",
         "configuration": {
           "tools": {
-            "chosen": [],
-            "fixed": [
-              "game"
-            ]
+            "chosen": {
+              "count": 1,
+              "pool": [
+                "artisan"
+              ]
+            },
+            "fixed": []
           }
         },
         "value": {},
         "level": 0,
-        "title": "",
+        "title": "Strumenti del Background",
         "classRestriction": "",
         "appliedEffects": []
       },
       {
-        "_id": "kjWG4FYYMsJPR1ze",
+        "_id": "MyRWFwTm70rLQ1es",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -61,15 +64,23 @@
         },
         "value": {},
         "level": 0,
-        "title": "",
+        "title": "Linguaggi del Background",
         "classRestriction": "",
         "appliedEffects": []
-      }
-    ],
-    "startingEquipment": [
+      },
       {
-        "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
-        "quantity": 15
+        "_id": "dxbz2vrCDR395DhX",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Faccia da Duro",
+        "classRestriction": "",
+        "appliedEffects": []
       }
     ]
   },
@@ -82,12 +93,8 @@
   "flags": {
     "brancalonia": {
       "fonte": "Manuale Base p.35",
-      "validazione": {
-        "implementato": false,
-        "file_id": "duro001",
-        "compendio": "backgrounds",
-        "nota": "Non trovato tra i backgrounds implementati nel modulo attuale"
-      }
+      "tipo": "background",
+      "database_complete": true
     }
   }
 }

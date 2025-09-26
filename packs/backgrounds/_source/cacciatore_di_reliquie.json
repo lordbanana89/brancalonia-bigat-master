@@ -6,13 +6,63 @@
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p><em>Esploratore di cripte incaricato di recuperare reliquie sacre o preziose, tra licenze del Credo e tombaroli spregiudicati</em></p>\n",
+      "value": "<p><em>Esploratore di cripte incaricato di recuperare reliquie sacre o preziose, tra licenze del Credo e tombaroli spregiudicati</em></p>\n\n<p>Tra catacombe franate, mausolei profanati e cripte dimenticate, il cacciatore di reliquie vive di esplorazione e saccheggio controllato nel nome del Credo o del miglior offerente.</p>\n<p>Una licenza bollata consente di rovistare tra ossari e reliquiari, catalogando con scrupolo ogni ritrovamento per evitare accuse di contraffazione e gli anatemi delle gerarchie ecclesiastiche.</p>\n<p>Che sia un devoto ricercatore o un opportunista affamato di oro, conosce mappe antiche, trappole e procedure di autenticazione meglio di chiunque altro nel Regno.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Indagare e Storia</p>\n<p><strong>Competenze Strumenti:</strong> Arnesi da scasso e scorte da calligrafo</p>\n<p><strong>Linguaggi:</strong> Maccheronico (lingua liturgica e burocratica)</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Custodia per pergamene con appunti di studio</li>\n<li>Piede di porco</li>\n<li>Abito da viaggiatore</li>\n<li>Borsa con 10 ma</li>\n</ul>\n\n<h3>Privilegio: Studioso di Reliquie</h3>\n<p>Grazie alla licenza ufficiale può consultare archivi e raccolte del Credo, ottenere informazioni su reliquie e siti di ritrovamento e farsi riconoscere come esperto autorizzato.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Tratto</th></tr></thead><tbody>\n<tr><td>1</td><td>Ama tutto ciò che riguarda il mistero e l'ignoto.</td></tr>\n<tr><td>2</td><td>È affascinato dalla morte e dai cadaveri.</td></tr>\n<tr><td>3</td><td>Considera ogni reliquia la prossima miniera d'oro.</td></tr>\n<tr><td>4</td><td>È membro del Credo ma non rinuncia a bagordi e scazzottate.</td></tr>\n<tr><td>5</td><td>Conosce il fallimento ma non si lascia mai abbattere.</td></tr>\n<tr><td>6</td><td>Non teme le trappole perché manda avanti qualcun altro.</td></tr>\n<tr><td>7</td><td>Vive la cerca come una vera vocazione.</td></tr>\n<tr><td>8</td><td>Si sente più a suo agio nei cunicoli di una catacomba che tra le strade ordinate di una città.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Ideale</th></tr></thead><tbody>\n<tr><td>1</td><td>Ricerca. Restituire una reliquia al Credo significa onorare i Santi. (Buono)</td></tr>\n<tr><td>2</td><td>Conservazione. Una reliquia è preziosa e dovrebbe stare in un museo. (Legale)</td></tr>\n<tr><td>3</td><td>Rischio. I pericoli rendono ogni spedizione degna di essere vissuta. (Caotico)</td></tr>\n<tr><td>4</td><td>Cupidigia. Prometto la stessa reliquia a più acquirenti e raccolgo tutto il denaro. (Malvagio)</td></tr>\n<tr><td>5</td><td>Riposo. Ciò che resiste alla morte va esorcizzato o consegnato a mani sicure. (Neutrale)</td></tr>\n<tr><td>6</td><td>Mistero. L'ignoto che avvolge tombe e mausolei è la vera ricompensa. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Legame</th></tr></thead><tbody>\n<tr><td>1</td><td>Sin da bambino ho sentito storie su Malacarne e Malelingue: devo scoprire la verità.</td></tr>\n<tr><td>2</td><td>Ho lavorato a lungo per il Credo e conservo amici tra i sacerdoti.</td></tr>\n<tr><td>3</td><td>Una cicatrice pulsante mi avverte quando una reliquia è vicina.</td></tr>\n<tr><td>4</td><td>Sono devoto al Credo e uso ogni ritrovamento per sostenerlo.</td></tr>\n<tr><td>5</td><td>Credo di avere un Santo tra i miei avi e cerco una reliquia a lui collegata.</td></tr>\n<tr><td>6</td><td>Custodisco il diario di un celebre reliquiario del Credo pieno di appunti preziosi.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Difetto</th></tr></thead><tbody>\n<tr><td>1</td><td>Soffro di una lieve claustrofobia.</td></tr>\n<tr><td>2</td><td>Detesto trascorrere tempo all'aria aperta senza un soffitto sopra la testa.</td></tr>\n<tr><td>3</td><td>Sono paranoico: vedo trappole in ogni corridoio.</td></tr>\n<tr><td>4</td><td>Odio stare fermo e sono fastidiosamente iperattivo.</td></tr>\n<tr><td>5</td><td>Credo che ogni stanza nasconda un vano segreto.</td></tr>\n<tr><td>6</td><td>Non mi separo mai da un frammento di reliquia maleodorante.</td></tr>\n</tbody></table>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Brancalonia Macaronicon p.36-37",
     "identifier": "cacciatore-di-reliquie",
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "RcNWmNN1i2Y0AI1p",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [],
+            "fixed": [
+              "inv",
+              "his"
+            ]
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "Competenze del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "Qd3xWOFkgrqUmByH",
+        "type": "Improvement",
+        "configuration": {
+          "languages": {
+            "chosen": [],
+            "fixed": [
+              "latin"
+            ]
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "Linguaggi del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "anJGy9Bukg0UsI4u",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Studioso di Reliquie",
+        "classRestriction": "",
+        "appliedEffects": []
+      }
+    ]
   },
   "effects": [],
   "folder": null,
@@ -24,7 +74,7 @@
     "brancalonia": {
       "fonte": "Brancalonia Macaronicon p.36-37",
       "tipo": "background",
-      "database_source": true
+      "database_complete": true
     }
   }
 }

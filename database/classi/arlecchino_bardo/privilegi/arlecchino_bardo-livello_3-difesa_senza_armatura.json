@@ -1,10 +1,12 @@
 {
   "id": "arlecchino_bardo-livello_3-difesa_senza_armatura",
   "livello": 3,
-  "nome": "difesa_senza_armatura",
-  "tipo": "attivo",
-  "descrizione": "CA = 10 + DES + CAR senza armatura/scudo",
-  "implementazione": "flags.brancalonia-bigat.unarmoredDefense = 'arlecchino'",
-  "mode": 5,
-  "nota": "Richiede calcolo CA personalizzato"
+  "nome": "Difesa Senza Armatura",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.19",
+  "descrizione": "Allenato a muoverti in scena con leggerezza, danzi tra i colpi contando sulla tua agilità e sulla presenza scenica. Finché non indossi armature e non impugni scudi la tua Classe Armatura è pari a 10 + modificatore di Destrezza + modificatore di Carisma.",
+  "condizioni": [
+    "Non devi indossare armatura",
+    "Non devi impugnare uno scudo"
+  ]
 }

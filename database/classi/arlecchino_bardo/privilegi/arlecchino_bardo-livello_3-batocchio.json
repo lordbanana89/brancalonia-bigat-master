@@ -1,10 +1,28 @@
 {
   "id": "arlecchino_bardo-livello_3-batocchio",
   "livello": 3,
-  "nome": "batocchio",
-  "tipo": "attivo",
-  "descrizione": "Reazione con dado ispirazione: nemico TS SAG o perde attacco ed è affascinato fino al suo turno",
-  "implementazione": "flags.brancalonia-bigat.batocchio = true",
-  "mode": 5,
-  "nota": "Richiede macro per reazione"
+  "nome": "Batocchio",
+  "tipo": "reazione",
+  "fonte": "Manuale Base p.19",
+  "descrizione": "Il batocchio, manganello sonoro tipico degli arlecchini, diventa un espediente scenico devastante. Con una battuta fulminea distrai l'avversario nel momento dell'attacco, trasformando un colpo andato a segno in una gag imbarazzante.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "reazione",
+      "momento": "Quando una creatura effettua un attacco contro di te",
+      "costo": "Consuma un dado di Ispirazione Bardica"
+    },
+    "tiro_salvezza": {
+      "abilità": "Saggezza",
+      "cd": "CD incantesimi del bardo",
+      "esito": {
+        "fallimento": "L'attacco fallisce e il bersaglio è affascinato da te fino all'inizio del suo prossimo turno",
+        "successo": "L'attacco procede normalmente"
+      }
+    }
+  },
+  "condizioni": [
+    "Devi poter vedere l'attaccante",
+    "L'attaccante deve poter vedere o sentire la tua gag"
+  ],
+  "note": "L'effetto di affascinato rappresenta il pubblico che scoppia a ridere di fronte alla burla del batocchio."
 }

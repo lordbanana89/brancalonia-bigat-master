@@ -2,27 +2,27 @@
   "totale": 4,
   "privilegi": [
     {
-      "id": "arlecchino_bardo-livello_3-batocchio",
-      "livello": 3,
-      "nome": "batocchio",
-      "file": "arlecchino_bardo-livello_3-batocchio.json"
-    },
-    {
       "id": "arlecchino_bardo-livello_3-competenze_bonus",
       "livello": 3,
-      "nome": "competenze_bonus",
+      "nome": "Competenze Bonus",
       "file": "arlecchino_bardo-livello_3-competenze_bonus.json"
+    },
+    {
+      "id": "arlecchino_bardo-livello_3-batocchio",
+      "livello": 3,
+      "nome": "Batocchio",
+      "file": "arlecchino_bardo-livello_3-batocchio.json"
     },
     {
       "id": "arlecchino_bardo-livello_3-difesa_senza_armatura",
       "livello": 3,
-      "nome": "difesa_senza_armatura",
+      "nome": "Difesa Senza Armatura",
       "file": "arlecchino_bardo-livello_3-difesa_senza_armatura.json"
     },
     {
       "id": "arlecchino_bardo-livello_6-silenzio_in_sala",
       "livello": 6,
-      "nome": "silenzio_in_sala",
+      "nome": "Silenzio in Sala",
       "file": "arlecchino_bardo-livello_6-silenzio_in_sala.json"
     }
   ]

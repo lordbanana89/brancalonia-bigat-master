@@ -2,16 +2,16 @@
   "totale": 2,
   "privilegi": [
     {
-      "id": "brigante_ladro-livello_3-arte_imboscata",
-      "livello": 3,
-      "nome": "arte_imboscata",
-      "file": "brigante_ladro-livello_3-arte_imboscata.json"
-    },
-    {
       "id": "brigante_ladro-livello_3-brigantaggio",
       "livello": 3,
-      "nome": "brigantaggio",
+      "nome": "Brigantaggio",
       "file": "brigante_ladro-livello_3-brigantaggio.json"
+    },
+    {
+      "id": "brigante_ladro-livello_3-arte_imboscata",
+      "livello": 3,
+      "nome": "Arte dell'Imboscata",
+      "file": "brigante_ladro-livello_3-arte_imboscata.json"
     }
   ]
 }

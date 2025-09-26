@@ -1,12 +1,12 @@
 {
-  "_id": "azzeccagarbugli2s1ve4",
-  "_key": "!items!azzeccagarbugli2s1ve4",
+  "_id": "azzeccagarbugli",
+  "_key": "!items!azzeccagarbugli",
   "name": "Azzeccagarbugli",
   "type": "background",
-  "img": "icons/sundries/documents/document-official-capital.webp",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p><em>Faccendiere, notaio e leguleio esperto di burocrazia e cavilli legali</em></p>\n<p><strong>Skill Proficiencies:</strong> Investigation, Persuasion</p>\n<p><strong>Tool Proficiencies:</strong> Arnesi da falsario</p>\n<p><strong>Languages:</strong> Maccheronico (lingua burocratica e religiosa)</p>\n<p><strong>Equipment:</strong> Libro leggi regionali, calamaio, pennino, pergamena, abito pregiato, borsa 20 ma</p>\n<h3>Suggested Characteristics</h3>\n<table><thead><tr><th>d6</th><th>Ideal</th></tr></thead><tbody><tr><td>1</td><td>Parità di opportunità (Buono)</td></tr><tr><td>2</td><td>Uguaglianza (Legale)</td></tr><tr><td>3</td><td>Giustizia dei ladri (Caotico)</td></tr><tr><td>4</td><td>Avvocato del diavolo (Malvagio)</td></tr><tr><td>5</td><td>Equanimità (Neutrale)</td></tr><tr><td>6</td><td>Ordine (Qualsiasi)</td></tr></tbody></table>\n",
+      "value": "<p><em>Faccendiere, notaio e leguleio esperto di burocrazia e cavilli legali</em></p>\n\n<p>Simbolo della vita civile del Regno, l’azzeccagarbugli è faccendiere, notaio e pennivendolo che conosce a menadito cavilli, codicilli e vizi di forma.</p>\n<p>Metà funzionario e metà canaglia, naviga tra tribunali, birri ed Equitaglia per aggirare le leggi e farle piegare ai propri clienti.</p>\n<p>Le bande lo assoldano quando serve una lingua affilata capace di trattare, corrompere o confondere magistrati, nobili e pezzi grossi.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Indagare e Persuasione</p>\n<p><strong>Competenze Strumenti:</strong> Arnesi da falsario</p>\n<p><strong>Linguaggi:</strong> Maccheronico (lingua burocratica e religiosa)</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Libro sulle leggi della regione di provenienza</li>\n<li>Calamaio di inchiostro nero</li>\n<li>Pennino</li>\n<li>Pergamena</li>\n<li>Abito pregiato</li>\n<li>Borsa con 20 ma</li>\n</ul>\n\n<h3>Privilegio: Risolvere Guai</h3>\n<p>Può annullare una Malefatta sua o di un compagno pagando subito un ammontare pari al Valore di Taglia, prima che venga registrata.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Tratto</th></tr></thead><tbody>\n<tr><td>1</td><td>È maestro nelle supercazzole e rifila cavilli al primo che incontra.</td></tr>\n<tr><td>2</td><td>Accetta favori e pagamenti di ogni tipo pur di chiudere un affare.</td></tr>\n<tr><td>3</td><td>Colleziona leggi e testi scritti che studia in ogni momento libero.</td></tr>\n<tr><td>4</td><td>Ama infiorettare i discorsi con frasi e motti in Maccheronico.</td></tr>\n<tr><td>5</td><td>Adora confrontarsi con notabili e riesce a zittire anche nobili e ordinali.</td></tr>\n<tr><td>6</td><td>Si incaponisce nel risolvere i problemi più intricati e difficili.</td></tr>\n<tr><td>7</td><td>Ha una parlantina inarrestabile ed è capace di vendere ghiaccio ai varaghi.</td></tr>\n<tr><td>8</td><td>Sfoggia un nome d’arte pomposo, eredità della sua professione.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Ideale</th></tr></thead><tbody>\n<tr><td>1</td><td>Parità di opportunità. Anche i poveri devono potersi difendere. (Buono)</td></tr>\n<tr><td>2</td><td>Uguaglianza. Leggi e trattamenti devono essere uguali per tutti. (Legale)</td></tr>\n<tr><td>3</td><td>Giustizia dei ladri. Le canaglie meritano i loro cavilli. (Caotico)</td></tr>\n<tr><td>4</td><td>Avvocato del diavolo. Difende tiranni e criminali per tornaconto. (Malvagio)</td></tr>\n<tr><td>5</td><td>Equanimità. Accetta colpe e pene, ma anche i modi per evitarle. (Neutrale)</td></tr>\n<tr><td>6</td><td>Ordine. Il mondo deve funzionare come un meccanismo oliato. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Legame</th></tr></thead><tbody>\n<tr><td>1</td><td>Il maestro di retorica e diritto che gli ha insegnato a rubare.</td></tr>\n<tr><td>2</td><td>Un parente che lo disprezza perché ha tradito la professione per diventare canaglia.</td></tr>\n<tr><td>3</td><td>Il capobanda inflessibile di cui è stato consigliere.</td></tr>\n<tr><td>4</td><td>La persona che lo ha costretto a diventare una canaglia tradendo la professione.</td></tr>\n<tr><td>5</td><td>Il cliente che non è riuscito a salvare e che marcisce ancora in prigione.</td></tr>\n<tr><td>6</td><td>La persona che ha sempre amato ed è stata uccisa per colpa del suo mestiere.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Difetto</th></tr></thead><tbody>\n<tr><td>1</td><td>È avido e valuta ogni azione solo in base al guadagno.</td></tr>\n<tr><td>2</td><td>È borioso e presuntuoso: pensa di sapere tutto.</td></tr>\n<tr><td>3</td><td>Ambisce a comandare la banda e farà di tutto per riuscirci.</td></tr>\n<tr><td>4</td><td>Vuole sempre avere l’ultima parola su ogni questione.</td></tr>\n<tr><td>5</td><td>Pensa soltanto a se stesso ed è pronto a tradire chiunque.</td></tr>\n<tr><td>6</td><td>Considera i compagni della Cricca come propri tirapiedi personali.</td></tr>\n</tbody></table>\n",
       "chat": "",
       "unidentified": ""
     },
@@ -14,7 +14,7 @@
     "identifier": "azzeccagarbugli",
     "advancement": [
       {
-        "_id": "m4V5Ct1thInuC5op",
+        "_id": "F1M2erZpZ7SZ4chu",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -27,30 +27,40 @@
         },
         "value": {},
         "level": 0,
-        "title": "",
+        "title": "Competenze del Background",
         "classRestriction": "",
         "appliedEffects": []
       },
       {
-        "_id": "QhHdrpnuoSHLGOlu",
+        "_id": "nZfcVGOPtLrD1QvA",
         "type": "Improvement",
         "configuration": {
           "languages": {
             "chosen": [],
-            "fixed": []
+            "fixed": [
+              "latin"
+            ]
           }
         },
         "value": {},
         "level": 0,
-        "title": "",
+        "title": "Linguaggi del Background",
         "classRestriction": "",
         "appliedEffects": []
-      }
-    ],
-    "startingEquipment": [
+      },
       {
-        "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
-        "quantity": 20
+        "_id": "Qh3AZY4144g9fv1g",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Risolvere Guai",
+        "classRestriction": "",
+        "appliedEffects": []
       }
     ]
   },
@@ -63,11 +73,8 @@
   "flags": {
     "brancalonia": {
       "fonte": "Manuale Base p.33",
-      "validazione": {
-        "implementato": true,
-        "file_id": "azzeccagarbugli001",
-        "compendio": "backgrounds"
-      }
+      "tipo": "background",
+      "database_complete": true
     }
   }
 }

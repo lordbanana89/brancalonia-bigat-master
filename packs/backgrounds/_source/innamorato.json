@@ -6,13 +6,63 @@
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p><em>Cortigiano raffinato dell'Amor Cortese, addestrato a poesia, diplomazia e seduzione</em></p>\n",
+      "value": "<p><em>Cortigiano raffinato dell'Amor Cortese, addestrato a poesia, diplomazia e seduzione</em></p>\n\n<p>Cresciuto tra corti, salotti e ricevimenti, l'innamorato padroneggia l'etichetta, la poesia e i giochi dell'amor cortese.</p>\n<p>La sua vita è fatta di corteggiamenti, intrighi sentimentali e raffinate arti liberali studiate per conquistare favori e incarichi prestigiosi.</p>\n<p>Dietro le moine si cela un carattere carismatico: può essere idealista, manipolatore o un cicisbeo annoiato in cerca di emozioni vere.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Persuasione e Storia</p>\n<p><strong>Competenze Strumenti:</strong> Uno strumento musicale a scelta e scorte da calligrafo</p>\n<p><strong>Linguaggi:</strong> Draconiano</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Strumento musicale a scelta</li>\n<li>Raccolta di lettere d'amore</li>\n<li>Libro di poesie</li>\n<li>Calamaio di inchiostro nero</li>\n<li>Pennino</li>\n<li>Borsa con 15 ma</li>\n</ul>\n\n<h3>Privilegio: Cortesia</h3>\n<p>Grazie ai modi impeccabili ottiene ospitalità e piccoli favori nelle case dove la cortesia è apprezzata e annulla gli svantaggi sociali dovuti all'equipaggiamento scadente.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Tratto</th></tr></thead><tbody>\n<tr><td>1</td><td>Non si priva mai di nulla che cuore ed ego desiderino.</td></tr>\n<tr><td>2</td><td>Sa far arrossire chiunque con modi e lusinghe.</td></tr>\n<tr><td>3</td><td>Non conosce il concetto di lavorare o darsi da fare.</td></tr>\n<tr><td>4</td><td>Ama la filosofia e disprezza le menti chiuse.</td></tr>\n<tr><td>5</td><td>Mantiene un atteggiamento sempre positivo e sprezzante.</td></tr>\n<tr><td>6</td><td>Saprebbe infilarsi nel letto di re o regine senza vantarsene.</td></tr>\n<tr><td>7</td><td>È tormentato dalla propria incapacità di controllare le passioni.</td></tr>\n<tr><td>8</td><td>Parla di sé in terza persona e si comporta da superiore.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Ideale</th></tr></thead><tbody>\n<tr><td>1</td><td>Fiducia. Vedo il mondo con fantasia e credo negli altri. (Buono)</td></tr>\n<tr><td>2</td><td>Etichetta. Non comprometto mai l'immagine con volgarità. (Legale)</td></tr>\n<tr><td>3</td><td>Plutonianticismo. È meglio amare e soffrire che non amare affatto. (Caotico)</td></tr>\n<tr><td>4</td><td>Plagio. Uso emozioni altrui per il mio vantaggio. (Malvagio)</td></tr>\n<tr><td>5</td><td>Filosofia. Ogni sentimento è giustificabile e filtro il mondo attraverso di esso. (Neutrale)</td></tr>\n<tr><td>6</td><td>Autenticità. Cerco emozioni vere oltre le corti. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Legame</th></tr></thead><tbody>\n<tr><td>1</td><td>Voglio diventare un eroe per conquistare un cuore inaccessibile.</td></tr>\n<tr><td>2</td><td>Un animale parlante mi ha introdotto tra la gioventù altolocata di Vortiga.</td></tr>\n<tr><td>3</td><td>Porto le fedi nuziali dei miei genitori come simbolo dell'amore vero.</td></tr>\n<tr><td>4</td><td>Ho un sigillo in ceralacca personalizzato e stravagante.</td></tr>\n<tr><td>5</td><td>Ho un amante illustre e segreto che mi mantiene.</td></tr>\n<tr><td>6</td><td>Ho fondato un circolo letterario di giovani poeti.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Difetto</th></tr></thead><tbody>\n<tr><td>1</td><td>Cerco di sedurre qualsiasi adulto consenziente.</td></tr>\n<tr><td>2</td><td>Sono eccessivamente pieno di me stesso.</td></tr>\n<tr><td>3</td><td>Sono un ritardatario cronico e inaffidabile.</td></tr>\n<tr><td>4</td><td>Sono insensatamente competitivo, anche con gli amici.</td></tr>\n<tr><td>5</td><td>Nascondo un segreto che mi marchierebbe come Infame.</td></tr>\n<tr><td>6</td><td>Non so accettare un rifiuto.</td></tr>\n</tbody></table>\n",
       "chat": "",
       "unidentified": ""
     },
     "source": "Brancalonia Macaronicon p.38-39",
     "identifier": "innamorato",
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "Fb0MexpRNqF1G2kn",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [],
+            "fixed": [
+              "per",
+              "his"
+            ]
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "Competenze del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "BgkdmETHAfR5kbvK",
+        "type": "Improvement",
+        "configuration": {
+          "languages": {
+            "chosen": [],
+            "fixed": [
+              "draconiano"
+            ]
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "Linguaggi del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "qKCsCdtiKVDoehBi",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Cortesia",
+        "classRestriction": "",
+        "appliedEffects": []
+      }
+    ]
   },
   "effects": [],
   "folder": null,
@@ -24,7 +74,7 @@
     "brancalonia": {
       "fonte": "Brancalonia Macaronicon p.38-39",
       "tipo": "background",
-      "database_source": true
+      "database_complete": true
     }
   }
 }
