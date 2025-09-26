@@ -1,0 +1,149 @@
+{
+  "nome": "Cacciatore di reliquie",
+  "fonte": "Brancalonia Macaronicon p.36-37",
+  "tipo": "background",
+  "descrizione": "Esploratore di cripte incaricato di recuperare reliquie sacre o preziose, tra licenze del Credo e tombaroli spregiudicati",
+  "testo": {
+    "introduzione": [
+      "Tra catacombe franate, mausolei profanati e cripte dimenticate, il cacciatore di reliquie vive di esplorazione e saccheggio controllato nel nome del Credo o del miglior offerente.",
+      "Una licenza bollata consente di rovistare tra ossari e reliquiari, catalogando con scrupolo ogni ritrovamento per evitare accuse di contraffazione e gli anatemi delle gerarchie ecclesiastiche.",
+      "Che sia un devoto ricercatore o un opportunista affamato di oro, conosce mappe antiche, trappole e procedure di autenticazione meglio di chiunque altro nel Regno." 
+    ],
+    "privilegio": {
+      "nome": "Studioso di Reliquie",
+      "descrizione": "Grazie alla licenza ufficiale può consultare archivi e raccolte del Credo, ottenere informazioni su reliquie e siti di ritrovamento e farsi riconoscere come esperto autorizzato."
+    }
+  },
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Indagare e Storia",
+      "implementazione": {
+        "indagare": "system.skills.inv.value = 1",
+        "storia": "system.skills.his.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Arnesi da scasso e scorte da calligrafo",
+      "implementazione": {
+        "arnesi_da_scasso": "system.tools.thieves.value = 1",
+        "scorte_calligrafo": "system.tools.calligraphers.value = 1"
+      },
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Maccheronico (lingua liturgica e burocratica)",
+      "implementazione": "system.traits.languages.value.push('maccheronico')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Custodia per pergamene con appunti e mappe, piede di porco, abito da viaggiatore, borsa con 10 ma"
+    },
+    "privilegio_studioso_reliquie": {
+      "tipo": "attivo",
+      "descrizione": "Accesso privilegiato ad archivi e reliquiari del Credo per raccogliere informazioni e autenticare reperti",
+      "implementazione": {
+        "accesso_archivi": "flags.brancalonia-bigat.archiviCredo = true"
+      },
+      "mode": 5
+    }
+  },
+  "dettagli": {
+    "identificatore": "cacciatore_di_reliquie",
+    "ricchezza_iniziale": "10 ma",
+    "equipaggiamento": [
+      "Custodia per pergamene con appunti di studio",
+      "Piede di porco",
+      "Abito da viaggiatore",
+      "Borsa con 10 ma"
+    ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "indagare",
+        "storia"
+      ]
+    },
+    {
+      "tipo": "competenze_strumenti",
+      "elenco": [
+        "arnesi_da_scasso",
+        "scorte_da_calligrafo"
+      ]
+    },
+    {
+      "tipo": "linguaggi",
+      "elenco": [
+        "maccheronico"
+      ]
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "Studioso di Reliquie",
+      "descrizione": "Accedi ad archivi e reliquiari del Credo per reperire informazioni su reliquie e siti di ritrovamento.",
+      "fonte": "Brancalonia Macaronicon p.36-37",
+      "implementazione": {
+        "accesso_archivi": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "Ama tutto ciò che riguarda il mistero e l'ignoto.",
+        "È affascinato dalla morte e dai cadaveri.",
+        "Considera ogni reliquia la prossima miniera d'oro.",
+        "È membro del Credo ma non rinuncia a bagordi e scazzottate.",
+        "Conosce il fallimento ma non si lascia mai abbattere.",
+        "Non teme le trappole perché manda avanti qualcun altro.",
+        "Vive la cerca come una vera vocazione.",
+        "Si sente più a suo agio nei cunicoli di una catacomba che tra le strade ordinate di una città."
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Ricerca. Restituire una reliquia al Credo significa onorare i Santi. (Buono)",
+        "Conservazione. Una reliquia è preziosa e dovrebbe stare in un museo. (Legale)",
+        "Rischio. I pericoli rendono ogni spedizione degna di essere vissuta. (Caotico)",
+        "Cupidigia. Prometto la stessa reliquia a più acquirenti e raccolgo tutto il denaro. (Malvagio)",
+        "Riposo. Ciò che resiste alla morte va esorcizzato o consegnato a mani sicure. (Neutrale)",
+        "Mistero. L'ignoto che avvolge tombe e mausolei è la vera ricompensa. (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "Sin da bambino ho sentito storie su Malacarne e Malelingue: devo scoprire la verità.",
+        "Ho lavorato a lungo per il Credo e conservo amici tra i sacerdoti.",
+        "Una cicatrice pulsante mi avverte quando una reliquia è vicina.",
+        "Sono devoto al Credo e uso ogni ritrovamento per sostenerlo.",
+        "Credo di avere un Santo tra i miei avi e cerco una reliquia a lui collegata.",
+        "Custodisco il diario di un celebre reliquiario del Credo pieno di appunti preziosi."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "Soffro di una lieve claustrofobia.",
+        "Detesto trascorrere tempo all'aria aperta senza un soffitto sopra la testa.",
+        "Sono paranoico: vedo trappole in ogni corridoio.",
+        "Odio stare fermo e sono fastidiosamente iperattivo.",
+        "Credo che ogni stanza nasconda un vano segreto.",
+        "Non mi separo mai da un frammento di reliquia maleodorante."
+      ]
+    }
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "cacciatore_reliquie001",
+    "compendio": "backgrounds_macaronicon"
+  }
+}
