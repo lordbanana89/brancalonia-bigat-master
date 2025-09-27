@@ -1,0 +1,215 @@
+<form class="brancalonia-theme-config">
+  <nav class="tabs">
+    <a class="item" data-tab="colors"><i class="fas fa-palette"></i> Colori</a>
+    <a class="item" data-tab="images"><i class="fas fa-image"></i> Immagini</a>
+    <a class="item" data-tab="presets"><i class="fas fa-folder"></i> Preset</a>
+    <a class="item" data-tab="advanced"><i class="fas fa-code"></i> Avanzato</a>
+  </nav>
+
+  <section class="content">
+    <!-- Tab Colori -->
+    <div class="tab" data-tab="colors">
+      <h3>Controlli</h3>
+      <div class="form-group">
+        <label>Contenuto Controlli</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlContent" value="{{theme.colors.controlContent}}">
+          <input type="text" name="theme.colors.controlContent" value="{{theme.colors.controlContent}}">
+          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Bordo Controlli</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlBorder" value="{{theme.colors.controlBorder}}">
+          <input type="text" name="theme.colors.controlBorder" value="{{theme.colors.controlBorder}}">
+          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <h3>Applicazioni</h3>
+      <div class="form-group">
+        <label>Header Contenuto</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appHeaderContent" value="{{theme.colors.appHeaderContent}}">
+          <input type="text" name="theme.colors.appHeaderContent" value="{{theme.colors.appHeaderContent}}">
+          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Body Contenuto</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appBodyContent" value="{{theme.colors.appBodyContent}}">
+          <input type="text" name="theme.colors.appBodyContent" value="{{theme.colors.appBodyContent}}">
+          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Body Sfondo 1</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appBodyPrimaryFill1" value="{{theme.colors.appBodyPrimaryFill1}}">
+          <input type="text" name="theme.colors.appBodyPrimaryFill1" value="{{theme.colors.appBodyPrimaryFill1}}">
+          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Body Sfondo 2</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appBodyPrimaryFill2" value="{{theme.colors.appBodyPrimaryFill2}}">
+          <input type="text" name="theme.colors.appBodyPrimaryFill2" value="{{theme.colors.appBodyPrimaryFill2}}">
+          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <h3>Collegamenti</h3>
+      <div class="form-group">
+        <label>Link Normale</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscLinkIdle" value="{{theme.colors.miscLinkIdle}}">
+          <input type="text" name="theme.colors.miscLinkIdle" value="{{theme.colors.miscLinkIdle}}">
+          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Link Hover</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscLinkFocus" value="{{theme.colors.miscLinkFocus}}">
+          <input type="text" name="theme.colors.miscLinkFocus" value="{{theme.colors.miscLinkFocus}}">
+          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Immagini -->
+    <div class="tab" data-tab="images">
+      <div class="form-group">
+        <label>Logo/Accento</label>
+        <input type="text" name="theme.images.appAccentImage" value="{{theme.images.appAccentImage}}">
+        <p class="notes">Percorso relativo all'immagine logo/accento</p>
+      </div>
+
+      <div class="form-group">
+        <label>Sfondo Sezioni</label>
+        <input type="text" name="theme.images.appSectionBgImage" value="{{theme.images.appSectionBgImage}}">
+        <p class="notes">Percorso relativo all'immagine di sfondo delle sezioni</p>
+      </div>
+
+      <div class="form-group">
+        <label>Sfondo Applicazione</label>
+        <input type="text" name="theme.images.appBgImage" value="{{theme.images.appBgImage}}">
+        <p class="notes">Percorso relativo all'immagine di sfondo dell'applicazione</p>
+      </div>
+
+      <div class="form-group">
+        <label>Sfondo Sidebar</label>
+        <input type="text" name="theme.images.sidebarBgImage" value="{{theme.images.sidebarBgImage}}">
+        <p class="notes">Percorso relativo all'immagine di sfondo della sidebar</p>
+      </div>
+    </div>
+
+    <!-- Tab Preset -->
+    <div class="tab" data-tab="presets">
+      <div class="form-group">
+        <label>Carica Preset</label>
+        <select id="preset-select">
+          {{#each presets}}
+          <option value="{{this.id}}">{{this.name}}</option>
+          {{/each}}
+        </select>
+        <button type="button" class="load-preset">
+          <i class="fas fa-download"></i> Carica
+        </button>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <label>Gestione Tema</label>
+        <div class="button-group">
+          <button type="button" class="export-theme">
+            <i class="fas fa-file-export"></i> Esporta Tema
+          </button>
+          <button type="button" class="import-theme">
+            <i class="fas fa-file-import"></i> Importa Tema
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Avanzato -->
+    <div class="tab" data-tab="advanced">
+      <div class="form-group">
+        <label>CSS Personalizzato</label>
+        <textarea name="theme.advanced" rows="15">{{theme.advanced}}</textarea>
+        <p class="notes">Aggiungi CSS personalizzato che verrà applicato dopo le variabili del tema</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sheet-footer">
+    <button type="submit">
+      <i class="fas fa-save"></i> Salva Tema
+    </button>
+  </footer>
+</form>
+
+<style>
+  .brancalonia-theme-config {
+    padding: 1rem;
+  }
+
+  .brancalonia-theme-config h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--pfu-color-app-border);
+    padding-bottom: 0.5rem;
+  }
+
+  .brancalonia-theme-config .tabs {
+    border-bottom: 1px solid var(--pfu-color-app-border);
+    margin-bottom: 1rem;
+  }
+
+  .brancalonia-theme-config .color-input {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .brancalonia-theme-config .color-input input[type="color"] {
+    width: 50px;
+    height: 30px;
+    border: 1px solid var(--pfu-color-app-border);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .brancalonia-theme-config .color-input input[type="text"] {
+    flex: 1;
+  }
+
+  .brancalonia-theme-config .reset-color {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .brancalonia-theme-config .button-group {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .brancalonia-theme-config .notes {
+    font-size: 0.85rem;
+    color: var(--pfu-color-app-body-content-secondary);
+    margin-top: 0.25rem;
+  }
+
+  .brancalonia-theme-config textarea {
+    font-family: monospace;
+    width: 100%;
+  }
+</style>
