@@ -83,11 +83,9 @@ export class FavoriSystem {
   }
 
   _setupHooks() {
-    // Hook per UI favori
-    Hooks.on("renderActorSheet5e", (app, html, data) => {
-      if (app.actor.type === "character") {
-        this._renderFavoriUI(app, html);
-      }
+    // Hook per UI favori nelle schede personaggio
+    Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
+      this._renderFavoriUI(app, html);
     });
 
     // Hook per Sbraco - gestione Barattiere

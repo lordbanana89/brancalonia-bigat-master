@@ -19,7 +19,7 @@ Hooks.once("ready", () => {
 
     // Configurazione valute di Brancalonia
     if (CONFIG.DND5E?.currencies) {
-      foundry.utils.foundry.utils.mergeObject(CONFIG.DND5E.currencies, {
+      foundry.utils.mergeObject(CONFIG.DND5E.currencies, {
         du: {
           label: "BRANCALONIA.Currency.Ducati",
           abbreviation: "du",
@@ -45,7 +45,7 @@ Hooks.once("ready", () => {
 
     // Abilità custom
     if (CONFIG.DND5E?.skills) {
-      foundry.utils.foundry.utils.mergeObject(CONFIG.DND5E.skills, {
+      foundry.utils.mergeObject(CONFIG.DND5E.skills, {
         streetwise: {
           label: "BRANCALONIA.Skills.Streetwise",
           ability: "wis",
@@ -63,7 +63,7 @@ Hooks.once("ready", () => {
 
     // Tools
     if (CONFIG.DND5E?.tools) {
-      foundry.utils.foundry.utils.mergeObject(CONFIG.DND5E.tools, {
+      foundry.utils.mergeObject(CONFIG.DND5E.tools, {
         cardsGambling: {
           label: "BRANCALONIA.Tools.Cards",
           ability: "int"
@@ -77,7 +77,7 @@ Hooks.once("ready", () => {
 
     // Damage types
     if (CONFIG.DND5E?.damageTypes) {
-      foundry.utils.foundry.utils.mergeObject(CONFIG.DND5E.damageTypes, {
+      foundry.utils.mergeObject(CONFIG.DND5E.damageTypes, {
         nonlethal: {
           label: "BRANCALONIA.DamageTypes.NonLethal",
           img: "icons/skills/melee/unarmed-punch-fist.webp",

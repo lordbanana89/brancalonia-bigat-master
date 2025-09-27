@@ -21,9 +21,9 @@ export class CompagniaManager {
   }
 
   _setupHooks() {
-    // Hook per aggiungere tab Compagnia alle schede
-    Hooks.on("renderActorSheet5e", (app, html, data) => {
-      if (app.actor.type === "character" && this._isInCompagnia(app.actor)) {
+    // Hook per aggiungere tab Compagnia alle schede personaggio
+    Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
+      if (this._isInCompagnia(app.actor)) {
         this._addCompagniaTab(app, html);
       }
     });

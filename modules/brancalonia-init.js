@@ -279,11 +279,8 @@ Hooks.on("createActor", (actor, options, userId) => {
   }
 });
 
-// Hook per modificare sheet degli attori
-Hooks.on("renderActorSheet5e", (app, html, data) => {
-  // Solo per PG
-  if (data.actor.type !== "character") return;
-
+// Hook per modificare sheet dei personaggi
+Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
   // Inizializza se non già fatto
   if (!data.actor.getFlag("brancalonia-bigat", "initialized")) {
     initializeBrancaloniaData(data.actor);
