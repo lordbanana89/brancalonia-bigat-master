@@ -4,6 +4,17 @@
 /* ================================================ */
 
 Hooks.once('diceSoNiceReady', (dice3d) => {
+  // Verifica che Dice So Nice sia attivo
+  if (!game.modules.get('dice-so-nice')?.active) {
+    console.log('🎲 Dice So Nice not active, skipping theme registration');
+    return;
+  }
+
+  // Verifica che dice3d sia valido
+  if (!dice3d) {
+    console.error('❌ Dice So Nice API not available');
+    return;
+  }
   // Funzione helper per leggere CSS variables
   const getCSSVar = (name, fallback) => {
     return getComputedStyle(document.documentElement)
@@ -106,27 +117,45 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
   dice3d.addColorset(wineGoldColorset, 'default');
 
   // Registra preset per dadi più comuni in dnd5e
-  const diceTypes = ['d20', 'd12', 'd10', 'd8', 'd6', 'd4'];
+  // NOTA: In DSN v5.x, i preset richiedono una struttura specifica
+  try {
+    // Verifica che i metodi esistano prima di usarli
+    if (typeof dice3d.addDicePreset === 'function') {
+      // Preset principale per d20 con tema Brancalonia
+      dice3d.addDicePreset({
+        type: 'd20',
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+                '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
+        bumpMaps: [],
+        emissiveMaps: [],
+        emissive: '#000000',
+        colorset: 'branca-goldwax',
+        shape: 'd20',  // IMPORTANTE: shape è richiesto
+        font: 'Alegreya'
+      });
 
-  diceTypes.forEach((type) => {
-    // Preset principale: Oro e Ceralacca
-    dice3d.addDicePreset({
-      type: type,
-      labels: [],
-      colorset: 'branca-goldwax',
-      system: 'dnd5e'
-    }, 'dnd5e');
-  });
+      // Preset per d6 (più comune dopo d20)
+      dice3d.addDicePreset({
+        type: 'd6',
+        labels: ['1', '2', '3', '4', '5', '6'],
+        bumpMaps: [],
+        emissiveMaps: [],
+        emissive: '#000000',
+        colorset: 'branca-parchment',
+        shape: 'd6',  // IMPORTANTE: shape è richiesto
+        font: 'Alegreya'
+      });
 
-  // Preset speciali per d20 (tiro salvezza, attacco, etc.)
-  dice3d.addDicePreset({
-    type: 'd20',
-    labels: ['1', '20'],  // Evidenzia critico e fumble
-    colorset: 'branca-emerald',
-    system: 'dnd5e'
-  }, 'dnd5e');
+      console.log('🎲 Brancalonia Dice Presets: Created d20 and d6 presets');
+    } else {
+      console.warn('⚠️ Dice So Nice addDicePreset method not available');
+    }
+  } catch (error) {
+    console.error('❌ Error creating dice presets:', error);
+    console.log('🔧 Fallback: Using colorsets without presets');
+  }
 
-  console.log('🎲 Brancalonia Dice Theme: Loaded 4 colorsets for Dice So Nice');
+  console.log('🎲 Brancalonia Dice Theme: Successfully loaded colorsets for Dice So Nice');
 
   // Hook per modificare i risultati dei dadi con effetti speciali
   Hooks.on('diceSoNiceRollComplete', (chatMessageID) => {
