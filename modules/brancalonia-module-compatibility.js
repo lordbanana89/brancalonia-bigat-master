@@ -10,11 +10,14 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
 // FIX IMMEDIATO PER POWER SELECT TOOLKIT
 // ============================================
 
-// DEVE essere fatto SUBITO, non in un hook
+// DEVE essere fatto SUBITO e ripetuto più volte
 (function() {
-  // Se Power Select Toolkit è attivo, crea SUBITO gli stub
-  if (typeof Canvas !== 'undefined' && Canvas.prototype) {
-    console.log("🚨 Pre-emptive fix for Power Select Toolkit");
+  console.log("🚨 Attempting pre-emptive fix for Power Select Toolkit");
+
+  // Funzione per creare stub
+  function createCanvasStubs() {
+    if (typeof Canvas !== 'undefined' && Canvas.prototype) {
+      console.log("🔧 Creating Canvas stubs...");
 
     // Lista completa di TUTTI i metodi che PST potrebbe cercare
     const allPossibleMethods = [
@@ -35,7 +38,27 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
       }
     });
 
-    console.log("✅ Pre-emptive stubs created for Canvas methods");
+      console.log("✅ Pre-emptive stubs created for Canvas methods");
+      return true;
+    }
+    return false;
+  }
+
+  // Prova a creare stub immediatamente
+  if (!createCanvasStubs()) {
+    console.log("⏳ Canvas not ready, will retry...");
+
+    // Riprova dopo un breve delay
+    let attempts = 0;
+    const retryInterval = setInterval(() => {
+      attempts++;
+      if (createCanvasStubs() || attempts > 10) {
+        clearInterval(retryInterval);
+        if (attempts > 10) {
+          console.warn("⚠️ Failed to create Canvas stubs after 10 attempts");
+        }
+      }
+    }, 100);
   }
 })();
 
@@ -170,49 +193,24 @@ function checkAndFixOtherModules() {
 }
 
 // ============================================
-// PREVENZIONE ERRORI LIBWRAPPER
+// GESTIONE ERRORI LIBWRAPPER
 // ============================================
 
-// Intercetta errori di libWrapper per moduli incompatibili
+// Non possiamo sovrascrivere libWrapper.register (è read-only)
+// Ma gli stub preventivi dovrebbero prevenire gli errori
+
 Hooks.once("init", () => {
   if (typeof libWrapper !== 'undefined') {
-    const originalRegister = libWrapper.register;
+    console.log("📦 libWrapper detected - stubs should prevent PST errors");
 
-    libWrapper.register = function(packageId, target, fn, type = 'MIXED', options = {}) {
-      try {
-        // Controlla se il target esiste prima di wrappare
-        const parts = target.split('.');
-        let obj = globalThis;
-
-        for (let i = 0; i < parts.length - 1; i++) {
-          obj = obj?.[parts[i]];
-          if (!obj) {
-            console.warn(`⚠️ libWrapper: Target ${target} not found for ${packageId}`);
-
-            // Se è Power Select Toolkit, crea uno stub
-            if (packageId === 'power-select-toolkit') {
-              createStubForTarget(target);
-              // Riprova dopo aver creato lo stub
-              return originalRegister.call(this, packageId, target, fn, type, options);
-            }
-
-            return;
-          }
-        }
-
-        // Chiama l'originale
-        return originalRegister.call(this, packageId, target, fn, type, options);
-      } catch (error) {
-        console.error(`❌ libWrapper registration failed for ${packageId}:`, error);
-
-        // Non far crashare tutto
-        if (packageId === 'power-select-toolkit') {
-          console.warn("⚠️ Power Select Toolkit wrapper failed - module may not work correctly");
-        }
+    // Aggiungi handler per errori libWrapper
+    Hooks.on("libWrapper.Error", (packageId, error) => {
+      if (packageId === 'power-select-toolkit') {
+        console.warn("⚠️ Power Select Toolkit error caught:", error.message);
+        // Previeni propagazione errore
+        return false;
       }
-    };
-
-    console.log("✅ libWrapper safety wrapper installed");
+    });
   }
 });
 
