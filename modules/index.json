@@ -1,0 +1,76 @@
+{
+  "name": "Brancalonia Modules",
+  "description": "Moduli JavaScript del sistema Brancalonia",
+  "lastUpdated": "2025-09-27",
+  "structure": {
+    "core": {
+      "description": "Moduli core del sistema",
+      "files": {
+        "brancalonia.js": "Modulo principale - inizializzazione sistema",
+        "brancalonia-config.js": "Configurazione core D&D 5e overrides",
+        "brancalonia-config-fix.js": "Fix configurazione per Foundry v13",
+        "settings.mjs": "Gestione impostazioni modulo"
+      }
+    },
+    "mechanics": {
+      "description": "Sistemi meccaniche di gioco",
+      "files": {
+        "brancalonia-mechanics.js": "Sistema infamia, compagnia, risse",
+        "brancalonia-conditions.js": "Condizioni custom (menagramo, ubriaco)",
+        "brancalonia-haven.js": "Sistema gestione rifugio",
+        "brancalonia-tooltip-override.js": "Override tooltip per Foundry v13",
+        "level-cap.js": "Sistema livello massimo 6°"
+      }
+    },
+    "ui": {
+      "description": "Moduli interfaccia utente",
+      "files": {
+        "theme.mjs": "Sistema gestione temi",
+        "theme-config.mjs": "Configurazione tema (ApplicationV2)",
+        "brancalonia-ui-hooks.js": "Hook UI per character sheet",
+        "brancalonia-chat-enhancements.js": "Miglioramenti messaggi chat"
+      }
+    },
+    "compatibility": {
+      "description": "Moduli compatibilità",
+      "files": {
+        "brancalonia-v13-compatibility.js": "Compatibilità Foundry v13",
+        "brancalonia-suppress-warnings.js": "Soppressione warning",
+        "brancalonia-image-fix-ultimate.js": "Fix immagini mancanti"
+      }
+    },
+    "effects": {
+      "description": "Sistema Active Effects",
+      "files": {
+        "brancalonia-active-effects.js": "Applicazione runtime effects",
+        "brancalonia-active-effects-complete.js": "Database completo effects"
+      }
+    }
+  },
+  "hooks": {
+    "init": [
+      "brancalonia.js",
+      "brancalonia-config.js",
+      "brancalonia-v13-compatibility.js"
+    ],
+    "ready": [
+      "brancalonia-mechanics.js",
+      "brancalonia-active-effects.js",
+      "theme.mjs"
+    ],
+    "renderActorSheetV2": [
+      "brancalonia-ui-hooks.js"
+    ],
+    "renderChatMessageHTML": [
+      "brancalonia-chat-enhancements.js"
+    ]
+  },
+  "dependencies": {
+    "foundry": "v13.0.0+",
+    "dnd5e": "v5.0.0+",
+    "libraries": {
+      "handlebars": "Template rendering",
+      "foundryvtt": "Core API"
+    }
+  }
+}

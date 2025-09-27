@@ -1,0 +1,110 @@
+{
+  "name": "Brancalonia Scripts",
+  "description": "Script di manutenzione e conversione",
+  "lastUpdated": "2025-09-27",
+  "structure": {
+    "utilities": {
+      "description": "Utility generali per compilazione e gestione",
+      "count": 17,
+      "critical": [
+        "compile-with-keys.cjs - Compila preservando _key (CRITICO!)",
+        "verify-packs.cjs - Verifica integrità database",
+        "add-keys.cjs - Aggiunge _key mancanti",
+        "add-richtooltip.js - Fix tooltip D&D 5e"
+      ],
+      "categories": {
+        "compilation": "Script compilazione database",
+        "validation": "Script validazione",
+        "linking": "Script collegamento contenuti"
+      }
+    },
+    "analyzers": {
+      "description": "Script di analisi e validazione",
+      "count": 14,
+      "critical": [
+        "validate-project-compliance.cjs - Validazione completa",
+        "test-automatico.js - Test suite automatica",
+        "verify-final-coverage.cjs - Verifica copertura"
+      ],
+      "outputs": "Report JSON dettagliati"
+    },
+    "fixers": {
+      "description": "Script correzione problemi",
+      "count": 20,
+      "critical": [
+        "fix-all-compliance.cjs - Fix automatico completo",
+        "find-missing-effects.cjs - Trova effects mancanti",
+        "implement-missing-features.cjs - Implementa feature mancanti"
+      ],
+      "categories": {
+        "structure": "Fix struttura JSON",
+        "content": "Fix contenuti",
+        "compatibility": "Fix compatibilità"
+      }
+    },
+    "converters": {
+      "description": "Script conversione formati",
+      "count": 7,
+      "critical": [
+        "standardize-ids.cjs - Standardizza ID",
+        "normalize-database.js - Normalizza database"
+      ],
+      "formats": {
+        "input": "JSON raw, TXT manuale",
+        "output": "JSON D&D 5e compliant"
+      }
+    },
+    "python": {
+      "description": "Script Python per automazione avanzata",
+      "count": "120+",
+      "agents": [
+        "agent-orchestrator.py - Orchestrazione multi-agent",
+        "agent-validator.py - Validazione struttura",
+        "agent-database.py - Gestione database",
+        "agent-monitor-dnd5e.py - Monitoring D&D 5e"
+      ],
+      "categories": {
+        "agents": "Agent intelligenti",
+        "fixers": "Fix automatici",
+        "analyzers": "Analisi profonda",
+        "converters": "Conversione contenuti"
+      }
+    }
+  },
+  "workflows": {
+    "validation": {
+      "description": "Workflow validazione completa",
+      "steps": [
+        "1. node validate-project-compliance.cjs",
+        "2. Analizza report generato",
+        "3. Se compliance < 90%, esegui fix",
+        "4. node fix-all-compliance.cjs",
+        "5. Rivalidare"
+      ]
+    },
+    "compilation": {
+      "description": "Workflow compilazione pack",
+      "steps": [
+        "1. node add-keys.cjs - Aggiunge _key",
+        "2. node compile-with-keys.cjs - Compila con _key",
+        "3. node verify-packs.cjs - Verifica",
+        "CRITICO: NON usare fvtt CLI direttamente!"
+      ]
+    },
+    "agent": {
+      "description": "Workflow orchestrazione agent",
+      "steps": [
+        "1. python agent-orchestrator.py",
+        "2. Agent eseguiti in pipeline",
+        "3. Report finale generato",
+        "4. Applicazione fix automatici"
+      ]
+    }
+  },
+  "criticalNotes": {
+    "compilation": "SEMPRE usare compile-with-keys.cjs, MAI il CLI Foundry",
+    "validation": "Eseguire validazione prima di ogni commit",
+    "agents": "Gli agent modificano file - backup prima di eseguire",
+    "python": "Richiede Python 3.8+ con pip packages"
+  }
+}

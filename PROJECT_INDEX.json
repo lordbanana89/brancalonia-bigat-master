@@ -1,0 +1,176 @@
+{
+  "name": "Brancalonia BIGAT Master",
+  "version": "4.2.8",
+  "description": "Modulo completo per Brancalonia su Foundry VTT v13",
+  "lastUpdated": "2025-09-27",
+  "structure": {
+    "root": {
+      "description": "Directory principale del progetto",
+      "mainFiles": [
+        "README.md",
+        "module.json",
+        "PROJECT_INDEX.json"
+      ]
+    },
+    "assets": {
+      "description": "Risorse grafiche e multimediali",
+      "subdirs": {
+        "artwork": "Illustrazioni e ambientazioni",
+        "characters": "Immagini personaggi",
+        "icons": "Icone sistema",
+        "maps": "Mappe geografiche",
+        "scenes": "Scene per Foundry",
+        "tokens": "Token personaggi",
+        "ui": "Elementi interfaccia"
+      }
+    },
+    "database": {
+      "description": "Database strutturato contenuti Brancalonia",
+      "index": "database/index.json",
+      "subdirs": {
+        "backgrounds": "Background personaggi",
+        "classi": "Classi e sottoclassi complete",
+        "emeriticenze": "Progressione post-6° livello",
+        "equipaggiamento": "Armi, armature, oggetti",
+        "incantesimi": "Spell per livello 0-9",
+        "razze": "Razze e tratti razziali",
+        "regole": "Regole di gioco",
+        "talenti": "Talenti Brancalonia"
+      }
+    },
+    "docs": {
+      "description": "Documentazione completa del progetto",
+      "subdirs": {
+        "core": {
+          "description": "Documentazione essenziale",
+          "files": [
+            "CRITICAL_LESSONS_LEARNED.md",
+            "MAINTENANCE_GUIDE.md",
+            "UI_CUSTOMIZATION.md"
+          ]
+        },
+        "technical": {
+          "description": "Documentazione tecnica",
+          "files": [
+            "D&D5E_TECHNICAL_DISCOVERIES.md",
+            "DND5E_DATA_MODELS.md",
+            "MULTI_AGENT_SYSTEM.md",
+            "NORMALIZZAZIONE_COMPLETA.md"
+          ]
+        },
+        "database": {
+          "description": "Documentazione database",
+          "files": [
+            "REPORT_FINALE_COMPLETO.md",
+            "STATO_COMPLETAMENTO_DATABASE_2024.md",
+            "STATO_COMPLETO_DATABASE.md"
+          ]
+        },
+        "guides": {
+          "description": "Guide pratiche",
+          "files": ["USAGE_GUIDE.md"]
+        },
+        "reports": {
+          "description": "Report e analisi",
+          "files": [
+            "ANALISI_FINALE_v3.14.0.md",
+            "MULTI_AGENT_FINAL_REPORT.md",
+            "ORCHESTRATION_FINAL_SUCCESS.md",
+            "VALIDATION_REPORT.md"
+          ]
+        }
+      }
+    },
+    "modules": {
+      "description": "Moduli JavaScript del sistema",
+      "mainFiles": [
+        "brancalonia.js",
+        "brancalonia-config.js",
+        "brancalonia-mechanics.js",
+        "theme-config.mjs",
+        "theme.mjs"
+      ],
+      "categories": {
+        "core": "Funzionalità core",
+        "systems": "Sistemi di gioco",
+        "ui": "Interfaccia utente",
+        "compatibility": "Compatibilità Foundry v13"
+      }
+    },
+    "packs": {
+      "description": "Compendi compilati per Foundry",
+      "format": "LevelDB",
+      "compendiums": {
+        "backgrounds": "6 background",
+        "brancalonia-features": "357 privilegi",
+        "classi": "13 classi",
+        "emeriticenze": "11 emeriticenze",
+        "equipaggiamento": "234 oggetti",
+        "incantesimi": "94 incantesimi",
+        "macro": "6 macro",
+        "npc": "44 PNG",
+        "razze": "8 razze",
+        "regole": "18 regole",
+        "rollable-tables": "82 tabelle",
+        "sottoclassi": "21 sottoclassi",
+        "talenti": "8 talenti"
+      }
+    },
+    "repo-files": {
+      "description": "File repository originali preservati",
+      "content": "18 file .txt dal manuale e repository originale"
+    },
+    "scripts": {
+      "description": "Script di manutenzione e conversione",
+      "subdirs": {
+        "utilities": "17 utility generali",
+        "analyzers": "14 script analisi",
+        "fixers": "20 script correzione",
+        "converters": "7 script conversione"
+      },
+      "pythonScripts": "120+ script Python per automazione",
+      "nodeScripts": "58+ script Node.js per compilazione"
+    },
+    "styles": {
+      "description": "Fogli di stile CSS",
+      "mainFiles": [
+        "brancalonia.css",
+        "brancalonia-theme-system.css",
+        "brancalonia-theme-module.css"
+      ]
+    },
+    "templates": {
+      "description": "Template Handlebars",
+      "mainFiles": [
+        "theme-config.hbs",
+        "compagnia-sheet.hbs"
+      ]
+    },
+    "lang": {
+      "description": "File di traduzione",
+      "languages": {
+        "it": "Italiano (principale)",
+        "en": "Inglese (parziale)"
+      }
+    }
+  },
+  "statistics": {
+    "totalFiles": {
+      "json": "800+",
+      "javascript": "35",
+      "python": "120+",
+      "css": "12",
+      "markdown": "27",
+      "txt": "18"
+    },
+    "compiledPacks": 13,
+    "totalItems": 900,
+    "activeEffects": 120,
+    "testsPassed": "93%"
+  },
+  "compatibility": {
+    "foundry": "v13.0.0+",
+    "dnd5e": "v5.0.0+",
+    "tested": "v13.347 / v5.1.9"
+  }
+}

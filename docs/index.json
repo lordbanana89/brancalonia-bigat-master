@@ -1,0 +1,183 @@
+{
+  "name": "Brancalonia Documentation",
+  "description": "Documentazione completa del progetto Brancalonia",
+  "lastUpdated": "2025-09-27",
+  "structure": {
+    "core": {
+      "label": "Documentazione Core",
+      "description": "Guide essenziali e best practices",
+      "files": {
+        "CRITICAL_LESSONS_LEARNED.md": {
+          "description": "Errori critici da non ripetere",
+          "topics": [
+            "Directory di validazione (packs vs packs_normalized)",
+            "UUID references esterni da evitare",
+            "Hook deprecati Foundry v13",
+            "Campo _key obbligatorio"
+          ]
+        },
+        "MAINTENANCE_GUIDE.md": {
+          "description": "Guida manutenzione completa",
+          "version": "v3.21.0",
+          "topics": [
+            "Compliance score tracking",
+            "Script di manutenzione",
+            "Workflow sviluppo",
+            "Checklist release",
+            "CI/CD automation"
+          ]
+        },
+        "UI_CUSTOMIZATION.md": {
+          "description": "Sistema theming rinascimentale",
+          "topics": [
+            "Italian Renaissance theme",
+            "Color palette e typography",
+            "Character sheet enhancements",
+            "Brancalonia-specific trackers"
+          ]
+        }
+      }
+    },
+    "technical": {
+      "label": "Documentazione Tecnica",
+      "description": "Riferimenti tecnici e architettura",
+      "files": {
+        "D&D5E_TECHNICAL_DISCOVERIES.md": {
+          "description": "Scoperte dal repository D&D 5e v5.1.9",
+          "topics": [
+            "ItemGrant format corretto",
+            "Advancement types",
+            "Spell progression",
+            "ScaleValue progressions"
+          ]
+        },
+        "DND5E_DATA_MODELS.md": {
+          "description": "Schema completo D&D 5e",
+          "topics": [
+            "Item types e templates",
+            "Actor types e validazione",
+            "Advancement system",
+            "Activity system"
+          ]
+        },
+        "MULTI_AGENT_SYSTEM.md": {
+          "description": "Architettura orchestrazione agent",
+          "topics": [
+            "8 agent specializzati",
+            "Pipeline esecuzione",
+            "Configurazione",
+            "Troubleshooting"
+          ]
+        },
+        "NORMALIZZAZIONE_COMPLETA.md": {
+          "description": "Sistema conversione database",
+          "topics": [
+            "Converter specializzati",
+            "Mappature skill italiane",
+            "Active Effects",
+            "78% success rate"
+          ]
+        }
+      }
+    },
+    "database": {
+      "label": "Documentazione Database",
+      "description": "Stato e struttura database",
+      "files": {
+        "REPORT_FINALE_COMPLETO.md": {
+          "description": "Overview completa database",
+          "stats": {
+            "manuale_base": "100+ file JSON",
+            "macaronicon": "420 file modulari",
+            "meccaniche": "attivo/advancement/narrativo/passivo"
+          }
+        },
+        "STATO_COMPLETAMENTO_DATABASE_2024.md": {
+          "description": "Progresso completamento",
+          "stats": {
+            "pagano_barbaro": "100%",
+            "guerriero_spadaccino": "40%",
+            "ladro_brigante": "30%",
+            "da_creare": "8 classi"
+          }
+        },
+        "STATO_COMPLETO_DATABASE.md": {
+          "description": "Inventario contenuti",
+          "content": {
+            "razze": "6 base + 3 Macaronicon",
+            "classi": "12 complete",
+            "incantesimi": "20 nuovi Macaronicon",
+            "avventure": "12 complete"
+          }
+        }
+      }
+    },
+    "guides": {
+      "label": "Guide Pratiche",
+      "description": "Tutorial e guide operative",
+      "files": {
+        "USAGE_GUIDE.md": {
+          "description": "Guida agent debugger profondo",
+          "topics": [
+            "869 file processati",
+            "650 convertiti (74.8%)",
+            "7,097 problemi identificati",
+            "Esempi pratici"
+          ]
+        }
+      }
+    },
+    "reports": {
+      "label": "Report e Analisi",
+      "description": "Report finali e analisi progetto",
+      "files": {
+        "ANALISI_FINALE_v3.14.0.md": {
+          "description": "Analisi realistica stato progetto",
+          "stats": {
+            "completamento": "85%",
+            "emeriticenze": "100%",
+            "sistemi_core": "100%"
+          }
+        },
+        "MULTI_AGENT_FINAL_REPORT.md": {
+          "description": "Report orchestrazione finale",
+          "stats": {
+            "agents": 9,
+            "tests": "845 (91% success)",
+            "execution_time": "48.06s"
+          }
+        },
+        "ORCHESTRATION_FINAL_SUCCESS.md": {
+          "description": "Risoluzione finale problemi",
+          "stats": {
+            "errori_critici": "0 (da 6)",
+            "warning": 54,
+            "pack_compilati": "12/12"
+          }
+        },
+        "VALIDATION_REPORT.md": {
+          "description": "Report validazione v3.16.1",
+          "stats": {
+            "documenti": 859,
+            "compilati": "100%",
+            "fix_applicati": "Tutti"
+          }
+        }
+      }
+    }
+  },
+  "navigation": {
+    "quickStart": [
+      "core/MAINTENANCE_GUIDE.md",
+      "core/CRITICAL_LESSONS_LEARNED.md"
+    ],
+    "reference": [
+      "technical/DND5E_DATA_MODELS.md",
+      "technical/D&D5E_TECHNICAL_DISCOVERIES.md"
+    ],
+    "status": [
+      "database/STATO_COMPLETO_DATABASE.md",
+      "reports/VALIDATION_REPORT.md"
+    ]
+  }
+}
