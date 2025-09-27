@@ -38,7 +38,7 @@ export class BrancaloniaMechanics {
     if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
     if (!CONFIG.BRANCALONIA.tables) CONFIG.BRANCALONIA.tables = {};
 
-    foundry.utils.mergeObject(CONFIG.BRANCALONIA.tables, {
+    foundry.utils.foundry.utils.mergeObject(CONFIG.BRANCALONIA.tables, {
       // Tabella Complicazioni Generiche
       complications: {
         name: "Complicazioni di Brancalonia",
@@ -157,7 +157,7 @@ export class BrancaloniaMechanics {
     if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
     if (!CONFIG.BRANCALONIA.traps) CONFIG.BRANCALONIA.traps = {};
 
-    foundry.utils.mergeObject(CONFIG.BRANCALONIA.traps, {
+    foundry.utils.foundry.utils.mergeObject(CONFIG.BRANCALONIA.traps, {
       // Trappola base template
       template: {
         name: "Trappola Base",
@@ -249,7 +249,7 @@ export class BrancaloniaMechanics {
     if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
     if (!CONFIG.BRANCALONIA.patrons) CONFIG.BRANCALONIA.patrons = {};
 
-    foundry.utils.mergeObject(CONFIG.BRANCALONIA.patrons, {
+    foundry.utils.foundry.utils.mergeObject(CONFIG.BRANCALONIA.patrons, {
       types: {
         noble: {
           name: "Nobile Corrotto",
@@ -317,7 +317,7 @@ export class BrancaloniaMechanics {
     if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
     if (!CONFIG.BRANCALONIA.magicItems) CONFIG.BRANCALONIA.magicItems = {};
 
-    foundry.utils.mergeObject(CONFIG.BRANCALONIA.magicItems, {
+    foundry.utils.foundry.utils.mergeObject(CONFIG.BRANCALONIA.magicItems, {
       // Reliquie religiose
       relics: {
         "santo-dito": {

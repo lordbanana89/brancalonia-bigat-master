@@ -85,7 +85,7 @@ export class MalefatteTaglieNomeaSystem {
 
   _setupHooks() {
     // Hook per scheda personaggio
-    Hooks.on("renderActorSheetV2", (app, html, data) => {
+    Hooks.on("renderActorSheet5e", (app, html, data) => {
       if (app.actor.type === "character") {
         this._renderTagliaSection(app, html);
       }

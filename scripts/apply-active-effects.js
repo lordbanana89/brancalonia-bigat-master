@@ -375,7 +375,7 @@ Hooks.once('ready', async () => {
  */
 Hooks.on('createItem', async (item, options, userId) => {
   // Applica solo agli item del modulo Brancalonia
-  if (!item.data.flags?.['brancalonia-bigat']) return;
+  if (!item.flags?.['brancalonia-bigat']) return;
 
   // Applica gli effetti se necessario
   if (!item.effects || item.effects.size === 0) {

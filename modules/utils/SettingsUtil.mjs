@@ -247,17 +247,18 @@ export class SettingsUtil {
   /**
    * Register settings menus
    */
-  static registerMenus() {
+  static async registerMenus() {
+    // Import menu classes first
+    const { ThemeConfig } = await import('../theme-config.mjs');
+    const { AdvancedSettings } = await import('../components/AdvancedSettings.mjs');
+
     // Theme configuration menu
     game.settings.registerMenu(MODULE, 'themeConfig', {
       name: 'BRANCALONIA.Settings.ThemeConfig.Name',
       label: 'BRANCALONIA.Settings.ThemeConfig.Label',
       hint: 'BRANCALONIA.Settings.ThemeConfig.Hint',
       icon: 'fas fa-palette',
-      type: async () => {
-        const { ThemeConfig } = await import('../theme-config.mjs');
-        return ThemeConfig;
-      },
+      type: ThemeConfig,
       restricted: true
     });
 
@@ -267,10 +268,7 @@ export class SettingsUtil {
       label: 'BRANCALONIA.Settings.Advanced.Label',
       hint: 'BRANCALONIA.Settings.Advanced.Hint',
       icon: 'fas fa-cogs',
-      type: async () => {
-        const { AdvancedSettings } = await import('../components/AdvancedSettings.mjs');
-        return AdvancedSettings;
-      },
+      type: AdvancedSettings,
       restricted: false
     });
   }

@@ -275,7 +275,7 @@ Hooks.on("updateItem", async (item, changes, options, userId) => {
 /**
  * Hook per identificazione cimeli
  */
-Hooks.on("renderItemSheetV2", (app, html, data) => {
+Hooks.on("renderItemSheet5e", (app, html, data) => {
     const item = app.object;
 
     if (item.flags?.brancalonia?.categoria !== "cimelo") return;

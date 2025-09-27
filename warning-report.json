@@ -1,0 +1,4607 @@
+{
+  "timestamp": "2025-09-27T14:01:05.828Z",
+  "issues": [
+    {
+      "file": "database/split_cimeli.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 59
+    },
+    {
+      "file": "database/split_cimeli.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 77
+    },
+    {
+      "file": "database/split_cimeli.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 78
+    },
+    {
+      "file": "database/split_cimeli.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 82
+    },
+    {
+      "file": "database/split_cimeli.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 101
+    },
+    {
+      "file": "database/split_cimeli.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 102
+    },
+    {
+      "file": "fvtt-build-packs.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 32
+    },
+    {
+      "file": "fvtt-build-packs.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 56
+    },
+    {
+      "file": "fvtt-build-packs.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 58
+    },
+    {
+      "file": "fvtt-build-packs.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 62
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: createItem",
+      "line": 415
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 315
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 319
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 342
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 348
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 357
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 374
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 378
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 390
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 391
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 408
+    },
+    {
+      "file": "modules/brancalonia-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 432
+    },
+    {
+      "file": "modules/brancalonia-bagordi-games.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 7
+    },
+    {
+      "file": "modules/brancalonia-bagordi-games.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 513
+    },
+    {
+      "file": "modules/brancalonia-cache-buster.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 11
+    },
+    {
+      "file": "modules/brancalonia-cache-buster.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 18
+    },
+    {
+      "file": "modules/brancalonia-cache-buster.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 28
+    },
+    {
+      "file": "modules/brancalonia-compat-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 3
+    },
+    {
+      "file": "modules/brancalonia-compat-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 26
+    },
+    {
+      "file": "modules/brancalonia-compat-fix.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 52
+    },
+    {
+      "file": "modules/brancalonia-conditions.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 12
+    },
+    {
+      "file": "modules/brancalonia-config-fix.js",
+      "type": "deprecated",
+      "description": "mergeObject -> foundry.utils.mergeObject",
+      "pattern": "mergeObject\\("
+    },
+    {
+      "file": "modules/brancalonia-config-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 6
+    },
+    {
+      "file": "modules/brancalonia-config-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 10
+    },
+    {
+      "file": "modules/brancalonia-config-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 15
+    },
+    {
+      "file": "modules/brancalonia-config-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 93
+    },
+    {
+      "file": "modules/brancalonia-cursed-relics.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: updateItem",
+      "line": 223
+    },
+    {
+      "file": "modules/brancalonia-cursed-relics.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: renderItemSheetV2",
+      "line": 278
+    },
+    {
+      "file": "modules/brancalonia-cursed-relics.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 7
+    },
+    {
+      "file": "modules/brancalonia-cursed-relics.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 56
+    },
+    {
+      "file": "modules/brancalonia-cursed-relics.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 58
+    },
+    {
+      "file": "modules/brancalonia-cursed-relics.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 413
+    },
+    {
+      "file": "modules/brancalonia-data-validator.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 6
+    },
+    {
+      "file": "modules/brancalonia-data-validator.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 14
+    },
+    {
+      "file": "modules/brancalonia-data-validator.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 28
+    },
+    {
+      "file": "modules/brancalonia-data-validator.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 64
+    },
+    {
+      "file": "modules/brancalonia-data-validator.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 77
+    },
+    {
+      "file": "modules/brancalonia-data-validator.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 113
+    },
+    {
+      "file": "modules/brancalonia-data-validator.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 122
+    },
+    {
+      "file": "modules/brancalonia-deprecation-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 6
+    },
+    {
+      "file": "modules/brancalonia-deprecation-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 10
+    },
+    {
+      "file": "modules/brancalonia-deprecation-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 17
+    },
+    {
+      "file": "modules/brancalonia-deprecation-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 23
+    },
+    {
+      "file": "modules/brancalonia-deprecation-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 29
+    },
+    {
+      "file": "modules/brancalonia-deprecation-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 35
+    },
+    {
+      "file": "modules/brancalonia-deprecation-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 41
+    },
+    {
+      "file": "modules/brancalonia-deprecation-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 47
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 6
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 36
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 52
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 91
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 138
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 164
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 173
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 197
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 203
+    },
+    {
+      "file": "modules/brancalonia-image-fallback.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 211
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 7
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 64
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 86
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 103
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 123
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 143
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 152
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 182
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 194
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 200
+    },
+    {
+      "file": "modules/brancalonia-image-fix-ultimate.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 201
+    },
+    {
+      "file": "modules/brancalonia-init.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: createActor",
+      "line": 276
+    },
+    {
+      "file": "modules/brancalonia-init.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 8
+    },
+    {
+      "file": "modules/brancalonia-init.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 62
+    },
+    {
+      "file": "modules/brancalonia-init.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 64
+    },
+    {
+      "file": "modules/brancalonia-init.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 210
+    },
+    {
+      "file": "modules/brancalonia-links.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 6
+    },
+    {
+      "file": "modules/brancalonia-mechanics.js",
+      "type": "deprecated",
+      "description": "mergeObject -> foundry.utils.mergeObject",
+      "pattern": "mergeObject\\("
+    },
+    {
+      "file": "modules/brancalonia-mechanics.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: updateActor",
+      "line": 131
+    },
+    {
+      "file": "modules/brancalonia-menagramo-jinx.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: createItem",
+      "line": 237
+    },
+    {
+      "file": "modules/brancalonia-menagramo-jinx.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: updateActor",
+      "line": 292
+    },
+    {
+      "file": "modules/brancalonia-menagramo-jinx.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 7
+    },
+    {
+      "file": "modules/brancalonia-menagramo-jinx.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 429
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 7
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 21
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 32
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 77
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 83
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 93
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 103
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 105
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 129
+    },
+    {
+      "file": "modules/brancalonia-polygon-fix.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 137
+    },
+    {
+      "file": "modules/brancalonia-rischi-mestiere.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 509
+    },
+    {
+      "file": "modules/brancalonia-rischi-mestiere.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 513
+    },
+    {
+      "file": "modules/brancalonia-rules-chat.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 122
+    },
+    {
+      "file": "modules/brancalonia-rules-chat.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 358
+    },
+    {
+      "file": "modules/brancalonia-sheets.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 10
+    },
+    {
+      "file": "modules/brancalonia-sheets.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 17
+    },
+    {
+      "file": "modules/brancalonia-sheets.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 79
+    },
+    {
+      "file": "modules/brancalonia-suppress-warnings-simple.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 6
+    },
+    {
+      "file": "modules/brancalonia-suppress-warnings-simple.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 41
+    },
+    {
+      "file": "modules/brancalonia-tavern-brawl.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 7
+    },
+    {
+      "file": "modules/brancalonia-tavern-brawl.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 467
+    },
+    {
+      "file": "modules/brancalonia-theme.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 15
+    },
+    {
+      "file": "modules/brancalonia-theme.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 65
+    },
+    {
+      "file": "modules/brancalonia-theme.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 69
+    },
+    {
+      "file": "modules/brancalonia-theme.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 70
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 6
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 27
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 31
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 41
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 47
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 53
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 57
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 68
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 75
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 85
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 110
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 114
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 140
+    },
+    {
+      "file": "modules/brancalonia-tooltip-override.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 162
+    },
+    {
+      "file": "modules/brancalonia-v13-compatibility.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 6
+    },
+    {
+      "file": "modules/brancalonia-v13-compatibility.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 70
+    },
+    {
+      "file": "modules/brancalonia-v13-compatibility.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 92
+    },
+    {
+      "file": "modules/compagnia-manager.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: renderActorSheetV2",
+      "line": 25
+    },
+    {
+      "file": "modules/compagnia-manager.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: createItem",
+      "line": 32
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 8
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 18
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 21
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 27
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 30
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 43
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 46
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 57
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 62
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 67
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 70
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 84
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 87
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 93
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 94
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 95
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 96
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 99
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 102
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 104
+    },
+    {
+      "file": "modules/compatibility-test.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 106
+    },
+    {
+      "file": "modules/components/ChatEnhancements.mjs",
+      "type": "deprecated",
+      "description": "setProperty -> foundry.utils.setProperty",
+      "pattern": "setProperty\\("
+    },
+    {
+      "file": "modules/covo-granlussi.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: renderActorSheetV2",
+      "line": 239
+    },
+    {
+      "file": "modules/diseases-system.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: updateActor",
+      "line": 251
+    },
+    {
+      "file": "modules/factions-system.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: preUpdateItem",
+      "line": 384
+    },
+    {
+      "file": "modules/favori-system.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: renderActorSheetV2",
+      "line": 87
+    },
+    {
+      "file": "modules/favori-system.js",
+      "type": "todo",
+      "description": "TODO: determinare se è la propria banda",
+      "line": 169
+    },
+    {
+      "file": "modules/level-cap.js",
+      "type": "deprecated",
+      "description": "getProperty -> foundry.utils.getProperty",
+      "pattern": "getProperty\\("
+    },
+    {
+      "file": "modules/level-cap.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: preUpdateItem",
+      "line": 98
+    },
+    {
+      "file": "modules/level-cap.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: preCreateItem",
+      "line": 117
+    },
+    {
+      "file": "modules/level-cap.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: updateActor",
+      "line": 133
+    },
+    {
+      "file": "modules/malefatte-taglie-nomea.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: renderActorSheetV2",
+      "line": 88
+    },
+    {
+      "file": "modules/malefatte-taglie-nomea.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: createActor",
+      "line": 95
+    },
+    {
+      "file": "modules/rest-system.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 344
+    },
+    {
+      "file": "modules/settings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 201
+    },
+    {
+      "file": "modules/shoddy-equipment.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: createItem",
+      "line": 18
+    },
+    {
+      "file": "modules/shoddy-equipment.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: updateItem",
+      "line": 19
+    },
+    {
+      "file": "modules/shoddy-equipment.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: preCreateItem",
+      "line": 20
+    },
+    {
+      "file": "modules/shoddy-equipment.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 10
+    },
+    {
+      "file": "modules/shoddy-equipment.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 26
+    },
+    {
+      "file": "modules/tavern-games.js",
+      "type": "todo",
+      "description": "TODO: Controllare se ha le posate magiche",
+      "line": 365
+    },
+    {
+      "file": "modules/theme-config.mjs",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 239
+    },
+    {
+      "file": "modules/theme-config.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 259
+    },
+    {
+      "file": "modules/theme.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 94
+    },
+    {
+      "file": "modules/theme.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 237
+    },
+    {
+      "file": "modules/utils/LogUtil.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 24
+    },
+    {
+      "file": "modules/utils/LogUtil.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 55
+    },
+    {
+      "file": "modules/utils/LogUtil.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 57
+    },
+    {
+      "file": "modules/utils/LogUtil.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 68
+    },
+    {
+      "file": "modules/utils/LogUtil.mjs",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 88
+    },
+    {
+      "file": "modules/utils/LogUtil.mjs",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 90
+    },
+    {
+      "file": "modules/utils/LogUtil.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 106
+    },
+    {
+      "file": "modules/utils/SettingsUtil.mjs",
+      "type": "deprecated",
+      "description": "setProperty -> foundry.utils.setProperty",
+      "pattern": "setProperty\\("
+    },
+    {
+      "file": "scripts/analyze-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 95
+    },
+    {
+      "file": "scripts/analyze-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 96
+    },
+    {
+      "file": "scripts/analyze-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 110
+    },
+    {
+      "file": "scripts/analyze-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 112
+    },
+    {
+      "file": "scripts/analyze-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 115
+    },
+    {
+      "file": "scripts/analyze-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 119
+    },
+    {
+      "file": "scripts/analyze-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 120
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 123
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 124
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 126
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 128
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 142
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 146
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 147
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 151
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 152
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 155
+    },
+    {
+      "file": "scripts/analyze-warnings-detail.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 156
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 8
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 9
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 10
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 17
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 21
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 22
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 23
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 26
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 32
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 37
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 38
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 41
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 47
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 50
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 61
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 67
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 74
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 76
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 95
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 96
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 99
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 106
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 109
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 125
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 126
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 127
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 130
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 137
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 139
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 144
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 145
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 148
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 155
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 165
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 168
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 174
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 185
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 188
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 194
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 195
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 196
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 201
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 204
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 206
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 207
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 212
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 215
+    },
+    {
+      "file": "scripts/analyzers/test-automatico.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 220
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 11
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 16
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 23
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 30
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 34
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 38
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 42
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 48
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 61
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 62
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 66
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 69
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 70
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 74
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 79
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 81
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 88
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 91
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 92
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 95
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 96
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 102
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 103
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 105
+    },
+    {
+      "file": "scripts/analyzers/test-sistemi.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 106
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "deprecated",
+      "description": ".data.flags -> .flags",
+      "pattern": "\\.data\\.flags"
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "hook",
+      "description": "Hook potenzialmente deprecato: createItem",
+      "line": 376
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 291
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 311
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 314
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 323
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 343
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 364
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 365
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 386
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 97
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 98
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 102
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 103
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 104
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 105
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 108
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 109
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 111
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 116
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 117
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 119
+    },
+    {
+      "file": "scripts/check-skipped.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 123
+    },
+    {
+      "file": "scripts/check-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 75
+    },
+    {
+      "file": "scripts/check-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 78
+    },
+    {
+      "file": "scripts/check-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 79
+    },
+    {
+      "file": "scripts/check-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 83
+    },
+    {
+      "file": "scripts/converters/convert-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 31
+    },
+    {
+      "file": "scripts/converters/convert-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 39
+    },
+    {
+      "file": "scripts/converters/convert-packs.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 59
+    },
+    {
+      "file": "scripts/converters/convert-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 70
+    },
+    {
+      "file": "scripts/converters/convert-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 74
+    },
+    {
+      "file": "scripts/converters/convert-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 80
+    },
+    {
+      "file": "scripts/converters/convert-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 81
+    },
+    {
+      "file": "scripts/converters/convert-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 82
+    },
+    {
+      "file": "scripts/find-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 98
+    },
+    {
+      "file": "scripts/find-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 102
+    },
+    {
+      "file": "scripts/find-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 103
+    },
+    {
+      "file": "scripts/fix-actorsheet-hooks.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 26
+    },
+    {
+      "file": "scripts/fix-actorsheet-hooks.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 32
+    },
+    {
+      "file": "scripts/fix-actorsheet-hooks.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 117
+    },
+    {
+      "file": "scripts/fix-actorsheet-hooks.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 119
+    },
+    {
+      "file": "scripts/fix-actorsheet-hooks.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 123
+    },
+    {
+      "file": "scripts/fix-actorsheet-hooks.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 124
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "deprecated",
+      "description": "game.actors.entities -> game.actors",
+      "pattern": "game\\.actors\\.entities"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "deprecated",
+      "description": "game.items.entities -> game.items",
+      "pattern": "game\\.items\\.entities"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "deprecated",
+      "description": "actor.data.data -> actor.system",
+      "pattern": "actor\\.data\\.data"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "deprecated",
+      "description": "item.data.data -> item.system",
+      "pattern": "item\\.data\\.data"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "deprecated",
+      "description": ".data.flags -> .flags",
+      "pattern": "\\.data\\.flags"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "deprecated",
+      "description": "mergeObject -> foundry.utils.mergeObject",
+      "pattern": "mergeObject\\("
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "deprecated",
+      "description": "getProperty -> foundry.utils.getProperty",
+      "pattern": "getProperty\\("
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "deprecated",
+      "description": "setProperty -> foundry.utils.setProperty",
+      "pattern": "setProperty\\("
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "deprecated",
+      "description": "hasProperty -> foundry.utils.hasProperty",
+      "pattern": "hasProperty\\("
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 96
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 99
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 202
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 213
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 268
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 275
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 276
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 277
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 290
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 295
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 296
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 300
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 306
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 316
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 321
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 322
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 323
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 324
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 325
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 333
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 335
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 356
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 357
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 358
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 377
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "deprecated",
+      "description": "game.actors.entities -> game.actors",
+      "pattern": "game\\.actors\\.entities"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "deprecated",
+      "description": "game.items.entities -> game.items",
+      "pattern": "game\\.items\\.entities"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "deprecated",
+      "description": "actor.data.data -> actor.system",
+      "pattern": "actor\\.data\\.data"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "deprecated",
+      "description": "item.data.data -> item.system",
+      "pattern": "item\\.data\\.data"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "deprecated",
+      "description": ".data.flags -> .flags",
+      "pattern": "\\.data\\.flags"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "deprecated",
+      "description": "mergeObject -> foundry.utils.mergeObject",
+      "pattern": "mergeObject\\("
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "deprecated",
+      "description": "getProperty -> foundry.utils.getProperty",
+      "pattern": "getProperty\\("
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "deprecated",
+      "description": "setProperty -> foundry.utils.setProperty",
+      "pattern": "setProperty\\("
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "deprecated",
+      "description": "hasProperty -> foundry.utils.hasProperty",
+      "pattern": "hasProperty\\("
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 100
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 103
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 206
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 217
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 272
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 279
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 280
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 281
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 294
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 299
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 300
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 304
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 310
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 320
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 325
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 326
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 327
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 328
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 329
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 337
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 339
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 360
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 361
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 362
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 381
+    },
+    {
+      "file": "scripts/fix-html-jquery.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 26
+    },
+    {
+      "file": "scripts/fix-html-jquery.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 32
+    },
+    {
+      "file": "scripts/fix-html-jquery.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 108
+    },
+    {
+      "file": "scripts/fix-html-jquery.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 110
+    },
+    {
+      "file": "scripts/fix-html-jquery.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 114
+    },
+    {
+      "file": "scripts/fix-html-jquery.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 115
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 46
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 123
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 127
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 132
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 167
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 171
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 172
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 180
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 181
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 187
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 197
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 198
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 199
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 200
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 208
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 209
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 210
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 211
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 214
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 215
+    },
+    {
+      "file": "scripts/fix-json-errors.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 217
+    },
+    {
+      "file": "scripts/fix-leveldb-ids.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 27
+    },
+    {
+      "file": "scripts/fix-leveldb-ids.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 69
+    },
+    {
+      "file": "scripts/fix-leveldb-ids.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 94
+    },
+    {
+      "file": "scripts/fix-leveldb-ids.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 99
+    },
+    {
+      "file": "scripts/fix-leveldb-ids.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 102
+    },
+    {
+      "file": "scripts/fix-leveldb-ids.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 106
+    },
+    {
+      "file": "scripts/fix-leveldb-ids.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 107
+    },
+    {
+      "file": "scripts/fix-renderActorSheetV2-hooks.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 26
+    },
+    {
+      "file": "scripts/fix-renderActorSheetV2-hooks.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 101
+    },
+    {
+      "file": "scripts/fix-renderActorSheetV2-hooks.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 103
+    },
+    {
+      "file": "scripts/fix-renderActorSheetV2-hooks.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 107
+    },
+    {
+      "file": "scripts/fix-renderActorSheetV2-hooks.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 108
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 807
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 827
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 841
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 844
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 850
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 857
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 892
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 897
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 904
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 905
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 906
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 907
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 908
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 909
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 917
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 918
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 919
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 920
+    },
+    {
+      "file": "scripts/integrate-database-content.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 921
+    },
+    {
+      "file": "scripts/list-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 89
+    },
+    {
+      "file": "scripts/list-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 94
+    },
+    {
+      "file": "scripts/list-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 95
+    },
+    {
+      "file": "scripts/list-warnings.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 100
+    },
+    {
+      "file": "scripts/migrate-class-simple.mjs",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 24
+    },
+    {
+      "file": "scripts/migrate-class-simple.mjs",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 30
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 708
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 755
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 761
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 789
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 790
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 793
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 797
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 801
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 802
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 808
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 809
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 810
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 811
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 812
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 813
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 816
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 818
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 821
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 826
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 827
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 828
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 829
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 830
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 831
+    },
+    {
+      "file": "scripts/normalize-database-correct.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 837
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 167
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 217
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 223
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 251
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 252
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 255
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 259
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 263
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 264
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 270
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 271
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 272
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 273
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 274
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 275
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 278
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 280
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 283
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 288
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 289
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 290
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 291
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 292
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 293
+    },
+    {
+      "file": "scripts/normalize-database-correct.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 299
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 477
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 544
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 561
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 567
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 595
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 596
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 597
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 599
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 600
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 601
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 602
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 603
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 604
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 608
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 610
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 611
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 614
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 620
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 622
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 628
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 630
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 636
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 637
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 638
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 639
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 640
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 641
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 642
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 650
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 651
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 652
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 653
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 656
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 659
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 663
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 671
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 681
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 682
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 687
+    },
+    {
+      "file": "scripts/normalize-database-final.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 705
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 538
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 566
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 572
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 602
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 612
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 641
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 642
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 645
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 652
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 656
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 657
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 658
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 659
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 660
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 661
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 664
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 666
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 671
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 672
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 673
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 674
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 675
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 676
+    },
+    {
+      "file": "scripts/normalize-database-v2.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 682
+    },
+    {
+      "file": "scripts/normalize-database.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 366
+    },
+    {
+      "file": "scripts/normalize-database.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 369
+    },
+    {
+      "file": "scripts/normalize-database.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 379
+    },
+    {
+      "file": "scripts/normalize-database.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 380
+    },
+    {
+      "file": "scripts/normalize-database.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 383
+    },
+    {
+      "file": "scripts/normalize-database.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 397
+    },
+    {
+      "file": "scripts/normalize-database.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 405
+    },
+    {
+      "file": "scripts/normalize-database.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 412
+    },
+    {
+      "file": "scripts/normalize-database.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 413
+    },
+    {
+      "file": "scripts/split-classi-pagano.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 27
+    },
+    {
+      "file": "scripts/split-classi-pagano.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 95
+    },
+    {
+      "file": "scripts/split-intrugli.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 7
+    },
+    {
+      "file": "scripts/split-intrugli.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 35
+    },
+    {
+      "file": "scripts/split-macaronicon-avventure.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 17
+    },
+    {
+      "file": "scripts/split-macaronicon-avventure.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 55
+    },
+    {
+      "file": "scripts/split-macaronicon-ciarpame.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 33
+    },
+    {
+      "file": "scripts/split-macaronicon-ciarpame.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 93
+    },
+    {
+      "file": "scripts/split-macaronicon-espansioni.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 17
+    },
+    {
+      "file": "scripts/split-macaronicon-espansioni.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 54
+    },
+    {
+      "file": "scripts/split-macaronicon-incantesimi.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 33
+    },
+    {
+      "file": "scripts/split-macaronicon-incantesimi.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 112
+    },
+    {
+      "file": "scripts/split-macaronicon-png.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 17
+    },
+    {
+      "file": "scripts/split-macaronicon-png.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 55
+    },
+    {
+      "file": "scripts/split-razze-base.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 7
+    },
+    {
+      "file": "scripts/split-razze-base.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 37
+    },
+    {
+      "file": "scripts/split-regole-malefatte.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 7
+    },
+    {
+      "file": "scripts/split-regole-malefatte.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 98
+    },
+    {
+      "file": "scripts/split-regole-rissa.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 27
+    },
+    {
+      "file": "scripts/split-regole-rissa.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 131
+    },
+    {
+      "file": "scripts/utilities/add-richtooltip.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 71
+    },
+    {
+      "file": "scripts/utilities/add-richtooltip.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 77
+    },
+    {
+      "file": "scripts/utilities/add-richtooltip.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 84
+    },
+    {
+      "file": "scripts/utilities/add-richtooltip.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 101
+    },
+    {
+      "file": "scripts/utilities/add-richtooltip.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 118
+    },
+    {
+      "file": "scripts/utilities/add-richtooltip.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 121
+    },
+    {
+      "file": "scripts/utilities/add-richtooltip.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 124
+    },
+    {
+      "file": "scripts/utilities/add-richtooltip.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 125
+    },
+    {
+      "file": "scripts/utilities/add-richtooltip.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 126
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 52
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.warn in produzione",
+      "line": 69
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 86
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 91
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 109
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 114
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 127
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 129
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 132
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 133
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 134
+    },
+    {
+      "file": "scripts/utilities/compile-packs-properly.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 135
+    },
+    {
+      "file": "scripts/utilities/create-leveldb-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 16
+    },
+    {
+      "file": "scripts/utilities/create-leveldb-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 23
+    },
+    {
+      "file": "scripts/utilities/create-leveldb-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 46
+    },
+    {
+      "file": "scripts/utilities/create-leveldb-packs.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 51
+    },
+    {
+      "file": "scripts/utilities/create-leveldb-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 57
+    },
+    {
+      "file": "scripts/utilities/create-leveldb-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 78
+    },
+    {
+      "file": "scripts/utilities/link-items-in-rules.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 236
+    },
+    {
+      "file": "scripts/utilities/link-items-in-rules.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 242
+    },
+    {
+      "file": "scripts/utilities/link-items-in-rules.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 251
+    },
+    {
+      "file": "scripts/utilities/link-items-in-rules.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 254
+    },
+    {
+      "file": "scripts/utilities/link-items-in-rules.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 290
+    },
+    {
+      "file": "scripts/utilities/map-content-links.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 142
+    },
+    {
+      "file": "scripts/utilities/map-content-links.js",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 149
+    },
+    {
+      "file": "scripts/utilities/map-content-links.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 169
+    },
+    {
+      "file": "scripts/utilities/map-content-links.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 181
+    },
+    {
+      "file": "scripts/utilities/map-content-links.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 182
+    },
+    {
+      "file": "scripts/utilities/map-content-links.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 183
+    },
+    {
+      "file": "scripts/utilities/map-content-links.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 187
+    },
+    {
+      "file": "scripts/utilities/rebuild-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 37
+    },
+    {
+      "file": "scripts/utilities/rebuild-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 41
+    },
+    {
+      "file": "scripts/utilities/rebuild-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 47
+    },
+    {
+      "file": "scripts/utilities/rebuild-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 51
+    },
+    {
+      "file": "scripts/utilities/rebuild-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 52
+    },
+    {
+      "file": "scripts/utilities/rebuild-packs.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 53
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 125
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 126
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 127
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 131
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 132
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 136
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 149
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 158
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 174
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 175
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 185
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 186
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 193
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 194
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 195
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 196
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 197
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 198
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 201
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 204
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 205
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 209
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 212
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 213
+    },
+    {
+      "file": "scripts/validate-normalized.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 219
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 242
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 243
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.error in produzione",
+      "line": 246
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 263
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 264
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 265
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 267
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 268
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 269
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 270
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 271
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 272
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 276
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 278
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 280
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 285
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 291
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 293
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 295
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 300
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 305
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 307
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 309
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 312
+    },
+    {
+      "file": "scripts/validate-normalized.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 316
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 14
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 15
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 73
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 77
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 88
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 90
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 96
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 97
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 99
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 102
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 105
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 111
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 112
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 113
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 130
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 131
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 132
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 133
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 134
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 135
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 136
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 139
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 140
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 141
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 143
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 144
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 148
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 149
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 150
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 151
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 152
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 153
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 154
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 155
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 157
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 158
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 159
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 161
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 162
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 163
+    },
+    {
+      "file": "scripts/verify-complete-system.mjs",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 164
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 61
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 62
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 72
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 79
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 82
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 87
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 88
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 91
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 92
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 94
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 95
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 102
+    },
+    {
+      "file": "scripts/verify-theme-colors.js",
+      "type": "console",
+      "description": "console.log in produzione",
+      "line": 103
+    }
+  ],
+  "fixes": [
+    {
+      "file": "modules/brancalonia-config-fix.js",
+      "fix": "mergeObject -> foundry.utils.mergeObject"
+    },
+    {
+      "file": "modules/brancalonia-config-fix.js",
+      "fix": "Aggiornati hook per D&D 5e v3+"
+    },
+    {
+      "file": "modules/brancalonia-mechanics.js",
+      "fix": "mergeObject -> foundry.utils.mergeObject"
+    },
+    {
+      "file": "modules/brancalonia-mechanics.js",
+      "fix": "Aggiornati hook per D&D 5e v3+"
+    },
+    {
+      "file": "modules/components/ChatEnhancements.mjs",
+      "fix": "setProperty -> foundry.utils.setProperty"
+    },
+    {
+      "file": "modules/components/ChatEnhancements.mjs",
+      "fix": "Aggiornati hook per D&D 5e v3+"
+    },
+    {
+      "file": "modules/level-cap.js",
+      "fix": "getProperty -> foundry.utils.getProperty"
+    },
+    {
+      "file": "modules/level-cap.js",
+      "fix": "Aggiornati hook per D&D 5e v3+"
+    },
+    {
+      "file": "modules/utils/SettingsUtil.mjs",
+      "fix": "setProperty -> foundry.utils.setProperty"
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "fix": ".data.flags -> .flags"
+    },
+    {
+      "file": "scripts/apply-active-effects.js",
+      "fix": "Aggiornati hook per D&D 5e v3+"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": "game.actors.entities -> game.actors"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": "game.items.entities -> game.items"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": "actor.data.data -> actor.system"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": "item.data.data -> item.system"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": ".data.flags -> .flags"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": "mergeObject -> foundry.utils.mergeObject"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": "getProperty -> foundry.utils.getProperty"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": "setProperty -> foundry.utils.setProperty"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": "hasProperty -> foundry.utils.hasProperty"
+    },
+    {
+      "file": "scripts/fix-all-warnings.js",
+      "fix": "Aggiornati hook per D&D 5e v3+"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": "game.actors.entities -> game.actors"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": "game.items.entities -> game.items"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": "actor.data.data -> actor.system"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": "item.data.data -> item.system"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": ".data.flags -> .flags"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": "mergeObject -> foundry.utils.mergeObject"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": "getProperty -> foundry.utils.getProperty"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": "setProperty -> foundry.utils.setProperty"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": "hasProperty -> foundry.utils.hasProperty"
+    },
+    {
+      "file": "scripts/fix-all-warnings.mjs",
+      "fix": "Aggiornati hook per D&D 5e v3+"
+    }
+  ]
+}

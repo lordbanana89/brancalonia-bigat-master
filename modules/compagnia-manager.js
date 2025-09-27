@@ -22,7 +22,7 @@ export class CompagniaManager {
 
   _setupHooks() {
     // Hook per aggiungere tab Compagnia alle schede
-    Hooks.on("renderActorSheetV2", (app, html, data) => {
+    Hooks.on("renderActorSheet5e", (app, html, data) => {
       if (app.actor.type === "character" && this._isInCompagnia(app.actor)) {
         this._addCompagniaTab(app, html);
       }

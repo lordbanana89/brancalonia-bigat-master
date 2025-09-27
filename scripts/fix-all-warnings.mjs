@@ -4,8 +4,12 @@
  * del progetto Brancalonia per Foundry V13+
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Mappatura hook deprecati -> nuovi
 const HOOK_MAPPINGS = {
@@ -353,9 +357,9 @@ async function main() {
   const basePath = path.join(__dirname, '..');
   const fixer = new ProjectFixer(basePath);
 
-  console.log('=' .repeat(60));
+  console.log('='.repeat(60));
   console.log('🔧 BRANCALONIA PROJECT FIXER');
-  console.log('=' .repeat(60) + '\n');
+  console.log('='.repeat(60) + '\n');
 
   // Scansiona
   await fixer.scanProject();
