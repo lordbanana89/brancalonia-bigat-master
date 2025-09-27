@@ -170,7 +170,7 @@
 
 })();
 
-// FIX CRITICO per getSceneControlButtons
+// FIX CRITICO per getSceneControlButtons - VERSIONE RAFFORZATA
 Hooks.on("getSceneControlButtons", (controls) => {
   // Assicurati che controls sia un array iterabile
   if (!Array.isArray(controls)) {
@@ -213,25 +213,62 @@ Hooks.on("getSceneControlButtons", (controls) => {
     }
   }
 
+  // IMPORTANTE: Aggiungi Symbol.iterator se manca
+  if (controls && !controls[Symbol.iterator]) {
+    console.log("🔧 Adding Symbol.iterator to controls");
+    controls[Symbol.iterator] = Array.prototype[Symbol.iterator];
+  }
+
+  // Assicurati che ogni control.tools abbia Symbol.iterator
+  for (const control of controls) {
+    if (control?.tools && !control.tools[Symbol.iterator]) {
+      console.log(`🔧 Adding Symbol.iterator to ${control.name}.tools`);
+      control.tools[Symbol.iterator] = Array.prototype[Symbol.iterator];
+    }
+  }
+
   return controls;
 });
 
-// Wrapper per intercettare errori di PST in getSceneControlButtons
+// Wrapper per intercettare errori di PST in getSceneControlButtons - VERSIONE POTENZIATA
 const originalCallAll = Hooks.callAll;
 Hooks.callAll = function(hook, ...args) {
   if (hook === "getSceneControlButtons") {
     console.log("🔍 Intercepting getSceneControlButtons hook");
 
     try {
-      // Assicurati che il primo argomento sia un array
-      if (args.length > 0 && !Array.isArray(args[0])) {
-        console.warn("⚠️ getSceneControlButtons called with non-array, fixing...");
+      // Assicurati che il primo argomento sia un array VERO con Symbol.iterator
+      if (args.length > 0) {
+        if (!Array.isArray(args[0])) {
+          console.warn("⚠️ getSceneControlButtons called with non-array, fixing...");
 
-        // Se è un oggetto, prova a convertirlo
-        if (args[0] && typeof args[0] === 'object') {
-          args[0] = Object.values(args[0]);
-        } else {
-          args[0] = [];
+          // Se è un oggetto, prova a convertirlo
+          if (args[0] && typeof args[0] === 'object') {
+            args[0] = Object.values(args[0]);
+          } else {
+            args[0] = [];
+          }
+        }
+
+        // CRITICO: Assicurati che abbia Symbol.iterator
+        if (!args[0][Symbol.iterator]) {
+          console.log("🔧 Force-adding Symbol.iterator to controls argument");
+          // Crea un nuovo array vero
+          const realArray = Array.from(args[0] || []);
+          args[0] = realArray;
+        }
+
+        // Assicurati che ogni control.tools sia iterabile
+        for (let i = 0; i < args[0].length; i++) {
+          const control = args[0][i];
+          if (control && control.tools) {
+            if (!Array.isArray(control.tools)) {
+              control.tools = Object.values(control.tools || {});
+            }
+            if (!control.tools[Symbol.iterator]) {
+              control.tools = Array.from(control.tools);
+            }
+          }
         }
       }
 
