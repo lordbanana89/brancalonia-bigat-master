@@ -6,6 +6,32 @@
 
 console.log("🔧 Brancalonia Settings Fix - Loading");
 
+// Fix immediato per il menu Settings
+Hooks.once("init", () => {
+  // Override del metodo che genera il menu settings
+  const originalGetData = game.settings.sheet?.getData;
+  if (originalGetData) {
+    game.settings.sheet.getData = function(options) {
+      const data = originalGetData.call(this, options);
+
+      // Correggi i label nei dati
+      if (data.categories) {
+        data.categories.forEach(cat => {
+          if (cat.title?.includes('fa-solid')) {
+            cat.title = cat.title.replace(/fa-solid\s+fa-/g, '')
+                                 .replace(/fa-/g, '')
+                                 .replace(/-/g, ' ')
+                                 .trim()
+                                 .replace(/\b\w/g, l => l.toUpperCase());
+          }
+        });
+      }
+
+      return data;
+    };
+  }
+});
+
 // ============================================
 // FIX IMMEDIATO PER ICONE FONT AWESOME
 // ============================================
@@ -33,6 +59,22 @@ console.log("🔧 Brancalonia Settings Fix - Loading");
 
     return element;
   };
+
+  // Override anche innerHTML per intercettare testo con fa-solid
+  const originalInnerHTMLSetter = Object.getOwnPropertyDescriptor(Element.prototype, 'innerHTML').set;
+  Object.defineProperty(Element.prototype, 'innerHTML', {
+    set: function(value) {
+      // Se il valore contiene fa-solid, correggilo
+      if (typeof value === 'string' && value.includes('fa-solid')) {
+        value = value.replace(/fa-solid\s+fa-[\w-]+/g, (match) => {
+          const icon = match.replace('fa-solid fa-', '');
+          return `<i class="fas fa-${icon}"></i>`;
+        });
+      }
+      originalInnerHTMLSetter.call(this, value);
+    },
+    get: Object.getOwnPropertyDescriptor(Element.prototype, 'innerHTML').get
+  });
 })();
 
 // ============================================
@@ -193,12 +235,63 @@ Hooks.once("init", () => {
 // ============================================
 
 // Correggi i label quando vengono renderizzati TUTTI gli elementi
+// Hook su TUTTI i render possibili
 Hooks.on("renderApplication", (app, html, data) => {
   fixRenderedLabels(html);
 });
 
 Hooks.on("renderSettingsConfig", (app, html, data) => {
   fixRenderedLabels(html);
+});
+
+Hooks.on("renderSettings", (app, html, data) => {
+  console.log("🔧 Fixing main settings menu labels");
+  fixRenderedLabels(html);
+
+  // Fix specifico per il menu principale settings
+  const $html = html.jquery ? html : $(html);
+
+  // Cerca tutti i bottoni nel menu settings
+  $html.find('button, .form-button, [data-action]').each(function() {
+    const btn = $(this);
+    let text = btn.text().trim();
+
+    // Se il testo contiene fa-solid o simili
+    if (text.includes('fa-solid') || text.includes('fa-')) {
+      // Estrai solo il testo utile
+      text = text.replace(/fa-solid\s+fa-/g, '')
+                .replace(/fa-/g, '')
+                .replace(/-/g, ' ')
+                .trim();
+
+      // Capitalizza prima lettera di ogni parola
+      text = text.replace(/\b\w/g, l => l.toUpperCase());
+
+      // Mappa specifica per i bottoni comuni
+      const buttonMap = {
+        'Users Cog': 'Configure Settings',
+        'Sliders H': 'Configure Controls',
+        'List': 'Manage Modules',
+        'Globe': 'Edit World',
+        'User': 'User Management',
+        'Users': 'Tour Management',
+        'Life Ring': 'Support & Issues',
+        'Book': 'View Documentation',
+        'Wikipedia W': 'Community Wiki Pages',
+        'Envelope': 'Invitation Links',
+        'Sign Out Alt': 'Log Out',
+        'Undo': 'Return to Setup'
+      };
+
+      // Usa la mappa se disponibile
+      if (buttonMap[text]) {
+        text = buttonMap[text];
+      }
+
+      console.log(`🔧 Fixed button: ${btn.text()} -> ${text}`);
+      btn.text(text);
+    }
+  });
 });
 
 function fixRenderedLabels(html) {
