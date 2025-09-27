@@ -19,28 +19,40 @@ const BRANCALONIA_MODULES = [
 const originalWarn = console.warn;
 const originalError = console.error;
 
+// Flag per prevenire loop infiniti
+let isProcessingWarning = false;
+
 // Override temporaneo per catturare errori silenziosi
 console.warn = function(...args) {
+  // Previeni loop infiniti
+  if (isProcessingWarning) {
+    return originalWarn.apply(console, args);
+  }
+
   const message = args.join(' ');
 
-  // Se è un errore in un hook, logga dettagli
-  if (message.includes("Error thrown in hooked function")) {
-    console.error("🔴 Brancalonia Hook Error Detected:", {
-      message: message,
-      stack: new Error().stack
-    });
+  // Se è un errore in un hook, logga dettagli (ma previeni loop)
+  if (message.includes("Error thrown in hooked function") && !message.includes("brancalonia-safe-init")) {
+    isProcessingWarning = true;
 
-    // Prova a identificare il modulo problematico
     try {
+      // Usa originalError per evitare ricorsione
+      originalError.call(console, "🔴 Brancalonia Hook Error Detected:", message);
+
+      // Prova a identificare il modulo problematico
       const stackLines = new Error().stack.split('\n');
       const brancaloniaModule = stackLines.find(line =>
-        line.includes('brancalonia-') && line.includes('.js')
+        line.includes('brancalonia-') &&
+        line.includes('.js') &&
+        !line.includes('brancalonia-safe-init.js')
       );
       if (brancaloniaModule) {
-        console.error("🔍 Problematic module:", brancaloniaModule);
+        originalError.call(console, "🔍 Problematic module:", brancaloniaModule);
       }
     } catch (e) {
       // Ignora errori nel debug stesso
+    } finally {
+      isProcessingWarning = false;
     }
   }
 
