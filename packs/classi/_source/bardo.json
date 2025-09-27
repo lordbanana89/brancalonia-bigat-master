@@ -16,318 +16,304 @@
     "hitDiceUsed": 0,
     "advancement": [
       {
-        "_id": "HitPoints.1",
+        "_id": "hpuh05kq",
         "type": "HitPoints",
         "configuration": {},
         "value": {},
-        "level": 1,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Punti Ferita"
       },
       {
-        "_id": "ASI.4",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 4,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.8",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 8,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.12",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 12,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.16",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 16,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.19",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 19,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "SpellcastingValue.1",
+        "_id": "go05k554npgqv5bi",
         "type": "SpellcastingValue",
-        "configuration": {
-          "progression": "full",
-          "ability": "cha",
-          "spells": "",
-          "rituals": true
+        "configuration": {},
+        "value": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "12": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "14": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "16": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
         },
-        "value": {},
-        "level": 1,
-        "title": "Incantesimi",
-        "icon": "icons/svg/book.svg",
-        "classRestriction": "primary"
+        "title": "Slot Incantesimi"
       },
       {
-        "_id": "ItemGrant.1.class-bardo-livello_1-ispirazione-bardica",
-        "type": "ItemGrant",
+        "_id": "asi405kq",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_1-ispirazione-bardica",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 1,
-        "title": "Parole di Incoraggiamento",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.2.class-bardo-livello_2-jack-tuttofare",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_2-jack-tuttofare",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
-        "level": 2,
-        "title": "Maestro di Mille Arti",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.3.class-bardo-livello_3-collegio-bardico",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_3-collegio-bardico",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 3,
-        "title": "Scuola degli Artisti",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.4.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
         "level": 4,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.5.class-bardo-livello_1-ispirazione-bardica",
-        "type": "ItemGrant",
+        "_id": "asi805kq",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_1-ispirazione-bardica",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 5,
-        "title": "Ispirazione Bardica (d8)",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.8.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
         "level": 8,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.10.class-bardo-livello_1-ispirazione-bardica",
-        "type": "ItemGrant",
+        "_id": "asi1205kq",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_1-ispirazione-bardica",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 10,
-        "title": "Ispirazione Bardica (d10)",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.12.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
         "level": 12,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.15.class-bardo-livello_1-ispirazione-bardica",
-        "type": "ItemGrant",
+        "_id": "asi1605kq",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-bardo-livello_1-ispirazione-bardica",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 15,
-        "title": "Ispirazione Bardica (d12)",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.16.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
         "level": 16,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.19.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
+        "_id": "asi1905kq",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
+        "value": {
+          "type": "asi"
+        },
         "level": 19,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       }
     ],
     "saves": [],

@@ -1,5 +1,15 @@
-2025/09/27-01:13:39.708611 16fe2b000 Delete type=3 #1
-2025/09/27-01:13:39.710589 16feb7000 Level-0 table #5: started
-2025/09/27-01:13:39.710829 16feb7000 Level-0 table #5: 2314 bytes OK
-2025/09/27-01:13:39.710908 16feb7000 Delete type=0 #3
-2025/09/27-01:13:39.710976 16feb7000 Manual compaction at level-0 from '!item!gattolupescoc729ef' @ 72057594037927935 : 1 .. '!item!variantesvanzicia5de9b' @ 0 : 0; will stop at (end)
+2025/09/27-02:48:02.059274 30181f000 Recovering log #8
+2025/09/27-02:48:02.060538 30181f000 Delete type=3 #6
+2025/09/27-02:48:02.060757 30181f000 Delete type=0 #8
+2025/09/27-02:48:02.062668 16fdef000 Level-0 table #14: started
+2025/09/27-02:48:02.063081 16fdef000 Level-0 table #14: 5882 bytes OK
+2025/09/27-02:48:02.063249 16fdef000 Delete type=0 #12
+2025/09/27-02:48:02.063341 16fdef000 Manual compaction at level-0 from '!item!gattolupescoc729ef' @ 72057594037927935 : 1 .. '!item!variantesvanzicia5de9b' @ 0 : 0; will stop at (end)
+2025/09/27-02:48:02.063372 16fdef000 Manual compaction at level-1 from '!item!gattolupescoc729ef' @ 72057594037927935 : 1 .. '!item!variantesvanzicia5de9b' @ 0 : 0; will stop at '!item!variantesvanzicia5de9b' @ 24 : 1
+2025/09/27-02:48:02.063381 16fdef000 Compacting 1@1 + 1@2 files
+2025/09/27-02:48:02.063839 16fdef000 Generated table #15@1: 8 keys, 5882 bytes
+2025/09/27-02:48:02.063854 16fdef000 Compacted 1@1 + 1@2 files => 5882 bytes
+2025/09/27-02:48:02.063937 16fdef000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-02:48:02.064024 16fdef000 Delete type=2 #14
+2025/09/27-02:48:02.064124 16fdef000 Delete type=2 #10
+2025/09/27-02:48:02.064524 16fdef000 Manual compaction at level-1 from '!item!variantesvanzicia5de9b' @ 24 : 1 .. '!item!variantesvanzicia5de9b' @ 0 : 0; will stop at (end)

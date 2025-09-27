@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-AGENT VALIDATOR - Sistema di test e validazione per Brancalonia
-Basato su D&D 5e v5.1.9 structure
+AGENT VALIDATOR - Test suite completa per validazione Brancalonia
+Basato su D&D 5e v5.1.9 standards
 """
 
 import json
@@ -151,7 +151,7 @@ class BrancaloniaValidator:
             # Should have spell-related advancements
             has_spell_advancement = any(
                 'spell' in str(adv).lower() or
-                adv.get('type') in ['SpellSlots', 'SpellConfig']
+                adv.get('type') in ['SpellSlots', 'SpellConfig', 'SpellcastingValue']
                 for adv in advancements
             )
 

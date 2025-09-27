@@ -1,0 +1,25 @@
+{
+  "_id": "7w4p6jkkmkbtamov",
+  "_key": "!items!7w4p6jkkmkbtamov",
+  "name": "Padronanza degli Incantesimi",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>Privilegio di classe del Mago di livello 18.</p>",
+      "chat": ""
+    },
+    "requirements": "Mago livello 18",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

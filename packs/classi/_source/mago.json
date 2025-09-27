@@ -16,131 +16,259 @@
     "hitDiceUsed": 0,
     "advancement": [
       {
-        "_id": "HitPoints.1",
+        "_id": "hp8q84b7",
         "type": "HitPoints",
         "configuration": {},
         "value": {},
-        "level": 1,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Punti Ferita"
       },
       {
-        "_id": "ASI.4",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 4,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.8",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 8,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.12",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 12,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.16",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 16,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.19",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 19,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "SpellcastingValue.1",
+        "_id": "oljfada4ofvqefh2",
         "type": "SpellcastingValue",
-        "configuration": {
-          "progression": "full",
-          "ability": "int",
-          "spells": "",
-          "rituals": true
+        "configuration": {},
+        "value": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "12": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "14": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "16": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
         },
-        "value": {},
-        "level": 1,
-        "title": "Incantesimi",
-        "icon": "icons/svg/book.svg",
-        "classRestriction": "primary"
+        "title": "Slot Incantesimi"
       },
       {
-        "_id": "ItemGrant.1.class-mago-livello_1-libro-incantesimi",
+        "_id": "owseyokzsgsxsh0u",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_1-libro-incantesimi",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.gvhiaw8atxnengdz",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 1,
         "title": "Libro degli Incantesimi",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.1.class-mago-livello_1-recupero-arcano",
+        "_id": "5iog711hy4f4ha5b",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -149,55 +277,15 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 1,
         "title": "Recupero Arcano",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.2.class-mago-livello_2-tradizione-arcana",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_2-tradizione-arcana",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 2,
-        "title": "Tradizione Arcana",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.4.class-mago-livello_4-aumento-caratteristica",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_4-aumento-caratteristica",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 4,
-        "title": "Aumento dei Punteggi (1)",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.6.class-mago-livello_6-tradizione-arcana-privilegio",
+        "_id": "04ser2az0udt0smo",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -206,166 +294,162 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Tradizione Arcana",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "e06ligqnp39ym2ev",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.cho9yy09b52nhvh6",
+              "optional": false
+            }
+          ],
+          "optional": false
         },
         "value": {},
         "level": 6,
-        "title": "Tradizione Arcana - Privilegio",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Privilegio della Tradizione",
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.8.class-mago-livello_8-aumento-caratteristica-2",
+        "_id": "wl9dpgjqclqps1t8",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_8-aumento-caratteristica-2",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.cho9yy09b52nhvh6",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 8,
-        "title": "Aumento dei Punteggi (2)",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.10.class-mago-livello_10-tradizione-arcana-maestria",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_10-tradizione-arcana-maestria",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 10,
-        "title": "Tradizione Arcana - Maestria",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Privilegio della Tradizione",
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.12.class-mago-livello_12-aumento-caratteristica-3",
+        "_id": "55698sxyjdldxvdo",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_12-aumento-caratteristica-3",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.cho9yy09b52nhvh6",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 12,
-        "title": "Aumento dei Punteggi (3)",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.14.class-mago-livello_14-tradizione-arcana-suprema",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_14-tradizione-arcana-suprema",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 14,
-        "title": "Tradizione Arcana - Suprema",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Privilegio della Tradizione",
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.16.class-mago-livello_16-aumento-caratteristica-4",
+        "_id": "2iyvmkjo8qlk9929",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_16-aumento-caratteristica-4",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.7w4p6jkkmkbtamov",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 16,
-        "title": "Aumento dei Punteggi (4)",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.18.class-mago-livello_18-padronanza-incantesimi",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_18-padronanza-incantesimi",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 18,
         "title": "Padronanza degli Incantesimi",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.19.class-mago-livello_19-aumento-caratteristica-5",
+        "_id": "qfylvoycks5fkj7m",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_19-aumento-caratteristica-5",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.ht2urp0g76zgu2br",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 19,
-        "title": "Aumento dei Punteggi (5)",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.20.class-mago-livello_20-signature-spells",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-mago-livello_20-signature-spells",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 20,
         "title": "Incantesimi Firma",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi484b7",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "asi884b7",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "asi1284b7",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "asi1684b7",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "asi1984b7",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
       }
     ],
     "saves": [],

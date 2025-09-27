@@ -16,280 +16,304 @@
     "hitDiceUsed": 0,
     "advancement": [
       {
-        "_id": "HitPoints.1",
+        "_id": "hpe31618",
         "type": "HitPoints",
         "configuration": {},
         "value": {},
-        "level": 1,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Punti Ferita"
       },
       {
-        "_id": "ASI.4",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 4,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.8",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 8,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.12",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 12,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.16",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 16,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.19",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 19,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "SpellcastingValue.1",
+        "_id": "cu7wte3sgnuos3b1",
         "type": "SpellcastingValue",
-        "configuration": {
-          "progression": "full",
-          "ability": "wis",
-          "spells": "",
-          "rituals": true
+        "configuration": {},
+        "value": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "12": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "14": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "16": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
         },
-        "value": {},
-        "level": 1,
-        "title": "Incantesimi",
-        "icon": "icons/svg/book.svg",
-        "classRestriction": "primary"
+        "title": "Slot Incantesimi"
       },
       {
-        "_id": "ItemGrant.1.class-druido-livello_1-druidico",
-        "type": "ItemGrant",
+        "_id": "asi41618",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-druido-livello_1-druidico",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 1,
-        "title": "Druidico",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.2.class-druido-livello_2-forma-selvatica",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-druido-livello_2-forma-selvatica",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
-        "level": 2,
-        "title": "Forma Selvatica",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.2.class-druido-livello_2-circolo-druidico",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-druido-livello_2-circolo-druidico",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 2,
-        "title": "Circolo Druidico",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.4.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
         "level": 4,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.8.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
+        "_id": "asi81618",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
+        "value": {
+          "type": "asi"
+        },
         "level": 8,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.12.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
+        "_id": "asi121618",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
+        "value": {
+          "type": "asi"
+        },
         "level": 12,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.16.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
+        "_id": "asi161618",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
+        "value": {
+          "type": "asi"
+        },
         "level": 16,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.18.class-monaco-livello_15-corpo-senza-tempo",
-        "type": "ItemGrant",
+        "_id": "asi191618",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-monaco-livello_15-corpo-senza-tempo",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 18,
-        "title": "Corpo senza Tempo",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.19.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
         "level": 19,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       }
     ],
     "saves": [],

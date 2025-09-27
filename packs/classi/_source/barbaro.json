@@ -16,154 +16,65 @@
     "hitDiceUsed": 0,
     "advancement": [
       {
-        "_id": "HitPoints.1",
+        "_id": "hpv7jhif",
         "type": "HitPoints",
         "configuration": {},
         "value": {},
-        "level": 1,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Punti Ferita"
       },
       {
-        "_id": "ASI.4",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 4,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.8",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 8,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.12",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 12,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.16",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 16,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.19",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 19,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.1.class-barbaro-livello_1-ira",
+        "_id": "j9zyk3d7exbf1hak",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_1-ira",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.miracolarochiericolivello2incanalaredivinitarecitare82c66a",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 1,
         "title": "Ira",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.1.class-barbaro-livello_1-difesa-senza-armatura",
+        "_id": "2q01wjllamedvg1a",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_1-difesa-senza-armatura",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-monaco-livello_1-difesa-senza-armatura",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 1,
         "title": "Difesa Senza Armatura",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.2.classbarbarolivello2attaccoirruento996be5",
+        "_id": "tmbp8i63x4si4k3q",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classbarbarolivello2attaccoirruento996be5",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_2-attacco-irruento",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 2,
         "title": "Attacco Irruento",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.2.class-barbaro-livello_2-percezione-del-pericolo",
+        "_id": "44eehoh5ubl8rnmu",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -172,17 +83,15 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 2,
         "title": "Percezione del Pericolo",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.3.class-barbaro-livello_3-cammino-primordiale",
+        "_id": "x7gtxejj7one9wvf",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -191,36 +100,32 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 3,
         "title": "Cammino Primordiale",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.5.classguerrierolivello5attaccoextra6ddc2d",
+        "_id": "x4vnw7o1msfnmasz",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classguerrierolivello5attaccoextra6ddc2d",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-guerriero-livello_11-attacco-extra-superiore",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 5,
         "title": "Attacco Extra",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.5.class-barbaro-livello_5-movimento-veloce",
+        "_id": "wsxhg2yqlezd86wd",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -229,17 +134,15 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 5,
         "title": "Movimento Veloce",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.7.class-barbaro-livello_7-istinto-ferino",
+        "_id": "uj0q44jyeueloqtg",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -248,17 +151,15 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 7,
         "title": "Istinto Ferino",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.9.class-barbaro-livello_9-critico-brutale",
+        "_id": "j6y24cp6102s73r1",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -267,17 +168,15 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 9,
-        "title": "Critico Brutale (1 dado)",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Critico Brutale",
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.11.class-barbaro-livello_11-ira-implacabile",
+        "_id": "nsyoinef31szxhy1",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -286,74 +185,66 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 11,
         "title": "Ira Implacabile",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.13.class-barbaro-livello_9-critico-brutale",
+        "_id": "qsqgdkuqxx2rqvpm",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_9-critico-brutale",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.aiyocmlc1d8lmd1a",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 13,
         "title": "Critico Brutale (2 dadi)",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.15.classbarbarolivello15irapersistente4d5814",
+        "_id": "076dk1mkn5bbbrcg",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classbarbarolivello15irapersistente4d5814",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_15-ira-persistente",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 15,
         "title": "Ira Persistente",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.17.class-barbaro-livello_9-critico-brutale",
+        "_id": "0zdmvgyspgtpduq5",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_9-critico-brutale",
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.867xktqdqm4oup6c",
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 17,
         "title": "Critico Brutale (3 dadi)",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.18.class-barbaro-livello_18-forza-indomabile",
+        "_id": "t08e6b9vjourx934",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -362,17 +253,15 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 18,
         "title": "Forza Indomabile",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "ItemGrant.20.class-barbaro-livello_20-campione-primordiale",
+        "_id": "zt8at1dgoibmg5kt",
         "type": "ItemGrant",
         "configuration": {
           "items": [
@@ -381,14 +270,77 @@
               "optional": false
             }
           ],
-          "optional": false,
-          "spell": null
+          "optional": false
         },
         "value": {},
         "level": 20,
         "title": "Campione Primordiale",
-        "icon": "",
-        "classRestriction": "primary"
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi4jhif",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "asi8jhif",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "asi12jhif",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "asi16jhif",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "asi19jhif",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
       }
     ],
     "saves": [

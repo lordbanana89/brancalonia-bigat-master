@@ -1,5 +1,15 @@
-2025/09/27-01:13:39.618926 16f89f000 Delete type=3 #1
-2025/09/27-01:13:39.620915 16f92b000 Level-0 table #5: started
-2025/09/27-01:13:39.621184 16f92b000 Level-0 table #5: 6200 bytes OK
-2025/09/27-01:13:39.621268 16f92b000 Delete type=0 #3
-2025/09/27-01:13:39.621349 16f92b000 Manual compaction at level-0 from '!items!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at (end)
+2025/09/27-02:48:27.503326 170eeb000 Recovering log #12
+2025/09/27-02:48:27.504675 170eeb000 Delete type=0 #12
+2025/09/27-02:48:27.504709 170eeb000 Delete type=3 #11
+2025/09/27-02:48:27.506599 171783000 Level-0 table #16: started
+2025/09/27-02:48:27.506938 171783000 Level-0 table #16: 8298 bytes OK
+2025/09/27-02:48:27.507016 171783000 Delete type=0 #14
+2025/09/27-02:48:27.507084 171783000 Manual compaction at level-0 from '!items!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at (end)
+2025/09/27-02:48:27.507100 171783000 Manual compaction at level-1 from '!items!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at '!items!class-warlock-p0p6u4' @ 36 : 1
+2025/09/27-02:48:27.507105 171783000 Compacting 1@1 + 1@2 files
+2025/09/27-02:48:27.507519 171783000 Generated table #17@1: 12 keys, 8298 bytes
+2025/09/27-02:48:27.507550 171783000 Compacted 1@1 + 1@2 files => 8298 bytes
+2025/09/27-02:48:27.507650 171783000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-02:48:27.507708 171783000 Delete type=2 #16
+2025/09/27-02:48:27.507773 171783000 Delete type=2 #10
+2025/09/27-02:48:27.508024 171783000 Manual compaction at level-1 from '!items!class-warlock-p0p6u4' @ 36 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at (end)

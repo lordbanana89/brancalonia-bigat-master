@@ -16,413 +16,217 @@
     "hitDiceUsed": 0,
     "advancement": [
       {
-        "_id": "HitPoints.1",
+        "_id": "hp276y9b",
         "type": "HitPoints",
         "configuration": {},
         "value": {},
-        "level": 1,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Punti Ferita"
       },
       {
-        "_id": "ASI.4",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 4,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.8",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 8,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.12",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 12,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.16",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 16,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ASI.19",
-        "type": "AbilityScoreImprovement",
-        "configuration": {
-          "fixed": {},
-          "points": 2,
-          "cap": 2
-        },
-        "value": {
-          "type": "asi"
-        },
-        "level": 19,
-        "title": "",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "SpellcastingValue.2",
+        "_id": "s42jrl6pavjulrfs",
         "type": "SpellcastingValue",
-        "configuration": {
-          "progression": "half",
-          "ability": "cha",
-          "spells": "",
-          "rituals": false
+        "configuration": {},
+        "value": {
+          "2": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            2,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            2,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            2,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            2,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            0,
+            0
+          ],
+          "12": [
+            4,
+            3,
+            3,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            1,
+            0
+          ],
+          "14": [
+            4,
+            3,
+            3,
+            1,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            2,
+            0
+          ],
+          "16": [
+            4,
+            3,
+            3,
+            2,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ]
         },
-        "value": {},
-        "level": 2,
-        "title": "Incantesimi",
-        "icon": "icons/svg/book.svg",
-        "classRestriction": "primary"
+        "title": "Slot Incantesimi"
       },
       {
-        "_id": "ItemGrant.1.class-paladino-livello_1-senso-divino",
-        "type": "ItemGrant",
+        "_id": "asi46y9b",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_1-senso-divino",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 1,
-        "title": "Senso Divino",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.1.class-paladino-livello_1-imposizione-mani",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_1-imposizione-mani",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
-        "level": 1,
-        "title": "Imposizione delle Mani",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.2.class-paladino-livello_2-stile-combattimento",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_2-stile-combattimento",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 2,
-        "title": "Stile di Combattimento",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.2.class-paladino-livello_2-punizione-divina",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_2-punizione-divina",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 2,
-        "title": "Punizione Divina",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.3.class-paladino-livello_3-giuramento-sacro",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_3-giuramento-sacro",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 3,
-        "title": "Giuramento Sacro",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.4.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
         "level": 4,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.5.class-paladino-livello_5-attacco-extra",
-        "type": "ItemGrant",
+        "_id": "asi86y9b",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_5-attacco-extra",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 5,
-        "title": "Attacco Extra",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.6.class-paladino-livello_6-aura-protezione",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_6-aura-protezione",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
-        "level": 6,
-        "title": "Aura di Protezione",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.8.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
         "level": 8,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.10.class-paladino-livello_10-aura-coraggio",
-        "type": "ItemGrant",
+        "_id": "asi126y9b",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_10-aura-coraggio",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 10,
-        "title": "Aura del Coraggio",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.11.class-paladino-livello_11-punizione-migliorata",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_11-punizione-migliorata",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
-        "level": 11,
-        "title": "Punizione Migliorata",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.12.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
         "level": 12,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.14.class-paladino-livello_14-tocco-purificante",
-        "type": "ItemGrant",
+        "_id": "asi166y9b",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_14-tocco-purificante",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
-        "level": 14,
-        "title": "Tocco Purificante",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.16.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+        "value": {
+          "type": "asi"
         },
-        "value": {},
         "level": 16,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       },
       {
-        "_id": "ItemGrant.19.classmagolivello12aumentocaratteristica30637c1",
-        "type": "ItemGrant",
+        "_id": "asi196y9b",
+        "type": "AbilityScoreImprovement",
         "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.classmagolivello12aumentocaratteristica30637c1",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
+          "points": 2,
+          "fixed": {}
         },
-        "value": {},
+        "value": {
+          "type": "asi"
+        },
         "level": 19,
-        "title": "Aumento dei Punteggi di Caratteristica",
-        "icon": "",
-        "classRestriction": "primary"
-      },
-      {
-        "_id": "ItemGrant.20.class-paladino-livello_20-campione-giuramento",
-        "type": "ItemGrant",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-paladino-livello_20-campione-giuramento",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 20,
-        "title": "Campione del Giuramento",
-        "icon": "",
-        "classRestriction": "primary"
+        "title": "Aumento Caratteristica"
       }
     ],
     "saves": [],
