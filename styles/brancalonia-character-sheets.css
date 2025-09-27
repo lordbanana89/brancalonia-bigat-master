@@ -659,10 +659,12 @@
   border-radius: 4px;
   outline: none;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .reputation-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   width: 24px;
   height: 24px;
   background: radial-gradient(circle, #FFD700, #CD7F32);
