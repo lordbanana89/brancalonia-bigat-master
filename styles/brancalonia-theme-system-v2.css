@@ -101,10 +101,10 @@
 	--pfu-app-accent-position-left: -47px;
 
 	/* Assets */
-	--pfu-app-accent-image: url("../assets/images/logo.png");
-	--pfu-app-section-bg-image: url("../assets/images/Bkg_pattern_highres");
-	--pfu-app-bg-image: url("../assets/images/Hojitas_highres.png");
-	--pfu-sidebar-bg-image: url("../assets/images/Hojitas_double_highres.png");
+	--pfu-app-accent-image: url("../assets/artwork/fond.webp");
+	--pfu-app-section-bg-image: none;
+	--pfu-app-bg-image: none;
+	--pfu-sidebar-bg-image: none; /* Removed ProjectFU specific image */
 }
 
 .themed:is(.theme-dark, .theme-light) .ui-control,
