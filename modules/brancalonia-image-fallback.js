@@ -72,23 +72,30 @@ Hooks.once('init', () => {
     // Prima elabora normalmente
     let enriched = originalEnrichHTML.call(this, content, options);
 
-    // Poi sostituisci le immagini problematiche
-    enriched = enriched.replace(
-      /src="[^"]*breastplate-metal-copper\.webp"/gi,
-      'src="icons/svg/shield.svg"'
-    );
-    enriched = enriched.replace(
-      /src="[^"]*breastplate-steel\.webp"/gi,
-      'src="icons/svg/shield.svg"'
-    );
-    enriched = enriched.replace(
-      /src="[^"]*chainmail\.webp"/gi,
-      'src="icons/svg/shield.svg"'
-    );
-    enriched = enriched.replace(
-      /src="[^"]*leather\.webp"/gi,
-      'src="icons/svg/shield.svg"'
-    );
+    // Verifica che enriched sia una stringa prima di fare replace
+    if (typeof enriched === 'string') {
+      // Poi sostituisci le immagini problematiche
+      enriched = enriched.replace(
+        /src="[^"]*breastplate-metal-copper\.webp"/gi,
+        'src="icons/svg/shield.svg"'
+      );
+      enriched = enriched.replace(
+        /src="[^"]*breastplate-steel\.webp"/gi,
+        'src="icons/svg/shield.svg"'
+      );
+      enriched = enriched.replace(
+        /src="[^"]*chainmail\.webp"/gi,
+        'src="icons/svg/shield.svg"'
+      );
+      enriched = enriched.replace(
+        /src="[^"]*leather\.webp"/gi,
+        'src="icons/svg/shield.svg"'
+      );
+      enriched = enriched.replace(
+        /src="[^"]*equipment\/chest\/[^"]+\.webp"/gi,
+        'src="icons/svg/shield.svg"'
+      );
+    }
 
     return enriched;
   };
