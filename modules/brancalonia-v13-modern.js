@@ -7,6 +7,32 @@
 console.log("🚀 Brancalonia V13 Modern - Initializing");
 
 // ============================================
+// HELPER FUNCTIONS
+// ============================================
+
+/**
+ * Helper per gestire sia jQuery che HTMLElement
+ * Foundry v13 mescola ancora jQuery e vanilla JS
+ */
+function isJQuery(obj) {
+  return obj && obj.jquery !== undefined;
+}
+
+function ensureElement(html) {
+  if (isJQuery(html)) {
+    return html[0]; // Ottieni HTMLElement da jQuery
+  }
+  return html; // Già un HTMLElement
+}
+
+function ensureJQuery(html) {
+  if (!isJQuery(html)) {
+    return $(html); // Converti HTMLElement a jQuery
+  }
+  return html; // Già jQuery
+}
+
+// ============================================
 // VERSION CHECK - SOLO V13
 // ============================================
 
@@ -66,65 +92,77 @@ Hooks.once("init", () => {
  * Applica miglioramenti al character sheet usando API v13
  */
 function applyCharacterSheetEnhancements(app, html, data) {
+  // In v13 renderActorSheetV2, html è un HTMLElement, non jQuery
   // Usa le API moderne
   const sceneNav = foundry.applications.ui.SceneNavigation;
   const tokenClass = foundry.canvas.placeables.Token;
 
-  // Aggiungi classe Brancalonia
-  html.addClass("brancalonia-sheet");
+  // Aggiungi classe Brancalonia - vanilla JS
+  html.classList.add("brancalonia-sheet");
 
-  // Aggiungi controlli custom
-  const header = html.find(".sheet-header");
-  if (header.length) {
-    header.append(`
-      <div class="brancalonia-controls">
-        <button class="infamia-btn" title="Gestisci Infamia">
-          <i class="fas fa-skull"></i> Infamia
-        </button>
-        <button class="baraonda-btn" title="Inizia Baraonda">
-          <i class="fas fa-fist-raised"></i> Baraonda
-        </button>
-      </div>
-    `);
+  // Aggiungi controlli custom - vanilla JS
+  const header = html.querySelector(".sheet-header");
+  if (header) {
+    const controlsDiv = document.createElement('div');
+    controlsDiv.className = 'brancalonia-controls';
+    controlsDiv.innerHTML = `
+      <button class="infamia-btn" title="Gestisci Infamia">
+        <i class="fas fa-skull"></i> Infamia
+      </button>
+      <button class="baraonda-btn" title="Inizia Baraonda">
+        <i class="fas fa-fist-raised"></i> Baraonda
+      </button>
+    `;
+    header.appendChild(controlsDiv);
 
-    // Event listeners con API moderne
-    html.find(".infamia-btn").click(() => {
-      console.log("🎭 Opening Infamia tracker with modern API");
-      // Usa foundry.applications per dialog moderne
-      new Dialog({
-        title: "Tracker Infamia",
-        content: `
-          <div class="brancalonia-infamia">
-            <h3>Livello Infamia: ${app.actor.getFlag("brancalonia-bigat", "infamia") || 0}</h3>
-            <input type="range" min="0" max="10" value="${app.actor.getFlag("brancalonia-bigat", "infamia") || 0}">
-          </div>
-        `,
-        buttons: {
-          save: {
-            label: "Salva",
-            callback: (html) => {
-              const value = html.find("input").val();
-              app.actor.setFlag("brancalonia-bigat", "infamia", value);
+    // Event listeners con API moderne - vanilla JS
+    const infamiaBtn = html.querySelector(".infamia-btn");
+    if (infamiaBtn) {
+      infamiaBtn.addEventListener('click', () => {
+        console.log("🎭 Opening Infamia tracker with modern API");
+        // Usa foundry.applications per dialog moderne
+        new Dialog({
+          title: "Tracker Infamia",
+          content: `
+            <div class="brancalonia-infamia">
+              <h3>Livello Infamia: ${app.actor.getFlag("brancalonia-bigat", "infamia") || 0}</h3>
+              <input type="range" min="0" max="10" value="${app.actor.getFlag("brancalonia-bigat", "infamia") || 0}">
+            </div>
+          `,
+          buttons: {
+            save: {
+              label: "Salva",
+              callback: (dialogHtml) => {
+                // dialogHtml potrebbe essere jQuery, quindi gestiamo entrambi i casi
+                const input = dialogHtml.querySelector ?
+                  dialogHtml.querySelector("input") :
+                  dialogHtml.find("input")[0];
+                const value = input?.value || 0;
+                app.actor.setFlag("brancalonia-bigat", "infamia", value);
+              }
             }
           }
-        }
-      }).render(true);
-    });
+        }).render(true);
+      });
+    }
 
-    html.find(".baraonda-btn").click(() => {
-      console.log("⚔️ Starting Baraonda with modern API");
-      // Usa Canvas moderno
-      if (canvas.scene) {
-        ui.notifications.info("🎲 Baraonda iniziata!");
-        // Usa token layer moderno
-        const tokens = canvas.tokens.placeables;
-        tokens.forEach(t => {
-          if (t.actor?.type === "npc") {
-            t.document.update({ "disposition": CONST.TOKEN_DISPOSITIONS.HOSTILE });
-          }
-        });
-      }
-    });
+    const baraondaBtn = html.querySelector(".baraonda-btn");
+    if (baraondaBtn) {
+      baraondaBtn.addEventListener('click', () => {
+        console.log("⚔️ Starting Baraonda with modern API");
+        // Usa Canvas moderno
+        if (canvas.scene) {
+          ui.notifications.info("🎲 Baraonda iniziata!");
+          // Usa token layer moderno
+          const tokens = canvas.tokens.placeables;
+          tokens.forEach(t => {
+            if (t.actor?.type === "npc") {
+              t.document.update({ "disposition": CONST.TOKEN_DISPOSITIONS.HOSTILE });
+            }
+          });
+        }
+      });
+    }
   }
 }
 
@@ -132,20 +170,22 @@ function applyCharacterSheetEnhancements(app, html, data) {
  * Applica miglioramenti al NPC sheet usando API v13
  */
 function applyNPCSheetEnhancements(app, html, data) {
-  html.addClass("brancalonia-npc-sheet");
+  // In v13 renderActorSheetV2, html è un HTMLElement, non jQuery
+  html.classList.add("brancalonia-npc-sheet");
 
-  // Aggiungi indicatore di pericolo
-  const header = html.find(".sheet-header");
-  if (header.length) {
+  // Aggiungi indicatore di pericolo - vanilla JS
+  const header = html.querySelector(".sheet-header");
+  if (header) {
     const cr = app.actor.system.details?.cr || 0;
     const dangerLevel = cr >= 5 ? "alto" : cr >= 3 ? "medio" : "basso";
 
-    header.append(`
-      <div class="brancalonia-danger danger-${dangerLevel}">
-        <i class="fas fa-exclamation-triangle"></i>
-        Pericolo: ${dangerLevel.toUpperCase()}
-      </div>
-    `);
+    const dangerDiv = document.createElement('div');
+    dangerDiv.className = `brancalonia-danger danger-${dangerLevel}`;
+    dangerDiv.innerHTML = `
+      <i class="fas fa-exclamation-triangle"></i>
+      Pericolo: ${dangerLevel.toUpperCase()}
+    `;
+    header.appendChild(dangerDiv);
   }
 }
 
@@ -153,17 +193,19 @@ function applyNPCSheetEnhancements(app, html, data) {
  * Applica miglioramenti al item sheet usando API v13
  */
 function applyItemSheetEnhancements(app, html, data) {
-  html.addClass("brancalonia-item-sheet");
+  // In v13 renderItemSheetV2, html è un HTMLElement, non jQuery
+  html.classList.add("brancalonia-item-sheet");
 
-  // Aggiungi indicatore oggetto scadente
+  // Aggiungi indicatore oggetto scadente - vanilla JS
   if (app.item.type === "weapon" || app.item.type === "equipment") {
-    const header = html.find(".sheet-header");
-    if (header.length && app.item.getFlag("brancalonia-bigat", "scadente")) {
-      header.append(`
-        <div class="brancalonia-scadente">
-          <i class="fas fa-trash"></i> Oggetto Scadente
-        </div>
-      `);
+    const header = html.querySelector(".sheet-header");
+    if (header && app.item.getFlag("brancalonia-bigat", "scadente")) {
+      const scadenteDiv = document.createElement('div');
+      scadenteDiv.className = 'brancalonia-scadente';
+      scadenteDiv.innerHTML = `
+        <i class="fas fa-trash"></i> Oggetto Scadente
+      `;
+      header.appendChild(scadenteDiv);
     }
   }
 }
@@ -204,19 +246,22 @@ Hooks.on("canvasReady", (canvas) => {
 Hooks.on("renderCombatTracker", (app, html, data) => {
   console.log("⚔️ Combat tracker rendered - Using modern API");
 
+  // renderCombatTracker passa jQuery object
+  const $html = ensureJQuery(html);
+
   // Usa Combat Tracker moderno
   const combat = game.combat;
   if (!combat) return;
 
   // Aggiungi bottone Baraonda
-  const controls = html.find(".combat-control");
+  const controls = $html.find(".combat-control");
   controls.append(`
     <a class="combat-control baraonda-roll" title="Tira per Baraonda">
       <i class="fas fa-dice-d20"></i>
     </a>
   `);
 
-  html.find(".baraonda-roll").click(async () => {
+  $html.find(".baraonda-roll").click(async () => {
     const roll = await new Roll("1d6").evaluate();
     await roll.toMessage({
       flavor: "🎲 Tiro Baraonda",
@@ -234,15 +279,18 @@ Hooks.on("renderCombatTracker", (app, html, data) => {
 // ============================================
 
 Hooks.on("renderChatMessage", (message, html, data) => {
+  // renderChatMessage passa jQuery object
+  const $html = ensureJQuery(html);
+
   // Aggiungi stile Brancalonia ai messaggi
   if (message.getFlag("brancalonia-bigat", "isInfamiaRoll")) {
-    html.addClass("brancalonia-infamia-message");
-    html.find(".message-header").prepend('<i class="fas fa-skull"></i> ');
+    $html.addClass("brancalonia-infamia-message");
+    $html.find(".message-header").prepend('<i class="fas fa-skull"></i> ');
   }
 
   if (message.getFlag("brancalonia-bigat", "isBaraondaRoll")) {
-    html.addClass("brancalonia-baraonda-message");
-    html.find(".message-header").prepend('<i class="fas fa-fist-raised"></i> ');
+    $html.addClass("brancalonia-baraonda-message");
+    $html.find(".message-header").prepend('<i class="fas fa-fist-raised"></i> ');
   }
 });
 
@@ -253,9 +301,12 @@ Hooks.on("renderChatMessage", (message, html, data) => {
 Hooks.on("renderCompendium", async (app, html, data) => {
   console.log("📚 Compendium rendered - Using modern API");
 
+  // renderCompendium passa jQuery object
+  const $html = ensureJQuery(html);
+
   // Aggiungi filtri Brancalonia
   if (app.collection.metadata.id?.includes("brancalonia")) {
-    const controls = html.find(".header-search");
+    const controls = $html.find(".header-search");
     controls.after(`
       <div class="brancalonia-filters">
         <button class="filter-scadente" title="Solo Oggetti Scadenti">
@@ -268,12 +319,12 @@ Hooks.on("renderCompendium", async (app, html, data) => {
     `);
 
     // Event handlers
-    html.find(".filter-scadente").click(() => {
+    $html.find(".filter-scadente").click(() => {
       console.log("🗑️ Filtering for scadente items");
       // Implementa filtro
     });
 
-    html.find(".filter-speciale").click(() => {
+    $html.find(".filter-speciale").click(() => {
       console.log("⭐ Filtering for special items");
       // Implementa filtro
     });
