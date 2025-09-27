@@ -1,1128 +1,698 @@
 /* ========================================
-   BRANCALONIA CHARACTER SHEET STYLES
-   "Spaghetti Fantasy" Character Sheet Design
-   Picaresque, dirty, worn - NOT noble Renaissance!
+   BRANCALONIA CHARACTER SHEET - STILE RINASCIMENTALE
+   Schede personaggio ispirate alle mappe cartografiche italiane
+   Font Awesome fix incluso per icone mancanti
    ======================================== */
 
-/* Character Sheet Layout - Worn & Stained */
-.dnd5e.sheet.actor.character {
-  background: linear-gradient(135deg, #D4C2A6, #C8B69C);
-  border: 3px solid #5A4A3A;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Kalam:wght@400;700&display=swap');
+
+/* ================================
+   FIX ICONE FONT AWESOME
+   ================================ */
+/* Assicura che Font Awesome sia sempre visibile */
+.fas, .far, .fa,
+button i[class*="fa-"],
+.control-icon i[class*="fa-"],
+a i[class*="fa-"] {
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Pro', 'FontAwesome' !important;
+  font-weight: 900;
+  font-style: normal;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Header Enhancements - Grimy & Worn */
+.far {
+  font-weight: 400 !important;
+}
+
+/* ================================
+   BASE SCHEDA PERSONAGGIO
+   ================================ */
+.dnd5e.sheet.actor.character {
+  background:
+    radial-gradient(ellipse at top right, rgba(201, 169, 97, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(122, 139, 127, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg, #E6D7BB 0%, #D4C4A0 50%, #C4B396 100%);
+  border: 3px solid #B87333;
+  border-radius: 0;
+  box-shadow:
+    0 0 0 1px #A08748,
+    0 0 0 2px #8B5A2B,
+    0 10px 25px rgba(44, 24, 16, 0.4),
+    inset 0 0 40px rgba(201, 169, 97, 0.1);
+  position: relative;
+  font-family: 'Crimson Text', Georgia, serif;
+  color: #2C1810;
+}
+
+/* Texture pergamena overlay */
+.dnd5e.sheet.actor.character::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    repeating-linear-gradient(0deg,
+      transparent,
+      transparent 50px,
+      rgba(74, 60, 40, 0.02) 50px,
+      rgba(74, 60, 40, 0.02) 52px),
+    repeating-linear-gradient(90deg,
+      transparent,
+      transparent 50px,
+      rgba(184, 115, 51, 0.02) 50px,
+      rgba(184, 115, 51, 0.02) 52px);
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+/* ================================
+   HEADER PERSONAGGIO
+   ================================ */
 .dnd5e.sheet.actor .sheet-header {
   background:
-    linear-gradient(45deg, transparent 25%, rgba(74, 52, 38, 0.3) 25%),
-    linear-gradient(135deg, #4A3426, #5C2328);
-  border: 3px solid #8B7355;
-  border-radius: 6px;
+    linear-gradient(90deg,
+      rgba(139, 90, 43, 0.1) 0%,
+      transparent 10%,
+      transparent 90%,
+      rgba(139, 90, 43, 0.1) 100%),
+    linear-gradient(135deg,
+      #8B5A2B 0%,
+      #B87333 45%,
+      #D4925A 50%,
+      #B87333 55%,
+      #8B5A2B 100%);
+  border: none;
+  border-bottom: 3px solid #A08748;
+  border-radius: 0;
   box-shadow:
-    0 4px 8px rgba(0,0,0,0.6),
-    inset 0 1px 0 rgba(0,0,0,0.3);
+    0 4px 10px rgba(44, 24, 16, 0.5),
+    inset 0 -2px 4px rgba(44, 24, 16, 0.3);
+  position: relative;
+  padding: 15px;
+  margin: -1px -1px 20px -1px;
+  color: #F5EBD9;
+  z-index: 10;
+}
+
+/* Decorazioni angoli header */
+.sheet-header::before,
+.sheet-header::after {
+  content: '❦';
+  position: absolute;
+  font-size: 24px;
+  color: #C9A961;
+  text-shadow: 0 2px 4px rgba(44, 24, 16, 0.6);
+}
+
+.sheet-header::before {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sheet-header::after {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+/* Nome personaggio */
+.sheet-header .charname input {
+  background: rgba(245, 235, 217, 0.15);
+  border: 2px solid #C9A961;
+  border-radius: 0;
+  color: #F5EBD9;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 16px;
+  text-shadow: 2px 2px 4px rgba(44, 24, 16, 0.8);
+  letter-spacing: 0.05em;
+}
+
+.sheet-header .charname input:focus {
+  background: rgba(245, 235, 217, 0.25);
+  border-color: #E6C985;
+  box-shadow: 0 0 15px rgba(230, 201, 133, 0.5);
+  outline: none;
+}
+
+/* ================================
+   NAVIGAZIONE TABS
+   ================================ */
+.dnd5e.sheet .sheet-navigation,
+.dnd5e.sheet .sheet-tabs {
+  border-bottom: 3px solid #B87333;
+  background: linear-gradient(180deg, #C4B396 0%, #D4C4A0 100%);
+  padding: 5px 10px 0;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 4px;
+}
+
+.sheet-navigation .item,
+.sheet-tabs .item {
+  background: #D4C4A0;
+  border: 2px solid #B87333;
+  border-bottom: none;
+  color: #4A3C28;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  transition: all 0.3s ease;
+  cursor: pointer;
   position: relative;
 }
 
-.dnd5e.sheet.actor .sheet-header::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 20px;
-  background: #8B7355;
-  border-radius: 20px 20px 0 0;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+.sheet-navigation .item.active,
+.sheet-tabs .item.active {
+  background: linear-gradient(180deg, #E6C985 0%, #C9A961 100%);
+  color: #2C1810;
+  transform: translateY(-3px);
+  box-shadow: 0 -3px 10px rgba(201, 169, 97, 0.4);
+  z-index: 10;
+  font-weight: 600;
 }
 
-/* Profile Image Frame - Tarnished Metal */
-.dnd5e.sheet.actor .sheet-header .profile-img {
-  border: 4px solid #8B7355;
-  border-radius: 50%;
+.sheet-navigation .item:hover:not(.active),
+.sheet-tabs .item:hover:not(.active) {
+  background: #E6D7BB;
+  transform: translateY(-1px);
+  color: #8B5A2B;
+}
+
+/* ================================
+   ATTRIBUTI E CARATTERISTICHE
+   ================================ */
+.attribute {
+  background:
+    linear-gradient(135deg,
+      rgba(245, 235, 217, 0.8) 0%,
+      rgba(230, 215, 187, 0.6) 100%);
+  border: 2px solid #B87333;
+  border-radius: 0;
+  padding: 10px;
+  margin: 10px 5px;
   box-shadow:
-    0 0 10px rgba(139, 115, 85, 0.4),
-    inset 0 0 10px rgba(0,0,0,0.3);
+    inset 0 2px 5px rgba(44, 24, 16, 0.15),
+    0 2px 4px rgba(44, 24, 16, 0.2);
   position: relative;
+  transition: all 0.3s ease;
 }
 
-.brancalonia-portrait-frame {
-  position: relative;
-  display: inline-block;
+.attribute:hover {
+  border-color: #C9A961;
+  box-shadow:
+    inset 0 2px 5px rgba(44, 24, 16, 0.15),
+    0 2px 8px rgba(201, 169, 97, 0.3);
 }
 
-.brancalonia-portrait-frame::before {
-  content: "⚜";
+.attribute::before {
+  content: '';
   position: absolute;
-  top: -5px;
-  right: -5px;
-  background: #FFD700;
-  color: #8B4513;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #C9A961;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.attribute-name {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  color: #4A3C28;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+  margin-bottom: 5px;
+}
+
+.attribute-value input {
+  background: #F5EBD9;
+  border: 1px solid #A08748;
+  border-radius: 0;
+  color: #2C1810;
+  font-family: 'Kalam', cursive;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+}
+
+/* ================================
+   BOTTONI E CONTROLLI CON ICONE
+   ================================ */
+button,
+button.inline-roll,
+.dialog-button,
+.control,
+a.control {
+  background: linear-gradient(135deg, #E6C985 0%, #C9A961 50%, #A08748 100%);
+  border: 2px solid #8B5A2B !important;
+  border-radius: 0;
+  color: #2C1810 !important;
+  padding: 6px 12px;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 2px 4px rgba(44, 24, 16, 0.3),
+    inset 0 -2px 4px rgba(139, 90, 43, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Fix specifico per icone nei bottoni */
+button i,
+button .fas,
+button .far,
+button .fa,
+.control i,
+.control .fas,
+.control .far,
+.control .fa,
+a.control i {
+  display: inline-block !important;
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Pro' !important;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.1em;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+  color: inherit !important;
+  text-shadow: 1px 1px 2px rgba(44, 24, 16, 0.3);
+}
+
+button:hover,
+.control:hover,
+a.control:hover {
+  background: linear-gradient(135deg, #D4925A 0%, #B87333 50%, #8B5A2B 100%);
+  color: #F5EBD9 !important;
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px 8px rgba(44, 24, 16, 0.4),
+    inset 0 -2px 4px rgba(139, 90, 43, 0.3);
+}
+
+button:hover i {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow:
+    0 1px 2px rgba(44, 24, 16, 0.3),
+    inset 0 2px 4px rgba(44, 24, 16, 0.2);
+}
+
+/* Bottone roll dadi speciale */
+button.rollable,
+.rollable {
+  background: linear-gradient(135deg, #D4925A 0%, #B87333 50%, #8B5A2B 100%);
+  border-color: #A08748 !important;
+}
+
+button.rollable:hover,
+.rollable:hover {
+  background: linear-gradient(135deg, #E6C985 0%, #C9A961 50%, #A08748 100%);
+  animation: dice-glow 0.5s ease-in-out;
+}
+
+@keyframes dice-glow {
+  0%, 100% { box-shadow: 0 2px 4px rgba(44, 24, 16, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(201, 169, 97, 0.6); }
+}
+
+/* ================================
+   CAMPI INPUT
+   ================================ */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  background: rgba(245, 235, 217, 0.9);
+  border: 1px solid #B87333;
+  border-radius: 0;
+  padding: 5px 8px;
+  color: #2C1810;
+  font-family: 'Kalam', 'Crimson Text', serif;
+  font-size: 1.05em;
+  box-shadow: inset 0 1px 3px rgba(44, 24, 16, 0.15);
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background: #F5EBD9;
+  border-color: #C9A961;
+  box-shadow:
+    0 0 0 2px rgba(201, 169, 97, 0.3),
+    inset 0 1px 3px rgba(44, 24, 16, 0.1);
+  outline: none;
+}
+
+input:disabled,
+select:disabled {
+  background: rgba(196, 179, 150, 0.4);
+  color: #6B5D4F;
+  cursor: not-allowed;
+  font-style: italic;
+}
+
+/* ================================
+   LISTE OGGETTI E INVENTARIO
+   ================================ */
+.items-list {
+  border: 2px solid #B87333;
+  background:
+    repeating-linear-gradient(0deg,
+      rgba(245, 235, 217, 0.5) 0px,
+      rgba(245, 235, 217, 0.5) 32px,
+      rgba(230, 215, 187, 0.5) 32px,
+      rgba(230, 215, 187, 0.5) 64px);
+  padding: 10px;
+  margin: 15px 0;
+  box-shadow: inset 0 2px 5px rgba(44, 24, 16, 0.15);
+  position: relative;
+}
+
+.items-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #C9A961;
+  pointer-events: none;
+}
+
+.items-list .items-header {
+  background: linear-gradient(90deg, #B87333 0%, #D4925A 50%, #B87333 100%);
+  color: #F5EBD9;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  padding: 8px;
+  margin: -10px -10px 10px -10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 3px rgba(44, 24, 16, 0.6);
+}
+
+.items-list .item {
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #C9A961;
+  padding: 8px;
+  margin: 3px 0;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: bold;
-  z-index: 1;
 }
 
-/* Character Name */
-.dnd5e.sheet.actor .sheet-header h1 {
-  font-family: EB Garamond Bold;
-  color: #FFD700;
-  text-shadow:
-    2px 2px 4px #654321,
-    0 0 10px #FFD70066;
-  font-size: 1.8em;
-  text-align: center;
-  margin: 0;
+.items-list .item:hover {
+  background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(201, 169, 97, 0.2) 50%,
+    rgba(255, 255, 255, 0.9) 100%);
+  transform: translateX(5px);
+  border-left: 3px solid #B87333;
+}
+
+.items-list .item-name {
+  flex: 1;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  color: #4A3C28;
+  font-size: 1.05em;
+}
+
+.items-list .item-image {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #B87333;
+  border-radius: 0;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(44, 24, 16, 0.2);
+}
+
+.items-list .item-controls {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.items-list .item-control {
+  color: #B87333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.1em;
+}
+
+.items-list .item-control:hover {
+  color: #C9A961;
+  transform: scale(1.3) rotate(10deg);
+  text-shadow: 0 2px 4px rgba(201, 169, 97, 0.4);
+}
+
+/* ================================
+   SKILLS E PROFICIENZE
+   ================================ */
+.skills-list {
+  background: rgba(245, 235, 217, 0.3);
+  border: 1px solid #B87333;
   padding: 10px;
-  position: relative;
+  margin: 10px 0;
 }
 
-.dnd5e.sheet.actor .sheet-header h1::before,
-.dnd5e.sheet.actor .sheet-header h1::after {
-  content: "❦";
-  font-size: 0.7em;
-  color: #CD7F32;
+.skill {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 3px 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background: rgba(201, 169, 97, 0.1);
+  border-left-color: #B87333;
+  transform: translateX(3px);
+}
+
+.skill-name {
+  flex: 1;
+  font-family: 'Crimson Text', serif;
+  color: #4A3C28;
+  font-weight: 600;
+}
+
+.skill-mod {
+  font-family: 'Kalam', cursive;
+  font-size: 1.2em;
+  color: #8B5A2B;
+  font-weight: 700;
   margin: 0 10px;
 }
 
-/* Class and Level */
-.dnd5e.sheet.actor .sheet-header .charlevel {
-  background: linear-gradient(90deg, transparent, #CD7F32, transparent);
-  color: #FFF8DC;
-  font-family: EB Garamond Bold;
-  text-align: center;
-  padding: 5px;
-  border-radius: 4px;
-  font-weight: bold;
+/* ================================
+   RESOURCES BARS (HP, etc)
+   ================================ */
+.resource-bar {
+  background: linear-gradient(180deg, #C4B396 0%, #D4C4A0 100%);
+  border: 2px solid #B87333;
+  border-radius: 0;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(44, 24, 16, 0.2);
 }
 
-/* Tabs - Preserve D&D 5e Navigation! */
-.dnd5e.sheet.actor .sheet-tabs {
-  display: flex !important; /* Ensure tabs are visible */
-  background: linear-gradient(135deg, #4A3426, #3A3025);
-  border-bottom: 3px solid #8B7355;
-  border-radius: 6px 6px 0 0;
+.resource-bar-fill {
+  background: linear-gradient(90deg, #8B5A2B 0%, #B87333 50%, #D4925A 100%);
+  height: 100%;
+  transition: width 0.5s ease;
+  box-shadow: inset 0 -2px 4px rgba(139, 90, 43, 0.3);
 }
 
-.dnd5e.sheet.actor .sheet-tabs .item {
-  display: block !important; /* Ensure items are visible */
-  background: #6B4C3A;
-  border: 1px solid #8B7355;
-  border-bottom: none;
-  color: #D4C4A8;
-  font-family: Benton;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0 2px;
-  border-radius: 8px 8px 0 0;
-  transition: all 0.3s ease;
-}
-
-.dnd5e.sheet.actor .sheet-tabs .item:hover {
-  background: #8B7355;
-  color: #D4C4A8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-}
-
-.dnd5e.sheet.actor .sheet-tabs .item.active {
-  background: #B8956A;
-  color: #2B1F15;
-  box-shadow:
-    0 2px 4px rgba(0,0,0,0.5),
-    inset 0 2px 4px rgba(0,0,0,0.2);
-  transform: translateY(-1px);
-}
-
-/* Ability Scores */
-.dnd5e.sheet.actor .ability-scores {
-  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
-  border: 2px solid #CD7F32;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-.dnd5e.sheet.actor .ability-scores .ability {
-  background: #FFF8DC;
-  border: 2px solid #8B4513;
-  border-radius: 6px;
-  padding: 8px;
-  text-align: center;
-  margin: 2px;
-  box-shadow: inset 0 2px 4px #65432122;
-  transition: all 0.2s ease;
-}
-
-.dnd5e.sheet.actor .ability-scores .ability:hover {
-  background: #F4E4BC;
-  border-color: #FFD700;
-  transform: scale(1.05);
-}
-
-.dnd5e.sheet.actor .ability-scores .ability .ability-name {
-  font-family: Benton;
-  font-weight: bold;
-  color: #722F37;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-}
-
-.dnd5e.sheet.actor .ability-scores .ability .ability-score {
-  font-family: EB Garamond Bold;
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #8B0000;
-}
-
-.dnd5e.sheet.actor .ability-scores .ability .ability-mod {
-  font-family: EB Garamond Regular;
-  color: #654321;
-  font-size: 1em;
-}
-
-/* Resources */
-.dnd5e.sheet.actor .resources {
-  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
-  border: 2px solid #CD7F32;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-.dnd5e.sheet.actor .resources .resource {
-  background: #FFF8DC;
-  border: 1px solid #8B4513;
-  border-radius: 4px;
-  padding: 5px;
-  margin: 3px 0;
-}
-
-/* Brancalonia-specific Resources */
-.brancalonia-infamia {
-  background: linear-gradient(90deg, #8B0000, #800020) !important;
-  border: 2px solid #FFD700 !important;
-  color: #FFF8DC !important;
-  text-shadow: 1px 1px 2px #654321;
-}
-
-.brancalonia-infamia label {
-  font-family: EB Garamond Bold;
-  font-weight: bold;
-  color: #FFD700;
-}
-
-.brancalonia-baraonda {
-  background: #8B4513 !important;
-  border: 2px solid #CD7F32 !important;
-  color: #FFF8DC !important;
-}
-
-.brancalonia-baraonda label {
-  font-family: EB Garamond Bold;
-  font-weight: bold;
-  color: #F4E4BC;
-}
-
-.brancalonia-lavori-sporchi {
-  background: linear-gradient(45deg, #722F3744, transparent) !important;
-  border: 1px dashed #FFD700 !important;
-  border-radius: 4px;
-  padding: 10px;
-  margin: 8px 0;
-}
-
-.brancalonia-lavori-sporchi h3 {
-  font-family: EB Garamond Bold;
-  color: #722F37;
-  margin: 0 0 8px 0;
-}
-
-.brancalonia-rifugio {
-  background: #F4E4BC !important;
-  border: 2px solid #8B4513 !important;
-  border-radius: 8px;
-  padding: 15px;
-  margin: 10px 0;
-  box-shadow: inset 0 0 10px #65432133;
-}
-
-.brancalonia-rifugio h3 {
-  font-family: EB Garamond Bold;
-  color: #8B4513;
-  text-align: center;
-  margin: 0 0 10px 0;
-  border-bottom: 2px solid #CD7F32;
-  padding-bottom: 5px;
-}
-
-.rifugio-details {
-  margin: 8px 0;
-}
-
-.rifugio-details label {
-  font-family: Benton;
-  font-weight: bold;
-  color: #722F37;
-  display: block;
-  margin-bottom: 3px;
-}
-
-.rifugio-details input,
-.rifugio-details select,
-.rifugio-details textarea {
-  width: 100%;
-  background: #FFF8DC;
-  border: 1px solid #CD7F32;
-  border-radius: 3px;
-  padding: 4px;
-  font-family: EB Garamond Regular;
-}
-
-/* Skills */
-.dnd5e.sheet.actor .skills-list {
-  background: #F4E4BC;
-  border: 2px solid #CD7F32;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-.dnd5e.sheet.actor .skills-list .skill {
-  border-bottom: 1px dotted #CD7F32;
-  padding: 3px 0;
-  transition: background 0.2s ease;
-}
-
-.dnd5e.sheet.actor .skills-list .skill:hover {
-  background: #FFF8DC;
-}
-
-.dnd5e.sheet.actor .skills-list .skill .skill-name {
-  font-family: EB Garamond Regular;
-  color: #722F37;
-}
-
-/* Combat Stats */
-.dnd5e.sheet.actor .combat-stats {
-  background: linear-gradient(135deg, #722F37, #8B0000);
-  color: #FFF8DC;
-  border: 3px solid #FFD700;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-}
-
-.dnd5e.sheet.actor .combat-stats .combat-stat {
-  background: #65432144;
-  border: 1px solid #CD7F32;
-  border-radius: 4px;
-  padding: 8px;
-  margin: 5px;
-}
-
-.dnd5e.sheet.actor .combat-stats .combat-stat .stat-name {
-  font-family: Benton;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #FFD700;
-}
-
-.dnd5e.sheet.actor .combat-stats .combat-stat .stat-value {
-  font-family: EB Garamond Bold;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #FFF8DC;
-}
-
-/* Inventory */
-.dnd5e.sheet.actor .inventory {
-  background: #F4E4BC;
-  border: 2px solid #CD7F32;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-.dnd5e.sheet.actor .inventory .item {
-  border-bottom: 1px solid #CD7F32;
-  padding: 5px 0;
-  transition: background 0.2s ease;
-}
-
-.dnd5e.sheet.actor .inventory .item:hover {
-  background: #FFF8DC;
-}
-
-.dnd5e.sheet.actor .inventory .item .item-name {
-  font-family: EB Garamond Regular;
-  color: #722F37;
-  font-weight: bold;
-}
-
-/* Spells */
-.dnd5e.sheet.actor .spellbook {
-  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
-  border: 2px solid #CD7F32;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-.dnd5e.sheet.actor .spellbook .spell-level {
-  background: #722F37;
-  color: #FFF8DC;
-  border-radius: 6px;
-  padding: 8px;
-  margin: 8px 0;
-  font-family: EB Garamond Bold;
-  text-align: center;
-}
-
-/* Biography */
-.dnd5e.sheet.actor .biography {
-  background: #F4E4BC;
-  border: 2px solid #CD7F32;
-  border-radius: 8px;
-  padding: 15px;
-  font-family: EB Garamond Regular;
-  line-height: 1.6;
-}
-
-.dnd5e.sheet.actor .biography h1,
-.dnd5e.sheet.actor .biography h2,
-.dnd5e.sheet.actor .biography h3 {
-  color: #722F37;
-  font-family: EB Garamond Bold;
-}
-
-/* Ornamental Elements */
-.brancalonia-ornament {
+.resource-bar-label {
   position: absolute;
-  color: #FFD700;
-  font-size: 1.5em;
-  text-shadow: 1px 1px 2px #654321;
-}
-
-.brancalonia-ornament.top {
-  top: -15px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+  color: #F5EBD9;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(44, 24, 16, 0.8);
+  pointer-events: none;
 }
 
-.brancalonia-ornament.bottom {
-  bottom: -15px;
-  right: 20px;
-}
-
-.brancalonia-character-indicator {
-  display: inline-block;
-  margin-right: 5px;
-  font-size: 1.2em;
-  filter: drop-shadow(1px 1px 2px #654321);
-}
-
-/* ========================
-   BRANCALONIA-SPECIFIC SECTIONS
-   ======================== */
+/* ================================
+   EFFETTI SPECIALI BRANCALONIA
+   ================================ */
 
 /* Infamia Tracker */
 .infamia-tracker {
-  background: linear-gradient(135deg, #722F37, #8B0000);
-  border: 3px solid #FFD700;
-  border-radius: 12px;
-  padding: 15px;
-  margin: 15px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.infamia-tracker::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 10px,
-    rgba(255, 215, 0, 0.1) 10px,
-    rgba(255, 215, 0, 0.1) 20px
-  );
-  pointer-events: none;
-}
-
-.infamia-tracker .resource-header h3 {
-  color: #FFD700;
-  font-family: 'Cinzel Decorative', serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 0 0 10px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.infamia-bar {
-  background: rgba(0, 0, 0, 0.3);
-  border: 2px solid #CD7F32;
-  border-radius: 20px;
-  height: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.infamia-fill {
-  background: linear-gradient(90deg, #FFD700, #FFA500);
-  height: 100%;
-  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-}
-
-.infamia-segments {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  display: flex;
-}
-
-.infamia-segments .segment {
-  flex: 1;
-  border-right: 1px solid rgba(255, 215, 0, 0.3);
-}
-
-.infamia-status .status-label {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 4px 12px;
-  border-radius: 20px;
-  color: #FFD700;
-  font-family: 'IM Fell DW Pica', serif;
-  font-style: italic;
-  margin-top: 8px;
-}
-
-/* Baraonda Tracker */
-.baraonda-tracker {
-  background: linear-gradient(135deg, #8B4513, #A0522D);
-  border: 3px solid #CD7F32;
-  border-radius: 12px;
-  padding: 15px;
-  margin: 15px 0;
-  position: relative;
-}
-
-.baraonda-value-circle {
-  width: 80px;
-  height: 80px;
-  background: radial-gradient(circle, #FFD700, #CD7F32);
-  border: 4px solid #8B4513;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 15px;
-  box-shadow: 0 0 20px rgba(205, 127, 50, 0.5);
-}
-
-.baraonda-value-circle input {
-  background: transparent;
-  border: none;
-  color: #8B4513;
-  font-size: 32px;
-  font-weight: bold;
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  width: 60px;
-}
-
-.baraonda-moves {
-  list-style: none;
-  padding: 0;
+  background: linear-gradient(135deg, #8B4726 0%, #A0522D 100%);
+  border: 2px solid #5C2E15;
+  padding: 10px;
   margin: 10px 0;
-}
-
-.baraonda-move {
-  background: rgba(255, 248, 220, 0.1);
-  border: 1px solid #CD7F32;
-  border-radius: 6px;
-  padding: 8px;
-  margin: 5px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-}
-
-.baraonda-move.available {
-  background: rgba(255, 215, 0, 0.2);
-  border-color: #FFD700;
-  cursor: pointer;
-}
-
-.baraonda-move.available:hover {
-  background: rgba(255, 215, 0, 0.3);
-  transform: translateX(5px);
-}
-
-.baraonda-move .move-cost {
-  background: #CD7F32;
-  color: #FFF8DC;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-/* Compagnia Section */
-.compagnia-section {
-  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
-  border: 4px solid #8B4513;
-  border-radius: 16px;
-  padding: 20px;
-  margin: 20px 0;
-  position: relative;
-}
-
-.compagnia-section .section-header {
-  text-align: center;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.compagnia-section .section-header h2 {
-  color: #722F37;
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 24px;
-  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
-}
-
-.compagnia-info .field-group {
-  margin: 15px 0;
-}
-
-.compagnia-info label {
-  display: block;
-  color: #8B4513;
-  font-family: 'IM Fell DW Pica', serif;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.compagnia-members {
-  background: rgba(139, 69, 19, 0.1);
-  border: 2px dashed #CD7F32;
-  border-radius: 8px;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.member-entry {
-  background: #FFF8DC;
-  border: 1px solid #CD7F32;
-  border-radius: 4px;
-  padding: 8px;
-  margin: 5px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.2s ease;
-}
-
-.member-entry:hover {
-  background: #F4E4BC;
-  transform: translateX(5px);
-}
-
-.reputation-tracker {
-  margin: 15px 0;
-}
-
-.reputation-slider {
-  width: 100%;
-  height: 8px;
-  background: linear-gradient(90deg, #8B0000, #FFD700, #228B22);
-  border-radius: 4px;
-  outline: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.reputation-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 24px;
-  height: 24px;
-  background: radial-gradient(circle, #FFD700, #CD7F32);
-  border: 2px solid #8B4513;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.reputation-labels {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-  font-family: 'IM Fell DW Pica', serif;
-  font-style: italic;
-}
-
-/* Lavori Sporchi Section */
-.lavori-sporchi-section {
-  background: linear-gradient(135deg, rgba(114, 47, 55, 0.1), rgba(139, 69, 19, 0.1));
-  border: 3px solid #CD7F32;
-  border-radius: 12px;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.lavori-summary {
-  display: flex;
-  gap: 15px;
-  justify-content: space-around;
-  margin-bottom: 15px;
-}
-
-.stat-box {
-  background: #FFF8DC;
-  border: 2px solid #8B4513;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  flex: 1;
-}
-
-.stat-label {
-  display: block;
-  color: #722F37;
-  font-family: 'IM Fell DW Pica', serif;
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-
-.stat-value {
-  display: block;
-  color: #8B4513;
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.lavoro-entry {
-  background: #FFF8DC;
-  border: 2px solid #CD7F32;
-  border-radius: 8px;
-  padding: 12px;
-  margin: 8px 0;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.lavoro-entry.completed {
-  opacity: 0.7;
-  background: linear-gradient(135deg, #F4E4BC, #E8D5B7);
-}
-
-.lavoro-entry:hover {
-  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
-  transform: translateY(-2px);
-}
-
-/* Rifugio Section Enhanced */
-.rifugio-section {
-  background:
-    linear-gradient(135deg, rgba(244, 228, 188, 0.95), rgba(255, 248, 220, 0.95)),
-    url('/modules/brancalonia-bigat/assets/ui/backgrounds/parchment.webp');
-  background-size: cover;
-  border: 4px solid #8B4513;
-  border-radius: 16px;
-  padding: 20px;
-  margin: 20px 0;
-  position: relative;
-  box-shadow: inset 0 0 20px rgba(139, 69, 19, 0.2);
-}
-
-.comfort-selector {
-  display: flex;
-  justify-content: space-around;
-  margin: 15px 0;
-}
-
-.comfort-level {
-  background: #FFF8DC;
-  border: 2px solid #CD7F32;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.comfort-level.selected {
-  background: linear-gradient(135deg, #FFD700, #CD7F32);
-  border-color: #8B4513;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.4);
-}
-
-.comfort-level:hover {
-  background: #F4E4BC;
-  transform: translateY(-2px);
-}
-
-.comfort-icon {
-  display: block;
-  font-size: 24px;
-  margin-bottom: 5px;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-  margin: 15px 0;
-}
-
-.feature-checkbox {
-  background: #FFF8DC;
-  border: 2px solid #CD7F32;
-  border-radius: 6px;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.feature-checkbox:hover {
-  background: #F4E4BC;
-  border-color: #8B4513;
-}
-
-.feature-checkbox input[type="checkbox"]:checked + .feature-icon {
-  color: #FFD700;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-}
-
-/* Malefatte Section */
-.malefatte-section {
-  background: linear-gradient(135deg, rgba(139, 0, 0, 0.1), rgba(114, 47, 55, 0.1));
-  border: 3px solid #8B0000;
-  border-radius: 12px;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.crime-counter {
-  display: flex;
-  justify-content: space-around;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-.crime-type {
-  background: #8B0000;
-  color: #FFF8DC;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-family: 'IM Fell DW Pica', serif;
-  font-weight: bold;
-}
-
-.malefatta-entry {
-  background: rgba(255, 248, 220, 0.9);
-  border-left: 4px solid #8B0000;
-  padding: 10px;
-  margin: 8px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.2s ease;
-}
-
-.malefatta-entry:hover {
-  background: #FFF8DC;
-  transform: translateX(5px);
-}
-
-/* Section Ornaments */
-.section-ornament {
-  text-align: center;
-  color: #CD7F32;
-  font-size: 18px;
-  margin: 10px 0;
-  text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.3);
-}
-
-.corner-ornaments {
-  pointer-events: none;
-}
-
-.corner-ornaments .ornament {
-  position: absolute;
-  color: #FFD700;
-  font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
-}
-
-.corner-ornaments .top-left {
-  top: 10px;
-  left: 10px;
-}
-
-.corner-ornaments .top-right {
-  top: 10px;
-  right: 10px;
-}
-
-.corner-ornaments .bottom-left {
-  bottom: 10px;
-  left: 10px;
-}
-
-.corner-ornaments .bottom-right {
-  bottom: 10px;
-  right: 10px;
-}
-
-/* Italian Renaissance Portrait Frame */
-.portrait-frame {
-  position: relative;
-  display: inline-block;
-}
-
-.portrait-frame.renaissance {
-  padding: 8px;
-  background: linear-gradient(45deg,
-    #FFD700 0%,
-    #CD7F32 25%,
-    #FFD700 50%,
-    #CD7F32 75%,
-    #FFD700 100%);
-  border-radius: 50%;
   box-shadow:
-    0 0 20px rgba(255, 215, 0, 0.4),
-    inset 0 0 10px rgba(139, 69, 19, 0.3);
+    inset 0 2px 4px rgba(44, 24, 16, 0.3),
+    0 2px 4px rgba(44, 24, 16, 0.4);
 }
 
-.frame-ornament {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: radial-gradient(circle, #FFD700, #CD7F32);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  color: #8B4513;
-  font-weight: bold;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.frame-ornament.top-left {
-  top: -5px;
-  left: -5px;
-}
-
-.frame-ornament.top-right {
-  top: -5px;
-  right: -5px;
-}
-
-.frame-ornament.bottom-left {
-  bottom: -5px;
-  left: -5px;
-}
-
-.frame-ornament.bottom-right {
-  bottom: -5px;
-  right: -5px;
-}
-
-/* Character Titles */
-.character-titles {
+.infamia-value {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5em;
+  color: #F5EBD9;
   text-align: center;
-  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(44, 24, 16, 0.8);
 }
 
-.soprannome-input,
-.titolo-input {
-  background: rgba(255, 248, 220, 0.5);
-  border: 1px solid #CD7F32;
-  border-radius: 4px;
+/* Menagramo Indicator */
+.menagramo-indicator {
+  display: inline-block;
   padding: 4px 8px;
-  margin: 2px;
-  font-family: 'IM Fell DW Pica', serif;
-  font-style: italic;
-  color: #722F37;
+  background: linear-gradient(135deg, #2C1810 0%, #4A3C28 100%);
+  color: #C9A961;
+  border: 1px solid #8B4726;
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  animation: menagramo-pulse 2s ease-in-out infinite;
+}
+
+@keyframes menagramo-pulse {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* ================================
+   SCROLLBAR PERSONALIZZATA
+   ================================ */
+.window-content::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.window-content::-webkit-scrollbar-track {
+  background: #C4B396;
+  border: 1px solid #B87333;
+  box-shadow: inset 0 0 4px rgba(44, 24, 16, 0.2);
+}
+
+.window-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #8B5A2B 0%, #B87333 50%, #8B5A2B 100%);
+  border: 1px solid #A08748;
+  border-radius: 2px;
+}
+
+.window-content::-webkit-scrollbar-thumb:hover {
+  background: #C9A961;
+}
+
+/* ================================
+   TOOLTIPS PERGAMENA
+   ================================ */
+.tooltip {
+  background: #F5EBD9 !important;
+  border: 2px solid #B87333 !important;
+  color: #2C1810 !important;
+  font-family: 'Kalam', cursive;
+  font-size: 1.05em;
+  box-shadow:
+    0 4px 12px rgba(44, 24, 16, 0.4),
+    0 0 0 1px #C9A961;
+  border-radius: 0 !important;
+}
+
+/* ================================
+   FIXES SPECIFICI D&D 5E
+   ================================ */
+
+/* Fix per ability scores */
+.ability-scores {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.ability {
   text-align: center;
+  padding: 10px;
+  background: rgba(245, 235, 217, 0.6);
+  border: 2px solid #B87333;
+  min-width: 60px;
 }
 
-.soprannome-input::placeholder,
-.titolo-input::placeholder {
-  color: rgba(114, 47, 55, 0.5);
+.ability-name {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #4A3C28;
 }
 
-/* Tooltip Anchors */
-.tooltip-anchor {
-  display: inline-block;
-  background: #CD7F32;
-  color: #FFF8DC;
+.ability-score {
+  font-family: 'Kalam', cursive;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #8B5A2B;
+}
+
+.ability-mod {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2em;
+  color: #2C1810;
+}
+
+/* Fix per Counter badges */
+.counter {
+  background: #C9A961;
+  color: #2C1810;
+  border: 1px solid #8B5A2B;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
+  padding: 2px 6px;
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  font-size: 0.9em;
+  min-width: 20px;
   text-align: center;
-  line-height: 16px;
-  font-size: 10px;
-  cursor: help;
-  margin-left: 5px;
-}
-
-.tooltip-anchor:hover {
-  background: #FFD700;
-  color: #8B4513;
-}
-
-/* Action Buttons */
-.baraonda-btn,
-.add-lavoro-btn,
-.add-member-btn,
-.add-malefatta-btn,
-.archive-lavori-btn {
-  background: linear-gradient(135deg, #CD7F32, #8B4513);
-  border: 2px solid #FFD700;
-  color: #FFF8DC;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-family: 'IM Fell DW Pica', serif;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  margin: 5px;
-}
-
-.baraonda-btn::before,
-.add-lavoro-btn::before,
-.add-member-btn::before,
-.add-malefatta-btn::before,
-.archive-lavori-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg,
-    transparent,
-    rgba(255, 215, 0, 0.3),
-    transparent);
-  transition: left 0.5s ease;
-}
-
-.baraonda-btn:hover::before,
-.add-lavoro-btn:hover::before,
-.add-member-btn:hover::before,
-.add-malefatta-btn:hover::before,
-.archive-lavori-btn:hover::before {
-  left: 100%;
-}
-
-.baraonda-btn:hover,
-.add-lavoro-btn:hover,
-.add-member-btn:hover,
-.add-malefatta-btn:hover,
-.archive-lavori-btn:hover {
-  background: linear-gradient(135deg, #FFD700, #CD7F32);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.4);
-}
-
-/* Shoddy Equipment Indicator */
-.shoddy-item {
-  position: relative;
-  opacity: 0.9;
-}
-
-.quality-indicator.shoddy {
   display: inline-block;
-  margin-right: 4px;
-  filter: sepia(100%) saturate(200%) hue-rotate(15deg);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .dnd5e.sheet.actor .sheet-header h1 {
-    font-size: 1.4em;
-  }
-
-  .dnd5e.sheet.actor .ability-scores .ability {
-    margin: 1px;
-    padding: 4px;
-  }
-
-  .brancalonia-rifugio {
-    padding: 10px;
-  }
-
-  .features-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
-
-  .lavori-summary {
-    flex-direction: column;
-  }
-
-  .comfort-selector {
-    flex-wrap: wrap;
-  }
-
-  .reputation-labels {
-    font-size: 12px;
-  }
+/* Fix icone mancanti specifiche */
+.item-create i::before,
+.item-delete i::before,
+.item-edit i::before,
+.item-toggle i::before {
+  font-family: 'Font Awesome 5 Free' !important;
+  font-weight: 900 !important;
 }
 
-/* Print Styles */
-@media print {
-  .brancalonia-character-sheet {
-    background: white !important;
-    color: black !important;
-  }
-
-  .baraonda-btn,
-  .add-lavoro-btn,
-  .add-member-btn,
-  .add-malefatta-btn,
-  .archive-lavori-btn {
-    display: none;
-  }
-
-  .infamia-tracker,
-  .baraonda-tracker,
-  .compagnia-section,
-  .rifugio-section {
-    border: 1px solid black !important;
-    background: white !important;
-  }
-}
+/* Icone specifiche se mancanti */
+.item-create i.fa-plus::before { content: "\f067"; }
+.item-delete i.fa-trash::before { content: "\f1f8"; }
+.item-edit i.fa-edit::before { content: "\f044"; }
+.item-toggle i.fa-shield-alt::before { content: "\f3ed"; }

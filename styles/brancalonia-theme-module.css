@@ -1,553 +1,427 @@
 /**
- * Brancalonia Theme Module - Module Layer
- * Brancalonia-specific styling and "Spaghetti Fantasy" decorations
- * Applied on top of system layer
- * Picaresque, dirty, comic-book inspired - not elegant Renaissance!
+ * Brancalonia Theme Module - Stile Rinascimentale Italiano
+ * Ispirato alle mappe cartografiche del XVI secolo
+ * Taverne, pergamene e avventure picaresche nel Regno di Taglia
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Kalam:wght@400;700&display=swap');
 
 @layer module {
 
   /* ================================
-     Picaresque Decorative Elements
+     VARIABILI COLORE RINASCIMENTALI
      ================================ */
+  :root {
+    /* Palette dalla mappa di Brancalonia */
+    --branca-parchment: #D4C4A0;
+    --branca-parchment-light: #E6D7BB;
+    --branca-parchment-dark: #C4B396;
+    --branca-sea: #7A8B7F;
+    --branca-sea-dark: #5E6B61;
+    --branca-terracotta: #B87333;
+    --branca-terracotta-light: #D4925A;
+    --branca-terracotta-dark: #8B5A2B;
+    --branca-sepia: #4A3C28;
+    --branca-sepia-light: #6B5D4F;
+    --branca-sepia-dark: #2C1810;
+    --branca-gold: #C9A961;
+    --branca-gold-light: #E6C985;
+    --branca-gold-dark: #A08748;
 
-  /* Rough Corner Ornaments - Worn Metal */
-  .window-app.branca-decorated::before,
-  .window-app.branca-decorated::after,
-  .window-app.branca-decorated .branca-corner {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    pointer-events: none;
-    z-index: 100;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10,10 L40,15 L45,45 L15,40 Z M90,10 L85,40 L55,45 L60,15 Z M10,90 L15,60 L45,55 L40,85 Z M90,90 L60,85 L55,55 L85,60 Z" fill="none" stroke="%23B8956A" stroke-width="2" opacity="0.4" stroke-linecap="round"/><circle cx="50" cy="50" r="3" fill="%238B7355" opacity="0.6"/></svg>');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .window-app.branca-decorated::before {
-    top: -10px;
-    left: -10px;
-  }
-
-  .window-app.branca-decorated::after {
-    top: -10px;
-    right: -10px;
-    transform: scaleX(-1);
-  }
-
-  .branca-corner-bl {
-    bottom: -10px;
-    left: -10px;
-    transform: scaleY(-1);
-  }
-
-  .branca-corner-br {
-    bottom: -10px;
-    right: -10px;
-    transform: scale(-1, -1);
+    /* Font Rinascimentali */
+    --branca-font-display: 'Cinzel', Georgia, serif;
+    --branca-font-body: 'Crimson Text', Georgia, serif;
+    --branca-font-handwritten: 'Kalam', cursive;
   }
 
   /* ================================
-     Brancalonia Character Sheet
+     STILE BASE PERGAMENA
      ================================ */
-
-  /* Custom Trackers Section */
-  .brancalonia-trackers {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--branca-spacing-md);
-    padding: var(--branca-spacing-md);
-    margin: var(--branca-spacing-md) 0;
-    background: var(--branca-gradient-surface);
-    border: 3px double var(--branca-accent);
-    border-radius: var(--branca-border-radius);
-    box-shadow: inset 0 0 20px rgba(255, 215, 0, 0.1);
-  }
-
-  /* Infamia Tracker - Criminal Underworld Theme */
-  .infamia-tracker {
-    background: linear-gradient(135deg, rgba(74, 52, 38, 0.5), rgba(122, 46, 46, 0.5));
-    padding: var(--branca-spacing-sm);
-    border-radius: var(--branca-border-radius);
-    border: 2px solid var(--branca-border);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
-  }
-
-  .infamia-tracker .tracker-title {
-    font-family: var(--branca-font-display);
-    color: var(--branca-accent);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    margin-bottom: var(--branca-spacing-xs);
-    display: flex;
-    align-items: center;
-    gap: var(--branca-spacing-xs);
-  }
-
-  .infamia-tracker .tracker-bar {
-    width: 100%;
-    height: 24px;
-    background: var(--branca-background);
-    border: 2px solid var(--branca-border);
-    border-radius: 12px;
-    overflow: hidden;
+  .app,
+  .window-app,
+  .dialog {
+    background: linear-gradient(135deg,
+      var(--branca-parchment-light) 0%,
+      var(--branca-parchment) 50%,
+      var(--branca-parchment-dark) 100%);
+    color: var(--branca-sepia-dark);
+    font-family: var(--branca-font-body);
     position: relative;
   }
 
-  .infamia-tracker .tracker-fill {
-    height: 100%;
-    background: linear-gradient(90deg,
-      #5C2020 0%,
-      #7A2E2E 50%,
-      #8B3A3A 100%);
-    transition: width var(--branca-transition-normal);
-    box-shadow: 0 0 10px rgba(122, 46, 46, 0.6);
-    position: relative;
-  }
-
-  .infamia-tracker .tracker-fill::after {
+  /* Texture pergamena invecchiata */
+  .app::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background-image:
+      repeating-linear-gradient(45deg,
+        transparent,
+        transparent 10px,
+        rgba(74, 60, 40, 0.02) 10px,
+        rgba(74, 60, 40, 0.02) 20px),
+      radial-gradient(ellipse at top left,
+        rgba(184, 115, 51, 0.05) 0%,
+        transparent 70%),
+      radial-gradient(ellipse at bottom right,
+        rgba(122, 139, 127, 0.05) 0%,
+        transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* ================================
+     DECORAZIONI CARTOGRAFICHE
+     ================================ */
+
+  /* Cornici ornate stile mappa */
+  .window-app {
+    border: 3px solid var(--branca-terracotta);
+    box-shadow:
+      0 0 0 1px var(--branca-gold-dark),
+      0 0 0 2px var(--branca-terracotta-dark),
+      0 8px 20px rgba(44, 24, 16, 0.4),
+      inset 0 0 40px rgba(201, 169, 97, 0.1);
+    border-radius: 0;
+  }
+
+  /* Angoli decorativi barocchi */
+  .window-app::before,
+  .window-app::after,
+  .window-content::before,
+  .window-content::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--branca-gold-dark);
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .window-app::before {
+    top: -2px;
+    left: -2px;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 8px 0 0 0;
+  }
+
+  .window-app::after {
+    top: -2px;
+    right: -2px;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0 8px 0 0;
+  }
+
+  .window-content::before {
+    bottom: -2px;
+    left: -2px;
+    border-right: none;
+    border-top: none;
+    border-radius: 0 0 0 8px;
+  }
+
+  .window-content::after {
+    bottom: -2px;
+    right: -2px;
+    border-left: none;
+    border-top: none;
+    border-radius: 0 0 8px 0;
+  }
+
+  /* ================================
+     HEADER STILE CARTUCCIA
+     ================================ */
+  .window-header {
+    background: linear-gradient(90deg,
+      var(--branca-terracotta-dark) 0%,
+      var(--branca-terracotta) 50%,
+      var(--branca-terracotta-dark) 100%);
+    border-bottom: 2px solid var(--branca-gold-dark);
+    color: var(--branca-parchment-light);
+    font-family: var(--branca-font-display);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(44, 24, 16, 0.8);
+    position: relative;
+    padding: 10px 30px;
+  }
+
+  /* Decorazione header stile banner */
+  .window-header::before,
+  .window-header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 30px;
+    background: var(--branca-gold);
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%, 20% 50%);
+    clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%, 20% 50%);
+  }
+
+  .window-header::before {
+    left: 5px;
+  }
+
+  .window-header::after {
+    right: 5px;
+    transform: translateY(-50%) scaleX(-1);
+  }
+
+  /* ================================
+     BOTTONI STILE SIGILLO
+     ================================ */
+  button,
+  .dialog-button {
+    background: linear-gradient(135deg,
+      var(--branca-gold-light) 0%,
+      var(--branca-gold) 50%,
+      var(--branca-gold-dark) 100%);
+    border: 2px solid var(--branca-terracotta-dark);
+    color: var(--branca-sepia-dark);
+    font-family: var(--branca-font-display);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow:
+      0 2px 4px rgba(44, 24, 16, 0.3),
+      inset 0 1px 0 rgba(230, 201, 133, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  button:hover {
+    background: linear-gradient(135deg,
+      var(--branca-terracotta-light) 0%,
+      var(--branca-terracotta) 50%,
+      var(--branca-terracotta-dark) 100%);
+    transform: translateY(-1px);
+    box-shadow:
+      0 4px 8px rgba(44, 24, 16, 0.4),
+      inset 0 1px 0 rgba(212, 146, 90, 0.5);
+  }
+
+  button:hover::before {
+    opacity: 1;
+  }
+
+  /* ================================
+     INPUT E FORM FIELDS
+     ================================ */
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    background: rgba(245, 235, 217, 0.7);
+    border: 1px solid var(--branca-terracotta);
+    border-radius: 0;
+    color: var(--branca-sepia-dark);
+    font-family: var(--branca-font-handwritten);
+    font-size: 1.1em;
+    padding: 6px 10px;
+    box-shadow: inset 0 2px 4px rgba(44, 24, 16, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    background: var(--branca-parchment-light);
+    border-color: var(--branca-gold);
+    box-shadow:
+      0 0 0 2px rgba(201, 169, 97, 0.3),
+      inset 0 2px 4px rgba(44, 24, 16, 0.1);
+    outline: none;
+  }
+
+  /* ================================
+     TABS STILE LIBRO
+     ================================ */
+  .tabs {
+    border-bottom: 2px solid var(--branca-terracotta);
+    background: linear-gradient(180deg,
+      var(--branca-parchment-dark) 0%,
+      var(--branca-parchment) 100%);
+  }
+
+  .tabs .item {
+    background: var(--branca-parchment);
+    border: 1px solid var(--branca-terracotta);
+    border-bottom: none;
+    color: var(--branca-sepia);
+    font-family: var(--branca-font-display);
+    font-weight: 600;
+    margin-right: 4px;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+  }
+
+  .tabs .item.active {
+    background: linear-gradient(180deg,
+      var(--branca-gold-light) 0%,
+      var(--branca-gold) 100%);
+    color: var(--branca-sepia-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 -2px 8px rgba(201, 169, 97, 0.3);
+  }
+
+  .tabs .item:hover:not(.active) {
+    background: var(--branca-parchment-light);
+    transform: translateY(-1px);
+  }
+
+  /* ================================
+     SCROLLBAR ANTICA
+     ================================ */
+  ::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--branca-parchment-dark);
+    border: 1px solid var(--branca-terracotta);
+    box-shadow: inset 0 0 6px rgba(44, 24, 16, 0.2);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg,
+      var(--branca-terracotta-dark) 0%,
+      var(--branca-terracotta) 50%,
+      var(--branca-terracotta-dark) 100%);
+    border: 1px solid var(--branca-gold-dark);
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--branca-gold);
+  }
+
+  /* ================================
+     TOOLTIP PERGAMENA
+     ================================ */
+  .tooltip,
+  .tooltip-part {
+    background: var(--branca-parchment-light);
+    border: 2px solid var(--branca-terracotta);
+    color: var(--branca-sepia-dark);
+    font-family: var(--branca-font-handwritten);
+    box-shadow:
+      0 4px 12px rgba(44, 24, 16, 0.4),
+      0 0 0 1px var(--branca-gold-dark);
+  }
+
+  /* ================================
+     ICONE E SIMBOLI
+     ================================ */
+  .fas,
+  .far,
+  .fa {
+    color: var(--branca-terracotta);
+    text-shadow: 1px 1px 2px rgba(44, 24, 16, 0.2);
+  }
+
+  .fa:hover {
+    color: var(--branca-gold);
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+  }
+
+  /* ================================
+     ROSA DEI VENTI (dice roller)
+     ================================ */
+  #dice-box {
+    background: radial-gradient(circle at center,
+      var(--branca-parchment-light) 0%,
+      var(--branca-parchment) 70%,
+      var(--branca-parchment-dark) 100%);
+    border: 3px solid var(--branca-terracotta);
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 2px var(--branca-gold-dark),
+      0 8px 20px rgba(44, 24, 16, 0.4),
+      inset 0 0 20px rgba(201, 169, 97, 0.2);
+  }
+
+  /* ================================
+     CHAT STILE TAVERNA
+     ================================ */
+  #chat-log {
+    background: linear-gradient(180deg,
+      var(--branca-parchment) 0%,
+      var(--branca-parchment-dark) 100%);
+    background-attachment: local;
+  }
+
+  .message {
+    background: rgba(245, 235, 217, 0.6);
+    border-left: 3px solid var(--branca-terracotta);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+
+  .message:hover {
+    background: var(--branca-parchment-light);
+    border-left-color: var(--branca-gold);
+    transform: translateX(2px);
+  }
+
+  .message-header {
+    background: linear-gradient(90deg,
+      var(--branca-terracotta) 0%,
+      transparent 100%);
+    color: var(--branca-parchment-light);
+    font-family: var(--branca-font-display);
+  }
+
+  /* ================================
+     ANIMAZIONI ORGANICHE
+     ================================ */
+  @keyframes parchment-flutter {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(0.5deg) scale(1.01); }
+    50% { transform: rotate(-0.3deg) scale(0.99); }
+    75% { transform: rotate(0.2deg) scale(1.005); }
+  }
+
+  .window-app {
+    animation: parchment-flutter 20s ease-in-out infinite;
+  }
+
+  /* ================================
+     EFFETTI HOVER TAVERNA
+     ================================ */
+  .item:hover,
+  .entity-link:hover,
+  .content-link:hover {
     background: linear-gradient(90deg,
       transparent 0%,
-      rgba(255, 255, 255, 0.3) 50%,
+      rgba(201, 169, 97, 0.2) 50%,
       transparent 100%);
-    animation: branca-shimmer 3s linear infinite;
+    color: var(--branca-terracotta);
+    text-decoration: none;
+    transition: all 0.3s ease;
   }
-
-  .infamia-tracker .tracker-value {
-    text-align: center;
-    color: var(--branca-accent);
-    font-family: var(--branca-font-display);
-    font-weight: bold;
-    margin-top: var(--branca-spacing-xs);
-  }
-
-  /* Baraonda Points - Tavern Brawl Theme */
-  .baraonda-tracker {
-    background: linear-gradient(135deg, rgba(74, 52, 38, 0.5), rgba(139, 115, 85, 0.5));
-    padding: var(--branca-spacing-sm);
-    border-radius: var(--branca-border-radius);
-    border: 2px solid var(--branca-border);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
-  }
-
-  .baraonda-tracker .tracker-title {
-    font-family: var(--branca-font-display);
-    color: var(--branca-accent);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    margin-bottom: var(--branca-spacing-xs);
-    display: flex;
-    align-items: center;
-    gap: var(--branca-spacing-xs);
-  }
-
-  .baraonda-tracker .tracker-points {
-    display: flex;
-    gap: var(--branca-spacing-xs);
-    justify-content: center;
-    padding: var(--branca-spacing-sm);
-  }
-
-  .baraonda-point {
-    font-size: 28px;
-    transition: all var(--branca-transition-normal);
-    cursor: pointer;
-    position: relative;
-  }
-
-  .baraonda-point.filled {
-    color: var(--branca-accent);
-    filter: drop-shadow(0 0 5px rgba(184, 149, 106, 0.6));
-    animation: branca-pulse-brass 2s infinite;
-  }
-
-  .baraonda-point.empty {
-    color: var(--branca-border);
-    opacity: 0.5;
-  }
-
-  .baraonda-point:hover {
-    transform: scale(1.2) rotate(10deg);
-  }
-
-  @keyframes branca-pulse-brass {
-    0%, 100% {
-      transform: scale(1);
-      filter: drop-shadow(0 0 5px rgba(184, 149, 106, 0.6));
-    }
-    50% {
-      transform: scale(1.08);
-      filter: drop-shadow(0 0 10px rgba(184, 149, 106, 0.8));
-    }
-  }
-
-  /* Lavori Sporchi Counter - Dirty Jobs Theme */
-  .lavori-tracker {
-    background: linear-gradient(135deg, rgba(58, 48, 37, 0.5), rgba(90, 74, 58, 0.5));
-    padding: var(--branca-spacing-sm);
-    border-radius: var(--branca-border-radius);
-    border: 2px solid var(--branca-border);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
-  }
-
-  .lavori-tracker .tracker-title {
-    font-family: var(--branca-font-display);
-    color: var(--branca-accent);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    margin-bottom: var(--branca-spacing-xs);
-    display: flex;
-    align-items: center;
-    gap: var(--branca-spacing-xs);
-  }
-
-  .lavori-tracker .tracker-counter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--branca-spacing-md);
-    padding: var(--branca-spacing-sm);
-    background: var(--branca-background);
-    border: 2px solid var(--branca-border);
-    border-radius: var(--branca-border-radius);
-  }
-
-  .lavori-tracker .counter-value {
-    font-size: 2em;
-    font-weight: bold;
-    color: var(--branca-accent);
-    font-family: var(--branca-font-display);
-    min-width: 50px;
-    text-align: center;
-    text-shadow: 0 0 10px var(--branca-accent);
-  }
-
-  .lavori-tracker .counter-btn {
-    background: var(--branca-gradient-brass);
-    color: var(--branca-textDark);
-    border: 2px solid var(--branca-border);
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all var(--branca-transition-fast);
-    font-weight: bold;
-  }
-
-  .lavori-tracker .counter-btn:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px var(--branca-accent);
-  }
-
-  .lavori-tracker .counter-btn:active {
-    transform: scale(0.95);
-  }
-
-  /* Rifugio Status - Hideout Theme */
-  .rifugio-tracker {
-    background: linear-gradient(135deg, rgba(59, 74, 47, 0.5), rgba(73, 89, 64, 0.5));
-    padding: var(--branca-spacing-sm);
-    border-radius: var(--branca-border-radius);
-    border: 2px solid var(--branca-border);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
-  }
-
-  .rifugio-tracker .tracker-title {
-    font-family: var(--branca-font-display);
-    color: var(--branca-accent);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    margin-bottom: var(--branca-spacing-xs);
-    display: flex;
-    align-items: center;
-    gap: var(--branca-spacing-xs);
-  }
-
-  .rifugio-status {
-    padding: var(--branca-spacing-sm) var(--branca-spacing-md);
-    border-radius: var(--branca-border-radius);
-    font-family: var(--branca-font-secondary);
-    font-weight: 600;
-    text-align: center;
-    transition: all var(--branca-transition-normal);
-    cursor: pointer;
-  }
-
-  .rifugio-status.active {
-    background: linear-gradient(135deg, #3B4A2F, #495940);
-    color: var(--branca-text);
-    border: 2px solid var(--branca-success);
-    box-shadow: 0 0 10px rgba(59, 74, 47, 0.5);
-  }
-
-  .rifugio-status.inactive {
-    background: var(--branca-background);
-    color: var(--branca-border);
-    border: 2px dashed var(--branca-border);
-    font-style: italic;
-    opacity: 0.7;
-  }
-
-  .rifugio-status:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--branca-shadow-md);
-  }
-
-  /* ================================
-     Chat Message Enhancements
-     ================================ */
-
-  #chat-log .message.brancalonia-enhanced {
-    position: relative;
-    overflow: visible;
-  }
-
-  /* Critical Success Styling */
-  #chat-log .message .branca-crit {
-    display: inline-block;
-    color: var(--branca-accent);
-    font-family: var(--branca-font-display);
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-left: var(--branca-spacing-sm);
-    text-shadow: 0 0 10px var(--branca-accent);
-    animation: branca-crit-flash 0.5s ease 3;
-  }
-
-  @keyframes branca-crit-flash {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.2); }
-  }
-
-  /* Critical Failure Styling */
-  #chat-log .message .branca-fumble {
-    display: inline-block;
-    color: var(--branca-error);
-    font-family: var(--branca-font-display);
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-left: var(--branca-spacing-sm);
-    text-shadow: 0 0 10px var(--branca-error);
-    animation: branca-fumble-shake 0.5s ease;
-  }
-
-  @keyframes branca-fumble-shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-5px) rotate(-5deg); }
-    75% { transform: translateX(5px) rotate(5deg); }
-  }
-
-  /* Dice Roll Enhancements */
-  #chat-log .dice-roll {
-    border: 2px solid var(--branca-border);
-    background: var(--branca-gradient-surface);
-    border-radius: var(--branca-border-radius);
-    padding: var(--branca-spacing-sm);
-    margin: var(--branca-spacing-sm) 0;
-  }
-
-  #chat-log .dice-formula {
-    background: var(--branca-gradient-brass);
-    color: var(--branca-textDark);
-    padding: var(--branca-spacing-xs) var(--branca-spacing-sm);
-    border-radius: var(--branca-border-radius);
-    font-weight: bold;
-    font-family: var(--branca-font-display);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-
-  #chat-log .dice-total {
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: var(--branca-font-display);
-  }
-
-  #chat-log .dice-total.critical {
-    color: var(--branca-accent);
-    text-shadow: 0 0 15px var(--branca-accent);
-    animation: branca-glow 2s infinite;
-  }
-
-  #chat-log .dice-total.fumble {
-    color: var(--branca-error);
-    text-shadow: 0 0 15px var(--branca-error);
-    animation: branca-fumble-shake 0.5s ease;
-  }
-
-  /* ================================
-     Theme Picker Dialog
-     ================================ */
-
-  .branca-theme-picker-dialog .window-content {
-    padding: var(--branca-spacing-lg);
-  }
-
-  .branca-theme-picker-dialog .theme-presets {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--branca-spacing-md);
-    margin-bottom: var(--branca-spacing-lg);
-  }
-
-  .branca-theme-picker-dialog .theme-preset {
-    padding: var(--branca-spacing-md);
-    border: 2px solid var(--branca-border);
-    border-radius: var(--branca-border-radius);
-    cursor: pointer;
-    transition: all var(--branca-transition-normal);
-    text-align: center;
-  }
-
-  .branca-theme-picker-dialog .theme-preset:hover {
-    border-color: var(--branca-accent);
-    box-shadow: var(--branca-shadow-md);
-    transform: translateY(-2px);
-  }
-
-  .branca-theme-picker-dialog .theme-preset.active {
-    border-color: var(--branca-accent);
-    background: linear-gradient(135deg,
-      var(--branca-surface),
-      rgba(255, 215, 0, 0.1));
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-  }
-
-  .branca-theme-picker-dialog .color-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--branca-spacing-md);
-    margin-top: var(--branca-spacing-lg);
-  }
-
-  .branca-theme-picker-dialog .color-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--branca-spacing-xs);
-  }
-
-  .branca-theme-picker-dialog .color-input label {
-    font-family: var(--branca-font-secondary);
-    font-size: 0.9em;
-    color: var(--branca-text);
-    text-align: center;
-  }
-
-  .branca-theme-picker-dialog .color-input input[type="color"] {
-    width: 50px;
-    height: 50px;
-    border: 2px solid var(--branca-border);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all var(--branca-transition-fast);
-  }
-
-  .branca-theme-picker-dialog .color-input input[type="color"]:hover {
-    transform: scale(1.1);
-    box-shadow: var(--branca-shadow-md);
-  }
-
-  /* ================================
-     Theme Variations
-     ================================ */
-
-  /* Taverna Theme Specific - Grimy & Worn */
-  body[data-branca-theme="taverna"] {
-    background-image:
-      linear-gradient(180deg,
-        rgba(31, 22, 18, 0.95),
-        rgba(31, 22, 18, 0.95)),
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="%234A3426" opacity="0.1"/><circle cx="25" cy="25" r="15" fill="%236B4C3A" opacity="0.05"/><circle cx="75" cy="75" r="20" fill="%2352392B" opacity="0.05"/><path d="M10,50 Q30,60 50,50 Q70,40 90,50" stroke="%23B8956A" stroke-width="0.5" fill="none" opacity="0.1"/></svg>');
-    background-size: 100% 100%, 100px 100px;
-  }
-
-  /* Strada Theme Specific - Muddy & Dusty */
-  body[data-branca-theme="strada"] {
-    background-image:
-      linear-gradient(180deg,
-        rgba(42, 35, 28, 0.95),
-        rgba(42, 35, 28, 0.95)),
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><circle cx="20" cy="20" r="5" fill="%235C4A3C" opacity="0.1"/><circle cx="60" cy="40" r="8" fill="%236B5D4F" opacity="0.08"/><circle cx="80" cy="80" r="6" fill="%234F4136" opacity="0.1"/><path d="M0,50 L100,50" stroke="%23A68B5B" stroke-width="0.5" opacity="0.05"/></svg>');
-    background-size: 100% 100%, 150px 150px;
-  }
-
-  /* Pergamena Theme Specific - Stained & Worn */
-  body[data-branca-theme="pergamena"] {
-    background-image:
-      linear-gradient(180deg,
-        rgba(212, 194, 166, 0.95),
-        rgba(200, 182, 156, 0.95)),
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><circle cx="50" cy="50" r="25" fill="%237A6A57" opacity="0.03"/><circle cx="150" cy="100" r="30" fill="%238B7B68" opacity="0.02"/><circle cx="100" cy="150" r="20" fill="%239B8061" opacity="0.03"/><path d="M0,100 Q50,90 100,100 Q150,110 200,100" stroke="%238C7A66" stroke-width="0.5" fill="none" opacity="0.1"/></svg>');
-    background-size: 100% 100%, 200px 200px;
-  }
-
-  /* Mercato Theme Specific - Market Stalls */
-  body[data-branca-theme="mercato"] {
-    background-image:
-      linear-gradient(180deg,
-        rgba(44, 36, 24, 0.95),
-        rgba(58, 48, 37, 0.95)),
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120"><rect x="10" y="10" width="40" height="40" fill="%236B5843" opacity="0.05"/><rect x="70" y="70" width="40" height="40" fill="%237A6651" opacity="0.04"/><path d="M0,60 L120,60 M60,0 L60,120" stroke="%235A4A3A" stroke-width="0.5" opacity="0.08"/></svg>');
-    background-size: 100% 100%, 120px 120px;
-  }
-
-  /* ================================
-     Responsive Design
-     ================================ */
-
-  @media (max-width: 768px) {
-    .brancalonia-trackers {
-      grid-template-columns: 1fr;
-    }
-
-    .branca-corner,
-    .window-app.branca-decorated::before,
-    .window-app.branca-decorated::after {
-      width: 40px;
-      height: 40px;
-    }
-
-    .baraonda-point {
-      font-size: 24px;
-    }
-
-    .lavori-tracker .counter-value {
-      font-size: 1.5em;
-    }
-  }
-
-  /* ================================
-     Print Styles
-     ================================ */
-
-  @media print {
-    body {
-      background: white !important;
-    }
-
-    .brancalonia-trackers {
-      border: 2px solid black;
-      background: white;
-    }
-
-    .branca-corner,
-    .branca-ornament,
-    .branca-flourish {
-      display: none;
-    }
-
-    * {
-      color: black !important;
-      text-shadow: none !important;
-      box-shadow: none !important;
-    }
-  }
-
 }
