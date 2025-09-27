@@ -10,6 +10,83 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
 // FIX IMMEDIATI PER MODULI PROBLEMATICI
 // ============================================
 
+// FIX IMMEDIATO PER TIDBITS - offsetWidth su elemento null
+(function() {
+  console.log("🚨 Pre-emptive fix for Tidbits loading screen");
+
+  // Hook immediato per creare elementi che Tidbits si aspetta
+  Hooks.once("init", () => {
+    // Override showLoadingScreen per prevenire errori
+    if (typeof ui !== 'undefined') {
+      const originalShowLoadingScreen = ui.showLoadingScreen;
+
+      ui.showLoadingScreen = function(show = true) {
+        try {
+          // Se Tidbits è attivo, assicurati che gli elementi esistano
+          if (game.modules.get("tidbits")?.active) {
+            // Crea loading screen element se non esiste
+            let loadingScreen = document.getElementById("loading");
+            if (!loadingScreen) {
+              console.warn("🏗️ Creating #loading element for Tidbits");
+              loadingScreen = document.createElement('div');
+              loadingScreen.id = 'loading';
+              loadingScreen.style.display = 'none';
+              loadingScreen.style.width = '100%';
+              loadingScreen.style.height = '100%';
+              document.body.appendChild(loadingScreen);
+            }
+
+            // Crea loading-bar se non esiste
+            let loadingBar = document.getElementById("loading-bar");
+            if (!loadingBar) {
+              console.warn("🏗️ Creating #loading-bar element for Tidbits");
+              loadingBar = document.createElement('div');
+              loadingBar.id = 'loading-bar';
+              loadingBar.style.width = '0%';
+              if (loadingScreen) {
+                loadingScreen.appendChild(loadingBar);
+              } else {
+                document.body.appendChild(loadingBar);
+              }
+            }
+
+            // Assicurati che abbiano offsetWidth
+            if (loadingScreen && !loadingScreen.offsetWidth) {
+              loadingScreen.style.display = 'block';
+              loadingScreen.style.position = 'fixed';
+              loadingScreen.style.top = '0';
+              loadingScreen.style.left = '0';
+            }
+          }
+
+          // Chiama l'originale se esiste
+          if (originalShowLoadingScreen) {
+            return originalShowLoadingScreen.call(this, show);
+          }
+        } catch (e) {
+          console.error("❌ Error in Tidbits showLoadingScreen:", e);
+        }
+        return Promise.resolve();
+      };
+
+      // Override hideLoadingScreen
+      ui.hideLoadingScreen = function() {
+        try {
+          const loadingScreen = document.getElementById("loading");
+          if (loadingScreen) {
+            loadingScreen.style.display = 'none';
+          }
+        } catch (e) {
+          console.error("❌ Error in Tidbits hideLoadingScreen:", e);
+        }
+        return Promise.resolve();
+      };
+
+      console.log("✅ Tidbits loading screen methods wrapped");
+    }
+  });
+})();
+
 // FIX IMMEDIATO PER EPIC ROLLS 5E - DEVE essere fatto PRIMA di tutto
 (function() {
   console.log("🚨 Pre-emptive fix for Epic Rolls 5e - Simple element creation");
@@ -176,20 +253,6 @@ Hooks.once("init", () => {
 
   // Fix per altri moduli problematici
   checkAndFixOtherModules();
-
-  // Fix per Tidbits
-  if (game.modules.get("tidbits")?.active) {
-    console.warn("⚠️ Tidbits detected - Applying compatibility fix");
-
-    // Tidbits cerca showLoadingScreen che potrebbe non esistere
-    if (typeof ui !== 'undefined' && !ui.showLoadingScreen) {
-      ui.showLoadingScreen = function(show = true) {
-        console.debug("🔧 Compatibility stub for ui.showLoadingScreen");
-        return Promise.resolve();
-      };
-      console.log("✅ Added stub for ui.showLoadingScreen");
-    }
-  }
 });
 
 // ============================================
@@ -202,23 +265,31 @@ function checkAndFixOtherModules() {
       id: "tidbits",
       name: "Tidbits",
       fix: () => {
-        console.log("🔧 Fixing Tidbits compatibility issues");
+        console.log("🔧 Tidbits - Additional compatibility checks");
 
-        // Aggiungi metodi mancanti che Tidbits potrebbe cercare
-        if (typeof ui !== 'undefined') {
-          if (!ui.showLoadingScreen) {
-            ui.showLoadingScreen = (show = true) => Promise.resolve();
+        // Assicurati che gli elementi del DOM esistano
+        Hooks.once("ready", () => {
+          // Verifica loading screen
+          if (!document.getElementById("loading")) {
+            console.warn("⚠️ Tidbits: Loading screen missing at ready");
+            const loading = document.createElement('div');
+            loading.id = 'loading';
+            loading.style.display = 'none';
+            document.body.appendChild(loading);
           }
-          if (!ui.hideLoadingScreen) {
-            ui.hideLoadingScreen = () => Promise.resolve();
-          }
-        }
 
-        // Fix per canvasInit
-        Hooks.on("canvasInit", () => {
-          if (typeof ui !== 'undefined' && !ui.showLoadingScreen) {
-            ui.showLoadingScreen = () => Promise.resolve();
-            console.log("✅ Late fix for Tidbits showLoadingScreen");
+          // Verifica loading bar
+          if (!document.getElementById("loading-bar")) {
+            console.warn("⚠️ Tidbits: Loading bar missing at ready");
+            const loadingBar = document.createElement('div');
+            loadingBar.id = 'loading-bar';
+            loadingBar.style.width = '0%';
+            const loading = document.getElementById("loading");
+            if (loading) {
+              loading.appendChild(loadingBar);
+            } else {
+              document.body.appendChild(loadingBar);
+            }
           }
         });
       }
