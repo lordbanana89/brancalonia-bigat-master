@@ -1,135 +1,141 @@
 /**
  * Brancalonia UI Hooks
- *
- * JavaScript module for customizing D&D 5e UI elements with Italian Renaissance theme
- * Adds Brancalonia-specific UI elements and tavern atmosphere
+ * Handles all UI enhancements and Italian Renaissance theming
+ * for Foundry VTT v13 and D&D 5e system
  */
 
 export class BrancaloniaUIHooks {
+    static init() {
+        console.log("Brancalonia | Initializing UI Hooks...");
 
-    static initialize() {
-        console.log("🏛️ Brancalonia UI Hooks | Initializing Italian Renaissance theme");
+        // Character sheet hooks
+        Hooks.on("renderActorSheet5eCharacter2", this.enhanceCharacterSheet.bind(this));
+        Hooks.on("renderActorSheet5eNPC2", this.enhanceNPCSheet.bind(this));
 
-        // Register hooks
-        this.registerRenderHooks();
-        this.registerSheetHooks();
-        this.registerChatHooks();
-        this.registerUIEnhancements();
+        // Item sheet hooks
+        Hooks.on("renderItemSheet5e2", this.enhanceItemSheet.bind(this));
 
-        // Apply theme
-        this.applyBrancaloniaTheme();
+        // Journal hooks
+        Hooks.on("renderJournalSheet", this.enhanceJournalEntry.bind(this));
+        Hooks.on("renderJournalPageSheet", this.enhanceJournalEntry.bind(this));
 
-        console.log("✅ Brancalonia UI Hooks | Italian Renaissance theme applied");
+        // Chat message hooks - Handle deprecated hook with backward compatibility
+        const chatHook = game.release?.generation >= 12 ? "renderChatMessage" : "renderChatMessage";
+        Hooks.on(chatHook, this.enhanceChatMessage.bind(this));
+
+        // UI component hooks
+        Hooks.on("renderSidebarTab", this.enhanceSidebar.bind(this));
+        Hooks.on("renderHotbar", this.enhanceHotbar.bind(this));
+        Hooks.on("renderDialog", this.enhanceDialog.bind(this));
+        Hooks.on("renderApplication", this.enhanceGeneralApplication.bind(this));
+        Hooks.on("renderPlayerList", this.enhancePlayers.bind(this));
+
+        // Combat tracker hooks
+        Hooks.on("renderCombatTracker", this.enhanceCombatTracker.bind(this));
+
+        // Scene controls hooks
+        Hooks.on("renderSceneControls", this.enhanceSceneControls.bind(this));
+
+        // Settings hooks
+        Hooks.on("renderSettingsConfig", this.enhanceSettings.bind(this));
+
+        // Token HUD hooks
+        Hooks.on("renderTokenHUD", this.enhanceTokenHUD.bind(this));
+
+        // Roll hooks
+        Hooks.on("renderChatMessage", this.addItalianRollFlavor.bind(this));
+        Hooks.on("preCreateChatMessage", this.preprocessChatMessage.bind(this));
+
+        console.log("Brancalonia | UI Hooks initialized successfully!");
     }
 
-    static registerRenderHooks() {
-        // Actor sheet rendering
-        Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
-            this.enhanceCharacterSheet(app, html, data);
-        });
-
-        // Item sheet rendering
-        Hooks.on("renderItemSheet5e", (app, html, data) => {
-            this.enhanceItemSheet(app, html, data);
-        });
-
-        // Journal rendering
-        Hooks.on("renderJournalPageSheet", (app, html, data) => {
-            this.enhanceJournalSheet(app, html, data);
-        });
-
-        // Application rendering
-        Hooks.on("renderApplication", (app, html, data) => {
-            this.enhanceGenericSheet(app, html, data);
-        });
+    /**
+     * Ensure jQuery compatibility for Foundry v13
+     * @param {jQuery|HTMLElement} html - The HTML element
+     * @returns {jQuery} jQuery wrapped element
+     */
+    static ensureJQuery(html) {
+        return html instanceof jQuery ? html : $(html);
     }
 
-    static registerSheetHooks() {
-        // Add Brancalonia-specific elements to character sheets
-        Hooks.on("renderActorSheet", (app, html, data) => {
-            if (data.actor?.type === "character") {
-                this.addBrancaloniaElements(html, data);
+    static preprocessChatMessage(message, data, options, userId) {
+        // Add Italian flavor to roll messages
+        if (message.isRoll) {
+            const roll = message.rolls?.[0];
+            if (roll) {
+                const d20Result = roll.dice.find(d => d.faces === 20)?.results?.[0]?.result;
+
+                if (d20Result === 20) {
+                    data.flavor = (data.flavor || "") + " <span class='branca-crit'>⚔️ Colpo Magistrale!</span>";
+                } else if (d20Result === 1) {
+                    data.flavor = (data.flavor || "") + " <span class='branca-fumble'>💀 Che Sfortuna!</span>";
+                }
             }
-        });
-    }
-
-    static registerChatHooks() {
-        // Enhance chat messages
-        Hooks.on("renderChatMessage", (app, html, data) => {
-            this.enhanceChatMessage(html, data);
-        });
-
-        // Custom dice roll styling
-        Hooks.on("diceSoNiceRollComplete", (chatMessageId) => {
-            this.enhanceDiceRoll(chatMessageId);
-        });
-    }
-
-    static registerUIEnhancements() {
-        // Sidebar enhancements
-        Hooks.on("renderSidebar", (app, html, data) => {
-            this.enhanceSidebar(html);
-        });
-
-        // Hotbar enhancements
-        Hooks.on("renderHotbar", (app, html, data) => {
-            this.enhanceHotbar(html);
-        });
-
-        // Dialog enhancements
-        Hooks.on("renderDialog", (app, html, data) => {
-            this.enhanceDialog(html);
-        });
+        }
     }
 
     static enhanceCharacterSheet(app, html, data) {
+        // Foundry v13 compatibility: handle both HTMLElement and jQuery
+        const $html = this.ensureJQuery(html);
+
         // Add Brancalonia class for styling
-        html.addClass("brancalonia-character-sheet");
+        $html.addClass("brancalonia-character-sheet");
 
         // Add Italian Renaissance decorative elements
-        const header = html.find(".sheet-header");
+        const header = $html.find(".sheet-header");
         if (header.length) {
             header.prepend('<div class="brancalonia-ornament top">⚜</div>');
             header.append('<div class="brancalonia-ornament bottom">🏛️</div>');
         }
 
         // Customize profile image frame
-        const profileImg = html.find(".profile-img");
+        const profileImg = $html.find(".profile-img");
         if (profileImg.length) {
             profileImg.wrap('<div class="brancalonia-portrait-frame"></div>');
         }
 
         // Add Infamia tracker if not present
-        this.addInfamiaTracker(html, data);
+        this.addInfamiaTracker($html, data);
 
-        // Add Baraonda counter
-        this.addBaraondaCounter(html, data);
+        // Add Baraonda tracker
+        this.addBaraondaTracker($html, data);
 
-        // Add Lavori Sporchi tracker
-        this.addLavoriSporchiTracker(html, data);
+        // Add Lavori Sporchi section
+        this.addLavoriSporchiTab($html, data);
 
-        // Add Rifugio management
-        this.addRifugioManager(html, data);
+        // Add Rifugio section
+        this.addRifugioSection($html, data);
+    }
 
-        console.log("🎭 Enhanced character sheet with Brancalonia elements");
+    static enhanceNPCSheet(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-npc-sheet");
+
+        // Add Italian flavor to NPC sheets
+        const header = $html.find(".sheet-header");
+        if (header.length) {
+            header.prepend('<div class="brancalonia-npc-type">Avversario</div>');
+        }
     }
 
     static addInfamiaTracker(html, data) {
-        const resourcesSection = html.find(".resources");
-        if (resourcesSection.length && !html.find(".brancalonia-infamia").length) {
+        const $html = this.ensureJQuery(html);
+        const resourcesSection = $html.find(".resources");
+        if (resourcesSection.length && !$html.find(".brancalonia-infamia").length) {
             const infamiaHtml = `
-                <div class="brancalonia-infamia">
-                    <div class="resource flex-group-center">
-                        <label>🗡️ Infamia</label>
-                        <div class="resource-content flexrow flex-group-center">
-                            <input name="system.resources.infamia.value" type="text"
-                                   value="${data.actor.system.resources?.infamia?.value || 0}"
-                                   placeholder="0" data-dtype="Number">
-                            <span class="sep">/</span>
-                            <input name="system.resources.infamia.max" type="text"
-                                   value="${data.actor.system.resources?.infamia?.max || 10}"
-                                   placeholder="10" data-dtype="Number">
-                        </div>
+                <div class="resource brancalonia-infamia">
+                    <h4 class="resource-name">
+                        <span>Infamia</span>
+                        <i class="fas fa-skull" title="Punti Infamia"></i>
+                    </h4>
+                    <div class="resource-value">
+                        <input type="number" name="system.details.infamia.value"
+                               value="${data.actor?.system?.details?.infamia?.value || 0}"
+                               placeholder="0" />
+                        <span class="sep">/</span>
+                        <input type="number" name="system.details.infamia.max"
+                               value="${data.actor?.system?.details?.infamia?.max || 30}"
+                               placeholder="30" />
                     </div>
                 </div>
             `;
@@ -137,18 +143,20 @@ export class BrancaloniaUIHooks {
         }
     }
 
-    static addBaraondaCounter(html, data) {
-        const resourcesSection = html.find(".resources");
-        if (resourcesSection.length && !html.find(".brancalonia-baraonda").length) {
+    static addBaraondaTracker(html, data) {
+        const $html = this.ensureJQuery(html);
+        const resourcesSection = $html.find(".resources");
+        if (resourcesSection.length && !$html.find(".brancalonia-baraonda").length) {
             const baraondaHtml = `
-                <div class="brancalonia-baraonda">
-                    <div class="resource flex-group-center">
-                        <label>🍺 Baraonda</label>
-                        <div class="resource-content flexrow flex-group-center">
-                            <input name="system.resources.baraonda.value" type="text"
-                                   value="${data.actor.system.resources?.baraonda?.value || 0}"
-                                   placeholder="0" data-dtype="Number">
-                        </div>
+                <div class="resource brancalonia-baraonda">
+                    <h4 class="resource-name">
+                        <span>Baraonda</span>
+                        <i class="fas fa-dice" title="Punti Baraonda"></i>
+                    </h4>
+                    <div class="resource-value">
+                        <input type="number" name="system.details.baraonda.value"
+                               value="${data.actor?.system?.details?.baraonda?.value || 0}"
+                               placeholder="0" />
                     </div>
                 </div>
             `;
@@ -156,48 +164,50 @@ export class BrancaloniaUIHooks {
         }
     }
 
-    static addLavoriSporchiTracker(html, data) {
-        const featuresTab = html.find('[data-tab="features"]');
-        if (featuresTab.length && !html.find(".brancalonia-lavori-sporchi").length) {
+    static addLavoriSporchiTab(html, data) {
+        const $html = this.ensureJQuery(html);
+        const featuresTab = $html.find('[data-tab="features"]');
+        if (featuresTab.length && !$html.find(".brancalonia-lavori-sporchi").length) {
             const lavoriHtml = `
-                <div class="brancalonia-lavori-sporchi">
-                    <h3>💰 Lavori Sporchi</h3>
-                    <div class="lavori-sporchi-content">
-                        <input name="system.details.lavoriSporchi" type="text"
-                               value="${data.actor.system.details?.lavoriSporchi || ''}"
-                               placeholder="Descrivi i lavori sporchi completati...">
+                <div class="brancalonia-section brancalonia-lavori-sporchi">
+                    <h3 class="section-header">
+                        <i class="fas fa-coins"></i>
+                        Lavori Sporchi
+                    </h3>
+                    <div class="form-group">
+                        <label>Lavori Completati</label>
+                        <textarea name="system.details.lavoriSporchi"
+                                  rows="4"
+                                  placeholder="Lista dei lavori sporchi completati...">${data.actor?.system?.details?.lavoriSporchi || ''}</textarea>
                     </div>
                 </div>
             `;
-            featuresTab.prepend(lavoriHtml);
+            featuresTab.append(lavoriHtml);
         }
     }
 
-    static addRifugioManager(html, data) {
-        const featuresTab = html.find('[data-tab="features"]');
-        if (featuresTab.length && !html.find(".brancalonia-rifugio").length) {
+    static addRifugioSection(html, data) {
+        const $html = this.ensureJQuery(html);
+        const featuresTab = $html.find('[data-tab="features"]');
+        if (featuresTab.length && !$html.find(".brancalonia-rifugio").length) {
             const rifugioHtml = `
-                <div class="brancalonia-rifugio">
-                    <h3>🏠 Rifugio</h3>
-                    <div class="rifugio-content">
-                        <div class="rifugio-details">
-                            <label>Nome del Rifugio:</label>
-                            <input name="system.details.rifugio.name" type="text"
-                                   value="${data.actor.system.details?.rifugio?.name || ''}"
-                                   placeholder="Es: La Taverna del Gatto Nero">
+                <div class="brancalonia-section brancalonia-rifugio">
+                    <h3 class="section-header">
+                        <i class="fas fa-home"></i>
+                        Rifugio
+                    </h3>
+                    <div class="rifugio-details">
+                        <div class="form-group">
+                            <label>Nome del Rifugio</label>
+                            <input type="text" name="system.details.rifugio.nome"
+                                   value="${data.actor?.system?.details?.rifugio?.nome || ''}"
+                                   placeholder="es. La Taverna del Gatto Ubriaco" />
                         </div>
-                        <div class="rifugio-details">
-                            <label>Livello Comfort:</label>
-                            <select name="system.details.rifugio.comfort">
-                                <option value="modesto">Modesto</option>
-                                <option value="confortevole">Confortevole</option>
-                                <option value="lussuoso">Lussuoso</option>
-                            </select>
-                        </div>
-                        <div class="rifugio-details">
-                            <label>Descrizione:</label>
+                        <div class="form-group">
+                            <label>Descrizione</label>
                             <textarea name="system.details.rifugio.description"
-                                      placeholder="Descrivi il tuo rifugio...">${data.actor.system.details?.rifugio?.description || ''}</textarea>
+                                      rows="3"
+                                      placeholder="Descrivi il tuo rifugio...">${data.actor?.system?.details?.rifugio?.description || ''}</textarea>
                         </div>
                     </div>
                 </div>
@@ -207,7 +217,9 @@ export class BrancaloniaUIHooks {
     }
 
     static enhanceItemSheet(app, html, data) {
-        html.addClass("brancalonia-item-sheet");
+        // Foundry v13 compatibility: handle both HTMLElement and jQuery
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-item-sheet");
 
         // Add Italian item type indicators
         const itemType = data.item.type;
@@ -221,220 +233,211 @@ export class BrancaloniaUIHooks {
                 iconClass = '🎒';
                 break;
             case 'consumable':
-                iconClass = '🧪';
+                iconClass = '🍷';
+                break;
+            case 'tool':
+                iconClass = '🔧';
+                break;
+            case 'loot':
+                iconClass = '💰';
                 break;
             case 'spell':
-                iconClass = '📜';
+                iconClass = '✨';
                 break;
-            case 'feat':
-                iconClass = '🏅';
-                break;
-            default:
-                iconClass = '📋';
         }
 
-        const header = html.find(".sheet-header h4");
-        if (header.length) {
-            header.prepend(`<span class="brancalonia-item-icon">${iconClass}</span> `);
+        // Add item type to header
+        const header = $html.find(".sheet-header h4");
+        if (header.length && iconClass) {
+            header.prepend(`<span class="item-type-icon">${iconClass}</span> `);
         }
     }
 
-    static enhanceJournalSheet(app, html, data) {
-        html.addClass("brancalonia-journal");
+    static enhanceJournalEntry(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-journal");
 
-        // Add parchment texture overlay
-        const content = html.find(".journal-entry-content");
+        // Add Renaissance styling to journal content
+        const content = $html.find(".journal-entry-content");
         if (content.length) {
-            content.prepend('<div class="brancalonia-parchment-overlay"></div>');
-        }
+            // Add ornamental first letter to paragraphs
+            content.find('p:first-child').addClass('branca-first-paragraph');
 
-        // Enhance content links for Italian terms
-        this.enhanceContentLinks(html);
-    }
-
-    static enhanceContentLinks(html) {
-        // Add tooltips for Italian gaming terms
-        const italianTerms = {
-            'Infamia': 'Reputazione negativa del personaggio nel mondo criminale',
-            'Baraonda': 'Contatore per le risse da taverna',
-            'Rifugio': 'Base operativa del personaggio o gruppo',
-            'Compagnia': 'Gruppo di avventurieri Brancalonia',
-            'Malefatte': 'Crimini e misfatti commessi',
-            'Emeriticenze': 'Privilegi speciali di Brancalonia',
-            'Lavori Sporchi': 'Missioni e incarichi illegali'
-        };
-
-        Object.entries(italianTerms).forEach(([term, description]) => {
-            const regex = new RegExp(`\b${term}\b`, 'gi');
-            html.find('p, li, td').each(function() {
-                let content = $(this).html();
-                content = content.replace(regex, `<span class="brancalonia-term" title="${description}">${term}</span>`);
-                $(this).html(content);
+            // Style headers with Italian Renaissance flair
+            content.find('h1, h2, h3').each(function() {
+                const $this = $(this);
+                if (!$this.hasClass('branca-styled')) {
+                    $this.addClass('branca-styled');
+                    $this.prepend('<span class="branca-ornament">🌿</span> ');
+                    $this.append(' <span class="branca-ornament">🌿</span>');
+                }
             });
-        });
-    }
 
-    static enhanceChatMessage(html, data) {
-        // Add Italian flair to chat messages
-        if (data.message.flavor) {
-            html.addClass("brancalonia-chat-message");
-
-            // Add decorative elements for certain message types
-            if (data.message.flavor.includes("Infamia")) {
-                html.find(".message-header").prepend('<span class="chat-icon">🗡️</span>');
-            } else if (data.message.flavor.includes("Baraonda")) {
-                html.find(".message-header").prepend('<span class="chat-icon">🍺</span>');
-            } else if (data.message.flavor.includes("Rifugio")) {
-                html.find(".message-header").prepend('<span class="chat-icon">🏠</span>');
-            }
-        }
-    }
-
-    static enhanceDiceRoll(chatMessageId) {
-        // Add Italian exclamations to critical rolls
-        const message = game.messages.get(chatMessageId);
-        if (message?.rolls) {
-            message.rolls.forEach(roll => {
-                if (roll.dice && roll.dice.length > 0) {
-                    const die = roll.dice[0];
-                    if (die.total === die.faces) {
-                        // Critical success - add Italian celebration
-                        ChatMessage.create({
-                            content: `<em style="color: gold;">🎉 Fantastico! Colpo critico! 🎯</em>`,
-                            whisper: [game.user.id]
-                        });
-                    } else if (die.total === 1) {
-                        // Critical failure - add Italian commiseration
-                        ChatMessage.create({
-                            content: `<em style="color: red;">💥 Madonna! Che sfortuna! 😱</em>`,
-                            whisper: [game.user.id]
-                        });
-                    }
+            // Add Italian exclamations for rolls
+            $html.find('p, li, td').each(function() {
+                const $this = $(this);
+                const text = $this.text();
+                if (text.includes('critical') || text.includes('critico')) {
+                    $this.addClass('branca-critical');
                 }
             });
         }
     }
 
-    static enhanceSidebar(html) {
-        html.addClass("brancalonia-sidebar");
+    static enhanceChatMessage(message, html, data) {
+        const $html = this.ensureJQuery(html);
+        if ($html && $html.length) {
+            $html.addClass("brancalonia-chat-message");
 
-        // Add decorative header
-        const nav = html.find("#sidebar-tabs");
-        if (nav.length) {
-            nav.before('<div class="brancalonia-sidebar-header">🏛️ Regno di Taglia 🏛️</div>');
+            // Add thematic icons to chat messages
+            if (message.isRoll) {
+                $html.find(".message-header").prepend('<span class="chat-icon">🗡️</span>');
+            } else if (message.speaker?.actor) {
+                $html.find(".message-header").prepend('<span class="chat-icon">🍺</span>');
+            } else {
+                $html.find(".message-header").prepend('<span class="chat-icon">🏠</span>');
+            }
         }
     }
 
-    static enhanceHotbar(html) {
-        html.addClass("brancalonia-hotbar");
+    static addItalianRollFlavor(message, html, data) {
+        if (!message.isRoll) return;
 
-        // Style macro slots with Italian theme
-        html.find(".macro").each(function() {
-            $(this).addClass("brancalonia-macro-slot");
+        const roll = message.rolls?.[0];
+        if (!roll) return;
+
+        // Check for critical success or failure
+        const d20 = roll.dice.find(d => d.faces === 20);
+        if (d20) {
+            const result = d20.results[0]?.result;
+            if (result === 20) {
+                html.find('.dice-total').addClass('branca-critical-success');
+                html.find('.dice-total').append(' <span class="branca-flavor">Magnifico!</span>');
+            } else if (result === 1) {
+                html.find('.dice-total').addClass('branca-critical-failure');
+                html.find('.dice-total').append(' <span class="branca-flavor">Maledizione!</span>');
+            }
+        }
+    }
+
+    static enhanceSidebar(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-sidebar");
+
+        // Style sidebar navigation
+        const nav = $html.find("#sidebar-tabs");
+        if (nav.length) {
+            nav.addClass("branca-nav-style");
+        }
+    }
+
+    static enhanceHotbar(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-hotbar");
+
+        // Add hover effects to macros
+        $html.find(".macro").each(function() {
+            $(this).on('mouseenter', function() {
+                $(this).addClass('branca-hover');
+            }).on('mouseleave', function() {
+                $(this).removeClass('branca-hover');
+            });
         });
     }
 
-    static enhanceDialog(html) {
-        html.addClass("brancalonia-dialog");
+    static enhanceDialog(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-dialog");
 
-        // Add Italian button text where appropriate
-        html.find('button[data-button="yes"]').html("Sì");
-        html.find('button[data-button="no"]').html("No");
-        html.find('button[data-button="ok"]').html("Va bene");
-        html.find('button[data-button="cancel"]').html("Annulla");
+        // Translate common dialog buttons to Italian
+        $html.find('button[data-button="yes"]').html("Sì");
+        $html.find('button[data-button="no"]').html("No");
+        $html.find('button[data-button="ok"]').html("Va bene");
+        $html.find('button[data-button="cancel"]').html("Annulla");
     }
 
-    static enhanceGenericSheet(app, html, data) {
-        // Apply general Brancalonia styling to any sheet
-        if (html.hasClass("app") && !html.hasClass("brancalonia-styled")) {
-            html.addClass("brancalonia-styled");
+    static enhanceGeneralApplication(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        // Add general Brancalonia styling to all windows
+        if (!$html.hasClass("brancalonia-styled")) {
+            $html.addClass("brancalonia-styled");
 
-            // Add subtle Italian theming
-            const header = html.find(".window-header");
-            if (header.length && header.find(".brancalonia-window-ornament").length === 0) {
-                header.append('<span class="brancalonia-window-ornament">⚜</span>');
+            // Style window header
+            const header = $html.find(".window-header");
+            if (header.length) {
+                header.addClass("branca-window-header");
             }
         }
     }
 
-    static addBrancaloniaElements(html, data) {
-        // Add custom Brancalonia sections to any character sheet
-        const actor = data.actor;
+    static enhanceCombatTracker(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-combat-tracker");
 
-        // Check if this is a Brancalonia character (has Italian background or class)
-        const isBrancaloniaCharacter = this.isBrancaloniaCharacter(actor);
+        // Add Italian combat terms
+        $html.find(".combat-button[data-control='startCombat']").attr('title', 'Inizia Combattimento');
+        $html.find(".combat-button[data-control='endCombat']").attr('title', 'Termina Combattimento');
+        $html.find(".combat-button[data-control='nextTurn']").attr('title', 'Prossimo Turno');
+        $html.find(".combat-button[data-control='previousTurn']").attr('title', 'Turno Precedente');
+    }
 
-        if (isBrancaloniaCharacter) {
-            html.addClass("brancalonia-character");
+    static enhancePlayers(app, html, data) {
+        if (app.constructor.name === "PlayerList") {
+            const $html = this.ensureJQuery(html);
+            $html.addClass("brancalonia-character");
 
-            // Add visual indicators
-            const nameField = html.find('input[name="name"]');
+            // Translate player status
+            const nameField = $html.find('input[name="name"]');
             if (nameField.length) {
-                nameField.before('<span class="brancalonia-character-indicator" title="Personaggio di Brancalonia">🇮🇹</span>');
+                nameField.attr('placeholder', 'Nome del Personaggio');
             }
         }
     }
 
-    static isBrancaloniaCharacter(actor) {
-        // Check various indicators that this is a Brancalonia character
-        const background = actor.system.details?.background?.toLowerCase();
-        const classes = actor.items.filter(i => i.type === "class");
+    static enhanceSceneControls(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-scene-controls");
 
-        // Italian backgrounds or Brancalonia-specific content
-        const italianBackgrounds = ['furfante', 'mariuolo', 'scugnizzo', 'mercante'];
+        // Add tooltips in Italian
+        const controls = {
+            'token': 'Pedine',
+            'measure': 'Misura',
+            'tiles': 'Tessere',
+            'drawings': 'Disegni',
+            'walls': 'Muri',
+            'lighting': 'Illuminazione',
+            'sounds': 'Suoni',
+            'notes': 'Note'
+        };
 
-        return italianBackgrounds.some(bg => background?.includes(bg)) ||
-               classes.some(cls => cls.name.includes('Brancalonia')) ||
-               actor.system.resources?.infamia !== undefined;
+        Object.entries(controls).forEach(([key, value]) => {
+            $html.find(`[data-control="${key}"]`).attr('title', value);
+        });
     }
 
-    static applyBrancaloniaTheme() {
-        // Apply theme-wide enhancements
-        $('body').addClass('brancalonia-theme');
+    static enhanceSettings(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-settings");
 
-        // Add custom CSS variables for dynamic theming
-        const root = document.documentElement;
-        root.style.setProperty('--brancalonia-active', 'true');
-
-        // Apply favicon if available
-        this.updateFavicon();
-
-        // Custom cursor for Italian flair (optional)
-        this.applyCustomCursor();
-    }
-
-    static updateFavicon() {
-        const favicon = document.querySelector('link[rel="icon"]');
-        const brancaloniaIcon = '/modules/brancalonia-bigat/assets/artwork/favicon.ico';
-
-        if (favicon && game.modules.get('brancalonia-bigat')?.active) {
-            favicon.href = brancaloniaIcon;
-        }
-    }
-
-    static applyCustomCursor() {
-        // Optional: Apply Italian-themed cursor
-        const style = document.createElement('style');
-        style.textContent = `
-            .brancalonia-theme {
-                cursor: url('/modules/brancalonia-bigat/assets/ui/cursors/default.cur'), auto;
+        // Add Italian section headers
+        $html.find('.settings-sidebar h2').each(function() {
+            const $this = $(this);
+            const text = $this.text();
+            if (text === 'Game Settings') {
+                $this.text('Impostazioni di Gioco');
+            } else if (text === 'Module Settings') {
+                $this.text('Impostazioni Moduli');
             }
-            .brancalonia-theme button:hover {
-                cursor: url('/modules/brancalonia-bigat/assets/ui/cursors/pointer.cur'), pointer;
-            }
-        `;
-        document.head.appendChild(style);
+        });
+    }
+
+    static enhanceTokenHUD(app, html, data) {
+        const $html = this.ensureJQuery(html);
+        $html.addClass("brancalonia-token-hud");
+
+        // Style the token HUD with Renaissance theme
+        $html.find('.control-icon').each(function() {
+            $(this).addClass('branca-control');
+        });
     }
 }
-
-// Initialize when Foundry is ready
-Hooks.once("ready", () => {
-    BrancaloniaUIHooks.initialize();
-});
-
-// Re-apply theme when settings change
-Hooks.on("updateSetting", (setting) => {
-    if (setting.key.includes("brancalonia")) {
-        BrancaloniaUIHooks.applyBrancaloniaTheme();
-    }
-});

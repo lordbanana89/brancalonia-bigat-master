@@ -102,6 +102,48 @@
 - **Enum fields**: DEVONO matchare CONFIG esatti (spell schools, creature types, etc)
 - **UUID format**: `Compendium.{scope}.{pack}.{documentType}.{id}` - MAI riferimenti esterni
 
+## 🎨 SISTEMA THEME RINASCIMENTO ITALIANO (v3.22.0)
+
+### Nuovo Sistema di Theming Dinamico (Basato su Project FU Theme)
+Il modulo ora include un avanzato sistema di theming con architettura CSS a layer:
+
+#### 🏛️ Preset Tema Disponibili:
+1. **Taverna Malandata** - Atmosfera di osteria con legni scuri e candele
+2. **Palazzo Rinascimentale** - Eleganza nobiliare con ori e marmi
+3. **Cantina del Vino** - Toni vinosi e atmosfera calda
+4. **Pergamena Antica** - Stile manoscritto medievale su pergamena
+
+#### ⚙️ Caratteristiche Sistema Theme:
+- **CSS Layer System**: `@layer system` e `@layer module` per priorità cascade corretta
+- **Variabili CSS Dinamiche**: Prefisso `--branca-*` per customizzazione totale
+- **Import/Export Temi**: Salva e condividi configurazioni personalizzate
+- **Color Picker Integrato**: Personalizza ogni colore del tema in real-time
+- **Decorazioni Rinascimentali**: Angoli dorati ornamentali e texture pergamena
+- **Dark/Light Mode**: Supporto per tema chiaro/scuro
+- **Responsive Design**: Ottimizzato per tutti i dispositivi
+
+#### 🎯 Tracker Brancalonia Integrati:
+- **Infamia**: Barra animata con effetto shimmer dorato
+- **Baraonda**: Punti birra con animazioni pulse gold
+- **Lavori Sporchi**: Counter con pulsanti incrementali
+- **Rifugio**: Status attivo/inattivo con effetti visivi
+- **Compagnia**: Gestione membri e reputazione
+
+#### 🌟 Effetti Speciali:
+- **Esclamazioni Italiane**: "Magnifico!" per critici, "Maledizione!" per fumble
+- **Animazioni Dice**: Effetti speciali per tiri critici e fallimenti
+- **Corner Decorations**: Ornamenti angolari dorati per tutte le finestre
+- **Chat Enhancements**: Messaggi stilizzati con tema pergamena
+
+#### 📁 File Sistema Theme:
+```
+modules/
+├── brancalonia-theme.mjs         # Sistema gestione temi con 4 preset
+styles/
+├── brancalonia-theme-system.css  # Layer system con override Foundry core
+├── brancalonia-theme-module.css  # Layer module con stili Brancalonia specifici
+```
+
 ### 🚀 RELEASE v3.21.0 - REVISIONE PROFONDA COMPLETA
 **FIX MASSICCI CON AGENT**:
 - ✅ **12/12 Classi** completamente ristrutturate per D&D 5e v5.x
