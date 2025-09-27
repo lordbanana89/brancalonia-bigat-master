@@ -7,6 +7,35 @@
 console.log("🔧 Brancalonia Settings Fix - Loading");
 
 // ============================================
+// FIX IMMEDIATO PER ICONE FONT AWESOME
+// ============================================
+
+(function() {
+  // Intercetta createElement per correggere icone al volo
+  const originalCreateElement = document.createElement;
+  document.createElement = function(tagName, options) {
+    const element = originalCreateElement.call(document, tagName, options);
+
+    // Se è un elemento i (icona), aggiungi observer per correggere classi
+    if (tagName.toLowerCase() === 'i') {
+      // Correggi immediatamente se ha classi problematiche
+      setTimeout(() => {
+        if (element.className && element.className.includes('fa ')) {
+          const fixedClass = element.className
+            .replace(/\bfa\s+fa-/g, 'fas fa-')
+            .replace(/\bfa-sync\b/g, 'fa-sync-alt');
+          if (fixedClass !== element.className) {
+            element.className = fixedClass;
+          }
+        }
+      }, 0);
+    }
+
+    return element;
+  };
+})();
+
+// ============================================
 // FIX SETTINGS LABELS
 // ============================================
 
@@ -25,6 +54,13 @@ Hooks.once("init", () => {
 function fixSettingsLabels() {
   // Mappa dei label corretti per i moduli conosciuti
   const labelFixes = {
+    // Fix per bottoni Sync
+    "fa fa-sync Sync All": "Sync All",
+    "fa fa-sync Sync Modules": "Sync Modules",
+    "fa fa-sync Sync Users": "Sync Users",
+    "fa fa-sync Sync Agnostic": "Sync Agnostic",
+    "fa fa-sync Sync System": "Sync System",
+    "fa fa-sync": "Sync",
     // Moduli con label errati comuni
     "fa-solid fa-users-cog": "Configure Settings",
     "fa-solid fa-user-gear": "User Settings",
@@ -156,12 +192,21 @@ Hooks.once("init", () => {
 // RENDERING FIXES
 // ============================================
 
-// Correggi i label quando vengono renderizzati i settings
+// Correggi i label quando vengono renderizzati TUTTI gli elementi
+Hooks.on("renderApplication", (app, html, data) => {
+  fixRenderedLabels(html);
+});
+
 Hooks.on("renderSettingsConfig", (app, html, data) => {
-  console.log("🔧 Fixing rendered settings labels");
+  fixRenderedLabels(html);
+});
+
+function fixRenderedLabels(html) {
+  // Converti a jQuery se necessario
+  const $html = html.jquery ? html : $(html);
 
   // Cerca tutti i label che contengono "fa-"
-  html.find("label").each(function() {
+  $html.find("label").each(function() {
     const label = $(this);
     const text = label.text();
 
@@ -182,7 +227,7 @@ Hooks.on("renderSettingsConfig", (app, html, data) => {
   });
 
   // Correggi anche i titoli delle sezioni
-  html.find("h2").each(function() {
+  $html.find("h2").each(function() {
     const heading = $(this);
     const text = heading.text();
 
@@ -199,7 +244,51 @@ Hooks.on("renderSettingsConfig", (app, html, data) => {
       }
     }
   });
-});
+
+  // Correggi bottoni con testo "fa fa-sync"
+  $html.find("button, a.button, .button").each(function() {
+    const button = $(this);
+    const html = button.html();
+
+    if (html && html.includes("fa fa-")) {
+      const fixed = html
+        .replace(/fa fa-sync/g, '<i class="fas fa-sync-alt"></i>')
+        .replace(/fa fa-([\w-]+)/g, '<i class="fas fa-$1"></i>');
+
+      if (fixed !== html) {
+        button.html(fixed);
+      }
+    }
+
+    // Correggi anche il testo diretto
+    const text = button.text();
+    if (text.includes("fa fa-")) {
+      const cleanText = text
+        .replace(/fa fa-sync\s*/g, '')
+        .replace(/fa fa-[\w-]+\s*/g, '')
+        .trim();
+
+      if (cleanText && cleanText !== text) {
+        // Preserva icone esistenti
+        const icon = button.find('i').detach();
+        button.text(cleanText);
+        if (icon.length) button.prepend(icon);
+      }
+    }
+  });
+
+  // Fix icone che hanno classi errate
+  $html.find('i[class*="fa "]').each(function() {
+    const icon = $(this);
+    const fixedClass = icon.attr('class')
+      .replace(/\bfa\s+fa-/g, 'fas fa-')
+      .replace(/\bfa-sync\b/g, 'fa-sync-alt');
+
+    if (fixedClass !== icon.attr('class')) {
+      icon.attr('class', fixedClass);
+    }
+  });
+}
 
 console.log("✅ Brancalonia Settings Fix loaded");
 

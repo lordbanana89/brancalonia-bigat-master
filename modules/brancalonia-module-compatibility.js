@@ -30,9 +30,7 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
               console.warn("🏗️ Creating #loading element for Tidbits");
               loadingScreen = document.createElement('div');
               loadingScreen.id = 'loading';
-              loadingScreen.style.display = 'none';
-              loadingScreen.style.width = '100%';
-              loadingScreen.style.height = '100%';
+              loadingScreen.style.cssText = 'display:block;width:100%;height:100%;position:fixed;top:0;left:0;z-index:99999;background:rgba(0,0,0,0.5);';
               document.body.appendChild(loadingScreen);
             }
 
@@ -42,7 +40,7 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
               console.warn("🏗️ Creating #loading-bar element for Tidbits");
               loadingBar = document.createElement('div');
               loadingBar.id = 'loading-bar';
-              loadingBar.style.width = '0%';
+              loadingBar.style.cssText = 'width:50%;height:4px;background:#C9A54A;position:absolute;top:50%;left:25%;';
               if (loadingScreen) {
                 loadingScreen.appendChild(loadingBar);
               } else {
@@ -50,12 +48,11 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
               }
             }
 
-            // Assicurati che abbiano offsetWidth
-            if (loadingScreen && !loadingScreen.offsetWidth) {
+            // Assicurati che abbiano offsetWidth forzando un reflow
+            if (loadingScreen) {
               loadingScreen.style.display = 'block';
-              loadingScreen.style.position = 'fixed';
-              loadingScreen.style.top = '0';
-              loadingScreen.style.left = '0';
+              // Forza reflow per garantire offsetWidth
+              void loadingScreen.offsetWidth;
             }
           }
 
