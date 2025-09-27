@@ -28,6 +28,9 @@
 /* Compatibilità con moduli terzi */
 @import url('./brancalonia-module-compat.css');
 
+/* Fix critici per icone e layout */
+@import url('./brancalonia-fixes.css');
+
 /* ================================================
    ATTIVAZIONE TEMA
    Classe applicata al body per attivare il tema
