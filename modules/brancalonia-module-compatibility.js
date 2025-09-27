@@ -12,71 +12,34 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
 
 // FIX IMMEDIATO PER EPIC ROLLS 5E - DEVE essere fatto PRIMA di tutto
 (function() {
-  console.log("🚨 Pre-emptive fix for Epic Rolls 5e - Creating missing elements");
+  console.log("🚨 Pre-emptive fix for Epic Rolls 5e - Simple element creation");
 
-  // Hook IMMEDIATO per creare elementi mancanti PRIMA che Epic Rolls li cerchi
-  Hooks.once("renderChatLog", (app, html, data) => {
-    console.log("🔨 Creating missing elements for Epic Rolls 5e");
+  // Hook per creare elementi mancanti PRIMA che Epic Rolls li cerchi
+  // Usa priority alta per eseguire prima di Epic Rolls
+  Hooks.on("renderChatLog", (app, html, data) => {
+    try {
+      // Converti a jQuery se necessario
+      const $html = html.jquery ? html : $(html);
 
-    // Converti a jQuery se necessario
-    const $html = html.jquery ? html : $(html);
-
-    // CREA chat-form se non esiste
-    if (!$html.find("#chat-form").length) {
-      console.warn("🏗️ Creating #chat-form for Epic Rolls");
-      const chatForm = $('<div id="chat-form"><div class="control-buttons"></div></div>');
-      $html.append(chatForm);
-    }
-
-    // CREA control-buttons se non esiste
-    const chatForm = $html.find("#chat-form");
-    if (chatForm.length && !chatForm.find(".control-buttons").length) {
-      console.warn("🏗️ Creating .control-buttons for Epic Rolls");
-      chatForm.prepend('<div class="control-buttons"></div>');
-    }
-
-    // CREA roll-type-select se non esiste
-    const controlButtons = $html.find(".control-buttons");
-    if (controlButtons.length && !controlButtons.find(".roll-type-select").length) {
-      console.warn("🏗️ Creating .roll-type-select for Epic Rolls");
-      controlButtons.append('<div class="roll-type-select"></div>');
-    }
-
-    // CREA chat-message container se non esiste
-    if (!$html.find(".chat-messages").length && !$html.find("#chat-log").length) {
-      console.warn("🏗️ Creating chat message container for Epic Rolls");
-      $html.prepend('<ol id="chat-log" class="chat-messages"></ol>');
-    }
-  });
-
-  // Wrappa jQuery methods per creare elementi al volo se necessario
-  if (typeof $ !== 'undefined' && $.fn) {
-    const originalFind = $.fn.find;
-    $.fn.find = function(selector) {
-      let result = originalFind.call(this, selector);
-
-      // Se non trova elementi critici per Epic Rolls, li crea
-      if (result.length === 0) {
-        if (selector === "#chat-form" && this.is("#chat") || this.find("#chat").length) {
-          console.warn(`🏗️ Auto-creating ${selector} for Epic Rolls`);
-          const newElement = $('<div id="chat-form"><div class="control-buttons"></div></div>');
-          this.append(newElement);
-          result = originalFind.call(this, selector);
-        }
-        else if (selector === ".control-buttons" && (this.is("#chat-form") || this.find("#chat-form").length)) {
-          console.warn(`🏗️ Auto-creating ${selector} for Epic Rolls`);
-          const newElement = $('<div class="control-buttons"></div>');
-          const chatForm = this.is("#chat-form") ? this : this.find("#chat-form");
-          chatForm.prepend(newElement);
-          result = originalFind.call(this, selector);
-        }
+      // CREA chat-form se non esiste
+      if (!$html.find("#chat-form").length) {
+        console.warn("🏗️ Creating #chat-form for Epic Rolls");
+        const chatForm = $('<div id="chat-form"><div class="control-buttons"></div></div>');
+        $html.append(chatForm);
       }
 
-      return result;
-    };
+      // CREA control-buttons se non esiste
+      const chatForm = $html.find("#chat-form");
+      if (chatForm.length && !chatForm.find(".control-buttons").length) {
+        console.warn("🏗️ Creating .control-buttons for Epic Rolls");
+        chatForm.prepend('<div class="control-buttons"></div>');
+      }
+    } catch (e) {
+      console.error("❌ Error in Epic Rolls fix:", e);
+    }
+  }, { priority: 1000 }); // Alta priorità per eseguire PRIMA di Epic Rolls
 
-    console.log("✅ jQuery.find wrapped to auto-create elements for Epic Rolls");
-  }
+  console.log("✅ Epic Rolls 5e pre-emptive fix registered");
 })();
 
 // FIX IMMEDIATO PER POWER SELECT TOOLKIT
@@ -290,44 +253,9 @@ function checkAndFixOtherModules() {
       id: "epic-rolls-5e",
       name: "Epic Rolls 5e",
       fix: () => {
-        console.log("🔧 Epic Rolls 5e additional fixes");
-
-        // Hook per assicurarsi che gli elementi esistano
-        Hooks.on("renderChatLog", (app, html, data) => {
-          // Converti a jQuery se necessario
-          const $html = html.jquery ? html : $(html);
-
-          // Assicurati che elementi critici esistano
-          if (!$html.find("#chat-form").length) {
-            console.warn("⚠️ Epic Rolls 5e: chat-form missing, creating placeholder");
-            $html.append('<div id="chat-form"></div>');
-          }
-
-          if (!$html.find(".control-buttons").length) {
-            console.warn("⚠️ Epic Rolls 5e: control-buttons missing, creating placeholder");
-            const chatForm = $html.find("#chat-form");
-            if (chatForm.length) {
-              chatForm.prepend('<div class="control-buttons"></div>');
-            }
-          }
-
-          // Assicurati che ci sia almeno un elemento chat-message
-          if (!$html.find(".chat-message").length) {
-            console.warn("⚠️ Epic Rolls 5e: no chat messages found, creating placeholder");
-            $html.append('<li class="chat-message" style="display:none"></li>');
-          }
-        }, { priority: 1000 }); // Esegui PRIMA di Epic Rolls
-
-        // Wrappa anche il metodo find per sicurezza
-        const originalFind = $.fn.find;
-        $.fn.find = function(selector) {
-          const result = originalFind.call(this, selector);
-          // Se il risultato è vuoto e stiamo cercando elementi critici, logga
-          if (result.length === 0 && (selector === "#chat-form" || selector === ".control-buttons")) {
-            console.debug(`🔍 Epic Rolls 5e: Element '${selector}' not found in`, this);
-          }
-          return result;
-        };
+        console.log("🔧 Epic Rolls 5e - Fix already applied in pre-init");
+        // Il fix principale è già stato applicato all'inizio del file
+        // Non serve fare altro qui
       }
     }
   ];
