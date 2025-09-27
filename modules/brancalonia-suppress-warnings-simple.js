@@ -19,7 +19,14 @@ console.warn = function(...args) {
     'CONFIG.DND5E.polymorphEffectSettings',
     'CONFIG.DND5E.transformationPresets',
     'CONFIG.DND5E.spellcastingTypes',
-    'The `label` property of status conditions'
+    'The `label` property of status conditions',
+    // Custom D&D 5e settings mancanti
+    'custom-dnd5e.rolls',
+    'custom-dnd5e.enable-encumbrance',
+    'custom-dnd5e.enable-senses',
+    'custom-dnd5e.enable-concentration',
+    'custom-dnd5e.enable-exhaustion',
+    'is not a registered game setting'
   ];
 
   for (const suppressedWarning of suppressedWarnings) {
