@@ -39,6 +39,7 @@
     ]
   },
   "esmodules": [
+    "modules/brancalonia-renaissance-activator.js",
     "modules/brancalonia-image-fix-ultimate.js",
     "modules/brancalonia-cache-buster.js",
     "modules/brancalonia-v13-compatibility.js",
@@ -79,7 +80,8 @@
     "modules/rest-system.js",
     "modules/level-cap.js",
     "modules/brancalonia-mechanics.js",
-    "modules/brancalonia-sheets.js"
+    "modules/brancalonia-sheets.js",
+    "modules/background-privileges.js"
   ],
   "styles": [
     {
@@ -88,6 +90,10 @@
     },
     {
       "src": "styles/brancalonia-theme-system-v2.css",
+      "layer": "system"
+    },
+    {
+      "src": "styles/brancalonia-renaissance-theme.css",
       "layer": "system"
     },
     {

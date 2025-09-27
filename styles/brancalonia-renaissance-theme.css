@@ -1,0 +1,622 @@
+/* ================================================ */
+/* BRANCALONIA RENAISSANCE THEME                    */
+/* Authentic Italian Renaissance Color Palette      */
+/* ================================================ */
+
+/* Import Renaissance-inspired fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Uncial+Antiqua&display=swap');
+
+/* ================================================ */
+/* ROOT VARIABLES - ITALIAN RENAISSANCE PALETTE     */
+/* ================================================ */
+
+:root {
+  /* Primary Renaissance Colors - Based on authentic pigments */
+  --branca-burnt-sienna: #8B4513;        /* Terra di Siena bruciata */
+  --branca-raw-sienna: #C68E3F;          /* Terra di Siena naturale */
+  --branca-venetian-red: #C80815;        /* Rosso veneziano */
+  --branca-ochre-yellow: #CC9A2E;        /* Ocra gialla */
+  --branca-burnt-umber: #6B4423;         /* Terra d'ombra bruciata */
+  --branca-malachite: #0F7938;           /* Verde malachite */
+  --branca-ultramarine: #4166F5;         /* Blu oltremare (lapis) */
+  --branca-lead-white: #F8F6F0;          /* Bianco di piombo */
+  --branca-bone-black: #1C1814;          /* Nero d'ossa */
+
+  /* Secondary Palette - Venetian School */
+  --branca-gold-leaf: #D4AF37;           /* Foglia d'oro */
+  --branca-cinabrese: #E8B19D;           /* Skin tone base */
+  --branca-wine-red: #722F37;            /* Rosso vino */
+  --branca-terracotta: #CB6843;          /* Terracotta toscana */
+  --branca-warm-grey: #8B7E6A;           /* Grigio caldo */
+  --branca-parchment: #F4E8D0;           /* Pergamena */
+  --branca-sepia: #704214;               /* Seppia */
+
+  /* UI Specific Mappings */
+  --branca-background: var(--branca-parchment);
+  --branca-surface: #FAF6ED;
+  --branca-text-primary: var(--branca-bone-black);
+  --branca-text-secondary: var(--branca-burnt-umber);
+  --branca-accent: var(--branca-venetian-red);
+  --branca-success: var(--branca-malachite);
+  --branca-warning: var(--branca-ochre-yellow);
+  --branca-error: var(--branca-venetian-red);
+  --branca-border: var(--branca-warm-grey);
+
+  /* Typography */
+  --branca-font-display: 'Cinzel', 'Trajan Pro', serif;
+  --branca-font-body: 'Crimson Text', 'Garamond', serif;
+  --branca-font-special: 'Uncial Antiqua', cursive;
+}
+
+/* ================================================ */
+/* GLOBAL STYLES                                    */
+/* ================================================ */
+
+body.brancalonia-theme {
+  font-family: var(--branca-font-body);
+  color: var(--branca-text-primary);
+  background-color: var(--branca-background);
+  background-image:
+    linear-gradient(45deg, transparent 30%, rgba(212, 175, 55, 0.05) 30%, rgba(212, 175, 55, 0.05) 70%, transparent 70%),
+    linear-gradient(-45deg, transparent 30%, rgba(139, 69, 19, 0.03) 30%, rgba(139, 69, 19, 0.03) 70%, transparent 70%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* ================================================ */
+/* WINDOW & APPLICATION STYLING                     */
+/* ================================================ */
+
+.brancalonia-theme .window-app {
+  background: linear-gradient(to bottom,
+    var(--branca-surface) 0%,
+    var(--branca-parchment) 100%);
+  border: 2px solid var(--branca-burnt-sienna);
+  box-shadow:
+    0 0 20px rgba(139, 69, 19, 0.3),
+    0 4px 8px rgba(28, 24, 20, 0.2),
+    inset 0 0 30px rgba(244, 232, 208, 0.5);
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Decorative corners */
+.brancalonia-theme .window-app::before,
+.brancalonia-theme .window-app::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M5 5 Q20 5 20 20 T35 35' fill='none' stroke='%23D4AF37' stroke-width='2'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.brancalonia-theme .window-app::before {
+  top: -2px;
+  left: -2px;
+}
+
+.brancalonia-theme .window-app::after {
+  bottom: -2px;
+  right: -2px;
+  transform: rotate(180deg);
+}
+
+/* Window Header */
+.brancalonia-theme .window-header {
+  background: linear-gradient(135deg,
+    var(--branca-burnt-sienna) 0%,
+    var(--branca-wine-red) 100%);
+  color: var(--branca-lead-white);
+  font-family: var(--branca-font-display);
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(28, 24, 20, 0.5);
+  border-bottom: 2px solid var(--branca-gold-leaf);
+  padding: 8px 30px 8px 15px;
+}
+
+.brancalonia-theme .window-title {
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+}
+
+/* Window Controls */
+.brancalonia-theme .window-header .control {
+  color: var(--branca-parchment);
+  text-shadow: 1px 1px 2px rgba(28, 24, 20, 0.5);
+}
+
+.brancalonia-theme .window-header .control:hover {
+  color: var(--branca-gold-leaf);
+  text-shadow: 0 0 8px var(--branca-gold-leaf);
+}
+
+/* ================================================ */
+/* FORMS & INPUTS                                   */
+/* ================================================ */
+
+.brancalonia-theme input[type="text"],
+.brancalonia-theme input[type="number"],
+.brancalonia-theme input[type="password"],
+.brancalonia-theme select,
+.brancalonia-theme textarea {
+  background-color: rgba(248, 246, 240, 0.9);
+  border: 1px solid var(--branca-warm-grey);
+  color: var(--branca-text-primary);
+  font-family: var(--branca-font-body);
+  padding: 5px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.brancalonia-theme input:focus,
+.brancalonia-theme select:focus,
+.brancalonia-theme textarea:focus {
+  outline: none;
+  border-color: var(--branca-gold-leaf);
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+  background-color: var(--branca-lead-white);
+}
+
+/* ================================================ */
+/* BUTTONS                                          */
+/* ================================================ */
+
+.brancalonia-theme button,
+.brancalonia-theme .dialog-button {
+  background: linear-gradient(135deg,
+    var(--branca-terracotta) 0%,
+    var(--branca-burnt-sienna) 100%);
+  color: var(--branca-lead-white);
+  border: 1px solid var(--branca-burnt-umber);
+  font-family: var(--branca-font-display);
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-shadow: 1px 1px 2px rgba(28, 24, 20, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.brancalonia-theme button:hover {
+  background: linear-gradient(135deg,
+    var(--branca-burnt-sienna) 0%,
+    var(--branca-wine-red) 100%);
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.4);
+  transform: translateY(-1px);
+}
+
+.brancalonia-theme button:active {
+  transform: translateY(0);
+  box-shadow: inset 0 2px 4px rgba(28, 24, 20, 0.3);
+}
+
+.brancalonia-theme button.default,
+.brancalonia-theme button[type="submit"] {
+  background: linear-gradient(135deg,
+    var(--branca-gold-leaf) 0%,
+    var(--branca-ochre-yellow) 100%);
+  color: var(--branca-bone-black);
+}
+
+/* ================================================ */
+/* TABS                                             */
+/* ================================================ */
+
+.brancalonia-theme .tabs {
+  border-bottom: 2px solid var(--branca-burnt-sienna);
+  margin-bottom: 10px;
+}
+
+.brancalonia-theme .tabs .item {
+  background: var(--branca-warm-grey);
+  color: var(--branca-lead-white);
+  border: 1px solid var(--branca-burnt-umber);
+  border-bottom: none;
+  margin: 0 2px;
+  padding: 8px 16px;
+  font-family: var(--branca-font-display);
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brancalonia-theme .tabs .item:hover {
+  background: var(--branca-burnt-sienna);
+}
+
+.brancalonia-theme .tabs .item.active {
+  background: linear-gradient(to bottom,
+    var(--branca-gold-leaf) 0%,
+    var(--branca-ochre-yellow) 100%);
+  color: var(--branca-bone-black);
+  font-weight: 600;
+  box-shadow: 0 -2px 4px rgba(212, 175, 55, 0.3);
+}
+
+/* ================================================ */
+/* SCROLLBARS                                       */
+/* ================================================ */
+
+.brancalonia-theme ::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.brancalonia-theme ::-webkit-scrollbar-track {
+  background: var(--branca-warm-grey);
+  border-radius: 6px;
+  box-shadow: inset 0 0 3px rgba(28, 24, 20, 0.3);
+}
+
+.brancalonia-theme ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom,
+    var(--branca-burnt-sienna) 0%,
+    var(--branca-wine-red) 100%);
+  border-radius: 6px;
+  border: 1px solid var(--branca-burnt-umber);
+}
+
+.brancalonia-theme ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom,
+    var(--branca-terracotta) 0%,
+    var(--branca-burnt-sienna) 100%);
+}
+
+/* ================================================ */
+/* CHAT MESSAGES                                    */
+/* ================================================ */
+
+.brancalonia-theme #chat-log .chat-message {
+  background: var(--branca-surface);
+  border: 1px solid var(--branca-warm-grey);
+  border-left: 3px solid var(--branca-burnt-sienna);
+  margin: 4px 0;
+  padding: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.brancalonia-theme #chat-log .chat-message:hover {
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.2);
+  transform: translateX(2px);
+}
+
+.brancalonia-theme #chat-log .chat-message .message-header {
+  color: var(--branca-wine-red);
+  font-family: var(--branca-font-display);
+  font-size: 0.95em;
+  font-weight: 500;
+  border-bottom: 1px solid var(--branca-warm-grey);
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+/* Critical Success */
+.brancalonia-theme .dice-roll.critical {
+  border-color: var(--branca-gold-leaf) !important;
+  background: linear-gradient(135deg,
+    rgba(212, 175, 55, 0.1) 0%,
+    rgba(204, 154, 46, 0.1) 100%);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* Critical Fail */
+.brancalonia-theme .dice-roll.fumble {
+  border-color: var(--branca-venetian-red) !important;
+  background: linear-gradient(135deg,
+    rgba(200, 8, 21, 0.1) 0%,
+    rgba(114, 47, 55, 0.1) 100%);
+  box-shadow: 0 0 10px rgba(200, 8, 21, 0.5);
+}
+
+/* ================================================ */
+/* SIDEBAR                                          */
+/* ================================================ */
+
+.brancalonia-theme #sidebar {
+  background: linear-gradient(to right,
+    var(--branca-surface) 0%,
+    var(--branca-parchment) 100%);
+  border-left: 2px solid var(--branca-burnt-sienna);
+}
+
+.brancalonia-theme #sidebar-tabs {
+  border-bottom: 2px solid var(--branca-burnt-sienna);
+  background: var(--branca-warm-grey);
+}
+
+.brancalonia-theme #sidebar-tabs > .item {
+  color: var(--branca-parchment);
+  text-shadow: 1px 1px 2px rgba(28, 24, 20, 0.5);
+}
+
+.brancalonia-theme #sidebar-tabs > .item.active {
+  background: linear-gradient(135deg,
+    var(--branca-burnt-sienna) 0%,
+    var(--branca-wine-red) 100%);
+  color: var(--branca-gold-leaf);
+  box-shadow: inset 0 -3px 0 var(--branca-gold-leaf);
+}
+
+/* ================================================ */
+/* SPECIAL BRANCALONIA ELEMENTS                     */
+/* ================================================ */
+
+/* Infamia Tracker */
+.brancalonia-theme .infamia-tracker {
+  background: linear-gradient(135deg,
+    var(--branca-wine-red) 0%,
+    var(--branca-venetian-red) 100%);
+  border: 2px solid var(--branca-gold-leaf);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.brancalonia-theme .infamia-tracker::before {
+  content: "⚜";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: var(--branca-gold-leaf);
+  opacity: 0.3;
+}
+
+.brancalonia-theme .infamia-value {
+  font-family: var(--branca-font-display);
+  font-size: 1.4em;
+  color: var(--branca-gold-leaf);
+  text-shadow: 2px 2px 4px rgba(28, 24, 20, 0.5);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Baraonda Counter */
+.brancalonia-theme .baraonda-tracker {
+  background: linear-gradient(135deg,
+    var(--branca-terracotta) 0%,
+    var(--branca-ochre-yellow) 100%);
+  border: 2px dashed var(--branca-burnt-umber);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--branca-font-special);
+  font-size: 1.8em;
+  color: var(--branca-lead-white);
+  text-shadow: 2px 2px 4px rgba(28, 24, 20, 0.5);
+  box-shadow:
+    0 4px 8px rgba(139, 69, 19, 0.3),
+    inset 0 -2px 4px rgba(28, 24, 20, 0.2);
+  transition: all 0.3s ease;
+}
+
+.brancalonia-theme .baraonda-tracker:hover {
+  transform: rotate(10deg) scale(1.1);
+  box-shadow:
+    0 6px 12px rgba(139, 69, 19, 0.4),
+    inset 0 -2px 4px rgba(28, 24, 20, 0.2);
+}
+
+/* Menagramo Indicator */
+.brancalonia-theme .menagramo-active {
+  position: relative;
+}
+
+.brancalonia-theme .menagramo-active::after {
+  content: "☠";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.5em;
+  color: var(--branca-venetian-red);
+  filter: drop-shadow(0 0 3px var(--branca-wine-red));
+  animation: menagramo-pulse 2s infinite;
+}
+
+@keyframes menagramo-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* ================================================ */
+/* JOURNAL ENTRIES                                  */
+/* ================================================ */
+
+.brancalonia-theme .journal-sheet {
+  font-family: var(--branca-font-body);
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.brancalonia-theme .journal-sheet h1 {
+  font-family: var(--branca-font-display);
+  color: var(--branca-wine-red);
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.2);
+  position: relative;
+}
+
+.brancalonia-theme .journal-sheet h1::before,
+.brancalonia-theme .journal-sheet h1::after {
+  content: "❦";
+  color: var(--branca-gold-leaf);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+}
+
+.brancalonia-theme .journal-sheet h1::before {
+  left: -40px;
+}
+
+.brancalonia-theme .journal-sheet h1::after {
+  right: -40px;
+}
+
+.brancalonia-theme .journal-sheet h2 {
+  font-family: var(--branca-font-display);
+  color: var(--branca-burnt-sienna);
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 15px 0;
+  border-bottom: 2px solid var(--branca-ochre-yellow);
+  padding-bottom: 5px;
+}
+
+.brancalonia-theme .journal-sheet h3 {
+  font-family: var(--branca-font-display);
+  color: var(--branca-terracotta);
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.brancalonia-theme .journal-sheet blockquote {
+  border-left: 4px solid var(--branca-gold-leaf);
+  background: linear-gradient(to right,
+    rgba(212, 175, 55, 0.1) 0%,
+    transparent 100%);
+  padding: 10px 20px;
+  margin: 15px 0;
+  font-style: italic;
+  position: relative;
+}
+
+.brancalonia-theme .journal-sheet blockquote::before {
+  content: """;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 3em;
+  color: var(--branca-gold-leaf);
+  opacity: 0.5;
+  font-family: var(--branca-font-special);
+}
+
+/* ================================================ */
+/* TOOLTIPS                                         */
+/* ================================================ */
+
+.brancalonia-theme .tooltip {
+  background: linear-gradient(135deg,
+    var(--branca-bone-black) 0%,
+    var(--branca-burnt-umber) 100%);
+  color: var(--branca-parchment);
+  border: 1px solid var(--branca-gold-leaf);
+  font-family: var(--branca-font-body);
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(28, 24, 20, 0.6);
+}
+
+/* ================================================ */
+/* NOTIFICATIONS                                    */
+/* ================================================ */
+
+.brancalonia-theme .notification {
+  background: var(--branca-surface);
+  border: 2px solid var(--branca-burnt-sienna);
+  color: var(--branca-text-primary);
+  font-family: var(--branca-font-body);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+}
+
+.brancalonia-theme .notification.info {
+  border-color: var(--branca-ultramarine);
+  background: linear-gradient(135deg,
+    rgba(65, 102, 245, 0.1) 0%,
+    var(--branca-surface) 100%);
+}
+
+.brancalonia-theme .notification.warning {
+  border-color: var(--branca-ochre-yellow);
+  background: linear-gradient(135deg,
+    rgba(204, 154, 46, 0.1) 0%,
+    var(--branca-surface) 100%);
+}
+
+.brancalonia-theme .notification.error {
+  border-color: var(--branca-venetian-red);
+  background: linear-gradient(135deg,
+    rgba(200, 8, 21, 0.1) 0%,
+    var(--branca-surface) 100%);
+}
+
+/* ================================================ */
+/* ANIMATIONS                                       */
+/* ================================================ */
+
+@keyframes gold-shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+    filter: brightness(1);
+  }
+  50% {
+    background-position: 100% 50%;
+    filter: brightness(1.2);
+  }
+}
+
+.brancalonia-theme .gold-shimmer {
+  background: linear-gradient(90deg,
+    var(--branca-gold-leaf) 0%,
+    var(--branca-lead-white) 50%,
+    var(--branca-gold-leaf) 100%);
+  background-size: 200% 100%;
+  animation: gold-shimmer 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ================================================ */
+/* RESPONSIVE & ACCESSIBILITY                       */
+/* ================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .brancalonia-theme * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .brancalonia-theme {
+    --branca-text-primary: #000000;
+    --branca-background: #FFFFFF;
+    --branca-border: #000000;
+  }
+}
+
+/* ================================================ */
+/* PRINT STYLES                                     */
+/* ================================================ */
+
+@media print {
+  .brancalonia-theme {
+    background: white !important;
+    color: black !important;
+  }
+
+  .brancalonia-theme .window-header,
+  .brancalonia-theme .tabs,
+  .brancalonia-theme button {
+    display: none !important;
+  }
+}
