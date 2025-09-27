@@ -7,18 +7,18 @@ console.log("Brancalonia | Image Fallback System inizializzato");
 
 // Mappa immagini mancanti a fallback appropriati
 const IMAGE_FALLBACKS = {
-    'icons/equipment/chest/breastplate-metal-copper.webp': 'icons/equipment/chest/breastplate-steel.webp',
-    'breastplate-metal-copper.webp': 'icons/equipment/chest/breastplate-steel.webp'
+    'icons/equipment/chest/breastplate-metal-copper.webp': 'icons/svg/shield.svg',
+    'breastplate-metal-copper.webp': 'icons/svg/shield.svg'
 };
 
-// Fallback generici per categoria
+// Fallback generici per categoria - usa solo SVG che esistono sempre
 const CATEGORY_FALLBACKS = {
-    'chest': 'icons/equipment/chest/breastplate-steel.webp',
-    'armor': 'icons/equipment/chest/breastplate-steel.webp',
-    'weapon': 'icons/weapons/swords/sword-guard-steel.webp',
-    'shield': 'icons/equipment/shield/heater-steel.webp',
-    'clothing': 'icons/equipment/chest/shirt-simple-white.webp',
-    'equipment': 'icons/containers/bags/pack-adventuring-brown.webp',
+    'chest': 'icons/svg/shield.svg',
+    'armor': 'icons/svg/shield.svg',
+    'weapon': 'icons/svg/sword.svg',
+    'shield': 'icons/svg/shield.svg',
+    'clothing': 'icons/svg/item-bag.svg',
+    'equipment': 'icons/svg/item-bag.svg',
     'default': 'icons/svg/item-bag.svg'
 };
 
@@ -29,7 +29,8 @@ function setupImageErrorHandling() {
     TextEditor.enrichHTML = function(content, options = {}) {
         // Sostituisci riferimenti a immagini mancanti nel contenuto
         if (content && typeof content === 'string') {
-            content = content.replace(/breastplate-metal-copper\.webp/g, 'breastplate-steel.webp');
+            content = content.replace(/breastplate-metal-copper\.webp/g, 'shield.svg');
+            content = content.replace(/breastplate-steel\.webp/g, 'shield.svg');
         }
         return originalEnrichHTML.call(this, content, options);
     };
@@ -43,10 +44,12 @@ function setupImageErrorHandling() {
             // Controlla se è un'immagine nota mancante
             const filename = src.split('/').pop();
             if (filename === 'breastplate-metal-copper.webp' ||
-                src.includes('breastplate-metal-copper.webp')) {
+                filename === 'breastplate-steel.webp' ||
+                src.includes('breastplate-metal-copper.webp') ||
+                src.includes('breastplate-steel.webp')) {
 
                 console.log(`Brancalonia | Sostituisco immagine mancante: ${filename}`);
-                target.src = 'icons/equipment/chest/breastplate-steel.webp';
+                target.src = 'icons/svg/shield.svg';
                 target.onerror = null; // Previeni loop infiniti
                 event.preventDefault();
                 event.stopPropagation();
@@ -96,8 +99,8 @@ Hooks.on("renderChatMessageHTML", (message, html) => {
     // html è ora un HTMLElement invece di jQuery
     const images = html.querySelectorAll('img');
     images.forEach(img => {
-        if (img.src.includes('breastplate-metal-copper.webp')) {
-            img.src = 'icons/equipment/chest/breastplate-steel.webp';
+        if (img.src.includes('breastplate-metal-copper.webp') || img.src.includes('breastplate-steel.webp')) {
+            img.src = 'icons/svg/shield.svg';
             img.onerror = null;
         }
     });
@@ -107,8 +110,8 @@ Hooks.on("renderChatMessageHTML", (message, html) => {
 Hooks.on("renderActorSheet", (app, html, data) => {
     // Sostituisci immagini mancanti nelle schede
     html.find('img').each((i, img) => {
-        if (img.src.includes('breastplate-metal-copper.webp')) {
-            img.src = 'icons/equipment/chest/breastplate-steel.webp';
+        if (img.src.includes('breastplate-metal-copper.webp') || img.src.includes('breastplate-steel.webp')) {
+            img.src = 'icons/svg/shield.svg';
             img.onerror = null;
         }
     });
@@ -118,8 +121,8 @@ Hooks.on("renderActorSheet", (app, html, data) => {
 Hooks.on("renderItemSheet", (app, html, data) => {
     // Sostituisci immagini mancanti nelle schede item
     html.find('img').each((i, img) => {
-        if (img.src.includes('breastplate-metal-copper.webp')) {
-            img.src = 'icons/equipment/chest/breastplate-steel.webp';
+        if (img.src.includes('breastplate-metal-copper.webp') || img.src.includes('breastplate-steel.webp')) {
+            img.src = 'icons/svg/shield.svg';
             img.onerror = null;
         }
     });
@@ -131,8 +134,8 @@ Hooks.once("ready", () => {
 
     // Correggi immagini già presenti nel DOM
     document.querySelectorAll('img').forEach(img => {
-        if (img.src.includes('breastplate-metal-copper.webp')) {
-            img.src = 'icons/equipment/chest/breastplate-steel.webp';
+        if (img.src.includes('breastplate-metal-copper.webp') || img.src.includes('breastplate-steel.webp')) {
+            img.src = 'icons/svg/shield.svg';
             img.onerror = null;
         }
     });
