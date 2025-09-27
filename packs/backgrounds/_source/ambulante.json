@@ -14,7 +14,7 @@
     "identifier": "ambulante",
     "advancement": [
       {
-        "_id": "d9lKxbUc",
+        "_id": "yMNwWVDqACMr8lfA",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "d7sGanfr",
+        "_id": "zzidKn47Tl2a2R4g",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "KHjSouDN",
+        "_id": "ALWzEQqbC1ckuSWq",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -80,7 +80,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "6910f3ae702fe71f",
@@ -104,7 +103,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-ambulanteborsa-con-15-ma-ae4cc8"
       }
     ],
-    "wealth": "15 ma"
+    "wealth": "15"
   },
   "effects": [],
   "folder": null,

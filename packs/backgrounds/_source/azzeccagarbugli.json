@@ -14,7 +14,7 @@
     "identifier": "azzeccagarbugli",
     "advancement": [
       {
-        "_id": "drsDHM2h",
+        "_id": "xt6iae0RAJ1vbOM8",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "KqcPHvpP",
+        "_id": "29x6eU1NF1a0r0DR",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "c6vS5cwd",
+        "_id": "AgQWXIWZMEzBRT2f",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -80,7 +80,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "158d1ef11bb31102",
@@ -125,7 +124,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-azzeccagarbugliborsa-con-20-ma-e483ea"
       }
     ],
-    "wealth": "20 ma"
+    "wealth": "20"
   },
   "effects": [],
   "folder": null,

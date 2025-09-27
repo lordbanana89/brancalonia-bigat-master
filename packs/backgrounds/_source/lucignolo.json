@@ -14,7 +14,7 @@
     "identifier": "lucignolo",
     "advancement": [
       {
-        "_id": "hIQ0d2kt",
+        "_id": "vhimRocdaMhWswrN",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "uwtoOYpS",
+        "_id": "UZuXTHJ1k7NDReAv",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "n4glG96g",
+        "_id": "4ICqOpMsFk6EAbxL",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -80,7 +80,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "3407907c22b6653e",
@@ -104,7 +103,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-lucignoloborsa-con-15-ma-4f0b2b"
       }
     ],
-    "wealth": "15 ma"
+    "wealth": "15"
   },
   "effects": [],
   "folder": null,

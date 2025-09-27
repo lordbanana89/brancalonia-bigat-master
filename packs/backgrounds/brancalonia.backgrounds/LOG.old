@@ -1,15 +1,15 @@
-2025/09/27-11:38:39.078623 16ef0f000 Recovering log #6
-2025/09/27-11:38:39.079790 16ef0f000 Delete type=0 #6
-2025/09/27-11:38:39.079868 16ef0f000 Delete type=3 #4
-2025/09/27-11:38:39.082683 16f7a7000 Level-0 table #11: started
-2025/09/27-11:38:39.083236 16f7a7000 Level-0 table #11: 44985 bytes OK
-2025/09/27-11:38:39.083325 16f7a7000 Delete type=0 #9
-2025/09/27-11:38:39.083428 16f7a7000 Manual compaction at level-0 from '!item!ambulante' @ 72057594037927935 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at (end)
-2025/09/27-11:38:39.083446 16f7a7000 Manual compaction at level-1 from '!item!ambulante' @ 72057594037927935 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at '!item!villanopttqgm' @ 44 : 1
-2025/09/27-11:38:39.083451 16f7a7000 Compacting 1@1 + 1@2 files
-2025/09/27-11:38:39.084064 16f7a7000 Generated table #12@1: 22 keys, 44985 bytes
-2025/09/27-11:38:39.084069 16f7a7000 Compacted 1@1 + 1@2 files => 44985 bytes
-2025/09/27-11:38:39.084114 16f7a7000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-11:38:39.084143 16f7a7000 Delete type=2 #7
-2025/09/27-11:38:39.084235 16f7a7000 Delete type=2 #11
-2025/09/27-11:38:39.084292 16f7a7000 Manual compaction at level-1 from '!item!villanopttqgm' @ 44 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:02.450228 16f523000 Recovering log #10
+2025/09/27-12:05:02.451072 16f523000 Delete type=0 #10
+2025/09/27-12:05:02.451104 16f523000 Delete type=3 #8
+2025/09/27-12:05:02.453174 16fdbb000 Level-0 table #16: started
+2025/09/27-12:05:02.453640 16fdbb000 Level-0 table #16: 44985 bytes OK
+2025/09/27-12:05:02.453706 16fdbb000 Delete type=0 #14
+2025/09/27-12:05:02.453773 16fdbb000 Manual compaction at level-0 from '!item!ambulante' @ 72057594037927935 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:02.453787 16fdbb000 Manual compaction at level-1 from '!item!ambulante' @ 72057594037927935 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at '!item!villanopttqgm' @ 66 : 1
+2025/09/27-12:05:02.453791 16fdbb000 Compacting 1@1 + 1@2 files
+2025/09/27-12:05:02.454337 16fdbb000 Generated table #17@1: 22 keys, 44985 bytes
+2025/09/27-12:05:02.454345 16fdbb000 Compacted 1@1 + 1@2 files => 44985 bytes
+2025/09/27-12:05:02.454388 16fdbb000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-12:05:02.454416 16fdbb000 Delete type=2 #16
+2025/09/27-12:05:02.454468 16fdbb000 Delete type=2 #12
+2025/09/27-12:05:02.454536 16fdbb000 Manual compaction at level-1 from '!item!villanopttqgm' @ 66 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at (end)

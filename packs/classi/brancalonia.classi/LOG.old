@@ -1,14 +1,14 @@
-2025/09/27-11:38:39.352552 1713a3000 Recovering log #64
-2025/09/27-11:38:39.353486 1713a3000 Delete type=3 #62
-2025/09/27-11:38:39.353532 1713a3000 Delete type=0 #64
-2025/09/27-11:38:39.355926 171c3b000 Level-0 table #69: started
-2025/09/27-11:38:39.356399 171c3b000 Level-0 table #69: 26114 bytes OK
-2025/09/27-11:38:39.356540 171c3b000 Delete type=0 #67
-2025/09/27-11:38:39.356647 171c3b000 Manual compaction at level-0 from '!item!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!item!indexaeb7cb' @ 0 : 0; will stop at '!item!indexaeb7cb' @ 165 : 1
-2025/09/27-11:38:39.356654 171c3b000 Compacting 1@0 + 1@1 files
-2025/09/27-11:38:39.357147 171c3b000 Generated table #70@0: 26 keys, 26390 bytes
-2025/09/27-11:38:39.357154 171c3b000 Compacted 1@0 + 1@1 files => 26390 bytes
-2025/09/27-11:38:39.357196 171c3b000 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/09/27-11:38:39.357229 171c3b000 Delete type=2 #65
-2025/09/27-11:38:39.357304 171c3b000 Delete type=2 #69
-2025/09/27-11:38:39.357370 171c3b000 Manual compaction at level-0 from '!item!indexaeb7cb' @ 165 : 1 .. '!item!indexaeb7cb' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:02.713615 17398b000 Recovering log #68
+2025/09/27-12:05:02.714380 17398b000 Delete type=0 #68
+2025/09/27-12:05:02.714415 17398b000 Delete type=3 #66
+2025/09/27-12:05:02.716827 174223000 Level-0 table #74: started
+2025/09/27-12:05:02.717272 174223000 Level-0 table #74: 26114 bytes OK
+2025/09/27-12:05:02.717376 174223000 Delete type=0 #72
+2025/09/27-12:05:02.717479 174223000 Manual compaction at level-0 from '!item!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!item!indexaeb7cb' @ 0 : 0; will stop at '!item!indexaeb7cb' @ 178 : 1
+2025/09/27-12:05:02.717486 174223000 Compacting 1@0 + 1@1 files
+2025/09/27-12:05:02.717954 174223000 Generated table #75@0: 26 keys, 26390 bytes
+2025/09/27-12:05:02.717960 174223000 Compacted 1@0 + 1@1 files => 26390 bytes
+2025/09/27-12:05:02.718007 174223000 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/27-12:05:02.718036 174223000 Delete type=2 #74
+2025/09/27-12:05:02.718098 174223000 Delete type=2 #70
+2025/09/27-12:05:02.718175 174223000 Manual compaction at level-0 from '!item!indexaeb7cb' @ 178 : 1 .. '!item!indexaeb7cb' @ 0 : 0; will stop at (end)

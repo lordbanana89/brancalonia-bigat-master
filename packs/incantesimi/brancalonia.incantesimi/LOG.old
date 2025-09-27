@@ -1,15 +1,15 @@
-2025/09/27-11:38:38.457045 17219f000 Recovering log #23
-2025/09/27-11:38:38.458088 17219f000 Delete type=3 #22
-2025/09/27-11:38:38.458159 17219f000 Delete type=0 #23
-2025/09/27-11:38:38.460985 17222b000 Level-0 table #27: started
-2025/09/27-11:38:38.461891 17222b000 Level-0 table #27: 89830 bytes OK
-2025/09/27-11:38:38.462011 17222b000 Delete type=0 #25
-2025/09/27-11:38:38.462097 17222b000 Manual compaction at level-0 from '!item!spell-base-001_benedizione' @ 72057594037927935 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at (end)
-2025/09/27-11:38:38.462183 17222b000 Manual compaction at level-1 from '!item!spell-base-001_benedizione' @ 72057594037927935 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at '!item!spellvolare48ca66' @ 136 : 1
-2025/09/27-11:38:38.462203 17222b000 Compacting 1@1 + 1@2 files
-2025/09/27-11:38:38.463360 17222b000 Generated table #28@1: 94 keys, 89830 bytes
-2025/09/27-11:38:38.463369 17222b000 Compacted 1@1 + 1@2 files => 89830 bytes
-2025/09/27-11:38:38.463448 17222b000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-11:38:38.463508 17222b000 Delete type=2 #5
-2025/09/27-11:38:38.463615 17222b000 Delete type=2 #27
-2025/09/27-11:38:38.463686 17222b000 Manual compaction at level-1 from '!item!spellvolare48ca66' @ 136 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:01.815854 17301f000 Recovering log #26
+2025/09/27-12:05:01.816648 17301f000 Delete type=3 #24
+2025/09/27-12:05:01.816697 17301f000 Delete type=0 #26
+2025/09/27-12:05:01.818954 1738b7000 Level-0 table #32: started
+2025/09/27-12:05:01.819743 1738b7000 Level-0 table #32: 89959 bytes OK
+2025/09/27-12:05:01.819815 1738b7000 Delete type=0 #30
+2025/09/27-12:05:01.819869 1738b7000 Manual compaction at level-0 from '!item!spell-base-001_benedizione' @ 72057594037927935 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:01.819882 1738b7000 Manual compaction at level-1 from '!item!spell-base-001_benedizione' @ 72057594037927935 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at '!item!spellvolare48ca66' @ 230 : 1
+2025/09/27-12:05:01.819886 1738b7000 Compacting 1@1 + 1@2 files
+2025/09/27-12:05:01.820894 1738b7000 Generated table #33@1: 94 keys, 89959 bytes
+2025/09/27-12:05:01.820902 1738b7000 Compacted 1@1 + 1@2 files => 89959 bytes
+2025/09/27-12:05:01.820965 1738b7000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-12:05:01.821000 1738b7000 Delete type=2 #28
+2025/09/27-12:05:01.821072 1738b7000 Delete type=2 #32
+2025/09/27-12:05:01.821126 1738b7000 Manual compaction at level-1 from '!item!spellvolare48ca66' @ 230 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at (end)

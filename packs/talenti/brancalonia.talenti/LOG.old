@@ -1,15 +1,15 @@
-2025/09/27-11:38:38.361195 171cd3000 Recovering log #42
-2025/09/27-11:38:38.362115 171cd3000 Delete type=3 #40
-2025/09/27-11:38:38.362158 171cd3000 Delete type=0 #42
-2025/09/27-11:38:38.363942 17256b000 Level-0 table #49: started
-2025/09/27-11:38:38.364252 17256b000 Level-0 table #49: 2520 bytes OK
-2025/09/27-11:38:38.364393 17256b000 Delete type=0 #47
-2025/09/27-11:38:38.364509 17256b000 Manual compaction at level-0 from '!item!animacontadina84ec09' @ 72057594037927935 : 1 .. '!item!supercazzola0a1867' @ 0 : 0; will stop at (end)
-2025/09/27-11:38:38.364528 17256b000 Manual compaction at level-1 from '!item!animacontadina84ec09' @ 72057594037927935 : 1 .. '!item!supercazzola0a1867' @ 0 : 0; will stop at '!item!supercazzola0a1867' @ 96 : 1
-2025/09/27-11:38:38.364534 17256b000 Compacting 1@1 + 1@2 files
-2025/09/27-11:38:38.364765 17256b000 Generated table #50@1: 8 keys, 2520 bytes
-2025/09/27-11:38:38.364776 17256b000 Compacted 1@1 + 1@2 files => 2520 bytes
-2025/09/27-11:38:38.364833 17256b000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-11:38:38.364873 17256b000 Delete type=2 #49
-2025/09/27-11:38:38.364939 17256b000 Delete type=2 #45
-2025/09/27-11:38:38.364997 17256b000 Manual compaction at level-1 from '!item!supercazzola0a1867' @ 96 : 1 .. '!item!supercazzola0a1867' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:01.718122 171c67000 Recovering log #48
+2025/09/27-12:05:01.718955 171c67000 Delete type=3 #46
+2025/09/27-12:05:01.719002 171c67000 Delete type=0 #48
+2025/09/27-12:05:01.720490 1724ff000 Level-0 table #54: started
+2025/09/27-12:05:01.720645 1724ff000 Level-0 table #54: 2520 bytes OK
+2025/09/27-12:05:01.720712 1724ff000 Delete type=0 #52
+2025/09/27-12:05:01.720765 1724ff000 Manual compaction at level-0 from '!item!animacontadina84ec09' @ 72057594037927935 : 1 .. '!item!supercazzola0a1867' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:01.720785 1724ff000 Manual compaction at level-1 from '!item!animacontadina84ec09' @ 72057594037927935 : 1 .. '!item!supercazzola0a1867' @ 0 : 0; will stop at '!item!supercazzola0a1867' @ 104 : 1
+2025/09/27-12:05:01.720791 1724ff000 Compacting 1@1 + 1@2 files
+2025/09/27-12:05:01.720942 1724ff000 Generated table #55@1: 8 keys, 2520 bytes
+2025/09/27-12:05:01.720948 1724ff000 Compacted 1@1 + 1@2 files => 2520 bytes
+2025/09/27-12:05:01.720999 1724ff000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-12:05:01.721034 1724ff000 Delete type=2 #54
+2025/09/27-12:05:01.721098 1724ff000 Delete type=2 #50
+2025/09/27-12:05:01.721163 1724ff000 Manual compaction at level-1 from '!item!supercazzola0a1867' @ 104 : 1 .. '!item!supercazzola0a1867' @ 0 : 0; will stop at (end)

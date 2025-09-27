@@ -14,7 +14,7 @@
     "identifier": "attaccabrighe",
     "advancement": [
       {
-        "_id": "WIAH0zmC",
+        "_id": "BvTdQbtOdQKyh3CO",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "I1pUQwl5",
+        "_id": "3QVqEHq94QcaDhai",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "2a08c3d324d9cc7f",
@@ -90,7 +89,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-attaccabrigheborsa-con-15-ma-fa11d9"
       }
     ],
-    "wealth": "15 ma"
+    "wealth": "15"
   },
   "effects": [],
   "folder": null,

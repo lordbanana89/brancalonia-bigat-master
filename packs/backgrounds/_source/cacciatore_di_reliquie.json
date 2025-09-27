@@ -14,7 +14,7 @@
     "identifier": "cacciatore_di_reliquie",
     "advancement": [
       {
-        "_id": "yRPL9Jml",
+        "_id": "fyMklTkGpgn9PwKO",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "CZ0Prm7z",
+        "_id": "WvJsplAPBdBjrhcZ",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "pywL9awI",
+        "_id": "J9CGR2Mt18MvE45T",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -80,7 +80,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "a6b42f9a66345877",
@@ -111,7 +110,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-cacciatoredireliquieborsa-con-10-ma-e1f4e0"
       }
     ],
-    "wealth": "10 ma"
+    "wealth": "10"
   },
   "effects": [],
   "folder": null,

@@ -14,7 +14,7 @@
     "identifier": "passatore",
     "advancement": [
       {
-        "_id": "ClO5vU1r",
+        "_id": "QjBpVdIBn9L6bemM",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "jRx7ouOB",
+        "_id": "dLudGtnR6huSOg6W",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "U6FtP1t3",
+        "_id": "c9as8zangczBN9qr",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -80,7 +80,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "b8e6ef3c1fb37846",
@@ -97,7 +96,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-passatoreborsa-con-15-ma-3d0152"
       }
     ],
-    "wealth": "15 ma"
+    "wealth": "15"
   },
   "effects": [],
   "folder": null,

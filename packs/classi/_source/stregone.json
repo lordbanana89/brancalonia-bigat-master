@@ -16,7 +16,7 @@
     "hitDiceUsed": 0,
     "advancement": [
       {
-        "_id": "hpq36spo",
+        "_id": "NBbt2rDR7bHoafIu",
         "type": "HitPoints",
         "configuration": {},
         "value": {},
@@ -319,7 +319,7 @@
         "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "asi46spo",
+        "_id": "O5GDA0ZNoi9zJo8b",
         "type": "AbilityScoreImprovement",
         "configuration": {
           "points": 2,
@@ -349,7 +349,7 @@
         "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "asi86spo",
+        "_id": "GM5ZaimgYDBzsc8i",
         "type": "AbilityScoreImprovement",
         "configuration": {
           "points": 2,
@@ -362,7 +362,7 @@
         "title": "Aumento Caratteristica"
       },
       {
-        "_id": "asi126spo",
+        "_id": "hS22EEXgmTHrzBft",
         "type": "AbilityScoreImprovement",
         "configuration": {
           "points": 2,
@@ -392,7 +392,7 @@
         "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "asi166spo",
+        "_id": "NvrBWpwAnFzEWIXM",
         "type": "AbilityScoreImprovement",
         "configuration": {
           "points": 2,
@@ -422,7 +422,7 @@
         "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "asi196spo",
+        "_id": "k4zgiHWHe55Jk8W2",
         "type": "AbilityScoreImprovement",
         "configuration": {
           "points": 2,

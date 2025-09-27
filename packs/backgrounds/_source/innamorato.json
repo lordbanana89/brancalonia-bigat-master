@@ -14,7 +14,7 @@
     "identifier": "innamorato",
     "advancement": [
       {
-        "_id": "AWuBpxWF",
+        "_id": "YAULmEFl9HgS3UMa",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "3GrCsVFZ",
+        "_id": "AkidvY4ovnZVCsgw",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "0pOLW0yf",
+        "_id": "HIc7hFGfhqque3aX",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -80,7 +80,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "20b24e4d2de2db99",
@@ -125,7 +124,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-innamoratoborsa-con-15-ma-fc19ad"
       }
     ],
-    "wealth": "15 ma"
+    "wealth": "15"
   },
   "effects": [],
   "folder": null,

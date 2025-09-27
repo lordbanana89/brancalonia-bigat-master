@@ -14,7 +14,7 @@
     "identifier": "brado",
     "advancement": [
       {
-        "_id": "OKwvW7s3",
+        "_id": "mACTblgcj3kUzFY6",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "zkr1IfRm",
+        "_id": "pjw9VKpzvMzsRJyf",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "e0gyeo9t",
+        "_id": "ejmjDmNIoPTYqwAx",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -80,7 +80,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "e5e49a2509e28182",
@@ -118,7 +117,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-bradoborsa-con-10-ma-82468b"
       }
     ],
-    "wealth": "10 ma"
+    "wealth": "10"
   },
   "effects": [],
   "folder": null,

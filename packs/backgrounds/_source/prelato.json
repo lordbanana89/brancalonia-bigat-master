@@ -14,7 +14,7 @@
     "identifier": "prelato",
     "advancement": [
       {
-        "_id": "ORljeLbz",
+        "_id": "tTRP1tqKlqHOr2iM",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "F6ttR0Wm",
+        "_id": "A6yzsh3ZzwPVzq5u",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -60,7 +60,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "27318962b6c97c7a",
@@ -91,7 +90,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-prelatoborsa-con-25-ma-1ef80d"
       }
     ],
-    "wealth": "25 ma"
+    "wealth": "25"
   },
   "effects": [],
   "folder": null,

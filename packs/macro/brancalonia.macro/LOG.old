@@ -1,14 +1,14 @@
-2025/09/27-11:38:38.857406 16fe9b000 Recovering log #12
-2025/09/27-11:38:38.859213 16fe9b000 Delete type=0 #12
-2025/09/27-11:38:38.859250 16fe9b000 Delete type=3 #10
-2025/09/27-11:38:38.861482 16ff27000 Level-0 table #18: started
-2025/09/27-11:38:38.861767 16ff27000 Level-0 table #18: 12470 bytes OK
-2025/09/27-11:38:38.861840 16ff27000 Delete type=0 #16
-2025/09/27-11:38:38.861912 16ff27000 Manual compaction at level-0 from '!item!banda001' @ 72057594037927935 : 1 .. '!item!scadente001' @ 0 : 0; will stop at '!item!scadente001' @ 35 : 1
-2025/09/27-11:38:38.861918 16ff27000 Compacting 1@0 + 1@1 files
-2025/09/27-11:38:38.862240 16ff27000 Generated table #19@0: 12 keys, 12582 bytes
-2025/09/27-11:38:38.862248 16ff27000 Compacted 1@0 + 1@1 files => 12582 bytes
-2025/09/27-11:38:38.862311 16ff27000 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/09/27-11:38:38.862363 16ff27000 Delete type=2 #14
-2025/09/27-11:38:38.862448 16ff27000 Delete type=2 #18
-2025/09/27-11:38:38.862536 16ff27000 Manual compaction at level-0 from '!item!scadente001' @ 35 : 1 .. '!item!scadente001' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:02.208057 171af7000 Recovering log #17
+2025/09/27-12:05:02.208922 171af7000 Delete type=3 #15
+2025/09/27-12:05:02.208967 171af7000 Delete type=0 #17
+2025/09/27-12:05:02.210910 17238f000 Level-0 table #23: started
+2025/09/27-12:05:02.211193 17238f000 Level-0 table #23: 12470 bytes OK
+2025/09/27-12:05:02.211254 17238f000 Delete type=0 #21
+2025/09/27-12:05:02.211314 17238f000 Manual compaction at level-0 from '!item!banda001' @ 72057594037927935 : 1 .. '!item!scadente001' @ 0 : 0; will stop at '!item!scadente001' @ 41 : 1
+2025/09/27-12:05:02.211324 17238f000 Compacting 1@0 + 1@1 files
+2025/09/27-12:05:02.211645 17238f000 Generated table #24@0: 12 keys, 12582 bytes
+2025/09/27-12:05:02.211650 17238f000 Compacted 1@0 + 1@1 files => 12582 bytes
+2025/09/27-12:05:02.211690 17238f000 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/27-12:05:02.211717 17238f000 Delete type=2 #23
+2025/09/27-12:05:02.211769 17238f000 Delete type=2 #19
+2025/09/27-12:05:02.211835 17238f000 Manual compaction at level-0 from '!item!scadente001' @ 41 : 1 .. '!item!scadente001' @ 0 : 0; will stop at (end)

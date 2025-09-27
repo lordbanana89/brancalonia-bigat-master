@@ -5,7 +5,7 @@
 
 // Registrazione modulo
 Hooks.once("init", () => {
-  console.log("Brancalonia | Inizializzazione modulo..."]);
+  console.log("Brancalonia | Inizializzazione modulo...");
 
   // Registrazione namespace globale
   game.brancalonia = {
@@ -52,17 +52,17 @@ Hooks.once("init", () => {
     "modules/brancalonia-bigat/templates/compagnia-sheet.hbs",
     "modules/brancalonia-bigat/templates/haven-manager.hbs",
     "modules/brancalonia-bigat/templates/dirty-job-card.hbs"
-  ]]);
+  ]);
 
   // Registra settings
-  registerBrancaloniaSettings(]);
+  registerBrancaloniaSettings();
 
   // In Foundry v13, i flag non hanno bisogno di registrazione esplicita
   // Sono automaticamente disponibili quando il modulo è attivo
-  console.log("Brancalonia | Sistema flags pronto (Foundry v13)"]);
+  console.log("Brancalonia | Sistema flags pronto (Foundry v13)");
 
-  console.log("Brancalonia | Inizializzazione completata"]);
-}]);
+  console.log("Brancalonia | Inizializzazione completata");
+});
 
 // Helper functions per Brancalonia invece di estendere la classe
 function initializeBrancaloniaData(actor) {
@@ -77,7 +77,7 @@ function initializeBrancaloniaData(actor) {
 // Metodi helper per aggiungere funzionalità Brancalonia agli attori
 async function addInfamia(actor, value) {
   const currentInfamia = actor.getFlag("brancalonia-bigat", "infamia") || 0;
-  const newInfamia = Math.max(0, Math.min(100, currentInfamia + value)]);
+  const newInfamia = Math.max(0, Math.min(100, currentInfamia + value));
 
   await actor.setFlag("brancalonia-bigat", "infamia", newInfamia]);
 
@@ -105,7 +105,7 @@ async function applyMenagramo(actor, duration = "1d4") {
   await actor.setFlag("brancalonia-bigat", "menagramoDuration", duration]);
 
   // Applica active effect
-  const roll = await new Roll(duration).evaluate(]);
+  const roll = await new Roll(duration).evaluate();
   const effect = {
     name: "Menagramo",
     img: "modules/brancalonia-bigat/assets/icons/menagramo.svg",
@@ -142,7 +142,7 @@ function registerBrancaloniaSettings() {
     config: true,
     type: Boolean,
     default: true
-  }]);
+  });
 
   // Setting per risse non letali
   game.settings.register("brancalonia-bigat", "nonLethalBrawls", {
@@ -152,7 +152,7 @@ function registerBrancaloniaSettings() {
     config: true,
     type: Boolean,
     default: true
-  }]);
+  });
 
   // Setting per oggetti scadenti
   game.settings.register("brancalonia-bigat", "shoddyItems", {
@@ -162,7 +162,7 @@ function registerBrancaloniaSettings() {
     config: true,
     type: Boolean,
     default: true
-  }]);
+  });
 
   // Setting per sistema compagnia
   game.settings.register("brancalonia-bigat", "useCompagnia", {
@@ -172,7 +172,7 @@ function registerBrancaloniaSettings() {
     config: true,
     type: Boolean,
     default: true
-  }]);
+  });
 
   // Setting per lavori sporchi automatici
   game.settings.register("brancalonia-bigat", "autoGenerateJobs", {
@@ -182,7 +182,7 @@ function registerBrancaloniaSettings() {
     config: true,
     type: Boolean,
     default: false
-  }]);
+  });
 
   // Setting per sistema Haven
   game.settings.register("brancalonia-bigat", "havenSystem", {
@@ -192,7 +192,7 @@ function registerBrancaloniaSettings() {
     config: true,
     type: Boolean,
     default: true
-  }]);
+  });
 
   // Setting per sistema Imbosco (Rischi del Mestiere)
   game.settings.register("brancalonia-bigat", "settimaneImbosco", {
@@ -202,7 +202,7 @@ function registerBrancaloniaSettings() {
     config: false,
     type: Number,
     default: 0
-  }]);
+  });
 }
 
 // Hook per ready

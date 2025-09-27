@@ -1,15 +1,15 @@
-2025/09/27-12:05:02.539471 171c07000 Recovering log #48
-2025/09/27-12:05:02.540278 171c07000 Delete type=3 #46
-2025/09/27-12:05:02.540329 171c07000 Delete type=0 #48
-2025/09/27-12:05:02.542129 17249f000 Level-0 table #54: started
-2025/09/27-12:05:02.542354 17249f000 Level-0 table #54: 5425 bytes OK
-2025/09/27-12:05:02.542422 17249f000 Delete type=0 #52
-2025/09/27-12:05:02.542474 17249f000 Manual compaction at level-0 from '!item!classbarbarocamminoberserker57ce27' @ 72057594037927935 : 1 .. '!item!classmagoscuolatrasmutazioneba959f' @ 0 : 0; will stop at (end)
-2025/09/27-12:05:02.542492 17249f000 Manual compaction at level-1 from '!item!classbarbarocamminoberserker57ce27' @ 72057594037927935 : 1 .. '!item!classmagoscuolatrasmutazioneba959f' @ 0 : 0; will stop at '!item!classmagoscuolatrasmutazioneba959f' @ 273 : 1
-2025/09/27-12:05:02.542499 17249f000 Compacting 1@1 + 1@2 files
-2025/09/27-12:05:02.542695 17249f000 Generated table #55@1: 21 keys, 5425 bytes
-2025/09/27-12:05:02.542701 17249f000 Compacted 1@1 + 1@2 files => 5425 bytes
-2025/09/27-12:05:02.542747 17249f000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-12:05:02.542773 17249f000 Delete type=2 #54
-2025/09/27-12:05:02.542815 17249f000 Delete type=2 #50
-2025/09/27-12:05:02.542870 17249f000 Manual compaction at level-1 from '!item!classmagoscuolatrasmutazioneba959f' @ 273 : 1 .. '!item!classmagoscuolatrasmutazioneba959f' @ 0 : 0; will stop at (end)
+2025/09/27-12:18:08.577313 16ef93000 Recovering log #53
+2025/09/27-12:18:08.578576 16ef93000 Delete type=0 #53
+2025/09/27-12:18:08.578621 16ef93000 Delete type=3 #51
+2025/09/27-12:18:08.580229 16f82b000 Level-0 table #59: started
+2025/09/27-12:18:08.580470 16f82b000 Level-0 table #59: 5417 bytes OK
+2025/09/27-12:18:08.580553 16f82b000 Delete type=0 #57
+2025/09/27-12:18:08.580627 16f82b000 Manual compaction at level-0 from '!item!classbarbarocamminoberserker57ce27' @ 72057594037927935 : 1 .. '!item!classmagoscuolatrasmutazioneba959f' @ 0 : 0; will stop at (end)
+2025/09/27-12:18:08.580641 16f82b000 Manual compaction at level-1 from '!item!classbarbarocamminoberserker57ce27' @ 72057594037927935 : 1 .. '!item!classmagoscuolatrasmutazioneba959f' @ 0 : 0; will stop at '!item!classmagoscuolatrasmutazioneba959f' @ 294 : 1
+2025/09/27-12:18:08.580646 16f82b000 Compacting 1@1 + 1@2 files
+2025/09/27-12:18:08.580853 16f82b000 Generated table #60@1: 21 keys, 5417 bytes
+2025/09/27-12:18:08.580858 16f82b000 Compacted 1@1 + 1@2 files => 5417 bytes
+2025/09/27-12:18:08.580908 16f82b000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-12:18:08.580946 16f82b000 Delete type=2 #59
+2025/09/27-12:18:08.581007 16f82b000 Delete type=2 #55
+2025/09/27-12:18:08.581069 16f82b000 Manual compaction at level-1 from '!item!classmagoscuolatrasmutazioneba959f' @ 294 : 1 .. '!item!classmagoscuolatrasmutazioneba959f' @ 0 : 0; will stop at (end)

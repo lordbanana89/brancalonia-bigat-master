@@ -14,7 +14,7 @@
     "identifier": "duro",
     "advancement": [
       {
-        "_id": "KK8QC8JJ",
+        "_id": "voX518rNnqdTWuuo",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "5zheE9ut",
+        "_id": "GeecJZaUEhWfn9uk",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "zpC55V8g",
+        "_id": "aFasBuShDUCp4Un3",
         "type": "Improvement",
         "configuration": {
           "languages": {
@@ -80,7 +80,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "cc3502bfd0b0ecbf",
@@ -111,7 +110,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-duroborsa-con-15-ma-591b6a"
       }
     ],
-    "wealth": "15 ma"
+    "wealth": "15"
   },
   "effects": [],
   "folder": null,

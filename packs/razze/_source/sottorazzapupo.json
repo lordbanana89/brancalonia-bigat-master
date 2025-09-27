@@ -42,7 +42,7 @@
         "icon": "icons/svg/upgrade.svg"
       },
       {
-        "_id": "size_advancement",
+        "_id": "OXGFHs9UO4Pp3n3f",
         "type": "size",
         "configuration": {
           "sizes": [
@@ -56,7 +56,7 @@
         "classRestriction": "primary"
       },
       {
-        "_id": "construct_nature",
+        "_id": "URdwiD2sQ9lYAQgF",
         "type": "trait",
         "configuration": {
           "grants": [

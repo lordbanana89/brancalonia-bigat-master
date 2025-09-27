@@ -14,7 +14,7 @@
     "identifier": "staffetta",
     "advancement": [
       {
-        "_id": "5FTC3Wud",
+        "_id": "q4k6ekPAa0wKGeYD",
         "type": "Improvement",
         "configuration": {
           "skills": {
@@ -37,7 +37,7 @@
         "appliedEffects": []
       },
       {
-        "_id": "uivqc0r5",
+        "_id": "mI0H3LPuYg1RevHx",
         "type": "Improvement",
         "configuration": {
           "tools": {
@@ -59,7 +59,6 @@
         "appliedEffects": []
       }
     ],
-    "traits": {},
     "startingEquipment": [
       {
         "_id": "4a3c5e46cf6e8d80",
@@ -97,7 +96,7 @@
         "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-staffettaborsa-con-10-ma-546549"
       }
     ],
-    "wealth": "10 ma"
+    "wealth": "10"
   },
   "effects": [],
   "folder": null,
