@@ -112,17 +112,37 @@ Hooks.once("canvasInit", () => {
 
 // Fix per getSceneControlButtons (Power Select Toolkit)
 Hooks.on("getSceneControlButtons", (controls) => {
-  // Assicura che controls sia un array
+  // Se controls non è un array, ritorna array vuoto per sicurezza
   if (!Array.isArray(controls)) {
-    console.warn("Converting controls to array");
+    console.warn("getSceneControlButtons: controls is not an array, returning empty array");
     return [];
   }
 
-  // Assicura che ogni control.tools sia un array
-  for (const control of controls) {
-    if (control && !Array.isArray(control.tools)) {
-      control.tools = control.tools ? Object.values(control.tools) : [];
+  // Assicura che ogni control.tools sia un array iterabile
+  for (let i = 0; i < controls.length; i++) {
+    const control = controls[i];
+    if (control && control.tools) {
+      // Se tools non è un array, convertilo
+      if (!Array.isArray(control.tools)) {
+        control.tools = Object.values(control.tools || {});
+      }
+      // Assicura che abbia Symbol.iterator
+      if (!control.tools[Symbol.iterator]) {
+        control.tools = Array.from(control.tools);
+      }
+    } else if (control) {
+      // Se tools non esiste, crea array vuoto
+      control.tools = [];
     }
+  }
+
+  // Aggiungi Symbol.iterator al controls stesso se manca
+  if (!controls[Symbol.iterator]) {
+    Object.defineProperty(controls, Symbol.iterator, {
+      value: Array.prototype[Symbol.iterator],
+      writable: true,
+      configurable: true
+    });
   }
 
   return controls;
@@ -151,7 +171,44 @@ if (typeof game !== 'undefined') {
 }
 
 // ============================================
-// SEZIONE 6: THEME APPLICATION
+// SEZIONE 6: THIRD-PARTY MODULE FIXES
+// ============================================
+
+// Fix per Epic Rolls renderChatLog error
+Hooks.on("renderChatLog", (app, html, data) => {
+  // Assicura che html esista e abbia il metodo find
+  if (!html) return;
+
+  // Se è jQuery, assicura che .chat-messages esista
+  if (html.jquery && !html.find('.chat-messages').length) {
+    const messages = $('<div class="chat-messages"></div>');
+    html.append(messages);
+  }
+  // Se è HTMLElement, assicura che .chat-messages esista
+  else if (html instanceof HTMLElement && !html.querySelector('.chat-messages')) {
+    const messages = document.createElement('div');
+    messages.className = 'chat-messages';
+    html.appendChild(messages);
+  }
+});
+
+// Fix per Tidbits showLoadingScreen
+Hooks.on("canvasInit", () => {
+  if (game.modules.get("tidbits")?.active) {
+    // Crea setting mancante se non esiste
+    try {
+      game.settings.get("tidbits", "showLoadingScreen");
+    } catch (e) {
+      // Se non esiste, usa default
+      if (window.Tidbits?.config) {
+        window.Tidbits.config.showLoadingScreen = false;
+      }
+    }
+  }
+});
+
+// ============================================
+// SEZIONE 7: THEME APPLICATION
 // ============================================
 
 Hooks.once("ready", () => {
