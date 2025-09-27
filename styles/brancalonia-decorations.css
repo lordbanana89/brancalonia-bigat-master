@@ -1,0 +1,260 @@
+/* ================================================ */
+/* BRANCALONIA DECORAZIONI RINASCIMENTALI          */
+/* Ornamenti SVG inline con currentColor           */
+/* ================================================ */
+
+@layer module {
+  /* ================================================
+     CORNER ORNAMENTS - Per finestre principali
+     ================================================ */
+
+  .theme-brancalonia .window-app::before,
+  .theme-brancalonia .window-app::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.6;
+  }
+
+  /* Top-left corner ornament */
+  .theme-brancalonia .window-app::before {
+    top: -2px;
+    left: -2px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M4 4 L44 4 L44 8 L8 8 L8 44 L4 44 Z' fill='%23C9A54A' stroke='%238C2B27' stroke-width='1.25'/%3E%3Ccircle cx='24' cy='24' r='2' fill='%23C9A54A'/%3E%3Cpath d='M12 4 Q4 12 4 20' fill='none' stroke='%23C9A54A' stroke-width='1'/%3E%3C/svg%3E");
+  }
+
+  /* Top-right corner ornament */
+  .theme-brancalonia .window-app::after {
+    top: -2px;
+    right: -2px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M44 4 L4 4 L4 8 L40 8 L40 44 L44 44 Z' fill='%23C9A54A' stroke='%238C2B27' stroke-width='1.25'/%3E%3Ccircle cx='24' cy='24' r='2' fill='%23C9A54A'/%3E%3Cpath d='M36 4 Q44 12 44 20' fill='none' stroke='%23C9A54A' stroke-width='1'/%3E%3C/svg%3E");
+  }
+
+  /* ================================================
+     HEADER FREGI - Decorazioni per titoli
+     ================================================ */
+
+  .theme-brancalonia .sheet-header h1::before,
+  .theme-brancalonia .window-header .window-title::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2 L14 8 L20 8 L15 12 L17 18 L12 14 L7 18 L9 12 L4 8 L10 8 Z' fill='%23C9A54A' stroke='%238C2B27' stroke-width='0.5' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+
+  /* ================================================
+     RIBBON BANNER - Per sezioni speciali
+     ================================================ */
+
+  .theme-brancalonia .bcl-ribbon {
+    position: relative;
+  }
+
+  .theme-brancalonia .bcl-ribbon::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 72px;
+    height: 28px;
+    background: var(--bcl-ribbon);
+    clip-path: polygon(0 0, 100% 0, 88% 50%, 100% 100%, 0 100%);
+    box-shadow: 0 2px 4px var(--bcl-shadow-ink);
+    z-index: 1;
+  }
+
+  .theme-brancalonia .bcl-ribbon::after {
+    content: attr(data-ribbon);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 72px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    color: var(--bcl-paper);
+    font-family: var(--bcl-font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    z-index: 2;
+  }
+
+  /* ================================================
+     WAX SEAL - Sigilli di ceralacca
+     ================================================ */
+
+  .theme-brancalonia .bcl-seal {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: var(--bcl-seal-wax);
+    border-radius: 50%;
+    box-shadow:
+      inset 0 2px 4px rgba(255,255,255,0.2),
+      inset 0 -2px 4px rgba(0,0,0,0.3),
+      0 2px 4px var(--bcl-shadow-ink);
+  }
+
+  .theme-brancalonia .bcl-seal::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 4 L18 10 L24 10 L19 14 L21 20 L16 16 L11 20 L13 14 L8 10 L14 10 Z' fill='%23F3E6CC' opacity='0.8'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* ================================================
+     DIVIDER ORNAMENTALE
+     ================================================ */
+
+  .theme-brancalonia .bcl-divider {
+    position: relative;
+    height: 24px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .theme-brancalonia .bcl-divider::before,
+  .theme-brancalonia .bcl-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--bcl-divider);
+  }
+
+  .theme-brancalonia .bcl-divider::before {
+    margin-right: 1rem;
+  }
+
+  .theme-brancalonia .bcl-divider::after {
+    margin-left: 1rem;
+  }
+
+  .theme-brancalonia .bcl-divider svg {
+    width: 48px;
+    height: 24px;
+    fill: var(--bcl-gold);
+    stroke: var(--bcl-border);
+    stroke-width: 0.5;
+  }
+
+  /* Default divider ornament */
+  .theme-brancalonia .bcl-divider:not(:has(svg))::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 24'%3E%3Cpath d='M24 4 L28 12 L24 20 L20 12 Z' fill='%23C9A54A' stroke='%23B99D6B' stroke-width='0.5'/%3E%3Cpath d='M12 12 L8 12 M36 12 L40 12' stroke='%23B99D6B' stroke-width='1'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* ================================================
+     CAPOLETTERA - Drop caps per flavour text
+     ================================================ */
+
+  .theme-brancalonia .bcl-flavour-text:first-letter,
+  .theme-brancalonia .journal-entry-content p:first-child:first-letter {
+    font-family: var(--bcl-font-display);
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1;
+    float: left;
+    margin: 0 0.1em -0.1em 0;
+    color: var(--bcl-gold);
+    text-shadow:
+      1px 1px 0 var(--bcl-accent),
+      2px 2px 2px var(--bcl-shadow-ink);
+  }
+
+  /* ================================================
+     PERGAMENA TEXTURE - Overlay sottile
+     ================================================ */
+
+  .theme-brancalonia .bcl-parchment {
+    position: relative;
+  }
+
+  .theme-brancalonia .bcl-parchment::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        var(--bcl-paper-overlay) 10px,
+        var(--bcl-paper-overlay) 20px
+      );
+    pointer-events: none;
+    opacity: 0.3;
+    mix-blend-mode: multiply;
+  }
+
+  /* ================================================
+     ROSETTE DECORATIVE
+     ================================================ */
+
+  .theme-brancalonia .bcl-rosette {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg transform='translate(16,16)'%3E%3Cg%3E%3Ccircle r='4' fill='%23C9A54A'/%3E%3Cg transform='rotate(0)'%3E%3Cellipse rx='12' ry='4' fill='%23C9A54A' opacity='0.8'/%3E%3C/g%3E%3Cg transform='rotate(45)'%3E%3Cellipse rx='12' ry='4' fill='%23C9A54A' opacity='0.8'/%3E%3C/g%3E%3Cg transform='rotate(90)'%3E%3Cellipse rx='12' ry='4' fill='%23C9A54A' opacity='0.8'/%3E%3C/g%3E%3Cg transform='rotate(135)'%3E%3Cellipse rx='12' ry='4' fill='%23C9A54A' opacity='0.8'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* ================================================
+     ANIMATED GOLD SHIMMER - Per elementi speciali
+     ================================================ */
+
+  @keyframes goldShimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  .theme-brancalonia .bcl-gold-shimmer {
+    background: linear-gradient(
+      90deg,
+      var(--bcl-gold) 0%,
+      var(--bcl-paper-weak) 25%,
+      var(--bcl-gold) 50%,
+      var(--bcl-paper-weak) 75%,
+      var(--bcl-gold) 100%
+    );
+    background-size: 200% 100%;
+    animation: goldShimmer 3s ease-in-out infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ================================================
+     BUSSOLA - Per navigazione mappe
+     ================================================ */
+
+  .theme-brancalonia .bcl-compass {
+    width: 64px;
+    height: 64px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='none' stroke='%23C9A54A' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23B99D6B' stroke-width='1'/%3E%3Cpath d='M32 8 L36 28 L32 56 L28 28 Z' fill='%238C2B27'/%3E%3Cpath d='M32 8 L36 28 L32 32 Z' fill='%23C9A54A'/%3E%3Ctext x='32' y='12' text-anchor='middle' fill='%232B1F14' font-size='8' font-weight='bold'%3EN%3C/text%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

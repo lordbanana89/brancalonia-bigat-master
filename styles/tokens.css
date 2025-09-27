@@ -1,0 +1,180 @@
+/* ================================================ */
+/* BRANCALONIA DESIGN TOKENS                       */
+/* Conforme a prompt_master.md                     */
+/* ================================================ */
+
+@layer tokens {
+  :root,
+  .theme-brancalonia {
+    /* =============================================
+       Color Tokens - Estratti dal tema esistente
+       ============================================= */
+
+    /* Base Colors */
+    --bcl-bg: #15110C;                          /* Sfondo scuro principale */
+    --bcl-surface: #F3E6CC;                     /* Superficie principale (FAF6ED originale) */
+    --bcl-paper: #E7D6AE;                       /* Carta/pergamena (F4E8D0 originale) */
+    --bcl-paper-weak: #EFE0BD;                  /* Carta chiara */
+    --bcl-paper-strong: #D9C38F;                /* Carta scura */
+
+    /* Ink/Text Colors */
+    --bcl-ink: #2B1F14;                         /* Inchiostro principale (1C1814 originale) */
+    --bcl-ink-weak: #4A3826;                    /* Inchiostro debole (6B4423 originale) */
+    --bcl-ink-strong: #1C140D;                  /* Inchiostro forte */
+    --bcl-muted: #6C5A43;                       /* Testo mutato (8B7E6A originale) */
+
+    /* Accent Colors */
+    --bcl-gold: #C9A54A;                        /* Oro (D4AF37 originale) */
+    --bcl-emerald: #2E7D64;                     /* Verde smeraldo (0F7938 originale) */
+    --bcl-accent: #8C2B27;                      /* Accento principale (C80815 originale) */
+    --bcl-accent-strong: #5E1715;               /* Accento forte (722F37 originale) */
+
+    /* State Colors */
+    --bcl-success: #2F8F5B;                     /* Successo (0F7938 originale) */
+    --bcl-warning: #C27C1A;                     /* Warning (CC9A2E originale) */
+    --bcl-danger: #952C2C;                      /* Pericolo (C80815 originale) */
+
+    /* UI Colors */
+    --bcl-focus: #7A5E1F;                       /* Focus (derivato da gold) */
+    --bcl-border: #B99D6B;                      /* Bordi (8B7E6A originale) */
+    --bcl-divider: #D6C193;                     /* Divisori */
+
+    /* Brancalonia Brand Extras */
+    --bcl-seal-wax: #8E1D22;                    /* Ceralacca */
+    --bcl-ribbon: #7E1F1B;                      /* Nastro/bandierina */
+    --bcl-shadow-ink: rgba(28, 20, 13, .35);    /* Ombra inchiostro */
+    --bcl-paper-overlay: rgba(43, 31, 20, .06); /* Overlay carta */
+    --bcl-nav: #223F4A;                         /* Blu-verde carta nautica */
+
+    /* =============================================
+       Typography Tokens
+       ============================================= */
+
+    --bcl-font-display: "Cinzel", serif;
+    --bcl-font-serif: "Alegreya", Georgia, serif;
+    --bcl-font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    --bcl-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    --bcl-font-size-base: 16px;
+    --bcl-line: 1.45;
+
+    /* =============================================
+       Spacing & Layout Tokens
+       ============================================= */
+
+    --bcl-radius-sm: 4px;
+    --bcl-radius-md: 8px;
+    --bcl-radius-lg: 14px;
+
+    --bcl-shadow-1: 0 1px 0 rgba(0,0,0,.04), 0 1px 8px rgba(0,0,0,.06);
+    --bcl-shadow-2: 0 2px 0 rgba(0,0,0,.06), 0 6px 18px rgba(0,0,0,.12);
+
+    /* =============================================
+       Alias per Theme Engine Carolingiano
+       Mantiene retrocompatibilità con --branca-*
+       ============================================= */
+
+    --branca-bg: var(--bcl-bg);
+    --branca-surface: var(--bcl-surface);
+    --branca-paper: var(--bcl-paper);
+    --branca-ink: var(--bcl-ink);
+    --branca-muted: var(--bcl-muted);
+    --branca-gold: var(--bcl-gold);
+    --branca-emerald: var(--bcl-emerald);
+    --branca-accent: var(--bcl-accent);
+    --branca-accent-strong: var(--bcl-accent-strong);
+    --branca-success: var(--bcl-success);
+    --branca-warning: var(--bcl-warning);
+    --branca-danger: var(--bcl-danger);
+    --branca-focus: var(--bcl-focus);
+    --branca-border: var(--bcl-border);
+    --branca-divider: var(--bcl-divider);
+
+    /* Alias legacy per compatibilità */
+    --branca-burnt-sienna: #8B4513;
+    --branca-raw-sienna: #C68E3F;
+    --branca-venetian-red: var(--bcl-accent);
+    --branca-ochre-yellow: var(--bcl-warning);
+    --branca-burnt-umber: var(--bcl-ink-weak);
+    --branca-malachite: var(--bcl-emerald);
+    --branca-ultramarine: #4166F5;
+    --branca-lead-white: var(--bcl-surface);
+    --branca-bone-black: var(--bcl-ink);
+    --branca-gold-leaf: var(--bcl-gold);
+    --branca-cinabrese: #E8B19D;
+    --branca-wine-red: var(--bcl-accent-strong);
+    --branca-terracotta: #CB6843;
+    --branca-warm-grey: var(--bcl-muted);
+    --branca-parchment: var(--bcl-paper);
+    --branca-sepia: #704214;
+
+    /* Alias UI legacy */
+    --branca-background: var(--bcl-paper);
+    --branca-text-primary: var(--bcl-ink);
+    --branca-text-secondary: var(--bcl-ink-weak);
+    --branca-error: var(--bcl-danger);
+
+    /* Alias font legacy */
+    --branca-font-display: var(--bcl-font-display);
+    --branca-font-body: var(--bcl-font-serif);
+    --branca-font-special: 'Uncial Antiqua', cursive;
+  }
+
+  /* =============================================
+     Dark Mode Tokens
+     ============================================= */
+
+  .theme-brancalonia[data-theme="dark"],
+  :root.theme-brancalonia.dark {
+    --bcl-bg: #0F0C08;
+    --bcl-surface: #2B2218;
+    --bcl-paper: #3A2E20;
+    --bcl-paper-weak: #453626;
+    --bcl-paper-strong: #302518;
+
+    --bcl-ink: #F3E6CC;
+    --bcl-ink-weak: #D9C38F;
+    --bcl-ink-strong: #FAF6ED;
+    --bcl-muted: #C9B691;
+
+    --bcl-border: #7A6546;
+    --bcl-divider: #5E4C35;
+
+    /* Accenti invariati per brand consistency */
+    --bcl-gold: #C9A54A;
+    --bcl-emerald: #2E7D64;
+    --bcl-accent: #8C2B27;
+    --bcl-accent-strong: #5E1715;
+    --bcl-success: #2F8F5B;
+    --bcl-warning: #C27C1A;
+    --bcl-danger: #952C2C;
+  }
+}
+
+/* =============================================
+   Tabella Token per Documentazione
+   =============================================
+
+   Token               | Valore Light    | Valore Dark     | Uso
+   ------------------- | --------------- | --------------- | ------------------------
+   --bcl-bg            | #15110C         | #0F0C08         | Background principale
+   --bcl-surface       | #F3E6CC         | #2B2218         | Superficie finestre
+   --bcl-paper         | #E7D6AE         | #3A2E20         | Background contenuti
+   --bcl-paper-weak    | #EFE0BD         | #453626         | Background secondario
+   --bcl-paper-strong  | #D9C38F         | #302518         | Background enfasi
+   --bcl-ink           | #2B1F14         | #F3E6CC         | Testo principale
+   --bcl-ink-weak      | #4A3826         | #D9C38F         | Testo secondario
+   --bcl-ink-strong    | #1C140D         | #FAF6ED         | Testo enfasi
+   --bcl-muted         | #6C5A43         | #C9B691         | Testo disabilitato
+   --bcl-gold          | #C9A54A         | #C9A54A         | Oro/accent primario
+   --bcl-emerald       | #2E7D64         | #2E7D64         | Verde smeraldo
+   --bcl-accent        | #8C2B27         | #8C2B27         | Rosso ceralacca
+   --bcl-accent-strong | #5E1715         | #5E1715         | Rosso vino
+   --bcl-success       | #2F8F5B         | #2F8F5B         | Stato successo
+   --bcl-warning       | #C27C1A         | #C27C1A         | Stato warning
+   --bcl-danger        | #952C2C         | #952C2C         | Stato errore
+   --bcl-focus         | #7A5E1F         | #7A5E1F         | Focus outline
+   --bcl-border        | #B99D6B         | #7A6546         | Bordi elementi
+   --bcl-divider       | #D6C193         | #5E4C35         | Linee divisorie
+
+   ============================================= */

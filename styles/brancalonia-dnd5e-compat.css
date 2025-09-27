@@ -1,0 +1,427 @@
+/* ================================================ */
+/* BRANCALONIA D&D 5e v5.1.9 COMPATIBILITY         */
+/* Specifico per sistema dnd5e senza rompere core  */
+/* ================================================ */
+
+@layer module {
+  /* ================================================
+     ACTOR SHEET 5e - Struttura specifica
+     ================================================ */
+
+  /* Header con ritratto e info base */
+  .theme-brancalonia .dnd5e.sheet.actor .sheet-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bcl-paper-weak);
+    border-bottom: 2px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .profile {
+    border: 2px solid var(--bcl-gold);
+    border-radius: var(--bcl-radius-md);
+    box-shadow: var(--bcl-shadow-1);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .summary {
+    flex: 1;
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .charname input {
+    font-family: var(--bcl-font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bcl-ink-strong);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .charname input:hover,
+  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .charname input:focus {
+    border-bottom-color: var(--bcl-gold);
+  }
+
+  /* Abilities scores */
+  .theme-brancalonia .dnd5e.sheet.actor .ability-scores {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .ability {
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid var(--bcl-divider);
+    border-radius: var(--bcl-radius-sm);
+    background: var(--bcl-paper-weak);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .ability:hover {
+    background: var(--bcl-gold);
+    color: var(--bcl-ink-strong);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .ability .ability-name {
+    font-family: var(--bcl-font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .ability .ability-score {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--bcl-ink-strong);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .ability .ability-mod {
+    font-size: 0.875rem;
+    color: var(--bcl-ink-weak);
+  }
+
+  /* Skills list */
+  .theme-brancalonia .dnd5e.sheet.actor .skills-list {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+    padding: 0.5rem;
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .skill {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-bottom: 1px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .skill:hover {
+    background: var(--bcl-paper-weak);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor .skill .rollable:hover {
+    color: var(--bcl-gold);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /* ================================================
+     ITEM SHEET 5e - Layout items
+     ================================================ */
+
+  .theme-brancalonia .dnd5e.sheet.item .sheet-header {
+    background: var(--bcl-paper-weak);
+    border-bottom: 2px solid var(--bcl-divider);
+    padding: 1rem;
+  }
+
+  .theme-brancalonia .dnd5e.sheet.item .sheet-header img {
+    border: 2px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-md);
+    box-shadow: var(--bcl-shadow-1);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.item .sheet-header h1 input {
+    font-family: var(--bcl-font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .theme-brancalonia .dnd5e.sheet.item .sheet-header h1 input:focus {
+    border-bottom-color: var(--bcl-gold);
+  }
+
+  /* Item properties grid */
+  .theme-brancalonia .dnd5e.sheet.item .properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.item .form-group {
+    padding: 0.25rem;
+  }
+
+  .theme-brancalonia .dnd5e.sheet.item .form-group label {
+    font-weight: 600;
+    color: var(--bcl-ink-weak);
+    font-size: 0.875rem;
+  }
+
+  /* ================================================
+     SPELLBOOK - Lista incantesimi
+     ================================================ */
+
+  .theme-brancalonia .dnd5e .spellbook {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-md);
+  }
+
+  .theme-brancalonia .dnd5e .spell-level-header {
+    background: var(--bcl-paper-strong);
+    border-bottom: 2px solid var(--bcl-divider);
+    padding: 0.5rem;
+    font-family: var(--bcl-font-display);
+    font-weight: 700;
+  }
+
+  .theme-brancalonia .dnd5e .spell-list .spell {
+    padding: 0.375rem 0.5rem;
+    border-bottom: 1px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .dnd5e .spell-list .spell:hover {
+    background: var(--bcl-paper-weak);
+  }
+
+  .theme-brancalonia .dnd5e .spell-list .spell-name {
+    font-weight: 600;
+    color: var(--bcl-ink-strong);
+  }
+
+  .theme-brancalonia .dnd5e .spell-list .spell-school {
+    font-size: 0.875rem;
+    color: var(--bcl-ink-weak);
+    font-style: italic;
+  }
+
+  /* Spell slots */
+  .theme-brancalonia .dnd5e .spell-slots {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  .theme-brancalonia .dnd5e .spell-slots input {
+    width: 2rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  /* ================================================
+     INVENTORY - Gestione inventario
+     ================================================ */
+
+  .theme-brancalonia .dnd5e .inventory-list {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+  }
+
+  .theme-brancalonia .dnd5e .inventory-header {
+    background: var(--bcl-paper-strong);
+    border-bottom: 2px solid var(--bcl-divider);
+    padding: 0.5rem;
+    font-weight: 700;
+  }
+
+  .theme-brancalonia .dnd5e .item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .theme-brancalonia .dnd5e .item-list .item {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.5rem;
+    border-bottom: 1px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .dnd5e .item-list .item:hover {
+    background: var(--bcl-paper-weak);
+  }
+
+  .theme-brancalonia .dnd5e .item-list .item-image {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+    margin-right: 0.5rem;
+  }
+
+  .theme-brancalonia .dnd5e .item-list .item-name {
+    flex: 1;
+    font-weight: 600;
+  }
+
+  .theme-brancalonia .dnd5e .item-list .item-controls {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .theme-brancalonia .dnd5e .item-list .item-control {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bcl-ink-weak);
+    cursor: pointer;
+  }
+
+  .theme-brancalonia .dnd5e .item-list .item-control:hover {
+    color: var(--bcl-gold);
+  }
+
+  /* ================================================
+     FEATURES - Privilegi e caratteristiche
+     ================================================ */
+
+  .theme-brancalonia .dnd5e .features {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+    padding: 0.5rem;
+  }
+
+  .theme-brancalonia .dnd5e .feature {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .dnd5e .feature:last-child {
+    border-bottom: none;
+  }
+
+  .theme-brancalonia .dnd5e .feature-name {
+    font-weight: 700;
+    color: var(--bcl-ink-strong);
+    margin-bottom: 0.25rem;
+  }
+
+  .theme-brancalonia .dnd5e .feature-description {
+    font-size: 0.875rem;
+    color: var(--bcl-ink-weak);
+    font-style: italic;
+  }
+
+  /* ================================================
+     CHAT CARDS 5e - Tiri e risultati
+     ================================================ */
+
+  .theme-brancalonia .dnd5e.chat-card {
+    border: 2px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-md);
+    overflow: hidden;
+  }
+
+  .theme-brancalonia .dnd5e.chat-card .card-header {
+    background: linear-gradient(to right, var(--bcl-paper-strong), var(--bcl-paper));
+    padding: 0.5rem;
+    border-bottom: 2px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .dnd5e.chat-card .card-title {
+    font-family: var(--bcl-font-display);
+    font-weight: 700;
+    color: var(--bcl-ink-strong);
+  }
+
+  .theme-brancalonia .dnd5e.chat-card .card-content {
+    padding: 0.5rem;
+    background: var(--bcl-paper);
+  }
+
+  .theme-brancalonia .dnd5e.chat-card .dice-roll {
+    background: var(--bcl-paper-weak);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+  }
+
+  .theme-brancalonia .dnd5e.chat-card .dice-formula {
+    font-family: var(--bcl-font-mono);
+    font-size: 0.875rem;
+    color: var(--bcl-ink-weak);
+  }
+
+  .theme-brancalonia .dnd5e.chat-card .dice-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bcl-gold);
+    text-align: center;
+  }
+
+  /* Critical success/failure */
+  .theme-brancalonia .dnd5e.chat-card .critical {
+    color: var(--bcl-success);
+    font-weight: 700;
+  }
+
+  .theme-brancalonia .dnd5e.chat-card .fumble {
+    color: var(--bcl-danger);
+    font-weight: 700;
+  }
+
+  /* Card buttons */
+  .theme-brancalonia .dnd5e.chat-card .card-buttons {
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background: var(--bcl-paper-weak);
+    border-top: 1px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .dnd5e.chat-card .card-button {
+    flex: 1;
+    padding: 0.25rem 0.5rem;
+    background: var(--bcl-gold);
+    color: var(--bcl-ink-strong);
+    border: 1px solid var(--bcl-ink-strong);
+    border-radius: var(--bcl-radius-sm);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .theme-brancalonia .dnd5e.chat-card .card-button:hover {
+    background: var(--bcl-accent);
+    color: var(--bcl-paper);
+  }
+
+  /* ================================================
+     ADVANCEMENT - Sistema progressione
+     ================================================ */
+
+  .theme-brancalonia .dnd5e .advancement {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-md);
+    padding: 1rem;
+  }
+
+  .theme-brancalonia .dnd5e .advancement-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .dnd5e .advancement-item:last-child {
+    border-bottom: none;
+  }
+
+  .theme-brancalonia .dnd5e .advancement-title {
+    font-weight: 700;
+    color: var(--bcl-ink-strong);
+    margin-bottom: 0.25rem;
+  }
+
+  .theme-brancalonia .dnd5e .advancement-controls {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+  }
+}

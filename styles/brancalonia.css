@@ -1,0 +1,119 @@
+/* ================================================ */
+/* BRANCALONIA THEME - MAIN ENTRY POINT            */
+/* Import completo del tema rinascimentale         */
+/* Compatibile con dnd5e v5.1.9 e Foundry v12/v13  */
+/* ================================================ */
+
+/*
+ * ORDINE DI IMPORT CRITICO:
+ * 1. Tokens - Variabili e design system
+ * 2. Main - Stili base e scope
+ * 3. DnD5e - Compatibilità sistema
+ * 4. Decorations - Ornamenti SVG
+ * 5. Modules - Integrazioni terze parti
+ */
+
+/* Design Tokens e Variabili */
+@import url('./tokens.css');
+
+/* Stili principali con scope .theme-brancalonia */
+@import url('./brancalonia-main.css');
+
+/* Compatibilità specifica D&D 5e v5.1.9 */
+@import url('./brancalonia-dnd5e-compat.css');
+
+/* Decorazioni e ornamenti rinascimentali */
+@import url('./brancalonia-decorations.css');
+
+/* Compatibilità con moduli terzi */
+@import url('./brancalonia-module-compat.css');
+
+/* ================================================
+   ATTIVAZIONE TEMA
+   Classe applicata al body per attivare il tema
+   ================================================ */
+
+body.theme-brancalonia {
+  /* Tema attivato - gli stili sono tutti sotto scope */
+  font-size: var(--bcl-font-size-base);
+}
+
+/* ================================================
+   PERFORMANCE OPTIMIZATIONS
+   ================================================ */
+
+/* Riduci reflow/repaint */
+.theme-brancalonia * {
+  will-change: auto;
+}
+
+/* Ottimizza animazioni critiche */
+.theme-brancalonia .bcl-gold-shimmer,
+.theme-brancalonia button,
+.theme-brancalonia .sheet-tabs .item {
+  will-change: transform, background-color;
+}
+
+/* ================================================
+   PRINT STYLES
+   ================================================ */
+
+@media print {
+  .theme-brancalonia {
+    /* Rimuovi decorazioni per stampa */
+    --bcl-shadow-1: none;
+    --bcl-shadow-2: none;
+  }
+
+  .theme-brancalonia .window-app::before,
+  .theme-brancalonia .window-app::after,
+  .theme-brancalonia .bcl-seal,
+  .theme-brancalonia .bcl-ribbon::before,
+  .theme-brancalonia .bcl-ribbon::after {
+    display: none;
+  }
+
+  .theme-brancalonia {
+    background: white;
+    color: black;
+  }
+}
+
+/* ================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ================================================ */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .theme-brancalonia {
+    --bcl-ink: #000000;
+    --bcl-paper: #FFFFFF;
+    --bcl-border: #000000;
+    --bcl-focus: #0066CC;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .theme-brancalonia * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ================================================
+   DEBUG MODE (solo sviluppo)
+   ================================================ */
+
+body.theme-brancalonia.debug {
+  /* Mostra bordi per debug layout */
+  * {
+    outline: 1px solid rgba(255, 0, 0, 0.1);
+  }
+
+  /* Evidenzia elementi senza scope corretto */
+  *:not(.theme-brancalonia) .dnd5e {
+    background: rgba(255, 0, 0, 0.1) !important;
+  }
+}

@@ -1,0 +1,321 @@
+/* ================================================ */
+/* BRANCALONIA MODULE COMPATIBILITY                */
+/* Integrazione con moduli terzi                   */
+/* ================================================ */
+
+@layer module {
+  /* ================================================
+     ORCNOG CARD VIEWER - Integrazione sicura
+     ================================================ */
+
+  .theme-brancalonia .orcnog-card-viewer {
+    color: var(--bcl-ink);
+    background: var(--bcl-paper);
+  }
+
+  .theme-brancalonia .orcnog-card-viewer .ocv-toolbar,
+  .theme-brancalonia .orcnog-card-viewer .ocv-panel {
+    background: var(--bcl-paper-weak);
+    border: 1px solid var(--bcl-border);
+    box-shadow: var(--bcl-shadow-1);
+    border-radius: var(--bcl-radius-sm);
+  }
+
+  .theme-brancalonia .orcnog-card-viewer .ocv-button {
+    background: transparent;
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+    padding: 0.375rem 0.75rem;
+    color: var(--bcl-ink);
+    transition: all 0.2s ease;
+  }
+
+  .theme-brancalonia .orcnog-card-viewer .ocv-button:hover {
+    background: var(--bcl-gold);
+    color: var(--bcl-ink-strong);
+    border-color: var(--bcl-ink-strong);
+    transform: translateY(-1px);
+  }
+
+  .theme-brancalonia .orcnog-card-viewer .ocv-button:active {
+    transform: translateY(0);
+  }
+
+  .theme-brancalonia .orcnog-card-viewer .ocv-card {
+    background: var(--bcl-paper);
+    box-shadow: var(--bcl-shadow-2);
+    border: 1px solid var(--bcl-divider);
+    border-radius: var(--bcl-radius-md);
+  }
+
+  .theme-brancalonia .orcnog-card-viewer .ocv-card.is-selected {
+    outline: 2px solid var(--bcl-accent);
+    outline-offset: 2px;
+  }
+
+  /* Preserva trasformazioni per zoom/pan/flip */
+  .theme-brancalonia .orcnog-card-viewer .ocv-canvas,
+  .theme-brancalonia .orcnog-card-viewer .ocv-card {
+    will-change: transform;
+  }
+
+  /* Overlay informativi */
+  .theme-brancalonia .orcnog-card-viewer .ocv-overlay {
+    background: color-mix(in oklab, var(--bcl-bg), transparent 60%);
+    color: var(--bcl-paper);
+    border-radius: var(--bcl-radius-sm);
+    padding: 0.5rem;
+  }
+
+  /* ================================================
+     CUSTOM D&D 5E (Larkinabout) - Integrazione
+     ================================================ */
+
+  /* Scope con flag presenza modulo */
+  .theme-brancalonia.mod-custom-dnd5e-active .custom-dnd5e,
+  .theme-brancalonia .custom-dnd5e {
+    color: var(--bcl-ink);
+    background: var(--bcl-paper);
+  }
+
+  .theme-brancalonia .custom-dnd5e .header,
+  .theme-brancalonia .custom-dnd5e .section,
+  .theme-brancalonia .custom-dnd5e .panel {
+    background: var(--bcl-paper-weak);
+    border: 1px solid var(--bcl-border);
+    box-shadow: var(--bcl-shadow-1);
+    border-radius: var(--bcl-radius-md);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Liste e tabelle di configurazione */
+  .theme-brancalonia .custom-dnd5e .config-list,
+  .theme-brancalonia .custom-dnd5e table {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-divider);
+    border-radius: var(--bcl-radius-sm);
+  }
+
+  .theme-brancalonia .custom-dnd5e table th,
+  .theme-brancalonia .custom-dnd5e table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .custom-dnd5e table th {
+    background: var(--bcl-paper-strong);
+    color: var(--bcl-ink-strong);
+    font-weight: 600;
+  }
+
+  .theme-brancalonia .custom-dnd5e tr:hover td {
+    background: var(--bcl-paper-weak);
+  }
+
+  /* Input e controlli */
+  .theme-brancalonia .custom-dnd5e input[type="text"],
+  .theme-brancalonia .custom-dnd5e input[type="number"],
+  .theme-brancalonia .custom-dnd5e select {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+    padding: 0.25rem 0.5rem;
+    color: var(--bcl-ink);
+  }
+
+  .theme-brancalonia .custom-dnd5e input:focus,
+  .theme-brancalonia .custom-dnd5e select:focus {
+    outline: 2px solid var(--bcl-focus);
+    outline-offset: 2px;
+    background: var(--bcl-surface);
+  }
+
+  /* Bottoni azioni */
+  .theme-brancalonia .custom-dnd5e .form-footer .button,
+  .theme-brancalonia .custom-dnd5e .actions .button {
+    background: var(--bcl-gold);
+    color: var(--bcl-ink-strong);
+    border: 1px solid var(--bcl-ink-strong);
+    border-radius: var(--bcl-radius-sm);
+    padding: 0.375rem 0.75rem;
+    transition: all 0.2s ease;
+  }
+
+  .theme-brancalonia .custom-dnd5e .form-footer .button:hover,
+  .theme-brancalonia .custom-dnd5e .actions .button:hover {
+    background: var(--bcl-accent);
+    color: var(--bcl-paper);
+    border-color: var(--bcl-ink-strong);
+    transform: translateY(-1px);
+  }
+
+  /* Stati validazione */
+  .theme-brancalonia .custom-dnd5e .is-invalid {
+    border-color: var(--bcl-danger);
+  }
+
+  .theme-brancalonia .custom-dnd5e .is-valid {
+    border-color: var(--bcl-success);
+  }
+
+  /* ================================================
+     DICE SO NICE - Integrazione tema dadi
+     ================================================ */
+
+  /* Non richiede CSS aggiuntivo - gestito via JS hooks */
+  /* Vedi modules/brancalonia-dice-theme.js */
+
+  /* ================================================
+     CAROLINGIAN UI (crlngn-ui) - Compatibilità
+     ================================================ */
+
+  /* Evita conflitti con crlngn-ui quando attivo */
+  .theme-brancalonia.crlngn-ui-active {
+    /* Inherit spacing e layout patterns da crlngn-ui */
+    --spacing-unit: 0.25rem;
+    --spacing-xs: calc(var(--spacing-unit) * 1);  /* 0.25rem */
+    --spacing-sm: calc(var(--spacing-unit) * 2);  /* 0.5rem */
+    --spacing-md: calc(var(--spacing-unit) * 4);  /* 1rem */
+    --spacing-lg: calc(var(--spacing-unit) * 6);  /* 1.5rem */
+    --spacing-xl: calc(var(--spacing-unit) * 8);  /* 2rem */
+  }
+
+  /* Override solo dove necessario per brand Brancalonia */
+  .theme-brancalonia.crlngn-ui-active .crlngn-tab {
+    /* Mantieni struttura crlngn ma con colori Brancalonia */
+    background: var(--bcl-paper-weak);
+    border-color: var(--bcl-border);
+  }
+
+  .theme-brancalonia.crlngn-ui-active .crlngn-tab:hover {
+    background: var(--bcl-gold);
+    color: var(--bcl-ink-strong);
+  }
+
+  .theme-brancalonia.crlngn-ui-active .crlngn-tab.active {
+    background: var(--bcl-accent);
+    color: var(--bcl-paper);
+  }
+
+  /* ================================================
+     TOKEN ACTION HUD - Stile Brancalonia
+     ================================================ */
+
+  .theme-brancalonia .tah-style-brancalonia {
+    --tah-text-primary-color: var(--bcl-ink);
+    --tah-text-shadow: var(--bcl-shadow-ink);
+    --tah-button-text-color: var(--bcl-ink);
+    --tah-button-border-color: var(--bcl-border);
+    --tah-button-gradient-initial: var(--bcl-paper);
+    --tah-text-hover-primary-color: var(--bcl-ink-strong);
+    --tah-text-hover-secondary-color: var(--bcl-gold);
+    --tah-button-gradient-highlight: var(--bcl-gold);
+    --tah-button-hover-box-shadow: 0 0 0.2rem var(--bcl-gold);
+  }
+
+  .theme-brancalonia #token-action-hud button {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    color: var(--bcl-ink);
+    border-radius: var(--bcl-radius-sm);
+  }
+
+  .theme-brancalonia #token-action-hud button:hover {
+    background: var(--bcl-gold);
+    color: var(--bcl-ink-strong);
+    border-color: var(--bcl-ink-strong);
+  }
+
+  /* ================================================
+     COMBAT TRACKER ENHANCEMENTS
+     ================================================ */
+
+  .theme-brancalonia #combat #combat-tracker {
+    background: var(--bcl-paper);
+    border: 2px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-md);
+  }
+
+  .theme-brancalonia #combat #combat-tracker .combatant {
+    border-bottom: 1px solid var(--bcl-divider);
+    padding: 0.5rem;
+  }
+
+  .theme-brancalonia #combat #combat-tracker .combatant:hover {
+    background: var(--bcl-paper-weak);
+  }
+
+  .theme-brancalonia #combat #combat-tracker .combatant.active {
+    background: linear-gradient(to right, var(--bcl-gold), var(--bcl-paper));
+    border-left: 3px solid var(--bcl-accent);
+  }
+
+  .theme-brancalonia #combat #combat-tracker .token-name {
+    font-weight: 600;
+    color: var(--bcl-ink-strong);
+  }
+
+  .theme-brancalonia #combat #combat-tracker .token-initiative {
+    font-family: var(--bcl-font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--bcl-gold);
+  }
+
+  /* ================================================
+     JOURNAL ENHANCEMENTS - Stile pergamena
+     ================================================ */
+
+  .theme-brancalonia .journal-sheet .journal-entry-content {
+    background: var(--bcl-paper);
+    color: var(--bcl-ink);
+    font-family: var(--bcl-font-serif);
+    line-height: 1.6;
+    padding: 1.5rem;
+  }
+
+  .theme-brancalonia .journal-sheet .journal-entry-content h1,
+  .theme-brancalonia .journal-sheet .journal-entry-content h2,
+  .theme-brancalonia .journal-sheet .journal-entry-content h3 {
+    font-family: var(--bcl-font-display);
+    color: var(--bcl-ink-strong);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .theme-brancalonia .journal-sheet .journal-entry-content h1 {
+    border-bottom: 2px solid var(--bcl-gold);
+    padding-bottom: 0.5rem;
+  }
+
+  .theme-brancalonia .journal-sheet .journal-entry-content blockquote {
+    border-left: 3px solid var(--bcl-gold);
+    background: var(--bcl-paper-weak);
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: var(--bcl-ink-weak);
+  }
+
+  .theme-brancalonia .journal-sheet .journal-entry-content table {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-divider);
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .theme-brancalonia .journal-sheet .journal-entry-content th {
+    background: var(--bcl-paper-strong);
+    color: var(--bcl-ink-strong);
+    font-weight: 600;
+    padding: 0.5rem;
+    border: 1px solid var(--bcl-divider);
+  }
+
+  .theme-brancalonia .journal-sheet .journal-entry-content td {
+    padding: 0.375rem 0.5rem;
+    border: 1px solid var(--bcl-divider);
+  }
+}
