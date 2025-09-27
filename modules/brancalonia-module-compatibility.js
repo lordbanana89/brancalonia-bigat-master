@@ -216,6 +216,31 @@ function checkAndFixOtherModules() {
         // Fix per Better Rolls se necessario
         console.log("🔧 Checking Better Rolls 5e compatibility");
       }
+    },
+    {
+      id: "epic-rolls-5e",
+      name: "Epic Rolls 5e",
+      fix: () => {
+        console.log("🔧 Fixing Epic Rolls 5e compatibility");
+
+        // Epic Rolls cerca di fare prepend su elementi che potrebbero non esistere
+        Hooks.on("renderChatLog", (app, html, data) => {
+          // Assicurati che html sia un jQuery object valido
+          if (!html || !html.length) {
+            console.warn("⚠️ Epic Rolls 5e: Invalid HTML element");
+            return;
+          }
+
+          // Verifica che gli elementi esistano prima che Epic Rolls li usi
+          const chatForm = html.find("#chat-form");
+          if (!chatForm.length) {
+            console.warn("⚠️ Epic Rolls 5e: chat-form not found");
+            // Crea un elemento placeholder se necessario
+            const placeholder = $('<div id="chat-form"></div>');
+            html.append(placeholder);
+          }
+        }, { priority: -1000 }); // Alta priorità per eseguire prima di Epic Rolls
+      }
     }
   ];
 
@@ -295,6 +320,7 @@ Hooks.once("ready", () => {
   const knownIncompatible = [
     'power-select-toolkit',
     'tidbits',
+    'epic-rolls-5e',
     'cursor-hider',
     'grape-juice-premium',
     'token-hud-wildcard'
