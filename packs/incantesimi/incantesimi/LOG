@@ -1,1 +1,5 @@
-2025/09/27-11:26:36.859959 1707c3000 Delete type=3 #1
+2025/09/27-16:38:17.973006 16f013000 Delete type=3 #1
+2025/09/27-16:38:17.975764 16f8ab000 Level-0 table #5: started
+2025/09/27-16:38:17.976839 16f8ab000 Level-0 table #5: 90059 bytes OK
+2025/09/27-16:38:17.976965 16f8ab000 Delete type=0 #3
+2025/09/27-16:38:17.977063 16f8ab000 Manual compaction at level-0 from '!item!spell-base-001_benedizione' @ 72057594037927935 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at (end)

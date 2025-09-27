@@ -127,8 +127,11 @@ export class CompendiumUnlocker {
     // Verifica se è un pack Brancalonia
     if (pack.metadata.packageName !== MODULE) return;
 
+    // Converti html in jQuery object se necessario
+    const $html = html instanceof jQuery ? html : $(html);
+
     // Aggiungi indicatore di stato
-    const header = html.find('.header-search');
+    const header = $html.find('.header-search');
     const lockStatus = pack.locked ?
       '<span class="lock-status locked" title="Compendio Bloccato"><i class="fas fa-lock"></i></span>' :
       '<span class="lock-status unlocked" title="Compendio Modificabile"><i class="fas fa-lock-open"></i></span>';
@@ -148,7 +151,7 @@ export class CompendiumUnlocker {
       ui.notifications.info(`Compendio ${pack.locked ? 'bloccato' : 'sbloccato'}`);
     });
 
-    html.find('.header-controls').prepend(lockButton);
+    $html.find('.header-controls').prepend(lockButton);
 
     // Aggiungi bottone import multiplo
     const importButton = $(`
@@ -158,7 +161,7 @@ export class CompendiumUnlocker {
     `);
 
     importButton.on('click', () => this.importDialog(pack));
-    html.find('.header-controls').prepend(importButton);
+    $html.find('.header-controls').prepend(importButton);
 
     // Aggiungi bottone per creare nuovo
     if (!pack.locked) {
@@ -169,12 +172,12 @@ export class CompendiumUnlocker {
       `);
 
       createButton.on('click', () => this.createNewEntry(pack));
-      html.find('.header-controls').prepend(createButton);
+      $html.find('.header-controls').prepend(createButton);
     }
 
     // Stile per indicare stato modificabile
     if (!pack.locked) {
-      html.addClass('compendium-unlocked');
+      $html.addClass('compendium-unlocked');
     }
   }
 

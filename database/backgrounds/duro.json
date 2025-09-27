@@ -11,7 +11,7 @@
     ],
     "privilegio": {
       "nome": "Faccia da Duro",
-      "descrizione": "Quando sfrutta la sua Nomea per incutere timore, la considera di un livello superiore."
+      "descrizione": "Quando il duro usa la sua Nomea nelle interazioni sociali, la sua Taglia gli aumenta di un livello."
     }
   },
   "meccaniche": {
@@ -42,7 +42,7 @@
     },
     "privilegio_faccia_da_duro": {
       "tipo": "attivo",
-      "descrizione": "Considera la propria Nomea di 1 livello superiore nelle interazioni sociali",
+      "descrizione": "Quando usa la sua Nomea nelle interazioni sociali, la sua Taglia aumenta di 1 livello",
       "implementazione": "flags.brancalonia-bigat.facciaDaDuro = true",
       "mode": 5
     }

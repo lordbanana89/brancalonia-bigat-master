@@ -1,3 +1,5 @@
-2025/09/27-11:26:36.873338 16ffb7000 Recovering log #4
-2025/09/27-11:26:36.874126 16ffb7000 Delete type=0 #4
-2025/09/27-11:26:36.874178 16ffb7000 Delete type=3 #2
+2025/09/27-16:38:18.572724 16f0c3000 Delete type=3 #1
+2025/09/27-16:38:18.574448 16f95b000 Level-0 table #5: started
+2025/09/27-16:38:18.574689 16f95b000 Level-0 table #5: 5422 bytes OK
+2025/09/27-16:38:18.574767 16f95b000 Delete type=0 #3
+2025/09/27-16:38:18.574842 16f95b000 Manual compaction at level-0 from '!item!classbarbarocamminoberserker57ce27' @ 72057594037927935 : 1 .. '!item!classmagoscuolatrasmutazioneba959f' @ 0 : 0; will stop at (end)

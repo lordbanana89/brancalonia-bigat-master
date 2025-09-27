@@ -1,3 +1,5 @@
-2025/09/27-11:26:36.862389 170fcf000 Recovering log #4
-2025/09/27-11:26:36.864504 170fcf000 Delete type=0 #4
-2025/09/27-11:26:36.864540 170fcf000 Delete type=3 #2
+2025/09/27-16:38:18.097047 171c2f000 Delete type=3 #1
+2025/09/27-16:38:18.100037 1724c7000 Level-0 table #5: started
+2025/09/27-16:38:18.101336 1724c7000 Level-0 table #5: 148749 bytes OK
+2025/09/27-16:38:18.101414 1724c7000 Delete type=0 #3
+2025/09/27-16:38:18.101510 1724c7000 Manual compaction at level-0 from '!item!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!item!viluperac949b2' @ 0 : 0; will stop at (end)

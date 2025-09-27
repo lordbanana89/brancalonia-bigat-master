@@ -1,3 +1,5 @@
-2025/09/27-11:26:36.875370 1717db000 Recovering log #4
-2025/09/27-11:26:36.875750 1717db000 Delete type=0 #4
-2025/09/27-11:26:36.875783 1717db000 Delete type=3 #2
+2025/09/27-16:38:17.861225 16f263000 Delete type=3 #1
+2025/09/27-16:38:17.863015 16fafb000 Level-0 table #5: started
+2025/09/27-16:38:17.863222 16fafb000 Level-0 table #5: 2520 bytes OK
+2025/09/27-16:38:17.863295 16fafb000 Delete type=0 #3
+2025/09/27-16:38:17.863349 16fafb000 Manual compaction at level-0 from '!item!animacontadina84ec09' @ 72057594037927935 : 1 .. '!item!supercazzola0a1867' @ 0 : 0; will stop at (end)

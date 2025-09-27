@@ -652,9 +652,15 @@ export class TavernBrawlSystem {
    */
   _getSlotMossa(actor) {
     const level = actor.system.details.level || 1;
-    if (level >= 5) return 4;
-    if (level >= 3) return 3;
-    return 2;
+    let baseSlots = 2;
+
+    if (level >= 5) baseSlots = 4;
+    else if (level >= 3) baseSlots = 3;
+
+    // Aggiungi slot extra da background Attaccabrighe
+    const slotExtra = actor.getFlag('brancalonia-bigat', 'slotMossaExtra') || 0;
+
+    return baseSlots + slotExtra;
   }
 
   /**

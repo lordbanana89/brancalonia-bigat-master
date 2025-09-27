@@ -1,7 +1,5 @@
-2025/09/27-13:37:13.577389 173413000 Recovering log #5
-2025/09/27-13:37:13.578278 173413000 Delete type=0 #5
-2025/09/27-13:37:13.578324 173413000 Delete type=3 #4
-2025/09/27-13:37:13.581604 1744b7000 Level-0 table #9: started
-2025/09/27-13:37:13.582753 1744b7000 Level-0 table #9: 90609 bytes OK
-2025/09/27-13:37:13.582837 1744b7000 Delete type=0 #7
-2025/09/27-13:37:13.582915 1744b7000 Manual compaction at level-0 from '!item!animal001asinoomuloa0a104' @ 72057594037927935 : 1 .. '!item!zappadarme1f9dac' @ 0 : 0; will stop at (end)
+2025/09/27-16:38:17.761429 171a53000 Delete type=3 #1
+2025/09/27-16:38:17.764516 1722eb000 Level-0 table #5: started
+2025/09/27-16:38:17.765433 1722eb000 Level-0 table #5: 90609 bytes OK
+2025/09/27-16:38:17.765516 1722eb000 Delete type=0 #3
+2025/09/27-16:38:17.765588 1722eb000 Manual compaction at level-0 from '!item!animal001asinoomuloa0a104' @ 72057594037927935 : 1 .. '!item!zappadarme1f9dac' @ 0 : 0; will stop at (end)
