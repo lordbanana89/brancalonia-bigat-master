@@ -68,9 +68,9 @@ Hooks.once("init", () => {
 function initializeBrancaloniaData(actor) {
   // Aggiungi dati Brancalonia usando flags
   if (!actor.getFlag("brancalonia-bigat", "initialized")) {
-    actor.setFlag("brancalonia-bigat", "initialized", true]);
-    actor.setFlag("brancalonia-bigat", "infamia", 0]);
-    actor.setFlag("brancalonia-bigat", "menagramo", false]);
+    actor.setFlag("brancalonia-bigat", "initialized", true);
+    actor.setFlag("brancalonia-bigat", "infamia", 0);
+    actor.setFlag("brancalonia-bigat", "menagramo", false);
   }
 }
 
@@ -79,30 +79,30 @@ async function addInfamia(actor, value) {
   const currentInfamia = actor.getFlag("brancalonia-bigat", "infamia") || 0;
   const newInfamia = Math.max(0, Math.min(100, currentInfamia + value));
 
-  await actor.setFlag("brancalonia-bigat", "infamia", newInfamia]);
+  await actor.setFlag("brancalonia-bigat", "infamia", newInfamia);
 
   // Notifica
-  ui.notifications.info(`${actor.name} guadagna ${value} punti Infamia (Totale: ${newInfamia})`]);
+  ui.notifications.info(`${actor.name} guadagna ${value} punti Infamia (Totale: ${newInfamia})`);
 
   // Controlla livelli infamia per effetti
-  checkInfamiaEffects(actor, newInfamia]);
+  checkInfamiaEffects(actor, newInfamia);
 }
 
 // Controlla effetti basati sul livello di infamia
 function checkInfamiaEffects(actor, infamiaLevel) {
   if (infamiaLevel >= 75) {
-    ui.notifications.warn(`${actor.name} è ora un Fuorilegge Ricercato!`]);
+    ui.notifications.warn(`${actor.name} è ora un Fuorilegge Ricercato!`);
   } else if (infamiaLevel >= 50) {
-    ui.notifications.warn(`${actor.name} ha una Taglia sulla testa!`]);
+    ui.notifications.warn(`${actor.name} ha una Taglia sulla testa!`);
   } else if (infamiaLevel >= 25) {
-    ui.notifications.info(`${actor.name} è Mal Visto dalle autorità`]);
+    ui.notifications.info(`${actor.name} è Mal Visto dalle autorità`);
   }
 }
 
 // Metodo per applicare menagramo
 async function applyMenagramo(actor, duration = "1d4") {
-  await actor.setFlag("brancalonia-bigat", "menagramo", true]);
-  await actor.setFlag("brancalonia-bigat", "menagramoDuration", duration]);
+  await actor.setFlag("brancalonia-bigat", "menagramo", true);
+  await actor.setFlag("brancalonia-bigat", "menagramoDuration", duration);
 
   // Applica active effect
   const roll = await new Roll(duration).evaluate();
@@ -128,8 +128,8 @@ async function applyMenagramo(actor, duration = "1d4") {
     }
   };
 
-  await actor.createEmbeddedDocuments("ActiveEffect", [effect]]);
-  ui.notifications.warn(`${actor.name} è sotto l'effetto del Menagramo!`]);
+  await actor.createEmbeddedDocuments("ActiveEffect", [effect]);
+  ui.notifications.warn(`${actor.name} è sotto l'effetto del Menagramo!`);
 }
 
 // Registrazione settings del modulo
@@ -207,50 +207,50 @@ function registerBrancaloniaSettings() {
 
 // Hook per ready
 Hooks.once("ready", async () => {
-  console.log("Brancalonia | Sistema pronto"]);
+  console.log("Brancalonia | Sistema pronto");
 
   // Verifica compatibilità sistema
   if (!game.system.version.startsWith("5.")) {
-    ui.notifications.warn("Brancalonia richiede dnd5e system v5.x per funzionare correttamente"]);
+    ui.notifications.warn("Brancalonia richiede dnd5e system v5.x per funzionare correttamente");
   }
 
   // Inizializza TUTTI i moduli
-  const { InfamiaTracker } = await import("./infamia-tracker.js"]);
-  const { CompagniaManager } = await import("./compagnia-manager.js"]);
-  const { HavenSystem } = await import("./haven-system.js"]);
-  const { TavernBrawlSystem } = await import("./tavern-brawl.js"]);
-  const { DirtyJobsSystem } = await import("./dirty-jobs.js"]);
-  const { MenagramoSystem } = await import("./menagramo.js"]);
-  const { ShoddyEquipment } = await import("./shoddy-equipment.js"]);
-  const { BrancaloniaMechanics } = await import("./brancalonia-mechanics.js"]);
-  const { DiseasesSystem } = await import("./diseases-system.js"]);
-  const { EnvironmentalHazardsSystem } = await import("./environmental-hazards.js"]);
-  const { DuelingSystem } = await import("./dueling-system.js"]);
-  const { FactionsSystem } = await import("./factions-system.js"]);
-  const { ReputationSystem } = await import("./reputation-system.js"]);
-  const { TavernGamesSystem } = await import("./tavern-games.js"]);
-  const { BagordiSystem } = await import("./bagordi.js"]);
-  const { BrancaloniaRestSystem } = await import("./rest-system.js"]);
-  const { LevelCapSystem } = await import("./level-cap.js"]);
+  const { InfamiaTracker } = await import("./infamia-tracker.js");
+  const { CompagniaManager } = await import("./compagnia-manager.js");
+  const { HavenSystem } = await import("./haven-system.js");
+  const { TavernBrawlSystem } = await import("./tavern-brawl.js");
+  const { DirtyJobsSystem } = await import("./dirty-jobs.js");
+  const { MenagramoSystem } = await import("./menagramo.js");
+  const { ShoddyEquipment } = await import("./shoddy-equipment.js");
+  const { BrancaloniaMechanics } = await import("./brancalonia-mechanics.js");
+  const { DiseasesSystem } = await import("./diseases-system.js");
+  const { EnvironmentalHazardsSystem } = await import("./environmental-hazards.js");
+  const { DuelingSystem } = await import("./dueling-system.js");
+  const { FactionsSystem } = await import("./factions-system.js");
+  const { ReputationSystem } = await import("./reputation-system.js");
+  const { TavernGamesSystem } = await import("./tavern-games.js");
+  const { BagordiSystem } = await import("./bagordi.js");
+  const { BrancaloniaRestSystem } = await import("./rest-system.js");
+  const { LevelCapSystem } = await import("./level-cap.js");
 
   // Istanzia TUTTI i sistemi
-  game.brancalonia.infamiaTracker = new InfamiaTracker(]);
-  game.brancalonia.compagniaManager = new CompagniaManager(]);
-  game.brancalonia.havenSystem = new HavenSystem(]);
-  game.brancalonia.tavernBrawl = new TavernBrawlSystem(]);
-  game.brancalonia.dirtyJobs = new DirtyJobsSystem(]);
-  game.brancalonia.menagramo = new MenagramoSystem(]);
-  game.brancalonia.shoddyItems = new ShoddyEquipment(]);
-  game.brancalonia.mechanics = new BrancaloniaMechanics(]);
-  game.brancalonia.diseases = new DiseasesSystem(]);
-  game.brancalonia.hazards = new EnvironmentalHazardsSystem(]);
-  game.brancalonia.dueling = new DuelingSystem(]);
-  game.brancalonia.factions = new FactionsSystem(]);
-  game.brancalonia.reputation = new ReputationSystem(]);
-  game.brancalonia.tavernGames = new TavernGamesSystem(]);
-  game.brancalonia.bagordi = new BagordiSystem(]);
-  game.brancalonia.restSystem = new BrancaloniaRestSystem(]);
-  game.brancalonia.levelCap = new LevelCapSystem(]);
+  game.brancalonia.infamiaTracker = new InfamiaTracker();
+  game.brancalonia.compagniaManager = new CompagniaManager();
+  game.brancalonia.havenSystem = new HavenSystem();
+  game.brancalonia.tavernBrawl = new TavernBrawlSystem();
+  game.brancalonia.dirtyJobs = new DirtyJobsSystem();
+  game.brancalonia.menagramo = new MenagramoSystem();
+  game.brancalonia.shoddyItems = new ShoddyEquipment();
+  game.brancalonia.mechanics = new BrancaloniaMechanics();
+  game.brancalonia.diseases = new DiseasesSystem();
+  game.brancalonia.hazards = new EnvironmentalHazardsSystem();
+  game.brancalonia.dueling = new DuelingSystem();
+  game.brancalonia.factions = new FactionsSystem();
+  game.brancalonia.reputation = new ReputationSystem();
+  game.brancalonia.tavernGames = new TavernGamesSystem();
+  game.brancalonia.bagordi = new BagordiSystem();
+  game.brancalonia.restSystem = new BrancaloniaRestSystem();
+  game.brancalonia.levelCap = new LevelCapSystem();
 
   // Mostra messaggio di benvenuto
   if (game.user.isGM) {
@@ -268,16 +268,16 @@ Hooks.once("ready", async () => {
         </div>
       `,
       whisper: [game.user.id]
-    }]);
+    });
   }
-}]);
+});
 
 // Hook per inizializzare nuovi attori
 Hooks.on("createActor", (actor, options, userId) => {
   if (actor.type === "character") {
-    initializeBrancaloniaData(actor]);
+    initializeBrancaloniaData(actor);
   }
-}]);
+});
 
 // Hook per modificare sheet degli attori
 Hooks.on("renderActorSheet5e", (app, html, data) => {
@@ -286,54 +286,54 @@ Hooks.on("renderActorSheet5e", (app, html, data) => {
 
   // Inizializza se non già fatto
   if (!data.actor.getFlag("brancalonia-bigat", "initialized")) {
-    initializeBrancaloniaData(data.actor]);
+    initializeBrancaloniaData(data.actor);
   }
 
   // Aggiungi tracker infamia
   if (game.settings.get("brancalonia-bigat", "trackInfamia")) {
-    game.brancalonia.infamiaTracker?.renderInfamiaTracker(app, html, data]);
+    game.brancalonia.infamiaTracker?.renderInfamiaTracker(app, html, data);
   }
 
   // Aggiungi indicatore menagramo
   if (data.actor.flags?.["brancalonia-bigat"]?.menagramo) {
-    const header = html.find(".window-header"]);
-    header.append(`<span class="menagramo-indicator" title="Sotto effetto del Menagramo!">☠️</span>`]);
+    const header = html.find(".window-header");;
+    header.append(`<span class="menagramo-indicator" title="Sotto effetto del Menagramo!">☠️</span>`);
   }
-}]);
+});
 
 // Hook per modificare i tiri
 Hooks.on("dnd5e.preRollAbilityTest", (actor, rollData, messageData) => {
   // Applica effetti menagramo
   if (actor.flags?.["brancalonia-bigat"]?.menagramo) {
     rollData.disadvantage = true;
-    ui.notifications.warn("Menagramo! Tiro con svantaggio!"]);
+    ui.notifications.warn("Menagramo! Tiro con svantaggio!");
   }
-}]);
+});
 
 // Hook per gestire danno non letale nelle risse
 Hooks.on("dnd5e.applyDamage", (actor, damage, options) => {
   if (options.nonLethal || actor.flags?.["brancalonia-bigat"]?.inBrawl) {
     // Converti in danno temporaneo invece che reale
     const tempHp = actor.system.attributes.hp.temp || 0;
-    const newTempDamage = Math.max(0, tempHp - damage]);
+    const newTempDamage = Math.max(0, tempHp - damage);
 
     actor.update({
       "system.attributes.hp.temp": newTempDamage
-    }]);
+    });
 
     // Se arriva a 0, è KO non morto
     if (newTempDamage <= 0) {
-      actor.toggleStatusEffect("unconscious"]);
+      actor.toggleStatusEffect("unconscious");
       ChatMessage.create({
         content: `${actor.name} è stato messo KO nella rissa!`,
         speaker: ChatMessage.getSpeaker({actor: actor})
-      }]);
+      });
     }
 
     // Previeni danno normale
     return false;
   }
-}]);
+});
 
 // Esporta per uso globale
 window.BrancaloniaSystem = {
