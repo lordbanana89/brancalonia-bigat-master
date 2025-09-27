@@ -75,6 +75,12 @@ const originalWarn = console.warn;
 console.warn = function(...args) {
     const message = args.join(' ');
 
+    // Sopprimi warning V1 Application framework
+    if (message.includes("V1 Application framework is deprecated") ||
+        message.includes("Please use the V2 version of the Application framework")) {
+        return; // Non mostrare questi warning
+    }
+
     // Sopprimi warning di namespace deprecati
     if (message.includes("You are accessing the global") &&
         (message.includes("CompendiumCollection") ||
