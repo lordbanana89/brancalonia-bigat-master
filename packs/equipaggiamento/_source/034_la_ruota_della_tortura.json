@@ -3,7 +3,7 @@
   "_key": "!item!laruotadellatortura0724dd",
   "name": "La Ruota della Tortura",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
       "value": "<p>Miniatura di ruota di tortura in legno</p><h3>Proprietà</h3><p>Girandola, infligge dolore a distanza a chi hai toccato nelle ultime 24 ore</p><h3>Storia</h3><p><em>Modellino della ruota dove morirono 100 eretici</em></p>",

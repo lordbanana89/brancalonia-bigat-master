@@ -3,7 +3,7 @@
   "_key": "!items!lelmodelgeneralesconfittof82405",
   "name": "L'Elmo del Generale Sconfitto",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
       "value": "<p>Elmo piumato sfarzoso ma ammaccato</p><h3>Proprietà</h3><p>+2 Carisma per comandare truppe, -2 a strategie militari</p><h3>Storia</h3><p><em>Perse 13 battaglie consecutive</em></p>",

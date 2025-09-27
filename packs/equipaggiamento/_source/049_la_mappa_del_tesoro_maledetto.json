@@ -3,7 +3,7 @@
   "_key": "!item!lamappadeltesoromaledetto66f5dd",
   "name": "La Mappa del Tesoro Maledetto",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
       "value": "<p>Mappa che cambia ogni volta che la guardi</p><h3>Proprietà</h3><p>Porta sempre a un tesoro, mai lo stesso</p><h3>Storia</h3><p><em>1000 avventurieri la seguirono, 10 tornarono</em></p><h3>Maledizione</h3><p><strong>Il tesoro vale sempre meno del viaggio</strong></p><p>Il tesoro vale sempre meno del viaggio</p>",

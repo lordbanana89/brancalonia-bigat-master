@@ -3,7 +3,7 @@
   "_key": "!item!gearkit001dotazionedaavventuriero5e5c45",
   "name": "Dotazione da Avventuriero",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/containers/bags/pack-adventuring-brown.webp",
   "system": {
     "description": {
       "value": "<p>Include zaino, sacco, pietra focaia e acciarino, 10 torce, razioni per 10 giorni, borraccia e corda di canapa da 15 m.</p>",

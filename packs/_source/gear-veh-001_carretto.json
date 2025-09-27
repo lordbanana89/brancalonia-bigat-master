@@ -3,7 +3,7 @@
   "_key": "!items!gearveh001carretto6982c1",
   "name": "Carretto",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/environment/settlement/wagon-brown.webp",
   "system": {
     "description": {
       "value": "<p>Veicolo a due ruote trainato da un asino o mulo; trasporta fino a 300 kg.</p>",

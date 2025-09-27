@@ -3,7 +3,7 @@
   "_key": "!item!indexfa5db2",
   "name": "Item",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
       "value": "<p>Regole e categorie per gestire oggetti, armi, armature, animali e componenti di qualità scadente.</p>",

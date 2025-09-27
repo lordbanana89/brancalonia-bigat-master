@@ -3,7 +3,7 @@
   "_key": "!item!labisacciadelpellegrinomorto737587",
   "name": "La Bisaccia del Pellegrino Morto",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
       "value": "<p>Borsa di tela consumata che non si riempie mai</p><h3>Proprietà</h3><p>Contiene sempre 1 razione di cibo e 1 fiasca d'acqua ogni alba</p><h3>Storia</h3><p><em>Il pellegrino morì di fame con la bisaccia piena</em></p><h3>Maledizione</h3><p><strong>Il cibo sa di cenere e l'acqua di lacrime</strong></p><p>Il cibo sa di cenere e l'acqua di lacrime</p>",

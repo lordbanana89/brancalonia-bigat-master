@@ -3,7 +3,7 @@
   "_key": "!item!gearveh004slittae300ff",
   "name": "Slitta",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/environment/settlement/wagon-brown.webp",
   "system": {
     "description": {
       "value": "<p>Slitta di legno per terreni innevati, trainata da cavalli o mastini.</p>",

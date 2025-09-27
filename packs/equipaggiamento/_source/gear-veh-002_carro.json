@@ -3,7 +3,7 @@
   "_key": "!item!gearveh002carroefe01a",
   "name": "Carro",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/environment/settlement/wagon-brown.webp",
   "system": {
     "description": {
       "value": "<p>Veicolo a quattro ruote coperto; capacità di carico 600 kg.</p>",

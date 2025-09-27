@@ -3,7 +3,7 @@
   "_key": "!items!ildiariodelcondannatobcb7a1",
   "name": "Il Diario del Condannato",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
       "value": "<p>Libro con pagine che si scrivono da sole</p><h3>Proprietà</h3><p>Scrive automaticamente i peccati di chi lo possiede</p><h3>Storia</h3><p><em>Il condannato era innocente ma il diario lo incastrò</em></p>",

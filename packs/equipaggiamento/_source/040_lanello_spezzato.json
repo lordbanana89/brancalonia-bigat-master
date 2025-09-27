@@ -3,7 +3,7 @@
   "_key": "!item!lanellospezzato4dc57d",
   "name": "L'Anello Spezzato",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
       "value": "<p>Due metà di un anello nuziale</p><h3>Proprietà</h3><p>Chi possiede entrambe le metà può controllare chi indossa una metà</p><h3>Storia</h3><p><em>Gli amanti furono divisi dalla guerra</em></p>",

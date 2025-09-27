@@ -1,15 +1,15 @@
-2025/09/27-12:18:07.572435 16f80f000 Recovering log #44
-2025/09/27-12:18:07.573298 16f80f000 Delete type=0 #44
-2025/09/27-12:18:07.573336 16f80f000 Delete type=3 #42
-2025/09/27-12:18:07.576253 16f89b000 Level-0 table #50: started
-2025/09/27-12:18:07.577080 16f89b000 Level-0 table #50: 90204 bytes OK
-2025/09/27-12:18:07.577173 16f89b000 Delete type=0 #48
-2025/09/27-12:18:07.577230 16f89b000 Manual compaction at level-0 from '!item!animal001asinoomuloa0a104' @ 72057594037927935 : 1 .. '!item!zappadarme1f9dac' @ 0 : 0; will stop at (end)
-2025/09/27-12:18:07.577243 16f89b000 Manual compaction at level-1 from '!item!animal001asinoomuloa0a104' @ 72057594037927935 : 1 .. '!item!zappadarme1f9dac' @ 0 : 0; will stop at '!item!zappadarme1f9dac' @ 834 : 1
-2025/09/27-12:18:07.577247 16f89b000 Compacting 1@1 + 1@2 files
-2025/09/27-12:18:07.578382 16f89b000 Generated table #51@1: 234 keys, 90204 bytes
-2025/09/27-12:18:07.578392 16f89b000 Compacted 1@1 + 1@2 files => 90204 bytes
-2025/09/27-12:18:07.578455 16f89b000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-12:18:07.578496 16f89b000 Delete type=2 #50
-2025/09/27-12:18:07.578590 16f89b000 Delete type=2 #46
-2025/09/27-12:18:07.578676 16f89b000 Manual compaction at level-1 from '!item!zappadarme1f9dac' @ 834 : 1 .. '!item!zappadarme1f9dac' @ 0 : 0; will stop at (end)
+2025/09/27-13:12:22.284401 17337f000 Recovering log #49
+2025/09/27-13:12:22.285729 17337f000 Delete type=3 #47
+2025/09/27-13:12:22.285786 17337f000 Delete type=0 #49
+2025/09/27-13:12:22.289297 174423000 Level-0 table #55: started
+2025/09/27-13:12:22.290280 174423000 Level-0 table #55: 90141 bytes OK
+2025/09/27-13:12:22.290376 174423000 Delete type=0 #53
+2025/09/27-13:12:22.290456 174423000 Manual compaction at level-0 from '!item!animal001asinoomuloa0a104' @ 72057594037927935 : 1 .. '!item!zappadarme1f9dac' @ 0 : 0; will stop at (end)
+2025/09/27-13:12:22.290481 174423000 Manual compaction at level-1 from '!item!animal001asinoomuloa0a104' @ 72057594037927935 : 1 .. '!item!zappadarme1f9dac' @ 0 : 0; will stop at '!item!zappadarme1f9dac' @ 1068 : 1
+2025/09/27-13:12:22.290491 174423000 Compacting 1@1 + 1@2 files
+2025/09/27-13:12:22.291851 174423000 Generated table #56@1: 234 keys, 90141 bytes
+2025/09/27-13:12:22.291867 174423000 Compacted 1@1 + 1@2 files => 90141 bytes
+2025/09/27-13:12:22.291934 174423000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-13:12:22.291973 174423000 Delete type=2 #55
+2025/09/27-13:12:22.292066 174423000 Delete type=2 #51
+2025/09/27-13:12:22.292193 174423000 Manual compaction at level-1 from '!item!zappadarme1f9dac' @ 1068 : 1 .. '!item!zappadarme1f9dac' @ 0 : 0; will stop at (end)

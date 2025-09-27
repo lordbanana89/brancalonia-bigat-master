@@ -3,7 +3,7 @@
   "_key": "!items!scadente002armi98e54e",
   "name": "Armi Scadenti",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/equipment/chest/breastplate-rusted-grey.webp",
   "system": {
     "description": {
       "value": "<p>Armi improvvisate o maltenute che tendono a smontarsi al primo colpo.</p>",

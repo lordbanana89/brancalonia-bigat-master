@@ -3,7 +3,7 @@
   "_key": "!item!gearveh003carrozzae71025",
   "name": "Carrozza",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/environment/settlement/wagon-brown.webp",
   "system": {
     "description": {
       "value": "<p>Veicolo chiuso per passeggeri, richiede due cavalli e un cocchiere.</p>",

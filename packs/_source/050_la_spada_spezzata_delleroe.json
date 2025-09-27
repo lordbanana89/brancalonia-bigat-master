@@ -3,7 +3,7 @@
   "_key": "!items!laspadaspezzatadelleroe0d45bf",
   "name": "La Spada Spezzata dell'Eroe",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
       "value": "<p>Metà di una spada leggendaria</p><h3>Proprietà</h3><p>Anche spezzata conta come +2, se riforgiata diventa +5</p><h3>Storia</h3><p><em>Si spezzò uccidendo il drago</em></p>",

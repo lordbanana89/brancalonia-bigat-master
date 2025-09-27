@@ -3,7 +3,7 @@
   "_key": "!items!gearkit005strumentomusicalegenericofdd1d6",
   "name": "Strumento Musicale (Generico)",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/containers/bags/pack-adventuring-brown.webp",
   "system": {
     "description": {
       "value": "<p>Liuto, flauto, cornamusa o altro strumento tipico dei cantastorie.</p>",

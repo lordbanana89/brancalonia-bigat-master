@@ -3,7 +3,7 @@
   "_key": "!items!gearserv006passaggioincarrozzagiornoa805a9",
   "name": "Passaggio in Carrozza (giorno)",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/environment/settlement/wagon-brown.webp",
   "system": {
     "description": {
       "value": "<p>Trasporto cittadino con carrozza pubblica, spazio limitato ai bagagli.</p>",

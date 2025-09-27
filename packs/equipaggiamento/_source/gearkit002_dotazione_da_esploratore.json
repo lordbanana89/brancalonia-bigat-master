@@ -3,7 +3,7 @@
   "_key": "!item!gearkit002dotazionedaesploratore117c4b",
   "name": "Dotazione da Esploratore",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "img": "icons/containers/bags/pack-adventuring-brown.webp",
   "system": {
     "description": {
       "value": "<p>Comprende zaino, letto da campo, borraccia, 10 torce, pietra focaia, 10 giorni di razioni e corda di canapa da 15 m.</p>",
