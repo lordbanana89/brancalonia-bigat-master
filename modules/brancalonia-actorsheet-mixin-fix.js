@@ -21,37 +21,56 @@ Hooks.once("init", () => {
   console.log("🔧 Applying ActorSheetMixin compatibility patch...");
 
   // Metodo 1: Se il mixin non esiste ancora, crealo come no-op
-  if (typeof window.ActorSheetMixin === 'undefined') {
-    window.ActorSheetMixin = function(Base) {
-      // Ritorna la classe base senza modifiche
-      // perché il functionality è già in BaseActorSheet
-      return Base;
-    };
-    console.log("✅ Created no-op ActorSheetMixin");
+  try {
+    if (typeof window.ActorSheetMixin === 'undefined') {
+      Object.defineProperty(window, 'ActorSheetMixin', {
+        value: function(Base) {
+          // Ritorna la classe base senza modifiche
+          // perché il functionality è già in BaseActorSheet
+          return Base;
+        },
+        writable: true,
+        enumerable: false,
+        configurable: true
+      });
+      console.log("✅ Created no-op ActorSheetMixin");
+    }
+  } catch (e) {
+    console.warn("⚠️ Could not create ActorSheetMixin:", e.message);
   }
 
   // Metodo 2: Override del namespace dnd5e se accessibile
-  if (window.dnd5e?.applications?.actor) {
-    const originalActorSheetMixin = window.dnd5e.applications.actor.ActorSheetMixin;
-    if (originalActorSheetMixin) {
-      window.dnd5e.applications.actor.ActorSheetMixin = function(Base) {
-        // Chiama l'originale ma sopprimi il warning
-        const originalLogCompatibilityWarning = foundry.utils.logCompatibilityWarning;
-        foundry.utils.logCompatibilityWarning = () => {};
+  try {
+    if (window.dnd5e?.applications?.actor) {
+      const originalActorSheetMixin = window.dnd5e.applications.actor.ActorSheetMixin;
+      if (originalActorSheetMixin) {
+        // Usa defineProperty per evitare problemi con proprietà read-only
+        Object.defineProperty(window.dnd5e.applications.actor, 'ActorSheetMixin', {
+          value: function(Base) {
+            // Chiama l'originale ma sopprimi il warning
+            const originalLogCompatibilityWarning = foundry.utils.logCompatibilityWarning;
+            foundry.utils.logCompatibilityWarning = () => {};
 
-        let result;
-        try {
-          result = originalActorSheetMixin(Base);
-        } catch (e) {
-          console.warn("ActorSheetMixin failed, using Base directly:", e);
-          result = Base;
-        }
+            let result;
+            try {
+              result = originalActorSheetMixin(Base);
+            } catch (e) {
+              console.warn("ActorSheetMixin failed, using Base directly:", e);
+              result = Base;
+            }
 
-        foundry.utils.logCompatibilityWarning = originalLogCompatibilityWarning;
-        return result || Base;
-      };
-      console.log("✅ Wrapped dnd5e.applications.actor.ActorSheetMixin");
+            foundry.utils.logCompatibilityWarning = originalLogCompatibilityWarning;
+            return result || Base;
+          },
+          writable: true,
+          enumerable: true,
+          configurable: true
+        });
+        console.log("✅ Wrapped dnd5e.applications.actor.ActorSheetMixin");
+      }
     }
+  } catch (e) {
+    console.warn("⚠️ Could not wrap dnd5e ActorSheetMixin:", e.message);
   }
 
   // Metodo 3: Intercetta l'errore a livello di logCompatibilityWarning
