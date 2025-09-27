@@ -170,6 +170,103 @@
 
 })();
 
+// FIX CRITICO per getSceneControlButtons
+Hooks.on("getSceneControlButtons", (controls) => {
+  // Assicurati che controls sia un array iterabile
+  if (!Array.isArray(controls)) {
+    console.error("🚨 CRITICAL: getSceneControlButtons received non-array:", controls);
+
+    // Converti in array se possibile
+    if (controls && typeof controls === 'object') {
+      // Prova a convertire oggetto in array
+      try {
+        const controlsArray = Object.values(controls);
+        console.log("🔧 Converted controls object to array");
+
+        // Sostituisci l'oggetto con l'array
+        controls.length = 0;
+        controls.push(...controlsArray);
+      } catch (e) {
+        console.error("❌ Could not convert controls to array:", e);
+      }
+    }
+
+    // Se ancora non è un array, creane uno vuoto
+    if (!Array.isArray(controls)) {
+      console.warn("⚠️ Creating empty controls array");
+      return [];
+    }
+  }
+
+  // Assicurati che ogni control abbia tools come array
+  for (const control of controls) {
+    if (control && !Array.isArray(control.tools)) {
+      console.warn(`⚠️ Control ${control.name} has non-array tools, fixing...`);
+
+      if (control.tools && typeof control.tools === 'object') {
+        // Converti oggetto tools in array
+        control.tools = Object.values(control.tools);
+      } else {
+        // Crea array vuoto
+        control.tools = [];
+      }
+    }
+  }
+
+  return controls;
+});
+
+// Wrapper per intercettare errori di PST in getSceneControlButtons
+const originalCallAll = Hooks.callAll;
+Hooks.callAll = function(hook, ...args) {
+  if (hook === "getSceneControlButtons") {
+    console.log("🔍 Intercepting getSceneControlButtons hook");
+
+    try {
+      // Assicurati che il primo argomento sia un array
+      if (args.length > 0 && !Array.isArray(args[0])) {
+        console.warn("⚠️ getSceneControlButtons called with non-array, fixing...");
+
+        // Se è un oggetto, prova a convertirlo
+        if (args[0] && typeof args[0] === 'object') {
+          args[0] = Object.values(args[0]);
+        } else {
+          args[0] = [];
+        }
+      }
+
+      const result = originalCallAll.call(this, hook, ...args);
+
+      // Assicurati che il risultato sia un array
+      if (!Array.isArray(result)) {
+        console.warn("⚠️ getSceneControlButtons returned non-array, fixing...");
+        if (result && typeof result === 'object') {
+          return Object.values(result);
+        }
+        return [];
+      }
+
+      return result;
+
+    } catch (error) {
+      console.error("❌ Error in getSceneControlButtons:", error);
+
+      // Non rilanciare, ritorna array vuoto
+      return args[0] || [];
+    }
+  }
+
+  return originalCallAll.call(this, hook, ...args);
+};
+
+// Ripristina dopo l'inizializzazione
+Hooks.once("ready", () => {
+  setTimeout(() => {
+    Hooks.callAll = originalCallAll;
+    console.log("🔄 Hooks.callAll restored");
+  }, 3000);
+});
+
 // Hook di emergenza se PST è già caricato
 Hooks.once("ready", () => {
   // Verifica finale che tutto sia ok
