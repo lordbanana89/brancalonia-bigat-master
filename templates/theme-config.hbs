@@ -15,7 +15,7 @@
         <div class="color-input">
           <input type="color" name="theme.colors.controlContent" value="{{theme.colors.controlContent_noAlpha}}">
           <input type="text" name="theme.colors.controlContent" value="{{theme.colors.controlContent}}">
-          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+          <button type="button" data-action="resetColor"><i class="fas fa-undo"></i></button>
         </div>
       </div>
 
@@ -24,7 +24,7 @@
         <div class="color-input">
           <input type="color" name="theme.colors.controlBorder" value="{{theme.colors.controlBorder_noAlpha}}">
           <input type="text" name="theme.colors.controlBorder" value="{{theme.colors.controlBorder}}">
-          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+          <button type="button" data-action="resetColor"><i class="fas fa-undo"></i></button>
         </div>
       </div>
 
@@ -34,7 +34,7 @@
         <div class="color-input">
           <input type="color" name="theme.colors.appHeaderContent" value="{{theme.colors.appHeaderContent_noAlpha}}">
           <input type="text" name="theme.colors.appHeaderContent" value="{{theme.colors.appHeaderContent}}">
-          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+          <button type="button" data-action="resetColor"><i class="fas fa-undo"></i></button>
         </div>
       </div>
 
@@ -43,7 +43,7 @@
         <div class="color-input">
           <input type="color" name="theme.colors.appBodyContent" value="{{theme.colors.appBodyContent_noAlpha}}">
           <input type="text" name="theme.colors.appBodyContent" value="{{theme.colors.appBodyContent}}">
-          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+          <button type="button" data-action="resetColor"><i class="fas fa-undo"></i></button>
         </div>
       </div>
 
@@ -52,7 +52,7 @@
         <div class="color-input">
           <input type="color" name="theme.colors.appBodyPrimaryFill1" value="{{theme.colors.appBodyPrimaryFill1_noAlpha}}">
           <input type="text" name="theme.colors.appBodyPrimaryFill1" value="{{theme.colors.appBodyPrimaryFill1}}">
-          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+          <button type="button" data-action="resetColor"><i class="fas fa-undo"></i></button>
         </div>
       </div>
 
@@ -61,7 +61,7 @@
         <div class="color-input">
           <input type="color" name="theme.colors.appBodyPrimaryFill2" value="{{theme.colors.appBodyPrimaryFill2_noAlpha}}">
           <input type="text" name="theme.colors.appBodyPrimaryFill2" value="{{theme.colors.appBodyPrimaryFill2}}">
-          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+          <button type="button" data-action="resetColor"><i class="fas fa-undo"></i></button>
         </div>
       </div>
 
@@ -71,7 +71,7 @@
         <div class="color-input">
           <input type="color" name="theme.colors.miscLinkIdle" value="{{theme.colors.miscLinkIdle_noAlpha}}">
           <input type="text" name="theme.colors.miscLinkIdle" value="{{theme.colors.miscLinkIdle}}">
-          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+          <button type="button" data-action="resetColor"><i class="fas fa-undo"></i></button>
         </div>
       </div>
 
@@ -80,7 +80,7 @@
         <div class="color-input">
           <input type="color" name="theme.colors.miscLinkFocus" value="{{theme.colors.miscLinkFocus_noAlpha}}">
           <input type="text" name="theme.colors.miscLinkFocus" value="{{theme.colors.miscLinkFocus}}">
-          <button type="button" class="reset-color"><i class="fas fa-undo"></i></button>
+          <button type="button" data-action="resetColor"><i class="fas fa-undo"></i></button>
         </div>
       </div>
     </div>
@@ -121,7 +121,7 @@
           <option value="{{this.id}}">{{this.name}}</option>
           {{/each}}
         </select>
-        <button type="button" class="load-preset">
+        <button type="button" data-action="loadPreset">
           <i class="fas fa-download"></i> Carica
         </button>
       </div>
@@ -131,10 +131,10 @@
       <div class="form-group">
         <label>Gestione Tema</label>
         <div class="button-group">
-          <button type="button" class="export-theme">
+          <button type="button" data-action="exportTheme">
             <i class="fas fa-file-export"></i> Esporta Tema
           </button>
-          <button type="button" class="import-theme">
+          <button type="button" data-action="importTheme">
             <i class="fas fa-file-import"></i> Importa Tema
           </button>
         </div>

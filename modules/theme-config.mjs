@@ -6,27 +6,49 @@
 import { Theme } from './theme.mjs';
 import { MODULE, THEMES } from './settings.mjs';
 
-// Usa FormApplication V1 per compatibilità, ma con fix per deprecazioni
-export class ThemeConfig extends FormApplication {
+// Usa ApplicationV2 per compatibilità con Foundry V13+
+export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
   constructor(options = {}) {
     super(options);
     this.theme = game.settings.get(MODULE, 'theme');
   }
 
-  static get defaultOptions() {
-    // Usa foundry.utils.mergeObject invece del globale
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      id: 'brancalonia-theme-config',
-      title: 'Configurazione Tema Brancalonia',
-      template: 'modules/brancalonia-bigat/templates/theme-config.hbs',
-      width: 600,
-      height: 'auto',
-      tabs: [{ navSelector: '.tabs', contentSelector: '.content', initial: 'colors' }],
+  static DEFAULT_OPTIONS = {
+    id: 'brancalonia-theme-config',
+    title: 'Configurazione Tema Brancalonia',
+    tag: 'form',
+    form: {
+      handler: ThemeConfig.formHandler,
+      submitOnChange: false,
       closeOnSubmit: true
-    });
-  }
+    },
+    window: {
+      icon: 'fas fa-palette',
+      resizable: true
+    },
+    position: {
+      width: 600,
+      height: 'auto'
+    },
+    actions: {
+      loadPreset: ThemeConfig.loadPreset,
+      exportTheme: ThemeConfig.exportTheme,
+      importTheme: ThemeConfig.importTheme,
+      resetColor: ThemeConfig.resetColor
+    }
+  };
 
-  getData() {
+  static PARTS = {
+    form: {
+      template: 'modules/brancalonia-bigat/templates/theme-config.hbs'
+    }
+  };
+
+  tabGroups = {
+    primary: 'colors'
+  };
+
+  async _prepareContext(options) {
     // Funzione helper per rimuovere alpha channel dai colori
     const stripAlpha = (color) => {
       if (!color) return '#000000';
@@ -56,74 +78,93 @@ export class ThemeConfig extends FormApplication {
       presets: Object.keys(THEMES).map(key => ({
         id: key,
         name: key.charAt(0).toUpperCase() + key.slice(1)
-      }))
+      })),
+      tabs: this.tabGroups
     };
   }
 
-  activateListeners(html) {
-    super.activateListeners(html);
+  _onRender(context, options) {
+    const html = this.element;
 
-    // Converti jQuery a vanilla JS dove possibile
-    const element = html[0] || html;
-
-    // Carica preset
-    element.querySelector('.load-preset')?.addEventListener('click', ev => {
-      const preset = element.querySelector('#preset-select')?.value;
-      if (preset && THEMES[preset]) {
-        this.theme = THEMES[preset];
-        this.render();
-        ui.notifications.info(`Tema ${preset} caricato`);
-      }
+    // Anteprima live per input colore
+    html.querySelectorAll('input[type="color"]').forEach(input => {
+      input.addEventListener('input', () => this._updatePreview());
     });
 
-    // Esporta tema
-    element.querySelector('.export-theme')?.addEventListener('click', ev => {
-      const theme = Theme.from(this.theme);
-      theme.exportToJson();
-      ui.notifications.info('Tema esportato');
+    // Anteprima live per input testo
+    html.querySelectorAll('input[type="text"][name*="colors"]').forEach(input => {
+      input.addEventListener('input', () => this._updatePreview());
     });
+  }
 
-    // Importa tema
-    element.querySelector('.import-theme')?.addEventListener('click', async ev => {
-      const theme = await Theme.importFromJSONDialog();
-      if (theme) {
-        this.theme = theme;
-        this.render();
-        ui.notifications.success('Tema importato con successo');
-      }
-    });
+  static async loadPreset(event, target) {
+    const app = target.closest('.application').application;
+    const preset = app.element.querySelector('#preset-select')?.value;
+    if (preset && THEMES[preset]) {
+      app.theme = THEMES[preset];
+      await app.render();
+      ui.notifications.info(`Tema ${preset} caricato`);
+    }
+  }
 
-    // Anteprima live con jQuery per compatibilità
-    html.find('input[type="color"]').on('input', ev => {
-      this._updatePreview();
-    });
+  static async exportTheme(event, target) {
+    const app = target.closest('.application').application;
+    const theme = Theme.from(app.theme);
+    theme.exportToJson();
+    ui.notifications.info('Tema esportato');
+  }
 
-    // Reset colore con jQuery
-    html.find('.reset-color').click(ev => {
-      const input = $(ev.currentTarget).siblings('input');
-      const field = input.attr('name');
-      const defaultTheme = THEMES.default;
+  static async importTheme(event, target) {
+    const app = target.closest('.application').application;
+    const theme = await Theme.importFromJSONDialog();
+    if (theme) {
+      app.theme = theme;
+      await app.render();
+      ui.notifications.success('Tema importato con successo');
+    }
+  }
 
-      // Estrai il valore di default
-      const keys = field.replace('theme.', '').split('.');
-      let defaultValue = defaultTheme;
-      for (const key of keys) {
-        defaultValue = defaultValue[key];
-      }
+  static async resetColor(event, target) {
+    const button = target;
+    const colorInput = button.parentElement.querySelector('input[type="color"]');
+    const textInput = button.parentElement.querySelector('input[type="text"]');
+    const field = textInput.getAttribute('name');
+    const defaultTheme = THEMES.default;
 
-      input.val(defaultValue);
-      this._updatePreview();
-    });
+    // Estrai il valore di default
+    const keys = field.replace('theme.', '').split('.');
+    let defaultValue = defaultTheme;
+    for (const key of keys) {
+      defaultValue = defaultValue[key];
+    }
+
+    // Aggiorna entrambi gli input
+    textInput.value = defaultValue;
+    if (colorInput) {
+      const stripAlpha = (color) => {
+        if (!color) return '#000000';
+        if (color.length > 7) return color.substring(0, 7);
+        return color;
+      };
+      colorInput.value = stripAlpha(defaultValue);
+    }
+
+    // Aggiorna preview
+    const app = target.closest('.application').application;
+    app._updatePreview();
   }
 
   _updatePreview() {
-    // Aggiorna preview in tempo reale
-    const formData = this._getSubmitData();
-    const theme = Theme.from(formData.theme);
+    // Ottieni i dati del form corrente
+    const formElement = this.element.querySelector('form');
+    if (!formElement) return;
+
+    const formData = new FormDataExtended(formElement).object;
+    const theme = Theme.from(formData.theme || this.theme);
     theme.apply();
   }
 
-  async _updateObject(event, formData) {
+  static async formHandler(event, form, formData) {
     // Salva il tema
     await game.settings.set(MODULE, 'theme', formData.theme);
 
@@ -136,36 +177,18 @@ export class ThemeConfig extends FormApplication {
 
     ui.notifications.success('Tema salvato e applicato');
   }
-}
 
-// Nota per futuro: Quando Foundry v16 rimuoverà V1, considera la migrazione a:
-// export class ThemeConfigV2 extends foundry.applications.api.ApplicationV2 {
-//   static DEFAULT_OPTIONS = {
-//     id: "brancalonia-theme-config",
-//     title: "Configurazione Tema Brancalonia",
-//     tag: "form",
-//     form: {
-//       handler: ThemeConfigV2.formHandler,
-//       submitOnChange: false,
-//       closeOnSubmit: true
-//     },
-//     window: {
-//       icon: "fas fa-palette",
-//       resizable: true
-//     },
-//     position: {
-//       width: 600,
-//       height: "auto"
-//     }
-//   };
-//
-//   static PARTS = {
-//     form: {
-//       template: "modules/brancalonia-bigat/templates/theme-config.hbs"
-//     }
-//   };
-//
-//   static async formHandler(event, form, formData) {
-//     // Gestione form
-//   }
-// }
+  _getHeaderButtons() {
+    const buttons = super._getHeaderButtons();
+    buttons.unshift({
+      label: "Reset",
+      class: "reset-theme",
+      icon: "fas fa-undo",
+      onclick: () => {
+        this.theme = THEMES.default;
+        this.render();
+      }
+    });
+    return buttons;
+  }
+}
