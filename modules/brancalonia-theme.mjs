@@ -48,7 +48,21 @@ Hooks.once('ready', () => {
     });
   }
 
+  // Aggiungi comando console per reset emergenza
+  window.brancaloniaResetTheme = async () => {
+    const { THEMES } = await import('./settings.mjs');
+    const defaultTheme = THEMES.default;
+    await game.settings.set(MODULE, 'theme', defaultTheme);
+    await game.settings.set(MODULE, 'themePreset', 'default');
+    const theme = Theme.from(defaultTheme);
+    theme.apply();
+    ui.notifications.info('Tema ripristinato ai valori default');
+    console.log('Tema Brancalonia ripristinato con successo');
+    return 'Tema ripristinato!';
+  };
+
   console.log('Brancalonia | Sistema tema caricato con successo');
+  console.log('Per ripristinare il tema in caso di problemi, esegui nella console: brancaloniaResetTheme()');
 });
 
 export { MODULE, Theme };

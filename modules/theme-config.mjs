@@ -209,35 +209,65 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
   }
 
   static async formHandler(event, form, formData) {
-    // Estrai i dati dal form
-    const themeData = {
-      colors: {},
-      images: {},
-      advanced: formData.object['theme.advanced'] || ''
-    };
+    try {
+      // Estrai i dati dal form
+      const themeData = {
+        colors: {},
+        images: {},
+        advanced: formData.object['theme.advanced'] || ''
+      };
 
-    // Estrai i colori
-    for (const [key, value] of Object.entries(formData.object)) {
-      if (key.startsWith('theme.colors.')) {
-        const colorKey = key.replace('theme.colors.', '');
-        themeData.colors[colorKey] = value;
-      } else if (key.startsWith('theme.images.')) {
-        const imageKey = key.replace('theme.images.', '');
-        themeData.images[imageKey] = value;
+      // Funzione per validare colori
+      const isValidColor = (color) => {
+        if (!color) return false;
+        // Accetta formato hex con o senza alpha
+        return /^#[0-9A-F]{6}([0-9A-F]{2})?$/i.test(color);
+      };
+
+      // Estrai e valida i colori
+      for (const [key, value] of Object.entries(formData.object)) {
+        if (key.startsWith('theme.colors.')) {
+          const colorKey = key.replace('theme.colors.', '');
+          // Valida il colore prima di salvarlo
+          if (isValidColor(value)) {
+            themeData.colors[colorKey] = value;
+          } else {
+            // Usa il valore di default se il colore non è valido
+            const defaultTheme = THEMES.default;
+            const keys = colorKey.split('.');
+            let defaultValue = defaultTheme.colors;
+            for (const k of keys) {
+              defaultValue = defaultValue?.[k];
+            }
+            themeData.colors[colorKey] = defaultValue || '#000000';
+            console.warn(`Colore non valido per ${colorKey}: ${value}, usando default: ${defaultValue}`);
+          }
+        } else if (key.startsWith('theme.images.')) {
+          const imageKey = key.replace('theme.images.', '');
+          themeData.images[imageKey] = value;
+        }
       }
+
+      // Salva il tema
+      await game.settings.set(MODULE, 'theme', themeData);
+
+      // Applica immediatamente
+      const theme = Theme.from(themeData);
+      theme.apply();
+
+      // Aggiorna preset selector se è custom
+      await game.settings.set(MODULE, 'themePreset', 'custom');
+
+      ui.notifications.success('Tema salvato e applicato');
+    } catch (error) {
+      console.error('Errore nel salvare il tema:', error);
+      ui.notifications.error('Errore nel salvare il tema. Ripristino tema default.');
+
+      // Ripristina tema default in caso di errore
+      await game.settings.set(MODULE, 'theme', THEMES.default);
+      const defaultTheme = Theme.from(THEMES.default);
+      defaultTheme.apply();
     }
-
-    // Salva il tema
-    await game.settings.set(MODULE, 'theme', themeData);
-
-    // Applica immediatamente
-    const theme = Theme.from(themeData);
-    theme.apply();
-
-    // Aggiorna preset selector se è custom
-    await game.settings.set(MODULE, 'themePreset', 'custom');
-
-    ui.notifications.success('Tema salvato e applicato');
   }
 
   _getHeaderButtons() {
