@@ -10,10 +10,7 @@ Hooks.once('init', () => {
 
   console.log(`Brancalonia | Cache Buster v${version} - ${timestamp}`);
 
-  // Log per debug
-  if (typeof mergeObject !== 'undefined' && mergeObject !== foundry.utils.mergeObject) {
-    console.warn('Brancalonia | mergeObject globale ancora presente, usa foundry.utils.mergeObject');
-  }
+  // Log per debug - Rimosso test che causava l'errore stesso!
 
   // Forza ricaricamento se versione cambiata
   const lastVersion = localStorage.getItem('brancalonia-version');
@@ -25,15 +22,10 @@ Hooks.once('init', () => {
     Hooks.once('ready', () => {
       if (window.location.search.includes('force-reload')) return;
 
-      // Controlla se ci sono ancora riferimenti a mergeObject globale
-      try {
-        // Test access
-        const test = window.mergeObject;
-        if (test && !window.location.search.includes('nocache')) {
-          ui.notifications.warn('Cache modulo rilevata. Ricarica la pagina con CTRL+SHIFT+R per applicare gli aggiornamenti.');
-        }
-      } catch (e) {
-        // Va bene, mergeObject non accessibile
+      // Non testare mergeObject direttamente perché causa l'errore!
+      // Invece, verifica solo se la versione è cambiata
+      if (!window.location.search.includes('nocache')) {
+        console.log('Brancalonia | Nuova versione installata. Se vedi errori di deprecazione, ricarica con CTRL+SHIFT+R');
       }
     });
   }
