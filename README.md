@@ -443,6 +443,51 @@ I contenuti di Brancalonia sono proprietà di Acheron Games.
 
 ## 🔧 Sviluppo
 
+### 📋 CHECKLIST MANUTENZIONE RAPIDA
+
+#### Pre-Commit
+```bash
+# Validazione prima del commit
+node validate-project-compliance.cjs
+
+# Se compliance < 90%, eseguire fix
+node fix-all-compliance.cjs
+
+# Rivalidare
+node validate-project-compliance.cjs
+```
+
+#### Target Qualità
+- **Compliance Score**: ≥ 90%
+- **Errori Critici**: 0
+- **Warning**: < 10
+- **Active Effects**: > 100
+- **Test Coverage**: > 80%
+
+### ⚠️ ERRORI CRITICI DA NON COMMETTERE MAI
+
+#### 1. DIRECTORY DI VALIDAZIONE
+- ❌ **MAI** modificare solo `packs_normalized/` senza sincronizzare con `packs/`
+- ✅ **SEMPRE** sincronizzare entrambe le directory dopo ogni modifica
+- 📁 Struttura corretta:
+  ```
+  packs/[pack-name]/_source/*.json  <- File sorgente primari
+  packs_normalized/[pack-name]/_source/*.json  <- Copia per validazione
+  ```
+
+#### 2. UUID REFERENCES ESTERNI
+- ❌ **MAI** usare UUID di dnd5e core nei file Brancalonia (es: `Compendium.dnd5e.items.Item.*`)
+- ✅ **SEMPRE** creare item locali o lasciare vuoto
+- 📝 Formato corretto UUID Brancalonia:
+  ```json
+  "uuid": "Compendium.brancalonia.[pack-name].Item.[item-id]"
+  ```
+
+#### 3. HOOK DEPRECATI FOUNDRY V13
+- ❌ `renderChatMessage` → ✅ `renderChatMessageHTML`
+- ❌ `data.actor` → ✅ `app.actor` in renderActorSheetV2
+- ❌ jQuery `html` → ✅ DOM element (usa `$(html)` se serve jQuery)
+
 ### ⚠️ SCOPERTA CRITICA: Compilazione Compendi per Foundry v13
 
 #### Il Problema dei Compendi Vuoti/Incompleti
@@ -673,32 +718,32 @@ Per verificare che il fix funzioni:
 
 ### Script di Utility
 
-#### add-keys.cjs
-Aggiunge il campo `_key` a tutti i documenti JSON in `_source/`
+#### Script Critici di Manutenzione
+- **validate-project-compliance.cjs**: Validazione completa progetto con report dettagliato
+- **fix-all-compliance.cjs**: Fix automatico di tutti i problemi noti
+- **compile-with-keys.cjs**: Compila pack preservando `_key` (critico per Foundry v13!)
+- **verify-packs.cjs**: Verifica integrità database compilati
 
-#### compile-with-keys.cjs
-Compila i pack preservando il campo `_key` (alternativa al CLI)
+#### Script di Fix Specifici
+- **add-keys.cjs**: Aggiunge `_key` a tutti i documenti JSON
+- **add-richtooltip.js**: Aggiunge richTooltip per compatibilità D&D 5e v3.3+
+- **fix-pack-structure.cjs**: Corregge struttura directory database
+- **clean-rules-emoji.py**: Pulisce formattazione regole per v13
 
-#### fix-pack-structure.cjs
-Corregge la struttura delle directory spostando i DB nella posizione corretta
+#### Script di Linking
+- **link-items-in-rules.js**: Collegamenti automatici tra regole e oggetti
+- **map-content-links.js**: Mappa collegamenti per sistema interattivo
+- **remove-h1-titles.py**: Rimuove titoli H1 duplicati
 
-#### verify-packs.cjs
-Verifica che tutti i documenti nei database abbiano il campo `_key`
+## 📚 DOCUMENTAZIONE AGGIUNTIVA
 
-#### add-richtooltip.js
-Aggiunge la struttura richTooltip a tutti gli item per compatibilità con D&D 5e v3.3+
-
-#### clean-rules-emoji.py
-Rimuove emoji e pulisce la formattazione dalle regole per compatibilità v13
-
-#### link-items-in-rules.js
-Crea collegamenti automatici tra regole e oggetti nei compendi (294 righe)
-
-#### map-content-links.js
-Mappa tutti i collegamenti tra contenuti per il sistema interattivo (188 righe)
-
-#### remove-h1-titles.py
-Rimuove titoli H1 duplicati dalle regole per formattazione pulita
+### File Documentazione Essenziali
+- `MAINTENANCE_GUIDE.md` - Guida completa manutenzione e processi CI/CD
+- `UI_CUSTOMIZATION.md` - Sistema theming rinascimentale italiano completo
+- `CRITICAL_LESSONS_LEARNED.md` - Errori critici da non ripetere
+- `D&D5E_TECHNICAL_DISCOVERIES.md` - Scoperte tecniche repository D&D 5e
+- `MULTI_AGENT_SYSTEM.md` - Architettura sistema orchestrazione agent
+- `scripts/USAGE_GUIDE.md` - Guida agent debugger con esempi pratici
 
 ---
 
