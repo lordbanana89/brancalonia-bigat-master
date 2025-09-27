@@ -46,11 +46,27 @@ Hooks.once('ready', () => {
 
 // Supporto per tema scuro (opzionale)
 Hooks.on('renderSettingsConfig', (app, html) => {
-  const themeMode = game.settings.get('core', 'colorScheme');
-  if (themeMode === 'dark') {
-    document.body.classList.add('theme-dark');
-  } else {
-    document.body.classList.remove('theme-dark');
+  try {
+    // In Foundry v13, colorScheme potrebbe non esistere o essere configurato diversamente
+    // Controlla se il setting esiste prima di accedervi
+    const settings = game.settings.settings;
+    const hasColorScheme = settings.has('core.colorScheme');
+
+    if (hasColorScheme) {
+      const themeMode = game.settings.get('core', 'colorScheme');
+      if (themeMode === 'dark') {
+        document.body.classList.add('theme-dark');
+      } else {
+        document.body.classList.remove('theme-dark');
+      }
+    } else {
+      // Fallback: controlla se il body ha già una classe tema
+      // o usa il tema di default del sistema
+      console.log('Brancalonia | colorScheme setting non disponibile, uso tema default');
+    }
+  } catch (error) {
+    // Gestisci silenziosamente l'errore se il setting non esiste
+    console.log('Brancalonia | Tema scuro non configurabile:', error.message);
   }
 });
 
