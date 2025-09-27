@@ -121,32 +121,26 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
   try {
     // Verifica che i metodi esistano prima di usarli
     if (typeof dice3d.addDicePreset === 'function') {
-      // Preset principale per d20 con tema Brancalonia
+      // NON creare preset - causano errori in DSN v5
+      console.log('🎲 Skipping dice presets - using colorsets only');
+      /* Commentato perché causa errori
       dice3d.addDicePreset({
         type: 'd20',
         labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
                 '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
-        bumpMaps: [],
-        emissiveMaps: [],
-        emissive: '#000000',
-        colorset: 'branca-goldwax',
-        shape: 'd20',  // IMPORTANTE: shape è richiesto
-        font: 'Alegreya'
+        system: 'dnd5e',
+        colorset: 'branca-goldwax'
       });
+      */
 
-      // Preset per d6 (più comune dopo d20)
+      // Preset commentati - causano errori
+      /*
       dice3d.addDicePreset({
         type: 'd6',
-        labels: ['1', '2', '3', '4', '5', '6'],
-        bumpMaps: [],
-        emissiveMaps: [],
-        emissive: '#000000',
-        colorset: 'branca-parchment',
-        shape: 'd6',  // IMPORTANTE: shape è richiesto
-        font: 'Alegreya'
+        system: 'dnd5e',
+        colorset: 'branca-parchment'
       });
-
-      console.log('🎲 Brancalonia Dice Presets: Created d20 and d6 presets');
+      */
     } else {
       console.warn('⚠️ Dice So Nice addDicePreset method not available');
     }

@@ -122,7 +122,9 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
 
   // Funzione per creare stub
   function createCanvasStubs() {
-    if (typeof Canvas !== 'undefined' && Canvas.prototype) {
+    // Usa l'API moderna di Foundry v13
+    const CanvasClass = foundry?.canvas?.Canvas || globalThis.Canvas;
+    if (CanvasClass?.prototype) {
       console.log("🔧 Creating Canvas stubs...");
 
     // Lista completa di TUTTI i metodi che PST potrebbe cercare
