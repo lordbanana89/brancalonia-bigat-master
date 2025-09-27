@@ -61,7 +61,7 @@ Hooks.once("init", () => {
     { old: 'JournalVideoPageSheet', new: 'foundry.appv1.sheets.JournalVideoPageSheet' },
 
     // Applications Sheets
-    { old: 'CardsConfig', new: 'foundry.applications.sheets.CardDeckConfig' },
+    { old: 'CardDeckConfig', new: 'foundry.applications.sheets.CardDeckConfig' },
     { old: 'CardConfig', new: 'foundry.applications.sheets.CardConfig' },
 
     // Handlebars
@@ -90,11 +90,18 @@ Hooks.once("init", () => {
       }
 
       // Se il nuovo namespace esiste e il vecchio no, crea l'alias
-      if (target && !window[fix.old]) {
-        window[fix.old] = target;
+      // Usa hasOwnProperty per evitare di triggerare warning
+      if (target && !window.hasOwnProperty(fix.old)) {
+        // Usa Object.defineProperty per creare l'alias
+        Object.defineProperty(window, fix.old, {
+          get() { return target; },
+          set(value) { target = value; },
+          enumerable: true,
+          configurable: true
+        });
         fixedCount++;
         console.log(`  ✅ Aliased ${fix.old} → ${fix.new}`);
-      } else if (window[fix.old]) {
+      } else if (window.hasOwnProperty(fix.old)) {
         skippedCount++;
         // Il vecchio esiste già, non fare nulla
       }

@@ -88,6 +88,9 @@ console.warn = function(...args) {
          message.includes("SceneNavigation") ||
          message.includes("Token") ||
          message.includes("ClientSettings") ||
+         message.includes("CardsConfig") ||
+         message.includes("CardConfig") ||
+         message.includes("CardDeckConfig") ||
          message.includes("JournalTextPageSheet") ||
          message.includes("Canvas") ||
          message.includes("WallsLayer") ||
