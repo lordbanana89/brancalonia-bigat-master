@@ -7,12 +7,62 @@
 console.log("🔧 Brancalonia Third-Party Fix - Intercepting deprecated APIs");
 
 // ============================================
-// FIX IMMEDIATO - PRIMA DI TUTTI GLI ALTRI MODULI
+// FIX IMMEDIATO E PERSISTENTE - PRIMA DI TUTTI
 // ============================================
 
 // Questo codice deve eseguire IMMEDIATAMENTE, non in un hook
 (function() {
   console.log("🚨 Emergency patching deprecated APIs from third-party modules");
+
+  // SUPER AGGRESSIVO - Definisci SUBITO i globali
+  // prima che qualsiasi altro modulo possa accedervi
+
+  // Definisci un getter che ritorna sempre l'API moderna
+  Object.defineProperty(globalThis, 'ClientSettings', {
+    get() {
+      return foundry?.helpers?.ClientSettings || this._clientSettings;
+    },
+    set(value) {
+      this._clientSettings = value;
+    },
+    configurable: true,
+    enumerable: false
+  });
+
+  Object.defineProperty(globalThis, 'SceneNavigation', {
+    get() {
+      return foundry?.applications?.ui?.SceneNavigation || this._sceneNav;
+    },
+    set(value) {
+      this._sceneNav = value;
+    },
+    configurable: true,
+    enumerable: false
+  });
+
+  Object.defineProperty(globalThis, 'Token', {
+    get() {
+      return foundry?.canvas?.placeables?.Token || this._token;
+    },
+    set(value) {
+      this._token = value;
+    },
+    configurable: true,
+    enumerable: false
+  });
+
+  Object.defineProperty(globalThis, 'JournalTextPageSheet', {
+    get() {
+      return foundry?.appv1?.sheets?.JournalTextPageSheet || this._journalSheet;
+    },
+    set(value) {
+      this._journalSheet = value;
+    },
+    configurable: true,
+    enumerable: false
+  });
+
+  console.log("✅ Global API redirects installed");
 
   // Salva riferimenti alle API moderne
   const modernAPIs = {
