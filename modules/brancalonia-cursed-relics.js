@@ -32,18 +32,31 @@ class CimeliMaledetti {
         const pack = game.packs.get("brancalonia-bigat.equipaggiamento");
         if (!pack) return;
 
-        const items = await pack.getDocuments();
-        items.forEach(item => {
-            if (item.flags?.brancalonia?.categoria === "cimelo") {
-                this.cimeli.set(item.name, {
-                    proprieta: item.flags.brancalonia.proprieta_originale,
-                    maledizione: item.flags.brancalonia.maledizione,
-                    storia: item.flags.brancalonia.storia
-                });
-            }
-        });
+        try {
+            const items = await pack.getDocuments();
+            items.forEach(item => {
+                // Fix strength values before processing
+                if (item.system?.strength !== undefined) {
+                    const strength = item.system.strength;
+                    if (typeof strength !== 'number' || isNaN(strength)) {
+                        // Convert to valid integer
+                        item.system.strength = 0;
+                    }
+                }
 
-        console.log(`Brancalonia | Caricati ${this.cimeli.size} cimeli`);
+                if (item.flags?.brancalonia?.categoria === "cimelo") {
+                    this.cimeli.set(item.name, {
+                        proprieta: item.flags.brancalonia.proprieta_originale,
+                        maledizione: item.flags.brancalonia.maledizione,
+                        storia: item.flags.brancalonia.storia
+                    });
+                }
+            });
+
+            console.log(`Brancalonia | Caricati ${this.cimeli.size} cimeli`);
+        } catch (error) {
+            console.error("Brancalonia | Errore caricamento cimeli:", error);
+        }
     }
 
     /**
