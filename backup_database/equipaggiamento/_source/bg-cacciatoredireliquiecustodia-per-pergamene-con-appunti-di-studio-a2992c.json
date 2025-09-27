@@ -1,0 +1,38 @@
+{
+  "_id": "bg-cacciatoredireliquiecustodia-per-pergamene-con-appunti-di-studio-a2992c",
+  "_key": "!items!bg-cacciatoredireliquiecustodia-per-pergamene-con-appunti-di-studio-a2992c",
+  "name": "Custodia per pergamene con appunti di studio",
+  "type": "loot",
+  "img": "icons/containers/bags/case-scroll-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Custodia per pergamene con appunti di studio - Equipaggiamento iniziale del background cacciatore_di_reliquie.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "cacciatore_di_reliquie"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "5imw6a1fznbp23ia",
+  "_key": "!items!5imw6a1fznbp23ia",
+  "name": "Astuzia Svanzica",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "I Svanzici sono astuti e carismatici. +2 Carisma.",
+      "chat": ""
+    },
+    "requirements": "Svanzici",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "fwbtb7jrkabnucvk",
+      "name": "Bonus cha",
+      "icon": "icons/svg/upgrade.svg",
+      "changes": [
+        {
+          "key": "system.abilities.cha.value",
+          "mode": 2,
+          "value": 2
+        }
+      ],
+      "disabled": false,
+      "transfer": true
+    }
+  ],
+  "flags": {}
+}

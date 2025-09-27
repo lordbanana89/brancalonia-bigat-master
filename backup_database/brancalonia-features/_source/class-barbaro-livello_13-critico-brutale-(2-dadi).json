@@ -1,0 +1,25 @@
+{
+  "_id": "aiyocmlc1d8lmd1a",
+  "_key": "!items!aiyocmlc1d8lmd1a",
+  "name": "Critico Brutale (2 dadi)",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>Privilegio di classe del Barbaro di livello 13.</p>",
+      "chat": ""
+    },
+    "requirements": "Barbaro livello 13",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

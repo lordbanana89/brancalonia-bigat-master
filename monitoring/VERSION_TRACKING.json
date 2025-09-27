@@ -1,0 +1,29 @@
+{
+  "initialized": "2025-09-27T09:12:00",
+  "brancalonia_version": "3.21.0",
+  "dnd5e_compatibility": {
+    "minimum": "5.0.0",
+    "verified": "5.1.9",
+    "maximum": "5.2.x"
+  },
+  "tracking_branches": [
+    "release-5.1.9",
+    "release-5.2.0",
+    "main"
+  ],
+  "version_history": {},
+  "last_check": null,
+  "status": "initialized",
+  "monitoring_config": {
+    "check_interval_hours": 24,
+    "auto_apply_safe_patches": true,
+    "create_backups": true,
+    "notification_enabled": true,
+    "critical_paths": [
+      "packs/**/*.json",
+      "templates/**/*.json",
+      "lang/**/*.json",
+      "*.json"
+    ]
+  }
+}

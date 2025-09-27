@@ -39,6 +39,7 @@
     ]
   },
   "esmodules": [
+    "modules/brancalonia-theme.mjs",
     "modules/brancalonia-compat-fix.js",
     "modules/brancalonia-init.js",
     "modules/brancalonia-config-fix.js",
@@ -73,12 +74,27 @@
     "modules/favori-system.js",
     "modules/rest-system.js",
     "modules/level-cap.js",
-    "modules/brancalonia-mechanics.js"
+    "modules/brancalonia-mechanics.js",
+    "modules/brancalonia-ui-hooks.js",
+    "modules/brancalonia-sheets.js",
+    "modules/brancalonia-ui-config.js"
   ],
   "styles": [
+    {
+      "src": "styles/brancalonia-theme-system.css",
+      "layer": "system"
+    },
+    {
+      "src": "styles/brancalonia-theme-module.css",
+      "layer": "module"
+    },
     "brancalonia.css",
+    "styles/brancalonia-ui.css",
     "styles/brancalonia-systems.css",
-    "styles/brancalonia-rules.css"
+    "styles/brancalonia-rules.css",
+    "styles/brancalonia-enhanced.css",
+    "styles/brancalonia-character-sheets.css",
+    "styles/brancalonia-ui-elements.css"
   ],
   "languages": [
     {
@@ -257,7 +273,17 @@
     "brancalonia-bigat": {
       "fullImplementation": true,
       "mechanicsCount": 283,
-      "tablesCount": 360
+      "tablesCount": 360,
+      "uiEnhanced": true,
+      "italianTheme": true,
+      "renaissanceStyle": true,
+      "tavernAtmosphere": true,
+      "customCharacterSheets": true,
+      "advancedThemeSystem": true,
+      "dynamicThemes": true,
+      "layeredCSS": true,
+      "themePresets": 4,
+      "importExportThemes": true
     }
   },
   "url": "https://github.com/lordbanana89/brancalonia-bigat-master",

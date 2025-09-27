@@ -1,0 +1,80 @@
+{
+  "timestamp": "2025-09-27 10:03:36",
+  "duration": 48.90520882606506,
+  "successful": 10,
+  "failed": 2,
+  "agents": {
+    "CLASS_FIXER": {
+      "success": true,
+      "output": "===========================================================\n\n📊 STATISTICHE:\n  - Classi analizzate: 12\n  - Errori trovati: 5\n  - Fix applicati: 5\n\n⚠️ ERRORI TROVATI:\n  - monaco.json: Aggiunto SpellcastingValue advancement\n  - warlock.json: Aggiunto SpellcastingValue advancement\n  - guerriero.json: Aggiunto SpellcastingValue advancement\n  - barbaro.json: Aggiunto SpellcastingValue advancement\n  - ladro.json: Aggiunto SpellcastingValue advancement\n\n✅ FIX APPLICATI:\n  - monaco.json: Schema corretto secondo D&D 5e v5.1.9\n  - warlock.json: Schema corretto secondo D&D 5e v5.1.9\n  - guerriero.json: Schema corretto secondo D&D 5e v5.1.9\n  - barbaro.json: Schema corretto secondo D&D 5e v5.1.9\n  - ladro.json: Schema corretto secondo D&D 5e v5.1.9\n\n============================================================\nSCHEMA D&D 5e v5.1.9 APPLICATO CON SUCCESSO\nAdvancement system completamente validato\n============================================================\n\n📄 Report salvato in: class_fixer_report.txt\n",
+      "stats": "",
+      "duration": 0.06879591941833496
+    },
+    "RESTORE_CONTENT": {
+      "success": true,
+      "output": "esario: 3 item\n✅ Ripristinato duro: 4 item\n✅ Ripristinato azzeccagarbugli: 6 item\n✅ Ripristinato staffetta: 5 item\n✅ Ripristinato attaccabrighe: 4 item\n✅ Ripristinato brado: 5 item\n✅ Ripristinato lucignolo: 3 item\n✅ Ripristinato prelato: 4 item\n\n📚 AGGIUNTA SPELL PROGRESSION ALLE CLASSI...\n✅ Aggiunto SpellcastingValue a warlock (pact)\n\n⚡ AGGIUNTA SCALE VALUES...\n✅ Aggiunto Attacco Furtivo a ladro\n✅ Aggiunto Punti Ki a monaco\n✅ Aggiunto Arti Marziali a monaco\n✅ Aggiunto Movimento Senza Armatura a monaco\n✅ Aggiunto Invocazioni Mistiche a warlock\n\n============================================================\nREPORT RIPRISTINO CONTENUTI\n============================================================\n✅ Item creati: 0\n✅ Background ripristinati: 18\n\n============================================================\nMAI PIÙ RIMUOVERE CONTENUTI - SOLO IMPLEMENTARE!\n============================================================\n\n✅ Ripristino completato!\nOra compila i pack con: ./scripts/compile-all-packs.sh\n",
+      "stats": "",
+      "duration": 0.07744979858398438
+    },
+    "DEBUGGER": {
+      "success": false,
+      "output": "",
+      "stats": "",
+      "duration": 0.0785226821899414
+    },
+    "UI": {
+      "success": true,
+      "output": "s module: /Users/erik/Desktop/brancalonia-bigat-master/modules/brancalonia-ui-hooks.js\n✅ Updated module.json with UI configurations\n✅ Created UI customization documentation: /Users/erik/Desktop/brancalonia-bigat-master/UI_CUSTOMIZATION.md\n\n============================================================\n✅ Brancalonia UI/UX Customization Complete!\n\n📋 Summary of created files:\n   • Enhanced CSS with Italian Renaissance theme\n   • Character sheet customizations\n   • UI hooks for D&D 5e overrides\n   • Asset directories with documentation\n   • Updated module.json configuration\n   • Comprehensive UI documentation\n\n🎭 Features implemented:\n   • Infamia, Baraonda, Lavori Sporchi, Rifugio trackers\n   • Italian Renaissance color palette and fonts\n   • Ornate borders, frames, and decorative elements\n   • Enhanced character sheets with tavern atmosphere\n   • Custom chat styling and Italian UI text\n   • Responsive design with accessibility features\n\n🏛️ Welcome to Renaissance Italy! The taverns await...\n",
+      "stats": "",
+      "duration": 0.08167600631713867
+    },
+    "CLASSES": {
+      "success": true,
+      "output": " total advancements\n[INFO] Saved updated chierico.json\n[INFO] \nProcessing druido.json...\n[INFO] \n=== Fixing DRUIDO ===\n[INFO] Class druido updated with 19 total advancements\n[INFO] Saved updated druido.json\n[INFO] \nProcessing paladino.json...\n[INFO] \n=== Fixing PALADINO ===\n[INFO] Class paladino updated with 23 total advancements\n[INFO] Saved updated paladino.json\n[INFO] \nProcessing stregone.json...\n[INFO] \n=== Fixing STREGONE ===\n[INFO] Class stregone updated with 15 total advancements\n[INFO] Saved updated stregone.json\n[INFO] \nProcessing bardo.json...\n[INFO] \n=== Fixing BARDO ===\n[INFO] Class bardo updated with 22 total advancements\n[INFO] Saved updated bardo.json\n[INFO] Report saved to /Users/erik/Desktop/brancalonia-bigat-master/classes-fix-report.md\n[INFO] \n=== SUMMARY ===\n[INFO] Classes processed: 12\n[INFO] Advancements added: 0\n[INFO] Features created: 0\n[INFO] Spell progressions added: 0\n[INFO] Report saved to: /Users/erik/Desktop/brancalonia-bigat-master/classes-fix-report.md\n",
+      "stats": "",
+      "duration": 0.08211183547973633
+    },
+    "SPELL_FIXER": {
+      "success": true,
+      "output": "🚀 AGENT SPELL FIXER - Avvio\nSchema basato su D&D 5e v5.1.9\n\n📚 Trovati 167 incantesimi da verificare\n\n✅ Corretti 0 file di incantesimi\n\n============================================================\nAGENT SPELL FIXER - REPORT FINALE\n============================================================\n\n📊 STATISTICHE:\n  - Incantesimi analizzati: 167\n  - Errori trovati: 0\n  - Fix applicati: 0\n\n============================================================\nSCHEMA D&D 5e v5.1.9 APPLICATO CON SUCCESSO\n============================================================\n\n📄 Report salvato in: spell_fixer_report.txt\n",
+      "stats": "0 file corretti",
+      "duration": 0.11337494850158691
+    },
+    "ITEM_FIXER": {
+      "success": true,
+      "output": " bg-innamoratopennino-c29a33.json (loot)\n✅ Corretto: bg-bradopigmenti-colorati-b09aa0.json (loot)\n✅ Corretto: bg-duromazzo-di-minchiate-o-altro-gioco-77bbe2.json (loot)\n✅ Corretto: bg-lucignoloabito-comune-51bca6.json (equipment)\n✅ Corretto: spada001.json (weapon)\n\n✅ Corretti 55 file di equipaggiamento\n\n============================================================\nAGENT ITEM FIXER - REPORT FINALE\n============================================================\n\n📊 STATISTICHE:\n  - Item analizzati: 233\n  - Errori trovati: 1\n  - Fix applicati: 55\n\n📦 FIX PER TIPO:\n  - consumable: 1 item\n  - container: 14 item\n  - equipment: 13 item\n  - loot: 22 item\n  - tool: 1 item\n  - weapon: 4 item\n\n⚠️ ERRORI TROVATI:\n  - bg-azzeccagarbuglipergamena-683622.json: Tipo cambiato da 'loot' a 'consumable'\n\n============================================================\nSCHEMA D&D 5e v5.1.9 APPLICATO CON SUCCESSO\n============================================================\n\n📄 Report salvato in: item_fixer_report.txt\n",
+      "stats": "55 file corretti",
+      "duration": 0.12420392036437988
+    },
+    "FIX_REMAINING": {
+      "success": true,
+      "output": "🚀 AGENT FIX REMAINING - Risoluzione problemi finali\n\n🔧 Correzione UUID references dnd5e...\n\n📝 Aggiunta descrizioni mancanti...\n\n🎒 Creazione equipaggiamenti mancanti...\n\n============================================================\nAGENT FIX REMAINING - REPORT\n============================================================\n✅ UUID dnd5e corretti: 0\n✅ Descrizioni aggiunte: 0\n============================================================\n\n✨ Fix remaining completato!\n",
+      "stats": "",
+      "duration": 0.14046692848205566
+    },
+    "FEATURES": {
+      "success": false,
+      "output": "",
+      "stats": "",
+      "duration": 0.1614217758178711
+    },
+    "VALIDATOR": {
+      "success": true,
+      "output": " complete!\n\n==================================================\nVALIDATION SUMMARY\n==================================================\nErrors: 0\nWarnings: 54\nPasses: 845\nTotal Issues: 54\n\nFirst 5 Warnings:\n  - WARNING: Feature Costrutto has no description [tratto001_costrutto.json:0]\n  - WARNING: Feature Riparazione has no description [tratto002_riparazione.json:0]\n  - WARNING: Feature Costituzione Possente has no description [tratto-003_costituzione_possente.json:0]\n  - WARNING: Feature Resistenza Infernale has no description [tratto-001_resistenza_infernale.json:0]\n  - WARNING: Feature Versatilita Abilita has no description [tratto002_versatilita_abilita.json:0]\n  ... and 49 more warnings\n\nPack Summary:\n  equipaggiamento: 179 items\n  backgrounds: 21 items\n  regole: 62 items\n  brancalonia-features: 178 items\n  emeriticenze: 11 items\n  incantesimi: 73 items\n  sottoclassi: 35 items\n  razze: 9 items\n  classi: 1 items\n  npc: 45 items\n  talenti: 8 items\nReport saved to: validation-report.md\n",
+      "stats": "",
+      "duration": 0.28408288955688477
+    },
+    "DATABASE": {
+      "success": true,
+      "output": "assi\n  📊 Processed 12 files, fixed 0\n\n📁 Processing pack: emeriticenze\n  📊 Processed 11 files, fixed 0\n\n📁 Processing pack: equipaggiamento\n  📊 Processed 233 files, fixed 0\n\n📁 Processing pack: incantesimi\n  📊 Processed 167 files, fixed 0\n\n📁 Processing pack: macro\n  📊 Processed 6 files, fixed 0\n\n📁 Processing pack: npc\n  📊 Processed 44 files, fixed 0\n\n📁 Processing pack: razze\n  📊 Processed 8 files, fixed 0\n\n📁 Processing pack: regole\n  📊 Processed 55 files, fixed 0\n\n📁 Processing pack: rollable-tables\n  📊 Processed 81 files, fixed 0\n\n📁 Processing pack: rolltables\n  ! No JSON files found in /Users/erik/Desktop/brancalonia-bigat-master/packs/rolltables/_source\n\n📁 Processing pack: sottoclassi\n  📊 Processed 21 files, fixed 0\n\n📁 Processing pack: talenti\n  📊 Processed 8 files, fixed 0\n\n🔍 Checking for duplicates...\n\n📄 Report saved to: /Users/erik/Desktop/brancalonia-bigat-master/database-normalization-report.md\n\n✅ Database normalization completed!\n📊 Summary: 1041 files processed, 1 fixed, 0 errors\n",
+      "stats": "3 fix applicati",
+      "duration": 0.5778238773345947
+    },
+    "MONITOR": {
+      "success": true,
+      "output": " Analyzed 3750 files...\n📈 Analyzed 3800 files...\n📈 Analyzed 3850 files...\n📈 Analyzed 3900 files...\n📈 Analyzed 3950 files...\n📈 Analyzed 4000 files...\n📈 Analyzed 4050 files...\n📈 Analyzed 4100 files...\n📈 Analyzed 4150 files...\n📈 Analyzed 4200 files...\n📈 Analyzed 4250 files...\n📈 Analyzed 4300 files...\n📈 Analyzed 4350 files...\n📈 Analyzed 4400 files...\n📈 Analyzed 4450 files...\n📈 Analyzed 4500 files...\n📈 Analyzed 4550 files...\n📈 Analyzed 4600 files...\n✅ Analyzed 4615 data files successfully\n📝 Generating technical report...\n✅ Technical report saved to: /Users/erik/Desktop/brancalonia-bigat-master/technical-discoveries/dnd5e-structure-analysis.md\n📊 Raw findings saved to: /Users/erik/Desktop/brancalonia-bigat-master/technical-discoveries/dnd5e-structure-analysis.json\n\n✅ Analysis Complete!\n📄 Report: /Users/erik/Desktop/brancalonia-bigat-master/technical-discoveries/dnd5e-structure-analysis.md\n📊 Data: /Users/erik/Desktop/brancalonia-bigat-master/technical-discoveries/dnd5e-structure-analysis.json\n",
+      "stats": "",
+      "duration": 48.90477776527405
+    }
+  }
+}

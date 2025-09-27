@@ -1,0 +1,70 @@
+{
+  "id": "spell-base-003",
+  "nome": "Caratteristica Potenziata",
+  "nome_originale": "Enhance Ability",
+  "livello": 2,
+  "scuola": "Trasmutazione",
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Druido",
+    "Stregone",
+    "Mago"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Enhance Ability",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Enhance Ability).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
+  "name": "Spell Base 003 Caratteristica Potenziata",
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-base-003_caratteristica_potenziata",
+  "_key": "!items!spell-base-003_caratteristica_potenziata",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "spell",
+  "system": {
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": "",
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "",
+        "count": "",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "type": "",
+        "size": ""
+      }
+    }
+  }
+}

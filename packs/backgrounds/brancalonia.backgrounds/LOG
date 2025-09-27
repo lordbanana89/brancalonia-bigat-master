@@ -1,15 +1,15 @@
-2025/09/27-01:53:11.347949 1732b7000 Recovering log #8
-2025/09/27-01:53:11.348841 1732b7000 Delete type=3 #6
-2025/09/27-01:53:11.348890 1732b7000 Delete type=0 #8
-2025/09/27-01:53:11.351193 173b4f000 Level-0 table #14: started
-2025/09/27-01:53:11.351740 173b4f000 Level-0 table #14: 43651 bytes OK
-2025/09/27-01:53:11.351832 173b4f000 Delete type=0 #12
-2025/09/27-01:53:11.351920 173b4f000 Manual compaction at level-0 from '!items!ambulante' @ 72057594037927935 : 1 .. '!items!staffetta' @ 0 : 0; will stop at (end)
-2025/09/27-01:53:11.351938 173b4f000 Manual compaction at level-1 from '!items!ambulante' @ 72057594037927935 : 1 .. '!items!staffetta' @ 0 : 0; will stop at '!items!staffetta' @ 39 : 1
-2025/09/27-01:53:11.351943 173b4f000 Compacting 1@1 + 1@2 files
-2025/09/27-01:53:11.352534 173b4f000 Generated table #15@1: 13 keys, 43651 bytes
-2025/09/27-01:53:11.352541 173b4f000 Compacted 1@1 + 1@2 files => 43651 bytes
-2025/09/27-01:53:11.352587 173b4f000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-01:53:11.352621 173b4f000 Delete type=2 #14
-2025/09/27-01:53:11.352702 173b4f000 Delete type=2 #10
-2025/09/27-01:53:11.352951 173b4f000 Manual compaction at level-1 from '!items!staffetta' @ 39 : 1 .. '!items!staffetta' @ 0 : 0; will stop at (end)
+2025/09/27-10:03:36.852244 171647000 Recovering log #38
+2025/09/27-10:03:36.853087 171647000 Delete type=0 #38
+2025/09/27-10:03:36.853123 171647000 Delete type=3 #36
+2025/09/27-10:03:36.855247 171edf000 Level-0 table #44: started
+2025/09/27-10:03:36.855796 171edf000 Level-0 table #44: 42291 bytes OK
+2025/09/27-10:03:36.855870 171edf000 Delete type=0 #42
+2025/09/27-10:03:36.855931 171edf000 Manual compaction at level-0 from '!items!ambulante' @ 72057594037927935 : 1 .. '!items!staffetta' @ 0 : 0; will stop at (end)
+2025/09/27-10:03:36.855944 171edf000 Manual compaction at level-1 from '!items!ambulante' @ 72057594037927935 : 1 .. '!items!staffetta' @ 0 : 0; will stop at '!items!staffetta' @ 120 : 1
+2025/09/27-10:03:36.855948 171edf000 Compacting 1@1 + 1@2 files
+2025/09/27-10:03:36.856472 171edf000 Generated table #45@1: 14 keys, 42291 bytes
+2025/09/27-10:03:36.856481 171edf000 Compacted 1@1 + 1@2 files => 42291 bytes
+2025/09/27-10:03:36.856534 171edf000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-10:03:36.856561 171edf000 Delete type=2 #40
+2025/09/27-10:03:36.856623 171edf000 Delete type=2 #44
+2025/09/27-10:03:36.856673 171edf000 Manual compaction at level-1 from '!items!staffetta' @ 120 : 1 .. '!items!staffetta' @ 0 : 0; will stop at (end)

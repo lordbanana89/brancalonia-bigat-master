@@ -1,0 +1,15 @@
+2025/09/27-09:47:31.877815 17192f000 Recovering log #23
+2025/09/27-09:47:31.878780 17192f000 Delete type=3 #21
+2025/09/27-09:47:31.878835 17192f000 Delete type=0 #23
+2025/09/27-09:47:31.881823 1721c7000 Level-0 table #29: started
+2025/09/27-09:47:31.883020 1721c7000 Level-0 table #29: 148686 bytes OK
+2025/09/27-09:47:31.883099 1721c7000 Delete type=0 #27
+2025/09/27-09:47:31.883199 1721c7000 Manual compaction at level-0 from '!items!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!items!viluperac949b2' @ 0 : 0; will stop at (end)
+2025/09/27-09:47:31.883220 1721c7000 Manual compaction at level-1 from '!items!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!items!viluperac949b2' @ 0 : 0; will stop at '!items!viluperac949b2' @ 688 : 1
+2025/09/27-09:47:31.883225 1721c7000 Compacting 1@1 + 1@2 files
+2025/09/27-09:47:31.884807 1721c7000 Generated table #30@1: 44 keys, 148686 bytes
+2025/09/27-09:47:31.884819 1721c7000 Compacted 1@1 + 1@2 files => 148686 bytes
+2025/09/27-09:47:31.884878 1721c7000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-09:47:31.884931 1721c7000 Delete type=2 #29
+2025/09/27-09:47:31.885020 1721c7000 Delete type=2 #25
+2025/09/27-09:47:31.885082 1721c7000 Manual compaction at level-1 from '!items!viluperac949b2' @ 688 : 1 .. '!items!viluperac949b2' @ 0 : 0; will stop at (end)

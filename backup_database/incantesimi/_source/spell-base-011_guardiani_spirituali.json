@@ -1,0 +1,66 @@
+{
+  "id": "spell-base-011",
+  "nome": "Guardiani Spirituali",
+  "nome_originale": "Spirit Guardians",
+  "livello": 3,
+  "scuola": "Evocazione",
+  "classi": [
+    "Chierico"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Spirit Guardians",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Spirit Guardians).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
+  "name": "Spell Base 011 Guardiani Spirituali",
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-base-011_guardiani_spirituali",
+  "_key": "!items!spell-base-011_guardiani_spirituali",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "spell",
+  "system": {
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": "",
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "",
+        "count": "",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "type": "",
+        "size": ""
+      }
+    }
+  }
+}

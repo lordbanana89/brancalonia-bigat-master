@@ -1,0 +1,31 @@
+{
+  "_id": "9uf7e998wx6wu6v0",
+  "_key": "!items!9uf7e998wx6wu6v0",
+  "name": "Indomabile (2)",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Usa Indomabile due volte",
+      "chat": ""
+    },
+    "requirements": "Livello 13",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

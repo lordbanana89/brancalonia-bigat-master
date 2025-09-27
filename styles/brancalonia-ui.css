@@ -1,0 +1,727 @@
+/* ========================================
+   BRANCALONIA UI - ITALIAN RENAISSANCE THEME
+   Complete UI/UX Customization for Foundry VTT
+   ======================================== */
+
+/* ========================
+   CSS CUSTOM PROPERTIES
+   ======================== */
+:root {
+  /* Italian Renaissance Color Palette */
+  --brancalonia-ochre: #CC9966;
+  --brancalonia-sienna: #A0522D;
+  --brancalonia-umber: #8B4513;
+  --brancalonia-wine: #722F37;
+  --brancalonia-gold: #FFD700;
+  --brancalonia-bronze: #CD7F32;
+  --brancalonia-cream: #FFF8DC;
+  --brancalonia-parchment: #F4E4BC;
+  --brancalonia-terracotta: #CC5500;
+  --brancalonia-olive: #6B8E23;
+  --brancalonia-venetian-red: #C41E3A;
+  --brancalonia-florentine-gold: #D4AF37;
+
+  /* Typography */
+  --brancalonia-font-primary: 'EB Garamond', 'Palatino', 'Georgia', serif;
+  --brancalonia-font-secondary: 'IM Fell DW Pica', 'Cinzel', serif;
+  --brancalonia-font-decorative: 'Cinzel Decorative', 'UnifrakturMaguntia', cursive;
+
+  /* Spacing & Sizing */
+  --brancalonia-border-ornate: 3px solid var(--brancalonia-gold);
+  --brancalonia-shadow-soft: 0 2px 8px rgba(139, 69, 19, 0.3);
+  --brancalonia-shadow-strong: 0 4px 16px rgba(114, 47, 55, 0.5);
+  --brancalonia-radius: 8px;
+  --brancalonia-radius-large: 16px;
+
+  /* Textures & Overlays */
+  --brancalonia-texture-parchment: url('/modules/brancalonia-bigat/assets/ui/backgrounds/parchment.webp');
+  --brancalonia-texture-wood: url('/modules/brancalonia-bigat/assets/ui/backgrounds/wood.webp');
+  --brancalonia-texture-stone: url('/modules/brancalonia-bigat/assets/ui/backgrounds/stone.webp');
+
+  /* Animations */
+  --brancalonia-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brancalonia-parchment: #2C2416;
+    --brancalonia-cream: #3A342C;
+    --brancalonia-ochre: #8B6F47;
+    --brancalonia-gold: #B8860B;
+  }
+}
+
+/* ========================
+   GLOBAL THEME OVERRIDES
+   ======================== */
+body.brancalonia-theme {
+  font-family: var(--brancalonia-font-primary);
+  background:
+    radial-gradient(ellipse at top left, rgba(212, 175, 55, 0.1), transparent 40%),
+    radial-gradient(ellipse at bottom right, rgba(114, 47, 55, 0.1), transparent 40%),
+    linear-gradient(135deg, #2C1810, #1A0E08);
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=IM+Fell+DW+Pica:ital@0;1&family=Cinzel:wght@400;500;600&family=Cinzel+Decorative:wght@400;700&display=swap');
+
+/* ========================
+   FOUNDRY UI ELEMENTS
+   ======================== */
+
+/* Application Windows */
+.app.window-app {
+  background: linear-gradient(135deg,
+    var(--brancalonia-parchment) 0%,
+    var(--brancalonia-cream) 100%);
+  border: 2px solid var(--brancalonia-bronze);
+  border-radius: var(--brancalonia-radius);
+  box-shadow: var(--brancalonia-shadow-strong);
+  position: relative;
+}
+
+.app.window-app::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(212, 175, 55, 0.03) 10px,
+      rgba(212, 175, 55, 0.03) 20px
+    );
+  pointer-events: none;
+  border-radius: var(--brancalonia-radius);
+}
+
+/* Window Headers */
+.window-header {
+  background: linear-gradient(90deg,
+    var(--brancalonia-wine) 0%,
+    var(--brancalonia-umber) 50%,
+    var(--brancalonia-wine) 100%);
+  border-bottom: 2px solid var(--brancalonia-gold);
+  font-family: var(--brancalonia-font-secondary);
+  font-weight: 600;
+  color: var(--brancalonia-cream);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 8px 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.window-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 215, 0, 0.1) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.window-header .window-title {
+  font-family: var(--brancalonia-font-decorative);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Window Controls */
+.window-header .control {
+  color: var(--brancalonia-gold);
+  transition: var(--brancalonia-transition);
+}
+
+.window-header .control:hover {
+  color: var(--brancalonia-cream);
+  text-shadow: 0 0 8px var(--brancalonia-gold);
+}
+
+/* ========================
+   NAVIGATION & CONTROLS
+   ======================== */
+
+/* Navigation Tabs */
+.tabs {
+  background: linear-gradient(90deg,
+    var(--brancalonia-sienna),
+    var(--brancalonia-umber));
+  border-bottom: 2px solid var(--brancalonia-gold);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tabs .item {
+  background: linear-gradient(180deg,
+    var(--brancalonia-umber),
+    var(--brancalonia-wine));
+  border: 1px solid var(--brancalonia-bronze);
+  border-bottom: none;
+  color: var(--brancalonia-parchment);
+  font-family: var(--brancalonia-font-secondary);
+  font-weight: 500;
+  transition: var(--brancalonia-transition);
+  position: relative;
+  margin: 0 2px;
+}
+
+.tabs .item::before {
+  content: '⚜';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: var(--brancalonia-gold);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tabs .item.active::before {
+  opacity: 1;
+}
+
+.tabs .item:hover {
+  background: linear-gradient(180deg,
+    var(--brancalonia-sienna),
+    var(--brancalonia-umber));
+  color: var(--brancalonia-gold);
+}
+
+.tabs .item.active {
+  background: var(--brancalonia-parchment);
+  color: var(--brancalonia-wine);
+  border-color: var(--brancalonia-gold);
+  box-shadow: 0 -2px 4px rgba(212, 175, 55, 0.3);
+}
+
+/* Buttons */
+button, .dialog-button {
+  background: linear-gradient(135deg,
+    var(--brancalonia-bronze),
+    var(--brancalonia-sienna));
+  border: 2px solid var(--brancalonia-gold);
+  color: var(--brancalonia-cream);
+  font-family: var(--brancalonia-font-secondary);
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  padding: 6px 12px;
+  transition: var(--brancalonia-transition);
+  position: relative;
+  overflow: hidden;
+}
+
+button::before, .dialog-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(255, 215, 0, 0.3),
+    transparent);
+  transition: left 0.5s ease;
+}
+
+button:hover::before, .dialog-button:hover::before {
+  left: 100%;
+}
+
+button:hover, .dialog-button:hover {
+  background: linear-gradient(135deg,
+    var(--brancalonia-gold),
+    var(--brancalonia-bronze));
+  border-color: var(--brancalonia-florentine-gold);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+  transform: translateY(-1px);
+}
+
+button:active, .dialog-button:active {
+  transform: translateY(0);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background: var(--brancalonia-cream);
+  border: 1px solid var(--brancalonia-bronze);
+  border-radius: 4px;
+  color: var(--brancalonia-wine);
+  font-family: var(--brancalonia-font-primary);
+  padding: 4px 8px;
+  transition: var(--brancalonia-transition);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--brancalonia-gold);
+  box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
+  outline: none;
+}
+
+/* ========================
+   SIDEBAR CUSTOMIZATION
+   ======================== */
+
+#sidebar {
+  background: linear-gradient(180deg,
+    var(--brancalonia-wine),
+    var(--brancalonia-umber));
+  border-left: 3px solid var(--brancalonia-gold);
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+}
+
+#sidebar-tabs {
+  background: var(--brancalonia-umber);
+  border-bottom: 2px solid var(--brancalonia-gold);
+}
+
+#sidebar-tabs > .item {
+  color: var(--brancalonia-parchment);
+  transition: var(--brancalonia-transition);
+}
+
+#sidebar-tabs > .item:hover {
+  color: var(--brancalonia-gold);
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+#sidebar-tabs > .item.active {
+  background: linear-gradient(180deg,
+    var(--brancalonia-bronze),
+    var(--brancalonia-sienna));
+  color: var(--brancalonia-cream);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-tab {
+  background: var(--brancalonia-parchment);
+}
+
+.directory-header {
+  background: linear-gradient(90deg,
+    var(--brancalonia-sienna),
+    var(--brancalonia-umber));
+  border-bottom: 1px solid var(--brancalonia-gold);
+}
+
+.directory-item {
+  border-bottom: 1px solid rgba(205, 127, 50, 0.2);
+  transition: var(--brancalonia-transition);
+}
+
+.directory-item:hover {
+  background: rgba(255, 215, 0, 0.1);
+}
+
+/* ========================
+   CHAT PANEL STYLING
+   ======================== */
+
+#chat-log {
+  background:
+    linear-gradient(180deg,
+      rgba(244, 228, 188, 0.95),
+      rgba(255, 248, 220, 0.95));
+}
+
+.chat-message {
+  background: var(--brancalonia-cream);
+  border: 1px solid var(--brancalonia-bronze);
+  border-radius: var(--brancalonia-radius);
+  margin: 4px;
+  box-shadow: var(--brancalonia-shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.chat-message::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg,
+    var(--brancalonia-gold),
+    var(--brancalonia-bronze),
+    var(--brancalonia-gold));
+}
+
+.chat-message .message-header {
+  background: linear-gradient(90deg,
+    var(--brancalonia-umber),
+    var(--brancalonia-wine));
+  color: var(--brancalonia-cream);
+  padding: 6px 10px;
+  font-family: var(--brancalonia-font-secondary);
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.chat-message .message-content {
+  padding: 8px 10px;
+  font-family: var(--brancalonia-font-primary);
+  color: var(--brancalonia-wine);
+}
+
+/* Dice Rolls in Chat */
+.dice-roll {
+  background: linear-gradient(135deg,
+    rgba(255, 215, 0, 0.1),
+    rgba(205, 127, 50, 0.1));
+  border: 2px solid var(--brancalonia-gold);
+  border-radius: 6px;
+  padding: 8px;
+  margin: 6px 0;
+}
+
+.dice-formula {
+  font-family: var(--brancalonia-font-decorative);
+  color: var(--brancalonia-wine);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dice-total {
+  background: linear-gradient(135deg,
+    var(--brancalonia-gold),
+    var(--brancalonia-bronze));
+  color: var(--brancalonia-cream);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-family: var(--brancalonia-font-secondary);
+  font-weight: 700;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin: 6px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dice-total.critical {
+  background: linear-gradient(135deg,
+    #FFD700,
+    #FFA500);
+  animation: pulse-gold 1s ease-in-out infinite;
+}
+
+.dice-total.fumble {
+  background: linear-gradient(135deg,
+    var(--brancalonia-venetian-red),
+    var(--brancalonia-wine));
+  animation: pulse-red 1s ease-in-out infinite;
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 2px 6px rgba(255, 215, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.8);
+  }
+}
+
+@keyframes pulse-red {
+  0%, 100% {
+    box-shadow: 0 2px 6px rgba(196, 30, 58, 0.5);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(196, 30, 58, 0.8);
+  }
+}
+
+/* ========================
+   HOTBAR CUSTOMIZATION
+   ======================== */
+
+#hotbar {
+  background: linear-gradient(90deg,
+    var(--brancalonia-wine),
+    var(--brancalonia-umber),
+    var(--brancalonia-wine));
+  border: 2px solid var(--brancalonia-gold);
+  border-radius: var(--brancalonia-radius);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#hotbar .macro {
+  background: linear-gradient(135deg,
+    var(--brancalonia-bronze),
+    var(--brancalonia-sienna));
+  border: 2px solid var(--brancalonia-gold);
+  border-radius: 6px;
+  margin: 2px;
+  transition: var(--brancalonia-transition);
+  position: relative;
+  overflow: hidden;
+}
+
+#hotbar .macro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 215, 0, 0.2),
+    transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#hotbar .macro:hover::before {
+  opacity: 1;
+}
+
+#hotbar .macro:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-color: var(--brancalonia-florentine-gold);
+}
+
+#hotbar .macro.active {
+  background: linear-gradient(135deg,
+    var(--brancalonia-gold),
+    var(--brancalonia-bronze));
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#hotbar .macro img {
+  border-radius: 4px;
+  filter: sepia(20%) saturate(1.2);
+  transition: filter 0.3s ease;
+}
+
+#hotbar .macro:hover img {
+  filter: sepia(0%) saturate(1.5);
+}
+
+/* ========================
+   DIALOG BOXES
+   ======================== */
+
+.dialog {
+  background: var(--brancalonia-parchment);
+  border: 3px solid var(--brancalonia-gold);
+  border-radius: var(--brancalonia-radius-large);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.dialog::before,
+.dialog::after {
+  content: '⚜';
+  position: absolute;
+  color: var(--brancalonia-gold);
+  font-size: 24px;
+}
+
+.dialog::before {
+  top: 10px;
+  left: 10px;
+}
+
+.dialog::after {
+  bottom: 10px;
+  right: 10px;
+}
+
+.dialog .dialog-content {
+  padding: 20px;
+  font-family: var(--brancalonia-font-primary);
+  color: var(--brancalonia-wine);
+}
+
+.dialog .dialog-buttons {
+  background: linear-gradient(90deg,
+    var(--brancalonia-sienna),
+    var(--brancalonia-umber));
+  padding: 12px;
+  border-top: 2px solid var(--brancalonia-gold);
+}
+
+/* ========================
+   CONTEXT MENUS
+   ======================== */
+
+.context-menu {
+  background: var(--brancalonia-parchment);
+  border: 2px solid var(--brancalonia-gold);
+  border-radius: var(--brancalonia-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.context-menu .context-item {
+  color: var(--brancalonia-wine);
+  font-family: var(--brancalonia-font-secondary);
+  padding: 8px 12px;
+  transition: var(--brancalonia-transition);
+}
+
+.context-menu .context-item:hover {
+  background: linear-gradient(90deg,
+    var(--brancalonia-gold),
+    var(--brancalonia-bronze));
+  color: var(--brancalonia-cream);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================
+   TOOLTIPS
+   ======================== */
+
+.tooltip {
+  background: var(--brancalonia-wine);
+  border: 2px solid var(--brancalonia-gold);
+  color: var(--brancalonia-cream);
+  font-family: var(--brancalonia-font-primary);
+  border-radius: 6px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.tooltip::before {
+  border-color: var(--brancalonia-gold) transparent;
+}
+
+/* ========================
+   NOTIFICATION BANNERS
+   ======================== */
+
+.notification {
+  background: linear-gradient(135deg,
+    var(--brancalonia-bronze),
+    var(--brancalonia-sienna));
+  border: 2px solid var(--brancalonia-gold);
+  color: var(--brancalonia-cream);
+  font-family: var(--brancalonia-font-secondary);
+  border-radius: var(--brancalonia-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.notification.warning {
+  background: linear-gradient(135deg,
+    var(--brancalonia-terracotta),
+    var(--brancalonia-venetian-red));
+}
+
+.notification.info {
+  background: linear-gradient(135deg,
+    var(--brancalonia-olive),
+    #556B2F);
+}
+
+.notification.error {
+  background: linear-gradient(135deg,
+    #8B0000,
+    var(--brancalonia-venetian-red));
+}
+
+/* ========================
+   SCROLLBARS
+   ======================== */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brancalonia-parchment);
+  border: 1px solid var(--brancalonia-bronze);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg,
+    var(--brancalonia-bronze),
+    var(--brancalonia-sienna));
+  border: 1px solid var(--brancalonia-gold);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg,
+    var(--brancalonia-gold),
+    var(--brancalonia-bronze));
+}
+
+/* ========================
+   LOADING SCREENS
+   ======================== */
+
+#loading {
+  background: linear-gradient(135deg,
+    var(--brancalonia-wine),
+    var(--brancalonia-umber));
+}
+
+#loading-bar {
+  background: linear-gradient(90deg,
+    var(--brancalonia-gold),
+    var(--brancalonia-florentine-gold),
+    var(--brancalonia-gold));
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* ========================
+   ACCESSIBILITY SUPPORT
+   ======================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --brancalonia-gold: #FFD700;
+    --brancalonia-wine: #5A1F25;
+    --brancalonia-cream: #FFFFFF;
+  }
+}
+
+/* ========================
+   PRINT STYLES
+   ======================== */
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .window-header,
+  #sidebar,
+  #hotbar,
+  .control,
+  button {
+    display: none;
+  }
+
+  .app.window-app {
+    border: 1px solid black;
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+}

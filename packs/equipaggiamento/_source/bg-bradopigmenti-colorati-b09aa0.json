@@ -1,0 +1,38 @@
+{
+  "_id": "bg-bradopigmenti-colorati-b09aa0",
+  "_key": "!items!bg-bradopigmenti-colorati-b09aa0",
+  "name": "Pigmenti colorati",
+  "type": "loot",
+  "img": "icons/tools/scribal/paints-paint-brush.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pigmenti colorati - Equipaggiamento iniziale del background brado.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "brado"
+    }
+  }
+}

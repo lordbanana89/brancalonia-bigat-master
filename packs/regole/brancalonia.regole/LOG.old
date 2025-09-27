@@ -1,0 +1,14 @@
+2025/09/27-09:49:03.904105 171617000 Recovering log #22
+2025/09/27-09:49:03.905070 171617000 Delete type=3 #20
+2025/09/27-09:49:03.905121 171617000 Delete type=0 #22
+2025/09/27-09:49:03.906968 171eaf000 Level-0 table #28: started
+2025/09/27-09:49:03.907265 171eaf000 Level-0 table #28: 4179 bytes OK
+2025/09/27-09:49:03.907456 171eaf000 Delete type=0 #26
+2025/09/27-09:49:03.907535 171eaf000 Manual compaction at level-0 from '!items!armi' @ 72057594037927935 : 1 .. '!items!stradetipo' @ 0 : 0; will stop at '!items!stradetipo' @ 397 : 1
+2025/09/27-09:49:03.907545 171eaf000 Compacting 1@0 + 1@1 files
+2025/09/27-09:49:03.907871 171eaf000 Generated table #29@0: 116 keys, 5282 bytes
+2025/09/27-09:49:03.907882 171eaf000 Compacted 1@0 + 1@1 files => 5282 bytes
+2025/09/27-09:49:03.907955 171eaf000 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/27-09:49:03.907995 171eaf000 Delete type=2 #28
+2025/09/27-09:49:03.908054 171eaf000 Delete type=2 #24
+2025/09/27-09:49:03.908174 171eaf000 Manual compaction at level-0 from '!items!stradetipo' @ 397 : 1 .. '!items!stradetipo' @ 0 : 0; will stop at (end)

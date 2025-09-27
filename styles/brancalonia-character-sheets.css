@@ -1,0 +1,1124 @@
+/* ========================================
+   BRANCALONIA CHARACTER SHEET STYLES
+   Complete Italian Renaissance Character Sheet Design
+   Enhanced with authentic period aesthetics
+   ======================================== */
+
+/* Character Sheet Layout */
+.dnd5e.sheet.actor.character {
+  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
+  border: 3px solid #8B4513;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px #65432144;
+}
+
+/* Header Enhancements */
+.dnd5e.sheet.actor .sheet-header {
+  background:
+    linear-gradient(45deg, transparent 25%, #8B451322 25%),
+    linear-gradient(135deg, #8B4513, #722F37);
+  border: 3px solid #FFD700;
+  border-radius: 8px;
+  box-shadow:
+    0 4px 8px #65432166,
+    inset 0 1px 0 #FFD70044;
+  position: relative;
+}
+
+.dnd5e.sheet.actor .sheet-header::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 20px;
+  background: #FFD700;
+  border-radius: 20px 20px 0 0;
+  box-shadow: inset 0 2px 4px #654321;
+}
+
+/* Profile Image Frame */
+.dnd5e.sheet.actor .sheet-header .profile-img {
+  border: 4px solid #FFD700;
+  border-radius: 50%;
+  box-shadow:
+    0 0 15px #FFD70066,
+    inset 0 0 10px #65432133;
+  position: relative;
+}
+
+.brancalonia-portrait-frame {
+  position: relative;
+  display: inline-block;
+}
+
+.brancalonia-portrait-frame::before {
+  content: "⚜";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #FFD700;
+  color: #8B4513;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/* Character Name */
+.dnd5e.sheet.actor .sheet-header h1 {
+  font-family: EB Garamond Bold;
+  color: #FFD700;
+  text-shadow:
+    2px 2px 4px #654321,
+    0 0 10px #FFD70066;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+}
+
+.dnd5e.sheet.actor .sheet-header h1::before,
+.dnd5e.sheet.actor .sheet-header h1::after {
+  content: "❦";
+  font-size: 0.7em;
+  color: #CD7F32;
+  margin: 0 10px;
+}
+
+/* Class and Level */
+.dnd5e.sheet.actor .sheet-header .charlevel {
+  background: linear-gradient(90deg, transparent, #CD7F32, transparent);
+  color: #FFF8DC;
+  font-family: EB Garamond Bold;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Tabs */
+.dnd5e.sheet.actor .sheet-tabs {
+  background: linear-gradient(135deg, #8B4513, #654321);
+  border-bottom: 3px solid #FFD700;
+  border-radius: 8px 8px 0 0;
+}
+
+.dnd5e.sheet.actor .sheet-tabs .item {
+  background: #CD7F32;
+  border: 1px solid #FFD700;
+  border-bottom: none;
+  color: #FFF8DC;
+  font-family: Benton;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 2px;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+}
+
+.dnd5e.sheet.actor .sheet-tabs .item:hover {
+  background: #FFD700;
+  color: #8B4513;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px #65432166;
+}
+
+.dnd5e.sheet.actor .sheet-tabs .item.active {
+  background: #FFD700;
+  color: #8B4513;
+  box-shadow:
+    0 2px 4px #654321,
+    inset 0 2px 4px #FFF8DC44;
+  transform: translateY(-1px);
+}
+
+/* Ability Scores */
+.dnd5e.sheet.actor .ability-scores {
+  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
+  border: 2px solid #CD7F32;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.dnd5e.sheet.actor .ability-scores .ability {
+  background: #FFF8DC;
+  border: 2px solid #8B4513;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+  margin: 2px;
+  box-shadow: inset 0 2px 4px #65432122;
+  transition: all 0.2s ease;
+}
+
+.dnd5e.sheet.actor .ability-scores .ability:hover {
+  background: #F4E4BC;
+  border-color: #FFD700;
+  transform: scale(1.05);
+}
+
+.dnd5e.sheet.actor .ability-scores .ability .ability-name {
+  font-family: Benton;
+  font-weight: bold;
+  color: #722F37;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+.dnd5e.sheet.actor .ability-scores .ability .ability-score {
+  font-family: EB Garamond Bold;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #8B0000;
+}
+
+.dnd5e.sheet.actor .ability-scores .ability .ability-mod {
+  font-family: EB Garamond Regular;
+  color: #654321;
+  font-size: 1em;
+}
+
+/* Resources */
+.dnd5e.sheet.actor .resources {
+  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
+  border: 2px solid #CD7F32;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.dnd5e.sheet.actor .resources .resource {
+  background: #FFF8DC;
+  border: 1px solid #8B4513;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 3px 0;
+}
+
+/* Brancalonia-specific Resources */
+.brancalonia-infamia {
+  background: linear-gradient(90deg, #8B0000, #800020) !important;
+  border: 2px solid #FFD700 !important;
+  color: #FFF8DC !important;
+  text-shadow: 1px 1px 2px #654321;
+}
+
+.brancalonia-infamia label {
+  font-family: EB Garamond Bold;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.brancalonia-baraonda {
+  background: #8B4513 !important;
+  border: 2px solid #CD7F32 !important;
+  color: #FFF8DC !important;
+}
+
+.brancalonia-baraonda label {
+  font-family: EB Garamond Bold;
+  font-weight: bold;
+  color: #F4E4BC;
+}
+
+.brancalonia-lavori-sporchi {
+  background: linear-gradient(45deg, #722F3744, transparent) !important;
+  border: 1px dashed #FFD700 !important;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.brancalonia-lavori-sporchi h3 {
+  font-family: EB Garamond Bold;
+  color: #722F37;
+  margin: 0 0 8px 0;
+}
+
+.brancalonia-rifugio {
+  background: #F4E4BC !important;
+  border: 2px solid #8B4513 !important;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: inset 0 0 10px #65432133;
+}
+
+.brancalonia-rifugio h3 {
+  font-family: EB Garamond Bold;
+  color: #8B4513;
+  text-align: center;
+  margin: 0 0 10px 0;
+  border-bottom: 2px solid #CD7F32;
+  padding-bottom: 5px;
+}
+
+.rifugio-details {
+  margin: 8px 0;
+}
+
+.rifugio-details label {
+  font-family: Benton;
+  font-weight: bold;
+  color: #722F37;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.rifugio-details input,
+.rifugio-details select,
+.rifugio-details textarea {
+  width: 100%;
+  background: #FFF8DC;
+  border: 1px solid #CD7F32;
+  border-radius: 3px;
+  padding: 4px;
+  font-family: EB Garamond Regular;
+}
+
+/* Skills */
+.dnd5e.sheet.actor .skills-list {
+  background: #F4E4BC;
+  border: 2px solid #CD7F32;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dnd5e.sheet.actor .skills-list .skill {
+  border-bottom: 1px dotted #CD7F32;
+  padding: 3px 0;
+  transition: background 0.2s ease;
+}
+
+.dnd5e.sheet.actor .skills-list .skill:hover {
+  background: #FFF8DC;
+}
+
+.dnd5e.sheet.actor .skills-list .skill .skill-name {
+  font-family: EB Garamond Regular;
+  color: #722F37;
+}
+
+/* Combat Stats */
+.dnd5e.sheet.actor .combat-stats {
+  background: linear-gradient(135deg, #722F37, #8B0000);
+  color: #FFF8DC;
+  border: 3px solid #FFD700;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.dnd5e.sheet.actor .combat-stats .combat-stat {
+  background: #65432144;
+  border: 1px solid #CD7F32;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 5px;
+}
+
+.dnd5e.sheet.actor .combat-stats .combat-stat .stat-name {
+  font-family: Benton;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFD700;
+}
+
+.dnd5e.sheet.actor .combat-stats .combat-stat .stat-value {
+  font-family: EB Garamond Bold;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FFF8DC;
+}
+
+/* Inventory */
+.dnd5e.sheet.actor .inventory {
+  background: #F4E4BC;
+  border: 2px solid #CD7F32;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dnd5e.sheet.actor .inventory .item {
+  border-bottom: 1px solid #CD7F32;
+  padding: 5px 0;
+  transition: background 0.2s ease;
+}
+
+.dnd5e.sheet.actor .inventory .item:hover {
+  background: #FFF8DC;
+}
+
+.dnd5e.sheet.actor .inventory .item .item-name {
+  font-family: EB Garamond Regular;
+  color: #722F37;
+  font-weight: bold;
+}
+
+/* Spells */
+.dnd5e.sheet.actor .spellbook {
+  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
+  border: 2px solid #CD7F32;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dnd5e.sheet.actor .spellbook .spell-level {
+  background: #722F37;
+  color: #FFF8DC;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 8px 0;
+  font-family: EB Garamond Bold;
+  text-align: center;
+}
+
+/* Biography */
+.dnd5e.sheet.actor .biography {
+  background: #F4E4BC;
+  border: 2px solid #CD7F32;
+  border-radius: 8px;
+  padding: 15px;
+  font-family: EB Garamond Regular;
+  line-height: 1.6;
+}
+
+.dnd5e.sheet.actor .biography h1,
+.dnd5e.sheet.actor .biography h2,
+.dnd5e.sheet.actor .biography h3 {
+  color: #722F37;
+  font-family: EB Garamond Bold;
+}
+
+/* Ornamental Elements */
+.brancalonia-ornament {
+  position: absolute;
+  color: #FFD700;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px #654321;
+}
+
+.brancalonia-ornament.top {
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brancalonia-ornament.bottom {
+  bottom: -15px;
+  right: 20px;
+}
+
+.brancalonia-character-indicator {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1.2em;
+  filter: drop-shadow(1px 1px 2px #654321);
+}
+
+/* ========================
+   BRANCALONIA-SPECIFIC SECTIONS
+   ======================== */
+
+/* Infamia Tracker */
+.infamia-tracker {
+  background: linear-gradient(135deg, #722F37, #8B0000);
+  border: 3px solid #FFD700;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.infamia-tracker::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 215, 0, 0.1) 10px,
+    rgba(255, 215, 0, 0.1) 20px
+  );
+  pointer-events: none;
+}
+
+.infamia-tracker .resource-header h3 {
+  color: #FFD700;
+  font-family: 'Cinzel Decorative', serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.infamia-bar {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #CD7F32;
+  border-radius: 20px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.infamia-fill {
+  background: linear-gradient(90deg, #FFD700, #FFA500);
+  height: 100%;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.infamia-segments {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+
+.infamia-segments .segment {
+  flex: 1;
+  border-right: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.infamia-status .status-label {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: #FFD700;
+  font-family: 'IM Fell DW Pica', serif;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* Baraonda Tracker */
+.baraonda-tracker {
+  background: linear-gradient(135deg, #8B4513, #A0522D);
+  border: 3px solid #CD7F32;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  position: relative;
+}
+
+.baraonda-value-circle {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, #FFD700, #CD7F32);
+  border: 4px solid #8B4513;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 0 20px rgba(205, 127, 50, 0.5);
+}
+
+.baraonda-value-circle input {
+  background: transparent;
+  border: none;
+  color: #8B4513;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  width: 60px;
+}
+
+.baraonda-moves {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.baraonda-move {
+  background: rgba(255, 248, 220, 0.1);
+  border: 1px solid #CD7F32;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.baraonda-move.available {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: #FFD700;
+  cursor: pointer;
+}
+
+.baraonda-move.available:hover {
+  background: rgba(255, 215, 0, 0.3);
+  transform: translateX(5px);
+}
+
+.baraonda-move .move-cost {
+  background: #CD7F32;
+  color: #FFF8DC;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Compagnia Section */
+.compagnia-section {
+  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
+  border: 4px solid #8B4513;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.compagnia-section .section-header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.compagnia-section .section-header h2 {
+  color: #722F37;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
+}
+
+.compagnia-info .field-group {
+  margin: 15px 0;
+}
+
+.compagnia-info label {
+  display: block;
+  color: #8B4513;
+  font-family: 'IM Fell DW Pica', serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.compagnia-members {
+  background: rgba(139, 69, 19, 0.1);
+  border: 2px dashed #CD7F32;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.member-entry {
+  background: #FFF8DC;
+  border: 1px solid #CD7F32;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.member-entry:hover {
+  background: #F4E4BC;
+  transform: translateX(5px);
+}
+
+.reputation-tracker {
+  margin: 15px 0;
+}
+
+.reputation-slider {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #8B0000, #FFD700, #228B22);
+  border-radius: 4px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.reputation-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(circle, #FFD700, #CD7F32);
+  border: 2px solid #8B4513;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.reputation-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-family: 'IM Fell DW Pica', serif;
+  font-style: italic;
+}
+
+/* Lavori Sporchi Section */
+.lavori-sporchi-section {
+  background: linear-gradient(135deg, rgba(114, 47, 55, 0.1), rgba(139, 69, 19, 0.1));
+  border: 3px solid #CD7F32;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.lavori-summary {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.stat-box {
+  background: #FFF8DC;
+  border: 2px solid #8B4513;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.stat-label {
+  display: block;
+  color: #722F37;
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  display: block;
+  color: #8B4513;
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.lavoro-entry {
+  background: #FFF8DC;
+  border: 2px solid #CD7F32;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.lavoro-entry.completed {
+  opacity: 0.7;
+  background: linear-gradient(135deg, #F4E4BC, #E8D5B7);
+}
+
+.lavoro-entry:hover {
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Rifugio Section Enhanced */
+.rifugio-section {
+  background:
+    linear-gradient(135deg, rgba(244, 228, 188, 0.95), rgba(255, 248, 220, 0.95)),
+    url('/modules/brancalonia-bigat/assets/ui/backgrounds/parchment.webp');
+  background-size: cover;
+  border: 4px solid #8B4513;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(139, 69, 19, 0.2);
+}
+
+.comfort-selector {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.comfort-level {
+  background: #FFF8DC;
+  border: 2px solid #CD7F32;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.comfort-level.selected {
+  background: linear-gradient(135deg, #FFD700, #CD7F32);
+  border-color: #8B4513;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.4);
+}
+
+.comfort-level:hover {
+  background: #F4E4BC;
+  transform: translateY(-2px);
+}
+
+.comfort-icon {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.feature-checkbox {
+  background: #FFF8DC;
+  border: 2px solid #CD7F32;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.feature-checkbox:hover {
+  background: #F4E4BC;
+  border-color: #8B4513;
+}
+
+.feature-checkbox input[type="checkbox"]:checked + .feature-icon {
+  color: #FFD700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Malefatte Section */
+.malefatte-section {
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.1), rgba(114, 47, 55, 0.1));
+  border: 3px solid #8B0000;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.crime-counter {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.crime-type {
+  background: #8B0000;
+  color: #FFF8DC;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: 'IM Fell DW Pica', serif;
+  font-weight: bold;
+}
+
+.malefatta-entry {
+  background: rgba(255, 248, 220, 0.9);
+  border-left: 4px solid #8B0000;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.malefatta-entry:hover {
+  background: #FFF8DC;
+  transform: translateX(5px);
+}
+
+/* Section Ornaments */
+.section-ornament {
+  text-align: center;
+  color: #CD7F32;
+  font-size: 18px;
+  margin: 10px 0;
+  text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.3);
+}
+
+.corner-ornaments {
+  pointer-events: none;
+}
+
+.corner-ornaments .ornament {
+  position: absolute;
+  color: #FFD700;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
+}
+
+.corner-ornaments .top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.corner-ornaments .top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.corner-ornaments .bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.corner-ornaments .bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Italian Renaissance Portrait Frame */
+.portrait-frame {
+  position: relative;
+  display: inline-block;
+}
+
+.portrait-frame.renaissance {
+  padding: 8px;
+  background: linear-gradient(45deg,
+    #FFD700 0%,
+    #CD7F32 25%,
+    #FFD700 50%,
+    #CD7F32 75%,
+    #FFD700 100%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 20px rgba(255, 215, 0, 0.4),
+    inset 0 0 10px rgba(139, 69, 19, 0.3);
+}
+
+.frame-ornament {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #FFD700, #CD7F32);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #8B4513;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.frame-ornament.top-left {
+  top: -5px;
+  left: -5px;
+}
+
+.frame-ornament.top-right {
+  top: -5px;
+  right: -5px;
+}
+
+.frame-ornament.bottom-left {
+  bottom: -5px;
+  left: -5px;
+}
+
+.frame-ornament.bottom-right {
+  bottom: -5px;
+  right: -5px;
+}
+
+/* Character Titles */
+.character-titles {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.soprannome-input,
+.titolo-input {
+  background: rgba(255, 248, 220, 0.5);
+  border: 1px solid #CD7F32;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 2px;
+  font-family: 'IM Fell DW Pica', serif;
+  font-style: italic;
+  color: #722F37;
+  text-align: center;
+}
+
+.soprannome-input::placeholder,
+.titolo-input::placeholder {
+  color: rgba(114, 47, 55, 0.5);
+}
+
+/* Tooltip Anchors */
+.tooltip-anchor {
+  display: inline-block;
+  background: #CD7F32;
+  color: #FFF8DC;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 10px;
+  cursor: help;
+  margin-left: 5px;
+}
+
+.tooltip-anchor:hover {
+  background: #FFD700;
+  color: #8B4513;
+}
+
+/* Action Buttons */
+.baraonda-btn,
+.add-lavoro-btn,
+.add-member-btn,
+.add-malefatta-btn,
+.archive-lavori-btn {
+  background: linear-gradient(135deg, #CD7F32, #8B4513);
+  border: 2px solid #FFD700;
+  color: #FFF8DC;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: 'IM Fell DW Pica', serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.baraonda-btn::before,
+.add-lavoro-btn::before,
+.add-member-btn::before,
+.add-malefatta-btn::before,
+.archive-lavori-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(255, 215, 0, 0.3),
+    transparent);
+  transition: left 0.5s ease;
+}
+
+.baraonda-btn:hover::before,
+.add-lavoro-btn:hover::before,
+.add-member-btn:hover::before,
+.add-malefatta-btn:hover::before,
+.archive-lavori-btn:hover::before {
+  left: 100%;
+}
+
+.baraonda-btn:hover,
+.add-lavoro-btn:hover,
+.add-member-btn:hover,
+.add-malefatta-btn:hover,
+.archive-lavori-btn:hover {
+  background: linear-gradient(135deg, #FFD700, #CD7F32);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.4);
+}
+
+/* Shoddy Equipment Indicator */
+.shoddy-item {
+  position: relative;
+  opacity: 0.9;
+}
+
+.quality-indicator.shoddy {
+  display: inline-block;
+  margin-right: 4px;
+  filter: sepia(100%) saturate(200%) hue-rotate(15deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dnd5e.sheet.actor .sheet-header h1 {
+    font-size: 1.4em;
+  }
+
+  .dnd5e.sheet.actor .ability-scores .ability {
+    margin: 1px;
+    padding: 4px;
+  }
+
+  .brancalonia-rifugio {
+    padding: 10px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .lavori-summary {
+    flex-direction: column;
+  }
+
+  .comfort-selector {
+    flex-wrap: wrap;
+  }
+
+  .reputation-labels {
+    font-size: 12px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .brancalonia-character-sheet {
+    background: white !important;
+    color: black !important;
+  }
+
+  .baraonda-btn,
+  .add-lavoro-btn,
+  .add-member-btn,
+  .add-malefatta-btn,
+  .archive-lavori-btn {
+    display: none;
+  }
+
+  .infamia-tracker,
+  .baraonda-tracker,
+  .compagnia-section,
+  .rifugio-section {
+    border: 1px solid black !important;
+    background: white !important;
+  }
+}

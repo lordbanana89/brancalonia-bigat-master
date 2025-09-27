@@ -1,0 +1,14 @@
+2025/09/27-09:47:31.971063 16fe57000 Recovering log #32
+2025/09/27-09:47:31.972081 16fe57000 Delete type=3 #30
+2025/09/27-09:47:31.972147 16fe57000 Delete type=0 #32
+2025/09/27-09:47:31.973700 16fee3000 Level-0 table #38: started
+2025/09/27-09:47:31.973928 16fee3000 Level-0 table #38: 5879 bytes OK
+2025/09/27-09:47:31.974010 16fee3000 Delete type=0 #36
+2025/09/27-09:47:31.974088 16fee3000 Manual compaction at level-0 from '!items!gattolupescoc729ef' @ 72057594037927935 : 1 .. '!items!variantesvanzicia5de9b' @ 0 : 0; will stop at '!items!variantesvanzicia5de9b' @ 72 : 1
+2025/09/27-09:47:31.974094 16fee3000 Compacting 1@0 + 1@1 files
+2025/09/27-09:47:31.974370 16fee3000 Generated table #39@0: 16 keys, 6053 bytes
+2025/09/27-09:47:31.974379 16fee3000 Compacted 1@0 + 1@1 files => 6053 bytes
+2025/09/27-09:47:31.974444 16fee3000 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/27-09:47:31.974489 16fee3000 Delete type=2 #38
+2025/09/27-09:47:31.974558 16fee3000 Delete type=2 #34
+2025/09/27-09:47:31.974636 16fee3000 Manual compaction at level-0 from '!items!variantesvanzicia5de9b' @ 72 : 1 .. '!items!variantesvanzicia5de9b' @ 0 : 0; will stop at (end)

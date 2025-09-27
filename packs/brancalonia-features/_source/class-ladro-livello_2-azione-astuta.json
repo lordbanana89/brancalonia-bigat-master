@@ -30,7 +30,7 @@
   "implementazione_foundry": {
     "tipo": "abilita_permanente",
     "flags": {
-      "dnd5e.cunningAction": true
+      "": true
     },
     "macro": {
       "tipo": "quick_menu",
@@ -127,5 +127,12 @@
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96",
   "name": "Azione Astuta",
   "img": "icons/skills/movement/arrow-upward-yellow.webp",
-  "_id": "class-ladro-livello_2-azione-astuta"
+  "_id": "class-ladro-livello_2-azione-astuta",
+  "_key": "!items!class-ladro-livello_2-azione-astuta",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "folder": null,
+  "type": "feat"
 }

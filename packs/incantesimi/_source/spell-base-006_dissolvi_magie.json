@@ -14,7 +14,6 @@
     "Warlock"
   ],
   "compendio_fonte": {
-    "pack": "dnd5e.spells",
     "entry_name": "Dispel Magic",
     "entry_id": null
   },
@@ -22,5 +21,41 @@
   "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
   "name": "Spell Base 006 Dissolvi Magie",
   "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-base-006_dissolvi_magie"
+  "_id": "spell-base-006_dissolvi_magie",
+  "_key": "!items!spell-base-006_dissolvi_magie",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "folder": null,
+  "type": "spell",
+  "system": {
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1
+    },
+    "duration": {
+      "units": "inst"
+    },
+    "range": {
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {}
+    }
+  }
 }

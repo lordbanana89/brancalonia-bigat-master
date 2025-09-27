@@ -1,0 +1,38 @@
+{
+  "_id": "bg-staffettamostrina-con-i-gradi-d65861",
+  "_key": "!items!bg-staffettamostrina-con-i-gradi-d65861",
+  "name": "Mostrina con i gradi",
+  "type": "loot",
+  "img": "icons/equipment/chest/badge-medal-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Mostrina con i gradi - Equipaggiamento iniziale del background staffetta.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "staffetta"
+    }
+  }
+}

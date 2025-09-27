@@ -1,0 +1,87 @@
+{
+  "_id": "feat-bg-brado",
+  "_key": "!items!feat-bg-brado",
+  "name": "Dimestichezza Selvatica",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p>Può guidare se stesso e fino ad altre cinque persone attraverso territori selvaggi senza attirare bestie ostili.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base p.34",
+    "identifier": "brado-privilegio",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Brado",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale Base p.34",
+      "tipo": "privilegio-background",
+      "background": "brado"
+    }
+  }
+}

@@ -29,7 +29,7 @@
   "implementazione_foundry": {
     "tipo": "immunita_condizionale",
     "flags": {
-      "dnd5e.elusive": true
+      "": true
     },
     "effetto": "Ignora tutti i vantaggi agli attacchi contro di te",
     "eccezione": "status.incapacitated === true"
@@ -166,5 +166,12 @@
   "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
   "name": "Inafferrabile",
   "img": "icons/skills/trades/thievery-pickpocket-bribery-brown.webp",
-  "_id": "class-ladro-livello_18-inafferrabile"
+  "_id": "class-ladro-livello_18-inafferrabile",
+  "_key": "!items!class-ladro-livello_18-inafferrabile",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "folder": null,
+  "type": "feat"
 }

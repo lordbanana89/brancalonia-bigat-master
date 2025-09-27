@@ -1,0 +1,31 @@
+{
+  "_id": "rwmdbjy28l36vo3r",
+  "_key": "!items!rwmdbjy28l36vo3r",
+  "name": "Indomabile (3)",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Usa Indomabile tre volte",
+      "chat": ""
+    },
+    "requirements": "Livello 17",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

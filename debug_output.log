@@ -1,0 +1,1568 @@
+🎯 AGENT DEBUGGER PROFONDO
+==================================================
+Deep Testing and Fixing for Brancalonia Module
+==================================================
+🔧 AGENT DEBUGGER PROFONDO - Inizializzazione...
+📁 Modulo Path: .
+
+🚀 AVVIO ANALISI PROFONDA...
+
+📊 FASE 1: Inventario completo dati
+📋 Trovati 4288 file JSON
+🔑 Costruzione registro UUID...
+📝 UUID registrati: 0
+
+🔍 FASE 2: Validazione profonda
+📋 Validazione schema JSON...
+🔗 Test risoluzione riferimenti UUID...
+❌ UUID rotti trovati: 0
+
+🏛️ FASE 3: Analisi sistema classi
+🏛️ Analisi profonda classi...
+  📖 Analizzando classe: Burattinaio
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Cavalier Servente
+  📖 Analizzando classe: Congegnere
+  📖 Analizzando classe: Acchiapparatti
+  📖 Analizzando classe: Eresiarca
+  📖 Analizzando classe: Guappo
+  📖 Analizzando classe: Bravo
+  📖 Analizzando classe: Montanaro
+  📖 Analizzando classe: Talismante
+  📖 Analizzando classe: Guardia Svanzica
+  📖 Analizzando classe: Esorcista
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Mattatore
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Nemico Favorito
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Occhio del Mattatore
+  📖 Analizzando classe: Maestro dell'Esibizione
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ranger
+  📖 Analizzando classe: Maestro delle Bestie
+  📖 Analizzando classe: Cacciatore
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Archetipo del Ranger
+  📖 Analizzando classe: Nemico Prescelto
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Stile di Combattimento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Consapevolezza Primordiale
+  📖 Analizzando classe: Esploratore Nato
+  📖 Analizzando classe: Guiscardo
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Tradizione Arcana
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Recupero Arcano
+  📖 Analizzando classe: Incantesimi
+  📖 Analizzando classe: Esperto di Oggetti Magici
+  📖 Analizzando classe: Maestria Fandonica
+  📖 Analizzando classe: Cercatore di Tesori
+  📖 Analizzando classe: Chincaglieria Magica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Benandante
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Forma Selvatica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Guardiano della Danza Macabra
+  📖 Analizzando classe: Incantesimi del Circolo
+  📖 Analizzando classe: Guardare Oltre il Velo
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Spadaccino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Indomito
+  📖 Analizzando classe: Attacco Extra (2)
+  📖 Analizzando classe: Aumento Punteggi di Caratteristica
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Indomabile
+  📖 Analizzando classe: Azione Impetuosa
+  📖 Analizzando classe: Attacco Extra (3)
+  📖 Analizzando classe: Archetipo Marziale
+  📖 Analizzando classe: Indomito (tre usi)
+  📖 Analizzando classe: Action Surge (due usi)
+  📖 Analizzando classe: Stile di Combattimento
+  📖 Analizzando classe: Relentless (Archetipo)
+  📖 Analizzando classe: Recupero Energie
+  📖 Analizzando classe: Indomito (due usi)
+  📖 Analizzando classe: Survivor (Archetipo Champion)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Know Your Enemy (Archetipo)
+  📖 Analizzando classe: Scuola di Scherma
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Arlecchino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ispirazione Bardica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Silenzio in Sala
+  📖 Analizzando classe: Difesa Senza Armatura
+  📖 Analizzando classe: Batocchio
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Competenze Bonus
+  📖 Analizzando classe: Warlock
+  📖 Analizzando classe: Patrono del Grande Antico
+  📖 Analizzando classe: Patrono Signore Fatato
+  📖 Analizzando classe: Patrono Immondo
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Patto Mistico
+  📖 Analizzando classe: Patrono Ultraterreno
+  📖 Analizzando classe: Magia del Patto
+  📖 Analizzando classe: Invocazioni Occulte
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Miracolaro
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Incantesimi
+  📖 Analizzando classe: Dominio Divino
+  📖 Analizzando classe: Distruggere Non Morti
+  📖 Analizzando classe: Intervento Divino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Incanalare Divinità
+  📖 Analizzando classe: Dominio del Calendario
+  📖 Analizzando classe: Tirare Giù i Santi
+  📖 Analizzando classe: Per Tutti i Santi!
+  📖 Analizzando classe: Incanalare Divinità: Recitare il Calendario
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Menagramo
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Patto Magico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Lista Ampliata degli Incantesimi
+  📖 Analizzando classe: Iattura
+  📖 Analizzando classe: Il Tocco della Malasorte
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Paladino
+  📖 Analizzando classe: Giuramento di Vendetta
+  📖 Analizzando classe: Giuramento di Devozione
+  📖 Analizzando classe: Giuramento degli Antichi
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Stile di Combattimento
+  📖 Analizzando classe: Aura di Coraggio
+  📖 Analizzando classe: Imposizione delle Mani
+  📖 Analizzando classe: Aura di Protezione
+  📖 Analizzando classe: Campione del Giuramento
+  📖 Analizzando classe: Tocco Purificante
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Punizione Divina
+  📖 Analizzando classe: Giuramento Sacro
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Senso Divino
+  📖 Analizzando classe: Punizione Divina Migliorata
+  📖 Analizzando classe: Bardo
+  📖 Analizzando classe: Collegio del Valore
+  📖 Analizzando classe: Collegio della Conoscenza
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ispirazione Bardica
+  📖 Analizzando classe: Collegio Bardico
+  📖 Analizzando classe: Jack Tuttofare
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Frate
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ki
+  📖 Analizzando classe: Arti Marziali
+  📖 Analizzando classe: Difesa Senza Armatura
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Tecnica della Mano di Ferro e di Piuma
+  📖 Analizzando classe: Porgi l'Altra Guancia
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Brigante
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Inafferrabile
+  📖 Analizzando classe: Schivata Prodigiosa
+  📖 Analizzando classe: Archetipo Ladresco
+  📖 Analizzando classe: Evasione
+  📖 Analizzando classe: Gergo Ladresco
+  📖 Analizzando classe: Colpo di Fortuna
+  📖 Analizzando classe: Attacco Furtivo
+  📖 Analizzando classe: Azione Astuta
+  📖 Analizzando classe: Mente Sfuggente
+  📖 Analizzando classe: Percezione Cieca
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Competenze
+  📖 Analizzando classe: Talento Affidabile
+  📖 Analizzando classe: Brigantaggio
+  📖 Analizzando classe: Arte dell'Imboscata
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Scaramante
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Punti Stregoneria
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Magia di Protezione
+  📖 Analizzando classe: Rituale Scaramantico
+  📖 Analizzando classe: Protetto dal Fato
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Chierico
+  📖 Analizzando classe: Dominio della Vita
+  📖 Analizzando classe: Dominio della Tempesta
+  📖 Analizzando classe: Dominio della Guerra
+  📖 Analizzando classe: Dominio della Conoscenza
+  📖 Analizzando classe: Dominio dell'Inganno
+  📖 Analizzando classe: Dominio della Luce
+  📖 Analizzando classe: Dominio della Natura
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Colpo Divino Migliorato
+  📖 Analizzando classe: Incanalare Divinità (3 usi)
+  📖 Analizzando classe: Intervento Divino
+  📖 Analizzando classe: Distruggere Non-Morti (CR 2)
+  📖 Analizzando classe: Incanalare Divinità (2 usi)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Colpo Divino
+  📖 Analizzando classe: Distruggere Non-Morti (CR 3)
+  📖 Analizzando classe: Distruggere Non-Morti
+  📖 Analizzando classe: Intervento Divino Migliorato
+  📖 Analizzando classe: Pagano
+  📖 Analizzando classe: totem
+  📖 Analizzando classe: berserker
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Critico Brutale
+  📖 Analizzando classe: Ira Persistente
+  📖 Analizzando classe: Attacco Irruento
+  📖 Analizzando classe: Movimento Veloce
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Istinto Ferino
+  📖 Analizzando classe: Ira
+  📖 Analizzando classe: Cammino Primordiale
+  📖 Analizzando classe: Forza Indomabile
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Difesa Senza Armatura
+  📖 Analizzando classe: Campione Primordiale
+  📖 Analizzando classe: Ira Implacabile
+  📖 Analizzando classe: Percezione del Pericolo
+  📖 Analizzando classe: Monaco
+  📖 Analizzando classe: Via della Mano Aperta
+  📖 Analizzando classe: Via dei Quattro Elementi
+  📖 Analizzando classe: Via dell'Ombra
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Movimento Senza Armatura
+  📖 Analizzando classe: Ki
+  📖 Analizzando classe: Perfezione Interiore
+  📖 Analizzando classe: Quiete della Mente
+  📖 Analizzando classe: Caduta Lenta
+  📖 Analizzando classe: Movimento Senza Armatura Migliorato
+  📖 Analizzando classe: Arti Marziali
+  📖 Analizzando classe: Colpi Potenziati dal Ki
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Difesa Senza Armatura
+  📖 Analizzando classe: Anima di Diamante
+  📖 Analizzando classe: Corpo Senza Tempo
+  📖 Analizzando classe: Lingua del Sole e della Luna
+  📖 Analizzando classe: Corpo Vuoto
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Tradizione Monastica
+  📖 Analizzando classe: Colpo Stordente
+  📖 Analizzando classe: Purezza del Corpo
+  📖 Analizzando classe: Deviare Proiettili
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Evasione
+  📖 Analizzando classe: Stregone
+  📖 Analizzando classe: Discendenza Draconica
+  📖 Analizzando classe: Magia Selvaggia
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Fonte della Magia
+  📖 Analizzando classe: Metamagia
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Origine Stregonesca
+  📖 Analizzando classe: Mago
+  📖 Analizzando classe: Scuola di Invocazione
+  📖 Analizzando classe: Scuola di Divinazione
+  📖 Analizzando classe: Scuola di Trasmutazione
+  📖 Analizzando classe: Scuola di Ammaliamento
+  📖 Analizzando classe: Scuola di Evocazione
+  📖 Analizzando classe: Scuola di Illusione
+  📖 Analizzando classe: Scuola di Abiurazione
+  📖 Analizzando classe: Scuola di Necromanzia
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Privilegio della Tradizione Arcana
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Supremazia della Tradizione Arcana
+  📖 Analizzando classe: Libro degli Incantesimi
+  📖 Analizzando classe: Tradizione Arcana
+  📖 Analizzando classe: Incantesimi Distintivi
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Padronanza degli Incantesimi
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Recupero Arcano
+  📖 Analizzando classe: Maestria della Tradizione Arcana
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Druido
+  📖 Analizzando classe: Circolo della Terra
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Circolo della Luna
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Forma Selvatica
+  📖 Analizzando classe: Circolo Druidico
+  📖 Analizzando classe: Druidico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Cavaliere Errante
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Imposizione delle Mani
+  📖 Analizzando classe: Punizione Divina
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Senso Divino
+  📖 Analizzando classe: Incanalare Divinità: Ispirare i Compagni
+  📖 Analizzando classe: Incanalare Divinità: Proteggere i Bisognosi
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Incantesimi del Giuramento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Indomito
+  📖 Analizzando classe: Nemico Favorito
+  📖 Analizzando classe: Attacco Extra (2)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Inafferrabile
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento Punteggi di Caratteristica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Patto Magico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Patto Mistico
+  📖 Analizzando classe: Incantesimi
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Forma Selvatica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ispirazione Bardica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Movimento Senza Armatura
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Stile di Combattimento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Collegio Bardico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Dominio Divino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aura di Coraggio
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Archetipo del Ranger
+  📖 Analizzando classe: Imposizione delle Mani
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aura di Protezione
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Privilegio della Tradizione Arcana
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Patrono Ultraterreno
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ki
+  📖 Analizzando classe: Distruggere Non Morti
+  📖 Analizzando classe: Circolo Druidico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Extra (3)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Colpo Divino Migliorato
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Fonte della Magia
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Magia del Patto
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Incanalare Divinità (3 usi)
+  📖 Analizzando classe: Invocazioni Occulte
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Critico Brutale
+  📖 Analizzando classe: Perfezione Interiore
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Quiete della Mente
+  📖 Analizzando classe: Caduta Lenta
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Supremazia della Tradizione Arcana
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Indomito (tre usi)
+  📖 Analizzando classe: Action Surge (due usi)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Stile di Combattimento
+  📖 Analizzando classe: Relentless (Archetipo)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Movimento Senza Armatura Migliorato
+  📖 Analizzando classe: Recupero Energie
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Nemico Prescelto
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Arti Marziali
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ira Persistente
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Intervento Divino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Colpi Potenziati dal Ki
+  📖 Analizzando classe: Distruggere Non-Morti (CR 2)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Campione del Giuramento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Libro degli Incantesimi
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Difesa Senza Armatura
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Tocco Purificante
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Anima di Diamante
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Irruento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Movimento Veloce
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Tradizione Arcana
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Metamagia
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Istinto Ferino
+  📖 Analizzando classe: Corpo Senza Tempo
+  📖 Analizzando classe: Lingua del Sole e della Luna
+  📖 Analizzando classe: Stile di Combattimento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Indomito (due usi)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Azione Astuta
+  📖 Analizzando classe: Corpo Vuoto
+  📖 Analizzando classe: Incantesimi Distintivi
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Punizione Divina
+  📖 Analizzando classe: Punti Stregoneria
+  📖 Analizzando classe: Incanalare Divinità (2 usi)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ira
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Survivor (Archetipo Champion)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Cammino Primordiale
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Tradizione Monastica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Colpo Stordente
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Padronanza degli Incantesimi
+  📖 Analizzando classe: Giuramento Sacro
+  📖 Analizzando classe: Purezza del Corpo
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Percezione Cieca
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Deviare Proiettili
+  📖 Analizzando classe: Druidico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Forza Indomabile
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Jack Tuttofare
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Recupero Arcano
+  📖 Analizzando classe: Incanalare Divinità
+  📖 Analizzando classe: Difesa Senza Armatura
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Competenze
+  📖 Analizzando classe: Senso Divino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Maestria della Tradizione Arcana
+  📖 Analizzando classe: Consapevolezza Primordiale
+  📖 Analizzando classe: Esploratore Nato
+  📖 Analizzando classe: Know Your Enemy (Archetipo)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Origine Stregonesca
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Punizione Divina Migliorata
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Colpo Divino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Campione Primordiale
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Incantesimi
+  📖 Analizzando classe: Ira Implacabile
+  📖 Analizzando classe: Percezione del Pericolo
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Distruggere Non-Morti (CR 3)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Distruggere Non-Morti
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Evasione
+  📖 Analizzando classe: Intervento Divino Migliorato
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Indomito
+  📖 Analizzando classe: Nemico Favorito
+  📖 Analizzando classe: Attacco Extra (2)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Inafferrabile
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento Punteggi di Caratteristica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Patto Magico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Patto Mistico
+  📖 Analizzando classe: Incantesimi
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Forma Selvatica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ispirazione Bardica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Movimento Senza Armatura
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Stile di Combattimento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Collegio Bardico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Dominio Divino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aura di Coraggio
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Archetipo del Ranger
+  📖 Analizzando classe: Imposizione delle Mani
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aura di Protezione
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Privilegio della Tradizione Arcana
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Patrono Ultraterreno
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ki
+  📖 Analizzando classe: Distruggere Non Morti
+  📖 Analizzando classe: Circolo Druidico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Extra (3)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Colpo Divino Migliorato
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Fonte della Magia
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Magia del Patto
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Incanalare Divinità (3 usi)
+  📖 Analizzando classe: Invocazioni Occulte
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Critico Brutale
+  📖 Analizzando classe: Perfezione Interiore
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Quiete della Mente
+  📖 Analizzando classe: Caduta Lenta
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Supremazia della Tradizione Arcana
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Indomito (tre usi)
+  📖 Analizzando classe: Action Surge (due usi)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Stile di Combattimento
+  📖 Analizzando classe: Relentless (Archetipo)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Movimento Senza Armatura Migliorato
+  📖 Analizzando classe: Recupero Energie
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Nemico Prescelto
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Arti Marziali
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ira Persistente
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Intervento Divino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Colpi Potenziati dal Ki
+  📖 Analizzando classe: Distruggere Non-Morti (CR 2)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Campione del Giuramento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Libro degli Incantesimi
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Difesa Senza Armatura
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Tocco Purificante
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Anima di Diamante
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Irruento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Movimento Veloce
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Tradizione Arcana
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Metamagia
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Istinto Ferino
+  📖 Analizzando classe: Corpo Senza Tempo
+  📖 Analizzando classe: Lingua del Sole e della Luna
+  📖 Analizzando classe: Stile di Combattimento
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Indomito (due usi)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Azione Astuta
+  📖 Analizzando classe: Corpo Vuoto
+  📖 Analizzando classe: Incantesimi Distintivi
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Punizione Divina
+  📖 Analizzando classe: Punti Stregoneria
+  📖 Analizzando classe: Incanalare Divinità (2 usi)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Ira
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Survivor (Archetipo Champion)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Attacco Extra
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Cammino Primordiale
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Tradizione Monastica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Colpo Stordente
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Padronanza degli Incantesimi
+  📖 Analizzando classe: Giuramento Sacro
+  📖 Analizzando classe: Purezza del Corpo
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Percezione Cieca
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Deviare Proiettili
+  📖 Analizzando classe: Druidico
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Forza Indomabile
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Jack Tuttofare
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Recupero Arcano
+  📖 Analizzando classe: Incanalare Divinità
+  📖 Analizzando classe: Difesa Senza Armatura
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Competenze
+  📖 Analizzando classe: Senso Divino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Maestria della Tradizione Arcana
+  📖 Analizzando classe: Consapevolezza Primordiale
+  📖 Analizzando classe: Esploratore Nato
+  📖 Analizzando classe: Know Your Enemy (Archetipo)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Origine Stregonesca
+  📖 Analizzando classe: Aumento dei Punteggi di Caratteristica
+  📖 Analizzando classe: Punizione Divina Migliorata
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Colpo Divino
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Campione Primordiale
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Incantesimi
+  📖 Analizzando classe: Ira Implacabile
+  📖 Analizzando classe: Percezione del Pericolo
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Distruggere Non-Morti (CR 3)
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Distruggere Non-Morti
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Evasione
+  📖 Analizzando classe: Intervento Divino Migliorato
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+  📖 Analizzando classe: Unknown
+
+✨ FASE 4: Verifica sistema incantesimi
+✨ Verifica sistema incantesimi...
+  📊 Incantesimi per livello:
+    Livello 0: 85 incantesimi
+    Livello 1: 95 incantesimi
+    Livello 2: 62 incantesimi
+    Livello 3: 49 incantesimi
+    Livello 4: 9 incantesimi
+    Livello 5: 6 incantesimi
+    Livello 6: 0 incantesimi
+    Livello 7: 0 incantesimi
+    Livello 8: 0 incantesimi
+    Livello 9: 0 incantesimi
+  📈 Totale incantesimi: 306
+  🔗 Verifica riferimenti incantesimi in classi...
+
+⚔️ FASE 5: Verifica collegamenti oggetti
+⚔️ Verifica collegamenti oggetti...
+  📦 Oggetti per tipo:
+    unknown: 303 oggetti
+    scudo: 2 oggetti
+    marziale_mischia: 16 oggetti
+    semplice_distanza: 4 oggetti
+    marziale_distanza: 5 oggetti
+    semplice_mischia: 10 oggetti
+    bestia_da_soma: 2 oggetti
+    cavalcatura: 4 oggetti
+    cavalcatura_esotica: 1 oggetti
+    animale_da_guardia: 1 oggetti
+    media: 5 oggetti
+    pesante: 4 oggetti
+    leggera: 3 oggetti
+    scudo pesante: 1 oggetti
+    Oggetto meraviglioso: 15 oggetti
+    Arma magica: 2 oggetti
+    Anello: 1 oggetti
+    ingestione: 1 oggetti
+    pugnale: 1 oggetti
+    anello: 1 oggetti
+    inalazione: 1 oggetti
+    miscela incendiaria: 1 oggetti
+    protezione: 1 oggetti
+    elmo: 1 oggetti
+    Non morto: 5 oggetti
+    Immondo: 5 oggetti
+    Fatato: 2 oggetti
+    Umanoide: 27 oggetti
+    Costrutto: 4 oggetti
+    Drago: 3 oggetti
+    Bestia: 1 oggetti
+    Umanoide Medio (qualsiasi razza): 1 oggetti
+    Sciame: 1 oggetti
+    Mostruosità: 7 oggetti
+    Fata: 1 oggetti
+    Gigante: 1 oggetti
+    Immondo Grande (diavolo): 1 oggetti
+    Sciame Medio di Mostruosità Minuscole: 1 oggetti
+    background: 59 oggetti
+    emeriticenza: 11 oggetti
+    razza: 3 oggetti
+    talento: 8 oggetti
+    weapon: 161 oggetti
+    loot: 39 oggetti
+    equipment: 422 oggetti
+    consumable: 111 oggetti
+    feat: 456 oggetti
+    race: 41 oggetti
+    npc: 166 oggetti
+    JournalEntry: 116 oggetti
+    script: 18 oggetti
+    journalEntry: 18 oggetti
+  ⚔️ Armi controllate: 163, con problemi: 163
+  🛡️ Armature controllate: 0, con problemi: 0
+  ✨ Oggetti magici: 438, senza rarità: 420
+
+🎲 FASE 6: Controllo profondo tabelle
+🎲 Controllo profondo tabelle...
+  📋 Controllando tabella: Unknown
+  📋 Controllando tabella: Unknown
+  📋 Controllando tabella: Impresario - Ideali
+  📋 Controllando tabella: Brado - Ideali
+  📋 Controllando tabella: Duro - Difetti
+  📋 Controllando tabella: Lucignolo - Difetti
+  📋 Controllando tabella: Malattie del Regno di Taglia
+  📋 Controllando tabella: Incontri Casuali per Strada
+  📋 Controllando tabella: Brado - Tratti della Personalità
+  📋 Controllando tabella: Azzeccagarbugli - Difetti
+  📋 Controllando tabella: Ricompense per Lavori Sporchi
+  📋 Controllando tabella: Innamorato - Ideali
+  📋 Controllando tabella: Effetti degli Intrugli Dubbi
+  📋 Controllando tabella: Conseguenze dell'Infamia
+  📋 Controllando tabella: Tempo Atmosferico
+  📋 Controllando tabella: Chi Offre il Lavoro Sporco
+  📋 Controllando tabella: Mestieri del Popolino
+  📋 Controllando tabella: Lucignolo - Ideali
+  📋 Controllando tabella: Prelato - Tratti della Personalità
+  📋 Controllando tabella: Azzeccagarbugli - Tratti della Personalità
+  📋 Controllando tabella: Livelli del Contatore Baraonda
+  📋 Controllando tabella: Prelato - Legami
+  📋 Controllando tabella: Azzeccagarbugli - Ideali
+  📋 Controllando tabella: Ambulante - Difetti
+  📋 Controllando tabella: Ambulante - Tratti della Personalità
+  📋 Controllando tabella: Passatore - Difetti
+  📋 Controllando tabella: Soprannomi delle Canaglie
+  📋 Controllando tabella: Tabella del Menagramo
+  📋 Controllando tabella: Fazioni del Regno
+  📋 Controllando tabella: Generatore Lavori Sporchi
+  📋 Controllando tabella: Sogni e Presagi
+  📋 Controllando tabella: Cacciatore di reliquie - Legami
+  📋 Controllando tabella: Attaccabrighe - Difetti
+  📋 Controllando tabella: Prelato - Difetti
+  📋 Controllando tabella: Passatore - Ideali
+  📋 Controllando tabella: Luoghi Misteriosi
+  📋 Controllando tabella: Difetti Oggetti Scadenti
+  📋 Controllando tabella: Attaccabrighe - Legami
+  📋 Controllando tabella: Staffetta - Ideali
+  📋 Controllando tabella: Duro - Ideali
+  📋 Controllando tabella: Ambulante - Ideali
+  📋 Controllando tabella: Background delle Canaglie
+  📋 Controllando tabella: Brado - Difetti
+  📋 Controllando tabella: Lucignolo - Tratti della Personalità
+  📋 Controllando tabella: Nomi di Locande e Taverne
+  📋 Controllando tabella: Impresario - Tratti della Personalità
+  📋 Controllando tabella: Tesori Nascosti
+  📋 Controllando tabella: Cacciatore di reliquie - Ideali
+  📋 Controllando tabella: Impresario - Difetti
+  📋 Controllando tabella: Voci e Dicerie
+  📋 Controllando tabella: Insulti Tipici di Brancalonia
+  📋 Controllando tabella: Prelato - Ideali
+  📋 Controllando tabella: Azzeccagarbugli - Legami
+  📋 Controllando tabella: Duro - Legami
+  📋 Controllando tabella: Ambulante - Legami
+  📋 Controllando tabella: Cacciatore di reliquie - Tratti della Personalità
+  📋 Controllando tabella: Crimini e Punizioni
+  📋 Controllando tabella: Fuggitivo - Ideali
+  📋 Controllando tabella: Eventi durante una Rissa da Taverna
+  📋 Controllando tabella: Innamorato - Difetti
+  📋 Controllando tabella: Passatore - Legami
+  📋 Controllando tabella: Staffetta - Legami
+  📋 Controllando tabella: Staffetta - Tratti della Personalità
+  📋 Controllando tabella: Attaccabrighe - Ideali
+  📋 Controllando tabella: Duro - Tratti della Personalità
+  📋 Controllando tabella: Menu della Taverna
+  📋 Controllando tabella: Cacciatore di reliquie - Difetti
+  📋 Controllando tabella: Impresario - Legami
+  📋 Controllando tabella: Innamorato - Tratti della Personalità
+  📋 Controllando tabella: Hazard Ambientali
+  📋 Controllando tabella: Eventi nel Rifugio
+  📋 Controllando tabella: Brado - Legami
+  📋 Controllando tabella: Attaccabrighe - Tratti della Personalità
+  📋 Controllando tabella: Passatore - Tratti della Personalità
+  📋 Controllando tabella: Maledizioni Minori
+  📋 Controllando tabella: Fuggitivo - Tratti della Personalità
+  📋 Controllando tabella: Lucignolo - Legami
+  📋 Controllando tabella: Bevande della Taverna
+  📋 Controllando tabella: Trappole nei Dungeon
+  📋 Controllando tabella: Bottino Scadente
+  📋 Controllando tabella: Innamorato - Legami
+  📋 Controllando tabella: Complicazioni Lavori Sporchi
+  📋 Controllando tabella: Staffetta - Difetti
+  📋 Controllando tabella: Unknown
+  📋 Controllando tabella: Unknown
+  📋 Controllando tabella: Impresario - Ideali
+  📋 Controllando tabella: Brado - Ideali
+  📋 Controllando tabella: Duro - Difetti
+  📋 Controllando tabella: Lucignolo - Difetti
+  📋 Controllando tabella: Malattie del Regno di Taglia
+  📋 Controllando tabella: Incontri Casuali per Strada
+  📋 Controllando tabella: Brado - Tratti della Personalità
+  📋 Controllando tabella: Azzeccagarbugli - Difetti
+  📋 Controllando tabella: Ricompense per Lavori Sporchi
+  📋 Controllando tabella: Innamorato - Ideali
+  📋 Controllando tabella: Effetti degli Intrugli Dubbi
+  📋 Controllando tabella: Conseguenze dell'Infamia
+  📋 Controllando tabella: Tempo Atmosferico
+  📋 Controllando tabella: Chi Offre il Lavoro Sporco
+  📋 Controllando tabella: Mestieri del Popolino
+  📋 Controllando tabella: Lucignolo - Ideali
+  📋 Controllando tabella: Prelato - Tratti della Personalità
+  📋 Controllando tabella: Azzeccagarbugli - Tratti della Personalità
+  📋 Controllando tabella: Livelli del Contatore Baraonda
+  📋 Controllando tabella: Prelato - Legami
+  📋 Controllando tabella: Azzeccagarbugli - Ideali
+  📋 Controllando tabella: Ambulante - Difetti
+  📋 Controllando tabella: Ambulante - Tratti della Personalità
+  📋 Controllando tabella: Passatore - Difetti
+  📋 Controllando tabella: Soprannomi delle Canaglie
+  📋 Controllando tabella: Tabella del Menagramo
+  📋 Controllando tabella: Fazioni del Regno
+  📋 Controllando tabella: Generatore Lavori Sporchi
+  📋 Controllando tabella: Sogni e Presagi
+  📋 Controllando tabella: Cacciatore di reliquie - Legami
+  📋 Controllando tabella: Attaccabrighe - Difetti
+  📋 Controllando tabella: Prelato - Difetti
+  📋 Controllando tabella: Passatore - Ideali
+  📋 Controllando tabella: Luoghi Misteriosi
+  📋 Controllando tabella: Difetti Oggetti Scadenti
+  📋 Controllando tabella: Attaccabrighe - Legami
+  📋 Controllando tabella: Staffetta - Ideali
+  📋 Controllando tabella: Duro - Ideali
+  📋 Controllando tabella: Ambulante - Ideali
+  📋 Controllando tabella: Background delle Canaglie
+  📋 Controllando tabella: Brado - Difetti
+  📋 Controllando tabella: Lucignolo - Tratti della Personalità
+  📋 Controllando tabella: Nomi di Locande e Taverne
+  📋 Controllando tabella: Impresario - Tratti della Personalità
+  📋 Controllando tabella: Tesori Nascosti
+  📋 Controllando tabella: Cacciatore di reliquie - Ideali
+  📋 Controllando tabella: Impresario - Difetti
+  📋 Controllando tabella: Voci e Dicerie
+  📋 Controllando tabella: Insulti Tipici di Brancalonia
+  📋 Controllando tabella: Prelato - Ideali
+  📋 Controllando tabella: Azzeccagarbugli - Legami
+  📋 Controllando tabella: Duro - Legami
+  📋 Controllando tabella: Ambulante - Legami
+  📋 Controllando tabella: Cacciatore di reliquie - Tratti della Personalità
+  📋 Controllando tabella: Crimini e Punizioni
+  📋 Controllando tabella: Fuggitivo - Ideali
+  📋 Controllando tabella: Eventi durante una Rissa da Taverna
+  📋 Controllando tabella: Innamorato - Difetti
+  📋 Controllando tabella: Passatore - Legami
+  📋 Controllando tabella: Staffetta - Legami
+  📋 Controllando tabella: Staffetta - Tratti della Personalità
+  📋 Controllando tabella: Attaccabrighe - Ideali
+  📋 Controllando tabella: Duro - Tratti della Personalità
+  📋 Controllando tabella: Menu della Taverna
+  📋 Controllando tabella: Cacciatore di reliquie - Difetti
+  📋 Controllando tabella: Impresario - Legami
+  📋 Controllando tabella: Innamorato - Tratti della Personalità
+  📋 Controllando tabella: Hazard Ambientali
+  📋 Controllando tabella: Eventi nel Rifugio
+  📋 Controllando tabella: Brado - Legami
+  📋 Controllando tabella: Attaccabrighe - Tratti della Personalità
+  📋 Controllando tabella: Passatore - Tratti della Personalità
+  📋 Controllando tabella: Maledizioni Minori
+  📋 Controllando tabella: Fuggitivo - Tratti della Personalità
+  📋 Controllando tabella: Lucignolo - Legami
+  📋 Controllando tabella: Bevande della Taverna
+  📋 Controllando tabella: Trappole nei Dungeon
+  📋 Controllando tabella: Bottino Scadente
+  📋 Controllando tabella: Innamorato - Legami
+  📋 Controllando tabella: Complicazioni Lavori Sporchi
+  📋 Controllando tabella: Staffetta - Difetti
+  📋 Controllando tabella: Unknown
+  📋 Controllando tabella: Unknown
+  📋 Controllando tabella: Difetti Oggetti Scadenti
+  📋 Controllando tabella: Sogni e Presagi
+  📋 Controllando tabella: Menu della Taverna
+  📋 Controllando tabella: Crimini e Punizioni
+  📋 Controllando tabella: Insulti Tipici di Brancalonia
+  📋 Controllando tabella: Tabella del Menagramo
+  📋 Controllando tabella: Voci e Dicerie
+  📋 Controllando tabella: Effetti degli Intrugli Dubbi
+  📋 Controllando tabella: Fazioni del Regno
+  📋 Controllando tabella: Luoghi Misteriosi
+  📋 Controllando tabella: Generatore Lavori Sporchi
+  📋 Controllando tabella: Trappole nei Dungeon
+  📋 Controllando tabella: Eventi durante una Rissa da Taverna
+  📋 Controllando tabella: Ricompense per Lavori Sporchi
+  📋 Controllando tabella: Tempo Atmosferico
+  📋 Controllando tabella: Livelli del Contatore Baraonda
+  📋 Controllando tabella: Malattie del Regno di Taglia
+  📋 Controllando tabella: Bottino Scadente
+  📋 Controllando tabella: Soprannomi delle Canaglie
+  📋 Controllando tabella: Nomi di Locande e Taverne
+  📋 Controllando tabella: Bevande della Taverna
+  📋 Controllando tabella: Mestieri del Popolino
+  📋 Controllando tabella: Hazard Ambientali
+  📋 Controllando tabella: Chi Offre il Lavoro Sporco
+  📋 Controllando tabella: Incontri Casuali per Strada
+  📋 Controllando tabella: Complicazioni Lavori Sporchi
+  📋 Controllando tabella: Conseguenze dell'Infamia
+  📋 Controllando tabella: Maledizioni Minori
+  📋 Controllando tabella: Tesori Nascosti
+  📋 Controllando tabella: Eventi nel Rifugio
+  📋 Controllando tabella: Background delle Canaglie
+  📊 Tabelle controllate: 199, con problemi: 108
+
+🔧 FASE 7: Generazione fix automatici
+🔧 Generazione fix automatici...
+
+📊 GENERAZIONE REPORT FINALE...
+
+==================================================
+📋 REPORT FINALE
+==================================================
+
+📊 STATISTICHE CONTENUTO:
+  Classi: 1206
+  Incantesimi: 643
+  Oggetti: 2226
+  Tabelle: 199
+  UUID registrati: 0
+  UUID rotti: 0
+
+✨ SISTEMA INCANTESIMI:
+  Totale incantesimi: 643
+  Copertura livelli: 200.0%
+  Livelli mancanti: [6, 7, 8, 9]
+
+🔍 RISULTATI VALIDAZIONE:
+  Problemi totali: 7963
+  Critici: 7097
+  Warning: 446
+  Info: 420
+
+📋 PROBLEMI PER CATEGORIA:
+  JSON_SYNTAX: 14
+  CLASS_PROGRESSION: 23
+  CLASS_SCHEMA: 4332
+  SPELL_SCHEMA: 2637
+  SPELL_LEVEL: 10
+  ROLLTABLE_SCHEMA: 12
+  CLASS_INCOMPLETE_PROGRESSION: 63
+  CLASS_MISSING_FEATURES: 10
+  MISSING_SPELL_LEVEL: 4
+  MISSING_SPELL_REFERENCE: 167
+  WEAPON_MISSING_PROPERTIES: 163
+  MAGIC_ITEM_NO_RARITY: 420
+  EMPTY_ROLLTABLE: 6
+  ROLLTABLE_RANGE_ERROR: 102
+
+🔧 SCRIPT AUTO-FIX GENERATI:
+  complete_class_progressions.py: Complete 63 incomplete class progressions
+  complete_spell_system.py: Add spells for 4 missing levels
+  populate_rolltables.py: Populate 6 empty rolltables
+
+💡 RACCOMANDAZIONI:
+  • PRIORITA ALTA: Risolvere 7097 problemi critici prima del rilascio
+  • Completare progressione per 63 classi incomplete
+  • Aggiungere incantesimi per 4 livelli mancanti
+  • Popolare 6 tabelle vuote
+
+📄 Report dettagliato salvato: scripts/debug_report.json
+💾 Script salvato: scripts/auto-fixes/complete_class_progressions.py
+💾 Script salvato: scripts/auto-fixes/complete_spell_system.py
+💾 Script salvato: scripts/auto-fixes/populate_rolltables.py
+
+🎉 ANALISI COMPLETATA!
+❌ ATTENZIONE: Problemi critici trovati!

@@ -1,0 +1,32 @@
+{
+  "_id": "index",
+  "_key": "!items!index",
+  "name": "Index",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "identifier": "index",
+    "advancement": [],
+    "traits": {},
+    "startingEquipment": [],
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "",
+      "tipo": "background"
+    }
+  }
+}

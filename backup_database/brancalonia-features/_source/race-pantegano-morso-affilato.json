@@ -1,0 +1,25 @@
+{
+  "_id": "2jnuwl880de0jbsh",
+  "_key": "!items!2jnuwl880de0jbsh",
+  "name": "Morso Affilato",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Il tuo morso è un'arma naturale che infligge 1d4 + modificatore di Forza danni perforanti.",
+      "chat": ""
+    },
+    "requirements": "Pantegano",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

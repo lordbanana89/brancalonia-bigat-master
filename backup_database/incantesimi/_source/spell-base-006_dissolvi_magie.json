@@ -1,0 +1,72 @@
+{
+  "id": "spell-base-006",
+  "nome": "Dissolvi Magie",
+  "nome_originale": "Dispel Magic",
+  "livello": 3,
+  "scuola": "Abiurazione",
+  "classi": [
+    "Bardo",
+    "Chierico",
+    "Druido",
+    "Paladino",
+    "Stregone",
+    "Mago",
+    "Warlock"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Dispel Magic",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Dispel Magic).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
+  "name": "Spell Base 006 Dissolvi Magie",
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-base-006_dissolvi_magie",
+  "_key": "!items!spell-base-006_dissolvi_magie",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "spell",
+  "system": {
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": "",
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "",
+        "count": "",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "type": "",
+        "size": ""
+      }
+    }
+  }
+}

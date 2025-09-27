@@ -9,7 +9,6 @@
     "Paladino"
   ],
   "compendio_fonte": {
-    "pack": "dnd5e.spells",
     "entry_name": "Bless",
     "entry_id": null
   },
@@ -17,5 +16,41 @@
   "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
   "name": "Spell Base 001 Benedizione",
   "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-base-001_benedizione"
+  "_id": "spell-base-001_benedizione",
+  "_key": "!items!spell-base-001_benedizione",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "folder": null,
+  "type": "spell",
+  "system": {
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1
+    },
+    "duration": {
+      "units": "inst"
+    },
+    "range": {
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {}
+    }
+  }
 }

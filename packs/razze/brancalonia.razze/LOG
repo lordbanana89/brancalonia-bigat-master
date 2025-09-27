@@ -1,15 +1,14 @@
-2025/09/27-02:48:31.816861 16fadf000 Recovering log #13
-2025/09/27-02:48:31.818746 16fadf000 Delete type=0 #13
-2025/09/27-02:48:31.818786 16fadf000 Delete type=3 #11
-2025/09/27-02:48:31.820474 16fb6b000 Level-0 table #19: started
-2025/09/27-02:48:31.820677 16fb6b000 Level-0 table #19: 5882 bytes OK
-2025/09/27-02:48:31.820759 16fb6b000 Delete type=0 #17
-2025/09/27-02:48:31.820823 16fb6b000 Manual compaction at level-0 from '!item!gattolupescoc729ef' @ 72057594037927935 : 1 .. '!item!variantesvanzicia5de9b' @ 0 : 0; will stop at (end)
-2025/09/27-02:48:31.820839 16fb6b000 Manual compaction at level-1 from '!item!gattolupescoc729ef' @ 72057594037927935 : 1 .. '!item!variantesvanzicia5de9b' @ 0 : 0; will stop at '!item!variantesvanzicia5de9b' @ 32 : 1
-2025/09/27-02:48:31.820846 16fb6b000 Compacting 1@1 + 1@2 files
-2025/09/27-02:48:31.821110 16fb6b000 Generated table #20@1: 8 keys, 5882 bytes
-2025/09/27-02:48:31.821119 16fb6b000 Compacted 1@1 + 1@2 files => 5882 bytes
-2025/09/27-02:48:31.821179 16fb6b000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-02:48:31.821224 16fb6b000 Delete type=2 #15
-2025/09/27-02:48:31.821271 16fb6b000 Delete type=2 #19
-2025/09/27-02:48:31.821330 16fb6b000 Manual compaction at level-1 from '!item!variantesvanzicia5de9b' @ 32 : 1 .. '!item!variantesvanzicia5de9b' @ 0 : 0; will stop at (end)
+2025/09/27-10:03:37.595814 16fbc3000 Recovering log #42
+2025/09/27-10:03:37.596604 16fbc3000 Delete type=3 #40
+2025/09/27-10:03:37.596650 16fbc3000 Delete type=0 #42
+2025/09/27-10:03:37.598149 17045b000 Level-0 table #48: started
+2025/09/27-10:03:37.598393 17045b000 Level-0 table #48: 5879 bytes OK
+2025/09/27-10:03:37.598479 17045b000 Delete type=0 #46
+2025/09/27-10:03:37.598562 17045b000 Manual compaction at level-0 from '!items!gattolupescoc729ef' @ 72057594037927935 : 1 .. '!items!variantesvanzicia5de9b' @ 0 : 0; will stop at '!items!variantesvanzicia5de9b' @ 88 : 1
+2025/09/27-10:03:37.598570 17045b000 Compacting 1@0 + 1@1 files
+2025/09/27-10:03:37.598832 17045b000 Generated table #49@0: 16 keys, 6053 bytes
+2025/09/27-10:03:37.598838 17045b000 Compacted 1@0 + 1@1 files => 6053 bytes
+2025/09/27-10:03:37.598887 17045b000 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/27-10:03:37.598922 17045b000 Delete type=2 #48
+2025/09/27-10:03:37.598982 17045b000 Delete type=2 #44
+2025/09/27-10:03:37.599038 17045b000 Manual compaction at level-0 from '!items!variantesvanzicia5de9b' @ 88 : 1 .. '!items!variantesvanzicia5de9b' @ 0 : 0; will stop at (end)

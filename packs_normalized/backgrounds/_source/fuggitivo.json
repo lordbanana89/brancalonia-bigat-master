@@ -1,76 +1,81 @@
 {
-  "_id": "fuggitivozwi5hw",
-  "_key": "!items!fuggitivozwi5hw",
-  "name": "Fuggitivo",
-  "type": "background",
-  "img": "icons/skills/movement/feet-sprint-barefoot-sand.webp",
-  "system": {
-    "description": {
-      "value": "<p><em>Evaso, disertore o datosi alla macchia, braccato dalla giustizia del Regno</em></p>\n<p><strong>Skill Proficiencies:</strong> Stealth, Survival</p>\n<p><strong>Languages:</strong> Baccaglio (gergo furfantesco)</p>\n<p><strong>Equipment:</strong> Pugnale, ricordo vita passata, abito viaggiatore sgualcito, borsa 10 ma</p>\n<h3>Suggested Characteristics</h3>\n<p>I fuggitivo di Brancalonia sono caratterizzati da:</p>\n<table><thead><tr><th>d8</th><th>Personality Trait</th></tr></thead><tbody><tr><td>1</td><td>Tiene profilo basso e si guarda le spalle</td></tr><tr><td>2</td><td>Evita birri e notabili</td></tr><tr><td>3</td><td>Non si fida di nessuno</td></tr><tr><td>4</td><td>Odia autorità e giustizia</td></tr><tr><td>5</td><td>Controlla sempre vie di fuga</td></tr><tr><td>6</td><td>Solidale con i perseguitati</td></tr><tr><td>7</td><td>Nervoso se sta troppo ferimo</td></tr><tr><td>8</td><td>Ha un piano per lasciare la regione</td></tr></tbody></table>\n<table><thead><tr><th>d6</th><th>Ideal</th></tr></thead><tbody><tr><td>1</td><td>Solidarietà (Buono)</td></tr><tr><td>2</td><td>Giustizia per tutti (Legale)</td></tr><tr><td>3</td><td>Libertà (Caotico)</td></tr><tr><td>4</td><td>Indifferenza (Malvagio)</td></tr><tr><td>5</td><td>Buon senso (Neutrale)</td></tr><tr><td>6</td><td>Ambizione di redimersi (Qualsiasi)</td></tr></tbody></table>\n",
-      "chat": "",
-      "unidentified": ""
-    },
-    "source": "Manuale Base p.36",
-    "identifier": "fuggitivo",
-    "advancement": [
-      {
-        "_id": "gfeg9sdkg3p",
-        "type": "Improvement",
-        "configuration": {
-          "skills": {
-            "chosen": [],
-            "fixed": [
-              "ste",
-              "sur"
-            ]
-          }
-        },
-        "value": {},
-        "level": 0,
-        "title": "",
-        "classRestriction": "",
-        "appliedEffects": []
+  "nome": "Fuggitivo",
+  "fonte": "Manuale Base p.36",
+  "tipo": "background",
+  "descrizione": "Evaso, disertore o datosi alla macchia, braccato dalla giustizia del Regno",
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Furtività e Sopravvivenza",
+      "implementazione": {
+        "furtivita": "system.skills.ste.value = 1",
+        "sopravvivenza": "system.skills.sur.value = 1"
       },
-      {
-        "_id": "xnq93ip99ym",
-        "type": "Improvement",
-        "configuration": {
-          "languages": {
-            "chosen": [],
-            "fixed": [
-              "cant"
-            ]
-          }
-        },
-        "value": {},
-        "level": 0,
-        "title": "",
-        "classRestriction": "",
-        "appliedEffects": []
-      }
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Baccaglio (gergo furfantesco)",
+      "implementazione": "system.traits.languages.value.push('baccaglio')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Pugnale, ricordo vita passata, abito viaggiatore sgualcito, borsa 10 ma"
+    },
+    "privilegio_reietto": {
+      "tipo": "attivo",
+      "descrizione": "Taglia aumenta di 100 mo per grave malefatta attribuita",
+      "implementazione": "flags.brancalonia-bigat.tagliaBonus = 100",
+      "mode": 2,
+      "nota": "Sistema Taglia specifico di Brancalonia"
+    }
+  },
+  "malefatte_possibili": [
+    "Evasione",
+    "Diserzione",
+    "Tradimento",
+    "Interruzione di pubblica esecuzione",
+    "Resistenza all'arresto",
+    "Ferimento di Birri",
+    "Sedizione",
+    "Rivolta",
+    "Brigantaggio",
+    "Saccheggio"
+  ],
+  "caratterizzazione": {
+    "tratti": [
+      "Tiene profilo basso e si guarda le spalle",
+      "Evita birri e notabili",
+      "Non si fida di nessuno",
+      "Odia autorità e giustizia",
+      "Controlla sempre vie di fuga",
+      "Solidale con i perseguitati",
+      "Nervoso se sta troppo ferimo",
+      "Ha un piano per lasciare la regione"
     ],
-    "startingEquipment": [
-      {
-        "uuid": "Compendium.dnd5e.items.Item.cWi8SiGCmP89GQZZ",
-        "quantity": 10
-      }
+    "ideali": [
+      "Solidarietà (Buono)",
+      "Giustizia per tutti (Legale)",
+      "Libertà (Caotico)",
+      "Indifferenza (Malvagio)",
+      "Buon senso (Neutrale)",
+      "Ambizione di redimersi (Qualsiasi)"
     ]
   },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
+  "validazione": {
+    "implementato": false,
+    "file_id": "fuggitivo001",
+    "compendio": "backgrounds",
+    "nota": "Non trovato tra i backgrounds implementati"
+  },
+  "_id": "fuggitivo",
+  "_key": "!items!fuggitivo",
   "ownership": {
     "default": 0
   },
-  "flags": {
-    "brancalonia": {
-      "fonte": "Manuale Base p.36",
-      "validazione": {
-        "implementato": false,
-        "file_id": "fuggitivo001",
-        "compendio": "backgrounds",
-        "nota": "Non trovato tra i backgrounds implementati"
-      }
-    }
-  }
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "name": "Fuggitivo"
 }

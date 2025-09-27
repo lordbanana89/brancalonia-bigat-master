@@ -1,0 +1,24 @@
+
+============================================================
+AGENT ITEM FIXER - REPORT FINALE
+============================================================
+
+📊 STATISTICHE:
+  - Item analizzati: 233
+  - Errori trovati: 1
+  - Fix applicati: 55
+
+📦 FIX PER TIPO:
+  - consumable: 1 item
+  - container: 14 item
+  - equipment: 13 item
+  - loot: 22 item
+  - tool: 1 item
+  - weapon: 4 item
+
+⚠️ ERRORI TROVATI:
+  - bg-azzeccagarbuglipergamena-683622.json: Tipo cambiato da 'loot' a 'consumable'
+
+============================================================
+SCHEMA D&D 5e v5.1.9 APPLICATO CON SUCCESSO
+============================================================

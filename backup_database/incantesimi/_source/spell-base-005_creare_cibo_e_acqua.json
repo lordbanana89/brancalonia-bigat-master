@@ -1,0 +1,68 @@
+{
+  "id": "spell-base-005",
+  "nome": "Creare Cibo e Acqua",
+  "nome_originale": "Create Food and Water",
+  "livello": 3,
+  "scuola": "Evocazione",
+  "classi": [
+    "Chierico",
+    "Druido",
+    "Paladino"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Create Food and Water",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Create Food and Water).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
+  "name": "Spell Base 005 Creare Cibo E Acqua",
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-base-005_creare_cibo_e_acqua",
+  "_key": "!items!spell-base-005_creare_cibo_e_acqua",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "spell",
+  "system": {
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": "",
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "",
+        "count": "",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "type": "",
+        "size": ""
+      }
+    }
+  }
+}

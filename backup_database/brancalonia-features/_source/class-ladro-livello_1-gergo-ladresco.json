@@ -1,0 +1,31 @@
+{
+  "_id": "2v2ro9agupg6c2wj",
+  "_key": "!items!2v2ro9agupg6c2wj",
+  "name": "Gergo Ladresco",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Linguaggio segreto dei ladri",
+      "chat": ""
+    },
+    "requirements": "Livello 1",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

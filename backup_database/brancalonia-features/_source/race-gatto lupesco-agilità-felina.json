@@ -1,0 +1,40 @@
+{
+  "_id": "xd2i8x6iusd7t2v8",
+  "_key": "!items!xd2i8x6iusd7t2v8",
+  "name": "Agilità Felina",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "+2 Destrezza. Puoi muoverti a velocità normale anche quando sei accovacciato.",
+      "chat": ""
+    },
+    "requirements": "Gatto Lupesco",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "5rdhutofeuucno6h",
+      "name": "Bonus dex",
+      "icon": "icons/svg/upgrade.svg",
+      "changes": [
+        {
+          "key": "system.abilities.dex.value",
+          "mode": 2,
+          "value": 2
+        }
+      ],
+      "disabled": false,
+      "transfer": true
+    }
+  ],
+  "flags": {}
+}

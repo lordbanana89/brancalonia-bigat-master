@@ -1,0 +1,43 @@
+{
+  "_id": "scudo001",
+  "_key": "!items!scudo001",
+  "name": "Scudo",
+  "type": "equipment",
+  "img": "icons/equipment/shield/round-wooden-boss-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Uno scudo di legno rinforzato.</p>"
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "armor": {
+      "value": 2,
+      "dex": null
+    },
+    "armorType": "shield",
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "stealth": false,
+    "proficient": null,
+    "equipped": false,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

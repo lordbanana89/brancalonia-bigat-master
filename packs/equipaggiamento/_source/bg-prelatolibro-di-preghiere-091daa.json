@@ -1,0 +1,38 @@
+{
+  "_id": "bg-prelatolibro-di-preghiere-091daa",
+  "_key": "!items!bg-prelatolibro-di-preghiere-091daa",
+  "name": "Libro di preghiere",
+  "type": "loot",
+  "img": "icons/sundries/books/book-worn-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Libro di preghiere - Equipaggiamento iniziale del background prelato.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "prelato"
+    }
+  }
+}

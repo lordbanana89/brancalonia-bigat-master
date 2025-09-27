@@ -1,0 +1,39 @@
+{
+  "_id": "640osjf8ykome9vu",
+  "_key": "!items!640osjf8ykome9vu",
+  "name": "Agilità Halfling",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Puoi muoverti attraverso lo spazio di creature più grandi",
+      "chat": ""
+    },
+    "requirements": "generic",
+    "recharge": {
+      "value": null,
+      "charged": true
+    },
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "bg-prelatovesti-da-sacerdote-2d600b",
+  "_key": "!items!bg-prelatovesti-da-sacerdote-2d600b",
+  "name": "Vesti da sacerdote",
+  "type": "equipment",
+  "img": "icons/equipment/chest/robe-simple-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vesti da sacerdote - Equipaggiamento iniziale del background prelato.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "armor": {
+      "value": 10,
+      "dex": null
+    },
+    "armorType": "clothing",
+    "equipped": false,
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "stealth": false,
+    "proficient": null,
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "prelato"
+    }
+  }
+}

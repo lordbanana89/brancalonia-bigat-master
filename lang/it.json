@@ -10,7 +10,17 @@
       "OggettiScadenti": "Oggetti Scadenti",
       "OggettiScadentiHint": "Abilita le regole per equipaggiamento di scarsa qualità",
       "CompagniaVentura": "Sistema Compagnia di Ventura",
-      "CompagniaVenturaHint": "Abilita la gestione delle compagnie mercenarie"
+      "CompagniaVenturaHint": "Abilita la gestione delle compagnie mercenarie",
+      "ThemePreset": "Tema Visivo",
+      "ThemePresetHint": "Seleziona il tema visivo per l'interfaccia di Brancalonia",
+      "CustomColors": "Colori Personalizzati",
+      "CustomColorsHint": "Personalizza i colori del tema selezionato",
+      "EnableAnimations": "Abilita Animazioni",
+      "EnableAnimationsHint": "Attiva le animazioni dell'interfaccia rinascimentale",
+      "EnableDecorations": "Abilita Decorazioni",
+      "EnableDecorationsHint": "Mostra gli ornamenti e le decorazioni rinascimentali",
+      "DarkMode": "Modalità Scura",
+      "DarkModeHint": "Utilizza il tema scuro per ridurre l'affaticamento visivo"
     },
     "Race": {
       "Malebranche": "Malebranche",
@@ -89,6 +99,14 @@
       "Infamia": "Il tuo livello di infamia nel Regno di Taglia",
       "Ducato": "La moneta standard di Brancalonia",
       "Compagnia": "La tua compagnia di ventura"
-    }
+    },
+    "ThemePicker": "Personalizza Tema",
+    "ThemePickerTitle": "Personalizzazione Tema Brancalonia",
+    "ThemeSaved": "Tema salvato con successo!",
+    "ThemeExported": "Tema esportato con successo!",
+    "ThemeImported": "Tema importato con successo!",
+    "ThemeImportError": "Errore nell'importazione del tema",
+    "ImportTheme": "Importa Tema",
+    "SelectThemeFile": "Seleziona un file di tema (.json)"
   }
 }

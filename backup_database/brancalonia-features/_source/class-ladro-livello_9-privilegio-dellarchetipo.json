@@ -1,0 +1,31 @@
+{
+  "_id": "3f0gl2szwm6eb91n",
+  "_key": "!items!3f0gl2szwm6eb91n",
+  "name": "Privilegio dell'Archetipo",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Abilità dell'archetipo",
+      "chat": ""
+    },
+    "requirements": "Livello 9",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

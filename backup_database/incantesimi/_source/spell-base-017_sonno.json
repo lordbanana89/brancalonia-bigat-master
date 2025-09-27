@@ -1,0 +1,68 @@
+{
+  "id": "spell-base-017",
+  "nome": "Sonno",
+  "nome_originale": "Sleep",
+  "livello": 1,
+  "scuola": "Ammaliamento",
+  "classi": [
+    "Bardo",
+    "Stregone",
+    "Mago"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Sleep",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Sleep).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
+  "name": "Spell Base 017 Sonno",
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-base-017_sonno",
+  "_key": "!items!spell-base-017_sonno",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "spell",
+  "system": {
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": "",
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "",
+        "count": "",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "type": "",
+        "size": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_id": "ololne3m6gday6zz",
+  "_key": "!items!ololne3m6gday6zz",
+  "name": "Talento Affidabile",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Minimo 10 nelle prove di abilità",
+      "chat": ""
+    },
+    "requirements": "Livello 11",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

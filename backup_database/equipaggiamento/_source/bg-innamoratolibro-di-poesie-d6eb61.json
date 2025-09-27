@@ -1,0 +1,38 @@
+{
+  "_id": "bg-innamoratolibro-di-poesie-d6eb61",
+  "_key": "!items!bg-innamoratolibro-di-poesie-d6eb61",
+  "name": "Libro di poesie",
+  "type": "loot",
+  "img": "icons/sundries/books/book-worn-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Libro di poesie - Equipaggiamento iniziale del background innamorato.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "innamorato"
+    }
+  }
+}

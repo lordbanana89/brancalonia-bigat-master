@@ -1,0 +1,66 @@
+{
+  "id": "spell-base-010",
+  "nome": "Arma Spirituale",
+  "nome_originale": "Spiritual Weapon",
+  "livello": 2,
+  "scuola": "Invocazione",
+  "classi": [
+    "Chierico"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Spiritual Weapon",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Spiritual Weapon).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
+  "name": "Spell Base 010 Arma Spirituale",
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "spell-base-010_arma_spirituale",
+  "_key": "!items!spell-base-010_arma_spirituale",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "spell",
+  "system": {
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": "",
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "",
+        "count": "",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "type": "",
+        "size": ""
+      }
+    }
+  }
+}

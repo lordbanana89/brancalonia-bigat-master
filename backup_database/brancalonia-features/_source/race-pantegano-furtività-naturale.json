@@ -1,0 +1,25 @@
+{
+  "_id": "fi4a731y2546z6pb",
+  "_key": "!items!fi4a731y2546z6pb",
+  "name": "Furtività Naturale",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Competenza in Furtività. Puoi nasconderti anche quando sei oscurato solo leggermente.",
+      "chat": ""
+    },
+    "requirements": "Pantegano",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

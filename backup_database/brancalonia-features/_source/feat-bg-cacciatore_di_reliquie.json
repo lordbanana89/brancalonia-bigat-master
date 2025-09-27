@@ -1,0 +1,87 @@
+{
+  "_id": "feat-bg-cacciatore_di_reliquie",
+  "_key": "!items!feat-bg-cacciatore_di_reliquie",
+  "name": "Studioso di Reliquie",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p>Grazie alla licenza ufficiale può consultare archivi e raccolte del Credo, ottenere informazioni su reliquie e siti di ritrovamento e farsi riconoscere come esperto autorizzato.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.36-37",
+    "identifier": "cacciatore_di_reliquie-privilegio",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Cacciatore di reliquie",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.36-37",
+      "tipo": "privilegio-background",
+      "background": "cacciatore_di_reliquie"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "spada001",
+  "_key": "!items!spada001",
+  "name": "Spada Corta",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-brass.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una spada corta ben bilanciata.</p>"
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "damage": {
+      "parts": [
+        [
+          "1d6 + @mod",
+          "slashing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft"
+    },
+    "properties": [
+      "fin",
+      "lgt"
+    ],
+    "weaponType": "martialM",
+    "proficient": null,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

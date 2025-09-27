@@ -1,0 +1,265 @@
+🎯 BRANCALONIA AGENT ORCHESTRATOR v2.0
+Strategia multi-agent parallela per fix completo
+
+Opzioni:
+1. Esecuzione per priorità (consigliato)
+2. Esecuzione parallela totale (max performance)
+3. Solo compilazione pack
+
+============================================================
+🚀 ESECUZIONE PARALLELA TOTALE - TUTTI GLI AGENT
+============================================================
+
+🤖 [MONITOR] Avvio: Analisi repository D&D 5e
+
+🤖 [VALIDATOR] Avvio: Validazione completa modulo
+
+🤖 [DATABASE] Avvio: Normalizzazione database
+
+🤖 [CLASSES] Avvio: Fix classi e advancement
+
+🤖 [SPELL_FIXER] Avvio: Fix incantesimi con schema D&D 5e
+
+🤖 [CLASS_FIXER] Avvio: Fix classi con schema esatto
+
+🤖 [ITEM_FIXER] Avvio: Fix equipaggiamento con schema D&D 5e
+
+🤖 [RESTORE_CONTENT] Avvio: Ripristina TUTTI i contenuti rimossi
+
+🤖 [FIX_REMAINING] Avvio: Fix UUID dnd5e e descrizioni mancanti
+
+🤖 [FEATURES] Avvio: Validazione features
+
+🤖 [UI] Avvio: Customizzazione UI Brancalonia
+
+🤖 [DEBUGGER] Avvio: Debug profondo e test
+✅ [CLASS_FIXER] Completato con successo
+
+[1/12] ✅ CLASS_FIXER completato
+✅ [RESTORE_CONTENT] Completato con successo
+
+[2/12] ✅ RESTORE_CONTENT completato
+❌ [DEBUGGER] Fallito: 
+
+[3/12] ❌ DEBUGGER completato
+✅ [UI] Completato con successo
+
+[4/12] ✅ UI completato
+✅ [CLASSES] Completato con successo
+
+[5/12] ✅ CLASSES completato
+✅ [SPELL_FIXER] Completato con successo
+   📊 0 file corretti
+
+[6/12] ✅ SPELL_FIXER completato
+✅ [ITEM_FIXER] Completato con successo
+   📊 55 file corretti
+
+[7/12] ✅ ITEM_FIXER completato
+✅ [FIX_REMAINING] Completato con successo
+
+[8/12] ✅ FIX_REMAINING completato
+❌ [FEATURES] Fallito: 
+
+[9/12] ❌ FEATURES completato
+✅ [VALIDATOR] Completato con successo
+
+[10/12] ✅ VALIDATOR completato
+✅ [DATABASE] Completato con successo
+   📊 3 fix applicati
+
+[11/12] ✅ DATABASE completato
+✅ [MONITOR] Completato con successo
+
+[12/12] ✅ MONITOR completato
+
+================================================================================
+📊 REPORT FINALE ORCHESTRAZIONE MULTI-AGENT
+================================================================================
+
+⏱️ Tempo totale: 48.91 secondi
+✅ Agent completati: 10/12
+❌ Agent falliti: 2/12
+
+📈 DETTAGLI PER AGENT:
+------------------------------------------------------------
+
+✅ CLASS_FIXER:
+   Tempo: 0.07s
+
+✅ RESTORE_CONTENT:
+   Tempo: 0.08s
+
+❌ DEBUGGER:
+   Tempo: 0.08s
+
+✅ UI:
+   Tempo: 0.08s
+
+✅ CLASSES:
+   Tempo: 0.08s
+
+✅ SPELL_FIXER:
+   Tempo: 0.11s
+   Stats: 0 file corretti
+
+✅ ITEM_FIXER:
+   Tempo: 0.12s
+   Stats: 55 file corretti
+
+✅ FIX_REMAINING:
+   Tempo: 0.14s
+
+❌ FEATURES:
+   Tempo: 0.16s
+
+✅ VALIDATOR:
+   Tempo: 0.28s
+
+✅ DATABASE:
+   Tempo: 0.58s
+   Stats: 3 fix applicati
+
+✅ MONITOR:
+   Tempo: 48.90s
+
+📄 Report dettagliato salvato in: orchestrator_report.json
+================================================================================
+
+❓ Vuoi compilare tutti i pack ora? (consigliato dopo fix)
+
+============================================================
+📦 COMPILAZIONE FINALE TUTTI I PACK
+============================================================
+🔧 COMPILAZIONE COMPLETA TUTTI I PACK BRANCALONIA
+==================================================
+
+📦 Compilando pack: backgrounds
+-----------------------------------
+  File JSON trovati:       14
+Packed ambulante (Ambulante)
+Packed attaccabrighe (Attaccabrighe)
+Packed azzeccagarbugli (Azzeccagarbugli)
+Packed brado (Brado)
+Packed cacciatore_di_reliquie (Cacciatore di reliquie)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: brancalonia-features
+-----------------------------------
+  File JSON trovati:      357
+Packed arlecchinobardolivello3batocchio68d64d (batocchio)
+Packed arlecchinobardolivello3competenzebonus3b9f78 (competenze_bonus)
+Packed arlecchinobardolivello3difesasenzaarmatura129d94 (difesa_senza_armatura)
+Packed arlecchinobardolivello6silenzioinsala3a0f6a (silenzio_in_sala)
+Packed benandantedruidolivello2guardareoltrevelo634d6b (guardare_oltre_velo)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: classi
+-----------------------------------
+  File JSON trovati:       12
+Packed class-barbarian-v7jhif (Barbaro)
+Packed class-bardo-uh05kq (Bardo)
+Packed class-chierico-lvrhc0 (Chierico)
+Packed class-druido-e31618 (Druido)
+Packed class-fighter-o0j7hl (Guerriero)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: emeriticenze
+-----------------------------------
+  File JSON trovati:       11
+Packed affinamento1c276b (Affinamento)
+Packed armapreferitae3c6f4 (Arma Preferita)
+Packed emeriticenzaassoluta32ec13 (Emeriticenza Assoluta)
+Packed energumeno41d582 (Energumeno)
+Packed fandoniamiglioratad1933c (Fandonia Migliorata)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: equipaggiamento
+-----------------------------------
+  File JSON trovati:      233
+Packed animal001asinoomuloa0a104 (Asino o Mulo)
+Packed animal002buef11a4f (Bue)
+Packed animal003cammellod8f8bf (Cammello)
+Packed animal004cavallodasellaleggero3ea43b (Cavallo da Sella Leggero)
+Packed animal005cavallodaguerra3a7c6b (Cavallo da Guerra)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: incantesimi
+-----------------------------------
+  File JSON trovati:      167
+Packed spell-amicizia (Spell Amicizia)
+Packed spell-anatema (Spell Anatema)
+Packed spell-armatura-magica (Spell Armatura Magica)
+Packed spell-artificio-druidico (Spell Artificio Druidico)
+Packed spell-assicurazione (Spell Assicurazione)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: npc
+-----------------------------------
+  File JSON trovati:       44
+Packed accroccodireliquie23736a (Accrocco di Reliquie)
+Packed agentediequitagliadfdde2 (Agente di Equitaglia)
+Packed alimentaledipolentabf01a5 (Alimentale di Polenta)
+Packed anguana299a0a (Anguana)
+Packed animaliparlantia2bc20 (Animali Parlanti)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: razze
+-----------------------------------
+  File JSON trovati:        8
+Packed gattolupescoc729ef (Gatto Lupesco)
+Packed inesistente66a334 (Inesistente)
+Packed pantegano87d380 (Pantegano)
+Packed sottorazzapinocchiob12f3d (Pinocchio)
+Packed sottorazzapupofa97e7 (Pupo)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: regole
+-----------------------------------
+  File JSON trovati:       55
+Packed armi (Armi)
+Packed bagordiintroduzione (Regole di Bagordi)
+Packed bagordiistruzioni (Applicare la Tabella)
+Packed bagorditabella (Botte da Orbi e Bisacce Sfondate)
+Packed botteallabotte (Botte alla Botte)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: rollable-tables
+-----------------------------------
+  File JSON trovati:       81
+Packed backgroundcanaglie (Background delle Canaglie)
+Packed bevandetaverna (Bevande della Taverna)
+Packed VqSVoJr6pzsJVJ4h (Ambulante - Difetti)
+Packed oNkYUcmF0kFMq39e (Ambulante - Ideali)
+Packed CLh8GivenPA6Zhsx (Ambulante - Legami)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: sottoclassi
+-----------------------------------
+  File JSON trovati:       21
+Packed classbarbarocamminoberserker57ce27 (berserker)
+Packed classbarbarocamminototemfb7a77 (totem)
+Packed classbardocollegioconoscenza2aa23e (Collegio della Conoscenza)
+Packed classbardocollegiovalore834176 (Collegio del Valore)
+Packed classchiericodominioconoscenzaf28a28 (Dominio della Conoscenza)
+  ✅ Pack compilato con successo
+
+📦 Compilando pack: talenti
+-----------------------------------
+  File JSON trovati:        8
+Packed animacontadina84ec09 (Anima Contadina)
+Packed anticaarteculinaria42f530 (Antica Arte Culinaria)
+Packed compagnodellaselva8d6630 (Compagno della Selva)
+Packed sanguedellaviluperae72ab1 (Sangue della Vilupera)
+Packed scaglianzadd4fb5 (Scaglianza)
+  ✅ Pack compilato con successo
+
+==================================================
+RIEPILOGO COMPILAZIONE:
+  ✅ Pack compilati: 12
+  ❌ Pack falliti: 0
+==================================================
+
+✅ Compilazione completata con successo
+
+✨ ORCHESTRAZIONE COMPLETATA

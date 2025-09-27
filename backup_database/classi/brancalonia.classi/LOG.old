@@ -1,0 +1,15 @@
+2025/09/27-09:47:31.492813 173a33000 Recovering log #36
+2025/09/27-09:47:31.493753 173a33000 Delete type=3 #35
+2025/09/27-09:47:31.493800 173a33000 Delete type=0 #36
+2025/09/27-09:47:31.495377 1742cb000 Level-0 table #40: started
+2025/09/27-09:47:31.495717 1742cb000 Level-0 table #40: 25121 bytes OK
+2025/09/27-09:47:31.495784 1742cb000 Delete type=0 #38
+2025/09/27-09:47:31.495848 1742cb000 Manual compaction at level-0 from '!items!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at (end)
+2025/09/27-09:47:31.495861 1742cb000 Manual compaction at level-1 from '!items!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at '!items!class-warlock-p0p6u4' @ 84 : 1
+2025/09/27-09:47:31.495865 1742cb000 Compacting 1@1 + 1@2 files
+2025/09/27-09:47:31.496242 1742cb000 Generated table #41@1: 12 keys, 25121 bytes
+2025/09/27-09:47:31.496252 1742cb000 Compacted 1@1 + 1@2 files => 25121 bytes
+2025/09/27-09:47:31.496315 1742cb000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-09:47:31.496344 1742cb000 Delete type=2 #32
+2025/09/27-09:47:31.496671 1742cb000 Delete type=2 #40
+2025/09/27-09:47:31.496744 1742cb000 Manual compaction at level-1 from '!items!class-warlock-p0p6u4' @ 84 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at (end)

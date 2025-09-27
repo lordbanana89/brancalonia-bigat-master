@@ -1,0 +1,38 @@
+{
+  "_id": "bg-lucignolocimelio-aggiuntivo-335bdd",
+  "_key": "!items!bg-lucignolocimelio-aggiuntivo-335bdd",
+  "name": "Cimelio aggiuntivo",
+  "type": "loot",
+  "img": "icons/commodities/treasure/gem-pearl-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cimelio aggiuntivo - Equipaggiamento iniziale del background lucignolo.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "lucignolo"
+    }
+  }
+}

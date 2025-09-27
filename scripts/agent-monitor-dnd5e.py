@@ -1,305 +1,477 @@
 #!/usr/bin/env python3
 """
-AGENT MONITOR - Monitora repository D&D 5e per aggiornamenti e struttura
-Analizza e salva scoperte tecniche per allineamento con D&D 5e v5.1.9
+AGENT_MONITOR - D&D 5e Repository Structure Analyzer
+
+This script analyzes the official D&D 5e repository to understand:
+- Class advancement structures
+- UUID patterns
+- Item formats
+- Data organization
+
+Author: Agent Monitor
+Date: 2024
+Purpose: Technical discovery for Brancalonia integration
 """
 
+import os
+import sys
 import json
-import requests
-from datetime import datetime
+import subprocess
+import shutil
 from pathlib import Path
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
+from datetime import datetime
+import re
 
-class DnD5eMonitor:
+try:
+    import yaml
+except ImportError:
+    print("⚠️  Warning: PyYAML not installed. Installing...")
+    subprocess.run([sys.executable, "-m", "pip", "install", "PyYAML"], check=True)
+    import yaml
+
+class DnD5eAnalyzer:
     def __init__(self):
-        self.repo_url = "https://api.github.com/repos/foundryvtt/dnd5e"
+        self.repo_url = "https://github.com/foundryvtt/dnd5e.git"
         self.branch = "release-5.1.9"
-        self.discoveries = {
-            "last_check": datetime.now().isoformat(),
-            "version": "5.1.9",
-            "advancement_types": [],
-            "item_grant_format": {},
-            "spell_progression": {},
-            "uuid_format": "",
-            "technical_notes": []
+        self.analysis_dir = Path("/tmp/dnd5e-analysis")
+        self.repo_dir = self.analysis_dir / "dnd5e"
+        self.output_file = Path("/Users/erik/Desktop/brancalonia-bigat-master/technical-discoveries/dnd5e-structure-analysis.md")
+        self.findings = {
+            "advancement_types": {},
+            "uuid_patterns": [],
+            "class_structures": {},
+            "item_formats": {},
+            "metadata": {}
         }
 
-    def fetch_repository_structure(self):
-        """Fetch repository structure from GitHub API"""
+    def setup_directories(self):
+        """Create necessary directories"""
+        self.analysis_dir.mkdir(exist_ok=True)
+        self.output_file.parent.mkdir(exist_ok=True)
+        print(f"📁 Created analysis directory: {self.analysis_dir}")
+        print(f"📁 Output will be saved to: {self.output_file}")
+
+    def clone_repository(self):
+        """Clone or update the D&D 5e repository"""
+        if self.repo_dir.exists():
+            print(f"🔄 Repository already exists at {self.repo_dir}")
+            print("🔄 Pulling latest changes...")
+            try:
+                subprocess.run([
+                    "git", "-C", str(self.repo_dir), "pull", "origin", self.branch
+                ], check=True, capture_output=True, text=True)
+                print("✅ Repository updated successfully")
+            except subprocess.CalledProcessError as e:
+                print(f"⚠️  Warning: Could not update repository: {e}")
+                print("🔄 Continuing with existing repository...")
+        else:
+            print(f"📥 Cloning D&D 5e repository from {self.repo_url}")
+            print(f"🌿 Branch: {self.branch}")
+            try:
+                subprocess.run([
+                    "git", "clone", "-b", self.branch, self.repo_url, str(self.repo_dir)
+                ], check=True, capture_output=True, text=True)
+                print("✅ Repository cloned successfully")
+            except subprocess.CalledProcessError as e:
+                print(f"❌ Error cloning repository: {e}")
+                sys.exit(1)
+
+    def find_data_files(self, patterns: List[str] = ["*.json", "*.yml", "*.yaml"]) -> List[Path]:
+        """Find all data files matching patterns"""
+        data_files = []
+        for pattern in patterns:
+            for file_path in self.repo_dir.rglob(pattern):
+                if file_path.is_file():
+                    data_files.append(file_path)
+        return data_files
+
+    def load_data_file(self, file_path: Path) -> Optional[Dict]:
+        """Safely load a JSON or YAML file"""
         try:
-            # Get repository contents
-            url = f"{self.repo_url}/contents?ref={self.branch}"
-            response = requests.get(url)
-
-            if response.status_code == 200:
-                contents = response.json()
-                self.discoveries["repository_structure"] = [
-                    {"name": item['name'], "type": item['type']}
-                    for item in contents
-                ]
-                print(f"✅ Fetched repository structure: {len(contents)} items")
+            with open(file_path, 'r', encoding='utf-8') as f:
+                if file_path.suffix.lower() in ['.yml', '.yaml']:
+                    return yaml.safe_load(f)
+                else:
+                    return json.load(f)
+        except (json.JSONDecodeError, yaml.YAMLError, UnicodeDecodeError) as e:
+            print(f"⚠️  Warning: Could not parse {file_path}: {e}")
+            return None
         except Exception as e:
-            print(f"❌ Error fetching repository: {e}")
+            print(f"⚠️  Warning: Error reading {file_path}: {e}")
+            return None
 
-    def analyze_advancement_types(self):
-        """Analyze advancement types from D&D 5e"""
-        # Based on research, these are the official advancement types
-        advancement_types = [
-            {
-                "type": "HitPoints",
-                "description": "Hit point advancement per level",
-                "required_levels": [1],
-                "configuration": {}
-            },
-            {
-                "type": "Trait",
-                "description": "Grants proficiencies (weapons, saves, skills)",
-                "required_levels": [1],
-                "configuration": {
-                    "grants": ["weapon:simple", "save:int", "skill:arcana"]
-                }
-            },
-            {
-                "type": "ItemGrant",
-                "description": "Grants items/features from compendium",
-                "required_levels": "varies",
-                "configuration": {
-                    "items": [
-                        {
-                            "uuid": "Compendium.system.pack.Item.id",
-                            "optional": False
-                        }
-                    ]
-                }
-            },
-            {
-                "type": "AbilityScoreImprovement",
-                "description": "ASI at specific levels",
-                "required_levels": [4, 8, 12, 16, 19],
-                "configuration": {
-                    "points": 2,
-                    "fixed": {}
-                }
-            },
-            {
-                "type": "ScaleValue",
-                "description": "Scaling values (rage uses, cantrips, etc)",
-                "required_levels": "varies",
-                "configuration": {
-                    "identifier": "feature-name",
-                    "type": "number|dice|distance|cr",
-                    "distance": {"units": "ft"}
-                }
-            },
-            {
-                "type": "ItemChoice",
-                "description": "Choose items/spells from list",
-                "required_levels": "varies",
-                "configuration": {
-                    "choices": {
-                        "0": {"count": 1, "replacement": False}
-                    },
-                    "type": "spell|feat|feature"
-                }
-            },
-            {
-                "type": "Subclass",
-                "description": "Subclass selection",
-                "required_levels": "varies by class",
-                "configuration": {}
-            }
-        ]
+    def analyze_advancement_structure(self, data: Dict, file_path: Path):
+        """Analyze advancement structures in data"""
+        def recursive_find_advancements(obj, path=""):
+            if isinstance(obj, dict):
+                if "advancement" in obj and isinstance(obj["advancement"], list):
+                    for i, advancement in enumerate(obj["advancement"]):
+                        if isinstance(advancement, dict) and "type" in advancement:
+                            adv_type = advancement["type"]
+                            adv_path = f"{path}.advancement[{i}]"
 
-        self.discoveries["advancement_types"] = advancement_types
-        print(f"✅ Analyzed {len(advancement_types)} advancement types")
+                            if adv_type not in self.findings["advancement_types"]:
+                                self.findings["advancement_types"][adv_type] = {
+                                    "examples": [],
+                                    "common_properties": set(),
+                                    "file_sources": []
+                                }
 
-    def analyze_item_grant_format(self):
-        """Analyze correct ItemGrant format"""
-        item_grant_format = {
-            "old_format_string": "Compendium.brancalonia.pack.Item.id",
-            "new_format_object": {
-                "uuid": "Compendium.brancalonia.pack.Item.id",
-                "optional": False
-            },
-            "implementation_note": "ItemGrant items should be objects with uuid, not strings",
-            "example": {
-                "_id": "randomid",
-                "type": "ItemGrant",
-                "configuration": {
-                    "items": [
-                        {
-                            "uuid": "Compendium.brancalonia.brancalonia-features.Item.featureId",
-                            "optional": False
-                        }
-                    ],
-                    "optional": False,
-                    "spell": {
-                        "ability": [],
-                        "preparation": "",
-                        "uses": {
-                            "max": "",
-                            "per": ""
-                        }
+                            # Store example with source info
+                            example = {
+                                "data": advancement,
+                                "source_file": str(file_path.relative_to(self.repo_dir)),
+                                "path": adv_path
+                            }
+
+                            if len(self.findings["advancement_types"][adv_type]["examples"]) < 5:
+                                self.findings["advancement_types"][adv_type]["examples"].append(example)
+
+                            # Track common properties
+                            for key in advancement.keys():
+                                self.findings["advancement_types"][adv_type]["common_properties"].add(key)
+
+                            # Track source files
+                            source_file = str(file_path.relative_to(self.repo_dir))
+                            if source_file not in self.findings["advancement_types"][adv_type]["file_sources"]:
+                                self.findings["advancement_types"][adv_type]["file_sources"].append(source_file)
+
+                for key, value in obj.items():
+                    recursive_find_advancements(value, f"{path}.{key}" if path else key)
+
+            elif isinstance(obj, list):
+                for i, item in enumerate(obj):
+                    recursive_find_advancements(item, f"{path}[{i}]" if path else f"[{i}]")
+
+        recursive_find_advancements(data)
+
+    def analyze_uuid_patterns(self, data: Dict, file_path: Path):
+        """Analyze UUID patterns in the data"""
+        def find_uuids(obj, path=""):
+            if isinstance(obj, dict):
+                for key, value in obj.items():
+                    if isinstance(value, str):
+                        # Look for UUID patterns
+                        if "uuid" in key.lower() or key.lower() == "id":
+                            if value.startswith("Compendium."):
+                                uuid_info = {
+                                    "uuid": value,
+                                    "context": key,
+                                    "source_file": str(file_path.relative_to(self.repo_dir)),
+                                    "path": f"{path}.{key}" if path else key
+                                }
+                                self.findings["uuid_patterns"].append(uuid_info)
+                        # Also check for UUID-like strings in other fields
+                        elif value.startswith("Compendium."):
+                            uuid_info = {
+                                "uuid": value,
+                                "context": key,
+                                "source_file": str(file_path.relative_to(self.repo_dir)),
+                                "path": f"{path}.{key}" if path else key
+                            }
+                            self.findings["uuid_patterns"].append(uuid_info)
+                    else:
+                        find_uuids(value, f"{path}.{key}" if path else key)
+            elif isinstance(obj, list):
+                for i, item in enumerate(obj):
+                    find_uuids(item, f"{path}[{i}]" if path else f"[{i}]")
+
+        find_uuids(data)
+
+    def analyze_class_structures(self, data: Dict, file_path: Path):
+        """Analyze class data structures"""
+        if isinstance(data, dict):
+            # Check if this looks like a class definition
+            if "type" in data and data.get("type") == "class":
+                class_name = data.get("name", "Unknown")
+                class_info = {
+                    "name": class_name,
+                    "source_file": str(file_path.relative_to(self.repo_dir)),
+                    "structure": {
+                        "system_keys": list(data.get("system", {}).keys()) if "system" in data else [],
+                        "has_advancement": "advancement" in data.get("system", {}),
+                        "advancement_count": len(data.get("system", {}).get("advancement", [])),
+                        "properties": list(data.keys())
                     }
-                },
-                "level": 1,
-                "title": "Feature Name",
-                "icon": "icons/svg/upgrade.svg"
-            }
-        }
-
-        self.discoveries["item_grant_format"] = item_grant_format
-        print("✅ Analyzed ItemGrant format")
-
-    def analyze_spell_progression(self):
-        """Analyze spell progression types"""
-        spell_progression = {
-            "types": {
-                "full": "Full caster (Wizard, Cleric, Druid, Bard, Sorcerer)",
-                "half": "Half caster (Paladin, Ranger)",
-                "third": "Third caster (Eldritch Knight, Arcane Trickster)",
-                "pact": "Pact magic (Warlock)",
-                "none": "No spellcasting"
-            },
-            "configuration": {
-                "progression": "full|half|third|pact|none",
-                "ability": "int|wis|cha",
-                "preparation": {
-                    "mode": "prepared|always|innate",
-                    "formula": "@abilities.int.mod + @classes.wizard.levels"
                 }
-            },
-            "spell_slots_per_level": {
-                "full": {
-                    "1": [2, 0, 0, 0, 0, 0, 0, 0, 0],
-                    "2": [3, 0, 0, 0, 0, 0, 0, 0, 0],
-                    "3": [4, 2, 0, 0, 0, 0, 0, 0, 0],
-                    "4": [4, 3, 0, 0, 0, 0, 0, 0, 0],
-                    "5": [4, 3, 2, 0, 0, 0, 0, 0, 0],
-                    "20": [4, 3, 3, 3, 3, 2, 2, 1, 1]
-                },
-                "half": {
-                    "1": [0, 0, 0, 0, 0],
-                    "2": [2, 0, 0, 0, 0],
-                    "3": [3, 0, 0, 0, 0],
-                    "5": [4, 2, 0, 0, 0],
-                    "20": [4, 3, 3, 3, 2]
-                },
-                "pact": {
-                    "1": {"slots": 1, "level": 1},
-                    "2": {"slots": 2, "level": 1},
-                    "5": {"slots": 2, "level": 3},
-                    "11": {"slots": 3, "level": 5},
-                    "20": {"slots": 4, "level": 5}
-                }
-            }
-        }
+                self.findings["class_structures"][class_name] = class_info
 
-        self.discoveries["spell_progression"] = spell_progression
-        print("✅ Analyzed spell progression")
+            # Check if this is a classes collection
+            elif "entries" in data or "items" in data:
+                entries = data.get("entries", data.get("items", []))
+                for entry in entries:
+                    if isinstance(entry, dict) and entry.get("type") == "class":
+                        self.analyze_class_structures(entry, file_path)
 
-    def discover_uuid_format(self):
-        """Analyze UUID format requirements"""
-        uuid_info = {
-            "format": "Compendium.{scope}.{pack}.{documentType}.{id}",
-            "examples": {
-                "official": "Compendium.dnd5e.classfeatures.Item.gbNo5eVPaqr8IVKL",
-                "brancalonia": "Compendium.brancalonia.brancalonia-features.Item.z43pcdx9c9x6fs00"
-            },
-            "documentTypes": ["Item", "Actor", "Scene", "JournalEntry", "Macro", "RollTable"],
-            "validation_regex": r"Compendium\.[^.]+\.[^.]+\.(Item|Actor|Scene|JournalEntry|Macro|RollTable)\.[a-zA-Z0-9]+",
-            "notes": [
-                "UUID must reference existing items in compendium",
-                "DocumentType is usually 'Item' for features, spells, equipment",
-                "ID should match the _id field of the referenced document"
-            ]
-        }
+    def analyze_item_formats(self, data: Dict, file_path: Path):
+        """Analyze item data formats"""
+        def analyze_item(item_data, path=""):
+            if isinstance(item_data, dict) and "type" in item_data:
+                item_type = item_data["type"]
+                if item_type not in self.findings["item_formats"]:
+                    self.findings["item_formats"][item_type] = {
+                        "examples": [],
+                        "common_properties": set(),
+                        "system_properties": set()
+                    }
 
-        self.discoveries["uuid_format"] = uuid_info
-        print("✅ Analyzed UUID format")
+                # Store limited examples
+                if len(self.findings["item_formats"][item_type]["examples"]) < 3:
+                    example = {
+                        "name": item_data.get("name", "Unknown"),
+                        "source_file": str(file_path.relative_to(self.repo_dir)),
+                        "data": item_data
+                    }
+                    self.findings["item_formats"][item_type]["examples"].append(example)
 
-    def add_technical_discovery(self, discovery: str):
-        """Add a technical discovery"""
-        self.discoveries["technical_notes"].append({
-            "timestamp": datetime.now().isoformat(),
-            "discovery": discovery
-        })
+                # Track properties
+                for key in item_data.keys():
+                    self.findings["item_formats"][item_type]["common_properties"].add(key)
 
-    def save_discoveries(self):
-        """Save discoveries to JSON file"""
-        output_path = Path("dnd5e-discoveries.json")
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(self.discoveries, f, indent=2, ensure_ascii=False)
+                if "system" in item_data and isinstance(item_data["system"], dict):
+                    for key in item_data["system"].keys():
+                        self.findings["item_formats"][item_type]["system_properties"].add(key)
 
-        print(f"📝 Discoveries saved to {output_path}")
+        if isinstance(data, dict):
+            if "type" in data:
+                analyze_item(data)
+            elif "entries" in data or "items" in data:
+                entries = data.get("entries", data.get("items", []))
+                for entry in entries:
+                    analyze_item(entry)
+
+    def analyze_files(self):
+        """Analyze all data files in the repository"""
+        print("🔍 Analyzing data files...")
+
+        data_files = self.find_data_files()
+        print(f"📊 Found {len(data_files)} data files")
+
+        analyzed_count = 0
+        for file_path in data_files:
+            data = self.load_data_file(file_path)
+            if data:
+                self.analyze_advancement_structure(data, file_path)
+                self.analyze_uuid_patterns(data, file_path)
+                self.analyze_class_structures(data, file_path)
+                self.analyze_item_formats(data, file_path)
+                analyzed_count += 1
+
+                if analyzed_count % 50 == 0:
+                    print(f"📈 Analyzed {analyzed_count} files...")
+
+        print(f"✅ Analyzed {analyzed_count} data files successfully")
+
+        # Convert sets to lists for JSON serialization
+        for adv_type in self.findings["advancement_types"]:
+            self.findings["advancement_types"][adv_type]["common_properties"] = list(
+                self.findings["advancement_types"][adv_type]["common_properties"]
+            )
+
+        for item_type in self.findings["item_formats"]:
+            self.findings["item_formats"][item_type]["common_properties"] = list(
+                self.findings["item_formats"][item_type]["common_properties"]
+            )
+            self.findings["item_formats"][item_type]["system_properties"] = list(
+                self.findings["item_formats"][item_type]["system_properties"]
+            )
 
     def generate_report(self):
-        """Generate markdown report of discoveries"""
-        report = []
-        report.append("# D&D 5e Technical Discoveries\n")
-        report.append(f"Last Check: {self.discoveries['last_check']}\n")
-        report.append(f"Version: {self.discoveries['version']}\n\n")
+        """Generate comprehensive technical report"""
+        print("📝 Generating technical report...")
 
-        report.append("## Advancement Types\n")
-        for adv in self.discoveries["advancement_types"]:
-            report.append(f"### {adv['type']}\n")
-            report.append(f"- **Description**: {adv['description']}\n")
-            report.append(f"- **Required Levels**: {adv['required_levels']}\n")
-            report.append(f"- **Configuration**: `{json.dumps(adv['configuration'])}`\n\n")
+        report = f"""# D&D 5e Repository Structure Analysis
 
-        report.append("## ItemGrant Format\n")
-        report.append("```json\n")
-        report.append(json.dumps(self.discoveries["item_grant_format"]["example"], indent=2))
-        report.append("\n```\n\n")
+**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+**Repository:** {self.repo_url}
+**Branch:** {self.branch}
+**Analysis Directory:** {self.analysis_dir}
 
-        report.append("## Spell Progression\n")
-        for prog_type, desc in self.discoveries["spell_progression"]["types"].items():
-            report.append(f"- **{prog_type}**: {desc}\n")
+## Executive Summary
 
-        report.append("\n## UUID Format\n")
-        report.append(f"Format: `{self.discoveries['uuid_format']['format']}`\n\n")
+This document provides a comprehensive analysis of the official D&D 5e module structure to understand how advancements, UUIDs, and data are organized for proper Brancalonia integration.
 
-        # Write report
-        report_path = Path("monitor-report.md")
-        with open(report_path, 'w', encoding='utf-8') as f:
-            f.writelines(report)
+## Advancement Types Analysis
 
-        print(f"📊 Report generated: {report_path}")
+Found {len(self.findings['advancement_types'])} different advancement types:
 
-    def run_monitoring(self):
-        """Run complete monitoring cycle"""
-        print("🔍 Starting D&D 5e Repository Monitoring...")
-        print("=" * 60)
+"""
 
-        self.fetch_repository_structure()
-        self.analyze_advancement_types()
-        self.analyze_item_grant_format()
-        self.analyze_spell_progression()
-        self.discover_uuid_format()
+        # Advancement Types
+        for adv_type, info in self.findings["advancement_types"].items():
+            report += f"### {adv_type}\n\n"
+            report += f"**Found in {len(info['file_sources'])} files**\n\n"
+            report += f"**Common Properties:** {', '.join(sorted(info['common_properties']))}\n\n"
 
-        # Add key discoveries
-        self.add_technical_discovery(
-            "ItemGrant in Brancalonia uses string format but should use object with uuid property"
-        )
-        self.add_technical_discovery(
-            "ScaleValue advancement type is missing but critical for features like Sneak Attack, Rage uses"
-        )
-        self.add_technical_discovery(
-            "Spell progression configuration is missing from all caster classes"
-        )
-        self.add_technical_discovery(
-            "Classes need 20+ ItemGrant advancements for features at each level"
-        )
+            if info["examples"]:
+                report += "**Example Structure:**\n```json\n"
+                report += json.dumps(info["examples"][0]["data"], indent=2)
+                report += "\n```\n\n"
 
-        self.save_discoveries()
-        self.generate_report()
+                report += "**Source Files:**\n"
+                for source in info["file_sources"][:5]:  # Limit to first 5
+                    report += f"- `{source}`\n"
+                if len(info["file_sources"]) > 5:
+                    report += f"- ... and {len(info['file_sources']) - 5} more\n"
+                report += "\n"
 
-        print("\n✅ Monitoring complete!")
-        print("=" * 60)
+        # UUID Patterns
+        report += f"## UUID Pattern Analysis\n\n"
+        report += f"Found {len(self.findings['uuid_patterns'])} UUID references\n\n"
+
+        # Group UUIDs by pattern
+        uuid_groups = {}
+        for uuid_info in self.findings["uuid_patterns"]:
+            uuid = uuid_info["uuid"]
+            parts = uuid.split(".")
+            if len(parts) >= 2:
+                pattern = f"{parts[0]}.{parts[1]}"
+                if pattern not in uuid_groups:
+                    uuid_groups[pattern] = []
+                uuid_groups[pattern].append(uuid_info)
+
+        for pattern, uuids in uuid_groups.items():
+            report += f"### {pattern}\n\n"
+            report += f"**Count:** {len(uuids)}\n\n"
+            report += "**Examples:**\n"
+            for uuid_info in uuids[:5]:  # Show first 5 examples
+                report += f"- `{uuid_info['uuid']}` (in {uuid_info['context']})\n"
+            if len(uuids) > 5:
+                report += f"- ... and {len(uuids) - 5} more\n"
+            report += "\n"
+
+        # Class Structures
+        report += f"## Class Structure Analysis\n\n"
+        report += f"Found {len(self.findings['class_structures'])} class definitions\n\n"
+
+        for class_name, info in self.findings["class_structures"].items():
+            report += f"### {class_name}\n\n"
+            report += f"**Source:** `{info['source_file']}`\n\n"
+            report += f"**Has Advancement:** {info['structure']['has_advancement']}\n\n"
+            if info['structure']['has_advancement']:
+                report += f"**Advancement Count:** {info['structure']['advancement_count']}\n\n"
+            report += f"**Properties:** {', '.join(info['structure']['properties'])}\n\n"
+            report += f"**System Keys:** {', '.join(info['structure']['system_keys'])}\n\n"
+
+        # Item Formats
+        report += f"## Item Format Analysis\n\n"
+        report += f"Found {len(self.findings['item_formats'])} item types\n\n"
+
+        for item_type, info in self.findings["item_formats"].items():
+            report += f"### {item_type}\n\n"
+            report += f"**Examples Found:** {len(info['examples'])}\n\n"
+            report += f"**Common Properties:** {', '.join(sorted(info['common_properties']))}\n\n"
+            report += f"**System Properties:** {', '.join(sorted(info['system_properties']))}\n\n"
+
+            if info["examples"]:
+                report += f"**Example: {info['examples'][0]['name']}**\n"
+                report += f"Source: `{info['examples'][0]['source_file']}`\n\n"
+
+        # Critical Findings
+        report += "## Critical Findings for Brancalonia Integration\n\n"
+
+        # Key advancement types
+        key_advancements = ["ItemGrant", "SpellcastingValue", "ScaleValue", "HitPoints", "AbilityScoreImprovement"]
+        found_advancements = [adv for adv in key_advancements if adv in self.findings["advancement_types"]]
+
+        report += "### Key Advancement Types Found\n\n"
+        for adv_type in found_advancements:
+            info = self.findings["advancement_types"][adv_type]
+            report += f"- **{adv_type}**: {len(info['examples'])} examples in {len(info['file_sources'])} files\n"
+
+        missing_advancements = [adv for adv in key_advancements if adv not in self.findings["advancement_types"]]
+        if missing_advancements:
+            report += f"\n**Missing Key Advancements:** {', '.join(missing_advancements)}\n"
+
+        # UUID patterns summary
+        report += "\n### UUID Structure Patterns\n\n"
+        report += "Based on analysis, UUIDs follow these patterns:\n\n"
+        for pattern in sorted(uuid_groups.keys()):
+            report += f"- `{pattern}.*` ({len(uuid_groups[pattern])} occurrences)\n"
+
+        # Technical recommendations
+        report += """
+
+## Technical Recommendations
+
+### 1. Advancement Structure
+- Follow the exact property structure found in the official module
+- Ensure all required properties are present for each advancement type
+- Use consistent naming conventions
+
+### 2. UUID Management
+- Maintain the Compendium.{module}.{type}.{id} pattern
+- Ensure UUIDs are unique across the module
+- Use descriptive IDs that match the content
+
+### 3. Data Organization
+- Follow the same file organization as the official module
+- Use consistent property names and structures
+- Maintain backward compatibility with existing data
+
+### 4. Integration Strategy
+- Map Brancalonia advancement data to match D&D 5e structure
+- Ensure proper reference resolution for UUIDs
+- Test advancement functionality thoroughly
+
+## Next Steps
+
+1. Use this analysis to update Brancalonia advancement structures
+2. Implement proper UUID generation and management
+3. Test integration with the official D&D 5e advancement system
+4. Validate all advancement types work correctly
+
+---
+
+*This analysis was generated by AGENT_MONITOR for the Brancalonia project*
+"""
+
+        # Write the report
+        with open(self.output_file, 'w', encoding='utf-8') as f:
+            f.write(report)
+
+        print(f"✅ Technical report saved to: {self.output_file}")
+
+        # Also save raw findings as JSON for further analysis
+        json_output = self.output_file.with_suffix('.json')
+        with open(json_output, 'w', encoding='utf-8') as f:
+            json.dump(self.findings, f, indent=2, default=str)
+
+        print(f"📊 Raw findings saved to: {json_output}")
+
+    def run_analysis(self):
+        """Run complete analysis"""
+        print("🚀 Starting D&D 5e Repository Analysis")
+        print("=" * 50)
+
+        try:
+            self.setup_directories()
+            self.clone_repository()
+            self.analyze_files()
+            self.generate_report()
+
+            print("\n✅ Analysis Complete!")
+            print(f"📄 Report: {self.output_file}")
+            print(f"📊 Data: {self.output_file.with_suffix('.json')}")
+
+        except KeyboardInterrupt:
+            print("\n🛑 Analysis interrupted by user")
+            sys.exit(1)
+        except Exception as e:
+            print(f"\n❌ Analysis failed: {e}")
+            import traceback
+            traceback.print_exc()
+            sys.exit(1)
 
 def main():
-    monitor = DnD5eMonitor()
-    monitor.run_monitoring()
+    """Main entry point"""
+    if len(sys.argv) > 1 and sys.argv[1] in ["-h", "--help"]:
+        print(__doc__)
+        return
+
+    analyzer = DnD5eAnalyzer()
+    analyzer.run_analysis()
 
 if __name__ == "__main__":
     main()
