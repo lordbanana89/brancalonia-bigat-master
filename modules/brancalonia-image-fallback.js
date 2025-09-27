@@ -62,7 +62,7 @@ window.addEventListener('error', function(event) {
 }, true);
 
 // Hook per messaggi chat (Foundry v13)
-Hooks.on('renderChatMessage', (message, html, data) => {
+Hooks.on('renderChatMessageHTML', (message, html, data) => {
   // Gestisci sia jQuery che HTMLElement
   const element = html[0] || html;
   if (!(element instanceof HTMLElement)) return;
