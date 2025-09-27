@@ -45,13 +45,13 @@
       "units": "ft"
     },
     "target": {
-      "value": null,
+      "value": 1,
       "width": null,
       "units": "",
-      "type": ""
+      "type": "creature"
     },
     "save": {
-      "ability": "",
+      "ability": "con",
       "dc": null,
       "scaling": "spell"
     },
@@ -65,7 +65,7 @@
       "per": null,
       "recovery": ""
     },
-    "actionType": "util",
+    "actionType": "save",
     "attackBonus": "",
     "chatFlavor": "",
     "critical": {
@@ -73,7 +73,12 @@
       "damage": ""
     },
     "damage": {
-      "parts": [],
+      "parts": [
+        [
+          "1d12",
+          "poison"
+        ]
+      ],
       "versatile": ""
     },
     "formula": "",

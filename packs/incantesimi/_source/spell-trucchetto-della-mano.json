@@ -12,7 +12,7 @@
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.256",
     "level": 0,
-    "school": "evo",
+    "school": "con",
     "components": {
       "vocal": true,
       "somatic": true,
@@ -48,7 +48,7 @@
       "value": null,
       "width": null,
       "units": "",
-      "type": ""
+      "type": "object"
     },
     "save": {
       "ability": "",

@@ -18,10 +18,10 @@
       "somatic": true,
       "material": true,
       "ritual": false,
-      "concentration": false
+      "concentration": true
     },
     "materials": {
-      "value": "",
+      "value": "una piuma d'ala di qualsiasi uccello",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -45,10 +45,10 @@
       "units": "touch"
     },
     "target": {
-      "value": null,
+      "value": 1,
       "width": null,
       "units": "",
-      "type": ""
+      "type": "creature"
     },
     "save": {
       "ability": "",

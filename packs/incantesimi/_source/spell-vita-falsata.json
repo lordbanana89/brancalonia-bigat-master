@@ -45,10 +45,10 @@
       "units": "touch"
     },
     "target": {
-      "value": null,
+      "value": 1,
       "width": null,
       "units": "",
-      "type": ""
+      "type": "creature"
     },
     "save": {
       "ability": "",
