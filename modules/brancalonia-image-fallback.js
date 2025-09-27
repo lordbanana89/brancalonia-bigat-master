@@ -3,8 +3,9 @@
 /* Gestisce immagini mancanti con fallback */
 /* ===================================== */
 
-Hooks.once('init', () => {
-  console.log('Brancalonia | Inizializzazione sistema fallback immagini');
+// Inizializzazione precoce per intercettare tutti gli errori
+(() => {
+  console.log('Brancalonia | Sistema fallback immagini attivato');
 
   // Lista di immagini mancanti conosciute e loro fallback
   const missingImages = {
@@ -26,61 +27,120 @@ Hooks.once('init', () => {
         if (src.includes(missingImg)) {
           // Evita loop infiniti
           if (!img.dataset.fallbackApplied) {
-            console.log(`Brancalonia | Immagine mancante: ${missingImg}, uso fallback`);
+            console.log(`Brancalonia | Fallback per: ${missingImg}`);
             img.dataset.fallbackApplied = 'true';
             img.src = fallbackImg;
+            img.onerror = null; // Rimuovi handler per evitare loop
             event.preventDefault();
+            event.stopPropagation();
             return false;
           }
         }
       }
     }
   }, true);
+
+  // Override diretto del costruttore Image per prevenzione
+  const OriginalImage = window.Image;
+  window.Image = class extends OriginalImage {
+    constructor(width, height) {
+      super(width, height);
+
+      // Aggiungi listener per questa specifica immagine
+      this.addEventListener('error', function(e) {
+        const src = this.src;
+        for (const [missingImg, fallbackImg] of Object.entries(missingImages)) {
+          if (src && src.includes(missingImg) && !this.dataset.fallbackApplied) {
+            console.log(`Brancalonia | Image constructor fallback: ${missingImg}`);
+            this.dataset.fallbackApplied = 'true';
+            this.src = fallbackImg;
+            e.preventDefault();
+            e.stopPropagation();
+            break;
+          }
+        }
+      });
+    }
+  };
+})();
+
+// Hook per gestire il rendering delle immagini nel DOM
+Hooks.once('init', () => {
+  // Override del metodo enrichHTML per intercettare le immagini prima del rendering
+  const originalEnrichHTML = TextEditor.enrichHTML;
+  TextEditor.enrichHTML = function(content, options = {}) {
+    // Prima elabora normalmente
+    let enriched = originalEnrichHTML.call(this, content, options);
+
+    // Poi sostituisci le immagini problematiche
+    enriched = enriched.replace(
+      /src="[^"]*breastplate-metal-copper\.webp"/gi,
+      'src="icons/svg/shield.svg"'
+    );
+    enriched = enriched.replace(
+      /src="[^"]*breastplate-steel\.webp"/gi,
+      'src="icons/svg/shield.svg"'
+    );
+    enriched = enriched.replace(
+      /src="[^"]*chainmail\.webp"/gi,
+      'src="icons/svg/shield.svg"'
+    );
+    enriched = enriched.replace(
+      /src="[^"]*leather\.webp"/gi,
+      'src="icons/svg/shield.svg"'
+    );
+
+    return enriched;
+  };
+
+  console.log('Brancalonia | Override enrichHTML completato');
 });
 
-// Hook aggiornato per Foundry v13 - usa renderChatMessageHTML invece di renderChatMessage
+// Hook aggiornato per Foundry v13
 Hooks.on('renderChatMessageHTML', (message, html, data) => {
-  // html è ora un HTMLElement, non jQuery
+  // html è ora un HTMLElement
   const images = html.querySelectorAll('img');
 
   images.forEach(img => {
     const src = img.src;
 
-    // Applica fallback per immagini conosciute come mancanti
-    if (src.includes('breastplate-metal-copper.webp') ||
-        src.includes('breastplate-steel.webp') ||
-        src.includes('breastplate-metal.webp') ||
-        src.includes('chainmail.webp') ||
-        src.includes('leather.webp')) {
+    // Lista di immagini da sostituire
+    const toReplace = [
+      'breastplate-metal-copper.webp',
+      'breastplate-steel.webp',
+      'breastplate-metal.webp',
+      'chainmail.webp',
+      'leather.webp'
+    ];
 
-      if (!img.dataset.fallbackApplied) {
-        img.dataset.fallbackApplied = 'true';
+    for (const imgName of toReplace) {
+      if (src && src.includes(imgName)) {
         img.src = 'icons/svg/shield.svg';
-        img.onerror = null; // Previeni ulteriori errori
+        img.dataset.fallbackApplied = 'true';
+        img.onerror = null;
+        break;
       }
     }
   });
 });
 
-// Hook aggiuntivo per gestire immagini in altri contesti (sheet, journal, etc.)
-Hooks.on('renderApplication', (app, html, data) => {
-  // Converti jQuery a HTMLElement se necessario
-  const element = html[0] || html;
-  if (element instanceof HTMLElement) {
-    const images = element.querySelectorAll('img[src*="equipment/chest"]');
-
-    images.forEach(img => {
-      if (!img.dataset.fallbackApplied && img.onerror === null) {
-        img.onerror = function() {
-          if (!this.dataset.fallbackApplied) {
-            this.dataset.fallbackApplied = 'true';
-            this.src = 'icons/svg/shield.svg';
-            this.onerror = null;
-          }
-        };
-      }
-    });
+// Hook per intercettare la creazione di documenti con immagini
+Hooks.on('preCreateChatMessage', (document, data, options, userId) => {
+  if (data.content) {
+    // Sostituisci le immagini problematiche nel contenuto
+    data.content = data.content.replace(
+      /src="[^"]*breastplate-metal-copper\.webp"/gi,
+      'src="icons/svg/shield.svg"'
+    );
+    data.content = data.content.replace(
+      /src="[^"]*breastplate-steel\.webp"/gi,
+      'src="icons/svg/shield.svg"'
+    );
+    data.content = data.content.replace(
+      /src="[^"]*equipment\/chest\/[^"]+\.webp"/gi,
+      'src="icons/svg/shield.svg"'
+    );
   }
 });
 
-console.log('Brancalonia | Sistema fallback immagini attivo (v13 compatible)');
+console.log('Brancalonia | Sistema fallback immagini completo v13');
