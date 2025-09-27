@@ -4,7 +4,29 @@
 ![D&D 5e](https://img.shields.io/badge/dnd5e-v5.1.9-orange)
 [![GitHub Latest Release](https://img.shields.io/github/release/lordbanana89/brancalonia-bigat-master?style=flat-square)](https://github.com/lordbanana89/brancalonia-bigat-master/releases/latest)
 
-## 🔧 STATO TECNICO ATTUALE (2025-09-27)
+## 🆕 NUOVE FUNZIONALITÀ v4.5.0 (Dicembre 2025)
+
+### 🎨 Sistema Theme Avanzato Carolingiano
+- **32+ colori personalizzabili** tramite interfaccia grafica
+- **ApplicationV2 API** con architettura moderna Foundry v13
+- **Export/Import temi** per condividere configurazioni
+- **API completa** per integrazione con altri moduli
+- **Recovery system** per ripristino emergenza
+
+### 📝 Compendium Editor Integrato
+- **Modifica diretta** dei compendi dentro Foundry v13
+- **Quick Edit Dialog** per modifiche rapide senza aprire sheet
+- **Import/Export JSON** per backup e condivisione
+- **Sblocco automatico** compendi per GM
+- **Context menu esteso** con nuove funzionalità
+
+### 🔧 Compatibilità Completa Foundry v13
+- Fix tutti i deprecation warning
+- Aggiornamento hook system v13
+- Correzione pattern foundry.utils
+- Migrazione ApplicationV2 API
+
+## 🔧 STATO TECNICO ATTUALE (2025-12-27)
 
 ### 📊 COMPILAZIONE PACK
 - **13/13 pack compilano correttamente** con FVTT CLI v3.0.0
@@ -373,6 +395,86 @@ Accedi alle impostazioni del modulo da **Configurazione** → **Impostazioni Mod
 - ✅ **Advancement API** per progressione personaggi
 
 ### 📋 Changelog
+
+#### v4.5.0 - Compendium Editor Integrato (Dicembre 2025)
+##### 🎯 Sistema Completo per Modificare Compendi in Foundry v13
+- **Sblocco automatico** di tutti i compendi Brancalonia per i GM
+- **Quick Edit Dialog**: Modifica rapida dei documenti senza aprire sheet
+- **Import/Export JSON**: Importa ed esporta documenti singoli o multipli
+- **Duplicazione nel compendio**: Duplica documenti direttamente nel pack
+- **Creazione nuovi documenti**: Crea nuovi item/actor/journal nel compendio
+- **Indicatori visuali**: Lock status e stato modificabile
+- **Context menu esteso**: Nuove opzioni per editing avanzato
+- **Drag & Drop support**: Trascina documenti nei compendi
+
+##### Comandi Console Compendium Editor
+```javascript
+// Sblocca tutti i compendi Brancalonia
+brancaloniaCompendium.unlockAll()
+
+// Blocca tutti i compendi
+brancaloniaCompendium.lockAll()
+
+// Esporta un intero pack
+brancaloniaCompendium.exportPack("equipaggiamento")
+
+// Lista tutti i pack con statistiche
+brancaloniaCompendium.list()
+```
+
+#### v4.4.0 - Sistema Theme Completo con Architettura Carolingiana (Dicembre 2025)
+##### 🎨 Nuovo Theme System Basato su Carolingian UI
+- **32+ colori configurabili**: Personalizzazione completa dell'interfaccia
+- **ApplicationV2 API**: Compatibilità totale con Foundry v13
+- **Hook System avanzato**: Eventi per integrazione con altri moduli
+- **Cache System**: Performance ottimizzate per theme switching
+- **Emergency Recovery**: Comando `brancaloniaResetTheme()` per ripristino
+- **Export/Import temi**: Condividi configurazioni personalizzate
+- **Live Preview**: Anteprima in tempo reale dei cambiamenti
+
+##### Colori Configurabili (32+)
+- **Base Colors**: Primary, Secondary, Text, Background (8 colori)
+- **Control Colors**: Button, Input, Control backgrounds (6 colori)
+- **Accent Colors**: Success, Error, Warning, Info (5 colori)
+- **Border Colors**: Light, Medium, Dark borders (4 colori)
+- **Special Colors**: Header, Footer, Sidebar, Chat (6 colori)
+- **Brancalonia Colors**: Infamia, Baraonda, Menagramo (3 colori)
+
+##### Fix Compatibility Foundry v13
+- **Risolto**: `foundry.utils.foundry.utils` pattern duplicato
+- **Aggiornato**: `renderChatMessage` → `renderChatMessageHTML`
+- **Corretto**: `message.user` → `message.author` per v13 compatibility
+- **Fix**: jQuery objects → HTMLElement per hooks v13
+- **Rimosso**: Tutti i warning di deprecazione
+- **Aggiunto**: Compatibilità con ApplicationV2 e HandlebarsApplicationMixin
+
+##### API Theme System
+```javascript
+// Get current theme
+const theme = brancaloniaTheme.api.getTheme()
+
+// Set custom theme
+brancaloniaTheme.api.setTheme({
+  colors: { primary: '#C9A961' }
+})
+
+// Register external module
+brancaloniaTheme.api.registerModule({
+  name: 'my-module',
+  hooks: ['themeChanged']
+})
+
+// Listen to theme events
+brancaloniaTheme.api.on('themeChanged', (data) => {
+  console.log('Theme changed:', data)
+})
+```
+
+##### Hooks Disponibili
+- `brancaloniaTheme.ready`: Theme system inizializzato
+- `brancaloniaTheme.themeChanged`: Tema modificato
+- `brancaloniaTheme.presetApplied`: Preset applicato
+- `brancaloniaTheme.moduleRegistered`: Modulo esterno registrato
 
 #### v3.12.0 - Collegamenti Completi e Validazione (Settembre 2025)
 ##### Nuove Funzionalità
@@ -747,9 +849,9 @@ Per verificare che il fix funzioni:
 
 ---
 
-**Versione**: 3.13.0
+**Versione**: 4.5.0
 **Compatibilità**: Foundry VTT v13.0.0+ | D&D 5e v5.0.0+
-**Ultimo Aggiornamento**: Settembre 2025
+**Ultimo Aggiornamento**: Dicembre 2025
 
 ---
 
