@@ -42,6 +42,32 @@ if (originalFromSource) {
             }
         });
 
+        // Fix specifico per il campo wealth di Brancalonia
+        // Brancalonia usa "m" per monete (es. "100m" = 100 monete)
+        if (source.system?.wealth !== undefined) {
+            let wealth = source.system.wealth;
+
+            if (typeof wealth === 'string') {
+                // Rimuovi suffissi come "m" (monete), "mo" (monete d'oro), etc.
+                wealth = wealth.replace(/[a-zA-Z]+$/g, '').trim();
+
+                // Se è un numero valido, usalo, altrimenti default a 0
+                const parsed = parseFloat(wealth);
+                if (!isNaN(parsed)) {
+                    source.system.wealth = String(parsed);
+                } else if (wealth === '') {
+                    source.system.wealth = '0';
+                } else {
+                    // Se contiene operatori matematici validi, lascialo
+                    // Altrimenti sostituiscilo con 0
+                    if (!/^[\d\s\+\-\*\/\%\(\)\.]+$/.test(wealth)) {
+                        console.warn(`Brancalonia | Wealth non valido: "${source.system.wealth}" sostituito con "0"`);
+                        source.system.wealth = '0';
+                    }
+                }
+            }
+        }
+
         return originalFromSource.call(this, source, options);
     };
 }
