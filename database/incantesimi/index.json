@@ -1,55 +1,48 @@
 {
   "categoria": "Liste Incantesimi Manuale Base",
   "descrizione": "Placeholder in attesa di estrazione completa dalle pagine del manuale.",
-  "classi": [
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 8,
+  "elementi": [
     {
-      "classe": "chierico",
-      "file": "chierico.json",
-      "totale": 6,
-      "note": "Dominio del Calendario"
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "chierico.json"
     },
     {
-      "classe": "druido",
-      "file": "druido.json",
-      "totale": 7,
-      "note": "Circolo della Danza Macabra"
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "druido.json"
     },
     {
-      "classe": "bardo",
-      "file": "bardo.json",
-      "totale": 0,
-      "note": "Da popolare con incantesimi per livello"
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "bardo.json"
     },
     {
-      "classe": "paladino",
-      "file": "paladino.json",
-      "totale": 4,
-      "note": "Giuramento della Cavalleresca Erranza"
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "paladino.json"
     },
     {
-      "classe": "ranger",
-      "file": "ranger.json",
-      "totale": 0,
-      "note": "Da popolare con incantesimi per livello"
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "ranger.json"
     },
     {
-      "classe": "mago",
-      "file": "mago.json",
-      "totale": 0,
-      "note": "Da popolare con incantesimi per livello"
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "mago.json"
     },
     {
-      "classe": "stregone",
-      "file": "stregone.json",
-      "totale": 0,
-      "note": "Da popolare con incantesimi per livello"
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "stregone.json"
     },
     {
-      "classe": "warlock",
-      "file": "warlock.json",
-      "totale": 6,
-      "note": "Patrono della Malasorte"
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "warlock.json"
     }
-  ],
-  "risorse_base": "base/index.json"
+  ]
 }

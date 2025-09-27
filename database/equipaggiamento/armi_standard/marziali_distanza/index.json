@@ -1,5 +1,5 @@
 {
-  "categoria": "Armi Marziali a Distanza",
+  "categoria": "Armi Marziali A Distanza",
   "totale": 5,
   "elementi": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "id": "arma-std-202",
-      "nome": "Balestra a Mano",
+      "nome": "Balestra A Mano",
       "file": "arma-std-202_balestra_a_mano.json"
     },
     {

@@ -1,29 +1,28 @@
 {
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 4,
-  "tratti": [
+  "elementi": [
     {
-      "id": "race-malebranche-tratto-eredita_infernale",
-      "nome": "Eredita Infernale",
-      "categoria": "base",
-      "file": "tratto-002_eredita_infernale.json"
-    },
-    {
-      "id": "race-malebranche-tratto-resistenza_infernale",
-      "nome": "Resistenza Infernale",
-      "categoria": "base",
+      "id": "tratto-001-resistenza-infernale",
+      "nome": "Tratto 001 Resistenza Infernale",
       "file": "tratto-001_resistenza_infernale.json"
     },
     {
-      "id": "race-malebranche-tratto-marchio_del_diavolo",
-      "nome": "Marchio Del Diavolo",
-      "categoria": "brancalonia",
-      "file": "tratto-004_marchio_del_diavolo.json"
+      "id": "tratto-002-eredita-infernale",
+      "nome": "Tratto 002 Eredita Infernale",
+      "file": "tratto-002_eredita_infernale.json"
     },
     {
-      "id": "race-malebranche-tratto-puzza_di_zolfo",
-      "nome": "Puzza Di Zolfo",
-      "categoria": "brancalonia",
+      "id": "tratto-003-puzza-di-zolfo",
+      "nome": "Tratto 003 Puzza di Zolfo",
       "file": "tratto-003_puzza_di_zolfo.json"
+    },
+    {
+      "id": "tratto-004-marchio-del-diavolo",
+      "nome": "Tratto 004 Marchio del Diavolo",
+      "file": "tratto-004_marchio_del_diavolo.json"
     }
   ]
 }

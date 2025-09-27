@@ -1,50 +1,52 @@
 {
-  "livello": "3",
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 9,
-  "incantesimi": [
+  "elementi": [
     {
+      "id": "assicurazione",
       "nome": "Assicurazione",
-      "scuola": "Invocazione",
       "file": "spell-assicurazione.json"
     },
     {
+      "id": "banchetto-dei-poveri",
       "nome": "Banchetto dei Poveri",
-      "scuola": "Evocazione",
       "file": "spell-banchetto-dei-poveri.json"
     },
     {
+      "id": "controincantesimo",
       "nome": "Controincantesimo",
-      "scuola": "Abiurazione",
       "file": "spell-controincantesimo.json"
     },
     {
+      "id": "emanazione-angelica",
       "nome": "Emanazione Angelica",
-      "scuola": "Abiurazione",
       "file": "spell-emanazione-angelica.json"
     },
     {
+      "id": "lentezza",
       "nome": "Lentezza",
-      "scuola": "Trasmutazione",
       "file": "spell-lentezza.json"
     },
     {
+      "id": "mondare",
       "nome": "Mondare",
-      "scuola": "Invocazione",
       "file": "spell-mondare.json"
     },
     {
+      "id": "palla-di-fuoco",
       "nome": "Palla di Fuoco",
-      "scuola": "Invocazione",
       "file": "spell-palla-di-fuoco.json"
     },
     {
+      "id": "velocità",
       "nome": "Velocità",
-      "scuola": "Trasmutazione",
       "file": "spell-velocita.json"
     },
     {
+      "id": "volare",
       "nome": "Volare",
-      "scuola": "Trasmutazione",
       "file": "spell-volare.json"
     }
   ]

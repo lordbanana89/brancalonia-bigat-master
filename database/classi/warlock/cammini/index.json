@@ -1,26 +1,23 @@
 {
-  "totale": 4,
-  "cammini": [
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
     {
       "id": "class-warlock-patrono-fiend",
-      "nome": "Patrono Immondo",
+      "nome": "Class Warlock Patrono Fiend",
       "file": "class-warlock-patrono-fiend.json"
     },
     {
-      "id": "class-warlock-patrono-signore_fatato",
-      "nome": "Patrono Signore Fatato",
-      "file": "class-warlock-patrono-signore_fatato.json"
-    },
-    {
-      "id": "class-warlock-patrono-grande_antico",
-      "nome": "Patrono del Grande Antico",
+      "id": "class-warlock-patrono-grande-antico",
+      "nome": "Class Warlock Patrono Grande Antico",
       "file": "class-warlock-patrono-grande_antico.json"
     },
     {
-      "id": "menagramo_warlock",
-      "nome": "Patrono del Malocchio",
-      "file": "../menagramo_warlock/index.json",
-      "nota": "Nuovo patrono di Brancalonia"
+      "id": "class-warlock-patrono-signore-fatato",
+      "nome": "Class Warlock Patrono Signore Fatato",
+      "file": "class-warlock-patrono-signore_fatato.json"
     }
   ]
 }

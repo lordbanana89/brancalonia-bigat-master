@@ -1,43 +1,38 @@
 {
-  "classe": "ranger",
   "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 6,
-  "privilegi": [
+  "elementi": [
     {
       "id": "class-ranger-livello_1-nemico-prescelto",
       "nome": "Preda Favorita",
-      "file": "class-ranger-livello_1-nemico-prescelto.json",
-      "livello": 1
+      "file": "class-ranger-livello_1-nemico-prescelto.json"
     },
     {
       "id": "class-ranger-livello_1-esploratore-nato",
       "nome": "Signore delle Terre Selvagge",
-      "file": "class-ranger-livello_1-esploratore-nato.json",
-      "livello": 1
+      "file": "class-ranger-livello_1-esploratore-nato.json"
     },
     {
       "id": "class-ranger-livello_2-stile-combattimento",
       "nome": "Tecnica del Mattatore",
-      "file": "class-ranger-livello_2-stile-combattimento.json",
-      "livello": 2
+      "file": "class-ranger-livello_2-stile-combattimento.json"
     },
     {
       "id": "class-ranger-livello_3-consapevolezza-primordiale",
       "nome": "Sensi della Natura",
-      "file": "class-ranger-livello_3-consapevolezza-primordiale.json",
-      "livello": 3
+      "file": "class-ranger-livello_3-consapevolezza-primordiale.json"
     },
     {
       "id": "class-ranger-livello_3-archetipo-ranger",
       "nome": "Via del Cacciatore",
-      "file": "class-ranger-livello_3-archetipo-ranger.json",
-      "livello": 3
+      "file": "class-ranger-livello_3-archetipo-ranger.json"
     },
     {
       "id": "class-ranger-livello_5-attacco-extra",
       "nome": "Raffica del Cacciatore",
-      "file": "class-ranger-livello_5-attacco-extra.json",
-      "livello": 5
+      "file": "class-ranger-livello_5-attacco-extra.json"
     }
   ]
 }

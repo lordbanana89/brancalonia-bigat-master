@@ -1,48 +1,61 @@
 {
   "categoria": "Emeriticenze",
+  "descrizione": "Contenuti della categoria Emeriticenze",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 11,
-  "emeriticenze": [
+  "elementi": [
     {
+      "id": "affinamento",
       "nome": "Affinamento",
       "file": "affinamento.json"
     },
     {
+      "id": "arma-preferita",
       "nome": "Arma Preferita",
       "file": "arma_preferita.json"
     },
     {
+      "id": "emeriticenza-assoluta",
       "nome": "Emeriticenza Assoluta",
       "file": "emeriticenza_assoluta.json"
     },
     {
+      "id": "energumeno",
       "nome": "Energumeno",
       "file": "energumeno.json"
     },
     {
+      "id": "fandonia-migliorata",
       "nome": "Fandonia Migliorata",
       "file": "fandonia_migliorata.json"
     },
     {
+      "id": "fandonia-potenziata",
       "nome": "Fandonia Potenziata",
       "file": "fandonia_potenziata.json"
     },
     {
+      "id": "gioco-di-squadra",
       "nome": "Gioco di Squadra",
       "file": "gioco_di_squadra.json"
     },
     {
+      "id": "il-dono-del-talento",
       "nome": "Il Dono del Talento",
       "file": "il_dono_del_talento.json"
     },
     {
+      "id": "indomito",
       "nome": "Indomito",
       "file": "indomito.json"
     },
     {
+      "id": "recupero-migliorato",
       "nome": "Recupero Migliorato",
       "file": "recupero_migliorato.json"
     },
     {
+      "id": "rissaiolo-professionista",
       "nome": "Rissaiolo Professionista",
       "file": "rissaiolo_professionista.json"
     }

@@ -1,21 +1,18 @@
 {
-  "totale": 3,
-  "cammini": [
-    {
-      "id": "class-druido-circolo-terra",
-      "nome": "Circolo della Terra",
-      "file": "class-druido-circolo-terra.json"
-    },
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
+  "elementi": [
     {
       "id": "class-druido-circolo-luna",
-      "nome": "Circolo della Luna",
+      "nome": "Class Druido Circolo Luna",
       "file": "class-druido-circolo-luna.json"
     },
     {
-      "id": "benandante_druido",
-      "nome": "Circolo dei Benandanti",
-      "file": "../benandante_druido/index.json",
-      "nota": "Nuovo circolo di Brancalonia"
+      "id": "class-druido-circolo-terra",
+      "nome": "Class Druido Circolo Terra",
+      "file": "class-druido-circolo-terra.json"
     }
   ]
 }

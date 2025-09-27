@@ -1,36 +1,7 @@
 {
-  "nome": "Sistema Malefatte e Taglia",
+  "categoria": "Regole",
   "descrizione": "Sistema per tracciare crimini, taglie e reputazione criminale dei personaggi",
   "fonte": "Brancalonia Manuale Base",
-  "componenti": [
-    "Malefatte",
-    "Taglia",
-    "Nomea"
-  ],
-  "sezioni": [
-    {
-      "nome": "Malefatte - Base",
-      "path": "malefatte/descrizione.json"
-    },
-    {
-      "nome": "Tabella Crimini",
-      "path": "malefatte/tabella_crimini.json"
-    },
-    {
-      "nome": "Modificatori Malefatte",
-      "path": "malefatte/modificatori.json"
-    },
-    {
-      "nome": "Taglia - Base",
-      "path": "taglia/descrizione.json"
-    },
-    {
-      "nome": "Livelli Taglia",
-      "path": "taglia/livelli.json"
-    },
-    {
-      "nome": "Nomea",
-      "path": "nomea/descrizione.json"
-    }
-  ]
+  "totale": 0,
+  "elementi": []
 }

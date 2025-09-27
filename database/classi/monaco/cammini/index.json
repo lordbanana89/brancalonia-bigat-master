@@ -1,26 +1,23 @@
 {
-  "totale": 4,
-  "cammini": [
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
     {
-      "id": "class-monaco-via-mano_aperta",
-      "nome": "Via della Mano Aperta",
+      "id": "class-monaco-via-mano-aperta",
+      "nome": "Class Monaco Via Mano Aperta",
       "file": "class-monaco-via-mano_aperta.json"
     },
     {
       "id": "class-monaco-via-ombra",
-      "nome": "Via dell'Ombra",
+      "nome": "Class Monaco Via Ombra",
       "file": "class-monaco-via-ombra.json"
     },
     {
-      "id": "class-monaco-via-quattro_elementi",
-      "nome": "Via dei Quattro Elementi",
+      "id": "class-monaco-via-quattro-elementi",
+      "nome": "Class Monaco Via Quattro Elementi",
       "file": "class-monaco-via-quattro_elementi.json"
-    },
-    {
-      "id": "frate_monaco",
-      "nome": "Via dei Frati Coatti",
-      "file": "../frate_monaco/index.json",
-      "nota": "Tradizione monastica di Brancalonia"
     }
   ]
 }

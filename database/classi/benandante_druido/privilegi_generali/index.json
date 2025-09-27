@@ -1,13 +1,13 @@
 {
-  "classe": "benandante_druido",
   "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 1,
-  "privilegi": [
+  "elementi": [
     {
       "id": "class-druido-livello_2-forma-selvatica",
       "nome": "Mutaforma del Benandante",
-      "file": "class-druido-livello_2-forma-selvatica.json",
-      "livello": 2
+      "file": "class-druido-livello_2-forma-selvatica.json"
     }
   ]
 }

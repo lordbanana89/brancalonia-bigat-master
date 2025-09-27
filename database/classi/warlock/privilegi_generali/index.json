@@ -1,31 +1,28 @@
 {
-  "classe": "warlock",
   "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 4,
-  "privilegi": [
+  "elementi": [
     {
       "id": "class-warlock-livello_1-patrono-ultraterreno",
-      "nome": "Patto con l'Entità",
-      "file": "class-warlock-livello_1-patrono-ultraterreno.json",
-      "livello": 1
+      "nome": "Patto Con L'entità",
+      "file": "class-warlock-livello_1-patrono-ultraterreno.json"
     },
     {
       "id": "class-warlock-livello_1-magia-del-patto",
       "nome": "Potere Pattizio",
-      "file": "class-warlock-livello_1-magia-del-patto.json",
-      "livello": 1
+      "file": "class-warlock-livello_1-magia-del-patto.json"
     },
     {
       "id": "class-warlock-livello_2-invocazioni-occulte",
       "nome": "Patti Segreti",
-      "file": "class-warlock-livello_2-invocazioni-occulte.json",
-      "livello": 2
+      "file": "class-warlock-livello_2-invocazioni-occulte.json"
     },
     {
       "id": "class-warlock-livello_3-patto-mistico",
       "nome": "Dono del Patrono",
-      "file": "class-warlock-livello_3-patto-mistico.json",
-      "livello": 3
+      "file": "class-warlock-livello_3-patto-mistico.json"
     }
   ]
 }

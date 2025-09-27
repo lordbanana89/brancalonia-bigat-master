@@ -1,4 +1,7 @@
 {
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 15,
   "elementi": [
     {
@@ -33,7 +36,7 @@
     },
     {
       "id": "rissa-mossa-presa-dell-orso",
-      "nome": "Presa dell'Orso",
+      "nome": "Presa Dell'orso",
       "file": "rissa-mossa-presa-dell-orso.json"
     },
     {

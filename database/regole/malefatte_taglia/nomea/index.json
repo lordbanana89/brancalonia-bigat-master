@@ -1,8 +1,12 @@
 {
-  "titolo": "Nomea",
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 1,
   "elementi": [
     {
-      "tipo": "descrizione",
+      "id": "unknown",
+      "nome": "Senza Nome",
       "file": "descrizione.json"
     }
   ]

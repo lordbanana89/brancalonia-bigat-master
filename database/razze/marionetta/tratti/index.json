@@ -1,22 +1,22 @@
 {
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 3,
-  "tratti": [
+  "elementi": [
     {
-      "id": "race-marionetta-tratto-costrutto",
-      "nome": "Costrutto",
-      "categoria": "base",
+      "id": "tratto-001-costrutto",
+      "nome": "Tratto 001 Costrutto",
       "file": "tratto-001_costrutto.json"
     },
     {
-      "id": "race-marionetta-tratto-riparazione",
-      "nome": "Riparazione",
-      "categoria": "base",
+      "id": "tratto-002-riparazione",
+      "nome": "Tratto 002 Riparazione",
       "file": "tratto-002_riparazione.json"
     },
     {
-      "id": "race-marionetta-tratto-vulnerabilita",
-      "nome": "Vulnerabilita",
-      "categoria": "base",
+      "id": "tratto-003-vulnerabilita",
+      "nome": "Tratto 003 Vulnerabilita",
       "file": "tratto-003_vulnerabilita.json"
     }
   ]

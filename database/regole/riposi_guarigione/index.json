@@ -1,40 +1,10 @@
 {
-  "titolo": "Riposi, Guarigione e Sbraco",
+  "categoria": "Regole",
   "descrizione": "Oltre ai riposi brevi e lunghi del SRD, il manuale introduce la fase di Sbraco con scelta tra riposo, imbosco e bagordi per recuperare risorse o gestire la Nomea.",
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "61-63"
   },
-  "sezioni": [
-    {
-      "nome": "Riposi brevi e lunghi",
-      "stato": "collegato",
-      "riassunto": "Si applicano senza modifiche le regole ufficiali dnd5e per il recupero di PF, slot incantesimo e dadi vita.",
-      "note": "Non replicare nel database: puntare agli entry standard del sistema dnd5e."
-    },
-    {
-      "nome": "Sbraco",
-      "pagine": "61-63",
-      "file": "../nomea_sbraco/index.json",
-      "stato": "parziale",
-      "riassunto": "Periodo di inattivita tra i lavoretti. Ogni settimana offre scelte (riposo, investimenti, imbosco, bagordi) con effetti su Nomea e Rischi.",
-      "note": "Dettagliare in JSON separati le opzioni di Sbraco e collegare le macro di gestione del tempo di downtime."
-    },
-    {
-      "nome": "Bagordi",
-      "pagine": "61-63",
-      "file": "../esplorazione/bagordi/index.json",
-      "stato": "completo",
-      "riassunto": "Regole di spesa, istruzioni di lancio e tabella d20 degli esiti."
-    },
-    {
-      "nome": "Imbosco",
-      "pagine": "62",
-      "stato": "da_trascrivere",
-      "riassunto": "Riduce di 3 il tiro dei Rischi del Mestiere ma obbliga la canaglia a restare nascosta e limita entrate economiche.",
-      "note": "Creare una scheda JSON per l'opzione Imbosco con effetti applicabili via Active Effect o macro."
-    }
-  ],
-  "stato": "parziale",
-  "note": "Restano da esplicitare in JSON le opzioni di Sbraco (Imbosco, lavori onesti, favori) e collegare gli automatismi di recupero risorse."
+  "totale": 0,
+  "elementi": []
 }

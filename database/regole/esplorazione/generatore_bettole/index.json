@@ -1,18 +1,51 @@
 {
-  "titolo": "Generatore di Bettole",
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "83-85"
   },
-  "sezioni": [
-    {"id": "generatore-bettole-introduzione", "titolo": "Inquadramento", "file": "generatore-introduzione.json"},
-    {"id": "generatore-bettole-citazione", "titolo": "Cantico da Bettola", "file": "generatore-citazione.json"},
-    {"id": "generatore-bettole-tipo", "titolo": "Tipo e sottotipo", "file": "generatore-tipo.json"},
-    {"id": "generatore-bettole-nome-insegna", "titolo": "Nome e insegna", "file": "generatore-nome-insegna.json"},
-    {"id": "generatore-bettole-tenutario", "titolo": "Tenutario", "file": "generatore-tenutario.json"},
-    {"id": "generatore-bettole-particolarita", "titolo": "Particolarita", "file": "generatore-particolarita.json"},
-    {"id": "generatore-bettole-specialita", "titolo": "Specialita della casa", "file": "generatore-specialita.json"},
-    {"id": "generatore-bettole-bevande", "titolo": "Qualcosa da bere?", "file": "generatore-bevande.json"}
-  ],
-  "stato": "completo"
+  "totale": 8,
+  "elementi": [
+    {
+      "id": "generatore-bevande",
+      "nome": "Generatore Bevande",
+      "file": "generatore-bevande.json"
+    },
+    {
+      "id": "generatore-citazione",
+      "nome": "Generatore Citazione",
+      "file": "generatore-citazione.json"
+    },
+    {
+      "id": "generatore-introduzione",
+      "nome": "Generatore Introduzione",
+      "file": "generatore-introduzione.json"
+    },
+    {
+      "id": "generatore-nome-insegna",
+      "nome": "Generatore Nome Insegna",
+      "file": "generatore-nome-insegna.json"
+    },
+    {
+      "id": "generatore-particolarita",
+      "nome": "Generatore Particolarita",
+      "file": "generatore-particolarita.json"
+    },
+    {
+      "id": "generatore-specialita",
+      "nome": "Generatore Specialita",
+      "file": "generatore-specialita.json"
+    },
+    {
+      "id": "generatore-tenutario",
+      "nome": "Generatore Tenutario",
+      "file": "generatore-tenutario.json"
+    },
+    {
+      "id": "generatore-tipo",
+      "nome": "Generatore Tipo",
+      "file": "generatore-tipo.json"
+    }
+  ]
 }

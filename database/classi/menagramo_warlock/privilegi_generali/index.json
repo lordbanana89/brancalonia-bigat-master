@@ -1,13 +1,13 @@
 {
-  "classe": "menagramo_warlock",
   "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 1,
-  "privilegi": [
+  "elementi": [
     {
       "id": "class-warlock-livello_1-patto-magico",
       "nome": "Contratto del Menagramo",
-      "file": "class-warlock-livello_1-patto-magico.json",
-      "livello": 1
+      "file": "class-warlock-livello_1-patto-magico.json"
     }
   ]
 }

@@ -1,59 +1,10 @@
 {
-  "titolo": "Regole di Combattimento",
+  "categoria": "Regole",
   "descrizione": "Il Manuale Base non aggiunge nuove regole di combattimento letale oltre al regolamento SRD 5e, ma introduce il sottosistema delle risse con slot mossa, oggetti di scena e batoste.",
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "52-59"
   },
-  "sezioni": [
-    {
-      "nome": "Regole base della rissa",
-      "pagine": "52-54",
-      "file": "../rissa/regole_base/index.json",
-      "stato": "completo",
-      "riassunto": "Attivazione della rissa, gestione del movimento, calcolo delle batoste e condizioni applicate; gia strutturato nei file della cartella rissa/regole_base.",
-      "note": "Gia utilizzabile come Journal Item; verificare la coerenza con le mosse disponibili quando si aggiungono nuove risse."
-    },
-    {
-      "nome": "Mosse base e speciali",
-      "pagine": "54-57",
-      "file": "../rissa/mosse_speciali/index.json",
-      "stato": "completo",
-      "riassunto": "Catalogo delle mosse, comprese varianti magiche e di classe. La cartella ospita sia le mosse base sia quelle avanzate con le relative schede JSON.",
-      "note": "Associare ogni mossa alla progressione delle classi Foundry tramite compendi personalizzati."
-    },
-    {
-      "nome": "Livelli di batoste",
-      "pagine": "53",
-      "file": "../rissa/livelli_batoste/index.json",
-      "stato": "completo",
-      "riassunto": "Tabella dei sei livelli di batoste e relative penalita (ammaccato fino a incosciente).",
-      "note": "Gia pronto per essere caricato come RollTable o macro Foundry per monitorare gli stati durante la rissa."
-    },
-    {
-      "nome": "Slot mossa e progressione",
-      "pagine": "54",
-      "file": "../rissa/slot_mossa/progressione.json",
-      "stato": "completo",
-      "riassunto": "Numero di slot mossa per livello di personaggio e indicazioni di recupero a fine rissa.",
-      "note": "Integrare negli Active Effect delle classi che sbloccano mosse da rissa."
-    },
-    {
-      "nome": "Oggetti di scena",
-      "pagine": "54",
-      "file": "../rissa/armi_improvvisate/armi.json",
-      "stato": "completo",
-      "riassunto": "Elenco di oggetti improvvisati comuni ed epici da utilizzare durante le risse e relativi bonus."
-    },
-    {
-      "nome": "Giochi da bettola",
-      "pagine": "55-57",
-      "stato": "completo",
-      "riassunto": "Mini giochi come Botte alla Botte, Gara di Mangiate e Giostra dei Poveri che usano prove contrapposte e batoste.",
-      "note": "Quattro giochi trascritti; aggiungere nuovi contenuti qui se emergono da altre fonti.",
-      "file": "giochi_bettola/index.json"
-    }
-  ],
-  "stato": "parziale",
-  "note": "Risse strutturate; rimane da collegare gli Active Effect delle mosse alle classi del modulo dnd5e."
+  "totale": 0,
+  "elementi": []
 }

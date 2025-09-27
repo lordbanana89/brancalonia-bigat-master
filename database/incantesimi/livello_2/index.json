@@ -1,65 +1,67 @@
 {
-  "livello": "2",
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 12,
-  "incantesimi": [
+  "elementi": [
     {
+      "id": "blocca-persone",
       "nome": "Blocca Persone",
-      "scuola": "Ammaliamento",
       "file": "spell-blocca-persone.json"
     },
     {
+      "id": "esorcismo",
       "nome": "Esorcismo",
-      "scuola": "Abiurazione",
       "file": "spell-esorcismo.json"
     },
     {
+      "id": "frantumare",
       "nome": "Frantumare",
-      "scuola": "Invocazione",
       "file": "spell-frantumare.json"
     },
     {
+      "id": "invisibilità",
       "nome": "Invisibilità",
-      "scuola": "Illusione",
       "file": "spell-invisibilita.json"
     },
     {
+      "id": "levitazione",
       "nome": "Levitazione",
-      "scuola": "Trasmutazione",
       "file": "spell-levitazione.json"
     },
     {
+      "id": "oscurità",
       "nome": "Oscurità",
-      "scuola": "Invocazione",
       "file": "spell-oscurita.json"
     },
     {
+      "id": "passo-traslato",
       "nome": "Passo Traslato",
-      "scuola": "Evocazione",
       "file": "spell-passo-traslato.json"
     },
     {
+      "id": "raggio-rovente",
       "nome": "Raggio Rovente",
-      "scuola": "Invocazione",
       "file": "spell-raggio-rovente.json"
     },
     {
+      "id": "ragnatela",
       "nome": "Ragnatela",
-      "scuola": "Evocazione",
       "file": "spell-ragnatela.json"
     },
     {
+      "id": "scurovisione",
       "nome": "Scurovisione",
-      "scuola": "Trasmutazione",
       "file": "spell-scurovisione.json"
     },
     {
+      "id": "silenzio",
       "nome": "Silenzio",
-      "scuola": "Illusione",
       "file": "spell-silenzio.json"
     },
     {
+      "id": "suggestione",
       "nome": "Suggestione",
-      "scuola": "Ammaliamento",
       "file": "spell-suggestione.json"
     }
   ]

@@ -1,16 +1,17 @@
 {
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 2,
-  "privilegi": [
+  "elementi": [
     {
       "id": "brigante_ladro-livello_3-brigantaggio",
-      "livello": 3,
       "nome": "Brigantaggio",
       "file": "brigante_ladro-livello_3-brigantaggio.json"
     },
     {
       "id": "brigante_ladro-livello_3-arte_imboscata",
-      "livello": 3,
-      "nome": "Arte dell'Imboscata",
+      "nome": "Arte Dell'imboscata",
       "file": "brigante_ladro-livello_3-arte_imboscata.json"
     }
   ]

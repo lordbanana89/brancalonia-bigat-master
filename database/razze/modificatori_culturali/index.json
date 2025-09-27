@@ -1,11 +1,7 @@
 {
-  "fonte": "Brancalonia Manuale Base",
-  "descrizione_globale": "Dettagli meccanici completi di tutte le razze giocabili",
+  "categoria": "Razze",
   "descrizione": "Varianti basate su origine regionale",
-  "esempi": {
-    "montanaro": "Competenza Sopravvivenza invece di altra",
-    "cittadino": "Competenza sociale extra",
-    "marinaio": "Competenza veicoli acquatici"
-  },
-  "nome": "Modificatori culturali"
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 0,
+  "elementi": []
 }

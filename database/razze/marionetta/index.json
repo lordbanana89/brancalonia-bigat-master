@@ -1,25 +1,7 @@
 {
-  "fonte": "Brancalonia Manuale Base",
-  "descrizione_globale": "Dettagli meccanici completi di tutte le razze giocabili",
-  "nome": "Marionetta",
+  "categoria": "Razze",
   "descrizione": "Costrutto animato con anima propria",
-  "aumento_caratteristiche": {
-    "costituzione": "+2",
-    "sottorazza": "+1 variabile"
-  },
-  "eta": {
-    "creazione": "Già adulti",
-    "vita": "Indefinita se manutenuti"
-  },
-  "allineamento": "Variabile, spesso neutrale",
-  "taglia": "Media o Piccola (per sottorazza)",
-  "velocita": "9 metri (7.5m se Piccola)",
-  "linguaggi": [
-    "Comune",
-    "Uno a scelta del creatore"
-  ],
-  "collegamenti": {
-    "tratti": "tratti/index.json",
-    "sottorazze": "sottorazze/index.json"
-  }
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 0,
+  "elementi": []
 }

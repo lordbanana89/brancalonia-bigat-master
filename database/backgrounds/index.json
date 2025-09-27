@@ -1,109 +1,99 @@
 {
-  "name": "Backgrounds di Brancalonia",
-  "description": "Background per personaggi di Brancalonia",
-  "lastUpdated": "2025-09-27",
-  "path": "database/backgrounds",
   "categoria": "Backgrounds",
+  "descrizione": "Contenuti della categoria Backgrounds",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 13,
   "elementi": [
     {
+      "id": "ambulante",
       "nome": "Ambulante",
       "file": "ambulante.json",
-      "fonte": "Manuale Base p.31",
-      "tipo": "base",
-      "descrizione": "Mercante itinerante e venditore ambulante"
+      "descrizione": "Mercante itinerante e venditore ambulante",
+      "fonte": "Manuale Base p.31"
     },
     {
+      "id": "attaccabrighe",
       "nome": "Attaccabrighe",
       "file": "attaccabrighe.json",
-      "fonte": "Manuale Base p.32",
-      "tipo": "base",
-      "descrizione": "Rissoso e provocatore di professione"
+      "descrizione": "Rissoso e provocatore di professione",
+      "fonte": "Manuale Base p.32"
     },
     {
+      "id": "azzeccagarbugli",
       "nome": "Azzeccagarbugli",
       "file": "azzeccagarbugli.json",
-      "fonte": "Manuale Base p.33",
-      "tipo": "base",
-      "descrizione": "Avvocato di dubbia moralità"
+      "descrizione": "Avvocato di dubbia moralità",
+      "fonte": "Manuale Base p.33"
     },
     {
+      "id": "brado",
       "nome": "Brado",
       "file": "brado.json",
-      "fonte": "Manuale Base p.34",
-      "tipo": "base",
-      "descrizione": "Selvaggio cresciuto nella natura"
+      "descrizione": "Selvaggio cresciuto nella natura",
+      "fonte": "Manuale Base p.34"
     },
     {
+      "id": "duro",
       "nome": "Duro",
       "file": "duro.json",
-      "fonte": "Manuale Base p.35",
-      "tipo": "base",
-      "descrizione": "Veterano indurito dalle difficoltà"
+      "descrizione": "Veterano indurito dalle difficoltà",
+      "fonte": "Manuale Base p.35"
     },
     {
+      "id": "fuggitivo",
       "nome": "Fuggitivo",
       "file": "fuggitivo.json",
-      "fonte": "Manuale Base p.36",
-      "tipo": "base",
-      "descrizione": "In fuga dalla legge o dal passato"
+      "descrizione": "In fuga dalla legge o dal passato",
+      "fonte": "Manuale Base p.36"
     },
     {
-      "nome": "Cacciatore di reliquie",
+      "id": "cacciatore-di-reliquie",
+      "nome": "Cacciatore di Reliquie",
       "file": "cacciatore_di_reliquie.json",
-      "fonte": "Brancalonia Macaronicon p.36-37",
-      "tipo": "macaronicon",
-      "descrizione": "Cercatore di oggetti sacri e magici"
+      "descrizione": "Cercatore di oggetti sacri e magici",
+      "fonte": "Brancalonia Macaronicon p.36-37"
     },
     {
+      "id": "impresario",
       "nome": "Impresario",
       "file": "impresario.json",
-      "fonte": "Brancalonia Macaronicon p.37-38",
-      "tipo": "macaronicon",
-      "descrizione": "Organizzatore di spettacoli e eventi"
+      "descrizione": "Organizzatore di spettacoli e eventi",
+      "fonte": "Brancalonia Macaronicon p.37-38"
     },
     {
+      "id": "innamorato",
       "nome": "Innamorato",
       "file": "innamorato.json",
-      "fonte": "Brancalonia Macaronicon p.38-39",
-      "tipo": "macaronicon",
-      "descrizione": "Romantico guidato dall'amore"
+      "descrizione": "Romantico guidato dall'amore",
+      "fonte": "Brancalonia Macaronicon p.38-39"
     },
     {
+      "id": "lucignolo",
       "nome": "Lucignolo",
       "file": "lucignolo.json",
-      "fonte": "Brancalonia Macaronicon p.40-41",
-      "tipo": "macaronicon",
-      "descrizione": "Vagabondo e perdigiorno"
+      "descrizione": "Vagabondo e perdigiorno",
+      "fonte": "Brancalonia Macaronicon p.40-41"
     },
     {
+      "id": "passatore",
       "nome": "Passatore",
       "file": "passatore.json",
-      "fonte": "Brancalonia Macaronicon p.41-42",
-      "tipo": "macaronicon",
-      "descrizione": "Contrabbandiere e traghettatore"
+      "descrizione": "Contrabbandiere e traghettatore",
+      "fonte": "Brancalonia Macaronicon p.41-42"
     },
     {
+      "id": "prelato",
       "nome": "Prelato",
       "file": "prelato.json",
-      "fonte": "Brancalonia Macaronicon p.42-43",
-      "tipo": "macaronicon",
-      "descrizione": "Religioso di basso rango"
+      "descrizione": "Religioso di basso rango",
+      "fonte": "Brancalonia Macaronicon p.42-43"
     },
     {
+      "id": "staffetta",
       "nome": "Staffetta",
       "file": "staffetta.json",
-      "fonte": "Brancalonia Macaronicon p.44-45",
-      "tipo": "macaronicon",
-      "descrizione": "Messaggero e corriere"
+      "descrizione": "Messaggero e corriere",
+      "fonte": "Brancalonia Macaronicon p.44-45"
     }
-  ],
-  "features": {
-    "skills": "Ogni background fornisce 2 competenze",
-    "tools": "Competenza in strumenti o lingue",
-    "equipment": "Equipaggiamento iniziale tematico",
-    "features": "Privilegio unico del background",
-    "personality": "Tabelle per tratti, ideali, legami e difetti"
-  },
-  "status": "complete"
+  ]
 }

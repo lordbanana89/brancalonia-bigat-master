@@ -1,46 +1,42 @@
 {
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 7,
   "elementi": [
     {
       "id": "rissa-batoste-0",
-      "livello": 0,
       "nome": "Fresco",
       "file": "rissa-batoste-0.json"
     },
     {
       "id": "rissa-batoste-1",
-      "livello": 1,
       "nome": "Ammaccato",
       "file": "rissa-batoste-1.json"
     },
     {
       "id": "rissa-batoste-2",
-      "livello": 2,
       "nome": "Pesto",
       "file": "rissa-batoste-2.json"
     },
     {
       "id": "rissa-batoste-3",
-      "livello": 3,
       "nome": "Malconcio",
       "file": "rissa-batoste-3.json"
     },
     {
       "id": "rissa-batoste-4",
-      "livello": 4,
-      "nome": "Conciato per le Feste",
+      "nome": "Conciato Per le Feste",
       "file": "rissa-batoste-4.json"
     },
     {
       "id": "rissa-batoste-5",
-      "livello": 5,
-      "nome": "K.O.",
+      "nome": "Ko",
       "file": "rissa-batoste-5.json"
     },
     {
       "id": "rissa-batoste-6",
-      "livello": 6,
-      "nome": "All'Ospedale",
+      "nome": "All'ospedale",
       "file": "rissa-batoste-6.json"
     }
   ]

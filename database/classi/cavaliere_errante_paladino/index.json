@@ -1,55 +1,7 @@
 {
-  "nome": "Cavaliere Errante",
-  "classe_base": "Paladino",
-  "fonte": "Manuale Base p.26-27",
+  "categoria": "Classi",
   "descrizione": "Nobili decaduti e spade in vendita che seguono la Cavalleresca Erranza, viaggiando per compiere gesta degne di cantori.",
-  "tipo": "sottoclasse",
-  "sottoclasse": "Giuramento della Cavalleresca Erranza",
-  "testo": {
-    "introduzione": [
-      "Tra le bande di Taglia non mancano rampolli di famiglie decadute e figli cadetti che cavalcano con vessilli spiegati, ronzini stanchi e ideali altissimi.",
-      "La loro autorità non proviene dal Padre Terno, ma dalla determinazione e dal codice morale che hanno scelto di incarnare.",
-      "Il Giuramento della Cavalleresca Erranza raccoglie i dettami con cui affrontano il mondo: erranza, fratellanza, castiganza e baldanza." 
-    ],
-    "dettami": {
-      "Erranza": "Il mondo è ampio e va esplorato. Viaggiare è una scelta, non un ripiego.",
-      "Fratellanza": "Difendi il popolo dalle ingiustizie di mostri, predoni e tiranni.",
-      "Castiganza": "Ogni torto va riparato con ammenda o ira tremenda.",
-      "Baldanza": "Non fuggire le sfide: dalle tue gesta nasceranno nuove canzoni." 
-    }
-  },
-  "validazione": {
-    "implementato": true,
-    "file_id": "cavaliere_errante_ispirare",
-    "compendio": "brancalonia-features"
-  },
-  "privilegi": {
-    "totale": 3,
-    "index": "privilegi/index.json"
-  },
-  "progressione": [
-    {
-      "livello": 3,
-      "privilegi": [
-        {
-          "id": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento",
-          "nome": "Incantesimi del Giuramento",
-          "file": "privilegi/cavaliere_errante_paladino-livello_3-incantesimi_giuramento.json",
-          "fonte": "Manuale Base p.27"
-        },
-        {
-          "id": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi",
-          "nome": "Incanalare Divinità: Proteggere i Bisognosi",
-          "file": "privilegi/cavaliere_errante_paladino-livello_3-proteggere_bisognosi.json",
-          "fonte": "Manuale Base p.27"
-        },
-        {
-          "id": "cavaliere_errante_paladino-livello_3-ispirare_compagni",
-          "nome": "Incanalare Divinità: Ispirare i Compagni",
-          "file": "privilegi/cavaliere_errante_paladino-livello_3-ispirare_compagni.json",
-          "fonte": "Manuale Base p.27"
-        }
-      ]
-    }
-  ]
+  "fonte": "Manuale Base p.26-27",
+  "totale": 0,
+  "elementi": []
 }

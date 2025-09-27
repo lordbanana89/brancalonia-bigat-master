@@ -1,12 +1,13 @@
 {
-  "classe": "pagano_barbaro",
   "categoria": "Progressione",
+  "descrizione": "Contenuti della categoria Progressione",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 1,
   "elementi": [
     {
-      "file": "progressione.json",
-      "voci": 20,
-      "tipo": "tabella"
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "progressione.json"
     }
   ]
 }

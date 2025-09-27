@@ -1,9 +1,11 @@
 {
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 1,
-  "privilegi": [
+  "elementi": [
     {
       "id": "spadaccino_guerriero-livello_3-scuola_scherma",
-      "livello": 3,
       "nome": "Scuola di Scherma",
       "file": "spadaccino_guerriero-livello_3-scuola_scherma.json"
     }

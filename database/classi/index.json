@@ -1,6 +1,9 @@
 {
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 21,
-  "classi": [
+  "elementi": [
     {
       "id": "arlecchino_bardo",
       "nome": "Arlecchino",

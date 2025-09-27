@@ -1,35 +1,33 @@
 {
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 5,
-  "tratti": [
+  "elementi": [
     {
-      "id": "race-morgante-tratto-attacchi_selvaggi",
-      "nome": "Attacchi Selvaggi",
-      "categoria": "base",
-      "file": "tratto-002_attacchi_selvaggi.json"
-    },
-    {
-      "id": "race-morgante-tratto-costituzione_possente",
-      "nome": "Costituzione Possente",
-      "categoria": "base",
-      "file": "tratto-003_costituzione_possente.json"
-    },
-    {
-      "id": "race-morgante-tratto-resilienza_implacabile",
-      "nome": "Resilienza Implacabile",
-      "categoria": "base",
+      "id": "tratto-001-resilienza-implacabile",
+      "nome": "Tratto 001 Resilienza Implacabile",
       "file": "tratto-001_resilienza_implacabile.json"
     },
     {
-      "id": "race-morgante-tratto-fame_insaziabile",
-      "nome": "Fame Insaziabile",
-      "categoria": "brancalonia",
-      "file": "tratto-005_fame_insaziabile.json"
+      "id": "tratto-002-attacchi-selvaggi",
+      "nome": "Tratto 002 Attacchi Selvaggi",
+      "file": "tratto-002_attacchi_selvaggi.json"
     },
     {
-      "id": "race-morgante-tratto-minaccioso",
-      "nome": "Minaccioso",
-      "categoria": "brancalonia",
+      "id": "tratto-003-costituzione-possente",
+      "nome": "Tratto 003 Costituzione Possente",
+      "file": "tratto-003_costituzione_possente.json"
+    },
+    {
+      "id": "tratto-004-minaccioso",
+      "nome": "Tratto 004 Minaccioso",
       "file": "tratto-004_minaccioso.json"
+    },
+    {
+      "id": "tratto-005-fame-insaziabile",
+      "nome": "Tratto 005 Fame Insaziabile",
+      "file": "tratto-005_fame_insaziabile.json"
     }
   ]
 }

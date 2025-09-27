@@ -1,42 +1,10 @@
 {
-  "titolo": "Prove di Caratteristica e Competenze",
+  "categoria": "Regole",
   "descrizione": "Le meccaniche base di prove e tiri salvezza restano quelle del SRD 5e; Brancalonia aggiunge modificatori narrativi legati a Nomea, Rischi del Mestiere e mini giochi.",
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "46-53"
   },
-  "sezioni": [
-    {
-      "nome": "Prove e CD standard 5e",
-      "stato": "collegato",
-      "riassunto": "Utilizzare le regole ufficiali di dnd5e (prove di abilita, tiri salvezza, vantaggio/svantaggio). Nessuna modifica numerica specifica del manuale.",
-      "note": "Riferimento diretto al modulo dnd5e; evitare duplicazioni nel database locale."
-    },
-    {
-      "nome": "Nomea e bonus di Nomea",
-      "pagine": "48-49",
-      "file": "../nomea_sbraco/index.json",
-      "stato": "parziale",
-      "riassunto": "Il bonus di Nomea si aggiunge alle prove sociali appropriate (Persuasione, Intimidire). Gli Infami convertono il bonus in malus verso Persuasione.",
-      "note": "Mancano gli Active Effect per applicare automaticamente il bonus o malus; da implementare sulle schede personaggio."
-    },
-    {
-      "nome": "Rischi del mestiere",
-      "pagine": "49-51",
-      "file": "../nomea_sbraco/rischi_mestiere/index.json",
-      "stato": "completo",
-      "riassunto": "Tiro su tabella prima di ogni lavoretto usando la Nomea piu alta della Cricca. I risultati introducono complicazioni o favori.",
-      "note": "Tabella pronta per RollTable, usare il file dedicato in nomea_sbraco/rischi_mestiere."
-    },
-    {
-      "nome": "Modificatori da Imbosco e Bagordi",
-      "pagine": "61-63",
-      "file": "../nomea_sbraco/index.json",
-      "stato": "parziale",
-      "riassunto": "Durante lo Sbraco le canaglie possono imboscarsi per ridurre i Rischi del Mestiere o lanciarsi nei Bagordi per ottenere Nomea o complicazioni.",
-      "note": "Verificare coerenza con le regole di Bagordi archiviate in esplorazione/bagordi e implementare macro di calcolo automatico."
-    }
-  ],
-  "stato": "parziale",
-  "note": "Tabella dei Rischi disponibile; restano da definire Active Effect per Nomea, Imbosco e bonus/malus automatici."
+  "totale": 0,
+  "elementi": []
 }

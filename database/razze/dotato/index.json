@@ -1,28 +1,7 @@
 {
-  "fonte": "Brancalonia Manuale Base",
-  "descrizione_globale": "Dettagli meccanici completi di tutte le razze giocabili",
-  "nome": "Dotato",
-  "altri_nomi": "Mezzelfo, Mezzo Elfo",
+  "categoria": "Razze",
   "descrizione": "Discendenti di elfi e umani, con sangue fatato diluito",
-  "aumento_caratteristiche": {
-    "carisma": "+2",
-    "altre": "+1 a due caratteristiche diverse a scelta"
-  },
-  "eta": {
-    "maturita": "20 anni",
-    "vita_media": "180 anni"
-  },
-  "allineamento": "Tendenza caotica per eredità fatata",
-  "taglia": "Media",
-  "velocita": "9 metri",
-  "scurovisione": "18 metri",
-  "linguaggi": [
-    "Comune",
-    "Elfico",
-    "Un linguaggio extra a scelta"
-  ],
-  "pregiudizi": "Visti con sospetto da conservatori, invidiati per bellezza",
-  "collegamenti": {
-    "tratti": "tratti/index.json"
-  }
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 0,
+  "elementi": []
 }

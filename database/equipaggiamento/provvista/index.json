@@ -4,7 +4,7 @@
   "elementi": [
     {
       "id": "gear-001",
-      "nome": "Razioni (1 giorno)",
+      "nome": "Razioni 1 Giorno",
       "file": "gear-001_razioni_1_giorno.json"
     },
     {
@@ -14,12 +14,12 @@
     },
     {
       "id": "gear-003",
-      "nome": "Corda di Canapa (15 m)",
+      "nome": "Corda di Canapa 15 M",
       "file": "gear-003_corda_di_canapa_15_m.json"
     },
     {
       "id": "gear-004",
-      "nome": "Corda di Seta (15 m)",
+      "nome": "Corda di Seta 15 M",
       "file": "gear-004_corda_di_seta_15_m.json"
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "id": "gear-007",
-      "nome": "Olio (fiaschetta)",
+      "nome": "Olio Fiaschetta",
       "file": "gear-007_olio_fiaschetta.json"
     },
     {
@@ -59,7 +59,7 @@
     },
     {
       "id": "gear-012",
-      "nome": "Chiodi da Arrampicata (10)",
+      "nome": "Chiodi da Arrampicata 10",
       "file": "gear-012_chiodi_da_arrampicata_10.json"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "id": "gear-014",
-      "nome": "Tenda per Due Persone",
+      "nome": "Tenda Per Due Persone",
       "file": "gear-014_tenda_per_due_persone.json"
     },
     {

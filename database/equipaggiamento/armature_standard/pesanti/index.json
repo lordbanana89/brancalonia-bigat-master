@@ -4,7 +4,7 @@
   "elementi": [
     {
       "id": "arm-std-201",
-      "nome": "Maglia ad Anelli",
+      "nome": "Maglia Ad Anelli",
       "file": "arm-std-201_maglia_ad_anelli.json"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "id": "arm-std-203",
-      "nome": "Cotta a Lamine",
+      "nome": "Cotta A Lamine",
       "file": "arm-std-203_cotta_a_lamine.json"
     },
     {

@@ -1,21 +1,21 @@
 {
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 3,
-  "privilegi": [
+  "elementi": [
     {
       "id": "menagramo_warlock-livello_1-iattura",
-      "livello": 1,
       "nome": "Iattura",
       "file": "menagramo_warlock-livello_1-iattura.json"
     },
     {
       "id": "menagramo_warlock-livello_1-lista_ampliata",
-      "livello": 1,
-      "nome": "Lista Ampliata degli Incantesimi",
+      "nome": "Lista Ampliata Degli Incantesimi",
       "file": "menagramo_warlock-livello_1-lista_ampliata.json"
     },
     {
       "id": "menagramo_warlock-livello_6-tocco_malasorte",
-      "livello": 6,
       "nome": "Il Tocco della Malasorte",
       "file": "menagramo_warlock-livello_6-tocco_malasorte.json"
     }

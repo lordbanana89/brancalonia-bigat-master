@@ -1,25 +1,23 @@
 {
-  "classe": "cavaliere_errante_paladino",
   "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 3,
-  "privilegi": [
+  "elementi": [
     {
       "id": "class-paladino-livello_1-senso-divino",
       "nome": "Intuito del Cavaliere",
-      "file": "class-paladino-livello_1-senso-divino.json",
-      "livello": 1
+      "file": "class-paladino-livello_1-senso-divino.json"
     },
     {
       "id": "class-paladino-livello_1-imposizione-mani",
       "nome": "Tocco Miracoloso",
-      "file": "class-paladino-livello_1-imposizione-mani.json",
-      "livello": 1
+      "file": "class-paladino-livello_1-imposizione-mani.json"
     },
     {
       "id": "class-paladino-livello_2-punizione-divina",
       "nome": "Colpo del Giusto",
-      "file": "class-paladino-livello_2-punizione-divina.json",
-      "livello": 2
+      "file": "class-paladino-livello_2-punizione-divina.json"
     }
   ]
 }

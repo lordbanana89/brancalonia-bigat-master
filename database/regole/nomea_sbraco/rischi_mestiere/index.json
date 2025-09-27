@@ -1,10 +1,16 @@
 {
-  "titolo": "Rischi del Mestiere",
+  "categoria": "Regole",
   "descrizione": "Tabella d100 di complicazioni legate alla nomea piu alta della cricca, da tirare a inizio lavoretto.",
-  "file": "rischi-mestiere-tabella.json",
-  "stato": "completo",
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "49-51"
-  }
+  },
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "rischi-mestiere-tabella",
+      "nome": "Rischi Mestiere Tabella",
+      "file": "rischi-mestiere-tabella.json"
+    }
+  ]
 }

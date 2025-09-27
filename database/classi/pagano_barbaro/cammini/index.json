@@ -1,14 +1,17 @@
 {
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 2,
-  "cammini": [
+  "elementi": [
     {
       "id": "class-barbaro-cammino-berserker",
-      "nome": "berserker",
+      "nome": "Class Barbaro Cammino Berserker",
       "file": "class-barbaro-cammino-berserker.json"
     },
     {
       "id": "class-barbaro-cammino-totem",
-      "nome": "totem",
+      "nome": "Class Barbaro Cammino Totem",
       "file": "class-barbaro-cammino-totem.json"
     }
   ]

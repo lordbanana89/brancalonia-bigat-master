@@ -1,5 +1,7 @@
 {
-  "livello": "8",
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 0,
-  "incantesimi": []
+  "elementi": []
 }

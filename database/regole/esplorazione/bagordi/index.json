@@ -1,25 +1,26 @@
 {
-  "titolo": "Bagordi",
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "61-63"
   },
-  "sezioni": [
+  "totale": 3,
+  "elementi": [
     {
       "id": "bagordi-introduzione",
-      "titolo": "Regole di Bagordi",
+      "nome": "Bagordi Introduzione",
       "file": "bagordi-introduzione.json"
     },
     {
-      "id": "bagordi-tabella-botte-da-orbi",
-      "titolo": "Botte da Orbi e Bisacce Sfondate",
-      "file": "bagordi-tabella.json"
+      "id": "bagordi-istruzioni",
+      "nome": "Bagordi Istruzioni",
+      "file": "bagordi-istruzioni.json"
     },
     {
-      "id": "bagordi-istruzioni",
-      "titolo": "Applicare la Tabella",
-      "file": "bagordi-istruzioni.json"
+      "id": "bagordi-tabella",
+      "nome": "Bagordi Tabella",
+      "file": "bagordi-tabella.json"
     }
-  ],
-  "stato": "completo"
+  ]
 }

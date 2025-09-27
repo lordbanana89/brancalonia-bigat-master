@@ -1,73 +1,63 @@
 {
-  "classe": "paladino",
   "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 11,
-  "privilegi": [
+  "elementi": [
     {
       "id": "class-paladino-livello_1-senso-divino",
       "nome": "Percezione del Male",
-      "file": "class-paladino-livello_1-senso-divino.json",
-      "livello": 1
+      "file": "class-paladino-livello_1-senso-divino.json"
     },
     {
       "id": "class-paladino-livello_1-imposizione-mani",
       "nome": "Tocco Guaritore",
-      "file": "class-paladino-livello_1-imposizione-mani.json",
-      "livello": 1
+      "file": "class-paladino-livello_1-imposizione-mani.json"
     },
     {
       "id": "class-paladino-livello_2-stile-combattimento",
       "nome": "Arte della Guerra Santa",
-      "file": "class-paladino-livello_2-stile-combattimento.json",
-      "livello": 2
+      "file": "class-paladino-livello_2-stile-combattimento.json"
     },
     {
       "id": "class-paladino-livello_2-punizione-divina",
       "nome": "Colpo Sacro",
-      "file": "class-paladino-livello_2-punizione-divina.json",
-      "livello": 2
+      "file": "class-paladino-livello_2-punizione-divina.json"
     },
     {
       "id": "class-paladino-livello_3-giuramento-sacro",
       "nome": "Voto del Cavaliere",
-      "file": "class-paladino-livello_3-giuramento-sacro.json",
-      "livello": 3
+      "file": "class-paladino-livello_3-giuramento-sacro.json"
     },
     {
       "id": "class-paladino-livello_5-attacco-extra",
       "nome": "Furia del Giusto",
-      "file": "class-paladino-livello_5-attacco-extra.json",
-      "livello": 5
+      "file": "class-paladino-livello_5-attacco-extra.json"
     },
     {
       "id": "class-paladino-livello_6-aura-protezione",
       "nome": "Benedizione del Cavaliere",
-      "file": "class-paladino-livello_6-aura-protezione.json",
-      "livello": 6
+      "file": "class-paladino-livello_6-aura-protezione.json"
     },
     {
       "id": "class-paladino-livello_10-aura-coraggio",
       "nome": "Presenza Indomita",
-      "file": "class-paladino-livello_10-aura-coraggio.json",
-      "livello": 10
+      "file": "class-paladino-livello_10-aura-coraggio.json"
     },
     {
       "id": "class-paladino-livello_11-punizione-migliorata",
       "nome": "Lama Benedetta",
-      "file": "class-paladino-livello_11-punizione-migliorata.json",
-      "livello": 11
+      "file": "class-paladino-livello_11-punizione-migliorata.json"
     },
     {
       "id": "class-paladino-livello_14-tocco-purificante",
       "nome": "Mano Benedetta",
-      "file": "class-paladino-livello_14-tocco-purificante.json",
-      "livello": 14
+      "file": "class-paladino-livello_14-tocco-purificante.json"
     },
     {
       "id": "class-paladino-livello_20-campione-giuramento",
       "nome": "Avatar Divino",
-      "file": "class-paladino-livello_20-campione-giuramento.json",
-      "livello": 20
+      "file": "class-paladino-livello_20-campione-giuramento.json"
     }
   ]
 }

@@ -1,29 +1,7 @@
 {
-  "fonte": "Brancalonia Manuale Base",
-  "descrizione_globale": "Dettagli meccanici completi di tutte le razze giocabili",
-  "nome": "Selvatico",
-  "altri_nomi": "Silvano, Uomo Verde",
+  "categoria": "Razze",
   "descrizione": "Umanoidi vegetali o con tratti animali, legati alla natura",
-  "sottotipo": {
-    "descrizione": "Scegli tra vegetale o animale all'inizio",
-    "immutabile": "Non può essere cambiato successivamente"
-  },
-  "aumento_caratteristiche": {
-    "saggezza": "+2",
-    "scelta": "+1 a una caratteristica a scelta"
-  },
-  "eta": {
-    "maturita": "Variabile (10-20 anni)",
-    "vita_media": "200+ anni"
-  },
-  "allineamento": "Neutrale, in armonia con natura",
-  "taglia": "Media",
-  "velocita": "9 metri",
-  "linguaggi": [
-    "Comune",
-    "Silvano"
-  ],
-  "collegamenti": {
-    "tratti": "tratti/index.json"
-  }
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 0,
+  "elementi": []
 }

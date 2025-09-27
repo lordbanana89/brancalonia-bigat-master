@@ -1,135 +1,137 @@
 {
-  "livello": "0",
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 26,
-  "incantesimi": [
+  "elementi": [
     {
+      "id": "amicizia",
       "nome": "Amicizia",
-      "scuola": "Ammaliamento",
       "file": "spell-amicizia.json"
     },
     {
+      "id": "artificio-druidico",
       "nome": "Artificio Druidico",
-      "scuola": "Trasmutazione",
       "file": "spell-artificio-druidico.json"
     },
     {
+      "id": "beffa-crudele",
       "nome": "Beffa Crudele",
-      "scuola": "Ammaliamento",
       "file": "spell-beffa-crudele.json"
     },
     {
+      "id": "colpo-accurato",
       "nome": "Colpo Accurato",
-      "scuola": "Divinazione",
       "file": "spell-colpo-accurato.json"
     },
     {
+      "id": "colpo-shocking",
       "nome": "Colpo Shocking",
-      "scuola": "Invocazione",
       "file": "spell-colpo-shocking.json"
     },
     {
+      "id": "dardo-di-fuoco",
       "nome": "Dardo di Fuoco",
-      "scuola": "Invocazione",
       "file": "spell-dardo-di-fuoco.json"
     },
     {
+      "id": "deflagrazione-occulta",
       "nome": "Deflagrazione Occulta",
-      "scuola": "Invocazione",
       "file": "spell-deflagrazione-occulta.json"
     },
     {
+      "id": "fiotto-acido",
       "nome": "Fiotto Acido",
-      "scuola": "Evocazione",
       "file": "spell-fiotto-acido.json"
     },
     {
+      "id": "guida",
       "nome": "Guida",
-      "scuola": "Divinazione",
       "file": "spell-guida.json"
     },
     {
+      "id": "illusione-minore",
       "nome": "Illusione Minore",
-      "scuola": "Illusione",
       "file": "spell-illusione-minore.json"
     },
     {
+      "id": "lama-arcana",
       "nome": "Lama Arcana",
-      "scuola": "Abiurazione",
       "file": "spell-lama-arcana.json"
     },
     {
+      "id": "luce",
       "nome": "Luce",
-      "scuola": "Invocazione",
       "file": "spell-luce.json"
     },
     {
+      "id": "mano-magica",
       "nome": "Mano Magica",
-      "scuola": "Evocazione",
       "file": "spell-mano-magica.json"
     },
     {
+      "id": "messaggio",
       "nome": "Messaggio",
-      "scuola": "Trasmutazione",
       "file": "spell-messaggio.json"
     },
     {
+      "id": "prestidigitazione",
       "nome": "Prestidigitazione",
-      "scuola": "Trasmutazione",
       "file": "spell-prestidigitazione.json"
     },
     {
+      "id": "produrre-fiamma",
       "nome": "Produrre Fiamma",
-      "scuola": "Evocazione",
       "file": "spell-produrre-fiamma.json"
     },
     {
+      "id": "raggio-di-gelo",
       "nome": "Raggio di Gelo",
-      "scuola": "Invocazione",
       "file": "spell-raggio-di-gelo.json"
     },
     {
+      "id": "randello-incantato",
       "nome": "Randello Incantato",
-      "scuola": "Trasmutazione",
       "file": "spell-randello-incantato.json"
     },
     {
+      "id": "resistenza",
       "nome": "Resistenza",
-      "scuola": "Abiurazione",
       "file": "spell-resistenza.json"
     },
     {
+      "id": "riparare",
       "nome": "Riparare",
-      "scuola": "Trasmutazione",
       "file": "spell-riparare.json"
     },
     {
+      "id": "sacra-fiamma",
       "nome": "Sacra Fiamma",
-      "scuola": "Invocazione",
       "file": "spell-sacra-fiamma.json"
     },
     {
+      "id": "spruzzo-velenoso",
       "nome": "Spruzzo Velenoso",
-      "scuola": "Evocazione",
       "file": "spell-spruzzo-velenoso.json"
     },
     {
+      "id": "taumaturgia",
       "nome": "Taumaturgia",
-      "scuola": "Trasmutazione",
       "file": "spell-taumaturgia.json"
     },
     {
+      "id": "tocco-gelido",
       "nome": "Tocco Gelido",
-      "scuola": "Necromanzia",
       "file": "spell-tocco-gelido.json"
     },
     {
+      "id": "trucchetto-della-mano",
       "nome": "Trucchetto della Mano",
-      "scuola": "Evocazione",
       "file": "spell-trucchetto-della-mano.json"
     },
     {
+      "id": "vita-falsata",
       "nome": "Vita Falsata",
-      "scuola": "Necromanzia",
       "file": "spell-vita-falsata.json"
     }
   ]

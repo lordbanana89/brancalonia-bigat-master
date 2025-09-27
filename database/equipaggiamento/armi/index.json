@@ -1,12 +1,12 @@
 {
-  "categoria": "armi",
+  "categoria": "Armi",
   "fonte": "Manuale Base p.64-65",
   "descrizione": "Armi contadine adattate alla battaglia",
   "totale": 4,
   "elementi": [
     {
       "id": "arma-base-001",
-      "nome": "Forcone d'Arme",
+      "nome": "Forcone D'arme",
       "file": "001_forcone_darme.json"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
       "id": "arma-base-004",
-      "nome": "Zappa d'Arme",
+      "nome": "Zappa D'arme",
       "file": "004_zappa_darme.json"
     }
   ]

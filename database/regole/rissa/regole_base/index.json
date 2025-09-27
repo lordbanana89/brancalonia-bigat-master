@@ -1,34 +1,37 @@
 {
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 6,
   "elementi": [
     {
       "id": "rissa-base-attivazione",
-      "titolo": "attivazione",
+      "nome": "Attivazione",
       "file": "rissa-base-attivazione.json"
     },
     {
       "id": "rissa-base-danni",
-      "titolo": "danni",
+      "nome": "Danni",
       "file": "rissa-base-danni.json"
     },
     {
       "id": "rissa-base-ko",
-      "titolo": "ko",
+      "nome": "Ko",
       "file": "rissa-base-ko.json"
     },
     {
       "id": "rissa-base-recupero",
-      "titolo": "recupero",
+      "nome": "Recupero",
       "file": "rissa-base-recupero.json"
     },
     {
       "id": "rissa-base-armi",
-      "titolo": "armi",
+      "nome": "Armi",
       "file": "rissa-base-armi.json"
     },
     {
       "id": "rissa-base-magia",
-      "titolo": "magia",
+      "nome": "Magia",
       "file": "rissa-base-magia.json"
     }
   ]

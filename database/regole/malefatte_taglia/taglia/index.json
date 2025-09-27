@@ -1,12 +1,17 @@
 {
-  "titolo": "Taglia",
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
   "elementi": [
     {
-      "tipo": "descrizione",
+      "id": "unknown",
+      "nome": "Senza Nome",
       "file": "descrizione.json"
     },
     {
-      "tipo": "livelli",
+      "id": "unknown",
+      "nome": "Senza Nome",
       "file": "livelli.json"
     }
   ]

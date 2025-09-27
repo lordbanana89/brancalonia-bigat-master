@@ -1,4 +1,13 @@
 {
-  "titolo": "Oggetti di scena",
-  "file": "armi.json"
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "armi",
+      "nome": "Armi",
+      "file": "armi.json"
+    }
+  ]
 }

@@ -1,15 +1,17 @@
 {
-  "livello": "4",
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 2,
-  "incantesimi": [
+  "elementi": [
     {
+      "id": "invisibilità-superiore",
       "nome": "Invisibilità Superiore",
-      "scuola": "Illusione",
       "file": "spell-invisibilita-superiore.json"
     },
     {
+      "id": "porta-dimensionale",
       "nome": "Porta Dimensionale",
-      "scuola": "Evocazione",
       "file": "spell-porta-dimensionale.json"
     }
   ]

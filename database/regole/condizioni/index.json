@@ -1,29 +1,10 @@
 {
-  "titolo": "Condizioni e Stati",
+  "categoria": "Regole",
   "descrizione": "Brancalonia riutilizza le condizioni del regolamento 5e e le richiama nelle risse tramite i livelli di batoste.",
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "53"
   },
-  "sezioni": [
-    {
-      "nome": "Condizioni SRD 5e",
-      "stato": "collegato",
-      "riassunto": "Utilizzare il compendio ufficiale dnd5e.conditions (accecato, prono, avvelenato, ecc.). Nessuna modifica di regole e nomi rispetto al SRD.",
-      "note": "Mappare gli oggetti del compendio nelle schede Foundry tramite l'UUID compendium.dnd5e.conditions.<slug>."
-    },
-    {
-      "nome": "Condizioni inflitte in rissa",
-      "file": "../rissa/livelli_batoste/index.json",
-      "stato": "completo",
-      "riassunto": "Ogni livello di batosta infligge penalita (CA -1) e, al sesto livello, l'incoscienza; altre condizioni (accecato, prono, trattenuto) provengono dalle mosse."
-    },
-    {
-      "nome": "Nuove condizioni brancaloniche",
-      "stato": "non_applicabile",
-      "riassunto": "Il manuale non introduce condizioni originali: eventuali effetti speciali devono fare riferimento a condizioni esistenti o a Active Effects personalizzati."
-    }
-  ],
-  "stato": "collegato",
-  "note": "Non duplicare le condizioni SRD: sfruttare i compendi del modulo dnd5e e applicare modificatori temporanei tramite Active Effects."
+  "totale": 0,
+  "elementi": []
 }

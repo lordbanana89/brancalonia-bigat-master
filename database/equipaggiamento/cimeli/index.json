@@ -1,13 +1,12 @@
 {
   "categoria": "Cimeli",
-  "fonte": "Brancalonia Manuale Base",
   "descrizione": "Indice dei 50 cimeli unici del Regno di Brancalonia",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 50,
-  "struttura_file": "NNN_nome_completo",
-  "cimeli": [
+  "elementi": [
     {
       "id": "001",
-      "nome": "L'Anello del Vescovo Ladrone",
+      "nome": "L'anello del Vescovo Ladrone",
       "file": "001_lanello_del_vescovo_ladrone.json"
     },
     {
@@ -22,7 +21,7 @@
     },
     {
       "id": "004",
-      "nome": "La Corda dell'Impiccato Innocente",
+      "nome": "La Corda Dell'impiccato Innocente",
       "file": "004_la_corda_dellimpiccato_innocente.json"
     },
     {
@@ -32,7 +31,7 @@
     },
     {
       "id": "006",
-      "nome": "L'Elmo del Cavaliere Codardo",
+      "nome": "L'elmo del Cavaliere Codardo",
       "file": "006_lelmo_del_cavaliere_codardo.json"
     },
     {
@@ -47,7 +46,7 @@
     },
     {
       "id": "009",
-      "nome": "L'Idolo Pagano",
+      "nome": "L'idolo Pagano",
       "file": "009_lidolo_pagano.json"
     },
     {
@@ -67,7 +66,7 @@
     },
     {
       "id": "013",
-      "nome": "L'Occhio di Vetro del Pirata",
+      "nome": "L'occhio di Vetro del Pirata",
       "file": "013_locchio_di_vetro_del_pirata.json"
     },
     {
@@ -102,7 +101,7 @@
     },
     {
       "id": "020",
-      "nome": "L'Ultimo Chiodo della Croce",
+      "nome": "L'ultimo Chiodo della Croce",
       "file": "020_lultimo_chiodo_della_croce.json"
     },
     {
@@ -117,7 +116,7 @@
     },
     {
       "id": "023",
-      "nome": "L'Ampolla di Sangue di San Geniale",
+      "nome": "L'ampolla di Sangue di San Geniale",
       "file": "023_lampolla_di_sangue_di_san_geniale.json"
     },
     {
@@ -137,7 +136,7 @@
     },
     {
       "id": "027",
-      "nome": "L'Elmetto del Soldato Sconosciuto",
+      "nome": "L'elmetto del Soldato Sconosciuto",
       "file": "027_lelmetto_del_soldato_sconosciuto.json"
     },
     {
@@ -147,7 +146,7 @@
     },
     {
       "id": "029",
-      "nome": "Il Grimorio dello Studente Suicida",
+      "nome": "Il Grimorio Dello Studente Suicida",
       "file": "029_il_grimorio_dello_studente_suicida.json"
     },
     {
@@ -162,7 +161,7 @@
     },
     {
       "id": "032",
-      "nome": "L'Orecchio del Confessore",
+      "nome": "L'orecchio del Confessore",
       "file": "032_lorecchio_del_confessore.json"
     },
     {
@@ -187,7 +186,7 @@
     },
     {
       "id": "037",
-      "nome": "L'Uncino del Pirata Fantasma",
+      "nome": "L'uncino del Pirata Fantasma",
       "file": "037_luncino_del_pirata_fantasma.json"
     },
     {
@@ -202,7 +201,7 @@
     },
     {
       "id": "040",
-      "nome": "L'Anello Spezzato",
+      "nome": "L'anello Spezzato",
       "file": "040_lanello_spezzato.json"
     },
     {
@@ -222,7 +221,7 @@
     },
     {
       "id": "044",
-      "nome": "L'Elmo del Generale Sconfitto",
+      "nome": "L'elmo del Generale Sconfitto",
       "file": "044_lelmo_del_generale_sconfitto.json"
     },
     {
@@ -237,7 +236,7 @@
     },
     {
       "id": "047",
-      "nome": "L'Icona Piangente",
+      "nome": "L'icona Piangente",
       "file": "047_licona_piangente.json"
     },
     {
@@ -252,7 +251,7 @@
     },
     {
       "id": "050",
-      "nome": "La Spada Spezzata dell'Eroe",
+      "nome": "La Spada Spezzata Dell'eroe",
       "file": "050_la_spada_spezzata_delleroe.json"
     }
   ]

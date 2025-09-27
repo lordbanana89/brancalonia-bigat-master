@@ -1,71 +1,7 @@
 {
-  "id": "class-paladino",
-  "nome": "Paladino",
-  "tipo": "classe",
-  "fonte": "Manuale del Giocatore p.82",
+  "categoria": "Classi",
   "descrizione": "Campione giurato che incarna ideali sacri, combina arti marziali e potere divino.",
-  "dado_vita": "d10",
-  "punti_ferita": {
-    "al_1_livello": "10 + modificatore Costituzione",
-    "livelli_successivi": "1d10 (o 6) + modificatore Costituzione per livello"
-  },
-  "competenze": {
-    "armature": [
-      "Tutte le armature",
-      "Scudi"
-    ],
-    "armi": [
-      "Armi semplici",
-      "Armi da guerra"
-    ],
-    "attrezzi": "Nessuno",
-    "tiri_salvezza": [
-      "Saggezza",
-      "Carisma"
-    ],
-    "abilita": {
-      "numero": 2,
-      "scelte": [
-        "Atletica",
-        "Intuizione",
-        "Intimidazione",
-        "Medicina",
-        "Persuasione",
-        "Religione"
-      ]
-    }
-  },
-  "equipaggiamento_iniziale": [
-    "(a) un'arma da guerra e uno scudo oppure (b) due armi da guerra",
-    "(a) cinque giavellotti oppure (b) qualsiasi arma semplice",
-    "(a) un equipaggiamento da sacerdote oppure (b) un equipaggiamento da esploratore",
-    "Cotta di maglia e un simbolo sacro"
-  ],
-  "multiclasse": {
-    "requisiti": "Forza 13 e Carisma 13",
-    "competenze_ottenute": [
-      "Armi semplici",
-      "Armi da guerra",
-      "Armature leggere",
-      "Armature medie",
-      "Scudi"
-    ]
-  },
-  "incantesimi": {
-    "lista": "database/incantesimi/paladino.json",
-    "caratteristica": "Carisma"
-  },
-  "note_brancalonia": {
-    "privilegio_rissa": "Gancio Benedetto infligge batoste radianti",
-    "integrazione_dnd5e": "Capacità standard appoggiate a compendio dnd5e"
-  },
-  "validazione": {
-    "stato": "in_progress",
-    "note": "Controllare espansione dei giuramenti e auras"
-  },
-  "collegamenti": {
-    "privilegi_generali": "privilegi_generali/index.json",
-    "progressione": "progressione/progressione.json",
-    "cammini": "cammini/index.json"
-  }
+  "fonte": "Manuale del Giocatore p.82",
+  "totale": 0,
+  "elementi": []
 }

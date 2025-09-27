@@ -1,25 +1,23 @@
 {
-  "classe": "guiscardo_mago",
   "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 3,
-  "privilegi": [
+  "elementi": [
     {
       "id": "class-mago-livello_1-incantesimi",
       "nome": "Arte Arcana",
-      "file": "class-mago-livello_1-incantesimi.json",
-      "livello": 1
+      "file": "class-mago-livello_1-incantesimi.json"
     },
     {
       "id": "class-mago-livello_1-recupero-arcano",
       "nome": "Meditazione Arcana",
-      "file": "class-mago-livello_1-recupero-arcano.json",
-      "livello": 1
+      "file": "class-mago-livello_1-recupero-arcano.json"
     },
     {
       "id": "class-mago-livello_2-tradizione-arcana",
       "nome": "Scuola del Guiscardo",
-      "file": "class-mago-livello_2-tradizione-arcana.json",
-      "livello": 2
+      "file": "class-mago-livello_2-tradizione-arcana.json"
     }
   ]
 }

@@ -14,27 +14,27 @@
     },
     {
       "id": "gear-serv-003",
-      "nome": "Alloggio Modesto (notte)",
+      "nome": "Alloggio Modesto Notte",
       "file": "gear-serv-003_alloggio_modesto_notte.json"
     },
     {
       "id": "gear-serv-004",
-      "nome": "Alloggio Confortevole (notte)",
+      "nome": "Alloggio Confortevole Notte",
       "file": "gear-serv-004_alloggio_confortevole_notte.json"
     },
     {
       "id": "gear-serv-005",
-      "nome": "Alloggio Sfarzoso (notte)",
+      "nome": "Alloggio Sfarzoso Notte",
       "file": "gear-serv-005_alloggio_sfarzoso_notte.json"
     },
     {
       "id": "gear-serv-006",
-      "nome": "Passaggio in Carrozza (giorno)",
+      "nome": "Passaggio In Carrozza Giorno",
       "file": "gear-serv-006_passaggio_in_carrozza_giorno.json"
     },
     {
       "id": "gear-serv-007",
-      "nome": "Affitto Stalla per Cavalcatura (notte)",
+      "nome": "Affitto Stalla Per Cavalcatura Notte",
       "file": "gear-serv-007_affitto_stalla_per_cavalcatura_notte.json"
     },
     {

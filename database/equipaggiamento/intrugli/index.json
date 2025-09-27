@@ -1,5 +1,5 @@
 {
-  "categoria": "intrugli",
+  "categoria": "Intrugli",
   "fonte": "Manuale Base p.65-66",
   "descrizione": "Distillati, tinture e tonici speciali del Regno",
   "nota_generale": "Gli intrugli rimangono stabili per una settimana, poi perdono effetti speciali",
@@ -27,7 +27,7 @@
     },
     {
       "id": "intruglio-005",
-      "nome": "Fuoco d'Aspromonti",
+      "nome": "Fuoco D'aspromonti",
       "file": "intruglio-005.json"
     },
     {

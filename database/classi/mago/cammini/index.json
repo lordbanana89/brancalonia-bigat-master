@@ -1,51 +1,48 @@
 {
-  "totale": 9,
-  "cammini": [
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 8,
+  "elementi": [
     {
       "id": "class-mago-scuola-abiurazione",
-      "nome": "Scuola di Abiurazione",
+      "nome": "Class Mago Scuola Abiurazione",
       "file": "class-mago-scuola-abiurazione.json"
     },
     {
-      "id": "class-mago-scuola-evocazione",
-      "nome": "Scuola di Evocazione",
-      "file": "class-mago-scuola-evocazione.json"
-    },
-    {
-      "id": "class-mago-scuola-divinazione",
-      "nome": "Scuola di Divinazione",
-      "file": "class-mago-scuola-divinazione.json"
-    },
-    {
       "id": "class-mago-scuola-ammaliamento",
-      "nome": "Scuola di Ammaliamento",
+      "nome": "Class Mago Scuola Ammaliamento",
       "file": "class-mago-scuola-ammaliamento.json"
     },
     {
-      "id": "class-mago-scuola-invocazione",
-      "nome": "Scuola di Invocazione",
-      "file": "class-mago-scuola-invocazione.json"
+      "id": "class-mago-scuola-divinazione",
+      "nome": "Class Mago Scuola Divinazione",
+      "file": "class-mago-scuola-divinazione.json"
+    },
+    {
+      "id": "class-mago-scuola-evocazione",
+      "nome": "Class Mago Scuola Evocazione",
+      "file": "class-mago-scuola-evocazione.json"
     },
     {
       "id": "class-mago-scuola-illusione",
-      "nome": "Scuola di Illusione",
+      "nome": "Class Mago Scuola Illusione",
       "file": "class-mago-scuola-illusione.json"
     },
     {
+      "id": "class-mago-scuola-invocazione",
+      "nome": "Class Mago Scuola Invocazione",
+      "file": "class-mago-scuola-invocazione.json"
+    },
+    {
       "id": "class-mago-scuola-necromanzia",
-      "nome": "Scuola di Necromanzia",
+      "nome": "Class Mago Scuola Necromanzia",
       "file": "class-mago-scuola-necromanzia.json"
     },
     {
       "id": "class-mago-scuola-trasmutazione",
-      "nome": "Scuola di Trasmutazione",
+      "nome": "Class Mago Scuola Trasmutazione",
       "file": "class-mago-scuola-trasmutazione.json"
-    },
-    {
-      "id": "guiscardo_mago",
-      "nome": "Tradizione dei Guiscardi",
-      "file": "../guiscardo_mago/index.json",
-      "nota": "Nuova tradizione di Brancalonia"
     }
   ]
 }

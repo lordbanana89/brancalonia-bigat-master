@@ -1,19 +1,16 @@
 {
-  "titolo": "Condotta del Condottiero",
+  "categoria": "Regole",
   "descrizione": "Materiale di supporto per il Condottiero: generatori di cimeli, linee guida sul tono e sulla gestione delle campagne.",
-  "sezioni": [
-    {
-      "id": "condotta-cimeli",
-      "titolo": "Cimeli",
-      "file": "cimeli.json",
-      "stato": "completo",
-      "riassunto": "Tabella 1d50 di oggetti bizzarri privi di valore economico da assegnare alle canaglie come trofei o ricordi."
-    }
-  ],
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "69-72"
   },
-  "stato": "parziale",
-  "note": "La sezione contiene soprattutto testo narrativo; al momento e stato digitalizzato solo il generatore di cimeli."
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "cimeli",
+      "nome": "Cimeli",
+      "file": "cimeli.json"
+    }
+  ]
 }

@@ -1,16 +1,22 @@
 {
-  "titolo": "Malefatte",
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
   "elementi": [
     {
-      "tipo": "descrizione",
+      "id": "unknown",
+      "nome": "Senza Nome",
       "file": "descrizione.json"
     },
     {
-      "tipo": "modificatori",
+      "id": "unknown",
+      "nome": "Senza Nome",
       "file": "modificatori.json"
     },
     {
-      "tipo": "tabella_crimini",
+      "id": "unknown",
+      "nome": "Senza Nome",
       "file": "tabella_crimini.json"
     }
   ]

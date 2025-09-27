@@ -1,51 +1,10 @@
 {
-  "titolo": "Nomea, Taglie e Sbraco",
+  "categoria": "Regole",
   "descrizione": "Gestione di reputazione, malefatte, taglie e delle attivita di downtime delle canaglie.",
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "46-53, 61-63"
   },
-  "sezioni": [
-    {
-      "nome": "Malefatte iniziali e tabella crimini",
-      "pagine": "46-47",
-      "file": "../malefatte_taglia/malefatte/tabella_crimini.json",
-      "stato": "parziale",
-      "riassunto": "Elenco dei crimini con valore in malefatte e monetizzazione per calcolare la Taglia di partenza.",
-      "note": "La tabella e presente ma necessita di cross-check con il manuale per importi e descrizioni."
-    },
-    {
-      "nome": "Categorie di Taglia",
-      "pagine": "48",
-      "file": "../malefatte_taglia/taglia/descrizione.json",
-      "stato": "parziale",
-      "riassunto": "Scala da Maltagliato a Grande Taglia con soglie in gransoldi e modificatori ai Rischi del Mestiere.",
-      "note": "Collegare ai flag di Nomea e ai moduli Foundry per modificare automaticamente le prove sociali."
-    },
-    {
-      "nome": "Nomea e malus degli Infami",
-      "pagine": "48-49",
-      "file": "../malefatte_taglia/nomea/descrizione.json",
-      "stato": "parziale",
-      "riassunto": "Applicazione del bonus Nomea alle prove sociali o malus per le canaglie Infami.",
-      "note": "Richiede Active Effect o macro per sommare il bonus di Nomea a Persuasione/Intimidire."
-    },
-    {
-      "nome": "Rischi del mestiere",
-      "pagine": "49-51",
-      "stato": "completo",
-      "riassunto": "Tabella d20 che determina complicazioni narrative in base alla Nomea piu alta della Cricca.",
-      "note": "Tabella completata; collegare eventuali macro Foundry per automatizzare il tiro durante l avvio dei lavoretti.",
-      "file": "rischi_mestiere/index.json"
-    },
-    {
-      "nome": "Sbraco e Bagordi",
-      "pagine": "61-63",
-      "file": "../esplorazione/bagordi/index.json",
-      "stato": "completo",
-      "riassunto": "Scelte di downtime (riposo, imbosco, bagordi). Gli esiti dei bagordi sono gia strutturati."
-    }
-  ],
-  "stato": "parziale",
-  "note": "Tabella dei rischi trascritta; rimane da validare i flag di Nomea e gli automatismi Foundry."
+  "totale": 0,
+  "elementi": []
 }

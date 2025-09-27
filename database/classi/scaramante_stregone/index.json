@@ -1,54 +1,7 @@
 {
-  "nome": "Scaramante",
-  "classe_base": "Stregone",
-  "fonte": "Manuale Base p.28-29",
+  "categoria": "Classi",
   "descrizione": "Taumaturgo della Fandonia che combina superstizioni, invocazioni fatate e malocchi.",
-  "tipo": "sottoclasse",
-  "sottoclasse": "Origine Stregonesca della Fandonia",
-  "testo": {
-    "introduzione": [
-      "Gli scaramanti manipolano il potere delle fate, delle T re Madri e della superstizione popolare.",
-      "Possono recidere malocchi, incidere glifi sui granai o vendere protezioni contro menagrami e fantasime.",
-      "Alcuni servono congreghe, altri agiscono da soli: in ogni caso il loro sangue scintilla di Fandonia." 
-    ]
-  },
-  "validazione": {
-    "implementato": true,
-    "file_id": "scaramante_protetto_fato",
-    "compendio": "brancalonia-features"
-  },
-  "privilegi": {
-    "totale": 3,
-    "index": "privilegi/index.json"
-  },
-  "progressione": [
-    {
-      "livello": 1,
-      "privilegi": [
-        {
-          "id": "scaramante_stregone-livello_1-magia_protezione",
-          "nome": "Magia di Protezione",
-          "file": "privilegi/scaramante_stregone-livello_1-magia_protezione.json",
-          "fonte": "Manuale Base p.28"
-        },
-        {
-          "id": "scaramante_stregone-livello_1-protetto_dal_fato",
-          "nome": "Protetto dal Fato",
-          "file": "privilegi/scaramante_stregone-livello_1-protetto_dal_fato.json",
-          "fonte": "Manuale Base p.28"
-        }
-      ]
-    },
-    {
-      "livello": 6,
-      "privilegi": [
-        {
-          "id": "scaramante_stregone-livello_6-rituale_scaramantico",
-          "nome": "Rituale Scaramantico",
-          "file": "privilegi/scaramante_stregone-livello_6-rituale_scaramantico.json",
-          "fonte": "Manuale Base p.28"
-        }
-      ]
-    }
-  ]
+  "fonte": "Manuale Base p.28-29",
+  "totale": 0,
+  "elementi": []
 }

@@ -1,9 +1,9 @@
 {
-  "categoria": "oggetti_contraffatti",
+  "categoria": "Oggetti_contraffatti",
   "descrizione": "Merci taroccate che imitano documenti, mappe e reliquie diffuse nel Regno.",
   "fonte": "Manuale Base p.64-65",
   "totale": 5,
-  "oggetti": [
+  "elementi": [
     {
       "id": "oggetto-contraff-001",
       "nome": "Documenti Falsi",

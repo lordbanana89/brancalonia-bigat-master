@@ -1,48 +1,7 @@
 {
-  "nome": "Brigante",
-  "classe_base": "Ladro",
-  "fonte": "Manuale Base p.23",
+  "categoria": "Classi",
   "descrizione": "Predoni delle strade e dei boschi che sfruttano agguati, imboscate e perfetta conoscenza del territorio.",
-  "tipo": "sottoclasse",
-  "sottoclasse": "Archetipo Ladresco",
-  "testo": {
-    "introduzione": [
-      "Nel Regno cento e una bande di briganti insidiano esattori, gabellieri e carovane. Alcune sono gruppi improvvisati di disperati; altre controllano intere contrade come vere compagnie di ventura.",
-      "Per i popolani spesso il brigante è un paladino del popolo contro i parassiti di corte, anche se rimane un tagliagole abituato a vivere di rapine e colpi lampo.",
-      "La corona di rame, titolo infame di re dei briganti, è contesa da ogni masnada che sappia orchestrare imboscate perfette e sparire nella boscaglia." 
-    ],
-    "tattiche": [
-      "Agguati lungo strade e sentieri",
-      "Uso sapiente dell'ambiente naturale",
-      "Retate lampo contro carovane"
-    ]
-  },
-  "validazione": {
-    "implementato": true,
-    "file_id": "brigante_arte_imboscata",
-    "compendio": "brancalonia-features"
-  },
-  "privilegi": {
-    "totale": 2,
-    "index": "privilegi/index.json"
-  },
-  "progressione": [
-    {
-      "livello": 3,
-      "privilegi": [
-        {
-          "id": "brigante_ladro-livello_3-brigantaggio",
-          "nome": "Brigantaggio",
-          "file": "privilegi/brigante_ladro-livello_3-brigantaggio.json",
-          "fonte": "Manuale Base p.23"
-        },
-        {
-          "id": "brigante_ladro-livello_3-arte_imboscata",
-          "nome": "Arte dell'Imboscata",
-          "file": "privilegi/brigante_ladro-livello_3-arte_imboscata.json",
-          "fonte": "Manuale Base p.23"
-        }
-      ]
-    }
-  ]
+  "fonte": "Manuale Base p.23",
+  "totale": 0,
+  "elementi": []
 }

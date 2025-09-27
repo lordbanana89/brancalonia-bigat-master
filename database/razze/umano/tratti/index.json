@@ -1,17 +1,18 @@
 {
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 2,
-  "tratti": [
+  "elementi": [
     {
-      "id": "race-umano-tratto-adattabile",
-      "nome": "Adattabile",
-      "categoria": "brancalonia",
-      "file": "tratto-002_adattabile.json"
+      "id": "tratto-001-privilegio-da-rissa",
+      "nome": "Tratto 001 Privilegio da Rissa",
+      "file": "tratto-001_privilegio_da_rissa.json"
     },
     {
-      "id": "race-umano-tratto-privilegio_da_rissa",
-      "nome": "Privilegio Da Rissa",
-      "categoria": "brancalonia",
-      "file": "tratto-001_privilegio_da_rissa.json"
+      "id": "tratto-002-adattabile",
+      "nome": "Tratto 002 Adattabile",
+      "file": "tratto-002_adattabile.json"
     }
   ]
 }

@@ -1,47 +1,43 @@
 {
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 7,
-  "tratti": [
+  "elementi": [
     {
-      "id": "race-selvatico-tratto-animali_armi_naturali",
-      "nome": "Armi Naturali",
-      "categoria": "animali",
-      "file": "tratto-006_animali_armi_naturali.json"
-    },
-    {
-      "id": "race-selvatico-tratto-animali_istinti_ferali",
-      "nome": "Istinti Ferali",
-      "categoria": "animali",
-      "file": "tratto-005_animali_istinti_ferali.json"
-    },
-    {
-      "id": "race-selvatico-tratto-animali_sensi_acuti",
-      "nome": "Sensi Acuti",
-      "categoria": "animali",
-      "file": "tratto-007_animali_sensi_acuti.json"
-    },
-    {
-      "id": "race-selvatico-tratto-comuni_uno_con_la_natura",
-      "nome": "Uno Con La Natura",
-      "categoria": "comuni",
+      "id": "tratto-001-comuni-uno-con-la-natura",
+      "nome": "Tratto 001 Comuni Uno Con la Natura",
       "file": "tratto-001_comuni_uno_con_la_natura.json"
     },
     {
-      "id": "race-selvatico-tratto-vegetali_fotosintesi",
-      "nome": "Fotosintesi",
-      "categoria": "vegetali",
-      "file": "tratto-003_vegetali_fotosintesi.json"
-    },
-    {
-      "id": "race-selvatico-tratto-vegetali_pelle_corteccia",
-      "nome": "Pelle Corteccia",
-      "categoria": "vegetali",
+      "id": "tratto-002-vegetali-pelle-corteccia",
+      "nome": "Tratto 002 Vegetali Pelle Corteccia",
       "file": "tratto-002_vegetali_pelle_corteccia.json"
     },
     {
-      "id": "race-selvatico-tratto-vegetali_radici",
-      "nome": "Radici",
-      "categoria": "vegetali",
+      "id": "tratto-003-vegetali-fotosintesi",
+      "nome": "Tratto 003 Vegetali Fotosintesi",
+      "file": "tratto-003_vegetali_fotosintesi.json"
+    },
+    {
+      "id": "tratto-004-vegetali-radici",
+      "nome": "Tratto 004 Vegetali Radici",
       "file": "tratto-004_vegetali_radici.json"
+    },
+    {
+      "id": "tratto-005-animali-istinti-ferali",
+      "nome": "Tratto 005 Animali Istinti Ferali",
+      "file": "tratto-005_animali_istinti_ferali.json"
+    },
+    {
+      "id": "tratto-006-animali-armi-naturali",
+      "nome": "Tratto 006 Animali Armi Naturali",
+      "file": "tratto-006_animali_armi_naturali.json"
+    },
+    {
+      "id": "tratto-007-animali-sensi-acuti",
+      "nome": "Tratto 007 Animali Sensi Acuti",
+      "file": "tratto-007_animali_sensi_acuti.json"
     }
   ]
 }

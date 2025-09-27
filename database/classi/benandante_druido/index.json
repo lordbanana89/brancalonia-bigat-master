@@ -1,64 +1,7 @@
 {
-  "nome": "Benandante",
-  "classe_base": "Druido",
-  "fonte": "Manuale Base p.21-22",
+  "categoria": "Classi",
   "descrizione": "Guardiani tra mondo degli spiriti, foresta e comunità contadine, chiamati a combattere streghe e fantasime.",
-  "tipo": "sottoclasse",
-  "sottoclasse": "Circolo della Danza Macabra",
-  "testo": {
-    "introduzione": [
-      "Ancor prima che santi e miracolari percorressero il Regno, i benandanti difendevano il popolo da streghe, diavolacci e fantasime.",
-      "Vivono sospesi fra il regno degli spiriti, quello degli uomini e delle selve, venerando il Padre Terno insieme a numi pagani come le Tre Madri.",
-      "Il Circolo della Danza Macabra incarna il loro potere di trattare con i morti, dalla Schiera Selvaggia ai Confinati, cambiando forma in lupi, falchi e orsi per difendere i ritmi della natura." 
-    ],
-    "ruolo": "I benandanti sorvegliano i crocicchi, vegliano sui raccolti e si oppongono alle creature non morte che violano il ciclo delle stagioni.",
-    "congreghe": [
-      "Forestiere di Zagara",
-      "Custodi dei Monti della Corona"
-    ]
-  },
-  "validazione": {
-    "implementato": true,
-    "file_id": "benandante_guardiano",
-    "compendio": "brancalonia-features"
-  },
-  "privilegi": {
-    "totale": 3,
-    "index": "privilegi/index.json"
-  },
-  "progressione": [
-    {
-      "livello": 2,
-      "privilegi": [
-        {
-          "id": "benandante_druido-livello_2-guardare_oltre_velo",
-          "nome": "Guardare Oltre il Velo",
-          "file": "privilegi/benandante_druido-livello_2-guardare_oltre_velo.json",
-          "fonte": "Manuale Base p.21"
-        }
-      ]
-    },
-    {
-      "livello": 3,
-      "privilegi": [
-        {
-          "id": "benandante_druido-livello_3-incantesimi_circolo",
-          "nome": "Incantesimi del Circolo",
-          "file": "privilegi/benandante_druido-livello_3-incantesimi_circolo.json",
-          "fonte": "Manuale Base p.21"
-        }
-      ]
-    },
-    {
-      "livello": 6,
-      "privilegi": [
-        {
-          "id": "benandante_druido-livello_6-guardiano_danza_macabra",
-          "nome": "Guardiano della Danza Macabra",
-          "file": "privilegi/benandante_druido-livello_6-guardiano_danza_macabra.json",
-          "fonte": "Manuale Base p.21"
-        }
-      ]
-    }
-  ]
+  "fonte": "Manuale Base p.21-22",
+  "totale": 0,
+  "elementi": []
 }

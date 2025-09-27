@@ -1,15 +1,16 @@
 {
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 2,
-  "privilegi": [
+  "elementi": [
     {
       "id": "mattatore_ranger-livello_3-maestro_esibizione",
-      "livello": 3,
-      "nome": "Maestro dell'Esibizione",
+      "nome": "Maestro Dell'esibizione",
       "file": "mattatore_ranger-livello_3-maestro_esibizione.json"
     },
     {
       "id": "mattatore_ranger-livello_3-occhio_mattatore",
-      "livello": 3,
       "nome": "Occhio del Mattatore",
       "file": "mattatore_ranger-livello_3-occhio_mattatore.json"
     }

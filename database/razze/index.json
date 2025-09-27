@@ -1,18 +1,23 @@
 {
   "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 3,
-  "razze": [
+  "elementi": [
     {
+      "id": "gatto-lupesco",
       "nome": "Gatto Lupesco",
       "file": "gatto_lupesco.json",
       "fonte": "Brancalonia Macaronicon p.7"
     },
     {
+      "id": "inesistente",
       "nome": "Inesistente",
       "file": "inesistente.json",
       "fonte": "Brancalonia Macaronicon p.8-9"
     },
     {
+      "id": "pantegano",
       "nome": "Pantegano",
       "file": "pantegano.json",
       "fonte": "Brancalonia Macaronicon p.10-11"

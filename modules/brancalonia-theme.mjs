@@ -1,18 +1,23 @@
 /* ===================================== */
 /* BRANCALONIA THEME MODULE */
-/* Sistema tema completo basato su ProjectFU */
+/* Sistema tema completo basato su Carolingian UI */
+/* v4.4.0 - Architettura Completa */
 /* ===================================== */
 
 import { MODULE, registerSettings } from './settings.mjs';
 import { Theme } from './theme.mjs';
 
-Hooks.once('init', () => {
-  console.log('Brancalonia | Inizializzazione sistema tema avanzato');
+// Import core system (auto-initializes)
+import './brancalonia-theme-core.mjs';
 
-  // Registra tutte le impostazioni
+// Legacy initialization for backward compatibility
+Hooks.once('init', () => {
+  console.log('Brancalonia | Sistema tema v4.4.0 - Architettura Carolingian UI');
+
+  // Register legacy settings
   registerSettings();
 
-  // Applica tema se abilitato
+  // Apply theme if enabled (legacy support)
   if (game.settings.get(MODULE, 'themeEnabled')) {
     const themeData = game.settings.get(MODULE, 'theme');
     const theme = Theme.from(themeData);

@@ -1,5 +1,5 @@
 {
-  "categoria": "Incantesimi Base (mapping compendio dnd5e)",
+  "categoria": "Incantesimi Base Mapping Compendio Dnd5e",
   "totale": 21,
   "elementi": [
     {
@@ -44,7 +44,7 @@
     },
     {
       "id": "spell-base-009",
-      "nome": "Protezione dal Bene e dal Male",
+      "nome": "Protezione Dal Bene e Dal Male",
       "file": "spell-base-009_protezione_dal_bene_e_dal_male.json"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "id": "spell-base-014",
-      "nome": "Passo senza Tracce",
+      "nome": "Passo Senza Tracce",
       "file": "spell-base-014_passo_senza_tracce.json"
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "id": "spell-base-018",
-      "nome": "Accecare/Assordare",
+      "nome": "Accecareassordare",
       "file": "spell-base-018_accecare_assordare.json"
     },
     {
@@ -99,7 +99,7 @@
     },
     {
       "id": "spell-base-020",
-      "nome": "Animare i Morti",
+      "nome": "Animare I Morti",
       "file": "spell-base-020_animare_i_morti.json"
     },
     {

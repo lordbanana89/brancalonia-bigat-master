@@ -1,15 +1,31 @@
 {
-  "titolo": "Giochi da Bettola",
+  "categoria": "Regole",
   "descrizione": "Mini giochi sociali per downtime o intermezzi di rissa nelle bettole del Regno.",
-  "giochi": [
-    { "id": "gioco-minchiate", "titolo": "Minchiate", "file": "minchiate.json" },
-    { "id": "gioco-botte-alla-botte", "titolo": "Botte alla Botte", "file": "botte-alla-botte.json" },
-    { "id": "gioco-gara-di-mangiate", "titolo": "Gara di Mangiate", "file": "gara-di-mangiate.json" },
-    { "id": "gioco-giostra-dei-poveri", "titolo": "Giostra dei Poveri", "file": "giostra-dei-poveri.json" }
-  ],
   "fonte": {
     "manuale": "Manuale Base Brancalonia",
     "pagine": "57-59"
   },
-  "stato": "completo"
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "botte-alla-botte",
+      "nome": "Botte Alla Botte",
+      "file": "botte-alla-botte.json"
+    },
+    {
+      "id": "gara-di-mangiate",
+      "nome": "Gara di Mangiate",
+      "file": "gara-di-mangiate.json"
+    },
+    {
+      "id": "giostra-dei-poveri",
+      "nome": "Giostra dei Poveri",
+      "file": "giostra-dei-poveri.json"
+    },
+    {
+      "id": "minchiate",
+      "nome": "Minchiate",
+      "file": "minchiate.json"
+    }
+  ]
 }

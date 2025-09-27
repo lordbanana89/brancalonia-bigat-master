@@ -1,28 +1,27 @@
 {
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 4,
-  "privilegi": [
+  "elementi": [
     {
       "id": "miracolaro_chierico-livello_1-dominio_calendario",
-      "livello": 1,
       "nome": "Dominio del Calendario",
       "file": "miracolaro_chierico-livello_1-dominio_calendario.json"
     },
     {
       "id": "miracolaro_chierico-livello_1-tirare_giu_santi",
-      "livello": 1,
-      "nome": "Tirare Giù i Santi",
+      "nome": "Tirare Giù I Santi",
       "file": "miracolaro_chierico-livello_1-tirare_giu_santi.json"
     },
     {
       "id": "miracolaro_chierico-livello_2-incanalare_divinita_recitare",
-      "livello": 2,
-      "nome": "Incanalare Divinità: Recitare il Calendario",
+      "nome": "Incanalare Divinità Recitare il Calendario",
       "file": "miracolaro_chierico-livello_2-incanalare_divinita_recitare.json"
     },
     {
       "id": "miracolaro_chierico-livello_6-per_tutti_santi",
-      "livello": 6,
-      "nome": "Per Tutti i Santi!",
+      "nome": "Per Tutti I Santi",
       "file": "miracolaro_chierico-livello_6-per_tutti_santi.json"
     }
   ]

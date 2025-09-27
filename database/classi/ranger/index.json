@@ -1,75 +1,7 @@
 {
-  "id": "class-ranger",
-  "nome": "Ranger",
-  "tipo": "classe",
-  "fonte": "Manuale del Giocatore p.89",
+  "categoria": "Classi",
   "descrizione": "Cacciatore errante e guida selvaggia, padrone dei territori sconosciuti e delle imboscate.",
-  "dado_vita": "d10",
-  "punti_ferita": {
-    "al_1_livello": "10 + modificatore Costituzione",
-    "livelli_successivi": "1d10 (o 6) + modificatore Costituzione per livello"
-  },
-  "competenze": {
-    "armature": [
-      "Armature leggere",
-      "Armature medie",
-      "Scudi"
-    ],
-    "armi": [
-      "Armi semplici",
-      "Armi da guerra"
-    ],
-    "attrezzi": "Uno strumento musicale o un attrezzo artigianale",
-    "tiri_salvezza": [
-      "Forza",
-      "Destrezza"
-    ],
-    "abilita": {
-      "numero": 3,
-      "scelte": [
-        "Acrobazia",
-        "Addestrare Animali",
-        "Atletica",
-        "Intuizione",
-        "Indagare",
-        "Natura",
-        "Percezione",
-        "Stealth",
-        "Sopravvivenza"
-      ]
-    }
-  },
-  "equipaggiamento_iniziale": [
-    "(a) scale mail oppure (b) armatura di cuoio",
-    "(a) due spade corte oppure (b) due armi semplici",
-    "(a) un equipaggiamento da esploratore oppure (b) un equipaggiamento da viaggiatore",
-    "Un arco lungo e una faretra con 20 frecce"
-  ],
-  "multiclasse": {
-    "requisiti": "Destrezza 13 e Saggezza 13",
-    "competenze_ottenute": [
-      "Armi semplici",
-      "Armi da guerra",
-      "Armature leggere",
-      "Armature medie",
-      "Scudi"
-    ]
-  },
-  "incantesimi": {
-    "lista": "database/incantesimi/ranger.json",
-    "caratteristica": "Saggezza"
-  },
-  "note_brancalonia": {
-    "privilegio_rissa": "Rissa del Mattatore concede mosse aggiuntive contro nemici prescelti",
-    "integrazione_dnd5e": "Le capacità standard fanno capo al compendio dnd5e"
-  },
-  "validazione": {
-    "stato": "in_progress",
-    "note": "Verificare sinergia con Nemico Prescelto varianti opzionali"
-  },
-  "collegamenti": {
-    "privilegi_generali": "privilegi_generali/index.json",
-    "progressione": "progressione/progressione.json",
-    "cammini": "cammini/index.json"
-  }
+  "fonte": "Manuale del Giocatore p.89",
+  "totale": 0,
+  "elementi": []
 }

@@ -1,25 +1,23 @@
 {
-  "classe": "druido",
   "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
   "totale": 3,
-  "privilegi": [
+  "elementi": [
     {
       "id": "class-druido-livello_1-druidico",
       "nome": "Lingua della Natura",
-      "file": "class-druido-livello_1-druidico.json",
-      "livello": 1
+      "file": "class-druido-livello_1-druidico.json"
     },
     {
       "id": "class-druido-livello_2-circolo-druidico",
       "nome": "Cerchio dei Benandanti",
-      "file": "class-druido-livello_2-circolo-druidico.json",
-      "livello": 2
+      "file": "class-druido-livello_2-circolo-druidico.json"
     },
     {
       "id": "class-druido-livello_2-forma-selvatica",
       "nome": "Mutaforma Naturale",
-      "file": "class-druido-livello_2-forma-selvatica.json",
-      "livello": 2
+      "file": "class-druido-livello_2-forma-selvatica.json"
     }
   ]
 }

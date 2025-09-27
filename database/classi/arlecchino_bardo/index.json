@@ -1,70 +1,7 @@
 {
-  "nome": "Arlecchino",
-  "classe_base": "Bardo",
-  "fonte": "Manuale Base p.18-19",
+  "categoria": "Classi",
   "descrizione": "Maschere della Commedia dell'Arte che trasformano musica, scherno e mimo in magia da palcoscenico.",
-  "tipo": "sottoclasse",
-  "sottoclasse": "Collegio del Carnevale",
-  "testo": {
-    "introduzione": [
-      "Si narra che il primo arlecchino fosse Alichino, un malebranche fuggito dall'Inferno che portò nei villaggi spettacoli di abiti sgargianti, sberleffi, piroette e burle.",
-      "Le maschere della Commedia dell'Arte sono ormai un fenomeno diffuso in tutto il Regno: ogni città possiede i propri personaggi, compagnie itineranti e canovacci tramandati di generazione in generazione.",
-      "Gli arlecchini del Collegio del Carnevale preferiscono il teatro, la pantomima e il canovaccio alle esibizioni musicali classiche, e affrontano pericoli e avventure come se stessero calcando il palco di un teatro." 
-    ],
-    "maschere_celebrate": [
-      "Cacciatorina e Bafforosso",
-      "Padellao e Fornao",
-      "Il Dottor Mutandone",
-      "Palandrana e i suoi Servitori",
-      "Tirchione e i Mischinelli",
-      "Calandrone"
-    ],
-    "strumento_tipico": "Il batocchio, un manganello sonoro che fa ridere e distrae il pubblico." 
-  },
-  "validazione": {
-    "implementato": true,
-    "file_id": "arlecchino_batocchio",
-    "compendio": "brancalonia-features",
-    "note": "Privilegi completati secondo il Collegio del Carnevale"
-  },
-  "privilegi": {
-    "totale": 4,
-    "index": "privilegi/index.json"
-  },
-  "progressione": [
-    {
-      "livello": 3,
-      "privilegi": [
-        {
-          "id": "arlecchino_bardo-livello_3-competenze_bonus",
-          "nome": "Competenze Bonus",
-          "file": "privilegi/arlecchino_bardo-livello_3-competenze_bonus.json",
-          "fonte": "Manuale Base p.19"
-        },
-        {
-          "id": "arlecchino_bardo-livello_3-batocchio",
-          "nome": "Batocchio",
-          "file": "privilegi/arlecchino_bardo-livello_3-batocchio.json",
-          "fonte": "Manuale Base p.19"
-        },
-        {
-          "id": "arlecchino_bardo-livello_3-difesa_senza_armatura",
-          "nome": "Difesa Senza Armatura",
-          "file": "privilegi/arlecchino_bardo-livello_3-difesa_senza_armatura.json",
-          "fonte": "Manuale Base p.19"
-        }
-      ]
-    },
-    {
-      "livello": 6,
-      "privilegi": [
-        {
-          "id": "arlecchino_bardo-livello_6-silenzio_in_sala",
-          "nome": "Silenzio in Sala",
-          "file": "privilegi/arlecchino_bardo-livello_6-silenzio_in_sala.json",
-          "fonte": "Manuale Base p.19"
-        }
-      ]
-    }
-  ]
+  "fonte": "Manuale Base p.18-19",
+  "totale": 0,
+  "elementi": []
 }
