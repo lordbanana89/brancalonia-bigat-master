@@ -50,9 +50,13 @@ if (originalFromSource) {
 Hooks.on("ready", () => {
     console.log("Brancalonia | Validazione dati attiva");
 
+    // Usa il namespace corretto per Foundry v13
+    const CompendiumCollectionClass = foundry.documents.collections.CompendiumCollection;
+    if (!CompendiumCollectionClass) return;
+
     // Wrap getDocuments per validazione runtime
-    const originalGetDocuments = CompendiumCollection.prototype.getDocuments;
-    CompendiumCollection.prototype.getDocuments = async function(options) {
+    const originalGetDocuments = CompendiumCollectionClass.prototype.getDocuments;
+    CompendiumCollectionClass.prototype.getDocuments = async function(options) {
         const docs = await originalGetDocuments.call(this, options);
 
         // Valida ogni documento
