@@ -12,6 +12,7 @@
     "privilegio": {
       "nome": "Storie della Strada",
       "descrizione": "Quando raccogli informazioni ottieni sempre una diceria aggiuntiva e hai vantaggio nelle prove per percorrere le Strade che non vanno da nessuna parte (Manuale Base p.84)."
+      "implementazione": "creare sistema"
     }
   },
   "meccaniche": {
