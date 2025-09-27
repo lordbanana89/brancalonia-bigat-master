@@ -6,8 +6,10 @@
 import { Theme } from './theme.mjs';
 import { MODULE, THEMES } from './settings.mjs';
 
-// Usa ApplicationV2 per compatibilità con Foundry V13+
-export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
+// Usa ApplicationV2 con HandlebarsApplicationMixin per compatibilità con Foundry V13+
+export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationMixin(
+  foundry.applications.api.ApplicationV2
+) {
   constructor(options = {}) {
     super(options);
     this.theme = game.settings.get(MODULE, 'theme');
@@ -15,7 +17,7 @@ export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
 
   static DEFAULT_OPTIONS = {
     id: 'brancalonia-theme-config',
-    title: 'Configurazione Tema Brancalonia',
+    classes: ['brancalonia-theme-config'],
     tag: 'form',
     form: {
       handler: ThemeConfig.formHandler,
@@ -23,6 +25,7 @@ export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
       closeOnSubmit: true
     },
     window: {
+      title: 'Configurazione Tema Brancalonia',
       icon: 'fas fa-palette',
       resizable: true
     },
@@ -36,14 +39,7 @@ export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
       importTheme: ThemeConfig.importTheme,
       resetColor: ThemeConfig.resetColor,
       changeTab: ThemeConfig._changeTab
-    },
-    tabs: [
-      {
-        navSelector: '.tabs',
-        contentSelector: '.content',
-        initial: 'colors'
-      }
-    ]
+    }
   };
 
   static PARTS = {
@@ -52,9 +48,7 @@ export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
     }
   };
 
-  tabGroups = {
-    primary: 'colors'
-  };
+  _activeTab = 'colors';
 
   static _changeTab(event, target) {
     event.preventDefault();
@@ -71,17 +65,29 @@ export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
     if (tabContent) tabContent.classList.add('active');
 
     // Salva il tab attivo
-    app.tabGroups.primary = tabName;
+    app._activeTab = tabName;
   }
 
-  _onFirstRender(context, options) {
-    // Attiva il primo tab
-    const initialTab = this.tabGroups.primary || 'colors';
+  _onRender(context, options) {
+    super._onRender(context, options);
+
+    // Attiva il tab corrente
+    const initialTab = this._activeTab || 'colors';
     const tabLink = this.element.querySelector(`.tabs .item[data-tab="${initialTab}"]`);
     const tabContent = this.element.querySelector(`.tab[data-tab="${initialTab}"]`);
 
     if (tabLink) tabLink.classList.add('active');
     if (tabContent) tabContent.classList.add('active');
+
+    // Setup color input handlers
+    const html = this.element;
+    html.querySelectorAll('input[type="color"]').forEach(input => {
+      input.addEventListener('input', () => this._updatePreview());
+    });
+
+    html.querySelectorAll('input[type="text"][name*="colors"]').forEach(input => {
+      input.addEventListener('input', () => this._updatePreview());
+    });
   }
 
   async _prepareContext(options) {
@@ -114,24 +120,10 @@ export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
       presets: Object.keys(THEMES).map(key => ({
         id: key,
         name: key.charAt(0).toUpperCase() + key.slice(1)
-      })),
-      tabs: this.tabGroups
+      }))
     };
   }
 
-  _onRender(context, options) {
-    const html = this.element;
-
-    // Anteprima live per input colore
-    html.querySelectorAll('input[type="color"]').forEach(input => {
-      input.addEventListener('input', () => this._updatePreview());
-    });
-
-    // Anteprima live per input testo
-    html.querySelectorAll('input[type="text"][name*="colors"]').forEach(input => {
-      input.addEventListener('input', () => this._updatePreview());
-    });
-  }
 
   static async loadPreset(event, target) {
     const app = target.closest('.application').application;
