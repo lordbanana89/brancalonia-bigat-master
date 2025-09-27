@@ -11,7 +11,7 @@
     ],
     "privilegio": {
       "nome": "Studioso di Reliquie",
-      "descrizione": "Grazie alla licenza ufficiale può consultare archivi e raccolte del Credo, ottenere informazioni su reliquie e siti di ritrovamento e farsi riconoscere come esperto autorizzato."
+      "descrizione": "Il cacciatore ha molta conoscenza delle reliquie, delle cronache dei santi e dei scritti sacri (+1 sui tiri di Religione e Storia)."
     }
   },
   "meccaniche": {
@@ -45,9 +45,10 @@
     },
     "privilegio_studioso_reliquie": {
       "tipo": "attivo",
-      "descrizione": "Accesso privilegiato ad archivi e reliquiari del Credo per raccogliere informazioni e autenticare reperti",
+      "descrizione": "Ha molta conoscenza delle reliquie, cronache dei santi e scritti sacri: +1 ai tiri di Religione e Storia",
       "implementazione": {
-        "accesso_archivi": "flags.brancalonia-bigat.archiviCredo = true"
+        "bonus_religione": "system.skills.rel.mod = 1",
+        "bonus_storia": "system.skills.his.mod = 1"
       },
       "mode": 5
     }

@@ -11,7 +11,7 @@
     ],
     "privilegio": {
       "nome": "Risolvere Guai",
-      "descrizione": "Può annullare una Malefatta sua o di un compagno pagando subito un ammontare pari al Valore di Taglia, prima che venga registrata."
+      "descrizione": "Può annullare una Malefatta sua o di un compagno pagando subito un ammontare pari al Valore di Taglia, prima che venga registrata in aggiunta."
     }
   },
   "meccaniche": {
@@ -42,7 +42,7 @@
     },
     "privilegio_risolvere_guai": {
       "tipo": "attivo",
-      "descrizione": "Può annullare una Malefatta (propria o della banda) pagando il Valore di Taglia, prima che venga aggiunta",
+      "descrizione": "Può annullare una Malefatta (propria o della banda) pagando il Valore di Taglia, prima che venga aggiunta in aggiunta",
       "implementazione": "flags.brancalonia-bigat.risolvereGuai = true",
       "mode": 5,
       "nota": "Meccanica specifica di Brancalonia per gestione Taglia"

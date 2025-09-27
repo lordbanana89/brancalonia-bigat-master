@@ -11,7 +11,7 @@
     ],
     "privilegio": {
       "nome": "Storie della Strada",
-      "descrizione": "Quando raccogli informazioni ottieni sempre una diceria aggiuntiva e hai vantaggio nelle prove per percorrere le Strade che non vanno da nessuna parte (Manuale Base p.84)."
+      "descrizione": "Puoi raccontare storie da taverna (vere o false a tua scelta) per intrattenere e raccogliere informazioni. Quando raccogli informazioni ottieni sempre una diceria aggiuntiva. Inoltre, quando il condottiero utilizza 'Strade che non vanno da nessuna parte', ottieni automaticamente un +1 al tiro.",
       "implementazione": "creare sistema"
     }
   },
@@ -43,7 +43,7 @@
     },
     "privilegio_storie_strada": {
       "tipo": "attivo",
-      "descrizione": "Ottiene sempre una diceria aggiuntiva quando raccoglie informazioni, vantaggio per Strade che non vanno da nessuna parte",
+      "descrizione": "Storie da taverna (vere o false), diceria extra quando raccogli info, +1 automatico quando condottiero usa Strade che non vanno da nessuna parte",
       "implementazione": {
         "dicerie_extra": "flags.brancalonia-bigat.storieStrada = true",
         "vantaggio_strade": "flags.brancalonia-bigat.stradeVantaggio = true"

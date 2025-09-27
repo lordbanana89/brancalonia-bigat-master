@@ -11,7 +11,7 @@
     ],
     "privilegio": {
       "nome": "Dimestichezza Selvatica",
-      "descrizione": "Può guidare se stesso e fino ad altre cinque persone attraverso territori selvaggi senza attirare bestie ostili."
+      "descrizione": "Puoi guidare te stesso e fino a cinque compagni attraverso terre selvagge senza attirare bestie ostili, ma non influenza gli incontri con NPC, mostri e costrutti."
     }
   },
   "meccaniche": {
@@ -42,10 +42,10 @@
     },
     "privilegio_dimestichezza_selvatica": {
       "tipo": "attivo",
-      "descrizione": "Lui +5 persone possono attraversare territori selvaggi senza incontrare bestie ostili",
+      "descrizione": "Può guidare se stesso e fino a 5 compagni attraverso terre selvagge senza attirare bestie ostili (non influenza NPC, mostri, costrutti)",
       "implementazione": "flags.brancalonia-bigat.dimestichezzaSelvatica = true",
       "mode": 5,
-      "nota": "Influenza solo incontri con bestie, non altri tipi"
+      "nota": "Influenza solo incontri con bestie, NON con NPC, mostri o costrutti"
     }
   },
   "dettagli": {

@@ -39,7 +39,7 @@
     },
     "privilegio_rissaiolo": {
       "tipo": "attivo",
-      "descrizione": "Ottiene 1 slot mossa aggiuntivo",
+      "descrizione": "Ottiene 1 slot mossa aggiuntivo nelle Risse",
       "implementazione": "flags.brancalonia-bigat.mosseRissa = 1",
       "mode": 2
     }

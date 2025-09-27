@@ -1,0 +1,234 @@
+<form class="brancalonia-quick-edit">
+  <div class="form-group">
+    <label>Nome</label>
+    <input type="text" name="name" value="{{document.name}}" />
+  </div>
+
+  {{#if document.img}}
+  <div class="form-group">
+    <label>Immagine</label>
+    <input type="text" name="img" value="{{document.img}}" />
+    <button type="button" class="file-picker" data-type="image" data-target="img" title="Sfoglia File">
+      <i class="fas fa-file-import"></i>
+    </button>
+  </div>
+  {{/if}}
+
+  {{#if isItem}}
+    {{#if (eq document.type "weapon")}}
+    <div class="form-group">
+      <label>Danno</label>
+      <input type="text" name="system.damage.parts.0.0" value="{{document.system.damage.parts.[0].[0]}}" placeholder="1d6" />
+      <select name="system.damage.parts.0.1">
+        {{#select document.system.damage.parts.[0].[1]}}
+        <option value="">Nessuno</option>
+        <option value="slashing">Taglio</option>
+        <option value="piercing">Perforante</option>
+        <option value="bludgeoning">Contundente</option>
+        {{/select}}
+      </select>
+    </div>
+    {{/if}}
+
+    {{#if (or (eq document.type "weapon") (eq document.type "equipment") (eq document.type "consumable"))}}
+    <div class="form-group">
+      <label>Prezzo (du)</label>
+      <input type="number" name="system.price.value" value="{{document.system.price.value}}" />
+    </div>
+
+    <div class="form-group">
+      <label>Peso</label>
+      <input type="number" name="system.weight" value="{{document.system.weight}}" step="0.1" />
+    </div>
+
+    <div class="form-group">
+      <label>Rarità</label>
+      <select name="system.rarity">
+        {{#select document.system.rarity}}
+        <option value="">Comune</option>
+        <option value="uncommon">Non Comune</option>
+        <option value="rare">Raro</option>
+        <option value="veryRare">Molto Raro</option>
+        <option value="legendary">Leggendario</option>
+        {{/select}}
+      </select>
+    </div>
+    {{/if}}
+
+    {{#if (eq document.type "spell")}}
+    <div class="form-group">
+      <label>Livello</label>
+      <select name="system.level">
+        {{#select document.system.level}}
+        <option value="0">Trucchetto</option>
+        <option value="1">1° Livello</option>
+        <option value="2">2° Livello</option>
+        <option value="3">3° Livello</option>
+        <option value="4">4° Livello</option>
+        <option value="5">5° Livello</option>
+        <option value="6">6° Livello</option>
+        <option value="7">7° Livello</option>
+        <option value="8">8° Livello</option>
+        <option value="9">9° Livello</option>
+        {{/select}}
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Scuola</label>
+      <select name="system.school">
+        {{#select document.system.school}}
+        <option value="abj">Abiurazione</option>
+        <option value="con">Evocazione</option>
+        <option value="div">Divinazione</option>
+        <option value="enc">Ammaliamento</option>
+        <option value="evo">Invocazione</option>
+        <option value="ill">Illusione</option>
+        <option value="nec">Necromanzia</option>
+        <option value="trs">Trasmutazione</option>
+        {{/select}}
+      </select>
+    </div>
+    {{/if}}
+
+    {{#if (eq document.type "feat")}}
+    <div class="form-group">
+      <label>Prerequisiti</label>
+      <input type="text" name="system.prerequisites.value" value="{{document.system.prerequisites.value}}" />
+    </div>
+    {{/if}}
+  {{/if}}
+
+  {{#if isActor}}
+    {{#if (eq document.type "npc")}}
+    <div class="form-group">
+      <label>Grado Sfida</label>
+      <input type="number" name="system.details.cr" value="{{document.system.details.cr}}" step="0.25" />
+    </div>
+
+    <div class="form-group">
+      <label>Tipo</label>
+      <input type="text" name="system.details.type.value" value="{{document.system.details.type.value}}" />
+    </div>
+
+    <div class="form-group">
+      <label>Allineamento</label>
+      <input type="text" name="system.details.alignment" value="{{document.system.details.alignment}}" />
+    </div>
+
+    <div class="form-group">
+      <label>PF</label>
+      <input type="number" name="system.attributes.hp.max" value="{{document.system.attributes.hp.max}}" />
+      <input type="text" name="system.attributes.hp.formula" value="{{document.system.attributes.hp.formula}}" placeholder="Formula dadi" />
+    </div>
+
+    <div class="form-group">
+      <label>CA</label>
+      <input type="number" name="system.attributes.ac.flat" value="{{document.system.attributes.ac.flat}}" />
+    </div>
+    {{/if}}
+
+    {{#if (eq document.type "character")}}
+    <div class="form-group">
+      <label>Livello</label>
+      <input type="number" name="system.details.level.value" value="{{document.system.details.level.value}}" min="1" max="20" />
+    </div>
+
+    <div class="form-group">
+      <label>Razza</label>
+      <input type="text" name="system.details.race" value="{{document.system.details.race}}" />
+    </div>
+
+    <div class="form-group">
+      <label>Background</label>
+      <input type="text" name="system.details.background" value="{{document.system.details.background}}" />
+    </div>
+    {{/if}}
+  {{/if}}
+
+  {{#if isJournal}}
+  <div class="form-group">
+    <label>Contenuto</label>
+    <textarea name="content.content" rows="10">{{document.pages.[0].text.content}}</textarea>
+  </div>
+  {{/if}}
+
+  <div class="form-group">
+    <label>Descrizione</label>
+    <textarea name="system.description.value" rows="5">{{document.system.description.value}}</textarea>
+  </div>
+
+  {{#if document.flags.brancalonia}}
+  <hr>
+  <h3>Dati Brancalonia</h3>
+
+  {{#if document.flags.brancalonia.infamia}}
+  <div class="form-group">
+    <label>Infamia</label>
+    <input type="number" name="flags.brancalonia.infamia" value="{{document.flags.brancalonia.infamia}}" />
+  </div>
+  {{/if}}
+
+  {{#if document.flags.brancalonia.scadente}}
+  <div class="form-group">
+    <label>
+      <input type="checkbox" name="flags.brancalonia.scadente" {{checked document.flags.brancalonia.scadente}} />
+      Oggetto Scadente
+    </label>
+  </div>
+  {{/if}}
+
+  {{#if document.flags.brancalonia.menagramo}}
+  <div class="form-group">
+    <label>Livello Menagramo</label>
+    <input type="number" name="flags.brancalonia.menagramo" value="{{document.flags.brancalonia.menagramo}}" min="0" max="5" />
+  </div>
+  {{/if}}
+  {{/if}}
+</form>
+
+<style>
+  .brancalonia-quick-edit {
+    padding: 10px;
+  }
+
+  .brancalonia-quick-edit .form-group {
+    margin-bottom: 10px;
+  }
+
+  .brancalonia-quick-edit label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #B87333;
+  }
+
+  .brancalonia-quick-edit input,
+  .brancalonia-quick-edit select,
+  .brancalonia-quick-edit textarea {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #B8985A;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .brancalonia-quick-edit textarea {
+    resize: vertical;
+    font-family: inherit;
+  }
+
+  .brancalonia-quick-edit hr {
+    margin: 15px 0;
+    border-color: #B8985A;
+  }
+
+  .brancalonia-quick-edit h3 {
+    color: #8B2635;
+    margin-bottom: 10px;
+  }
+
+  .brancalonia-quick-edit .file-picker {
+    width: auto;
+    margin-left: 5px;
+  }
+</style>
