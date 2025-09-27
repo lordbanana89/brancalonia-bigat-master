@@ -197,13 +197,25 @@ Hooks.once("ready", () => {
 
   deprecatedHooks.forEach(hookName => {
     // Log se trovati hook deprecati
-    if (Hooks._hooks[hookName]?.length > 0) {
-      console.warn(`⚠️ Found deprecated hook: ${hookName}. Consider updating to new API.`);
+    try {
+      // Verifica che _hooks esista e sia un oggetto
+      if (Hooks._hooks && typeof Hooks._hooks === 'object' && Hooks._hooks[hookName]?.length > 0) {
+        console.warn(`⚠️ Found deprecated hook: ${hookName}. Consider updating to new API.`);
+      }
+    } catch (error) {
+      // Ignora errori - potrebbe non esistere in v13
+      console.log(`📝 Hook ${hookName} check skipped (not available in this version)`);
     }
   });
 
   // Applica theme class se necessario
-  if (game.settings.get("brancalonia-bigat", "enableTheme")) {
+  try {
+    if (game.settings.get("brancalonia-bigat", "enableTheme")) {
+      document.body.classList.add("theme-brancalonia");
+    }
+  } catch (error) {
+    // Setting potrebbe non esistere, applica theme di default
+    console.log("📝 Theme setting not found, applying default theme");
     document.body.classList.add("theme-brancalonia");
   }
 });
