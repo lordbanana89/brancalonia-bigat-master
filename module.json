@@ -39,13 +39,13 @@
     ]
   },
   "esmodules": [
+    "modules/brancalonia-polygon-fix.js",
     "modules/brancalonia-theme.mjs",
     "modules/brancalonia-compat-fix.js",
     "modules/brancalonia-init.js",
     "modules/brancalonia-config-fix.js",
     "modules/brancalonia-tooltip-override.js",
     "modules/brancalonia-suppress-warnings-simple.js",
-    "modules/brancalonia-polygon-fix.js",
     "modules/brancalonia-active-effects.js",
     "modules/brancalonia-active-effects-complete.js",
     "modules/brancalonia-conditions.js",
