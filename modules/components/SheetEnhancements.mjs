@@ -29,7 +29,7 @@ export class SheetEnhancements {
   static applyStyles() {
     const css = `
       .brancalonia-sheet-theme .sheet {
-        background-image: url("modules/brancalonia-bigat/assets/artwork/pergamena-bg.webp");
+        background-image: url("modules/brancalonia-bigat/assets/artwork/fond.webp");
         background-size: cover;
         background-position: center;
       }

@@ -278,7 +278,9 @@ Hooks.on("updateItem", async (item, changes, options, userId) => {
 Hooks.on("renderItemSheet5e", (app, html, data) => {
     const item = app.object;
 
-    if (item.flags?.brancalonia?.categoria !== "cimelo") return;
+    // Check if item exists and has flags
+    if (!item || !item.flags?.brancalonia?.categoria) return;
+    if (item.flags.brancalonia.categoria !== "cimelo") return;
 
     // Mostra info cimelo
     const cimeloInfo = `
