@@ -170,17 +170,13 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
 
   static async resetColor(event, target) {
     const button = target;
+    const colorKey = button.dataset.color;
     const colorInput = button.parentElement.querySelector('input[type="color"]');
     const textInput = button.parentElement.querySelector('input[type="text"]');
-    const field = textInput.getAttribute('name');
     const defaultTheme = THEMES.default;
 
-    // Estrai il valore di default
-    const keys = field.replace('theme.', '').split('.');
-    let defaultValue = defaultTheme;
-    for (const key of keys) {
-      defaultValue = defaultValue[key];
-    }
+    // Estrai il valore di default usando il data-color
+    const defaultValue = defaultTheme.colors[colorKey] || '#000000';
 
     // Aggiorna entrambi gli input
     textInput.value = defaultValue;
