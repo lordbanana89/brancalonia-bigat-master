@@ -64,45 +64,6 @@
   };
 })();
 
-// Hook per gestire il rendering delle immagini nel DOM
-Hooks.once('init', () => {
-  // Override del metodo enrichHTML per intercettare le immagini prima del rendering
-  const originalEnrichHTML = TextEditor.enrichHTML;
-  TextEditor.enrichHTML = function(content, options = {}) {
-    // Prima elabora normalmente
-    let enriched = originalEnrichHTML.call(this, content, options);
-
-    // Verifica che enriched sia una stringa prima di fare replace
-    if (typeof enriched === 'string') {
-      // Poi sostituisci le immagini problematiche
-      enriched = enriched.replace(
-        /src="[^"]*breastplate-metal-copper\.webp"/gi,
-        'src="icons/svg/shield.svg"'
-      );
-      enriched = enriched.replace(
-        /src="[^"]*breastplate-steel\.webp"/gi,
-        'src="icons/svg/shield.svg"'
-      );
-      enriched = enriched.replace(
-        /src="[^"]*chainmail\.webp"/gi,
-        'src="icons/svg/shield.svg"'
-      );
-      enriched = enriched.replace(
-        /src="[^"]*leather\.webp"/gi,
-        'src="icons/svg/shield.svg"'
-      );
-      enriched = enriched.replace(
-        /src="[^"]*equipment\/chest\/[^"]+\.webp"/gi,
-        'src="icons/svg/shield.svg"'
-      );
-    }
-
-    return enriched;
-  };
-
-  console.log('Brancalonia | Override enrichHTML completato');
-});
-
 // Hook aggiornato per Foundry v13
 Hooks.on('renderChatMessageHTML', (message, html, data) => {
   // html è ora un HTMLElement
@@ -133,7 +94,7 @@ Hooks.on('renderChatMessageHTML', (message, html, data) => {
 
 // Hook per intercettare la creazione di documenti con immagini
 Hooks.on('preCreateChatMessage', (document, data, options, userId) => {
-  if (data.content) {
+  if (data.content && typeof data.content === 'string') {
     // Sostituisci le immagini problematiche nel contenuto
     data.content = data.content.replace(
       /src="[^"]*breastplate-metal-copper\.webp"/gi,
@@ -147,6 +108,27 @@ Hooks.on('preCreateChatMessage', (document, data, options, userId) => {
       /src="[^"]*equipment\/chest\/[^"]+\.webp"/gi,
       'src="icons/svg/shield.svg"'
     );
+  }
+});
+
+// Hook per gestire le immagini in altri contesti
+Hooks.on('renderApplication', (app, html, data) => {
+  // Converti jQuery a HTMLElement se necessario
+  const element = html[0] || html;
+  if (element instanceof HTMLElement) {
+    const images = element.querySelectorAll('img[src*="equipment/chest"]');
+
+    images.forEach(img => {
+      if (!img.dataset.fallbackApplied && img.onerror === null) {
+        img.onerror = function() {
+          if (!this.dataset.fallbackApplied) {
+            this.dataset.fallbackApplied = 'true';
+            this.src = 'icons/svg/shield.svg';
+            this.onerror = null;
+          }
+        };
+      }
+    });
   }
 });
 
