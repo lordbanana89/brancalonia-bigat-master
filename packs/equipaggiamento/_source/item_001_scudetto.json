@@ -33,7 +33,7 @@
       "dex": null,
       "magicalBonus": 0
     },
-    "strength": null,
+    "strength": 0,
     "stealth": false,
     "proficient": true,
     "properties": {},
