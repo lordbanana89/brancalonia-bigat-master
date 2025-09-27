@@ -11,7 +11,7 @@
 - Tutti i pack sono completamente funzionanti
 - Nessun errore di compilazione
 
-### 🛠️ CORREZIONI APPLICATE (v3.27.0)
+### 🛠️ CORREZIONI APPLICATE (v3.32.0)
 - **1175 file** con formato _key corretto (!items! → !item!)
 - **302 duplicati** rimossi dai pack
 - **424 fix automatici** applicati dagli agent
@@ -22,6 +22,8 @@
 - **Fix Immagini 404**: Fallback automatico per immagini mancanti
 - **Fix Polygon Lighting**: Soppressione warning out of bounds
 - **Fix Hook Deprecati**: Aggiornamento a renderChatMessageHTML
+- **Fix CSS Unificato**: Tema pergamena rinascimentale applicato a tutti gli elementi
+- **Fix Visibilità Icone**: Correzione completa display icone Font Awesome
 
 ### 📈 TEST REPORT
 - Test eseguiti: **2519**
