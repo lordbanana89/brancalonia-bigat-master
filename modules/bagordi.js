@@ -298,8 +298,7 @@ export class BagordiSystem {
 }
 
 // Hook per aggiungere il sistema ai personaggi
-Hooks.on("renderActorSheetV2", (app, html, data) => {
-  if (app.actor.type !== "character") return;
+Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
 
   // Converti html in jQuery object per Foundry v13
   const $html = $(html);

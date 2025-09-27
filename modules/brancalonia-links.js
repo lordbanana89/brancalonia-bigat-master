@@ -64,7 +64,7 @@ function registerRuleClickHandlers() {
 /**
  * Hook per migliorare la visualizzazione degli item con riferimenti alle regole
  */
-Hooks.on('renderItemSheet', (app, html, data) => {
+Hooks.on('renderItemSheet5e', (app, html, data) => {
   // Aggiungi stile CSS per i tag delle regole
   if (!document.querySelector('#brancalonia-rule-tags-style')) {
     const style = document.createElement('style');

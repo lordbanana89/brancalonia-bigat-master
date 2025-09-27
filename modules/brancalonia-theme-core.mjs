@@ -13,7 +13,7 @@ import { GeneralUtil } from './utils/GeneralUtil.mjs';
 export const HOOKS_CORE = {
   INIT: 'init',
   READY: 'ready',
-  RENDER_CHAT_MESSAGE: 'renderChatMessage',
+  RENDER_CHAT_MESSAGE: 'renderChatMessageHTML',  // v13+ hook
   RENDER_SCENE_CONTROLS: 'renderSceneControls',
   RENDER_PLAYERS_LIST: 'renderPlayersList',
   RENDER_HOTBAR: 'renderHotbar',

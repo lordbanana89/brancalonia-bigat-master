@@ -63,7 +63,9 @@ export class ChatEnhancements {
     // Add player color border
     const message = game.messages.get(messageElement.dataset.messageId);
     if (message) {
-      const user = game.users.get(message.user);
+      // Use 'author' for v12+ compatibility
+      const userId = message.author || message.user;
+      const user = game.users.get(userId);
       if (user?.color) {
         messageElement.style.setProperty('--player-color', user.color);
         messageElement.classList.add('player-colored');
@@ -273,11 +275,14 @@ export class ChatEnhancements {
   }
 
   /**
-   * Handle message render hook
+   * Handle message render hook (v13+ HTMLElement)
    */
   static onRenderMessage(message, html, data) {
-    const messageElement = html[0] || html;
-    this.enhanceMessage(messageElement);
+    // v13+ passes HTMLElement directly
+    const messageElement = html instanceof HTMLElement ? html : html[0];
+    if (messageElement) {
+      this.enhanceMessage(messageElement);
+    }
   }
 
   /**
