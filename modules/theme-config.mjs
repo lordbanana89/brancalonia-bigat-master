@@ -6,6 +6,7 @@
 import { Theme } from './theme.mjs';
 import { MODULE, THEMES } from './settings.mjs';
 
+// Usa FormApplication V1 per compatibilità, ma con fix per deprecazioni
 export class ThemeConfig extends FormApplication {
   constructor(options = {}) {
     super(options);
@@ -13,7 +14,8 @@ export class ThemeConfig extends FormApplication {
   }
 
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    // Usa foundry.utils.mergeObject invece del globale
+    return foundry.utils.mergeObject(super.defaultOptions, {
       id: 'brancalonia-theme-config',
       title: 'Configurazione Tema Brancalonia',
       template: 'modules/brancalonia-bigat/templates/theme-config.hbs',
@@ -37,10 +39,13 @@ export class ThemeConfig extends FormApplication {
   activateListeners(html) {
     super.activateListeners(html);
 
+    // Converti jQuery a vanilla JS dove possibile
+    const element = html[0] || html;
+
     // Carica preset
-    html.find('.load-preset').click(ev => {
-      const preset = html.find('#preset-select').val();
-      if (THEMES[preset]) {
+    element.querySelector('.load-preset')?.addEventListener('click', ev => {
+      const preset = element.querySelector('#preset-select')?.value;
+      if (preset && THEMES[preset]) {
         this.theme = THEMES[preset];
         this.render();
         ui.notifications.info(`Tema ${preset} caricato`);
@@ -48,14 +53,14 @@ export class ThemeConfig extends FormApplication {
     });
 
     // Esporta tema
-    html.find('.export-theme').click(ev => {
+    element.querySelector('.export-theme')?.addEventListener('click', ev => {
       const theme = Theme.from(this.theme);
       theme.exportToJson();
       ui.notifications.info('Tema esportato');
     });
 
     // Importa tema
-    html.find('.import-theme').click(async ev => {
+    element.querySelector('.import-theme')?.addEventListener('click', async ev => {
       const theme = await Theme.importFromJSONDialog();
       if (theme) {
         this.theme = theme;
@@ -64,12 +69,12 @@ export class ThemeConfig extends FormApplication {
       }
     });
 
-    // Anteprima live
+    // Anteprima live con jQuery per compatibilità
     html.find('input[type="color"]').on('input', ev => {
       this._updatePreview();
     });
 
-    // Reset colore
+    // Reset colore con jQuery
     html.find('.reset-color').click(ev => {
       const input = $(ev.currentTarget).siblings('input');
       const field = input.attr('name');
@@ -108,3 +113,35 @@ export class ThemeConfig extends FormApplication {
     ui.notifications.success('Tema salvato e applicato');
   }
 }
+
+// Nota per futuro: Quando Foundry v16 rimuoverà V1, considera la migrazione a:
+// export class ThemeConfigV2 extends foundry.applications.api.ApplicationV2 {
+//   static DEFAULT_OPTIONS = {
+//     id: "brancalonia-theme-config",
+//     title: "Configurazione Tema Brancalonia",
+//     tag: "form",
+//     form: {
+//       handler: ThemeConfigV2.formHandler,
+//       submitOnChange: false,
+//       closeOnSubmit: true
+//     },
+//     window: {
+//       icon: "fas fa-palette",
+//       resizable: true
+//     },
+//     position: {
+//       width: 600,
+//       height: "auto"
+//     }
+//   };
+//
+//   static PARTS = {
+//     form: {
+//       template: "modules/brancalonia-bigat/templates/theme-config.hbs"
+//     }
+//   };
+//
+//   static async formHandler(event, form, formData) {
+//     // Gestione form
+//   }
+// }
