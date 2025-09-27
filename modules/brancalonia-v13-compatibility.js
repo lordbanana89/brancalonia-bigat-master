@@ -79,6 +79,14 @@ console.warn = function(...args) {
     if (message.includes("You are accessing the global") &&
         (message.includes("CompendiumCollection") ||
          message.includes("TextEditor") ||
+         message.includes("SceneNavigation") ||
+         message.includes("Token") ||
+         message.includes("ClientSettings") ||
+         message.includes("JournalTextPageSheet") ||
+         message.includes("Canvas") ||
+         message.includes("WallsLayer") ||
+         message.includes("loadTemplates") ||
+         message.includes("renderTemplate") ||
          message.includes("game.actors") ||
          message.includes("game.items") ||
          message.includes("game.journal") ||
