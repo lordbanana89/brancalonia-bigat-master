@@ -24,19 +24,24 @@ const CATEGORY_FALLBACKS = {
 
 // Intercetta errori di caricamento immagini
 function setupImageErrorHandling() {
-    // Usa il namespace corretto per Foundry v13
-    const TextEditorClass = foundry.applications.ux?.TextEditor?.implementation || TextEditor;
+    // Usa SOLO il namespace v13, senza fallback al global deprecato
+    const TextEditorClass = foundry?.applications?.ux?.TextEditor?.implementation;
 
-    // Override del metodo enrichHTML per sostituire immagini mancanti
-    const originalEnrichHTML = TextEditorClass.enrichHTML;
-    TextEditorClass.enrichHTML = function(content, options = {}) {
-        // Sostituisci riferimenti a immagini mancanti nel contenuto
-        if (content && typeof content === 'string') {
-            content = content.replace(/breastplate-metal-copper\.webp/g, 'shield.svg');
-            content = content.replace(/breastplate-steel\.webp/g, 'shield.svg');
+    // Solo se esiste il TextEditor nel nuovo namespace
+    if (TextEditorClass) {
+        // Override del metodo enrichHTML per sostituire immagini mancanti
+        const originalEnrichHTML = TextEditorClass.enrichHTML;
+        if (originalEnrichHTML) {
+            TextEditorClass.enrichHTML = function(content, options = {}) {
+                // Sostituisci riferimenti a immagini mancanti nel contenuto
+                if (content && typeof content === 'string') {
+                    content = content.replace(/breastplate-metal-copper\.webp/g, 'shield.svg');
+                    content = content.replace(/breastplate-steel\.webp/g, 'shield.svg');
+                }
+                return originalEnrichHTML.call(this, content, options);
+            };
         }
-        return originalEnrichHTML.call(this, content, options);
-    };
+    }
 
     // Gestisci errori di caricamento immagini nel DOM
     document.addEventListener('error', function(event) {
