@@ -16,6 +16,9 @@
 /* Design Tokens e Variabili */
 @import url('./tokens.css');
 
+/* CRITICAL: Fix icone Font Awesome - DEVE essere caricato per primo */
+@import url('./brancalonia-icons-fix.css');
+
 /* Stili principali con scope .theme-brancalonia */
 @import url('./brancalonia-main.css');
 
