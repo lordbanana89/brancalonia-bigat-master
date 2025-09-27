@@ -10,79 +10,7 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
 // FIX IMMEDIATI PER MODULI PROBLEMATICI
 // ============================================
 
-// FIX IMMEDIATO PER TIDBITS - offsetWidth su elemento null
-(function() {
-  console.log("🚨 Pre-emptive fix for Tidbits loading screen");
-
-  // Hook immediato per creare elementi che Tidbits si aspetta
-  Hooks.once("init", () => {
-    // Override showLoadingScreen per prevenire errori
-    if (typeof ui !== 'undefined') {
-      const originalShowLoadingScreen = ui.showLoadingScreen;
-
-      ui.showLoadingScreen = function(show = true) {
-        try {
-          // Se Tidbits è attivo, assicurati che gli elementi esistano
-          if (game.modules.get("tidbits")?.active) {
-            // Crea loading screen element se non esiste
-            let loadingScreen = document.getElementById("loading");
-            if (!loadingScreen) {
-              console.warn("🏗️ Creating #loading element for Tidbits");
-              loadingScreen = document.createElement('div');
-              loadingScreen.id = 'loading';
-              loadingScreen.style.cssText = 'display:block;width:100%;height:100%;position:fixed;top:0;left:0;z-index:99999;background:rgba(0,0,0,0.5);';
-              document.body.appendChild(loadingScreen);
-            }
-
-            // Crea loading-bar se non esiste
-            let loadingBar = document.getElementById("loading-bar");
-            if (!loadingBar) {
-              console.warn("🏗️ Creating #loading-bar element for Tidbits");
-              loadingBar = document.createElement('div');
-              loadingBar.id = 'loading-bar';
-              loadingBar.style.cssText = 'width:50%;height:4px;background:#C9A54A;position:absolute;top:50%;left:25%;';
-              if (loadingScreen) {
-                loadingScreen.appendChild(loadingBar);
-              } else {
-                document.body.appendChild(loadingBar);
-              }
-            }
-
-            // Assicurati che abbiano offsetWidth forzando un reflow
-            if (loadingScreen) {
-              loadingScreen.style.display = 'block';
-              // Forza reflow per garantire offsetWidth
-              void loadingScreen.offsetWidth;
-            }
-          }
-
-          // Chiama l'originale se esiste
-          if (originalShowLoadingScreen) {
-            return originalShowLoadingScreen.call(this, show);
-          }
-        } catch (e) {
-          console.error("❌ Error in Tidbits showLoadingScreen:", e);
-        }
-        return Promise.resolve();
-      };
-
-      // Override hideLoadingScreen
-      ui.hideLoadingScreen = function() {
-        try {
-          const loadingScreen = document.getElementById("loading");
-          if (loadingScreen) {
-            loadingScreen.style.display = 'none';
-          }
-        } catch (e) {
-          console.error("❌ Error in Tidbits hideLoadingScreen:", e);
-        }
-        return Promise.resolve();
-      };
-
-      console.log("✅ Tidbits loading screen methods wrapped");
-    }
-  });
-})();
+// Tidbits rimosso - non più necessario
 
 // FIX IMMEDIATO PER EPIC ROLLS 5E - DEVE essere fatto PRIMA di tutto
 (function() {
@@ -260,39 +188,7 @@ Hooks.once("init", () => {
 
 function checkAndFixOtherModules() {
   const incompatibleModules = [
-    {
-      id: "tidbits",
-      name: "Tidbits",
-      fix: () => {
-        console.log("🔧 Tidbits - Additional compatibility checks");
-
-        // Assicurati che gli elementi del DOM esistano
-        Hooks.once("ready", () => {
-          // Verifica loading screen
-          if (!document.getElementById("loading")) {
-            console.warn("⚠️ Tidbits: Loading screen missing at ready");
-            const loading = document.createElement('div');
-            loading.id = 'loading';
-            loading.style.display = 'none';
-            document.body.appendChild(loading);
-          }
-
-          // Verifica loading bar
-          if (!document.getElementById("loading-bar")) {
-            console.warn("⚠️ Tidbits: Loading bar missing at ready");
-            const loadingBar = document.createElement('div');
-            loadingBar.id = 'loading-bar';
-            loadingBar.style.width = '0%';
-            const loading = document.getElementById("loading");
-            if (loading) {
-              loading.appendChild(loadingBar);
-            } else {
-              document.body.appendChild(loadingBar);
-            }
-          }
-        });
-      }
-    },
+// Tidbits rimosso - non serve più il fix
     {
       id: "drag-ruler",
       name: "Drag Ruler",
