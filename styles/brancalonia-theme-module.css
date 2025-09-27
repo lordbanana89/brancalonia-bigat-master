@@ -7,10 +7,10 @@
 .dnd5e.sheet.actor {
     /* Profile avatar styling with theme variables */
     & .sheet-header .profile {
-        border: 2px solid var(--pfu-color-control-border);
+        border: 2px solid var(--bcl-color-control-border);
         border-radius: 50%;
-        background: var(--pfu-color-app-image-fill);
-        box-shadow: 0 0 10px var(--pfu-color-app-control-shadow);
+        background: var(--bcl-color-app-image-fill);
+        box-shadow: 0 0 10px var(--bcl-color-app-control-shadow);
         overflow: hidden;
         position: relative;
 
@@ -21,7 +21,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: var(--pfu-color-app-image-fill);
+            background: var(--bcl-color-app-image-fill);
             opacity: 0.3;
             z-index: 0;
         }
@@ -34,29 +34,29 @@
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
-        background: var(--pfu-color-app-body-primary-fill);
+        background: var(--bcl-color-app-body-primary-fill);
     }
 
     /* Character name styling */
     & .sheet-header .charname {
         & input {
-            color: var(--pfu-color-app-header-content);
+            color: var(--bcl-color-app-header-content);
             background: transparent;
             border: none;
-            border-bottom: 2px solid var(--pfu-color-control-border);
+            border-bottom: 2px solid var(--bcl-color-control-border);
             text-align: center;
             font-weight: bold;
-            text-shadow: 1px 1px 2px var(--pfu-color-app-control-shadow);
+            text-shadow: 1px 1px 2px var(--bcl-color-app-control-shadow);
             font-size: 1.5rem;
 
             &:hover {
-                border-bottom-color: var(--pfu-color-control-highlight-border);
+                border-bottom-color: var(--bcl-color-control-highlight-border);
             }
 
             &:focus {
                 outline: none;
-                border-bottom-color: var(--pfu-color-control-active-border);
-                color: var(--pfu-color-control-active-content);
+                border-bottom-color: var(--bcl-color-control-active-border);
+                color: var(--bcl-color-control-active-content);
             }
         }
     }
@@ -64,26 +64,26 @@
     /* Attributes section */
     & .ability-scores {
         & .ability {
-            background: var(--pfu-color-control-fill);
-            border: 1px solid var(--pfu-color-control-border);
-            border-radius: var(--pfu-border-radius-medium);
+            background: var(--bcl-color-control-fill);
+            border: 1px solid var(--bcl-color-control-border);
+            border-radius: var(--bcl-border-radius-medium);
             transition: all 0.2s ease;
 
             &:hover {
-                background: var(--pfu-color-control-highlight-fill);
-                border-color: var(--pfu-color-control-highlight-border);
+                background: var(--bcl-color-control-highlight-fill);
+                border-color: var(--bcl-color-control-highlight-border);
                 transform: translateY(-2px);
-                box-shadow: 0 4px 8px var(--pfu-color-app-control-shadow);
+                box-shadow: 0 4px 8px var(--bcl-color-app-control-shadow);
             }
 
             & .ability-score {
-                color: var(--pfu-color-control-content);
+                color: var(--bcl-color-control-content);
                 font-weight: bold;
                 font-size: 1.2rem;
             }
 
             & .ability-mod {
-                color: var(--pfu-color-control-focus-content);
+                color: var(--bcl-color-control-focus-content);
             }
         }
     }
@@ -91,8 +91,8 @@
     /* HP/AC/Speed attributes */
     & .attributes {
         & .attribute {
-            background: var(--pfu-color-control-fill);
-            border: 2px solid var(--pfu-color-control-border);
+            background: var(--bcl-color-control-fill);
+            border: 2px solid var(--bcl-color-control-border);
             border-radius: 50%;
             width: 80px;
             height: 80px;
@@ -111,15 +111,15 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background: var(--pfu-color-control-highlight-fill);
+                background: var(--bcl-color-control-highlight-fill);
                 opacity: 0;
                 transition: opacity 0.3s;
             }
 
             &:hover {
                 transform: scale(1.1);
-                border-color: var(--pfu-color-control-highlight-border);
-                box-shadow: 0 0 15px var(--pfu-color-misc-shadow-highlight);
+                border-color: var(--bcl-color-control-highlight-border);
+                box-shadow: 0 0 15px var(--bcl-color-misc-shadow-highlight);
 
                 &::before {
                     opacity: 0.3;
@@ -131,7 +131,7 @@
                 z-index: 1;
                 font-size: 1.5rem;
                 font-weight: bold;
-                color: var(--pfu-color-control-focus-content);
+                color: var(--bcl-color-control-focus-content);
             }
 
             & .attribute-label {
@@ -139,7 +139,7 @@
                 z-index: 1;
                 font-size: 0.7rem;
                 text-transform: uppercase;
-                color: var(--pfu-color-control-content);
+                color: var(--bcl-color-control-content);
             }
         }
     }
@@ -148,8 +148,8 @@
 /* NPC sheets */
 .dnd5e.sheet.actor.npc {
     & .sheet-header .profile {
-        border-color: var(--pfu-color-app-control-border);
-        background: var(--pfu-color-app-control-fill);
+        border-color: var(--bcl-color-app-control-border);
+        background: var(--bcl-color-app-control-fill);
 
         &::after {
             content: '';
@@ -159,8 +159,8 @@
             right: -2px;
             bottom: -2px;
             background: linear-gradient(45deg,
-                var(--pfu-color-app-control-fill-1),
-                var(--pfu-color-app-control-fill-2));
+                var(--bcl-color-app-control-fill-1),
+                var(--bcl-color-app-control-fill-2));
             border-radius: 50%;
             z-index: -1;
         }
@@ -170,13 +170,13 @@
 /* Item sheets */
 .dnd5e.sheet.item {
     & .sheet-header .item-img {
-        border: 2px solid var(--pfu-color-control-border);
-        border-radius: var(--pfu-border-radius-medium);
-        background: var(--pfu-color-app-image-fill);
-        box-shadow: 0 2px 5px var(--pfu-color-app-control-shadow);
+        border: 2px solid var(--bcl-color-control-border);
+        border-radius: var(--bcl-border-radius-medium);
+        background: var(--bcl-color-app-image-fill);
+        box-shadow: 0 2px 5px var(--bcl-color-app-control-shadow);
 
         &:hover {
-            border-color: var(--pfu-color-control-highlight-border);
+            border-color: var(--bcl-color-control-highlight-border);
             transform: scale(1.05);
         }
     }
@@ -185,9 +185,9 @@
 /* Global Progress Clocks */
 #clock-panel {
 
-    --control-bg-color: var(--pfu-color-control-fill);
-    --control-icon-color: var(--pfu-color-control-content);
-    --control-border-color: var(--pfu-color-control-border);
+    --control-bg-color: var(--bcl-color-control-fill);
+    --control-icon-color: var(--bcl-color-control-content);
+    --control-border-color: var(--bcl-color-control-border);
 
 
     & .clock-display {
@@ -201,7 +201,7 @@
                 }
 
                 &:hover {
-                    text-shadow: 0 0 5px var(--pfu-color-misc-shadow-highlight);
+                    text-shadow: 0 0 5px var(--bcl-color-misc-shadow-highlight);
                 }
             }
 
@@ -209,10 +209,10 @@
     }
 
     & .clock-display.left .clock-entry::before {
-        border-radius: calc(var(--entry-height) / 2) var(--pfu-border-radius-medium) var(--pfu-border-radius-medium) calc(var(--entry-height) / 2);
+        border-radius: calc(var(--entry-height) / 2) var(--bcl-border-radius-medium) var(--bcl-border-radius-medium) calc(var(--entry-height) / 2);
     }
     & .clock-display:not(.left) .clock-entry::before {
-        border-radius: var(--pfu-border-radius-medium) calc(var(--entry-height) / 2) calc(var(--entry-height) / 2) var(--pfu-border-radius-medium);
+        border-radius: var(--bcl-border-radius-medium) calc(var(--entry-height) / 2) calc(var(--entry-height) / 2) var(--bcl-border-radius-medium);
     }
 
 
@@ -222,9 +222,9 @@
 
 /* Brancalonia specific UI elements */
 .brancalonia-infamia-tracker {
-    background: var(--pfu-color-app-control-fill);
-    border: 2px solid var(--pfu-color-control-active-border);
-    border-radius: var(--pfu-border-radius-medium);
+    background: var(--bcl-color-app-control-fill);
+    border: 2px solid var(--bcl-color-control-active-border);
+    border-radius: var(--bcl-border-radius-medium);
     padding: 1rem;
     margin: 0.5rem 0;
     position: relative;
@@ -238,8 +238,8 @@
         right: 0;
         bottom: 0;
         background: linear-gradient(135deg,
-            var(--pfu-color-control-active-fill-1),
-            var(--pfu-color-control-active-fill-2));
+            var(--bcl-color-control-active-fill-1),
+            var(--bcl-color-control-active-fill-2));
         opacity: 0.2;
         z-index: 0;
     }
@@ -252,14 +252,14 @@
     & .infamia-value {
         font-size: 1.5rem;
         font-weight: bold;
-        color: var(--pfu-color-control-active-content);
+        color: var(--bcl-color-control-active-content);
     }
 }
 
 .brancalonia-baraonda-tracker {
-    background: var(--pfu-color-app-control-fill);
-    border: 2px solid var(--pfu-color-control-highlight-border);
-    border-radius: var(--pfu-border-radius-medium);
+    background: var(--bcl-color-app-control-fill);
+    border: 2px solid var(--bcl-color-control-highlight-border);
+    border-radius: var(--bcl-border-radius-medium);
     padding: 1rem;
     margin: 0.5rem 0;
     position: relative;
@@ -273,8 +273,8 @@
         right: 0;
         bottom: 0;
         background: linear-gradient(135deg,
-            var(--pfu-color-control-highlight-fill-1),
-            var(--pfu-color-control-highlight-fill-2));
+            var(--bcl-color-control-highlight-fill-1),
+            var(--bcl-color-control-highlight-fill-2));
         opacity: 0.3;
         z-index: 0;
     }
@@ -287,6 +287,6 @@
     & .baraonda-level {
         font-size: 1.2rem;
         font-weight: bold;
-        color: var(--pfu-color-control-highlight-content);
+        color: var(--bcl-color-control-highlight-content);
     }
 }

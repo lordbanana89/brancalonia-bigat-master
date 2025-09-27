@@ -10,12 +10,12 @@
 .brancalonia-theme-config h3 {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--pfu-color-app-border);
+  border-bottom: 1px solid var(--bcl-color-app-border);
   padding-bottom: 0.5rem;
 }
 
 .brancalonia-theme-config .tabs {
-  border-bottom: 1px solid var(--pfu-color-app-border);
+  border-bottom: 1px solid var(--bcl-color-app-border);
   margin-bottom: 1rem;
   display: flex;
   gap: 1rem;
@@ -29,11 +29,11 @@
 }
 
 .brancalonia-theme-config .tabs .item:hover {
-  background: var(--pfu-color-misc-fill);
+  background: var(--bcl-color-misc-fill);
 }
 
 .brancalonia-theme-config .tabs .item.active {
-  border-bottom-color: var(--pfu-color-app-border);
+  border-bottom-color: var(--bcl-color-app-border);
   font-weight: bold;
 }
 
@@ -54,7 +54,7 @@
 .brancalonia-theme-config .color-input input[type="color"] {
   width: 50px;
   height: 30px;
-  border: 1px solid var(--pfu-color-app-border);
+  border: 1px solid var(--bcl-color-app-border);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -74,7 +74,7 @@
 
 .brancalonia-theme-config .notes {
   font-size: 0.85rem;
-  color: var(--pfu-color-app-body-content-secondary);
+  color: var(--bcl-color-app-body-content-secondary);
   margin-top: 0.25rem;
 }
 

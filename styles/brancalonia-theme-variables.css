@@ -16,55 +16,55 @@
 	--brancalonia-ink-light: #5A504A;
 
 	/* Control Elements - Bottoni e Controlli */
-	--pfu-color-control-content: var(--brancalonia-parchment-light);
-	--pfu-color-control-border: var(--brancalonia-gold-dark);
-	--pfu-color-control-focus-content: #FFFFFF;
-	--pfu-color-control-inactive-content: #D4C4A080;
-	--pfu-color-control-fill-1: #3A302866;
-	--pfu-color-control-fill-2: #5A504A66;
-	--pfu-color-control-fill: linear-gradient(180deg, var(--pfu-color-control-fill-1) 0%, var(--pfu-color-control-fill-2) 100%);
+	--bcl-color-control-content: var(--brancalonia-parchment-light);
+	--bcl-color-control-border: var(--brancalonia-gold-dark);
+	--bcl-color-control-focus-content: #FFFFFF;
+	--bcl-color-control-inactive-content: #D4C4A080;
+	--bcl-color-control-fill-1: #3A302866;
+	--bcl-color-control-fill-2: #5A504A66;
+	--bcl-color-control-fill: linear-gradient(180deg, var(--bcl-color-control-fill-1) 0%, var(--bcl-color-control-fill-2) 100%);
 
 	/* Control Highlight - Hover States */
-	--pfu-color-control-highlight-content: var(--brancalonia-terracotta);
-	--pfu-color-control-highlight-border: var(--brancalonia-terracotta);
-	--pfu-color-control-highlight-fill-1: var(--brancalonia-gold);
-	--pfu-color-control-highlight-fill-2: #D4AA6E;
-	--pfu-color-control-highlight-fill: linear-gradient(0deg, var(--pfu-color-control-highlight-fill-1) 0%, var(--pfu-color-control-highlight-fill-2) 100%);
+	--bcl-color-control-highlight-content: var(--brancalonia-terracotta);
+	--bcl-color-control-highlight-border: var(--brancalonia-terracotta);
+	--bcl-color-control-highlight-fill-1: var(--brancalonia-gold);
+	--bcl-color-control-highlight-fill-2: #D4AA6E;
+	--bcl-color-control-highlight-fill: linear-gradient(0deg, var(--bcl-color-control-highlight-fill-1) 0%, var(--bcl-color-control-highlight-fill-2) 100%);
 
 	/* Control Active - Stati Attivi */
-	--pfu-color-control-active-content: var(--brancalonia-gold);
-	--pfu-color-control-active-border: var(--brancalonia-gold);
-	--pfu-color-control-active-fill-1: #B87333CC;
-	--pfu-color-control-active-fill-2: #C9A961CC;
-	--pfu-color-control-active-fill: linear-gradient(0deg, var(--pfu-color-control-active-fill-1) 0%, var(--pfu-color-control-active-fill-2) 100%);
+	--bcl-color-control-active-content: var(--brancalonia-gold);
+	--bcl-color-control-active-border: var(--brancalonia-gold);
+	--bcl-color-control-active-fill-1: #B87333CC;
+	--bcl-color-control-active-fill-2: #C9A961CC;
+	--bcl-color-control-active-fill: linear-gradient(0deg, var(--bcl-color-control-active-fill-1) 0%, var(--bcl-color-control-active-fill-2) 100%);
 
 	/* Application Headers */
-	--pfu-color-app-header-content: var(--brancalonia-parchment-light);
-	--pfu-color-app-header-focus-content: #FFFFFF;
-	--pfu-color-app-header-fill-1: #8B26354D;
-	--pfu-color-app-header-fill-2: #7221294D;
-	--pfu-color-app-header-fill: linear-gradient(90deg, var(--pfu-color-app-header-fill-1) 0%, var(--pfu-color-app-header-fill-2) 100%);
+	--bcl-color-app-header-content: var(--brancalonia-parchment-light);
+	--bcl-color-app-header-focus-content: #FFFFFF;
+	--bcl-color-app-header-fill-1: #8B26354D;
+	--bcl-color-app-header-fill-2: #7221294D;
+	--bcl-color-app-header-fill: linear-gradient(90deg, var(--bcl-color-app-header-fill-1) 0%, var(--bcl-color-app-header-fill-2) 100%);
 
 	/* Application Body */
-	--pfu-color-app-body-content: var(--brancalonia-ink);
-	--pfu-color-app-body-content-secondary: var(--brancalonia-ink-light);
-	--pfu-color-app-body-primary-fill-1: #D4C4A0E6;
-	--pfu-color-app-body-primary-fill-2: #E8DCC0E6;
-	--pfu-color-app-body-primary-fill: linear-gradient(270deg, var(--pfu-color-app-body-primary-fill-1) 0%, var(--pfu-color-app-body-primary-fill-2) 100%);
-	--pfu-color-app-border: var(--brancalonia-gold-dark);
-	--pfu-color-app-name-section-content: var(--brancalonia-parchment-light);
-	--pfu-color-app-name-section-shadow: #00000099;
+	--bcl-color-app-body-content: var(--brancalonia-ink);
+	--bcl-color-app-body-content-secondary: var(--brancalonia-ink-light);
+	--bcl-color-app-body-primary-fill-1: #D4C4A0E6;
+	--bcl-color-app-body-primary-fill-2: #E8DCC0E6;
+	--bcl-color-app-body-primary-fill: linear-gradient(270deg, var(--bcl-color-app-body-primary-fill-1) 0%, var(--bcl-color-app-body-primary-fill-2) 100%);
+	--bcl-color-app-border: var(--brancalonia-gold-dark);
+	--bcl-color-app-name-section-content: var(--brancalonia-parchment-light);
+	--bcl-color-app-name-section-shadow: #00000099;
 
 	/* Misc Colors */
-	--pfu-color-misc-border: var(--brancalonia-gold-dark);
-	--pfu-color-misc-fill: #D4C4A04D;
-	--pfu-color-misc-fill-primary: #3A302833;
-	--pfu-color-misc-fill-secondary: #B8985A1A;
-	--pfu-color-misc-inactive-content: #5A504A80;
-	--pfu-color-misc-shadow-highlight: var(--brancalonia-gold);
-	--pfu-color-misc-link-idle: var(--brancalonia-terracotta);
-	--pfu-color-misc-link-focus: var(--brancalonia-wine);
-	--pfu-color-misc-reroll: var(--brancalonia-wine);
+	--bcl-color-misc-border: var(--brancalonia-gold-dark);
+	--bcl-color-misc-fill: #D4C4A04D;
+	--bcl-color-misc-fill-primary: #3A302833;
+	--bcl-color-misc-fill-secondary: #B8985A1A;
+	--bcl-color-misc-inactive-content: #5A504A80;
+	--bcl-color-misc-shadow-highlight: var(--brancalonia-gold);
+	--bcl-color-misc-link-idle: var(--brancalonia-terracotta);
+	--bcl-color-misc-link-focus: var(--brancalonia-wine);
+	--bcl-color-misc-reroll: var(--brancalonia-wine);
 
 	/* D&D 5e Specific Overrides */
 	--color-border-dark: var(--brancalonia-gold-dark);
@@ -76,9 +76,9 @@
 	--color-shadow-primary: #00000066;
 
 	/* Border Radius */
-	--pfu-border-radius-small: 4px;
-	--pfu-border-radius-medium: 8px;
-	--pfu-border-radius-large: 12px;
+	--bcl-border-radius-small: 4px;
+	--bcl-border-radius-medium: 8px;
+	--bcl-border-radius-large: 12px;
 
 	/* Font Families - Stile Rinascimentale */
 	--font-primary: "Modesto Condensed", "Palatino Linotype", serif;
@@ -90,6 +90,6 @@
 	--brancalonia-parchment-light: #3A3028;
 	--brancalonia-parchment: #2A2420;
 	--brancalonia-parchment-dark: #1A1612;
-	--pfu-color-app-body-content: #E8DCC0;
-	--pfu-color-app-body-content-secondary: #C4B490;
+	--bcl-color-app-body-content: #E8DCC0;
+	--bcl-color-app-body-content-secondary: #C4B490;
 }
