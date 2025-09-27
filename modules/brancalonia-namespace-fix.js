@@ -6,9 +6,24 @@
  * SOLUZIONE: Crea alias globali per retrocompatibilità
  */
 
-// Applica fix solo se siamo in Foundry v13+
-Hooks.once("init", () => {
-  const coreVersion = game.version || game.data.version;
+// Applica fix IMMEDIATAMENTE, non aspettare l'hook init
+// perché alcuni moduli accedono ai namespace prima di init
+(function() {
+  // Controlla se game esiste
+  if (typeof game === 'undefined' || !game) {
+    // Se game non esiste ancora, registra per init
+    if (typeof Hooks !== 'undefined') {
+      Hooks.once("init", applyNamespaceFixes);
+    }
+    return;
+  }
+
+  // Se game esiste, applica subito
+  applyNamespaceFixes();
+})();
+
+function applyNamespaceFixes() {
+  const coreVersion = game?.version || game?.data?.version || "0";
 
   // Verifica se siamo in v13+
   if (!foundry.utils.isNewerVersion(coreVersion, "13.0.0") && coreVersion !== "13.0.0") {
@@ -128,7 +143,10 @@ Hooks.once("init", () => {
   }
 
   console.log(`🎯 Namespace fixes applied: ${fixedCount} aliases created, ${skippedCount} skipped`);
-});
+}
+
+// Applica anche all'init per sicurezza
+Hooks.once("init", applyNamespaceFixes);
 
 /**
  * Hook per intercettare e fixare chiamate a funzioni deprecate

@@ -96,6 +96,7 @@ console.warn = function(...args) {
          message.includes("CardDeckConfig") ||
          message.includes("JournalTextPageSheet") ||
          message.includes("Canvas") ||
+         message.includes("ControlsLayer") ||
          message.includes("WallsLayer") ||
          message.includes("loadTemplates") ||
          message.includes("renderTemplate") ||
