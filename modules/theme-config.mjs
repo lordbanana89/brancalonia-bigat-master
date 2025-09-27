@@ -79,14 +79,30 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
     if (tabLink) tabLink.classList.add('active');
     if (tabContent) tabContent.classList.add('active');
 
-    // Setup color input handlers
+    // Setup color input handlers per sincronizzazione
     const html = this.element;
-    html.querySelectorAll('input[type="color"]').forEach(input => {
-      input.addEventListener('input', () => this._updatePreview());
-    });
 
-    html.querySelectorAll('input[type="text"][name*="colors"]').forEach(input => {
-      input.addEventListener('input', () => this._updatePreview());
+    // Sincronizza color picker con text input
+    html.querySelectorAll('.color-input').forEach(group => {
+      const colorInput = group.querySelector('input[type="color"]');
+      const textInput = group.querySelector('input[type="text"]');
+
+      if (colorInput && textInput) {
+        // Quando cambia il color picker, aggiorna il text
+        colorInput.addEventListener('input', (e) => {
+          textInput.value = e.target.value;
+          this._updatePreview();
+        });
+
+        // Quando cambia il text, aggiorna il color picker (se valido)
+        textInput.addEventListener('input', (e) => {
+          const value = e.target.value;
+          if (/^#[0-9A-F]{6}$/i.test(value)) {
+            colorInput.value = value;
+          }
+          this._updatePreview();
+        });
+      }
     });
   }
 
@@ -193,11 +209,29 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
   }
 
   static async formHandler(event, form, formData) {
+    // Estrai i dati dal form
+    const themeData = {
+      colors: {},
+      images: {},
+      advanced: formData.object['theme.advanced'] || ''
+    };
+
+    // Estrai i colori
+    for (const [key, value] of Object.entries(formData.object)) {
+      if (key.startsWith('theme.colors.')) {
+        const colorKey = key.replace('theme.colors.', '');
+        themeData.colors[colorKey] = value;
+      } else if (key.startsWith('theme.images.')) {
+        const imageKey = key.replace('theme.images.', '');
+        themeData.images[imageKey] = value;
+      }
+    }
+
     // Salva il tema
-    await game.settings.set(MODULE, 'theme', formData.theme);
+    await game.settings.set(MODULE, 'theme', themeData);
 
     // Applica immediatamente
-    const theme = Theme.from(formData.theme);
+    const theme = Theme.from(themeData);
     theme.apply();
 
     // Aggiorna preset selector se è custom
