@@ -34,8 +34,16 @@ export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
       loadPreset: ThemeConfig.loadPreset,
       exportTheme: ThemeConfig.exportTheme,
       importTheme: ThemeConfig.importTheme,
-      resetColor: ThemeConfig.resetColor
-    }
+      resetColor: ThemeConfig.resetColor,
+      changeTab: ThemeConfig._changeTab
+    },
+    tabs: [
+      {
+        navSelector: '.tabs',
+        contentSelector: '.content',
+        initial: 'colors'
+      }
+    ]
   };
 
   static PARTS = {
@@ -47,6 +55,34 @@ export class ThemeConfig extends foundry.applications.api.ApplicationV2 {
   tabGroups = {
     primary: 'colors'
   };
+
+  static _changeTab(event, target) {
+    event.preventDefault();
+    const app = target.closest('.application').application;
+    const tabName = target.dataset.tab;
+
+    // Rimuovi active da tutti i tab
+    app.element.querySelectorAll('.tabs .item').forEach(t => t.classList.remove('active'));
+    app.element.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+
+    // Aggiungi active al tab selezionato
+    target.classList.add('active');
+    const tabContent = app.element.querySelector(`.tab[data-tab="${tabName}"]`);
+    if (tabContent) tabContent.classList.add('active');
+
+    // Salva il tab attivo
+    app.tabGroups.primary = tabName;
+  }
+
+  _onFirstRender(context, options) {
+    // Attiva il primo tab
+    const initialTab = this.tabGroups.primary || 'colors';
+    const tabLink = this.element.querySelector(`.tabs .item[data-tab="${initialTab}"]`);
+    const tabContent = this.element.querySelector(`.tab[data-tab="${initialTab}"]`);
+
+    if (tabLink) tabLink.classList.add('active');
+    if (tabContent) tabContent.classList.add('active');
+  }
 
   async _prepareContext(options) {
     // Funzione helper per rimuovere alpha channel dai colori
