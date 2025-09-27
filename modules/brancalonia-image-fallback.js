@@ -24,9 +24,12 @@ const CATEGORY_FALLBACKS = {
 
 // Intercetta errori di caricamento immagini
 function setupImageErrorHandling() {
+    // Usa il namespace corretto per Foundry v13
+    const TextEditorClass = foundry.applications.ux?.TextEditor?.implementation || TextEditor;
+
     // Override del metodo enrichHTML per sostituire immagini mancanti
-    const originalEnrichHTML = TextEditor.enrichHTML;
-    TextEditor.enrichHTML = function(content, options = {}) {
+    const originalEnrichHTML = TextEditorClass.enrichHTML;
+    TextEditorClass.enrichHTML = function(content, options = {}) {
         // Sostituisci riferimenti a immagini mancanti nel contenuto
         if (content && typeof content === 'string') {
             content = content.replace(/breastplate-metal-copper\.webp/g, 'shield.svg');

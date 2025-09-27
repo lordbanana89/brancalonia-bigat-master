@@ -62,6 +62,11 @@ Hooks.once("init", () => {
         });
     }
 
+    // Alias per TextEditor
+    if (!window.TextEditor && foundry.applications.ux?.TextEditor?.implementation) {
+        window.TextEditor = foundry.applications.ux.TextEditor.implementation;
+    }
+
     console.log("Brancalonia | Alias API legacy creati");
 });
 
@@ -73,6 +78,7 @@ console.warn = function(...args) {
     // Sopprimi warning di namespace deprecati
     if (message.includes("You are accessing the global") &&
         (message.includes("CompendiumCollection") ||
+         message.includes("TextEditor") ||
          message.includes("game.actors") ||
          message.includes("game.items") ||
          message.includes("game.journal") ||
