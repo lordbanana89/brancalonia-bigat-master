@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione Druido",
+  "descrizione": "Tabella di progressione per la classe Druido con bonus competenza, slot incantesimo e privilegi per livello.",
+  "fonte": "Manuale del Giocatore p.64-69",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione-druido",
+      "nome": "Tabella Progressione Druido",
+      "file": "progressione.json"
+    }
+  ]
+}

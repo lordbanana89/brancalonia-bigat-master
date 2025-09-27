@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione Ranger",
+  "descrizione": "Tabella di progressione per la classe Ranger con bonus competenza, slot incantesimo e privilegi per livello.",
+  "fonte": "Manuale del Giocatore p.90-91",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione-ranger",
+      "nome": "Tabella Progressione Ranger",
+      "file": "progressione.json"
+    }
+  ]
+}

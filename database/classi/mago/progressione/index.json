@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione Mago",
+  "descrizione": "Tabella di progressione per la classe Mago con bonus competenza, slot incantesimo e privilegi per livello.",
+  "fonte": "Manuale del Giocatore p.112-119",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione-mago",
+      "nome": "Tabella Progressione Mago",
+      "file": "progressione.json"
+    }
+  ]
+}

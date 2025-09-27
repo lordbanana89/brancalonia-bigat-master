@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione Monaco",
+  "descrizione": "Tabella di progressione per la classe Monaco con bonus competenza, slot incantesimo e privilegi per livello.",
+  "fonte": "Manuale del Giocatore p.76-82",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione-monaco",
+      "nome": "Tabella Progressione Monaco",
+      "file": "progressione.json"
+    }
+  ]
+}

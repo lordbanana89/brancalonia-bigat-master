@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione Paladino",
+  "descrizione": "Tabella di progressione per la classe Paladino con bonus competenza, slot incantesimo e privilegi per livello.",
+  "fonte": "Manuale del Giocatore p.82-87",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione-paladino",
+      "nome": "Tabella Progressione Paladino",
+      "file": "progressione.json"
+    }
+  ]
+}

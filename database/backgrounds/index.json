@@ -1,71 +1,109 @@
 {
+  "name": "Backgrounds di Brancalonia",
+  "description": "Background per personaggi di Brancalonia",
+  "lastUpdated": "2025-09-27",
+  "path": "database/backgrounds",
   "categoria": "Backgrounds",
   "totale": 13,
   "elementi": [
     {
       "nome": "Ambulante",
       "file": "ambulante.json",
-      "fonte": "Manuale Base p.31"
+      "fonte": "Manuale Base p.31",
+      "tipo": "base",
+      "descrizione": "Mercante itinerante e venditore ambulante"
     },
     {
       "nome": "Attaccabrighe",
       "file": "attaccabrighe.json",
-      "fonte": "Manuale Base p.32"
+      "fonte": "Manuale Base p.32",
+      "tipo": "base",
+      "descrizione": "Rissoso e provocatore di professione"
     },
     {
       "nome": "Azzeccagarbugli",
       "file": "azzeccagarbugli.json",
-      "fonte": "Manuale Base p.33"
+      "fonte": "Manuale Base p.33",
+      "tipo": "base",
+      "descrizione": "Avvocato di dubbia moralità"
     },
     {
       "nome": "Brado",
       "file": "brado.json",
-      "fonte": "Manuale Base p.34"
+      "fonte": "Manuale Base p.34",
+      "tipo": "base",
+      "descrizione": "Selvaggio cresciuto nella natura"
     },
     {
       "nome": "Duro",
       "file": "duro.json",
-      "fonte": "Manuale Base p.35"
+      "fonte": "Manuale Base p.35",
+      "tipo": "base",
+      "descrizione": "Veterano indurito dalle difficoltà"
     },
     {
       "nome": "Fuggitivo",
       "file": "fuggitivo.json",
-      "fonte": "Manuale Base p.36"
+      "fonte": "Manuale Base p.36",
+      "tipo": "base",
+      "descrizione": "In fuga dalla legge o dal passato"
     },
     {
       "nome": "Cacciatore di reliquie",
       "file": "cacciatore_di_reliquie.json",
-      "fonte": "Brancalonia Macaronicon p.36-37"
+      "fonte": "Brancalonia Macaronicon p.36-37",
+      "tipo": "macaronicon",
+      "descrizione": "Cercatore di oggetti sacri e magici"
     },
     {
       "nome": "Impresario",
       "file": "impresario.json",
-      "fonte": "Brancalonia Macaronicon p.37-38"
+      "fonte": "Brancalonia Macaronicon p.37-38",
+      "tipo": "macaronicon",
+      "descrizione": "Organizzatore di spettacoli e eventi"
     },
     {
       "nome": "Innamorato",
       "file": "innamorato.json",
-      "fonte": "Brancalonia Macaronicon p.38-39"
+      "fonte": "Brancalonia Macaronicon p.38-39",
+      "tipo": "macaronicon",
+      "descrizione": "Romantico guidato dall'amore"
     },
     {
       "nome": "Lucignolo",
       "file": "lucignolo.json",
-      "fonte": "Brancalonia Macaronicon p.40-41"
+      "fonte": "Brancalonia Macaronicon p.40-41",
+      "tipo": "macaronicon",
+      "descrizione": "Vagabondo e perdigiorno"
     },
     {
       "nome": "Passatore",
       "file": "passatore.json",
-      "fonte": "Brancalonia Macaronicon p.41-42"
+      "fonte": "Brancalonia Macaronicon p.41-42",
+      "tipo": "macaronicon",
+      "descrizione": "Contrabbandiere e traghettatore"
     },
     {
       "nome": "Prelato",
       "file": "prelato.json",
-      "fonte": "Brancalonia Macaronicon p.42-43"
+      "fonte": "Brancalonia Macaronicon p.42-43",
+      "tipo": "macaronicon",
+      "descrizione": "Religioso di basso rango"
     },
     {
       "nome": "Staffetta",
       "file": "staffetta.json",
-      "fonte": "Brancalonia Macaronicon p.44-45"
+      "fonte": "Brancalonia Macaronicon p.44-45",
+      "tipo": "macaronicon",
+      "descrizione": "Messaggero e corriere"
     }
-  ]
+  ],
+  "features": {
+    "skills": "Ogni background fornisce 2 competenze",
+    "tools": "Competenza in strumenti o lingue",
+    "equipment": "Equipaggiamento iniziale tematico",
+    "features": "Privilegio unico del background",
+    "personality": "Tabelle per tratti, ideali, legami e difetti"
+  },
+  "status": "complete"
 }
