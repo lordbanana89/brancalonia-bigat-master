@@ -1,9 +1,9 @@
 {
   "_id": "rXDsVCInTuPkK1Bz",
-  "_key": "!items!rXDsVCInTuPkK1Bz",
+  "_key": "!item!rXDsVCInTuPkK1Bz",
   "name": "Prelato - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d8",
+  "formula": "1d8",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!s7hmXSKh6bQHpJ9f"
     },
     {
       "_id": "irbf0xdZnYK88C9T",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!irbf0xdZnYK88C9T"
     },
     {
       "_id": "H18iIMjBABHmWx1N",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!H18iIMjBABHmWx1N"
     },
     {
       "_id": "wkOHYptZHOSYENRC",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!wkOHYptZHOSYENRC"
     },
     {
       "_id": "sFbKDtI0xw1gOZn9",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!sFbKDtI0xw1gOZn9"
     },
     {
       "_id": "m4AQjlHu36YIjilL",
@@ -77,7 +82,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!m4AQjlHu36YIjilL"
     },
     {
       "_id": "c2bt6iyIr6jpyFjz",
@@ -89,7 +95,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!c2bt6iyIr6jpyFjz"
     },
     {
       "_id": "IIar9Oc5bMMLoZOE",
@@ -101,13 +108,17 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!IIar9Oc5bMMLoZOE"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "prelato",
       "tipo": "tratti della personalità"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

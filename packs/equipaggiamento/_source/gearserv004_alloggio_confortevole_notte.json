@@ -1,9 +1,9 @@
 {
   "_id": "gearserv004alloggioconfortevolenottee6fad8",
-  "_key": "!items!gearserv004alloggioconfortevolenottee6fad8",
+  "_key": "!item!gearserv004alloggioconfortevolenottee6fad8",
   "name": "Alloggio Confortevole (notte)",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Camera privata con letto, bacinella e chiusura semplice.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

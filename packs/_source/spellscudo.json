@@ -1,0 +1,114 @@
+{
+  "_id": "spellscudo181a24",
+  "_key": "!items!spellscudo181a24",
+  "name": "Scudo",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una barriera invisibile di forza magica appare e ti protegge. Fino all'inizio del tuo prossimo turno, hai un bonus di +5 alla CA, incluso contro l'attacco che ha innescato l'incantesimo, e non subisci danni da dardo incantato.</p><h3>Note per il DM</h3><p><em>Shield è tra i migliori spell difensivi. Reaction dopo sapere hit è potentissimo. Immunity a Magic Missile bonus.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.275",
+    "level": 1,
+    "school": "abj",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "round"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-scudo",
+      "fonte": "D&D 5e PHB p.275",
+      "note_dm": "Shield è tra i migliori spell difensivi. Reaction dopo sapere hit è potentissimo. Immunity a Magic Missile bonus.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "attivazione": "reaction",
+        "range": "self",
+        "durata": "1 round",
+        "effetto_ac": "+5 AC",
+        "immunita": "magic missile"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Abiurazione",
+        "level": 1
+      }
+    }
+  }
+}

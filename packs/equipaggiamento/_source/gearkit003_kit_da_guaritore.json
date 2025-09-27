@@ -1,9 +1,9 @@
 {
   "_id": "gearkit003kitdaguaritoree220a3",
-  "_key": "!items!gearkit003kitdaguaritoree220a3",
+  "_key": "!item!gearkit003kitdaguaritoree220a3",
   "name": "Kit da Guaritore",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Bende, unguenti e aghi sterili; consente di stabilizzare una creatura senza prova (10 usi).</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

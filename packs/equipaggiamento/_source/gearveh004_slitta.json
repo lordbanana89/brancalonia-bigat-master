@@ -1,9 +1,9 @@
 {
   "_id": "gearveh004slittae300ff",
-  "_key": "!items!gearveh004slittae300ff",
+  "_key": "!item!gearveh004slittae300ff",
   "name": "Slitta",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Slitta di legno per terreni innevati, trainata da cavalli o mastini.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

@@ -51,7 +51,7 @@
   "name": "Punizione Divina",
   "img": "icons/magic/holy/projectiles-blades-salvo-yellow.webp",
   "_id": "class-paladino-livello_2-punizione-divina",
-  "_key": "!items!class-paladino-livello_2-punizione-divina",
+  "_key": "!item!class-paladino-livello_2-punizione-divina",
   "ownership": {
     "default": 0
   },

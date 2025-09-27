@@ -1,0 +1,17 @@
+{
+  "_id": "sistemarissa72a9a6",
+  "_key": "!journal!sistemarissa72a9a6",
+  "name": "Regola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "categoria": "sistema_rissa",
+      "fonte": "Manuale Base p.51-56"
+    }
+  }
+}

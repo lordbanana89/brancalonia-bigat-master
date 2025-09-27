@@ -1,0 +1,25 @@
+2025-09-27 11:30:57,988 - Pack Validator - INFO - Starting comprehensive pack validation for D&D 5e v5.1.9
+2025-09-27 11:30:57,988 - Pack Validator - INFO - Validating pack: equipaggiamento
+2025-09-27 11:30:58,009 - Pack Validator - INFO - Validating pack: brancalonia-equipment
+2025-09-27 11:30:58,012 - Pack Validator - INFO - Validating pack: brancalonia-spell
+2025-09-27 11:30:58,012 - Pack Validator - INFO - Validating pack: brancalonia-feats
+2025-09-27 11:30:58,012 - Pack Validator - INFO - Validating pack: rollable-tables
+2025-09-27 11:30:58,021 - Pack Validator - INFO - Validating pack: backgrounds
+2025-09-27 11:30:58,022 - Pack Validator - INFO - Validating pack: regole
+2025-09-27 11:30:58,027 - Pack Validator - INFO - Validating pack: brancalonia-features
+2025-09-27 11:30:58,064 - Pack Validator - INFO - Validating pack: _source
+2025-09-27 11:30:58,065 - Pack Validator - INFO - Validating pack: brancalonia-journal
+2025-09-27 11:30:58,065 - Pack Validator - INFO - Validating pack: emeriticenze
+2025-09-27 11:30:58,066 - Pack Validator - INFO - Validating pack: macro
+2025-09-27 11:30:58,067 - Pack Validator - INFO - Validating pack: incantesimi
+2025-09-27 11:30:58,087 - Pack Validator - INFO - Validating pack: brancalonia.
+2025-09-27 11:30:58,087 - Pack Validator - INFO - Validating pack: sottoclassi
+2025-09-27 11:30:58,089 - Pack Validator - INFO - Validating pack: razze
+2025-09-27 11:30:58,090 - Pack Validator - INFO - Validating pack: classi
+2025-09-27 11:30:58,093 - Pack Validator - INFO - Validating pack: npc
+2025-09-27 11:30:58,115 - Pack Validator - INFO - Validating pack: brancalonia-objects
+2025-09-27 11:30:58,115 - Pack Validator - INFO - Validating pack: talenti
+2025-09-27 11:30:58,117 - Pack Validator - INFO - Validating pack: rolltables
+2025-09-27 11:30:58,117 - Pack Validator - INFO - Validating pack: brancalonia-subclass
+2025-09-27 11:30:58,131 - Pack Validator - INFO - Validation report saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/pack_validation_report.json
+2025-09-27 11:30:58,132 - Pack Validator - INFO - Summary report saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/pack_validation_summary.md

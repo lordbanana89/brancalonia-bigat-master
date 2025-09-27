@@ -50,7 +50,7 @@
   "name": "Aumento Caratteristica",
   "img": "icons/magic/control/buff-flight-wings-blue.webp",
   "_id": "class-monaco-livello_4-aumento-caratteristica",
-  "_key": "!items!class-monaco-livello_4-aumento-caratteristica",
+  "_key": "!item!class-monaco-livello_4-aumento-caratteristica",
   "ownership": {
     "default": 0
   },

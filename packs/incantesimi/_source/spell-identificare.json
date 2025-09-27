@@ -1,77 +1,25 @@
 {
-  "id": "spell-identificare",
-  "nome": "Identificare",
-  "nome_inglese": "Identify",
-  "livello": 1,
-  "scuola": "Divinazione",
-  "rituale": true,
-  "tempo_lancio": "1 minuto",
-  "gittata": "Contatto",
-  "componenti": {
-    "verbale": true,
-    "somatica": true,
-    "materiale": true,
-    "materiale_descrizione": "Una perla del valore di almeno 100 mo e una piuma di gufo"
-  },
-  "durata": "Istantanea",
-  "descrizione": "Scegli un oggetto che devi toccare durante il lancio dell'incantesimo. Se è un oggetto magico o un altro oggetto infuso di magia, apprendi le sue proprietà e come usarle, se richiede attunement per essere usato, e quante cariche ha, se presenti. Apprendi se qualche incantesimo sta influenzando l'oggetto e cosa sono. Se l'oggetto è stato creato da un incantesimo, apprendi quale incantesimo lo ha creato. Se invece tocchi una creatura durante il lancio, apprendi quali incantesimi, se presenti, la stanno attualmente influenzando.",
-  "classi": [
-    "Bardo",
-    "Mago"
-  ],
-  "implementazione_foundry": {
-    "tipo": "spell",
-    "livello": 1,
-    "rituale": true,
-    "attivazione": "1 minute",
-    "range": "touch",
-    "durata": "instantaneous"
-  },
-  "informazioni_ottenute": [
-    "Proprietà magiche complete",
-    "Metodo di attivazione",
-    "Requisiti attunement",
-    "Numero cariche",
-    "Spell attivi sull'oggetto",
-    "Spell di creazione"
-  ],
-  "su_creature": {
-    "spell_attivi": "Tutti gli spell sulla creatura",
-    "no_stats": "Non rivela statistiche",
-    "no_hp": "Non rivela HP/AC"
-  },
-  "costo_componente": {
-    "perla_100mo": "Non consumata",
-    "riutilizzabile": "Stesso componente infinito",
-    "focus_alternativo": "Può usare arcane focus"
-  },
-  "limitazioni": [
-    "Non rivela maledizioni",
-    "1 minuto cast time",
-    "Touch range",
-    "Non identifica artefatti leggendari completamente"
-  ],
-  "ritual_efficiency": {
-    "gratuito": "11 minuti ma no slot",
-    "short_rest": "Identifica multipli durante rest",
-    "party_utility": "Wizard/Bard servizio party"
-  },
-  "note_dm": "Identify essenziale per loot magico. Non rivela curse è importante per tensione. Perla da 100mo è investimento iniziale.",
-  "fonte": "D&D 5e PHB p.252",
-  "name": "Spell Identificare",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-identificare",
-  "_key": "!items!spell-identificare",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellidentificare631deb",
+  "_key": "!item!spellidentificare631deb",
+  "name": "Identificare",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
+    "description": {
+      "value": "<p>Scegli un oggetto che devi toccare durante il lancio dell'incantesimo. Se è un oggetto magico o un altro oggetto infuso di magia, apprendi le sue proprietà e come usarle, se richiede attunement per essere usato, e quante cariche ha, se presenti. Apprendi se qualche incantesimo sta influenzando l'oggetto e cosa sono. Se l'oggetto è stato creato da un incantesimo, apprendi quale incantesimo lo ha creato. Se invece tocchi una creatura durante il lancio, apprendi quali incantesimi, se presenti, la stanno attualmente influenzando.</p><h3>Note per il DM</h3><p><em>Identify essenziale per loot magico. Non rivela curse è importante per tensione. Perla da 100mo è investimento iniziale.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.252",
     "level": 1,
-    "school": "evo",
+    "school": "div",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": true,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -83,27 +31,82 @@
       "prepared": false
     },
     "activation": {
-      "type": "action",
-      "cost": 1
+      "type": "minute",
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
       "value": "",
       "units": "inst"
     },
     "range": {
-      "value": "",
-      "units": "ft"
+      "value": null,
+      "long": null,
+      "units": "touch"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-identificare",
+      "fonte": "D&D 5e PHB p.252",
+      "note_dm": "Identify essenziale per loot magico. Non rivela curse è importante per tensione. Perla da 100mo è investimento iniziale.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "rituale": true,
+        "attivazione": "1 minute",
+        "range": "touch",
+        "durata": "instantaneous"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Divinazione",
+        "level": 1
       }
     }
   }

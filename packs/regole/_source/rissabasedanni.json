@@ -1,10 +1,9 @@
 {
-  "_id": "rissabasedanni",
-  "_key": "!items!rissabasedanni",
+  "_id": "rissabasedanni4f4a59",
+  "_key": "!journal!rissabasedanni4f4a59",
   "name": "danni",
+  "type": "journal",
   "img": "icons/svg/book.svg",
-  "pages": [],
-  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0
@@ -14,7 +13,5 @@
       "id_originale": "rissa-base-danni",
       "fonte": "Brancalonia Manuale Base"
     }
-  },
-  "type": "JournalEntry",
-  "effects": []
+  }
 }

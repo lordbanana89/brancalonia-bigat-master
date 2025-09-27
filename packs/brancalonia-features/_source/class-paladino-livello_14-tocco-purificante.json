@@ -21,7 +21,7 @@
   "name": "Tocco Purificante",
   "img": "icons/magic/holy/hand-glowing-yellow.webp",
   "_id": "class-paladino-livello_14-tocco-purificante",
-  "_key": "!items!class-paladino-livello_14-tocco-purificante",
+  "_key": "!item!class-paladino-livello_14-tocco-purificante",
   "ownership": {
     "default": 0
   },

@@ -129,7 +129,7 @@
   "name": "Indomito",
   "img": "icons/equipment/shield/buckler-wooden-boss-steel.webp",
   "_id": "class-guerriero-livello_9-indomito",
-  "_key": "!items!class-guerriero-livello_9-indomito",
+  "_key": "!item!class-guerriero-livello_9-indomito",
   "ownership": {
     "default": 0
   },

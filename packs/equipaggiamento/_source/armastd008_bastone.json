@@ -1,6 +1,6 @@
 {
   "_id": "armastd008bastone0db0e9",
-  "_key": "!items!armastd008bastone0db0e9",
+  "_key": "!item!armastd008bastone0db0e9",
   "name": "Bastone",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,9 +24,9 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "quarterstaff",
-    "properties": [
-      "ver"
-    ],
+    "properties": {
+      "ver": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

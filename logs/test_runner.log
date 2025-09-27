@@ -1,0 +1,60 @@
+2025-09-27 11:30:58,828 - Test Runner - INFO - FVTT CLI available: 3.0.0
+2025-09-27 11:30:58,828 - Test Runner - INFO - Starting comprehensive test suite for D&D 5e v5.1.9
+2025-09-27 11:30:58,828 - Test Runner - INFO - Phase 1: Running JSON validation tests...
+2025-09-27 11:30:58,829 - Test Runner - INFO - Testing JSON validation for pack: equipaggiamento
+2025-09-27 11:30:58,850 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-equipment
+2025-09-27 11:30:58,851 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-spell
+2025-09-27 11:30:58,852 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-feats
+2025-09-27 11:30:58,852 - Test Runner - INFO - Testing JSON validation for pack: rollable-tables
+2025-09-27 11:30:58,858 - Test Runner - INFO - Testing JSON validation for pack: backgrounds
+2025-09-27 11:30:58,859 - Test Runner - INFO - Testing JSON validation for pack: regole
+2025-09-27 11:30:58,862 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-features
+2025-09-27 11:30:58,873 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-journal
+2025-09-27 11:30:58,873 - Test Runner - INFO - Testing JSON validation for pack: emeriticenze
+2025-09-27 11:30:58,874 - Test Runner - INFO - Testing JSON validation for pack: macro
+2025-09-27 11:30:58,874 - Test Runner - INFO - Testing JSON validation for pack: incantesimi
+2025-09-27 11:30:58,880 - Test Runner - INFO - Testing JSON validation for pack: sottoclassi
+2025-09-27 11:30:58,881 - Test Runner - INFO - Testing JSON validation for pack: razze
+2025-09-27 11:30:58,881 - Test Runner - INFO - Testing JSON validation for pack: classi
+2025-09-27 11:30:58,882 - Test Runner - INFO - Testing JSON validation for pack: npc
+2025-09-27 11:30:58,887 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-objects
+2025-09-27 11:30:58,887 - Test Runner - INFO - Testing JSON validation for pack: talenti
+2025-09-27 11:30:58,887 - Test Runner - INFO - Testing JSON validation for pack: rolltables
+2025-09-27 11:30:58,887 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-subclass
+2025-09-27 11:30:58,887 - Test Runner - INFO - Phase 2: Running pack integrity tests...
+2025-09-27 11:30:58,927 - Test Runner - INFO - Phase 3: Running UUID reference tests...
+2025-09-27 11:30:59,022 - Test Runner - INFO - Phase 4: Running class advancement tests...
+2025-09-27 11:30:59,022 - Test Runner - INFO - Phase 5: Running spell system tests...
+2025-09-27 11:30:59,029 - Test Runner - INFO - Phase 6: Running RollTable tests...
+2025-09-27 11:30:59,033 - Test Runner - INFO - Phase 7: Running FVTT CLI tests...
+2025-09-27 11:33:24,563 - Test Runner - INFO - FVTT CLI available: 3.0.0
+2025-09-27 11:33:24,564 - Test Runner - INFO - Starting comprehensive test suite for D&D 5e v5.1.9
+2025-09-27 11:33:24,564 - Test Runner - INFO - Phase 1: Running JSON validation tests...
+2025-09-27 11:33:24,564 - Test Runner - INFO - Testing JSON validation for pack: equipaggiamento
+2025-09-27 11:33:24,582 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-equipment
+2025-09-27 11:33:24,585 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-spell
+2025-09-27 11:33:24,585 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-feats
+2025-09-27 11:33:24,585 - Test Runner - INFO - Testing JSON validation for pack: rollable-tables
+2025-09-27 11:33:24,594 - Test Runner - INFO - Testing JSON validation for pack: backgrounds
+2025-09-27 11:33:24,597 - Test Runner - INFO - Testing JSON validation for pack: regole
+2025-09-27 11:33:24,600 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-features
+2025-09-27 11:33:24,633 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-journal
+2025-09-27 11:33:24,633 - Test Runner - INFO - Testing JSON validation for pack: emeriticenze
+2025-09-27 11:33:24,635 - Test Runner - INFO - Testing JSON validation for pack: macro
+2025-09-27 11:33:24,635 - Test Runner - INFO - Testing JSON validation for pack: incantesimi
+2025-09-27 11:33:24,650 - Test Runner - INFO - Testing JSON validation for pack: sottoclassi
+2025-09-27 11:33:24,651 - Test Runner - INFO - Testing JSON validation for pack: razze
+2025-09-27 11:33:24,652 - Test Runner - INFO - Testing JSON validation for pack: classi
+2025-09-27 11:33:24,654 - Test Runner - INFO - Testing JSON validation for pack: npc
+2025-09-27 11:33:24,664 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-objects
+2025-09-27 11:33:24,664 - Test Runner - INFO - Testing JSON validation for pack: talenti
+2025-09-27 11:33:24,665 - Test Runner - INFO - Testing JSON validation for pack: rolltables
+2025-09-27 11:33:24,665 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-subclass
+2025-09-27 11:33:24,665 - Test Runner - INFO - Phase 2: Running pack integrity tests...
+2025-09-27 11:33:24,703 - Test Runner - INFO - Phase 3: Running UUID reference tests...
+2025-09-27 11:33:24,797 - Test Runner - INFO - Phase 4: Running class advancement tests...
+2025-09-27 11:33:24,798 - Test Runner - INFO - Phase 5: Running spell system tests...
+2025-09-27 11:33:24,804 - Test Runner - INFO - Phase 6: Running RollTable tests...
+2025-09-27 11:33:24,808 - Test Runner - INFO - Phase 7: Running FVTT CLI tests...
+2025-09-27 11:33:26,476 - Test Runner - INFO - Test report saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/test_runner_report.json
+2025-09-27 11:33:26,476 - Test Runner - INFO - Test summary saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/test_runner_summary.md

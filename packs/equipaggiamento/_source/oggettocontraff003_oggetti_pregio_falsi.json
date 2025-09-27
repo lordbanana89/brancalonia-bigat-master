@@ -1,9 +1,9 @@
 {
   "_id": "oggettocontraff003oggettipregiofalsic6ea8a",
-  "_key": "!items!oggettocontraff003oggettipregiofalsic6ea8a",
+  "_key": "!item!oggettocontraff003oggettipregiofalsic6ea8a",
   "name": "Oggetti di Pregio Falsi",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Repliche taroccate di gioielli, reliquie o cimeli preziosi, spesso usate per frodare nobili e collezionisti.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

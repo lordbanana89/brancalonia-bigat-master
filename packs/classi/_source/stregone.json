@@ -1,6 +1,6 @@
 {
   "_id": "class-stregone-q36spo",
-  "_key": "!items!class-stregone-q36spo",
+  "_key": "!item!class-stregone-q36spo",
   "name": "Stregone",
   "type": "class",
   "img": "icons/magic/fire/orb-orange-2.webp",
@@ -478,7 +478,8 @@
     "primaryAbility": [
       "cha"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d6"
   },
   "effects": [],
   "folder": null,

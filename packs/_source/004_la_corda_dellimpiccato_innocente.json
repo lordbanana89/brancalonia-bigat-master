@@ -1,0 +1,81 @@
+{
+  "_id": "lacordadellimpiccatoinnocente7ab8bc",
+  "_key": "!items!lacordadellimpiccatoinnocente7ab8bc",
+  "name": "La Corda dell'Impiccato Innocente",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pezzo di corda con nodo scorsoio</p><h3>Proprietà</h3><p>Impossibile da spezzare con la forza (richiede taglio)</p><h3>Storia</h3><p><em>Usata per impiccare un innocente che maledisse i suoi carnefici</em></p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": {
+      "mgc": true
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "004",
+      "categoria": "cimelo",
+      "storia": "Usata per impiccare un innocente che maledisse i suoi carnefici",
+      "proprieta_originale": "Impossibile da spezzare con la forza (richiede taglio)",
+      "implementazione": {
+        "tipo": "narrativo",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

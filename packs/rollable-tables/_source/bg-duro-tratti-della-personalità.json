@@ -1,9 +1,9 @@
 {
   "_id": "TWxnY4wl0JMME4kC",
-  "_key": "!items!TWxnY4wl0JMME4kC",
+  "_key": "!item!TWxnY4wl0JMME4kC",
   "name": "Duro - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d8",
+  "formula": "1d8",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!S4wXi6q88ZJPyBs5"
     },
     {
       "_id": "0S8K87oui8vT3A1H",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!0S8K87oui8vT3A1H"
     },
     {
       "_id": "u3mLt6mOZfnh62Oz",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!u3mLt6mOZfnh62Oz"
     },
     {
       "_id": "lrmqhNvekqSGbqvO",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!lrmqhNvekqSGbqvO"
     },
     {
       "_id": "ngePJNDAsQ03H8SC",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!ngePJNDAsQ03H8SC"
     },
     {
       "_id": "OlpTZ9AD5W59z4nZ",
@@ -77,7 +82,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!OlpTZ9AD5W59z4nZ"
     },
     {
       "_id": "wrSSdwOCUklYfhpv",
@@ -89,7 +95,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!wrSSdwOCUklYfhpv"
     },
     {
       "_id": "DXrWeWGaVJdmQq5Z",
@@ -101,13 +108,17 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!DXrWeWGaVJdmQq5Z"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "duro",
       "tipo": "tratti della personalità"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

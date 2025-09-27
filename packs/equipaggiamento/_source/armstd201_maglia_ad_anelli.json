@@ -1,9 +1,9 @@
 {
   "_id": "armstd201magliaadanelli947cab",
-  "_key": "!items!armstd201magliaadanelli947cab",
+  "_key": "!item!armstd201magliaadanelli947cab",
   "name": "Maglia ad Anelli",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Abito di cuoio con anelli metallici cuciti sopra.</p>",
@@ -33,7 +33,7 @@
       "dex": 2,
       "magicalBonus": 0
     },
-    "strength": null,
+    "strength": "—",
     "stealth": false,
     "proficient": true,
     "properties": {},
@@ -47,10 +47,6 @@
       "max": "",
       "per": null,
       "recovery": ""
-    },
-    "speed": {
-      "value": null,
-      "conditions": ""
     }
   },
   "effects": [],

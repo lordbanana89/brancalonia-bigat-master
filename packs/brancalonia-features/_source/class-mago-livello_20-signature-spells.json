@@ -138,7 +138,7 @@
   "name": "Signature Spells",
   "img": "icons/sundries/documents/document-ink-pen-blue.webp",
   "_id": "class-mago-livello_20-signature-spells",
-  "_key": "!items!class-mago-livello_20-signature-spells",
+  "_key": "!item!class-mago-livello_20-signature-spells",
   "ownership": {
     "default": 0
   },

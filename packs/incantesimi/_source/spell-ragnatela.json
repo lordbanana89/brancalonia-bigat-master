@@ -1,81 +1,25 @@
 {
-  "id": "spell-ragnatela",
-  "nome": "Ragnatela",
-  "nome_inglese": "Web",
-  "livello": 2,
-  "scuola": "Evocazione",
-  "tempo_lancio": "1 azione",
-  "gittata": "60 piedi",
-  "componenti": {
-    "verbale": true,
-    "somatica": true,
-    "materiale": true,
-    "materiale_descrizione": "Un pizzico di ragnatela"
-  },
-  "durata": "Concentrazione, fino a 1 ora",
-  "descrizione": "Evochi una massa di ragnatele spesse e appiccicose in un punto a tua scelta entro gittata. Le ragnatele riempiono un cubo di 20 piedi da quel punto per la durata. Le ragnatele sono terreno difficile e oscurano leggermente la loro area. Se le ragnatele non sono ancorate tra due masse solide (come muri o alberi) o stratificate su pavimento, muro o soffitto, la ragnatela evocata collassa su se stessa e l'incantesimo termina all'inizio del tuo prossimo turno. Le ragnatele stratificate su una superficie piana hanno una profondità di 5 piedi. Ogni creatura che inizia il suo turno nelle ragnatele o che vi entra durante il suo turno deve effettuare un tiro salvezza su Destrezza. Con un fallimento, la creatura è trattenuta finché le ragnatele restano. Una creatura trattenuta dalle ragnatele può usare la sua azione per effettuare una prova di Forza contro la CD del tuo incantesimo. Se ha successo, non è più trattenuta.",
-  "classi": [
-    "Mago",
-    "Stregone"
-  ],
-  "implementazione_foundry": {
-    "tipo": "spell",
-    "livello": 2,
-    "attivazione": "action",
-    "range": 60,
-    "area": "20 ft cube",
-    "save": "dexterity",
-    "durata": "1 hour",
-    "concentrazione": true,
-    "condizione": "restrained"
-  },
-  "meccaniche": {
-    "ancoraggio": "Serve 2 punti solidi o superficie",
-    "terreno_difficile": "1/2 movimento sempre",
-    "restrained": "Se fail DEX save",
-    "escape": "Action + STR check",
-    "save_ripetuto": "Ogni turno che entra"
-  },
-  "condizione_restrained": {
-    "speed_0": "Non può muoversi",
-    "disadvantage_attacks": "Svantaggio attacchi",
-    "advantage_vs": "Attacchi contro hanno vantaggio",
-    "disadvantage_dex": "Svantaggio DEX saves"
-  },
-  "fuoco_interazione": {
-    "infiammabile": "5 ft brucia in 1 round",
-    "danno_fuoco": "2d4 a creature in burning web",
-    "distruzione": "Fire damage distrugge sezione"
-  },
-  "tattiche": [
-    "Bloccare corridoi/porte",
-    "Dividere nemici",
-    "Setup per AoE spell",
-    "Proteggere ritirata",
-    "Combo con fire damage"
-  ],
-  "valore": {
-    "controllo_area": "20 ft cube enorme",
-    "durata_lunga": "1 ora concentrazione",
-    "no_save_movimento": "Difficult terrain automatico",
-    "multi_save": "Save ogni turno in area"
-  },
-  "note_dm": "Web è controllo eccellente. Restrained è condizione potentissima. Richiede ancoraggi lo bilancia. Fire interaction interessante.",
-  "fonte": "D&D 5e PHB p.287",
-  "name": "Spell Ragnatela",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-ragnatela",
-  "_key": "!items!spell-ragnatela",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellragnatelaebd51b",
+  "_key": "!item!spellragnatelaebd51b",
+  "name": "Ragnatela",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
+    "description": {
+      "value": "<p>Evochi una massa di ragnatele spesse e appiccicose in un punto a tua scelta entro gittata. Le ragnatele riempiono un cubo di 20 piedi da quel punto per la durata. Le ragnatele sono terreno difficile e oscurano leggermente la loro area. Se le ragnatele non sono ancorate tra due masse solide (come muri o alberi) o stratificate su pavimento, muro o soffitto, la ragnatela evocata collassa su se stessa e l'incantesimo termina all'inizio del tuo prossimo turno. Le ragnatele stratificate su una superficie piana hanno una profondità di 5 piedi. Ogni creatura che inizia il suo turno nelle ragnatele o che vi entra durante il suo turno deve effettuare un tiro salvezza su Destrezza. Con un fallimento, la creatura è trattenuta finché le ragnatele restano. Una creatura trattenuta dalle ragnatele può usare la sua azione per effettuare una prova di Forza contro la CD del tuo incantesimo. Se ha successo, non è più trattenuta.</p><h3>Note per il DM</h3><p><em>Web è controllo eccellente. Restrained è condizione potentissima. Richiede ancoraggi lo bilancia. Fire interaction interessante.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.287",
+    "level": 2,
     "school": "evo",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -88,26 +32,84 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 1,
+      "units": "hour"
     },
     "range": {
-      "value": "",
+      "value": 60,
+      "long": null,
       "units": "ft"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-ragnatela",
+      "fonte": "D&D 5e PHB p.287",
+      "note_dm": "Web è controllo eccellente. Restrained è condizione potentissima. Richiede ancoraggi lo bilancia. Fire interaction interessante.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "attivazione": "action",
+        "range": 60,
+        "area": "20 ft cube",
+        "save": "dexterity",
+        "durata": "1 hour",
+        "concentrazione": true,
+        "condizione": "restrained"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Evocazione",
+        "level": 2
       }
     }
   }

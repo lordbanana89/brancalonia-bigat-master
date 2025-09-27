@@ -76,7 +76,7 @@
   "name": "Magia del Patto",
   "img": "icons/sundries/documents/document-sealed-red.webp",
   "_id": "class-warlock-livello_1-patto-magico",
-  "_key": "!items!class-warlock-livello_1-patto-magico",
+  "_key": "!item!class-warlock-livello_1-patto-magico",
   "ownership": {
     "default": 0
   },

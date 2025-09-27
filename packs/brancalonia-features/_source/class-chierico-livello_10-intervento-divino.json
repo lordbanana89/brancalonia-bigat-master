@@ -148,7 +148,7 @@
   "name": "Intervento Divino",
   "img": "icons/magic/holy/angel-winged-humanoid-silver.webp",
   "_id": "class-chierico-livello_10-intervento-divino",
-  "_key": "!items!class-chierico-livello_10-intervento-divino",
+  "_key": "!item!class-chierico-livello_10-intervento-divino",
   "ownership": {
     "default": 0
   },

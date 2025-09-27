@@ -113,7 +113,7 @@
   "name": "Invocazioni Occulte",
   "img": "icons/magic/unholy/silhouette-horns-evil.webp",
   "_id": "class-warlock-livello_2-invocazioni-occulte",
-  "_key": "!items!class-warlock-livello_2-invocazioni-occulte",
+  "_key": "!item!class-warlock-livello_2-invocazioni-occulte",
   "ownership": {
     "default": 0
   },

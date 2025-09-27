@@ -1,0 +1,119 @@
+{
+  "_id": "spellportadimensionalebe4462",
+  "_key": "!items!spellportadimensionalebe4462",
+  "name": "Porta Dimensionale",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ti teletrasporti dalla tua posizione attuale a qualsiasi altro punto entro gittata. Arrivi esattamente nel punto desiderato. Può essere un luogo che puoi vedere, uno che puoi visualizzare, o uno che puoi descrivere indicando distanza e direzione. Puoi portare oggetti con te fintanto che il loro peso non supera ciò che puoi trasportare. Puoi anche portare una creatura consenziente della tua taglia o più piccola che sta trasportando equipaggiamento fino alla sua capacità di carico. La creatura deve essere entro 5 piedi da te quando lanci questo incantesimo. Se arriveresti in un luogo già occupato da un oggetto o una creatura, tu e qualsiasi creatura che viaggia con te subite 4d6 danni da forza, e l'incantesimo fallisce nel teletrasportarvi.</p><h3>Utilizzi Tipici</h3><ul><li>Escape garantito da prigione</li><li>Bypass dungeon sections</li><li>Infiltrazione istantanea</li><li>Evacuazione emergenza con alleato</li><li>Raggiungere luoghi inaccessibili</li></ul><h3>Note per il DM</h3><p><em>Dimension Door è escape/infiltrazione definitiva. 500 ft copre la maggior parte delle situazioni. Solo verbale lo rende unstoppable.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.233",
+    "level": 4,
+    "school": "evo",
+    "components": {
+      "vocal": true,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": 500,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-porta-dimensionale",
+      "fonte": "D&D 5e PHB p.233",
+      "utilizzi": [
+        "Escape garantito da prigione",
+        "Bypass dungeon sections",
+        "Infiltrazione istantanea",
+        "Evacuazione emergenza con alleato",
+        "Raggiungere luoghi inaccessibili"
+      ],
+      "note_dm": "Dimension Door è escape/infiltrazione definitiva. 500 ft copre la maggior parte delle situazioni. Solo verbale lo rende unstoppable.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 4,
+        "attivazione": "action",
+        "range": 500,
+        "teleport": true
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Evocazione",
+        "level": 4
+      }
+    }
+  }
+}

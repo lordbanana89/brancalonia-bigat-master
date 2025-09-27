@@ -386,7 +386,8 @@
     "primaryAbility": [
       "str"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d12"
   },
   "effects": [],
   "folder": null,

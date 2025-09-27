@@ -1,0 +1,20 @@
+2025-09-27 11:30:58,324 - Class Builder - INFO - Starting comprehensive class rebuilding for D&D 5e v5.1.9
+2025-09-27 11:30:58,324 - Class Builder - INFO - Phase 1: Indexing class features...
+2025-09-27 11:30:58,335 - Class Builder - INFO - Indexed 609 class features
+2025-09-27 11:30:58,335 - Class Builder - INFO - Phase 2: Rebuilding class structures...
+2025-09-27 11:30:58,335 - Class Builder - INFO - Rebuilding class: Monaco
+2025-09-27 11:30:58,336 - Class Builder - INFO - Rebuilding class: Ranger
+2025-09-27 11:30:58,337 - Class Builder - INFO - Rebuilding class: Warlock
+2025-09-27 11:30:58,338 - Class Builder - INFO - Rebuilding class: Guerriero
+2025-09-27 11:30:58,338 - Class Builder - INFO - Rebuilding class: Barbaro
+2025-09-27 11:30:58,339 - Class Builder - INFO - Rebuilding class: Ladro
+2025-09-27 11:30:58,339 - Class Builder - INFO - Rebuilding class: Mago
+2025-09-27 11:30:58,340 - Class Builder - INFO - Rebuilding class: Chierico
+2025-09-27 11:30:58,340 - Class Builder - INFO - Rebuilding class: Druido
+2025-09-27 11:30:58,341 - Class Builder - INFO - Rebuilding class: Paladino
+2025-09-27 11:30:58,341 - Class Builder - INFO - Rebuilding class: Stregone
+2025-09-27 11:30:58,341 - Class Builder - INFO - Rebuilding class: Bardo
+2025-09-27 11:30:58,342 - Class Builder - INFO - Phase 3: Validating class consistency...
+2025-09-27 11:30:58,346 - Class Builder - INFO - Phase 4: Fixing subclass integration...
+2025-09-27 11:30:58,347 - Class Builder - INFO - Class building report saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/class_building_report.json
+2025-09-27 11:30:58,347 - Class Builder - INFO - Class building summary saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/class_building_summary.md

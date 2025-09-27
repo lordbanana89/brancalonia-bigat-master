@@ -1,0 +1,1876 @@
+{
+  "integration_timestamp": "2025-09-27T00:00:00Z",
+  "summary": {
+    "spells_validated": 167,
+    "structure_fixes": 94,
+    "scaling_fixes": 0,
+    "preparation_fixes": 167,
+    "class_integration_issues": 0,
+    "total_fixes": 261
+  },
+  "spell_fixes": [
+    {
+      "spell_name": "Spell Guida",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-guida.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Passo Traslato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-passo-traslato.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 018 Accecare Assordare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-018_accecare_assordare.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Levitazione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-levitazione.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 003 Caratteristica Potenziata",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-003_caratteristica_potenziata.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Volare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-volare.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Ritirata Veloce",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-ritirata-veloce.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Infliggi Ferite",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-infliggi-ferite.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Scurovisione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-scurovisione.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Fulmine Tracciante",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-fulmine-tracciante.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Mani Brucianti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-mani-brucianti.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Anatema",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-anatema.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Resistenza",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-resistenza.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Mondare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-mondare.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Benedizione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-benedizione.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Lentezza",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-lentezza.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Cura Ferite",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-cura-ferite.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Parola Guaritrice",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-parola-guaritrice.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Oscurita",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-oscurita.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Assicurazione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-assicurazione.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Sacra Fiamma",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-sacra-fiamma.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 020 Animare I Morti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-020_animare_i_morti.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Spruzzo Velenoso",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-spruzzo-velenoso.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Eroismo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-eroismo.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Frantumare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-frantumare.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 002 Purificare Cibo E Bevande",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-002_purificare_cibo_e_bevande.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Raggio Di Gelo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-raggio-di-gelo.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Lama Arcana",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-lama-arcana.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 011 Guardiani Spirituali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-011_guardiani_spirituali.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 006 Dissolvi Magie",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-006_dissolvi_magie.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Amicizia",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-amicizia.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Mano Magica",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-mano-magica.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Charme",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-charme.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Produrre Fiamma",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-produrre-fiamma.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Luce",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-luce.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Marchio Incandescente",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-marchio-incandescente.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Banchetto Dei Poveri",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-banchetto-dei-poveri.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Onda Tonante",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-onda-tonante.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Sonno",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-sonno.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Messaggio",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-messaggio.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Raggio Rovente",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-raggio-rovente.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Colpo Shocking",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-colpo-shocking.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Armatura Magica",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-armatura-magica.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Individuazione Magia",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-individuazione-magia.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Artificio Druidico",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-artificio-druidico.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Identificare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-identificare.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 012 Rimuovi Maledizione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-012_rimuovi_maledizione.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Trucchetto Della Mano",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-trucchetto-della-mano.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Randello Incantato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-randello-incantato.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Ragnatela",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-ragnatela.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Invisibilita Superiore",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-invisibilita-superiore.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Vita Falsata",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-vita-falsata.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 005 Creare Cibo E Acqua",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-005_creare_cibo_e_acqua.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Silenzio",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-silenzio.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Blocca Persone",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-blocca-persone.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 009 Protezione Dal Bene E Dal Male",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-009_protezione_dal_bene_e_dal_male.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 004 Ristorare Inferiore",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-004_ristorare_inferiore.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 008 Eroismo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-008_eroismo.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Palla Di Fuoco",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-palla-di-fuoco.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Riparare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-riparare.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 021 Scagliare Maledizione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-021_scagliare_maledizione.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Colpo Accurato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-colpo-accurato.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 014 Passo Senza Tracce",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-014_passo_senza_tracce.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Emanazione Angelica",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-emanazione-angelica.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Deflagrazione Occulta",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-deflagrazione-occulta.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 007 Fiamma Sacra",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-007_fiamma_sacra.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Prestidigitazione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-prestidigitazione.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Porta Dimensionale",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-porta-dimensionale.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Comprensione Linguaggi",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-comprensione-linguaggi.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Illusione Minore",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-illusione-minore.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 017 Sonno",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-017_sonno.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Tocco Gelido",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-tocco-gelido.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Scudo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-scudo.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Dardo Di Fuoco",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-dardo-di-fuoco.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 019 Crescita Di Spine",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-019_crescita_di_spine.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 001 Benedizione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-001_benedizione.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Beffa Crudele",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-beffa-crudele.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Bollo Di Qualita",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-bollo-di-qualita.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Esorcismo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-esorcismo.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Passo Fatato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-passo-fatato.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Invisibilita",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-invisibilita.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Racconto Agghiacciante",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-racconto-agghiacciante.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Fiotto Acido",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-fiotto-acido.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Blocca Mostri",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-blocca-mostri.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Taumaturgia",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-taumaturgia.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Controincantesimo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-controincantesimo.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 016 Anatema",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-016_anatema.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 010 Arma Spirituale",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-010_arma_spirituale.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Comando",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-comando.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Dardo Incantato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-dardo-incantato.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Suggestione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-suggestione.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 015 Evoca Cavalcatura",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-015_evoca_cavalcatura.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Velocita",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-velocita.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, activation, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 013 Comando",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-013_comando.json",
+      "issue_type": "structure",
+      "fix_applied": "basic_structure, components, activation, duration, target, range",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Guida",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-guida.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Individuazione del Magico",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellindividuazionemagia.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Passo Traslato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-passo-traslato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Guida",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellguida.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Base 018 Accecare Assordare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-018_accecare_assordare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Marchio Incandescente",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellmarchioincandescente.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Levitazione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-levitazione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 003 Caratteristica Potenziata",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-003_caratteristica_potenziata.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Volare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-volare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Ritirata Veloce",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-ritirata-veloce.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Infliggi Ferite",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-infliggi-ferite.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Lentezza",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelllentezza.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 3
+    },
+    {
+      "spell_name": "Spell Scurovisione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-scurovisione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Fulmine Tracciante",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-fulmine-tracciante.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Mani Brucianti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-mani-brucianti.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Palla di Fuoco",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellpalladifuoco.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 3
+    },
+    {
+      "spell_name": "Spell Anatema",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-anatema.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Fiotto Acido",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellfiottoacido.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Oscurità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelloscurita.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Spell Resistenza",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-resistenza.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Mondare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-mondare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Passo Fatato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellpassofatato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Benedizione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-benedizione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Luce",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellluce.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Lentezza",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-lentezza.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Cura Ferite",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-cura-ferite.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Parola Guaritrice",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-parola-guaritrice.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Oscurita",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-oscurita.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Dardo Incantato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelldardoincantato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Assicurazione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-assicurazione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Sacra Fiamma",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-sacra-fiamma.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 020 Animare I Morti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-020_animare_i_morti.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Comprensione dei Linguaggi",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellcomprensionelinguaggi.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Spruzzo Velenoso",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-spruzzo-velenoso.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Invisibilità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellinvisibilita.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Charme",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellcharme.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Eroismo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-eroismo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Esorcismo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellesorcismo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Spell Frantumare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-frantumare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Prestidigitazione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellprestidigitazione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Colpo Accurato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellcolpoaccurato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Base 002 Purificare Cibo E Bevande",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-002_purificare_cibo_e_bevande.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Raggio Di Gelo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-raggio-di-gelo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Lama Arcana",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-lama-arcana.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 011 Guardiani Spirituali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-011_guardiani_spirituali.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Infliggi Ferite",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellinfliggiferite.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Tocco Gelido",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelltoccogelido.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Base 006 Dissolvi Magie",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-006_dissolvi_magie.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Amicizia",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-amicizia.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Mani Brucianti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellmanibrucianti.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Raggio Rovente",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellraggiorovente.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Spell Mano Magica",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-mano-magica.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Charme",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-charme.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Produrre Fiamma",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellprodurrefiamma.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Blocca Persone",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellbloccapersone.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Spell Produrre Fiamma",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-produrre-fiamma.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Luce",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-luce.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Marchio Incandescente",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-marchio-incandescente.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Sonno",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellsonno.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Banchetto Dei Poveri",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-banchetto-dei-poveri.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Eroismo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelleroismo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Onda Tonante",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-onda-tonante.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Sonno",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-sonno.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Artificio Druidico",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellartificiodruidico.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Messaggio",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-messaggio.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Raggio Rovente",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-raggio-rovente.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Bollo di Qualità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellbollodiqualita.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Colpo Shocking",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-colpo-shocking.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Taumaturgia",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelltaumaturgia.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Armatura Magica",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-armatura-magica.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Individuazione Magia",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-individuazione-magia.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Controincantesimo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellcontroincantesimo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 3
+    },
+    {
+      "spell_name": "Spell Artificio Druidico",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-artificio-druidico.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Identificare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-identificare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 012 Rimuovi Maledizione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-012_rimuovi_maledizione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Trucchetto Della Mano",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-trucchetto-della-mano.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Volare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellvolare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 3
+    },
+    {
+      "spell_name": "Spell Randello Incantato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-randello-incantato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Amicizia",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellamicizia.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Ragnatela",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-ragnatela.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Suggestione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellsuggestione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Spell Invisibilita Superiore",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-invisibilita-superiore.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Anatema",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellanatema.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Fulmine Tracciante",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellfulminetracciante.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Vita Falsata",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-vita-falsata.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Mondare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellmondare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 3
+    },
+    {
+      "spell_name": "Spell Base 005 Creare Cibo E Acqua",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-005_creare_cibo_e_acqua.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Dardo di Fuoco",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelldardodifuoco.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Invisibilità Superiore",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellinvisibilitasuperiore.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 4
+    },
+    {
+      "spell_name": "Passo Traslato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellpassotraslato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Spell Silenzio",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-silenzio.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Levitazione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelllevitazione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Spell Blocca Persone",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-blocca-persone.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 009 Protezione Dal Bene E Dal Male",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-009_protezione_dal_bene_e_dal_male.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Comando",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellcomando.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Onda Tonante",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellondatonante.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Ritirata Veloce",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellritirataveloce.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 004 Ristorare Inferiore",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-004_ristorare_inferiore.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Ragnatela",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellragnatela.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Riparare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellriparare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Base 008 Eroismo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-008_eroismo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Blocca Mostri",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellbloccamostri.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 5
+    },
+    {
+      "spell_name": "Benedizione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellbenedizione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Palla Di Fuoco",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-palla-di-fuoco.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Lama Arcana",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelllamaarcana.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Riparare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-riparare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 021 Scagliare Maledizione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-021_scagliare_maledizione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Colpo Accurato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-colpo-accurato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 014 Passo Senza Tracce",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-014_passo_senza_tracce.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Emanazione Angelica",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-emanazione-angelica.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Armatura Magica",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellarmaturamagica.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Deflagrazione Occulta",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-deflagrazione-occulta.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 007 Fiamma Sacra",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-007_fiamma_sacra.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Prestidigitazione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-prestidigitazione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Silenzio",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellsilenzio.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Randello Incantato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellrandelloincantato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Trucchetto della Mano",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelltrucchettodellamano.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Porta Dimensionale",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-porta-dimensionale.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Comprensione Linguaggi",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-comprensione-linguaggi.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Messaggio",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellmessaggio.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Illusione Minore",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-illusione-minore.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Identificare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellidentificare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 017 Sonno",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-017_sonno.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Tocco Gelido",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-tocco-gelido.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Scudo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-scudo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spruzzo Velenoso",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellspruzzovelenoso.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Resistenza",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellresistenza.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Parola Guaritrice",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellparolaguaritrice.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Scurovisione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellscurovisione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Spell Dardo Di Fuoco",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-dardo-di-fuoco.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Scudo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellscudo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Racconto Agghiacciante",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellraccontoagghiacciante.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Velocità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellvelocita.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 3
+    },
+    {
+      "spell_name": "Spell Base 019 Crescita Di Spine",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-019_crescita_di_spine.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 001 Benedizione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-001_benedizione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Beffa Crudele",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-beffa-crudele.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Bollo Di Qualita",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-bollo-di-qualita.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Esorcismo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-esorcismo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Emanazione Angelica",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellemanazioneangelica.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 3
+    },
+    {
+      "spell_name": "Raggio di Gelo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellraggiodigelo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Assicurazione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellassicurazione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 3
+    },
+    {
+      "spell_name": "Spell Passo Fatato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-passo-fatato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Vita Falsata",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellvitafalsata.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Banchetto dei Poveri",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellbanchettodeipoveri.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 3
+    },
+    {
+      "spell_name": "Mano Magica",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellmanomagica.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Deflagrazione Occulta",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spelldeflagrazioneocculta.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Invisibilita",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-invisibilita.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Racconto Agghiacciante",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-racconto-agghiacciante.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Porta Dimensionale",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellportadimensionale.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 4
+    },
+    {
+      "spell_name": "Spell Fiotto Acido",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-fiotto-acido.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Blocca Mostri",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-blocca-mostri.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Taumaturgia",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-taumaturgia.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Controincantesimo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-controincantesimo.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Cura Ferite",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellcuraferite.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 016 Anatema",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-016_anatema.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 010 Arma Spirituale",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-010_arma_spirituale.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Comando",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-comando.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Frantumare",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellfrantumare.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 2
+    },
+    {
+      "spell_name": "Spell Dardo Incantato",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-dardo-incantato.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Illusione Minore",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellillusioneminore.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Colpo Shocking",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellcolposhocking.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Suggestione",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-suggestione.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Beffa Crudele",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellbeffacrudele.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    },
+    {
+      "spell_name": "Spell Base 015 Evoca Cavalcatura",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-015_evoca_cavalcatura.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Velocita",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-velocita.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Spell Base 013 Comando",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spell-base-013_comando.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 1
+    },
+    {
+      "spell_name": "Sacra Fiamma",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/incantesimi/_source/spellsacrafiamma.json",
+      "issue_type": "preparation",
+      "fix_applied": "preparation_structure",
+      "spell_level": 0
+    }
+  ],
+  "spell_system_standards": {
+    "schools": {
+      "abj": "Abjuration",
+      "con": "Conjuration",
+      "div": "Divination",
+      "enc": "Enchantment",
+      "evo": "Evocation",
+      "ill": "Illusion",
+      "nec": "Necromancy",
+      "trs": "Transmutation"
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "levels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "preparation_modes": [
+      "prepared",
+      "always",
+      "atwill",
+      "innate",
+      "ritual"
+    ]
+  }
+}

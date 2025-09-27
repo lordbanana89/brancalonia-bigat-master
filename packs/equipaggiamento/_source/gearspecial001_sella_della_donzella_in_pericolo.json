@@ -1,9 +1,9 @@
 {
   "_id": "gearspecial001selladelladonzellainpericoloefdb16",
-  "_key": "!items!gearspecial001selladelladonzellainpericoloefdb16",
+  "_key": "!item!gearspecial001selladelladonzellainpericoloefdb16",
   "name": "Sella della Donzella in Pericolo",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Sella con meccanismo a scatto ideata da Cinquina d'Oltrefossa per fingere situazioni di difficoltà.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

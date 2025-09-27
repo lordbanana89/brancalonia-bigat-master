@@ -19,7 +19,7 @@
   "name": "Punizione Migliorata",
   "img": "icons/magic/holy/projectiles-blades-salvo-yellow.webp",
   "_id": "class-paladino-livello_11-punizione-migliorata",
-  "_key": "!items!class-paladino-livello_11-punizione-migliorata",
+  "_key": "!item!class-paladino-livello_11-punizione-migliorata",
   "ownership": {
     "default": 0
   },

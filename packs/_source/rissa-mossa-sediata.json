@@ -1,0 +1,39 @@
+{
+  "_id": "rissamossasediata9dee9c",
+  "_key": "!journal!rissamossasediata9dee9c",
+  "name": "Sediata",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "rissamossasediata9dee9cpage1",
+      "name": "Sediata",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-sediata",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

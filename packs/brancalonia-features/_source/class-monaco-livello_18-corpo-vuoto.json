@@ -36,7 +36,7 @@
   "name": "Corpo Vuoto",
   "img": "icons/magic/life/heart-shadow-purple.webp",
   "_id": "class-monaco-livello_18-corpo-vuoto",
-  "_key": "!items!class-monaco-livello_18-corpo-vuoto",
+  "_key": "!item!class-monaco-livello_18-corpo-vuoto",
   "ownership": {
     "default": 0
   },

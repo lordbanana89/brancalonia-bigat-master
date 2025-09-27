@@ -1,0 +1,17 @@
+{
+  "_id": "rissabatoste56c807b",
+  "_key": "!journal!rissabatoste56c807b",
+  "name": "K.O.",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-batoste-5",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

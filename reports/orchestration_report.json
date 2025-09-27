@@ -1,0 +1,84 @@
+{
+  "orchestration_timestamp": "2025-09-27T11:31:00.706394",
+  "total_execution_time": 2.9458119869232178,
+  "overall_status": "CRITICAL_FAILURE",
+  "success_rate": 83.33333333333334,
+  "agent_summary": {
+    "total_agents": 6,
+    "successful": 5,
+    "failed": 1,
+    "skipped": 0
+  },
+  "agent_results": [
+    {
+      "agent_name": "Pack Validator",
+      "status": "SUCCESS",
+      "execution_time": 0.1869182586669922,
+      "summary": {
+        "raw_output": "\n🔍 Pack Validation Complete!\n📊 Found 973 total issues\n📁 Reports saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/\n",
+        "completed": true
+      },
+      "error_message": null
+    },
+    {
+      "agent_name": "Item Linker",
+      "status": "SUCCESS",
+      "execution_time": 0.14706897735595703,
+      "summary": {
+        "raw_output": "\n🔗 Item Linking Complete!\n📊 Indexed 993 items\n🔧 Fixed 0 broken links\n📁 Reports saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/\n",
+        "completed": true
+      },
+      "error_message": null
+    },
+    {
+      "agent_name": "Class Builder",
+      "status": "SUCCESS",
+      "execution_time": 0.0656290054321289,
+      "summary": {
+        "raw_output": "\n🏗️ Class Building Complete!\n📊 Rebuilt 12 classes\n🔧 Applied 12 fixes\n📁 Reports saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/\n",
+        "completed": true,
+        "fixes_applied": 12
+      },
+      "error_message": null
+    },
+    {
+      "agent_name": "RollTable Fixer",
+      "status": "SUCCESS",
+      "execution_time": 0.233659029006958,
+      "summary": {
+        "raw_output": "\n🎲 RollTable Fixing Complete!\n📊 Analyzed 81 tables\n🔧 Applied 151 fixes\n📁 Reports saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/\n",
+        "completed": true,
+        "fixes_applied": 151
+      },
+      "error_message": null
+    },
+    {
+      "agent_name": "Spell System",
+      "status": "SUCCESS",
+      "execution_time": 0.12271881103515625,
+      "summary": {
+        "raw_output": "\n🔮 Spell System Integration Complete!\n📊 Validated 167 spells\n🔧 Applied 261 fixes\n📁 Reports saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/\n",
+        "completed": true,
+        "items_validated": 167,
+        "fixes_applied": 261
+      },
+      "error_message": null
+    },
+    {
+      "agent_name": "Test Runner",
+      "status": "FAILED",
+      "execution_time": 1.995631217956543,
+      "summary": {},
+      "error_message": "2025-09-27 11:30:58,828 - Test Runner - INFO - FVTT CLI available: 3.0.0\n2025-09-27 11:30:58,828 - Test Runner - INFO - Starting comprehensive test suite for D&D 5e v5.1.9\n2025-09-27 11:30:58,828 - Test Runner - INFO - Phase 1: Running JSON validation tests...\n2025-09-27 11:30:58,829 - Test Runner - INFO - Testing JSON validation for pack: equipaggiamento\n2025-09-27 11:30:58,850 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-equipment\n2025-09-27 11:30:58,851 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-spell\n2025-09-27 11:30:58,852 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-feats\n2025-09-27 11:30:58,852 - Test Runner - INFO - Testing JSON validation for pack: rollable-tables\n2025-09-27 11:30:58,858 - Test Runner - INFO - Testing JSON validation for pack: backgrounds\n2025-09-27 11:30:58,859 - Test Runner - INFO - Testing JSON validation for pack: regole\n2025-09-27 11:30:58,862 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-features\n2025-09-27 11:30:58,873 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-journal\n2025-09-27 11:30:58,873 - Test Runner - INFO - Testing JSON validation for pack: emeriticenze\n2025-09-27 11:30:58,874 - Test Runner - INFO - Testing JSON validation for pack: macro\n2025-09-27 11:30:58,874 - Test Runner - INFO - Testing JSON validation for pack: incantesimi\n2025-09-27 11:30:58,880 - Test Runner - INFO - Testing JSON validation for pack: sottoclassi\n2025-09-27 11:30:58,881 - Test Runner - INFO - Testing JSON validation for pack: razze\n2025-09-27 11:30:58,881 - Test Runner - INFO - Testing JSON validation for pack: classi\n2025-09-27 11:30:58,882 - Test Runner - INFO - Testing JSON validation for pack: npc\n2025-09-27 11:30:58,887 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-objects\n2025-09-27 11:30:58,887 - Test Runner - INFO - Testing JSON validation for pack: talenti\n2025-09-27 11:30:58,887 - Test Runner - INFO - Testing JSON validation for pack: rolltables\n2025-09-27 11:30:58,887 - Test Runner - INFO - Testing JSON validation for pack: brancalonia-subclass\n2025-09-27 11:30:58,887 - Test Runner - INFO - Phase 2: Running pack integrity tests...\n2025-09-27 11:30:58,927 - Test Runner - INFO - Phase 3: Running UUID reference tests...\n2025-09-27 11:30:59,022 - Test Runner - INFO - Phase 4: Running class advancement tests...\n2025-09-27 11:30:59,022 - Test Runner - INFO - Phase 5: Running spell system tests...\n2025-09-27 11:30:59,029 - Test Runner - INFO - Phase 6: Running RollTable tests...\n2025-09-27 11:30:59,033 - Test Runner - INFO - Phase 7: Running FVTT CLI tests...\nTraceback (most recent call last):\n  File \"/Users/erik/Desktop/brancalonia-bigat-master/scripts/test_runner_agent.py\", line 878, in <module>\n    results = agent.run_comprehensive_tests()\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/erik/Desktop/brancalonia-bigat-master/scripts/test_runner_agent.py\", line 139, in run_comprehensive_tests\n    summary = self.compile_test_summary(all_test_results, total_time)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/erik/Desktop/brancalonia-bigat-master/scripts/test_runner_agent.py\", line 761, in compile_test_summary\n    by_type[result.test_type][result.status.lower()] += 1\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'pass'\n"
+    }
+  ],
+  "critical_failures": [
+    "Test Runner"
+  ],
+  "performance_metrics": {
+    "fastest_agent": "Class Builder",
+    "slowest_agent": "RollTable Fixer",
+    "total_fixes_applied": 424,
+    "total_items_validated": 167
+  }
+}

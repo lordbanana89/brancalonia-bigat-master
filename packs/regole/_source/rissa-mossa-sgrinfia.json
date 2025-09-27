@@ -1,0 +1,17 @@
+{
+  "_id": "rissamossasgrinfiaffa087",
+  "_key": "!journal!rissamossasgrinfiaffa087",
+  "name": "Sgrinfia",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-sgrinfia",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

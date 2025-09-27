@@ -74,7 +74,7 @@
   "name": "Incanalare Divinita Supremo",
   "img": "icons/magic/symbols/cross-circle-blue.webp",
   "_id": "class-chierico-livello_18-incanalare-divinita-supremo",
-  "_key": "!items!class-chierico-livello_18-incanalare-divinita-supremo",
+  "_key": "!item!class-chierico-livello_18-incanalare-divinita-supremo",
   "ownership": {
     "default": 0
   },

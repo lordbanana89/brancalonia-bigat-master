@@ -42,7 +42,7 @@
   "name": "Senso Divino",
   "img": "icons/magic/perception/eye-ringed-glow-angry-yellow.webp",
   "_id": "class-paladino-livello_1-senso-divino",
-  "_key": "!items!class-paladino-livello_1-senso-divino",
+  "_key": "!item!class-paladino-livello_1-senso-divino",
   "ownership": {
     "default": 0
   },

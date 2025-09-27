@@ -1,6 +1,6 @@
 {
   "_id": "armastd004asciadamanoe11a34",
-  "_key": "!items!armastd004asciadamanoe11a34",
+  "_key": "!item!armastd004asciadamanoe11a34",
   "name": "Ascia da Mano",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,10 +24,10 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "handaxe",
-    "properties": [
-      "lgt",
-      "thr"
-    ],
+    "properties": {
+      "lgt": true,
+      "thr": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

@@ -1,0 +1,105 @@
+2025-09-27 11:30:58,176 - Item Linker - INFO - Starting comprehensive item linking for D&D 5e v5.1.9
+2025-09-27 11:30:58,176 - Item Linker - INFO - Phase 1: Building item registry...
+2025-09-27 11:30:58,176 - Item Linker - INFO - Indexing pack: equipaggiamento
+2025-09-27 11:30:58,184 - Item Linker - INFO - Indexing pack: brancalonia-equipment
+2025-09-27 11:30:58,185 - Item Linker - INFO - Indexing pack: brancalonia-spell
+2025-09-27 11:30:58,185 - Item Linker - INFO - Indexing pack: brancalonia-feats
+2025-09-27 11:30:58,185 - Item Linker - INFO - Indexing pack: rollable-tables
+2025-09-27 11:30:58,188 - Item Linker - INFO - Indexing pack: backgrounds
+2025-09-27 11:30:58,188 - Item Linker - INFO - Indexing pack: regole
+2025-09-27 11:30:58,191 - Item Linker - INFO - Indexing pack: brancalonia-features
+2025-09-27 11:30:58,203 - Item Linker - WARNING - No _source directory in pack: _source
+2025-09-27 11:30:58,203 - Item Linker - INFO - Indexing pack: brancalonia-journal
+2025-09-27 11:30:58,203 - Item Linker - INFO - Indexing pack: emeriticenze
+2025-09-27 11:30:58,203 - Item Linker - INFO - Indexing pack: macro
+2025-09-27 11:30:58,204 - Item Linker - INFO - Indexing pack: incantesimi
+2025-09-27 11:30:58,210 - Item Linker - WARNING - No _source directory in pack: brancalonia.
+2025-09-27 11:30:58,210 - Item Linker - INFO - Indexing pack: sottoclassi
+2025-09-27 11:30:58,211 - Item Linker - INFO - Indexing pack: razze
+2025-09-27 11:30:58,211 - Item Linker - INFO - Indexing pack: classi
+2025-09-27 11:30:58,212 - Item Linker - INFO - Indexing pack: npc
+2025-09-27 11:30:58,217 - Item Linker - INFO - Indexing pack: brancalonia-objects
+2025-09-27 11:30:58,217 - Item Linker - INFO - Indexing pack: talenti
+2025-09-27 11:30:58,217 - Item Linker - INFO - Indexing pack: rolltables
+2025-09-27 11:30:58,217 - Item Linker - INFO - Indexing pack: brancalonia-subclass
+2025-09-27 11:30:58,218 - Item Linker - INFO - Registry built: 993 items indexed
+2025-09-27 11:30:58,218 - Item Linker - INFO - Phase 2: Analyzing current links...
+2025-09-27 11:30:58,273 - Item Linker - INFO - Phase 3: Fixing broken links...
+2025-09-27 11:30:58,273 - Item Linker - INFO - Phase 4: Rebuilding class advancement...
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 1: Difesa Senza Armatura
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 1: Arti Marziali
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 2: Ki
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 2: Movimento Senza Armatura
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 3: Tradizione Monastica
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 4: Caduta Lenta
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 5: Attacco Extra
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 6: Colpi Potenziati dal Ki
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 6: Privilegio della Tradizione
+2025-09-27 11:30:58,273 - Item Linker - INFO - Fixed feature UUID for Monaco level 7: Evasione
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Monaco level 7: Quiete della Mente
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Monaco level 8: Privilegio della Tradizione
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Monaco level 9: Movimento Senza Armatura Migliorato
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Monaco level 10: Purezza del Corpo
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Monaco level 11: Privilegio della Tradizione
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Monaco level 14: Anima di Diamante
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Monaco level 15: Corpo Senza Tempo
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Monaco level 17: Privilegio della Tradizione
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Monaco level 18: Corpo Vuoto
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Ranger level 1: Nemico Favorito
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Ranger level 2: Stile di Combattimento
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Ranger level 2: Incantesimi
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Ranger level 3: Archetipo del Ranger
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Ranger level 5: Attacco Extra
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Warlock level 1: Patrono Ultraterreno
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Warlock level 1: Magia del Patto
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Warlock level 2: Invocazioni Occulte
+2025-09-27 11:30:58,274 - Item Linker - INFO - Fixed feature UUID for Warlock level 3: Dono del Patto
+2025-09-27 11:30:58,275 - Item Linker - INFO - Fixed feature UUID for Warlock level 4: Aumento Caratteristica
+2025-09-27 11:30:58,275 - Item Linker - INFO - Fixed feature UUID for Guerriero level 1: Stile di Combattimento
+2025-09-27 11:30:58,275 - Item Linker - INFO - Fixed feature UUID for Guerriero level 3: Archetipo Marziale
+2025-09-27 11:30:58,275 - Item Linker - INFO - Fixed feature UUID for Guerriero level 5: Attacco Extra
+2025-09-27 11:30:58,275 - Item Linker - INFO - Fixed feature UUID for Guerriero level 9: Indomabile
+2025-09-27 11:30:58,275 - Item Linker - INFO - Fixed feature UUID for Guerriero level 11: Attacco Extra (2)
+2025-09-27 11:30:58,275 - Item Linker - INFO - Fixed feature UUID for Guerriero level 20: Attacco Extra (3)
+2025-09-27 11:30:58,275 - Item Linker - INFO - Fixed feature UUID for Ladro level 1: Competenza
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Ladro level 1: Attacco Furtivo
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Ladro level 1: Gergo Ladresco
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Ladro level 2: Azione Astuta
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Ladro level 5: Schivata Prodigiosa
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Ladro level 7: Evasione
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Ladro level 11: Talento Affidabile
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Ladro level 14: Percezione Cieca
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Ladro level 15: Mente Sfuggente
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Ladro level 18: Inafferrabile
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Chierico level 1: Incantesimi
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Chierico level 1: Dominio Divino
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Chierico level 2: Incanalare Divinità
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Chierico level 5: Distruggere Non Morti
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Chierico level 10: Intervento Divino
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Chierico level 20: Intervento Divino Migliorato
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Druido level 1: Druidico
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Druido level 1: Incantesimi
+2025-09-27 11:30:58,276 - Item Linker - INFO - Fixed feature UUID for Druido level 2: Forma Selvatica
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Druido level 2: Circolo Druidico
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Druido level 18: Senza Tempo
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 1: Senso Divino
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 1: Imposizione delle Mani
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 2: Stile di Combattimento
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 2: Incantesimi
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 2: Colpo Divino
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 3: Giuramento Sacro
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 5: Attacco Extra
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 6: Aura di Protezione
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 10: Aura di Coraggio
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Paladino level 11: Colpo Divino Migliorato
+2025-09-27 11:30:58,277 - Item Linker - INFO - Fixed feature UUID for Stregone level 1: Incantesimi
+2025-09-27 11:30:58,278 - Item Linker - INFO - Fixed feature UUID for Stregone level 1: Origine Stregonesca
+2025-09-27 11:30:58,278 - Item Linker - INFO - Fixed feature UUID for Stregone level 3: Metamagia
+2025-09-27 11:30:58,278 - Item Linker - INFO - Fixed feature UUID for Bardo level 1: Incantesimi
+2025-09-27 11:30:58,278 - Item Linker - INFO - Fixed feature UUID for Bardo level 1: Ispirazione Bardica
+2025-09-27 11:30:58,278 - Item Linker - INFO - Fixed feature UUID for Bardo level 2: Tuttofare
+2025-09-27 11:30:58,278 - Item Linker - INFO - Fixed feature UUID for Bardo level 3: Competenza
+2025-09-27 11:30:58,278 - Item Linker - INFO - Fixed feature UUID for Bardo level 3: Collegio Bardico
+2025-09-27 11:30:58,278 - Item Linker - INFO - Phase 5: Linking background features...
+2025-09-27 11:30:58,280 - Item Linker - INFO - Linking report saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/item_linking_report.json
+2025-09-27 11:30:58,280 - Item Linker - INFO - Linking summary saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/item_linking_summary.md

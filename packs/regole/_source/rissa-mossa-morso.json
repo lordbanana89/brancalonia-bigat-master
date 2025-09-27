@@ -1,0 +1,17 @@
+{
+  "_id": "rissamossamorso142f40",
+  "_key": "!journal!rissamossamorso142f40",
+  "name": "Morso",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-morso",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

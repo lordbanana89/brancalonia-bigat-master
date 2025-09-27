@@ -20,7 +20,7 @@ export class BrancaloniaUIHooks {
         Hooks.on("renderJournalPageSheet", this.enhanceJournalEntry.bind(this));
 
         // Chat message hooks - Handle deprecated hook with backward compatibility
-        const chatHook = game.release?.generation >= 12 ? "renderChatMessage" : "renderChatMessage";
+        const chatHook = game.release?.generation >= 12 ? "renderChatLog" : "renderChatLog";
         Hooks.on(chatHook, this.enhanceChatMessage.bind(this));
 
         // UI component hooks
@@ -43,7 +43,7 @@ export class BrancaloniaUIHooks {
         Hooks.on("renderTokenHUD", this.enhanceTokenHUD.bind(this));
 
         // Roll hooks
-        Hooks.on("renderChatMessage", this.addItalianRollFlavor.bind(this));
+        Hooks.on("renderChatLog", this.addItalianRollFlavor.bind(this));
         Hooks.on("preCreateChatMessage", this.preprocessChatMessage.bind(this));
 
         console.log("Brancalonia | UI Hooks initialized successfully!");

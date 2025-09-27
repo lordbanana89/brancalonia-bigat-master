@@ -1,6 +1,6 @@
 {
   "_id": "spellbloccapersone0b7189",
-  "_key": "!items!spellbloccapersone0b7189",
+  "_key": "!item!spellbloccapersone0b7189",
   "name": "Blocca Persone",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

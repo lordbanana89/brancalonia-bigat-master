@@ -1,9 +1,9 @@
 {
   "_id": "armstd001armaturaimbottita66110f",
-  "_key": "!items!armstd001armaturaimbottita66110f",
+  "_key": "!item!armstd001armaturaimbottita66110f",
   "name": "Armatura Imbottita",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Giacca trapuntata imbottita di lana o cotone.</p>",
@@ -33,7 +33,7 @@
       "dex": null,
       "magicalBonus": 0
     },
-    "strength": null,
+    "strength": "—",
     "stealth": false,
     "proficient": true,
     "properties": {},
@@ -47,10 +47,6 @@
       "max": "",
       "per": null,
       "recovery": ""
-    },
-    "speed": {
-      "value": null,
-      "conditions": ""
     }
   },
   "effects": [],

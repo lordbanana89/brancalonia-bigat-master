@@ -1,73 +1,25 @@
 {
-  "id": "spell-lama-arcana",
-  "nome": "Lama Arcana",
-  "nome_inglese": "Blade Ward",
-  "livello": 0,
-  "scuola": "Abiurazione",
-  "tempo_lancio": "1 azione",
-  "gittata": "Personale",
-  "componenti": {
-    "verbale": true,
-    "somatica": true
-  },
-  "durata": "1 round",
-  "descrizione": "Estendi la tua mano e tracci un sigillo di protezione nell'aria. Fino alla fine del tuo prossimo turno, hai resistenza contro i danni contundenti, perforanti e taglienti inflitti da attacchi con arma.",
-  "classi": [
-    "Bardo",
-    "Mago",
-    "Stregone",
-    "Warlock"
-  ],
-  "implementazione_foundry": {
-    "tipo": "cantrip",
-    "attivazione": "action",
-    "range": "self",
-    "durata": "1 round",
-    "resistenze": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ]
-  },
-  "analisi_problemi": {
-    "action_economy": "Costa azione intera",
-    "opportunita_persa": "Non attacchi/cast spell",
-    "solo_weapon_attacks": "Non protegge da spell/saves",
-    "durata_breve": "Solo fino prossimo turno"
-  },
-  "quando_pessimo": [
-    "Meglio uccidere/disabilitare nemico",
-    "Dodge action spesso migliore",
-    "Disengage per fuggire meglio",
-    "Attaccare quasi sempre better"
-  ],
-  "quando_forse_utile": [
-    "Eldritch Knight con War Magic",
-    "Aspettare rinforzi",
-    "Tanking inevitabile",
-    "Buying time situazioni disperate"
-  ],
-  "matematica": {
-    "riduzione": "50% danni fisici",
-    "confronto_dodge": "Dodge può evitare tutto",
-    "valore_azione": "Raramente vale un'azione"
-  },
-  "note_dm": "Blade Ward è considerato uno dei peggiori cantrip. Action economy terribile. Casi d'uso estremamente limitati.",
-  "fonte": "D&D 5e PHB p.218",
-  "name": "Spell Lama Arcana",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-lama-arcana",
-  "_key": "!items!spell-lama-arcana",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spelllamaarcanab0b5b2",
+  "_key": "!item!spelllamaarcanab0b5b2",
+  "name": "Lama Arcana",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
-    "school": "evo",
+    "description": {
+      "value": "<p>Estendi la tua mano e tracci un sigillo di protezione nell'aria. Fino alla fine del tuo prossimo turno, hai resistenza contro i danni contundenti, perforanti e taglienti inflitti da attacchi con arma.</p><h3>Note per il DM</h3><p><em>Blade Ward è considerato uno dei peggiori cantrip. Action economy terribile. Casi d'uso estremamente limitati.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.218",
+    "level": 0,
+    "school": "abj",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -80,26 +32,84 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 1,
+      "units": "round"
     },
     "range": {
-      "value": "",
-      "units": "ft"
+      "value": null,
+      "long": null,
+      "units": "self"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-lama-arcana",
+      "fonte": "D&D 5e PHB p.218",
+      "note_dm": "Blade Ward è considerato uno dei peggiori cantrip. Action economy terribile. Casi d'uso estremamente limitati.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": "self",
+        "durata": "1 round",
+        "resistenze": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Abiurazione",
+        "level": 0
       }
     }
   }

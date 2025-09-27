@@ -1,9 +1,9 @@
 {
   "_id": "dsZf0wLpGp1wFYQa",
-  "_key": "!items!dsZf0wLpGp1wFYQa",
+  "_key": "!item!dsZf0wLpGp1wFYQa",
   "name": "Duro - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!9oMpUjRtDi9qzqzk"
     },
     {
       "_id": "2RRc3iSFsBaWZ3er",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!2RRc3iSFsBaWZ3er"
     },
     {
       "_id": "ylexA3TLLq7AojZU",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!ylexA3TLLq7AojZU"
     },
     {
       "_id": "1UeJnKGylHUPE0ke",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!1UeJnKGylHUPE0ke"
     },
     {
       "_id": "Xk4CH7y7Ix9gbJr2",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Xk4CH7y7Ix9gbJr2"
     },
     {
       "_id": "0hwEwh4kL0xQGHsi",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!0hwEwh4kL0xQGHsi"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "duro",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

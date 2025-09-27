@@ -1,9 +1,9 @@
 {
   "_id": "w1cx9eMh06XFaGBG",
-  "_key": "!items!w1cx9eMh06XFaGBG",
+  "_key": "!item!w1cx9eMh06XFaGBG",
   "name": "Attaccabrighe - Legami",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!EKJPAHskBzMQ2IV6"
     },
     {
       "_id": "RJZvriawBGOJ2e71",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!RJZvriawBGOJ2e71"
     },
     {
       "_id": "DE5d4uVRUHEmlU1h",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!DE5d4uVRUHEmlU1h"
     },
     {
       "_id": "h9Wbu8HBvWL2Up28",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!h9Wbu8HBvWL2Up28"
     },
     {
       "_id": "XYHL1J5k7L1OnvL0",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!XYHL1J5k7L1OnvL0"
     },
     {
       "_id": "xIOaTPCYAJQgs1G6",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!xIOaTPCYAJQgs1G6"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "attaccabrighe",
       "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

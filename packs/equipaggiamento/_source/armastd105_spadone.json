@@ -1,6 +1,6 @@
 {
   "_id": "armastd105spadonee3fd2e",
-  "_key": "!items!armastd105spadonee3fd2e",
+  "_key": "!item!armastd105spadonee3fd2e",
   "name": "Spadone",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,10 +24,10 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "",
-    "properties": [
-      "hvy",
-      "two"
-    ],
+    "properties": {
+      "hvy": true,
+      "two": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

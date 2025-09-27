@@ -132,7 +132,7 @@
   "name": "Tradizione Arcana Privilegio",
   "img": "icons/sundries/books/book-open-purple.webp",
   "_id": "class-mago-livello_6-tradizione-arcana-privilegio",
-  "_key": "!items!class-mago-livello_6-tradizione-arcana-privilegio",
+  "_key": "!item!class-mago-livello_6-tradizione-arcana-privilegio",
   "ownership": {
     "default": 0
   },

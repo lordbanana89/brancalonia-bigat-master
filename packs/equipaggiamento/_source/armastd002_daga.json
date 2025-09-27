@@ -1,6 +1,6 @@
 {
   "_id": "armastd002dagab32f14",
-  "_key": "!items!armastd002dagab32f14",
+  "_key": "!item!armastd002dagab32f14",
   "name": "Daga",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,10 +24,10 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "",
-    "properties": [
-      "lgt",
-      "thr"
-    ],
+    "properties": {
+      "lgt": true,
+      "thr": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

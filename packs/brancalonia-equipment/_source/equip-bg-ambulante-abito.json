@@ -1,6 +1,6 @@
 {
   "_id": "equip-bg-ambulante-abito",
-  "_key": "!items!equip-bg-ambulante-abito",
+  "_key": "!item!equip-bg-ambulante-abito",
   "name": "Abito da viaggiatore",
   "type": "equipment",
   "img": "icons/equipment/chest/shirt-simple-white.webp",

@@ -1,9 +1,9 @@
 {
   "_id": "lPlRuiRkpbpPvxPB",
-  "_key": "!items!lPlRuiRkpbpPvxPB",
+  "_key": "!item!lPlRuiRkpbpPvxPB",
   "name": "Duro - Difetti",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!6NvMJa1fgGzrom94"
     },
     {
       "_id": "VGcluE9KBJVt0Alh",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!VGcluE9KBJVt0Alh"
     },
     {
       "_id": "ymxMGQgCCormYF3R",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!ymxMGQgCCormYF3R"
     },
     {
       "_id": "Y2hKng7NnTv9Ox3s",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Y2hKng7NnTv9Ox3s"
     },
     {
       "_id": "e5C6Mpi590TdFHyX",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!e5C6Mpi590TdFHyX"
     },
     {
       "_id": "O8a8ijhIR9f5L0pU",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!O8a8ijhIR9f5L0pU"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "duro",
       "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

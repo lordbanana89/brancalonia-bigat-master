@@ -1,0 +1,37 @@
+{
+  "_id": "tabellacrimini3a6e7d",
+  "_key": "!journal!tabellacrimini3a6e7d",
+  "name": "Regola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "tabellacrimini3a6e7dpage1",
+      "name": "Pagina",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {}
+  }
+}

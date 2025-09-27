@@ -1,0 +1,123 @@
+{
+  "_id": "impresario",
+  "_key": "!items!impresario",
+  "name": "Impresario",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Faccendiere dello spettacolo che organizza compagnie, intrattenimenti e truffe sceniche in tutto il Regno</em></p>\n<p>Guiti, teatranti, burattinai e saltimbanchi si rivolgono all'impresario per trovare palchi, committenti e pubblico pagante.</p>\n<p>Tra agganci nobiliari, clausole capestro e promesse fumose sa far quadrare incassi e spettacoli, improvvisando soluzioni quando tutto sembra crollare.</p>\n<p>Al tavolo delle trattative è un artista di furbizia: sa trasformare fiaschi imminenti in trionfi teatrali o in fughe con l'incasso sotto braccio.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Intuizione e Persuasione</p>\n<p><strong>Competenze Strumenti:</strong> Due tipi di gioco</p>\n<p><strong>Linguaggi:</strong> Baccaglio e Maccheronico</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Libro con i nomi di aspiranti teatranti</li>\n<li>Abito di buona fattura</li>\n<li>Borsa con 20 ma</li>\n</ul>\n\n<h3>Privilegio: Arte di Arrangiarsi</h3>\n<p>È abituato a rimediare a ogni imprevisto scenico: può improvvisare scenografie, personale e repertorio per salvare uno spettacolo o un affare all'ultimo momento.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Parla spesso in Maccheronico e si atteggia a personaggio di fama.</td></tr>\n<tr><td>2</td><td>Agisce sempre in funzione del proprio guadagno.</td></tr>\n<tr><td>3</td><td>Potrebbe convincere chiunque di avere un talento innato.</td></tr>\n<tr><td>4</td><td>Vede la vita come il più grande spettacolo e ne trae ispirazione continua.</td></tr>\n<tr><td>5</td><td>Ama l'arte quanto l'agio e non sacrificherebbe mai l'una per l'altro.</td></tr>\n<tr><td>6</td><td>Considera la parola data poetica ma poco vincolante.</td></tr>\n<tr><td>7</td><td>È alla continua ricerca di nuovi talenti e avventure.</td></tr>\n<tr><td>8</td><td>Vive la propria vita un atto di pièce alla volta.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Comunione. C'è posto per chiunque dietro il sipario. (Buono)</td></tr>\n<tr><td>2</td><td>Liceità. L'arte va espressa nel rispetto di chi ospita lo spettacolo. (Legale)</td></tr>\n<tr><td>3</td><td>Autodeterminazione. Ciò che serve allo spettacolo viene prima di tutto. (Caotico)</td></tr>\n<tr><td>4</td><td>Fino all'osso. Il mondo è di chi sa prenderselo, usando chi serve. (Malvagio)</td></tr>\n<tr><td>5</td><td>Lo spettacolo deve continuare. Qualsiasi cosa accada, la rappresentazione non si ferma. (Neutrale)</td></tr>\n<tr><td>6</td><td>Il copione. Ognuno ha una parte da recitare e nulla accade per caso. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>La mia compagnia è la mia forza.</td></tr>\n<tr><td>2</td><td>Devo tutto al vecchio maestro che mi insegnò il mestiere.</td></tr>\n<tr><td>3</td><td>Proteggo a ogni costo la copia originale del canovaccio de 'La Febbra'.</td></tr>\n<tr><td>4</td><td>Sono segretamente innamorato della mia prima attrice.</td></tr>\n<tr><td>5</td><td>Vivo per regalare emozioni a chiunque incontri.</td></tr>\n<tr><td>6</td><td>Non metterò mai nulla al di sopra dell'arte e dello spettacolo.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Sono geloso di chi possiede un vero talento.</td></tr>\n<tr><td>2</td><td>Sono un truffatore che usa gli altri per il proprio tornaconto.</td></tr>\n<tr><td>3</td><td>Sono un visionario irresponsabile e faccio sempre il passo più lungo della gamba.</td></tr>\n<tr><td>4</td><td>Penso solo allo spettacolo e ai guadagni.</td></tr>\n<tr><td>5</td><td>Pretendo il massimo dagli altri ma io faccio ben poco per loro.</td></tr>\n<tr><td>6</td><td>Ho manie di grandezza e di controllo.</td></tr>\n</tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.37-38",
+    "identifier": "impresario",
+    "advancement": [
+      {
+        "_id": "suJwmfMx",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [],
+            "fixed": [
+              "intuizione",
+              "per"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "intuizione",
+            "per"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "hijyw9ow",
+        "type": "Improvement",
+        "configuration": {
+          "tools": {
+            "chosen": {
+              "count": 2,
+              "pool": [
+                "artisan"
+              ]
+            },
+            "fixed": []
+          }
+        },
+        "value": {
+          "tools": []
+        },
+        "level": 0,
+        "title": "Strumenti del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "Mo9v9yE6",
+        "type": "Improvement",
+        "configuration": {
+          "languages": {
+            "chosen": [],
+            "fixed": [
+              "baccaglio",
+              "maccheronico"
+            ]
+          }
+        },
+        "value": {
+          "languages": [
+            "baccaglio",
+            "maccheronico"
+          ]
+        },
+        "level": 0,
+        "title": "Linguaggi del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      }
+    ],
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "6bdfb65569f6cef4",
+        "type": "linked",
+        "count": 1,
+        "sort": 0,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-impresariolibro-con-i-nomi-di-aspiranti-teatranti-c9b76b"
+      },
+      {
+        "_id": "2bc623b8d02467ca",
+        "type": "linked",
+        "count": 1,
+        "sort": 100000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-impresarioabito-di-buona-fattura-c49596"
+      },
+      {
+        "_id": "33c505841bb26970",
+        "type": "linked",
+        "count": 1,
+        "sort": 200000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-impresarioborsa-con-20-ma-992eda"
+      }
+    ],
+    "wealth": "20 ma"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.37-38",
+      "tipo": "background"
+    }
+  }
+}

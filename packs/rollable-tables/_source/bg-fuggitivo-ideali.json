@@ -1,6 +1,6 @@
 {
   "_id": "10JcVrQVTvsqKVFq",
-  "_key": "!items!10JcVrQVTvsqKVFq",
+  "_key": "!item!10JcVrQVTvsqKVFq",
   "name": "Fuggitivo - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!6KGUL2HXDvMv9S85"
     },
     {
       "_id": "pEq7o2ZzB0oBHNVt",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!pEq7o2ZzB0oBHNVt"
     },
     {
       "_id": "Ow4HpdH1E4r1Rr9P",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Ow4HpdH1E4r1Rr9P"
     },
     {
       "_id": "Spw5JqusmUt6DVwk",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Spw5JqusmUt6DVwk"
     },
     {
       "_id": "3aMnJWbHd5ZtzQAr",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!3aMnJWbHd5ZtzQAr"
     },
     {
       "_id": "zonnutavOVFvLDKC",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!zonnutavOVFvLDKC"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "fuggitivo",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

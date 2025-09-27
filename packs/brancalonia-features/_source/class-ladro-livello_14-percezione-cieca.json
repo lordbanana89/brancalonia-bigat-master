@@ -171,7 +171,7 @@
   "name": "Percezione Cieca",
   "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
   "_id": "class-ladro-livello_14-percezione-cieca",
-  "_key": "!items!class-ladro-livello_14-percezione-cieca",
+  "_key": "!item!class-ladro-livello_14-percezione-cieca",
   "ownership": {
     "default": 0
   },

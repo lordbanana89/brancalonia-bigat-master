@@ -1,9 +1,9 @@
 {
   "_id": "KVbKEG128y8QpLJT",
-  "_key": "!items!KVbKEG128y8QpLJT",
+  "_key": "!item!KVbKEG128y8QpLJT",
   "name": "Brado - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!E44OtTwdkH2PSeJ4"
     },
     {
       "_id": "8zSvi5yXI1jCHLo1",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!8zSvi5yXI1jCHLo1"
     },
     {
       "_id": "nNugSz6fQuGzzrna",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!nNugSz6fQuGzzrna"
     },
     {
       "_id": "cmIW8lAxziUToTzI",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!cmIW8lAxziUToTzI"
     },
     {
       "_id": "q9sv3ydK56Luhj3i",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!q9sv3ydK56Luhj3i"
     },
     {
       "_id": "5DCX7CiuQ2jIbjPU",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!5DCX7CiuQ2jIbjPU"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "brado",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

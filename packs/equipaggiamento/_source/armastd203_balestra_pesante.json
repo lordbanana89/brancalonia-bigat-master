@@ -1,6 +1,6 @@
 {
   "_id": "armastd203balestrapesanted323b0",
-  "_key": "!items!armastd203balestrapesanted323b0",
+  "_key": "!item!armastd203balestrapesanted323b0",
   "name": "Balestra Pesante",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,12 +24,12 @@
     "equipped": false,
     "weaponType": "simpleR",
     "baseItem": "lightCrossbow",
-    "properties": [
-      "amm",
-      "hvy",
-      "lod",
-      "two"
-    ],
+    "properties": {
+      "amm": true,
+      "hvy": true,
+      "lod": true,
+      "two": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

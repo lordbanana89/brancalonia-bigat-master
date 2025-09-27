@@ -168,7 +168,7 @@
   "name": "Cammino Primordiale",
   "img": "icons/environment/wilderness/path-dirt.webp",
   "_id": "class-barbaro-livello_3-cammino-primordiale",
-  "_key": "!items!class-barbaro-livello_3-cammino-primordiale",
+  "_key": "!item!class-barbaro-livello_3-cammino-primordiale",
   "ownership": {
     "default": 0
   },

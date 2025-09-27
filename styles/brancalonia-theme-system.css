@@ -1,35 +1,36 @@
 /**
  * Brancalonia Theme System - System Layer
  * Base CSS variables and core UI overrides
- * Italian Renaissance theming for Foundry VTT v13
+ * "Spaghetti Fantasy" theming for Foundry VTT v13
+ * Dirty, worn, picaresque aesthetic - not noble Renaissance!
  */
 
 @layer system {
   /* ================================
-     CSS Variables - Italian Renaissance Palette
+     CSS Variables - Spaghetti Fantasy Palette
      ================================ */
   :root {
-    /* Core Theme Colors */
-    --branca-primary: #8B4513;        /* Umber - primary wood tone */
-    --branca-secondary: #A0522D;      /* Sienna - secondary wood */
-    --branca-accent: #FFD700;         /* Gold - Renaissance accent */
-    --branca-background: #2C1810;     /* Dark wood background */
-    --branca-surface: #3E2723;        /* Medium wood surface */
-    --branca-text: #F5E6D3;          /* Parchment text */
-    --branca-textDark: #2C1810;      /* Dark text on light */
-    --branca-border: #5D4037;        /* Wood border */
-    --branca-highlight: #FFA000;     /* Amber highlight */
-    --branca-shadow: rgba(0,0,0,0.8); /* Deep shadow */
+    /* Core Theme Colors - Dirty Tavern Default */
+    --branca-primary: #4A3426;        /* Smoke-stained wood */
+    --branca-secondary: #6B4C3A;      /* Dirty brown wood */
+    --branca-accent: #B8956A;         /* Tarnished brass - not gold! */
+    --branca-background: #1F1612;     /* Soot-darkened walls */
+    --branca-surface: #342821;        /* Greasy, worn wood */
+    --branca-text: #D4C4A8;          /* Yellowed, dirty parchment */
+    --branca-textDark: #2B1F15;      /* Grease-darkened text */
+    --branca-border: #52392B;        /* Wine-stained wood */
+    --branca-highlight: #C9A671;     /* Cheap candle light */
+    --branca-shadow: rgba(0,0,0,0.9); /* Deep tavern shadows */
 
-    /* Status Colors */
-    --branca-error: #B71C1C;         /* Deep red */
-    --branca-success: #1B5E20;       /* Forest green */
-    --branca-warning: #F57C00;       /* Orange */
-    --branca-info: #0D47A1;         /* Deep blue */
+    /* Status Colors - Worn & Dirty */
+    --branca-error: #7A2E2E;         /* Dried blood red */
+    --branca-success: #3B4A2F;       /* Moldy green */
+    --branca-warning: #8B6239;       /* Dirty amber */
+    --branca-info: #3D4654;         /* Dusty blue */
 
-    /* Gradients */
+    /* Gradients - Grimy & Worn */
     --branca-gradient-primary: linear-gradient(135deg, var(--branca-primary) 0%, var(--branca-secondary) 100%);
-    --branca-gradient-gold: linear-gradient(135deg, #B8860B 0%, #FFD700 50%, #B8860B 100%);
+    --branca-gradient-brass: linear-gradient(135deg, #8B7355 0%, #B8956A 50%, #8B7355 100%);
     --branca-gradient-surface: linear-gradient(180deg, var(--branca-surface) 0%, var(--branca-background) 100%);
 
     /* Spacing */
@@ -44,10 +45,10 @@
     --branca-border-radius: 4px;
     --branca-border-style: solid;
 
-    /* Typography */
-    --branca-font-primary: "EB Garamond", "Palatino", serif;
-    --branca-font-secondary: "IM Fell DW Pica", "Georgia", serif;
-    --branca-font-display: "Cinzel", "Playfair Display", serif;
+    /* Typography - Rough & Hand-Written */
+    --branca-font-primary: "IM Fell DW Pica", "Palatino", serif;
+    --branca-font-secondary: "EB Garamond", "Georgia", serif;
+    --branca-font-display: "IM Fell English SC", "Cinzel", serif;
 
     /* Shadows */
     --branca-shadow-sm: 0 2px 4px var(--branca-shadow);
@@ -363,9 +364,24 @@
     box-shadow: var(--branca-shadow-lg);
   }
 
-  /* D&D 5e Specific Overrides */
+  /* D&D 5e Specific Overrides - Preserve Navigation Icons! */
   .dnd5e.sheet {
     background: var(--branca-gradient-surface);
+  }
+
+  /* IMPORTANT: Preserve D&D 5e Navigation Icons */
+  .dnd5e.sheet nav.sheet-tabs,
+  .dnd5e.sheet .sheet-navigation {
+    /* Don't hide or override navigation */
+    display: flex !important;
+    visibility: visible !important;
+  }
+
+  .dnd5e.sheet nav.sheet-tabs .item,
+  .dnd5e.sheet .sheet-navigation .item {
+    /* Style but don't hide navigation items */
+    opacity: 1 !important;
+    display: block !important;
   }
 
   .dnd5e.sheet .window-content {
@@ -450,13 +466,13 @@
     transition: none !important;
   }
 
-  /* Light mode adjustments */
+  /* Light mode adjustments - Stained Parchment */
   body.branca-light-mode {
-    --branca-background: #F5E6D3;
-    --branca-surface: #E8D7C3;
-    --branca-text: #2C1810;
-    --branca-textDark: #F5E6D3;
-    --branca-border: #C4A57B;
-    --branca-shadow: rgba(92,51,23,0.3);
+    --branca-background: #D4C2A6;
+    --branca-surface: #C8B69C;
+    --branca-text: #3A2F24;
+    --branca-textDark: #C8B69C;
+    --branca-border: #8C7A66;
+    --branca-shadow: rgba(92,51,23,0.4);
   }
 }

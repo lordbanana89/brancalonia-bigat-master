@@ -116,7 +116,7 @@
   "name": "Ira",
   "img": "icons/magic/control/buff-strength-muscle-damage.webp",
   "_id": "class-barbaro-livello_1-ira",
-  "_key": "!items!class-barbaro-livello_1-ira",
+  "_key": "!item!class-barbaro-livello_1-ira",
   "ownership": {
     "default": 0
   },

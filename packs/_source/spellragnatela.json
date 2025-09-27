@@ -1,0 +1,116 @@
+{
+  "_id": "spellragnatelaebd51b",
+  "_key": "!items!spellragnatelaebd51b",
+  "name": "Ragnatela",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Evochi una massa di ragnatele spesse e appiccicose in un punto a tua scelta entro gittata. Le ragnatele riempiono un cubo di 20 piedi da quel punto per la durata. Le ragnatele sono terreno difficile e oscurano leggermente la loro area. Se le ragnatele non sono ancorate tra due masse solide (come muri o alberi) o stratificate su pavimento, muro o soffitto, la ragnatela evocata collassa su se stessa e l'incantesimo termina all'inizio del tuo prossimo turno. Le ragnatele stratificate su una superficie piana hanno una profondità di 5 piedi. Ogni creatura che inizia il suo turno nelle ragnatele o che vi entra durante il suo turno deve effettuare un tiro salvezza su Destrezza. Con un fallimento, la creatura è trattenuta finché le ragnatele restano. Una creatura trattenuta dalle ragnatele può usare la sua azione per effettuare una prova di Forza contro la CD del tuo incantesimo. Se ha successo, non è più trattenuta.</p><h3>Note per il DM</h3><p><em>Web è controllo eccellente. Restrained è condizione potentissima. Richiede ancoraggi lo bilancia. Fire interaction interessante.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.287",
+    "level": 2,
+    "school": "evo",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-ragnatela",
+      "fonte": "D&D 5e PHB p.287",
+      "note_dm": "Web è controllo eccellente. Restrained è condizione potentissima. Richiede ancoraggi lo bilancia. Fire interaction interessante.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "attivazione": "action",
+        "range": 60,
+        "area": "20 ft cube",
+        "save": "dexterity",
+        "durata": "1 hour",
+        "concentrazione": true,
+        "condizione": "restrained"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Evocazione",
+        "level": 2
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "_id": "spelldardoincantato5ea8ff",
-  "_key": "!items!spelldardoincantato5ea8ff",
+  "_key": "!item!spelldardoincantato5ea8ff",
   "name": "Dardo Incantato",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

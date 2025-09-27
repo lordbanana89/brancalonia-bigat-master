@@ -1,9 +1,9 @@
 {
   "_id": "aTnOFtBBIPEAI8Z3",
-  "_key": "!items!aTnOFtBBIPEAI8Z3",
+  "_key": "!item!aTnOFtBBIPEAI8Z3",
   "name": "Prelato - Difetti",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!gTGZxsPRbpVgiPYg"
     },
     {
       "_id": "TlXhJIvJGYXL4Gv2",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!TlXhJIvJGYXL4Gv2"
     },
     {
       "_id": "Bzwie0e3Nta88IiE",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Bzwie0e3Nta88IiE"
     },
     {
       "_id": "azZeIze5G57J9aw0",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!azZeIze5G57J9aw0"
     },
     {
       "_id": "IvxWL2vFBQ6CJlqY",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!IvxWL2vFBQ6CJlqY"
     },
     {
       "_id": "OamVnAkzINcuP6nj",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!OamVnAkzINcuP6nj"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "prelato",
       "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

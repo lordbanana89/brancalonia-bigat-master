@@ -1,6 +1,6 @@
 {
   "_id": "intruglio004e19521",
-  "_key": "!items!intruglio004e19521",
+  "_key": "!item!intruglio004e19521",
   "name": "Estratto di Fandonia",
   "type": "consumable",
   "img": "icons/consumables/potions/bottle-round-corked-red.webp",
@@ -47,11 +47,7 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "consumableType": "potion",
-    "charges": {
-      "value": 1,
-      "max": 1
-    }
+    "consumableType": "potion"
   },
   "effects": [],
   "folder": null,

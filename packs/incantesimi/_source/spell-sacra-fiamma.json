@@ -1,71 +1,25 @@
 {
-  "id": "spell-sacra-fiamma",
-  "nome": "Sacra Fiamma",
-  "nome_inglese": "Sacred Flame",
-  "livello": 0,
-  "scuola": "Invocazione",
-  "tempo_lancio": "1 azione",
-  "gittata": "60 piedi",
-  "componenti": {
-    "verbale": true,
-    "somatica": true
-  },
-  "durata": "Istantanea",
-  "descrizione": "Una radianza simile a fiamma discende su una creatura che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Destrezza o subire 1d8 danni radiosi. Il bersaglio non ottiene beneficio da copertura per questo tiro salvezza.",
-  "classi": [
-    "Chierico"
-  ],
-  "danno_scaling": {
-    "livello_1": "1d8",
-    "livello_5": "2d8",
-    "livello_11": "3d8",
-    "livello_17": "4d8"
-  },
-  "implementazione_foundry": {
-    "tipo": "cantrip",
-    "attivazione": "action",
-    "range": 60,
-    "save": "dexterity",
-    "danno": "1d8",
-    "danno_tipo": "radiant",
-    "ignora_copertura": true
-  },
-  "meccaniche_uniche": {
-    "no_copertura": "Ignora TUTTI i bonus copertura",
-    "save_non_attack": "DEX save invece di attack roll",
-    "radiant_damage": "Ottimo vs undead/fiend"
-  },
-  "vantaggi": [
-    "Ignora copertura totalmente",
-    "Radiant raramente resistito",
-    "60 ft range sicuro",
-    "No attack roll (no disadvantage)"
-  ],
-  "svantaggi": [
-    "DEX save spesso alto",
-    "d8 danno medio",
-    "Tutto o niente (no half damage)"
-  ],
-  "confronto_cantrip": {
-    "vs_firebolt": "Meno danno ma ignora cover",
-    "vs_toll_the_dead": "Meno danno ma più affidabile"
-  },
-  "note_dm": "Sacred Flame unico per ignorare copertura. Ottimo vs nemici dietro ripari. DEX save invece di attack utile in certe situazioni.",
-  "fonte": "D&D 5e PHB p.272",
-  "name": "Spell Sacra Fiamma",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-sacra-fiamma",
-  "_key": "!items!spell-sacra-fiamma",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellsacrafiammac85c6e",
+  "_key": "!item!spellsacrafiammac85c6e",
+  "name": "Sacra Fiamma",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
-    "school": "evo",
+    "description": {
+      "value": "<p>Una radianza simile a fiamma discende su una creatura che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Destrezza o subire 1d8 danni radiosi. Il bersaglio non ottiene beneficio da copertura per questo tiro salvezza.</p><h3>Note per il DM</h3><p><em>Sacred Flame unico per ignorare copertura. Ottimo vs nemici dietro ripari. DEX save invece di attack utile in certe situazioni.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.272",
+    "level": 0,
+    "school": "con",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -78,26 +32,82 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
       "value": "",
       "units": "inst"
     },
     "range": {
-      "value": "",
+      "value": 60,
+      "long": null,
       "units": "ft"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-sacra-fiamma",
+      "fonte": "D&D 5e PHB p.272",
+      "note_dm": "Sacred Flame unico per ignorare copertura. Ottimo vs nemici dietro ripari. DEX save invece di attack utile in certe situazioni.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": 60,
+        "save": "dexterity",
+        "danno": "1d8",
+        "danno_tipo": "radiant",
+        "ignora_copertura": true
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Invocazione",
+        "level": 0
       }
     }
   }

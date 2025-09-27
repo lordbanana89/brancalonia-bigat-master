@@ -1,9 +1,9 @@
 {
   "_id": "gearveh006zatterae18434",
-  "_key": "!items!gearveh006zatterae18434",
+  "_key": "!item!gearveh006zatterae18434",
   "name": "Zattera",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Piattaforma di legno legata con corde per attraversare fiumi lenti.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

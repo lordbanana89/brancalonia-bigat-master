@@ -1,9 +1,9 @@
 {
   "_id": "armstd105mezzaarmaturaapiastre50134e",
-  "_key": "!items!armstd105mezzaarmaturaapiastre50134e",
+  "_key": "!item!armstd105mezzaarmaturaapiastre50134e",
   "name": "Mezza Armatura a Piastre",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Piastre sagomate che coprono il corpo, lasciando alcune aree protette da cuoio.</p>",
@@ -33,7 +33,7 @@
       "dex": 0,
       "magicalBonus": 0
     },
-    "strength": null,
+    "strength": "—",
     "stealth": false,
     "proficient": true,
     "properties": {},
@@ -47,10 +47,6 @@
       "max": "",
       "per": null,
       "recovery": ""
-    },
-    "speed": {
-      "value": null,
-      "conditions": ""
     }
   },
   "effects": [],

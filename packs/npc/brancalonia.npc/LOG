@@ -1,15 +1,14 @@
-2025/09/27-10:03:37.502510 17332b000 Recovering log #33
-2025/09/27-10:03:37.503481 17332b000 Delete type=3 #31
-2025/09/27-10:03:37.503536 17332b000 Delete type=0 #33
-2025/09/27-10:03:37.506989 1743cf000 Level-0 table #39: started
-2025/09/27-10:03:37.508201 1743cf000 Level-0 table #39: 148688 bytes OK
-2025/09/27-10:03:37.508287 1743cf000 Delete type=0 #37
-2025/09/27-10:03:37.508363 1743cf000 Manual compaction at level-0 from '!items!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!items!viluperac949b2' @ 0 : 0; will stop at (end)
-2025/09/27-10:03:37.508379 1743cf000 Manual compaction at level-1 from '!items!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!items!viluperac949b2' @ 0 : 0; will stop at '!items!viluperac949b2' @ 776 : 1
-2025/09/27-10:03:37.508384 1743cf000 Compacting 1@1 + 1@2 files
-2025/09/27-10:03:37.510927 1743cf000 Generated table #40@1: 44 keys, 148688 bytes
-2025/09/27-10:03:37.510937 1743cf000 Compacted 1@1 + 1@2 files => 148688 bytes
-2025/09/27-10:03:37.511005 1743cf000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-10:03:37.511044 1743cf000 Delete type=2 #39
-2025/09/27-10:03:37.511125 1743cf000 Delete type=2 #35
-2025/09/27-10:03:37.511197 1743cf000 Manual compaction at level-1 from '!items!viluperac949b2' @ 776 : 1 .. '!items!viluperac949b2' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:02.116756 171b4b000 Recovering log #52
+2025/09/27-12:05:02.117565 171b4b000 Delete type=0 #52
+2025/09/27-12:05:02.117612 171b4b000 Delete type=3 #50
+2025/09/27-12:05:02.121649 1723e3000 Level-0 table #58: started
+2025/09/27-12:05:02.122842 1723e3000 Level-0 table #58: 148804 bytes OK
+2025/09/27-12:05:02.122911 1723e3000 Delete type=0 #56
+2025/09/27-12:05:02.122997 1723e3000 Manual compaction at level-0 from '!item!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!item!viluperac949b2' @ 0 : 0; will stop at '!item!viluperac949b2' @ 996 : 1
+2025/09/27-12:05:02.123004 1723e3000 Compacting 1@0 + 1@1 files
+2025/09/27-12:05:02.124610 1723e3000 Generated table #59@0: 88 keys, 150103 bytes
+2025/09/27-12:05:02.124619 1723e3000 Compacted 1@0 + 1@1 files => 150103 bytes
+2025/09/27-12:05:02.124683 1723e3000 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/27-12:05:02.124730 1723e3000 Delete type=2 #58
+2025/09/27-12:05:02.124807 1723e3000 Delete type=2 #54
+2025/09/27-12:05:02.124891 1723e3000 Manual compaction at level-0 from '!item!viluperac949b2' @ 996 : 1 .. '!item!viluperac949b2' @ 0 : 0; will stop at (end)

@@ -100,7 +100,7 @@
   "name": "Libro Incantesimi",
   "img": "icons/magic/symbols/star-pointed-purple.webp",
   "_id": "class-mago-livello_1-libro-incantesimi",
-  "_key": "!items!class-mago-livello_1-libro-incantesimi",
+  "_key": "!item!class-mago-livello_1-libro-incantesimi",
   "ownership": {
     "default": 0
   },

@@ -45,7 +45,7 @@
   "name": "Imposizione Mani",
   "img": "icons/magic/life/cross-column-gold.webp",
   "_id": "class-paladino-livello_1-imposizione-mani",
-  "_key": "!items!class-paladino-livello_1-imposizione-mani",
+  "_key": "!item!class-paladino-livello_1-imposizione-mani",
   "ownership": {
     "default": 0
   },

@@ -28,7 +28,7 @@
   "name": "Colpi Ki",
   "img": "icons/magic/light/orb-lightbulb-white.webp",
   "_id": "class-monaco-livello_6-colpi-ki",
-  "_key": "!items!class-monaco-livello_6-colpi-ki",
+  "_key": "!item!class-monaco-livello_6-colpi-ki",
   "ownership": {
     "default": 0
   },

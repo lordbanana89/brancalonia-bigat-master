@@ -1,9 +1,9 @@
 {
   "_id": "0FZT854Jzjt6H0z7",
-  "_key": "!items!0FZT854Jzjt6H0z7",
+  "_key": "!item!0FZT854Jzjt6H0z7",
   "name": "Impresario - Legami",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!3k5jmQ3V8lxARTk8"
     },
     {
       "_id": "GuQtAWNnDDCLV2y1",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!GuQtAWNnDDCLV2y1"
     },
     {
       "_id": "aXjK8qweDppO8O7l",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!aXjK8qweDppO8O7l"
     },
     {
       "_id": "1nz8ma8DvctBwoJM",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!1nz8ma8DvctBwoJM"
     },
     {
       "_id": "E9T5fY0V00vzoEpp",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!E9T5fY0V00vzoEpp"
     },
     {
       "_id": "GZHRqWV88fPcJzCI",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!GZHRqWV88fPcJzCI"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "impresario",
       "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

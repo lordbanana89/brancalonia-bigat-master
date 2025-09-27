@@ -1,6 +1,6 @@
 {
   "_id": "armastd001bastoneferratoee3e90",
-  "_key": "!items!armastd001bastoneferratoee3e90",
+  "_key": "!item!armastd001bastoneferratoee3e90",
   "name": "Bastone Ferrato",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,9 +24,9 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "quarterstaff",
-    "properties": [
-      "lgt"
-    ],
+    "properties": {
+      "lgt": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

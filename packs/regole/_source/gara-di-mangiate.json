@@ -1,0 +1,20 @@
+{
+  "_id": "garadimangiate1f8005",
+  "_key": "!journal!garadimangiate1f8005",
+  "name": "Gara di Mangiate",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "gioco-gara-di-mangiate",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "58-59"
+      }
+    }
+  }
+}

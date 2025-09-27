@@ -116,7 +116,7 @@
   "name": "Arti Marziali",
   "img": "icons/skills/melee/unarmed-punch-fist.webp",
   "_id": "class-monaco-livello_1-arti-marziali",
-  "_key": "!items!class-monaco-livello_1-arti-marziali",
+  "_key": "!item!class-monaco-livello_1-arti-marziali",
   "ownership": {
     "default": 0
   },

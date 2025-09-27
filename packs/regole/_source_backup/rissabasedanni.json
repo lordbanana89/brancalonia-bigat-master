@@ -1,0 +1,40 @@
+{
+  "_id": "rissabasedanni4f4a59",
+  "_key": "!journal!rissabasedanni4f4a59",
+  "name": "danni",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "rissabasedanni4f4a59page1",
+      "name": "danni",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-base-danni",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "journal"
+}

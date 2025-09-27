@@ -1,9 +1,9 @@
 {
   "_id": "scadente004animali34fe7a",
-  "_key": "!items!scadente004animali34fe7a",
+  "_key": "!item!scadente004animali34fe7a",
   "name": "Monte e Animali Scadenti",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Bestie spelacchiate, cavalcature zoppe e animali addestrati male.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

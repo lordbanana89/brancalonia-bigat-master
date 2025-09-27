@@ -1,6 +1,6 @@
 {
   "_id": "class-chierico-lvrhc0",
-  "_key": "!items!class-chierico-lvrhc0",
+  "_key": "!item!class-chierico-lvrhc0",
   "name": "Chierico",
   "type": "class",
   "img": "icons/magic/holy/chalice-glowing-gold.webp",
@@ -528,7 +528,8 @@
     "primaryAbility": [
       "wis"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d8"
   },
   "effects": [],
   "folder": null,

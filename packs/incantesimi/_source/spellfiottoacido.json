@@ -1,6 +1,6 @@
 {
   "_id": "spellfiottoacidoa39f2b",
-  "_key": "!items!spellfiottoacidoa39f2b",
+  "_key": "!item!spellfiottoacidoa39f2b",
   "name": "Fiotto Acido",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

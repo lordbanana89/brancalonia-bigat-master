@@ -97,7 +97,7 @@
   "name": "Attacco Irruento",
   "img": "icons/skills/melee/hand-grip-sword-red.webp",
   "_id": "class-barbaro-livello_2-attacco-irruento",
-  "_key": "!items!class-barbaro-livello_2-attacco-irruento",
+  "_key": "!item!class-barbaro-livello_2-attacco-irruento",
   "ownership": {
     "default": 0
   },

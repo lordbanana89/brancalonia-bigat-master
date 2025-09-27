@@ -1,9 +1,9 @@
 {
   "_id": "gearveh005barcaaremi7fd1da",
-  "_key": "!items!gearveh005barcaaremi7fd1da",
+  "_key": "!item!gearveh005barcaaremi7fd1da",
   "name": "Barca a Remi",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Piccola imbarcazione che può trasportare quattro persone e bagagli.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

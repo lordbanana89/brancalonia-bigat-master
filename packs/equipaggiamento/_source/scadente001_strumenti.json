@@ -1,9 +1,9 @@
 {
   "_id": "scadente001strumentia31921",
-  "_key": "!items!scadente001strumentia31921",
+  "_key": "!item!scadente001strumentia31921",
   "name": "Strumenti Scadenti",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Utensili e strumenti da lavoro di fattura pessima, spesso assemblati alla buona da ciarlatani.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

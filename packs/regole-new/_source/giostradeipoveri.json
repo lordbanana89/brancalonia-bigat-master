@@ -1,0 +1,43 @@
+{
+  "_id": "giostradeipoveri02cc5e",
+  "_key": "!journal!giostradeipoveri02cc5e",
+  "name": "Giostra dei Poveri",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "giostradeipoveri02cc5epage1",
+      "name": "Giostra dei Poveri",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<p>Duello tra due coppie (cavaliere e cavallo) che parodizza le giostre nobili, con dadi che salgono o scendono in base alle prove riuscite.</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "gioco-giostra-dei-poveri",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "59"
+      }
+    }
+  }
+}

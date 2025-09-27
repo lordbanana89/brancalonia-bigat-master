@@ -1,0 +1,52 @@
+{
+  "timestamp": "2025-09-27T09:51:49.939Z",
+  "score": 94,
+  "stats": {
+    "totalFiles": 962,
+    "validFiles": 962,
+    "invalidFiles": 0,
+    "missingPacks": [],
+    "emptyPacks": [],
+    "moduleErrors": [],
+    "activeEffects": 7,
+    "advancements": 354,
+    "features": 376
+  },
+  "errors": [],
+  "warnings": [
+    "brancalonia-rules-chat.js: potrebbe usare hook deprecato renderChatMessage",
+    "brancalonia-tavern-brawl.js: potrebbe usare hook deprecato renderChatMessage"
+  ],
+  "successes": [
+    "Directory packs presente",
+    "Directory modules presente",
+    "Directory styles presente",
+    "Directory lang presente",
+    "Directory database presente",
+    "Directory assets presente",
+    "File module.json presente",
+    "File package.json presente",
+    "File README.md presente",
+    "Campo id presente",
+    "Campo title presente",
+    "Campo version presente",
+    "Campo compatibility presente",
+    "Campo packs presente",
+    "Compatibilità: Foundry 13.0.0 - 13.347",
+    "Sistema D&D 5e richiesto: 5.0.0",
+    "Pack razze: 8 documenti sorgente",
+    "Pack equipaggiamento: 234 documenti sorgente",
+    "Pack talenti: 8 documenti sorgente",
+    "Pack incantesimi: 94 documenti sorgente",
+    "Pack rollable-tables: 82 documenti sorgente",
+    "Pack regole: 62 documenti sorgente",
+    "Pack npc: 44 documenti sorgente",
+    "Pack macro: 6 documenti sorgente",
+    "Pack brancalonia-features: 357 documenti sorgente",
+    "Pack backgrounds: 22 documenti sorgente",
+    "Pack sottoclassi: 21 documenti sorgente",
+    "Pack emeriticenze: 11 documenti sorgente",
+    "Pack classi: 13 documenti sorgente",
+    "Modulo Active Effects presente"
+  ]
+}

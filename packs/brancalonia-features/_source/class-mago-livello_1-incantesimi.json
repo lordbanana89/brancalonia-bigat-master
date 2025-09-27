@@ -168,7 +168,7 @@
   "name": "Incantesimi",
   "img": "icons/magic/symbols/star-pointed-purple.webp",
   "_id": "class-mago-livello_1-incantesimi",
-  "_key": "!items!class-mago-livello_1-incantesimi",
+  "_key": "!item!class-mago-livello_1-incantesimi",
   "ownership": {
     "default": 0
   },

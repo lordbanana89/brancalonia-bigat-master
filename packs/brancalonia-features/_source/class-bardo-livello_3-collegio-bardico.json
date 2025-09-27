@@ -70,7 +70,7 @@
   "name": "Collegio Bardico",
   "img": "icons/sundries/books/book-embossed-gold-red.webp",
   "_id": "class-bardo-livello_3-collegio-bardico",
-  "_key": "!items!class-bardo-livello_3-collegio-bardico",
+  "_key": "!item!class-bardo-livello_3-collegio-bardico",
   "ownership": {
     "default": 0
   },

@@ -23,7 +23,7 @@
   "name": "Campione Giuramento",
   "img": "icons/sundries/documents/document-sealed-yellow.webp",
   "_id": "class-paladino-livello_20-campione-giuramento",
-  "_key": "!items!class-paladino-livello_20-campione-giuramento",
+  "_key": "!item!class-paladino-livello_20-campione-giuramento",
   "ownership": {
     "default": 0
   },

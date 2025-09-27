@@ -1,91 +1,25 @@
 {
-  "id": "spell-mondare",
-  "nome": "Mondare",
-  "nome_inglese": "Cleanse",
-  "livello": 3,
-  "scuola": "Invocazione",
-  "tempo_lancio": "12 ore",
-  "gittata": "Contatto",
-  "componenti": {
-    "verbale": true,
-    "somatica": true,
-    "materiale": true,
-    "materiale_descrizione": "Erbe, oli e incenso del valore di almeno 50 mo, che l'incantesimo consuma"
-  },
-  "durata": "Finché non viene dissolto",
-  "descrizione": "L'incantatore tocca un punto e infonde un flusso di potere sacro (o sacrilego) in un'area del raggio massimo di 18 metri. L'incantesimo fallisce se il raggio include già un'area sotto l'effetto di un incantesimo mondare. Folletti, immondi e non morti non possono entrare nell'area e non possono affascinare, spaventare o possedere le creature all'interno dell'area. Ogni creatura affascinata, spaventata o posseduta da una creatura del genere non è più affascinata, spaventata e posseduta una volta entrata nell'area. L'incantatore può escludere uno o più tipi di creature dal subire questo effetto. Inoltre, per tutta la durata, l'incantatore può porre un effetto addizionale: ogni immondo, folletto o non morto che entra nell'area per la prima volta in un turno o che vi inizia il proprio turno deve effettuare un tiro salvezza su Carisma. Se lo fallisce, la creatura non può entrare nell'area o, nel caso vi si trovi già, deve usare il proprio movimento per lasciarla nel modo più diretto. L'area si muove con l'incantatore.",
-  "classi": [
-    "Chierico",
-    "Druido"
-  ],
-  "implementazione_foundry": {
-    "tipo": "spell",
-    "livello": 3,
-    "attivazione": "12 hours",
-    "range": "touch",
-    "area": "60 ft radius",
-    "durata": "until dispelled"
-  },
-  "meccaniche_area": {
-    "raggio": "18 metri (60 ft)",
-    "permanente": "Finché non dissolto",
-    "no_overlap": "Non stacka con altri mondare",
-    "mobile_option": "Può muoversi con caster"
-  },
-  "creature_bloccate": [
-    "Folletti",
-    "Immondi (Fiends)",
-    "Non morti"
-  ],
-  "effetti_base": {
-    "no_entry": "Non possono entrare",
-    "no_charm": "Non possono charm",
-    "no_frighten": "Non possono frighten",
-    "no_possess": "Non possono possess",
-    "cleanse_entry": "Rimuove condizioni entrando"
-  },
-  "effetto_addizionale": {
-    "save": "CHA save entrando/iniziando turno",
-    "fail": "Deve uscire dall'area",
-    "mobile": "Se mobile, segue caster",
-    "esclusioni": "Caster può escludere tipi"
-  },
-  "confronto_hallow": {
-    "tempo_cast": "12 ore come Hallow",
-    "livello": "3° vs 5°",
-    "area": "Simile coverage",
-    "durata": "Permanente entrambi",
-    "costo": "50 mo vs 1000 mo"
-  },
-  "utilizzi": [
-    "Santificare luoghi sacri",
-    "Proteggere accampamenti lunghi",
-    "Creare safe zone permanenti",
-    "Purificare aree corrotte",
-    "Base anti-undead"
-  ],
-  "rituale_lungo": {
-    "12_ore": "Mezza giornata intera",
-    "vulnerabile": "Interrompibile",
-    "preparazione": "Richiede sicurezza",
-    "componenti_costose": "50 mo consumate"
-  },
-  "note_dm": "Mondare è versione Brancalonia economica di Hallow. 12 ore cast time lo rende strategico non tattico. Ottimo per basi.",
-  "fonte": "Brancalonia Macaronicon p.52",
-  "name": "Spell Mondare",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-mondare",
-  "_key": "!items!spell-mondare",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellmondarea98eb3",
+  "_key": "!item!spellmondarea98eb3",
+  "name": "Mondare",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
-    "school": "evo",
+    "description": {
+      "value": "<p>L'incantatore tocca un punto e infonde un flusso di potere sacro (o sacrilego) in un'area del raggio massimo di 18 metri. L'incantesimo fallisce se il raggio include già un'area sotto l'effetto di un incantesimo mondare. Folletti, immondi e non morti non possono entrare nell'area e non possono affascinare, spaventare o possedere le creature all'interno dell'area. Ogni creatura affascinata, spaventata o posseduta da una creatura del genere non è più affascinata, spaventata e posseduta una volta entrata nell'area. L'incantatore può escludere uno o più tipi di creature dal subire questo effetto. Inoltre, per tutta la durata, l'incantatore può porre un effetto addizionale: ogni immondo, folletto o non morto che entra nell'area per la prima volta in un turno o che vi inizia il proprio turno deve effettuare un tiro salvezza su Carisma. Se lo fallisce, la creatura non può entrare nell'area o, nel caso vi si trovi già, deve usare il proprio movimento per lasciarla nel modo più diretto. L'area si muove con l'incantatore.</p><h3>Utilizzi Tipici</h3><ul><li>Santificare luoghi sacri</li><li>Proteggere accampamenti lunghi</li><li>Creare safe zone permanenti</li><li>Purificare aree corrotte</li><li>Base anti-undead</li></ul><h3>Note per il DM</h3><p><em>Mondare è versione Brancalonia economica di Hallow. 12 ore cast time lo rende strategico non tattico. Ottimo per basi.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.52",
+    "level": 3,
+    "school": "con",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -97,27 +31,89 @@
       "prepared": false
     },
     "activation": {
-      "type": "action",
-      "cost": 1
+      "type": "hour",
+      "cost": 12,
+      "condition": ""
     },
     "duration": {
       "value": "",
-      "units": "inst"
+      "units": ""
     },
     "range": {
-      "value": "",
-      "units": "ft"
+      "value": null,
+      "long": null,
+      "units": "touch"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-mondare",
+      "fonte": "Brancalonia Macaronicon p.52",
+      "utilizzi": [
+        "Santificare luoghi sacri",
+        "Proteggere accampamenti lunghi",
+        "Creare safe zone permanenti",
+        "Purificare aree corrotte",
+        "Base anti-undead"
+      ],
+      "note_dm": "Mondare è versione Brancalonia economica di Hallow. 12 ore cast time lo rende strategico non tattico. Ottimo per basi.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 3,
+        "attivazione": "12 hours",
+        "range": "touch",
+        "area": "60 ft radius",
+        "durata": "until dispelled"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Invocazione",
+        "level": 3
       }
     }
   }

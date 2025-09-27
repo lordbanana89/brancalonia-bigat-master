@@ -14,86 +14,87 @@ export class BrancaloniaTheme {
     DARK_MODE: 'darkMode'
   };
 
-  // Italian Renaissance Color Presets
+  // Brancalonia "Spaghetti Fantasy" Color Presets
+  // Dirty, worn, picaresque - not noble Renaissance!
   static PRESETS = {
     taverna: {
       name: "Taverna Malandata",
-      description: "Atmosfera di osteria con legni scuri e candele",
+      description: "Dirty tavern with smoke stains, spilled wine, and greasy surfaces",
       colors: {
-        primary: "#8B4513",        // Umber - legno scuro
-        secondary: "#A0522D",      // Sienna - legno medio
-        accent: "#FFD700",         // Gold - dettagli dorati
-        background: "#2C1810",     // Dark wood
-        surface: "#3E2723",        // Medium wood
-        text: "#F5E6D3",          // Parchment
-        textDark: "#2C1810",      // Dark text
-        border: "#5D4037",        // Wood border
-        highlight: "#FFA000",     // Amber highlight
-        shadow: "rgba(0,0,0,0.8)", // Deep shadow
-        error: "#B71C1C",         // Deep red
-        success: "#1B5E20",       // Forest green
-        warning: "#F57C00",       // Orange
-        info: "#0D47A1"          // Deep blue
+        primary: "#4A3426",        // Smoke-stained wood
+        secondary: "#6B4C3A",      // Dirty brown wood
+        accent: "#B8956A",         // Tarnished brass - not pure gold!
+        background: "#1F1612",     // Soot-darkened walls
+        surface: "#342821",        // Greasy, worn wood
+        text: "#D4C4A8",          // Yellowed, dirty parchment
+        textDark: "#2B1F15",      // Grease-darkened text
+        border: "#52392B",        // Wine-stained wood
+        highlight: "#C9A671",     // Cheap candle light
+        shadow: "rgba(0,0,0,0.9)", // Deep tavern shadows
+        error: "#7A2E2E",         // Dried blood red
+        success: "#3B4A2F",       // Moldy green
+        warning: "#8B6239",       // Dirty amber
+        info: "#3D4654"          // Dusty blue
       }
     },
-    palazzo: {
-      name: "Palazzo Rinascimentale",
-      description: "Eleganza nobiliare con ori e marmi",
+    strada: {
+      name: "Strada Fangosa",
+      description: "Muddy roads, dust, worn leather, rust and grime",
       colors: {
-        primary: "#B8860B",        // Dark goldenrod
-        secondary: "#CD7F32",      // Bronze
-        accent: "#FFD700",         // Pure gold
-        background: "#1A1A1A",     // Black marble
-        surface: "#2E2E2E",        // Dark stone
-        text: "#F5E6D3",          // Parchment
-        textDark: "#1A1A1A",      // Dark text
-        border: "#6B5B3F",        // Bronze border
-        highlight: "#FFE082",     // Light gold
-        shadow: "rgba(0,0,0,0.6)", // Soft shadow
-        error: "#C62828",         // Crimson
-        success: "#2E7D32",       // Emerald
-        warning: "#FF8F00",       // Amber
-        info: "#1565C0"          // Sapphire
-      }
-    },
-    cantina: {
-      name: "Cantina del Vino",
-      description: "Toni vinosi e atmosfera calda",
-      colors: {
-        primary: "#722F37",        // Wine red
-        secondary: "#8B4513",      // Umber
-        accent: "#CD7F32",         // Bronze
-        background: "#1C0A0D",     // Deep wine
-        surface: "#3C1518",        // Wine surface
-        text: "#E8D7C3",          // Aged paper
-        textDark: "#1C0A0D",      // Dark text
-        border: "#5C2328",        // Wine border
-        highlight: "#D4A574",     // Tan highlight
-        shadow: "rgba(0,0,0,0.7)", // Medium shadow
-        error: "#D32F2F",         // Red
-        success: "#388E3C",       // Green
-        warning: "#FFA726",       // Orange
-        info: "#1976D2"          // Blue
+        primary: "#5C4A3C",        // Dried mud
+        secondary: "#6B5D4F",      // Road dust
+        accent: "#A68B5B",         // Worn leather
+        background: "#2A231C",     // Dark mud
+        surface: "#3E342A",        // Dusty ground
+        text: "#C8B89E",          // Dust-covered parchment
+        textDark: "#2A231C",      // Mud text
+        border: "#4F4136",        // Rusty iron
+        highlight: "#B39573",     // Dirty sunlight
+        shadow: "rgba(0,0,0,0.85)", // Deep street shadows
+        error: "#8B4444",         // Rust red
+        success: "#4A5739",       // Roadside weeds
+        warning: "#9A6E3A",       // Dirty copper
+        info: "#465360"          // Puddle water blue
       }
     },
     pergamena: {
-      name: "Pergamena Antica",
-      description: "Stile manoscritto medievale su pergamena",
+      name: "Pergamena Macchiata",
+      description: "Stained parchment with wine spills, grease marks, and faded ink",
       colors: {
-        primary: "#8B7355",        // Tan brown
-        secondary: "#A0826D",      // Beaver
-        accent: "#B8860B",         // Goldenrod
-        background: "#F5E6D3",     // Parchment
-        surface: "#E8D7C3",        // Aged paper
-        text: "#2C1810",          // Dark brown text
-        textDark: "#F5E6D3",      // Light text for dark bg
-        border: "#C4A57B",        // Tan border
-        highlight: "#D4AF37",     // Old gold
-        shadow: "rgba(92,51,23,0.3)", // Brown shadow
-        error: "#8B0000",         // Dark red
-        success: "#228B22",       // Forest green
-        warning: "#B8860B",       // Dark goldenrod
-        info: "#4682B4"          // Steel blue
+        primary: "#7A6A57",        // Coffee-stained paper
+        secondary: "#8B7B68",      // Grease-marked vellum
+        accent: "#9B8061",         // Worn bronze ink
+        background: "#D4C2A6",     // Stained parchment
+        surface: "#C8B69C",        // Yellowed paper
+        text: "#3A2F24",          // Faded brown ink
+        textDark: "#C8B69C",      // Light text for dark bg
+        border: "#8C7A66",        // Water-stained edges
+        highlight: "#A89171",     // Wine spill highlight
+        shadow: "rgba(92,51,23,0.4)", // Brown ink shadow
+        error: "#6B3333",         // Dried blood ink
+        success: "#4A5A3A",       // Moldy paper green
+        warning: "#8B6F47",       // Candle wax yellow
+        info: "#4A5866"          // Faded blue ink
+      }
+    },
+    mercato: {
+      name: "Mercato Popolare",
+      description: "Market stalls with cheap fabrics, worn copper, tarnished metals",
+      colors: {
+        primary: "#6B5843",        // Worn burlap
+        secondary: "#7A6651",      // Dirty canvas
+        accent: "#8B7355",         // Tarnished copper
+        background: "#2C2418",     // Market dirt
+        surface: "#3A3025",        // Stall wood
+        text: "#C4B5A0",          // Cheap paper
+        textDark: "#2C2418",      // Charcoal text
+        border: "#5A4A3A",        // Rusty metal
+        highlight: "#9B8469",     // Dirty brass
+        shadow: "rgba(0,0,0,0.8)", // Market shadows
+        error: "#7A3F3F",         // Rotten fruit red
+        success: "#495940",       // Wilted vegetable green
+        warning: "#8A6841",       // Cheap oil lamp
+        info: "#4A5A6A"          // Dirty cloth blue
       }
     }
   };
@@ -431,7 +432,7 @@ export class BrancaloniaTheme {
     });
 
     // Add flourishes to chat messages
-    Hooks.on('renderChatMessage', (message, html) => {
+    Hooks.on("renderChatLog", (message, html) => {
       if (!game.settings.get(this.ID, this.SETTINGS.ENABLE_DECORATIONS)) return;
 
       // Add Italian exclamations for critical rolls

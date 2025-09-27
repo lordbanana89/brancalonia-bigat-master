@@ -1,9 +1,9 @@
 {
   "_id": "mCXI60x6Eq7NTIAo",
-  "_key": "!items!mCXI60x6Eq7NTIAo",
+  "_key": "!item!mCXI60x6Eq7NTIAo",
   "name": "Attaccabrighe - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!NaNjT9Q9lZNheX6U"
     },
     {
       "_id": "wQIDN9MUTCszEiaS",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!wQIDN9MUTCszEiaS"
     },
     {
       "_id": "KQPi2tb2FHoozCgE",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!KQPi2tb2FHoozCgE"
     },
     {
       "_id": "z6u5Fgfm2geC4Pcx",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!z6u5Fgfm2geC4Pcx"
     },
     {
       "_id": "kiOskTVHp33k2lbI",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!kiOskTVHp33k2lbI"
     },
     {
       "_id": "EaZWzu2NSvjVbESW",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!EaZWzu2NSvjVbESW"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "attaccabrighe",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

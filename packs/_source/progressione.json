@@ -1,0 +1,36 @@
+{
+  "_id": "progressioneb1738b",
+  "_key": "!journal!progressioneb1738b",
+  "name": "Regola",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "progressioneb1738bpage1",
+      "name": "Pagina",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {}
+  }
+}

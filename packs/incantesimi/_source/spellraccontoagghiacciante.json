@@ -1,6 +1,6 @@
 {
   "_id": "spellraccontoagghiacciante3cb69c",
-  "_key": "!items!spellraccontoagghiacciante3cb69c",
+  "_key": "!item!spellraccontoagghiacciante3cb69c",
   "name": "Racconto Agghiacciante",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

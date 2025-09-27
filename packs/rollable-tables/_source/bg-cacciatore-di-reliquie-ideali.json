@@ -1,9 +1,9 @@
 {
   "_id": "L36J31zX9hVzRyRL",
-  "_key": "!items!L36J31zX9hVzRyRL",
+  "_key": "!item!L36J31zX9hVzRyRL",
   "name": "Cacciatore di reliquie - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!8WOvBeadURctNkJ2"
     },
     {
       "_id": "PEmrTRawSyMDzc3J",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!PEmrTRawSyMDzc3J"
     },
     {
       "_id": "NhQfCKzkbxxQSzrn",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!NhQfCKzkbxxQSzrn"
     },
     {
       "_id": "DfcS0PDHg2S0iSBN",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!DfcS0PDHg2S0iSBN"
     },
     {
       "_id": "HZWFWy1PiDwvHHI6",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!HZWFWy1PiDwvHHI6"
     },
     {
       "_id": "x4oA4T39fspdunbG",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!x4oA4T39fspdunbG"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "cacciatore-di-reliquie",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

@@ -95,7 +95,7 @@
   "name": "Difesa Senza Armatura",
   "img": "systems/dnd5e/icons/items/armor/plate.webp-scale-grey.webp",
   "_id": "class-barbaro-livello_1-difesa-senza-armatura",
-  "_key": "!items!class-barbaro-livello_1-difesa-senza-armatura",
+  "_key": "!item!class-barbaro-livello_1-difesa-senza-armatura",
   "ownership": {
     "default": 0
   },

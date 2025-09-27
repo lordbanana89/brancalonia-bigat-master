@@ -1,0 +1,413 @@
+{
+  "_id": "class-warlock-p0p6u4",
+  "_key": "!items!class-warlock-p0p6u4",
+  "name": "Warlock",
+  "type": "class",
+  "img": "icons/magic/unholy/orb-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Negromante del patto che stringe accordi con potenze ultraterrene per brandire magie innaturali.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.105",
+    "identifier": "warlock",
+    "levels": 20,
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "hpp0p6u4",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "Punti Ferita"
+      },
+      {
+        "_id": "fb47ac6f893566da",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "eldritch-invocations",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {}
+        },
+        "value": {
+          "2": 2,
+          "5": 3,
+          "7": 4,
+          "9": 5,
+          "12": 6,
+          "15": 7,
+          "18": 8
+        },
+        "title": "Invocazioni Mistiche"
+      },
+      {
+        "_id": "a28312a2c0d6905d",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "pact-slots",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {}
+        },
+        "value": {
+          "1": 1,
+          "2": 2,
+          "11": 3,
+          "17": 4
+        },
+        "title": "Pact Magic Slots"
+      },
+      {
+        "_id": "a28312a2c0d6905d",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "pact-slots",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {}
+        },
+        "value": {
+          "1": 1,
+          "2": 2,
+          "11": 3,
+          "17": 4
+        },
+        "title": "Pact Magic Slots"
+      },
+      {
+        "_id": "67635d5db27041bf",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.278dd5f988a37066",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Patrono Ultraterreno",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "62b03d23f9934cc3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.5b9d20fea378d233",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Magia del Patto",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "1f615915360f4a07",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.41c8480318a27f30",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Invocazioni Occulte",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "6d0066eded724417",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.229ceb9d18c2d69c",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Dono del Patto",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "92cf4a5b8b5048bc",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.c440fbe6baa8dc2b",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 4,
+        "title": "Aumento Caratteristica",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi4p6u4",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "ddbb3e34d2e941d9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.eb8b1518dc138574",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Privilegio del Patrono",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi8p6u4",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "f61290daac40497f",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.c517c327a4dc33e6",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 10,
+        "title": "Privilegio del Patrono",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "26ee75ced8144605",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.faa8ad52b07861f3",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 11,
+        "title": "Arcanum Mistico (6° livello)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi12p6u4",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "7a9ccb5765804074",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.d1519ebee24e4c0e",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 13,
+        "title": "Arcanum Mistico (7° livello)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "82f2de87c33b4395",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.ed73f5edcc980ab6",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 14,
+        "title": "Privilegio del Patrono",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "2bab854de1a84c4d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.735bc7725ebaec32",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 15,
+        "title": "Arcanum Mistico (8° livello)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi16p6u4",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "5c5cdde9f9fe4e4b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.11dbc9a7b5000988",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Arcanum Mistico (9° livello)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi19p6u4",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "1904c86fd5624033",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.d27ca8ce6a67b508",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Maestro Occulto",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ],
+    "saves": [
+      "wis",
+      "cha"
+    ],
+    "skills": {
+      "number": 2,
+      "choices": [
+        "arc",
+        "dec",
+        "his",
+        "itm",
+        "inv",
+        "nat",
+        "rel"
+      ]
+    },
+    "spellcasting": {
+      "progression": "pact",
+      "ability": "cha"
+    },
+    "hd": {
+      "denomination": "d8",
+      "spent": 0
+    },
+    "primaryAbility": [
+      "cha"
+    ],
+    "startingEquipment": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.105",
+      "tipo": "classe"
+    }
+  }
+}

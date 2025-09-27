@@ -1,0 +1,40 @@
+{
+  "_id": "rissamossabuttafuori84dd12",
+  "_key": "!journal!rissamossabuttafuori84dd12",
+  "name": "Buttafuori",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "rissamossabuttafuori84dd12page1",
+      "name": "Buttafuori",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-buttafuori",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
   "_id": "gearkit007utensilidacucinadacampo885fa2",
-  "_key": "!items!gearkit007utensilidacucinadacampo885fa2",
+  "_key": "!item!gearkit007utensilidacucinadacampo885fa2",
   "name": "Utensili da Cucina da Campo",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Pentolino, mestolo, coltello da cucina e tagliere pieghevole.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

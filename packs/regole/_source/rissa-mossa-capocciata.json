@@ -1,0 +1,17 @@
+{
+  "_id": "rissamossacapocciata5e2b39",
+  "_key": "!journal!rissamossacapocciata5e2b39",
+  "name": "Capocciata",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-capocciata",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

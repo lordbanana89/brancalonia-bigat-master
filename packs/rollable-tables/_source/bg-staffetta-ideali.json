@@ -1,9 +1,9 @@
 {
   "_id": "fJv9SQ54DMAOeKZd",
-  "_key": "!items!fJv9SQ54DMAOeKZd",
+  "_key": "!item!fJv9SQ54DMAOeKZd",
   "name": "Staffetta - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!TrAZvJrqExc9RdoF"
     },
     {
       "_id": "J6j2YaUYhGkzDPqe",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!J6j2YaUYhGkzDPqe"
     },
     {
       "_id": "VMpTfqSk1qukU38U",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!VMpTfqSk1qukU38U"
     },
     {
       "_id": "mtLi82nxqaAY7QKJ",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mtLi82nxqaAY7QKJ"
     },
     {
       "_id": "oa5jJKaHPyCUv9rU",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!oa5jJKaHPyCUv9rU"
     },
     {
       "_id": "EBFun14SSgKi5aZU",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!EBFun14SSgKi5aZU"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "staffetta",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

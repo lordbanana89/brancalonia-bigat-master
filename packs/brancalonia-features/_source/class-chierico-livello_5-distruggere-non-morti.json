@@ -168,7 +168,7 @@
   "name": "Distruggere Non Morti",
   "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
   "_id": "class-chierico-livello_5-distruggere-non-morti",
-  "_key": "!items!class-chierico-livello_5-distruggere-non-morti",
+  "_key": "!item!class-chierico-livello_5-distruggere-non-morti",
   "ownership": {
     "default": 0
   },

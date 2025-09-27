@@ -122,7 +122,7 @@
   "name": "Metamagia",
   "img": "icons/magic/symbols/cog-orange.webp",
   "_id": "class-stregone-livello_3-metamagia",
-  "_key": "!items!class-stregone-livello_3-metamagia",
+  "_key": "!item!class-stregone-livello_3-metamagia",
   "ownership": {
     "default": 0
   },

@@ -104,7 +104,7 @@
   "name": "Aura Protezione",
   "img": "icons/magic/holy/barrier-shield-dome-gold.webp",
   "_id": "class-paladino-livello_6-aura-protezione",
-  "_key": "!items!class-paladino-livello_6-aura-protezione",
+  "_key": "!item!class-paladino-livello_6-aura-protezione",
   "ownership": {
     "default": 0
   },

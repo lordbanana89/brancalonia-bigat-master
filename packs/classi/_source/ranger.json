@@ -1,6 +1,6 @@
 {
   "_id": "class-ranger-fu3aut",
-  "_key": "!items!class-ranger-fu3aut",
+  "_key": "!item!class-ranger-fu3aut",
   "name": "Ranger",
   "type": "class",
   "img": "icons/weapons/bows/bow-recurve-brown.webp",
@@ -462,7 +462,8 @@
       "dex",
       "wis"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d10"
   },
   "effects": [],
   "folder": null,

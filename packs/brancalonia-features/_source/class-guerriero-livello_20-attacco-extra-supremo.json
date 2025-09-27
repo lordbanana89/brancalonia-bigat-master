@@ -147,7 +147,7 @@
   "name": "Attacco Extra Supremo",
   "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
   "_id": "class-guerriero-livello_20-attacco-extra-supremo",
-  "_key": "!items!class-guerriero-livello_20-attacco-extra-supremo",
+  "_key": "!item!class-guerriero-livello_20-attacco-extra-supremo",
   "ownership": {
     "default": 0
   },

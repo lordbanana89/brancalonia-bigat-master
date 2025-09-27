@@ -1,0 +1,20 @@
+{
+  "_id": "bagorditabella3ee43a",
+  "_key": "!journal!bagorditabella3ee43a",
+  "name": "Botte da Orbi e Bisacce Sfondate",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "bagordi-tabella-botte-da-orbi",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "62-63"
+      }
+    }
+  }
+}

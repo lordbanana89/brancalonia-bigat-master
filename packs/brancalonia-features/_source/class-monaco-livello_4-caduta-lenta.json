@@ -82,7 +82,7 @@
   "name": "Caduta Lenta",
   "img": "icons/magic/air/wind-vortex-swirl-blue.webp",
   "_id": "class-monaco-livello_4-caduta-lenta",
-  "_key": "!items!class-monaco-livello_4-caduta-lenta",
+  "_key": "!item!class-monaco-livello_4-caduta-lenta",
   "ownership": {
     "default": 0
   },

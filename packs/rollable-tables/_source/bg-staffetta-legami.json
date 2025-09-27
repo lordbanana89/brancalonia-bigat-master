@@ -1,9 +1,9 @@
 {
   "_id": "MXcznG6DodwrOVt0",
-  "_key": "!items!MXcznG6DodwrOVt0",
+  "_key": "!item!MXcznG6DodwrOVt0",
   "name": "Staffetta - Legami",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!9idVjBhdXj18Hr2o"
     },
     {
       "_id": "1oV3vbBoPsS1MnKu",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!1oV3vbBoPsS1MnKu"
     },
     {
       "_id": "catRQRs9lam6yuIk",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!catRQRs9lam6yuIk"
     },
     {
       "_id": "vHiG4GSYTjelCv7A",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!vHiG4GSYTjelCv7A"
     },
     {
       "_id": "4cdKxsW1g3sEh4eA",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!4cdKxsW1g3sEh4eA"
     },
     {
       "_id": "W5mih41wyE4hiXPf",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!W5mih41wyE4hiXPf"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "staffetta",
       "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

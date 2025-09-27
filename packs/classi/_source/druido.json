@@ -1,6 +1,6 @@
 {
   "_id": "class-druido-e31618",
-  "_key": "!items!class-druido-e31618",
+  "_key": "!item!class-druido-e31618",
   "name": "Druido",
   "type": "class",
   "img": "icons/magic/nature/tree-elm-green.webp",
@@ -548,7 +548,8 @@
     "primaryAbility": [
       "wis"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d8"
   },
   "effects": [],
   "folder": null,

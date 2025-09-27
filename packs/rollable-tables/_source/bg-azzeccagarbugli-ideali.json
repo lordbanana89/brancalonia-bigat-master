@@ -1,9 +1,9 @@
 {
   "_id": "Z3ttpwt33ocfKWrL",
-  "_key": "!items!Z3ttpwt33ocfKWrL",
+  "_key": "!item!Z3ttpwt33ocfKWrL",
   "name": "Azzeccagarbugli - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!60LsXPolYknTj1vH"
     },
     {
       "_id": "qsXljofgvvfqCokF",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!qsXljofgvvfqCokF"
     },
     {
       "_id": "O8Y3BKPw8Yr0oGHX",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!O8Y3BKPw8Yr0oGHX"
     },
     {
       "_id": "hXciGUcsll4LzUjg",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!hXciGUcsll4LzUjg"
     },
     {
       "_id": "3ORDBwfOVtBa0S5b",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!3ORDBwfOVtBa0S5b"
     },
     {
       "_id": "76oiQOjYEoPqDCWC",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!76oiQOjYEoPqDCWC"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "azzeccagarbugli",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

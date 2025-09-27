@@ -1,0 +1,14 @@
+{
+  "_id": "tabellacrimini3a6e7d",
+  "_key": "!journal!tabellacrimini3a6e7d",
+  "name": "Regola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {}
+  }
+}

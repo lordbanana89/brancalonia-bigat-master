@@ -1,9 +1,9 @@
 {
   "_id": "JT0e1uzJfNFr3TV3",
-  "_key": "!items!JT0e1uzJfNFr3TV3",
+  "_key": "!item!JT0e1uzJfNFr3TV3",
   "name": "Passatore - Legami",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!GISNWvgj3X1fPhaA"
     },
     {
       "_id": "PbsHplT5RB7SIkJ3",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!PbsHplT5RB7SIkJ3"
     },
     {
       "_id": "R4srl47aMPYpKBPZ",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!R4srl47aMPYpKBPZ"
     },
     {
       "_id": "E567yoxGmwVTeTB7",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!E567yoxGmwVTeTB7"
     },
     {
       "_id": "yU27BJOsCx41v3Nd",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!yU27BJOsCx41v3Nd"
     },
     {
       "_id": "LqVbLmSr2OMweIOn",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!LqVbLmSr2OMweIOn"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "passatore",
       "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

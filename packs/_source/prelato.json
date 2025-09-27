@@ -1,0 +1,108 @@
+{
+  "_id": "prelato",
+  "_key": "!items!prelato",
+  "name": "Prelato",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Alto membro del Credo o di un culto, rispettato ma disposto a sporcarsi le mani come canaglia</em></p>\n<p>Abati, badesse, ordinali e oroscopi che un tempo guidavano comunità religiose ora percorrono il Regno come canaglie.</p>\n<p>La loro posizione, l'autorità spirituale e i contatti con chiese e monasteri aprono porte e cuori, ma attirano anche aspettative elevate.</p>\n<p>Alcuni cercano redenzione o nuovi seguaci, altri sfruttano il prestigio ecclesiastico per missioni meno devotate.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Persuasione e Religione</p>\n<p><strong>Linguaggi:</strong> Draconiano e Lingua Ignota</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Simbolo sacro d'oro</li>\n<li>Libro di preghiere</li>\n<li>Vesti da sacerdote</li>\n<li>Borsa con 25 ma</li>\n</ul>\n\n<h3>Privilegio: Rispetto e Influenza</h3>\n<p>Gode di ospitalità, aiuti e riconoscimento da parte dei fedeli e delle comunità religiose della propria fede, finché mantiene buona reputazione.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Aiuta sempre un credente in difficoltà.</td></tr>\n<tr><td>2</td><td>Conosce bene le vie del Padre Terno e scherza sul fatto che siano tre.</td></tr>\n<tr><td>3</td><td>Disprezza la povertà dopo aver assaporato agi e vizi della prelatura.</td></tr>\n<tr><td>4</td><td>È una fonte inesauribile di parabole e invettive, soprattutto da ubriaco.</td></tr>\n<tr><td>5</td><td>Ha perso la propria Credenza e si sente smarrito.</td></tr>\n<tr><td>6</td><td>Ha scelto la prelatura per convenienza, fuggendo alla miseria.</td></tr>\n<tr><td>7</td><td>Legge segni divini in ogni evento insolito.</td></tr>\n<tr><td>8</td><td>Riporta i peccatori sulla retta via con versetti o mazzate.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Guida. Proteggo il mio gregge di canaglie e fedeli. (Buono)</td></tr>\n<tr><td>2</td><td>Rigore. I dettami del Credo vanno applicati senza compromessi. (Legale)</td></tr>\n<tr><td>3</td><td>Libero arbitrio. Ognuno deve scegliere come seguire il cammino. (Caotico)</td></tr>\n<tr><td>4</td><td>Carriera. Uso la fede per scalare i ranghi del Credo. (Malvagio)</td></tr>\n<tr><td>5</td><td>Fede. Tutto rientra nell'equilibrio del grande disegno. (Neutrale)</td></tr>\n<tr><td>6</td><td>Redenzione. Devo rimediare ai peccati della mia vita passata. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Devo la vita a Padre Sgroppino che mi salvò e mi istruì.</td></tr>\n<tr><td>2</td><td>Il mio simbolo sacro d'oro vale più della mia stessa vita.</td></tr>\n<tr><td>3</td><td>Mi prendo cura degli infanti del Regno come anime da guidare.</td></tr>\n<tr><td>4</td><td>Uno dei miei genitori è l'ultimo legame con la vita prima della prelatura.</td></tr>\n<tr><td>5</td><td>Considero la mia comunità religiosa come una famiglia.</td></tr>\n<tr><td>6</td><td>Cerco vendetta contro l'eresiarca che rapì le mie sorelle.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Sono un inguaribile avvinazzato.</td></tr>\n<tr><td>2</td><td>Sono un impostore che conosce a malapena il Segno della Tombola.</td></tr>\n<tr><td>3</td><td>Mi fido troppo della bontà delle persone.</td></tr>\n<tr><td>4</td><td>Ho il terrore di perdere la mia fede.</td></tr>\n<tr><td>5</td><td>Aborro la fatica.</td></tr>\n<tr><td>6</td><td>Coltivo un vizio poco consono alla mia carica.</td></tr>\n</tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.42-43",
+    "identifier": "prelato",
+    "advancement": [
+      {
+        "_id": "ORljeLbz",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [],
+            "fixed": [
+              "per",
+              "rel"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "per",
+            "rel"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "F6ttR0Wm",
+        "type": "Improvement",
+        "configuration": {
+          "languages": {
+            "chosen": [],
+            "fixed": [
+              "draconiano",
+              "lingua_ignota"
+            ]
+          }
+        },
+        "value": {
+          "languages": [
+            "draconiano",
+            "lingua_ignota"
+          ]
+        },
+        "level": 0,
+        "title": "Linguaggi del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      }
+    ],
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "27318962b6c97c7a",
+        "type": "linked",
+        "count": 1,
+        "sort": 0,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-prelatosimbolo-sacro-doro-c2687a"
+      },
+      {
+        "_id": "906d9972ebb22f13",
+        "type": "linked",
+        "count": 1,
+        "sort": 100000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-prelatolibro-di-preghiere-091daa"
+      },
+      {
+        "_id": "71a443afdce5b086",
+        "type": "linked",
+        "count": 1,
+        "sort": 200000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-prelatovesti-da-sacerdote-2d600b"
+      },
+      {
+        "_id": "4c82d638cbcfbd0d",
+        "type": "linked",
+        "count": 1,
+        "sort": 300000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-prelatoborsa-con-25-ma-1ef80d"
+      }
+    ],
+    "wealth": "25 ma"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.42-43",
+      "tipo": "background"
+    }
+  }
+}

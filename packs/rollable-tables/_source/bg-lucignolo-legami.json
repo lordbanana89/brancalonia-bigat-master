@@ -1,9 +1,9 @@
 {
   "_id": "Q9zsJPlVja31uQ2z",
-  "_key": "!items!Q9zsJPlVja31uQ2z",
+  "_key": "!item!Q9zsJPlVja31uQ2z",
   "name": "Lucignolo - Legami",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!joPXJRoNxsIEQwKh"
     },
     {
       "_id": "lukfznHG9tEfdzSI",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!lukfznHG9tEfdzSI"
     },
     {
       "_id": "izLAn2KWnxuaC7ad",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!izLAn2KWnxuaC7ad"
     },
     {
       "_id": "7ZeH8wnePveEba89",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!7ZeH8wnePveEba89"
     },
     {
       "_id": "5snGrkeTVd6idBz1",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!5snGrkeTVd6idBz1"
     },
     {
       "_id": "OuEOqfVj4YEywvwg",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!OuEOqfVj4YEywvwg"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "lucignolo",
       "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

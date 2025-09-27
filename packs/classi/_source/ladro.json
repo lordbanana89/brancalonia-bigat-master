@@ -1,6 +1,6 @@
 {
   "_id": "class-rogue-xglvza",
-  "_key": "!items!class-rogue-xglvza",
+  "_key": "!item!class-rogue-xglvza",
   "name": "Ladro",
   "type": "class",
   "img": "icons/skills/melee/strike-dagger-arcane-pink.webp",
@@ -347,7 +347,8 @@
     "primaryAbility": [
       "dex"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d8"
   },
   "effects": [],
   "folder": null,

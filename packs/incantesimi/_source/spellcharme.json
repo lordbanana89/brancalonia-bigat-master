@@ -1,6 +1,6 @@
 {
   "_id": "spellcharme788491",
-  "_key": "!items!spellcharme788491",
+  "_key": "!item!spellcharme788491",
   "name": "Charme",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

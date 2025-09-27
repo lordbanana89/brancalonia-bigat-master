@@ -1,0 +1,33 @@
+{
+  "_id": "bargellos9ghr8",
+  "_key": "!items!bargellos9ghr8",
+  "name": "Bargello",
+  "type": "background",
+  "img": "icons/equipment/shield/heater-shield-steel-worn.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Guardia cittadina, sbirro o aguzzino al soldo del potere locale</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.36-37",
+    "identifier": "bargello",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.36-37",
+      "validazione": {
+        "implementato": false,
+        "file_id": "bargello_background_macaronicon",
+        "compendio": "backgrounds_macaronicon"
+      }
+    }
+  }
+}

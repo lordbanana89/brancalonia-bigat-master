@@ -1,6 +1,6 @@
 {
   "_id": "armastd011balestraleggera58985d",
-  "_key": "!items!armastd011balestraleggera58985d",
+  "_key": "!item!armastd011balestraleggera58985d",
   "name": "Balestra Leggera",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,11 +24,11 @@
     "equipped": false,
     "weaponType": "simpleR",
     "baseItem": "lightCrossbow",
-    "properties": [
-      "amm",
-      "lod",
-      "two"
-    ],
+    "properties": {
+      "amm": true,
+      "lod": true,
+      "two": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

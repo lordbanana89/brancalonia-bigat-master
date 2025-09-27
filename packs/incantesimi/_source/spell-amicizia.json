@@ -1,58 +1,25 @@
 {
-  "id": "spell-amicizia",
-  "nome": "Amicizia",
-  "nome_inglese": "Friends",
-  "livello": 0,
-  "scuola": "Ammaliamento",
-  "tempo_lancio": "1 azione",
-  "gittata": "Personale",
-  "componenti": {
-    "verbale": false,
-    "somatica": true,
-    "materiale": true,
-    "materiale_descrizione": "Una piccola quantità di trucco applicato al viso mentre lanci l'incantesimo"
-  },
-  "durata": "Concentrazione, fino a 1 minuto",
-  "descrizione": "Per la durata, hai vantaggio a tutte le prove di Carisma dirette verso una creatura a tua scelta che non ti è ostile. Quando l'incantesimo finisce, la creatura si rende conto che hai usato la magia per influenzare il suo umore e diventa ostile verso di te.",
-  "classi": [
-    "Bardo",
-    "Mago",
-    "Stregone",
-    "Warlock"
-  ],
-  "implementazione_foundry": {
-    "tipo": "cantrip",
-    "attivazione": "action",
-    "durata": "1 minute",
-    "concentrazione": true,
-    "effetto": "Advantage on CHA checks"
-  },
-  "meccaniche": {
-    "vantaggio": "Tutte prove CHA verso il bersaglio",
-    "reazione_dopo": "Creatura diventa ostile",
-    "riconoscimento": "Sa che hai usato magia"
-  },
-  "rischi": {
-    "ostilità_garantita": "Sempre ostile dopo",
-    "violenza_possibile": "Può attaccare se incline",
-    "reputazione": "Danneggia relazioni permanentemente"
-  },
-  "note_dm": "Friends è potente ma pericoloso. L'ostilità dopo è garantita. Utile solo per situazioni usa e getta.",
-  "fonte": "D&D 5e PHB p.244",
-  "name": "Spell Amicizia",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-amicizia",
-  "_key": "!items!spell-amicizia",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellamicizia627513",
+  "_key": "!item!spellamicizia627513",
+  "name": "Amicizia",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
-    "school": "evo",
+    "description": {
+      "value": "<p>Per la durata, hai vantaggio a tutte le prove di Carisma dirette verso una creatura a tua scelta che non ti è ostile. Quando l'incantesimo finisce, la creatura si rende conto che hai usato la magia per influenzare il suo umore e diventa ostile verso di te.</p><h3>Note per il DM</h3><p><em>Friends è potente ma pericoloso. L'ostilità dopo è garantita. Utile solo per situazioni usa e getta.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.244",
+    "level": 0,
+    "school": "enc",
+    "components": {
+      "vocal": false,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -65,26 +32,80 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 1,
+      "units": "minute"
     },
     "range": {
-      "value": "",
-      "units": "ft"
+      "value": null,
+      "long": null,
+      "units": "self"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-amicizia",
+      "fonte": "D&D 5e PHB p.244",
+      "note_dm": "Friends è potente ma pericoloso. L'ostilità dopo è garantita. Utile solo per situazioni usa e getta.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "durata": "1 minute",
+        "concentrazione": true,
+        "effetto": "Advantage on CHA checks"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Ammaliamento",
+        "level": 0
       }
     }
   }

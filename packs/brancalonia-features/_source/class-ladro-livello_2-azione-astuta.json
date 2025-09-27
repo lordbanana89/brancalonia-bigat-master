@@ -128,7 +128,7 @@
   "name": "Azione Astuta",
   "img": "icons/skills/movement/arrow-upward-yellow.webp",
   "_id": "class-ladro-livello_2-azione-astuta",
-  "_key": "!items!class-ladro-livello_2-azione-astuta",
+  "_key": "!item!class-ladro-livello_2-azione-astuta",
   "ownership": {
     "default": 0
   },

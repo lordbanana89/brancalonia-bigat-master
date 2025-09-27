@@ -102,7 +102,7 @@
   "name": "Deviare Proiettili",
   "img": "icons/weapons/thrown/arrow-split-y-thin.webp",
   "_id": "class-monaco-livello_3-deviare-proiettili",
-  "_key": "!items!class-monaco-livello_3-deviare-proiettili",
+  "_key": "!item!class-monaco-livello_3-deviare-proiettili",
   "ownership": {
     "default": 0
   },

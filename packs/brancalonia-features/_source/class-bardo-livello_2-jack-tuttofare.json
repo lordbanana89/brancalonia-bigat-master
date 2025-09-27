@@ -59,7 +59,7 @@
   "name": "Jack Tuttofare",
   "img": "icons/sundries/gaming/playing-cards-black-gold.webp",
   "_id": "class-bardo-livello_2-jack-tuttofare",
-  "_key": "!items!class-bardo-livello_2-jack-tuttofare",
+  "_key": "!item!class-bardo-livello_2-jack-tuttofare",
   "ownership": {
     "default": 0
   },

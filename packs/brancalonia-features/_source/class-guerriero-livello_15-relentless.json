@@ -120,7 +120,7 @@
   "name": "Relentless",
   "img": "icons/magic/control/buff-strength-muscle-damage.webp",
   "_id": "class-guerriero-livello_15-relentless",
-  "_key": "!items!class-guerriero-livello_15-relentless",
+  "_key": "!item!class-guerriero-livello_15-relentless",
   "ownership": {
     "default": 0
   },

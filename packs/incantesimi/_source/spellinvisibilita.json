@@ -1,6 +1,6 @@
 {
   "_id": "spellinvisibilita3461bf",
-  "_key": "!items!spellinvisibilita3461bf",
+  "_key": "!item!spellinvisibilita3461bf",
   "name": "Invisibilità",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

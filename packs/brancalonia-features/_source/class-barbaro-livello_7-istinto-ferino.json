@@ -99,7 +99,7 @@
   "name": "Istinto Ferino",
   "img": "icons/creatures/abilities/paw-print-orange.webp",
   "_id": "class-barbaro-livello_7-istinto-ferino",
-  "_key": "!items!class-barbaro-livello_7-istinto-ferino",
+  "_key": "!item!class-barbaro-livello_7-istinto-ferino",
   "ownership": {
     "default": 0
   },

@@ -1,9 +1,9 @@
 {
   "_id": "95AEUOAmoAnfPOPj",
-  "_key": "!items!95AEUOAmoAnfPOPj",
+  "_key": "!item!95AEUOAmoAnfPOPj",
   "name": "Azzeccagarbugli - Legami",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Fpc5YThfsAs5ybg7"
     },
     {
       "_id": "c5gCTcVToF0dD95R",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!c5gCTcVToF0dD95R"
     },
     {
       "_id": "13Sik8JDnj5XqR7n",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!13Sik8JDnj5XqR7n"
     },
     {
       "_id": "2lZYqdNAeMmX1wJA",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!2lZYqdNAeMmX1wJA"
     },
     {
       "_id": "bdmrp6QCeiat2CnN",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!bdmrp6QCeiat2CnN"
     },
     {
       "_id": "Lb2pBt07RASzDhNy",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Lb2pBt07RASzDhNy"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "azzeccagarbugli",
       "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

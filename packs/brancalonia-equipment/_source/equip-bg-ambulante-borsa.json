@@ -1,6 +1,6 @@
 {
   "_id": "equip-bg-ambulante-borsa",
-  "_key": "!items!equip-bg-ambulante-borsa",
+  "_key": "!item!equip-bg-ambulante-borsa",
   "name": "Borsa",
   "type": "equipment",
   "img": "icons/containers/bags/pouch-simple-leather-brown.webp",

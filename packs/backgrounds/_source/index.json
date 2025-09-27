@@ -1,6 +1,6 @@
 {
   "_id": "index",
-  "_key": "!items!index",
+  "_key": "!item!index",
   "name": "Index",
   "type": "background",
   "img": "icons/skills/trades/academics-study-reading-book.webp",
@@ -12,7 +12,23 @@
     },
     "source": "",
     "identifier": "index",
-    "advancement": [],
+    "advancement": [
+      {
+        "_id": "skill_409f91",
+        "type": "Trait",
+        "configuration": {
+          "choices": [
+            {
+              "count": 2
+            }
+          ],
+          "grants": [],
+          "mode": "choose",
+          "allowReplacements": false
+        },
+        "value": {}
+      }
+    ],
     "traits": {},
     "startingEquipment": [],
     "wealth": ""

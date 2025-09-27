@@ -1,0 +1,33 @@
+{
+  "_id": "contrabbandierezulgk6",
+  "_key": "!items!contrabbandierezulgk6",
+  "name": "Contrabbandiere",
+  "type": "background",
+  "img": "icons/containers/bags/pack-leather-black-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Esperto di commerci illeciti, vie segrete e merci proibite attraverso i confini del Regno</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.39-40",
+    "identifier": "contrabbandiere",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.39-40",
+      "validazione": {
+        "implementato": false,
+        "file_id": "contrabbandiere_background_macaronicon",
+        "compendio": "backgrounds_macaronicon"
+      }
+    }
+  }
+}

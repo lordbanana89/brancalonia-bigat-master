@@ -12,7 +12,23 @@
     },
     "source": "Brancalonia Macaronicon p.38-39",
     "identifier": "cialtrone",
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "skill_8a4gyg",
+        "type": "Trait",
+        "configuration": {
+          "choices": [
+            {
+              "count": 2
+            }
+          ],
+          "grants": [],
+          "mode": "choose",
+          "allowReplacements": false
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "folder": null,

@@ -1,75 +1,25 @@
 {
-  "id": "spell-colpo-shocking",
-  "nome": "Colpo Shocking",
-  "nome_inglese": "Shocking Grasp",
-  "livello": 0,
-  "scuola": "Invocazione",
-  "tempo_lancio": "1 azione",
-  "gittata": "Contatto",
-  "componenti": {
-    "verbale": true,
-    "somatica": true
-  },
-  "durata": "Istantanea",
-  "descrizione": "Un fulmine balza dalla tua mano per dare una scossa a una creatura che cerchi di toccare. Effettua un attacco in mischia con incantesimo contro il bersaglio. Hai vantaggio sul tiro per colpire se il bersaglio indossa armatura di metallo. Se colpisci, il bersaglio subisce 1d8 danni da fulmine e non può effettuare reazioni fino all'inizio del suo prossimo turno.",
-  "classi": [
-    "Mago",
-    "Stregone"
-  ],
-  "danno_scaling": {
-    "livello_1": "1d8",
-    "livello_5": "2d8",
-    "livello_11": "3d8",
-    "livello_17": "4d8"
-  },
-  "implementazione_foundry": {
-    "tipo": "cantrip",
-    "attivazione": "action",
-    "range": "touch",
-    "attacco": "melee spell",
-    "danno": "1d8",
-    "danno_tipo": "lightning",
-    "vantaggio_condizionale": "vs metal armor",
-    "effetto_aggiuntivo": "no reactions"
-  },
-  "meccaniche_potenti": {
-    "vantaggio_metallo": "Advantage vs armature metalliche",
-    "no_reazioni": "Blocca opportunity attack",
-    "fuga_sicura": "Puoi allontanarti dopo",
-    "anti_counterspell": "Blocca reazioni incluso counterspell"
-  },
-  "tattiche": [
-    "Hit and run da melee",
-    "Shutdown reaction-based enemies",
-    "Anti-tank (metal armor)",
-    "Escape da grapple poi muovi"
-  ],
-  "rischi": [
-    "Melee range pericoloso per caster",
-    "Spell attack può missare",
-    "Inutile vs non-metal armor"
-  ],
-  "combo": [
-    "Misty Step per entrare/uscire",
-    "Mobile feat per extra movimento",
-    "War Caster per opportunity attack"
-  ],
-  "note_dm": "Shocking Grasp è escape tool per wizard in melee. No reaction è potentissimo. Advantage vs metal armor lo rende anti-knight.",
-  "fonte": "D&D 5e PHB p.275",
-  "name": "Spell Colpo Shocking",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-colpo-shocking",
-  "_key": "!items!spell-colpo-shocking",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellcolposhockingf505f5",
+  "_key": "!item!spellcolposhockingf505f5",
+  "name": "Colpo Shocking",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
-    "school": "evo",
+    "description": {
+      "value": "<p>Un fulmine balza dalla tua mano per dare una scossa a una creatura che cerchi di toccare. Effettua un attacco in mischia con incantesimo contro il bersaglio. Hai vantaggio sul tiro per colpire se il bersaglio indossa armatura di metallo. Se colpisci, il bersaglio subisce 1d8 danni da fulmine e non può effettuare reazioni fino all'inizio del suo prossimo turno.</p><h3>Note per il DM</h3><p><em>Shocking Grasp è escape tool per wizard in melee. No reaction è potentissimo. Advantage vs metal armor lo rende anti-knight.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.275",
+    "level": 0,
+    "school": "con",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -82,26 +32,83 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
       "value": "",
       "units": "inst"
     },
     "range": {
-      "value": "",
-      "units": "ft"
+      "value": null,
+      "long": null,
+      "units": "touch"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-colpo-shocking",
+      "fonte": "D&D 5e PHB p.275",
+      "note_dm": "Shocking Grasp è escape tool per wizard in melee. No reaction è potentissimo. Advantage vs metal armor lo rende anti-knight.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": "touch",
+        "attacco": "melee spell",
+        "danno": "1d8",
+        "danno_tipo": "lightning",
+        "vantaggio_condizionale": "vs metal armor",
+        "effetto_aggiuntivo": "no reactions"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Invocazione",
+        "level": 0
       }
     }
   }

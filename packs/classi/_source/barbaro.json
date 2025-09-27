@@ -1,6 +1,6 @@
 {
   "_id": "class-barbarian-v7jhif",
-  "_key": "!items!class-barbarian-v7jhif",
+  "_key": "!item!class-barbarian-v7jhif",
   "name": "Barbaro",
   "type": "class",
   "img": "icons/skills/melee/strike-axe-yellow.webp",
@@ -386,7 +386,8 @@
     "primaryAbility": [
       "str"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d12"
   },
   "effects": [],
   "folder": null,

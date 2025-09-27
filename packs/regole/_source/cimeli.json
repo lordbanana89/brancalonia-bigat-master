@@ -1,10 +1,9 @@
 {
-  "_id": "cimeli",
-  "_key": "!items!cimeli",
+  "_id": "cimeli54ec55",
+  "_key": "!journal!cimeli54ec55",
   "name": "Cimeli",
+  "type": "journal",
   "img": "icons/svg/book.svg",
-  "pages": [],
-  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0
@@ -17,7 +16,5 @@
         "pagine": "69-70"
       }
     }
-  },
-  "type": "JournalEntry",
-  "effects": []
+  }
 }

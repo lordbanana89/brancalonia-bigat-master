@@ -40,7 +40,7 @@
   "name": "Consapevolezza Primordiale",
   "img": "icons/magic/perception/orb-eye-scrying-orange.webp",
   "_id": "class-ranger-livello_3-consapevolezza-primordiale",
-  "_key": "!items!class-ranger-livello_3-consapevolezza-primordiale",
+  "_key": "!item!class-ranger-livello_3-consapevolezza-primordiale",
   "ownership": {
     "default": 0
   },

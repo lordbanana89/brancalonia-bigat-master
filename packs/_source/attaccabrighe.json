@@ -1,0 +1,107 @@
+{
+  "_id": "attaccabrighe",
+  "_key": "!items!attaccabrighe",
+  "name": "Attaccabrighe",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Provocatore di risse e scazzottate, campione di bettola</em></p>\n<p>Nel Regno le risse sono diffuse quanto le partite a dadi e l’attaccabrighe vive per scatenarne sempre di nuove, cercando il brivido delle scazzottate e della prepotenza ostentata.</p>\n<p>Fra bettole, scommesse e sfide notturne, questi fanfaroni della bottega si guadagnano una fama chiassosa e sanno come trasformare un litigio in uno spettacolo di cazzotti e risate.</p>\n<p>Campioni conclamati di schiaffoni e braccio di ferro, richiamano a sé tifosi e rivali in egual misura, pronti a dimostrare di essere i padroni incontrastati della bettola.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Intrattenere e Intuizione</p>\n<p><strong>Competenze Strumenti:</strong> Due tipi di gioco</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Trofeo da rissa (Cimelio extra)</li>\n<li>Mappa con la lista di tutte le locande della città d'origine</li>\n<li>Abito comune</li>\n<li>Borsa con 15 ma</li>\n</ul>\n\n<h3>Privilegio: Rissaiolo</h3>\n<p>Conosce ogni trucco delle bettole del Regno: ottiene uno slot mossa aggiuntivo quando partecipa alle Risse.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>L’attaccabrighe cerca ogni occasione per buttarla in caciara e prendere qualcuno a sberle.</td></tr>\n<tr><td>2</td><td>Non è davvero lui a provocare le risse, ma ogni volta che ce n’è una in ballo non riesce a tirarsi indietro.</td></tr>\n<tr><td>3</td><td>La presunzione è la sua caratteristica principale, e non perde occasione per dichiararsi superiore a qualcuno in qualcosa.</td></tr>\n<tr><td>4</td><td>Per salvare l’onore e la propria nomea, l’attaccabrighe è pronto a tutto.</td></tr>\n<tr><td>5</td><td>È uno smargiasso che racconta sempre panzane colossali.</td></tr>\n<tr><td>6</td><td>Sa trascorrere intere giornate nelle bettole mangiando e bevendo a tutto spiano.</td></tr>\n<tr><td>7</td><td>Importuna continuamente le persone che ritiene attraenti, provocando ogni sorta di reazione contraria.</td></tr>\n<tr><td>8</td><td>Pretende di mangiare e bere sempre a scrocco, adducendo ogni sorta di scuse.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Onore. Difendere il proprio e l’altrui onore è la cosa più importante. (Buono)</td></tr>\n<tr><td>2</td><td>Gloria. Cerca sempre di coprirsi di gloria e ammirazione. (Legale)</td></tr>\n<tr><td>3</td><td>Bagordi. Vive per gozzoviglie e divertimenti. (Caotico)</td></tr>\n<tr><td>4</td><td>Guadagno. Riempirsi le tasche con le scommesse e i cimeli degli sconfitti. (Malvagio)</td></tr>\n<tr><td>5</td><td>Vittoria. Ricerca continuamente l’ammirazione della gente. (Neutrale)</td></tr>\n<tr><td>6</td><td>Pancia piena. La vita è troppo complicata: pensa solo a riempirsi la pancia e svuotare la vescica. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>La prima persona che lo abbia davvero menato, dimostrandogli che c’è sempre qualcuno più forte.</td></tr>\n<tr><td>2</td><td>Un combattente incontrato in una rissa che giocava sporco e lo ha battuto a tradimento.</td></tr>\n<tr><td>3</td><td>Il campione che lo ha sconfitto all’ultimo incontro alla Fiera della Beata Ignoranza.</td></tr>\n<tr><td>4</td><td>I vecchi compagni che ha dovuto abbandonare quando i birri gli hanno messo una taglia sulla testa.</td></tr>\n<tr><td>5</td><td>L’amata Dulcinea, incontrata solo una volta e che ha rapito il suo cuore.</td></tr>\n<tr><td>6</td><td>L’anziano eremita che lo ha accolto quando era solo e in fuga, insegnandogli la Cinquina di Dio.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Ha una superbia sconfinata.</td></tr>\n<tr><td>2</td><td>Ha appetiti colossali e pensa sempre a soddisfarli.</td></tr>\n<tr><td>3</td><td>È un mentitore compulsivo.</td></tr>\n<tr><td>4</td><td>Continua a ripetere “Sapete qual è il mio peggior difetto?” cambiando risposta ogni volta.</td></tr>\n<tr><td>5</td><td>Ha abitudini disgustose come mettersi gli stivali sul tavolo o pulirsi i denti col pugnale.</td></tr>\n<tr><td>6</td><td>Molesta continuamente le altre persone finché non scoppia la rissa.</td></tr>\n</tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base p.32",
+    "identifier": "attaccabrighe",
+    "advancement": [
+      {
+        "_id": "WIAH0zmC",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [],
+            "fixed": [
+              "prf",
+              "intuizione"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "prf",
+            "intuizione"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "I1pUQwl5",
+        "type": "Improvement",
+        "configuration": {
+          "tools": {
+            "chosen": {
+              "count": 2,
+              "pool": [
+                "artisan"
+              ]
+            },
+            "fixed": []
+          }
+        },
+        "value": {
+          "tools": []
+        },
+        "level": 0,
+        "title": "Strumenti del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      }
+    ],
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "2a08c3d324d9cc7f",
+        "type": "linked",
+        "count": 1,
+        "sort": 0,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-attaccabrighetrofeo-da-rissa-cimelio-extra-10db77"
+      },
+      {
+        "_id": "1538c21e45cdfb5e",
+        "type": "linked",
+        "count": 1,
+        "sort": 100000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-attaccabrighemappa-con-la-lista-di-tutte-le-locande-della-città-dorigine-f89d8d"
+      },
+      {
+        "_id": "00c0dcabb08d1cc5",
+        "type": "linked",
+        "count": 1,
+        "sort": 200000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-attaccabrigheabito-comune-57781c"
+      },
+      {
+        "_id": "80ca7cbd5191a45d",
+        "type": "linked",
+        "count": 1,
+        "sort": 300000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-attaccabrigheborsa-con-15-ma-fa11d9"
+      }
+    ],
+    "wealth": "15 ma"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale Base p.32",
+      "tipo": "background"
+    }
+  }
+}

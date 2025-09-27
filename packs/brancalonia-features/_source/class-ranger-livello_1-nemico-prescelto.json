@@ -73,7 +73,7 @@
   "name": "Nemico Prescelto",
   "img": "icons/skills/targeting/crosshair-creature-red.webp",
   "_id": "class-ranger-livello_1-nemico-prescelto",
-  "_key": "!items!class-ranger-livello_1-nemico-prescelto",
+  "_key": "!item!class-ranger-livello_1-nemico-prescelto",
   "ownership": {
     "default": 0
   },

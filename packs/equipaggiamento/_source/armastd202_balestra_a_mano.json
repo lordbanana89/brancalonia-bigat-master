@@ -1,6 +1,6 @@
 {
   "_id": "armastd202balestraamano2c53a7",
-  "_key": "!items!armastd202balestraamano2c53a7",
+  "_key": "!item!armastd202balestraamano2c53a7",
   "name": "Balestra a Mano",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,11 +24,11 @@
     "equipped": false,
     "weaponType": "simpleR",
     "baseItem": "lightCrossbow",
-    "properties": [
-      "amm",
-      "lgt",
-      "lod"
-    ],
+    "properties": {
+      "amm": true,
+      "lgt": true,
+      "lod": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

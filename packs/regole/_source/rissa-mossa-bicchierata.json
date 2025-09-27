@@ -1,0 +1,17 @@
+{
+  "_id": "rissamossabicchieratad8c0e2",
+  "_key": "!journal!rissamossabicchieratad8c0e2",
+  "name": "Bicchierata",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-bicchierata",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

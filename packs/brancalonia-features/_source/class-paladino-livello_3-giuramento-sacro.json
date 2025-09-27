@@ -173,7 +173,7 @@
   "name": "Giuramento Sacro",
   "img": "icons/sundries/documents/document-sealed-yellow.webp",
   "_id": "class-paladino-livello_3-giuramento-sacro",
-  "_key": "!items!class-paladino-livello_3-giuramento-sacro",
+  "_key": "!item!class-paladino-livello_3-giuramento-sacro",
   "ownership": {
     "default": 0
   },

@@ -1,9 +1,9 @@
 {
   "_id": "gearserv006passaggioincarrozzagiornoa805a9",
-  "_key": "!items!gearserv006passaggioincarrozzagiornoa805a9",
+  "_key": "!item!gearserv006passaggioincarrozzagiornoa805a9",
   "name": "Passaggio in Carrozza (giorno)",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Trasporto cittadino con carrozza pubblica, spazio limitato ai bagagli.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

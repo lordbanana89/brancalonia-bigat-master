@@ -1,6 +1,6 @@
 {
   "_id": "armastd102flagello70d6c3",
-  "_key": "!items!armastd102flagello70d6c3",
+  "_key": "!item!armastd102flagello70d6c3",
   "name": "Flagello",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,7 +24,7 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "",
-    "properties": [],
+    "properties": {},
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

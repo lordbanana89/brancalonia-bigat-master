@@ -1,15 +1,14 @@
-2025/09/27-10:03:37.085707 171a23000 Recovering log #44
-2025/09/27-10:03:37.086717 171a23000 Delete type=0 #44
-2025/09/27-10:03:37.086753 171a23000 Delete type=3 #42
-2025/09/27-10:03:37.088651 1722bb000 Level-0 table #50: started
-2025/09/27-10:03:37.089042 1722bb000 Level-0 table #50: 25300 bytes OK
-2025/09/27-10:03:37.089120 1722bb000 Delete type=0 #48
-2025/09/27-10:03:37.089187 1722bb000 Manual compaction at level-0 from '!items!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at (end)
-2025/09/27-10:03:37.089207 1722bb000 Manual compaction at level-1 from '!items!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at '!items!class-warlock-p0p6u4' @ 108 : 1
-2025/09/27-10:03:37.089211 1722bb000 Compacting 1@1 + 1@2 files
-2025/09/27-10:03:37.089616 1722bb000 Generated table #51@1: 12 keys, 25300 bytes
-2025/09/27-10:03:37.089621 1722bb000 Compacted 1@1 + 1@2 files => 25300 bytes
-2025/09/27-10:03:37.089665 1722bb000 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/09/27-10:03:37.089697 1722bb000 Delete type=2 #50
-2025/09/27-10:03:37.089759 1722bb000 Delete type=2 #46
-2025/09/27-10:03:37.089830 1722bb000 Manual compaction at level-1 from '!items!class-warlock-p0p6u4' @ 108 : 1 .. '!items!class-warlock-p0p6u4' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:02.713615 17398b000 Recovering log #68
+2025/09/27-12:05:02.714380 17398b000 Delete type=0 #68
+2025/09/27-12:05:02.714415 17398b000 Delete type=3 #66
+2025/09/27-12:05:02.716827 174223000 Level-0 table #74: started
+2025/09/27-12:05:02.717272 174223000 Level-0 table #74: 26114 bytes OK
+2025/09/27-12:05:02.717376 174223000 Delete type=0 #72
+2025/09/27-12:05:02.717479 174223000 Manual compaction at level-0 from '!item!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!item!indexaeb7cb' @ 0 : 0; will stop at '!item!indexaeb7cb' @ 178 : 1
+2025/09/27-12:05:02.717486 174223000 Compacting 1@0 + 1@1 files
+2025/09/27-12:05:02.717954 174223000 Generated table #75@0: 26 keys, 26390 bytes
+2025/09/27-12:05:02.717960 174223000 Compacted 1@0 + 1@1 files => 26390 bytes
+2025/09/27-12:05:02.718007 174223000 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/27-12:05:02.718036 174223000 Delete type=2 #74
+2025/09/27-12:05:02.718098 174223000 Delete type=2 #70
+2025/09/27-12:05:02.718175 174223000 Manual compaction at level-0 from '!item!indexaeb7cb' @ 178 : 1 .. '!item!indexaeb7cb' @ 0 : 0; will stop at (end)

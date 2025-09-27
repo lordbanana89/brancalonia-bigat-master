@@ -1,9 +1,9 @@
 {
   "_id": "Smb0AXuQOeKzGNPW",
-  "_key": "!items!Smb0AXuQOeKzGNPW",
+  "_key": "!item!Smb0AXuQOeKzGNPW",
   "name": "Passatore - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d8",
+  "formula": "1d8",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!L3Q45yaGxSM3xp8t"
     },
     {
       "_id": "RiLMSJzRlWk09azy",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!RiLMSJzRlWk09azy"
     },
     {
       "_id": "zV5lr2FsAkt1AIJe",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!zV5lr2FsAkt1AIJe"
     },
     {
       "_id": "YXyfpsHLTevvkJpC",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!YXyfpsHLTevvkJpC"
     },
     {
       "_id": "Z2TeV8rVt8AcA7Sl",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Z2TeV8rVt8AcA7Sl"
     },
     {
       "_id": "Ny9F7tIggTzq7FRK",
@@ -77,7 +82,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Ny9F7tIggTzq7FRK"
     },
     {
       "_id": "HWqinlKdBSfWKoYB",
@@ -89,7 +95,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!HWqinlKdBSfWKoYB"
     },
     {
       "_id": "jJHtjVEYJ5x0XuMH",
@@ -101,13 +108,17 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!jJHtjVEYJ5x0XuMH"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "passatore",
       "tipo": "tratti della personalità"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

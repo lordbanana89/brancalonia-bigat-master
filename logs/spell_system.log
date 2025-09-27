@@ -1,0 +1,269 @@
+2025-09-27 11:30:58,624 - Spell System - INFO - Starting comprehensive spell system integration for D&D 5e v5.1.9
+2025-09-27 11:30:58,624 - Spell System - INFO - Phase 1: Validating existing spells...
+2025-09-27 11:30:58,630 - Spell System - INFO - Phase 2: Fixing spell structures...
+2025-09-27 11:30:58,631 - Spell System - INFO - Fixed structure for spell: Spell Guida
+2025-09-27 11:30:58,631 - Spell System - INFO - Fixed structure for spell: Spell Passo Traslato
+2025-09-27 11:30:58,632 - Spell System - INFO - Fixed structure for spell: Spell Base 018 Accecare Assordare
+2025-09-27 11:30:58,632 - Spell System - INFO - Fixed structure for spell: Spell Levitazione
+2025-09-27 11:30:58,632 - Spell System - INFO - Fixed structure for spell: Spell Base 003 Caratteristica Potenziata
+2025-09-27 11:30:58,632 - Spell System - INFO - Fixed structure for spell: Spell Volare
+2025-09-27 11:30:58,633 - Spell System - INFO - Fixed structure for spell: Spell Ritirata Veloce
+2025-09-27 11:30:58,633 - Spell System - INFO - Fixed structure for spell: Spell Infliggi Ferite
+2025-09-27 11:30:58,633 - Spell System - INFO - Fixed structure for spell: Spell Scurovisione
+2025-09-27 11:30:58,634 - Spell System - INFO - Fixed structure for spell: Spell Fulmine Tracciante
+2025-09-27 11:30:58,634 - Spell System - INFO - Fixed structure for spell: Spell Mani Brucianti
+2025-09-27 11:30:58,634 - Spell System - INFO - Fixed structure for spell: Spell Anatema
+2025-09-27 11:30:58,635 - Spell System - INFO - Fixed structure for spell: Spell Resistenza
+2025-09-27 11:30:58,635 - Spell System - INFO - Fixed structure for spell: Spell Mondare
+2025-09-27 11:30:58,635 - Spell System - INFO - Fixed structure for spell: Spell Benedizione
+2025-09-27 11:30:58,636 - Spell System - INFO - Fixed structure for spell: Spell Lentezza
+2025-09-27 11:30:58,636 - Spell System - INFO - Fixed structure for spell: Spell Cura Ferite
+2025-09-27 11:30:58,636 - Spell System - INFO - Fixed structure for spell: Spell Parola Guaritrice
+2025-09-27 11:30:58,637 - Spell System - INFO - Fixed structure for spell: Spell Oscurita
+2025-09-27 11:30:58,637 - Spell System - INFO - Fixed structure for spell: Spell Assicurazione
+2025-09-27 11:30:58,637 - Spell System - INFO - Fixed structure for spell: Spell Sacra Fiamma
+2025-09-27 11:30:58,638 - Spell System - INFO - Fixed structure for spell: Spell Base 020 Animare I Morti
+2025-09-27 11:30:58,638 - Spell System - INFO - Fixed structure for spell: Spell Spruzzo Velenoso
+2025-09-27 11:30:58,638 - Spell System - INFO - Fixed structure for spell: Spell Eroismo
+2025-09-27 11:30:58,639 - Spell System - INFO - Fixed structure for spell: Spell Frantumare
+2025-09-27 11:30:58,639 - Spell System - INFO - Fixed structure for spell: Spell Base 002 Purificare Cibo E Bevande
+2025-09-27 11:30:58,639 - Spell System - INFO - Fixed structure for spell: Spell Raggio Di Gelo
+2025-09-27 11:30:58,639 - Spell System - INFO - Fixed structure for spell: Spell Lama Arcana
+2025-09-27 11:30:58,639 - Spell System - INFO - Fixed structure for spell: Spell Base 011 Guardiani Spirituali
+2025-09-27 11:30:58,640 - Spell System - INFO - Fixed structure for spell: Spell Base 006 Dissolvi Magie
+2025-09-27 11:30:58,640 - Spell System - INFO - Fixed structure for spell: Spell Amicizia
+2025-09-27 11:30:58,640 - Spell System - INFO - Fixed structure for spell: Spell Mano Magica
+2025-09-27 11:30:58,640 - Spell System - INFO - Fixed structure for spell: Spell Charme
+2025-09-27 11:30:58,641 - Spell System - INFO - Fixed structure for spell: Spell Produrre Fiamma
+2025-09-27 11:30:58,641 - Spell System - INFO - Fixed structure for spell: Spell Luce
+2025-09-27 11:30:58,641 - Spell System - INFO - Fixed structure for spell: Spell Marchio Incandescente
+2025-09-27 11:30:58,641 - Spell System - INFO - Fixed structure for spell: Spell Banchetto Dei Poveri
+2025-09-27 11:30:58,642 - Spell System - INFO - Fixed structure for spell: Spell Onda Tonante
+2025-09-27 11:30:58,642 - Spell System - INFO - Fixed structure for spell: Spell Sonno
+2025-09-27 11:30:58,642 - Spell System - INFO - Fixed structure for spell: Spell Messaggio
+2025-09-27 11:30:58,642 - Spell System - INFO - Fixed structure for spell: Spell Raggio Rovente
+2025-09-27 11:30:58,643 - Spell System - INFO - Fixed structure for spell: Spell Colpo Shocking
+2025-09-27 11:30:58,643 - Spell System - INFO - Fixed structure for spell: Spell Armatura Magica
+2025-09-27 11:30:58,643 - Spell System - INFO - Fixed structure for spell: Spell Individuazione Magia
+2025-09-27 11:30:58,644 - Spell System - INFO - Fixed structure for spell: Spell Artificio Druidico
+2025-09-27 11:30:58,644 - Spell System - INFO - Fixed structure for spell: Spell Identificare
+2025-09-27 11:30:58,644 - Spell System - INFO - Fixed structure for spell: Spell Base 012 Rimuovi Maledizione
+2025-09-27 11:30:58,644 - Spell System - INFO - Fixed structure for spell: Spell Trucchetto Della Mano
+2025-09-27 11:30:58,644 - Spell System - INFO - Fixed structure for spell: Spell Randello Incantato
+2025-09-27 11:30:58,645 - Spell System - INFO - Fixed structure for spell: Spell Ragnatela
+2025-09-27 11:30:58,645 - Spell System - INFO - Fixed structure for spell: Spell Invisibilita Superiore
+2025-09-27 11:30:58,645 - Spell System - INFO - Fixed structure for spell: Spell Vita Falsata
+2025-09-27 11:30:58,645 - Spell System - INFO - Fixed structure for spell: Spell Base 005 Creare Cibo E Acqua
+2025-09-27 11:30:58,646 - Spell System - INFO - Fixed structure for spell: Spell Silenzio
+2025-09-27 11:30:58,646 - Spell System - INFO - Fixed structure for spell: Spell Blocca Persone
+2025-09-27 11:30:58,646 - Spell System - INFO - Fixed structure for spell: Spell Base 009 Protezione Dal Bene E Dal Male
+2025-09-27 11:30:58,646 - Spell System - INFO - Fixed structure for spell: Spell Base 004 Ristorare Inferiore
+2025-09-27 11:30:58,647 - Spell System - INFO - Fixed structure for spell: Spell Base 008 Eroismo
+2025-09-27 11:30:58,647 - Spell System - INFO - Fixed structure for spell: Spell Palla Di Fuoco
+2025-09-27 11:30:58,647 - Spell System - INFO - Fixed structure for spell: Spell Riparare
+2025-09-27 11:30:58,648 - Spell System - INFO - Fixed structure for spell: Spell Base 021 Scagliare Maledizione
+2025-09-27 11:30:58,648 - Spell System - INFO - Fixed structure for spell: Spell Colpo Accurato
+2025-09-27 11:30:58,648 - Spell System - INFO - Fixed structure for spell: Spell Base 014 Passo Senza Tracce
+2025-09-27 11:30:58,648 - Spell System - INFO - Fixed structure for spell: Spell Emanazione Angelica
+2025-09-27 11:30:58,649 - Spell System - INFO - Fixed structure for spell: Spell Deflagrazione Occulta
+2025-09-27 11:30:58,649 - Spell System - INFO - Fixed structure for spell: Spell Base 007 Fiamma Sacra
+2025-09-27 11:30:58,649 - Spell System - INFO - Fixed structure for spell: Spell Prestidigitazione
+2025-09-27 11:30:58,649 - Spell System - INFO - Fixed structure for spell: Spell Porta Dimensionale
+2025-09-27 11:30:58,649 - Spell System - INFO - Fixed structure for spell: Spell Comprensione Linguaggi
+2025-09-27 11:30:58,650 - Spell System - INFO - Fixed structure for spell: Spell Illusione Minore
+2025-09-27 11:30:58,650 - Spell System - INFO - Fixed structure for spell: Spell Base 017 Sonno
+2025-09-27 11:30:58,650 - Spell System - INFO - Fixed structure for spell: Spell Tocco Gelido
+2025-09-27 11:30:58,650 - Spell System - INFO - Fixed structure for spell: Spell Scudo
+2025-09-27 11:30:58,651 - Spell System - INFO - Fixed structure for spell: Spell Dardo Di Fuoco
+2025-09-27 11:30:58,651 - Spell System - INFO - Fixed structure for spell: Spell Base 019 Crescita Di Spine
+2025-09-27 11:30:58,651 - Spell System - INFO - Fixed structure for spell: Spell Base 001 Benedizione
+2025-09-27 11:30:58,652 - Spell System - INFO - Fixed structure for spell: Spell Beffa Crudele
+2025-09-27 11:30:58,652 - Spell System - INFO - Fixed structure for spell: Spell Bollo Di Qualita
+2025-09-27 11:30:58,652 - Spell System - INFO - Fixed structure for spell: Spell Esorcismo
+2025-09-27 11:30:58,652 - Spell System - INFO - Fixed structure for spell: Spell Passo Fatato
+2025-09-27 11:30:58,653 - Spell System - INFO - Fixed structure for spell: Spell Invisibilita
+2025-09-27 11:30:58,653 - Spell System - INFO - Fixed structure for spell: Spell Racconto Agghiacciante
+2025-09-27 11:30:58,653 - Spell System - INFO - Fixed structure for spell: Spell Fiotto Acido
+2025-09-27 11:30:58,653 - Spell System - INFO - Fixed structure for spell: Spell Blocca Mostri
+2025-09-27 11:30:58,654 - Spell System - INFO - Fixed structure for spell: Spell Taumaturgia
+2025-09-27 11:30:58,654 - Spell System - INFO - Fixed structure for spell: Spell Controincantesimo
+2025-09-27 11:30:58,654 - Spell System - INFO - Fixed structure for spell: Spell Base 016 Anatema
+2025-09-27 11:30:58,654 - Spell System - INFO - Fixed structure for spell: Spell Base 010 Arma Spirituale
+2025-09-27 11:30:58,655 - Spell System - INFO - Fixed structure for spell: Spell Comando
+2025-09-27 11:30:58,656 - Spell System - INFO - Fixed structure for spell: Spell Dardo Incantato
+2025-09-27 11:30:58,656 - Spell System - INFO - Fixed structure for spell: Spell Suggestione
+2025-09-27 11:30:58,656 - Spell System - INFO - Fixed structure for spell: Spell Base 015 Evoca Cavalcatura
+2025-09-27 11:30:58,657 - Spell System - INFO - Fixed structure for spell: Spell Velocita
+2025-09-27 11:30:58,657 - Spell System - INFO - Fixed structure for spell: Spell Base 013 Comando
+2025-09-27 11:30:58,657 - Spell System - INFO - Phase 3: Integrating spell scaling...
+2025-09-27 11:30:58,664 - Spell System - INFO - Phase 4: Fixing spell preparation...
+2025-09-27 11:30:58,664 - Spell System - INFO - Fixed preparation for spell: Spell Guida
+2025-09-27 11:30:58,664 - Spell System - INFO - Fixed preparation for spell: Individuazione del Magico
+2025-09-27 11:30:58,665 - Spell System - INFO - Fixed preparation for spell: Spell Passo Traslato
+2025-09-27 11:30:58,665 - Spell System - INFO - Fixed preparation for spell: Guida
+2025-09-27 11:30:58,665 - Spell System - INFO - Fixed preparation for spell: Spell Base 018 Accecare Assordare
+2025-09-27 11:30:58,665 - Spell System - INFO - Fixed preparation for spell: Marchio Incandescente
+2025-09-27 11:30:58,666 - Spell System - INFO - Fixed preparation for spell: Spell Levitazione
+2025-09-27 11:30:58,666 - Spell System - INFO - Fixed preparation for spell: Spell Base 003 Caratteristica Potenziata
+2025-09-27 11:30:58,666 - Spell System - INFO - Fixed preparation for spell: Spell Volare
+2025-09-27 11:30:58,666 - Spell System - INFO - Fixed preparation for spell: Spell Ritirata Veloce
+2025-09-27 11:30:58,666 - Spell System - INFO - Fixed preparation for spell: Spell Infliggi Ferite
+2025-09-27 11:30:58,667 - Spell System - INFO - Fixed preparation for spell: Lentezza
+2025-09-27 11:30:58,667 - Spell System - INFO - Fixed preparation for spell: Spell Scurovisione
+2025-09-27 11:30:58,667 - Spell System - INFO - Fixed preparation for spell: Spell Fulmine Tracciante
+2025-09-27 11:30:58,667 - Spell System - INFO - Fixed preparation for spell: Spell Mani Brucianti
+2025-09-27 11:30:58,668 - Spell System - INFO - Fixed preparation for spell: Palla di Fuoco
+2025-09-27 11:30:58,668 - Spell System - INFO - Fixed preparation for spell: Spell Anatema
+2025-09-27 11:30:58,668 - Spell System - INFO - Fixed preparation for spell: Fiotto Acido
+2025-09-27 11:30:58,669 - Spell System - INFO - Fixed preparation for spell: Oscurità
+2025-09-27 11:30:58,669 - Spell System - INFO - Fixed preparation for spell: Spell Resistenza
+2025-09-27 11:30:58,669 - Spell System - INFO - Fixed preparation for spell: Spell Mondare
+2025-09-27 11:30:58,669 - Spell System - INFO - Fixed preparation for spell: Passo Fatato
+2025-09-27 11:30:58,670 - Spell System - INFO - Fixed preparation for spell: Spell Benedizione
+2025-09-27 11:30:58,670 - Spell System - INFO - Fixed preparation for spell: Luce
+2025-09-27 11:30:58,670 - Spell System - INFO - Fixed preparation for spell: Spell Lentezza
+2025-09-27 11:30:58,671 - Spell System - INFO - Fixed preparation for spell: Spell Cura Ferite
+2025-09-27 11:30:58,671 - Spell System - INFO - Fixed preparation for spell: Spell Parola Guaritrice
+2025-09-27 11:30:58,671 - Spell System - INFO - Fixed preparation for spell: Spell Oscurita
+2025-09-27 11:30:58,672 - Spell System - INFO - Fixed preparation for spell: Dardo Incantato
+2025-09-27 11:30:58,672 - Spell System - INFO - Fixed preparation for spell: Spell Assicurazione
+2025-09-27 11:30:58,672 - Spell System - INFO - Fixed preparation for spell: Spell Sacra Fiamma
+2025-09-27 11:30:58,672 - Spell System - INFO - Fixed preparation for spell: Spell Base 020 Animare I Morti
+2025-09-27 11:30:58,673 - Spell System - INFO - Fixed preparation for spell: Comprensione dei Linguaggi
+2025-09-27 11:30:58,673 - Spell System - INFO - Fixed preparation for spell: Spell Spruzzo Velenoso
+2025-09-27 11:30:58,673 - Spell System - INFO - Fixed preparation for spell: Invisibilità
+2025-09-27 11:30:58,673 - Spell System - INFO - Fixed preparation for spell: Charme
+2025-09-27 11:30:58,674 - Spell System - INFO - Fixed preparation for spell: Spell Eroismo
+2025-09-27 11:30:58,674 - Spell System - INFO - Fixed preparation for spell: Esorcismo
+2025-09-27 11:30:58,675 - Spell System - INFO - Fixed preparation for spell: Spell Frantumare
+2025-09-27 11:30:58,675 - Spell System - INFO - Fixed preparation for spell: Prestidigitazione
+2025-09-27 11:30:58,675 - Spell System - INFO - Fixed preparation for spell: Colpo Accurato
+2025-09-27 11:30:58,675 - Spell System - INFO - Fixed preparation for spell: Spell Base 002 Purificare Cibo E Bevande
+2025-09-27 11:30:58,675 - Spell System - INFO - Fixed preparation for spell: Spell Raggio Di Gelo
+2025-09-27 11:30:58,676 - Spell System - INFO - Fixed preparation for spell: Spell Lama Arcana
+2025-09-27 11:30:58,676 - Spell System - INFO - Fixed preparation for spell: Spell Base 011 Guardiani Spirituali
+2025-09-27 11:30:58,676 - Spell System - INFO - Fixed preparation for spell: Infliggi Ferite
+2025-09-27 11:30:58,677 - Spell System - INFO - Fixed preparation for spell: Tocco Gelido
+2025-09-27 11:30:58,677 - Spell System - INFO - Fixed preparation for spell: Spell Base 006 Dissolvi Magie
+2025-09-27 11:30:58,677 - Spell System - INFO - Fixed preparation for spell: Spell Amicizia
+2025-09-27 11:30:58,677 - Spell System - INFO - Fixed preparation for spell: Mani Brucianti
+2025-09-27 11:30:58,677 - Spell System - INFO - Fixed preparation for spell: Raggio Rovente
+2025-09-27 11:30:58,677 - Spell System - INFO - Fixed preparation for spell: Spell Mano Magica
+2025-09-27 11:30:58,678 - Spell System - INFO - Fixed preparation for spell: Spell Charme
+2025-09-27 11:30:58,678 - Spell System - INFO - Fixed preparation for spell: Produrre Fiamma
+2025-09-27 11:30:58,678 - Spell System - INFO - Fixed preparation for spell: Blocca Persone
+2025-09-27 11:30:58,678 - Spell System - INFO - Fixed preparation for spell: Spell Produrre Fiamma
+2025-09-27 11:30:58,678 - Spell System - INFO - Fixed preparation for spell: Spell Luce
+2025-09-27 11:30:58,679 - Spell System - INFO - Fixed preparation for spell: Spell Marchio Incandescente
+2025-09-27 11:30:58,679 - Spell System - INFO - Fixed preparation for spell: Sonno
+2025-09-27 11:30:58,679 - Spell System - INFO - Fixed preparation for spell: Spell Banchetto Dei Poveri
+2025-09-27 11:30:58,679 - Spell System - INFO - Fixed preparation for spell: Eroismo
+2025-09-27 11:30:58,679 - Spell System - INFO - Fixed preparation for spell: Spell Onda Tonante
+2025-09-27 11:30:58,680 - Spell System - INFO - Fixed preparation for spell: Spell Sonno
+2025-09-27 11:30:58,680 - Spell System - INFO - Fixed preparation for spell: Artificio Druidico
+2025-09-27 11:30:58,680 - Spell System - INFO - Fixed preparation for spell: Spell Messaggio
+2025-09-27 11:30:58,680 - Spell System - INFO - Fixed preparation for spell: Spell Raggio Rovente
+2025-09-27 11:30:58,681 - Spell System - INFO - Fixed preparation for spell: Bollo di Qualità
+2025-09-27 11:30:58,681 - Spell System - INFO - Fixed preparation for spell: Spell Colpo Shocking
+2025-09-27 11:30:58,681 - Spell System - INFO - Fixed preparation for spell: Taumaturgia
+2025-09-27 11:30:58,681 - Spell System - INFO - Fixed preparation for spell: Spell Armatura Magica
+2025-09-27 11:30:58,682 - Spell System - INFO - Fixed preparation for spell: Spell Individuazione Magia
+2025-09-27 11:30:58,682 - Spell System - INFO - Fixed preparation for spell: Controincantesimo
+2025-09-27 11:30:58,682 - Spell System - INFO - Fixed preparation for spell: Spell Artificio Druidico
+2025-09-27 11:30:58,682 - Spell System - INFO - Fixed preparation for spell: Spell Identificare
+2025-09-27 11:30:58,682 - Spell System - INFO - Fixed preparation for spell: Spell Base 012 Rimuovi Maledizione
+2025-09-27 11:30:58,683 - Spell System - INFO - Fixed preparation for spell: Spell Trucchetto Della Mano
+2025-09-27 11:30:58,683 - Spell System - INFO - Fixed preparation for spell: Volare
+2025-09-27 11:30:58,683 - Spell System - INFO - Fixed preparation for spell: Spell Randello Incantato
+2025-09-27 11:30:58,683 - Spell System - INFO - Fixed preparation for spell: Amicizia
+2025-09-27 11:30:58,683 - Spell System - INFO - Fixed preparation for spell: Spell Ragnatela
+2025-09-27 11:30:58,684 - Spell System - INFO - Fixed preparation for spell: Suggestione
+2025-09-27 11:30:58,684 - Spell System - INFO - Fixed preparation for spell: Spell Invisibilita Superiore
+2025-09-27 11:30:58,684 - Spell System - INFO - Fixed preparation for spell: Anatema
+2025-09-27 11:30:58,684 - Spell System - INFO - Fixed preparation for spell: Fulmine Tracciante
+2025-09-27 11:30:58,685 - Spell System - INFO - Fixed preparation for spell: Spell Vita Falsata
+2025-09-27 11:30:58,685 - Spell System - INFO - Fixed preparation for spell: Mondare
+2025-09-27 11:30:58,685 - Spell System - INFO - Fixed preparation for spell: Spell Base 005 Creare Cibo E Acqua
+2025-09-27 11:30:58,685 - Spell System - INFO - Fixed preparation for spell: Dardo di Fuoco
+2025-09-27 11:30:58,685 - Spell System - INFO - Fixed preparation for spell: Invisibilità Superiore
+2025-09-27 11:30:58,686 - Spell System - INFO - Fixed preparation for spell: Passo Traslato
+2025-09-27 11:30:58,686 - Spell System - INFO - Fixed preparation for spell: Spell Silenzio
+2025-09-27 11:30:58,686 - Spell System - INFO - Fixed preparation for spell: Levitazione
+2025-09-27 11:30:58,686 - Spell System - INFO - Fixed preparation for spell: Spell Blocca Persone
+2025-09-27 11:30:58,686 - Spell System - INFO - Fixed preparation for spell: Spell Base 009 Protezione Dal Bene E Dal Male
+2025-09-27 11:30:58,687 - Spell System - INFO - Fixed preparation for spell: Comando
+2025-09-27 11:30:58,687 - Spell System - INFO - Fixed preparation for spell: Onda Tonante
+2025-09-27 11:30:58,687 - Spell System - INFO - Fixed preparation for spell: Ritirata Veloce
+2025-09-27 11:30:58,687 - Spell System - INFO - Fixed preparation for spell: Spell Base 004 Ristorare Inferiore
+2025-09-27 11:30:58,687 - Spell System - INFO - Fixed preparation for spell: Ragnatela
+2025-09-27 11:30:58,687 - Spell System - INFO - Fixed preparation for spell: Riparare
+2025-09-27 11:30:58,688 - Spell System - INFO - Fixed preparation for spell: Spell Base 008 Eroismo
+2025-09-27 11:30:58,688 - Spell System - INFO - Fixed preparation for spell: Blocca Mostri
+2025-09-27 11:30:58,688 - Spell System - INFO - Fixed preparation for spell: Benedizione
+2025-09-27 11:30:58,688 - Spell System - INFO - Fixed preparation for spell: Spell Palla Di Fuoco
+2025-09-27 11:30:58,688 - Spell System - INFO - Fixed preparation for spell: Lama Arcana
+2025-09-27 11:30:58,689 - Spell System - INFO - Fixed preparation for spell: Spell Riparare
+2025-09-27 11:30:58,689 - Spell System - INFO - Fixed preparation for spell: Spell Base 021 Scagliare Maledizione
+2025-09-27 11:30:58,689 - Spell System - INFO - Fixed preparation for spell: Spell Colpo Accurato
+2025-09-27 11:30:58,689 - Spell System - INFO - Fixed preparation for spell: Spell Base 014 Passo Senza Tracce
+2025-09-27 11:30:58,689 - Spell System - INFO - Fixed preparation for spell: Spell Emanazione Angelica
+2025-09-27 11:30:58,689 - Spell System - INFO - Fixed preparation for spell: Armatura Magica
+2025-09-27 11:30:58,690 - Spell System - INFO - Fixed preparation for spell: Spell Deflagrazione Occulta
+2025-09-27 11:30:58,690 - Spell System - INFO - Fixed preparation for spell: Spell Base 007 Fiamma Sacra
+2025-09-27 11:30:58,690 - Spell System - INFO - Fixed preparation for spell: Spell Prestidigitazione
+2025-09-27 11:30:58,690 - Spell System - INFO - Fixed preparation for spell: Silenzio
+2025-09-27 11:30:58,690 - Spell System - INFO - Fixed preparation for spell: Randello Incantato
+2025-09-27 11:30:58,690 - Spell System - INFO - Fixed preparation for spell: Trucchetto della Mano
+2025-09-27 11:30:58,691 - Spell System - INFO - Fixed preparation for spell: Spell Porta Dimensionale
+2025-09-27 11:30:58,691 - Spell System - INFO - Fixed preparation for spell: Spell Comprensione Linguaggi
+2025-09-27 11:30:58,691 - Spell System - INFO - Fixed preparation for spell: Messaggio
+2025-09-27 11:30:58,692 - Spell System - INFO - Fixed preparation for spell: Spell Illusione Minore
+2025-09-27 11:30:58,692 - Spell System - INFO - Fixed preparation for spell: Identificare
+2025-09-27 11:30:58,692 - Spell System - INFO - Fixed preparation for spell: Spell Base 017 Sonno
+2025-09-27 11:30:58,692 - Spell System - INFO - Fixed preparation for spell: Spell Tocco Gelido
+2025-09-27 11:30:58,692 - Spell System - INFO - Fixed preparation for spell: Spell Scudo
+2025-09-27 11:30:58,693 - Spell System - INFO - Fixed preparation for spell: Spruzzo Velenoso
+2025-09-27 11:30:58,693 - Spell System - INFO - Fixed preparation for spell: Resistenza
+2025-09-27 11:30:58,693 - Spell System - INFO - Fixed preparation for spell: Parola Guaritrice
+2025-09-27 11:30:58,693 - Spell System - INFO - Fixed preparation for spell: Scurovisione
+2025-09-27 11:30:58,693 - Spell System - INFO - Fixed preparation for spell: Spell Dardo Di Fuoco
+2025-09-27 11:30:58,694 - Spell System - INFO - Fixed preparation for spell: Scudo
+2025-09-27 11:30:58,694 - Spell System - INFO - Fixed preparation for spell: Racconto Agghiacciante
+2025-09-27 11:30:58,694 - Spell System - INFO - Fixed preparation for spell: Velocità
+2025-09-27 11:30:58,694 - Spell System - INFO - Fixed preparation for spell: Spell Base 019 Crescita Di Spine
+2025-09-27 11:30:58,694 - Spell System - INFO - Fixed preparation for spell: Spell Base 001 Benedizione
+2025-09-27 11:30:58,695 - Spell System - INFO - Fixed preparation for spell: Spell Beffa Crudele
+2025-09-27 11:30:58,695 - Spell System - INFO - Fixed preparation for spell: Spell Bollo Di Qualita
+2025-09-27 11:30:58,695 - Spell System - INFO - Fixed preparation for spell: Spell Esorcismo
+2025-09-27 11:30:58,695 - Spell System - INFO - Fixed preparation for spell: Emanazione Angelica
+2025-09-27 11:30:58,696 - Spell System - INFO - Fixed preparation for spell: Raggio di Gelo
+2025-09-27 11:30:58,696 - Spell System - INFO - Fixed preparation for spell: Assicurazione
+2025-09-27 11:30:58,696 - Spell System - INFO - Fixed preparation for spell: Spell Passo Fatato
+2025-09-27 11:30:58,696 - Spell System - INFO - Fixed preparation for spell: Vita Falsata
+2025-09-27 11:30:58,696 - Spell System - INFO - Fixed preparation for spell: Banchetto dei Poveri
+2025-09-27 11:30:58,696 - Spell System - INFO - Fixed preparation for spell: Mano Magica
+2025-09-27 11:30:58,697 - Spell System - INFO - Fixed preparation for spell: Deflagrazione Occulta
+2025-09-27 11:30:58,697 - Spell System - INFO - Fixed preparation for spell: Spell Invisibilita
+2025-09-27 11:30:58,697 - Spell System - INFO - Fixed preparation for spell: Spell Racconto Agghiacciante
+2025-09-27 11:30:58,697 - Spell System - INFO - Fixed preparation for spell: Porta Dimensionale
+2025-09-27 11:30:58,698 - Spell System - INFO - Fixed preparation for spell: Spell Fiotto Acido
+2025-09-27 11:30:58,698 - Spell System - INFO - Fixed preparation for spell: Spell Blocca Mostri
+2025-09-27 11:30:58,698 - Spell System - INFO - Fixed preparation for spell: Spell Taumaturgia
+2025-09-27 11:30:58,698 - Spell System - INFO - Fixed preparation for spell: Spell Controincantesimo
+2025-09-27 11:30:58,698 - Spell System - INFO - Fixed preparation for spell: Cura Ferite
+2025-09-27 11:30:58,699 - Spell System - INFO - Fixed preparation for spell: Spell Base 016 Anatema
+2025-09-27 11:30:58,699 - Spell System - INFO - Fixed preparation for spell: Spell Base 010 Arma Spirituale
+2025-09-27 11:30:58,699 - Spell System - INFO - Fixed preparation for spell: Spell Comando
+2025-09-27 11:30:58,699 - Spell System - INFO - Fixed preparation for spell: Frantumare
+2025-09-27 11:30:58,699 - Spell System - INFO - Fixed preparation for spell: Spell Dardo Incantato
+2025-09-27 11:30:58,700 - Spell System - INFO - Fixed preparation for spell: Illusione Minore
+2025-09-27 11:30:58,700 - Spell System - INFO - Fixed preparation for spell: Colpo Shocking
+2025-09-27 11:30:58,700 - Spell System - INFO - Fixed preparation for spell: Spell Suggestione
+2025-09-27 11:30:58,700 - Spell System - INFO - Fixed preparation for spell: Beffa Crudele
+2025-09-27 11:30:58,700 - Spell System - INFO - Fixed preparation for spell: Spell Base 015 Evoca Cavalcatura
+2025-09-27 11:30:58,701 - Spell System - INFO - Fixed preparation for spell: Spell Velocita
+2025-09-27 11:30:58,701 - Spell System - INFO - Fixed preparation for spell: Spell Base 013 Comando
+2025-09-27 11:30:58,701 - Spell System - INFO - Fixed preparation for spell: Sacra Fiamma
+2025-09-27 11:30:58,701 - Spell System - INFO - Phase 5: Validating class spell integration...
+2025-09-27 11:30:58,704 - Spell System - INFO - Spell system report saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/spell_system_report.json
+2025-09-27 11:30:58,704 - Spell System - INFO - Spell system summary saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/spell_system_summary.md

@@ -1,10 +1,9 @@
 {
-  "_id": "rissamossabuttafuori",
-  "_key": "!items!rissamossabuttafuori",
+  "_id": "rissamossabuttafuori84dd12",
+  "_key": "!journal!rissamossabuttafuori84dd12",
   "name": "Buttafuori",
+  "type": "journal",
   "img": "icons/svg/book.svg",
-  "pages": [],
-  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0
@@ -14,7 +13,5 @@
       "id_originale": "rissa-mossa-buttafuori",
       "fonte": "Brancalonia Manuale Base"
     }
-  },
-  "type": "JournalEntry",
-  "effects": []
+  }
 }

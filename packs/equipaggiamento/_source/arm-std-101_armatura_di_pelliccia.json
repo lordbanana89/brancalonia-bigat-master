@@ -1,0 +1,67 @@
+{
+  "_id": "armstd101armaturadipellicciab7910a",
+  "_key": "!item!armstd101armaturadipellicciab7910a",
+  "name": "Armatura di Pelliccia",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pelli e pellicce ispessite sovrapposte.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 5.4,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "armor",
+      "subtype": "light",
+      "baseItem": ""
+    },
+    "armor": {
+      "value": 12,
+      "type": "light",
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": "—",
+    "stealth": false,
+    "proficient": true,
+    "properties": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arm-std-101",
+      "categoria": "armatura_standard",
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

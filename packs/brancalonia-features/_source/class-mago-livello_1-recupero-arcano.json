@@ -109,7 +109,7 @@
   "name": "Recupero Arcano",
   "img": "icons/magic/life/heart-shadow-red.webp",
   "_id": "class-mago-livello_1-recupero-arcano",
-  "_key": "!items!class-mago-livello_1-recupero-arcano",
+  "_key": "!item!class-mago-livello_1-recupero-arcano",
   "ownership": {
     "default": 0
   },

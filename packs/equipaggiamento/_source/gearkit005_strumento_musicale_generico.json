@@ -1,9 +1,9 @@
 {
   "_id": "gearkit005strumentomusicalegenericofdd1d6",
-  "_key": "!items!gearkit005strumentomusicalegenericofdd1d6",
+  "_key": "!item!gearkit005strumentomusicalegenericofdd1d6",
   "name": "Strumento Musicale (Generico)",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Liuto, flauto, cornamusa o altro strumento tipico dei cantastorie.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

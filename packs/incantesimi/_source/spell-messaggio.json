@@ -1,67 +1,25 @@
 {
-  "id": "spell-messaggio",
-  "nome": "Messaggio",
-  "nome_inglese": "Message",
-  "livello": 0,
-  "scuola": "Trasmutazione",
-  "tempo_lancio": "1 azione",
-  "gittata": "120 piedi",
-  "componenti": {
-    "verbale": true,
-    "somatica": true,
-    "materiale": true,
-    "materiale_descrizione": "Un pezzo di filo di rame"
-  },
-  "durata": "1 round",
-  "descrizione": "Punti il dito verso una creatura entro gittata e sussurri un messaggio. Il bersaglio (e solo il bersaglio) sente il messaggio e può rispondere con un sussurro che solo tu puoi sentire. Puoi lanciare questo incantesimo attraverso oggetti solidi se conosci il bersaglio e sai che si trova oltre la barriera. Silenzio magico, 1 piede di pietra, 1 pollice di metallo comune, una sottile lamina di piombo o 3 piedi di legno bloccano l'incantesimo. L'incantesimo non deve seguire una linea retta e può viaggiare liberamente dietro gli angoli o attraverso aperture.",
-  "classi": [
-    "Bardo",
-    "Mago",
-    "Stregone"
-  ],
-  "implementazione_foundry": {
-    "tipo": "cantrip",
-    "attivazione": "action",
-    "range": 120,
-    "durata": "1 round",
-    "comunicazione": "bidirezionale"
-  },
-  "meccaniche": {
-    "privacy": "Solo mittente e destinatario sentono",
-    "risposta": "Destinatario può rispondere",
-    "attraversamento": "Passa attraverso muri sottili",
-    "percorso": "Non serve linea retta"
-  },
-  "blocchi": [
-    "Silenzio magico",
-    "1 piede di pietra",
-    "1 pollice di metallo",
-    "Lamina di piombo",
-    "3 piedi di legno"
-  ],
-  "utilizzi_tattici": [
-    "Coordinamento silenzioso in stealth",
-    "Comunicare attraverso porte",
-    "Avvertire alleati di pericoli",
-    "Interrogatori discreti",
-    "Passare informazioni segrete"
-  ],
-  "note_dm": "Message è ottimo per comunicazione tattica. Non è telepathy, richiede sussurro verbale. Utile per split party.",
-  "fonte": "D&D 5e PHB p.259",
-  "name": "Spell Messaggio",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-messaggio",
-  "_key": "!items!spell-messaggio",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellmessaggio7f328e",
+  "_key": "!item!spellmessaggio7f328e",
+  "name": "Messaggio",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
-    "school": "evo",
+    "description": {
+      "value": "<p>Punti il dito verso una creatura entro gittata e sussurri un messaggio. Il bersaglio (e solo il bersaglio) sente il messaggio e può rispondere con un sussurro che solo tu puoi sentire. Puoi lanciare questo incantesimo attraverso oggetti solidi se conosci il bersaglio e sai che si trova oltre la barriera. Silenzio magico, 1 piede di pietra, 1 pollice di metallo comune, una sottile lamina di piombo o 3 piedi di legno bloccano l'incantesimo. L'incantesimo non deve seguire una linea retta e può viaggiare liberamente dietro gli angoli o attraverso aperture.</p><h3>Note per il DM</h3><p><em>Message è ottimo per comunicazione tattica. Non è telepathy, richiede sussurro verbale. Utile per split party.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.259",
+    "level": 0,
+    "school": "trs",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -74,26 +32,80 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 1,
+      "units": "round"
     },
     "range": {
-      "value": "",
+      "value": 120,
+      "long": null,
       "units": "ft"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-messaggio",
+      "fonte": "D&D 5e PHB p.259",
+      "note_dm": "Message è ottimo per comunicazione tattica. Non è telepathy, richiede sussurro verbale. Utile per split party.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": 120,
+        "durata": "1 round",
+        "comunicazione": "bidirezionale"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Trasmutazione",
+        "level": 0
       }
     }
   }

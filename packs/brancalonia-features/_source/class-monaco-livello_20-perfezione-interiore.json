@@ -36,7 +36,7 @@
   "name": "Perfezione Interiore",
   "img": "icons/magic/symbols/circled-gem-blue.webp",
   "_id": "class-monaco-livello_20-perfezione-interiore",
-  "_key": "!items!class-monaco-livello_20-perfezione-interiore",
+  "_key": "!item!class-monaco-livello_20-perfezione-interiore",
   "ownership": {
     "default": 0
   },

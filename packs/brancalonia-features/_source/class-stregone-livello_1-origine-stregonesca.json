@@ -77,7 +77,7 @@
   "name": "Origine Stregonesca",
   "img": "icons/magic/lightning/orb-ball-purple.webp",
   "_id": "class-stregone-livello_1-origine-stregonesca",
-  "_key": "!items!class-stregone-livello_1-origine-stregonesca",
+  "_key": "!item!class-stregone-livello_1-origine-stregonesca",
   "ownership": {
     "default": 0
   },

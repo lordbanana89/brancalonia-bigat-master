@@ -149,7 +149,7 @@
   "name": "Incantesimi",
   "img": "icons/magic/symbols/star-pointed-purple.webp",
   "_id": "class-chierico-livello_1-incantesimi",
-  "_key": "!items!class-chierico-livello_1-incantesimi",
+  "_key": "!item!class-chierico-livello_1-incantesimi",
   "ownership": {
     "default": 0
   },

@@ -1,83 +1,25 @@
 {
-  "id": "spell-scurovisione",
-  "nome": "Scurovisione",
-  "nome_inglese": "Darkvision",
-  "livello": 2,
-  "scuola": "Trasmutazione",
-  "tempo_lancio": "1 azione",
-  "gittata": "Contatto",
-  "componenti": {
-    "verbale": true,
-    "somatica": true,
-    "materiale": true,
-    "materiale_descrizione": "Un pizzico di carota secca o un'agata"
-  },
-  "durata": "8 ore",
-  "descrizione": "Tocchi una creatura consenziente per concederle la capacità di vedere al buio. Per la durata, quella creatura ha scurovisione fino a una gittata di 60 piedi.",
-  "classi": [
-    "Druido",
-    "Mago",
-    "Ranger",
-    "Stregone"
-  ],
-  "implementazione_foundry": {
-    "tipo": "spell",
-    "livello": 2,
-    "attivazione": "action",
-    "range": "touch",
-    "durata": "8 hours",
-    "visione": "darkvision 60 ft"
-  },
-  "meccaniche_darkvision": {
-    "buio_totale": "Vede come luce fioca",
-    "luce_fioca": "Vede come luce intensa",
-    "colori": "Solo scale di grigio nel buio",
-    "range": "60 piedi"
-  },
-  "valore": {
-    "durata_lunga": "8 ore = tutto dungeon",
-    "no_concentrazione": "Slot e dimentica",
-    "party_umani": "Risolve problema razze senza",
-    "stealth": "No bisogno torce"
-  },
-  "confronto_razze": {
-    "elfi_nani": "Già hanno darkvision",
-    "umani_halfling": "Beneficio massimo",
-    "60_vs_120": "Alcune razze hanno 120 ft"
-  },
-  "utilizzi": [
-    "Esplorazione dungeon",
-    "Guardie notturne",
-    "Stealth missions",
-    "Combattimento al buio",
-    "Underwater vision"
-  ],
-  "limitazioni": [
-    "Non vede attraverso oscurità magica",
-    "Non rivela invisibili",
-    "Non vede colori nel buio",
-    "60 ft può essere limitante"
-  ],
-  "devil_sight": {
-    "warlock": "Devil's Sight vede in magical darkness",
-    "differenza": "120 ft e vede tutto"
-  },
-  "note_dm": "Darkvision livella playing field per party miste. 8 ore senza concentrazione ottimo. Elimina necessità torce in dungeon.",
-  "fonte": "D&D 5e PHB p.230",
-  "name": "Spell Scurovisione",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-scurovisione",
-  "_key": "!items!spell-scurovisione",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellscurovisione0214fd",
+  "_key": "!item!spellscurovisione0214fd",
+  "name": "Scurovisione",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
-    "school": "evo",
+    "description": {
+      "value": "<p>Tocchi una creatura consenziente per concederle la capacità di vedere al buio. Per la durata, quella creatura ha scurovisione fino a una gittata di 60 piedi.</p><h3>Utilizzi Tipici</h3><ul><li>Esplorazione dungeon</li><li>Guardie notturne</li><li>Stealth missions</li><li>Combattimento al buio</li><li>Underwater vision</li></ul><h3>Note per il DM</h3><p><em>Darkvision livella playing field per party miste. 8 ore senza concentrazione ottimo. Elimina necessità torce in dungeon.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.230",
+    "level": 2,
+    "school": "trs",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -90,26 +32,88 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 8,
+      "units": "hour"
     },
     "range": {
-      "value": "",
-      "units": "ft"
+      "value": null,
+      "long": null,
+      "units": "touch"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-scurovisione",
+      "fonte": "D&D 5e PHB p.230",
+      "utilizzi": [
+        "Esplorazione dungeon",
+        "Guardie notturne",
+        "Stealth missions",
+        "Combattimento al buio",
+        "Underwater vision"
+      ],
+      "note_dm": "Darkvision livella playing field per party miste. 8 ore senza concentrazione ottimo. Elimina necessità torce in dungeon.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "attivazione": "action",
+        "range": "touch",
+        "durata": "8 hours",
+        "visione": "darkvision 60 ft"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Trasmutazione",
+        "level": 2
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "_id": "class-monaco-uhh8nq",
-  "_key": "!items!class-monaco-uhh8nq",
+  "_key": "!item!class-monaco-uhh8nq",
   "name": "Monaco",
   "type": "class",
   "img": "icons/skills/melee/unarmed-punch-fist.webp",
@@ -579,7 +579,8 @@
       "dex",
       "wis"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d8"
   },
   "effects": [],
   "folder": null,

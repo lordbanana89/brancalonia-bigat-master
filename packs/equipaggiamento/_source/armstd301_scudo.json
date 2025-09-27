@@ -1,9 +1,9 @@
 {
   "_id": "armstd301scudo6356e1",
-  "_key": "!items!armstd301scudo6356e1",
+  "_key": "!item!armstd301scudo6356e1",
   "name": "Scudo",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Scudo rotondo o rettangolare da impugnare con il braccio.</p>",
@@ -33,7 +33,7 @@
       "dex": null,
       "magicalBonus": 0
     },
-    "strength": null,
+    "strength": "—",
     "stealth": false,
     "proficient": true,
     "properties": {},
@@ -47,10 +47,6 @@
       "max": "",
       "per": null,
       "recovery": ""
-    },
-    "speed": {
-      "value": null,
-      "conditions": ""
     }
   },
   "effects": [],

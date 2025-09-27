@@ -1,9 +1,9 @@
 {
   "_id": "USxxzTyEbr3pHVXq",
-  "_key": "!items!USxxzTyEbr3pHVXq",
+  "_key": "!item!USxxzTyEbr3pHVXq",
   "name": "Prelato - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!oJLGXFmBvLNQ0E6l"
     },
     {
       "_id": "jN21uCAYbkJ4MwMz",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!jN21uCAYbkJ4MwMz"
     },
     {
       "_id": "3qW2a8G6Isx0BQob",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!3qW2a8G6Isx0BQob"
     },
     {
       "_id": "vteg8A5E1a74yLLI",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!vteg8A5E1a74yLLI"
     },
     {
       "_id": "kqYtdZMs3RYxDNkR",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!kqYtdZMs3RYxDNkR"
     },
     {
       "_id": "phRAzv37X1Dkkhgh",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!phRAzv37X1Dkkhgh"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "prelato",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

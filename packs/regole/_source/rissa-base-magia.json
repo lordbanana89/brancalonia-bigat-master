@@ -1,0 +1,17 @@
+{
+  "_id": "rissabasemagiabea57f",
+  "_key": "!journal!rissabasemagiabea57f",
+  "name": "magia",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-base-magia",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

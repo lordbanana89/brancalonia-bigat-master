@@ -68,7 +68,7 @@
   "name": "Circolo Druidico",
   "img": "icons/magic/nature/symbol-moon-stars-white.webp",
   "_id": "class-druido-livello_2-circolo-druidico",
-  "_key": "!items!class-druido-livello_2-circolo-druidico",
+  "_key": "!item!class-druido-livello_2-circolo-druidico",
   "ownership": {
     "default": 0
   },

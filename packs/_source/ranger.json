@@ -1,0 +1,479 @@
+{
+  "_id": "class-ranger-fu3aut",
+  "_key": "!items!class-ranger-fu3aut",
+  "name": "Ranger",
+  "type": "class",
+  "img": "icons/weapons/bows/bow-recurve-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cacciatore errante e guida selvaggia, padrone dei territori sconosciuti e delle imboscate.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.89",
+    "identifier": "ranger",
+    "levels": 20,
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "hpfu3aut",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "Punti Ferita"
+      },
+      {
+        "_id": "ztct4k90kzyh5cha",
+        "type": "SpellcastingValue",
+        "configuration": {},
+        "value": {
+          "2": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            2,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            2,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            2,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            2,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            0,
+            0
+          ],
+          "12": [
+            4,
+            3,
+            3,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            1,
+            0
+          ],
+          "14": [
+            4,
+            3,
+            3,
+            1,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            2,
+            0
+          ],
+          "16": [
+            4,
+            3,
+            3,
+            2,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ]
+        },
+        "title": "Slot Incantesimi"
+      },
+      {
+        "_id": "ed2f38dc45ed4f0e",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.d06bb53dc9373f7a",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Nemico Favorito",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "c40a6fa4b5394635",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.659771a4c60474da",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Esploratore Naturale",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "52350612eedf4a42",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.1751a201d5239c87",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Stile di Combattimento",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "bc41f0e322ae4cb0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.1d81e5db39c126fb",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Incantesimi",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "cc1d280b424c4c7a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.b822872677d618fc",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Archetipo del Ranger",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "31129e4322ad4b98",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.9eb9c2fc848e3fd0",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Consapevolezza Primitiva",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi43aut",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "ea789843379f4361",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.b0fbb7539f5c802f",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "Attacco Extra",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "ddf81270f00a4c96",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.c5887471b28e68ae",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 8,
+        "title": "Passo Veloce",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi83aut",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "bace8be622364fc0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.88340b2b62584047",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 10,
+        "title": "Occultamento Naturale",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi123aut",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "a489c95035e04cac",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.52e11ae5aa391ebd",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 14,
+        "title": "Scomparire",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi163aut",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "f7675ad3ab1249e7",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.2c0694eab0f3167d",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 18,
+        "title": "Sensi Ferini",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi193aut",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "e9098efff07e4bfb",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.4b5aa69c4c5b7687",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Nemico Letale",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ],
+    "saves": [
+      "str",
+      "dex"
+    ],
+    "skills": {
+      "number": 3,
+      "choices": [
+        "ani",
+        "ath",
+        "ins",
+        "inv",
+        "nat",
+        "prc",
+        "sur",
+        "ste"
+      ]
+    },
+    "spellcasting": {
+      "progression": "half",
+      "ability": "wis"
+    },
+    "hd": {
+      "denomination": "d10",
+      "spent": 0
+    },
+    "primaryAbility": [
+      "dex",
+      "wis"
+    ],
+    "startingEquipment": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.89",
+      "tipo": "classe"
+    }
+  }
+}

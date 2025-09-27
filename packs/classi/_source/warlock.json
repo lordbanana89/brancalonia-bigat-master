@@ -1,6 +1,6 @@
 {
   "_id": "class-warlock-p0p6u4",
-  "_key": "!items!class-warlock-p0p6u4",
+  "_key": "!item!class-warlock-p0p6u4",
   "name": "Warlock",
   "type": "class",
   "img": "icons/magic/unholy/orb-glowing-green.webp",
@@ -396,7 +396,8 @@
     "primaryAbility": [
       "cha"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d8"
   },
   "effects": [],
   "folder": null,

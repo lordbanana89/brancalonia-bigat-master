@@ -1,9 +1,9 @@
 {
   "_id": "oggettocontraff002mappefalse624f35",
-  "_key": "!items!oggettocontraff002mappefalse624f35",
+  "_key": "!item!oggettocontraff002mappefalse624f35",
   "name": "Mappe False",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Riproduzioni artefatte di mappe nautiche o terrestri, spesso usate per depistare o raggirare avventurieri.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

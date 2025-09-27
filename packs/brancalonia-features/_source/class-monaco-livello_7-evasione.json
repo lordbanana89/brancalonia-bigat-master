@@ -33,7 +33,7 @@
   "name": "Evasione",
   "img": "icons/skills/movement/feet-winged-boots-brown.webp",
   "_id": "class-monaco-livello_7-evasione",
-  "_key": "!items!class-monaco-livello_7-evasione",
+  "_key": "!item!class-monaco-livello_7-evasione",
   "ownership": {
     "default": 0
   },

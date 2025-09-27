@@ -1,0 +1,39 @@
+{
+  "_id": "rissabaseko5890c6",
+  "_key": "!journal!rissabaseko5890c6",
+  "name": "ko",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "rissabaseko5890c6page1",
+      "name": "ko",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-base-ko",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

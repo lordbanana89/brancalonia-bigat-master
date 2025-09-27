@@ -1,85 +1,25 @@
 {
-  "id": "spell-anatema",
-  "nome": "Anatema",
-  "nome_inglese": "Bane",
-  "livello": 1,
-  "scuola": "Ammaliamento",
-  "tempo_lancio": "1 azione",
-  "gittata": "30 piedi",
-  "componenti": {
-    "verbale": true,
-    "somatica": true,
-    "materiale": true,
-    "materiale_descrizione": "Una goccia di sangue"
-  },
-  "durata": "Concentrazione, fino a 1 minuto",
-  "descrizione": "Fino a tre creature a tua scelta che puoi vedere entro gittata devono effettuare tiri salvezza su Carisma. Ogni volta che un bersaglio che fallisce questo tiro salvezza effettua un tiro per colpire o un tiro salvezza prima che l'incantesimo finisca, il bersaglio deve tirare un d4 e sottrarre il numero tirato dal tiro per colpire o tiro salvezza.",
-  "classi": [
-    "Bardo",
-    "Chierico"
-  ],
-  "scaling": {
-    "descrizione": "+1 creatura per slot level sopra 1°",
-    "slot_2": "4 creature",
-    "slot_3": "5 creature",
-    "slot_4": "6 creature"
-  },
-  "implementazione_foundry": {
-    "tipo": "spell",
-    "livello": 1,
-    "attivazione": "action",
-    "range": 30,
-    "save": "charisma",
-    "bersagli": 3,
-    "durata": "1 minute",
-    "concentrazione": true,
-    "penalita": "-1d4 to attacks and saves"
-  },
-  "meccaniche": {
-    "save_iniziale": "CHA save per resistere",
-    "penalita": "-1d4 attacks e saves",
-    "durata": "1 minuto concentrazione",
-    "no_save_ripetuti": "Effetto dura tutto"
-  },
-  "confronto_bless": {
-    "opposto": "Versione negativa di Bless",
-    "save_richiesto": "Bane richiede save fallito",
-    "cha_save": "CHA raro, spesso basso"
-  },
-  "valore_tattico": {
-    "debuff_boss": "-d4 su boss riduce threat",
-    "save_reduction": "Aiuta land altri spell",
-    "attack_reduction": "Riduce damage income",
-    "multi_enemy": "3+ nemici debuffati"
-  },
-  "problemi": [
-    "Richiede save iniziale",
-    "Concentrazione occupata",
-    "CHA save a volte alto",
-    "Setup turn richiesto"
-  ],
-  "sinergie": [
-    "Combo con save-or-suck spells",
-    "Stack con altri debuff",
-    "Protegge concentration casters",
-    "Setup per hold person/monster"
-  ],
-  "note_dm": "Bane sottovalutato ma potente. -1d4 su nemici multipli riduce molto threat. CHA save spesso fallisce. Compete per concentration.",
-  "fonte": "D&D 5e PHB p.216",
-  "name": "Spell Anatema",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-anatema",
-  "_key": "!items!spell-anatema",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellanatema1dba34",
+  "_key": "!item!spellanatema1dba34",
+  "name": "Anatema",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
+    "description": {
+      "value": "<p>Fino a tre creature a tua scelta che puoi vedere entro gittata devono effettuare tiri salvezza su Carisma. Ogni volta che un bersaglio che fallisce questo tiro salvezza effettua un tiro per colpire o un tiro salvezza prima che l'incantesimo finisca, il bersaglio deve tirare un d4 e sottrarre il numero tirato dal tiro per colpire o tiro salvezza.</p><h3>Note per il DM</h3><p><em>Bane sottovalutato ma potente. -1d4 su nemici multipli riduce molto threat. CHA save spesso fallisce. Compete per concentration.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.216",
     "level": 1,
-    "school": "evo",
+    "school": "enc",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -92,26 +32,84 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 1,
+      "units": "minute"
     },
     "range": {
-      "value": "",
+      "value": 30,
+      "long": null,
       "units": "ft"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-anatema",
+      "fonte": "D&D 5e PHB p.216",
+      "note_dm": "Bane sottovalutato ma potente. -1d4 su nemici multipli riduce molto threat. CHA save spesso fallisce. Compete per concentration.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "attivazione": "action",
+        "range": 30,
+        "save": "charisma",
+        "bersagli": 3,
+        "durata": "1 minute",
+        "concentrazione": true,
+        "penalita": "-1d4 to attacks and saves"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Ammaliamento",
+        "level": 1
       }
     }
   }

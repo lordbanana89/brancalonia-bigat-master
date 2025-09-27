@@ -1,9 +1,9 @@
 {
   "_id": "CMrZE6owY2hymXZ0",
-  "_key": "!items!CMrZE6owY2hymXZ0",
+  "_key": "!item!CMrZE6owY2hymXZ0",
   "name": "Impresario - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!jg0aMPfjheQuq779"
     },
     {
       "_id": "XaCgqgic0rWVuhGY",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!XaCgqgic0rWVuhGY"
     },
     {
       "_id": "iVTGVKZnbOeKbIXg",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!iVTGVKZnbOeKbIXg"
     },
     {
       "_id": "AruhnMH24BCt1bkU",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!AruhnMH24BCt1bkU"
     },
     {
       "_id": "WCO5RENtzKKhmwD4",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!WCO5RENtzKKhmwD4"
     },
     {
       "_id": "5IAwrwtbnmprlK3q",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!5IAwrwtbnmprlK3q"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "impresario",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

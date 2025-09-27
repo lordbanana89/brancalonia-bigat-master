@@ -1,9 +1,9 @@
 {
   "_id": "gearkit004strumentidaladro885d95",
-  "_key": "!items!gearkit004strumentidaladro885d95",
+  "_key": "!item!gearkit004strumentidaladro885d95",
   "name": "Strumenti da Ladro",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Set di grimaldelli, lime e specchietti per aprire serrature e disinnescare trappole.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

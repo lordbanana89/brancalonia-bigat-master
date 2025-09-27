@@ -1,17 +1,12 @@
 {
-  "_id": "armi",
-  "_key": "!items!armi",
-  "name": "Armi",
-  "type": "JournalEntry",
+  "_id": "journal90697a8a83",
+  "_key": "!journal!journal90697a8a83",
+  "name": "Armi di Brancalonia",
+  "type": "journal",
   "img": "icons/svg/book.svg",
-  "pages": [],
-  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0
   },
-  "flags": {
-    "brancalonia": {}
-  },
-  "effects": []
+  "flags": {}
 }

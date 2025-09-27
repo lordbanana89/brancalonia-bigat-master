@@ -1,0 +1,14 @@
+{
+  "_id": "livelli90b403",
+  "_key": "!journal!livelli90b403",
+  "name": "Regola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {}
+  }
+}

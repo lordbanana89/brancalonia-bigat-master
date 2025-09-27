@@ -1,6 +1,6 @@
 {
   "_id": "equip-bg-cacciatore_di_reliquie-borsa",
-  "_key": "!items!equip-bg-cacciatore_di_reliquie-borsa",
+  "_key": "!item!equip-bg-cacciatore_di_reliquie-borsa",
   "name": "Borsa",
   "type": "equipment",
   "img": "icons/containers/bags/pouch-simple-leather-brown.webp",

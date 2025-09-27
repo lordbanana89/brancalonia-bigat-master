@@ -1,10 +1,9 @@
 {
-  "_id": "rissamossaprovocazione",
-  "_key": "!items!rissamossaprovocazione",
+  "_id": "rissamossaprovocazione85aafa",
+  "_key": "!journal!rissamossaprovocazione85aafa",
   "name": "Provocazione",
+  "type": "journal",
   "img": "icons/svg/book.svg",
-  "pages": [],
-  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0
@@ -14,7 +13,5 @@
       "id_originale": "rissa-mossa-provocazione",
       "fonte": "Brancalonia Manuale Base"
     }
-  },
-  "type": "JournalEntry",
-  "effects": []
+  }
 }

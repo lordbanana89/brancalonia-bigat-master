@@ -1,0 +1,596 @@
+{
+  "_id": "class-monaco-uhh8nq",
+  "_key": "!items!class-monaco-uhh8nq",
+  "name": "Monaco",
+  "type": "class",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Asceta marziale che incanala il ki per trasformare il corpo in un'arma perfetta.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.76",
+    "identifier": "monaco",
+    "levels": 20,
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "hpuhh8nq",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "Punti Ferita"
+      },
+      {
+        "_id": "74bcc1e0384a916f",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "unarmored-movement",
+          "type": "distance",
+          "distance": {
+            "units": "ft"
+          },
+          "scale": {}
+        },
+        "value": {
+          "2": 10,
+          "6": 15,
+          "10": 20,
+          "14": 25,
+          "18": 30
+        },
+        "title": "Movimento Senza Armatura"
+      },
+      {
+        "_id": "1fcaebc19368f7ae",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "martial-arts",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {}
+        },
+        "value": {
+          "1": "1d4",
+          "5": "1d6",
+          "11": "1d8",
+          "17": "1d10"
+        },
+        "title": "Arti Marziali"
+      },
+      {
+        "_id": "cba5012c58c9717b",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "ki",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {}
+        },
+        "value": {
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7,
+          "8": 8,
+          "9": 9,
+          "10": 10,
+          "11": 11,
+          "12": 12,
+          "13": 13,
+          "14": 14,
+          "15": 15,
+          "16": 16,
+          "17": 17,
+          "18": 18,
+          "19": 19,
+          "20": 20
+        },
+        "title": "Punti Ki"
+      },
+      {
+        "_id": "956c4db886524e2f",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.e9137ca3e71d7b10",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Difesa Senza Armatura",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "6c1a05d610cc42a2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.1448aa2cca99cafd",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Arti Marziali",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "026cb4a8d92447d3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.f3c25a86f47fa81d",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Ki",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "049a438dc4d74f6a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.21e24c56bd083ea5",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Movimento Senza Armatura",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "82553728745249c7",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.2b00e04546de7748",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Tradizione Monastica",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "1f34c173c18f4806",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.b8f075889f9c3d2a",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Deflettere Proiettili",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "3b2be34603f94594",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.d1b5fdd263568233",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 4,
+        "title": "Caduta Lenta",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi4h8nq",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "9275dc2d4e58439c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.ac71d81301b38818",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "Attacco Extra",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "519bd0d4c708421c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.708d887c76cd8083",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "Pugno Stordente",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "8767f48f0ad7461a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.47f92c04806527cb",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Colpi Potenziati dal Ki",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "64e935981d514587",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.1f4a1f37f7e1f277",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Privilegio della Tradizione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "632110ed2f7a4eb1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.ebe265683732d0fd",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 7,
+        "title": "Evasione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "45d978033764452b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.5b89d63c631affb3",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 7,
+        "title": "Quiete della Mente",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "03098bcf3d3a4afd",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.a47f050c7819546d",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 8,
+        "title": "Privilegio della Tradizione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi8h8nq",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "59fe8eea148b412f",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.433e496b24c29289",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 9,
+        "title": "Movimento Senza Armatura Migliorato",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "3fa36ecd584d4326",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.c89fc47473d037ac",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 10,
+        "title": "Purezza del Corpo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "7b63d70f7067465e",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.a3a4286d84f62da6",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 11,
+        "title": "Privilegio della Tradizione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi12h8nq",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "49e9d4c0fcb84604",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.f8ad5b1d21dd8901",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 13,
+        "title": "Linguaggio del Sole e della Luna",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "0935c9f198dd4c1f",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.e74f76c01889f712",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 14,
+        "title": "Anima di Diamante",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "adea648bf3d241ba",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.a0aef8a4971326b8",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 15,
+        "title": "Corpo Senza Tempo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi16h8nq",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "4b7a51f88b0145f7",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.7bb4906fb938067c",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Privilegio della Tradizione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "0af9459a68b54462",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.72a03613a6c480ce",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 18,
+        "title": "Corpo Vuoto",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "asi19h8nq",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "9ef8eeaaaa9a426f",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia.brancalonia-features.Item.30a530a8b2be12a2",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Perfezione dell'Essere",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ],
+    "saves": [
+      "str",
+      "dex"
+    ],
+    "skills": {
+      "number": 2,
+      "choices": [
+        "acr",
+        "ath",
+        "his",
+        "ins",
+        "rel",
+        "ste"
+      ]
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    },
+    "hd": {
+      "denomination": "d8",
+      "spent": 0
+    },
+    "primaryAbility": [
+      "dex",
+      "wis"
+    ],
+    "startingEquipment": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.76",
+      "tipo": "classe"
+    }
+  }
+}

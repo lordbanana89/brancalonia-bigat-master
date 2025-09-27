@@ -1,6 +1,6 @@
 {
   "_id": "spellbloccamostride4ab8",
-  "_key": "!items!spellbloccamostride4ab8",
+  "_key": "!item!spellbloccamostride4ab8",
   "name": "Blocca Mostri",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

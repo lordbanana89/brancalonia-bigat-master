@@ -177,7 +177,7 @@
   "name": "Campione Primordiale",
   "img": "icons/environment/people/hero.webp",
   "_id": "class-barbaro-livello_20-campione-primordiale",
-  "_key": "!items!class-barbaro-livello_20-campione-primordiale",
+  "_key": "!item!class-barbaro-livello_20-campione-primordiale",
   "ownership": {
     "default": 0
   },

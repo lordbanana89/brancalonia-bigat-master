@@ -1,6 +1,6 @@
 {
   "_id": "equip-bg-impresario-abito",
-  "_key": "!items!equip-bg-impresario-abito",
+  "_key": "!item!equip-bg-impresario-abito",
   "name": "Abito di buona fattura",
   "type": "equipment",
   "img": "icons/equipment/chest/shirt-simple-white.webp",

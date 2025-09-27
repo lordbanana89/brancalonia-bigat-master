@@ -1,6 +1,6 @@
 {
   "_id": "intruglio0092e0307",
-  "_key": "!items!intruglio0092e0307",
+  "_key": "!item!intruglio0092e0307",
   "name": "Panacea dei Fieronzi",
   "type": "consumable",
   "img": "icons/consumables/potions/bottle-round-corked-red.webp",
@@ -47,11 +47,7 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "consumableType": "potion",
-    "charges": {
-      "value": 1,
-      "max": 1
-    }
+    "consumableType": "potion"
   },
   "effects": [],
   "folder": null,

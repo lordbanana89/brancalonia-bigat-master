@@ -1,9 +1,9 @@
 {
   "_id": "OIepYgqBsVWw3WaW",
-  "_key": "!items!OIepYgqBsVWw3WaW",
+  "_key": "!item!OIepYgqBsVWw3WaW",
   "name": "Impresario - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d8",
+  "formula": "1d8",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!TOrB7rQqsCuEhDLv"
     },
     {
       "_id": "sKe2ErOIzmIsgBgs",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!sKe2ErOIzmIsgBgs"
     },
     {
       "_id": "Gg8hDj55sXIpQxRp",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Gg8hDj55sXIpQxRp"
     },
     {
       "_id": "Mq4YpVPb77QtzH3M",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Mq4YpVPb77QtzH3M"
     },
     {
       "_id": "piMqlg9B8ErCrCgf",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!piMqlg9B8ErCrCgf"
     },
     {
       "_id": "4jusvR71SaizOMSB",
@@ -77,7 +82,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!4jusvR71SaizOMSB"
     },
     {
       "_id": "wU8vYEXTUf0bd8iG",
@@ -89,7 +95,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!wU8vYEXTUf0bd8iG"
     },
     {
       "_id": "rnSuD56S0vfhbOdR",
@@ -101,13 +108,17 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!rnSuD56S0vfhbOdR"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "impresario",
       "tipo": "tratti della personalità"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

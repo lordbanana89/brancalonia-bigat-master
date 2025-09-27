@@ -120,7 +120,7 @@
   "name": "Ki",
   "img": "icons/magic/light/orb-lightbulb-white.webp",
   "_id": "class-monaco-livello_2-ki",
-  "_key": "!items!class-monaco-livello_2-ki",
+  "_key": "!item!class-monaco-livello_2-ki",
   "ownership": {
     "default": 0
   },

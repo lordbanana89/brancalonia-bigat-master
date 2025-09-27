@@ -1,6 +1,6 @@
 {
   "_id": "armastd115martellodaguerra10a2f2",
-  "_key": "!items!armastd115martellodaguerra10a2f2",
+  "_key": "!item!armastd115martellodaguerra10a2f2",
   "name": "Martello da Guerra",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,9 +24,9 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "warhammer",
-    "properties": [
-      "ver"
-    ],
+    "properties": {
+      "ver": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

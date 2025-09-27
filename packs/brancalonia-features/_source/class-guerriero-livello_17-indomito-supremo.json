@@ -76,7 +76,7 @@
   "name": "Indomito Supremo",
   "img": "icons/equipment/shield/buckler-wooden-boss-steel.webp",
   "_id": "class-guerriero-livello_17-indomito-supremo",
-  "_key": "!items!class-guerriero-livello_17-indomito-supremo",
+  "_key": "!item!class-guerriero-livello_17-indomito-supremo",
   "ownership": {
     "default": 0
   },

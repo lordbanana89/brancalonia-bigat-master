@@ -1,86 +1,25 @@
 {
-  "id": "spell-ritirata-veloce",
-  "nome": "Ritirata Veloce",
-  "nome_inglese": "Expeditious Retreat",
-  "livello": 1,
-  "scuola": "Trasmutazione",
-  "tempo_lancio": "1 azione bonus",
-  "gittata": "Personale",
-  "componenti": {
-    "verbale": true,
-    "somatica": true
-  },
-  "durata": "Concentrazione, fino a 10 minuti",
-  "descrizione": "Questo incantesimo ti permette di muoverti a velocità incredibile. Quando lanci questo incantesimo, e poi come azione bonus in ognuno dei tuoi turni fino al termine dell'incantesimo, puoi effettuare l'azione Scatto.",
-  "classi": [
-    "Mago",
-    "Stregone",
-    "Warlock"
-  ],
-  "implementazione_foundry": {
-    "tipo": "spell",
-    "livello": 1,
-    "attivazione": "bonus",
-    "range": "self",
-    "durata": "10 minutes",
-    "concentrazione": true,
-    "effetto": "Dash as bonus action"
-  },
-  "meccaniche": {
-    "cast": "Bonus action per castare",
-    "ogni_turno": "Bonus action per Dash",
-    "movimento_totale": "Doppio movimento",
-    "esempio_30ft": "60 ft di movimento/turno"
-  },
-  "non_e": {
-    "non_speed_boost": "Non aumenta speed base",
-    "non_automatico": "Richiede bonus action",
-    "non_free_disengage": "Provoca opportunity"
-  },
-  "confronto_mobilita": {
-    "vs_longstrider": "Expeditious più veloce ma concentration",
-    "vs_misty_step": "Continuo vs teleport",
-    "vs_dash_action": "Lascia action libera"
-  },
-  "utilizzi": [
-    "Fuga da combattimento perso",
-    "Inseguimenti",
-    "Esplorare velocemente",
-    "Kiting nemici lenti",
-    "Raggiungere obiettivi distanti"
-  ],
-  "azione_libera": {
-    "cast_spell": "Puoi castare e muovere",
-    "attack": "Attack + movimento",
-    "dodge": "Dodge + movimento per sicurezza"
-  },
-  "problemi": [
-    "Concentrazione per movimento",
-    "Non evita opportunity attacks",
-    "Bonus action occupata",
-    "Non aiuta party"
-  ],
-  "sinergie": [
-    "Mobile feat per no opportunity",
-    "Cunning Action rogue conflitto",
-    "Action Surge fighter combo"
-  ],
-  "note_dm": "Expeditious Retreat è mobilità sostenuta economica. Nome inganna - ottimo anche per inseguire. Concentrazione è costo reale.",
-  "fonte": "D&D 5e PHB p.238",
-  "name": "Spell Ritirata Veloce",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-ritirata-veloce",
-  "_key": "!items!spell-ritirata-veloce",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellritirataveloced08ba7",
+  "_key": "!item!spellritirataveloced08ba7",
+  "name": "Ritirata Veloce",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
+    "description": {
+      "value": "<p>Questo incantesimo ti permette di muoverti a velocità incredibile. Quando lanci questo incantesimo, e poi come azione bonus in ognuno dei tuoi turni fino al termine dell'incantesimo, puoi effettuare l'azione Scatto.</p><h3>Utilizzi Tipici</h3><ul><li>Fuga da combattimento perso</li><li>Inseguimenti</li><li>Esplorare velocemente</li><li>Kiting nemici lenti</li><li>Raggiungere obiettivi distanti</li></ul><h3>Note per il DM</h3><p><em>Expeditious Retreat è mobilità sostenuta economica. Nome inganna - ottimo anche per inseguire. Concentrazione è costo reale.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.238",
     "level": 1,
-    "school": "evo",
+    "school": "trs",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -92,27 +31,90 @@
       "prepared": false
     },
     "activation": {
-      "type": "action",
-      "cost": 1
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 10,
+      "units": "minute"
     },
     "range": {
-      "value": "",
-      "units": "ft"
+      "value": null,
+      "long": null,
+      "units": "self"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-ritirata-veloce",
+      "fonte": "D&D 5e PHB p.238",
+      "utilizzi": [
+        "Fuga da combattimento perso",
+        "Inseguimenti",
+        "Esplorare velocemente",
+        "Kiting nemici lenti",
+        "Raggiungere obiettivi distanti"
+      ],
+      "note_dm": "Expeditious Retreat è mobilità sostenuta economica. Nome inganna - ottimo anche per inseguire. Concentrazione è costo reale.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "attivazione": "bonus",
+        "range": "self",
+        "durata": "10 minutes",
+        "concentrazione": true,
+        "effetto": "Dash as bonus action"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Trasmutazione",
+        "level": 1
       }
     }
   }

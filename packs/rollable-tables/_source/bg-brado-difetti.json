@@ -1,9 +1,9 @@
 {
   "_id": "vzIfx2SrJlAl8b9s",
-  "_key": "!items!vzIfx2SrJlAl8b9s",
+  "_key": "!item!vzIfx2SrJlAl8b9s",
   "name": "Brado - Difetti",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!sBVThGlLA3PoHUJ6"
     },
     {
       "_id": "UrVqxmAw4MTw4MeC",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!UrVqxmAw4MTw4MeC"
     },
     {
       "_id": "V9b4JLjAJ2zbKmNT",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!V9b4JLjAJ2zbKmNT"
     },
     {
       "_id": "EXyguGVUGoZ6ZMih",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!EXyguGVUGoZ6ZMih"
     },
     {
       "_id": "jsk0cnn1hdzUiYQN",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!jsk0cnn1hdzUiYQN"
     },
     {
       "_id": "n97AU9ZG6u3mo0ng",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!n97AU9ZG6u3mo0ng"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "brado",
       "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

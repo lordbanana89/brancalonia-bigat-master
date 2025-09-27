@@ -1,0 +1,17 @@
+{
+  "_id": "rissamossarandellatad5101d",
+  "_key": "!journal!rissamossarandellatad5101d",
+  "name": "Randellata",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-randellata",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
   "_id": "mn4JitpBzFsTUhF4",
-  "_key": "!items!mn4JitpBzFsTUhF4",
+  "_key": "!item!mn4JitpBzFsTUhF4",
   "name": "Staffetta - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d8",
+  "formula": "1d8",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!AlHJrh3noQBvc9zD"
     },
     {
       "_id": "Ri5cHzycv79HQHsv",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Ri5cHzycv79HQHsv"
     },
     {
       "_id": "RQyHvbFhTtg3CWUN",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!RQyHvbFhTtg3CWUN"
     },
     {
       "_id": "zOYrggh3dIsmXFWz",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!zOYrggh3dIsmXFWz"
     },
     {
       "_id": "HknWD82GEG1wmKxy",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!HknWD82GEG1wmKxy"
     },
     {
       "_id": "B2M53d6rWaRE8l88",
@@ -77,7 +82,8 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!B2M53d6rWaRE8l88"
     },
     {
       "_id": "J9jamnh8RB4H9EP1",
@@ -89,7 +95,8 @@
         7,
         7
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!J9jamnh8RB4H9EP1"
     },
     {
       "_id": "KGW02HCEEtJAJsxi",
@@ -101,13 +108,17 @@
         8,
         8
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!KGW02HCEEtJAJsxi"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "staffetta",
       "tipo": "tratti della personalità"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

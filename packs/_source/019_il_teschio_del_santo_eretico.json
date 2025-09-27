@@ -1,0 +1,81 @@
+{
+  "_id": "ilteschiodelsantoereticod77f69",
+  "_key": "!items!ilteschiodelsantoereticod77f69",
+  "name": "Il Teschio del Santo Eretico",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Teschio umano con aureola dipinta</p><h3>Proprietà</h3><p>Protegge da possessione e controllo mentale in 3m</p><h3>Storia</h3><p><em>Santo scomunicato per aver dubitato del Papa</em></p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": {
+      "mgc": true
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "019",
+      "categoria": "cimelo",
+      "storia": "Santo scomunicato per aver dubitato del Papa",
+      "proprieta_originale": "Protegge da possessione e controllo mentale in 3m",
+      "implementazione": {
+        "tipo": "narrativo",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

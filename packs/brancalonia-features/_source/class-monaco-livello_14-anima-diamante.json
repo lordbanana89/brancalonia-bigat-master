@@ -33,7 +33,7 @@
   "name": "Anima Diamante",
   "img": "icons/commodities/gems/gem-faceted-radiant-white.webp",
   "_id": "class-monaco-livello_14-anima-diamante",
-  "_key": "!items!class-monaco-livello_14-anima-diamante",
+  "_key": "!item!class-monaco-livello_14-anima-diamante",
   "ownership": {
     "default": 0
   },

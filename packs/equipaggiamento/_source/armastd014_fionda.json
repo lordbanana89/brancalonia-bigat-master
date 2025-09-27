@@ -1,6 +1,6 @@
 {
   "_id": "armastd014fiondab8b235",
-  "_key": "!items!armastd014fiondab8b235",
+  "_key": "!item!armastd014fiondab8b235",
   "name": "Fionda",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,9 +24,9 @@
     "equipped": false,
     "weaponType": "simpleR",
     "baseItem": "",
-    "properties": [
-      "amm"
-    ],
+    "properties": {
+      "amm": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

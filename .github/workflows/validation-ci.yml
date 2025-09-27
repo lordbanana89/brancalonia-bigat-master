@@ -1,0 +1,182 @@
+name: Brancalonia Validation CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Esegui ogni domenica alle 3:00 UTC
+    - cron: '0 3 * * 0'
+
+jobs:
+  validate:
+    name: Validate Compliance
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: |
+        npm install
+        npm install classic-level
+    
+    - name: Run validation
+      run: node validate-project-compliance.cjs
+    
+    - name: Check compliance score
+      id: compliance
+      run: |
+        SCORE=$(grep -o '"score": [0-9]*' compliance-report.json | grep -o '[0-9]*')
+        ERRORS=$(grep -o '"errors": \[' compliance-report.json -A 1000 | grep -c '"' || true)
+        WARNINGS=$(grep -o '"warnings": \[' compliance-report.json -A 100 | grep -c '"' || true)
+        
+        echo "score=$SCORE" >> $GITHUB_OUTPUT
+        echo "errors=$ERRORS" >> $GITHUB_OUTPUT
+        echo "warnings=$WARNINGS" >> $GITHUB_OUTPUT
+        
+        echo "📊 Compliance Score: $SCORE%"
+        echo "❌ Errors: $ERRORS"
+        echo "⚠️  Warnings: $WARNINGS"
+        
+        if [ $SCORE -lt 90 ]; then
+          echo "::warning::Compliance score is low: $SCORE% (target: 90%)"
+        fi
+        
+        if [ $SCORE -lt 70 ]; then
+          echo "::error::Compliance score too low: $SCORE%"
+          exit 1
+        fi
+    
+    - name: Upload compliance report
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: compliance-report
+        path: compliance-report.json
+    
+    - name: Comment PR with results
+      uses: actions/github-script@v6
+      if: github.event_name == 'pull_request'
+      with:
+        script: |
+          const score = '${{ steps.compliance.outputs.score }}';
+          const errors = '${{ steps.compliance.outputs.errors }}';
+          const warnings = '${{ steps.compliance.outputs.warnings }}';
+          
+          const emoji = score >= 90 ? '✅' : score >= 70 ? '⚠️' : '❌';
+          
+          const comment = `## ${emoji} Compliance Check Results
+          
+          - **Score**: ${score}%
+          - **Errors**: ${errors}
+          - **Warnings**: ${warnings}
+          
+          ${score < 90 ? '⚠️ Consider running `node fix-all-compliance.cjs` to improve compliance.' : '✅ Great job! Compliance is good.'}
+          
+          [View detailed report](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})`;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });
+
+  test-build:
+    name: Test Database Compilation
+    runs-on: ubuntu-latest
+    needs: validate
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install dependencies
+      run: |
+        npm install
+        npm install classic-level
+    
+    - name: Compile database packs
+      run: |
+        node compile-with-keys.cjs || true
+        node verify-packs.cjs
+    
+    - name: Check pack integrity
+      run: |
+        EMPTY_PACKS=$(node verify-packs.cjs 2>&1 | grep "database vuoto" | wc -l || true)
+        if [ $EMPTY_PACKS -gt 3 ]; then
+          echo "::error::Too many empty packs: $EMPTY_PACKS"
+          exit 1
+        fi
+
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: [validate, test-build]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Get version from module.json
+      id: version
+      run: |
+        VERSION=$(grep -o '"version": "[^"]*"' module.json | cut -d'"' -f4)
+        echo "version=$VERSION" >> $GITHUB_OUTPUT
+    
+    - name: Check if tag exists
+      id: check_tag
+      run: |
+        if git ls-remote --tags origin | grep -q "refs/tags/v${{ steps.version.outputs.version }}"; then
+          echo "exists=true" >> $GITHUB_OUTPUT
+        else
+          echo "exists=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Create Release
+      if: steps.check_tag.outputs.exists == 'false'
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ steps.version.outputs.version }}
+        release_name: Release v${{ steps.version.outputs.version }}
+        body: |
+          ## 🎉 Brancalonia v${{ steps.version.outputs.version }}
+          
+          ### ✨ Miglioramenti
+          - Compliance migliorata con Foundry v13
+          - Fix automatici per problemi comuni
+          - Documentazione aggiornata
+          
+          ### 🐛 Bug Fix
+          - Container type corretti
+          - Hook deprecati aggiornati
+          - Journal pages aggiunte
+          
+          ### 📊 Compliance Score
+          - Score: ${{ steps.compliance.outputs.score }}%
+          - Errors: ${{ steps.compliance.outputs.errors }}
+          - Warnings: ${{ steps.compliance.outputs.warnings }}
+          
+          ### 📦 Installazione
+          ```
+          https://raw.githubusercontent.com/${{ github.repository }}/main/module.json
+          ```
+        draft: false
+        prerelease: false

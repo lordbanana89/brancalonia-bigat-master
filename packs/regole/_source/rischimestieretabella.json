@@ -1,10 +1,9 @@
 {
-  "_id": "rischimestieretabella",
-  "_key": "!items!rischimestieretabella",
+  "_id": "rischimestieretabella1105d1",
+  "_key": "!journal!rischimestieretabella1105d1",
   "name": "Tabella dei Rischi del Mestiere",
+  "type": "journal",
   "img": "icons/svg/book.svg",
-  "pages": [],
-  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0
@@ -17,7 +16,5 @@
         "pagine": "50"
       }
     }
-  },
-  "type": "JournalEntry",
-  "effects": []
+  }
 }

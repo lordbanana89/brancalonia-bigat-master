@@ -1,9 +1,9 @@
 {
   "_id": "gearcloth004guardarobadabettola3efffa",
-  "_key": "!items!gearcloth004guardarobadabettola3efffa",
+  "_key": "!item!gearcloth004guardarobadabettola3efffa",
   "name": "Guardaroba da Bettola",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Camicia aperta, pantaloni larghi e fascia per stare comodi in taverna.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

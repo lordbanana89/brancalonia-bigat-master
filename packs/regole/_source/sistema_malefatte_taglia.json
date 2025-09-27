@@ -1,10 +1,9 @@
 {
-  "_id": "sistemamalefattetaglia",
-  "_key": "!items!sistemamalefattetaglia",
+  "_id": "sistemamalefattetaglia7713d3",
+  "_key": "!journal!sistemamalefattetaglia7713d3",
   "name": "Regola",
+  "type": "journal",
   "img": "icons/svg/book.svg",
-  "pages": [],
-  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0
@@ -14,7 +13,5 @@
       "categoria": "sistema_malefatte_taglia",
       "fonte": "Manuale Base p.46-48"
     }
-  },
-  "type": "JournalEntry",
-  "effects": []
+  }
 }

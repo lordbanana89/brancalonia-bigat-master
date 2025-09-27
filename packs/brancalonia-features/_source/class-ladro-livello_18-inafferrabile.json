@@ -167,7 +167,7 @@
   "name": "Inafferrabile",
   "img": "icons/skills/trades/thievery-pickpocket-bribery-brown.webp",
   "_id": "class-ladro-livello_18-inafferrabile",
-  "_key": "!items!class-ladro-livello_18-inafferrabile",
+  "_key": "!item!class-ladro-livello_18-inafferrabile",
   "ownership": {
     "default": 0
   },

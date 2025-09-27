@@ -396,7 +396,8 @@
     "primaryAbility": [
       "cha"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d8"
   },
   "effects": [],
   "folder": null,

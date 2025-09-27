@@ -143,7 +143,7 @@
   "name": "Intervento Divino Migliorato",
   "img": "icons/magic/holy/angel-winged-humanoid-silver.webp",
   "_id": "class-chierico-livello_20-intervento-divino-migliorato",
-  "_key": "!items!class-chierico-livello_20-intervento-divino-migliorato",
+  "_key": "!item!class-chierico-livello_20-intervento-divino-migliorato",
   "ownership": {
     "default": 0
   },

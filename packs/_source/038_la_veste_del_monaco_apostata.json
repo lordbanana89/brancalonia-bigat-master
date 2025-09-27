@@ -1,0 +1,86 @@
+{
+  "_id": "lavestedelmonacoapostatae28560",
+  "_key": "!items!lavestedelmonacoapostatae28560",
+  "name": "La Veste del Monaco Apostata",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Saio con simboli sacri scuciti</p><h3>Proprietà</h3><p>Immunità a individuazione magica e divinazione</p><h3>Storia</h3><p><em>Il monaco rinnegò 7 religioni</em></p><h3>Maledizione</h3><p><strong>Non può entrare in luoghi consacrati</strong></p><p>Non può entrare in luoghi consacrati</p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": {
+      "mgc": true,
+      "cursed": true
+    },
+    "cursed": true,
+    "curse": "Non può entrare in luoghi consacrati"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "038",
+      "categoria": "cimelo",
+      "storia": "Il monaco rinnegò 7 religioni",
+      "proprieta_originale": "Immunità a individuazione magica e divinazione",
+      "maledizione": "Non può entrare in luoghi consacrati",
+      "maledizione_specifica": "Non può entrare in luoghi consacrati",
+      "implementazione": {
+        "tipo": "maledetto",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

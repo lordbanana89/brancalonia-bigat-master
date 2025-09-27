@@ -67,7 +67,7 @@
   "name": "Esploratore Nato",
   "img": "icons/tools/navigation/compass-brass-blue-red.webp",
   "_id": "class-ranger-livello_1-esploratore-nato",
-  "_key": "!items!class-ranger-livello_1-esploratore-nato",
+  "_key": "!item!class-ranger-livello_1-esploratore-nato",
   "ownership": {
     "default": 0
   },

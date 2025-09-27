@@ -1,0 +1,92 @@
+{
+  "building_timestamp": "2025-09-27T00:00:00Z",
+  "summary": {
+    "features_indexed": 609,
+    "classes_rebuilt": 12,
+    "classes_validated": 12,
+    "subclass_fixes": 0,
+    "total_fixes_applied": 12
+  },
+  "standard_classes_available": [
+    "barbarian",
+    "bard",
+    "cleric",
+    "druid",
+    "fighter",
+    "monk",
+    "paladin",
+    "ranger",
+    "rogue",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "class_fixes": [
+    {
+      "class_name": "Monaco",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "identifier": "monaco"
+    },
+    {
+      "class_name": "Ranger",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "identifier": "ranger"
+    },
+    {
+      "class_name": "Warlock",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "identifier": "warlock"
+    },
+    {
+      "class_name": "Guerriero",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "identifier": "fighter"
+    },
+    {
+      "class_name": "Barbaro",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/barbaro.json",
+      "identifier": "barbarian"
+    },
+    {
+      "class_name": "Ladro",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "identifier": "rogue"
+    },
+    {
+      "class_name": "Mago",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/mago.json",
+      "identifier": "mago"
+    },
+    {
+      "class_name": "Chierico",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "identifier": "chierico"
+    },
+    {
+      "class_name": "Druido",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "identifier": "druido"
+    },
+    {
+      "class_name": "Paladino",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "identifier": "paladino"
+    },
+    {
+      "class_name": "Stregone",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/stregone.json",
+      "identifier": "stregone"
+    },
+    {
+      "class_name": "Bardo",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "identifier": "bardo"
+    }
+  ],
+  "feature_registry_stats": {
+    "total_features": 609,
+    "features_by_type": {
+      "feat": 609
+    }
+  }
+}

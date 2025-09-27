@@ -1,5 +1,3 @@
-2025/09/26-00:35:22.660691 1730fb000 Delete type=3 #1
-2025/09/26-00:35:22.664057 17419f000 Level-0 table #5: started
-2025/09/26-00:35:22.664324 17419f000 Level-0 table #5: 3443 bytes OK
-2025/09/26-00:35:22.664440 17419f000 Delete type=0 #3
-2025/09/26-00:35:22.664536 17419f000 Manual compaction at level-0 from '!items!affinamento1c276b' @ 72057594037927935 : 1 .. '!items!rissaioloprofessionistafec96b' @ 0 : 0; will stop at (end)
+2025/09/27-11:26:36.855426 1717db000 Recovering log #4
+2025/09/27-11:26:36.856101 1717db000 Delete type=0 #4
+2025/09/27-11:26:36.856156 1717db000 Delete type=3 #2

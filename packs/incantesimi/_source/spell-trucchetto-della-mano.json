@@ -1,91 +1,25 @@
 {
-  "id": "spell-trucchetto-della-mano",
-  "nome": "Trucchetto della Mano",
-  "nome_inglese": "Mage Hand",
-  "livello": 0,
-  "scuola": "Evocazione",
-  "tempo_lancio": "1 azione",
-  "gittata": "30 piedi",
-  "componenti": {
-    "verbale": true,
-    "somatica": true,
-    "materiale": false
-  },
-  "durata": "1 minuto",
-  "descrizione": "Una mano spettrale fluttuante appare in un punto a tua scelta entro gittata. La mano dura per la durata o finché non la congedi come azione. La mano svanisce se si trova a più di 30 piedi da te o se lanci di nuovo questo incantesimo. Puoi usare la tua azione per controllare la mano. Puoi usare la mano per manipolare un oggetto, aprire una porta o contenitore non chiuso a chiave, riporre o recuperare un oggetto da un contenitore aperto, o versare il contenuto di una fiala. Puoi muovere la mano fino a 30 piedi ogni volta che la usi. La mano non può attaccare, attivare oggetti magici o trasportare più di 10 libbre.",
-  "livelli_superiori": null,
-  "classi": [
-    "Bardo",
-    "Mago",
-    "Stregone",
-    "Warlock"
-  ],
-  "sottoclassi_bonus": {
-    "arcane_trickster": "Mage Hand Legerdemain - invisibile e bonus azioni"
-  },
-  "implementazione_foundry": {
-    "tipo": "cantrip",
-    "attivazione": "action",
-    "range": 30,
-    "durata_valore": 1,
-    "durata_unita": "minute",
-    "scuola_abbreviata": "con"
-  },
-  "capacità_mano": {
-    "peso_massimo": "10 libbre (4.5 kg)",
-    "movimento": "30 piedi per azione",
-    "azioni_possibili": [
-      "Manipolare oggetti semplici",
-      "Aprire porte non chiuse a chiave",
-      "Recuperare oggetti",
-      "Versare liquidi",
-      "Tirare leve",
-      "Premere pulsanti"
-    ],
-    "azioni_impossibili": [
-      "Attaccare",
-      "Attivare oggetti magici",
-      "Usare strumenti da ladro",
-      "Azioni che richiedono finezza"
-    ]
-  },
-  "utilizzi_comuni": [
-    "Recuperare oggetti in posti pericolosi",
-    "Attivare trappole da distanza sicura",
-    "Manipolare oggetti oltre barriere",
-    "Distrarre nemici",
-    "Portare corde/chiavi a prigionieri"
-  ],
-  "arcane_trickster_upgrade": {
-    "invisibile": "Mano non visibile",
-    "azioni_bonus": [
-      "Borseggiare",
-      "Usare thieves' tools",
-      "Sleight of hand checks"
-    ],
-    "bonus_action": "Può controllare come bonus action"
-  },
-  "limitazioni": {
-    "distanza_massima": "30 piedi sempre",
-    "linea_effetto": "Richiede percorso libero",
-    "interazione_creature": "Non può toccare creature ostili"
-  },
-  "note_dm": "Mage Hand è utility pura. Arcane Trickster la rende eccezionale per ladri. Ricorda che non può attaccare o attivare magic items.",
-  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.256",
-  "name": "Spell Trucchetto Della Mano",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-trucchetto-della-mano",
-  "_key": "!items!spell-trucchetto-della-mano",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spelltrucchettodellamanoa1f9bf",
+  "_key": "!item!spelltrucchettodellamanoa1f9bf",
+  "name": "Trucchetto della Mano",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
+    "description": {
+      "value": "<p>Una mano spettrale fluttuante appare in un punto a tua scelta entro gittata. La mano dura per la durata o finché non la congedi come azione. La mano svanisce se si trova a più di 30 piedi da te o se lanci di nuovo questo incantesimo. Puoi usare la tua azione per controllare la mano. Puoi usare la mano per manipolare un oggetto, aprire una porta o contenitore non chiuso a chiave, riporre o recuperare un oggetto da un contenitore aperto, o versare il contenuto di una fiala. Puoi muovere la mano fino a 30 piedi ogni volta che la usi. La mano non può attaccare, attivare oggetti magici o trasportare più di 10 libbre.</p><h3>Note per il DM</h3><p><em>Mage Hand è utility pura. Arcane Trickster la rende eccezionale per ladri. Ricorda che non può attaccare o attivare magic items.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.256",
     "level": 0,
     "school": "evo",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -98,26 +32,81 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 1,
+      "units": "minute"
     },
     "range": {
-      "value": "",
+      "value": 30,
+      "long": null,
       "units": "ft"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-trucchetto-della-mano",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.256",
+      "note_dm": "Mage Hand è utility pura. Arcane Trickster la rende eccezionale per ladri. Ricorda che non può attaccare o attivare magic items.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": 30,
+        "durata_valore": 1,
+        "durata_unita": "minute",
+        "scuola_abbreviata": "con"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Evocazione",
+        "level": 0
       }
     }
   }

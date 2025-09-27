@@ -11,7 +11,7 @@
       "weight": 1,
       "range": [
         1,
-        2
+        1
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_0"
@@ -22,8 +22,8 @@
       "text": "Predicatore pazzo che urla profezie",
       "weight": 1,
       "range": [
-        3,
-        4
+        2,
+        2
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_1"
@@ -34,8 +34,8 @@
       "text": "Pattuglia di guardie (1d4+1 guardie)",
       "weight": 1,
       "range": [
-        5,
-        6
+        3,
+        3
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_2"
@@ -46,8 +46,8 @@
       "text": "Mercante con carro che blocca la strada",
       "weight": 1,
       "range": [
-        7,
-        8
+        4,
+        4
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_3"
@@ -58,8 +58,8 @@
       "text": "Banda di monelli (2d4 ragazzini)",
       "weight": 1,
       "range": [
-        9,
-        10
+        5,
+        5
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_4"
@@ -70,8 +70,8 @@
       "text": "Nobile con scorta che pretende il passo",
       "weight": 1,
       "range": [
-        11,
-        12
+        6,
+        6
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_5"
@@ -82,8 +82,8 @@
       "text": "Ladri in agguato (1d3 tagliaborse)",
       "weight": 1,
       "range": [
-        13,
-        14
+        7,
+        7
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_6"
@@ -94,8 +94,8 @@
       "text": "Processione religiosa che blocca il passaggio",
       "weight": 1,
       "range": [
-        15,
-        16
+        8,
+        8
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_7"
@@ -106,8 +106,8 @@
       "text": "Ubriaco molesto che cerca guai",
       "weight": 1,
       "range": [
-        17,
-        18
+        9,
+        9
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_8"
@@ -118,8 +118,8 @@
       "text": "Mago ambulante che vende pozioni dubbie",
       "weight": 1,
       "range": [
-        19,
-        19
+        10,
+        10
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_9"
@@ -130,14 +130,14 @@
       "text": "Evento strano a scelta del GM",
       "weight": 1,
       "range": [
-        20,
-        20
+        11,
+        11
       ],
       "drawn": false,
       "_key": "!results!incontri-strada_10"
     }
   ],
-  "formula": "1d20",
+  "formula": "1d11",
   "replacement": true,
   "displayRoll": true,
   "folder": null,
@@ -150,7 +150,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!items!incontristrada",
+  "_key": "!item!incontristrada",
   "effects": [],
   "type": "loot"
 }

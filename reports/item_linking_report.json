@@ -1,0 +1,1119 @@
+{
+  "linking_timestamp": "2025-09-27T00:00:00Z",
+  "summary": {
+    "total_items_indexed": 993,
+    "broken_links_found": 134,
+    "links_fixed": 0,
+    "advancement_fixes": 0,
+    "background_fixes": 0,
+    "remaining_issues": 134
+  },
+  "item_registry_stats": {
+    "total_items": 993,
+    "items_by_type": {
+      "weapon": 45,
+      "loot": 157,
+      "container": 14,
+      "equipment": 93,
+      "consumable": 28,
+      "tool": 1,
+      "background": 21,
+      "feat": 376,
+      "script": 6,
+      "spell": 167,
+      "subclass": 21,
+      "race": 8,
+      "class": 12,
+      "npc": 44
+    },
+    "items_by_pack": {
+      "equipaggiamento": 233,
+      "brancalonia-equipment": 24,
+      "rollable-tables": 81,
+      "backgrounds": 21,
+      "brancalonia-features": 357,
+      "emeriticenze": 11,
+      "macro": 6,
+      "incantesimi": 167,
+      "sottoclassi": 21,
+      "razze": 8,
+      "classi": 12,
+      "npc": 44,
+      "talenti": 8
+    }
+  },
+  "remaining_issues": [
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.e9137ca3e71d7b10",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.1448aa2cca99cafd",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.f3c25a86f47fa81d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.21e24c56bd083ea5",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.2b00e04546de7748",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.b8f075889f9c3d2a",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.d1b5fdd263568233",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.ac71d81301b38818",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.708d887c76cd8083",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.47f92c04806527cb",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.1f4a1f37f7e1f277",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.ebe265683732d0fd",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.5b89d63c631affb3",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.a47f050c7819546d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.433e496b24c29289",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.c89fc47473d037ac",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.a3a4286d84f62da6",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.f8ad5b1d21dd8901",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.e74f76c01889f712",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.a0aef8a4971326b8",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.7bb4906fb938067c",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.72a03613a6c480ce",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/monaco.json",
+      "source_item": "class-monaco-uhh8nq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.30a530a8b2be12a2",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.d06bb53dc9373f7a",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.659771a4c60474da",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.1751a201d5239c87",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.1d81e5db39c126fb",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.b822872677d618fc",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.9eb9c2fc848e3fd0",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.b0fbb7539f5c802f",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.c5887471b28e68ae",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.88340b2b62584047",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.52e11ae5aa391ebd",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.2c0694eab0f3167d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ranger.json",
+      "source_item": "class-ranger-fu3aut",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.4b5aa69c4c5b7687",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.278dd5f988a37066",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.5b9d20fea378d233",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.41c8480318a27f30",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.229ceb9d18c2d69c",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.c440fbe6baa8dc2b",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.eb8b1518dc138574",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.c517c327a4dc33e6",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.faa8ad52b07861f3",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.d1519ebee24e4c0e",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.ed73f5edcc980ab6",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.735bc7725ebaec32",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.11dbc9a7b5000988",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/warlock.json",
+      "source_item": "class-warlock-p0p6u4",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.d27ca8ce6a67b508",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.ad8b275d6e9bbeba",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.0aaa48783eac3c07",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.a410ca7c95f935d3",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.fc9bebe8617896bb",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.9673729eca566eae",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.7b5c9b1a6571371c",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.14ec473c511f9c74",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.2fac295fad041809",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.bdc321abbcf19505",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.86c5cb3ae957e352",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/guerriero.json",
+      "source_item": "class-fighter-o0j7hl",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.4af2d440402f681d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/barbaro.json",
+      "source_item": "class-barbarian-v7jhif",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.5c4be4511e2d33e1",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.dae104805967d17d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.cfa103a3f5b29a45",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.d26753aa1e786414",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.64eee985bdb7ff9a",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.032a2bd6c8cdd657",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.e16cfec3d1066cce",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.8da7117dc34405c2",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.a08282de0aee9d2f",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.b3d3a45a1c84a451",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.ac70e3a974390233",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.e9275e7d23beb4bd",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/ladro.json",
+      "source_item": "class-rogue-xglvza",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.81dc89eb2e16090d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.7b9038ffef23b22a",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.8e922b44e4763e41",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.b53d9d84d9258440",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.c12db243980bccdb",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.750b7d7f815dcf26",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.df8f25c19cf9a3c3",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.f8d9767b9374850d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.40dd4873974ff058",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.322a6547896fd78c",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.634530eeda6c1b58",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/chierico.json",
+      "source_item": "class-chierico-lvrhc0",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.297f41d015142695",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.878c69ad55fc4d51",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.5bd886d25134eb1b",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.992018da5d8fce8d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.6d66f2635bb56e79",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.234185d21039cc8a",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.7c1fbb4e8daa45c7",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.aa83a4cbed13a1c4",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.400f87e45d30d4ad",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.1b2089b532ee0186",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.a84ae9e796eeb8f8",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.3b1c21aa02bae1ed",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/druido.json",
+      "source_item": "class-druido-e31618",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.5aeba80d469f3bdd",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.79276b5885728f2e",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.6421a06bfd74ca9c",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.2ae0a3d0ba4ab90e",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.731b1e49a56d86a5",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.319ef55033d38e24",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.c17f85cbb51c245c",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.a118dcb4f0d0c616",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.d62b453f6e41671d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.2483816d67a5b3ce",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.9f01f8412e72de78",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.7f70b3a4b047c119",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.3da60dc44bd2df33",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.c8d8b13ba9029d78",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.725ff36f6056b62b",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.b2c436e139afb88f",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/paladino.json",
+      "source_item": "class-paladino-276y9b",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.5c7e2c33fa8d26d7",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/stregone.json",
+      "source_item": "class-stregone-q36spo",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.4135d6d67034be25",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/stregone.json",
+      "source_item": "class-stregone-q36spo",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.a0323c258ca312d4",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/stregone.json",
+      "source_item": "class-stregone-q36spo",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.16be55c2c3fac5a4",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/stregone.json",
+      "source_item": "class-stregone-q36spo",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.d90da9c5e420311b",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/stregone.json",
+      "source_item": "class-stregone-q36spo",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.4ad0ba8039458285",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/stregone.json",
+      "source_item": "class-stregone-q36spo",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.78477123a63e21f2",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/stregone.json",
+      "source_item": "class-stregone-q36spo",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.1627cbcfcae13aa2",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/stregone.json",
+      "source_item": "class-stregone-q36spo",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.49f291c1b0442654",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.3c0b6df842c247ea",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.634cd83a624530a7",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.ff2e71fc0a1ee670",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.7e64dbbaf9f65f0d",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.ca0882b5368a7cc0",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.cdc6cae1ebab0364",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.63257b420c2165f1",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.250fac41c96dcc73",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.696ae8daac876f56",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.82269381acb18be4",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.b771ddf4b6cfb9b5",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.a59620f830c90611",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.724f9d40e414a244",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.85bff85a55ba8e4a",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    },
+    {
+      "source_file": "/Users/erik/Desktop/brancalonia-bigat-master/packs/classi/_source/bardo.json",
+      "source_item": "class-bardo-uh05kq",
+      "broken_uuid": "Compendium.brancalonia.brancalonia-features.Item.0fef1e1efe5b44b5",
+      "issue_type": "BROKEN_UUID_REFERENCE",
+      "suggested_uuid": null,
+      "confidence": 0.0
+    }
+  ]
+}

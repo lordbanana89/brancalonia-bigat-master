@@ -1,0 +1,14 @@
+{
+  "_id": "progressioneb1738b",
+  "_key": "!journal!progressioneb1738b",
+  "name": "Regola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {}
+  }
+}

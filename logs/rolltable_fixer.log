@@ -1,0 +1,158 @@
+2025-09-27 11:30:58,391 - RollTable Fixer - INFO - Starting comprehensive RollTable fixing for D&D 5e v5.1.9
+2025-09-27 11:30:58,391 - RollTable Fixer - INFO - Phase 1: Analyzing existing tables...
+2025-09-27 11:30:58,394 - RollTable Fixer - INFO - Phase 2: Fixing broken table structures...
+2025-09-27 11:30:58,395 - RollTable Fixer - INFO - Fixed structure for table: Impresario - Ideali
+2025-09-27 11:30:58,395 - RollTable Fixer - INFO - Fixed structure for table: Brado - Ideali
+2025-09-27 11:30:58,396 - RollTable Fixer - INFO - Fixed structure for table: Duro - Difetti
+2025-09-27 11:30:58,396 - RollTable Fixer - INFO - Fixed structure for table: Lucignolo - Difetti
+2025-09-27 11:30:58,396 - RollTable Fixer - INFO - Fixed structure for table: Incontri Casuali per Strada
+2025-09-27 11:30:58,396 - RollTable Fixer - INFO - Fixed structure for table: Brado - Tratti della Personalità
+2025-09-27 11:30:58,397 - RollTable Fixer - INFO - Fixed structure for table: Azzeccagarbugli - Difetti
+2025-09-27 11:30:58,397 - RollTable Fixer - INFO - Fixed structure for table: Innamorato - Ideali
+2025-09-27 11:30:58,397 - RollTable Fixer - INFO - Fixed structure for table: Tempo Atmosferico
+2025-09-27 11:30:58,397 - RollTable Fixer - INFO - Fixed structure for table: Lucignolo - Ideali
+2025-09-27 11:30:58,398 - RollTable Fixer - INFO - Fixed structure for table: Prelato - Tratti della Personalità
+2025-09-27 11:30:58,398 - RollTable Fixer - INFO - Fixed structure for table: Azzeccagarbugli - Tratti della Personalità
+2025-09-27 11:30:58,398 - RollTable Fixer - INFO - Fixed structure for table: Prelato - Legami
+2025-09-27 11:30:58,398 - RollTable Fixer - INFO - Fixed structure for table: Azzeccagarbugli - Ideali
+2025-09-27 11:30:58,399 - RollTable Fixer - INFO - Fixed structure for table: Ambulante - Difetti
+2025-09-27 11:30:58,399 - RollTable Fixer - INFO - Fixed structure for table: Ambulante - Tratti della Personalità
+2025-09-27 11:30:58,399 - RollTable Fixer - INFO - Fixed structure for table: Passatore - Difetti
+2025-09-27 11:30:58,399 - RollTable Fixer - INFO - Fixed structure for table: Cacciatore di reliquie - Legami
+2025-09-27 11:30:58,400 - RollTable Fixer - INFO - Fixed structure for table: Attaccabrighe - Difetti
+2025-09-27 11:30:58,400 - RollTable Fixer - INFO - Fixed structure for table: Prelato - Difetti
+2025-09-27 11:30:58,400 - RollTable Fixer - INFO - Fixed structure for table: Passatore - Ideali
+2025-09-27 11:30:58,400 - RollTable Fixer - INFO - Fixed structure for table: Attaccabrighe - Legami
+2025-09-27 11:30:58,400 - RollTable Fixer - INFO - Fixed structure for table: Staffetta - Ideali
+2025-09-27 11:30:58,401 - RollTable Fixer - INFO - Fixed structure for table: Duro - Ideali
+2025-09-27 11:30:58,401 - RollTable Fixer - INFO - Fixed structure for table: Ambulante - Ideali
+2025-09-27 11:30:58,401 - RollTable Fixer - INFO - Fixed structure for table: Brado - Difetti
+2025-09-27 11:30:58,402 - RollTable Fixer - INFO - Fixed structure for table: Lucignolo - Tratti della Personalità
+2025-09-27 11:30:58,402 - RollTable Fixer - INFO - Fixed structure for table: Impresario - Tratti della Personalità
+2025-09-27 11:30:58,402 - RollTable Fixer - INFO - Fixed structure for table: Cacciatore di reliquie - Ideali
+2025-09-27 11:30:58,402 - RollTable Fixer - INFO - Fixed structure for table: Impresario - Difetti
+2025-09-27 11:30:58,402 - RollTable Fixer - INFO - Fixed structure for table: Prelato - Ideali
+2025-09-27 11:30:58,403 - RollTable Fixer - INFO - Fixed structure for table: Azzeccagarbugli - Legami
+2025-09-27 11:30:58,403 - RollTable Fixer - INFO - Fixed structure for table: Duro - Legami
+2025-09-27 11:30:58,403 - RollTable Fixer - INFO - Fixed structure for table: Ambulante - Legami
+2025-09-27 11:30:58,403 - RollTable Fixer - INFO - Fixed structure for table: Cacciatore di reliquie - Tratti della Personalità
+2025-09-27 11:30:58,403 - RollTable Fixer - INFO - Fixed structure for table: Fuggitivo - Ideali
+2025-09-27 11:30:58,404 - RollTable Fixer - INFO - Fixed structure for table: Innamorato - Difetti
+2025-09-27 11:30:58,404 - RollTable Fixer - INFO - Fixed structure for table: Passatore - Legami
+2025-09-27 11:30:58,404 - RollTable Fixer - INFO - Fixed structure for table: Staffetta - Legami
+2025-09-27 11:30:58,404 - RollTable Fixer - INFO - Fixed structure for table: Staffetta - Tratti della Personalità
+2025-09-27 11:30:58,404 - RollTable Fixer - INFO - Fixed structure for table: Attaccabrighe - Ideali
+2025-09-27 11:30:58,404 - RollTable Fixer - INFO - Fixed structure for table: Duro - Tratti della Personalità
+2025-09-27 11:30:58,405 - RollTable Fixer - INFO - Fixed structure for table: Cacciatore di reliquie - Difetti
+2025-09-27 11:30:58,405 - RollTable Fixer - INFO - Fixed structure for table: Impresario - Legami
+2025-09-27 11:30:58,406 - RollTable Fixer - INFO - Fixed structure for table: Innamorato - Tratti della Personalità
+2025-09-27 11:30:58,406 - RollTable Fixer - INFO - Fixed structure for table: Brado - Legami
+2025-09-27 11:30:58,406 - RollTable Fixer - INFO - Fixed structure for table: Attaccabrighe - Tratti della Personalità
+2025-09-27 11:30:58,406 - RollTable Fixer - INFO - Fixed structure for table: Passatore - Tratti della Personalità
+2025-09-27 11:30:58,407 - RollTable Fixer - INFO - Fixed structure for table: Fuggitivo - Tratti della Personalità
+2025-09-27 11:30:58,407 - RollTable Fixer - INFO - Fixed structure for table: Lucignolo - Legami
+2025-09-27 11:30:58,407 - RollTable Fixer - INFO - Fixed structure for table: Innamorato - Legami
+2025-09-27 11:30:58,407 - RollTable Fixer - INFO - Fixed structure for table: Staffetta - Difetti
+2025-09-27 11:30:58,407 - RollTable Fixer - INFO - Phase 3: Restoring missing table data...
+2025-09-27 11:30:58,555 - RollTable Fixer - INFO - Phase 4: Validating table formulas...
+2025-09-27 11:30:58,556 - RollTable Fixer - INFO - Fixed formula for table: Impresario - Ideali
+2025-09-27 11:30:58,556 - RollTable Fixer - INFO - Fixed formula for table: Brado - Ideali
+2025-09-27 11:30:58,556 - RollTable Fixer - INFO - Fixed formula for table: Duro - Difetti
+2025-09-27 11:30:58,556 - RollTable Fixer - INFO - Fixed formula for table: Lucignolo - Difetti
+2025-09-27 11:30:58,556 - RollTable Fixer - INFO - Fixed formula for table: Brado - Tratti della Personalità
+2025-09-27 11:30:58,557 - RollTable Fixer - INFO - Fixed formula for table: Azzeccagarbugli - Difetti
+2025-09-27 11:30:58,557 - RollTable Fixer - INFO - Fixed formula for table: Innamorato - Ideali
+2025-09-27 11:30:58,557 - RollTable Fixer - INFO - Fixed formula for table: Lucignolo - Ideali
+2025-09-27 11:30:58,557 - RollTable Fixer - INFO - Fixed formula for table: Prelato - Tratti della Personalità
+2025-09-27 11:30:58,558 - RollTable Fixer - INFO - Fixed formula for table: Azzeccagarbugli - Tratti della Personalità
+2025-09-27 11:30:58,558 - RollTable Fixer - INFO - Fixed formula for table: Prelato - Legami
+2025-09-27 11:30:58,558 - RollTable Fixer - INFO - Fixed formula for table: Azzeccagarbugli - Ideali
+2025-09-27 11:30:58,558 - RollTable Fixer - INFO - Fixed formula for table: Ambulante - Difetti
+2025-09-27 11:30:58,558 - RollTable Fixer - INFO - Fixed formula for table: Ambulante - Tratti della Personalità
+2025-09-27 11:30:58,558 - RollTable Fixer - INFO - Fixed formula for table: Passatore - Difetti
+2025-09-27 11:30:58,559 - RollTable Fixer - INFO - Fixed formula for table: Cacciatore di reliquie - Legami
+2025-09-27 11:30:58,559 - RollTable Fixer - INFO - Fixed formula for table: Attaccabrighe - Difetti
+2025-09-27 11:30:58,559 - RollTable Fixer - INFO - Fixed formula for table: Prelato - Difetti
+2025-09-27 11:30:58,559 - RollTable Fixer - INFO - Fixed formula for table: Passatore - Ideali
+2025-09-27 11:30:58,560 - RollTable Fixer - INFO - Fixed formula for table: Attaccabrighe - Legami
+2025-09-27 11:30:58,560 - RollTable Fixer - INFO - Fixed formula for table: Staffetta - Ideali
+2025-09-27 11:30:58,561 - RollTable Fixer - INFO - Fixed formula for table: Duro - Ideali
+2025-09-27 11:30:58,562 - RollTable Fixer - INFO - Fixed formula for table: Ambulante - Ideali
+2025-09-27 11:30:58,562 - RollTable Fixer - INFO - Fixed formula for table: Brado - Difetti
+2025-09-27 11:30:58,562 - RollTable Fixer - INFO - Fixed formula for table: Lucignolo - Tratti della Personalità
+2025-09-27 11:30:58,562 - RollTable Fixer - INFO - Fixed formula for table: Impresario - Tratti della Personalità
+2025-09-27 11:30:58,563 - RollTable Fixer - INFO - Fixed formula for table: Cacciatore di reliquie - Ideali
+2025-09-27 11:30:58,563 - RollTable Fixer - INFO - Fixed formula for table: Impresario - Difetti
+2025-09-27 11:30:58,563 - RollTable Fixer - INFO - Fixed formula for table: Prelato - Ideali
+2025-09-27 11:30:58,563 - RollTable Fixer - INFO - Fixed formula for table: Azzeccagarbugli - Legami
+2025-09-27 11:30:58,563 - RollTable Fixer - INFO - Fixed formula for table: Duro - Legami
+2025-09-27 11:30:58,564 - RollTable Fixer - INFO - Fixed formula for table: Ambulante - Legami
+2025-09-27 11:30:58,564 - RollTable Fixer - INFO - Fixed formula for table: Cacciatore di reliquie - Tratti della Personalità
+2025-09-27 11:30:58,564 - RollTable Fixer - INFO - Fixed formula for table: Innamorato - Difetti
+2025-09-27 11:30:58,564 - RollTable Fixer - INFO - Fixed formula for table: Passatore - Legami
+2025-09-27 11:30:58,564 - RollTable Fixer - INFO - Fixed formula for table: Staffetta - Legami
+2025-09-27 11:30:58,564 - RollTable Fixer - INFO - Fixed formula for table: Staffetta - Tratti della Personalità
+2025-09-27 11:30:58,565 - RollTable Fixer - INFO - Fixed formula for table: Attaccabrighe - Ideali
+2025-09-27 11:30:58,565 - RollTable Fixer - INFO - Fixed formula for table: Duro - Tratti della Personalità
+2025-09-27 11:30:58,565 - RollTable Fixer - INFO - Fixed formula for table: Cacciatore di reliquie - Difetti
+2025-09-27 11:30:58,565 - RollTable Fixer - INFO - Fixed formula for table: Impresario - Legami
+2025-09-27 11:30:58,565 - RollTable Fixer - INFO - Fixed formula for table: Innamorato - Tratti della Personalità
+2025-09-27 11:30:58,566 - RollTable Fixer - INFO - Fixed formula for table: Brado - Legami
+2025-09-27 11:30:58,566 - RollTable Fixer - INFO - Fixed formula for table: Attaccabrighe - Tratti della Personalità
+2025-09-27 11:30:58,566 - RollTable Fixer - INFO - Fixed formula for table: Passatore - Tratti della Personalità
+2025-09-27 11:30:58,566 - RollTable Fixer - INFO - Fixed formula for table: Lucignolo - Legami
+2025-09-27 11:30:58,567 - RollTable Fixer - INFO - Fixed formula for table: Innamorato - Legami
+2025-09-27 11:30:58,567 - RollTable Fixer - INFO - Fixed formula for table: Staffetta - Difetti
+2025-09-27 11:30:58,567 - RollTable Fixer - INFO - Phase 5: Optimizing table performance...
+2025-09-27 11:30:58,567 - RollTable Fixer - INFO - Optimized table: Impresario - Ideali
+2025-09-27 11:30:58,567 - RollTable Fixer - INFO - Optimized table: Brado - Ideali
+2025-09-27 11:30:58,568 - RollTable Fixer - INFO - Optimized table: Duro - Difetti
+2025-09-27 11:30:58,568 - RollTable Fixer - INFO - Optimized table: Lucignolo - Difetti
+2025-09-27 11:30:58,568 - RollTable Fixer - INFO - Optimized table: Brado - Tratti della Personalità
+2025-09-27 11:30:58,569 - RollTable Fixer - INFO - Optimized table: Azzeccagarbugli - Difetti
+2025-09-27 11:30:58,569 - RollTable Fixer - INFO - Optimized table: Innamorato - Ideali
+2025-09-27 11:30:58,569 - RollTable Fixer - INFO - Optimized table: Lucignolo - Ideali
+2025-09-27 11:30:58,569 - RollTable Fixer - INFO - Optimized table: Prelato - Tratti della Personalità
+2025-09-27 11:30:58,570 - RollTable Fixer - INFO - Optimized table: Azzeccagarbugli - Tratti della Personalità
+2025-09-27 11:30:58,570 - RollTable Fixer - INFO - Optimized table: Prelato - Legami
+2025-09-27 11:30:58,570 - RollTable Fixer - INFO - Optimized table: Azzeccagarbugli - Ideali
+2025-09-27 11:30:58,570 - RollTable Fixer - INFO - Optimized table: Ambulante - Difetti
+2025-09-27 11:30:58,570 - RollTable Fixer - INFO - Optimized table: Ambulante - Tratti della Personalità
+2025-09-27 11:30:58,571 - RollTable Fixer - INFO - Optimized table: Passatore - Difetti
+2025-09-27 11:30:58,571 - RollTable Fixer - INFO - Optimized table: Cacciatore di reliquie - Legami
+2025-09-27 11:30:58,571 - RollTable Fixer - INFO - Optimized table: Attaccabrighe - Difetti
+2025-09-27 11:30:58,571 - RollTable Fixer - INFO - Optimized table: Prelato - Difetti
+2025-09-27 11:30:58,571 - RollTable Fixer - INFO - Optimized table: Passatore - Ideali
+2025-09-27 11:30:58,572 - RollTable Fixer - INFO - Optimized table: Attaccabrighe - Legami
+2025-09-27 11:30:58,572 - RollTable Fixer - INFO - Optimized table: Staffetta - Ideali
+2025-09-27 11:30:58,573 - RollTable Fixer - INFO - Optimized table: Duro - Ideali
+2025-09-27 11:30:58,573 - RollTable Fixer - INFO - Optimized table: Ambulante - Ideali
+2025-09-27 11:30:58,574 - RollTable Fixer - INFO - Optimized table: Brado - Difetti
+2025-09-27 11:30:58,574 - RollTable Fixer - INFO - Optimized table: Lucignolo - Tratti della Personalità
+2025-09-27 11:30:58,574 - RollTable Fixer - INFO - Optimized table: Impresario - Tratti della Personalità
+2025-09-27 11:30:58,574 - RollTable Fixer - INFO - Optimized table: Cacciatore di reliquie - Ideali
+2025-09-27 11:30:58,574 - RollTable Fixer - INFO - Optimized table: Impresario - Difetti
+2025-09-27 11:30:58,575 - RollTable Fixer - INFO - Optimized table: Prelato - Ideali
+2025-09-27 11:30:58,575 - RollTable Fixer - INFO - Optimized table: Azzeccagarbugli - Legami
+2025-09-27 11:30:58,575 - RollTable Fixer - INFO - Optimized table: Duro - Legami
+2025-09-27 11:30:58,575 - RollTable Fixer - INFO - Optimized table: Ambulante - Legami
+2025-09-27 11:30:58,576 - RollTable Fixer - INFO - Optimized table: Cacciatore di reliquie - Tratti della Personalità
+2025-09-27 11:30:58,576 - RollTable Fixer - INFO - Optimized table: Fuggitivo - Ideali
+2025-09-27 11:30:58,576 - RollTable Fixer - INFO - Optimized table: Innamorato - Difetti
+2025-09-27 11:30:58,576 - RollTable Fixer - INFO - Optimized table: Passatore - Legami
+2025-09-27 11:30:58,577 - RollTable Fixer - INFO - Optimized table: Staffetta - Legami
+2025-09-27 11:30:58,577 - RollTable Fixer - INFO - Optimized table: Staffetta - Tratti della Personalità
+2025-09-27 11:30:58,577 - RollTable Fixer - INFO - Optimized table: Attaccabrighe - Ideali
+2025-09-27 11:30:58,577 - RollTable Fixer - INFO - Optimized table: Duro - Tratti della Personalità
+2025-09-27 11:30:58,578 - RollTable Fixer - INFO - Optimized table: Cacciatore di reliquie - Difetti
+2025-09-27 11:30:58,578 - RollTable Fixer - INFO - Optimized table: Impresario - Legami
+2025-09-27 11:30:58,578 - RollTable Fixer - INFO - Optimized table: Innamorato - Tratti della Personalità
+2025-09-27 11:30:58,578 - RollTable Fixer - INFO - Optimized table: Brado - Legami
+2025-09-27 11:30:58,578 - RollTable Fixer - INFO - Optimized table: Attaccabrighe - Tratti della Personalità
+2025-09-27 11:30:58,579 - RollTable Fixer - INFO - Optimized table: Passatore - Tratti della Personalità
+2025-09-27 11:30:58,579 - RollTable Fixer - INFO - Optimized table: Fuggitivo - Tratti della Personalità
+2025-09-27 11:30:58,579 - RollTable Fixer - INFO - Optimized table: Lucignolo - Legami
+2025-09-27 11:30:58,579 - RollTable Fixer - INFO - Optimized table: Innamorato - Legami
+2025-09-27 11:30:58,580 - RollTable Fixer - INFO - Optimized table: Staffetta - Difetti
+2025-09-27 11:30:58,580 - RollTable Fixer - INFO - RollTable fixing report saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/rolltable_fixing_report.json
+2025-09-27 11:30:58,581 - RollTable Fixer - INFO - RollTable fixing summary saved to: /Users/erik/Desktop/brancalonia-bigat-master/reports/rolltable_fixing_summary.md

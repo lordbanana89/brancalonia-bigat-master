@@ -1,6 +1,6 @@
 {
   "_id": "class-paladino-276y9b",
-  "_key": "!items!class-paladino-276y9b",
+  "_key": "!item!class-paladino-276y9b",
   "name": "Paladino",
   "type": "class",
   "img": "icons/equipment/shield/heater-steel-sword.webp",
@@ -528,7 +528,8 @@
       "str",
       "cha"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d10"
   },
   "effects": [],
   "folder": null,

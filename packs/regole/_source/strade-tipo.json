@@ -1,0 +1,20 @@
+{
+  "_id": "stradetipo011cbc",
+  "_key": "!journal!stradetipo011cbc",
+  "name": "Tipo di strada",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "strade-tipo",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "86"
+      }
+    }
+  }
+}

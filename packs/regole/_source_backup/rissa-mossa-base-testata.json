@@ -1,0 +1,40 @@
+{
+  "_id": "rissamossabasetestata2c3fd7",
+  "_key": "!journal!rissamossabasetestata2c3fd7",
+  "name": "Testata",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "rissamossabasetestata2c3fd7page1",
+      "name": "Testata",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<p>Colpo con la testa</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-base-testata",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  },
+  "type": "journal"
+}

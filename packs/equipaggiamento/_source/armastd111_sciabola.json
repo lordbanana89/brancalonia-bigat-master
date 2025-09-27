@@ -1,6 +1,6 @@
 {
   "_id": "armastd111sciabola7fe206",
-  "_key": "!items!armastd111sciabola7fe206",
+  "_key": "!item!armastd111sciabola7fe206",
   "name": "Sciabola",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,9 +24,9 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "",
-    "properties": [
-      "lgt"
-    ],
+    "properties": {
+      "lgt": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

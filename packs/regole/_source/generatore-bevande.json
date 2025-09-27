@@ -1,0 +1,20 @@
+{
+  "_id": "generatorebevande9fa531",
+  "_key": "!journal!generatorebevande9fa531",
+  "name": "Qualcosa da bere?",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "generatore-bettole-bevande",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "85"
+      }
+    }
+  }
+}

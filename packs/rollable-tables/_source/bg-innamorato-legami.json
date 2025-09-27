@@ -1,9 +1,9 @@
 {
   "_id": "Gi9KqhXHntIq2Vzf",
-  "_key": "!items!Gi9KqhXHntIq2Vzf",
+  "_key": "!item!Gi9KqhXHntIq2Vzf",
   "name": "Innamorato - Legami",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!uvJlvurPZiXe6Y80"
     },
     {
       "_id": "3YJJeRRTWHURdx7x",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!3YJJeRRTWHURdx7x"
     },
     {
       "_id": "whtVXpymyJfjFf5r",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!whtVXpymyJfjFf5r"
     },
     {
       "_id": "66TOZbQD3IXnErhZ",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!66TOZbQD3IXnErhZ"
     },
     {
       "_id": "aScVw8qfMDnD8siN",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!aScVw8qfMDnD8siN"
     },
     {
       "_id": "xlZtNN36XovsaD0F",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!xlZtNN36XovsaD0F"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "innamorato",
       "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

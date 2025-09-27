@@ -1,6 +1,6 @@
 {
   "_id": "equip-bg-passatore-abito",
-  "_key": "!items!equip-bg-passatore-abito",
+  "_key": "!item!equip-bg-passatore-abito",
   "name": "Abito da viaggiatore",
   "type": "equipment",
   "img": "icons/equipment/chest/shirt-simple-white.webp",

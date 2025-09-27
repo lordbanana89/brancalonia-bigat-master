@@ -1,27 +1,27 @@
 /* ========================================
    BRANCALONIA CHARACTER SHEET STYLES
-   Complete Italian Renaissance Character Sheet Design
-   Enhanced with authentic period aesthetics
+   "Spaghetti Fantasy" Character Sheet Design
+   Picaresque, dirty, worn - NOT noble Renaissance!
    ======================================== */
 
-/* Character Sheet Layout */
+/* Character Sheet Layout - Worn & Stained */
 .dnd5e.sheet.actor.character {
-  background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
-  border: 3px solid #8B4513;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px #65432144;
+  background: linear-gradient(135deg, #D4C2A6, #C8B69C);
+  border: 3px solid #5A4A3A;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
 
-/* Header Enhancements */
+/* Header Enhancements - Grimy & Worn */
 .dnd5e.sheet.actor .sheet-header {
   background:
-    linear-gradient(45deg, transparent 25%, #8B451322 25%),
-    linear-gradient(135deg, #8B4513, #722F37);
-  border: 3px solid #FFD700;
-  border-radius: 8px;
+    linear-gradient(45deg, transparent 25%, rgba(74, 52, 38, 0.3) 25%),
+    linear-gradient(135deg, #4A3426, #5C2328);
+  border: 3px solid #8B7355;
+  border-radius: 6px;
   box-shadow:
-    0 4px 8px #65432166,
-    inset 0 1px 0 #FFD70044;
+    0 4px 8px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(0,0,0,0.3);
   position: relative;
 }
 
@@ -33,18 +33,18 @@
   transform: translateX(-50%);
   width: 40px;
   height: 20px;
-  background: #FFD700;
+  background: #8B7355;
   border-radius: 20px 20px 0 0;
-  box-shadow: inset 0 2px 4px #654321;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Profile Image Frame */
+/* Profile Image Frame - Tarnished Metal */
 .dnd5e.sheet.actor .sheet-header .profile-img {
-  border: 4px solid #FFD700;
+  border: 4px solid #8B7355;
   border-radius: 50%;
   box-shadow:
-    0 0 15px #FFD70066,
-    inset 0 0 10px #65432133;
+    0 0 10px rgba(139, 115, 85, 0.4),
+    inset 0 0 10px rgba(0,0,0,0.3);
   position: relative;
 }
 
@@ -104,18 +104,20 @@
   font-weight: bold;
 }
 
-/* Tabs */
+/* Tabs - Preserve D&D 5e Navigation! */
 .dnd5e.sheet.actor .sheet-tabs {
-  background: linear-gradient(135deg, #8B4513, #654321);
-  border-bottom: 3px solid #FFD700;
-  border-radius: 8px 8px 0 0;
+  display: flex !important; /* Ensure tabs are visible */
+  background: linear-gradient(135deg, #4A3426, #3A3025);
+  border-bottom: 3px solid #8B7355;
+  border-radius: 6px 6px 0 0;
 }
 
 .dnd5e.sheet.actor .sheet-tabs .item {
-  background: #CD7F32;
-  border: 1px solid #FFD700;
+  display: block !important; /* Ensure items are visible */
+  background: #6B4C3A;
+  border: 1px solid #8B7355;
   border-bottom: none;
-  color: #FFF8DC;
+  color: #D4C4A8;
   font-family: Benton;
   font-weight: bold;
   text-transform: uppercase;
@@ -126,18 +128,18 @@
 }
 
 .dnd5e.sheet.actor .sheet-tabs .item:hover {
-  background: #FFD700;
-  color: #8B4513;
+  background: #8B7355;
+  color: #D4C4A8;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px #65432166;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
 .dnd5e.sheet.actor .sheet-tabs .item.active {
-  background: #FFD700;
-  color: #8B4513;
+  background: #B8956A;
+  color: #2B1F15;
   box-shadow:
-    0 2px 4px #654321,
-    inset 0 2px 4px #FFF8DC44;
+    0 2px 4px rgba(0,0,0,0.5),
+    inset 0 2px 4px rgba(0,0,0,0.2);
   transform: translateY(-1px);
 }
 

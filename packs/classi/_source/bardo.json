@@ -1,6 +1,6 @@
 {
   "_id": "class-bardo-uh05kq",
-  "_key": "!items!class-bardo-uh05kq",
+  "_key": "!item!class-bardo-uh05kq",
   "name": "Bardo",
   "type": "class",
   "img": "icons/tools/instruments/lute-brown.webp",
@@ -590,7 +590,8 @@
     "primaryAbility": [
       "cha"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d8"
   },
   "effects": [],
   "folder": null,

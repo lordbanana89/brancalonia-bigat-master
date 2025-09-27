@@ -123,7 +123,7 @@
   "name": "Action Surge Migliorato",
   "img": "icons/equipment/weapons/sword-two-handed-cross-blue.webp",
   "_id": "class-guerriero-livello_17-action-surge-migliorato",
-  "_key": "!items!class-guerriero-livello_17-action-surge-migliorato",
+  "_key": "!item!class-guerriero-livello_17-action-surge-migliorato",
   "ownership": {
     "default": 0
   },

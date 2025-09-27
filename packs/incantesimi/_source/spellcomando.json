@@ -1,6 +1,6 @@
 {
   "_id": "spellcomando7cdd86",
-  "_key": "!items!spellcomando7cdd86",
+  "_key": "!item!spellcomando7cdd86",
   "name": "Comando",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

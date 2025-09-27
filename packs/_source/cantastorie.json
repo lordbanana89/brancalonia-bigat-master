@@ -1,0 +1,33 @@
+{
+  "_id": "cantastoriexpr4pl",
+  "_key": "!items!cantastoriexpr4pl",
+  "name": "Cantastorie",
+  "type": "background",
+  "img": "icons/skills/trades/music-singing-voice-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Narratore itinerante che racconta leggende, storie e panzane per le piazze del Regno</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.37-38",
+    "identifier": "cantastorie",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.37-38",
+      "validazione": {
+        "implementato": false,
+        "file_id": "cantastorie_background_macaronicon",
+        "compendio": "backgrounds_macaronicon"
+      }
+    }
+  }
+}

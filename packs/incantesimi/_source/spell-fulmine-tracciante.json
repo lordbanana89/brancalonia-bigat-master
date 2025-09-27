@@ -1,80 +1,25 @@
 {
-  "id": "spell-fulmine-tracciante",
-  "nome": "Fulmine Tracciante",
-  "nome_inglese": "Guiding Bolt",
-  "livello": 1,
-  "scuola": "Invocazione",
-  "tempo_lancio": "1 azione",
-  "gittata": "120 piedi",
-  "componenti": {
-    "verbale": true,
-    "somatica": true
-  },
-  "durata": "1 round",
-  "descrizione": "Un lampo di luce sfreccia verso una creatura a tua scelta entro gittata. Effettua un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, il bersaglio subisce 4d6 danni radiosi, e il prossimo tiro per colpire effettuato contro questo bersaglio prima della fine del tuo prossimo turno ha vantaggio, grazie alla fioca luce mistica che brilla sul bersaglio fino ad allora.",
-  "classi": [
-    "Chierico"
-  ],
-  "scaling": {
-    "slot_1": "4d6 radiosi",
-    "slot_2": "5d6 radiosi",
-    "slot_3": "6d6 radiosi",
-    "slot_4": "7d6 radiosi",
-    "slot_5": "8d6 radiosi"
-  },
-  "implementazione_foundry": {
-    "tipo": "spell",
-    "livello": 1,
-    "attivazione": "action",
-    "range": 120,
-    "attacco": "ranged spell",
-    "danno": "4d6",
-    "danno_tipo": "radiant",
-    "effetto_aggiuntivo": "next attack advantage"
-  },
-  "valore": {
-    "danno_alto": "4d6 (14 medi) per slot 1°",
-    "range_lungo": "120 ft ottimo",
-    "vantaggio_prossimo": "Setup per alleati",
-    "radiant_damage": "Raramente resistito"
-  },
-  "danno_confronto": {
-    "vs_inflict_wounds": "Meno danno ma range",
-    "vs_chromatic_orb": "Più danno + vantaggio",
-    "vs_magic_missile": "Più danno ma può missare"
-  },
-  "tattiche": [
-    "Focus fire setup",
-    "Assist rogue sneak attack",
-    "Boost paladin/fighter nova",
-    "Sniper cleric build"
-  ],
-  "vantaggio_durata": {
-    "fino_a": "Fine tuo prossimo turno",
-    "tutti_alleati": "Chiunque può usarlo",
-    "primo_attacco": "Solo primo hit"
-  },
-  "problemi": [
-    "Può missare (spell attack)",
-    "Solo clerici base",
-    "Vantaggio sprecato se target muore"
-  ],
-  "note_dm": "Guiding Bolt è il miglior damage spell clerico livello 1. Vantaggio bonus è ottimo per teamwork. Range 120 eccellente.",
-  "fonte": "D&D 5e PHB p.248",
-  "name": "Spell Fulmine Tracciante",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-fulmine-tracciante",
-  "_key": "!items!spell-fulmine-tracciante",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellfulminetracciante90567e",
+  "_key": "!item!spellfulminetracciante90567e",
+  "name": "Fulmine Tracciante",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
+    "description": {
+      "value": "<p>Un lampo di luce sfreccia verso una creatura a tua scelta entro gittata. Effettua un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, il bersaglio subisce 4d6 danni radiosi, e il prossimo tiro per colpire effettuato contro questo bersaglio prima della fine del tuo prossimo turno ha vantaggio, grazie alla fioca luce mistica che brilla sul bersaglio fino ad allora.</p><h3>Note per il DM</h3><p><em>Guiding Bolt è il miglior damage spell clerico livello 1. Vantaggio bonus è ottimo per teamwork. Range 120 eccellente.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.248",
     "level": 1,
-    "school": "evo",
+    "school": "con",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -87,26 +32,83 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 1,
+      "units": "round"
     },
     "range": {
-      "value": "",
+      "value": 120,
+      "long": null,
       "units": "ft"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-fulmine-tracciante",
+      "fonte": "D&D 5e PHB p.248",
+      "note_dm": "Guiding Bolt è il miglior damage spell clerico livello 1. Vantaggio bonus è ottimo per teamwork. Range 120 eccellente.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "attivazione": "action",
+        "range": 120,
+        "attacco": "ranged spell",
+        "danno": "4d6",
+        "danno_tipo": "radiant",
+        "effetto_aggiuntivo": "next attack advantage"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Invocazione",
+        "level": 1
       }
     }
   }

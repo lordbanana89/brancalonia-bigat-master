@@ -1,9 +1,9 @@
 {
   "_id": "8chDmml0WSo7ngS5",
-  "_key": "!items!8chDmml0WSo7ngS5",
+  "_key": "!item!8chDmml0WSo7ngS5",
   "name": "Attaccabrighe - Difetti",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!qzK3rNojB5hsgmw9"
     },
     {
       "_id": "KxF4o40JfFnRbANZ",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!KxF4o40JfFnRbANZ"
     },
     {
       "_id": "ZWUtpGDJRNY0zqix",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!ZWUtpGDJRNY0zqix"
     },
     {
       "_id": "m8YrjH1Z7DjMaK3U",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!m8YrjH1Z7DjMaK3U"
     },
     {
       "_id": "2lfWe0g8eLcHrNN5",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!2lfWe0g8eLcHrNN5"
     },
     {
       "_id": "zYvpSCk796Yf3CUb",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!zYvpSCk796Yf3CUb"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "attaccabrighe",
       "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

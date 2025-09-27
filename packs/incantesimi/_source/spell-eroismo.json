@@ -1,87 +1,25 @@
 {
-  "id": "spell-eroismo",
-  "nome": "Eroismo",
-  "nome_inglese": "Heroism",
-  "livello": 1,
-  "scuola": "Ammaliamento",
-  "tempo_lancio": "1 azione",
-  "gittata": "Contatto",
-  "componenti": {
-    "verbale": true,
-    "somatica": true
-  },
-  "durata": "Concentrazione, fino a 1 minuto",
-  "descrizione": "Una creatura consenziente che tocchi è pervasa da coraggio. Fino al termine dell'incantesimo, la creatura è immune all'essere spaventata e ottiene punti ferita temporanei pari al tuo modificatore di caratteristica da incantatore all'inizio di ognuno dei suoi turni. Quando l'incantesimo termina, il bersaglio perde tutti i punti ferita temporanei rimanenti da questo incantesimo.",
-  "classi": [
-    "Bardo",
-    "Paladino"
-  ],
-  "scaling": {
-    "descrizione": "+1 creatura per slot sopra 1°",
-    "slot_2": "2 creature",
-    "slot_3": "3 creature",
-    "slot_4": "4 creature"
-  },
-  "implementazione_foundry": {
-    "tipo": "spell",
-    "livello": 1,
-    "attivazione": "action",
-    "range": "touch",
-    "durata": "1 minute",
-    "concentrazione": true,
-    "temp_hp": "@mod per round",
-    "immunita": "frightened"
-  },
-  "benefici": {
-    "immune_fear": "Immunita a frightened condition",
-    "temp_hp": "Mod THP ogni turno",
-    "refresh": "THP si refreshano",
-    "no_save": "Automatico su willing"
-  },
-  "temp_hp_meccaniche": {
-    "ogni_turno": "Inizio turno del target",
-    "non_stackano": "Sostituiscono precedenti",
-    "esempio_cha_16": "+3 THP/turno",
-    "10_turni": "Potenziale 30+ THP totali"
-  },
-  "frightened_immunity_value": {
-    "vs_draghi": "Frightful Presence immune",
-    "vs_undead": "Molti fear effects",
-    "morale": "Mai fugge per paura"
-  },
-  "confronto": {
-    "vs_bless": "Single target ma più defensive",
-    "vs_aid": "Heroism refresh, Aid permanent",
-    "vs_false_life": "Heroism continua, False Life one-time"
-  },
-  "tattiche": [
-    "Tank buffer continuo",
-    "Front-liner protection",
-    "Anti-fear prima di draghi",
-    "Sustained combat buff"
-  ],
-  "problemi": [
-    "Touch range",
-    "Concentrazione occupata",
-    "Single target base",
-    "THP non stackano con altri"
-  ],
-  "note_dm": "Heroism è ottimo sustained protection. THP ogni turno accumula molto. Fear immunity situazionale ma potente quando serve.",
-  "fonte": "D&D 5e PHB p.250",
-  "name": "Spell Eroismo",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-eroismo",
-  "_key": "!items!spell-eroismo",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spelleroismoa27c7d",
+  "_key": "!item!spelleroismoa27c7d",
+  "name": "Eroismo",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
+    "description": {
+      "value": "<p>Una creatura consenziente che tocchi è pervasa da coraggio. Fino al termine dell'incantesimo, la creatura è immune all'essere spaventata e ottiene punti ferita temporanei pari al tuo modificatore di caratteristica da incantatore all'inizio di ognuno dei suoi turni. Quando l'incantesimo termina, il bersaglio perde tutti i punti ferita temporanei rimanenti da questo incantesimo.</p><h3>Note per il DM</h3><p><em>Heroism è ottimo sustained protection. THP ogni turno accumula molto. Fear immunity situazionale ma potente quando serve.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.250",
     "level": 1,
-    "school": "evo",
+    "school": "enc",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -94,26 +32,83 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 1,
+      "units": "minute"
     },
     "range": {
-      "value": "",
-      "units": "ft"
+      "value": null,
+      "long": null,
+      "units": "touch"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-eroismo",
+      "fonte": "D&D 5e PHB p.250",
+      "note_dm": "Heroism è ottimo sustained protection. THP ogni turno accumula molto. Fear immunity situazionale ma potente quando serve.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "attivazione": "action",
+        "range": "touch",
+        "durata": "1 minute",
+        "concentrazione": true,
+        "temp_hp": "@mod per round",
+        "immunita": "frightened"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Ammaliamento",
+        "level": 1
       }
     }
   }

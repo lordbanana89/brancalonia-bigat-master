@@ -11,7 +11,7 @@
       "weight": 1,
       "range": [
         1,
-        2
+        1
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_0"
@@ -22,8 +22,8 @@
       "text": "Parzialmente nuvoloso, temperatura mite",
       "weight": 1,
       "range": [
-        3,
-        4
+        2,
+        2
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_1"
@@ -34,8 +34,8 @@
       "text": "Nuvoloso, grigio e deprimente",
       "weight": 1,
       "range": [
-        5,
-        6
+        3,
+        3
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_2"
@@ -46,8 +46,8 @@
       "text": "Pioggerella fastidiosa",
       "weight": 1,
       "range": [
-        7,
-        8
+        4,
+        4
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_3"
@@ -58,8 +58,8 @@
       "text": "Pioggia moderata",
       "weight": 1,
       "range": [
-        9,
-        10
+        5,
+        5
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_4"
@@ -70,8 +70,8 @@
       "text": "Pioggia torrenziale",
       "weight": 1,
       "range": [
-        11,
-        12
+        6,
+        6
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_5"
@@ -82,8 +82,8 @@
       "text": "Temporale con fulmini",
       "weight": 1,
       "range": [
-        13,
-        14
+        7,
+        7
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_6"
@@ -94,8 +94,8 @@
       "text": "Nebbia fitta (visibilità 10 metri)",
       "weight": 1,
       "range": [
-        15,
-        16
+        8,
+        8
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_7"
@@ -106,8 +106,8 @@
       "text": "Vento forte (svantaggio agli attacchi a distanza)",
       "weight": 1,
       "range": [
-        17,
-        18
+        9,
+        9
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_8"
@@ -118,8 +118,8 @@
       "text": "Grandine (1d4 danni ogni minuto all'aperto)",
       "weight": 1,
       "range": [
-        19,
-        19
+        10,
+        10
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_9"
@@ -130,14 +130,14 @@
       "text": "Evento meteorologico anomalo (magico)",
       "weight": 1,
       "range": [
-        20,
-        20
+        11,
+        11
       ],
       "drawn": false,
       "_key": "!results!tempo-atmosferico_10"
     }
   ],
-  "formula": "1d20",
+  "formula": "1d11",
   "replacement": true,
   "displayRoll": true,
   "folder": null,
@@ -150,7 +150,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!items!tempoatmosferico",
+  "_key": "!item!tempoatmosferico",
   "effects": [],
   "type": "loot"
 }

@@ -77,5 +77,25 @@
   "effects": [],
   "sort": 0,
   "folder": null,
-  "name": "Fuggitivo"
+  "name": "Fuggitivo",
+  "type": "background",
+  "system": {
+    "advancement": [
+      {
+        "_id": "skill_726zfr",
+        "type": "Trait",
+        "configuration": {
+          "choices": [
+            {
+              "count": 2
+            }
+          ],
+          "grants": [],
+          "mode": "choose",
+          "allowReplacements": false
+        },
+        "value": {}
+      }
+    ]
+  }
 }

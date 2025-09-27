@@ -1,9 +1,9 @@
 {
   "_id": "7y7WV5SWVe5uxRar",
-  "_key": "!items!7y7WV5SWVe5uxRar",
+  "_key": "!item!7y7WV5SWVe5uxRar",
   "name": "Innamorato - Difetti",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!GFjIVjGoZHfJnkw4"
     },
     {
       "_id": "Vwxnd0OB3e3LnEiE",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Vwxnd0OB3e3LnEiE"
     },
     {
       "_id": "Vn2flmEeO1H6o7Qy",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Vn2flmEeO1H6o7Qy"
     },
     {
       "_id": "AeBLQ6TMTWaDhTRN",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!AeBLQ6TMTWaDhTRN"
     },
     {
       "_id": "2rcifqaOsXw9voQe",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!2rcifqaOsXw9voQe"
     },
     {
       "_id": "ohTWZkopia6cbXCI",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!ohTWZkopia6cbXCI"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "innamorato",
       "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

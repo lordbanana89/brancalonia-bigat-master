@@ -1,0 +1,70 @@
+{
+  "_id": "gear016pelledacquaad9aa8",
+  "_key": "!items!gear016pelledacquaad9aa8",
+  "name": "Pelle d Acqua",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-round-corked-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Grande otre rinforzato adatto a trasportare fino a 12 litri di acqua.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": "3 kg (piena)",
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "consumableType": "potion"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "gear-016",
+      "fonte": {
+        "manuale": "Manuale Base",
+        "pagine": "Equipaggiamento da Avventura"
+      },
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

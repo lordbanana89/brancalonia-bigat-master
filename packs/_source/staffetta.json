@@ -1,0 +1,114 @@
+{
+  "_id": "staffetta",
+  "_key": "!items!staffetta",
+  "name": "Staffetta",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Corriere militare temprato da guerre interminabili, capace di consegnare dispacci in ogni condizione</em></p>\n<p>Ha corso tra accampamenti e campi di battaglia, memorizzando messaggi cifrati e attraversando linee nemiche.</p>\n<p>La guerra lo ha reso resistente, sospettoso e determinato a portare a termine la missione qualunque sia il rischio.</p>\n<p>Ancora oggi vive con lo zaino pronto, i calzari in ordine e l'ansia di dover ripartire al primo segnale.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Atletica e Sopravvivenza</p>\n<p><strong>Competenze Strumenti:</strong> Un tipo di gioco e veicoli terrestri</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Mostrina con i gradi</li>\n<li>Borsa con tasca segreta per dispacci</li>\n<li>Serie di dadi o mazzo di minchiate</li>\n<li>Abito comune</li>\n<li>Borsa con 10 ma</li>\n</ul>\n\n<h3>Privilegio: Con la Pioggia o con il Vento...</h3>\n<p>Ignora gli effetti di clima e terreno sfavorevoli sul proprio movimento quando è in marcia per consegnare un messaggio.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>È abituata a stare da sola e dimentica come ci si comporta in società.</td></tr>\n<tr><td>2</td><td>Si sente a proprio agio solo quando ha una missione da svolgere.</td></tr>\n<tr><td>3</td><td>Detesta vedere maltrattati gli animali da lavoro.</td></tr>\n<tr><td>4</td><td>Ha affrontato la morte più volte pur di consegnare un messaggio.</td></tr>\n<tr><td>5</td><td>Controlla in modo maniacale calzari e razioni.</td></tr>\n<tr><td>6</td><td>Porta con sé il peso degli orrori della guerra.</td></tr>\n<tr><td>7</td><td>Dorme con un occhio aperto.</td></tr>\n<tr><td>8</td><td>Affronta ogni imprevisto con il sorriso.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Sacrificio. Preferisco morire piuttosto che fallire una consegna. (Buono)</td></tr>\n<tr><td>2</td><td>Dovere. Obbedisco agli ordini senza distrazioni. (Legale)</td></tr>\n<tr><td>3</td><td>Istinto. Seguo l'intuito quando la strada sicura fallisce. (Caotico)</td></tr>\n<tr><td>4</td><td>Opportunismo. Ogni consegna ha un prezzo e la mia vita ne vale uno alto. (Malvagio)</td></tr>\n<tr><td>5</td><td>Neutralità. Servo chiunque mi ingaggi, con imparzialità. (Neutrale)</td></tr>\n<tr><td>6</td><td>Ineluttabilità. Se qualcosa deve accadere, accadrà comunque. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Sono pronta a recapitare un messaggio alla compagnia che ho servito a lungo.</td></tr>\n<tr><td>2</td><td>Devo la vita a un avvertimento e non lascio morire nessuno se posso evitarlo.</td></tr>\n<tr><td>3</td><td>Il mio cavallo fedele è il mio compagno più fidato.</td></tr>\n<tr><td>4</td><td>Porto ancora la missiva che non riuscii a consegnare.</td></tr>\n<tr><td>5</td><td>Una famiglia influente mi deve ancora un favore per un vecchio dispaccio.</td></tr>\n<tr><td>6</td><td>Non mi separo mai dal santino di San Bartolino.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Sono paranoica e temo di essere pedinata.</td></tr>\n<tr><td>2</td><td>Ho servito una fazione odiata: farei di tutto per tenerlo segreto.</td></tr>\n<tr><td>3</td><td>Un tic nervoso mi tradisce ogni volta che mento.</td></tr>\n<tr><td>4</td><td>Metto a rischio la vita dei compagni pur di non fallire.</td></tr>\n<tr><td>5</td><td>Ho una pessima igiene personale.</td></tr>\n<tr><td>6</td><td>Ho memoria corta e scarso senso dell'orientamento.</td></tr>\n</tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.44-45",
+    "identifier": "staffetta",
+    "advancement": [
+      {
+        "_id": "5FTC3Wud",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [],
+            "fixed": [
+              "atletica",
+              "sopravvivenza"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "atletica",
+            "sopravvivenza"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "uivqc0r5",
+        "type": "Improvement",
+        "configuration": {
+          "tools": {
+            "chosen": {
+              "count": 1,
+              "pool": [
+                "artisan"
+              ]
+            },
+            "fixed": []
+          }
+        },
+        "value": {
+          "tools": []
+        },
+        "level": 0,
+        "title": "Strumenti del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      }
+    ],
+    "traits": {},
+    "startingEquipment": [
+      {
+        "_id": "4a3c5e46cf6e8d80",
+        "type": "linked",
+        "count": 1,
+        "sort": 0,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-staffettamostrina-con-i-gradi-d65861"
+      },
+      {
+        "_id": "1d2cfb605d20e6c3",
+        "type": "linked",
+        "count": 1,
+        "sort": 100000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-staffettaborsa-con-tasca-segreta-per-dispacci-1a0c9d"
+      },
+      {
+        "_id": "bf75f28029170a0f",
+        "type": "linked",
+        "count": 1,
+        "sort": 200000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-staffettaserie-di-dadi-o-mazzo-di-minchiate-73a29f"
+      },
+      {
+        "_id": "4794dd05d6d6337f",
+        "type": "linked",
+        "count": 1,
+        "sort": 300000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-staffettaabito-comune-b630a5"
+      },
+      {
+        "_id": "b50610b9290d55cf",
+        "type": "linked",
+        "count": 1,
+        "sort": 400000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-staffettaborsa-con-10-ma-546549"
+      }
+    ],
+    "wealth": "10 ma"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.44-45",
+      "tipo": "background"
+    }
+  }
+}

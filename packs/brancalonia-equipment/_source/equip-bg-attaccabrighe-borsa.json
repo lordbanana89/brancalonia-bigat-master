@@ -1,6 +1,6 @@
 {
   "_id": "equip-bg-attaccabrighe-borsa",
-  "_key": "!items!equip-bg-attaccabrighe-borsa",
+  "_key": "!item!equip-bg-attaccabrighe-borsa",
   "name": "Borsa",
   "type": "equipment",
   "img": "icons/containers/bags/pouch-simple-leather-brown.webp",

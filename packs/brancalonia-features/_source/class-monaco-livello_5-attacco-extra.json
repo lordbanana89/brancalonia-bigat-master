@@ -52,7 +52,7 @@
   "name": "Attacco Extra",
   "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
   "_id": "class-monaco-livello_5-attacco-extra",
-  "_key": "!items!class-monaco-livello_5-attacco-extra",
+  "_key": "!item!class-monaco-livello_5-attacco-extra",
   "ownership": {
     "default": 0
   },

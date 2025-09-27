@@ -124,7 +124,7 @@
   "name": "Forza Indomabile",
   "img": "icons/equipment/shield/buckler-wooden-boss-steel.webp",
   "_id": "class-barbaro-livello_18-forza-indomabile",
-  "_key": "!items!class-barbaro-livello_18-forza-indomabile",
+  "_key": "!item!class-barbaro-livello_18-forza-indomabile",
   "ownership": {
     "default": 0
   },

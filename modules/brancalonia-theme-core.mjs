@@ -1,7 +1,8 @@
 /**
  * BRANCALONIA THEME CORE
  * Sistema di theming dinamico per Brancalonia
- * Basato sull'architettura di Project FU Theme
+ * "Spaghetti Fantasy" - Picaresque, dirty, comic-book inspired
+ * NOT noble Renaissance - dirty taverns and roguish scoundrels!
  */
 
 export class BrancaloniaTheme {
@@ -131,66 +132,66 @@ export class BrancaloniaTheme {
   }
 
   // ========================================
-  // PALETTE RINASCIMENTO ITALIANO
+  // PALETTE SPAGHETTI FANTASY
   // ========================================
 
-  /* Colori Base - Taverna Italiana */
-  'color-primary-ochre' = '#B8860Bff';        // Ocra dorata
-  'color-primary-sienna' = '#A0522Dff';       // Terra di Siena
-  'color-primary-umber' = '#8B4513ff';        // Terra d'ombra
-  'color-primary-wine' = '#722F37ff';         // Rosso vino
-  'color-primary-gold' = '#FFD700ff';         // Oro
-  'color-primary-bronze' = '#CD7F32ff';       // Bronzo
+  /* Colori Base - Taverna Malandata */
+  'color-primary-ochre' = '#8B7355ff';        // Ocra sporca - non dorata!
+  'color-primary-sienna' = '#6B4C3Aff';       // Terra bruciata
+  'color-primary-umber' = '#4A3426ff';        // Legno affumicato
+  'color-primary-wine' = '#5C2328ff';         // Vino versato
+  'color-primary-gold' = '#B8956Aff';         // Ottone ossidato - non oro!
+  'color-primary-bronze' = '#8B7355ff';       // Bronzo macchiato
 
-  /* Controlli - Stile Pergamena */
-  'color-control-content' = '#3D2914ff';      // Inchiostro scuro
-  'color-control-border' = '#8B7355ff';       // Bordo pergamena
-  'color-control-focus' = '#FFD700ff';        // Oro focus
-  'color-control-fill-1' = '#F5E6D3ff';       // Pergamena chiara
-  'color-control-fill-2' = '#E8D7C3ff';       // Pergamena scura
+  /* Controlli - Stile Pergamena Macchiata */
+  'color-control-content' = '#2B1F15ff';      // Inchiostro sbiadito
+  'color-control-border' = '#5A4A3Aff';       // Bordo usurato
+  'color-control-focus' = '#B8956Aff';        // Ottone focus
+  'color-control-fill-1' = '#D4C4A8ff';       // Pergamena ingiallita
+  'color-control-fill-2' = '#C8B69Cff';       // Pergamena macchiata
 
   /* Controlli - Evidenziazione */
-  'color-control-highlight-content' = '#722F37ff';
-  'color-control-highlight-border' = '#A0522Dff';
-  'color-control-highlight-fill-1' = '#FFE4B5ff';
-  'color-control-highlight-fill-2' = '#FFDAB9ff';
+  'color-control-highlight-content' = '#5C2328ff';
+  'color-control-highlight-border' = '#6B4C3Aff';
+  'color-control-highlight-fill-1' = '#C9A671ff';
+  'color-control-highlight-fill-2' = '#B39573ff';
 
   /* Controlli - Attivi */
-  'color-control-active-content' = '#FFD700ff';
-  'color-control-active-border' = '#CD7F32ff';
-  'color-control-active-fill-1' = '#8B4513cc';
-  'color-control-active-fill-2' = '#A0522Dcc';
+  'color-control-active-content' = '#B8956Aff';
+  'color-control-active-border' = '#8B7355ff';
+  'color-control-active-fill-1' = '#4A3426cc';
+  'color-control-active-fill-2' = '#6B4C3Acc';
 
   /* Applicazioni - Finestre */
-  'color-app-border' = '#8B4513ff';           // Bordo legno scuro
-  'color-app-shadow' = '#000000aa';           // Ombra profonda
+  'color-app-border' = '#52392Bff';           // Bordo legno macchiato
+  'color-app-shadow' = '#000000dd';           // Ombra taverna
 
   /* Applicazioni - Header */
-  'color-app-header-content' = '#F5E6D3ff';   // Testo chiaro
-  'color-app-header-fill-1' = '#722F37ee';    // Rosso vino
-  'color-app-header-fill-2' = '#4A1F23ee';    // Rosso scuro
+  'color-app-header-content' = '#D4C4A8ff';   // Testo sporco
+  'color-app-header-fill-1' = '#4A3426ee';    // Legno affumicato
+  'color-app-header-fill-2' = '#342821ee';    // Legno unto
 
   /* Applicazioni - Body */
-  'color-app-body-content' = '#3D2914ff';     // Testo principale
-  'color-app-body-secondary' = '#5D4E37ff';   // Testo secondario
-  'color-app-body-fill-1' = '#F5E6D3f5';      // Sfondo pergamena
-  'color-app-body-fill-2' = '#E8D7C3f5';      // Sfondo pergamena scura
+  'color-app-body-content' = '#2B1F15ff';     // Testo scurito
+  'color-app-body-secondary' = '#4A3A2Aff';   // Testo sbiadito
+  'color-app-body-fill-1' = '#342821f5';      // Sfondo taverna
+  'color-app-body-fill-2' = '#2A231Cf5';      // Sfondo cantina
 
   /* Sezioni Speciali */
-  'color-section-border' = '#8B7355ff';
-  'color-section-divider' = '#A0522Dff';
-  'color-section-fill-1' = '#FFF8DCff';       // Crema
-  'color-section-fill-2' = '#F5E6D3ff';       // Pergamena
+  'color-section-border' = '#5A4A3Aff';
+  'color-section-divider' = '#6B4C3Aff';
+  'color-section-fill-1' = '#D4C2A6ff';       // Carta macchiata
+  'color-section-fill-2' = '#C8B69Cff';       // Carta ingiallita
 
-  /* Tracker Brancalonia */
-  'color-infamia-bar' = '#8B0000ff';          // Rosso scuro criminale
-  'color-infamia-fill' = '#DC143Cff';         // Cremisi
-  'color-baraonda-empty' = '#D3D3D3ff';       // Grigio
-  'color-baraonda-filled' = '#FFD700ff';      // Oro
-  'color-lavori-bg' = '#2F4F4Fff';            // Grigio ardesia
-  'color-lavori-text' = '#F0E68Cff';          // Khaki
-  'color-rifugio-active' = '#228B22ff';       // Verde foresta
-  'color-rifugio-inactive' = '#696969ff';     // Grigio scuro
+  /* Tracker Brancalonia - Picaresque Style */
+  'color-infamia-bar' = '#5C2020ff';          // Sangue secco
+  'color-infamia-fill' = '#7A2E2Eff';         // Rosso criminale
+  'color-baraonda-empty' = '#5A4A3Aff';       // Ferro arrugginito
+  'color-baraonda-filled' = '#B8956Aff';      // Ottone opaco
+  'color-lavori-bg' = '#3A3025ff';            // Fango secco
+  'color-lavori-text' = '#C4B5A0ff';          // Carta sporca
+  'color-rifugio-active' = '#3B4A2Fff';       // Verde muffa
+  'color-rifugio-inactive' = '#4A3A2Aff';     // Marrone polvere
 
   /* Immagini e Texture */
   'ui-accent-image' = 'modules/brancalonia/assets/ui/ornaments/corner-flourish.png';
@@ -202,21 +203,22 @@ export class BrancaloniaTheme {
   /* Stili Avanzati */
   'advanced' = `
 /* ========================================
-   BRANCALONIA ITALIAN RENAISSANCE THEME
+   BRANCALONIA SPAGHETTI FANTASY THEME
+   Dirty, worn, picaresque - NOT noble Renaissance!
    ======================================== */
 
-/* Font Rinascimentali */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+/* Font Picareschi - Rough & Hand-Written Style */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+DW+Pica:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
 
-/* Variabili Aggiuntive */
+/* Variabili Aggiuntive - Spaghetti Fantasy */
 :root {
-  --branca-font-primary: 'EB Garamond', serif;
-  --branca-font-display: 'Cinzel', serif;
+  --branca-font-primary: 'IM Fell DW Pica', serif;
+  --branca-font-display: 'IM Fell English SC', serif;
   --branca-font-size-base: 14px;
-  --branca-border-ornate: 2px solid var(--branca-color-primary-gold);
-  --branca-shadow-renaissance: 0 4px 8px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,215,0,0.3);
-  --branca-gradient-tavern: linear-gradient(135deg, var(--branca-color-primary-sienna), var(--branca-color-primary-umber));
-  --branca-texture-opacity: 0.15;
+  --branca-border-ornate: 2px solid var(--branca-color-primary-bronze);
+  --branca-shadow-tavern: 0 4px 8px rgba(0,0,0,0.7), inset 0 1px 0 rgba(0,0,0,0.3);
+  --branca-gradient-tavern: linear-gradient(135deg, var(--branca-color-primary-umber), var(--branca-color-primary-sienna));
+  --branca-texture-opacity: 0.25;
 }
 
 /* Applicazione Font Globale */

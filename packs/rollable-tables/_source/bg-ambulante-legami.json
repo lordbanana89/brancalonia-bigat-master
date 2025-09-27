@@ -1,9 +1,9 @@
 {
   "_id": "CLh8GivenPA6Zhsx",
-  "_key": "!items!CLh8GivenPA6Zhsx",
+  "_key": "!item!CLh8GivenPA6Zhsx",
   "name": "Ambulante - Legami",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!XrOdRb5MTgJbBkQJ"
     },
     {
       "_id": "mzgfrBaZYBKR0mHg",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!mzgfrBaZYBKR0mHg"
     },
     {
       "_id": "uf6BorMKpA70bhFa",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!uf6BorMKpA70bhFa"
     },
     {
       "_id": "iFhRqCKVrwxVuZVW",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!iFhRqCKVrwxVuZVW"
     },
     {
       "_id": "CoqT8VXutN4CwZ5O",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!CoqT8VXutN4CwZ5O"
     },
     {
       "_id": "R7MBH4Yl510ZWSky",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!R7MBH4Yl510ZWSky"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "ambulante",
       "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

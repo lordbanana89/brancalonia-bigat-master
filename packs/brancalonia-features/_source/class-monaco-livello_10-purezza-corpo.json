@@ -34,7 +34,7 @@
   "name": "Purezza Corpo",
   "img": "icons/magic/life/heart-shadow-purple.webp",
   "_id": "class-monaco-livello_10-purezza-corpo",
-  "_key": "!items!class-monaco-livello_10-purezza-corpo",
+  "_key": "!item!class-monaco-livello_10-purezza-corpo",
   "ownership": {
     "default": 0
   },

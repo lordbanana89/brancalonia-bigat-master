@@ -100,7 +100,7 @@
   "name": "Dono del Patto",
   "img": "icons/sundries/documents/document-sealed-red.webp",
   "_id": "class-warlock-livello_3-patto-mistico",
-  "_key": "!items!class-warlock-livello_3-patto-mistico",
+  "_key": "!item!class-warlock-livello_3-patto-mistico",
   "ownership": {
     "default": 0
   },

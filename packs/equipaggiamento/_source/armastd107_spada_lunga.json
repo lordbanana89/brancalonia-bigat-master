@@ -1,6 +1,6 @@
 {
   "_id": "armastd107spadalunga7f37a8",
-  "_key": "!items!armastd107spadalunga7f37a8",
+  "_key": "!item!armastd107spadalunga7f37a8",
   "name": "Spada Lunga",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,9 +24,9 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "longsword",
-    "properties": [
-      "ver"
-    ],
+    "properties": {
+      "ver": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

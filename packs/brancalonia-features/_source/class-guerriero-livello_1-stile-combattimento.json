@@ -123,7 +123,7 @@
   "name": "Stile di Combattimento",
   "img": "icons/skills/melee/swords-parry-block-yellow.webp",
   "_id": "class-guerriero-livello_1-stile-combattimento",
-  "_key": "!items!class-guerriero-livello_1-stile-combattimento",
+  "_key": "!item!class-guerriero-livello_1-stile-combattimento",
   "ownership": {
     "default": 0
   },

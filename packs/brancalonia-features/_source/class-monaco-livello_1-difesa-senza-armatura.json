@@ -99,7 +99,7 @@
   "name": "Difesa Senza Armatura",
   "img": "systems/dnd5e/icons/items/armor/plate.webp-scale-grey.webp",
   "_id": "class-monaco-livello_1-difesa-senza-armatura",
-  "_key": "!items!class-monaco-livello_1-difesa-senza-armatura",
+  "_key": "!item!class-monaco-livello_1-difesa-senza-armatura",
   "ownership": {
     "default": 0
   },

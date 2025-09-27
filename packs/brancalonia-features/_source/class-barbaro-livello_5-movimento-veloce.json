@@ -76,7 +76,7 @@
   "name": "Movimento Veloce",
   "img": "icons/magic/movement/trail-streak-pink.webp",
   "_id": "class-barbaro-livello_5-movimento-veloce",
-  "_key": "!items!class-barbaro-livello_5-movimento-veloce",
+  "_key": "!item!class-barbaro-livello_5-movimento-veloce",
   "ownership": {
     "default": 0
   },

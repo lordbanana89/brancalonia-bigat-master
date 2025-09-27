@@ -1,6 +1,6 @@
 {
   "_id": "class-fighter-o0j7hl",
-  "_key": "!items!class-fighter-o0j7hl",
+  "_key": "!item!class-fighter-o0j7hl",
   "name": "Guerriero",
   "type": "class",
   "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
@@ -304,7 +304,8 @@
       "str",
       "dex"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d10"
   },
   "effects": [],
   "folder": null,

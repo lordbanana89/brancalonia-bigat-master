@@ -100,7 +100,7 @@
   "name": "Recupero Energie",
   "img": "icons/magic/life/heart-shadow-red.webp",
   "_id": "class-guerriero-livello_1-recupero-energie",
-  "_key": "!items!class-guerriero-livello_1-recupero-energie",
+  "_key": "!item!class-guerriero-livello_1-recupero-energie",
   "ownership": {
     "default": 0
   },

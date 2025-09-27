@@ -1,55 +1,25 @@
 {
-  "id": "spell-guida",
-  "nome": "Guida",
-  "nome_inglese": "Guidance",
-  "livello": 0,
-  "scuola": "Divinazione",
-  "tempo_lancio": "1 azione",
-  "gittata": "Contatto",
-  "componenti": {
-    "verbale": true,
-    "somatica": true
-  },
-  "durata": "Concentrazione, fino a 1 minuto",
-  "descrizione": "Tocchi una creatura consenziente. Una volta prima che l'incantesimo finisca, il bersaglio può tirare un d4 e aggiungere il numero tirato a una prova di caratteristica a sua scelta. Può tirare il dado prima o dopo aver effettuato la prova. L'incantesimo poi termina.",
-  "classi": [
-    "Chierico",
-    "Druido"
-  ],
-  "implementazione_foundry": {
-    "tipo": "cantrip",
-    "attivazione": "action",
-    "range": "touch",
-    "durata": "1 minute",
-    "concentrazione": true,
-    "effetto": "1d4 bonus to ability check"
-  },
-  "utilizzo": {
-    "skill_checks": "+1d4 a qualsiasi prova abilità",
-    "non_combat": "Initiative non è ability check",
-    "single_use": "Si usa una volta poi finisce"
-  },
-  "valore": {
-    "media_bonus": "+2.5 medio",
-    "sempre_utile": "Applicabile a quasi tutto",
-    "spam_potenziale": "Ricastabile dopo uso"
-  },
-  "note_dm": "Guidance è uno dei migliori cantrip. +1d4 è significativo. Alcuni tavoli limitano lo spam continuo.",
-  "fonte": "D&D 5e PHB p.248",
-  "name": "Spell Guida",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-guida",
-  "_key": "!items!spell-guida",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellguida9ad237",
+  "_key": "!item!spellguida9ad237",
+  "name": "Guida",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
-    "school": "evo",
+    "description": {
+      "value": "<p>Tocchi una creatura consenziente. Una volta prima che l'incantesimo finisca, il bersaglio può tirare un d4 e aggiungere il numero tirato a una prova di caratteristica a sua scelta. Può tirare il dado prima o dopo aver effettuato la prova. L'incantesimo poi termina.</p><h3>Note per il DM</h3><p><em>Guidance è uno dei migliori cantrip. +1d4 è significativo. Alcuni tavoli limitano lo spam continuo.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.248",
+    "level": 0,
+    "school": "div",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -62,26 +32,81 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": 1,
+      "units": "minute"
     },
     "range": {
-      "value": "",
-      "units": "ft"
+      "value": null,
+      "long": null,
+      "units": "touch"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-guida",
+      "fonte": "D&D 5e PHB p.248",
+      "note_dm": "Guidance è uno dei migliori cantrip. +1d4 è significativo. Alcuni tavoli limitano lo spam continuo.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": "touch",
+        "durata": "1 minute",
+        "concentrazione": true,
+        "effetto": "1d4 bonus to ability check"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Divinazione",
+        "level": 0
       }
     }
   }

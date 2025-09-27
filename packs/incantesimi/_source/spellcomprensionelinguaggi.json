@@ -1,6 +1,6 @@
 {
   "_id": "spellcomprensionelinguaggi181a1b",
-  "_key": "!items!spellcomprensionelinguaggi181a1b",
+  "_key": "!item!spellcomprensionelinguaggi181a1b",
   "name": "Comprensione dei Linguaggi",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

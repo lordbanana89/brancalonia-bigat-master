@@ -1,9 +1,9 @@
 {
   "_id": "6Te8PzC08Lpuqm2S",
-  "_key": "!items!6Te8PzC08Lpuqm2S",
+  "_key": "!item!6Te8PzC08Lpuqm2S",
   "name": "Duro - Legami",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!9Zq6HlnjZ76Oh6az"
     },
     {
       "_id": "6H8UsfKz7MQlo4J5",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!6H8UsfKz7MQlo4J5"
     },
     {
       "_id": "Q28d7FXt7qpOuSQB",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Q28d7FXt7qpOuSQB"
     },
     {
       "_id": "tiF3mCIUU31UZan7",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!tiF3mCIUU31UZan7"
     },
     {
       "_id": "1wHZ48dMGPc4DjBa",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!1wHZ48dMGPc4DjBa"
     },
     {
       "_id": "SlWS3iklsIcAsQkR",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!SlWS3iklsIcAsQkR"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "duro",
       "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

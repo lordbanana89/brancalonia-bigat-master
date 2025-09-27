@@ -1,0 +1,20 @@
+{
+  "_id": "generatoretipo486772",
+  "_key": "!journal!generatoretipo486772",
+  "name": "Tipo e sottotipo",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "generatore-bettole-tipo",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "83"
+      }
+    }
+  }
+}

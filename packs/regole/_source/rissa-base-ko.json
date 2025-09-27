@@ -1,0 +1,17 @@
+{
+  "_id": "rissabaseko5890c6",
+  "_key": "!journal!rissabaseko5890c6",
+  "name": "ko",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-base-ko",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

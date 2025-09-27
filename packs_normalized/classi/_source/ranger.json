@@ -462,7 +462,8 @@
       "dex",
       "wis"
     ],
-    "startingEquipment": []
+    "startingEquipment": [],
+    "hitDice": "d10"
   },
   "effects": [],
   "folder": null,

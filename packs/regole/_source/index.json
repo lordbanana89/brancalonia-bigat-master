@@ -1,0 +1,14 @@
+{
+  "_id": "index2865ce",
+  "_key": "!journal!index2865ce",
+  "name": "Slot Mossa",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {}
+  }
+}

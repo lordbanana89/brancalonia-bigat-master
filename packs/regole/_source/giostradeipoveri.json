@@ -1,10 +1,9 @@
 {
-  "_id": "giostradeipoveri",
-  "_key": "!items!giostradeipoveri",
+  "_id": "giostradeipoveri02cc5e",
+  "_key": "!journal!giostradeipoveri02cc5e",
   "name": "Giostra dei Poveri",
+  "type": "journal",
   "img": "icons/svg/book.svg",
-  "pages": [],
-  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0
@@ -17,7 +16,5 @@
         "pagine": "59"
       }
     }
-  },
-  "type": "JournalEntry",
-  "effects": []
+  }
 }

@@ -97,7 +97,7 @@
   "name": "Maestro Combattente",
   "img": "icons/equipment/weapons/sword-guard-gold.webp",
   "_id": "class-guerriero-livello_7-maestro-combattente",
-  "_key": "!items!class-guerriero-livello_7-maestro-combattente",
+  "_key": "!item!class-guerriero-livello_7-maestro-combattente",
   "ownership": {
     "default": 0
   },

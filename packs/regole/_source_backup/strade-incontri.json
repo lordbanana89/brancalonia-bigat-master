@@ -1,0 +1,43 @@
+{
+  "_id": "stradeincontri891c22",
+  "_key": "!journal!stradeincontri891c22",
+  "name": "Cosa ci si incontra",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "stradeincontri891c22page1",
+      "name": "Cosa ci si incontra",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "strade-incontri",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "86"
+      }
+    }
+  },
+  "type": "journal"
+}

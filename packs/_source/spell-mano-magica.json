@@ -1,0 +1,112 @@
+{
+  "_id": "spellmanomagica5a5ec3",
+  "_key": "!items!spellmanomagica5a5ec3",
+  "name": "Mano Magica",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una mano spettrale fluttuante appare in un punto a tua scelta entro gittata. La mano dura per la durata o finché non la congedi come azione. La mano svanisce se si trova a più di 30 piedi da te o se lanci di nuovo questo incantesimo. Puoi usare la tua azione per controllare la mano. Può manipolare oggetti, aprire porte e contenitori non chiusi a chiave, riporre o recuperare oggetti da contenitori aperti, o versare il contenuto di una fiala. Può muoversi fino a 30 piedi ogni volta che la usi. La mano non può attaccare, attivare oggetti magici o trasportare più di 10 libbre.</p><h3>Note per il DM</h3><p><em>Mage Hand è versatile utilità. Arcane Trickster la rende molto più potente. Utile per puzzle e esplorazione sicura.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.256",
+    "level": 0,
+    "school": "evo",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-mano-magica",
+      "fonte": "D&D 5e PHB p.256",
+      "note_dm": "Mage Hand è versatile utilità. Arcane Trickster la rende molto più potente. Utile per puzzle e esplorazione sicura.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": 30,
+        "durata": "1 minute",
+        "controllo": "azione per muovere"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Evocazione",
+        "level": 0
+      }
+    }
+  }
+}

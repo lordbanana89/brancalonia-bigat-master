@@ -1,9 +1,9 @@
 {
   "_id": "Vhptb105HeLya8CD",
-  "_key": "!items!Vhptb105HeLya8CD",
+  "_key": "!item!Vhptb105HeLya8CD",
   "name": "Passatore - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!9sioDJUrZtgFBV2q"
     },
     {
       "_id": "Nk8yAVfMkt9tZpwj",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Nk8yAVfMkt9tZpwj"
     },
     {
       "_id": "nTmEgGxJuZGjPLjF",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!nTmEgGxJuZGjPLjF"
     },
     {
       "_id": "DpcSzq4HPE1XlIKl",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!DpcSzq4HPE1XlIKl"
     },
     {
       "_id": "At2rhqyPskQejIne",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!At2rhqyPskQejIne"
     },
     {
       "_id": "u5l2fPJdlL93QcPb",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!u5l2fPJdlL93QcPb"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "passatore",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

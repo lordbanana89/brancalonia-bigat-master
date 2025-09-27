@@ -47,7 +47,7 @@
   "name": "Stile di Combattimento",
   "img": "icons/skills/melee/swords-parry-block-yellow.webp",
   "_id": "class-ranger-livello_2-stile-combattimento",
-  "_key": "!items!class-ranger-livello_2-stile-combattimento",
+  "_key": "!item!class-ranger-livello_2-stile-combattimento",
   "ownership": {
     "default": 0
   },

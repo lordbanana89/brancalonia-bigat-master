@@ -1,0 +1,20 @@
+{
+  "_id": "generatorecitazione08a6f2",
+  "_key": "!journal!generatorecitazione08a6f2",
+  "name": "Cantico da Bettola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "generatore-bettole-citazione",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "83"
+      }
+    }
+  }
+}

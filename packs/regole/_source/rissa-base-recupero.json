@@ -1,0 +1,17 @@
+{
+  "_id": "rissabaserecupero593f93",
+  "_key": "!journal!rissabaserecupero593f93",
+  "name": "recupero",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-base-recupero",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

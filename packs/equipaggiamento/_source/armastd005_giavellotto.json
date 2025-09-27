@@ -1,6 +1,6 @@
 {
   "_id": "armastd005giavellottoaa34ac",
-  "_key": "!items!armastd005giavellottoaa34ac",
+  "_key": "!item!armastd005giavellottoaa34ac",
   "name": "Giavellotto",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,9 +24,9 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "",
-    "properties": [
-      "thr"
-    ],
+    "properties": {
+      "thr": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

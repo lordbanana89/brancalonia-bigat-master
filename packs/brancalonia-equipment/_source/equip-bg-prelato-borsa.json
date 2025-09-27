@@ -1,6 +1,6 @@
 {
   "_id": "equip-bg-prelato-borsa",
-  "_key": "!items!equip-bg-prelato-borsa",
+  "_key": "!item!equip-bg-prelato-borsa",
   "name": "Borsa",
   "type": "equipment",
   "img": "icons/containers/bags/pouch-simple-leather-brown.webp",

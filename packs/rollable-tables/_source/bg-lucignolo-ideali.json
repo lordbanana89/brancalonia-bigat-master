@@ -1,9 +1,9 @@
 {
   "_id": "vMJPF4oeXbLPBKA0",
-  "_key": "!items!vMJPF4oeXbLPBKA0",
+  "_key": "!item!vMJPF4oeXbLPBKA0",
   "name": "Lucignolo - Ideali",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!niE5j6ahvIsNPtDi"
     },
     {
       "_id": "yCrZ8XQqeQlmDOAB",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!yCrZ8XQqeQlmDOAB"
     },
     {
       "_id": "jS6bSWqfJm31g5uD",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!jS6bSWqfJm31g5uD"
     },
     {
       "_id": "ZCeujMdJd5lXYUTA",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!ZCeujMdJd5lXYUTA"
     },
     {
       "_id": "uUGULvN5DYR2SW5t",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!uUGULvN5DYR2SW5t"
     },
     {
       "_id": "RV46NOqnJTTtqY9c",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!RV46NOqnJTTtqY9c"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "lucignolo",
       "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

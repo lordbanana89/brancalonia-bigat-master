@@ -33,7 +33,7 @@
   "name": "Aumento Caratteristica 2",
   "img": "icons/magic/control/buff-flight-wings-blue.webp",
   "_id": "class-mago-livello_8-aumento-caratteristica-2",
-  "_key": "!items!class-mago-livello_8-aumento-caratteristica-2",
+  "_key": "!item!class-mago-livello_8-aumento-caratteristica-2",
   "ownership": {
     "default": 0
   },

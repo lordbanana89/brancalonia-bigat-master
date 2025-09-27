@@ -1,9 +1,9 @@
 {
   "_id": "Ot4awt6F31DrGt65",
-  "_key": "!items!Ot4awt6F31DrGt65",
+  "_key": "!item!Ot4awt6F31DrGt65",
   "name": "Impresario - Difetti",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!m9MDGbddxMfK7qeu"
     },
     {
       "_id": "FwIi0UDnDXTV3Qq6",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!FwIi0UDnDXTV3Qq6"
     },
     {
       "_id": "f0aocDSf1AEwJPjG",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!f0aocDSf1AEwJPjG"
     },
     {
       "_id": "1TV9mjQY6UYjKuxL",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!1TV9mjQY6UYjKuxL"
     },
     {
       "_id": "4ylQBMnptKO2BLgV",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!4ylQBMnptKO2BLgV"
     },
     {
       "_id": "hMZWc9P97WWaMgC7",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!hMZWc9P97WWaMgC7"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "impresario",
       "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

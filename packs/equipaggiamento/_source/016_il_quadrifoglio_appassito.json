@@ -1,0 +1,81 @@
+{
+  "_id": "ilquadrifoglioappassito909f5f",
+  "_key": "!item!ilquadrifoglioappassito909f5f",
+  "name": "Il Quadrifoglio Appassito",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
+  "system": {
+    "description": {
+      "value": "<p>Quadrifoglio secco in ampolla di vetro</p><h3>Proprietà</h3><p>Una volta al giorno, puoi ritirare un tiro di dado</p><h3>Storia</h3><p><em>L'uomo più fortunato del mondo morì il giorno che lo trovò</em></p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 777,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": {
+      "mgc": true
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "016",
+      "categoria": "cimelo",
+      "storia": "L'uomo più fortunato del mondo morì il giorno che lo trovò",
+      "proprieta_originale": "Una volta al giorno, puoi ritirare un tiro di dado",
+      "implementazione": {
+        "tipo": "narrativo",
+        "attivo": true,
+        "active_effects": []
+      }
+    }
+  }
+}

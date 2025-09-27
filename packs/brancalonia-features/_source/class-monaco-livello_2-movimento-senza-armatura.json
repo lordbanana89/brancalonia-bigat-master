@@ -92,7 +92,7 @@
   "name": "Movimento senza Armatura",
   "img": "icons/magic/movement/trail-streak-pink.webp",
   "_id": "class-monaco-livello_2-movimento-senza-armatura",
-  "_key": "!items!class-monaco-livello_2-movimento-senza-armatura",
+  "_key": "!item!class-monaco-livello_2-movimento-senza-armatura",
   "ownership": {
     "default": 0
   },

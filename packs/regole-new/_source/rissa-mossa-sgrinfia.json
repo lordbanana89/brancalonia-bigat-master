@@ -1,0 +1,40 @@
+{
+  "_id": "rissamossasgrinfiaffa087",
+  "_key": "!journal!rissamossasgrinfiaffa087",
+  "name": "Sgrinfia",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "rissamossasgrinfiaffa087page1",
+      "name": "Sgrinfia",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-sgrinfia",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

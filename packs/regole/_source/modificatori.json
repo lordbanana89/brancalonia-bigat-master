@@ -1,0 +1,14 @@
+{
+  "_id": "modificatori6901c7",
+  "_key": "!journal!modificatori6901c7",
+  "name": "Regola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {}
+  }
+}

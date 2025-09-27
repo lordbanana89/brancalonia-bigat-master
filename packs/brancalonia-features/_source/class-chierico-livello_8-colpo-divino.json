@@ -146,7 +146,7 @@
   "name": "Colpo Divino",
   "img": "icons/magic/lightning/bolt-strike-forked-yellow.webp",
   "_id": "class-chierico-livello_8-colpo-divino",
-  "_key": "!items!class-chierico-livello_8-colpo-divino",
+  "_key": "!item!class-chierico-livello_8-colpo-divino",
   "ownership": {
     "default": 0
   },

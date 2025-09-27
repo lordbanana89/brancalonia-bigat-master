@@ -1,9 +1,9 @@
 {
   "_id": "oggettocontraff005reliquiefalse802435",
-  "_key": "!items!oggettocontraff005reliquiefalse802435",
+  "_key": "!item!oggettocontraff005reliquiefalse802435",
   "name": "Reliquie False",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Finti resti sacri, ossa o reliquiari costruiti per ingannare credenti e pellegrini.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

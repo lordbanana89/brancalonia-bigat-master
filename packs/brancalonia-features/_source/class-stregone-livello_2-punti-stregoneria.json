@@ -44,7 +44,7 @@
   "name": "Punti Stregoneria",
   "img": "icons/commodities/currency/coin-inset-snail-silver.webp",
   "_id": "class-stregone-livello_2-punti-stregoneria",
-  "_key": "!items!class-stregone-livello_2-punti-stregoneria",
+  "_key": "!item!class-stregone-livello_2-punti-stregoneria",
   "ownership": {
     "default": 0
   },

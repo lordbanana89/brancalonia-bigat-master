@@ -1,67 +1,25 @@
 {
-  "id": "spell-beffa-crudele",
-  "nome": "Beffa Crudele",
-  "nome_inglese": "Vicious Mockery",
-  "livello": 0,
-  "scuola": "Ammaliamento",
-  "tempo_lancio": "1 azione",
-  "gittata": "60 piedi",
-  "componenti": {
-    "verbale": true
-  },
-  "durata": "Istantanea",
-  "descrizione": "Scagli un flusso di insulti intessuti con incantamenti sottili verso una creatura che puoi vedere entro gittata. Se il bersaglio può sentirti (anche se non deve capirti), deve riuscire un tiro salvezza su Saggezza o subire 1d4 danni psichici e avere svantaggio sul prossimo tiro per colpire che effettua prima della fine del tuo prossimo turno.",
-  "classi": [
-    "Bardo"
-  ],
-  "danno_scaling": {
-    "livello_1": "1d4",
-    "livello_5": "2d4",
-    "livello_11": "3d4",
-    "livello_17": "4d4"
-  },
-  "implementazione_foundry": {
-    "tipo": "cantrip",
-    "attivazione": "action",
-    "range": 60,
-    "save": "wisdom",
-    "danno": "1d4",
-    "danno_tipo": "psychic",
-    "effetto_aggiuntivo": "disadvantage next attack"
-  },
-  "meccaniche": {
-    "requisito_udito": "Bersaglio deve poter sentire",
-    "comprensione": "NON serve capire la lingua",
-    "svantaggio": "Solo prossimo attacco",
-    "durata_svantaggio": "Fino a fine tuo prossimo turno"
-  },
-  "valore_tattico": {
-    "danno_basso": "d4 è minimo ma scala",
-    "debuff_forte": "Disadvantage molto utile",
-    "no_componenti_sm": "Solo verbale, ottimo se legato",
-    "range_buono": "60 piedi sicuro"
-  },
-  "flavor_esempi": [
-    "Tua madre era un'orchessa!",
-    "Combatti come una mucca!",
-    "Ho visto goblin più minacciosi!"
-  ],
-  "note_dm": "Vicious Mockery è il cantrip signature del bardo. Danno basso ma disadvantage è potente. Incoraggia creatività negli insulti.",
-  "fonte": "D&D 5e PHB p.285",
-  "name": "Spell Beffa Crudele",
-  "img": "icons/magic/symbols/star-pointed-purple.webp",
-  "_id": "spell-beffa-crudele",
-  "_key": "!items!spell-beffa-crudele",
-  "ownership": {
-    "default": 0
-  },
-  "effects": [],
-  "sort": 0,
-  "folder": null,
+  "_id": "spellbeffacrudelee17c17",
+  "_key": "!item!spellbeffacrudelee17c17",
+  "name": "Beffa Crudele",
   "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
-    "level": 1,
-    "school": "evo",
+    "description": {
+      "value": "<p>Scagli un flusso di insulti intessuti con incantamenti sottili verso una creatura che puoi vedere entro gittata. Se il bersaglio può sentirti (anche se non deve capirti), deve riuscire un tiro salvezza su Saggezza o subire 1d4 danni psichici e avere svantaggio sul prossimo tiro per colpire che effettua prima della fine del tuo prossimo turno.</p><h3>Note per il DM</h3><p><em>Vicious Mockery è il cantrip signature del bardo. Danno basso ma disadvantage è potente. Incoraggia creatività negli insulti.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.285",
+    "level": 0,
+    "school": "enc",
+    "components": {
+      "vocal": true,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
     "materials": {
       "value": "",
       "consumed": false,
@@ -74,26 +32,82 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1
+      "cost": 1,
+      "condition": ""
     },
     "duration": {
       "value": "",
       "units": "inst"
     },
     "range": {
-      "value": "",
+      "value": 60,
+      "long": null,
       "units": "ft"
     },
     "target": {
-      "affects": {
-        "type": "",
-        "count": "",
-        "choice": false
-      },
-      "template": {
-        "units": "",
-        "type": "",
-        "size": ""
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-beffa-crudele",
+      "fonte": "D&D 5e PHB p.285",
+      "note_dm": "Vicious Mockery è il cantrip signature del bardo. Danno basso ma disadvantage è potente. Incoraggia creatività negli insulti.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": 60,
+        "save": "wisdom",
+        "danno": "1d4",
+        "danno_tipo": "psychic",
+        "effetto_aggiuntivo": "disadvantage next attack"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Ammaliamento",
+        "level": 0
       }
     }
   }

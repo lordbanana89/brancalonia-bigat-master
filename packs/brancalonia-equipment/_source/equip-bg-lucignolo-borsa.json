@@ -1,6 +1,6 @@
 {
   "_id": "equip-bg-lucignolo-borsa",
-  "_key": "!items!equip-bg-lucignolo-borsa",
+  "_key": "!item!equip-bg-lucignolo-borsa",
   "name": "Borsa",
   "type": "equipment",
   "img": "icons/containers/bags/pouch-simple-leather-brown.webp",

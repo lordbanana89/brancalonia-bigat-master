@@ -1,6 +1,6 @@
 {
   "_id": "spellsuggestione777f3a",
-  "_key": "!items!spellsuggestione777f3a",
+  "_key": "!item!spellsuggestione777f3a",
   "name": "Suggestione",
   "type": "spell",
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
@@ -63,7 +63,7 @@
       "value": null,
       "max": "",
       "per": null,
-      "recovery": []
+      "recovery": ""
     },
     "actionType": "util",
     "attackBonus": "",

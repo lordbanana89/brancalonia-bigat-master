@@ -1,14 +1,15 @@
-2025/09/27-10:03:37.695156 173bbb000 Recovering log #27
-2025/09/27-10:03:37.696033 173bbb000 Delete type=3 #25
-2025/09/27-10:03:37.696093 173bbb000 Delete type=0 #27
-2025/09/27-10:03:37.697951 174453000 Level-0 table #33: started
-2025/09/27-10:03:37.698154 174453000 Level-0 table #33: 4179 bytes OK
-2025/09/27-10:03:37.698218 174453000 Delete type=0 #31
-2025/09/27-10:03:37.698277 174453000 Manual compaction at level-0 from '!items!armi' @ 72057594037927935 : 1 .. '!items!stradetipo' @ 0 : 0; will stop at '!items!stradetipo' @ 452 : 1
-2025/09/27-10:03:37.698282 174453000 Compacting 1@0 + 1@1 files
-2025/09/27-10:03:37.698518 174453000 Generated table #34@0: 116 keys, 5282 bytes
-2025/09/27-10:03:37.698523 174453000 Compacted 1@0 + 1@1 files => 5282 bytes
-2025/09/27-10:03:37.698568 174453000 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/09/27-10:03:37.698598 174453000 Delete type=2 #29
-2025/09/27-10:03:37.698675 174453000 Delete type=2 #33
-2025/09/27-10:03:37.698739 174453000 Manual compaction at level-0 from '!items!stradetipo' @ 452 : 1 .. '!items!stradetipo' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:02.013661 1738ef000 Recovering log #4
+2025/09/27-12:05:02.015153 1738ef000 Delete type=0 #4
+2025/09/27-12:05:02.015184 1738ef000 Delete type=3 #2
+2025/09/27-12:05:02.016693 174187000 Level-0 table #9: started
+2025/09/27-12:05:02.016891 174187000 Level-0 table #9: 5007 bytes OK
+2025/09/27-12:05:02.016989 174187000 Delete type=0 #7
+2025/09/27-12:05:02.017050 174187000 Manual compaction at level-0 from '!journal!bagordiintroduzionedf4797' @ 72057594037927935 : 1 .. '!journal!tabellacrimini3a6e7d' @ 0 : 0; will stop at (end)
+2025/09/27-12:05:02.017071 174187000 Manual compaction at level-1 from '!journal!bagordiintroduzionedf4797' @ 72057594037927935 : 1 .. '!journal!tabellacrimini3a6e7d' @ 0 : 0; will stop at '!journal!tabellacrimini3a6e7d' @ 124 : 1
+2025/09/27-12:05:02.017075 174187000 Compacting 1@1 + 1@2 files
+2025/09/27-12:05:02.017297 174187000 Generated table #10@1: 62 keys, 5007 bytes
+2025/09/27-12:05:02.017304 174187000 Compacted 1@1 + 1@2 files => 5007 bytes
+2025/09/27-12:05:02.017353 174187000 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/27-12:05:02.017381 174187000 Delete type=2 #5
+2025/09/27-12:05:02.017433 174187000 Delete type=2 #9
+2025/09/27-12:05:02.017477 174187000 Manual compaction at level-1 from '!journal!tabellacrimini3a6e7d' @ 124 : 1 .. '!journal!tabellacrimini3a6e7d' @ 0 : 0; will stop at (end)

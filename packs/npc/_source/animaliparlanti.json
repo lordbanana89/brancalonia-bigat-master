@@ -1,6 +1,6 @@
 {
   "_id": "animaliparlantia2bc20",
-  "_key": "!items!animaliparlantia2bc20",
+  "_key": "!item!animaliparlantia2bc20",
   "name": "Animali Parlanti",
   "type": "npc",
   "img": "icons/creatures/mammals/wolf-howl.webp",
@@ -143,7 +143,7 @@
         "custom": ""
       },
       "environment": "",
-      "cr": 0,
+      "cr": 0.25,
       "spellLevel": 0,
       "xp": {
         "value": 0

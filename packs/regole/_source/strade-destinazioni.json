@@ -1,0 +1,20 @@
+{
+  "_id": "stradedestinazioni51a1fe",
+  "_key": "!journal!stradedestinazioni51a1fe",
+  "name": "Dove va la strada",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "strade-destinazioni",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "87"
+      }
+    }
+  }
+}

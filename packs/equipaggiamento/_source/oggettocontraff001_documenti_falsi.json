@@ -1,9 +1,9 @@
 {
   "_id": "oggettocontraff001documentifalsi80fe73",
-  "_key": "!items!oggettocontraff001documentifalsi80fe73",
+  "_key": "!item!oggettocontraff001documentifalsi80fe73",
   "name": "Documenti Falsi",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Set di pergamene contraffatte che imitano permessi, contratti o lettere credenziali ufficiali.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

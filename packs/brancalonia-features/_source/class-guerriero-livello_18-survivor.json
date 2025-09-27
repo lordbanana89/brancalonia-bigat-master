@@ -124,7 +124,7 @@
   "name": "Survivor",
   "img": "icons/magic/life/heart-cross-strong-flame-purple.webp",
   "_id": "class-guerriero-livello_18-survivor",
-  "_key": "!items!class-guerriero-livello_18-survivor",
+  "_key": "!item!class-guerriero-livello_18-survivor",
   "ownership": {
     "default": 0
   },

@@ -1,0 +1,39 @@
+{
+  "_id": "sistemarissa72a9a6",
+  "_key": "!journal!sistemarissa72a9a6",
+  "name": "Regola",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "sistemarissa72a9a6page1",
+      "name": "Pagina",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<p>Sistema di combattimento non letale per scontri da taverna</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "categoria": "sistema_rissa",
+      "fonte": "Manuale Base p.51-56"
+    }
+  }
+}

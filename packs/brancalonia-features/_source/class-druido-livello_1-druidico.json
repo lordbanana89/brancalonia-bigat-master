@@ -62,7 +62,7 @@
   "name": "Druidico",
   "img": "icons/magic/nature/root-vine-entangled-green.webp",
   "_id": "class-druido-livello_1-druidico",
-  "_key": "!items!class-druido-livello_1-druidico",
+  "_key": "!item!class-druido-livello_1-druidico",
   "ownership": {
     "default": 0
   },

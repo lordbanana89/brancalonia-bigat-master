@@ -75,7 +75,7 @@
   "name": "Archetipo Ranger",
   "img": "icons/sundries/flags/banner-flag-blue.webp",
   "_id": "class-ranger-livello_3-archetipo-ranger",
-  "_key": "!items!class-ranger-livello_3-archetipo-ranger",
+  "_key": "!item!class-ranger-livello_3-archetipo-ranger",
   "ownership": {
     "default": 0
   },

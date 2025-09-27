@@ -1,9 +1,9 @@
 {
   "_id": "VqSVoJr6pzsJVJ4h",
-  "_key": "!items!VqSVoJr6pzsJVJ4h",
+  "_key": "!item!VqSVoJr6pzsJVJ4h",
   "name": "Ambulante - Difetti",
   "img": "icons/svg/d20-grey.svg",
-  "formula": "d6",
+  "formula": "1d6",
   "replacement": true,
   "displayRoll": true,
   "results": [
@@ -17,7 +17,8 @@
         1,
         1
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Sez7FNOydBDsySTW"
     },
     {
       "_id": "1tH2E08Va3KZgxvA",
@@ -29,7 +30,8 @@
         2,
         2
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!1tH2E08Va3KZgxvA"
     },
     {
       "_id": "Fwg78Ty5P8An7evL",
@@ -41,7 +43,8 @@
         3,
         3
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!Fwg78Ty5P8An7evL"
     },
     {
       "_id": "m8WMX9kwfAKfeMxp",
@@ -53,7 +56,8 @@
         4,
         4
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!m8WMX9kwfAKfeMxp"
     },
     {
       "_id": "KgVAnHpX9K0coU6U",
@@ -65,7 +69,8 @@
         5,
         5
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!KgVAnHpX9K0coU6U"
     },
     {
       "_id": "kwwzKuLHRj1KXBMg",
@@ -77,13 +82,17 @@
         6,
         6
       ],
-      "drawn": false
+      "drawn": false,
+      "_key": "!results!kwwzKuLHRj1KXBMg"
     }
   ],
   "flags": {
     "brancalonia": {
       "background": "ambulante",
       "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
     }
   },
   "folder": null,

@@ -24,7 +24,7 @@
   "name": "Quiete Mentale",
   "img": "icons/magic/control/silhouette-grow-blue.webp",
   "_id": "class-monaco-livello_7-quiete-mentale",
-  "_key": "!items!class-monaco-livello_7-quiete-mentale",
+  "_key": "!item!class-monaco-livello_7-quiete-mentale",
   "ownership": {
     "default": 0
   },

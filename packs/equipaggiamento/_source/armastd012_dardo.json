@@ -1,6 +1,6 @@
 {
   "_id": "armastd012dardo9fd060",
-  "_key": "!items!armastd012dardo9fd060",
+  "_key": "!item!armastd012dardo9fd060",
   "name": "Dardo",
   "type": "weapon",
   "img": "icons/weapons/swords/sword-guard-purple.webp",
@@ -24,9 +24,9 @@
     "equipped": false,
     "weaponType": "simpleM",
     "baseItem": "",
-    "properties": [
-      "thr"
-    ],
+    "properties": {
+      "thr": true
+    },
     "magicalBonus": 0,
     "proficient": true,
     "activation": {

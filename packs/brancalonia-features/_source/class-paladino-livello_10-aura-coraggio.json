@@ -19,7 +19,7 @@
   "name": "Aura del Coraggio",
   "img": "icons/magic/holy/barrier-shield-dome-gold.webp",
   "_id": "class-paladino-livello_10-aura-coraggio",
-  "_key": "!items!class-paladino-livello_10-aura-coraggio",
+  "_key": "!item!class-paladino-livello_10-aura-coraggio",
   "ownership": {
     "default": 0
   },

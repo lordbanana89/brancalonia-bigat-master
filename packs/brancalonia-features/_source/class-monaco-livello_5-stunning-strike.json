@@ -94,7 +94,7 @@
   "name": "Stunning Strike",
   "img": "icons/skills/melee/unarmed-punch-fist.webp",
   "_id": "class-monaco-livello_5-stunning-strike",
-  "_key": "!items!class-monaco-livello_5-stunning-strike",
+  "_key": "!item!class-monaco-livello_5-stunning-strike",
   "ownership": {
     "default": 0
   },

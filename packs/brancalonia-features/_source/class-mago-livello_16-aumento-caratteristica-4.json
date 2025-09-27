@@ -22,7 +22,7 @@
   "name": "Aumento Caratteristica 4",
   "img": "icons/magic/control/buff-flight-wings-blue.webp",
   "_id": "class-mago-livello_16-aumento-caratteristica-4",
-  "_key": "!items!class-mago-livello_16-aumento-caratteristica-4",
+  "_key": "!item!class-mago-livello_16-aumento-caratteristica-4",
   "ownership": {
     "default": 0
   },

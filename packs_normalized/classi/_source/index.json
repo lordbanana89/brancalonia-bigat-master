@@ -49,13 +49,18 @@
     "attunement": 0,
     "hitDice": "d8",
     "hitDiceUsed": 0,
-    "saves": [],
+    "saves": [
+      "str",
+      "dex"
+    ],
     "skills": {
       "number": 2,
       "choices": [],
       "value": []
     },
-    "startingEquipment": ""
+    "startingEquipment": "",
+    "levels": 1,
+    "primaryAbility": "str"
   },
   "effects": [],
   "folder": null,

@@ -1,9 +1,9 @@
 {
   "_id": "gearserv008pedaggiostradalee92d45",
-  "_key": "!items!gearserv008pedaggiostradalee92d45",
+  "_key": "!item!gearserv008pedaggiostradalee92d45",
   "name": "Pedaggio Stradale",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Tariffa tipica per attraversare un ponte o una porta cittadina.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

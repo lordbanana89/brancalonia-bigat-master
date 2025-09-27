@@ -98,7 +98,7 @@
   "name": "Percezione Del Pericolo",
   "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
   "_id": "class-barbaro-livello_2-percezione-del-pericolo",
-  "_key": "!items!class-barbaro-livello_2-percezione-del-pericolo",
+  "_key": "!item!class-barbaro-livello_2-percezione-del-pericolo",
   "ownership": {
     "default": 0
   },

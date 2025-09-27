@@ -1,9 +1,9 @@
 {
   "_id": "gearkit002dotazionedaesploratore117c4b",
-  "_key": "!items!gearkit002dotazionedaesploratore117c4b",
+  "_key": "!item!gearkit002dotazionedaesploratore117c4b",
   "name": "Dotazione da Esploratore",
   "type": "equipment",
-  "img": "systems/dnd5e/icons/items/armor/plate.webp",
+  "img": "icons/equipment/chest/breastplate-metal-copper.webp",
   "system": {
     "description": {
       "value": "<p>Comprende zaino, letto da campo, borraccia, 10 torce, pietra focaia, 10 giorni di razioni e corda di canapa da 15 m.</p>",
@@ -53,12 +53,7 @@
       "dex": null
     },
     "strength": 0,
-    "stealth": false,
-    "speed": {
-      "value": null,
-      "conditions": ""
-    },
-    "proficient": null
+    "stealth": false
   },
   "effects": [],
   "folder": null,

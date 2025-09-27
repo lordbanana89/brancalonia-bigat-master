@@ -110,7 +110,7 @@
   "name": "Critico Brutale",
   "img": "icons/skills/melee/strike-slashes-triple-red.webp",
   "_id": "class-barbaro-livello_9-critico-brutale",
-  "_key": "!items!class-barbaro-livello_9-critico-brutale",
+  "_key": "!item!class-barbaro-livello_9-critico-brutale",
   "ownership": {
     "default": 0
   },

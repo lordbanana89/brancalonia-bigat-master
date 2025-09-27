@@ -140,7 +140,7 @@
   "name": "Competenze",
   "img": "icons/sundries/gaming/dice-pair-blue.webp",
   "_id": "class-ladro-livello_1-competenze",
-  "_key": "!items!class-ladro-livello_1-competenze",
+  "_key": "!item!class-ladro-livello_1-competenze",
   "ownership": {
     "default": 0
   },

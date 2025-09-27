@@ -22,7 +22,7 @@
   "name": "Aumento Caratteristica 3",
   "img": "icons/magic/control/buff-flight-wings-blue.webp",
   "_id": "class-mago-livello_12-aumento-caratteristica-3",
-  "_key": "!items!class-mago-livello_12-aumento-caratteristica-3",
+  "_key": "!item!class-mago-livello_12-aumento-caratteristica-3",
   "ownership": {
     "default": 0
   },

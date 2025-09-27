@@ -1,0 +1,1110 @@
+{
+  "fixing_timestamp": "2025-09-27T00:00:00Z",
+  "summary": {
+    "tables_analyzed": 81,
+    "structure_fixes": 52,
+    "data_restorations": 1,
+    "formula_fixes": 48,
+    "performance_optimizations": 50,
+    "total_fixes": 151
+  },
+  "table_fixes": [
+    {
+      "table_name": "Impresario - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Brado - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Lucignolo - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Incontri Casuali per Strada",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/incontristrada.json",
+      "issue_type": "structure",
+      "fix_applied": "range_consistency",
+      "results_count": 11
+    },
+    {
+      "table_name": "Brado - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Azzeccagarbugli - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Tempo Atmosferico",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/tempoatmosferico.json",
+      "issue_type": "structure",
+      "fix_applied": "range_consistency",
+      "results_count": 11
+    },
+    {
+      "table_name": "Lucignolo - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Prelato - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Azzeccagarbugli - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Prelato - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Azzeccagarbugli - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Passatore - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Attaccabrighe - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Prelato - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Passatore - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Attaccabrighe - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Brado - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Lucignolo - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Impresario - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Impresario - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Prelato - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Azzeccagarbugli - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Fuggitivo - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-fuggitivo-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Passatore - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Attaccabrighe - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-ideali.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Impresario - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Brado - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Attaccabrighe - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Passatore - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Fuggitivo - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-fuggitivo-tratti-della-personalità.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 8
+    },
+    {
+      "table_name": "Lucignolo - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-legami.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-difetti.json",
+      "issue_type": "structure",
+      "fix_applied": "results_structure",
+      "results_count": 6
+    },
+    {
+      "table_name": "Tables",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/tables.json",
+      "issue_type": "restoration",
+      "fix_applied": "restored_from_database",
+      "results_count": 1366
+    },
+    {
+      "table_name": "Impresario - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Brado - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Lucignolo - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Brado - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Azzeccagarbugli - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Lucignolo - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Prelato - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Azzeccagarbugli - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Prelato - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Azzeccagarbugli - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Passatore - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Attaccabrighe - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Prelato - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Passatore - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Attaccabrighe - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Brado - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Lucignolo - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Impresario - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Impresario - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Prelato - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Azzeccagarbugli - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Innamorato - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Passatore - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Attaccabrighe - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-ideali.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Impresario - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Brado - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Attaccabrighe - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Passatore - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-tratti-della-personalità.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 8
+    },
+    {
+      "table_name": "Lucignolo - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-legami.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-difetti.json",
+      "issue_type": "formula",
+      "fix_applied": "formula_validation",
+      "results_count": 6
+    },
+    {
+      "table_name": "Impresario - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Brado - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Lucignolo - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Brado - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Azzeccagarbugli - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Lucignolo - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Prelato - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Azzeccagarbugli - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Prelato - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Azzeccagarbugli - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Passatore - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Attaccabrighe - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Prelato - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Passatore - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Attaccabrighe - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Brado - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Lucignolo - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Impresario - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Impresario - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Prelato - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-prelato-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Azzeccagarbugli - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-azzeccagarbugli-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Ambulante - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-ambulante-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Fuggitivo - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-fuggitivo-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Passatore - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Attaccabrighe - Ideali",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-ideali.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Duro - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-duro-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Cacciatore di reliquie - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-cacciatore-di-reliquie-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Impresario - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-impresario-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Brado - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-brado-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Attaccabrighe - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-attaccabrighe-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Passatore - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-passatore-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Fuggitivo - Tratti della Personalità",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-fuggitivo-tratti-della-personalità.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 8
+    },
+    {
+      "table_name": "Lucignolo - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-lucignolo-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Innamorato - Legami",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-innamorato-legami.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    },
+    {
+      "table_name": "Staffetta - Difetti",
+      "file_path": "/Users/erik/Desktop/brancalonia-bigat-master/packs/rollable-tables/_source/bg-staffetta-difetti.json",
+      "issue_type": "optimization",
+      "fix_applied": "performance_optimization",
+      "results_count": 6
+    }
+  ],
+  "template_info": {
+    "d4": {
+      "formula": "1d4",
+      "max_result": 4
+    },
+    "d6": {
+      "formula": "1d6",
+      "max_result": 6
+    },
+    "d8": {
+      "formula": "1d8",
+      "max_result": 8
+    },
+    "d10": {
+      "formula": "1d10",
+      "max_result": 10
+    },
+    "d12": {
+      "formula": "1d12",
+      "max_result": 12
+    },
+    "d20": {
+      "formula": "1d20",
+      "max_result": 20
+    },
+    "d100": {
+      "formula": "1d100",
+      "max_result": 100
+    },
+    "2d6": {
+      "formula": "2d6",
+      "max_result": 12,
+      "min_result": 2
+    },
+    "3d6": {
+      "formula": "3d6",
+      "max_result": 18,
+      "min_result": 3
+    }
+  }
+}

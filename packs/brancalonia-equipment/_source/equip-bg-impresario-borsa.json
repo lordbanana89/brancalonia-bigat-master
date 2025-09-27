@@ -1,6 +1,6 @@
 {
   "_id": "equip-bg-impresario-borsa",
-  "_key": "!items!equip-bg-impresario-borsa",
+  "_key": "!item!equip-bg-impresario-borsa",
   "name": "Borsa",
   "type": "equipment",
   "img": "icons/containers/bags/pouch-simple-leather-brown.webp",

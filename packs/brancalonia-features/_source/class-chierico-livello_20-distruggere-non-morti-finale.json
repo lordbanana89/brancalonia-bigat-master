@@ -56,7 +56,7 @@
   "name": "Distruggere Non Morti Finale",
   "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
   "_id": "class-chierico-livello_20-distruggere-non-morti-finale",
-  "_key": "!items!class-chierico-livello_20-distruggere-non-morti-finale",
+  "_key": "!item!class-chierico-livello_20-distruggere-non-morti-finale",
   "ownership": {
     "default": 0
   },

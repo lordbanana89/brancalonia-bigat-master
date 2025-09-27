@@ -68,7 +68,7 @@
   "name": "Ispirazione Bardica",
   "img": "icons/magic/control/buff-strength-muscle-damage.webp",
   "_id": "class-bardo-livello_1-ispirazione-bardica",
-  "_key": "!items!class-bardo-livello_1-ispirazione-bardica",
+  "_key": "!item!class-bardo-livello_1-ispirazione-bardica",
   "ownership": {
     "default": 0
   },

@@ -1,0 +1,17 @@
+{
+  "_id": "rissamossabasetestata2c3fd7",
+  "_key": "!journal!rissamossabasetestata2c3fd7",
+  "name": "Testata",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-mossa-base-testata",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

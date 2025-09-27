@@ -103,7 +103,7 @@
   "name": "Ira Persistente",
   "img": "icons/magic/control/buff-strength-muscle-damage.webp",
   "_id": "class-barbaro-livello_15-ira-persistente",
-  "_key": "!items!class-barbaro-livello_15-ira-persistente",
+  "_key": "!item!class-barbaro-livello_15-ira-persistente",
   "ownership": {
     "default": 0
   },
