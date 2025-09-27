@@ -1,326 +1,222 @@
-# D&D 5e Technical Implementation Discoveries
+# 📚 D&D 5e Technical Discoveries & Required Fixes
 
-## Executive Summary
+## 🔍 CRITICAL DISCOVERY: ItemGrant Format Issue
 
-Through deep analysis of the official D&D 5e repository (v5.1.9), we've discovered critical technical details about how advancement systems, ItemGrant mechanics, spell progression, and data structures are actually implemented. This analysis provides actionable insights for improving the Brancalonia system.
-
-## Key Technical Discoveries
-
-### 1. ItemGrant Implementation Analysis
-
-#### UUID Format & Structure
-**CRITICAL DISCOVERY**: ItemGrant uses string-based UUID references with the format:
-```javascript
-{
-  uuid: "Compendium.pack.type.id", // String UUID reference
-  optional: false                   // Boolean for optional items
-}
+### Current Brancalonia Implementation (WRONG)
+```json
+"items": ["Compendium.brancalonia.features.Item.id"]
 ```
 
-#### Actual ItemGrant Schema (from source code):
-```javascript
-// ItemGrantConfigurationData schema
-{
-  items: new ArrayField(new SchemaField({
-    uuid: new StringField(),        // Simple string, not complex object
-    optional: new BooleanField()    // Per-item optional flag
-  }), { required: true }),
-  optional: new BooleanField({ required: true }),  // Global optional flag
-  spell: new EmbeddedDataField(SpellConfigurationData, {
-    required: true, nullable: true, initial: null
-  })
-}
-```
-
-**Migration Pattern Discovered**:
-```javascript
-static migrateData(source) {
-  if ( "items" in source ) {
-    // Convert old string format to new object format
-    source.items = source.items.map(i =>
-      foundry.utils.getType(i) === "string" ? { uuid: i } : i
-    );
+### D&D 5e v5.1.9 Correct Format
+```json
+"items": [
+  {
+    "uuid": "Compendium.brancalonia.features.Item.id",
+    "optional": false
   }
-  return source;
-}
+]
 ```
 
-### 2. Advancement System Architecture
+**Impact**: ItemGrant advancements are NOT applying features to characters because the format is incorrect.
 
-#### Core Advancement Types (from _module.mjs):
-- `BaseAdvancement` - Foundation class
-- `AbilityScoreImprovement` - ASI handling
-- `ItemChoice` - Multiple item selection
-- `ItemGrantConfigurationData` - Single/multiple item grants
-- `ScaleValue` - Level-based scaling values
-- `Size` - Size changes
-- `Trait` - Feature/trait grants
-- `Subclass` - Subclass selection
-- `SpellConfigurationData` - Spell modifications
+## 🎯 Missing Advancement Types
 
-#### Advancement Data Structure:
-```javascript
-this.advancement = {
-  byId: {},                    // Advancement objects by ID
-  byLevel: {},                // Arrays of advancements by level
-  byType: {},                 // Arrays by advancement type
-  needingConfiguration: []    // Unconfigured advancements
-};
-```
+### Currently Implemented
+- ✅ ItemGrant (but with wrong format)
+- ✅ AbilityScoreImprovement
+- ✅ HitPoints
+- ✅ Size (races only)
 
-### 3. Spell Progression Implementation
+### MISSING Critical Types
+1. **ScaleValue** - Required for:
+   - Barbarian Rage uses (2→∞)
+   - Rogue Sneak Attack (1d6→10d6)
+   - Monk Ki points
+   - Cantrips known
+   - Channel Divinity uses
 
-#### Spellcasting Configuration:
-```javascript
-// From discovered data structure
-spellcasting: {
-  progression: "full" | "half" | "third" | "none",
-  ability: "int" | "wis" | "cha"
-}
-```
+2. **Trait** - Required for:
+   - Weapon proficiencies
+   - Saving throw proficiencies
+   - Skill proficiencies at level 1
 
-#### Advanced Spell Configuration Features:
-- `SpellConfigurationData` embedded in ItemGrant for spell modifications
-- Support for spell preparation modes
-- Concentration tracking and management
-- Ritual casting capabilities
+3. **ItemChoice** - Required for:
+   - Fighting Style selection
+   - Spell selection (Warlock, Ranger)
+   - Metamagic options
 
-### 4. Scale Value System
+4. **Subclass** - Required for:
+   - All classes at specific levels (1-3 varies)
 
-#### Scale Value Types Discovered:
-```javascript
-const TYPES = {
-  string: ScaleValueType,           // Generic string values
-  number: ScaleValueTypeNumber,     // Numeric values
-  cr: ScaleValueTypeCR,            // Challenge Rating values
-  dice: ScaleValueTypeDice,        // Dice notation (e.g., "2d6")
-  distance: ScaleValueTypeDistance // Distance with units
-};
-```
+## 📊 Spell Progression Analysis
 
-#### Scale Value Schema:
-```javascript
-{
-  identifier: new IdentifierField({ required: true }),
-  type: new StringField({ required: true, initial: "string", choices: TYPES }),
-  distance: new SchemaField({ units: new StringField({ required: true }) }),
-  scale: new MappingField(new ScaleValueEntryField(), { required: true })
-}
-```
+### Current Status
+- **0 classes** have spell progression configured
+- **Spellcasting field**: Present but empty/incorrect
 
-### 5. Data Migration Patterns
-
-#### Version Migration Strategy:
-```javascript
-// Automatic data migration on load
-static migrateData(source) {
-  if ( source.type === "numeric" ) source.type = "number";
-  Object.values(source.scale ?? {}).forEach(v =>
-    TYPES[source.type].migrateData(v)
-  );
-}
-```
-
-### 6. System Architecture Insights
-
-#### Pack Structure:
-- **Binary Packs**: Data stored in `.db` files, not JSON
-- **Modern vs Legacy**: Separate content folders (SRD 5.1 vs SRD 5.2)
-- **Source Books**: Structured organization with `sourceBook` flags
-
-#### Document Types Hierarchy:
-```javascript
-documentTypes: {
-  Item: {
-    "race", "background", "class", "subclass", "feat",
-    "weapon", "equipment", "spell", "consumable", "tool",
-    "loot", "container", "facility"
-  },
-  Actor: {
-    "character", "npc", "vehicle", "group", "encounter"
+### Required Configuration
+```json
+"spellcasting": {
+  "progression": "full",  // or half, third, pact
+  "ability": "int",       // or wis, cha
+  "preparation": {
+    "mode": "prepared",
+    "formula": "@abilities.int.mod + @classes.wizard.levels"
   }
 }
 ```
 
-## Critical Implementation Differences vs Brancalonia
+### Classes Needing Spell Progression
+| Class | Progression | Ability | Mode |
+|-------|-------------|---------|------|
+| Mago (Wizard) | full | int | prepared |
+| Chierico (Cleric) | full | wis | prepared |
+| Druido (Druid) | full | wis | prepared |
+| Bardo (Bard) | full | cha | known |
+| Stregone (Sorcerer) | full | cha | known |
+| Warlock | pact | cha | known |
+| Paladino (Paladin) | half | cha | prepared |
+| Ranger | half | wis | known |
 
-### 1. ItemGrant Structure
-**Current Brancalonia**:
-```javascript
-"uuid": "Compendium.brancalonia.brancalonia-features.Item.feat-bg-ambulante"
+## 🔢 Advancement Count Analysis
+
+### Current Advancement Count
+- Average: 6-8 advancements per class
+- Most are ASI and HitPoints
+
+### Required for D&D 5e Compliance
+- Minimum: 25-30 advancements per class
+- ItemGrant for EVERY feature at EVERY level
+- ScaleValue for ALL scaling features
+
+### Example: Barbarian Should Have
+- Level 1: Rage (ItemGrant), Unarmored Defense (ItemGrant), HitPoints, Trait (proficiencies)
+- Level 2: Reckless Attack (ItemGrant), Danger Sense (ItemGrant)
+- Level 3: Subclass
+- Level 4: ASI
+- Level 5: Extra Attack (ItemGrant), Fast Movement (ItemGrant)
+- Plus ScaleValue for Rage uses: 2 (L1), 3 (L3), 4 (L6), 5 (L12), 6 (L17), ∞ (L20)
+
+## 🎲 RollTable Structure
+
+### Current Implementation
+```json
+{
+  "results": [
+    {
+      "_id": "abc123",
+      "type": 0,
+      "text": "Result text",
+      "weight": 1,
+      "range": [1, 1],
+      "drawn": false
+    }
+  ]
+}
 ```
 
-**Official D&D 5e**: ✅ **Identical format** - our implementation is correct!
+### Status
+- Structure: ✅ Correct
+- Content: ✅ Populated (776 results across 81 tables)
+- Loading: ❓ Needs in-game verification
 
-### 2. Advancement Organization
-**Discovery**: D&D 5e uses sophisticated advancement categorization:
-- By level (`byLevel`)
-- By type (`byType`)
-- By ID (`byId`)
-- Needing configuration tracking
+## 🔗 UUID Validation
 
-### 3. Scale Values
-**Missing in Brancalonia**: The powerful scale value system that allows:
-- Level-based progression of any value type
-- Dice scaling (e.g., "1d4" at level 1, "2d4" at level 5)
-- Distance scaling with units
-- String template scaling
+### Format Requirements
+- Pattern: `Compendium.{scope}.{pack}.{documentType}.{id}`
+- DocumentType: Usually "Item" for features
+- Example: `Compendium.brancalonia.brancalonia-features.Item.abc123`
 
-### 4. Spell Integration
-**D&D 5e Advantage**: Deep integration between ItemGrant and spell configuration
-- Spell modification data embedded in ItemGrant
-- Automatic spell preparation handling
-- Concentration management
+### Current Status
+- Format: ✅ Correct
+- References: ⚠️ Many features don't exist yet
+- Validation: Need to create missing feature items
 
-## Recommended Improvements for Brancalonia
+## 📋 Priority Fix Order
 
-### 1. Implement Scale Value System
-```javascript
-// Add to class advancement
+### PHASE 1: Fix Critical Issues
+1. Convert ALL ItemGrant to object format with uuid
+2. Add Trait advancement to ALL classes (level 1)
+3. Add spellcasting configuration to caster classes
+
+### PHASE 2: Add Missing Types
+1. Implement ScaleValue for scaling features
+2. Add Subclass advancement at appropriate levels
+3. Implement ItemChoice for options
+
+### PHASE 3: Complete Features
+1. Create ALL missing feature items
+2. Add ItemGrant for EVERY class feature
+3. Link with correct UUIDs
+
+### PHASE 4: Validation
+1. Test character creation
+2. Verify advancement application
+3. Check spell slot progression
+4. Validate drag & drop
+
+## 🛠 Technical Implementation Notes
+
+### ItemGrant Fix Script
+```python
+# Convert string to object format
+if isinstance(item, str):
+    item = {
+        "uuid": item,
+        "optional": False
+    }
+```
+
+### ScaleValue Example
+```json
 {
-  "_id": "ScaleValue.rageUses",
   "type": "ScaleValue",
   "configuration": {
     "identifier": "rage-uses",
-    "type": "number",
-    "scale": {
-      "1": { "value": 2 },
-      "3": { "value": 3 },
-      "6": { "value": 4 },
-      "12": { "value": 5 },
-      "17": { "value": 6 },
-      "20": { "value": 999 }
-    }
+    "type": "number"
+  },
+  "value": {
+    "1": 2,
+    "3": 3,
+    "6": 4,
+    "12": 5,
+    "17": 6,
+    "20": null  // Unlimited
   }
 }
 ```
 
-### 2. Enhanced ItemGrant Configuration
-```javascript
-// Add spell configuration support
+### Spell Progression Advancement
+```json
 {
-  "type": "ItemGrant",
-  "configuration": {
-    "items": [
-      {
-        "uuid": "Compendium.brancalonia.spells.Item.benedizione",
-        "optional": false
-      }
-    ],
-    "optional": false,
-    "spell": {
-      "preparation": "always",
-      "ability": "wis"
-    }
+  "type": "SpellcastingValue",
+  "configuration": {},
+  "value": {
+    "1": [2, 0, 0, 0, 0, 0, 0, 0, 0],
+    "2": [3, 0, 0, 0, 0, 0, 0, 0, 0],
+    "3": [4, 2, 0, 0, 0, 0, 0, 0, 0]
   }
 }
 ```
 
-### 3. Advancement Organization
-```javascript
-// Add advancement processing system
-_prepareAdvancement() {
-  this.advancement = {
-    byId: {},
-    byLevel: Array.fromRange(21).reduce((obj, l) => { obj[l] = []; return obj; }, {}),
-    byType: {},
-    needingConfiguration: []
-  };
-  // Process advancement arrays...
-}
-```
+## ⚠️ DO NOT
 
-### 4. Data Migration Support
-```javascript
-// Add migration patterns for backwards compatibility
-static migrateData(source) {
-  // Handle old string-only ItemGrant format
-  if ("items" in source && Array.isArray(source.items)) {
-    source.items = source.items.map(item =>
-      typeof item === "string" ? { uuid: item, optional: false } : item
-    );
-  }
-  return source;
-}
-```
+1. **DO NOT** remove existing content
+2. **DO NOT** declare completion without testing
+3. **DO NOT** use percentages without real metrics
+4. **DO NOT** skip advancement levels
+5. **DO NOT** ignore UUID validation
 
-## Spell Progression Implementation Guide
+## ✅ MUST DO
 
-### Full Caster (Mago):
-```javascript
-spellcasting: {
-  progression: "full",
-  ability: "int"
-}
-```
-
-### Half Caster (Paladino):
-```javascript
-spellcasting: {
-  progression: "half",
-  ability: "cha"
-}
-```
-
-### Third Caster (Arcane Trickster):
-```javascript
-spellcasting: {
-  progression: "third",
-  ability: "int"
-}
-```
-
-## RollTable Structure (Limited Discovery)
-
-Based on system.json analysis:
-- RollTables stored in binary format in packs
-- Support for weighted results
-- Integration with dice formulas
-- Ownership and permission controls
-
-## Performance & Architecture Notes
-
-### 1. Module Structure
-- Clean separation between data models and documents
-- Extensive use of mixins for shared functionality
-- Template-based inheritance for item types
-
-### 2. Data Validation
-- Schema-based validation with Foundry data fields
-- Type checking and automatic coercion
-- Migration support for version upgrades
-
-### 3. Localization
-- Centralized localization prefixes
-- Hierarchical language key organization
-- Support for multiple source books
-
-## Action Items for Brancalonia
-
-### High Priority
-1. ✅ **ItemGrant format is correct** - no changes needed
-2. 🔧 **Implement Scale Value advancement type**
-3. 🔧 **Add advancement organization system**
-4. 🔧 **Enhance spell integration in ItemGrant**
-
-### Medium Priority
-1. 📊 **Add data migration support**
-2. 🏗️ **Implement advancement by level/type indexing**
-3. 🎯 **Add dice-based scale values**
-
-### Low Priority
-1. 📚 **Source book organization**
-2. 🎨 **Enhanced localization structure**
-3. 🔍 **RollTable integration improvements**
-
-## Conclusion
-
-The D&D 5e system demonstrates sophisticated advancement management with powerful scaling systems and flexible ItemGrant mechanics. Our current Brancalonia implementation aligns well with the UUID format, but could benefit significantly from implementing scale values and enhanced advancement organization.
-
-The most impactful improvement would be adding the Scale Value system, which would enable level-based progression for features like Barbarian rage uses, Monk ki points, and spell slot scaling.
+1. **MUST** test every change in Foundry
+2. **MUST** validate JSON structure
+3. **MUST** create feature items before referencing
+4. **MUST** follow D&D 5e v5.1.9 standards
+5. **MUST** document every technical change
 
 ---
 
-*Analysis completed: 2025-09-27*
-*Source: D&D 5e System v5.1.9*
-*Repository: https://github.com/foundryvtt/dnd5e/tree/release-5.1.9*
+**Last Updated**: 2025-09-27T02:06:00
+**D&D 5e Version**: 5.1.9
+**Foundry Version**: v13
