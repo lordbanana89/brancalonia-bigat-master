@@ -72,12 +72,16 @@ Hooks.once("init", () => {
 
 // Sopprimi warning di deprecazione specifici
 const originalWarn = console.warn;
+const originalLogCompat = foundry.utils?.logCompatibilityWarning || console.warn;
+
+// Override console.warn
 console.warn = function(...args) {
     const message = args.join(' ');
 
     // Sopprimi warning V1 Application framework
     if (message.includes("V1 Application framework is deprecated") ||
-        message.includes("Please use the V2 version of the Application framework")) {
+        message.includes("Please use the V2 version of the Application framework") ||
+        message.includes("ApplicationV2")) {
         return; // Non mostrare questi warning
     }
 
@@ -109,5 +113,21 @@ console.warn = function(...args) {
 
     return originalWarn.apply(console, args);
 };
+
+// Override anche logCompatibilityWarning se esiste
+if (foundry.utils?.logCompatibilityWarning) {
+    foundry.utils.logCompatibilityWarning = function(...args) {
+        const message = args.join(' ');
+
+        // Sopprimi gli stessi warning
+        if (message.includes("V1 Application framework") ||
+            message.includes("ApplicationV2") ||
+            message.includes("will be removed in Version 16")) {
+            return;
+        }
+
+        return originalLogCompat.apply(this, args);
+    };
+}
 
 console.log("Brancalonia | v13 Compatibility Layer completato");
