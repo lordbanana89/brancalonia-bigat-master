@@ -144,6 +144,20 @@ Hooks.once("init", () => {
 
   // Fix per altri moduli problematici
   checkAndFixOtherModules();
+
+  // Fix per Tidbits
+  if (game.modules.get("tidbits")?.active) {
+    console.warn("⚠️ Tidbits detected - Applying compatibility fix");
+
+    // Tidbits cerca showLoadingScreen che potrebbe non esistere
+    if (typeof ui !== 'undefined' && !ui.showLoadingScreen) {
+      ui.showLoadingScreen = function(show = true) {
+        console.debug("🔧 Compatibility stub for ui.showLoadingScreen");
+        return Promise.resolve();
+      };
+      console.log("✅ Added stub for ui.showLoadingScreen");
+    }
+  }
 });
 
 // ============================================
@@ -152,6 +166,31 @@ Hooks.once("init", () => {
 
 function checkAndFixOtherModules() {
   const incompatibleModules = [
+    {
+      id: "tidbits",
+      name: "Tidbits",
+      fix: () => {
+        console.log("🔧 Fixing Tidbits compatibility issues");
+
+        // Aggiungi metodi mancanti che Tidbits potrebbe cercare
+        if (typeof ui !== 'undefined') {
+          if (!ui.showLoadingScreen) {
+            ui.showLoadingScreen = (show = true) => Promise.resolve();
+          }
+          if (!ui.hideLoadingScreen) {
+            ui.hideLoadingScreen = () => Promise.resolve();
+          }
+        }
+
+        // Fix per canvasInit
+        Hooks.on("canvasInit", () => {
+          if (typeof ui !== 'undefined' && !ui.showLoadingScreen) {
+            ui.showLoadingScreen = () => Promise.resolve();
+            console.log("✅ Late fix for Tidbits showLoadingScreen");
+          }
+        });
+      }
+    },
     {
       id: "drag-ruler",
       name: "Drag Ruler",
@@ -255,6 +294,7 @@ Hooks.once("ready", () => {
   // Lista moduli noti per essere incompatibili con v13
   const knownIncompatible = [
     'power-select-toolkit',
+    'tidbits',
     'cursor-hider',
     'grape-juice-premium',
     'token-hud-wildcard'
