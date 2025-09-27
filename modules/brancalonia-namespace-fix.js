@@ -27,6 +27,23 @@ Hooks.once("init", () => {
     { old: 'PlayerList', new: 'foundry.applications.ui.PlayerList' },
     { old: 'CombatTracker', new: 'foundry.applications.ui.CombatTracker' },
 
+    // Sidebar Tabs
+    { old: 'SceneDirectory', new: 'foundry.applications.sidebar.tabs.SceneDirectory' },
+    { old: 'ActorDirectory', new: 'foundry.applications.sidebar.tabs.ActorDirectory' },
+    { old: 'ItemDirectory', new: 'foundry.applications.sidebar.tabs.ItemDirectory' },
+    { old: 'JournalDirectory', new: 'foundry.applications.sidebar.tabs.JournalDirectory' },
+    { old: 'PlaylistDirectory', new: 'foundry.applications.sidebar.tabs.PlaylistDirectory' },
+    { old: 'CompendiumDirectory', new: 'foundry.applications.sidebar.tabs.CompendiumDirectory' },
+    { old: 'CardsDirectory', new: 'foundry.applications.sidebar.tabs.CardsDirectory' },
+    { old: 'MacroDirectory', new: 'foundry.applications.sidebar.tabs.MacroDirectory' },
+
+    // Interaction Helpers
+    { old: 'KeyboardManager', new: 'foundry.helpers.interaction.KeyboardManager' },
+    { old: 'MouseInteractionManager', new: 'foundry.helpers.interaction.MouseInteractionManager' },
+
+    // Apps
+    { old: 'DocumentSheetConfig', new: 'foundry.applications.apps.DocumentSheetConfig' },
+
     // Canvas Placeables
     { old: 'Token', new: 'foundry.canvas.placeables.Token' },
     { old: 'Tile', new: 'foundry.canvas.placeables.Tile' },
