@@ -27,8 +27,32 @@ export class ThemeConfig extends FormApplication {
   }
 
   getData() {
+    // Funzione helper per rimuovere alpha channel dai colori
+    const stripAlpha = (color) => {
+      if (!color) return '#000000';
+      // Se il colore ha 8 o 9 caratteri (con alpha), prendi solo i primi 7
+      if (color.length > 7) {
+        return color.substring(0, 7);
+      }
+      return color;
+    };
+
+    // Crea una copia del tema con colori processati per input HTML
+    const processedTheme = {
+      colors: {},
+      images: this.theme.images || {},
+      advanced: this.theme.advanced || ''
+    };
+
+    // Processa tutti i colori
+    for (const [key, value] of Object.entries(this.theme.colors || {})) {
+      processedTheme.colors[key] = value;
+      // Aggiungi versione senza alpha per input color
+      processedTheme.colors[key + '_noAlpha'] = stripAlpha(value);
+    }
+
     return {
-      theme: this.theme,
+      theme: processedTheme,
       presets: Object.keys(THEMES).map(key => ({
         id: key,
         name: key.charAt(0).toUpperCase() + key.slice(1)
