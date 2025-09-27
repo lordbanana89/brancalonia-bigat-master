@@ -7,6 +7,39 @@
 console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules");
 
 // ============================================
+// FIX IMMEDIATO PER POWER SELECT TOOLKIT
+// ============================================
+
+// DEVE essere fatto SUBITO, non in un hook
+(function() {
+  // Se Power Select Toolkit è attivo, crea SUBITO gli stub
+  if (typeof Canvas !== 'undefined' && Canvas.prototype) {
+    console.log("🚨 Pre-emptive fix for Power Select Toolkit");
+
+    // Lista completa di TUTTI i metodi che PST potrebbe cercare
+    const allPossibleMethods = [
+      '_onDragLeftStart', '_onDragLeftMove', '_onDragLeftDrop', '_onDragLeftCancel',
+      '_onDragSelect', '_onDragRightStart', '_onDragRightMove', '_onDragRightDrop',
+      '_onDragRightCancel', '_onClickLeft', '_onClickLeft2', '_onClickRight',
+      '_onClickRight2', '_handleMouseDown', '_handleMouseUp', '_handleMouseMove',
+      '_handleRightDown', '_handleRightUp', '_handleDragStart', '_handleDragMove',
+      '_handleDragDrop', '_handleDragCancel'
+    ];
+
+    allPossibleMethods.forEach(method => {
+      if (!Canvas.prototype[method]) {
+        Canvas.prototype[method] = function(event) {
+          console.debug(`🔧 Pre-emptive stub for ${method}`);
+          return false;
+        };
+      }
+    });
+
+    console.log("✅ Pre-emptive stubs created for Canvas methods");
+  }
+})();
+
+// ============================================
 // FIX PER POWER SELECT TOOLKIT
 // ============================================
 
@@ -31,12 +64,26 @@ Hooks.once("init", () => {
         console.log("✅ Added stub for Canvas.prototype._onDragLeftCancel");
       }
 
-      // Altri metodi che potrebbero mancare
+      // TUTTI i metodi che Power Select Toolkit cerca
       const missingMethods = [
         '_onDragLeftStart',
         '_onDragLeftMove',
         '_onDragLeftDrop',
-        '_onDragLeftCancel'
+        '_onDragLeftCancel',
+        '_onDragSelect',           // AGGIUNTO
+        '_onClickLeft',
+        '_onClickLeft2',
+        '_onClickRight',
+        '_onClickRight2',
+        '_onDragRightStart',
+        '_onDragRightMove',
+        '_onDragRightDrop',
+        '_onDragRightCancel',
+        '_handleMouseDown',
+        '_handleMouseUp',
+        '_handleMouseMove',
+        '_handleRightDown',
+        '_handleRightUp'
       ];
 
       missingMethods.forEach(method => {
