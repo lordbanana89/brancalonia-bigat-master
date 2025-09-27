@@ -90,10 +90,12 @@ Hooks.on("preUpdateItem", (document, changes, options, userId) => {
     }
 });
 
-// Hook per chat messages
-Hooks.on("renderChatMessage", (message, html, data) => {
+// Hook per chat messages (v13 compatible)
+Hooks.on("renderChatMessageHTML", (message, html) => {
     // Sostituisci immagini mancanti nei messaggi chat
-    html.find('img').each((i, img) => {
+    // html è ora un HTMLElement invece di jQuery
+    const images = html.querySelectorAll('img');
+    images.forEach(img => {
         if (img.src.includes('breastplate-metal-copper.webp')) {
             img.src = 'icons/equipment/chest/breastplate-steel.webp';
             img.onerror = null;

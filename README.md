@@ -7,15 +7,21 @@
 ## 🔧 STATO TECNICO ATTUALE (2025-09-27)
 
 ### 📊 COMPILAZIONE PACK
-- **12/13 pack compilano correttamente** con FVTT CLI v3.0.0
-- Pack funzionanti: razze, classi, sottoclassi, talenti, incantesimi, equipaggiamento, brancalonia-features, backgrounds, emeriticenze, npc, macro, rollable-tables
-- Pack con problemi: regole (errore LEVEL_INVALID_KEY)
+- **13/13 pack compilano correttamente** con FVTT CLI v3.0.0
+- Tutti i pack sono completamente funzionanti
+- Nessun errore di compilazione
 
-### 🛠️ CORREZIONI APPLICATE
+### 🛠️ CORREZIONI APPLICATE (v3.27.0)
 - **1175 file** con formato _key corretto (!items! → !item!)
 - **302 duplicati** rimossi dai pack
 - **424 fix automatici** applicati dagli agent
 - **62 journal entries** con type field aggiunto
+- **Fix Foundry v13 Compatibility**: Namespace deprecati corretti
+- **Fix DataModel Validation**: Gestione automatica strength e altri campi numerici
+- **Fix Font Awesome Icons**: Sistema completo per icone mancanti
+- **Fix Immagini 404**: Fallback automatico per immagini mancanti
+- **Fix Polygon Lighting**: Soppressione warning out of bounds
+- **Fix Hook Deprecati**: Aggiornamento a renderChatMessageHTML
 
 ### 📈 TEST REPORT
 - Test eseguiti: **2519**
