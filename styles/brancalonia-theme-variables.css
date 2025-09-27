@@ -1,0 +1,172 @@
+/**
+ * Brancalonia Theme - System Variables
+ * Basato sulla struttura di ProjectFU Theme
+ * Definisce tutte le variabili del tema pergamena rinascimentale
+ */
+
+/* Font personalizzati */
+@font-face {
+  font-family: "Cinzel";
+  src: url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap");
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  src: url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap");
+}
+
+:root {
+  /* === CONTROLS === */
+  /* Bottoni e controlli generali */
+  --branca-color-control-content: #3E2723;
+  --branca-color-control-border: #C9A961;
+  --branca-color-control-focus-content: #1A0E0A;
+  --branca-color-control-inactive-content: #3E272380;
+  --branca-color-control-fill-1: #D4C4A0;
+  --branca-color-control-fill-2: #E8DCC0;
+  --branca-color-control-fill: linear-gradient(180deg, var(--branca-color-control-fill-1) 0%, var(--branca-color-control-fill-2) 100%);
+
+  /* Controlli highlight */
+  --branca-color-control-highlight-content: #8B2635;
+  --branca-color-control-highlight-border: #B87333;
+  --branca-color-control-highlight-fill-1: #C9A961;
+  --branca-color-control-highlight-fill-2: #D4B576;
+  --branca-color-control-highlight-fill: linear-gradient(0deg, var(--branca-color-control-highlight-fill-1) 0%, var(--branca-color-control-highlight-fill-2) 100%);
+
+  /* Controlli attivi */
+  --branca-color-control-active-content: #FFFFFF;
+  --branca-color-control-active-border: #8B2635;
+  --branca-color-control-active-fill-1: #8B2635;
+  --branca-color-control-active-fill-2: #A43343;
+  --branca-color-control-active-fill: linear-gradient(0deg, var(--branca-color-control-active-fill-1) 0%, var(--branca-color-control-active-fill-2) 100%);
+
+  --branca-control-shadow: 0 2px 4px rgba(62, 39, 35, 0.3);
+
+  /* === APPLICATIONS === */
+  /* Header finestre */
+  --branca-color-app-header-content: #E8DCC0;
+  --branca-color-app-header-focus-content: #FFFFFF;
+  --branca-color-app-header-fill-1: #8B2635;
+  --branca-color-app-header-fill-2: #B87333;
+  --branca-color-app-header-fill: linear-gradient(90deg, var(--branca-color-app-header-fill-1) 0%, var(--branca-color-app-header-fill-2) 100%);
+
+  /* Body applicazioni */
+  --branca-color-app-body-content: #3E2723;
+  --branca-color-app-body-content-secondary: #5D4037;
+  --branca-color-app-body-primary-fill-1: #D4C4A0E6;
+  --branca-color-app-body-primary-fill-2: #E8DCC0E6;
+  --branca-color-app-body-primary-fill: linear-gradient(270deg, var(--branca-color-app-body-primary-fill-1) 0%, var(--branca-color-app-body-primary-fill-2) 100%);
+  --branca-color-app-border: #C9A961;
+
+  /* Name section (titoli personaggi) */
+  --branca-color-app-name-section-content: #E8DCC0;
+  --branca-color-app-name-section-shadow: #000000;
+  --branca-color-app-name-section-fill-1: #8B2635;
+  --branca-color-app-name-section-fill-2: #B87333;
+  --branca-color-app-name-section-fill: linear-gradient(90deg, var(--branca-color-app-name-section-fill-1) 0%, var(--branca-color-app-name-section-fill-2) 100%);
+
+  /* Controlli applicazioni */
+  --branca-color-app-control-content: #3E2723;
+  --branca-color-app-control-content-shadow: #00000080;
+  --branca-color-app-control-border: #C9A961;
+  --branca-color-app-control-shadow: rgba(62, 39, 35, 0.2);
+  --branca-color-app-control-fill-1: #D4C4A0;
+  --branca-color-app-control-fill-2: #E8DCC0;
+  --branca-color-app-control-fill: linear-gradient(0deg, var(--branca-color-app-control-fill-1) 0%, var(--branca-color-app-control-fill-2) 100%);
+  --branca-color-app-control-focus-content: #1A0E0A;
+
+  /* Controlli highlight applicazioni */
+  --branca-color-app-control-highlight-content: #8B2635;
+  --branca-color-app-control-highlight-border: #B87333;
+  --branca-color-app-control-highlight-shadow: rgba(184, 115, 51, 0.3);
+  --branca-color-app-control-highlight-fill-1: #C9A961;
+  --branca-color-app-control-highlight-fill-2: #D4B576;
+  --branca-color-app-control-highlight-fill: linear-gradient(0deg, var(--branca-color-app-control-highlight-fill-1) 0%, var(--branca-color-app-control-highlight-fill-2) 100%);
+
+  /* Controlli attivi applicazioni */
+  --branca-color-app-control-active-content: #FFFFFF;
+  --branca-color-app-control-active-border: #8B2635;
+  --branca-color-app-control-active-shadow: rgba(139, 38, 53, 0.3);
+  --branca-color-app-control-active-fill-1: #8B2635;
+  --branca-color-app-control-active-fill-2: #A43343;
+  --branca-color-app-control-active-fill: linear-gradient(0deg, var(--branca-color-app-control-active-fill-1) 0%, var(--branca-color-app-control-active-fill-2) 100%);
+
+  /* Items e liste */
+  --branca-color-app-item-content: #3E2723;
+  --branca-color-app-item-header-content: #E8DCC0;
+  --branca-color-app-item-header-fill-1: #B87333;
+  --branca-color-app-item-header-fill-2: #C9A961;
+  --branca-color-app-item-header-fill: linear-gradient(to bottom, var(--branca-color-app-item-header-fill-1), var(--branca-color-app-item-header-fill-2));
+  --branca-color-app-item-header-shadow: rgba(62, 39, 35, 0.2);
+  --branca-color-app-item-highlight-border: #C9A961;
+  --branca-color-app-item-highlight-fill-1: #E8DCC0;
+  --branca-color-app-item-highlight-fill-2: #E8DCC000;
+  --branca-color-app-item-highlight-fill: linear-gradient(90deg, var(--branca-color-app-item-highlight-fill-1), var(--branca-color-app-item-highlight-fill-2));
+
+  /* Sezioni */
+  --branca-color-app-section-content-primary: #3E2723;
+  --branca-color-app-section-content-secondary: #5D4037;
+  --branca-color-app-section-content-tertiary: #6B5B3A;
+  --branca-color-app-section-divider: #C9A961;
+  --branca-color-app-section-border: #B87333;
+  --branca-color-app-section-primary-fill-1: #D4C4A0;
+  --branca-color-app-section-primary-fill-2: #E8DCC0B3;
+  --branca-color-app-section-primary-fill: linear-gradient(270deg, var(--branca-color-app-section-primary-fill-1) 0%, var(--branca-color-app-section-primary-fill-2) 100%);
+
+  /* Detail sections */
+  --branca-color-app-detail-section-content-primary: #3E2723;
+  --branca-color-app-detail-section-content-secondary: #5D4037;
+  --branca-color-app-detail-section-content-tertiary: #6B5B3A;
+  --branca-color-app-detail-section-shadow: rgba(62, 39, 35, 0.2);
+  --branca-color-app-detail-section-primary-fill-1: #D4C4A0;
+  --branca-color-app-detail-section-primary-fill-2: #E8DCC0B3;
+  --branca-color-app-detail-section-primary-fill-to-bottom: linear-gradient(to bottom, var(--branca-color-app-detail-section-primary-fill-1), var(--branca-color-app-detail-section-primary-fill-2));
+  --branca-color-app-detail-section-primary-fill-to-right: linear-gradient(to right, var(--branca-color-app-detail-section-primary-fill-1), var(--branca-color-app-detail-section-primary-fill-2));
+
+  /* Scrollbar */
+  --branca-color-app-scrollbar: #8B2635;
+  --branca-color-app-scrollbar-track: #D4C4A080;
+
+  /* HUD */
+  --branca-color-hud-background-fill-1: #D4C4A0CC;
+  --branca-color-hud-background-fill-2: #E8DCC0CC;
+  --branca-color-hud-background-fill: linear-gradient(180deg, var(--branca-color-hud-background-fill-1) 0%, var(--branca-color-hud-background-fill-2) 100%);
+
+  /* === MISC === */
+  --branca-color-misc-shadow-primary: #C9A961;
+  --branca-color-misc-shadow-highlight: #D4B576;
+  --branca-color-misc-border-highlight: #B87333CC;
+
+  /* === FOUNDRY OVERRIDES === */
+  --color-shadow-primary: var(--branca-color-misc-shadow-primary);
+  --color-shadow-highlight: var(--branca-color-misc-shadow-highlight);
+  --color-border-highlight: var(--branca-color-misc-border-highlight);
+
+  /* === SPACING AND SIZING === */
+  --branca-border-radius-large: 12px;
+  --branca-border-radius-medium: 8px;
+  --branca-border-radius-small: 4px;
+  --branca-border-width: 2px;
+  --branca-backdrop-filter: blur(3px);
+  --branca-ui-accent-width: 500px;
+  --branca-ui-accent-height: 500px;
+  --branca-ui-accent-position-top: -24px;
+  --branca-ui-accent-position-left: 1px;
+  --branca-app-section-bg-image-size: cover;
+  --branca-app-section-bg-image-repeat: repeat;
+  --branca-app-accent-width: 200px;
+  --branca-app-accent-height: 200px;
+  --branca-app-accent-position-top: -42px;
+  --branca-app-accent-position-left: -47px;
+
+  /* === ASSETS === */
+  --branca-app-accent-image: url("../assets/artwork/brancalonia-logo.webp");
+  --branca-app-section-bg-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48ZmlsdGVyIGlkPSJwYXBlciI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDQiIG51bU9jdGF2ZXM9IjUiIHJlc3VsdD0ibm9pc2UiLz48ZmVEaWZmdXNlTGlnaHRpbmcgaW49Im5vaXNlIiBsaWdodGluZy1jb2xvcj0iI0Q0QzRBMCIgc3VyZmFjZVNjYWxlPSIxIj48ZmVEaXN0YW50TGlnaHQgYXppbXV0aD0iNDUiIGVsZXZhdGlvbj0iNjAiLz48L2ZlRGlmZnVzZUxpZ2h0aW5nPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjcGFwZXIpIi8+PC9zdmc+");
+  --branca-app-bg-image: var(--branca-app-section-bg-image);
+  --branca-sidebar-bg-image: var(--branca-app-section-bg-image);
+
+  /* === FONTS === */
+  --branca-font-display: "Cinzel", Georgia, serif;
+  --branca-font-body: "Crimson Text", Garamond, serif;
+  --branca-font-handwritten: "Kalam", cursive;
+}

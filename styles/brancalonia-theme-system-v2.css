@@ -1,0 +1,288 @@
+/**
+ * Brancalonia Theme - System Layer
+ * Applica le variabili del tema a tutti gli elementi di Foundry
+ * Basato sulla struttura di ProjectFU Theme
+ */
+
+/* === CONTROLLI UI === */
+.themed:is(.theme-dark, .theme-light) .ui-control,
+.themed:is(.theme-dark, .theme-light) .placeable-hud,
+.themed:is(.theme-dark, .theme-light) #measurement .waypoint-label {
+  --control-bg-color: var(--branca-color-control-fill);
+  --control-icon-color: var(--branca-color-control-content);
+  --control-border-color: var(--branca-color-control-border);
+}
+
+/* === FINESTRE APPLICAZIONE === */
+.app.window-app {
+  background: var(--branca-color-app-body-primary-fill) !important;
+  border: var(--branca-border-width) solid var(--branca-color-app-border) !important;
+  border-radius: var(--branca-border-radius-medium) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.app.window-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--branca-app-section-bg-image);
+  background-size: var(--branca-app-section-bg-image-size);
+  background-repeat: var(--branca-app-section-bg-image-repeat);
+  opacity: 0.3;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.window-app .window-header {
+  background: var(--branca-color-app-header-fill) !important;
+  color: var(--branca-color-app-header-content) !important;
+  font-family: var(--branca-font-display) !important;
+  font-weight: 600 !important;
+  border-radius: var(--branca-border-radius-medium) var(--branca-border-radius-medium) 0 0 !important;
+  text-shadow: 1px 1px 2px var(--branca-color-app-name-section-shadow) !important;
+}
+
+.window-app .window-header a {
+  color: var(--branca-color-app-header-content) !important;
+}
+
+.window-app .window-header a:hover {
+  color: var(--branca-color-app-header-focus-content) !important;
+}
+
+.window-app .window-content {
+  background: transparent !important;
+  color: var(--branca-color-app-body-content) !important;
+  font-family: var(--branca-font-body) !important;
+}
+
+/* === TABS === */
+.tabs {
+  border-bottom: var(--branca-border-width) solid var(--branca-color-app-border) !important;
+  font-family: var(--branca-font-display) !important;
+}
+
+.tabs .item {
+  background: var(--branca-color-control-fill) !important;
+  color: var(--branca-color-control-content) !important;
+  border: 1px solid var(--branca-color-control-border) !important;
+  border-bottom: none !important;
+  border-radius: var(--branca-border-radius-small) var(--branca-border-radius-small) 0 0 !important;
+}
+
+.tabs .item:hover {
+  background: var(--branca-color-control-highlight-fill) !important;
+  color: var(--branca-color-control-highlight-content) !important;
+}
+
+.tabs .item.active {
+  background: var(--branca-color-control-active-fill) !important;
+  color: var(--branca-color-control-active-content) !important;
+  border-color: var(--branca-color-control-active-border) !important;
+}
+
+/* === BOTTONI === */
+button,
+.dialog-button {
+  background: var(--branca-color-app-control-fill) !important;
+  color: var(--branca-color-app-control-content) !important;
+  border: var(--branca-border-width) solid var(--branca-color-app-control-border) !important;
+  border-radius: var(--branca-border-radius-small) !important;
+  font-family: var(--branca-font-body) !important;
+  font-weight: 600 !important;
+  box-shadow: var(--branca-color-app-control-shadow) !important;
+  transition: all 0.2s ease !important;
+}
+
+button:hover,
+.dialog-button:hover {
+  background: var(--branca-color-app-control-highlight-fill) !important;
+  color: var(--branca-color-app-control-highlight-content) !important;
+  border-color: var(--branca-color-app-control-highlight-border) !important;
+  box-shadow: var(--branca-color-app-control-highlight-shadow) !important;
+}
+
+button:active,
+button.active,
+.dialog-button:active {
+  background: var(--branca-color-app-control-active-fill) !important;
+  color: var(--branca-color-app-control-active-content) !important;
+  border-color: var(--branca-color-app-control-active-border) !important;
+}
+
+/* === INPUT FIELDS === */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+  background: var(--branca-color-app-section-primary-fill) !important;
+  color: var(--branca-color-app-section-content-primary) !important;
+  border: 1px solid var(--branca-color-app-section-border) !important;
+  border-radius: var(--branca-border-radius-small) !important;
+  font-family: var(--branca-font-body) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: var(--branca-color-misc-border-highlight) !important;
+  box-shadow: 0 0 5px var(--branca-color-misc-shadow-highlight) !important;
+}
+
+/* === SIDEBAR === */
+#sidebar {
+  background: var(--branca-color-app-body-primary-fill) !important;
+  border-left: var(--branca-border-width) solid var(--branca-color-app-border) !important;
+}
+
+#sidebar-tabs {
+  border-bottom: var(--branca-border-width) solid var(--branca-color-app-border) !important;
+  background: var(--branca-color-app-header-fill) !important;
+}
+
+#sidebar .sidebar-tab {
+  color: var(--branca-color-app-body-content) !important;
+  font-family: var(--branca-font-body) !important;
+}
+
+.sidebar-tab .directory-list .directory-item {
+  background: var(--branca-color-app-section-primary-fill) !important;
+  border: 1px solid var(--branca-color-app-section-border) !important;
+  border-radius: var(--branca-border-radius-small) !important;
+  margin: 2px !important;
+}
+
+.sidebar-tab .directory-list .directory-item:hover {
+  background: var(--branca-color-app-item-highlight-fill) !important;
+  border-color: var(--branca-color-app-item-highlight-border) !important;
+}
+
+/* === CHAT LOG === */
+#chat-log {
+  background: var(--branca-color-app-body-primary-fill) !important;
+  font-family: var(--branca-font-body) !important;
+}
+
+.chat-message {
+  background: var(--branca-color-app-section-primary-fill) !important;
+  border: 1px solid var(--branca-color-app-section-border) !important;
+  border-radius: var(--branca-border-radius-small) !important;
+  margin: 4px !important;
+}
+
+.chat-message .message-header {
+  background: var(--branca-color-app-item-header-fill) !important;
+  color: var(--branca-color-app-item-header-content) !important;
+  font-family: var(--branca-font-display) !important;
+  font-weight: 600 !important;
+}
+
+.chat-message .message-content {
+  color: var(--branca-color-app-section-content-primary) !important;
+}
+
+/* === CONTROLS === */
+#controls {
+  background: var(--branca-color-app-body-primary-fill) !important;
+}
+
+#controls .control-tool {
+  background: var(--branca-color-control-fill) !important;
+  color: var(--branca-color-control-content) !important;
+  border: 1px solid var(--branca-color-control-border) !important;
+  border-radius: var(--branca-border-radius-small) !important;
+}
+
+#controls .control-tool:hover {
+  background: var(--branca-color-control-highlight-fill) !important;
+  color: var(--branca-color-control-highlight-content) !important;
+  border-color: var(--branca-color-control-highlight-border) !important;
+}
+
+#controls .control-tool.active,
+#controls .control-tool.toggle.active {
+  background: var(--branca-color-control-active-fill) !important;
+  color: var(--branca-color-control-active-content) !important;
+  border-color: var(--branca-color-control-active-border) !important;
+}
+
+/* === HOTBAR === */
+#hotbar {
+  background: var(--branca-color-app-body-primary-fill) !important;
+  border-top: var(--branca-border-width) solid var(--branca-color-app-border) !important;
+}
+
+#hotbar .macro {
+  background: var(--branca-color-control-fill) !important;
+  border: 1px solid var(--branca-color-control-border) !important;
+  border-radius: var(--branca-border-radius-small) !important;
+}
+
+#hotbar .macro:hover {
+  background: var(--branca-color-control-highlight-fill) !important;
+  border-color: var(--branca-color-control-highlight-border) !important;
+}
+
+#hotbar .macro.active {
+  box-shadow: 0 0 10px var(--branca-color-misc-shadow-primary) !important;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--branca-color-app-scrollbar-track) !important;
+  border-radius: var(--branca-border-radius-small) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--branca-color-app-scrollbar) !important;
+  border-radius: var(--branca-border-radius-small) !important;
+  border: 1px solid var(--branca-color-app-border) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--branca-color-control-highlight-border) !important;
+}
+
+/* === FOUNDRY UI OVERRIDES === */
+.placeable-hud .control-icon {
+  background: var(--branca-color-hud-background-fill) !important;
+  color: var(--branca-color-control-content) !important;
+  border: 1px solid var(--branca-color-control-border) !important;
+  border-radius: var(--branca-border-radius-small) !important;
+}
+
+.placeable-hud .control-icon:hover {
+  background: var(--branca-color-control-highlight-fill) !important;
+  color: var(--branca-color-control-highlight-content) !important;
+  border-color: var(--branca-color-control-highlight-border) !important;
+}
+
+.placeable-hud .control-icon.active {
+  background: var(--branca-color-control-active-fill) !important;
+  color: var(--branca-color-control-active-content) !important;
+  border-color: var(--branca-color-control-active-border) !important;
+}
+
+/* === FONT AWESOME FIX === */
+i[class*="fa-"],
+.fas, .far, .fab, .fa {
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 6 Free', FontAwesome !important;
+  display: inline-block !important;
+  font-style: normal !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.fas, .fa { font-weight: 900 !important; }
+.far { font-weight: 400 !important; }
+.fab { font-weight: 400 !important; }
