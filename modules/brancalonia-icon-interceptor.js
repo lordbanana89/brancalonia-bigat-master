@@ -388,6 +388,10 @@ const ICON_UNICODE_MAP = {
   'fa-coins': '\uf51e',
   'fa-sack-dollar': '\uf81d',
   'fa-money-bag': '\uf81d',
+  'fa-suitcase': '\uf0f2',
+  'fa-briefcase': '\uf0b1',
+  'fa-suitcase-medical': '\uf0fa',
+  'fa-suitcase-rolling': '\uf5c1',
 
   // Tables & Data
   'fa-table': '\uf0ce',
@@ -681,10 +685,19 @@ function interceptIcon(icon) {
     icon.setAttribute('data-unicode', unicode);
     icon.setAttribute('data-icon-fixed', matchedClass);
 
-    console.log(`✅ Intercepted and fixed: ${matchedClass} → ${unicode}`);
+    // Log solo in debug mode
+    // console.log(`✅ Intercepted and fixed: ${matchedClass} → ${unicode}`);
   } else if (iconClasses.length > 0) {
     // Solo logga se ci sono classi icona vere (non solo classi di stile)
-    console.warn(`❌ No mapping for: ${iconClasses.join(', ')}`);
+    const allClasses = Array.from(icon.classList);
+    const hasStyleOnly = allClasses.every(cls =>
+      !cls.startsWith('fa-') ||
+      ['fa-duotone', 'fa-solid', 'fa-regular', 'fa-light', 'fa-thin', 'fa-brands', 'fas', 'far', 'fal', 'fat', 'fab', 'fad'].includes(cls)
+    );
+
+    if (!hasStyleOnly) {
+      console.warn(`❌ No mapping for icon classes: ${iconClasses.join(', ')} (element classes: ${allClasses.join(', ')})`);
+    }
 
     // Se non troviamo mapping, almeno assicuriamoci che non mostri testo
     if (icon.textContent && icon.textContent.trim()) {
