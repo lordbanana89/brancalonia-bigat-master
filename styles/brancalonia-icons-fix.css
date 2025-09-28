@@ -124,6 +124,7 @@ i.fab,
 .fas.fa-user::before { content: "\f007"; }
 .fas.fa-folder::before { content: "\f07b"; }
 .fas.fa-folder-open::before { content: "\f07c"; }
+.fas.fa-folder-plus::before { content: "\f65e"; }
 .fas.fa-plus::before { content: "\f067"; }
 .fas.fa-search::before { content: "\f002"; }
 .fas.fa-cog::before { content: "\f013"; }

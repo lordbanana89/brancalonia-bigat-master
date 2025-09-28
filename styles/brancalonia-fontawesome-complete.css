@@ -1,0 +1,300 @@
+/* ======================================
+   BRANCALONIA FONT AWESOME COMPLETE FIX
+   Fix definitivo per tutte le icone v13
+   ====================================== */
+
+/* Import Font Awesome se non già presente */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+/* ======================================
+   FIX GLOBALE FONT AWESOME
+   ====================================== */
+
+/* Tutti gli elementi con classi Font Awesome */
+[class*="fa-"],
+i.fas,
+i.far,
+i.fab,
+i.fa,
+.fas,
+.far,
+.fab,
+.fa {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 6 Brands", "Font Awesome 6 Duotone", "Font Awesome 5 Free", "FontAwesome", sans-serif !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-rendering: auto !important;
+  line-height: 1 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  display: inline-block !important;
+}
+
+/* Font weights specifici */
+.fas,
+i.fas,
+.fa-solid {
+  font-weight: 900 !important;
+}
+
+.far,
+i.far,
+.fa-regular {
+  font-weight: 400 !important;
+}
+
+.fab,
+i.fab,
+.fa-brands {
+  font-weight: 400 !important;
+}
+
+.fal,
+i.fal,
+.fa-light {
+  font-weight: 300 !important;
+}
+
+/* ======================================
+   ICONE SPECIFICHE MANCANTI
+   ====================================== */
+
+/* Folder icons */
+.fa-folder::before,
+.fas.fa-folder::before { content: "\f07b" !important; }
+
+.fa-folder-open::before,
+.fas.fa-folder-open::before { content: "\f07c" !important; }
+
+.fa-folder-plus::before,
+.fas.fa-folder-plus::before { content: "\f65e" !important; }
+
+/* User icons */
+.fa-user::before,
+.fas.fa-user::before { content: "\f007" !important; }
+
+.fa-users::before,
+.fas.fa-users::before { content: "\f0c0" !important; }
+
+.fa-user-plus::before,
+.fas.fa-user-plus::before { content: "\f234" !important; }
+
+/* Plus/Add icons */
+.fa-plus::before,
+.fas.fa-plus::before { content: "\f067" !important; }
+
+.fa-plus-circle::before,
+.fas.fa-plus-circle::before { content: "\f055" !important; }
+
+.fa-plus-square::before,
+.fas.fa-plus-square::before { content: "\f0fe" !important; }
+
+/* File icons */
+.fa-file::before,
+.fas.fa-file::before { content: "\f15b" !important; }
+
+.fa-file-plus::before,
+.fas.fa-file-plus::before { content: "\f319" !important; }
+
+/* Search icon */
+.fa-search::before,
+.fas.fa-search::before { content: "\f002" !important; }
+
+/* Settings/Config */
+.fa-cog::before,
+.fas.fa-cog::before { content: "\f013" !important; }
+
+.fa-cogs::before,
+.fas.fa-cogs::before { content: "\f085" !important; }
+
+/* Dice */
+.fa-dice-d20::before,
+.fas.fa-dice-d20::before { content: "\f6cf" !important; }
+
+/* Chat/Comments */
+.fa-comments::before,
+.fas.fa-comments::before { content: "\f086" !important; }
+
+/* Combat */
+.fa-fist-raised::before,
+.fas.fa-fist-raised::before { content: "\f6de" !important; }
+
+/* Journal/Book */
+.fa-book::before,
+.fas.fa-book::before { content: "\f02d" !important; }
+
+.fa-atlas::before,
+.fas.fa-atlas::before { content: "\f558" !important; }
+
+/* Map */
+.fa-map::before,
+.fas.fa-map::before { content: "\f279" !important; }
+
+/* Items */
+.fa-suitcase::before,
+.fas.fa-suitcase::before { content: "\f0f2" !important; }
+
+/* Music/Audio */
+.fa-music::before,
+.fas.fa-music::before { content: "\f001" !important; }
+
+/* Tables */
+.fa-table::before,
+.fas.fa-table::before { content: "\f0ce" !important; }
+
+.fa-th-list::before,
+.fas.fa-th-list::before { content: "\f00b" !important; }
+
+/* Edit/Delete */
+.fa-edit::before,
+.fas.fa-edit::before { content: "\f044" !important; }
+
+.fa-trash::before,
+.fas.fa-trash::before { content: "\f1f8" !important; }
+
+/* Navigation */
+.fa-chevron-up::before,
+.fas.fa-chevron-up::before { content: "\f077" !important; }
+
+.fa-chevron-down::before,
+.fas.fa-chevron-down::before { content: "\f078" !important; }
+
+.fa-chevron-left::before,
+.fas.fa-chevron-left::before { content: "\f053" !important; }
+
+.fa-chevron-right::before,
+.fas.fa-chevron-right::before { content: "\f054" !important; }
+
+/* Check/Close */
+.fa-check::before,
+.fas.fa-check::before { content: "\f00c" !important; }
+
+.fa-times::before,
+.fas.fa-times::before { content: "\f00d" !important; }
+
+/* ======================================
+   FIX SIDEBAR SPECIFICO
+   ====================================== */
+
+/* Sidebar generale */
+#sidebar i[class*="fa-"] {
+  font-family: "Font Awesome 6 Free", "FontAwesome" !important;
+  font-weight: 900 !important;
+  font-size: 1.25rem !important;
+  width: 1.25em !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* Bottoni azione nella sidebar */
+#sidebar .action-buttons button i,
+#sidebar .directory-header button i,
+#sidebar button[data-action] i {
+  font-family: "Font Awesome 6 Free", "FontAwesome" !important;
+  font-weight: 900 !important;
+  display: inline-block !important;
+}
+
+/* Fix specifico per Create Folder */
+button[data-action="createFolder"] i,
+button[data-action="createFolder"] i.fas.fa-folder-plus,
+button[data-tooltip="Create Folder"] i,
+button[title="Create Folder"] i,
+.action-buttons .create-folder i {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+button[data-action="createFolder"] i::before {
+  content: "\f65e" !important;
+}
+
+/* Fix specifico per Open Compendium Browser */
+button[data-action="browseCompendium"] i::before,
+button[data-action="openBrowser"] i::before {
+  content: "\f02d" !important;
+}
+
+/* Tab icons */
+#sidebar-tabs a.item i {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-size: 1.5rem !important;
+}
+
+/* Search field */
+#sidebar .header-search i {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+/* ======================================
+   FIX CHARACTER SHEETS
+   ====================================== */
+
+.dnd5e.sheet i[class*="fa-"],
+.window-app i[class*="fa-"] {
+  font-family: "Font Awesome 6 Free", "FontAwesome" !important;
+  font-weight: 900 !important;
+}
+
+/* Item controls */
+.item-controls i,
+.item-control i {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  cursor: pointer;
+}
+
+/* ======================================
+   DEBUG & FALLBACK
+   ====================================== */
+
+/* Mostra placeholder per icone mancanti */
+i[class*="fa-"]:empty::before {
+  content: "?" !important;
+  font-family: monospace !important;
+  color: red !important;
+  font-size: 1em !important;
+  font-weight: bold !important;
+  background: yellow;
+  padding: 2px;
+  border: 1px solid red;
+}
+
+/* Fallback Unicode se Font Awesome fallisce */
+@supports not (font-family: "Font Awesome 6 Free") {
+  .fa-folder::before { content: "📁" !important; }
+  .fa-folder-open::before { content: "📂" !important; }
+  .fa-folder-plus::before { content: "📁➕" !important; }
+  .fa-user::before { content: "👤" !important; }
+  .fa-users::before { content: "👥" !important; }
+  .fa-user-plus::before { content: "👤➕" !important; }
+  .fa-plus::before { content: "➕" !important; }
+  .fa-search::before { content: "🔍" !important; }
+  .fa-cog::before { content: "⚙️" !important; }
+  .fa-dice-d20::before { content: "🎲" !important; }
+  .fa-comments::before { content: "💬" !important; }
+  .fa-book::before { content: "📚" !important; }
+  .fa-map::before { content: "🗺️" !important; }
+  .fa-music::before { content: "🎵" !important; }
+  .fa-trash::before { content: "🗑️" !important; }
+  .fa-edit::before { content: "✏️" !important; }
+  .fa-check::before { content: "✅" !important; }
+  .fa-times::before { content: "❌" !important; }
+}
+
+/* ======================================
+   OVERRIDE FINALE - MASSIMA PRIORITÀ
+   ====================================== */
+
+body #sidebar button i[class*="fa-"],
+body #sidebar .action-buttons i[class*="fa-"],
+body .directory-header i[class*="fa-"] {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Solid", "FontAwesome" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
