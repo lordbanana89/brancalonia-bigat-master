@@ -94,6 +94,16 @@ const ICON_UNICODE_MAP = {
   'fa-magnifying-glass-minus': '\uf010',
   'fa-filter': '\uf0b0',
 
+  // Compress/Expand icons
+  'fa-compress': '\uf066',
+  'fa-compress-alt': '\uf422',
+  'fa-compress-arrows-alt': '\uf78c',
+  'fa-expand': '\uf065',
+  'fa-expand-alt': '\uf424',
+  'fa-expand-arrows-alt': '\uf31e',
+  'fa-maximize': '\uf31e',
+  'fa-minimize': '\uf78c',
+
   // Edit/Delete
   'fa-edit': '\uf044',
   'fa-pen': '\uf304',

@@ -1,0 +1,315 @@
+/* ================================================ */
+/* BRANCALONIA DESIGN TOKENS                       */
+/* Complete token system for Italian Renaissance   */
+/* theme aligned with crlngn-ui patterns          */
+/* ================================================ */
+
+@layer tokens {
+  :root {
+    /* =============================================
+       PRIMITIVE TOKENS - Base color values
+       ============================================= */
+
+    /* Italian Renaissance Palette */
+    --bcl-raw-sienna: #C68E3F;
+    --bcl-raw-umber: #6B4423;
+    --bcl-burnt-sienna: #8B4513;
+    --bcl-burnt-umber: #4A3826;
+    --bcl-ochre: #CC9A2E;
+    --bcl-venetian-red: #C80815;
+    --bcl-terracotta: #CB6843;
+    --bcl-malachite: #0F7938;
+    --bcl-ultramarine: #4166F5;
+    --bcl-gold-leaf: #D4AF37;
+    --bcl-lead-white: #FAF6ED;
+    --bcl-bone-black: #1C1814;
+    --bcl-sepia: #704214;
+    --bcl-verdigris: #43B3AE;
+    --bcl-cinnabar: #E34234;
+    --bcl-wine: #722F37;
+
+    /* =============================================
+       SEMANTIC TOKENS - Contextual colors
+       ============================================= */
+
+    /* Background Hierarchy */
+    --bcl-bg-primary: #15110C;
+    --bcl-bg-secondary: #1F1A13;
+    --bcl-bg-tertiary: #2B2218;
+
+    /* Surface Hierarchy */
+    --bcl-surface-primary: #F3E6CC;
+    --bcl-surface-secondary: #EFE0BD;
+    --bcl-surface-tertiary: #E7D6AE;
+    --bcl-surface-elevated: #FAF6ED;
+    --bcl-surface-sunken: #D9C38F;
+
+    /* Text Colors */
+    --bcl-text-primary: #2B1F14;
+    --bcl-text-secondary: #4A3826;
+    --bcl-text-tertiary: #6C5A43;
+    --bcl-text-disabled: #8B7E6A;
+    --bcl-text-inverse: #FAF6ED;
+    --bcl-text-link: #4166F5;
+    --bcl-text-link-hover: #2E4EC7;
+
+    /* Interactive States */
+    --bcl-interactive-normal: #C9A54A;
+    --bcl-interactive-hover: #D4AF37;
+    --bcl-interactive-active: #B8943A;
+    --bcl-interactive-disabled: #8B7E6A;
+
+    /* Semantic States */
+    --bcl-state-success: #2E7D64;
+    --bcl-state-success-bg: rgba(46, 125, 100, 0.1);
+    --bcl-state-warning: #CC9A2E;
+    --bcl-state-warning-bg: rgba(204, 154, 46, 0.1);
+    --bcl-state-danger: #C80815;
+    --bcl-state-danger-bg: rgba(200, 8, 21, 0.1);
+    --bcl-state-info: #4166F5;
+    --bcl-state-info-bg: rgba(65, 102, 245, 0.1);
+
+    /* Focus States */
+    --bcl-focus-color: #C9A54A;
+    --bcl-focus-shadow: 0 0 0 3px rgba(201, 165, 74, 0.25);
+
+    /* Borders */
+    --bcl-border-subtle: rgba(139, 126, 106, 0.2);
+    --bcl-border-normal: rgba(139, 126, 106, 0.4);
+    --bcl-border-strong: rgba(139, 126, 106, 0.6);
+
+    /* =============================================
+       TYPOGRAPHY TOKENS
+       ============================================= */
+
+    /* Font Families */
+    --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
+    --bcl-font-serif: "Alegreya", "EB Garamond", Georgia, serif;
+    --bcl-font-sans: "Inter", system-ui, -apple-system, sans-serif;
+    --bcl-font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --bcl-font-script: "Uncial Antiqua", "MedievalSharp", cursive;
+
+    /* Font Sizes - rem based for accessibility */
+    --bcl-font-size-2xs: 0.625rem;  /* 10px */
+    --bcl-font-size-xs: 0.75rem;    /* 12px */
+    --bcl-font-size-sm: 0.875rem;   /* 14px */
+    --bcl-font-size-md: 1rem;       /* 16px */
+    --bcl-font-size-lg: 1.125rem;   /* 18px */
+    --bcl-font-size-xl: 1.25rem;    /* 20px */
+    --bcl-font-size-2xl: 1.5rem;    /* 24px */
+    --bcl-font-size-3xl: 1.875rem;  /* 30px */
+    --bcl-font-size-4xl: 2.25rem;   /* 36px */
+
+    /* Font Weights */
+    --bcl-font-weight-light: 300;
+    --bcl-font-weight-regular: 400;
+    --bcl-font-weight-medium: 500;
+    --bcl-font-weight-semibold: 600;
+    --bcl-font-weight-bold: 700;
+    --bcl-font-weight-black: 900;
+
+    /* Line Heights */
+    --bcl-line-height-tight: 1.2;
+    --bcl-line-height-normal: 1.45;
+    --bcl-line-height-relaxed: 1.6;
+    --bcl-line-height-loose: 1.8;
+
+    /* Letter Spacing */
+    --bcl-letter-spacing-tight: -0.02em;
+    --bcl-letter-spacing-normal: 0;
+    --bcl-letter-spacing-wide: 0.02em;
+    --bcl-letter-spacing-wider: 0.04em;
+    --bcl-letter-spacing-widest: 0.08em;
+
+    /* =============================================
+       SPACING TOKENS - 4pt grid system
+       ============================================= */
+
+    --bcl-space-0: 0;
+    --bcl-space-1: 0.25rem;  /* 4px */
+    --bcl-space-2: 0.5rem;   /* 8px */
+    --bcl-space-3: 0.75rem;  /* 12px */
+    --bcl-space-4: 1rem;     /* 16px */
+    --bcl-space-5: 1.25rem;  /* 20px */
+    --bcl-space-6: 1.5rem;   /* 24px */
+    --bcl-space-8: 2rem;     /* 32px */
+    --bcl-space-10: 2.5rem;  /* 40px */
+    --bcl-space-12: 3rem;    /* 48px */
+    --bcl-space-16: 4rem;    /* 64px */
+    --bcl-space-20: 5rem;    /* 80px */
+
+    /* =============================================
+       RADIUS TOKENS
+       ============================================= */
+
+    --bcl-radius-none: 0;
+    --bcl-radius-sm: 0.25rem;   /* 4px */
+    --bcl-radius-md: 0.5rem;    /* 8px */
+    --bcl-radius-lg: 0.75rem;   /* 12px */
+    --bcl-radius-xl: 1rem;      /* 16px */
+    --bcl-radius-2xl: 1.5rem;   /* 24px */
+    --bcl-radius-round: 50%;
+    --bcl-radius-pill: 9999px;
+
+    /* =============================================
+       SHADOW TOKENS
+       ============================================= */
+
+    --bcl-shadow-xs: 0 1px 2px 0 rgba(28, 20, 13, 0.05);
+    --bcl-shadow-sm: 0 1px 3px 0 rgba(28, 20, 13, 0.1), 0 1px 2px -1px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-md: 0 4px 6px -1px rgba(28, 20, 13, 0.1), 0 2px 4px -2px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-lg: 0 10px 15px -3px rgba(28, 20, 13, 0.1), 0 4px 6px -4px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-xl: 0 20px 25px -5px rgba(28, 20, 13, 0.1), 0 8px 10px -6px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-2xl: 0 25px 50px -12px rgba(28, 20, 13, 0.25);
+    --bcl-shadow-inner: inset 0 2px 4px 0 rgba(28, 20, 13, 0.05);
+
+    /* Special shadows for Renaissance effect */
+    --bcl-shadow-parchment: 0 2px 8px rgba(112, 66, 20, 0.15);
+    --bcl-shadow-gold: 0 4px 16px rgba(212, 175, 55, 0.3);
+    --bcl-shadow-wax: 0 3px 12px rgba(142, 29, 34, 0.4);
+
+    /* =============================================
+       TRANSITION TOKENS
+       ============================================= */
+
+    --bcl-transition-fast: 150ms ease-in-out;
+    --bcl-transition-normal: 250ms ease-in-out;
+    --bcl-transition-slow: 350ms ease-in-out;
+
+    /* Easing functions */
+    --bcl-ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --bcl-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --bcl-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* =============================================
+       Z-INDEX TOKENS
+       ============================================= */
+
+    --bcl-z-dropdown: 1000;
+    --bcl-z-sticky: 1020;
+    --bcl-z-fixed: 1030;
+    --bcl-z-backdrop: 1040;
+    --bcl-z-modal: 1050;
+    --bcl-z-popover: 1060;
+    --bcl-z-tooltip: 1070;
+  }
+
+  /* =============================================
+     THEME SCOPED TOKENS
+     All theme-specific tokens under .theme-brancalonia
+     ============================================= */
+
+  .theme-brancalonia {
+    /* Map semantic tokens to theme */
+    --bcl-bg: var(--bcl-bg-primary);
+    --bcl-surface: var(--bcl-surface-primary);
+    --bcl-paper: var(--bcl-surface-tertiary);
+    --bcl-paper-weak: var(--bcl-surface-secondary);
+    --bcl-paper-strong: var(--bcl-surface-sunken);
+
+    --bcl-ink: var(--bcl-text-primary);
+    --bcl-ink-weak: var(--bcl-text-secondary);
+    --bcl-ink-strong: var(--bcl-bone-black);
+    --bcl-muted: var(--bcl-text-tertiary);
+
+    --bcl-gold: var(--bcl-interactive-normal);
+    --bcl-emerald: var(--bcl-malachite);
+    --bcl-accent: var(--bcl-venetian-red);
+    --bcl-accent-strong: var(--bcl-wine);
+
+    --bcl-success: var(--bcl-state-success);
+    --bcl-warning: var(--bcl-state-warning);
+    --bcl-danger: var(--bcl-state-danger);
+
+    --bcl-focus: var(--bcl-focus-color);
+    --bcl-border: var(--bcl-border-normal);
+    --bcl-divider: var(--bcl-border-subtle);
+
+    /* Special Brancalonia tokens */
+    --bcl-seal-wax: #8E1D22;
+    --bcl-ribbon: #7E1F1B;
+    --bcl-nav: #223F4A;
+    --bcl-shadow-ink: rgba(28, 20, 13, 0.35);
+    --bcl-paper-overlay: rgba(43, 31, 20, 0.06);
+
+    /* Legacy compatibility aliases */
+    --branca-bg: var(--bcl-bg);
+    --branca-surface: var(--bcl-surface);
+    --branca-paper: var(--bcl-paper);
+    --branca-ink: var(--bcl-ink);
+    --branca-muted: var(--bcl-muted);
+    --branca-gold: var(--bcl-gold);
+    --branca-emerald: var(--bcl-emerald);
+    --branca-accent: var(--bcl-accent);
+    --branca-accent-strong: var(--bcl-accent-strong);
+    --branca-success: var(--bcl-success);
+    --branca-warning: var(--bcl-warning);
+    --branca-danger: var(--bcl-danger);
+    --branca-focus: var(--bcl-focus);
+    --branca-border: var(--bcl-border);
+    --branca-divider: var(--bcl-divider);
+  }
+
+  /* =============================================
+     DARK MODE OVERRIDES
+     ============================================= */
+
+  .theme-brancalonia[data-theme="dark"],
+  .theme-brancalonia.dark-mode {
+    /* Invert backgrounds */
+    --bcl-bg-primary: #0F0C08;
+    --bcl-bg-secondary: #1A1611;
+    --bcl-bg-tertiary: #252018;
+
+    /* Adjust surfaces */
+    --bcl-surface-primary: #2B2218;
+    --bcl-surface-secondary: #352A1F;
+    --bcl-surface-tertiary: #3A2E20;
+    --bcl-surface-elevated: #453626;
+    --bcl-surface-sunken: #201A13;
+
+    /* Invert text */
+    --bcl-text-primary: #F3E6CC;
+    --bcl-text-secondary: #D9C38F;
+    --bcl-text-tertiary: #C9B691;
+    --bcl-text-disabled: #7A6546;
+    --bcl-text-inverse: #2B1F14;
+
+    /* Adjust borders */
+    --bcl-border-subtle: rgba(201, 182, 145, 0.1);
+    --bcl-border-normal: rgba(201, 182, 145, 0.2);
+    --bcl-border-strong: rgba(201, 182, 145, 0.3);
+
+    /* Keep brand colors mostly the same */
+    --bcl-interactive-normal: #C9A54A;
+    --bcl-interactive-hover: #D4AF37;
+    --bcl-interactive-active: #B8943A;
+  }
+
+  /* =============================================
+     HIGH CONTRAST MODE
+     ============================================= */
+
+  @media (prefers-contrast: high) {
+    .theme-brancalonia {
+      --bcl-text-primary: #000000;
+      --bcl-text-secondary: #1A1A1A;
+      --bcl-surface-primary: #FFFFFF;
+      --bcl-border-normal: #000000;
+      --bcl-focus-color: #0066CC;
+      --bcl-focus-shadow: 0 0 0 3px rgba(0, 102, 204, 0.5);
+    }
+  }
+
+  /* =============================================
+     REDUCED MOTION
+     ============================================= */
+
+  @media (prefers-reduced-motion: reduce) {
+    .theme-brancalonia {
+      --bcl-transition-fast: 0ms;
+      --bcl-transition-normal: 0ms;
+      --bcl-transition-slow: 0ms;
+    }
+  }
+}

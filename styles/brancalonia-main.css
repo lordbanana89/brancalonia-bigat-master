@@ -1,379 +1,213 @@
 /* ================================================ */
 /* BRANCALONIA MAIN THEME                          */
-/* Conforme a prompt_master.md e crlngn-ui         */
-/* Compatible con dnd5e v5.1.9 e Foundry v12/v13   */
+/* Core styles with .theme-brancalonia scope       */
+/* Compatible with dnd5e v5.1.9 & Foundry v12/v13  */
 /* ================================================ */
-
-@import url('./tokens.css');
-
-/* ================================================
-   LAYER SYSTEM - Rispetta cascade corretto
-   ================================================ */
-@layer system {
-  /* Layer per override sistema - minimo uso */
-}
 
 @layer module {
   /* ================================================
-     BASE SCOPE - Tutto sotto .theme-brancalonia
+     ROOT THEME SETUP
      ================================================ */
 
   .theme-brancalonia {
-    /* Base typography e colori */
-    color: var(--bcl-ink);
+    /* Base typography */
+    color: var(--bcl-text-primary);
     font-family: var(--bcl-font-serif);
-    line-height: var(--bcl-line);
-    font-size: var(--bcl-font-size-base);
+    line-height: var(--bcl-line-height-normal);
+    font-size: var(--bcl-font-size-md);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* ================================================
-     WINDOW & APPLICATIONS
+     FOUNDRY UI ELEMENTS
      ================================================ */
 
-  .theme-brancalonia .window-app .window-content {
-    background: var(--bcl-paper);
-    color: var(--bcl-ink);
-    box-shadow: var(--bcl-shadow-1);
+  /* Application Windows */
+  .theme-brancalonia .app.window-app,
+  .theme-brancalonia.app.window-app {
+    background: transparent;
   }
 
-  .theme-brancalonia .window-app .window-header {
-    background: linear-gradient(to right, var(--bcl-paper-strong), var(--bcl-paper));
-    border-bottom: 2px solid var(--bcl-border);
-  }
-
-  .theme-brancalonia .window-app .window-header .window-title {
-    font-family: var(--bcl-font-display);
-    font-weight: 700;
-    color: var(--bcl-ink-strong);
-    letter-spacing: 0.02em;
-    text-shadow: 1px 1px 0 var(--bcl-paper-weak);
-  }
-
-  /* ================================================
-     DND5E SPECIFIC - Actor/Item Sheets
-     ================================================ */
-
-  .theme-brancalonia .dnd5e .window-content,
-  .theme-brancalonia .app.dnd5e .window-content {
-    background: var(--bcl-paper);
-    color: var(--bcl-ink);
-  }
-
-  /* Sheet Header con decorazioni sottili */
-  .theme-brancalonia .dnd5e .sheet-header {
-    background: var(--bcl-paper-weak);
-    border-bottom: 2px solid var(--bcl-divider);
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .theme-brancalonia .dnd5e .sheet-header h1,
-  .theme-brancalonia .dnd5e .sheet-header .charname {
-    font-family: var(--bcl-font-display);
-    color: var(--bcl-ink-strong);
-    font-weight: 700;
-    letter-spacing: 0.03em;
-  }
-
-  /* ================================================
-     TABS - Stile crlngn-ui con brand Brancalonia
-     ================================================ */
-
-  .theme-brancalonia .sheet-tabs {
-    border-bottom: 2px solid var(--bcl-divider);
-    margin-bottom: 0.5rem;
-  }
-
-  .theme-brancalonia .sheet-tabs .item {
-    background: var(--bcl-paper-weak);
+  .theme-brancalonia .window-app .window-content,
+  .theme-brancalonia.window-app .window-content {
+    background: var(--bcl-surface-primary);
+    color: var(--bcl-text-primary);
     border: 1px solid var(--bcl-border);
-    border-radius: var(--bcl-radius-sm) var(--bcl-radius-sm) 0 0;
-    padding: 0.5rem 1rem;
-    margin-right: 0.25rem;
-    color: var(--bcl-ink-weak);
-    font-family: var(--bcl-font-serif);
-    font-weight: 500;
-    transition: all 0.2s ease;
+    border-radius: var(--bcl-radius-lg);
+    box-shadow: var(--bcl-shadow-lg);
+    overflow: hidden;
+    padding: 0;
   }
 
-  .theme-brancalonia .sheet-tabs .item:hover {
-    background: var(--bcl-gold);
-    color: var(--bcl-ink-strong);
-    border-color: var(--bcl-ink-strong);
-    transform: translateY(-1px);
+  /* Window Headers */
+  .theme-brancalonia .window-app .window-header,
+  .theme-brancalonia.window-app .window-header {
+    background: linear-gradient(135deg,
+      var(--bcl-surface-sunken) 0%,
+      var(--bcl-surface-tertiary) 100%);
+    border-bottom: 2px solid var(--bcl-gold-leaf);
+    border-radius: var(--bcl-radius-lg) var(--bcl-radius-lg) 0 0;
+    padding: var(--bcl-space-3) var(--bcl-space-4);
   }
 
-  .theme-brancalonia .sheet-tabs .item.active {
-    background: var(--bcl-accent);
-    color: var(--bcl-paper);
-    border-color: var(--bcl-accent-strong);
-    border-bottom-color: var(--bcl-accent);
+  .theme-brancalonia .window-header .window-title,
+  .theme-brancalonia.window-header .window-title {
+    font-family: var(--bcl-font-display);
+    font-size: var(--bcl-font-size-lg);
+    font-weight: var(--bcl-font-weight-bold);
+    color: var(--bcl-text-primary);
+    letter-spacing: var(--bcl-letter-spacing-wide);
+    text-shadow: 1px 1px 0 var(--bcl-surface-elevated);
+  }
+
+  .theme-brancalonia .window-header a.header-button {
+    color: var(--bcl-text-secondary);
+    transition: color var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .window-header a.header-button:hover {
+    color: var(--bcl-interactive-hover);
   }
 
   /* ================================================
-     FORMS & INPUTS - Allineato a crlngn-ui
+     FORMS & INPUTS
      ================================================ */
 
   .theme-brancalonia input[type="text"],
   .theme-brancalonia input[type="number"],
-  .theme-brancalonia select,
-  .theme-brancalonia textarea {
-    background: var(--bcl-paper);
+  .theme-brancalonia input[type="password"],
+  .theme-brancalonia textarea,
+  .theme-brancalonia select {
+    background: var(--bcl-surface-elevated);
     border: 1px solid var(--bcl-border);
     border-radius: var(--bcl-radius-sm);
-    color: var(--bcl-ink);
-    padding: 0.25rem 0.5rem;
+    color: var(--bcl-text-primary);
     font-family: var(--bcl-font-serif);
-    transition: all 0.2s ease;
+    padding: var(--bcl-space-2) var(--bcl-space-3);
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia input:hover,
+  .theme-brancalonia textarea:hover,
+  .theme-brancalonia select:hover {
+    border-color: var(--bcl-interactive-normal);
   }
 
   .theme-brancalonia input:focus,
-  .theme-brancalonia select:focus,
-  .theme-brancalonia textarea:focus {
-    outline: 2px solid var(--bcl-focus);
-    outline-offset: 2px;
-    border-color: var(--bcl-focus);
-    background: var(--bcl-surface);
+  .theme-brancalonia textarea:focus,
+  .theme-brancalonia select:focus {
+    outline: none;
+    border-color: var(--bcl-focus-color);
+    box-shadow: var(--bcl-focus-shadow);
+  }
+
+  .theme-brancalonia input:disabled,
+  .theme-brancalonia textarea:disabled,
+  .theme-brancalonia select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: var(--bcl-surface-secondary);
+  }
+
+  /* Checkboxes and Radio buttons */
+  .theme-brancalonia input[type="checkbox"],
+  .theme-brancalonia input[type="radio"] {
+    accent-color: var(--bcl-interactive-normal);
   }
 
   /* ================================================
-     BUTTONS - Stile rinascimentale con feedback
+     BUTTONS
      ================================================ */
 
   .theme-brancalonia button,
-  .theme-brancalonia .dialog-button {
-    background: var(--bcl-gold);
-    color: var(--bcl-ink-strong);
-    border: 1px solid var(--bcl-ink-strong);
-    border-radius: var(--bcl-radius-sm);
-    padding: 0.375rem 0.75rem;
+  .theme-brancalonia .dialog .dialog-buttons button {
+    background: var(--bcl-interactive-normal);
+    border: 1px solid var(--bcl-border-strong);
+    border-radius: var(--bcl-radius-md);
+    color: var(--bcl-text-inverse);
     font-family: var(--bcl-font-serif);
-    font-weight: 600;
-    transition: all 0.2s ease;
+    font-weight: var(--bcl-font-weight-semibold);
+    padding: var(--bcl-space-2) var(--bcl-space-4);
     cursor: pointer;
+    transition: all var(--bcl-transition-fast);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   }
 
   .theme-brancalonia button:hover {
-    background: var(--bcl-accent);
-    color: var(--bcl-paper);
-    box-shadow: var(--bcl-shadow-1);
+    background: var(--bcl-interactive-hover);
     transform: translateY(-1px);
+    box-shadow: var(--bcl-shadow-md);
   }
 
   .theme-brancalonia button:active {
+    background: var(--bcl-interactive-active);
     transform: translateY(0);
-    box-shadow: none;
+    box-shadow: var(--bcl-shadow-sm);
   }
 
-  .theme-brancalonia button[type="submit"],
-  .theme-brancalonia button.primary {
-    background: var(--bcl-accent);
-    color: var(--bcl-paper);
-    border-color: var(--bcl-accent-strong);
+  .theme-brancalonia button:disabled {
+    background: var(--bcl-interactive-disabled);
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
   }
 
-  .theme-brancalonia button[type="submit"]:hover,
-  .theme-brancalonia button.primary:hover {
-    background: var(--bcl-accent-strong);
+  /* Button Variants */
+  .theme-brancalonia button.danger,
+  .theme-brancalonia button[data-button="delete"] {
+    background: var(--bcl-state-danger);
+  }
+
+  .theme-brancalonia button.danger:hover,
+  .theme-brancalonia button[data-button="delete"]:hover {
+    background: var(--bcl-venetian-red);
   }
 
   /* ================================================
-     TABLES - Leggibili su pergamena
+     TABS
      ================================================ */
 
-  .theme-brancalonia table {
-    background: var(--bcl-paper);
-    border: 1px solid var(--bcl-divider);
-    border-radius: var(--bcl-radius-sm);
-  }
-
-  .theme-brancalonia th {
-    background: var(--bcl-paper-strong);
-    color: var(--bcl-ink-strong);
-    font-weight: 600;
-    padding: 0.5rem;
+  .theme-brancalonia .sheet-tabs,
+  .theme-brancalonia .tabs {
     border-bottom: 2px solid var(--bcl-divider);
+    margin-bottom: var(--bcl-space-3);
+    display: flex;
+    gap: var(--bcl-space-1);
   }
 
-  .theme-brancalonia td {
-    padding: 0.375rem 0.5rem;
-    border-bottom: 1px solid var(--bcl-divider);
-  }
-
-  .theme-brancalonia tr:hover td {
-    background: var(--bcl-paper-weak);
-  }
-
-  /* ================================================
-     CHAT CARDS - Tema pergamena
-     ================================================ */
-
-  .theme-brancalonia .chat-message {
-    background: var(--bcl-paper);
+  .theme-brancalonia .sheet-tabs .item,
+  .theme-brancalonia .tabs .item {
+    background: var(--bcl-surface-secondary);
     border: 1px solid var(--bcl-border);
-    border-radius: var(--bcl-radius-md);
-    box-shadow: var(--bcl-shadow-1);
-    margin-bottom: 0.5rem;
-  }
-
-  .theme-brancalonia .chat-message .message-header {
-    background: var(--bcl-paper-strong);
-    border-bottom: 1px solid var(--bcl-divider);
-    padding: 0.5rem;
-  }
-
-  .theme-brancalonia .chat-message .message-sender {
-    font-family: var(--bcl-font-display);
-    font-weight: 600;
-    color: var(--bcl-ink-strong);
-  }
-
-  .theme-brancalonia .dnd5e .chat-card {
-    background: var(--bcl-paper);
-    border: 1px solid var(--bcl-border);
-    box-shadow: var(--bcl-shadow-1);
-  }
-
-  .theme-brancalonia .dnd5e .chat-card .card-header {
-    background: linear-gradient(to right, var(--bcl-paper-strong), var(--bcl-paper));
-    border-bottom: 2px solid var(--bcl-divider);
-  }
-
-  /* ================================================
-     SIDEBAR - Integrazione sottile
-     ================================================ */
-
-  .theme-brancalonia #sidebar {
-    background: var(--bcl-paper-weak);
-    border-left: 2px solid var(--bcl-border);
-  }
-
-  .theme-brancalonia #sidebar .sidebar-tab {
-    border-bottom: 1px solid var(--bcl-divider);
-  }
-
-  .theme-brancalonia #sidebar .directory-header {
-    background: var(--bcl-paper-strong);
-    border-bottom: 1px solid var(--bcl-divider);
-  }
-
-  .theme-brancalonia #sidebar .directory-list .directory-item {
-    border-bottom: 1px solid var(--bcl-divider);
-  }
-
-  .theme-brancalonia #sidebar .directory-list .directory-item:hover {
-    background: var(--bcl-paper);
-  }
-
-  /* ================================================
-     COMPENDIUM - Stile coerente
-     ================================================ */
-
-  .theme-brancalonia .compendium-browser .directory-list {
-    background: var(--bcl-paper);
-  }
-
-  .theme-brancalonia .compendium-browser .directory-item {
-    border: 1px solid var(--bcl-divider);
-    border-radius: var(--bcl-radius-sm);
-    margin-bottom: 0.25rem;
-    transition: all 0.2s ease;
-  }
-
-  .theme-brancalonia .compendium-browser .directory-item:hover {
-    background: var(--bcl-paper-weak);
-    border-color: var(--bcl-gold);
-    transform: translateX(2px);
-  }
-
-  /* ================================================
-     ROLLTABLE - Fix UI vuote
-     ================================================ */
-
-  .theme-brancalonia .roll-table-config .results {
-    background: var(--bcl-paper);
-    border: 1px solid var(--bcl-border);
-    border-radius: var(--bcl-radius-sm);
-  }
-
-  .theme-brancalonia .roll-table-config .result {
-    border-bottom: 1px solid var(--bcl-divider);
-    padding: 0.5rem;
-  }
-
-  .theme-brancalonia .roll-table-config .result:hover {
-    background: var(--bcl-paper-weak);
-  }
-
-  /* ================================================
-     TOKEN/COMBAT HUD
-     ================================================ */
-
-  .theme-brancalonia #token-hud {
-    background: var(--bcl-paper);
-    border: 2px solid var(--bcl-border);
-    border-radius: var(--bcl-radius-md);
-    box-shadow: var(--bcl-shadow-2);
-  }
-
-  .theme-brancalonia #combat-tracker {
-    background: var(--bcl-paper);
-  }
-
-  .theme-brancalonia #combat-tracker .combatant {
-    border-bottom: 1px solid var(--bcl-divider);
-  }
-
-  .theme-brancalonia #combat-tracker .combatant.active {
-    background: var(--bcl-gold);
-    color: var(--bcl-ink-strong);
-  }
-
-  /* ================================================
-     DIALOGS & MODALS
-     ================================================ */
-
-  .theme-brancalonia .dialog {
-    background: var(--bcl-paper);
-    border: 2px solid var(--bcl-border);
-    border-radius: var(--bcl-radius-lg);
-    box-shadow: var(--bcl-shadow-2);
-  }
-
-  .theme-brancalonia .dialog .dialog-header {
-    background: var(--bcl-paper-strong);
-    border-bottom: 2px solid var(--bcl-divider);
-    font-family: var(--bcl-font-display);
-  }
-
-  .theme-brancalonia .dialog .dialog-buttons {
-    border-top: 1px solid var(--bcl-divider);
-    background: var(--bcl-paper-weak);
-    padding: 0.75rem;
-  }
-
-  /* ================================================
-     CALLOUT & FLAVOUR BOXES
-     ================================================ */
-
-  .theme-brancalonia .bcl-callout {
-    background: var(--bcl-paper-weak);
-    border: 1px solid var(--bcl-border);
-    border-radius: var(--bcl-radius-md);
-    box-shadow: inset 0 1px 0 var(--bcl-paper-overlay), var(--bcl-shadow-1);
-    padding: 0.75rem 1rem;
-    margin: 0.5rem 0;
-  }
-
-  .theme-brancalonia .bcl-callout--flavour {
+    border-bottom: none;
+    border-radius: var(--bcl-radius-md) var(--bcl-radius-md) 0 0;
+    padding: var(--bcl-space-2) var(--bcl-space-4);
+    color: var(--bcl-text-secondary);
     font-family: var(--bcl-font-serif);
-    font-style: italic;
-    color: var(--bcl-ink-weak);
-    border-left: 3px solid var(--bcl-gold);
+    font-weight: var(--bcl-font-weight-medium);
+    cursor: pointer;
+    transition: all var(--bcl-transition-fast);
+    position: relative;
+    top: 2px;
+  }
+
+  .theme-brancalonia .sheet-tabs .item:hover,
+  .theme-brancalonia .tabs .item:hover {
+    background: var(--bcl-surface-tertiary);
+    color: var(--bcl-text-primary);
+  }
+
+  .theme-brancalonia .sheet-tabs .item.active,
+  .theme-brancalonia .tabs .item.active {
+    background: var(--bcl-surface-primary);
+    color: var(--bcl-gold);
+    border-bottom: 2px solid var(--bcl-surface-primary);
+    font-weight: var(--bcl-font-weight-bold);
   }
 
   /* ================================================
-     SCROLLBAR SKINNING
+     SCROLLBARS
      ================================================ */
 
   .theme-brancalonia ::-webkit-scrollbar {
@@ -382,70 +216,228 @@
   }
 
   .theme-brancalonia ::-webkit-scrollbar-track {
-    background: var(--bcl-paper-weak);
+    background: var(--bcl-surface-secondary);
     border-radius: var(--bcl-radius-sm);
   }
 
   .theme-brancalonia ::-webkit-scrollbar-thumb {
-    background: var(--bcl-border);
+    background: var(--bcl-border-strong);
     border-radius: var(--bcl-radius-sm);
+    border: 1px solid var(--bcl-surface-secondary);
   }
 
   .theme-brancalonia ::-webkit-scrollbar-thumb:hover {
-    background: var(--bcl-gold);
+    background: var(--bcl-interactive-normal);
   }
 
   /* ================================================
-     FOCUS STATES - Accessibilità
+     TOOLTIPS
      ================================================ */
 
-  .theme-brancalonia :focus-visible {
-    outline: 2px solid var(--bcl-focus);
-    outline-offset: 2px;
+  .theme-brancalonia .tooltip,
+  .theme-brancalonia.tooltip {
+    background: var(--bcl-bg-secondary);
+    border: 1px solid var(--bcl-gold);
+    border-radius: var(--bcl-radius-md);
+    color: var(--bcl-text-inverse);
+    padding: var(--bcl-space-2) var(--bcl-space-3);
+    font-family: var(--bcl-font-serif);
+    font-size: var(--bcl-font-size-sm);
+    box-shadow: var(--bcl-shadow-xl);
   }
 
-  .theme-brancalonia a:focus-visible,
-  .theme-brancalonia button:focus-visible {
-    outline: 2px solid var(--bcl-gold);
+  /* ================================================
+     CONTEXT MENUS
+     ================================================ */
+
+  .theme-brancalonia .context-menu,
+  .theme-brancalonia.context-menu {
+    background: var(--bcl-surface-elevated);
+    border: 1px solid var(--bcl-border-strong);
+    border-radius: var(--bcl-radius-md);
+    box-shadow: var(--bcl-shadow-xl);
+    padding: var(--bcl-space-1);
+  }
+
+  .theme-brancalonia .context-menu li {
+    color: var(--bcl-text-primary);
+    padding: var(--bcl-space-2) var(--bcl-space-3);
+    border-radius: var(--bcl-radius-sm);
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .context-menu li:hover {
+    background: var(--bcl-interactive-normal);
+    color: var(--bcl-text-inverse);
+  }
+
+  /* ================================================
+     DIALOGS & MODALS
+     ================================================ */
+
+  .theme-brancalonia .dialog,
+  .theme-brancalonia.dialog {
+    background: var(--bcl-surface-primary);
+    border: 2px solid var(--bcl-gold);
+    border-radius: var(--bcl-radius-lg);
+    box-shadow: var(--bcl-shadow-2xl);
+  }
+
+  .theme-brancalonia .dialog .dialog-content {
+    color: var(--bcl-text-primary);
+    font-family: var(--bcl-font-serif);
+    padding: var(--bcl-space-4);
+  }
+
+  .theme-brancalonia .dialog .dialog-buttons {
+    background: var(--bcl-surface-secondary);
+    border-top: 1px solid var(--bcl-divider);
+    padding: var(--bcl-space-3) var(--bcl-space-4);
+    gap: var(--bcl-space-2);
+  }
+
+  /* ================================================
+     NOTIFICATIONS
+     ================================================ */
+
+  .theme-brancalonia .notification {
+    background: var(--bcl-surface-elevated);
+    border: 1px solid var(--bcl-border-strong);
+    border-radius: var(--bcl-radius-md);
+    color: var(--bcl-text-primary);
+    font-family: var(--bcl-font-serif);
+    box-shadow: var(--bcl-shadow-lg);
+  }
+
+  .theme-brancalonia .notification.info {
+    border-left: 4px solid var(--bcl-state-info);
+    background: var(--bcl-state-info-bg);
+  }
+
+  .theme-brancalonia .notification.warning {
+    border-left: 4px solid var(--bcl-state-warning);
+    background: var(--bcl-state-warning-bg);
+  }
+
+  .theme-brancalonia .notification.error {
+    border-left: 4px solid var(--bcl-state-danger);
+    background: var(--bcl-state-danger-bg);
+  }
+
+  /* ================================================
+     TABLES
+     ================================================ */
+
+  .theme-brancalonia table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  .theme-brancalonia table thead th {
+    background: var(--bcl-surface-sunken);
+    color: var(--bcl-text-primary);
+    font-family: var(--bcl-font-display);
+    font-weight: var(--bcl-font-weight-bold);
+    padding: var(--bcl-space-3);
+    border-bottom: 2px solid var(--bcl-gold);
+    text-align: left;
+  }
+
+  .theme-brancalonia table tbody tr {
+    transition: background var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia table tbody tr:nth-child(even) {
+    background: var(--bcl-surface-secondary);
+  }
+
+  .theme-brancalonia table tbody tr:hover {
+    background: var(--bcl-surface-tertiary);
+  }
+
+  .theme-brancalonia table tbody td {
+    padding: var(--bcl-space-2) var(--bcl-space-3);
+    border-bottom: 1px solid var(--bcl-divider);
+    color: var(--bcl-text-primary);
   }
 
   /* ================================================
      UTILITY CLASSES
      ================================================ */
 
-  .theme-brancalonia .text-display {
-    font-family: var(--bcl-font-display);
+  .theme-brancalonia .bcl-gold-text {
+    color: var(--bcl-gold) !important;
   }
 
-  .theme-brancalonia .text-serif {
-    font-family: var(--bcl-font-serif);
+  .theme-brancalonia .bcl-accent-text {
+    color: var(--bcl-accent) !important;
   }
 
-  .theme-brancalonia .text-sans {
-    font-family: var(--bcl-font-sans);
+  .theme-brancalonia .bcl-emerald-text {
+    color: var(--bcl-emerald) !important;
   }
 
-  .theme-brancalonia .text-muted {
-    color: var(--bcl-muted);
+  .theme-brancalonia .bcl-shadow-gold {
+    box-shadow: var(--bcl-shadow-gold);
   }
 
-  .theme-brancalonia .text-gold {
-    color: var(--bcl-gold);
+  .theme-brancalonia .bcl-shadow-wax {
+    box-shadow: var(--bcl-shadow-wax);
   }
 
-  .theme-brancalonia .text-emerald {
-    color: var(--bcl-emerald);
+  .theme-brancalonia .bcl-border-gold {
+    border-color: var(--bcl-gold) !important;
   }
 
-  .theme-brancalonia .bg-paper {
-    background: var(--bcl-paper);
+  .theme-brancalonia .bcl-bg-parchment {
+    background: var(--bcl-surface-tertiary);
   }
 
-  .theme-brancalonia .bg-paper-weak {
-    background: var(--bcl-paper-weak);
+  /* ================================================
+     ANIMATIONS
+     ================================================ */
+
+  @keyframes bcl-shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
   }
 
-  .theme-brancalonia .bg-paper-strong {
-    background: var(--bcl-paper-strong);
+  .theme-brancalonia .bcl-gold-shimmer {
+    background: linear-gradient(
+      90deg,
+      var(--bcl-gold) 0%,
+      var(--bcl-gold-leaf) 50%,
+      var(--bcl-gold) 100%
+    );
+    background-size: 200% auto;
+    animation: bcl-shimmer 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ================================================
+     SPECIAL EFFECTS
+     ================================================ */
+
+  /* Parchment texture overlay */
+  .theme-brancalonia .bcl-parchment-texture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        var(--bcl-paper-overlay) 10px,
+        var(--bcl-paper-overlay) 20px
+      );
+    pointer-events: none;
+    opacity: 0.3;
   }
 }

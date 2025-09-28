@@ -7,6 +7,10 @@
 Hooks.once("init", () => {
   console.log("Brancalonia | Inizializzazione modulo...");
 
+  // CRITICAL: Attiva il tema Brancalonia aggiungendo la classe al body
+  document.body.classList.add('theme-brancalonia');
+  console.log("Brancalonia | Tema attivato con classe theme-brancalonia");
+
   // Registrazione namespace globale
   game.brancalonia = {
     infamiaTracker: null,
