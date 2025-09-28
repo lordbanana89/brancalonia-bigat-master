@@ -82,6 +82,8 @@ const ICON_UNICODE_MAP = {
   'fa-shapes': '\uf61f',
   'fa-object-group': '\uf247',
   'fa-object-ungroup': '\uf248',
+  'fa-layer-group': '\uf5fd',
+  'fa-layers': '\uf5fd',
 
   // Search
   'fa-search': '\uf002',
