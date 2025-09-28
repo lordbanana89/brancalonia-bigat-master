@@ -57,19 +57,35 @@ Hooks.once("init", () => {
 
 // Override logCompatibilityWarning per questo specifico errore
 Hooks.once("setup", () => {
-  if (foundry?.utils?.logCompatibilityWarning) {
-    const original = foundry.utils.logCompatibilityWarning;
+  // Prova a sovrascrivere logCompatibilityWarning solo se possibile
+  try {
+    if (foundry?.utils?.logCompatibilityWarning) {
+      const original = foundry.utils.logCompatibilityWarning;
 
-    foundry.utils.logCompatibilityWarning = function(message, options = {}) {
-      // Sopprimi solo il warning di ActorSheetMixin
-      if (message?.includes("ActorSheetMixin")) {
-        console.log("🔇 Suppressed ActorSheetMixin deprecation warning");
-        return;
+      // Controlla se la proprietà è configurabile
+      const descriptor = Object.getOwnPropertyDescriptor(foundry.utils, 'logCompatibilityWarning');
+
+      if (descriptor && descriptor.configurable) {
+        Object.defineProperty(foundry.utils, 'logCompatibilityWarning', {
+          value: function(message, options = {}) {
+            // Sopprimi solo il warning di ActorSheetMixin
+            if (message?.includes("ActorSheetMixin")) {
+              console.log("🔇 Suppressed ActorSheetMixin deprecation warning");
+              return;
+            }
+            // Altrimenti chiama l'originale
+            return original.call(this, message, options);
+          },
+          writable: true,
+          configurable: true
+        });
+        console.log("✅ logCompatibilityWarning override successful");
+      } else {
+        console.log("⚠️ logCompatibilityWarning is not configurable, skipping override");
       }
-
-      // Altrimenti chiama l'originale
-      return original.call(this, message, options);
-    };
+    }
+  } catch (e) {
+    console.log("⚠️ Could not override logCompatibilityWarning:", e.message);
   }
 });
 
