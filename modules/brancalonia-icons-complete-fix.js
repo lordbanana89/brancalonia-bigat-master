@@ -367,8 +367,18 @@ Hooks.once('init', () => {
 function processIcon(icon) {
   if (!icon || icon.hasAttribute('data-complete-fixed')) return;
 
-  // Trova tutte le classi fa-
-  const iconClasses = Array.from(icon.classList).filter(cls => cls.startsWith('fa-'));
+  // Classi di stile Font Awesome da ignorare
+  const styleClasses = ['fa-duotone', 'fa-solid', 'fa-regular', 'fa-light', 'fa-thin',
+                       'fa-brands', 'fas', 'far', 'fal', 'fat', 'fab', 'fad',
+                       'fa-fw', 'fa-ul', 'fa-li', 'fa-spin', 'fa-pulse', 'fa-border',
+                       'fa-pull-left', 'fa-pull-right', 'fa-stack', 'fa-inverse',
+                       'fa-flip-horizontal', 'fa-flip-vertical', 'fa-rotate-90',
+                       'fa-rotate-180', 'fa-rotate-270', 'fa-flip-both'];
+
+  // Trova tutte le classi fa- che NON sono classi di stile
+  const iconClasses = Array.from(icon.classList).filter(cls =>
+    cls.startsWith('fa-') && !styleClasses.includes(cls)
+  );
 
   // Trova la prima icona mappata
   let mappedIcon = null;
@@ -386,7 +396,7 @@ function processIcon(icon) {
     icon.setAttribute('data-complete-fixed', 'true');
     icon.setAttribute('data-icon-unicode', COMPLETE_ICON_MAP[mappedIcon]);
   } else if (iconClasses.length > 0) {
-    // Log icone non mappate per debug
+    // Log solo icone vere non mappate, non classi di stile
     console.warn(`Unmapped icon: ${iconClasses.join(', ')}`);
   }
 }
