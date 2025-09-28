@@ -200,6 +200,13 @@ Hooks.once("init", () => {
     console.warn = function(...args) {
       const message = String(args[0] || '');
 
+      // Non sopprimere i nostri warning
+      if (message.includes('BRANCALONIA') ||
+          message.includes('MODULI INCOMPATIBILI') ||
+          message.includes('Brancalonia')) {
+        return originalWarn.apply(console, args);
+      }
+
       if (args[0] instanceof Error) {
         const errorMsg = args[0].message || args[0].toString();
         if (suppressPatterns.some(p => p.test(errorMsg))) {
