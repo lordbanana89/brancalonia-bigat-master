@@ -658,6 +658,22 @@ function interceptIcon(icon) {
     }
   }
 
+  // Debug per vedere perché non trova le icone
+  if (!unicode && iconClasses.includes('fa-book-atlas')) {
+    console.error('DEBUG: fa-book-atlas non trovato!', {
+      iconClasses,
+      hasInMap: 'fa-book-atlas' in ICON_UNICODE_MAP,
+      mapValue: ICON_UNICODE_MAP['fa-book-atlas']
+    });
+  }
+  if (!unicode && iconClasses.includes('fa-code')) {
+    console.error('DEBUG: fa-code non trovato!', {
+      iconClasses,
+      hasInMap: 'fa-code' in ICON_UNICODE_MAP,
+      mapValue: ICON_UNICODE_MAP['fa-code']
+    });
+  }
+
   if (unicode) {
     // Applica fix inline con !important
     const style = `
