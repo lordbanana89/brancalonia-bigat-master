@@ -34,22 +34,40 @@
     testElement.className = 'fas fa-user';
     testElement.style.position = 'absolute';
     testElement.style.left = '-9999px';
+    testElement.style.fontFamily = '"Font Awesome 6 Free"';
+    testElement.style.fontWeight = '900';
     document.body.appendChild(testElement);
 
     const styles = window.getComputedStyle(testElement, '::before');
-    const fontFamily = styles.fontFamily;
-    const content = styles.content;
+    const fontFamily = styles.fontFamily || 'none';
+    const content = styles.content || 'none';
+
+    // Check anche un'icona reale nella sidebar
+    const realIcon = document.querySelector('.directory-header i.fa-user-plus, .directory-header i.fa-folder-plus');
+    let realIconInfo = 'No real icon found';
+    if (realIcon) {
+      const realStyles = window.getComputedStyle(realIcon, '::before');
+      realIconInfo = {
+        class: realIcon.className,
+        fontFamily: realStyles.fontFamily || 'none',
+        content: realStyles.content || 'none',
+        display: realStyles.display || 'none'
+      };
+    }
 
     document.body.removeChild(testElement);
 
     // Se Font Awesome non è caricato, fontFamily non conterrà "Font Awesome"
     const isFontAwesomeLoaded = fontFamily &&
       (fontFamily.includes('Font Awesome') || fontFamily.includes('FontAwesome')) &&
-      content && content !== 'none' && content !== '""';
+      content && content !== 'none' && content !== '""' && content !== '"?"';
 
+    console.log('🔍 === FONT AWESOME DETECTION ===');
+    console.log('🔍 Test element - Font Family:', fontFamily);
+    console.log('🔍 Test element - Content:', content);
+    console.log('🔍 Real icon info:', realIconInfo);
     console.log('🔍 Font Awesome loaded:', isFontAwesomeLoaded);
-    console.log('🔍 Font Family detected:', fontFamily);
-    console.log('🔍 Content detected:', content);
+    console.log('🔍 ==============================');
 
     return isFontAwesomeLoaded;
   }

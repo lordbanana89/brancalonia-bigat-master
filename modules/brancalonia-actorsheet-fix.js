@@ -46,8 +46,20 @@ Hooks.once("init", () => {
       globalThis.ActorSheetMixin = noOpMixin;
 
       // Aggiungi anche al namespace dnd5e se esiste
-      if (dnd5e?.applications?.actor) {
-        dnd5e.applications.actor.ActorSheetMixin = noOpMixin;
+      try {
+        if (dnd5e?.applications?.actor && !dnd5e.applications.actor.ActorSheetMixin) {
+          // Controlla se è possibile assegnare
+          const descriptor = Object.getOwnPropertyDescriptor(dnd5e.applications.actor, 'ActorSheetMixin');
+
+          if (!descriptor || descriptor.configurable || descriptor.writable) {
+            dnd5e.applications.actor.ActorSheetMixin = noOpMixin;
+            console.log("✅ ActorSheetMixin added to dnd5e.applications.actor");
+          } else {
+            console.log("⚠️ Cannot modify dnd5e.applications.actor.ActorSheetMixin (read-only)");
+          }
+        }
+      } catch (e) {
+        console.log("⚠️ Could not add ActorSheetMixin to dnd5e:", e.message);
       }
 
       console.log("✅ ActorSheetMixin no-op created");
