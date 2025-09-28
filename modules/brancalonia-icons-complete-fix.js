@@ -32,10 +32,12 @@ const COMPLETE_ICON_MAP = {
   // Actions
   'fa-plus': '\uf067',
   'fa-plus-circle': '\uf055',
+  'fa-circle-plus': '\uf055',
   'fa-plus-square': '\uf0fe',
   'fa-square-plus': '\uf0fe',
   'fa-minus': '\uf068',
   'fa-minus-circle': '\uf056',
+  'fa-circle-minus': '\uf056',
   'fa-minus-square': '\uf146',
   'fa-square-minus': '\uf146',
 

@@ -580,12 +580,6 @@ const ICON_UNICODE_MAP = {
   'fa-brands': ''    // Brands style class
 };
 
-// Debug per verificare che le icone siano nella mappa
-console.log('Icon map loaded. Checking critical icons:');
-console.log('- fa-book-atlas:', 'fa-book-atlas' in ICON_UNICODE_MAP, ICON_UNICODE_MAP['fa-book-atlas']);
-console.log('- fa-code:', 'fa-code' in ICON_UNICODE_MAP, ICON_UNICODE_MAP['fa-code']);
-console.log('- fa-rectangles-mixed:', 'fa-rectangles-mixed' in ICON_UNICODE_MAP, ICON_UNICODE_MAP['fa-rectangles-mixed']);
-console.log('Total icons in map:', Object.keys(ICON_UNICODE_MAP).length);
 
 // Intercettore UNIVERSALE per elementi <i>
 (function() {
