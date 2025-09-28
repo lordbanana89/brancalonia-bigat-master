@@ -162,6 +162,10 @@ const ICON_UNICODE_MAP = {
   'fa-circle-question': '\uf059',
   'fa-ban': '\uf05e',
   'fa-cancel': '\uf05e',
+  'fa-lightbulb': '\uf0eb',
+  'fa-lightbulb-on': '\uf0eb',
+  'fa-lightbulb-exclamation': '\uf671',
+  'fa-lightbulb-exclamation-on': '\uf671',
 
   // Bars & Lists
   'fa-bars': '\uf0c9',
@@ -612,16 +616,19 @@ function interceptIcon(icon) {
   if (!icon || icon.hasAttribute('data-intercepted')) return;
 
   const classes = Array.from(icon.classList);
-  const faClasses = classes.filter(cls => cls.startsWith('fa-'));
+
+  // Filtra classi di stile PRIMA di processare
+  const styleClasses = ['fa-duotone', 'fa-solid', 'fa-regular', 'fa-light', 'fa-thin', 'fa-brands', 'fas', 'far', 'fal', 'fat', 'fab', 'fad', 'fa-fw', 'fa-ul', 'fa-li', 'fa-spin', 'fa-pulse', 'fa-border', 'fa-pull-left', 'fa-pull-right', 'fa-stack', 'fa-inverse', 'fa-flip-horizontal', 'fa-flip-vertical', 'fa-rotate-90', 'fa-rotate-180', 'fa-rotate-270', 'fa-flip-both'];
+
+  const faClasses = classes.filter(cls => cls.startsWith('fa-') && !styleClasses.includes(cls));
 
   if (faClasses.length === 0) return;
 
   // Marca come intercettato
   icon.setAttribute('data-intercepted', 'true');
 
-  // Filtra classi di stile dalle classi icona
-  const styleClasses = ['fa-duotone', 'fa-solid', 'fa-regular', 'fa-light', 'fa-thin', 'fa-brands', 'fas', 'far', 'fal', 'fat', 'fab', 'fad'];
-  const iconClasses = faClasses.filter(cls => !styleClasses.includes(cls));
+  // Le classi icona sono già filtrate
+  const iconClasses = faClasses;
 
   // Cerca il codice unicode per ogni classe icona (non di stile)
   let unicode = null;
