@@ -65,14 +65,19 @@ console.log("🔧 Brancalonia Module Compatibility - Fixing incompatible modules
       '_handleDragDrop', '_handleDragCancel'
     ];
 
-    allPossibleMethods.forEach(method => {
-      if (!Canvas.prototype[method]) {
-        Canvas.prototype[method] = function(event) {
-          console.debug(`🔧 Pre-emptive stub for ${method}`);
-          return false;
-        };
-      }
-    });
+    // Usa foundry.canvas.Canvas invece del globale Canvas
+    const CanvasClass = foundry?.canvas?.Canvas || window.Canvas;
+
+    if (CanvasClass && CanvasClass.prototype) {
+      allPossibleMethods.forEach(method => {
+        if (!CanvasClass.prototype[method]) {
+          CanvasClass.prototype[method] = function(event) {
+            console.debug(`🔧 Pre-emptive stub for ${method}`);
+            return false;
+          };
+        }
+      });
+    }
 
       console.log("✅ Pre-emptive stubs created for Canvas methods");
       return true;
