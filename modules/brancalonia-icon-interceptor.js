@@ -231,6 +231,8 @@ const ICON_UNICODE_MAP = {
   'fa-book-open': '\uf518',
   'fa-book-reader': '\uf5da',
   'fa-book-open-reader': '\uf5da',
+  'fa-book-atlas': '\uf558',
+  'fa-code': '\uf121',
   'fa-book-medical': '\uf7e6',
   'fa-book-dead': '\uf6b7',
   'fa-book-skull': '\uf6b7',

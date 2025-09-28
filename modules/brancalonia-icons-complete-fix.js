@@ -48,6 +48,24 @@ const COMPLETE_ICON_MAP = {
   'fa-sliders': '\uf1de',
   'fa-wrench': '\uf0ad',
   'fa-tools': '\uf7d9',
+
+  // Media Controls
+  'fa-backward': '\uf04a',
+  'fa-fast-forward': '\uf050',
+
+  // Time & Calendar
+  'fa-clock': '\uf017',
+  'fa-calendar-alt': '\uf073',
+
+  // Books & Code
+  'fa-book-atlas': '\uf558',
+  'fa-book-open-reader': '\uf5da',
+  'fa-code': '\uf121',
+
+  // Compress/Expand
+  'fa-compress-alt': '\uf422',
+  'fa-compress': '\uf066',
+  'fa-expand': '\uf065',
   'fa-screwdriver-wrench': '\uf7d9',
 
   // Module/Package icons
@@ -373,7 +391,8 @@ function processIcon(icon) {
                        'fa-fw', 'fa-ul', 'fa-li', 'fa-spin', 'fa-pulse', 'fa-border',
                        'fa-pull-left', 'fa-pull-right', 'fa-stack', 'fa-inverse',
                        'fa-flip-horizontal', 'fa-flip-vertical', 'fa-rotate-90',
-                       'fa-rotate-180', 'fa-rotate-270', 'fa-flip-both'];
+                       'fa-rotate-180', 'fa-rotate-270', 'fa-flip-both',
+                       'fa-2x', 'fa-3x', 'fa-4x', 'fa-5x', 'fa-lg', 'fa-sm', 'fa-xs'];
 
   // Trova tutte le classi fa- che NON sono classi di stile
   const iconClasses = Array.from(icon.classList).filter(cls =>
