@@ -36,6 +36,9 @@
 /* Import main Font Awesome CSS */
 @import url("../assets/fonts/fontawesome/css/all.min.css");
 
+/* Import anche il fix delle icone */
+@import url("brancalonia-icons-fix.css");
+
 /* Forza Font Awesome su tutte le icone */
 i[class*="fa-"],
 i.fas, i.far, i.fab, i.fa,
