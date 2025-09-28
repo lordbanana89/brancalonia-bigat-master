@@ -270,6 +270,13 @@ const ICON_UNICODE_MAP = {
   'fa-volume-xmark': '\uf6a9',
   'fa-microphone': '\uf130',
   'fa-microphone-slash': '\uf131',
+  'fa-speaker': '\uf8df',
+  'fa-speakers': '\uf8e0',
+  'fa-headphones': '\uf025',
+  'fa-headphones-alt': '\uf58f',
+  'fa-headphones-simple': '\uf58f',
+  'fa-radio': '\uf8d7',
+  'fa-podcast': '\uf2ce',
   'fa-play': '\uf04b',
   'fa-pause': '\uf04c',
   'fa-stop': '\uf04d',
@@ -539,7 +546,15 @@ const ICON_UNICODE_MAP = {
   'fa-biohazard': '\uf780',
   'fa-radiation': '\uf7b9',
   'fa-atom': '\uf5d2',
-  'fa-dna': '\uf471'
+  'fa-dna': '\uf471',
+
+  // Style classes (not icons, but need handling)
+  'fa-duotone': '',  // Duotone style class, not an icon
+  'fa-solid': '',    // Solid style class
+  'fa-regular': '',  // Regular style class
+  'fa-light': '',    // Light style class
+  'fa-thin': '',     // Thin style class
+  'fa-brands': ''    // Brands style class
 };
 
 // Intercettore UNIVERSALE per elementi <i>
@@ -602,11 +617,15 @@ function interceptIcon(icon) {
   // Marca come intercettato
   icon.setAttribute('data-intercepted', 'true');
 
-  // Cerca il codice unicode per ogni classe
+  // Filtra classi di stile dalle classi icona
+  const styleClasses = ['fa-duotone', 'fa-solid', 'fa-regular', 'fa-light', 'fa-thin', 'fa-brands', 'fas', 'far', 'fal', 'fat', 'fab', 'fad'];
+  const iconClasses = faClasses.filter(cls => !styleClasses.includes(cls));
+
+  // Cerca il codice unicode per ogni classe icona (non di stile)
   let unicode = null;
   let matchedClass = null;
 
-  for (const cls of faClasses) {
+  for (const cls of iconClasses) {
     if (ICON_UNICODE_MAP[cls]) {
       unicode = ICON_UNICODE_MAP[cls];
       matchedClass = cls;
@@ -654,8 +673,9 @@ function interceptIcon(icon) {
     icon.setAttribute('data-icon-fixed', matchedClass);
 
     console.log(`✅ Intercepted and fixed: ${matchedClass} → ${unicode}`);
-  } else {
-    console.warn(`❌ No mapping for: ${faClasses.join(', ')}`);
+  } else if (iconClasses.length > 0) {
+    // Solo logga se ci sono classi icona vere (non solo classi di stile)
+    console.warn(`❌ No mapping for: ${iconClasses.join(', ')}`);
 
     // Se non troviamo mapping, almeno assicuriamoci che non mostri testo
     if (icon.textContent && icon.textContent.trim()) {
