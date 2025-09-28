@@ -76,6 +76,7 @@ const COMPLETE_ICON_MAP = {
 
   // Module/Package icons
   'fa-cube': '\uf1b2',
+  'fa-rectangles-mixed': '\ue323',
   'fa-cubes': '\uf1b3',
   'fa-box': '\uf466',
   'fa-boxes': '\uf468',

@@ -3,7 +3,7 @@
  * Sistema di intercettazione TOTALE per trasformare QUALSIASI testo/scritte in icone reali
  */
 
-console.log('🎯 Brancalonia Icon Interceptor - TOTAL INTERCEPTION MODE');
+console.log('🎯 Brancalonia Icon Interceptor - TOTAL INTERCEPTION MODE v8.3.6');
 
 // Mappa COMPLETA di TUTTE le icone Font Awesome possibili
 const ICON_UNICODE_MAP = {
@@ -75,6 +75,7 @@ const ICON_UNICODE_MAP = {
   // Modules/Packages
   'fa-cube': '\uf1b2',
   'fa-cubes': '\uf1b3',
+  'fa-rectangles-mixed': '\ue323',
   'fa-box': '\uf466',
   'fa-boxes': '\uf468',
   'fa-package': '\uf49e',
@@ -578,6 +579,13 @@ const ICON_UNICODE_MAP = {
   'fa-thin': '',     // Thin style class
   'fa-brands': ''    // Brands style class
 };
+
+// Debug per verificare che le icone siano nella mappa
+console.log('Icon map loaded. Checking critical icons:');
+console.log('- fa-book-atlas:', 'fa-book-atlas' in ICON_UNICODE_MAP, ICON_UNICODE_MAP['fa-book-atlas']);
+console.log('- fa-code:', 'fa-code' in ICON_UNICODE_MAP, ICON_UNICODE_MAP['fa-code']);
+console.log('- fa-rectangles-mixed:', 'fa-rectangles-mixed' in ICON_UNICODE_MAP, ICON_UNICODE_MAP['fa-rectangles-mixed']);
+console.log('Total icons in map:', Object.keys(ICON_UNICODE_MAP).length);
 
 // Intercettore UNIVERSALE per elementi <i>
 (function() {
