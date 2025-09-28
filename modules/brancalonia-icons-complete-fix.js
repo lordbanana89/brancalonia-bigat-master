@@ -66,6 +66,12 @@ const COMPLETE_ICON_MAP = {
   'fa-compress-alt': '\uf422',
   'fa-compress': '\uf066',
   'fa-expand': '\uf065',
+
+  // Carets/Arrows
+  'fa-caret-down': '\uf0d7',
+  'fa-caret-up': '\uf0d8',
+  'fa-caret-left': '\uf0d9',
+  'fa-caret-right': '\uf0da',
   'fa-screwdriver-wrench': '\uf7d9',
 
   // Module/Package icons
@@ -394,22 +400,10 @@ function processIcon(icon) {
                        'fa-rotate-180', 'fa-rotate-270', 'fa-flip-both',
                        'fa-2x', 'fa-3x', 'fa-4x', 'fa-5x', 'fa-lg', 'fa-sm', 'fa-xs'];
 
-  // Debug: log tutte le classi per vedere cosa sta succedendo
-  const allClasses = Array.from(icon.classList);
-  const faClasses = allClasses.filter(cls => cls.startsWith('fa-'));
-
   // Trova tutte le classi fa- che NON sono classi di stile
-  const iconClasses = faClasses.filter(cls => !styleClasses.includes(cls));
-
-  // Debug dettagliato se ci sono problemi
-  if (faClasses.includes('fa-solid') && iconClasses.includes('fa-solid')) {
-    console.error('PROBLEMA: fa-solid non è stato filtrato!', {
-      allClasses,
-      faClasses,
-      iconClasses,
-      styleClasses: styleClasses.slice(0, 5)
-    });
-  }
+  const iconClasses = Array.from(icon.classList).filter(cls =>
+    cls.startsWith('fa-') && !styleClasses.includes(cls)
+  );
 
   // Trova la prima icona mappata
   let mappedIcon = null;
