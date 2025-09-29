@@ -1,4 +1,4 @@
-export class BagordiSystem {
+class BagordiSystem {
   constructor() {
     this.name = "Sistema Bagordi di Brancalonia";
     this.description = "Sistema per gestire i bagordi durante lo Sbraco";
@@ -298,7 +298,7 @@ export class BagordiSystem {
 }
 
 // Hook per aggiungere il sistema ai personaggi
-Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
+HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_CHARACTER, (app, html, data) => {
 
   // Converti html in jQuery object per Foundry v13
   const $html = $(html);

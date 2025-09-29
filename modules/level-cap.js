@@ -4,7 +4,7 @@
  * Compatibile con dnd5e system v3.3.x
  */
 
-export class LevelCapSystem {
+class LevelCapSystem {
   constructor() {
     this.MAX_LEVEL = 6;
     this.BASE_EMERITICENZA_XP = 14000; // XP per raggiungere livello 7
@@ -130,7 +130,7 @@ export class LevelCapSystem {
     });
 
     // Controlla XP per emergiticenze
-    Hooks.on("updateActor", (actor, updateData) => {
+    HooksManager.on(HooksManager.HOOKS.UPDATE_ACTOR, (actor, updateData) => {
       if (actor.type !== "character") return;
       const xp = foundry.utils.getProperty(actor, "system.details.xp.value");
       if (xp === undefined) return;

@@ -3,7 +3,7 @@
  * Compatibile con Foundry VTT v13 e D&D 5e v3.3.1
  */
 
-export class CompagniaManager {
+class CompagniaManager {
   constructor() {
     this.compagniaRoles = {
       "capitano": { label: "Capitano", max: 1, benefits: "Decisioni finali, +2 Intimidire" },
@@ -22,7 +22,7 @@ export class CompagniaManager {
 
   _setupHooks() {
     // Hook per aggiungere tab Compagnia alle schede personaggio
-    Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
+    HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_CHARACTER, (app, html, data) => {
       if (this._isInCompagnia(app.actor)) {
         this._addCompagniaTab(app, html);
       }

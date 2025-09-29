@@ -40,8 +40,8 @@
 /* 6. Actor Sheet Styles - Schede personaggio */
 @import url('./brancalonia-actor-sheet-complete.css');
 
-/* 7. Actor Sheet Emergency Fix - Fix urgenti layout */
-@import url('./brancalonia-actor-sheet-fix.css');
+/* 7. Actor Sheet Emergency Fix - DISABLED - 115 !important declarations breaking layout */
+/* DISABLED: @import url('./brancalonia-actor-sheet-fix.css'); */
 
 /* 8. Critical Fixes - Patch finali consolidati */
 @import url('./brancalonia-fixes-consolidated.css');

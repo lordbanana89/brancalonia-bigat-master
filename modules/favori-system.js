@@ -16,7 +16,7 @@
  * Altri Fratelli di Taglia: 100 mo extra, altrimenti 200 mo debito
  */
 
-export class FavoriSystem {
+class FavoriSystem {
   constructor() {
     this.favoriTypes = {
       riscatto: {
@@ -84,7 +84,7 @@ export class FavoriSystem {
 
   _setupHooks() {
     // Hook per UI favori nelle schede personaggio
-    Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
+    HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_CHARACTER, (app, html, data) => {
       this._renderFavoriUI(app, html);
     });
 

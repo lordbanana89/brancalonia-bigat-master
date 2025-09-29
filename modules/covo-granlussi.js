@@ -16,7 +16,7 @@
  * - Livello 3: 50 mo aggiuntivi
  */
 
-export class CovoGranlussiSystem {
+class CovoGranlussiSystem {
   constructor() {
     this.granlussi = {
       borsaNera: {
@@ -236,7 +236,7 @@ export class CovoGranlussiSystem {
 
   _setupHooks() {
     // Hook per aggiungere UI del Covo alle schede personaggio
-    Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
+    HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_CHARACTER, (app, html, data) => {
       if (game.user.isGM) {
         this._renderCovoUI(app, html);
       }

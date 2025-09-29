@@ -4,7 +4,7 @@
  * Compatibile con dnd5e system per Foundry VTT v13
  */
 
-export class DiseasesSystem {
+class DiseasesSystem {
   constructor() {
     // Database completo delle malattie di Brancalonia
     this.diseases = {
@@ -248,7 +248,7 @@ export class DiseasesSystem {
 
   _setupHooks() {
     // Hook per esposizione a malattie
-    Hooks.on("updateActor", (actor, update, options, userId) => {
+    HooksManager.on(HooksManager.HOOKS.UPDATE_ACTOR, (actor, update, options, userId) => {
       if (update.system?.attributes?.hp?.value !== undefined) {
         const hpLoss = (actor.system.attributes.hp.value - update.system.attributes.hp.value);
         if (hpLoss > 10 && Math.random() < 0.1) {

@@ -19,11 +19,11 @@ class BrancaloniaSheets {
 
     static registerSheetModifications() {
         // Override default character sheet rendering
-        Hooks.on("renderActorSheet5eCharacter", this.modifyCharacterSheet.bind(this));
-        Hooks.on("renderActorSheet5eNPC", this.modifyNPCSheet.bind(this));
+        HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_CHARACTER, this.modifyCharacterSheet.bind(this));
+        HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_NPC, this.modifyNPCSheet.bind(this));
 
         // Pre-render data preparation
-        Hooks.on("preRenderActorSheet5eCharacter", this.prepareSheetData.bind(this));
+        HooksManager.on(HooksManager.HOOKS.PRE_RENDER_ACTOR_SHEET_CHARACTER, this.prepareSheetData.bind(this));
     }
 
     static registerSheetListeners() {

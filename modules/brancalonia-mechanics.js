@@ -3,7 +3,7 @@
  * Completamente compatibile con dnd5e system per Foundry VTT v13
  */
 
-export class BrancaloniaMechanics {
+class BrancaloniaMechanics {
   constructor() {
     // Meccaniche aggiuntive dal censimento
     this.setupAdditionalMechanics();
@@ -128,7 +128,7 @@ export class BrancaloniaMechanics {
     });
 
     // Hook per KO invece di morte a 0 HP con danno non letale
-    Hooks.on("updateActor", (actor, update, options, userId) => {
+    HooksManager.on(HooksManager.HOOKS.UPDATE_ACTOR, (actor, update, options, userId) => {
       if (!update.system?.attributes?.hp) return;
 
       const hp = update.system.attributes.hp.value;

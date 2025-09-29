@@ -17,7 +17,7 @@ class BackgroundPrivileges {
 
   static _registerHooks() {
     // Hook per inizializzare i privilegi quando un personaggio viene creato/caricato
-    Hooks.on("createActor", (actor, data, options, userId) => {
+    HooksManager.on(HooksManager.HOOKS.CREATE_ACTOR, (actor, data, options, userId) => {
       if (actor.type === "character") {
         this._initializeBackgroundPrivileges(actor);
       }

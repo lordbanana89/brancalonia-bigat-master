@@ -289,7 +289,7 @@ Hooks.on("createItem", async (item, options, userId) => {
 /**
  * Hook per livelli successivi del Menagramo
  */
-Hooks.on("updateActor", async (actor, changes, options, userId) => {
+HooksManager.on(HooksManager.HOOKS.UPDATE_ACTOR, async (actor, changes, options, userId) => {
     if (!changes.system?.details?.level) return;
 
     const warlock = actor.items.find(i => i.type === "class" && i.name === "Warlock");

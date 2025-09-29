@@ -10,7 +10,7 @@
  * - Sistema Fratelli di Taglia con livelli di notorietà
  */
 
-export class MalefatteTaglieNomeaSystem {
+class MalefatteTaglieNomeaSystem {
   constructor() {
     // Tabella Malefatte dal manuale (pag. 46-47)
     this.malefatte = [
@@ -85,12 +85,12 @@ export class MalefatteTaglieNomeaSystem {
 
   _setupHooks() {
     // Hook per scheda personaggio
-    Hooks.on("renderActorSheet5eCharacter", (app, html, data) => {
+    HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_CHARACTER, (app, html, data) => {
       this._renderTagliaSection(app, html);
     });
 
     // Hook per creazione personaggio
-    Hooks.on("createActor", (actor) => {
+    HooksManager.on(HooksManager.HOOKS.CREATE_ACTOR, (actor) => {
       if (actor.type === "character") {
         this._initializeCharacterMalefatte(actor);
       }
