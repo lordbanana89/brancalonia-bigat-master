@@ -3,8 +3,8 @@
 /* Authentic Italian Renaissance Color Palette      */
 /* ================================================ */
 
-/* Import Renaissance-inspired fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Uncial+Antiqua&display=swap');
+/* Import Renaissance-inspired fonts - Commented to avoid external dependency */
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Uncial+Antiqua&display=swap'); */
 
 /* ================================================ */
 /* ROOT VARIABLES - ITALIAN RENAISSANCE PALETTE     */

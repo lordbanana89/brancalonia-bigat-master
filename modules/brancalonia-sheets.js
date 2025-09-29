@@ -4,7 +4,7 @@
  * Integrates Brancalonia-specific mechanics with D&D 5e system
  */
 
-export class BrancaloniaSheets {
+class BrancaloniaSheets {
 
     static initialize() {
         console.log("📜 Brancalonia Sheets | Initializing character sheet modifications");
@@ -1012,5 +1012,5 @@ Hooks.once("ready", () => {
     BrancaloniaSheets.initialize();
 });
 
-// Export for use in other modules
-export default BrancaloniaSheets;
+// Export for use in other modules - using global for non-ESM
+window.BrancaloniaSheets = BrancaloniaSheets;

@@ -3,7 +3,7 @@
  * Implementa i privilegi speciali dei background di Brancalonia
  */
 
-export class BackgroundPrivileges {
+class BackgroundPrivileges {
 
   static initialize() {
     console.log("🎭 Brancalonia | Inizializzazione privilegi background");
@@ -324,5 +324,5 @@ Hooks.once("ready", () => {
   game.brancalonia.backgroundPrivileges = BackgroundPrivileges;
 });
 
-// Esporta per l'uso in altri moduli
-export default BackgroundPrivileges;
+// Esporta per l'uso in altri moduli - usando global per non-ESM
+window.BackgroundPrivileges = BackgroundPrivileges;

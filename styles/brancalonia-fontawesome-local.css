@@ -33,11 +33,11 @@
        url("../assets/fonts/fontawesome/webfonts/fa-brands-400.ttf") format("truetype");
 }
 
-/* Import main Font Awesome CSS */
-@import url("../assets/fonts/fontawesome/css/all.min.css");
+/* Import main Font Awesome CSS - Commented as file is missing */
+/* @import url("../assets/fonts/fontawesome/css/all.min.css"); */
 
 /* Import anche il fix delle icone */
-@import url("brancalonia-icons-fix.css");
+@import url("./brancalonia-icons-fix.css");
 
 /* Forza Font Awesome su tutte le icone */
 i[class*="fa-"],

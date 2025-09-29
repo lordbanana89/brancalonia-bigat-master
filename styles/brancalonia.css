@@ -22,6 +22,9 @@
 /* 1. Design System Tokens - Base del tema */
 @import url('./brancalonia-tokens.css');
 
+/* 1b. Variables Fix - Ensure global availability */
+@import url('./brancalonia-variables-fix.css');
+
 /* 2. Core Theme Styles - Stili principali */
 @import url('./brancalonia-main.css');
 
