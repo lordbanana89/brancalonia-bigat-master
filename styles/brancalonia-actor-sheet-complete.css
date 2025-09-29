@@ -9,14 +9,14 @@
      BASE ACTOR SHEET STRUCTURE
      ================================================ */
 
-  .theme-brancalonia .dnd5e.sheet.actor {
+  .dnd5e.sheet.actor.brancalonia-sheet {
     --sheet-padding: var(--bcl-space-3);
     --header-height: 140px;
     --tab-height: 36px;
     --section-gap: var(--bcl-space-3);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .window-content {
+  .dnd5e.sheet.actor.brancalonia-sheet .window-content {
     background: var(--bcl-surface);
     background-image:
       linear-gradient(135deg,
@@ -38,7 +38,7 @@
      CHARACTER HEADER - Area critica
      ================================================ */
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header {
     background: linear-gradient(135deg,
       var(--bcl-paper-strong) 0%,
       var(--bcl-paper) 100%);
@@ -56,7 +56,7 @@
   }
 
   /* Decorazione angolare header */
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header::before {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header::before {
     content: "";
     position: absolute;
     top: -2px;
@@ -69,7 +69,7 @@
   }
 
   /* PORTRAIT - Elemento cruciale */
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .profile {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .profile {
     position: relative;
     width: 110px;
     height: 110px;
@@ -85,7 +85,7 @@
     background: var(--bcl-paper-weak);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .profile:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .profile:hover {
     transform: scale(1.05);
     box-shadow:
       0 0 0 2px var(--bcl-gold-hover),
@@ -93,7 +93,7 @@
       0 0 30px var(--bcl-shadow-gold);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .profile img {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .profile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -101,7 +101,7 @@
   }
 
   /* Edit portrait indicator */
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .profile::after {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .profile::after {
     content: "\f303"; /* fa-pen-to-square */
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -121,12 +121,12 @@
     transition: opacity var(--bcl-transition-fast);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .profile:hover::after {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .profile:hover::after {
     opacity: 0.9;
   }
 
   /* CHARACTER INFO SECTION */
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .header-details {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .header-details {
     display: flex;
     flex-direction: column;
     gap: var(--bcl-space-2);
@@ -134,12 +134,12 @@
   }
 
   /* Character Name - CRITICO */
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .charname {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .charname {
     margin: 0;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .charname input,
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header h1 input {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .charname input,
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header h1 input {
     font-family: var(--bcl-font-display);
     font-size: var(--bcl-font-size-3xl);
     font-weight: var(--bcl-font-weight-bold);
@@ -156,22 +156,22 @@
     padding: 0 var(--bcl-space-2);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .charname input:hover,
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .charname input:focus {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .charname input:hover,
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .charname input:focus {
     border-bottom-color: var(--bcl-gold);
     background: rgba(255,255,255,0.1);
     outline: none;
   }
 
   /* Character Summary (class, level, race, background) */
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .summary {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .summary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: var(--bcl-space-2);
     padding: var(--bcl-space-2) 0;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .summary li {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .summary li {
     display: flex;
     align-items: center;
     gap: var(--bcl-space-1);
@@ -180,7 +180,7 @@
     color: var(--bcl-muted);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .summary li span.label {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .summary li span.label {
     font-weight: var(--bcl-font-weight-semibold);
     color: var(--bcl-ink-weak);
     text-transform: uppercase;
@@ -188,15 +188,15 @@
     letter-spacing: var(--bcl-letter-spacing-wide);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .summary li input,
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .summary li span:not(.label) {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .summary li input,
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .summary li span:not(.label) {
     color: var(--bcl-ink);
     font-weight: var(--bcl-font-weight-medium);
     flex: 1;
   }
 
   /* Experience Bar */
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .experience {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .experience {
     grid-column: 1 / -1;
     position: relative;
     height: 20px;
@@ -206,7 +206,7 @@
     overflow: hidden;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .experience .xp-bar {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .experience .xp-bar {
     position: absolute;
     height: 100%;
     background: linear-gradient(90deg,
@@ -216,7 +216,7 @@
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-header .experience .xp-value {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-header .experience .xp-value {
     position: relative;
     z-index: 1;
     text-align: center;
@@ -231,7 +231,7 @@
      ATTRIBUTES BAR (AC, HP, HD, Speed, Init, Prof)
      ================================================ */
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes {
     background: var(--bcl-paper-weak);
     border: 1px solid var(--bcl-border);
     border-radius: var(--bcl-radius-md);
@@ -244,7 +244,7 @@
   }
 
   /* AC - Armor Class (CRITICO) */
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .ac {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .ac {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -262,14 +262,14 @@
     transition: all var(--bcl-transition-fast);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .ac:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .ac:hover {
     transform: scale(1.1);
     box-shadow:
       0 0 20px var(--bcl-shadow-gold),
       inset 0 0 10px rgba(201,165,74,0.2);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .ac .ac-value {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .ac .ac-value {
     font-family: var(--bcl-font-display);
     font-size: var(--bcl-font-size-3xl);
     font-weight: var(--bcl-font-weight-black);
@@ -277,7 +277,7 @@
     line-height: 1;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .ac .ac-label {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .ac .ac-label {
     font-size: var(--bcl-font-size-xs);
     text-transform: uppercase;
     color: var(--bcl-muted);
@@ -286,14 +286,14 @@
   }
 
   /* HP - Hit Points (CRITICO) */
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .hp {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .hp {
     grid-column: span 2;
     display: flex;
     flex-direction: column;
     gap: var(--bcl-space-1);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .hp .hp-bar {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .hp .hp-bar {
     position: relative;
     height: 30px;
     background: var(--bcl-surface-sunken);
@@ -302,7 +302,7 @@
     overflow: hidden;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .hp .hp-bar .hp-fill {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .hp .hp-bar .hp-fill {
     position: absolute;
     height: 100%;
     background: linear-gradient(90deg,
@@ -314,19 +314,19 @@
   }
 
   /* HP fill color based on percentage */
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .hp .hp-bar[data-hp-percent="high"] .hp-fill {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .hp .hp-bar[data-hp-percent="high"] .hp-fill {
     background-position: 100% 0;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .hp .hp-bar[data-hp-percent="medium"] .hp-fill {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .hp .hp-bar[data-hp-percent="medium"] .hp-fill {
     background-position: 50% 0;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .hp .hp-bar[data-hp-percent="low"] .hp-fill {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .hp .hp-bar[data-hp-percent="low"] .hp-fill {
     background-position: 0% 0;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .hp .hp-values {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .hp .hp-values {
     display: flex;
     gap: var(--bcl-space-2);
     align-items: center;
@@ -336,7 +336,7 @@
     margin-top: -25px;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .attributes .hp input {
+  .dnd5e.sheet.actor.brancalonia-sheet .attributes .hp input {
     width: 50px;
     text-align: center;
     font-weight: var(--bcl-font-weight-bold);
@@ -349,7 +349,7 @@
      ABILITY SCORES (STR, DEX, CON, INT, WIS, CHA)
      ================================================ */
 
-  .theme-brancalonia .dnd5e.sheet.actor .ability-scores {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability-scores {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: var(--bcl-space-2);
@@ -362,7 +362,7 @@
   }
 
   /* Singolo ability score */
-  .theme-brancalonia .dnd5e.sheet.actor .ability {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -376,7 +376,7 @@
     position: relative;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .ability:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability:hover {
     background: linear-gradient(135deg,
       var(--bcl-gold) 0%,
       var(--bcl-gold-hover) 100%);
@@ -387,13 +387,13 @@
     z-index: 10;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .ability:hover * {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability:hover * {
     color: var(--bcl-text-inverse) !important;
   }
 
   /* Ability name */
-  .theme-brancalonia .dnd5e.sheet.actor .ability .ability-name,
-  .theme-brancalonia .dnd5e.sheet.actor .ability h4 {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability .ability-name,
+  .dnd5e.sheet.actor.brancalonia-sheet .ability h4 {
     font-family: var(--bcl-font-display);
     font-size: var(--bcl-font-size-xs);
     font-weight: var(--bcl-font-weight-black);
@@ -404,7 +404,7 @@
   }
 
   /* Ability score */
-  .theme-brancalonia .dnd5e.sheet.actor .ability .score {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability .score {
     font-size: var(--bcl-font-size-2xl);
     font-weight: var(--bcl-font-weight-bold);
     color: var(--bcl-ink-strong);
@@ -413,23 +413,23 @@
   }
 
   /* Ability modifier */
-  .theme-brancalonia .dnd5e.sheet.actor .ability .mod {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability .mod {
     font-size: var(--bcl-font-size-lg);
     font-weight: var(--bcl-font-weight-semibold);
     color: var(--bcl-gold);
     position: relative;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .ability .mod::before {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability .mod::before {
     content: "(";
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .ability .mod::after {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability .mod::after {
     content: ")";
   }
 
   /* Saving throw proficiency indicator */
-  .theme-brancalonia .dnd5e.sheet.actor .ability .save-prof {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability .save-prof {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -440,7 +440,7 @@
     background: var(--bcl-surface);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .ability .save-prof.proficient {
+  .dnd5e.sheet.actor.brancalonia-sheet .ability .save-prof.proficient {
     background: var(--bcl-gold);
     box-shadow: 0 0 4px var(--bcl-shadow-gold);
   }
@@ -449,7 +449,7 @@
      SKILLS SECTION
      ================================================ */
 
-  .theme-brancalonia .dnd5e.sheet.actor .skills {
+  .dnd5e.sheet.actor.brancalonia-sheet .skills {
     background: var(--bcl-paper-weak);
     border: 1px solid var(--bcl-border);
     border-radius: var(--bcl-radius-md);
@@ -461,12 +461,12 @@
     scrollbar-color: var(--bcl-gold) var(--bcl-surface-secondary);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .skills-list {
+  .dnd5e.sheet.actor.brancalonia-sheet .skills-list {
     display: grid;
     gap: var(--bcl-space-1);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .skill {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill {
     display: grid;
     grid-template-columns: 20px 1fr auto auto;
     gap: var(--bcl-space-2);
@@ -479,7 +479,7 @@
     cursor: pointer;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .skill:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill:hover {
     background: var(--bcl-surface-tertiary);
     transform: translateX(2px);
     box-shadow:
@@ -488,7 +488,7 @@
   }
 
   /* Proficiency indicator */
-  .theme-brancalonia .dnd5e.sheet.actor .skill .proficiency {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill .proficiency {
     width: 16px;
     height: 16px;
     border: 2px solid var(--bcl-border-strong);
@@ -499,15 +499,15 @@
     position: relative;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .skill .proficiency.half {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill .proficiency.half {
     background: var(--bcl-paper-strong);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .skill .proficiency.prof {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill .proficiency.prof {
     background: var(--bcl-gold);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .skill .proficiency.expert {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill .proficiency.expert {
     background: var(--bcl-gold-hover);
     box-shadow:
       0 0 6px var(--bcl-shadow-gold),
@@ -515,20 +515,20 @@
   }
 
   /* Skill name */
-  .theme-brancalonia .dnd5e.sheet.actor .skill .skill-name {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill .skill-name {
     font-family: var(--bcl-font-serif);
     font-weight: var(--bcl-font-weight-medium);
     color: var(--bcl-ink);
     text-decoration: none;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .skill .skill-name:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill .skill-name:hover {
     color: var(--bcl-gold);
     text-decoration: underline;
   }
 
   /* Skill ability */
-  .theme-brancalonia .dnd5e.sheet.actor .skill .skill-ability {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill .skill-ability {
     font-size: var(--bcl-font-size-xs);
     color: var(--bcl-muted);
     text-transform: uppercase;
@@ -536,7 +536,7 @@
   }
 
   /* Skill modifier */
-  .theme-brancalonia .dnd5e.sheet.actor .skill .skill-mod {
+  .dnd5e.sheet.actor.brancalonia-sheet .skill .skill-mod {
     font-weight: var(--bcl-font-weight-bold);
     font-size: var(--bcl-font-size-lg);
     color: var(--bcl-gold);
@@ -548,7 +548,7 @@
      TABS NAVIGATION
      ================================================ */
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-tabs {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-tabs {
     display: flex;
     gap: var(--bcl-space-1);
     border-bottom: 2px solid var(--bcl-gold);
@@ -561,7 +561,7 @@
     box-shadow: 0 2px 4px var(--bcl-shadow-sm);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-tabs .item {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-tabs .item {
     flex: 0 0 auto;
     padding: var(--bcl-space-2) var(--bcl-space-4);
     background: transparent;
@@ -578,12 +578,12 @@
     position: relative;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-tabs .item:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-tabs .item:hover {
     color: var(--bcl-ink);
     background: var(--bcl-surface-tertiary);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-tabs .item.active {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-tabs .item.active {
     color: var(--bcl-gold);
     background: var(--bcl-surface);
     border-bottom-color: var(--bcl-gold);
@@ -591,7 +591,7 @@
   }
 
   /* Tab icon */
-  .theme-brancalonia .dnd5e.sheet.actor .sheet-tabs .item i {
+  .dnd5e.sheet.actor.brancalonia-sheet .sheet-tabs .item i {
     margin-right: var(--bcl-space-1);
   }
 
@@ -599,11 +599,11 @@
      INVENTORY TAB
      ================================================ */
 
-  .theme-brancalonia .dnd5e.sheet.actor .inventory {
+  .dnd5e.sheet.actor.brancalonia-sheet .inventory {
     padding: var(--bcl-space-3);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .inventory-filters {
+  .dnd5e.sheet.actor.brancalonia-sheet .inventory-filters {
     display: flex;
     gap: var(--bcl-space-2);
     margin-bottom: var(--bcl-space-3);
@@ -613,14 +613,14 @@
     border-radius: var(--bcl-radius-md);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .inventory-list {
+  .dnd5e.sheet.actor.brancalonia-sheet .inventory-list {
     background: var(--bcl-surface);
     border: 1px solid var(--bcl-border);
     border-radius: var(--bcl-radius-md);
     overflow: hidden;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .items-header {
+  .dnd5e.sheet.actor.brancalonia-sheet .items-header {
     display: grid;
     grid-template-columns: 36px 1fr 80px 60px 60px 40px;
     gap: var(--bcl-space-2);
@@ -635,7 +635,7 @@
     color: var(--bcl-muted);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item {
+  .dnd5e.sheet.actor.brancalonia-sheet .item {
     display: grid;
     grid-template-columns: 36px 1fr 80px 60px 60px 40px;
     gap: var(--bcl-space-2);
@@ -646,22 +646,22 @@
     cursor: move;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .item:hover {
     background: var(--bcl-paper-weak);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item.equipped {
+  .dnd5e.sheet.actor.brancalonia-sheet .item.equipped {
     background: rgba(201,165,74,0.1);
     border-left: 3px solid var(--bcl-gold);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item.attuned {
+  .dnd5e.sheet.actor.brancalonia-sheet .item.attuned {
     background: rgba(46,125,100,0.1);
     border-left: 3px solid var(--bcl-emerald);
   }
 
   /* Item image */
-  .theme-brancalonia .dnd5e.sheet.actor .item-image {
+  .dnd5e.sheet.actor.brancalonia-sheet .item-image {
     width: 30px;
     height: 30px;
     border: 1px solid var(--bcl-border);
@@ -671,14 +671,14 @@
     transition: all var(--bcl-transition-fast);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item-image:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .item-image:hover {
     transform: scale(1.2);
     box-shadow: 0 2px 8px var(--bcl-shadow-md);
     z-index: 10;
   }
 
   /* Item name */
-  .theme-brancalonia .dnd5e.sheet.actor .item-name {
+  .dnd5e.sheet.actor.brancalonia-sheet .item-name {
     font-family: var(--bcl-font-serif);
     font-weight: var(--bcl-font-weight-medium);
     color: var(--bcl-ink);
@@ -688,52 +688,52 @@
     gap: var(--bcl-space-1);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item-name:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .item-name:hover {
     color: var(--bcl-gold);
     text-decoration: underline;
   }
 
   /* Item rarity color coding */
-  .theme-brancalonia .dnd5e.sheet.actor .item[data-rarity="uncommon"] .item-name {
+  .dnd5e.sheet.actor.brancalonia-sheet .item[data-rarity="uncommon"] .item-name {
     color: #1fc219;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item[data-rarity="rare"] .item-name {
+  .dnd5e.sheet.actor.brancalonia-sheet .item[data-rarity="rare"] .item-name {
     color: #0070dd;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item[data-rarity="veryRare"] .item-name {
+  .dnd5e.sheet.actor.brancalonia-sheet .item[data-rarity="veryRare"] .item-name {
     color: #a335ee;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item[data-rarity="legendary"] .item-name {
+  .dnd5e.sheet.actor.brancalonia-sheet .item[data-rarity="legendary"] .item-name {
     color: #ff8000;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item[data-rarity="artifact"] .item-name {
+  .dnd5e.sheet.actor.brancalonia-sheet .item[data-rarity="artifact"] .item-name {
     color: #e6cc80;
   }
 
   /* Item controls */
-  .theme-brancalonia .dnd5e.sheet.actor .item-controls {
+  .dnd5e.sheet.actor.brancalonia-sheet .item-controls {
     display: flex;
     gap: var(--bcl-space-1);
     justify-content: flex-end;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item-control {
+  .dnd5e.sheet.actor.brancalonia-sheet .item-control {
     color: var(--bcl-muted);
     cursor: pointer;
     transition: all var(--bcl-transition-fast);
     font-size: var(--bcl-font-size-sm);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item-control:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .item-control:hover {
     color: var(--bcl-gold);
     transform: scale(1.2);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item-control.item-delete:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .item-control.item-delete:hover {
     color: var(--bcl-danger);
   }
 
@@ -741,12 +741,12 @@
      SPELLCASTING TAB
      ================================================ */
 
-  .theme-brancalonia .dnd5e.sheet.actor .spellcasting {
+  .dnd5e.sheet.actor.brancalonia-sheet .spellcasting {
     padding: var(--bcl-space-3);
   }
 
   /* Spell level sections */
-  .theme-brancalonia .dnd5e.sheet.actor .spell-level {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell-level {
     margin-bottom: var(--bcl-space-4);
     background: var(--bcl-surface);
     border: 1px solid var(--bcl-border);
@@ -754,7 +754,7 @@
     overflow: hidden;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .spell-level-header {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell-level-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -766,20 +766,20 @@
     cursor: pointer;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .spell-level-header:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell-level-header:hover {
     background: linear-gradient(90deg,
       var(--bcl-surface-tertiary) 0%,
       var(--bcl-paper) 100%);
   }
 
   /* Spell slots */
-  .theme-brancalonia .dnd5e.sheet.actor .spell-slots {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell-slots {
     display: flex;
     gap: var(--bcl-space-2);
     align-items: center;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .spell-slot {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell-slot {
     width: 24px;
     height: 24px;
     border: 2px solid var(--bcl-border-strong);
@@ -789,24 +789,24 @@
     transition: all var(--bcl-transition-fast);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .spell-slot.available {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell-slot.available {
     background: var(--bcl-gold);
     box-shadow:
       0 0 6px var(--bcl-shadow-gold),
       inset 0 1px 0 rgba(255,255,255,0.3);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .spell-slot.expended {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell-slot.expended {
     background: var(--bcl-surface-sunken);
     opacity: 0.5;
   }
 
   /* Spell list */
-  .theme-brancalonia .dnd5e.sheet.actor .spell-list {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell-list {
     padding: var(--bcl-space-2);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .spell {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell {
     display: grid;
     grid-template-columns: 30px 1fr auto auto auto;
     gap: var(--bcl-space-2);
@@ -816,11 +816,11 @@
     transition: all var(--bcl-transition-fast);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .spell:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell:hover {
     background: var(--bcl-paper-weak);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .spell.prepared {
+  .dnd5e.sheet.actor.brancalonia-sheet .spell.prepared {
     background: rgba(201,165,74,0.05);
     border-left: 2px solid var(--bcl-gold);
   }
@@ -829,11 +829,11 @@
      FEATURES TAB
      ================================================ */
 
-  .theme-brancalonia .dnd5e.sheet.actor .features {
+  .dnd5e.sheet.actor.brancalonia-sheet .features {
     padding: var(--bcl-space-3);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .feature-category {
+  .dnd5e.sheet.actor.brancalonia-sheet .feature-category {
     margin-bottom: var(--bcl-space-3);
     background: var(--bcl-surface);
     border: 1px solid var(--bcl-border);
@@ -841,7 +841,7 @@
     overflow: hidden;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .feature-header {
+  .dnd5e.sheet.actor.brancalonia-sheet .feature-header {
     padding: var(--bcl-space-3);
     background: var(--bcl-surface-tertiary);
     border-bottom: 2px solid var(--bcl-gold);
@@ -857,7 +857,7 @@
      ================================================ */
 
   /* Infamia Tracker */
-  .theme-brancalonia .dnd5e.sheet.actor .infamia-tracker {
+  .dnd5e.sheet.actor.brancalonia-sheet .infamia-tracker {
     background: linear-gradient(135deg,
       var(--bcl-wine) 0%,
       var(--bcl-accent-strong) 100%);
@@ -871,7 +871,7 @@
     position: relative;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .infamia-tracker::before {
+  .dnd5e.sheet.actor.brancalonia-sheet .infamia-tracker::before {
     content: "";
     position: absolute;
     top: -10px;
@@ -882,20 +882,20 @@
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .infamia-tracker h3 {
+  .dnd5e.sheet.actor.brancalonia-sheet .infamia-tracker h3 {
     font-family: var(--bcl-font-display);
     color: var(--bcl-text-inverse);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     margin-bottom: var(--bcl-space-3);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .infamia-points {
+  .dnd5e.sheet.actor.brancalonia-sheet .infamia-points {
     display: flex;
     gap: var(--bcl-space-2);
     justify-content: center;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .infamia-point {
+  .dnd5e.sheet.actor.brancalonia-sheet .infamia-point {
     width: 30px;
     height: 30px;
     border: 2px solid var(--bcl-gold);
@@ -905,7 +905,7 @@
     transition: all var(--bcl-transition-fast);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .infamia-point.active {
+  .dnd5e.sheet.actor.brancalonia-sheet .infamia-point.active {
     background: var(--bcl-gold);
     box-shadow:
       0 0 10px var(--bcl-shadow-gold),
@@ -913,7 +913,7 @@
   }
 
   /* Baraonda Tracker */
-  .theme-brancalonia .dnd5e.sheet.actor .baraonda-tracker {
+  .dnd5e.sheet.actor.brancalonia-sheet .baraonda-tracker {
     background: linear-gradient(135deg,
       var(--bcl-terracotta) 0%,
       var(--bcl-ochre) 100%);
@@ -927,11 +927,11 @@
   }
 
   /* Oggetti Scadenti (Shoddy Items) indicator */
-  .theme-brancalonia .dnd5e.sheet.actor .item.shoddy {
+  .dnd5e.sheet.actor.brancalonia-sheet .item.shoddy {
     position: relative;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor .item.shoddy::after {
+  .dnd5e.sheet.actor.brancalonia-sheet .item.shoddy::after {
     content: "⚠";
     position: absolute;
     top: 2px;
@@ -946,53 +946,53 @@
      ================================================ */
 
   /* Scrollbar styling */
-  .theme-brancalonia .dnd5e.sheet.actor ::-webkit-scrollbar {
+  .dnd5e.sheet.actor.brancalonia-sheet ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor ::-webkit-scrollbar-track {
+  .dnd5e.sheet.actor.brancalonia-sheet ::-webkit-scrollbar-track {
     background: var(--bcl-surface-secondary);
     border-radius: var(--bcl-radius-sm);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor ::-webkit-scrollbar-thumb {
+  .dnd5e.sheet.actor.brancalonia-sheet ::-webkit-scrollbar-thumb {
     background: var(--bcl-gold);
     border-radius: var(--bcl-radius-sm);
     border: 1px solid var(--bcl-surface-secondary);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor ::-webkit-scrollbar-thumb:hover {
+  .dnd5e.sheet.actor.brancalonia-sheet ::-webkit-scrollbar-thumb:hover {
     background: var(--bcl-gold-hover);
   }
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
-    .theme-brancalonia .dnd5e.sheet.actor .sheet-header {
+    .dnd5e.sheet.actor.brancalonia-sheet .sheet-header {
       grid-template-columns: 80px 1fr;
     }
 
-    .theme-brancalonia .dnd5e.sheet.actor .ability-scores {
+    .dnd5e.sheet.actor.brancalonia-sheet .ability-scores {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    .theme-brancalonia .dnd5e.sheet.actor .attributes {
+    .dnd5e.sheet.actor.brancalonia-sheet .attributes {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   /* Performance optimizations */
-  .theme-brancalonia .dnd5e.sheet.actor .tab:not(.active) {
+  .dnd5e.sheet.actor.brancalonia-sheet .tab:not(.active) {
     display: none;
   }
 
   /* Loading state */
-  .theme-brancalonia .dnd5e.sheet.actor.loading .window-content {
+  .dnd5e.sheet.actor.brancalonia-sheet.loading .window-content {
     opacity: 0.5;
     pointer-events: none;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor.loading::after {
+  .dnd5e.sheet.actor.brancalonia-sheet.loading::after {
     content: "";
     position: absolute;
     top: 50%;
