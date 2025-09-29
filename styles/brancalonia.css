@@ -34,8 +34,11 @@
 /* 5. Module Compatibility - Integrazioni */
 @import url('./brancalonia-module-compat.css');
 
-/* 6. Critical Fixes - Patch finali */
-@import url('./brancalonia-fixes.css');
+/* 6. Actor Sheet Styles - Schede personaggio */
+@import url('./brancalonia-actor-sheet-complete.css');
+
+/* 7. Critical Fixes - Patch finali consolidati */
+@import url('./brancalonia-fixes-consolidated.css');
 
 /* FILE RIMOSSI (legacy/ridondanti):
  * - brancalonia-fontawesome-local.css (integrato in fixes)

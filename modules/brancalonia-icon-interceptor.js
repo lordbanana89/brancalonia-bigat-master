@@ -3,7 +3,7 @@
  * Sistema di intercettazione TOTALE per trasformare QUALSIASI testo/scritte in icone reali
  */
 
-console.log('🎯 Brancalonia Icon Interceptor - TOTAL INTERCEPTION MODE v8.3.6');
+console.log('🎯 Brancalonia Icon Interceptor - TOTAL INTERCEPTION MODE v8.3.8');
 
 // Mappa COMPLETA di TUTTE le icone Font Awesome possibili
 const ICON_UNICODE_MAP = {
@@ -206,6 +206,8 @@ const ICON_UNICODE_MAP = {
   'fa-dice': '\uf522',
   'fa-dice-d20': '\uf6cf',
   'fa-dice-d6': '\uf6d1',
+  'fa-cards': '\uf0e6',
+  'fa-playing-card': '\uf2de',
   'fa-dice-one': '\uf525',
   'fa-dice-two': '\uf528',
   'fa-dice-three': '\uf527',
@@ -239,6 +241,7 @@ const ICON_UNICODE_MAP = {
   'fa-book-skull': '\uf6b7',
   'fa-bookmark': '\uf02e',
   'fa-scroll': '\uf70e',
+  'fa-scroll-old': '\uf70e',
   'fa-atlas': '\uf558',
   'fa-journal-whills': '\uf66a',
   'fa-newspaper': '\uf1ea',
@@ -320,6 +323,10 @@ const ICON_UNICODE_MAP = {
   'fa-unlock-keyhole': '\uf13e',
   'fa-lock-open': '\uf3c1',
   'fa-key': '\uf084',
+  'fa-sign-out': '\uf08b',
+  'fa-sign-out-alt': '\uf2f5',
+  'fa-arrow-right-from-bracket': '\uf08b',
+  'fa-right-from-bracket': '\uf2f5',
   'fa-shield': '\uf132',
   'fa-shield-alt': '\uf3ed',
   'fa-shield-halved': '\uf3ed',
@@ -380,6 +387,8 @@ const ICON_UNICODE_MAP = {
   'fa-hand-pointer': '\uf25a',
   'fa-hand-peace': '\uf25b',
   'fa-handshake': '\uf2b5',
+  'fa-handshake-angle': '\uf4c4',
+  'fa-handshake-simple': '\uf4c6',
   'fa-hands': '\uf2a7',
   'fa-hands-helping': '\uf4c4',
   'fa-hands-clapping': '\ue1a8',
@@ -513,6 +522,8 @@ const ICON_UNICODE_MAP = {
 
   // Buildings
   'fa-building': '\uf1ad',
+  'fa-block-brick': '\ue3db',
+  'fa-block-brick-fire': '\ue3dc',
   'fa-store': '\uf54e',
   'fa-shop': '\uf54f',
   'fa-hotel': '\uf594',
@@ -530,6 +541,12 @@ const ICON_UNICODE_MAP = {
   'fa-campground': '\uf6bb',
   'fa-warehouse': '\uf494',
   'fa-factory': '\uf275',
+  'fa-door-closed': '\uf52a',
+  'fa-door-open': '\uf52b',
+  'fa-window-close': '\uf410',
+  'fa-window-maximize': '\uf2d0',
+  'fa-window-minimize': '\uf2d1',
+  'fa-window-restore': '\uf2d2',
 
   // Transportation
   'fa-car': '\uf1b9',
@@ -548,6 +565,10 @@ const ICON_UNICODE_MAP = {
   'fa-ship': '\uf21a',
   'fa-anchor': '\uf13d',
   'fa-rocket': '\uf135',
+  'fa-hiking': '\uf6ec',
+  'fa-person-hiking': '\uf6ec',
+  'fa-walking': '\uf554',
+  'fa-person-walking': '\uf554',
 
   // Nature
   'fa-tree': '\uf1bb',
