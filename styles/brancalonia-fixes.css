@@ -1,153 +1,171 @@
 /* ================================================ */
 /* BRANCALONIA CRITICAL FIXES                      */
-/* Fix icone e layout profilo                      */
+/* Compatibility patches without !important        */
 /* ================================================ */
 
-/* ================================================
-   FIX 1: Font Awesome Icons
-   ================================================ */
+@layer module {
+  /* ================================================
+     FIX 1: Font Awesome Icons
+     Using proper specificity instead of !important
+     ================================================ */
 
-/* Assicura che Font Awesome sia caricato correttamente */
-.theme-brancalonia i[class*="fa-"],
-.theme-brancalonia i[class*="fas"],
-.theme-brancalonia i[class*="far"],
-.theme-brancalonia i[class*="fab"] {
-  font-family: "Font Awesome 6", "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome" !important;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
+  /* Ensure Font Awesome loads correctly with higher specificity */
+  .theme-brancalonia i[class*="fa-"],
+  .theme-brancalonia i[class*="fas"],
+  .theme-brancalonia i[class*="far"],
+  .theme-brancalonia i[class*="fab"],
+  .theme-brancalonia .window-app i[class*="fa-"],
+  .theme-brancalonia .sheet i[class*="fa-"] {
+    font-family: "Font Awesome 6", "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome";
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+  }
+
+  /* Correct weight for solid icons using cascade layers */
+  .theme-brancalonia .fas,
+  .theme-brancalonia i.fas,
+  .theme-brancalonia .window-app .fas,
+  .theme-brancalonia .sheet .fas {
+    font-weight: 900;
+  }
+
+  /* Correct weight for regular icons */
+  .theme-brancalonia .far,
+  .theme-brancalonia i.far,
+  .theme-brancalonia .window-app .far,
+  .theme-brancalonia .sheet .far {
+    font-weight: 400;
+  }
+
+  /* ================================================
+     FIX 2: Character Sheet Profile Layout
+     Scoped properly under theme class
+     ================================================ */
+
+  /* Fix main profile container */
+  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+  }
+
+  /* Fix profile image */
+  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header .profile {
+    position: relative;
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--bcl-gold);
+    background: var(--bcl-paper-weak);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header .profile img,
+  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+  }
+
+  /* Fix character info layout */
+  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header .header-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Fix character name */
+  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header h1.charname,
+  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header input[name="name"] {
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--bcl-gold);
+    font-family: var(--bcl-font-display);
+    font-size: 1.8rem;
+    color: var(--bcl-ink-strong);
+    width: 100%;
+  }
+
+  /* ================================================
+     FIX 3: Attributes & Stats Layout
+     ================================================ */
+
+  /* Fix ability scores container */
+  .theme-brancalonia .dnd5e.sheet.actor.character .ability-scores {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: var(--bcl-paper-weak);
+    border-radius: var(--bcl-radius-md);
+  }
+
+  /* Fix single ability score */
+  .theme-brancalonia .dnd5e.sheet.actor.character .ability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+    cursor: pointer;
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor.character .ability:hover {
+    background: var(--bcl-gold);
+    transform: translateY(-2px);
+    box-shadow: var(--bcl-shadow-md);
+  }
+
+  /* ================================================
+     FIX 4: AC/HP/Initiative Layout
+     ================================================ */
+
+  /* Fix resource bars */
+  .theme-brancalonia .dnd5e.sheet.actor.character .attributes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bcl-paper-weak);
+    border-radius: var(--bcl-radius-md);
+    margin-top: 0.5rem;
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor.character .attribute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    background: var(--bcl-paper);
+    border: 2px solid var(--bcl-gold);
+    border-radius: var(--bcl-radius-md);
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .dnd5e.sheet.actor.character .attribute:hover {
+    transform: scale(1.05);
+    box-shadow: var(--bcl-shadow-lg);
+  }
 }
-
-/* Forza il peso corretto per le icone solid */
-.theme-brancalonia .fas,
-.theme-brancalonia i.fas {
-  font-weight: 900 !important;
-}
-
-/* Forza il peso corretto per le icone regular */
-.theme-brancalonia .far,
-.theme-brancalonia i.far {
-  font-weight: 400 !important;
-}
-
-/* ================================================
-   FIX 2: Character Sheet Profile Layout
-   ================================================ */
-
-/* Fix container principale del profilo */
-.dnd5e.sheet.actor.character .sheet-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  position: relative;
-}
-
-/* Fix immagine profilo */
-.dnd5e.sheet.actor.character .sheet-header .profile {
-  position: relative;
-  flex: 0 0 100px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid var(--bcl-gold, #C9A54A);
-  background: var(--bcl-paper-weak, #EFE0BD);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dnd5e.sheet.actor.character .sheet-header .profile img,
-.dnd5e.sheet.actor.character .sheet-header .profile-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-}
-
-/* Fix layout delle informazioni del personaggio */
-.dnd5e.sheet.actor.character .sheet-header .header-details {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-/* Fix nome personaggio */
-.dnd5e.sheet.actor.character .sheet-header h1.charname,
-.dnd5e.sheet.actor.character .sheet-header input[name="name"] {
-  margin: 0;
-  padding: 0.25rem 0.5rem;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid var(--bcl-gold, #C9A54A);
-  font-family: var(--bcl-font-display, "Cinzel", serif);
-  font-size: 1.8rem;
-  color: var(--bcl-ink-strong, #1C140D);
-  width: 100%;
-}
-
-/* ================================================
-   FIX 3: Attributi e Stats Layout
-   ================================================ */
-
-/* Fix ability scores container */
-.dnd5e.sheet.actor.character .ability-scores {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 0.5rem;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  background: var(--bcl-paper-weak, #EFE0BD);
-  border-radius: var(--bcl-radius-md, 8px);
-}
-
-/* Fix singolo ability score */
-.dnd5e.sheet.actor.character .ability {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.5rem;
-  background: var(--bcl-paper, #E7D6AE);
-  border: 1px solid var(--bcl-border, #B99D6B);
-  border-radius: var(--bcl-radius-sm, 4px);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.dnd5e.sheet.actor.character .ability:hover {
-  background: var(--bcl-gold, #C9A54A);
-  transform: translateY(-2px);
-  box-shadow: 0 2px 4px var(--bcl-shadow-ink, rgba(28, 20, 13, 0.35));
-}
-
-/* ================================================
-   FIX 4: AC/HP/Initiative Layout
-   ================================================ */
-
-/* Fix resource bars */
-.dnd5e.sheet.actor.character .attributes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-  background: var(--bcl-paper-weak, #EFE0BD);
-  border-radius: var(--bcl-radius-md, 8px);
-  margin-top: 0.5rem;
-}
-
-.dnd5e.sheet.actor.character .attribute {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem;
-  background: var(--bcl-paper, #E7D6AE);
-  border: 2px solid var(--bcl-gold, #C9A54A);
   border-radius: 50%;
   width: 80px;
   height: 80px;

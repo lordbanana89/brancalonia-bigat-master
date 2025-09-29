@@ -14,29 +14,36 @@
  * 6. Fixes - Critical patches and overrides
  */
 
-/* Design System Tokens - MUST load first */
+/* ================================================
+   IMPORT ORDER OTTIMIZZATO
+   Rimossi file legacy e ridondanti
+   ================================================ */
+
+/* 1. Design System Tokens - Base del tema */
 @import url('./brancalonia-tokens.css');
 
-/* Core Theme Styles */
+/* 2. Core Theme Styles - Stili principali */
 @import url('./brancalonia-main.css');
 
-/* Italian Renaissance Decorations */
+/* 3. Renaissance Decorations - Ornamenti SVG */
 @import url('./brancalonia-decorations.css');
 
-/* D&D 5e System Compatibility */
+/* 4. D&D 5e Compatibility - Sistema specifico */
 @import url('./brancalonia-dnd5e-compat.css');
 
-/* Third-party Module Compatibility */
+/* 5. Module Compatibility - Integrazioni */
 @import url('./brancalonia-module-compat.css');
 
-/* Font Awesome local fixes */
-@import url('./brancalonia-fontawesome-local.css');
-
-/* Icon system fixes */
-@import url('./brancalonia-icons-fix.css');
-
-/* Critical fixes and patches */
+/* 6. Critical Fixes - Patch finali */
 @import url('./brancalonia-fixes.css');
+
+/* FILE RIMOSSI (legacy/ridondanti):
+ * - brancalonia-fontawesome-local.css (integrato in fixes)
+ * - brancalonia-icons-fix.css (integrato in fixes)
+ * - brancalonia-theme-system-v2.css (48KB legacy!)
+ * - brancalonia-theme-variables.css (sostituito da tokens)
+ * - tokens.css (duplicato di brancalonia-tokens)
+ */
 
 /* ================================================
    THEME ACTIVATION
@@ -78,12 +85,16 @@ body.theme-brancalonia {
    PERFORMANCE OPTIMIZATIONS
    ================================================ */
 
-/* Enable GPU acceleration for critical elements */
-body.theme-brancalonia .window-app,
-body.theme-brancalonia .app,
-body.theme-brancalonia .sheet {
-  transform: translateZ(0);
-  will-change: transform;
+/* GPU acceleration - Applied conservatively */
+@layer module {
+  body.theme-brancalonia .window-app {
+    will-change: auto;
+  }
+
+  body.theme-brancalonia .window-app.minimized,
+  body.theme-brancalonia .window-app.maximized {
+    will-change: transform;
+  }
 }
 
 /* Optimize animations */
@@ -94,9 +105,9 @@ body.theme-brancalonia * {
 
 @media (prefers-reduced-motion: reduce) {
   body.theme-brancalonia * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
   }
 }
 

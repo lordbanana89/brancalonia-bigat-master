@@ -441,15 +441,15 @@
     --orcnog-text: var(--bcl-text-primary);
   }
 
-  /* Override Orcnog's aggressive styling */
-  body.theme-brancalonia.orcnog-ui .window-app {
-    background: var(--bcl-surface-primary) !important;
+  /* Override Orcnog's aggressive styling with higher specificity */
+  body.theme-brancalonia.orcnog-ui .window-app .window-content {
+    background: var(--bcl-surface-primary);
   }
 
-  body.theme-brancalonia.orcnog-ui .window-header {
+  body.theme-brancalonia.orcnog-ui .window-app .window-header {
     background: linear-gradient(135deg,
       var(--bcl-surface-sunken) 0%,
-      var(--bcl-surface-tertiary) 100%) !important;
+      var(--bcl-surface-tertiary) 100%);
   }
 
   /* ================================================
@@ -497,9 +497,11 @@
      ================================================ */
 
   /* Reduce animations when many modules are active */
-  body.theme-brancalonia.many-modules * {
-    animation-duration: 0.1s !important;
-    transition-duration: 0.1s !important;
+  @media (prefers-reduced-motion: no-preference) {
+    body.theme-brancalonia.many-modules * {
+      animation-duration: 0.1s;
+      transition-duration: 0.1s;
+    }
   }
 
   /* GPU acceleration for module windows */
