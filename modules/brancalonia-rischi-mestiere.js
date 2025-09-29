@@ -4,15 +4,96 @@
  */
 
 class BrancaloniaRischiMestiere {
-  constructor() {
-    this.setupRischi();
-    this.registerHooks();
+  static initialize() {
+    try {
+      console.log("⚠️ Brancalonia | Inizializzazione Sistema Rischi del Mestiere");
+
+      // Registra le impostazioni
+      this._registerSettings();
+
+      // Setup dei rischi
+      this._setupRischi();
+
+      // Registra gli hook
+      this._registerHooks();
+
+      // Registra comandi chat
+      this._registerChatCommands();
+
+      // Crea macro automatiche
+      this._createAutomaticMacros();
+
+      // Registra l'istanza globale
+      game.brancalonia = game.brancalonia || {};
+      game.brancalonia.rischiMestiere = this;
+
+      ui.notifications.info("Sistema Rischi del Mestiere caricato con successo!");
+
+    } catch (error) {
+      console.error("Errore nell'inizializzazione Sistema Rischi del Mestiere:", error);
+      ui.notifications.error("Errore nel caricamento del sistema rischi!");
+    }
   }
 
-  setupRischi() {
-    if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
+  static _registerSettings() {
+    try {
+      // Abilita/disabilita sistema rischi
+      game.settings.register('brancalonia-bigat', 'enableRischiMestiere', {
+        name: 'Abilita Rischi del Mestiere',
+        hint: 'Attiva il sistema completo dei Rischi del Mestiere per le Cricche',
+        scope: 'world',
+        config: true,
+        type: Boolean,
+        default: true,
+        onChange: value => {
+          if (value) {
+            ui.notifications.info("Sistema Rischi del Mestiere attivato!");
+          } else {
+            ui.notifications.warn("Sistema Rischi del Mestiere disattivato!");
+          }
+        }
+      });
 
-    CONFIG.BRANCALONIA.rischiMestiere = {
+      // Settimane di imbosco
+      game.settings.register('brancalonia-bigat', 'settimaneImbosco', {
+        name: 'Settimane di Imbosco',
+        hint: 'Numero di settimane che la Cricca ha passato imboscata',
+        scope: 'world',
+        config: false,
+        type: Number,
+        default: 0
+      });
+
+      // Auto-applicazione effetti
+      game.settings.register('brancalonia-bigat', 'autoApplyRischiEffects', {
+        name: 'Auto-Applicazione Effetti Rischi',
+        hint: 'Applica automaticamente gli effetti dei Rischi del Mestiere',
+        scope: 'world',
+        config: true,
+        type: Boolean,
+        default: true
+      });
+
+      // Debug mode
+      game.settings.register('brancalonia-bigat', 'debugRischiMestiere', {
+        name: 'Debug Rischi del Mestiere',
+        hint: 'Attiva log dettagliati per il debug del sistema rischi',
+        scope: 'world',
+        config: true,
+        type: Boolean,
+        default: false
+      });
+
+    } catch (error) {
+      console.error("Errore nella registrazione delle impostazioni rischi:", error);
+    }
+  }
+
+  static _setupRischi() {
+    try {
+      if (!CONFIG.BRANCALONIA) CONFIG.BRANCALONIA = {};
+
+      CONFIG.BRANCALONIA.rischiMestiere = {
       // Tabella completa dei Rischi del Mestiere
       tabella: {
         1: { min: 1, max: 15, evento: "Non succede nulla", tipo: "neutro" },
@@ -165,65 +246,195 @@ class BrancaloniaRischiMestiere {
         }
       }
     };
+
+      if (game.settings.get('brancalonia-bigat', 'debugRischiMestiere')) {
+        console.log("Tabella Rischi del Mestiere configurata:", CONFIG.BRANCALONIA.rischiMestiere);
+      }
+
+    } catch (error) {
+      console.error("Errore nel setup dei rischi:", error);
+    }
+  }
+
+  static _registerChatCommands() {
+    try {
+      // Comando principale
+      game.brancalonia.chatCommands = game.brancalonia.chatCommands || {};
+
+      game.brancalonia.chatCommands['/rischi'] = {
+        callback: this._handleRischiCommand.bind(this),
+        description: "Gestisce i Rischi del Mestiere"
+      };
+
+      game.brancalonia.chatCommands['/imbosco'] = {
+        callback: this._handleImboscoCommand.bind(this),
+        description: "Gestisce l'Imbosco della Cricca"
+      };
+
+      game.brancalonia.chatCommands['/rischihelp'] = {
+        callback: this._showRischiHelp.bind(this),
+        description: "Mostra l'aiuto per i comandi rischi"
+      };
+
+      // Hook per intercettare i comandi chat
+      Hooks.on("chatMessage", (chatLog, message, chatData) => {
+        const command = message.split(' ')[0].toLowerCase();
+
+        if (game.brancalonia.chatCommands[command]) {
+          game.brancalonia.chatCommands[command].callback(message, chatData);
+          return false; // Previene il messaggio normale
+        }
+
+        return true;
+      });
+
+    } catch (error) {
+      console.error("Errore nella registrazione comandi chat rischi:", error);
+    }
+  }
+
+  static _createAutomaticMacros() {
+    try {
+      const macros = [
+        {
+          name: "Rischi del Mestiere",
+          type: "script",
+          command: [
+            "if (!game.brancalonia?.rischiMestiere) {",
+            "  ui.notifications.error('Sistema rischi non disponibile!');",
+            "  return;",
+            "}",
+            "",
+            "game.brancalonia.rischiMestiere.mostraDialogoRischi();"
+          ].join('\n'),
+          img: "icons/skills/trades/mining-pickaxe-iron-grey.webp"
+        },
+        {
+          name: "Gestisci Imbosco",
+          type: "script",
+          command: [
+            "if (!game.brancalonia?.rischiMestiere) {",
+            "  ui.notifications.error('Sistema rischi non disponibile!');",
+            "  return;",
+            "}",
+            "",
+            "game.brancalonia.rischiMestiere.mostraDialogoImbosco();"
+          ].join('\n'),
+          img: "icons/environment/wilderness/tree-spruce.webp"
+        },
+        {
+          name: "Tira Rischi Veloce",
+          type: "script",
+          command: [
+            "if (!game.brancalonia?.rischiMestiere) {",
+            "  ui.notifications.error('Sistema rischi non disponibile!');",
+            "  return;",
+            "}",
+            "",
+            "const cricca = game.actors.filter(a => a.type === 'character' && a.hasPlayerOwner);",
+            "if (cricca.length === 0) {",
+            "  ui.notifications.warn('Nessun personaggio nella Cricca!');",
+            "  return;",
+            "}",
+            "",
+            "game.brancalonia.rischiMestiere.tiraRischiVeloce(cricca.map(a => ({actor: a})));"
+          ].join('\n'),
+          img: "icons/skills/trades/mining-ore-cart-yellow.webp"
+        }
+      ];
+
+      macros.forEach(async macroData => {
+        const existingMacro = game.macros.find(m => m.name === macroData.name);
+        if (!existingMacro) {
+          await game.macros.documentClass.create(macroData);
+          if (game.settings.get('brancalonia-bigat', 'debugRischiMestiere')) {
+            console.log(`Macro '${macroData.name}' creata automaticamente`);
+          }
+        }
+      });
+
+    } catch (error) {
+      console.error("Errore nella creazione macro rischi:", error);
+    }
   }
 
   /**
    * Tira i Rischi del Mestiere per la Cricca
    */
-  async tiraRischiMestiere(cricca, modificatore = 0) {
-    // Calcola il modificatore totale
-    let modTotale = modificatore;
-
-    // Trova la Nomea più alta nella Cricca
-    let nomeaMax = 0;
-    let bonusNomeaTotale = 0;
-
-    for (const membro of cricca) {
-      const nomea = membro.actor.getFlag("brancalonia-bigat", "nomea") || 0;
-      nomeaMax = Math.max(nomeaMax, nomea);
-      bonusNomeaTotale += Math.floor(nomea / 10); // +1 ogni 10 punti di nomea
-    }
-
-    modTotale += nomeaMax + bonusNomeaTotale;
-
-    // Applica modificatori per Imbosco
-    const settimaneImbosco = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
-    modTotale -= (settimaneImbosco * 3);
-
-    // Tira il dado
-    const roll = new Roll(`1d100 + ${modTotale}`);
-    await roll.evaluate();
-
-    const risultato = roll.total;
-
-    // Trova l'evento corrispondente
-    let evento = null;
-    for (const [key, value] of Object.entries(CONFIG.BRANCALONIA.rischiMestiere.tabella)) {
-      if (risultato >= value.min && risultato <= value.max) {
-        evento = value;
-        break;
+  static async tiraRischiMestiere(cricca, modificatore = 0) {
+    try {
+      if (!game.settings.get('brancalonia-bigat', 'enableRischiMestiere')) {
+        ui.notifications.warn("Sistema Rischi del Mestiere disabilitato!");
+        return null;
       }
-    }
+      // Calcola il modificatore totale
+      let modTotale = modificatore;
 
-    // Se nessun evento trovato e risultato > 98, usa l'editto
-    if (!evento && risultato > 98) {
-      evento = CONFIG.BRANCALONIA.rischiMestiere.tabella[23];
-    }
+      // Trova la Nomea più alta nella Cricca
+      let nomeaMax = 0;
+      let bonusNomeaTotale = 0;
 
-    return {
-      roll,
-      risultato,
-      evento,
-      nomeaMax,
-      bonusNomeaTotale,
-      modificatore: modTotale
-    };
+      for (const membro of cricca) {
+        const nomea = membro.actor.getFlag("brancalonia-bigat", "nomea") || 0;
+        nomeaMax = Math.max(nomeaMax, nomea);
+        bonusNomeaTotale += Math.floor(nomea / 10); // +1 ogni 10 punti di nomea
+      }
+
+      modTotale += nomeaMax + bonusNomeaTotale;
+
+      // Applica modificatori per Imbosco
+      const settimaneImbosco = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
+      modTotale -= (settimaneImbosco * 3);
+
+      // Tira il dado
+      const roll = new Roll(`1d100 + ${modTotale}`);
+      await roll.evaluate();
+
+      const risultato = roll.total;
+
+      // Trova l'evento corrispondente
+      let evento = null;
+      for (const [key, value] of Object.entries(CONFIG.BRANCALONIA.rischiMestiere.tabella)) {
+        if (risultato >= value.min && risultato <= value.max) {
+          evento = value;
+          break;
+        }
+      }
+
+      // Se nessun evento trovato e risultato > 98, usa l'editto
+      if (!evento && risultato > 98) {
+        evento = CONFIG.BRANCALONIA.rischiMestiere.tabella[23];
+      }
+
+      if (game.settings.get('brancalonia-bigat', 'debugRischiMestiere')) {
+        console.log("Risultato Rischi del Mestiere:", {
+          risultato,
+          evento,
+          modificatore: modTotale
+        });
+      }
+
+      return {
+        roll,
+        risultato,
+        evento,
+        nomeaMax,
+        bonusNomeaTotale,
+        modificatore: modTotale
+      };
+
+    } catch (error) {
+      console.error("Errore nel tiro Rischi del Mestiere:", error);
+      ui.notifications.error("Errore nel calcolo dei rischi!");
+      return null;
+    }
   }
 
   /**
    * Gestisce l'evento dei Rischi del Mestiere
    */
-  async gestisciEvento(evento, cricca) {
+  static async gestisciEvento(evento, cricca) {
+    try {
     let contenutoChat = `<div class="brancalonia-rischi">
       <h3>⚠️ Rischi del Mestiere</h3>
       <p><strong>${evento.evento}</strong></p>`;
@@ -309,74 +520,242 @@ class BrancaloniaRischiMestiere {
 
     contenutoChat += `</div>`;
 
+      ChatMessage.create({
+        content: contenutoChat,
+        speaker: { alias: "Rischi del Mestiere" }
+      });
+
+    } catch (error) {
+      console.error("Errore nella gestione evento rischi:", error);
+      ui.notifications.error("Errore nella gestione dell'evento!");
+    }
+  }
+
+  static _handleRischiCommand(message, chatData) {
+    try {
+      const args = message.split(' ');
+      const subcommand = args[1]?.toLowerCase();
+
+      switch (subcommand) {
+        case 'tira':
+        case 'roll':
+          this.mostraDialogoRischi();
+          break;
+        case 'veloce':
+        case 'quick':
+          this._tiraRischiVeloce();
+          break;
+        case 'tabella':
+        case 'table':
+          this._mostraTabella();
+          break;
+        default:
+          this._showRischiHelp();
+      }
+    } catch (error) {
+      console.error("Errore nel comando rischi:", error);
+      ui.notifications.error("Errore nell'esecuzione del comando!");
+    }
+  }
+
+  static _handleImboscoCommand(message, chatData) {
+    try {
+      const args = message.split(' ');
+      const settimane = parseInt(args[1]) || 1;
+
+      if (settimane > 0) {
+        this.applicaImbosco(settimane);
+      } else {
+        this.mostraDialogoImbosco();
+      }
+    } catch (error) {
+      console.error("Errore nel comando imbosco:", error);
+      ui.notifications.error("Errore nell'esecuzione del comando!");
+    }
+  }
+
+  static _showRischiHelp() {
+    const helpContent = `
+      <div class="brancalonia-help">
+        <h2>⚠️ Comandi Rischi del Mestiere</h2>
+        <h3>Comandi disponibili:</h3>
+        <ul>
+          <li><strong>/rischi tira</strong> - Apre il dialogo per tirare i Rischi del Mestiere</li>
+          <li><strong>/rischi veloce</strong> - Tira velocemente con la Cricca attuale</li>
+          <li><strong>/rischi tabella</strong> - Mostra la tabella completa dei rischi</li>
+          <li><strong>/imbosco [settimane]</strong> - Aggiunge settimane di imbosco o apre il dialogo</li>
+          <li><strong>/rischihelp</strong> - Mostra questo aiuto</li>
+        </ul>
+        <h3>Come funziona:</h3>
+        <ul>
+          <li>Il sistema calcola automaticamente i modificatori basati su Nomea e Imbosco</li>
+          <li>Ogni settimana di Imbosco dà -3 al tiro (meglio evitare i rischi)</li>
+          <li>La Nomea più alta e la somma dei bonus aumentano i rischi</li>
+          <li>Gli eventi vengono applicati automaticamente quando possibile</li>
+        </ul>
+      </div>
+    `;
+
     ChatMessage.create({
-      content: contenutoChat,
-      speaker: { alias: "Rischi del Mestiere" }
+      content: helpContent,
+      whisper: [game.user.id]
     });
+  }
+
+  static _mostraTabella() {
+    let content = `
+      <div class="rischi-tabella">
+        <h2>⚠️ Tabella Rischi del Mestiere</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Risultato</th>
+              <th>Evento</th>
+              <th>Tipo</th>
+            </tr>
+          </thead>
+          <tbody>
+    `;
+
+    for (const [key, rischio] of Object.entries(CONFIG.BRANCALONIA.rischiMestiere.tabella)) {
+      content += `
+        <tr>
+          <td>${rischio.min === rischio.max ? rischio.min : `${rischio.min}-${rischio.max}`}</td>
+          <td style="font-size: 0.8em;">${rischio.evento}</td>
+          <td><span class="badge">${rischio.tipo}</span></td>
+        </tr>
+      `;
+    }
+
+    content += `
+          </tbody>
+        </table>
+      </div>
+    `;
+
+    ChatMessage.create({
+      content: content,
+      whisper: [game.user.id]
+    });
+  }
+
+  static async _tiraRischiVeloce() {
+    try {
+      const cricca = game.actors.filter(a => a.type === "character" && a.hasPlayerOwner);
+      if (cricca.length === 0) {
+        ui.notifications.warn("Nessun personaggio nella Cricca!");
+        return;
+      }
+
+      const risultato = await this.tiraRischiMestiere(cricca.map(a => ({actor: a})), 0);
+
+      if (risultato) {
+        // Mostra il risultato
+        ChatMessage.create({
+          content: `<div class="brancalonia-rischi">
+            <h3>🎲 Rischi del Mestiere - Tiro Veloce</h3>
+            <p><strong>Tiro:</strong> ${risultato.roll.formula} = ${risultato.risultato}</p>
+          </div>`,
+          rolls: [risultato.roll]
+        });
+
+        // Gestisci l'evento
+        if (risultato.evento) {
+          await this.gestisciEvento(risultato.evento, cricca.map(a => ({actor: a})));
+        }
+
+        // Resetta l'imbosco
+        await this.resetImbosco();
+      }
+
+    } catch (error) {
+      console.error("Errore nel tiro veloce rischi:", error);
+      ui.notifications.error("Errore nel tiro veloce!");
+    }
   }
 
   /**
    * Applica settimane di Imbosco durante lo Sbraco
    */
-  async applicaImbosco(settimane) {
-    const imboscoAttuale = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
-    const nuovoImbosco = imboscoAttuale + settimane;
+  static async applicaImbosco(settimane) {
+    try {
+      const imboscoAttuale = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
+      const nuovoImbosco = imboscoAttuale + settimane;
 
-    await game.settings.set("brancalonia-bigat", "settimaneImbosco", nuovoImbosco);
+      await game.settings.set("brancalonia-bigat", "settimaneImbosco", nuovoImbosco);
 
-    ChatMessage.create({
-      content: `<div class="brancalonia-imbosco">
-        <h3>🌲 Imbosco durante lo Sbraco</h3>
-        <p>La Cricca si è imboscata per <strong>${settimane} settimane</strong>.</p>
-        <p>Modificatore totale ai Rischi del Mestiere: <strong>-${nuovoImbosco * 3}</strong></p>
-      </div>`
-    });
+      ChatMessage.create({
+        content: `<div class="brancalonia-imbosco">
+          <h3>🌲 Imbosco durante lo Sbraco</h3>
+          <p>La Cricca si è imboscata per <strong>${settimane} settimane</strong>.</p>
+          <p>Modificatore totale ai Rischi del Mestiere: <strong>-${nuovoImbosco * 3}</strong></p>
+        </div>`
+      });
+
+      if (game.settings.get('brancalonia-bigat', 'debugRischiMestiere')) {
+        console.log(`Imbosco aggiornato: ${nuovoImbosco} settimane`);
+      }
+
+    } catch (error) {
+      console.error("Errore nell'applicazione imbosco:", error);
+      ui.notifications.error("Errore nell'applicazione dell'imbosco!");
+    }
   }
 
   /**
    * Resetta l'imbosco dopo un lavoretto
    */
-  async resetImbosco() {
-    await game.settings.set("brancalonia-bigat", "settimaneImbosco", 0);
+  static async resetImbosco() {
+    try {
+      await game.settings.set("brancalonia-bigat", "settimaneImbosco", 0);
+      if (game.settings.get('brancalonia-bigat', 'debugRischiMestiere')) {
+        console.log("Imbosco resettato");
+      }
+    } catch (error) {
+      console.error("Errore nel reset imbosco:", error);
+    }
   }
 
-  registerHooks() {
-    // Aggiungi impostazioni
-    Hooks.once("init", () => {
-      game.settings.register("brancalonia", "settimaneImbosco", {
-        scope: "world",
-        config: false,
-        type: Number,
-        default: 0
+  static _registerHooks() {
+    try {
+      // Aggiungi controlli al GM
+      Hooks.on("renderSidebarTab", (app, html) => {
+        if (app.tabName !== "chat" || !game.user.isGM || !game.settings.get('brancalonia-bigat', 'enableRischiMestiere')) return;
+
+        const button = `
+          <div class="brancalonia-rischi-controls" style="margin: 5px 0;">
+            <button class="tira-rischi-mestiere" style="width: 100%; margin: 2px 0; padding: 5px; font-size: 0.8em;">
+              <i class="fas fa-dice"></i> Tira Rischi del Mestiere
+            </button>
+            <button class="gestisci-imbosco" style="width: 100%; margin: 2px 0; padding: 5px; font-size: 0.8em;">
+              <i class="fas fa-tree"></i> Imbosco
+            </button>
+          </div>
+        `;
+
+        html.append(button);
+
+        html.find(".tira-rischi-mestiere").click(() => this.mostraDialogoRischi());
+        html.find(".gestisci-imbosco").click(() => this.mostraDialogoImbosco());
       });
-    });
 
-    // Aggiungi controlli al GM
-    Hooks.on("renderSidebarTab", (app, html) => {
-      if (app.tabName !== "chat" || !game.user.isGM) return;
+      // Hook per fine riposo lungo - potenziale trigger rischi
+      Hooks.on("dnd5e.longRest", (actor, data) => {
+        if (game.settings.get('brancalonia-bigat', 'enableRischiMestiere') && game.user.isGM) {
+          ui.notifications.info("Considera di tirare i Rischi del Mestiere dopo il riposo!");
+        }
+      });
 
-      const button = `
-        <div class="brancalonia-rischi-controls">
-          <button class="tira-rischi-mestiere">
-            <i class="fas fa-dice"></i> Tira Rischi del Mestiere
-          </button>
-          <button class="gestisci-imbosco">
-            <i class="fas fa-tree"></i> Imbosco
-          </button>
-        </div>
-      `;
-
-      html.append(button);
-
-      html.find(".tira-rischi-mestiere").click(() => this.mostraDialogoRischi());
-      html.find(".gestisci-imbosco").click(() => this.mostraDialogoImbosco());
-    });
+    } catch (error) {
+      console.error("Errore nella registrazione degli hook rischi:", error);
+    }
   }
 
   /**
    * Mostra dialogo per tirare i Rischi del Mestiere
    */
-  async mostraDialogoRischi() {
+  static async mostraDialogoRischi() {
+    try {
     // Ottieni tutti i personaggi giocanti
     const cricca = game.actors.filter(a => a.type === "character" && a.hasPlayerOwner);
 
@@ -451,64 +830,86 @@ class BrancaloniaRischiMestiere {
               await this.gestisciEvento(risultato.evento, cricca.map(a => ({ actor: a })));
             }
 
-            // Resetta l'imbosco dopo il tiro
-            await this.resetImbosco();
+              // Resetta l'imbosco dopo il tiro
+              await this.resetImbosco();
+            }
           }
+        },
+        cancel: {
+          label: "Annulla"
         }
       }
     }).render(true);
+
+    } catch (error) {
+      console.error("Errore nel dialogo rischi:", error);
+      ui.notifications.error("Errore nell'apertura del dialogo!");
+    }
   }
 
   /**
    * Mostra dialogo per gestire l'Imbosco
    */
-  async mostraDialogoImbosco() {
-    const imboscoAttuale = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
+  static async mostraDialogoImbosco() {
+    try {
+      const imboscoAttuale = game.settings.get("brancalonia-bigat", "settimaneImbosco") || 0;
 
-    const content = `
-      <div class="imbosco-dialog">
-        <p>Settimane di Imbosco attuali: <strong>${imboscoAttuale}</strong></p>
-        <p>Modificatore attuale: <strong>-${imboscoAttuale * 3}</strong></p>
+      const content = `
+        <div class="imbosco-dialog">
+          <p>Settimane di Imbosco attuali: <strong>${imboscoAttuale}</strong></p>
+          <p>Modificatore attuale: <strong>-${imboscoAttuale * 3}</strong></p>
+          <hr>
+          <p><em>L'Imbosco rappresenta il tempo che la Cricca passa nascosta, riducendo i rischi ma limitando le attività.</em></p>
 
-        <div class="form-group">
-          <label>Aggiungi Settimane di Imbosco:</label>
-          <input type="number" name="settimane" value="1" min="0"/>
+          <div class="form-group">
+            <label>Aggiungi Settimane di Imbosco:</label>
+            <input type="number" name="settimane" value="1" min="0"/>
+          </div>
         </div>
-      </div>
-    `;
+      `;
 
-    new Dialog({
-      title: "Imbosco durante lo Sbraco",
-      content,
-      buttons: {
-        add: {
-          label: "Aggiungi",
-          callback: async (html) => {
-            const settimane = parseInt(html.find('[name="settimane"]').val()) || 0;
-            if (settimane > 0) {
-              await this.applicaImbosco(settimane);
+      new Dialog({
+        title: "Imbosco durante lo Sbraco",
+        content,
+        buttons: {
+          add: {
+            label: "Aggiungi",
+            callback: async (html) => {
+              const settimane = parseInt(html.find('[name="settimane"]').val()) || 0;
+              if (settimane > 0) {
+                await this.applicaImbosco(settimane);
+              }
+            }
+          },
+          reset: {
+            label: "Resetta",
+            callback: async () => {
+              await this.resetImbosco();
+              ui.notifications.info("Imbosco resettato!");
             }
           }
-        },
-        reset: {
-          label: "Resetta",
-          callback: async () => {
-            await this.resetImbosco();
-            ui.notifications.info("Imbosco resettato!");
-          }
         }
-      }
-    }).render(true);
+      }).render(true);
+
+    } catch (error) {
+      console.error("Errore nel dialogo imbosco:", error);
+      ui.notifications.error("Errore nell'apertura del dialogo!");
+    }
   }
 }
 
 // Inizializza il sistema
-Hooks.once("ready", () => {
-  // NON sovrascrivere game.brancalonia, solo aggiungere rischiMestiere
-  if (!game.brancalonia) {
-    console.error("Brancalonia | game.brancalonia non trovato!");
-    return;
+Hooks.once("init", () => {
+  try {
+    BrancaloniaRischiMestiere.initialize();
+  } catch (error) {
+    console.error("Errore critico nell'inizializzazione BrancaloniaRischiMestiere:", error);
+    ui.notifications.error("Errore nel caricamento del sistema rischi del mestiere!");
   }
-  game.brancalonia.rischiMestiere = new BrancaloniaRischiMestiere();
-  console.log("Brancalonia | Sistema Rischi del Mestiere inizializzato");
 });
+
+// Rendi disponibile globalmente
+window.BrancaloniaRischiMestiere = BrancaloniaRischiMestiere;
+
+// Esporta la classe per uso come modulo
+export { BrancaloniaRischiMestiere };

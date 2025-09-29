@@ -142,59 +142,355 @@ class MenagramoSystem {
       }
     };
 
-    this._setupHooks();
-    this._setupMenagramoRolls();
   }
 
-  _setupHooks() {
+  static initialize() {
+    console.log("Inizializzazione MenagramoSystem...");
+
+    // Registrazione settings
+    game.settings.register("brancalonia-bigat", "menagramoEnabled", {
+      name: "Sistema Menagramo Attivo",
+      hint: "Abilita il sistema di sfortuna di Brancalonia",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "menagramoFrequency", {
+      name: "Frequenza Eventi Sfortuna",
+      hint: "Quanto spesso accadono eventi di sfortuna casuali",
+      scope: "world",
+      config: true,
+      type: String,
+      choices: {
+        "low": "Bassa (5%)",
+        "medium": "Media (10%)",
+        "high": "Alta (20%)",
+        "chaotic": "Caotica (30%)"
+      },
+      default: "medium"
+    });
+
+    game.settings.register("brancalonia-bigat", "menagramoVisualEffects", {
+      name: "Effetti Visivi",
+      hint: "Mostra effetti visivi sui token con menagramo",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "menagramoCriticalEvents", {
+      name: "Eventi Critici",
+      hint: "Abilita eventi di sfortuna critica su 1 naturale",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    // Creazione istanza globale
+    window.MenagramoSystem = new MenagramoSystem();
+
+    // Registrazione hooks
+    MenagramoSystem._registerHooks();
+
+    // Registrazione comandi chat
+    MenagramoSystem._registerChatCommands();
+
+    // Creazione macro automatica
+    MenagramoSystem._createMacro();
+
+    console.log("MenagramoSystem inizializzato correttamente!");
+  }
+
+  static _registerHooks() {
     // Hook per applicare sfortuna ai tiri
     Hooks.on("dnd5e.preRollAttack", (item, rollData, messageData) => {
+      if (!game.settings.get("brancalonia-bigat", "menagramoEnabled")) return;
+
       const actor = item.parent;
-      if (this._hasMenagramo(actor)) {
-        this._applyMisfortune(actor, rollData, "attack");
+      if (window.MenagramoSystem._hasMenagramo(actor)) {
+        window.MenagramoSystem._applyMisfortune(actor, rollData, "attack");
       }
     });
 
     Hooks.on("dnd5e.preRollAbilityTest", (actor, rollData, messageData) => {
-      if (this._hasMenagramo(actor)) {
-        this._applyMisfortune(actor, rollData, "ability");
+      if (!game.settings.get("brancalonia-bigat", "menagramoEnabled")) return;
+
+      if (window.MenagramoSystem._hasMenagramo(actor)) {
+        window.MenagramoSystem._applyMisfortune(actor, rollData, "ability");
       }
     });
 
     Hooks.on("dnd5e.preRollAbilitySave", (actor, rollData, messageData) => {
-      if (this._hasMenagramo(actor)) {
-        this._applyMisfortune(actor, rollData, "save");
+      if (!game.settings.get("brancalonia-bigat", "menagramoEnabled")) return;
+
+      if (window.MenagramoSystem._hasMenagramo(actor)) {
+        window.MenagramoSystem._applyMisfortune(actor, rollData, "save");
       }
     });
 
     // Hook per eventi casuali di sfortuna
     Hooks.on("updateCombat", (combat, update, options, userId) => {
+      if (!game.settings.get("brancalonia-bigat", "menagramoEnabled")) return;
       if (update.turn === undefined) return;
 
       const combatant = combat.combatant;
       if (!combatant) return;
 
       const actor = combatant.actor;
-      if (this._hasMenagramo(actor) && Math.random() < 0.1) {
-        this._triggerMisfortuneEvent(actor);
+      const frequency = game.settings.get("brancalonia-bigat", "menagramoFrequency");
+      const chances = { low: 0.05, medium: 0.1, high: 0.2, chaotic: 0.3 };
+
+      if (window.MenagramoSystem._hasMenagramo(actor) && Math.random() < chances[frequency]) {
+        window.MenagramoSystem._triggerMisfortuneEvent(actor);
       }
     });
 
     // Hook per 1 naturale sotto menagramo
     Hooks.on("dnd5e.rollAttack", (item, roll, ammo) => {
+      if (!game.settings.get("brancalonia-bigat", "menagramoEnabled")) return;
+      if (!game.settings.get("brancalonia-bigat", "menagramoCriticalEvents")) return;
+
       const actor = item.parent;
       if (!actor) return;
 
       // Se tira 1 naturale con menagramo
-      if (roll.dice[0]?.results[0]?.result === 1 && this._hasMenagramo(actor)) {
-        this._criticalMisfortune(actor);
+      if (roll.dice[0]?.results[0]?.result === 1 && window.MenagramoSystem._hasMenagramo(actor)) {
+        window.MenagramoSystem._criticalMisfortune(actor);
       }
     });
+
+    // Hook per aggiungere pulsante menagramo alle schede personaggio
+    Hooks.on("renderActorSheet", (app, html, data) => {
+      if (app.actor.type !== "character" || !game.user.isGM) return;
+      if (!game.settings.get("brancalonia-bigat", "menagramoEnabled")) return;
+
+      const button = $(`<button class="menagramo-manager-btn" title="Gestione Menagramo">
+        <i class="fas fa-skull"></i>
+      </button>`);
+      html.find(".window-header .window-title").after(button);
+      button.click(() => {
+        window.MenagramoSystem.showMenagramoDialog(app.actor);
+      });
+    });
+
+    console.log("MenagramoSystem hooks registrati!");
   }
 
-  _setupMenagramoRolls() {
-    // Usa il sistema di modificatori standard invece di override della classe Roll
-    // I modificatori vengono applicati direttamente nei hooks
+  static _registerChatCommands() {
+    // Comando per applicare menagramo
+    game.chatCommands.register({
+      name: "/menagramo-applica",
+      module: "brancalonia-bigat",
+      description: "Applica menagramo a un personaggio",
+      icon: "<i class='fas fa-skull'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può applicare il menagramo!");
+          return;
+        }
+
+        const tokens = canvas.tokens.controlled;
+        if (tokens.length !== 1) {
+          ui.notifications.error("Seleziona un solo token!");
+          return;
+        }
+
+        const params = parameters.split(" ");
+        const level = params[0] || "minor";
+        const reason = params.slice(1).join(" ") || "Sfortuna";
+
+        const validLevels = ["minor", "moderate", "major", "catastrophic"];
+        if (!validLevels.includes(level)) {
+          ui.notifications.error("Livello non valido! Usa: minor, moderate, major, catastrophic");
+          return;
+        }
+
+        await window.MenagramoSystem.applyMenagramo(tokens[0].actor, level, reason);
+      }
+    });
+
+    // Comando per rimuovere menagramo
+    game.chatCommands.register({
+      name: "/menagramo-rimuovi",
+      module: "brancalonia-bigat",
+      description: "Rimuove menagramo da un personaggio",
+      icon: "<i class='fas fa-heart'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può rimuovere il menagramo!");
+          return;
+        }
+
+        const tokens = canvas.tokens.controlled;
+        if (tokens.length !== 1) {
+          ui.notifications.error("Seleziona un solo token!");
+          return;
+        }
+
+        const method = parameters || null;
+        await window.MenagramoSystem.removeMenagramo(tokens[0].actor, method);
+      }
+    });
+
+    // Comando per dialog menagramo
+    game.chatCommands.register({
+      name: "/menagramo-dialog",
+      module: "brancalonia-bigat",
+      description: "Apre dialog gestione menagramo",
+      icon: "<i class='fas fa-cogs'></i>",
+      callback: (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può gestire il menagramo!");
+          return;
+        }
+
+        const tokens = canvas.tokens.controlled;
+        if (tokens.length !== 1) {
+          ui.notifications.error("Seleziona un solo token!");
+          return;
+        }
+
+        window.MenagramoSystem.showMenagramoDialog(tokens[0].actor);
+      }
+    });
+
+    // Comando per evento sfortuna
+    game.chatCommands.register({
+      name: "/menagramo-evento",
+      module: "brancalonia-bigat",
+      description: "Scatena evento di sfortuna casuale",
+      icon: "<i class='fas fa-bolt'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può scatenare eventi!");
+          return;
+        }
+
+        const tokens = canvas.tokens.controlled;
+        if (tokens.length !== 1) {
+          ui.notifications.error("Seleziona un solo token!");
+          return;
+        }
+
+        await window.MenagramoSystem._triggerMisfortuneEvent(tokens[0].actor);
+      }
+    });
+
+    // Comando help
+    game.chatCommands.register({
+      name: "/menagramo-help",
+      module: "brancalonia-bigat",
+      description: "Mostra l'aiuto per i comandi menagramo",
+      icon: "<i class='fas fa-question-circle'></i>",
+      callback: (chat, parameters, messageData) => {
+        const helpText = `
+          <div class="brancalonia-help">
+            <h3>Comandi Sistema Menagramo</h3>
+            <ul>
+              <li><strong>/menagramo-applica [livello] [motivo]</strong> - Applica menagramo</li>
+              <li><strong>/menagramo-rimuovi [metodo]</strong> - Rimuove menagramo</li>
+              <li><strong>/menagramo-dialog</strong> - Apre dialog gestione</li>
+              <li><strong>/menagramo-evento</strong> - Scatena evento casuale</li>
+              <li><strong>/menagramo-help</strong> - Mostra questo aiuto</li>
+            </ul>
+            <h4>Livelli:</h4>
+            <p>minor, moderate, major, catastrophic</p>
+            <h4>Metodi Rimozione:</h4>
+            <p>blessing, ritual, goodDeed, offering, quest</p>
+          </div>
+        `;
+
+        ChatMessage.create({
+          content: helpText,
+          speaker: { alias: "Sistema Menagramo" },
+          whisper: [game.user.id]
+        });
+      }
+    });
+
+    console.log("MenagramoSystem comandi chat registrati!");
+  }
+
+  static _createMacro() {
+    const macroData = {
+      name: "Gestione Menagramo",
+      type: "script",
+      scope: "global",
+      command: `
+// Macro per Gestione Menagramo
+if (!game.user.isGM) {
+  ui.notifications.error("Solo il GM può utilizzare questa macro!");
+} else {
+  const tokens = canvas.tokens.controlled;
+
+  if (tokens.length === 0) {
+    ui.notifications.warn("Seleziona un token!");
+  } else if (tokens.length === 1) {
+    const actor = tokens[0].actor;
+    if (actor.type === "character" || actor.type === "npc") {
+      // Controlla se ha già menagramo
+      const hasMenagramo = actor.effects.some(e => e.flags.brancalonia?.isMenagramo);
+
+      if (hasMenagramo) {
+        // Dialog per rimuovere o gestire
+        new Dialog({
+          title: \`Menagramo - \${actor.name}\`,
+          content: \`
+            <div class="form-group">
+              <p>\${actor.name} è già afflitto da menagramo.</p>
+              <button id="remove-btn" class="button">Rimuovi Menagramo</button>
+              <button id="worsen-btn" class="button">Peggiora Menagramo</button>
+              <button id="event-btn" class="button">Evento Sfortuna</button>
+            </div>
+          \`,
+          buttons: {
+            close: { label: "Chiudi" }
+          },
+          render: html => {
+            html.find('#remove-btn').click(() => {
+              window.MenagramoSystem.showRemovalDialog(actor);
+            });
+            html.find('#worsen-btn').click(() => {
+              window.MenagramoSystem.showMenagramoDialog(actor);
+            });
+            html.find('#event-btn').click(() => {
+              window.MenagramoSystem._triggerMisfortuneEvent(actor);
+            });
+          }
+        }).render(true);
+      } else {
+        // Applica nuovo menagramo
+        window.MenagramoSystem.showMenagramoDialog(actor);
+      }
+    } else {
+      ui.notifications.error("Seleziona un personaggio o PNG!");
+    }
+  } else {
+    ui.notifications.error("Seleziona un solo token!");
+  }
+}
+      `,
+      img: "icons/magic/death/skull-humanoid-crown-white.webp",
+      flags: {
+        "brancalonia-bigat": {
+          isSystemMacro: true,
+          version: "1.0"
+        }
+      }
+    };
+
+    // Verifica se la macro esiste già
+    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags["brancalonia-bigat"]?.isSystemMacro);
+
+    if (!existingMacro) {
+      Macro.create(macroData).then(() => {
+        console.log("Macro Gestione Menagramo creata!");
+      });
+    }
   }
 
   /**
@@ -571,45 +867,6 @@ class MenagramoSystem {
     });
   }
 
-  /**
-   * Crea macro per gestione menagramo
-   */
-  static createMenagramoMacros() {
-    const macros = [
-      {
-        name: "Applica Menagramo",
-        type: "script",
-        img: "icons/magic/death/skull-humanoid-crown-white.webp",
-        command: `
-          const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
-          if (actor) {
-            game.brancalonia.menagramo.showMenagramoDialog(actor);
-          } else {
-            ui.notifications.warn("Seleziona un personaggio!");
-          }
-        `
-      },
-      {
-        name: "Rimuovi Menagramo",
-        type: "script",
-        img: "icons/magic/holy/prayer-hands-glowing-yellow.webp",
-        command: `
-          const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
-          if (actor) {
-            game.brancalonia.menagramo.showRemovalDialog(actor);
-          } else {
-            ui.notifications.warn("Seleziona un personaggio!");
-          }
-        `
-      }
-    ];
-
-    macros.forEach(macroData => {
-      Macro.create(macroData);
-    });
-
-    ui.notifications.info("Macro Menagramo create");
-  }
 
   /**
    * Mostra dialog per applicare menagramo
@@ -745,4 +1002,3 @@ function applyMenagramoToRoll(actor, config) {
   }
 }
 
-export { MenagramoSystem };

@@ -4,7 +4,7 @@
  * Compatibile con dnd5e system per Foundry VTT v13
  */
 
-export class DuelingSystem {
+class DuelingSystem {
   constructor() {
     // Tipi di duello disponibili
     this.duelTypes = {
@@ -184,8 +184,208 @@ export class DuelingSystem {
     // Stato duelli attivi
     this.activeDuels = new Map();
 
-    this._setupHooks();
-    this._registerSettings();
+    // Non chiamare i metodi privati nel constructor
+  }
+
+  /**
+   * Metodo statico di inizializzazione completo
+   */
+  static initialize() {
+    console.log("⚔️ Inizializzazione Sistema Duelli");
+
+    // Registrazione settings
+    this.registerSettings();
+
+    // Creazione istanza globale
+    const instance = new DuelingSystem();
+    instance._setupHooks();
+    instance._registerSettings();
+
+    // Salva nell'oggetto globale
+    if (!game.brancalonia) game.brancalonia = {};
+    game.brancalonia.duelingSystem = instance;
+
+    // Registrazione comandi chat
+    this.registerChatCommands();
+
+    // Creazione macro automatica
+    this.createMacros();
+
+    // Estensione Actor per duelli
+    this.extendActor();
+
+    console.log("✅ Sistema Duelli inizializzato");
+  }
+
+  /**
+   * Registra le impostazioni del modulo
+   */
+  static registerSettings() {
+    game.settings.register("brancalonia-bigat", "duelRules", {
+      name: "Regole Duelli",
+      hint: "Tipo di regole per i duelli",
+      scope: "world",
+      config: true,
+      type: String,
+      choices: {
+        "strict": "Rigorose (no magia, no ranged)",
+        "flexible": "Flessibili (alcune eccezioni)",
+        "free": "Libere (tutto permesso)"
+      },
+      default: "strict"
+    });
+
+    game.settings.register("brancalonia-bigat", "duelSpectators", {
+      name: "Spettatori nei Duelli",
+      hint: "Gli spettatori influenzano il duello",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "duelHonorCode", {
+      name: "Codice d'Onore",
+      hint: "Applica automaticamente penalità per violazioni del codice d'onore",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+  }
+
+  /**
+   * Registra comandi chat
+   */
+  static registerChatCommands() {
+    // Comando per iniziare duello
+    game.socket.on("system.brancalonia-bigat", (data) => {
+      if (data.type === "duel-command" && game.user.isGM) {
+        const instance = game.brancalonia?.duelingSystem;
+        if (instance) {
+          switch (data.command) {
+            case "start":
+              instance.startDuel(data.challenger, data.challenged, data.type, data.options);
+              break;
+            case "end":
+              instance._endDuel(data.duel, data.winner, data.reason);
+              break;
+            case "move":
+              instance.executeSpecialMove(data.actor, data.move, data.target);
+              break;
+          }
+        }
+      }
+    });
+
+    // Comando testuale per duelli
+    if (game.modules.get("monk-enhanced-journal")?.active) {
+      game.MonksEnhancedJournal?.registerChatCommand("/duello", {
+        name: "Gestisci Duelli",
+        callback: (args) => {
+          const instance = game.brancalonia?.duelingSystem;
+          if (instance && game.user.isGM) {
+            if (args[0] === "sfida") {
+              // /duello sfida @sfidante @sfidato tipo
+              const challengerName = args[1]?.replace('@', '');
+              const challengedName = args[2]?.replace('@', '');
+              const duelType = args[3] || "primo_sangue";
+
+              const challenger = game.actors.find(a => a.name.toLowerCase().includes(challengerName?.toLowerCase()));
+              const challenged = game.actors.find(a => a.name.toLowerCase().includes(challengedName?.toLowerCase()));
+
+              if (challenger && challenged) {
+                instance.startDuel(challenger, challenged, duelType);
+              } else {
+                ui.notifications.error("Personaggi non trovati!");
+              }
+            } else {
+              instance.renderDuelManager();
+            }
+          }
+        },
+        help: "Uso: /duello [sfida @sfidante @sfidato tipo] - Gestisce i duelli"
+      });
+    }
+  }
+
+  /**
+   * Crea macro automatiche
+   */
+  static createMacros() {
+    if (!game.user.isGM) return;
+
+    const macroData = {
+      name: "⚔️ Gestione Duelli",
+      type: "script",
+      img: "icons/skills/melee/swords-crossed-silver.webp",
+      command: `
+const duelSystem = game.brancalonia?.duelingSystem;
+if (duelSystem) {
+  duelSystem.renderDuelManager();
+} else {
+  ui.notifications.error("Sistema Duelli non inizializzato!");
+}
+      `,
+      folder: null,
+      sort: 0,
+      ownership: { default: 0, [game.user.id]: 3 },
+      flags: { "brancalonia-bigat": { "auto-generated": true } }
+    };
+
+    // Controlla se esiste già
+    const existing = game.macros.find(m => m.name === macroData.name);
+    if (!existing) {
+      Macro.create(macroData);
+      console.log("✅ Macro Duelli creata");
+    }
+  }
+
+  /**
+   * Estende la classe Actor con metodi duello
+   */
+  static extendActor() {
+    // Metodo per sfidare a duello
+    Actor.prototype.challengeToDuel = async function(opponent, duelType = "primo_sangue", options = {}) {
+      const instance = game.brancalonia?.duelingSystem;
+      if (instance) {
+        return await instance.startDuel(this, opponent, duelType, options);
+      }
+    };
+
+    // Metodo per calcolare modificatore duello
+    Actor.prototype.getDuelModifier = function(style = "equilibrato") {
+      const instance = game.brancalonia?.duelingSystem;
+      if (!instance) return 0;
+
+      const fightingStyle = instance.fightingStyles[style];
+      let modifier = 0;
+
+      // Bonus da stile
+      if (fightingStyle?.bonus?.attack) {
+        modifier += fightingStyle.bonus.attack;
+      }
+
+      // Bonus da reputazione
+      const reputation = this.flags.brancalonia?.reputation || 0;
+      if (reputation >= 50) modifier += 2;
+      else if (reputation >= 25) modifier += 1;
+
+      // Penalità da infamia
+      const infamy = this.flags.brancalonia?.infamia || 0;
+      if (infamy >= 50) modifier -= 2;
+      else if (infamy >= 25) modifier -= 1;
+
+      return modifier;
+    };
+
+    // Metodo per arendersi in duello
+    Actor.prototype.surrenderDuel = function() {
+      const instance = game.brancalonia?.duelingSystem;
+      if (instance) {
+        instance.requestSubmission(this);
+      }
+    };
   }
 
   _setupHooks() {
@@ -235,31 +435,21 @@ export class DuelingSystem {
         this._endDuel(duel, item.parent);
       }
     });
+
+    // Hook per violazioni codice d'onore
+    Hooks.on("dnd5e.rollDamage", (item, roll) => {
+      if (!game.settings.get("brancalonia-bigat", "duelHonorCode")) return;
+
+      const combat = game.combat;
+      if (!combat?.flags?.brancalonia?.isDuel) return;
+
+      // Controlla violazioni (attacco alle spalle, magia non consentita, ecc.)
+      this._checkHonorCodeViolations(item, roll, combat);
+    });
   }
 
   _registerSettings() {
-    game.settings.register("brancalonia-bigat", "duelRules", {
-      name: "Regole Duelli",
-      hint: "Tipo di regole per i duelli",
-      scope: "world",
-      config: true,
-      type: String,
-      choices: {
-        "strict": "Rigorose (no magia, no ranged)",
-        "flexible": "Flessibili (alcune eccezioni)",
-        "free": "Libere (tutto permesso)"
-      },
-      default: "strict"
-    });
-
-    game.settings.register("brancalonia-bigat", "duelSpectators", {
-      name: "Spettatori nei Duelli",
-      hint: "Gli spettatori influenzano il duello",
-      scope: "world",
-      config: true,
-      type: Boolean,
-      default: true
-    });
+    // Settings già registrate in registerSettings() statico
   }
 
   /**
@@ -638,38 +828,57 @@ export class DuelingSystem {
   }
 
   /**
-   * Applica modificatori del duello
+   * Controlla violazioni codice d'onore
    */
-  _applyDuelModifiers(item, config, duel) {
+  _checkHonorCodeViolations(item, roll, combat) {
+    const duelId = combat.flags.brancalonia.duelId;
+    const duel = this.activeDuels.get(duelId);
+    if (!duel) return;
+
     const actor = item.parent;
-    const duelist = duel.challenger.actor.id === actor.id
-      ? duel.challenger
-      : duel.challenged;
+    let violations = [];
 
-    const style = this.fightingStyles[duelist.style];
-
-    // Applica bonus stile all'attacco
-    if (style.bonus.attack) {
-      config.parts = config.parts || [];
-      config.parts.push(`+${style.bonus.attack}[Stile ${style.name}]`);
+    // Controllo magia non consentita
+    if (item.type === "spell" && !duel.type.rules.allowMagic) {
+      violations.push("Uso di magia non consentito");
     }
 
-    // Controlli vantaggi/svantaggi da mosse speciali
-    if (actor.flags.brancalonia?.nextAttackAdvantage) {
-      config.advantage = true;
-      actor.unsetFlag("brancalonia-bigat", "nextAttackAdvantage");
-    }
-    if (actor.flags.brancalonia?.nextAttackDisadvantage) {
-      config.disadvantage = true;
-      actor.unsetFlag("brancalonia-bigat", "nextAttackDisadvantage");
+    // Controllo attacchi a distanza non consentiti
+    if (item.system.range?.value > 5 && !duel.type.rules.allowRanged) {
+      violations.push("Attacco a distanza non consentito");
     }
 
-    // Power attack
-    const powerAttack = actor.flags.brancalonia?.powerAttack;
-    if (powerAttack) {
-      config.parts.push(`${powerAttack.attack}[Colpo Mirato]`);
-      actor.unsetFlag("brancalonia-bigat", "powerAttack");
+    // Applica penalità per violazioni
+    for (const violation of violations) {
+      this._applyHonorViolationPenalty(actor, violation, duel);
     }
+  }
+
+  /**
+   * Applica penalità per violazione codice d'onore
+   */
+  async _applyHonorViolationPenalty(actor, violation, duel) {
+    ChatMessage.create({
+      content: `
+        <div class="brancalonia-honor-violation">
+          <h3>⚖️ VIOLAZIONE CODICE D'ONORE!</h3>
+          <p><strong>${actor.name}:</strong> ${violation}</p>
+          <p>Penalità: -5 Reputazione, +10 Infamia</p>
+        </div>
+      `,
+      speaker: { alias: "Maestro del Duello" }
+    });
+
+    // Applica penalità
+    const currentInfamy = actor.flags.brancalonia?.infamia || 0;
+    const currentReputation = actor.flags.brancalonia?.reputation || 0;
+
+    await actor.setFlag("brancalonia-bigat", "infamia", currentInfamy + 10);
+    await actor.setFlag("brancalonia-bigat", "reputation", Math.max(0, currentReputation - 5));
+
+    // Termina il duello per disonore
+    const opponent = duel.challenger.actor.id === actor.id ? duel.challenged.actor : duel.challenger.actor;
+    await this._endDuel(duel, opponent, "dishonor");
   }
 
   /**
@@ -850,7 +1059,8 @@ export class DuelingSystem {
       "incapacitated": "Incapacitazione",
       "submission": "Resa",
       "time-limit": "Limite di Tempo",
-      "interference": "Interferenza Esterna"
+      "interference": "Interferenza Esterna",
+      "dishonor": "Disonore"
     };
     return reasons[reason] || reason;
   }
@@ -978,10 +1188,25 @@ export class DuelingSystem {
               <div class="active-duel">
                 <p>${duel.challenger.actor.name} vs ${duel.challenged.actor.name}</p>
                 <p>${duel.type.name} - Round ${duel.round}</p>
+                <button class="end-duel" data-duel="${duel.id}">Termina</button>
               </div>
             `).join('') :
             '<p>Nessun duello attivo</p>'
           }
+        </div>
+
+        <div class="special-moves">
+          <h3>Mosse Speciali</h3>
+          <div class="moves-grid">
+            ${Object.entries(this.specialMoves).map(([key, move]) => `
+              <div class="move-card">
+                <h4>${move.name}</h4>
+                <p>${move.effect}</p>
+                <p class="requirements">${move.requirements}</p>
+                <p class="cost">Costo: ${move.cost}</p>
+              </div>
+            `).join('')}
+          </div>
         </div>
       </div>
     `;
@@ -1011,9 +1236,87 @@ export class DuelingSystem {
             dialog.close();
           }
         });
+
+        html.find('.end-duel').click(ev => {
+          const duelId = ev.currentTarget.dataset.duel;
+          const duel = this.activeDuels.get(duelId);
+          if (duel) {
+            this._endDuel(duel, null, "interrupted");
+            dialog.close();
+          }
+        });
       }
     });
 
     dialog.render(true);
   }
+}
+
+// Registra classe globale
+window.DuelingSystem = DuelingSystem;
+
+// Auto-inizializzazione
+Hooks.once('init', () => {
+  console.log("🎮 Brancalonia | Inizializzazione Dueling System");
+  DuelingSystem.initialize();
+});
+
+// Hook per integrazione con schede
+Hooks.on('renderActorSheet', (app, html, data) => {
+  if (!game.user.isGM) return;
+
+  const actor = app.actor;
+  if (actor.type !== "character" && actor.type !== "npc") return;
+
+  // Aggiungi sezione duelli
+  const duelSection = $(`
+    <div class="form-group">
+      <label>Gestione Duelli</label>
+      <div class="form-fields">
+        <button type="button" class="challenge-duel">
+          <i class="fas fa-swords"></i> Sfida a Duello
+        </button>
+        <button type="button" class="view-duel-stats">
+          <i class="fas fa-chart-bar"></i> Statistiche Duelli
+        </button>
+      </div>
+    </div>
+  `);
+
+  html.find('.tab.details .form-group').last().after(duelSection);
+
+  duelSection.find('.challenge-duel').click(() => {
+    const instance = game.brancalonia?.duelingSystem;
+    if (instance) {
+      instance.renderDuelManager();
+    }
+  });
+
+  duelSection.find('.view-duel-stats').click(() => {
+    // Mostra statistiche duelli dell'attore
+    const wins = actor.getFlag("brancalonia-bigat", "duelWins") || 0;
+    const losses = actor.getFlag("brancalonia-bigat", "duelLosses") || 0;
+    const draws = actor.getFlag("brancalonia-bigat", "duelDraws") || 0;
+
+    new Dialog({
+      title: `Statistiche Duelli - ${actor.name}`,
+      content: `
+        <div class="duel-stats">
+          <h3>Record Duelli</h3>
+          <p>Vittorie: <strong>${wins}</strong></p>
+          <p>Sconfitte: <strong>${losses}</strong></p>
+          <p>Pareggi: <strong>${draws}</strong></p>
+          <p>Totale: <strong>${wins + losses + draws}</strong></p>
+          <hr>
+          <p>Ratio: <strong>${losses > 0 ? (wins / losses).toFixed(2) : wins}</strong></p>
+        </div>
+      `,
+      buttons: { close: { label: "Chiudi" } }
+    }).render(true);
+  });
+});
+
+// Export per compatibilità
+if (typeof module !== 'undefined') {
+  module.exports = DuelingSystem;
 }

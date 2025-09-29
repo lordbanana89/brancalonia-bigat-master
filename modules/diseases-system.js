@@ -242,42 +242,12 @@ class DiseasesSystem {
       }
     };
 
-    this._setupHooks();
-    this._registerSettings();
   }
 
-  _setupHooks() {
-    // Hook per esposizione a malattie
-    HooksManager.on(HooksManager.HOOKS.UPDATE_ACTOR, (actor, update, options, userId) => {
-      if (update.system?.attributes?.hp?.value !== undefined) {
-        const hpLoss = (actor.system.attributes.hp.value - update.system.attributes.hp.value);
-        if (hpLoss > 10 && Math.random() < 0.1) {
-          // 10% possibilità di infezione con ferite gravi
-          this._checkDiseaseExposure(actor, "morbo_putrescente");
-        }
-      }
-    });
+  static initialize() {
+    console.log("Inizializzazione DiseasesSystem...");
 
-    // Hook per riposo lungo e progressione malattia
-    Hooks.on("dnd5e.restCompleted", (actor, result) => {
-      if (result.longRest) {
-        this._progressDiseases(actor);
-        this._checkDiseaseRecovery(actor);
-      }
-    });
-
-    // Hook per contatto con creature infette
-    Hooks.on("dnd5e.applyDamage", (actor, damage, options) => {
-      if (options.attackerId) {
-        const attacker = game.actors.get(options.attackerId);
-        if (attacker?.flags?.brancalonia?.diseased) {
-          this._checkContagion(actor, attacker);
-        }
-      }
-    });
-  }
-
-  _registerSettings() {
+    // Registrazione settings
     game.settings.register("brancalonia-bigat", "enableDiseases", {
       name: "Sistema Malattie",
       hint: "Attiva il sistema completo di malattie di Brancalonia",
@@ -301,6 +271,337 @@ class DiseasesSystem {
       },
       default: "medium"
     });
+
+    game.settings.register("brancalonia-bigat", "diseaseAutoProgress", {
+      name: "Progressione Automatica",
+      hint: "Le malattie progrediscono automaticamente durante i riposi lunghi",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "diseaseContagion", {
+      name: "Sistema Contagio",
+      hint: "Abilita il contagio automatico tra creature",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    // Creazione istanza globale
+    window.DiseasesSystem = new DiseasesSystem();
+
+    // Registrazione hooks
+    DiseasesSystem._registerHooks();
+
+    // Registrazione comandi chat
+    DiseasesSystem._registerChatCommands();
+
+    // Creazione macro automatica
+    DiseasesSystem._createMacro();
+
+    console.log("DiseasesSystem inizializzato correttamente!");
+  }
+
+  static _registerHooks() {
+    // Hook per esposizione a malattie
+    Hooks.on("updateActor", (actor, update, options, userId) => {
+      if (!game.settings.get("brancalonia-bigat", "enableDiseases")) return;
+
+      if (update.system?.attributes?.hp?.value !== undefined) {
+        const hpLoss = (actor.system.attributes.hp.value - update.system.attributes.hp.value);
+        if (hpLoss > 10 && Math.random() < 0.1) {
+          // 10% possibilità di infezione con ferite gravi
+          window.DiseasesSystem._checkDiseaseExposure(actor, "morbo_putrescente");
+        }
+      }
+    });
+
+    // Hook per riposo lungo e progressione malattia
+    Hooks.on("dnd5e.restCompleted", (actor, result) => {
+      if (!game.settings.get("brancalonia-bigat", "enableDiseases")) return;
+      if (!game.settings.get("brancalonia-bigat", "diseaseAutoProgress")) return;
+
+      if (result.longRest) {
+        window.DiseasesSystem._progressDiseases(actor);
+        window.DiseasesSystem._checkDiseaseRecovery(actor);
+      }
+    });
+
+    // Hook per contatto con creature infette
+    Hooks.on("dnd5e.applyDamage", (actor, damage, options) => {
+      if (!game.settings.get("brancalonia-bigat", "enableDiseases")) return;
+      if (!game.settings.get("brancalonia-bigat", "diseaseContagion")) return;
+
+      if (options.attackerId) {
+        const attacker = game.actors.get(options.attackerId);
+        if (attacker?.flags?.brancalonia?.diseased) {
+          window.DiseasesSystem._checkContagion(actor, attacker);
+        }
+      }
+    });
+
+    // Hook per aggiungere pulsante malattie alle schede personaggio
+    Hooks.on("renderActorSheet", (app, html, data) => {
+      if (app.actor.type !== "character" || !game.user.isGM) return;
+      if (!game.settings.get("brancalonia-bigat", "enableDiseases")) return;
+
+      const button = $(`<button class="disease-manager-btn" title="Gestione Malattie">
+        <i class="fas fa-virus"></i>
+      </button>`);
+      html.find(".window-header .window-title").after(button);
+      button.click(() => {
+        window.DiseasesSystem.renderDiseaseManager(app.actor);
+      });
+    });
+
+    console.log("DiseasesSystem hooks registrati!");
+  }
+
+  static _registerChatCommands() {
+    // Comando per infettare attore
+    game.chatCommands.register({
+      name: "/malattia-infetta",
+      module: "brancalonia-bigat",
+      description: "Infetta un personaggio con una malattia",
+      icon: "<i class='fas fa-virus'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può infettare i personaggi!");
+          return;
+        }
+
+        const tokens = canvas.tokens.controlled;
+        if (tokens.length !== 1) {
+          ui.notifications.error("Seleziona un solo token!");
+          return;
+        }
+
+        const params = parameters.split(" ");
+        const diseaseName = params[0];
+
+        if (!diseaseName || !window.DiseasesSystem.diseases[diseaseName]) {
+          ui.notifications.error("Malattia non valida! Usa /malattia-lista per vedere le malattie disponibili.");
+          return;
+        }
+
+        await window.DiseasesSystem.infectActor(tokens[0].actor, diseaseName);
+      }
+    });
+
+    // Comando per curare malattia
+    game.chatCommands.register({
+      name: "/malattia-cura",
+      module: "brancalonia-bigat",
+      description: "Cura una malattia di un personaggio",
+      icon: "<i class='fas fa-pills'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può curare le malattie!");
+          return;
+        }
+
+        const tokens = canvas.tokens.controlled;
+        if (tokens.length !== 1) {
+          ui.notifications.error("Seleziona un solo token!");
+          return;
+        }
+
+        const params = parameters.split(" ");
+        const diseaseName = params[0];
+        const method = params[1] || "magical";
+
+        if (!diseaseName) {
+          ui.notifications.error("Specifica la malattia da curare!");
+          return;
+        }
+
+        await window.DiseasesSystem.cureDisease(tokens[0].actor, diseaseName, method);
+      }
+    });
+
+    // Comando per gestire malattie
+    game.chatCommands.register({
+      name: "/malattia-gestisci",
+      module: "brancalonia-bigat",
+      description: "Apre il manager delle malattie per il personaggio selezionato",
+      icon: "<i class='fas fa-user-md'></i>",
+      callback: (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può gestire le malattie!");
+          return;
+        }
+
+        const tokens = canvas.tokens.controlled;
+        if (tokens.length !== 1) {
+          ui.notifications.error("Seleziona un solo token!");
+          return;
+        }
+
+        window.DiseasesSystem.renderDiseaseManager(tokens[0].actor);
+      }
+    });
+
+    // Comando per epidemia
+    game.chatCommands.register({
+      name: "/malattia-epidemia",
+      module: "brancalonia-bigat",
+      description: "Genera un'epidemia",
+      icon: "<i class='fas fa-exclamation-triangle'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può generare epidemie!");
+          return;
+        }
+
+        const params = parameters.split(" ");
+        const diseaseName = params[0] || null;
+        const severity = params[1] || "moderata";
+
+        await window.DiseasesSystem.generateEpidemic({
+          diseaseName: diseaseName,
+          severity: severity
+        });
+      }
+    });
+
+    // Comando per listare malattie
+    game.chatCommands.register({
+      name: "/malattia-lista",
+      module: "brancalonia-bigat",
+      description: "Mostra tutte le malattie disponibili",
+      icon: "<i class='fas fa-list'></i>",
+      callback: (chat, parameters, messageData) => {
+        const diseases = Object.entries(window.DiseasesSystem.diseases);
+        const content = `
+          <div class="brancalonia-help">
+            <h3>Malattie Disponibili</h3>
+            <ul>
+              ${diseases.map(([key, disease]) =>
+                `<li><strong>${key}</strong>: ${disease.name} (CD ${disease.dc})</li>`
+              ).join('')}
+            </ul>
+            <p><em>Usa /malattia-infetta [nome_malattia] per infettare un personaggio</em></p>
+          </div>
+        `;
+
+        ChatMessage.create({
+          content: content,
+          speaker: { alias: "Sistema Malattie" },
+          whisper: [game.user.id]
+        });
+      }
+    });
+
+    // Comando help
+    game.chatCommands.register({
+      name: "/malattia-help",
+      module: "brancalonia-bigat",
+      description: "Mostra l'aiuto per i comandi malattie",
+      icon: "<i class='fas fa-question-circle'></i>",
+      callback: (chat, parameters, messageData) => {
+        const helpText = `
+          <div class="brancalonia-help">
+            <h3>Comandi Sistema Malattie</h3>
+            <ul>
+              <li><strong>/malattia-infetta [malattia]</strong> - Infetta personaggio selezionato</li>
+              <li><strong>/malattia-cura [malattia] [metodo]</strong> - Cura malattia (natural/medical/magical)</li>
+              <li><strong>/malattia-gestisci</strong> - Apre manager malattie</li>
+              <li><strong>/malattia-epidemia [malattia] [severità]</strong> - Genera epidemia</li>
+              <li><strong>/malattia-lista</strong> - Lista malattie disponibili</li>
+              <li><strong>/malattia-help</strong> - Mostra questo aiuto</li>
+            </ul>
+            <h4>Metodi di Cura:</h4>
+            <p>natural, medical, magical</p>
+            <h4>Severità Epidemie:</h4>
+            <p>lieve, moderata, grave, devastante</p>
+          </div>
+        `;
+
+        ChatMessage.create({
+          content: helpText,
+          speaker: { alias: "Sistema Malattie" },
+          whisper: [game.user.id]
+        });
+      }
+    });
+
+    console.log("DiseasesSystem comandi chat registrati!");
+  }
+
+  static _createMacro() {
+    const macroData = {
+      name: "Gestione Malattie",
+      type: "script",
+      scope: "global",
+      command: `
+// Macro per Gestione Malattie
+if (!game.user.isGM) {
+  ui.notifications.error("Solo il GM può utilizzare questa macro!");
+} else {
+  const tokens = canvas.tokens.controlled;
+
+  if (tokens.length === 0) {
+    // Nessun token selezionato - mostra opzioni generali
+    new Dialog({
+      title: "Sistema Malattie",
+      content: \`
+        <div class="form-group">
+          <h3>Opzioni Sistema Malattie</h3>
+          <button id="epidemic-btn">Genera Epidemia</button>
+          <button id="list-diseases-btn">Lista Malattie</button>
+        </div>
+      \`,
+      buttons: {
+        close: { label: "Chiudi" }
+      },
+      render: html => {
+        html.find('#epidemic-btn').click(() => {
+          window.DiseasesSystem.generateEpidemic();
+        });
+        html.find('#list-diseases-btn').click(() => {
+          ChatMessage.create({
+            content: Object.entries(window.DiseasesSystem.diseases).map(([key, d]) =>
+              \`<p><strong>\${key}</strong>: \${d.name}</p>\`
+            ).join(''),
+            speaker: { alias: "Sistema Malattie" },
+            whisper: [game.user.id]
+          });
+        });
+      }
+    }).render(true);
+  } else if (tokens.length === 1) {
+    // Un token selezionato - gestisci malattie
+    const actor = tokens[0].actor;
+    if (actor.type === "character" || actor.type === "npc") {
+      window.DiseasesSystem.renderDiseaseManager(actor);
+    } else {
+      ui.notifications.error("Seleziona un personaggio o PNG!");
+    }
+  } else {
+    ui.notifications.error("Seleziona un solo token!");
+  }
+}
+      `,
+      img: "icons/magic/unholy/silhouette-evil-horned-red.webp",
+      flags: {
+        "brancalonia-bigat": {
+          isSystemMacro: true,
+          version: "1.0"
+        }
+      }
+    };
+
+    // Verifica se la macro esiste già
+    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags["brancalonia-bigat"]?.isSystemMacro);
+
+    if (!existingMacro) {
+      Macro.create(macroData).then(() => {
+        console.log("Macro Gestione Malattie creata!");
+      });
+    }
   }
 
   /**

@@ -4,7 +4,7 @@
  * Compatibile con dnd5e system per Foundry VTT v13
  */
 
-export class FactionsSystem {
+class FactionsSystem {
   constructor() {
     // Database fazioni di Brancalonia
     this.factions = {
@@ -327,8 +327,220 @@ export class FactionsSystem {
     // Reputazione dei PG con le fazioni
     this.characterReputations = new Map();
 
-    this._setupHooks();
-    this._registerSettings();
+    // Non chiamare metodi privati nel constructor
+  }
+
+  /**
+   * Metodo statico di inizializzazione completo
+   */
+  static initialize() {
+    console.log("🏰 Inizializzazione Sistema Fazioni");
+
+    // Registrazione settings
+    this.registerSettings();
+
+    // Creazione istanza globale
+    const instance = new FactionsSystem();
+    instance._initializeFactionRelations();
+    instance._setupHooks();
+    instance._registerSettings();
+
+    // Salva nell'oggetto globale
+    if (!game.brancalonia) game.brancalonia = {};
+    game.brancalonia.factionsSystem = instance;
+
+    // Registrazione comandi chat
+    this.registerChatCommands();
+
+    // Creazione macro automatica
+    this.createMacros();
+
+    // Estensione Actor per fazioni
+    this.extendActor();
+
+    console.log("✅ Sistema Fazioni inizializzato");
+  }
+
+  /**
+   * Registra le impostazioni del modulo
+   */
+  static registerSettings() {
+    game.settings.register("brancalonia-bigat", "factionInfluence", {
+      name: "Influenza Fazioni",
+      hint: "Le fazioni influenzano prezzi, quest e interazioni",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "factionWars", {
+      name: "Guerre tra Fazioni",
+      hint: "Abilita conflitti dinamici tra fazioni",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "factionReputation", {
+      name: "Sistema Reputazione Fazioni",
+      hint: "Abilita sistema di reputazione avanzato con le fazioni",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+  }
+
+  /**
+   * Registra comandi chat
+   */
+  static registerChatCommands() {
+    // Comando per gestire fazioni
+    game.socket.on("system.brancalonia-bigat", (data) => {
+      if (data.type === "faction-command" && game.user.isGM) {
+        const instance = game.brancalonia?.factionsSystem;
+        if (instance) {
+          switch (data.command) {
+            case "adjustRep":
+              instance.adjustReputation(data.actor, data.faction, data.amount, data.options);
+              break;
+            case "startWar":
+              instance.startFactionWar(data.faction1, data.faction2, data.reason);
+              break;
+            case "generateQuest":
+              const quest = instance.generateFactionQuest(data.faction, data.difficulty);
+              if (quest) {
+                ChatMessage.create({
+                  content: instance._formatQuestMessage(quest),
+                  speaker: { alias: "Fazioni" }
+                });
+              }
+              break;
+          }
+        }
+      }
+    });
+
+    // Comando testuale per fazioni
+    if (game.modules.get("monk-enhanced-journal")?.active) {
+      game.MonksEnhancedJournal?.registerChatCommand("/fazione", {
+        name: "Gestisci Fazioni",
+        callback: (args) => {
+          const instance = game.brancalonia?.factionsSystem;
+          if (instance && game.user.isGM) {
+            if (args[0] === "rep" && args.length >= 4) {
+              // /fazione rep @personaggio fazione_key +/-valore
+              const actorName = args[1]?.replace('@', '');
+              const factionKey = args[2];
+              const amount = parseInt(args[3]);
+
+              const actor = game.actors.find(a => a.name.toLowerCase().includes(actorName?.toLowerCase()));
+              if (actor && instance.factions[factionKey]) {
+                instance.adjustReputation(actor, factionKey, amount);
+              } else {
+                ui.notifications.error("Attore o fazione non trovati!");
+              }
+            } else {
+              instance.renderFactionsManager();
+            }
+          }
+        },
+        help: "Uso: /fazione [rep @personaggio fazione +/-valore] - Gestisce le fazioni"
+      });
+    }
+  }
+
+  /**
+   * Crea macro automatiche
+   */
+  static createMacros() {
+    if (!game.user.isGM) return;
+
+    const macroData = {
+      name: "🏰 Gestione Fazioni",
+      type: "script",
+      img: "icons/environment/settlement/castle.webp",
+      command: `
+const factionSystem = game.brancalonia?.factionsSystem;
+if (factionSystem) {
+  factionSystem.renderFactionsManager();
+} else {
+  ui.notifications.error("Sistema Fazioni non inizializzato!");
+}
+      `,
+      folder: null,
+      sort: 0,
+      ownership: { default: 0, [game.user.id]: 3 },
+      flags: { "brancalonia-bigat": { "auto-generated": true } }
+    };
+
+    // Controlla se esiste già
+    const existing = game.macros.find(m => m.name === macroData.name);
+    if (!existing) {
+      Macro.create(macroData);
+      console.log("✅ Macro Fazioni creata");
+    }
+  }
+
+  /**
+   * Estende la classe Actor con metodi fazioni
+   */
+  static extendActor() {
+    // Metodo per ottenere reputazione con una fazione
+    Actor.prototype.getFactionReputation = function(factionKey) {
+      const instance = game.brancalonia?.factionsSystem;
+      if (instance) {
+        return instance.getReputation(this, factionKey);
+      }
+      return 0;
+    };
+
+    // Metodo per unirsi a una fazione
+    Actor.prototype.joinFaction = async function(factionKey) {
+      const instance = game.brancalonia?.factionsSystem;
+      if (instance && instance.factions[factionKey]) {
+        await instance.adjustReputation(this, factionKey, 10);
+
+        // Imposta fazione principale se non ce n'è una
+        const currentFaction = this.flags.brancalonia?.primaryFaction;
+        if (!currentFaction) {
+          await this.setFlag("brancalonia-bigat", "primaryFaction", factionKey);
+        }
+
+        return true;
+      }
+      return false;
+    };
+
+    // Metodo per abbandonare una fazione
+    Actor.prototype.leaveFaction = async function(factionKey) {
+      const instance = game.brancalonia?.factionsSystem;
+      if (instance) {
+        await instance.adjustReputation(this, factionKey, -25);
+
+        // Rimuovi come fazione principale se lo è
+        const currentFaction = this.flags.brancalonia?.primaryFaction;
+        if (currentFaction === factionKey) {
+          await this.unsetFlag("brancalonia-bigat", "primaryFaction");
+        }
+
+        return true;
+      }
+      return false;
+    };
+
+    // Metodo per ottenere rango in una fazione
+    Actor.prototype.getFactionRank = function(factionKey) {
+      const instance = game.brancalonia?.factionsSystem;
+      if (instance && instance.factions[factionKey]) {
+        const reputation = instance.getReputation(this, factionKey);
+        const faction = instance.factions[factionKey];
+        return instance._getRank(faction, reputation);
+      }
+      return null;
+    };
   }
 
   _initializeFactionRelations() {
@@ -402,26 +614,24 @@ export class FactionsSystem {
         }
       }
     });
+
+    // Hook per eventi temporali
+    Hooks.on("timePassed", (worldTime, dt) => {
+      if (dt >= 86400 && game.user.isGM) { // Ogni giorno (86400 secondi)
+        this._dailyFactionEvents();
+      }
+    });
+
+    // Hook per modifiche del mondo che influenzano le fazioni
+    Hooks.on("updateScene", (scene, update, options, userId) => {
+      if (update.flags?.brancalonia?.factionControl && game.user.isGM) {
+        this._handleTerritorialChange(scene, update.flags.brancalonia.factionControl);
+      }
+    });
   }
 
   _registerSettings() {
-    game.settings.register("brancalonia-bigat", "factionInfluence", {
-      name: "Influenza Fazioni",
-      hint: "Le fazioni influenzano prezzi, quest e interazioni",
-      scope: "world",
-      config: true,
-      type: Boolean,
-      default: true
-    });
-
-    game.settings.register("brancalonia-bigat", "factionWars", {
-      name: "Guerre tra Fazioni",
-      hint: "Abilita conflitti dinamici tra fazioni",
-      scope: "world",
-      config: true,
-      type: Boolean,
-      default: true
-    });
+    // Settings già registrate in registerSettings() statico
   }
 
   /**
@@ -780,6 +990,103 @@ export class FactionsSystem {
   }
 
   /**
+   * Eventi giornalieri delle fazioni
+   */
+  async _dailyFactionEvents() {
+    // Controllo guerre attive
+    const settings = game.settings.storage.get("world") || {};
+    const wars = Object.keys(settings)
+      .filter(key => key.startsWith("brancalonia-bigat.war-"))
+      .map(key => settings[key]);
+
+    for (const war of wars) {
+      if (war.status === "active") {
+        // 20% chance di battaglia ogni giorno
+        if (Math.random() < 0.2) {
+          this.resolveFactionBattle(war.factions[0], war.factions[1]);
+        }
+      }
+    }
+
+    // Eventi casuali fazioni
+    if (Math.random() < 0.1) { // 10% al giorno
+      this._generateRandomFactionEvent();
+    }
+  }
+
+  /**
+   * Genera evento casuale fazione
+   */
+  _generateRandomFactionEvent() {
+    const factionKeys = Object.keys(this.factions);
+    const randomFactionKey = factionKeys[Math.floor(Math.random() * factionKeys.length)];
+    const faction = this.factions[randomFactionKey];
+
+    const events = [
+      `La ${faction.name} annuncia nuove alleanze commerciali`,
+      `Tensioni crescenti tra la ${faction.name} e i suoi rivali`,
+      `La ${faction.name} lancia una nuova campagna di reclutamento`,
+      `Scandalo nella ${faction.name}: il leader è sotto accusa`,
+      `La ${faction.name} ottiene una vittoria diplomatica importante`
+    ];
+
+    const event = events[Math.floor(Math.random() * events.length)];
+
+    ChatMessage.create({
+      content: `
+        <div class="brancalonia-faction-event">
+          <h3>📰 Notizie dal Regno</h3>
+          <p>${event}</p>
+        </div>
+      `,
+      speaker: { alias: "Cronache del Regno" }
+    });
+  }
+
+  /**
+   * Gestisce cambio controllo territoriale
+   */
+  _handleTerritorialChange(scene, factionControl) {
+    const oldFaction = scene.flags?.brancalonia?.factionControl?.current;
+    const newFaction = factionControl.current;
+
+    if (oldFaction && oldFaction !== newFaction) {
+      ChatMessage.create({
+        content: `
+          <div class="brancalonia-territory-change">
+            <h3>🏴 Cambio di Controllo Territoriale</h3>
+            <p><strong>${scene.name}</strong> ora è controllata da <strong>${this.factions[newFaction]?.name || newFaction}</strong></p>
+            <p>Precedentemente controllata da: ${this.factions[oldFaction]?.name || oldFaction}</p>
+          </div>
+        `,
+        speaker: { alias: "Eventi del Regno" }
+      });
+    }
+  }
+
+  /**
+   * Formatta messaggio quest
+   */
+  _formatQuestMessage(quest) {
+    return `
+      <div class="brancalonia-faction-quest">
+        <h3>📜 ${quest.name}</h3>
+        <p>${quest.description}</p>
+        <p><strong>Obiettivi:</strong></p>
+        <ul>
+          ${quest.objectives.map(o => `<li>${o}</li>`).join('')}
+        </ul>
+        <p><strong>Ricompense:</strong></p>
+        <ul>
+          <li>Reputazione: +${quest.rewards.reputation}</li>
+          <li>Oro: ${quest.rewards.gold} ducati</li>
+          <li>Speciale: ${quest.rewards.special}</li>
+        </ul>
+      </div>
+    `;
+  }
+
+  /**
    * UI per gestione fazioni
    */
   renderFactionsManager(actor = null) {
@@ -833,6 +1140,7 @@ export class FactionsSystem {
                 <p>Potere: ${faction.power}/10</p>
                 <p>Tipo: ${faction.type}</p>
                 <button class="generate-quest" data-faction="${key}">Genera Missione</button>
+                <button class="faction-info" data-faction="${key}">Info Dettagliate</button>
               </div>
             `).join('')}
           </div>
@@ -841,6 +1149,7 @@ export class FactionsSystem {
         <div class="faction-wars">
           <h3>Guerre tra Fazioni</h3>
           <button id="start-war">Inizia Guerra</button>
+          <button id="view-wars">Visualizza Guerre Attive</button>
         </div>
       </div>
     `;
@@ -866,28 +1175,62 @@ export class FactionsSystem {
           const faction = ev.currentTarget.dataset.faction;
           const quest = this.generateFactionQuest(faction, "medium");
 
-          ChatMessage.create({
+          if (quest) {
+            ChatMessage.create({
+              content: this._formatQuestMessage(quest),
+              speaker: { alias: "Fazioni" }
+            });
+          }
+        });
+
+        html.find('.faction-info').click(ev => {
+          const factionKey = ev.currentTarget.dataset.faction;
+          const faction = this.factions[factionKey];
+
+          new Dialog({
+            title: `${faction.name} - Informazioni Dettagliate`,
             content: `
-              <div class="brancalonia-faction-quest">
-                <h3>📜 ${quest.name}</h3>
-                <p>${quest.description}</p>
-                <p><strong>Obiettivi:</strong></p>
+              <div class="faction-details">
+                <h3>${faction.name}</h3>
+                <img src="${faction.icon}" style="width: 64px; height: 64px; float: right;">
+                <p><strong>Tipo:</strong> ${faction.type}</p>
+                <p><strong>Allineamento:</strong> ${faction.alignment}</p>
+                <p><strong>Potere:</strong> ${faction.power}/10</p>
+                <p><strong>Influenza:</strong> ${faction.influence}</p>
+                <p><strong>Quartier Generale:</strong> ${faction.headquarters}</p>
+                <p><strong>Leader:</strong> ${faction.leader}</p>
+                <p><strong>Descrizione:</strong> ${faction.description}</p>
+
+                <h4>Risorse:</h4>
                 <ul>
-                  ${quest.objectives.map(o => `<li>${o}</li>`).join('')}
+                  ${Object.entries(faction.resources).map(([key, value]) => `
+                    <li>${key}: ${value}</li>
+                  `).join('')}
                 </ul>
-                <p><strong>Ricompense:</strong></p>
+
+                <h4>Benefici Membri:</h4>
                 <ul>
-                  <li>Reputazione: +${quest.rewards.reputation}</li>
-                  <li>Oro: ${quest.rewards.gold} ducati</li>
-                  <li>Speciale: ${quest.rewards.special}</li>
+                  <li><strong>Membro:</strong> ${faction.benefits.member}</li>
+                  <li><strong>Alleato:</strong> ${faction.benefits.allied}</li>
+                  <li><strong>Onorato:</strong> ${faction.benefits.honored}</li>
+                </ul>
+
+                <h4>Missioni Tipiche:</h4>
+                <ul>
+                  ${faction.quests.map(quest => `<li>${quest}</li>`).join('')}
                 </ul>
               </div>
-            `
-          });
+            `,
+            buttons: { close: { label: "Chiudi" } }
+          }).render(true);
         });
 
         html.find('#start-war').click(() => {
           this._showWarDialog();
+        });
+
+        html.find('#view-wars').click(() => {
+          this._showActiveWarsDialog();
         });
       }
     });
@@ -938,4 +1281,134 @@ export class FactionsSystem {
       }
     }).render(true);
   }
+
+  _showActiveWarsDialog() {
+    const settings = game.settings.storage.get("world") || {};
+    const wars = Object.entries(settings)
+      .filter(([key, value]) => key.startsWith("brancalonia-bigat.war-"))
+      .map(([key, war]) => ({ key, ...war }));
+
+    const content = `
+      <div class="active-wars">
+        <h3>Guerre Attive</h3>
+        ${wars.length > 0 ?
+          wars.map(war => `
+            <div class="war-entry">
+              <h4>${this.factions[war.factions[0]]?.name} vs ${this.factions[war.factions[1]]?.name}</h4>
+              <p><strong>Motivo:</strong> ${war.reason}</p>
+              <p><strong>Durata:</strong> ${Math.floor((game.time.worldTime - war.startTime) / 86400)} giorni</p>
+              <p><strong>Battaglie:</strong> ${war.battles?.length || 0}</p>
+              <button class="end-war" data-key="${war.key}">Termina Guerra</button>
+            </div>
+          `).join('') :
+          '<p>Nessuna guerra attiva</p>'
+        }
+      </div>
+    `;
+
+    new Dialog({
+      title: "Guerre Attive",
+      content: content,
+      buttons: { close: { label: "Chiudi" } },
+      render: html => {
+        html.find('.end-war').click(async (ev) => {
+          const warKey = ev.currentTarget.dataset.key;
+          await game.settings.set("brancalonia-bigat", warKey.replace("brancalonia-bigat.", ""), null);
+          ui.notifications.info("Guerra terminata");
+          ev.currentTarget.closest('.war-entry').remove();
+        });
+      }
+    }).render(true);
+  }
+}
+
+// Registra classe globale
+window.FactionsSystem = FactionsSystem;
+
+// Auto-inizializzazione
+Hooks.once('init', () => {
+  console.log("🎮 Brancalonia | Inizializzazione Factions System");
+  FactionsSystem.initialize();
+});
+
+// Hook per integrazione con schede
+Hooks.on('renderActorSheet', (app, html, data) => {
+  if (!game.user.isGM) return;
+
+  const actor = app.actor;
+  if (actor.type !== "character" && actor.type !== "npc") return;
+
+  // Aggiungi sezione fazioni
+  const factionSection = $(`
+    <div class="form-group">
+      <label>Gestione Fazioni</label>
+      <div class="form-fields">
+        <button type="button" class="manage-factions">
+          <i class="fas fa-users"></i> Gestisci Fazioni
+        </button>
+        <button type="button" class="view-faction-status">
+          <i class="fas fa-flag"></i> Status Fazioni
+        </button>
+      </div>
+    </div>
+  `);
+
+  html.find('.tab.details .form-group').last().after(factionSection);
+
+  factionSection.find('.manage-factions').click(() => {
+    const instance = game.brancalonia?.factionsSystem;
+    if (instance) {
+      instance.renderFactionsManager(actor);
+    }
+  });
+
+  factionSection.find('.view-faction-status').click(() => {
+    const instance = game.brancalonia?.factionsSystem;
+    if (instance) {
+      const primaryFaction = actor.flags.brancalonia?.primaryFaction;
+      const reputations = actor.flags.brancalonia?.factionReputations || {};
+
+      const content = `
+        <div class="faction-status">
+          <h3>Status Fazioni - ${actor.name}</h3>
+          ${primaryFaction ? `
+            <p><strong>Fazione Principale:</strong> ${instance.factions[primaryFaction]?.name || primaryFaction}</p>
+          ` : '<p><em>Nessuna fazione principale</em></p>'}
+
+          <h4>Reputazioni:</h4>
+          <table style="width: 100%;">
+            <thead>
+              <tr><th>Fazione</th><th>Reputazione</th><th>Rango</th></tr>
+            </thead>
+            <tbody>
+              ${Object.entries(reputations)
+                .filter(([key, rep]) => rep !== 0)
+                .map(([key, rep]) => {
+                  const faction = instance.factions[key];
+                  const rank = faction ? instance._getRank(faction, rep) : null;
+                  return `
+                    <tr>
+                      <td>${faction?.name || key}</td>
+                      <td>${rep}</td>
+                      <td>${rank?.title || 'N/A'}</td>
+                    </tr>
+                  `;
+                }).join('') || '<tr><td colspan="3"><em>Nessuna reputazione</em></td></tr>'}
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      new Dialog({
+        title: `Status Fazioni - ${actor.name}`,
+        content,
+        buttons: { close: { label: "Chiudi" } }
+      }).render(true);
+    }
+  });
+});
+
+// Export per compatibilità
+if (typeof module !== 'undefined') {
+  module.exports = FactionsSystem;
 }

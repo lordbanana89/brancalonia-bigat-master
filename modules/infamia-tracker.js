@@ -3,7 +3,10 @@
  * Compatibile con Foundry VTT v13 e D&D 5e v3.3.1
  */
 
-export class InfamiaTracker {
+class InfamiaTracker {
+  static ID = 'brancalonia-infamia';
+  static NAMESPACE = 'brancalonia-bigat';
+
   constructor() {
     this.infamiaLevels = {
       0: { name: "Sconosciuto", effects: [] },
@@ -33,6 +36,325 @@ export class InfamiaTracker {
     };
 
     this._setupHooks();
+  }
+
+  /**
+   * Inizializzazione completa del modulo
+   */
+  static initialize() {
+    console.log('🎭 Inizializzazione Sistema Infamia');
+
+    // Registra settings
+    game.settings.register(this.NAMESPACE, 'trackInfamia', {
+      name: 'Traccia Infamia',
+      hint: 'Abilita il sistema di tracciamento infamia',
+      scope: 'world',
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register(this.NAMESPACE, 'infamiaEncounters', {
+      name: 'Incontri Casuali Infamia',
+      hint: 'Abilita incontri casuali con cacciatori di taglie basati su infamia',
+      scope: 'world',
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register(this.NAMESPACE, 'infamiaThresholds', {
+      scope: 'world',
+      config: false,
+      type: Object,
+      default: {
+        low: 10,
+        medium: 25,
+        high: 50,
+        extreme: 75
+      }
+    });
+
+    // Crea istanza globale
+    game.brancalonia = game.brancalonia || {};
+    game.brancalonia.infamia = new InfamiaTracker();
+
+    // Registra hooks principali
+    this._registerHooks();
+
+    // Registra comandi chat
+    this._registerChatCommands();
+
+    // Estendi Actor con metodi infamia
+    this._extendActor();
+
+    // Crea macro automatica
+    Hooks.once('ready', () => {
+      this._createMacro();
+    });
+
+    return true;
+  }
+
+  /**
+   * Registra tutti gli hooks del sistema
+   */
+  static _registerHooks() {
+    const instance = game.brancalonia?.infamia;
+    if (!instance) return;
+
+    // Hook per aggiungere UI alla scheda
+    Hooks.on('renderActorSheet', (app, html, data) => {
+      if (!game.settings.get(this.NAMESPACE, 'trackInfamia')) return;
+      if (app.actor.type === 'character') {
+        instance.renderInfamiaTracker(app, html, data);
+      }
+    });
+
+    // Hook per creazione nuovi personaggi
+    Hooks.on('createActor', (actor) => {
+      if (actor.type === 'character' && !actor.getFlag(this.NAMESPACE, 'infamia')) {
+        actor.setFlag(this.NAMESPACE, 'infamia', 0);
+      }
+    });
+
+    // Hook per modifiche infamia
+    Hooks.on('updateActor', (actor, data, options, userId) => {
+      if (data.flags?.[this.NAMESPACE]?.infamia !== undefined) {
+        instance._onInfamiaUpdate(actor, data.flags[this.NAMESPACE].infamia);
+      }
+    });
+
+    // Hook per controllo incontri casuali
+    if (game.settings.get(this.NAMESPACE, 'infamiaEncounters')) {
+      Hooks.on('canvasReady', () => {
+        if (game.user.isGM) {
+          instance._checkRandomBountyHunters();
+        }
+      });
+    }
+  }
+
+  /**
+   * Registra comandi chat
+   */
+  static _registerChatCommands() {
+    Hooks.on('chatMessage', (html, content, msg) => {
+      if (!content.startsWith('/infamia')) return true;
+
+      const parts = content.split(' ');
+      const command = parts[0];
+      const subcommand = parts[1];
+      const value = parts[2];
+
+      const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
+
+      if (!actor) {
+        ui.notifications.warn('Seleziona un personaggio!');
+        return false;
+      }
+
+      const instance = game.brancalonia?.infamia;
+      if (!instance) return false;
+
+      switch (subcommand) {
+        case 'add':
+          if (value) {
+            actor.addInfamia(parseInt(value));
+            ChatMessage.create({
+              content: `${actor.name} guadagna ${value} punti Infamia`,
+              speaker: ChatMessage.getSpeaker({actor})
+            });
+          }
+          break;
+
+        case 'remove':
+          if (value) {
+            actor.addInfamia(-parseInt(value));
+            ChatMessage.create({
+              content: `${actor.name} perde ${value} punti Infamia`,
+              speaker: ChatMessage.getSpeaker({actor})
+            });
+          }
+          break;
+
+        case 'set':
+          if (value) {
+            actor.setFlag(InfamiaTracker.NAMESPACE, 'infamia', parseInt(value));
+            ChatMessage.create({
+              content: `Infamia di ${actor.name} impostata a ${value}`,
+              speaker: ChatMessage.getSpeaker({actor})
+            });
+          }
+          break;
+
+        case 'show':
+          const infamia = actor.getFlag(InfamiaTracker.NAMESPACE, 'infamia') || 0;
+          const level = instance._getInfamiaLevel(infamia);
+          ChatMessage.create({
+            content: `
+              <div class="brancalonia-infamia-status">
+                <h3>${actor.name}</h3>
+                <p><strong>Infamia:</strong> ${infamia}/100</p>
+                <p><strong>Livello:</strong> ${level.name}</p>
+                ${level.effects.length > 0 ? `
+                  <p><strong>Effetti:</strong></p>
+                  <ul>${level.effects.map(e => `<li>${e}</li>`).join('')}</ul>
+                ` : ''}
+              </div>
+            `,
+            speaker: ChatMessage.getSpeaker({actor})
+          });
+          break;
+
+        case 'info':
+        case 'help':
+          instance._showInfamiaInfo(actor);
+          break;
+
+        case 'action':
+          instance._showAddInfamiaDialog(actor);
+          break;
+
+        default:
+          ChatMessage.create({
+            content: `
+              <div class="brancalonia-help">
+                <h3>Comandi Infamia</h3>
+                <ul>
+                  <li><code>/infamia add [valore]</code> - Aggiunge infamia</li>
+                  <li><code>/infamia remove [valore]</code> - Rimuove infamia</li>
+                  <li><code>/infamia set [valore]</code> - Imposta infamia</li>
+                  <li><code>/infamia show</code> - Mostra stato infamia</li>
+                  <li><code>/infamia info</code> - Mostra info sistema</li>
+                  <li><code>/infamia action</code> - Aggiungi per azione specifica</li>
+                </ul>
+              </div>
+            `,
+            whisper: [game.user.id]
+          });
+      }
+
+      return false;
+    });
+  }
+
+  /**
+   * Estende Actor con metodi infamia
+   */
+  static _extendActor() {
+    // Aggiungi metodo addInfamia
+    CONFIG.Actor.documentClass.prototype.addInfamia = async function(value) {
+      const current = this.getFlag(InfamiaTracker.NAMESPACE, 'infamia') || 0;
+      const newValue = Math.max(0, Math.min(100, current + value));
+      return await this.setFlag(InfamiaTracker.NAMESPACE, 'infamia', newValue);
+    };
+
+    // Aggiungi metodo getInfamia
+    CONFIG.Actor.documentClass.prototype.getInfamia = function() {
+      return this.getFlag(InfamiaTracker.NAMESPACE, 'infamia') || 0;
+    };
+
+    // Aggiungi metodo getInfamiaLevel
+    CONFIG.Actor.documentClass.prototype.getInfamiaLevel = function() {
+      const instance = game.brancalonia?.infamia;
+      if (!instance) return null;
+      const value = this.getInfamia();
+      return instance._getInfamiaLevel(value);
+    };
+  }
+
+  /**
+   * Crea macro per gestione infamia
+   */
+  static async _createMacro() {
+    const existingMacro = game.macros.find(m => m.name === 'Gestione Infamia');
+    if (!existingMacro && game.user.isGM) {
+      await Macro.create({
+        name: 'Gestione Infamia',
+        type: 'script',
+        img: 'icons/skills/social/intimidation-impressing.webp',
+        command: `
+// Gestione Infamia Brancalonia
+const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
+if (!actor) {
+  ui.notifications.warn('Seleziona un personaggio!');
+} else if (game.brancalonia?.infamia) {
+  game.brancalonia.infamia._showInfamiaInfo(actor);
+} else {
+  ui.notifications.error('Sistema Infamia non inizializzato!');
+}
+        `
+      });
+      console.log('📌 Macro "Gestione Infamia" creata');
+    }
+  }
+
+  /**
+   * Gestisce aggiornamenti infamia
+   */
+  _onInfamiaUpdate(actor, newValue) {
+    // Controlla soglie per effetti automatici
+    const thresholds = game.settings.get(InfamiaTracker.NAMESPACE, 'infamiaThresholds');
+
+    if (newValue >= thresholds.extreme && !actor.effects.find(e => e.label === 'Nemico Pubblico')) {
+      this._applyInfamiaEffect(actor, 'extreme');
+    } else if (newValue >= thresholds.high && !actor.effects.find(e => e.label === 'Fuorilegge')) {
+      this._applyInfamiaEffect(actor, 'high');
+    } else if (newValue >= thresholds.medium && !actor.effects.find(e => e.label === 'Ricercato')) {
+      this._applyInfamiaEffect(actor, 'medium');
+    } else if (newValue >= thresholds.low && !actor.effects.find(e => e.label === 'Mal Visto')) {
+      this._applyInfamiaEffect(actor, 'low');
+    }
+  }
+
+  /**
+   * Applica effetti basati su livello infamia
+   */
+  async _applyInfamiaEffect(actor, level) {
+    const effects = {
+      low: {
+        label: 'Mal Visto',
+        icon: 'icons/skills/social/diplomacy-handshake.webp',
+        changes: [
+          {key: 'system.skills.per.bonuses.check', mode: 2, value: '-1'}
+        ]
+      },
+      medium: {
+        label: 'Ricercato',
+        icon: 'icons/skills/social/intimidation-impressing.webp',
+        changes: [
+          {key: 'system.skills.per.bonuses.check', mode: 2, value: '-2'},
+          {key: 'system.skills.dec.bonuses.check', mode: 2, value: '-1'}
+        ]
+      },
+      high: {
+        label: 'Fuorilegge',
+        icon: 'icons/skills/wounds/injury-pain-hurt-damage.webp',
+        changes: [
+          {key: 'system.skills.per.bonuses.check', mode: 2, value: '-3'},
+          {key: 'system.skills.dec.bonuses.check', mode: 2, value: '-2'}
+        ]
+      },
+      extreme: {
+        label: 'Nemico Pubblico',
+        icon: 'icons/magic/death/skull-humanoid-crown-white-blue.webp',
+        changes: [
+          {key: 'system.skills.per.bonuses.check', mode: 2, value: '-5'},
+          {key: 'system.skills.dec.bonuses.check', mode: 2, value: '-3'},
+          {key: 'system.skills.itm.bonuses.check', mode: 2, value: '+2'}
+        ]
+      }
+    };
+
+    const effectData = effects[level];
+    if (!effectData) return;
+
+    await actor.createEmbeddedDocuments('ActiveEffect', [{
+      ...effectData,
+      origin: `Actor.${actor.id}`,
+      'flags.brancalonia-bigat.infamiaEffect': true
+    }]);
   }
 
   _setupHooks() {
@@ -464,3 +786,11 @@ export class InfamiaTracker {
     }
   }
 }
+
+// Registra globalmente
+window.InfamiaTracker = InfamiaTracker;
+
+// Auto-inizializzazione quando il gioco è pronto
+Hooks.once('init', () => {
+  InfamiaTracker.initialize();
+});

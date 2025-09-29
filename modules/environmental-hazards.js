@@ -4,7 +4,7 @@
  * Compatibile con dnd5e system per Foundry VTT v13
  */
 
-export class EnvironmentalHazardsSystem {
+class EnvironmentalHazardsSystem {
   constructor() {
     // Database completo degli hazard di Brancalonia
     this.hazards = {
@@ -344,8 +344,177 @@ export class EnvironmentalHazardsSystem {
       ]
     };
 
-    this._setupHooks();
-    this._registerSettings();
+    // Non chiamare i metodi privati nel constructor - saranno chiamati da initialize()
+  }
+
+  /**
+   * Metodo statico di inizializzazione completo
+   */
+  static initialize() {
+    console.log("🌿 Inizializzazione Sistema Hazard Ambientali");
+
+    // Registrazione settings
+    this.registerSettings();
+
+    // Creazione istanza globale
+    const instance = new EnvironmentalHazardsSystem();
+    instance._setupHooks();
+    instance._registerSettings();
+
+    // Salva nell'oggetto globale
+    if (!game.brancalonia) game.brancalonia = {};
+    game.brancalonia.environmentalHazards = instance;
+
+    // Registrazione comandi chat
+    this.registerChatCommands();
+
+    // Creazione macro automatica
+    this.createMacros();
+
+    // Estensione Actor per hazard
+    this.extendActor();
+
+    console.log("✅ Sistema Hazard Ambientali inizializzato");
+  }
+
+  /**
+   * Registra le impostazioni del modulo
+   */
+  static registerSettings() {
+    game.settings.register("brancalonia-bigat", "enableHazards", {
+      name: "Sistema Hazard Ambientali",
+      hint: "Attiva i pericoli ambientali automatici",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "hazardFrequency", {
+      name: "Frequenza Hazard",
+      hint: "Quanto spesso si incontrano hazard",
+      scope: "world",
+      config: true,
+      type: String,
+      choices: {
+        "low": "Bassa (10%)",
+        "medium": "Media (20%)",
+        "high": "Alta (35%)",
+        "extreme": "Estrema (50%)"
+      },
+      default: "medium"
+    });
+
+    game.settings.register("brancalonia-bigat", "hazardDamageMultiplier", {
+      name: "Moltiplicatore Danni Hazard",
+      hint: "Modifica l'intensità dei danni degli hazard ambientali",
+      scope: "world",
+      config: true,
+      type: Number,
+      default: 1.0,
+      range: {
+        min: 0.1,
+        max: 3.0,
+        step: 0.1
+      }
+    });
+  }
+
+  /**
+   * Registra comandi chat
+   */
+  static registerChatCommands() {
+    // Comando per attivare hazard
+    game.socket.on("system.brancalonia-bigat", (data) => {
+      if (data.type === "hazard-command" && game.user.isGM) {
+        const instance = game.brancalonia?.environmentalHazards;
+        if (instance && data.command === "trigger") {
+          instance.triggerHazard(data.hazard, data.actor, data.options || {});
+        }
+      }
+    });
+
+    // Registra comandi testuali
+    if (game.modules.get("monk-enhanced-journal")?.active) {
+      game.MonksEnhancedJournal?.registerChatCommand("/hazard", {
+        name: "Gestisci Hazard",
+        callback: (args) => {
+          const instance = game.brancalonia?.environmentalHazards;
+          if (instance && game.user.isGM) {
+            if (args[0]) {
+              instance.triggerHazard(args[0]);
+            } else {
+              instance.renderHazardManager();
+            }
+          }
+        },
+        help: "Uso: /hazard [nome_hazard] - Attiva un hazard o apre il manager"
+      });
+    }
+  }
+
+  /**
+   * Crea macro automatiche
+   */
+  static createMacros() {
+    if (!game.user.isGM) return;
+
+    const macroData = {
+      name: "🌿 Gestione Hazard Ambientali",
+      type: "script",
+      img: "icons/magic/nature/root-vine-fire-entangle-green.webp",
+      command: `
+const hazardSystem = game.brancalonia?.environmentalHazards;
+if (hazardSystem) {
+  hazardSystem.renderHazardManager();
+} else {
+  ui.notifications.error("Sistema Hazard non inizializzato!");
+}
+      `,
+      folder: null,
+      sort: 0,
+      ownership: { default: 0, [game.user.id]: 3 },
+      flags: { "brancalonia-bigat": { "auto-generated": true } }
+    };
+
+    // Controlla se esiste già
+    const existing = game.macros.find(m => m.name === macroData.name);
+    if (!existing) {
+      Macro.create(macroData);
+      console.log("✅ Macro Hazard Ambientali creata");
+    }
+  }
+
+  /**
+   * Estende la classe Actor con metodi hazard
+   */
+  static extendActor() {
+    const originalGetRollData = Actor.prototype.getRollData;
+    Actor.prototype.getRollData = function() {
+      const data = originalGetRollData.call(this);
+
+      // Aggiungi resistenze hazard
+      const hazardResistances = this.flags.brancalonia?.hazardResistances || {};
+      data.hazardResistance = hazardResistances;
+
+      return data;
+    };
+
+    // Metodo per controllare resistenza agli hazard
+    Actor.prototype.getHazardResistance = function(hazardType) {
+      const resistances = this.flags.brancalonia?.hazardResistances || {};
+      return resistances[hazardType] || 0;
+    };
+
+    // Metodo per applicare hazard con resistenze
+    Actor.prototype.applyEnvironmentalHazard = async function(hazard, options = {}) {
+      const instance = game.brancalonia?.environmentalHazards;
+      if (instance) {
+        const resistance = this.getHazardResistance(hazard.type);
+        const modifiedOptions = { ...options, resistance };
+        return await instance.triggerHazard(hazard.name || hazard, this, modifiedOptions);
+      }
+    };
   }
 
   _setupHooks() {
@@ -380,29 +549,7 @@ export class EnvironmentalHazardsSystem {
   }
 
   _registerSettings() {
-    game.settings.register("brancalonia-bigat", "enableHazards", {
-      name: "Sistema Hazard Ambientali",
-      hint: "Attiva i pericoli ambientali automatici",
-      scope: "world",
-      config: true,
-      type: Boolean,
-      default: true
-    });
-
-    game.settings.register("brancalonia-bigat", "hazardFrequency", {
-      name: "Frequenza Hazard",
-      hint: "Quanto spesso si incontrano hazard",
-      scope: "world",
-      config: true,
-      type: String,
-      choices: {
-        "low": "Bassa (10%)",
-        "medium": "Media (20%)",
-        "high": "Alta (35%)",
-        "extreme": "Estrema (50%)"
-      },
-      default: "medium"
-    });
+    // Settings già registrate in registerSettings() statico
   }
 
   /**
@@ -906,4 +1053,174 @@ export class EnvironmentalHazardsSystem {
 
     dialog.render(true);
   }
+
+  /**
+   * Sistema di notifiche avanzato per hazard
+   */
+  async _showHazardNotification(hazard, actor, severity = "warning") {
+    const notification = {
+      type: severity,
+      message: `⚠️ Hazard: ${hazard.name}`,
+      duration: 5000,
+      icon: hazard.img
+    };
+
+    ui.notifications[severity](notification.message);
+
+    // Notifica sonora se configurata
+    if (game.settings.get("brancalonia-bigat", "hazardSounds")) {
+      AudioHelper.play({
+        src: "sounds/environmental/danger-warning.wav",
+        volume: 0.5,
+        autoplay: true,
+        loop: false
+      }, false);
+    }
+  }
+
+  /**
+   * Sistema di auto-rilevamento hazard in movimento
+   */
+  _checkMovementHazards(token) {
+    if (!game.settings.get("brancalonia-bigat", "enableHazards")) return;
+
+    const scene = token.scene;
+    const hazardTiles = scene.tiles.filter(t =>
+      t.flags.brancalonia?.isHazard &&
+      this._isTokenInTileArea(token, t)
+    );
+
+    for (const tile of hazardTiles) {
+      const hazardType = tile.flags.brancalonia.hazardType;
+      if (hazardType && !tile.flags.brancalonia.triggered) {
+        this.triggerHazard(hazardType, token.actor);
+        tile.setFlag("brancalonia-bigat", "triggered", true);
+
+        // Reset dopo 1 minuto
+        setTimeout(() => {
+          tile.unsetFlag("brancalonia-bigat", "triggered");
+        }, 60000);
+      }
+    }
+  }
+
+  /**
+   * Controlla se token è in area tile
+   */
+  _isTokenInTileArea(token, tile) {
+    const tokenBounds = {
+      x: token.x,
+      y: token.y,
+      width: token.width,
+      height: token.height
+    };
+
+    const tileBounds = {
+      x: tile.x,
+      y: tile.y,
+      width: tile.width || 100,
+      height: tile.height || 100
+    };
+
+    return !(tokenBounds.x > tileBounds.x + tileBounds.width ||
+             tokenBounds.x + tokenBounds.width < tileBounds.x ||
+             tokenBounds.y > tileBounds.y + tileBounds.height ||
+             tokenBounds.y + tokenBounds.height < tileBounds.y);
+  }
+
+  /**
+   * Dialog per gestire resistenze hazard
+   */
+  _showHazardResistanceDialog(actor) {
+    const resistances = actor.flags.brancalonia?.hazardResistances || {};
+    const hazardTypes = ["naturale", "urbano", "dungeon", "magico"];
+
+    const content = `
+      <div class="hazard-resistances-dialog">
+        <h3>Resistenze Hazard Ambientali</h3>
+        <p>Configura le resistenze di ${actor.name} agli hazard:</p>
+        ${hazardTypes.map(type => `
+          <div class="form-group">
+            <label>${type.charAt(0).toUpperCase() + type.slice(1)}:</label>
+            <select name="${type}">
+              <option value="0" ${(resistances[type] || 0) === 0 ? 'selected' : ''}>Nessuna</option>
+              <option value="0.5" ${(resistances[type] || 0) === 0.5 ? 'selected' : ''}>Resistenza (50%)</option>
+              <option value="1" ${(resistances[type] || 0) === 1 ? 'selected' : ''}>Immunità (100%)</option>
+            </select>
+          </div>
+        `).join('')}
+      </div>
+    `;
+
+    new Dialog({
+      title: "Resistenze Hazard",
+      content,
+      buttons: {
+        save: {
+          label: "Salva",
+          callback: async (html) => {
+            const newResistances = {};
+            hazardTypes.forEach(type => {
+              newResistances[type] = parseFloat(html.find(`select[name="${type}"]`).val());
+            });
+            await actor.setFlag("brancalonia-bigat", "hazardResistances", newResistances);
+            ui.notifications.info("Resistenze hazard aggiornate");
+          }
+        },
+        cancel: { label: "Annulla" }
+      }
+    }).render(true);
+  }
+}
+
+// Registra classe globale
+window.EnvironmentalHazardsSystem = EnvironmentalHazardsSystem;
+
+// Auto-inizializzazione
+Hooks.once('init', () => {
+  console.log("🎮 Brancalonia | Inizializzazione Environmental Hazards System");
+  EnvironmentalHazardsSystem.initialize();
+});
+
+// Hook aggiuntivi per integrazione
+Hooks.on('updateToken', (token, update, options, userId) => {
+  if (!update.x && !update.y) return;
+
+  const instance = game.brancalonia?.environmentalHazards;
+  if (instance && game.user.isGM) {
+    instance._checkMovementHazards(token);
+  }
+});
+
+Hooks.on('renderActorSheet', (app, html, data) => {
+  if (!game.user.isGM) return;
+
+  const actor = app.actor;
+  if (actor.type !== "character" && actor.type !== "npc") return;
+
+  // Aggiungi sezione resistenze hazard
+  const hazardSection = $(`
+    <div class="form-group">
+      <label>Resistenze Hazard Ambientali</label>
+      <div class="form-fields">
+        <button type="button" class="manage-hazard-resistances">
+          <i class="fas fa-shield-alt"></i> Gestisci Resistenze
+        </button>
+      </div>
+    </div>
+  `);
+
+  html.find('.tab.details .form-group').last().after(hazardSection);
+
+  hazardSection.find('.manage-hazard-resistances').click(() => {
+    const instance = game.brancalonia?.environmentalHazards;
+    if (instance) {
+      instance._showHazardResistanceDialog(actor);
+    }
+  });
+});
+
+// Export per compatibilità
+if (typeof module !== 'undefined') {
+  module.exports = EnvironmentalHazardsSystem;
 }

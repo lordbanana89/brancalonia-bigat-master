@@ -3,7 +3,7 @@
  * Completamente compatibile con dnd5e system per Foundry VTT v13
  */
 
-export class DirtyJobsSystem {
+class DirtyJobsSystem {
   constructor() {
     // Tipi di lavori con parametri conformi a dnd5e
     this.jobTypes = {
@@ -149,27 +149,258 @@ export class DirtyJobsSystem {
       { name: "Vecchio Amico", trustworthy: 0.8, payModifier: 0.8 }
     ];
 
-    this._setupHooks();
   }
 
-  _setupHooks() {
+  static initialize() {
+    console.log("Inizializzazione DirtyJobsSystem...");
+
+    // Registrazione settings
+    game.settings.register("brancalonia-bigat", "dirtyJobsEnabled", {
+      name: "Sistema Lavori Sporchi Attivo",
+      hint: "Abilita il sistema di generazione lavori sporchi",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "dirtyJobsAutoReward", {
+      name: "Ricompense Automatiche",
+      hint: "Calcola automaticamente ricompense e infamia al completamento",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "dirtyJobsNotifications", {
+      name: "Notifiche Lavori",
+      hint: "Mostra notifiche per nuovi lavori e completamenti",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    // Creazione istanza globale
+    window.DirtyJobsSystem = new DirtyJobsSystem();
+
+    // Registrazione hooks
+    DirtyJobsSystem._registerHooks();
+
+    // Registrazione comandi chat
+    DirtyJobsSystem._registerChatCommands();
+
+    // Creazione macro automatica
+    DirtyJobsSystem._createMacro();
+
+    console.log("DirtyJobsSystem inizializzato correttamente!");
+  }
+
+  static _registerHooks() {
     // Hook per aggiungere lavori al journal
     Hooks.on("renderJournalDirectory", (app, html) => {
-      if (game.user.isGM) {
+      if (game.user.isGM && game.settings.get("brancalonia-bigat", "dirtyJobsEnabled")) {
         const button = $(`<button class="generate-job">
           <i class="fas fa-coins"></i> Genera Lavoro
         </button>`);
         html.find(".directory-header .action-buttons").append(button);
-        button.click(() => this.showJobGeneratorDialog());
+        button.click(() => window.DirtyJobsSystem.showJobGeneratorDialog());
       }
     });
 
     // Hook per tracciare completamento lavori
     Hooks.on("updateJournalEntry", (journal, update, options, userId) => {
       if (journal.flags.brancalonia?.isJob && update.flags?.brancalonia?.jobCompleted) {
-        this._handleJobCompletion(journal);
+        window.DirtyJobsSystem._handleJobCompletion(journal);
       }
     });
+
+    // Hook per aggiungere pulsanti ai journal entries di lavori
+    Hooks.on("renderJournalSheet", (app, html, data) => {
+      if (app.object.flags.brancalonia?.isJob && game.user.isGM) {
+        const button = $(`<button class="job-complete-btn" title="Completa Lavoro">
+          <i class="fas fa-check"></i> Completa
+        </button>`);
+        html.find(".window-header .window-title").after(button);
+        button.click(() => {
+          app.object.setFlag("brancalonia-bigat", "jobCompleted", true);
+        });
+      }
+    });
+
+    console.log("DirtyJobsSystem hooks registrati!");
+  }
+
+  static _registerChatCommands() {
+    // Comando per generare lavoro
+    game.chatCommands.register({
+      name: "/lavoro-genera",
+      module: "brancalonia-bigat",
+      description: "Genera un nuovo lavoro sporco",
+      icon: "<i class='fas fa-coins'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può generare lavori!");
+          return;
+        }
+
+        const params = parameters.split(" ");
+        const type = params[0] || null;
+        const difficulty = params[1] || "medium";
+
+        const job = await window.DirtyJobsSystem.generateJob(type, difficulty);
+        if (job) {
+          ChatMessage.create({
+            content: `Lavoro generato: ${job.name}`,
+            speaker: { alias: "Sistema Lavori" }
+          });
+        }
+      }
+    });
+
+    // Comando per mostrare dialog generazione
+    game.chatCommands.register({
+      name: "/lavoro-dialog",
+      module: "brancalonia-bigat",
+      description: "Mostra dialog per generazione lavoro personalizzato",
+      icon: "<i class='fas fa-cogs'></i>",
+      callback: (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può generare lavori!");
+          return;
+        }
+        window.DirtyJobsSystem.showJobGeneratorDialog();
+      }
+    });
+
+    // Comando per lavoro casuale
+    game.chatCommands.register({
+      name: "/lavoro-random",
+      module: "brancalonia-bigat",
+      description: "Genera un lavoro completamente casuale",
+      icon: "<i class='fas fa-dice'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può generare lavori!");
+          return;
+        }
+
+        const types = Object.keys(window.DirtyJobsSystem.jobTypes);
+        const randomType = types[Math.floor(Math.random() * types.length)];
+        const difficulties = ["easy", "medium", "hard"];
+        const randomDifficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
+
+        await window.DirtyJobsSystem.generateJob(randomType, randomDifficulty);
+      }
+    });
+
+    // Comando per listare tipi di lavoro
+    game.chatCommands.register({
+      name: "/lavoro-tipi",
+      module: "brancalonia-bigat",
+      description: "Mostra tutti i tipi di lavoro disponibili",
+      icon: "<i class='fas fa-list'></i>",
+      callback: (chat, parameters, messageData) => {
+        const types = Object.entries(window.DirtyJobsSystem.jobTypes);
+        const content = `
+          <div class="brancalonia-help">
+            <h3>Tipi di Lavoro Disponibili</h3>
+            <ul>
+              ${types.map(([key, data]) => `<li><strong>${key}</strong>: ${data.name}</li>`).join('')}
+            </ul>
+            <p><em>Usa /lavoro-genera [tipo] [difficoltà] per generare un lavoro specifico</em></p>
+          </div>
+        `;
+
+        ChatMessage.create({
+          content: content,
+          speaker: { alias: "Sistema Lavori" },
+          whisper: [game.user.id]
+        });
+      }
+    });
+
+    // Comando help
+    game.chatCommands.register({
+      name: "/lavoro-help",
+      module: "brancalonia-bigat",
+      description: "Mostra l'aiuto per i comandi lavori",
+      icon: "<i class='fas fa-question-circle'></i>",
+      callback: (chat, parameters, messageData) => {
+        const helpText = `
+          <div class="brancalonia-help">
+            <h3>Comandi Lavori Sporchi</h3>
+            <ul>
+              <li><strong>/lavoro-genera [tipo] [difficoltà]</strong> - Genera lavoro specifico</li>
+              <li><strong>/lavoro-dialog</strong> - Dialog generazione avanzata</li>
+              <li><strong>/lavoro-random</strong> - Lavoro completamente casuale</li>
+              <li><strong>/lavoro-tipi</strong> - Lista tipi disponibili</li>
+              <li><strong>/lavoro-help</strong> - Mostra questo aiuto</li>
+            </ul>
+            <h4>Tipi:</h4>
+            <p>robbery, extortion, smuggling, escort, assassination, spying, heist, sabotage</p>
+            <h4>Difficoltà:</h4>
+            <p>easy, medium, hard</p>
+          </div>
+        `;
+
+        ChatMessage.create({
+          content: helpText,
+          speaker: { alias: "Sistema Lavori" },
+          whisper: [game.user.id]
+        });
+      }
+    });
+
+    console.log("DirtyJobsSystem comandi chat registrati!");
+  }
+
+  static _createMacro() {
+    const macroData = {
+      name: "Generatore Lavori Sporchi",
+      type: "script",
+      scope: "global",
+      command: `
+// Macro per Generazione Lavori Sporchi
+if (!game.user.isGM) {
+  ui.notifications.error("Solo il GM può utilizzare questa macro!");
+} else {
+  const choice = await Dialog.confirm({
+    title: "Generatore Lavori",
+    content: "<p>Vuoi aprire il dialog di generazione avanzata o generare un lavoro casuale?</p>",
+    yes: () => "dialog",
+    no: () => "random"
+  });
+
+  if (choice === "dialog") {
+    window.DirtyJobsSystem.showJobGeneratorDialog();
+  } else if (choice === "random") {
+    const types = Object.keys(window.DirtyJobsSystem.jobTypes);
+    const randomType = types[Math.floor(Math.random() * types.length)];
+    const difficulties = ["easy", "medium", "hard"];
+    const randomDifficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
+    await window.DirtyJobsSystem.generateJob(randomType, randomDifficulty);
+  }
+}
+      `,
+      img: "icons/containers/bags/sack-leather-gold.webp",
+      flags: {
+        "brancalonia-bigat": {
+          isSystemMacro: true,
+          version: "1.0"
+        }
+      }
+    };
+
+    // Verifica se la macro esiste già
+    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags["brancalonia-bigat"]?.isSystemMacro);
+
+    if (!existingMacro) {
+      Macro.create(macroData).then(() => {
+        console.log("Macro Generatore Lavori Sporchi creata!");
+      });
+    }
   }
 
   /**
@@ -644,29 +875,4 @@ export class DirtyJobsSystem {
     return typeNarratives[Math.floor(Math.random() * typeNarratives.length)];
   }
 
-  /**
-   * Crea macro per gestione lavori
-   */
-  static createJobMacros() {
-    const macros = [
-      {
-        name: "Genera Lavoro",
-        type: "script",
-        img: "icons/containers/bags/sack-leather-gold.webp",
-        command: "game.brancalonia.dirtyJobs.showJobGeneratorDialog();"
-      },
-      {
-        name: "Lavoro Casuale",
-        type: "script",
-        img: "icons/sundries/gaming/dice-runed-brown.webp",
-        command: "game.brancalonia.dirtyJobs.generateJob();"
-      }
-    ];
-
-    macros.forEach(macroData => {
-      Macro.create(macroData);
-    });
-
-    ui.notifications.info("Macro Lavori Sporchi create");
-  }
 }

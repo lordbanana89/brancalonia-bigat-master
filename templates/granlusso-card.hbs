@@ -1,0 +1,135 @@
+<div class="granlusso-card {{#if isMaxLevel}}max-level{{/if}} {{granlussoType}}">
+  <div class="granlusso-header">
+    <img src="{{img}}" alt="{{name}}" width="48" height="48">
+    <div class="granlusso-title">
+      <h3>{{name}}</h3>
+      <div class="granlusso-level">
+        <span class="level-text">Livello {{level}}/3</span>
+        <div class="level-indicators">
+          {{#times 3}}
+            <i class="fas fa-circle level-pip {{#if (lte @index ../level)}}active{{/if}}"></i>
+          {{/times}}
+        </div>
+      </div>
+    </div>
+    {{#if isConstruction}}
+      <div class="construction-badge">
+        <i class="fas fa-hammer"></i> In Costruzione
+      </div>
+    {{/if}}
+  </div>
+
+  <div class="granlusso-body">
+    <p class="granlusso-description">{{description}}</p>
+
+    {{!-- Benefici attuali --}}
+    {{#if (gt level 0)}}
+      <div class="current-benefits">
+        <h4><i class="fas fa-check-circle"></i> Benefici Attivi:</h4>
+        <ul class="benefits-list">
+          {{#each currentBenefits as |benefit|}}
+            <li class="benefit-item level-{{benefit.level}}">
+              <span class="level-badge">Lv.{{benefit.level}}</span>
+              <span class="benefit-text">{{benefit.description}}</span>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
+
+    {{!-- Progresso costruzione --}}
+    {{#if isConstruction}}
+      <div class="construction-progress">
+        <h4><i class="fas fa-clock"></i> Progresso Costruzione:</h4>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {{constructionPercent}}%"></div>
+          </div>
+          <span class="progress-text">{{daysCompleted}}/{{daysRequired}} giorni ({{constructionPercent}}%)</span>
+        </div>
+        {{#if estimatedCompletion}}
+          <p class="completion-estimate">
+            <i class="fas fa-calendar-check"></i> Completamento previsto: {{estimatedCompletion}}
+          </p>
+        {{/if}}
+      </div>
+    {{/if}}
+
+    {{!-- Prossimo upgrade --}}
+    {{#unless isMaxLevel}}
+      {{#unless isConstruction}}
+        <div class="next-upgrade">
+          <h4><i class="fas fa-arrow-circle-up"></i> Prossimo Livello ({{nextLevel}}):</h4>
+          <div class="upgrade-info">
+            <p class="upgrade-benefit">{{nextBenefit}}</p>
+            <div class="upgrade-requirements">
+              <span class="cost">
+                <i class="fas fa-coins"></i> {{upgradeCost}} mo
+              </span>
+              {{#if constructionTime}}
+                <span class="time">
+                  <i class="fas fa-hourglass-half"></i> {{constructionTime}} giorni
+                </span>
+              {{/if}}
+            </div>
+            {{#if canAfford}}
+              <button class="upgrade-button" data-granlusso-id="{{_id}}">
+                <i class="fas fa-hammer"></i> Costruisci Upgrade
+              </button>
+            {{else}}
+              <button class="upgrade-button" disabled title="Fondi insufficienti">
+                <i class="fas fa-times-circle"></i> Fondi Insufficienti
+              </button>
+            {{/if}}
+          </div>
+        </div>
+      {{/unless}}
+    {{else}}
+      <div class="max-level-message">
+        <i class="fas fa-star"></i>
+        <span>Questo granlusso ha raggiunto il livello massimo!</span>
+      </div>
+    {{/unless}}
+
+    {{!-- Azioni speciali per tipo --}}
+    <div class="granlusso-actions">
+      {{#if (eq granlussoType 'borsa-nera')}}
+        {{#if (gt level 0)}}
+          <button class="granlusso-action browse-items">
+            <i class="fas fa-shopping-bag"></i> Sfoglia Oggetti
+          </button>
+        {{/if}}
+      {{/if}}
+
+      {{#if (eq granlussoType 'distilleria')}}
+        {{#if (gt level 0)}}
+          <button class="granlusso-action brew-potion">
+            <i class="fas fa-flask"></i> Distilla Intruglio
+          </button>
+        {{/if}}
+      {{/if}}
+
+      {{#if (eq granlussoType 'fucina')}}
+        {{#if (gt level 0)}}
+          <button class="granlusso-action repair-items">
+            <i class="fas fa-tools"></i> Ripara Oggetti
+          </button>
+        {{/if}}
+      {{/if}}
+
+      {{#if (eq granlussoType 'scuderie')}}
+        {{#if (gt level 0)}}
+          <button class="granlusso-action rent-mount">
+            <i class="fas fa-horse"></i> Noleggia Cavalcatura
+          </button>
+        {{/if}}
+      {{/if}}
+
+      {{#if (eq granlussoType 'cantina')}}
+        <button class="granlusso-action view-rest-benefits">
+          <i class="fas fa-bed"></i> Vedi Benefici Riposo
+        </button>
+      {{/if}}
+    </div>
+  </div>
+</div>

@@ -3,7 +3,10 @@
  * Completamente compatibile con dnd5e system per Foundry VTT v13
  */
 
-export class HavenSystem {
+class HavenSystem {
+  static ID = 'brancalonia-haven';
+  static NAMESPACE = 'brancalonia-bigat';
+
   constructor() {
     // Tipi di stanze conformi al sistema dnd5e
     this.roomTypes = {
@@ -208,6 +211,497 @@ export class HavenSystem {
     ];
 
     this._setupHooks();
+  }
+
+  /**
+   * Inizializzazione completa del modulo Haven
+   */
+  static initialize() {
+    console.log('🏠 Inizializzazione Sistema Haven');
+
+    // Registra settings
+    game.settings.register(this.NAMESPACE, 'trackHavens', {
+      name: 'Sistema Haven',
+      hint: 'Abilita il sistema di gestione rifugi',
+      scope: 'world',
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register(this.NAMESPACE, 'autoCreateHavenScene', {
+      name: 'Crea Scene Automatiche',
+      hint: 'Crea automaticamente scene per nuovi rifugi',
+      scope: 'world',
+      config: true,
+      type: Boolean,
+      default: false
+    });
+
+    game.settings.register(this.NAMESPACE, 'weeklyMaintenance', {
+      name: 'Mantenimento Automatico',
+      hint: 'Deduce automaticamente mantenimento settimanale',
+      scope: 'world',
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register(this.NAMESPACE, 'havenEvents', {
+      name: 'Eventi Casuali',
+      hint: 'Abilita eventi casuali nei rifugi',
+      scope: 'world',
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register(this.NAMESPACE, 'havensData', {
+      scope: 'world',
+      config: false,
+      type: Object,
+      default: {}
+    });
+
+    // Crea istanza globale
+    game.brancalonia = game.brancalonia || {};
+    game.brancalonia.haven = new HavenSystem();
+
+    // Registra hooks principali
+    this._registerHooks();
+
+    // Registra comandi chat
+    this._registerChatCommands();
+
+    // Aggiungi UI alla scheda
+    this._registerSheetHooks();
+
+    // Estendi Actor per supporto haven
+    this._extendActor();
+
+    // Crea macro automatica
+    Hooks.once('ready', () => {
+      this._createMacros();
+    });
+
+    return true;
+  }
+
+  /**
+   * Registra hooks principali
+   */
+  static _registerHooks() {
+    const instance = game.brancalonia?.haven;
+    if (!instance) return;
+
+    // Hook per canvas ready
+    Hooks.on('canvasReady', () => {
+      if (!game.settings.get(this.NAMESPACE, 'havenEvents')) return;
+      if (game.user.isGM && canvas.scene?.flags[this.NAMESPACE]?.isHaven) {
+        instance._checkHavenEvents(canvas.scene);
+      }
+    });
+
+    // Hook per tempo di gioco
+    Hooks.on('updateWorldTime', (worldTime, dt) => {
+      if (!game.settings.get(this.NAMESPACE, 'weeklyMaintenance')) return;
+      const weekInSeconds = 604800;
+      if (dt >= weekInSeconds && game.user.isGM) {
+        instance._processWeeklyMaintenance();
+      }
+    });
+
+    // Hook per riposo
+    Hooks.on('dnd5e.restCompleted', (actor, result) => {
+      if (result.longRest) {
+        const benefits = HavenSystem.applyRestBenefits(actor, 'long');
+        if (benefits) {
+          result.dhd = (result.dhd || 0) + benefits.extraHitDice;
+          result.dhp = (result.dhp || 0) + benefits.extraHealing;
+          if (benefits.removeExhaustion && actor.system.attributes?.exhaustion > 0) {
+            actor.update({'system.attributes.exhaustion': actor.system.attributes.exhaustion - 1});
+          }
+        }
+      }
+    });
+
+    // Hook per creazione compagnia
+    Hooks.on('createActor', (actor) => {
+      if (actor.type === 'group' && actor.flags[this.NAMESPACE]?.isCompagnia) {
+        instance._promptHavenCreation(actor);
+      }
+    });
+  }
+
+  /**
+   * Registra comandi chat
+   */
+  static _registerChatCommands() {
+    Hooks.on('chatMessage', (html, content, msg) => {
+      if (!content.startsWith('/haven') && !content.startsWith('/rifugio')) return true;
+
+      const parts = content.split(' ');
+      const command = parts[0];
+      const subcommand = parts[1];
+      const args = parts.slice(2).join(' ');
+
+      const instance = game.brancalonia?.haven;
+      if (!instance) {
+        ui.notifications.error('Sistema Haven non inizializzato!');
+        return false;
+      }
+
+      switch (subcommand) {
+        case 'create':
+        case 'crea':
+          instance._showCreateHavenDialog();
+          break;
+
+        case 'manage':
+        case 'gestisci':
+          instance._showManageHavenDialog();
+          break;
+
+        case 'room':
+        case 'stanza':
+          instance._showAddRoomDialog();
+          break;
+
+        case 'defense':
+        case 'difesa':
+          instance._showAddDefenseDialog();
+          break;
+
+        case 'status':
+        case 'stato':
+          instance._showHavenStatus();
+          break;
+
+        case 'events':
+        case 'eventi':
+          if (game.user.isGM) {
+            instance._rollHavenEvent();
+          } else {
+            ui.notifications.warn('Solo il GM può generare eventi!');
+          }
+          break;
+
+        case 'help':
+        case 'aiuto':
+        default:
+          ChatMessage.create({
+            content: `
+              <div class="brancalonia-help">
+                <h3>Comandi Haven/Rifugio</h3>
+                <ul>
+                  <li><code>/haven create</code> - Crea nuovo rifugio</li>
+                  <li><code>/haven manage</code> - Gestisci rifugio esistente</li>
+                  <li><code>/haven room</code> - Aggiungi stanza</li>
+                  <li><code>/haven defense</code> - Aggiungi difesa</li>
+                  <li><code>/haven status</code> - Mostra stato rifugio</li>
+                  <li><code>/haven events</code> - Genera evento casuale (GM)</li>
+                </ul>
+              </div>
+            `,
+            whisper: [game.user.id]
+          });
+      }
+
+      return false;
+    });
+  }
+
+  /**
+   * Registra hooks per le schede
+   */
+  static _registerSheetHooks() {
+    // Aggiungi tab Haven alle compagnie
+    Hooks.on('renderActorSheet', (app, html, data) => {
+      if (!game.settings.get(this.NAMESPACE, 'trackHavens')) return;
+      if (app.actor.type === 'group' && app.actor.flags[this.NAMESPACE]?.isCompagnia) {
+        game.brancalonia?.haven?.renderHavenTab(app, html, data);
+      }
+    });
+
+    // Aggiungi info haven ai personaggi
+    Hooks.on('renderActorSheet', (app, html, data) => {
+      if (app.actor.type === 'character') {
+        const compagniaId = app.actor.flags[this.NAMESPACE]?.compagniaId;
+        if (compagniaId) {
+          const compagnia = game.actors.get(compagniaId);
+          const havenId = compagnia?.flags[this.NAMESPACE]?.haven;
+          if (havenId) {
+            game.brancalonia?.haven?.renderHavenInfo(app, html, havenId);
+          }
+        }
+      }
+    });
+  }
+
+  /**
+   * Estende Actor con metodi haven
+   */
+  static _extendActor() {
+    // Metodo per ottenere il rifugio
+    CONFIG.Actor.documentClass.prototype.getHaven = function() {
+      if (this.type === 'group' && this.flags[HavenSystem.NAMESPACE]?.haven) {
+        return game.journal.get(this.flags[HavenSystem.NAMESPACE].haven);
+      }
+      if (this.type === 'character') {
+        const compagniaId = this.flags[HavenSystem.NAMESPACE]?.compagniaId;
+        if (compagniaId) {
+          const compagnia = game.actors.get(compagniaId);
+          return compagnia?.getHaven();
+        }
+      }
+      return null;
+    };
+
+    // Metodo per verificare presenza stanza
+    CONFIG.Actor.documentClass.prototype.hasHavenRoom = function(roomType) {
+      const haven = this.getHaven();
+      if (!haven) return false;
+      const havenData = haven.flags[HavenSystem.NAMESPACE]?.havenData;
+      return havenData?.rooms?.find(r => r.id === roomType) !== undefined;
+    };
+  }
+
+  /**
+   * Crea macro per gestione haven
+   */
+  static async _createMacros() {
+    if (!game.user.isGM) return;
+
+    const macros = [
+      {
+        name: 'Gestione Rifugio',
+        img: 'icons/environment/settlement/house-stone.webp',
+        command: `
+// Gestione Rifugio
+if (game.brancalonia?.haven) {
+  game.brancalonia.haven._showManageHavenDialog();
+} else {
+  ui.notifications.error('Sistema Haven non inizializzato!');
+}
+        `
+      },
+      {
+        name: 'Crea Rifugio',
+        img: 'icons/environment/settlement/construction.webp',
+        command: `
+// Crea Nuovo Rifugio
+if (game.brancalonia?.haven) {
+  game.brancalonia.haven._showCreateHavenDialog();
+} else {
+  ui.notifications.error('Sistema Haven non inizializzato!');
+}
+        `
+      }
+    ];
+
+    for (const macroData of macros) {
+      const existing = game.macros.find(m => m.name === macroData.name);
+      if (!existing) {
+        await Macro.create({
+          ...macroData,
+          type: 'script'
+        });
+        console.log(`📌 Macro "${macroData.name}" creata`);
+      }
+    }
+  }
+
+  /**
+   * Mostra dialog creazione rifugio
+   */
+  _showCreateHavenDialog() {
+    const content = `
+      <form>
+        <div class="form-group">
+          <label>Nome del Rifugio:</label>
+          <input type="text" name="name" placeholder="Es: La Tana del Lupo" />
+        </div>
+        <div class="form-group">
+          <label>Locazione:</label>
+          <input type="text" name="location" placeholder="Es: Boschi di Lungariva" />
+        </div>
+        <div class="form-group">
+          <label>Stanze Iniziali:</label>
+          <div style="max-height: 200px; overflow-y: auto;">
+            <label><input type="checkbox" name="room" value="dormitory" checked /> Dormitorio (100 ducati)</label><br>
+            <label><input type="checkbox" name="room" value="kitchen" /> Cucina (150 ducati)</label><br>
+            <label><input type="checkbox" name="room" value="armory" /> Armeria (200 ducati)</label><br>
+            <label><input type="checkbox" name="room" value="stable" /> Stalla (150 ducati)</label>
+          </div>
+        </div>
+      </form>
+    `;
+
+    new Dialog({
+      title: 'Crea Nuovo Rifugio',
+      content: content,
+      buttons: {
+        create: {
+          label: 'Crea',
+          callback: async (html) => {
+            const name = html.find('input[name="name"]').val();
+            const location = html.find('input[name="location"]').val();
+            const rooms = [];
+            html.find('input[name="room"]:checked').each((i, el) => {
+              rooms.push($(el).val());
+            });
+
+            if (!name) {
+              ui.notifications.warn('Inserisci un nome per il rifugio!');
+              return;
+            }
+
+            await this.createHaven(name, location || 'Sconosciuta', rooms);
+          }
+        },
+        cancel: {
+          label: 'Annulla'
+        }
+      },
+      default: 'create'
+    }).render(true);
+  }
+
+  /**
+   * Mostra dialog gestione rifugio
+   */
+  _showManageHavenDialog() {
+    const havens = game.journal.filter(j => j.flags[HavenSystem.NAMESPACE]?.isHaven);
+
+    if (havens.length === 0) {
+      ui.notifications.warn('Nessun rifugio trovato! Creane uno prima.');
+      return;
+    }
+
+    const content = `
+      <form>
+        <div class="form-group">
+          <label>Seleziona Rifugio:</label>
+          <select name="haven">
+            ${havens.map(h => `<option value="${h.id}">${h.name}</option>`).join('')}
+          </select>
+        </div>
+      </form>
+    `;
+
+    new Dialog({
+      title: 'Gestisci Rifugio',
+      content: content,
+      buttons: {
+        view: {
+          label: 'Visualizza',
+          callback: (html) => {
+            const havenId = html.find('select[name="haven"]').val();
+            const haven = game.journal.get(havenId);
+            haven?.sheet.render(true);
+          }
+        },
+        room: {
+          label: 'Aggiungi Stanza',
+          callback: (html) => {
+            const havenId = html.find('select[name="haven"]').val();
+            this._showAddRoomDialog(havenId);
+          }
+        },
+        defense: {
+          label: 'Aggiungi Difesa',
+          callback: (html) => {
+            const havenId = html.find('select[name="haven"]').val();
+            this._showAddDefenseDialog(havenId);
+          }
+        },
+        cancel: {
+          label: 'Chiudi'
+        }
+      },
+      default: 'view'
+    }).render(true);
+  }
+
+  /**
+   * Renderizza tab haven sulla scheda compagnia
+   */
+  renderHavenTab(app, html, data) {
+    // Aggiungi tab
+    const tabs = html.find('.tabs');
+    if (!tabs.find('[data-tab="haven"]').length) {
+      tabs.append('<a class="item" data-tab="haven">Rifugio</a>');
+    }
+
+    // Aggiungi contenuto tab
+    const havenId = app.actor.flags[HavenSystem.NAMESPACE]?.haven;
+    let tabContent = '';
+
+    if (havenId) {
+      const haven = game.journal.get(havenId);
+      const havenData = haven?.flags[HavenSystem.NAMESPACE]?.havenData;
+
+      if (havenData) {
+        tabContent = `
+          <div class="tab haven" data-tab="haven">
+            <h2>${havenData.name}</h2>
+            <p><strong>Locazione:</strong> ${havenData.location}</p>
+
+            <div class="haven-stats">
+              <div class="stat">
+                <label>Difesa:</label> <span>${havenData.defense}</span>
+              </div>
+              <div class="stat">
+                <label>Comfort:</label> <span>${havenData.comfort}</span>
+              </div>
+              <div class="stat">
+                <label>Capacità:</label> <span>${havenData.capacity}</span>
+              </div>
+              <div class="stat">
+                <label>Mantenimento:</label> <span>${havenData.maintenance} ducati/settimana</span>
+              </div>
+            </div>
+
+            <h3>Stanze</h3>
+            <ul>
+              ${havenData.rooms.map(r => `<li>${r.name} - ${r.benefits.description}</li>`).join('')}
+            </ul>
+
+            <h3>Difese</h3>
+            ${havenData.defenses.length > 0 ? `
+              <ul>
+                ${havenData.defenses.map(d => `<li>${d.name} - ${d.description}</li>`).join('')}
+              </ul>
+            ` : '<p>Nessuna difesa speciale</p>'}
+
+            <div class="haven-actions">
+              <button class="haven-add-room">Aggiungi Stanza</button>
+              <button class="haven-add-defense">Aggiungi Difesa</button>
+              <button class="haven-view-journal">Apri Diario</button>
+            </div>
+          </div>
+        `;
+      }
+    } else {
+      tabContent = `
+        <div class="tab haven" data-tab="haven">
+          <p>Questa compagnia non ha ancora un rifugio.</p>
+          <button class="haven-create">Crea Rifugio</button>
+        </div>
+      `;
+    }
+
+    const tabsContent = html.find('.sheet-body');
+    tabsContent.append(tabContent);
+
+    // Event listeners
+    html.find('.haven-create').click(() => this._showCreateHavenDialog());
+    html.find('.haven-add-room').click(() => this._showAddRoomDialog(havenId));
+    html.find('.haven-add-defense').click(() => this._showAddDefenseDialog(havenId));
+    html.find('.haven-view-journal').click(() => {
+      const haven = game.journal.get(havenId);
+      haven?.sheet.render(true);
+    });
   }
 
   _setupHooks() {
@@ -748,3 +1242,11 @@ export class HavenSystem {
     return benefits;
   }
 }
+
+// Registra globalmente
+window.HavenSystem = HavenSystem;
+
+// Auto-inizializzazione
+Hooks.once('init', () => {
+  HavenSystem.initialize();
+});

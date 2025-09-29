@@ -1,7 +1,7 @@
 /**
  * Brancalonia - Sistema Active Effects Runtime
  * Applica Active Effects a runtime per aggirare limitazione Foundry CLI (Issue #41)
- * Compatibile con D&D 5e v5.1.9 e Foundry v13
+ * Compatibile con D&D 5e v3.3.1 e Foundry v13
  */
 
 // Mappatura completa Active Effects per ogni item
@@ -395,6 +395,18 @@ async function applyAllBrancaloniaEffects() {
   }
 }
 
+// Registra setting per tracciare versione - DEVE essere prima di ready
+Hooks.once('init', () => {
+  game.settings.register('brancalonia-bigat', 'effectsVersion', {
+    scope: 'world',
+    config: false,
+    type: String,
+    default: '0.0.0'
+  });
+
+  console.log('📜 Brancalonia: Active Effects Runtime registrato');
+});
+
 // Hook principale - esegue solo una volta all'avvio
 Hooks.once('ready', async () => {
   // Attendi che tutti i moduli siano caricati
@@ -420,14 +432,47 @@ Hooks.on('createItem', async (item, options, userId) => {
   await applyBrancaloniaEffects(item);
 });
 
-// Registra setting per tracciare versione
-Hooks.once('init', () => {
-  game.settings.register('brancalonia-bigat', 'effectsVersion', {
-    scope: 'world',
-    config: false,
-    type: String,
-    default: '0.0.0'
-  });
+/**
+ * CSS per miglioramenti UI
+ */
+Hooks.once('ready', () => {
+  const style = document.createElement('style');
+  style.innerHTML = `
+    .brancalonia-status, .brancalonia-help {
+      background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
+      color: white;
+      border: 2px solid #388E3C;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(56, 142, 60, 0.3);
+    }
 
-  console.log('📜 Brancalonia: Active Effects Runtime registrato');
+    .brancalonia-status h3, .brancalonia-help h3 {
+      color: #C8E6C9;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .brancalonia-status ul, .brancalonia-help ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    .brancalonia-status code, .brancalonia-help code {
+      background: rgba(0,0,0,0.3);
+      padding: 2px 6px;
+      border-radius: 3px;
+      color: #FFEB3B;
+    }
+
+    .brancalonia-effects-info {
+      background: #E8F5E8;
+      border: 1px solid #4CAF50;
+      padding: 8px;
+      margin: 10px 0;
+      border-radius: 4px;
+      color: #2E7D32;
+    }
+  `;
+  document.head.appendChild(style);
 });

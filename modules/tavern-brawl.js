@@ -4,7 +4,7 @@
  * Compatibile con dnd5e system per Foundry VTT v13
  */
 
-export class TavernBrawlSystem {
+class TavernBrawlSystem {
   constructor() {
     this.activeBrawl = false;
     this.brawlCombat = null;
@@ -290,37 +290,408 @@ export class TavernBrawlSystem {
       6: { assoNellaManica: true, slotMossa: 4 }
     };
 
-    this._setupHooks();
   }
 
-  _setupHooks() {
+  static initialize() {
+    console.log("Inizializzazione TavernBrawlSystem...");
+
+    // Registrazione settings
+    game.settings.register("brancalonia-bigat", "brawlSystemEnabled", {
+      name: "Sistema Risse Attivo",
+      hint: "Abilita il sistema completo di risse da taverna",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "brawlPericoliVaganti", {
+      name: "Pericoli Vaganti per Default",
+      hint: "Attiva automaticamente i pericoli vaganti nelle risse",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: false
+    });
+
+    game.settings.register("brancalonia-bigat", "brawlAutoMacros", {
+      name: "Macro Automatiche",
+      hint: "Crea automaticamente le macro per le azioni di rissa",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "brawlVisualEffects", {
+      name: "Effetti Visivi",
+      hint: "Mostra effetti visivi durante le risse",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    // Creazione istanza globale
+    window.TavernBrawlSystem = new TavernBrawlSystem();
+
+    // Registrazione hooks
+    TavernBrawlSystem._registerHooks();
+
+    // Registrazione comandi chat
+    TavernBrawlSystem._registerChatCommands();
+
+    // Creazione macro automatica
+    TavernBrawlSystem._createMacro();
+
+    console.log("TavernBrawlSystem inizializzato correttamente!");
+  }
+
+  static _registerHooks() {
     // Hook per modificare il combattimento quando è una rissa
     Hooks.on("combatStart", (combat, options) => {
+      if (!game.settings.get("brancalonia-bigat", "brawlSystemEnabled")) return;
+
       if (combat.getFlag("brancalonia-bigat", "isBrawl")) {
-        this.activeBrawl = true;
-        this.brawlCombat = combat;
+        window.TavernBrawlSystem.activeBrawl = true;
+        window.TavernBrawlSystem.brawlCombat = combat;
         ui.notifications.info("Modalità Rissa Attivata!");
       }
     });
 
     Hooks.on("combatTurn", (combat, updateData, updateOptions) => {
-      if (this.activeBrawl && combat.id === this.brawlCombat?.id) {
+      if (!game.settings.get("brancalonia-bigat", "brawlSystemEnabled")) return;
+
+      if (window.TavernBrawlSystem.activeBrawl && combat.id === window.TavernBrawlSystem.brawlCombat?.id) {
         // Mostra azioni disponibili per il turno
-        this._showBrawlActions(combat.combatant.actor);
+        window.TavernBrawlSystem._showBrawlActions(combat.combatant.actor);
       }
     });
 
     Hooks.on("combatEnd", (combat) => {
-      if (combat.id === this.brawlCombat?.id) {
-        this.endBrawl();
+      if (!game.settings.get("brancalonia-bigat", "brawlSystemEnabled")) return;
+
+      if (combat.id === window.TavernBrawlSystem.brawlCombat?.id) {
+        window.TavernBrawlSystem.endBrawl();
       }
     });
 
-    // Hook per i comandi chat
-    Hooks.on("chatMessage", (html, content, msg) => {
-      if (content === "/rissa") {
-        this.startBrawl();
-        return false;
+    // Hook per aggiungere pulsante rissa alle schede personaggio
+    Hooks.on("renderActorSheet", (app, html, data) => {
+      if (app.actor.type !== "character" || !game.user.isGM) return;
+      if (!game.settings.get("brancalonia-bigat", "brawlSystemEnabled")) return;
+
+      const button = $(`<button class="brawl-manager-btn" title="Inizia Rissa">
+        <i class="fas fa-fist-raised"></i>
+      </button>`);
+      html.find(".window-header .window-title").after(button);
+      button.click(() => {
+        window.TavernBrawlSystem.startBrawl();
+      });
+    });
+
+    console.log("TavernBrawlSystem hooks registrati!");
+  }
+
+  static _registerChatCommands() {
+    // Comando per iniziare rissa
+    game.chatCommands.register({
+      name: "/rissa",
+      module: "brancalonia-bigat",
+      description: "Inizia una rissa con i token selezionati",
+      icon: "<i class='fas fa-fist-raised'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può iniziare una rissa!");
+          return;
+        }
+        await window.TavernBrawlSystem.startBrawl();
+      }
+    });
+
+    // Comando per saccagnata
+    game.chatCommands.register({
+      name: "/saccagnata",
+      module: "brancalonia-bigat",
+      description: "Esegue una saccagnata contro il bersaglio",
+      icon: "<i class='fas fa-fist-raised'></i>",
+      callback: async (chat, parameters, messageData) => {
+        const tokens = canvas.tokens.controlled;
+        const targets = game.user.targets;
+
+        if (tokens.length !== 1) {
+          ui.notifications.error("Seleziona un solo token attaccante!");
+          return;
+        }
+
+        if (targets.size !== 1) {
+          ui.notifications.error("Seleziona un solo bersaglio!");
+          return;
+        }
+
+        const actor = tokens[0].actor;
+        const target = Array.from(targets)[0];
+
+        await window.TavernBrawlSystem.executeSaccagnata(actor, target);
+      }
+    });
+
+    // Comando per raccogliere oggetto
+    game.chatCommands.register({
+      name: "/raccogli-oggetto",
+      module: "brancalonia-bigat",
+      description: "Raccoglie un oggetto di scena",
+      icon: "<i class='fas fa-hand-paper'></i>",
+      callback: async (chat, parameters, messageData) => {
+        const tokens = canvas.tokens.controlled;
+        if (tokens.length !== 1) {
+          ui.notifications.error("Seleziona un solo token!");
+          return;
+        }
+
+        const tipo = parameters || "comune";
+        if (!["comune", "epico"].includes(tipo)) {
+          ui.notifications.error("Tipo non valido! Usa: comune o epico");
+          return;
+        }
+
+        await window.TavernBrawlSystem.pickUpProp(tokens[0].actor, tipo);
+      }
+    });
+
+    // Comando per attivare pericolo vagante
+    game.chatCommands.register({
+      name: "/pericolo-vagante",
+      module: "brancalonia-bigat",
+      description: "Attiva un pericolo vagante casuale",
+      icon: "<i class='fas fa-exclamation-triangle'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può attivare pericoli vaganti!");
+          return;
+        }
+        await window.TavernBrawlSystem.activatePericoloVagante();
+      }
+    });
+
+    // Comando per terminare rissa
+    game.chatCommands.register({
+      name: "/fine-rissa",
+      module: "brancalonia-bigat",
+      description: "Termina la rissa corrente",
+      icon: "<i class='fas fa-stop'></i>",
+      callback: async (chat, parameters, messageData) => {
+        if (!game.user.isGM) {
+          ui.notifications.error("Solo il GM può terminare una rissa!");
+          return;
+        }
+        await window.TavernBrawlSystem.endBrawl();
+      }
+    });
+
+    // Comando help
+    game.chatCommands.register({
+      name: "/rissa-help",
+      module: "brancalonia-bigat",
+      description: "Mostra l'aiuto per i comandi rissa",
+      icon: "<i class='fas fa-question-circle'></i>",
+      callback: (chat, parameters, messageData) => {
+        const helpText = `
+          <div class="brancalonia-help">
+            <h3>Comandi Sistema Risse</h3>
+            <ul>
+              <li><strong>/rissa</strong> - Inizia rissa con token selezionati</li>
+              <li><strong>/saccagnata</strong> - Attacco base in rissa</li>
+              <li><strong>/raccogli-oggetto [comune|epico]</strong> - Raccoglie oggetto di scena</li>
+              <li><strong>/pericolo-vagante</strong> - Attiva pericolo casuale</li>
+              <li><strong>/fine-rissa</strong> - Termina rissa corrente</li>
+              <li><strong>/rissa-help</strong> - Mostra questo aiuto</li>
+            </ul>
+            <h4>Regole Base:</h4>
+            <ul>
+              <li>Saccagnata: Attacco base (For + comp), 1 batosta</li>
+              <li>6 Batoste = Incosciente</li>
+              <li>Oggetti Comuni: +bonus vari</li>
+              <li>Oggetti Epici: +1 batosta o effetti speciali</li>
+            </ul>
+          </div>
+        `;
+
+        ChatMessage.create({
+          content: helpText,
+          speaker: { alias: "Sistema Risse" },
+          whisper: [game.user.id]
+        });
+      }
+    });
+
+    console.log("TavernBrawlSystem comandi chat registrati!");
+  }
+
+  static _createMacro() {
+    const macroData = {
+      name: "Gestione Risse",
+      type: "script",
+      scope: "global",
+      command: `
+// Macro per Gestione Risse
+if (!game.user.isGM) {
+  ui.notifications.error("Solo il GM può utilizzare questa macro!");
+} else {
+  const tokens = canvas.tokens.controlled;
+
+  if (window.TavernBrawlSystem.activeBrawl) {
+    // Rissa già attiva - mostra opzioni
+    new Dialog({
+      title: "Rissa in Corso",
+      content: \`
+        <div class="form-group">
+          <h3>Rissa Attiva</h3>
+          <p>Scegli un'azione:</p>
+          <button id="pericolo-btn" class="button">Pericolo Vagante</button>
+          <button id="end-btn" class="button">Termina Rissa</button>
+        </div>
+      \`,
+      buttons: {
+        close: { label: "Chiudi" }
+      },
+      render: html => {
+        html.find('#pericolo-btn').click(() => {
+          window.TavernBrawlSystem.activatePericoloVagante();
+        });
+        html.find('#end-btn').click(() => {
+          window.TavernBrawlSystem.endBrawl();
+        });
+      }
+    }).render(true);
+  } else if (tokens.length >= 2) {
+    // Token selezionati - inizia rissa
+    window.TavernBrawlSystem.startBrawl();
+  } else if (tokens.length === 1) {
+    // Un token - azioni individuali
+    const actor = tokens[0].actor;
+    new Dialog({
+      title: \`Azioni Rissa - \${actor.name}\`,
+      content: \`
+        <div class="form-group">
+          <h3>Azioni Disponibili</h3>
+          <button id="saccagnata-btn" class="button">Saccagnata</button>
+          <button id="raccogliere-btn" class="button">Raccogliere Oggetto</button>
+        </div>
+      \`,
+      buttons: {
+        close: { label: "Chiudi" }
+      },
+      render: html => {
+        html.find('#saccagnata-btn').click(() => {
+          const targets = game.user.targets;
+          if (targets.size === 1) {
+            window.TavernBrawlSystem.executeSaccagnata(actor, Array.from(targets)[0]);
+          } else {
+            ui.notifications.warn("Seleziona un bersaglio!");
+          }
+        });
+        html.find('#raccogliere-btn').click(() => {
+          new Dialog({
+            title: "Tipo Oggetto",
+            content: \`<p>Che tipo di oggetto vuoi raccogliere?</p>\`,
+            buttons: {
+              comune: {
+                label: "Comune",
+                callback: () => window.TavernBrawlSystem.pickUpProp(actor, "comune")
+              },
+              epico: {
+                label: "Epico",
+                callback: () => window.TavernBrawlSystem.pickUpProp(actor, "epico")
+              }
+            }
+          }).render(true);
+        });
+      }
+    }).render(true);
+  } else {
+    ui.notifications.warn("Seleziona almeno 2 token per iniziare una rissa!");
+  }
+}
+      `,
+      img: "icons/skills/melee/unarmed-punch-fist.webp",
+      flags: {
+        "brancalonia-bigat": {
+          isSystemMacro: true,
+          version: "1.0"
+        }
+      }
+    };
+
+    // Verifica se la macro esiste già
+    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags["brancalonia-bigat"]?.isSystemMacro);
+
+    if (!existingMacro) {
+      Macro.create(macroData).then(() => {
+        console.log("Macro Gestione Risse creata!");
+      });
+    }
+
+    // Crea macro aggiuntive se richiesto
+    if (game.settings.get("brancalonia-bigat", "brawlAutoMacros")) {
+      TavernBrawlSystem._createAdditionalMacros();
+    }
+  }
+
+  static _createAdditionalMacros() {
+    const additionalMacros = [
+      {
+        name: "Saccagnata",
+        type: "script",
+        img: "icons/skills/melee/punch-fist-white.webp",
+        command: `
+const tokens = canvas.tokens.controlled;
+const targets = game.user.targets;
+
+if (tokens.length !== 1) {
+  ui.notifications.error("Seleziona un solo token attaccante!");
+} else if (targets.size !== 1) {
+  ui.notifications.error("Seleziona un solo bersaglio!");
+} else {
+  const actor = tokens[0].actor;
+  const target = Array.from(targets)[0];
+  window.TavernBrawlSystem.executeSaccagnata(actor, target);
+}
+        `
+      },
+      {
+        name: "Raccogliere Oggetto",
+        type: "script",
+        img: "icons/environment/furniture/chair-wooden.webp",
+        command: `
+const tokens = canvas.tokens.controlled;
+if (tokens.length !== 1) {
+  ui.notifications.error("Seleziona un solo token!");
+} else {
+  const actor = tokens[0].actor;
+  new Dialog({
+    title: "Raccogliere Oggetto di Scena",
+    content: "<p>Che tipo di oggetto vuoi raccogliere?</p>",
+    buttons: {
+      comune: {
+        label: "Comune (azione bonus)",
+        callback: () => window.TavernBrawlSystem.pickUpProp(actor, "comune")
+      },
+      epico: {
+        label: "Epico (azione)",
+        callback: () => window.TavernBrawlSystem.pickUpProp(actor, "epico")
+      }
+    }
+  }).render(true);
+}
+        `
+      }
+    ];
+
+    additionalMacros.forEach(macroData => {
+      const existing = game.macros.find(m => m.name === macroData.name);
+      if (!existing) {
+        Macro.create(macroData);
       }
     });
   }
@@ -838,67 +1209,4 @@ export class TavernBrawlSystem {
     this.brawlParticipants.clear();
   }
 
-  /**
-   * Crea macro per le azioni della rissa
-   */
-  static createBrawlMacros() {
-    const macros = [
-      {
-        name: "🥊 Inizia Rissa",
-        type: "script",
-        img: "icons/skills/melee/unarmed-punch-fist.webp",
-        command: "game.brancalonia.tavernBrawl.startBrawl();"
-      },
-      {
-        name: "👊 Saccagnata",
-        type: "script",
-        img: "icons/skills/melee/punch-fist-white.webp",
-        command: `
-          const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
-          const target = game.user.targets.first();
-          if (actor && target) {
-            game.brancalonia.tavernBrawl.executeSaccagnata(actor, target);
-          } else {
-            ui.notifications.warn("Seleziona attaccante e bersaglio!");
-          }
-        `
-      },
-      {
-        name: "🪑 Raccogliere Oggetto",
-        type: "script",
-        img: "icons/environment/furniture/chair-wooden.webp",
-        command: `
-          const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
-          if (actor) {
-            new Dialog({
-              title: "Raccogliere Oggetto di Scena",
-              content: "<p>Che tipo di oggetto vuoi raccogliere?</p>",
-              buttons: {
-                comune: {
-                  label: "Comune (azione bonus)",
-                  callback: () => game.brancalonia.tavernBrawl.pickUpProp(actor, "comune")
-                },
-                epico: {
-                  label: "Epico (azione)",
-                  callback: () => game.brancalonia.tavernBrawl.pickUpProp(actor, "epico")
-                }
-              }
-            }).render(true);
-          }
-        `
-      },
-      {
-        name: "💥 Pericolo Vagante",
-        type: "script",
-        img: "icons/magic/fire/explosion-fireball-large-orange.webp",
-        command: "game.brancalonia.tavernBrawl.activatePericoloVagante();"
-      }
-    ];
-
-    macros.forEach(macroData => {
-      Macro.create(macroData);
-    });
-
-    ui.notifications.info("Macro Risse create nella directory Macro");
-  }
 }

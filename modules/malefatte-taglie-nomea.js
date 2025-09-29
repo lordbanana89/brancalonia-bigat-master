@@ -1,13 +1,7 @@
 /**
- * Sistema Malefatte, Taglie e Nomea - Implementazione Corretta
- * Basato sul manuale Brancalonia (pag. 46-48)
- * Compatibile con dnd5e system v3.3.x
- *
- * REGOLE DAL MANUALE:
- * - 20 Malefatte base con valori in mo
- * - Taglia = somma valori malefatte
- * - Nomea basata sulla taglia totale
- * - Sistema Fratelli di Taglia con livelli di notorietà
+ * Sistema Malefatte, Taglie e Nomea per Brancalonia
+ * Basato sul manuale Brancalonia - gestione completa di malefatte, taglia e nomea
+ * Compatibile con dnd5e system per Foundry VTT v13
  */
 
 class MalefatteTaglieNomeaSystem {
@@ -36,7 +30,7 @@ class MalefatteTaglieNomeaSystem {
       { id: 20, name: "Tradimento, spionaggio e diserzione", value: 20 }
     ];
 
-    // Malefatte aggiuntive (pag. 77 - per crimini più gravi)
+    // Malefatte aggiuntive per crimini più gravi
     this.malefatteGravi = [
       { name: "Rapina a mano armata", value: 25 },
       { name: "Sequestro di persona", value: 30 },
@@ -61,7 +55,7 @@ class MalefatteTaglieNomeaSystem {
       mito: { min: 1000, max: Infinity, name: "Mito", description: "Entrato nella leggenda" }
     };
 
-    // Attenuanti e Aggravanti (pag. 78)
+    // Attenuanti e Aggravanti
     this.modifiers = {
       attenuanti: {
         "Legittima difesa": 0.5,
@@ -80,19 +74,246 @@ class MalefatteTaglieNomeaSystem {
       }
     };
 
-    this._setupHooks();
+    // Eventi di modifica taglia
+    this.tagliaEvents = new Map();
+
+    // Non chiamare metodi privati nel constructor
+  }
+
+  /**
+   * Metodo statico di inizializzazione completo
+   */
+  static initialize() {
+    console.log("💰 Inizializzazione Sistema Malefatte e Taglie");
+
+    // Registrazione settings
+    this.registerSettings();
+
+    // Creazione istanza globale
+    const instance = new MalefatteTaglieNomeaSystem();
+    instance._setupHooks();
+    instance._registerSettings();
+
+    // Salva nell'oggetto globale
+    if (!game.brancalonia) game.brancalonia = {};
+    game.brancalonia.malefatteSystem = instance;
+
+    // Registrazione comandi chat
+    this.registerChatCommands();
+
+    // Creazione macro automatica
+    this.createMacros();
+
+    // Estensione Actor per malefatte
+    this.extendActor();
+
+    console.log("✅ Sistema Malefatte e Taglie inizializzato");
+  }
+
+  /**
+   * Registra le impostazioni del modulo
+   */
+  static registerSettings() {
+    game.settings.register("brancalonia-bigat", "useInfamiaInsteadOfTaglia", {
+      name: "Usa Sistema Infamia",
+      hint: "Usa il sistema Infamia 0-100 invece di Malefatte/Taglie (non canonico)",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: false
+    });
+
+    game.settings.register("brancalonia-bigat", "autoCalculateNomea", {
+      name: "Calcolo Automatico Nomea",
+      hint: "Calcola automaticamente la Nomea basata sulla Taglia",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+
+    game.settings.register("brancalonia-bigat", "autoMalefatteOnCrime", {
+      name: "Malefatte Automatiche",
+      hint: "Aggiungi automaticamente malefatte quando commetti crimini",
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true
+    });
+  }
+
+  /**
+   * Registra comandi chat
+   */
+  static registerChatCommands() {
+    // Comando per gestire malefatte
+    game.socket.on("system.brancalonia-bigat", (data) => {
+      if (data.type === "malefatte-command" && game.user.isGM) {
+        const instance = game.brancalonia?.malefatteSystem;
+        if (instance) {
+          switch (data.command) {
+            case "addMalefatta":
+              instance.addMalefatta(data.actor, data.malefatta);
+              break;
+            case "removeMalefatta":
+              instance.removeMalefatta(data.actor, data.index);
+              break;
+            case "payTaglia":
+              instance.payTaglia(data.actor, data.amount);
+              break;
+            case "updateNomea":
+              instance.updateNomea(data.actor);
+              break;
+          }
+        }
+      }
+    });
+
+    // Comando testuale per malefatte
+    if (game.modules.get("monk-enhanced-journal")?.active) {
+      game.MonksEnhancedJournal?.registerChatCommand("/malefatta", {
+        name: "Gestisci Malefatte",
+        callback: (args) => {
+          const instance = game.brancalonia?.malefatteSystem;
+          if (instance && game.user.isGM) {
+            if (args[0] === "add" && args.length >= 3) {
+              // /malefatta add @personaggio numero_malefatta
+              const actorName = args[1]?.replace('@', '');
+              const malefattaId = parseInt(args[2]);
+
+              const actor = game.actors.find(a => a.name.toLowerCase().includes(actorName?.toLowerCase()));
+              const malefatta = instance.malefatte.find(m => m.id === malefattaId);
+
+              if (actor && malefatta) {
+                instance.addMalefatta(actor, malefatta);
+              } else {
+                ui.notifications.error("Attore o malefatta non trovati!");
+              }
+            } else if (args[0] === "pay" && args.length >= 3) {
+              // /malefatta pay @personaggio importo
+              const actorName = args[1]?.replace('@', '');
+              const amount = parseInt(args[2]);
+
+              const actor = game.actors.find(a => a.name.toLowerCase().includes(actorName?.toLowerCase()));
+              if (actor) {
+                instance.payTaglia(actor, amount);
+              } else {
+                ui.notifications.error("Attore non trovato!");
+              }
+            } else {
+              instance.renderMalefatteManager();
+            }
+          }
+        },
+        help: "Uso: /malefatta [add @personaggio id | pay @personaggio importo] - Gestisce malefatte"
+      });
+    }
+  }
+
+  /**
+   * Crea macro automatiche
+   */
+  static createMacros() {
+    if (!game.user.isGM) return;
+
+    const macroData = {
+      name: "💰 Gestione Malefatte e Taglie",
+      type: "script",
+      img: "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+      command: `
+const malefatteSystem = game.brancalonia?.malefatteSystem;
+if (malefatteSystem) {
+  malefatteSystem.renderMalefatteManager();
+} else {
+  ui.notifications.error("Sistema Malefatte non inizializzato!");
+}
+      `,
+      folder: null,
+      sort: 0,
+      ownership: { default: 0, [game.user.id]: 3 },
+      flags: { "brancalonia-bigat": { "auto-generated": true } }
+    };
+
+    // Controlla se esiste già
+    const existing = game.macros.find(m => m.name === macroData.name);
+    if (!existing) {
+      Macro.create(macroData);
+      console.log("✅ Macro Malefatte creata");
+    }
+  }
+
+  /**
+   * Estende la classe Actor con metodi malefatte
+   */
+  static extendActor() {
+    // Metodo per ottenere taglia totale
+    Actor.prototype.getTaglia = function() {
+      return this.flags.brancalonia?.taglia || 0;
+    };
+
+    // Metodo per ottenere nomea
+    Actor.prototype.getNomea = function() {
+      const instance = game.brancalonia?.malefatteSystem;
+      if (instance) {
+        const taglia = this.getTaglia();
+        return instance._calculateNomea(taglia);
+      }
+      return { level: "maltagliato", name: "Maltagliato", description: "Principiante" };
+    };
+
+    // Metodo per ottenere malefatte
+    Actor.prototype.getMalefatte = function() {
+      return this.flags.brancalonia?.malefatte || [];
+    };
+
+    // Metodo per aggiungere malefatta
+    Actor.prototype.addMalefatta = async function(malefatta) {
+      const instance = game.brancalonia?.malefatteSystem;
+      if (instance) {
+        return await instance.addMalefatta(this, malefatta);
+      }
+    };
+
+    // Metodo per pagare taglia
+    Actor.prototype.payTaglia = async function(amount) {
+      const instance = game.brancalonia?.malefatteSystem;
+      if (instance) {
+        return await instance.payTaglia(this, amount);
+      }
+    };
+
+    // Metodo per controllare se è ricercato
+    Actor.prototype.isWanted = function() {
+      const taglia = this.getTaglia();
+      return taglia >= 50; // Tagliola o superiore
+    };
   }
 
   _setupHooks() {
     // Hook per scheda personaggio
-    HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_CHARACTER, (app, html, data) => {
-      this._renderTagliaSection(app, html);
+    Hooks.on("renderActorSheet", (app, html, data) => {
+      if (app.actor.type === "character") {
+        this._renderTagliaSection(app, html);
+      }
     });
 
     // Hook per creazione personaggio
-    HooksManager.on(HooksManager.HOOKS.CREATE_ACTOR, (actor) => {
-      if (actor.type === "character") {
+    Hooks.on("createActor", (actor) => {
+      if (actor.type === "character" && game.user.isGM) {
         this._initializeCharacterMalefatte(actor);
+      }
+    });
+
+    // Hook per crimini automatici
+    Hooks.on("dnd5e.rollSkill", (actor, roll, skillId) => {
+      if (!game.settings.get("brancalonia-bigat", "autoMalefatteOnCrime")) return;
+      if (!game.user.isGM) return;
+
+      // Controlla se è un'abilità criminale
+      const criminalSkills = ["sle", "ste", "dec"];
+      if (criminalSkills.includes(skillId) && roll.total >= 15) {
+        // Successo in attività criminale
+        this._checkForAutomaticMalefatta(actor, skillId, roll.total);
       }
     });
 
@@ -102,20 +323,49 @@ class MalefatteTaglieNomeaSystem {
         this._updateAllTaglie();
       }
     });
+
+    // Hook per combattimento - malefatte per violenza
+    Hooks.on("dnd5e.applyDamage", (target, damage, options) => {
+      if (!game.settings.get("brancalonia-bigat", "autoMalefatteOnCrime")) return;
+      if (!game.user.isGM) return;
+
+      const attacker = options.attacker;
+      if (!attacker?.hasPlayerOwner) return;
+
+      // Se uccide un innocente
+      if (target.flags.brancalonia?.isInnocent && damage >= target.system.attributes.hp.value) {
+        const malefatta = { name: "Omicidio di innocente", value: 40 };
+        this.addMalefatta(attacker, malefatta);
+      }
+
+      // Se ferisce gravemente qualcuno
+      if (damage >= target.system.attributes.hp.max / 2) {
+        const malefatta = { name: "Rissa non regolamentata, vandalismo, sfascio di bettole e ricoveri", value: 15 };
+        this.addMalefatta(attacker, malefatta);
+      }
+    });
+  }
+
+  _registerSettings() {
+    // Settings già registrate in registerSettings() statico
   }
 
   /**
    * Inizializza malefatte per nuovo personaggio
    */
   async _initializeCharacterMalefatte(actor) {
+    if (!game.user.isGM) return;
+
     const level = actor.system.details.level || 1;
-    const numMalefatte = 3 + level; // 3 + livello del personaggio
+    const numMalefatte = Math.max(1, Math.floor(level / 2)); // 1 ogni 2 livelli
+
+    if (numMalefatte === 0) return;
 
     // Dialog per selezione malefatte iniziali
     const content = `
       <div class="malefatte-init">
         <h3>Malefatte Iniziali per ${actor.name}</h3>
-        <p>Seleziona ${numMalefatte} malefatte per determinare la Taglia iniziale:</p>
+        <p>Seleziona fino a ${numMalefatte} malefatte per determinare la Taglia iniziale:</p>
 
         <div class="malefatte-selection" style="max-height: 400px; overflow-y: auto;">
           ${this.malefatte.map(m => `
@@ -155,12 +405,14 @@ class MalefatteTaglieNomeaSystem {
                 return this.malefatte.find(m => m.id === id);
               });
 
-            if (selected.length !== numMalefatte) {
-              ui.notifications.warn(`Seleziona esattamente ${numMalefatte} malefatte!`);
-              return;
-            }
-
             await this._applyInitialMalefatte(actor, selected);
+          }
+        },
+        skip: {
+          label: "Salta",
+          callback: () => {
+            // Inizializza con valori vuoti
+            this._applyInitialMalefatte(actor, []);
           }
         }
       },
@@ -200,19 +452,21 @@ class MalefatteTaglieNomeaSystem {
     await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
     await actor.setFlag("brancalonia-bigat", "nomeaName", nomea.name);
 
-    ChatMessage.create({
-      content: `
-        <div class="malefatte-initial">
-          <h3>${actor.name} - Malefatte Iniziali</h3>
-          <ul>
-            ${malefatte.map(m => `<li>${m.name} (${m.value} mo)</li>`).join('')}
-          </ul>
-          <p><strong>Taglia Totale:</strong> ${taglia} mo</p>
-          <p><strong>Nomea:</strong> ${nomea.name}</p>
-        </div>
-      `,
-      speaker: ChatMessage.getSpeaker({actor})
-    });
+    if (malefatte.length > 0) {
+      ChatMessage.create({
+        content: `
+          <div class="malefatte-initial">
+            <h3>${actor.name} - Malefatte Iniziali</h3>
+            <ul>
+              ${malefatte.map(m => `<li>${m.name} (${m.value} mo)</li>`).join('')}
+            </ul>
+            <p><strong>Taglia Totale:</strong> ${taglia} mo</p>
+            <p><strong>Nomea:</strong> ${nomea.name}</p>
+          </div>
+        `,
+        speaker: ChatMessage.getSpeaker({ actor })
+      });
+    }
   }
 
   /**
@@ -228,7 +482,188 @@ class MalefatteTaglieNomeaSystem {
         };
       }
     }
-    return this.nomeaLevels.maltagliato;
+    return { level: "maltagliato", name: "Maltagliato", description: "Principiante" };
+  }
+
+  /**
+   * Aggiungi malefatta a un attore
+   */
+  async addMalefatta(actor, malefatta) {
+    const malefatte = actor.flags.brancalonia?.malefatte || [];
+    malefatte.push(malefatta);
+
+    const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
+    const nomea = this._calculateNomea(taglia);
+
+    await actor.setFlag("brancalonia-bigat", "malefatte", malefatte);
+    await actor.setFlag("brancalonia-bigat", "taglia", taglia);
+    await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
+    await actor.setFlag("brancalonia-bigat", "nomeaName", nomea.name);
+
+    // Segna come recente per il Barattiere
+    const recentMalefatte = actor.flags.brancalonia?.recentMalefatte || [];
+    recentMalefatte.push(malefatta);
+    await actor.setFlag("brancalonia-bigat", "recentMalefatte", recentMalefatte);
+
+    ChatMessage.create({
+      content: `
+        <div class="malefatta-added">
+          <h3>💰 Nuova Malefatta!</h3>
+          <p><strong>${actor.name}</strong> è accusato di: ${malefatta.name}</p>
+          <p>Valore: ${malefatta.value} mo</p>
+          <p>Nuova Taglia Totale: <strong>${taglia} mo</strong></p>
+          <p>Nomea: <strong>${nomea.name}</strong></p>
+        </div>
+      `,
+      speaker: ChatMessage.getSpeaker({ actor })
+    });
+
+    // Registra evento
+    await this._recordTagliaEvent(actor, "malefatta", malefatta.value, malefatta.name);
+
+    return { taglia, nomea };
+  }
+
+  /**
+   * Rimuovi malefatta
+   */
+  async removeMalefatta(actor, index) {
+    const malefatte = actor.flags.brancalonia?.malefatte || [];
+    if (index < 0 || index >= malefatte.length) return;
+
+    const removed = malefatte.splice(index, 1)[0];
+    const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
+    const nomea = this._calculateNomea(taglia);
+
+    await actor.setFlag("brancalonia-bigat", "malefatte", malefatte);
+    await actor.setFlag("brancalonia-bigat", "taglia", taglia);
+    await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
+    await actor.setFlag("brancalonia-bigat", "nomeaName", nomea.name);
+
+    ChatMessage.create({
+      content: `
+        <div class="malefatta-removed">
+          <h3>Rimossa malefatta: ${removed.name}</h3>
+          <p>Valore: -${removed.value} mo</p>
+          <p>Nuova Taglia: ${taglia} mo</p>
+        </div>
+      `,
+      speaker: ChatMessage.getSpeaker({ actor })
+    });
+
+    // Registra evento
+    await this._recordTagliaEvent(actor, "rimozione", -removed.value, `Rimossa: ${removed.name}`);
+
+    return { taglia, nomea, removed };
+  }
+
+  /**
+   * Paga parte della taglia
+   */
+  async payTaglia(actor, amount) {
+    const currentTaglia = actor.flags.brancalonia?.taglia || 0;
+    const money = actor.system.currency.gp || 0;
+
+    if (amount > money) {
+      ui.notifications.warn("Non hai abbastanza denaro!");
+      return;
+    }
+
+    if (amount > currentTaglia) {
+      ui.notifications.warn("L'importo è maggiore della taglia attuale!");
+      return;
+    }
+
+    const newTaglia = Math.max(0, currentTaglia - amount);
+    const nomea = this._calculateNomea(newTaglia);
+
+    await actor.update({ "system.currency.gp": money - amount });
+    await actor.setFlag("brancalonia-bigat", "taglia", newTaglia);
+    await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
+    await actor.setFlag("brancalonia-bigat", "nomeaName", nomea.name);
+
+    ChatMessage.create({
+      content: `
+        <div class="taglia-payment">
+          <h3>💰 Pagamento Taglia</h3>
+          <p><strong>${actor.name}</strong> paga ${amount} mo per ridurre la taglia</p>
+          <p>Taglia precedente: ${currentTaglia} mo</p>
+          <p>Taglia attuale: ${newTaglia} mo</p>
+          <p>Nomea attuale: <strong>${nomea.name}</strong></p>
+        </div>
+      `,
+      speaker: ChatMessage.getSpeaker({ actor })
+    });
+
+    // Registra evento
+    await this._recordTagliaEvent(actor, "pagamento", -amount, "Pagamento taglia");
+
+    return { newTaglia, nomea };
+  }
+
+  /**
+   * Aggiorna nomea di un attore
+   */
+  async updateNomea(actor) {
+    const taglia = actor.flags.brancalonia?.taglia || 0;
+    const nomea = this._calculateNomea(taglia);
+
+    await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
+    await actor.setFlag("brancalonia-bigat", "nomeaName", nomea.name);
+
+    return nomea;
+  }
+
+  /**
+   * Controlla malefatte automatiche per crimini
+   */
+  _checkForAutomaticMalefatta(actor, skillId, rollTotal) {
+    const crimeMap = {
+      "sle": { // Sleight of Hand
+        malefatta: this.malefatte.find(m => m.id === 10), // Borseggio
+        threshold: 15
+      },
+      "ste": { // Stealth
+        malefatta: this.malefatte.find(m => m.id === 11), // Furto con destrezza
+        threshold: 18
+      },
+      "dec": { // Deception
+        malefatta: this.malefatte.find(m => m.id === 9), // Truffa
+        threshold: 16
+      }
+    };
+
+    const crime = crimeMap[skillId];
+    if (crime && rollTotal >= crime.threshold) {
+      // 30% chance di essere scoperti
+      if (Math.random() < 0.3) {
+        this.addMalefatta(actor, crime.malefatta);
+      }
+    }
+  }
+
+  /**
+   * Registra evento taglia
+   */
+  async _recordTagliaEvent(actor, type, amount, description) {
+    const events = actor.flags.brancalonia?.tagliaEvents || [];
+
+    const event = {
+      type: type,
+      amount: amount,
+      description: description,
+      date: game.time.worldTime,
+      scene: canvas.scene?.name || "Sconosciuta"
+    };
+
+    events.push(event);
+
+    // Mantieni solo gli ultimi 30 eventi
+    if (events.length > 30) {
+      events.splice(0, events.length - 30);
+    }
+
+    await actor.setFlag("brancalonia-bigat", "tagliaEvents", events);
   }
 
   /**
@@ -236,9 +671,9 @@ class MalefatteTaglieNomeaSystem {
    */
   _renderTagliaSection(app, html) {
     const actor = app.actor;
-    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
-    const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
-    const nomeaLevel = actor.getFlag("brancalonia-bigat", "nomea") || "maltagliato";
+    const malefatte = actor.flags.brancalonia?.malefatte || [];
+    const taglia = actor.flags.brancalonia?.taglia || 0;
+    const nomeaLevel = actor.flags.brancalonia?.nomea || "maltagliato";
     const nomea = this.nomeaLevels[nomeaLevel];
 
     const tagliaHtml = `
@@ -309,7 +744,7 @@ class MalefatteTaglieNomeaSystem {
     html.find('.manage-taglia').click(() => this._showManageTagliaDialog(actor));
     html.find('.remove-malefatta').click((e) => {
       const index = parseInt(e.currentTarget.dataset.index);
-      this._removeMalefatta(actor, index);
+      this.removeMalefatta(actor, index);
     });
   }
 
@@ -362,7 +797,7 @@ class MalefatteTaglieNomeaSystem {
       ]
     };
 
-    const currentEffects = effects[nomea.level.toLowerCase()] || effects.maltagliato;
+    const currentEffects = effects[nomea.level] || effects.maltagliato;
 
     return `
       <div class="nomea-effects" style="margin-top: 10px; padding: 10px; background: #f9f9f9; border-radius: 5px;">
@@ -469,10 +904,10 @@ class MalefatteTaglieNomeaSystem {
 
             if (type === "standard") {
               const id = parseInt(html.find('select[name="standard-malefatta"]').val());
-              malefatta = {...this.malefatte.find(m => m.id === id)};
+              malefatta = { ...this.malefatte.find(m => m.id === id) };
             } else if (type === "grave") {
               const index = parseInt(html.find('select[name="grave-malefatta"]').val());
-              malefatta = {...this.malefatteGravi[index]};
+              malefatta = { ...this.malefatteGravi[index] };
             } else {
               malefatta = {
                 name: html.find('input[name="custom-name"]').val(),
@@ -491,9 +926,10 @@ class MalefatteTaglieNomeaSystem {
 
             malefatta.value = Math.round(malefatta.value * multiplier);
 
-            await this._addMalefatta(actor, malefatta);
+            await this.addMalefatta(actor, malefatta);
           }
-        }
+        },
+        cancel: { label: "Annulla" }
       },
       render: (html) => {
         // Switch tra tipi
@@ -542,71 +978,18 @@ class MalefatteTaglieNomeaSystem {
   }
 
   /**
-   * Aggiungi malefatta a un attore
-   */
-  async _addMalefatta(actor, malefatta) {
-    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
-    malefatte.push(malefatta);
-
-    const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
-    const nomea = this._calculateNomea(taglia);
-
-    await actor.setFlag("brancalonia-bigat", "malefatte", malefatte);
-    await actor.setFlag("brancalonia-bigat", "taglia", taglia);
-    await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
-    await actor.setFlag("brancalonia-bigat", "nomeaName", nomea.name);
-
-    // Segna come recente per il Barattiere
-    const recentMalefatte = actor.getFlag("brancalonia-bigat", "recentMalefatte") || [];
-    recentMalefatte.push(malefatta);
-    await actor.setFlag("brancalonia-bigat", "recentMalefatte", recentMalefatte);
-
-    ChatMessage.create({
-      content: `
-        <div class="malefatta-added">
-          <h3>Nuova Malefatta!</h3>
-          <p><strong>${actor.name}</strong> è accusato di: ${malefatta.name}</p>
-          <p>Valore: ${malefatta.value} mo</p>
-          <p>Nuova Taglia Totale: <strong>${taglia} mo</strong></p>
-          <p>Nomea: <strong>${nomea.name}</strong></p>
-        </div>
-      `,
-      speaker: ChatMessage.getSpeaker({actor})
-    });
-  }
-
-  /**
-   * Rimuovi malefatta
-   */
-  async _removeMalefatta(actor, index) {
-    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
-    if (index < 0 || index >= malefatte.length) return;
-
-    const removed = malefatte.splice(index, 1)[0];
-    const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
-    const nomea = this._calculateNomea(taglia);
-
-    await actor.setFlag("brancalonia-bigat", "malefatte", malefatte);
-    await actor.setFlag("brancalonia-bigat", "taglia", taglia);
-    await actor.setFlag("brancalonia-bigat", "nomea", nomea.level);
-
-    ChatMessage.create({
-      content: `Rimossa malefatta: ${removed.name} (-${removed.value} mo)`,
-      speaker: ChatMessage.getSpeaker({actor})
-    });
-  }
-
-  /**
    * Dialog per gestire la taglia
    */
   _showManageTagliaDialog(actor) {
-    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
-    const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
+    const malefatte = actor.flags.brancalonia?.malefatte || [];
+    const taglia = actor.flags.brancalonia?.taglia || 0;
+    const money = actor.system.currency.gp || 0;
 
     const content = `
       <div class="manage-taglia">
         <h3>Gestione Taglia - ${actor.name}</h3>
         <p>Taglia Attuale: <strong>${taglia} mo</strong></p>
+        <p>Denaro Disponibile: <strong>${money} mo</strong></p>
 
         <div class="actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0;">
           <button class="clear-recent">
@@ -615,11 +998,11 @@ class MalefatteTaglieNomeaSystem {
           <button class="pay-taglia">
             Paga parte della Taglia
           </button>
-          <button class="change-nomea">
-            Modifica Nomea
-          </button>
           <button class="export-taglia">
             Esporta Scheda Taglia
+          </button>
+          <button class="view-history">
+            Storico Eventi
           </button>
         </div>
 
@@ -670,7 +1053,6 @@ class MalefatteTaglieNomeaSystem {
         html.find('.clear-recent').click(async () => {
           await actor.unsetFlag("brancalonia-bigat", "recentMalefatte");
           ui.notifications.info("Malefatte recenti pulite");
-          dialog.close();
         });
 
         html.find('.pay-taglia').click(() => {
@@ -678,18 +1060,17 @@ class MalefatteTaglieNomeaSystem {
           dialog.close();
         });
 
-        html.find('.change-nomea').click(() => {
-          this._showChangeNomeaDialog(actor);
-          dialog.close();
-        });
-
         html.find('.export-taglia').click(() => {
           this._exportTagliaSheet(actor);
         });
 
+        html.find('.view-history').click(() => {
+          this._showTagliaHistoryDialog(actor);
+        });
+
         html.find('.remove-single').click(async (e) => {
           const index = parseInt(e.currentTarget.dataset.index);
-          await this._removeMalefatta(actor, index);
+          await this.removeMalefatta(actor, index);
           dialog.close();
           this._showManageTagliaDialog(actor); // Riapri aggiornato
         });
@@ -703,7 +1084,7 @@ class MalefatteTaglieNomeaSystem {
    * Dialog per pagare parte della taglia
    */
   _showPayTagliaDialog(actor) {
-    const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
+    const taglia = actor.flags.brancalonia?.taglia || 0;
     const money = actor.system.currency.gp || 0;
 
     const content = `
@@ -724,16 +1105,56 @@ class MalefatteTaglieNomeaSystem {
           callback: async (html) => {
             const amount = parseInt(html.find('input[name="amount"]').val());
             if (amount > 0) {
-              await actor.update({"system.currency.gp": money - amount});
-              await actor.setFlag("brancalonia-bigat", "taglia", Math.max(0, taglia - amount));
-
-              ChatMessage.create({
-                content: `${actor.name} paga ${amount} mo per ridurre la taglia`,
-                speaker: ChatMessage.getSpeaker({actor})
-              });
+              await this.payTaglia(actor, amount);
             }
           }
-        }
+        },
+        cancel: { label: "Annulla" }
+      }
+    }).render(true);
+  }
+
+  /**
+   * Dialog per storico eventi taglia
+   */
+  _showTagliaHistoryDialog(actor) {
+    const events = actor.flags.brancalonia?.tagliaEvents || [];
+
+    const content = `
+      <div class="taglia-history">
+        <h3>Storico Eventi Taglia - ${actor.name}</h3>
+        <div class="events-list" style="max-height: 400px; overflow-y: auto;">
+          ${events.length > 0 ? `
+            <table style="width: 100%;">
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Tipo</th>
+                  <th>Valore</th>
+                  <th>Descrizione</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${events.map(event => `
+                  <tr>
+                    <td>${new Date(event.date).toLocaleDateString()}</td>
+                    <td>${event.type}</td>
+                    <td>${event.amount > 0 ? '+' : ''}${event.amount} mo</td>
+                    <td>${event.description}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          ` : '<p><em>Nessun evento registrato</em></p>'}
+        </div>
+      </div>
+    `;
+
+    new Dialog({
+      title: "Storico Taglia",
+      content,
+      buttons: {
+        close: { label: "Chiudi" }
       }
     }).render(true);
   }
@@ -742,9 +1163,9 @@ class MalefatteTaglieNomeaSystem {
    * Esporta scheda taglia
    */
   _exportTagliaSheet(actor) {
-    const malefatte = actor.getFlag("brancalonia-bigat", "malefatte") || [];
-    const taglia = actor.getFlag("brancalonia-bigat", "taglia") || 0;
-    const nomea = this.nomeaLevels[actor.getFlag("brancalonia-bigat", "nomea") || "maltagliato"];
+    const malefatte = actor.flags.brancalonia?.malefatte || [];
+    const taglia = actor.flags.brancalonia?.taglia || 0;
+    const nomea = this.nomeaLevels[actor.flags.brancalonia?.nomea || "maltagliato"];
 
     const sheet = `
       <div style="border: 3px solid #8B4513; padding: 20px; background: #FFF8DC;">
@@ -799,7 +1220,7 @@ class MalefatteTaglieNomeaSystem {
 
         <div class="actor-list">
           ${actors.map(actor => {
-            const recent = actor.getFlag("brancalonia-bigat", "recentMalefatte") || [];
+            const recent = actor.flags.brancalonia?.recentMalefatte || [];
             return `
               <div style="margin: 10px 0; padding: 10px; border: 1px solid #ccc;">
                 <h4>${actor.name}</h4>
@@ -854,25 +1275,209 @@ class MalefatteTaglieNomeaSystem {
   }
 
   /**
-   * Registra impostazioni
+   * UI per gestione malefatte
    */
-  static registerSettings() {
-    game.settings.register("brancalonia-bigat", "useInfamiaInsteadOfTaglia", {
-      name: "Usa Sistema Infamia",
-      hint: "Usa il sistema Infamia 0-100 invece di Malefatte/Taglie (non canonico)",
-      scope: "world",
-      config: true,
-      type: Boolean,
-      default: false
-    });
+  renderMalefatteManager(actor = null) {
+    if (actor) {
+      // Vista per singolo attore
+      const malefatte = actor.flags.brancalonia?.malefatte || [];
+      const taglia = actor.flags.brancalonia?.taglia || 0;
+      const nomea = actor.getNomea();
 
-    game.settings.register("brancalonia-bigat", "autoCalculateNomea", {
-      name: "Calcolo Automatico Nomea",
-      hint: "Calcola automaticamente la Nomea basata sulla Taglia",
-      scope: "world",
-      config: true,
-      type: Boolean,
-      default: true
-    });
+      const content = `
+        <div class="brancalonia-malefatte-manager">
+          <h2>💰 Gestione Malefatte - ${actor.name}</h2>
+
+          <div class="status-summary">
+            <h3>Stato Attuale</h3>
+            <p><strong>Taglia:</strong> ${taglia} mo</p>
+            <p><strong>Nomea:</strong> ${nomea.name} (${nomea.description})</p>
+            <p><strong>Ricercato:</strong> ${actor.isWanted() ? 'Sì' : 'No'}</p>
+          </div>
+
+          <div class="malefatte-list">
+            <h3>Malefatte (${malefatte.length})</h3>
+            ${malefatte.length > 0 ? `
+              <table style="width: 100%;">
+                <thead>
+                  <tr><th>Malefatta</th><th>Valore</th><th>Azioni</th></tr>
+                </thead>
+                <tbody>
+                  ${malefatte.map((m, i) => `
+                    <tr>
+                      <td>${m.name}</td>
+                      <td>${m.value} mo</td>
+                      <td><button class="remove-malefatta" data-index="${i}">Rimuovi</button></td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            ` : '<p><em>Nessuna malefatta</em></p>'}
+          </div>
+
+          <div class="actions">
+            <button id="add-malefatta">Aggiungi Malefatta</button>
+            <button id="pay-taglia">Paga Taglia</button>
+            <button id="view-history">Storico</button>
+            <button id="export-sheet">Esporta Scheda</button>
+          </div>
+        </div>
+      `;
+
+      const dialog = new Dialog({
+        title: "Gestione Malefatte",
+        content,
+        buttons: { close: { label: "Chiudi" } },
+        render: html => {
+          html.find('#add-malefatta').click(() => {
+            dialog.close();
+            this._showAddMalefattaDialog(actor);
+          });
+
+          html.find('#pay-taglia').click(() => {
+            dialog.close();
+            this._showPayTagliaDialog(actor);
+          });
+
+          html.find('#view-history').click(() => {
+            this._showTagliaHistoryDialog(actor);
+          });
+
+          html.find('#export-sheet').click(() => {
+            this._exportTagliaSheet(actor);
+          });
+
+          html.find('.remove-malefatta').click(async (e) => {
+            const index = parseInt(e.currentTarget.dataset.index);
+            await this.removeMalefatta(actor, index);
+            dialog.close();
+            this.renderMalefatteManager(actor);
+          });
+        }
+      });
+
+      dialog.render(true);
+    } else {
+      // Vista generale
+      const content = `
+        <div class="brancalonia-malefatte-manager">
+          <h2>💰 Gestione Malefatte e Taglie</h2>
+
+          <div class="actor-selection">
+            <h3>Seleziona Personaggio</h3>
+            <select id="actor-select">
+              <option value="">-- Seleziona --</option>
+              ${game.actors.filter(a => a.hasPlayerOwner).map(a =>
+                `<option value="${a.id}">${a.name} (${a.getTaglia()} mo)</option>`
+              ).join('')}
+            </select>
+            <button id="manage-actor">Gestisci</button>
+          </div>
+
+          <div class="malefatte-reference">
+            <h3>Tabella Malefatte</h3>
+            <div style="max-height: 400px; overflow-y: auto;">
+              <table style="width: 100%;">
+                <thead>
+                  <tr><th>ID</th><th>Malefatta</th><th>Valore</th></tr>
+                </thead>
+                <tbody>
+                  ${this.malefatte.map(m => `
+                    <tr>
+                      <td>${m.id}</td>
+                      <td>${m.name}</td>
+                      <td>${m.value} mo</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="nomea-levels">
+            <h3>Livelli di Nomea</h3>
+            <table style="width: 100%;">
+              <thead>
+                <tr><th>Nomea</th><th>Taglia</th><th>Descrizione</th></tr>
+              </thead>
+              <tbody>
+                ${Object.values(this.nomeaLevels).map(level => `
+                  <tr>
+                    <td>${level.name}</td>
+                    <td>${level.min === level.max ? level.min : `${level.min}-${level.max === Infinity ? '∞' : level.max}`}</td>
+                    <td>${level.description}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+
+      const dialog = new Dialog({
+        title: "Gestione Malefatte",
+        content,
+        buttons: { close: { label: "Chiudi" } },
+        render: html => {
+          html.find('#manage-actor').click(() => {
+            const actorId = html.find('#actor-select').val();
+            if (actorId) {
+              const actor = game.actors.get(actorId);
+              dialog.close();
+              this.renderMalefatteManager(actor);
+            }
+          });
+        }
+      });
+
+      dialog.render(true);
+    }
   }
+}
+
+// Registra classe globale
+window.MalefatteTaglieNomeaSystem = MalefatteTaglieNomeaSystem;
+
+// Auto-inizializzazione
+Hooks.once('init', () => {
+  console.log("🎮 Brancalonia | Inizializzazione Malefatte System");
+  MalefatteTaglieNomeaSystem.initialize();
+});
+
+// Hook per integrazione con schede
+Hooks.on('renderActorSheet', (app, html, data) => {
+  if (!game.user.isGM) return;
+
+  const actor = app.actor;
+  if (actor.type !== "character") return;
+
+  // Aggiungi pulsante rapido per gestione malefatte
+  const malefatteButton = $(`
+    <div class="form-group">
+      <label>Malefatte e Taglia</label>
+      <div class="form-fields">
+        <div class="quick-stats">
+          <span>Taglia: <strong>${actor.getTaglia()} mo</strong></span>
+          <span>Nomea: <strong>${actor.getNomea().name}</strong></span>
+        </div>
+        <button type="button" class="manage-malefatte">
+          <i class="fas fa-skull-crossbones"></i> Gestisci Malefatte
+        </button>
+      </div>
+    </div>
+  `);
+
+  html.find('.tab.details .form-group').last().after(malefatteButton);
+
+  malefatteButton.find('.manage-malefatte').click(() => {
+    const instance = game.brancalonia?.malefatteSystem;
+    if (instance) {
+      instance.renderMalefatteManager(actor);
+    }
+  });
+});
+
+// Export per compatibilità
+if (typeof module !== 'undefined') {
+  module.exports = MalefatteTaglieNomeaSystem;
 }
