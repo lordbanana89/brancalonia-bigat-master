@@ -8,6 +8,12 @@
 
 // Verifica versione D&D 5e
 Hooks.once('init', () => {
+  // CRITICAL: Applica body class SUBITO (prima di qualsiasi rendering)
+  // Seguendo il pattern di crlngn-ui (Main.mjs:34)
+  document.querySelector("body").classList.add("theme-brancalonia");
+  document.querySelector("#ui-middle")?.classList.add("theme-brancalonia");
+  console.log('🎨 Brancalonia body class applied in init hook');
+
   const dnd5eVersion = game.system.version;
   const versionNumber = parseFloat(dnd5eVersion);
 
@@ -213,20 +219,8 @@ Hooks.once('init', () => {
     }
   });
 
-  // Applica theme class - FORZATO per compatibilità CSS
-  // CSS richiede body.theme-brancalonia per tutti gli stili
-  console.log('🎨 Applying theme-brancalonia class to body');
-  document.body.classList.add('theme-brancalonia');
-
-  // Rimuovi classi legacy incompatibili se presenti
-  document.body.classList.remove('brancalonia-theme', 'pergamena-theme');
-});
-
-// Re-apply on ready hook per sicurezza (dopo che tutti i moduli sono caricati)
-Hooks.once('ready', () => {
-  console.log('🎨 Re-applying theme-brancalonia class (ready hook)');
-  document.body.classList.add('theme-brancalonia');
-  document.body.classList.remove('brancalonia-theme', 'pergamena-theme');
+  // Rimuovi classi legacy incompatibili (già applicato in init)
+  document.body.classList.remove('brancalonia-theme', 'pergamena-theme', 'brancalonia-theme-active');
 });
 
 console.log('✅ Brancalonia Compatibility Fix loaded');
