@@ -1,18 +1,66 @@
 /**
- * BRANCALONIA CORE SYSTEM v10.0.0
+ * BRANCALONIA CORE SYSTEM v11.0.0
  * Main initialization and orchestration class
  *
  * @class BrancaloniaCore
- * @version 10.0.0
+ * @version 11.0.0
  * @author Brancalonia Community
  */
 
 class BrancaloniaCore {
 
   static ID = 'brancalonia-bigat';
-  static VERSION = '10.0.0';
+  static VERSION = '11.0.0';
   static MINIMUM_DND5E = '5.0.0';
   static MINIMUM_FOUNDRY = '12.0.0';
+
+  /**
+   * Map of module dependencies
+   */
+  static MODULE_DEPENDENCIES = {
+    // Core modules (no dependencies)
+    'brancalonia-modules-init-fix': [],
+    'brancalonia-ui-coordinator': [],
+    'brancalonia-module-activator': [],
+    'brancalonia-v13-modern': [],
+    'brancalonia-compatibility-fix': [],
+    'brancalonia-sheets': [],
+    'brancalonia-icon-interceptor': [],
+
+    // Feature modules with dependencies
+    'infamia-tracker': [],
+    'haven-system': [],
+    'compagnia-manager': ['infamia-tracker'],
+    'dirty-jobs': ['compagnia-manager'],
+    'malefatte-taglie-nomea': ['infamia-tracker'],
+    'menagramo-system': [],
+    'menagramo-warlock-patron': ['menagramo-system'],
+    'tavern-brawl': [],
+    'tavern-entertainment-consolidated': [],
+    'diseases-system': [],
+    'environmental-hazards': [],
+    'wilderness-encounters': [],
+    'level-cap': [],
+    'brancalonia-dice-theme': [],
+    'background-privileges': [],
+    'factions-system': [],
+    'dueling-system': [],
+    'reputation-system': ['infamia-tracker'],
+    'shoddy-equipment': [],
+    'rest-system': ['haven-system'],
+    'covo-granlussi-v2': [],
+    'covo-migration': ['covo-granlussi-v2'],
+    'covo-macros': ['covo-granlussi-v2'],
+    'favori-system': [],
+    'brancalonia-active-effects': [],
+    'brancalonia-conditions': [],
+    'brancalonia-mechanics': []
+  };
+
+  /**
+   * Module initialization status tracker
+   */
+  static moduleStatus = new Map();
 
   /**
    * Initialize the Brancalonia module
@@ -35,20 +83,66 @@ class BrancaloniaCore {
     game.brancalonia = {
       core: this,
       version: this.VERSION,
-      features: {},
-      api: {}
+      modules: {},
+      api: {},
+      debug: {
+        enabled: false,
+        log: (...args) => {
+          if (game.brancalonia.debug.enabled) {
+            console.log('[Brancalonia]', ...args);
+          }
+        }
+      }
     };
 
-    // Initialize core systems
-    await this._initializeCoreSystems();
+    // Register core settings
+    this._registerCoreSettings();
 
-    // Initialize features
-    await this._initializeFeatures();
+    // Initialize modules with dependency resolution
+    await this._initializeModules();
 
-    // Register API
+    // Register public API
     this._registerPublicAPI();
 
+    // Setup error handling
+    this._setupErrorHandling();
+
     console.log('✅ Brancalonia Core initialized successfully');
+    console.log(`📦 Loaded modules: ${this.moduleStatus.size}`);
+
+    // Log any failed modules
+    const failedModules = Array.from(this.moduleStatus.entries())
+      .filter(([_, status]) => status === 'failed');
+    if (failedModules.length > 0) {
+      console.warn('⚠️ Failed modules:', failedModules.map(([name]) => name));
+    }
+  }
+
+  /**
+   * Register core module settings
+   * @private
+   */
+  static _registerCoreSettings() {
+    game.settings.register(this.ID, 'debugMode', {
+      name: 'Debug Mode',
+      hint: 'Enable debug logging for troubleshooting',
+      scope: 'client',
+      config: true,
+      type: Boolean,
+      default: false,
+      onChange: value => {
+        game.brancalonia.debug.enabled = value;
+      }
+    });
+
+    game.settings.register(this.ID, 'enabledModules', {
+      name: 'Enabled Modules',
+      hint: 'Select which Brancalonia features to enable',
+      scope: 'world',
+      config: false,
+      type: Object,
+      default: {}
+    });
   }
 
   /**
@@ -58,8 +152,7 @@ class BrancaloniaCore {
   static _checkCompatibility() {
     const checks = {
       foundry: this._checkFoundryVersion(),
-      dnd5e: this._checkDnd5eVersion(),
-      modules: this._checkRequiredModules()
+      dnd5e: this._checkDnd5eVersion()
     };
 
     const allPassed = Object.values(checks).every(check => check);
@@ -118,15 +211,6 @@ class BrancaloniaCore {
   }
 
   /**
-   * Check required modules (if any)
-   * @private
-   */
-  static _checkRequiredModules() {
-    // For now, no hard dependencies
-    return true;
-  }
-
-  /**
    * Handle incompatibility gracefully
    * @private
    */
@@ -156,13 +240,7 @@ class BrancaloniaCore {
         buttons: {
           ok: {
             label: 'Understood',
-            callback: () => {
-              // Optionally disable the module
-              game.settings.set('core', 'moduleConfiguration', {
-                ...game.settings.get('core', 'moduleConfiguration'),
-                [this.ID]: false
-              });
-            }
+            callback: () => {}
           }
         }
       }).render(true);
@@ -170,77 +248,187 @@ class BrancaloniaCore {
   }
 
   /**
-   * Initialize core systems
+   * Initialize modules with dependency resolution
    * @private
    */
-  static async _initializeCoreSystems() {
-    // Lazy load core systems
-    const { HooksManager } = await import('./HooksManager.js');
-    const { ConfigManager } = await import('./ConfigManager.js');
-    const { CompatibilityLayer } = await import('./CompatibilityLayer.js');
+  static async _initializeModules() {
+    const moduleList = Object.keys(this.MODULE_DEPENDENCIES);
+    const initialized = new Set();
+    const initializing = new Set();
 
-    // Initialize in order
-    await ConfigManager.init();
-    await CompatibilityLayer.init();
-    await HooksManager.init();
+    /**
+     * Initialize a single module
+     */
+    const initModule = async (moduleName) => {
+      // Skip if already initialized or initializing
+      if (initialized.has(moduleName) || initializing.has(moduleName)) {
+        return this.moduleStatus.get(moduleName) !== 'failed';
+      }
 
-    // Store references
-    game.brancalonia.hooks = HooksManager;
-    game.brancalonia.config = ConfigManager;
-    game.brancalonia.compat = CompatibilityLayer;
-  }
+      initializing.add(moduleName);
 
-  /**
-   * Initialize feature modules
-   * @private
-   */
-  static async _initializeFeatures() {
-    // Get enabled features from settings
-    const enabledFeatures = game.settings.get(this.ID, 'enabledFeatures') ?? {
-      infamia: true,
-      baraonda: true,
-      compagnia: true,
-      haven: true,
-      dirtyJobs: true,
-      tavernBrawl: true,
-      menagramo: true
-    };
+      // Initialize dependencies first
+      const dependencies = this.MODULE_DEPENDENCIES[moduleName] || [];
+      for (const dep of dependencies) {
+        const depSuccess = await initModule(dep);
+        if (!depSuccess) {
+          console.warn(`⚠️ Module ${moduleName} skipped due to failed dependency: ${dep}`);
+          this.moduleStatus.set(moduleName, 'skipped');
+          initializing.delete(moduleName);
+          return false;
+        }
+      }
 
-    // Load enabled features
-    for (const [feature, enabled] of Object.entries(enabledFeatures)) {
-      if (!enabled) continue;
-
+      // Try to initialize the module
       try {
-        const modulePath = `../features/${feature}/${this._getFeatureModule(feature)}`;
-        const module = await import(modulePath);
+        const moduleClass = await this._loadModule(moduleName);
 
-        if (module.default?.init) {
-          await module.default.init();
-          game.brancalonia.features[feature] = module.default;
-          console.log(`✅ Feature loaded: ${feature}`);
+        if (moduleClass) {
+          // Call initialize if it exists
+          if (typeof moduleClass.initialize === 'function') {
+            await moduleClass.initialize();
+          }
+
+          // Store reference
+          game.brancalonia.modules[moduleName] = moduleClass;
+          this.moduleStatus.set(moduleName, 'success');
+          initialized.add(moduleName);
+
+          game.brancalonia.debug.log(`✅ Module loaded: ${moduleName}`);
+
+          initializing.delete(moduleName);
+          return true;
+        } else {
+          this.moduleStatus.set(moduleName, 'not-found');
+          initializing.delete(moduleName);
+          return false;
         }
       } catch (error) {
-        console.error(`❌ Failed to load feature ${feature}:`, error);
+        console.error(`❌ Failed to initialize module ${moduleName}:`, error);
+        this.moduleStatus.set(moduleName, 'failed');
+        initializing.delete(moduleName);
+        return false;
       }
+    };
+
+    // Initialize all modules
+    for (const moduleName of moduleList) {
+      await initModule(moduleName);
     }
   }
 
   /**
-   * Get feature module filename
+   * Load a module dynamically
    * @private
    */
-  static _getFeatureModule(feature) {
-    const moduleMap = {
-      infamia: 'InfamiaSystem.js',
-      baraonda: 'BaraondaSystem.js',
-      compagnia: 'CompagniaManager.js',
-      haven: 'HavenSystem.js',
-      dirtyJobs: 'DirtyJobs.js',
-      tavernBrawl: 'TavernBrawl.js',
-      menagramo: 'Menagramo.js'
+  static async _loadModule(moduleName) {
+    // Map module names to their actual file names
+    const moduleFileMap = {
+      'infamia-tracker': 'infamia-tracker',
+      'haven-system': 'haven-system',
+      'compagnia-manager': 'compagnia-manager',
+      'dirty-jobs': 'dirty-jobs',
+      'menagramo-system': 'menagramo-system',
+      'menagramo-warlock-patron': 'menagramo-warlock-patron',
+      'tavern-brawl': 'tavern-brawl',
+      'tavern-entertainment-consolidated': 'tavern-entertainment-consolidated',
+      'diseases-system': 'diseases-system',
+      'environmental-hazards': 'environmental-hazards',
+      'wilderness-encounters': 'wilderness-encounters',
+      'level-cap': 'level-cap',
+      'brancalonia-dice-theme': 'brancalonia-dice-theme',
+      'background-privileges': 'background-privileges',
+      'factions-system': 'factions-system',
+      'dueling-system': 'dueling-system',
+      'reputation-system': 'reputation-system',
+      'shoddy-equipment': 'shoddy-equipment',
+      'rest-system': 'rest-system',
+      'covo-granlussi-v2': 'covo-granlussi-v2',
+      'covo-migration': 'covo-migration',
+      'covo-macros': 'covo-macros',
+      'favori-system': 'favori-system',
+      'brancalonia-active-effects': 'brancalonia-active-effects',
+      'brancalonia-conditions': 'brancalonia-conditions',
+      'brancalonia-mechanics': 'brancalonia-mechanics',
+      'malefatte-taglie-nomea': 'malefatte-taglie-nomea',
+      'brancalonia-modules-init-fix': 'brancalonia-modules-init-fix',
+      'brancalonia-ui-coordinator': 'brancalonia-ui-coordinator',
+      'brancalonia-module-activator': 'brancalonia-module-activator',
+      'brancalonia-v13-modern': 'brancalonia-v13-modern',
+      'brancalonia-compatibility-fix': 'brancalonia-compatibility-fix',
+      'brancalonia-sheets': 'brancalonia-sheets',
+      'brancalonia-icon-interceptor': 'brancalonia-icon-interceptor'
     };
 
-    return moduleMap[feature] || `${feature}.js`;
+    const fileName = moduleFileMap[moduleName];
+    if (!fileName) {
+      game.brancalonia.debug.log(`Module ${moduleName} not in file map`);
+      return null;
+    }
+
+    // Modules are already loaded via module.json esmodules
+    // We just need to find them in the global scope
+
+    // Check common global locations where modules register themselves
+    const possibleLocations = [
+      window[moduleName],
+      window[fileName],
+      game.brancalonia?.[moduleName],
+      game.brancalonia?.[fileName],
+      // Convert kebab-case to CamelCase
+      window[this._kebabToCamel(moduleName)],
+      window[this._kebabToPascal(moduleName)]
+    ];
+
+    for (const location of possibleLocations) {
+      if (location) {
+        return location;
+      }
+    }
+
+    game.brancalonia.debug.log(`Module ${moduleName} not found in global scope`);
+    return null;
+  }
+
+  /**
+   * Convert kebab-case to camelCase
+   * @private
+   */
+  static _kebabToCamel(str) {
+    return str.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+  }
+
+  /**
+   * Convert kebab-case to PascalCase
+   * @private
+   */
+  static _kebabToPascal(str) {
+    const camel = this._kebabToCamel(str);
+    return camel.charAt(0).toUpperCase() + camel.slice(1);
+  }
+
+  /**
+   * Setup global error handling
+   * @private
+   */
+  static _setupErrorHandling() {
+    window.addEventListener('error', (event) => {
+      if (event.filename?.includes('brancalonia')) {
+        console.error('Brancalonia Error:', event.error);
+        if (game.brancalonia.debug.enabled) {
+          ui.notifications.error(`Brancalonia Error: ${event.error.message}`);
+        }
+      }
+    });
+
+    window.addEventListener('unhandledrejection', (event) => {
+      if (event.reason?.stack?.includes('brancalonia')) {
+        console.error('Brancalonia Promise Rejection:', event.reason);
+        if (game.brancalonia.debug.enabled) {
+          ui.notifications.error(`Brancalonia Error: ${event.reason.message || event.reason}`);
+        }
+      }
+    });
   }
 
   /**
@@ -254,52 +442,66 @@ class BrancaloniaCore {
       isCompatible: (minVersion) =>
         foundry.utils.isNewerVersion(this.VERSION, minVersion) || this.VERSION === minVersion,
 
-      // Feature detection
-      hasFeature: (feature) => !!game.brancalonia.features[feature],
-      getFeature: (feature) => game.brancalonia.features[feature],
+      // Module detection
+      hasModule: (moduleName) => !!game.brancalonia.modules[moduleName],
+      getModule: (moduleName) => game.brancalonia.modules[moduleName],
+      getModuleStatus: (moduleName) => this.moduleStatus.get(moduleName),
 
       // Utility functions
       addInfamia: (actor, amount) => {
         if (!this._isActor(actor)) return false;
-        return game.brancalonia.features.infamia?.addInfamia(actor, amount) ?? false;
+        const infamiaModule = game.brancalonia.modules['infamia-tracker'];
+        return infamiaModule?.addInfamia?.(actor, amount) ?? false;
       },
 
-      addBaraonda: (actor, points) => {
-        if (!this._isActor(actor)) return false;
-        return game.brancalonia.features.baraonda?.addPoints(actor, points) ?? false;
+      getInfamia: (actor) => {
+        if (!this._isActor(actor)) return 0;
+        const infamiaModule = game.brancalonia.modules['infamia-tracker'];
+        return infamiaModule?.getInfamia?.(actor) ?? 0;
       },
 
       // Theme functions
       applyTheme: () => {
-        document.body.classList.add('brancalonia-theme');
+        document.body.classList.add('theme-brancalonia');
         return true;
       },
 
       removeTheme: () => {
-        document.body.classList.remove('brancalonia-theme');
+        document.body.classList.remove('theme-brancalonia');
         return true;
       },
 
       // Debug utilities
       debug: {
+        enable: () => {
+          game.brancalonia.debug.enabled = true;
+          game.settings.set(BrancaloniaCore.ID, 'debugMode', true);
+        },
+
+        disable: () => {
+          game.brancalonia.debug.enabled = false;
+          game.settings.set(BrancaloniaCore.ID, 'debugMode', false);
+        },
+
         getSystemInfo: () => ({
           brancalonia: this.VERSION,
           foundry: game.version,
           dnd5e: game.system.version,
-          features: Object.keys(game.brancalonia.features)
+          modules: Object.keys(game.brancalonia.modules),
+          moduleStatus: Object.fromEntries(this.moduleStatus)
         }),
 
         runDiagnostics: async () => {
           const diagnostics = {
             core: this._checkCompatibility(),
-            features: {},
-            hooks: game.brancalonia.hooks?.getDiagnostics(),
+            modules: Object.fromEntries(this.moduleStatus),
             performance: await this._getPerformanceMetrics()
           };
 
-          for (const [name, feature] of Object.entries(game.brancalonia.features)) {
-            if (feature.runDiagnostics) {
-              diagnostics.features[name] = await feature.runDiagnostics();
+          // Run diagnostics for each module if available
+          for (const [name, module] of Object.entries(game.brancalonia.modules)) {
+            if (typeof module.runDiagnostics === 'function') {
+              diagnostics[name] = await module.runDiagnostics();
             }
           }
 
@@ -325,7 +527,10 @@ class BrancaloniaCore {
     const metrics = {
       loadTime: performance.now(),
       moduleCount: game.modules.size,
-      activeFeatures: Object.keys(game.brancalonia.features).length,
+      activeModules: Object.keys(game.brancalonia.modules).length,
+      failedModules: Array.from(this.moduleStatus.entries())
+        .filter(([_, status]) => status === 'failed')
+        .map(([name]) => name),
       memoryUsage: performance.memory?.usedJSHeapSize ?? 'N/A'
     };
 
@@ -338,17 +543,16 @@ class BrancaloniaCore {
   static async cleanup() {
     console.log('🧹 Brancalonia cleanup initiated');
 
-    // Cleanup features
-    for (const feature of Object.values(game.brancalonia.features)) {
-      if (feature.cleanup) {
-        await feature.cleanup();
+    // Cleanup modules
+    for (const [name, module] of Object.entries(game.brancalonia.modules)) {
+      if (typeof module.cleanup === 'function') {
+        try {
+          await module.cleanup();
+        } catch (error) {
+          console.error(`Error cleaning up module ${name}:`, error);
+        }
       }
     }
-
-    // Cleanup core systems
-    game.brancalonia.hooks?.cleanup();
-    game.brancalonia.config?.cleanup();
-    game.brancalonia.compat?.cleanup();
 
     // Remove global references
     delete window.Brancalonia;
@@ -360,18 +564,25 @@ class BrancaloniaCore {
 
 // Initialize when Foundry is ready
 Hooks.once('init', () => {
-  BrancaloniaCore.init();
+  BrancaloniaCore.init().catch(error => {
+    console.error('Fatal error initializing Brancalonia:', error);
+    ui.notifications.error('Brancalonia failed to initialize. Check console for details.', { permanent: true });
+  });
 });
 
 // Cleanup on module disable
-Hooks.once('closeSettingsConfig', () => {
+Hooks.on('closeSettingsConfig', () => {
   // Check if module was disabled
-  const isEnabled = game.settings.get('core', 'moduleConfiguration')[BrancaloniaCore.ID];
+  setTimeout(() => {
+    const moduleConfig = game.settings.get('core', 'moduleConfiguration');
+    const isEnabled = moduleConfig[BrancaloniaCore.ID];
 
-  if (!isEnabled && game.brancalonia?.core) {
-    BrancaloniaCore.cleanup();
-  }
+    if (!isEnabled && game.brancalonia?.core) {
+      BrancaloniaCore.cleanup();
+    }
+  }, 100);
 });
 
 // Export for module system
 window.BrancaloniaCore = BrancaloniaCore;
+export default BrancaloniaCore;

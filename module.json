@@ -2,7 +2,7 @@
   "id": "brancalonia-bigat",
   "title": "Brancalonia - Il Regno di Taglia",
   "description": "Modulo completo per giocare a Brancalonia nel Regno di Taglia. Include tutte le meccaniche del manuale: Infamia, Compagnia, Haven, Risse da Taverna, Lavori Sporchi, Menagramo, Oggetti Scadenti, Malattie, Hazard Ambientali, Duelli, Fazioni e Reputazione. Compatibile con D&D 5e.",
-  "version": "10.1.0",
+  "version": "11.0.0",
   "compatibility": {
     "minimum": "13.0.0",
     "verified": "13.347",
@@ -39,14 +39,18 @@
     ]
   },
   "esmodules": [
+    "modules/brancalonia-init-wrapper.js",
     "core/BrancaloniaCore.js",
+    "modules/brancalonia-modules-init-fix.js",
+    "modules/brancalonia-ui-coordinator.js",
+    "modules/brancalonia-module-activator.js",
     "modules/brancalonia-v13-modern.js",
     "modules/brancalonia-compatibility-fix.js",
     "modules/brancalonia-sheets.js",
     "modules/brancalonia-icon-interceptor.js",
     "modules/brancalonia-theme.mjs",
     "modules/compendium-manager.mjs",
-    "modules/infamia-tracker.js",
+    "modules/reputation-infamia-unified.js",
     "modules/haven-system.js",
     "modules/compagnia-manager.js",
     "modules/dirty-jobs.js",
@@ -57,15 +61,17 @@
     "modules/tavern-entertainment-consolidated.js",
     "modules/diseases-system.js",
     "modules/environmental-hazards.js",
+    "modules/wilderness-encounters.js",
     "modules/level-cap.js",
     "modules/brancalonia-dice-theme.js",
     "modules/background-privileges.js",
     "modules/factions-system.js",
     "modules/dueling-system.js",
-    "modules/reputation-system.js",
     "modules/shoddy-equipment.js",
     "modules/rest-system.js",
-    "modules/covo-granlussi.js",
+    "modules/covo-granlussi-v2.js",
+    "modules/covo-migration.js",
+    "modules/covo-macros.js",
     "modules/favori-system.js",
     "modules/brancalonia-rischi-mestiere.js",
     "modules/brancalonia-cursed-relics.js",
@@ -74,7 +80,11 @@
     "modules/brancalonia-mechanics.js"
   ],
   "styles": [
-    "styles/brancalonia.css"
+    "styles/brancalonia.css",
+    "styles/covo-system.css"
+  ],
+  "templates": [
+    "templates/"
   ],
   "languages": [
     {
