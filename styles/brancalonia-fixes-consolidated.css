@@ -70,7 +70,7 @@
      ================================================ */
 
   /* Container principale profilo */
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header {
     display: flex;
     align-items: center;
     gap: var(--bcl-space-4);
@@ -82,7 +82,7 @@
   }
 
   /* Immagine profilo circolare */
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header .profile {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header .profile {
     position: relative;
     flex: 0 0 100px;
     width: 100px;
@@ -97,8 +97,8 @@
     box-shadow: var(--bcl-shadow-lg);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header .profile img,
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header .profile-img {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header .profile img,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header .profile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -107,7 +107,7 @@
   }
 
   /* Dettagli personaggio */
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header .header-details {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header .header-details {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -115,8 +115,8 @@
   }
 
   /* Nome personaggio */
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header h1.charname,
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header input[name="name"] {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header h1.charname,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header input[name="name"] {
     margin: 0;
     padding: var(--bcl-space-2) var(--bcl-space-3);
     background: transparent;
@@ -129,10 +129,10 @@
     transition: border-color var(--bcl-transition-fast);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header h1.charname:hover,
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header input[name="name"]:hover,
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header h1.charname:focus,
-  .theme-brancalonia .dnd5e.sheet.actor.character .sheet-header input[name="name"]:focus {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header h1.charname:hover,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header input[name="name"]:hover,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header h1.charname:focus,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header input[name="name"]:focus {
     border-bottom-color: var(--bcl-gold-hover);
     outline: none;
   }
@@ -142,7 +142,7 @@
      ================================================ */
 
   /* Container ability scores */
-  .theme-brancalonia .dnd5e.sheet.actor.character .ability-scores {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .ability-scores {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: var(--bcl-space-2);
@@ -154,7 +154,7 @@
   }
 
   /* Singolo ability score */
-  .theme-brancalonia .dnd5e.sheet.actor.character .ability {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .ability {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,7 +168,7 @@
     position: relative;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor.character .ability:hover {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .ability:hover {
     background: linear-gradient(135deg,
       var(--bcl-gold) 0%,
       var(--bcl-gold-hover) 100%);
@@ -177,7 +177,7 @@
     border-color: var(--bcl-gold);
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor.character .ability:hover * {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .ability:hover * {
     color: var(--bcl-text-inverse);
   }
 
@@ -186,7 +186,7 @@
      ================================================ */
 
   /* Container attributi */
-  .theme-brancalonia .dnd5e.sheet.actor.character .attributes {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .attributes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: var(--bcl-space-3);
@@ -197,7 +197,7 @@
   }
 
   /* Singolo attributo */
-  .theme-brancalonia .dnd5e.sheet.actor.character .attribute {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .attribute {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +210,7 @@
     position: relative;
   }
 
-  .theme-brancalonia .dnd5e.sheet.actor.character .attribute:hover {
+  .theme-brancalonia .dnd5e2.sheet.actor.character .attribute:hover {
     transform: scale(1.05);
     box-shadow: var(--bcl-shadow-gold);
   }
@@ -220,7 +220,7 @@
      ================================================ */
 
   /* Lista inventario */
-  .theme-brancalonia .dnd5e.sheet .inventory-list {
+  .theme-brancalonia .dnd5e2.sheet .inventory-list {
     background: var(--bcl-surface);
     border: 1px solid var(--bcl-border);
     border-radius: var(--bcl-radius-md);
@@ -228,7 +228,7 @@
   }
 
   /* Header categorie inventario */
-  .theme-brancalonia .dnd5e.sheet .items-header {
+  .theme-brancalonia .dnd5e2.sheet .items-header {
     background: linear-gradient(90deg,
       var(--bcl-surface-sunken) 0%,
       var(--bcl-surface-tertiary) 100%);
@@ -240,13 +240,13 @@
   }
 
   /* Righe inventario */
-  .theme-brancalonia .dnd5e.sheet .item {
+  .theme-brancalonia .dnd5e2.sheet .item {
     border-bottom: 1px solid var(--bcl-divider);
     padding: var(--bcl-space-2);
     transition: all var(--bcl-transition-fast);
   }
 
-  .theme-brancalonia .dnd5e.sheet .item:hover {
+  .theme-brancalonia .dnd5e2.sheet .item:hover {
     background: var(--bcl-paper-weak);
     transform: translateX(2px);
   }
@@ -256,7 +256,7 @@
      ================================================ */
 
   /* Container tabs */
-  .theme-brancalonia .dnd5e.sheet .sheet-tabs,
+  .theme-brancalonia .dnd5e2.sheet .sheet-tabs,
   .theme-brancalonia .tabs {
     display: flex;
     gap: var(--bcl-space-1);
@@ -266,7 +266,7 @@
   }
 
   /* Singolo tab */
-  .theme-brancalonia .dnd5e.sheet .sheet-tabs .item,
+  .theme-brancalonia .dnd5e2.sheet .sheet-tabs .item,
   .theme-brancalonia .tabs .item {
     flex: 1;
     text-align: center;
@@ -284,13 +284,13 @@
     top: 2px;
   }
 
-  .theme-brancalonia .dnd5e.sheet .sheet-tabs .item:hover,
+  .theme-brancalonia .dnd5e2.sheet .sheet-tabs .item:hover,
   .theme-brancalonia .tabs .item:hover {
     background: var(--bcl-surface-tertiary);
     color: var(--bcl-ink);
   }
 
-  .theme-brancalonia .dnd5e.sheet .sheet-tabs .item.active,
+  .theme-brancalonia .dnd5e2.sheet .sheet-tabs .item.active,
   .theme-brancalonia .tabs .item.active {
     background: var(--bcl-surface);
     color: var(--bcl-gold);
@@ -312,7 +312,7 @@
   }
 
   /* Chat card dnd5e */
-  .theme-brancalonia .dnd5e.chat-card {
+  .theme-brancalonia .dnd5e2.chat-card {
     background: var(--bcl-surface);
     border: 1px solid var(--bcl-gold);
     border-radius: var(--bcl-radius-md);
@@ -320,7 +320,7 @@
   }
 
   /* Header chat card */
-  .theme-brancalonia .dnd5e.chat-card .card-header {
+  .theme-brancalonia .dnd5e2.chat-card .card-header {
     background: linear-gradient(90deg,
       var(--bcl-surface-sunken) 0%,
       var(--bcl-surface-tertiary) 100%);

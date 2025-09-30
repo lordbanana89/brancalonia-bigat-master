@@ -222,6 +222,30 @@
     --branca-font-display: var(--bcl-font-display);
     --branca-font-body: var(--bcl-font-serif);
     --branca-font-special: 'Uncial Antiqua', cursive;
+
+    /* ============================================
+       DND5E V5.1.9 INTEGRATION
+       Map Brancalonia tokens to dnd5e system variables
+       ============================================ */
+
+    /* dnd5e color system */
+    --dnd5e-color-parchment: var(--bcl-paper);
+    --dnd5e-color-card: var(--bcl-paper-weak);
+    --dnd5e-border-gold: 1px solid var(--bcl-gold);
+
+    /* Foundry color system (used by dnd5e v5+) */
+    --color-warm-1: var(--bcl-paper-weak);
+    --color-warm-2: var(--bcl-gold);
+    --color-warm-3: #D4AF37; /* gold-leaf */
+    --color-warm-4: var(--bcl-accent);
+
+    --color-cool-1: var(--bcl-emerald);
+    --color-cool-2: var(--bcl-nav);
+    --color-cool-3: var(--bcl-accent);
+
+    /* Highlight color (user-configurable in crlngn-ui) */
+    --color-highlights: var(--bcl-gold);
+    --color-highlights-75: rgba(201, 165, 74, 0.75);
   }
 
   /* =============================================

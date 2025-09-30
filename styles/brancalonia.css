@@ -32,16 +32,19 @@
 @import url('./brancalonia-decorations.css');
 
 /* 4. D&D 5e Compatibility - Sistema specifico */
-@import url('./brancalonia-dnd5e-compat.css');
+/* DEPRECATO: @import url('./brancalonia-dnd5e-compat.css'); */
+/* Usare brancalonia-dnd5e-v5.css caricato direttamente da module.json */
 
 /* 5. Module Compatibility - Integrazioni */
 @import url('./brancalonia-module-compat.css');
 
 /* 6. Actor Sheet Styles - Schede personaggio */
-@import url('./brancalonia-actor-sheet-complete.css');
+/* DEPRECATO: @import url('./brancalonia-actor-sheet-complete.css'); */
+/* Sostituito da brancalonia-dnd5e-v5.css (120 selettori obsoleti .dnd5e) */
 
 /* 7. Actor Sheet Layout Fix - Risolve problemi di impaginazione */
-@import url('./brancalonia-actor-sheet-layout-fix.css');
+/* DEPRECATO: @import url('./brancalonia-actor-sheet-layout-fix.css'); */
+/* Sostituito da brancalonia-dnd5e-v5.css (9 selettori obsoleti .dnd5e) */
 
 /* 8. Wilderness Encounters - Sistema incontri selvaggi */
 @import url('./wilderness-encounters.css');

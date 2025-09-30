@@ -49,6 +49,7 @@
     "modules/brancalonia-sheets.js",
     "modules/brancalonia-icon-interceptor.js",
     "modules/brancalonia-theme.mjs",
+    "modules/brancalonia-theme-settings.js",
     "modules/dice-so-nice-integration.js",
     "modules/compendium-manager.mjs",
     "modules/reputation-infamia-unified.js",
@@ -82,6 +83,7 @@
   ],
   "styles": [
     "styles/brancalonia.css",
+    "styles/brancalonia-dnd5e-v5.css",
     "styles/covo-system.css"
   ],
   "templates": [
