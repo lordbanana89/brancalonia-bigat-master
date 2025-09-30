@@ -830,9 +830,8 @@ class BrancaloniaRischiMestiere {
               await this.gestisciEvento(risultato.evento, cricca.map(a => ({ actor: a })));
             }
 
-              // Resetta l'imbosco dopo il tiro
-              await this.resetImbosco();
-            }
+            // Resetta l'imbosco dopo il tiro
+            await this.resetImbosco();
           }
         },
         cancel: {

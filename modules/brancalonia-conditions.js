@@ -937,8 +937,6 @@ game.brancalonia.conditions.removeCustomConditions(actor);
 
 }
 
-}
-
 // Inizializza il sistema
 Hooks.once("init", () => {
   try {

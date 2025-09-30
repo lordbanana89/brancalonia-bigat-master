@@ -886,7 +886,6 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       ui.notifications.error("Errore nel tentativo di rimozione!");
     }
   }
-}
 
   static _registerHooks() {
     try {
