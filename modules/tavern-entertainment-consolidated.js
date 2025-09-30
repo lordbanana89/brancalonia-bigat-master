@@ -300,7 +300,8 @@ class BrancaloniaTavernEntertainment {
    */
   static addTavernControls(controls) {
     try {
-      if (!game.user.isGM) return;
+      if (!game.user?.isGM) return;
+      if (!canvas?.scene) return; // Canvas non ancora pronto
 
       const tokenControls = controls.find(c => c.name === 'token');
       if (tokenControls) {

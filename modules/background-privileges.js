@@ -4,7 +4,7 @@
  */
 
 class BackgroundPrivileges {
-  static initialize() {
+  static async initialize() {
     try {
       console.log('🎭 Brancalonia | Inizializzazione privilegi background');
 
@@ -21,7 +21,7 @@ class BackgroundPrivileges {
       this._registerChatCommands();
 
       // Crea macro automatiche
-      this._createAutomaticMacros();
+      await this._createAutomaticMacros();
 
       // Registra l'istanza globale
       game.brancalonia = game.brancalonia || {};
@@ -315,7 +315,7 @@ class BackgroundPrivileges {
     }
   }
 
-  static _createAutomaticMacros() {
+  static async _createAutomaticMacros() {
     try {
       const macros = [
         {
@@ -419,7 +419,7 @@ class BackgroundPrivileges {
         }
       ];
 
-      macros.forEach(async macroData => {
+      await Promise.all(macros.map(async macroData => {
         const existingMacro = game.macros.find(m => m.name === macroData.name);
         if (!existingMacro) {
           await game.macros.documentClass.create(macroData);
@@ -427,7 +427,7 @@ class BackgroundPrivileges {
             console.log(`Macro '${macroData.name}' creata automaticamente`);
           }
         }
-      });
+      }));
     } catch (error) {
       console.error('Errore nella creazione macro privilegi:', error);
     }
