@@ -3,14 +3,14 @@
   "_key": "!item!ca0882b5368a7cc0",
   "name": "Competenza",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p>Scegli due competenze nelle abilità. Il tuo bonus di competenza viene raddoppiato per quelle abilità.</p>",
+      "value": "<p><strong>Competenza (3° livello)</strong></p><p>Al 3° livello, scegli due delle tue competenze nelle abilità. Il tuo bonus di competenza viene raddoppiato per qualsiasi prova di caratteristica che effettui usando una delle competenze scelte.</p><p>Al 10° livello, puoi scegliere altre due competenze nelle abilità per ottenere questo beneficio.</p><p><strong>Come applicare:</strong> Nella scheda personaggio, seleziona l'icona di Expertise (doppio cerchio) accanto alle due abilità scelte. Il sistema raddoppierà automaticamente il bonus di competenza per quelle abilità.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.54",
     "activation": {
       "type": "",
       "cost": null,
