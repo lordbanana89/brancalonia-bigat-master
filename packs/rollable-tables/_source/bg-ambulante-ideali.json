@@ -1,6 +1,6 @@
 {
   "_id": "oNkYUcmF0kFMq39e",
-  "_key": "!item!oNkYUcmF0kFMq39e",
+  "_key": "!tables!oNkYUcmF0kFMq39e",
   "name": "Ambulante - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

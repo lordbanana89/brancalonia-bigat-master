@@ -1,6 +1,6 @@
 {
   "_id": "Qz23Yi0E1c9qosGU",
-  "_key": "!item!Qz23Yi0E1c9qosGU",
+  "_key": "!tables!Qz23Yi0E1c9qosGU",
   "name": "Staffetta - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

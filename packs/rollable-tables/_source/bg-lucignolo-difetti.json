@@ -1,6 +1,6 @@
 {
   "_id": "ZRrdlTm7PuiiDB4m",
-  "_key": "!item!ZRrdlTm7PuiiDB4m",
+  "_key": "!tables!ZRrdlTm7PuiiDB4m",
   "name": "Lucignolo - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

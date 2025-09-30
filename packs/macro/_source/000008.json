@@ -1,0 +1,28 @@
+{
+  "_id": "brancalonia008",
+  "name": "🤢 Sistema Malattie",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/magic/death/skull-poison-green.webp",
+  "scope": "global",
+  "command": "// Macro per Sistema Malattie\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\nconst diseases = game.brancalonia?.DiseasesSystem;\nif (!diseases) {\n  ui.notifications.error('Sistema Malattie non disponibile!');\n  return;\n}\n\nconst tokens = canvas.tokens.controlled;\nif (tokens.length === 0) {\n  ui.notifications.warn('Seleziona un token!');\n  return;\n}\n\nconst actor = tokens[0].actor;\nconst currentDiseases = actor.getFlag('brancalonia-bigat', 'diseases') || [];\n\nnew Dialog({\n  title: '🤢 Sistema Malattie',\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3>${actor.name}</h3>\n      <div style=\"background: #f5e6d3; padding: 10px; border-radius: 5px; margin: 10px 0;\">\n        <p><strong>Malattie Attuali:</strong></p>\n        ${currentDiseases.length > 0 ? \n          currentDiseases.map(d => `<li>${d.name} (Stage ${d.stage})</li>`).join('') :\n          '<p style=\"font-style: italic;\">Nessuna malattia</p>'\n        }\n      </div>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"disease-source\">Fonte di Contagio:</label>\n        <select id=\"disease-source\" style=\"margin-left: 10px;\">\n          <option value=\"combat\">Combattimento</option>\n          <option value=\"environment\">Ambiente</option>\n          <option value=\"food\">Cibo/Acqua</option>\n          <option value=\"contact\">Contatto</option>\n          <option value=\"magic\">Magica</option>\n        </select>\n      </div>\n    </div>\n  `,\n  buttons: {\n    expose: {\n      icon: '<i class=\"fas fa-biohazard\"></i>',\n      label: 'Esponi a Malattia',\n      callback: (html) => {\n        const source = html.find('#disease-source').val();\n        diseases.exposeToDisease(actor, source);\n      }\n    },\n    check: {\n      icon: '<i class=\"fas fa-stethoscope\"></i>',\n      label: 'Controlla Sintomi',\n      callback: () => {\n        diseases.checkDiseaseProgress(actor);\n      }\n    },\n    cure: {\n      icon: '<i class=\"fas fa-heartbeat\"></i>',\n      label: 'Tenta Cura',\n      callback: () => {\n        diseases.attemptCure(actor);\n      }\n    },\n    list: {\n      icon: '<i class=\"fas fa-list\"></i>',\n      label: 'Lista Malattie',\n      callback: () => {\n        diseases.showDiseasesList();\n      }\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'check'\n}).render(true);",
+  "folder": null,
+  "sort": 100007,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "conditions"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000007000,
+    "modifiedTime": 1700000007000,
+    "lastModifiedBy": "brancalonia"
+  },
+  "_key": "!macros!brancalonia008"
+}

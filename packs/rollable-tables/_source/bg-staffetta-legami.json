@@ -1,6 +1,6 @@
 {
   "_id": "MXcznG6DodwrOVt0",
-  "_key": "!item!MXcznG6DodwrOVt0",
+  "_key": "!tables!MXcznG6DodwrOVt0",
   "name": "Staffetta - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

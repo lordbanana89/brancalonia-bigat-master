@@ -1,6 +1,6 @@
 {
   "_id": "VqSVoJr6pzsJVJ4h",
-  "_key": "!item!VqSVoJr6pzsJVJ4h",
+  "_key": "!tables!VqSVoJr6pzsJVJ4h",
   "name": "Ambulante - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

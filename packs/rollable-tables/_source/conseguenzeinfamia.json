@@ -162,7 +162,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!conseguenzeinfamia",
+  "_key": "!tables!conseguenzeinfamia",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

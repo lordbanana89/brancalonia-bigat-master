@@ -1,6 +1,6 @@
 {
   "_id": "HyLzspJGdc8RRjF7",
-  "_key": "!item!HyLzspJGdc8RRjF7",
+  "_key": "!tables!HyLzspJGdc8RRjF7",
   "name": "Lucignolo - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d8",
@@ -127,5 +127,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

@@ -1,6 +1,6 @@
 {
   "_id": "mn4JitpBzFsTUhF4",
-  "_key": "!item!mn4JitpBzFsTUhF4",
+  "_key": "!tables!mn4JitpBzFsTUhF4",
   "name": "Staffetta - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d8",
@@ -127,5 +127,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

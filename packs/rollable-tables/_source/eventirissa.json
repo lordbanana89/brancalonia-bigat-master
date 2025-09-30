@@ -162,7 +162,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!eventirissa",
+  "_key": "!tables!eventirissa",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

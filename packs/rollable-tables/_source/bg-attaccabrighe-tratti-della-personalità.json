@@ -1,6 +1,6 @@
 {
   "_id": "SmWPN92vVjhaznoI",
-  "_key": "!item!SmWPN92vVjhaznoI",
+  "_key": "!tables!SmWPN92vVjhaznoI",
   "name": "Attaccabrighe - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d8",
@@ -127,5 +127,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

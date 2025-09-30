@@ -1,6 +1,6 @@
 {
   "_id": "mCXI60x6Eq7NTIAo",
-  "_key": "!item!mCXI60x6Eq7NTIAo",
+  "_key": "!tables!mCXI60x6Eq7NTIAo",
   "name": "Attaccabrighe - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

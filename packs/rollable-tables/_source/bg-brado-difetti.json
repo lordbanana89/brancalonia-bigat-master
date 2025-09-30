@@ -1,6 +1,6 @@
 {
   "_id": "vzIfx2SrJlAl8b9s",
-  "_key": "!item!vzIfx2SrJlAl8b9s",
+  "_key": "!tables!vzIfx2SrJlAl8b9s",
   "name": "Brado - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

@@ -1,6 +1,6 @@
 {
   "_id": "aTnOFtBBIPEAI8Z3",
-  "_key": "!item!aTnOFtBBIPEAI8Z3",
+  "_key": "!tables!aTnOFtBBIPEAI8Z3",
   "name": "Prelato - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

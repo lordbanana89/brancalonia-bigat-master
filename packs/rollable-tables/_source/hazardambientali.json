@@ -258,7 +258,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!hazardambientali",
+  "_key": "!tables!hazardambientali",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

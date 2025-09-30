@@ -1,6 +1,6 @@
 {
   "_id": "JT0e1uzJfNFr3TV3",
-  "_key": "!item!JT0e1uzJfNFr3TV3",
+  "_key": "!tables!JT0e1uzJfNFr3TV3",
   "name": "Passatore - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

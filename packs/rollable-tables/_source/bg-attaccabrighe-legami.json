@@ -1,6 +1,6 @@
 {
   "_id": "w1cx9eMh06XFaGBG",
-  "_key": "!item!w1cx9eMh06XFaGBG",
+  "_key": "!tables!w1cx9eMh06XFaGBG",
   "name": "Attaccabrighe - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

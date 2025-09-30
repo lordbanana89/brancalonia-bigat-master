@@ -1,6 +1,6 @@
 {
   "_id": "yXHEPjJaMTmqqzN4",
-  "_key": "!item!yXHEPjJaMTmqqzN4",
+  "_key": "!tables!yXHEPjJaMTmqqzN4",
   "name": "Cacciatore di reliquie - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

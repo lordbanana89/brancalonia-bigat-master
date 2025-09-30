@@ -1,6 +1,6 @@
 {
   "_id": "TWxnY4wl0JMME4kC",
-  "_key": "!item!TWxnY4wl0JMME4kC",
+  "_key": "!tables!TWxnY4wl0JMME4kC",
   "name": "Duro - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d8",
@@ -127,5 +127,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

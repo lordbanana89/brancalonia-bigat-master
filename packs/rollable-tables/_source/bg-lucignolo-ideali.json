@@ -1,6 +1,6 @@
 {
   "_id": "vMJPF4oeXbLPBKA0",
-  "_key": "!item!vMJPF4oeXbLPBKA0",
+  "_key": "!tables!vMJPF4oeXbLPBKA0",
   "name": "Lucignolo - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

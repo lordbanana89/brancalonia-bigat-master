@@ -1,0 +1,72 @@
+{
+  "_id": "cfa103a3f5b29a45",
+  "_key": "!item!cfa103a3f5b29a45",
+  "name": "Attacco Furtivo",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una volta per turno, puoi infliggere 1d6 danni extra a una creatura che colpisci con un attacco se hai vantaggio al tiro per colpire.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Player's Handbook (D&D 5e)",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Ladro Livello 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "ladro",
+      "livello": 1
+    }
+  }
+}

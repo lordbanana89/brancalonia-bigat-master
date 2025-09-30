@@ -1,0 +1,28 @@
+{
+  "_id": "brancalonia003",
+  "name": "🏠 Gestione Haven",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/environment/settlement/house-1.webp",
+  "scope": "global",
+  "command": "// Macro per gestione Haven\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\nconst havenSystem = game.brancalonia?.HavenSystem;\nif (!havenSystem) {\n  ui.notifications.error('Sistema Haven non disponibile!');\n  return;\n}\n\n// Mostra dialog principale\nconst haven = havenSystem.getHaven();\n\nnew Dialog({\n  title: `Gestione Haven`,\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3>Haven: ${haven?.name || 'Nessun Haven'}</h3>\n      ${haven ? `\n        <p><strong>Tipo:</strong> ${haven.type || 'Locanda'}</p>\n        <p><strong>Livello:</strong> ${haven.level || 1}</p>\n        <p><strong>Servizi:</strong> ${haven.services?.length || 0}</p>\n        <p><strong>Staff:</strong> ${haven.staff?.length || 0}</p>\n        <hr>\n      ` : ''}\n      <p>Seleziona un'azione:</p>\n    </div>\n  `,\n  buttons: {\n    create: {\n      icon: '<i class=\"fas fa-home\"></i>',\n      label: 'Crea/Modifica Haven',\n      callback: () => havenSystem.showHavenDialog()\n    },\n    services: {\n      icon: '<i class=\"fas fa-concierge-bell\"></i>',\n      label: 'Gestisci Servizi',\n      callback: () => havenSystem.showServicesDialog()\n    },\n    staff: {\n      icon: '<i class=\"fas fa-user-tie\"></i>',\n      label: 'Gestisci Staff',\n      callback: () => havenSystem.showStaffDialog()\n    },\n    upgrade: {\n      icon: '<i class=\"fas fa-level-up-alt\"></i>',\n      label: 'Migliora Haven',\n      callback: () => havenSystem.showUpgradeDialog()\n    },\n    rest: {\n      icon: '<i class=\"fas fa-bed\"></i>',\n      label: 'Riposo nel Haven',\n      callback: () => havenSystem.restInHaven()\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'create'\n}).render(true);",
+  "folder": null,
+  "sort": 100002,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "haven"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000002000,
+    "modifiedTime": 1700000002000,
+    "lastModifiedBy": "brancalonia"
+  },
+  "_key": "!macros!brancalonia003"
+}

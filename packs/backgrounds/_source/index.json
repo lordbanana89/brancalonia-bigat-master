@@ -1,12 +1,12 @@
 {
   "_id": "index",
   "_key": "!item!index",
-  "name": "Index",
+  "name": "Background di Brancalonia",
   "type": "background",
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "",
+      "value": "<p>22 background - Ambulante, Duro, Furfante, Prelato, Saggio, Villano e varianti.</p>",
       "chat": "",
       "unidentified": ""
     },

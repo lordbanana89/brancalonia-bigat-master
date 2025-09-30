@@ -1,0 +1,28 @@
+{
+  "_id": "brancalonia015",
+  "name": "📜 Malefatte e Taglie",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/environment/settlement/gallows-noose.webp",
+  "scope": "global",
+  "command": "// Macro per Malefatte e Taglie\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\nconst malefatte = game.brancalonia?.MalefatteTaglieNomea;\nif (!malefatte) {\n  ui.notifications.error('Sistema Malefatte non disponibile!');\n  return;\n}\n\nconst tokens = canvas.tokens.controlled;\nif (tokens.length === 0) {\n  ui.notifications.warn('Seleziona un token!');\n  return;\n}\n\nconst actor = tokens[0].actor;\nconst currentMalefatte = actor.getFlag('brancalonia-bigat', 'malefatte') || [];\nconst currentTaglia = actor.getFlag('brancalonia-bigat', 'taglia') || 0;\nconst currentNomea = actor.getFlag('brancalonia-bigat', 'nomea') || 0;\n\nnew Dialog({\n  title: '📜 Malefatte, Taglie e Nomea',\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3>${actor.name}</h3>\n      <div style=\"display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 10px 0;\">\n        <div style=\"background: #f5e6d3; padding: 10px; border-radius: 5px; text-align: center;\">\n          <strong>Malefatte</strong>\n          <div style=\"font-size: 1.5em; color: #8b0000;\">${currentMalefatte.length}</div>\n        </div>\n        <div style=\"background: #f5e6d3; padding: 10px; border-radius: 5px; text-align: center;\">\n          <strong>Taglia</strong>\n          <div style=\"font-size: 1.5em; color: #d4af37;\">${currentTaglia} mo</div>\n        </div>\n        <div style=\"background: #f5e6d3; padding: 10px; border-radius: 5px; text-align: center;\">\n          <strong>Nomea</strong>\n          <div style=\"font-size: 1.5em; color: #2e7d32;\">${currentNomea}</div>\n        </div>\n      </div>\n      <hr>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"crime-type\">Tipo di Crimine:</label>\n        <select id=\"crime-type\" style=\"width: 100%; margin-top: 5px;\">\n          <option value=\"theft\">Furto</option>\n          <option value=\"assault\">Aggressione</option>\n          <option value=\"murder\">Omicidio</option>\n          <option value=\"fraud\">Frode</option>\n          <option value=\"smuggling\">Contrabbando</option>\n          <option value=\"heresy\">Eresia</option>\n          <option value=\"rebellion\">Ribellione</option>\n        </select>\n      </div>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"crime-gravity\">Gravità:</label>\n        <select id=\"crime-gravity\" style=\"width: 100%; margin-top: 5px;\">\n          <option value=\"minor\">Minore (10-50 mo)</option>\n          <option value=\"moderate\">Moderata (50-200 mo)</option>\n          <option value=\"serious\">Grave (200-500 mo)</option>\n          <option value=\"capital\">Capitale (500+ mo)</option>\n        </select>\n      </div>\n    </div>\n  `,\n  buttons: {\n    add: {\n      icon: '<i class=\"fas fa-plus\"></i>',\n      label: 'Aggiungi Malefatta',\n      callback: (html) => {\n        const type = html.find('#crime-type').val();\n        const gravity = html.find('#crime-gravity').val();\n        malefatte.addMalefatta(actor, type, gravity);\n      }\n    },\n    view: {\n      icon: '<i class=\"fas fa-list\"></i>',\n      label: 'Vedi Fedina',\n      callback: () => {\n        malefatte.showCriminalRecord(actor);\n      }\n    },\n    bounty: {\n      icon: '<i class=\"fas fa-coins\"></i>',\n      label: 'Calcola Taglia',\n      callback: () => {\n        malefatte.calculateBounty(actor);\n      }\n    },\n    reputation: {\n      icon: '<i class=\"fas fa-user-shield\"></i>',\n      label: 'Genera Soprannome',\n      callback: () => {\n        malefatte.generateNickname(actor);\n      }\n    },\n    clear: {\n      icon: '<i class=\"fas fa-gavel\"></i>',\n      label: 'Paga/Sconta',\n      callback: () => {\n        malefatte.payOrServeSentence(actor);\n      }\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'add'\n}).render(true);",
+  "folder": null,
+  "sort": 100014,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "crime"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000014000,
+    "modifiedTime": 1700000014000,
+    "lastModifiedBy": "brancalonia"
+  },
+  "_key": "!macros!brancalonia015"
+}

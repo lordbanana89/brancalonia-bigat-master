@@ -1,6 +1,6 @@
 {
   "_id": "rXDsVCInTuPkK1Bz",
-  "_key": "!item!rXDsVCInTuPkK1Bz",
+  "_key": "!tables!rXDsVCInTuPkK1Bz",
   "name": "Prelato - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d8",
@@ -127,5 +127,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

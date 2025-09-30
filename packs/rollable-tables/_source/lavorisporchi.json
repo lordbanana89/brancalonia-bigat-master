@@ -162,7 +162,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!lavorisporchi",
+  "_key": "!tables!lavorisporchi",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

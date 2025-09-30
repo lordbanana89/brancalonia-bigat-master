@@ -1,6 +1,6 @@
 {
   "_id": "KVbKEG128y8QpLJT",
-  "_key": "!item!KVbKEG128y8QpLJT",
+  "_key": "!tables!KVbKEG128y8QpLJT",
   "name": "Brado - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

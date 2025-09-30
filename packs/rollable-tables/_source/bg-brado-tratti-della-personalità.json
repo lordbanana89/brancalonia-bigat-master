@@ -1,6 +1,6 @@
 {
   "_id": "3T9fromL6DAvhmdj",
-  "_key": "!item!3T9fromL6DAvhmdj",
+  "_key": "!tables!3T9fromL6DAvhmdj",
   "name": "Brado - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d8",
@@ -127,5 +127,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

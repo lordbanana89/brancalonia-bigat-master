@@ -258,7 +258,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!patronilavori",
+  "_key": "!tables!patronilavori",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

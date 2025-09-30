@@ -1,6 +1,6 @@
 {
   "_id": "L36J31zX9hVzRyRL",
-  "_key": "!item!L36J31zX9hVzRyRL",
+  "_key": "!tables!L36J31zX9hVzRyRL",
   "name": "Cacciatore di reliquie - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

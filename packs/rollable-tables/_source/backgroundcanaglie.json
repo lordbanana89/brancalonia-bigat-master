@@ -258,7 +258,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!backgroundcanaglie",
+  "_key": "!tables!backgroundcanaglie",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

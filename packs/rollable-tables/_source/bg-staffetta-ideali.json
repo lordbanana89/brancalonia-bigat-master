@@ -1,6 +1,6 @@
 {
   "_id": "fJv9SQ54DMAOeKZd",
-  "_key": "!item!fJv9SQ54DMAOeKZd",
+  "_key": "!tables!fJv9SQ54DMAOeKZd",
   "name": "Staffetta - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

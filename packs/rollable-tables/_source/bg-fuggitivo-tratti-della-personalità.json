@@ -1,6 +1,6 @@
 {
   "_id": "aq80wkHHJ0h6wfxf",
-  "_key": "!item!aq80wkHHJ0h6wfxf",
+  "_key": "!tables!aq80wkHHJ0h6wfxf",
   "name": "Fuggitivo - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d8",
@@ -127,5 +127,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

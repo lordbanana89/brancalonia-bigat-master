@@ -1,10 +1,10 @@
-import { getSettings, THEMES, SETTING_SCOPE } from "../../constants/Settings.mjs";
-import { getSettingMenus } from "../../constants/SettingMenus.mjs";
-import { LogUtil } from "../LogUtil.mjs";
-import { SettingsUtil } from "../SettingsUtil.mjs";
-import { GeneralUtil } from "../GeneralUtil.mjs";
-import { LeftControls } from "../LeftControlsUtil.mjs";
-import { ColorPickerDialog, ColorPickerUtil } from "../ColorPickerUtil.mjs";
+import { getSettings, THEMES, SETTING_SCOPE } from "../constants/Settings.mjs";
+import { getSettingMenus } from "../constants/SettingMenus.mjs";
+import { LogUtil } from "../components/LogUtil.mjs";
+import { SettingsUtil } from "../components/SettingsUtil.mjs";
+import { GeneralUtil } from "../components/GeneralUtil.mjs";
+import { LeftControls } from "../components/LeftControlsUtil.mjs";
+import { ColorPickerDialog, ColorPickerUtil } from "../components/ColorPickerUtil.mjs";
 
 const { FormDataExtended } = foundry.utils;
 

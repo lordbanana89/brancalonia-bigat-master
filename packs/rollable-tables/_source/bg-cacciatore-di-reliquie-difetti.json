@@ -1,6 +1,6 @@
 {
   "_id": "C16hAwvA96CYe2h9",
-  "_key": "!item!C16hAwvA96CYe2h9",
+  "_key": "!tables!C16hAwvA96CYe2h9",
   "name": "Cacciatore di reliquie - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

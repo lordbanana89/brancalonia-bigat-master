@@ -1,0 +1,28 @@
+{
+  "_id": "brancalonia011",
+  "name": "🛡️ Equipaggiamento Scadente",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/equipment/chest/breastplate-banded-steel-worn.webp",
+  "scope": "global",
+  "command": "// Macro per Equipaggiamento Scadente\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\nconst shoddy = game.brancalonia?.ShoddyEquipment;\nif (!shoddy) {\n  ui.notifications.error('Sistema Equipaggiamento Scadente non disponibile!');\n  return;\n}\n\nconst tokens = canvas.tokens.controlled;\nif (tokens.length === 0) {\n  ui.notifications.warn('Seleziona un token!');\n  return;\n}\n\nconst actor = tokens[0].actor;\n\nnew Dialog({\n  title: '🛡️ Equipaggiamento Scadente',\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3>${actor.name}</h3>\n      <p>Controlla l'usura del tuo equipaggiamento!</p>\n      <hr>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"item-select\">Oggetto da controllare:</label>\n        <select id=\"item-select\" style=\"width: 100%; margin-top: 5px;\">\n          <option value=\"weapon\">Arma Equipaggiata</option>\n          <option value=\"armor\">Armatura Indossata</option>\n          <option value=\"shield\">Scudo</option>\n          <option value=\"all\">Tutto l'Equipaggiamento</option>\n        </select>\n      </div>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"check-reason\">Motivo del controllo:</label>\n        <select id=\"check-reason\" style=\"width: 100%; margin-top: 5px;\">\n          <option value=\"fumble\">Fumble in combattimento</option>\n          <option value=\"critical\">Colpo critico subito</option>\n          <option value=\"fall\">Caduta</option>\n          <option value=\"element\">Danno elementale</option>\n          <option value=\"time\">Usura del tempo</option>\n        </select>\n      </div>\n      <p style=\"text-align: center; font-style: italic; color: #8b4513;\">\"Niente dura per sempre nel Regno di Taglia...\"</p>\n    </div>\n  `,\n  buttons: {\n    check: {\n      icon: '<i class=\"fas fa-hammer\"></i>',\n      label: 'Controlla Usura',\n      callback: (html) => {\n        const itemType = html.find('#item-select').val();\n        const reason = html.find('#check-reason').val();\n        shoddy.checkWearAndTear(actor, itemType, reason);\n      }\n    },\n    repair: {\n      icon: '<i class=\"fas fa-tools\"></i>',\n      label: 'Ripara Oggetto',\n      callback: () => {\n        shoddy.showRepairDialog(actor);\n      }\n    },\n    status: {\n      icon: '<i class=\"fas fa-clipboard-list\"></i>',\n      label: 'Stato Equipaggiamento',\n      callback: () => {\n        shoddy.showEquipmentStatus(actor);\n      }\n    },\n    upgrade: {\n      icon: '<i class=\"fas fa-arrow-up\"></i>',\n      label: 'Migliora Qualità',\n      callback: () => {\n        shoddy.showUpgradeDialog(actor);\n      }\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'check'\n}).render(true);",
+  "folder": null,
+  "sort": 100010,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "equipment"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000010000,
+    "modifiedTime": 1700000010000,
+    "lastModifiedBy": "brancalonia"
+  },
+  "_key": "!macros!brancalonia011"
+}

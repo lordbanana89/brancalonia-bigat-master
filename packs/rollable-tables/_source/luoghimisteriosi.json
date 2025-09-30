@@ -258,7 +258,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!luoghimisteriosi",
+  "_key": "!tables!luoghimisteriosi",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

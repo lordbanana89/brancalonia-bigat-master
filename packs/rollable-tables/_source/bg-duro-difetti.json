@@ -1,6 +1,6 @@
 {
   "_id": "lPlRuiRkpbpPvxPB",
-  "_key": "!item!lPlRuiRkpbpPvxPB",
+  "_key": "!tables!lPlRuiRkpbpPvxPB",
   "name": "Duro - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

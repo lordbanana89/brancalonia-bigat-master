@@ -258,7 +258,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!nomilocande",
+  "_key": "!tables!nomilocande",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

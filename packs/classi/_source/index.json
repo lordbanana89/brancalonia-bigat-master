@@ -1,12 +1,12 @@
 {
   "_id": "indexaeb7cb",
   "_key": "!item!indexaeb7cb",
-  "name": "Item",
+  "name": "Classi di Brancalonia",
   "type": "class",
   "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
   "system": {
     "description": {
-      "value": "",
+      "value": "<p>13 classi - Barbaro, Bardo, Chierico, Druido, Guerriero, Ladro, Mago, Monaco, Paladino, Ranger, Stregone, Warlock e Burattinaio.</p>",
       "chat": "",
       "unidentified": ""
     },

@@ -1,0 +1,72 @@
+{
+  "_id": "ff2e71fc0a1ee670",
+  "_key": "!item!ff2e71fc0a1ee670",
+  "name": "Tuttofare",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Aggiungi metà del tuo bonus di competenza a qualsiasi prova di caratteristica che non include già il bonus di competenza.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Player's Handbook (D&D 5e)",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Bardo Livello 2",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "bardo",
+      "livello": 2
+    }
+  }
+}

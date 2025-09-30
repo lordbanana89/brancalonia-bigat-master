@@ -258,7 +258,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!eventihaven",
+  "_key": "!tables!eventihaven",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

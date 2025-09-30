@@ -258,7 +258,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!tesorinascosti",
+  "_key": "!tables!tesorinascosti",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

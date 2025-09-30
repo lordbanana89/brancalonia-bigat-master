@@ -1,6 +1,6 @@
 {
   "_id": "CLh8GivenPA6Zhsx",
-  "_key": "!item!CLh8GivenPA6Zhsx",
+  "_key": "!tables!CLh8GivenPA6Zhsx",
   "name": "Ambulante - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

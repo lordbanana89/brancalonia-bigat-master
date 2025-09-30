@@ -1,6 +1,6 @@
 {
   "_id": "95AEUOAmoAnfPOPj",
-  "_key": "!item!95AEUOAmoAnfPOPj",
+  "_key": "!tables!95AEUOAmoAnfPOPj",
   "name": "Azzeccagarbugli - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

@@ -1,7 +1,7 @@
 {
   "_id": "tables",
   "name": "Tables",
-  "type": "loot",
+  "type": "table",
   "img": "icons/svg/d20-highlight.svg",
   "results": [
     {
@@ -16411,6 +16411,6 @@
       "restored": true
     }
   },
-  "_key": "!item!tables",
+  "_key": "!tables!tables",
   "effects": []
 }

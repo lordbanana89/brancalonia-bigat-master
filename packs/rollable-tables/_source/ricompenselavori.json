@@ -162,7 +162,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!ricompenselavori",
+  "_key": "!tables!ricompenselavori",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

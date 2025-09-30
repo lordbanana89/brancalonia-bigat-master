@@ -1,6 +1,6 @@
 {
   "_id": "Q9zsJPlVja31uQ2z",
-  "_key": "!item!Q9zsJPlVja31uQ2z",
+  "_key": "!tables!Q9zsJPlVja31uQ2z",
   "name": "Lucignolo - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

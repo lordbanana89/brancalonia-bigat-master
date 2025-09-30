@@ -258,7 +258,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!soprannomicanaglie",
+  "_key": "!tables!soprannomicanaglie",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

@@ -1,6 +1,6 @@
 {
   "_id": "10JcVrQVTvsqKVFq",
-  "_key": "!item!10JcVrQVTvsqKVFq",
+  "_key": "!tables!10JcVrQVTvsqKVFq",
   "name": "Fuggitivo - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

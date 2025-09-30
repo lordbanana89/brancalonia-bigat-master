@@ -1,6 +1,6 @@
 {
   "_id": "0FZT854Jzjt6H0z7",
-  "_key": "!item!0FZT854Jzjt6H0z7",
+  "_key": "!tables!0FZT854Jzjt6H0z7",
   "name": "Impresario - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

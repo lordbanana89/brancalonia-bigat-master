@@ -1,6 +1,6 @@
 {
   "_id": "Ot4awt6F31DrGt65",
-  "_key": "!item!Ot4awt6F31DrGt65",
+  "_key": "!tables!Ot4awt6F31DrGt65",
   "name": "Impresario - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

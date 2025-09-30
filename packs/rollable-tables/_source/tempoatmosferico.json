@@ -150,7 +150,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!tempoatmosferico",
+  "_key": "!tables!tempoatmosferico",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

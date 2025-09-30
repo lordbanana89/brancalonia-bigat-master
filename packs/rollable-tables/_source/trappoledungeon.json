@@ -162,7 +162,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!trappoledungeon",
+  "_key": "!tables!trappoledungeon",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

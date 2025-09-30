@@ -1,6 +1,6 @@
 {
   "_id": "6Te8PzC08Lpuqm2S",
-  "_key": "!item!6Te8PzC08Lpuqm2S",
+  "_key": "!tables!6Te8PzC08Lpuqm2S",
   "name": "Duro - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

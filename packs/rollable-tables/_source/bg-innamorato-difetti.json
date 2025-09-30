@@ -1,6 +1,6 @@
 {
   "_id": "7y7WV5SWVe5uxRar",
-  "_key": "!item!7y7WV5SWVe5uxRar",
+  "_key": "!tables!7y7WV5SWVe5uxRar",
   "name": "Innamorato - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

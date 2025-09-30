@@ -1,12 +1,12 @@
 {
   "_id": "indexea4487",
   "_key": "!items!indexea4487",
-  "name": "Item",
+  "name": "Stirpi di Brancalonia",
   "type": "race",
   "img": "icons/environment/people/group.webp",
   "system": {
     "description": {
-      "value": "",
+      "value": "<p>9 stirpi - Benandanti, Giffonita, Marionetta, Morgante, Pantegana, Silfo, Unomorto e varianti.</p>",
       "chat": "",
       "unidentified": ""
     },

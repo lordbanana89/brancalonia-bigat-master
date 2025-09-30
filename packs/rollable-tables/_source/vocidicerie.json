@@ -162,7 +162,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!vocidicerie",
+  "_key": "!tables!vocidicerie",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

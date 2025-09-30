@@ -1,6 +1,6 @@
 {
   "_id": "8chDmml0WSo7ngS5",
-  "_key": "!item!8chDmml0WSo7ngS5",
+  "_key": "!tables!8chDmml0WSo7ngS5",
   "name": "Attaccabrighe - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

@@ -1,6 +1,6 @@
 {
   "_id": "7SAkD1FqB7wamtEa",
-  "_key": "!item!7SAkD1FqB7wamtEa",
+  "_key": "!tables!7SAkD1FqB7wamtEa",
   "name": "Passatore - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

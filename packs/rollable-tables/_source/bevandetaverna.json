@@ -138,7 +138,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!bevandetaverna",
+  "_key": "!tables!bevandetaverna",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

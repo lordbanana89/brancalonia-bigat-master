@@ -1,6 +1,6 @@
 {
   "_id": "Gi9KqhXHntIq2Vzf",
-  "_key": "!item!Gi9KqhXHntIq2Vzf",
+  "_key": "!tables!Gi9KqhXHntIq2Vzf",
   "name": "Innamorato - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

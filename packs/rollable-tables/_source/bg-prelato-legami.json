@@ -1,6 +1,6 @@
 {
   "_id": "H0VAsJ5fouWHChyX",
-  "_key": "!item!H0VAsJ5fouWHChyX",
+  "_key": "!tables!H0VAsJ5fouWHChyX",
   "name": "Prelato - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

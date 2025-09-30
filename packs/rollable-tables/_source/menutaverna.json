@@ -162,7 +162,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!menutaverna",
+  "_key": "!tables!menutaverna",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

@@ -1,6 +1,6 @@
 {
   "_id": "CMrZE6owY2hymXZ0",
-  "_key": "!item!CMrZE6owY2hymXZ0",
+  "_key": "!tables!CMrZE6owY2hymXZ0",
   "name": "Impresario - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

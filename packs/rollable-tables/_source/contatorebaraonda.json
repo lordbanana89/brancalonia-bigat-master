@@ -90,7 +90,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!contatorebaraonda",
+  "_key": "!tables!contatorebaraonda",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

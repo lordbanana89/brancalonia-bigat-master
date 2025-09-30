@@ -1,6 +1,6 @@
 {
   "_id": "sypi3Ek9Fmg6ZU2E",
-  "_key": "!item!sypi3Ek9Fmg6ZU2E",
+  "_key": "!tables!sypi3Ek9Fmg6ZU2E",
   "name": "Ambulante - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d8",
@@ -127,5 +127,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

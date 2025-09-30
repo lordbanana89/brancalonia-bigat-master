@@ -1,0 +1,72 @@
+{
+  "_id": "0aaa48783eac3c07",
+  "_key": "!item!0aaa48783eac3c07",
+  "name": "Secondo Fiato",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Hai una riserva limitata di stamina. Nel tuo turno, puoi usare un'azione bonus per recuperare 1d10 + livello da guerriero PF. Una volta usato, devi completare un riposo breve o lungo.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Player's Handbook (D&D 5e)",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Guerriero Livello 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "guerriero",
+      "livello": 1
+    }
+  }
+}

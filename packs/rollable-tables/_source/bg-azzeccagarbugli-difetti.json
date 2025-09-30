@@ -1,6 +1,6 @@
 {
   "_id": "guZkWls5xXTw5pOs",
-  "_key": "!item!guZkWls5xXTw5pOs",
+  "_key": "!tables!guZkWls5xXTw5pOs",
   "name": "Azzeccagarbugli - Difetti",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

@@ -1,6 +1,6 @@
 {
   "_id": "39dqqetVmHXWVOjm",
-  "_key": "!item!39dqqetVmHXWVOjm",
+  "_key": "!tables!39dqqetVmHXWVOjm",
   "name": "Brado - Legami",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

@@ -28,7 +28,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.miracolarochiericolivello2incanalaredivinitarecitare82c66a",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.miracolarochiericolivello2incanalaredivinitarecitare82c66a",
               "optional": false
             }
           ],
@@ -45,7 +45,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-monaco-livello_1-difesa-senza-armatura",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-monaco-livello_1-difesa-senza-armatura",
               "optional": false
             }
           ],
@@ -62,7 +62,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_2-attacco-irruento",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_2-attacco-irruento",
               "optional": false
             }
           ],
@@ -79,7 +79,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_2-percezione-del-pericolo",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_2-percezione-del-pericolo",
               "optional": false
             }
           ],
@@ -96,7 +96,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_3-cammino-primordiale",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_3-cammino-primordiale",
               "optional": false
             }
           ],
@@ -126,7 +126,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-guerriero-livello_11-attacco-extra-superiore",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-guerriero-livello_11-attacco-extra-superiore",
               "optional": false
             }
           ],
@@ -143,7 +143,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_5-movimento-veloce",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_5-movimento-veloce",
               "optional": false
             }
           ],
@@ -160,7 +160,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_7-istinto-ferino",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_7-istinto-ferino",
               "optional": false
             }
           ],
@@ -190,7 +190,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.5c4be4511e2d33e1",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.5c4be4511e2d33e1",
               "optional": false
             }
           ],
@@ -207,7 +207,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_9-critico-brutale",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_9-critico-brutale",
               "optional": false
             }
           ],
@@ -224,7 +224,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_11-ira-implacabile",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_11-ira-implacabile",
               "optional": false
             }
           ],
@@ -254,7 +254,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.aiyocmlc1d8lmd1a",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.aiyocmlc1d8lmd1a",
               "optional": false
             }
           ],
@@ -271,7 +271,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_15-ira-persistente",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_15-ira-persistente",
               "optional": false
             }
           ],
@@ -301,7 +301,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.867xktqdqm4oup6c",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.867xktqdqm4oup6c",
               "optional": false
             }
           ],
@@ -318,7 +318,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_18-forza-indomabile",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_18-forza-indomabile",
               "optional": false
             }
           ],
@@ -348,7 +348,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia.brancalonia-features.Item.class-barbaro-livello_20-campione-primordiale",
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_20-campione-primordiale",
               "optional": false
             }
           ],

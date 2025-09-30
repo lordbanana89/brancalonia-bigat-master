@@ -1,0 +1,28 @@
+{
+  "_id": "brancalonia012",
+  "name": "🎲 Tira su Tabella",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/sundries/gaming/dice-runed-brown.webp",
+  "scope": "global",
+  "command": "// Macro per tirare su tabelle casuali di Brancalonia\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\n// Categorie di tabelle disponibili\nconst tableCategories = {\n  'nomi': 'Nomi e Soprannomi',\n  'taverne': 'Taverne e Locande',\n  'eventi': 'Eventi Casuali',\n  'tesori': 'Tesori e Ricompense',\n  'complicazioni': 'Complicazioni',\n  'incontri': 'Incontri',\n  'voci': 'Voci e Dicerie',\n  'maledizioni': 'Maledizioni e Sfortune'\n};\n\nlet categoryOptions = '';\nfor (let [key, value] of Object.entries(tableCategories)) {\n  categoryOptions += `<option value=\"${key}\">${value}</option>`;\n}\n\nnew Dialog({\n  title: '🎲 Tabelle Casuali di Brancalonia',\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3>Tira su una Tabella Casuale</h3>\n      <div style=\"margin: 15px 0;\">\n        <label for=\"table-category\" style=\"font-weight: bold;\">Categoria:</label>\n        <select id=\"table-category\" style=\"width: 100%; margin-top: 5px; padding: 5px;\">\n          ${categoryOptions}\n        </select>\n      </div>\n      <div style=\"margin: 15px 0;\">\n        <label for=\"num-rolls\" style=\"font-weight: bold;\">Numero di tiri:</label>\n        <input type=\"number\" id=\"num-rolls\" value=\"1\" min=\"1\" max=\"10\" style=\"width: 60px; margin-left: 10px;\"/>\n      </div>\n      <div style=\"margin: 15px 0;\">\n        <input type=\"checkbox\" id=\"show-public\" checked/>\n        <label for=\"show-public\">Mostra risultato in chat pubblico</label>\n      </div>\n      <hr>\n      <p style=\"text-align: center; font-style: italic;\">\"Il dado è tratto, che la sorte decida!\"</p>\n    </div>\n  `,\n  buttons: {\n    roll: {\n      icon: '<i class=\"fas fa-dice-d20\"></i>',\n      label: 'Tira!',\n      callback: async (html) => {\n        const category = html.find('#table-category').val();\n        const numRolls = parseInt(html.find('#num-rolls').val());\n        const showPublic = html.find('#show-public').prop('checked');\n        \n        // Cerca la tabella nel compendio\n        const pack = game.packs.get('brancalonia-bigat.rollable-tables');\n        if (!pack) {\n          ui.notifications.error('Compendio tabelle non trovato!');\n          return;\n        }\n        \n        const tables = await pack.getDocuments();\n        const matchingTables = tables.filter(t => \n          t.name.toLowerCase().includes(category)\n        );\n        \n        if (matchingTables.length === 0) {\n          ui.notifications.warn(`Nessuna tabella trovata per la categoria: ${tableCategories[category]}`);\n          return;\n        }\n        \n        // Scegli una tabella casuale dalla categoria\n        const table = matchingTables[Math.floor(Math.random() * matchingTables.length)];\n        \n        // Esegui i tiri\n        for (let i = 0; i < numRolls; i++) {\n          await table.draw({displayChat: showPublic});\n        }\n      }\n    },\n    specific: {\n      icon: '<i class=\"fas fa-list\"></i>',\n      label: 'Tabella Specifica',\n      callback: async () => {\n        // Apri browser delle tabelle\n        const pack = game.packs.get('brancalonia-bigat.rollable-tables');\n        if (pack) {\n          pack.render(true);\n        }\n      }\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'roll'\n}).render(true);",
+  "folder": null,
+  "sort": 100011,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "utility"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000011000,
+    "modifiedTime": 1700000011000,
+    "lastModifiedBy": "brancalonia"
+  },
+  "_key": "!macros!brancalonia012"
+}

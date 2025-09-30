@@ -162,7 +162,7 @@
       "isOfficial": true
     }
   },
-  "_key": "!item!fazionibrancalonia",
+  "_key": "!tables!fazionibrancalonia",
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

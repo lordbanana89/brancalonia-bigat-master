@@ -1,6 +1,6 @@
 {
   "_id": "sjGqPpbdPjvCi2PW",
-  "_key": "!item!sjGqPpbdPjvCi2PW",
+  "_key": "!tables!sjGqPpbdPjvCi2PW",
   "name": "Cacciatore di reliquie - Tratti della Personalità",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d8",
@@ -127,5 +127,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

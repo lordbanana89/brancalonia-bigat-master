@@ -1,6 +1,6 @@
 {
   "_id": "USxxzTyEbr3pHVXq",
-  "_key": "!item!USxxzTyEbr3pHVXq",
+  "_key": "!tables!USxxzTyEbr3pHVXq",
   "name": "Prelato - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }

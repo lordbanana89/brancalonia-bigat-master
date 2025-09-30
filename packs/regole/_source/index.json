@@ -1,7 +1,7 @@
 {
   "_id": "index2865ce",
   "_key": "!journal!index2865ce",
-  "name": "Slot Mossa",
+  "name": "Regole di Brancalonia",
   "type": "journal",
   "img": "icons/svg/book.svg",
   "sort": 0,
@@ -9,6 +9,8 @@
     "default": 0
   },
   "flags": {
-    "brancalonia": {}
+    "brancalonia": {
+      "description": "62 journal entries - Regole complete per Infamia, Compagnia, Haven, Risse, Lavori Sporchi, Menagramo, Malattie, Duelli, Fazioni e Reputazione"
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
   "_id": "dsZf0wLpGp1wFYQa",
-  "_key": "!item!dsZf0wLpGp1wFYQa",
+  "_key": "!tables!dsZf0wLpGp1wFYQa",
   "name": "Duro - Ideali",
   "img": "icons/svg/d20-grey.svg",
   "formula": "1d6",
@@ -101,5 +101,5 @@
     "default": 0
   },
   "effects": [],
-  "type": "loot"
+  "type": "table"
 }
