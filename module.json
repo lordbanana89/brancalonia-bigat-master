@@ -2,7 +2,7 @@
   "id": "brancalonia-bigat",
   "title": "Brancalonia - Il Regno di Taglia",
   "description": "Modulo completo per giocare a Brancalonia nel Regno di Taglia. Include tutte le meccaniche del manuale: Infamia, Compagnia, Haven, Risse da Taverna, Lavori Sporchi, Menagramo, Oggetti Scadenti, Malattie, Hazard Ambientali, Duelli, Fazioni e Reputazione. Compatibile con D&D 5e v5.1.9+.",
-  "version": "11.2.2",
+  "version": "11.2.3",
   "compatibility": {
     "minimum": "13.0.0",
     "verified": "13.347",
@@ -82,6 +82,7 @@
     "modules/brancalonia-mechanics.js"
   ],
   "styles": [
+    "styles/brancalonia-tokens-unified.css",
     "styles/brancalonia.css",
     "styles/brancalonia-dnd5e-v5.css",
     "styles/covo-system.css"
