@@ -1,0 +1,184 @@
+body.brancalonia-bigat{
+  #interface {
+
+    #ui-middle.brancalonia-bigat {
+      height: calc((100% - var(--crlngn-taskbar-height)) / var(--ui-scale));
+    }
+
+    #hotbar.crlngn-macro{
+      --hotbar-size: 60px;
+      gap: 0;
+      margin: 0;
+      margin-bottom:0;
+      position: relative;
+
+      &.sm, &.md.offset {
+        height: calc(var(--hotbar-size)* 2);
+      }
+
+      button { 
+        border: 1px solid transparent;
+        background: transparent;
+        font-size: var(--font-size-12);
+        &:hover, &:focus {
+          border: 1px solid transparent;
+        }
+
+        &.hotbar-page-control::before {
+          transform: scaleY(0.65);
+        }
+        &.hotbar-page-control.page-prev::before {
+          transform: scaleY(-0.65);
+        }
+      }
+
+      &.compact #action-bar, &.md.offset #action-bar, &.sm #action-bar {
+        width: calc((var(--hotbar-size) * 5) - 5px);
+      }
+      
+      .hotbar-controls{
+        background: var(--control-bg-color);
+        padding: 0 3px;
+        height: 100%;
+        pointer-events: all;
+      }
+      #hotbar-controls-left{
+        border-top-left-radius: var(--crlngn-border-radius);
+        justify-content: center;
+        gap: 2px;
+      }
+      #hotbar-controls-right{
+        border-top-right-radius: var(--crlngn-border-radius);
+        > div.flexcol {
+          justify-content: center;
+          gap: 2px;
+        }
+      }
+      #hotbar-page-controls {
+        gap: 2px;
+      }
+
+      #action-bar {
+        gap: 0px;
+
+        .slot {
+          border-radius: 0;
+          border: 1px solid var(--control-bg-color);
+          margin: 0 -1px -1px 0;
+          /*background-color: var(--color-dark-bg-90);*/
+          overflow: hidden;
+          z-index: 0;
+
+          &:hover, &:focus{
+            border: 1px solid var(--color-highlights);
+            z-index: 10;
+          }
+
+          .key {
+            border-radius: 0 0 8px 0;
+          }
+        }
+      }
+
+      .slot-icon{
+        border-radius: 0;
+      }
+      
+    }
+
+
+    #hotbar{
+      margin-bottom: 16px;
+      transition: margin-bottom 0.15s ease-out 0.25s, background 0.15s ease-out 0.25s ;
+      background: transparent;
+      pointer-events: all;
+      &:after{
+        content: '';
+        width: 100%;
+        height: 20px;
+        top: -10px;
+        background: transparent;
+        position: relative;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        top: -10px;
+      }
+      > * {
+        opacity: 1;
+        transition: opacity 0.15s ease-out 0.25s;
+      }
+      .hotbar-controls{
+        pointer-events: all;
+      }
+      &:hover{
+        transition: margin-bottom 0.15s ease-out 0.35s, background 0.15s ease-out 0.15s;
+      }
+    }
+
+    #hotbar.collapsed, #hotbar.crlngn-macro.collapsed{
+      background: var(--control-bg-color);
+      margin-bottom: calc((var(--hotbar-size)* -1) + 10px);
+      border-top-left-radius: var(--crlngn-border-radius);
+      border-top-right-radius: var(--crlngn-border-radius);
+
+      > * {
+        opacity: 0;
+      }
+
+      &.sm, &.md.offset{
+        margin-bottom: calc((var(--hotbar-size)* -2) + 2px);
+        &:not(.crlngn-macro):hover{
+          margin-bottom: 16px;
+        }
+        &.crlngn-macro:hover{
+          margin-bottom: 0px;
+        }
+      }
+
+      &:hover:not(.crlngn-macro), &:focus:not(.crlngn-macro) {
+        margin-bottom: 16px;
+        background: transparent;
+
+        > * {
+          opacity: 1;
+        }
+      }
+      &.crlngn-macro:hover, &.crlngn-macro:focus {
+        margin-bottom: 0px;
+        background: transparent;
+
+        > * {
+          opacity: 1;
+        }
+      }
+    }
+
+    #hotbar-collapse-btn{
+      margin: auto 0;
+      align-self: center;
+      justify-self: center;
+      height: 3.2rem;
+      width: 1.2rem;
+    }
+
+    #hotbar #hotbar-page-controls .hotbar-page-number {
+      color: var(--control-icon-color);
+    }
+
+    #hotbar button {
+      --button-text-color: var(--control-icon-color);
+      --button-hover-text-color: var(--control-icon-color);
+
+      &:hover{
+        text-shadow: 0 0 10px var(--color-dark-bg-50);
+      }
+    }
+
+  }
+
+}

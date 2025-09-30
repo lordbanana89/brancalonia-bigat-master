@@ -1,0 +1,1328 @@
+body.brancalonia-bigat{
+  --crlngn-taskbar-height: 0px;
+
+  #quest-tracker{
+    z-index: 1;
+    h4{
+      font-family: var(--crlngn-font-titles);
+      font-size: 1.25em;
+    }
+
+    .window-content{
+      font-family: var(--crlngn-font-family);
+
+      .quest .title{
+        font-size: 1rem;
+      }
+    }
+
+  }
+
+  /* Token Action HUD */
+  #token-action-hud-app {
+    .tah-style-foundry-vtt-dark-compact{
+      --tah-button-hover-border: var(--color-highlights);
+      --tah-button-hover-box-shadow: 0 2px 0 -1px var(--color-highlights), 0 0 0 1px var(--color-highlights), 0 0 8px var(--color-highlights);
+    }
+    .tah-style-docked-right-v13 {
+      margin-top: calc(var(--control-item-size) + 10px);
+    }
+  }
+
+  /* Hurry Up */
+  &.crlngn-hurry-up {
+    #hurry-up {
+      transform: scale(0.75);
+    }
+  }
+
+  /*Filepicker+ */
+  #no-filepicker {
+    padding: 1em 0.5em;
+    width: 100%;
+    text-align: left;
+  }
+  #filepicker .standard-form .form-group{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  /* Dice Tray */
+  &.crlngn-dice-tray{
+
+    .dice-tray .flexrow{
+      margin: 0;
+    }
+    .sidebar-popout.theme-dark .dice-tray,
+    #interface.theme-dark #ui-right .dice-tray {
+      margin-top: 0;
+      button {
+        border-radius: 0;
+        box-shadow: 0 0 6px inset var(--color-secondary);
+        padding: 0px 4px;
+        background: var(--control-bg-color);
+        color: var(--color-light-1);
+        border: 1px solid var(--control-bg-color);
+
+        &:hover {
+          background: var(--color-secondary);
+          color: var(--color-warm-2);
+          border-color: var(--color-warm-2);
+          box-shadow: 0 0 6px inset var(--color-warm-2);
+        }
+        .dice-tray__flag{
+          background-color: var(--color-warm-2);
+        }
+
+        div.dice{
+          height: 80%;
+          background: var(--color-light-1);
+        }
+      }
+      input[type=text] {
+        box-shadow: 0 0 6px inset rgba(255,255,255,0.35);
+        background-color: var(--color-secondary-75);
+        border-radius: 0;
+        border: 1px solid var(--color-secondary);
+        color: inherit;
+
+        &:hover, &:focus{
+          border: 1px solid var(--color-warm-2);
+          box-shadow: 0 0 6px inset var(--color-warm-2);
+        }
+      }
+      .dice-tray .dice-tray__math__buttons {
+        margin-top: 0;
+      }
+      
+    }
+
+    .sidebar-popout:not(.theme-dark) .dice-tray,
+    #interface.theme-light .dice-tray {
+      margin-top: 0;
+
+      input[type=text] {
+        box-shadow: 0 0 6px inset rgba(255,255,255,0.35);
+        background-color: var(--color-secondary-75);
+        border-radius: 0;
+        border: 1px solid var(--color-secondary);
+        color: inherit;
+
+        &:hover, &:focus{
+            border: 1px solid var(--color-warm-2);
+            box-shadow: 0 0 6px inset var(--color-warm-2);
+        }
+      }
+      button{
+        border-radius: 0;
+        box-shadow: 0 0 6px inset var(--color-secondary-50);
+        padding: 0px 4px;
+        background: var(--color-bg-button);
+        color: var(--color-cool-5);
+        border: 1px solid var(--color-secondary);
+
+        &:hover {
+          background: var(--color-secondary);
+          color: var(--color-warm-2);
+          border-color: var(--color-warm-2);
+          box-shadow: 0 0 6px inset var(--color-warm-2);
+        }
+        .dice-tray__flag{
+          background-color: var(--color-warm-2);
+        }
+        div.dice{
+          background: var(--color-cool-5);
+        }
+      }
+    }
+    #interface.theme-light .dice-tray button div.dice {
+      background-color: var(--color-cool-5);
+    }
+
+    #chat-notifications.input-hidden .dice-tray{
+      display: none;
+    }
+
+  }
+
+  /* Rest and Recovery 5e */
+  .rest-recovery-prompt-rest-button {
+    width: 100%;
+    flex: 1 1 100%;
+    background: var(--color-secondary-25);
+    padding: 4px 0;
+    margin: 2px 0;
+    justify-content: flex-start;
+    height: var(--crlngn-avatar-size);
+    border: 0;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--default-color);
+
+    &:hover {
+      background: var(--color-dark-bg-50);
+    }
+
+    &:focus {
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+    }
+
+    i {
+      width: var(--crlngn-avatar-size);
+      flex: 0 0 var(--crlngn-avatar-size);
+      height: auto;
+      margin-right: 4px;
+    }
+  }
+
+  /* Combat Carousel */
+  &.crlngn-combat-carousel {
+    &.navigation-collapsed{
+      --crlngn-top-offset: 0px;
+    }
+    
+    /*
+    #ui-middle #combat-dock {
+      width: calc(100% - var(--current-sidebar-width) + 50px);
+      margin-left: calc(200px - var(--combatant-portrait-size));
+      min-width: max-content;
+    }*/
+
+    #ui-right #combat-dock {
+      margin-left: calc(200px - var(--combatant-portrait-size));
+      min-width: max-content;
+    }
+
+    #combat-dock {
+      margin-top: var(--crlngn-top-offset);
+      pointer-events: none;
+      z-index: 0;
+  
+      &:hover{
+        z-index: 1001;
+      }
+  
+      > #combatants, .buttons-container {
+        pointer-events: all;
+      }
+  
+      .buttons-container {
+        justify-content: flex-start;
+        gap: 1px;
+    
+        i{
+          border: none;
+          border-radius: 0; 
+        }
+        
+      }
+    }
+
+    /* CAROUSEL COMBAT TRACKER TOOLTIPS */
+    #tooltip.combat-dock-tooltip {
+      padding: 12px !important;
+    }
+    #tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+      font-family: var(--crlngn-font-family);
+      font-size: var(--font-size-12);
+    }
+    #tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper h2 {
+      font-family: var(--crlngn-font-titles);
+      font-size: var(--font-size-20);
+    }
+    #tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper h3 {
+      font-size: var(--font-size-20);
+    }
+    #tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper i {
+      font-size: var(--font-size-12);
+    }
+    #tooltip.combat-dock-tooltip{
+      padding: 0;
+      border: 0;
+      /*background: var(--color-dark-bg-90);*/
+      box-shadow: none;
+      max-width: 280px;
+      margin-top: 40px;
+      transform-origin: top center;
+    }
+    #tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+    }
+    #tooltip.combat-dock-tooltip{
+      .roll-link-group a, .roll-link a, .reference-link a {
+        background: var(--color-dark-bg-90);
+      }
+    }
+
+    #tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper > ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 14px;
+
+      > li{ 
+        min-width: calc((100% - 14px) / 2);
+        max-width: 100%;
+        flex: 1 1 calc((100% - 14px) / 2);
+        background: var(--color-dark-bg-75);
+        outline: 5px solid var(--color-dark-bg-75);
+        padding: 0;
+        margin: 0;
+        line-height: 1.35;
+        
+        &.effects-list {
+          flex-wrap: wrap;
+        }
+
+        span{
+          flex: 1 1 calc(100% - 2em);
+        }
+        span.tooltip-duration {
+          display: flex;
+          line-height: 1;
+          min-width: 100%;
+          padding-left: 1.8em;
+          margin-top: 0.5em;
+        }
+        
+      }
+    }
+    
+    #tooltip.combat-dock-tooltip .effect-description {
+      background: transparent;
+      font-size: var(--font-size-11);
+      padding: 0;
+      line-height: 1.35;
+
+      ul{
+        padding: 0;
+
+        li{
+          display: block;
+        }
+      }
+    }
+
+    #tooltip.combat-dock-tooltip a.content-link {
+      display: inline-flex;
+    }
+  }
+
+  &.crlngn-simple-timekeeping {
+    #simple-timekeeping {
+      margin-top: calc(var(--crlngn-top-offset) + 10px) !important;
+      z-index: 0;
+
+      &:hover{
+        z-index: 2;
+      }
+    }
+    #simple-timekeeping.wide-letter-spacing nav .inner-nav-wrapper span {
+      letter-spacing: 0.05rem;
+      font-weight: 500;
+      box-shadow: none;
+    }
+  }
+
+  /* TheRipper93 Youtube Player widget */
+  #ui-left #sidebar-video-player{
+    margin: 0 16px 8px 16px;
+  }
+  &.crlngn-fvtt-youtube-player{
+    #interface.crlngn-controls #sidebar-video-player{
+      margin: 0 0 8px 0;
+    }
+
+    #sidebar-video-player{
+      border-radius: 0;
+  
+      &.tyw-docked{
+        width: calc(var(--max-players-width));
+      }
+  
+    }
+    #sidebar-video-player .inner-resize-container {
+      border-radius: 0;
+      box-shadow: none;
+      border-top-right-radius: var(--crlngn-border-radius);
+      border-bottom-right-radius: var(--crlngn-border-radius);
+    }
+  }
+
+  /* TheRipper93 Dice Tray */
+  .dice-tray-container .buttons-stacked button{
+    height: 1.5em;
+    width: 2.5em;
+    min-height: 1.5em;
+    max-height: 1.5em;
+    padding: 4px;
+
+    &[data-button=count]{
+      height: 2em;
+      min-height: 2em;
+    }
+  }
+  .dice-tray-container .dice-tray-button:hover {
+    color: var(--color-text-hyperlink) !important;
+  }
+  
+
+  /* CRUX */
+
+  &.crux-taskbar-compat #crux, #crux{
+    --ft-height: var(--crlngn-margin-bottom);
+  }
+  &.crux-taskbar-compat #crux, #crux {
+    min-height: calc(100vh - var(--ft-height)) !important;
+  }
+
+  &.crlngn-crux {
+    /*
+    &.crux-taskbar-compat .crux__container, &.crlngn-crux.crux-taskbar-compat .crux__empty-tray {
+      height: calc(100vh - var(--ft-bottom)) !important;
+    }
+    #crux {
+      height: calc(100vh - var(--ft-bottom)) !important;
+    }*/
+    &.crux-taskbar-compat #crux, #crux {
+      .crux__container {
+        border-right: 1px solid rgba(0,0,0,0.75);
+        background-color: rgba(0,0,0,0.8);
+
+        h1{
+          font-family: var(--crlngn-font-titles) !important;
+          line-height: 1.15;
+        }
+      }
+
+      .crux__top-section{
+        padding: 0;
+      }
+      h2.crux__section-header{
+        font-family: var(--crlngn-font-titles) !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+
+        &:after {
+          content: "Width: " var(--crux-width) " | Ratio: " var(--crux-width-ratio) " | Multiplier: " var(--header-multiplier);
+          display: inline-block;
+        }
+      }
+      .crux__skill-header{
+        font-family: var(--crlngn-font-titles) !important;
+      }
+
+      .crux__group-header {
+        h3, h2 {
+          border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+          font-family: var(--crlngn-font-titles) !important;
+          padding-bottom: 0.25em;
+
+        }
+      }
+
+      .crux__item {
+        padding: 0 4px !important;
+      }
+      .crux__item .item-name h4 {
+        font-family: var(--crlngn-font-family) !important;
+        font-weight: 500 !important;
+      }
+      .crux__item .item-name h3,
+      .crux__group-header h3 {
+        font-family: var(--crlngn-font-family) !important;
+        font-weight: 500 !important;
+      }
+
+      .crux__utility-button,
+      .crux__action-button,
+      .crux__end-turn-button {
+        font-family: var(--crlngn-font-family) !important;
+        padding: 4px !important;
+        border: none !important;
+      }
+
+      .crux__utility-button,
+      .crux__action-button,
+      .crux__action-button img {
+        border: none !important;
+      }
+
+      .crux__actor .group-dots .dot {
+        width: 8px !important;
+        height: 8px !important;
+        margin-left: 2px !important;
+      }
+
+      .crux__item .flag {
+        margin-left: 2px !important;
+        filter: saturate(0.7) !important;
+        transform: scale(0.9) !important;
+      }
+    }
+  }
+
+  /* Taskbar */
+  #taskbar #hotbar {
+    #hotbar-collapse-btn{
+      height: 100%;
+
+      &:before {
+        transform: rotate(-90deg);
+      }
+    }
+
+    button.hotbar-page-control::before {
+      transform: scaleY(0.65);
+    }
+    button.hotbar-page-control.page-prev::before {
+      transform: scaleY(-0.65);
+    }
+  }
+  
+  #taskbar #hotbar.collapsed {
+    > *:not(#hotbar-controls-right){
+      display: none;
+    }
+
+    #hotbar-controls-right{
+      > *{ 
+        display: none; 
+      }
+
+      #hotbar-collapse-btn{
+        display: flex;
+      }
+    }
+    
+  }
+
+  /* BG3 Inspired Hotbar */
+  &.crlngn-bg3-inspired-hotbar {
+    --bg3-hotbar-drag-color: var(--color-warm-2);
+    --bg3-hotbar-drag-color-hover: var(--color-warm-1);
+
+    #bg3-hotbar-container .menu-item-content .menu-item-label i {
+      color: var(--color-warm-1);
+    }
+  }
+
+  /* DFreds Effects panel */
+  #effects-panel {
+    padding-top: var(--control-item-size);
+  }
+
+  .effect-panel .effects-panel-container .effect-item .icon.temporary {
+    background-size: 86%;
+    background-position: center;
+  }
+
+  &.theme-light #effects-panel a.content-link {
+    color: var(--color-dark-1);
+    border: 0;
+    font-weight: 600;
+  }
+  &.theme-dark #effects-panel a.content-link {
+    color: var(--color-light-1);
+    border: 0;
+    font-weight: 600;
+  }
+
+  &.crlngn-touch-vtt {
+    #touch-vtt-controls button {
+      line-height: 18px;
+      font-size: var(--font-size-10);
+      width: var(--control-item-size);
+      height: var(--control-item-size);
+      background: var(--control-bg-color);
+      border-radius: 0;
+    }
+  }
+
+  /* Breaktime */
+  #players.brancalonia-bigat {
+    .breaktime-button {
+      border-top: 0;
+      border-bottom: 0;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      text-align: left;
+
+      &:hover {
+        background: var(--color-dark-bg-50);
+        text-shadow: none;
+      }
+    }
+
+    &:hover{
+      .breaktime-button > div {
+        display: flex;
+      }
+    }
+  }
+  
+  &.crlngn-breaktime {
+    #players.brancalonia-bigat:hover{
+      .breaktime-button > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &.theme-dark #breaktime-app, &.theme-dark #breaktime-app.theme-light {
+      background: transparent;
+
+      footer {
+        margin-top: 1em;
+      }
+      .window-header {
+        background: var(--color-dark-bg-75);
+      }
+
+      .window-content {
+        background: var(--color-dark-bg-90);
+        color: var(--color-light-1);
+        padding: 1em;
+      }
+
+      .window-content * {
+        color: var(--color-light-1);
+      }
+
+      .break-start {
+        display: flex;
+        gap: 0.25em;
+
+        &:first-child {
+          display: block;
+          flex: 1 1 100%;
+        }
+
+        button {
+          width: 25px;
+          flex: 0 0 25px;
+          i{
+            margin: 0;
+          }
+        }
+      }
+
+      .breaktime-container {
+        border-top: 1px solid var(--color-dark-1);
+      }
+
+      .breaktime-player {
+        border-bottom: 1px solid var(--color-dark-1);
+        display: flex;
+        height: auto;
+        gap: 0.5em;
+      }
+
+      .breaktime-player .breaktime-avatar {
+        border-left: 5px solid var(--color-dark-1);
+
+        img{
+          border-color: transparent;
+        }
+      }
+
+      button, form button{
+        background: var(--color-bg-button);
+        color: var(--color-light-1);
+        border: 1px solid transparent;
+
+        &:hover {
+          background: var(--color-warm-2);
+        }
+      }
+
+    }
+  }
+
+  div#hurry-up {
+    margin-top: 50px;
+  }
+
+  /* MONK'S COMMON DISPLAY */
+  #common-display-toolbar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    .common-button-group .header {
+      font-size: var(--font-size-10);
+      border: 1px solid transparent;
+      background: var(--color-highlights-50);
+      color: inherit;
+    }
+    .common-button-group .content {
+      border: 1px solid transparent;
+      background: var(--color-bg-button);
+    }
+    .common-button-group .content.active {
+      background: var(--color-highlights-50);
+    }
+
+    .common-display-button {
+      border: 1px solid transparent;
+      background: transparent;
+      box-shadow: none;
+      opacity: 0.7;
+
+      &:hover{
+        color: inherit;
+      }
+      
+      &.toggle.active {
+        background-color: transparent;
+        border: 1px solid transparent;
+        box-shadow: none;
+        opacity: 1;
+
+        &:hover{
+          color: unset;
+        }
+      }
+      &.toggle{
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+        line-height: 36px;
+        padding: 2px;
+      }
+      &.small {
+        border-radius: 2px;
+        border: none;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      }
+    }
+
+    ol.context-items, li.context-group > ol {
+      justify-items: flex-start;
+    }
+
+    ol.context-items li.context-item {
+      width: 100%;
+      padding: 0 6px;
+      font-size: var(--font-size-12);
+      line-height: var(--font-size-24);
+      text-align: left;
+    }
+  }
+
+  /* MONK'S TOKEN BAR */
+  .monks-tokenbar.chat-card .card-header {
+    padding: 3px 0;
+    border-top: 1px groove var(--input-background-color);
+    border-bottom: 1px groove var(--input-background-color);
+  }
+  .monks-tokenbar.chat-card .card-header h3:hover {
+    text-shadow: none;
+  }
+  .monks-tokenbar.chat-card .sheet .items-list {
+    padding: 0;
+  }
+  .monks-tokenbar .sheet .items-list .items-header {
+    border: 1px groove var(--input-background-color);
+  }
+  .monks-tokenbar .sheet .items-list .item {
+    border-bottom: 1px groove var(--input-background-color);
+  }
+  .monks-tokenbar .sheet .items-list .items-header h3 {
+    font-family: var(--crlngn-font-titles);
+    font-size: var(--font-size-14);
+  }
+
+  .monks-tokenbar .contested-roll header .request-name {
+    &:first-child{
+      text-align: left;
+      padding-right: 1.5em;
+
+      &:after{
+        font-size: var(--font-size-14);
+      }
+    }
+    &:last-child{
+      text-align: right;
+      padding-left: 1.5em;
+    }
+  }
+
+
+  .monks-tokenbar.chat-card .card-footer {
+    border-top: none;
+    gap: 4px;
+  }
+  .monks-tokenbar.chat-card .card-header h3 {
+    font-size: var(--font-size-14);
+  }
+
+  &.theme-dark .monks-tokenbar .sheet .items-list .items-header {
+    background: var(--crlngn-chat-button-bg-15);
+  }
+
+  /* PF2e */
+  &.system-pf2e #interface #pf2e-hud-persistent #hotbar{
+    background: transparent;
+  }
+
+  &.system-pf2e #interface #pf2e-hud-persistent #hotbar:not(.crlngn-macro) {
+    #hotbar-collapse-btn {
+      display: none;
+    }
+  }
+
+  #ui-left-column-1:has(>#pf2e-hud-persistent) {
+    width: calc(var(--control-columns) * var(--crlngn-control-size) + (var(--control-columns) - 1) * 8px);
+  }
+
+  .crlngn-dark-mode{
+    --background: var(--color-dark-bg-95) !important;
+    --filigree-background-color: var(--color-dark-bg-10) !important;
+    --dnd5e-border-dotted: 1px dotted var(--color-cool-4) !important;
+    --dnd5e-color-gold: rgba(159, 146, 117, 0.4) !important;
+    --input-background-color: var(--color-cool-4) !important;
+    --chat-dark-blue: rgba(24, 32, 38, 1) !important;
+    --input-background-alt: var(--color-dark-bg-50) !important;
+    --color-text-secondary: var(--color-light-1) !important;
+    --color-text-primary: var(--color-light-1) !important;
+    --button-text-color: var(--color-light-1) !important;
+    --color-border-light-1: var(--dnd5e-color-gold) !important;
+    --color-text-dark-input: var(--color-light-1) !important;
+
+    --crlngn-button-bg: rgba(15, 15, 15, 0.15) !important;
+    --color-bg-button: rgba(32, 37, 43, 1) !important;
+    --dnd5e-border-groove: 1px solid rgba(36, 36, 36, 0.35) !important;
+    --dnd5e-color-groove: var(--dnd5e-color-gold) !important;
+    --dnd5e-sheet-bg: rgb(37, 40, 48) !important;
+    --sidebar-background: var(--control-bg-color, var(--color-cool-5-90)) !important;
+    --dnd5e-color-parchment: rgb(32, 37, 43) !important;
+    --dnd5e-background-card: rgb(32, 37, 43) !important; 
+    --dnd5e-background-parchment: rgb(32, 37, 43) !important;
+
+    --color-pf-alternate: rgba(82, 107, 120, 0.44) !important;
+    --color-text-gray-blue: rgb(168, 180, 188, 1) !important;
+    --color-text-gray-blue-b: rgb(138, 155, 168, 1) !important;
+    --chat-button-bg: rgba(32, 37, 43, 1) !important;
+    --chat-button-bg-15: rgba(32, 37, 43, 0.15) !important;
+    --chat-button-bg-25: rgba(32, 37, 43, 0.25) !important;
+    --chat-button-bg-50: rgba(32, 37, 43, 0.5) !important;
+    --chat-button-bg-75: rgba(32, 37, 43, 0.75) !important;
+    --chat-dark-blue: rgba(24, 32, 38, 1) !important;
+    --chat-dark-blue-b: rgb(29, 36, 48, 1) !important; 
+    --chat-dark-bg: rgba(32, 37, 43, 1) !important; 
+    --chat-dark-bg-15: rgba(32, 37, 43, 0.15) !important;
+    --chat-dark-bg-25: rgba(32, 37, 43, 0.25) !important;
+    --chat-dark-bg-50: rgba(32, 37, 43, 0.50) !important; 
+    --chat-dark-bg-75: rgba(32, 37, 43, 0.75) !important; 
+    --chat-dark-bg-90: rgba(32, 37, 43, 0.90) !important; 
+
+    --color-input-bg: var(--color-dark-bg-50) !important; 
+  
+    --color-button-bg: rgba(90,120,150,0.5) !important;
+    --color-input-border: rgba(90,120,150, 0.5) !important;
+    --color-border-dark-5: rgba(80, 80, 80, 1) !important;
+    --color-sidebar-font: rgba(213, 221, 230, 0.8) !important;
+
+    --color-text-dark: rgba(235,235,235,1) !important;
+    --color-text-dark-op: rgba(235,235,235,0.6) !important;
+    --color-text-light: rgba(235,235,235,1) !important;
+    --input-background-alt: var(--color-cool-5) !important;
+    --color-text-secondary:var(--color-light-3) !important;
+    --color-text-primary: var(--color-light-1) !important;
+    --color-text-dark-primary: var(--color-light-1) !important;
+
+    background: var(--color-dark-bg-90) !important;
+    color: var(--color-light-1) !important;
+
+    p, a, span, div, aside, section, label, form, button, table, td, tr, th, h1, h2, h3, h4, h5, h6, ul, ol, li, i, b, strong, u{
+      color: var(--color-light-1) !important;
+      background: transparent !important;
+      border-color: var(--color-cool-4);
+    }
+
+    .window-header, .window-content, header, footer {
+      background: var(--color-dark-bg-90) !important;
+      color: var(--color-light-1) !important;
+    }
+
+    .window-header{
+      border-bottom: 1px solid var(--color-cool-4) !important;
+    }
+
+    button{
+      color: var(--color-light-1) !important;
+      &:hover{
+        background-color: var(--color-warm-2) !important;
+      }
+    }
+
+  }
+
+  .damage-log-nav.tabs {
+    background-color: transparent;
+    gap: 0.1rem;
+    padding: 0 0.35rem;
+
+    .item{
+      width: 50%;
+      padding: 0.25rem;
+      border-radius: 0;
+      border-color: var(--color-warm-2);
+      font-family: var(--crlngn-font-family);
+      font-weight: 600;
+      font-size: var(--font-size-13);
+      min-height: 1.8rem;
+      line-height: 1.5em;
+
+      &.active {
+        box-shadow: 0 0 6px inset var(--color-secondary-75);
+      }
+    }
+  }
+
+  /* DDB Importer */
+  .ddb .table-compendium.table-generic-dice td:first-child, 
+  .ddb .table-compendium.table-generic-dice th:first-child, 
+  .ddb .table-compendium.table--generic-dice td:first-child, 
+  .ddb .table-compendium.table--generic-dice th:first-child {
+    width: 20% !important;
+    min-width: 60px !important;
+    padding: 0.15em;
+  }
+
+  /* Epic Rolls */
+  #epic-rolls-5e-get-roll-data filigree-box {
+    --filigree-background-color: transparent;
+  }
+
+
+
+  /* PF2e */
+  &.system-pf2e.crlngn-forced-dark-theme {
+    .sheet.actor {
+      background: rgba(0,0,0,0.9) !important;
+    }
+    .sheet.actor .window-content .editable > aside,
+    .sheet.actor .window-content .sidebar {
+      background: var(--color-cool-4) !important;
+    }
+    
+    .sheet.pf2e form .section-header, .sheet.pf2e form .npc-body section header {
+      background: var(--color-cool-4) !important;
+      border-bottom: 1px solid var(--color-warm-2) !important;
+      margin-top: 1.5em;
+    }
+
+    .sheet.pf2e .section-container, .sheet.pf2e .item-container {
+      line-height: 1.75;
+    }
+
+    .sheet.pf2e form section {
+      border-bottom: 1px solid var(--color-warm-2) !important;
+    }
+
+    .sheet.pf2e span.details-label {
+      margin: 0.5em 0;
+    }
+    
+    .actor.sheet.character section.window-content .crb-style aside .sidebar header {
+      margin-top: 1.5em;
+      padding: 0.5em;
+    }
+
+    .actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action, 
+    .actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike {
+      border-image:none;
+    }
+
+    .sheet.pf2e {
+      line-height: 1.6;
+    }
+    .sheet.pf2e .crb-style .details-input {
+        color: var(--color-light-3);
+        opacity: 0.7;
+    }
+    .sheet.pf2e .currency-image {
+      border: 0;
+      box-shadow: none;
+    }
+
+    .app aside {
+      z-index: 10;
+    }
+  }
+
+
+
+  /* DAGGERHEART */
+  &.system-daggerheart.crlngn-sheets {
+    .application.daggerheart.dh-style.dialog .window-content .dialog-header h1,
+    .dh-style fieldset legend,
+    .dh-style input[type='checkbox']:checked::after, .dh-style input[type='radio']:checked::after {
+      color: var(--color-warm-2);
+    }
+
+    .daggerheart.dh-style.dialog.character-creation .tab-navigation nav a {
+      --text-color: var(--color-text-hyperlink);
+      color: var(--text-color);
+    }
+
+    .application .component.dh-style.card-preview-container .preview-selected-container .preview-text-container  {
+      color: var(--color-dark-1);
+    }
+    .daggerheart.dh-style.dialog.character-creation .tab-navigation nav a[disabled] {
+      opacity: 0.65;
+    }
+    .chat-message .message-header time.message-timestamp {
+      font-size: 0.8em;
+      font-weight: 600;
+    }
+    .daggerheart.dh-style.dialog.character-creation .main-selections-container .selections-container .ancestry-preview-info-container .ancestry-preview-features .ancestry-preview-feature {
+      border-color: var(--color-warm-2);
+    }
+
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .status-section .status-bar .status-label h4:hover,
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .status-section .status-number .status-label h4:hover {
+      opacity: 0.8;
+    }
+
+    .daggerheart.dh-style.dialog.character-creation .main-selections-container .selections-container .card-preview-container,
+    .application.sheet.daggerheart.actor.dh-style.character .character-header-sheet .name-row .level-div .level-button,
+    .application .component.dh-style.card-preview-container .preview-selected-container {
+      color: var(--color-light-1);
+      border-radius: 10px;
+    }
+    .application.sheet.daggerheart.actor.dh-style.character .character-header-sheet .name-row .level-div .level-button {
+      box-shadow: 0 0 6px var(--color-warm-2);
+      border-color: var(--color-warm-2);
+    }
+
+    .daggerheart.chat.action .action-move .action-section {
+      border-bottom: 1px solid var(--color-warm-2);
+    }
+
+
+    .application.daggerheart.dh-style.dialog .window-content .dialog-header h1 {
+      margin-top: 0.5rem;
+    }
+
+    .dh-style input[type='checkbox']::before, .dh-style input[type='radio']::before{
+      color: light-dark(var(--color-dark-bg-50), var(--color-highlights-25));
+    }
+    .daggerheart.dh-style .tab-navigation .navigation-container .navigation-inner-container .feature-tab a {
+      color: var(--color-warm-1);
+    }
+
+    .application.setting.dh-style .form-group label {
+      padding: 0 6px 0 0;
+    }
+
+    .application.setting.dh-style .form-group label,
+    .dh-style select input,
+    .dh-style select,
+    .dh-style select option {
+      font-family: var(--crlngn-font-family);
+      font-size: var(--font-size-14);
+    }
+    .dh-style select, 
+    .dh-style input[type='text'], .dh-style input[type='number'], .dh-style textarea {
+      border: 1px solid light-dark(var(--color-light-1), var(--color-dark-1));
+      background: var(--input-background-color);
+      color: light-dark(var(--color-dark-1), var(--color-light-1));
+    }
+    .application.sheet.daggerheart.actor.dh-style.character .character-header-sheet .name-row input[type='text']:hover,
+    .application.sheet.daggerheart.actor.dh-style.character .character-header-sheet .name-row input[type='text']:focus,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-header-sheet .name-row input[type='text']:hover,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-header-sheet .name-row input[type='text']:focus,
+    .application.sheet.daggerheart.actor.dh-style input:hover,
+    .application.sheet.daggerheart.actor.dh-style input:focus {
+      outline: 1px solid var(--color-warm-2);
+    }
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .resources-section .status-bar .status-value input[type='number'].bar-input,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .info-section .resources-section .status-bar .status-value input[type='number'].bar-input {
+      color: var(--color-light-1);
+      border-color: transparent;
+    }
+
+    .daggerheart.dh-style.views.downtime .downtime-container .activities-container .activity-container .activity-inner-container .activity-marker {
+      color: light-dark(var(--color-dark-1), var(--color-light-1));
+    }
+
+    .application.setting.dh-style .form-group {
+      margin: 0.5rem 0;
+    }
+
+    .dh-style a:hover, .dh-style a.active {
+      color: light-dark(var(--color-warm-3), var(--color-warm-2));
+      text-shadow: 0 0 4px var(--color-secondary);
+    }
+    .theme-light .application.daggerheart.dh-style.dialog .tab.details .traits-inner-container .trait-container div {
+      text-shadow: 0 0 4px var(--color-secondary);
+    }
+
+    .dh-style line-div,
+    .dh-style side-line-div {
+      border-bottom: 1px solid var(--color-warm-2);
+    }
+
+    /* DAGGERHEART SHEETS */
+    .application.sheet.dh-style {
+      font-family: var(--crlngn-font-family);
+      border: 1px solid var(--color-warm-2);
+    }
+    .application.daggerheart.dh-style.dialog .tab.details .traits-inner-container .trait-container div,
+    .application.daggerheart.dialog.dh-style.views.roll-selection .roll-dialog-container .modifier-container .advantage-chip .label, 
+    .application.daggerheart.dialog.dh-style.views.roll-selection .roll-dialog-container .modifier-container .disadvantage-chip .label,
+    .application.sheet.daggerheart.dh-style .input span {
+      font-family: var(--crlngn-font-family);
+    }
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .resources-section .status-bar .progress-bar,
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .status-section .status-number .status-value,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .info-section .resources-section .status-bar .progress-bar,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .info-section .status-section .status-number .status-value,
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .status-section .status-bar.armor-slots .status-value,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .threshold-section,
+    .application.sheet.daggerheart.actor.dh-style .character-header-sheet .character-row .hope-section, 
+    .application.sheet.daggerheart.actor.dh-style .character-header-sheet .character-row .domains-section{
+      border: 1px solid var(--color-warm-2);
+    }
+    .application.sheet.dh-style .character-sidebar-sheet,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet,
+    .application.sheet.daggerheart.dh-style .item-sheet-header .profile {
+      border-right: 1px solid var(--color-warm-2);
+    }
+    .application.sheet.dh-style .character-sidebar-sheet .portrait,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .portrait,
+    .application.sheet.daggerheart.dh-style .item-sheet-header .profile {
+      border-bottom: 1px solid var(--color-warm-2);
+    }
+    .application.sheet.daggerheart.actor.dh-style .tab.loadout .search-section .btn-toggle-view {
+      background: var(--color-warm-2);
+    }
+    .application.sheet.daggerheart.actor.dh-style .tab.loadout .search-section .btn-toggle-view span {
+      color: var(--color-light-1);
+    }
+    .application.sheet.daggerheart.actor.dh-style .tab.loadout .search-section .btn-toggle-view span.grid-active {
+      background-color: var(--color-dark-1);
+    }
+
+
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .threshold-section,
+    .application.sheet.daggerheart.actor.dh-style.character .tab.loadout .search-section .btn-toggle-view {
+      border: 1px solid var(--color-warm-2);
+    }
+
+    .application.sheet.daggerheart.actor.dh-style .character-header-sheet .character-row .downtime-section button,
+    .dh-style button {
+      background: var(--color-warm-2);
+      color: light-dark(var(--color-light-1), var(--color-dark-1));
+      font-weight: 600;
+    }
+    .application.sheet.daggerheart.actor.dh-style .character-header-sheet .character-row .downtime-section button:hover,
+    .dh-style button:hover {
+      background: var(--color-warm-3);
+      color: var(--color-light-1);
+    }
+    .dh-style .window-header button{
+      background: transparent;
+      color: light-dark(var(--color-dark-1), var(--color-light-1));
+      border-color: transparent;
+    }
+
+    .application.sheet.daggerheart.actor.dh-style .character-header-sheet .character-row .hope-section, 
+    .application.sheet.daggerheart.actor.dh-style .character-header-sheet .character-row .domains-section,
+    .application.sheet.daggerheart.actor.dh-style .character-header-sheet .character-traits .trait .trait-name,
+    .application.sheet.daggerheart.actor.dh-style .character-header-sheet .character-details {
+      color: light-dark(var(--color-warm-3), var(--color-warm-2));
+    }
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .info-section .resources-section .status-bar .status-label,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .info-section .status-section .status-number .status-label,
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .status-section .status-bar.armor-slots .status-label,
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .resources-section .status-bar .status-label,
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .status-section .status-number .status-label {
+      background-color: var(--color-warm-2);
+    }
+
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .threshold-section h4,
+    .application.sheet.dh-style .character-sidebar-sheet .info-section .threshold-section h4,
+    .application.sheet.daggerheart.actor.dh-style.character .character-header-sheet .character-row .hope-section h4, 
+    .application.sheet.daggerheart.actor.dh-style.character .character-header-sheet .character-row .domains-section h4 {
+      color: light-dark(var(--color-warm-3), var(--color-warm-2));
+    }
+
+    
+    .themed.theme-dark .application.daggerheart.sheet.dh-style .character-header-sheet .trait, 
+    .themed.theme-dark.application.daggerheart.sheet.dh-style .character-header-sheet .trait, 
+    &.theme-dark .application.daggerheart .character-header-sheet .trait, 
+    &.theme-dark.application.daggerheart .character-header-sheet .trait,
+    .application.daggerheart.dh-style.dialog .tab.details .traits-inner-container .trait-container,
+    .themed.theme-dark .application.daggerheart.sheet.dh-style .character-sidebar-sheet .experience-value, 
+    .themed.theme-dark.application.daggerheart.sheet.dh-style .character-sidebar-sheet .experience-value, 
+    &.theme-dark .application.daggerheart .character-sidebar-sheet .experience-value, 
+    &.theme-dark.application.daggerheart .character-sidebar-sheet .experience-value {
+      position: relative;
+      z-index: 0;
+    }
+
+    .themed.theme-dark .application.daggerheart.sheet.dh-style .character-header-sheet .trait:before, 
+    .themed.theme-dark.application.daggerheart.sheet.dh-style .character-header-sheet .trait:before, 
+    &.theme-dark .application.daggerheart .character-header-sheet .trait:before, 
+    &.theme-dark.application.daggerheart .character-header-sheet .trait:before,
+    .application.daggerheart.dh-style.dialog .tab.details .traits-inner-container .trait-container:before,
+    .themed.theme-dark .application.daggerheart.sheet.dh-style .character-sidebar-sheet .experience-value:before, 
+    .themed.theme-dark.application.daggerheart.sheet.dh-style .character-sidebar-sheet .experience-value:before, 
+    &.theme-dark .application.daggerheart .character-sidebar-sheet .experience-value:before, 
+    &.theme-dark.application.daggerheart .character-sidebar-sheet .experience-value:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: grayscale(1) brightness(1);
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    
+
+    .application.daggerheart.dh-style.dialog .tab.details .traits-inner-container .trait-container input {
+      background: transparent;
+      border: 1px solid transparent;
+    }
+
+    .themed.theme-dark .application.daggerheart.sheet.dh-style, 
+    .themed.theme-dark.application.daggerheart.sheet.dh-style, 
+    &.theme-dark .application.daggerheart, 
+    &.theme-dark.application.daggerheart {
+      background: light-dark(rgba(228,220,220,0.65), rgba(28, 28, 32, 0.65));
+    }
+
+    .application.sheet.dh-style .character-sidebar-sheet .equipment-section .title, 
+    .application.sheet.dh-style .character-sidebar-sheet .loadout-section .title, 
+    .application.sheet.dh-style .character-sidebar-sheet .experience-section .title {
+      margin-bottom: 1rem;
+    }
+
+    .application.daggerheart.dh-style .inventory-item .inventory-item-header .item-label .item-tags .label, 
+    .application.daggerheart.dh-style .inventory-item .inventory-item-header .item-label .item-labels .label {
+      gap: 0;
+    }
+
+    .dh-style fieldset.glassy legend {
+      background-color: var(--color-warm-2);
+      color: light-dark(var(--color-light-1), var(--color-dark-1));
+      font-weight: 600;
+    }
+
+    .application.daggerheart.dh-style .inventory-item .inventory-item-header .item-label{
+      line-height: 1.4;
+    }
+    .application.daggerheart.dh-style .inventory-item .inventory-item-header .item-label .item-name{
+      margin-bottom: 0.2em;
+      line-height: 1.25;
+    }
+
+    .application.daggerheart.dh-style .inventory-item .inventory-item-header .item-label .item-tags .tag, 
+    .application.daggerheart.dh-style .inventory-item .inventory-item-header .item-label .item-labels .tag,
+    .application.sheet.daggerheart.actor.dh-style.adversary .adversary-header-sheet .tags .tag {
+      background-color: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.15));
+      border: 1px solid transparent;
+      padding: 1px 5px;
+    }
+
+    .application.daggerheart.dh-style .inventory-item .inventory-item-header .item-label,
+    .daggerheart.dh-style .tab-navigation .navigation-container .navigation-inner-container .feature-tab a,
+    .dh-style fieldset legend {
+      font-family: var(--crlngn-font-family);
+    }
+
+    .application.sheet.dh-style .character-sidebar-sheet .info-section {
+      gap: 16px;
+    }
+
+    .application.sheet.daggerheart.actor.dh-style.character .character-header-sheet .name-row .level-div .label {
+      font-size: var(--font-size-22);
+      margin-left: 16px;
+    }
+
+    .application.daggerheart.dialog.dh-style.views.roll-selection .roll-dialog-container .experience-container .experience-chip {
+      background-color: var(--color-highlights-50);
+      color: light-dark(var(--color-dark-1), var(--color-light-1));
+    }
+
+    .dh-style .controls-dropdown button.control {
+      background: transparent;
+      padding: 6px 10px;
+      height: auto;
+      border: 0;
+      color: light-dark(var(--color-dark-1), var(--color-light-1));
+    }
+
+    .application.sheet.dh-style .character-sidebar-sheet .equipment-section .title h3, 
+    .application.sheet.dh-style .character-sidebar-sheet .loadout-section .title h3, 
+    .application.sheet.dh-style .character-sidebar-sheet .experience-section .title h3 {
+      font-size: 18px;
+    }
+
+    .application.daggerheart.dh-style .inventory-item:not(.single-img):hover:has(.inventory-item-content.extensible) .inventory-item-header, 
+    .application.daggerheart.dh-style .inventory-item:not(.single-img):hover:has(.inventory-item-content.extensible) .inventory-item-content {
+      background-color: var(--color-highlights-25);
+    }
+
+  }
+
+  &.system-daggerheart.crlngn-chat {
+    /*
+    .daggerheart.chat-sidebar .chat-log .chat-message .message-header .message-header-main .message-sub-header-container h4, 
+    #chat-notifications .chat-log .chat-message .message-header .message-header-main .message-sub-header-container h4,
+    .daggerheart .chat-message, #chat-notifications .chat-message,
+    .daggerheart.chat.action .action-move .action-section .action-header .title,
+    .daggerheart .chat-message .message-content a[href],
+    &.crlngn-chat #interface.theme-dark .chat-message div.roll-part-content:not(.target-dc-result):not(.result):not(.target-dc) span:not(.tag),
+    &.crlngn-chat #interface.theme-light .chat-message div.roll-part-content:not(.target-dc-result):not(.result):not(.target-dc) span:not(.tag) {
+      --text-color: var(--color-warm-1);
+      color: var(--text-color);
+      
+    }
+    */
+
+    .daggerheart .chat-message .chat-roll .roll-part-header span, #chat-notifications .chat-message .chat-roll .roll-part-header span,
+    .chat-message .message-content {
+      font-family: var(--crlngn-font-family);
+    }
+
+    .daggerheart .chat-message .roll-formula, #chat-notifications .chat-message .roll-formula {
+      background: light-dark(rgba(255,255,255,0.15), rgba(0,0,0,0.3));
+    }
+
+    .chat-message .message-content button {
+      background: light-dark(rgba(255,255,255,0.15), rgba(0,0,0,0.5));
+      color: light-dark(var(--color-dark-1), var(--color-light-1));
+      font-weight: 600;
+    }
+
+    .daggerheart.chat-sidebar .chat-log .chat-message .message-header .message-header-main .message-sub-header-container h4, 
+    #chat-notifications .chat-log .chat-message .message-header .message-header-main .message-sub-header-container h4 {
+      color: var(--color-warm-1);
+    }
+
+    .chat-message h1,
+    .chat-message h2,
+    .chat-message h3 {
+      color: inherit
+    }
+    .daggerheart .chat-message .message-content .chat-roll .roll-part-content .roll-result-container,
+    .daggerheart .chat-message .message-content .chat-roll .roll-part-content .roll-result-container span, 
+    #chat-notifications .chat-message .message-content .chat-roll .roll-part-content .roll-result-container, 
+    #chat-notifications .chat-message .message-content .chat-roll .roll-part-content .roll-result-container span {
+      font-family: var(--crlngn-font-titles);
+    }
+  }
+  
+}

@@ -6,11 +6,11 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Quando ottieni un colpo critico con un attacco in mischia, puoi tirare un dado danno addizionale dell'arma e aggiungerlo al danno extra del critico.</p>",
+      "value": "<p><strong>Critico Brutale (9° livello)</strong></p><p>Quando ottieni un colpo critico con un attacco in mischia con arma, puoi tirare un dado danno addizionale dell'arma e aggiungerlo al danno extra del critico.</p><p>Questo dado aumenta a due dadi al 13° livello e tre dadi al 17° livello.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.49",
     "activation": {
       "type": "",
       "cost": null,
@@ -57,7 +57,38 @@
       "charged": false
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "criticobrutale001",
+      "name": "Critico Brutale",
+      "icon": "icons/skills/melee/strike-sword-steel-yellow.webp",
+      "changes": [
+        {
+          "key": "flags.dnd5e.meleeCriticalDamageDice",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>Aggiungi 1 dado danno extra ai colpi critici in mischia.</p>",
+      "origin": null,
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": "#ffffff",
+      "_key": "!items.effects!5c4be4511e2d33e1.criticobrutale001"
+    }
+  ],
   "folder": null,
   "sort": 0,
   "ownership": {

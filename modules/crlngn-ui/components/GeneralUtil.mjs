@@ -58,7 +58,7 @@ export class GeneralUtil {
         if (sheet.ownerNode) {
           const href = sheet.href || '';
           const isFoundryCore = href.includes('css/') || href.includes('styles/');
-          const isCrlngnUI = href.includes('modules/crlngn-ui/');
+          const isCrlngnUI = href.includes('modules/brancalonia-bigat/');
           const isSystem = href.includes('systems/');
           
           if (href && !isFoundryCore && !isCrlngnUI && !isSystem) {
@@ -230,29 +230,29 @@ export class GeneralUtil {
    * @param {string} varValue 
    */
   static addCSSVars(varName, varValue) {
-    let bodyStyle = document.querySelector('#crlngn-ui-vars');
+    let bodyStyle = document.querySelector('#brancalonia-bigat-vars');
     
     if (!bodyStyle) {
-      const body = document.querySelector('body.crlngn-ui');
+      const body = document.querySelector('body.brancalonia-bigat');
       if(!body){return}
       bodyStyle = document.createElement('style');
-      bodyStyle.id = 'crlngn-ui-vars';
-      bodyStyle.textContent = 'body.crlngn-ui {\n}\n';
+      bodyStyle.id = 'brancalonia-bigat-vars';
+      bodyStyle.textContent = 'body.brancalonia-bigat {\n}\n';
       body.prepend(bodyStyle);
     }
     
     let cssText = bodyStyle.textContent;
     
-    let ruleStart = cssText.indexOf('body.crlngn-ui {');
+    let ruleStart = cssText.indexOf('body.brancalonia-bigat {');
     let ruleEnd = cssText.indexOf('}', ruleStart);
     
     if (ruleStart === -1) {
-      cssText = 'body.crlngn-ui {\n}\n';
+      cssText = 'body.brancalonia-bigat {\n}\n';
       ruleStart = 0;
       ruleEnd = cssText.indexOf('}');
     }
     
-    const rulePart = cssText.substring(ruleStart + 'body.crlngn-ui {'.length, ruleEnd);
+    const rulePart = cssText.substring(ruleStart + 'body.brancalonia-bigat {'.length, ruleEnd);
     
     const declarations = rulePart.split(';')
       .map(decl => decl.trim())
@@ -284,7 +284,7 @@ export class GeneralUtil {
     
     const newCss = 
       cssText.substring(0, ruleStart) + 
-      'body.crlngn-ui {\n' + 
+      'body.brancalonia-bigat {\n' + 
       newRuleContent + 
       '\n}' + 
       cssText.substring(ruleEnd + 1);
@@ -295,10 +295,10 @@ export class GeneralUtil {
   /**
    * Adds custom CSS to a style element
    * @param {string} content - CSS content to add
-   * @param {string} [id='crlngn-ui-custom-css'] - ID for the style element
+   * @param {string} [id='brancalonia-bigat-custom-css'] - ID for the style element
    * @param {boolean} [checkForDuplicates=true] - Whether to check for duplicate rules
    */
-  static addCustomCSS(content, id = 'crlngn-ui-custom-css', checkForDuplicates = true) {
+  static addCustomCSS(content, id = 'brancalonia-bigat-custom-css', checkForDuplicates = true) {
     if (!content) {
       return;
     }

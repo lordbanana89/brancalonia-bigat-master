@@ -1,7 +1,7 @@
 /**
  * Brancalonia Settings System - Main Entry Point
  *
- * Adapted from Carolingian UI (https://github.com/crlngn/crlngn-ui)
+ * Adapted from Carolingian UI (https://github.com/crlngn/brancalonia-bigat)
  * Copyright (c) 2024 Carolingian - MIT License
  * Modified for Brancalonia 2025
  */

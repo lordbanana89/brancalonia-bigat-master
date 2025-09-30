@@ -39,7 +39,7 @@
     ]
   },
   "esmodules": [
-    "modules/crlngn-ui/components/Main.mjs",
+    "modules/crlngn-ui/module.mjs",
     "modules/brancalonia-compatibility-fix.js",
     "modules/brancalonia-init-wrapper.js",
     "core/BrancaloniaCore.js",
@@ -93,7 +93,8 @@
     "styles/covo-system.css"
   ],
   "templates": [
-    "templates/"
+    "templates/",
+    "modules/crlngn-ui/templates/"
   ],
   "languages": [
     {

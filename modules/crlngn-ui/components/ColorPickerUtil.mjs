@@ -28,7 +28,7 @@ export class ColorPickerDialog extends HandlebarsApplicationMixin(ApplicationV2)
 
   static PARTS = {
     form: {
-      template: "modules/crlngn-ui/templates/color-picker-dialog.hbs"
+      template: "modules/brancalonia-bigat/templates/color-picker-dialog.hbs"
     },
     footer: {
       template: "templates/generic/form-footer.hbs",
@@ -775,55 +775,55 @@ export class ColorPickerUtil {
     const secondaryVarsDark = this.generateColorVariations(secondaryForDark, 'secondary', 'dark');
     const secondaryVarsLight = this.generateColorVariations(secondaryForLight, 'secondary', 'light');
     
-    let cssText = 'body.crlngn-ui, body.crlngn-ui.game .app {\n';
+    let cssText = 'body.brancalonia-bigat, body.brancalonia-bigat.game .app {\n';
     for (const [varName, value] of Object.entries(accentVars)) {
       cssText += `  ${varName}: ${value};\n`;
     }
     cssText += '}\n';
     
     cssText += `
-      body.crlngn-ui.theme-dark,
-      body.crlngn-ui.theme-dark .app,
-      body.crlngn-ui.theme-dark .application:not(.sheet),
-      body.crlngn-ui #interface.theme-dark,
-      body.crlngn-ui .application.theme-dark,
-      body.crlngn-ui #interface.theme-dark,
-      body.crlngn-ui .sidebar-popout.theme-dark,
-      body.crlngn-ui .themed.theme-dark .ui-control, 
-      body.crlngn-ui .themed.theme-dark .placeable-hud, 
-      body.crlngn-ui .themed.theme-dark #measurement .waypoint-label,
-      body.crlngn-ui .themed.theme-dark #players,
-      body.crlngn-ui #tooltip.theme-dark {
+      body.brancalonia-bigat.theme-dark,
+      body.brancalonia-bigat.theme-dark .app,
+      body.brancalonia-bigat.theme-dark .application:not(.sheet),
+      body.brancalonia-bigat #interface.theme-dark,
+      body.brancalonia-bigat .application.theme-dark,
+      body.brancalonia-bigat #interface.theme-dark,
+      body.brancalonia-bigat .sidebar-popout.theme-dark,
+      body.brancalonia-bigat .themed.theme-dark .ui-control, 
+      body.brancalonia-bigat .themed.theme-dark .placeable-hud, 
+      body.brancalonia-bigat .themed.theme-dark #measurement .waypoint-label,
+      body.brancalonia-bigat .themed.theme-dark #players,
+      body.brancalonia-bigat #tooltip.theme-dark {
         ${Object.entries(secondaryVarsDark).map(([k, v]) => `${k}: ${v};`).join('\n    ')}
       }
       
-      body.crlngn-ui.theme-light,
-      body.crlngn-ui.theme-light .app,
-      body.crlngn-ui.theme-light .application:not(.sheet),
-      body.crlngn-ui #interface.theme-light,
-      body.crlngn-ui .application.theme-light,
-      body.crlngn-ui #interface.theme-light,
-      body.crlngn-ui .sidebar-popout.theme-light,
-      body.crlngn-ui .themed.theme-light .ui-control, 
-      body.crlngn-ui .themed.theme-light .placeable-hud, 
-      body.crlngn-ui .themed.theme-light #measurement .waypoint-label,
-      body.crlngn-ui .themed.theme-light #players,
-      body.crlngn-ui #tooltip.theme-light  {
+      body.brancalonia-bigat.theme-light,
+      body.brancalonia-bigat.theme-light .app,
+      body.brancalonia-bigat.theme-light .application:not(.sheet),
+      body.brancalonia-bigat #interface.theme-light,
+      body.brancalonia-bigat .application.theme-light,
+      body.brancalonia-bigat #interface.theme-light,
+      body.brancalonia-bigat .sidebar-popout.theme-light,
+      body.brancalonia-bigat .themed.theme-light .ui-control, 
+      body.brancalonia-bigat .themed.theme-light .placeable-hud, 
+      body.brancalonia-bigat .themed.theme-light #measurement .waypoint-label,
+      body.brancalonia-bigat .themed.theme-light #players,
+      body.brancalonia-bigat #tooltip.theme-light  {
         ${Object.entries(secondaryVarsLight).map(([k, v]) => `${k}: ${v};`).join('\n    ')}
       }
     `;
     if (applySecondaryToBg) {
       cssText += `
-        body.crlngn-ui {
+        body.brancalonia-bigat {
           --tools-visible-opacity: 0.75;
         }
-        body.crlngn-ui .application.sheet.journal-sheet:not(.dnd5e2-journal),
-        body.crlngn-ui .application.sheet.journal-sheet:not(.dnd5e2-journal) * {
+        body.brancalonia-bigat .application.sheet.journal-sheet:not(.dnd5e2-journal),
+        body.brancalonia-bigat .application.sheet.journal-sheet:not(.dnd5e2-journal) * {
           --color-light-1: light-dark(var(--color-dark-1), var(--color-light-1));
           --input-text-color: light-dark(var(--color-dark-1), var(--color-light-1));
         }
-        body.crlngn-ui.theme-dark input[type=checkbox], 
-        body.crlngn-ui.theme-dark input[type=radio]{
+        body.brancalonia-bigat.theme-dark input[type=checkbox], 
+        body.brancalonia-bigat.theme-dark input[type=radio]{
           --checkbox-background-color: light-dark(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.2));
         } 
       `;

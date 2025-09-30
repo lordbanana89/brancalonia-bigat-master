@@ -1,6 +1,6 @@
 export const MODULE_ID = "brancalonia-bigat";
 export const MODULE_TITLE = "Carolingian UI";
-export const MODULE_SHORT = "crlngn-ui";
+export const MODULE_SHORT = "brancalonia-bigat";
 export const DEBUG_TAG = [
   `%cCarolingian UI`,
   `color:rgb(107, 72, 149); font-weight: bold;`,

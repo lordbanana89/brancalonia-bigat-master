@@ -525,8 +525,8 @@ export class SettingsUtil {
     const SETTINGS = getSettings();
     const navEnabled = SettingsUtil.get(SETTINGS.sceneNavEnabled.tag);
     const controls = document.querySelector("#ui-left");
-    const body = document.querySelector('body.crlngn-ui');
-    const bodyStyleElem = document.querySelector('#crlngn-ui-vars');
+    const body = document.querySelector('body.brancalonia-bigat');
+    const bodyStyleElem = document.querySelector('#brancalonia-bigat-vars');
 
     LogUtil.log("applyLeftControlsSettings", [tag]);
 
@@ -643,7 +643,7 @@ export class SettingsUtil {
       customFonts[fieldName] = SettingsUtil.get(SETTINGS[fieldName].tag);
     });
 
-    const body = document.querySelector("body.crlngn-ui");
+    const body = document.querySelector("body.brancalonia-bigat");
     switch(tag){
       case SETTINGS.uiFontBody.tag:
         GeneralUtil.addCSSVars('--crlngn-font-family', value || customFonts.uiFontBody || '');

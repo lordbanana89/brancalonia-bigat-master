@@ -448,23 +448,29 @@ done
 - **equipaggiamento**: 234 → 258 items (+24 background equipment)
 - **macro**: 16 → 22 items (struttura directory corretta + _key format)
 - **rollable-tables**: 82 items (type e _key corretti)
+- **brancalonia-features**: 357 → 491 items (+134 class features)
 - **Directory rimosse**: 10 totali (5 placeholder + 4 legacy + 1 merged)
 - **Spazio liberato**: 296 KB
 - **Module alignment**: 100% verificato (tutti i riferimenti validi)
-- **Items corretti**: 104 totali (82 tables + 22 macros)
+- **Items corretti/creati**: 397 totali (82 tables + 22 macros + 157 UUID + 134 features + 2 doc)
 
 ### 📋 Changelog
 
-#### v11.2.3 - Pack Structure Cleanup & Metadata Fixes (Settembre 2025)
+#### v11.2.3 - Pack Structure Cleanup & Complete Class Features (Settembre 2025)
 ##### 🔧 Correzioni Strutturali Complete
 - **Macro pack fixed**: Corretta anomalia directory nested (16→22 items) + _key format
 - **Equipment consolidation**: Merge completo background items (234→258 items)
 - **RollTable metadata**: Corretti tutti gli 82 items (type='loot'→'table', _key format)
 - **Macro metadata**: Corretti tutti i 22 items (_key format '!macros!{id}')
+- **Module name fix**: Corretti 157 UUID references (brancalonia→brancalonia-bigat)
+- **Class features CREATI**: 134 nuove feature per tutte le 11 classi D&D 5e
+  - Barbaro (1), Bardo (15), Chierico (11), Druido (12)
+  - Guerriero (11), Ladro (12), Monaco (23), Paladino (16)
+  - Ranger (12), Stregone (8), Warlock (13)
 - **Legacy cleanup**: Rimosse 10 directory obsolete/vuote (296 KB liberati)
-- **Module alignment**: Verificati tutti i riferimenti ai pack nei moduli
+- **Module alignment**: 100% - tutti i riferimenti ItemGrant ora validi
 - **Documentation**: Aggiornati README e tutti gli index.json con conteggi corretti
-- **Total fixes**: 104 items corretti (82 tables + 22 macros)
+- **Total fixes**: 397 items (82 tables + 22 macros + 157 UUID + 134 features + 2 doc)
 
 #### v4.5.0 - Compendium Editor Integrato (Dicembre 2025)
 ##### 🎯 Sistema Completo per Modificare Compendi in Foundry v13

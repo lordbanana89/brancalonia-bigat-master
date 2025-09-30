@@ -123,7 +123,7 @@ export class ModuleCompatUtil {
       GeneralUtil.addCSSVars('--crlngn-taskbar-height', '10px');
     }
 
-    GeneralUtil.addCustomCSS(`body.crlngn-ui #ui-right {height: calc((100% - var(--crlngn-margin-bottom)) / var(--ui-scale));}`);
+    GeneralUtil.addCustomCSS(`body.brancalonia-bigat #ui-right {height: calc((100% - var(--crlngn-margin-bottom)) / var(--ui-scale));}`);
 
     const ftMoveStyle = document.querySelector("#ft-move-players-macro");
     if(ftMoveStyle){ftMoveStyle.innerHTML = '';}
