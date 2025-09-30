@@ -61,6 +61,27 @@ body.theme-brancalonia-parchment {
   --bcl-spacing-md: 1rem;
   --bcl-spacing-lg: 1.5rem;
   --bcl-spacing-xl: 2rem;
+
+  /* ============================================
+     CAROLINGIAN UI INTEGRATION
+     Override variabili crlngn-ui per integrazione completa
+     ============================================ */
+
+  /* Carolingian generic colors → Brancalonia Parchment */
+  --color-warm-2: var(--bcl-sepia);
+  --color-warm-3: var(--bcl-sepia-hover);
+  --color-highlights: var(--bcl-sepia);
+  --color-highlights-75: var(--bcl-sepia-hover);
+  --color-light-1: var(--bcl-parchment);
+  --color-dark-1: var(--bcl-ink);
+
+  /* DnD5e system colors → Brancalonia Parchment */
+  --dnd5e-color-gold: var(--bcl-sepia);
+  --dnd5e-color-parchment: var(--bcl-parchment);
+  --dnd5e-sheet-bg: var(--bcl-paper);
+  --dnd5e-tabs-bg: var(--bcl-paper-weak);
+  --dnd5e-border-gold: 2px solid var(--bcl-sepia);
+  --dnd5e-color-groove: var(--bcl-border-strong);
 }
 
 /* Background patterns for Parchment theme */

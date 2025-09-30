@@ -61,6 +61,27 @@ body.theme-brancalonia-dark {
   --bcl-spacing-md: 1rem;
   --bcl-spacing-lg: 1.5rem;
   --bcl-spacing-xl: 2rem;
+
+  /* ============================================
+     CAROLINGIAN UI INTEGRATION
+     Override variabili crlngn-ui per integrazione completa
+     ============================================ */
+
+  /* Carolingian generic colors → Brancalonia Dark */
+  --color-warm-2: var(--bcl-copper);
+  --color-warm-3: var(--bcl-copper-hover);
+  --color-highlights: var(--bcl-copper);
+  --color-highlights-75: var(--bcl-copper-hover);
+  --color-light-1: var(--bcl-parchment);
+  --color-dark-1: var(--bcl-ink);
+
+  /* DnD5e system colors → Brancalonia Dark */
+  --dnd5e-color-gold: var(--bcl-copper);
+  --dnd5e-color-parchment: var(--bcl-parchment);
+  --dnd5e-sheet-bg: var(--bcl-paper);
+  --dnd5e-tabs-bg: var(--bcl-paper-weak);
+  --dnd5e-border-gold: 2px solid var(--bcl-copper);
+  --dnd5e-color-groove: var(--bcl-border-strong);
 }
 
 /* Background patterns for Dark theme */
