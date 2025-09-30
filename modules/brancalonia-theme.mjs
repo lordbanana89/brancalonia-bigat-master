@@ -7,9 +7,6 @@
 import { MODULE, registerSettings } from './settings.mjs';
 import { Theme } from './theme.mjs';
 
-// Import core system (auto-initializes)
-import './brancalonia-theme-core.mjs';
-
 // Legacy initialization for backward compatibility
 Hooks.once('init', () => {
   console.log('Brancalonia | Sistema tema v4.4.0 - Architettura Carolingian UI');
