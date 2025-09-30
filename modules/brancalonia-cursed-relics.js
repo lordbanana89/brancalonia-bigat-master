@@ -947,8 +947,11 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
         }
       });
 
-      // Hook per identificazione cimeli
-      Hooks.on("renderItemSheet5e", (app, html, data) => {
+      // Hook per identificazione cimeli - Version-aware
+      const systemVersion = parseFloat(game.system?.version || '0');
+      const hookName = systemVersion >= 5.0 ? 'renderItemSheetV2' : 'renderItemSheet5e';
+
+      Hooks.on(hookName, (app, html, data) => {
         if (!game.settings.get('brancalonia-bigat', 'enableCimeliMaledetti')) return;
 
         const item = app.object;

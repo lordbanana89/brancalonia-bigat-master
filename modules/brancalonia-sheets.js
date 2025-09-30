@@ -17,18 +17,26 @@ class BrancaloniaSheets {
   }
 
   static registerSheetModifications() {
-    // Override default character sheet rendering - usa hooks standard Foundry
-    Hooks.on('renderActorSheet5eCharacter', this.modifyCharacterSheet.bind(this));
-    Hooks.on('renderActorSheet5eNPC', this.modifyNPCSheet.bind(this));
+    // Version-aware hook registration per compatibilità dnd5e v3.x-v5.x
+    const systemVersion = parseFloat(game.system?.version || '0');
+    const isV5Plus = systemVersion >= 5.0;
 
-    // Fallback per D&D 5e v3.x che usa ActorSheetV2
-    Hooks.on('renderActorSheetV2', (app, html, data) => {
-      if (app.actor?.type === 'character') {
-        this.modifyCharacterSheet(app, html, data);
-      } else if (app.actor?.type === 'npc') {
-        this.modifyNPCSheet(app, html, data);
-      }
-    });
+    if (isV5Plus) {
+      // dnd5e v5.x+ usa renderActorSheetV2
+      console.log('🎭 Brancalonia Sheets | Using dnd5e v5.x hooks (renderActorSheetV2)');
+      Hooks.on('renderActorSheetV2', (app, html, data) => {
+        if (app.actor?.type === 'character') {
+          this.modifyCharacterSheet(app, html, data);
+        } else if (app.actor?.type === 'npc') {
+          this.modifyNPCSheet(app, html, data);
+        }
+      });
+    } else {
+      // dnd5e v3.x/v4.x usa hooks legacy
+      console.log('🎭 Brancalonia Sheets | Using dnd5e v3/v4 hooks (renderActorSheet5e*)');
+      Hooks.on('renderActorSheet5eCharacter', this.modifyCharacterSheet.bind(this));
+      Hooks.on('renderActorSheet5eNPC', this.modifyNPCSheet.bind(this));
+    }
   }
 
   static registerSheetListeners() {

@@ -52,18 +52,33 @@ class BrancaloniaUICoordinator {
       }
     });
 
-    // Hook specifici per character/NPC
-    Hooks.on('renderActorSheet5eCharacter', async (app, html, data) => {
-      if (!html[0]?.dataset.brancaloniaProcessed) {
-        await this._processActorSheet(app, html, data, 'character');
-      }
-    });
+    // Hook specifici per character/NPC - Version-aware
+    const systemVersion = parseFloat(game.system?.version || '0');
+    const isV5Plus = systemVersion >= 5.0;
 
-    Hooks.on('renderActorSheet5eNPC', async (app, html, data) => {
-      if (!html[0]?.dataset.brancaloniaProcessed) {
-        await this._processActorSheet(app, html, data, 'npc');
-      }
-    });
+    if (isV5Plus) {
+      // dnd5e v5.x+ usa renderActorSheetV2
+      console.log('🎨 UI Coordinator | Using dnd5e v5.x hooks');
+      Hooks.on('renderActorSheetV2', async (app, html, data) => {
+        if (!html[0]?.dataset.brancaloniaProcessed) {
+          await this._processActorSheet(app, html, data);
+        }
+      });
+    } else {
+      // dnd5e v3.x/v4.x usa hooks legacy
+      console.log('🎨 UI Coordinator | Using dnd5e v3/v4 hooks');
+      Hooks.on('renderActorSheet5eCharacter', async (app, html, data) => {
+        if (!html[0]?.dataset.brancaloniaProcessed) {
+          await this._processActorSheet(app, html, data, 'character');
+        }
+      });
+
+      Hooks.on('renderActorSheet5eNPC', async (app, html, data) => {
+        if (!html[0]?.dataset.brancaloniaProcessed) {
+          await this._processActorSheet(app, html, data, 'npc');
+        }
+      });
+    }
   }
 
   /**
@@ -654,19 +669,38 @@ class BrancaloniaUICoordinator {
    * Fix per problemi di compatibilità noti
    */
   static _applyCompatibilityFixes() {
-    // Fix per D&D 5e v3.x
-    if (game.system.version?.startsWith('3.')) {
-      CONFIG.Actor.sheetClasses.character['dnd5e.ActorSheet5eCharacter'].cls.prototype._renderOuter =
-        new Proxy(CONFIG.Actor.sheetClasses.character['dnd5e.ActorSheet5eCharacter'].cls.prototype._renderOuter, {
-          apply: async (target, thisArg, args) => {
-            const result = await target.apply(thisArg, args);
-            // Aggiungi marker per evitare processamento multiplo
-            if (result[0]) {
-              result[0].dataset.brancaloniaCompatFixed = 'true';
+    const systemVersion = parseFloat(game.system?.version || '0');
+
+    // SKIP per dnd5e v5.x+ (struttura CONFIG.Actor.sheetClasses cambiata/deprecata)
+    if (systemVersion >= 5.0) {
+      console.log('🎨 UI Coordinator | Sheet class patching skipped (dnd5e v5.x)');
+      return;
+    }
+
+    // Fix per D&D 5e v3.x/v4.x SOLAMENTE
+    if (systemVersion >= 3.0 && systemVersion < 5.0) {
+      try {
+        const sheetClass = CONFIG.Actor.sheetClasses?.character?.['dnd5e.ActorSheet5eCharacter'];
+        if (!sheetClass) {
+          console.warn('🎨 UI Coordinator | Sheet class not found - skipping patch');
+          return;
+        }
+
+        CONFIG.Actor.sheetClasses.character['dnd5e.ActorSheet5eCharacter'].cls.prototype._renderOuter =
+          new Proxy(CONFIG.Actor.sheetClasses.character['dnd5e.ActorSheet5eCharacter'].cls.prototype._renderOuter, {
+            apply: async (target, thisArg, args) => {
+              const result = await target.apply(thisArg, args);
+              // Aggiungi marker per evitare processamento multiplo
+              if (result[0]) {
+                result[0].dataset.brancaloniaCompatFixed = 'true';
+              }
+              return result;
             }
-            return result;
-          }
-        });
+          });
+        console.log('🎨 UI Coordinator | Sheet class patched for dnd5e v3/v4');
+      } catch (error) {
+        console.error('🎨 UI Coordinator | Failed to patch sheet class:', error);
+      }
     }
   }
 }

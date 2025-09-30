@@ -9,14 +9,20 @@
 // Verifica versione D&D 5e
 Hooks.once('init', () => {
   const dnd5eVersion = game.system.version;
-  console.log(`🔧 Brancalonia Compatibility Fix: D&D 5e version ${dnd5eVersion} detected`);
+  const versionNumber = parseFloat(dnd5eVersion);
 
-  // Se la versione è >= 5.0, registra i nuovi hooks
-  if (foundry.utils.isNewerVersion(dnd5eVersion, '5.0.0') || dnd5eVersion === '5.0.0') {
-    console.log('🔄 Using new D&D 5e v5.x hook system');
+  console.log(`🔧 Brancalonia Compatibility Fix: D&D 5e v${dnd5eVersion} detected`);
+
+  // Determina quale set di hooks usare
+  if (versionNumber >= 5.0) {
+    console.log('✅ Using D&D 5e v5.x+ hook system (renderActorSheetV2, renderItemSheetV2)');
     registerNewHooks();
+  } else if (versionNumber >= 3.0) {
+    console.log('✅ Using D&D 5e v3.x/v4.x hook system (renderActorSheet5e*, renderItemSheet5e)');
+    registerLegacyHooks();
   } else {
-    console.log('🔄 Using legacy D&D 5e hook system');
+    console.warn('⚠️ Unsupported D&D 5e version detected - compatibility issues may occur');
+    // Fallback ai legacy hooks per v2.x e precedenti
     registerLegacyHooks();
   }
 });

@@ -336,13 +336,26 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
       system.EMERITICENZA_STEP = game.settings.get('brancalonia-bigat', 'emeriticenzaXPStep');
     });
 
-    // Hook per render character sheet
-    Hooks.on('renderActorSheet5eCharacter', (sheet, html) => {
-      if (!game.brancalonia?.levelCap) return;
-      const system = game.brancalonia.levelCap;
+    // Hook per render character sheet - Version-aware
+    const systemVersion = parseFloat(game.system?.version || '0');
+    const isV5Plus = systemVersion >= 5.0;
 
-      system._addEmeriticenzeTab(sheet, html);
-    });
+    if (isV5Plus) {
+      // dnd5e v5.x+ usa renderActorSheetV2
+      Hooks.on('renderActorSheetV2', (sheet, html) => {
+        if (!game.brancalonia?.levelCap) return;
+        if (sheet.actor?.type !== 'character') return;
+        const system = game.brancalonia.levelCap;
+        system._addEmeriticenzeTab(sheet, html);
+      });
+    } else {
+      // dnd5e v3.x/v4.x usa renderActorSheet5eCharacter
+      Hooks.on('renderActorSheet5eCharacter', (sheet, html) => {
+        if (!game.brancalonia?.levelCap) return;
+        const system = game.brancalonia.levelCap;
+        system._addEmeriticenzeTab(sheet, html);
+      });
+    }
   }
 
   static _registerChatCommands() {
