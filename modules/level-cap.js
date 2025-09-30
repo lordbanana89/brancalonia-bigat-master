@@ -15,91 +15,91 @@ class LevelCapSystem {
     // Lista emeriticenze dal manuale (pag. 40)
     this.emeriticenze = {
       affinamento: {
-        name: "Affinamento",
-        description: "Aumenta di 2 un punteggio caratteristica o di 1 due punteggi (max 20)",
+        name: 'Affinamento',
+        description: 'Aumenta di 2 un punteggio caratteristica o di 1 due punteggi (max 20)',
         maxTimes: 2,
-        icon: "icons/skills/trades/smithing-anvil-silver-red.webp",
+        icon: 'icons/skills/trades/smithing-anvil-silver-red.webp',
         apply: (actor) => this._applyASI(actor)
       },
       armaPreferita: {
-        name: "Arma Preferita",
-        description: "Aggiungi competenza ai danni con un tipo di arma specifica",
-        requirements: ["Barbarian", "Fighter", "Paladin", "Ranger"],
+        name: 'Arma Preferita',
+        description: 'Aggiungi competenza ai danni con un tipo di arma specifica',
+        requirements: ['Barbarian', 'Fighter', 'Paladin', 'Ranger'],
         maxTimes: 1,
-        icon: "icons/skills/melee/sword-katana-red.webp",
+        icon: 'icons/skills/melee/sword-katana-red.webp',
         apply: (actor) => this._applyPreferredWeapon(actor)
       },
       emeriticenzaAssoluta: {
-        name: "Emeriticenza Assoluta",
-        description: "Il bonus di competenza diventa +4",
-        requirements: "2 altre emeriticenze",
+        name: 'Emeriticenza Assoluta',
+        description: 'Il bonus di competenza diventa +4',
+        requirements: '2 altre emeriticenze',
         maxTimes: 1,
-        icon: "icons/magic/control/buff-flight-wings-blue.webp",
+        icon: 'icons/magic/control/buff-flight-wings-blue.webp',
         apply: (actor) => this._applyAbsoluteMastery(actor)
       },
       energumeno: {
-        name: "Energumeno",
-        description: "PF massimi aumentano di 6 + modificatore Costituzione",
+        name: 'Energumeno',
+        description: 'PF massimi aumentano di 6 + modificatore Costituzione',
         maxTimes: 1,
-        icon: "icons/magic/life/heart-area-circle-red-green.webp",
+        icon: 'icons/magic/life/heart-area-circle-red-green.webp',
         apply: (actor) => this._applyToughness(actor)
       },
       fandoniaMigliorata: {
-        name: "Fandonia Migliorata",
-        description: "Ottieni uno slot incantesimo aggiuntivo",
-        requirements: "Incantatore",
+        name: 'Fandonia Migliorata',
+        description: 'Ottieni uno slot incantesimo aggiuntivo',
+        requirements: 'Incantatore',
         maxTimes: 1,
-        icon: "icons/magic/symbols/rune-sigil-blue.webp",
+        icon: 'icons/magic/symbols/rune-sigil-blue.webp',
         apply: (actor) => this._applyExtraSpellSlot(actor)
       },
       fandoniaPotenziata: {
-        name: "Fandonia Potenziata",
-        description: "Lancia un incantesimo come se fosse di 1 livello superiore (1/riposo breve)",
-        requirements: "Incantatore",
+        name: 'Fandonia Potenziata',
+        description: 'Lancia un incantesimo come se fosse di 1 livello superiore (1/riposo breve)',
+        requirements: 'Incantatore',
         maxTimes: 1,
-        icon: "icons/magic/fire/projectile-fireball-orange.webp",
+        icon: 'icons/magic/fire/projectile-fireball-orange.webp',
         apply: (actor) => this._applyEmpoweredSpell(actor)
       },
       giocoSquadra: {
-        name: "Gioco di Squadra",
+        name: 'Gioco di Squadra',
         description: "Puoi effettuare l'azione di aiuto come azione bonus",
         maxTimes: 1,
-        icon: "icons/skills/social/diplomacy-handshake-yellow.webp",
+        icon: 'icons/skills/social/diplomacy-handshake-yellow.webp',
         apply: (actor) => this._applyTeamwork(actor)
       },
       donoTalento: {
-        name: "Il Dono del Talento",
-        description: "Ottieni un talento",
+        name: 'Il Dono del Talento',
+        description: 'Ottieni un talento',
         maxTimes: 2,
-        icon: "icons/sundries/scrolls/scroll-runed-brown.webp",
+        icon: 'icons/sundries/scrolls/scroll-runed-brown.webp',
         apply: (actor) => this._applyFeat(actor)
       },
       indomito: {
-        name: "Indomito",
-        description: "Immune alla condizione spaventato",
+        name: 'Indomito',
+        description: 'Immune alla condizione spaventato',
         maxTimes: 1,
-        icon: "icons/magic/control/debuff-fear-terror-purple.webp",
+        icon: 'icons/magic/control/debuff-fear-terror-purple.webp',
         apply: (actor) => this._applyFearless(actor)
       },
       recuperoMigliorato: {
-        name: "Recupero Migliorato",
-        description: "Un privilegio recuperabile con riposo lungo ora si recupera con riposo breve",
+        name: 'Recupero Migliorato',
+        description: 'Un privilegio recuperabile con riposo lungo ora si recupera con riposo breve',
         maxTimes: 2,
-        icon: "icons/magic/time/clock-stopwatch-white.webp",
+        icon: 'icons/magic/time/clock-stopwatch-white.webp',
         apply: (actor) => this._applyImprovedRecovery(actor)
       },
       rissaioloProfessionista: {
-        name: "Rissaiolo Professionista",
-        description: "Ottieni uno slot mossa aggiuntivo e apprendi una nuova mossa base",
+        name: 'Rissaiolo Professionista',
+        description: 'Ottieni uno slot mossa aggiuntivo e apprendi una nuova mossa base',
         maxTimes: 2,
-        icon: "icons/skills/melee/unarmed-punch-fist.webp",
+        icon: 'icons/skills/melee/unarmed-punch-fist.webp',
         apply: (actor) => this._applyBrawlerPro(actor)
       },
       santaFortuna: {
-        name: "Santa Fortuna",
-        description: "Aggiungi 1d8 a una prova, tiro per colpire o TS (1/riposo breve)",
+        name: 'Santa Fortuna',
+        description: 'Aggiungi 1d8 a una prova, tiro per colpire o TS (1/riposo breve)',
         maxTimes: 1,
-        icon: "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+        icon: 'icons/magic/holy/prayer-hands-glowing-yellow.webp',
         apply: (actor) => this._applyLuck(actor)
       }
     };
@@ -115,7 +115,7 @@ class LevelCapSystem {
     // Macro templates per ogni emeriticenza
     this.macroTemplates = {
       santaFortuna: {
-        name: "Santa Fortuna",
+        name: 'Santa Fortuna',
         command: `
 const actor = game.user.character;
 if (!actor) return ui.notifications.warn("Seleziona un personaggio!");
@@ -133,11 +133,11 @@ roll.toMessage({
 
 feature.update({"system.uses.value": feature.system.uses.value - 1});
         `,
-        type: "script",
-        img: "icons/magic/holy/prayer-hands-glowing-yellow.webp"
+        type: 'script',
+        img: 'icons/magic/holy/prayer-hands-glowing-yellow.webp'
       },
       recuperoRapido: {
-        name: "Recupero Rapido",
+        name: 'Recupero Rapido',
         command: `
 const actor = game.user.character;
 if (!actor) return ui.notifications.warn("Seleziona un personaggio!");
@@ -158,8 +158,8 @@ for (const feature of improvedFeatures) {
 
 ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
         `,
-        type: "script",
-        img: "icons/magic/time/clock-stopwatch-white.webp"
+        type: 'script',
+        img: 'icons/magic/time/clock-stopwatch-white.webp'
       }
     };
   }
@@ -167,7 +167,7 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
   static async initialize() {
     if (this.instance) return this.instance;
 
-    console.log("🎭 Inizializzazione Level Cap System...");
+    console.log('🎭 Inizializzazione Level Cap System...');
 
     // Crea istanza globale
     this.instance = new LevelCapSystem();
@@ -191,16 +191,16 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
     // Crea macro automatiche
     this._createMacros();
 
-    console.log("✅ Level Cap System inizializzato con successo!");
+    console.log('✅ Level Cap System inizializzato con successo!');
     return this.instance;
   }
 
   static _registerSettings() {
     // Livello massimo personalizzabile
-    game.settings.register("brancalonia-bigat", "maxLevel", {
-      name: "Livello Massimo",
-      hint: "Il livello massimo raggiungibile dai personaggi (default: 6)",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'maxLevel', {
+      name: 'Livello Massimo',
+      hint: 'Il livello massimo raggiungibile dai personaggi (default: 6)',
+      scope: 'world',
       config: true,
       type: Number,
       default: 6,
@@ -213,10 +213,10 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
     });
 
     // XP base per prima emeriticenza
-    game.settings.register("brancalonia-bigat", "baseEmeriticenzaXP", {
-      name: "XP Base Emeriticenza",
-      hint: "XP necessari per la prima emeriticenza (default: 14000)",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'baseEmeriticenzaXP', {
+      name: 'XP Base Emeriticenza',
+      hint: 'XP necessari per la prima emeriticenza (default: 14000)',
+      scope: 'world',
       config: true,
       type: Number,
       default: 14000,
@@ -228,10 +228,10 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
     });
 
     // Incremento XP per emeriticenze successive
-    game.settings.register("brancalonia-bigat", "emeriticenzaXPStep", {
-      name: "Incremento XP Emeriticenze",
-      hint: "XP aggiuntivi per ogni emeriticenza successiva (default: 9000)",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'emeriticenzaXPStep', {
+      name: 'Incremento XP Emeriticenze',
+      hint: 'XP aggiuntivi per ogni emeriticenza successiva (default: 9000)',
+      scope: 'world',
       config: true,
       type: Number,
       default: 9000,
@@ -243,20 +243,20 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
     });
 
     // Notifiche automatiche
-    game.settings.register("brancalonia-bigat", "autoEmeriticenzaNotifications", {
-      name: "Notifiche Automatiche Emeriticenze",
-      hint: "Mostra automaticamente il dialog per scegliere emeriticenze",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'autoEmeriticenzaNotifications', {
+      name: 'Notifiche Automatiche Emeriticenze',
+      hint: 'Mostra automaticamente il dialog per scegliere emeriticenze',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
     // Dashboard statistiche
-    game.settings.register("brancalonia-bigat", "enableLevelCapStats", {
-      name: "Statistiche Level Cap",
-      hint: "Traccia statistiche su emeriticenze e blocchi di livello",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'enableLevelCapStats', {
+      name: 'Statistiche Level Cap',
+      hint: 'Traccia statistiche su emeriticenze e blocchi di livello',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
@@ -265,60 +265,60 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
 
   static _registerHooks() {
     // Hook per impedire di superare il livello massimo
-    Hooks.on("preUpdateItem", (item, update) => {
+    Hooks.on('preUpdateItem', (item, update) => {
       if (!game.brancalonia?.levelCap) return;
       const system = game.brancalonia.levelCap;
 
-      if (item.type !== "class") return;
+      if (item.type !== 'class') return;
       const actor = item.parent;
-      if (!actor || actor.type !== "character") return;
+      if (!actor || actor.type !== 'character') return;
 
-      const newLevels = foundry.utils.getProperty(update, "system.levels");
+      const newLevels = foundry.utils.getProperty(update, 'system.levels');
       if (newLevels === undefined) return;
 
       const otherLevels = actor.items
-        .filter(i => i.type === "class" && i.id !== item.id)
+        .filter(i => i.type === 'class' && i.id !== item.id)
         .reduce((sum, cls) => sum + (cls.system.levels ?? 0), 0);
 
       const total = otherLevels + newLevels;
-      const maxLevel = game.settings.get("brancalonia-bigat", "maxLevel");
+      const maxLevel = game.settings.get('brancalonia-bigat', 'maxLevel');
 
       if (total > maxLevel) {
         ui.notifications.error(`Livello massimo raggiunto! (${maxLevel})`);
-        system._updateStats("levelCapsBlocked");
+        system._updateStats('levelCapsBlocked');
         return false;
       }
     });
 
     // Hook per creazione nuove classi
-    Hooks.on("preCreateItem", (item, data, opts, userId) => {
+    Hooks.on('preCreateItem', (item, data, opts, userId) => {
       if (!game.brancalonia?.levelCap) return;
       const system = game.brancalonia.levelCap;
 
-      if (item.type !== "class") return;
+      if (item.type !== 'class') return;
       const actor = item.parent;
-      if (!actor || actor.type !== "character") return;
+      if (!actor || actor.type !== 'character') return;
 
       const classLevels = actor.items
-        .filter(i => i.type === "class")
+        .filter(i => i.type === 'class')
         .reduce((sum, cls) => sum + (cls.system.levels ?? 0), 0);
 
-      const maxLevel = game.settings.get("brancalonia-bigat", "maxLevel");
+      const maxLevel = game.settings.get('brancalonia-bigat', 'maxLevel');
       if (classLevels >= maxLevel) {
         ui.notifications.error(`Livello massimo raggiunto! (${maxLevel})`);
-        system._updateStats("levelCapsBlocked");
+        system._updateStats('levelCapsBlocked');
         return false;
       }
     });
 
     // Hook per controllo XP e emeriticenze
-    Hooks.on("updateActor", (actor, updateData) => {
+    Hooks.on('updateActor', (actor, updateData) => {
       if (!game.brancalonia?.levelCap) return;
       const system = game.brancalonia.levelCap;
 
-      if (actor.type !== "character") return;
+      if (actor.type !== 'character') return;
 
-      const xpChange = foundry.utils.getProperty(updateData, "system.details.xp.value");
+      const xpChange = foundry.utils.getProperty(updateData, 'system.details.xp.value');
       if (xpChange === undefined) return;
 
       const xp = actor.system.details.xp.value;
@@ -326,18 +326,18 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
     });
 
     // Hook per aggiornare configurazione
-    Hooks.on("ready", () => {
+    Hooks.on('ready', () => {
       if (!game.brancalonia?.levelCap) return;
       const system = game.brancalonia.levelCap;
 
       // Aggiorna valori dalle impostazioni
-      system.MAX_LEVEL = game.settings.get("brancalonia-bigat", "maxLevel");
-      system.BASE_EMERITICENZA_XP = game.settings.get("brancalonia-bigat", "baseEmeriticenzaXP");
-      system.EMERITICENZA_STEP = game.settings.get("brancalonia-bigat", "emeriticenzaXPStep");
+      system.MAX_LEVEL = game.settings.get('brancalonia-bigat', 'maxLevel');
+      system.BASE_EMERITICENZA_XP = game.settings.get('brancalonia-bigat', 'baseEmeriticenzaXP');
+      system.EMERITICENZA_STEP = game.settings.get('brancalonia-bigat', 'emeriticenzaXPStep');
     });
 
     // Hook per render character sheet
-    Hooks.on("renderActorSheet5eCharacter", (sheet, html) => {
+    Hooks.on('renderActorSheet5eCharacter', (sheet, html) => {
       if (!game.brancalonia?.levelCap) return;
       const system = game.brancalonia.levelCap;
 
@@ -348,12 +348,12 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
   static _registerChatCommands() {
     // Comando per visualizzare emeriticenze disponibili
     game.chatCommands?.register({
-      name: "/emeriticenze",
-      description: "Mostra le emeriticenze disponibili per il personaggio",
+      name: '/emeriticenze',
+      description: 'Mostra le emeriticenze disponibili per il personaggio',
       callback: (chatlog, messageText, chatdata) => {
         const actor = game.user.character;
         if (!actor) {
-          return ui.notifications.warn("Seleziona un personaggio!");
+          return ui.notifications.warn('Seleziona un personaggio!');
         }
         game.brancalonia.levelCap.showEmeriticenzeStatus(actor);
       }
@@ -361,16 +361,16 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
 
     // Comando per aggiungere emeriticenza manualmente (GM)
     game.chatCommands?.register({
-      name: "/grant-emeriticenza",
+      name: '/grant-emeriticenza',
       description: "[GM] Concede un'emeriticenza a un personaggio",
       callback: (chatlog, messageText, chatdata) => {
         if (!game.user.isGM) {
-          return ui.notifications.warn("Solo il GM può usare questo comando!");
+          return ui.notifications.warn('Solo il GM può usare questo comando!');
         }
 
         const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
         if (!actor) {
-          return ui.notifications.warn("Seleziona un personaggio o token!");
+          return ui.notifications.warn('Seleziona un personaggio o token!');
         }
 
         game.brancalonia.levelCap._showEmeriticenzaDialog(actor, 0);
@@ -379,16 +379,16 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
 
     // Comando per reset emeriticenze (GM)
     game.chatCommands?.register({
-      name: "/reset-emeriticenze",
-      description: "[GM] Resetta tutte le emeriticenze di un personaggio",
+      name: '/reset-emeriticenze',
+      description: '[GM] Resetta tutte le emeriticenze di un personaggio',
       callback: (chatlog, messageText, chatdata) => {
         if (!game.user.isGM) {
-          return ui.notifications.warn("Solo il GM può usare questo comando!");
+          return ui.notifications.warn('Solo il GM può usare questo comando!');
         }
 
         const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
         if (!actor) {
-          return ui.notifications.warn("Seleziona un personaggio o token!");
+          return ui.notifications.warn('Seleziona un personaggio o token!');
         }
 
         game.brancalonia.levelCap.resetEmeriticenze(actor);
@@ -397,11 +397,11 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
 
     // Comando per statistiche level cap
     game.chatCommands?.register({
-      name: "/levelcap-stats",
-      description: "[GM] Mostra statistiche del sistema level cap",
+      name: '/levelcap-stats',
+      description: '[GM] Mostra statistiche del sistema level cap',
       callback: (chatlog, messageText, chatdata) => {
         if (!game.user.isGM) {
-          return ui.notifications.warn("Solo il GM può usare questo comando!");
+          return ui.notifications.warn('Solo il GM può usare questo comando!');
         }
 
         game.brancalonia.levelCap.showStats();
@@ -411,21 +411,21 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
 
   static _extendActor() {
     // Estendi Actor con metodi specifici per emeriticenze
-    Actor.prototype.getEmeriticenzeCount = function() {
-      return this.getFlag("brancalonia-bigat", "emeriticenze") ?? 0;
+    Actor.prototype.getEmeriticenzeCount = function () {
+      return this.getFlag('brancalonia-bigat', 'emeriticenze') ?? 0;
     };
 
-    Actor.prototype.getTakenEmeriticenze = function() {
-      return this.getFlag("brancalonia-bigat", "emeriticenzeTaken") || {};
+    Actor.prototype.getTakenEmeriticenze = function () {
+      return this.getFlag('brancalonia-bigat', 'emeriticenzeTaken') || {};
     };
 
-    Actor.prototype.getAvailableEmeriticenzeCount = function() {
+    Actor.prototype.getAvailableEmeriticenzeCount = function () {
       const total = this.getEmeriticenzeCount();
       const taken = Object.values(this.getTakenEmeriticenze()).reduce((a, b) => a + b, 0);
       return total - taken;
     };
 
-    Actor.prototype.canTakeEmeriticenza = function(emeriticenzaKey) {
+    Actor.prototype.canTakeEmeriticenza = function (emeriticenzaKey) {
       if (!game.brancalonia?.levelCap) return false;
       const system = game.brancalonia.levelCap;
 
@@ -443,16 +443,16 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
         if (Array.isArray(em.requirements)) {
           // Requisiti di classe
           const hasClass = this.items.some(i =>
-            i.type === "class" && em.requirements.includes(i.name)
+            i.type === 'class' && em.requirements.includes(i.name)
           );
           if (!hasClass) return false;
-        } else if (em.requirements === "Incantatore") {
+        } else if (em.requirements === 'Incantatore') {
           // Requisito incantatore
           const isSpellcaster = this.items.some(i =>
-            i.type === "class" && i.system.spellcasting?.progression !== "none"
+            i.type === 'class' && i.system.spellcasting?.progression !== 'none'
           );
           if (!isSpellcaster) return false;
-        } else if (em.requirements === "2 altre emeriticenze") {
+        } else if (em.requirements === '2 altre emeriticenze') {
           // Requisito numero emeriticenze
           const totalTaken = Object.values(taken).reduce((a, b) => a + b, 0);
           if (totalTaken < 2) return false;
@@ -462,7 +462,7 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
       return true;
     };
 
-    Actor.prototype.getNextEmeriticenzaXP = function() {
+    Actor.prototype.getNextEmeriticenzaXP = function () {
       if (!game.brancalonia?.levelCap) return null;
       const system = game.brancalonia.levelCap;
 
@@ -470,17 +470,17 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
       return system.BASE_EMERITICENZA_XP + (count + 1) * system.EMERITICENZA_STEP;
     };
 
-    console.log("🎭 Actor esteso con metodi per emeriticenze");
+    console.log('🎭 Actor esteso con metodi per emeriticenze');
   }
 
   static async _createMacros() {
     try {
       // Crea cartella per le macro se non esiste
-      let folder = game.folders.find(f => f.name === "🎭 Brancalonia Level Cap" && f.type === "Macro");
+      let folder = game.folders.find(f => f.name === '🎭 Brancalonia Level Cap' && f.type === 'Macro');
       if (!folder) {
         folder = await Folder.create({
-          name: "🎭 Brancalonia Level Cap",
-          type: "Macro",
+          name: '🎭 Brancalonia Level Cap',
+          type: 'Macro',
           parent: null
         });
       }
@@ -497,21 +497,21 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
           command: template.command.trim(),
           folder: folder.id,
           flags: {
-            "brancalonia-bigat": {
+            'brancalonia-bigat': {
               systemMacro: true,
-              system: "levelCap"
+              system: 'levelCap'
             }
           }
         });
       }
 
       // Macro principale per gestione emeriticenze
-      const mainMacro = game.macros.find(m => m.name === "🎭 Gestione Emeriticenze");
+      const mainMacro = game.macros.find(m => m.name === '🎭 Gestione Emeriticenze');
       if (!mainMacro) {
         await Macro.create({
-          name: "🎭 Gestione Emeriticenze",
-          type: "script",
-          img: "icons/skills/trades/smithing-anvil-silver-red.webp",
+          name: '🎭 Gestione Emeriticenze',
+          type: 'script',
+          img: 'icons/skills/trades/smithing-anvil-silver-red.webp',
           command: `
 const actor = game.user.character;
 if (!actor) return ui.notifications.warn("Seleziona un personaggio!");
@@ -520,33 +520,33 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
           `.trim(),
           folder: folder.id,
           flags: {
-            "brancalonia-bigat": {
+            'brancalonia-bigat': {
               systemMacro: true,
-              system: "levelCap"
+              system: 'levelCap'
             }
           }
         });
       }
 
-      console.log("🎭 Macro Level Cap create con successo");
+      console.log('🎭 Macro Level Cap create con successo');
     } catch (error) {
-      console.warn("⚠️ Errore nella creazione delle macro Level Cap:", error);
+      console.warn('⚠️ Errore nella creazione delle macro Level Cap:', error);
     }
   }
 
   // Metodi esistenti mantenuti e migliorati
   _checkForEmeriticenza(actor, xp) {
-    const taken = actor.getFlag("brancalonia-bigat", "emeriticenze") ?? 0;
+    const taken = actor.getFlag('brancalonia-bigat', 'emeriticenze') ?? 0;
     const nextThreshold = this.BASE_EMERITICENZA_XP + (taken + 1) * this.EMERITICENZA_STEP;
 
     if (xp >= nextThreshold) {
-      actor.setFlag("brancalonia-bigat", "emeriticenze", taken + 1);
+      actor.setFlag('brancalonia-bigat', 'emeriticenze', taken + 1);
 
-      if (game.settings.get("brancalonia-bigat", "autoEmeriticenzaNotifications")) {
+      if (game.settings.get('brancalonia-bigat', 'autoEmeriticenzaNotifications')) {
         this._notifyEmeriticenza(actor, taken + 1);
       }
 
-      this._updateStats("emeriticenzeGranted");
+      this._updateStats('emeriticenzeGranted');
     }
   }
 
@@ -568,18 +568,18 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
     });
 
     // Audio notification
-    AudioHelper.play({src: "sounds/notify.wav", volume: 0.8, autoplay: true, loop: false}, true);
+    AudioHelper.play({ src: 'sounds/notify.wav', volume: 0.8, autoplay: true, loop: false }, true);
   }
 
   /**
    * Dialog migliorato per scegliere un'emeriticenza
    */
   _showEmeriticenzaDialog(actor, totalEmeriticenze) {
-    const takenEmeriticenze = actor.getFlag("brancalonia-bigat", "emeriticenzeTaken") || {};
+    const takenEmeriticenze = actor.getFlag('brancalonia-bigat', 'emeriticenzeTaken') || {};
     const availableEmeriticenze = this._getAvailableEmeriticenze(actor, takenEmeriticenze);
 
     if (availableEmeriticenze.length === 0) {
-      ui.notifications.warn("Nessuna emeriticenza disponibile!");
+      ui.notifications.warn('Nessuna emeriticenza disponibile!');
       return;
     }
 
@@ -608,11 +608,11 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
 
     const dialog = new Dialog({
       title: `🎭 Emeriticenza - ${actor.name}`,
-      content: content,
+      content,
       buttons: {
         confirm: {
           icon: '<i class="fas fa-check"></i>',
-          label: "Conferma",
+          label: 'Conferma',
           callback: async (html) => {
             const chosen = html.find('input[name="emeriticenza"]:checked').val();
             if (chosen) {
@@ -622,13 +622,13 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         },
         cancel: {
           icon: '<i class="fas fa-times"></i>',
-          label: "Annulla"
+          label: 'Annulla'
         }
       },
-      default: "confirm",
+      default: 'confirm',
       render: (html) => {
         // Evidenzia opzione selezionata
-        html.find('input[name="emeriticenza"]').change(function() {
+        html.find('input[name="emeriticenza"]').change(function () {
           html.find('.emeriticenza-option').removeClass('selected');
           $(this).closest('.emeriticenza-option').addClass('selected');
         });
@@ -665,16 +665,16 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         if (Array.isArray(em.requirements)) {
           // Requisiti di classe
           const hasClass = actor.items.some(i =>
-            i.type === "class" && em.requirements.includes(i.name)
+            i.type === 'class' && em.requirements.includes(i.name)
           );
           if (!hasClass) continue;
-        } else if (em.requirements === "Incantatore") {
+        } else if (em.requirements === 'Incantatore') {
           // Requisito incantatore
           const isSpellcaster = actor.items.some(i =>
-            i.type === "class" && i.system.spellcasting?.progression !== "none"
+            i.type === 'class' && i.system.spellcasting?.progression !== 'none'
           );
           if (!isSpellcaster) continue;
-        } else if (em.requirements === "2 altre emeriticenze") {
+        } else if (em.requirements === '2 altre emeriticenze') {
           // Requisito numero emeriticenze
           const totalTaken = Object.values(takenEmeriticenze).reduce((a, b) => a + b, 0);
           if (totalTaken < 2) continue;
@@ -700,9 +700,9 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
 
     try {
       // Registra la scelta
-      const taken = actor.getFlag("brancalonia-bigat", "emeriticenzeTaken") || {};
+      const taken = actor.getFlag('brancalonia-bigat', 'emeriticenzeTaken') || {};
       taken[emeriticenzaKey] = (taken[emeriticenzaKey] || 0) + 1;
-      await actor.setFlag("brancalonia-bigat", "emeriticenzeTaken", taken);
+      await actor.setFlag('brancalonia-bigat', 'emeriticenzeTaken', taken);
 
       // Applica l'effetto
       await em.apply(actor);
@@ -726,7 +726,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
             </div>
           </div>
         `,
-        speaker: ChatMessage.getSpeaker({actor})
+        speaker: ChatMessage.getSpeaker({ actor })
       });
 
       ui.notifications.info(`Emeriticenza "${em.name}" applicata con successo!`);
@@ -758,10 +758,10 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
           <label><strong>Caratteristica:</strong>
             <select name="single-ability" style="width: 100%; margin-top: 5px;">
               ${Object.entries(abilities).map(([key, label]) => {
-                const current = actor.system.abilities[key].value;
-                const disabled = current >= 20 ? 'disabled' : '';
-                return `<option value="${key}" ${disabled}>${label} (attuale: ${current})</option>`;
-              }).join('')}
+    const current = actor.system.abilities[key].value;
+    const disabled = current >= 20 ? 'disabled' : '';
+    return `<option value="${key}" ${disabled}>${label} (attuale: ${current})</option>`;
+  }).join('')}
             </select>
           </label>
         </div>
@@ -769,19 +769,19 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
           <label><strong>Prima caratteristica:</strong>
             <select name="first-ability" style="width: 100%; margin-top: 5px;">
               ${Object.entries(abilities).map(([key, label]) => {
-                const current = actor.system.abilities[key].value;
-                const disabled = current >= 20 ? 'disabled' : '';
-                return `<option value="${key}" ${disabled}>${label} (attuale: ${current})</option>`;
-              }).join('')}
+    const current = actor.system.abilities[key].value;
+    const disabled = current >= 20 ? 'disabled' : '';
+    return `<option value="${key}" ${disabled}>${label} (attuale: ${current})</option>`;
+  }).join('')}
             </select>
           </label>
           <label style="margin-top: 10px; display: block;"><strong>Seconda caratteristica:</strong>
             <select name="second-ability" style="width: 100%; margin-top: 5px;">
               ${Object.entries(abilities).map(([key, label]) => {
-                const current = actor.system.abilities[key].value;
-                const disabled = current >= 20 ? 'disabled' : '';
-                return `<option value="${key}" ${disabled}>${label} (attuale: ${current})</option>`;
-              }).join('')}
+    const current = actor.system.abilities[key].value;
+    const disabled = current >= 20 ? 'disabled' : '';
+    return `<option value="${key}" ${disabled}>${label} (attuale: ${current})</option>`;
+  }).join('')}
             </select>
           </label>
         </div>
@@ -789,17 +789,17 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
     `;
 
     new Dialog({
-      title: "🎭 Affinamento - Aumento Caratteristiche",
+      title: '🎭 Affinamento - Aumento Caratteristiche',
       content,
       buttons: {
         confirm: {
           icon: '<i class="fas fa-check"></i>',
-          label: "Conferma",
+          label: 'Conferma',
           callback: async (html) => {
             const type = html.find('input[name="asi-type"]:checked').val();
             const updates = {};
 
-            if (type === "single") {
+            if (type === 'single') {
               const ability = html.find('select[name="single-ability"]').val();
               const current = actor.system.abilities[ability].value;
               updates[`system.abilities.${ability}.value`] = Math.min(20, current + 2);
@@ -810,7 +810,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
               const second = html.find('select[name="second-ability"]').val();
 
               if (first === second) {
-                ui.notifications.warn("Devi scegliere due caratteristiche diverse!");
+                ui.notifications.warn('Devi scegliere due caratteristiche diverse!');
                 return;
               }
 
@@ -828,26 +828,26 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         },
         cancel: {
           icon: '<i class="fas fa-times"></i>',
-          label: "Annulla"
+          label: 'Annulla'
         }
       },
       render: (html) => {
         html.find('input[name="asi-type"]').change((e) => {
-          const isSingle = e.target.value === "single";
+          const isSingle = e.target.value === 'single';
           html.find('.asi-single').toggle(isSingle);
           html.find('.asi-double').toggle(!isSingle);
         });
       }
-    }, {width: 400}).render(true);
+    }, { width: 400 }).render(true);
   }
 
   async _applyPreferredWeapon(actor) {
     // Lista armi disponibili
     const weaponTypes = {
-      "martial-melee": "Armi da Mischia Marziali",
-      "martial-ranged": "Armi a Distanza Marziali",
-      "simple-melee": "Armi da Mischia Semplici",
-      "simple-ranged": "Armi a Distanza Semplici"
+      'martial-melee': 'Armi da Mischia Marziali',
+      'martial-ranged': 'Armi a Distanza Marziali',
+      'simple-melee': 'Armi da Mischia Semplici',
+      'simple-ranged': 'Armi a Distanza Semplici'
     };
 
     const content = `
@@ -855,8 +855,8 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         <p><strong>Scegli il tipo di arma preferita:</strong></p>
         <select name="weapon-type" style="width: 100%; margin: 10px 0;">
           ${Object.entries(weaponTypes).map(([key, label]) =>
-            `<option value="${key}">${label}</option>`
-          ).join('')}
+    `<option value="${key}">${label}</option>`
+  ).join('')}
         </select>
         <p style="font-size: 0.9em; color: #666;">
           Aggiungerai il bonus di competenza ai danni con questo tipo di arma.
@@ -865,61 +865,61 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
     `;
 
     new Dialog({
-      title: "🎭 Arma Preferita",
+      title: '🎭 Arma Preferita',
       content,
       buttons: {
         confirm: {
-          label: "Conferma",
+          label: 'Conferma',
           callback: async (html) => {
             const weaponType = html.find('select[name="weapon-type"]').val();
             const typeName = weaponTypes[weaponType];
 
             const effect = {
               name: `Arma Preferita (${typeName})`,
-              img: "icons/skills/melee/sword-katana-red.webp",
+              img: 'icons/skills/melee/sword-katana-red.webp',
               origin: actor.uuid,
               duration: {},
               changes: [],
               flags: {
-                "brancalonia-bigat": {
-                  emeriticenza: "armaPreferita",
-                  weaponType: weaponType
+                'brancalonia-bigat': {
+                  emeriticenza: 'armaPreferita',
+                  weaponType
                 },
                 dae: {
-                  specialDuration: ["longRest"],
+                  specialDuration: ['longRest'],
                   transfer: true
                 }
               }
             };
 
-            await actor.createEmbeddedDocuments("ActiveEffect", [effect]);
+            await actor.createEmbeddedDocuments('ActiveEffect', [effect]);
             ui.notifications.info(`Arma preferita impostata: ${typeName}`);
           }
         }
       }
-    }, {width: 400}).render(true);
+    }, { width: 400 }).render(true);
   }
 
   async _applyAbsoluteMastery(actor) {
     const effect = {
-      name: "Emeriticenza Assoluta",
-      img: "icons/magic/control/buff-flight-wings-blue.webp",
+      name: 'Emeriticenza Assoluta',
+      img: 'icons/magic/control/buff-flight-wings-blue.webp',
       origin: actor.uuid,
       duration: {},
       changes: [{
-        key: "system.attributes.prof",
+        key: 'system.attributes.prof',
         mode: CONST.ACTIVE_EFFECT_MODES.OVERRIDE,
-        value: "4"
+        value: '4'
       }],
       flags: {
-        "brancalonia-bigat": {
-          emeriticenza: "emeriticenzaAssoluta"
+        'brancalonia-bigat': {
+          emeriticenza: 'emeriticenzaAssoluta'
         }
       }
     };
 
-    await actor.createEmbeddedDocuments("ActiveEffect", [effect]);
-    ui.notifications.info("Bonus di competenza impostato a +4!");
+    await actor.createEmbeddedDocuments('ActiveEffect', [effect]);
+    ui.notifications.info('Bonus di competenza impostato a +4!');
   }
 
   async _applyToughness(actor) {
@@ -929,8 +929,8 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
     const currentValue = actor.system.attributes.hp.value;
 
     await actor.update({
-      "system.attributes.hp.max": currentMax + hpIncrease,
-      "system.attributes.hp.value": currentValue + hpIncrease
+      'system.attributes.hp.max': currentMax + hpIncrease,
+      'system.attributes.hp.value': currentValue + hpIncrease
     });
 
     ui.notifications.info(`Punti Ferita aumentati di ${hpIncrease}!`);
@@ -938,12 +938,12 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
 
   async _applyExtraSpellSlot(actor) {
     const spellcaster = actor.items.find(i =>
-      i.type === "class" &&
-      i.system.spellcasting?.progression !== "none"
+      i.type === 'class' &&
+      i.system.spellcasting?.progression !== 'none'
     );
 
     if (!spellcaster) {
-      ui.notifications.warn("Personaggio non incantatore!");
+      ui.notifications.warn('Personaggio non incantatore!');
       return;
     }
 
@@ -954,20 +954,20 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
       <div style="padding: 10px;">
         <p><strong>Scegli il livello dello slot incantesimo aggiuntivo:</strong></p>
         <select name="slot-level" style="width: 100%; margin: 10px 0;">
-          ${Array.from({length: maxLevel}, (_, i) => i + 1).map(level => {
-            const current = actor.system.spells[`spell${level}`]?.max || 0;
-            return `<option value="${level}">Livello ${level} (attuale: ${current})</option>`;
-          }).join('')}
+          ${Array.from({ length: maxLevel }, (_, i) => i + 1).map(level => {
+    const current = actor.system.spells[`spell${level}`]?.max || 0;
+    return `<option value="${level}">Livello ${level} (attuale: ${current})</option>`;
+  }).join('')}
         </select>
       </div>
     `;
 
     new Dialog({
-      title: "🎭 Fandonia Migliorata - Slot Aggiuntivo",
+      title: '🎭 Fandonia Migliorata - Slot Aggiuntivo',
       content,
       buttons: {
         confirm: {
-          label: "Conferma",
+          label: 'Conferma',
           callback: async (html) => {
             const level = html.find('select[name="slot-level"]').val();
             const key = `system.spells.spell${level}.max`;
@@ -981,228 +981,228 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
           }
         }
       }
-    }, {width: 400}).render(true);
+    }, { width: 400 }).render(true);
   }
 
   async _applyEmpoweredSpell(actor) {
     const feature = {
-      name: "Fandonia Potenziata",
-      type: "feat",
-      img: "icons/magic/fire/projectile-fireball-orange.webp",
+      name: 'Fandonia Potenziata',
+      type: 'feat',
+      img: 'icons/magic/fire/projectile-fireball-orange.webp',
       system: {
         description: {
-          value: "<p>Una volta per riposo breve, puoi lanciare un incantesimo come se utilizzassi uno slot di un livello superiore.</p>",
-          chat: "",
-          unidentified: ""
+          value: '<p>Una volta per riposo breve, puoi lanciare un incantesimo come se utilizzassi uno slot di un livello superiore.</p>',
+          chat: '',
+          unidentified: ''
         },
         activation: {
-          type: "special",
+          type: 'special',
           cost: 1,
-          condition: ""
+          condition: ''
         },
         duration: {
           value: null,
-          units: ""
+          units: ''
         },
         target: {
           value: null,
           width: null,
-          units: "",
-          type: "self"
+          units: '',
+          type: 'self'
         },
         range: {
           value: null,
           long: null,
-          units: ""
+          units: ''
         },
         uses: {
           value: 1,
-          max: "1",
-          per: "sr",
-          recovery: ""
+          max: '1',
+          per: 'sr',
+          recovery: ''
         },
         consume: {
-          type: "",
-          target: "",
+          type: '',
+          target: '',
           amount: null
         },
         ability: null,
-        actionType: "util",
+        actionType: 'util',
         attackBonus: 0,
-        chatFlavor: "",
+        chatFlavor: '',
         critical: {
           threshold: null,
-          damage: ""
+          damage: ''
         },
         damage: {
           parts: [],
-          versatile: ""
+          versatile: ''
         },
-        formula: "",
+        formula: '',
         save: {
-          ability: "",
+          ability: '',
           dc: null,
-          scaling: "spell"
+          scaling: 'spell'
         },
-        requirements: "",
+        requirements: '',
         recharge: {
           value: null,
           charged: true
         }
       },
       flags: {
-        "brancalonia-bigat": {
-          emeriticenza: "fandoniaPotenziata"
+        'brancalonia-bigat': {
+          emeriticenza: 'fandoniaPotenziata'
         }
       }
     };
 
-    await actor.createEmbeddedDocuments("Item", [feature]);
-    ui.notifications.info("Fandonia Potenziata aggiunta!");
+    await actor.createEmbeddedDocuments('Item', [feature]);
+    ui.notifications.info('Fandonia Potenziata aggiunta!');
   }
 
   async _applyTeamwork(actor) {
     const feature = {
-      name: "Gioco di Squadra",
-      type: "feat",
-      img: "icons/skills/social/diplomacy-handshake-yellow.webp",
+      name: 'Gioco di Squadra',
+      type: 'feat',
+      img: 'icons/skills/social/diplomacy-handshake-yellow.webp',
       system: {
         description: {
           value: "<p>Puoi usare l'azione Aiuto come azione bonus.</p>",
-          chat: "",
-          unidentified: ""
+          chat: '',
+          unidentified: ''
         },
         activation: {
-          type: "bonus",
+          type: 'bonus',
           cost: 1,
-          condition: ""
+          condition: ''
         },
         duration: {
           value: null,
-          units: ""
+          units: ''
         },
         target: {
           value: 1,
           width: null,
-          units: "",
-          type: "ally"
+          units: '',
+          type: 'ally'
         },
         range: {
           value: 5,
           long: null,
-          units: "ft"
+          units: 'ft'
         },
         uses: {
           value: null,
-          max: "",
-          per: "",
-          recovery: ""
+          max: '',
+          per: '',
+          recovery: ''
         },
         consume: {
-          type: "",
-          target: "",
+          type: '',
+          target: '',
           amount: null
         },
         ability: null,
-        actionType: "util",
+        actionType: 'util',
         attackBonus: 0,
-        chatFlavor: "",
+        chatFlavor: '',
         critical: {
           threshold: null,
-          damage: ""
+          damage: ''
         },
         damage: {
           parts: [],
-          versatile: ""
+          versatile: ''
         },
-        formula: "",
+        formula: '',
         save: {
-          ability: "",
+          ability: '',
           dc: null,
-          scaling: "spell"
+          scaling: 'spell'
         },
-        requirements: "",
+        requirements: '',
         recharge: {
           value: null,
           charged: true
         }
       },
       flags: {
-        "brancalonia-bigat": {
-          emeriticenza: "giocoSquadra"
+        'brancalonia-bigat': {
+          emeriticenza: 'giocoSquadra'
         }
       }
     };
 
-    await actor.createEmbeddedDocuments("Item", [feature]);
-    ui.notifications.info("Gioco di Squadra aggiunto!");
+    await actor.createEmbeddedDocuments('Item', [feature]);
+    ui.notifications.info('Gioco di Squadra aggiunto!');
   }
 
   async _applyFeat(actor) {
     // Cerca compendio talenti
-    let pack = game.packs.get("brancalonia-bigat.talenti");
+    let pack = game.packs.get('brancalonia-bigat.talenti');
     if (!pack) {
-      pack = game.packs.find(p => p.metadata.label.toLowerCase().includes("feat"));
+      pack = game.packs.find(p => p.metadata.label.toLowerCase().includes('feat'));
     }
 
     if (pack) {
-      ui.notifications.info("Scegli un talento dal compendio che si aprirà");
+      ui.notifications.info('Scegli un talento dal compendio che si aprirà');
       pack.render(true);
     } else {
       // Crea un talento placeholder
       const feat = {
-        name: "Talento Personalizzato",
-        type: "feat",
-        img: "icons/sundries/scrolls/scroll-runed-brown.webp",
+        name: 'Talento Personalizzato',
+        type: 'feat',
+        img: 'icons/sundries/scrolls/scroll-runed-brown.webp',
         system: {
           description: {
-            value: "<p>Talento ottenuto tramite Emeriticenza. Modifica questo oggetto per aggiungere i dettagli del talento scelto.</p>"
+            value: '<p>Talento ottenuto tramite Emeriticenza. Modifica questo oggetto per aggiungere i dettagli del talento scelto.</p>'
           },
-          requirements: "Emeriticenza: Il Dono del Talento"
+          requirements: 'Emeriticenza: Il Dono del Talento'
         },
         flags: {
-          "brancalonia-bigat": {
-            emeriticenza: "donoTalento"
+          'brancalonia-bigat': {
+            emeriticenza: 'donoTalento'
           }
         }
       };
 
-      await actor.createEmbeddedDocuments("Item", [feat]);
-      ui.notifications.info("Talento placeholder aggiunto - modificalo per aggiungere i dettagli!");
+      await actor.createEmbeddedDocuments('Item', [feat]);
+      ui.notifications.info('Talento placeholder aggiunto - modificalo per aggiungere i dettagli!');
     }
   }
 
   async _applyFearless(actor) {
     const effect = {
-      name: "Indomito",
-      img: "icons/magic/control/debuff-fear-terror-purple.webp",
+      name: 'Indomito',
+      img: 'icons/magic/control/debuff-fear-terror-purple.webp',
       origin: actor.uuid,
       duration: {},
       changes: [{
-        key: "system.traits.ci.value",
+        key: 'system.traits.ci.value',
         mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-        value: "frightened"
+        value: 'frightened'
       }],
       flags: {
-        "brancalonia-bigat": {
-          emeriticenza: "indomito"
+        'brancalonia-bigat': {
+          emeriticenza: 'indomito'
         }
       }
     };
 
-    await actor.createEmbeddedDocuments("ActiveEffect", [effect]);
-    ui.notifications.info("Immunità a spaventato attivata!");
+    await actor.createEmbeddedDocuments('ActiveEffect', [effect]);
+    ui.notifications.info('Immunità a spaventato attivata!');
   }
 
   async _applyImprovedRecovery(actor) {
     const features = actor.items.filter(i =>
-      i.type === "feat" &&
-      i.system.uses?.per === "lr" &&
-      !i.flags["brancalonia-bigat"]?.improvedRecovery
+      i.type === 'feat' &&
+      i.system.uses?.per === 'lr' &&
+      !i.flags['brancalonia-bigat']?.improvedRecovery
     );
 
     if (features.length === 0) {
-      ui.notifications.warn("Nessuna capacità con riposo lungo trovata!");
+      ui.notifications.warn('Nessuna capacità con riposo lungo trovata!');
       return;
     }
 
@@ -1211,42 +1211,42 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         <p><strong>Scegli quale capacità potrà essere recuperata con un riposo breve:</strong></p>
         <select name="feature" style="width: 100%; margin: 10px 0;">
           ${features.map(f => {
-            const uses = f.system.uses;
-            return `<option value="${f.id}">${f.name} (${uses.value}/${uses.max} usi)</option>`;
-          }).join('')}
+    const uses = f.system.uses;
+    return `<option value="${f.id}">${f.name} (${uses.value}/${uses.max} usi)</option>`;
+  }).join('')}
         </select>
       </div>
     `;
 
     new Dialog({
-      title: "🎭 Recupero Migliorato",
+      title: '🎭 Recupero Migliorato',
       content,
       buttons: {
         confirm: {
-          label: "Conferma",
+          label: 'Conferma',
           callback: async (html) => {
             const featureId = html.find('select[name="feature"]').val();
             const feature = actor.items.get(featureId);
 
             await feature.update({
-              "system.uses.per": "sr",
-              "flags.brancalonia-bigat.improvedRecovery": true
+              'system.uses.per': 'sr',
+              'flags.brancalonia-bigat.improvedRecovery': true
             });
 
             ui.notifications.info(`${feature.name} ora si recupera con riposo breve!`);
           }
         }
       }
-    }, {width: 400}).render(true);
+    }, { width: 400 }).render(true);
   }
 
   async _applyBrawlerPro(actor) {
     // Aggiungi slot mossa
-    const currentSlots = actor.getFlag("brancalonia-bigat", "brawlMoveSlots") || 2;
-    await actor.setFlag("brancalonia-bigat", "brawlMoveSlots", currentSlots + 1);
+    const currentSlots = actor.getFlag('brancalonia-bigat', 'brawlMoveSlots') || 2;
+    await actor.setFlag('brancalonia-bigat', 'brawlMoveSlots', currentSlots + 1);
 
     // Notifica per scegliere nuova mossa
-    ui.notifications.info("Slot mossa aggiunto! Scegli una nuova mossa base dal sistema Risse");
+    ui.notifications.info('Slot mossa aggiunto! Scegli una nuova mossa base dal sistema Risse');
 
     // Se il sistema risse è attivo, apri il dialog
     if (game.brancalonia?.tavernBrawl) {
@@ -1254,100 +1254,100 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
     } else {
       // Crea feature placeholder
       const feature = {
-        name: "Mossa Rissa Aggiuntiva",
-        type: "feat",
-        img: "icons/skills/melee/unarmed-punch-fist.webp",
+        name: 'Mossa Rissa Aggiuntiva',
+        type: 'feat',
+        img: 'icons/skills/melee/unarmed-punch-fist.webp',
         system: {
           description: {
-            value: "<p>Slot mossa aggiuntivo ottenuto tramite Rissaiolo Professionista. Scegli una mossa base dal sistema Risse.</p>"
+            value: '<p>Slot mossa aggiuntivo ottenuto tramite Rissaiolo Professionista. Scegli una mossa base dal sistema Risse.</p>'
           }
         },
         flags: {
-          "brancalonia-bigat": {
-            emeriticenza: "rissaioloProfessionista"
+          'brancalonia-bigat': {
+            emeriticenza: 'rissaioloProfessionista'
           }
         }
       };
 
-      await actor.createEmbeddedDocuments("Item", [feature]);
+      await actor.createEmbeddedDocuments('Item', [feature]);
     }
   }
 
   async _applyLuck(actor) {
     const feature = {
-      name: "Santa Fortuna",
-      type: "feat",
-      img: "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+      name: 'Santa Fortuna',
+      type: 'feat',
+      img: 'icons/magic/holy/prayer-hands-glowing-yellow.webp',
       system: {
         description: {
-          value: "<p>Una volta per riposo breve, puoi aggiungere 1d8 a una prova di caratteristica, tiro per colpire o tiro salvezza.</p>",
-          chat: "",
-          unidentified: ""
+          value: '<p>Una volta per riposo breve, puoi aggiungere 1d8 a una prova di caratteristica, tiro per colpire o tiro salvezza.</p>',
+          chat: '',
+          unidentified: ''
         },
         activation: {
-          type: "special",
+          type: 'special',
           cost: 0,
-          condition: ""
+          condition: ''
         },
         duration: {
           value: null,
-          units: ""
+          units: ''
         },
         target: {
           value: null,
           width: null,
-          units: "",
-          type: "self"
+          units: '',
+          type: 'self'
         },
         range: {
           value: null,
           long: null,
-          units: ""
+          units: ''
         },
         uses: {
           value: 1,
-          max: "1",
-          per: "sr",
-          recovery: ""
+          max: '1',
+          per: 'sr',
+          recovery: ''
         },
         consume: {
-          type: "",
-          target: "",
+          type: '',
+          target: '',
           amount: null
         },
         ability: null,
-        actionType: "util",
+        actionType: 'util',
         attackBonus: 0,
-        chatFlavor: "",
+        chatFlavor: '',
         critical: {
           threshold: null,
-          damage: ""
+          damage: ''
         },
         damage: {
-          parts: [["1d8", ""]],
-          versatile: ""
+          parts: [['1d8', '']],
+          versatile: ''
         },
-        formula: "",
+        formula: '',
         save: {
-          ability: "",
+          ability: '',
           dc: null,
-          scaling: "spell"
+          scaling: 'spell'
         },
-        requirements: "",
+        requirements: '',
         recharge: {
           value: null,
           charged: true
         }
       },
       flags: {
-        "brancalonia-bigat": {
-          emeriticenza: "santaFortuna"
+        'brancalonia-bigat': {
+          emeriticenza: 'santaFortuna'
         }
       }
     };
 
-    await actor.createEmbeddedDocuments("Item", [feature]);
-    ui.notifications.info("Santa Fortuna aggiunta!");
+    await actor.createEmbeddedDocuments('Item', [feature]);
+    ui.notifications.info('Santa Fortuna aggiunta!');
   }
 
   // Metodi aggiuntivi per gestione avanzata
@@ -1414,7 +1414,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
       buttons: {
         choose: {
           icon: '<i class="fas fa-star"></i>',
-          label: "Scegli Emeriticenza",
+          label: 'Scegli Emeriticenza',
           condition: () => available > 0,
           callback: () => {
             this._showEmeriticenzaDialog(actor, actor.getEmeriticenzeCount());
@@ -1422,11 +1422,11 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         },
         close: {
           icon: '<i class="fas fa-times"></i>',
-          label: "Chiudi"
+          label: 'Chiudi'
         }
       },
-      default: "close"
-    }, {width: 500, height: 600}).render(true);
+      default: 'close'
+    }, { width: 500, height: 600 }).render(true);
   }
 
   showEmeriticenzeManagement(actor) {
@@ -1473,7 +1473,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
       buttons: {
         save: {
           icon: '<i class="fas fa-save"></i>',
-          label: "Salva",
+          label: 'Salva',
           callback: async (html) => {
             const newTotal = parseInt(html.find('input[name="total-emeriticenze"]').val()) || 0;
             const newTaken = {};
@@ -1485,26 +1485,26 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
               }
             }
 
-            await actor.setFlag("brancalonia-bigat", "emeriticenze", newTotal);
-            await actor.setFlag("brancalonia-bigat", "emeriticenzeTaken", newTaken);
+            await actor.setFlag('brancalonia-bigat', 'emeriticenze', newTotal);
+            await actor.setFlag('brancalonia-bigat', 'emeriticenzeTaken', newTaken);
 
-            ui.notifications.info("Emeriticenze aggiornate!");
+            ui.notifications.info('Emeriticenze aggiornate!');
           }
         },
         grant: {
           icon: '<i class="fas fa-gift"></i>',
-          label: "Concedi Emeriticenza",
+          label: 'Concedi Emeriticenza',
           callback: () => {
             this._showEmeriticenzaDialog(actor, total);
           }
         },
         reset: {
           icon: '<i class="fas fa-trash"></i>',
-          label: "Reset",
+          label: 'Reset',
           callback: () => {
             Dialog.confirm({
-              title: "Conferma Reset",
-              content: "Sei sicuro di voler azzerare tutte le emeriticenze?",
+              title: 'Conferma Reset',
+              content: 'Sei sicuro di voler azzerare tutte le emeriticenze?',
               yes: async () => {
                 await this.resetEmeriticenze(actor);
               }
@@ -1513,45 +1513,45 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         },
         close: {
           icon: '<i class="fas fa-times"></i>',
-          label: "Chiudi"
+          label: 'Chiudi'
         }
       },
-      default: "save"
-    }, {width: 600, height: 500}).render(true);
+      default: 'save'
+    }, { width: 600, height: 500 }).render(true);
   }
 
   async resetEmeriticenze(actor) {
     // Rimuovi tutti gli effetti delle emeriticenze
     const emeriticenzeEffects = actor.effects.filter(e =>
-      e.flags["brancalonia-bigat"]?.emeriticenza
+      e.flags['brancalonia-bigat']?.emeriticenza
     );
 
     if (emeriticenzeEffects.length > 0) {
-      await actor.deleteEmbeddedDocuments("ActiveEffect", emeriticenzeEffects.map(e => e.id));
+      await actor.deleteEmbeddedDocuments('ActiveEffect', emeriticenzeEffects.map(e => e.id));
     }
 
     // Rimuovi tutti i feat delle emeriticenze
     const emeriticenzeFeats = actor.items.filter(i =>
-      i.flags["brancalonia-bigat"]?.emeriticenza
+      i.flags['brancalonia-bigat']?.emeriticenza
     );
 
     if (emeriticenzeFeats.length > 0) {
-      await actor.deleteEmbeddedDocuments("Item", emeriticenzeFeats.map(i => i.id));
+      await actor.deleteEmbeddedDocuments('Item', emeriticenzeFeats.map(i => i.id));
     }
 
     // Reset flags
-    await actor.unsetFlag("brancalonia-bigat", "emeriticenze");
-    await actor.unsetFlag("brancalonia-bigat", "emeriticenzeTaken");
+    await actor.unsetFlag('brancalonia-bigat', 'emeriticenze');
+    await actor.unsetFlag('brancalonia-bigat', 'emeriticenzeTaken');
 
-    ui.notifications.info("Tutte le emeriticenze sono state resettate!");
+    ui.notifications.info('Tutte le emeriticenze sono state resettate!');
   }
 
   showStats() {
     if (!game.user.isGM) return;
 
-    const actors = game.actors.filter(a => a.type === "character");
+    const actors = game.actors.filter(a => a.type === 'character');
     let totalEmeriticenze = 0;
-    let emeriticenzeCount = {};
+    const emeriticenzeCount = {};
     let levelCaps = 0;
 
     actors.forEach(actor => {
@@ -1565,7 +1565,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
 
       // Controlla se ha raggiunto il level cap
       const totalLevels = actor.items
-        .filter(i => i.type === "class")
+        .filter(i => i.type === 'class')
         .reduce((sum, cls) => sum + (cls.system.levels || 0), 0);
 
       if (totalLevels >= this.MAX_LEVEL) {
@@ -1574,7 +1574,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
     });
 
     const mostPopular = Object.entries(emeriticenzeCount)
-      .sort(([,a], [,b]) => b - a)[0];
+      .sort(([, a], [, b]) => b - a)[0];
 
     let content = `
       <div class="brancalonia-levelcap-stats">
@@ -1599,7 +1599,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
       content += `<p style="font-style: italic; color: #666;">Nessuna emeriticenza concessa ancora.</p>`;
     } else {
       const sorted = Object.entries(emeriticenzeCount)
-        .sort(([,a], [,b]) => b - a);
+        .sort(([, a], [, b]) => b - a);
 
       content += `<ul>`;
       for (const [key, count] of sorted) {
@@ -1622,7 +1622,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
     const levelDistribution = {};
     actors.forEach(actor => {
       const totalLevels = actor.items
-        .filter(i => i.type === "class")
+        .filter(i => i.type === 'class')
         .reduce((sum, cls) => sum + (cls.system.levels || 0), 0);
 
       levelDistribution[totalLevels] = (levelDistribution[totalLevels] || 0) + 1;
@@ -1641,20 +1641,20 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
     `;
 
     new Dialog({
-      title: "📊 Statistiche Level Cap System",
+      title: '📊 Statistiche Level Cap System',
       content,
       buttons: {
         export: {
           icon: '<i class="fas fa-download"></i>',
-          label: "Esporta",
+          label: 'Esporta',
           callback: () => {
             const data = {
               timestamp: new Date().toISOString(),
               totalCharacters: actors.length,
               levelCapCharacters: levelCaps,
-              totalEmeriticenze: totalEmeriticenze,
+              totalEmeriticenze,
               emeriticenzeDistribution: emeriticenzeCount,
-              levelDistribution: levelDistribution,
+              levelDistribution,
               mostPopular: mostPopular ? {
                 key: mostPopular[0],
                 name: this.emeriticenze[mostPopular[0]]?.name,
@@ -1663,7 +1663,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
             };
 
             const dataStr = JSON.stringify(data, null, 2);
-            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
 
             const link = document.createElement('a');
             link.href = URL.createObjectURL(dataBlob);
@@ -1673,15 +1673,15 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         },
         close: {
           icon: '<i class="fas fa-times"></i>',
-          label: "Chiudi"
+          label: 'Chiudi'
         }
       },
-      default: "close"
-    }, {width: 500, height: 600}).render(true);
+      default: 'close'
+    }, { width: 500, height: 600 }).render(true);
   }
 
   _addEmeriticenzeTab(sheet, html) {
-    if (!sheet.actor || sheet.actor.type !== "character") return;
+    if (!sheet.actor || sheet.actor.type !== 'character') return;
 
     // Aggiungi tab Emeriticenze
     const tabs = html.find('.sheet-tabs[data-group="primary"]');
@@ -1749,22 +1749,22 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
   }
 
   _updateStats(type) {
-    if (!game.settings.get("brancalonia-bigat", "enableLevelCapStats")) return;
+    if (!game.settings.get('brancalonia-bigat', 'enableLevelCapStats')) return;
 
     this.stats[type]++;
     this.stats.lastEmeriticenzaTime = new Date().toISOString();
   }
 
   _updateEmeriticenzaStats(emeriticenzaKey) {
-    if (!game.settings.get("brancalonia-bigat", "enableLevelCapStats")) return;
+    if (!game.settings.get('brancalonia-bigat', 'enableLevelCapStats')) return;
 
     // Aggiorna statistica emeriticenza più popolare
-    const current = game.settings.get("brancalonia-bigat", "emeriticenzeStats") || {};
+    const current = game.settings.get('brancalonia-bigat', 'emeriticenzeStats') || {};
     current[emeriticenzaKey] = (current[emeriticenzaKey] || 0) + 1;
 
     // Trova la più popolare
     const mostPopular = Object.entries(current)
-      .sort(([,a], [,b]) => b - a)[0];
+      .sort(([, a], [, b]) => b - a)[0];
 
     if (mostPopular) {
       this.stats.mostPopularEmeriticenza = {
@@ -1774,7 +1774,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
       };
     }
 
-    game.settings.set("brancalonia-bigat", "emeriticenzeStats", current);
+    game.settings.set('brancalonia-bigat', 'emeriticenzeStats', current);
   }
 }
 

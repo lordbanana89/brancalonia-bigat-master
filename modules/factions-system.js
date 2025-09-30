@@ -9,16 +9,16 @@ class FactionsSystem {
     // Database fazioni di Brancalonia
     this.factions = {
       // FAZIONI RELIGIOSE
-      "chiesa_calendaria": {
-        name: "Chiesa Calendaria",
-        type: "religiosa",
-        icon: "icons/environment/settlement/church.webp",
-        alignment: "lawful",
+      chiesa_calendaria: {
+        name: 'Chiesa Calendaria',
+        type: 'religiosa',
+        icon: 'icons/environment/settlement/church.webp',
+        alignment: 'lawful',
         power: 9,
-        influence: "nazionale",
-        description: "La chiesa ufficiale del Regno, potente e corrotta",
-        headquarters: "Vaticantica",
-        leader: "Papa Innocenzo XXIII",
+        influence: 'nazionale',
+        description: 'La chiesa ufficiale del Regno, potente e corrotta',
+        headquarters: 'Vaticantica',
+        leader: 'Papa Innocenzo XXIII',
         resources: {
           gold: 10000,
           troops: 500,
@@ -26,44 +26,44 @@ class FactionsSystem {
           clerics: 100
         },
         relations: {
-          "nobiltà": 75,
-          "ordine_draconiano": 50,
-          "gilde_mercanti": 60,
-          "popolo": 30,
-          "criminali": -50,
-          "eretici": -100
+          nobiltà: 75,
+          ordine_draconiano: 50,
+          gilde_mercanti: 60,
+          popolo: 30,
+          criminali: -50,
+          eretici: -100
         },
         benefits: {
-          member: "Accesso a cure gratuite, alloggio nei monasteri",
-          allied: "Protezione legale, sconto 20% servizi religiosi",
-          honored: "Immunità diplomatica, benedizioni potenti"
+          member: 'Accesso a cure gratuite, alloggio nei monasteri',
+          allied: 'Protezione legale, sconto 20% servizi religiosi',
+          honored: 'Immunità diplomatica, benedizioni potenti'
         },
         quests: [
-          "Recuperare reliquie sacre",
-          "Eliminare eretici",
-          "Raccogliere decime",
-          "Convertire pagani"
+          'Recuperare reliquie sacre',
+          'Eliminare eretici',
+          'Raccogliere decime',
+          'Convertire pagani'
         ],
         ranks: [
-          { level: 0, title: "Fedele", minRep: 0 },
-          { level: 1, title: "Accolito", minRep: 10 },
-          { level: 2, title: "Chierico", minRep: 25 },
-          { level: 3, title: "Priore", minRep: 50 },
-          { level: 4, title: "Vescovo", minRep: 100 },
-          { level: 5, title: "Cardinale", minRep: 200 }
+          { level: 0, title: 'Fedele', minRep: 0 },
+          { level: 1, title: 'Accolito', minRep: 10 },
+          { level: 2, title: 'Chierico', minRep: 25 },
+          { level: 3, title: 'Priore', minRep: 50 },
+          { level: 4, title: 'Vescovo', minRep: 100 },
+          { level: 5, title: 'Cardinale', minRep: 200 }
         ]
       },
 
-      "ordine_draconiano": {
-        name: "Ordine Draconiano",
-        type: "militare",
-        icon: "icons/creatures/abilities/dragon-fire-breath-orange.webp",
-        alignment: "lawful",
+      ordine_draconiano: {
+        name: 'Ordine Draconiano',
+        type: 'militare',
+        icon: 'icons/creatures/abilities/dragon-fire-breath-orange.webp',
+        alignment: 'lawful',
         power: 8,
-        influence: "nazionale",
-        description: "Ordine cavalleresco dedicato a San Giorgio",
-        headquarters: "Rocca del Drago",
-        leader: "Gran Maestro Sigismondo",
+        influence: 'nazionale',
+        description: 'Ordine cavalleresco dedicato a San Giorgio',
+        headquarters: 'Rocca del Drago',
+        leader: 'Gran Maestro Sigismondo',
         resources: {
           gold: 5000,
           troops: 300,
@@ -71,43 +71,43 @@ class FactionsSystem {
           fortresses: 5
         },
         relations: {
-          "chiesa_calendaria": 50,
-          "nobiltà": 80,
-          "popolo": 60,
-          "criminali": -70,
-          "mostri": -100
+          chiesa_calendaria: 50,
+          nobiltà: 80,
+          popolo: 60,
+          criminali: -70,
+          mostri: -100
         },
         benefits: {
-          member: "Addestramento marziale, equipaggiamento",
-          allied: "Protezione militare, accesso fortezze",
-          honored: "Cavalierato, terre e titolo"
+          member: 'Addestramento marziale, equipaggiamento',
+          allied: 'Protezione militare, accesso fortezze',
+          honored: 'Cavalierato, terre e titolo'
         },
         quests: [
-          "Cacciare mostri",
-          "Proteggere pellegrini",
-          "Recuperare artefatti draconici",
-          "Difendere i deboli"
+          'Cacciare mostri',
+          'Proteggere pellegrini',
+          'Recuperare artefatti draconici',
+          'Difendere i deboli'
         ],
         ranks: [
-          { level: 0, title: "Scudiero", minRep: 0 },
-          { level: 1, title: "Cavaliere", minRep: 20 },
-          { level: 2, title: "Cavaliere Veterano", minRep: 40 },
-          { level: 3, title: "Comandante", minRep: 80 },
-          { level: 4, title: "Campione", minRep: 150 }
+          { level: 0, title: 'Scudiero', minRep: 0 },
+          { level: 1, title: 'Cavaliere', minRep: 20 },
+          { level: 2, title: 'Cavaliere Veterano', minRep: 40 },
+          { level: 3, title: 'Comandante', minRep: 80 },
+          { level: 4, title: 'Campione', minRep: 150 }
         ]
       },
 
       // FAZIONI CRIMINALI
-      "benandanti": {
-        name: "I Benandanti",
-        type: "segreta",
-        icon: "icons/magic/nature/leaf-glow-triple-green.webp",
-        alignment: "neutral",
+      benandanti: {
+        name: 'I Benandanti',
+        type: 'segreta',
+        icon: 'icons/magic/nature/leaf-glow-triple-green.webp',
+        alignment: 'neutral',
         power: 6,
-        influence: "regionale",
-        description: "Società segreta di combattenti spirituali",
-        headquarters: "Luoghi sacri nascosti",
-        leader: "Il Primo Nato",
+        influence: 'regionale',
+        description: 'Società segreta di combattenti spirituali',
+        headquarters: 'Luoghi sacri nascosti',
+        leader: 'Il Primo Nato',
         resources: {
           gold: 2000,
           members: 100,
@@ -115,41 +115,41 @@ class FactionsSystem {
           informants: 30
         },
         relations: {
-          "chiesa_calendaria": -30,
-          "popolo": 70,
-          "streghe": -100,
-          "spiriti": 50
+          chiesa_calendaria: -30,
+          popolo: 70,
+          streghe: -100,
+          spiriti: 50
         },
         benefits: {
-          member: "Protezione da maledizioni, erbe curative",
-          allied: "Informazioni su attività sovrannaturali",
-          honored: "Iniziazione ai misteri, poteri spirituali"
+          member: 'Protezione da maledizioni, erbe curative',
+          allied: 'Informazioni su attività sovrannaturali',
+          honored: 'Iniziazione ai misteri, poteri spirituali'
         },
         quests: [
-          "Combattere streghe malvagie",
-          "Proteggere raccolti",
-          "Esorcizzare spiriti",
-          "Trovare nati con la camicia"
+          'Combattere streghe malvagie',
+          'Proteggere raccolti',
+          'Esorcizzare spiriti',
+          'Trovare nati con la camicia'
         ],
         ranks: [
-          { level: 0, title: "Simpatizzante", minRep: 0 },
-          { level: 1, title: "Iniziato", minRep: 15 },
-          { level: 2, title: "Benandante", minRep: 35 },
-          { level: 3, title: "Capitano", minRep: 70 },
-          { level: 4, title: "Gran Benandante", minRep: 140 }
+          { level: 0, title: 'Simpatizzante', minRep: 0 },
+          { level: 1, title: 'Iniziato', minRep: 15 },
+          { level: 2, title: 'Benandante', minRep: 35 },
+          { level: 3, title: 'Capitano', minRep: 70 },
+          { level: 4, title: 'Gran Benandante', minRep: 140 }
         ]
       },
 
-      "mano_nera": {
-        name: "La Mano Nera",
-        type: "criminale",
-        icon: "icons/skills/social/theft-pickpocket-bribery-brown.webp",
-        alignment: "chaotic",
+      mano_nera: {
+        name: 'La Mano Nera',
+        type: 'criminale',
+        icon: 'icons/skills/social/theft-pickpocket-bribery-brown.webp',
+        alignment: 'chaotic',
         power: 7,
-        influence: "nazionale",
-        description: "La più potente organizzazione criminale del Regno",
-        headquarters: "Sconosciuto",
-        leader: "Il Padrone (identità segreta)",
+        influence: 'nazionale',
+        description: 'La più potente organizzazione criminale del Regno',
+        headquarters: 'Sconosciuto',
+        leader: 'Il Padrone (identità segreta)',
         resources: {
           gold: 8000,
           members: 500,
@@ -158,44 +158,44 @@ class FactionsSystem {
           smugglers: 100
         },
         relations: {
-          "chiesa_calendaria": -50,
-          "nobiltà": 30,
-          "guardie": -100,
-          "mercanti": 40,
-          "popolo": 20
+          chiesa_calendaria: -50,
+          nobiltà: 30,
+          guardie: -100,
+          mercanti: 40,
+          popolo: 20
         },
         benefits: {
-          member: "Protezione, contrabbando, informazioni",
-          allied: "Sconto 30% servizi illegali, contatti",
-          honored: "Territorio personale, percentuale affari"
+          member: 'Protezione, contrabbando, informazioni',
+          allied: 'Sconto 30% servizi illegali, contatti',
+          honored: 'Territorio personale, percentuale affari'
         },
         quests: [
-          "Assassinii mirati",
-          "Contrabbando merci",
-          "Estorsioni",
-          "Furto di oggetti preziosi",
-          "Corruzione ufficiali"
+          'Assassinii mirati',
+          'Contrabbando merci',
+          'Estorsioni',
+          'Furto di oggetti preziosi',
+          'Corruzione ufficiali'
         ],
         ranks: [
-          { level: 0, title: "Associato", minRep: 0 },
-          { level: 1, title: "Soldato", minRep: 10 },
-          { level: 2, title: "Capo Decina", minRep: 30 },
-          { level: 3, title: "Luogotenente", minRep: 60 },
-          { level: 4, title: "Capo Famiglia", minRep: 120 },
-          { level: 5, title: "Consigliere", minRep: 200 }
+          { level: 0, title: 'Associato', minRep: 0 },
+          { level: 1, title: 'Soldato', minRep: 10 },
+          { level: 2, title: 'Capo Decina', minRep: 30 },
+          { level: 3, title: 'Luogotenente', minRep: 60 },
+          { level: 4, title: 'Capo Famiglia', minRep: 120 },
+          { level: 5, title: 'Consigliere', minRep: 200 }
         ]
       },
 
       // FAZIONI COMMERCIALI
-      "gilda_mercanti": {
-        name: "Gilda dei Mercanti",
-        type: "commerciale",
-        icon: "icons/commodities/currency/coins-assorted-mix-copper.webp",
-        alignment: "neutral",
+      gilda_mercanti: {
+        name: 'Gilda dei Mercanti',
+        type: 'commerciale',
+        icon: 'icons/commodities/currency/coins-assorted-mix-copper.webp',
+        alignment: 'neutral',
         power: 7,
-        influence: "nazionale",
-        description: "Potente confederazione di mercanti e artigiani",
-        headquarters: "Tarantasia",
+        influence: 'nazionale',
+        description: 'Potente confederazione di mercanti e artigiani',
+        headquarters: 'Tarantasia',
         leader: "Gran Mercante Cosimo de' Fiorini",
         resources: {
           gold: 15000,
@@ -205,44 +205,44 @@ class FactionsSystem {
           warehouses: 100
         },
         relations: {
-          "chiesa_calendaria": 60,
-          "nobiltà": 70,
-          "popolo": 50,
-          "criminali": -20,
-          "pirati": -80
+          chiesa_calendaria: 60,
+          nobiltà: 70,
+          popolo: 50,
+          criminali: -20,
+          pirati: -80
         },
         benefits: {
-          member: "Licenza commerciale, protezione carovane",
-          allied: "Sconto 25% merci, prestiti agevolati",
-          honored: "Monopoli commerciali, partecipazione profitti"
+          member: 'Licenza commerciale, protezione carovane',
+          allied: 'Sconto 25% merci, prestiti agevolati',
+          honored: 'Monopoli commerciali, partecipazione profitti'
         },
         quests: [
-          "Scortare carovane",
-          "Recuperare merci rubate",
-          "Negoziare accordi",
-          "Esplorare nuove rotte",
-          "Eliminare concorrenza"
+          'Scortare carovane',
+          'Recuperare merci rubate',
+          'Negoziare accordi',
+          'Esplorare nuove rotte',
+          'Eliminare concorrenza'
         ],
         ranks: [
-          { level: 0, title: "Apprendista", minRep: 0 },
-          { level: 1, title: "Mercante", minRep: 15 },
-          { level: 2, title: "Mercante Esperto", minRep: 35 },
-          { level: 3, title: "Maestro Mercante", minRep: 70 },
-          { level: 4, title: "Console", minRep: 140 }
+          { level: 0, title: 'Apprendista', minRep: 0 },
+          { level: 1, title: 'Mercante', minRep: 15 },
+          { level: 2, title: 'Mercante Esperto', minRep: 35 },
+          { level: 3, title: 'Maestro Mercante', minRep: 70 },
+          { level: 4, title: 'Console', minRep: 140 }
         ]
       },
 
       // FAZIONI POPOLARI
-      "briganti_sherwood": {
-        name: "Briganti di Sherwood",
-        type: "ribelle",
-        icon: "icons/weapons/bows/bow-recurve-yellow.webp",
-        alignment: "chaotic good",
+      briganti_sherwood: {
+        name: 'Briganti di Sherwood',
+        type: 'ribelle',
+        icon: 'icons/weapons/bows/bow-recurve-yellow.webp',
+        alignment: 'chaotic good',
         power: 5,
-        influence: "regionale",
-        description: "Briganti che rubano ai ricchi per dare ai poveri",
-        headquarters: "Foresta di Sherwood",
-        leader: "Robin di Locksley",
+        influence: 'regionale',
+        description: 'Briganti che rubano ai ricchi per dare ai poveri',
+        headquarters: 'Foresta di Sherwood',
+        leader: 'Robin di Locksley',
         resources: {
           gold: 1000,
           members: 60,
@@ -250,42 +250,42 @@ class FactionsSystem {
           supporters: 200
         },
         relations: {
-          "nobiltà": -80,
-          "chiesa_calendaria": -30,
-          "popolo": 90,
-          "guardie": -100
+          nobiltà: -80,
+          chiesa_calendaria: -30,
+          popolo: 90,
+          guardie: -100
         },
         benefits: {
-          member: "Rifugio nella foresta, addestramento arceria",
-          allied: "Aiuto contro oppressori, parte del bottino",
-          honored: "Leggenda vivente, comando banda"
+          member: 'Rifugio nella foresta, addestramento arceria',
+          allied: 'Aiuto contro oppressori, parte del bottino',
+          honored: 'Leggenda vivente, comando banda'
         },
         quests: [
-          "Derubare esattori",
-          "Liberare prigionieri",
-          "Distribuire cibo ai poveri",
-          "Tendere imboscate a nobili"
+          'Derubare esattori',
+          'Liberare prigionieri',
+          'Distribuire cibo ai poveri',
+          'Tendere imboscate a nobili'
         ],
         ranks: [
-          { level: 0, title: "Simpatizzante", minRep: 0 },
-          { level: 1, title: "Brigante", minRep: 10 },
-          { level: 2, title: "Fuorilegge", minRep: 25 },
-          { level: 3, title: "Luogotenente", minRep: 50 },
-          { level: 4, title: "Capo Brigante", minRep: 100 }
+          { level: 0, title: 'Simpatizzante', minRep: 0 },
+          { level: 1, title: 'Brigante', minRep: 10 },
+          { level: 2, title: 'Fuorilegge', minRep: 25 },
+          { level: 3, title: 'Luogotenente', minRep: 50 },
+          { level: 4, title: 'Capo Brigante', minRep: 100 }
         ]
       },
 
       // FAZIONI MAGICHE
-      "congrega_streghe": {
-        name: "Congrega delle Streghe",
-        type: "magica",
-        icon: "icons/magic/symbols/pentagram-glowing-purple.webp",
-        alignment: "chaotic",
+      congrega_streghe: {
+        name: 'Congrega delle Streghe',
+        type: 'magica',
+        icon: 'icons/magic/symbols/pentagram-glowing-purple.webp',
+        alignment: 'chaotic',
         power: 6,
-        influence: "segreta",
-        description: "Rete segreta di streghe e stregoni",
-        headquarters: "Vari covi nascosti",
-        leader: "La Megera Suprema",
+        influence: 'segreta',
+        description: 'Rete segreta di streghe e stregoni',
+        headquarters: 'Vari covi nascosti',
+        leader: 'La Megera Suprema',
         resources: {
           gold: 3000,
           members: 50,
@@ -294,28 +294,28 @@ class FactionsSystem {
           grimoires: 20
         },
         relations: {
-          "chiesa_calendaria": -100,
-          "benandanti": -100,
-          "popolo": -30,
-          "demoni": 50
+          chiesa_calendaria: -100,
+          benandanti: -100,
+          popolo: -30,
+          demoni: 50
         },
         benefits: {
-          member: "Insegnamenti magici, ingredienti rari",
-          allied: "Pozioni, maledizioni su commissione",
-          honored: "Iniziazione ai grandi misteri, famiglio"
+          member: 'Insegnamenti magici, ingredienti rari',
+          allied: 'Pozioni, maledizioni su commissione',
+          honored: 'Iniziazione ai grandi misteri, famiglio'
         },
         quests: [
-          "Procurare ingredienti rari",
-          "Sabotare benedizioni",
-          "Corrompere innocenti",
-          "Evocare entità"
+          'Procurare ingredienti rari',
+          'Sabotare benedizioni',
+          'Corrompere innocenti',
+          'Evocare entità'
         ],
         ranks: [
-          { level: 0, title: "Novizio", minRep: 0 },
-          { level: 1, title: "Adepto", minRep: 20 },
-          { level: 2, title: "Strega/Stregone", minRep: 40 },
-          { level: 3, title: "Alto/a Strega/one", minRep: 80 },
-          { level: 4, title: "Arci-strega/one", minRep: 160 }
+          { level: 0, title: 'Novizio', minRep: 0 },
+          { level: 1, title: 'Adepto', minRep: 20 },
+          { level: 2, title: 'Strega/Stregone', minRep: 40 },
+          { level: 3, title: 'Alto/a Strega/one', minRep: 80 },
+          { level: 4, title: 'Arci-strega/one', minRep: 160 }
         ]
       }
     };
@@ -334,7 +334,7 @@ class FactionsSystem {
    * Metodo statico di inizializzazione completo
    */
   static initialize() {
-    console.log("🏰 Inizializzazione Sistema Fazioni");
+    console.log('🏰 Inizializzazione Sistema Fazioni');
 
     // Registrazione settings
     this.registerSettings();
@@ -358,35 +358,35 @@ class FactionsSystem {
     // Estensione Actor per fazioni
     this.extendActor();
 
-    console.log("✅ Sistema Fazioni inizializzato");
+    console.log('✅ Sistema Fazioni inizializzato');
   }
 
   /**
    * Registra le impostazioni del modulo
    */
   static registerSettings() {
-    game.settings.register("brancalonia-bigat", "factionInfluence", {
-      name: "Influenza Fazioni",
-      hint: "Le fazioni influenzano prezzi, quest e interazioni",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'factionInfluence', {
+      name: 'Influenza Fazioni',
+      hint: 'Le fazioni influenzano prezzi, quest e interazioni',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "factionWars", {
-      name: "Guerre tra Fazioni",
-      hint: "Abilita conflitti dinamici tra fazioni",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'factionWars', {
+      name: 'Guerre tra Fazioni',
+      hint: 'Abilita conflitti dinamici tra fazioni',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "factionReputation", {
-      name: "Sistema Reputazione Fazioni",
-      hint: "Abilita sistema di reputazione avanzato con le fazioni",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'factionReputation', {
+      name: 'Sistema Reputazione Fazioni',
+      hint: 'Abilita sistema di reputazione avanzato con le fazioni',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
@@ -398,23 +398,23 @@ class FactionsSystem {
    */
   static registerChatCommands() {
     // Comando per gestire fazioni
-    game.socket.on("system.brancalonia-bigat", (data) => {
-      if (data.type === "faction-command" && game.user.isGM) {
+    game.socket.on('system.brancalonia-bigat', (data) => {
+      if (data.type === 'faction-command' && game.user.isGM) {
         const instance = game.brancalonia?.factionsSystem;
         if (instance) {
           switch (data.command) {
-            case "adjustRep":
+            case 'adjustRep':
               instance.adjustReputation(data.actor, data.faction, data.amount, data.options);
               break;
-            case "startWar":
+            case 'startWar':
               instance.startFactionWar(data.faction1, data.faction2, data.reason);
               break;
-            case "generateQuest":
+            case 'generateQuest':
               const quest = instance.generateFactionQuest(data.faction, data.difficulty);
               if (quest) {
                 ChatMessage.create({
                   content: instance._formatQuestMessage(quest),
-                  speaker: { alias: "Fazioni" }
+                  speaker: { alias: 'Fazioni' }
                 });
               }
               break;
@@ -424,13 +424,13 @@ class FactionsSystem {
     });
 
     // Comando testuale per fazioni
-    if (game.modules.get("monk-enhanced-journal")?.active) {
-      game.MonksEnhancedJournal?.registerChatCommand("/fazione", {
-        name: "Gestisci Fazioni",
+    if (game.modules.get('monk-enhanced-journal')?.active) {
+      game.MonksEnhancedJournal?.registerChatCommand('/fazione', {
+        name: 'Gestisci Fazioni',
         callback: (args) => {
           const instance = game.brancalonia?.factionsSystem;
           if (instance && game.user.isGM) {
-            if (args[0] === "rep" && args.length >= 4) {
+            if (args[0] === 'rep' && args.length >= 4) {
               // /fazione rep @personaggio fazione_key +/-valore
               const actorName = args[1]?.replace('@', '');
               const factionKey = args[2];
@@ -440,14 +440,14 @@ class FactionsSystem {
               if (actor && instance.factions[factionKey]) {
                 instance.adjustReputation(actor, factionKey, amount);
               } else {
-                ui.notifications.error("Attore o fazione non trovati!");
+                ui.notifications.error('Attore o fazione non trovati!');
               }
             } else {
               instance.renderFactionsManager();
             }
           }
         },
-        help: "Uso: /fazione [rep @personaggio fazione +/-valore] - Gestisce le fazioni"
+        help: 'Uso: /fazione [rep @personaggio fazione +/-valore] - Gestisce le fazioni'
       });
     }
   }
@@ -459,9 +459,9 @@ class FactionsSystem {
     if (!game.user.isGM) return;
 
     const macroData = {
-      name: "🏰 Gestione Fazioni",
-      type: "script",
-      img: "icons/environment/settlement/castle.webp",
+      name: '🏰 Gestione Fazioni',
+      type: 'script',
+      img: 'icons/environment/settlement/castle.webp',
       command: `
 const factionSystem = game.brancalonia?.factionsSystem;
 if (factionSystem) {
@@ -473,14 +473,14 @@ if (factionSystem) {
       folder: null,
       sort: 0,
       ownership: { default: 0, [game.user.id]: 3 },
-      flags: { "brancalonia-bigat": { "auto-generated": true } }
+      flags: { 'brancalonia-bigat': { 'auto-generated': true } }
     };
 
     // Controlla se esiste già
     const existing = game.macros.find(m => m.name === macroData.name);
     if (!existing) {
       Macro.create(macroData);
-      console.log("✅ Macro Fazioni creata");
+      console.log('✅ Macro Fazioni creata');
     }
   }
 
@@ -489,7 +489,7 @@ if (factionSystem) {
    */
   static extendActor() {
     // Metodo per ottenere reputazione con una fazione
-    Actor.prototype.getFactionReputation = function(factionKey) {
+    Actor.prototype.getFactionReputation = function (factionKey) {
       const instance = game.brancalonia?.factionsSystem;
       if (instance) {
         return instance.getReputation(this, factionKey);
@@ -498,7 +498,7 @@ if (factionSystem) {
     };
 
     // Metodo per unirsi a una fazione
-    Actor.prototype.joinFaction = async function(factionKey) {
+    Actor.prototype.joinFaction = async function (factionKey) {
       const instance = game.brancalonia?.factionsSystem;
       if (instance && instance.factions[factionKey]) {
         await instance.adjustReputation(this, factionKey, 10);
@@ -506,7 +506,7 @@ if (factionSystem) {
         // Imposta fazione principale se non ce n'è una
         const currentFaction = this.flags.brancalonia?.primaryFaction;
         if (!currentFaction) {
-          await this.setFlag("brancalonia-bigat", "primaryFaction", factionKey);
+          await this.setFlag('brancalonia-bigat', 'primaryFaction', factionKey);
         }
 
         return true;
@@ -515,7 +515,7 @@ if (factionSystem) {
     };
 
     // Metodo per abbandonare una fazione
-    Actor.prototype.leaveFaction = async function(factionKey) {
+    Actor.prototype.leaveFaction = async function (factionKey) {
       const instance = game.brancalonia?.factionsSystem;
       if (instance) {
         await instance.adjustReputation(this, factionKey, -25);
@@ -523,7 +523,7 @@ if (factionSystem) {
         // Rimuovi come fazione principale se lo è
         const currentFaction = this.flags.brancalonia?.primaryFaction;
         if (currentFaction === factionKey) {
-          await this.unsetFlag("brancalonia-bigat", "primaryFaction");
+          await this.unsetFlag('brancalonia-bigat', 'primaryFaction');
         }
 
         return true;
@@ -532,7 +532,7 @@ if (factionSystem) {
     };
 
     // Metodo per ottenere rango in una fazione
-    Actor.prototype.getFactionRank = function(factionKey) {
+    Actor.prototype.getFactionRank = function (factionKey) {
       const instance = game.brancalonia?.factionsSystem;
       if (instance && instance.factions[factionKey]) {
         const reputation = instance.getReputation(this, factionKey);
@@ -545,10 +545,10 @@ if (factionSystem) {
 
   _initializeFactionRelations() {
     // Inizializza le relazioni tra tutte le fazioni
-    for (let faction1 in this.factions) {
-      for (let faction2 in this.factions) {
+    for (const faction1 in this.factions) {
+      for (const faction2 in this.factions) {
         if (faction1 !== faction2) {
-          const key = [faction1, faction2].sort().join("-");
+          const key = [faction1, faction2].sort().join('-');
           if (!this.factionRelations.has(key)) {
             // Calcola relazione base
             const f1 = this.factions[faction1];
@@ -560,10 +560,10 @@ if (factionSystem) {
 
             // Allineamenti opposti = -40
             if (f1.alignment && f2.alignment) {
-              if (f1.alignment.includes("lawful") && f2.alignment.includes("chaotic")) {
+              if (f1.alignment.includes('lawful') && f2.alignment.includes('chaotic')) {
                 relation -= 40;
               }
-              if (f1.alignment.includes("good") && f2.alignment.includes("evil")) {
+              if (f1.alignment.includes('good') && f2.alignment.includes('evil')) {
                 relation -= 40;
               }
             }
@@ -582,7 +582,7 @@ if (factionSystem) {
 
   _setupHooks() {
     // Hook per conseguenze azioni (usando hook ufficiale)
-    Hooks.on("dnd5e.applyDamage", (target, damage, options) => {
+    Hooks.on('dnd5e.applyDamage', (target, damage, options) => {
       if (target.flags.brancalonia?.faction) {
         const attacker = options.attacker;
         if (attacker?.hasPlayerOwner) {
@@ -593,18 +593,18 @@ if (factionSystem) {
     });
 
     // Hook per trasferimento oggetti (hook standard Foundry)
-    Hooks.on("preUpdateItem", (item, changes, options, userId) => {
+    Hooks.on('preUpdateItem', (item, changes, options, userId) => {
       // Controlla se l'oggetto viene trasferito
-      if (changes.parent && item.parent?.flags?.brancalonia?.faction === "gilda_mercanti") {
+      if (changes.parent && item.parent?.flags?.brancalonia?.faction === 'gilda_mercanti') {
         const newOwner = game.actors.get(changes.parent);
         if (newOwner?.hasPlayerOwner) {
-          this.adjustReputation(newOwner, "gilda_mercanti", 1);
+          this.adjustReputation(newOwner, 'gilda_mercanti', 1);
         }
       }
     });
 
     // Hook per completamento chat messages (per quest)
-    Hooks.on("createChatMessage", (message, options, userId) => {
+    Hooks.on('createChatMessage', (message, options, userId) => {
       // Controlla se il messaggio indica completamento quest
       if (message.flags?.brancalonia?.questComplete) {
         const quest = message.flags.brancalonia.quest;
@@ -616,14 +616,14 @@ if (factionSystem) {
     });
 
     // Hook per eventi temporali
-    Hooks.on("timePassed", (worldTime, dt) => {
+    Hooks.on('timePassed', (worldTime, dt) => {
       if (dt >= 86400 && game.user.isGM) { // Ogni giorno (86400 secondi)
         this._dailyFactionEvents();
       }
     });
 
     // Hook per modifiche del mondo che influenzano le fazioni
-    Hooks.on("updateScene", (scene, update, options, userId) => {
+    Hooks.on('updateScene', (scene, update, options, userId) => {
       if (update.flags?.brancalonia?.factionControl && game.user.isGM) {
         this._handleTerritorialChange(scene, update.flags.brancalonia.factionControl);
       }
@@ -661,14 +661,14 @@ if (factionSystem) {
     // Salva nel flag dell'attore
     const factionReps = actor.flags.brancalonia?.factionReputations || {};
     factionReps[factionKey] = newRep;
-    await actor.setFlag("brancalonia-bigat", "factionReputations", factionReps);
+    await actor.setFlag('brancalonia-bigat', 'factionReputations', factionReps);
 
     // Controlla cambio rango
     const oldRank = this._getRank(faction, currentRep);
     const newRank = this._getRank(faction, newRep);
 
     // Notifica
-    const emoji = amount > 0 ? "📈" : "📉";
+    const emoji = amount > 0 ? '📈' : '📉';
     ChatMessage.create({
       content: `
         <div class="brancalonia-faction-rep">
@@ -704,7 +704,7 @@ if (factionSystem) {
   _getRank(faction, reputation) {
     let currentRank = faction.ranks[0];
 
-    for (let rank of faction.ranks) {
+    for (const rank of faction.ranks) {
       if (reputation >= rank.minRep) {
         currentRank = rank;
       }
@@ -720,7 +720,7 @@ if (factionSystem) {
     // Crea item per rappresentare il rango
     const rankItem = {
       name: `${faction.name}: ${rank.title}`,
-      type: "feat",
+      type: 'feat',
       img: faction.icon,
       system: {
         description: {
@@ -735,7 +735,7 @@ if (factionSystem) {
             </ul>
           `
         },
-        source: "Brancalonia"
+        source: 'Brancalonia'
       },
       flags: {
         brancalonia: {
@@ -746,7 +746,7 @@ if (factionSystem) {
       }
     };
 
-    await actor.createEmbeddedDocuments("Item", [rankItem]);
+    await actor.createEmbeddedDocuments('Item', [rankItem]);
   }
 
   /**
@@ -758,7 +758,7 @@ if (factionSystem) {
       i.flags.brancalonia?.faction === faction.name
     );
 
-    for (let item of items) {
+    for (const item of items) {
       await item.delete();
     }
   }
@@ -770,7 +770,7 @@ if (factionSystem) {
     const faction = this.factions[factionKey];
 
     // Effetti su fazioni alleate/nemiche
-    for (let [otherFaction, relation] of Object.entries(faction.relations)) {
+    for (const [otherFaction, relation] of Object.entries(faction.relations)) {
       if (this.factions[otherFaction]) {
         let cascadeAmount = 0;
 
@@ -794,7 +794,7 @@ if (factionSystem) {
   /**
    * Genera missione per una fazione
    */
-  generateFactionQuest(factionKey, difficulty = "medium") {
+  generateFactionQuest(factionKey, difficulty = 'medium') {
     const faction = this.factions[factionKey];
     if (!faction) return null;
 
@@ -813,7 +813,7 @@ if (factionSystem) {
       name: `${faction.name}: ${questType}`,
       faction: factionKey,
       type: questType,
-      difficulty: difficulty,
+      difficulty,
       dc: mod.dc,
       description: this._generateQuestDescription(faction, questType),
       objectives: this._generateQuestObjectives(questType),
@@ -824,7 +824,7 @@ if (factionSystem) {
       },
       consequences: {
         success: `+${mod.reward} reputazione con ${faction.name}`,
-        failure: `-${Math.floor(mod.reward/2)} reputazione con ${faction.name}`
+        failure: `-${Math.floor(mod.reward / 2)} reputazione con ${faction.name}`
       }
     };
 
@@ -833,12 +833,12 @@ if (factionSystem) {
 
   _generateQuestDescription(faction, questType) {
     const descriptions = {
-      "Recuperare reliquie sacre": `La ${faction.name} richiede il recupero di una reliquia sacra rubata da eretici.`,
-      "Eliminare eretici": `Un gruppo di eretici sta corrompendo i fedeli. La ${faction.name} vuole che siano fermati.`,
-      "Cacciare mostri": `Un terribile mostro minaccia i territori protetti dalla ${faction.name}.`,
-      "Scortare carovane": `Una carovana importante della ${faction.name} necessita protezione.`,
-      "Assassinii mirati": `La ${faction.name} vuole eliminare discretamente un nemico.`,
-      "Contrabbando merci": `Merci preziose devono essere contrabbandate oltre i confini.`
+      'Recuperare reliquie sacre': `La ${faction.name} richiede il recupero di una reliquia sacra rubata da eretici.`,
+      'Eliminare eretici': `Un gruppo di eretici sta corrompendo i fedeli. La ${faction.name} vuole che siano fermati.`,
+      'Cacciare mostri': `Un terribile mostro minaccia i territori protetti dalla ${faction.name}.`,
+      'Scortare carovane': `Una carovana importante della ${faction.name} necessita protezione.`,
+      'Assassinii mirati': `La ${faction.name} vuole eliminare discretamente un nemico.`,
+      'Contrabbando merci': `Merci preziose devono essere contrabbandate oltre i confini.`
     };
 
     return descriptions[questType] || `La ${faction.name} richiede assistenza per ${questType}.`;
@@ -846,28 +846,28 @@ if (factionSystem) {
 
   _generateQuestObjectives(questType) {
     const objectivesMap = {
-      "Recuperare reliquie sacre": [
-        "Localizzare la reliquia",
-        "Infiltrarsi nel nascondiglio",
+      'Recuperare reliquie sacre': [
+        'Localizzare la reliquia',
+        'Infiltrarsi nel nascondiglio',
         "Recuperare l'oggetto",
-        "Riportarlo intatto"
+        'Riportarlo intatto'
       ],
-      "Eliminare eretici": [
-        "Identificare il leader",
-        "Trovare il loro covo",
-        "Eliminarli o catturarli",
-        "Distruggere i loro scritti"
+      'Eliminare eretici': [
+        'Identificare il leader',
+        'Trovare il loro covo',
+        'Eliminarli o catturarli',
+        'Distruggere i loro scritti'
       ],
-      "Cacciare mostri": [
-        "Rintracciare il mostro",
-        "Studiarne le debolezze",
-        "Affrontarlo",
+      'Cacciare mostri': [
+        'Rintracciare il mostro',
+        'Studiarne le debolezze',
+        'Affrontarlo',
         "Portare prova dell'uccisione"
       ],
       default: [
-        "Accettare la missione",
+        'Accettare la missione',
         "Completare l'obiettivo",
-        "Riportare alla fazione"
+        'Riportare alla fazione'
       ]
     };
 
@@ -876,10 +876,10 @@ if (factionSystem) {
 
   _generateSpecialReward(faction, difficulty) {
     const rewards = {
-      easy: ["Lettera di raccomandazione", "Sconto servizi fazione"],
-      medium: ["Oggetto benedetto", "Contatto importante", "Accesso area ristretta"],
-      hard: ["Oggetto magico minore", "Titolo onorario", "Proprietà piccola"],
-      deadly: ["Oggetto magico raro", "Posizione nella fazione", "Feudo o territorio"]
+      easy: ['Lettera di raccomandazione', 'Sconto servizi fazione'],
+      medium: ['Oggetto benedetto', 'Contatto importante', 'Accesso area ristretta'],
+      hard: ['Oggetto magico minore', 'Titolo onorario', 'Proprietà piccola'],
+      deadly: ['Oggetto magico raro', 'Posizione nella fazione', 'Feudo o territorio']
     };
 
     const pool = rewards[difficulty];
@@ -889,8 +889,8 @@ if (factionSystem) {
   /**
    * Inizia una guerra tra fazioni
    */
-  async startFactionWar(faction1Key, faction2Key, reason = "Dispute territoriali") {
-    if (!game.settings.get("brancalonia-bigat", "factionWars")) return;
+  async startFactionWar(faction1Key, faction2Key, reason = 'Dispute territoriali') {
+    if (!game.settings.get('brancalonia-bigat', 'factionWars')) return;
 
     const f1 = this.factions[faction1Key];
     const f2 = this.factions[faction2Key];
@@ -902,20 +902,20 @@ if (factionSystem) {
     const f2Strength = f2.power + (f2.resources.troops || 0) / 50;
 
     // Imposta stato di guerra
-    const warKey = [faction1Key, faction2Key].sort().join("-");
+    const warKey = [faction1Key, faction2Key].sort().join('-');
     const warData = {
       factions: [faction1Key, faction2Key],
-      reason: reason,
+      reason,
       startTime: game.time.worldTime,
       strength: {
         [faction1Key]: f1Strength,
         [faction2Key]: f2Strength
       },
       battles: [],
-      status: "active"
+      status: 'active'
     };
 
-    await game.settings.set("brancalonia-bigat", `war-${warKey}`, warData);
+    await game.settings.set('brancalonia-bigat', `war-${warKey}`, warData);
 
     // Annuncio
     ChatMessage.create({
@@ -931,7 +931,7 @@ if (factionSystem) {
           </ul>
         </div>
       `,
-      speaker: { alias: "Eventi del Regno" }
+      speaker: { alias: 'Eventi del Regno' }
     });
 
     // Effetti sulla reputazione dei PG
@@ -994,13 +994,13 @@ if (factionSystem) {
    */
   async _dailyFactionEvents() {
     // Controllo guerre attive
-    const settings = game.settings.storage.get("world") || {};
+    const settings = game.settings.storage.get('world') || {};
     const wars = Object.keys(settings)
-      .filter(key => key.startsWith("brancalonia-bigat.war-"))
+      .filter(key => key.startsWith('brancalonia-bigat.war-'))
       .map(key => settings[key]);
 
     for (const war of wars) {
-      if (war.status === "active") {
+      if (war.status === 'active') {
         // 20% chance di battaglia ogni giorno
         if (Math.random() < 0.2) {
           this.resolveFactionBattle(war.factions[0], war.factions[1]);
@@ -1039,7 +1039,7 @@ if (factionSystem) {
           <p>${event}</p>
         </div>
       `,
-      speaker: { alias: "Cronache del Regno" }
+      speaker: { alias: 'Cronache del Regno' }
     });
   }
 
@@ -1059,7 +1059,7 @@ if (factionSystem) {
             <p>Precedentemente controllata da: ${this.factions[oldFaction]?.name || oldFaction}</p>
           </div>
         `,
-        speaker: { alias: "Eventi del Regno" }
+        speaker: { alias: 'Eventi del Regno' }
       });
     }
   }
@@ -1108,9 +1108,9 @@ if (factionSystem) {
               </thead>
               <tbody>
                 ${Object.entries(this.factions).map(([key, faction]) => {
-                  const rep = this.getReputation(actor, key);
-                  const rank = this._getRank(faction, rep);
-                  return `
+    const rep = this.getReputation(actor, key);
+    const rank = this._getRank(faction, rep);
+    return `
                     <tr>
                       <td>
                         <img src="${faction.icon}" width="20" height="20">
@@ -1124,7 +1124,7 @@ if (factionSystem) {
                       </td>
                     </tr>
                   `;
-                }).join('')}
+  }).join('')}
               </tbody>
             </table>
           </div>
@@ -1155,10 +1155,10 @@ if (factionSystem) {
     `;
 
     const dialog = new Dialog({
-      title: "Gestione Fazioni",
-      content: content,
+      title: 'Gestione Fazioni',
+      content,
       buttons: {
-        close: { label: "Chiudi" }
+        close: { label: 'Chiudi' }
       },
       render: html => {
         if (actor) {
@@ -1173,12 +1173,12 @@ if (factionSystem) {
 
         html.find('.generate-quest').click(ev => {
           const faction = ev.currentTarget.dataset.faction;
-          const quest = this.generateFactionQuest(faction, "medium");
+          const quest = this.generateFactionQuest(faction, 'medium');
 
           if (quest) {
             ChatMessage.create({
               content: this._formatQuestMessage(quest),
-              speaker: { alias: "Fazioni" }
+              speaker: { alias: 'Fazioni' }
             });
           }
         });
@@ -1221,7 +1221,7 @@ if (factionSystem) {
                 </ul>
               </div>
             `,
-            buttons: { close: { label: "Chiudi" } }
+            buttons: { close: { label: 'Chiudi' } }
           }).render(true);
         });
 
@@ -1245,16 +1245,16 @@ if (factionSystem) {
           <label>Fazione 1:</label>
           <select id="faction1">
             ${Object.entries(this.factions).map(([key, f]) =>
-              `<option value="${key}">${f.name}</option>`
-            ).join('')}
+    `<option value="${key}">${f.name}</option>`
+  ).join('')}
           </select>
         </div>
         <div class="form-group">
           <label>Fazione 2:</label>
           <select id="faction2">
             ${Object.entries(this.factions).map(([key, f]) =>
-              `<option value="${key}">${f.name}</option>`
-            ).join('')}
+    `<option value="${key}">${f.name}</option>`
+  ).join('')}
           </select>
         </div>
         <div class="form-group">
@@ -1265,11 +1265,11 @@ if (factionSystem) {
     `;
 
     new Dialog({
-      title: "Inizia Guerra tra Fazioni",
-      content: content,
+      title: 'Inizia Guerra tra Fazioni',
+      content,
       buttons: {
         start: {
-          label: "Inizia Guerra",
+          label: 'Inizia Guerra',
           callback: html => {
             const f1 = html.find('#faction1').val();
             const f2 = html.find('#faction2').val();
@@ -1277,22 +1277,22 @@ if (factionSystem) {
             this.startFactionWar(f1, f2, reason);
           }
         },
-        cancel: { label: "Annulla" }
+        cancel: { label: 'Annulla' }
       }
     }).render(true);
   }
 
   _showActiveWarsDialog() {
-    const settings = game.settings.storage.get("world") || {};
+    const settings = game.settings.storage.get('world') || {};
     const wars = Object.entries(settings)
-      .filter(([key, value]) => key.startsWith("brancalonia-bigat.war-"))
+      .filter(([key, value]) => key.startsWith('brancalonia-bigat.war-'))
       .map(([key, war]) => ({ key, ...war }));
 
     const content = `
       <div class="active-wars">
         <h3>Guerre Attive</h3>
         ${wars.length > 0 ?
-          wars.map(war => `
+    wars.map(war => `
             <div class="war-entry">
               <h4>${this.factions[war.factions[0]]?.name} vs ${this.factions[war.factions[1]]?.name}</h4>
               <p><strong>Motivo:</strong> ${war.reason}</p>
@@ -1301,20 +1301,20 @@ if (factionSystem) {
               <button class="end-war" data-key="${war.key}">Termina Guerra</button>
             </div>
           `).join('') :
-          '<p>Nessuna guerra attiva</p>'
-        }
+    '<p>Nessuna guerra attiva</p>'
+}
       </div>
     `;
 
     new Dialog({
-      title: "Guerre Attive",
-      content: content,
-      buttons: { close: { label: "Chiudi" } },
+      title: 'Guerre Attive',
+      content,
+      buttons: { close: { label: 'Chiudi' } },
       render: html => {
         html.find('.end-war').click(async (ev) => {
           const warKey = ev.currentTarget.dataset.key;
-          await game.settings.set("brancalonia-bigat", warKey.replace("brancalonia-bigat.", ""), null);
-          ui.notifications.info("Guerra terminata");
+          await game.settings.set('brancalonia-bigat', warKey.replace('brancalonia-bigat.', ''), null);
+          ui.notifications.info('Guerra terminata');
           ev.currentTarget.closest('.war-entry').remove();
         });
       }
@@ -1325,9 +1325,9 @@ if (factionSystem) {
 // Registra classe globale
 window.FactionsSystem = FactionsSystem;
 
-// Auto-inizializzazione
+// Auto-inizializzazione - migrato a init per garantire disponibilità
 Hooks.once('init', () => {
-  console.log("🎮 Brancalonia | Inizializzazione Factions System");
+  console.log('🎮 Brancalonia | Inizializzazione Factions System');
   FactionsSystem.initialize();
 });
 
@@ -1336,7 +1336,7 @@ Hooks.on('renderActorSheet', (app, html, data) => {
   if (!game.user.isGM) return;
 
   const actor = app.actor;
-  if (actor.type !== "character" && actor.type !== "npc") return;
+  if (actor.type !== 'character' && actor.type !== 'npc') return;
 
   // Aggiungi sezione fazioni
   const factionSection = $(`
@@ -1382,18 +1382,18 @@ Hooks.on('renderActorSheet', (app, html, data) => {
             </thead>
             <tbody>
               ${Object.entries(reputations)
-                .filter(([key, rep]) => rep !== 0)
-                .map(([key, rep]) => {
-                  const faction = instance.factions[key];
-                  const rank = faction ? instance._getRank(faction, rep) : null;
-                  return `
+    .filter(([key, rep]) => rep !== 0)
+    .map(([key, rep]) => {
+      const faction = instance.factions[key];
+      const rank = faction ? instance._getRank(faction, rep) : null;
+      return `
                     <tr>
                       <td>${faction?.name || key}</td>
                       <td>${rep}</td>
                       <td>${rank?.title || 'N/A'}</td>
                     </tr>
                   `;
-                }).join('') || '<tr><td colspan="3"><em>Nessuna reputazione</em></td></tr>'}
+    }).join('') || '<tr><td colspan="3"><em>Nessuna reputazione</em></td></tr>'}
             </tbody>
           </table>
         </div>
@@ -1402,7 +1402,7 @@ Hooks.on('renderActorSheet', (app, html, data) => {
       new Dialog({
         title: `Status Fazioni - ${actor.name}`,
         content,
-        buttons: { close: { label: "Chiudi" } }
+        buttons: { close: { label: 'Chiudi' } }
       }).render(true);
     }
   });

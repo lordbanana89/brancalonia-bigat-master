@@ -12,161 +12,161 @@ class HavenSystem {
     this.roomTypes = {
       // Stanze Base
       dormitory: {
-        name: "Dormitorio",
-        icon: "icons/environment/settlement/bed-wooden.webp",
+        name: 'Dormitorio',
+        icon: 'icons/environment/settlement/bed-wooden.webp',
         cost: 100,
         maintenance: 5,
         capacity: 4,
         benefits: {
           restBonus: 1, // +1 dado vita recuperato
-          description: "Letti comodi per riposare. +1 dado vita durante riposo lungo."
+          description: 'Letti comodi per riposare. +1 dado vita durante riposo lungo.'
         }
       },
       kitchen: {
-        name: "Cucina",
-        icon: "icons/environment/settlement/kitchen.webp",
+        name: 'Cucina',
+        icon: 'icons/environment/settlement/kitchen.webp',
         cost: 150,
         maintenance: 10,
         capacity: 0,
         benefits: {
           healingBonus: 2,
           exhaustionRecovery: true,
-          description: "Pasti caldi e nutrienti. +2 hp extra per riposo, rimuove exhaustion."
+          description: 'Pasti caldi e nutrienti. +2 hp extra per riposo, rimuove exhaustion.'
         }
       },
       armory: {
-        name: "Armeria",
-        icon: "icons/environment/settlement/armory.webp",
+        name: 'Armeria',
+        icon: 'icons/environment/settlement/armory.webp',
         cost: 200,
         maintenance: 15,
         capacity: 0,
         benefits: {
           repairCost: 0.5, // 50% sconto riparazioni
           weaponStorage: 20,
-          description: "Mantieni e ripara equipaggiamento. 50% sconto riparazioni."
+          description: 'Mantieni e ripara equipaggiamento. 50% sconto riparazioni.'
         }
       },
       laboratory: {
-        name: "Laboratorio",
-        icon: "icons/tools/laboratory/alembic-glass-ball-blue.webp",
+        name: 'Laboratorio',
+        icon: 'icons/tools/laboratory/alembic-glass-ball-blue.webp',
         cost: 300,
         maintenance: 20,
         capacity: 0,
         benefits: {
           craftingBonus: 2,
           potionBrewing: true,
-          description: "Crea pozioni e oggetti alchemici. +2 a prove di crafting."
+          description: 'Crea pozioni e oggetti alchemici. +2 a prove di crafting.'
         },
-        requirements: ["int", 13] // Richiede INT 13+
+        requirements: ['int', 13] // Richiede INT 13+
       },
       library: {
-        name: "Biblioteca",
-        icon: "icons/environment/settlement/library.webp",
+        name: 'Biblioteca',
+        icon: 'icons/environment/settlement/library.webp',
         cost: 400,
         maintenance: 10,
         capacity: 0,
         benefits: {
           researchBonus: 5,
           languageLearning: true,
-          description: "Ricerca e studio. +5 a Investigation per ricerche."
+          description: 'Ricerca e studio. +5 a Investigation per ricerche.'
         }
       },
       prison: {
-        name: "Prigione",
-        icon: "icons/environment/settlement/jail-cell.webp",
+        name: 'Prigione',
+        icon: 'icons/environment/settlement/jail-cell.webp',
         cost: 250,
         maintenance: 15,
         capacity: 3,
         benefits: {
           interrogationBonus: 3,
           prisoner: true,
-          description: "Cattura e interroga nemici. +3 a Intimidation per interrogatori."
+          description: 'Cattura e interroga nemici. +3 a Intimidation per interrogatori.'
         }
       },
       tavern: {
-        name: "Taverna",
-        icon: "icons/environment/settlement/tavern.webp",
+        name: 'Taverna',
+        icon: 'icons/environment/settlement/tavern.webp',
         cost: 350,
         maintenance: 25,
         capacity: 0,
         benefits: {
-          income: "2d6",
+          income: '2d6',
           information: true,
-          description: "Guadagni passivi e informazioni. 2d6 ducati/settimana."
+          description: 'Guadagni passivi e informazioni. 2d6 ducati/settimana.'
         }
       },
       chapel: {
-        name: "Cappella",
-        icon: "icons/environment/settlement/chapel.webp",
+        name: 'Cappella',
+        icon: 'icons/environment/settlement/chapel.webp',
         cost: 300,
         maintenance: 10,
         capacity: 0,
         benefits: {
           divineProtection: true,
           resurrection: 0.8, // 20% sconto resurrezioni
-          description: "Protezione divina. 20% sconto servizi divini."
+          description: 'Protezione divina. 20% sconto servizi divini.'
         }
       },
       stable: {
-        name: "Stalla",
-        icon: "icons/environment/settlement/stable.webp",
+        name: 'Stalla',
+        icon: 'icons/environment/settlement/stable.webp',
         cost: 150,
         maintenance: 15,
         capacity: 6,
         benefits: {
           mountCare: true,
           travelSpeed: 1.2,
-          description: "Cura per cavalcature. +20% velocità viaggio."
+          description: 'Cura per cavalcature. +20% velocità viaggio.'
         }
       },
       workshop: {
-        name: "Officina",
-        icon: "icons/tools/smithing/anvil.webp",
+        name: 'Officina',
+        icon: 'icons/tools/smithing/anvil.webp',
         cost: 250,
         maintenance: 20,
         capacity: 0,
         benefits: {
           craftingTime: 0.5,
           toolProficiency: true,
-          description: "Creazione oggetti. Dimezza tempo di crafting."
+          description: 'Creazione oggetti. Dimezza tempo di crafting.'
         }
       },
       // Stanze Speciali
       secret_passage: {
-        name: "Passaggio Segreto",
-        icon: "icons/environment/settlement/secret-door.webp",
+        name: 'Passaggio Segreto',
+        icon: 'icons/environment/settlement/secret-door.webp',
         cost: 500,
         maintenance: 5,
         capacity: 0,
         benefits: {
           escapeRoute: true,
           stealthBonus: 5,
-          description: "Via di fuga segreta. +5 Stealth nel rifugio."
+          description: 'Via di fuga segreta. +5 Stealth nel rifugio.'
         },
         hidden: true
       },
       vault: {
-        name: "Caveau",
-        icon: "icons/environment/settlement/vault.webp",
+        name: 'Caveau',
+        icon: 'icons/environment/settlement/vault.webp',
         cost: 600,
         maintenance: 10,
         capacity: 0,
         benefits: {
           storage: 10000, // 10000 monete
           security: 20, // CD 20 per scassinare
-          description: "Deposito sicuro. CD 20 per scassinare."
+          description: 'Deposito sicuro. CD 20 per scassinare.'
         }
       },
       training_ground: {
         name: "Campo d'Addestramento",
-        icon: "icons/environment/settlement/training-dummy.webp",
+        icon: 'icons/environment/settlement/training-dummy.webp',
         cost: 400,
         maintenance: 20,
         capacity: 0,
         benefits: {
           trainingTime: 0.5,
           combatBonus: 1,
-          description: "Addestramento combattimento. Dimezza tempo training."
+          description: 'Addestramento combattimento. Dimezza tempo training.'
         }
       }
     };
@@ -174,40 +174,40 @@ class HavenSystem {
     // Miglioramenti difensivi
     this.defenseUpgrades = {
       walls: {
-        name: "Mura Rinforzate",
+        name: 'Mura Rinforzate',
         cost: 500,
         defenseBonus: 5,
-        description: "CA +5 per la struttura"
+        description: 'CA +5 per la struttura'
       },
       traps: {
-        name: "Trappole",
+        name: 'Trappole',
         cost: 300,
-        damage: "2d6",
-        description: "2d6 danni agli intrusi"
+        damage: '2d6',
+        description: '2d6 danni agli intrusi'
       },
       guards: {
-        name: "Guardie",
+        name: 'Guardie',
         cost: 50, // per settimana
         defenseBonus: 3,
-        description: "+3 a Perception per avvistare intrusi"
+        description: '+3 a Perception per avvistare intrusi'
       },
       alarm: {
         name: "Sistema d'Allarme",
         cost: 200,
-        description: "Avviso automatico di intrusioni"
+        description: 'Avviso automatico di intrusioni'
       }
     };
 
     // Eventi casuali del rifugio
     this.randomEvents = [
-      { name: "Ispezione delle Guardie", type: "negative", check: "cha", dc: 13 },
-      { name: "Mercante di Passaggio", type: "positive", reward: "2d6 * 10" },
-      { name: "Infiltrazione di Ladri", type: "negative", check: "per", dc: 15 },
-      { name: "Festa Spontanea", type: "neutral", morale: 1 },
-      { name: "Riparazione Urgente", type: "negative", cost: "1d6 * 10" },
-      { name: "Visitatore Misterioso", type: "quest", info: true },
-      { name: "Infestazione di Ratti", type: "negative", check: "sur", dc: 12 },
-      { name: "Trovata Segreta", type: "positive", reward: "item" }
+      { name: 'Ispezione delle Guardie', type: 'negative', check: 'cha', dc: 13 },
+      { name: 'Mercante di Passaggio', type: 'positive', reward: '2d6 * 10' },
+      { name: 'Infiltrazione di Ladri', type: 'negative', check: 'per', dc: 15 },
+      { name: 'Festa Spontanea', type: 'neutral', morale: 1 },
+      { name: 'Riparazione Urgente', type: 'negative', cost: '1d6 * 10' },
+      { name: 'Visitatore Misterioso', type: 'quest', info: true },
+      { name: 'Infestazione di Ratti', type: 'negative', check: 'sur', dc: 12 },
+      { name: 'Trovata Segreta', type: 'positive', reward: 'item' }
     ];
 
     this._setupHooks();
@@ -264,10 +264,11 @@ class HavenSystem {
     });
 
     // Crea istanza globale
-    game.brancalonia = game.brancalonia || {};
-    game.brancalonia.haven = new HavenSystem();
+    if (!game.brancalonia) game.brancalonia = {};
+    const haven = new HavenSystem();
+    game.brancalonia.haven = haven;
 
-    // Registra hooks principali
+    // Registra hooks principali statici
     this._registerHooks();
 
     // Registra comandi chat
@@ -319,7 +320,7 @@ class HavenSystem {
           result.dhd = (result.dhd || 0) + benefits.extraHitDice;
           result.dhp = (result.dhp || 0) + benefits.extraHealing;
           if (benefits.removeExhaustion && actor.system.attributes?.exhaustion > 0) {
-            actor.update({'system.attributes.exhaustion': actor.system.attributes.exhaustion - 1});
+            actor.update({ 'system.attributes.exhaustion': actor.system.attributes.exhaustion - 1 });
           }
         }
       }
@@ -443,7 +444,7 @@ class HavenSystem {
    */
   static _extendActor() {
     // Metodo per ottenere il rifugio
-    CONFIG.Actor.documentClass.prototype.getHaven = function() {
+    CONFIG.Actor.documentClass.prototype.getHaven = function () {
       if (this.type === 'group' && this.flags[HavenSystem.NAMESPACE]?.haven) {
         return game.journal.get(this.flags[HavenSystem.NAMESPACE].haven);
       }
@@ -458,7 +459,7 @@ class HavenSystem {
     };
 
     // Metodo per verificare presenza stanza
-    CONFIG.Actor.documentClass.prototype.hasHavenRoom = function(roomType) {
+    CONFIG.Actor.documentClass.prototype.hasHavenRoom = function (roomType) {
       const haven = this.getHaven();
       if (!haven) return false;
       const havenData = haven.flags[HavenSystem.NAMESPACE]?.havenData;
@@ -539,7 +540,7 @@ if (game.brancalonia?.haven) {
 
     new Dialog({
       title: 'Crea Nuovo Rifugio',
-      content: content,
+      content,
       buttons: {
         create: {
           label: 'Crea',
@@ -591,7 +592,7 @@ if (game.brancalonia?.haven) {
 
     new Dialog({
       title: 'Gestisci Rifugio',
-      content: content,
+      content,
       buttons: {
         view: {
           label: 'Visualizza',
@@ -706,7 +707,7 @@ if (game.brancalonia?.haven) {
 
   _setupHooks() {
     // Hook per aggiungere gestione haven alle scene
-    Hooks.on("canvasReady", () => {
+    Hooks.on('canvasReady', () => {
       if (game.user.isGM) {
         const scene = canvas.scene;
         if (scene?.flags.brancalonia?.isHaven) {
@@ -716,7 +717,7 @@ if (game.brancalonia?.haven) {
     });
 
     // Hook per costi di mantenimento settimanali
-    Hooks.on("updateWorldTime", (worldTime, dt) => {
+    Hooks.on('updateWorldTime', (worldTime, dt) => {
       // Controlla se è passata una settimana
       const weekInSeconds = 604800;
       if (dt >= weekInSeconds) {
@@ -728,10 +729,10 @@ if (game.brancalonia?.haven) {
   /**
    * Crea un nuovo rifugio
    */
-  async createHaven(name, location = "Sconosciuta", initialRooms = ["dormitory"]) {
+  async createHaven(name, location = 'Sconosciuta', initialRooms = ['dormitory']) {
     // Validazione
     if (!name) {
-      ui.notifications.error("Il rifugio deve avere un nome!");
+      ui.notifications.error('Il rifugio deve avere un nome!');
       return null;
     }
 
@@ -754,9 +755,9 @@ if (game.brancalonia?.haven) {
     // Crea dati del rifugio
     const havenData = {
       id: foundry.utils.randomID(),
-      name: name,
-      location: location,
-      rooms: rooms,
+      name,
+      location,
+      rooms,
       defenses: [],
       treasury: 0,
       maintenance: this._calculateMaintenance(rooms),
@@ -770,24 +771,24 @@ if (game.brancalonia?.haven) {
     // Crea Journal Entry per il rifugio
     const pages = [
       {
-        name: "Panoramica",
-        type: "text",
+        name: 'Panoramica',
+        type: 'text',
         text: {
           content: this._generateHavenOverview(havenData),
           format: CONST.JOURNAL_ENTRY_PAGE_FORMATS.HTML
         }
       },
       {
-        name: "Stanze",
-        type: "text",
+        name: 'Stanze',
+        type: 'text',
         text: {
           content: this._generateRoomsDescription(havenData),
           format: CONST.JOURNAL_ENTRY_PAGE_FORMATS.HTML
         }
       },
       {
-        name: "Gestione",
-        type: "text",
+        name: 'Gestione',
+        type: 'text',
         text: {
           content: this._generateManagementInfo(havenData),
           format: CONST.JOURNAL_ENTRY_PAGE_FORMATS.HTML
@@ -800,18 +801,18 @@ if (game.brancalonia?.haven) {
 
     const journal = await JournalEntry.create({
       name: `Haven: ${name}`,
-      img: "icons/environment/settlement/house-stone.webp",
-      pages: pages,
+      img: 'icons/environment/settlement/house-stone.webp',
+      pages,
       flags: {
         brancalonia: {
           isHaven: true,
-          havenData: havenData
+          havenData
         }
       }
     });
 
     // Crea scena per il rifugio (opzionale)
-    if (game.settings.get("brancalonia-bigat", "autoCreateHavenScene")) {
+    if (game.settings.get('brancalonia-bigat', 'autoCreateHavenScene')) {
       await this._createHavenScene(havenData);
     }
 
@@ -822,12 +823,12 @@ if (game.brancalonia?.haven) {
           <h2>🏠 Nuovo Rifugio Stabilito!</h2>
           <h3>${name}</h3>
           <p><strong>Locazione:</strong> ${location}</p>
-          <p><strong>Stanze iniziali:</strong> ${rooms.map(r => r.name).join(", ")}</p>
+          <p><strong>Stanze iniziali:</strong> ${rooms.map(r => r.name).join(', ')}</p>
           <p><strong>Costo totale:</strong> ${totalCost} ducati</p>
           <p><strong>Mantenimento settimanale:</strong> ${havenData.maintenance} ducati</p>
         </div>
       `,
-      speaker: { alias: "Sistema Haven" }
+      speaker: { alias: 'Sistema Haven' }
     });
 
     return journal;
@@ -839,13 +840,13 @@ if (game.brancalonia?.haven) {
   async addRoom(haven, roomType) {
     const havenData = haven.flags.brancalonia?.havenData;
     if (!havenData) {
-      ui.notifications.error("Dati rifugio non validi!");
+      ui.notifications.error('Dati rifugio non validi!');
       return;
     }
 
     const roomInfo = this.roomTypes[roomType];
     if (!roomInfo) {
-      ui.notifications.error("Tipo di stanza non valido!");
+      ui.notifications.error('Tipo di stanza non valido!');
       return;
     }
 
@@ -875,7 +876,7 @@ if (game.brancalonia?.haven) {
 
       // Sottrai costo
       await compagnia.update({
-        "flags.brancalonia.treasury": treasury - roomInfo.cost
+        'flags.brancalonia.treasury': treasury - roomInfo.cost
       });
     }
 
@@ -891,13 +892,13 @@ if (game.brancalonia?.haven) {
     havenData.comfort = this._calculateComfort(havenData.rooms);
     havenData.capacity = this._calculateCapacity(havenData.rooms);
 
-    await haven.setFlag("brancalonia-bigat", "havenData", havenData);
+    await haven.setFlag('brancalonia-bigat', 'havenData', havenData);
 
     // Aggiorna pagine journal
-    const roomsPage = haven.pages.find(p => p.name === "Stanze");
+    const roomsPage = haven.pages.find(p => p.name === 'Stanze');
     if (roomsPage) {
       await roomsPage.update({
-        "text.content": this._generateRoomsDescription(havenData)
+        'text.content': this._generateRoomsDescription(havenData)
       });
     }
 
@@ -911,7 +912,7 @@ if (game.brancalonia?.haven) {
           <p>Nuovo mantenimento settimanale: ${havenData.maintenance} ducati</p>
         </div>
       `,
-      speaker: { alias: "Sistema Haven" }
+      speaker: { alias: 'Sistema Haven' }
     });
   }
 
@@ -924,13 +925,13 @@ if (game.brancalonia?.haven) {
 
     const defense = this.defenseUpgrades[defenseType];
     if (!defense) {
-      ui.notifications.error("Tipo di difesa non valido!");
+      ui.notifications.error('Tipo di difesa non valido!');
       return;
     }
 
     // Controlla se già presente
     if (havenData.defenses.find(d => d.type === defenseType)) {
-      ui.notifications.warn("Difesa già presente!");
+      ui.notifications.warn('Difesa già presente!');
       return;
     }
 
@@ -944,7 +945,7 @@ if (game.brancalonia?.haven) {
       }
 
       await compagnia.update({
-        "flags.brancalonia.treasury": treasury - defense.cost
+        'flags.brancalonia.treasury': treasury - defense.cost
       });
     }
 
@@ -960,11 +961,11 @@ if (game.brancalonia?.haven) {
       havenData.defense += defense.defenseBonus;
     }
 
-    await haven.setFlag("brancalonia-bigat", "havenData", havenData);
+    await haven.setFlag('brancalonia-bigat', 'havenData', havenData);
 
     ChatMessage.create({
       content: `${defense.name} installato/a al rifugio ${haven.name}!`,
-      speaker: { alias: "Sistema Haven" }
+      speaker: { alias: 'Sistema Haven' }
     });
   }
 
@@ -987,20 +988,20 @@ if (game.brancalonia?.haven) {
       if (treasury >= maintenance) {
         // Paga mantenimento
         await compagnia.update({
-          "flags.brancalonia.treasury": treasury - maintenance
+          'flags.brancalonia.treasury': treasury - maintenance
         });
 
         ChatMessage.create({
           content: `Mantenimento settimanale pagato per ${haven.name}: ${maintenance} ducati`,
-          speaker: { alias: "Sistema Haven" },
-          whisper: ChatMessage.getWhisperRecipients("GM")
+          speaker: { alias: 'Sistema Haven' },
+          whisper: ChatMessage.getWhisperRecipients('GM')
         });
       } else {
         // Conseguenze per mancato pagamento
         const degradation = Math.floor(Math.random() * 3) + 1;
         havenData.comfort = Math.max(0, havenData.comfort - degradation);
 
-        await haven.setFlag("brancalonia-bigat", "havenData", havenData);
+        await haven.setFlag('brancalonia-bigat', 'havenData', havenData);
 
         ChatMessage.create({
           content: `
@@ -1009,14 +1010,14 @@ if (game.brancalonia?.haven) {
               Il comfort scende di ${degradation} punti.
             </div>
           `,
-          speaker: { alias: "Sistema Haven" },
-          whisper: ChatMessage.getWhisperRecipients("GM")
+          speaker: { alias: 'Sistema Haven' },
+          whisper: ChatMessage.getWhisperRecipients('GM')
         });
       }
 
       // Aggiorna data ultimo mantenimento
       havenData.lastMaintenance = new Date().toISOString();
-      await haven.setFlag("brancalonia-bigat", "havenData", havenData);
+      await haven.setFlag('brancalonia-bigat', 'havenData', havenData);
     }
   }
 
@@ -1024,7 +1025,7 @@ if (game.brancalonia?.haven) {
    * Controlla eventi casuali del rifugio
    */
   async _checkHavenEvents(scene) {
-    const roll = new Roll("1d20").evaluate({ async: false });
+    const roll = new Roll('1d20').evaluate({ async: false });
 
     if (roll.total <= 5) {
       // Evento casuale!
@@ -1040,7 +1041,7 @@ if (game.brancalonia?.haven) {
             ${event.reward ? `<p>Possibile ricompensa!</p>` : ''}
           </div>
         `,
-        speaker: { alias: "Sistema Haven" }
+        speaker: { alias: 'Sistema Haven' }
       });
     }
   }
@@ -1057,11 +1058,11 @@ if (game.brancalonia?.haven) {
    */
   _calculateComfort(rooms) {
     let comfort = 0;
-    if (rooms.find(r => r.id === "dormitory")) comfort += 2;
-    if (rooms.find(r => r.id === "kitchen")) comfort += 3;
-    if (rooms.find(r => r.id === "tavern")) comfort += 2;
-    if (rooms.find(r => r.id === "library")) comfort += 1;
-    if (rooms.find(r => r.id === "chapel")) comfort += 1;
+    if (rooms.find(r => r.id === 'dormitory')) comfort += 2;
+    if (rooms.find(r => r.id === 'kitchen')) comfort += 3;
+    if (rooms.find(r => r.id === 'tavern')) comfort += 2;
+    if (rooms.find(r => r.id === 'library')) comfort += 1;
+    if (rooms.find(r => r.id === 'chapel')) comfort += 1;
     return comfort;
   }
 
@@ -1078,7 +1079,7 @@ if (game.brancalonia?.haven) {
   _getOwningCompagnia(haven) {
     // Cerca nelle compagnie quale possiede questo rifugio
     return game.actors.find(a =>
-      a.type === "group" &&
+      a.type === 'group' &&
       a.flags.brancalonia?.isCompagnia &&
       a.flags.brancalonia?.haven === haven.id
     );
@@ -1161,8 +1162,8 @@ if (game.brancalonia?.haven) {
         <h3>Stanze Disponibili per Costruzione</h3>
         <ul>
           ${Object.entries(this.roomTypes)
-            .filter(([id, room]) => !havenData.rooms.find(r => r.id === id) && !room.hidden)
-            .map(([id, room]) => `
+    .filter(([id, room]) => !havenData.rooms.find(r => r.id === id) && !room.hidden)
+    .map(([id, room]) => `
               <li>
                 <strong>${room.name}</strong> (${room.cost} ducati)
                 <br>${room.benefits.description}
@@ -1173,8 +1174,8 @@ if (game.brancalonia?.haven) {
         <h3>Miglioramenti Difensivi Disponibili</h3>
         <ul>
           ${Object.entries(this.defenseUpgrades)
-            .filter(([id, def]) => !havenData.defenses.find(d => d.type === id))
-            .map(([id, def]) => `
+    .filter(([id, def]) => !havenData.defenses.find(d => d.type === id))
+    .map(([id, def]) => `
               <li>
                 <strong>${def.name}</strong> (${def.cost} ducati)
                 <br>${def.description}
@@ -1193,7 +1194,7 @@ if (game.brancalonia?.haven) {
       name: `Haven: ${havenData.name}`,
       navigation: true,
       navName: havenData.name,
-      img: "modules/brancalonia-bigat/assets/maps/map_brancalonia.webp",
+      img: 'modules/brancalonia-bigat/assets/maps/map_brancalonia.webp',
       flags: {
         brancalonia: {
           isHaven: true,
@@ -1228,14 +1229,14 @@ if (game.brancalonia?.haven) {
     };
 
     // Applica benefici delle stanze
-    if (havenData.rooms.find(r => r.id === "dormitory")) {
+    if (havenData.rooms.find(r => r.id === 'dormitory')) {
       benefits.extraHitDice += 1;
     }
-    if (havenData.rooms.find(r => r.id === "kitchen")) {
+    if (havenData.rooms.find(r => r.id === 'kitchen')) {
       benefits.extraHealing += 2;
       benefits.removeExhaustion = true;
     }
-    if (havenData.rooms.find(r => r.id === "chapel")) {
+    if (havenData.rooms.find(r => r.id === 'chapel')) {
       benefits.extraHealing += 1;
     }
 

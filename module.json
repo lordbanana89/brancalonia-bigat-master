@@ -49,6 +49,7 @@
     "modules/brancalonia-sheets.js",
     "modules/brancalonia-icon-interceptor.js",
     "modules/brancalonia-theme.mjs",
+    "modules/dice-so-nice-integration.js",
     "modules/compendium-manager.mjs",
     "modules/reputation-infamia-unified.js",
     "modules/haven-system.js",

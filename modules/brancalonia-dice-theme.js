@@ -27,10 +27,10 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
     name: 'branca-goldwax',
     description: 'Brancalonia — Oro e Ceralacca',
     category: 'Brancalonia',
-    foreground: getCSSVar('--bcl-ink-strong', '#1C140D'),   // Pips/numeri
-    background: getCSSVar('--bcl-gold', '#C9A54A'),         // Corpo dado
-    edge: getCSSVar('--bcl-ink-strong', '#1C140D'),         // Bordo
-    outline: getCSSVar('--bcl-ink-strong', '#1C140D'),      // Outline
+    foreground: getCSSVar('--bcl-ink-strong', '#1C140D'), // Pips/numeri
+    background: getCSSVar('--bcl-gold', '#C9A54A'), // Corpo dado
+    edge: getCSSVar('--bcl-ink-strong', '#1C140D'), // Bordo
+    outline: getCSSVar('--bcl-ink-strong', '#1C140D'), // Outline
     material: 'metal',
     font: 'Alegreya',
     fontScale: {
@@ -49,10 +49,10 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
     name: 'branca-parchment',
     description: 'Brancalonia — Pergamena e Inchiostro',
     category: 'Brancalonia',
-    foreground: getCSSVar('--bcl-ink-strong', '#1C140D'),     // Pips/numeri
-    background: getCSSVar('--bcl-paper-strong', '#D9C38F'),   // Corpo dado
-    edge: getCSSVar('--bcl-border', '#B99D6B'),              // Bordo
-    outline: getCSSVar('--bcl-border', '#B99D6B'),           // Outline
+    foreground: getCSSVar('--bcl-ink-strong', '#1C140D'), // Pips/numeri
+    background: getCSSVar('--bcl-paper-strong', '#D9C38F'), // Corpo dado
+    edge: getCSSVar('--bcl-border', '#B99D6B'), // Bordo
+    outline: getCSSVar('--bcl-border', '#B99D6B'), // Outline
     material: 'plastic',
     font: 'Alegreya',
     fontScale: {
@@ -71,10 +71,10 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
     name: 'branca-emerald',
     description: 'Brancalonia — Smeraldo e Oro',
     category: 'Brancalonia',
-    foreground: getCSSVar('--bcl-gold', '#C9A54A'),          // Pips/numeri
-    background: getCSSVar('--bcl-emerald', '#2E7D64'),       // Corpo dado
-    edge: getCSSVar('--bcl-gold', '#C9A54A'),               // Bordo
-    outline: getCSSVar('--bcl-ink-strong', '#1C140D'),      // Outline
+    foreground: getCSSVar('--bcl-gold', '#C9A54A'), // Pips/numeri
+    background: getCSSVar('--bcl-emerald', '#2E7D64'), // Corpo dado
+    edge: getCSSVar('--bcl-gold', '#C9A54A'), // Bordo
+    outline: getCSSVar('--bcl-ink-strong', '#1C140D'), // Outline
     material: 'glass',
     font: 'Cinzel',
     fontScale: {
@@ -93,10 +93,10 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
     name: 'branca-wine',
     description: 'Brancalonia — Vino e Oro',
     category: 'Brancalonia',
-    foreground: getCSSVar('--bcl-gold', '#C9A54A'),            // Pips/numeri
-    background: getCSSVar('--bcl-accent-strong', '#5E1715'),   // Corpo dado
-    edge: getCSSVar('--bcl-gold', '#C9A54A'),                 // Bordo
-    outline: getCSSVar('--bcl-gold', '#C9A54A'),              // Outline
+    foreground: getCSSVar('--bcl-gold', '#C9A54A'), // Pips/numeri
+    background: getCSSVar('--bcl-accent-strong', '#5E1715'), // Corpo dado
+    edge: getCSSVar('--bcl-gold', '#C9A54A'), // Bordo
+    outline: getCSSVar('--bcl-gold', '#C9A54A'), // Outline
     material: 'glass',
     font: 'Cinzel',
     fontScale: {
@@ -164,10 +164,10 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
 
     if (d20Result === 20) {
       // Critico! Aggiungi effetto dorato
-      ui.notifications.info("⚔️ Colpo Critico! Magnifico!", { permanent: false });
+      ui.notifications.info('⚔️ Colpo Critico! Magnifico!', { permanent: false });
     } else if (d20Result === 1) {
       // Fumble! Aggiungi effetto rosso
-      ui.notifications.warn("💀 Fallimento Critico! Maledizione!", { permanent: false });
+      ui.notifications.warn('💀 Fallimento Critico! Maledizione!', { permanent: false });
     }
   });
 });

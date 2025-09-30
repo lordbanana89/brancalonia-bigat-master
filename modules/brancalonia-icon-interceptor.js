@@ -593,30 +593,30 @@ const ICON_UNICODE_MAP = {
   'fa-dna': '\uf471',
 
   // Style classes (not icons, but need handling)
-  'fa-duotone': '',  // Duotone style class, not an icon
-  'fa-solid': '',    // Solid style class
-  'fa-regular': '',  // Regular style class
-  'fa-light': '',    // Light style class
-  'fa-thin': '',     // Thin style class
-  'fa-brands': ''    // Brands style class
+  'fa-duotone': '', // Duotone style class, not an icon
+  'fa-solid': '', // Solid style class
+  'fa-regular': '', // Regular style class
+  'fa-light': '', // Light style class
+  'fa-thin': '', // Thin style class
+  'fa-brands': '' // Brands style class
 };
 
 
 // Intercettore UNIVERSALE per elementi <i>
-(function() {
+(function () {
   console.log('🎯 Installing universal icon interceptor...');
 
   // Salva il createElement originale
   const originalCreateElement = document.createElement;
 
   // Override createElement
-  document.createElement = function(tagName) {
+  document.createElement = function (tagName) {
     const element = originalCreateElement.call(this, tagName);
 
     if (tagName.toLowerCase() === 'i') {
       // Intercetta setAttribute per catturare le classi
       const originalSetAttribute = element.setAttribute;
-      element.setAttribute = function(name, value) {
+      element.setAttribute = function (name, value) {
         originalSetAttribute.call(this, name, value);
 
         if (name === 'class' && value.includes('fa-')) {
@@ -626,17 +626,17 @@ const ICON_UNICODE_MAP = {
 
       // Intercetta className setter
       Object.defineProperty(element, 'className', {
-        set: function(value) {
+        set(value) {
           this.setAttribute('class', value);
         },
-        get: function() {
+        get() {
           return this.getAttribute('class') || '';
         }
       });
 
       // Intercetta classList
       const originalAdd = element.classList.add;
-      element.classList.add = function(...classes) {
+      element.classList.add = function (...classes) {
         originalAdd.apply(this, classes);
         if (classes.some(cls => cls.includes('fa-'))) {
           setTimeout(() => interceptIcon(element), 0);
@@ -793,7 +793,7 @@ Hooks.once('init', () => {
 });
 
 // Observer aggressivo
-Hooks.once('ready', () => {
+Hooks.once('init', () => {
   console.log('🎯 Activating aggressive icon interception...');
 
   // Scan iniziale
@@ -894,7 +894,7 @@ window.IconInterceptor = {
       total: all.length,
       fixed: fixed.length,
       withText: withText.length,
-      unmapped: unmapped
+      unmapped
     };
   },
 

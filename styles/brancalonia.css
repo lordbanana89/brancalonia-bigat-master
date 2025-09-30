@@ -40,10 +40,13 @@
 /* 6. Actor Sheet Styles - Schede personaggio */
 @import url('./brancalonia-actor-sheet-complete.css');
 
-/* 7. Actor Sheet Emergency Fix - DISABLED - 115 !important declarations breaking layout */
-/* DISABLED: @import url('./brancalonia-actor-sheet-fix.css'); */
+/* 7. Actor Sheet Layout Fix - Risolve problemi di impaginazione */
+@import url('./brancalonia-actor-sheet-layout-fix.css');
 
-/* 8. Critical Fixes - Patch finali consolidati */
+/* 8. Wilderness Encounters - Sistema incontri selvaggi */
+@import url('./wilderness-encounters.css');
+
+/* 9. Critical Fixes - Patch finali consolidati */
 @import url('./brancalonia-fixes-consolidated.css');
 
 /* FILE RIMOSSI (legacy/ridondanti):

@@ -158,7 +158,7 @@ class BrancaloniaMechanics {
    */
   static extendActorClass() {
     const originalPrepareData = CONFIG.Actor.documentClass.prototype.prepareDerivedData;
-    CONFIG.Actor.documentClass.prototype.prepareDerivedData = function() {
+    CONFIG.Actor.documentClass.prototype.prepareDerivedData = function () {
       originalPrepareData.call(this);
 
       // Aggiunge tracking onore/disonore
@@ -239,57 +239,57 @@ class BrancaloniaMechanics {
     foundry.utils.mergeObject(CONFIG.BRANCALONIA.tables, {
       // Tabella Complicazioni Generiche
       complications: {
-        name: "Complicazioni di Brancalonia",
-        formula: "1d20",
+        name: 'Complicazioni di Brancalonia',
+        formula: '1d20',
         results: [
-          { range: [1, 2], text: "Le guardie sono state allertate" },
-          { range: [3, 4], text: "Un rivale interferisce" },
-          { range: [5, 6], text: "Il tempo peggiora drasticamente" },
-          { range: [7, 8], text: "Un alleato tradisce" },
-          { range: [9, 10], text: "Risorse esaurite" },
-          { range: [11, 12], text: "Malattia o veleno" },
-          { range: [13, 14], text: "Informazioni sbagliate" },
-          { range: [15, 16], text: "Trappola inaspettata" },
-          { range: [17, 18], text: "Testimone scomodo" },
-          { range: [19, 20], text: "Intervento divino (negativo)" }
+          { range: [1, 2], text: 'Le guardie sono state allertate' },
+          { range: [3, 4], text: 'Un rivale interferisce' },
+          { range: [5, 6], text: 'Il tempo peggiora drasticamente' },
+          { range: [7, 8], text: 'Un alleato tradisce' },
+          { range: [9, 10], text: 'Risorse esaurite' },
+          { range: [11, 12], text: 'Malattia o veleno' },
+          { range: [13, 14], text: 'Informazioni sbagliate' },
+          { range: [15, 16], text: 'Trappola inaspettata' },
+          { range: [17, 18], text: 'Testimone scomodo' },
+          { range: [19, 20], text: 'Intervento divino (negativo)' }
         ]
       },
 
       // Tabella Bottino Scadente
       shoddyLoot: {
-        name: "Bottino Scadente",
-        formula: "1d12",
+        name: 'Bottino Scadente',
+        formula: '1d12',
         results: [
-          { range: [1], text: "Spada arrugginita (scadente)" },
-          { range: [2], text: "Armatura rattoppata (scadente)" },
-          { range: [3], text: "Borsa bucata con 1d4 ducati" },
-          { range: [4], text: "Mappa sbiadita (forse utile)" },
-          { range: [5], text: "Pozione scaduta (50% di funzionare)" },
-          { range: [6], text: "Amuleto maledetto minore" },
-          { range: [7], text: "Corda marcia (3 metri)" },
-          { range: [8], text: "Torce umide (1d4)" },
-          { range: [9], text: "Razioni ammuffite" },
-          { range: [10], text: "Libro illeggibile" },
-          { range: [11], text: "Chiave misteriosa" },
-          { range: [12], text: "Dadi truccati" }
+          { range: [1], text: 'Spada arrugginita (scadente)' },
+          { range: [2], text: 'Armatura rattoppata (scadente)' },
+          { range: [3], text: 'Borsa bucata con 1d4 ducati' },
+          { range: [4], text: 'Mappa sbiadita (forse utile)' },
+          { range: [5], text: 'Pozione scaduta (50% di funzionare)' },
+          { range: [6], text: 'Amuleto maledetto minore' },
+          { range: [7], text: 'Corda marcia (3 metri)' },
+          { range: [8], text: 'Torce umide (1d4)' },
+          { range: [9], text: 'Razioni ammuffite' },
+          { range: [10], text: 'Libro illeggibile' },
+          { range: [11], text: 'Chiave misteriosa' },
+          { range: [12], text: 'Dadi truccati' }
         ]
       },
 
       // Tabella Voci di Taverna
       tavernRumors: {
-        name: "Voci di Taverna",
-        formula: "1d10",
+        name: 'Voci di Taverna',
+        formula: '1d10',
         results: [
-          { range: [1], text: "Un tesoro nascosto nei dintorni" },
-          { range: [2], text: "Guardie corrotte cercano qualcuno" },
-          { range: [3], text: "Un nobile cerca sicari" },
-          { range: [4], text: "Carovana in arrivo domani" },
-          { range: [5], text: "Fantasmi nel cimitero" },
-          { range: [6], text: "Il prete locale è un impostore" },
-          { range: [7], text: "Banditi sulla strada principale" },
-          { range: [8], text: "Torneo clandestino stasera" },
-          { range: [9], text: "Strano mercante cerca avventurieri" },
-          { range: [10], text: "Il sindaco nasconde un segreto" }
+          { range: [1], text: 'Un tesoro nascosto nei dintorni' },
+          { range: [2], text: 'Guardie corrotte cercano qualcuno' },
+          { range: [3], text: 'Un nobile cerca sicari' },
+          { range: [4], text: 'Carovana in arrivo domani' },
+          { range: [5], text: 'Fantasmi nel cimitero' },
+          { range: [6], text: 'Il prete locale è un impostore' },
+          { range: [7], text: 'Banditi sulla strada principale' },
+          { range: [8], text: 'Torneo clandestino stasera' },
+          { range: [9], text: 'Strano mercante cerca avventurieri' },
+          { range: [10], text: 'Il sindaco nasconde un segreto' }
         ]
       }
     });
@@ -300,26 +300,26 @@ class BrancaloniaMechanics {
    */
   static setupNonLethalCombat() {
     // Hook per gestire dichiarazione di danno non letale
-    Hooks.on("dnd5e.preRollDamage", (item, rollData, messageData) => {
+    Hooks.on('dnd5e.preRollDamage', (item, rollData, messageData) => {
       // Aggiungi opzione nel dialog
       rollData.dialogOptions = rollData.dialogOptions || {};
       rollData.dialogOptions.nonLethal = {
-        label: "Danno Non Letale (KO)",
+        label: 'Danno Non Letale (KO)',
         checked: false
       };
     });
 
     // Hook per applicare danno non letale
-    Hooks.on("dnd5e.rollDamage", (item, roll) => {
+    Hooks.on('dnd5e.rollDamage', (item, roll) => {
       if (roll.options?.nonLethal) {
         // Marca il danno come non letale
-        roll.options.flavor = `${roll.options.flavor || ""} (Non Letale)`;
+        roll.options.flavor = `${roll.options.flavor || ''} (Non Letale)`;
 
         // Applica flag per gestione KO
         if (game.combat) {
           const target = game.user.targets.first();
           if (target?.actor) {
-            target.actor.setFlag(BrancaloniaMechanics.ID, "nonLethalDamage", true);
+            target.actor.setFlag(BrancaloniaMechanics.ID, 'nonLethalDamage', true);
           }
         }
       }
@@ -336,44 +336,44 @@ class BrancaloniaMechanics {
     foundry.utils.mergeObject(CONFIG.BRANCALONIA.traps, {
       // Trappola base template
       template: {
-        name: "Trappola Base",
-        type: "hazard",
+        name: 'Trappola Base',
+        type: 'hazard',
         system: {
-          activation: { type: "special", cost: null },
-          damage: { parts: [["1d6", "piercing"]] },
-          save: { ability: "dex", dc: 12, scaling: "flat" },
-          target: { value: 1, units: "", type: "creature" },
-          range: { value: null, units: "" }
+          activation: { type: 'special', cost: null },
+          damage: { parts: [['1d6', 'piercing']] },
+          save: { ability: 'dex', dc: 12, scaling: 'flat' },
+          target: { value: 1, units: '', type: 'creature' },
+          range: { value: null, units: '' }
         }
       },
 
       // Tipi di trappole
       types: {
         pitfall: {
-          name: "Botola",
-          damage: [["2d6", "bludgeoning"]],
-          save: { ability: "dex", dc: 12 },
-          description: "Una botola nascosta che si apre sotto i piedi"
+          name: 'Botola',
+          damage: [['2d6', 'bludgeoning']],
+          save: { ability: 'dex', dc: 12 },
+          description: 'Una botola nascosta che si apre sotto i piedi'
         },
         dart: {
-          name: "Dardi Avvelenati",
-          damage: [["1d4", "piercing"], ["1d4", "poison"]],
-          save: { ability: "dex", dc: 13 },
-          description: "Dardi avvelenati sparati dal muro"
+          name: 'Dardi Avvelenati',
+          damage: [['1d4', 'piercing'], ['1d4', 'poison']],
+          save: { ability: 'dex', dc: 13 },
+          description: 'Dardi avvelenati sparati dal muro'
         },
         net: {
-          name: "Rete Nascosta",
+          name: 'Rete Nascosta',
           damage: [],
-          save: { ability: "dex", dc: 14 },
-          condition: "restrained",
-          description: "Una rete cade dal soffitto"
+          save: { ability: 'dex', dc: 14 },
+          condition: 'restrained',
+          description: 'Una rete cade dal soffitto'
         },
         alarm: {
-          name: "Allarme",
+          name: 'Allarme',
           damage: [],
-          save: { ability: "wis", dc: 10 },
-          effect: "alert",
-          description: "Un allarme che attira guardie"
+          save: { ability: 'wis', dc: 10 },
+          effect: 'alert',
+          description: 'Un allarme che attira guardie'
         }
       }
     });
@@ -389,8 +389,8 @@ class BrancaloniaMechanics {
 
       const macroData = {
         name: `Piazza ${trap.name}`,
-        type: "script",
-        img: "icons/environment/traps/spike-pit.webp",
+        type: 'script',
+        img: 'icons/environment/traps/spike-pit.webp',
         command: `
           try {
             // Crea token trappola
@@ -442,34 +442,34 @@ class BrancaloniaMechanics {
     foundry.utils.mergeObject(CONFIG.BRANCALONIA.patrons, {
       types: {
         noble: {
-          name: "Nobile Corrotto",
-          benefits: ["Accesso a corti", "Protezione legale limitata"],
-          obligations: ["Missioni politiche", "Discrezione"],
-          resources: { gold: "high", connections: "high", danger: "medium" }
+          name: 'Nobile Corrotto',
+          benefits: ['Accesso a corti', 'Protezione legale limitata'],
+          obligations: ['Missioni politiche', 'Discrezione'],
+          resources: { gold: 'high', connections: 'high', danger: 'medium' }
         },
         criminal: {
-          name: "Boss Criminale",
-          benefits: ["Contatti malavita", "Nascondigli sicuri"],
-          obligations: ["Lavori sporchi", "Omertà"],
-          resources: { gold: "medium", connections: "high", danger: "high" }
+          name: 'Boss Criminale',
+          benefits: ['Contatti malavita', 'Nascondigli sicuri'],
+          obligations: ['Lavori sporchi', 'Omertà'],
+          resources: { gold: 'medium', connections: 'high', danger: 'high' }
         },
         merchant: {
-          name: "Mercante Ricco",
-          benefits: ["Sconti equipaggiamento", "Informazioni commerciali"],
-          obligations: ["Protezione carovane", "Recupero debiti"],
-          resources: { gold: "high", connections: "medium", danger: "low" }
+          name: 'Mercante Ricco',
+          benefits: ['Sconti equipaggiamento', 'Informazioni commerciali'],
+          obligations: ['Protezione carovane', 'Recupero debiti'],
+          resources: { gold: 'high', connections: 'medium', danger: 'low' }
         },
         priest: {
-          name: "Prelato Ambizioso",
-          benefits: ["Cure gratuite", "Asilo in chiese"],
-          obligations: ["Missioni religiose", "Donazioni"],
-          resources: { gold: "low", connections: "medium", danger: "low" }
+          name: 'Prelato Ambizioso',
+          benefits: ['Cure gratuite', 'Asilo in chiese'],
+          obligations: ['Missioni religiose', 'Donazioni'],
+          resources: { gold: 'low', connections: 'medium', danger: 'low' }
         },
         wizard: {
-          name: "Mago Eccentrico",
-          benefits: ["Identificazione oggetti", "Pergamene occasionali"],
-          obligations: ["Recupero componenti", "Test esperimenti"],
-          resources: { gold: "low", connections: "low", danger: "high" }
+          name: 'Mago Eccentrico',
+          benefits: ['Identificazione oggetti', 'Pergamene occasionali'],
+          obligations: ['Recupero componenti', 'Test esperimenti'],
+          resources: { gold: 'low', connections: 'low', danger: 'high' }
         }
       }
     });
@@ -480,7 +480,7 @@ class BrancaloniaMechanics {
     const patron = CONFIG.BRANCALONIA.patrons.types[patronType];
     if (!patron) return;
 
-    await actor.setFlag(this.ID, "patron", {
+    await actor.setFlag(this.ID, 'patron', {
       type: patronType,
       name: patron.name,
       reputation: 0,
@@ -492,8 +492,8 @@ class BrancaloniaMechanics {
       content: `
         <div class="brancalonia-patron">
           <h3>Nuovo Patrono: ${patron.name}</h3>
-          <p><strong>Benefici:</strong> ${patron.benefits.join(", ")}</p>
-          <p><strong>Obblighi:</strong> ${patron.obligations.join(", ")}</p>
+          <p><strong>Benefici:</strong> ${patron.benefits.join(', ')}</p>
+          <p><strong>Obblighi:</strong> ${patron.obligations.join(', ')}</p>
         </div>
       `,
       speaker: ChatMessage.getSpeaker({ actor })
@@ -510,58 +510,58 @@ class BrancaloniaMechanics {
     foundry.utils.mergeObject(CONFIG.BRANCALONIA.magicItems, {
       // Reliquie religiose
       relics: {
-        "santo-dito": {
-          name: "Dito di San Tognone",
-          type: "trinket",
-          rarity: "uncommon",
+        'santo-dito': {
+          name: 'Dito di San Tognone',
+          type: 'trinket',
+          rarity: 'uncommon',
           attunement: false,
           effects: [{
-            key: "system.attributes.hp.tempmax",
+            key: 'system.attributes.hp.tempmax',
             mode: CONST.ACTIVE_EFFECT_MODES.ADD,
             value: 5
           }],
           description: "Un dito mummificato di un santo locale. +5 HP massimi temporanei all'alba."
         },
-        "acqua-benedetta": {
-          name: "Acqua Benedetta Contraffatta",
-          type: "consumable",
-          rarity: "common",
+        'acqua-benedetta': {
+          name: 'Acqua Benedetta Contraffatta',
+          type: 'consumable',
+          rarity: 'common',
           charges: 3,
-          description: "50% di funzionare come vera acqua benedetta, 50% di essere solo acqua sporca."
+          description: '50% di funzionare come vera acqua benedetta, 50% di essere solo acqua sporca.'
         }
       },
 
       // Talismani folkloristici
       talismans: {
-        "corno-rosso": {
-          name: "Cornetto Rosso",
-          type: "trinket",
-          rarity: "common",
+        'corno-rosso': {
+          name: 'Cornetto Rosso',
+          type: 'trinket',
+          rarity: 'common',
           effects: [{
-            key: "flags.midi-qol.advantage.save.frightened",
+            key: 'flags.midi-qol.advantage.save.frightened',
             mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
-            value: "1"
+            value: '1'
           }],
-          description: "Protegge dal malocchio. Vantaggio contro paura."
+          description: 'Protegge dal malocchio. Vantaggio contro paura.'
         },
-        "ferro-cavallo": {
-          name: "Ferro di Cavallo Fortunato",
-          type: "trinket",
-          rarity: "uncommon",
-          description: "Una volta al giorno, puoi ritirare un 1 naturale."
+        'ferro-cavallo': {
+          name: 'Ferro di Cavallo Fortunato',
+          type: 'trinket',
+          rarity: 'uncommon',
+          description: 'Una volta al giorno, puoi ritirare un 1 naturale.'
         }
       },
 
       // Armi leggendarie scadenti
       legendary: {
-        "durlindana-falsa": {
-          name: "Durlindana (Replica Scadente)",
-          type: "weapon",
-          weaponType: "sword",
-          rarity: "rare",
+        'durlindana-falsa': {
+          name: 'Durlindana (Replica Scadente)',
+          type: 'weapon',
+          weaponType: 'sword',
+          rarity: 'rare',
           bonus: 1,
-          properties: ["shoddy"],
-          description: "Una pessima imitazione della spada di Orlando. +1 al colpire, si rompe con 1-2."
+          properties: ['shoddy'],
+          description: 'Una pessima imitazione della spada di Orlando. +1 al colpire, si rompe con 1-2.'
         }
       }
     });
@@ -599,18 +599,18 @@ class BrancaloniaMechanics {
     if (!game.settings.get(this.ID, 'useCriticalTables')) return;
 
     try {
-      const criticalTable = await new Roll("1d10").evaluate();
+      const criticalTable = await new Roll('1d10').evaluate();
       const effects = [
-        "Colpo devastante! Danno massimizzato",
-        "Ferita sanguinante: 1d4 danni per round per 3 round",
-        "Arto menomato: -2 Destrezza fino a cura",
-        "Stordito: Il bersaglio perde il prossimo turno",
-        "Disarmato e prono",
+        'Colpo devastante! Danno massimizzato',
+        'Ferita sanguinante: 1d4 danni per round per 3 round',
+        'Arto menomato: -2 Destrezza fino a cura',
+        'Stordito: Il bersaglio perde il prossimo turno',
+        'Disarmato e prono',
         "Colpo all'occhio: Accecato per 1 minuto",
-        "Terrore: Nemici entro 3m devono fare TS Saggezza CD 12 o essere spaventati",
-        "Ispirazione: Guadagni Ispirazione",
-        "Doppio danno dei dadi",
-        "Colpo perfetto: Puoi attaccare di nuovo immediatamente"
+        'Terrore: Nemici entro 3m devono fare TS Saggezza CD 12 o essere spaventati',
+        'Ispirazione: Guadagni Ispirazione',
+        'Doppio danno dei dadi',
+        'Colpo perfetto: Puoi attaccare di nuovo immediatamente'
       ];
 
       ChatMessage.create({
@@ -634,18 +634,18 @@ class BrancaloniaMechanics {
     if (!game.settings.get(this.ID, 'useCriticalTables')) return;
 
     try {
-      const fumbleTable = await new Roll("1d10").evaluate();
+      const fumbleTable = await new Roll('1d10').evaluate();
       const fumbles = [
-        "Colpisci te stesso: Metà danni",
-        "Arma inceppata/rotta: Deve essere riparata",
-        "Cadi prono",
-        "Colpisci un alleato vicino",
+        'Colpisci te stesso: Metà danni',
+        'Arma inceppata/rotta: Deve essere riparata',
+        'Cadi prono',
+        'Colpisci un alleato vicino',
         "Perdi l'arma: Vola via 3m",
-        "Esposto: Il prossimo attacco contro di te ha vantaggio",
-        "Distrazione: -2 CA fino al tuo prossimo turno",
+        'Esposto: Il prossimo attacco contro di te ha vantaggio',
+        'Distrazione: -2 CA fino al tuo prossimo turno',
         "Crampo: Non puoi usare quell'arma per 1 round",
-        "Imbarazzo: Svantaggio al prossimo tiro",
-        "Il Menagramo colpisce! Applica Menagramo minore"
+        'Imbarazzo: Svantaggio al prossimo tiro',
+        'Il Menagramo colpisce! Applica Menagramo minore'
       ];
 
       ChatMessage.create({
@@ -669,7 +669,7 @@ class BrancaloniaMechanics {
     try {
       rollData.dialogOptions = rollData.dialogOptions || {};
       rollData.dialogOptions.nonLethal = {
-        label: "Danno Non Letale (KO)",
+        label: 'Danno Non Letale (KO)',
         checked: false
       };
     } catch (error) {
@@ -689,7 +689,7 @@ class BrancaloniaMechanics {
 
       if (hp <= 0 && nonLethal) {
         // Applica KO invece di morte
-        actor.toggleStatusEffect("unconscious", { active: true });
+        actor.toggleStatusEffect('unconscious', { active: true });
         actor.unsetFlag(this.ID, 'nonLethalDamage');
 
         ChatMessage.create({
@@ -825,7 +825,7 @@ class BrancaloniaMechanics {
   /**
    * Genera PNG casuale con comando
    */
-  static generateRandomNPCCommand(type = "generic") {
+  static generateRandomNPCCommand(type = 'generic') {
     const npc = this.generateRandomNPC(type);
 
     ChatMessage.create({
@@ -926,27 +926,27 @@ class BrancaloniaMechanics {
   /**
    * Crea un generatore di PNG casuali di Brancalonia
    */
-  static generateRandomNPC(type = "generic") {
+  static generateRandomNPC(type = 'generic') {
     const names = {
-      male: ["Beppe", "Gino", "Tonio", "Carletto", "Piero", "Matteo", "Franco", "Luigi"],
-      female: ["Maria", "Rosa", "Lucia", "Giovanna", "Teresa", "Anna", "Carmela", "Francesca"],
-      surnames: ["il Gobbo", "Mangiafuoco", "Zampacorta", "Bevilacqua", "Malaparte", "Dentineri", "lo Storto"]
+      male: ['Beppe', 'Gino', 'Tonio', 'Carletto', 'Piero', 'Matteo', 'Franco', 'Luigi'],
+      female: ['Maria', 'Rosa', 'Lucia', 'Giovanna', 'Teresa', 'Anna', 'Carmela', 'Francesca'],
+      surnames: ['il Gobbo', 'Mangiafuoco', 'Zampacorta', 'Bevilacqua', 'Malaparte', 'Dentineri', 'lo Storto']
     };
 
-    const occupations = ["Locandiere", "Mercante", "Guardia", "Ladro", "Contadino", "Artigiano", "Prete", "Menestrello"];
+    const occupations = ['Locandiere', 'Mercante', 'Guardia', 'Ladro', 'Contadino', 'Artigiano', 'Prete', 'Menestrello'];
 
     const quirks = [
-      "Sempre ubriaco",
-      "Parla in rima",
-      "Terrorizzato dai gatti",
-      "Ride nervosamente",
-      "Sussurra sempre",
-      "Esageratamente superstizioso",
-      "Mente compulsivamente",
-      "Puzza di cipolle"
+      'Sempre ubriaco',
+      'Parla in rima',
+      'Terrorizzato dai gatti',
+      'Ride nervosamente',
+      'Sussurra sempre',
+      'Esageratamente superstizioso',
+      'Mente compulsivamente',
+      'Puzza di cipolle'
     ];
 
-    const gender = Math.random() > 0.5 ? "male" : "female";
+    const gender = Math.random() > 0.5 ? 'male' : 'female';
     const firstName = names[gender][Math.floor(Math.random() * names[gender].length)];
     const surname = names.surnames[Math.floor(Math.random() * names.surnames.length)];
     const occupation = occupations[Math.floor(Math.random() * occupations.length)];
@@ -954,8 +954,8 @@ class BrancaloniaMechanics {
 
     return {
       name: `${firstName} ${surname}`,
-      occupation: occupation,
-      quirk: quirk,
+      occupation,
+      quirk,
       stats: {
         ac: 10 + Math.floor(Math.random() * 5),
         hp: Math.floor(Math.random() * 20) + 5,
@@ -968,8 +968,8 @@ class BrancaloniaMechanics {
    * Sistema per generare soprannomi Knave
    */
   static generateKnaveNickname() {
-    const adjectives = ["Veloce", "Storto", "Maldestro", "Fortunato", "Maledetto", "Gobbo", "Lungo", "Corto"];
-    const nouns = ["Coltello", "Ombra", "Volpe", "Corvo", "Moneta", "Dado", "Whisky", "Veleno"];
+    const adjectives = ['Veloce', 'Storto', 'Maldestro', 'Fortunato', 'Maledetto', 'Gobbo', 'Lungo', 'Corto'];
+    const nouns = ['Coltello', 'Ombra', 'Volpe', 'Corvo', 'Moneta', 'Dado', 'Whisky', 'Veleno'];
 
     const adj = adjectives[Math.floor(Math.random() * adjectives.length)];
     const noun = nouns[Math.floor(Math.random() * nouns.length)];
@@ -989,7 +989,7 @@ window.BrancaloniaMechanics = BrancaloniaMechanics;
 /**
  * CSS per effetti UI
  */
-Hooks.once('ready', () => {
+Hooks.once('init', () => {
   const style = document.createElement('style');
   style.innerHTML = `
     .critical-effect {

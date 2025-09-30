@@ -1,0 +1,27 @@
+{
+  "_id": "brancalonia007",
+  "name": "🌲 Incontri Selvaggi",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/creatures/mammals/wolf-howl-moon-forest.webp",
+  "scope": "global",
+  "command": "// Macro per Incontri Selvaggi\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\nconst wilderness = game.brancalonia?.WildernessEncounters;\nif (!wilderness) {\n  ui.notifications.error('Sistema Incontri Selvaggi non disponibile!');\n  return;\n}\n\nnew Dialog({\n  title: '🌲 Incontri Selvaggi',\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3>Genera Incontro Casuale</h3>\n      <div style=\"margin: 15px 0;\">\n        <label for=\"terrain-type\" style=\"font-weight: bold;\">Tipo di Terreno:</label>\n        <select id=\"terrain-type\" style=\"width: 100%; margin-top: 5px; padding: 5px;\">\n          <option value=\"forest\">🌲 Foresta</option>\n          <option value=\"mountain\">⛰️ Montagna</option>\n          <option value=\"swamp\">🌿 Palude</option>\n          <option value=\"plains\">🌾 Pianura</option>\n          <option value=\"coast\">🌊 Costa</option>\n          <option value=\"desert\">🏜️ Deserto</option>\n          <option value=\"urban\">🏘️ Urbano</option>\n          <option value=\"underground\">⛏️ Sotterraneo</option>\n        </select>\n      </div>\n      <div style=\"margin: 15px 0;\">\n        <label for=\"time-of-day\" style=\"font-weight: bold;\">Momento del Giorno:</label>\n        <select id=\"time-of-day\" style=\"width: 100%; margin-top: 5px; padding: 5px;\">\n          <option value=\"dawn\">🌅 Alba</option>\n          <option value=\"morning\">☀️ Mattina</option>\n          <option value=\"afternoon\">🌞 Pomeriggio</option>\n          <option value=\"evening\">🌇 Sera</option>\n          <option value=\"night\">🌙 Notte</option>\n        </select>\n      </div>\n      <div style=\"margin: 15px 0;\">\n        <label for=\"party-size\" style=\"font-weight: bold;\">Dimensione Gruppo:</label>\n        <input type=\"number\" id=\"party-size\" value=\"4\" min=\"1\" max=\"10\" style=\"width: 60px; margin-left: 10px;\"/>\n      </div>\n      <hr>\n      <p style=\"text-align: center; font-style: italic;\">\"Le terre selvagge nascondono pericoli e opportunità...\"</p>\n    </div>\n  `,\n  buttons: {\n    encounter: {\n      icon: '<i class=\"fas fa-dice-d20\"></i>',\n      label: 'Genera Incontro',\n      callback: (html) => {\n        const terrain = html.find('#terrain-type').val();\n        const timeOfDay = html.find('#time-of-day').val();\n        const partySize = parseInt(html.find('#party-size').val());\n        \n        wilderness.generateEncounter({\n          terrain: terrain,\n          timeOfDay: timeOfDay,\n          partySize: partySize\n        });\n      }\n    },\n    tracks: {\n      icon: '<i class=\"fas fa-paw\"></i>',\n      label: 'Cerca Tracce',\n      callback: () => {\n        wilderness.searchForTracks();\n      }\n    },\n    camp: {\n      icon: '<i class=\"fas fa-campground\"></i>',\n      label: 'Accampamento',\n      callback: () => {\n        wilderness.setupCamp();\n      }\n    },\n    weather: {\n      icon: '<i class=\"fas fa-cloud-sun-rain\"></i>',\n      label: 'Condizioni Meteo',\n      callback: () => {\n        wilderness.rollWeather();\n      }\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'encounter'\n}).render(true);",
+  "folder": null,
+  "sort": 100006,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "encounters"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000006000,
+    "modifiedTime": 1700000006000,
+    "lastModifiedBy": "brancalonia"
+  }
+}

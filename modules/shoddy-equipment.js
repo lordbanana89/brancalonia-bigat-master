@@ -34,10 +34,9 @@ class ShoddyEquipment {
 
       console.log('Brancalonia | Sistema Equipaggiamento Scadente inizializzato con successo');
       return instance;
-
     } catch (error) {
       console.error('Brancalonia | Errore inizializzazione Sistema Equipaggiamento Scadente:', error);
-      ui.notifications.error('Errore inizializzazione Sistema Equipaggiamento Scadente: ' + error.message);
+      ui.notifications.error(`Errore inizializzazione Sistema Equipaggiamento Scadente: ${error.message}`);
     }
   }
 
@@ -176,7 +175,6 @@ class ShoddyEquipment {
       this.initialized = true;
       console.log('Brancalonia | Sistema Equipaggiamento Scadente configurato');
       ui.notifications.info('Sistema Equipaggiamento Scadente attivo');
-
     } catch (error) {
       console.error('Brancalonia | Errore inizializzazione equipaggiamento scadente:', error);
       ui.notifications.error('Errore inizializzazione Sistema Equipaggiamento Scadente');
@@ -191,25 +189,25 @@ class ShoddyEquipment {
       weapons: {
         penalty: -1,
         breakChance: baseChance,
-        description: "Arma di qualità scadente",
+        description: 'Arma di qualità scadente',
         keywords: ['scadente', 'rotto', 'malandato', 'vecchio', 'arrugginito', 'logoro']
       },
       armor: {
         acPenalty: -1,
         breakChance: baseChance * 0.5,
-        description: "Armatura di qualità scadente",
+        description: 'Armatura di qualità scadente',
         keywords: ['scadente', 'rotto', 'malandato', 'vecchio', 'arrugginito', 'logoro']
       },
       tools: {
         penalty: -2,
         breakChance: baseChance * 1.5,
-        description: "Attrezzi di qualità scadente",
+        description: 'Attrezzi di qualità scadente',
         keywords: ['scadente', 'rotto', 'malandato', 'vecchio', 'arrugginito', 'logoro']
       },
       shield: {
         acPenalty: -1,
         breakChance: baseChance * 0.3,
-        description: "Scudo di qualità scadente",
+        description: 'Scudo di qualità scadente',
         keywords: ['scadente', 'rotto', 'malandato', 'vecchio', 'arrugginito', 'logoro']
       }
     };
@@ -399,8 +397,8 @@ class ShoddyEquipment {
 
     if (!existingEffect) {
       const effectData = {
-        label: "Equipaggiamento Scadente",
-        icon: "icons/svg/downgrade.svg",
+        label: 'Equipaggiamento Scadente',
+        icon: 'icons/svg/downgrade.svg',
         changes: this.getEffectChanges(type, config),
         flags: {
           'brancalonia-bigat': {
@@ -550,7 +548,6 @@ class ShoddyEquipment {
 
       console.log(`Brancalonia | Oggetto rotto: ${item.name}`);
       ui.notifications.warn(`${item.name} si è rotto!`);
-
     } catch (error) {
       console.error('Brancalonia | Errore rottura oggetto:', error);
       ui.notifications.error('Errore durante la rottura dell\'oggetto');
@@ -586,7 +583,7 @@ class ShoddyEquipment {
           'brancalonia-bigat': {
             shoddyRepair: true,
             itemId: item.id,
-            cost: cost
+            cost
           }
         }
       });
@@ -596,7 +593,6 @@ class ShoddyEquipment {
 
       console.log(`Brancalonia | Oggetto riparato: ${item.name} (costo: ${cost} mo)`);
       ui.notifications.info(`${item.name} riparato per ${cost} mo`);
-
     } catch (error) {
       console.error('Brancalonia | Errore riparazione oggetto:', error);
       ui.notifications.error('Errore durante la riparazione dell\'oggetto');
@@ -722,7 +718,7 @@ class ShoddyEquipment {
       </div>`;
 
     ChatMessage.create({
-      content: content,
+      content,
       whisper: [game.user.id]
     });
   }

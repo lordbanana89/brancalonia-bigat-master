@@ -6,43 +6,46 @@
 class CompagniaManager {
   constructor() {
     this.compagniaRoles = {
-      "capitano": { label: "Capitano", max: 1, benefits: "Decisioni finali, +2 Intimidire" },
-      "tesoriere": { label: "Tesoriere", max: 1, benefits: "Gestisce finanze, +2 Inganno" },
-      "cuoco": { label: "Cuoco", max: 1, benefits: "Migliora riposi, +1 dado vita recuperato" },
-      "guaritore": { label: "Guaritore", max: 1, benefits: "Cura gratuita, kit del guaritore infinito" },
-      "esploratore": { label: "Esploratore", max: 2, benefits: "+5 Percezione passiva in viaggio" },
-      "diplomatico": { label: "Diplomatico", max: 1, benefits: "+2 Persuasione, riduce infamia" },
-      "sicario": { label: "Sicario", max: 2, benefits: "+1d6 danni furtivi 1/combattimento" },
-      "intrattenitore": { label: "Intrattenitore", max: 1, benefits: "Guadagni extra nelle taverne" }
+      capitano: { label: 'Capitano', max: 1, benefits: 'Decisioni finali, +2 Intimidire' },
+      tesoriere: { label: 'Tesoriere', max: 1, benefits: 'Gestisce finanze, +2 Inganno' },
+      cuoco: { label: 'Cuoco', max: 1, benefits: 'Migliora riposi, +1 dado vita recuperato' },
+      guaritore: { label: 'Guaritore', max: 1, benefits: 'Cura gratuita, kit del guaritore infinito' },
+      esploratore: { label: 'Esploratore', max: 2, benefits: '+5 Percezione passiva in viaggio' },
+      diplomatico: { label: 'Diplomatico', max: 1, benefits: '+2 Persuasione, riduce infamia' },
+      sicario: { label: 'Sicario', max: 2, benefits: '+1d6 danni furtivi 1/combattimento' },
+      intrattenitore: { label: 'Intrattenitore', max: 1, benefits: 'Guadagni extra nelle taverne' }
     };
   }
 
   static initialize() {
-    console.log("Inizializzazione CompagniaManager...");
+    console.log('Inizializzazione CompagniaManager...');
 
     // Registrazione settings
-    game.settings.register("brancalonia-bigat", "compagniaAutoShare", {
-      name: "Condivisione Automatica Bottino",
-      hint: "Condivide automaticamente il bottino tra i membri della compagnia",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'compagniaAutoShare', {
+      name: 'Condivisione Automatica Bottino',
+      hint: 'Condivide automaticamente il bottino tra i membri della compagnia',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "compagniaNotifications", {
-      name: "Notifiche Compagnia",
-      hint: "Mostra notifiche per eventi della compagnia",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'compagniaNotifications', {
+      name: 'Notifiche Compagnia',
+      hint: 'Mostra notifiche per eventi della compagnia',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
     // Creazione istanza globale
-    window.CompagniaManager = new CompagniaManager();
+    if (!game.brancalonia) game.brancalonia = {};
+    const manager = new CompagniaManager();
+    game.brancalonia.compagnia = manager;
+    window.CompagniaManager = CompagniaManager; // Mantieni la classe, non l'istanza
 
-    // Registrazione hooks
+    // Registrazione hooks statici
     CompagniaManager._registerHooks();
 
     // Registrazione comandi chat
@@ -51,59 +54,71 @@ class CompagniaManager {
     // Creazione macro automatica
     CompagniaManager._createMacro();
 
-    console.log("CompagniaManager inizializzato correttamente!");
+    console.log('CompagniaManager inizializzato correttamente!');
   }
 
   static _registerHooks() {
     // Hook per aggiungere tab Compagnia alle schede personaggio
-    Hooks.on("renderActorSheet", (app, html, data) => {
-      if (app.actor.type === "character" && window.CompagniaManager._isInCompagnia(app.actor)) {
-        window.CompagniaManager._addCompagniaTab(app, html);
+    Hooks.on('renderActorSheet', (app, html, data) => {
+      const manager = game.brancalonia?.compagnia;
+      if (!manager) return;
+
+      if (app.actor.type === 'character' && manager._isInCompagnia(app.actor)) {
+        manager._addCompagniaTab(app, html);
       }
     });
 
     // Hook per dividere automaticamente il bottino
-    Hooks.on("createItem", (item, options, userId) => {
-      if (item.parent?.type === "character" && item.type === "loot") {
-        window.CompagniaManager._checkLootSharing(item);
+    Hooks.on('createItem', (item, options, userId) => {
+      const manager = game.brancalonia?.compagnia;
+      if (!manager) return;
+
+      if (item.parent?.type === 'character' && item.type === 'loot') {
+        manager._checkLootSharing(item);
       }
     });
 
     // Hook per aggiornare infamia collettiva quando cambia l'infamia di un membro
-    Hooks.on("updateActor", async (actor, updateData, options, userId) => {
-      if (actor.type === "character" && updateData.flags?.["brancalonia-bigat"]?.infamia !== undefined) {
-        const compagniaId = actor.flags["brancalonia-bigat"]?.compagniaId;
+    Hooks.on('updateActor', async (actor, updateData, options, userId) => {
+      const manager = game.brancalonia?.compagnia;
+      if (!manager) return;
+
+      if (actor.type === 'character' && updateData.flags?.['brancalonia-bigat']?.infamia !== undefined) {
+        const compagniaId = actor.flags['brancalonia-bigat']?.compagniaId;
         if (compagniaId) {
           const compagnia = game.actors.get(compagniaId);
           if (compagnia) {
-            await window.CompagniaManager.calculateCollectiveInfamia(compagnia);
+            await manager.calculateCollectiveInfamia(compagnia);
           }
         }
       }
     });
 
     // Hook per socket listeners
-    game.socket.on("module.brancalonia-bigat", (data) => {
-      if (data.type === "compagnia-update") {
-        window.CompagniaManager._handleCompagniaUpdate(data);
+    game.socket.on('module.brancalonia-bigat', (data) => {
+      const manager = game.brancalonia?.compagnia;
+      if (!manager) return;
+
+      if (data.type === 'compagnia-update') {
+        manager._handleCompagniaUpdate(data);
       }
     });
 
-    console.log("CompagniaManager hooks registrati!");
+    console.log('CompagniaManager hooks registrati!');
   }
 
   static _registerChatCommands() {
     // Hook per processare comandi chat
-    Hooks.on("chatMessage", (html, content, msg) => {
+    Hooks.on('chatMessage', (html, content, msg) => {
       // Parse del comando
-      if (!content.startsWith("/compagnia-")) return true;
+      if (!content.startsWith('/compagnia-')) return true;
 
-      const parts = content.split(" ");
+      const parts = content.split(' ');
       const command = parts[0];
-      const parameters = parts.slice(1).join(" ");
+      const parameters = parts.slice(1).join(' ');
 
       // Previeni il messaggio normale
-      if (command.startsWith("/compagnia-")) {
+      if (command.startsWith('/compagnia-')) {
         window.CompagniaManager._handleChatCommand(command, parameters);
         return false; // Blocca il messaggio
       }
@@ -111,24 +126,24 @@ class CompagniaManager {
       return true;
     });
 
-    console.log("CompagniaManager comandi chat registrati!");
+    console.log('CompagniaManager comandi chat registrati!');
   }
 
   static async _handleChatCommand(command, parameters) {
-    switch(command) {
-      case "/compagnia-crea":
+    switch (command) {
+      case '/compagnia-crea':
         await CompagniaManager._commandCreateCompagnia(parameters);
         break;
-      case "/compagnia-aggiungi":
+      case '/compagnia-aggiungi':
         await CompagniaManager._commandAddMember();
         break;
-      case "/compagnia-ruolo":
+      case '/compagnia-ruolo':
         await CompagniaManager._commandAssignRole(parameters);
         break;
-      case "/compagnia-tesoro":
+      case '/compagnia-tesoro':
         await CompagniaManager._commandManageTreasury();
         break;
-      case "/compagnia-help":
+      case '/compagnia-help':
         CompagniaManager._commandShowHelp();
         break;
       default:
@@ -139,23 +154,23 @@ class CompagniaManager {
   static async _commandCreateCompagnia(parameters) {
     const tokens = canvas.tokens.controlled;
     if (tokens.length < 2) {
-      ui.notifications.error("Seleziona almeno 2 token per creare una compagnia!");
+      ui.notifications.error('Seleziona almeno 2 token per creare una compagnia!');
       return;
     }
 
-    const actors = tokens.map(t => t.actor).filter(a => a.type === "character");
+    const actors = tokens.map(t => t.actor).filter(a => a.type === 'character');
     if (actors.length < 2) {
-      ui.notifications.error("Seleziona almeno 2 personaggi per creare una compagnia!");
+      ui.notifications.error('Seleziona almeno 2 personaggi per creare una compagnia!');
       return;
     }
 
-    const name = parameters || "Compagnia Senza Nome";
+    const name = parameters || 'Compagnia Senza Nome';
     const compagnia = await window.CompagniaManager.createCompagnia(actors, name);
 
     if (compagnia) {
       ChatMessage.create({
         content: `Compagnia "${compagnia.name}" creata con successo!`,
-        speaker: { alias: "Sistema Compagnia" }
+        speaker: { alias: 'Sistema Compagnia' }
       });
     }
   }
@@ -163,23 +178,23 @@ class CompagniaManager {
   static async _commandAddMember() {
     const tokens = canvas.tokens.controlled;
     if (tokens.length !== 1) {
-      ui.notifications.error("Seleziona un solo token!");
+      ui.notifications.error('Seleziona un solo token!');
       return;
     }
 
     const actor = tokens[0].actor;
-    if (actor.type !== "character") {
-      ui.notifications.error("Seleziona un personaggio!");
+    if (actor.type !== 'character') {
+      ui.notifications.error('Seleziona un personaggio!');
       return;
     }
 
     // Trova compagnia del speaker
     const speaker = ChatMessage.getSpeaker();
     const speakerActor = game.actors.get(speaker.actor);
-    const compagniaId = speakerActor?.flags["brancalonia-bigat"]?.compagniaId;
+    const compagniaId = speakerActor?.flags['brancalonia-bigat']?.compagniaId;
 
     if (!compagniaId) {
-      ui.notifications.error("Non sei membro di nessuna compagnia!");
+      ui.notifications.error('Non sei membro di nessuna compagnia!');
       return;
     }
 
@@ -190,9 +205,9 @@ class CompagniaManager {
   }
 
   static async _commandAssignRole(parameters) {
-    const params = parameters.split(" ");
+    const params = parameters.split(' ');
     if (params.length < 2) {
-      ui.notifications.error("Uso: /compagnia-ruolo [nome_personaggio] [ruolo]");
+      ui.notifications.error('Uso: /compagnia-ruolo [nome_personaggio] [ruolo]');
       return;
     }
 
@@ -201,13 +216,13 @@ class CompagniaManager {
 
     const actor = game.actors.find(a => a.name.toLowerCase() === actorName.toLowerCase());
     if (!actor) {
-      ui.notifications.error("Personaggio non trovato!");
+      ui.notifications.error('Personaggio non trovato!');
       return;
     }
 
-    const compagniaId = actor.flags["brancalonia-bigat"]?.compagniaId;
+    const compagniaId = actor.flags['brancalonia-bigat']?.compagniaId;
     if (!compagniaId) {
-      ui.notifications.error("Il personaggio non è membro di una compagnia!");
+      ui.notifications.error('Il personaggio non è membro di una compagnia!');
       return;
     }
 
@@ -220,10 +235,10 @@ class CompagniaManager {
   static async _commandManageTreasury() {
     const speaker = ChatMessage.getSpeaker();
     const speakerActor = game.actors.get(speaker.actor);
-    const compagniaId = speakerActor?.flags["brancalonia-bigat"]?.compagniaId;
+    const compagniaId = speakerActor?.flags['brancalonia-bigat']?.compagniaId;
 
     if (!compagniaId) {
-      ui.notifications.error("Non sei membro di nessuna compagnia!");
+      ui.notifications.error('Non sei membro di nessuna compagnia!');
       return;
     }
 
@@ -254,7 +269,7 @@ class CompagniaManager {
 
     ChatMessage.create({
       content: helpText,
-      speaker: { alias: "Sistema Compagnia" },
+      speaker: { alias: 'Sistema Compagnia' },
       whisper: [game.user.id]
     });
   }
@@ -262,33 +277,33 @@ class CompagniaManager {
   static _createMacro() {
     // Usiamo una normale stringa e escape manuale per evitare conflitti di sintassi
     const macroCommand = [
-      "// Macro per Gestione Compagnia",
-      "const tokens = canvas.tokens.controlled;",
-      "if (tokens.length === 0) {",
+      '// Macro per Gestione Compagnia',
+      'const tokens = canvas.tokens.controlled;',
+      'if (tokens.length === 0) {',
       "  ui.notifications.warn('Seleziona almeno un token!');",
-      "} else if (tokens.length === 1) {",
-      "  const actor = tokens[0].actor;",
+      '} else if (tokens.length === 1) {',
+      '  const actor = tokens[0].actor;',
       "  if (actor.type === 'character') {",
       "    const compagniaId = actor.flags['brancalonia-bigat']?.compagniaId;",
-      "    if (compagniaId) {",
-      "      const compagnia = game.actors.get(compagniaId);",
-      "      if (compagnia) {",
-      "        window.CompagniaManager._showTreasuryDialog(compagnia);",
-      "      } else {",
+      '    if (compagniaId) {',
+      '      const compagnia = game.actors.get(compagniaId);',
+      '      if (compagnia) {',
+      '        window.CompagniaManager._showTreasuryDialog(compagnia);',
+      '      } else {',
       "        ui.notifications.error('Compagnia non trovata!');",
-      "      }",
-      "    } else {",
+      '      }',
+      '    } else {',
       "      ui.notifications.info('Questo personaggio non è membro di una compagnia. Usa /compagnia-crea per crearne una.');",
-      "    }",
-      "  } else {",
+      '    }',
+      '  } else {',
       "    ui.notifications.error('Seleziona un personaggio!');",
-      "  }",
-      "} else {",
-      "  // Multipli token selezionati - proponi creazione compagnia",
+      '  }',
+      '} else {',
+      '  // Multipli token selezionati - proponi creazione compagnia',
       "  const actors = tokens.map(t => t.actor).filter(a => a.type === 'character');",
-      "  if (actors.length >= 2) {",
+      '  if (actors.length >= 2) {',
       "    const memberNames = actors.map(a => a.name).join(', ');",
-      "    new Dialog({",
+      '    new Dialog({',
       "      title: 'Crea Compagnia',",
       "      content: '<form>' +",
       "        '<div class=\"form-group\">' +",
@@ -297,44 +312,44 @@ class CompagniaManager {
       "        '</div>' +",
       "        '<p>Membri selezionati: ' + memberNames + '</p>' +",
       "        '</form>',",
-      "      buttons: {",
-      "        create: {",
+      '      buttons: {',
+      '        create: {',
       "          label: 'Crea',",
-      "          callback: async (html) => {",
+      '          callback: async (html) => {',
       "            const name = html.find('#compagnia-name').val();",
-      "            await window.CompagniaManager.createCompagnia(actors, name);",
-      "          }",
-      "        },",
+      '            await window.CompagniaManager.createCompagnia(actors, name);',
+      '          }',
+      '        },',
       "        cancel: { label: 'Annulla' }",
-      "      },",
+      '      },',
       "      default: 'create'",
-      "    }).render(true);",
-      "  } else {",
+      '    }).render(true);',
+      '  } else {',
       "    ui.notifications.error('Seleziona almeno 2 personaggi per creare una compagnia!');",
-      "  }",
-      "}"
+      '  }',
+      '}'
     ].join('\n');
 
     const macroData = {
-      name: "Gestione Compagnia",
-      type: "script",
-      scope: "global",
+      name: 'Gestione Compagnia',
+      type: 'script',
+      scope: 'global',
       command: macroCommand,
-      img: "icons/environment/people/group.webp",
+      img: 'icons/environment/people/group.webp',
       flags: {
-        "brancalonia-bigat": {
+        'brancalonia-bigat': {
           isSystemMacro: true,
-          version: "1.0"
+          version: '1.0'
         }
       }
     };
 
     // Verifica se la macro esiste già
-    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags["brancalonia-bigat"]?.isSystemMacro);
+    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags['brancalonia-bigat']?.isSystemMacro);
 
     if (!existingMacro) {
       game.macros.documentClass.create(macroData).then(() => {
-        console.log("Macro Gestione Compagnia creata!");
+        console.log('Macro Gestione Compagnia creata!');
       });
     }
   }
@@ -343,33 +358,33 @@ class CompagniaManager {
   /**
    * Crea una nuova compagnia
    */
-  async createCompagnia(actors, name = "Compagnia Senza Nome") {
+  async createCompagnia(actors, name = 'Compagnia Senza Nome') {
     // Verifica che ci siano almeno 2 membri
     if (actors.length < 2) {
-      ui.notifications.error("Una compagnia richiede almeno 2 membri!");
+      ui.notifications.error('Una compagnia richiede almeno 2 membri!');
       return null;
     }
 
     // Crea l'actor per la compagnia (usa tipo npc con flag personalizzati)
     const compagniaData = {
-      name: name,
-      type: "npc",  // Usa tipo standard dnd5e con flag personalizzati
-      img: "icons/environment/people/group.webp",
+      name,
+      type: 'npc', // Usa tipo standard dnd5e con flag personalizzati
+      img: 'icons/environment/people/group.webp',
       system: {
         description: {
           value: `<h2>${name}</h2><p>Una compagnia di ventura del Regno di Taglia.</p>`
         },
         details: {
-          type: { value: "humanoid" },
+          type: { value: 'humanoid' },
           cr: 0,
           spellLevel: 0,
-          source: "Brancalonia"
+          source: 'Brancalonia'
         }
       },
       flags: {
-        "brancalonia-bigat": {
+        'brancalonia-bigat': {
           isCompagnia: true,
-          isGroupActor: true,  // Flag per identificarlo come gruppo
+          isGroupActor: true, // Flag per identificarlo come gruppo
           members: actors.map(a => ({
             actorId: a.id,
             role: null,
@@ -384,8 +399,8 @@ class CompagniaManager {
           createdDate: new Date().toISOString(),
           charter: {
             rules: [],
-            lootDivision: "equal", // equal, shares, merit
-            decisions: "vote" // vote, captain, consensus
+            lootDivision: 'equal', // equal, shares, merit
+            decisions: 'vote' // vote, captain, consensus
           }
         }
       }
@@ -395,8 +410,8 @@ class CompagniaManager {
 
     // Imposta flag su ogni membro
     for (const actor of actors) {
-      await actor.setFlag("brancalonia-bigat", "compagniaId", compagnia.id);
-      await actor.setFlag("brancalonia-bigat", "compagniaRole", null);
+      await actor.setFlag('brancalonia-bigat', 'compagniaId', compagnia.id);
+      await actor.setFlag('brancalonia-bigat', 'compagniaRole', null);
     }
 
     // Notifica creazione
@@ -412,7 +427,7 @@ class CompagniaManager {
           <p><em>Che la fortuna vi accompagni nelle vostre imprese!</em></p>
         </div>
       `,
-      speaker: { alias: "Sistema Compagnia" }
+      speaker: { alias: 'Sistema Compagnia' }
     });
 
     return compagnia;
@@ -422,7 +437,7 @@ class CompagniaManager {
    * Aggiunge un membro alla compagnia
    */
   async addMember(compagnia, actor, role = null) {
-    const members = compagnia.flags["brancalonia-bigat"].members || [];
+    const members = compagnia.flags['brancalonia-bigat'].members || [];
 
     // Verifica che non sia già membro
     if (members.find(m => m.actorId === actor.id)) {
@@ -433,19 +448,19 @@ class CompagniaManager {
     // Aggiungi nuovo membro
     members.push({
       actorId: actor.id,
-      role: role,
+      role,
       joinDate: new Date().toISOString(),
       share: 1
     });
 
-    await compagnia.setFlag("brancalonia-bigat", "members", members);
-    await actor.setFlag("brancalonia-bigat", "compagniaId", compagnia.id);
-    await actor.setFlag("brancalonia-bigat", "compagniaRole", role);
+    await compagnia.setFlag('brancalonia-bigat', 'members', members);
+    await actor.setFlag('brancalonia-bigat', 'compagniaId', compagnia.id);
+    await actor.setFlag('brancalonia-bigat', 'compagniaRole', role);
 
     // Notifica
     ChatMessage.create({
       content: `${actor.name} si è unito alla compagnia ${compagnia.name}!`,
-      speaker: { alias: "Sistema Compagnia" }
+      speaker: { alias: 'Sistema Compagnia' }
     });
   }
 
@@ -453,21 +468,21 @@ class CompagniaManager {
    * Rimuove un membro dalla compagnia
    */
   async removeMember(compagnia, actorId) {
-    let members = compagnia.flags["brancalonia-bigat"].members || [];
+    let members = compagnia.flags['brancalonia-bigat'].members || [];
     const actor = game.actors.get(actorId);
 
     members = members.filter(m => m.actorId !== actorId);
 
-    await compagnia.setFlag("brancalonia-bigat", "members", members);
+    await compagnia.setFlag('brancalonia-bigat', 'members', members);
 
     if (actor) {
-      await actor.unsetFlag("brancalonia-bigat", "compagniaId");
-      await actor.unsetFlag("brancalonia-bigat", "compagniaRole");
+      await actor.unsetFlag('brancalonia-bigat', 'compagniaId');
+      await actor.unsetFlag('brancalonia-bigat', 'compagniaRole');
     }
 
     ChatMessage.create({
-      content: `${actor?.name || "Un membro"} ha lasciato la compagnia ${compagnia.name}.`,
-      speaker: { alias: "Sistema Compagnia" }
+      content: `${actor?.name || 'Un membro'} ha lasciato la compagnia ${compagnia.name}.`,
+      speaker: { alias: 'Sistema Compagnia' }
     });
   }
 
@@ -477,12 +492,12 @@ class CompagniaManager {
   async assignRole(compagnia, actorId, role) {
     // Verifica che il ruolo sia valido
     if (!this.compagniaRoles[role]) {
-      ui.notifications.error("Ruolo non valido!");
+      ui.notifications.error('Ruolo non valido!');
       return;
     }
 
     // Verifica limiti del ruolo
-    const members = compagnia.flags["brancalonia-bigat"].members || [];
+    const members = compagnia.flags['brancalonia-bigat'].members || [];
     const currentRoleCount = members.filter(m => m.role === role).length;
 
     if (currentRoleCount >= this.compagniaRoles[role].max) {
@@ -494,15 +509,15 @@ class CompagniaManager {
     const memberIndex = members.findIndex(m => m.actorId === actorId);
     if (memberIndex >= 0) {
       members[memberIndex].role = role;
-      await compagnia.setFlag("brancalonia-bigat", "members", members);
+      await compagnia.setFlag('brancalonia-bigat', 'members', members);
 
       const actor = game.actors.get(actorId);
       if (actor) {
-        await actor.setFlag("brancalonia-bigat", "compagniaRole", role);
+        await actor.setFlag('brancalonia-bigat', 'compagniaRole', role);
 
         ChatMessage.create({
           content: `${actor.name} è ora ${this.compagniaRoles[role].label} della compagnia!`,
-          speaker: { alias: "Sistema Compagnia" }
+          speaker: { alias: 'Sistema Compagnia' }
         });
       }
     }
@@ -512,20 +527,20 @@ class CompagniaManager {
    * Calcola l'infamia collettiva della compagnia
    */
   async calculateCollectiveInfamia(compagnia) {
-    const members = compagnia.flags["brancalonia-bigat"].members || [];
+    const members = compagnia.flags['brancalonia-bigat'].members || [];
     let totalInfamia = 0;
     let count = 0;
 
     for (const member of members) {
       const actor = game.actors.get(member.actorId);
       if (actor) {
-        totalInfamia += actor.flags["brancalonia-bigat"]?.infamia || 0;
+        totalInfamia += actor.flags['brancalonia-bigat']?.infamia || 0;
         count++;
       }
     }
 
     const collectiveInfamia = count > 0 ? Math.floor(totalInfamia / count) : 0;
-    await compagnia.setFlag("brancalonia-bigat", "infamiaCollettiva", collectiveInfamia);
+    await compagnia.setFlag('brancalonia-bigat', 'infamiaCollettiva', collectiveInfamia);
 
     return collectiveInfamia;
   }
@@ -533,23 +548,23 @@ class CompagniaManager {
   /**
    * Gestisce il tesoro della compagnia
    */
-  async modifyTreasury(compagnia, amount, description = "") {
-    const currentTreasury = compagnia.flags["brancalonia-bigat"].treasury || 0;
+  async modifyTreasury(compagnia, amount, description = '') {
+    const currentTreasury = compagnia.flags['brancalonia-bigat'].treasury || 0;
     const newTreasury = Math.max(0, currentTreasury + amount);
 
-    await compagnia.setFlag("brancalonia-bigat", "treasury", newTreasury);
+    await compagnia.setFlag('brancalonia-bigat', 'treasury', newTreasury);
 
     // Log transazione
     const transaction = {
       date: new Date().toISOString(),
-      amount: amount,
-      description: description,
+      amount,
+      description,
       balance: newTreasury
     };
 
-    const transactions = compagnia.flags["brancalonia-bigat"].transactions || [];
+    const transactions = compagnia.flags['brancalonia-bigat'].transactions || [];
     transactions.push(transaction);
-    await compagnia.setFlag("brancalonia-bigat", "transactions", transactions);
+    await compagnia.setFlag('brancalonia-bigat', 'transactions', transactions);
 
     // Notifica
     ChatMessage.create({
@@ -569,13 +584,13 @@ class CompagniaManager {
    * Divide il bottino tra i membri
    */
   async divideLoot(compagnia, totalAmount) {
-    const members = compagnia.flags["brancalonia-bigat"].members || [];
-    const divisionType = compagnia.flags["brancalonia-bigat"].charter?.lootDivision || "equal";
+    const members = compagnia.flags['brancalonia-bigat'].members || [];
+    const divisionType = compagnia.flags['brancalonia-bigat'].charter?.lootDivision || 'equal';
 
-    let distributions = [];
+    const distributions = [];
 
     switch (divisionType) {
-      case "equal":
+      case 'equal':
         // Divisione equa
         const equalShare = Math.floor(totalAmount / members.length);
         const remainder = totalAmount % members.length;
@@ -589,11 +604,11 @@ class CompagniaManager {
 
         // Il resto va al tesoro comune
         if (remainder > 0) {
-          await this.modifyTreasury(compagnia, remainder, "Resto della divisione del bottino");
+          await this.modifyTreasury(compagnia, remainder, 'Resto della divisione del bottino');
         }
         break;
 
-      case "shares":
+      case 'shares':
         // Divisione per quote
         const totalShares = members.reduce((sum, m) => sum + (m.share || 1), 0);
         const shareValue = Math.floor(totalAmount / totalShares);
@@ -606,13 +621,13 @@ class CompagniaManager {
         }
         break;
 
-      case "merit":
+      case 'merit':
         // Divisione per merito (basata su ruolo)
         const meritShares = {
-          "capitano": 2,
-          "tesoriere": 1.5,
-          "sicario": 1.5,
-          "default": 1
+          capitano: 2,
+          tesoriere: 1.5,
+          sicario: 1.5,
+          default: 1
         };
 
         const totalMerit = members.reduce((sum, m) =>
@@ -639,7 +654,7 @@ class CompagniaManager {
         // Aggiungi denaro all'attore - compatibile con D&D 5e v3+
         const currentGold = actor.system.currency?.gp || 0; // Usa gp (gold pieces) come base
         await actor.update({
-          "system.currency.gp": currentGold + dist.amount
+          'system.currency.gp': currentGold + dist.amount
         });
 
         distributionReport += `<li>${actor.name}: ${dist.amount} ducati</li>`;
@@ -661,7 +676,7 @@ class CompagniaManager {
     // Converti html in jQuery object per Foundry v13
     const $html = $(html);
 
-    const compagniaId = app.actor.flags["brancalonia-bigat"]?.compagniaId;
+    const compagniaId = app.actor.flags['brancalonia-bigat']?.compagniaId;
     if (!compagniaId) return;
 
     const compagnia = game.actors.get(compagniaId);
@@ -672,15 +687,15 @@ class CompagniaManager {
     tabs.append('<a class="item" data-tab="compagnia">Compagnia</a>');
 
     // Crea contenuto tab
-    const members = compagnia.flags["brancalonia-bigat"].members || [];
+    const members = compagnia.flags['brancalonia-bigat'].members || [];
     const membersList = members.map(m => {
       const actor = game.actors.get(m.actorId);
-      const role = m.role ? this.compagniaRoles[m.role]?.label : "Nessun ruolo";
+      const role = m.role ? this.compagniaRoles[m.role]?.label : 'Nessun ruolo';
       return `
         <li>
-          <strong>${actor?.name || "Sconosciuto"}</strong>
+          <strong>${actor?.name || 'Sconosciuto'}</strong>
           <span class="role">${role}</span>
-          <span class="infamia">Infamia: ${actor?.flags["brancalonia-bigat"]?.infamia || 0}</span>
+          <span class="infamia">Infamia: ${actor?.flags['brancalonia-bigat']?.infamia || 0}</span>
         </li>
       `;
     }).join('');
@@ -692,15 +707,15 @@ class CompagniaManager {
         <div class="compagnia-stats">
           <div class="stat">
             <label>Tesoro Comune:</label>
-            <span>${compagnia.flags["brancalonia-bigat"].treasury || 0} ducati</span>
+            <span>${compagnia.flags['brancalonia-bigat'].treasury || 0} ducati</span>
           </div>
           <div class="stat">
             <label>Reputazione:</label>
-            <span>${compagnia.flags["brancalonia-bigat"].reputation || 0}</span>
+            <span>${compagnia.flags['brancalonia-bigat'].reputation || 0}</span>
           </div>
           <div class="stat">
             <label>Infamia Collettiva:</label>
-            <span>${compagnia.flags["brancalonia-bigat"].infamiaCollettiva || 0}</span>
+            <span>${compagnia.flags['brancalonia-bigat'].infamiaCollettiva || 0}</span>
           </div>
         </div>
 
@@ -711,14 +726,14 @@ class CompagniaManager {
 
         <h3>Il Mio Ruolo</h3>
         <div class="my-role">
-          <strong>${app.actor.flags["brancalonia-bigat"]?.compagniaRole ?
-            this.compagniaRoles[app.actor.flags["brancalonia-bigat"].compagniaRole]?.label :
-            "Nessun ruolo assegnato"
-          }</strong>
-          ${app.actor.flags["brancalonia-bigat"]?.compagniaRole ?
-            `<p>${this.compagniaRoles[app.actor.flags["brancalonia-bigat"].compagniaRole]?.benefits}</p>` :
-            ""
-          }
+          <strong>${app.actor.flags['brancalonia-bigat']?.compagniaRole ?
+    this.compagniaRoles[app.actor.flags['brancalonia-bigat'].compagniaRole]?.label :
+    'Nessun ruolo assegnato'
+}</strong>
+          ${app.actor.flags['brancalonia-bigat']?.compagniaRole ?
+    `<p>${this.compagniaRoles[app.actor.flags['brancalonia-bigat'].compagniaRole]?.benefits}</p>` :
+    ''
+}
         </div>
 
         <div class="compagnia-actions">
@@ -824,39 +839,39 @@ class CompagniaManager {
           <input type="text" id="description" placeholder="Motivo della transazione..." />
         </div>
         <hr>
-        <p><strong>Bilancio attuale:</strong> ${compagnia.flags["brancalonia-bigat"].treasury || 0} ducati</p>
+        <p><strong>Bilancio attuale:</strong> ${compagnia.flags['brancalonia-bigat'].treasury || 0} ducati</p>
       </form>
     `;
 
     new Dialog({
       title: `Tesoro - ${compagnia.name}`,
-      content: content,
+      content,
       buttons: {
         execute: {
-          label: "Esegui",
+          label: 'Esegui',
           callback: async (html) => {
             const operation = html.find('#operation').val();
             const amount = parseInt(html.find('#amount').val()) || 0;
             const description = html.find('#description').val();
 
             switch (operation) {
-              case "deposit":
+              case 'deposit':
                 await this.modifyTreasury(compagnia, amount, description);
                 break;
-              case "withdraw":
+              case 'withdraw':
                 await this.modifyTreasury(compagnia, -amount, description);
                 break;
-              case "divide":
+              case 'divide':
                 await this.divideLoot(compagnia, amount);
                 break;
             }
           }
         },
         cancel: {
-          label: "Annulla"
+          label: 'Annulla'
         }
       },
-      default: "execute"
+      default: 'execute'
     }).render(true);
   }
 
@@ -864,7 +879,7 @@ class CompagniaManager {
    * Mostra dialog dei lavori
    */
   _showJobsDialog(compagnia) {
-    const jobs = compagnia.flags["brancalonia-bigat"].jobs || [];
+    const jobs = compagnia.flags['brancalonia-bigat'].jobs || [];
 
     const content = `
       <div class="compagnia-jobs-list">
@@ -891,13 +906,13 @@ class CompagniaManager {
 
     new Dialog({
       title: `Lavori - ${compagnia.name}`,
-      content: content,
+      content,
       buttons: {
         close: {
-          label: "Chiudi"
+          label: 'Chiudi'
         }
       },
-      default: "close"
+      default: 'close'
     }).render(true);
   }
 
@@ -905,7 +920,7 @@ class CompagniaManager {
    * Mostra dialog dello statuto
    */
   _showCharterDialog(compagnia) {
-    const charter = compagnia.flags["brancalonia-bigat"].charter || {};
+    const charter = compagnia.flags['brancalonia-bigat'].charter || {};
 
     const content = `
       <div class="compagnia-charter">
@@ -913,16 +928,16 @@ class CompagniaManager {
 
         <div class="charter-section">
           <h4>Divisione del Bottino</h4>
-          <p>${charter.lootDivision === "equal" ? "Divisione Equa" :
-             charter.lootDivision === "shares" ? "Divisione per Quote" :
-             "Divisione per Merito"}</p>
+          <p>${charter.lootDivision === 'equal' ? 'Divisione Equa' :
+    charter.lootDivision === 'shares' ? 'Divisione per Quote' :
+      'Divisione per Merito'}</p>
         </div>
 
         <div class="charter-section">
           <h4>Processo Decisionale</h4>
-          <p>${charter.decisions === "vote" ? "Votazione Democratica" :
-             charter.decisions === "captain" ? "Decisione del Capitano" :
-             "Consenso Unanime"}</p>
+          <p>${charter.decisions === 'vote' ? 'Votazione Democratica' :
+    charter.decisions === 'captain' ? 'Decisione del Capitano' :
+      'Consenso Unanime'}</p>
         </div>
 
         <div class="charter-section">
@@ -937,17 +952,17 @@ class CompagniaManager {
 
     new Dialog({
       title: `Statuto - ${compagnia.name}`,
-      content: content,
+      content,
       buttons: {
         edit: {
-          label: "Modifica",
+          label: 'Modifica',
           callback: () => this._editCharterDialog(compagnia)
         },
         close: {
-          label: "Chiudi"
+          label: 'Chiudi'
         }
       },
-      default: "close"
+      default: 'close'
     }).render(true);
   }
 
@@ -963,7 +978,7 @@ class CompagniaManager {
    * Verifica se un attore è in una compagnia
    */
   _isInCompagnia(actor) {
-    return actor.flags["brancalonia-bigat"]?.compagniaId ? true : false;
+    return !!actor.flags['brancalonia-bigat']?.compagniaId;
   }
 
   /**
@@ -974,7 +989,7 @@ class CompagniaManager {
     if (!actor || !this._isInCompagnia(actor)) return;
 
     // Notifica della condivisione
-    const compagniaId = actor.flags["brancalonia-bigat"].compagniaId;
+    const compagniaId = actor.flags['brancalonia-bigat'].compagniaId;
     const compagnia = game.actors.get(compagniaId);
 
     // Check for item value in D&D 5e v3+ format
@@ -983,7 +998,7 @@ class CompagniaManager {
       ChatMessage.create({
         content: `${actor.name} ha trovato ${item.name} (valore: ${itemValue} ducati). Condividere con la compagnia?`,
         speaker: { alias: compagnia.name },
-        whisper: ChatMessage.getWhisperRecipients("GM")
+        whisper: ChatMessage.getWhisperRecipients('GM')
       });
     }
   }

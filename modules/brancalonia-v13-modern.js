@@ -4,7 +4,7 @@
  * Richiede Foundry v13.0.0+
  */
 
-console.log("🚀 Brancalonia V13 Modern - Initializing");
+console.log('🚀 Brancalonia V13 Modern - Initializing');
 
 // ============================================
 // HELPER FUNCTIONS
@@ -36,50 +36,50 @@ function ensureJQuery(html) {
 // VERSION CHECK - SOLO V13
 // ============================================
 
-Hooks.once("init", () => {
+Hooks.once('init', () => {
   const version = game.version;
-  if (!version.startsWith("13")) {
-    ui.notifications.error("❌ BRANCALONIA RICHIEDE FOUNDRY V13!", { permanent: true });
+  if (!version.startsWith('13')) {
+    ui.notifications.error('❌ BRANCALONIA RICHIEDE FOUNDRY V13!', { permanent: true });
     throw new Error(`Brancalonia requires Foundry v13. Current version: ${version}`);
   }
-  console.log("✅ Foundry v13 confirmed - Using modern APIs only");
+  console.log('✅ Foundry v13 confirmed - Using modern APIs only');
 });
 
 // ============================================
 // D&D 5E MODERN HOOKS
 // ============================================
 
-Hooks.once("init", () => {
-  const dnd5eVersion = game.system?.version || "0";
+Hooks.once('init', () => {
+  const dnd5eVersion = game.system?.version || '0';
   console.log(`📦 D&D 5e version: ${dnd5eVersion}`);
 
   // Solo per D&D 5e v5.x
-  if (!dnd5eVersion.startsWith("5.")) {
-    ui.notifications.warn("⚠️ D&D 5e v5.x richiesto per funzionalità complete");
+  if (!dnd5eVersion.startsWith('5.')) {
+    ui.notifications.warn('⚠️ D&D 5e v5.x richiesto per funzionalità complete');
   }
 
   // Hook moderni per D&D 5e v5.x
-  console.log("🔄 Registering modern D&D 5e v5.x hooks");
+  console.log('🔄 Registering modern D&D 5e v5.x hooks');
 
   // Character sheets
-  Hooks.on("renderActorSheetV2", (app, html, data) => {
-    if (app.actor.type === "character") {
-      console.log("📝 Character sheet rendered with modern API");
+  Hooks.on('renderActorSheetV2', (app, html, data) => {
+    if (app.actor.type === 'character') {
+      console.log('📝 Character sheet rendered with modern API');
       applyCharacterSheetEnhancements(app, html, data);
     }
   });
 
   // NPC sheets
-  Hooks.on("renderActorSheetV2", (app, html, data) => {
-    if (app.actor.type === "npc") {
-      console.log("📝 NPC sheet rendered with modern API");
+  Hooks.on('renderActorSheetV2', (app, html, data) => {
+    if (app.actor.type === 'npc') {
+      console.log('📝 NPC sheet rendered with modern API');
       applyNPCSheetEnhancements(app, html, data);
     }
   });
 
   // Item sheets
-  Hooks.on("renderItemSheetV2", (app, html, data) => {
-    console.log("📝 Item sheet rendered with modern API");
+  Hooks.on('renderItemSheetV2', (app, html, data) => {
+    console.log('📝 Item sheet rendered with modern API');
     applyItemSheetEnhancements(app, html, data);
   });
 });
@@ -98,10 +98,10 @@ function applyCharacterSheetEnhancements(app, html, data) {
   const tokenClass = foundry.canvas.placeables.Token;
 
   // Aggiungi classe Brancalonia - vanilla JS
-  html.classList.add("brancalonia-sheet");
+  html.classList.add('brancalonia-sheet');
 
   // Aggiungi controlli custom - vanilla JS
-  const header = html.querySelector(".sheet-header");
+  const header = html.querySelector('.sheet-header');
   if (header) {
     const controlsDiv = document.createElement('div');
     controlsDiv.className = 'brancalonia-controls';
@@ -116,29 +116,29 @@ function applyCharacterSheetEnhancements(app, html, data) {
     header.appendChild(controlsDiv);
 
     // Event listeners con API moderne - vanilla JS
-    const infamiaBtn = html.querySelector(".infamia-btn");
+    const infamiaBtn = html.querySelector('.infamia-btn');
     if (infamiaBtn) {
       infamiaBtn.addEventListener('click', () => {
-        console.log("🎭 Opening Infamia tracker with modern API");
+        console.log('🎭 Opening Infamia tracker with modern API');
         // Usa foundry.applications per dialog moderne
         new Dialog({
-          title: "Tracker Infamia",
+          title: 'Tracker Infamia',
           content: `
             <div class="brancalonia-infamia">
-              <h3>Livello Infamia: ${app.actor.getFlag("brancalonia-bigat", "infamia") || 0}</h3>
-              <input type="range" min="0" max="10" value="${app.actor.getFlag("brancalonia-bigat", "infamia") || 0}">
+              <h3>Livello Infamia: ${app.actor.getFlag('brancalonia-bigat', 'infamia') || 0}</h3>
+              <input type="range" min="0" max="10" value="${app.actor.getFlag('brancalonia-bigat', 'infamia') || 0}">
             </div>
           `,
           buttons: {
             save: {
-              label: "Salva",
+              label: 'Salva',
               callback: (dialogHtml) => {
                 // dialogHtml potrebbe essere jQuery, quindi gestiamo entrambi i casi
                 const input = dialogHtml.querySelector ?
-                  dialogHtml.querySelector("input") :
-                  dialogHtml.find("input")[0];
+                  dialogHtml.querySelector('input') :
+                  dialogHtml.find('input')[0];
                 const value = input?.value || 0;
-                app.actor.setFlag("brancalonia-bigat", "infamia", value);
+                app.actor.setFlag('brancalonia-bigat', 'infamia', value);
               }
             }
           }
@@ -146,18 +146,18 @@ function applyCharacterSheetEnhancements(app, html, data) {
       });
     }
 
-    const baraondaBtn = html.querySelector(".baraonda-btn");
+    const baraondaBtn = html.querySelector('.baraonda-btn');
     if (baraondaBtn) {
       baraondaBtn.addEventListener('click', () => {
-        console.log("⚔️ Starting Baraonda with modern API");
+        console.log('⚔️ Starting Baraonda with modern API');
         // Usa Canvas moderno
         if (canvas.scene) {
-          ui.notifications.info("🎲 Baraonda iniziata!");
+          ui.notifications.info('🎲 Baraonda iniziata!');
           // Usa token layer moderno
           const tokens = canvas.tokens.placeables;
           tokens.forEach(t => {
-            if (t.actor?.type === "npc") {
-              t.document.update({ "disposition": CONST.TOKEN_DISPOSITIONS.HOSTILE });
+            if (t.actor?.type === 'npc') {
+              t.document.update({ disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE });
             }
           });
         }
@@ -171,13 +171,13 @@ function applyCharacterSheetEnhancements(app, html, data) {
  */
 function applyNPCSheetEnhancements(app, html, data) {
   // In v13 renderActorSheetV2, html è un HTMLElement, non jQuery
-  html.classList.add("brancalonia-npc-sheet");
+  html.classList.add('brancalonia-npc-sheet');
 
   // Aggiungi indicatore di pericolo - vanilla JS
-  const header = html.querySelector(".sheet-header");
+  const header = html.querySelector('.sheet-header');
   if (header) {
     const cr = app.actor.system.details?.cr || 0;
-    const dangerLevel = cr >= 5 ? "alto" : cr >= 3 ? "medio" : "basso";
+    const dangerLevel = cr >= 5 ? 'alto' : cr >= 3 ? 'medio' : 'basso';
 
     const dangerDiv = document.createElement('div');
     dangerDiv.className = `brancalonia-danger danger-${dangerLevel}`;
@@ -194,12 +194,12 @@ function applyNPCSheetEnhancements(app, html, data) {
  */
 function applyItemSheetEnhancements(app, html, data) {
   // In v13 renderItemSheetV2, html è un HTMLElement, non jQuery
-  html.classList.add("brancalonia-item-sheet");
+  html.classList.add('brancalonia-item-sheet');
 
   // Aggiungi indicatore oggetto scadente - vanilla JS
-  if (app.item.type === "weapon" || app.item.type === "equipment") {
-    const header = html.querySelector(".sheet-header");
-    if (header && app.item.getFlag("brancalonia-bigat", "scadente")) {
+  if (app.item.type === 'weapon' || app.item.type === 'equipment') {
+    const header = html.querySelector('.sheet-header');
+    if (header && app.item.getFlag('brancalonia-bigat', 'scadente')) {
       const scadenteDiv = document.createElement('div');
       scadenteDiv.className = 'brancalonia-scadente';
       scadenteDiv.innerHTML = `
@@ -214,8 +214,8 @@ function applyItemSheetEnhancements(app, html, data) {
 // CANVAS ENHANCEMENTS CON API V13
 // ============================================
 
-Hooks.on("canvasReady", (canvas) => {
-  console.log("🗺️ Canvas ready - Using modern Canvas API");
+Hooks.on('canvasReady', (canvas) => {
+  console.log('🗺️ Canvas ready - Using modern Canvas API');
 
   // Usa API Canvas moderne
   const scene = canvas.scene;
@@ -224,8 +224,8 @@ Hooks.on("canvasReady", (canvas) => {
   const lighting = canvas.lighting;
 
   // Applica tema Brancalonia alla scena
-  if (scene.getFlag("brancalonia-bigat", "tavernScene")) {
-    console.log("🍺 Tavern scene detected - Applying atmosphere");
+  if (scene.getFlag('brancalonia-bigat', 'tavernScene')) {
+    console.log('🍺 Tavern scene detected - Applying atmosphere');
 
     // Usa lighting layer moderno
     canvas.lighting.globalLight = false;
@@ -233,8 +233,8 @@ Hooks.on("canvasReady", (canvas) => {
 
     // Aggiungi effetti atmosferici
     canvas.scene.update({
-      "darkness": 0.4,
-      "fogExploration": true
+      darkness: 0.4,
+      fogExploration: true
     });
   }
 });
@@ -243,8 +243,8 @@ Hooks.on("canvasReady", (canvas) => {
 // COMBAT TRACKER ENHANCEMENTS
 // ============================================
 
-Hooks.on("renderCombatTracker", (app, html, data) => {
-  console.log("⚔️ Combat tracker rendered - Using modern API");
+Hooks.on('renderCombatTracker', (app, html, data) => {
+  console.log('⚔️ Combat tracker rendered - Using modern API');
 
   // renderCombatTracker passa jQuery object
   const $html = ensureJQuery(html);
@@ -254,22 +254,22 @@ Hooks.on("renderCombatTracker", (app, html, data) => {
   if (!combat) return;
 
   // Aggiungi bottone Baraonda
-  const controls = $html.find(".combat-control");
+  const controls = $html.find('.combat-control');
   controls.append(`
     <a class="combat-control baraonda-roll" title="Tira per Baraonda">
       <i class="fas fa-dice-d20"></i>
     </a>
   `);
 
-  $html.find(".baraonda-roll").click(async () => {
-    const roll = await new Roll("1d6").evaluate();
+  $html.find('.baraonda-roll').click(async () => {
+    const roll = await new Roll('1d6').evaluate();
     await roll.toMessage({
-      flavor: "🎲 Tiro Baraonda",
+      flavor: '🎲 Tiro Baraonda',
       speaker: ChatMessage.getSpeaker()
     });
 
     if (roll.total >= 5) {
-      ui.notifications.info("💥 BARAONDA! Tutti attaccano!");
+      ui.notifications.info('💥 BARAONDA! Tutti attaccano!');
     }
   });
 });
@@ -278,19 +278,19 @@ Hooks.on("renderCombatTracker", (app, html, data) => {
 // CHAT MESSAGE ENHANCEMENTS
 // ============================================
 
-Hooks.on("renderChatMessage", (message, html, data) => {
+Hooks.on('renderChatMessage', (message, html, data) => {
   // renderChatMessage passa jQuery object
   const $html = ensureJQuery(html);
 
   // Aggiungi stile Brancalonia ai messaggi
-  if (message.getFlag("brancalonia-bigat", "isInfamiaRoll")) {
-    $html.addClass("brancalonia-infamia-message");
-    $html.find(".message-header").prepend('<i class="fas fa-skull"></i> ');
+  if (message.getFlag('brancalonia-bigat', 'isInfamiaRoll')) {
+    $html.addClass('brancalonia-infamia-message');
+    $html.find('.message-header').prepend('<i class="fas fa-skull"></i> ');
   }
 
-  if (message.getFlag("brancalonia-bigat", "isBaraondaRoll")) {
-    $html.addClass("brancalonia-baraonda-message");
-    $html.find(".message-header").prepend('<i class="fas fa-fist-raised"></i> ');
+  if (message.getFlag('brancalonia-bigat', 'isBaraondaRoll')) {
+    $html.addClass('brancalonia-baraonda-message');
+    $html.find('.message-header').prepend('<i class="fas fa-fist-raised"></i> ');
   }
 });
 
@@ -298,15 +298,15 @@ Hooks.on("renderChatMessage", (message, html, data) => {
 // COMPENDIUM ENHANCEMENTS
 // ============================================
 
-Hooks.on("renderCompendium", async (app, html, data) => {
-  console.log("📚 Compendium rendered - Using modern API");
+Hooks.on('renderCompendium', async (app, html, data) => {
+  console.log('📚 Compendium rendered - Using modern API');
 
   // renderCompendium passa jQuery object
   const $html = ensureJQuery(html);
 
   // Aggiungi filtri Brancalonia
-  if (app.collection.metadata.id?.includes("brancalonia")) {
-    const controls = $html.find(".header-search");
+  if (app.collection.metadata.id?.includes('brancalonia')) {
+    const controls = $html.find('.header-search');
     controls.after(`
       <div class="brancalonia-filters">
         <button class="filter-scadente" title="Solo Oggetti Scadenti">
@@ -319,13 +319,13 @@ Hooks.on("renderCompendium", async (app, html, data) => {
     `);
 
     // Event handlers
-    $html.find(".filter-scadente").click(() => {
-      console.log("🗑️ Filtering for scadente items");
+    $html.find('.filter-scadente').click(() => {
+      console.log('🗑️ Filtering for scadente items');
       // Implementa filtro
     });
 
-    $html.find(".filter-speciale").click(() => {
-      console.log("⭐ Filtering for special items");
+    $html.find('.filter-speciale').click(() => {
+      console.log('⭐ Filtering for special items');
       // Implementa filtro
     });
   }
@@ -335,32 +335,32 @@ Hooks.on("renderCompendium", async (app, html, data) => {
 // SETTINGS REGISTRATION
 // ============================================
 
-Hooks.once("init", () => {
-  console.log("⚙️ Registering Brancalonia settings");
+Hooks.once('init', () => {
+  console.log('⚙️ Registering Brancalonia settings');
 
   // Registra settings usando API moderne
-  game.settings.register("brancalonia-bigat", "useInfamia", {
-    name: "Usa Sistema Infamia",
+  game.settings.register('brancalonia-bigat', 'useInfamia', {
+    name: 'Usa Sistema Infamia',
     hint: "Attiva il tracking dell'Infamia per i personaggi",
-    scope: "world",
+    scope: 'world',
     config: true,
     type: Boolean,
     default: true
   });
 
-  game.settings.register("brancalonia-bigat", "useBaraonda", {
-    name: "Usa Regole Baraonda",
-    hint: "Attiva le regole per le risse da taverna",
-    scope: "world",
+  game.settings.register('brancalonia-bigat', 'useBaraonda', {
+    name: 'Usa Regole Baraonda',
+    hint: 'Attiva le regole per le risse da taverna',
+    scope: 'world',
     config: true,
     type: Boolean,
     default: true
   });
 
-  game.settings.register("brancalonia-bigat", "useShoddy", {
-    name: "Usa Oggetti Scadenti",
-    hint: "Attiva le regole per gli oggetti scadenti",
-    scope: "world",
+  game.settings.register('brancalonia-bigat', 'useShoddy', {
+    name: 'Usa Oggetti Scadenti',
+    hint: 'Attiva le regole per gli oggetti scadenti',
+    scope: 'world',
     config: true,
     type: Boolean,
     default: true
@@ -371,19 +371,19 @@ Hooks.once("init", () => {
 // SOCKET HANDLING
 // ============================================
 
-Hooks.once("ready", () => {
-  console.log("📡 Setting up Brancalonia sockets");
+Hooks.once('ready', () => {
+  console.log('📡 Setting up Brancalonia sockets');
 
   // Usa socket moderni
-  game.socket.on("module.brancalonia-bigat", (data) => {
-    console.log("📨 Received socket data:", data);
+  game.socket.on('module.brancalonia-bigat', (data) => {
+    console.log('📨 Received socket data:', data);
 
-    switch(data.action) {
-      case "infamiaUpdate":
+    switch (data.action) {
+      case 'infamiaUpdate':
         ui.notifications.info(`Infamia aggiornata: ${data.value}`);
         break;
-      case "baraondaStart":
-        ui.notifications.warn("💥 BARAONDA INIZIATA!");
+      case 'baraondaStart':
+        ui.notifications.warn('💥 BARAONDA INIZIATA!');
         break;
     }
   });
@@ -393,15 +393,15 @@ Hooks.once("ready", () => {
 // READY CHECK
 // ============================================
 
-Hooks.once("ready", () => {
-  console.log("✨ Brancalonia V13 Modern - READY");
-  console.log("📋 Active features:");
-  console.log("  - Modern Actor Sheets ✅");
-  console.log("  - Modern Canvas API ✅");
-  console.log("  - Modern Combat Tracker ✅");
-  console.log("  - Modern Compendiums ✅");
-  console.log("  - Modern Settings ✅");
-  console.log("  - Modern Sockets ✅");
+Hooks.once('ready', () => {
+  console.log('✨ Brancalonia V13 Modern - READY');
+  console.log('📋 Active features:');
+  console.log('  - Modern Actor Sheets ✅');
+  console.log('  - Modern Canvas API ✅');
+  console.log('  - Modern Combat Tracker ✅');
+  console.log('  - Modern Compendiums ✅');
+  console.log('  - Modern Settings ✅');
+  console.log('  - Modern Sockets ✅');
 
   ui.notifications.info("🎭 Brancalonia V13 - Pronto all'avventura!", { permanent: false });
 });

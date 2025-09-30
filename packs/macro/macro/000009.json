@@ -1,0 +1,27 @@
+{
+  "_id": "brancalonia009",
+  "name": "⚔️ Sistema Duelli",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/weapons/swords/sword-guard-purple.webp",
+  "scope": "global",
+  "command": "// Macro per Sistema Duelli\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\nconst dueling = game.brancalonia?.DuelingSystem;\nif (!dueling) {\n  ui.notifications.error('Sistema Duelli non disponibile!');\n  return;\n}\n\nconst tokens = canvas.tokens.controlled;\nif (tokens.length !== 2) {\n  ui.notifications.warn('Seleziona esattamente 2 token per il duello!');\n  return;\n}\n\nconst [challenger, challenged] = tokens.map(t => t.actor);\n\nnew Dialog({\n  title: '⚔️ Sistema Duelli',\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3 style=\"text-align: center;\">Duello all'Ultimo Sangue</h3>\n      <div style=\"display: flex; justify-content: space-around; margin: 20px 0;\">\n        <div style=\"text-align: center;\">\n          <img src=\"${challenger.img}\" width=\"80\" height=\"80\" style=\"border-radius: 50%; border: 3px solid #8b0000;\"/>\n          <p><strong>${challenger.name}</strong></p>\n          <p style=\"font-size: 0.9em;\">Sfidante</p>\n        </div>\n        <div style=\"align-self: center;\">\n          <span style=\"font-size: 2em;\">⚔️</span>\n        </div>\n        <div style=\"text-align: center;\">\n          <img src=\"${challenged.img}\" width=\"80\" height=\"80\" style=\"border-radius: 50%; border: 3px solid #000080;\"/>\n          <p><strong>${challenged.name}</strong></p>\n          <p style=\"font-size: 0.9em;\">Sfidato</p>\n        </div>\n      </div>\n      <hr>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"duel-type\">Tipo di Duello:</label>\n        <select id=\"duel-type\" style=\"margin-left: 10px;\">\n          <option value=\"firstBlood\">Primo Sangue</option>\n          <option value=\"submission\">Alla Resa</option>\n          <option value=\"death\">All'Ultimo Respiro</option>\n          <option value=\"honor\">D'Onore (non letale)</option>\n        </select>\n      </div>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"duel-stakes\">Posta in Gioco:</label>\n        <input type=\"text\" id=\"duel-stakes\" placeholder=\"es. 100 monete, un cavallo, l'onore...\" style=\"width: 200px;\"/>\n      </div>\n    </div>\n  `,\n  buttons: {\n    start: {\n      icon: '<i class=\"fas fa-play\"></i>',\n      label: 'Inizia Duello',\n      callback: (html) => {\n        const type = html.find('#duel-type').val();\n        const stakes = html.find('#duel-stakes').val();\n        \n        dueling.startDuel({\n          challenger: challenger,\n          challenged: challenged,\n          type: type,\n          stakes: stakes\n        });\n      }\n    },\n    rules: {\n      icon: '<i class=\"fas fa-book\"></i>',\n      label: 'Regole Duello',\n      callback: () => {\n        dueling.showDuelRules();\n      }\n    },\n    technique: {\n      icon: '<i class=\"fas fa-fist-raised\"></i>',\n      label: 'Tecniche Speciali',\n      callback: () => {\n        dueling.showSpecialTechniques();\n      }\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Annulla'\n    }\n  },\n  default: 'start'\n}).render(true);",
+  "folder": null,
+  "sort": 100008,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "combat"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000008000,
+    "modifiedTime": 1700000008000,
+    "lastModifiedBy": "brancalonia"
+  }
+}

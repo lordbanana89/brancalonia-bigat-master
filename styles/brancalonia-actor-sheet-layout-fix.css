@@ -1,0 +1,554 @@
+/**
+ * BRANCALONIA ACTOR SHEET LAYOUT FIX
+ * Risolve problemi di impaginazione e layout dell'actor sheet
+ * Compatibile con D&D 5e v3.x e Foundry v13
+ */
+
+/* ========================================
+   RESET PROBLEMI COMUNI
+   ======================================== */
+
+/* Fix per altezze bloccate da !important */
+.dnd5e.sheet.actor .window-content {
+  height: auto;
+  max-height: calc(100vh - 100px);
+  overflow: visible;
+}
+
+.dnd5e.sheet.actor .sheet-body {
+  height: auto;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fix per tabs che vanno fuori schermo */
+.dnd5e.sheet.actor .sheet-navigation,
+.dnd5e.sheet.actor .sheet-tabs,
+.dnd5e.sheet.actor nav.tabs {
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.dnd5e.sheet.actor .sheet-navigation .item,
+.dnd5e.sheet.actor .sheet-tabs .item {
+  flex: 0 0 auto;
+  min-width: fit-content;
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+}
+
+/* Fix per contenuti tab */
+.dnd5e.sheet.actor .tab {
+  height: 100%;
+  overflow-y: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.dnd5e.sheet.actor .tab.active {
+  display: block;
+}
+
+/* ========================================
+   FIX SPECIFICI BRANCALONIA
+   ======================================== */
+
+/* Header con spazio adeguato */
+.brancalonia-sheet .sheet-header {
+  min-height: 120px;
+  flex: 0 0 auto;
+  padding: 1rem;
+  gap: 1rem;
+  overflow: visible;
+}
+
+/* Portrait frame fix */
+.brancalonia-sheet .profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Nome e dettagli */
+.brancalonia-sheet .header-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0; /* Permette text truncation */
+}
+
+.brancalonia-sheet .charname input {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ========================================
+   TABS BRANCALONIA
+   ======================================== */
+
+/* Stile per nuovi tabs */
+.brancalonia-sheet .tabs [data-tab="infamia"],
+.brancalonia-sheet .tabs [data-tab="compagnia"],
+.brancalonia-sheet .tabs [data-tab="haven"],
+.brancalonia-sheet .tabs [data-tab="lavori"],
+.brancalonia-sheet .tabs [data-tab="malefatte"] {
+  background: var(--bcl-gold-light, #e0c670);
+  color: var(--bcl-text-dark, #2c1810);
+  border: 1px solid var(--bcl-gold, #C9A54A);
+  transition: all 0.3s ease;
+}
+
+.brancalonia-sheet .tabs [data-tab="infamia"]:hover,
+.brancalonia-sheet .tabs [data-tab="compagnia"]:hover,
+.brancalonia-sheet .tabs [data-tab="haven"]:hover,
+.brancalonia-sheet .tabs [data-tab="lavori"]:hover,
+.brancalonia-sheet .tabs [data-tab="malefatte"]:hover {
+  background: var(--bcl-gold, #C9A54A);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Tab label visibility */
+.brancalonia-sheet .tabs .tab-label {
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .brancalonia-sheet .tabs .tab-label {
+    display: none;
+  }
+}
+
+/* ========================================
+   CONTENUTI TAB BRANCALONIA
+   ======================================== */
+
+/* Infamia Tracker */
+.infamia-tracker {
+  padding: 1rem;
+  background: var(--bcl-surface, #f5e6d3);
+  border-radius: 8px;
+  border: 2px solid var(--bcl-gold, #C9A54A);
+}
+
+.infamia-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.infamia-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--bcl-red, #8b0000);
+}
+
+.infamia-level {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--bcl-text-muted, #666);
+}
+
+.infamia-bar {
+  height: 30px;
+  background: var(--bcl-bg-light, #ddd);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--bcl-gold-dark, #a08030);
+}
+
+.infamia-fill {
+  height: 100%;
+  background: linear-gradient(90deg,
+    var(--bcl-red, #8b0000) 0%,
+    var(--bcl-red-dark, #660000) 100%);
+  transition: width 0.3s ease;
+}
+
+.infamia-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.infamia-controls button {
+  flex: 1;
+  padding: 0.5rem;
+  background: var(--bcl-gold-light, #e0c670);
+  border: 1px solid var(--bcl-gold, #C9A54A);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.infamia-controls button:hover {
+  background: var(--bcl-gold, #C9A54A);
+  transform: scale(1.05);
+}
+
+/* Compagnia Info */
+.compagnia-info,
+.compagnia-empty {
+  padding: 1rem;
+  background: var(--bcl-surface, #f5e6d3);
+  border-radius: 8px;
+  border: 2px solid var(--bcl-emerald, #2E7D64);
+}
+
+.compagnia-members {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--bcl-bg-white, white);
+  border-radius: 4px;
+}
+
+.compagnia-members ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.compagnia-members li {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--bcl-border, #ddd);
+}
+
+.compagnia-members li:last-child {
+  border-bottom: none;
+}
+
+/* Haven Info */
+.haven-info {
+  padding: 1rem;
+  background: var(--bcl-surface, #f5e6d3);
+  border-radius: 8px;
+  border: 2px solid var(--bcl-brown, #6b4423);
+}
+
+.haven-details {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--bcl-bg-white, white);
+  border-radius: 4px;
+}
+
+.haven-details p {
+  margin: 0.5rem 0;
+}
+
+/* Lavori List */
+.lavori-list {
+  padding: 1rem;
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.job-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--bcl-surface, #f5e6d3);
+  border-radius: 4px;
+  border: 1px solid var(--bcl-gold, #C9A54A);
+}
+
+.job-reward {
+  font-weight: bold;
+  color: var(--bcl-gold-dark, #a08030);
+}
+
+/* Malefatte List */
+.malefatte-list {
+  padding: 1rem;
+}
+
+.malefatte-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.malefatte-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--bcl-surface, #f5e6d3);
+  border-radius: 4px;
+  border-left: 4px solid var(--bcl-red, #8b0000);
+}
+
+.malefatta-date {
+  font-size: 0.9em;
+  color: var(--bcl-text-muted, #666);
+}
+
+.infamia-gain {
+  font-weight: bold;
+  color: var(--bcl-red, #8b0000);
+}
+
+/* ========================================
+   FIX PER CONFLITTI
+   ======================================== */
+
+/* Rimuovi margini e padding eccessivi */
+.brancalonia-sheet .sheet-body > * {
+  margin: 0;
+  padding: 0;
+}
+
+.brancalonia-sheet .sheet-body > .tab {
+  padding: 1rem;
+}
+
+/* Fix per inventory e features */
+.brancalonia-sheet .inventory,
+.brancalonia-sheet .features {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
+.brancalonia-sheet .inventory-list,
+.brancalonia-sheet .features-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Fix per abilities e skills */
+.brancalonia-sheet .abilities,
+.brancalonia-sheet .skills-list {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1200px) {
+  .brancalonia-sheet .sheet-body {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .brancalonia-sheet .sheet-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brancalonia-sheet .tabs {
+    flex-direction: column;
+  }
+
+  .brancalonia-sheet .tabs .item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ========================================
+   PRIVILEGI TAB STYLES
+   ======================================== */
+
+.privilegi-info,
+.privilegi-empty {
+  padding: 1rem;
+  background: var(--bcl-surface, #f5e6d3);
+  border-radius: 8px;
+  border: 2px solid var(--bcl-purple, #6b46c1);
+}
+
+.privilege-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.privilege-header img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--bcl-gold, #C9A54A);
+}
+
+.privilege-description {
+  flex: 1;
+  font-style: italic;
+  color: var(--bcl-text-muted, #666);
+}
+
+.privilege-details {
+  margin: 1.5rem 0;
+}
+
+.privilege-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.privilege-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--bcl-bg-white, white);
+  border-radius: 4px;
+  border-left: 4px solid var(--bcl-purple-light, #9b7fc9);
+  transition: all 0.3s ease;
+}
+
+.privilege-item.active {
+  border-left-color: var(--bcl-emerald, #2E7D64);
+  background: var(--bcl-emerald-light, #e8f5f0);
+}
+
+.privilege-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.privilege-item i {
+  font-size: 1.5rem;
+  color: var(--bcl-purple, #6b46c1);
+}
+
+.privilege-item.active i {
+  color: var(--bcl-emerald, #2E7D64);
+}
+
+.privilege-item div {
+  flex: 1;
+}
+
+.privilege-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--bcl-text-dark, #2c1810);
+}
+
+.privilege-item p {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9em;
+  color: var(--bcl-text-muted, #666);
+}
+
+.privilege-item .bonus {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  background: var(--bcl-gold-light, #e0c670);
+  border-radius: 12px;
+  font-size: 0.85em;
+  color: var(--bcl-text-dark, #2c1810);
+  font-weight: bold;
+}
+
+.privilege-item button {
+  padding: 0.25rem 0.75rem;
+  background: var(--bcl-purple-light, #9b7fc9);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.privilege-item button:hover {
+  background: var(--bcl-purple, #6b46c1);
+  transform: scale(1.05);
+}
+
+.privilege-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.privilege-actions button {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background: var(--bcl-purple-light, #9b7fc9);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.privilege-actions button:hover {
+  background: var(--bcl-purple, #6b46c1);
+  transform: scale(1.05);
+}
+
+/* ========================================
+   Z-INDEX FIXES
+   ======================================== */
+
+.brancalonia-sheet .window-header {
+  z-index: 100;
+}
+
+.brancalonia-sheet .sheet-tabs {
+  z-index: 10;
+}
+
+.brancalonia-sheet .tab.active {
+  z-index: 1;
+}
+
+/* Dialogs e popups sopra tutto */
+.dialog.brancalonia-dialog {
+  z-index: 1000;
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+
+.brancalonia-sheet ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.brancalonia-sheet ::-webkit-scrollbar-track {
+  background: var(--bcl-bg-light, #f1f1f1);
+  border-radius: 4px;
+}
+
+.brancalonia-sheet ::-webkit-scrollbar-thumb {
+  background: var(--bcl-gold, #C9A54A);
+  border-radius: 4px;
+}
+
+.brancalonia-sheet ::-webkit-scrollbar-thumb:hover {
+  background: var(--bcl-gold-dark, #a08030);
+}

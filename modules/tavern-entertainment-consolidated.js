@@ -165,7 +165,7 @@ class BrancaloniaTavernEntertainment {
    */
   static extendActorClass() {
     const originalPrepareData = CONFIG.Actor.documentClass.prototype.prepareDerivedData;
-    CONFIG.Actor.documentClass.prototype.prepareDerivedData = function() {
+    CONFIG.Actor.documentClass.prototype.prepareDerivedData = function () {
       originalPrepareData.call(this);
 
       // Tracking spese taverna
@@ -213,39 +213,39 @@ class BrancaloniaTavernEntertainment {
   static setupTavernGames() {
     this.tavernGames = {
       minchiate: {
-        name: "Minchiate",
-        description: "Gioco di carte tradizionale",
-        skill: "deception",
+        name: 'Minchiate',
+        description: 'Gioco di carte tradizionale',
+        skill: 'deception',
         dc: 15,
         stakes: { min: 5, max: 50 },
-        type: "skill"
+        type: 'skill'
       },
       botteAllaBotte: {
-        name: "Botte alla Botte",
-        description: "Spaccare botti con la testa",
-        skill: "constitution",
+        name: 'Botte alla Botte',
+        description: 'Spaccare botti con la testa',
+        skill: 'constitution',
         dc: 12,
         rounds: 3,
-        damage: "1d4",
-        type: "endurance"
+        damage: '1d4',
+        type: 'endurance'
       },
       garaDiMangiate: {
-        name: "Gara di Mangiate",
-        description: "Chi mangia di più vince",
-        skill: "constitution",
+        name: 'Gara di Mangiate',
+        description: 'Chi mangia di più vince',
+        skill: 'constitution',
         dc: 10,
         rounds: 5,
         dcIncrease: 2,
-        type: "eating"
+        type: 'eating'
       },
       giostraDeiPoveri: {
-        name: "Giostra dei Poveri",
-        description: "Giostra improvvisata con animali",
-        skills: ["animal-handling", "athletics"],
+        name: 'Giostra dei Poveri',
+        description: 'Giostra improvvisata con animali',
+        skills: ['animal-handling', 'athletics'],
         dc: 14,
         rounds: 3,
         stakes: { min: 5, max: 20 },
-        type: "competition"
+        type: 'competition'
       }
     };
 
@@ -257,26 +257,26 @@ class BrancaloniaTavernEntertainment {
    */
   static setupBagordi() {
     this.bagordiResults = [
-      { roll: 1, title: "Arrestato!", description: "Finisci in gattabuia per 1d6 giorni", severe: true },
-      { roll: 2, title: "Derubato", description: "Perdi tutto l'oro che avevi con te", severe: true },
-      { roll: 3, title: "Rissa Epica", description: "Ti ritrovi con 1d4 livelli di indebolimento", severe: true },
-      { roll: 4, title: "Debiti di Gioco", description: "Devi altri 2d10 mo a creditori locali" },
-      { roll: 5, title: "Tatuaggio Imbarazzante", description: "Ti sei fatto tatuare qualcosa di osceno" },
-      { roll: 6, title: "Mal di Testa Bestiale", description: "Svantaggio ai tiri salvezza su Costituzione per 24 ore" },
-      { roll: 7, title: "Nuovo Nemico", description: "Ti sei fatto un nemico potente durante i bagordi" },
-      { roll: 8, title: "Sbornia Colossale", description: "Non ricordi nulla, ma tutti ti guardano male" },
-      { roll: 9, title: "Notte Folle", description: "Ti risvegli in un posto casuale senza equipaggiamento" },
-      { roll: 10, title: "Amore Fugace", description: "Ti sei innamorato perdutamente, ma è già finita" },
-      { roll: 11, title: "Notte Normale", description: "Una serata piacevole senza conseguenze" },
-      { roll: 12, title: "Fortuna al Gioco", description: "Recuperi metà dell'oro speso", positive: true },
-      { roll: 13, title: "Nuovi Contatti", description: "Conosci qualcuno di utile", positive: true },
-      { roll: 14, title: "Informazioni Preziose", description: "Scopri un segreto o una diceria importante", positive: true },
-      { roll: 15, title: "Favore Guadagnato", description: "Un PNG importante ti deve un favore", positive: true },
-      { roll: 16, title: "Piccola Vincita", description: "Guadagni 1d6 mo extra", positive: true },
-      { roll: 17, title: "Oggetto Trovato", description: "Trovi un oggetto minore utile", positive: true },
-      { roll: 18, title: "Reputazione Migliorata", description: "La tua fama cresce in città", positive: true },
-      { roll: 19, title: "Alleato Inaspettato", description: "Fai amicizia con qualcuno di influente", positive: true },
-      { roll: 20, title: "Jackpot!", description: "Vinci al gioco e raddoppi l'oro speso!", positive: true }
+      { roll: 1, title: 'Arrestato!', description: 'Finisci in gattabuia per 1d6 giorni', severe: true },
+      { roll: 2, title: 'Derubato', description: "Perdi tutto l'oro che avevi con te", severe: true },
+      { roll: 3, title: 'Rissa Epica', description: 'Ti ritrovi con 1d4 livelli di indebolimento', severe: true },
+      { roll: 4, title: 'Debiti di Gioco', description: 'Devi altri 2d10 mo a creditori locali' },
+      { roll: 5, title: 'Tatuaggio Imbarazzante', description: 'Ti sei fatto tatuare qualcosa di osceno' },
+      { roll: 6, title: 'Mal di Testa Bestiale', description: 'Svantaggio ai tiri salvezza su Costituzione per 24 ore' },
+      { roll: 7, title: 'Nuovo Nemico', description: 'Ti sei fatto un nemico potente durante i bagordi' },
+      { roll: 8, title: 'Sbornia Colossale', description: 'Non ricordi nulla, ma tutti ti guardano male' },
+      { roll: 9, title: 'Notte Folle', description: 'Ti risvegli in un posto casuale senza equipaggiamento' },
+      { roll: 10, title: 'Amore Fugace', description: 'Ti sei innamorato perdutamente, ma è già finita' },
+      { roll: 11, title: 'Notte Normale', description: 'Una serata piacevole senza conseguenze' },
+      { roll: 12, title: 'Fortuna al Gioco', description: "Recuperi metà dell'oro speso", positive: true },
+      { roll: 13, title: 'Nuovi Contatti', description: 'Conosci qualcuno di utile', positive: true },
+      { roll: 14, title: 'Informazioni Preziose', description: 'Scopri un segreto o una diceria importante', positive: true },
+      { roll: 15, title: 'Favore Guadagnato', description: 'Un PNG importante ti deve un favore', positive: true },
+      { roll: 16, title: 'Piccola Vincita', description: 'Guadagni 1d6 mo extra', positive: true },
+      { roll: 17, title: 'Oggetto Trovato', description: 'Trovi un oggetto minore utile', positive: true },
+      { roll: 18, title: 'Reputazione Migliorata', description: 'La tua fama cresce in città', positive: true },
+      { roll: 19, title: 'Alleato Inaspettato', description: 'Fai amicizia con qualcuno di influente', positive: true },
+      { roll: 20, title: 'Jackpot!', description: "Vinci al gioco e raddoppi l'oro speso!", positive: true }
     ];
 
     console.log('🍺 Sistema bagordi configurato');
@@ -287,7 +287,7 @@ class BrancaloniaTavernEntertainment {
    */
   static handleCanvasReady() {
     try {
-      if (canvas.scene?.getFlag(this.ID, "isTavern")) {
+      if (canvas.scene?.getFlag(this.ID, 'isTavern')) {
         this.showTavernNotification();
       }
     } catch (error) {
@@ -302,14 +302,14 @@ class BrancaloniaTavernEntertainment {
     try {
       if (!game.user.isGM) return;
 
-      const tokenControls = controls.find(c => c.name === "token");
+      const tokenControls = controls.find(c => c.name === 'token');
       if (tokenControls) {
         tokenControls.tools.push({
-          name: "tavern-mode",
-          title: "Modalità Taverna",
-          icon: "fas fa-beer",
+          name: 'tavern-mode',
+          title: 'Modalità Taverna',
+          icon: 'fas fa-beer',
           toggle: true,
-          active: canvas.scene?.getFlag(this.ID, "isTavern") || false,
+          active: canvas.scene?.getFlag(this.ID, 'isTavern') || false,
           onClick: () => this.toggleTavernMode()
         });
       }
@@ -323,10 +323,10 @@ class BrancaloniaTavernEntertainment {
    */
   static async toggleTavernMode() {
     try {
-      const isTavern = canvas.scene?.getFlag(this.ID, "isTavern") || false;
-      await canvas.scene.setFlag(this.ID, "isTavern", !isTavern);
+      const isTavern = canvas.scene?.getFlag(this.ID, 'isTavern') || false;
+      await canvas.scene.setFlag(this.ID, 'isTavern', !isTavern);
 
-      const message = !isTavern ? "Modalità Taverna ATTIVATA" : "Modalità Taverna DISATTIVATA";
+      const message = !isTavern ? 'Modalità Taverna ATTIVATA' : 'Modalità Taverna DISATTIVATA';
       ui.notifications.info(message);
 
       if (!isTavern) {
@@ -362,12 +362,12 @@ class BrancaloniaTavernEntertainment {
    */
   static async showBagordiDialog(actor) {
     if (!actor) {
-      ui.notifications.warn("Nessun personaggio selezionato");
+      ui.notifications.warn('Nessun personaggio selezionato');
       return;
     }
 
     if (!game.settings.get(this.ID, 'bagordiEnabled')) {
-      ui.notifications.warn("Sistema Bagordi disabilitato");
+      ui.notifications.warn('Sistema Bagordi disabilitato');
       return;
     }
 
@@ -395,30 +395,30 @@ class BrancaloniaTavernEntertainment {
     `;
 
     new Dialog({
-      title: "Bagordi e Divertimenti",
-      content: content,
+      title: 'Bagordi e Divertimenti',
+      content,
       buttons: {
         bagordi: {
           icon: '<i class="fas fa-wine-bottle"></i>',
-          label: "Ai Bagordi!",
+          label: 'Ai Bagordi!',
           callback: async (html) => {
-            const gold = parseInt(html.find("#gold").val());
+            const gold = parseInt(html.find('#gold').val());
 
             if (actor.system.currency.gp < gold) {
-              ui.notifications.error("Non hai abbastanza oro!");
+              ui.notifications.error('Non hai abbastanza oro!');
               return;
             }
 
-            await actor.update({"system.currency.gp": actor.system.currency.gp - gold});
+            await actor.update({ 'system.currency.gp': actor.system.currency.gp - gold });
             await this.rollBagordiResult(actor, gold);
           }
         },
         cancel: {
           icon: '<i class="fas fa-times"></i>',
-          label: "Annulla"
+          label: 'Annulla'
         }
       },
-      default: "bagordi"
+      default: 'bagordi'
     }).render(true);
   }
 
@@ -427,12 +427,12 @@ class BrancaloniaTavernEntertainment {
    */
   static async rollBagordiResult(actor, goldSpent) {
     try {
-      const roll = await new Roll("1d20").evaluate();
+      const roll = await new Roll('1d20').evaluate();
       await roll.toMessage();
 
       const result = this.bagordiResults.find(r => r.roll === roll.total);
 
-      let messageContent = `
+      const messageContent = `
         <div class="brancalonia-message bagordi-result">
           <h3>${result.title}</h3>
           <p>${result.description}</p>
@@ -445,7 +445,7 @@ class BrancaloniaTavernEntertainment {
 
       ChatMessage.create({
         content: messageContent,
-        speaker: ChatMessage.getSpeaker({actor: actor})
+        speaker: ChatMessage.getSpeaker({ actor })
       });
 
       // Aggiorna statistiche
@@ -463,44 +463,44 @@ class BrancaloniaTavernEntertainment {
     try {
       switch (result.roll) {
         case 1: // Arrestato
-          const days = await new Roll("1d6").evaluate();
+          const days = await new Roll('1d6').evaluate();
           ui.notifications.warn(`${actor.name} è in prigione per ${days.total} giorni!`);
           break;
 
         case 2: // Derubato
-          await actor.update({"system.currency.gp": 0});
+          await actor.update({ 'system.currency.gp': 0 });
           ui.notifications.error(`${actor.name} è stato derubato di tutto!`);
           break;
 
         case 3: // Rissa
-          const exhaustion = await new Roll("1d4").evaluate();
+          const exhaustion = await new Roll('1d4').evaluate();
           ui.notifications.warn(`${actor.name} ha ${exhaustion.total} livelli di indebolimento!`);
           break;
 
         case 6: // Mal di testa
           const effect = {
-            name: "Sbornia",
-            icon: "icons/consumables/drinks/alcohol-beer-stein-wooden-metal-brown.webp",
+            name: 'Sbornia',
+            icon: 'icons/consumables/drinks/alcohol-beer-stein-wooden-metal-brown.webp',
             duration: { seconds: 86400 },
             changes: [{
-              key: "flags.dnd5e.disadvantage.save.con",
+              key: 'flags.dnd5e.disadvantage.save.con',
               mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
-              value: "1",
+              value: '1',
               priority: 20
             }]
           };
-          await actor.createEmbeddedDocuments("ActiveEffect", [effect]);
+          await actor.createEmbeddedDocuments('ActiveEffect', [effect]);
           break;
 
         case 12: // Fortuna al gioco
           const refund = Math.floor(goldSpent / 2);
-          await actor.update({"system.currency.gp": actor.system.currency.gp + refund});
+          await actor.update({ 'system.currency.gp': actor.system.currency.gp + refund });
           ui.notifications.info(`${actor.name} recupera ${refund} mo!`);
           break;
 
         case 16: // Piccola vincita
-          const bonus = await new Roll("1d6").evaluate();
-          await actor.update({"system.currency.gp": actor.system.currency.gp + bonus.total});
+          const bonus = await new Roll('1d6').evaluate();
+          await actor.update({ 'system.currency.gp': actor.system.currency.gp + bonus.total });
           ui.notifications.info(`${actor.name} vince ${bonus.total} mo extra!`);
           break;
 
@@ -510,7 +510,7 @@ class BrancaloniaTavernEntertainment {
           break;
 
         case 20: // Jackpot
-          await actor.update({"system.currency.gp": actor.system.currency.gp + (goldSpent * 2)});
+          await actor.update({ 'system.currency.gp': actor.system.currency.gp + (goldSpent * 2) });
           ui.notifications.info(`${actor.name} vince ${goldSpent * 2} mo!`);
           break;
       }
@@ -524,18 +524,18 @@ class BrancaloniaTavernEntertainment {
    */
   static async showGameSelectionDialog(actor) {
     if (!actor) {
-      ui.notifications.warn("Nessun personaggio selezionato");
+      ui.notifications.warn('Nessun personaggio selezionato');
       return;
     }
 
     if (!game.settings.get(this.ID, 'tavernGamesEnabled')) {
-      ui.notifications.warn("Giochi da taverna disabilitati");
+      ui.notifications.warn('Giochi da taverna disabilitati');
       return;
     }
 
     const gameOptions = Object.entries(this.tavernGames)
       .map(([key, game]) => `<option value="${key}">${game.name} - ${game.description}</option>`)
-      .join("");
+      .join('');
 
     const content = `
       <form class="brancalonia-dialog">
@@ -567,26 +567,26 @@ class BrancaloniaTavernEntertainment {
     `;
 
     new Dialog({
-      title: "Giochi da Taverna",
-      content: content,
+      title: 'Giochi da Taverna',
+      content,
       buttons: {
         play: {
           icon: '<i class="fas fa-dice"></i>',
-          label: "Gioca!",
+          label: 'Gioca!',
           callback: async (html) => {
-            const gameKey = html.find("#game-select").val();
-            const stake = parseInt(html.find("#stake").val());
-            const difficulty = html.find("#opponent").val();
+            const gameKey = html.find('#game-select').val();
+            const stake = parseInt(html.find('#stake').val());
+            const difficulty = html.find('#opponent').val();
 
             await this.playTavernGame(actor, gameKey, stake, difficulty);
           }
         },
         cancel: {
           icon: '<i class="fas fa-times"></i>',
-          label: "Annulla"
+          label: 'Annulla'
         }
       },
-      default: "play"
+      default: 'play'
     }).render(true);
   }
 
@@ -595,7 +595,7 @@ class BrancaloniaTavernEntertainment {
    */
   static async playSpecificGame(actor, gameKey, stake) {
     if (!actor) {
-      ui.notifications.warn("Nessun personaggio selezionato");
+      ui.notifications.warn('Nessun personaggio selezionato');
       return;
     }
 
@@ -609,13 +609,13 @@ class BrancaloniaTavernEntertainment {
     try {
       const game = this.tavernGames[gameKey];
       if (!game) {
-        ui.notifications.error("Gioco non trovato");
+        ui.notifications.error('Gioco non trovato');
         return;
       }
 
       // Controlla oro se necessario
       if (stake > 0 && actor.system.currency.gp < stake) {
-        ui.notifications.error("Non hai abbastanza oro!");
+        ui.notifications.error('Non hai abbastanza oro!');
         return;
       }
 
@@ -653,7 +653,7 @@ class BrancaloniaTavernEntertainment {
           // Determina quale abilità usare
           const skill = Array.isArray(game.skills) ?
             game.skills[Math.floor(Math.random() * game.skills.length)] :
-            game.skill || "constitution";
+            game.skill || 'constitution';
 
           // Tira il dado
           const rollFormula = this.getSkillRollFormula(skill, actor);
@@ -683,10 +683,9 @@ class BrancaloniaTavernEntertainment {
         }
 
         success = totalSuccesses > totalFailures;
-
       } else {
         // Gioco a round singolo
-        const skill = game.skill || "deception";
+        const skill = game.skill || 'deception';
         const rollFormula = this.getSkillRollFormula(skill, actor);
         const roll = await new Roll(rollFormula, actor.getRollData()).evaluate();
 
@@ -708,14 +707,14 @@ class BrancaloniaTavernEntertainment {
       if (success) {
         messageContent += `🏆 Vittoria! Vinci ${stake * 2} mo!</h4>`;
         if (stake > 0) {
-          await actor.update({"system.currency.gp": actor.system.currency.gp + stake});
+          await actor.update({ 'system.currency.gp': actor.system.currency.gp + stake });
         }
         await this.updateTavernStats(actor, 'win', stake);
         ui.notifications.info(`${actor.name} vince ${stake} mo!`);
       } else {
         messageContent += `💀 Sconfitta! Perdi ${stake} mo!</h4>`;
         if (stake > 0) {
-          await actor.update({"system.currency.gp": actor.system.currency.gp - stake});
+          await actor.update({ 'system.currency.gp': actor.system.currency.gp - stake });
         }
         await this.updateTavernStats(actor, 'loss', stake);
         ui.notifications.warn(`${actor.name} perde ${stake} mo!`);
@@ -725,7 +724,7 @@ class BrancaloniaTavernEntertainment {
 
       ChatMessage.create({
         content: messageContent,
-        speaker: ChatMessage.getSpeaker({actor: actor})
+        speaker: ChatMessage.getSpeaker({ actor })
       });
     } catch (error) {
       console.error('Errore gioco taverna:', error);
@@ -737,16 +736,16 @@ class BrancaloniaTavernEntertainment {
    * Ottiene formula per tiro abilità
    */
   static getSkillRollFormula(skill, actor) {
-    if (skill === "constitution") {
+    if (skill === 'constitution') {
       return `1d20 + @abilities.con.mod`;
     }
 
     const skillMap = {
-      "deception": "dec",
-      "athletics": "ath",
-      "animal-handling": "ani",
-      "sleight-of-hand": "slt",
-      "persuasion": "per"
+      deception: 'dec',
+      athletics: 'ath',
+      'animal-handling': 'ani',
+      'sleight-of-hand': 'slt',
+      persuasion: 'per'
     };
 
     const skillKey = skillMap[skill] || skill;
@@ -809,7 +808,7 @@ class BrancaloniaTavernEntertainment {
   static showTavernStatus() {
     const actor = game.user.character;
     if (!actor) {
-      ui.notifications.warn("Nessun personaggio selezionato");
+      ui.notifications.warn('Nessun personaggio selezionato');
       return;
     }
 
@@ -1068,5 +1067,5 @@ Hooks.once('ready', () => {
   `;
   document.head.appendChild(style);
 
-  console.log("Brancalonia | Tavern Entertainment caricato");
+  console.log('Brancalonia | Tavern Entertainment caricato');
 });

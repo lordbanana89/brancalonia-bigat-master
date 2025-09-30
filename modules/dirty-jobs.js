@@ -8,175 +8,174 @@ class DirtyJobsSystem {
     // Tipi di lavori con parametri conformi a dnd5e
     this.jobTypes = {
       robbery: {
-        name: "Rapina",
-        icon: "icons/containers/bags/sack-leather-gold.webp",
+        name: 'Rapina',
+        icon: 'icons/containers/bags/sack-leather-gold.webp',
         difficulty: {
-          easy: { dc: 12, reward: "2d6 * 10", infamy: 3 },
-          medium: { dc: 15, reward: "4d6 * 10", infamy: 5 },
-          hard: { dc: 18, reward: "8d6 * 10", infamy: 8 }
+          easy: { dc: 12, reward: '2d6 * 10', infamy: 3 },
+          medium: { dc: 15, reward: '4d6 * 10', infamy: 5 },
+          hard: { dc: 18, reward: '8d6 * 10', infamy: 8 }
         },
-        skills: ["dex", "ste", "slt"], // Destrezza, Furtività, Rapidità di Mano
+        skills: ['dex', 'ste', 'slt'], // Destrezza, Furtività, Rapidità di Mano
         complications: [
-          "Le guardie sono state allertate",
-          "Il bottino è maledetto",
-          "Un testimone vi ha riconosciuti",
-          "La refurtiva è marchiata"
+          'Le guardie sono state allertate',
+          'Il bottino è maledetto',
+          'Un testimone vi ha riconosciuti',
+          'La refurtiva è marchiata'
         ]
       },
       extortion: {
-        name: "Estorsione",
-        icon: "icons/skills/social/intimidation-threat-knife.webp",
+        name: 'Estorsione',
+        icon: 'icons/skills/social/intimidation-threat-knife.webp',
         difficulty: {
-          easy: { dc: 10, reward: "1d6 * 10", infamy: 2 },
-          medium: { dc: 13, reward: "2d6 * 10", infamy: 3 },
-          hard: { dc: 16, reward: "4d6 * 10", infamy: 5 }
+          easy: { dc: 10, reward: '1d6 * 10', infamy: 2 },
+          medium: { dc: 13, reward: '2d6 * 10', infamy: 3 },
+          hard: { dc: 16, reward: '4d6 * 10', infamy: 5 }
         },
-        skills: ["cha", "itm", "per"], // Carisma, Intimidire, Persuasione
+        skills: ['cha', 'itm', 'per'], // Carisma, Intimidire, Persuasione
         complications: [
-          "La vittima ha amici potenti",
-          "Qualcuno vuole vendetta",
-          "La vittima è al verde",
-          "Siete stati denunciati"
+          'La vittima ha amici potenti',
+          'Qualcuno vuole vendetta',
+          'La vittima è al verde',
+          'Siete stati denunciati'
         ]
       },
       smuggling: {
-        name: "Contrabbando",
-        icon: "icons/containers/barrels/barrel-wooden-brown.webp",
+        name: 'Contrabbando',
+        icon: 'icons/containers/barrels/barrel-wooden-brown.webp',
         difficulty: {
-          easy: { dc: 11, reward: "3d6 * 10", infamy: 1 },
-          medium: { dc: 14, reward: "6d6 * 10", infamy: 2 },
-          hard: { dc: 17, reward: "10d6 * 10", infamy: 4 }
+          easy: { dc: 11, reward: '3d6 * 10', infamy: 1 },
+          medium: { dc: 14, reward: '6d6 * 10', infamy: 2 },
+          hard: { dc: 17, reward: '10d6 * 10', infamy: 4 }
         },
-        skills: ["wis", "dec", "sur"], // Saggezza, Inganno, Sopravvivenza
+        skills: ['wis', 'dec', 'sur'], // Saggezza, Inganno, Sopravvivenza
         complications: [
-          "La merce è difettosa",
-          "I doganieri sono sospettosi",
-          "Un rivale vi sabota",
-          "La rotta è bloccata"
+          'La merce è difettosa',
+          'I doganieri sono sospettosi',
+          'Un rivale vi sabota',
+          'La rotta è bloccata'
         ]
       },
       escort: {
-        name: "Scorta",
-        icon: "icons/environment/people/group.webp",
+        name: 'Scorta',
+        icon: 'icons/environment/people/group.webp',
         difficulty: {
-          easy: { dc: 10, reward: "2d6 * 10", infamy: 0 },
-          medium: { dc: 13, reward: "4d6 * 10", infamy: 1 },
-          hard: { dc: 16, reward: "6d6 * 10", infamy: 2 }
+          easy: { dc: 10, reward: '2d6 * 10', infamy: 0 },
+          medium: { dc: 13, reward: '4d6 * 10', infamy: 1 },
+          hard: { dc: 16, reward: '6d6 * 10', infamy: 2 }
         },
-        skills: ["str", "prc", "itm"], // Forza, Percezione, Intimidire
+        skills: ['str', 'prc', 'itm'], // Forza, Percezione, Intimidire
         complications: [
-          "Imboscata di banditi",
-          "Il cliente è inseguito",
-          "Tempo atmosferico terribile",
-          "Il cliente è insopportabile"
+          'Imboscata di banditi',
+          'Il cliente è inseguito',
+          'Tempo atmosferico terribile',
+          'Il cliente è insopportabile'
         ]
       },
       assassination: {
-        name: "Assassinio",
-        icon: "icons/weapons/daggers/dagger-curved-red.webp",
+        name: 'Assassinio',
+        icon: 'icons/weapons/daggers/dagger-curved-red.webp',
         difficulty: {
-          easy: { dc: 14, reward: "5d6 * 10", infamy: 10 },
-          medium: { dc: 17, reward: "10d6 * 10", infamy: 15 },
-          hard: { dc: 20, reward: "20d6 * 10", infamy: 20 }
+          easy: { dc: 14, reward: '5d6 * 10', infamy: 10 },
+          medium: { dc: 17, reward: '10d6 * 10', infamy: 15 },
+          hard: { dc: 20, reward: '20d6 * 10', infamy: 20 }
         },
-        skills: ["dex", "ste", "inv"], // Destrezza, Furtività, Investigare
+        skills: ['dex', 'ste', 'inv'], // Destrezza, Furtività, Investigare
         complications: [
-          "Il bersaglio è protetto",
-          "Doppio gioco del committente",
-          "Testimoni inaspettati",
-          "Il bersaglio è innocente"
+          'Il bersaglio è protetto',
+          'Doppio gioco del committente',
+          'Testimoni inaspettati',
+          'Il bersaglio è innocente'
         ]
       },
       spying: {
-        name: "Spionaggio",
-        icon: "icons/tools/scribal/magnifying-glass.webp",
+        name: 'Spionaggio',
+        icon: 'icons/tools/scribal/magnifying-glass.webp',
         difficulty: {
-          easy: { dc: 11, reward: "1d6 * 10", infamy: 1 },
-          medium: { dc: 14, reward: "3d6 * 10", infamy: 2 },
-          hard: { dc: 17, reward: "5d6 * 10", infamy: 3 }
+          easy: { dc: 11, reward: '1d6 * 10', infamy: 1 },
+          medium: { dc: 14, reward: '3d6 * 10', infamy: 2 },
+          hard: { dc: 17, reward: '5d6 * 10', infamy: 3 }
         },
-        skills: ["int", "inv", "ste"], // Intelligenza, Investigare, Furtività
+        skills: ['int', 'inv', 'ste'], // Intelligenza, Investigare, Furtività
         complications: [
-          "Controspionaggio attivo",
-          "Informazioni false",
-          "Siete stati scoperti",
-          "Doppio agente"
+          'Controspionaggio attivo',
+          'Informazioni false',
+          'Siete stati scoperti',
+          'Doppio agente'
         ]
       },
       heist: {
-        name: "Colpo Grosso",
-        icon: "icons/containers/chest/chest-gold-box.webp",
+        name: 'Colpo Grosso',
+        icon: 'icons/containers/chest/chest-gold-box.webp',
         difficulty: {
-          easy: { dc: 13, reward: "10d6 * 10", infamy: 6 },
-          medium: { dc: 16, reward: "20d6 * 10", infamy: 10 },
-          hard: { dc: 19, reward: "40d6 * 10", infamy: 15 }
+          easy: { dc: 13, reward: '10d6 * 10', infamy: 6 },
+          medium: { dc: 16, reward: '20d6 * 10', infamy: 10 },
+          hard: { dc: 19, reward: '40d6 * 10', infamy: 15 }
         },
-        skills: ["dex", "int", "cha"], // Richiede pianificazione
+        skills: ['dex', 'int', 'cha'], // Richiede pianificazione
         complications: [
-          "Tradimento interno",
-          "Sistemi di sicurezza imprevisti",
-          "Tempistica sbagliata",
-          "Refurtiva troppo ingombrante"
+          'Tradimento interno',
+          'Sistemi di sicurezza imprevisti',
+          'Tempistica sbagliata',
+          'Refurtiva troppo ingombrante'
         ]
       },
       sabotage: {
-        name: "Sabotaggio",
-        icon: "icons/tools/hand/hammer-and-nail.webp",
+        name: 'Sabotaggio',
+        icon: 'icons/tools/hand/hammer-and-nail.webp',
         difficulty: {
-          easy: { dc: 12, reward: "2d6 * 10", infamy: 3 },
-          medium: { dc: 15, reward: "4d6 * 10", infamy: 5 },
-          hard: { dc: 18, reward: "8d6 * 10", infamy: 8 }
+          easy: { dc: 12, reward: '2d6 * 10', infamy: 3 },
+          medium: { dc: 15, reward: '4d6 * 10', infamy: 5 },
+          hard: { dc: 18, reward: '8d6 * 10', infamy: 8 }
         },
-        skills: ["int", "slt", "ste"], // Intelligenza, Attrezzi, Furtività
+        skills: ['int', 'slt', 'ste'], // Intelligenza, Attrezzi, Furtività
         complications: [
-          "Esplosione prematura",
-          "Guardie extra",
-          "Piano scoperto",
-          "Danni collaterali"
+          'Esplosione prematura',
+          'Guardie extra',
+          'Piano scoperto',
+          'Danni collaterali'
         ]
       }
     };
 
     // Committenti tipici
     this.clients = [
-      { name: "Nobile Corrotto", trustworthy: 0.6, payModifier: 1.2 },
-      { name: "Mercante Avido", trustworthy: 0.7, payModifier: 1.0 },
-      { name: "Criminale Locale", trustworthy: 0.5, payModifier: 0.9 },
-      { name: "Spia Straniera", trustworthy: 0.4, payModifier: 1.5 },
-      { name: "Chierico Corrotto", trustworthy: 0.6, payModifier: 1.1 },
-      { name: "Capitano delle Guardie", trustworthy: 0.3, payModifier: 1.3 },
-      { name: "Mago Rinnegato", trustworthy: 0.5, payModifier: 1.4 },
-      { name: "Vecchio Amico", trustworthy: 0.8, payModifier: 0.8 }
+      { name: 'Nobile Corrotto', trustworthy: 0.6, payModifier: 1.2 },
+      { name: 'Mercante Avido', trustworthy: 0.7, payModifier: 1.0 },
+      { name: 'Criminale Locale', trustworthy: 0.5, payModifier: 0.9 },
+      { name: 'Spia Straniera', trustworthy: 0.4, payModifier: 1.5 },
+      { name: 'Chierico Corrotto', trustworthy: 0.6, payModifier: 1.1 },
+      { name: 'Capitano delle Guardie', trustworthy: 0.3, payModifier: 1.3 },
+      { name: 'Mago Rinnegato', trustworthy: 0.5, payModifier: 1.4 },
+      { name: 'Vecchio Amico', trustworthy: 0.8, payModifier: 0.8 }
     ];
-
   }
 
   static initialize() {
-    console.log("Inizializzazione DirtyJobsSystem...");
+    console.log('Inizializzazione DirtyJobsSystem...');
 
     // Registrazione settings
-    game.settings.register("brancalonia-bigat", "dirtyJobsEnabled", {
-      name: "Sistema Lavori Sporchi Attivo",
-      hint: "Abilita il sistema di generazione lavori sporchi",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'dirtyJobsEnabled', {
+      name: 'Sistema Lavori Sporchi Attivo',
+      hint: 'Abilita il sistema di generazione lavori sporchi',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "dirtyJobsAutoReward", {
-      name: "Ricompense Automatiche",
-      hint: "Calcola automaticamente ricompense e infamia al completamento",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'dirtyJobsAutoReward', {
+      name: 'Ricompense Automatiche',
+      hint: 'Calcola automaticamente ricompense e infamia al completamento',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "dirtyJobsNotifications", {
-      name: "Notifiche Lavori",
-      hint: "Mostra notifiche per nuovi lavori e completamenti",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'dirtyJobsNotifications', {
+      name: 'Notifiche Lavori',
+      hint: 'Mostra notifiche per nuovi lavori e completamenti',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
@@ -194,140 +193,138 @@ class DirtyJobsSystem {
     // Creazione macro automatica
     DirtyJobsSystem._createMacro();
 
-    console.log("DirtyJobsSystem inizializzato correttamente!");
+    console.log('DirtyJobsSystem inizializzato correttamente!');
   }
 
   static _registerHooks() {
     // Hook per aggiungere lavori al journal
-    Hooks.on("renderJournalDirectory", (app, html) => {
-      if (game.user.isGM && game.settings.get("brancalonia-bigat", "dirtyJobsEnabled")) {
+    Hooks.on('renderJournalDirectory', (app, html) => {
+      if (game.user.isGM && game.settings.get('brancalonia-bigat', 'dirtyJobsEnabled')) {
         const button = $(`<button class="generate-job">
           <i class="fas fa-coins"></i> Genera Lavoro
         </button>`);
-        html.find(".directory-header .action-buttons").append(button);
+        html.find('.directory-header .action-buttons').append(button);
         button.click(() => window.DirtyJobsSystem.showJobGeneratorDialog());
       }
     });
 
     // Hook per tracciare completamento lavori
-    Hooks.on("updateJournalEntry", (journal, update, options, userId) => {
+    Hooks.on('updateJournalEntry', (journal, update, options, userId) => {
       if (journal.flags.brancalonia?.isJob && update.flags?.brancalonia?.jobCompleted) {
         window.DirtyJobsSystem._handleJobCompletion(journal);
       }
     });
 
     // Hook per aggiungere pulsanti ai journal entries di lavori
-    Hooks.on("renderJournalSheet", (app, html, data) => {
+    Hooks.on('renderJournalSheet', (app, html, data) => {
       if (app.object.flags.brancalonia?.isJob && game.user.isGM) {
         const button = $(`<button class="job-complete-btn" title="Completa Lavoro">
           <i class="fas fa-check"></i> Completa
         </button>`);
-        html.find(".window-header .window-title").after(button);
+        html.find('.window-header .window-title').after(button);
         button.click(() => {
-          app.object.setFlag("brancalonia-bigat", "jobCompleted", true);
+          app.object.setFlag('brancalonia-bigat', 'jobCompleted', true);
         });
       }
     });
 
-    console.log("DirtyJobsSystem hooks registrati!");
+    console.log('DirtyJobsSystem hooks registrati!');
   }
 
   static _registerChatCommands() {
-    // Comando per generare lavoro
-    game.chatCommands.register({
-      name: "/lavoro-genera",
-      module: "brancalonia-bigat",
-      description: "Genera un nuovo lavoro sporco",
-      icon: "<i class='fas fa-coins'></i>",
-      callback: async (chat, parameters, messageData) => {
+    // Registra il handler per i comandi chat
+    Hooks.on('chatMessage', async (html, content, msg) => {
+      // Verifica se è un comando lavoro
+      if (!content.startsWith('/lavoro-')) return true;
+
+      // Estrai comando e parametri
+      const parts = content.split(' ');
+      const command = parts[0];
+      const parameters = parts.slice(1).join(' ');
+
+      // Comando per generare lavoro
+      if (command === '/lavoro-genera') {
         if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può generare lavori!");
-          return;
+          ui.notifications.error('Solo il GM può generare lavori!');
+          return false;
         }
 
-        const params = parameters.split(" ");
+        const params = parameters.split(' ');
         const type = params[0] || null;
-        const difficulty = params[1] || "medium";
+        const difficulty = params[1] || 'medium';
 
-        const job = await window.DirtyJobsSystem.generateJob(type, difficulty);
-        if (job) {
+        const jobsSystem = game.brancalonia?.dirtyJobs || window.DirtyJobsSystem;
+        if (jobsSystem) {
+          const job = await jobsSystem.generateJob(type, difficulty);
+          if (job) {
+            ChatMessage.create({
+              content: `Lavoro generato: ${job.name}`,
+              speaker: { alias: 'Sistema Lavori' }
+            });
+          }
+        }
+        return false;
+      }
+
+      // Comando per mostrare dialog generazione
+      if (command === '/lavoro-dialog') {
+        if (!game.user.isGM) {
+          ui.notifications.error('Solo il GM può generare lavori!');
+          return false;
+        }
+
+        const jobsSystem = game.brancalonia?.dirtyJobs || window.DirtyJobsSystem;
+        if (jobsSystem) {
+          jobsSystem.showJobGeneratorDialog();
+        }
+        return false;
+      }
+
+      // Comando per lavoro casuale
+      if (command === '/lavoro-random') {
+        if (!game.user.isGM) {
+          ui.notifications.error('Solo il GM può generare lavori!');
+          return false;
+        }
+
+        const jobsSystem = game.brancalonia?.dirtyJobs || window.DirtyJobsSystem;
+        if (jobsSystem && jobsSystem.jobTypes) {
+          const types = Object.keys(jobsSystem.jobTypes);
+          const randomType = types[Math.floor(Math.random() * types.length)];
+          const difficulties = ['easy', 'medium', 'hard'];
+          const randomDifficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
+
+          await jobsSystem.generateJob(randomType, randomDifficulty);
+        }
+        return false;
+      }
+
+      // Comando per listare tipi di lavoro
+      if (command === '/lavoro-tipi') {
+        const jobsSystem = game.brancalonia?.dirtyJobs || window.DirtyJobsSystem;
+        if (jobsSystem && jobsSystem.jobTypes) {
+          const types = Object.entries(jobsSystem.jobTypes);
+          const content = `
+            <div class="brancalonia-help">
+              <h3>Tipi di Lavoro Disponibili</h3>
+              <ul>
+                ${types.map(([key, data]) => `<li><strong>${key}</strong>: ${data.name}</li>`).join('')}
+              </ul>
+              <p><em>Usa /lavoro-genera [tipo] [difficoltà] per generare un lavoro specifico</em></p>
+            </div>
+          `;
+
           ChatMessage.create({
-            content: `Lavoro generato: ${job.name}`,
-            speaker: { alias: "Sistema Lavori" }
+            content,
+            speaker: { alias: 'Sistema Lavori' },
+            whisper: [game.user.id]
           });
         }
+        return false;
       }
-    });
 
-    // Comando per mostrare dialog generazione
-    game.chatCommands.register({
-      name: "/lavoro-dialog",
-      module: "brancalonia-bigat",
-      description: "Mostra dialog per generazione lavoro personalizzato",
-      icon: "<i class='fas fa-cogs'></i>",
-      callback: (chat, parameters, messageData) => {
-        if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può generare lavori!");
-          return;
-        }
-        window.DirtyJobsSystem.showJobGeneratorDialog();
-      }
-    });
-
-    // Comando per lavoro casuale
-    game.chatCommands.register({
-      name: "/lavoro-random",
-      module: "brancalonia-bigat",
-      description: "Genera un lavoro completamente casuale",
-      icon: "<i class='fas fa-dice'></i>",
-      callback: async (chat, parameters, messageData) => {
-        if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può generare lavori!");
-          return;
-        }
-
-        const types = Object.keys(window.DirtyJobsSystem.jobTypes);
-        const randomType = types[Math.floor(Math.random() * types.length)];
-        const difficulties = ["easy", "medium", "hard"];
-        const randomDifficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
-
-        await window.DirtyJobsSystem.generateJob(randomType, randomDifficulty);
-      }
-    });
-
-    // Comando per listare tipi di lavoro
-    game.chatCommands.register({
-      name: "/lavoro-tipi",
-      module: "brancalonia-bigat",
-      description: "Mostra tutti i tipi di lavoro disponibili",
-      icon: "<i class='fas fa-list'></i>",
-      callback: (chat, parameters, messageData) => {
-        const types = Object.entries(window.DirtyJobsSystem.jobTypes);
-        const content = `
-          <div class="brancalonia-help">
-            <h3>Tipi di Lavoro Disponibili</h3>
-            <ul>
-              ${types.map(([key, data]) => `<li><strong>${key}</strong>: ${data.name}</li>`).join('')}
-            </ul>
-            <p><em>Usa /lavoro-genera [tipo] [difficoltà] per generare un lavoro specifico</em></p>
-          </div>
-        `;
-
-        ChatMessage.create({
-          content: content,
-          speaker: { alias: "Sistema Lavori" },
-          whisper: [game.user.id]
-        });
-      }
-    });
-
-    // Comando help
-    game.chatCommands.register({
-      name: "/lavoro-help",
-      module: "brancalonia-bigat",
-      description: "Mostra l'aiuto per i comandi lavori",
-      icon: "<i class='fas fa-question-circle'></i>",
-      callback: (chat, parameters, messageData) => {
+      // Comando help
+      if (command === '/lavoro-help') {
         const helpText = `
           <div class="brancalonia-help">
             <h3>Comandi Lavori Sporchi</h3>
@@ -347,20 +344,29 @@ class DirtyJobsSystem {
 
         ChatMessage.create({
           content: helpText,
-          speaker: { alias: "Sistema Lavori" },
+          speaker: { alias: 'Sistema Lavori' },
           whisper: [game.user.id]
         });
+        return false;
       }
+
+      // Se è un comando lavoro ma non riconosciuto
+      if (content.startsWith('/lavoro-')) {
+        ui.notifications.warn('Comando lavoro non riconosciuto. Usa /lavoro-help per aiuto.');
+        return false;
+      }
+
+      return true;
     });
 
-    console.log("DirtyJobsSystem comandi chat registrati!");
+    console.log('DirtyJobsSystem comandi chat registrati!');
   }
 
   static _createMacro() {
     const macroData = {
-      name: "Generatore Lavori Sporchi",
-      type: "script",
-      scope: "global",
+      name: 'Generatore Lavori Sporchi',
+      type: 'script',
+      scope: 'global',
       command: `
 // Macro per Generazione Lavori Sporchi
 if (!game.user.isGM) {
@@ -384,21 +390,21 @@ if (!game.user.isGM) {
   }
 }
       `,
-      img: "icons/containers/bags/sack-leather-gold.webp",
+      img: 'icons/containers/bags/sack-leather-gold.webp',
       flags: {
-        "brancalonia-bigat": {
+        'brancalonia-bigat': {
           isSystemMacro: true,
-          version: "1.0"
+          version: '1.0'
         }
       }
     };
 
     // Verifica se la macro esiste già
-    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags["brancalonia-bigat"]?.isSystemMacro);
+    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags['brancalonia-bigat']?.isSystemMacro);
 
     if (!existingMacro) {
       Macro.create(macroData).then(() => {
-        console.log("Macro Generatore Lavori Sporchi creata!");
+        console.log('Macro Generatore Lavori Sporchi creata!');
       });
     }
   }
@@ -406,7 +412,7 @@ if (!game.user.isGM) {
   /**
    * Genera un nuovo lavoro sporco
    */
-  async generateJob(type = null, difficulty = "medium", options = {}) {
+  async generateJob(type = null, difficulty = 'medium', options = {}) {
     // Seleziona tipo casuale se non specificato
     if (!type) {
       const types = Object.keys(this.jobTypes);
@@ -415,13 +421,13 @@ if (!game.user.isGM) {
 
     const jobData = this.jobTypes[type];
     if (!jobData) {
-      ui.notifications.error("Tipo di lavoro non valido!");
+      ui.notifications.error('Tipo di lavoro non valido!');
       return null;
     }
 
     const difficultyData = jobData.difficulty[difficulty];
     if (!difficultyData) {
-      ui.notifications.error("Difficoltà non valida!");
+      ui.notifications.error('Difficoltà non valida!');
       return null;
     }
 
@@ -446,33 +452,33 @@ if (!game.user.isGM) {
     // Crea dati del lavoro
     const job = {
       id: foundry.utils.randomID(),
-      type: type,
+      type,
       name: `${jobData.name} - ${client.name}`,
-      difficulty: difficulty,
+      difficulty,
       dc: difficultyData.dc,
-      client: client,
+      client,
       reward: finalReward,
       infamyGain: difficultyData.infamy,
-      complication: complication,
-      deadline: deadline,
+      complication,
+      deadline,
       requiredSkills: jobData.skills,
-      status: "available",
+      status: 'available',
       createdAt: new Date().toISOString()
     };
 
     // Crea pagine del journal conforme a V13
     const pages = [
       {
-        name: "Dettagli Lavoro",
-        type: "text",
+        name: 'Dettagli Lavoro',
+        type: 'text',
         text: {
           content: this._generateJobDescription(job),
           format: CONST.JOURNAL_ENTRY_PAGE_FORMATS.HTML
         }
       },
       {
-        name: "Note Private",
-        type: "text",
+        name: 'Note Private',
+        type: 'text',
         text: {
           content: `<h3>Note del GM</h3>
             <p><strong>DC Base:</strong> ${job.dc}</p>
@@ -490,7 +496,7 @@ if (!game.user.isGM) {
     // Crea il journal entry
     const journalData = {
       name: job.name,
-      pages: pages,
+      pages,
       img: jobData.icon,
       flags: {
         brancalonia: {
@@ -514,7 +520,7 @@ if (!game.user.isGM) {
           ${complication ? `<p class="warning">⚠️ Possibili complicazioni</p>` : ''}
         </div>
       `,
-      speaker: { alias: "Bacheca Lavori" }
+      speaker: { alias: 'Bacheca Lavori' }
     });
 
     return journal;
@@ -531,8 +537,8 @@ if (!game.user.isGM) {
           <select id="job-type">
             <option value="">Casuale</option>
             ${Object.entries(this.jobTypes).map(([key, data]) =>
-              `<option value="${key}">${data.name}</option>`
-            ).join('')}
+    `<option value="${key}">${data.name}</option>`
+  ).join('')}
           </select>
         </div>
         <div class="form-group">
@@ -562,11 +568,11 @@ if (!game.user.isGM) {
     `;
 
     new Dialog({
-      title: "Genera Lavoro Sporco",
-      content: content,
+      title: 'Genera Lavoro Sporco',
+      content,
       buttons: {
         generate: {
-          label: "Genera",
+          label: 'Genera',
           callback: html => {
             const type = html.find('#job-type').val() || null;
             const difficulty = html.find('#job-difficulty').val();
@@ -578,10 +584,10 @@ if (!game.user.isGM) {
           }
         },
         cancel: {
-          label: "Annulla"
+          label: 'Annulla'
         }
       },
-      default: "generate"
+      default: 'generate'
     }).render(true);
   }
 
@@ -620,11 +626,11 @@ if (!game.user.isGM) {
     `;
 
     new Dialog({
-      title: "Risultati del Lavoro",
-      content: content,
+      title: 'Risultati del Lavoro',
+      content,
       buttons: {
         complete: {
-          label: "Completa",
+          label: 'Completa',
           callback: async html => {
             const result = html.find('#job-result').val();
             const participants = html.find('#participants input:checked')
@@ -635,7 +641,7 @@ if (!game.user.isGM) {
           }
         }
       },
-      default: "complete"
+      default: 'complete'
     }).render(true);
   }
 
@@ -645,32 +651,32 @@ if (!game.user.isGM) {
   async _processJobResults(job, result, participants) {
     let rewardMultiplier = 1;
     let infamyMultiplier = 1;
-    let consequences = [];
+    const consequences = [];
 
     switch (result) {
-      case "success":
+      case 'success':
         rewardMultiplier = 1;
         infamyMultiplier = 1;
-        consequences.push("Lavoro completato perfettamente!");
+        consequences.push('Lavoro completato perfettamente!');
         break;
-      case "partial":
+      case 'partial':
         rewardMultiplier = 0.5;
         infamyMultiplier = 0.5;
-        consequences.push("Lavoro completato con alcune difficoltà");
+        consequences.push('Lavoro completato con alcune difficoltà');
         break;
-      case "failure":
+      case 'failure':
         rewardMultiplier = 0;
         infamyMultiplier = 0.25;
-        consequences.push("Lavoro fallito!");
+        consequences.push('Lavoro fallito!');
         if (job.client.trustworthy < 0.5) {
-          consequences.push("Il cliente non è contento...");
+          consequences.push('Il cliente non è contento...');
         }
         break;
-      case "disaster":
+      case 'disaster':
         rewardMultiplier = 0;
         infamyMultiplier = 2;
-        consequences.push("Disastro totale!");
-        consequences.push("La vostra reputazione ne risente pesantemente");
+        consequences.push('Disastro totale!');
+        consequences.push('La vostra reputazione ne risente pesantemente');
         break;
     }
 
@@ -686,13 +692,13 @@ if (!game.user.isGM) {
         // Aggiungi ducati
         const currentMoney = actor.system.currency?.du || 0;
         await actor.update({
-          "system.currency.du": currentMoney + rewardPerPerson
+          'system.currency.du': currentMoney + rewardPerPerson
         });
 
         // Aggiungi infamia
         if (finalInfamy > 0 && actor.flags.brancalonia?.infamia !== undefined) {
           await actor.update({
-            "flags.brancalonia.infamia": (actor.flags.brancalonia.infamia || 0) + finalInfamy
+            'flags.brancalonia.infamia': (actor.flags.brancalonia.infamia || 0) + finalInfamy
           });
         }
       }
@@ -701,8 +707,8 @@ if (!game.user.isGM) {
     // Controlla affidabilità del cliente
     if (Math.random() > job.client.trustworthy) {
       consequences.push(`${job.client.name} cerca di fregarvi!`);
-      if (result === "success") {
-        consequences.push("Dovrete convincerlo a pagare...");
+      if (result === 'success') {
+        consequences.push('Dovrete convincerlo a pagare...');
       }
     }
 
@@ -718,7 +724,7 @@ if (!game.user.isGM) {
           <p>${consequences.join('<br>')}</p>
         </div>
       `,
-      speaker: { alias: "Sistema Lavori" }
+      speaker: { alias: 'Sistema Lavori' }
     });
 
     // Aggiungi al registro della compagnia se esiste
@@ -729,12 +735,12 @@ if (!game.user.isGM) {
         const jobs = comp.flags.brancalonia.jobs || [];
         jobs.push({
           ...job,
-          result: result,
+          result,
           completedDate: new Date().toISOString(),
-          finalReward: finalReward,
-          finalInfamy: finalInfamy
+          finalReward,
+          finalInfamy
         });
-        await comp.setFlag("brancalonia-bigat", "jobs", jobs);
+        await comp.setFlag('brancalonia-bigat', 'jobs', jobs);
       }
     }
   }
@@ -747,10 +753,10 @@ if (!game.user.isGM) {
 
     // Aggiungi variazioni
     const variations = [
-      { prefix: "Ex-", modifier: 0.9 },
-      { prefix: "", modifier: 1 },
-      { prefix: "Falso ", modifier: 0.7 },
-      { prefix: "Ricco ", modifier: 1.3 }
+      { prefix: 'Ex-', modifier: 0.9 },
+      { prefix: '', modifier: 1 },
+      { prefix: 'Falso ', modifier: 0.7 },
+      { prefix: 'Ricco ', modifier: 1.3 }
     ];
 
     const variation = variations[Math.floor(Math.random() * variations.length)];
@@ -800,8 +806,8 @@ if (!game.user.isGM) {
         <ul>
           <li>CD ${job.dc} per completare con successo</li>
           <li>Abilità consigliate: ${job.requiredSkills.map(s =>
-            CONFIG.DND5E.abilities[s]?.label || s
-          ).join(", ")}</li>
+    CONFIG.DND5E.abilities[s]?.label || s
+  ).join(', ')}</li>
         </ul>
 
         ${job.complication ? `
@@ -814,11 +820,11 @@ if (!game.user.isGM) {
         <hr>
         <p class="job-status">
           <strong>Stato:</strong> <span class="status-${job.status}">${
-            job.status === "available" ? "Disponibile" :
-            job.status === "accepted" ? "Accettato" :
-            job.status === "completed" ? "Completato" :
-            "Fallito"
-          }</span>
+  job.status === 'available' ? 'Disponibile' :
+    job.status === 'accepted' ? 'Accettato' :
+      job.status === 'completed' ? 'Completato' :
+        'Fallito'
+}</span>
         </p>
       </div>
     `;
@@ -871,8 +877,7 @@ if (!game.user.isGM) {
       ]
     };
 
-    const typeNarratives = narratives[job.type] || ["Un lavoro sporco vi attende."];
+    const typeNarratives = narratives[job.type] || ['Un lavoro sporco vi attende.'];
     return typeNarratives[Math.floor(Math.random() * typeNarratives.length)];
   }
-
 }

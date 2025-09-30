@@ -1,73 +1,177 @@
 /* ================================================ */
-/* BRANCALONIA DESIGN TOKENS                       */
-/* Conforme a prompt_master.md                     */
+/* BRANCALONIA UNIFIED DESIGN TOKENS               */
+/* Complete token system for Italian Renaissance   */
+/* theme aligned with crlngn-ui patterns          */
+/* Compatible with dnd5e v5.1.9 & Foundry v12/v13 */
 /* ================================================ */
 
 @layer tokens {
   :root,
   .theme-brancalonia {
     /* =============================================
-       Color Tokens - Estratti dal tema esistente
+       COLOR TOKENS - Italian Renaissance Palette
+       Extracted from existing theme and optimized
+       for WCAG AA contrast compliance
        ============================================= */
 
-    /* Base Colors */
-    --bcl-bg: #15110C;                          /* Sfondo scuro principale */
-    --bcl-surface: #F3E6CC;                     /* Superficie principale (FAF6ED originale) */
-    --bcl-paper: #E7D6AE;                       /* Carta/pergamena (F4E8D0 originale) */
-    --bcl-paper-weak: #EFE0BD;                  /* Carta chiara */
-    --bcl-paper-strong: #D9C38F;                /* Carta scura */
+    /* Primary Colors - Parchment & Ink */
+    --bcl-bg: #15110C;                    /* Dark tavern background */
+    --bcl-surface: #F3E6CC;                /* Main parchment surface */
+    --bcl-paper: #E7D6AE;                  /* Standard paper texture */
+    --bcl-paper-weak: #EFE0BD;             /* Light paper variant */
+    --bcl-paper-strong: #D9C38F;           /* Dark paper variant */
 
-    /* Ink/Text Colors */
-    --bcl-ink: #2B1F14;                         /* Inchiostro principale (1C1814 originale) */
-    --bcl-ink-weak: #4A3826;                    /* Inchiostro debole (6B4423 originale) */
-    --bcl-ink-strong: #1C140D;                  /* Inchiostro forte */
-    --bcl-muted: #6C5A43;                       /* Testo mutato (8B7E6A originale) */
+    /* Text Hierarchy */
+    --bcl-ink: #2B1F14;                    /* Primary text - sepia ink */
+    --bcl-ink-weak: #4A3826;               /* Secondary text */
+    --bcl-ink-strong: #1C140D;             /* Emphasized text */
+    --bcl-muted: #6C5A43;                  /* Muted/disabled text */
 
-    /* Accent Colors */
-    --bcl-gold: #C9A54A;                        /* Oro (D4AF37 originale) */
-    --bcl-emerald: #2E7D64;                     /* Verde smeraldo (0F7938 originale) */
-    --bcl-accent: #8C2B27;                      /* Accento principale (C80815 originale) */
-    --bcl-accent-strong: #5E1715;               /* Accento forte (722F37 originale) */
+    /* Brand Colors - Renaissance Accents */
+    --bcl-gold: #C9A54A;                   /* Primary gold - buttons/accents */
+    --bcl-gold-leaf: #D4AF37;              /* Bright gold - hover states */
+    --bcl-emerald: #2E7D64;                /* Renaissance green */
+    --bcl-accent: #8C2B27;                 /* Wine red accent */
+    --bcl-accent-strong: #5E1715;          /* Deep wine - active states */
 
-    /* State Colors */
-    --bcl-success: #2F8F5B;                     /* Successo (0F7938 originale) */
-    --bcl-warning: #C27C1A;                     /* Warning (CC9A2E originale) */
-    --bcl-danger: #952C2C;                      /* Pericolo (C80815 originale) */
+    /* Semantic State Colors */
+    --bcl-success: #2F8F5B;                /* Success green */
+    --bcl-warning: #C27C1A;                /* Warning amber */
+    --bcl-danger: #952C2C;                 /* Danger red */
+    --bcl-info: #4166F5;                   /* Info ultramarine */
 
-    /* UI Colors */
-    --bcl-focus: #7A5E1F;                       /* Focus (derivato da gold) */
-    --bcl-border: #B99D6B;                      /* Bordi (8B7E6A originale) */
-    --bcl-divider: #D6C193;                     /* Divisori */
+    /* Interactive States */
+    --bcl-focus: #7A5E1F;                  /* Focus outline color */
+    --bcl-border: #B99D6B;                 /* Standard border */
+    --bcl-divider: #D6C193;                /* Light divider */
 
-    /* Brancalonia Brand Extras */
-    --bcl-seal-wax: #8E1D22;                    /* Ceralacca */
-    --bcl-ribbon: #7E1F1B;                      /* Nastro/bandierina */
-    --bcl-shadow-ink: rgba(28, 20, 13, .35);    /* Ombra inchiostro */
-    --bcl-paper-overlay: rgba(43, 31, 20, .06); /* Overlay carta */
-    --bcl-nav: #223F4A;                         /* Blu-verde carta nautica */
+    /* Special Brancalonia Elements */
+    --bcl-seal-wax: #8E1D22;               /* Wax seal red */
+    --bcl-ribbon: #7E1F1B;                 /* Ribbon/banner color */
+    --bcl-nav: #223F4A;                    /* Navigation/map blue-green */
+    --bcl-shadow-ink: rgba(28, 20, 13, 0.35);      /* Ink shadow */
+    --bcl-paper-overlay: rgba(43, 31, 20, 0.06);   /* Paper texture overlay */
+
+    /* State Background Overlays */
+    --bcl-success-bg: rgba(47, 143, 91, 0.1);
+    --bcl-warning-bg: rgba(194, 124, 26, 0.1);
+    --bcl-danger-bg: rgba(149, 44, 44, 0.1);
+    --bcl-info-bg: rgba(65, 102, 245, 0.1);
 
     /* =============================================
-       Typography Tokens
+       TYPOGRAPHY TOKENS
        ============================================= */
 
-    --bcl-font-display: "Cinzel", serif;
-    --bcl-font-serif: "Alegreya", Georgia, serif;
-    --bcl-font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    --bcl-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    /* Font Families */
+    --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
+    --bcl-font-serif: "Alegreya", "EB Garamond", Georgia, serif;
+    --bcl-font-sans: "Inter", system-ui, -apple-system, "Segoe UI", "Roboto", sans-serif;
+    --bcl-font-mono: "JetBrains Mono", "Fira Code", ui-monospace, "SFMono-Regular", "Menlo", monospace;
+    --bcl-font-script: "Uncial Antiqua", "MedievalSharp", cursive;
 
-    --bcl-font-size-base: 16px;
-    --bcl-line: 1.45;
+    /* Font Sizes - rem based for accessibility */
+    --bcl-font-size-2xs: 0.625rem;        /* 10px */
+    --bcl-font-size-xs: 0.75rem;          /* 12px */
+    --bcl-font-size-sm: 0.875rem;         /* 14px */
+    --bcl-font-size-md: 1rem;             /* 16px - base */
+    --bcl-font-size-lg: 1.125rem;         /* 18px */
+    --bcl-font-size-xl: 1.25rem;          /* 20px */
+    --bcl-font-size-2xl: 1.5rem;          /* 24px */
+    --bcl-font-size-3xl: 1.875rem;        /* 30px */
+    --bcl-font-size-4xl: 2.25rem;         /* 36px */
+
+    /* Font Weights */
+    --bcl-font-weight-light: 300;
+    --bcl-font-weight-regular: 400;
+    --bcl-font-weight-medium: 500;
+    --bcl-font-weight-semibold: 600;
+    --bcl-font-weight-bold: 700;
+    --bcl-font-weight-black: 900;
+
+    /* Line Heights */
+    --bcl-line-height-tight: 1.2;
+    --bcl-line-height-normal: 1.45;
+    --bcl-line-height-relaxed: 1.6;
+    --bcl-line-height-loose: 1.8;
+
+    /* Letter Spacing */
+    --bcl-letter-spacing-tight: -0.02em;
+    --bcl-letter-spacing-normal: 0;
+    --bcl-letter-spacing-wide: 0.02em;
+    --bcl-letter-spacing-wider: 0.04em;
+    --bcl-letter-spacing-widest: 0.08em;
 
     /* =============================================
-       Spacing & Layout Tokens
+       SPACING TOKENS - 4pt grid system
        ============================================= */
 
-    --bcl-radius-sm: 4px;
-    --bcl-radius-md: 8px;
-    --bcl-radius-lg: 14px;
+    --bcl-space-0: 0;
+    --bcl-space-1: 0.25rem;               /* 4px */
+    --bcl-space-2: 0.5rem;                /* 8px */
+    --bcl-space-3: 0.75rem;               /* 12px */
+    --bcl-space-4: 1rem;                  /* 16px */
+    --bcl-space-5: 1.25rem;               /* 20px */
+    --bcl-space-6: 1.5rem;                /* 24px */
+    --bcl-space-8: 2rem;                  /* 32px */
+    --bcl-space-10: 2.5rem;               /* 40px */
+    --bcl-space-12: 3rem;                 /* 48px */
+    --bcl-space-16: 4rem;                 /* 64px */
+    --bcl-space-20: 5rem;                 /* 80px */
 
-    --bcl-shadow-1: 0 1px 0 rgba(0,0,0,.04), 0 1px 8px rgba(0,0,0,.06);
-    --bcl-shadow-2: 0 2px 0 rgba(0,0,0,.06), 0 6px 18px rgba(0,0,0,.12);
+    /* =============================================
+       RADIUS TOKENS
+       ============================================= */
+
+    --bcl-radius-none: 0;
+    --bcl-radius-sm: 0.25rem;             /* 4px */
+    --bcl-radius-md: 0.5rem;              /* 8px */
+    --bcl-radius-lg: 0.75rem;             /* 12px */
+    --bcl-radius-xl: 1rem;                /* 16px */
+    --bcl-radius-2xl: 1.5rem;             /* 24px */
+    --bcl-radius-round: 50%;
+    --bcl-radius-pill: 9999px;
+
+    /* =============================================
+       SHADOW TOKENS
+       ============================================= */
+
+    --bcl-shadow-xs: 0 1px 2px 0 rgba(28, 20, 13, 0.05);
+    --bcl-shadow-sm: 0 1px 3px 0 rgba(28, 20, 13, 0.1), 0 1px 2px -1px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-md: 0 4px 6px -1px rgba(28, 20, 13, 0.1), 0 2px 4px -2px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-lg: 0 10px 15px -3px rgba(28, 20, 13, 0.1), 0 4px 6px -4px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-xl: 0 20px 25px -5px rgba(28, 20, 13, 0.1), 0 8px 10px -6px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-2xl: 0 25px 50px -12px rgba(28, 20, 13, 0.25);
+    --bcl-shadow-inner: inset 0 2px 4px 0 rgba(28, 20, 13, 0.05);
+
+    /* Renaissance-specific shadows */
+    --bcl-shadow-parchment: 0 2px 8px rgba(112, 66, 20, 0.15);
+    --bcl-shadow-gold: 0 4px 16px rgba(212, 175, 55, 0.3);
+    --bcl-shadow-wax: 0 3px 12px rgba(142, 29, 34, 0.4);
+
+    /* =============================================
+       TRANSITION TOKENS
+       ============================================= */
+
+    --bcl-transition-fast: 150ms ease-in-out;
+    --bcl-transition-normal: 250ms ease-in-out;
+    --bcl-transition-slow: 350ms ease-in-out;
+
+    /* Easing functions */
+    --bcl-ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --bcl-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --bcl-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* =============================================
+       Z-INDEX TOKENS - Layer management
+       ============================================= */
+
+    --bcl-z-dropdown: 1000;
+    --bcl-z-sticky: 1020;
+    --bcl-z-fixed: 1030;
+    --bcl-z-backdrop: 1040;
+    --bcl-z-modal: 1050;
+    --bcl-z-popover: 1060;
+    --bcl-z-tooltip: 1070;
 
     /* =============================================
        Alias per Theme Engine Carolingiano

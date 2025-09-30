@@ -1,0 +1,27 @@
+{
+  "_id": "brancalonia002",
+  "name": "🏛️ Gestione Compagnia",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/environment/settlement/tent-camp.webp",
+  "scope": "global",
+  "command": "// Macro per gestione Compagnia\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\nconst compagnia = game.brancalonia?.CompagniaManager;\nif (!compagnia) {\n  ui.notifications.error('Sistema Compagnia non disponibile!');\n  return;\n}\n\n// Mostra dialog principale\nconst company = compagnia.getCompagnia();\nconst members = compagnia.getMembers();\n\nnew Dialog({\n  title: `Gestione Compagnia`,\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3>Compagnia: ${company?.name || 'Non creata'}</h3>\n      ${company ? `\n        <p><strong>Membri:</strong> ${members.length}</p>\n        <p><strong>Tesoro:</strong> ${company.funds || 0} monete</p>\n        <p><strong>Reputazione:</strong> ${company.reputation || 0}</p>\n        <hr>\n      ` : ''}\n      <p>Seleziona un'azione:</p>\n    </div>\n  `,\n  buttons: {\n    create: {\n      icon: '<i class=\"fas fa-plus\"></i>',\n      label: 'Crea/Modifica',\n      callback: () => compagnia.showCompanyDialog()\n    },\n    members: {\n      icon: '<i class=\"fas fa-users\"></i>',\n      label: 'Gestisci Membri',\n      callback: () => compagnia.showMembersDialog()\n    },\n    funds: {\n      icon: '<i class=\"fas fa-coins\"></i>',\n      label: 'Gestisci Fondi',\n      callback: () => compagnia.showFundsDialog()\n    },\n    view: {\n      icon: '<i class=\"fas fa-eye\"></i>',\n      label: 'Visualizza Dettagli',\n      callback: () => compagnia.showCompanySheet()\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'view'\n}).render(true);",
+  "folder": null,
+  "sort": 100001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "compagnia"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000001000,
+    "modifiedTime": 1700000001000,
+    "lastModifiedBy": "brancalonia"
+  }
+}

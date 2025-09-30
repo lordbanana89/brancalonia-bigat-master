@@ -9,282 +9,281 @@ class DiseasesSystem {
     // Database completo delle malattie di Brancalonia
     this.diseases = {
       // Malattie Comuni
-      "febbre_palustre": {
-        name: "Febbre Palustre",
-        img: "icons/magic/unholy/silhouette-evil-horned-red.webp",
+      febbre_palustre: {
+        name: 'Febbre Palustre',
+        img: 'icons/magic/unholy/silhouette-evil-horned-red.webp',
         dc: 12,
-        incubation: "1d4 giorni",
+        incubation: '1d4 giorni',
         symptoms: {
           stage1: {
-            duration: "1d4 giorni",
+            duration: '1d4 giorni',
             effects: [
-              { key: "system.attributes.hp.max", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-5" },
-              { key: "flags.midi-qol.disadvantage.ability.save.con", mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: "1" }
+              { key: 'system.attributes.hp.max', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-5' },
+              { key: 'flags.midi-qol.disadvantage.ability.save.con', mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: '1' }
             ],
-            description: "Febbre alta e brividi. -5 HP massimi, svantaggio ai TS Costituzione"
+            description: 'Febbre alta e brividi. -5 HP massimi, svantaggio ai TS Costituzione'
           },
           stage2: {
-            duration: "2d4 giorni",
+            duration: '2d4 giorni',
             effects: [
-              { key: "system.attributes.hp.max", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-10" },
-              { key: "system.abilities.str.value", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-2" },
-              { key: "flags.midi-qol.disadvantage.ability.check.all", mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: "1" }
+              { key: 'system.attributes.hp.max', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-10' },
+              { key: 'system.abilities.str.value', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-2' },
+              { key: 'flags.midi-qol.disadvantage.ability.check.all', mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: '1' }
             ],
-            description: "Delirio e debolezza. -10 HP massimi, -2 Forza, svantaggio a tutte le prove"
+            description: 'Delirio e debolezza. -10 HP massimi, -2 Forza, svantaggio a tutte le prove'
           },
           stage3: {
-            duration: "permanente",
+            duration: 'permanente',
             effects: [
-              { key: "system.attributes.exhaustion", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "3" }
+              { key: 'system.attributes.exhaustion', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '3' }
             ],
-            description: "Collasso. 3 livelli di sfinimento. Richiede magia per guarire"
+            description: 'Collasso. 3 livelli di sfinimento. Richiede magia per guarire'
           }
         },
-        transmission: "Punture di insetti, acqua stagnante",
+        transmission: 'Punture di insetti, acqua stagnante',
         cure: {
-          natural: { method: "Riposo lungo + TS Costituzione CD 12 ogni giorno", days: 7 },
-          medical: { method: "Medicina CD 15 + erbe medicinali", cost: 50 },
-          magical: { method: "Ristorare inferiore o superiore", instant: true }
+          natural: { method: 'Riposo lungo + TS Costituzione CD 12 ogni giorno', days: 7 },
+          medical: { method: 'Medicina CD 15 + erbe medicinali', cost: 50 },
+          magical: { method: 'Ristorare inferiore o superiore', instant: true }
         }
       },
 
-      "peste_nera": {
-        name: "Peste Nera di Taglia",
-        img: "icons/magic/death/skull-horned-goat-green.webp",
+      peste_nera: {
+        name: 'Peste Nera di Taglia',
+        img: 'icons/magic/death/skull-horned-goat-green.webp',
         dc: 15,
-        incubation: "1d3 giorni",
+        incubation: '1d3 giorni',
         symptoms: {
           stage1: {
-            duration: "1 giorno",
+            duration: '1 giorno',
             effects: [
-              { key: "system.attributes.hp.max", mode: CONST.ACTIVE_EFFECT_MODES.MULTIPLY, value: "0.9" },
-              { key: "system.attributes.movement.walk", mode: CONST.ACTIVE_EFFECT_MODES.MULTIPLY, value: "0.5" }
+              { key: 'system.attributes.hp.max', mode: CONST.ACTIVE_EFFECT_MODES.MULTIPLY, value: '0.9' },
+              { key: 'system.attributes.movement.walk', mode: CONST.ACTIVE_EFFECT_MODES.MULTIPLY, value: '0.5' }
             ],
-            description: "Bubboni e febbre. -10% HP massimi, velocità dimezzata"
+            description: 'Bubboni e febbre. -10% HP massimi, velocità dimezzata'
           },
           stage2: {
-            duration: "1d3 giorni",
+            duration: '1d3 giorni',
             effects: [
-              { key: "system.attributes.hp.max", mode: CONST.ACTIVE_EFFECT_MODES.MULTIPLY, value: "0.5" },
-              { key: "system.abilities.con.value", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-4" },
-              { key: "flags.dnd5e.initiativeDisadv", mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: "1" }
+              { key: 'system.attributes.hp.max', mode: CONST.ACTIVE_EFFECT_MODES.MULTIPLY, value: '0.5' },
+              { key: 'system.abilities.con.value', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-4' },
+              { key: 'flags.dnd5e.initiativeDisadv', mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: '1' }
             ],
-            description: "Necrosi. HP massimi dimezzati, -4 Costituzione"
+            description: 'Necrosi. HP massimi dimezzati, -4 Costituzione'
           },
           stage3: {
-            duration: "morte",
+            duration: 'morte',
             effects: [],
-            description: "Morte in 1d6 ore senza cure magiche"
+            description: 'Morte in 1d6 ore senza cure magiche'
           }
         },
-        transmission: "Contatto con infetti, morsi di ratti",
+        transmission: 'Contatto con infetti, morsi di ratti',
         contagious: true,
         contagionDC: 13,
         cure: {
-          natural: { method: "Impossibile senza magia", days: null },
-          medical: { method: "Medicina CD 20 + quarantena", cost: 200 },
-          magical: { method: "Cura malattie o ristorare superiore", instant: true }
+          natural: { method: 'Impossibile senza magia', days: null },
+          medical: { method: 'Medicina CD 20 + quarantena', cost: 200 },
+          magical: { method: 'Cura malattie o ristorare superiore', instant: true }
         }
       },
 
-      "mal_di_strada": {
-        name: "Mal di Strada",
-        img: "icons/skills/wounds/injury-pain-body-orange.webp",
+      mal_di_strada: {
+        name: 'Mal di Strada',
+        img: 'icons/skills/wounds/injury-pain-body-orange.webp',
         dc: 10,
-        incubation: "immediato",
+        incubation: 'immediato',
         symptoms: {
           stage1: {
-            duration: "1d4 giorni",
+            duration: '1d4 giorni',
             effects: [
-              { key: "system.attributes.exhaustion", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "1" },
-              { key: "system.attributes.movement.walk", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-10" }
+              { key: 'system.attributes.exhaustion', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '1' },
+              { key: 'system.attributes.movement.walk', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-10' }
             ],
-            description: "Piaghe ai piedi. 1 livello sfinimento, -10 piedi movimento"
+            description: 'Piaghe ai piedi. 1 livello sfinimento, -10 piedi movimento'
           }
         },
-        transmission: "Lunghi viaggi senza riposo adeguato",
+        transmission: 'Lunghi viaggi senza riposo adeguato',
         cure: {
-          natural: { method: "Riposo completo per 1 giorno", days: 1 },
-          medical: { method: "Medicina CD 10", cost: 5 }
+          natural: { method: 'Riposo completo per 1 giorno', days: 1 },
+          medical: { method: 'Medicina CD 10', cost: 5 }
         }
       },
 
-      "follia_lunare": {
-        name: "Follia Lunare",
-        img: "icons/magic/control/fear-fright-monster-purple.webp",
+      follia_lunare: {
+        name: 'Follia Lunare',
+        img: 'icons/magic/control/fear-fright-monster-purple.webp',
         dc: 14,
-        incubation: "luna piena",
+        incubation: 'luna piena',
         symptoms: {
           stage1: {
-            duration: "3 notti",
+            duration: '3 notti',
             effects: [
-              { key: "system.abilities.wis.value", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-2" },
-              { key: "system.abilities.int.value", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-2" }
+              { key: 'system.abilities.wis.value', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-2' },
+              { key: 'system.abilities.int.value', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-2' }
             ],
-            description: "Allucinazioni. -2 Saggezza e Intelligenza"
+            description: 'Allucinazioni. -2 Saggezza e Intelligenza'
           },
           stage2: {
-            duration: "permanente",
+            duration: 'permanente',
             effects: [],
-            description: "Follia permanente (tabella follie DMG)"
+            description: 'Follia permanente (tabella follie DMG)'
           }
         },
-        transmission: "Maledizioni, morsi di licantropi",
+        transmission: 'Maledizioni, morsi di licantropi',
         cure: {
-          natural: { method: "Impossibile", days: null },
-          medical: { method: "Impossibile", cost: null },
-          magical: { method: "Ristorare superiore o rimuovi maledizione", instant: true }
+          natural: { method: 'Impossibile', days: null },
+          medical: { method: 'Impossibile', cost: null },
+          magical: { method: 'Ristorare superiore o rimuovi maledizione', instant: true }
         }
       },
 
-      "morbo_putrescente": {
-        name: "Morbo Putrescente",
-        img: "icons/magic/death/hand-undead-skeleton-fire-green.webp",
+      morbo_putrescente: {
+        name: 'Morbo Putrescente',
+        img: 'icons/magic/death/hand-undead-skeleton-fire-green.webp',
         dc: 13,
-        incubation: "1 giorno",
+        incubation: '1 giorno',
         symptoms: {
           stage1: {
-            duration: "1d6 giorni",
+            duration: '1d6 giorni',
             effects: [
-              { key: "system.abilities.cha.value", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-4" },
-              { key: "system.traits.dv.value", mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: "vulnerability-necrotic" }
+              { key: 'system.abilities.cha.value', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-4' },
+              { key: 'system.traits.dv.value', mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: 'vulnerability-necrotic' }
             ],
-            description: "Carne in decomposizione. -4 Carisma, vulnerabilità ai danni necrotici"
+            description: 'Carne in decomposizione. -4 Carisma, vulnerabilità ai danni necrotici'
           }
         },
-        transmission: "Ferite infette, contatto con non morti",
+        transmission: 'Ferite infette, contatto con non morti',
         cure: {
-          natural: { method: "TS Costituzione CD 13 ogni giorno per 3 giorni", days: 3 },
-          medical: { method: "Medicina CD 15 + unguenti", cost: 25 },
-          magical: { method: "Purificare cibo e bevande sui bendaggi", instant: false }
+          natural: { method: 'TS Costituzione CD 13 ogni giorno per 3 giorni', days: 3 },
+          medical: { method: 'Medicina CD 15 + unguenti', cost: 25 },
+          magical: { method: 'Purificare cibo e bevande sui bendaggi', instant: false }
         }
       },
 
-      "scorbuto": {
-        name: "Scorbuto del Marinaio",
-        img: "icons/consumables/food/apple-rotten-brown.webp",
+      scorbuto: {
+        name: 'Scorbuto del Marinaio',
+        img: 'icons/consumables/food/apple-rotten-brown.webp',
         dc: 11,
-        incubation: "2d6 giorni senza frutta",
+        incubation: '2d6 giorni senza frutta',
         symptoms: {
           stage1: {
-            duration: "fino a cura",
+            duration: 'fino a cura',
             effects: [
-              { key: "system.attributes.hp.max", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-1d6" },
-              { key: "system.attributes.init.bonus", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-2" }
+              { key: 'system.attributes.hp.max', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-1d6' },
+              { key: 'system.attributes.init.bonus', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-2' }
             ],
-            description: "Gengive sanguinanti. -1d6 HP massimi, -2 iniziativa"
+            description: 'Gengive sanguinanti. -1d6 HP massimi, -2 iniziativa'
           }
         },
-        transmission: "Mancanza di vitamina C",
+        transmission: 'Mancanza di vitamina C',
         cure: {
-          natural: { method: "Mangiare frutta fresca per 3 giorni", days: 3 },
-          medical: { method: "Medicina CD 8 + agrumi", cost: 2 }
+          natural: { method: 'Mangiare frutta fresca per 3 giorni', days: 3 },
+          medical: { method: 'Medicina CD 8 + agrumi', cost: 2 }
         }
       },
 
-      "vaiolo_goblin": {
-        name: "Vaiolo dei Malandrini",
-        img: "icons/magic/unholy/orb-beam-pink.webp",
+      vaiolo_goblin: {
+        name: 'Vaiolo dei Malandrini',
+        img: 'icons/magic/unholy/orb-beam-pink.webp',
         dc: 12,
-        incubation: "1d4 giorni",
+        incubation: '1d4 giorni',
         symptoms: {
           stage1: {
-            duration: "1 settimana",
+            duration: '1 settimana',
             effects: [
-              { key: "system.abilities.cha.value", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-2" },
-              { key: "flags.midi-qol.disadvantage.skill.prc", mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: "1" }
+              { key: 'system.abilities.cha.value', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-2' },
+              { key: 'flags.midi-qol.disadvantage.skill.prc', mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: '1' }
             ],
-            description: "Pustole verdi. -2 Carisma, svantaggio Percezione"
+            description: 'Pustole verdi. -2 Carisma, svantaggio Percezione'
           }
         },
-        transmission: "Contatto con goblin o malandrini infetti",
+        transmission: 'Contatto con goblin o malandrini infetti',
         contagious: true,
         contagionDC: 10,
         cure: {
-          natural: { method: "TS Costituzione CD 12 dopo 7 giorni", days: 7 },
-          medical: { method: "Medicina CD 12", cost: 10 }
+          natural: { method: 'TS Costituzione CD 12 dopo 7 giorni', days: 7 },
+          medical: { method: 'Medicina CD 12', cost: 10 }
         }
       },
 
-      "rabbia_selvatica": {
-        name: "Rabbia Selvatica",
-        img: "icons/creatures/abilities/mouth-teeth-sharp-red.webp",
+      rabbia_selvatica: {
+        name: 'Rabbia Selvatica',
+        img: 'icons/creatures/abilities/mouth-teeth-sharp-red.webp',
         dc: 14,
-        incubation: "2d4 giorni",
+        incubation: '2d4 giorni',
         symptoms: {
           stage1: {
-            duration: "1d4 giorni",
+            duration: '1d4 giorni',
             effects: [
-              { key: "system.abilities.wis.value", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-1" }
+              { key: 'system.abilities.wis.value', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-1' }
             ],
-            description: "Irritabilità. -1 Saggezza"
+            description: 'Irritabilità. -1 Saggezza'
           },
           stage2: {
-            duration: "2d4 giorni",
+            duration: '2d4 giorni',
             effects: [
-              { key: "system.abilities.wis.value", mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: "-4" },
-              { key: "flags.midi-qol.advantage.attack.mwak", mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: "1" }
+              { key: 'system.abilities.wis.value', mode: CONST.ACTIVE_EFFECT_MODES.ADD, value: '-4' },
+              { key: 'flags.midi-qol.advantage.attack.mwak', mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM, value: '1' }
             ],
-            description: "Furia. -4 Saggezza, vantaggio attacchi in mischia, deve attaccare"
+            description: 'Furia. -4 Saggezza, vantaggio attacchi in mischia, deve attaccare'
           },
           stage3: {
-            duration: "morte",
+            duration: 'morte',
             effects: [],
-            description: "Morte in 1d3 giorni"
+            description: 'Morte in 1d3 giorni'
           }
         },
-        transmission: "Morsi di animali selvatici o licantropi",
+        transmission: 'Morsi di animali selvatici o licantropi',
         cure: {
-          natural: { method: "Impossibile dopo stage 1", days: null },
-          medical: { method: "Solo prevenzione immediata", cost: 100 },
-          magical: { method: "Ristorare inferiore entro 1 ora dal morso", instant: true }
+          natural: { method: 'Impossibile dopo stage 1', days: null },
+          medical: { method: 'Solo prevenzione immediata', cost: 100 },
+          magical: { method: 'Ristorare inferiore entro 1 ora dal morso', instant: true }
         }
       }
     };
-
   }
 
   static initialize() {
-    console.log("Inizializzazione DiseasesSystem...");
+    console.log('Inizializzazione DiseasesSystem...');
 
     // Registrazione settings
-    game.settings.register("brancalonia-bigat", "enableDiseases", {
-      name: "Sistema Malattie",
-      hint: "Attiva il sistema completo di malattie di Brancalonia",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'enableDiseases', {
+      name: 'Sistema Malattie',
+      hint: 'Attiva il sistema completo di malattie di Brancalonia',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "diseaseFrequency", {
-      name: "Frequenza Malattie",
-      hint: "Quanto spesso i personaggi sono esposti a malattie",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'diseaseFrequency', {
+      name: 'Frequenza Malattie',
+      hint: 'Quanto spesso i personaggi sono esposti a malattie',
+      scope: 'world',
       config: true,
       type: String,
       choices: {
-        "low": "Bassa (5%)",
-        "medium": "Media (10%)",
-        "high": "Alta (20%)",
-        "realistic": "Realistica (30%)"
+        low: 'Bassa (5%)',
+        medium: 'Media (10%)',
+        high: 'Alta (20%)',
+        realistic: 'Realistica (30%)'
       },
-      default: "medium"
+      default: 'medium'
     });
 
-    game.settings.register("brancalonia-bigat", "diseaseAutoProgress", {
-      name: "Progressione Automatica",
-      hint: "Le malattie progrediscono automaticamente durante i riposi lunghi",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'diseaseAutoProgress', {
+      name: 'Progressione Automatica',
+      hint: 'Le malattie progrediscono automaticamente durante i riposi lunghi',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "diseaseContagion", {
-      name: "Sistema Contagio",
-      hint: "Abilita il contagio automatico tra creature",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'diseaseContagion', {
+      name: 'Sistema Contagio',
+      hint: 'Abilita il contagio automatico tra creature',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
@@ -302,27 +301,27 @@ class DiseasesSystem {
     // Creazione macro automatica
     DiseasesSystem._createMacro();
 
-    console.log("DiseasesSystem inizializzato correttamente!");
+    console.log('DiseasesSystem inizializzato correttamente!');
   }
 
   static _registerHooks() {
     // Hook per esposizione a malattie
-    Hooks.on("updateActor", (actor, update, options, userId) => {
-      if (!game.settings.get("brancalonia-bigat", "enableDiseases")) return;
+    Hooks.on('updateActor', (actor, update, options, userId) => {
+      if (!game.settings.get('brancalonia-bigat', 'enableDiseases')) return;
 
       if (update.system?.attributes?.hp?.value !== undefined) {
         const hpLoss = (actor.system.attributes.hp.value - update.system.attributes.hp.value);
         if (hpLoss > 10 && Math.random() < 0.1) {
           // 10% possibilità di infezione con ferite gravi
-          window.DiseasesSystem._checkDiseaseExposure(actor, "morbo_putrescente");
+          window.DiseasesSystem._checkDiseaseExposure(actor, 'morbo_putrescente');
         }
       }
     });
 
     // Hook per riposo lungo e progressione malattia
-    Hooks.on("dnd5e.restCompleted", (actor, result) => {
-      if (!game.settings.get("brancalonia-bigat", "enableDiseases")) return;
-      if (!game.settings.get("brancalonia-bigat", "diseaseAutoProgress")) return;
+    Hooks.on('dnd5e.restCompleted', (actor, result) => {
+      if (!game.settings.get('brancalonia-bigat', 'enableDiseases')) return;
+      if (!game.settings.get('brancalonia-bigat', 'diseaseAutoProgress')) return;
 
       if (result.longRest) {
         window.DiseasesSystem._progressDiseases(actor);
@@ -331,9 +330,9 @@ class DiseasesSystem {
     });
 
     // Hook per contatto con creature infette
-    Hooks.on("dnd5e.applyDamage", (actor, damage, options) => {
-      if (!game.settings.get("brancalonia-bigat", "enableDiseases")) return;
-      if (!game.settings.get("brancalonia-bigat", "diseaseContagion")) return;
+    Hooks.on('dnd5e.applyDamage', (actor, damage, options) => {
+      if (!game.settings.get('brancalonia-bigat', 'enableDiseases')) return;
+      if (!game.settings.get('brancalonia-bigat', 'diseaseContagion')) return;
 
       if (options.attackerId) {
         const attacker = game.actors.get(options.attackerId);
@@ -344,137 +343,125 @@ class DiseasesSystem {
     });
 
     // Hook per aggiungere pulsante malattie alle schede personaggio
-    Hooks.on("renderActorSheet", (app, html, data) => {
-      if (app.actor.type !== "character" || !game.user.isGM) return;
-      if (!game.settings.get("brancalonia-bigat", "enableDiseases")) return;
+    Hooks.on('renderActorSheet', (app, html, data) => {
+      if (app.actor.type !== 'character' || !game.user.isGM) return;
+      if (!game.settings.get('brancalonia-bigat', 'enableDiseases')) return;
 
       const button = $(`<button class="disease-manager-btn" title="Gestione Malattie">
         <i class="fas fa-virus"></i>
       </button>`);
-      html.find(".window-header .window-title").after(button);
+      html.find('.window-header .window-title').after(button);
       button.click(() => {
         window.DiseasesSystem.renderDiseaseManager(app.actor);
       });
     });
 
-    console.log("DiseasesSystem hooks registrati!");
+    console.log('DiseasesSystem hooks registrati!');
   }
 
   static _registerChatCommands() {
-    // Comando per infettare attore
-    game.chatCommands.register({
-      name: "/malattia-infetta",
-      module: "brancalonia-bigat",
-      description: "Infetta un personaggio con una malattia",
-      icon: "<i class='fas fa-virus'></i>",
-      callback: async (chat, parameters, messageData) => {
+    // Registra il handler per i comandi chat
+    Hooks.on('chatMessage', async (html, content, msg) => {
+      // Verifica se è un comando malattia
+      if (!content.startsWith('/malattia-')) return true;
+
+      // Estrai comando e parametri
+      const parts = content.split(' ');
+      const command = parts[0];
+      const parameters = parts.slice(1).join(' ');
+
+      const diseasesSystem = game.brancalonia?.diseases || window.DiseasesSystem;
+      if (!diseasesSystem) return true;
+
+      // Comando per infettare attore
+      if (command === '/malattia-infetta') {
         if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può infettare i personaggi!");
-          return;
+          ui.notifications.error('Solo il GM può infettare i personaggi!');
+          return false;
         }
 
         const tokens = canvas.tokens.controlled;
         if (tokens.length !== 1) {
-          ui.notifications.error("Seleziona un solo token!");
-          return;
+          ui.notifications.error('Seleziona un solo token!');
+          return false;
         }
 
-        const params = parameters.split(" ");
+        const params = parameters.split(' ');
         const diseaseName = params[0];
 
-        if (!diseaseName || !window.DiseasesSystem.diseases[diseaseName]) {
-          ui.notifications.error("Malattia non valida! Usa /malattia-lista per vedere le malattie disponibili.");
-          return;
+        if (!diseaseName || !diseasesSystem.diseases[diseaseName]) {
+          ui.notifications.error('Malattia non valida! Usa /malattia-lista per vedere le malattie disponibili.');
+          return false;
         }
 
-        await window.DiseasesSystem.infectActor(tokens[0].actor, diseaseName);
+        await diseasesSystem.infectActor(tokens[0].actor, diseaseName);
+        return false;
       }
-    });
 
-    // Comando per curare malattia
-    game.chatCommands.register({
-      name: "/malattia-cura",
-      module: "brancalonia-bigat",
-      description: "Cura una malattia di un personaggio",
-      icon: "<i class='fas fa-pills'></i>",
-      callback: async (chat, parameters, messageData) => {
+      // Comando per curare malattia
+      if (command === '/malattia-cura') {
         if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può curare le malattie!");
-          return;
+          ui.notifications.error('Solo il GM può curare le malattie!');
+          return false;
         }
 
         const tokens = canvas.tokens.controlled;
         if (tokens.length !== 1) {
-          ui.notifications.error("Seleziona un solo token!");
-          return;
+          ui.notifications.error('Seleziona un solo token!');
+          return false;
         }
 
-        const params = parameters.split(" ");
+        const params = parameters.split(' ');
         const diseaseName = params[0];
-        const method = params[1] || "magical";
+        const method = params[1] || 'magical';
 
         if (!diseaseName) {
-          ui.notifications.error("Specifica la malattia da curare!");
-          return;
+          ui.notifications.error('Specifica la malattia da curare!');
+          return false;
         }
 
-        await window.DiseasesSystem.cureDisease(tokens[0].actor, diseaseName, method);
+        await diseasesSystem.cureDisease(tokens[0].actor, diseaseName, method);
+        return false;
       }
-    });
 
-    // Comando per gestire malattie
-    game.chatCommands.register({
-      name: "/malattia-gestisci",
-      module: "brancalonia-bigat",
-      description: "Apre il manager delle malattie per il personaggio selezionato",
-      icon: "<i class='fas fa-user-md'></i>",
-      callback: (chat, parameters, messageData) => {
+      // Comando per gestire malattie
+      if (command === '/malattia-gestisci') {
         if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può gestire le malattie!");
-          return;
+          ui.notifications.error('Solo il GM può gestire le malattie!');
+          return false;
         }
 
         const tokens = canvas.tokens.controlled;
         if (tokens.length !== 1) {
-          ui.notifications.error("Seleziona un solo token!");
-          return;
+          ui.notifications.error('Seleziona un solo token!');
+          return false;
         }
 
-        window.DiseasesSystem.renderDiseaseManager(tokens[0].actor);
+        diseasesSystem.renderDiseaseManager(tokens[0].actor);
+        return false;
       }
-    });
 
-    // Comando per epidemia
-    game.chatCommands.register({
-      name: "/malattia-epidemia",
-      module: "brancalonia-bigat",
-      description: "Genera un'epidemia",
-      icon: "<i class='fas fa-exclamation-triangle'></i>",
-      callback: async (chat, parameters, messageData) => {
+      // Comando per epidemia
+      if (command === '/malattia-epidemia') {
         if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può generare epidemie!");
-          return;
+          ui.notifications.error('Solo il GM può generare epidemie!');
+          return false;
         }
 
-        const params = parameters.split(" ");
+        const params = parameters.split(' ');
         const diseaseName = params[0] || null;
-        const severity = params[1] || "moderata";
+        const severity = params[1] || 'moderata';
 
-        await window.DiseasesSystem.generateEpidemic({
-          diseaseName: diseaseName,
-          severity: severity
+        await diseasesSystem.generateEpidemic({
+          diseaseName,
+          severity
         });
+        return false;
       }
-    });
 
-    // Comando per listare malattie
-    game.chatCommands.register({
-      name: "/malattia-lista",
-      module: "brancalonia-bigat",
-      description: "Mostra tutte le malattie disponibili",
-      icon: "<i class='fas fa-list'></i>",
-      callback: (chat, parameters, messageData) => {
-        const diseases = Object.entries(window.DiseasesSystem.diseases);
+      // Comando per listare malattie
+      if (command === '/malattia-lista') {
+        const diseases = Object.entries(diseasesSystem.diseases);
         const content = `
           <div class="brancalonia-help">
             <h3>Malattie Disponibili</h3>
@@ -488,20 +475,15 @@ class DiseasesSystem {
         `;
 
         ChatMessage.create({
-          content: content,
-          speaker: { alias: "Sistema Malattie" },
+          content,
+          speaker: { alias: 'Sistema Malattie' },
           whisper: [game.user.id]
         });
+        return false;
       }
-    });
 
-    // Comando help
-    game.chatCommands.register({
-      name: "/malattia-help",
-      module: "brancalonia-bigat",
-      description: "Mostra l'aiuto per i comandi malattie",
-      icon: "<i class='fas fa-question-circle'></i>",
-      callback: (chat, parameters, messageData) => {
+      // Comando help
+      if (command === '/malattia-help') {
         const helpText = `
           <div class="brancalonia-help">
             <h3>Comandi Sistema Malattie</h3>
@@ -522,20 +504,29 @@ class DiseasesSystem {
 
         ChatMessage.create({
           content: helpText,
-          speaker: { alias: "Sistema Malattie" },
+          speaker: { alias: 'Sistema Malattie' },
           whisper: [game.user.id]
         });
+        return false;
       }
+
+      // Se è un comando malattia ma non riconosciuto
+      if (content.startsWith('/malattia-')) {
+        ui.notifications.warn('Comando malattia non riconosciuto. Usa /malattia-help per aiuto.');
+        return false;
+      }
+
+      return true;
     });
 
-    console.log("DiseasesSystem comandi chat registrati!");
+    console.log('DiseasesSystem comandi chat registrati!');
   }
 
   static _createMacro() {
     const macroData = {
-      name: "Gestione Malattie",
-      type: "script",
-      scope: "global",
+      name: 'Gestione Malattie',
+      type: 'script',
+      scope: 'global',
       command: `
 // Macro per Gestione Malattie
 if (!game.user.isGM) {
@@ -585,21 +576,21 @@ if (!game.user.isGM) {
   }
 }
       `,
-      img: "icons/magic/unholy/silhouette-evil-horned-red.webp",
+      img: 'icons/magic/unholy/silhouette-evil-horned-red.webp',
       flags: {
-        "brancalonia-bigat": {
+        'brancalonia-bigat': {
           isSystemMacro: true,
-          version: "1.0"
+          version: '1.0'
         }
       }
     };
 
     // Verifica se la macro esiste già
-    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags["brancalonia-bigat"]?.isSystemMacro);
+    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags['brancalonia-bigat']?.isSystemMacro);
 
     if (!existingMacro) {
       Macro.create(macroData).then(() => {
-        console.log("Macro Gestione Malattie creata!");
+        console.log('Macro Gestione Malattie creata!');
       });
     }
   }
@@ -616,7 +607,7 @@ if (!game.user.isGM) {
 
     // Tiro salvezza per resistere
     if (!options.skipSave) {
-      const save = await actor.rollAbilitySave("con", {
+      const save = await actor.rollAbilitySave('con', {
         dc: disease.dc,
         flavor: `Resistere a ${disease.name}`
       });
@@ -635,9 +626,9 @@ if (!game.user.isGM) {
     }
 
     // Calcola incubazione
-    const incubationRoll = disease.incubation === "immediato"
-      ? { total: 0 }
-      : await new Roll(disease.incubation).evaluate();
+    const incubationRoll = disease.incubation === 'immediato' ?
+      { total: 0 } :
+      await new Roll(disease.incubation).evaluate();
 
     // Crea flag malattia
     const diseaseData = {
@@ -653,7 +644,7 @@ if (!game.user.isGM) {
     const currentDiseases = actor.flags.brancalonia?.diseases || [];
     currentDiseases.push(diseaseData);
 
-    await actor.setFlag("brancalonia-bigat", "diseases", currentDiseases);
+    await actor.setFlag('brancalonia-bigat', 'diseases', currentDiseases);
 
     // Messaggio
     ChatMessage.create({
@@ -664,7 +655,7 @@ if (!game.user.isGM) {
         ${incubationRoll.total > 0 ? `<p>Incubazione: ${incubationRoll.total} giorni</p>` : ''}
       </div>`,
       speaker: ChatMessage.getSpeaker({ actor }),
-      whisper: game.user.isGM ? [] : ChatMessage.getWhisperRecipients("GM")
+      whisper: game.user.isGM ? [] : ChatMessage.getWhisperRecipients('GM')
     });
 
     // Se immediata, applica subito
@@ -692,8 +683,8 @@ if (!game.user.isGM) {
     }
 
     // Se lo stadio è morte
-    if (stageData.duration === "morte") {
-      const deathRoll = await new Roll("1d6").evaluate();
+    if (stageData.duration === 'morte') {
+      const deathRoll = await new Roll('1d6').evaluate();
       ChatMessage.create({
         content: `<div class="brancalonia-disease-critical">
           <h3>☠️ STADIO TERMINALE!</h3>
@@ -707,7 +698,7 @@ if (!game.user.isGM) {
 
     // Calcola durata
     let duration = {};
-    if (stageData.duration !== "permanente") {
+    if (stageData.duration !== 'permanente') {
       const durationRoll = await new Roll(stageData.duration).evaluate();
       duration = {
         days: durationRoll.total,
@@ -720,7 +711,7 @@ if (!game.user.isGM) {
       name: `${disease.name} - Stadio ${stage}`,
       img: disease.img,
       origin: actor.uuid,
-      duration: duration,
+      duration,
       changes: stageData.effects,
       flags: {
         brancalonia: {
@@ -732,7 +723,7 @@ if (!game.user.isGM) {
       description: stageData.description
     };
 
-    await actor.createEmbeddedDocuments("ActiveEffect", [effectData]);
+    await actor.createEmbeddedDocuments('ActiveEffect', [effectData]);
 
     // Messaggio
     ChatMessage.create({
@@ -751,7 +742,7 @@ if (!game.user.isGM) {
   async _progressDiseases(actor) {
     const diseases = actor.flags.brancalonia?.diseases || [];
 
-    for (let diseaseData of diseases) {
+    for (const diseaseData of diseases) {
       diseaseData.daysProgressed++;
 
       const disease = this.diseases[diseaseData.key];
@@ -765,7 +756,7 @@ if (!game.user.isGM) {
 
       // Progredisci stadio se necessario
       const currentStage = disease.symptoms[`stage${diseaseData.stage}`];
-      if (currentStage && currentStage.duration !== "permanente" && currentStage.duration !== "morte") {
+      if (currentStage && currentStage.duration !== 'permanente' && currentStage.duration !== 'morte') {
         const stageDuration = parseInt(currentStage.duration) || 1;
         if (diseaseData.daysProgressed % stageDuration === 0 && diseaseData.stage < 3) {
           diseaseData.stage++;
@@ -774,7 +765,7 @@ if (!game.user.isGM) {
       }
     }
 
-    await actor.setFlag("brancalonia-bigat", "diseases", diseases);
+    await actor.setFlag('brancalonia-bigat', 'diseases', diseases);
   }
 
   /**
@@ -792,7 +783,7 @@ if (!game.user.isGM) {
 
       // Tenta recupero naturale
       if (disease.cure.natural.days && diseaseData.daysProgressed >= disease.cure.natural.days) {
-        const saveRoll = await actor.rollAbilitySave("con", {
+        const saveRoll = await actor.rollAbilitySave('con', {
           dc: disease.dc,
           flavor: `Recupero da ${disease.name}`
         });
@@ -811,12 +802,12 @@ if (!game.user.isGM) {
     }
 
     if (recovered.length > 0) {
-      await actor.setFlag("brancalonia-bigat", "diseases", diseases);
+      await actor.setFlag('brancalonia-bigat', 'diseases', diseases);
 
       ChatMessage.create({
         content: `<div class="brancalonia-disease-recovery">
           <h3>✨ Guarigione!</h3>
-          <p><strong>${actor.name}</strong> si è ripreso da: ${recovered.join(", ")}</p>
+          <p><strong>${actor.name}</strong> si è ripreso da: ${recovered.join(', ')}</p>
         </div>`,
         speaker: ChatMessage.getSpeaker({ actor })
       });
@@ -826,7 +817,7 @@ if (!game.user.isGM) {
   /**
    * Cura una malattia con metodo specifico
    */
-  async cureDisease(actor, diseaseName, method = "magical") {
+  async cureDisease(actor, diseaseName, method = 'magical') {
     const diseases = actor.flags.brancalonia?.diseases || [];
     const diseaseIndex = diseases.findIndex(d => d.key === diseaseName);
 
@@ -850,12 +841,12 @@ if (!game.user.isGM) {
         ui.notifications.error(`Servono ${cure.cost} ducati per questa cura`);
         return;
       }
-      await actor.update({ "system.currency.du": currentGold - cure.cost });
+      await actor.update({ 'system.currency.du': currentGold - cure.cost });
     }
 
     // Rimuovi malattia
     diseases.splice(diseaseIndex, 1);
-    await actor.setFlag("brancalonia-bigat", "diseases", diseases);
+    await actor.setFlag('brancalonia-bigat', 'diseases', diseases);
 
     // Rimuovi effetto
     const effect = actor.effects.find(e =>
@@ -878,9 +869,9 @@ if (!game.user.isGM) {
    * Controlla esposizione a malattie ambientali
    */
   async _checkDiseaseExposure(actor, diseaseName = null) {
-    if (!game.settings.get("brancalonia-bigat", "enableDiseases")) return;
+    if (!game.settings.get('brancalonia-bigat', 'enableDiseases')) return;
 
-    const frequency = game.settings.get("brancalonia-bigat", "diseaseFrequency");
+    const frequency = game.settings.get('brancalonia-bigat', 'diseaseFrequency');
     const chances = { low: 0.05, medium: 0.1, high: 0.2, realistic: 0.3 };
 
     if (Math.random() > chances[frequency]) return;
@@ -900,11 +891,11 @@ if (!game.user.isGM) {
   async _checkContagion(target, source) {
     const sourceDiseases = source.flags.brancalonia?.diseases || [];
 
-    for (let diseaseData of sourceDiseases) {
+    for (const diseaseData of sourceDiseases) {
       const disease = this.diseases[diseaseData.key];
       if (!disease?.contagious) continue;
 
-      const save = await target.rollAbilitySave("con", {
+      const save = await target.rollAbilitySave('con', {
         dc: disease.contagionDC || disease.dc,
         flavor: `Evitare contagio da ${disease.name}`
       });
@@ -921,30 +912,30 @@ if (!game.user.isGM) {
   async generateEpidemic(options = {}) {
     const {
       diseaseName = null,
-      radius = "città",
-      severity = "moderata"
+      radius = 'città',
+      severity = 'moderata'
     } = options;
 
     // Scegli malattia
-    const disease = diseaseName
-      ? this.diseases[diseaseName]
-      : this.diseases[Object.keys(this.diseases)[Math.floor(Math.random() * Object.keys(this.diseases).length)]];
+    const disease = diseaseName ?
+      this.diseases[diseaseName] :
+      this.diseases[Object.keys(this.diseases)[Math.floor(Math.random() * Object.keys(this.diseases).length)]];
 
     const severityModifiers = {
-      "lieve": 0.1,
-      "moderata": 0.3,
-      "grave": 0.5,
-      "devastante": 0.8
+      lieve: 0.1,
+      moderata: 0.3,
+      grave: 0.5,
+      devastante: 0.8
     };
 
     // Infetta PNG casuali
-    const npcs = game.actors.filter(a => a.type === "npc");
+    const npcs = game.actors.filter(a => a.type === 'npc');
     const infectionRate = severityModifiers[severity];
 
-    for (let npc of npcs) {
+    for (const npc of npcs) {
       if (Math.random() < infectionRate) {
-        await npc.setFlag("brancalonia-bigat", "diseased", true);
-        await npc.setFlag("brancalonia-bigat", "diseases", [{
+        await npc.setFlag('brancalonia-bigat', 'diseased', true);
+        await npc.setFlag('brancalonia-bigat', 'diseases', [{
           key: Object.keys(this.diseases).find(k => this.diseases[k] === disease),
           stage: Math.floor(Math.random() * 3) + 1
         }]);
@@ -959,7 +950,7 @@ if (!game.user.isGM) {
         <p>Area: ${radius}</p>
         <p>${Math.floor(npcs.length * infectionRate)} PNG infettati</p>
       </div>`,
-      whisper: ChatMessage.getWhisperRecipients("GM")
+      whisper: ChatMessage.getWhisperRecipients('GM')
     });
   }
 
@@ -974,31 +965,31 @@ if (!game.user.isGM) {
         <h2>🦠 Malattie di ${actor.name}</h2>
         ${diseases.length === 0 ? '<p>Nessuna malattia</p>' : ''}
         ${diseases.map(d => {
-          const disease = this.diseases[d.key];
-          return `
+    const disease = this.diseases[d.key];
+    return `
             <div class="disease-entry">
               <h3>${disease.name} - Stadio ${d.stage}</h3>
               <p>Giorni di malattia: ${d.daysProgressed}</p>
               <button class="cure-disease" data-disease="${d.key}">Cura</button>
             </div>
           `;
-        }).join('')}
+  }).join('')}
         <hr>
         <h3>Infetta con:</h3>
         <select id="disease-select">
           ${Object.entries(this.diseases).map(([key, disease]) =>
-            `<option value="${key}">${disease.name}</option>`
-          ).join('')}
+    `<option value="${key}">${disease.name}</option>`
+  ).join('')}
         </select>
         <button id="infect-actor">Infetta</button>
       </div>
     `;
 
     const dialog = new Dialog({
-      title: "Gestione Malattie",
-      content: content,
+      title: 'Gestione Malattie',
+      content,
       buttons: {
-        close: { label: "Chiudi" }
+        close: { label: 'Chiudi' }
       },
       render: html => {
         html.find('#infect-actor').click(() => {
@@ -1042,11 +1033,11 @@ if (!game.user.isGM) {
     `;
 
     new Dialog({
-      title: "Metodo di Cura",
-      content: content,
+      title: 'Metodo di Cura',
+      content,
       buttons: {
         cure: {
-          label: "Cura",
+          label: 'Cura',
           callback: html => {
             const method = html.find('input[name="cure-method"]:checked').val();
             if (method) {
@@ -1054,7 +1045,7 @@ if (!game.user.isGM) {
             }
           }
         },
-        cancel: { label: "Annulla" }
+        cancel: { label: 'Annulla' }
       }
     }).render(true);
   }

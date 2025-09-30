@@ -5,14 +5,14 @@
 
 class BrancaloniaRestSystem {
   constructor() {
-    this.name = "Sistema di Riposo della Canaglia";
-    this.description = "Sistema di riposo modificato per Brancalonia";
+    this.name = 'Sistema di Riposo della Canaglia';
+    this.description = 'Sistema di riposo modificato per Brancalonia';
     this.initialized = false;
 
     // Durate dei riposi in Brancalonia
     this.restDurations = {
-      shortRest: "8 ore",
-      longRest: "7 giorni (una settimana)"
+      shortRest: '8 ore',
+      longRest: '7 giorni (una settimana)'
     };
 
     console.log('Brancalonia | Sistema di Riposo della Canaglia inizializzato');
@@ -41,10 +41,9 @@ class BrancaloniaRestSystem {
 
       console.log('Brancalonia | Sistema di Riposo della Canaglia inizializzato con successo');
       return instance;
-
     } catch (error) {
       console.error('Brancalonia | Errore inizializzazione Sistema di Riposo della Canaglia:', error);
-      ui.notifications.error('Errore inizializzazione Sistema di Riposo della Canaglia: ' + error.message);
+      ui.notifications.error(`Errore inizializzazione Sistema di Riposo della Canaglia: ${error.message}`);
     }
   }
 
@@ -291,7 +290,6 @@ class BrancaloniaRestSystem {
       this.initialized = true;
       console.log('Brancalonia | Sistema di Riposo della Canaglia configurato');
       ui.notifications.info('Sistema di Riposo della Canaglia attivo');
-
     } catch (error) {
       console.error('Brancalonia | Errore inizializzazione sistema riposo:', error);
       ui.notifications.error('Errore inizializzazione Sistema di Riposo della Canaglia');
@@ -302,7 +300,7 @@ class BrancaloniaRestSystem {
   async loadRestConfigurations() {
     this.config = {
       shortRestDuration: 8, // ore
-      longRestDuration: 7,  // giorni
+      longRestDuration: 7, // giorni
       safeLocations: ['covo', 'bettola_amica', 'taverna_sicura', 'casa', 'tempio'],
       dangerousLocations: ['dungeon', 'wilderness', 'strada', 'sottobosco'],
       interruptionChance: {
@@ -343,7 +341,7 @@ class BrancaloniaRestSystem {
     const config = {
       restType: 'short',
       duration: this.config.shortRestDuration,
-      location: location
+      location
     };
 
     await this.handleBrancaloniaRest(actor, config);
@@ -393,7 +391,6 @@ class BrancaloniaRestSystem {
 
       // Avvia il riposo breve normale
       await this.processShortRest(actor, config);
-
     } else if (restType === 'long') {
       ui.notifications.info(`${actor.name} inizia un riposo lungo di una settimana (Sbraco)`);
 
@@ -438,14 +435,14 @@ class BrancaloniaRestSystem {
 
       new Dialog({
         title: 'Riposo della Canaglia',
-        content: content,
+        content,
         buttons: {
           confirm: {
             icon: '<i class="fas fa-check"></i>',
             label: 'Conferma',
             callback: (html) => {
               const option = html.find('input[name="sbraco"]:checked').val();
-              resolve({option: option});
+              resolve({ option });
             }
           },
           cancel: {
@@ -458,8 +455,8 @@ class BrancaloniaRestSystem {
         render: (html) => {
           // Aggiungi eventi per evidenziare le opzioni
           html.find('label').hover(
-            function() { $(this).css('background-color', '#f0f0f0'); },
-            function() { $(this).css('background-color', ''); }
+            function () { $(this).css('background-color', '#f0f0f0'); },
+            function () { $(this).css('background-color', ''); }
           );
         }
       }).render(true);
@@ -493,7 +490,6 @@ class BrancaloniaRestSystem {
       });
 
       console.log(`Brancalonia | Riposo breve completato per: ${actor.name}`);
-
     } catch (error) {
       console.error('Brancalonia | Errore processo riposo breve:', error);
       ui.notifications.error('Errore durante il riposo breve');
@@ -510,7 +506,7 @@ class BrancaloniaRestSystem {
       return;
     }
 
-    switch(option) {
+    switch (option) {
       case 'riposo':
         await this.handleRestOption(actor);
         break;
@@ -587,7 +583,6 @@ class BrancaloniaRestSystem {
           }
         }
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore riposo completo:', error);
       ui.notifications.error('Errore durante il riposo completo');
@@ -649,7 +644,6 @@ class BrancaloniaRestSystem {
           }
         }
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore imbosco:', error);
       ui.notifications.error('Errore durante l\'imbosco');
@@ -669,7 +663,6 @@ class BrancaloniaRestSystem {
 
       // Recupero completo come riposo normale
       await this.handleRestOption(actor);
-
     } catch (error) {
       console.error('Brancalonia | Errore bagordi:', error);
       ui.notifications.error('Errore durante i bagordi');
@@ -759,7 +752,7 @@ class BrancaloniaRestSystem {
     const spells = actor.system.spells;
     const updates = {};
 
-    for (let [level, slot] of Object.entries(spells)) {
+    for (const [level, slot] of Object.entries(spells)) {
       if (slot.value !== undefined && slot.max > 0) {
         const recoveredSlots = Math.floor(slot.max * percentage);
         updates[`system.spells.${level}.value`] = Math.min(slot.value + recoveredSlots, slot.max);
@@ -836,7 +829,7 @@ class BrancaloniaRestSystem {
       </div>`;
 
     ChatMessage.create({
-      content: content,
+      content,
       whisper: [game.user.id]
     });
   }
@@ -881,7 +874,7 @@ class BrancaloniaRestSystem {
     content += `</div>`;
 
     ChatMessage.create({
-      content: content,
+      content,
       whisper: [game.user.id]
     });
   }
@@ -917,13 +910,13 @@ class BrancaloniaRestSystem {
 
     // Mappa automatica scene -> location
     const sceneLocationMap = {
-      'taverna': 'bettola_amica',
-      'covo': 'covo',
-      'casa': 'casa',
-      'tempio': 'tempio',
-      'dungeon': 'dungeon',
-      'foresta': 'wilderness',
-      'strada': 'strada'
+      taverna: 'bettola_amica',
+      covo: 'covo',
+      casa: 'casa',
+      tempio: 'tempio',
+      dungeon: 'dungeon',
+      foresta: 'wilderness',
+      strada: 'strada'
     };
 
     for (const [keyword, location] of Object.entries(sceneLocationMap)) {

@@ -6,11 +6,11 @@
 class CovoMigration {
   static async migrateAll() {
     if (!game.user.isGM) {
-      ui.notifications.error("Solo il GM può eseguire la migrazione!");
+      ui.notifications.error('Solo il GM può eseguire la migrazione!');
       return;
     }
 
-    console.log("Brancalonia | Inizio migrazione sistema Covo...");
+    console.log('Brancalonia | Inizio migrazione sistema Covo...');
 
     try {
       // Trova tutti gli attori con dati del vecchio covo
@@ -20,12 +20,12 @@ class CovoMigration {
       );
 
       if (actorsWithOldCovo.length === 0) {
-        ui.notifications.info("Nessun covo da migrare trovato.");
+        ui.notifications.info('Nessun covo da migrare trovato.');
         return;
       }
 
       const confirmed = await Dialog.confirm({
-        title: "Migrazione Sistema Covo",
+        title: 'Migrazione Sistema Covo',
         content: `
           <div style="padding: 15px;">
             <h3>🔄 Migrazione al nuovo sistema Covo</h3>
@@ -49,13 +49,13 @@ class CovoMigration {
       });
 
       if (!confirmed) {
-        ui.notifications.info("Migrazione annullata.");
+        ui.notifications.info('Migrazione annullata.');
         return;
       }
 
       // Progress dialog
       const progressDialog = new Dialog({
-        title: "Migrazione in corso...",
+        title: 'Migrazione in corso...',
         content: `
           <div style="padding: 20px; text-align: center;">
             <h3>🔄 Migrazione in corso...</h3>
@@ -106,23 +106,22 @@ class CovoMigration {
       const report = await this._generateMigrationReport(total);
 
       new Dialog({
-        title: "✅ Migrazione Completata",
+        title: '✅ Migrazione Completata',
         content: report,
         buttons: {
           ok: {
             icon: '<i class="fas fa-check"></i>',
-            label: "OK"
+            label: 'OK'
           }
         }
       }, {
         width: 500
       }).render(true);
 
-      console.log("Brancalonia | Migrazione sistema Covo completata!");
-
+      console.log('Brancalonia | Migrazione sistema Covo completata!');
     } catch (error) {
-      console.error("Brancalonia | Errore durante la migrazione:", error);
-      ui.notifications.error("Errore durante la migrazione: " + error.message);
+      console.error('Brancalonia | Errore durante la migrazione:', error);
+      ui.notifications.error(`Errore durante la migrazione: ${error.message}`);
     }
   }
 
@@ -192,17 +191,17 @@ class CovoMigration {
   static async _createNewCovoActor(name, oldData, members) {
     // Prepara dati base del covo
     const covoData = {
-      name: name,
-      type: "npc",
-      img: oldData.img || "icons/environment/settlement/house-cottage.webp",
+      name,
+      type: 'npc',
+      img: oldData.img || 'icons/environment/settlement/house-cottage.webp',
       system: {
         details: {
           biography: {
-            value: oldData.description || "Covo migrato dal vecchio sistema."
+            value: oldData.description || 'Covo migrato dal vecchio sistema.'
           },
           type: {
-            value: "Covo",
-            custom: "Covo"
+            value: 'Covo',
+            custom: 'Covo'
           }
         },
         currency: {
@@ -248,27 +247,27 @@ class CovoMigration {
 
     // Mappa vecchi nomi ai nuovi
     const granlussiMap = {
-      'borsaNera': {
+      borsaNera: {
         name: 'Borsa Nera',
         type: 'borsa-nera',
         img: 'icons/containers/bags/pouch-simple-leather-brown.webp'
       },
-      'cantina': {
+      cantina: {
         name: 'Cantina',
         type: 'cantina',
         img: 'icons/environment/settlement/cellar.webp'
       },
-      'distilleria': {
+      distilleria: {
         name: 'Distilleria',
         type: 'distilleria',
         img: 'icons/tools/laboratory/alembic-copper-blue.webp'
       },
-      'fucina': {
+      fucina: {
         name: 'Fucina',
         type: 'fucina',
         img: 'icons/tools/smithing/anvil.webp'
       },
-      'scuderie': {
+      scuderie: {
         name: 'Scuderie',
         type: 'scuderie',
         img: 'icons/environment/settlement/stable.webp'
@@ -278,29 +277,29 @@ class CovoMigration {
     // Benefits per livello (dal manuale)
     const benefitsMap = {
       'borsa-nera': {
-        1: { cost: 100, description: "Oggetti magici comuni (50 mo)" },
-        2: { cost: 50, description: "Oggetti non comuni (150 mo)" },
-        3: { cost: 50, description: "Oggetti rari su richiesta" }
+        1: { cost: 100, description: 'Oggetti magici comuni (50 mo)' },
+        2: { cost: 50, description: 'Oggetti non comuni (150 mo)' },
+        3: { cost: 50, description: 'Oggetti rari su richiesta' }
       },
-      'cantina': {
-        1: { cost: 100, description: "Recuperi tutti i DV nel riposo lungo" },
-        2: { cost: 50, description: "-1 indebolimento extra" },
-        3: { cost: 50, description: "+1 punto ispirazione" }
+      cantina: {
+        1: { cost: 100, description: 'Recuperi tutti i DV nel riposo lungo' },
+        2: { cost: 50, description: '-1 indebolimento extra' },
+        3: { cost: 50, description: '+1 punto ispirazione' }
       },
-      'distilleria': {
-        1: { cost: 100, description: "Acquamorte o Richiamino gratis" },
-        2: { cost: 50, description: "Afrore o Infernet gratis" },
-        3: { cost: 50, description: "Cordiale o Intruglio Forza gratis" }
+      distilleria: {
+        1: { cost: 100, description: 'Acquamorte o Richiamino gratis' },
+        2: { cost: 50, description: 'Afrore o Infernet gratis' },
+        3: { cost: 50, description: 'Cordiale o Intruglio Forza gratis' }
       },
-      'fucina': {
-        1: { cost: 100, description: "Ripara oggetti metallici" },
-        2: { cost: 50, description: "Sblocca lucchetti non magici" },
-        3: { cost: 50, description: "Equipaggiamento non scadente" }
+      fucina: {
+        1: { cost: 100, description: 'Ripara oggetti metallici' },
+        2: { cost: 50, description: 'Sblocca lucchetti non magici' },
+        3: { cost: 50, description: 'Equipaggiamento non scadente' }
       },
-      'scuderie': {
-        1: { cost: 100, description: "Pony, asini, muli in prestito" },
-        2: { cost: 50, description: "Cavalli e carri in prestito" },
-        3: { cost: 50, description: "Tutto non scadente" }
+      scuderie: {
+        1: { cost: 100, description: 'Pony, asini, muli in prestito' },
+        2: { cost: 50, description: 'Cavalli e carri in prestito' },
+        3: { cost: 50, description: 'Tutto non scadente' }
       }
     };
 
@@ -310,18 +309,18 @@ class CovoMigration {
 
       const itemData = {
         name: info.name,
-        type: "feat",
+        type: 'feat',
         img: info.img,
         system: {
           description: {
             value: this._getGranlussoDescription(info.type)
           },
           type: {
-            value: "feat",
-            subtype: "granlusso"
+            value: 'feat',
+            subtype: 'granlusso'
           },
           activation: {
-            type: "special",
+            type: 'special',
             cost: null
           },
           level: {
@@ -343,7 +342,7 @@ class CovoMigration {
     }
 
     // Crea tutti i granlussi
-    await covo.createEmbeddedDocuments("Item", granlussiData);
+    await covo.createEmbeddedDocuments('Item', granlussiData);
   }
 
   /**
@@ -351,14 +350,14 @@ class CovoMigration {
    */
   static _getGranlussoDescription(type) {
     const descriptions = {
-      'borsa-nera': "Rete di contatti per commercio di oggetti magici e materiali rari.",
-      'cantina': "Luogo fresco per conservare cibo e bevande, migliora il riposo.",
-      'distilleria': "Alambicchi per distillare intrugli alchemici e bevande.",
-      'fucina': "Forge per riparare e migliorare equipaggiamento.",
-      'scuderie': "Stalle per cavalcature e veicoli."
+      'borsa-nera': 'Rete di contatti per commercio di oggetti magici e materiali rari.',
+      cantina: 'Luogo fresco per conservare cibo e bevande, migliora il riposo.',
+      distilleria: 'Alambicchi per distillare intrugli alchemici e bevande.',
+      fucina: 'Forge per riparare e migliorare equipaggiamento.',
+      scuderie: 'Stalle per cavalcature e veicoli.'
     };
 
-    return descriptions[type] || "Granlusso del covo.";
+    return descriptions[type] || 'Granlusso del covo.';
   }
 
   /**
@@ -430,7 +429,7 @@ class CovoMigration {
    */
   static async cleanupOldData() {
     const confirmed = await Dialog.confirm({
-      title: "Pulizia Dati Vecchi",
+      title: 'Pulizia Dati Vecchi',
       content: `
         <p><strong>⚠️ ATTENZIONE:</strong></p>
         <p>Questa operazione rimuoverà permanentemente tutti i vecchi flag del sistema covo v1.</p>
@@ -521,17 +520,17 @@ class CovoMigration {
         ` : ''}
 
         ${report.success.length === migratedCovos.length && report.errors.length === 0 ?
-          '<p style="color: #4CAF50; font-weight: bold;">✅ Tutte le migrazioni sono state verificate con successo!</p>' :
-          '<p style="color: #FF9800;">Controlla gli avvisi sopra e correggi manualmente se necessario.</p>'
-        }
+    '<p style="color: #4CAF50; font-weight: bold;">✅ Tutte le migrazioni sono state verificate con successo!</p>' :
+    '<p style="color: #FF9800;">Controlla gli avvisi sopra e correggi manualmente se necessario.</p>'
+}
       </div>
     `;
 
     new Dialog({
-      title: "Verifica Migrazione",
+      title: 'Verifica Migrazione',
       content,
       buttons: {
-        ok: { label: "OK" }
+        ok: { label: 'OK' }
       }
     }, {
       width: 500
@@ -562,7 +561,7 @@ Hooks.once('ready', () => {
       default: false
     });
 
-    console.log("Brancalonia | Sistema migrazione covo pronto. Usa game.brancalonia.migration.migrateAll() per iniziare.");
+    console.log('Brancalonia | Sistema migrazione covo pronto. Usa game.brancalonia.migration.migrateAll() per iniziare.');
   }
 });
 

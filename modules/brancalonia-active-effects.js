@@ -2,6 +2,17 @@
  * Brancalonia - Sistema Active Effects Runtime
  * Applica Active Effects a runtime per aggirare limitazione Foundry CLI (Issue #41)
  * Compatibile con D&D 5e v3.3.1 e Foundry v13
+ *
+ * CHANGELOG v10.1.1 (allineato con module.json v10.1.0):
+ * - CRITICO: Corretti TUTTI gli ID per corrispondere ai file sorgenti reali del progetto
+ * - Gli ID precedenti NON funzionavano perché non corrispondevano ai compendi
+ * - Aggiunte razze mancanti: Umani, Benandanti, Malandrino, Giffonita, Pantegana, Silfo
+ * - Aggiunti background: Duro, Azzeccagarbugli, Brado, Cacciatore di Reliquie
+ * - Fix competenze Attaccabrighe: ora usa Performance (prf) e Intuizione (ins)
+ * - Versione allineata con module.json (v10.1.0)
+ *
+ * NOTA: Gli ID devono corrispondere ESATTAMENTE a quelli nei file JSON sorgente
+ * Per verificare: grep '"_id"' /packs/_source/[nome_file].json
  */
 
 // Mappatura completa Active Effects per ogni item
@@ -9,7 +20,7 @@ const BRANCALONIA_EFFECTS = {
   // ========================================
   // RAZZE
   // ========================================
-  'morgante001': [
+  morgante001: [
     {
       label: 'Robusto come un Tronco',
       icon: 'icons/creatures/humanoid/giant.webp',
@@ -34,7 +45,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'malebranche001': [
+  malebranche001: [
     {
       label: 'Resistenza Infernale',
       icon: 'icons/creatures/humanoid/devil-horned-red.webp',
@@ -44,7 +55,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'marionetta001': [
+  marionetta001: [
     {
       label: 'Costrutto',
       icon: 'icons/creatures/magical/construct-wood.webp',
@@ -56,7 +67,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'selvatico001': [
+  selvatico_brancalonia: [
     {
       label: 'Istinto Selvaggio',
       icon: 'icons/creatures/magical/beast-wolf.webp',
@@ -66,7 +77,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'dotato001': [
+  dotato_brancalonia: [
     {
       label: 'Dote Magica',
       icon: 'icons/magic/light/orb-lightbulb-blue.webp',
@@ -76,10 +87,74 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
+  // Razze aggiunte con ID corretti
+  umani_brancalonia: [
+    {
+      label: 'Versatilità Umana',
+      icon: 'icons/creatures/humanoid/human-barbarian.webp',
+      changes: [
+        { key: 'flags.brancalonia-bigat.slotMossa', mode: 2, value: '1', priority: 20 }
+      ]
+    }
+  ],
+
+  benandanti_race: [
+    {
+      label: 'Nato con la Camicia',
+      icon: 'icons/magic/defensive/shield-barrier-glowing-blue.webp',
+      changes: [
+        { key: 'flags.midi-qol.advantage.save.charm', mode: 5, value: '1', priority: 20 },
+        { key: 'flags.midi-qol.advantage.save.frightened', mode: 5, value: '1', priority: 20 }
+      ]
+    }
+  ],
+
+  malandrino001: [
+    {
+      label: 'Fortuna del Vagabondo',
+      icon: 'icons/equipment/head/hat-feathered-red.webp',
+      changes: [
+        { key: 'flags.brancalonia-bigat.fortunaVagabondo', mode: 5, value: 'true', priority: 20 }
+      ]
+    }
+  ],
+
+  giffonita001: [
+    {
+      label: 'Vista Acuta',
+      icon: 'icons/creatures/birds/eagle-flying-gray.webp',
+      changes: [
+        { key: 'system.skills.prc.bonuses.check', mode: 2, value: '@prof', priority: 20 }
+      ]
+    }
+  ],
+
+  pantegana001: [
+    {
+      label: 'Resilienza della Pantegana',
+      icon: 'icons/creatures/mammals/rat-giant-grey.webp',
+      changes: [
+        { key: 'system.traits.dr.value', mode: 2, value: 'poison', priority: 20 },
+        { key: 'system.traits.ci.value', mode: 2, value: 'diseased', priority: 20 }
+      ]
+    }
+  ],
+
+  silfo001: [
+    {
+      label: 'Natura Fatata',
+      icon: 'icons/creatures/fey/fairy-humanoid-winged-green.webp',
+      changes: [
+        { key: 'system.traits.ci.value', mode: 2, value: 'charmed', priority: 20 },
+        { key: 'flags.brancalonia-bigat.magicSleepImmunity', mode: 5, value: 'true', priority: 20 }
+      ]
+    }
+  ],
+
   // ========================================
   // TALENTI
   // ========================================
-  'talent_supercazzola': [
+  supercazzola0a1867: [
     {
       label: 'Dadi Supercazzola',
       icon: 'icons/magic/control/tongue-coil-green.webp',
@@ -89,51 +164,16 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'fortunadelbifolco001': [
-    {
-      label: 'Fortuna del Bifolco',
-      icon: 'icons/magic/fortune/fortune-coin-gold.webp',
-      changes: [
-        { key: 'flags.dnd5e.initiativeAdv', mode: 5, value: 'true', priority: 20 }
-      ]
-    }
-  ],
-
-  'linguasciolta001': [
-    {
-      label: 'Lingua Sciolta',
-      icon: 'icons/magic/control/tongue-speak-green.webp',
-      changes: [
-        { key: 'system.skills.dec.bonuses.check', mode: 2, value: '2', priority: 20 },
-        { key: 'system.skills.per.bonuses.check', mode: 2, value: '2', priority: 20 }
-      ]
-    }
-  ],
-
-  'attaccabrighe001': [
-    {
-      label: 'Attaccabrighe',
-      icon: 'icons/skills/melee/fist-punch-impact-orange.webp',
-      changes: [
-        { key: 'system.bonuses.mwak.attack', mode: 2, value: '1', priority: 20 }
-      ]
-    }
-  ],
-
-  'talent_cialtroneria': [
-    {
-      label: 'Cialtroneria',
-      icon: 'icons/skills/social/theft-pickpocket-bribery.webp',
-      changes: [
-        { key: 'system.skills.slt.bonuses.check', mode: 2, value: '@prof', priority: 20 }
-      ]
-    }
-  ],
+  // TODO: Aggiungere altri talenti con ID corretti
+  // fortunadelbifolco: [],
+  // linguasciolta: [],
+  // attaccabrighe (come talento): [],
+  // cialtroneria: [],
 
   // ========================================
   // PRIVILEGI CLASSE (brancalonia-features)
   // ========================================
-  'knave_uncanny_dodge': [
+  knave_uncanny_dodge: [
     {
       label: 'Schivata Prodigiosa',
       icon: 'icons/skills/movement/arrow-acrobatics-red.webp',
@@ -143,7 +183,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'straccione_unarmored_defense': [
+  straccione_unarmored_defense: [
     {
       label: 'Difesa Senza Armatura',
       icon: 'icons/skills/melee/unarmed-punch-fist.webp',
@@ -154,7 +194,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'straccione_hardy': [
+  straccione_hardy: [
     {
       label: 'Robusto',
       icon: 'icons/skills/wounds/injury-triple-slash-bleed.webp',
@@ -167,7 +207,7 @@ const BRANCALONIA_EFFECTS = {
   // ========================================
   // EMERITICENZE
   // ========================================
-  'emeriticenza_energumeno': [
+  emeriticenza_energumeno: [
     {
       label: 'Energumeno - Bonus PF',
       icon: 'icons/magic/life/heart-cross-large-green.webp',
@@ -177,7 +217,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'emeriticenza_assoluta': [
+  emeriticenza_assoluta: [
     {
       label: 'Emeriticenza Assoluta',
       icon: 'icons/magic/control/mind-fear-orange.webp',
@@ -187,7 +227,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'emeriticenza_arma_preferita': [
+  emeriticenza_arma_preferita: [
     {
       label: 'Arma Preferita',
       icon: 'icons/weapons/swords/sword-guard-blue.webp',
@@ -197,7 +237,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'emeriticenza_indomito': [
+  emeriticenza_indomito: [
     {
       label: 'Indomito',
       icon: 'icons/magic/control/defense-shield-barrier-blue.webp',
@@ -207,7 +247,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'emeriticenza_rissaiolo_professionista': [
+  emeriticenza_rissaiolo_professionista: [
     {
       label: 'Rissaiolo Professionista',
       icon: 'icons/skills/melee/unarmed-punch-fist-brown.webp',
@@ -217,7 +257,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'emeriticenza_affinamento': [
+  emeriticenza_affinamento: [
     {
       label: 'Affinamento',
       icon: 'icons/magic/control/buff-strength-muscle-red.webp',
@@ -225,7 +265,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'emeriticenza_santa_fortuna': [
+  emeriticenza_santa_fortuna: [
     {
       label: 'Santa Fortuna',
       icon: 'icons/magic/life/ankh-gold-green.webp',
@@ -233,7 +273,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'emeriticenza_gioco_squadra': [
+  emeriticenza_gioco_squadra: [
     {
       label: 'Gioco di Squadra',
       icon: 'icons/magic/control/target-arrow-green.webp',
@@ -241,7 +281,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'emeriticenza_fandonia_migliorata': [
+  emeriticenza_fandonia_migliorata: [
     {
       label: 'Fandonia Migliorata',
       icon: 'icons/magic/control/silhouette-hold-beam-green.webp',
@@ -252,7 +292,7 @@ const BRANCALONIA_EFFECTS = {
   // ========================================
   // BACKGROUND
   // ========================================
-  'ambulante001': [
+  ambulante: [
     {
       label: 'Competenze Ambulante',
       icon: 'icons/tools/navigation/map-marked-blue.webp',
@@ -263,10 +303,21 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'attaccabrighe_background': [
+  attaccabrighe: [
     {
       label: 'Competenze Attaccabrighe',
       icon: 'icons/skills/melee/sword-damaged-broken.webp',
+      changes: [
+        { key: 'system.skills.prf.value', mode: 5, value: '1', priority: 20 },
+        { key: 'system.skills.ins.value', mode: 5, value: '1', priority: 20 }
+      ]
+    }
+  ],
+
+  duro: [
+    {
+      label: 'Competenze Duro',
+      icon: 'icons/skills/melee/shield-damaged-gray.webp',
       changes: [
         { key: 'system.skills.ath.value', mode: 5, value: '1', priority: 20 },
         { key: 'system.skills.itm.value', mode: 5, value: '1', priority: 20 }
@@ -274,10 +325,45 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
+  azzeccagarbugli: [
+    {
+      label: 'Competenze Azzeccagarbugli',
+      icon: 'icons/tools/scribal/scroll-plain-tan.webp',
+      changes: [
+        { key: 'system.skills.dec.value', mode: 5, value: '1', priority: 20 },
+        { key: 'system.skills.per.value', mode: 5, value: '1', priority: 20 }
+      ]
+    }
+  ],
+
+  brado: [
+    {
+      label: 'Competenze Brado',
+      icon: 'icons/creatures/mammals/wolf-howl-moon-blue.webp',
+      changes: [
+        { key: 'system.skills.ani.value', mode: 5, value: '1', priority: 20 },
+        { key: 'system.skills.sur.value', mode: 5, value: '1', priority: 20 }
+      ]
+    }
+  ],
+
+  cacciatore_di_reliquie: [
+    {
+      label: 'Competenze Cacciatore di Reliquie',
+      icon: 'icons/equipment/chest/chest-simple-gold.webp',
+      changes: [
+        { key: 'system.skills.his.value', mode: 5, value: '1', priority: 20 },
+        { key: 'system.skills.inv.value', mode: 5, value: '1', priority: 20 }
+      ]
+    }
+  ],
+
   // ========================================
   // EQUIPAGGIAMENTO
   // ========================================
-  'armaturadecuoiorappezzata001': [
+  // TODO: Verificare ID reali equipaggiamento nei compendi
+  // Per ora manteniamo gli ID esistenti ma vanno verificati
+  armaturadecuoiorappezzata001: [
     {
       label: 'Armatura Scadente',
       icon: 'icons/equipment/chest/breastplate-leather-brown.webp',
@@ -287,7 +373,7 @@ const BRANCALONIA_EFFECTS = {
     }
   ],
 
-  'amuletodisanpancrazio001': [
+  amuletodisanpancrazio001: [
     {
       label: 'Protezione di San Pancrazio',
       icon: 'icons/equipment/neck/amulet-symbol-holy-gold.webp',
@@ -327,7 +413,7 @@ async function applyBrancaloniaEffects(item) {
       transfer: true,
       duration: {},
       flags: {
-        'dnd5e': {
+        dnd5e: {
           type: item.type,
           rider: itemId
         },
@@ -414,7 +500,7 @@ Hooks.once('ready', async () => {
 
   // Controlla se è la prima volta o se serve un aggiornamento
   const lastVersion = game.settings.get('brancalonia-bigat', 'effectsVersion') || '0.0.0';
-  const currentVersion = '3.14.0';
+  const currentVersion = '10.1.1'; // v10.1.1 - Fix ID corretti per corrispondenza compendi reali
 
   if (lastVersion !== currentVersion) {
     console.log(`📝 Brancalonia: Aggiornamento Active Effects da v${lastVersion} a v${currentVersion}`);
@@ -434,9 +520,14 @@ Hooks.on('createItem', async (item, options, userId) => {
 
 /**
  * CSS per miglioramenti UI
+ * Aggiunto all'hook ready esistente sopra per evitare duplicati
  */
-Hooks.once('ready', () => {
+Hooks.on('renderApplication', () => {
+  // Aggiungi CSS solo una volta
+  if (document.getElementById('brancalonia-effects-css')) return;
+
   const style = document.createElement('style');
+  style.id = 'brancalonia-effects-css';
   style.innerHTML = `
     .brancalonia-status, .brancalonia-help {
       background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);

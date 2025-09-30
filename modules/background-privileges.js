@@ -4,10 +4,9 @@
  */
 
 class BackgroundPrivileges {
-
   static initialize() {
     try {
-      console.log("🎭 Brancalonia | Inizializzazione privilegi background");
+      console.log('🎭 Brancalonia | Inizializzazione privilegi background');
 
       // Registra le impostazioni
       this._registerSettings();
@@ -28,11 +27,10 @@ class BackgroundPrivileges {
       game.brancalonia = game.brancalonia || {};
       game.brancalonia.backgroundPrivileges = this;
 
-      ui.notifications.info("Sistema Privilegi Background caricato con successo!");
-
+      ui.notifications.info('Sistema Privilegi Background caricato con successo!');
     } catch (error) {
       console.error("Errore nell'inizializzazione dei privilegi background:", error);
-      ui.notifications.error("Errore nel caricamento del sistema privilegi background!");
+      ui.notifications.error('Errore nel caricamento del sistema privilegi background!');
     }
   }
 
@@ -48,9 +46,9 @@ class BackgroundPrivileges {
         default: true,
         onChange: value => {
           if (value) {
-            ui.notifications.info("Privilegi Background attivati!");
+            ui.notifications.info('Privilegi Background attivati!');
           } else {
-            ui.notifications.warn("Privilegi Background disattivati!");
+            ui.notifications.warn('Privilegi Background disattivati!');
           }
         }
       });
@@ -84,87 +82,110 @@ class BackgroundPrivileges {
         type: Boolean,
         default: false
       });
-
     } catch (error) {
-      console.error("Errore nella registrazione delle impostazioni privilegi:", error);
+      console.error('Errore nella registrazione delle impostazioni privilegi:', error);
     }
   }
 
   static _registerHooks() {
     try {
       // Hook per inizializzare i privilegi quando un personaggio viene creato/caricato
-      Hooks.on("createActor", (actor, data, options, userId) => {
-        if (actor.type === "character" && game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
+      Hooks.on('createActor', (actor, data, options, userId) => {
+        if (actor.type === 'character' && game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
           this._initializeBackgroundPrivileges(actor);
         }
       });
 
       // Hook per aggiornare i privilegi quando viene modificato un background
-      Hooks.on("updateActor", (actor, data, options, userId) => {
-        if (actor.type === "character" && data.items && game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
+      Hooks.on('updateActor', (actor, data, options, userId) => {
+        if (actor.type === 'character' && data.items && game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
           this._checkBackgroundUpdate(actor);
         }
       });
 
       // Hook per gestire i privilegi durante il gioco
-      Hooks.on("preRoll", (entity, rollData) => {
+      Hooks.on('preRoll', (entity, rollData) => {
         if (game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
           this._applyBackgroundBonuses(entity, rollData);
         }
       });
 
-      // Hook specifico per le Strade che non vanno da nessuna parte
-      Hooks.on("brancalonia.stradeCheck", (actor, rollData) => {
+      // Hook per i roll di viaggio/esplorazione (Ambulante)
+      Hooks.on('dnd5e.preRollSkill', (actor, rollData, skillId) => {
+        // Per Storia e Intrattenere, l'Ambulante ha sempre bonus
+        if ((skillId === 'his' || skillId === 'prf') &&
+            game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
+          if (actor.getFlag('brancalonia-bigat', 'storieStrada')) {
+            rollData.bonus = (rollData.bonus || 0) + 1;
+            rollData.flavor = `${rollData.flavor || ''} [Storie della Strada +1]`;
+          }
+        }
+      });
+
+      // Hook custom per le Strade che non vanno da nessuna parte (se implementato)
+      Hooks.on('brancalonia.stradeCheck', (actor, rollData) => {
         if (game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
           this._applyAmbulanteBonus(actor, rollData);
         }
       });
 
-      // Hook per le interazioni sociali (Duro)
-      Hooks.on("brancalonia.socialInteraction", (actor, target, type) => {
+      // Hook per le interazioni sociali (Duro) - usa anche il hook standard D&D 5e
+      Hooks.on('dnd5e.preRollSkill', (actor, rollData, skillId) => {
+        if (skillId === 'itm' && game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
+          // Applica bonus Duro per intimidazione
+          if (actor.getFlag('brancalonia-bigat', 'facciaDaDuro')) {
+            this._applyDuroBonus(actor, 'intimidation');
+            // Aggiungi anche al roll
+            rollData.bonus = (rollData.bonus || 0) + 1;
+            rollData.flavor = `${rollData.flavor || ''} [Faccia da Duro: Taglia +1]`;
+          }
+        }
+      });
+
+      // Hook custom per interazioni sociali (se altri moduli lo chiamano)
+      Hooks.on('brancalonia.socialInteraction', (actor, target, type) => {
         if (game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
           this._applyDuroBonus(actor, type);
         }
       });
 
       // Hook per le Risse (Attaccabrighe)
-      Hooks.on("brancalonia.brawlStart", (actor) => {
+      Hooks.on('brancalonia.brawlStart', (actor) => {
         if (game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
           this._applyAttaccabrigheBonus(actor);
         }
       });
 
       // Hook per gestione Malefatte (Azzeccagarbugli)
-      Hooks.on("brancalonia.malefattaAdded", (actor, malefatta) => {
+      Hooks.on('brancalonia.malefattaAdded', (actor, malefatta) => {
         if (game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
           this._checkAzzeccagarbugliPrivilege(actor, malefatta);
         }
       });
 
       // Hook per character sheet rendering
-      Hooks.on("renderActorSheet", (sheet, html, data) => {
-        if (sheet.actor.type === "character" && game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
+      Hooks.on('renderActorSheet', (sheet, html, data) => {
+        if (sheet.actor.type === 'character' && game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
           this._enhanceCharacterSheet(sheet, html, data);
         }
       });
 
       // Hook per incontri selvaggi (Brado)
-      Hooks.on("brancalonia.wildEncounter", (actor, encounterData) => {
+      Hooks.on('brancalonia.wildEncounter', (actor, encounterData) => {
         if (game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) {
           return this.applyBradoGuidance(actor, encounterData);
         }
         return encounterData;
       });
-
     } catch (error) {
-      console.error("Errore nella registrazione degli hook privilegi:", error);
+      console.error('Errore nella registrazione degli hook privilegi:', error);
     }
   }
 
   static _registerActiveEffects() {
     // Definisci gli effetti per ogni background
     const backgroundEffects = {
-      'ambulante': {
+      ambulante: {
         label: 'Storie della Strada',
         icon: 'icons/skills/social/diplomacy-handshake.webp',
         flags: {
@@ -174,11 +195,11 @@ class BackgroundPrivileges {
         changes: [
           // Competenze base
           { key: 'system.skills.prf.value', mode: 5, value: '1', priority: 20 }, // Intrattenere
-          { key: 'system.skills.his.value', mode: 5, value: '1', priority: 20 }  // Storia
+          { key: 'system.skills.his.value', mode: 5, value: '1', priority: 20 } // Storia
         ]
       },
 
-      'attaccabrighe': {
+      attaccabrighe: {
         label: 'Rissaiolo',
         icon: 'icons/skills/melee/unarmed-punch-fist-brown.webp',
         flags: {
@@ -191,7 +212,7 @@ class BackgroundPrivileges {
         ]
       },
 
-      'azzeccagarbugli': {
+      azzeccagarbugli: {
         label: 'Risolvere Guai',
         icon: 'icons/tools/scribal/scroll-plain-tan.webp',
         flags: {
@@ -199,11 +220,11 @@ class BackgroundPrivileges {
         },
         changes: [
           { key: 'system.skills.inv.value', mode: 5, value: '1', priority: 20 }, // Indagare
-          { key: 'system.skills.per.value', mode: 5, value: '1', priority: 20 }  // Persuasione
+          { key: 'system.skills.per.value', mode: 5, value: '1', priority: 20 } // Persuasione
         ]
       },
 
-      'brado': {
+      brado: {
         label: 'Dimestichezza Selvatica',
         icon: 'icons/creatures/abilities/paw-print-orange.webp',
         flags: {
@@ -211,11 +232,11 @@ class BackgroundPrivileges {
         },
         changes: [
           { key: 'system.skills.ani.value', mode: 5, value: '1', priority: 20 }, // Addestrare Animali
-          { key: 'system.skills.ath.value', mode: 5, value: '1', priority: 20 }  // Atletica
+          { key: 'system.skills.ath.value', mode: 5, value: '1', priority: 20 } // Atletica
         ]
       },
 
-      'cacciatore_di_reliquie': {
+      cacciatore_di_reliquie: {
         label: 'Studioso di Reliquie',
         icon: 'icons/sundries/books/book-embossed-cross-silver.webp',
         flags: {
@@ -225,11 +246,11 @@ class BackgroundPrivileges {
           { key: 'system.skills.inv.value', mode: 5, value: '1', priority: 20 }, // Indagare
           { key: 'system.skills.his.value', mode: 5, value: '1', priority: 20 }, // Storia
           { key: 'system.skills.rel.bonuses.check', mode: 2, value: '1', priority: 20 }, // +1 Religione
-          { key: 'system.skills.his.bonuses.check', mode: 2, value: '1', priority: 20 }  // +1 Storia (bonus)
+          { key: 'system.skills.his.bonuses.check', mode: 2, value: '1', priority: 20 } // +1 Storia (bonus)
         ]
       },
 
-      'duro': {
+      duro: {
         label: 'Faccia da Duro',
         icon: 'icons/skills/social/intimidation-impressing.webp',
         flags: {
@@ -237,7 +258,7 @@ class BackgroundPrivileges {
         },
         changes: [
           { key: 'system.skills.ath.value', mode: 5, value: '1', priority: 20 }, // Atletica
-          { key: 'system.skills.itm.value', mode: 5, value: '1', priority: 20 }  // Intimidire
+          { key: 'system.skills.itm.value', mode: 5, value: '1', priority: 20 } // Intimidire
         ]
       }
     };
@@ -250,38 +271,47 @@ class BackgroundPrivileges {
 
   static _registerChatCommands() {
     try {
-      // Comando principale
-      game.brancalonia.chatCommands = game.brancalonia.chatCommands || {};
+      // Registra hook standard per comandi chat
+      Hooks.on('chatMessage', (chatLog, message, chatData) => {
+        // Verifica se è un comando privilegi
+        if (!message.startsWith('/privilegi') && !message.startsWith('/background')) {
+          return true;
+        }
 
-      game.brancalonia.chatCommands['/privilegi'] = {
-        callback: this._handlePrivilegiCommand.bind(this),
-        description: "Gestisce i privilegi dei background"
-      };
+        const parts = message.split(' ');
+        const command = parts[0].toLowerCase();
+        const args = parts.slice(1).join(' ');
 
-      game.brancalonia.chatCommands['/background'] = {
-        callback: this._handleBackgroundCommand.bind(this),
-        description: "Mostra informazioni sui background"
-      };
+        // Comando /privilegi - gestisce privilegi del personaggio
+        if (command === '/privilegi') {
+          this._handlePrivilegiCommand(args, chatData);
+          return false;
+        }
 
-      game.brancalonia.chatCommands['/privilegihelp'] = {
-        callback: this._showPrivilegiHelp.bind(this),
-        description: "Mostra l'aiuto per i comandi privilegi"
-      };
+        // Comando /background - mostra info background
+        if (command === '/background') {
+          this._handleBackgroundCommand(args, chatData);
+          return false;
+        }
 
-      // Hook per intercettare i comandi chat
-      Hooks.on("chatMessage", (chatLog, message, chatData) => {
-        const command = message.split(' ')[0].toLowerCase();
+        // Comando /privilegi-help - mostra aiuto
+        if (command === '/privilegi-help') {
+          this._showPrivilegiHelp(chatData);
+          return false;
+        }
 
-        if (game.brancalonia.chatCommands[command]) {
-          game.brancalonia.chatCommands[command].callback(message, chatData);
-          return false; // Previene il messaggio normale
+        // Comando /privilegi-lista - lista tutti i privilegi
+        if (command === '/privilegi-lista') {
+          this._showPrivilegiList(chatData);
+          return false;
         }
 
         return true;
       });
 
+      console.log('BackgroundPrivileges comandi chat registrati');
     } catch (error) {
-      console.error("Errore nella registrazione comandi chat privilegi:", error);
+      console.error('Errore nella registrazione comandi chat privilegi:', error);
     }
   }
 
@@ -289,103 +319,103 @@ class BackgroundPrivileges {
     try {
       const macros = [
         {
-          name: "Privilegi Background",
-          type: "script",
+          name: 'Privilegi Background',
+          type: 'script',
           command: [
-            "if (!game.brancalonia?.backgroundPrivileges) {",
+            'if (!game.brancalonia?.backgroundPrivileges) {',
             "  ui.notifications.error('Sistema privilegi non disponibile!');",
-            "  return;",
-            "}",
-            "",
-            "const tokens = canvas.tokens.controlled;",
-            "if (tokens.length === 0) {",
+            '  return;',
+            '}',
+            '',
+            'const tokens = canvas.tokens.controlled;',
+            'if (tokens.length === 0) {',
             "  ui.notifications.warn('Seleziona un token!');",
-            "  return;",
-            "}",
-            "",
-            "const actor = tokens[0].actor;",
-            "if (!actor) {",
+            '  return;',
+            '}',
+            '',
+            'const actor = tokens[0].actor;',
+            'if (!actor) {',
             "  ui.notifications.error('Token non valido!');",
-            "  return;",
-            "}",
-            "",
-            "game.brancalonia.backgroundPrivileges.showBackgroundPrivileges(actor);"
+            '  return;',
+            '}',
+            '',
+            'game.brancalonia.backgroundPrivileges.showBackgroundPrivileges(actor);'
           ].join('\n'),
-          img: "icons/skills/social/diplomacy-handshake.webp"
+          img: 'icons/skills/social/diplomacy-handshake.webp'
         },
         {
-          name: "Applica Privilegio Duro",
-          type: "script",
+          name: 'Applica Privilegio Duro',
+          type: 'script',
           command: [
-            "if (!game.brancalonia?.backgroundPrivileges) {",
+            'if (!game.brancalonia?.backgroundPrivileges) {',
             "  ui.notifications.error('Sistema privilegi non disponibile!');",
-            "  return;",
-            "}",
-            "",
-            "const tokens = canvas.tokens.controlled;",
-            "if (tokens.length === 0) {",
+            '  return;',
+            '}',
+            '',
+            'const tokens = canvas.tokens.controlled;',
+            'if (tokens.length === 0) {',
             "  ui.notifications.warn('Seleziona un token!');",
-            "  return;",
-            "}",
-            "",
-            "const actor = tokens[0].actor;",
-            "if (!actor) {",
+            '  return;',
+            '}',
+            '',
+            'const actor = tokens[0].actor;',
+            'if (!actor) {',
             "  ui.notifications.error('Token non valido!');",
-            "  return;",
-            "}",
-            "",
+            '  return;',
+            '}',
+            '',
             "if (!actor.getFlag('brancalonia-bigat', 'facciaDaDuro')) {",
             "  ui.notifications.warn('Questo personaggio non ha il privilegio Faccia da Duro!');",
-            "  return;",
-            "}",
-            "",
+            '  return;',
+            '}',
+            '',
             "const effectiveTaglia = game.brancalonia.backgroundPrivileges._applyDuroBonus(actor, 'intimidation');",
             "ui.notifications.info('Taglia effettiva: ' + effectiveTaglia);"
           ].join('\n'),
-          img: "icons/skills/social/intimidation-impressing.webp"
+          img: 'icons/skills/social/intimidation-impressing.webp'
         },
         {
-          name: "Risolvi Guai (Azzeccagarbugli)",
-          type: "script",
+          name: 'Risolvi Guai (Azzeccagarbugli)',
+          type: 'script',
           command: [
-            "if (!game.brancalonia?.backgroundPrivileges) {",
+            'if (!game.brancalonia?.backgroundPrivileges) {',
             "  ui.notifications.error('Sistema privilegi non disponibile!');",
-            "  return;",
-            "}",
-            "",
-            "const tokens = canvas.tokens.controlled;",
-            "if (tokens.length === 0) {",
+            '  return;',
+            '}',
+            '',
+            'const tokens = canvas.tokens.controlled;',
+            'if (tokens.length === 0) {',
             "  ui.notifications.warn('Seleziona un token!');",
-            "  return;",
-            "}",
-            "",
-            "const actor = tokens[0].actor;",
-            "if (!actor) {",
+            '  return;',
+            '}',
+            '',
+            'const actor = tokens[0].actor;',
+            'if (!actor) {',
             "  ui.notifications.error('Token non valido!');",
-            "  return;",
-            "}",
-            "",
+            '  return;',
+            '}',
+            '',
             "if (!actor.getFlag('brancalonia-bigat', 'risolvereGuai')) {",
             "  ui.notifications.warn('Questo personaggio non può risolvere guai legali!');",
-            "  return;",
-            "}",
-            "",
-            "const taglia = await Dialog.prompt({",
+            '  return;',
+            '}',
+            '',
+            'const taglia = await Dialog.prompt({',
             "  title: 'Costo Risoluzione',",
             "  content: '<p>Inserisci il costo per risolvere i guai:</p>' +",
             "           '<input type=\"number\" id=\"costo\" value=\"1\" min=\"1\">',",
             "  callback: (html) => parseInt(html.find('#costo').val())",
-            "});",
-            "",
-            "if (taglia && taglia > 0) {",
-            "  const malefatta = { taglia: taglia };",
-            "  const success = await game.brancalonia.backgroundPrivileges._checkAzzeccagarbugliPrivilege(actor, malefatta);",
-            "  if (!success) {",
+            '});',
+            '',
+            'if (taglia && taglia > 0) {',
+            '  const malefatta = { taglia: taglia };',
+            '  const success = await game.brancalonia.backgroundPrivileges._checkAzzeccagarbugliPrivilege(actor, malefatta);',
+            '  if (!success) {',
             "    ui.notifications.info('Guai risolti con successo!');",
-            "  }",
-            "}"
+            '  }',
+            '}'
           ].join('\n'),
-          img: "icons/tools/scribal/scroll-plain-tan.webp"
+          img: 'icons/tools/scribal/scroll-plain-tan.webp'
         }
       ];
 
@@ -398,9 +428,8 @@ class BackgroundPrivileges {
           }
         }
       });
-
     } catch (error) {
-      console.error("Errore nella creazione macro privilegi:", error);
+      console.error('Errore nella creazione macro privilegi:', error);
     }
   }
 
@@ -409,10 +438,25 @@ class BackgroundPrivileges {
    */
   static _initializeBackgroundPrivileges(actor) {
     try {
-      const background = actor.items.find(i => i.type === "background");
+      const background = actor.items.find(i => i.type === 'background');
       if (!background) return;
 
       const bgName = background.name.toLowerCase().replace(/\s+/g, '_');
+
+      // Imposta flag specifici per ogni background
+      if (bgName.includes('brado')) {
+        actor.setFlag('brancalonia-bigat', 'dimestichezzaSelvatica', true);
+      } else if (bgName.includes('ambulante')) {
+        actor.setFlag('brancalonia-bigat', 'storieStrada', true);
+      } else if (bgName.includes('attaccabrighe')) {
+        actor.setFlag('brancalonia-bigat', 'slotMossaExtra', 1);
+      } else if (bgName.includes('azzeccagarbugli')) {
+        actor.setFlag('brancalonia-bigat', 'risolvereGuai', true);
+      } else if (bgName.includes('duro')) {
+        actor.setFlag('brancalonia-bigat', 'facciaDaDuro', true);
+      } else if (bgName.includes('cacciatore') && bgName.includes('reliquie')) {
+        actor.setFlag('brancalonia-bigat', 'studiosoReliquie', true);
+      }
       const effects = game.brancalonia?.backgroundEffects?.[bgName];
 
       if (effects && game.settings.get('brancalonia-bigat', 'autoApplyBackgroundEffects')) {
@@ -425,7 +469,6 @@ class BackgroundPrivileges {
           ui.notifications.info(`Privilegi background applicati a ${actor.name}`);
         }
       }
-
     } catch (error) {
       console.error("Errore nell'inizializzazione privilegi background:", error);
     }
@@ -453,18 +496,18 @@ class BackgroundPrivileges {
         case 'attiva':
         case 'enable':
           game.settings.set('brancalonia-bigat', 'enableBackgroundPrivileges', true);
-          ChatMessage.create({ content: "<h3>Privilegi Background attivati!</h3>" });
+          ChatMessage.create({ content: '<h3>Privilegi Background attivati!</h3>' });
           break;
         case 'disattiva':
         case 'disable':
           game.settings.set('brancalonia-bigat', 'enableBackgroundPrivileges', false);
-          ChatMessage.create({ content: "<h3>Privilegi Background disattivati!</h3>" });
+          ChatMessage.create({ content: '<h3>Privilegi Background disattivati!</h3>' });
           break;
         default:
           this._showPrivilegiHelp();
       }
     } catch (error) {
-      console.error("Errore nel comando privilegi:", error);
+      console.error('Errore nel comando privilegi:', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
@@ -473,24 +516,29 @@ class BackgroundPrivileges {
     try {
       const tokens = canvas.tokens.controlled;
       if (tokens.length === 0) {
-        ui.notifications.warn("Seleziona un token per vedere i suoi privilegi!");
+        ui.notifications.warn('Seleziona un token per vedere i suoi privilegi!');
         return;
       }
 
       const actor = tokens[0].actor;
       if (!actor) {
-        ui.notifications.error("Token non valido!");
+        ui.notifications.error('Token non valido!');
         return;
       }
 
       this.showBackgroundPrivileges(actor);
     } catch (error) {
-      console.error("Errore nel comando background:", error);
+      console.error('Errore nel comando background:', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
 
-  static _showPrivilegiHelp() {
+  static _showPrivilegiList(chatData) {
+    // Metodo per mostrare la lista di tutti i privilegi
+    this._showAllPrivileges();
+  }
+
+  static _showPrivilegiHelp(chatData) {
     const helpContent = `
       <div class="brancalonia-help">
         <h2>🎭 Comandi Privilegi Background</h2>
@@ -543,9 +591,9 @@ class BackgroundPrivileges {
 
   static showBackgroundPrivileges(actor) {
     try {
-      const background = actor.items.find(i => i.type === "background");
+      const background = actor.items.find(i => i.type === 'background');
       if (!background) {
-        ui.notifications.warn("Questo personaggio non ha un background!");
+        ui.notifications.warn('Questo personaggio non ha un background!');
         return;
       }
 
@@ -578,13 +626,12 @@ class BackgroundPrivileges {
       content += `</div>`;
 
       ChatMessage.create({
-        content: content,
+        content,
         speaker: ChatMessage.getSpeaker({ actor })
       });
-
     } catch (error) {
-      console.error("Errore nel mostrare privilegi background:", error);
-      ui.notifications.error("Errore nel mostrare i privilegi!");
+      console.error('Errore nel mostrare privilegi background:', error);
+      ui.notifications.error('Errore nel mostrare i privilegi!');
     }
   }
 
@@ -592,8 +639,13 @@ class BackgroundPrivileges {
     try {
       if (!game.settings.get('brancalonia-bigat', 'enableBackgroundPrivileges')) return;
 
+      // Verifica se UI Coordinator ha già processato
+      const element = html[0] || html;
+      if (element.dataset.privilegesEnhanced === 'true') return;
+      element.dataset.privilegesEnhanced = 'true';
+
       const actor = sheet.actor;
-      const background = actor.items.find(i => i.type === "background");
+      const background = actor.items.find(i => i.type === 'background');
 
       if (!background) return;
 
@@ -624,7 +676,6 @@ class BackgroundPrivileges {
           this.showBackgroundPrivileges(actor);
         }
       });
-
     } catch (error) {
       console.error("Errore nell'enhancement della scheda personaggio:", error);
     }
@@ -650,7 +701,6 @@ class BackgroundPrivileges {
           speaker: ChatMessage.getSpeaker({ actor })
         });
       }
-
     } catch (error) {
       console.error("Errore nell'applicazione bonus Ambulante:", error);
     }
@@ -674,7 +724,6 @@ class BackgroundPrivileges {
           speaker: ChatMessage.getSpeaker({ actor })
         });
       }
-
     } catch (error) {
       console.error("Errore nell'applicazione bonus Attaccabrighe:", error);
     }
@@ -690,7 +739,7 @@ class BackgroundPrivileges {
       const taglia = malefatta.taglia || 0;
 
       const choice = await Dialog.confirm({
-        title: "Risolvere Guai",
+        title: 'Risolvere Guai',
         content: `<p>Vuoi usare il privilegio Risolvere Guai per annullare questa Malefatta?</p>
                   <p>Costo: ${taglia} monete d'oro</p>`,
         yes: () => true,
@@ -721,14 +770,13 @@ class BackgroundPrivileges {
 
           return false; // Impedisce l'aggiunta della Malefatta
         } else {
-          ui.notifications.warn("Non hai abbastanza monete per risolvere questi guai!");
+          ui.notifications.warn('Non hai abbastanza monete per risolvere questi guai!');
         }
       }
 
       return true; // Procedi con l'aggiunta della Malefatta
-
     } catch (error) {
-      console.error("Errore nel privilegio Azzeccagarbugli:", error);
+      console.error('Errore nel privilegio Azzeccagarbugli:', error);
       return true;
     }
   }
@@ -757,9 +805,8 @@ class BackgroundPrivileges {
       }
 
       return encounterData; // Altri tipi di incontri procedono normalmente
-
     } catch (error) {
-      console.error("Errore nel privilegio Brado:", error);
+      console.error('Errore nel privilegio Brado:', error);
       return encounterData;
     }
   }
@@ -787,9 +834,8 @@ class BackgroundPrivileges {
       }
 
       return effectiveTaglia;
-
     } catch (error) {
-      console.error("Errore nel privilegio Duro:", error);
+      console.error('Errore nel privilegio Duro:', error);
       return actor.getFlag('brancalonia-bigat', 'taglia') || 0;
     }
   }
@@ -799,12 +845,12 @@ class BackgroundPrivileges {
    */
   static _getTagliaName(level) {
     const taglie = [
-      "Sconosciuto",      // 0
-      "Canaglia",         // 1
-      "Famigerato",       // 2
-      "Ricercato",        // 3
-      "Nemico Pubblico",  // 4
-      "Leggenda"          // 5+
+      'Sconosciuto', // 0
+      'Canaglia', // 1
+      'Famigerato', // 2
+      'Ricercato', // 3
+      'Nemico Pubblico', // 4
+      'Leggenda' // 5+
     ];
     return taglie[Math.min(level, taglie.length - 1)];
   }
@@ -822,7 +868,7 @@ class BackgroundPrivileges {
       if (actor.getFlag('brancalonia-bigat', 'studiosoReliquie')) {
         if (rollData.skill === 'rel' || rollData.skill === 'his') {
           rollData.bonus = (rollData.bonus || 0) + 1;
-          rollData.flavor = (rollData.flavor || '') + ' [Studioso di Reliquie +1]';
+          rollData.flavor = `${rollData.flavor || ''} [Studioso di Reliquie +1]`;
 
           if (game.settings.get('brancalonia-bigat', 'debugBackgroundPrivileges')) {
             console.log(`Applicato bonus Studioso di Reliquie a ${rollData.skill}`);
@@ -834,7 +880,7 @@ class BackgroundPrivileges {
       if (actor.getFlag('brancalonia-bigat', 'storieStrada')) {
         if (rollData.skill === 'prf' || rollData.skill === 'his') {
           rollData.bonus = (rollData.bonus || 0) + 1;
-          rollData.flavor = (rollData.flavor || '') + ' [Storie della Strada +1]';
+          rollData.flavor = `${rollData.flavor || ''} [Storie della Strada +1]`;
         }
       }
 
@@ -842,10 +888,9 @@ class BackgroundPrivileges {
       if (actor.getFlag('brancalonia-bigat', 'facciaDaDuro')) {
         if (rollData.skill === 'itm') {
           rollData.bonus = (rollData.bonus || 0) + 1;
-          rollData.flavor = (rollData.flavor || '') + ' [Faccia da Duro +1]';
+          rollData.flavor = `${rollData.flavor || ''} [Faccia da Duro +1]`;
         }
       }
-
     } catch (error) {
       console.error("Errore nell'applicazione bonus background:", error);
     }
@@ -853,12 +898,13 @@ class BackgroundPrivileges {
 }
 
 // Registra il modulo quando Foundry è pronto
-Hooks.once("init", () => {
+// Migrato a init per garantire disponibilità precoce
+Hooks.once('init', () => {
   try {
     BackgroundPrivileges.initialize();
   } catch (error) {
     console.error("Errore critico nell'inizializzazione BackgroundPrivileges:", error);
-    ui.notifications.error("Errore nel caricamento del sistema privilegi background!");
+    ui.notifications.error('Errore nel caricamento del sistema privilegi background!');
   }
 });
 

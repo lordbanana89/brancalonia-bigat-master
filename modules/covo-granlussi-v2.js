@@ -133,7 +133,7 @@ class BrancaloniaCovoV2 {
         return BrancaloniaCovoV2.TEMPLATES.COVO_SHEET;
       }
 
-      async getData(options={}) {
+      async getData(options = {}) {
         const context = await super.getData(options);
 
         // Aggiungi dati specifici del covo
@@ -227,7 +227,7 @@ class BrancaloniaCovoV2 {
         if (scene) {
           scene.view();
         } else {
-          ui.notifications.warn("Nessuna scena covo trovata");
+          ui.notifications.warn('Nessuna scena covo trovata');
         }
       }
     }
@@ -244,18 +244,18 @@ class BrancaloniaCovoV2 {
    * Registra Handlebars helpers
    */
   static registerHandlebarsHelpers() {
-    Handlebars.registerHelper('granlussoIcon', function(type) {
+    Handlebars.registerHelper('granlussoIcon', (type) => {
       const icons = {
         'borsa-nera': 'fa-sack-dollar',
-        'cantina': 'fa-wine-bottle',
-        'distilleria': 'fa-flask',
-        'fucina': 'fa-hammer',
-        'scuderie': 'fa-horse'
+        cantina: 'fa-wine-bottle',
+        distilleria: 'fa-flask',
+        fucina: 'fa-hammer',
+        scuderie: 'fa-horse'
       };
       return icons[type] || 'fa-home';
     });
 
-    Handlebars.registerHelper('granlussoColor', function(level) {
+    Handlebars.registerHelper('granlussoColor', (level) => {
       const colors = ['#6c757d', '#28a745', '#ffc107', '#fd7e14'];
       return colors[level] || colors[0];
     });
@@ -328,7 +328,7 @@ class BrancaloniaCovoV2 {
 
       if (!actor) return;
 
-      switch(action) {
+      switch (action) {
         case 'view-covo':
           actor.sheet.render(true);
           break;
@@ -348,17 +348,17 @@ class BrancaloniaCovoV2 {
   static async createCovo(name, members = []) {
     // Crea l'actor Covo
     const covoData = {
-      name: name || "Covo della Compagnia",
-      type: "npc",
-      img: "icons/environment/settlement/house-cottage.webp",
+      name: name || 'Covo della Compagnia',
+      type: 'npc',
+      img: 'icons/environment/settlement/house-cottage.webp',
       system: {
         details: {
           biography: {
-            value: "Il rifugio segreto della nostra banda di malfattori."
+            value: 'Il rifugio segreto della nostra banda di malfattori.'
           },
           type: {
-            value: "Covo",
-            custom: "Covo"
+            value: 'Covo',
+            custom: 'Covo'
           }
         },
         currency: {
@@ -410,7 +410,7 @@ class BrancaloniaCovoV2 {
           </button>
         </div>
       `,
-      speaker: { alias: "Sistema Covo" }
+      speaker: { alias: 'Sistema Covo' }
     });
 
     return covo;
@@ -422,19 +422,19 @@ class BrancaloniaCovoV2 {
   static async createBaseGranlussi(covo) {
     const granlussi = [
       {
-        name: "Borsa Nera",
-        type: "feat",
-        img: "icons/containers/bags/pouch-simple-leather-brown.webp",
+        name: 'Borsa Nera',
+        type: 'feat',
+        img: 'icons/containers/bags/pouch-simple-leather-brown.webp',
         system: {
           description: {
-            value: "Rete di contatti per commercio di oggetti magici e materiali rari."
+            value: 'Rete di contatti per commercio di oggetti magici e materiali rari.'
           },
           type: {
-            value: "feat",
-            subtype: "granlusso"
+            value: 'feat',
+            subtype: 'granlusso'
           },
           activation: {
-            type: "special",
+            type: 'special',
             cost: null
           },
           level: {
@@ -445,29 +445,29 @@ class BrancaloniaCovoV2 {
         flags: {
           [this.ID]: {
             [this.FLAGS.GRANLUSSO]: true,
-            type: "borsa-nera",
+            type: 'borsa-nera',
             benefits: {
-              1: { cost: 100, description: "Oggetti magici comuni (50 mo)" },
-              2: { cost: 50, description: "Oggetti non comuni (150 mo)" },
-              3: { cost: 50, description: "Oggetti rari su richiesta" }
+              1: { cost: 100, description: 'Oggetti magici comuni (50 mo)' },
+              2: { cost: 50, description: 'Oggetti non comuni (150 mo)' },
+              3: { cost: 50, description: 'Oggetti rari su richiesta' }
             }
           }
         }
       },
       {
-        name: "Cantina",
-        type: "feat",
-        img: "icons/environment/settlement/cellar.webp",
+        name: 'Cantina',
+        type: 'feat',
+        img: 'icons/environment/settlement/cellar.webp',
         system: {
           description: {
-            value: "Luogo fresco per conservare cibo e bevande, migliora il riposo."
+            value: 'Luogo fresco per conservare cibo e bevande, migliora il riposo.'
           },
           type: {
-            value: "feat",
-            subtype: "granlusso"
+            value: 'feat',
+            subtype: 'granlusso'
           },
           activation: {
-            type: "special",
+            type: 'special',
             cost: null
           },
           level: {
@@ -478,29 +478,29 @@ class BrancaloniaCovoV2 {
         flags: {
           [this.ID]: {
             [this.FLAGS.GRANLUSSO]: true,
-            type: "cantina",
+            type: 'cantina',
             benefits: {
-              1: { cost: 100, description: "Recuperi tutti i DV nel riposo lungo" },
-              2: { cost: 50, description: "-1 indebolimento extra" },
-              3: { cost: 50, description: "+1 punto ispirazione" }
+              1: { cost: 100, description: 'Recuperi tutti i DV nel riposo lungo' },
+              2: { cost: 50, description: '-1 indebolimento extra' },
+              3: { cost: 50, description: '+1 punto ispirazione' }
             }
           }
         }
       },
       {
-        name: "Distilleria",
-        type: "feat",
-        img: "icons/tools/laboratory/alembic-copper-blue.webp",
+        name: 'Distilleria',
+        type: 'feat',
+        img: 'icons/tools/laboratory/alembic-copper-blue.webp',
         system: {
           description: {
-            value: "Alambicchi per distillare intrugli alchemici e bevande."
+            value: 'Alambicchi per distillare intrugli alchemici e bevande.'
           },
           type: {
-            value: "feat",
-            subtype: "granlusso"
+            value: 'feat',
+            subtype: 'granlusso'
           },
           activation: {
-            type: "special",
+            type: 'special',
             cost: null
           },
           level: {
@@ -511,29 +511,29 @@ class BrancaloniaCovoV2 {
         flags: {
           [this.ID]: {
             [this.FLAGS.GRANLUSSO]: true,
-            type: "distilleria",
+            type: 'distilleria',
             benefits: {
-              1: { cost: 100, description: "Acquamorte o Richiamino gratis" },
-              2: { cost: 50, description: "Afrore o Infernet gratis" },
-              3: { cost: 50, description: "Cordiale o Intruglio Forza gratis" }
+              1: { cost: 100, description: 'Acquamorte o Richiamino gratis' },
+              2: { cost: 50, description: 'Afrore o Infernet gratis' },
+              3: { cost: 50, description: 'Cordiale o Intruglio Forza gratis' }
             }
           }
         }
       },
       {
-        name: "Fucina",
-        type: "feat",
-        img: "icons/tools/smithing/anvil.webp",
+        name: 'Fucina',
+        type: 'feat',
+        img: 'icons/tools/smithing/anvil.webp',
         system: {
           description: {
-            value: "Forge per riparare e migliorare equipaggiamento."
+            value: 'Forge per riparare e migliorare equipaggiamento.'
           },
           type: {
-            value: "feat",
-            subtype: "granlusso"
+            value: 'feat',
+            subtype: 'granlusso'
           },
           activation: {
-            type: "special",
+            type: 'special',
             cost: null
           },
           level: {
@@ -544,29 +544,29 @@ class BrancaloniaCovoV2 {
         flags: {
           [this.ID]: {
             [this.FLAGS.GRANLUSSO]: true,
-            type: "fucina",
+            type: 'fucina',
             benefits: {
-              1: { cost: 100, description: "Ripara oggetti metallici" },
-              2: { cost: 50, description: "Sblocca lucchetti non magici" },
-              3: { cost: 50, description: "Equipaggiamento non scadente" }
+              1: { cost: 100, description: 'Ripara oggetti metallici' },
+              2: { cost: 50, description: 'Sblocca lucchetti non magici' },
+              3: { cost: 50, description: 'Equipaggiamento non scadente' }
             }
           }
         }
       },
       {
-        name: "Scuderie",
-        type: "feat",
-        img: "icons/environment/settlement/stable.webp",
+        name: 'Scuderie',
+        type: 'feat',
+        img: 'icons/environment/settlement/stable.webp',
         system: {
           description: {
-            value: "Stalle per cavalcature e veicoli."
+            value: 'Stalle per cavalcature e veicoli.'
           },
           type: {
-            value: "feat",
-            subtype: "granlusso"
+            value: 'feat',
+            subtype: 'granlusso'
           },
           activation: {
-            type: "special",
+            type: 'special',
             cost: null
           },
           level: {
@@ -577,18 +577,18 @@ class BrancaloniaCovoV2 {
         flags: {
           [this.ID]: {
             [this.FLAGS.GRANLUSSO]: true,
-            type: "scuderie",
+            type: 'scuderie',
             benefits: {
-              1: { cost: 100, description: "Pony, asini, muli in prestito" },
-              2: { cost: 50, description: "Cavalli e carri in prestito" },
-              3: { cost: 50, description: "Tutto non scadente" }
+              1: { cost: 100, description: 'Pony, asini, muli in prestito' },
+              2: { cost: 50, description: 'Cavalli e carri in prestito' },
+              3: { cost: 50, description: 'Tutto non scadente' }
             }
           }
         }
       }
     ];
 
-    await covo.createEmbeddedDocuments("Item", granlussi);
+    await covo.createEmbeddedDocuments('Item', granlussi);
   }
 
   /**
@@ -598,7 +598,7 @@ class BrancaloniaCovoV2 {
     const currentLevel = granlusso.system.level?.value || 0;
 
     if (currentLevel >= 3) {
-      ui.notifications.warn("Granlusso già al livello massimo!");
+      ui.notifications.warn('Granlusso già al livello massimo!');
       return;
     }
 
@@ -615,13 +615,13 @@ class BrancaloniaCovoV2 {
 
     // Dialog conferma
     const confirmed = await Dialog.confirm({
-      title: "Conferma Upgrade",
+      title: 'Conferma Upgrade',
       content: `
         <p>Vuoi migliorare <strong>${granlusso.name}</strong> al livello ${nextLevel}?</p>
         <p><strong>Costo:</strong> ${cost} mo</p>
         <p><strong>Beneficio:</strong> ${benefits[nextLevel].description}</p>
         ${game.settings.get(this.ID, 'constructionTimeEnabled') ?
-          `<p><strong>Tempo:</strong> ${nextLevel * 7} giorni</p>` : ''}
+    `<p><strong>Tempo:</strong> ${nextLevel * 7} giorni</p>` : ''}
       `
     });
 
@@ -629,7 +629,7 @@ class BrancaloniaCovoV2 {
 
     // Sottrai fondi
     await covo.update({
-      "system.currency.gp": treasury - cost
+      'system.currency.gp': treasury - cost
     });
 
     // Se tempi costruzione abilitati
@@ -657,7 +657,7 @@ class BrancaloniaCovoV2 {
     } else {
       // Upgrade immediato
       await granlusso.update({
-        "system.level.value": nextLevel
+        'system.level.value': nextLevel
       });
 
       // Applica Active Effect se appropriato
@@ -685,21 +685,21 @@ class BrancaloniaCovoV2 {
     const existingEffects = covo.effects.filter(e =>
       e.getFlag(this.ID, 'granlussoType') === type
     );
-    await covo.deleteEmbeddedDocuments("ActiveEffect", existingEffects.map(e => e.id));
+    await covo.deleteEmbeddedDocuments('ActiveEffect', existingEffects.map(e => e.id));
 
     // Crea nuovi effetti basati sul tipo e livello
     const effectsData = [];
 
-    switch(type) {
+    switch (type) {
       case 'cantina':
         if (level >= 1) {
           effectsData.push({
-            label: "Cantina - Recupero DV Completo",
-            icon: "icons/svg/tankard.svg",
+            label: 'Cantina - Recupero DV Completo',
+            icon: 'icons/svg/tankard.svg',
             changes: [{
-              key: "flags.dnd5e.longRestHDRecovery",
+              key: 'flags.dnd5e.longRestHDRecovery',
               mode: CONST.ACTIVE_EFFECT_MODES.OVERRIDE,
-              value: "all"
+              value: 'all'
             }],
             transfer: true,
             flags: {
@@ -712,10 +712,10 @@ class BrancaloniaCovoV2 {
         }
         if (level >= 2) {
           effectsData.push({
-            label: "Cantina - Recupero Indebolimento",
-            icon: "icons/svg/tankard.svg",
+            label: 'Cantina - Recupero Indebolimento',
+            icon: 'icons/svg/tankard.svg',
             changes: [{
-              key: "flags.dnd5e.longRestExhaustionRecovery",
+              key: 'flags.dnd5e.longRestExhaustionRecovery',
               mode: CONST.ACTIVE_EFFECT_MODES.ADD,
               value: 1
             }],
@@ -733,10 +733,10 @@ class BrancaloniaCovoV2 {
       case 'fucina':
         if (level >= 3) {
           effectsData.push({
-            label: "Fucina - Equipaggiamento Superiore",
-            icon: "icons/tools/smithing/anvil.webp",
+            label: 'Fucina - Equipaggiamento Superiore',
+            icon: 'icons/tools/smithing/anvil.webp',
             changes: [{
-              key: "system.bonuses.mwak.attack",
+              key: 'system.bonuses.mwak.attack',
               mode: CONST.ACTIVE_EFFECT_MODES.ADD,
               value: 1
             }],
@@ -756,7 +756,7 @@ class BrancaloniaCovoV2 {
     }
 
     if (effectsData.length > 0) {
-      await covo.createEmbeddedDocuments("ActiveEffect", effectsData);
+      await covo.createEmbeddedDocuments('ActiveEffect', effectsData);
     }
   }
 
@@ -766,7 +766,7 @@ class BrancaloniaCovoV2 {
   static async createCovoScene(covo) {
     const sceneData = {
       name: `Covo - ${covo.name}`,
-      img: "maps/covo-base.webp", // Placeholder - sostituire con vera mappa
+      img: 'maps/covo-base.webp', // Placeholder - sostituire con vera mappa
       width: 3200,
       height: 2400,
       padding: 0.25,
@@ -806,7 +806,7 @@ class BrancaloniaCovoV2 {
       });
     });
 
-    await scene.createEmbeddedDocuments("Token", tokens);
+    await scene.createEmbeddedDocuments('Token', tokens);
 
     return scene;
   }
@@ -829,26 +829,26 @@ class BrancaloniaCovoV2 {
     // Crea pagine per ogni aspetto del covo
     const pages = [
       {
-        name: "📜 Storia del Covo",
-        type: "text",
+        name: '📜 Storia del Covo',
+        type: 'text',
         text: {
-          format: "html",
+          format: 'html',
           content: `
             <h2>Fondazione</h2>
             <p>Il covo è stato fondato il ${new Date().toLocaleDateString()}.</p>
             <h2>Membri Fondatori</h2>
             <ul>
               ${game.actors.filter(a => a.getFlag(this.ID, 'covoId') === covo.id)
-                .map(m => `<li>${m.name}</li>`).join('')}
+    .map(m => `<li>${m.name}</li>`).join('')}
             </ul>
           `
         }
       },
       {
-        name: "💰 Registro Finanziario",
-        type: "text",
+        name: '💰 Registro Finanziario',
+        type: 'text',
         text: {
-          format: "html",
+          format: 'html',
           content: `
             <h2>Transazioni</h2>
             <table>
@@ -875,10 +875,10 @@ class BrancaloniaCovoV2 {
         }
       },
       {
-        name: "🔨 Progetti di Costruzione",
-        type: "text",
+        name: '🔨 Progetti di Costruzione',
+        type: 'text',
         text: {
-          format: "html",
+          format: 'html',
           content: `
             <h2>Granlussi</h2>
             <p>Nessun progetto in corso.</p>
@@ -887,7 +887,7 @@ class BrancaloniaCovoV2 {
       }
     ];
 
-    await journal.createEmbeddedDocuments("JournalEntryPage", pages);
+    await journal.createEmbeddedDocuments('JournalEntryPage', pages);
 
     return journal;
   }
@@ -918,9 +918,9 @@ class BrancaloniaCovoV2 {
       // Recupera tutti i DV
       const hdMax = actor.system.attributes.hd.max;
       await actor.update({
-        "system.attributes.hd.value": hdMax
+        'system.attributes.hd.value': hdMax
       });
-      benefits.push("Recuperati tutti i Dadi Vita");
+      benefits.push('Recuperati tutti i Dadi Vita');
     }
 
     if (level >= 2) {
@@ -928,18 +928,18 @@ class BrancaloniaCovoV2 {
       const exhaustion = actor.system.attributes.exhaustion || 0;
       if (exhaustion > 0) {
         await actor.update({
-          "system.attributes.exhaustion": Math.max(0, exhaustion - 2)
+          'system.attributes.exhaustion': Math.max(0, exhaustion - 2)
         });
-        benefits.push("Rimossi 2 livelli di indebolimento");
+        benefits.push('Rimossi 2 livelli di indebolimento');
       }
     }
 
     if (level >= 3) {
       // Dai ispirazione
       await actor.update({
-        "system.attributes.inspiration": true
+        'system.attributes.inspiration': true
       });
-      benefits.push("Ottenuta ispirazione");
+      benefits.push('Ottenuta ispirazione');
     }
 
     if (benefits.length > 0) {
@@ -953,7 +953,7 @@ class BrancaloniaCovoV2 {
             </ul>
           </div>
         `,
-        speaker: ChatMessage.getSpeaker({actor})
+        speaker: ChatMessage.getSpeaker({ actor })
       });
     }
   }
@@ -1010,7 +1010,7 @@ class BrancaloniaCovoV2 {
 
     // Aggiorna livello
     await item.update({
-      "system.level.value": targetLevel
+      'system.level.value': targetLevel
     });
 
     // Marca come completato
@@ -1036,7 +1036,7 @@ class BrancaloniaCovoV2 {
           </button>
         </div>
       `,
-      speaker: { alias: "Sistema Covo" }
+      speaker: { alias: 'Sistema Covo' }
     });
 
     // Aggiorna journal
@@ -1059,9 +1059,9 @@ class BrancaloniaCovoV2 {
 
     // Trova o crea la pagina appropriata
     let page;
-    switch(event.type) {
+    switch (event.type) {
       case 'construction':
-        page = journal.pages.find(p => p.name.includes("Progetti"));
+        page = journal.pages.find(p => p.name.includes('Progetti'));
         if (page) {
           const currentContent = page.text.content;
           const newEntry = `
@@ -1071,7 +1071,7 @@ class BrancaloniaCovoV2 {
             </tr>
           `;
           await page.update({
-            "text.content": currentContent.replace('</tbody>', `${newEntry}</tbody>`)
+            'text.content': currentContent.replace('</tbody>', `${newEntry}</tbody>`)
           });
         }
         break;
@@ -1113,10 +1113,10 @@ class BrancaloniaCovoV2 {
     `;
 
     new Dialog({
-      title: "Membri della Compagnia",
+      title: 'Membri della Compagnia',
       content,
       buttons: {
-        close: { label: "Chiudi" }
+        close: { label: 'Chiudi' }
       }
     }, {
       width: 500
@@ -1152,11 +1152,11 @@ class BrancaloniaCovoV2 {
     `;
 
     new Dialog({
-      title: "Gestione Tesoro",
+      title: 'Gestione Tesoro',
       content,
       buttons: {
         confirm: {
-          label: "Conferma",
+          label: 'Conferma',
           callback: async (html) => {
             const operation = html.find('[name="operation"]').val();
             const amount = parseInt(html.find('[name="amount"]').val()) || 0;
@@ -1169,7 +1169,7 @@ class BrancaloniaCovoV2 {
               Math.max(0, treasury - amount);
 
             await covo.update({
-              "system.currency.gp": newAmount
+              'system.currency.gp': newAmount
             });
 
             ChatMessage.create({
@@ -1184,7 +1184,7 @@ class BrancaloniaCovoV2 {
             });
           }
         },
-        cancel: { label: "Annulla" }
+        cancel: { label: 'Annulla' }
       }
     }).render(true);
   }
@@ -1208,10 +1208,10 @@ Hooks.once('ready', () => {
 
     if (oldCovos.length > 0) {
       Dialog.confirm({
-        title: "Migrazione Sistema Covo",
+        title: 'Migrazione Sistema Covo',
         content: `<p>Trovati ${oldCovos.length} covi dal vecchio sistema. Vuoi migrarli al nuovo sistema?</p>`,
         yes: () => BrancaloniaCovoV2.migrateOldCovos(oldCovos),
-        no: () => console.log("Migrazione covi annullata")
+        no: () => console.log('Migrazione covi annullata')
       });
     }
   }

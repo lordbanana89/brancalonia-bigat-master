@@ -12,321 +12,320 @@ class TavernBrawlSystem {
 
     // Livelli di Batoste come da manuale
     this.batosteLevels = [
-      { level: 1, name: "Ammaccato", effect: "-1 CA" },
-      { level: 2, name: "Contuso", effect: "-1 CA" },
-      { level: 3, name: "Livido", effect: "-1 CA" },
-      { level: 4, name: "Pesto", effect: "-1 CA" },
-      { level: 5, name: "Gonfio", effect: "-1 CA" },
-      { level: 6, name: "Incosciente", effect: "Privo di sensi" }
+      { level: 1, name: 'Ammaccato', effect: '-1 CA' },
+      { level: 2, name: 'Contuso', effect: '-1 CA' },
+      { level: 3, name: 'Livido', effect: '-1 CA' },
+      { level: 4, name: 'Pesto', effect: '-1 CA' },
+      { level: 5, name: 'Gonfio', effect: '-1 CA' },
+      { level: 6, name: 'Incosciente', effect: 'Privo di sensi' }
     ];
 
     // Mosse Generiche (dal manuale pag. 54)
     this.mosseGeneriche = {
       buttafuori: {
-        name: "Buttafuori",
-        tipo: "reazione",
+        name: 'Buttafuori',
+        tipo: 'reazione',
         descrizione: "Dopo essere colpito, tiro per colpire (For/Des) che stordisce l'attaccante",
-        execute: async (actor, target) => this._executeMossa(actor, target, "buttafuori")
+        execute: async (actor, target) => this._executeMossa(actor, target, 'buttafuori')
       },
       schianto: {
-        name: "Schianto",
-        tipo: "azione",
-        descrizione: "Tiro (For/Cos): 1 batosta + stordito e prono al bersaglio. Tu subisci 1 batosta",
-        execute: async (actor, target) => this._executeMossa(actor, target, "schianto")
+        name: 'Schianto',
+        tipo: 'azione',
+        descrizione: 'Tiro (For/Cos): 1 batosta + stordito e prono al bersaglio. Tu subisci 1 batosta',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'schianto')
       },
       finta: {
-        name: "Finta",
-        tipo: "azione",
-        descrizione: "Fingi di essere svenuto. Non puoi essere bersagliato finché non attacchi",
-        execute: async (actor) => this._executeMossa(actor, null, "finta")
+        name: 'Finta',
+        tipo: 'azione',
+        descrizione: 'Fingi di essere svenuto. Non puoi essere bersagliato finché non attacchi',
+        execute: async (actor) => this._executeMossa(actor, null, 'finta')
       },
       brodagliaInFaccia: {
-        name: "Brodaglia in Faccia",
-        tipo: "azione bonus",
-        descrizione: "Tiro (Des/Sag) che acceca il bersaglio",
-        execute: async (actor, target) => this._executeMossa(actor, target, "brodagliaInFaccia")
+        name: 'Brodaglia in Faccia',
+        tipo: 'azione bonus',
+        descrizione: 'Tiro (Des/Sag) che acceca il bersaglio',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'brodagliaInFaccia')
       },
       ghigliottina: {
-        name: "Ghigliottina",
-        tipo: "azione",
-        descrizione: "Tiro (For/Des): 1 batosta + prono",
-        execute: async (actor, target) => this._executeMossa(actor, target, "ghigliottina")
+        name: 'Ghigliottina',
+        tipo: 'azione',
+        descrizione: 'Tiro (For/Des): 1 batosta + prono',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'ghigliottina')
       },
       fracassateste: {
-        name: "Fracassateste",
-        tipo: "azione",
-        descrizione: "Tiro (For/Cos): 1 batosta a due bersagli",
-        execute: async (actor, targets) => this._executeMossa(actor, targets, "fracassateste")
+        name: 'Fracassateste',
+        tipo: 'azione',
+        descrizione: 'Tiro (For/Cos): 1 batosta a due bersagli',
+        execute: async (actor, targets) => this._executeMossa(actor, targets, 'fracassateste')
       },
       allaPugna: {
-        name: "Alla Pugna!",
-        tipo: "azione",
-        descrizione: "Tutti gli alleati hanno vantaggio alla prossima mossa/saccagnata",
-        execute: async (actor) => this._executeMossa(actor, null, "allaPugna")
+        name: 'Alla Pugna!',
+        tipo: 'azione',
+        descrizione: 'Tutti gli alleati hanno vantaggio alla prossima mossa/saccagnata',
+        execute: async (actor) => this._executeMossa(actor, null, 'allaPugna')
       },
       sottoIlTavolo: {
-        name: "Sotto il Tavolo",
-        tipo: "azione",
-        descrizione: "Ti metti in copertura: +5 CA e TS Destrezza",
-        execute: async (actor) => this._executeMossa(actor, null, "sottoIlTavolo")
+        name: 'Sotto il Tavolo',
+        tipo: 'azione',
+        descrizione: 'Ti metti in copertura: +5 CA e TS Destrezza',
+        execute: async (actor) => this._executeMossa(actor, null, 'sottoIlTavolo')
       },
       sgambetto: {
-        name: "Sgambetto",
-        tipo: "azione bonus",
-        descrizione: "Tiro (Des/Int) che rende prono il bersaglio",
-        execute: async (actor, target) => this._executeMossa(actor, target, "sgambetto")
+        name: 'Sgambetto',
+        tipo: 'azione bonus',
+        descrizione: 'Tiro (Des/Int) che rende prono il bersaglio',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'sgambetto')
       },
       giuLeBraghe: {
-        name: "Giù le Braghe",
-        tipo: "azione bonus",
-        descrizione: "Tiro (Des/Car) che trattiene il bersaglio",
-        execute: async (actor, target) => this._executeMossa(actor, target, "giuLeBraghe")
+        name: 'Giù le Braghe',
+        tipo: 'azione bonus',
+        descrizione: 'Tiro (Des/Car) che trattiene il bersaglio',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'giuLeBraghe')
       },
       pugnoneInTesta: {
-        name: "Pugnone in Testa",
-        tipo: "azione",
-        descrizione: "Tiro (For/Cos): 1 batosta + incapacitato",
-        execute: async (actor, target) => this._executeMossa(actor, target, "pugnoneInTesta")
+        name: 'Pugnone in Testa',
+        tipo: 'azione',
+        descrizione: 'Tiro (For/Cos): 1 batosta + incapacitato',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'pugnoneInTesta')
       },
       testataDiMattone: {
-        name: "Testata di Mattone",
-        tipo: "reazione",
-        descrizione: "Dopo essere colpito, tiro (For/Cos): 1 batosta",
-        execute: async (actor, target) => this._executeMossa(actor, target, "testataDiMattone")
+        name: 'Testata di Mattone',
+        tipo: 'reazione',
+        descrizione: 'Dopo essere colpito, tiro (For/Cos): 1 batosta',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'testataDiMattone')
       }
     };
 
     // Mosse Magiche (dal manuale pag. 54)
     this.mosseMagiche = {
       protezioneDalMenare: {
-        name: "Protezione dal Menare",
-        tipo: "azione",
-        descrizione: "Un bersaglio subisce svantaggio agli attacchi contro di lui",
-        execute: async (actor, target) => this._executeMossa(actor, target, "protezioneDalMenare")
+        name: 'Protezione dal Menare',
+        tipo: 'azione',
+        descrizione: 'Un bersaglio subisce svantaggio agli attacchi contro di lui',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'protezioneDalMenare')
       },
       spruzzoVenefico: {
-        name: "Spruzzo Venefico",
-        tipo: "azione",
-        descrizione: "Tiro (Int/Sag/Car): 1 batosta + avvelenato",
-        execute: async (actor, target) => this._executeMossa(actor, target, "spruzzoVenefico")
+        name: 'Spruzzo Venefico',
+        tipo: 'azione',
+        descrizione: 'Tiro (Int/Sag/Car): 1 batosta + avvelenato',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'spruzzoVenefico')
       },
       urlaDissennanti: {
-        name: "Urla Dissennanti",
-        tipo: "azione",
-        descrizione: "Una creatura diventa spaventata da te",
-        execute: async (actor, target) => this._executeMossa(actor, target, "urlaDissennanti")
+        name: 'Urla Dissennanti',
+        tipo: 'azione',
+        descrizione: 'Una creatura diventa spaventata da te',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'urlaDissennanti')
       },
       laMagna: {
-        name: "La Magna",
-        tipo: "azione",
-        descrizione: "Una creatura diventa affascinata da te",
-        execute: async (actor, target) => this._executeMossa(actor, target, "laMagna")
+        name: 'La Magna',
+        tipo: 'azione',
+        descrizione: 'Una creatura diventa affascinata da te',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'laMagna')
       },
       sguardoGhiacciante: {
-        name: "Sguardo Ghiacciante",
-        tipo: "azione",
-        descrizione: "Un bersaglio non subisce batoste o condizioni fino al tuo prossimo turno",
-        execute: async (actor, target) => this._executeMossa(actor, target, "sguardoGhiacciante")
+        name: 'Sguardo Ghiacciante',
+        tipo: 'azione',
+        descrizione: 'Un bersaglio non subisce batoste o condizioni fino al tuo prossimo turno',
+        execute: async (actor, target) => this._executeMossa(actor, target, 'sguardoGhiacciante')
       },
       pugnoIncantato: {
-        name: "Pugno Incantato",
-        tipo: "azione",
-        descrizione: "Tre tiri (Int/Sag/Car) a tre bersagli: 1 batosta ciascuno",
-        execute: async (actor, targets) => this._executeMossa(actor, targets, "pugnoIncantato")
+        name: 'Pugno Incantato',
+        tipo: 'azione',
+        descrizione: 'Tre tiri (Int/Sag/Car) a tre bersagli: 1 batosta ciascuno',
+        execute: async (actor, targets) => this._executeMossa(actor, targets, 'pugnoIncantato')
       },
       schiaffoveggenza: {
-        name: "Schiaffoveggenza",
-        tipo: "reazione",
+        name: 'Schiaffoveggenza',
+        tipo: 'reazione',
         descrizione: "Quando attaccato, dai svantaggio all'attaccante",
-        execute: async (actor, attacker) => this._executeMossa(actor, attacker, "schiaffoveggenza")
+        execute: async (actor, attacker) => this._executeMossa(actor, attacker, 'schiaffoveggenza')
       },
       sediataSpiriturale: {
-        name: "Sediata Spirituale",
-        tipo: "azione bonus",
-        descrizione: "Trasforma oggetto di scena comune in epico",
-        execute: async (actor) => this._executeMossa(actor, null, "sediataSpiriturale")
+        name: 'Sediata Spirituale',
+        tipo: 'azione bonus',
+        descrizione: 'Trasforma oggetto di scena comune in epico',
+        execute: async (actor) => this._executeMossa(actor, null, 'sediataSpiriturale')
       }
     };
 
     // Mosse di Classe (dal manuale pag. 54)
     this.mosseClasse = {
       barbaro: {
-        name: "Rissa Furiosa",
-        descrizione: "Per questo turno, mosse e saccagnate infliggono 1 batosta aggiuntiva"
+        name: 'Rissa Furiosa',
+        descrizione: 'Per questo turno, mosse e saccagnate infliggono 1 batosta aggiuntiva'
       },
       bardo: {
-        name: "Ku Fu?",
-        descrizione: "Reazione: quando attaccato, tiro (Car) per far cambiare bersaglio"
+        name: 'Ku Fu?',
+        descrizione: 'Reazione: quando attaccato, tiro (Car) per far cambiare bersaglio'
       },
       chierico: {
-        name: "Osso Sacro",
-        descrizione: "Azione: tiro (Sag): 1 batosta + prono"
+        name: 'Osso Sacro',
+        descrizione: 'Azione: tiro (Sag): 1 batosta + prono'
       },
       druido: {
-        name: "Schiaffo Animale",
-        descrizione: "Azione: tiro (Sag): 1 batosta + spaventato"
+        name: 'Schiaffo Animale',
+        descrizione: 'Azione: tiro (Sag): 1 batosta + spaventato'
       },
       guerriero: {
-        name: "Contrattacco",
-        descrizione: "Reazione: saccagnata contro attaccante con svantaggio"
+        name: 'Contrattacco',
+        descrizione: 'Reazione: saccagnata contro attaccante con svantaggio'
       },
       ladro: {
-        name: "Mossa Furtiva",
-        descrizione: "Azione bonus: prossima mossa/saccagnata +1 batosta e vantaggio"
+        name: 'Mossa Furtiva',
+        descrizione: 'Azione bonus: prossima mossa/saccagnata +1 batosta e vantaggio'
       },
       monaco: {
-        name: "Raffica di Schiaffoni",
-        descrizione: "Azione bonus: due saccagnate"
+        name: 'Raffica di Schiaffoni',
+        descrizione: 'Azione bonus: due saccagnate'
       },
       paladino: {
-        name: "Punizione di Vino",
-        descrizione: "Azione bonus: tiro (For): 1 batosta + accecato"
+        name: 'Punizione di Vino',
+        descrizione: 'Azione bonus: tiro (For): 1 batosta + accecato'
       },
       ranger: {
-        name: "Il Richiamo della Foresta",
-        descrizione: "Azione: lancia esca, bersaglio trattenuto da animale"
+        name: 'Il Richiamo della Foresta',
+        descrizione: 'Azione: lancia esca, bersaglio trattenuto da animale'
       },
       mago: {
-        name: "Saccagnata Arcana!",
-        descrizione: "Spendi slot mossa extra per +1 batosta a mossa magica"
+        name: 'Saccagnata Arcana!',
+        descrizione: 'Spendi slot mossa extra per +1 batosta a mossa magica'
       }
     };
 
     // Assi nella Manica (livello 6, dal manuale pag. 55)
     this.assiNellaManica = {
       barbaro: {
-        name: "Viuuulenza!",
-        descrizione: "Fino al prossimo turno non subisci batoste o condizioni"
+        name: 'Viuuulenza!',
+        descrizione: 'Fino al prossimo turno non subisci batoste o condizioni'
       },
       bardo: {
-        name: "Urlo Straziaugola",
-        descrizione: "TS Costituzione o 1 batosta + incapacitato a tutti"
+        name: 'Urlo Straziaugola',
+        descrizione: 'TS Costituzione o 1 batosta + incapacitato a tutti'
       },
       chierico: {
-        name: "Donna Lama, il tuo servo ti chiama!",
-        descrizione: "Un Pericolo Vagante colpisce tutti i nemici"
+        name: 'Donna Lama, il tuo servo ti chiama!',
+        descrizione: 'Un Pericolo Vagante colpisce tutti i nemici'
       },
       druido: {
-        name: "Nube di Polline",
-        descrizione: "TS Costituzione o 1 batosta + avvelenato a tutti"
+        name: 'Nube di Polline',
+        descrizione: 'TS Costituzione o 1 batosta + avvelenato a tutti'
       },
       guerriero: {
-        name: "Pugno Vorpal",
-        descrizione: "Saccagnata che infligge 3 batoste aggiuntive"
+        name: 'Pugno Vorpal',
+        descrizione: 'Saccagnata che infligge 3 batoste aggiuntive'
       },
       ladro: {
-        name: "Puff... Sparito!",
-        descrizione: "Reazione: eviti attacco e fai saccagnata +1 batosta"
+        name: 'Puff... Sparito!',
+        descrizione: 'Reazione: eviti attacco e fai saccagnata +1 batosta'
       },
       mago: {
-        name: "Palla di Cuoco",
-        descrizione: "TS Destrezza o 2 batoste a tutti"
+        name: 'Palla di Cuoco',
+        descrizione: 'TS Destrezza o 2 batoste a tutti'
       },
       monaco: {
-        name: "Rosario di San Cagnate",
-        descrizione: "Saccagnata +1 batosta, TS Cos o KO immediato"
+        name: 'Rosario di San Cagnate',
+        descrizione: 'Saccagnata +1 batosta, TS Cos o KO immediato'
       },
       paladino: {
-        name: "Evocare Cavalcatura",
-        descrizione: "La cavalcatura fa due saccagnate e se ne va"
+        name: 'Evocare Cavalcatura',
+        descrizione: 'La cavalcatura fa due saccagnate e se ne va'
       },
       ranger: {
-        name: "Trappolone",
-        descrizione: "Reazione al movimento: 2 batoste + trattenuto"
+        name: 'Trappolone',
+        descrizione: 'Reazione al movimento: 2 batoste + trattenuto'
       },
       stregone: {
-        name: "Sfiga Suprema",
-        descrizione: "TS Saggezza o lasci cadere tutto e sei spaventato"
+        name: 'Sfiga Suprema',
+        descrizione: 'TS Saggezza o lasci cadere tutto e sei spaventato'
       },
       warlock: {
-        name: "Tocco del Rimorso",
-        descrizione: "Chi ti colpisce subisce 1 batosta"
+        name: 'Tocco del Rimorso',
+        descrizione: 'Chi ti colpisce subisce 1 batosta'
       }
     };
 
     // Pericoli Vaganti (opzionali, dal manuale pag. 55)
     this.pericoliVaganti = [
       {
-        name: "Pioggia di Sgabelli",
-        effect: "TS Costituzione CD 11 o stordito"
+        name: 'Pioggia di Sgabelli',
+        effect: 'TS Costituzione CD 11 o stordito'
       },
       {
-        name: "La Taverna dei Pugni Volanti",
-        effect: "TS Forza CD 12 o 1 batosta"
+        name: 'La Taverna dei Pugni Volanti',
+        effect: 'TS Forza CD 12 o 1 batosta'
       },
       {
-        name: "Fiume di Birra",
-        effect: "TS Destrezza CD 13 o prono"
+        name: 'Fiume di Birra',
+        effect: 'TS Destrezza CD 13 o prono'
       },
       {
-        name: "Sacco di Farina",
-        effect: "TS Destrezza CD 10 o accecato"
+        name: 'Sacco di Farina',
+        effect: 'TS Destrezza CD 10 o accecato'
       },
       {
-        name: "Se Non è Zuppa",
-        effect: "TS Forza CD 10 o trattenuto"
+        name: 'Se Non è Zuppa',
+        effect: 'TS Forza CD 10 o trattenuto'
       },
       {
-        name: "Cala la Botte",
-        effect: "Tira 1d6, con 1 subisci 1 batosta e prono"
+        name: 'Cala la Botte',
+        effect: 'Tira 1d6, con 1 subisci 1 batosta e prono'
       },
       {
-        name: "Storie di Animali",
-        effect: "1d6 ad ogni attacco, con 1 colpisci animale invece"
+        name: 'Storie di Animali',
+        effect: '1d6 ad ogni attacco, con 1 colpisci animale invece'
       },
       {
-        name: "Piovono Salumi",
-        effect: "Tira 1d6, con 1 subisci 1 batosta e stordito"
+        name: 'Piovono Salumi',
+        effect: 'Tira 1d6, con 1 subisci 1 batosta e stordito'
       }
     ];
 
     // Privilegi da Rissa per livello (dal manuale pag. 53)
     this.privilegiRissa = {
-      1: { mosse: ["generica", "classe"], slotMossa: 2 },
+      1: { mosse: ['generica', 'classe'], slotMossa: 2 },
       2: { ignoranzaEroica: true, slotMossa: 2 },
-      3: { mosse: ["generica"], slotMossa: 3 },
+      3: { mosse: ['generica'], slotMossa: 3 },
       4: { mascellaDiFerro: true, slotMossa: 3 },
-      5: { mosse: ["generica"], slotMossa: 4 },
+      5: { mosse: ['generica'], slotMossa: 4 },
       6: { assoNellaManica: true, slotMossa: 4 }
     };
-
   }
 
   static initialize() {
-    console.log("Inizializzazione TavernBrawlSystem...");
+    console.log('Inizializzazione TavernBrawlSystem...');
 
     // Registrazione settings
-    game.settings.register("brancalonia-bigat", "brawlSystemEnabled", {
-      name: "Sistema Risse Attivo",
-      hint: "Abilita il sistema completo di risse da taverna",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'brawlSystemEnabled', {
+      name: 'Sistema Risse Attivo',
+      hint: 'Abilita il sistema completo di risse da taverna',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "brawlPericoliVaganti", {
-      name: "Pericoli Vaganti per Default",
-      hint: "Attiva automaticamente i pericoli vaganti nelle risse",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'brawlPericoliVaganti', {
+      name: 'Pericoli Vaganti per Default',
+      hint: 'Attiva automaticamente i pericoli vaganti nelle risse',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: false
     });
 
-    game.settings.register("brancalonia-bigat", "brawlAutoMacros", {
-      name: "Macro Automatiche",
-      hint: "Crea automaticamente le macro per le azioni di rissa",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'brawlAutoMacros', {
+      name: 'Macro Automatiche',
+      hint: 'Crea automaticamente le macro per le azioni di rissa',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "brawlVisualEffects", {
-      name: "Effetti Visivi",
-      hint: "Mostra effetti visivi durante le risse",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'brawlVisualEffects', {
+      name: 'Effetti Visivi',
+      hint: 'Mostra effetti visivi durante le risse',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
@@ -344,23 +343,23 @@ class TavernBrawlSystem {
     // Creazione macro automatica
     TavernBrawlSystem._createMacro();
 
-    console.log("TavernBrawlSystem inizializzato correttamente!");
+    console.log('TavernBrawlSystem inizializzato correttamente!');
   }
 
   static _registerHooks() {
     // Hook per modificare il combattimento quando è una rissa
-    Hooks.on("combatStart", (combat, options) => {
-      if (!game.settings.get("brancalonia-bigat", "brawlSystemEnabled")) return;
+    Hooks.on('combatStart', (combat, options) => {
+      if (!game.settings.get('brancalonia-bigat', 'brawlSystemEnabled')) return;
 
-      if (combat.getFlag("brancalonia-bigat", "isBrawl")) {
+      if (combat.getFlag('brancalonia-bigat', 'isBrawl')) {
         window.TavernBrawlSystem.activeBrawl = true;
         window.TavernBrawlSystem.brawlCombat = combat;
-        ui.notifications.info("Modalità Rissa Attivata!");
+        ui.notifications.info('Modalità Rissa Attivata!');
       }
     });
 
-    Hooks.on("combatTurn", (combat, updateData, updateOptions) => {
-      if (!game.settings.get("brancalonia-bigat", "brawlSystemEnabled")) return;
+    Hooks.on('combatTurn', (combat, updateData, updateOptions) => {
+      if (!game.settings.get('brancalonia-bigat', 'brawlSystemEnabled')) return;
 
       if (window.TavernBrawlSystem.activeBrawl && combat.id === window.TavernBrawlSystem.brawlCombat?.id) {
         // Mostra azioni disponibili per il turno
@@ -368,8 +367,8 @@ class TavernBrawlSystem {
       }
     });
 
-    Hooks.on("combatEnd", (combat) => {
-      if (!game.settings.get("brancalonia-bigat", "brawlSystemEnabled")) return;
+    Hooks.on('combatEnd', (combat) => {
+      if (!game.settings.get('brancalonia-bigat', 'brawlSystemEnabled')) return;
 
       if (combat.id === window.TavernBrawlSystem.brawlCombat?.id) {
         window.TavernBrawlSystem.endBrawl();
@@ -377,32 +376,32 @@ class TavernBrawlSystem {
     });
 
     // Hook per aggiungere pulsante rissa alle schede personaggio
-    Hooks.on("renderActorSheet", (app, html, data) => {
-      if (app.actor.type !== "character" || !game.user.isGM) return;
-      if (!game.settings.get("brancalonia-bigat", "brawlSystemEnabled")) return;
+    Hooks.on('renderActorSheet', (app, html, data) => {
+      if (app.actor.type !== 'character' || !game.user.isGM) return;
+      if (!game.settings.get('brancalonia-bigat', 'brawlSystemEnabled')) return;
 
       const button = $(`<button class="brawl-manager-btn" title="Inizia Rissa">
         <i class="fas fa-fist-raised"></i>
       </button>`);
-      html.find(".window-header .window-title").after(button);
+      html.find('.window-header .window-title').after(button);
       button.click(() => {
         window.TavernBrawlSystem.startBrawl();
       });
     });
 
-    console.log("TavernBrawlSystem hooks registrati!");
+    console.log('TavernBrawlSystem hooks registrati!');
   }
 
   static _registerChatCommands() {
     // Comando per iniziare rissa
     game.chatCommands.register({
-      name: "/rissa",
-      module: "brancalonia-bigat",
-      description: "Inizia una rissa con i token selezionati",
+      name: '/rissa',
+      module: 'brancalonia-bigat',
+      description: 'Inizia una rissa con i token selezionati',
       icon: "<i class='fas fa-fist-raised'></i>",
       callback: async (chat, parameters, messageData) => {
         if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può iniziare una rissa!");
+          ui.notifications.error('Solo il GM può iniziare una rissa!');
           return;
         }
         await window.TavernBrawlSystem.startBrawl();
@@ -411,21 +410,21 @@ class TavernBrawlSystem {
 
     // Comando per saccagnata
     game.chatCommands.register({
-      name: "/saccagnata",
-      module: "brancalonia-bigat",
-      description: "Esegue una saccagnata contro il bersaglio",
+      name: '/saccagnata',
+      module: 'brancalonia-bigat',
+      description: 'Esegue una saccagnata contro il bersaglio',
       icon: "<i class='fas fa-fist-raised'></i>",
       callback: async (chat, parameters, messageData) => {
         const tokens = canvas.tokens.controlled;
         const targets = game.user.targets;
 
         if (tokens.length !== 1) {
-          ui.notifications.error("Seleziona un solo token attaccante!");
+          ui.notifications.error('Seleziona un solo token attaccante!');
           return;
         }
 
         if (targets.size !== 1) {
-          ui.notifications.error("Seleziona un solo bersaglio!");
+          ui.notifications.error('Seleziona un solo bersaglio!');
           return;
         }
 
@@ -438,20 +437,20 @@ class TavernBrawlSystem {
 
     // Comando per raccogliere oggetto
     game.chatCommands.register({
-      name: "/raccogli-oggetto",
-      module: "brancalonia-bigat",
-      description: "Raccoglie un oggetto di scena",
+      name: '/raccogli-oggetto',
+      module: 'brancalonia-bigat',
+      description: 'Raccoglie un oggetto di scena',
       icon: "<i class='fas fa-hand-paper'></i>",
       callback: async (chat, parameters, messageData) => {
         const tokens = canvas.tokens.controlled;
         if (tokens.length !== 1) {
-          ui.notifications.error("Seleziona un solo token!");
+          ui.notifications.error('Seleziona un solo token!');
           return;
         }
 
-        const tipo = parameters || "comune";
-        if (!["comune", "epico"].includes(tipo)) {
-          ui.notifications.error("Tipo non valido! Usa: comune o epico");
+        const tipo = parameters || 'comune';
+        if (!['comune', 'epico'].includes(tipo)) {
+          ui.notifications.error('Tipo non valido! Usa: comune o epico');
           return;
         }
 
@@ -461,13 +460,13 @@ class TavernBrawlSystem {
 
     // Comando per attivare pericolo vagante
     game.chatCommands.register({
-      name: "/pericolo-vagante",
-      module: "brancalonia-bigat",
-      description: "Attiva un pericolo vagante casuale",
+      name: '/pericolo-vagante',
+      module: 'brancalonia-bigat',
+      description: 'Attiva un pericolo vagante casuale',
       icon: "<i class='fas fa-exclamation-triangle'></i>",
       callback: async (chat, parameters, messageData) => {
         if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può attivare pericoli vaganti!");
+          ui.notifications.error('Solo il GM può attivare pericoli vaganti!');
           return;
         }
         await window.TavernBrawlSystem.activatePericoloVagante();
@@ -476,13 +475,13 @@ class TavernBrawlSystem {
 
     // Comando per terminare rissa
     game.chatCommands.register({
-      name: "/fine-rissa",
-      module: "brancalonia-bigat",
-      description: "Termina la rissa corrente",
+      name: '/fine-rissa',
+      module: 'brancalonia-bigat',
+      description: 'Termina la rissa corrente',
       icon: "<i class='fas fa-stop'></i>",
       callback: async (chat, parameters, messageData) => {
         if (!game.user.isGM) {
-          ui.notifications.error("Solo il GM può terminare una rissa!");
+          ui.notifications.error('Solo il GM può terminare una rissa!');
           return;
         }
         await window.TavernBrawlSystem.endBrawl();
@@ -491,8 +490,8 @@ class TavernBrawlSystem {
 
     // Comando help
     game.chatCommands.register({
-      name: "/rissa-help",
-      module: "brancalonia-bigat",
+      name: '/rissa-help',
+      module: 'brancalonia-bigat',
       description: "Mostra l'aiuto per i comandi rissa",
       icon: "<i class='fas fa-question-circle'></i>",
       callback: (chat, parameters, messageData) => {
@@ -519,20 +518,20 @@ class TavernBrawlSystem {
 
         ChatMessage.create({
           content: helpText,
-          speaker: { alias: "Sistema Risse" },
+          speaker: { alias: 'Sistema Risse' },
           whisper: [game.user.id]
         });
       }
     });
 
-    console.log("TavernBrawlSystem comandi chat registrati!");
+    console.log('TavernBrawlSystem comandi chat registrati!');
   }
 
   static _createMacro() {
     const macroData = {
-      name: "Gestione Risse",
-      type: "script",
-      scope: "global",
+      name: 'Gestione Risse',
+      type: 'script',
+      scope: 'global',
       command: `
 // Macro per Gestione Risse
 if (!game.user.isGM) {
@@ -614,26 +613,26 @@ if (!game.user.isGM) {
   }
 }
       `,
-      img: "icons/skills/melee/unarmed-punch-fist.webp",
+      img: 'icons/skills/melee/unarmed-punch-fist.webp',
       flags: {
-        "brancalonia-bigat": {
+        'brancalonia-bigat': {
           isSystemMacro: true,
-          version: "1.0"
+          version: '1.0'
         }
       }
     };
 
     // Verifica se la macro esiste già
-    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags["brancalonia-bigat"]?.isSystemMacro);
+    const existingMacro = game.macros.find(m => m.name === macroData.name && m.flags['brancalonia-bigat']?.isSystemMacro);
 
     if (!existingMacro) {
       Macro.create(macroData).then(() => {
-        console.log("Macro Gestione Risse creata!");
+        console.log('Macro Gestione Risse creata!');
       });
     }
 
     // Crea macro aggiuntive se richiesto
-    if (game.settings.get("brancalonia-bigat", "brawlAutoMacros")) {
+    if (game.settings.get('brancalonia-bigat', 'brawlAutoMacros')) {
       TavernBrawlSystem._createAdditionalMacros();
     }
   }
@@ -641,9 +640,9 @@ if (!game.user.isGM) {
   static _createAdditionalMacros() {
     const additionalMacros = [
       {
-        name: "Saccagnata",
-        type: "script",
-        img: "icons/skills/melee/punch-fist-white.webp",
+        name: 'Saccagnata',
+        type: 'script',
+        img: 'icons/skills/melee/punch-fist-white.webp',
         command: `
 const tokens = canvas.tokens.controlled;
 const targets = game.user.targets;
@@ -660,9 +659,9 @@ if (tokens.length !== 1) {
         `
       },
       {
-        name: "Raccogliere Oggetto",
-        type: "script",
-        img: "icons/environment/furniture/chair-wooden.webp",
+        name: 'Raccogliere Oggetto',
+        type: 'script',
+        img: 'icons/environment/furniture/chair-wooden.webp',
         command: `
 const tokens = canvas.tokens.controlled;
 if (tokens.length !== 1) {
@@ -705,10 +704,16 @@ if (tokens.length !== 1) {
       return;
     }
 
+    // Chiama hook per background-privileges (Attaccabrighe)
+    const participants = canvas.tokens.controlled.map(t => t.actor).filter(a => a);
+    for (const actor of participants) {
+      Hooks.callAll('brancalonia.brawlStart', actor);
+    }
+
     // Seleziona i partecipanti
     const tokens = canvas.tokens.controlled;
     if (tokens.length === 0) {
-      ui.notifications.warn("Seleziona i token che parteciperanno alla rissa!");
+      ui.notifications.warn('Seleziona i token che parteciperanno alla rissa!');
       return;
     }
 
@@ -726,7 +731,7 @@ if (tokens.length !== 1) {
 
     // Aggiungi i combattenti
     for (const token of tokens) {
-      await combat.createEmbeddedDocuments("Combatant", [{
+      await combat.createEmbeddedDocuments('Combatant', [{
         tokenId: token.id,
         actorId: token.actor.id,
         initiative: null
@@ -766,10 +771,10 @@ if (tokens.length !== 1) {
             <li><strong>KO:</strong> A 6 batoste sei incosciente</li>
           </ul>
           <hr>
-          <p><strong>Partecipanti:</strong> ${tokens.map(t => t.actor.name).join(", ")}</p>
+          <p><strong>Partecipanti:</strong> ${tokens.map(t => t.actor.name).join(', ')}</p>
         </div>
       `,
-      speaker: { alias: "Sistema Rissa" }
+      speaker: { alias: 'Sistema Rissa' }
     });
 
     // Chiedi se aggiungere Pericoli Vaganti
@@ -801,14 +806,14 @@ if (tokens.length !== 1) {
           <li><strong>Saccagnata:</strong> Attacco base (For + comp), 1 batosta</li>
           <li><strong>Raccogliere Oggetto:</strong> Comune (bonus) o Epico (azione)</li>
           ${participantData.slotMossaUsati < participantData.slotMossaMax ?
-            `<li><strong>Usare Mossa:</strong> ${participantData.mosse.map(m => m.name).join(", ")}</li>` : ''}
+    `<li><strong>Usare Mossa:</strong> ${participantData.mosse.map(m => m.name).join(', ')}</li>` : ''}
           ${actor.system.details.level >= 6 ? '<li><strong>Asso nella Manica:</strong> 1 volta per rissa</li>' : ''}
         </ul>
       </div>
     `;
 
     await ChatMessage.create({
-      content: content,
+      content,
       speaker: ChatMessage.getSpeaker({ actor })
     });
   }
@@ -827,7 +832,7 @@ if (tokens.length !== 1) {
 
     await attackRoll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor }),
-      flavor: "Saccagnata!"
+      flavor: 'Saccagnata!'
     });
 
     if (attackRoll.total >= target.actor.system.attributes.ac.value) {
@@ -855,7 +860,7 @@ if (tokens.length !== 1) {
 
     // Verifica slot mossa
     if (participantData.slotMossaUsati >= participantData.slotMossaMax) {
-      ui.notifications.warn("Non hai più slot mossa disponibili!");
+      ui.notifications.warn('Non hai più slot mossa disponibili!');
       return;
     }
 
@@ -888,17 +893,17 @@ if (tokens.length !== 1) {
       await existingEffect.update({
         name: this.batosteLevels[participantData.batoste - 1].name,
         changes: [{
-          key: "system.attributes.ac.bonus",
+          key: 'system.attributes.ac.bonus',
           mode: CONST.ACTIVE_EFFECT_MODES.ADD,
           value: -caReduction
         }]
       });
     } else {
-      await actor.createEmbeddedDocuments("ActiveEffect", [{
+      await actor.createEmbeddedDocuments('ActiveEffect', [{
         name: this.batosteLevels[participantData.batoste - 1].name,
-        img: "icons/skills/wounds/injury-pain-body-orange.webp",
+        img: 'icons/skills/wounds/injury-pain-body-orange.webp',
         changes: [{
-          key: "system.attributes.ac.bonus",
+          key: 'system.attributes.ac.bonus',
           mode: CONST.ACTIVE_EFFECT_MODES.ADD,
           value: -caReduction
         }],
@@ -915,14 +920,14 @@ if (tokens.length !== 1) {
     if (participantData.batoste >= 6) {
       await ChatMessage.create({
         content: `<h3 style="color: red;">${actor.name} è INCOSCIENTE!</h3>`,
-        speaker: { alias: "Sistema Rissa" }
+        speaker: { alias: 'Sistema Rissa' }
       });
 
       // Applica condizione incosciente
-      await actor.createEmbeddedDocuments("ActiveEffect", [{
-        name: "Incosciente (Rissa)",
-        img: "icons/svg/unconscious.svg",
-        statuses: ["unconscious"],
+      await actor.createEmbeddedDocuments('ActiveEffect', [{
+        name: 'Incosciente (Rissa)',
+        img: 'icons/svg/unconscious.svg',
+        statuses: ['unconscious'],
         flags: { brancalonia: { brawlKO: true } }
       }]);
     }
@@ -931,25 +936,25 @@ if (tokens.length !== 1) {
   /**
    * Raccoglie un oggetto di scena
    */
-  async pickUpProp(actor, tipo = "comune") {
+  async pickUpProp(actor, tipo = 'comune') {
     const participantData = this.brawlParticipants.get(actor.id);
     if (!participantData) return;
 
     const oggettiComuni = [
-      "Bottiglia", "Brocca", "Posate", "Zappa", "Candelabro",
-      "Torcia", "Fiasco", "Sgabello", "Attizzatoio"
+      'Bottiglia', 'Brocca', 'Posate', 'Zappa', 'Candelabro',
+      'Torcia', 'Fiasco', 'Sgabello', 'Attizzatoio'
     ];
 
     const oggettiEpici = [
-      "Tavolo", "Botte", "Armatura d'arredo", "Cassapanca",
-      "Baule", "Lampadario", "Un altro personaggio!"
+      'Tavolo', 'Botte', "Armatura d'arredo", 'Cassapanca',
+      'Baule', 'Lampadario', 'Un altro personaggio!'
     ];
 
-    const oggetto = tipo === "comune" ?
+    const oggetto = tipo === 'comune' ?
       oggettiComuni[Math.floor(Math.random() * oggettiComuni.length)] :
       oggettiEpici[Math.floor(Math.random() * oggettiEpici.length)];
 
-    participantData.oggettoScena = { nome: oggetto, tipo: tipo };
+    participantData.oggettoScena = { nome: oggetto, tipo };
 
     await ChatMessage.create({
       content: `<p><strong>${actor.name}</strong> afferra ${oggetto}!</p>`,
@@ -963,39 +968,39 @@ if (tokens.length !== 1) {
   async useProp(actor, mode) {
     const participantData = this.brawlParticipants.get(actor.id);
     if (!participantData?.oggettoScena) {
-      ui.notifications.warn("Non hai oggetti di scena in mano!");
+      ui.notifications.warn('Non hai oggetti di scena in mano!');
       return;
     }
 
     const prop = participantData.oggettoScena;
     let message = `<p><strong>${actor.name}</strong> usa ${prop.nome} `;
 
-    if (prop.tipo === "comune") {
-      switch(mode) {
-        case "attack":
-          message += "per attaccare con +1d4 al tiro!</p>";
+    if (prop.tipo === 'comune') {
+      switch (mode) {
+        case 'attack':
+          message += 'per attaccare con +1d4 al tiro!</p>';
           // Aggiungi bonus al prossimo attacco
           break;
-        case "bonus":
-          message += "come azione bonus per una saccagnata veloce!</p>";
+        case 'bonus':
+          message += 'come azione bonus per una saccagnata veloce!</p>';
           break;
-        case "defense":
-          message += "per difendersi (+2 CA)!</p>";
+        case 'defense':
+          message += 'per difendersi (+2 CA)!</p>';
           break;
       }
     } else { // epico
-      switch(mode) {
-        case "damage":
-          message += "infliggendo 1 batosta aggiuntiva!</p>";
+      switch (mode) {
+        case 'damage':
+          message += 'infliggendo 1 batosta aggiuntiva!</p>';
           break;
-        case "stun":
-          message += "stordendo il bersaglio!</p>";
+        case 'stun':
+          message += 'stordendo il bersaglio!</p>';
           break;
-        case "area":
-          message += "colpendo due bersagli!</p>";
+        case 'area':
+          message += 'colpendo due bersagli!</p>';
           break;
-        case "defense":
-          message += "per una difesa epica (+5 CA)!</p>";
+        case 'defense':
+          message += 'per una difesa epica (+5 CA)!</p>';
           break;
       }
     }
@@ -1013,8 +1018,8 @@ if (tokens.length !== 1) {
    * Ottiene lo stato delle batoste
    */
   _getBatostaStatus(level) {
-    if (level === 0) return "";
-    if (level >= 6) return "(INCOSCIENTE)";
+    if (level === 0) return '';
+    if (level >= 6) return '(INCOSCIENTE)';
     return `(${this.batosteLevels[level - 1].name})`;
   }
 
@@ -1040,7 +1045,7 @@ if (tokens.length !== 1) {
   async _getMosseDisponibili(actor) {
     const mosse = [];
     const level = actor.system.details.level || 1;
-    const classe = actor.system.details.class?.toLowerCase() || "";
+    const classe = actor.system.details.class?.toLowerCase() || '';
 
     // Mossa di classe al livello 1
     if (level >= 1 && this.mosseClasse[classe]) {
@@ -1069,7 +1074,7 @@ if (tokens.length !== 1) {
   async _askForPericoliVaganti() {
     return new Promise(resolve => {
       new Dialog({
-        title: "Pericoli Vaganti",
+        title: 'Pericoli Vaganti',
         content: `
           <p>Vuoi aggiungere dei Pericoli Vaganti alla rissa?</p>
           <p style="font-size: 0.9em; font-style: italic;">
@@ -1078,15 +1083,15 @@ if (tokens.length !== 1) {
         `,
         buttons: {
           yes: {
-            label: "Sì, aggiungi pericoli!",
+            label: 'Sì, aggiungi pericoli!',
             callback: () => resolve(true)
           },
           no: {
-            label: "No, rissa normale",
+            label: 'No, rissa normale',
             callback: () => resolve(false)
           }
         },
-        default: "no"
+        default: 'no'
       }).render(true);
     });
   }
@@ -1103,7 +1108,7 @@ if (tokens.length !== 1) {
       pericoli.push(pericolo);
     }
 
-    await combat.setFlag("brancalonia-bigat", "pericoliVaganti", pericoli);
+    await combat.setFlag('brancalonia-bigat', 'pericoliVaganti', pericoli);
 
     await ChatMessage.create({
       content: `
@@ -1114,7 +1119,7 @@ if (tokens.length !== 1) {
           </ul>
         </div>
       `,
-      speaker: { alias: "Sistema Rissa" }
+      speaker: { alias: 'Sistema Rissa' }
     });
   }
 
@@ -1124,7 +1129,7 @@ if (tokens.length !== 1) {
   async activatePericoloVagante() {
     if (!this.brawlCombat) return;
 
-    const pericoli = this.brawlCombat.getFlag("brancalonia-bigat", "pericoliVaganti");
+    const pericoli = this.brawlCombat.getFlag('brancalonia-bigat', 'pericoliVaganti');
     if (!pericoli || pericoli.length === 0) return;
 
     const pericolo = pericoli[Math.floor(Math.random() * pericoli.length)];
@@ -1138,7 +1143,7 @@ if (tokens.length !== 1) {
           <p style="font-style: italic;">Tutti i partecipanti devono fare il tiro indicato!</p>
         </div>
       `,
-      speaker: { alias: "Pericolo!" }
+      speaker: { alias: 'Pericolo!' }
     });
   }
 
@@ -1200,7 +1205,7 @@ if (tokens.length !== 1) {
           </ol>
         </div>
       `,
-      speaker: { alias: "Sistema Rissa" }
+      speaker: { alias: 'Sistema Rissa' }
     });
 
     // Reset
@@ -1208,5 +1213,4 @@ if (tokens.length !== 1) {
     this.brawlCombat = null;
     this.brawlParticipants.clear();
   }
-
 }

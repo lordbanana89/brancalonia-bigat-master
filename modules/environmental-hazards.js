@@ -9,338 +9,338 @@ class EnvironmentalHazardsSystem {
     // Database completo degli hazard di Brancalonia
     this.hazards = {
       // HAZARD NATURALI
-      "palude_malsana": {
-        name: "Palude Malsana",
-        type: "naturale",
-        img: "icons/magic/nature/root-vine-fire-entangle-green.webp",
+      palude_malsana: {
+        name: 'Palude Malsana',
+        type: 'naturale',
+        img: 'icons/magic/nature/root-vine-fire-entangle-green.webp',
         dc: 12,
-        trigger: "Attraversamento",
+        trigger: 'Attraversamento',
         effect: {
-          immediate: "Movimento dimezzato, TS Costituzione CD 12 o avvelenato per 1 ora",
-          ongoing: "Ogni ora: TS Costituzione CD 12 o 1 livello sfinimento",
+          immediate: 'Movimento dimezzato, TS Costituzione CD 12 o avvelenato per 1 ora',
+          ongoing: 'Ogni ora: TS Costituzione CD 12 o 1 livello sfinimento',
           damage: null,
-          condition: "difficult-terrain"
+          condition: 'difficult-terrain'
         },
-        detection: { passive: 13, active: "Sopravvivenza CD 10" },
-        avoidance: "Percorso alternativo (+2 ore viaggio) o equipaggiamento speciale",
-        description: "Acqua stagnante e miasmi velenosi rendono il passaggio pericoloso"
+        detection: { passive: 13, active: 'Sopravvivenza CD 10' },
+        avoidance: 'Percorso alternativo (+2 ore viaggio) o equipaggiamento speciale',
+        description: 'Acqua stagnante e miasmi velenosi rendono il passaggio pericoloso'
       },
 
-      "sabbie_mobili": {
-        name: "Sabbie Mobili",
-        type: "naturale",
-        img: "icons/magic/earth/projectiles-stone-salvo.webp",
+      sabbie_mobili: {
+        name: 'Sabbie Mobili',
+        type: 'naturale',
+        img: 'icons/magic/earth/projectiles-stone-salvo.webp',
         dc: 14,
         trigger: "Movimento nell'area",
         effect: {
-          immediate: "TS Destrezza CD 14 o intrappolato",
-          ongoing: "Affonda 1 piede/round, a 5 piedi soffoca in 1d4+1 round",
+          immediate: 'TS Destrezza CD 14 o intrappolato',
+          ongoing: 'Affonda 1 piede/round, a 5 piedi soffoca in 1d4+1 round',
           damage: null,
-          condition: "restrained"
+          condition: 'restrained'
         },
-        detection: { passive: 15, active: "Percezione CD 12" },
-        avoidance: "Corda e TS Atletica CD 12 per uscire",
-        escape: "Forza CD 15 (con aiuto CD 10)",
-        description: "Terreno traditore che ingoia i malcapitati"
+        detection: { passive: 15, active: 'Percezione CD 12' },
+        avoidance: 'Corda e TS Atletica CD 12 per uscire',
+        escape: 'Forza CD 15 (con aiuto CD 10)',
+        description: 'Terreno traditore che ingoia i malcapitati'
       },
 
-      "nebbia_velenosa": {
-        name: "Nebbia Velenosa delle Paludi",
-        type: "naturale",
-        img: "icons/magic/air/fog-gas-smoke-swirling-green.webp",
+      nebbia_velenosa: {
+        name: 'Nebbia Velenosa delle Paludi',
+        type: 'naturale',
+        img: 'icons/magic/air/fog-gas-smoke-swirling-green.webp',
         dc: 13,
         trigger: "Inizio turno nell'area",
         effect: {
-          immediate: "TS Costituzione CD 13 o 2d4 danni veleno",
-          ongoing: "Visibilità 5 piedi, svantaggio Percezione",
-          damage: "2d4",
-          damageType: "poison",
-          condition: "heavily-obscured"
+          immediate: 'TS Costituzione CD 13 o 2d4 danni veleno',
+          ongoing: 'Visibilità 5 piedi, svantaggio Percezione',
+          damage: '2d4',
+          damageType: 'poison',
+          condition: 'heavily-obscured'
         },
-        detection: { passive: 10, active: "Natura CD 12" },
-        avoidance: "Maschera o panno bagnato (vantaggio al TS)",
-        duration: "2d6 ore o vento forte",
-        description: "Miasmi tossici che si alzano dalle paludi al tramonto"
+        detection: { passive: 10, active: 'Natura CD 12' },
+        avoidance: 'Maschera o panno bagnato (vantaggio al TS)',
+        duration: '2d6 ore o vento forte',
+        description: 'Miasmi tossici che si alzano dalle paludi al tramonto'
       },
 
-      "frana": {
-        name: "Frana Improvvisa",
-        type: "naturale",
-        img: "icons/magic/earth/boulder-stone-impact-gray.webp",
+      frana: {
+        name: 'Frana Improvvisa',
+        type: 'naturale',
+        img: 'icons/magic/earth/boulder-stone-impact-gray.webp',
         dc: 15,
-        trigger: "Rumore forte o vibrazione",
+        trigger: 'Rumore forte o vibrazione',
         effect: {
-          immediate: "TS Destrezza CD 15 o 4d10 danni contundenti",
-          ongoing: "Sepolto: 1d6 danni/minuto per soffocamento",
-          damage: "4d10",
-          damageType: "bludgeoning",
-          condition: "restrained"
+          immediate: 'TS Destrezza CD 15 o 4d10 danni contundenti',
+          ongoing: 'Sepolto: 1d6 danni/minuto per soffocamento',
+          damage: '4d10',
+          damageType: 'bludgeoning',
+          condition: 'restrained'
         },
-        detection: { passive: 14, active: "Percezione CD 12 per crepe" },
-        avoidance: "Muoversi silenziosamente (Furtività CD 13)",
-        escape: "Forza CD 20 o scavare (1 ora)",
-        description: "Rocce instabili pronte a crollare"
+        detection: { passive: 14, active: 'Percezione CD 12 per crepe' },
+        avoidance: 'Muoversi silenziosamente (Furtività CD 13)',
+        escape: 'Forza CD 20 o scavare (1 ora)',
+        description: 'Rocce instabili pronte a crollare'
       },
 
-      "ghiaccio_sottile": {
-        name: "Ghiaccio Sottile",
-        type: "naturale",
-        img: "icons/magic/water/barrier-ice-crystal-wall-jagged-blue.webp",
+      ghiaccio_sottile: {
+        name: 'Ghiaccio Sottile',
+        type: 'naturale',
+        img: 'icons/magic/water/barrier-ice-crystal-wall-jagged-blue.webp',
         dc: 12,
-        trigger: "Peso superiore a 100 kg",
+        trigger: 'Peso superiore a 100 kg',
         effect: {
-          immediate: "TS Destrezza CD 12 o cade in acqua gelida",
-          ongoing: "1d4 danni freddo/round, sfinimento dopo 1 minuto",
-          damage: "1d4",
-          damageType: "cold",
-          condition: "exhaustion"
+          immediate: 'TS Destrezza CD 12 o cade in acqua gelida',
+          ongoing: '1d4 danni freddo/round, sfinimento dopo 1 minuto',
+          damage: '1d4',
+          damageType: 'cold',
+          condition: 'exhaustion'
         },
-        detection: { passive: 11, active: "Sopravvivenza CD 10" },
-        avoidance: "Distribuire peso o percorso alternativo",
-        escape: "Atletica CD 13 per uscire",
-        description: "Superficie ghiacciata pronta a rompersi"
+        detection: { passive: 11, active: 'Sopravvivenza CD 10' },
+        avoidance: 'Distribuire peso o percorso alternativo',
+        escape: 'Atletica CD 13 per uscire',
+        description: 'Superficie ghiacciata pronta a rompersi'
       },
 
-      "tempesta_improvvisa": {
-        name: "Tempesta del Menagramo",
-        type: "naturale",
-        img: "icons/magic/lightning/bolt-strike-clouds-blue.webp",
+      tempesta_improvvisa: {
+        name: 'Tempesta del Menagramo',
+        type: 'naturale',
+        img: 'icons/magic/lightning/bolt-strike-clouds-blue.webp',
         dc: 14,
-        trigger: "Casuale (10% ogni ora di viaggio)",
+        trigger: 'Casuale (10% ogni ora di viaggio)',
         effect: {
-          immediate: "Venti forti: svantaggio attacchi a distanza",
-          ongoing: "Ogni 10 minuti: 10% di fulmine (8d6 danni elettrici)",
-          damage: "8d6",
-          damageType: "lightning",
-          condition: "difficult-travel"
+          immediate: 'Venti forti: svantaggio attacchi a distanza',
+          ongoing: 'Ogni 10 minuti: 10% di fulmine (8d6 danni elettrici)',
+          damage: '8d6',
+          damageType: 'lightning',
+          condition: 'difficult-travel'
         },
-        detection: { passive: null, active: "Sopravvivenza CD 15 prevede 1 ora prima" },
-        avoidance: "Riparo solido",
-        duration: "2d4 ore",
-        description: "Tempesta violenta con fulmini e grandine"
+        detection: { passive: null, active: 'Sopravvivenza CD 15 prevede 1 ora prima' },
+        avoidance: 'Riparo solido',
+        duration: '2d4 ore',
+        description: 'Tempesta violenta con fulmini e grandine'
       },
 
       // HAZARD URBANI
-      "vicolo_malfamato": {
-        name: "Vicolo Malfamato",
-        type: "urbano",
-        img: "icons/environment/settlement/alley-narrow-night.webp",
+      vicolo_malfamato: {
+        name: 'Vicolo Malfamato',
+        type: 'urbano',
+        img: 'icons/environment/settlement/alley-narrow-night.webp',
         dc: null,
-        trigger: "Passaggio di notte",
+        trigger: 'Passaggio di notte',
         effect: {
-          immediate: "Incontro con 1d6 tagliagole (50% probabilità)",
-          ongoing: "+10 punti Infamia se si combatte",
+          immediate: 'Incontro con 1d6 tagliagole (50% probabilità)',
+          ongoing: '+10 punti Infamia se si combatte',
           damage: null,
-          condition: "ambush"
+          condition: 'ambush'
         },
-        detection: { passive: 14, active: "Streetwise CD 12" },
+        detection: { passive: 14, active: 'Streetwise CD 12' },
         avoidance: "Pagare 1d4 ducati di 'pedaggio' o altra strada",
-        description: "Vicolo controllato da criminali locali"
+        description: 'Vicolo controllato da criminali locali'
       },
 
-      "ponte_marcio": {
-        name: "Ponte Marcio",
-        type: "urbano",
-        img: "icons/environment/wilderness/bridge-rope.webp",
+      ponte_marcio: {
+        name: 'Ponte Marcio',
+        type: 'urbano',
+        img: 'icons/environment/wilderness/bridge-rope.webp',
         dc: 11,
-        trigger: "Attraversamento",
+        trigger: 'Attraversamento',
         effect: {
-          immediate: "TS Destrezza CD 11 o cade (2d6 danni)",
-          ongoing: "Crolla completamente con 200+ kg",
-          damage: "2d6",
-          damageType: "bludgeoning",
+          immediate: 'TS Destrezza CD 11 o cade (2d6 danni)',
+          ongoing: 'Crolla completamente con 200+ kg',
+          damage: '2d6',
+          damageType: 'bludgeoning',
           condition: null
         },
-        detection: { passive: 12, active: "Investigare CD 10" },
-        avoidance: "Acrobazia CD 13 per passare con cautela",
-        repair: "Attrezzi da falegname + 2 ore",
-        description: "Struttura pericolante pronta a crollare"
+        detection: { passive: 12, active: 'Investigare CD 10' },
+        avoidance: 'Acrobazia CD 13 per passare con cautela',
+        repair: 'Attrezzi da falegname + 2 ore',
+        description: 'Struttura pericolante pronta a crollare'
       },
 
-      "fogna_allagata": {
-        name: "Fogna Allagata",
-        type: "urbano",
-        img: "icons/environment/wilderness/cave-entrance-hollow.webp",
+      fogna_allagata: {
+        name: 'Fogna Allagata',
+        type: 'urbano',
+        img: 'icons/environment/wilderness/cave-entrance-hollow.webp',
         dc: 13,
-        trigger: "Esplorazione",
+        trigger: 'Esplorazione',
         effect: {
-          immediate: "TS Costituzione CD 13 o avvelenato 1 ora",
-          ongoing: "Malattia (10% febbre palustre)",
+          immediate: 'TS Costituzione CD 13 o avvelenato 1 ora',
+          ongoing: 'Malattia (10% febbre palustre)',
           damage: null,
-          condition: "poisoned"
+          condition: 'poisoned'
         },
-        detection: { passive: 10, active: "Odore nauseabondo automatico" },
-        avoidance: "Equipaggiamento protettivo",
-        inhabitants: "1d4 ratti giganti o 1 otyugh (20%)",
-        description: "Tunnel allagati pieni di rifiuti e malattie"
+        detection: { passive: 10, active: 'Odore nauseabondo automatico' },
+        avoidance: 'Equipaggiamento protettivo',
+        inhabitants: '1d4 ratti giganti o 1 otyugh (20%)',
+        description: 'Tunnel allagati pieni di rifiuti e malattie'
       },
 
-      "tetto_instabile": {
-        name: "Tetto Instabile",
-        type: "urbano",
-        img: "icons/environment/settlement/house-roof-tiles-green.webp",
+      tetto_instabile: {
+        name: 'Tetto Instabile',
+        type: 'urbano',
+        img: 'icons/environment/settlement/house-roof-tiles-green.webp',
         dc: 12,
-        trigger: "Movimento sui tetti",
+        trigger: 'Movimento sui tetti',
         effect: {
-          immediate: "TS Destrezza CD 12 o scivola",
-          ongoing: "Caduta 3d6 danni + rumore (guardie allertate)",
-          damage: "3d6",
-          damageType: "bludgeoning",
-          condition: "prone"
+          immediate: 'TS Destrezza CD 12 o scivola',
+          ongoing: 'Caduta 3d6 danni + rumore (guardie allertate)',
+          damage: '3d6',
+          damageType: 'bludgeoning',
+          condition: 'prone'
         },
-        detection: { passive: 13, active: "Percezione CD 11" },
-        avoidance: "Acrobazia CD 14 per movimento sicuro",
-        description: "Tegole rotte e travi marce"
+        detection: { passive: 13, active: 'Percezione CD 11' },
+        avoidance: 'Acrobazia CD 14 per movimento sicuro',
+        description: 'Tegole rotte e travi marce'
       },
 
       // HAZARD DUNGEON
-      "stanza_allagata": {
-        name: "Stanza Allagata",
-        type: "dungeon",
-        img: "icons/magic/water/water-surface.webp",
+      stanza_allagata: {
+        name: 'Stanza Allagata',
+        type: 'dungeon',
+        img: 'icons/magic/water/water-surface.webp',
         dc: 10,
-        trigger: "Ingresso nella stanza",
+        trigger: 'Ingresso nella stanza',
         effect: {
-          immediate: "Acqua alta 1 metro, movimento dimezzato",
-          ongoing: "Combattimento: svantaggio attacchi in mischia",
+          immediate: 'Acqua alta 1 metro, movimento dimezzato',
+          ongoing: 'Combattimento: svantaggio attacchi in mischia',
           damage: null,
-          condition: "difficult-terrain"
+          condition: 'difficult-terrain'
         },
-        detection: { passive: 8, active: "Automatica" },
-        special: "Elettricità: danno +1d6 a tutti in acqua",
-        inhabitants: "Sanguisughe giganti (30%)",
-        description: "Stanza parzialmente allagata"
+        detection: { passive: 8, active: 'Automatica' },
+        special: 'Elettricità: danno +1d6 a tutti in acqua',
+        inhabitants: 'Sanguisughe giganti (30%)',
+        description: 'Stanza parzialmente allagata'
       },
 
-      "gas_allucinogeno": {
-        name: "Gas Allucinogeno",
-        type: "dungeon",
-        img: "icons/magic/control/hypnosis-mesmerism-eye.webp",
+      gas_allucinogeno: {
+        name: 'Gas Allucinogeno',
+        type: 'dungeon',
+        img: 'icons/magic/control/hypnosis-mesmerism-eye.webp',
         dc: 14,
-        trigger: "Apertura porta/cofano",
+        trigger: 'Apertura porta/cofano',
         effect: {
-          immediate: "TS Costituzione CD 14 o allucinazioni per 10 minuti",
-          ongoing: "Attacca alleati casuali, vede nemici inesistenti",
+          immediate: 'TS Costituzione CD 14 o allucinazioni per 10 minuti',
+          ongoing: 'Attacca alleati casuali, vede nemici inesistenti',
           damage: null,
-          condition: "confused"
+          condition: 'confused'
         },
-        detection: { passive: 16, active: "Investigare CD 14" },
-        avoidance: "Trattenere respiro (1 + COS minuti)",
-        neutralize: "Vento forte o incantesimo purificare",
-        description: "Spore fungine o alchimia antica"
+        detection: { passive: 16, active: 'Investigare CD 14' },
+        avoidance: 'Trattenere respiro (1 + COS minuti)',
+        neutralize: 'Vento forte o incantesimo purificare',
+        description: 'Spore fungine o alchimia antica'
       },
 
-      "pavimento_traditore": {
-        name: "Pavimento Traditore",
-        type: "dungeon",
-        img: "icons/environment/wilderness/trap-pit-spikes-yellow.webp",
+      pavimento_traditore: {
+        name: 'Pavimento Traditore',
+        type: 'dungeon',
+        img: 'icons/environment/wilderness/trap-pit-spikes-yellow.webp',
         dc: 15,
-        trigger: "Pressione (50+ kg)",
+        trigger: 'Pressione (50+ kg)',
         effect: {
-          immediate: "TS Destrezza CD 15 o cade nella buca",
-          ongoing: "3d6 danni + spine avvelenate (CD 12)",
-          damage: "3d6",
-          damageType: "piercing",
-          condition: "prone"
+          immediate: 'TS Destrezza CD 15 o cade nella buca',
+          ongoing: '3d6 danni + spine avvelenate (CD 12)',
+          damage: '3d6',
+          damageType: 'piercing',
+          condition: 'prone'
         },
-        detection: { passive: 15, active: "Investigare CD 13" },
-        avoidance: "Saltare oltre o peso leggero",
-        reset: "Automatico dopo 1 minuto",
-        description: "Botola nascosta con punte"
+        detection: { passive: 15, active: 'Investigare CD 13' },
+        avoidance: 'Saltare oltre o peso leggero',
+        reset: 'Automatico dopo 1 minuto',
+        description: 'Botola nascosta con punte'
       },
 
-      "muro_di_lame": {
-        name: "Muro di Lame Rotanti",
-        type: "dungeon",
-        img: "icons/weapons/swords/swords-crossed-black.webp",
+      muro_di_lame: {
+        name: 'Muro di Lame Rotanti',
+        type: 'dungeon',
+        img: 'icons/weapons/swords/swords-crossed-black.webp',
         dc: 16,
-        trigger: "Leva/piastra di pressione",
+        trigger: 'Leva/piastra di pressione',
         effect: {
-          immediate: "TS Destrezza CD 16 o 4d8 danni taglienti",
-          ongoing: "Blocca passaggio per 1 minuto",
-          damage: "4d8",
-          damageType: "slashing",
+          immediate: 'TS Destrezza CD 16 o 4d8 danni taglienti',
+          ongoing: 'Blocca passaggio per 1 minuto',
+          damage: '4d8',
+          damageType: 'slashing',
           condition: null
         },
-        detection: { passive: 14, active: "Investigare CD 12" },
-        avoidance: "Disattivare dispositivo CD 15",
-        timing: "Attivo 1 round ogni 3",
-        description: "Lame che escono dalle pareti"
+        detection: { passive: 14, active: 'Investigare CD 12' },
+        avoidance: 'Disattivare dispositivo CD 15',
+        timing: 'Attivo 1 round ogni 3',
+        description: 'Lame che escono dalle pareti'
       },
 
       // HAZARD MAGICI
-      "zona_di_menagramo": {
-        name: "Zona di Menagramo Persistente",
-        type: "magico",
-        img: "icons/magic/death/skull-humanoid-crown-white-purple.webp",
+      zona_di_menagramo: {
+        name: 'Zona di Menagramo Persistente',
+        type: 'magico',
+        img: 'icons/magic/death/skull-humanoid-crown-white-purple.webp',
         dc: null,
         trigger: "Permanente nell'area",
         effect: {
-          immediate: "Applica Menagramo Minore automaticamente",
-          ongoing: "Fallimenti critici con 1-3 sul d20",
+          immediate: 'Applica Menagramo Minore automaticamente',
+          ongoing: 'Fallimenti critici con 1-3 sul d20',
           damage: null,
-          condition: "menagramo"
+          condition: 'menagramo'
         },
-        detection: { passive: null, active: "Individuare magia" },
-        avoidance: "Impossibile, solo protezione magica",
-        neutralize: "Dissolvi magie CD 17 o benedizione",
-        description: "Area maledetta dal menagramo"
+        detection: { passive: null, active: 'Individuare magia' },
+        avoidance: 'Impossibile, solo protezione magica',
+        neutralize: 'Dissolvi magie CD 17 o benedizione',
+        description: 'Area maledetta dal menagramo'
       },
 
-      "portale_instabile": {
-        name: "Portale Instabile",
-        type: "magico",
-        img: "icons/magic/movement/portal-vortex-purple.webp",
+      portale_instabile: {
+        name: 'Portale Instabile',
+        type: 'magico',
+        img: 'icons/magic/movement/portal-vortex-purple.webp',
         dc: 15,
-        trigger: "Avvicinamento a 3 metri",
+        trigger: 'Avvicinamento a 3 metri',
         effect: {
-          immediate: "TS Forza CD 15 o risucchiato",
-          ongoing: "Teletrasporto casuale 1d100 x 10 metri",
-          damage: "2d6",
-          damageType: "force",
-          condition: "teleported"
+          immediate: 'TS Forza CD 15 o risucchiato',
+          ongoing: 'Teletrasporto casuale 1d100 x 10 metri',
+          damage: '2d6',
+          damageType: 'force',
+          condition: 'teleported'
         },
-        detection: { passive: null, active: "Arcano CD 13" },
-        avoidance: "Oggetto di ancoraggio o corda",
-        stability: "Instabile: 50% di malfunzionamento",
-        description: "Portale magico danneggiato"
+        detection: { passive: null, active: 'Arcano CD 13' },
+        avoidance: 'Oggetto di ancoraggio o corda',
+        stability: 'Instabile: 50% di malfunzionamento',
+        description: 'Portale magico danneggiato'
       },
 
-      "guardiano_spettrale": {
-        name: "Guardiano Spettrale Vincolato",
-        type: "magico",
-        img: "icons/magic/death/undead-ghost-spirit-teal.webp",
+      guardiano_spettrale: {
+        name: 'Guardiano Spettrale Vincolato',
+        type: 'magico',
+        img: 'icons/magic/death/undead-ghost-spirit-teal.webp',
         dc: null,
-        trigger: "Violazione area protetta",
+        trigger: 'Violazione area protetta',
         effect: {
-          immediate: "Appare spettro ostile",
+          immediate: 'Appare spettro ostile',
           ongoing: "Insegue per 100 metri dall'area",
           damage: null,
-          condition: "haunted"
+          condition: 'haunted'
         },
-        detection: { passive: 16, active: "Religione CD 14" },
+        detection: { passive: 16, active: 'Religione CD 14' },
         avoidance: "Simbolo sacro o parola d'ordine",
-        banish: "Scacciare non morti o esorcismo",
-        description: "Spirito legato a proteggere un luogo"
+        banish: 'Scacciare non morti o esorcismo',
+        description: 'Spirito legato a proteggere un luogo'
       }
     };
 
     // Tabelle per generazione casuale
     this.randomTables = {
       wilderness: [
-        "palude_malsana", "sabbie_mobili", "nebbia_velenosa",
-        "frana", "ghiaccio_sottile", "tempesta_improvvisa"
+        'palude_malsana', 'sabbie_mobili', 'nebbia_velenosa',
+        'frana', 'ghiaccio_sottile', 'tempesta_improvvisa'
       ],
       urban: [
-        "vicolo_malfamato", "ponte_marcio", "fogna_allagata",
-        "tetto_instabile"
+        'vicolo_malfamato', 'ponte_marcio', 'fogna_allagata',
+        'tetto_instabile'
       ],
       dungeon: [
-        "stanza_allagata", "gas_allucinogeno", "pavimento_traditore",
-        "muro_di_lame"
+        'stanza_allagata', 'gas_allucinogeno', 'pavimento_traditore',
+        'muro_di_lame'
       ],
       magical: [
-        "zona_di_menagramo", "portale_instabile", "guardiano_spettrale"
+        'zona_di_menagramo', 'portale_instabile', 'guardiano_spettrale'
       ]
     };
 
@@ -351,7 +351,7 @@ class EnvironmentalHazardsSystem {
    * Metodo statico di inizializzazione completo
    */
   static initialize() {
-    console.log("🌿 Inizializzazione Sistema Hazard Ambientali");
+    console.log('🌿 Inizializzazione Sistema Hazard Ambientali');
 
     // Registrazione settings
     this.registerSettings();
@@ -374,41 +374,41 @@ class EnvironmentalHazardsSystem {
     // Estensione Actor per hazard
     this.extendActor();
 
-    console.log("✅ Sistema Hazard Ambientali inizializzato");
+    console.log('✅ Sistema Hazard Ambientali inizializzato');
   }
 
   /**
    * Registra le impostazioni del modulo
    */
   static registerSettings() {
-    game.settings.register("brancalonia-bigat", "enableHazards", {
-      name: "Sistema Hazard Ambientali",
-      hint: "Attiva i pericoli ambientali automatici",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'enableHazards', {
+      name: 'Sistema Hazard Ambientali',
+      hint: 'Attiva i pericoli ambientali automatici',
+      scope: 'world',
       config: true,
       type: Boolean,
       default: true
     });
 
-    game.settings.register("brancalonia-bigat", "hazardFrequency", {
-      name: "Frequenza Hazard",
-      hint: "Quanto spesso si incontrano hazard",
-      scope: "world",
+    game.settings.register('brancalonia-bigat', 'hazardFrequency', {
+      name: 'Frequenza Hazard',
+      hint: 'Quanto spesso si incontrano hazard',
+      scope: 'world',
       config: true,
       type: String,
       choices: {
-        "low": "Bassa (10%)",
-        "medium": "Media (20%)",
-        "high": "Alta (35%)",
-        "extreme": "Estrema (50%)"
+        low: 'Bassa (10%)',
+        medium: 'Media (20%)',
+        high: 'Alta (35%)',
+        extreme: 'Estrema (50%)'
       },
-      default: "medium"
+      default: 'medium'
     });
 
-    game.settings.register("brancalonia-bigat", "hazardDamageMultiplier", {
-      name: "Moltiplicatore Danni Hazard",
+    game.settings.register('brancalonia-bigat', 'hazardDamageMultiplier', {
+      name: 'Moltiplicatore Danni Hazard',
       hint: "Modifica l'intensità dei danni degli hazard ambientali",
-      scope: "world",
+      scope: 'world',
       config: true,
       type: Number,
       default: 1.0,
@@ -425,19 +425,19 @@ class EnvironmentalHazardsSystem {
    */
   static registerChatCommands() {
     // Comando per attivare hazard
-    game.socket.on("system.brancalonia-bigat", (data) => {
-      if (data.type === "hazard-command" && game.user.isGM) {
+    game.socket.on('system.brancalonia-bigat', (data) => {
+      if (data.type === 'hazard-command' && game.user.isGM) {
         const instance = game.brancalonia?.environmentalHazards;
-        if (instance && data.command === "trigger") {
+        if (instance && data.command === 'trigger') {
           instance.triggerHazard(data.hazard, data.actor, data.options || {});
         }
       }
     });
 
     // Registra comandi testuali
-    if (game.modules.get("monk-enhanced-journal")?.active) {
-      game.MonksEnhancedJournal?.registerChatCommand("/hazard", {
-        name: "Gestisci Hazard",
+    if (game.modules.get('monk-enhanced-journal')?.active) {
+      game.MonksEnhancedJournal?.registerChatCommand('/hazard', {
+        name: 'Gestisci Hazard',
         callback: (args) => {
           const instance = game.brancalonia?.environmentalHazards;
           if (instance && game.user.isGM) {
@@ -448,7 +448,7 @@ class EnvironmentalHazardsSystem {
             }
           }
         },
-        help: "Uso: /hazard [nome_hazard] - Attiva un hazard o apre il manager"
+        help: 'Uso: /hazard [nome_hazard] - Attiva un hazard o apre il manager'
       });
     }
   }
@@ -460,9 +460,9 @@ class EnvironmentalHazardsSystem {
     if (!game.user.isGM) return;
 
     const macroData = {
-      name: "🌿 Gestione Hazard Ambientali",
-      type: "script",
-      img: "icons/magic/nature/root-vine-fire-entangle-green.webp",
+      name: '🌿 Gestione Hazard Ambientali',
+      type: 'script',
+      img: 'icons/magic/nature/root-vine-fire-entangle-green.webp',
       command: `
 const hazardSystem = game.brancalonia?.environmentalHazards;
 if (hazardSystem) {
@@ -474,14 +474,14 @@ if (hazardSystem) {
       folder: null,
       sort: 0,
       ownership: { default: 0, [game.user.id]: 3 },
-      flags: { "brancalonia-bigat": { "auto-generated": true } }
+      flags: { 'brancalonia-bigat': { 'auto-generated': true } }
     };
 
     // Controlla se esiste già
     const existing = game.macros.find(m => m.name === macroData.name);
     if (!existing) {
       Macro.create(macroData);
-      console.log("✅ Macro Hazard Ambientali creata");
+      console.log('✅ Macro Hazard Ambientali creata');
     }
   }
 
@@ -490,7 +490,7 @@ if (hazardSystem) {
    */
   static extendActor() {
     const originalGetRollData = Actor.prototype.getRollData;
-    Actor.prototype.getRollData = function() {
+    Actor.prototype.getRollData = function () {
       const data = originalGetRollData.call(this);
 
       // Aggiungi resistenze hazard
@@ -501,13 +501,13 @@ if (hazardSystem) {
     };
 
     // Metodo per controllare resistenza agli hazard
-    Actor.prototype.getHazardResistance = function(hazardType) {
+    Actor.prototype.getHazardResistance = function (hazardType) {
       const resistances = this.flags.brancalonia?.hazardResistances || {};
       return resistances[hazardType] || 0;
     };
 
     // Metodo per applicare hazard con resistenze
-    Actor.prototype.applyEnvironmentalHazard = async function(hazard, options = {}) {
+    Actor.prototype.applyEnvironmentalHazard = async function (hazard, options = {}) {
       const instance = game.brancalonia?.environmentalHazards;
       if (instance) {
         const resistance = this.getHazardResistance(hazard.type);
@@ -519,11 +519,11 @@ if (hazardSystem) {
 
   _setupHooks() {
     // Hook per movimento in scene con hazard
-    Hooks.on("updateToken", (token, update, options, userId) => {
+    Hooks.on('updateToken', (token, update, options, userId) => {
       if (!update.x && !update.y) return;
 
       const hazards = canvas.scene.flags.brancalonia?.hazards || [];
-      for (let hazard of hazards) {
+      for (const hazard of hazards) {
         if (this._isTokenInHazard(token, hazard)) {
           this.triggerHazard(hazard.type, token.actor);
         }
@@ -531,14 +531,14 @@ if (hazardSystem) {
     });
 
     // Hook per tempo atmosferico
-    Hooks.on("timePassed", (worldTime, dt) => {
+    Hooks.on('timePassed', (worldTime, dt) => {
       if (dt >= 3600) { // Ogni ora
         this._checkWeatherHazards();
       }
     });
 
     // Hook per esplorazione
-    Hooks.on("targetToken", (user, token, targeted) => {
+    Hooks.on('targetToken', (user, token, targeted) => {
       if (targeted && game.user.isGM) {
         const hazard = token.document.flags.brancalonia?.hazard;
         if (hazard) {
@@ -570,7 +570,7 @@ if (hazardSystem) {
           <p><em>${hazard.description}</em></p>
         </div>
       `,
-      speaker: ChatMessage.getSpeaker({ alias: "Hazard" })
+      speaker: ChatMessage.getSpeaker({ alias: 'Hazard' })
     });
 
     // Se c'è un attore bersaglio
@@ -579,7 +579,7 @@ if (hazardSystem) {
     }
 
     // Se è un hazard di area
-    if (hazard.type === "naturale" && !actor) {
+    if (hazard.type === 'naturale' && !actor) {
       this._applyAreaHazard(hazard);
     }
 
@@ -644,13 +644,13 @@ if (hazardSystem) {
    * Determina l'abilità per il tiro salvezza
    */
   _determineSaveAbility(effectText) {
-    if (effectText.includes("Destrezza")) return "dex";
-    if (effectText.includes("Costituzione")) return "con";
-    if (effectText.includes("Forza")) return "str";
-    if (effectText.includes("Saggezza")) return "wis";
-    if (effectText.includes("Intelligenza")) return "int";
-    if (effectText.includes("Carisma")) return "cha";
-    return "dex"; // Default
+    if (effectText.includes('Destrezza')) return 'dex';
+    if (effectText.includes('Costituzione')) return 'con';
+    if (effectText.includes('Forza')) return 'str';
+    if (effectText.includes('Saggezza')) return 'wis';
+    if (effectText.includes('Intelligenza')) return 'int';
+    if (effectText.includes('Carisma')) return 'cha';
+    return 'dex'; // Default
   }
 
   /**
@@ -658,30 +658,30 @@ if (hazardSystem) {
    */
   async _applyHazardCondition(actor, condition, hazard) {
     const conditionMap = {
-      "difficult-terrain": {
-        key: "system.attributes.movement.walk",
+      'difficult-terrain': {
+        key: 'system.attributes.movement.walk',
         mode: CONST.ACTIVE_EFFECT_MODES.MULTIPLY,
-        value: "0.5"
+        value: '0.5'
       },
-      "restrained": {
-        key: "system.attributes.movement.walk",
+      restrained: {
+        key: 'system.attributes.movement.walk',
         mode: CONST.ACTIVE_EFFECT_MODES.OVERRIDE,
-        value: "0"
+        value: '0'
       },
-      "poisoned": {
-        key: "flags.midi-qol.disadvantage.attack.all",
+      poisoned: {
+        key: 'flags.midi-qol.disadvantage.attack.all',
         mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
-        value: "1"
+        value: '1'
       },
-      "exhaustion": {
-        key: "system.attributes.exhaustion",
+      exhaustion: {
+        key: 'system.attributes.exhaustion',
         mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-        value: "1"
+        value: '1'
       },
-      "menagramo": {
-        key: "flags.brancalonia.menagramo",
+      menagramo: {
+        key: 'flags.brancalonia.menagramo',
         mode: CONST.ACTIVE_EFFECT_MODES.OVERRIDE,
-        value: "true"
+        value: 'true'
       }
     };
 
@@ -702,7 +702,7 @@ if (hazardSystem) {
       }
     };
 
-    await actor.createEmbeddedDocuments("ActiveEffect", [activeEffect]);
+    await actor.createEmbeddedDocuments('ActiveEffect', [activeEffect]);
   }
 
   /**
@@ -718,11 +718,11 @@ if (hazardSystem) {
       effect: hazard.effect.ongoing
     });
 
-    await actor.setFlag("brancalonia-bigat", "ongoingHazards", ongoingHazards);
+    await actor.setFlag('brancalonia-bigat', 'ongoingHazards', ongoingHazards);
 
     // Programma check periodici
-    if (hazard.effect.ongoing.includes("round")) {
-      Hooks.on("updateCombat", (combat, update) => {
+    if (hazard.effect.ongoing.includes('round')) {
+      Hooks.on('updateCombat', (combat, update) => {
         if (update.round) {
           this._checkOngoingHazard(actor, hazard);
         }
@@ -737,7 +737,7 @@ if (hazardSystem) {
     const ongoingEffect = hazard.effect.ongoing;
 
     // Parse dell'effetto
-    if (ongoingEffect.includes("danni")) {
+    if (ongoingEffect.includes('danni')) {
       const damageMatch = ongoingEffect.match(/(\d+d\d+)/);
       if (damageMatch) {
         const damageRoll = await new Roll(damageMatch[1]).evaluate();
@@ -745,9 +745,9 @@ if (hazardSystem) {
       }
     }
 
-    if (ongoingEffect.includes("sfinimento")) {
+    if (ongoingEffect.includes('sfinimento')) {
       await actor.update({
-        "system.attributes.exhaustion": actor.system.attributes.exhaustion + 1
+        'system.attributes.exhaustion': actor.system.attributes.exhaustion + 1
       });
     }
   }
@@ -760,7 +760,7 @@ if (hazardSystem) {
     if (!hazardName) {
       const nearbyHazards = this._getNearbyHazards(actor);
       if (nearbyHazards.length === 0) {
-        ui.notifications.info("Nessun pericolo rilevato nelle vicinanze");
+        ui.notifications.info('Nessun pericolo rilevato nelle vicinanze');
         return;
       }
       hazardName = nearbyHazards[0];
@@ -788,7 +788,7 @@ if (hazardSystem) {
 
     // Prova attiva
     if (detection.active) {
-      const [skill, dc] = detection.active.split(" CD ");
+      const [skill, dc] = detection.active.split(' CD ');
       const skillKey = this._getSkillKey(skill);
 
       const roll = await actor.rollSkill(skillKey, {
@@ -816,14 +816,14 @@ if (hazardSystem) {
   /**
    * Genera hazard casuale per tipo di ambiente
    */
-  generateRandomHazard(environment = "wilderness") {
+  generateRandomHazard(environment = 'wilderness') {
     const hazardList = this.randomTables[environment];
     if (!hazardList || hazardList.length === 0) {
       ui.notifications.warn(`Nessun hazard per ambiente: ${environment}`);
       return null;
     }
 
-    const frequency = game.settings.get("brancalonia-bigat", "hazardFrequency");
+    const frequency = game.settings.get('brancalonia-bigat', 'hazardFrequency');
     const chances = { low: 0.1, medium: 0.2, high: 0.35, extreme: 0.5 };
 
     if (Math.random() > chances[frequency]) {
@@ -844,8 +844,8 @@ if (hazardSystem) {
     // Crea tile per rappresentare l'hazard
     const tileData = {
       img: hazard.img,
-      x: x,
-      y: y,
+      x,
+      y,
       width: 100,
       height: 100,
       hidden: true, // Visibile solo al GM
@@ -858,19 +858,19 @@ if (hazardSystem) {
       }
     };
 
-    await canvas.scene.createEmbeddedDocuments("Tile", [tileData]);
+    await canvas.scene.createEmbeddedDocuments('Tile', [tileData]);
 
     // Aggiungi alla lista hazard della scena
     const sceneHazards = canvas.scene.flags.brancalonia?.hazards || [];
     sceneHazards.push({
       type: hazardName,
-      x: x,
-      y: y,
+      x,
+      y,
       radius: 100,
       triggered: false
     });
 
-    await canvas.scene.setFlag("brancalonia-bigat", "hazards", sceneHazards);
+    await canvas.scene.setFlag('brancalonia-bigat', 'hazards', sceneHazards);
 
     ui.notifications.info(`Hazard ${hazard.name} piazzato`);
   }
@@ -883,13 +883,13 @@ if (hazardSystem) {
       t.document.flags.brancalonia?.hazardType === hazardName
     );
 
-    for (let tile of tiles) {
+    for (const tile of tiles) {
       await tile.document.delete();
     }
 
     const sceneHazards = canvas.scene.flags.brancalonia?.hazards || [];
     const filtered = sceneHazards.filter(h => h.type !== hazardName);
-    await canvas.scene.setFlag("brancalonia-bigat", "hazards", filtered);
+    await canvas.scene.setFlag('brancalonia-bigat', 'hazards', filtered);
   }
 
   /**
@@ -920,11 +920,11 @@ if (hazardSystem) {
    * Controlla hazard meteo
    */
   async _checkWeatherHazards() {
-    if (!game.settings.get("brancalonia-bigat", "enableHazards")) return;
+    if (!game.settings.get('brancalonia-bigat', 'enableHazards')) return;
 
     // 10% probabilità di evento meteo
     if (Math.random() < 0.1) {
-      const weatherHazards = ["tempesta_improvvisa", "nebbia_velenosa"];
+      const weatherHazards = ['tempesta_improvvisa', 'nebbia_velenosa'];
       const hazardName = weatherHazards[Math.floor(Math.random() * weatherHazards.length)];
 
       ChatMessage.create({
@@ -935,11 +935,11 @@ if (hazardSystem) {
             <p>${this.hazards[hazardName].description}</p>
           </div>
         `,
-        whisper: ChatMessage.getWhisperRecipients("GM")
+        whisper: ChatMessage.getWhisperRecipients('GM')
       });
 
       // Applica a tutti i token all'aperto
-      for (let token of canvas.tokens.placeables) {
+      for (const token of canvas.tokens.placeables) {
         if (token.actor && !token.document.flags.brancalonia?.indoor) {
           await this.triggerHazard(hazardName, token.actor);
         }
@@ -952,7 +952,7 @@ if (hazardSystem) {
    */
   _applyAreaHazard(hazard) {
     // Applica a tutti i token nell'area
-    for (let token of canvas.tokens.placeables) {
+    for (const token of canvas.tokens.placeables) {
       if (token.actor) {
         this._applyHazardEffect(token.actor, hazard);
       }
@@ -964,18 +964,18 @@ if (hazardSystem) {
    */
   _getSkillKey(skillName) {
     const skillMap = {
-      "Sopravvivenza": "sur",
-      "Percezione": "prc",
-      "Investigare": "inv",
-      "Natura": "nat",
-      "Arcano": "arc",
-      "Religione": "rel",
-      "Atletica": "ath",
-      "Acrobazia": "acr",
-      "Furtività": "ste",
-      "Streetwise": "streetwise"
+      Sopravvivenza: 'sur',
+      Percezione: 'prc',
+      Investigare: 'inv',
+      Natura: 'nat',
+      Arcano: 'arc',
+      Religione: 'rel',
+      Atletica: 'ath',
+      Acrobazia: 'acr',
+      Furtività: 'ste',
+      Streetwise: 'streetwise'
     };
-    return skillMap[skillName] || "prc";
+    return skillMap[skillName] || 'prc';
   }
 
   /**
@@ -1023,10 +1023,10 @@ if (hazardSystem) {
     `;
 
     const dialog = new Dialog({
-      title: "Gestione Hazard",
-      content: content,
+      title: 'Gestione Hazard',
+      content,
       buttons: {
-        close: { label: "Chiudi" }
+        close: { label: 'Chiudi' }
       },
       render: html => {
         html.find('#generate-hazard').click(() => {
@@ -1057,7 +1057,7 @@ if (hazardSystem) {
   /**
    * Sistema di notifiche avanzato per hazard
    */
-  async _showHazardNotification(hazard, actor, severity = "warning") {
+  async _showHazardNotification(hazard, actor, severity = 'warning') {
     const notification = {
       type: severity,
       message: `⚠️ Hazard: ${hazard.name}`,
@@ -1068,9 +1068,9 @@ if (hazardSystem) {
     ui.notifications[severity](notification.message);
 
     // Notifica sonora se configurata
-    if (game.settings.get("brancalonia-bigat", "hazardSounds")) {
+    if (game.settings.get('brancalonia-bigat', 'hazardSounds')) {
       AudioHelper.play({
-        src: "sounds/environmental/danger-warning.wav",
+        src: 'sounds/environmental/danger-warning.wav',
         volume: 0.5,
         autoplay: true,
         loop: false
@@ -1082,7 +1082,7 @@ if (hazardSystem) {
    * Sistema di auto-rilevamento hazard in movimento
    */
   _checkMovementHazards(token) {
-    if (!game.settings.get("brancalonia-bigat", "enableHazards")) return;
+    if (!game.settings.get('brancalonia-bigat', 'enableHazards')) return;
 
     const scene = token.scene;
     const hazardTiles = scene.tiles.filter(t =>
@@ -1094,11 +1094,11 @@ if (hazardSystem) {
       const hazardType = tile.flags.brancalonia.hazardType;
       if (hazardType && !tile.flags.brancalonia.triggered) {
         this.triggerHazard(hazardType, token.actor);
-        tile.setFlag("brancalonia-bigat", "triggered", true);
+        tile.setFlag('brancalonia-bigat', 'triggered', true);
 
         // Reset dopo 1 minuto
         setTimeout(() => {
-          tile.unsetFlag("brancalonia-bigat", "triggered");
+          tile.unsetFlag('brancalonia-bigat', 'triggered');
         }, 60000);
       }
     }
@@ -1133,7 +1133,7 @@ if (hazardSystem) {
    */
   _showHazardResistanceDialog(actor) {
     const resistances = actor.flags.brancalonia?.hazardResistances || {};
-    const hazardTypes = ["naturale", "urbano", "dungeon", "magico"];
+    const hazardTypes = ['naturale', 'urbano', 'dungeon', 'magico'];
 
     const content = `
       <div class="hazard-resistances-dialog">
@@ -1153,21 +1153,21 @@ if (hazardSystem) {
     `;
 
     new Dialog({
-      title: "Resistenze Hazard",
+      title: 'Resistenze Hazard',
       content,
       buttons: {
         save: {
-          label: "Salva",
+          label: 'Salva',
           callback: async (html) => {
             const newResistances = {};
             hazardTypes.forEach(type => {
               newResistances[type] = parseFloat(html.find(`select[name="${type}"]`).val());
             });
-            await actor.setFlag("brancalonia-bigat", "hazardResistances", newResistances);
-            ui.notifications.info("Resistenze hazard aggiornate");
+            await actor.setFlag('brancalonia-bigat', 'hazardResistances', newResistances);
+            ui.notifications.info('Resistenze hazard aggiornate');
           }
         },
-        cancel: { label: "Annulla" }
+        cancel: { label: 'Annulla' }
       }
     }).render(true);
   }
@@ -1176,9 +1176,9 @@ if (hazardSystem) {
 // Registra classe globale
 window.EnvironmentalHazardsSystem = EnvironmentalHazardsSystem;
 
-// Auto-inizializzazione
-Hooks.once('init', () => {
-  console.log("🎮 Brancalonia | Inizializzazione Environmental Hazards System");
+// Auto-inizializzazione - spostata a ready per evitare problemi con game.settings
+Hooks.once('ready', () => {
+  console.log('🎮 Brancalonia | Inizializzazione Environmental Hazards System');
   EnvironmentalHazardsSystem.initialize();
 });
 
@@ -1196,7 +1196,7 @@ Hooks.on('renderActorSheet', (app, html, data) => {
   if (!game.user.isGM) return;
 
   const actor = app.actor;
-  if (actor.type !== "character" && actor.type !== "npc") return;
+  if (actor.type !== 'character' && actor.type !== 'npc') return;
 
   // Aggiungi sezione resistenze hazard
   const hazardSection = $(`

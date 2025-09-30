@@ -28,11 +28,11 @@ class BrancaloniaCore {
     'brancalonia-icon-interceptor': [],
 
     // Feature modules with dependencies
-    'infamia-tracker': [],
+    'reputation-infamia-unified': [],
     'haven-system': [],
-    'compagnia-manager': ['infamia-tracker'],
+    'compagnia-manager': ['reputation-infamia-unified'],
     'dirty-jobs': ['compagnia-manager'],
-    'malefatte-taglie-nomea': ['infamia-tracker'],
+    'malefatte-taglie-nomea': ['reputation-infamia-unified'],
     'menagramo-system': [],
     'menagramo-warlock-patron': ['menagramo-system'],
     'tavern-brawl': [],
@@ -45,7 +45,6 @@ class BrancaloniaCore {
     'background-privileges': [],
     'factions-system': [],
     'dueling-system': [],
-    'reputation-system': ['infamia-tracker'],
     'shoddy-equipment': [],
     'rest-system': ['haven-system'],
     'covo-granlussi-v2': [],
@@ -324,7 +323,7 @@ class BrancaloniaCore {
   static async _loadModule(moduleName) {
     // Map module names to their actual file names
     const moduleFileMap = {
-      'infamia-tracker': 'infamia-tracker',
+      'reputation-infamia-unified': 'reputation-infamia-unified',
       'haven-system': 'haven-system',
       'compagnia-manager': 'compagnia-manager',
       'dirty-jobs': 'dirty-jobs',
@@ -340,7 +339,6 @@ class BrancaloniaCore {
       'background-privileges': 'background-privileges',
       'factions-system': 'factions-system',
       'dueling-system': 'dueling-system',
-      'reputation-system': 'reputation-system',
       'shoddy-equipment': 'shoddy-equipment',
       'rest-system': 'rest-system',
       'covo-granlussi-v2': 'covo-granlussi-v2',
@@ -450,13 +448,13 @@ class BrancaloniaCore {
       // Utility functions
       addInfamia: (actor, amount) => {
         if (!this._isActor(actor)) return false;
-        const infamiaModule = game.brancalonia.modules['infamia-tracker'];
+        const infamiaModule = game.brancalonia.modules['reputation-infamia-unified'];
         return infamiaModule?.addInfamia?.(actor, amount) ?? false;
       },
 
       getInfamia: (actor) => {
         if (!this._isActor(actor)) return 0;
-        const infamiaModule = game.brancalonia.modules['infamia-tracker'];
+        const infamiaModule = game.brancalonia.modules['reputation-infamia-unified'];
         return infamiaModule?.getInfamia?.(actor) ?? 0;
       },
 

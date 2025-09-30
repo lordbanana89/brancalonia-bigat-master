@@ -52,10 +52,9 @@ class FavoriSystem {
 
       console.log('Brancalonia | Sistema Favori inizializzato con successo');
       return instance;
-
     } catch (error) {
       console.error('Brancalonia | Errore inizializzazione Sistema Favori:', error);
-      ui.notifications.error('Errore inizializzazione Sistema Favori: ' + error.message);
+      ui.notifications.error(`Errore inizializzazione Sistema Favori: ${error.message}`);
     }
   }
 
@@ -271,7 +270,6 @@ class FavoriSystem {
       this.initialized = true;
       console.log('Brancalonia | Sistema Favori configurato');
       ui.notifications.info('Sistema Favori attivo');
-
     } catch (error) {
       console.error('Brancalonia | Errore inizializzazione sistema favori:', error);
       ui.notifications.error('Errore inizializzazione Sistema Favori');
@@ -282,70 +280,70 @@ class FavoriSystem {
   async loadFavoriConfig() {
     this.favoriTypes = {
       riscatto: {
-        name: "Riscatto",
-        icon: "icons/skills/social/diplomacy-handshake-yellow.webp",
-        description: "La banda paga per liberare un prigioniero o ostaggio",
+        name: 'Riscatto',
+        icon: 'icons/skills/social/diplomacy-handshake-yellow.webp',
+        description: 'La banda paga per liberare un prigioniero o ostaggio',
         baseCost: 100,
         requiresTarget: true,
-        category: "liberazione"
+        category: 'liberazione'
       },
 
       evasione: {
-        name: "Evasione",
-        icon: "icons/environment/settlement/jail-cell-key.webp",
+        name: 'Evasione',
+        icon: 'icons/environment/settlement/jail-cell-key.webp',
         description: "La banda organizza un'evasione dal gabbio",
         baseCost: 100,
         requiresTarget: true,
-        difficulty: "media",
-        category: "liberazione"
+        difficulty: 'media',
+        category: 'liberazione'
       },
 
       compareEsperto: {
-        name: "Compare Esperto",
-        icon: "icons/skills/trades/smithing-anvil-silver.webp",
-        description: "Un esperto della banda aiuta in una mansione specifica",
+        name: 'Compare Esperto',
+        icon: 'icons/skills/trades/smithing-anvil-silver.webp',
+        description: 'Un esperto della banda aiuta in una mansione specifica',
         baseCost: 100,
         requiresSpecialization: true,
-        duration: "1 lavoretto",
-        category: "supporto"
+        duration: '1 lavoretto',
+        category: 'supporto'
       },
 
       barattiere: {
-        name: "Barattiere",
-        icon: "icons/skills/social/intimidation-impressing.webp",
-        description: "Insabbia una malefatta prima che diventi taglia",
+        name: 'Barattiere',
+        icon: 'icons/skills/social/intimidation-impressing.webp',
+        description: 'Insabbia una malefatta prima che diventi taglia',
         baseCost: 100,
-        timing: "Durante lo Sbraco",
+        timing: 'Durante lo Sbraco',
         immediate: true,
-        category: "sicurezza"
+        category: 'sicurezza'
       },
 
       viaggioIncognito: {
-        name: "Viaggio in Incognito",
-        icon: "icons/environment/settlement/wagon-black.webp",
-        description: "Trasporto sicuro verso qualsiasi regione del Regno",
+        name: 'Viaggio in Incognito',
+        icon: 'icons/environment/settlement/wagon-black.webp',
+        description: 'Trasporto sicuro verso qualsiasi regione del Regno',
         baseCost: 100,
         requiresDestination: true,
-        category: "viaggio"
+        category: 'viaggio'
       },
 
       informazioni: {
-        name: "Informazioni",
-        icon: "icons/skills/social/diplomacy-peace-alliance.webp",
-        description: "Informazioni preziose su luogo, persona, oggetto o conoscenza",
+        name: 'Informazioni',
+        icon: 'icons/skills/social/diplomacy-peace-alliance.webp',
+        description: 'Informazioni preziose su luogo, persona, oggetto o conoscenza',
         baseCost: 100,
         requiresTopic: true,
-        category: "intelligence"
+        category: 'intelligence'
       },
 
       granlussoPrestito: {
-        name: "Granlusso in Prestito",
-        icon: "icons/environment/settlement/house-stone-yellow.webp",
-        description: "Usa un Granlusso aggiuntivo del Covo",
+        name: 'Granlusso in Prestito',
+        icon: 'icons/environment/settlement/house-stone-yellow.webp',
+        description: 'Usa un Granlusso aggiuntivo del Covo',
         baseCost: 100,
         requiresGranlusso: true,
-        duration: "1 lavoretto",
-        category: "supporto"
+        duration: '1 lavoretto',
+        category: 'supporto'
       }
     };
 
@@ -416,7 +414,7 @@ class FavoriSystem {
       // Event listeners
       $html.find('.request-favore').off('click').on('click', () => {
         if (favoriDebts > 0) {
-          ui.notifications.error("Devi saldare i debiti prima di richiedere altri favori!");
+          ui.notifications.error('Devi saldare i debiti prima di richiedere altri favori!');
           return;
         }
         this.openFavoreRequestDialog(actor);
@@ -425,7 +423,6 @@ class FavoriSystem {
       $html.find('.pay-debt').off('click').on('click', () => {
         this.openDebtPaymentDialog(actor);
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore render favori UI:', error);
     }
@@ -445,7 +442,7 @@ class FavoriSystem {
       const favoriUsed = actor.getFlag('brancalonia-bigat', 'favoriUsed') || 0;
       const favoriRemaining = Math.max(0, nomeaBonus - favoriUsed);
 
-      let content = `
+      const content = `
         <div class="favore-request" style="padding: 10px;">
           <div style="margin-bottom: 15px; padding: 8px; background: #e9ecef; border-radius: 3px;">
             <p style="margin: 0;"><strong>📊 Status Favori:</strong></p>
@@ -487,12 +484,12 @@ class FavoriSystem {
       `;
 
       const dialog = new Dialog({
-        title: "🤝 Richiedi Favore alla Banda",
+        title: '🤝 Richiedi Favore alla Banda',
         content,
         buttons: {
           request: {
             icon: '<i class="fas fa-check"></i>',
-            label: "Richiedi Favore",
+            label: 'Richiedi Favore',
             callback: async (html) => {
               const type = html.find('select[name="favore-type"]').val();
               const otherBand = html.find('input[name="other-band"]').is(':checked');
@@ -510,7 +507,7 @@ class FavoriSystem {
           },
           cancel: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Annulla"
+            label: 'Annulla'
           }
         },
         render: (html) => {
@@ -534,7 +531,6 @@ class FavoriSystem {
       });
 
       dialog.render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore dialog richiesta favore:', error);
       ui.notifications.error('Errore apertura dialog richiesta favore');
@@ -676,7 +672,7 @@ class FavoriSystem {
 
   // Raccoglie dettagli del favore
   collectFavoreDetails(html, type) {
-    const details = { type: type };
+    const details = { type };
 
     const inputs = {
       target: 'input[name="target"]',
@@ -726,10 +722,10 @@ class FavoriSystem {
       if (cost > 0) {
         const currentMoney = actor.system.currency?.gp || 0;
         if (currentMoney < cost) {
-          ui.notifications.error("Fondi insufficienti!");
+          ui.notifications.error('Fondi insufficienti!');
           return;
         }
-        await actor.update({"system.currency.gp": currentMoney - cost});
+        await actor.update({ 'system.currency.gp': currentMoney - cost });
       }
 
       // Applica debito
@@ -750,7 +746,6 @@ class FavoriSystem {
       await this.executeFavore(actor, type, details);
 
       console.log(`Brancalonia | Favore ${type} processato per ${actor.name}`);
-
     } catch (error) {
       console.error('Brancalonia | Errore processo favore:', error);
       ui.notifications.error('Errore durante il processo del favore');
@@ -769,9 +764,9 @@ class FavoriSystem {
         journal = await JournalEntry.create({
           name: `Favori - ${actor.name}`,
           pages: [{
-            name: "Registro Favori",
-            type: "text",
-            text: { content: "" }
+            name: 'Registro Favori',
+            type: 'text',
+            text: { content: '' }
           }]
         });
       }
@@ -793,11 +788,10 @@ class FavoriSystem {
       `;
 
       const page = journal.pages.contents[0];
-      const currentContent = page.text.content || "";
+      const currentContent = page.text.content || '';
       await page.update({
-        "text.content": entry + currentContent
+        'text.content': entry + currentContent
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore registrazione favore:', error);
     }
@@ -826,43 +820,42 @@ class FavoriSystem {
 
       await ChatMessage.create({
         content: message,
-        speaker: ChatMessage.getSpeaker({actor}),
+        speaker: ChatMessage.getSpeaker({ actor }),
         flags: {
           'brancalonia-bigat': {
             favoreExecuted: true,
             favoreType: type,
-            details: details
+            details
           }
         }
       });
 
       // Effetti specifici per tipo
-      switch(type) {
-        case "barattiere":
+      switch (type) {
+        case 'barattiere':
           await this.executeBarattiere(actor);
           break;
-        case "compareEsperto":
+        case 'compareEsperto':
           await this.executeCompareEsperto(actor, details);
           break;
-        case "granlussoPrestito":
+        case 'granlussoPrestito':
           await this.executeGranlussoPrestito(actor, details);
           break;
-        case "informazioni":
+        case 'informazioni':
           await this.executeInformazioni(actor, details);
           break;
-        case "viaggioIncognito":
+        case 'viaggioIncognito':
           await this.executeViaggioIncognito(actor, details);
           break;
-        case "riscatto":
-        case "evasione":
+        case 'riscatto':
+        case 'evasione':
           // Questi richiedono intervento GM
           await ChatMessage.create({
             content: `<p>🎭 Il GM deve gestire <strong>${favore.name}</strong> per <strong>${details.target}</strong></p>`,
-            whisper: ChatMessage.getWhisperRecipients("GM")
+            whisper: ChatMessage.getWhisperRecipients('GM')
           });
           break;
       }
-
     } catch (error) {
       console.error('Brancalonia | Errore esecuzione favore:', error);
       ui.notifications.error('Errore durante l\'esecuzione del favore');
@@ -875,7 +868,7 @@ class FavoriSystem {
       const malefatte = actor.getFlag('brancalonia-bigat', 'malefatte') || [];
 
       if (malefatte.length === 0) {
-        ui.notifications.warn("Nessuna malefatta da insabbiare!");
+        ui.notifications.warn('Nessuna malefatta da insabbiare!');
         return;
       }
 
@@ -892,12 +885,12 @@ class FavoriSystem {
       `;
 
       new Dialog({
-        title: "🎭 Barattiere - Insabbia Malefatta",
+        title: '🎭 Barattiere - Insabbia Malefatta',
         content,
         buttons: {
           confirm: {
             icon: '<i class="fas fa-eraser"></i>',
-            label: "Insabbia",
+            label: 'Insabbia',
             callback: async (html) => {
               const index = parseInt(html.find('select[name="malefatta"]').val());
               const removed = malefatte.splice(index, 1)[0];
@@ -918,17 +911,16 @@ class FavoriSystem {
 
               await ChatMessage.create({
                 content: message,
-                speaker: ChatMessage.getSpeaker({actor})
+                speaker: ChatMessage.getSpeaker({ actor })
               });
             }
           },
           cancel: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Annulla"
+            label: 'Annulla'
           }
         }
       }).render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore barattiere:', error);
     }
@@ -953,9 +945,8 @@ class FavoriSystem {
 
       await ChatMessage.create({
         content: message,
-        speaker: ChatMessage.getSpeaker({actor})
+        speaker: ChatMessage.getSpeaker({ actor })
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore compare esperto:', error);
     }
@@ -989,7 +980,7 @@ class FavoriSystem {
 
       await ChatMessage.create({
         content: message,
-        speaker: ChatMessage.getSpeaker({actor})
+        speaker: ChatMessage.getSpeaker({ actor })
       });
 
       // Applica benefici immediati se applicabili
@@ -998,7 +989,6 @@ class FavoriSystem {
           game.brancalonia.covoGranlussi.applyGranlussiBenefits([actor]);
         }, 100);
       }
-
     } catch (error) {
       console.error('Brancalonia | Errore granlusso prestito:', error);
     }
@@ -1008,19 +998,19 @@ class FavoriSystem {
   async executeInformazioni(actor, details) {
     try {
       // Tira per qualità informazioni
-      const roll = await new Roll("1d20").evaluate();
-      let quality = "vaghe";
-      let qualityColor = "#6c757d";
+      const roll = await new Roll('1d20').evaluate();
+      let quality = 'vaghe';
+      let qualityColor = '#6c757d';
 
       if (roll.total >= 15) {
-        quality = "dettagliate";
-        qualityColor = "#28a745";
+        quality = 'dettagliate';
+        qualityColor = '#28a745';
       } else if (roll.total >= 10) {
-        quality = "utili";
-        qualityColor = "#17a2b8";
+        quality = 'utili';
+        qualityColor = '#17a2b8';
       } else if (roll.total >= 5) {
-        quality = "generiche";
-        qualityColor = "#ffc107";
+        quality = 'generiche';
+        qualityColor = '#ffc107';
       }
 
       const message = `
@@ -1033,11 +1023,10 @@ class FavoriSystem {
 
       await ChatMessage.create({
         content: message,
-        speaker: ChatMessage.getSpeaker({actor}),
-        whisper: ChatMessage.getWhisperRecipients("GM").concat([game.user.id]),
+        speaker: ChatMessage.getSpeaker({ actor }),
+        whisper: ChatMessage.getWhisperRecipients('GM').concat([game.user.id]),
         rolls: [roll]
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore informazioni:', error);
     }
@@ -1061,9 +1050,8 @@ class FavoriSystem {
 
       await ChatMessage.create({
         content: message,
-        speaker: ChatMessage.getSpeaker({actor})
+        speaker: ChatMessage.getSpeaker({ actor })
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore viaggio incognito:', error);
     }
@@ -1106,12 +1094,12 @@ class FavoriSystem {
       `;
 
       new Dialog({
-        title: "💳 Paga Debiti di Favori",
+        title: '💳 Paga Debiti di Favori',
         content,
         buttons: {
           pay: {
             icon: '<i class="fas fa-credit-card"></i>',
-            label: "Paga",
+            label: 'Paga',
             callback: async (html) => {
               const amount = parseInt(html.find('input[name="payment"]').val()) || 0;
               if (amount > 0) {
@@ -1121,11 +1109,10 @@ class FavoriSystem {
           },
           cancel: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Annulla"
+            label: 'Annulla'
           }
         }
       }).render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore dialog pagamento:', error);
     }
@@ -1140,12 +1127,12 @@ class FavoriSystem {
       const toPay = Math.min(amount, currentDebt, currentMoney);
 
       if (toPay === 0) {
-        ui.notifications.warn("Nessun pagamento possibile!");
+        ui.notifications.warn('Nessun pagamento possibile!');
         return;
       }
 
       await actor.update({
-        "system.currency.gp": currentMoney - toPay
+        'system.currency.gp': currentMoney - toPay
       });
 
       await actor.setFlag('brancalonia-bigat', 'favoriDebts', currentDebt - toPay);
@@ -1160,13 +1147,12 @@ class FavoriSystem {
 
       await ChatMessage.create({
         content: message,
-        speaker: ChatMessage.getSpeaker({actor})
+        speaker: ChatMessage.getSpeaker({ actor })
       });
 
       if (currentDebt - toPay === 0) {
         ui.notifications.info('Tutti i debiti sono stati saldati! Ora puoi richiedere altri favori.');
       }
-
     } catch (error) {
       console.error('Brancalonia | Errore pagamento debiti:', error);
       ui.notifications.error('Errore durante il pagamento dei debiti');
@@ -1265,18 +1251,17 @@ class FavoriSystem {
       `;
 
       new Dialog({
-        title: "📊 Status Favori",
-        content: content,
+        title: '📊 Status Favori',
+        content,
         buttons: {
           close: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Chiudi"
+            label: 'Chiudi'
           }
         }
       }, {
         width: 500
       }).render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore status favori:', error);
       ui.notifications.error('Errore visualizzazione status favori');
@@ -1287,9 +1272,9 @@ class FavoriSystem {
   checkBarattiereRequests() {
     try {
       const actors = game.actors.filter(a =>
-        a.type === "character" &&
+        a.type === 'character' &&
         a.hasPlayerOwner &&
-        (a.getFlag("brancalonia-bigat", "malefatte") || []).length > 0
+        (a.getFlag('brancalonia-bigat', 'malefatte') || []).length > 0
       );
 
       actors.forEach(actor => {
@@ -1314,7 +1299,6 @@ class FavoriSystem {
           });
         }
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore controllo barattiere:', error);
     }
@@ -1338,7 +1322,6 @@ class FavoriSystem {
 
         console.log(`Brancalonia | Favori temporanei puliti per ${actor.name}`);
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore cleanup favori:', error);
     }

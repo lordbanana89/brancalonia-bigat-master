@@ -53,10 +53,9 @@ class CovoGranlussiSystem {
 
       console.log('Brancalonia | Sistema Granlussi del Covo inizializzato con successo');
       return instance;
-
     } catch (error) {
       console.error('Brancalonia | Errore inizializzazione Sistema Granlussi del Covo:', error);
-      ui.notifications.error('Errore inizializzazione Sistema Granlussi del Covo: ' + error.message);
+      ui.notifications.error(`Errore inizializzazione Sistema Granlussi del Covo: ${error.message}`);
     }
   }
 
@@ -185,12 +184,12 @@ class CovoGranlussiSystem {
         type: 'script',
         img: 'icons/environment/settlement/house-cottage.webp',
         command: [
-          "const actor = game.user.character || canvas.tokens.controlled[0]?.actor;",
-          "if (!actor) {",
+          'const actor = game.user.character || canvas.tokens.controlled[0]?.actor;',
+          'if (!actor) {',
           "  ui.notifications.warn('Seleziona un personaggio o token');",
-          "  return;",
-          "}",
-          "game.brancalonia?.covoGranlussi?.openCovoManagementDialog(actor);"
+          '  return;',
+          '}',
+          'game.brancalonia?.covoGranlussi?.openCovoManagementDialog(actor);'
         ].join('\n')
       });
     }
@@ -202,12 +201,12 @@ class CovoGranlussiSystem {
         type: 'script',
         img: 'icons/tools/hand/hammer-and-anvil.webp',
         command: [
-          "const actor = game.user.character || canvas.tokens.controlled[0]?.actor;",
-          "if (!actor) {",
+          'const actor = game.user.character || canvas.tokens.controlled[0]?.actor;',
+          'if (!actor) {',
           "  ui.notifications.warn('Seleziona un personaggio o token');",
-          "  return;",
-          "}",
-          "game.brancalonia?.covoGranlussi?.showCovoStatus(actor);"
+          '  return;',
+          '}',
+          'game.brancalonia?.covoGranlussi?.showCovoStatus(actor);'
         ].join('\n')
       });
     }
@@ -292,7 +291,6 @@ class CovoGranlussiSystem {
       this.initialized = true;
       console.log('Brancalonia | Sistema Granlussi del Covo configurato');
       ui.notifications.info('Sistema Granlussi del Covo attivo');
-
     } catch (error) {
       console.error('Brancalonia | Errore inizializzazione sistema granlussi:', error);
       ui.notifications.error('Errore inizializzazione Sistema Granlussi del Covo');
@@ -303,30 +301,30 @@ class CovoGranlussiSystem {
   async loadGranlussiConfig() {
     this.granlussi = {
       borsaNera: {
-        name: "Borsa Nera",
-        icon: "icons/containers/bags/pouch-simple-leather-brown.webp",
-        description: "Rete commerciale per oggetti magici e materiali rari",
-        type: "commerce",
+        name: 'Borsa Nera',
+        icon: 'icons/containers/bags/pouch-simple-leather-brown.webp',
+        description: 'Rete commerciale per oggetti magici e materiali rari',
+        type: 'commerce',
         levels: {
           1: {
             cost: 100,
-            benefits: "Oggetti magici comuni al costo di 50 mo",
+            benefits: 'Oggetti magici comuni al costo di 50 mo',
             monthlyItems: 1,
-            rarity: "common",
+            rarity: 'common',
             discount: 0.5
           },
           2: {
             cost: 50,
-            benefits: "Oggetti magici non comuni al costo di 150 mo",
+            benefits: 'Oggetti magici non comuni al costo di 150 mo',
             monthlyItems: 1,
-            rarity: "uncommon",
+            rarity: 'uncommon',
             discount: 0.3
           },
           3: {
             cost: 50,
-            benefits: "Il ricettatore può provare a recuperare oggetti specifici",
+            benefits: 'Il ricettatore può provare a recuperare oggetti specifici',
             monthlyItems: 1,
-            rarity: "rare",
+            rarity: 'rare',
             specificOrder: true,
             discount: 0.2
           }
@@ -334,83 +332,83 @@ class CovoGranlussiSystem {
       },
 
       cantina: {
-        name: "Cantina",
-        icon: "icons/environment/settlement/cellar.webp",
-        description: "Luogo fresco per conservare cibo e bevande",
-        type: "rest",
-        provides: "Utensili da Cuoco",
+        name: 'Cantina',
+        icon: 'icons/environment/settlement/cellar.webp',
+        description: 'Luogo fresco per conservare cibo e bevande',
+        type: 'rest',
+        provides: 'Utensili da Cuoco',
         levels: {
           1: {
             cost: 100,
-            benefits: "Recuperi tutti i Dadi Vita invece che metà durante riposo lungo",
+            benefits: 'Recuperi tutti i Dadi Vita invece che metà durante riposo lungo',
             rations: 1,
-            effect: "fullHD"
+            effect: 'fullHD'
           },
           2: {
             cost: 50,
-            benefits: "Recuperi 1 livello di indebolimento aggiuntivo durante riposo lungo",
+            benefits: 'Recuperi 1 livello di indebolimento aggiuntivo durante riposo lungo',
             rations: 2,
-            effect: "extraExhaustion"
+            effect: 'extraExhaustion'
           },
           3: {
             cost: 50,
-            benefits: "Ottieni 1 punto ispirazione durante riposo lungo",
+            benefits: 'Ottieni 1 punto ispirazione durante riposo lungo',
             rations: 3,
-            effect: "inspiration"
+            effect: 'inspiration'
           }
         }
       },
 
       distilleria: {
-        name: "Distilleria",
-        icon: "icons/tools/laboratory/alembic-copper-blue.webp",
-        description: "Alambicchi per distillare intrugli e bevande",
-        type: "alchemy",
-        provides: "Scorte da Mescitore e Scorte da Alchimista",
+        name: 'Distilleria',
+        icon: 'icons/tools/laboratory/alembic-copper-blue.webp',
+        description: 'Alambicchi per distillare intrugli e bevande',
+        type: 'alchemy',
+        provides: 'Scorte da Mescitore e Scorte da Alchimista',
         levels: {
           1: {
             cost: 100,
-            benefits: "Acquamorte o Richiamino gratuiti",
-            intrugli: ["acquamorte", "richiamino"],
+            benefits: 'Acquamorte o Richiamino gratuiti',
+            intrugli: ['acquamorte', 'richiamino'],
             dailyProduction: 1
           },
           2: {
             cost: 50,
-            benefits: "Afrore di Servatico o Infernet Malebranca gratuiti",
-            intrugli: ["afrore_servatico", "infernet_malebranca"],
+            benefits: 'Afrore di Servatico o Infernet Malebranca gratuiti',
+            intrugli: ['afrore_servatico', 'infernet_malebranca'],
             dailyProduction: 1
           },
           3: {
             cost: 50,
-            benefits: "Cordiale Biondino o Intruglio della Forza gratuiti",
-            intrugli: ["cordiale_biondino", "intruglio_forza"],
+            benefits: 'Cordiale Biondino o Intruglio della Forza gratuiti',
+            intrugli: ['cordiale_biondino', 'intruglio_forza'],
             dailyProduction: 2
           }
         }
       },
 
       fucina: {
-        name: "Fucina",
-        icon: "icons/tools/smithing/anvil.webp",
-        description: "Forge per riparare e migliorare equipaggiamento",
-        type: "crafting",
-        provides: "Strumenti da Fabbro e Arnesi da Scasso",
+        name: 'Fucina',
+        icon: 'icons/tools/smithing/anvil.webp',
+        description: 'Forge per riparare e migliorare equipaggiamento',
+        type: 'crafting',
+        provides: 'Strumenti da Fabbro e Arnesi da Scasso',
         levels: {
           1: {
             cost: 100,
-            benefits: "Il fabbro può riparare oggetti metallici rotti",
+            benefits: 'Il fabbro può riparare oggetti metallici rotti',
             repairMetal: true,
             repairCost: 0.25
           },
           2: {
             cost: 50,
-            benefits: "Il fabbro può sbloccare lucchetti (non magici)",
+            benefits: 'Il fabbro può sbloccare lucchetti (non magici)',
             unlock: true,
             repairCost: 0.2
           },
           3: {
             cost: 50,
-            benefits: "Disponibili armi/armature non scadenti",
+            benefits: 'Disponibili armi/armature non scadenti',
             nonShoddy: true,
             repairCost: 0.1
           }
@@ -418,28 +416,28 @@ class CovoGranlussiSystem {
       },
 
       scuderie: {
-        name: "Scuderie",
-        icon: "icons/environment/settlement/stable.webp",
-        description: "Stalle per cavalcature e veicoli",
-        type: "transport",
+        name: 'Scuderie',
+        icon: 'icons/environment/settlement/stable.webp',
+        description: 'Stalle per cavalcature e veicoli',
+        type: 'transport',
         levels: {
           1: {
             cost: 100,
-            benefits: "Pony scadente, Asino, Mulo, Carretto scadente, Slitta scadente",
-            mounts: ["pony_shoddy", "donkey", "mule"],
-            vehicles: ["cart_shoddy", "sled_shoddy"],
+            benefits: 'Pony scadente, Asino, Mulo, Carretto scadente, Slitta scadente',
+            mounts: ['pony_shoddy', 'donkey', 'mule'],
+            vehicles: ['cart_shoddy', 'sled_shoddy'],
             maxLoans: 2
           },
           2: {
             cost: 50,
-            benefits: "Cavallo da Traino/Galoppo scadente, Carro scadente",
-            mounts: ["draft_horse_shoddy", "riding_horse_shoddy"],
-            vehicles: ["wagon_shoddy"],
+            benefits: 'Cavallo da Traino/Galoppo scadente, Carro scadente',
+            mounts: ['draft_horse_shoddy', 'riding_horse_shoddy'],
+            vehicles: ['wagon_shoddy'],
             maxLoans: 3
           },
           3: {
             cost: 50,
-            benefits: "Tutti i servizi precedenti ma non scadenti",
+            benefits: 'Tutti i servizi precedenti ma non scadenti',
             nonShoddy: true,
             maxLoans: 5
           }
@@ -454,79 +452,79 @@ class CovoGranlussiSystem {
   async loadIntruglioConfig() {
     this.intrugli = {
       acquamorte: {
-        name: "Acquamorte",
-        type: "consumable",
-        img: "icons/consumables/potions/bottle-round-corked-yellow.webp",
-        rarity: "common",
+        name: 'Acquamorte',
+        type: 'consumable',
+        img: 'icons/consumables/potions/bottle-round-corked-yellow.webp',
+        rarity: 'common',
         system: {
-          description: { value: "Cura 2d4+2 punti ferita quando bevuta." },
+          description: { value: 'Cura 2d4+2 punti ferita quando bevuta.' },
           uses: { value: 1, max: 1, per: null },
-          actionType: "heal",
-          damage: { parts: [["2d4 + 2", "healing"]] },
-          price: { value: 15, denomination: "gp" }
+          actionType: 'heal',
+          damage: { parts: [['2d4 + 2', 'healing']] },
+          price: { value: 15, denomination: 'gp' }
         }
       },
       richiamino: {
-        name: "Richiamino",
-        type: "consumable",
-        img: "icons/consumables/potions/bottle-round-flask-purple.webp",
-        rarity: "common",
+        name: 'Richiamino',
+        type: 'consumable',
+        img: 'icons/consumables/potions/bottle-round-flask-purple.webp',
+        rarity: 'common',
         system: {
-          description: { value: "Risveglia immediatamente una creatura priva di sensi (0 PF)." },
+          description: { value: 'Risveglia immediatamente una creatura priva di sensi (0 PF).' },
           uses: { value: 1, max: 1, per: null },
-          actionType: "util",
-          price: { value: 20, denomination: "gp" }
+          actionType: 'util',
+          price: { value: 20, denomination: 'gp' }
         }
       },
       afrore_servatico: {
-        name: "Afrore di Servatico",
-        type: "consumable",
-        img: "icons/consumables/potions/bottle-round-corked-green.webp",
-        rarity: "uncommon",
+        name: 'Afrore di Servatico',
+        type: 'consumable',
+        img: 'icons/consumables/potions/bottle-round-corked-green.webp',
+        rarity: 'uncommon',
         system: {
-          description: { value: "Conferisce resistenza a veleni per 1 ora." },
+          description: { value: 'Conferisce resistenza a veleni per 1 ora.' },
           uses: { value: 1, max: 1, per: null },
-          duration: { value: 1, units: "hour" },
-          actionType: "util",
-          price: { value: 30, denomination: "gp" }
+          duration: { value: 1, units: 'hour' },
+          actionType: 'util',
+          price: { value: 30, denomination: 'gp' }
         }
       },
       infernet_malebranca: {
-        name: "Infernet Malebranca",
-        type: "consumable",
-        img: "icons/consumables/potions/bottle-round-corked-red.webp",
-        rarity: "uncommon",
+        name: 'Infernet Malebranca',
+        type: 'consumable',
+        img: 'icons/consumables/potions/bottle-round-corked-red.webp',
+        rarity: 'uncommon',
         system: {
-          description: { value: "Conferisce resistenza al fuoco per 1 ora." },
+          description: { value: 'Conferisce resistenza al fuoco per 1 ora.' },
           uses: { value: 1, max: 1, per: null },
-          duration: { value: 1, units: "hour" },
-          actionType: "util",
-          price: { value: 40, denomination: "gp" }
+          duration: { value: 1, units: 'hour' },
+          actionType: 'util',
+          price: { value: 40, denomination: 'gp' }
         }
       },
       cordiale_biondino: {
-        name: "Cordiale Biondino",
-        type: "consumable",
-        img: "icons/consumables/potions/bottle-round-corked-orange.webp",
-        rarity: "uncommon",
+        name: 'Cordiale Biondino',
+        type: 'consumable',
+        img: 'icons/consumables/potions/bottle-round-corked-orange.webp',
+        rarity: 'uncommon',
         system: {
-          description: { value: "Rimuove 1 livello di indebolimento." },
+          description: { value: 'Rimuove 1 livello di indebolimento.' },
           uses: { value: 1, max: 1, per: null },
-          actionType: "heal",
-          price: { value: 50, denomination: "gp" }
+          actionType: 'heal',
+          price: { value: 50, denomination: 'gp' }
         }
       },
       intruglio_forza: {
-        name: "Intruglio della Forza",
-        type: "consumable",
-        img: "icons/consumables/potions/bottle-bulb-corked-red.webp",
-        rarity: "rare",
+        name: 'Intruglio della Forza',
+        type: 'consumable',
+        img: 'icons/consumables/potions/bottle-bulb-corked-red.webp',
+        rarity: 'rare',
         system: {
-          description: { value: "Forza diventa 21 per 1 ora." },
+          description: { value: 'Forza diventa 21 per 1 ora.' },
           uses: { value: 1, max: 1, per: null },
-          duration: { value: 1, units: "hour" },
-          actionType: "util",
-          price: { value: 100, denomination: "gp" }
+          duration: { value: 1, units: 'hour' },
+          actionType: 'util',
+          price: { value: 100, denomination: 'gp' }
         }
       }
     };
@@ -570,7 +568,6 @@ class CovoGranlussiSystem {
       $html.find('.manage-covo').off('click').on('click', () => {
         this.openCovoManagementDialog(actor);
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore render covo UI:', error);
     }
@@ -714,7 +711,7 @@ class CovoGranlussiSystem {
         buttons: {
           close: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Chiudi"
+            label: 'Chiudi'
           }
         },
         render: (html) => {
@@ -761,7 +758,6 @@ class CovoGranlussiSystem {
       });
 
       dialog.render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore dialog gestione covo:', error);
       ui.notifications.error('Errore apertura gestione covo');
@@ -773,13 +769,13 @@ class CovoGranlussiSystem {
     try {
       const currentMoney = actor.system.currency?.gp || 0;
       if (currentMoney < cost) {
-        ui.notifications.error("Fondi insufficienti!");
+        ui.notifications.error('Fondi insufficienti!');
         return;
       }
 
       // Sottrai denaro
       await actor.update({
-        "system.currency.gp": currentMoney - cost
+        'system.currency.gp': currentMoney - cost
       });
 
       // Aumenta livello Granlusso
@@ -812,18 +808,17 @@ class CovoGranlussiSystem {
 
       await ChatMessage.create({
         content: message,
-        speaker: ChatMessage.getSpeaker({actor}),
+        speaker: ChatMessage.getSpeaker({ actor }),
         flags: {
           'brancalonia-bigat': {
             granlussoUpgrade: true,
-            granlussoKey: granlussoKey,
-            newLevel: newLevel
+            granlussoKey,
+            newLevel
           }
         }
       });
 
       console.log(`Brancalonia | Granlusso ${granlussoKey} migliorato al livello ${newLevel} per ${actor.name}`);
-
     } catch (error) {
       console.error('Brancalonia | Errore upgrade granlusso:', error);
       ui.notifications.error('Errore durante l\'upgrade del granlusso');
@@ -889,18 +884,17 @@ class CovoGranlussiSystem {
       `;
 
       new Dialog({
-        title: "📊 Status Covo",
-        content: content,
+        title: '📊 Status Covo',
+        content,
         buttons: {
           close: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Chiudi"
+            label: 'Chiudi'
           }
         }
       }, {
         width: 500
       }).render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore status covo:', error);
       ui.notifications.error('Errore visualizzazione status covo');
@@ -917,7 +911,6 @@ class CovoGranlussiSystem {
       await actor.unsetFlag('brancalonia-bigat', 'borsaNeraLastCheck');
 
       console.log(`Brancalonia | Covo resettato per ${actor.name}`);
-
     } catch (error) {
       console.error('Brancalonia | Errore reset covo:', error);
       ui.notifications.error('Errore durante il reset del covo');
@@ -943,7 +936,7 @@ class CovoGranlussiSystem {
 
           await ChatMessage.create({
             content: message,
-            speaker: ChatMessage.getSpeaker({actor})
+            speaker: ChatMessage.getSpeaker({ actor })
           });
         }
 
@@ -969,7 +962,6 @@ class CovoGranlussiSystem {
           await this.checkBorsaNeraItems(actor, covo.borsaNera);
         }
       }
-
     } catch (error) {
       console.error('Brancalonia | Errore applicazione benefici granlussi:', error);
     }
@@ -991,7 +983,7 @@ class CovoGranlussiSystem {
         case 'extraExhaustion':
           if (actor.system.attributes.exhaustion > 0) {
             const newExhaustion = Math.max(0, actor.system.attributes.exhaustion - 1);
-            await actor.update({'system.attributes.exhaustion': newExhaustion});
+            await actor.update({ 'system.attributes.exhaustion': newExhaustion });
             effects.push('Recuperi 1 livello di indebolimento aggiuntivo');
           }
           break;
@@ -1013,10 +1005,9 @@ class CovoGranlussiSystem {
 
         await ChatMessage.create({
           content: message,
-          speaker: ChatMessage.getSpeaker({actor})
+          speaker: ChatMessage.getSpeaker({ actor })
         });
       }
-
     } catch (error) {
       console.error('Brancalonia | Errore benefici cantina:', error);
     }
@@ -1040,18 +1031,18 @@ class CovoGranlussiSystem {
       `;
 
       new Dialog({
-        title: "🧪 Distilleria - Intruglio Gratuito",
+        title: '🧪 Distilleria - Intruglio Gratuito',
         content,
         buttons: {
           confirm: {
             icon: '<i class="fas fa-flask"></i>',
-            label: "Prendi Intruglio",
+            label: 'Prendi Intruglio',
             callback: async (html) => {
               const chosen = html.find('select[name="intruglio"]').val();
               const itemData = foundry.utils.duplicate(this.intrugli[chosen]);
 
               if (itemData) {
-                await actor.createEmbeddedDocuments("Item", [itemData]);
+                await actor.createEmbeddedDocuments('Item', [itemData]);
 
                 const message = `
                   <div style="border: 1px solid #17a2b8; padding: 8px; border-radius: 3px;">
@@ -1061,18 +1052,17 @@ class CovoGranlussiSystem {
 
                 await ChatMessage.create({
                   content: message,
-                  speaker: ChatMessage.getSpeaker({actor})
+                  speaker: ChatMessage.getSpeaker({ actor })
                 });
               }
             }
           },
           cancel: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Annulla"
+            label: 'Annulla'
           }
         }
       }).render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore selezione intruglio:', error);
     }
@@ -1083,7 +1073,7 @@ class CovoGranlussiSystem {
     try {
       const shoddyItems = actor.items.filter(i =>
         i.getFlag('brancalonia-bigat', 'shoddy') &&
-        ["weapon", "equipment"].includes(i.type)
+        ['weapon', 'equipment'].includes(i.type)
       );
 
       if (shoddyItems.length === 0) {
@@ -1113,12 +1103,12 @@ class CovoGranlussiSystem {
       `;
 
       new Dialog({
-        title: "🔨 Fucina - Migliora Oggetti",
+        title: '🔨 Fucina - Migliora Oggetti',
         content,
         buttons: {
           confirm: {
             icon: '<i class="fas fa-hammer"></i>',
-            label: "Conferma Miglioramenti",
+            label: 'Conferma Miglioramenti',
             callback: async (html) => {
               const selected = html.find('input[name="improve"]:checked')
                 .toArray()
@@ -1128,7 +1118,7 @@ class CovoGranlussiSystem {
               for (const itemId of selected) {
                 const item = actor.items.get(itemId);
                 if (item) {
-                  await item.setFlag("brancalonia-bigat", "temporaryImproved", true);
+                  await item.setFlag('brancalonia-bigat', 'temporaryImproved', true);
                 }
               }
 
@@ -1143,18 +1133,17 @@ class CovoGranlussiSystem {
 
                 await ChatMessage.create({
                   content: message,
-                  speaker: ChatMessage.getSpeaker({actor})
+                  speaker: ChatMessage.getSpeaker({ actor })
                 });
               }
             }
           },
           cancel: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Annulla"
+            label: 'Annulla'
           }
         }
       }).render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore selezione oggetti da migliorare:', error);
     }
@@ -1176,7 +1165,7 @@ class CovoGranlussiSystem {
 
       // Se livello 3, rimuovi "scadente"
       const cleanName = (name) => {
-        let clean = name.replace('_shoddy', '').replace('_', ' ');
+        const clean = name.replace('_shoddy', '').replace('_', ' ');
         return clean.charAt(0).toUpperCase() + clean.slice(1);
       };
 
@@ -1224,22 +1213,22 @@ class CovoGranlussiSystem {
       `;
 
       new Dialog({
-        title: "🐎 Scuderie - Prestito",
+        title: '🐎 Scuderie - Prestito',
         content,
         buttons: {
           confirm: {
             icon: '<i class="fas fa-handshake"></i>',
-            label: "Prendi in Prestito",
+            label: 'Prendi in Prestito',
             callback: async (html) => {
               const mount = html.find('select[name="mount"]').val();
               const vehicle = html.find('select[name="vehicle"]').val();
 
               const loans = [];
-              if (mount) loans.push({type: "mount", name: mount, displayName: cleanName(mount)});
-              if (vehicle) loans.push({type: "vehicle", name: vehicle, displayName: cleanName(vehicle)});
+              if (mount) loans.push({ type: 'mount', name: mount, displayName: cleanName(mount) });
+              if (vehicle) loans.push({ type: 'vehicle', name: vehicle, displayName: cleanName(vehicle) });
 
               if (loans.length > 0) {
-                await actor.setFlag("brancalonia-bigat", "scuderieLoan", loans);
+                await actor.setFlag('brancalonia-bigat', 'scuderieLoan', loans);
 
                 const loanText = loans.map(l => l.displayName).join(' e ');
 
@@ -1251,18 +1240,17 @@ class CovoGranlussiSystem {
 
                 await ChatMessage.create({
                   content: message,
-                  speaker: ChatMessage.getSpeaker({actor})
+                  speaker: ChatMessage.getSpeaker({ actor })
                 });
               }
             }
           },
           cancel: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Annulla"
+            label: 'Annulla'
           }
         }
       }).render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore prestito scuderie:', error);
     }
@@ -1279,7 +1267,6 @@ class CovoGranlussiSystem {
         await this.generateMagicItems(actor, borsaNeraLevel);
         await actor.setFlag('brancalonia-bigat', 'borsaNeraLastCheck', now);
       }
-
     } catch (error) {
       console.error('Brancalonia | Errore controllo Borsa Nera:', error);
     }
@@ -1302,14 +1289,14 @@ class CovoGranlussiSystem {
       const items = [
         {
           name: `Oggetto Magico ${rarity.charAt(0).toUpperCase() + rarity.slice(1)}`,
-          type: "equipment",
-          img: "icons/magic/defensive/amulet-gem-blue-gold.webp",
+          type: 'equipment',
+          img: 'icons/magic/defensive/amulet-gem-blue-gold.webp',
           system: {
             description: { value: `Un oggetto magico di rarità ${rarity} disponibile dalla Borsa Nera del covo.` },
-            rarity: rarity,
+            rarity,
             price: {
-              value: rarity === "common" ? 50 : rarity === "uncommon" ? 150 : 500,
-              denomination: "gp"
+              value: rarity === 'common' ? 50 : rarity === 'uncommon' ? 150 : 500,
+              denomination: 'gp'
             }
           }
         }
@@ -1330,7 +1317,7 @@ class CovoGranlussiSystem {
 
       await ChatMessage.create({
         content: message,
-        speaker: ChatMessage.getSpeaker({actor}),
+        speaker: ChatMessage.getSpeaker({ actor }),
         flags: {
           'brancalonia-bigat': {
             borsaNeraItems: items,
@@ -1338,7 +1325,6 @@ class CovoGranlussiSystem {
           }
         }
       });
-
     } catch (error) {
       console.error('Brancalonia | Errore generazione oggetti magici:', error);
     }
@@ -1376,19 +1362,19 @@ class CovoGranlussiSystem {
       `;
 
       new Dialog({
-        title: "🏗️ Granlussi - Fase Sbraco",
+        title: '🏗️ Granlussi - Fase Sbraco',
         content,
         buttons: {
           close: {
             icon: '<i class="fas fa-times"></i>',
-            label: "Chiudi"
+            label: 'Chiudi'
           }
         },
         render: (html) => {
           html.find('.manage-all-covos').off('click').on('click', () => {
             // Apri gestione per tutti i PG
             const playerCharacters = game.actors.filter(a =>
-              a.type === "character" && a.hasPlayerOwner
+              a.type === 'character' && a.hasPlayerOwner
             );
 
             if (playerCharacters.length === 0) {
@@ -1408,7 +1394,6 @@ class CovoGranlussiSystem {
       }, {
         width: 500
       }).render(true);
-
     } catch (error) {
       console.error('Brancalonia | Errore gestione granlussi:', error);
     }
@@ -1483,12 +1468,12 @@ class CovoGranlussiSystem {
     `;
 
     new Dialog({
-      title: "📚 Guida Granlussi",
-      content: content,
+      title: '📚 Guida Granlussi',
+      content,
       buttons: {
         close: {
           icon: '<i class="fas fa-times"></i>',
-          label: "Chiudi"
+          label: 'Chiudi'
         }
       }
     }, {

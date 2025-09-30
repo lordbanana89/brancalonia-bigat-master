@@ -1,0 +1,27 @@
+{
+  "_id": "brancalonia013",
+  "name": "👑 Privilegi Background",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "scope": "global",
+  "command": "// Macro per Privilegi dei Background\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\nconst privileges = game.brancalonia?.BackgroundPrivileges;\nif (!privileges) {\n  ui.notifications.error('Sistema Privilegi non disponibile!');\n  return;\n}\n\nconst tokens = canvas.tokens.controlled;\nif (tokens.length === 0) {\n  ui.notifications.warn('Seleziona un token!');\n  return;\n}\n\nconst actor = tokens[0].actor;\nconst background = actor.items.find(i => i.type === 'background')?.name || 'Nessuno';\nconst activePrivileges = actor.getFlag('brancalonia-bigat', 'privileges') || {};\n\nnew Dialog({\n  title: '👑 Privilegi del Background',\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3>${actor.name}</h3>\n      <p><strong>Background:</strong> ${background}</p>\n      <hr>\n      <div style=\"background: #f5e6d3; padding: 10px; border-radius: 5px; margin: 10px 0;\">\n        <h4>Privilegi Disponibili:</h4>\n        ${background.includes('Ambulante') ? `\n          <div style=\"margin: 5px 0;\">\n            <strong>🚶 Vie delle Strade:</strong> Vantaggio su Sopravvivenza per orientarsi\n          </div>\n        ` : ''}\n        ${background.includes('Attaccabrighe') ? `\n          <div style=\"margin: 5px 0;\">\n            <strong>👊 Mani Pesanti:</strong> +2 danni nelle risse da taverna\n          </div>\n        ` : ''}\n        ${background.includes('Azzeccagarbugli') ? `\n          <div style=\"margin: 5px 0;\">\n            <strong>📜 Cavilli Legali:</strong> Riduce le taglie del 25%\n          </div>\n        ` : ''}\n        ${background.includes('Brado') ? `\n          <div style=\"margin: 5px 0;\">\n            <strong>🐺 Dimestichezza Selvatica:</strong> Può calmare bestie ostili\n          </div>\n        ` : ''}\n        ${background.includes('Cacciatore di Reliquie') ? `\n          <div style=\"margin: 5px 0;\">\n            <strong>✨ Occhio Esperto:</strong> Identifica oggetti magici\n          </div>\n        ` : ''}\n        ${background.includes('Duro') ? `\n          <div style=\"margin: 5px 0;\">\n            <strong>💪 Coriaceo:</strong> Resistenza 1 a danni contundenti\n          </div>\n        ` : ''}\n      </div>\n      <p style=\"text-align: center; font-style: italic;\">\"Il tuo passato definisce i tuoi talenti\"</p>\n    </div>\n  `,\n  buttons: {\n    activate: {\n      icon: '<i class=\"fas fa-power-off\"></i>',\n      label: 'Attiva Privilegio',\n      callback: () => {\n        privileges.activatePrivilege(actor);\n      }\n    },\n    check: {\n      icon: '<i class=\"fas fa-eye\"></i>',\n      label: 'Verifica Privilegi',\n      callback: () => {\n        privileges.checkPrivileges(actor);\n      }\n    },\n    help: {\n      icon: '<i class=\"fas fa-question\"></i>',\n      label: 'Aiuto',\n      callback: () => {\n        const content = `\n          <h3>Come funzionano i Privilegi</h3>\n          <p>Ogni background garantisce privilegi unici che si attivano automaticamente o manualmente:</p>\n          <ul>\n            <li><strong>Automatici:</strong> Si attivano quando necessario (es. Duro riduce sempre i danni)</li>\n            <li><strong>Manuali:</strong> Devi attivarli con questa macro o comandi chat</li>\n            <li><strong>Situazionali:</strong> Si attivano in specifiche circostanze</li>\n          </ul>\n          <h4>Comandi Chat:</h4>\n          <ul>\n            <li>/privilegi - Mostra i tuoi privilegi</li>\n            <li>/privilegio [nome] - Attiva un privilegio specifico</li>\n          </ul>\n        `;\n        new Dialog({\n          title: 'Aiuto Privilegi',\n          content: content,\n          buttons: { ok: { label: 'OK' } }\n        }).render(true);\n      }\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'activate'\n}).render(true);",
+  "folder": null,
+  "sort": 100012,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "character"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000012000,
+    "modifiedTime": 1700000012000,
+    "lastModifiedBy": "brancalonia"
+  }
+}

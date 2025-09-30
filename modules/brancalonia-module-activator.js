@@ -313,13 +313,10 @@ class BrancaloniaModuleActivator {
     this.registerGlobalSettings();
 
     // Hook per inizializzazione
-    Hooks.once('init', () => {
-      console.log('📦 Brancalonia | Fase INIT');
-      this.initPhase();
-    });
+    // Init hook rimosso - viene chiamato da initialize() esterno
 
     // Hook per ready
-    Hooks.once('ready', () => {
+    Hooks.once('init', () => {
       console.log('✅ Brancalonia | Fase READY');
       this.readyPhase();
 
@@ -444,7 +441,7 @@ class BrancaloniaModuleActivator {
 
     for (const [key, name] of Object.entries(moduleSettings)) {
       game.settings.register(this.ID, key, {
-        name: name,
+        name,
         hint: `Abilita/disabilita ${name}`,
         scope: 'world',
         config: true,
@@ -525,7 +522,7 @@ class BrancaloniaModuleActivator {
     `;
 
     ChatMessage.create({
-      content: content,
+      content,
       whisper: [game.user.id]
     });
   }
@@ -559,7 +556,7 @@ class BrancaloniaModuleActivator {
     `;
 
     ChatMessage.create({
-      content: content,
+      content,
       whisper: [game.user.id]
     });
   }
@@ -619,7 +616,7 @@ class BrancaloniaModuleActivator {
     `;
 
     ChatMessage.create({
-      content: content,
+      content,
       whisper: [game.user.id]
     });
   }
@@ -714,9 +711,12 @@ class BrancaloniaModuleActivator {
 }
 
 // Inizializza quando Foundry è pronto
-Hooks.once('init', () => {
-  BrancaloniaModuleActivator.initialize();
-});
+// Inizializzazione principale - solo una volta
+if (!window.BrancaloniaModuleActivator) {
+  Hooks.once('init', () => {
+    BrancaloniaModuleActivator.initialize();
+  });
 
-// Esporta globalmente
-window.BrancaloniaModuleActivator = BrancaloniaModuleActivator;
+  // Esporta globalmente
+  window.BrancaloniaModuleActivator = BrancaloniaModuleActivator;
+}

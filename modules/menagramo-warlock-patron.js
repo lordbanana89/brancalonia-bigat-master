@@ -162,7 +162,7 @@ class BrancaloniaMenagramo {
    */
   static extendActorClass() {
     const originalPrepareData = CONFIG.Actor.documentClass.prototype.prepareDerivedData;
-    CONFIG.Actor.documentClass.prototype.prepareDerivedData = function() {
+    CONFIG.Actor.documentClass.prototype.prepareDerivedData = function () {
       originalPrepareData.call(this);
 
       // Tracking Menagramo
@@ -216,18 +216,18 @@ class BrancaloniaMenagramo {
     CONFIG.BRANCALONIA = CONFIG.BRANCALONIA || {};
     CONFIG.BRANCALONIA.maledizioni = {
       minori: [
-        "Inciampi continuamente (-5 ft movimento)",
-        "Le monete ti scivolano dalle mani (svantaggio a Sleight of Hand)",
-        "Attiri insetti fastidiosi (svantaggio a Persuasione)",
-        "Rompi oggetti fragili al tocco",
-        "Il cibo ti va sempre di traverso"
+        'Inciampi continuamente (-5 ft movimento)',
+        'Le monete ti scivolano dalle mani (svantaggio a Sleight of Hand)',
+        'Attiri insetti fastidiosi (svantaggio a Persuasione)',
+        'Rompi oggetti fragili al tocco',
+        'Il cibo ti va sempre di traverso'
       ],
       maggiori: [
-        "Fallimento critico con 1-2",
-        "Vulnerabilità a un tipo di danno casuale",
-        "Non puoi riposare bene (1 solo dado vita per riposo lungo)",
-        "Le armi ti si rompono con 1 naturale",
-        "Svantaggio a tutti i TS per 24 ore"
+        'Fallimento critico con 1-2',
+        'Vulnerabilità a un tipo di danno casuale',
+        'Non puoi riposare bene (1 solo dado vita per riposo lungo)',
+        'Le armi ti si rompono con 1 naturale',
+        'Svantaggio a tutti i TS per 24 ore'
       ]
     };
 
@@ -239,14 +239,14 @@ class BrancaloniaMenagramo {
    */
   static async handleWarlockCreation(item, options, userId) {
     try {
-      if (item.type !== "class" || item.name !== "Warlock") return;
-      if (!item.parent || item.parent.documentName !== "Actor") return;
+      if (item.type !== 'class' || item.name !== 'Warlock') return;
+      if (!item.parent || item.parent.documentName !== 'Actor') return;
 
       const actor = item.parent;
 
       // Controlla se ha scelto Menagramo come patrono
       const patrono = actor.items.find(i =>
-        i.type === "feat" && i.name?.toLowerCase().includes("menagramo")
+        i.type === 'feat' && i.name?.toLowerCase().includes('menagramo')
       );
 
       if (patrono) {
@@ -264,9 +264,9 @@ class BrancaloniaMenagramo {
     try {
       // Aggiungi capacità base Iattura
       const iattura = {
-        name: "Iattura",
-        type: "feat",
-        img: "icons/magic/unholy/orb-beam-pink.webp",
+        name: 'Iattura',
+        type: 'feat',
+        img: 'icons/magic/unholy/orb-beam-pink.webp',
         system: {
           description: {
             value: `<p>Come azione bonus, puoi maledire una creatura entro 30 ft.
@@ -275,19 +275,19 @@ class BrancaloniaMenagramo {
                     <p><strong>Utilizzi:</strong> 1 per riposo breve</p>`
           },
           activation: {
-            type: "bonus",
+            type: 'bonus',
             cost: 1
           },
           uses: {
             value: 1,
             max: 1,
-            per: "sr"
+            per: 'sr'
           },
-          actionType: "save",
+          actionType: 'save',
           save: {
-            ability: "wis",
+            ability: 'wis',
             dc: null,
-            scaling: "spell"
+            scaling: 'spell'
           }
         },
         flags: {
@@ -298,7 +298,7 @@ class BrancaloniaMenagramo {
         }
       };
 
-      await actor.createEmbeddedDocuments("Item", [iattura]);
+      await actor.createEmbeddedDocuments('Item', [iattura]);
 
       ui.notifications.info(`${actor.name} ha ottenuto la capacità Iattura del Menagramo`);
     } catch (error) {
@@ -313,28 +313,28 @@ class BrancaloniaMenagramo {
     try {
       if (!changes.system?.details?.level) return;
 
-      const warlock = actor.items.find(i => i.type === "class" && i.name === "Warlock");
+      const warlock = actor.items.find(i => i.type === 'class' && i.name === 'Warlock');
       if (!warlock) return;
 
       const patrono = actor.items.find(i =>
-        i.type === "feat" && i.name?.toLowerCase().includes("menagramo")
+        i.type === 'feat' && i.name?.toLowerCase().includes('menagramo')
       );
       if (!patrono) return;
 
       const level = warlock.system.levels || 0;
 
       // Livello 6 - Tocco della Malasorte
-      if (level >= 6 && !actor.items.find(i => i.name === "Tocco della Malasorte")) {
+      if (level >= 6 && !actor.items.find(i => i.name === 'Tocco della Malasorte')) {
         await this.addToccoMalasorte(actor);
       }
 
       // Livello 10 - Aura di Iella
-      if (level >= 10 && !actor.items.find(i => i.name === "Aura di Iella")) {
+      if (level >= 10 && !actor.items.find(i => i.name === 'Aura di Iella')) {
         await this.addAuraIella(actor);
       }
 
       // Livello 14 - Maledizione Superiore
-      if (level >= 14 && !actor.items.find(i => i.name === "Maledizione Superiore")) {
+      if (level >= 14 && !actor.items.find(i => i.name === 'Maledizione Superiore')) {
         await this.addMaledizioneSuperiore(actor);
       }
     } catch (error) {
@@ -347,9 +347,9 @@ class BrancaloniaMenagramo {
    */
   static async addToccoMalasorte(actor) {
     const tocco = {
-      name: "Tocco della Malasorte",
-      type: "feat",
-      img: "icons/magic/unholy/hand-claw-glow-purple.webp",
+      name: 'Tocco della Malasorte',
+      type: 'feat',
+      img: 'icons/magic/unholy/hand-claw-glow-purple.webp',
       system: {
         description: {
           value: `<p>Quando colpisci una creatura con un attacco in mischia,
@@ -357,13 +357,13 @@ class BrancaloniaMenagramo {
                   <p><strong>Utilizzi:</strong> 1 per riposo lungo</p>`
         },
         activation: {
-          type: "special",
+          type: 'special',
           cost: 0
         },
         uses: {
           value: 1,
           max: 1,
-          per: "lr"
+          per: 'lr'
         }
       },
       flags: {
@@ -374,7 +374,7 @@ class BrancaloniaMenagramo {
       }
     };
 
-    await actor.createEmbeddedDocuments("Item", [tocco]);
+    await actor.createEmbeddedDocuments('Item', [tocco]);
     ui.notifications.info(`${actor.name} ha ottenuto Tocco della Malasorte`);
   }
 
@@ -383,16 +383,16 @@ class BrancaloniaMenagramo {
    */
   static async addAuraIella(actor) {
     const aura = {
-      name: "Aura di Iella",
-      type: "feat",
-      img: "icons/magic/unholy/orb-glowing-purple.webp",
+      name: 'Aura di Iella',
+      type: 'feat',
+      img: 'icons/magic/unholy/orb-glowing-purple.webp',
       system: {
         description: {
           value: `<p>I nemici entro 10 ft hanno -1 ai tiri per colpire contro di te.</p>
                   <p>Questa è un'aura passiva sempre attiva.</p>`
         },
         activation: {
-          type: "special",
+          type: 'special',
           cost: 0
         }
       },
@@ -404,17 +404,17 @@ class BrancaloniaMenagramo {
       }
     };
 
-    await actor.createEmbeddedDocuments("Item", [aura]);
+    await actor.createEmbeddedDocuments('Item', [aura]);
 
     // Applica effetto aura
     const effect = {
-      name: "Aura di Iella",
-      icon: "icons/magic/unholy/orb-glowing-purple.webp",
+      name: 'Aura di Iella',
+      icon: 'icons/magic/unholy/orb-glowing-purple.webp',
       duration: {},
       changes: [{
         key: `flags.${this.ID}.auraIella`,
         mode: CONST.ACTIVE_EFFECT_MODES.OVERRIDE,
-        value: "true",
+        value: 'true',
         priority: 20
       }],
       flags: {
@@ -425,7 +425,7 @@ class BrancaloniaMenagramo {
       }
     };
 
-    await actor.createEmbeddedDocuments("ActiveEffect", [effect]);
+    await actor.createEmbeddedDocuments('ActiveEffect', [effect]);
     ui.notifications.info(`${actor.name} ha ottenuto Aura di Iella`);
   }
 
@@ -434,9 +434,9 @@ class BrancaloniaMenagramo {
    */
   static async addMaledizioneSuperiore(actor) {
     const maledizione = {
-      name: "Maledizione Superiore",
-      type: "feat",
-      img: "icons/magic/unholy/strike-beam-pink.webp",
+      name: 'Maledizione Superiore',
+      type: 'feat',
+      img: 'icons/magic/unholy/strike-beam-pink.webp',
       system: {
         description: {
           value: `<p>Una volta per riposo lungo, puoi lanciare una maledizione maggiore
@@ -444,13 +444,13 @@ class BrancaloniaMenagramo {
                   <p><strong>Utilizzi:</strong> 1 per riposo lungo</p>`
         },
         activation: {
-          type: "action",
+          type: 'action',
           cost: 1
         },
         uses: {
           value: 1,
           max: 1,
-          per: "lr"
+          per: 'lr'
         }
       },
       flags: {
@@ -461,7 +461,7 @@ class BrancaloniaMenagramo {
       }
     };
 
-    await actor.createEmbeddedDocuments("Item", [maledizione]);
+    await actor.createEmbeddedDocuments('Item', [maledizione]);
     ui.notifications.info(`${actor.name} ha ottenuto Maledizione Superiore`);
   }
 
@@ -477,7 +477,7 @@ class BrancaloniaMenagramo {
         if (target) {
           this.iattura(actor, target);
         } else {
-          ui.notifications.warn("Seleziona un bersaglio per la Iattura");
+          ui.notifications.warn('Seleziona un bersaglio per la Iattura');
         }
         return false; // Previene uso normale
       }
@@ -487,7 +487,7 @@ class BrancaloniaMenagramo {
         if (target) {
           this.toccoMalasorte(actor, target);
         } else {
-          ui.notifications.warn("Seleziona un bersaglio per il Tocco della Malasorte");
+          ui.notifications.warn('Seleziona un bersaglio per il Tocco della Malasorte');
         }
         return false;
       }
@@ -497,7 +497,7 @@ class BrancaloniaMenagramo {
         if (target) {
           this.maledizioneSuperiore(actor, target);
         } else {
-          ui.notifications.warn("Seleziona un bersaglio per la Maledizione Superiore");
+          ui.notifications.warn('Seleziona un bersaglio per la Maledizione Superiore');
         }
         return false;
       }
@@ -515,7 +515,7 @@ class BrancaloniaMenagramo {
   static async iattura(caster, target) {
     try {
       if (!target) {
-        ui.notifications.warn("Seleziona un bersaglio per la Iattura");
+        ui.notifications.warn('Seleziona un bersaglio per la Iattura');
         return;
       }
 
@@ -523,9 +523,9 @@ class BrancaloniaMenagramo {
       const baseDC = game.settings.get(this.ID, 'iatturaBaseDC');
       const dc = baseDC + caster.system.attributes.prof + caster.system.abilities.cha.mod;
 
-      const save = await target.actor.rollAbilitySave("wis", {
+      const save = await target.actor.rollAbilitySave('wis', {
         targetValue: dc,
-        flavor: "TS contro Iattura del Menagramo"
+        flavor: 'TS contro Iattura del Menagramo'
       });
 
       if (save.total < dc) {
@@ -534,23 +534,23 @@ class BrancaloniaMenagramo {
         const duration = Math.round(10 * durationMultiplier);
 
         const effect = {
-          name: "Iattura del Menagramo",
-          icon: "icons/magic/unholy/orb-beam-pink.webp",
+          name: 'Iattura del Menagramo',
+          icon: 'icons/magic/unholy/orb-beam-pink.webp',
           duration: {
             rounds: duration,
             startRound: game.combat?.round || 0
           },
           changes: [
             {
-              key: "flags.dnd5e.disadvantage.attack.all",
+              key: 'flags.dnd5e.disadvantage.attack.all',
               mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
-              value: "1",
+              value: '1',
               priority: 20
             },
             {
-              key: "flags.dnd5e.disadvantage.save.all",
+              key: 'flags.dnd5e.disadvantage.save.all',
               mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
-              value: "1",
+              value: '1',
               priority: 20
             }
           ],
@@ -563,7 +563,7 @@ class BrancaloniaMenagramo {
         };
 
         if (game.settings.get(this.ID, 'autoApplyEffects')) {
-          await target.actor.createEmbeddedDocuments("ActiveEffect", [effect]);
+          await target.actor.createEmbeddedDocuments('ActiveEffect', [effect]);
         }
 
         ChatMessage.create({
@@ -572,14 +572,14 @@ class BrancaloniaMenagramo {
               <p><strong>${target.name}</strong> è perseguitato dalla sfortuna!</p>
               <p class="effect-desc">Svantaggio a tutti i tiri per colpire e tiri salvezza per ${duration} round</p>
           </div>`,
-          speaker: ChatMessage.getSpeaker({actor: caster})
+          speaker: ChatMessage.getSpeaker({ actor: caster })
         });
       } else {
         ChatMessage.create({
           content: `<div class="brancalonia menagramo-resist">
               <p><strong>${target.name}</strong> resiste alla Iattura!</p>
           </div>`,
-          speaker: ChatMessage.getSpeaker({actor: caster})
+          speaker: ChatMessage.getSpeaker({ actor: caster })
         });
       }
     } catch (error) {
@@ -594,7 +594,7 @@ class BrancaloniaMenagramo {
   static async toccoMalasorte(caster, target) {
     try {
       if (!target) {
-        ui.notifications.warn("Seleziona un bersaglio per il Tocco della Malasorte");
+        ui.notifications.warn('Seleziona un bersaglio per il Tocco della Malasorte');
         return;
       }
 
@@ -606,8 +606,8 @@ class BrancaloniaMenagramo {
       const duration = Math.round(3600 * durationMultiplier); // 1 ora
 
       const effect = {
-        name: "Tocco della Malasorte",
-        icon: "icons/magic/unholy/hand-claw-glow-purple.webp",
+        name: 'Tocco della Malasorte',
+        icon: 'icons/magic/unholy/hand-claw-glow-purple.webp',
         duration: {
           seconds: duration
         },
@@ -617,13 +617,13 @@ class BrancaloniaMenagramo {
           [this.ID]: {
             menagramo: true,
             toccoMalasorte: true,
-            maledizione: maledizione
+            maledizione
           }
         }
       };
 
       if (game.settings.get(this.ID, 'autoApplyEffects')) {
-        await target.actor.createEmbeddedDocuments("ActiveEffect", [effect]);
+        await target.actor.createEmbeddedDocuments('ActiveEffect', [effect]);
       }
 
       ChatMessage.create({
@@ -631,9 +631,9 @@ class BrancaloniaMenagramo {
             <h3>☠️ Tocco della Malasorte! ☠️</h3>
             <p><strong>${target.name}</strong> è afflitto da:</p>
             <p class="curse-desc">"${maledizione}"</p>
-            <p class="duration">Durata: ${Math.round(duration/3600)} ora/e</p>
+            <p class="duration">Durata: ${Math.round(duration / 3600)} ora/e</p>
         </div>`,
-        speaker: ChatMessage.getSpeaker({actor: caster})
+        speaker: ChatMessage.getSpeaker({ actor: caster })
       });
     } catch (error) {
       console.error('Errore Tocco della Malasorte:', error);
@@ -647,7 +647,7 @@ class BrancaloniaMenagramo {
   static async maledizioneSuperiore(caster, target) {
     try {
       if (!target) {
-        ui.notifications.warn("Seleziona un bersaglio per la Maledizione Superiore");
+        ui.notifications.warn('Seleziona un bersaglio per la Maledizione Superiore');
         return;
       }
 
@@ -656,8 +656,8 @@ class BrancaloniaMenagramo {
       const maledizione = maledizioni[Math.floor(Math.random() * maledizioni.length)];
 
       const effect = {
-        name: "Maledizione Superiore",
-        icon: "icons/magic/unholy/strike-beam-pink.webp",
+        name: 'Maledizione Superiore',
+        icon: 'icons/magic/unholy/strike-beam-pink.webp',
         duration: {
           seconds: 28800 // 8 ore (riposo lungo)
         },
@@ -667,13 +667,13 @@ class BrancaloniaMenagramo {
           [this.ID]: {
             menagramo: true,
             maledizioneSuperiore: true,
-            maledizione: maledizione
+            maledizione
           }
         }
       };
 
       if (game.settings.get(this.ID, 'autoApplyEffects')) {
-        await target.actor.createEmbeddedDocuments("ActiveEffect", [effect]);
+        await target.actor.createEmbeddedDocuments('ActiveEffect', [effect]);
       }
 
       ChatMessage.create({
@@ -683,7 +683,7 @@ class BrancaloniaMenagramo {
             <p class="curse-desc">"${maledizione}"</p>
             <p class="duration">Durata: Fino al prossimo riposo lungo</p>
         </div>`,
-        speaker: ChatMessage.getSpeaker({actor: caster})
+        speaker: ChatMessage.getSpeaker({ actor: caster })
       });
     } catch (error) {
       console.error('Errore Maledizione Superiore:', error);
@@ -697,49 +697,49 @@ class BrancaloniaMenagramo {
   static parseMaledizione(desc, maggiore = false) {
     const changes = [];
 
-    if (desc.includes("movimento")) {
+    if (desc.includes('movimento')) {
       changes.push({
-        key: "system.attributes.movement.walk",
+        key: 'system.attributes.movement.walk',
         mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-        value: "-5",
+        value: '-5',
         priority: 20
       });
     }
 
-    if (desc.includes("svantaggio") && desc.includes("Sleight")) {
+    if (desc.includes('svantaggio') && desc.includes('Sleight')) {
       changes.push({
-        key: "flags.dnd5e.disadvantage.skill.slt",
+        key: 'flags.dnd5e.disadvantage.skill.slt',
         mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
-        value: "1",
+        value: '1',
         priority: 20
       });
     }
 
-    if (desc.includes("svantaggio") && desc.includes("Persuasione")) {
+    if (desc.includes('svantaggio') && desc.includes('Persuasione')) {
       changes.push({
-        key: "flags.dnd5e.disadvantage.skill.per",
+        key: 'flags.dnd5e.disadvantage.skill.per',
         mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
-        value: "1",
+        value: '1',
         priority: 20
       });
     }
 
     // Effetti maggiori
     if (maggiore) {
-      if (desc.includes("svantaggio a tutti i TS")) {
+      if (desc.includes('svantaggio a tutti i TS')) {
         changes.push({
-          key: "flags.dnd5e.disadvantage.save.all",
+          key: 'flags.dnd5e.disadvantage.save.all',
           mode: CONST.ACTIVE_EFFECT_MODES.CUSTOM,
-          value: "1",
+          value: '1',
           priority: 20
         });
       }
 
-      if (desc.includes("Vulnerabilità")) {
-        const damageTypes = ["fire", "cold", "lightning", "thunder", "acid"];
+      if (desc.includes('Vulnerabilità')) {
+        const damageTypes = ['fire', 'cold', 'lightning', 'thunder', 'acid'];
         const randomType = damageTypes[Math.floor(Math.random() * damageTypes.length)];
         changes.push({
-          key: "system.traits.dv.value",
+          key: 'system.traits.dv.value',
           mode: CONST.ACTIVE_EFFECT_MODES.ADD,
           value: randomType,
           priority: 20
@@ -756,7 +756,7 @@ class BrancaloniaMenagramo {
   static async applyRandomCurse(target) {
     try {
       if (!target) {
-        ui.notifications.warn("Seleziona un bersaglio per la maledizione");
+        ui.notifications.warn('Seleziona un bersaglio per la maledizione');
         return;
       }
 
@@ -768,8 +768,8 @@ class BrancaloniaMenagramo {
       const isMaggior = maggiori.includes(curse);
 
       const effect = {
-        name: isMaggior ? "Maledizione Maggiore" : "Maledizione Minore",
-        icon: isMaggior ? "icons/magic/unholy/strike-beam-pink.webp" : "icons/magic/unholy/hand-claw-glow-purple.webp",
+        name: isMaggior ? 'Maledizione Maggiore' : 'Maledizione Minore',
+        icon: isMaggior ? 'icons/magic/unholy/strike-beam-pink.webp' : 'icons/magic/unholy/hand-claw-glow-purple.webp',
         duration: {
           seconds: isMaggior ? 28800 : 3600
         },
@@ -784,7 +784,7 @@ class BrancaloniaMenagramo {
         }
       };
 
-      await target.createEmbeddedDocuments("ActiveEffect", [effect]);
+      await target.createEmbeddedDocuments('ActiveEffect', [effect]);
 
       ChatMessage.create({
         content: `<div class="brancalonia menagramo-random">
@@ -805,7 +805,7 @@ class BrancaloniaMenagramo {
   static async removeCurse(target) {
     try {
       if (!target) {
-        ui.notifications.warn("Seleziona un bersaglio per rimuovere la maledizione");
+        ui.notifications.warn('Seleziona un bersaglio per rimuovere la maledizione');
         return;
       }
 
@@ -816,7 +816,7 @@ class BrancaloniaMenagramo {
         return;
       }
 
-      await target.deleteEmbeddedDocuments("ActiveEffect", curses.map(c => c.id));
+      await target.deleteEmbeddedDocuments('ActiveEffect', curses.map(c => c.id));
 
       ChatMessage.create({
         content: `<div class="brancalonia menagramo-remove">
@@ -835,13 +835,13 @@ class BrancaloniaMenagramo {
    */
   static castIattura(actor) {
     if (!actor) {
-      ui.notifications.warn("Nessun attore selezionato");
+      ui.notifications.warn('Nessun attore selezionato');
       return;
     }
 
     const target = game.user.targets.first();
     if (!target) {
-      ui.notifications.warn("Seleziona un bersaglio per la Iattura");
+      ui.notifications.warn('Seleziona un bersaglio per la Iattura');
       return;
     }
 
@@ -853,13 +853,13 @@ class BrancaloniaMenagramo {
    */
   static castToccoMalasorte(actor) {
     if (!actor) {
-      ui.notifications.warn("Nessun attore selezionato");
+      ui.notifications.warn('Nessun attore selezionato');
       return;
     }
 
     const target = game.user.targets.first();
     if (!target) {
-      ui.notifications.warn("Seleziona un bersaglio per il Tocco della Malasorte");
+      ui.notifications.warn('Seleziona un bersaglio per il Tocco della Malasorte');
       return;
     }
 
@@ -871,7 +871,7 @@ class BrancaloniaMenagramo {
    */
   static showMenagramoStatus(actor) {
     if (!actor) {
-      ui.notifications.warn("Nessun attore selezionato");
+      ui.notifications.warn('Nessun attore selezionato');
       return;
     }
 
@@ -1107,5 +1107,5 @@ Hooks.once('ready', () => {
   `;
   document.head.appendChild(style);
 
-  console.log("Brancalonia | Sistema Menagramo caricato");
+  console.log('Brancalonia | Sistema Menagramo caricato');
 });

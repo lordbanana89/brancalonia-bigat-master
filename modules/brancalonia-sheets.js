@@ -5,100 +5,105 @@
  */
 
 class BrancaloniaSheets {
+  static initialize() {
+    console.log('📜 Brancalonia Sheets | Initializing character sheet modifications');
 
-    static initialize() {
-        console.log("📜 Brancalonia Sheets | Initializing character sheet modifications");
+    // Register sheet modifications
+    this.registerSheetModifications();
+    this.registerSheetListeners();
+    this.registerDataModels();
 
-        // Register sheet modifications
-        this.registerSheetModifications();
-        this.registerSheetListeners();
-        this.registerDataModels();
+    console.log('✅ Brancalonia Sheets | Character sheet modifications applied');
+  }
 
-        console.log("✅ Brancalonia Sheets | Character sheet modifications applied");
+  static registerSheetModifications() {
+    // Override default character sheet rendering - usa hooks standard Foundry
+    Hooks.on('renderActorSheet5eCharacter', this.modifyCharacterSheet.bind(this));
+    Hooks.on('renderActorSheet5eNPC', this.modifyNPCSheet.bind(this));
+
+    // Fallback per D&D 5e v3.x che usa ActorSheetV2
+    Hooks.on('renderActorSheetV2', (app, html, data) => {
+      if (app.actor?.type === 'character') {
+        this.modifyCharacterSheet(app, html, data);
+      } else if (app.actor?.type === 'npc') {
+        this.modifyNPCSheet(app, html, data);
+      }
+    });
+  }
+
+  static registerSheetListeners() {
+    // Register custom event listeners for Brancalonia elements
+    Hooks.on('renderActorSheet', (app, html, data) => {
+      if (data.actor?.type === 'character') {
+        this.attachEventListeners(html, data);
+      }
+    });
+  }
+
+  static registerDataModels() {
+    // Extend actor data model for Brancalonia fields
+    Hooks.on('preCreateActor', (document, data, options, userId) => {
+      if (data.type === 'character') {
+        this.initializeBrancaloniaData(document);
+      }
+    });
+  }
+
+  static async modifyCharacterSheet(app, html, data) {
+    const actor = app.actor;
+
+    // Add Brancalonia class to sheet
+    html.addClass('brancalonia-character-sheet');
+    html.addClass('italian-renaissance');
+
+    // Add background texture
+    this.addBackgroundTexture(html);
+
+    // Modify header section
+    this.enhanceSheetHeader(html, data);
+
+    // Add Brancalonia resource trackers
+    this.addInfamiaSystem(html, actor);
+    this.addBaraondaSystem(html, actor);
+    this.addCompagniaSection(html, actor);
+    this.addLavoriSporchiSection(html, actor);
+    this.addRifugioSection(html, actor);
+    this.addMalefatteSection(html, actor);
+
+    // Enhance existing sections
+    this.enhanceAbilitiesSection(html, actor);
+    this.enhanceInventorySection(html, actor);
+    this.enhanceFeatureSection(html, actor);
+
+    // Add Italian terminology
+    this.translateUIElements(html);
+
+    // Add decorative elements
+    this.addDecorativeElements(html);
+
+    console.log('🎭 Character sheet enhanced with Brancalonia modifications');
+  }
+
+  static addBackgroundTexture(html) {
+    const sheetBody = html.find('.sheet-body');
+    if (sheetBody.length) {
+      sheetBody.css({
+        'background-image': 'linear-gradient(rgba(244, 228, 188, 0.9), rgba(255, 248, 220, 0.9)), url("/modules/brancalonia-bigat/assets/ui/backgrounds/parchment.webp")',
+        'background-blend-mode': 'multiply',
+        'background-size': 'cover',
+        'background-position': 'center'
+      });
     }
+  }
 
-    static registerSheetModifications() {
-        // Override default character sheet rendering
-        HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_CHARACTER, this.modifyCharacterSheet.bind(this));
-        HooksManager.on(HooksManager.HOOKS.RENDER_ACTOR_SHEET_NPC, this.modifyNPCSheet.bind(this));
+  static enhanceSheetHeader(html, data) {
+    const header = html.find('.sheet-header');
+    if (!header.length) return;
 
-        // Pre-render data preparation
-        HooksManager.on(HooksManager.HOOKS.PRE_RENDER_ACTOR_SHEET_CHARACTER, this.prepareSheetData.bind(this));
-    }
-
-    static registerSheetListeners() {
-        // Register custom event listeners for Brancalonia elements
-        Hooks.on("renderActorSheet", (app, html, data) => {
-            if (data.actor?.type === "character") {
-                this.attachEventListeners(html, data);
-            }
-        });
-    }
-
-    static registerDataModels() {
-        // Extend actor data model for Brancalonia fields
-        Hooks.on("preCreateActor", (document, data, options, userId) => {
-            if (data.type === "character") {
-                this.initializeBrancaloniaData(document);
-            }
-        });
-    }
-
-    static async modifyCharacterSheet(app, html, data) {
-        const actor = app.actor;
-
-        // Add Brancalonia class to sheet
-        html.addClass("brancalonia-character-sheet");
-        html.addClass("italian-renaissance");
-
-        // Add background texture
-        this.addBackgroundTexture(html);
-
-        // Modify header section
-        this.enhanceSheetHeader(html, data);
-
-        // Add Brancalonia resource trackers
-        this.addInfamiaSystem(html, actor);
-        this.addBaraondaSystem(html, actor);
-        this.addCompagniaSection(html, actor);
-        this.addLavoriSporchiSection(html, actor);
-        this.addRifugioSection(html, actor);
-        this.addMalefatteSection(html, actor);
-
-        // Enhance existing sections
-        this.enhanceAbilitiesSection(html, actor);
-        this.enhanceInventorySection(html, actor);
-        this.enhanceFeatureSection(html, actor);
-
-        // Add Italian terminology
-        this.translateUIElements(html);
-
-        // Add decorative elements
-        this.addDecorativeElements(html);
-
-        console.log("🎭 Character sheet enhanced with Brancalonia modifications");
-    }
-
-    static addBackgroundTexture(html) {
-        const sheetBody = html.find(".sheet-body");
-        if (sheetBody.length) {
-            sheetBody.css({
-                'background-image': 'linear-gradient(rgba(244, 228, 188, 0.9), rgba(255, 248, 220, 0.9)), url("/modules/brancalonia-bigat/assets/ui/backgrounds/parchment.webp")',
-                'background-blend-mode': 'multiply',
-                'background-size': 'cover',
-                'background-position': 'center'
-            });
-        }
-    }
-
-    static enhanceSheetHeader(html, data) {
-        const header = html.find(".sheet-header");
-        if (!header.length) return;
-
-        // Add Renaissance portrait frame
-        const portrait = header.find(".profile");
-        if (portrait.length) {
-            portrait.wrap(`
+    // Add Renaissance portrait frame
+    const portrait = header.find('.profile');
+    if (portrait.length) {
+      portrait.wrap(`
                 <div class="brancalonia-portrait-container">
                     <div class="portrait-frame renaissance">
                         <div class="frame-ornament top-left">⚜</div>
@@ -108,12 +113,12 @@ class BrancaloniaSheets {
                     </div>
                 </div>
             `);
-        }
+    }
 
-        // Add character title section
-        const charName = header.find(".char-name");
-        if (charName.length && !header.find(".character-titles").length) {
-            charName.after(`
+    // Add character title section
+    const charName = header.find('.char-name');
+    if (charName.length && !header.find('.character-titles').length) {
+      charName.after(`
                 <div class="character-titles">
                     <input type="text" name="flags.brancalonia.soprannome"
                            placeholder="Soprannome (Nickname)"
@@ -125,16 +130,16 @@ class BrancaloniaSheets {
                            class="titolo-input" />
                 </div>
             `);
-        }
     }
+  }
 
-    static addInfamiaSystem(html, actor) {
-        const resourcesSection = html.find(".attributes .resources");
-        if (resourcesSection.length && !html.find(".infamia-tracker").length) {
-            const currentInfamia = actor.getFlag('brancalonia-bigat', 'infamia') || 0;
-            const maxInfamia = actor.getFlag('brancalonia-bigat', 'infamiaMax') || 10;
+  static addInfamiaSystem(html, actor) {
+    const resourcesSection = html.find('.attributes .resources');
+    if (resourcesSection.length && !html.find('.infamia-tracker').length) {
+      const currentInfamia = actor.getFlag('brancalonia-bigat', 'infamia') || 0;
+      const maxInfamia = actor.getFlag('brancalonia-bigat', 'infamiaMax') || 10;
 
-            const infamiaHTML = `
+      const infamiaHTML = `
                 <div class="infamia-tracker brancalonia-resource">
                     <div class="resource-header">
                         <h3>
@@ -145,7 +150,7 @@ class BrancaloniaSheets {
                     </div>
                     <div class="resource-content">
                         <div class="infamia-bar">
-                            <div class="infamia-fill" style="width: ${(currentInfamia/maxInfamia)*100}%"></div>
+                            <div class="infamia-fill" style="width: ${(currentInfamia / maxInfamia) * 100}%"></div>
                             <div class="infamia-segments">
                                 ${this.generateInfamiaSegments(maxInfamia)}
                             </div>
@@ -165,36 +170,36 @@ class BrancaloniaSheets {
                     </div>
                 </div>
             `;
-            resourcesSection.after(infamiaHTML);
-        }
+      resourcesSection.after(infamiaHTML);
     }
+  }
 
-    static generateInfamiaSegments(max) {
-        let segments = '';
-        for (let i = 1; i <= max; i++) {
-            segments += `<div class="segment" data-level="${i}"></div>`;
-        }
-        return segments;
+  static generateInfamiaSegments(max) {
+    let segments = '';
+    for (let i = 1; i <= max; i++) {
+      segments += `<div class="segment" data-level="${i}"></div>`;
     }
+    return segments;
+  }
 
-    static getInfamiaStatus(level) {
-        const statuses = [
-            { min: 0, max: 2, label: "Sconosciuto", icon: "👤" },
-            { min: 3, max: 5, label: "Famigerato", icon: "🎭" },
-            { min: 6, max: 8, label: "Temuto", icon: "⚔️" },
-            { min: 9, max: 10, label: "Leggendario", icon: "👑" }
-        ];
+  static getInfamiaStatus(level) {
+    const statuses = [
+      { min: 0, max: 2, label: 'Sconosciuto', icon: '👤' },
+      { min: 3, max: 5, label: 'Famigerato', icon: '🎭' },
+      { min: 6, max: 8, label: 'Temuto', icon: '⚔️' },
+      { min: 9, max: 10, label: 'Leggendario', icon: '👑' }
+    ];
 
-        const status = statuses.find(s => level >= s.min && level <= s.max);
-        return `<span class="status-label">${status.icon} ${status.label}</span>`;
-    }
+    const status = statuses.find(s => level >= s.min && level <= s.max);
+    return `<span class="status-label">${status.icon} ${status.label}</span>`;
+  }
 
-    static addBaraondaSystem(html, actor) {
-        const combatSection = html.find('[data-tab="features"]');
-        if (combatSection.length && !html.find(".baraonda-tracker").length) {
-            const baraondaPoints = actor.getFlag('brancalonia-bigat', 'baraonda') || 0;
+  static addBaraondaSystem(html, actor) {
+    const combatSection = html.find('[data-tab="features"]');
+    if (combatSection.length && !html.find('.baraonda-tracker').length) {
+      const baraondaPoints = actor.getFlag('brancalonia-bigat', 'baraonda') || 0;
 
-            const baraondaHTML = `
+      const baraondaHTML = `
                 <div class="baraonda-tracker brancalonia-resource">
                     <div class="resource-header">
                         <h3>
@@ -231,36 +236,36 @@ class BrancaloniaSheets {
                     </div>
                 </div>
             `;
-            combatSection.prepend(baraondaHTML);
-        }
+      combatSection.prepend(baraondaHTML);
     }
+  }
 
-    static getBaraondaMoves(points) {
-        const moves = [
-            { cost: 1, name: "Sganassone", desc: "Colpo extra con danno bonus" },
-            { cost: 2, name: "Testata", desc: "Stordisce l'avversario" },
-            { cost: 3, name: "Lancio della Sedia", desc: "Attacco a distanza improvvisato" },
-            { cost: 4, name: "Furia da Taverna", desc: "Attacchi multipli in un turno" }
-        ];
+  static getBaraondaMoves(points) {
+    const moves = [
+      { cost: 1, name: 'Sganassone', desc: 'Colpo extra con danno bonus' },
+      { cost: 2, name: 'Testata', desc: "Stordisce l'avversario" },
+      { cost: 3, name: 'Lancio della Sedia', desc: 'Attacco a distanza improvvisato' },
+      { cost: 4, name: 'Furia da Taverna', desc: 'Attacchi multipli in un turno' }
+    ];
 
-        return moves.map(move => {
-            const available = points >= move.cost;
-            return `
+    return moves.map(move => {
+      const available = points >= move.cost;
+      return `
                 <li class="baraonda-move ${available ? 'available' : 'unavailable'}">
                     <span class="move-cost">${move.cost}</span>
                     <span class="move-name">${move.name}</span>
                     <span class="move-desc">${move.desc}</span>
                 </li>
             `;
-        }).join('');
-    }
+    }).join('');
+  }
 
-    static addCompagniaSection(html, actor) {
-        const biographyTab = html.find('[data-tab="biography"]');
-        if (biographyTab.length && !html.find(".compagnia-section").length) {
-            const compagnia = actor.getFlag('brancalonia-bigat', 'compagnia') || {};
+  static addCompagniaSection(html, actor) {
+    const biographyTab = html.find('[data-tab="biography"]');
+    if (biographyTab.length && !html.find('.compagnia-section').length) {
+      const compagnia = actor.getFlag('brancalonia-bigat', 'compagnia') || {};
 
-            const compagniaHTML = `
+      const compagniaHTML = `
                 <div class="compagnia-section brancalonia-section">
                     <div class="section-header ornate">
                         <h2>
@@ -315,40 +320,40 @@ class BrancaloniaSheets {
                     </div>
                 </div>
             `;
-            biographyTab.append(compagniaHTML);
-        }
+      biographyTab.append(compagniaHTML);
     }
+  }
 
-    static renderCompagniaMembers(members) {
-        if (members.length === 0) {
-            return '<p class="no-members">Nessun membro registrato</p>';
-        }
-        return members.map((member, idx) => `
+  static renderCompagniaMembers(members) {
+    if (members.length === 0) {
+      return '<p class="no-members">Nessun membro registrato</p>';
+    }
+    return members.map((member, idx) => `
             <div class="member-entry" data-member-id="${idx}">
                 <span class="member-name">${member.name}</span>
                 <span class="member-role">${member.role}</span>
                 <button class="remove-member" data-member-id="${idx}">✖</button>
             </div>
         `).join('');
-    }
+  }
 
-    static getReputationLabel(value) {
-        if (value <= -7) return "Maledetti";
-        if (value <= -4) return "Malvisti";
-        if (value <= -1) return "Sospetti";
-        if (value === 0) return "Sconosciuti";
-        if (value <= 3) return "Conosciuti";
-        if (value <= 6) return "Rispettati";
-        if (value <= 9) return "Famosi";
-        return "Leggendari";
-    }
+  static getReputationLabel(value) {
+    if (value <= -7) return 'Maledetti';
+    if (value <= -4) return 'Malvisti';
+    if (value <= -1) return 'Sospetti';
+    if (value === 0) return 'Sconosciuti';
+    if (value <= 3) return 'Conosciuti';
+    if (value <= 6) return 'Rispettati';
+    if (value <= 9) return 'Famosi';
+    return 'Leggendari';
+  }
 
-    static addLavoriSporchiSection(html, actor) {
-        const featuresTab = html.find('[data-tab="features"]');
-        if (featuresTab.length && !html.find(".lavori-sporchi-section").length) {
-            const lavori = actor.getFlag('brancalonia-bigat', 'lavoriSporchi') || [];
+  static addLavoriSporchiSection(html, actor) {
+    const featuresTab = html.find('[data-tab="features"]');
+    if (featuresTab.length && !html.find('.lavori-sporchi-section').length) {
+      const lavori = actor.getFlag('brancalonia-bigat', 'lavoriSporchi') || [];
 
-            const lavoriHTML = `
+      const lavoriHTML = `
                 <div class="lavori-sporchi-section brancalonia-section">
                     <div class="section-header">
                         <h3>
@@ -387,22 +392,22 @@ class BrancaloniaSheets {
                     </div>
                 </div>
             `;
-            featuresTab.append(lavoriHTML);
-        }
+      featuresTab.append(lavoriHTML);
+    }
+  }
+
+  static calculateTotalEarnings(lavori) {
+    return lavori
+      .filter(l => l.completed)
+      .reduce((total, lavoro) => total + (lavoro.reward || 0), 0);
+  }
+
+  static renderLavoriList(lavori) {
+    if (lavori.length === 0) {
+      return '<p class="no-lavori">Nessun lavoro registrato</p>';
     }
 
-    static calculateTotalEarnings(lavori) {
-        return lavori
-            .filter(l => l.completed)
-            .reduce((total, lavoro) => total + (lavoro.reward || 0), 0);
-    }
-
-    static renderLavoriList(lavori) {
-        if (lavori.length === 0) {
-            return '<p class="no-lavori">Nessun lavoro registrato</p>';
-        }
-
-        return `
+    return `
             <div class="lavori-entries">
                 ${lavori.map((lavoro, idx) => `
                     <div class="lavoro-entry ${lavoro.completed ? 'completed' : 'active'}" data-lavoro-id="${idx}">
@@ -428,14 +433,14 @@ class BrancaloniaSheets {
                 `).join('')}
             </div>
         `;
-    }
+  }
 
-    static addRifugioSection(html, actor) {
-        const biographyTab = html.find('[data-tab="biography"]');
-        if (biographyTab.length && !html.find(".rifugio-section").length) {
-            const rifugio = actor.getFlag('brancalonia-bigat', 'rifugio') || {};
+  static addRifugioSection(html, actor) {
+    const biographyTab = html.find('[data-tab="biography"]');
+    if (biographyTab.length && !html.find('.rifugio-section').length) {
+      const rifugio = actor.getFlag('brancalonia-bigat', 'rifugio') || {};
 
-            const rifugioHTML = `
+      const rifugioHTML = `
                 <div class="rifugio-section brancalonia-section">
                     <div class="section-header ornate">
                         <h2>
@@ -496,20 +501,20 @@ class BrancaloniaSheets {
                     </div>
                 </div>
             `;
-            biographyTab.append(rifugioHTML);
-        }
+      biographyTab.append(rifugioHTML);
     }
+  }
 
-    static renderComfortLevels(currentLevel) {
-        const levels = [
-            { level: 1, name: "Squallido", icon: "🕸️" },
-            { level: 2, name: "Modesto", icon: "🪑" },
-            { level: 3, name: "Confortevole", icon: "🛋️" },
-            { level: 4, name: "Lussuoso", icon: "👑" },
-            { level: 5, name: "Principesco", icon: "🏰" }
-        ];
+  static renderComfortLevels(currentLevel) {
+    const levels = [
+      { level: 1, name: 'Squallido', icon: '🕸️' },
+      { level: 2, name: 'Modesto', icon: '🪑' },
+      { level: 3, name: 'Confortevole', icon: '🛋️' },
+      { level: 4, name: 'Lussuoso', icon: '👑' },
+      { level: 5, name: 'Principesco', icon: '🏰' }
+    ];
 
-        return levels.map(l => `
+    return levels.map(l => `
             <label class="comfort-level ${l.level === currentLevel ? 'selected' : ''}">
                 <input type="radio" name="flags.brancalonia-bigat.rifugio.comfort"
                        value="${l.level}" ${l.level === currentLevel ? 'checked' : ''} />
@@ -517,32 +522,32 @@ class BrancaloniaSheets {
                 <span class="comfort-name">${l.name}</span>
             </label>
         `).join('');
-    }
+  }
 
-    static getComfortBenefits(level) {
-        const benefits = {
-            1: "Riposo Lungo recupera solo metà dei Dadi Vita",
-            2: "Riposo normale, nessun bonus",
-            3: "+1 ai tiri di recupero durante il riposo",
-            4: "+2 ai tiri di recupero, riposo breve in 30 minuti",
-            5: "+3 ai tiri di recupero, ispirazione gratuita dopo riposo lungo"
-        };
-        return `<p class="comfort-benefit">${benefits[level] || benefits[1]}</p>`;
-    }
+  static getComfortBenefits(level) {
+    const benefits = {
+      1: 'Riposo Lungo recupera solo metà dei Dadi Vita',
+      2: 'Riposo normale, nessun bonus',
+      3: '+1 ai tiri di recupero durante il riposo',
+      4: '+2 ai tiri di recupero, riposo breve in 30 minuti',
+      5: '+3 ai tiri di recupero, ispirazione gratuita dopo riposo lungo'
+    };
+    return `<p class="comfort-benefit">${benefits[level] || benefits[1]}</p>`;
+  }
 
-    static renderRifugioFeatures(features) {
-        const availableFeatures = [
-            { id: 'cantina', name: 'Cantina Segreta', icon: '🍷' },
-            { id: 'armeria', name: 'Armeria', icon: '⚔️' },
-            { id: 'laboratorio', name: 'Laboratorio', icon: '⚗️' },
-            { id: 'biblioteca', name: 'Biblioteca', icon: '📚' },
-            { id: 'prigione', name: 'Prigione', icon: '🔒' },
-            { id: 'passaggio', name: 'Passaggio Segreto', icon: '🚪' },
-            { id: 'torre', name: 'Torre di Guardia', icon: '🗼' },
-            { id: 'stalla', name: 'Stalla', icon: '🐴' }
-        ];
+  static renderRifugioFeatures(features) {
+    const availableFeatures = [
+      { id: 'cantina', name: 'Cantina Segreta', icon: '🍷' },
+      { id: 'armeria', name: 'Armeria', icon: '⚔️' },
+      { id: 'laboratorio', name: 'Laboratorio', icon: '⚗️' },
+      { id: 'biblioteca', name: 'Biblioteca', icon: '📚' },
+      { id: 'prigione', name: 'Prigione', icon: '🔒' },
+      { id: 'passaggio', name: 'Passaggio Segreto', icon: '🚪' },
+      { id: 'torre', name: 'Torre di Guardia', icon: '🗼' },
+      { id: 'stalla', name: 'Stalla', icon: '🐴' }
+    ];
 
-        return availableFeatures.map(f => `
+    return availableFeatures.map(f => `
             <label class="feature-checkbox">
                 <input type="checkbox" name="flags.brancalonia-bigat.rifugio.features"
                        value="${f.id}" ${features.includes(f.id) ? 'checked' : ''} />
@@ -550,14 +555,14 @@ class BrancaloniaSheets {
                 <span class="feature-name">${f.name}</span>
             </label>
         `).join('');
-    }
+  }
 
-    static addMalefatteSection(html, actor) {
-        const biographyTab = html.find('[data-tab="biography"]');
-        if (biographyTab.length && !html.find(".malefatte-section").length) {
-            const malefatte = actor.getFlag('brancalonia-bigat', 'malefatte') || [];
+  static addMalefatteSection(html, actor) {
+    const biographyTab = html.find('[data-tab="biography"]');
+    if (biographyTab.length && !html.find('.malefatte-section').length) {
+      const malefatte = actor.getFlag('brancalonia-bigat', 'malefatte') || [];
 
-            const malefatteHTML = `
+      const malefatteHTML = `
                 <div class="malefatte-section brancalonia-section">
                     <div class="section-header">
                         <h3>
@@ -584,16 +589,16 @@ class BrancaloniaSheets {
                     </div>
                 </div>
             `;
-            biographyTab.append(malefatteHTML);
-        }
+      biographyTab.append(malefatteHTML);
+    }
+  }
+
+  static renderMalefatteList(malefatte) {
+    if (malefatte.length === 0) {
+      return '<p class="no-malefatte">Fedina penale pulita... per ora</p>';
     }
 
-    static renderMalefatteList(malefatte) {
-        if (malefatte.length === 0) {
-            return '<p class="no-malefatte">Fedina penale pulita... per ora</p>';
-        }
-
-        return malefatte.slice(-5).map((malefatta, idx) => `
+    return malefatte.slice(-5).map((malefatta, idx) => `
             <div class="malefatta-entry">
                 <span class="malefatta-date">${malefatta.date || 'Data sconosciuta'}</span>
                 <span class="malefatta-type">${this.getMalefattaIcon(malefatta.type)}</span>
@@ -601,116 +606,116 @@ class BrancaloniaSheets {
                 <span class="malefatta-bounty">${malefatta.bounty || 0} 🪙</span>
             </div>
         `).join('');
-    }
+  }
 
-    static getMalefattaIcon(type) {
-        const icons = {
-            'furto': '🗝️',
-            'truffa': '🎭',
-            'rissa': '🥊',
-            'omicidio': '🗡️',
-            'contrabbando': '📦',
-            'blasfemia': '😈',
-            'altro': '⚖️'
-        };
-        return icons[type] || icons['altro'];
-    }
+  static getMalefattaIcon(type) {
+    const icons = {
+      furto: '🗝️',
+      truffa: '🎭',
+      rissa: '🥊',
+      omicidio: '🗡️',
+      contrabbando: '📦',
+      blasfemia: '😈',
+      altro: '⚖️'
+    };
+    return icons[type] || icons.altro;
+  }
 
-    static enhanceAbilitiesSection(html, actor) {
-        // Add Italian labels to ability scores
-        const abilities = {
-            'str': 'Forza',
-            'dex': 'Destrezza',
-            'con': 'Costituzione',
-            'int': 'Intelligenza',
-            'wis': 'Saggezza',
-            'cha': 'Carisma'
-        };
+  static enhanceAbilitiesSection(html, actor) {
+    // Add Italian labels to ability scores
+    const abilities = {
+      str: 'Forza',
+      dex: 'Destrezza',
+      con: 'Costituzione',
+      int: 'Intelligenza',
+      wis: 'Saggezza',
+      cha: 'Carisma'
+    };
 
-        Object.entries(abilities).forEach(([key, label]) => {
-            const abilityElement = html.find(`.ability[data-ability="${key}"] .ability-name`);
-            if (abilityElement.length) {
-                abilityElement.attr('title', label);
-            }
-        });
-    }
+    Object.entries(abilities).forEach(([key, label]) => {
+      const abilityElement = html.find(`.ability[data-ability="${key}"] .ability-name`);
+      if (abilityElement.length) {
+        abilityElement.attr('title', label);
+      }
+    });
+  }
 
-    static enhanceInventorySection(html, actor) {
-        // Add quality indicators for shoddy equipment
-        const items = html.find('.item');
-        items.each(function() {
-            const item = actor.items.get($(this).data('item-id'));
-            if (item?.getFlag('brancalonia-bigat', 'shoddy')) {
-                $(this).addClass('shoddy-item');
-                $(this).prepend('<span class="quality-indicator shoddy" title="Equipaggiamento Scadente">⚠️</span>');
-            }
-        });
-    }
+  static enhanceInventorySection(html, actor) {
+    // Add quality indicators for shoddy equipment
+    const items = html.find('.item');
+    items.each(function () {
+      const item = actor.items.get($(this).data('item-id'));
+      if (item?.getFlag('brancalonia-bigat', 'shoddy')) {
+        $(this).addClass('shoddy-item');
+        $(this).prepend('<span class="quality-indicator shoddy" title="Equipaggiamento Scadente">⚠️</span>');
+      }
+    });
+  }
 
-    static enhanceFeatureSection(html, actor) {
-        // Group features by type with Italian categories
-        const featuresTab = html.find('[data-tab="features"]');
-        if (featuresTab.length) {
-            // Add category headers
-            const categories = {
-                'race': 'Stirpe',
-                'background': 'Background',
-                'class': 'Classe',
-                'feat': 'Talenti',
-                'brancalonia': 'Privilegi di Brancalonia'
-            };
+  static enhanceFeatureSection(html, actor) {
+    // Group features by type with Italian categories
+    const featuresTab = html.find('[data-tab="features"]');
+    if (featuresTab.length) {
+      // Add category headers
+      const categories = {
+        race: 'Stirpe',
+        background: 'Background',
+        class: 'Classe',
+        feat: 'Talenti',
+        brancalonia: 'Privilegi di Brancalonia'
+      };
 
-            // Reorganize features by category
-            Object.entries(categories).forEach(([type, label]) => {
-                const features = actor.items.filter(i => i.type === type || i.getFlag('brancalonia-bigat', 'type') === type);
-                if (features.length > 0) {
-                    // Implementation for organizing features
-                }
-            });
+      // Reorganize features by category
+      Object.entries(categories).forEach(([type, label]) => {
+        const features = actor.items.filter(i => i.type === type || i.getFlag('brancalonia-bigat', 'type') === type);
+        if (features.length > 0) {
+          // Implementation for organizing features
         }
+      });
     }
+  }
 
-    static translateUIElements(html) {
-        // Translate common D&D terms to Italian
-        const translations = {
-            'Hit Points': 'Punti Ferita',
-            'Armor Class': 'Classe Armatura',
-            'Initiative': 'Iniziativa',
-            'Speed': 'Velocità',
-            'Proficiency Bonus': 'Bonus di Competenza',
-            'Spell Save DC': 'CD Tiro Salvezza Incantesimi',
-            'Spell Attack': 'Attacco con Incantesimi',
-            'Death Saves': 'Tiri Salvezza contro Morte',
-            'Inspiration': 'Ispirazione',
-            'Experience Points': 'Punti Esperienza',
-            'Skills': 'Abilità',
-            'Features': 'Privilegi',
-            'Inventory': 'Inventario',
-            'Spellbook': 'Libro degli Incantesimi',
-            'Biography': 'Biografia'
-        };
+  static translateUIElements(html) {
+    // Translate common D&D terms to Italian
+    const translations = {
+      'Hit Points': 'Punti Ferita',
+      'Armor Class': 'Classe Armatura',
+      Initiative: 'Iniziativa',
+      Speed: 'Velocità',
+      'Proficiency Bonus': 'Bonus di Competenza',
+      'Spell Save DC': 'CD Tiro Salvezza Incantesimi',
+      'Spell Attack': 'Attacco con Incantesimi',
+      'Death Saves': 'Tiri Salvezza contro Morte',
+      Inspiration: 'Ispirazione',
+      'Experience Points': 'Punti Esperienza',
+      Skills: 'Abilità',
+      Features: 'Privilegi',
+      Inventory: 'Inventario',
+      Spellbook: 'Libro degli Incantesimi',
+      Biography: 'Biografia'
+    };
 
-        Object.entries(translations).forEach(([english, italian]) => {
-            html.find(`label:contains("${english}")`).each(function() {
-                $(this).html($(this).html().replace(english, italian));
-            });
-        });
-    }
+    Object.entries(translations).forEach(([english, italian]) => {
+      html.find(`label:contains("${english}")`).each(function () {
+        $(this).html($(this).html().replace(english, italian));
+      });
+    });
+  }
 
-    static addDecorativeElements(html) {
-        // Add Renaissance decorative flourishes
-        const sections = html.find('.sheet-body > div[data-tab]');
-        sections.each(function() {
-            if (!$(this).find('.section-ornament').length) {
-                $(this).prepend('<div class="section-ornament top">❦ ❦ ❦</div>');
-                $(this).append('<div class="section-ornament bottom">❦ ❦ ❦</div>');
-            }
-        });
+  static addDecorativeElements(html) {
+    // Add Renaissance decorative flourishes
+    const sections = html.find('.sheet-body > div[data-tab]');
+    sections.each(function () {
+      if (!$(this).find('.section-ornament').length) {
+        $(this).prepend('<div class="section-ornament top">❦ ❦ ❦</div>');
+        $(this).append('<div class="section-ornament bottom">❦ ❦ ❦</div>');
+      }
+    });
 
-        // Add corner ornaments to main sections
-        const mainSections = html.find('.brancalonia-section');
-        mainSections.each(function() {
-            $(this).append(`
+    // Add corner ornaments to main sections
+    const mainSections = html.find('.brancalonia-section');
+    mainSections.each(function () {
+      $(this).append(`
                 <div class="corner-ornaments">
                     <span class="ornament top-left">⚜</span>
                     <span class="ornament top-right">⚜</span>
@@ -718,143 +723,143 @@ class BrancaloniaSheets {
                     <span class="ornament bottom-right">❧</span>
                 </div>
             `);
-        });
-    }
+    });
+  }
 
-    static modifyNPCSheet(app, html, data) {
-        // Add Brancalonia styling to NPC sheets
-        html.addClass("brancalonia-npc-sheet");
+  static modifyNPCSheet(app, html, data) {
+    // Add Brancalonia styling to NPC sheets
+    html.addClass('brancalonia-npc-sheet');
 
-        // Add faction indicator
-        const faction = app.actor.getFlag('brancalonia-bigat', 'faction');
-        if (faction) {
-            const header = html.find(".sheet-header");
-            header.append(`
+    // Add faction indicator
+    const faction = app.actor.getFlag('brancalonia-bigat', 'faction');
+    if (faction) {
+      const header = html.find('.sheet-header');
+      header.append(`
                 <div class="npc-faction">
                     <span class="faction-label">Fazione:</span>
                     <span class="faction-name">${faction}</span>
                 </div>
             `);
-        }
+    }
+  }
+
+  static prepareSheetData(app, html, data) {
+    // Pre-process data for Brancalonia features
+    const actor = app.actor;
+
+    // Ensure Brancalonia flags exist
+    if (!actor.getFlag('brancalonia-bigat', 'initialized')) {
+      this.initializeBrancaloniaData(actor);
     }
 
-    static prepareSheetData(app, html, data) {
-        // Pre-process data for Brancalonia features
-        const actor = app.actor;
+    // Calculate derived values
+    data.brancalonia = {
+      infamiaLevel: this.calculateInfamiaLevel(actor),
+      baraondaReady: (actor.getFlag('brancalonia-bigat', 'baraonda') || 0) > 0,
+      hasCompagnia: !!actor.getFlag('brancalonia-bigat', 'compagnia.nome'),
+      rifugioComfort: actor.getFlag('brancalonia-bigat', 'rifugio.comfort') || 1
+    };
+  }
 
-        // Ensure Brancalonia flags exist
-        if (!actor.getFlag('brancalonia-bigat', 'initialized')) {
-            this.initializeBrancaloniaData(actor);
-        }
+  static initializeBrancaloniaData(actor) {
+    // Set default Brancalonia data
+    actor.setFlag('brancalonia-bigat', 'initialized', true);
+    actor.setFlag('brancalonia-bigat', 'infamia', 0);
+    actor.setFlag('brancalonia-bigat', 'infamiaMax', 10);
+    actor.setFlag('brancalonia-bigat', 'baraonda', 0);
+    actor.setFlag('brancalonia-bigat', 'compagnia', {});
+    actor.setFlag('brancalonia-bigat', 'rifugio', { comfort: 1 });
+    actor.setFlag('brancalonia-bigat', 'lavoriSporchi', []);
+    actor.setFlag('brancalonia-bigat', 'malefatte', []);
+  }
 
-        // Calculate derived values
-        data.brancalonia = {
-            infamiaLevel: this.calculateInfamiaLevel(actor),
-            baraondaReady: (actor.getFlag('brancalonia-bigat', 'baraonda') || 0) > 0,
-            hasCompagnia: !!actor.getFlag('brancalonia-bigat', 'compagnia.nome'),
-            rifugioComfort: actor.getFlag('brancalonia-bigat', 'rifugio.comfort') || 1
-        };
-    }
+  static calculateInfamiaLevel(actor) {
+    const infamia = actor.getFlag('brancalonia-bigat', 'infamia') || 0;
+    if (infamia >= 9) return 'legendary';
+    if (infamia >= 6) return 'feared';
+    if (infamia >= 3) return 'notorious';
+    return 'unknown';
+  }
 
-    static initializeBrancaloniaData(actor) {
-        // Set default Brancalonia data
-        actor.setFlag('brancalonia-bigat', 'initialized', true);
-        actor.setFlag('brancalonia-bigat', 'infamia', 0);
-        actor.setFlag('brancalonia-bigat', 'infamiaMax', 10);
-        actor.setFlag('brancalonia-bigat', 'baraonda', 0);
-        actor.setFlag('brancalonia-bigat', 'compagnia', {});
-        actor.setFlag('brancalonia-bigat', 'rifugio', { comfort: 1 });
-        actor.setFlag('brancalonia-bigat', 'lavoriSporchi', []);
-        actor.setFlag('brancalonia-bigat', 'malefatte', []);
-    }
+  static attachEventListeners(html, data) {
+    // Infamia adjustments
+    html.find('.infamia-adjust').click(ev => {
+      const adjustment = parseInt($(ev.currentTarget).data('adjust'));
+      const actor = game.actors.get(data.actor._id);
+      const current = actor.getFlag('brancalonia-bigat', 'infamia') || 0;
+      const max = actor.getFlag('brancalonia-bigat', 'infamiaMax') || 10;
+      const newValue = Math.max(0, Math.min(max, current + adjustment));
+      actor.setFlag('brancalonia-bigat', 'infamia', newValue);
+    });
 
-    static calculateInfamiaLevel(actor) {
-        const infamia = actor.getFlag('brancalonia-bigat', 'infamia') || 0;
-        if (infamia >= 9) return 'legendary';
-        if (infamia >= 6) return 'feared';
-        if (infamia >= 3) return 'notorious';
-        return 'unknown';
-    }
+    // Baraonda actions
+    html.find('.baraonda-btn').click(ev => {
+      const action = $(ev.currentTarget).data('action');
+      const actor = game.actors.get(data.actor._id);
+      this.handleBaraondaAction(actor, action);
+    });
 
-    static attachEventListeners(html, data) {
-        // Infamia adjustments
-        html.find('.infamia-adjust').click(ev => {
-            const adjustment = parseInt($(ev.currentTarget).data('adjust'));
-            const actor = game.actors.get(data.actor._id);
-            const current = actor.getFlag('brancalonia-bigat', 'infamia') || 0;
-            const max = actor.getFlag('brancalonia-bigat', 'infamiaMax') || 10;
-            const newValue = Math.max(0, Math.min(max, current + adjustment));
-            actor.setFlag('brancalonia-bigat', 'infamia', newValue);
-        });
+    // Lavori Sporchi management
+    html.find('.add-lavoro-btn').click(() => {
+      this.openLavoroDialog(data.actor);
+    });
 
-        // Baraonda actions
-        html.find('.baraonda-btn').click(ev => {
-            const action = $(ev.currentTarget).data('action');
-            const actor = game.actors.get(data.actor._id);
-            this.handleBaraondaAction(actor, action);
-        });
+    html.find('.toggle-lavoro').click(ev => {
+      const idx = $(ev.currentTarget).data('lavoro-id');
+      const actor = game.actors.get(data.actor._id);
+      const lavori = actor.getFlag('brancalonia-bigat', 'lavoriSporchi') || [];
+      if (lavori[idx]) {
+        lavori[idx].completed = !lavori[idx].completed;
+        actor.setFlag('brancalonia-bigat', 'lavoriSporchi', lavori);
+      }
+    });
 
-        // Lavori Sporchi management
-        html.find('.add-lavoro-btn').click(() => {
-            this.openLavoroDialog(data.actor);
-        });
+    // Add member to Compagnia
+    html.find('.add-member-btn').click(() => {
+      this.openAddMemberDialog(data.actor);
+    });
 
-        html.find('.toggle-lavoro').click(ev => {
-            const idx = $(ev.currentTarget).data('lavoro-id');
-            const actor = game.actors.get(data.actor._id);
-            const lavori = actor.getFlag('brancalonia-bigat', 'lavoriSporchi') || [];
-            if (lavori[idx]) {
-                lavori[idx].completed = !lavori[idx].completed;
-                actor.setFlag('brancalonia-bigat', 'lavoriSporchi', lavori);
-            }
-        });
+    // Add Malefatta
+    html.find('.add-malefatta-btn').click(() => {
+      this.openMalefattaDialog(data.actor);
+    });
+  }
 
-        // Add member to Compagnia
-        html.find('.add-member-btn').click(() => {
-            this.openAddMemberDialog(data.actor);
-        });
-
-        // Add Malefatta
-        html.find('.add-malefatta-btn').click(() => {
-            this.openMalefattaDialog(data.actor);
-        });
-    }
-
-    static handleBaraondaAction(actor, action) {
-        switch(action) {
-            case 'brawl-start':
-                ChatMessage.create({
-                    content: `<div class="brancalonia-message baraonda-start">
+  static handleBaraondaAction(actor, action) {
+    switch (action) {
+      case 'brawl-start':
+        ChatMessage.create({
+          content: `<div class="brancalonia-message baraonda-start">
                         <h3>🍺 Baraonda! 🍺</h3>
                         <p><strong>${actor.name}</strong> inizia una rissa da taverna!</p>
                         <p>Che la battaglia abbia inizio!</p>
                     </div>`,
-                    speaker: ChatMessage.getSpeaker({ actor })
-                });
-                break;
-            case 'spend-point':
-                const current = actor.getFlag('brancalonia-bigat', 'baraonda') || 0;
-                if (current > 0) {
-                    actor.setFlag('brancalonia-bigat', 'baraonda', current - 1);
-                    ChatMessage.create({
-                        content: `<div class="brancalonia-message baraonda-spend">
+          speaker: ChatMessage.getSpeaker({ actor })
+        });
+        break;
+      case 'spend-point':
+        const current = actor.getFlag('brancalonia-bigat', 'baraonda') || 0;
+        if (current > 0) {
+          actor.setFlag('brancalonia-bigat', 'baraonda', current - 1);
+          ChatMessage.create({
+            content: `<div class="brancalonia-message baraonda-spend">
                             <p><strong>${actor.name}</strong> spende un Punto Baraonda!</p>
                             <p>Punti rimanenti: ${current - 1}</p>
                         </div>`,
-                        speaker: ChatMessage.getSpeaker({ actor })
-                    });
-                }
-                break;
-            case 'reset':
-                actor.setFlag('brancalonia-bigat', 'baraonda', 0);
-                break;
+            speaker: ChatMessage.getSpeaker({ actor })
+          });
         }
+        break;
+      case 'reset':
+        actor.setFlag('brancalonia-bigat', 'baraonda', 0);
+        break;
     }
+  }
 
-    static openLavoroDialog(actor) {
-        new Dialog({
-            title: "Nuovo Lavoro Sporco",
-            content: `
+  static openLavoroDialog(actor) {
+    new Dialog({
+      title: 'Nuovo Lavoro Sporco',
+      content: `
                 <form>
                     <div class="form-group">
                         <label>Titolo del Lavoro:</label>
@@ -874,37 +879,37 @@ class BrancaloniaSheets {
                     </div>
                 </form>
             `,
-            buttons: {
-                save: {
-                    label: "Aggiungi",
-                    callback: (html) => {
-                        const formData = new FormData(html[0].querySelector('form'));
-                        const lavoro = {
-                            title: formData.get('title'),
-                            client: formData.get('client'),
-                            reward: parseInt(formData.get('reward')),
-                            description: formData.get('description'),
-                            completed: false,
-                            date: new Date().toLocaleDateString('it-IT')
-                        };
+      buttons: {
+        save: {
+          label: 'Aggiungi',
+          callback: (html) => {
+            const formData = new FormData(html[0].querySelector('form'));
+            const lavoro = {
+              title: formData.get('title'),
+              client: formData.get('client'),
+              reward: parseInt(formData.get('reward')),
+              description: formData.get('description'),
+              completed: false,
+              date: new Date().toLocaleDateString('it-IT')
+            };
 
-                        const lavori = actor.getFlag('brancalonia-bigat', 'lavoriSporchi') || [];
-                        lavori.push(lavoro);
-                        actor.setFlag('brancalonia-bigat', 'lavoriSporchi', lavori);
-                    }
-                },
-                cancel: {
-                    label: "Annulla"
-                }
-            },
-            default: "save"
-        }).render(true);
-    }
+            const lavori = actor.getFlag('brancalonia-bigat', 'lavoriSporchi') || [];
+            lavori.push(lavoro);
+            actor.setFlag('brancalonia-bigat', 'lavoriSporchi', lavori);
+          }
+        },
+        cancel: {
+          label: 'Annulla'
+        }
+      },
+      default: 'save'
+    }).render(true);
+  }
 
-    static openAddMemberDialog(actor) {
-        new Dialog({
-            title: "Aggiungi Membro alla Compagnia",
-            content: `
+  static openAddMemberDialog(actor) {
+    new Dialog({
+      title: 'Aggiungi Membro alla Compagnia',
+      content: `
                 <form>
                     <div class="form-group">
                         <label>Nome:</label>
@@ -925,34 +930,34 @@ class BrancaloniaSheets {
                     </div>
                 </form>
             `,
-            buttons: {
-                save: {
-                    label: "Aggiungi",
-                    callback: (html) => {
-                        const formData = new FormData(html[0].querySelector('form'));
-                        const member = {
-                            name: formData.get('name'),
-                            role: formData.get('role')
-                        };
+      buttons: {
+        save: {
+          label: 'Aggiungi',
+          callback: (html) => {
+            const formData = new FormData(html[0].querySelector('form'));
+            const member = {
+              name: formData.get('name'),
+              role: formData.get('role')
+            };
 
-                        const compagnia = actor.getFlag('brancalonia-bigat', 'compagnia') || {};
-                        compagnia.membri = compagnia.membri || [];
-                        compagnia.membri.push(member);
-                        actor.setFlag('brancalonia-bigat', 'compagnia', compagnia);
-                    }
-                },
-                cancel: {
-                    label: "Annulla"
-                }
-            },
-            default: "save"
-        }).render(true);
-    }
+            const compagnia = actor.getFlag('brancalonia-bigat', 'compagnia') || {};
+            compagnia.membri = compagnia.membri || [];
+            compagnia.membri.push(member);
+            actor.setFlag('brancalonia-bigat', 'compagnia', compagnia);
+          }
+        },
+        cancel: {
+          label: 'Annulla'
+        }
+      },
+      default: 'save'
+    }).render(true);
+  }
 
-    static openMalefattaDialog(actor) {
-        new Dialog({
-            title: "Registra Malefatta",
-            content: `
+  static openMalefattaDialog(actor) {
+    new Dialog({
+      title: 'Registra Malefatta',
+      content: `
                 <form>
                     <div class="form-group">
                         <label>Tipo di Crimine:</label>
@@ -976,40 +981,40 @@ class BrancaloniaSheets {
                     </div>
                 </form>
             `,
-            buttons: {
-                save: {
-                    label: "Registra",
-                    callback: (html) => {
-                        const formData = new FormData(html[0].querySelector('form'));
-                        const malefatta = {
-                            type: formData.get('type'),
-                            description: formData.get('description'),
-                            bounty: parseInt(formData.get('bounty')),
-                            date: new Date().toLocaleDateString('it-IT')
-                        };
+      buttons: {
+        save: {
+          label: 'Registra',
+          callback: (html) => {
+            const formData = new FormData(html[0].querySelector('form'));
+            const malefatta = {
+              type: formData.get('type'),
+              description: formData.get('description'),
+              bounty: parseInt(formData.get('bounty')),
+              date: new Date().toLocaleDateString('it-IT')
+            };
 
-                        const malefatte = actor.getFlag('brancalonia-bigat', 'malefatte') || [];
-                        malefatte.push(malefatta);
-                        actor.setFlag('brancalonia-bigat', 'malefatte', malefatte);
+            const malefatte = actor.getFlag('brancalonia-bigat', 'malefatte') || [];
+            malefatte.push(malefatta);
+            actor.setFlag('brancalonia-bigat', 'malefatte', malefatte);
 
-                        // Update Infamia
-                        const currentInfamia = actor.getFlag('brancalonia-bigat', 'infamia') || 0;
-                        const infamiaGain = malefatta.type === 'omicidio' ? 2 : 1;
-                        actor.setFlag('brancalonia-bigat', 'infamia', Math.min(10, currentInfamia + infamiaGain));
-                    }
-                },
-                cancel: {
-                    label: "Annulla"
-                }
-            },
-            default: "save"
-        }).render(true);
-    }
+            // Update Infamia
+            const currentInfamia = actor.getFlag('brancalonia-bigat', 'infamia') || 0;
+            const infamiaGain = malefatta.type === 'omicidio' ? 2 : 1;
+            actor.setFlag('brancalonia-bigat', 'infamia', Math.min(10, currentInfamia + infamiaGain));
+          }
+        },
+        cancel: {
+          label: 'Annulla'
+        }
+      },
+      default: 'save'
+    }).render(true);
+  }
 }
 
 // Initialize when Foundry is ready
-Hooks.once("ready", () => {
-    BrancaloniaSheets.initialize();
+Hooks.once('init', () => {
+  BrancaloniaSheets.initialize();
 });
 
 // Export for use in other modules - using global for non-ESM
