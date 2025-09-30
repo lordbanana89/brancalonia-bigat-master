@@ -3,14 +3,14 @@
   "_key": "!item!3b1c21aa02bae1ed",
   "name": "Incantesimi Bestiali",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/nature/wolf-paw-glow-large-green.webp",
   "system": {
     "description": {
-      "value": "<p>Puoi lanciare molti dei tuoi incantesimi mentre sei in Forma Selvatica.</p>",
+      "value": "<p><strong>Incantesimi Bestiali (18° livello)</strong></p><p>A partire dal 18° livello, puoi lanciare molti dei tuoi incantesimi da druido in qualsiasi forma assumi tramite Forma Selvatica. Puoi eseguire le componenti somatiche e verbali di un incantesimo da druido mentre sei in forma bestiale, ma non puoi fornire componenti materiali.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.65",
     "activation": {
       "type": "",
       "cost": null,

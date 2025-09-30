@@ -3,14 +3,14 @@
   "_key": "!item!1b2089b532ee0186",
   "name": "Privilegio del Circolo",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/environment/wilderness/tree-oak.webp",
   "system": {
     "description": {
-      "value": "<p>Ottieni il privilegio culminante del Circolo.</p>",
+      "value": "<p><strong>Privilegio del Circolo (14° livello)</strong></p><p>Al 14° livello, ottieni il privilegio culminante del tuo Circolo Druidico. Consulta la descrizione del tuo specifico Circolo per i dettagli.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.65-69",
     "activation": {
       "type": "",
       "cost": null,

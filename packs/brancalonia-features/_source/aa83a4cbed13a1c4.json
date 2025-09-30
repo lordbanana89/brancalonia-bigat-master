@@ -3,10 +3,10 @@
   "_key": "!item!aa83a4cbed13a1c4",
   "name": "Forma Selvatica Migliorata (GS 1)",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/creatures/birds/corvid-flying-wings-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Puoi trasformarti in bestie di GS 1 o inferiore (volo).</p>",
+      "value": "<p><strong>Forma Selvatica Migliorata - Volo (8° livello)</strong></p><p>All'8° livello, puoi usare Forma Selvatica per trasformarti in una bestia con velocità di volo.</p>",
       "chat": "",
       "unidentified": ""
     },

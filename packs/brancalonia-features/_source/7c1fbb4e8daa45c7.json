@@ -3,10 +3,10 @@
   "_key": "!item!7c1fbb4e8daa45c7",
   "name": "Privilegio del Circolo",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/environment/wilderness/tree-ash.webp",
   "system": {
     "description": {
-      "value": "<p>Ottieni un privilegio del Circolo Druidico.</p>",
+      "value": "<p><strong>Privilegio del Circolo (6° livello)</strong></p><p>Al 6° livello, ottieni un privilegio del tuo Circolo Druidico.</p>",
       "chat": "",
       "unidentified": ""
     },

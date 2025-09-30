@@ -1,7 +1,7 @@
-import { HOOKS_CORE } from "../constants/Hooks.mjs";
-import { LogUtil } from "./LogUtil.mjs";
-import { SettingsUtil } from "./SettingsUtil.mjs";
-import { TopNavigation } from "./TopNavUtil.mjs";
+import { HOOKS_CORE } from "../constants/Hooks.mjs"; 
+import { LogUtil } from "./LogUtil.mjs"; 
+import { SettingsUtil } from "./SettingsUtil.mjs"; 
+import { TopNavigation } from "./TopNavUtil.mjs"; 
 import { ChatUtil } from "./ChatUtil.mjs";
 import { PlayersList } from "./PlayersListUtil.mjs";
 import { getSettings } from "../constants/Settings.mjs";
@@ -22,42 +22,36 @@ import { SheetsUtil } from "./SheetsUtil.mjs";
 /**
  * Main class handling core module initialization and setup
  * Manages module lifecycle, hooks, and core functionality
- *
- * Adapted for Brancalonia from Carolingian UI
- * https://github.com/crlngn/crlngn-ui
  */
-export class BrancaloniaSettingsMain {
+export class Main {
   static isIncompatible = false;
   /**
    * Initialize the module and set up core hooks
    * @static
    */
   static init(){
-    Hooks.once(HOOKS_CORE.INIT, () => {
-      document.querySelector("body").classList.add(MODULE_ID);
+    Hooks.once(HOOKS_CORE.INIT, () => { 
+      document.querySelector("body").classList.add(MODULE_ID); 
       document.querySelector("#ui-middle")?.classList.add(MODULE_ID);
-      // Add theme-brancalonia class for Brancalonia CSS compatibility
-      document.querySelector("body").classList.add("theme-brancalonia");
-      document.querySelector("#ui-middle")?.classList.add("theme-brancalonia");
 
       // Add notification if Foundry version is incompatible
       const foundryVersion = game.data.version;
-      const minVersion = "13.0.0";
+      const minVersion = "13.339";
       if(foundryVersion < minVersion){
-        BrancaloniaSettingsMain.isIncompatible = true;
+        Main.isIncompatible = true;
         return;
       }
 
-      LogUtil.log("Brancalonia Settings | Initializing...", [game.system.title], true);
-      window.brancaloniaSettings = window.brancaloniaSettings || {};
+      LogUtil.log("Initiating module...", [game.system.title], true); 
+      window.crlngnUI = window.crlngnUI || {};
 
       SettingsUtil.registerSettings();
       const SETTINGS = getSettings();
-      const uiDisabled = SettingsUtil.get(SETTINGS.disableUI?.tag || 'disableUI');
+      const uiDisabled = SettingsUtil.get(SETTINGS.disableUI.tag);
       LogUtil.log(HOOKS_CORE.INIT,[uiDisabled]);
 
       if(uiDisabled){
-        document.querySelector("body").classList.remove(MODULE_ID);
+        document.querySelector("body").classList.remove(MODULE_ID); 
         document.querySelector("#ui-middle")?.classList.remove(MODULE_ID);
 
         return;
@@ -86,13 +80,13 @@ export class BrancaloniaSettingsMain {
       MacroHotbar.init();
       // TokenWheel.init();
 
-      Hooks.on(HOOKS_CORE.RENDER_CHAT_MESSAGE, BrancaloniaSettingsMain.#onRenderChatMessage);
+      Hooks.on(HOOKS_CORE.RENDER_CHAT_MESSAGE, Main.#onRenderChatMessage); 
     });
 
     Hooks.once(HOOKS_CORE.READY, () => {
-      LogUtil.log("Brancalonia Settings | Ready", [game]);
-      if(BrancaloniaSettingsMain.isIncompatible){
-        ui.notifications.error("Brancalonia Settings richiede Foundry VTT v13+", {permanent: true});
+      LogUtil.log("Core Ready", [game]);
+      if(Main.isIncompatible){
+        ui.notifications.error(game.i18n.localize("CRLNGN_UI.notifications.incompatibleVersion"), {permanent: true});
         return;
       }
 
@@ -100,13 +94,13 @@ export class BrancaloniaSettingsMain {
       const isStreamMode = document.body.classList.contains('stream');
       const SETTINGS = getSettings();
 
-      var isDebugOn = SettingsUtil.get(SETTINGS.debugMode?.tag || 'debugMode');
+      var isDebugOn = SettingsUtil.get(SETTINGS.debugMode.tag);
       if(isDebugOn){CONFIG.debug.hooks = true};
 
       // Always apply chat styles if enabled
-      const chatStylesEnabled = SettingsUtil.get(SETTINGS.enableChatStyles?.tag || 'enableChatStyles');
+      const chatStylesEnabled = SettingsUtil.get(SETTINGS.enableChatStyles.tag);
       if(chatStylesEnabled){
-        BrancaloniaSettingsMain.addCSSLocalization();
+        Main.addCSSLocalization();
       }
 
       // Exit early if in stream mode - skip UI component setup
@@ -147,7 +141,7 @@ export class BrancaloniaSettingsMain {
    */
   static addCSSLocalization(){
     const locBtnPath = 'CRLNGN_UI.dnd5e.chatCard.buttons';
-
+    
     GeneralUtil.addCSSVars('--crlngn-i18n-attack', game.i18n.localize(`${locBtnPath}.attack`));
     GeneralUtil.addCSSVars('--crlngn-i18n-damage', game.i18n.localize(`${locBtnPath}.damage`));
     GeneralUtil.addCSSVars('--crlngn-i18n-summons', game.i18n.localize(`${locBtnPath}.summons`));
@@ -167,8 +161,10 @@ export class BrancaloniaSettingsMain {
    * @param {ChatMessage} chatMessage - The chat message being rendered
    * @param {jQuery} html - The HTML element of the chat message
    */
-  static #onRenderChatMessage = (chatMessage, html, data) => {
-    LogUtil.log(HOOKS_CORE.RENDER_CHAT_MESSAGE, [chatMessage, html, data]);
-    ChatUtil.enrichCard?.(chatMessage, html);
-  };
+  static #onRenderChatMessage = (chatMessage, html, c) => { 
+    LogUtil.log(HOOKS_CORE.RENDER_CHAT_MESSAGE,[chatMessage, html, c]);
+  
+    ChatUtil.enrichCard(chatMessage, html);
+  }
+
 }

@@ -3,10 +3,10 @@
   "_key": "!item!400f87e45d30d4ad",
   "name": "Privilegio del Circolo",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/environment/wilderness/tree-spruce.webp",
   "system": {
     "description": {
-      "value": "<p>Ottieni un privilegio avanzato del Circolo.</p>",
+      "value": "<p><strong>Privilegio del Circolo (10° livello)</strong></p><p>Al 10° livello, ottieni un privilegio avanzato del tuo Circolo Druidico.</p>",
       "chat": "",
       "unidentified": ""
     },

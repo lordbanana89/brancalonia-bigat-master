@@ -3,14 +3,14 @@
   "_key": "!item!f8d9767b9374850d",
   "name": "Distruggere Non Morti (GS 1)",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/holy/projectile-beam-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Distruggere Non Morti ora funziona contro non morti di GS 1 o inferiore.</p>",
+      "value": "<p><strong>Distruggere Non Morti - GS 1 (8° livello)</strong></p><p>All'8° livello, quando un non morto fallisce il suo tiro salvezza contro il tuo privilegio Incanalare Divinità: Scacciare Non Morti, viene istantaneamente distrutto se il suo grado di sfida è 1 o inferiore.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.59",
     "activation": {
       "type": "",
       "cost": null,

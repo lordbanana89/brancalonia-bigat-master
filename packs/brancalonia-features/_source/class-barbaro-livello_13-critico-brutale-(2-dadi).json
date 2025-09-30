@@ -3,23 +3,101 @@
   "_key": "!item!aiyocmlc1d8lmd1a",
   "name": "Critico Brutale (2 dadi)",
   "type": "feat",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
-    "type": {
-      "value": "class",
-      "subtype": ""
-    },
     "description": {
-      "value": "<p>Privilegio di classe del Barbaro di livello 13.</p>",
-      "chat": ""
+      "value": "<p><strong>Critico Brutale (13° livello)</strong></p><p>Al 13° livello, quando ottieni un colpo critico con un attacco in mischia con arma, puoi tirare due dadi danno addizionali dell'arma e aggiungerli al danno extra del critico.</p><p>Questo potenzia la tua capacità di infliggere danni devastanti quando colpisci con un critico, rendendoti ancora più letale negli scontri ravvicinati.</p>",
+      "chat": "",
+      "unidentified": ""
     },
-    "requirements": "Barbaro livello 13",
+    "source": "Manuale del Giocatore p.49",
     "activation": {
       "type": "",
       "cost": null,
       "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Barbaro Livello 13",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
     }
   },
-  "effects": [],
-  "flags": {}
+  "effects": [
+    {
+      "_id": "criticobrutale002",
+      "name": "Critico Brutale (2 dadi)",
+      "icon": "icons/skills/melee/strike-sword-steel-yellow.webp",
+      "changes": [
+        {
+          "key": "flags.dnd5e.meleeCriticalDamageDice",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>Aggiungi 2 dadi danno extra ai colpi critici in mischia.</p>",
+      "origin": null,
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": "#ffffff",
+      "_key": "!items.effects!aiyocmlc1d8lmd1a.criticobrutale002"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "barbaro",
+      "livello": 13
+    }
+  }
 }

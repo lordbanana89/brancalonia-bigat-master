@@ -3,14 +3,14 @@
   "_key": "!item!750b7d7f815dcf26",
   "name": "Distruggere Non Morti (GS 1/2)",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/holy/explosion-beam-impact-silhouette.webp",
   "system": {
     "description": {
-      "value": "<p>Quando Incanali Divinità, puoi distruggere non morti di GS 1/2 o inferiore.</p>",
+      "value": "<p><strong>Distruggere Non Morti - GS 1/2 (5° livello)</strong></p><p>Al 5° livello, quando un non morto fallisce il suo tiro salvezza contro il tuo privilegio Incanalare Divinità: Scacciare Non Morti, viene istantaneamente distrutto se il suo grado di sfida è 1/2 o inferiore.</p><p>Questo significa che zombi, scheletri e altri non morti deboli vengono completamente annientati dalla tua energia divina invece di essere solo scacciati.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.59",
     "activation": {
       "type": "",
       "cost": null,

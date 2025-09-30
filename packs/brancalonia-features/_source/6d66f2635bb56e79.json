@@ -3,14 +3,14 @@
   "_key": "!item!6d66f2635bb56e79",
   "name": "Circolo Druidico",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/environment/wilderness/stone-circle.webp",
   "system": {
     "description": {
-      "value": "<p>Scegli un Circolo Druidico a cui appartenere: Circolo della Terra o Circolo della Luna.</p>",
+      "value": "<p><strong>Circolo Druidico (2° livello)</strong></p><p>Al 2° livello, scegli di identificarti con un circolo di druidi: il Circolo della Terra o il Circolo della Luna. La tua scelta ti conferisce privilegi al 2° livello e poi di nuovo al 6°, 10° e 14° livello.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.65-69",
     "activation": {
       "type": "",
       "cost": null,

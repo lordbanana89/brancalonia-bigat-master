@@ -3,14 +3,14 @@
   "_key": "!item!c12db243980bccdb",
   "name": "Privilegio del Dominio",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/symbols/question-glow-green.webp",
   "system": {
     "description": {
-      "value": "<p>Ottieni un privilegio specifico del tuo Dominio Divino.</p>",
+      "value": "<p><strong>Privilegio del Dominio (2° livello)</strong></p><p>Al 2° livello, ottieni un privilegio specifico del tuo Dominio Divino. Ogni dominio conferisce un privilegio unico a questo livello.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.59-63",
     "activation": {
       "type": "",
       "cost": null,

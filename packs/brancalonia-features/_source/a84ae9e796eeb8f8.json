@@ -3,14 +3,14 @@
   "_key": "!item!a84ae9e796eeb8f8",
   "name": "Senza Tempo",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/time/hourglass-tilted-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Non subisci gli effetti dell'invecchiamento e non puoi invecchiare magicamente.</p>",
+      "value": "<p><strong>Senza Tempo (18° livello)</strong></p><p>A partire dal 18° livello, la magia primordiale che eserciti ti fa invecchiare più lentamente. Per ogni 10 anni che passano, il tuo corpo invecchia solo di 1 anno.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.65",
     "activation": {
       "type": "",
       "cost": null,

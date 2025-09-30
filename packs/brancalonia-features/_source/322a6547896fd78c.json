@@ -3,14 +3,14 @@
   "_key": "!item!322a6547896fd78c",
   "name": "Privilegio del Dominio",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/symbols/chevron-elipse-circle-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Ottieni il privilegio culminante del Dominio.</p>",
+      "value": "<p><strong>Privilegio del Dominio (17° livello)</strong></p><p>Al 17° livello, ottieni il privilegio culminante del tuo Dominio Divino.</p><p>Ogni Dominio conferisce un potente privilegio a questo livello:</p><ul><li><strong>Dominio della Vita:</strong> Guaritore Supremo</li><li><strong>Dominio della Luce:</strong> Corona di Luce</li><li><strong>Dominio della Tempesta:</strong> Figlio della Tempesta</li><li>Altri domini hanno i loro privilegi specifici</li></ul><p><strong>Nota:</strong> Il privilegio specifico viene concesso automaticamente dal sistema in base al Dominio selezionato.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.59-63",
     "activation": {
       "type": "",
       "cost": null,

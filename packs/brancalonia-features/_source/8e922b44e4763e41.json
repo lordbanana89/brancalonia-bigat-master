@@ -3,14 +3,14 @@
   "_key": "!item!8e922b44e4763e41",
   "name": "Dominio Divino",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/symbols/cross-circle-blue-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Scegli un Dominio Divino che riflette la natura della tua divinità.</p>",
+      "value": "<p><strong>Dominio Divino (1° livello)</strong></p><p>Al 1° livello, scegli un dominio che riflette la natura e gli interessi della tua divinità: Conoscenza, Guerra, Inganno, Luce, Natura, Tempesta o Vita. Il tuo dominio ti conferisce incantesimi di dominio e altri privilegi al 1° livello e poi di nuovo ai livelli 2, 6, 8 e 17.</p><p>Ogni dominio ha una lista di incantesimi che ottieni ai livelli da chierico indicati nella sua descrizione. Una volta ottenuto un incantesimo di dominio, lo hai sempre preparato e non conta nel numero di incantesimi che puoi preparare ogni giorno.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.58-63",
     "activation": {
       "type": "",
       "cost": null,

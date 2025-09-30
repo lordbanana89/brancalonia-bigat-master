@@ -3,14 +3,14 @@
   "_key": "!item!297f41d015142695",
   "name": "Intervento Divino Migliorato",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Il tuo Intervento Divino ha automaticamente successo, senza bisogno di tirare.</p>",
+      "value": "<p><strong>Intervento Divino Migliorato (20° livello)</strong></p><p>Al 20° livello, il tuo appello di Intervento Divino ha automaticamente successo, senza bisogno di tirare.</p><p>Questo rappresenta il culmine del tuo legame con la tua divinità. Non devi più affidarti alla fortuna: quando chiami aiuto, la tua divinità risponde sempre.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.59",
     "activation": {
       "type": "",
       "cost": null,

@@ -3,10 +3,10 @@
   "_key": "!item!234185d21039cc8a",
   "name": "Forma Selvatica Migliorata (GS 1/2)",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/creatures/fish/fish-marlin-swordfight-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Puoi trasformarti in bestie di GS 1/2 o inferiore (nuoto).</p>",
+      "value": "<p><strong>Forma Selvatica Migliorata - Nuoto (4° livello)</strong></p><p>Al 4° livello, puoi usare Forma Selvatica per trasformarti in una bestia con velocità di nuoto.</p>",
       "chat": "",
       "unidentified": ""
     },

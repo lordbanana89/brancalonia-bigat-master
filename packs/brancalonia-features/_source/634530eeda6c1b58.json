@@ -3,14 +3,14 @@
   "_key": "!item!634530eeda6c1b58",
   "name": "Distruggere Non Morti (GS 4)",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/holy/projectile-beam-yellow-orange.webp",
   "system": {
     "description": {
-      "value": "<p>Distruggere Non Morti ora funziona contro non morti di GS 4 o inferiore.</p>",
+      "value": "<p><strong>Distruggere Non Morti - GS 4 (17° livello)</strong></p><p>Al 17° livello, quando un non morto fallisce il suo tiro salvezza contro il tuo privilegio Incanalare Divinità: Scacciare Non Morti, viene istantaneamente distrutto se il suo grado di sfida è 4 o inferiore.</p><p>Questo potenziamento rende estremamente pericolosa la tua presenza per i non morti di media potenza.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.59",
     "activation": {
       "type": "",
       "cost": null,

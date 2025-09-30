@@ -3,14 +3,14 @@
   "_key": "!item!classbarbarolivello18forzaindomabilef168d9",
   "name": "Forza Indomabile",
   "type": "feat",
-  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "img": "icons/skills/melee/hand-grip-sword-red.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 18° livello, se il totale di una prova di Forza è inferiore al tuo punteggio di Forza, puoi usare quel punteggio al posto del totale.</p>",
+      "value": "<p><strong>Forza Indomabile (18° livello)</strong></p><p>A partire dal 18° livello, se il totale di una prova di Forza è inferiore al tuo punteggio di Forza, puoi usare quel punteggio al posto del totale.</p><p><strong>Esempio:</strong> Con Forza 20, se tiri un 5 su un tiro di Forza (per un totale di 5+5=10), puoi usare 20 invece. Questo assicura che le tue prove di Forza abbiano sempre un minimo pari al tuo punteggio di Forza.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Brancalonia Manuale Base, D&D 5e PHB p.49",
+    "source": "Manuale del Giocatore p.49",
     "activation": {
       "type": "",
       "cost": null,
