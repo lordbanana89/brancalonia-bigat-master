@@ -11,20 +11,39 @@ Hooks.once('init', () => {
   // Crea l'oggetto principale se non esiste
   if (!game.brancalonia) {
     game.brancalonia = {
-      version: '10.1.0',
+      version: '11.2.7',
       modules: {},
       initialized: false,
       initQueue: [],
-      api: {}
+      api: {},
+      chatCommands: {},
+      log: {},
+      debug: { enabled: false },
+      // Pre-initialize properties that modules will assign
+      backgroundPrivileges: null,
+      backgroundEffects: null,
+      conditions: null,
+      cimeliMaledetti: null,
+      mechanics: null,
+      activationResults: null
     };
   }
 
   // Proteggi l'oggetto da sovrascritture accidentali
+  // ma permetti l'aggiunta di nuove proprietà (writable: false previene game.brancalonia = {...})
   Object.defineProperty(game, 'brancalonia', {
     value: game.brancalonia,
     writable: false,
     configurable: false
   });
+
+  // Helper per permettere ai moduli di registrarsi in modo sicuro
+  game.brancalonia.registerModule = function(moduleName, moduleData) {
+    if (!this.modules[moduleName]) {
+      this.modules[moduleName] = moduleData;
+    }
+    return this.modules[moduleName];
+  };
 
   console.log('✅ game.brancalonia protected and ready');
 });

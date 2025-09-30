@@ -101,9 +101,6 @@ class MalefatteTaglieNomeaSystem {
     // Registrazione comandi chat
     this.registerChatCommands();
 
-    // Creazione macro automatica
-    this.createMacros();
-
     // Estensione Actor per malefatte
     this.extendActor();
 
@@ -1445,6 +1442,11 @@ window.MalefatteTaglieNomeaSystem = MalefatteTaglieNomeaSystem;
 Hooks.once('init', () => {
   console.log('🎮 Brancalonia | Inizializzazione Malefatte System');
   MalefatteTaglieNomeaSystem.initialize();
+});
+
+// Hook per creazione macro (dopo che game.user è disponibile)
+Hooks.once('ready', () => {
+  MalefatteTaglieNomeaSystem.createMacros();
 });
 
 // Hook per integrazione con schede

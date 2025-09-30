@@ -352,9 +352,6 @@ class FactionsSystem {
     // Registrazione comandi chat
     this.registerChatCommands();
 
-    // Creazione macro automatica
-    this.createMacros();
-
     // Estensione Actor per fazioni
     this.extendActor();
 
@@ -1329,6 +1326,11 @@ window.FactionsSystem = FactionsSystem;
 Hooks.once('init', () => {
   console.log('🎮 Brancalonia | Inizializzazione Factions System');
   FactionsSystem.initialize();
+});
+
+// Hook per creazione macro (dopo che game.user è disponibile)
+Hooks.once('ready', () => {
+  FactionsSystem.createMacros();
 });
 
 // Hook per integrazione con schede

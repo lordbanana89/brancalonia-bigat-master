@@ -188,9 +188,6 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
     // Estendi Actor se necessario
     this._extendActor();
 
-    // Crea macro automatiche
-    this._createMacros();
-
     console.log('✅ Level Cap System inizializzato con successo!');
     return this.instance;
   }
@@ -1797,4 +1794,9 @@ window.LevelCapSystem = LevelCapSystem;
 // Auto-inizializzazione
 Hooks.once('init', async () => {
   await LevelCapSystem.initialize();
+});
+
+// Hook per creazione macro (dopo che game.user è disponibile)
+Hooks.once('ready', async () => {
+  await LevelCapSystem._createMacros();
 });
