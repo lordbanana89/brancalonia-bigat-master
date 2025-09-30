@@ -1,0 +1,97 @@
+/* ===================================== */
+/* BRANCALONIA THEME - GOLD VARIANT */
+/* Oro Veneziano */
+/* ===================================== */
+
+body.theme-brancalonia-gold {
+  /* Surfaces - Oro Antico */
+  --bcl-surface: #E7D6AE;
+  --bcl-paper: #D9C38F;
+  --bcl-paper-weak: #E0CDA0;
+  --bcl-paper-strong: #C4A570;
+  --bcl-parchment: #EFE0BD;
+
+  /* Text - Bruno Scuro */
+  --bcl-ink: #221919;
+  --bcl-ink-strong: #1A1414;
+  --bcl-ink-weak: #3A2F2F;
+  --bcl-text: #221919;
+  --bcl-text-light: #4A3828;
+
+  /* Interactive - Oro Veneziano Brillante */
+  --bcl-gold: #D4AF37;
+  --bcl-gold-hover: #F0C75E;
+  --bcl-gold-active: #C9A54A;
+  --bcl-accent: #D4AF37;
+  --bcl-accent-hover: #F0C75E;
+
+  /* Semantic Colors - Gold adjusted */
+  --bcl-primary: #B8943D;
+  --bcl-primary-hover: #C9A54A;
+  --bcl-success: #8B9F5C;
+  --bcl-warning: #E5B84A;
+  --bcl-danger: #B85C3B;
+  --bcl-info: #7399C0;
+
+  /* Borders & Dividers */
+  --bcl-border: #B8943D;
+  --bcl-border-light: #C9A54A;
+  --bcl-border-strong: #8B7355;
+  --bcl-divider: rgba(184, 148, 61, 0.3);
+
+  /* Shadows - Warm gold-tinted */
+  --bcl-shadow-sm: 0 1px 3px rgba(34, 25, 25, 0.2);
+  --bcl-shadow-md: 0 3px 8px rgba(34, 25, 25, 0.25);
+  --bcl-shadow-lg: 0 6px 16px rgba(34, 25, 25, 0.3);
+  --bcl-shadow-inset: inset 0 2px 4px rgba(184, 148, 61, 0.15);
+
+  /* Typography */
+  --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
+  --bcl-font-body: "Crimson Text", "Libre Baskerville", Georgia, serif;
+  --bcl-font-ui: "Quattrocento", "Lora", serif;
+
+  /* Opacity Levels */
+  --bcl-opacity-subtle: 0.6;
+  --bcl-opacity-medium: 0.8;
+  --bcl-opacity-strong: 0.95;
+
+  /* Spacing */
+  --bcl-spacing-xs: 0.25rem;
+  --bcl-spacing-sm: 0.5rem;
+  --bcl-spacing-md: 1rem;
+  --bcl-spacing-lg: 1.5rem;
+  --bcl-spacing-xl: 2rem;
+}
+
+/* Background patterns for Gold theme */
+body.theme-brancalonia-gold::before {
+  background:
+    radial-gradient(circle at 25% 30%, rgba(240, 199, 94, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 70%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg, transparent 45%, rgba(201, 165, 74, 0.03) 50%, transparent 55%);
+}
+
+/* Gold theme specific shimmer effect */
+body.theme-brancalonia-gold .window-app {
+  border: 2px solid var(--bcl-border);
+  box-shadow:
+    var(--bcl-shadow-md),
+    inset 0 1px 0 rgba(240, 199, 94, 0.2);
+}
+
+body.theme-brancalonia-gold .dnd5e2.sheet.actor .window-header {
+  background: linear-gradient(
+    to right,
+    var(--bcl-gold) 0%,
+    var(--bcl-gold-hover) 50%,
+    var(--bcl-gold) 100%
+  );
+  border-bottom: 2px solid var(--bcl-border-strong);
+}
+
+/* Gold accents on interactive elements */
+body.theme-brancalonia-gold button:hover,
+body.theme-brancalonia-gold .item-control:hover {
+  background: var(--bcl-gold-hover);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}

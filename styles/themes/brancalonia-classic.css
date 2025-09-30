@@ -1,0 +1,71 @@
+/* ===================================== */
+/* BRANCALONIA THEME - CLASSIC VARIANT */
+/* Renaissance Classico */
+/* ===================================== */
+
+body.theme-brancalonia-classic {
+  /* Surfaces - Pergamena Classica */
+  --bcl-surface: #F3E6CC;
+  --bcl-paper: #E7D6AE;
+  --bcl-paper-weak: #EFE0BD;
+  --bcl-paper-strong: #D9C38F;
+  --bcl-parchment: #F5EDD8;
+
+  /* Text - Inchiostro Seppia */
+  --bcl-ink: #2B1F14;
+  --bcl-ink-strong: #1C1814;
+  --bcl-ink-weak: #4A3828;
+  --bcl-text: #2B1F14;
+  --bcl-text-light: #5C4D3E;
+
+  /* Interactive - Oro Toscano */
+  --bcl-gold: #C9A54A;
+  --bcl-gold-hover: #D4AF37;
+  --bcl-gold-active: #B8943D;
+  --bcl-accent: #C9A54A;
+  --bcl-accent-hover: #D4AF37;
+
+  /* Semantic Colors */
+  --bcl-primary: #8B4513;
+  --bcl-primary-hover: #A0522D;
+  --bcl-success: #556B2F;
+  --bcl-warning: #DAA520;
+  --bcl-danger: #8B2500;
+  --bcl-info: #4682B4;
+
+  /* Borders & Dividers */
+  --bcl-border: #C4A570;
+  --bcl-border-light: #D9C38F;
+  --bcl-border-strong: #8B7355;
+  --bcl-divider: rgba(139, 115, 85, 0.3);
+
+  /* Shadows */
+  --bcl-shadow-sm: 0 1px 3px rgba(43, 31, 20, 0.15);
+  --bcl-shadow-md: 0 3px 8px rgba(43, 31, 20, 0.2);
+  --bcl-shadow-lg: 0 6px 16px rgba(43, 31, 20, 0.25);
+  --bcl-shadow-inset: inset 0 2px 4px rgba(43, 31, 20, 0.1);
+
+  /* Typography */
+  --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
+  --bcl-font-body: "Crimson Text", "Libre Baskerville", Georgia, serif;
+  --bcl-font-ui: "Quattrocento", "Lora", serif;
+
+  /* Opacity Levels */
+  --bcl-opacity-subtle: 0.6;
+  --bcl-opacity-medium: 0.8;
+  --bcl-opacity-strong: 0.95;
+
+  /* Spacing (optional, if needed) */
+  --bcl-spacing-xs: 0.25rem;
+  --bcl-spacing-sm: 0.5rem;
+  --bcl-spacing-md: 1rem;
+  --bcl-spacing-lg: 1.5rem;
+  --bcl-spacing-xl: 2rem;
+}
+
+/* Background patterns for Classic theme */
+body.theme-brancalonia-classic::before {
+  background:
+    radial-gradient(circle at 20% 50%, rgba(201, 165, 74, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(139, 115, 85, 0.05) 0%, transparent 50%);
+}

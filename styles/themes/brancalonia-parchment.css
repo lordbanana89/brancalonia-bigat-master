@@ -1,0 +1,91 @@
+/* ===================================== */
+/* BRANCALONIA THEME - PARCHMENT VARIANT */
+/* Pergamena Antica */
+/* ===================================== */
+
+body.theme-brancalonia-parchment {
+  /* Surfaces - Pergamena Antica Chiara */
+  --bcl-surface: #FAF6ED;
+  --bcl-paper: #F5EDD8;
+  --bcl-paper-weak: #F9F4E8;
+  --bcl-paper-strong: #EFE0BD;
+  --bcl-parchment: #FFFDF7;
+
+  /* Text - Inchiostro Nero Antico */
+  --bcl-ink: #1C1814;
+  --bcl-ink-strong: #0F0D0A;
+  --bcl-ink-weak: #3A2B1F;
+  --bcl-text: #1C1814;
+  --bcl-text-light: #4A3828;
+
+  /* Interactive - Oro Pallido */
+  --bcl-gold: #C9A54A;
+  --bcl-gold-hover: #D9B560;
+  --bcl-gold-active: #B8943D;
+  --bcl-accent: #C9A54A;
+  --bcl-accent-hover: #D9B560;
+
+  /* Semantic Colors - Parchment adjusted */
+  --bcl-primary: #8B6F47;
+  --bcl-primary-hover: #A0825E;
+  --bcl-success: #6B8E3D;
+  --bcl-warning: #D4A739;
+  --bcl-danger: #A84328;
+  --bcl-info: #5B8BB8;
+
+  /* Borders & Dividers */
+  --bcl-border: #D9C38F;
+  --bcl-border-light: #E7D6AE;
+  --bcl-border-strong: #C4A570;
+  --bcl-divider: rgba(196, 165, 112, 0.25);
+
+  /* Shadows - Very subtle for light theme */
+  --bcl-shadow-sm: 0 1px 2px rgba(28, 24, 20, 0.08);
+  --bcl-shadow-md: 0 2px 6px rgba(28, 24, 20, 0.12);
+  --bcl-shadow-lg: 0 4px 12px rgba(28, 24, 20, 0.15);
+  --bcl-shadow-inset: inset 0 1px 3px rgba(28, 24, 20, 0.08);
+
+  /* Typography */
+  --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
+  --bcl-font-body: "Crimson Text", "Libre Baskerville", Georgia, serif;
+  --bcl-font-ui: "Quattrocento", "Lora", serif;
+
+  /* Opacity Levels */
+  --bcl-opacity-subtle: 0.65;
+  --bcl-opacity-medium: 0.85;
+  --bcl-opacity-strong: 0.98;
+
+  /* Spacing */
+  --bcl-spacing-xs: 0.25rem;
+  --bcl-spacing-sm: 0.5rem;
+  --bcl-spacing-md: 1rem;
+  --bcl-spacing-lg: 1.5rem;
+  --bcl-spacing-xl: 2rem;
+}
+
+/* Background patterns for Parchment theme */
+body.theme-brancalonia-parchment::before {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(201, 165, 74, 0.02) 2px,
+      rgba(201, 165, 74, 0.02) 4px
+    ),
+    radial-gradient(circle at 30% 40%, rgba(217, 195, 143, 0.04) 0%, transparent 60%);
+}
+
+/* Parchment theme specific texture */
+body.theme-brancalonia-parchment .window-app {
+  background: var(--bcl-paper);
+  border-color: var(--bcl-border);
+}
+
+body.theme-brancalonia-parchment .dnd5e2.sheet.actor {
+  background: linear-gradient(
+    to bottom,
+    var(--bcl-parchment) 0%,
+    var(--bcl-paper) 100%
+  );
+}

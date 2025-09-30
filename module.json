@@ -39,6 +39,7 @@
     ]
   },
   "esmodules": [
+    "modules/crlngn-ui/components/Main.mjs",
     "modules/brancalonia-compatibility-fix.js",
     "modules/brancalonia-init-wrapper.js",
     "core/BrancaloniaCore.js",
@@ -83,6 +84,10 @@
   ],
   "styles": [
     "styles/brancalonia-tokens-unified.css",
+    "styles/themes/brancalonia-classic.css",
+    "styles/themes/brancalonia-dark.css",
+    "styles/themes/brancalonia-parchment.css",
+    "styles/themes/brancalonia-gold.css",
     "styles/brancalonia.css",
     "styles/brancalonia-dnd5e-v5.css",
     "styles/covo-system.css"
