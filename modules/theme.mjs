@@ -88,10 +88,12 @@ export class Theme {
     style.innerHTML = css;
     document.head.appendChild(style);
 
-    // Applica classi al body
-    document.body.classList.add("brancalonia-theme", "pergamena-theme");
+    // Applica classi al body - CORRETTO per CSS v11.2.0+
+    document.body.classList.add("theme-brancalonia");
+    // Rimuovi classi legacy se presenti
+    document.body.classList.remove("brancalonia-theme", "pergamena-theme");
 
-    console.log("Brancalonia | Tema applicato");
+    console.log("Brancalonia | Tema applicato con theme-brancalonia class");
   }
 
   /**

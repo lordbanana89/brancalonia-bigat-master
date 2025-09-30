@@ -41,9 +41,10 @@ export class BrancaloniaThemeCore {
     Hooks.once(HOOKS_CORE.INIT, () => {
       LogUtil.log("Brancalonia Theme Core | Initializing...", true);
 
-      // Add module identifier class
-      document.querySelector("body").classList.add("brancalonia-theme-active");
-      document.querySelector("#ui-middle")?.classList.add("brancalonia-theme");
+      // Add module identifier class - CORRETTO per CSS v11.2.0+
+      document.querySelector("body").classList.add("theme-brancalonia");
+      // Rimuovi classi legacy incompatibili
+      document.querySelector("body").classList.remove("brancalonia-theme-active", "brancalonia-theme", "pergamena-theme");
 
       // Check Foundry compatibility
       const foundryVersion = game.data.version;

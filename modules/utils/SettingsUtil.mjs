@@ -338,7 +338,7 @@ export class SettingsUtil {
   static applyAllSettings() {
     // Check if UI is disabled
     if (this.get('disableUI')) {
-      document.body.classList.remove('brancalonia-theme-active');
+      document.body.classList.remove('theme-brancalonia');
       return;
     }
 

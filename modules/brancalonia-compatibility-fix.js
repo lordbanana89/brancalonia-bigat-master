@@ -213,16 +213,20 @@ Hooks.once('init', () => {
     }
   });
 
-  // Applica theme class se necessario
-  try {
-    if (game.settings.get('brancalonia-bigat', 'enableTheme')) {
-      document.body.classList.add('theme-brancalonia');
-    }
-  } catch (error) {
-    // Setting potrebbe non esistere, applica theme di default
-    console.log('📝 Theme setting not found, applying default theme');
-    document.body.classList.add('theme-brancalonia');
-  }
+  // Applica theme class - FORZATO per compatibilità CSS
+  // CSS richiede body.theme-brancalonia per tutti gli stili
+  console.log('🎨 Applying theme-brancalonia class to body');
+  document.body.classList.add('theme-brancalonia');
+
+  // Rimuovi classi legacy incompatibili se presenti
+  document.body.classList.remove('brancalonia-theme', 'pergamena-theme');
+});
+
+// Re-apply on ready hook per sicurezza (dopo che tutti i moduli sono caricati)
+Hooks.once('ready', () => {
+  console.log('🎨 Re-applying theme-brancalonia class (ready hook)');
+  document.body.classList.add('theme-brancalonia');
+  document.body.classList.remove('brancalonia-theme', 'pergamena-theme');
 });
 
 console.log('✅ Brancalonia Compatibility Fix loaded');
