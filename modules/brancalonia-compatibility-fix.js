@@ -8,11 +8,9 @@
 
 // Verifica versione D&D 5e
 Hooks.once('init', () => {
-  // CRITICAL: Applica body class SUBITO (prima di qualsiasi rendering)
-  // Seguendo il pattern di crlngn-ui (Main.mjs:34)
-  document.querySelector("body").classList.add("theme-brancalonia");
-  document.querySelector("#ui-middle")?.classList.add("theme-brancalonia");
-  console.log('🎨 Brancalonia body class applied in init hook');
+  // Body class application moved to Main.mjs (first esmodule)
+  // This ensures correct initialization order
+  console.log('🎨 Brancalonia compatibility fix initialized');
 
   const dnd5eVersion = game.system.version;
   const versionNumber = parseFloat(dnd5eVersion);

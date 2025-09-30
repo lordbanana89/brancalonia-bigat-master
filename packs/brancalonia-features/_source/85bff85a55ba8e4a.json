@@ -3,14 +3,14 @@
   "_key": "!item!85bff85a55ba8e4a",
   "name": "Privilegio del Collegio",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/environment/settlement/academy.webp",
   "system": {
     "description": {
-      "value": "<p>Ottieni un privilegio avanzato del Collegio.</p>",
+      "value": "<p><strong>Privilegio del Collegio (14° livello)</strong></p><p>Al 14° livello, ottieni un privilegio aggiuntivo determinato dal tuo Collegio Bardico.</p><p>Il Collegio che hai scelto al 3° livello ti conferisce un privilegio più potente a questo livello. Consulta la descrizione del tuo specifico Collegio Bardico per i dettagli su quale privilegio ottieni:</p><ul><li><strong>Collegio della Conoscenza:</strong> Segreti Magistrali</li><li><strong>Collegio del Valore:</strong> Attacco Extra</li><li>Altri collegi hanno i loro privilegi specifici</li></ul><p><strong>Nota:</strong> Questo privilegio viene concesso automaticamente dal sistema quando raggiungi il 14° livello e hai un Collegio selezionato.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.54",
     "activation": {
       "type": "",
       "cost": null,

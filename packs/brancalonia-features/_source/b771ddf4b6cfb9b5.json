@@ -3,14 +3,14 @@
   "_key": "!item!b771ddf4b6cfb9b5",
   "name": "Segreti Magici",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/symbols/question-stone-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Scegli due incantesimi da qualsiasi classe come incantesimi da bardo.</p>",
+      "value": "<p><strong>Segreti Magici (10° livello)</strong></p><p>Al 10° livello, hai saccheggiato conoscenze magiche da un'ampia gamma di discipline. Scegli due incantesimi da qualsiasi classe, inclusa questa. Un incantesimo che scegli deve essere di un livello che puoi lanciare, come mostrato nella tabella del Bardo, o un trucchetto.</p><p>Gli incantesimi scelti contano come incantesimi da bardo per te e sono inclusi nel numero nella colonna Incantesimi Conosciuti della tabella del Bardo.</p><p>Impari due incantesimi aggiuntivi da qualsiasi classe al 14° livello e ancora due al 18° livello.</p><p><strong>Nota:</strong> Questa feature ti permette di scegliere incantesimi potenti o utility da qualsiasi lista, come <em>Controincantesimo</em> dal mago, <em>Passo Veloce</em> dal ranger, o <em>Resurrezione</em> dal chierico.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.54",
     "activation": {
       "type": "",
       "cost": null,

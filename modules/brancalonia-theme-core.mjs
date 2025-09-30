@@ -41,9 +41,8 @@ export class BrancaloniaThemeCore {
     Hooks.once(HOOKS_CORE.INIT, () => {
       LogUtil.log("Brancalonia Theme Core | Initializing...", true);
 
-      // Add module identifier class - CORRETTO per CSS v11.2.0+
-      document.querySelector("body").classList.add("theme-brancalonia");
-      // Rimuovi classi legacy incompatibili
+      // Body class application moved to Main.mjs (first esmodule)
+      // Remove legacy incompatible classes only
       document.querySelector("body").classList.remove("brancalonia-theme-active", "brancalonia-theme", "pergamena-theme");
 
       // Check Foundry compatibility

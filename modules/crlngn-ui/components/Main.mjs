@@ -26,8 +26,15 @@ export class BrancaloniaSettingsMain {
    */
   static init() {
     Hooks.once(HOOKS_CORE.INIT, () => {
-      // Add module identifier class to body
-      document.querySelector("body").classList.add(MODULE_ID);
+      // Add module identifier classes to body
+      const body = document.querySelector("body");
+      body.classList.add(MODULE_ID); // brancalonia-bigat (for crlngn-ui CSS)
+      body.classList.add("theme-brancalonia"); // theme-brancalonia (for Brancalonia CSS)
+
+      const uiMiddle = document.querySelector("#ui-middle");
+      if (uiMiddle) {
+        uiMiddle.classList.add("theme-brancalonia");
+      }
 
       // Check Foundry version compatibility
       const foundryVersion = game.data.version;

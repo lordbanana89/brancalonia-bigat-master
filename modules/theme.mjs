@@ -88,9 +88,8 @@ export class Theme {
     style.innerHTML = css;
     document.head.appendChild(style);
 
-    // Applica classi al body - CORRETTO per CSS v11.2.0+
-    document.body.classList.add("theme-brancalonia");
-    // Rimuovi classi legacy se presenti
+    // Body class application moved to Main.mjs (first esmodule)
+    // Remove legacy classes if present
     document.body.classList.remove("brancalonia-theme", "pergamena-theme");
 
     console.log("Brancalonia | Tema applicato con theme-brancalonia class");
