@@ -3,14 +3,14 @@
   "_key": "!item!classbarbarolivello1difesasenzaarmaturad1d8e3",
   "name": "Difesa Senza Armatura",
   "type": "feat",
-  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "img": "icons/equipment/chest/breastplate-layered-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Mentre non indossi armatura, la tua Classe Armatura è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Costituzione. Puoi usare uno scudo e ottenere comunque questo beneficio.</p>",
+      "value": "<p><strong>Difesa Senza Armatura (1° livello)</strong></p><p>Mentre non indossi armatura, la tua Classe Armatura è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Costituzione.</p><p>Puoi usare uno scudo e ottenere comunque questo beneficio.</p><p><strong>Esempio:</strong> Un barbaro di 1° livello con Destrezza 14 (+2) e Costituzione 16 (+3) ha CA 15 senza armatura (10 + 2 + 3 = 15). Se usa uno scudo, la sua CA diventa 17.</p><p><strong>Nota:</strong> Questa feature è sempre attiva quando non indossi armatura. Il sistema di D&D 5e calcola automaticamente la tua CA migliore tra le opzioni disponibili (armatura indossata, Difesa Senza Armatura, ecc.).</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Brancalonia Manuale Base, D&D 5e PHB p.48",
+    "source": "Manuale del Giocatore p.48",
     "activation": {
       "type": "",
       "cost": null,
@@ -57,7 +57,38 @@
       "charged": false
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "difesasenzaarmatura001",
+      "name": "Difesa Senza Armatura",
+      "icon": "icons/equipment/chest/breastplate-layered-steel.webp",
+      "changes": [
+        {
+          "key": "system.attributes.ac.calc",
+          "mode": 5,
+          "value": "unarmoredBarbarian",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>CA = 10 + Destrezza + Costituzione (senza armatura)</p>",
+      "origin": null,
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": "#ffffff",
+      "_key": "!items.effects!classbarbarolivello1difesasenzaarmaturad1d8e3.difesasenzaarmatura001"
+    }
+  ],
   "folder": null,
   "sort": 0,
   "ownership": {

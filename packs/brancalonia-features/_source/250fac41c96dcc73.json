@@ -3,18 +3,18 @@
   "_key": "!item!250fac41c96dcc73",
   "name": "Fonte d'Ispirazione",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/light/orb-lightbulb-blue-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Recuperi tutte le Ispirazioni Bardiche spese dopo un riposo breve o lungo.</p>",
+      "value": "<p><strong>Fonte d'Ispirazione (5° livello)</strong></p><p>A partire dal 5° livello, recuperi tutti gli usi spesi della tua Ispirazione Bardica quando completi un riposo breve o lungo.</p><p>Normalmente, al 1° livello, recuperi gli usi di Ispirazione Bardica solo dopo un riposo lungo. Questa feature migliora significativamente la tua capacità di supportare il gruppo, permettendoti di usare l'Ispirazione Bardica più liberamente durante le avventure sapendo che potrai recuperarla durante i riposi brevi.</p><p><strong>Nota:</strong> Il sistema di D&D 5e gestisce automaticamente il recupero degli usi quando il personaggio completa un riposo breve o lungo, se la feature ha questa proprietà impostata.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.54",
     "activation": {
-      "type": "",
+      "type": "special",
       "cost": null,
-      "condition": ""
+      "condition": "Riposo breve o lungo"
     },
     "duration": {
       "value": "",

@@ -3,14 +3,14 @@
   "_key": "!item!classbarbarolivello5movimentoveloce38d96a",
   "name": "Movimento Veloce",
   "type": "feat",
-  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "img": "icons/skills/movement/feet-winged-boots-blue.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 5° livello, la tua velocità aumenta di 3 metri fintanto che non indossi armatura pesante.</p>",
+      "value": "<p><strong>Movimento Veloce (5° livello)</strong></p><p>A partire dal 5° livello, la tua velocità aumenta di 3 metri (10 piedi) fintanto che non indossi armatura pesante.</p><p>Questo bonus si applica alla tua velocità di movimento base, permettendoti di muoverti più rapidamente sul campo di battaglia per raggiungere i nemici o riposizionarti.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Brancalonia Manuale Base, D&D 5e PHB p.49",
+    "source": "Manuale del Giocatore p.49",
     "activation": {
       "type": "",
       "cost": null,

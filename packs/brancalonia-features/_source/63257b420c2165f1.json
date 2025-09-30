@@ -3,14 +3,14 @@
   "_key": "!item!63257b420c2165f1",
   "name": "Trucchetti Aggiuntivi",
   "type": "feat",
-  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "img": "icons/magic/symbols/rune-sigil-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Impari due trucchetti aggiuntivi dalla lista da bardo.</p>",
+      "value": "<p><strong>Trucchetti Aggiuntivi (4° livello)</strong></p><p>Al 4° livello, impari un trucchetto aggiuntivo dalla lista degli incantesimi da bardo di tua scelta.</p><p>I trucchetti sono incantesimi di livello 0 che puoi lanciare a volontà, senza spendere slot incantesimo. Sono ideali per effetti minori ma utili come <em>Luci Danzanti</em>, <em>Mano Magica</em>, o <em>Messaggio</em>.</p><p>Come mostrato nella tabella del Bardo nel Manuale del Giocatore p.52, al 4° livello conosci 3 trucchetti totali (2 dall'1° livello + 1 nuovo al 4° livello).</p><p><strong>Nota:</strong> Aggiungi il trucchetto scelto alla tua scheda personaggio nella sezione incantesimi. Il sistema gestisce automaticamente i trucchetti come incantesimi lanciabili illimitatamente.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Player's Handbook (D&D 5e)",
+    "source": "Manuale del Giocatore p.52-54",
     "activation": {
       "type": "",
       "cost": null,

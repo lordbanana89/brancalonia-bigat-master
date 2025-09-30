@@ -28,7 +28,7 @@ export class ColorPickerDialog extends HandlebarsApplicationMixin(ApplicationV2)
 
   static PARTS = {
     form: {
-      template: "modules/brancalonia-bigat/templates/color-picker-dialog.hbs"
+      template: "modules/crlngn-ui/templates/color-picker-dialog.hbs"
     },
     footer: {
       template: "templates/generic/form-footer.hbs",

@@ -3,22 +3,22 @@
   "_key": "!item!classbarbarolivello2attaccoirruento996be5",
   "name": "Attacco Irruento",
   "type": "feat",
-  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "img": "icons/skills/melee/strike-axe-blood-red.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 2° livello, puoi gettare da parte qualsiasi preoccupazione per la difesa e attaccare con selvaggia disperazione. Quando effettui il tuo primo attacco nel turno, puoi decidere di attaccare in modo irruento. Se lo fai, hai vantaggio ai tiri per colpire con attacchi in mischia che usano Forza durante questo turno, ma i tiri per colpire contro di te hanno vantaggio fino al tuo prossimo turno.</p>",
+      "value": "<p><strong>Attacco Irruento (2° livello)</strong></p><p>A partire dal 2° livello, puoi gettare da parte qualsiasi preoccupazione per la difesa e attaccare con selvaggia disperazione.</p><p>Quando effettui il tuo primo attacco nel turno, puoi decidere di attaccare in modo irruento.</p><p><strong>Benefici:</strong> Hai vantaggio ai tiri per colpire con attacchi in mischia che usano Forza durante questo turno.</p><p><strong>Svantaggio:</strong> I tiri per colpire contro di te hanno vantaggio fino al tuo prossimo turno.</p><p><strong>Nota tattica:</strong> Usa l'Attacco Irruento quando è più importante colpire il bersaglio che difenderti, come quando vuoi abbattere rapidamente un nemico debole o quando hai alta CA e molti PF.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Brancalonia Manuale Base, D&D 5e PHB p.48",
+    "source": "Manuale del Giocatore p.48",
     "activation": {
-      "type": "",
+      "type": "special",
       "cost": null,
-      "condition": ""
+      "condition": "Quando effettui il primo attacco nel turno"
     },
     "duration": {
-      "value": "",
-      "units": ""
+      "value": "1",
+      "units": "turn"
     },
     "target": {
       "value": null,

@@ -3,14 +3,14 @@
   "_key": "!item!classbarbarolivello3camminoprimordialeba07fc",
   "name": "Cammino Primordiale",
   "type": "feat",
-  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "img": "icons/environment/wilderness/trail-path-mountains.webp",
   "system": {
     "description": {
-      "value": "<p>Al 3° livello, scegli un cammino che plasma la natura della tua ira. La tua scelta ti conferisce privilegi al 3° livello e poi di nuovo al 6°, 10° e 14° livello.</p>",
+      "value": "<p><strong>Cammino Primordiale (3° livello)</strong></p><p>Al 3° livello, scegli un cammino che plasma la natura della tua ira. La tua scelta ti conferisce privilegi al 3° livello e poi di nuovo al 6°, 10° e 14° livello.</p><p><strong>Cammini principali:</strong></p><ul><li><strong>Cammino del Berserker</strong> - Guerrieri furiosi che si abbandonano completamente alla frenesia</li><li><strong>Cammino del Totem Guerriero</strong> - Barbari che attingono agli spiriti animali</li><li><strong>Cammino dello Zelota</strong> (Xanathar) - Guerrieri divini infusi di furia sacra</li></ul><p><strong>Nota:</strong> Nella scheda personaggio, seleziona il tuo Cammino nella sezione della classe. Il sistema applicherà automaticamente i privilegi appropriati.</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Brancalonia Manuale Base, D&D 5e PHB p.49-50",
+    "source": "Manuale del Giocatore p.49-50",
     "activation": {
       "type": "",
       "cost": null,

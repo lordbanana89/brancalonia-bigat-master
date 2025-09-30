@@ -3,14 +3,14 @@
   "_key": "!item!classbarbarolivello5attaccoextra8035e4",
   "name": "Attacco Extra",
   "type": "feat",
-  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 5° livello, puoi attaccare due volte, invece di una, ogni volta che esegui l'azione di Attacco nel tuo turno.</p>",
+      "value": "<p><strong>Attacco Extra (5° livello)</strong></p><p>A partire dal 5° livello, puoi attaccare due volte, invece di una, ogni volta che esegui l'azione di Attacco nel tuo turno.</p><p>Questo privilegio si applica solo all'azione di Attacco, non ad altre azioni che permettono attacchi (come attacchi di opportunità o attacchi bonus).</p>",
       "chat": "",
       "unidentified": ""
     },
-    "source": "Brancalonia Manuale Base, D&D 5e PHB p.49",
+    "source": "Manuale del Giocatore p.49",
     "activation": {
       "type": "",
       "cost": null,

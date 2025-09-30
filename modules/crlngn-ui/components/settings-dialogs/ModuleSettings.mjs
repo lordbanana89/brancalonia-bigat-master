@@ -58,42 +58,42 @@ export class ModuleSettings extends HandlebarsApplicationMixin(ApplicationV2) {
     },
     interface: {
       menuKey: "interfaceOptionsMenu",
-      template: "modules/brancalonia-bigat/templates/interface-elements-settings.hbs",
+      template: "modules/crlngn-ui/templates/interface-elements-settings.hbs",
       isGMOnly: false
     },
     themes: {
       menuKey: "themeAndStylesMenu",
-      template: "modules/brancalonia-bigat/templates/theme-and-styles-settings.hbs",
+      template: "modules/crlngn-ui/templates/theme-and-styles-settings.hbs",
       isGMOnly: false
     },
     fonts: {
       menuKey: "customFontsMenu",
-      template: "modules/brancalonia-bigat/templates/custom-fonts-settings.hbs",
+      template: "modules/crlngn-ui/templates/custom-fonts-settings.hbs",
       isGMOnly: true
     },
     chat: {
       menuKey: "chatMessagesMenu",
-      template: "modules/brancalonia-bigat/templates/chat-messages-settings.hbs",
+      template: "modules/crlngn-ui/templates/chat-messages-settings.hbs",
       isGMOnly: false
     },
     scenes: {
       menuKey: "sceneNavMenu",
-      template: "modules/brancalonia-bigat/templates/scene-nav-settings.hbs",
+      template: "modules/crlngn-ui/templates/scene-nav-settings.hbs",
       isGMOnly: false
     },
     players: {
       menuKey: "playersListMenu",
-      template: "modules/brancalonia-bigat/templates/players-list-settings.hbs",
+      template: "modules/crlngn-ui/templates/players-list-settings.hbs",
       isGMOnly: false
     },
     camera: {
       menuKey: "cameraDockMenu",
-      template: "modules/brancalonia-bigat/templates/camera-dock-settings.hbs",
+      template: "modules/crlngn-ui/templates/camera-dock-settings.hbs",
       isGMOnly: false
     },
     // sistems: {
     //   menuKey: "sistemsMenu",
-    //   template: "modules/brancalonia-bigat/templates/sistems-modules-settings.hbs",
+    //   template: "modules/crlngn-ui/templates/sistems-modules-settings.hbs",
     //   isGMOnly: false
     // },
     footer: {
