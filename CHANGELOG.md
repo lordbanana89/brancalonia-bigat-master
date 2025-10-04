@@ -5,6 +5,30 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.42] - 2025-10-04
+
+### ✅ **FIX DEFINITIVO - #ui-left-column-2 bloccava la sidebar**
+
+**PROBLEMA ROOT VERO E FINALE**: `#ui-left-column-2` (1782px di larghezza) aveva `pointer-events: auto` e copriva la sidebar
+**CAUSA**: `#ui-left-column-2` è un contenitore di Carolingian UI che si estende su quasi tutto lo schermo e intercettava tutti i click destinati alla sidebar
+**SOLUZIONE**: 
+- ✅ Aggiunto `pointer-events: none !important` a `#ui-left-column-2` (righe 50 e 105)
+- ✅ Ora i click passano attraverso `#ui-left-column-2` e raggiungono la sidebar sottostante
+- ✅ Sidebar FINALMENTE completamente cliccabile
+
+**File Modificati**:
+- `modules/crlngn-ui/styles/scene-nav.css:50` (regola generale)
+- `modules/crlngn-ui/styles/scene-nav.css:105` (regola crlngn-scene-nav)
+
+**Diagnostica finale**:
+- Test mostravano che tutti i click (320, y) finivano su `#ui-left-column-2`
+- `#ui-left-column-2` aveva width: 1782px e pointer-events: auto
+- Disabilitando pointer-events, i click ora raggiungono la sidebar
+
+**QUESTO È VERAMENTE IL FIX DEFINITIVO! Tutti i problemi precedenti erano sintomi, questo era la causa root!**
+
+---
+
 ## [13.0.41] - 2025-10-04
 
 ### ✅ **FIX DEFINITIVO - Variabile CSS corretta**
