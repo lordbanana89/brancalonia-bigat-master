@@ -5,6 +5,43 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.43] - 2025-10-04
+
+### 🎯 **FIX DEFINITIVO FINALE - #ui-left bloccava TUTTE le finestre**
+
+**PROBLEMA ROOT ASSOLUTO**: `SECTION#ui-left` (3174px × 943px) aveva `pointer-events: auto` e intercettava TUTTI i click su finestre, compendi e overlay!
+
+**CAUSA ROOT**: `#ui-left` è il contenitore principale di Carolingian UI che copre quasi tutto lo schermo (da 0,0 a 3174px di larghezza). Con `pointer-events: auto`, intercettava tutti i click anche se le finestre avevano z-index più alto!
+
+**SINTOMI**:
+- ❌ Impossibile trascinare finestre aperte (es: Background di Brancalonia)
+- ❌ Impossibile cliccare contenuti nelle finestre
+- ❌ Impossibile chiudere o ridimensionare finestre
+- ❌ Click listener funzionava ma finestre non rispondevano
+
+**SOLUZIONE DEFINITIVA**:
+- ✅ Aggiunto `pointer-events: none !important` a `#ui-left` (riga 59)
+- ✅ Ora i click passano attraverso `#ui-left` e raggiungono finestre, overlay e tutti gli elementi soprastanti
+- ✅ Finestre completamente funzionanti: trascinabili, cliccabili, ridimensionabili
+
+**File Modificato**:
+- `modules/crlngn-ui/styles/scene-nav.css:59` - Aggiunto `pointer-events: none !important` a `#ui-left`
+
+**Diagnostica Completa**:
+- Console test mostravano: Click su finestra → intercettato da `SECTION#ui-left`
+- `SECTION#ui-left`: Size 3174×943px, Position 0,0, pointer-events: auto, z-index: 30
+- Finestre con z-index 102 > 30 ma eventi venivano catturati da `#ui-left` con pointer-events auto
+- **TUTTI i fix precedenti (v13.0.38-42) erano necessari ma non sufficienti**: serviva anche disabilitare `#ui-left`!
+
+**CHAIN COMPLETA DEI FIX**:
+1. v13.0.38-41: Fix `#scene-navigation` width e `--scene-nav-curr-width` → sidebar cliccabile
+2. v13.0.42: Fix `#ui-left-column-2` pointer-events → sidebar ancora più cliccabile  
+3. **v13.0.43: Fix `#ui-left` pointer-events → FINESTRE FINALMENTE FUNZIONANTI!**
+
+**QUESTO È IL FIX DEFINITIVO DEFINITIVO! Ora sidebar E finestre sono completamente funzionanti!** 🎉
+
+---
+
 ## [13.0.42] - 2025-10-04
 
 ### ✅ **FIX DEFINITIVO - #ui-left-column-2 bloccava la sidebar**

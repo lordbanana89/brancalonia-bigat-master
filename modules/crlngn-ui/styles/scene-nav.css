@@ -56,6 +56,7 @@
         --controls-column-width: calc((var(--control-columns) * var(--crlngn-control-size)) + ((var(--control-columns) - 1) * 8px));
         --scene-nav-left: calc((var(--controls-column-width) * -1) - var(--control-item-size) - 16px);
         width: calc(var(--scene-nav-curr-width) + var(--nav-btn-width) - var(--control-item-size));
+        pointer-events: none !important; /* FIX BRANCALONIA: Permetti click su finestre e overlay sopra ui-left */
       }
 
       #scene-navigation:before {
