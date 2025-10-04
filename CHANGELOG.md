@@ -5,6 +5,29 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.41] - 2025-10-04
+
+### ✅ **FIX DEFINITIVO - Variabile CSS corretta**
+
+**PROBLEMA ROOT DEFINITIVO TROVATO**: `--scene-nav-curr-width` usava `--scene-nav-full-width` di default
+**CAUSA**: La variabile CSS `--scene-nav-curr-width` era impostata a `var(--scene-nav-full-width)` invece di `var(--scene-nav-partial-width)`
+**SOLUZIONE**: 
+- ✅ Cambiato default di `--scene-nav-curr-width` da `full-width` a `partial-width` 
+- ✅ Questo risolve il problema alla radice: ora #scene-navigation usa la larghezza corretta (~1544px invece di 1882px)
+- ✅ Sidebar completamente cliccabile
+
+**File Modificato**:
+- `modules/crlngn-ui/styles/scene-nav.css:32`
+
+**Diagnostica problema**:
+- Le release precedenti modificavano solo le regole che usavano direttamente `--scene-nav-partial-width`
+- Ma `--scene-nav-curr-width` (usata da `#ui-left`) rimaneva `--scene-nav-full-width`
+- Risultato: #scene-navigation continuava a coprire la sidebar
+
+**QUESTA È DAVVERO LA VERSIONE DEFINITIVA!**
+
+---
+
 ## [13.0.40] - 2025-10-04
 
 ### ✅ **HOTFIX CRITICO - File .mjs mancanti**

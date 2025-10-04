@@ -29,7 +29,7 @@
     /* Scene nav width calculations - these depend on variables defined above */
     --scene-nav-full-width: calc(var(--interface-width) - var(--crlngn-crux-width, 0px) - var(--controls-width));
     --scene-nav-partial-width: calc(var(--interface-width) - var(--crlngn-crux-width, 0px) - var(--sidebar-width) - var(--controls-width));
-    --scene-nav-curr-width: var(--scene-nav-full-width);
+    --scene-nav-curr-width: var(--scene-nav-partial-width); /* FIX BRANCALONIA: Usa partial-width di default per non coprire sidebar */
   }
 }
 
