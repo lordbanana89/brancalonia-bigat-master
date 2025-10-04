@@ -5,9 +5,35 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.36] - 2025-10-04
+
+### ✅ **FIX DEFINITIVO CON !important** - UI Interaction FORZATO
+
+#### Fixed - CSS Sovrascritt da Regole più Specifiche
+**RISOLTO: Il CSS `pointer-events: none` veniva sovrascritto da regole più specifiche**
+
+**DIAGNOSI v13.0.35**:
+- ✅ Versione modulo corretta: `13.0.35`
+- ❌ CSS NON applicato: `pointer-events: auto` (doveva essere `none`)
+- ✅ Fix temporaneo via console funzionava
+
+**CAUSA ROOT**: 
+- Il CSS che avevo aggiunto veniva sovrascritto da altre regole CSS di Carolingian UI con maggiore specificità o caricate dopo
+- Serviva `!important` per forzare l'override
+
+**SOLUZIONE APPLICATA**:
+1. ✅ Aggiunto `!important` su `pointer-events: none` per `#scene-navigation` (righe 448, 522)
+2. ✅ Aggiunto `!important` su `pointer-events: all` per controlli interni (righe 459, 525)
+3. ✅ Ora il CSS viene applicato FORZATAMENTE e non può essere sovrascritto
+
+**File Modificato**:
+- `modules/crlngn-ui/styles/scene-nav.css` (righe 448, 459, 522, 525)
+
+---
+
 ## [13.0.35] - 2025-10-04
 
-### ✅ **FIX DEFINITIVO** - UI Interaction COMPLETAMENTE Risolto
+### ✅ **FIX DEFINITIVO** - UI Interaction COMPLETAMENTE Risolto (CSS non applicato)
 
 #### Fixed - Compendi e Sidebar Finalmente Cliccabili
 **RISOLTO DEFINITIVAMENTE il problema di interazione UI**

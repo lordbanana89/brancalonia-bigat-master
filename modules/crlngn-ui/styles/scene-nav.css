@@ -445,7 +445,7 @@
 
       /* active scenes behavior when scene nav is expanded */
       #scene-navigation {
-        pointer-events: none; /* FIX: Previeni blocco click su sidebar */
+        pointer-events: none !important; /* FIX: Previeni blocco click su sidebar (force override) */
 
         #scene-navigation-active,
         #scene-navigation-inactive {
@@ -456,7 +456,7 @@
           height: var(--control-item-size, 0px);
           transition: top 0.1s ease-out, margin-left 0.2s ease-out;
           gap: 0;
-          pointer-events: all; /* Ri-abilita click sui controlli */
+          pointer-events: all !important; /* Ri-abilita click sui controlli (force override) */
         }
 
         #scene-navigation-active {
@@ -519,10 +519,10 @@
 
       /* folder lookup */
       #scene-navigation {
-        pointer-events: none; /* FIX: Previeni blocco click su sidebar */
+        pointer-events: none !important; /* FIX: Previeni blocco click su sidebar (force override) */
         
         #crlngn-extra-btns {
-          pointer-events: all; /* Ri-abilita click sui bottoni */
+          pointer-events: all !important; /* Ri-abilita click sui bottoni (force override) */
           
           .search-btn {
             width: auto;
