@@ -1,15 +1,5 @@
-2025/10/04-19:50:39.565319 309013000 Recovering log #118
-2025/10/04-19:50:39.565968 309013000 Delete type=3 #116
-2025/10/04-19:50:39.566029 309013000 Delete type=0 #118
-2025/10/04-19:50:39.571081 16ff23000 Level-0 table #124: started
-2025/10/04-19:50:39.574015 16ff23000 Level-0 table #124: 345775 bytes OK
-2025/10/04-19:50:39.574170 16ff23000 Delete type=0 #122
-2025/10/04-19:50:39.574286 16ff23000 Manual compaction at level-0 from '!item!015u1bo01qsnatrm' @ 72057594037927935 : 1 .. '!item!zuarigv2rnpvoap8' @ 0 : 0; will stop at (end)
-2025/10/04-19:50:39.574303 16ff23000 Manual compaction at level-1 from '!item!015u1bo01qsnatrm' @ 72057594037927935 : 1 .. '!item!zuarigv2rnpvoap8' @ 0 : 0; will stop at '!item!zuarigv2rnpvoap8' @ 2651 : 1
-2025/10/04-19:50:39.574309 16ff23000 Compacting 1@1 + 1@2 files
-2025/10/04-19:50:39.578217 16ff23000 Generated table #125@1: 491 keys, 345775 bytes
-2025/10/04-19:50:39.578227 16ff23000 Compacted 1@1 + 1@2 files => 345775 bytes
-2025/10/04-19:50:39.578292 16ff23000 compacted to: files[ 1 1 1 0 0 0 0 ]
-2025/10/04-19:50:39.578403 16ff23000 Delete type=2 #120
-2025/10/04-19:50:39.578535 16ff23000 Delete type=2 #124
-2025/10/04-19:50:39.578628 16ff23000 Manual compaction at level-1 from '!item!zuarigv2rnpvoap8' @ 2651 : 1 .. '!item!zuarigv2rnpvoap8' @ 0 : 0; will stop at (end)
+2025/10/04-20:01:17.349435 16fb6b000 Delete type=3 #1
+2025/10/04-20:01:17.352749 16fbf7000 Level-0 table #5: started
+2025/10/04-20:01:17.355433 16fbf7000 Level-0 table #5: 345737 bytes OK
+2025/10/04-20:01:17.355523 16fbf7000 Delete type=0 #3
+2025/10/04-20:01:17.355613 16fbf7000 Manual compaction at level-0 from '!item!015u1bo01qsnatrm' @ 72057594037927935 : 1 .. '!item!zuarigv2rnpvoap8' @ 0 : 0; will stop at (end)

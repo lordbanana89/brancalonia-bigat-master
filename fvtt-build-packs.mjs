@@ -16,6 +16,7 @@ const __dirname = path.dirname(__filename);
 const packs = [
   'backgrounds',
   'brancalonia-features',
+  'classi',
   'emeriticenze',
   'equipaggiamento',
   'incantesimi',

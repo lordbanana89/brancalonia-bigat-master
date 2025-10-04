@@ -1,15 +1,5 @@
-2025/10/04-19:50:39.521447 309013000 Recovering log #121
-2025/10/04-19:50:39.522464 309013000 Delete type=3 #119
-2025/10/04-19:50:39.522522 309013000 Delete type=0 #121
-2025/10/04-19:50:39.524653 16ff23000 Level-0 table #127: started
-2025/10/04-19:50:39.525244 16ff23000 Level-0 table #127: 45663 bytes OK
-2025/10/04-19:50:39.525366 16ff23000 Delete type=0 #125
-2025/10/04-19:50:39.525457 16ff23000 Manual compaction at level-0 from '!item!ambulante' @ 72057594037927935 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at (end)
-2025/10/04-19:50:39.525478 16ff23000 Manual compaction at level-1 from '!item!ambulante' @ 72057594037927935 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at '!item!villanopttqgm' @ 136 : 1
-2025/10/04-19:50:39.525485 16ff23000 Compacting 1@1 + 1@2 files
-2025/10/04-19:50:39.526186 16ff23000 Generated table #128@1: 22 keys, 45663 bytes
-2025/10/04-19:50:39.526194 16ff23000 Compacted 1@1 + 1@2 files => 45663 bytes
-2025/10/04-19:50:39.526243 16ff23000 compacted to: files[ 1 1 1 0 0 0 0 ]
-2025/10/04-19:50:39.526281 16ff23000 Delete type=2 #123
-2025/10/04-19:50:39.526361 16ff23000 Delete type=2 #127
-2025/10/04-19:50:39.526474 16ff23000 Manual compaction at level-1 from '!item!villanopttqgm' @ 136 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at (end)
+2025/10/04-20:01:17.285161 16fb6b000 Delete type=3 #1
+2025/10/04-20:01:17.289105 16fbf7000 Level-0 table #5: started
+2025/10/04-20:01:17.289677 16fbf7000 Level-0 table #5: 45663 bytes OK
+2025/10/04-20:01:17.289781 16fbf7000 Delete type=0 #3
+2025/10/04-20:01:17.289856 16fbf7000 Manual compaction at level-0 from '!item!ambulante' @ 72057594037927935 : 1 .. '!item!villanopttqgm' @ 0 : 0; will stop at (end)

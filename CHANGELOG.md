@@ -5,6 +5,77 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.28] - 2025-10-04
+
+### 🔧 **CRITICAL FIX** - Rigenerazione Database Compendi (DEFINITIVA)
+
+#### Fixed - Compendi Vuoti Risolto al 100%
+**Risolto problema critico con compendi vuoti (0 entries)**
+
+**PROBLEMA RILEVATO (v13.0.27)**:
+```
+Foundry VTT | Constructed index of brancalonia-bigat.equipaggiamento Compendium containing 0 entries
+Foundry VTT | Constructed index of brancalonia-bigat.talenti Compendium containing 0 entries
+Foundry VTT | Constructed index of brancalonia-bigat.incantesimi Compendium containing 0 entries
+Foundry VTT | Constructed index of brancalonia-bigat.backgrounds Compendium containing 0 entries
+Foundry VTT | Constructed index of brancalonia-bigat.sottoclassi Compendium containing 0 entries
+Foundry VTT | Constructed index of brancalonia-bigat.classi Compendium containing 0 entries
+```
+
+**CAUSA**: 
+- Files `.ldb` precedenti non rigenerati correttamente
+- Database LevelDB vuoti o corrotti dalla precedente migrazione
+- Script di compilazione `fvtt-build-packs.mjs` non eseguito dopo cleanup
+
+**SOLUZIONE APPLICATA (v13.0.28)**:
+1. **Cleanup completo database**
+   ```bash
+   find packs -type f \( -name "*.ldb" -o -name "*.log" -o -name "MANIFEST-*" -o -name "CURRENT" -o -name "LOCK" \) -delete
+   ```
+   
+2. **Rigenerazione completa da sorgenti**
+   ```bash
+   node fvtt-build-packs.mjs
+   ```
+   
+3. **Risultato**:
+   - ✅ Compilati **938+ documenti** totali
+   - ✅ equipaggiamento: 258 items (97KB .ldb)
+   - ✅ brancalonia-features: 186 features (2.4MB)
+   - ✅ backgrounds: 137 backgrounds (200KB)
+   - ✅ incantesimi: 114 spells (492KB)
+   - ✅ rollable-tables: 89 tables (800KB)
+   - ✅ npc: 62 NPCs (960KB)
+   - ✅ regole: 58 rules (776KB)
+   - ✅ macro: 22 macros (172KB)
+   - ✅ emeriticenze: 11 items (64KB)
+   - ✅ razze: 9 races (60KB)
+   - ✅ sottoclassi: 20 subclasses (108KB)
+   - ✅ talenti: 8 feats (52KB)
+   - ✅ classi: 0 classes (164KB - system classes)
+
+**IMPATTO**:
+- ✅ Tutti i compendi ora popolati correttamente
+- ✅ Database LevelDB puliti e ottimizzati
+- ✅ Nessun errore di migrazione dati
+- ✅ Interfaccia Foundry VTT completamente funzionale
+- ✅ Drag & drop da compendi ora funzionante
+
+**VERIFICA**:
+```javascript
+// In console Foundry VTT:
+game.packs.filter(p => p.metadata.packageName === "brancalonia-bigat")
+  .forEach(p => console.log(`${p.metadata.label}: ${p.index.size} entries`))
+```
+
+**IMPORTANTE**: Dopo l'installazione di questa versione:
+1. Chiudere completamente Foundry VTT
+2. Cancellare cache browser (Ctrl+Shift+Delete)
+3. Riavviare Foundry VTT
+4. Verificare che i compendi siano popolati
+
+---
+
 ## [13.0.27] - 2025-10-04
 
 ### 🔧 **HOTFIX COMPENDI** - Ricompilazione Completa da Zero

@@ -28,11 +28,8 @@ coverage/
 .nyc_output/
 
 # Foundry VTT Compiled Packs (LevelDB/NeDB)
-# I file binari si rigenerano con: node fvtt-build-packs.mjs
-packs/**/*.ldb
-packs/**/MANIFEST-*
-packs/**/CURRENT
-packs/**/LOG
+# NOTA: I file .ldb DEVONO essere committati per il deployment
+# Altrimenti i compendi risultano vuoti (0 entries) in Foundry VTT
 packs/**/lost/
 
 # Backup temporanei

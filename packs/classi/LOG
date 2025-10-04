@@ -1,3 +1,5 @@
-2025/10/02-18:27:06.942777 16e8cb000 Recovering log #102
-2025/10/02-18:27:06.943368 16e8cb000 Delete type=0 #102
-2025/10/02-18:27:06.943401 16e8cb000 Delete type=3 #100
+2025/10/04-20:05:44.739528 171997000 Delete type=3 #1
+2025/10/04-20:05:44.740228 171a23000 Level-0 table #5: started
+2025/10/04-20:05:44.740643 171a23000 Level-0 table #5: 27561 bytes OK
+2025/10/04-20:05:44.740744 171a23000 Delete type=0 #3
+2025/10/04-20:05:44.740852 171a23000 Manual compaction at level-0 from '!item!class-barbarian-v7jhif' @ 72057594037927935 : 1 .. '!item!indexaeb7cb' @ 0 : 0; will stop at (end)
