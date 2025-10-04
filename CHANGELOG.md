@@ -5,6 +5,61 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.29] - 2025-10-04
+
+### 🚨 **HOTFIX CRITICO** - Invalidazione Cache CDN GitHub
+
+#### Fixed - Compendi Vuoti per Cache CDN
+**Risolto problema persistente con compendi vuoti causato da cache CDN**
+
+**PROBLEMA RILEVATO (v13.0.28)**:
+```
+VM26550:6 Pack index size: 0
+VM26550:7 Pack index contents: []
+```
+- Utenti continuavano a vedere compendi vuoti anche dopo la v13.0.28
+- ZIP release locale verificato contenente tutti i file `.ldb` validi (99KB+ di dati)
+- File `CURRENT`, `MANIFEST-000006`, `LOG` correttamente presenti e formattati
+
+**CAUSA ROOT**: 
+- **Cache CDN di GitHub** stava servendo una versione obsoleta del ZIP release
+- Il server Foundry VTT scaricava il vecchio ZIP senza i file `.ldb` popolati
+- Problema indipendente dal contenuto reale del release (che era corretto)
+
+**SOLUZIONE APPLICATA (v13.0.29)**:
+1. ✅ **Bump versione → v13.0.29** per forzare invalidazione cache CDN
+2. ✅ Nuovo release tag che bypassa completamente la cache precedente
+3. ✅ Verificato contenuto ZIP locale:
+   ```bash
+   packs/equipaggiamento/000010.ldb    99,355 bytes (DATI VALIDI)
+   packs/incantesimi/000010.ldb        90,430 bytes (DATI VALIDI)
+   packs/backgrounds/000010.ldb        45,663 bytes (DATI VALIDI)
+   packs/brancalonia-features/000010.ldb  345,773 bytes (DATI VALIDI)
+   # ... tutti i compendi con dati completi
+   ```
+4. ✅ Test integrità ZIP: PASSED
+5. ✅ Test contenuto binario `.ldb`: JSON valido rilevato
+
+**ISTRUZIONI AGGIORNAMENTO**:
+```
+1. Disinstalla completamente Brancalonia in Foundry VTT
+2. Elimina manualmente Data/modules/brancalonia-bigat dal server
+3. Cancella cache browser (Ctrl+Shift+Delete)
+4. Riavvia Foundry VTT
+5. Reinstalla usando URL manifest o interfaccia standard
+6. Se ancora vuoto, attendere 5-10 minuti (propagazione CDN)
+```
+
+**IMPATTO**: 🔥 **CRITICO** - Tutti gli utenti devono aggiornare per vedere i dati dei compendi
+
+**TESTING**:
+- ✅ ZIP locale: integro, 20MB, tutti file LevelDB presenti
+- ✅ File CURRENT: punta correttamente a `MANIFEST-000006`
+- ✅ File .ldb: contengono JSON valido verificato con `od -c`
+- ⏳ Propagazione CDN: richiede 5-10 minuti
+
+---
+
 ## [13.0.28] - 2025-10-04
 
 ### 🔧 **CRITICAL FIX** - Rigenerazione Database Compendi (DEFINITIVA)
