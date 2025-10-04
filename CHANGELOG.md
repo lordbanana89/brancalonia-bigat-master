@@ -5,6 +5,33 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.34] - 2025-10-04
+
+### 🎯 **FIX CRITICO** - UI Interaction Bloccata
+
+#### Fixed - Compendi e Sidebar Non Cliccabili
+**Risolto problema dove gli utenti non potevano interagire con compendi e menu laterale**
+
+**PROBLEMA RILEVATO**:
+- Compendi caricavano correttamente ma non erano cliccabili
+- Menu laterale (sidebar) non rispondeva ai click
+- Utenti vedevano contenuto ma non potevano selezionare elementi
+
+**CAUSA ROOT**: 
+- `#scene-navigation:before` pseudo-elemento aveva `pointer-events: all`
+- Creava un overlay invisibile che bloccava tutti i click sottostanti
+- Problema specifico di Carolingian UI `scene-nav.css`
+
+**SOLUZIONE APPLICATA**:
+1. ✅ Cambiato `pointer-events: all` → `pointer-events: none` in `#scene-navigation:before`
+2. ✅ Aggiunto stesso fix per `#scene-navigation.expanded:before`
+3. ✅ UI ora completamente interattiva
+
+**File Modificato**:
+- `modules/crlngn-ui/styles/scene-nav.css` (righe 65, 76)
+
+---
+
 ## [13.0.29] - 2025-10-04
 
 ### 🚨 **HOTFIX CRITICO** - Invalidazione Cache CDN GitHub

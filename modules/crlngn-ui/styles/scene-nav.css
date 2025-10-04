@@ -62,7 +62,7 @@
         right: 0;
         top: calc((-1 * var(--top-nav-height, 0px)) + 4px);
         transition: all 0.15s ease-out 0s;
-        pointer-events: all;
+        pointer-events: none; /* FIX: Previeni blocco click su sidebar/compendi */
         opacity: 0.25;
       }
 
@@ -73,6 +73,7 @@
         right: 0;
         transition: all 0.15s ease-out 0.15s;
         opacity: 1;
+        pointer-events: none; /* FIX: Previeni blocco click anche quando espanso */
       }
 
       #ui-left-column-1 {
