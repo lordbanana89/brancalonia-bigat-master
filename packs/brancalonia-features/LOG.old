@@ -1,5 +1,15 @@
-2025/10/02-19:44:17.765304 171323000 Recovering log #108
-2025/10/02-19:44:17.765439 171323000 Level-0 table #110: started
-2025/10/02-19:44:17.765939 171323000 Level-0 table #110: 11554 bytes OK
-2025/10/02-19:44:17.766537 171323000 Delete type=3 #107
-2025/10/02-19:44:17.766588 171323000 Delete type=0 #108
+2025/10/04-19:50:34.351287 16f52f000 Recovering log #114
+2025/10/04-19:50:34.351919 16f52f000 Delete type=0 #114
+2025/10/04-19:50:34.351972 16f52f000 Delete type=3 #112
+2025/10/04-19:50:34.358000 16fdc7000 Level-0 table #119: started
+2025/10/04-19:50:34.360488 16fdc7000 Level-0 table #119: 345791 bytes OK
+2025/10/04-19:50:34.360574 16fdc7000 Delete type=0 #117
+2025/10/04-19:50:34.360646 16fdc7000 Manual compaction at level-0 from '!item!015u1bo01qsnatrm' @ 72057594037927935 : 1 .. '!item!zuarigv2rnpvoap8' @ 0 : 0; will stop at (end)
+2025/10/04-19:50:34.360660 16fdc7000 Manual compaction at level-1 from '!item!015u1bo01qsnatrm' @ 72057594037927935 : 1 .. '!item!zuarigv2rnpvoap8' @ 0 : 0; will stop at '!item!zuarigv2rnpvoap8' @ 2160 : 1
+2025/10/04-19:50:34.360664 16fdc7000 Compacting 1@1 + 1@2 files
+2025/10/04-19:50:34.364524 16fdc7000 Generated table #120@1: 491 keys, 345791 bytes
+2025/10/04-19:50:34.364536 16fdc7000 Compacted 1@1 + 1@2 files => 345791 bytes
+2025/10/04-19:50:34.364601 16fdc7000 compacted to: files[ 1 1 1 0 0 0 0 ]
+2025/10/04-19:50:34.364640 16fdc7000 Delete type=2 #115
+2025/10/04-19:50:34.364999 16fdc7000 Delete type=2 #119
+2025/10/04-19:50:34.365064 16fdc7000 Manual compaction at level-1 from '!item!zuarigv2rnpvoap8' @ 2160 : 1 .. '!item!zuarigv2rnpvoap8' @ 0 : 0; will stop at (end)

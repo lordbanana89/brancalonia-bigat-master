@@ -1,15 +1,14 @@
-2025/10/04-13:53:09.850982 17340b000 Recovering log #110
-2025/10/04-13:53:09.851416 17340b000 Delete type=0 #110
-2025/10/04-13:53:09.851453 17340b000 Delete type=3 #108
-2025/10/04-13:53:09.852600 173ca3000 Level-0 table #114: started
-2025/10/04-13:53:09.853101 173ca3000 Level-0 table #114: 40175 bytes OK
-2025/10/04-13:53:09.853258 173ca3000 Delete type=0 #112
-2025/10/04-13:53:09.853334 173ca3000 Manual compaction at level-0 from '!macros!banda001' @ 72057594037927935 : 1 .. '!macros!scadente001' @ 0 : 0; will stop at '!macros!scadente001' @ 81 : 1
-2025/10/04-13:53:09.853341 173ca3000 Compacting 2@0 + 1@1 files
-2025/10/04-13:53:09.854059 173ca3000 Generated table #115@0: 22 keys, 40175 bytes
-2025/10/04-13:53:09.854082 173ca3000 Compacted 2@0 + 1@1 files => 40175 bytes
-2025/10/04-13:53:09.854164 173ca3000 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/10/04-13:53:09.854227 173ca3000 Delete type=2 #114
-2025/10/04-13:53:09.854298 173ca3000 Delete type=2 #69
-2025/10/04-13:53:09.854638 173ca3000 Delete type=2 #109
-2025/10/04-13:53:09.854701 173ca3000 Manual compaction at level-0 from '!macros!scadente001' @ 81 : 1 .. '!macros!scadente001' @ 0 : 0; will stop at (end)
+2025/10/04-19:50:39.654462 30981f000 Recovering log #113
+2025/10/04-19:50:39.655000 30981f000 Delete type=0 #113
+2025/10/04-19:50:39.655042 30981f000 Delete type=3 #111
+2025/10/04-19:50:39.656536 16ff23000 Level-0 table #119: started
+2025/10/04-19:50:39.657077 16ff23000 Level-0 table #119: 40170 bytes OK
+2025/10/04-19:50:39.657200 16ff23000 Delete type=0 #117
+2025/10/04-19:50:39.657327 16ff23000 Manual compaction at level-0 from '!macros!banda001' @ 72057594037927935 : 1 .. '!macros!scadente001' @ 0 : 0; will stop at '!macros!scadente001' @ 103 : 1
+2025/10/04-19:50:39.657336 16ff23000 Compacting 1@0 + 1@1 files
+2025/10/04-19:50:39.658074 16ff23000 Generated table #120@0: 22 keys, 40170 bytes
+2025/10/04-19:50:39.658086 16ff23000 Compacted 1@0 + 1@1 files => 40170 bytes
+2025/10/04-19:50:39.658164 16ff23000 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/10/04-19:50:39.658222 16ff23000 Delete type=2 #115
+2025/10/04-19:50:39.658568 16ff23000 Delete type=2 #119
+2025/10/04-19:50:39.658639 16ff23000 Manual compaction at level-0 from '!macros!scadente001' @ 103 : 1 .. '!macros!scadente001' @ 0 : 0; will stop at (end)

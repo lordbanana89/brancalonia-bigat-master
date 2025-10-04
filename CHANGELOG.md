@@ -5,6 +5,58 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.26] - 2025-10-04
+
+### 📦 **COMPENDI RIGENERATI** - Indici LevelDB Ricompilati
+
+#### Fixed - Compendi Vuoti (0 entries)
+**Tutti i compendi Brancalonia ora funzionanti**
+
+**PROBLEMA**:
+```
+Foundry VTT | Constructed index of brancalonia-bigat.razze Compendium containing 0 entries
+Foundry VTT | Constructed index of brancalonia-bigat.equipaggiamento Compendium containing 0 entries
+// ... tutti i compendi a 0 entries
+```
+
+**CAUSA**: 
+- File `_source/*.json` presenti (258+ file) ✅
+- File `.ldb` (LevelDB) mancanti o corrotti ❌
+- Indici non sincronizzati con i sorgenti
+
+**SOLUZIONE**:
+- Eseguito `node fvtt-build-packs.mjs`
+- Rigenerati tutti gli indici LevelDB (29 file `.ldb`)
+- Compilati **13 compendi** con **1.000+ documenti**
+
+**PACK COMPILATI**:
+- ✅ backgrounds (22 entries)
+- ✅ brancalonia-features (600+ entries)
+- ✅ classi (13 entries)
+- ✅ emeriticenze (8 entries)
+- ✅ equipaggiamento (180+ entries)
+- ✅ incantesimi (50+ entries)
+- ✅ razze (8 entries)
+- ✅ sottoclassi (12 entries)
+- ✅ talenti (8 entries)
+- ✅ npc (50+ entries)
+- ✅ macro (30+ entries)
+- ✅ rollable-tables (360 entries)
+- ✅ regole (62 entries)
+
+#### Impatto
+- ✅ **COMPENDI FUNZIONANTI**: Tutti i 13 pack ora popolati
+- ✅ **1.000+ DOCUMENTI**: Contenuto completo disponibile
+- ✅ **DRAG & DROP**: Funzionalità ripristinata
+- 📦 **PACKAGE SIZE**: 23MB (include file .ldb compilati)
+
+#### Note Tecniche
+- File `.ldb` ora **INCLUSI** nel ZIP della release
+- Aggiornato `.gitignore`: file `.ldb` NON più ignorati per deployment
+- Package pronto per installazione diretta su Foundry VTT
+
+---
+
 ## [13.0.25] - 2025-10-04
 
 ### 🔴 **HOTFIX CRITICO** - Logger Dichiarato Due Volte (FIX DEFINITIVO)
