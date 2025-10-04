@@ -36,6 +36,14 @@
 @layer modules {
   body.brancalonia-bigat {
 
+    /* === FIX BRANCALONIA: BLOCCA DEFINITIVAMENTE pointer-events SU #scene-navigation === */
+    /* Questa regola DEVE essere SEMPRE attiva per evitare che #scene-navigation blocchi i click sulla sidebar */
+    #scene-navigation,
+    #scene-navigation.expanded,
+    #scene-navigation:hover {
+      pointer-events: none !important;
+    }
+    
     #ui-left-column-2 {
       padding-top: 16px;
       margin-left: 16px !important;

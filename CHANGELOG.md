@@ -5,6 +5,50 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.37] - 2025-10-04
+
+### ✅ **FIX DEFINITIVO CON REGOLA GLOBALE** - UI Interaction RISOLTO
+
+#### Fixed - pointer-events dinamicamente cambiato da JavaScript
+**RISOLTO: Il CSS veniva sovrascritto dinamicamente da event listeners JavaScript di Carolingian UI**
+
+**DIAGNOSI v13.0.36**:
+- ✅ Versione modulo corretta: `13.0.36`
+- ❌ CSS con `!important` NON sufficiente: `pointer-events` passava da `none` a `all` su eventi `mouseenter`/`mouseleave`
+- ✅ Monitoraggio eventi console identificato pattern: doppio `mouseenter` cambia `pointer-events`
+
+**CAUSA ROOT**: 
+- JavaScript di Carolingian UI (`TopNavUtil.mjs`) aggiunge class `.expanded` su `mouseenter`, causando cambio di `pointer-events`
+- Il CSS con `!important` era applicato DOPO, ma altri selettori più specifici lo sovrascrivevano
+- Serviva una regola CSS GLOBALE all'inizio del file con massima specificità
+
+**SOLUZIONE APPLICATA**:
+1. ✅ Aggiunta regola CSS GLOBALE all'inizio di `scene-nav.css` (dopo apertura `body.brancalonia-bigat`)
+2. ✅ Regola copre `#scene-navigation`, `#scene-navigation.expanded`, `#scene-navigation:hover`
+3. ✅ Con `!important` garantisce priorità assoluta su TUTTE le altre regole
+4. ✅ Posizionata all'inizio del layer CSS per prevenire qualsiasi override
+
+**File Modificato**:
+- `modules/crlngn-ui/styles/scene-nav.css` (righe 39-45: regola globale aggiunta)
+
+**CODICE AGGIUNTO**:
+```css
+/* === FIX BRANCALONIA: BLOCCA DEFINITIVAMENTE pointer-events SU #scene-navigation === */
+#scene-navigation,
+#scene-navigation.expanded,
+#scene-navigation:hover {
+  pointer-events: none !important;
+}
+```
+
+**ISTRUZIONI INSTALLAZIONE**:
+1. ✅ Disinstalla modulo "Brancalonia - Il Regno di Taglia"
+2. ✅ Riavvia Foundry VTT
+3. ✅ Reinstalla modulo da manifest
+4. ✅ **HARD REFRESH BROWSER** (Ctrl+Shift+R / Cmd+Shift+R)
+
+---
+
 ## [13.0.36] - 2025-10-04
 
 ### ✅ **FIX DEFINITIVO CON !important** - UI Interaction FORZATO
