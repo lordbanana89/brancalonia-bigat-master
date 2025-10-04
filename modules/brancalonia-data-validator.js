@@ -33,10 +33,13 @@ class BrancaloniaDataValidator {
 
   static _registerHooks() {
     // Hook per correzione durante caricamento mondo
+    // TEMPORANEAMENTE DISABILITATO - causa crash con dati malformati
+    /*
     Hooks.once('ready', async () => {
       logger.info('BrancaloniaDataValidator', 'Eseguendo correzione validazione completa al ready');
       await this._validateAndFixAllData();
     });
+    */
 
     // Hook per correzione quando vengono creati nuovi attori
     Hooks.on('createActor', async (actor) => {
