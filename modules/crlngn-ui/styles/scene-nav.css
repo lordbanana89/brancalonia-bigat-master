@@ -143,10 +143,10 @@
 
       #scene-navigation {
         order: 1;
-        width: var(--scene-nav-full-width);
-        max-width: var(--scene-nav-full-width);
+        width: var(--scene-nav-partial-width); /* FIX BRANCALONIA: Usa partial-width per non coprire la sidebar */
+        max-width: var(--scene-nav-partial-width);
         height: max(75vh, 360px);
-        flex: 0 0 var(--scene-nav-full-width);
+        flex: 0 0 var(--scene-nav-partial-width);
         position: relative;
         flex-direction: row;
         flex-wrap: nowrap;

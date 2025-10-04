@@ -2,7 +2,7 @@
   "id": "brancalonia-bigat",
   "title": "Brancalonia - Il Regno di Taglia",
   "description": "Modulo enterprise-grade completo per Brancalonia nel Regno di Taglia. Include tutte le meccaniche del manuale: Infamia, Compagnia, Haven, Risse da Taverna, Lavori Sporchi, Menagramo, Oggetti Scadenti, Malattie, Hazard Ambientali, Duelli, Fazioni e Reputazione. 13 compendi con 1.137 documenti totali. Sistema di logging centralizzato, statistics tracking, performance monitoring e public API per tutti i moduli. Compatibile con D&D 5e v5.1.9+.",
-  "version": "13.0.37",
+  "version": "13.0.38",
   "compatibility": {
     "minimum": "13.0.0",
     "verified": "13.348",
@@ -319,7 +319,7 @@
   },
   "url": "https://github.com/lordbanana89/brancalonia-bigat-master",
   "manifest": "https://raw.githubusercontent.com/lordbanana89/brancalonia-bigat-master/main/module.json",
-  "download": "https://github.com/lordbanana89/brancalonia-bigat-master/releases/download/v13.0.37/brancalonia-bigat.zip",
+  "download": "https://github.com/lordbanana89/brancalonia-bigat-master/releases/download/v13.0.38/brancalonia-bigat.zip",
   "license": "LICENSE",
   "readme": "README.md",
   "media": [

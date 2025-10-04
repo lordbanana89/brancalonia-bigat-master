@@ -5,6 +5,34 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.38] - 2025-10-04
+
+### ✅ **FIX DEFINITIVO** - UI Sidebar FINALMENTE Interattiva!
+
+#### Fixed - #scene-navigation copriva la sidebar
+**RISOLTO: La larghezza di #scene-navigation copriva l'intera interfaccia inclusa la sidebar, bloccando i click**
+
+**CAUSA ROOT**:
+- `#scene-navigation` usava `--scene-nav-full-width` (100vw - controls)
+- Questo lo rendeva LARGO QUANTO LO SCHERMO, coprendo anche la sidebar
+- Anche con `pointer-events: none`, i figli avevano `pointer-events: all`
+- Risultato: sidebar completamente inutilizzabile
+
+**SOLUZIONE**:
+- ✅ Cambiato `width` da `--scene-nav-full-width` a `--scene-nav-partial-width`
+- ✅ `--scene-nav-partial-width` = larghezza schermo - sidebar - controls
+- ✅ Ora `#scene-navigation` NON copre più la sidebar
+
+**File Modificato**:
+- `modules/crlngn-ui/styles/scene-nav.css:146-149`
+
+**Test**:
+- ✅ Sidebar cliccabile
+- ✅ Compendi accessibili
+- ✅ Tab del menu di sinistra funzionanti
+
+---
+
 ## [13.0.37] - 2025-10-04
 
 ### ✅ **FIX DEFINITIVO CON REGOLA GLOBALE** - UI Interaction RISOLTO
