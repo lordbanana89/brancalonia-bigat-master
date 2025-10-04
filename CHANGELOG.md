@@ -5,30 +5,54 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.35] - 2025-10-04
+
+### ✅ **FIX DEFINITIVO** - UI Interaction COMPLETAMENTE Risolto
+
+#### Fixed - Compendi e Sidebar Finalmente Cliccabili
+**RISOLTO DEFINITIVAMENTE il problema di interazione UI**
+
+**CAUSA ROOT (diagnosi finale)**:
+- **NON erano i pseudo-elementi `::before`** (v13.0.34 era un fix parziale)
+- **Era `#scene-navigation` stesso** che aveva `pointer-events: auto` e copriva tutta la sidebar
+- Diagnosticato con `document.elementFromPoint()` → ha restituito `<nav id="scene-navigation">`
+
+**SOLUZIONE DEFINITIVA APPLICATA**:
+1. ✅ Aggiunto `pointer-events: none` su `#scene-navigation` (riga 448)
+2. ✅ Aggiunto `pointer-events: all` su `#scene-navigation-active`, `#scene-navigation-inactive` (riga 459)
+3. ✅ Aggiunto `pointer-events: none` su secondo contesto `#scene-navigation` (riga 522)
+4. ✅ Aggiunto `pointer-events: all` su `#crlngn-extra-btns` (riga 525)
+5. ✅ **ORA FUNZIONA**: click passano attraverso `#scene-navigation`, raggiungono la sidebar, ma i controlli interni rimangono cliccabili
+
+**File Modificato**:
+- `modules/crlngn-ui/styles/scene-nav.css` (righe 448, 459, 522, 525)
+
+---
+
 ## [13.0.34] - 2025-10-04
 
-### 🎯 **FIX CRITICO** - UI Interaction Bloccata
+### 🎯 **FIX PARZIALE** - UI Interaction Bloccata (Non Risolutivo)
 
-#### Fixed - Compendi e Sidebar Non Cliccabili
-**Risolto problema dove gli utenti non potevano interagire con compendi e menu laterale**
+#### Fixed - Tentativo Parziale sui Pseudo-elementi
+**Tentativo di fix che NON ha risolto il problema**
 
 **PROBLEMA RILEVATO**:
 - Compendi caricavano correttamente ma non erano cliccabili
 - Menu laterale (sidebar) non rispondeva ai click
 - Utenti vedevano contenuto ma non potevano selezionare elementi
 
-**CAUSA ROOT**: 
+**CAUSA SOSPETTA (errata)**: 
 - `#scene-navigation:before` pseudo-elemento aveva `pointer-events: all`
-- Creava un overlay invisibile che bloccava tutti i click sottostanti
-- Problema specifico di Carolingian UI `scene-nav.css`
 
-**SOLUZIONE APPLICATA**:
-1. ✅ Cambiato `pointer-events: all` → `pointer-events: none` in `#scene-navigation:before`
-2. ✅ Aggiunto stesso fix per `#scene-navigation.expanded:before`
-3. ✅ UI ora completamente interattiva
+**SOLUZIONE APPLICATA (insufficiente)**:
+1. ❌ Cambiato `pointer-events: all` → `pointer-events: none` in `#scene-navigation:before`
+2. ❌ Aggiunto stesso fix per `#scene-navigation.expanded:before`
+3. ❌ **NON ha risolto** - il problema era `#scene-navigation` principale, non i pseudo-elementi
 
 **File Modificato**:
 - `modules/crlngn-ui/styles/scene-nav.css` (righe 65, 76)
+
+**NOTA**: Questo fix era corretto ma non sufficiente. La v13.0.35 contiene il fix completo e definitivo.
 
 ---
 
