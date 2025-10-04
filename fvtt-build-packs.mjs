@@ -44,18 +44,13 @@ async function buildPacks() {
     }
 
     try {
-      // Compila il pack - regole usa NeDB per JournalEntry
-      if (packName === 'regole') {
-        // Per JournalEntry usa NeDB (file singolo)
-        await compilePack(srcDir, path.join(packDir, `${packName}.db`), {
-          log: true,
-          nedb: true
-        });
-      } else {
-        // Altri pack usano LevelDB (directory)
-        await compilePack(srcDir, packDir, { log: true });
-      }
-      console.log(`✅ ${packName} compilato con successo`);
+      // CONVERTI TUTTO IN NEDB (formato più compatibile con Foundry v13)
+      // NeDB crea un file singolo .db invece di directory LevelDB
+      await compilePack(srcDir, path.join(packDir, `${packName}.db`), {
+        log: true,
+        nedb: true
+      });
+      console.log(`✅ ${packName} compilato con successo (NeDB)`);
     } catch (error) {
       console.error(`❌ Errore compilando ${packName}:`, error.message);
     }
