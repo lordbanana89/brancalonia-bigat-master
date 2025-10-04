@@ -59,6 +59,13 @@
         pointer-events: none !important; /* FIX BRANCALONIA: Permetti click su finestre e overlay sopra ui-left */
       }
 
+      /* FIX BRANCALONIA: Permetti click sui controlli e contenuti dentro ui-left */
+      #ui-left-column-1,
+      #ui-left-column-2,
+      #scene-controls {
+        pointer-events: auto !important;
+      }
+
       #scene-navigation:before {
         content: '';
         display: block;

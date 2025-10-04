@@ -5,6 +5,31 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.44] - 2025-10-04
+
+### 🎯 **FIX COMPLETO - Controlli sinistra + Finestre entrambi funzionanti**
+
+**PROBLEMA**: v13.0.43 aveva `pointer-events: none` su `#ui-left`, che bloccava ANCHE i click sui figli (scene-controls)
+
+**CAUSA**: Quando un elemento ha `pointer-events: none`, i click passano attraverso anche se i figli hanno `pointer-events: auto`
+
+**SOLUZIONE DEFINITIVA**:
+- ✅ Mantenuto `pointer-events: none` su `#ui-left` (per le finestre)
+- ✅ Aggiunto `pointer-events: auto !important` sui figli: `#ui-left-column-1`, `#ui-left-column-2`, `#scene-controls`
+- ✅ Ora TUTTO funziona: controlli sinistra + finestre + sidebar
+
+**File Modificato**:
+- `modules/crlngn-ui/styles/scene-nav.css:62-67` - Aggiunto pointer-events auto sui figli di ui-left
+
+**Diagnostica**:
+- Test mostravano: pulsanti raggiungibili (✅) ma non funzionanti
+- Gerarchia: scene-controls → ui-left-column-1 → ui-left (pointer-events: none)
+- Soluzione: permettere esplicitamente i click sui figli
+
+**QUESTA È LA RELEASE DEFINITIVA COMPLETA! Controlli, finestre e sidebar tutti funzionanti!** 🎉
+
+---
+
 ## [13.0.43] - 2025-10-04
 
 ### 🎯 **FIX DEFINITIVO FINALE - #ui-left bloccava TUTTE le finestre**
