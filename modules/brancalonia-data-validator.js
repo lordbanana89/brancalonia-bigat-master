@@ -61,11 +61,14 @@ class BrancaloniaDataValidator {
     });
 
     // Hook per correzione errori di validazione globali
+    // TEMPORANEAMENTE DISABILITATO - causa loop infinito con dati malformati
+    /*
     Hooks.on('error', (error) => {
       if (error.name === 'DataModelValidationError') {
         this._handleValidationError(error);
       }
     });
+    */
   }
 
   /**
@@ -372,6 +375,8 @@ class BrancaloniaDataValidator {
     logger.error('BrancaloniaDataValidator', 'Errore validazione rilevato:', error);
 
     // Controlla se è un errore di durata
+    // TEMPORANEAMENTE DISABILITATO - causa loop infinito
+    /*
     if (error.message && error.message.includes('duration') && error.message.includes('value')) {
       logger.warn('BrancaloniaDataValidator', 'Errore durata rilevato - eseguendo correzione automatica');
 
@@ -380,6 +385,7 @@ class BrancaloniaDataValidator {
         await this._validateAndFixAllData();
       }, 1000);
     }
+    */
   }
 
   /**
