@@ -1,15 +1,5 @@
-2025/10/04-19:50:39.580645 30981f000 Recovering log #114
-2025/10/04-19:50:39.581113 30981f000 Delete type=0 #114
-2025/10/04-19:50:39.581155 30981f000 Delete type=3 #112
-2025/10/04-19:50:39.582781 16ff23000 Level-0 table #119: started
-2025/10/04-19:50:39.583046 16ff23000 Level-0 table #119: 3610 bytes OK
-2025/10/04-19:50:39.583186 16ff23000 Delete type=0 #117
-2025/10/04-19:50:39.583277 16ff23000 Manual compaction at level-0 from '!item!affinamento1c276b' @ 72057594037927935 : 1 .. '!item!rissaioloprofessionistafec96b' @ 0 : 0; will stop at (end)
-2025/10/04-19:50:39.583294 16ff23000 Manual compaction at level-1 from '!item!affinamento1c276b' @ 72057594037927935 : 1 .. '!item!rissaioloprofessionistafec96b' @ 0 : 0; will stop at '!item!rissaioloprofessionistafec96b' @ 55 : 1
-2025/10/04-19:50:39.583299 16ff23000 Compacting 1@1 + 1@2 files
-2025/10/04-19:50:39.583529 16ff23000 Generated table #120@1: 11 keys, 3610 bytes
-2025/10/04-19:50:39.583579 16ff23000 Compacted 1@1 + 1@2 files => 3610 bytes
-2025/10/04-19:50:39.583706 16ff23000 compacted to: files[ 1 1 1 0 0 0 0 ]
-2025/10/04-19:50:39.583791 16ff23000 Delete type=2 #115
-2025/10/04-19:50:39.583937 16ff23000 Delete type=2 #119
-2025/10/04-19:50:39.584039 16ff23000 Manual compaction at level-1 from '!item!rissaioloprofessionistafec96b' @ 55 : 1 .. '!item!rissaioloprofessionistafec96b' @ 0 : 0; will stop at (end)
+2025/10/04-19:55:31.484983 173a27000 Delete type=3 #1
+2025/10/04-19:55:31.485426 1742bf000 Level-0 table #5: started
+2025/10/04-19:55:31.485605 1742bf000 Level-0 table #5: 3610 bytes OK
+2025/10/04-19:55:31.485669 1742bf000 Delete type=0 #3
+2025/10/04-19:55:31.485729 1742bf000 Manual compaction at level-0 from '!item!affinamento1c276b' @ 72057594037927935 : 1 .. '!item!rissaioloprofessionistafec96b' @ 0 : 0; will stop at (end)

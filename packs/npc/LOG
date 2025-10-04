@@ -1,15 +1,5 @@
-2025/10/04-19:50:39.680677 30981f000 Recovering log #108
-2025/10/04-19:50:39.681140 30981f000 Delete type=3 #106
-2025/10/04-19:50:39.681188 30981f000 Delete type=0 #108
-2025/10/04-19:50:39.684777 16ff23000 Level-0 table #113: started
-2025/10/04-19:50:39.686078 16ff23000 Level-0 table #113: 149365 bytes OK
-2025/10/04-19:50:39.686205 16ff23000 Delete type=0 #111
-2025/10/04-19:50:39.686320 16ff23000 Manual compaction at level-0 from '!item!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!item!viluperac949b2' @ 0 : 0; will stop at (end)
-2025/10/04-19:50:39.686351 16ff23000 Manual compaction at level-1 from '!item!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!item!viluperac949b2' @ 0 : 0; will stop at '!item!viluperac949b2' @ 220 : 1
-2025/10/04-19:50:39.686358 16ff23000 Compacting 1@1 + 1@2 files
-2025/10/04-19:50:39.688028 16ff23000 Generated table #114@1: 44 keys, 149365 bytes
-2025/10/04-19:50:39.688049 16ff23000 Compacted 1@1 + 1@2 files => 149365 bytes
-2025/10/04-19:50:39.688119 16ff23000 compacted to: files[ 1 1 1 0 0 0 0 ]
-2025/10/04-19:50:39.688162 16ff23000 Delete type=2 #113
-2025/10/04-19:50:39.688261 16ff23000 Delete type=2 #109
-2025/10/04-19:50:39.688484 16ff23000 Manual compaction at level-1 from '!item!viluperac949b2' @ 220 : 1 .. '!item!viluperac949b2' @ 0 : 0; will stop at (end)
+2025/10/04-19:55:31.558146 173a27000 Delete type=3 #1
+2025/10/04-19:55:31.559731 1742bf000 Level-0 table #5: started
+2025/10/04-19:55:31.561001 1742bf000 Level-0 table #5: 149362 bytes OK
+2025/10/04-19:55:31.561100 1742bf000 Delete type=0 #3
+2025/10/04-19:55:31.561159 1742bf000 Manual compaction at level-0 from '!item!accroccodireliquie23736a' @ 72057594037927935 : 1 .. '!item!viluperac949b2' @ 0 : 0; will stop at (end)

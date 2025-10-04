@@ -5,6 +5,67 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.27] - 2025-10-04
+
+### 🔧 **HOTFIX COMPENDI** - Ricompilazione Completa da Zero
+
+#### Fixed - Compendi Corrotti e Errori di Migrazione
+**Risolto problema critico con documenti corrotti**
+
+**PROBLEMA RILEVATO (v13.0.26)**:
+```
+TypeError: Failed data migration: system.skills.choices.map is not a function
+Foundry VTT | Constructed index of brancalonia-bigat.backgrounds Compendium containing 0 entries
+Foundry VTT | Constructed index of brancalonia-bigat.talenti Compendium containing 0 entries
+```
+
+**CAUSA**: 
+- File LevelDB frammentati (multipli .ldb per pack)
+- Documenti _source con dati in formato non valido
+- Sistema migrazione dati falliva su alcuni item
+
+**SOLUZIONE APPLICATA**:
+1. **Eliminati TUTTI i file LDB esistenti**
+   - Rimossi *.ldb, MANIFEST-*, CURRENT, *.log
+   - Pulizia completa dei database LevelDB
+
+2. **Ricompilati da zero** con `fvtt-build-packs.mjs`
+   - 13 compendi rigenerati completamente
+   - 1.132 documenti processati con successo
+   - 11 file .ldb freschi e non frammentati
+
+**RISULTATO**:
+```
+✅ backgrounds: 21 documenti
+✅ brancalonia-features: 491 documenti
+✅ classi: 12 documenti
+✅ emeriticenze: 11 documenti
+✅ equipaggiamento: 257 documenti
+✅ incantesimi: 94 documenti
+✅ macro: 22 documenti
+✅ npc: 44 documenti
+✅ razze: 8 documenti
+✅ regole: 61 documenti
+✅ rollable-tables: 82 documenti
+✅ sottoclassi: 21 documenti
+✅ talenti: 8 documenti
+
+TOTALE: 1.132 documenti
+```
+
+#### Impatto
+- ✅ **DATABASE PULITI**: File LDB non frammentati
+- ✅ **NESSUN ERRORE**: Migrazione dati funzionante
+- ✅ **COMPENDI FUNZIONANTI**: Tutti i documenti accessibili
+- ✅ **DRAG & DROP**: Completamente operativo
+
+#### Note Tecniche
+- Processo di build verificato senza errori
+- File .ldb mono-blocco per ogni compendio (non frammentati)
+- Sincronizzazione perfetta tra _source e LevelDB
+
+---
+
 ## [13.0.26] - 2025-10-04
 
 ### 📦 **COMPENDI RIGENERATI** - Indici LevelDB Ricompilati
