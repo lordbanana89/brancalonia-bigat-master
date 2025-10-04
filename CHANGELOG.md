@@ -5,6 +5,21 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.39] - 2025-10-04
+
+### ✅ **HOTFIX - CSS non incluso nella release precedente**
+
+**PROBLEMA**: La release v13.0.38 non includeva il CSS modificato (`scene-nav.css`)
+**CAUSA**: Il file CSS era stato modificato localmente ma non era stato incluso nel ZIP della release
+**SOLUZIONE**: 
+- ✅ Ricreato il ZIP con il CSS aggiornato
+- ✅ Il file `scene-nav.css` ora usa correttamente `--scene-nav-partial-width` invece di `--scene-nav-full-width`
+- ✅ `#scene-navigation` ora NON copre più la sidebar
+
+**QUESTA È LA VERSIONE CORRETTA - Tutte le release precedenti (v13.0.37 e v13.0.38) non avevano il fix!**
+
+---
+
 ## [13.0.38] - 2025-10-04
 
 ### ✅ **FIX DEFINITIVO** - UI Sidebar FINALMENTE Interattiva!
