@@ -1,0 +1,79 @@
+{
+  "_id": "ZmStLebzeJEaTDrW",
+  "_key": "!item!lidolopagano10819a",
+  "name": "L'Idolo Pagano",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Statuetta di legno di divinità dimenticata</p><h3>Proprietà</h3><p>Una volta al giorno può rispondere a una domanda con sì/no</p><h3>Storia</h3><p><em>Ultimo idolo di un culto sterminato dall'Inquisizione</em></p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 800,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "009",
+      "categoria": "cimelo",
+      "storia": "Ultimo idolo di un culto sterminato dall'Inquisizione",
+      "proprieta_originale": "Una volta al giorno può rispondere a una domanda con sì/no",
+      "implementazione": {
+        "tipo": "narrativo",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

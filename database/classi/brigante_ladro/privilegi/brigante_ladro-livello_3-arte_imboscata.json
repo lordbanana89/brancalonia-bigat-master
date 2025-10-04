@@ -1,0 +1,13 @@
+{
+  "id": "brigante_ladro-livello_3-arte_imboscata",
+  "livello": 3,
+  "nome": "Arte dell'Imboscata",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.23",
+  "descrizione": "Impari a colpire nel momento esatto in cui la tua vittima abbassa la guardia. Il tuo primo movimento è sempre preparato, come un'incursione studiata al millimetro.",
+  "effetti": [
+    "Hai vantaggio ai tiri per l'iniziativa",
+    "Durante il primo turno di ogni combattimento hai vantaggio a tutti i tiri per colpire e alle prove di caratteristica"
+  ],
+  "note": "Il vantaggio del primo turno rappresenta l'agguato messo in scena dal brigante; termina alla conclusione del tuo primo turno." 
+}

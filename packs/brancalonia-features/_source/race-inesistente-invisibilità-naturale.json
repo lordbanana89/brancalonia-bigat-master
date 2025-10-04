@@ -1,0 +1,25 @@
+{
+  "_id": "b9nfip1u5gkb47mk",
+  "_key": "!item!b9nfip1u5gkb47mk",
+  "name": "Invisibilità Naturale",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Come azione bonus, puoi diventare invisibile per 1 turno. Utilizzabile 1 volta per riposo breve.",
+      "chat": ""
+    },
+    "requirements": "Inesistente",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [],
+  "flags": {}
+}

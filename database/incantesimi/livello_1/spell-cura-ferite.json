@@ -1,0 +1,61 @@
+{
+  "id": "spell-cura-ferite",
+  "nome": "Cura Ferite",
+  "nome_inglese": "Cure Wounds",
+  "livello": 1,
+  "scuola": "Invocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Contatto",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "Istantanea",
+  "descrizione": "Una creatura che tocchi recupera un numero di punti ferita pari a 1d8 + il tuo modificatore di caratteristica da incantatore. Questo incantesimo non ha effetto su non morti o costrutti.",
+  "classi": ["Bardo", "Chierico", "Druido", "Paladino", "Ranger"],
+  "scaling": {
+    "slot_1": "1d8 + mod",
+    "slot_2": "2d8 + mod",
+    "slot_3": "3d8 + mod",
+    "slot_4": "4d8 + mod",
+    "slot_5": "5d8 + mod",
+    "slot_6": "6d8 + mod"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "action",
+    "range": "touch",
+    "healing": "1d8 + @mod",
+    "scaling": "1d8 per level"
+  },
+  "healing_medio": {
+    "slot_1_wis_16": "7.5 medi (1d8+3)",
+    "slot_2_wis_16": "12 medi (2d8+3)",
+    "slot_3_wis_16": "16.5 medi (3d8+3)",
+    "slot_5_wis_20": "27.5 medi (5d8+5)"
+  },
+  "confronto_healing": {
+    "vs_healing_word": "Più cura ma touch e action",
+    "vs_prayer_healing": "Single target ma più healing",
+    "vs_heal": "Molto meno ma slot basso"
+  },
+  "problemi": [
+    "Touch range pericoloso",
+    "Action intera (no attack stesso turno)",
+    "No range per alleati lontani",
+    "Espone healer a opportunity attack"
+  ],
+  "quando_usare": [
+    "Fuori combat per efficienza",
+    "Emergenze con alleato vicino",
+    "Tank healer in melee",
+    "Massimizzare healing output"
+  ],
+  "life_domain": {
+    "bonus": "+2 + spell level extra healing",
+    "esempio": "1d8+3+3 con slot 1°"
+  },
+  "note_dm": "Cure Wounds è healing efficiente ma touch range limita. Meglio out of combat. Life Domain lo rende eccellente.",
+  "fonte": "D&D 5e PHB p.230"
+}

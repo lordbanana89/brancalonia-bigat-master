@@ -1,0 +1,72 @@
+{
+  "_id": "cdc6cae1ebab0364",
+  "_key": "!item!cdc6cae1ebab0364",
+  "name": "Collegio Bardico",
+  "type": "feat",
+  "img": "icons/environment/settlement/academia.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Collegio Bardico (3° livello)</strong></p><p>Al 3° livello, ti iscrivi a un Collegio Bardico di tua scelta. Questa scelta rappresenta la tradizione bardica che studi e attraverso cui esprimi il tuo talento.</p><p>Il tuo Collegio ti conferisce privilegi al 3° livello e poi di nuovo al 6° e 14° livello. I collegi più comuni includono:</p><ul><li><strong>Collegio della Conoscenza</strong> - Esperti in saggezza e sapere, raccoglitori di storie e leggende</li><li><strong>Collegio del Valore</strong> - Guerrieri-poeti che ispirano gli eroi con canti di battaglia</li></ul><p><strong>Brancalonia</strong> introduce collegi bardici italiani come:</p><ul><li><strong>Arlecchino</strong> - Maestri dell'improvvisazione e della commedia dell'arte</li><li><strong>Mattatore</strong> - Showman carismatici e narratori epici</li></ul><p><strong>Nota:</strong> Nella scheda personaggio, seleziona il tuo sottocollegio nella sezione Class. Il sistema applicherà automaticamente i privilegi appropriati man mano che sali di livello.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.54 / Brancalonia",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Bardo Livello 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "bardo",
+      "livello": 3
+    }
+  }
+}

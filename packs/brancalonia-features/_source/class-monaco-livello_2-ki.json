@@ -1,0 +1,138 @@
+{
+  "id": "class-monaco-livello_2-ki",
+  "nome": "Ki",
+  "nome_brancalonia": "Energia Interiore",
+  "livello": 2,
+  "tipo": "risorsa",
+  "descrizione": "A partire dal 2° livello, il tuo addestramento ti permette di sfruttare l'energia mistica del ki. Il tuo accesso a questa energia è rappresentato da un numero di punti ki pari al tuo livello da monaco.",
+  "meccaniche": {
+    "punti_ki": "= livello monaco",
+    "recupero": "Riposo breve o lungo",
+    "ki_save_dc": "8 + prof + WIS mod",
+    "abilità_base": {
+      "flurry_of_blows": {
+        "costo": "1 ki",
+        "effetto": "2 colpi senz'armi come bonus action"
+      },
+      "patient_defense": {
+        "costo": "1 ki",
+        "effetto": "Dodge come bonus action"
+      },
+      "step_of_wind": {
+        "costo": "1 ki",
+        "effetto": "Dash o Disengage bonus action + salto raddoppiato"
+      }
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "resource_pool",
+    "risorsa": "Ki Points",
+    "valore": "@classes.monk.levels",
+    "recupero": "short-rest"
+  },
+  "gestione_ki": {
+    "livello_2-4": {
+      "ki_disponibili": "2-4 punti",
+      "strategia": "Usa con parsimonia, focus su flurry"
+    },
+    "livello_5-10": {
+      "ki_disponibili": "5-10 punti",
+      "strategia": "Più liberale, stunning strike priority"
+    },
+    "livello_11-20": {
+      "ki_disponibili": "11-20 punti",
+      "strategia": "Usa liberamente, sempre risorse"
+    }
+  },
+  "valore_abilità": {
+    "flurry_of_blows": {
+      "dpr": "+50% damage output",
+      "stunning_strike": "2 chance extra per stun",
+      "quando": "Boss, burst damage needed"
+    },
+    "patient_defense": {
+      "sopravvivenza": "Disadvantage attacchi = 50-75% miss",
+      "quando": "Circondato, boss fight, low HP"
+    },
+    "step_of_wind": {
+      "mobilità": "Dash 60ft+ movimento totale",
+      "quando": "Fuga, inseguimento, gap closing"
+    }
+  },
+  "ki_economy": {
+    "costo_opportunità": {
+      "ogni_ki": "= 1 potential stunning strike",
+      "bilanciare": "Offense vs defense vs mobility"
+    },
+    "recupero_frequenza": {
+      "dungeon": "1-2 short rest tipici",
+      "combattimento_singolo": "Usa tutto se necessario"
+    }
+  },
+  "scaling_ki_features": {
+    "livello_3": "Deflect Missiles, Way features",
+    "livello_4": "Slow Fall (gratuito)",
+    "livello_5": "Stunning Strike (game changer)",
+    "livello_6": "Ki-Empowered Strikes",
+    "livello_7": "Evasion, Stillness of Mind",
+    "livello_14": "Diamond Soul",
+    "livello_18": "Empty Body (costoso)"
+  },
+  "confronto_risorse": {
+    "vs_barbarian_rage": "Ki più usi ma meno durata",
+    "vs_sorcery_points": "Ki recupera short rest",
+    "vs_battlemaster_dice": "Ki più versatile",
+    "vs_spell_slots": "Ki più limitato ma affidabile"
+  },
+  "combo_efficaci": {
+    "burst": "Flurry + Stunning Strike spam",
+    "difesa": "Patient Defense + mobility",
+    "inseguimento": "Step of Wind + Dash action",
+    "controllo": "Stunning Strike focus"
+  },
+  "way_interactions": {
+    "open_hand": "Flurry aggiunge effetti",
+    "shadow": "Ki per spell e teleport",
+    "four_elements": "Ki per spell elementali",
+    "mercy": "Ki per healing e harm",
+    "astral_self": "Ki per arms/visage"
+  },
+  "errori_comuni": {
+    "sprecare_early": "Finire ki round 1",
+    "conservare_troppo": "Morire con ki rimanenti",
+    "ignorare_defense": "Solo flurry, mai patient",
+    "dimenticare_rest": "Non fare short rest"
+  },
+  "tattiche_avanzate": {
+    "baiting": "Patient Defense per attirare attacchi",
+    "nova_round": "Flurry + 4 stunning strike",
+    "kiting": "Step of Wind per hit and run",
+    "resource_denial": "Stun casters = no spell"
+  },
+  "narrazione_brancalonia": {
+    "energia_vitale": "Forza che fluisce nel corpo",
+    "disciplina": "Controllo mente e spirito",
+    "esplosività": "Liberare potere interiore",
+    "armonia": "Bilanciare yin e yang"
+  },
+  "note_dm": "Ki definisce il monaco. Sistema di risorse unico che recupera con short rest. Stunning Strike (livello 5) è l'uso più potente. Gestione ki separa monaci buoni da grandi.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78",
+  "name": "Ki",
+  "img": "icons/magic/light/orb-lightbulb-white.webp",
+  "_id": "1FuJF8xaTrhNVIwv",
+  "_key": "!item!class-monaco-livello_2-ki",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

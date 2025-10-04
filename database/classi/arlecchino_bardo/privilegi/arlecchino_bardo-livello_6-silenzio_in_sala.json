@@ -1,0 +1,21 @@
+{
+  "id": "arlecchino_bardo-livello_6-silenzio_in_sala",
+  "livello": 6,
+  "nome": "Silenzio in Sala",
+  "tipo": "attivo",
+  "fonte": "Manuale Base p.19",
+  "descrizione": "Alzi la mano e il pubblico tace: persino la magia si adegua al copione. Puoi evocare il silenzio e modulare i tuoi spettacoli senza proferire parola, mentre il pubblico continua a percepire la tua pantomima.",
+  "meccaniche": {
+    "usi": {
+      "valore": "modificatore di Carisma",
+      "minimo": 1,
+      "recupero": "Riposo lungo"
+    },
+    "effetti": [
+      "Puoi lanciare l'incantesimo Silenzio senza consumare slot un numero di volte pari al modificatore di Carisma",
+      "Quando lanci un incantesimo che richiede componente verbale puoi sostituirla con una componente somatica",
+      "Le creature che beneficiano della tua Ispirazione Bardica non devono sentirti: è sufficiente che possano vederti"
+    ]
+  },
+  "note": "Se usi Silenzio in Sala per lanciare Silenzio, usi gli stessi parametri dell'incantesimo (raggio 6 metri, concentrazione, 10 minuti)."
+}

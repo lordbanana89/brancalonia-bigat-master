@@ -1,0 +1,373 @@
+{
+  "tabella": [
+    {
+      "livello": 1,
+      "bonus_competenza": 2,
+      "incantesimi_conosciuti": 2,
+      "invocazioni_conosciute": 0,
+      "slot_patto": {
+        "slot": 1,
+        "livello": 1
+      },
+      "privilegi": [
+        {
+          "id": "class-warlock-livello_1-patrono-ultraterreno",
+          "nome": "Patrono Ultraterreno",
+          "file": "../privilegi_generali/class-warlock-livello_1-patrono-ultraterreno.json"
+        },
+        {
+          "id": "class-warlock-livello_1-magia-del-patto",
+          "nome": "Magia del Patto",
+          "file": "../privilegi_generali/class-warlock-livello_1-magia-del-patto.json"
+        }
+      ]
+    },
+    {
+      "livello": 2,
+      "bonus_competenza": 2,
+      "incantesimi_conosciuti": 3,
+      "invocazioni_conosciute": 2,
+      "slot_patto": {
+        "slot": 2,
+        "livello": 1
+      },
+      "privilegi": [
+        {
+          "id": "class-warlock-livello_2-invocazioni-occulte",
+          "nome": "Invocazioni Occulte",
+          "file": "../privilegi_generali/class-warlock-livello_2-invocazioni-occulte.json"
+        }
+      ]
+    },
+    {
+      "livello": 3,
+      "bonus_competenza": 2,
+      "incantesimi_conosciuti": 4,
+      "invocazioni_conosciute": 3,
+      "slot_patto": {
+        "slot": 2,
+        "livello": 2
+      },
+      "privilegi": [
+        {
+          "id": "class-warlock-livello_3-patto-mistico",
+          "nome": "Patto Mistico",
+          "file": "../privilegi_generali/class-warlock-livello_3-patto-mistico.json"
+        }
+      ]
+    },
+    {
+      "livello": 4,
+      "bonus_competenza": 2,
+      "incantesimi_conosciuti": 5,
+      "invocazioni_conosciute": 4,
+      "slot_patto": {
+        "slot": 2,
+        "livello": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.106",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 5,
+      "bonus_competenza": 3,
+      "incantesimi_conosciuti": 6,
+      "invocazioni_conosciute": 5,
+      "slot_patto": {
+        "slot": 2,
+        "livello": 3
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 6,
+      "bonus_competenza": 3,
+      "incantesimi_conosciuti": 7,
+      "invocazioni_conosciute": 6,
+      "slot_patto": {
+        "slot": 2,
+        "livello": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Privilegio del Patrono",
+          "fonte": "Manuale del Giocatore p.106",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Otherworldly Patron Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 7,
+      "bonus_competenza": 3,
+      "incantesimi_conosciuti": 8,
+      "invocazioni_conosciute": 7,
+      "slot_patto": {
+        "slot": 2,
+        "livello": 4
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 8,
+      "bonus_competenza": 3,
+      "incantesimi_conosciuti": 9,
+      "invocazioni_conosciute": 8,
+      "slot_patto": {
+        "slot": 2,
+        "livello": 4
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.106",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 9,
+      "bonus_competenza": 4,
+      "incantesimi_conosciuti": 10,
+      "invocazioni_conosciute": 9,
+      "slot_patto": {
+        "slot": 2,
+        "livello": 5
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 10,
+      "bonus_competenza": 4,
+      "incantesimi_conosciuti": 10,
+      "invocazioni_conosciute": 10,
+      "slot_patto": {
+        "slot": 2,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Privilegio del Patrono",
+          "fonte": "Manuale del Giocatore p.106",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Otherworldly Patron Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 11,
+      "bonus_competenza": 4,
+      "incantesimi_conosciuti": 11,
+      "invocazioni_conosciute": 10,
+      "slot_patto": {
+        "slot": 3,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Arcanum Mistico (6°)",
+          "fonte": "Manuale del Giocatore p.107",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Mystic Arcanum (6th Level)"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 12,
+      "bonus_competenza": 4,
+      "incantesimi_conosciuti": 11,
+      "invocazioni_conosciute": 11,
+      "slot_patto": {
+        "slot": 3,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.106",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 13,
+      "bonus_competenza": 5,
+      "incantesimi_conosciuti": 12,
+      "invocazioni_conosciute": 11,
+      "slot_patto": {
+        "slot": 3,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Arcanum Mistico (7°)",
+          "fonte": "Manuale del Giocatore p.107",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Mystic Arcanum (7th Level)"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 14,
+      "bonus_competenza": 5,
+      "incantesimi_conosciuti": 12,
+      "invocazioni_conosciute": 12,
+      "slot_patto": {
+        "slot": 3,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Privilegio del Patrono",
+          "fonte": "Manuale del Giocatore p.106",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Otherworldly Patron Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 15,
+      "bonus_competenza": 5,
+      "incantesimi_conosciuti": 13,
+      "invocazioni_conosciute": 12,
+      "slot_patto": {
+        "slot": 3,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Arcanum Mistico (8°)",
+          "fonte": "Manuale del Giocatore p.107",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Mystic Arcanum (8th Level)"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 16,
+      "bonus_competenza": 5,
+      "incantesimi_conosciuti": 13,
+      "invocazioni_conosciute": 13,
+      "slot_patto": {
+        "slot": 3,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.106",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 17,
+      "bonus_competenza": 6,
+      "incantesimi_conosciuti": 14,
+      "invocazioni_conosciute": 13,
+      "slot_patto": {
+        "slot": 4,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Arcanum Mistico (9°)",
+          "fonte": "Manuale del Giocatore p.107",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Mystic Arcanum (9th Level)"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 18,
+      "bonus_competenza": 6,
+      "incantesimi_conosciuti": 14,
+      "invocazioni_conosciute": 14,
+      "slot_patto": {
+        "slot": 4,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Privilegio del Patrono",
+          "fonte": "Manuale del Giocatore p.106",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Otherworldly Patron Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 19,
+      "bonus_competenza": 6,
+      "incantesimi_conosciuti": 15,
+      "invocazioni_conosciute": 14,
+      "slot_patto": {
+        "slot": 4,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.106",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 20,
+      "bonus_competenza": 6,
+      "incantesimi_conosciuti": 15,
+      "invocazioni_conosciute": 15,
+      "slot_patto": {
+        "slot": 4,
+        "livello": 5
+      },
+      "privilegi": [
+        {
+          "nome": "Maestro Occulto",
+          "fonte": "Manuale del Giocatore p.107",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Eldritch Master"
+          }
+        }
+      ]
+    }
+  ]
+}

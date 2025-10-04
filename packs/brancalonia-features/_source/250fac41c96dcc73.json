@@ -1,0 +1,72 @@
+{
+  "_id": "250fac41c96dcc73",
+  "_key": "!item!250fac41c96dcc73",
+  "name": "Fonte d'Ispirazione",
+  "type": "feat",
+  "img": "icons/magic/light/orb-lightbulb-blue-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Fonte d'Ispirazione (5° livello)</strong></p><p>A partire dal 5° livello, recuperi tutti gli usi spesi della tua Ispirazione Bardica quando completi un riposo breve o lungo.</p><p>Normalmente, al 1° livello, recuperi gli usi di Ispirazione Bardica solo dopo un riposo lungo. Questa feature migliora significativamente la tua capacità di supportare il gruppo, permettendoti di usare l'Ispirazione Bardica più liberamente durante le avventure sapendo che potrai recuperarla durante i riposi brevi.</p><p><strong>Nota:</strong> Il sistema di D&D 5e gestisce automaticamente il recupero degli usi quando il personaggio completa un riposo breve o lungo, se la feature ha questa proprietà impostata.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.54",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "Riposo breve o lungo"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Bardo Livello 5",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "bardo",
+      "livello": 5
+    }
+  }
+}

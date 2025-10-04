@@ -1,0 +1,23 @@
+{
+  "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "class-bardo-livello_1-ispirazione-bardica",
+      "nome": "Parole di Incoraggiamento",
+      "file": "class-bardo-livello_1-ispirazione-bardica.json"
+    },
+    {
+      "id": "class-bardo-livello_2-jack-tuttofare",
+      "nome": "Maestro di Mille Arti",
+      "file": "class-bardo-livello_2-jack-tuttofare.json"
+    },
+    {
+      "id": "class-bardo-livello_3-collegio-bardico",
+      "nome": "Scuola Degli Artisti",
+      "file": "class-bardo-livello_3-collegio-bardico.json"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "_id": "95AEUOAmoAnfPOPj",
+  "_key": "!tables!95AEUOAmoAnfPOPj",
+  "name": "Azzeccagarbugli - Legami",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "Fpc5YThfsAs5ybg7",
+      "type": 0,
+      "text": "Il maestro di retorica e diritto che gli ha insegnato a rubare.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!Fpc5YThfsAs5ybg7"
+    },
+    {
+      "_id": "c5gCTcVToF0dD95R",
+      "type": 0,
+      "text": "Un parente che lo disprezza perché ha tradito la professione per diventare canaglia.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!c5gCTcVToF0dD95R"
+    },
+    {
+      "_id": "13Sik8JDnj5XqR7n",
+      "type": 0,
+      "text": "Il capobanda inflessibile di cui è stato consigliere.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!13Sik8JDnj5XqR7n"
+    },
+    {
+      "_id": "2lZYqdNAeMmX1wJA",
+      "type": 0,
+      "text": "La persona che lo ha costretto a diventare una canaglia tradendo la professione.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!2lZYqdNAeMmX1wJA"
+    },
+    {
+      "_id": "bdmrp6QCeiat2CnN",
+      "type": 0,
+      "text": "Il cliente che non è riuscito a salvare e che marcisce ancora in prigione.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!bdmrp6QCeiat2CnN"
+    },
+    {
+      "_id": "Lb2pBt07RASzDhNy",
+      "type": 0,
+      "text": "La persona che ha sempre amato ed è stata uccisa per colpa del suo mestiere.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!Lb2pBt07RASzDhNy"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "azzeccagarbugli",
+      "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

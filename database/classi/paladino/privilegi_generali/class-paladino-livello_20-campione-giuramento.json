@@ -1,0 +1,23 @@
+{
+  "id": "class-paladino-livello_20-campione-giuramento",
+  "nome": "Campione del Giuramento",
+  "nome_brancalonia": "Avatar Divino",
+  "livello": 20,
+  "tipo": "attivo",
+  "descrizione": "Al 20° livello, puoi assumere la forma di un avatar del tuo giuramento. Ogni giuramento ha una trasformazione unica.",
+  "meccaniche": {
+    "durata": "1 minuto",
+    "azione": "Action",
+    "recupero": "1 volta per riposo lungo"
+  },
+  "trasformazioni_esempio": {
+    "devotion": "Aura luce 30ft, vantaggio save spell",
+    "ancients": "Rigenerazione 10 HP/turno",
+    "vengeance": "Ali 60ft volo",
+    "conquest": "Aura paura e danno",
+    "redemption": "Resistenza tutti danni"
+  },
+  "impatto": "Trasformazione epica per 1 minuto. Definisce climax.",
+  "note_dm": "Oath capstone al 20 sono trasformazioni uniche e potenti. 1 minuto di quasi-divinità.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85-88"
+}

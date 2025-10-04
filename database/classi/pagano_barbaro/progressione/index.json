@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione",
+  "descrizione": "Contenuti della categoria Progressione",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "progressione.json"
+    }
+  ]
+}

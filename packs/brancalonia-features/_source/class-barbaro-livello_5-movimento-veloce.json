@@ -1,0 +1,94 @@
+{
+  "id": "class-barbaro-livello_5-movimento-veloce",
+  "nome": "Movimento Veloce",
+  "nome_brancalonia": "Passo del Cacciatore",
+  "livello": 5,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 5° livello, la tua velocità aumenta di 3 metri fintanto che non indossi armatura pesante.",
+  "meccaniche": {
+    "bonus_movimento": {
+      "valore": "3 metri (10 piedi)",
+      "tipo": "incremento_base",
+      "condizione": "Non indossare armatura pesante"
+    },
+    "applicazione": {
+      "velocita_base_umano": "9 metri → 12 metri",
+      "velocita_base_nano": "7.5 metri → 10.5 metri",
+      "velocita_base_halfling": "7.5 metri → 10.5 metri"
+    },
+    "interazioni": {
+      "con_incantesimi": "Si somma a velocità o libertà di movimento",
+      "con_oggetti_magici": "Si somma a stivali della velocità",
+      "con_difficile_terreno": "Il bonus si applica prima del dimezzamento",
+      "con_dash": "Dash raddoppia la velocità totale (incluso bonus)"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "passivo_condizionale",
+    "active_effects": [
+      {
+        "label": "Movimento Veloce",
+        "key": "system.attributes.movement.walk",
+        "mode": 2,
+        "value": "10",
+        "disabled": false,
+        "transfer": true
+      }
+    ],
+    "condizione_disattivazione": "system.attributes.ac.armor.type === 'heavy'",
+    "note": "In Foundry, 10 piedi vengono convertiti automaticamente in metri"
+  },
+  "vantaggi_tattici": {
+    "combattimento": [
+      "Raggiungere nemici distanti più facilmente",
+      "Ritirarsi senza provocare opportunità (con Dash)",
+      "Aggirare i nemici per fiancheggiamento"
+    ],
+    "esplorazione": [
+      "Coprire più terreno durante viaggi",
+      "Inseguimenti più efficaci",
+      "Esplorare aree più ampie"
+    ]
+  },
+  "calcoli_movimento": {
+    "turno_normale": {
+      "senza_bonus": "9m movimento + 9m Dash = 18m",
+      "con_bonus": "12m movimento + 12m Dash = 24m",
+      "differenza": "+6 metri per turno con Dash"
+    },
+    "in_combattimento": {
+      "attacco_e_movimento": "12m di movimento disponibili",
+      "carica": "Può caricare da 12m invece che 9m"
+    }
+  },
+  "confronto_classi": {
+    "monaco": "Movimento Senza Armatura scala con livelli",
+    "barbaro": "Fisso +3m dal 5° livello",
+    "altre_classi": "Nessun bonus movimento base"
+  },
+  "sinergie_brancalonia": {
+    "inseguimenti": "Vantaggio negli inseguimenti urbani di Brancalonia",
+    "fuga": "Utile per scappare dalle guardie",
+    "esplorazione_dungeon": "Permette di esplorare più rapidamente"
+  },
+  "note_dm": "Ricorda di applicare il bonus solo se non indossa armatura pesante. Il bonus è sempre attivo, non richiede attivazione.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
+  "name": "Movimento Veloce",
+  "img": "icons/magic/movement/trail-streak-pink.webp",
+  "_id": "Xuxf4NhCBE7ynuub",
+  "_key": "!item!class-barbaro-livello_5-movimento-veloce",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

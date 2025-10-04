@@ -1,0 +1,64 @@
+{
+  "_id": "I1zqicelZT3lnN8g",
+  "_key": "!item!armstd001armaturaimbottita66110f",
+  "name": "Armatura Imbottita",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Giacca trapuntata imbottita di lana o cotone.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 3.6,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "type": {
+      "value": "armor",
+      "subtype": "light",
+      "baseItem": "padded"
+    },
+    "armor": {
+      "value": 11,
+      "type": "light",
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": 0,
+    "stealth": false,
+    "properties": [],
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arm-std-001",
+      "categoria": "armatura_standard",
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "categoria": "sistema_rissa",
+  "fonte": "Manuale Base p.51-56",
+  "descrizione": "Sistema di combattimento non letale per scontri da taverna",
+  "regole_base": {
+    "principi": [
+      "Combattimenti non letali",
+      "No privilegi di classe attivi (magie, attacchi extra)",
+      "Privilegi passivi consentiti (Difesa Senza Armatura, Percezione Pericolo)",
+      "Movimento generico non definito in metri",
+      "Danni come batoste invece di PF"
+    ],
+    "batoste": {
+      "descrizione": "Danni non letali cumulativi",
+      "tabella": [
+        {"livello": 1, "nome": "Ammaccato", "effetto": "-1 CA"},
+        {"livello": 2, "nome": "Contuso", "effetto": "-1 CA"},
+        {"livello": 3, "nome": "Livido", "effetto": "-1 CA"},
+        {"livello": 4, "nome": "Pesto", "effetto": "-1 CA"},
+        {"livello": 5, "nome": "Gonfio", "effetto": "-1 CA"},
+        {"livello": 6, "nome": "Incosciente", "effetto": "Privo di sensi"}
+      ],
+      "critico": "20 naturale raddoppia batoste inflitte"
+    },
+    "saccagnata": {
+      "descrizione": "Attacco base della rissa",
+      "azione": "azione",
+      "tiro_colpire": "mod Forza + bonus competenza",
+      "danno": "1 batosta"
+    },
+    "slot_mossa": {
+      "descrizione": "Risorsa per usare mosse speciali",
+      "recupero": "Fine rissa",
+      "progressione": [
+        {"livello": 1, "slot": 2},
+        {"livello": 2, "slot": 2},
+        {"livello": 3, "slot": 3},
+        {"livello": 4, "slot": 3},
+        {"livello": 5, "slot": 4},
+        {"livello": 6, "slot": 4}
+      ]
+    }
+  },
+  "privilegi_rissa": [
+    {"livello": 1, "privilegi": "Mossa Generica, Mossa di Classe"},
+    {"livello": 2, "privilegi": "Ignoranza Eroica (statistica a scelta per saccagnate)"},
+    {"livello": 3, "privilegi": "Mossa Generica"},
+    {"livello": 4, "privilegi": "Mascella di Ferro (reazione + slot: rimuove condizione)"},
+    {"livello": 5, "privilegi": "Mossa Generica"},
+    {"livello": 6, "privilegi": "Asso nella Manica"}
+  ],
+  "oggetti_scena": {
+    "comuni": {
+      "esempi": "Bottiglie, brocche, posate, zappe, stoviglie, candelabri, torce, fiaschi, sgabelli, attizzatoi",
+      "raccolta": "azione bonus",
+      "usi": [
+        "Saccagnata con +1d4 al tiro colpire",
+        "Saccagnata come azione bonus",
+        "+2 CA come reazione"
+      ]
+    },
+    "epici": {
+      "esempi": "Tavoli, botti, armature d'arredo, cassapanche, bauli, lampadari, personaggi",
+      "raccolta": "azione",
+      "usi": [
+        "Saccagnata con +1 batosta",
+        "Saccagnata che stordisce",
+        "Saccagnata che colpisce 2 bersagli",
+        "+5 CA come reazione"
+      ]
+    }
+  },
+  "mosse_generiche": [
+    {
+      "nome": "Buttafuori",
+      "tipo": "reazione",
+      "trigger": "Quando colpito",
+      "effetto": "Tiro colpire (For/Des): stordisce attaccante"
+    },
+    {
+      "nome": "Schianto",
+      "tipo": "azione",
+      "effetto": "Tiro colpire (For/Cos): 1 batosta + stordito + prono al bersaglio, personaggio subisce effetti"
+    }
+  ],
+  "condizioni": {
+    "durata": "Fino a fine turno successivo di chi le subisce",
+    "note": "Seguono regole normali condizioni D&D 5e"
+  },
+  "fine_rissa": {
+    "vittoria": "Tutti avversari incoscienti o arresi",
+    "sconfitta": "Tutti PG incoscienti",
+    "trofei": "Possibile prendere cimelio da avversario sconfitto"
+  },
+  "validazione": {
+    "implementato": false,
+    "compendio": "regole_rissa"
+  }
+}

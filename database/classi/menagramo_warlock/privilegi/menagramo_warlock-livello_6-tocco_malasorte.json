@@ -1,0 +1,21 @@
+{
+  "id": "menagramo_warlock-livello_6-tocco_malasorte",
+  "livello": 6,
+  "nome": "Il Tocco della Malasorte",
+  "tipo": "attivo",
+  "fonte": "Manuale Base p.29",
+  "descrizione": "Inviti Madama Sventura a posarsi sulla tua spalla. Per un istante un'ombra si materializza alle tue spalle e il destino si incrina per chiunque ti stia accanto.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione",
+      "raggio": "6 metri",
+      "durata": "Numero di round pari al tuo modificatore di Carisma (minimo 1)",
+      "ricarica": "Riposo lungo"
+    },
+    "effetti": [
+      "Le creature nell'area, tranne te, subiscono svantaggio a tiri per colpire, prove di caratteristica e tiri salvezza",
+      "Quando l'effetto termina scendi a 0 punti ferita: Madama Sventura riscuote il suo debito"
+    ]
+  },
+  "note": "La penalità termina se lasci l'area; l'effetto di svantaggio si ricalcola all'inizio di ogni turno finché dura l'aura." 
+}

@@ -1,0 +1,69 @@
+{
+  "nome": "Inesistente",
+  "fonte": "Brancalonia Macaronicon p.8-9",
+  "tipo": "razza",
+  "descrizione": "Pura coscienza astratta racchiusa in abiti vuoti, armature o mantelli che si muovono da soli",
+  "origine": "Intenti astratti che manipolano oggetti per muoversi nel mondo terreno",
+  "meccaniche": {
+    "incremento_caratteristiche": {
+      "tipo": "passivo",
+      "descrizione": "Costituzione +2, una caratteristica a scelta +1",
+      "implementazione": {
+        "costituzione": "system.abilities.con.value + 2",
+        "scelta": "flags.brancalonia-bigat.asiChoice = true"
+      },
+      "mode": 2
+    },
+    "eta": {
+      "tipo": "narrativo",
+      "descrizione": "Sconosciuta, appaiono dal nulla"
+    },
+    "taglia": {
+      "tipo": "passivo",
+      "valore": "Media",
+      "nota": "Peso dipende da oggetti equipaggiati"
+    },
+    "velocita": {
+      "tipo": "attivo",
+      "descrizione": "Velocità base 9 metri",
+      "implementazione": "system.attributes.movement.walk = 30",
+      "mode": 5
+    },
+    "frutto_della_fandonia": {
+      "tipo": "attivo",
+      "descrizione": "Immunità veleno, malattie, no bisogno mangiare/bere/respirare",
+      "implementazione": {
+        "immunita_veleno_danni": "system.traits.di.value.push('poison')",
+        "immunita_veleno_condizione": "system.traits.ci.value.push('poisoned')",
+        "immunita_malattie": "system.traits.ci.value.push('diseased')",
+        "no_bisogni": "flags.brancalonia-bigat.noNeedFoodWaterAir = true"
+      },
+      "mode": 2
+    },
+    "suscettibilita_antimagia": {
+      "tipo": "narrativo",
+      "descrizione": "Incapacitato in campo anti-magia, TS Costituzione vs dissolvi magie o privo di sensi 1 minuto"
+    },
+    "vestizione": {
+      "tipo": "attivo",
+      "descrizione": "Deve indossare abiti/armatura, ignora qualità scadente. Livello 3: oggetti magici. Livello 5: +1 TS",
+      "implementazione": {
+        "ignora_scadente": "flags.brancalonia-bigat.ignoraShoddy = true",
+        "bonus_ts_5": "system.attributes.saves.all = 1"
+      },
+      "mode": 2,
+      "progressione": true
+    },
+    "privilegio_rissa_svanizione": {
+      "tipo": "narrativo",
+      "descrizione": "Reazione: ignora un colpo, 1/rissa"
+    }
+  },
+  "soprannomi": ["Bellimbusti", "Ferraglia", "Teste vuote", "Scatolette", "Scoregge vestite", "Spaventapasseri", "Uomini di latta"],
+  "note_background": "Non hanno passato ma lo inventano con convinzione totale",
+  "validazione": {
+    "implementato": false,
+    "file_id": "inesistente_macaronicon",
+    "compendio": "razze_macaronicon"
+  }
+}

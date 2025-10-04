@@ -1,0 +1,74 @@
+{
+  "id": "class-chierico-livello_20-distruggere-non-morti-finale",
+  "nome": "Distruggere Non-Morti (CR 3)",
+  "nome_brancalonia": "Flagello dei Non-Morti",
+  "livello": 20,
+  "tipo": "passivo",
+  "descrizione": "Al 20° livello, la soglia di CR per Distruggere Non-Morti aumenta a 3.",
+  "meccaniche": {
+    "cr_massimo_distrutto": "CR 3",
+    "automatico": "Su fallimento save Turn Undead",
+    "area_effetto": "30 ft raggio"
+  },
+  "implementazione_foundry": {
+    "tipo": "destroy_undead_threshold",
+    "valore": 3
+  },
+  "non_morti_cr_3_devastanti": [
+    "Mummy",
+    "Wight",
+    "Vampire Spawn",
+    "Ghost (alcuni)",
+    "Deathlock"
+  ],
+  "impatto_finale": {
+    "wight_elimination": "120 HP distrutti istantanei",
+    "mummy_lord_minions": "Elimina servitori",
+    "vampire_spawn": "Pulizia covate vampiri"
+  },
+  "matematica_distruzione": {
+    "hp_totali_eliminabili": {
+      "10_wight": "450 HP totali",
+      "20_mummies": "1160 HP totali",
+      "equivalenza": "= Multiple Disintegrate"
+    }
+  },
+  "combo_epiche_20": {
+    "divine_intervention": "Miracolo + destroy masse",
+    "holy_aura": "Party protetto mentre distruggi",
+    "antilife_shell": "Immunità mentre elimini"
+  },
+  "campagne_non_morti_20": {
+    "lich_dungeon": "Elimina guardie elite",
+    "vampire_castle": "Distrugge spawn vampirici",
+    "death_knight": "Pulisce servitori"
+  },
+  "narrazione_brancalonia": {
+    "titoli_guadagnati": [
+      "Terrore dei Non-Morti",
+      "Santo Purificatore",
+      "Flagello dell'Oscurità",
+      "Luce che Annienta"
+    ]
+  },
+  "note_dm": "CR 3 include non-morti molto pericolosi. Il chierico 20 diventa il nemico supremo di qualsiasi non-morto.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+  "name": "Distruggere Non Morti Finale",
+  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
+  "_id": "BRdW0lzb14GT03JD",
+  "_key": "!item!class-chierico-livello_20-distruggere-non-morti-finale",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

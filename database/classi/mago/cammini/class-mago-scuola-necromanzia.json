@@ -1,0 +1,50 @@
+{
+  "id": "class-mago-scuola-necromanzia",
+  "nome": "Scuola di Necromanzia",
+  "fonte": "Manuale del Giocatore p.86",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Savant della Necromanzia",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Necromancy Savant"
+        }
+      },
+      {
+        "nome": "Mietitura Cupa",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Grim Harvest"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Servi Non Morti",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Undead Thralls"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Immunità alla Morte",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Inured to Undeath"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Comanda Non Morti",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Command Undead"
+        }
+      }
+    ]
+  }
+}

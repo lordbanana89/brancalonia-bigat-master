@@ -1,0 +1,404 @@
+<form class="brancalonia-ui-config-form">
+    <div class="config-header">
+        <h2>⚜ Configurazione Interfaccia Rinascimentale ⚜</h2>
+        <p class="config-description">
+            Personalizza l'aspetto dell'interfaccia Brancalonia con autentici elementi del Rinascimento italiano
+        </p>
+    </div>
+
+    <div class="config-tabs">
+        <nav class="tabs">
+            <a class="item active" data-tab="general">Generale</a>
+            <a class="item" data-tab="colors">Colori</a>
+            <a class="item" data-tab="performance">Prestazioni</a>
+            <a class="item" data-tab="advanced">Avanzate</a>
+        </nav>
+
+        <section class="tab-content">
+            <!-- General Settings Tab -->
+            <div class="tab active" data-tab="general">
+                <h3>Impostazioni Generali</h3>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="themeEnabled" {{#if themeEnabled}}checked{{/if}}>
+                        <strong>Tema Rinascimentale</strong>
+                        <p class="notes">Attiva il tema completo dell'interfaccia italiana</p>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="darkMode" {{#if darkMode}}checked{{/if}}>
+                        <strong>Modalità Scura</strong>
+                        <p class="notes">Versione scura del tema per sessioni notturne</p>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="chatStyling" {{#if chatStyling}}checked{{/if}}>
+                        <strong>Stilizzazione Chat</strong>
+                        <p class="notes">Applica lo stile taverna ai messaggi in chat</p>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="diceMessages" {{#if diceMessages}}checked{{/if}}>
+                        <strong>Esclamazioni Italiane</strong>
+                        <p class="notes">Mostra messaggi in italiano per tiri critici</p>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="portraitFrames" {{#if portraitFrames}}checked{{/if}}>
+                        <strong>Cornici Ritratti</strong>
+                        <p class="notes">Cornici dorate per i ritratti dei personaggi</p>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="italianTerms" {{#if italianTerms}}checked{{/if}}>
+                        <strong>Terminologia Italiana</strong>
+                        <p class="notes">Traduci automaticamente i termini di gioco</p>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="decorativeElements" {{#if decorativeElements}}checked{{/if}}>
+                        <strong>Elementi Decorativi</strong>
+                        <p class="notes">Aggiungi ornamenti e decorazioni rinascimentali</p>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Colors Tab -->
+            <div class="tab" data-tab="colors">
+                <h3>Personalizzazione Colori</h3>
+
+                <div class="color-palette">
+                    <div class="form-group">
+                        <label>Ocra</label>
+                        <input type="color" name="colorOchre" value="{{colorPalette.ochre}}">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Siena</label>
+                        <input type="color" name="colorSienna" value="{{colorPalette.sienna}}">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Terra d'Ombra</label>
+                        <input type="color" name="colorUmber" value="{{colorPalette.umber}}">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Vino</label>
+                        <input type="color" name="colorWine" value="{{colorPalette.wine}}">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Oro</label>
+                        <input type="color" name="colorGold" value="{{colorPalette.gold}}">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bronzo</label>
+                        <input type="color" name="colorBronze" value="{{colorPalette.bronze}}">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="customColors">
+                        <strong>Usa Colori Personalizzati</strong>
+                        <p class="notes">Applica la palette colori personalizzata</p>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Performance Tab -->
+            <div class="tab" data-tab="performance">
+                <h3>Impostazioni Prestazioni</h3>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="customCursors" {{#if customCursors}}checked{{/if}}>
+                        <strong>Cursori Personalizzati</strong>
+                        <p class="notes">Usa cursori in stile rinascimentale (può influire sulle prestazioni)</p>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Velocità Animazioni</label>
+                    <select name="animationSpeed">
+                        <option value="none" {{#if (eq animationSpeed "none")}}selected{{/if}}>Nessuna Animazione</option>
+                        <option value="fast" {{#if (eq animationSpeed "fast")}}selected{{/if}}>Veloce</option>
+                        <option value="normal" {{#if (eq animationSpeed "normal")}}selected{{/if}}>Normale</option>
+                        <option value="slow" {{#if (eq animationSpeed "slow")}}selected{{/if}}>Lenta</option>
+                    </select>
+                    <p class="notes">Controlla la velocità delle transizioni e animazioni</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Qualità Texture</label>
+                    <select name="textureQuality">
+                        <option value="low" {{#if (eq textureQuality "low")}}selected{{/if}}>Bassa (Migliori Prestazioni)</option>
+                        <option value="medium" {{#if (eq textureQuality "medium")}}selected{{/if}}>Media (Bilanciata)</option>
+                        <option value="high" {{#if (eq textureQuality "high")}}selected{{/if}}>Alta (Massima Qualità)</option>
+                    </select>
+                    <p class="notes">Seleziona la qualità delle texture di sfondo</p>
+                </div>
+            </div>
+
+            <!-- Advanced Tab -->
+            <div class="tab" data-tab="advanced">
+                <h3>Impostazioni Avanzate</h3>
+
+                <div class="config-actions">
+                    <button type="button" class="export-settings">
+                        <i class="fas fa-download"></i> Esporta Configurazione
+                    </button>
+                    <button type="button" class="import-settings">
+                        <i class="fas fa-upload"></i> Importa Configurazione
+                    </button>
+                    <button type="button" class="reset-defaults">
+                        <i class="fas fa-undo"></i> Ripristina Predefiniti
+                    </button>
+                </div>
+
+                <div class="config-info">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li>Versione Modulo: {{moduleVersion}}</li>
+                        <li>Tema: Rinascimento Italiano</li>
+                        <li>Compatibilità: Foundry VTT v13+</li>
+                        <li>Sistema: D&D 5e</li>
+                    </ul>
+                </div>
+
+                <div class="config-credits">
+                    <h4>Crediti</h4>
+                    <p>Design ispirato all'arte e architettura del Rinascimento italiano.</p>
+                    <p>Creato per il modulo Brancalonia - Il Regno di Taglia.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="config-footer">
+        <button type="submit" class="save-config">
+            <i class="fas fa-save"></i> Salva Configurazione
+        </button>
+    </div>
+</form>
+
+<style>
+    .brancalonia-ui-config-form {
+        padding: 20px;
+        font-family: 'EB Garamond', serif;
+    }
+
+    .config-header {
+        text-align: center;
+        border-bottom: 3px solid #CD7F32;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+
+    .config-header h2 {
+        color: #722F37;
+        font-family: 'Cinzel Decorative', serif;
+        margin: 0;
+    }
+
+    .config-description {
+        color: #8B4513;
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    .config-tabs nav.tabs {
+        background: linear-gradient(90deg, #8B4513, #722F37);
+        border-radius: 8px 8px 0 0;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        border-bottom: 3px solid #FFD700;
+    }
+
+    .config-tabs nav.tabs .item {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        color: #FFF8DC;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-right: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .config-tabs nav.tabs .item:last-child {
+        border-right: none;
+    }
+
+    .config-tabs nav.tabs .item.active {
+        background: #FFD700;
+        color: #8B4513;
+        font-weight: bold;
+    }
+
+    .tab-content {
+        background: linear-gradient(135deg, #F4E4BC, #FFF8DC);
+        border: 2px solid #CD7F32;
+        border-top: none;
+        border-radius: 0 0 8px 8px;
+        padding: 20px;
+        min-height: 300px;
+    }
+
+    .tab {
+        display: none;
+    }
+
+    .tab.active {
+        display: block;
+    }
+
+    .tab h3 {
+        color: #722F37;
+        border-bottom: 2px solid #CD7F32;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        background: rgba(255, 248, 220, 0.5);
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid rgba(205, 127, 50, 0.3);
+    }
+
+    .form-group label {
+        display: block;
+        color: #8B4513;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .form-group .notes {
+        font-size: 0.9em;
+        color: #722F37;
+        font-style: italic;
+        margin: 5px 0 0 0;
+    }
+
+    .form-group input[type="checkbox"] {
+        margin-right: 8px;
+    }
+
+    .form-group select {
+        width: 100%;
+        padding: 5px;
+        background: #FFF8DC;
+        border: 1px solid #CD7F32;
+        border-radius: 4px;
+        color: #8B4513;
+        font-family: inherit;
+    }
+
+    .color-palette {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .color-palette .form-group {
+        text-align: center;
+    }
+
+    .color-palette input[type="color"] {
+        width: 60px;
+        height: 40px;
+        border: 2px solid #CD7F32;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .config-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .config-actions button {
+        background: linear-gradient(135deg, #CD7F32, #8B4513);
+        border: 2px solid #FFD700;
+        color: #FFF8DC;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .config-actions button:hover {
+        background: linear-gradient(135deg, #FFD700, #CD7F32);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(139, 69, 19, 0.4);
+    }
+
+    .config-info, .config-credits {
+        background: rgba(139, 69, 19, 0.1);
+        padding: 15px;
+        border-radius: 8px;
+        margin: 15px 0;
+    }
+
+    .config-info h4, .config-credits h4 {
+        color: #722F37;
+        margin: 0 0 10px 0;
+    }
+
+    .config-info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: #8B4513;
+    }
+
+    .config-info li {
+        padding: 3px 0;
+    }
+
+    .config-footer {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 2px solid #CD7F32;
+    }
+
+    .save-config {
+        background: linear-gradient(135deg, #FFD700, #CD7F32);
+        border: 3px solid #8B4513;
+        color: #8B4513;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'IM Fell DW Pica', serif;
+    }
+
+    .save-config:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(139, 69, 19, 0.4);
+    }
+</style>

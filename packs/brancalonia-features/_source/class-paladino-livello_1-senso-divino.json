@@ -1,0 +1,60 @@
+{
+  "id": "class-paladino-livello_1-senso-divino",
+  "nome": "Senso Divino",
+  "nome_brancalonia": "Percezione del Male",
+  "livello": 1,
+  "tipo": "attivo",
+  "descrizione": "La presenza del male forte registra sui tuoi sensi come un odore nocivo, e il bene potente suona come musica celestiale alle tue orecchie. Come azione, puoi aprire la tua consapevolezza per rilevare tali forze.",
+  "meccaniche": {
+    "azione": "Action",
+    "durata": "Fino fine prossimo turno",
+    "range": "60 ft",
+    "rileva": [
+      "Celestiali",
+      "Demoni",
+      "Non-morti",
+      "Consacrato/Dissacrato"
+    ],
+    "usi": "1 + CHA mod per riposo lungo"
+  },
+  "implementazione_foundry": {
+    "tipo": "detection",
+    "uses": "1 + @abilities.cha.mod",
+    "recovery": "long-rest"
+  },
+  "informazioni_ottenute": {
+    "presenza": "Tipo di creatura",
+    "numero": "Quanti di ogni tipo",
+    "direzione": "Più potente entro range",
+    "non_identità": "Non chi specificamente"
+  },
+  "limitazioni": {
+    "barriere": "Bloccato da 1ft pietra, 1 inch metallo, lamina piombo",
+    "no_allineamento": "Non rileva bene/male generico"
+  },
+  "utilizzi_tattici": {
+    "dungeon": "Trova non-morti nascosti",
+    "sociale": "Identifica infiltrati demoniaci",
+    "esplorazione": "Evita imboscate"
+  },
+  "note_dm": "Divine Sense è molto specifico. Non è detect evil generico ma rileva solo tipi creature specifici.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84",
+  "name": "Senso Divino",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-yellow.webp",
+  "_id": "THOh5d5BFLURBIAi",
+  "_key": "!item!class-paladino-livello_1-senso-divino",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

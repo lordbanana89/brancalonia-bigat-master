@@ -1,0 +1,23 @@
+{
+  "id": "arma-std-203",
+  "nome": "Balestra Pesante",
+  "categoria": "arma_standard",
+  "tipo": "marziale_distanza",
+  "costo": "50 mo",
+  "danni": "1d10 perforanti",
+  "proprieta": [
+    "Munizioni (30/120 m)",
+    "Pesante",
+    "Ricarica",
+    "Due Mani"
+  ],
+  "peso": "8.2 kg",
+  "descrizione": "Balestra di grandi dimensioni con arco in acciaio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

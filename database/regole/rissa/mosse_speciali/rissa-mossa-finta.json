@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-finta",
+  "nome": "Finta",
+  "requisiti": "Destrezza 15+, Intelligenza 13+",
+  "costo": "1 slot",
+  "effetto": "Il prossimo attacco contro di te ha svantaggio, se manca contrattacchi con vantaggio",
+  "timing": "Reazione quando vieni attaccato",
+  "fonte": "Brancalonia Manuale Base"
+}

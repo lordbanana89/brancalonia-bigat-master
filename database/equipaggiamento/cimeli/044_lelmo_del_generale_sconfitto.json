@@ -1,0 +1,52 @@
+{
+  "id": "044",
+  "nome": "L'Elmo del Generale Sconfitto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Elmo piumato sfarzoso ma ammaccato",
+  "proprieta": "+2 Carisma per comandare truppe, -2 a strategie militari",
+  "valore": "500 mo",
+  "storia": "Perse 13 battaglie consecutive",
+  "ironia": "Bellissimo ma inutile in battaglia",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.abilities.cha.value",
+        "mode": 2,
+        "value": "2",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [
+      {
+        "key": "system.abilities.int.value",
+        "mode": 2,
+        "value": "-2",
+        "priority": 20
+      }
+    ],
+    "tracking_flags": {
+      "conditionalBonus": "leadership_only",
+      "conditionalMalus": "strategy_only",
+      "description": "+2 CAR comando, -2 INT strategia"
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "showEffects": true,
+      "effectsText": "📈 +2 Carisma (comando truppe)\n📉 -2 Intelligenza (strategia)"
+    },
+    "narrative_reminders": [
+      "+2 Carisma quando si comandano truppe o si da discorsi",
+      "-2 Intelligenza quando si pianificano strategie militari",
+      "Il generale era carismatico ma pessimo stratega",
+      "Perse 13 battaglie consecutive ma i soldati lo amavano",
+      "Ottimo per ispirare, terribile per pianificare",
+      "Rappresenta leadership senza competenza"
+    ]
+  },
+  "img": "icons/equipment/head/helm-bascinet-steel.webp"
+}

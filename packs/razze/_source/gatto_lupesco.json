@@ -1,0 +1,146 @@
+{
+  "_id": "FqZmaSbH4rsGrjPQ",
+  "_key": "!item!gattolupescoc729ef",
+  "name": "Gatto Lupesco",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p>Felini antropomorfi della grandezza di lonze e gattopardi con postura eretta</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.7",
+    "movement": {
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 60,
+      "units": "ft"
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "",
+      "custom": ""
+    },
+    "advancement": [
+      {
+        "_id": "3wloifrkgihqkxdw",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "q8DCnrHSAX6e4u5b",
+        "type": "size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Size",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "baQ8rg5BqQmNzidK",
+        "type": "trait",
+        "configuration": {
+          "grants": [
+            "darkvision"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Darkvision",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "s9vo3o32jltyvlvx",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.z43pcdx9c9x6fs00"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Scurovisione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "ow4jzcworreh0m9v",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.hk78tuhegw6cgz7b"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Sensi Acuti",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "ym0eaf6lr7jhicur",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.b64aj7np8ozsih2a"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Artigli Naturali",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "vcsoe82z2pjzrpwu",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.xd2i8x6iusd7t2v8"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Agilità Felina",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.7",
+      "validazione": {
+        "implementato": false,
+        "file_id": "gatto_lupesco_macaronicon",
+        "compendio": "razze_macaronicon"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "003",
+  "nome": "Il Boccale del Gigante Ubriacone",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Enorme boccale di peltro ammaccato",
+  "proprieta": "Non si svuota mai completamente di birra",
+  "maledizione": "Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora",
+  "valore": "150 mo",
+  "storia": "Appartenuto al gigante Bevo che morì affogato nella birra",
+  "maledizione_specifica": "Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "counter_with_save",
+      "currentSips": 0,
+      "maxSipsBeforeSave": 3,
+      "resetPeriod": "day",
+      "lastReset": 0,
+      "saveType": "con",
+      "saveDC": 15,
+      "onFailure": "apply_ubriaco_condition",
+      "failureDuration": 3600
+    },
+    "hooks": [],
+    "macros": ["drinkBoccale"],
+    "ui_config": {
+      "showCounter": true,
+      "counterLabel": "Sorsi oggi",
+      "warningText": "⚠️ Prossimo sorso richiede TS CON CD 15!"
+    }
+  },
+  "img": "icons/consumables/drinks/beer-stein-brown.webp"
+}

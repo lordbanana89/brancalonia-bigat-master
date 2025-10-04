@@ -1,0 +1,16 @@
+{
+  "id": "gear-veh-003",
+  "nome": "Carrozza",
+  "categoria": "oggetto_comune",
+  "sottotipo": "veicoli",
+  "costo": "100 mo",
+  "peso": "200 kg",
+  "descrizione": "Veicolo chiuso per passeggeri, richiede due cavalli e un cocchiere.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

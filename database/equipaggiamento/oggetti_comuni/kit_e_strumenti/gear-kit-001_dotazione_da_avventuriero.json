@@ -1,0 +1,16 @@
+{
+  "id": "gear-kit-001",
+  "nome": "Dotazione da Avventuriero",
+  "categoria": "oggetto_comune",
+  "sottotipo": "kit_e_strumenti",
+  "costo": "10 mo",
+  "peso": "25 kg",
+  "descrizione": "Include zaino, sacco, pietra focaia e acciarino, 10 torce, razioni per 10 giorni, borraccia e corda di canapa da 15 m.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

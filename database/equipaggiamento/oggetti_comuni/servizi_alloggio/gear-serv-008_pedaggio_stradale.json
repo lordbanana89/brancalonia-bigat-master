@@ -1,0 +1,16 @@
+{
+  "id": "gear-serv-008",
+  "nome": "Pedaggio Stradale",
+  "categoria": "oggetto_comune",
+  "sottotipo": "servizi_alloggio",
+  "costo": "1 ma",
+  "peso": "—",
+  "descrizione": "Tariffa tipica per attraversare un ponte o una porta cittadina.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

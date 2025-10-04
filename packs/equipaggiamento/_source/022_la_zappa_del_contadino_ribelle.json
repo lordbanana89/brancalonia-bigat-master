@@ -1,0 +1,79 @@
+{
+  "_id": "xqiRAvw6Gzf8PuD8",
+  "_key": "!item!lazappadelcontadinoribellef51c1e",
+  "name": "La Zappa del Contadino Ribelle",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Zappa rugginosa ma ancora tagliente</p><h3>Proprietà</h3><p>Conta come arma +1 contro nobili e soldati</p><h3>Storia</h3><p><em>Usata per decapitare il Barone oppressore</em></p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "022",
+      "categoria": "cimelo",
+      "storia": "Usata per decapitare il Barone oppressore",
+      "proprieta_originale": "Conta come arma +1 contro nobili e soldati",
+      "implementazione": {
+        "tipo": "magico_minore",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

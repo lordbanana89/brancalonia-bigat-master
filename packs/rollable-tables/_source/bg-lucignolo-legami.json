@@ -1,0 +1,106 @@
+{
+  "_id": "Q9zsJPlVja31uQ2z",
+  "_key": "!tables!Q9zsJPlVja31uQ2z",
+  "name": "Lucignolo - Legami",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "joPXJRoNxsIEQwKh",
+      "type": 0,
+      "text": "La befana che mi allevava è ancora là fuori e temo il suo ritorno.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!joPXJRoNxsIEQwKh"
+    },
+    {
+      "_id": "lukfznHG9tEfdzSI",
+      "type": 0,
+      "text": "Proteggo la comunità di buffardelli che considero la mia famiglia.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!lukfznHG9tEfdzSI"
+    },
+    {
+      "_id": "izLAn2KWnxuaC7ad",
+      "type": 0,
+      "text": "So di avere un gemello da qualche parte e lo voglio ritrovare.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!izLAn2KWnxuaC7ad"
+    },
+    {
+      "_id": "7ZeH8wnePveEba89",
+      "type": 0,
+      "text": "Sono innamorato della Bambina Turchina e voglio diventare un eroe per lei.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!7ZeH8wnePveEba89"
+    },
+    {
+      "_id": "5snGrkeTVd6idBz1",
+      "type": 0,
+      "text": "Voglio sensibilizzare gli umani verso il mondo fatato.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!5snGrkeTVd6idBz1"
+    },
+    {
+      "_id": "OuEOqfVj4YEywvwg",
+      "type": 0,
+      "text": "Sogno di aprire un'attività nel paese dei balocchi.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!OuEOqfVj4YEywvwg"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "lucignolo",
+      "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

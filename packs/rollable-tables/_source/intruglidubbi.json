@@ -1,0 +1,169 @@
+{
+  "_id": "HSIxzV8NkuOIooPh",
+  "name": "Effetti degli Intrugli Dubbi",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Effetti degli Intrugli Dubbi",
+  "results": [
+    {
+      "_id": "intrugli-dubbi_0",
+      "type": 0,
+      "text": "Veleno! Subisci 3d6 danni da veleno.",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_0"
+    },
+    {
+      "_id": "intrugli-dubbi_1",
+      "type": 0,
+      "text": "Allucinazioni vivide per 1d4 ore.",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_1"
+    },
+    {
+      "_id": "intrugli-dubbi_2",
+      "type": 0,
+      "text": "Vomiti arcobaleno per 10 minuti.",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_2"
+    },
+    {
+      "_id": "intrugli-dubbi_3",
+      "type": 0,
+      "text": "La pelle diventa verde per 24 ore.",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_3"
+    },
+    {
+      "_id": "intrugli-dubbi_4",
+      "type": 0,
+      "text": "Parli solo in rima per 1 ora.",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_4"
+    },
+    {
+      "_id": "intrugli-dubbi_5",
+      "type": 0,
+      "text": "Puzzi di aglio per 3 giorni.",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_5"
+    },
+    {
+      "_id": "intrugli-dubbi_6",
+      "type": 0,
+      "text": "Cura 1d4 punti ferita!",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_6"
+    },
+    {
+      "_id": "intrugli-dubbi_7",
+      "type": 0,
+      "text": "Resistenza a un tipo di danno casuale per 1 ora.",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_7"
+    },
+    {
+      "_id": "intrugli-dubbi_8",
+      "type": 0,
+      "text": "Velocità +10 piedi per 10 minuti.",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_8"
+    },
+    {
+      "_id": "intrugli-dubbi_9",
+      "type": 0,
+      "text": "Vantaggio alle prove di Costituzione per 1 ora.",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_9"
+    },
+    {
+      "_id": "intrugli-dubbi_10",
+      "type": 0,
+      "text": "Invisibilità per 1 round!",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_10"
+    },
+    {
+      "_id": "intrugli-dubbi_11",
+      "type": 0,
+      "text": "Effetto magico benefico casuale (a scelta del GM).",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!intrugli-dubbi_11"
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 1000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!intruglidubbi",
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

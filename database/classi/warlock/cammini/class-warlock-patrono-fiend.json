@@ -1,0 +1,42 @@
+{
+  "id": "class-warlock-patrono-fiend",
+  "nome": "Patrono Immondo",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Benedizione dell'Immondo",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Dark One's Blessing"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Fortuna dell'Immondo",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Dark One's Own Luck"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Resilienza Demoniaca",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Fiendish Resilience"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Scagliare nell'Inferno",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Hurl Through Hell"
+        }
+      }
+    ]
+  }
+}

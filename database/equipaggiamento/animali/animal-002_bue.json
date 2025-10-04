@@ -1,0 +1,17 @@
+{
+  "id": "animal-002",
+  "nome": "Bue",
+  "categoria": "animale_equipaggiamento",
+  "tipo": "bestia_da_soma",
+  "costo": "15 mo",
+  "velocita": "12 m",
+  "capacita_carico": "240 kg",
+  "descrizione": "Animale robusto per trainare aratri e carri pesanti.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Cavalcature e Animali"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

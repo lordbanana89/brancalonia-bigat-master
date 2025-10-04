@@ -1,0 +1,31 @@
+{
+  "id": "gioco-minchiate",
+  "titolo": "Minchiate",
+  "descrizione": "Gioco da bettola di carte, dadi e bluff in cui imbrogliare fa parte del regolamento, finche non si viene scoperti.",
+  "componenti": [
+    "Puntata iniziale uguale per tutti",
+    "Mazzo di carte o dadi (a discrezione del Condottiero)",
+    "Coperto comune dove confluiscono le puntate"
+  ],
+  "impostazioni": {
+    "durata": "Circa 1 ora in game per ogni risoluzione",
+    "cd_base": "10 + numero di giocatori al tavolo (incluso chi effettua la prova)",
+    "conseguenze_baro": "Fallire una prova di Rapidita di mano incrementa il piatto o comporta il ritiro dal gioco"
+  },
+  "abilita_tipiche": [
+    "Indagare (INT) per stimare le probabilita",
+    "Intuizione (SAG) per smascherare i bluff",
+    "Inganno (CAR) per bluffare",
+    "Rapidita di mano (DES) per barare"
+  ],
+  "svolgimento": [
+    "Ogni partecipante sceglie due abilita con cui effettuare altrettante prove.",
+    "Per ogni prova superata si aumenta il dado vincita personale (0 successi = 1d6, 1 successo = 1d8, 2 successi = 1d10).",
+    "Tutti tirano il proprio dado vincita: il valore piu alto vince il coperto.",
+    "In caso di pareggio i vincitori si spartiscono la posta o, piu spesso, scatenano una rissa."
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "57"
+  }
+}

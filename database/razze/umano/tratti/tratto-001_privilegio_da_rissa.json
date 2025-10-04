@@ -1,0 +1,11 @@
+{
+  "id": "race-umano-tratto-privilegio_da_rissa",
+  "nome": "Privilegio Da Rissa",
+  "categoria": "brancalonia",
+  "dettagli": {
+    "descrizione": "Puoi usare Carisma invece di Forza per Mosse da Rissa",
+    "meccanica": "Sostituisci modificatore Forza con Carisma per danni Batoste",
+    "implementazione": "flags.brancalonia-bigat.privilegioRissaUmano = true"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

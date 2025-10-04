@@ -1,0 +1,29 @@
+{
+  "_id": "jtarQdHmhXiT6yf7",
+  "name": "🎭 Gestione Infamia",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "scope": "global",
+  "command": "// Macro per gestione Infamia\nconst tokens = canvas.tokens.controlled;\nif (tokens.length === 0) {\n  ui.notifications.warn('Seleziona almeno un token!');\n  return;\n}\n\nconst actor = tokens[0].actor;\nconst currentInfamia = actor.getFlag('brancalonia-bigat', 'infamia') || 0;\n\nnew Dialog({\n  title: `Gestione Infamia - ${actor.name}`,\n  content: `\n    <div style=\"text-align: center; padding: 10px;\">\n      <h3>Infamia Attuale: <span style=\"color: #8b0000; font-size: 1.5em;\">${currentInfamia}</span></h3>\n      <div style=\"margin: 15px 0;\">\n        <label for=\"infamia-change\">Modifica Infamia:</label>\n        <input type=\"number\" id=\"infamia-change\" value=\"0\" style=\"width: 80px; margin: 0 10px;\"/>\n      </div>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"infamia-reason\">Motivo:</label>\n        <input type=\"text\" id=\"infamia-reason\" placeholder=\"es. Furto, Rissa, etc.\" style=\"width: 200px;\"/>\n      </div>\n    </div>\n  `,\n  buttons: {\n    add: {\n      icon: '<i class=\"fas fa-plus\"></i>',\n      label: 'Aggiungi',\n      callback: async (html) => {\n        const change = parseInt(html.find('#infamia-change').val());\n        const reason = html.find('#infamia-reason').val();\n        const newInfamia = Math.max(0, currentInfamia + Math.abs(change));\n        \n        await actor.setFlag('brancalonia-bigat', 'infamia', newInfamia);\n        \n        ChatMessage.create({\n          content: `<div class=\"brancalonia-infamia\">\n            <h3>${actor.name} guadagna ${Math.abs(change)} Infamia!</h3>\n            <p><strong>Motivo:</strong> ${reason || 'Non specificato'}</p>\n            <p><strong>Infamia Totale:</strong> ${newInfamia}</p>\n          </div>`,\n          speaker: ChatMessage.getSpeaker({actor: actor})\n        });\n      }\n    },\n    subtract: {\n      icon: '<i class=\"fas fa-minus\"></i>',\n      label: 'Rimuovi',\n      callback: async (html) => {\n        const change = parseInt(html.find('#infamia-change').val());\n        const reason = html.find('#infamia-reason').val();\n        const newInfamia = Math.max(0, currentInfamia - Math.abs(change));\n        \n        await actor.setFlag('brancalonia-bigat', 'infamia', newInfamia);\n        \n        ChatMessage.create({\n          content: `<div class=\"brancalonia-infamia\">\n            <h3>${actor.name} perde ${Math.abs(change)} Infamia</h3>\n            <p><strong>Motivo:</strong> ${reason || 'Non specificato'}</p>\n            <p><strong>Infamia Totale:</strong> ${newInfamia}</p>\n          </div>`,\n          speaker: ChatMessage.getSpeaker({actor: actor})\n        });\n      }\n    },\n    check: {\n      icon: '<i class=\"fas fa-eye\"></i>',\n      label: 'Controlla Livello',\n      callback: () => {\n        let level = 'Sconosciuto';\n        let effects = [];\n        \n        if (currentInfamia >= 100) {\n          level = 'Nemico Pubblico';\n          effects = ['Taglia enorme', 'Kill on sight', 'Bandito ovunque'];\n        } else if (currentInfamia >= 75) {\n          level = 'Fuorilegge';\n          effects = ['Taglia maggiore', 'Cacciatori di taglie', 'Bandito dalle città'];\n        } else if (currentInfamia >= 50) {\n          level = 'Ricercato';\n          effects = ['Taglia minore', 'Controlli frequenti', '-2 Persuasione con autorità'];\n        } else if (currentInfamia >= 25) {\n          level = 'Mal Visto';\n          effects = ['Guardie sospettose', '-1 Persuasione con autorità'];\n        } else if (currentInfamia >= 10) {\n          level = 'Poco Noto';\n          effects = ['Piccoli sconti dai criminali'];\n        }\n        \n        ChatMessage.create({\n          content: `<div class=\"brancalonia-infamia-level\">\n            <h3>📊 Livello Infamia di ${actor.name}</h3>\n            <p><strong>Infamia:</strong> ${currentInfamia}</p>\n            <p><strong>Livello:</strong> <span style=\"color: #8b0000;\">${level}</span></p>\n            <p><strong>Effetti:</strong></p>\n            <ul>${effects.map(e => `<li>${e}</li>`).join('')}</ul>\n          </div>`,\n          speaker: ChatMessage.getSpeaker({actor: actor})\n        });\n      }\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'check'\n}).render(true);",
+  "folder": null,
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "infamia"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000000000,
+    "modifiedTime": 1700000000000,
+    "lastModifiedBy": "brancalonia"
+  },
+  "_key": "!macros!brancalonia001",
+  "system": {}
+}

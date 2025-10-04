@@ -1,0 +1,48 @@
+{
+  "_id": "EEsOdEbYtbGzjC3l",
+  "_key": "!item!index",
+  "name": "Background di Brancalonia",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p>22 background - Ambulante, Duro, Furfante, Prelato, Saggio, Villano e varianti.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "identifier": "index",
+    "advancement": [
+      {
+        "_id": "LmWhf6AEQVvaD6Bn",
+        "type": "Trait",
+        "configuration": {
+          "choices": [
+            {
+              "count": 2
+            }
+          ],
+          "grants": [],
+          "mode": "choose",
+          "allowReplacements": false
+        },
+        "value": {}
+      }
+    ],
+    "traits": {},
+    "startingEquipment": [],
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "",
+      "tipo": "background"
+    }
+  }
+}

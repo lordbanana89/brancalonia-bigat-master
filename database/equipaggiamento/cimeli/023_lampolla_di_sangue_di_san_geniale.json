@@ -1,0 +1,41 @@
+{
+  "id": "023",
+  "nome": "L'Ampolla di Sangue di San Geniale",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Fiala di cristallo con sangue che si liquefa",
+  "proprieta": "Si liquefa in presenza di pericolo mortale entro 30m",
+  "valore": "5000 mo",
+  "storia": "San Geniale fu martirizzato 7 volte",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "danger_detector",
+      "detectionRange": 30,
+      "detectionType": "pericolo_mortale",
+      "visualCue": "Sangue si liquefa"
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "dmOnly": true,
+      "dmReminder": true,
+      "reminderText": "Si liquefa se pericolo mortale entro 30m"
+    },
+    "narrative_reminders": [
+      "Il sangue solidificato si liquefa in presenza di pericolo mortale",
+      "Raggio di rilevamento: 30 metri",
+      "Pericolo mortale = minaccia che può uccidere il gruppo",
+      "NON rileva pericoli minori o trappole non letali",
+      "Il cambiamento è visibile ma non istantaneo (10-30 secondi)",
+      "San Geniale fu martirizzato 7 volte e resuscitò ogni volta",
+      "Reliquia miracolosa venerata",
+      "Strumento DM per creare suspense e avvisare i giocatori"
+    ]
+  },
+  "img": "icons/consumables/potions/bottle-round-corked-red.webp"
+}

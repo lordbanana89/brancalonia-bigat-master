@@ -1,0 +1,16 @@
+{
+  "id": "miracolaro_chierico-livello_2-incanalare_divinita_recitare",
+  "livello": 2,
+  "nome": "Incanalare Divinità: Recitare il Calendario",
+  "tipo": "attivo",
+  "fonte": "Manuale Base p.20",
+  "descrizione": "Snoccioli i nomi dei santi in rapida successione, infondendo sicurezza a chi combatte al tuo fianco.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione",
+      "risorsa": "Incanalare Divinità"
+    },
+    "bersagli": "Un numero di creature amiche pari al tuo modificatore di Saggezza",
+    "effetto": "Ogni creatura beneficia di vantaggio a un tiro a sua scelta effettuato entro la fine del suo prossimo turno"
+  }
+}

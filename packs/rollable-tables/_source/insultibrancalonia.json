@@ -1,0 +1,265 @@
+{
+  "_id": "zvTIzo9xAYYzjiIT",
+  "name": "Insulti Tipici di Brancalonia",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Insulti Tipici di Brancalonia",
+  "results": [
+    {
+      "_id": "insulti-brancalonia_0",
+      "type": 0,
+      "text": "Figlio di un orco sdentato!",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_0"
+    },
+    {
+      "_id": "insulti-brancalonia_1",
+      "type": 0,
+      "text": "Faccia da culo di mulo!",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_1"
+    },
+    {
+      "_id": "insulti-brancalonia_2",
+      "type": 0,
+      "text": "Puzzi come un troll morto da un mese!",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_2"
+    },
+    {
+      "_id": "insulti-brancalonia_3",
+      "type": 0,
+      "text": "Cervello di gallina spennacchiata!",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_3"
+    },
+    {
+      "_id": "insulti-brancalonia_4",
+      "type": 0,
+      "text": "Bastardo d'un goblin rognoso!",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_4"
+    },
+    {
+      "_id": "insulti-brancalonia_5",
+      "type": 0,
+      "text": "Coglione come un paladino!",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_5"
+    },
+    {
+      "_id": "insulti-brancalonia_6",
+      "type": 0,
+      "text": "Inutile come tette su un cinghiale!",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_6"
+    },
+    {
+      "_id": "insulti-brancalonia_7",
+      "type": 0,
+      "text": "Merda di drago rinsecchita!",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_7"
+    },
+    {
+      "_id": "insulti-brancalonia_8",
+      "type": 0,
+      "text": "Culo di basilisco!",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_8"
+    },
+    {
+      "_id": "insulti-brancalonia_9",
+      "type": 0,
+      "text": "Stupido come un golem di merda!",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_9"
+    },
+    {
+      "_id": "insulti-brancalonia_10",
+      "type": 0,
+      "text": "Pidocchio sulla barba di un nano!",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_10"
+    },
+    {
+      "_id": "insulti-brancalonia_11",
+      "type": 0,
+      "text": "Vomito di grifone!",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_11"
+    },
+    {
+      "_id": "insulti-brancalonia_12",
+      "type": 0,
+      "text": "Piscio di unicorno marcio!",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_12"
+    },
+    {
+      "_id": "insulti-brancalonia_13",
+      "type": 0,
+      "text": "Scoreggia di drago!",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_13"
+    },
+    {
+      "_id": "insulti-brancalonia_14",
+      "type": 0,
+      "text": "Budella di goblin!",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_14"
+    },
+    {
+      "_id": "insulti-brancalonia_15",
+      "type": 0,
+      "text": "Cervello di zombie!",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_15"
+    },
+    {
+      "_id": "insulti-brancalonia_16",
+      "type": 0,
+      "text": "Culo peloso di bugbear!",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_16"
+    },
+    {
+      "_id": "insulti-brancalonia_17",
+      "type": 0,
+      "text": "Moccio di troll!",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_17"
+    },
+    {
+      "_id": "insulti-brancalonia_18",
+      "type": 0,
+      "text": "Cacca di viverna!",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_18"
+    },
+    {
+      "_id": "insulti-brancalonia_19",
+      "type": 0,
+      "text": "Menagramo ambulante!",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "_key": "!results!insulti-brancalonia_19"
+    }
+  ],
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 800,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!insultibrancalonia",
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

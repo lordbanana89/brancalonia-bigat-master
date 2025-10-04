@@ -1,0 +1,186 @@
+{
+  "id": "class-chierico-livello_5-distruggere-non-morti",
+  "nome": "Distruggere Non Morti",
+  "nome_brancalonia": "Purificare i Dannati",
+  "livello": 5,
+  "tipo": "potenziamento",
+  "descrizione": "A partire dal 5° livello, quando un non morto fallisce il suo tiro salvezza contro il tuo privilegio Scacciare Non Morti, la creatura è immediatamente distrutta se il suo grado di sfida è pari o inferiore a una certa soglia.",
+  "meccaniche": {
+    "funzionamento": {
+      "trigger": "Non morto fallisce TS contro Turn Undead",
+      "condizione": "CR ≤ soglia per livello",
+      "effetto": "Distruzione istantanea"
+    },
+    "soglie_cr": {
+      "livello_5": "CR 1/2 o meno",
+      "livello_8": "CR 1 o meno",
+      "livello_11": "CR 2 o meno",
+      "livello_14": "CR 3 o meno",
+      "livello_17": "CR 4 o meno"
+    },
+    "non_morti_comuni": {
+      "cr_0": [
+        "Crawling Claw"
+      ],
+      "cr_1_4": [
+        "Skeleton",
+        "Zombie"
+      ],
+      "cr_1_2": [
+        "Shadow",
+        "Specter"
+      ],
+      "cr_1": [
+        "Ghoul",
+        "Specter"
+      ],
+      "cr_2": [
+        "Ghast",
+        "Minotaur Skeleton",
+        "Will-o'-Wisp"
+      ],
+      "cr_3": [
+        "Mummy",
+        "Wight"
+      ],
+      "cr_4": [
+        "Banshee",
+        "Flameskull",
+        "Ghost"
+      ]
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "modifica_channel_divinity",
+    "configurazione": {
+      "flags.dnd5e.turnUndeadCR": "@scale.cleric.destroy-undead"
+    },
+    "scale_progression": {
+      "5": 0.5,
+      "8": 1,
+      "11": 2,
+      "14": 3,
+      "17": 4
+    },
+    "automazione": "Check CR on failed save"
+  },
+  "tattica": {
+    "vs_orde": {
+      "efficacia": "Devastante contro molti deboli",
+      "esempio": "20 zombie → tutti distrutti"
+    },
+    "vs_boss": {
+      "limitazione": "Boss hanno CR alto",
+      "utilita": "Elimina minions"
+    },
+    "posizionamento": {
+      "ottimale": "Centro del gruppo nemico",
+      "raggio": "30 piedi dal chierico"
+    }
+  },
+  "calcoli_efficacia": {
+    "livello_5": {
+      "distrugge": [
+        "Skeleton",
+        "Zombie",
+        "Shadow"
+      ],
+      "turn_only": [
+        "Ghoul",
+        "Specter",
+        "Wight"
+      ]
+    },
+    "livello_11": {
+      "distrugge": [
+        "Ghoul",
+        "Ghast",
+        "Specter"
+      ],
+      "turn_only": [
+        "Mummy",
+        "Vampire Spawn"
+      ]
+    },
+    "livello_17": {
+      "distrugge": [
+        "Mummy",
+        "Wight",
+        "Banshee"
+      ],
+      "turn_only": [
+        "Vampire",
+        "Lich"
+      ]
+    }
+  },
+  "confronto": {
+    "vs_paladino": "Paladino non distrugge, solo turn",
+    "vs_spell_slot": "Non costa risorse extra",
+    "vs_fireball": "Più affidabile vs non morti"
+  },
+  "scenari_esempio": {
+    "cripta": {
+      "situazione": "10 skeleton + 2 ghoul",
+      "livello_5": "Skeleton distrutti, ghoul fuggono",
+      "danno_equivalente": "~100 HP rimossi"
+    },
+    "necromante": {
+      "situazione": "Necromante con zombie minions",
+      "tattica": "Distruggi minions, focus necromante"
+    }
+  },
+  "sinergie": {
+    "con_sanctuary": "Protetto mentre distrugge",
+    "con_spirit_guardians": "Area denial + destroy",
+    "con_holy_symbol": "Presentazione drammatica"
+  },
+  "scaling": {
+    "tier_1": "Non disponibile",
+    "tier_2_5": "Game changer vs low undead",
+    "tier_3": "Ancora utile vs medie minacce",
+    "tier_4": "Pulisce minions facilmente"
+  },
+  "varianti_brancalonia": {
+    "santi_specifici": {
+      "san_pancrazio": "Bonus vs zombie",
+      "santa_morte": "Bonus vs spettri",
+      "san_gennaro": "Bonus vs vampiri"
+    },
+    "luoghi_sacri": "Bonus in chiese/cimiteri consacrati"
+  },
+  "limitazioni": {
+    "solo_non_morti": "Inutile vs altri nemici",
+    "cr_limit": "Boss immuni",
+    "saves": "Devono fallire TS Saggezza",
+    "risorse": "Usa Channel Divinity"
+  },
+  "narrazione": {
+    "descrizione": "Il potere divino polverizza i non morti",
+    "effetti_visivi": [
+      "Esplosione di luce sacra",
+      "Non morti che si sgretolano",
+      "Cenere al vento"
+    ]
+  },
+  "note_dm": "Destroy Undead può trivializzare incontri con non morti deboli. Bilancia con CR misti o non morti potenti.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+  "name": "Distruggere Non Morti",
+  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
+  "_id": "rwLQSKCAJuDlnbeX",
+  "_key": "!item!class-chierico-livello_5-distruggere-non-morti",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

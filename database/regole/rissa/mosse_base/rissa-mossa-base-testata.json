@@ -1,0 +1,8 @@
+{
+  "id": "rissa-mossa-base-testata",
+  "nome": "Testata",
+  "danno": "1d4 + Forza Batoste",
+  "descrizione": "Colpo con la testa",
+  "speciale": "L'attaccante subisce 1 Batosta",
+  "fonte": "Brancalonia Manuale Base"
+}

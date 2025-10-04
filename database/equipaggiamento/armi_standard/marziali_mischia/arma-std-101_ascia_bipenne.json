@@ -1,0 +1,20 @@
+{
+  "id": "arma-std-101",
+  "nome": "Ascia Bipenne",
+  "categoria": "arma_standard",
+  "tipo": "marziale_mischia",
+  "costo": "10 mo",
+  "danni": "1d8 taglienti",
+  "proprieta": [
+    "Versatile (1d10)"
+  ],
+  "peso": "1.8 kg",
+  "descrizione": "Ascia a due lame bilanciata per colpi possenti.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

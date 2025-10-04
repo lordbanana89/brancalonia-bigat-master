@@ -1,0 +1,23 @@
+{
+  "id": "scadente-006",
+  "nome": "Effetti Generici dell'Equipaggiamento Scadente",
+  "categoria": "equipaggiamento_scadente",
+  "descrizione": "Linee guida per gestire gli infiniti inconvenienti di oggetti, servizi o consumabili scadenti.",
+  "conseguenze_possibili": [
+    "Piccolo incidente buffo senza conseguenze",
+    "Aumento della CD o penalità alla prova",
+    "Malfunzionamento imprevisto",
+    "Oggetto danneggiato e inutilizzabile finché non riparato",
+    "Consumabile che fallisce con 1-3 su 1d6",
+    "Inconveniente antipatico (perdita di provviste, infiltrazioni d'acqua, ecc.)"
+  ],
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "62-63"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  },
+  "dettagli": "Per tutto ciò che non è elencato precedentemente, la qualità scadente si manifesta in innumerevoli modi differenti. Quando un personaggio usufruisce di qualcosa di scadente, il Condottiero può usare uno degli effetti proposti."
+}

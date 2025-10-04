@@ -1,0 +1,53 @@
+{
+  "id": "033",
+  "nome": "Il Pugnale del Traditore",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Pugnale con elsa a forma di serpente",
+  "proprieta": "+3 a colpire e danni contro alleati e amici",
+  "maledizione": "Costringe a fare TS Saggezza CD 15 per non tradire alleati in momenti critici",
+  "valore": "500 mo",
+  "storia": "Usato per pugnalare Cesare",
+  "maledizione_specifica": "Costringe a fare TS Saggezza CD 15 per non tradire alleati in momenti critici",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.bonuses.mwak.attack",
+        "mode": 2,
+        "value": "3",
+        "priority": 20
+      },
+      {
+        "key": "system.bonuses.mwak.damage",
+        "mode": 2,
+        "value": "3",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "requiresConditional": true,
+      "conditionalType": "target_ally",
+      "saveType": "wis",
+      "saveDC": 15,
+      "onFailure": "compulsione_tradimento",
+      "triggerCondition": "momenti_critici",
+      "description": "Bonus solo contro alleati, TS SAG CD15 per non tradire"
+    },
+    "hooks": ["dnd5e.preRollAttack", "dnd5e.rollDamage"],
+    "macros": ["checkBetrayalSave"],
+    "ui_config": {
+      "showWarning": true,
+      "warningText": "⚠️ ATTENZIONE: Spinge al tradimento in momenti critici (TS SAG CD15)"
+    },
+    "narrative_reminders": [
+      "Il bonus si applica SOLO contro alleati e amici",
+      "In situazioni di stress/battaglia, il DM può richiedere TS SAG CD15",
+      "Fallimento = compulsione a tradire o attaccare un alleato"
+    ]
+  },
+  "img": "icons/weapons/daggers/dagger-straight-blood.webp"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "class-mago-livello_1-recupero-arcano",
+  "nome": "Recupero Arcano",
+  "nome_brancalonia": "Meditazione Arcana",
+  "livello": 1,
+  "tipo": "riposo_breve",
+  "descrizione": "Hai imparato a riguadagnare parte della tua energia magica studiando il tuo libro degli incantesimi. Una volta al giorno quando completi un riposo breve, puoi scegliere slot incantesimi spesi da recuperare. Gli slot incantesimi possono avere un livello totale combinato pari o inferiore alla metà del tuo livello da mago (arrotondato per eccesso), e nessuno degli slot può essere di 6° livello o superiore.",
+  "meccaniche": {
+    "frequenza": "1 volta al giorno",
+    "trigger": "Completare riposo breve",
+    "recupero": {
+      "formula": "Livello mago ÷ 2 (arrotondato eccesso)",
+      "limite": "Nessuno slot 6° o superiore"
+    },
+    "esempi": {
+      "livello_1": "1 livello di slot (1×1°)",
+      "livello_3": "2 livelli di slot (2×1° o 1×2°)",
+      "livello_5": "3 livelli di slot (3×1°, 1×3°, 1×2°+1×1°)",
+      "livello_10": "5 livelli di slot (1×5°, 1×3°+1×2°, 5×1°)",
+      "livello_20": "10 livelli di slot (2×5°, 1×5°+1×3°+1×2°)"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "risorsa_riposo_breve",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "per": "day"
+    },
+    "recupero_slot": {
+      "pool": "Math.ceil(@classes.wizard.levels / 2)",
+      "max_level": 5
+    }
+  },
+  "ottimizzazione": {
+    "strategie": {
+      "low_level": "Recupera slot più alti possibili",
+      "efficienza": "1×3° meglio di 3×1° per versatilità",
+      "combat_focus": "Priorità Shield e damage spells"
+    },
+    "confronto_recupero": {
+      "short_rest": "Solo Arcane Recovery",
+      "long_rest": "Tutti gli slot",
+      "vs_warlock": "Warlock tutti con short rest"
+    }
+  },
+  "calcoli_sostenibilita": {
+    "incontri_giorno": {
+      "con_ar": "6-8 incontri possibili",
+      "senza_ar": "4-6 incontri possibili"
+    },
+    "slot_effettivi": {
+      "livello_5": {
+        "base": "4+3+2 = 9 slot",
+        "con_ar": "+3 = 12 slot totali",
+        "incremento": "+33%"
+      },
+      "livello_10": {
+        "base": "4+3+3+3+2 = 15 slot",
+        "con_ar": "+5 = 20 slot totali",
+        "incremento": "+33%"
+      }
+    }
+  },
+  "tattiche": {
+    "quando_usare": [
+      "Dopo primo/secondo combattimento",
+      "Prima di dungeon boss",
+      "Quando party fa short rest"
+    ],
+    "cosa_recuperare": {
+      "combattimento": "Slot 3° per Fireball/Counterspell",
+      "utility": "Slot bassi per Shield/Absorb",
+      "esplorazione": "Mix per versatilità"
+    }
+  },
+  "confronto_classi": {
+    "vs_sorcerer": "Sorcerer ha Font of Magic diverso",
+    "vs_warlock": "Warlock recupera tutto con SR",
+    "vs_cleric": "Nessun recupero speciale",
+    "vs_land_druid": "Druid ha Natural Recovery simile"
+  },
+  "sinergie": {
+    "con_pearl_of_power": "Recupero slot aggiuntivo",
+    "con_rope_trick": "Safe short rest per AR",
+    "con_catnap": "10 min rest per AR (DM dipendente)"
+  },
+  "errori_comuni": {
+    "dimenticare": "Molti giocatori non lo usano",
+    "slot_alti": "Non funziona su 6°+ livello",
+    "multipli": "Solo 1 volta al giorno"
+  },
+  "house_rules": {
+    "potenziamento": "Alcuni DM: 2/day o full level",
+    "nerf": "Altri DM: solo 1° combattimento"
+  },
+  "narrazione_brancalonia": {
+    "descrizione": "Il Guiscardo medita sul suo grimorio",
+    "flavor": [
+      "Ricarica energie attraverso formule",
+      "Ripassa incantesimi per rinfrescare memoria",
+      "Attinge a riserve nascoste di potere"
+    ]
+  },
+  "progressione_importanza": {
+    "tier_1": "Cruciale per sopravvivenza",
+    "tier_2": "Molto importante",
+    "tier_3": "Utile ma meno critico",
+    "tier_4": "Nice to have"
+  },
+  "note_dm": "Arcane Recovery aumenta significativamente la resistenza del mago. Ricorda ai giocatori di usarlo.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115"
+}

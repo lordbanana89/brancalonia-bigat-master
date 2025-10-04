@@ -1,0 +1,106 @@
+{
+  "_id": "dsZf0wLpGp1wFYQa",
+  "_key": "!tables!dsZf0wLpGp1wFYQa",
+  "name": "Duro - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "9oMpUjRtDi9qzqzk",
+      "type": 0,
+      "text": "Cuore d’oro. Non c’è cattivo più cattivo di un buono che diventa cattivo. (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!9oMpUjRtDi9qzqzk"
+    },
+    {
+      "_id": "2RRc3iSFsBaWZ3er",
+      "type": 0,
+      "text": "Intransigenza. Se questo è l’ordine, va eseguito a ogni costo. (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!2RRc3iSFsBaWZ3er"
+    },
+    {
+      "_id": "ylexA3TLLq7AojZU",
+      "type": 0,
+      "text": "Cinismo. Il mondo va in rovina: pensiamo a noi stessi. (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!ylexA3TLLq7AojZU"
+    },
+    {
+      "_id": "1UeJnKGylHUPE0ke",
+      "type": 0,
+      "text": "Potere. Con le lame come nella vita vince il più forte. (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!1UeJnKGylHUPE0ke"
+    },
+    {
+      "_id": "Xk4CH7y7Ix9gbJr2",
+      "type": 0,
+      "text": "Banderuola. Con Frangia o Altomagna, purché se magna. (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!Xk4CH7y7Ix9gbJr2"
+    },
+    {
+      "_id": "0hwEwh4kL0xQGHsi",
+      "type": 0,
+      "text": "Bottino. Riempirsi le tasche e andare a bere: non c’è altro. (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!0hwEwh4kL0xQGHsi"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "duro",
+      "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

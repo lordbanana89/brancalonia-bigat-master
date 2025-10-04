@@ -1,0 +1,69 @@
+{
+  "id": "class-bardo-livello_1-ispirazione-bardica",
+  "nome": "Ispirazione Bardica",
+  "nome_brancalonia": "Verve dell'Arlecchino",
+  "livello": 1,
+  "tipo": "azione_bonus",
+  "descrizione": "Puoi ispirare altri attraverso parole o musica commoventi. Per farlo, usi un'azione bonus nel tuo turno per scegliere una creatura diversa da te entro 18 metri che possa sentirti. Quella creatura guadagna un dado di Ispirazione Bardica, un d6. Una volta entro i prossimi 10 minuti, la creatura può tirare il dado e aggiungere il numero tirato a una prova di caratteristica, tiro per colpire o tiro salvezza che effettua.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione_bonus",
+      "raggio": "18 metri (60 piedi)",
+      "requisiti": "Bersaglio deve sentirti"
+    },
+    "dado_ispirazione": {
+      "livello_1": "d6",
+      "livello_5": "d8",
+      "livello_10": "d10",
+      "livello_15": "d12"
+    },
+    "usi": {
+      "formula": "Modificatore Carisma",
+      "minimo": 1,
+      "recupero": {
+        "livello_1_4": "Riposo lungo",
+        "livello_5+": "Riposo breve o lungo"
+      }
+    },
+    "uso_dado": {
+      "quando": "Dopo tiro ma prima di sapere risultato",
+      "durata": "10 minuti per usarlo",
+      "limite": "1 dado per creatura alla volta"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "transferable_resource",
+    "uses": "@abilities.cha.mod",
+    "dado": "@scale.bard.inspiration",
+    "recovery": {
+      "1-4": "lr",
+      "5+": "sr"
+    }
+  },
+  "valore_matematico": {
+    "bonus_medio": {
+      "d6": "+3.5",
+      "d8": "+4.5",
+      "d10": "+5.5",
+      "d12": "+6.5"
+    },
+    "impatto": "Trasforma fallimenti in successi ~30% delle volte"
+  },
+  "tattiche": {
+    "priorità": [
+      "Salvare alleati da save-or-suck",
+      "Garantire skill check cruciali",
+      "Aiutare attacchi importanti"
+    ]
+  },
+  "evoluzione": {
+    "font_of_inspiration": "Recupero con short rest al 5°",
+    "magical_secrets": "Più versatilità",
+    "superior_inspiration": "1 uso gratis al 20°"
+  },
+  "confronto": {
+    "vs_guidance": "Bardic più forte ma limitato",
+    "vs_bless": "Simile ma single target"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.53"
+}

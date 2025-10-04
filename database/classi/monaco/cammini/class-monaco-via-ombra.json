@@ -1,0 +1,42 @@
+{
+  "id": "class-monaco-via-ombra",
+  "nome": "Via dell'Ombra",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Arti delle Ombre",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Shadow Arts"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Passo dell'Ombra",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Shadow Step"
+        }
+      }
+    ],
+    "livello_11": [
+      {
+        "nome": "Mantello delle Ombre",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Cloak of Shadows"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Opportunista",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Opportunist"
+        }
+      }
+    ]
+  }
+}

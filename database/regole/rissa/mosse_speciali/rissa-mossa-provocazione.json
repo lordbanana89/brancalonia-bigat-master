@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-provocazione",
+  "nome": "Provocazione",
+  "requisiti": "Carisma 13+",
+  "costo": "1 slot",
+  "effetto": "Insulti il bersaglio. TS Saggezza CD 8 + prof + Car o deve attaccarti al suo turno",
+  "durata": "1 turno",
+  "fonte": "Brancalonia Manuale Base"
+}

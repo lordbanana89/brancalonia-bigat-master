@@ -1,0 +1,49 @@
+{
+  "id": "048",
+  "nome": "La Lettera Mai Consegnata",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Lettera sigillata che non si può aprire",
+  "proprieta": "Chi la porta trova sempre la strada verso casa",
+  "valore": "200 mo",
+  "storia": "Contiene un perdono che avrebbe cambiato la storia",
+  "mistero": "Il destinatario è morto 100 anni fa",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.skills.sur.bonuses.check",
+        "mode": 2,
+        "value": "2",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "navigation",
+      "destination": "casa",
+      "effectDescription": "Navigazione automatica verso casa",
+      "advantage": "survival_navigation"
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "showEffect": true,
+      "effectText": "🏠 Trovi sempre la strada verso casa",
+      "showBonus": true,
+      "bonusText": "Vantaggio Sopravvivenza (navigazione)"
+    },
+    "narrative_reminders": [
+      "Il portatore trova sempre la strada verso casa",
+      "Fornisce vantaggio alle prove di Sopravvivenza per navigazione",
+      "La lettera non può essere aperta con nessun mezzo",
+      "Contiene un perdono che avrebbe cambiato la storia",
+      "Il destinatario è morto 100 anni fa",
+      "Può essere consegnata al fantasma del destinatario?",
+      "Ottimo per esploratori e avventurieri"
+    ]
+  },
+  "img": "icons/sundries/scrolls/scroll-bound-blue.webp"
+}

@@ -1,0 +1,156 @@
+{
+  "id": "class-mago-livello_20-signature-spells",
+  "nome": "Incantesimi Distintivi",
+  "nome_brancalonia": "Magie Leggendarie",
+  "livello": 20,
+  "tipo": "attivo",
+  "descrizione": "Al 20° livello, ottieni la padronanza di due potenti incantesimi e puoi lanciarli con poco sforzo. Scegli due incantesimi da mago di 3° livello nel tuo libro degli incantesimi come tuoi incantesimi distintivi. Hai sempre questi incantesimi preparati, non contano nel numero di incantesimi preparati e puoi lanciare ciascuno di essi una volta al 3° livello senza spendere uno slot. Quando lo fai, non puoi farlo di nuovo finché non finisci un riposo breve o lungo. Se vuoi lanciare uno di questi incantesimi a un livello superiore, devi spendere uno slot normalmente.",
+  "meccaniche": {
+    "numero_spell": 2,
+    "livello_spell": "3° livello",
+    "sempre_preparati": "Non contano nel limite",
+    "cast_gratuiti": "1 volta ciascuno senza slot",
+    "recupero": "Riposo breve o lungo"
+  },
+  "implementazione_foundry": {
+    "tipo": "signature_spells",
+    "spell_sempre_preparati": 2,
+    "cast_gratuiti": "1 per spell per short rest"
+  },
+  "spell_popolari_signature": {
+    "counterspell": {
+      "valore": "Sempre pronto a contrastare",
+      "2_gratis": "2 counterspell extra/combattimento"
+    },
+    "fireball": {
+      "valore": "Damage affidabile",
+      "2_gratis": "16d6 damage gratuiti/rest"
+    },
+    "haste": {
+      "valore": "Buff potente sempre pronto",
+      "2_gratis": "2 alleati hasted gratis"
+    },
+    "fly": {
+      "valore": "Mobilità garantita",
+      "2_gratis": "Volo per 2 persone/rest"
+    },
+    "dispel_magic": {
+      "valore": "Rimozione magia sempre pronta",
+      "2_gratis": "2 dispel gratuiti"
+    },
+    "hypnotic_pattern": {
+      "valore": "Controllo massa potente",
+      "2_gratis": "2 AoE incapacitate"
+    }
+  },
+  "calcoli_valore": {
+    "slot_equivalenti": {
+      "per_giorno_8h": "6-8 slot 3° extra (3-4 short rest)",
+      "risparmio": "Non consuma slot veri"
+    },
+    "sempre_pronti": {
+      "flessibilità": "+2 spell preparati altri",
+      "affidabilità": "Mai senza spell chiave"
+    }
+  },
+  "combinazioni_ottimali": {
+    "control_combo": [
+      "Counterspell",
+      "Hypnotic Pattern"
+    ],
+    "damage_combo": [
+      "Fireball",
+      "Lightning Bolt"
+    ],
+    "utility_combo": [
+      "Fly",
+      "Haste"
+    ],
+    "defense_combo": [
+      "Counterspell",
+      "Dispel Magic"
+    ],
+    "versatile_combo": [
+      "Counterspell",
+      "Fireball"
+    ]
+  },
+  "confronto_capstone": {
+    "vs_sorcerer_restoration": "Mago spell gratis, sorc punti",
+    "vs_warlock_eldritch_master": "Mago più frequente (short rest)",
+    "vs_cleric_intervention": "Mago affidabile, cleric potente",
+    "unico": "Spell sempre pronti E gratis"
+  },
+  "gestione_combattimento": {
+    "apertura": "Usa signature per dominanza",
+    "mid_combat": "Slot normali per versatilità",
+    "emergenza": "Signature come backup",
+    "short_rest": "Recupera per prossimo scontro"
+  },
+  "sinergie_tradizioni": {
+    "evocation": "Fireball sculpted gratis",
+    "abjuration": "Counterspell + ward recharge",
+    "divination": "Portent + signature garantiti",
+    "enchantment": "Hold Person signature terribile"
+  },
+  "impatto_tier_4": {
+    "affidabilità": "Sempre risorse per spell chiave",
+    "versatilità": "+2 preparati per altri spell",
+    "sostenibilità": "Regge giorni lunghi meglio"
+  },
+  "spell_da_evitare": {
+    "troppo_situazionali": [
+      "Water Breathing",
+      "Tongues"
+    ],
+    "scaling_povero": [
+      "Vampiric Touch"
+    ],
+    "rimpiazzabili": [
+      "Spell con versioni superiori"
+    ]
+  },
+  "tattiche_dungeon_crawl": {
+    "room_clearing": "Fireball signature per minion",
+    "boss_prep": "Conserva slot alti",
+    "escape": "Fly/Haste signature per fuga",
+    "puzzle": "Utility signature pronti"
+  },
+  "considerazioni_party": {
+    "no_altri_caster": "Counterspell/Dispel essenziali",
+    "party_damage": "Utility/Control focus",
+    "party_tank": "Damage/Control focus"
+  },
+  "errori_comuni": {
+    "spell_alti": "Scegliere sopra 3° (non permesso)",
+    "conservare": "Non usare per 'risparmiarli'",
+    "monotonia": "Sempre stessi 2 spell",
+    "cambio": "Non si possono cambiare dopo"
+  },
+  "narrazione_brancalonia": {
+    "maestria_suprema": "Spell che definiscono il mago",
+    "firma_personale": "Magie iconiche del personaggio",
+    "leggenda": "'Il mago delle palle di fuoco'",
+    "eredità": "Spell che passano alla storia"
+  },
+  "note_dm": "Signature Spells rendono il Mago 20 estremamente affidabile. Due spell di 3° sempre pronti e castabili gratis ogni short rest sono enormi. Counterspell è quasi obbligatorio.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Signature Spells",
+  "img": "icons/sundries/documents/document-ink-pen-blue.webp",
+  "_id": "4dVMvosNxUjYKIDC",
+  "_key": "!item!class-mago-livello_20-signature-spells",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "_id": "8chDmml0WSo7ngS5",
+  "_key": "!tables!8chDmml0WSo7ngS5",
+  "name": "Attaccabrighe - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "qzK3rNojB5hsgmw9",
+      "type": 0,
+      "text": "Ha una superbia sconfinata.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!qzK3rNojB5hsgmw9"
+    },
+    {
+      "_id": "KxF4o40JfFnRbANZ",
+      "type": 0,
+      "text": "Ha appetiti colossali e pensa sempre a soddisfarli.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!KxF4o40JfFnRbANZ"
+    },
+    {
+      "_id": "ZWUtpGDJRNY0zqix",
+      "type": 0,
+      "text": "È un mentitore compulsivo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!ZWUtpGDJRNY0zqix"
+    },
+    {
+      "_id": "m8YrjH1Z7DjMaK3U",
+      "type": 0,
+      "text": "Continua a ripetere “Sapete qual è il mio peggior difetto?” cambiando risposta ogni volta.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!m8YrjH1Z7DjMaK3U"
+    },
+    {
+      "_id": "2lfWe0g8eLcHrNN5",
+      "type": 0,
+      "text": "Ha abitudini disgustose come mettersi gli stivali sul tavolo o pulirsi i denti col pugnale.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!2lfWe0g8eLcHrNN5"
+    },
+    {
+      "_id": "zYvpSCk796Yf3CUb",
+      "type": 0,
+      "text": "Molesta continuamente le altre persone finché non scoppia la rissa.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!zYvpSCk796Yf3CUb"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "attaccabrighe",
+      "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

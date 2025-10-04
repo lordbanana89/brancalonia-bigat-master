@@ -1,0 +1,51 @@
+{
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "83-85"
+  },
+  "totale": 8,
+  "elementi": [
+    {
+      "id": "generatore-bevande",
+      "nome": "Generatore Bevande",
+      "file": "generatore-bevande.json"
+    },
+    {
+      "id": "generatore-citazione",
+      "nome": "Generatore Citazione",
+      "file": "generatore-citazione.json"
+    },
+    {
+      "id": "generatore-introduzione",
+      "nome": "Generatore Introduzione",
+      "file": "generatore-introduzione.json"
+    },
+    {
+      "id": "generatore-nome-insegna",
+      "nome": "Generatore Nome Insegna",
+      "file": "generatore-nome-insegna.json"
+    },
+    {
+      "id": "generatore-particolarita",
+      "nome": "Generatore Particolarita",
+      "file": "generatore-particolarita.json"
+    },
+    {
+      "id": "generatore-specialita",
+      "nome": "Generatore Specialita",
+      "file": "generatore-specialita.json"
+    },
+    {
+      "id": "generatore-tenutario",
+      "nome": "Generatore Tenutario",
+      "file": "generatore-tenutario.json"
+    },
+    {
+      "id": "generatore-tipo",
+      "nome": "Generatore Tipo",
+      "file": "generatore-tipo.json"
+    }
+  ]
+}

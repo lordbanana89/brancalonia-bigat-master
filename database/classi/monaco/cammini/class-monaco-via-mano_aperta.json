@@ -1,0 +1,42 @@
+{
+  "id": "class-monaco-via-mano_aperta",
+  "nome": "Via della Mano Aperta",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Tecniche della Mano Aperta",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Open Hand Technique"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Pienezza del Corpo",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Wholeness of Body"
+        }
+      }
+    ],
+    "livello_11": [
+      {
+        "nome": "Tranquillità",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Tranquility"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Palmo Tremante",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Quivering Palm"
+        }
+      }
+    ]
+  }
+}

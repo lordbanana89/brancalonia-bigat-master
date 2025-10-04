@@ -1,0 +1,106 @@
+{
+  "_id": "vzIfx2SrJlAl8b9s",
+  "_key": "!tables!vzIfx2SrJlAl8b9s",
+  "name": "Brado - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "sBVThGlLA3PoHUJ6",
+      "type": 0,
+      "text": "Fiuto e annusa chiunque gli passi accanto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!sBVThGlLA3PoHUJ6"
+    },
+    {
+      "_id": "UrVqxmAw4MTw4MeC",
+      "type": 0,
+      "text": "Non si lava mai e porta addosso l’odore della selva.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!UrVqxmAw4MTw4MeC"
+    },
+    {
+      "_id": "V9b4JLjAJ2zbKmNT",
+      "type": 0,
+      "text": "Non aiuta chi non sa salvarsi da solo se non è un compagno.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!V9b4JLjAJ2zbKmNT"
+    },
+    {
+      "_id": "EXyguGVUGoZ6ZMih",
+      "type": 0,
+      "text": "Non si rade né taglia i capelli, permettendo a insetti e bestiole di viverci dentro.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!EXyguGVUGoZ6ZMih"
+    },
+    {
+      "_id": "jsk0cnn1hdzUiYQN",
+      "type": 0,
+      "text": "Ignora il pudore comune e scandalizza i civili.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!jsk0cnn1hdzUiYQN"
+    },
+    {
+      "_id": "n97AU9ZG6u3mo0ng",
+      "type": 0,
+      "text": "Divora carne cruda o ha altre abitudini alimentari disgustose.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!n97AU9ZG6u3mo0ng"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "brado",
+      "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

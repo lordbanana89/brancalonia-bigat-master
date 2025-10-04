@@ -1,0 +1,145 @@
+{
+  "nome": "Brado",
+  "fonte": "Manuale Base p.34",
+  "tipo": "background",
+  "descrizione": "Cresciuto selvaggio tra comunità selvatiche, eremiti e pagani isolati",
+  "testo": {
+    "introduzione": [
+      "Il brado è cresciuto tra comunità selvatiche, eremiti, pagani e taglialegna che vivono seguendo le stagioni, cacciando e raccogliendo tutto ciò che serve alla sopravvivenza.",
+      "La vita all’aria aperta, la comunione con gli spiriti della selva e il rispetto degli equilibri naturali hanno forgiato il suo carattere, rendendolo libero e diffidente verso città e mura.",
+      "Perso nel mondo civilizzato, rimpiange sempre la sua tribù e si sente come un lupo chiuso in gabbia."
+    ],
+    "privilegio": {
+      "nome": "Dimestichezza Selvatica",
+      "descrizione": "Puoi guidare te stesso e fino a cinque compagni attraverso terre selvagge senza attirare bestie ostili, ma non influenza gli incontri con NPC, mostri e costrutti."
+    }
+  },
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Addestrare Animali e Atletica",
+      "implementazione": {
+        "addestrare": "system.skills.ani.value = 1",
+        "atletica": "system.skills.ath.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Borsa da erborista",
+      "implementazione": "system.tools.herbalism.value = 1",
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Petroglifico (linguaggio ancestrale su pietra)",
+      "implementazione": "system.traits.languages.value.push('petroglifico')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Bastone, ciondolo d'ossa, pigmenti colorati, abito viaggiatore, borsa 10 ma"
+    },
+    "privilegio_dimestichezza_selvatica": {
+      "tipo": "attivo",
+      "descrizione": "Può guidare se stesso e fino a 5 compagni attraverso terre selvagge senza attirare bestie ostili (non influenza NPC, mostri, costrutti)",
+      "implementazione": "flags.brancalonia-bigat.dimestichezzaSelvatica = true",
+      "mode": 5,
+      "nota": "Influenza solo incontri con bestie, NON con NPC, mostri o costrutti"
+    }
+  },
+  "dettagli": {
+    "identificatore": "brado",
+    "ricchezza_iniziale": "10 ma",
+    "equipaggiamento": [
+      "Bastone",
+      "Ciondolo d’ossa d’animale",
+      "Pigmenti colorati",
+      "Abito da viaggiatore",
+      "Borsa con 10 ma"
+    ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "addestrare",
+        "atletica"
+      ]
+    },
+    {
+      "tipo": "competenze_strumenti",
+      "elenco": [
+        "borsa_da_erborista"
+      ]
+    },
+    {
+      "tipo": "linguaggi",
+      "elenco": [
+        "petroglifico"
+      ]
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "Dimestichezza Selvatica",
+      "descrizione": "Puoi guidare te stesso e fino a cinque compagni attraverso terre selvagge senza attirare bestie ostili.",
+      "fonte": "Manuale Base p.34",
+      "implementazione": {
+        "dimestichezza_selvatica": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "Non tiene conto di nobiltà, titoli e ricchezza.",
+        "È nostalgico e inquieto quando è lontano dalle terre selvagge.",
+        "Si sente in gabbia nei luoghi chiusi o circondati da mura.",
+        "Non sopporta folla, rumori e odori delle città.",
+        "È aggressivo e brusco con chi invade il suo spazio.",
+        "Si intenerisce per ogni gesto di spontanea gentilezza.",
+        "Ama insegnare arti e mestieri pratici che conosce, imparando in cambio nuovi segreti.",
+        "Si trova meglio con gli animali che con gli umani."
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Rispetto. Selvaggi e cittadini dovrebbero vivere in comunione. (Buono)",
+        "Leggi della selva. Solo le leggi naturali meritano rispetto. (Legale)",
+        "Libertà. Tutti dovrebbero vivere allo stato brado. (Caotico)",
+        "Legge del più forte. In natura comanda chi è più forte. (Malvagio)",
+        "Sopravvivenza. La vita viene prima di tutto. (Neutrale)",
+        "Contemplazione. Il cielo stellato sopra di me, la legge dei bradi dentro di me. (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "I membri della mia tribù o famiglia lasciati chissà dove.",
+        "Il villaggio vicino alla nostra selva, gli unici civili che mi abbiano mostrato amicizia.",
+        "La cacciatrice errante che mi ha preso con sé e mi ha insegnato la vita della selva.",
+        "Un animale che mi segue da anni mantenendo le distanze.",
+        "Un fratello o una sorella di sangue con cui condivido un legame profondo.",
+        "Il capo della mia gente che mi ha salvato la vita e a cui devo tutto."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "Fiuto e annusa chiunque gli passi accanto.",
+        "Non si lava mai e porta addosso l’odore della selva.",
+        "Non aiuta chi non sa salvarsi da solo se non è un compagno.",
+        "Non si rade né taglia i capelli, permettendo a insetti e bestiole di viverci dentro.",
+        "Ignora il pudore comune e scandalizza i civili.",
+        "Divora carne cruda o ha altre abitudini alimentari disgustose."
+      ]
+    }
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "brado001",
+    "compendio": "backgrounds"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "class-mago-scuola-invocazione",
+  "nome": "Scuola di Invocazione",
+  "fonte": "Manuale del Giocatore p.84",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Savant dell'Invocazione",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Evocation Savant"
+        }
+      },
+      {
+        "nome": "Scolpire Incantesimi",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Sculpt Spells"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Potenziare Incantesimi",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Potent Cantrip"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Invocazione Potenziata",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Empowered Evocation"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Sovraccarico Elementale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Overchannel"
+        }
+      }
+    ]
+  }
+}

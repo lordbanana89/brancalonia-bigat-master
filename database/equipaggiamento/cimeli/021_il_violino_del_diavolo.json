@@ -1,0 +1,44 @@
+{
+  "id": "021",
+  "nome": "Il Violino del Diavolo",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Violino di legno nero con corde d'argento",
+  "proprieta": "Chi suona ottiene competenza immediata, musica affascina chi ascolta",
+  "valore": "2000 mo",
+  "storia": "Paganini ci suonò il suo ultimo concerto",
+  "prezzo": "Ogni canzone costa 1 giorno di vita",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "lifespan_cost",
+      "costPerUse": "1_giorno_vita",
+      "totalDaysLost": 0,
+      "effectDescription": "Musica divina, prezzo altissimo"
+    },
+    "hooks": [],
+    "macros": ["playViolin"],
+    "ui_config": {
+      "showCost": true,
+      "costWarning": "⚠️ ATTENZIONE: Ogni canzone costa 1 GIORNO DI VITA!",
+      "showTotal": true,
+      "totalText": "Giorni di vita persi: {total}",
+      "confirmDialog": true
+    },
+    "narrative_reminders": [
+      "Chi suona ottiene competenza immediata (anche senza training)",
+      "La musica affascina TUTTI gli ascoltatori (condizione Charmed)",
+      "Ogni canzone completa costa 1 giorno di vita del suonatore",
+      "La perdita di vita è permanente e non recuperabile",
+      "Paganini ci suonò il suo ultimo concerto prima di morire",
+      "La musica è di bellezza sovrannaturale e straziante",
+      "Ottimo per performance epiche, mortale se abusato",
+      "DM: tracciare i giorni persi per calcolare morte naturale anticipata"
+    ]
+  },
+  "img": "icons/tools/instruments/lute-gold-brown.webp"
+}

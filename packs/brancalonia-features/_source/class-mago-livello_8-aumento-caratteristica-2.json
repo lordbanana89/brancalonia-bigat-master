@@ -1,0 +1,51 @@
+{
+  "id": "class-mago-livello_8-aumento-caratteristica-2",
+  "nome": "Aumento dei Punteggi di Caratteristica",
+  "nome_brancalonia": "Evoluzione del Sapiente",
+  "livello": 8,
+  "tipo": "advancement",
+  "descrizione": "All'8° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, o due punteggi di 1. Come di norma, non puoi aumentare sopra 20. In alternativa puoi scegliere un talento.",
+  "meccaniche": {
+    "opzioni": [
+      "+2 a una stat",
+      "+1 a due stat",
+      "1 talento"
+    ],
+    "limite": "Max 20"
+  },
+  "implementazione_foundry": {
+    "tipo": "advancement",
+    "advancement_type": "AbilityScoreImprovement"
+  },
+  "priorità_livello_8": {
+    "intelligenza_20": "Obiettivo primario se non ancora raggiunto",
+    "talenti_difensivi": "War Caster o Resilient CON se INT già 20",
+    "costituzione": "+2 CON per sopravvivenza"
+  },
+  "impatto_int_20": {
+    "spell_dc": "DC 15 → 17",
+    "spell_preparati": "+2 spell preparati",
+    "spell_attack": "+1 to hit",
+    "tradizione_bonus": "Alcuni privilegi scalano con INT"
+  },
+  "note_dm": "La maggior parte dei maghi raggiunge INT 20 all'8° livello, massimizzando efficacia spell.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Aumento Caratteristica 2",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "_id": "PV4C0m3D3wMavWPA",
+  "_key": "!item!class-mago-livello_8-aumento-caratteristica-2",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

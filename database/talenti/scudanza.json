@@ -1,0 +1,31 @@
+{
+  "nome": "Scudanza",
+  "fonte": "Manuale Base p.39",
+  "tipo": "talento",
+  "descrizione": "Maestria nell'arte della rotella e difesa con scudo",
+  "requisiti": "Nessuno",
+  "meccaniche": {
+    "incremento_caratteristica": {
+      "tipo": "advancement",
+      "descrizione": "Forza o Costituzione +1 (max 20)",
+      "implementazione": "Scelto durante level up",
+      "mode": "advancement"
+    },
+    "competenza_scudi": {
+      "tipo": "attivo",
+      "descrizione": "Competenza negli scudi",
+      "implementazione": "system.traits.armorProf.value.push('shields')",
+      "mode": 2
+    },
+    "schivata_migliorata": {
+      "tipo": "narrativo",
+      "descrizione": "Con azione schivata: +2 CA e ignora qualità scadente scudo",
+      "nota": "Richiede gestione durante combattimento"
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "scudanza",
+    "compendio": "talenti"
+  }
+}

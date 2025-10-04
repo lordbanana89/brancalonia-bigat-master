@@ -1,0 +1,68 @@
+{
+  "_id": "T0U7N6lmYUl8aaHM",
+  "_key": "!item!gear008zaino6ed4aa",
+  "name": "Zaino",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-round-corked-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Contiene fino a 30 kg di equipaggiamento; ha cinghie per appendere oggetti.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "identified": true,
+    "quantity": 1,
+    "weight": "2.5 kg",
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "gear-008",
+      "fonte": {
+        "manuale": "Manuale Base",
+        "pagine": "Equipaggiamento da Avventura"
+      },
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

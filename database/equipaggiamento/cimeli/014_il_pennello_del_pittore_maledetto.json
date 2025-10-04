@@ -1,0 +1,42 @@
+{
+  "id": "014",
+  "nome": "Il Pennello del Pittore Maledetto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Pennello che gocciola sempre vernice rossa",
+  "proprieta": "Dipinti sembrano vivi, soggetti si muovono",
+  "maledizione": "I ritratti invecchiano al posto del soggetto",
+  "valore": "750 mo",
+  "storia": "Il pittore dipinse il Diavolo dal vero",
+  "maledizione_specifica": "I ritratti invecchiano al posto del soggetto",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "narrative_only",
+      "effectDescription": "Arte magica, trasferimento invecchiamento ai ritratti",
+      "targetActorId": null
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "showReminder": true,
+      "reminderText": "Ritratti viventi, invecchiano al posto del soggetto"
+    },
+    "narrative_reminders": [
+      "I dipinti creati con questo pennello sembrano vivi",
+      "I soggetti nei dipinti si muovono leggermente",
+      "I ritratti invecchiano AL POSTO del soggetto dipinto",
+      "Il soggetto NON invecchia finché il ritratto esiste",
+      "Distruggere il ritratto = invecchiamento istantaneo del soggetto",
+      "Il pennello gocciola sempre vernice rossa (sangue?)",
+      "Il pittore dipinse il Diavolo e impazzì",
+      "Può essere usato per immortalità temporanea",
+      "Il ritratto di Dorian Gray in versione Brancalonia"
+    ]
+  },
+  "img": "icons/tools/scribal/brush-simple-brown.webp"
+}

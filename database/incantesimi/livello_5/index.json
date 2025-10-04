@@ -1,0 +1,13 @@
+{
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "blocca-mostri",
+      "nome": "Blocca Mostri",
+      "file": "spell-blocca-mostri.json"
+    }
+  ]
+}

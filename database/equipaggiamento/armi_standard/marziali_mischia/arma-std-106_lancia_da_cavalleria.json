@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-106",
+  "nome": "Lancia da Cavalleria",
+  "categoria": "arma_standard",
+  "tipo": "marziale_mischia",
+  "costo": "10 mo",
+  "danni": "1d12 perforanti",
+  "proprieta": [
+    "Portata",
+    "Speciale"
+  ],
+  "peso": "2.7 kg",
+  "descrizione": "Lunga lancia usata da cavalieri; difficile da impugnare a piedi.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

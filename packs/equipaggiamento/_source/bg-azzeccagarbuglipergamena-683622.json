@@ -1,0 +1,47 @@
+{
+  "_id": "maLNGZf4nls1gfdZ",
+  "_key": "!item!bg-azzeccagarbuglipergamena-683622",
+  "name": "Pergamena",
+  "type": "consumable",
+  "img": "icons/sundries/scrolls/scroll-plain-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pergamena - Equipaggiamento iniziale del background azzeccagarbugli.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "charges": {
+      "value": 1,
+      "max": 1
+    },
+    "uses": {
+      "value": 0,
+      "max": "",
+      "recovery": []
+    },
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "azzeccagarbugli"
+    }
+  }
+}

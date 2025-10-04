@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-002",
+  "nome": "Armatura di Cuoio",
+  "categoria": "armatura_standard",
+  "tipo": "leggera",
+  "costo": "10 mo",
+  "classe_armatura": "11 + Mod Destrezza",
+  "bonus_ca": null,
+  "forza_minima": "—",
+  "furtivita": "—",
+  "peso": "4.5 kg",
+  "descrizione": "Cuoio indurito e sagomato per proteggere il corpo.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

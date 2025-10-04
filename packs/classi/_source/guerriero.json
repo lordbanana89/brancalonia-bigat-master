@@ -1,0 +1,322 @@
+{
+  "_id": "rVxYaXx686L02huD",
+  "_key": "!item!class-fighter-o0j7hl",
+  "name": "Guerriero",
+  "type": "class",
+  "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Maestro di combattimento con ogni tipo di arma e armatura.</em></p>\n<p>Vedi il Manuale del Giocatore per i dettagli completi.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.70",
+    "identifier": "fighter",
+    "levels": 20,
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "DafnkNmB2WaKtC84",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "Punti Ferita"
+      },
+      {
+        "_id": "8bb51280032d4fdc",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.ad8b275d6e9bbeba",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Stile di Combattimento",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "6de8b3e4fb9a4965",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.0aaa48783eac3c07",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Secondo Fiato",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "4d6e476437774504",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.a410ca7c95f935d3",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Scatto d'Azione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "17778130224843a9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.fc9bebe8617896bb",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Archetipo Marziale",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "mIcNQ0oJRq4OMujO",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "e90d7356610543b3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.9673729eca566eae",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "Attacco Extra",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "XQZR87Zt1fcNpRNo",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "6955cd3f89714ce8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.7b5c9b1a6571371c",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 9,
+        "title": "Indomabile",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "4f9c2eac08704dc0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.14ec473c511f9c74",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 11,
+        "title": "Attacco Extra (2)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "FV8dXQaU67ZcJGap",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "ba3102568dbe4331",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.2fac295fad041809",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 13,
+        "title": "Indomabile (2 usi)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "xnY79CGINuryBzqA",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "0eff917f880c464d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.bdc321abbcf19505",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Scatto d'Azione (2 usi)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "f95d369ac6484999",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.86c5cb3ae957e352",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Indomabile (3 usi)",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "at7jyJNINfZf7PUt",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "e8e974c8e7364e11",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.4af2d440402f681d",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Attacco Extra (3)",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ],
+    "saves": [
+      "str",
+      "con"
+    ],
+    "skills": {
+      "number": 2,
+      "choices": [
+        "acr",
+        "ani",
+        "ath",
+        "his",
+        "ins",
+        "itm",
+        "prc",
+        "sur"
+      ]
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    },
+    "hd": {
+      "denomination": "d10",
+      "spent": 0
+    },
+    "primaryAbility": [
+      "str",
+      "dex"
+    ],
+    "startingEquipment": [],
+    "hitDice": "d10"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.70",
+      "tipo": "classe_base"
+    }
+  }
+}

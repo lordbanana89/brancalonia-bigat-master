@@ -1,0 +1,91 @@
+{
+  "id": "class-ranger-livello_1-nemico-prescelto",
+  "nome": "Nemico Prescelto",
+  "nome_brancalonia": "Preda Favorita",
+  "livello": 1,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 1° livello, hai esperienza significativa nello studio, tracciamento, caccia e persino nel parlare con un certo tipo di nemico. Scegli un tipo di nemico prescelto.",
+  "meccaniche": {
+    "numero_nemici": {
+      "livello_1": 1,
+      "livello_6": 2,
+      "livello_14": 3
+    },
+    "bonus": {
+      "survival_tracking": "Vantaggio per tracciare",
+      "intelligence_recall": "Vantaggio per ricordare info",
+      "linguaggio": "Impari 1 lingua associata"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "favored_enemy",
+    "advantage_checks": [
+      "Survival (tracking)",
+      "Intelligence (recall)"
+    ]
+  },
+  "tipi_nemici": [
+    "Aberrazioni",
+    "Bestie",
+    "Celestiali",
+    "Costrutti",
+    "Draghi",
+    "Elementali",
+    "Folletti",
+    "Immondi",
+    "Giganti",
+    "Melme",
+    "Mostruosità",
+    "Non-morti",
+    "Piante",
+    "Umanoidi (2 razze)"
+  ],
+  "tasha_alternative": {
+    "favored_foe": "1d4/1d6 danno concentrazione",
+    "più_versatile": "Funziona su qualsiasi nemico"
+  },
+  "utilizzo_pratico": {
+    "tracking": "Segui tracce con vantaggio",
+    "informazioni": "Conosci punti deboli",
+    "sociale": "Puoi parlare loro lingua"
+  },
+  "scelte_popolari": {
+    "umanoidi": "Orchi e goblinoidi",
+    "non_morti": "Campagne horror",
+    "draghi": "Late game power",
+    "bestie": "Sempre utile"
+  },
+  "limitazioni": {
+    "no_bonus_combattimento": "Solo tracking/knowledge",
+    "campagna_dipendente": "Inutile se nemici non presenti"
+  },
+  "evoluzione": {
+    "livello_6": "Aggiungi secondo tipo",
+    "livello_14": "Terzo tipo, copri più minacce"
+  },
+  "narrazione_brancalonia": {
+    "cacciatori_specializzati": "Esperti di creature specifiche",
+    "vendetta": "Nemici giurati personali",
+    "studio": "Anni di osservazione"
+  },
+  "note_dm": "Favored Enemy è molto situazionale. Coordina con DM per scegliere nemici rilevanti alla campagna. Tasha's Favored Foe più versatile.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.91",
+  "name": "Nemico Prescelto",
+  "img": "icons/skills/targeting/crosshair-creature-red.webp",
+  "_id": "l3wOUAqM3a4USFTv",
+  "_key": "!item!class-ranger-livello_1-nemico-prescelto",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

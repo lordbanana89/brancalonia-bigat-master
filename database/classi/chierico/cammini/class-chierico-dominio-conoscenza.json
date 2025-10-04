@@ -1,0 +1,59 @@
+{
+  "id": "class-chierico-dominio-conoscenza",
+  "nome": "Dominio della Conoscenza",
+  "fonte": "Manuale del Giocatore p.59",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Competenze Bonus",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bonus Proficiencies (Knowledge)"
+        }
+      },
+      {
+        "nome": "Benedizioni della Conoscenza",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Blessings of Knowledge"
+        }
+      }
+    ],
+    "livello_2": [
+      {
+        "nome": "Incanalare Divinità: Sapienza delle Ere",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Knowledge of the Ages"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Incanalare Divinità: Leggere i Pensieri",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Read Thoughts"
+        }
+      }
+    ],
+    "livello_8": [
+      {
+        "nome": "Incantesimi Potenti",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Potent Spellcasting (Knowledge)"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Visioni del Passato",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Visions of the Past"
+        }
+      }
+    ]
+  }
+}

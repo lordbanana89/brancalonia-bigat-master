@@ -1,0 +1,72 @@
+{
+  "_id": "3CwQJYeCEobSrmaP",
+  "_key": "!item!classguerrierolivello2azioneimpetuosa2c3be9",
+  "name": "Azione Impetuosa",
+  "type": "feat",
+  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>A partire dal 2° livello, puoi spingerti oltre i tuoi normali limiti per un istante. Nel tuo turno, puoi effettuare un'azione aggiuntiva oltre alla tua azione regolare e a una possibile azione bonus. Una volta usato questo privilegio, devi completare un riposo breve o lungo prima di poterlo usare di nuovo. A partire dal 17° livello, puoi usarlo due volte prima di un riposo, ma solo una volta nello stesso turno.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-guerriero-livello_2-azione-impetuosa",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72"
+    }
+  }
+}

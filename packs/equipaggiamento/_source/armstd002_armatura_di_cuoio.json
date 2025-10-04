@@ -1,0 +1,64 @@
+{
+  "_id": "uaRb9KQB55nGEbqF",
+  "_key": "!item!armstd002armaturadicuoiof3137c",
+  "name": "Armatura di Cuoio",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cuoio indurito e sagomato per proteggere il corpo.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 4.5,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "type": {
+      "value": "armor",
+      "subtype": "light",
+      "baseItem": "leather"
+    },
+    "armor": {
+      "value": 11,
+      "type": "light",
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": 0,
+    "stealth": false,
+    "properties": [],
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arm-std-002",
+      "categoria": "armatura_standard",
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "class-warlock-patrono-signore_fatato",
+  "nome": "Patrono Signore Fatato",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Presenza Fatata",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Fey Presence"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Fuga Nebbiosa",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Misty Escape"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Difese Affascinanti",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Beguiling Defenses"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Delirio Oscuro",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Dark Delirium"
+        }
+      }
+    ]
+  }
+}

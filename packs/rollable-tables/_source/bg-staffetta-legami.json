@@ -1,0 +1,106 @@
+{
+  "_id": "MXcznG6DodwrOVt0",
+  "_key": "!tables!MXcznG6DodwrOVt0",
+  "name": "Staffetta - Legami",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "9idVjBhdXj18Hr2o",
+      "type": 0,
+      "text": "Sono pronta a recapitare un messaggio alla compagnia che ho servito a lungo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!9idVjBhdXj18Hr2o"
+    },
+    {
+      "_id": "1oV3vbBoPsS1MnKu",
+      "type": 0,
+      "text": "Devo la vita a un avvertimento e non lascio morire nessuno se posso evitarlo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!1oV3vbBoPsS1MnKu"
+    },
+    {
+      "_id": "catRQRs9lam6yuIk",
+      "type": 0,
+      "text": "Il mio cavallo fedele è il mio compagno più fidato.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!catRQRs9lam6yuIk"
+    },
+    {
+      "_id": "vHiG4GSYTjelCv7A",
+      "type": 0,
+      "text": "Porto ancora la missiva che non riuscii a consegnare.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!vHiG4GSYTjelCv7A"
+    },
+    {
+      "_id": "4cdKxsW1g3sEh4eA",
+      "type": 0,
+      "text": "Una famiglia influente mi deve ancora un favore per un vecchio dispaccio.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!4cdKxsW1g3sEh4eA"
+    },
+    {
+      "_id": "W5mih41wyE4hiXPf",
+      "type": 0,
+      "text": "Non mi separo mai dal santino di San Bartolino.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!W5mih41wyE4hiXPf"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "staffetta",
+      "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

@@ -1,0 +1,10 @@
+{
+  "id": "race-dotato-tratto-fascino_innato",
+  "nome": "Fascino Innato",
+  "categoria": "brancalonia",
+  "dettagli": {
+    "descrizione": "La tua natura fatata ti rende affascinante",
+    "sociale": "+1 a prove Carisma con chi apprezza bellezza"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

@@ -1,0 +1,23 @@
+{
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Manuale Base Brancalonia",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "cimeli",
+      "nome": "Cimeli",
+      "file": "cimeli.json"
+    },
+    {
+      "id": "sistema-malefatte-taglia",
+      "nome": "Sistema Malefatte Taglia",
+      "file": "sistema_malefatte_taglia.json"
+    },
+    {
+      "id": "sistema-rissa",
+      "nome": "Sistema Rissa",
+      "file": "sistema_rissa.json"
+    }
+  ]
+}

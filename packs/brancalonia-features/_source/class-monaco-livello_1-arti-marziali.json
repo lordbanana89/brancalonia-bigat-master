@@ -1,0 +1,134 @@
+{
+  "id": "class-monaco-livello_1-arti-marziali",
+  "nome": "Arti Marziali",
+  "nome_brancalonia": "Pugni del Vento",
+  "livello": 1,
+  "tipo": "passivo",
+  "descrizione": "La tua pratica delle arti marziali ti garantisce maestria negli stili di combattimento che usano colpi senz'armi e armi da monaco.",
+  "meccaniche": {
+    "benefici": [
+      "Usa DEX invece di STR per attacco e danno",
+      "Tira d4 per danni (scala con livello)",
+      "Bonus action: colpo senz'armi dopo Attack action"
+    ],
+    "armi_monaco": [
+      "Shortsword",
+      "Armi semplici senza proprietà 'pesante' o 'due mani'"
+    ],
+    "dado_arti_marziali": {
+      "livello_1": "d4",
+      "livello_5": "d6",
+      "livello_11": "d8",
+      "livello_17": "d10"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "martial_arts",
+    "damage_die": "Scala con livello",
+    "finesse_override": "Tutte armi monaco = finesse",
+    "bonus_action_attack": true
+  },
+  "calcoli_dpr": {
+    "livello_1": {
+      "attacchi": "2 (main + bonus)",
+      "danno": "2d4+6 (11 medi) con DEX 16"
+    },
+    "livello_5": {
+      "attacchi": "3 (2 main + bonus)",
+      "danno": "3d6+12 (22.5 medi) con DEX 18"
+    },
+    "livello_11": {
+      "attacchi": "3 base",
+      "danno": "3d8+15 (28.5 medi) con DEX 20"
+    },
+    "livello_17": {
+      "attacchi": "3 base",
+      "danno": "3d10+15 (31.5 medi)"
+    }
+  },
+  "interazione_flurry": {
+    "normale": "1 bonus action attack",
+    "flurry_of_blows": "2 bonus action attacks (1 ki)",
+    "totale_con_flurry": {
+      "livello_1-4": "3 attacchi",
+      "livello_5+": "4 attacchi"
+    }
+  },
+  "armi_ottimali": {
+    "early_game": {
+      "quarterstaff": "d8 versatile (d4 con martial arts)",
+      "shortsword": "d6 sempre",
+      "scelta": "Shortsword per d6 garantito early"
+    },
+    "scaling": {
+      "livello_1-4": "Armi > pugni (d6-d8 vs d4)",
+      "livello_5-10": "Simili (d6 entrambi)",
+      "livello_11+": "Pugni migliori (d8-d10)"
+    }
+  },
+  "sinergie": {
+    "ki_features": "Flurry, Patient Defense, Step of Wind",
+    "stunning_strike": "Più attacchi = più chance stun",
+    "way_features": "Varia per sottoclasse",
+    "magic_items": "Insignia of Claws per +1"
+  },
+  "confronto_classi": {
+    "vs_fighter": "Monaco più attacchi level 1-4",
+    "vs_rogue": "Monaco consistent, rogue burst",
+    "vs_barbarian": "Monaco più attacchi, barb più danno per hit"
+  },
+  "vantaggi_unarmed": {
+    "sempre_armato": "Non può essere disarmato",
+    "nessun_metal": "Passa metal detector",
+    "prigione": "Combatte anche nudo",
+    "sociale": "Non sembra minaccia"
+  },
+  "two_weapon_fighting": {
+    "non_necessario": "Già hai bonus action attack",
+    "non_stack": "Solo 1 bonus action",
+    "feat_inutile": "Dual Wielder non serve"
+  },
+  "magic_weapon_consideration": {
+    "problema": "Pugni non sono magici (fino level 6)",
+    "soluzione_item": "Insignia of Claws, Eldritch Claw Tattoo",
+    "workaround": "Usa magic monk weapon se trovata"
+  },
+  "errori_comuni": {
+    "str_build": "Usare STR = perde troppo",
+    "dimenticare_bonus": "Non usare bonus action attack",
+    "armi_pesanti": "Greatsword = no martial arts",
+    "armor": "Armor = perde martial arts"
+  },
+  "ottimizzazione": {
+    "sempre": "Usa bonus action per attacco",
+    "positioning": "Sfrutta mobilità tra attacchi",
+    "target_priority": "Focus bersagli squish",
+    "ki_economy": "Non sprecare ki su flurry sempre"
+  },
+  "narrazione_brancalonia": {
+    "stili_combattimento": "Pugni, calci, testate",
+    "filosofia": "Il corpo è l'arma",
+    "addestramento": "Anni di pratica",
+    "precisione": "Colpire punti vitali"
+  },
+  "note_dm": "Martial Arts è il cuore del monaco. Il bonus action attack gratuito lo rende competitivo nel damage dal livello 1. Il dado scaling mantiene rilevanza.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78",
+  "name": "Arti Marziali",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "_id": "LDLaJ1HSdypIjpJo",
+  "_key": "!item!class-monaco-livello_1-arti-marziali",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

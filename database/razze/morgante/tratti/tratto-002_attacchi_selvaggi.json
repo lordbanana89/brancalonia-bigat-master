@@ -1,0 +1,10 @@
+{
+  "id": "race-morgante-tratto-attacchi_selvaggi",
+  "nome": "Attacchi Selvaggi",
+  "categoria": "base",
+  "dettagli": {
+    "descrizione": "Con critico in mischia, aggiungi un dado arma extra",
+    "meccanica": "Critico: +1 dado del danno base dell'arma"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

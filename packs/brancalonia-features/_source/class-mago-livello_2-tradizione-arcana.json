@@ -1,0 +1,201 @@
+{
+  "id": "class-mago-livello_2-tradizione-arcana",
+  "nome": "Tradizione Arcana",
+  "nome_brancalonia": "Scuola di Magia",
+  "livello": 2,
+  "tipo": "advancement",
+  "descrizione": "Al 2° livello, scegli una tradizione arcana, modellando la tua pratica della magia su una delle otto scuole di magia.",
+  "meccaniche": {
+    "scelta_sottoclasse": "Una delle 8+ scuole",
+    "privilegi_ottenuti": [
+      "2° livello: Savant e prima capacità",
+      "6° livello: Capacità scuola",
+      "10° livello: Capacità avanzata",
+      "14° livello: Capacità suprema"
+    ]
+  },
+  "scuole_disponibili": {
+    "abjuration": {
+      "nome": "Scuola di Abiurazione",
+      "focus": "Protezione e negazione",
+      "savant": "Copia abiurazione metà costo/tempo",
+      "arcane_ward": "Scudo HP = 2×livello mago + INT"
+    },
+    "conjuration": {
+      "nome": "Scuola di Evocazione",
+      "focus": "Teletrasporto e creazione",
+      "savant": "Copia evocazione metà costo/tempo",
+      "minor_conjuration": "Crea oggetti temporanei"
+    },
+    "divination": {
+      "nome": "Scuola di Divinazione",
+      "focus": "Conoscenza e previsione",
+      "savant": "Copia divinazione metà costo/tempo",
+      "portent": "2 d20 pre-tirati da sostituire"
+    },
+    "enchantment": {
+      "nome": "Scuola di Ammaliamento",
+      "focus": "Controllo mentale e charme",
+      "savant": "Copia ammaliamento metà costo/tempo",
+      "hypnotic_gaze": "Charme senza spell slot"
+    },
+    "evocation": {
+      "nome": "Scuola di Invocazione",
+      "focus": "Danno elementale",
+      "savant": "Copia invocazione metà costo/tempo",
+      "sculpt_spells": "Proteggi alleati da AoE"
+    },
+    "illusion": {
+      "nome": "Scuola di Illusione",
+      "focus": "Inganni e miraggi",
+      "savant": "Copia illusione metà costo/tempo",
+      "improved_minor_illusion": "Suono E immagine"
+    },
+    "necromancy": {
+      "nome": "Scuola di Necromanzia",
+      "focus": "Morte e non-morti",
+      "savant": "Copia necromanzia metà costo/tempo",
+      "grim_harvest": "Cura quando uccidi"
+    },
+    "transmutation": {
+      "nome": "Scuola di Trasmutazione",
+      "focus": "Alterazione e trasformazione",
+      "savant": "Copia trasmutazione metà costo/tempo",
+      "minor_alchemy": "Trasforma materiali temporaneamente"
+    }
+  },
+  "scuole_aggiuntive": {
+    "war_magic": {
+      "fonte": "Xanathar's",
+      "focus": "Combattimento e durabilità",
+      "arcane_deflection": "+2 AC o +4 save reaction"
+    },
+    "bladesinging": {
+      "fonte": "Tasha's",
+      "focus": "Magia e spada",
+      "bladesong": "AC + INT, speed, concentration"
+    },
+    "order_scribes": {
+      "fonte": "Tasha's",
+      "focus": "Maestria del grimorio",
+      "wizardly_quill": "Scrive magicamente veloce"
+    },
+    "chronurgy": {
+      "fonte": "Wildemount",
+      "focus": "Manipolazione tempo",
+      "chronal_shift": "Reroll d20 reaction"
+    },
+    "graviturgy": {
+      "fonte": "Wildemount",
+      "focus": "Controllo gravità",
+      "adjust_density": "Raddoppia/dimezza peso"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "subclass_choice",
+    "sistema": "Sblocca privilegi sottoclasse",
+    "progressione": [
+      2,
+      6,
+      10,
+      14
+    ]
+  },
+  "impatto_build": {
+    "specializzazione": "Definisce stile di gioco",
+    "ottimizzazione_spell": "Metà costo per scuola",
+    "capacità_uniche": "Abilità non replicabili"
+  },
+  "scelte_popolari": {
+    "divination": "Portent è incredibilmente potente",
+    "abjuration": "Tank mage con Arcane Ward",
+    "evocation": "Blaster che protegge alleati",
+    "bladesinging": "Gish definitivo",
+    "chronurgy": "Controllo supremo"
+  },
+  "sinergie_spell": {
+    "abjuration": [
+      "Shield",
+      "Counterspell",
+      "Dispel Magic"
+    ],
+    "conjuration": [
+      "Misty Step",
+      "Dimension Door",
+      "Teleport"
+    ],
+    "divination": [
+      "Detect Magic",
+      "See Invisibility",
+      "True Seeing"
+    ],
+    "enchantment": [
+      "Charm Person",
+      "Hold Person",
+      "Dominate"
+    ],
+    "evocation": [
+      "Fireball",
+      "Lightning Bolt",
+      "Cone of Cold"
+    ],
+    "illusion": [
+      "Disguise Self",
+      "Mirror Image",
+      "Major Image"
+    ],
+    "necromancy": [
+      "False Life",
+      "Vampiric Touch",
+      "Animate Dead"
+    ],
+    "transmutation": [
+      "Alter Self",
+      "Polymorph",
+      "True Polymorph"
+    ]
+  },
+  "progressione_potere": {
+    "livello_2": "Savant + capacità base",
+    "livello_6": "Capacità definitoria scuola",
+    "livello_10": "Potere avanzato",
+    "livello_14": "Maestria suprema"
+  },
+  "considerazioni_campagna": {
+    "high_combat": "Evocation, War Magic, Bladesinging",
+    "intrigue": "Enchantment, Illusion",
+    "exploration": "Conjuration, Transmutation",
+    "horror": "Necromancy, Divination"
+  },
+  "errori_comuni": {
+    "ignorare_savant": "Non copiare spell scuola",
+    "mono_focus": "Solo spell della scuola",
+    "sottovalutare": "Non usare capacità scuola"
+  },
+  "narrazione_brancalonia": {
+    "accademie": "Scuole di magia del Regno",
+    "maestri": "Apprendistato con arcimagi",
+    "tradizioni": "Antiche vie della magia",
+    "rivalità": "Competizione tra scuole"
+  },
+  "note_dm": "La scelta della tradizione arcana definisce completamente il tipo di mago. Divination's Portent e Evocation's Sculpt Spell sono particolarmente impattanti.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Tradizione Arcana",
+  "img": "icons/sundries/books/book-open-purple.webp",
+  "_id": "uUR52MqViBIfJ8oz",
+  "_key": "!item!class-mago-livello_2-tradizione-arcana",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

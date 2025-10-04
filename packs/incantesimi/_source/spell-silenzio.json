@@ -1,0 +1,115 @@
+{
+  "_id": "gI5gsc6OfPS18wnR",
+  "_key": "!item!spellsilenzio67c40f",
+  "name": "Silenzio",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Per la durata, nessun suono può essere creato all'interno o passare attraverso una sfera del raggio di 20 piedi centrata su un punto che scegli entro gittata. Qualsiasi creatura o oggetto interamente dentro la sfera è immune ai danni da tuono, e le creature sono assordate mentre sono interamente al suo interno. Lanciare un incantesimo che include una componente verbale è impossibile lì.</p><h3>Note per il DM</h3><p><em>Silence è il caster shutdown definitivo. 20 ft radius è enorme. Ritual option lo rende versatile. Posizionamento critico.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.275",
+    "level": 2,
+    "school": "ill",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": true,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "range": {
+      "value": 120,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-silenzio",
+      "fonte": "D&D 5e PHB p.275",
+      "note_dm": "Silence è il caster shutdown definitivo. 20 ft radius è enorme. Ritual option lo rende versatile. Posizionamento critico.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "rituale": true,
+        "attivazione": "action",
+        "range": 120,
+        "area": "20 ft radius sphere",
+        "durata": "10 minutes",
+        "concentrazione": true
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Illusione",
+        "level": 2
+      }
+    }
+  }
+}

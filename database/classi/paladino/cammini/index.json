@@ -1,0 +1,23 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "class-paladino-giuramento-antichi",
+      "nome": "Class Paladino Giuramento Antichi",
+      "file": "class-paladino-giuramento-antichi.json"
+    },
+    {
+      "id": "class-paladino-giuramento-devozione",
+      "nome": "Class Paladino Giuramento Devozione",
+      "file": "class-paladino-giuramento-devozione.json"
+    },
+    {
+      "id": "class-paladino-giuramento-vendetta",
+      "nome": "Class Paladino Giuramento Vendetta",
+      "file": "class-paladino-giuramento-vendetta.json"
+    }
+  ]
+}

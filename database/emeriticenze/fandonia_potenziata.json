@@ -1,0 +1,20 @@
+{
+  "nome": "Fandonia Potenziata",
+  "fonte": "Manuale Base p.40",
+  "tipo": "emeriticenza",
+  "descrizione": "Lancia incantesimi a slot superiore",
+  "requisiti": "6° livello + 9000 PE extra",
+  "usi_massimi": null,
+  "meccaniche": {
+    "potenziamento_incantesimi": {
+      "tipo": "narrativo",
+      "descrizione": "Lancia incantesimo conosciuto/preparato come slot +1 livello, 1/riposo breve",
+      "nota": "Richiede gestione custom durante lancio incantesimi"
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "emeriticenza_fandonia_potenziata",
+    "compendio": "emeriticenze"
+  }
+}

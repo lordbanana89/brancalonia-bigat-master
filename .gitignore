@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Foundry (ignora Data/ di Foundry, MA permetti modules/data/)
+/Data/
+!modules/data/
+*.lock
+*.db
+
+# Backups
+backups/
+*.tar.gz
+*.zip
+
+# Temp files
+*.tmp
+*.log
+*.bak
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Foundry VTT Compiled Packs (LevelDB/NeDB)
+# I file binari si rigenerano con: node fvtt-build-packs.mjs
+packs/**/*.ldb
+packs/**/MANIFEST-*
+packs/**/CURRENT
+packs/**/LOG
+packs/**/lost/
+
+# Backup temporanei
+packs/_source.backup/

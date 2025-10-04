@@ -1,0 +1,38 @@
+{
+  "_id": "4lE45npuDMBkhlk5",
+  "_key": "!item!bg-impresariolibro-con-i-nomi-di-aspiranti-teatranti-c9b76b",
+  "name": "Libro con i nomi di aspiranti teatranti",
+  "type": "loot",
+  "img": "icons/sundries/books/book-worn-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Libro con i nomi di aspiranti teatranti - Equipaggiamento iniziale del background impresario.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "impresario"
+    }
+  }
+}

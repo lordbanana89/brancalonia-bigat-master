@@ -1,0 +1,146 @@
+{
+  "nome": "Ambulante",
+  "fonte": "Manuale Base p.31",
+  "tipo": "background",
+  "descrizione": "Girovaghi, teatranti, zigani, venditori itineranti e tutto il popolo viaggiante",
+  "testo": {
+    "introduzione": [
+      "Arrotini, ombrellai, ciarlatani, giostrai, goliardi e tutto il popolo viaggiante del Regno vivono di strada in strada portando spettacoli, mercanzie e manodopera dove serve.",
+      "La loro cultura è eterogenea ma condivide la mancanza di radici, il gusto per la vita libera, la lingua segreta del Baccaglio e un forte senso di comunione tra viandanti.",
+      "Ovunque vadano gli ambulanti raccolgono dicerie, leggende e notizie che li rendono guide preziose del brulichio cittadino quanto delle Strade che non vanno da nessuna parte."
+    ],
+    "privilegio": {
+      "nome": "Storie della Strada",
+      "descrizione": "Puoi raccontare storie da taverna (vere o false a tua scelta) per intrattenere e raccogliere informazioni. Quando raccogli informazioni ottieni sempre una diceria aggiuntiva. Inoltre, quando il condottiero utilizza 'Strade che non vanno da nessuna parte', ottieni automaticamente un +1 al tiro.",
+      "implementazione": "creare sistema"
+    }
+  },
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Intrattenere e Storia",
+      "implementazione": {
+        "intrattenere": "system.skills.prf.value = 1",
+        "storia": "system.skills.his.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Uno strumento da artigianato a scelta",
+      "implementazione": "flags.brancalonia-bigat.toolChoice = 'artisan'",
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Baccaglio (gergo furfantesco)",
+      "implementazione": "system.traits.languages.value.push('baccaglio')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Monile di Santa Percorrenza, abito viaggiatore, borsa con 15 ma"
+    },
+    "privilegio_storie_strada": {
+      "tipo": "attivo",
+      "descrizione": "Storie da taverna (vere o false), diceria extra quando raccogli info, +1 automatico quando condottiero usa Strade che non vanno da nessuna parte",
+      "implementazione": {
+        "dicerie_extra": "flags.brancalonia-bigat.storieStrada = true",
+        "vantaggio_strade": "flags.brancalonia-bigat.stradeVantaggio = true"
+      },
+      "mode": 5
+    }
+  },
+  "dettagli": {
+    "identificatore": "ambulante",
+    "ricchezza_iniziale": "15 ma",
+    "equipaggiamento": [
+      "Monile di Santa Percorrenza",
+      "Abito da viaggiatore",
+      "Borsa con 15 ma"
+    ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "intrattenere",
+        "storia"
+      ]
+    },
+    {
+      "tipo": "competenze_strumenti",
+      "scelte": 1,
+      "categoria": "strumenti_artigianato"
+    },
+    {
+      "tipo": "linguaggi",
+      "elenco": [
+        "baccaglio"
+      ]
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "Storie della Strada",
+      "descrizione": "Ottieni sempre una diceria aggiuntiva quando raccogli informazioni e hai vantaggio nelle prove relative al percorrere le Strade che non vanno da nessuna parte.",
+      "fonte": "Manuale Base p.31",
+      "implementazione": {
+        "dicerie_extra": true,
+        "vantaggio_strade": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "Parla spesso in Baccaglio e deride gli stanziali",
+        "Persona solida con soluzioni pratiche",
+        "Sognatore irrequieto",
+        "Curioso di ogni dettaglio locale",
+        "Ama i piaceri della vita",
+        "Appassionato di arte e spettacolo",
+        "Usa toni fascinosi e nomi d'arte",
+        "Segue moda e stile della comunità"
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Fratellanza (Buono)",
+        "Rispetto (Legale)",
+        "Buon senso (Caotico)",
+        "Interesse personale (Malvagio)",
+        "Legge della strada (Neutrale)",
+        "Viaggio (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "La mia comunità viaggiante è la mia unica famiglia.",
+        "La gente del villaggio d'origine che ho lasciato anni fa.",
+        "La matriarca della nostra carovana, capace di leggermi nell'animo.",
+        "La paisà che un giorno mi ha fregato lasciandomi di stucco.",
+        "Il teatrante che mi ha insegnato i segreti della commedia.",
+        "Il ciarlatano dai mille volti che continua a incrociare la mia strada."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "Invidio la vita semplice dei paisà e li guardo con livore.",
+        "Sono un furfante nato e vedo tutti come vittime di un imbroglio.",
+        "Sono completamente inaffidabile e faccio sempre di testa mia.",
+        "Ho una scala di valori estranea al sentire comune.",
+        "Amo troppo vino e droghe per rinunciarvi.",
+        "Cerco solo di arricchirmi senza fatica."
+      ]
+    }
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "ambulante001",
+    "compendio": "backgrounds"
+  }
+}

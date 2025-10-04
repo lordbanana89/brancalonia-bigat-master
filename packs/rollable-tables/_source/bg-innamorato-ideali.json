@@ -1,0 +1,106 @@
+{
+  "_id": "QVjvKkxpFcYC3oUw",
+  "_key": "!tables!QVjvKkxpFcYC3oUw",
+  "name": "Innamorato - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "jBOfhKGwNNxU6xHC",
+      "type": 0,
+      "text": "Fiducia. Vedo il mondo con fantasia e credo negli altri. (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!jBOfhKGwNNxU6xHC"
+    },
+    {
+      "_id": "xuhdFgBScPC0kWVE",
+      "type": 0,
+      "text": "Etichetta. Non comprometto mai l'immagine con volgarità. (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!xuhdFgBScPC0kWVE"
+    },
+    {
+      "_id": "pfXV9wJFCE9UvEh1",
+      "type": 0,
+      "text": "Plutonianticismo. È meglio amare e soffrire che non amare affatto. (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!pfXV9wJFCE9UvEh1"
+    },
+    {
+      "_id": "5xCq6HKUelxUfIgU",
+      "type": 0,
+      "text": "Plagio. Uso emozioni altrui per il mio vantaggio. (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!5xCq6HKUelxUfIgU"
+    },
+    {
+      "_id": "nQltx1npmrmJhote",
+      "type": 0,
+      "text": "Filosofia. Ogni sentimento è giustificabile e filtro il mondo attraverso di esso. (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!nQltx1npmrmJhote"
+    },
+    {
+      "_id": "9CjQuAhBZt2r8ukw",
+      "type": 0,
+      "text": "Autenticità. Cerco emozioni vere oltre le corti. (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!9CjQuAhBZt2r8ukw"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "innamorato",
+      "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

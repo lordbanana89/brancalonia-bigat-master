@@ -1,0 +1,66 @@
+{
+  "id": "spell-ritirata-veloce",
+  "nome": "Ritirata Veloce",
+  "nome_inglese": "Expeditious Retreat",
+  "livello": 1,
+  "scuola": "Trasmutazione",
+  "tempo_lancio": "1 azione bonus",
+  "gittata": "Personale",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "Concentrazione, fino a 10 minuti",
+  "descrizione": "Questo incantesimo ti permette di muoverti a velocità incredibile. Quando lanci questo incantesimo, e poi come azione bonus in ognuno dei tuoi turni fino al termine dell'incantesimo, puoi effettuare l'azione Scatto.",
+  "classi": ["Mago", "Stregone", "Warlock"],
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "bonus",
+    "range": "self",
+    "durata": "10 minutes",
+    "concentrazione": true,
+    "effetto": "Dash as bonus action"
+  },
+  "meccaniche": {
+    "cast": "Bonus action per castare",
+    "ogni_turno": "Bonus action per Dash",
+    "movimento_totale": "Doppio movimento",
+    "esempio_30ft": "60 ft di movimento/turno"
+  },
+  "non_e": {
+    "non_speed_boost": "Non aumenta speed base",
+    "non_automatico": "Richiede bonus action",
+    "non_free_disengage": "Provoca opportunity"
+  },
+  "confronto_mobilita": {
+    "vs_longstrider": "Expeditious più veloce ma concentration",
+    "vs_misty_step": "Continuo vs teleport",
+    "vs_dash_action": "Lascia action libera"
+  },
+  "utilizzi": [
+    "Fuga da combattimento perso",
+    "Inseguimenti",
+    "Esplorare velocemente",
+    "Kiting nemici lenti",
+    "Raggiungere obiettivi distanti"
+  ],
+  "azione_libera": {
+    "cast_spell": "Puoi castare e muovere",
+    "attack": "Attack + movimento",
+    "dodge": "Dodge + movimento per sicurezza"
+  },
+  "problemi": [
+    "Concentrazione per movimento",
+    "Non evita opportunity attacks",
+    "Bonus action occupata",
+    "Non aiuta party"
+  ],
+  "sinergie": [
+    "Mobile feat per no opportunity",
+    "Cunning Action rogue conflitto",
+    "Action Surge fighter combo"
+  ],
+  "note_dm": "Expeditious Retreat è mobilità sostenuta economica. Nome inganna - ottimo anche per inseguire. Concentrazione è costo reale.",
+  "fonte": "D&D 5e PHB p.238"
+}

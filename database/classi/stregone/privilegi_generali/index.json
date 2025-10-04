@@ -1,0 +1,23 @@
+{
+  "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "class-stregone-livello_1-origine-stregonesca",
+      "nome": "Sangue Magico",
+      "file": "class-stregone-livello_1-origine-stregonesca.json"
+    },
+    {
+      "id": "class-stregone-livello_2-fonte-magia",
+      "nome": "Potere Interiore",
+      "file": "class-stregone-livello_2-fonte-magia.json"
+    },
+    {
+      "id": "class-stregone-livello_3-metamagia",
+      "nome": "Distorsione Arcana",
+      "file": "class-stregone-livello_3-metamagia.json"
+    }
+  ]
+}

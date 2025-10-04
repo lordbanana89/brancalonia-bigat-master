@@ -1,0 +1,67 @@
+{
+  "id": "spell-raggio-rovente",
+  "nome": "Raggio Rovente",
+  "nome_inglese": "Scorching Ray",
+  "livello": 2,
+  "scuola": "Invocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "120 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "Istantanea",
+  "descrizione": "Crei tre raggi di fuoco e li scagli verso bersagli entro gittata. Puoi scagliarli verso un bersaglio o diversi. Effettua un attacco a distanza con incantesimo per ogni raggio. Se colpisci, il bersaglio subisce 2d6 danni da fuoco.",
+  "classi": ["Mago", "Stregone"],
+  "scaling": {
+    "slot_2": "3 raggi",
+    "slot_3": "4 raggi",
+    "slot_4": "5 raggi",
+    "slot_5": "6 raggi",
+    "slot_6": "7 raggi"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 2,
+    "attivazione": "action",
+    "range": 120,
+    "attacco": "ranged spell",
+    "danno_per_raggio": "2d6",
+    "danno_tipo": "fire",
+    "numero_attacchi": 3
+  },
+  "meccaniche": {
+    "attacchi_separati": "Roll separato per raggio",
+    "bersagli_flessibili": "1-3 creature diverse",
+    "concentrazione_fire": "Tutti su stesso target",
+    "crit_chance": "Più raggi = più chance crit"
+  },
+  "danno_potenziale": {
+    "per_raggio": "2d6 (7 medi)",
+    "totale_slot2": "6d6 (21 medi) se tutti hit",
+    "totale_slot5": "12d6 (42 medi) se tutti hit",
+    "confronto_fireball": "Single target > AoE"
+  },
+  "tattiche": [
+    "Focus fire su boss",
+    "Spread per finire minions",
+    "Trigger concentration saves multipli",
+    "Evitare resistenze spreading"
+  ],
+  "hex_interaction": {
+    "hex_warlock": "+1d6 per OGNI raggio che colpisce",
+    "valore": "3d6 extra con hex se tutti hit"
+  },
+  "problemi": [
+    "Fire resistance comune",
+    "Può missare tutti i raggi",
+    "No AoE coverage",
+    "Richiede line of sight multipli"
+  ],
+  "evocation_wizard": {
+    "empowered": "+INT a un raggio",
+    "potent": "Affidabilità migliorata"
+  },
+  "note_dm": "Scorching Ray è il single-target damage di livello 2. Flessibilità bersagli ottima. Scaling lineare efficiente. Fire damage limitante.",
+  "fonte": "D&D 5e PHB p.273"
+}

@@ -1,0 +1,38 @@
+{
+  "_id": "cOLliFw3uuAFBs1M",
+  "_key": "!item!bg-duromazzo-di-minchiate-o-altro-gioco-77bbe2",
+  "name": "Mazzo di minchiate o altro gioco",
+  "type": "loot",
+  "img": "icons/sundries/gaming/playing-cards.webp",
+  "system": {
+    "description": {
+      "value": "<p>Mazzo di minchiate o altro gioco - Equipaggiamento iniziale del background duro.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "duro"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "generatore-bettole-tenutario",
+  "titolo": "Tenutario",
+  "dado": "1d20",
+  "voci": [
+    {"tiro": 1, "descrizione": "Giovannone \"l'Animale\", omaccione coperto di peli persino sui palmi, piu simile a un orso che a un uomo."},
+    {"tiro": 2, "descrizione": "Capitan Filone Filobellico detto \"Foratrippe\", ex soldato di ventura per terre e mari; racconta battaglie inventate e pretende spacconate sempre inferiori alle sue."},
+    {"tiro": 3, "descrizione": "Uffo detto Mangiapane, dall'alito di cipolla, spilorcio come la fame: per scarsa luce o difetto alla vista chiama tutti con lo stesso nome."},
+    {"tiro": 4, "descrizione": "Florestano detto \"Ferro Piuma\", pagano piu largo che alto, mani come vanghe, nano ma pesante di mano."},
+    {"tiro": 5, "descrizione": "Sila, una Morgante amante del canto (anche troppo)."},
+    {"tiro": 6, "descrizione": "Paganetto e Serafina, coppia di anziani un po' sordi, bassi e tarchiati, sempre intenti a litigare; si distinguono per il fazzoletto in testa di lei."},
+    {"tiro": 7, "descrizione": "Gigi detto il Troione, Mattatore in pensione che parla solo in rima e non risponde a chi non fa altrettanto."},
+    {"tiro": 8, "descrizione": "Armanda, enorme e manesca, impone etichetta maniacale: punisce con schiaffi, calci e improperi ogni errore di dizione o postura indegna di un cortigiano del Re Sola."},
+    {"tiro": 9, "descrizione": "Ildebrando, nobilotto decaduto che rifila agli altri i vizi che lo hanno rovinato."},
+    {"tiro": 10, "descrizione": "Massenzio detto \"Cicuta\", baffi e sopracciglia folti, noto preparatore di veleni e intrugli anche quando dovrebbe limitarsi a cucinare."},
+    {"tiro": 11, "descrizione": "Sora Neta, parla solo urlando e chiama tutti vossignoria."},
+    {"tiro": 12, "descrizione": "Pagnocco, vecchia marionetta mezza crepata, accompagnata dall'anziano padre Geppo."},
+    {"tiro": 13, "descrizione": "Lupo detto il Solitario, Selvatico con una grossa spada appesa dietro il bancone, l'elsa reca un sole dorato."},
+    {"tiro": 14, "descrizione": "Madama Dore assieme alle sue numerose \"figlie\"."},
+    {"tiro": 15, "descrizione": "Francisbaldo, vecchio tirchio che dice di avere sempre caldo: camino spento, zuppa e carne servite fredde."},
+    {"tiro": 16, "descrizione": "Drago figlio di Drago, tizio segaligno con piu denti d'oro che veri."},
+    {"tiro": 17, "descrizione": "Salmastra da Vercigogna, alta due metri con braccia da spezzare un toro; sostiene di essere un duca vittima di sortilegio."},
+    {"tiro": 18, "descrizione": "Pantegone, tizio imbacuccato in stracci; qualcosa ogni tanto si muove e squittisce sotto gli abiti."},
+    {"tiro": 19, "descrizione": "Mirandolina, bella e sveglia, battuta pronta; la Bettola e piena di spasimanti che si rendono ridicoli per lei."},
+    {"tiro": 20, "descrizione": "Abelarda, vecchietta con la crocchia che tutti chiamano Nonna; gestisce il postaccio con Scartoffia e il nipote adottivo Spicciolo, famosa per le sberle che assesta anche ai peggiori attaccabrighe."}
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "84"
+  }
+}

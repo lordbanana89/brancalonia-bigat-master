@@ -1,0 +1,45 @@
+{
+  "id": "029",
+  "nome": "Il Grimorio dello Studente Suicida",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Libro di incantesimi con pagine macchiate di sangue",
+  "proprieta": "Contiene 3 incantesimi casuali di 1°-3° livello",
+  "maledizione": "Ogni incantesimo imparato costa 1 punto Saggezza permanente",
+  "valore": "1200 mo",
+  "storia": "Lo studente impazzì cercando la formula perfetta",
+  "maledizione_specifica": "Ogni incantesimo imparato costa 1 punto Saggezza permanente",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "permanent_stat_loss",
+      "cost": "1_wis_per_spell",
+      "learnedSpells": [],
+      "effectDescription": "Conoscenza arcana a prezzo della sanità"
+    },
+    "hooks": [],
+    "macros": ["learnSpellFromGrimoire"],
+    "ui_config": {
+      "showCost": true,
+      "costWarning": "⚠️ ATTENZIONE: Imparare costa 1 SAG PERMANENTE!",
+      "showLearnedSpells": true,
+      "confirmDialog": true
+    },
+    "narrative_reminders": [
+      "Contiene 3 incantesimi casuali di livello 1°-3° (DM: scegliere o tirare)",
+      "Ogni incantesimo imparato costa 1 punto SAGGEZZA PERMANENTE",
+      "La perdita di SAG non è recuperabile con riposo",
+      "Può essere recuperata con Greater Restoration o Wish",
+      "Lo studente originale impazzì studiando questi incantesimi",
+      "Le pagine sono macchiate di sangue (suo?)",
+      "SAG a 0 = follia permanente",
+      "Ottimo per potere rapido, terribile a lungo termine",
+      "Tracciare quali incantesimi sono stati imparati"
+    ]
+  },
+  "img": "icons/sundries/books/book-symbol-eye-purple.webp"
+}

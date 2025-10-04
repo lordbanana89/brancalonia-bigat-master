@@ -1,0 +1,72 @@
+{
+  "_id": "rQ3hnq9VQBE89jqF",
+  "_key": "!item!classchiericolivello2incanalaredivinitafe745d",
+  "name": "Incanalare Divinità",
+  "type": "feat",
+  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Al 2° livello, ottieni la capacità di incanalare energia divina direttamente dalla tua divinità, usando quell'energia per alimentare effetti magici. Inizi con due di questi effetti: Scacciare Non Morti e un effetto determinato dal tuo dominio. Quando usi Incanalare Divinità, scegli quale effetto creare. Devi poi completare un riposo breve o lungo per usare di nuovo Incanalare Divinità.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-chierico-livello_2-incanalare-divinita",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+    }
+  }
+}

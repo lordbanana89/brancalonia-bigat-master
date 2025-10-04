@@ -1,0 +1,41 @@
+{
+  "id": "036",
+  "nome": "Il Tamburo di Guerra Silenzioso",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Tamburo che non emette suono",
+  "proprieta": "Il suo ritmo si sente solo nella mente, coordina perfettamente le truppe",
+  "valore": "750 mo",
+  "storia": "Il tamburino continuò a suonare anche da morto",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "telepathic_coordination",
+      "auraRange": 60,
+      "targetType": "truppe_alleate",
+      "benefit": "vantaggio_iniziativa_coordinazione",
+      "description": "Ritmo telepatico coordina truppe"
+    },
+    "hooks": ["rollInitiative"],
+    "macros": ["playDrum"],
+    "ui_config": {
+      "showAuraRange": true,
+      "auraRangeText": "Coordinazione telepati ca: 18m (60 piedi)",
+      "showBenefit": true,
+      "benefitText": "Alleati: vantaggio iniziativa + coordinazione tattica"
+    },
+    "narrative_reminders": [
+      "Il tamburo non produce suono udibile",
+      "Gli alleati entro 18m sentono il ritmo nella mente",
+      "Fornisce vantaggio all'iniziativa per alleati coordinati",
+      "Permette azioni tattiche sincronizzate perfette",
+      "Il tamburino morto continua a suonare spiritualmente",
+      "Ottimo per imboscate silenziose ma coordinate"
+    ]
+  },
+  "img": "icons/tools/instruments/drum-tan.webp"
+}

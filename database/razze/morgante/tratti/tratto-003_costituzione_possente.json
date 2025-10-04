@@ -1,0 +1,10 @@
+{
+  "id": "race-morgante-tratto-costituzione_possente",
+  "nome": "Costituzione Possente",
+  "categoria": "base",
+  "dettagli": {
+    "descrizione": "Conti come una taglia più grande per capacità carico e spinta/trascinamento",
+    "meccanica": "Capacità carico × 2"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

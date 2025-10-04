@@ -1,0 +1,566 @@
+{
+  "_id": "RV8s0aOCe28I47SC",
+  "_key": "!item!class-druido-e31618",
+  "name": "Druido",
+  "type": "class",
+  "img": "icons/magic/nature/tree-elm-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Custode dei cicli naturali che richiama la magia della terra e muta forma per proteggere il reame.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.64",
+    "identifier": "druido",
+    "levels": 20,
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "USpnEg2ZxfiGx5TQ",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "Punti Ferita"
+      },
+      {
+        "_id": "cu7wte3sgnuos3b1",
+        "type": "SpellcastingValue",
+        "configuration": {},
+        "value": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "12": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "14": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "16": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        "title": "Slot Incantesimi"
+      },
+      {
+        "_id": "a7134dd7e2ec4d87",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.878c69ad55fc4d51",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Druidico",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "624bd9295d704991",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.5bd886d25134eb1b",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Incantesimi",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "56b8ef1fcb1243b9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.992018da5d8fce8d",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Forma Selvatica",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "fd20ae9f43114bbe",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.6d66f2635bb56e79",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Circolo Druidico",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "b1850340d01e451d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.234185d21039cc8a",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 4,
+        "title": "Forma Selvatica Migliorata",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "XlFH73QhKenBXsaq",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "6abe5ed93f664f40",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.7c1fbb4e8daa45c7",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Privilegio del Circolo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "93b78120985b463c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.aa83a4cbed13a1c4",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 8,
+        "title": "Forma Selvatica Migliorata",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "0JjnnMAPtUoQde6C",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "6d0515cdf23d4117",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.400f87e45d30d4ad",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 10,
+        "title": "Privilegio del Circolo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "fwtNDI4Ug05bUlia",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "2724b0840ae04e7e",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.1b2089b532ee0186",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 14,
+        "title": "Privilegio del Circolo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "4MZi0hhgQKgMacZb",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "96308daacec34bf2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.a84ae9e796eeb8f8",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 18,
+        "title": "Senza Tempo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "1475f5169b3b41bf",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.3b1c21aa02bae1ed",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 18,
+        "title": "Incantesimi Bestiali",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "5IxEQivq5GOb4V6C",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "bf26d7cf23f245fd",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.5aeba80d469f3bdd",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Arcidruido",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ],
+    "saves": [
+      "int",
+      "wis"
+    ],
+    "skills": {
+      "number": 2,
+      "choices": [
+        "arc",
+        "ani",
+        "ins",
+        "med",
+        "nat",
+        "prc",
+        "rel",
+        "sur"
+      ]
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "wis"
+    },
+    "hd": {
+      "denomination": "d8",
+      "spent": 0
+    },
+    "primaryAbility": [
+      "wis"
+    ],
+    "startingEquipment": [],
+    "hitDice": "d8"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.64",
+      "tipo": "classe"
+    }
+  }
+}

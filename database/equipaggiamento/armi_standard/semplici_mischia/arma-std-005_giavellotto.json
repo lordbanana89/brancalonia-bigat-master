@@ -1,0 +1,20 @@
+{
+  "id": "arma-std-005",
+  "nome": "Giavellotto",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "5 ma",
+  "danni": "1d6 perforanti",
+  "proprieta": [
+    "Lancio (9/36 m)"
+  ],
+  "peso": "0.9 kg",
+  "descrizione": "Lancia leggera bilanciata per il lancio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

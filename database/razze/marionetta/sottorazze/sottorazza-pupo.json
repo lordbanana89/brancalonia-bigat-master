@@ -1,0 +1,14 @@
+{
+  "id": "race-marionetta-sottorazza-pupo",
+  "nome": "Pupo",
+  "dettagli": {
+    "nome": "Pupo",
+    "taglia": "Piccola",
+    "bonus": "+1 Carisma",
+    "tratto": {
+      "tradizione_teatrale": "Competenza in Intrattenere",
+      "voce_potente": "Voce udibile al doppio distanza normale"
+    }
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

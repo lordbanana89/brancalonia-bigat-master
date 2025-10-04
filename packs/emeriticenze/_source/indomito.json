@@ -1,0 +1,76 @@
+{
+  "_id": "6Plh93Kc2KfvSS4F",
+  "_key": "!item!indomito84d610",
+  "name": "Indomito",
+  "type": "feat",
+  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Immunità alla paura</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base p.40",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale Base p.40",
+      "validazione": {
+        "implementato": false,
+        "file_id": "emeriticenza_indomito",
+        "compendio": "emeriticenze"
+      }
+    }
+  }
+}

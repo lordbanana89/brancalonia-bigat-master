@@ -1,0 +1,120 @@
+{
+  "_id": "SCZOQUs6dwSMGMuW",
+  "_key": "!item!ambulante",
+  "name": "Ambulante",
+  "type": "background",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Girovaghi, teatranti, zigani, venditori itineranti e tutto il popolo viaggiante</em></p>\n<p>Arrotini, ombrellai, ciarlatani, giostrai, goliardi e tutto il popolo viaggiante del Regno vivono di strada in strada portando spettacoli, mercanzie e manodopera dove serve.</p>\n<p>La loro cultura è eterogenea ma condivide la mancanza di radici, il gusto per la vita libera, la lingua segreta del Baccaglio e un forte senso di comunione tra viandanti.</p>\n<p>Ovunque vadano gli ambulanti raccolgono dicerie, leggende e notizie che li rendono guide preziose del brulichio cittadino quanto delle Strade che non vanno da nessuna parte.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Intrattenere e Storia</p>\n<p><strong>Competenze Strumenti:</strong> Uno strumento da artigianato a scelta</p>\n<p><strong>Linguaggi:</strong> Baccaglio (gergo furfantesco)</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Monile di Santa Percorrenza</li>\n<li>Abito da viaggiatore</li>\n<li>Borsa con 15 ma</li>\n</ul>\n\n<h3>Privilegio: Storie della Strada</h3>\n<p>Quando raccogli informazioni ottieni sempre una diceria aggiuntiva e hai vantaggio nelle prove per percorrere le Strade che non vanno da nessuna parte (Manuale Base p.84).</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Parla spesso in Baccaglio e deride gli stanziali</td></tr>\n<tr><td>2</td><td>Persona solida con soluzioni pratiche</td></tr>\n<tr><td>3</td><td>Sognatore irrequieto</td></tr>\n<tr><td>4</td><td>Curioso di ogni dettaglio locale</td></tr>\n<tr><td>5</td><td>Ama i piaceri della vita</td></tr>\n<tr><td>6</td><td>Appassionato di arte e spettacolo</td></tr>\n<tr><td>7</td><td>Usa toni fascinosi e nomi d'arte</td></tr>\n<tr><td>8</td><td>Segue moda e stile della comunità</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Fratellanza (Buono)</td></tr>\n<tr><td>2</td><td>Rispetto (Legale)</td></tr>\n<tr><td>3</td><td>Buon senso (Caotico)</td></tr>\n<tr><td>4</td><td>Interesse personale (Malvagio)</td></tr>\n<tr><td>5</td><td>Legge della strada (Neutrale)</td></tr>\n<tr><td>6</td><td>Viaggio (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>La mia comunità viaggiante è la mia unica famiglia.</td></tr>\n<tr><td>2</td><td>La gente del villaggio d'origine che ho lasciato anni fa.</td></tr>\n<tr><td>3</td><td>La matriarca della nostra carovana, capace di leggermi nell'animo.</td></tr>\n<tr><td>4</td><td>La paisà che un giorno mi ha fregato lasciandomi di stucco.</td></tr>\n<tr><td>5</td><td>Il teatrante che mi ha insegnato i segreti della commedia.</td></tr>\n<tr><td>6</td><td>Il ciarlatano dai mille volti che continua a incrociare la mia strada.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Invidio la vita semplice dei paisà e li guardo con livore.</td></tr>\n<tr><td>2</td><td>Sono un furfante nato e vedo tutti come vittime di un imbroglio.</td></tr>\n<tr><td>3</td><td>Sono completamente inaffidabile e faccio sempre di testa mia.</td></tr>\n<tr><td>4</td><td>Ho una scala di valori estranea al sentire comune.</td></tr>\n<tr><td>5</td><td>Amo troppo vino e droghe per rinunciarvi.</td></tr>\n<tr><td>6</td><td>Cerco solo di arricchirmi senza fatica.</td></tr>\n</tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base p.31",
+    "identifier": "ambulante",
+    "advancement": [
+      {
+        "_id": "yMNwWVDqACMr8lfA",
+        "type": "Improvement",
+        "configuration": {
+          "skills": {
+            "chosen": [],
+            "fixed": [
+              "prf",
+              "his"
+            ]
+          }
+        },
+        "value": {
+          "skills": [
+            "prf",
+            "his"
+          ]
+        },
+        "level": 0,
+        "title": "Competenze del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "zzidKn47Tl2a2R4g",
+        "type": "Improvement",
+        "configuration": {
+          "tools": {
+            "chosen": {
+              "count": 1,
+              "pool": [
+                "artisan"
+              ]
+            },
+            "fixed": []
+          }
+        },
+        "value": {
+          "tools": []
+        },
+        "level": 0,
+        "title": "Strumenti del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      },
+      {
+        "_id": "ALWzEQqbC1ckuSWq",
+        "type": "Improvement",
+        "configuration": {
+          "languages": {
+            "chosen": [],
+            "fixed": [
+              "baccaglio"
+            ]
+          }
+        },
+        "value": {
+          "languages": [
+            "baccaglio"
+          ]
+        },
+        "level": 0,
+        "title": "Linguaggi del Background",
+        "classRestriction": "",
+        "appliedEffects": []
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_id": "6910f3ae702fe71f",
+        "type": "linked",
+        "count": 1,
+        "sort": 0,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-ambulantemonile-di-santa-percorrenza-5b1532"
+      },
+      {
+        "_id": "1cc21d0209b67cfd",
+        "type": "linked",
+        "count": 1,
+        "sort": 100000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-ambulanteabito-da-viaggiatore-fbac7f"
+      },
+      {
+        "_id": "36a71d2ef4433c08",
+        "type": "linked",
+        "count": 1,
+        "sort": 200000,
+        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-ambulanteborsa-con-15-ma-ae4cc8"
+      }
+    ],
+    "wealth": "15"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale Base p.31",
+      "tipo": "background"
+    }
+  }
+}

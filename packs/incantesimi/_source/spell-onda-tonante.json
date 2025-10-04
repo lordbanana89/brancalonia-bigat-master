@@ -1,0 +1,116 @@
+{
+  "_id": "MTfcDShZCyjqJpVk",
+  "_key": "!item!spellondatonante919dc2",
+  "name": "Onda Tonante",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un'onda di forza tonante si propaga da te. Ogni creatura in un cubo di 15 piedi che origina da te deve effettuare un tiro salvezza su Costituzione. Con un fallimento, una creatura subisce 2d8 danni da tuono ed è spinta di 10 piedi lontano da te. Con un successo, la creatura subisce metà danni e non è spinta. Inoltre, oggetti non fissati che sono completamente dentro l'area di effetto sono automaticamente spinti 10 piedi lontano da te dall'effetto dell'incantesimo, e l'incantesimo emette un boato tonante udibile fino a 300 piedi.</p><h3>Note per il DM</h3><p><em>Thunderwave ottimo controllo livello 1. Push 10 ft molto utile tatticamente. Rumore 300 ft è svantaggio importante.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.282",
+    "level": 1,
+    "school": "con",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": 15,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-onda-tonante",
+      "fonte": "D&D 5e PHB p.282",
+      "note_dm": "Thunderwave ottimo controllo livello 1. Push 10 ft molto utile tatticamente. Rumore 300 ft è svantaggio importante.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "attivazione": "action",
+        "area": "15 ft cube",
+        "save": "constitution",
+        "danno": "2d8",
+        "danno_tipo": "thunder",
+        "push": "10 ft",
+        "half_on_save": true
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Invocazione",
+        "level": 1
+      }
+    }
+  }
+}

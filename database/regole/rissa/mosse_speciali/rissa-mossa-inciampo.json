@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-inciampo",
+  "nome": "Inciampo",
+  "requisiti": "Destrezza 13+",
+  "costo": "1 slot",
+  "effetto": "Il bersaglio deve fare TS Destrezza CD 8 + prof + Des o cadere prono",
+  "combo": "Se prono, il tuo prossimo attacco ha vantaggio",
+  "fonte": "Brancalonia Manuale Base"
+}

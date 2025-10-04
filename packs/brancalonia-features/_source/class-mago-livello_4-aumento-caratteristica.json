@@ -1,0 +1,150 @@
+{
+  "id": "class-mago-livello_4-aumento-caratteristica",
+  "nome": "Aumento dei Punteggi di Caratteristica",
+  "nome_brancalonia": "Crescita del Sapiente",
+  "livello": 4,
+  "tipo": "advancement",
+  "descrizione": "Quando raggiungi il 4° livello, e poi di nuovo all'8°, 12°, 16° e 19° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, o puoi aumentare due punteggi di caratteristica a tua scelta di 1. Come di norma, non puoi aumentare un punteggio di caratteristica sopra 20 usando questa capacità. In alternativa puoi scegliere un talento.",
+  "meccaniche": {
+    "opzioni": [
+      "+2 a una caratteristica",
+      "+1 a due caratteristiche",
+      "1 talento"
+    ],
+    "livelli_disponibili": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
+    "limite": "Max 20 per caratteristica"
+  },
+  "implementazione_foundry": {
+    "tipo": "advancement",
+    "advancement_type": "AbilityScoreImprovement",
+    "configurazione": {
+      "points": 2,
+      "cap": 2
+    }
+  },
+  "priorità_mago": {
+    "primaria": {
+      "intelligenza": "Massimizzare per DC e spell preparati",
+      "obiettivo": "INT 20 entro livello 8"
+    },
+    "secondarie": {
+      "costituzione": "Sopravvivenza e concentrazione",
+      "destrezza": "AC e iniziativa"
+    }
+  },
+  "talenti_popolari_mago": {
+    "war_caster": {
+      "valore": "Vantaggio concentrazione, spell opportunity",
+      "quando": "Livello 4 se CON pari"
+    },
+    "resilient_con": {
+      "valore": "Competenza CON save, +1 CON",
+      "quando": "Se CON dispari"
+    },
+    "alert": {
+      "valore": "+5 iniziativa",
+      "quando": "Per agire per primo"
+    },
+    "lucky": {
+      "valore": "3 reroll al giorno",
+      "quando": "Sempre utile"
+    },
+    "fey_touched": {
+      "valore": "Misty Step + 1° spell, +1 INT",
+      "quando": "Se INT dispari"
+    },
+    "metamagic_adept": {
+      "valore": "2 metamagic options",
+      "quando": "Per flessibilità extra"
+    }
+  },
+  "progressione_tipica": {
+    "livello_4": {
+      "scelta_comune": "+2 INT (16→18) o War Caster",
+      "ragionamento": "Boost primario o sopravvivenza"
+    },
+    "livello_8": {
+      "scelta_comune": "+2 INT (18→20) o Resilient CON",
+      "ragionamento": "Massimizzare INT o concentrazione"
+    },
+    "livello_12": {
+      "scelta_comune": "Talento (Lucky/Alert) o +2 CON",
+      "ragionamento": "Utilità o durabilità"
+    },
+    "livello_16": {
+      "scelta_comune": "Talento specializzazione",
+      "ragionamento": "Build completata"
+    },
+    "livello_19": {
+      "scelta_comune": "Talento finale o stat terziaria",
+      "ragionamento": "Rifinitura build"
+    }
+  },
+  "calcoli_impatto": {
+    "intelligenza_20": {
+      "spell_dc": "8 + prof + 5 = DC 17-19",
+      "spell_preparati": "20 + 5 = 25 spell preparati",
+      "spell_attack": "+11 a +13"
+    },
+    "con_war_caster": {
+      "concentrazione": "Vantaggio = 75-90% successo",
+      "opportunity": "Spell invece di attacco"
+    }
+  },
+  "build_esempi": {
+    "blaster": {
+      "asi": "INT 20, poi talenti damage",
+      "talenti": "Elemental Adept, Metamagic Adept"
+    },
+    "controller": {
+      "asi": "INT 20, CON boost",
+      "talenti": "Alert, War Caster"
+    },
+    "utility": {
+      "asi": "INT 20, skill boosts",
+      "talenti": "Skilled, Observant"
+    }
+  },
+  "confronto_classi": {
+    "vs_fighter": "Fighter 7 ASI, Mago 5",
+    "vs_rogue": "Rogue 6 ASI, Mago 5",
+    "standard": "Maggior parte classi 5 ASI"
+  },
+  "errori_comuni": {
+    "trascurare_int": "Non massimizzare INT prima",
+    "troppi_talenti": "Ritardare INT 20",
+    "ignorare_con": "Sottovalutare sopravvivenza",
+    "stat_inutili": "Aumentare STR/CHA per mago"
+  },
+  "narrazione_brancalonia": {
+    "studio_intenso": "Mente sempre più acuta",
+    "esperienza": "Lezioni apprese sul campo",
+    "talenti": "Tecniche segrete scoperte"
+  },
+  "note_dm": "I maghi di solito massimizzano INT rapidamente (livello 8), poi si concentrano su sopravvivenza (CON/talenti difensivi). War Caster è quasi obbligatorio.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Aumento Caratteristica",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "_id": "hteBXy9rECuZvaxe",
+  "_key": "!item!class-mago-livello_4-aumento-caratteristica",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

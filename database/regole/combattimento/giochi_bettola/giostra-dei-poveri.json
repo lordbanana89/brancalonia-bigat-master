@@ -1,0 +1,22 @@
+{
+  "id": "gioco-giostra-dei-poveri",
+  "titolo": "Giostra dei Poveri",
+  "descrizione": "Duello tra due coppie (cavaliere e cavallo) che parodizza le giostre nobili, con dadi che salgono o scendono in base alle prove riuscite.",
+  "setup": {
+    "dado_giostra": "Ogni coppia parte con 1d8 che puo scendere a d4 o salire fino a d12 in base alle prove.",
+    "equipaggiamento_obbligatorio": [
+      "Armatura di pentole: CA 16, nessun bonus Destrezza, fornisce svantaggio agli attacchi." ,
+      "Scopa da cavaliere: arma semplice usata per disarcionare.",
+      "Bardatura a quadri: se la prova di Atletica del cavallo risulta 1, il dado scende di due categorie." ]
+  },
+  "svolgimento": [
+    "Il cavaliere monta sul cavallo effettuando prova di Destrezza (Acrobazia) CD 10.",
+    "Il cavallo parte alla carica con prova di Forza (Atletica) CD 12.",
+    "Entrambi i cavalieri eseguono un tiro per colpire con svantaggio e sommano il risultato del proprio Dado Giostra: chi viene colpito cade e perde."
+  ],
+  "esiti": "Se nessuno colpisce, si ripete dal punto 2; se cadono entrambi la giostra termina in pareggio.",
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "59"
+  }
+}

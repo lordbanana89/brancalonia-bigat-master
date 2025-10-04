@@ -1,0 +1,106 @@
+{
+  "id": "class-chierico-livello_2-incanalare-divinita",
+  "nome": "Incanalare Divinità",
+  "nome_brancalonia": "Potere dei Santi",
+  "livello": 2,
+  "tipo": "attivo",
+  "descrizione": "Al 2° livello, ottieni la capacità di incanalare energia divina direttamente dalla tua divinità, usando quell'energia per alimentare effetti magici. Inizi con due di questi effetti: Scacciare Non Morti e un effetto determinato dal tuo dominio. Quando usi Incanalare Divinità, scegli quale effetto creare. Devi poi completare un riposo breve o lungo per usare di nuovo Incanalare Divinità.",
+  "meccaniche": {
+    "usi": {
+      "livello_2_5": "1 uso per riposo",
+      "livello_6_17": "2 usi per riposo",
+      "livello_18_20": "3 usi per riposo"
+    },
+    "opzioni_base": {
+      "scacciare_non_morti": {
+        "azione": "Standard",
+        "raggio": "9 metri",
+        "durata": "1 minuto",
+        "ts": "Saggezza",
+        "cd": "CD incantesimi",
+        "effetto": "Non morti fuggono",
+        "destroy_cr": {
+          "livello_5": "CR 1/2",
+          "livello_8": "CR 1",
+          "livello_11": "CR 2",
+          "livello_14": "CR 3",
+          "livello_17": "CR 4"
+        }
+      },
+      "opzione_dominio": "Varia per dominio scelto"
+    }
+  },
+  "opzioni_dominio": {
+    "vita": {
+      "nome": "Preserve Life",
+      "effetto": "Guarisce 5× livello PF divisi tra alleati"
+    },
+    "luce": {
+      "nome": "Radiance of Dawn",
+      "effetto": "2d10+livello danni radiosi in 30ft"
+    },
+    "tempesta": {
+      "nome": "Destructive Wrath",
+      "effetto": "Massimizza danni tuono/fulmine"
+    },
+    "inganno": {
+      "nome": "Invoke Duplicity",
+      "effetto": "Crea illusione perfetta di sé"
+    },
+    "guerra": {
+      "nome": "Guided Strike",
+      "effetto": "+10 a un tiro per colpire"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "risorsa_limitata",
+    "uses": "@scale.cleric.channel-divinity",
+    "per": "sr",
+    "opzioni": {
+      "turn_undead": "Sempre disponibile",
+      "domain": "Basato su sottoclasse"
+    }
+  },
+  "calcoli_efficacia": {
+    "turn_undead": {
+      "cd_esempio": "8+3+4 = CD 15",
+      "area": "Tutti i non morti in 9m",
+      "durata": "10 round combattimento"
+    },
+    "preserve_life": {
+      "livello_5": "25 PF totali",
+      "livello_10": "50 PF totali",
+      "limite": "Metà PF max per creatura"
+    }
+  },
+  "tattiche": {
+    "turn_undead": {
+      "vs_orde": "Devastante contro molti non morti deboli",
+      "vs_boss": "Meno efficace su non morti potenti"
+    },
+    "domain_specific": {
+      "vita": "Emergenza guarigione di massa",
+      "guerra": "Garantire colpo critico importante"
+    }
+  },
+  "progressione": {
+    "livello_5": "Distrugge non morti CR 1/2",
+    "livello_6": "2 usi per riposo",
+    "livello_8": "Distrugge CR 1",
+    "livello_11": "Distrugge CR 2",
+    "livello_14": "Distrugge CR 3",
+    "livello_17": "Distrugge CR 4",
+    "livello_18": "3 usi per riposo"
+  },
+  "multiclasse": {
+    "nota": "Channel Divinity non stack tra classi",
+    "paladino": "Opzioni separate ma stessi usi"
+  },
+  "narrazione_brancalonia": {
+    "descrizione": "Invocare il potere dei Santi del Regno",
+    "turn_undead": "Brandire simbolo sacro contro i dannati",
+    "domain": "Miracoli specifici del santo patrono"
+  },
+  "note_dm": "Channel Divinity offre versatilità unica per situazioni specifiche. Turn Undead può trivializzare incontri con non morti.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+}

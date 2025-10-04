@@ -1,0 +1,20 @@
+{
+  "id": "arma-std-014",
+  "nome": "Fionda",
+  "categoria": "arma_standard",
+  "tipo": "semplice_distanza",
+  "costo": "1 mr",
+  "danni": "1d4 contundenti",
+  "proprieta": [
+    "Munizioni (9/36 m)"
+  ],
+  "peso": "0 kg",
+  "descrizione": "Fionda in cuoio con laccio per scagliare pietre o biglie.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

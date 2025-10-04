@@ -1,0 +1,110 @@
+{
+  "id": "class-chierico-livello_6-incanalare-divinita-migliorato",
+  "nome": "Incanalare Divinità (2 usi)",
+  "nome_brancalonia": "Grazia Divina Rinnovata",
+  "livello": 6,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 6° livello, puoi usare Incanalare Divinità due volte tra un riposo breve o lungo. Quando finisci un riposo breve o lungo, recuperi i tuoi usi spesi.",
+  "meccaniche": {
+    "usi_disponibili": 2,
+    "recupero": "Riposo breve o lungo",
+    "progressione": {
+      "livello_1": "1 uso",
+      "livello_6": "2 usi",
+      "livello_18": "3 usi"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "resource_increase",
+    "risorsa": "Channel Divinity",
+    "valore": 2
+  },
+  "impatto_gioco": {
+    "flessibilità": "Usa in più combattimenti",
+    "potenza": "Due Turn Undead o domini",
+    "tattica": "Meno conservativo"
+  },
+  "gestione_risorse": {
+    "combattimenti_tra_riposi": {
+      "1-2_combat": "Uno per battaglia",
+      "3-4_combat": "Prioritizza encounter difficili",
+      "5+_combat": "Solo boss o emergenze"
+    }
+  },
+  "opzioni_dominio_esempi": {
+    "life": "2 × Preserve Life per curare gruppo",
+    "light": "2 × Radiance of Dawn per AoE",
+    "war": "2 × Guided Strike per colpi critici",
+    "tempest": "2 × Destructive Wrath per max damage",
+    "trickery": "2 × Invoke Duplicity per vantaggio"
+  },
+  "turn_undead_potenziato": {
+    "due_ondate": "Controllo battlefield non-morti",
+    "split_targeting": "Due gruppi separati",
+    "backup": "Secondo tentativo se primo fallisce"
+  },
+  "confronto_risorse": {
+    "vs_spell_slots": "Recupero short rest unico",
+    "vs_barbarian_rage": "Meno usi ma più potenti",
+    "vs_monk_ki": "Meno granulare ma impattante"
+  },
+  "strategie_comuni": {
+    "apertura_aggressiva": "Usa uno subito per dominanza",
+    "conservazione": "Tieni per momenti critici",
+    "nova": "Entrambi stesso combattimento se serve"
+  },
+  "sinergie_spell": {
+    "spiritual_weapon": "Channel + bonus action attack",
+    "spirit_guardians": "Channel + area damage",
+    "bless": "Channel + supporto gruppo"
+  },
+  "domini_devastanti_x2": {
+    "tempest_max_damage": {
+      "shatter": "2 × 24 danni garantiti",
+      "call_lightning": "2 × 30 danni garantiti"
+    },
+    "war_guided_strike": {
+      "inflict_wounds": "2 × hit garantiti",
+      "guiding_bolt": "2 × hit + vantaggio"
+    }
+  },
+  "evoluzione_stile": {
+    "livello_1-5": "Prezioso, usa con parsimonia",
+    "livello_6-17": "Disponibile, usa tattico",
+    "livello_18+": "Abbondante, usa liberamente"
+  },
+  "errori_comuni": {
+    "dimenticare_short_rest": "Non recuperare tra combat",
+    "conservare_troppo": "Finire giorno con usi",
+    "spreco": "Usare su nemici deboli"
+  },
+  "multiclasse_considerazioni": {
+    "paladin_2": "4 channel divinity totali",
+    "valor": "Sinergia con altri recuperi short rest"
+  },
+  "narrazione_brancalonia": {
+    "santo_protettore": "Benedizioni multiple",
+    "condotto_divino": "Potere fluisce liberamente",
+    "miracoli": "Più interventi divini"
+  },
+  "note_dm": "Due usi di Channel Divinity rendono il chierico molto più attivo in combattimento. Considera l'impatto del dominio specifico quando bilanci encounter.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58",
+  "name": "Incanalare Divinita Migliorato",
+  "img": "icons/magic/symbols/cross-circle-blue.webp",
+  "_id": "92BsAi3aNCDGP8Ru",
+  "_key": "!item!class-chierico-livello_6-incanalare-divinita-migliorato",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

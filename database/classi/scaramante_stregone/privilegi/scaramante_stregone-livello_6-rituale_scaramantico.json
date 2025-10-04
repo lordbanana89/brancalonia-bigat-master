@@ -1,0 +1,22 @@
+{
+  "id": "scaramante_stregone-livello_6-rituale_scaramantico",
+  "livello": 6,
+  "nome": "Rituale Scaramantico",
+  "tipo": "attivo",
+  "fonte": "Manuale Base p.28",
+  "descrizione": "Con amuleti, nodi nelle corde e occhi di corvo proteggi te stesso o un alleato dalle peggiori iatture.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "rituale",
+      "durata_rituale": "10 minuti",
+      "ricarica": "Riposo lungo"
+    },
+    "bersaglio": "Una creatura che puoi toccare",
+    "durata": "24 ore (puoi estenderla spendendo 2 punti stregoneria)",
+    "opzioni": [
+      "Resistenza a un tipo di danno scelto tra: acido, freddo, fulmine, fuoco, tuono, necrotico, contundente, perforante, tagliente",
+      "Quando ottiene 1 a una prova o a un tiro salvezza può ritirare il dado usando il nuovo risultato",
+      "Quando scenderebbe a 0 punti ferita può restare a 1 punto ferita; l'effetto termina"
+    ]
+  }
+}

@@ -1,0 +1,385 @@
+=== PAGINA 1 ===
+guida al gioco (dis)organizzato di
+Acheron Games
+C
+C
+Legenda
+	
+☞GDO: Gioco (Dis)Organizzato.
+	
+☞BMA: Brancalonia, Manuale di Ambientazione.
+	
+☞MACA: Macaronicon, Manuale di espansione.
+	
+☞LIRA: L'Impero Randella Ancora.
+	
+☞CANAGLIA: Il personaggio di Brancalonia, 
+membro dei Fratelli di Taglia.
+	
+☞CRICCA: Un gruppo di Canaglie affiatate, 
+che corrisponde a un tavolo di giocatori. Tutte 
+le Cricche fanno parte delle varie Bande che 
+compongono i Fratelli di Taglia, ovvero l'in­
+sieme (dis)organizzato di tutte le Canaglie del 
+Regno.
+	
+☞CONDOTTIERO: Dungeon Master, Game 
+Master, Narratore o Facilitatore.
+Fratelli di Taglia
+"Brancalonia" e "Spaghetti Fantasy" - copyright Acheron Games
+"Fratelli di Taglia" e "Regno di Taglia" - copyright Ignoranza Eroica
+Fratelli di Taglia
+- 1 -
+
+
+=== PAGINA 2 ===
+“Che faccia tosta, invitarmi con così poco 
+preavviso...Ma che vestito mi metto?” 
+Verdegrincio, selvatico avverso alle festività.
+Stagione 1
+I Molti Feudi di
+Brancalonia”
+Cosa è
+Una campagna condivisa di 10 "Lavoretti" da 3 ore ciascuno, 
+con componenti multitavolo, sia narrative (divisione delle 
+avventure in obiettivi minori da suddividere tra le cricche), 
+che gestionali (gestione del Covo e dei Granlussi, come da 
+BMA pg.43 - 45).
+Quando
+La partenza della campagna è formalmente libera, ma con­
+sigliamo a tutti di partire “in contemporanea” (al netto del 
+giorno di gioco prescelto da ogni associazione partecipante) 
+per la settimana che va dal 24 al 30 gennaio 2022.
+Dove
+Dal vivo o online, a discrezione di ogni associazione par­
+tecipante. Acheron Games mette a disposizione il suo Server 
+Discord: https://discord.gg/XbM5uYrTKa 
+Chi
+Facendo riferimento a Venti di Ruolo, associazione organiz­
+zatrice del GDO, qualunque associazione può partecipare. È 
+preferibile che una sola associazione partecipi per singola città. 
+Se più associazioni di una stessa città dovessero proporsi, si 
+cercherà possibilmente di coordinarle assieme alla creazione 
+di un singolo evento, sia esso dal vivo o online. Questo per 
+favorire il radunarsi dei giocatori di una stessa città a formare 
+una unica community.
+Perché
+Il GDO nasce principalmente per 3 ragioni: 
+•	
+radunare i fan di Brancalonia e permettere loro di 
+partecipare ad un gioco che apprezzano e su cui hanno 
+investito, nonché diffonderlo ai giocatori che non 
+lo conoscono; 
+•	
+esplorare il folklore locale della propria città o regione, 
+in chiave “spaghetti fantasy”; 
+•	
+formare una community attiva e vibrante che porti 
+la sua creatività e le sue storie ad arricchire l'ambien­
+tazione di Brancalonia.
+- 2 -
+Fratelli di Taglia  
+
+
+=== PAGINA 3 ===
+Organizzazione
+“Tu, da quella parte. Tu, da quell'altra. Io, 
+vado a casa.” 
+Scagnozzi di Bettino Addolorato preparano 
+un agguato.
+“I Molti Feudi di Brancalonia” è, come già specificato, sud­
+divisa in 10 avventure da 3 ore ciascuna, con l'aggiunta di 
+una “sessione 0” di introduzione, che permetta ai giocatori 
+di creare le proprie Canaglie e definire le Cricche, per poi 
+immergersi rapidamente in alcune delle meccaniche proprie 
+di Brancalonia. Come tale, la sua durata occupa un periodo 
+indicativo di 11 settimane, con un evento settimanale consi­
+gliato da 3 ore che copra una singola avventura.
+Ogni avventura è auto-conclusiva, ma tutte sono legate da 
+un filo conduttore: la trama della campagna.
+Delle 10 avventure, 6 sono “di trama principale”, definite più 
+dettagliatamente negli eventi e negli incontri, fatta eccezione 
+una caratterizzazione locale (nomi di città, luoghi, bettole, 
+fiumi coinvolti); le restanti 4 sono invece lavoretti liberi, gestiti 
+come si preferisce dal Condottiero, o dall'associazione par­
+tecipante: sono forniti degli spunti di trama approfondibili. 
+Le 4 avventure possono essere legate da un filo conduttore 
+secondario o legato alla trama principale, suddivise in gruppi 
+più piccoli o lasciate slegate fra loro.
+Le avventure sono suddivise come segue:
+•	
+ 0-2: trama principale;
+•	
+ 3-4: lavoretti liberi;
+•	
+ 5: trama principale;
+•	
+ 6-7: lavoretti liberi; 
+•	
+8-10: trama principale.
+Il finale della campagna sarà giocato durante un evento 
+multitavolo ancora da definirsi.
+Giocate nella vostra città!
+Consigliamo di giocare a I molti feudi di Brancalonia nella 
+versione brancalonesca della vostra città, regione o provincia. 
+I Lavoretti giocati a Milano sono stati ambientati nelle città 
+di Tarantasia, quelli di Roma potrebbero essere localizzati 
+a Porto Patacca, mentre se giocate in Veneto, le città della 
+Vortigana fanno proprio al caso vostro! Questo consiglio è 
+tutt’altro che obbligatorio, ovviamente. Se la vostra città non 
+vi piace, ambientate pure i vostri Lavoretti dove preferite: 
+tutto il Regno di Taglia è a vostra disposizione!
+Fratelli di Taglia
+- 3 -
+
+
+=== PAGINA 4 ===
+“Vorresti dire che io ho messo un cervello 
+abnorme in un individuo alto otto piedi e 
+largo come un armadio a due ante, Canaglia?” 
+Franco Stinco il Giovane, eminente 
+burattinaio.
+Regole di Creazione 
+del Personaggio
+Ogni Canaglia giocante dovrà essere creata secondo le 
+seguenti disposizioni:
+•	
+RAZZA: sono consentite unicamente le razze 
+proprie dell'ambientazione di Brancalonia, così 
+come contenute nei manuali BMA e MACA;
+•	
+CLASSE/SOTTOCLASSE: sono consentite le 
+classi e sottoclassi contenute in BMA e MACA. 
+Qualunque 
+sottoclasse 
+proveniente 
+da 
+altro 
+manuale di D&D5e (per quanto sconsigliata per 
+motivi di ottimizzazione) dovrà essere approvata dai 
+Condottieri dell'associazione partecipante, previa 
+valutazione della sua coerenza con l'ambientazione;
+•	
+PUNTEGGI 
+DI 
+CARATTERISTICA: 
+si 
+raccomanda l'uso del set standard 15-14-13-12-10-
+8, o del Point Buy System (27 punti);
+•	
+MULTICLASSE: il multiclassaggio è caldamente 
+sconsigliato, ma mai proibito.
+Come da BMA pag.7, i personaggi giocanti non potranno 
+superare il 6° livello. Qualunque ricompensa di livello che 
+porti un personaggio oltre il 6° livello, dovrà essere sostituita 
+da una “emeriticenza”, come da BMA pag.40.
+Le ricompense di aumento di livello, qualora presenti, sono 
+definite alla fine di ogni Lavoretto.
+IMPORTANTE: le avventure sono costruite e bilanciate 
+per Cricche da 4-6 Canaglie, tutte dello stesso livello, definito 
+in apertura dell'avventura. Si raccomanda dunque, sia per gio­
+catori che dovessero unirsi “in media res”, sia per giocatori che 
+dovessero (per qualunque motivo) non partecipare a qualcuna 
+delle avventure, di fornire e favorire che i personaggi siano 
+tutti del livello definito in apertura del Lavoretto.
+- 4 -
+Fratelli di Taglia  
+
+
+=== PAGINA 5 ===
+“Chi siete? Cosa fate? Cosa portate? Si, ma 
+quanti siete? Un fiorino!”
+Gabellieri imperiali.
+Cenni di 
+Ambientazione 
+Condivisa
+Le Quattro Fazioni dei 
+Fratelli di Taglia
+La Fratellanza di tutte le Canaglie del Regno è divisa in 
+bande e cricche di ogni genere, ma al suo interno ci sono 
+quattro fazioni principali che sono emerse nel corso degli 
+ultimi decenni, e che fanno capo a quattro grandi bande, ai 
+cui vertici c'è una vera e propria gerarchia di Assi, Re e Regine.
+Le quattro fazioni hanno preso il nome dei semi delle Min­
+chiate, e per caso o per premeditazione, ciascuna fazione si 
+è specializzata in tipi di malefatte e atteggiamenti diversi, 
+assolutamente in linea con il seme scelto.
+Nella campagna I molti feudi di Brancalonia, ogni città 
+o borgo sede dei Lavoretti della Cricca dovrebbe avere dei 
+responsabili locali delle Quattro Fazioni principali, tra cui i 
+giocatori dovrebbero poter scegliere. 
+Il capofazione locale
+Quando si sceglie l’esponente locale, andrebbe considerata 
+l’inclinazione generale della Fazione, e il capofazione locale 
+dovrebbe esserne una espressione assolutamente canonica, ma 
+bisogna proporre ogni volta un personaggio che non ricada 
+troppo negli stereotipi di razza, background, classe e genere. Per 
+esempio, il rappresentante di Tarantasia dei Denari potrebbe 
+essere una giovane morgante guappa con il background di 
+azzeccagarbugli, che funge da “avvocato delle canaglie” per 
+tutti gli affari della fazione in città. Oppure il rappresentante 
+dei Boccali nel ducato di Acquaviva potrebbe essere un vecchio 
+mattatore selvatico che ha scelto come covo un rifugio nel cuore 
+della selva, tra stalle e mangiatoie per animali; il suo rifugio 
+potrebbe fungere da punto di ritrovo per i contrabbandieri e 
+i ricercati della banda, a cui la vecchia taglia offre i distillati 
+al miele e alle erbe che produce nel retro del capanno.
+Denari
+I Denari sono la fazione più ricca, ammanicata e potente, 
+perlomeno dal punto di vista degli intrallazzi con politici, 
+maggiorenti, notabili, mercanti e perfino aristocratici. I Denari 
+svolgono in genere lavoretti di protezione dei ricchi e taglieggio 
+per bottegai e artigiani, corruzione, malversazione, riciclaggio 
+e contrabbando, ricettazione e contraffazione. Sono molto 
+diffusi nelle città principali e nei feudi più ricchi, e di solito 
+versano tangenti molto sostanziose a potestà e birri per essere 
+lasciati in pace. Dal punto di vista dei governanti, i Denari 
+sono un male necessario, il tipo di canaglie con cui è più 
+preferibile venire a trattare. I loro signori sono spesso tanto 
+ricchi da poter prestare oro anche a Duca-Conti e imprenditori, 
+naturalmente a tassi da strozzino…
+Entrate in questa fazione se siete amanti dei lussi, della bella 
+vita, degli intrallazzi coi potenti.
+Re di Denari (Quinotaria)
+Il Re di Denari tiene i suoi più fedeli servitori e le sue opera­
+zioni principali tra Quinotaria e Falcamonte, muovendosi senza 
+difficoltà tra le grandi famiglie mercantili della costa e i ricchi 
+vigneti dell’entroterra, di cui spesso amministrano i proventi.
+- 5 -
+Fratelli di Taglia
+
+
+=== PAGINA 6 ===
+Boccali
+I Boccali sono molto diffusi nel Regno delle Due Scille e 
+nelle regioni più prospere del nordest del paese. Sono sparsi 
+allo stesso modo nelle città e nelle campagne, e i loro affiliati 
+sono i più rumorosi, fracassoni, spacconi e allegri tra i Fra­
+telli. Di solito si occupano di furti di destrezza e avventure 
+picaresche, seduzione, mascherate, truffe, imbrogli e imprese 
+rodomontiane, che tutti gli altri schiferebbero o eviterebbero. 
+Usano molto raramente la violenza, preferendovi la gozzoviglia, 
+l’abilità e l’inganno. Molte delle loro malefatte non vengono 
+loro attribuite, perché la vittima è talmente incredula di quanto 
+accaduto, o si vergogna di essersi fatta fregare in tal modo, 
+che neppure denuncia l’imbroglio.
+Entrate in questa fazione se prediligete il fracasso e la bisboc­
+cia, le imprese più forsennate ed eclatanti, le fanfaronate e 
+lo sbraco.
+Re di Boccali (Ausonia)
+Il Re di Boccali tiene le fila della propria fazione dall’Auso­
+nia, dove il suo problema principale è quello di combattere i 
+tagliagole delle organizzazioni criminali più nefaste del sud, 
+non affiliate alla Fratellanza e invece parte della vile e nefanda 
+Onorata Società.
+Coltelli
+I Coltelli sono le canaglie più losche, ombrose e scostanti 
+della Fratellanza. Quasi sempre si radunano nel cuore delle 
+città, piccole e grandi, e si dedicano a lavoretti di minaccia 
+e di pugnale, cercando sempre di non farsi scoprire o di non 
+esagerare, per evitare di finire gettati fuori dalla Fratellanza. 
+Sono spesso assoldati come sicari, grassatori e bravi, e spesso 
+finiscono a partecipare a imprese militari, come comuni 
+tagliagole o felloni. 
+Sono tra i più pericolosi e insubordinati dei Fratelli, ma 
+anche la fazione meno numerosa.
+Entrate in questa fazione se amate muovervi nell’ombra e 
+agire in maniera pericolosa e letale.
+Re di Coltelli (Alazia)
+In fondo alla Secca, proprio al confine con la Volturnia, si trova 
+Ophitia, una città oggi interamente in mano a canaglie, reietti 
+e assassini della peggior specie. La sua posizione ne fa il perfetto 
+quartier generale per le bande di Sciarra, il “Re di Coltelli”, 
+rinnegato della nobile famiglia dei Pilastro. Questo condottiero 
+abile e spietato terrorizza le due regioni e perfino i nobili suoi 
+congiunti, e ha sulla testa una delle Taglie più alte del Regno. 
+Bastoni
+I Bastoni sono principalmente briganti di strada, maramaldi 
+e banditi di campagna, abilissimi come fuorilegge di fron­
+tiera e delle carrarecce, contrabbandieri, passatori e lottatori 
+a mani nude. In genere sono ben voluti dalla gente dei feudi 
+e vengono considerati i difensori dei poveracci, tanto che la 
+maggior parte dei religiosi e dei frati della Fratellanza milita 
+proprio all’interno di questa fazione.
+Entrate in questa fazione se prediligete la vita all’aria aperta, 
+libera e senza regole, l’amicizia con la gente del popolo e le 
+lunghe scorribande nelle selve e sui monti.
+Regina di Bastoni (Bassa 
+Pagana)
+L’attuale Regina di Bastoni è la morgante conosciuta come 
+la “Bassa Pagana” per l’altezza ridotta (meno di sette piedi). I 
+Banditi della Bassa sono il suo corteggio più interno e hanno 
+occupato il tratto finale del Fossa.
+- 6 -
+Fratelli di Taglia  
+
+
+=== PAGINA 7 ===
+Gestione ed 
+Evoluzione della 
+Campagna
+“Fatta la Taglia, bisogna far le Canaglie.” 
+Scippo, Re dei Ladri.
+Brancalonia si va sviluppando di anno in anno, grazie ai 
+suoi tanti appassionati, alle sue estimatrici, alle sue giocatrici 
+e giocatori.
+Come avete visto in questi mesi, Brancalonia è un setting 
+aperto alle idee, alle trovate e alle esperienze di tutti voi cial­
+troni e tutte voi manigolde.
+Le vostre cronache di gioco possono essere inserite nella 
+timeline ufficiale di Brancalonia, i vostri Lavoretti decretare 
+l’ascesa e la rovina di città, contrade, compagnie e bande, le 
+vostre Canaglie potrebbero diventare veri e propri personaggi 
+ufficiali dell’ambientazione.
+Nei prossimi moduli ufficiali di Brancalonia, si narreranno 
+le vostre gesta!
+Benvenuti nella Fratellanza
+Cosa fare:
+•	
+Se avete creato una Banda, un Capobanda e un Covo 
+speciali, potete condividerne gli elementi principali per 
+renderli ufficiali: compilate la Scheda della Banda e man­
+datecela, inseriremo le note più interessanti nell’Atlante 
+di prossima pubblicazione. 
+•	
+Se state giocando Lavoretti e campagne di vostra cre­
+azione, potete condividerne gli eventi e i personaggi 
+per renderli ufficiali: compilate la Scheda degli Avvisi 
+e mandatecela, inseriremo le note più interessanti come 
+avvisi, corbellerie e ricercati speciali nelle Gazzette del 
+Menagramo e nell’Atlante di prossima pubblicazione.
+•	
+Se avete creato mostri, avversari, giochi da bettola, 
+ciarpame magico, equipaggiamento, o altri elementi 
+di gioco potete condividerli per renderli ufficiali: com­
+pilate la Scheda della Robaccia e mandacela, inseriremo 
+le note più interessanti nelle Gazzette del Menagramo 
+e nell’Atlante di prossima pubblicazione.
+Si raccomanda altresì di inviare ogni comunicazione inerente all'indirizzo 
+gioco.organizzato@acheron.it
+- 7 -
+Fratelli di Taglia
+
+
+=== PAGINA 8 ===
+Fratelli di Taglia
+Sponsorizzazione 
+dell'Evento 
+Si consiglia e raccomanda alle associazioni partecipanti di fare attiva diffusione 
+sui social (principalmente Facebook e Instagram, con particolare attenzione al 
+gruppo Facebook “Brancalonia – the spaghetti fantasy rpg”) dei propri eventi, delle 
+foto e degli avvenimenti in gioco: questo non solo per favorire la comunicazione 
+dell'esistenza di poli di gioco di Brancalonia, ma anche e soprattutto per dare 
+riverbero agli eventi che le cricche affrontano nelle rispettive città.
+HASHTAG DA 
+UTILIZZARE SUI 
+SOCIAL
+#brancalonia
+#acherongames
+#imoltifeudi
+#giocodisorganizzato
+#spaghettifantasy
+B
+- 8 -
+
+

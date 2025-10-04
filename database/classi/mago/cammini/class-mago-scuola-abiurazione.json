@@ -1,0 +1,50 @@
+{
+  "id": "class-mago-scuola-abiurazione",
+  "nome": "Scuola di Abiurazione",
+  "fonte": "Manuale del Giocatore p.80",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Savant dell'Abiurazione",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Abjuration Savant"
+        }
+      },
+      {
+        "nome": "Guardia Arcana",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Arcane Ward"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Guardia Proiettata",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Projected Ward"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Abiurazione Migliorata",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Improved Abjuration"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Resistenza agli Incantesimi",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Spell Resistance"
+        }
+      }
+    ]
+  }
+}

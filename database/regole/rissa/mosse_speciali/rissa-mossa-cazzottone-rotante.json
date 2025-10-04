@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-cazzottone-rotante",
+  "nome": "Cazzottone Rotante",
+  "requisiti": "Forza 13+, Costituzione 13+",
+  "costo": "2 slot",
+  "effetto": "Colpisci tutti entro 1,5m per 1d8 + For Batoste",
+  "controindicazione": "Svantaggio al prossimo tiro per vertigini",
+  "fonte": "Brancalonia Manuale Base"
+}

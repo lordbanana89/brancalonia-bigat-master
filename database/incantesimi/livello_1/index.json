@@ -1,0 +1,123 @@
+{
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 23,
+  "elementi": [
+    {
+      "id": "anatema",
+      "nome": "Anatema",
+      "file": "spell-anatema.json"
+    },
+    {
+      "id": "armatura-magica",
+      "nome": "Armatura Magica",
+      "file": "spell-armatura-magica.json"
+    },
+    {
+      "id": "benedizione",
+      "nome": "Benedizione",
+      "file": "spell-benedizione.json"
+    },
+    {
+      "id": "bollo-di-qualità",
+      "nome": "Bollo di Qualità",
+      "file": "spell-bollo-di-qualita.json"
+    },
+    {
+      "id": "charme",
+      "nome": "Charme",
+      "file": "spell-charme.json"
+    },
+    {
+      "id": "comando",
+      "nome": "Comando",
+      "file": "spell-comando.json"
+    },
+    {
+      "id": "comprensione-dei-linguaggi",
+      "nome": "Comprensione dei Linguaggi",
+      "file": "spell-comprensione-linguaggi.json"
+    },
+    {
+      "id": "cura-ferite",
+      "nome": "Cura Ferite",
+      "file": "spell-cura-ferite.json"
+    },
+    {
+      "id": "dardo-incantato",
+      "nome": "Dardo Incantato",
+      "file": "spell-dardo-incantato.json"
+    },
+    {
+      "id": "eroismo",
+      "nome": "Eroismo",
+      "file": "spell-eroismo.json"
+    },
+    {
+      "id": "fulmine-tracciante",
+      "nome": "Fulmine Tracciante",
+      "file": "spell-fulmine-tracciante.json"
+    },
+    {
+      "id": "identificare",
+      "nome": "Identificare",
+      "file": "spell-identificare.json"
+    },
+    {
+      "id": "individuazione-del-magico",
+      "nome": "Individuazione del Magico",
+      "file": "spell-individuazione-magia.json"
+    },
+    {
+      "id": "infliggi-ferite",
+      "nome": "Infliggi Ferite",
+      "file": "spell-infliggi-ferite.json"
+    },
+    {
+      "id": "mani-brucianti",
+      "nome": "Mani Brucianti",
+      "file": "spell-mani-brucianti.json"
+    },
+    {
+      "id": "marchio-incandescente",
+      "nome": "Marchio Incandescente",
+      "file": "spell-marchio-incandescente.json"
+    },
+    {
+      "id": "onda-tonante",
+      "nome": "Onda Tonante",
+      "file": "spell-onda-tonante.json"
+    },
+    {
+      "id": "parola-guaritrice",
+      "nome": "Parola Guaritrice",
+      "file": "spell-parola-guaritrice.json"
+    },
+    {
+      "id": "passo-fatato",
+      "nome": "Passo Fatato",
+      "file": "spell-passo-fatato.json"
+    },
+    {
+      "id": "racconto-agghiacciante",
+      "nome": "Racconto Agghiacciante",
+      "file": "spell-racconto-agghiacciante.json"
+    },
+    {
+      "id": "ritirata-veloce",
+      "nome": "Ritirata Veloce",
+      "file": "spell-ritirata-veloce.json"
+    },
+    {
+      "id": "scudo",
+      "nome": "Scudo",
+      "file": "spell-scudo.json"
+    },
+    {
+      "id": "sonno",
+      "nome": "Sonno",
+      "file": "spell-sonno.json"
+    }
+  ]
+}

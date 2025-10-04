@@ -1,0 +1,9 @@
+{
+  "id": "intruglio-004",
+  "nome": "Estratto di Fandonia",
+  "costo": "10 mo",
+  "peso": "0.5 kg",
+  "effetto": "Fato Padrino: 18-20 successo/critico, 1-3 fallimento. Durata 1d4 ore. Svantaggio Percezione, -5 Percezione Passiva",
+  "tipo_meccanica": "consumabile",
+  "fonte": "Manuale Base p.65-66"
+}

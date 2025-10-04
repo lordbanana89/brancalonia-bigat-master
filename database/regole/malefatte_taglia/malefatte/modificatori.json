@@ -1,0 +1,21 @@
+{
+  "testimoni": {
+    "nessuno": "×0.5",
+    "pochi": "×1",
+    "molti": "×1.5",
+    "folla": "×2"
+  },
+  "vittime": {
+    "criminali": "×0.5",
+    "popolani": "×1",
+    "mercanti": "×1.5",
+    "nobili": "×2",
+    "clero": "×2"
+  },
+  "luogo": {
+    "campagna": "×0.5",
+    "borgo": "×1",
+    "città": "×1.5",
+    "capitale": "×2"
+  }
+}

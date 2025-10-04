@@ -1,0 +1,39 @@
+{
+  "id": "041",
+  "nome": "Il Bicchiere Avvelenato",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Calice d'argento con serpenti incisi",
+  "proprieta": "Neutralizza qualsiasi veleno versato dentro",
+  "valore": "650 mo",
+  "storia": "Il Re paranoico morì di sete",
+  "ironia": "L'acqua pura diventa leggermente tossica",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "narrative_only",
+      "effectDescription": "Anti-veleno perfetto ma rende tossica acqua pura"
+    },
+    "hooks": [],
+    "macros": ["pourInChalice"],
+    "ui_config": {
+      "showReminder": true,
+      "reminderText": "Neutralizza veleni, rende tossica acqua pura"
+    },
+    "narrative_reminders": [
+      "Neutralizza QUALSIASI veleno versato nel calice (100% efficace)",
+      "Funziona su veleni ingeriti, contatto, inalati",
+      "IRONIA: L'acqua PURA diventa leggermente tossica",
+      "Acqua nel calice causa 1 danno veleno se bevuta",
+      "Vino, birra, altre bevande = neutralizzate se avvelenate, OK se pure",
+      "Il Re paranoico morì di sete non fidandosi nemmeno dell'acqua",
+      "Ottimo contro avvelenatori, ironicamente pericoloso per acqua",
+      "Rappresenta paranoia che diventa profezia autoavverante"
+    ]
+  },
+  "img": "icons/consumables/drinks/goblet-ornate-gold.webp"
+}

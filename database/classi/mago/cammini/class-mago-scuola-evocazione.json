@@ -1,0 +1,50 @@
+{
+  "id": "class-mago-scuola-evocazione",
+  "nome": "Scuola di Evocazione",
+  "fonte": "Manuale del Giocatore p.82",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Savant dell'Evocazione",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Conjuration Savant"
+        }
+      },
+      {
+        "nome": "Evocazione Minore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Minor Conjuration"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Trasposizione Benevola",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Benign Transposition"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Evocazione Focalizzata",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Focused Conjuration"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Evocazioni Tenaci",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Durable Summons"
+        }
+      }
+    ]
+  }
+}

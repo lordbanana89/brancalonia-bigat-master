@@ -1,0 +1,160 @@
+{
+  "_id": "GJRmaTmtNHZJe4je",
+  "_key": "!item!pantegano87d380",
+  "name": "Pantegano",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p>Uomini ratto di origine magica o paradossale, popolo murino di taglia piccola</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.10-11",
+    "movement": {
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 60,
+      "units": "ft"
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "",
+      "custom": ""
+    },
+    "advancement": [
+      {
+        "_id": "bwpmrvzpw9vs28nt",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "cd7txSsXXBjAseur",
+        "type": "size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Size",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ztQ4gFuCGmYnAN1j",
+        "type": "trait",
+        "configuration": {
+          "grants": [
+            "darkvision"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Darkvision",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "sgflanndq587jrip",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.zixqjkp2goed9pkw"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Scurovisione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "vslsmbyf4kpgn2fu",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.fi4a731y2546z6pb"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Furtività Naturale",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "bfo3m3kt1v6sddbf",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.ki65iso5zc1zdyu5"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Resistenza alle Malattie",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "wxaq4g16hwuf6wm3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.2jnuwl880de0jbsh"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Morso Affilato",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "qcxyzljzsv1b0qvh",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.ntj6q6vs6pkzks2k"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Agilità del Ratto",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.10-11",
+      "validazione": {
+        "implementato": false,
+        "file_id": "pantegano_macaronicon",
+        "compendio": "razze_macaronicon"
+      }
+    }
+  }
+}

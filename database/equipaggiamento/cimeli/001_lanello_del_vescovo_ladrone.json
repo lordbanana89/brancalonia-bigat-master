@@ -1,0 +1,47 @@
+{
+  "id": "001",
+  "nome": "L'Anello del Vescovo Ladrone",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Anello d'oro con rubino, appartenuto a un vescovo corrotto",
+  "proprieta": "Chi lo indossa ha vantaggio alle prove di Inganno quando mente su questioni religiose",
+  "maledizione": "Svantaggio ai TS contro effetti divini",
+  "valore": "500 mo",
+  "storia": "Appartenuto al Vescovo Arnaldo, scomunicato per simonia",
+  "maledizione_specifica": "Svantaggio ai TS contro effetti divini",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "flags.dnd5e.advantage.skill.dec",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [
+      {
+        "key": "flags.dnd5e.disadvantage.save.wis",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      },
+      {
+        "key": "flags.dnd5e.disadvantage.save.cha",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "tracking_flags": {
+      "requiresConditional": true,
+      "conditionalType": "religious_context",
+      "description": "Vantaggio solo su questioni religiose"
+    },
+    "hooks": ["dnd5e.preRollSkill"],
+    "macros": []
+  },
+  "img": "icons/equipment/finger/ring-cabochon-gold-red.webp"
+}

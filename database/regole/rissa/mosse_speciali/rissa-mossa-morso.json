@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-morso",
+  "nome": "Morso",
+  "requisiti": "Costituzione 13+",
+  "costo": "1 slot",
+  "effetto": "1d6 + Cos Batoste. Se mantieni la presa, il bersaglio è afferrato",
+  "rischio": "Se il bersaglio si libera, ti rompe 1d4 denti",
+  "fonte": "Brancalonia Manuale Base"
+}

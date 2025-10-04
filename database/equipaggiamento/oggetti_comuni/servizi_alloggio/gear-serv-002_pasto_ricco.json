@@ -1,0 +1,16 @@
+{
+  "id": "gear-serv-002",
+  "nome": "Pasto Ricco",
+  "categoria": "oggetto_comune",
+  "sottotipo": "servizi_alloggio",
+  "costo": "3 mo",
+  "peso": "—",
+  "descrizione": "Tavola imbandita con varie portate, dessert e vino scelto.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

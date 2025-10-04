@@ -1,0 +1,72 @@
+{
+  "_id": "5bd886d25134eb1b",
+  "_key": "!item!5bd886d25134eb1b",
+  "name": "Incantesimi",
+  "type": "feat",
+  "img": "icons/magic/nature/leaf-glow-triple-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Incantesimi (1° livello)</strong></p><p>Attingendo dalla divina essenza della natura stessa, puoi lanciare incantesimi per plasmare quell'essenza secondo la tua volontà.</p><p><strong>Trucchetti:</strong> Conosci due trucchetti da druido di tua scelta. Impari trucchetti aggiuntivi ai livelli superiori.</p><p><strong>Preparare e lanciare:</strong> Prepari la lista degli incantesimi da druido disponibili per il lancio, scegliendoli dalla lista degli incantesimi da druido. Quando lo fai, scegli un numero di incantesimi da druido pari al tuo modificatore di Saggezza + il tuo livello da druido (minimo 1). Gli incantesimi devono essere di un livello per cui hai slot.</p><p><strong>Abilità da incantatore:</strong> Saggezza. CD = 8 + bonus competenza + mod. Saggezza.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.66",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Druido Livello 1",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "druido",
+      "livello": 1
+    }
+  }
+}

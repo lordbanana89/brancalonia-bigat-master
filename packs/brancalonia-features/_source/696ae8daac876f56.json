@@ -1,0 +1,72 @@
+{
+  "_id": "696ae8daac876f56",
+  "_key": "!item!696ae8daac876f56",
+  "name": "Contraffazione",
+  "type": "feat",
+  "img": "icons/sundries/documents/document-sealed-blue-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Contraffazione (6° livello, Bardo - Feature Brancalonia)</strong></p><p>Al 6° livello, ottieni abilità eccezionali nella creazione di falsificazioni e duplicati.</p><p>Quando effettui una prova per creare una falsificazione di scrittura (documenti, lettere, contratti, sigilli, ecc.) o duplicare un oggetto, hai vantaggio alla prova.</p><p>Inoltre, altre creature hanno svantaggio alle prove di Intelligenza (Investigare) effettuate per rilevare che i tuoi lavori sono falsificati.</p><p><strong>Utilizzo:</strong> Questa feature richiede strumenti appropriati (come Strumenti del Calligrafo per documenti, o strumenti artigianali per oggetti) e tempo per creare la falsificazione.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia - Setting Italiano",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Bardo Livello 6",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "bardo",
+      "livello": 6
+    }
+  }
+}

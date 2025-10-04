@@ -1,0 +1,58 @@
+{
+  "_id": "LX3s1MiSOzo5BQFB",
+  "_key": "!item!bg-prelatoborsa-con-25-ma-1ef80d",
+  "name": "Borsa con 25 ma",
+  "type": "equipment",
+  "img": "icons/containers/bags/sack-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Borsa con 25 ma - Equipaggiamento iniziale del background prelato.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "capacity": {
+      "type": "weight",
+      "value": 30
+    },
+    "currency": {
+      "cp": 0,
+      "sp": 250,
+      "ep": 0,
+      "gp": 0,
+      "pp": 0
+    },
+    "attunement": "",
+    "armor": {
+      "type": "trinket",
+      "value": null,
+      "dex": null
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "prelato"
+    }
+  }
+}

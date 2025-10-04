@@ -1,0 +1,41 @@
+{
+  "id": "018",
+  "nome": "Lo Specchio della Strega",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Piccolo specchio d'argento annerito",
+  "proprieta": "Mostra il vero aspetto di chi si specchia (rivela travestimenti e illusioni)",
+  "valore": "500 mo",
+  "storia": "La strega vi intrappolò 7 anime",
+  "pericolo": "1 su 20 mostra qualcosa che non dovrebbe esistere",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "detector_with_risk",
+      "detectsType": "illusioni_travestimenti",
+      "riskChance": "1d20",
+      "riskThreshold": 1,
+      "riskEffect": "visione_orrore_cosmico",
+      "onHorror": "apply_frightened_condition"
+    },
+    "hooks": [],
+    "macros": ["lookInMirror"],
+    "ui_config": {
+      "showRiskWarning": true,
+      "warningText": "⚠️ 1 su 20: rivela orrori che non dovrebbero esistere!",
+      "confirmDialog": true
+    },
+    "narrative_reminders": [
+      "Rivela automaticamente travestimenti e illusioni",
+      "Tiro 1d20 ogni utilizzo: 1 = visione orrore cosmico",
+      "L'orrore può causare condizione Spaventato o peggio",
+      "Le 7 anime intrappolate possono comunicare",
+      "Ottimo per smascherare doppelganger e shapeshifter"
+    ]
+  },
+  "img": "icons/sundries/misc/mirror-hand-steel.webp"
+}

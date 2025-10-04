@@ -1,0 +1,15 @@
+2025/10/04-13:53:09.872446 17340b000 Recovering log #111
+2025/10/04-13:53:09.872910 17340b000 Delete type=0 #111
+2025/10/04-13:53:09.872949 17340b000 Delete type=3 #109
+2025/10/04-13:53:09.873490 173ca3000 Level-0 table #115: started
+2025/10/04-13:53:09.873696 173ca3000 Level-0 table #115: 5793 bytes OK
+2025/10/04-13:53:09.873777 173ca3000 Delete type=0 #113
+2025/10/04-13:53:09.873843 173ca3000 Manual compaction at level-0 from '!item!gattolupescoc729ef' @ 72057594037927935 : 1 .. '!items!indexea4487' @ 0 : 0; will stop at '!items!q8DV0XG3oaNYRHcn' @ 27 : 0
+2025/10/04-13:53:09.873848 173ca3000 Compacting 2@0 + 1@1 files
+2025/10/04-13:53:09.874071 173ca3000 Generated table #116@0: 9 keys, 5793 bytes
+2025/10/04-13:53:09.874078 173ca3000 Compacted 2@0 + 1@1 files => 5793 bytes
+2025/10/04-13:53:09.874122 173ca3000 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/10/04-13:53:09.874153 173ca3000 Delete type=2 #115
+2025/10/04-13:53:09.874196 173ca3000 Delete type=2 #110
+2025/10/04-13:53:09.874245 173ca3000 Delete type=2 #70
+2025/10/04-13:53:09.874498 173ca3000 Manual compaction at level-0 from '!items!q8DV0XG3oaNYRHcn' @ 27 : 0 .. '!items!indexea4487' @ 0 : 0; will stop at (end)

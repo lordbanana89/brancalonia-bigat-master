@@ -1,0 +1,42 @@
+{
+  "id": "class-warlock-patrono-grande_antico",
+  "nome": "Patrono del Grande Antico",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Mente Risvegliata",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Awakened Mind"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Riparo Entropico",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Entropic Ward"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Scudo Mentale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Thought Shield"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Creare Thrall",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Create Thrall"
+        }
+      }
+    ]
+  }
+}

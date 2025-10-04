@@ -1,0 +1,58 @@
+{
+  "_id": "G8us4a5tyz6YyL6m",
+  "_key": "!item!bg-staffettaborsa-con-tasca-segreta-per-dispacci-1a0c9d",
+  "name": "Borsa con tasca segreta per dispacci",
+  "type": "equipment",
+  "img": "icons/containers/bags/sack-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Borsa con tasca segreta per dispacci - Equipaggiamento iniziale del background staffetta.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "capacity": {
+      "type": "weight",
+      "value": 30
+    },
+    "currency": {
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 0,
+      "pp": 0
+    },
+    "attunement": "",
+    "armor": {
+      "type": "trinket",
+      "value": null,
+      "dex": null
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "staffetta"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "043",
+  "nome": "Il Dado del Destino",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Dado a 20 facce di ossidiana",
+  "proprieta": "Una volta nella vita, puoi decidere il risultato prima di tirare",
+  "valore": "2000 mo",
+  "storia": "Il Fato stesso lo perse giocando",
+  "limite": "Dopo l'uso diventa un normale dado",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "one_shot_lifetime",
+      "used": false,
+      "effectDescription": "Scegli il risultato di un tiro di dado (1-20)",
+      "onUse": "item_becomes_mundane"
+    },
+    "hooks": ["dnd5e.preRollAttack", "dnd5e.preRollAbilityTest", "dnd5e.preRollAbilitySave", "dnd5e.preRollSkill"],
+    "macros": ["forceRollResult"],
+    "ui_config": {
+      "showStatus": true,
+      "statusText": {
+        "unused": "✨ Potere del Destino disponibile",
+        "used": "⚪ Dado comune (potere esaurito)"
+      },
+      "showDialog": true,
+      "dialogText": "Vuoi usare il Dado del Destino per questo tiro? (Solo 1 volta nella vita!)"
+    },
+    "narrative_reminders": [
+      "Può essere usato su QUALSIASI tiro di d20 (attacco, skill, salvataggio, etc.)",
+      "Il giocatore SCEGLIE il risultato (1-20) PRIMA del tiro",
+      "Dopo l'uso, il dado perde TUTTI i suoi poteri magici",
+      "Decisione irreversibile - usare con saggezza!"
+    ]
+  },
+  "img": "icons/sundries/gaming/dice-ornate-blue.webp"
+}

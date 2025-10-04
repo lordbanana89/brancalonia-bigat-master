@@ -1,0 +1,22 @@
+{
+  "_id": "MJhOdqplQyDP6QGW",
+  "_key": "!journal!rissabasedanni4f4a59",
+  "name": "danni",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-base-danni",
+      "fonte": "Brancalonia Manuale Base"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

@@ -1,0 +1,13 @@
+{
+  "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "class-bardo-livello_1-ispirazione-bardica",
+      "nome": "Verve Dell'arlecchino",
+      "file": "class-bardo-livello_1-ispirazione-bardica.json"
+    }
+  ]
+}

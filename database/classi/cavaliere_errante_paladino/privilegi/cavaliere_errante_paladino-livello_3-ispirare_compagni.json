@@ -1,0 +1,20 @@
+{
+  "id": "cavaliere_errante_paladino-livello_3-ispirare_compagni",
+  "livello": 3,
+  "nome": "Incanalare Divinità: Ispirare i Compagni",
+  "tipo": "attivo",
+  "fonte": "Manuale Base p.27",
+  "descrizione": "Brandisci l'arma e inciti i compagni a combattere con onore. Il tuo proclama infonde coraggio e disciplina, spazzando via la paura.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione",
+      "risorsa": "Incanalare Divinità"
+    },
+    "bersagli": "Fino a 6 creature amiche entro 9 metri che possano vederti e udirti",
+    "effetti": [
+      "Ogni creatura ottiene punti ferita temporanei pari al tuo modificatore di Carisma (minimo 1)",
+      "Per 1 minuto è immune alla condizione spaventato",
+      "Per 1 minuto ha vantaggio ai tiri salvezza su Saggezza"
+    ]
+  }
+}

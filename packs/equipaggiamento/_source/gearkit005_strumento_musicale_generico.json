@@ -1,0 +1,79 @@
+{
+  "_id": "mP9de0DZ1AEky3aB",
+  "_key": "!item!gearkit005strumentomusicalegenericofdd1d6",
+  "name": "Strumento Musicale (Generico)",
+  "type": "equipment",
+  "img": "icons/containers/bags/pack-adventuring-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Liuto, flauto, cornamusa o altro strumento tipico dei cantastorie.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "identified": true,
+    "quantity": 1,
+    "weight": "1.5 kg",
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "armor": {
+      "value": 10,
+      "type": "light",
+      "dex": null
+    },
+    "strength": 0,
+    "stealth": false,
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "gear-kit-005",
+      "fonte": {
+        "manuale": "Manuale Base",
+        "pagine": "Equipaggiamento da Avventura"
+      },
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

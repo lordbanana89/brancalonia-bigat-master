@@ -1,0 +1,25 @@
+<div class="brancalonia-haven">
+  <h2>{{name}}</h2>
+  {{#if maintenance}}
+    <p>Costo mantenimento: {{maintenance}} ducati/settimana</p>
+  {{/if}}
+  {{#if rooms}}
+    <h3>Stanze</h3>
+    <ul>
+      {{#each rooms}}
+        <li>{{this.name}}{{#if this.description}} – {{this.description}}{{/if}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#if defenses}}
+    <h3>Difese</h3>
+    <ul>
+      {{#each defenses}}
+        <li>{{this.name}}{{#if this.level}} (Livello {{this.level}}){{/if}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#if notes}}
+    <div class="haven-notes">{{{notes}}}</div>
+  {{/if}}
+</div>

@@ -1,0 +1,265 @@
+{
+  "_id": "tq2BALUYatyfp3YJ",
+  "name": "Background delle Canaglie",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Background delle Canaglie",
+  "results": [
+    {
+      "_id": "background-canaglie_0",
+      "type": 0,
+      "text": "Ex-soldato disertore dell'esercito",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_0"
+    },
+    {
+      "_id": "background-canaglie_1",
+      "type": 0,
+      "text": "Ladro di polli e bestiame",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_1"
+    },
+    {
+      "_id": "background-canaglie_2",
+      "type": 0,
+      "text": "Bracconiere cacciatore di frodo",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_2"
+    },
+    {
+      "_id": "background-canaglie_3",
+      "type": 0,
+      "text": "Ciarlatano venditore di rimedi falsi",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_3"
+    },
+    {
+      "_id": "background-canaglie_4",
+      "type": 0,
+      "text": "Ex-monaco cacciato dal monastero",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_4"
+    },
+    {
+      "_id": "background-canaglie_5",
+      "type": 0,
+      "text": "Baro professionista",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_5"
+    },
+    {
+      "_id": "background-canaglie_6",
+      "type": 0,
+      "text": "Contrabbandiere di merci proibite",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_6"
+    },
+    {
+      "_id": "background-canaglie_7",
+      "type": 0,
+      "text": "Sicario al soldo del miglior offerente",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_7"
+    },
+    {
+      "_id": "background-canaglie_8",
+      "type": 0,
+      "text": "Pirata di fiume",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_8"
+    },
+    {
+      "_id": "background-canaglie_9",
+      "type": 0,
+      "text": "Brigante di strada",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_9"
+    },
+    {
+      "_id": "background-canaglie_10",
+      "type": 0,
+      "text": "Falsario di documenti",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_10"
+    },
+    {
+      "_id": "background-canaglie_11",
+      "type": 0,
+      "text": "Ruffiano e protettore",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_11"
+    },
+    {
+      "_id": "background-canaglie_12",
+      "type": 0,
+      "text": "Esattore corrotto",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_12"
+    },
+    {
+      "_id": "background-canaglie_13",
+      "type": 0,
+      "text": "Becchino tombarolo",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_13"
+    },
+    {
+      "_id": "background-canaglie_14",
+      "type": 0,
+      "text": "Alchimista di sostanze illegali",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_14"
+    },
+    {
+      "_id": "background-canaglie_15",
+      "type": 0,
+      "text": "Menestrello diffamatore",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_15"
+    },
+    {
+      "_id": "background-canaglie_16",
+      "type": 0,
+      "text": "Spia al soldo di più padroni",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_16"
+    },
+    {
+      "_id": "background-canaglie_17",
+      "type": 0,
+      "text": "Gladiatore delle arene clandestine",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_17"
+    },
+    {
+      "_id": "background-canaglie_18",
+      "type": 0,
+      "text": "Stregone da strapazzo",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_18"
+    },
+    {
+      "_id": "background-canaglie_19",
+      "type": 0,
+      "text": "Nobile decaduto e squattrinato",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "_key": "!results!background-canaglie_19"
+    }
+  ],
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 1600,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!backgroundcanaglie",
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

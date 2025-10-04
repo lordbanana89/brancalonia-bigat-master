@@ -1,0 +1,103 @@
+{
+  "_id": "5c4be4511e2d33e1",
+  "_key": "!item!5c4be4511e2d33e1",
+  "name": "Critico Brutale (1 dado)",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Critico Brutale (9° livello)</strong></p><p>Quando ottieni un colpo critico con un attacco in mischia con arma, puoi tirare un dado danno addizionale dell'arma e aggiungerlo al danno extra del critico.</p><p>Questo dado aumenta a due dadi al 13° livello e tre dadi al 17° livello.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.49",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Barbaro Livello 9",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "criticobrutale001",
+      "name": "Critico Brutale",
+      "icon": "icons/skills/melee/strike-sword-steel-yellow.webp",
+      "changes": [
+        {
+          "key": "flags.dnd5e.meleeCriticalDamageDice",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>Aggiungi 1 dado danno extra ai colpi critici in mischia.</p>",
+      "origin": null,
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": "#ffffff",
+      "_key": "!items.effects!5c4be4511e2d33e1.criticobrutale001"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "barbaro",
+      "livello": 9
+    }
+  }
+}

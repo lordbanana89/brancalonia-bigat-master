@@ -1,0 +1,59 @@
+{
+  "_id": "aQ8YWtMOCIgB8g69",
+  "_key": "!item!pugnale001",
+  "name": "Pugnale",
+  "type": "weapon",
+  "img": "icons/weapons/daggers/dagger-simple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Un pugnale semplice ma efficace.</p>"
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "damage": {
+      "parts": [
+        [
+          "1d4 + @mod",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "range": {
+      "value": 20,
+      "long": 60,
+      "units": "ft"
+    },
+    "properties": [
+      "fin",
+      "lgt",
+      "thr"
+    ],
+    "rarity": "common",
+    "attunement": "",
+    "type": {
+      "value": "simpleM",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

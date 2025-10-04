@@ -1,0 +1,16 @@
+{
+  "id": "gear-veh-002",
+  "nome": "Carro",
+  "categoria": "oggetto_comune",
+  "sottotipo": "veicoli",
+  "costo": "35 mo",
+  "peso": "100 kg",
+  "descrizione": "Veicolo a quattro ruote coperto; capacità di carico 600 kg.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

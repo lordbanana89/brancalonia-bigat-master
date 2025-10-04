@@ -1,0 +1,43 @@
+{
+  "_id": "generatorecitazione08a6f2",
+  "_key": "!journal!generatorecitazione08a6f2",
+  "name": "Cantico da Bettola",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "generatorecitazione08a6f2page1",
+      "name": "Cantico da Bettola",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "generatore-bettole-citazione",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "83"
+      }
+    }
+  },
+  "type": "journal"
+}

@@ -1,0 +1,106 @@
+{
+  "_id": "C16hAwvA96CYe2h9",
+  "_key": "!tables!C16hAwvA96CYe2h9",
+  "name": "Cacciatore di reliquie - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "hfv3nwqg9SzNrBZI",
+      "type": 0,
+      "text": "Soffro di una lieve claustrofobia.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!hfv3nwqg9SzNrBZI"
+    },
+    {
+      "_id": "2bjfaU8BTA9tRqps",
+      "type": 0,
+      "text": "Detesto trascorrere tempo all'aria aperta senza un soffitto sopra la testa.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!2bjfaU8BTA9tRqps"
+    },
+    {
+      "_id": "KGvHnHoe1WkAraxX",
+      "type": 0,
+      "text": "Sono paranoico: vedo trappole in ogni corridoio.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!KGvHnHoe1WkAraxX"
+    },
+    {
+      "_id": "038rLJ0WLANBKwvI",
+      "type": 0,
+      "text": "Odio stare fermo e sono fastidiosamente iperattivo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!038rLJ0WLANBKwvI"
+    },
+    {
+      "_id": "cWPglB2oYFDhZocV",
+      "type": 0,
+      "text": "Credo che ogni stanza nasconda un vano segreto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!cWPglB2oYFDhZocV"
+    },
+    {
+      "_id": "gGPmcBmyDjM2m1qe",
+      "type": 0,
+      "text": "Non mi separo mai da un frammento di reliquia maleodorante.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!gGPmcBmyDjM2m1qe"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "cacciatore-di-reliquie",
+      "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

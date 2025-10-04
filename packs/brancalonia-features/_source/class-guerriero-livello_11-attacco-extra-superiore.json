@@ -1,0 +1,145 @@
+{
+  "id": "class-guerriero-livello_11-attacco-extra-superiore",
+  "nome": "Attacco Extra (2)",
+  "nome_brancalonia": "Furia del Veterano",
+  "livello": 11,
+  "tipo": "passivo",
+  "descrizione": "All'11° livello, puoi attaccare tre volte, invece che due, ogni volta che effettui l'azione di Attacco nel tuo turno.",
+  "meccaniche": {
+    "numero_attacchi": 3,
+    "azione_richiesta": "Azione di Attacco",
+    "evoluzione": {
+      "livello_5": "2 attacchi",
+      "livello_11": "3 attacchi",
+      "livello_20": "4 attacchi"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "passive_effect",
+    "system_override": {
+      "attacks_per_action": 3
+    },
+    "note": "Sistema gestisce automaticamente"
+  },
+  "calcoli_danno": {
+    "aumento_dpr": {
+      "da_2_a_3": "+50% attacchi base",
+      "esempio_greatsword": {
+        "livello_10": "2 × (2d6+5) = 24 medi",
+        "livello_11": "3 × (2d6+5) = 36 medi",
+        "incremento": "+12 danni/round"
+      },
+      "esempio_longbow": {
+        "livello_10": "2 × (1d8+5) = 19 medi",
+        "livello_11": "3 × (1d8+5) = 28.5 medi",
+        "incremento": "+9.5 danni/round"
+      }
+    },
+    "con_action_surge": {
+      "attacchi_totali": "6 in un round",
+      "danno_nova": "72 medi con greatsword"
+    }
+  },
+  "confronto_classi": {
+    "guerriero": {
+      "unico": "Solo fighter arriva a 3+ attacchi",
+      "livello_20": "4 attacchi massimo gioco"
+    },
+    "altre_marziali": {
+      "barbaro": "2 attacchi max",
+      "paladino": "2 attacchi max",
+      "ranger": "2 attacchi max"
+    },
+    "paragone_dpr": {
+      "vs_barbaro_rage": "Fighter più attacchi, barbaro +rage",
+      "vs_paladin_smite": "Fighter consistente, paladin burst",
+      "vs_rogue_sneak": "Fighter multipli, rogue un grande"
+    }
+  },
+  "sinergie_build": {
+    "great_weapon_master": {
+      "impatto": "3 × potenziale -5/+10",
+      "danno_extra": "+30 se tutti colpiscono"
+    },
+    "sharpshooter": {
+      "impatto": "3 × potenziale -5/+10",
+      "danno_extra": "+30 a distanza"
+    },
+    "polearm_master": {
+      "totale": "3 attacchi + 1 bonus action",
+      "reazioni": "Più trigger opportunity"
+    },
+    "crossbow_expert": {
+      "hand_crossbow": "3 + 1 bonus = 4 attacchi"
+    }
+  },
+  "impatto_combattimento": {
+    "minion_clearing": "Elimina 3 nemici deboli",
+    "focus_fire": "Demolisce singoli bersagli",
+    "split_damage": "Pressione su multipli",
+    "crit_fishing": "Più chance critico (15%)"
+  },
+  "gestione_risorse": {
+    "nessun_costo": "Sempre disponibile",
+    "affidabilità": "Danno costante garantito",
+    "vs_casters": "No slot, no problemi",
+    "longevità": "Efficace tutto il giorno"
+  },
+  "ottimizzazione": {
+    "magic_weapons": "Moltiplica bonus arma",
+    "buffs": "Sfrutta benedizioni/hex",
+    "advantage": "Massimizza con vantaggio",
+    "precision": "Archery style per hit rate"
+  },
+  "tattiche_avanzate": {
+    "grapple_shove": "Attacco, lotta, spinta",
+    "disarm": "Tentare disarmi multipli",
+    "movimento": "Colpire e riposizionarsi",
+    "target_switching": "Adattare bersagli"
+  },
+  "scaling_futuro": {
+    "livello_20": {
+      "attacchi": 4,
+      "con_surge": "8 attacchi in un turno",
+      "devastazione": "Output massimo marziale"
+    }
+  },
+  "archetipi_sinergie": {
+    "champion": "Più chance critical (18-20)",
+    "battle_master": "3 manovre per turno",
+    "eldritch_knight": "Booming blade non compatibile",
+    "samurai": "3 attacchi con vantaggio",
+    "cavalier": "Marca multipli nemici"
+  },
+  "esempi_round": [
+    "Round 1: Attacco ×3, movimento",
+    "Round 2: Action Surge, Attacco ×6 totali",
+    "Round 3: Attacco ×3, Second Wind bonus"
+  ],
+  "narrazione_brancalonia": {
+    "maestria": "Colpi come pioggia di lame",
+    "veterano": "Precisione di mille battaglie",
+    "leggenda": "Troppo veloce per l'occhio",
+    "intimidazione": "Avversari terrorizzati"
+  },
+  "note_dm": "Il terzo attacco del guerriero lo rende il miglior damage dealer consistente. A questo livello supera nettamente le altre classi marziali in DPR puro.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "name": "Attacco Extra (Superiore)",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "_id": "1OQN5TTrIopzfIjy",
+  "_key": "!item!class-guerriero-livello_11-attacco-extra-superiore",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

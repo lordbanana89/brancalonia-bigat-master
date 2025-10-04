@@ -1,0 +1,10 @@
+{
+  "id": "intruglio-010",
+  "nome": "Presenzio",
+  "costo": "20 mo",
+  "peso": "0.5 kg",
+  "effetto": "Contatta spirito per 3 domande. TS Intelligenza CD 13 o 4d6 danni psichici + pazzia fino a riposo lungo",
+  "tipo_meccanica": "consumabile",
+  "nota": "Proibito in tutto il Regno",
+  "fonte": "Manuale Base p.65-66"
+}

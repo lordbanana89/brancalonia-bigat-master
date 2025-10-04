@@ -1,0 +1,8 @@
+{
+  "id": "rissa-mossa-base-pugno",
+  "nome": "Pugno/Calcio",
+  "danno": "1 + modificatore Forza Batoste",
+  "descrizione": "Attacco base a mani nude",
+  "speciale": "Nessuno",
+  "fonte": "Brancalonia Manuale Base"
+}

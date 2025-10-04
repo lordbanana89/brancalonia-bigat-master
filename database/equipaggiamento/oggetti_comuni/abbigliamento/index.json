@@ -1,0 +1,31 @@
+{
+  "categoria": "Abbigliamento e Accessori",
+  "totale": 5,
+  "elementi": [
+    {
+      "id": "gear-cloth-001",
+      "nome": "Abito Comune",
+      "file": "gear-cloth-001_abito_comune.json"
+    },
+    {
+      "id": "gear-cloth-002",
+      "nome": "Abito da Viaggio",
+      "file": "gear-cloth-002_abito_da_viaggio.json"
+    },
+    {
+      "id": "gear-cloth-003",
+      "nome": "Abito Signorile",
+      "file": "gear-cloth-003_abito_signorile.json"
+    },
+    {
+      "id": "gear-cloth-004",
+      "nome": "Guardaroba da Bettola",
+      "file": "gear-cloth-004_guardaroba_da_bettola.json"
+    },
+    {
+      "id": "gear-cloth-005",
+      "nome": "Calzature Rinforzate",
+      "file": "gear-cloth-005_calzature_rinforzate.json"
+    }
+  ]
+}

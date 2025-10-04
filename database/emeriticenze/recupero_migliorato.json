@@ -1,0 +1,20 @@
+{
+  "nome": "Recupero Migliorato",
+  "fonte": "Manuale Base p.40",
+  "tipo": "emeriticenza",
+  "descrizione": "Privilegio recuperato con riposo breve anziché lungo",
+  "requisiti": "6° livello + 9000 PE extra",
+  "usi_massimi": 2,
+  "meccaniche": {
+    "recupero_rapido": {
+      "tipo": "narrativo",
+      "descrizione": "Privilegio classe recuperabile con riposo lungo ora recuperabile con riposo breve",
+      "nota": "Non applicabile a incantesimi o capacità che influenzano incantesimi"
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "emeriticenza_recupero_migliorato",
+    "compendio": "emeriticenze"
+  }
+}

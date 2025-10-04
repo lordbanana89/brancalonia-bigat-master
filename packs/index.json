@@ -1,0 +1,169 @@
+{
+  "name": "Brancalonia Compendiums",
+  "description": "Compendi compilati per Foundry VTT",
+  "lastUpdated": "2025-10-02",
+  "format": "LevelDB",
+  "totalPacks": 13,
+  "totalItems": 900,
+  "compendiums": {
+    "backgrounds": {
+      "label": "Backgrounds",
+      "type": "Item",
+      "system": "dnd5e",
+      "items": 22,
+      "path": "packs/backgrounds",
+      "description": "Background di Brancalonia",
+      "content": [
+        "Attaccabrighe",
+        "Ambulante",
+        "Azzeccagarbugli",
+        "Brado",
+        "Duro",
+        "Fuggitivo"
+      ]
+    },
+    "brancalonia-features": {
+      "label": "Privilegi di Brancalonia",
+      "type": "Item",
+      "system": "dnd5e",
+      "items": 491,
+      "path": "packs/brancalonia-features",
+      "description": "Tutti i privilegi di classe e razza"
+    },
+    "classi": {
+      "label": "Classi",
+      "type": "Item",
+      "system": "dnd5e",
+      "items": 13,
+      "path": "packs/classi",
+      "description": "Classi di Brancalonia (include Burattinaio)",
+      "content": [
+        "Arlecchino (Bardo)",
+        "Benandante (Druido)",
+        "Brigante (Ladro)",
+        "Burattinaio",
+        "Cavaliere Errante (Paladino)",
+        "Frate (Monaco)",
+        "Guiscardo (Mago)",
+        "Mattatore (Ranger)",
+        "Menagramo (Warlock)",
+        "Miracolaro (Chierico)",
+        "Pagano (Barbaro)",
+        "Scaramante (Stregone)",
+        "Spadaccino (Guerriero)"
+      ]
+    },
+    "emeriticenze": {
+      "label": "Emeriticenze",
+      "type": "Item",
+      "system": "dnd5e",
+      "items": 11,
+      "path": "packs/emeriticenze",
+      "description": "Progressione post-6° livello"
+    },
+    "equipaggiamento": {
+      "label": "Equipaggiamento",
+      "type": "Item",
+      "system": "dnd5e",
+      "items": 258,
+      "path": "packs/equipaggiamento",
+      "description": "Armi, armature e oggetti scadenti",
+      "categories": [
+        "Armi scadenti",
+        "Armature arrugginite",
+        "Oggetti contraffatti",
+        "Cimeli",
+        "Intrugli",
+        "Provviste"
+      ]
+    },
+    "incantesimi": {
+      "label": "Incantesimi",
+      "type": "Item",
+      "system": "dnd5e",
+      "items": 94,
+      "path": "packs/incantesimi",
+      "description": "Incantesimi specifici Brancalonia"
+    },
+    "macro": {
+      "label": "Macro",
+      "type": "Macro",
+      "system": "dnd5e",
+      "items": 22,
+      "path": "packs/macro",
+      "description": "Macro automatiche",
+      "content": [
+        "Tira Infamia",
+        "Inizia Rissa",
+        "Genera Lavoro Sporco",
+        "Applica Menagramo",
+        "Crea Compagnia",
+        "Tira Baraonda"
+      ]
+    },
+    "npc": {
+      "label": "PNG",
+      "type": "Actor",
+      "system": "dnd5e",
+      "items": 44,
+      "path": "packs/npc",
+      "description": "Personaggi non giocanti"
+    },
+    "razze": {
+      "label": "Razze",
+      "type": "Item",
+      "system": "dnd5e",
+      "items": 9,
+      "path": "packs/razze",
+      "description": "Razze di Brancalonia",
+      "content": [
+        "Benandante",
+        "Dotato",
+        "Giffonita",
+        "Malebranche",
+        "Marionetta",
+        "Morgante",
+        "Pantegana",
+        "Silfo"
+      ]
+    },
+    "regole": {
+      "label": "Regole",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "items": 62,
+      "path": "packs/regole",
+      "description": "Regole e sistemi di gioco"
+    },
+    "rollable-tables": {
+      "label": "Tabelle Casuali",
+      "type": "RollTable",
+      "system": "dnd5e",
+      "items": 82,
+      "path": "packs/rollable-tables",
+      "description": "Tabelle per generazione casuale"
+    },
+    "sottoclassi": {
+      "label": "Sottoclassi",
+      "type": "Item",
+      "system": "dnd5e",
+      "items": 21,
+      "path": "packs/sottoclassi",
+      "description": "Sottoclassi specifiche Brancalonia"
+    },
+    "talenti": {
+      "label": "Talenti",
+      "type": "Item",
+      "system": "dnd5e",
+      "items": 8,
+      "path": "packs/talenti",
+      "description": "Talenti di Brancalonia"
+    }
+  },
+  "compilation": {
+    "method": "fvtt-build-packs.mjs",
+    "critical": "Campo _key deve essere preservato per Foundry v13",
+    "format": "LevelDB con campo _key",
+    "lastCompiled": "2025-10-02"
+  }
+}

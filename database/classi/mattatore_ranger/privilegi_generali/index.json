@@ -1,0 +1,13 @@
+{
+  "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "class-ranger-livello_1-nemico-favorito",
+      "nome": "Preda del Mattatore",
+      "file": "class-ranger-livello_1-nemico-favorito.json"
+    }
+  ]
+}

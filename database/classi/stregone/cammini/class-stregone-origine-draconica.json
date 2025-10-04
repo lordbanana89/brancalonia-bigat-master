@@ -1,0 +1,49 @@
+{
+  "id": "class-stregone-origine-draconica",
+  "nome": "Discendenza Draconica",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Ascendenza Draconica",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Dragon Ancestor"
+        }
+      },
+      {
+        "nome": "Resilienza Draconica",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Draconic Resilience"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Affinità Elementale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Elemental Affinity"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Ali di Drago",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Dragon Wings"
+        }
+      }
+    ],
+    "livello_18": [
+      {
+        "nome": "Presenza del Drago",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Draconic Presence"
+        }
+      }
+    ]
+  }
+}

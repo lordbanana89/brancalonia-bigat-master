@@ -1,0 +1,22 @@
+{
+  "id": "arma-std-002",
+  "nome": "Daga",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "2 mo",
+  "danni": "1d4 perforanti",
+  "proprieta": [
+    "Accurata",
+    "Leggera",
+    "Lancio (6/18 m)"
+  ],
+  "peso": "0.5 kg",
+  "descrizione": "Lama corta e affilata, utile tanto nei combattimenti quanto nei lavori di precisione.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

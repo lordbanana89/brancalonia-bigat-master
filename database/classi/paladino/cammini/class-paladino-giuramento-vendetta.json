@@ -1,0 +1,49 @@
+{
+  "id": "class-paladino-giuramento-vendetta",
+  "nome": "Giuramento di Vendetta",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Canalizzare Divinità: Intimorire il Nemico",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Abjure Enemy"
+        }
+      },
+      {
+        "nome": "Canalizzare Divinità: Voto di Inimicizia",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Vow of Enmity"
+        }
+      }
+    ],
+    "livello_7": [
+      {
+        "nome": "Vendicatore Implacabile",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Relentless Avenger"
+        }
+      }
+    ],
+    "livello_15": [
+      {
+        "nome": "Anima della Vendetta",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Soul of Vengeance"
+        }
+      }
+    ],
+    "livello_20": [
+      {
+        "nome": "Angelo Vendicatore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Avenging Angel"
+        }
+      }
+    ]
+  }
+}

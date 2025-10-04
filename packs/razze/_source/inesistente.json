@@ -1,0 +1,132 @@
+{
+  "_id": "7jyXXyXe4bTgVC8d",
+  "_key": "!item!inesistente66a334",
+  "name": "Inesistente",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pura coscienza astratta racchiusa in abiti vuoti, armature o mantelli che si muovono da soli</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.8-9",
+    "movement": {
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 0,
+      "units": "ft"
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "",
+      "custom": ""
+    },
+    "advancement": [
+      {
+        "_id": "uqblbtiepi18rtf2",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "sPKUzZNpVkxvigkx",
+        "type": "size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Size",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "HbatOSkoFe7m2X8E",
+        "type": "trait",
+        "configuration": {
+          "grants": [
+            "incorporeal_movement"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Incorporeal Movement",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "1y4cmpwk7aj1va10",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.b9nfip1u5gkb47mk"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Invisibilità Naturale",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "fupebjlwzyi1195e",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.lm1abbjh078q4kur"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Passare Inosservato",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "xj5mzjc2wwwjvydu",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.4k9xwije9dhh1egq"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Memoria Evanescente",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.8-9",
+      "validazione": {
+        "implementato": false,
+        "file_id": "inesistente_macaronicon",
+        "compendio": "razze_macaronicon"
+      }
+    }
+  }
+}

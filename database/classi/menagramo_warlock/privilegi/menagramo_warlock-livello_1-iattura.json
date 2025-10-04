@@ -1,0 +1,17 @@
+{
+  "id": "menagramo_warlock-livello_1-iattura",
+  "livello": 1,
+  "nome": "Iattura",
+  "tipo": "attivo",
+  "fonte": "Manuale Base p.29",
+  "descrizione": "Con un sussurro velenoso instilli dubbio e malasorte nella vittima. Il semplice pensiero di ciò che potrebbe andare storto basta a rovinarle l'incantesimo successivo.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione",
+      "raggio": "40 metri",
+      "requisito": "Il bersaglio deve poterti sentire",
+      "ricarica": "Riposo breve o lungo"
+    },
+    "effetto": "Il bersaglio subisce svantaggio al prossimo tiro salvezza contro una magia lanciata da te"
+  }
+}

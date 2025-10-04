@@ -1,0 +1,22 @@
+{
+  "id": "arma-std-202",
+  "nome": "Balestra a Mano",
+  "categoria": "arma_standard",
+  "tipo": "marziale_distanza",
+  "costo": "75 mo",
+  "danni": "1d6 perforanti",
+  "proprieta": [
+    "Munizioni (9/36 m)",
+    "Leggera",
+    "Ricarica"
+  ],
+  "peso": "1.4 kg",
+  "descrizione": "Balestra compatta impugnabile con una mano.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

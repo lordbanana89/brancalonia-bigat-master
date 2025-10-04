@@ -1,0 +1,59 @@
+{
+  "id": "spell-sonno",
+  "nome": "Sonno",
+  "nome_inglese": "Sleep",
+  "livello": 1,
+  "scuola": "Ammaliamento",
+  "tempo_lancio": "1 azione",
+  "gittata": "90 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Un pizzico di sabbia fine, petali di rosa o un grillo"
+  },
+  "durata": "1 minuto",
+  "descrizione": "Questo incantesimo fa cadere le creature in un sonno magico. Tira 5d8; il totale è quanti punti ferita di creature questo incantesimo può influenzare. Le creature entro 20 piedi da un punto che scegli entro gittata sono influenzate in ordine crescente dei loro punti ferita attuali (ignorando creature incoscienti). Iniziando con la creatura che ha i punti ferita attuali più bassi, ogni creatura influenzata da questo incantesimo cade incosciente fino a quando l'incantesimo termina, il dormiente subisce danni o qualcuno usa un'azione per scuotere o schiaffeggiare il dormiente sveglio. Sottrai i punti ferita di ogni creatura dal totale prima di passare alla creatura con i successivi punti ferita più bassi. I punti ferita di una creatura devono essere uguali o inferiori al totale rimanente perché quella creatura sia influenzata.",
+  "classi": ["Bardo", "Mago", "Stregone"],
+  "scaling": {
+    "slot_1": "5d8 HP",
+    "slot_2": "7d8 HP",  
+    "slot_3": "9d8 HP",
+    "slot_4": "11d8 HP",
+    "slot_5": "13d8 HP"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "action",
+    "range": 90,
+    "area": "20 ft radius",
+    "durata": "1 minute",
+    "no_save": true
+  },
+  "meccaniche": {
+    "no_save": "Nessun tiro salvezza",
+    "ordine_hp": "Colpisce prima HP bassi",
+    "immunita": "Elfi immuni, undead immuni",
+    "risveglio": "Azione per svegliare"
+  },
+  "hp_medi": {
+    "slot_1": "22.5 HP medi (5d8)",
+    "slot_2": "31.5 HP medi (7d8)",
+    "slot_3": "40.5 HP medi (9d8)"
+  },
+  "utilizzi_tattici": [
+    "Shutdown minions multipli",
+    "Bypass combat con low HP enemies",
+    "Catturare vivi",
+    "Escape tool"
+  ],
+  "limitazioni": [
+    "Inutile vs high HP",
+    "Elfi completamente immuni",
+    "Undead/costrutti immuni",
+    "Svegliare è facile (1 azione)"
+  ],
+  "note_dm": "Sleep potentissimo a bassi livelli, debole dopo. No save lo rende affidabile vs minions. Immunità elfi importante.",
+  "fonte": "D&D 5e PHB p.276"
+}

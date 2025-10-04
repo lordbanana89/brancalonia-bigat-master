@@ -1,0 +1,59 @@
+{
+  "id": "class-chierico-dominio-luce",
+  "nome": "Dominio della Luce",
+  "fonte": "Manuale del Giocatore p.60",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Trucchetto Bonus",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bonus Cantrip (Light)"
+        }
+      },
+      {
+        "nome": "Bagliore Protettivo",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Warding Flare"
+        }
+      }
+    ],
+    "livello_2": [
+      {
+        "nome": "Incanalare Divinità: Radianza dell'Alba",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Radiance of the Dawn"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Bagliore Migliorato",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Improved Flare"
+        }
+      }
+    ],
+    "livello_8": [
+      {
+        "nome": "Incantesimi Potenti",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Potent Spellcasting (Light)"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Corona di Luce",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Corona of Light"
+        }
+      }
+    ]
+  }
+}

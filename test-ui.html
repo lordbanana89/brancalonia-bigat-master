@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brancalonia UI Test - Console Errori</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Brancalonia Styles -->
+    <link rel="stylesheet" href="styles/brancalonia.css">
+
+    <style>
+        /* Test environment styles */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        /* Apply Brancalonia theme class */
+        body.brancalonia-sheet {
+            background: #F3E6CC;
+            color: #2B1F14;
+        }
+
+        .console {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            padding: 10px;
+            overflow-y: auto;
+            border-top: 2px solid #0f0;
+            font-size: 12px;
+            z-index: 10000;
+        }
+
+        .console .error {
+            color: #f00;
+        }
+
+        .console .warn {
+            color: #ff0;
+        }
+
+        .console .info {
+            color: #0af;
+        }
+
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto 220px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .test-section h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #C9A54A;
+            padding-bottom: 10px;
+        }
+
+        /* Mock Foundry structure */
+        .dnd5e.sheet.actor.brancalonia-sheet {
+            background: #F3E6CC;
+            padding: 20px;
+            border: 2px solid #C9A54A;
+            border-radius: 8px;
+        }
+
+        .sheet-header {
+            display: flex;
+            gap: 12px;
+            padding: 8px;
+            background: linear-gradient(135deg, #F4E4BC 0%, #E7D6AE 100%);
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            border-radius: 50%;
+            border: 2px solid #C9A54A;
+        }
+
+        .abilities {
+            display: flex;
+            gap: 10px;
+        }
+
+        .ability {
+            flex: 1;
+            padding: 10px;
+            background: #F3E6CC;
+            border: 1px solid #C9A54A;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .error-counter {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            z-index: 10000;
+        }
+
+        .error-counter.has-errors {
+            background: #d32f2f;
+        }
+
+        .error-counter.has-warnings {
+            background: #f57c00;
+        }
+
+        .error-counter.all-good {
+            background: #388e3c;
+        }
+    </style>
+</head>
+<body class="brancalonia-sheet">
+    <!-- Error Counter -->
+    <div id="errorCounter" class="error-counter">
+        Errors: <span id="errorCount">0</span> | Warnings: <span id="warningCount">0</span>
+    </div>
+
+    <div class="test-container">
+        <h1>🎭 Brancalonia UI Test Suite</h1>
+
+        <!-- Test Actor Sheet -->
+        <div class="test-section">
+            <h2>Actor Sheet Test</h2>
+            <div class="dnd5e sheet actor brancalonia-sheet">
+                <div class="sheet-header">
+                    <div class="profile">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100' height='100' fill='%23999'/%3E%3C/svg%3E" alt="Portrait">
+                    </div>
+                    <div class="header-details">
+                        <div class="charname">
+                            <input type="text" value="Test Character" />
+                        </div>
+                        <ul class="summary">
+                            <li>Level 5</li>
+                            <li>Malandrino</li>
+                            <li>Umano</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="abilities">
+                    <div class="ability">
+                        <div class="ability-score">10</div>
+                        <div class="ability-mod">+0</div>
+                        <div class="ability-name">STR</div>
+                    </div>
+                    <div class="ability">
+                        <div class="ability-score">14</div>
+                        <div class="ability-mod">+2</div>
+                        <div class="ability-name">DEX</div>
+                    </div>
+                    <div class="ability">
+                        <div class="ability-score">12</div>
+                        <div class="ability-mod">+1</div>
+                        <div class="ability-name">CON</div>
+                    </div>
+                    <div class="ability">
+                        <div class="ability-score">16</div>
+                        <div class="ability-mod">+3</div>
+                        <div class="ability-name">INT</div>
+                    </div>
+                    <div class="ability">
+                        <div class="ability-score">13</div>
+                        <div class="ability-mod">+1</div>
+                        <div class="ability-name">WIS</div>
+                    </div>
+                    <div class="ability">
+                        <div class="ability-score">8</div>
+                        <div class="ability-mod">-1</div>
+                        <div class="ability-name">CHA</div>
+                    </div>
+                </div>
+
+                <!-- Brancalonia specific elements -->
+                <div class="infamia-tracker">
+                    <h3>🗡️ Infamia</h3>
+                    <div class="infamia-bar">
+                        <div class="infamia-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="baraonda-tracker">
+                    <h3>🍺 Punti Baraonda</h3>
+                    <div class="baraonda-value">3</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Icons -->
+        <div class="test-section">
+            <h2>Font Awesome Icons Test</h2>
+            <div>
+                <i class="fas fa-dice-d20"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-magic"></i>
+                <i class="fas fa-sword"></i>
+                <i class="far fa-user"></i>
+                <i class="fab fa-d-and-d"></i>
+            </div>
+        </div>
+
+        <!-- Test CSS Variables -->
+        <div class="test-section">
+            <h2>CSS Variables Test</h2>
+            <div id="cssVarTest"></div>
+        </div>
+
+        <!-- Test Module Loading -->
+        <div class="test-section">
+            <h2>Module Loading Test</h2>
+            <div id="moduleTest"></div>
+        </div>
+    </div>
+
+    <!-- Console -->
+    <div id="console" class="console">
+        <div>🖥️ Brancalonia UI Test Console - Checking for errors...</div>
+    </div>
+
+    <script>
+        // Enhanced console logging
+        const consoleDiv = document.getElementById('console');
+        const errorCount = document.getElementById('errorCount');
+        const warningCount = document.getElementById('warningCount');
+        const errorCounter = document.getElementById('errorCounter');
+        let errors = 0;
+        let warnings = 0;
+
+        function logToConsole(message, type = 'info') {
+            const entry = document.createElement('div');
+            entry.className = type;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            consoleDiv.appendChild(entry);
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+
+            if (type === 'error') {
+                errors++;
+                errorCount.textContent = errors;
+                errorCounter.className = 'error-counter has-errors';
+            } else if (type === 'warn') {
+                warnings++;
+                warningCount.textContent = warnings;
+                if (!errorCounter.classList.contains('has-errors')) {
+                    errorCounter.className = 'error-counter has-warnings';
+                }
+            }
+        }
+
+        // Intercept console methods
+        const originalError = console.error;
+        const originalWarn = console.warn;
+        const originalLog = console.log;
+
+        console.error = function(...args) {
+            logToConsole('ERROR: ' + args.join(' '), 'error');
+            originalError.apply(console, args);
+        };
+
+        console.warn = function(...args) {
+            logToConsole('WARN: ' + args.join(' '), 'warn');
+            originalWarn.apply(console, args);
+        };
+
+        console.log = function(...args) {
+            logToConsole('LOG: ' + args.join(' '), 'info');
+            originalLog.apply(console, args);
+        };
+
+        // Catch window errors
+        window.addEventListener('error', (event) => {
+            logToConsole(`ERROR: ${event.message} at ${event.filename}:${event.lineno}:${event.colno}`, 'error');
+        });
+
+        // Catch unhandled promise rejections
+        window.addEventListener('unhandledrejection', (event) => {
+            logToConsole(`PROMISE REJECTION: ${event.reason}`, 'error');
+        });
+
+        // Test CSS loading
+        function testCSSLoading() {
+            const links = document.querySelectorAll('link[rel="stylesheet"]');
+            links.forEach((link) => {
+                link.addEventListener('load', () => {
+                    logToConsole(`✅ CSS Loaded: ${link.href}`, 'info');
+                });
+                link.addEventListener('error', () => {
+                    logToConsole(`❌ CSS Failed: ${link.href}`, 'error');
+                });
+            });
+        }
+
+        // Test CSS Variables
+        function testCSSVariables() {
+            const testDiv = document.getElementById('cssVarTest');
+            const computedStyle = getComputedStyle(document.documentElement);
+            const variables = [
+                '--bcl-gold',
+                '--bcl-surface',
+                '--bcl-ink',
+                '--bcl-accent',
+                '--bcl-paper'
+            ];
+
+            let varHTML = '<ul>';
+            variables.forEach(varName => {
+                const value = computedStyle.getPropertyValue(varName);
+                if (value) {
+                    varHTML += `<li>✅ ${varName}: ${value}</li>`;
+                    logToConsole(`CSS Variable ${varName} = ${value}`, 'info');
+                } else {
+                    varHTML += `<li>❌ ${varName}: NOT DEFINED</li>`;
+                    logToConsole(`CSS Variable ${varName} is not defined!`, 'warn');
+                }
+            });
+            varHTML += '</ul>';
+            testDiv.innerHTML = varHTML;
+        }
+
+        // Test module files
+        async function testModules() {
+            const moduleTest = document.getElementById('moduleTest');
+            const modules = [
+                'modules/brancalonia-init.js',
+                'modules/brancalonia-theme.mjs',
+                'modules/brancalonia-sheets.js',
+                'modules/infamia-tracker.js',
+                'modules/brancalonia-icon-interceptor.js'
+            ];
+
+            let moduleHTML = '<ul>';
+            for (const module of modules) {
+                try {
+                    const response = await fetch(module);
+                    if (response.ok) {
+                        moduleHTML += `<li>✅ ${module}</li>`;
+                        logToConsole(`Module found: ${module}`, 'info');
+                    } else {
+                        moduleHTML += `<li>❌ ${module} (${response.status})</li>`;
+                        logToConsole(`Module error: ${module} - Status ${response.status}`, 'error');
+                    }
+                } catch (err) {
+                    moduleHTML += `<li>❌ ${module} (Failed to fetch)</li>`;
+                    logToConsole(`Module fetch failed: ${module} - ${err.message}`, 'error');
+                }
+            }
+            moduleHTML += '</ul>';
+            moduleTest.innerHTML = moduleHTML;
+        }
+
+        // Check for CSS conflicts
+        function checkCSSConflicts() {
+            const sheets = document.styleSheets;
+            let totalRules = 0;
+            let importantCount = 0;
+
+            try {
+                for (let sheet of sheets) {
+                    try {
+                        const rules = sheet.cssRules || sheet.rules;
+                        if (rules) {
+                            totalRules += rules.length;
+                            for (let rule of rules) {
+                                if (rule.style && rule.style.cssText.includes('!important')) {
+                                    importantCount++;
+                                }
+                            }
+                        }
+                    } catch (e) {
+                        // Cross-origin or other access issues
+                        logToConsole(`Cannot access stylesheet: ${sheet.href || 'inline'}`, 'warn');
+                    }
+                }
+
+                logToConsole(`CSS Analysis: ${totalRules} rules loaded, ${importantCount} use !important`, 'info');
+
+                if (importantCount > 50) {
+                    logToConsole(`Warning: High number of !important rules (${importantCount})`, 'warn');
+                }
+            } catch (err) {
+                logToConsole(`Error analyzing CSS: ${err.message}`, 'error');
+            }
+        }
+
+        // Run tests when page loads
+        window.addEventListener('load', () => {
+            logToConsole('Page loaded, starting tests...', 'info');
+            testCSSLoading();
+            testCSSVariables();
+            testModules();
+            checkCSSConflicts();
+
+            // Final status
+            setTimeout(() => {
+                if (errors === 0 && warnings === 0) {
+                    logToConsole('✅ All tests passed! No errors or warnings found.', 'info');
+                    errorCounter.className = 'error-counter all-good';
+                } else {
+                    logToConsole(`⚠️ Test complete: ${errors} errors, ${warnings} warnings`, 'warn');
+                }
+            }, 2000);
+        });
+
+        // Load modules dynamically to test for syntax errors
+        function loadModuleTest() {
+            const scripts = [
+                'modules/brancalonia-init.js',
+                'modules/brancalonia-icon-interceptor.js'
+            ];
+
+            scripts.forEach(src => {
+                const script = document.createElement('script');
+                script.src = src;
+                script.onerror = () => {
+                    logToConsole(`Failed to load script: ${src}`, 'error');
+                };
+                script.onload = () => {
+                    logToConsole(`Script loaded: ${src}`, 'info');
+                };
+                document.head.appendChild(script);
+            });
+        }
+
+        // Simulate some Foundry globals to prevent errors
+        window.game = { settings: { get: () => false, set: () => {} }, system: { id: 'dnd5e' } };
+        window.Hooks = { once: () => {}, on: () => {} };
+        window.CONFIG = {};
+        window.ui = { notifications: { info: console.log, warn: console.warn, error: console.error } };
+
+        loadModuleTest();
+    </script>
+</body>
+</html>

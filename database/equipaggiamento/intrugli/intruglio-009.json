@@ -1,0 +1,9 @@
+{
+  "id": "intruglio-009",
+  "nome": "Panacea dei Fieronzi",
+  "costo": "20 mo",
+  "peso": "0.5 kg",
+  "effetto": "Rimuove malattia o condizione (accecato/assordato/avvelenato/paralizzato). TS Costituzione CD 12 o 1 livello indebolimento",
+  "tipo_meccanica": "consumabile",
+  "fonte": "Manuale Base p.65-66"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "spell-base-010",
+  "nome": "Arma Spirituale",
+  "nome_originale": "Spiritual Weapon",
+  "livello": 2,
+  "scuola": "Invocazione",
+  "classi": [
+    "Chierico"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Spiritual Weapon",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Spiritual Weapon).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale."
+}

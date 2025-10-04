@@ -1,0 +1,31 @@
+{
+  "_id": "zTG0kJXHE1RNJX3h",
+  "name": "🥊 Botte da Orbi",
+  "type": "script",
+  "author": "Brancalonia",
+  "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+  "scope": "global",
+  "command": "// BOTTE DA ORBI - Sistema Combattimento di Massa\n// Seleziona i token che partecipano al combattimento\n\nconst tokens = canvas.tokens.controlled;\nif(tokens.length === 0) {\n  ui.notifications.warn(\"Seleziona almeno un token per la Botte da Orbi!\");\n  return;\n}\n\n// Calcola modificatori squadra\nlet modSquadra = 0;\nmodSquadra += Math.floor(tokens.length / 2); // +1 ogni 2 membri\n\n// Controlla se c'è un leader\nconst hasLeader = tokens.some(t => t.actor.items.find(i => i.name.includes(\"Capitano\") || i.name.includes(\"Leader\")));\nif(hasLeader) modSquadra += 2;\n\n// Controlla personaggi di alto livello\nconst highLevel = tokens.filter(t => t.actor.system.details.level >= 5).length;\nmodSquadra += highLevel;\n\n// Tiro di squadra\nconst roll = await new Roll(`1d20 + ${modSquadra}`).evaluate({async: true});\nawait roll.toMessage({\n  speaker: ChatMessage.getSpeaker(),\n  flavor: `<h2>🥊 Botte da Orbi!</h2>\n  <p><strong>Squadra:</strong> ${tokens.length} combattenti</p>\n  <p><strong>Modificatore:</strong> +${modSquadra}</p>\n  <p><strong>Leader:</strong> ${hasLeader ? \"Sì\" : \"No\"}</p>\n  <hr>\n  <p>Confronta il risultato con la squadra avversaria!</p>\n  <p><em>Chi perde subisce 1d6 danni (non letali) e TS Saggezza CD 12 o si ritira.</em></p>`\n});\n\n// Applica danni se richiesto\nif(roll.total < 10) { // Sconfitta automatica se sotto 10\n  const damage = await new Roll(\"1d6\").evaluate({async: true});\n  for(let token of tokens) {\n    await token.actor.applyDamage(damage.total, 1);\n  }\n  ChatMessage.create({\n    content: `<p style=\"color:red;\">La squadra è stata sconfitta! Tutti subiscono ${damage.total} danni non letali.</p>`\n  });\n}",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Macro.botteorbi001"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.347"
+  },
+  "_key": "!macros!botteorbi001",
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "system": {}
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "xkrv1rh8u323o6mg",
+  "_key": "!item!xkrv1rh8u323o6mg",
+  "name": "Fortuna del Briccone",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "1 volta per riposo lungo, puoi ritirare un tiro di dado e usare il nuovo risultato.",
+      "chat": ""
+    },
+    "requirements": "Svanzici",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-103",
+  "nome": "Corazza di Scaglie",
+  "categoria": "armatura_standard",
+  "tipo": "media",
+  "costo": "50 mo",
+  "classe_armatura": "14 + Mod Destrezza (max 2)",
+  "bonus_ca": null,
+  "forza_minima": "—",
+  "furtivita": "Svantaggio",
+  "peso": "20.4 kg",
+  "descrizione": "Piastre di metallo sovrapposte cucite su un supporto di cuoio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-204",
+  "nome": "Armatura Completa",
+  "categoria": "armatura_standard",
+  "tipo": "pesante",
+  "costo": "1500 mo",
+  "classe_armatura": "18",
+  "bonus_ca": null,
+  "forza_minima": "15",
+  "furtivita": "Svantaggio",
+  "peso": "29.5 kg",
+  "descrizione": "Armatura interamente in piastre su misura per il portatore.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

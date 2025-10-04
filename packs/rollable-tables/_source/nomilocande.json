@@ -1,0 +1,265 @@
+{
+  "_id": "CxzyNXnwRfvTXzlF",
+  "name": "Nomi di Locande e Taverne",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Nomi di Locande e Taverne",
+  "results": [
+    {
+      "_id": "nomi-locande_0",
+      "type": 0,
+      "text": "Il Porco Ubriaco",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_0"
+    },
+    {
+      "_id": "nomi-locande_1",
+      "type": 0,
+      "text": "La Gazza Ladra",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_1"
+    },
+    {
+      "_id": "nomi-locande_2",
+      "type": 0,
+      "text": "Il Boccale Bucato",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_2"
+    },
+    {
+      "_id": "nomi-locande_3",
+      "type": 0,
+      "text": "L'Asino che Ride",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_3"
+    },
+    {
+      "_id": "nomi-locande_4",
+      "type": 0,
+      "text": "La Pulce nell'Orecchio",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_4"
+    },
+    {
+      "_id": "nomi-locande_5",
+      "type": 0,
+      "text": "Il Gallo Strozzato",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_5"
+    },
+    {
+      "_id": "nomi-locande_6",
+      "type": 0,
+      "text": "La Vacca Grassa",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_6"
+    },
+    {
+      "_id": "nomi-locande_7",
+      "type": 0,
+      "text": "Il Monaco Briccone",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_7"
+    },
+    {
+      "_id": "nomi-locande_8",
+      "type": 0,
+      "text": "La Biscia Matta",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_8"
+    },
+    {
+      "_id": "nomi-locande_9",
+      "type": 0,
+      "text": "Il Topo nel Formaggio",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_9"
+    },
+    {
+      "_id": "nomi-locande_10",
+      "type": 0,
+      "text": "L'Orco Gentile",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_10"
+    },
+    {
+      "_id": "nomi-locande_11",
+      "type": 0,
+      "text": "La Lepre Zoppa",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_11"
+    },
+    {
+      "_id": "nomi-locande_12",
+      "type": 0,
+      "text": "Il Lupo Mannaro Vegetariano",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_12"
+    },
+    {
+      "_id": "nomi-locande_13",
+      "type": 0,
+      "text": "La Civetta Cieca",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_13"
+    },
+    {
+      "_id": "nomi-locande_14",
+      "type": 0,
+      "text": "Il Drago Sdentato",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_14"
+    },
+    {
+      "_id": "nomi-locande_15",
+      "type": 0,
+      "text": "La Formica Gigante",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_15"
+    },
+    {
+      "_id": "nomi-locande_16",
+      "type": 0,
+      "text": "Il Cinghiale Filosofo",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_16"
+    },
+    {
+      "_id": "nomi-locande_17",
+      "type": 0,
+      "text": "La Talpa Veggente",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_17"
+    },
+    {
+      "_id": "nomi-locande_18",
+      "type": 0,
+      "text": "Il Corvo Bianco",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_18"
+    },
+    {
+      "_id": "nomi-locande_19",
+      "type": 0,
+      "text": "L'Unicorno Macellato",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "_key": "!results!nomi-locande_19"
+    }
+  ],
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 300,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!nomilocande",
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

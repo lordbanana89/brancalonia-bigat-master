@@ -1,0 +1,258 @@
+{
+  "categoria": "Cimeli",
+  "descrizione": "Indice dei 50 cimeli unici del Regno di Brancalonia",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 50,
+  "elementi": [
+    {
+      "id": "001",
+      "nome": "L'anello del Vescovo Ladrone",
+      "file": "001_lanello_del_vescovo_ladrone.json"
+    },
+    {
+      "id": "002",
+      "nome": "La Bisaccia del Pellegrino Morto",
+      "file": "002_la_bisaccia_del_pellegrino_morto.json"
+    },
+    {
+      "id": "003",
+      "nome": "Il Boccale del Gigante Ubriacone",
+      "file": "003_il_boccale_del_gigante_ubriacone.json"
+    },
+    {
+      "id": "004",
+      "nome": "La Corda Dell'impiccato Innocente",
+      "file": "004_la_corda_dellimpiccato_innocente.json"
+    },
+    {
+      "id": "005",
+      "nome": "I Dadi del Diavolo",
+      "file": "005_i_dadi_del_diavolo.json"
+    },
+    {
+      "id": "006",
+      "nome": "L'elmo del Cavaliere Codardo",
+      "file": "006_lelmo_del_cavaliere_codardo.json"
+    },
+    {
+      "id": "007",
+      "nome": "Il Fazzoletto della Dama Nera",
+      "file": "007_il_fazzoletto_della_dama_nera.json"
+    },
+    {
+      "id": "008",
+      "nome": "Il Guanto del Boia",
+      "file": "008_il_guanto_del_boia.json"
+    },
+    {
+      "id": "009",
+      "nome": "L'idolo Pagano",
+      "file": "009_lidolo_pagano.json"
+    },
+    {
+      "id": "010",
+      "nome": "La Lanterna del Guardiano del Faro",
+      "file": "010_la_lanterna_del_guardiano_del_faro.json"
+    },
+    {
+      "id": "011",
+      "nome": "La Maschera del Carnefice",
+      "file": "011_la_maschera_del_carnefice.json"
+    },
+    {
+      "id": "012",
+      "nome": "Il Naso di Pinocchio",
+      "file": "012_il_naso_di_pinocchio.json"
+    },
+    {
+      "id": "013",
+      "nome": "L'occhio di Vetro del Pirata",
+      "file": "013_locchio_di_vetro_del_pirata.json"
+    },
+    {
+      "id": "014",
+      "nome": "Il Pennello del Pittore Maledetto",
+      "file": "014_il_pennello_del_pittore_maledetto.json"
+    },
+    {
+      "id": "015",
+      "nome": "La Pipa del Filosofo",
+      "file": "015_la_pipa_del_filosofo.json"
+    },
+    {
+      "id": "016",
+      "nome": "Il Quadrifoglio Appassito",
+      "file": "016_il_quadrifoglio_appassito.json"
+    },
+    {
+      "id": "017",
+      "nome": "La Rosa di Ferro",
+      "file": "017_la_rosa_di_ferro.json"
+    },
+    {
+      "id": "018",
+      "nome": "Lo Specchio della Strega",
+      "file": "018_lo_specchio_della_strega.json"
+    },
+    {
+      "id": "019",
+      "nome": "Il Teschio del Santo Eretico",
+      "file": "019_il_teschio_del_santo_eretico.json"
+    },
+    {
+      "id": "020",
+      "nome": "L'ultimo Chiodo della Croce",
+      "file": "020_lultimo_chiodo_della_croce.json"
+    },
+    {
+      "id": "021",
+      "nome": "Il Violino del Diavolo",
+      "file": "021_il_violino_del_diavolo.json"
+    },
+    {
+      "id": "022",
+      "nome": "La Zappa del Contadino Ribelle",
+      "file": "022_la_zappa_del_contadino_ribelle.json"
+    },
+    {
+      "id": "023",
+      "nome": "L'ampolla di Sangue di San Geniale",
+      "file": "023_lampolla_di_sangue_di_san_geniale.json"
+    },
+    {
+      "id": "024",
+      "nome": "Il Bastone del Mendicante Re",
+      "file": "024_il_bastone_del_mendicante_re.json"
+    },
+    {
+      "id": "025",
+      "nome": "La Catena del Cane Infernale",
+      "file": "025_la_catena_del_cane_infernale.json"
+    },
+    {
+      "id": "026",
+      "nome": "Il Diario del Condannato",
+      "file": "026_il_diario_del_condannato.json"
+    },
+    {
+      "id": "027",
+      "nome": "L'elmetto del Soldato Sconosciuto",
+      "file": "027_lelmetto_del_soldato_sconosciuto.json"
+    },
+    {
+      "id": "028",
+      "nome": "Il Ferro di Cavallo Fortunato",
+      "file": "028_il_ferro_di_cavallo_fortunato.json"
+    },
+    {
+      "id": "029",
+      "nome": "Il Grimorio Dello Studente Suicida",
+      "file": "029_il_grimorio_dello_studente_suicida.json"
+    },
+    {
+      "id": "030",
+      "nome": "Il Crocifisso Capovolto",
+      "file": "030_il_crocifisso_capovolto.json"
+    },
+    {
+      "id": "031",
+      "nome": "La Moneta del Traghettatore",
+      "file": "031_la_moneta_del_traghettatore.json"
+    },
+    {
+      "id": "032",
+      "nome": "L'orecchio del Confessore",
+      "file": "032_lorecchio_del_confessore.json"
+    },
+    {
+      "id": "033",
+      "nome": "Il Pugnale del Traditore",
+      "file": "033_il_pugnale_del_traditore.json"
+    },
+    {
+      "id": "034",
+      "nome": "La Ruota della Tortura",
+      "file": "034_la_ruota_della_tortura.json"
+    },
+    {
+      "id": "035",
+      "nome": "Lo Stendardo Strappato",
+      "file": "035_lo_stendardo_strappato.json"
+    },
+    {
+      "id": "036",
+      "nome": "Il Tamburo di Guerra Silenzioso",
+      "file": "036_il_tamburo_di_guerra_silenzioso.json"
+    },
+    {
+      "id": "037",
+      "nome": "L'uncino del Pirata Fantasma",
+      "file": "037_luncino_del_pirata_fantasma.json"
+    },
+    {
+      "id": "038",
+      "nome": "La Veste del Monaco Apostata",
+      "file": "038_la_veste_del_monaco_apostata.json"
+    },
+    {
+      "id": "039",
+      "nome": "Lo Zufolo del Pifferaio",
+      "file": "039_lo_zufolo_del_pifferaio.json"
+    },
+    {
+      "id": "040",
+      "nome": "L'anello Spezzato",
+      "file": "040_lanello_spezzato.json"
+    },
+    {
+      "id": "041",
+      "nome": "Il Bicchiere Avvelenato",
+      "file": "041_il_bicchiere_avvelenato.json"
+    },
+    {
+      "id": "042",
+      "nome": "La Candela del Vegliardo",
+      "file": "042_la_candela_del_vegliardo.json"
+    },
+    {
+      "id": "043",
+      "nome": "Il Dado del Destino",
+      "file": "043_il_dado_del_destino.json"
+    },
+    {
+      "id": "044",
+      "nome": "L'elmo del Generale Sconfitto",
+      "file": "044_lelmo_del_generale_sconfitto.json"
+    },
+    {
+      "id": "045",
+      "nome": "La Fiala delle Lacrime di Gioia",
+      "file": "045_la_fiala_delle_lacrime_di_gioia.json"
+    },
+    {
+      "id": "046",
+      "nome": "Il Guanto del Duellante",
+      "file": "046_il_guanto_del_duellante.json"
+    },
+    {
+      "id": "047",
+      "nome": "L'icona Piangente",
+      "file": "047_licona_piangente.json"
+    },
+    {
+      "id": "048",
+      "nome": "La Lettera Mai Consegnata",
+      "file": "048_la_lettera_mai_consegnata.json"
+    },
+    {
+      "id": "049",
+      "nome": "La Mappa del Tesoro Maledetto",
+      "file": "049_la_mappa_del_tesoro_maledetto.json"
+    },
+    {
+      "id": "050",
+      "nome": "La Spada Spezzata Dell'eroe",
+      "file": "050_la_spada_spezzata_delleroe.json"
+    }
+  ]
+}

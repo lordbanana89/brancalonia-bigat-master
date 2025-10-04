@@ -1,0 +1,50 @@
+{
+  "id": "class-mago-scuola-ammaliamento",
+  "nome": "Scuola di Ammaliamento",
+  "fonte": "Manuale del Giocatore p.84",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Savant dell'Ammaliamento",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Enchantment Savant"
+        }
+      },
+      {
+        "nome": "Sguardo Ipnotico",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Hypnotic Gaze"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Fascino Istintivo",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Instinctive Charm"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Incanto Duplicato",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Split Enchantment"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Alterare Memoria",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Alter Memories"
+        }
+      }
+    ]
+  }
+}

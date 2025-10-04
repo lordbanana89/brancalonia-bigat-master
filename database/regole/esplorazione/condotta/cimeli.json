@@ -1,0 +1,211 @@
+{
+  "id": "condotta-cimeli",
+  "titolo": "Cimeli",
+  "dado": "1d50",
+  "voci": [
+    {
+      "tiro": 1,
+      "descrizione": "Una splendida zappa. Davvero un ottimo strumento, in buone condizioni e di eccezionale qualita."
+    },
+    {
+      "tiro": 2,
+      "descrizione": "Stivali spaiati di Belgaratto. Una coppia di stivali, diversi per colore, misura e foggia. Paradossalmente, entrambi gli stivali calzano perfettamente ai piedi della canaglia."
+    },
+    {
+      "tiro": 3,
+      "descrizione": "Il Cappello dell' Ammazzasette. Un cappellaccio sdrucito a tesa larga, all'uso dei bravi, su cui qualche pallone gonfiato ha ricamato a lettere d'oro le parole \"Ammazzasette Seminarovina\" ."
+    },
+    {
+      "tiro": 4,
+      "descrizione": "Coda di cane essiccata. Un vecchio talismano imbalsamato."
+    },
+    {
+      "tiro": 5,
+      "descrizione": "Due di schiaffi. Una carta da Minchiate su cui qualche burlone ha disegnato sopra due palme aperte."
+    },
+    {
+      "tiro": 6,
+      "descrizione": "Scherza coi fanti. Un breviario umoristico scritto a mano, che raccoglie battute molto comuni nelle caserme."
+    },
+    {
+      "tiro": 7,
+      "descrizione": "Lascia stare i santi. Un breviario religioso scritto a mano, che contiene formule e informazioni su tutti i Santi del Regno."
+    },
+    {
+      "tiro": 8,
+      "descrizione": "Mamiononmami. Un fiore essiccato con un solo petalo rimasto attaccato. Nessuno sa pero se l'ultimo petalo indica un amore non corrisposto o meno. Vuoi davvero scoprirlo?"
+    },
+    {
+      "tiro": 9,
+      "descrizione": "Un dente umano nero. Non annerito o marcio: completamente nero come se fosse d'ebano o di carbone."
+    },
+    {
+      "tiro": 10,
+      "descrizione": "T reccia della Befana. Una treccia realizzata con i capelli di una strega morta sul rogo."
+    },
+    {
+      "tiro": 11,
+      "descrizione": "Copricapo di latta del Sor Mentecatti. E solo una scodella, ma nessuno ha il cuore di dirlo."
+    },
+    {
+      "tiro": 12,
+      "descrizione": "Incisivo Firulante. Un dente di morgante grosso come un uovo di gallina. Ha un buco dovuto alla carie, e soffiandoci attraverso pro- duce un suono simile a quello di un'armonica."
+    },
+    {
+      "tiro": 13,
+      "descrizione": "Dentiera del giudizio. Un malassortito insieme di denti neri, marroni e gialli."
+    },
+    {
+      "tiro": 14,
+      "descrizione": "Penna dell'uccello gazolbinello. Una lunga penna caudale screziata di verde, bianco e bronzo. Si dice renda meravigliosa la grafia di chi la adopera. E pero molto fragile e si consuma dopo un solo utilizzo."
+    },
+    {
+      "tiro": 15,
+      "descrizione": "Ramaiolo di zia Marcolfa. In rame, comodo per bere dalle fontanelle."
+    },
+    {
+      "tiro": 16,
+      "descrizione": "Frizzi e lazzi. Un borsello pieno di foglietti con su scritte battutacce da osteria. Da usare con cautela."
+    },
+    {
+      "tiro": 17,
+      "descrizione": "Barattolo da lucciole con inserti di vetro. Le lucciole illuminano e consumano poco, ma sicuramente non sono una lanterna; si dice rischiarino i sentieri fatati."
+    },
+    {
+      "tiro": 18,
+      "descrizione": "Due palle. Proprio due sfere di metallo magnetizzate, che spesso girano su loro stesse."
+    },
+    {
+      "tiro": 19,
+      "descrizione": "Mantellaccia de' sorci verdi. Una cappa lacera e maleodorante, fatta di pellicce di topo e curiosamente verdastra."
+    },
+    {
+      "tiro": 20,
+      "descrizione": "Forbice Monolama di Falcamonte. Di fatto, un coltello dozzinale, ma proclamarlo Forbice Monolama di Falcamonte e molto piu tonante e gratificante. === PAGINA 72 === - 70 - Denaro ed Equipaggiamento"
+    },
+    {
+      "tiro": 21,
+      "descrizione": "Piede di Forco. Il dito nero di una celebre T aglia Forte, impiccato durante una notte di novilunio. E nero e bitorzoluto, quasi mummifi- cato."
+    },
+    {
+      "tiro": 22,
+      "descrizione": "Siero della Verita. E solo grappa, ma di quella forte come acqua ragia."
+    },
+    {
+      "tiro": 23,
+      "descrizione": "Le scarpe dei Sacripanti. Famose per il tacco davanti; misteriosamente considerate utili per andare in salita."
+    },
+    {
+      "tiro": 24,
+      "descrizione": "Grangetto dei T urchini. Un bottone di metallo con una zigrinatura al centro. Alcuni mercanti lo accettano come moneta di poco valore. T orna sempre in tasca del proprietario."
+    },
+    {
+      "tiro": 25,
+      "descrizione": "La contessa. Un vecchio neo finto che qualche arcizia arcicontessa usava per apparir piu elegante e altolocata. Per qualche strano motivo, anche se finto, il neo e peloso. Chissa che uomini importanti avra baciato."
+    },
+    {
+      "tiro": 26,
+      "descrizione": "La rontina. Un oggettino metallico, un po' corto un po' lungo, leggermente attorcigliato ma dritto. Da l'impressione di poter entrare in ogni giuntura, ma se uno ci prova sia di dritto che di rovescio non entra in nulla. Chissa a cosa serviva?"
+    },
+    {
+      "tiro": 27,
+      "descrizione": "Cuscino di piume d'orca. Un cuscino rotondo e molto duro, imbottito dei peli delle gambe di una terribile orchessa."
+    },
+    {
+      "tiro": 28,
+      "descrizione": "Ciondolo con ciocca di capelli in argento. Reca l'iscrizione \"il mio vero amore\" . Contiene lana di capra."
+    },
+    {
+      "tiro": 29,
+      "descrizione": "Scatoletta da cucito. Cinque aghi, un ditale, tre rocchetti di filo (bianco, rosso, blu), tre bottoni scompagnati."
+    },
+    {
+      "tiro": 30,
+      "descrizione": "Bracciale zigano. Una fascia in argento, finemente cesellata, con una iscrizione illeggibile all'interno."
+    },
+    {
+      "tiro": 31,
+      "descrizione": "Fiasca bucata. Una fiasca ricavata da una zucca, con un vistoso foro sul fondo; incisa sulla superficie interna c'e una mappa."
+    },
+    {
+      "tiro": 32,
+      "descrizione": "Cornetto di corallo. Ha le dimensioni di un mignolo di un adulto, in corallo rosso; dicono porti fortuna."
+    },
+    {
+      "tiro": 33,
+      "descrizione": "Cavatappi delle meraviglie. Un classico cavatappi a spirale, col manico di legno lucido; stappa solo le bottiglie di vino buono, quelle di vino cattivo esplodono."
+    },
+    {
+      "tiro": 34,
+      "descrizione": "Mazzo di carte bucate. Un comune mazzo di carte da gioco; tutti gli occhi delle carte figurate sono stati forati con un chiodo. Giocare controluce con un gonzo permette di barare con estrema facilita."
+    },
+    {
+      "tiro": 35,
+      "descrizione": "Anello in argentone con sigillo. Il sigillo e abbastanza generico da potersi adattare a qualunque casata o corporazione; ha uno scomparto segreto, grande quanto un fagiolo."
+    },
+    {
+      "tiro": 36,
+      "descrizione": "Clessidra tascabile. Due ampolle di cristallo riempite di sabbia bianca; l'etichetta dice \"cinque lassi\" ma in realta sono sette."
+    },
+    {
+      "tiro": 37,
+      "descrizione": "Liuto \"Figlio di Ghibba\" . Costruito in legno di fanfaluco, e in grado di memorizzare fino a otto canzoni una volta suonate, ma non ha alcuna intenzione di farlo."
+    },
+    {
+      "tiro": 38,
+      "descrizione": "Coppa del nonno. Una coppa metallica proveniente da Zagara, ideale per il sorbetto."
+    },
+    {
+      "tiro": 39,
+      "descrizione": "Petardo Fischione. Un classico per le feste, emette un lungo sibilo e poi un gran botto."
+    },
+    {
+      "tiro": 40,
+      "descrizione": "Uovo da rammendo. Un uovo di legno utile per rammendare calzini e altri indumenti. E se fosse di fanfaluco? Che animale mai ne uscirebbe?"
+    },
+    {
+      "tiro": 41,
+      "descrizione": "T rappola per topi. Un classico dell'ingegnosita umana; armata con formaggio, permette di acchiappare un topo non troppo sveglio."
+    },
+    {
+      "tiro": 42,
+      "descrizione": "Lettera di presentazione. La lettera identifica il portatore come agente del Conte Notte, e autorizza il portatore a ottenere servizi, provviste o denari a credito fino a 200 monete d'oro. Il Conte Notte vorra essere rimborsato."
+    },
+    {
+      "tiro": 43,
+      "descrizione": "Padella dello scudiero. Una padella di ferro, col fondo traforato, utile per cucinare caldarroste sul fuoco e utilizzabile come scudo piccolo; non protegge dalle frecce."
+    },
+    {
+      "tiro": 44,
+      "descrizione": "Scatola musicale tascabile. Girando la manovella, suona \"Le belle donne di T auringa\" ."
+    },
+    {
+      "tiro": 45,
+      "descrizione": "Sigillo del gran siniscalco di Costantinapoli. Simbolo del potere e del prestigio del siniscalco; un grossolano falso, utilizzabile come schiaccianoci."
+    },
+    {
+      "tiro": 46,
+      "descrizione": "Grattaschiena. Una manina d'avorio montata su un manico di legno d'ebano lungo due spanne; utile per grattarsi la schiena."
+    },
+    {
+      "tiro": 47,
+      "descrizione": "Ritratto del bevitore di vino. Un classico di T eomondo Scrofalo; c'e una possibilita su 1.000 che sia l'originale, che tuttavia ha lo stesso valore delle 999 copie."
+    },
+    {
+      "tiro": 48,
+      "descrizione": "La rotolarella. Un rotolo di spago composto da decine di pezzi di spago di diversa lunghezza legati assieme; lunghezza tota- le: cento piedi."
+    },
+    {
+      "tiro": 49,
+      "descrizione": "Parrucca gentilizia. In autentico crine di cavallo, acconciata secondo la moda di cinquanta anni or sono."
+    },
+    {
+      "tiro": 50,
+      "descrizione": "Ventaglio di seta di Serindia, portato dall'oriente ai mercanti di Vortiga. La seta e un po' sbiadita, ma la fattura e di pregio."
+    }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "69-70"
+  }
+}

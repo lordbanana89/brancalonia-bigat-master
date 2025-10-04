@@ -1,0 +1,72 @@
+{
+  "_id": "82269381acb18be4",
+  "_key": "!item!82269381acb18be4",
+  "name": "Privilegio del Collegio",
+  "type": "feat",
+  "img": "icons/environment/settlement/gazebo.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Privilegio del Collegio (6° livello)</strong></p><p>Al 6° livello, ottieni un privilegio determinato dal tuo Collegio Bardico.</p><p>Il Collegio che hai scelto al 3° livello ti conferisce un privilegio aggiuntivo a questo livello. Consulta la descrizione del tuo specifico Collegio Bardico per i dettagli su quale privilegio ottieni:</p><ul><li><strong>Collegio della Conoscenza:</strong> Controincantesimo Applicato</li><li><strong>Collegio del Valore:</strong> Attacco Extra</li><li>Altri collegi hanno i loro privilegi specifici</li></ul><p><strong>Nota:</strong> Questo privilegio viene concesso automaticamente dal sistema quando raggiungi il 6° livello e hai un Collegio selezionato.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.54",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Bardo Livello 6",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "bardo",
+      "livello": 6
+    }
+  }
+}

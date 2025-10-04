@@ -1,0 +1,50 @@
+{
+  "id": "spell-resistenza",
+  "nome": "Resistenza",
+  "nome_inglese": "Resistance",
+  "livello": 0,
+  "scuola": "Abiurazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Contatto",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Un mantello in miniatura"
+  },
+  "durata": "Concentrazione, fino a 1 minuto",
+  "descrizione": "Tocchi una creatura consenziente. Una volta prima che l'incantesimo termini, il bersaglio può tirare un d4 e aggiungere il numero tirato a un tiro salvezza di sua scelta. Può tirare il dado prima o dopo aver effettuato il tiro salvezza. L'incantesimo poi termina.",
+  "classi": ["Chierico", "Druido"],
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "action",
+    "range": "touch",
+    "durata": "1 minute",
+    "concentrazione": true,
+    "effetto": "1d4 bonus to save"
+  },
+  "confronto_guidance": {
+    "guidance": "d4 a ability check",
+    "resistance": "d4 a saving throw",
+    "valore": "Saves più importanti di check"
+  },
+  "utilizzo": {
+    "pre_combat": "Cast prima di trappole note",
+    "emergenza": "Salvare vs effetti letali",
+    "single_use": "Si usa una volta poi finisce"
+  },
+  "limiti": [
+    "Concentrazione per poco beneficio",
+    "Solo una volta per cast",
+    "Deve essere consenziente",
+    "Azione intera per +d4"
+  ],
+  "quando_utile": [
+    "Prima di disarmare trappole",
+    "Entrare in zone con save noti",
+    "Boss fight con save or die",
+    "Proteggere concentrazione caster"
+  ],
+  "note_dm": "Resistance meno popolare di Guidance ma saves sono più critici. Concentrazione lo rende inefficiente. Meglio in preparazione che reazione.",
+  "fonte": "D&D 5e PHB p.272"
+}

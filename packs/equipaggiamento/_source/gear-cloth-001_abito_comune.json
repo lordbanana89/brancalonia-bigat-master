@@ -1,0 +1,79 @@
+{
+  "_id": "7exN3sxuzUNhALip",
+  "_key": "!item!gearcloth001abitocomuneb29c60",
+  "name": "Abito Comune",
+  "type": "equipment",
+  "img": "icons/equipment/chest/shirt-simple-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tunica, pantaloni e mantello di lana grezza adatti alla gente del popolo.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "identified": true,
+    "quantity": 1,
+    "weight": "1.5 kg",
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "armor": {
+      "value": 10,
+      "type": "light",
+      "dex": null
+    },
+    "strength": 0,
+    "stealth": false,
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "gear-cloth-001",
+      "fonte": {
+        "manuale": "Manuale Base",
+        "pagine": "Equipaggiamento da Avventura"
+      },
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

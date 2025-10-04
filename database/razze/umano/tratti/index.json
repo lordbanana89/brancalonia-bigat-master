@@ -1,0 +1,18 @@
+{
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "tratto-001-privilegio-da-rissa",
+      "nome": "Tratto 001 Privilegio da Rissa",
+      "file": "tratto-001_privilegio_da_rissa.json"
+    },
+    {
+      "id": "tratto-002-adattabile",
+      "nome": "Tratto 002 Adattabile",
+      "file": "tratto-002_adattabile.json"
+    }
+  ]
+}

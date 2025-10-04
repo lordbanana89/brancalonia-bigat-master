@@ -1,0 +1,42 @@
+{
+  "id": "class-ranger-archetipo-cacciatore",
+  "nome": "Cacciatore",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Prede del Cacciatore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Hunter's Prey"
+        }
+      }
+    ],
+    "livello_7": [
+      {
+        "nome": "Tattiche Difensive",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Defensive Tactics"
+        }
+      }
+    ],
+    "livello_11": [
+      {
+        "nome": "Multiattacco del Cacciatore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Multiattack (Hunter)"
+        }
+      }
+    ],
+    "livello_15": [
+      {
+        "nome": "Difesa Superiore del Cacciatore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Superior Hunter's Defense"
+        }
+      }
+    ]
+  }
+}

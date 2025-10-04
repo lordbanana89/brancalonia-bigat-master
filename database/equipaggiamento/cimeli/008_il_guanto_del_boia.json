@@ -1,0 +1,39 @@
+{
+  "id": "008",
+  "nome": "Il Guanto del Boia",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Guanto di cuoio nero macchiato di sangue",
+  "proprieta": "Chi lo indossa sa sempre se qualcuno mente sulla propria colpevolezza",
+  "maledizione": "Le mani puzzano sempre di sangue",
+  "valore": "250 mo",
+  "storia": "Il boia giustiziò 1000 persone, metà innocenti",
+  "maledizione_specifica": "Le mani puzzano sempre di sangue",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "narrative_only",
+      "effectDescription": "Detector verità su crimini, odore sangue persistente"
+    },
+    "hooks": [],
+    "macros": ["detectGuilt"],
+    "ui_config": {
+      "showReminder": true,
+      "reminderText": "Rivela menzogne su colpevolezza, mani puzzano di sangue"
+    },
+    "narrative_reminders": [
+      "Il portatore percepisce quando qualcuno mente sulla PROPRIA colpevolezza",
+      "Funziona solo su menzogne riguardo crimini commessi",
+      "Le mani del portatore puzzano sempre di sangue (impossibile lavare)",
+      "L'odore è percepibile a distanza ravvicinata",
+      "Il boia giustiziò 1000 persone, metà erano innocenti",
+      "Ottimo per interrogatori e investigazioni",
+      "Penalità sociali dovute all'odore (-2 Persuasione suggerito)"
+    ]
+  },
+  "img": "icons/equipment/hand/gauntlet-tooled-leather-brown.webp"
+}

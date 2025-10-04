@@ -1,0 +1,99 @@
+{
+  "categoria": "Backgrounds",
+  "descrizione": "Contenuti della categoria Backgrounds",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 13,
+  "elementi": [
+    {
+      "id": "ambulante",
+      "nome": "Ambulante",
+      "file": "ambulante.json",
+      "descrizione": "Mercante itinerante e venditore ambulante",
+      "fonte": "Manuale Base p.31"
+    },
+    {
+      "id": "attaccabrighe",
+      "nome": "Attaccabrighe",
+      "file": "attaccabrighe.json",
+      "descrizione": "Rissoso e provocatore di professione",
+      "fonte": "Manuale Base p.32"
+    },
+    {
+      "id": "azzeccagarbugli",
+      "nome": "Azzeccagarbugli",
+      "file": "azzeccagarbugli.json",
+      "descrizione": "Avvocato di dubbia moralità",
+      "fonte": "Manuale Base p.33"
+    },
+    {
+      "id": "brado",
+      "nome": "Brado",
+      "file": "brado.json",
+      "descrizione": "Selvaggio cresciuto nella natura",
+      "fonte": "Manuale Base p.34"
+    },
+    {
+      "id": "duro",
+      "nome": "Duro",
+      "file": "duro.json",
+      "descrizione": "Veterano indurito dalle difficoltà",
+      "fonte": "Manuale Base p.35"
+    },
+    {
+      "id": "fuggitivo",
+      "nome": "Fuggitivo",
+      "file": "fuggitivo.json",
+      "descrizione": "In fuga dalla legge o dal passato",
+      "fonte": "Manuale Base p.36"
+    },
+    {
+      "id": "cacciatore-di-reliquie",
+      "nome": "Cacciatore di Reliquie",
+      "file": "cacciatore_di_reliquie.json",
+      "descrizione": "Cercatore di oggetti sacri e magici",
+      "fonte": "Brancalonia Macaronicon p.36-37"
+    },
+    {
+      "id": "impresario",
+      "nome": "Impresario",
+      "file": "impresario.json",
+      "descrizione": "Organizzatore di spettacoli e eventi",
+      "fonte": "Brancalonia Macaronicon p.37-38"
+    },
+    {
+      "id": "innamorato",
+      "nome": "Innamorato",
+      "file": "innamorato.json",
+      "descrizione": "Romantico guidato dall'amore",
+      "fonte": "Brancalonia Macaronicon p.38-39"
+    },
+    {
+      "id": "lucignolo",
+      "nome": "Lucignolo",
+      "file": "lucignolo.json",
+      "descrizione": "Vagabondo e perdigiorno",
+      "fonte": "Brancalonia Macaronicon p.40-41"
+    },
+    {
+      "id": "passatore",
+      "nome": "Passatore",
+      "file": "passatore.json",
+      "descrizione": "Contrabbandiere e traghettatore",
+      "fonte": "Brancalonia Macaronicon p.41-42"
+    },
+    {
+      "id": "prelato",
+      "nome": "Prelato",
+      "file": "prelato.json",
+      "descrizione": "Religioso di basso rango",
+      "fonte": "Brancalonia Macaronicon p.42-43"
+    },
+    {
+      "id": "staffetta",
+      "nome": "Staffetta",
+      "file": "staffetta.json",
+      "descrizione": "Messaggero e corriere",
+      "fonte": "Brancalonia Macaronicon p.44-45"
+    }
+  ]
+}

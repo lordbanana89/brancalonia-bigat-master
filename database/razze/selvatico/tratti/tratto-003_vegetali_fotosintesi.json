@@ -1,0 +1,10 @@
+{
+  "id": "race-selvatico-tratto-vegetali_fotosintesi",
+  "nome": "Fotosintesi",
+  "categoria": "vegetali",
+  "dettagli": {
+    "descrizione": "Necessiti metà cibo se esposto a sole per 4 ore",
+    "limitazione": "1 livello indebolimento se senza sole per 3 giorni"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

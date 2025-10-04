@@ -1,0 +1,26 @@
+{
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "61-63"
+  },
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "bagordi-introduzione",
+      "nome": "Bagordi Introduzione",
+      "file": "bagordi-introduzione.json"
+    },
+    {
+      "id": "bagordi-istruzioni",
+      "nome": "Bagordi Istruzioni",
+      "file": "bagordi-istruzioni.json"
+    },
+    {
+      "id": "bagordi-tabella",
+      "nome": "Bagordi Tabella",
+      "file": "bagordi-tabella.json"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "spell-base-020",
+  "nome": "Animare i Morti",
+  "nome_originale": "Animate Dead",
+  "livello": 3,
+  "scuola": "Necromanzia",
+  "classi": [
+    "Chierico",
+    "Stregone",
+    "Mago",
+    "Warlock"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Animate Dead",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Animate Dead).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale."
+}

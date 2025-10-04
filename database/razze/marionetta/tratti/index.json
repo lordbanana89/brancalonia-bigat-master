@@ -1,0 +1,23 @@
+{
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "tratto-001-costrutto",
+      "nome": "Tratto 001 Costrutto",
+      "file": "tratto-001_costrutto.json"
+    },
+    {
+      "id": "tratto-002-riparazione",
+      "nome": "Tratto 002 Riparazione",
+      "file": "tratto-002_riparazione.json"
+    },
+    {
+      "id": "tratto-003-vulnerabilita",
+      "nome": "Tratto 003 Vulnerabilita",
+      "file": "tratto-003_vulnerabilita.json"
+    }
+  ]
+}

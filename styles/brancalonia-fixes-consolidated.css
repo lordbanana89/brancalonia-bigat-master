@@ -1,0 +1,539 @@
+/* ================================================ */
+/* BRANCALONIA CONSOLIDATED FIXES                  */
+/* Tutti i fix critici senza !important            */
+/* Usando specificity e CSS layers                 */
+/* ================================================ */
+
+@layer module {
+  /* ================================================
+     FONT AWESOME ICONS FIX
+     Specificity aumentata invece di !important
+     ================================================ */
+
+  /* Font family con alta specificità per Font Awesome */
+  .theme-brancalonia i[class*="fa-"],
+  .theme-brancalonia i[class*="fas"],
+  .theme-brancalonia i[class*="far"],
+  .theme-brancalonia i[class*="fab"],
+  .theme-brancalonia i[class*="fal"],
+  .theme-brancalonia i[class*="fad"],
+  .theme-brancalonia .window-app i[class*="fa-"],
+  .theme-brancalonia .sheet i[class*="fa-"],
+  .theme-brancalonia .app i[class*="fa-"],
+  .theme-brancalonia .sidebar-tab i[class*="fa-"],
+  .theme-brancalonia .dialog i[class*="fa-"],
+  .theme-brancalonia .notification i[class*="fa-"] {
+    font-family: "Font Awesome 6", "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome";
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    line-height: 1;
+  }
+
+  /* Pesi corretti per varianti Font Awesome */
+  .theme-brancalonia .fas,
+  .theme-brancalonia i.fas,
+  .theme-brancalonia i[class*="fa-solid"],
+  .theme-brancalonia .window-app .fas,
+  .theme-brancalonia .sheet .fas,
+  .theme-brancalonia .app .fas,
+  .theme-brancalonia .sidebar-tab .fas {
+    font-weight: 900;
+  }
+
+  .theme-brancalonia .far,
+  .theme-brancalonia i.far,
+  .theme-brancalonia i[class*="fa-regular"],
+  .theme-brancalonia .window-app .far,
+  .theme-brancalonia .sheet .far,
+  .theme-brancalonia .app .far {
+    font-weight: 400;
+  }
+
+  .theme-brancalonia .fal,
+  .theme-brancalonia i.fal,
+  .theme-brancalonia i[class*="fa-light"] {
+    font-weight: 300;
+  }
+
+  .theme-brancalonia .fab,
+  .theme-brancalonia i.fab,
+  .theme-brancalonia i[class*="fa-brands"] {
+    font-weight: 400;
+  }
+
+  /* ================================================
+     CHARACTER SHEET PROFILE LAYOUT FIX
+     ================================================ */
+
+  /* Container principale profilo */
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header {
+    display: flex;
+    align-items: center;
+    gap: var(--bcl-space-4);
+    padding: var(--bcl-space-4);
+    position: relative;
+    background: linear-gradient(135deg,
+      var(--bcl-surface-tertiary) 0%,
+      var(--bcl-surface-secondary) 100%);
+  }
+
+  /* Immagine profilo circolare */
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header .profile {
+    position: relative;
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--bcl-gold);
+    background: var(--bcl-paper-weak);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--bcl-shadow-lg);
+  }
+
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header .profile img,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+  }
+
+  /* Dettagli personaggio */
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header .header-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--bcl-space-2);
+  }
+
+  /* Nome personaggio */
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header h1.charname,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header input[name="name"] {
+    margin: 0;
+    padding: var(--bcl-space-2) var(--bcl-space-3);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--bcl-gold);
+    font-family: var(--bcl-font-display);
+    font-size: var(--bcl-font-size-2xl);
+    color: var(--bcl-ink-strong);
+    width: 100%;
+    transition: border-color var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header h1.charname:hover,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header input[name="name"]:hover,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header h1.charname:focus,
+  .theme-brancalonia .dnd5e2.sheet.actor.character .sheet-header input[name="name"]:focus {
+    border-bottom-color: var(--bcl-gold-hover);
+    outline: none;
+  }
+
+  /* ================================================
+     ABILITY SCORES LAYOUT FIX
+     ================================================ */
+
+  /* Container ability scores */
+  .theme-brancalonia .dnd5e2.sheet.actor.character .ability-scores {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--bcl-space-2);
+    margin-top: var(--bcl-space-4);
+    padding: var(--bcl-space-3);
+    background: var(--bcl-paper-weak);
+    border-radius: var(--bcl-radius-md);
+    box-shadow: var(--bcl-shadow-inner);
+  }
+
+  /* Singolo ability score */
+  .theme-brancalonia .dnd5e2.sheet.actor.character .ability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--bcl-space-3);
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+    cursor: pointer;
+    transition: all var(--bcl-transition-fast);
+    position: relative;
+  }
+
+  .theme-brancalonia .dnd5e2.sheet.actor.character .ability:hover {
+    background: linear-gradient(135deg,
+      var(--bcl-gold) 0%,
+      var(--bcl-gold-hover) 100%);
+    transform: translateY(-2px);
+    box-shadow: var(--bcl-shadow-md);
+    border-color: var(--bcl-gold);
+  }
+
+  .theme-brancalonia .dnd5e2.sheet.actor.character .ability:hover * {
+    color: var(--bcl-text-inverse);
+  }
+
+  /* ================================================
+     ATTRIBUTES (AC/HP/INITIATIVE) LAYOUT FIX
+     ================================================ */
+
+  /* Container attributi */
+  .theme-brancalonia .dnd5e2.sheet.actor.character .attributes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: var(--bcl-space-3);
+    padding: var(--bcl-space-4);
+    background: var(--bcl-paper-weak);
+    border-radius: var(--bcl-radius-md);
+    margin-top: var(--bcl-space-3);
+  }
+
+  /* Singolo attributo */
+  .theme-brancalonia .dnd5e2.sheet.actor.character .attribute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--bcl-space-3);
+    background: var(--bcl-paper);
+    border: 2px solid var(--bcl-gold);
+    border-radius: var(--bcl-radius-md);
+    transition: all var(--bcl-transition-fast);
+    position: relative;
+  }
+
+  .theme-brancalonia .dnd5e2.sheet.actor.character .attribute:hover {
+    transform: scale(1.05);
+    box-shadow: var(--bcl-shadow-gold);
+  }
+
+  /* ================================================
+     INVENTORY & ITEMS FIX
+     ================================================ */
+
+  /* Lista inventario */
+  .theme-brancalonia .dnd5e2.sheet .inventory-list {
+    background: var(--bcl-surface);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-md);
+    padding: var(--bcl-space-2);
+  }
+
+  /* Header categorie inventario */
+  .theme-brancalonia .dnd5e2.sheet .items-header {
+    background: linear-gradient(90deg,
+      var(--bcl-surface-sunken) 0%,
+      var(--bcl-surface-tertiary) 100%);
+    border-bottom: 2px solid var(--bcl-gold);
+    padding: var(--bcl-space-2) var(--bcl-space-3);
+    font-family: var(--bcl-font-display);
+    font-weight: var(--bcl-font-weight-bold);
+    color: var(--bcl-gold);
+  }
+
+  /* Righe inventario */
+  .theme-brancalonia .dnd5e2.sheet .item {
+    border-bottom: 1px solid var(--bcl-divider);
+    padding: var(--bcl-space-2);
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .dnd5e2.sheet .item:hover {
+    background: var(--bcl-paper-weak);
+    transform: translateX(2px);
+  }
+
+  /* ================================================
+     TABS NAVIGATION FIX
+     ================================================ */
+
+  /* Container tabs */
+  .theme-brancalonia .dnd5e2.sheet .sheet-tabs,
+  .theme-brancalonia .tabs {
+    display: flex;
+    gap: var(--bcl-space-1);
+    border-bottom: 2px solid var(--bcl-divider);
+    margin-bottom: var(--bcl-space-3);
+    position: relative;
+  }
+
+  /* Singolo tab */
+  .theme-brancalonia .dnd5e2.sheet .sheet-tabs .item,
+  .theme-brancalonia .tabs .item {
+    flex: 1;
+    text-align: center;
+    background: var(--bcl-surface-secondary);
+    border: 1px solid var(--bcl-border);
+    border-bottom: none;
+    border-radius: var(--bcl-radius-md) var(--bcl-radius-md) 0 0;
+    padding: var(--bcl-space-2) var(--bcl-space-3);
+    color: var(--bcl-muted);
+    font-family: var(--bcl-font-serif);
+    font-weight: var(--bcl-font-weight-medium);
+    cursor: pointer;
+    transition: all var(--bcl-transition-fast);
+    position: relative;
+    top: 2px;
+  }
+
+  .theme-brancalonia .dnd5e2.sheet .sheet-tabs .item:hover,
+  .theme-brancalonia .tabs .item:hover {
+    background: var(--bcl-surface-tertiary);
+    color: var(--bcl-ink);
+  }
+
+  .theme-brancalonia .dnd5e2.sheet .sheet-tabs .item.active,
+  .theme-brancalonia .tabs .item.active {
+    background: var(--bcl-surface);
+    color: var(--bcl-gold);
+    border-bottom-color: var(--bcl-surface);
+    font-weight: var(--bcl-font-weight-bold);
+  }
+
+  /* ================================================
+     CHAT CARDS FIX
+     ================================================ */
+
+  /* Chat message container */
+  .theme-brancalonia .chat-message {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-md);
+    margin-bottom: var(--bcl-space-2);
+    box-shadow: var(--bcl-shadow-sm);
+  }
+
+  /* Chat card dnd5e */
+  .theme-brancalonia .dnd5e2.chat-card {
+    background: var(--bcl-surface);
+    border: 1px solid var(--bcl-gold);
+    border-radius: var(--bcl-radius-md);
+    padding: var(--bcl-space-3);
+  }
+
+  /* Header chat card */
+  .theme-brancalonia .dnd5e2.chat-card .card-header {
+    background: linear-gradient(90deg,
+      var(--bcl-surface-sunken) 0%,
+      var(--bcl-surface-tertiary) 100%);
+    border-bottom: 2px solid var(--bcl-gold);
+    padding: var(--bcl-space-2);
+    margin: calc(-1 * var(--bcl-space-3));
+    margin-bottom: var(--bcl-space-3);
+    border-radius: var(--bcl-radius-md) var(--bcl-radius-md) 0 0;
+  }
+
+  /* ================================================
+     SCROLLBAR STYLING
+     ================================================ */
+
+  .theme-brancalonia ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  .theme-brancalonia ::-webkit-scrollbar-track {
+    background: var(--bcl-surface-secondary);
+    border-radius: var(--bcl-radius-md);
+  }
+
+  .theme-brancalonia ::-webkit-scrollbar-thumb {
+    background: var(--bcl-gold);
+    border-radius: var(--bcl-radius-md);
+    border: 2px solid var(--bcl-surface-secondary);
+  }
+
+  .theme-brancalonia ::-webkit-scrollbar-thumb:hover {
+    background: var(--bcl-gold-hover);
+  }
+
+  /* ================================================
+     DIALOG & MODAL FIX
+     ================================================ */
+
+  /* Dialog container */
+  .theme-brancalonia .dialog {
+    background: var(--bcl-surface);
+    border: 2px solid var(--bcl-gold);
+    border-radius: var(--bcl-radius-lg);
+    box-shadow: var(--bcl-shadow-2xl);
+  }
+
+  /* Dialog buttons */
+  .theme-brancalonia .dialog .dialog-buttons button {
+    background: var(--bcl-gold);
+    border: 1px solid var(--bcl-border-strong);
+    border-radius: var(--bcl-radius-md);
+    color: var(--bcl-text-inverse);
+    padding: var(--bcl-space-2) var(--bcl-space-4);
+    font-family: var(--bcl-font-serif);
+    font-weight: var(--bcl-font-weight-semibold);
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .dialog .dialog-buttons button:hover {
+    background: var(--bcl-gold-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--bcl-shadow-md);
+  }
+
+  .theme-brancalonia .dialog .dialog-buttons button.default {
+    background: var(--bcl-accent);
+  }
+
+  .theme-brancalonia .dialog .dialog-buttons button.default:hover {
+    background: var(--bcl-accent-strong);
+  }
+
+  /* ================================================
+     SIDEBAR FIX
+     ================================================ */
+
+  /* Sidebar container */
+  .theme-brancalonia #sidebar {
+    background: var(--bcl-surface-secondary);
+    border-left: 2px solid var(--bcl-gold);
+  }
+
+  /* Sidebar tabs */
+  .theme-brancalonia #sidebar-tabs {
+    background: var(--bcl-surface-sunken);
+    border-bottom: 2px solid var(--bcl-gold);
+  }
+
+  .theme-brancalonia #sidebar-tabs > .item {
+    color: var(--bcl-muted);
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia #sidebar-tabs > .item:hover {
+    color: var(--bcl-gold);
+    background: var(--bcl-surface-tertiary);
+  }
+
+  .theme-brancalonia #sidebar-tabs > .item.active {
+    color: var(--bcl-gold);
+    background: var(--bcl-surface-secondary);
+    box-shadow: inset 0 -2px 0 var(--bcl-gold);
+  }
+
+  .theme-brancalonia #sidebar,
+  .theme-brancalonia #sidebar-tabs,
+  .theme-brancalonia #sidebar-tabs > .item {
+  }
+
+  .theme-brancalonia .window-app .window-content,
+  .theme-brancalonia.window-app .window-content {
+  }
+
+  /* ================================================
+     COMPENDIUM BROWSER FIX
+     ================================================ */
+
+  /* Compendium window */
+  .theme-brancalonia .compendium-browser {
+    background: var(--bcl-surface);
+  }
+
+  /* Compendium tabs */
+  .theme-brancalonia .compendium-browser .directory-header {
+    background: linear-gradient(135deg,
+      var(--bcl-surface-sunken) 0%,
+      var(--bcl-surface-tertiary) 100%);
+    border-bottom: 2px solid var(--bcl-gold);
+  }
+
+  /* Compendium items */
+  .theme-brancalonia .compendium-browser .directory-item {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-divider);
+    border-radius: var(--bcl-radius-sm);
+    margin-bottom: var(--bcl-space-1);
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .compendium-browser .directory-item:hover {
+    background: var(--bcl-paper-weak);
+    border-color: var(--bcl-gold);
+    transform: translateX(2px);
+  }
+
+  .theme-brancalonia .compendium-browser,
+  .theme-brancalonia .compendium-browser *,
+  .theme-brancalonia .compendium .directory-list,
+  .theme-brancalonia .compendium .directory-list * {
+  }
+
+  /* ================================================
+     ROLL TABLE FIX
+     ================================================ */
+
+  /* Roll table container */
+  .theme-brancalonia .roll-table-config {
+    background: var(--bcl-surface);
+  }
+
+  /* Table results */
+  .theme-brancalonia .roll-table-config .results {
+    background: var(--bcl-paper);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-md);
+  }
+
+  .theme-brancalonia .roll-table-config .result {
+    border-bottom: 1px solid var(--bcl-divider);
+    padding: var(--bcl-space-2);
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .roll-table-config .result:hover {
+    background: var(--bcl-paper-weak);
+  }
+
+  /* ================================================
+     TOKEN HUD FIX
+     ================================================ */
+
+  /* Token HUD container */
+  .theme-brancalonia .placeable-hud {
+    background: var(--bcl-surface-elevated);
+    border: 2px solid var(--bcl-gold);
+    border-radius: var(--bcl-radius-lg);
+    box-shadow: var(--bcl-shadow-xl);
+  }
+
+  /* HUD buttons */
+  .theme-brancalonia .placeable-hud .control-icon {
+    background: var(--bcl-surface);
+    border: 1px solid var(--bcl-border);
+    border-radius: var(--bcl-radius-sm);
+    color: var(--bcl-ink);
+    transition: all var(--bcl-transition-fast);
+  }
+
+  .theme-brancalonia .placeable-hud .control-icon:hover {
+    background: var(--bcl-gold);
+    color: var(--bcl-text-inverse);
+    border-color: var(--bcl-gold);
+    transform: scale(1.1);
+  }
+
+  .theme-brancalonia .placeable-hud .control-icon.active {
+    background: var(--bcl-accent);
+    color: var(--bcl-text-inverse);
+    border-color: var(--bcl-accent);
+  }
+
+  .theme-brancalonia .compendium-browser .window-content,
+  .theme-brancalonia .compendium-browser .directory-list,
+  .theme-brancalonia .compendium-browser .directory-item {
+  }
+}

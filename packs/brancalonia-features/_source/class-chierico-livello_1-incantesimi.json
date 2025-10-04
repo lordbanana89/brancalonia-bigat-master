@@ -1,0 +1,167 @@
+{
+  "id": "class-chierico-livello_1-incantesimi",
+  "nome": "Incantesimi",
+  "nome_brancalonia": "Miracoli Divini",
+  "livello": 1,
+  "tipo": "incantatore",
+  "descrizione": "Come condotto del potere divino, puoi lanciare incantesimi da chierico. Selezioni i tuoi incantesimi preparati dalla lista completa degli incantesimi da chierico.",
+  "meccaniche": {
+    "tipo_incantatore": "Preparato",
+    "caratteristica": "Saggezza",
+    "focus": "Simbolo sacro",
+    "preparazione": {
+      "formula": "Modificatore Saggezza + livello chierico",
+      "quando": "Dopo riposo lungo",
+      "tempo": "1 minuto per livello incantesimo"
+    },
+    "slot_incantesimi": {
+      "livello_1": {
+        "1°": 2
+      },
+      "livello_2": {
+        "1°": 3
+      },
+      "livello_3": {
+        "1°": 4,
+        "2°": 2
+      },
+      "livello_5": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 2
+      },
+      "livello_7": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 1
+      },
+      "livello_9": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 2,
+        "5°": 1
+      },
+      "livello_11": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 3,
+        "5°": 2,
+        "6°": 1
+      },
+      "livello_20": {
+        "1°": 4,
+        "2°": 3,
+        "3°": 3,
+        "4°": 3,
+        "5°": 3,
+        "6°": 2,
+        "7°": 2,
+        "8°": 1,
+        "9°": 1
+      }
+    },
+    "trucchetti": {
+      "progressione": {
+        "livello_1": 3,
+        "livello_4": 4,
+        "livello_10": 5
+      }
+    },
+    "rituali": "Può lanciare incantesimi preparati come rituali se hanno tag rituale"
+  },
+  "implementazione_foundry": {
+    "tipo": "spellcasting",
+    "configurazione": {
+      "type": "leveled",
+      "ability": "wis",
+      "preparation": "prepared",
+      "rituals": true
+    }
+  },
+  "incantesimi_dominio": {
+    "descrizione": "Sempre preparati, non contano verso il limite",
+    "livelli": {
+      "1°": "2 incantesimi",
+      "3°": "2 incantesimi",
+      "5°": "2 incantesimi",
+      "7°": "2 incantesimi",
+      "9°": "2 incantesimi"
+    }
+  },
+  "calcoli_esempio": {
+    "livello_1_sag16": {
+      "incantesimi_preparati": "1+3 = 4",
+      "piu_dominio": "+2 = 6 totali"
+    },
+    "livello_5_sag18": {
+      "incantesimi_preparati": "5+4 = 9",
+      "piu_dominio": "+6 = 15 totali"
+    }
+  },
+  "cd_tiro_salvezza": {
+    "formula": "8 + bonus competenza + mod Saggezza",
+    "esempi": {
+      "livello_1": "8+2+3 = 13",
+      "livello_5": "8+3+4 = 15",
+      "livello_20": "8+6+5 = 19"
+    }
+  },
+  "bonus_attacco_incantesimi": {
+    "formula": "Bonus competenza + mod Saggezza",
+    "esempi": {
+      "livello_1": "2+3 = +5",
+      "livello_5": "3+4 = +7",
+      "livello_20": "6+5 = +11"
+    }
+  },
+  "liste_incantesimi_brancalonia": {
+    "guarigione": [
+      "Cure Wounds",
+      "Healing Word",
+      "Mass Healing Word"
+    ],
+    "protezione": [
+      "Shield of Faith",
+      "Sanctuary",
+      "Aid"
+    ],
+    "supporto": [
+      "Bless",
+      "Guidance",
+      "Enhance Ability"
+    ],
+    "controllo": [
+      "Hold Person",
+      "Command",
+      "Silence"
+    ],
+    "danno": [
+      "Guiding Bolt",
+      "Spiritual Weapon",
+      "Spirit Guardians"
+    ]
+  },
+  "note_dm": "Il chierico è l'incantatore divino più versatile, con accesso all'intera lista quando prepara.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58",
+  "name": "Incantesimi",
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "mIRRAVlHebsjocAY",
+  "_key": "!item!class-chierico-livello_1-incantesimi",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

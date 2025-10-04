@@ -1,0 +1,86 @@
+{
+  "categoria": "Armi Marziali da Mischia",
+  "totale": 16,
+  "elementi": [
+    {
+      "id": "arma-std-101",
+      "nome": "Ascia Bipenne",
+      "file": "arma-std-101_ascia_bipenne.json"
+    },
+    {
+      "id": "arma-std-102",
+      "nome": "Flagello",
+      "file": "arma-std-102_flagello.json"
+    },
+    {
+      "id": "arma-std-103",
+      "nome": "Alabarda",
+      "file": "arma-std-103_alabarda.json"
+    },
+    {
+      "id": "arma-std-104",
+      "nome": "Ascia A Due Mani",
+      "file": "arma-std-104_ascia_a_due_mani.json"
+    },
+    {
+      "id": "arma-std-105",
+      "nome": "Spadone",
+      "file": "arma-std-105_spadone.json"
+    },
+    {
+      "id": "arma-std-106",
+      "nome": "Lancia da Cavalleria",
+      "file": "arma-std-106_lancia_da_cavalleria.json"
+    },
+    {
+      "id": "arma-std-107",
+      "nome": "Spada Lunga",
+      "file": "arma-std-107_spada_lunga.json"
+    },
+    {
+      "id": "arma-std-108",
+      "nome": "Maglio",
+      "file": "arma-std-108_maglio.json"
+    },
+    {
+      "id": "arma-std-109",
+      "nome": "Picca",
+      "file": "arma-std-109_picca.json"
+    },
+    {
+      "id": "arma-std-110",
+      "nome": "Stocco",
+      "file": "arma-std-110_stocco.json"
+    },
+    {
+      "id": "arma-std-111",
+      "nome": "Sciabola",
+      "file": "arma-std-111_sciabola.json"
+    },
+    {
+      "id": "arma-std-112",
+      "nome": "Spada Corta",
+      "file": "arma-std-112_spada_corta.json"
+    },
+    {
+      "id": "arma-std-113",
+      "nome": "Tridente",
+      "file": "arma-std-113_tridente.json"
+    },
+    {
+      "id": "arma-std-114",
+      "nome": "Piccone da Guerra",
+      "file": "arma-std-114_piccone_da_guerra.json"
+    },
+    {
+      "id": "arma-std-115",
+      "nome": "Martello da Guerra",
+      "file": "arma-std-115_martello_da_guerra.json"
+    },
+    {
+      "id": "arma-std-116",
+      "nome": "Frusta",
+      "file": "arma-std-116_frusta.json"
+    }
+  ]
+}

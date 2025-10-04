@@ -1,0 +1,70 @@
+{
+  "_id": "ZgubMeefrZt8an3Q",
+  "_key": "!item!classmagoscuolaevocazione2b2368",
+  "name": "Scuola di Evocazione",
+  "type": "subclass",
+  "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+  "system": {
+    "description": {
+      "value": "",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.82",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "classIdentifier": "",
+    "advancement": [
+      {
+        "level": 3,
+        "features": []
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-mago-scuola-evocazione",
+      "fonte": "Manuale del Giocatore p.82"
+    }
+  }
+}

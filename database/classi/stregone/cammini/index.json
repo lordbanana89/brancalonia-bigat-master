@@ -1,0 +1,18 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "class-stregone-origine-draconica",
+      "nome": "Class Stregone Origine Draconica",
+      "file": "class-stregone-origine-draconica.json"
+    },
+    {
+      "id": "class-stregone-origine-magia-selvaggia",
+      "nome": "Class Stregone Origine Magia Selvaggia",
+      "file": "class-stregone-origine-magia_selvaggia.json"
+    }
+  ]
+}

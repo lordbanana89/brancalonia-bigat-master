@@ -1,0 +1,23 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "benandante_druido-livello_2-guardare_oltre_velo",
+      "nome": "Guardare Oltre il Velo",
+      "file": "benandante_druido-livello_2-guardare_oltre_velo.json"
+    },
+    {
+      "id": "benandante_druido-livello_3-incantesimi_circolo",
+      "nome": "Incantesimi del Circolo",
+      "file": "benandante_druido-livello_3-incantesimi_circolo.json"
+    },
+    {
+      "id": "benandante_druido-livello_6-guardiano_danza_macabra",
+      "nome": "Guardiano della Danza Macabra",
+      "file": "benandante_druido-livello_6-guardiano_danza_macabra.json"
+    }
+  ]
+}

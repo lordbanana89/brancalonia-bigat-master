@@ -1,0 +1,41 @@
+{
+  "categoria": "Kit e Strumenti",
+  "totale": 7,
+  "elementi": [
+    {
+      "id": "gear-kit-001",
+      "nome": "Dotazione da Avventuriero",
+      "file": "gear-kit-001_dotazione_da_avventuriero.json"
+    },
+    {
+      "id": "gear-kit-002",
+      "nome": "Dotazione da Esploratore",
+      "file": "gear-kit-002_dotazione_da_esploratore.json"
+    },
+    {
+      "id": "gear-kit-003",
+      "nome": "Kit da Guaritore",
+      "file": "gear-kit-003_kit_da_guaritore.json"
+    },
+    {
+      "id": "gear-kit-004",
+      "nome": "Strumenti da Ladro",
+      "file": "gear-kit-004_strumenti_da_ladro.json"
+    },
+    {
+      "id": "gear-kit-005",
+      "nome": "Strumento Musicale Generico",
+      "file": "gear-kit-005_strumento_musicale_generico.json"
+    },
+    {
+      "id": "gear-kit-006",
+      "nome": "Borsa da Spezie",
+      "file": "gear-kit-006_borsa_da_spezie.json"
+    },
+    {
+      "id": "gear-kit-007",
+      "nome": "Utensili da Cucina da Campo",
+      "file": "gear-kit-007_utensili_da_cucina_da_campo.json"
+    }
+  ]
+}

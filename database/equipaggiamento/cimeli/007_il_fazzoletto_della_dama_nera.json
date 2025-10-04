@@ -1,0 +1,53 @@
+{
+  "id": "007",
+  "nome": "Il Fazzoletto della Dama Nera",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Fazzoletto di seta nera profumato",
+  "proprieta": "Chi lo annusa ha vantaggio alle prove di Carisma con il sesso opposto per 1 ora",
+  "maledizione": "Deve fare TS Saggezza CD 13 o innamorarsi della prima persona che vede",
+  "valore": "400 mo",
+  "storia": "La Dama Nera ebbe 13 amanti che si uccisero per lei",
+  "maledizione_specifica": "Deve fare TS Saggezza CD 13 o innamorarsi della prima persona che vede",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.abilities.cha.bonuses.check",
+        "mode": 2,
+        "value": "2",
+        "priority": 20,
+        "duration": {
+          "seconds": 3600
+        }
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "timed_effect_with_save",
+      "duration": 3600,
+      "saveType": "wis",
+      "saveDC": 13,
+      "onFailure": "infatuazione_prima_persona",
+      "conditionalBonus": "opposite_gender_only",
+      "infatuated": false,
+      "infatuationTarget": null
+    },
+    "hooks": ["dnd5e.preRollSkill"],
+    "macros": ["sniffHandkerchief"],
+    "ui_config": {
+      "showDuration": true,
+      "showSaveRequired": true,
+      "warningText": "⚠️ Richiede TS SAG CD 13 o innamoramento!"
+    },
+    "narrative_reminders": [
+      "Il bonus Carisma si applica SOLO con il sesso opposto",
+      "Fallimento TS = innamoramento della prima persona vista",
+      "L'innamoramento è una condizione narrativa gestita dal DM",
+      "Durata effetto: 1 ora"
+    ]
+  },
+  "img": "icons/equipment/neck/scarf-silk-black.webp"
+}

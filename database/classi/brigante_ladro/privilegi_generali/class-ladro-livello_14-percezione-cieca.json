@@ -1,0 +1,171 @@
+{
+  "id": "class-ladro-livello_14-percezione-cieca",
+  "nome": "Percezione Cieca",
+  "nome_brancalonia": "Sensi del Pipistrello",
+  "livello": 14,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 14° livello, se sei in grado di sentire, sei consapevole della posizione di qualsiasi creatura nascosta o invisibile entro 3 metri da te.",
+  "meccaniche": {
+    "funzionamento": {
+      "raggio": "3 metri (10 piedi)",
+      "requisito": "Essere in grado di sentire",
+      "effetto": "Conosci posizione esatta"
+    },
+    "cosa_rileva": [
+      "Creature invisibili",
+      "Creature nascoste",
+      "Creature nell'oscurità totale",
+      "Creature dietro copertura totale (se entro 3m)",
+      "Illusioni di creature (sai che sono illusioni)"
+    ],
+    "cosa_non_rileva": [
+      "Oggetti",
+      "Trappole",
+      "Porte segrete",
+      "Creature oltre 3 metri",
+      "Creature in silenzio magico"
+    ],
+    "limitazioni": {
+      "assordato": "Non funziona se sei assordato",
+      "silenzio": "Non funziona in area di Silenzio",
+      "non_vista": "Sai dove sono, non le vedi"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "senso_speciale",
+    "configurazione": {
+      "system.attributes.senses.blindsight": 10,
+      "flags.dnd5e.blindsightCondition": "can hear"
+    },
+    "token_vision": {
+      "tipo": "Blindsight limitato",
+      "raggio": "10 piedi"
+    }
+  },
+  "vantaggi_combattimento": {
+    "vs_invisibili": {
+      "attacco": "Nessuno svantaggio entro 3m",
+      "difesa": "Non hanno vantaggio contro di te",
+      "sneak_attack": "Puoi ancora applicare SA"
+    },
+    "vs_darkness": {
+      "oscurita_magica": "Combatti normalmente entro 3m",
+      "fog_cloud": "Ignori occultamento entro 3m"
+    },
+    "vs_hide": {
+      "cunning_action_hide": "Inutile entro 3m da te",
+      "wood_elf_mask": "Lo rilevi comunque"
+    }
+  },
+  "confronto_sensi": {
+    "vs_blindsight_vero": {
+      "mostri": "Spesso 30-60 piedi",
+      "percezione_cieca": "Solo 10 piedi",
+      "condizione": "Richiede udito"
+    },
+    "vs_tremorsense": {
+      "tremor": "Rileva attraverso terreno",
+      "blind_sense": "Rileva attraverso aria",
+      "limitazioni": "Entrambi limitati"
+    },
+    "vs_true_sight": {
+      "true_sight": "Vede attraverso illusioni/forme",
+      "blind_sense": "Solo posizione creature"
+    }
+  },
+  "tattiche": {
+    "close_combat": {
+      "strategia": "Combatti entro 3m per negare vantaggi",
+      "positioning": "Resta vicino a nemici stealth"
+    },
+    "anti_ambush": {
+      "beneficio": "Impossibile essere sorpreso entro 3m",
+      "guardia": "Perfetto per guardia notturna"
+    },
+    "darkness_combat": {
+      "combo": "Darkness spell + Blind Sense",
+      "vantaggio": "Tu percepisci, loro no"
+    }
+  },
+  "sinergie": {
+    "con_alert": "Mai sorpreso + percezione cieca",
+    "con_observant": "Percezione passiva alta + blind sense",
+    "con_skulker": "Hide nel buio + rileva altri nascosti",
+    "multiclasse": {
+      "warlock": "Devil's Sight + Blind Sense",
+      "shadow_monk": "Darkness ki + percezione"
+    }
+  },
+  "scenari_uso": {
+    "dungeon_buio": {
+      "situazione": "Corridoio senza luce",
+      "vantaggio": "Rilevi nemici in agguato vicini"
+    },
+    "fog_cloud": {
+      "situazione": "Battaglia in nebbia",
+      "tattica": "Combatti entro 3m normalmente"
+    },
+    "invisible_stalker": {
+      "nemico": "Stalker invisibile",
+      "counter": "Sai esattamente dove è"
+    },
+    "illusionist_wizard": {
+      "trucco": "Mirror Image o Mislead",
+      "counter": "Distingui vero da illusioni"
+    }
+  },
+  "limitazioni_pratiche": {
+    "raggio_corto": "Solo 3 metri molto limitante",
+    "richiede_udito": "Silence lo blocca completamente",
+    "non_true_sight": "Non vedi forma o dettagli",
+    "solo_creature": "Non aiuta con esplorazione"
+  },
+  "build_ottimizzate": {
+    "melee_rogue": {
+      "stile": "Swashbuckler o simile",
+      "tattica": "Combat ravvicinato sempre"
+    },
+    "sentinel_build": {
+      "feat": "Sentinel",
+      "combo": "Blocca nemici invisibili vicini"
+    },
+    "grappler": {
+      "strategia": "Grapple nemici invisibili",
+      "vantaggio": "Sai dove sono per grapple"
+    }
+  },
+  "ruling_importanti": {
+    "heavily_obscured": "Funziona attraverso oscuramento",
+    "total_cover": "Funziona attraverso copertura",
+    "line_of_effect": "Non richiede linea di effetto",
+    "automatic": "Sempre attivo, no azione"
+  },
+  "esempi_gioco": {
+    "assassino_invisibile": {
+      "situazione": "Assassino invisible si avvicina",
+      "risultato": "Lo rilevi a 3m automaticamente",
+      "narrativa": "Senti il suo respiro"
+    },
+    "battaglia_nel_buio": {
+      "setup": "Darkness spell in stanza",
+      "tattica": "Ti muovi al centro, rilevi tutti",
+      "vantaggio": "Neghi vantaggi invisibilità"
+    }
+  },
+  "narrazione_brancalonia": {
+    "descrizione": "Il Brigante ha sensi affinati come un predatore",
+    "flavor": [
+      "Sente il battito cardiaco dei nemici",
+      "Percepisce lo spostamento d'aria",
+      "Istinto animale per il pericolo"
+    ],
+    "reputazione": "Impossibile cogliere di sorpresa"
+  },
+  "progressione_importanza": {
+    "tier_1_2": "Non disponibile",
+    "tier_3_14": "Utile ma situazionale",
+    "tier_4": "Più nemici con invisibilità/oscurità"
+  },
+  "note_dm": "Blindsense è situazionale ma potente quando rilevante. Non renderlo più forte di quanto sia (solo 3m, solo creature).",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97"
+}

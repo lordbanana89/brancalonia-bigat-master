@@ -1,0 +1,84 @@
+{
+  "_id": "fSlUWoRJh6Q0sXPB",
+  "_key": "!item!lamascheradelcarnefice07bf20",
+  "name": "La Maschera del Carnefice",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cappuccio nero con buchi per gli occhi</p><h3>Proprietà</h3><p>Immunità a essere riconosciuto, +2 Intimidire</p><h3>Storia</h3><p><em>Il carnefice giustiziò suo fratello senza saperlo</em></p><h3>Maledizione</h3><p><strong>Non può essere tolta per 24 ore una volta indossata</strong></p><p>Non può essere tolta per 24 ore una volta indossata</p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 350,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": [
+      "mgc",
+      "cursed"
+    ],
+    "cursed": true,
+    "curse": "Non può essere tolta per 24 ore una volta indossata"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "011",
+      "categoria": "cimelo",
+      "storia": "Il carnefice giustiziò suo fratello senza saperlo",
+      "proprieta_originale": "Immunità a essere riconosciuto, +2 Intimidire",
+      "maledizione": "Non può essere tolta per 24 ore una volta indossata",
+      "maledizione_specifica": "Non può essere tolta per 24 ore una volta indossata",
+      "implementazione": {
+        "tipo": "magico_minore",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

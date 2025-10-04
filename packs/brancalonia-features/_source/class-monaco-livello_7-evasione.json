@@ -1,0 +1,51 @@
+{
+  "id": "class-monaco-livello_7-evasione",
+  "nome": "Evasione",
+  "nome_brancalonia": "Schivata Perfetta",
+  "livello": 7,
+  "tipo": "passivo",
+  "descrizione": "Al 7° livello, la tua agilità istintiva ti permette di schivare certi effetti area. Quando sei soggetto a un effetto che ti permette di fare un tiro salvezza Destrezza per dimezzare i danni, non subisci danni se superi il tiro salvezza, e solo metà danni se fallisci.",
+  "meccaniche": {
+    "trigger": "DEX save per metà danni",
+    "successo": "0 danni invece di metà",
+    "fallimento": "Metà danni invece di pieni"
+  },
+  "implementazione_foundry": {
+    "tipo": "evasion",
+    "automatico": true
+  },
+  "spell_comuni_evasi": [
+    "Fireball",
+    "Lightning Bolt",
+    "Cone of Cold",
+    "Dragon Breath",
+    "Burning Hands"
+  ],
+  "calcoli_sopravvivenza": {
+    "fireball_8d6": {
+      "normale_fail": "28 medi",
+      "evasion_fail": "14 medi",
+      "evasion_success": "0 danni"
+    }
+  },
+  "note_dm": "Evasion rende il monaco molto resistente a damage AoE. Combinato con alta DEX e Diamond Soul, quasi immunità.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79",
+  "name": "Evasione",
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "_id": "ZtnGIpI608WbYmTr",
+  "_key": "!item!class-monaco-livello_7-evasione",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

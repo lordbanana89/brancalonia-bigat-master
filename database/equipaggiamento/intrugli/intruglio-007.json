@@ -1,0 +1,9 @@
+{
+  "id": "intruglio-007",
+  "nome": "Infernet Malebranche",
+  "costo": "3 mo",
+  "peso": "0.5 kg",
+  "effetto": "Protezione basse temperature, svantaggio prove identità. Durata 48 ore",
+  "tipo_meccanica": "consumabile",
+  "fonte": "Manuale Base p.65-66"
+}

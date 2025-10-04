@@ -1,0 +1,44 @@
+{
+  "id": "020",
+  "nome": "L'Ultimo Chiodo della Croce",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Chiodo arrugginito lungo 15cm",
+  "proprieta": "Danni x2 contro demoni e non morti",
+  "valore": "1500 mo",
+  "storia": "Si dice sia un vero chiodo della Crocifissione",
+  "attivazione": "Deve essere conficcato nell'arma",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "damage_multiplier",
+      "multiplier": 2,
+      "targetTypes": ["undead", "fiend"],
+      "requiresAttachment": true,
+      "attachedToWeapon": null,
+      "description": "x2 danni vs demoni/non-morti, deve essere nell'arma"
+    },
+    "hooks": ["dnd5e.rollDamage"],
+    "macros": ["hammerNail", "removeNail"],
+    "ui_config": {
+      "showAttachmentStatus": true,
+      "statusText": {
+        "unattached": "⚪ Non attaccato ad arma",
+        "attached": "⚔️ Inchiodato in: {weaponName}"
+      },
+      "showTargetTypes": true
+    },
+    "narrative_reminders": [
+      "Deve essere conficcato in un'arma per funzionare",
+      "Raddoppia TUTTI i danni contro demoni e non-morti",
+      "Considerato reliquia sacra da alcuni, blasfemia da altri",
+      "Può essere rimosso e spostato su altre armi",
+      "Richiede martello e tempo per inchiodarlo"
+    ]
+  },
+  "img": "icons/tools/fasteners/nail-steel.webp"
+}

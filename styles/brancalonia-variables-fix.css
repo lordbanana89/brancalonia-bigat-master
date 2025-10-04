@@ -1,0 +1,166 @@
+/* ================================================ */
+/* BRANCALONIA VARIABLES FIX                       */
+/* Ensure variables are available globally         */
+/* ================================================ */
+
+/* Apply variables to root and all possible theme classes */
+:root,
+body,
+body.brancalonia-sheet,
+body.theme-brancalonia,
+.theme-brancalonia,
+.brancalonia-sheet,
+.brancalonia-theme {
+  /* Core Colors */
+  --bcl-gold: #C9A54A;
+  --bcl-gold-hover: #D4AF37;
+  --bcl-gold-active: #B8943C;
+
+  /* Surfaces */
+  --bcl-surface: #F3E6CC;
+  --bcl-surface-primary: #F3E6CC;
+  --bcl-surface-secondary: #EFE0BD;
+  --bcl-surface-tertiary: #E7D6AE;
+  --bcl-surface-elevated: #FAF6ED;
+  --bcl-surface-sunken: #D9C38F;
+
+  --bcl-paper: #E7D6AE;
+  --bcl-paper-weak: #EFE0BD;
+  --bcl-paper-strong: #D9C38F;
+
+  /* Text/Ink */
+  --bcl-ink: #2B1F14;
+  --bcl-ink-weak: #4A3826;
+  --bcl-ink-strong: #1C1814;
+  --bcl-text-primary: #2B1F14;
+  --bcl-text-secondary: #4A3826;
+  --bcl-text-tertiary: #6B5744;
+  --bcl-text-inverse: #FAF6ED;
+
+  /* Accents */
+  --bcl-accent: #C80815;
+  --bcl-accent-strong: #722F37;
+  --bcl-venetian-red: #C80815;
+  --bcl-wine: #722F37;
+  --bcl-terracotta: #CB6843;
+  --bcl-malachite: #0F7938;
+
+  /* Renaissance Colors */
+  --bcl-raw-sienna: #C68E3F;
+  --bcl-raw-umber: #6B4423;
+  --bcl-burnt-sienna: #8B4513;
+  --bcl-burnt-umber: #4A3826;
+  --bcl-ochre: #CC9A2E;
+
+  /* Borders */
+  --bcl-border: rgba(43, 31, 20, 0.2);
+  --bcl-border-weak: rgba(43, 31, 20, 0.1);
+  --bcl-border-strong: rgba(43, 31, 20, 0.3);
+
+  /* Shadows */
+  --bcl-shadow-sm: 0 1px 2px rgba(43, 31, 20, 0.1);
+  --bcl-shadow-md: 0 2px 4px rgba(43, 31, 20, 0.15);
+  --bcl-shadow-lg: 0 4px 8px rgba(43, 31, 20, 0.2);
+  --bcl-shadow-xl: 0 8px 16px rgba(43, 31, 20, 0.25);
+  --bcl-shadow-parchment: 0 2px 8px rgba(107, 68, 35, 0.15);
+  --bcl-shadow-gold: rgba(201, 165, 74, 0.4);
+
+  /* Spacing */
+  --bcl-space-1: 0.25rem;
+  --bcl-space-2: 0.5rem;
+  --bcl-space-3: 0.75rem;
+  --bcl-space-4: 1rem;
+  --bcl-space-5: 1.5rem;
+  --bcl-space-6: 2rem;
+  --bcl-space-8: 3rem;
+
+  /* Border Radius */
+  --bcl-radius-sm: 4px;
+  --bcl-radius-md: 8px;
+  --bcl-radius-lg: 12px;
+  --bcl-radius-xl: 16px;
+  --bcl-radius-full: 9999px;
+
+  /* Font Families */
+  --bcl-font-display: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+  --bcl-font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --bcl-font-mono: 'Courier New', Courier, monospace;
+
+  /* Font Sizes */
+  --bcl-font-size-xs: 0.75rem;
+  --bcl-font-size-sm: 0.875rem;
+  --bcl-font-size-md: 1rem;
+  --bcl-font-size-lg: 1.125rem;
+  --bcl-font-size-xl: 1.25rem;
+  --bcl-font-size-2xl: 1.5rem;
+  --bcl-font-size-3xl: 1.875rem;
+  --bcl-font-size-4xl: 2.25rem;
+
+  /* Font Weights */
+  --bcl-font-weight-normal: 400;
+  --bcl-font-weight-medium: 500;
+  --bcl-font-weight-semibold: 600;
+  --bcl-font-weight-bold: 700;
+
+  /* Line Heights */
+  --bcl-leading-tight: 1.25;
+  --bcl-leading-normal: 1.5;
+  --bcl-leading-relaxed: 1.75;
+
+  /* Transitions */
+  --bcl-transition-fast: 150ms ease-in-out;
+  --bcl-transition-normal: 250ms ease-in-out;
+  --bcl-transition-slow: 350ms ease-in-out;
+
+  /* Focus */
+  --bcl-focus-color: var(--bcl-gold);
+  --bcl-focus-width: 3px;
+  --bcl-focus-offset: 2px;
+
+  /* Interactive States */
+  --bcl-interactive-normal: #C9A54A;
+  --bcl-interactive-hover: #D4AF37;
+  --bcl-interactive-active: #B8943C;
+  --bcl-interactive-disabled: rgba(201, 165, 74, 0.4);
+
+  /* Background gradients */
+  --bcl-bg-primary: linear-gradient(135deg, #F3E6CC 0%, #E7D6AE 100%);
+  --bcl-bg-secondary: linear-gradient(135deg, #EFE0BD 0%, #D9C38F 100%);
+  --bcl-bg-header: linear-gradient(135deg, #F4E4BC 0%, #E7D6AE 100%);
+
+  /* Z-index scale */
+  --bcl-z-dropdown: 100;
+  --bcl-z-sticky: 200;
+  --bcl-z-fixed: 300;
+  --bcl-z-modal-backdrop: 400;
+  --bcl-z-modal: 500;
+  --bcl-z-popover: 600;
+  --bcl-z-tooltip: 700;
+  --bcl-z-notification: 800;
+}
+
+/* Ensure Foundry specific elements get the variables */
+.window-app,
+.app,
+.sheet,
+.dnd5e,
+.dnd5e.sheet.actor,
+.dnd5e.sheet.item,
+#sidebar,
+#controls,
+#navigation,
+#hotbar,
+#players,
+#pause,
+#logo {
+  /* Inherit all variables */
+  color: var(--bcl-ink);
+  font-family: var(--bcl-font-body);
+}
+
+.theme-brancalonia #controls,
+.theme-brancalonia #controls *,
+.theme-brancalonia #ui-left,
+.theme-brancalonia #ui-left * {
+  pointer-events: auto !important;
+}

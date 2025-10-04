@@ -1,0 +1,89 @@
+{
+  "categoria": "sistema_malefatte_taglia",
+  "fonte": "Manuale Base p.46-48",
+  "descrizione": "Sistema di reputazione criminale e taglie del Regno",
+  "malefatte": {
+    "creazione_personaggio": "3 + Livello del Personaggio malefatte iniziali",
+    "tabella_malefatte": [
+      {"d20": 1, "malefatta": "Schiamazzi notturni e disturbo della pubblica quiete", "valore_mo": 2},
+      {"d20": 2, "malefatta": "Sermone non autorizzato, abbindolamento o supercazzola", "valore_mo": 2},
+      {"d20": 3, "malefatta": "Offese, insulti o vilipendio", "valore_mo": 2},
+      {"d20": 4, "malefatta": "Vivande e bevande non pagate", "valore_mo": 2},
+      {"d20": 5, "malefatta": "Furto di pollame e altri volatili da cortile", "valore_mo": 4},
+      {"d20": 6, "malefatta": "Adulterio o abbandono del tetto coniugale", "valore_mo": 4},
+      {"d20": 7, "malefatta": "Profezia, scommessa o gioco d'azzardo non autorizzato", "valore_mo": 4},
+      {"d20": 8, "malefatta": "Bracconaggio o contrabbando di animali", "valore_mo": 8},
+      {"d20": 9, "malefatta": "Truffa, imbroglio o burla aggravata", "valore_mo": 8},
+      {"d20": 10, "malefatta": "Borseggio e taccheggio da mercato", "valore_mo": 10},
+      {"d20": 11, "malefatta": "Furto con destrezza, furto con carisma o furto con intelligenza", "valore_mo": 10},
+      {"d20": 12, "malefatta": "Maleficio o fandonia molesta", "valore_mo": 10},
+      {"d20": 13, "malefatta": "Falsificazione di reliquie e oggetti di pregio", "valore_mo": 10},
+      {"d20": 14, "malefatta": "Distillazione clandestina, contrabbando o ricettazione", "valore_mo": 12},
+      {"d20": 15, "malefatta": "Malversazione, corruzione, insolvenza o tasse non pagate", "valore_mo": 12},
+      {"d20": 16, "malefatta": "Evasione, resistenza all'arresto, interruzione di pubblica esecuzione", "valore_mo": 15},
+      {"d20": 17, "malefatta": "Rissa non regolamentata, vandalismo, sfascio di bettole e ricoveri", "valore_mo": 15},
+      {"d20": 18, "malefatta": "Falsificazione di documenti e monete", "valore_mo": 18},
+      {"d20": 19, "malefatta": "Contrabbando di mostruosità, draghi, bestie magiche e aberrazioni", "valore_mo": 20},
+      {"d20": 20, "malefatta": "Tradimento, spionaggio e diserzione", "valore_mo": 20}
+    ]
+  },
+  "taglia": {
+    "calcolo": "Somma del Valore di Taglia di tutte le Malefatte",
+    "aggiornamento": "Solo durante la fase di Sbraco quando Equitaglia aggiorna i Regi Registri"
+  },
+  "nomea": {
+    "descrizione": "Livello di reputazione tra i Fratelli di Taglia",
+    "livelli": [
+      {
+        "nome": "Maltagliato",
+        "taglia_mo": "1-99",
+        "descrizione": "Novellino o errore giudiziario",
+        "rischi_mestiere": "Tira 2d100, tieni il più basso",
+        "bonus_nomea": 0
+      },
+      {
+        "nome": "Mezza Taglia",
+        "taglia_mo": "100-249",
+        "descrizione": "Inizia a farsi rispettare",
+        "rischi_mestiere": "Tira 2d100, tieni il più basso",
+        "bonus_nomea": 1
+      },
+      {
+        "nome": "Tagliola",
+        "taglia_mo": "250-499",
+        "descrizione": "Nerbo delle bande",
+        "rischi_mestiere": "Tira 1d100",
+        "bonus_nomea": 1
+      },
+      {
+        "nome": "Taglia Forte",
+        "taglia_mo": "500-999",
+        "descrizione": "Veri Fratelli di Taglia",
+        "rischi_mestiere": "Tira 1d100",
+        "bonus_nomea": 2
+      },
+      {
+        "nome": "Vecchia Taglia",
+        "taglia_mo": "1000-1999",
+        "descrizione": "Latitanti incalliti",
+        "rischi_mestiere": "Tira 2d100, tieni il più alto",
+        "bonus_nomea": 2
+      },
+      {
+        "nome": "Grande Taglia",
+        "taglia_mo": "2000+",
+        "descrizione": "Capibanda e signori del crimine",
+        "rischi_mestiere": "Tira 2d100, tieni il più alto",
+        "bonus_nomea": 3
+      }
+    ]
+  },
+  "infami": {
+    "descrizione": "Chi tradisce i Fratelli di Taglia",
+    "conseguenze": "Espulso dalla fraternità, cacciato da bettole e covi"
+  },
+  "validazione": {
+    "implementato": false,
+    "compendio": "sistema_taglia"
+  }
+}

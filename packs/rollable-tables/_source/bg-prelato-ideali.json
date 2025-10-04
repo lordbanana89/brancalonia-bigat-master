@@ -1,0 +1,106 @@
+{
+  "_id": "USxxzTyEbr3pHVXq",
+  "_key": "!tables!USxxzTyEbr3pHVXq",
+  "name": "Prelato - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "oJLGXFmBvLNQ0E6l",
+      "type": 0,
+      "text": "Guida. Proteggo il mio gregge di canaglie e fedeli. (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!oJLGXFmBvLNQ0E6l"
+    },
+    {
+      "_id": "jN21uCAYbkJ4MwMz",
+      "type": 0,
+      "text": "Rigore. I dettami del Credo vanno applicati senza compromessi. (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!jN21uCAYbkJ4MwMz"
+    },
+    {
+      "_id": "3qW2a8G6Isx0BQob",
+      "type": 0,
+      "text": "Libero arbitrio. Ognuno deve scegliere come seguire il cammino. (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!3qW2a8G6Isx0BQob"
+    },
+    {
+      "_id": "vteg8A5E1a74yLLI",
+      "type": 0,
+      "text": "Carriera. Uso la fede per scalare i ranghi del Credo. (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!vteg8A5E1a74yLLI"
+    },
+    {
+      "_id": "kqYtdZMs3RYxDNkR",
+      "type": 0,
+      "text": "Fede. Tutto rientra nell'equilibrio del grande disegno. (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!kqYtdZMs3RYxDNkR"
+    },
+    {
+      "_id": "phRAzv37X1Dkkhgh",
+      "type": 0,
+      "text": "Redenzione. Devo rimediare ai peccati della mia vita passata. (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!phRAzv37X1Dkkhgh"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "prelato",
+      "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

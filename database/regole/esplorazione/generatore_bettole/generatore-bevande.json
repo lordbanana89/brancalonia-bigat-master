@@ -1,0 +1,31 @@
+{
+  "id": "generatore-bettole-bevande",
+  "titolo": "Qualcosa da bere?",
+  "dado": "1d20",
+  "voci": [
+    {"tiro": 1, "descrizione": "Locandello: miscuglio di vini pessimi tagliati con gli avanzi dei boccali."},
+    {"tiro": 2, "descrizione": "Fregnaccia: come il Locandello ma rimbottigliato e spacciato come bevanda di pregio."},
+    {"tiro": 3, "descrizione": "Verdicchio: un vino verde che non dovrebbe neppure esistere."},
+    {"tiro": 4, "descrizione": "Rosato: miscuglio abominevole di avanzi di vini rossi e bianchi."},
+    {"tiro": 5, "descrizione": "Nebbioso della Pianaverna, sa di foschia e delle acque del Fossa."},
+    {"tiro": 6, "descrizione": "Parassito, vino dolce ricavato da uve marce, appassite e gia sfruttate."},
+    {"tiro": 7, "descrizione": "Moscato bianco in cui galleggiano spesso insetti morti."},
+    {"tiro": 8, "descrizione": "Schianti, ideale prima di una rissa e con le pappardelle al cinghiale."},
+    {"tiro": 9, "descrizione": "San Mortese, che con la cacciagione e la morte tua."},
+    {"tiro": 10, "descrizione": "Mortefalco Rosso, perfetto con selvaggina e rapaci."},
+    {"tiro": 11, "descrizione": "Nero Diavola, prodotto da una famiglia di Malebranche vignaioli."},
+    {"tiro": 12, "descrizione": "Troglodita di Panduria, tra i vini ausoni piu pregiati."},
+    {"tiro": 13, "descrizione": "Montepulcioso, rosso possente da abbinare agli arrosti."},
+    {"tiro": 14, "descrizione": "Baraiolo, vino scuro sepolto in bare di rovere per quindici anni."},
+    {"tiro": 15, "descrizione": "Birra Speroni, robaccia da mercenari, disertori e imboscati."},
+    {"tiro": 16, "descrizione": "Amaro del Capro, tipico di Penumbria, adorato da eretici e rinnegati."},
+    {"tiro": 17, "descrizione": "Amaro Averno, preferito dai Malebranche nostalgici."},
+    {"tiro": 18, "descrizione": "Fil di ferro, distillato clandestino diffuso a Tasinnanta, ogni famiglia ne fa uno."},
+    {"tiro": 19, "descrizione": "Malvagia, vino liquoroso dolce in ingresso ma dal retrogusto amaro che spinge a berne ancora."},
+    {"tiro": 20, "descrizione": "Spumante per celebrare colpi andati a segno; i birri monitorano le forniture per capire chi arrestare."}
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "85"
+  }
+}

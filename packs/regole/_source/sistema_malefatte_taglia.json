@@ -1,0 +1,22 @@
+{
+  "_id": "SRVEEgF6N0HN5Oh4",
+  "_key": "!journal!sistemamalefattetaglia7713d3",
+  "name": "Regola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "categoria": "sistema_malefatte_taglia",
+      "fonte": "Manuale Base p.46-48"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

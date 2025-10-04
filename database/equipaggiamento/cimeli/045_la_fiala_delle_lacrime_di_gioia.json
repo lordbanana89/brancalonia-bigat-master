@@ -1,0 +1,42 @@
+{
+  "id": "045",
+  "nome": "La Fiala delle Lacrime di Gioia",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Piccola fiala di cristallo con liquido iridescente",
+  "proprieta": "Una goccia rimuove depressione e tristezza per 7 giorni",
+  "valore": "350 mo",
+  "storia": "Raccolta al matrimonio prima della tragedia",
+  "rovescio": "L'ottavo giorno, tristezza doppia",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "buff_then_debuff",
+      "buffDuration": 604800,
+      "debuffTiming": 691200,
+      "debuffSeverity": "doppia",
+      "effectDescription": "Felicità 7 giorni, tristezza doppia l'8°"
+    },
+    "hooks": [],
+    "macros": ["drinkTears"],
+    "ui_config": {
+      "showDuration": true,
+      "durationText": "Effetto: 7 giorni di gioia, 8° giorno tristezza doppia",
+      "showWarning": true,
+      "warningText": "⚠️ L'ottavo giorno l'effetto si inverte drammaticamente!"
+    },
+    "narrative_reminders": [
+      "Rimuove completamente depressione e tristezza per 7 giorni",
+      "L'ottavo giorno, la tristezza ritorna DOPPIA",
+      "La fiala contiene lacrime di gioia di un matrimonio tragico",
+      "L'effetto è puramente emotivo/psicologico",
+      "Può creare dipendenza emotiva",
+      "Ottimo per emergenze ma pericoloso a lungo termine"
+    ]
+  },
+  "img": "icons/consumables/potions/bottle-round-corked-pink.webp"
+}

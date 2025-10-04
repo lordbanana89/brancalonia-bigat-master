@@ -1,0 +1,59 @@
+{
+  "id": "class-chierico-dominio-guerra",
+  "nome": "Dominio della Guerra",
+  "fonte": "Manuale del Giocatore p.63",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Competenze Marziali",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bonus Proficiencies (War)"
+        }
+      },
+      {
+        "nome": "Sacerdote della Guerra",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "War Priest"
+        }
+      }
+    ],
+    "livello_2": [
+      {
+        "nome": "Incanalare Divinità: Colpo Guidato",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Guided Strike"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Incanalare Divinità: Benedizione del Dio della Guerra",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: War God's Blessing"
+        }
+      }
+    ],
+    "livello_8": [
+      {
+        "nome": "Colpo Divino (forza)",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Divine Strike (War)"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Avatar della Battaglia",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Avatar of Battle"
+        }
+      }
+    ]
+  }
+}

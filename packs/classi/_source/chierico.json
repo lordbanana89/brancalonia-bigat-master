@@ -1,0 +1,546 @@
+{
+  "_id": "jaj0ARq6zrJ4oLXm",
+  "_key": "!item!class-chierico-lvrhc0",
+  "name": "Chierico",
+  "type": "class",
+  "img": "icons/magic/holy/chalice-glowing-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Servitore devoto di un potere divino che canalizza miracoli per sostenere, punire e guidare.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.56",
+    "identifier": "chierico",
+    "levels": 20,
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "nYTiK4v4Nrmh0ei1",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "Punti Ferita"
+      },
+      {
+        "_id": "0zx6tfu856wyl71g",
+        "type": "SpellcastingValue",
+        "configuration": {},
+        "value": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "12": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "14": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "16": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        "title": "Slot Incantesimi"
+      },
+      {
+        "_id": "c3496b9294b841b7",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.7b9038ffef23b22a",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Incantesimi",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "b1e2b56651fb4d39",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.8e922b44e4763e41",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Dominio Divino",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "9c90ea3c66ac481a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.b53d9d84d9258440",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Incanalare Divinità",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "3007122d697b41d5",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.c12db243980bccdb",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Privilegio del Dominio",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "ls8AXA6PB5BMli9r",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "3ef57d9b92904fb1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.750b7d7f815dcf26",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "Distruggere Non Morti",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "9d7b3d36eed0432d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.df8f25c19cf9a3c3",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 8,
+        "title": "Privilegio del Dominio",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "d7b07b00a8a24bab",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.f8d9767b9374850d",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 8,
+        "title": "Distruggere Non Morti Migliorato",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "b6UWFJhh6j7bW51G",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "6c6c102356864b53",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.40dd4873974ff058",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 10,
+        "title": "Intervento Divino",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "OEHPCS2JiitFDAWp",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "yd4uuxHqx6ZGxlFH",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "93a3fb62f6914f15",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.322a6547896fd78c",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Privilegio del Dominio",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "36dc40c869e74050",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.634530eeda6c1b58",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Distruggere Non Morti Maestro",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "ZFfoTirNfypUkVE7",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "ab8ab163b53c4c21",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.297f41d015142695",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Intervento Divino Migliorato",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ],
+    "saves": [
+      "wis",
+      "cha"
+    ],
+    "skills": {
+      "number": 2,
+      "choices": [
+        "his",
+        "ins",
+        "med",
+        "per",
+        "rel"
+      ]
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "wis"
+    },
+    "hd": {
+      "denomination": "d8",
+      "spent": 0
+    },
+    "primaryAbility": [
+      "wis"
+    ],
+    "startingEquipment": [],
+    "hitDice": "d8"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.56",
+      "tipo": "classe"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 5,
+  "elementi": [
+    {
+      "id": "tratto-001-resilienza-implacabile",
+      "nome": "Tratto 001 Resilienza Implacabile",
+      "file": "tratto-001_resilienza_implacabile.json"
+    },
+    {
+      "id": "tratto-002-attacchi-selvaggi",
+      "nome": "Tratto 002 Attacchi Selvaggi",
+      "file": "tratto-002_attacchi_selvaggi.json"
+    },
+    {
+      "id": "tratto-003-costituzione-possente",
+      "nome": "Tratto 003 Costituzione Possente",
+      "file": "tratto-003_costituzione_possente.json"
+    },
+    {
+      "id": "tratto-004-minaccioso",
+      "nome": "Tratto 004 Minaccioso",
+      "file": "tratto-004_minaccioso.json"
+    },
+    {
+      "id": "tratto-005-fame-insaziabile",
+      "nome": "Tratto 005 Fame Insaziabile",
+      "file": "tratto-005_fame_insaziabile.json"
+    }
+  ]
+}

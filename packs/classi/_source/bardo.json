@@ -1,0 +1,608 @@
+{
+  "_id": "g2FxiHdiWnd6O0f7",
+  "_key": "!item!class-bardo-uh05kq",
+  "name": "Bardo",
+  "type": "class",
+  "img": "icons/tools/instruments/lute-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Artista e sciamano della parola che intreccia musica e magia per ispirare, ingannare e incantare.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.51",
+    "identifier": "bardo",
+    "levels": 20,
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "A8XEwiqKJyoOwLd1",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "Punti Ferita"
+      },
+      {
+        "_id": "go05k554npgqv5bi",
+        "type": "SpellcastingValue",
+        "configuration": {},
+        "value": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "12": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "14": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "16": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        "title": "Slot Incantesimi"
+      },
+      {
+        "_id": "2a234338ca1f4bad",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.3c0b6df842c247ea",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Incantesimi",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "d9b09c1afa6b44e0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.634cd83a624530a7",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Ispirazione Bardica",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "fb266bb84e53433b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.ff2e71fc0a1ee670",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Tuttofare",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "ca90f4b6b19e4beb",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.7e64dbbaf9f65f0d",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Canzone di Riposo",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "8ea4b94fed27422c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.ca0882b5368a7cc0",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Competenza",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "3314503a44c341b8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.cdc6cae1ebab0364",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Collegio Bardico",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "586443a24fec47b5",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.63257b420c2165f1",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 4,
+        "title": "Trucchetti Aggiuntivi",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "E85nQIDqCLrjeo8S",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "0b6a8bfc61b54395",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.250fac41c96dcc73",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "Fonte d'Ispirazione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "587594668f0a4a3b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.696ae8daac876f56",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Contraffazione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "36f99779900f48cb",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.82269381acb18be4",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Privilegio del Collegio",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "4UqM9BqxPmE2JOkF",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "5c11eae886314829",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.b771ddf4b6cfb9b5",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 10,
+        "title": "Segreti Magici",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "34e97ac0dfd4414a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.a59620f830c90611",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 10,
+        "title": "Competenza Superiore",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "J6VhK4qAXCkTZI80",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "4ae4eb8bbd75433c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.724f9d40e414a244",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 14,
+        "title": "Segreti Magici Aggiuntivi",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "dca6f6c34bac430b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.85bff85a55ba8e4a",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 14,
+        "title": "Privilegio del Collegio",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "yu78VwfNJVurnEKr",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "TKtNz83qLLHxirzM",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "d60dd23cf6044f9b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.0fef1e1efe5b44b5",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Ispirazione Superiore",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ],
+    "saves": [
+      "dex",
+      "cha"
+    ],
+    "skills": {
+      "number": 3,
+      "choices": "any"
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "cha"
+    },
+    "hd": {
+      "denomination": "d8",
+      "spent": 0
+    },
+    "primaryAbility": [
+      "cha"
+    ],
+    "startingEquipment": [],
+    "hitDice": "d8"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.51",
+      "tipo": "classe"
+    }
+  }
+}

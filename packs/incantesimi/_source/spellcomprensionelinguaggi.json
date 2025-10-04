@@ -1,0 +1,120 @@
+{
+  "_id": "16Ne3kpFZLxkqw5d",
+  "_key": "!item!spellcomprensionelinguaggi181a1b",
+  "name": "Comprensione dei Linguaggi",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Per la durata, comprendi il significato letterale di qualsiasi linguaggio parlato che senti. Comprendi anche qualsiasi linguaggio scritto che vedi, ma devi toccare la superficie su cui sono scritte le parole. Ci vuole circa 1 minuto per leggere una pagina di testo. Questo incantesimo non decodifica messaggi segreti in un testo o un glifo, come un sigillo arcano, che non è parte di un linguaggio scritto.</p><h3>Utilizzi Tipici</h3><ul><li>Negoziare con creature esotiche</li><li>Leggere testi antichi</li><li>Spiare conversazioni</li><li>Comprendere minacce nemiche</li><li>Ricerca in biblioteche straniere</li></ul><h3>Note per il DM</h3><p><em>Comprehend Languages è utility essenziale per esplorazione. Ritual lo rende sempre disponibile. Non traduce codici è limitazione importante.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.224",
+    "level": 1,
+    "school": "div",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": true,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-comprensione-linguaggi",
+      "fonte": "D&D 5e PHB p.224",
+      "utilizzi": [
+        "Negoziare con creature esotiche",
+        "Leggere testi antichi",
+        "Spiare conversazioni",
+        "Comprendere minacce nemiche",
+        "Ricerca in biblioteche straniere"
+      ],
+      "note_dm": "Comprehend Languages è utility essenziale per esplorazione. Ritual lo rende sempre disponibile. Non traduce codici è limitazione importante.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 1,
+        "rituale": true,
+        "attivazione": "action",
+        "range": "self",
+        "durata": "1 hour"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Divinazione",
+        "level": 1
+      }
+    }
+  }
+}

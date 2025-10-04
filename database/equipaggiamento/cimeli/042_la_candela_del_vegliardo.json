@@ -1,0 +1,45 @@
+{
+  "id": "042",
+  "nome": "La Candela del Vegliardo",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Candela che brucia senza consumarsi",
+  "proprieta": "Chi veglia alla sua luce non ha bisogno di dormire",
+  "valore": "1000 mo",
+  "storia": "Il vegliardo visse 30 anni senza dormire",
+  "prezzo": "Ogni notte costa 1 anno di vita",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "lifespan_cost",
+      "costPerUse": "1_anno_vita_per_notte",
+      "totalYearsLost": 0,
+      "effectDescription": "Veglia eterna, vita breve"
+    },
+    "hooks": [],
+    "macros": ["lightCandle"],
+    "ui_config": {
+      "showCost": true,
+      "costWarning": "⚠️ ATTENZIONE: Ogni notte costa 1 ANNO DI VITA!",
+      "showTotal": true,
+      "totalText": "Anni di vita persi: {total}",
+      "confirmDialog": true
+    },
+    "narrative_reminders": [
+      "Chi veglia alla luce della candela NON ha bisogno di dormire",
+      "Nessuna stanchezza o esaustione mentre la candela brucia",
+      "Ogni NOTTE (8h) di veglia costa 1 ANNO di vita",
+      "La perdita è permanente e non recuperabile",
+      "Il vegliardo originale visse 30 anni senza dormire (perse 30 anni)",
+      "La candela brucia eternamente senza consumarsi",
+      "Ottimo per emergenze o veglie importanti",
+      "MORTALE se usata abitualmente",
+      "DM: tracciare anni persi per calcolare morte naturale anticipata"
+    ]
+  },
+  "img": "icons/sundries/lights/candle-pillar-red.webp"
+}

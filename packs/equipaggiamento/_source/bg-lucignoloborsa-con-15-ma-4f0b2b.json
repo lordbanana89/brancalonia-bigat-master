@@ -1,0 +1,58 @@
+{
+  "_id": "Lr2GZRfuHwSwD0x6",
+  "_key": "!item!bg-lucignoloborsa-con-15-ma-4f0b2b",
+  "name": "Borsa con 15 ma",
+  "type": "equipment",
+  "img": "icons/containers/bags/sack-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Borsa con 15 ma - Equipaggiamento iniziale del background lucignolo.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "capacity": {
+      "type": "weight",
+      "value": 30
+    },
+    "currency": {
+      "cp": 0,
+      "sp": 150,
+      "ep": 0,
+      "gp": 0,
+      "pp": 0
+    },
+    "attunement": "",
+    "armor": {
+      "type": "trinket",
+      "value": null,
+      "dex": null
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "lucignolo"
+    }
+  }
+}

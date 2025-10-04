@@ -1,0 +1,106 @@
+{
+  "_id": "Ot4awt6F31DrGt65",
+  "_key": "!tables!Ot4awt6F31DrGt65",
+  "name": "Impresario - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "m9MDGbddxMfK7qeu",
+      "type": 0,
+      "text": "Sono geloso di chi possiede un vero talento.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!m9MDGbddxMfK7qeu"
+    },
+    {
+      "_id": "FwIi0UDnDXTV3Qq6",
+      "type": 0,
+      "text": "Sono un truffatore che usa gli altri per il proprio tornaconto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!FwIi0UDnDXTV3Qq6"
+    },
+    {
+      "_id": "f0aocDSf1AEwJPjG",
+      "type": 0,
+      "text": "Sono un visionario irresponsabile e faccio sempre il passo più lungo della gamba.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!f0aocDSf1AEwJPjG"
+    },
+    {
+      "_id": "1TV9mjQY6UYjKuxL",
+      "type": 0,
+      "text": "Penso solo allo spettacolo e ai guadagni.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!1TV9mjQY6UYjKuxL"
+    },
+    {
+      "_id": "4ylQBMnptKO2BLgV",
+      "type": 0,
+      "text": "Pretendo il massimo dagli altri ma io faccio ben poco per loro.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!4ylQBMnptKO2BLgV"
+    },
+    {
+      "_id": "hMZWc9P97WWaMgC7",
+      "type": 0,
+      "text": "Ho manie di grandezza e di controllo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!hMZWc9P97WWaMgC7"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "impresario",
+      "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

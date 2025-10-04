@@ -1,0 +1,20 @@
+{
+  "id": "arma-base-002",
+  "nome": "Lingua del Mattatore",
+  "categoria": "arma",
+  "sottotipo": "mischia",
+  "costo": "4 mo",
+  "danni": "1d4 taglienti",
+  "peso": "1.5 kg",
+  "proprieta": ["Accurata", "Portata", "Speciale"],
+  "descrizione": "Frusta lunga in cuoio usata dai mattatori di Penumbria per domare bestie e compiere acrobazie.",
+  "note_meccaniche": "Vantaggio alle prove di Atletica o Acrobazia quando usata come supporto; consente di usare Addestrare Animali al posto di Intimidire contro bestie.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "estratto_da": "manuale_brancalonia.txt",
+    "stato": "da_validare"
+  }
+}

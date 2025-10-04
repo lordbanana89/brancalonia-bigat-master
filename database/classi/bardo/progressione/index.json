@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione Bardo",
+  "descrizione": "Tabella di progressione per la classe Bardo con bonus competenza, slot incantesimo e privilegi per livello.",
+  "fonte": "Manuale del Giocatore p.51-56",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione-bardo",
+      "nome": "Tabella Progressione Bardo",
+      "file": "progressione.json"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-013",
+  "nome": "Arco Corto",
+  "categoria": "arma_standard",
+  "tipo": "semplice_distanza",
+  "costo": "25 mo",
+  "danni": "1d6 perforanti",
+  "proprieta": [
+    "Munizioni (24/96 m)",
+    "Due Mani"
+  ],
+  "peso": "0.9 kg",
+  "descrizione": "Arco leggero in legno flessibile, adatto a cacciatori e briganti.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

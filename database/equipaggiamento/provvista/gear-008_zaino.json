@@ -1,0 +1,15 @@
+{
+  "id": "gear-008",
+  "nome": "Zaino",
+  "categoria": "provvista_avventuriera",
+  "costo": "2 mo",
+  "peso": "2.5 kg",
+  "descrizione": "Contiene fino a 30 kg di equipaggiamento; ha cinghie per appendere oggetti.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

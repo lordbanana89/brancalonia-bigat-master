@@ -1,0 +1,106 @@
+{
+  "_id": "10JcVrQVTvsqKVFq",
+  "_key": "!tables!10JcVrQVTvsqKVFq",
+  "name": "Fuggitivo - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "6KGUL2HXDvMv9S85",
+      "type": 0,
+      "text": "Solidarietà (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!6KGUL2HXDvMv9S85"
+    },
+    {
+      "_id": "pEq7o2ZzB0oBHNVt",
+      "type": 0,
+      "text": "Giustizia per tutti (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!pEq7o2ZzB0oBHNVt"
+    },
+    {
+      "_id": "Ow4HpdH1E4r1Rr9P",
+      "type": 0,
+      "text": "Libertà (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!Ow4HpdH1E4r1Rr9P"
+    },
+    {
+      "_id": "Spw5JqusmUt6DVwk",
+      "type": 0,
+      "text": "Indifferenza (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!Spw5JqusmUt6DVwk"
+    },
+    {
+      "_id": "3aMnJWbHd5ZtzQAr",
+      "type": 0,
+      "text": "Buon senso (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!3aMnJWbHd5ZtzQAr"
+    },
+    {
+      "_id": "zonnutavOVFvLDKC",
+      "type": 0,
+      "text": "Ambizione di redimersi (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!zonnutavOVFvLDKC"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "fuggitivo",
+      "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

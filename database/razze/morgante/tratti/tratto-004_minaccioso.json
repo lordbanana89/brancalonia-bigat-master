@@ -1,0 +1,10 @@
+{
+  "id": "race-morgante-tratto-minaccioso",
+  "nome": "Minaccioso",
+  "categoria": "brancalonia",
+  "dettagli": {
+    "descrizione": "Competenza in Intimidire",
+    "meccanica": "system.skills.itm.value = 1"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

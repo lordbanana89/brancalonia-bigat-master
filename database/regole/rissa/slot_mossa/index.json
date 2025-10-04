@@ -1,0 +1,13 @@
+{
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione",
+      "nome": "Progressione",
+      "file": "progressione.json"
+    }
+  ]
+}

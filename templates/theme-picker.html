@@ -1,0 +1,185 @@
+<form class="branca-theme-picker-form">
+  <div class="form-group">
+    <label for="theme-preset">Tema Predefinito</label>
+    <select name="preset" id="theme-preset">
+      {{#each presets}}
+      <option value="{{@key}}" {{#if (eq @key ../current)}}selected{{/if}}>{{this.name}}</option>
+      {{/each}}
+    </select>
+    <p class="notes">{{lookup presets current 'description'}}</p>
+  </div>
+
+  <h3 class="branca-title">Personalizzazione Colori</h3>
+
+  <div class="color-grid">
+    <div class="color-group">
+      <h4>Colori Principali</h4>
+      <div class="color-input">
+        <label>Primario</label>
+        <input type="color" data-color="primary" value="{{lookup (lookup presets current 'colors') 'primary'}}">
+      </div>
+      <div class="color-input">
+        <label>Secondario</label>
+        <input type="color" data-color="secondary" value="{{lookup (lookup presets current 'colors') 'secondary'}}">
+      </div>
+      <div class="color-input">
+        <label>Accento</label>
+        <input type="color" data-color="accent" value="{{lookup (lookup presets current 'colors') 'accent'}}">
+      </div>
+    </div>
+
+    <div class="color-group">
+      <h4>Sfondi</h4>
+      <div class="color-input">
+        <label>Sfondo</label>
+        <input type="color" data-color="background" value="{{lookup (lookup presets current 'colors') 'background'}}">
+      </div>
+      <div class="color-input">
+        <label>Superficie</label>
+        <input type="color" data-color="surface" value="{{lookup (lookup presets current 'colors') 'surface'}}">
+      </div>
+      <div class="color-input">
+        <label>Bordo</label>
+        <input type="color" data-color="border" value="{{lookup (lookup presets current 'colors') 'border'}}">
+      </div>
+    </div>
+
+    <div class="color-group">
+      <h4>Testo</h4>
+      <div class="color-input">
+        <label>Testo Chiaro</label>
+        <input type="color" data-color="text" value="{{lookup (lookup presets current 'colors') 'text'}}">
+      </div>
+      <div class="color-input">
+        <label>Testo Scuro</label>
+        <input type="color" data-color="textDark" value="{{lookup (lookup presets current 'colors') 'textDark'}}">
+      </div>
+      <div class="color-input">
+        <label>Evidenziazione</label>
+        <input type="color" data-color="highlight" value="{{lookup (lookup presets current 'colors') 'highlight'}}">
+      </div>
+    </div>
+
+    <div class="color-group">
+      <h4>Stati</h4>
+      <div class="color-input">
+        <label>Errore</label>
+        <input type="color" data-color="error" value="{{lookup (lookup presets current 'colors') 'error'}}">
+      </div>
+      <div class="color-input">
+        <label>Successo</label>
+        <input type="color" data-color="success" value="{{lookup (lookup presets current 'colors') 'success'}}">
+      </div>
+      <div class="color-input">
+        <label>Avviso</label>
+        <input type="color" data-color="warning" value="{{lookup (lookup presets current 'colors') 'warning'}}">
+      </div>
+      <div class="color-input">
+        <label>Info</label>
+        <input type="color" data-color="info" value="{{lookup (lookup presets current 'colors') 'info'}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-section">
+    <h3 class="branca-title">Anteprima</h3>
+    <div class="preview-box">
+      <div class="preview-header">Finestra di Esempio</div>
+      <div class="preview-content">
+        <p>Questo è un esempio di come apparirà il tema selezionato.</p>
+        <button class="preview-button">Bottone di Esempio</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<style>
+  .branca-theme-picker-form {
+    padding: 1rem;
+  }
+
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .color-group {
+    background: var(--branca-surface);
+    border: 1px solid var(--branca-border);
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+
+  .color-group h4 {
+    color: var(--branca-accent);
+    font-family: var(--branca-font-secondary);
+    margin: 0 0 0.5rem 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .color-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  .color-input label {
+    font-size: 12px;
+    color: var(--branca-text);
+  }
+
+  .color-input input[type="color"] {
+    width: 50px;
+    height: 30px;
+    border: 2px solid var(--branca-border);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .preview-section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--branca-border);
+  }
+
+  .preview-box {
+    background: var(--branca-surface);
+    border: 2px solid var(--branca-border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .preview-header {
+    background: var(--branca-gradient-primary);
+    color: var(--branca-text);
+    padding: 0.5rem;
+    font-family: var(--branca-font-display);
+    text-align: center;
+  }
+
+  .preview-content {
+    padding: 1rem;
+    color: var(--branca-text);
+  }
+
+  .preview-button {
+    background: var(--branca-gradient-primary);
+    border: 2px solid var(--branca-border);
+    color: var(--branca-text);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--branca-font-secondary);
+  }
+
+  .preview-button:hover {
+    background: var(--branca-primary);
+    border-color: var(--branca-accent);
+    color: var(--branca-accent);
+  }
+</style>

@@ -1,0 +1,87 @@
+{
+  "_id": "fdzv2NaTnxEYpUTm",
+  "_key": "!item!feat-bg-ambulante",
+  "name": "Storie della Strada",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p>Quando raccogli informazioni ottieni sempre una diceria aggiuntiva e hai vantaggio nelle prove per percorrere le Strade che non vanno da nessuna parte (Manuale Base p.84).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base p.31",
+    "identifier": "ambulante-privilegio",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Ambulante",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale Base p.31",
+      "tipo": "privilegio-background",
+      "background": "ambulante"
+    }
+  }
+}

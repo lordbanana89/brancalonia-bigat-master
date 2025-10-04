@@ -1,0 +1,42 @@
+{
+  "id": "005",
+  "nome": "I Dadi del Diavolo",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Coppia di dadi d'osso sempre freddi al tatto",
+  "proprieta": "Con doppio 6 vinci sempre la posta, con doppio 1 perdi l'anima",
+  "meccanica": "Se esce doppio 1, il personaggio è maledetto finché non vince una scommessa impossibile",
+  "valore": "666 mo",
+  "storia": "Vinti al Diavolo stesso da un giocatore fortunato",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "narrative_gamble",
+      "cursed": false,
+      "winCondition": "double_6",
+      "loseCondition": "double_1",
+      "curseRemoval": "vinci_scommessa_impossibile",
+      "curseDescription": "Anima vincolata finché non vinci una scommessa impossibile"
+    },
+    "hooks": [],
+    "macros": ["rollDevilDice"],
+    "ui_config": {
+      "showCurseStatus": true,
+      "statusText": {
+        "normal": "⚪ Dadi normali",
+        "cursed": "🔥 ANIMA VINCOLATA! Vinci una scommessa impossibile per liberarti"
+      }
+    },
+    "narrative_reminders": [
+      "Doppio 6 = vittoria automatica della posta in gioco",
+      "Doppio 1 = anima maledetta fino a scommessa impossibile vinta",
+      "Il DM decide cosa costituisce 'scommessa impossibile'",
+      "Usare con estrema cautela in situazioni importanti"
+    ]
+  },
+  "img": "icons/sundries/gaming/dice-runed-brown.webp"
+}

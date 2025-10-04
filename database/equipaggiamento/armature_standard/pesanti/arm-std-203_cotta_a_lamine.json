@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-203",
+  "nome": "Cotta a Lamine",
+  "categoria": "armatura_standard",
+  "tipo": "pesante",
+  "costo": "200 mo",
+  "classe_armatura": "17",
+  "bonus_ca": null,
+  "forza_minima": "15",
+  "furtivita": "Svantaggio",
+  "peso": "27.2 kg",
+  "descrizione": "Piastre metalliche lunghe sovrapposte e fissate su cuoio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

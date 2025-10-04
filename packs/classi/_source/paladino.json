@@ -1,0 +1,546 @@
+{
+  "_id": "GT6giFbutUPyX4ZP",
+  "_key": "!item!class-paladino-276y9b",
+  "name": "Paladino",
+  "type": "class",
+  "img": "icons/equipment/shield/heater-steel-sword.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Campione giurato che incarna ideali sacri, combina arti marziali e potere divino.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.82",
+    "identifier": "paladino",
+    "levels": 20,
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "BQm8TOcYQqJnrdqd",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "Punti Ferita"
+      },
+      {
+        "_id": "s42jrl6pavjulrfs",
+        "type": "SpellcastingValue",
+        "configuration": {},
+        "value": {
+          "2": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            2,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            2,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            2,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            2,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            0,
+            0
+          ],
+          "12": [
+            4,
+            3,
+            3,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            1,
+            0
+          ],
+          "14": [
+            4,
+            3,
+            3,
+            1,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            2,
+            0
+          ],
+          "16": [
+            4,
+            3,
+            3,
+            2,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ]
+        },
+        "title": "Slot Incantesimi"
+      },
+      {
+        "_id": "1b4cf6c4f5b84ae9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.79276b5885728f2e",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Senso Divino",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "24224c72c87d4485",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.6421a06bfd74ca9c",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 1,
+        "title": "Imposizione delle Mani",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "64b105f609bc466a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.2ae0a3d0ba4ab90e",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Stile di Combattimento",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "878c633bc4f641df",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.731b1e49a56d86a5",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Incantesimi",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "d17f2fed560d4bb4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.319ef55033d38e24",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 2,
+        "title": "Colpo Divino",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "521c9819ec724a53",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.c17f85cbb51c245c",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Salute Divina",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "c51bfc891a954487",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.a118dcb4f0d0c616",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Giuramento Sacro",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "uAuQyXt7MjGKbNqF",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "a22e079c24ba46f5",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.d62b453f6e41671d",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 5,
+        "title": "Attacco Extra",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "8ab1dd8bc50f43a2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.2483816d67a5b3ce",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Aura di Protezione",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "bbc67cde8e5c4e5b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.9f01f8412e72de78",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 7,
+        "title": "Privilegio del Giuramento",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "5MbVSRJx3f6xMQE2",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "1e85e5f1a3144b84",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.7f70b3a4b047c119",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 10,
+        "title": "Aura di Coraggio",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "2c16f32f84554c04",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.3da60dc44bd2df33",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 11,
+        "title": "Colpo Divino Migliorato",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "h8glfdBwy4FZrNkF",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "87878c37b1b3455e",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.c8d8b13ba9029d78",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 14,
+        "title": "Tocco Purificatore",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "7452b6a70fe34b66",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.725ff36f6056b62b",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 15,
+        "title": "Privilegio del Giuramento",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "9vflYVLS5IwuzW70",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "d803fc66fe484df3",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.b2c436e139afb88f",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 18,
+        "title": "Miglioramenti dell'Aura",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "h7E7YVUiOFshNB5a",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {}
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Aumento Caratteristica"
+      },
+      {
+        "_id": "42a4d41dc4d54d5a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.5c7e2c33fa8d26d7",
+              "optional": false
+            }
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 20,
+        "title": "Privilegio del Giuramento",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ],
+    "saves": [
+      "wis",
+      "cha"
+    ],
+    "skills": {
+      "number": 2,
+      "choices": [
+        "ath",
+        "ins",
+        "itm",
+        "med",
+        "per",
+        "rel"
+      ]
+    },
+    "spellcasting": {
+      "progression": "half",
+      "ability": "cha"
+    },
+    "hd": {
+      "denomination": "d10",
+      "spent": 0
+    },
+    "primaryAbility": [
+      "str",
+      "cha"
+    ],
+    "startingEquipment": [],
+    "hitDice": "d10"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Manuale del Giocatore p.82",
+      "tipo": "classe"
+    }
+  }
+}

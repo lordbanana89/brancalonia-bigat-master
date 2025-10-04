@@ -1,0 +1,42 @@
+{
+  "id": "002",
+  "nome": "La Bisaccia del Pellegrino Morto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Borsa di tela consumata che non si riempie mai",
+  "proprieta": "Contiene sempre 1 razione di cibo e 1 fiasca d'acqua ogni alba",
+  "maledizione": "Il cibo sa di cenere e l'acqua di lacrime",
+  "valore": "200 mo",
+  "storia": "Il pellegrino morì di fame con la bisaccia piena",
+  "maledizione_specifica": "Il cibo sa di cenere e l'acqua di lacrime",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "daily_resource",
+      "resetPeriod": "dawn",
+      "lastReset": 0,
+      "generates": {
+        "ration": 1,
+        "waterskin": 1
+      },
+      "flavorText": "Il cibo sa di cenere e l'acqua di lacrime"
+    },
+    "hooks": [],
+    "macros": ["generateDailySupplies"],
+    "ui_config": {
+      "showLastReset": true,
+      "autoGenerate": true,
+      "notifyOnReset": true
+    },
+    "narrative_reminders": [
+      "Ogni alba si generano automaticamente 1 razione e 1 fiasca",
+      "Il sapore è orribile ma il cibo è nutriente",
+      "Non occupa spazio extra nell'inventario"
+    ]
+  },
+  "img": "icons/containers/bags/satchel-leather-brown.webp"
+}

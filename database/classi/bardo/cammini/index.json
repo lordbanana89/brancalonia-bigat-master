@@ -1,0 +1,18 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "class-bardo-collegio-conoscenza",
+      "nome": "Class Bardo Collegio Conoscenza",
+      "file": "class-bardo-collegio-conoscenza.json"
+    },
+    {
+      "id": "class-bardo-collegio-valore",
+      "nome": "Class Bardo Collegio Valore",
+      "file": "class-bardo-collegio-valore.json"
+    }
+  ]
+}

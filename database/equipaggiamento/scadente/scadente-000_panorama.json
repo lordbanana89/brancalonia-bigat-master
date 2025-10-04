@@ -1,0 +1,16 @@
+{
+  "id": "scadente-000",
+  "nome": "Panoramica Equipaggiamento Scadente",
+  "categoria": "equipaggiamento_scadente",
+  "descrizione": "Sintesi delle regole generali per gli oggetti e servizi scadenti nel Regno di Taglia.",
+  "costo_relativo": "1/10 del prezzo standard per oggetti equivalenti",
+  "dettagli": "Gli oggetti scadenti sono realizzati male, maleodoranti e pronti a rompersi. Sono diffusi tra le canaglie perché più economici, ma comportano rischi e figuracce.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "62-63"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gear-cloth-004",
+  "nome": "Guardaroba da Bettola",
+  "categoria": "oggetto_comune",
+  "sottotipo": "abbigliamento",
+  "costo": "1 mo",
+  "peso": "1 kg",
+  "descrizione": "Camicia aperta, pantaloni larghi e fascia per stare comodi in taverna.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

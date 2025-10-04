@@ -1,0 +1,23 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento",
+      "nome": "Incantesimi del Giuramento",
+      "file": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento.json"
+    },
+    {
+      "id": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi",
+      "nome": "Incanalare Divinità Proteggere I Bisognosi",
+      "file": "cavaliere_errante_paladino-livello_3-proteggere_bisognosi.json"
+    },
+    {
+      "id": "cavaliere_errante_paladino-livello_3-ispirare_compagni",
+      "nome": "Incanalare Divinità Ispirare I Compagni",
+      "file": "cavaliere_errante_paladino-livello_3-ispirare_compagni.json"
+    }
+  ]
+}

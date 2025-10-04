@@ -1,0 +1,51 @@
+{
+  "id": "015",
+  "nome": "La Pipa del Filosofo",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Pipa elaborata che fuma da sola",
+  "proprieta": "+2 Intelligenza mentre si fuma, dura 10 minuti",
+  "valore": "450 mo",
+  "storia": "Il filosofo scoprì la verità ultima e impazzì",
+  "effetto_collaterale": "-2 Costituzione per 1 ora dopo",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.abilities.int.value",
+        "mode": 2,
+        "value": "2",
+        "priority": 20,
+        "duration": {
+          "seconds": 600
+        }
+      }
+    ],
+    "active_effects_maledizione": [
+      {
+        "key": "system.abilities.con.value",
+        "mode": 2,
+        "value": "-2",
+        "priority": 20,
+        "duration": {
+          "seconds": 3600
+        }
+      }
+    ],
+    "tracking_flags": {
+      "trackingType": "timed_buff_debuff",
+      "buffDuration": 600,
+      "debuffDuration": 3600,
+      "debuffDelay": 600
+    },
+    "hooks": [],
+    "macros": ["smokePipa"],
+    "ui_config": {
+      "showDuration": true,
+      "warningText": "Effetto collaterale -2 CON per 1h dopo"
+    }
+  },
+  "img": "icons/tools/cooking/pipe-brown.webp"
+}

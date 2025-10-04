@@ -1,0 +1,21 @@
+{
+  "_id": "Beejup0rXHN7j6V2",
+  "_key": "!journal!descrizione17a85c",
+  "name": "Regola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Manuale Base"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

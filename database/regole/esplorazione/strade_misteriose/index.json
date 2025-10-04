@@ -1,0 +1,31 @@
+{
+  "categoria": "Regole",
+  "descrizione": "Generatore a step per sentieri misteriosi incontrati durante i viaggi.",
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "86-87"
+  },
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "strade-accesso",
+      "nome": "Strade Accesso",
+      "file": "strade-accesso.json"
+    },
+    {
+      "id": "strade-destinazioni",
+      "nome": "Strade Destinazioni",
+      "file": "strade-destinazioni.json"
+    },
+    {
+      "id": "strade-incontri",
+      "nome": "Strade Incontri",
+      "file": "strade-incontri.json"
+    },
+    {
+      "id": "strade-tipo",
+      "nome": "Strade Tipo",
+      "file": "strade-tipo.json"
+    }
+  ]
+}

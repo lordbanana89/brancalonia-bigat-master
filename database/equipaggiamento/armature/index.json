@@ -1,0 +1,13 @@
+{
+  "categoria": "Armature",
+  "fonte": "Manuale Base p.64-65",
+  "descrizione": "Nuovo scudo cerimoniale adottato nel Calcio Draconiano",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "armatura-base-001",
+      "nome": "Scudetto",
+      "file": "001_scudetto.json"
+    }
+  ]
+}

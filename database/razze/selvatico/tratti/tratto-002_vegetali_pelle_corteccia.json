@@ -1,0 +1,10 @@
+{
+  "id": "race-selvatico-tratto-vegetali_pelle_corteccia",
+  "nome": "Pelle Corteccia",
+  "categoria": "vegetali",
+  "dettagli": {
+    "descrizione": "CA base = 13 + Destrezza quando senza armatura",
+    "meccanica": "CA naturale 13"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "cavaliere_errante_paladino-livello_3-incantesimi_giuramento",
+  "livello": 3,
+  "nome": "Incantesimi del Giuramento",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.27",
+  "descrizione": "Gli ideali della Cavalleresca Erranza ti concedono formule cavalleresche utili a guidare compagni e cavalcature. Questi incantesimi sono sempre preparati e non contano nel numero di incantesimi preparati al giorno.",
+  "incantesimi": [
+    {
+      "livello_paladino": 3,
+      "lista": [
+        "Benedizione",
+        "Comando"
+      ]
+    },
+    {
+      "livello_paladino": 5,
+      "lista": [
+        "Passo senza Tracce",
+        "Evoca Cavalcatura"
+      ]
+    }
+  ]
+}

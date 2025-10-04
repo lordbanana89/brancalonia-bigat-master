@@ -1,0 +1,32 @@
+{
+  "id": "benandante_druido-livello_3-incantesimi_circolo",
+  "livello": 3,
+  "nome": "Incantesimi del Circolo",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.21",
+  "descrizione": "Il legame con la Danza Macabra ti concede formule sacre usate dai benandanti per fronteggiare spiriti e fantasime. Gli incantesimi elencati sono sempre considerati preparati e non contano ai fini del limite giornaliero.",
+  "incantesimi": [
+    {
+      "livello": 1,
+      "lista": [
+        "Eroismo",
+        "Protezione dal Bene e dal Male"
+      ]
+    },
+    {
+      "livello": 2,
+      "lista": [
+        "Arma Spirituale",
+        "Ristorare Inferiore"
+      ]
+    },
+    {
+      "livello": 3,
+      "lista": [
+        "Guardiani Spirituali",
+        "Rimuovi Maledizione"
+      ]
+    }
+  ],
+  "note": "Se un incantesimo non compare nella lista da druido, lo consideri comunque un incantesimo da druido quando lo lanci." 
+}

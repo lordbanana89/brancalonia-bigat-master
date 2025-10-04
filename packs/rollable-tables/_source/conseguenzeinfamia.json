@@ -1,0 +1,169 @@
+{
+  "_id": "CVXF1QG6S2rvtWtG",
+  "name": "Conseguenze dell'Infamia",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Conseguenze dell'Infamia",
+  "results": [
+    {
+      "_id": "conseguenze-infamia_0",
+      "type": 0,
+      "text": "Le guardie ti fermano per controlli",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_0"
+    },
+    {
+      "_id": "conseguenze-infamia_1",
+      "type": 0,
+      "text": "I mercanti alzano i prezzi del 20%",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_1"
+    },
+    {
+      "_id": "conseguenze-infamia_2",
+      "type": 0,
+      "text": "La gente ti evita per strada",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_2"
+    },
+    {
+      "_id": "conseguenze-infamia_3",
+      "type": 0,
+      "text": "Vieni cacciato dalle locande rispettabili",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_3"
+    },
+    {
+      "_id": "conseguenze-infamia_4",
+      "type": 0,
+      "text": "Un cacciatore di taglie ti sta cercando",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_4"
+    },
+    {
+      "_id": "conseguenze-infamia_5",
+      "type": 0,
+      "text": "La Chiesa ti nega i servizi",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_5"
+    },
+    {
+      "_id": "conseguenze-infamia_6",
+      "type": 0,
+      "text": "I bambini ti tirano sassi",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_6"
+    },
+    {
+      "_id": "conseguenze-infamia_7",
+      "type": 0,
+      "text": "Nessun lavoro onesto disponibile",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_7"
+    },
+    {
+      "_id": "conseguenze-infamia_8",
+      "type": 0,
+      "text": "Taglia sulla tua testa (10 ducati)",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_8"
+    },
+    {
+      "_id": "conseguenze-infamia_9",
+      "type": 0,
+      "text": "Arrestato appena entri in città",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_9"
+    },
+    {
+      "_id": "conseguenze-infamia_10",
+      "type": 0,
+      "text": "Altri criminali ti rispettano di più",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_10"
+    },
+    {
+      "_id": "conseguenze-infamia_11",
+      "type": 0,
+      "text": "Diventi una leggenda del crimine",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!conseguenze-infamia_11"
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 2000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!conseguenzeinfamia",
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

@@ -1,0 +1,38 @@
+{
+  "id": "006",
+  "nome": "L'Elmo del Cavaliere Codardo",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Elmo lucido che sembra sempre nuovo",
+  "proprieta": "+1 CA ma svantaggio ai TS contro paura",
+  "valore": "300 mo",
+  "storia": "Il cavaliere fuggì da 100 battaglie e morì nel suo letto",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.attributes.ac.bonus",
+        "mode": 2,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [
+      {
+        "key": "flags.dnd5e.disadvantage.save.wis",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "tracking_flags": {
+      "conditionalType": "fear_effects",
+      "description": "Svantaggio solo contro effetti di paura"
+    },
+    "hooks": [],
+    "macros": []
+  },
+  "img": "icons/equipment/head/helm-barbute-tan.webp"
+}

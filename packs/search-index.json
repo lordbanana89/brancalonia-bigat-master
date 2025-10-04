@@ -1,0 +1,4535 @@
+{
+  "items": {
+    "Bastone Ferrato": {
+      "id": "2ikbrBHaUeHddsTr",
+      "pack": "equipaggiamento",
+      "file": "armastd001_bastone_ferrato.json"
+    },
+    "Cammello": {
+      "id": "5UrDwSCjfxtASKpf",
+      "pack": "equipaggiamento",
+      "file": "animal003_cammello.json"
+    },
+    "Borsa con 15 ma": {
+      "id": "Lr2GZRfuHwSwD0x6",
+      "pack": "equipaggiamento",
+      "file": "bg-lucignoloborsa-con-15-ma-4f0b2b.json"
+    },
+    "Carrozza": {
+      "id": "qCc2M1jEe2t3UcP6",
+      "pack": "equipaggiamento",
+      "file": "gear-veh-003_carrozza.json"
+    },
+    "Borsa da Viaggio": {
+      "id": "vnTMv71Jjk9p0prn",
+      "pack": "equipaggiamento",
+      "file": "borsa001.json"
+    },
+    "Monile di Santa Percorrenza": {
+      "id": "2OQKUyiPKDIqWSiH",
+      "pack": "equipaggiamento",
+      "file": "bg-ambulantemonile-di-santa-percorrenza-5b1532.json"
+    },
+    "La Zappa del Contadino Ribelle": {
+      "id": "xqiRAvw6Gzf8PuD8",
+      "pack": "equipaggiamento",
+      "file": "022_la_zappa_del_contadino_ribelle.json"
+    },
+    "Effetti Generici dell'Equipaggiamento Scadente": {
+      "id": "rIGGGbErX1qpIAJn",
+      "pack": "equipaggiamento",
+      "file": "scadente-006_effetti_generici.json"
+    },
+    "Abito comune": {
+      "id": "cyNS2Ke8tFKpwTB5",
+      "pack": "equipaggiamento",
+      "file": "bg-lucignoloabito-comune-51bca6.json"
+    },
+    "Mazza": {
+      "id": "whdPSKDZPj7KPUIk",
+      "pack": "equipaggiamento",
+      "file": "armastd007_mazza.json"
+    },
+    "La Bisaccia del Pellegrino Morto": {
+      "id": "nwlDUQEJ2WA4KavK",
+      "pack": "equipaggiamento",
+      "file": "002_la_bisaccia_del_pellegrino_morto.json"
+    },
+    "Zaino": {
+      "id": "T0U7N6lmYUl8aaHM",
+      "pack": "equipaggiamento",
+      "file": "gear-008_zaino.json"
+    },
+    "Infernet Malebranche": {
+      "id": "9Gg61dtxx7iQ3J2l",
+      "pack": "equipaggiamento",
+      "file": "intruglio-007.json"
+    },
+    "Calamaio di inchiostro nero": {
+      "id": "9Z93Z89BZkdTeBM1",
+      "pack": "equipaggiamento",
+      "file": "bg-azzeccagarbuglicalamaio-di-inchiostro-nero-b058f4.json"
+    },
+    "Borsa": {
+      "id": "dTr4io5F608L7OPF",
+      "pack": "equipaggiamento",
+      "file": "equip-bg-duro-borsa.json"
+    },
+    "Richiamino": {
+      "id": "4zmLlWeVJVDwIeV7",
+      "pack": "equipaggiamento",
+      "file": "intruglio-011.json"
+    },
+    "Zattera": {
+      "id": "Qxg03jmDAKweiqbc",
+      "pack": "equipaggiamento",
+      "file": "gearveh006_zattera.json"
+    },
+    "Ascia a Due Mani": {
+      "id": "UsUwimf5DIxqaBLZ",
+      "pack": "equipaggiamento",
+      "file": "armastd104_ascia_a_due_mani.json"
+    },
+    "Ciondolo di Santa Predatoria": {
+      "id": "eBeDHyK9NJBithcZ",
+      "pack": "equipaggiamento",
+      "file": "bg-durociondolo-di-santa-predatoria-0c7268.json"
+    },
+    "Chiodi da Arrampicata (10)": {
+      "id": "z4pm2UkfIV5IrXW7",
+      "pack": "equipaggiamento",
+      "file": "gear012_chiodi_da_arrampicata_10.json"
+    },
+    "Strumento Musicale (Generico)": {
+      "id": "mP9de0DZ1AEky3aB",
+      "pack": "equipaggiamento",
+      "file": "gearkit005_strumento_musicale_generico.json"
+    },
+    "Bastone": {
+      "id": "UyFcRDlBDfvMaAY6",
+      "pack": "equipaggiamento",
+      "file": "bg-bradobastone-32dd24.json"
+    },
+    "Armature Scadenti": {
+      "id": "FSqjzwTd7GPDGJBa",
+      "pack": "equipaggiamento",
+      "file": "scadente003_armature.json"
+    },
+    "Giavellotto": {
+      "id": "VSzO1hToA021O0wS",
+      "pack": "equipaggiamento",
+      "file": "armastd005_giavellotto.json"
+    },
+    "Abito Comune": {
+      "id": "7exN3sxuzUNhALip",
+      "pack": "equipaggiamento",
+      "file": "gear-cloth-001_abito_comune.json"
+    },
+    "Corda di Seta (15 m)": {
+      "id": "7k5hdbbf7cgKQp5I",
+      "pack": "equipaggiamento",
+      "file": "gear004_corda_di_seta_15_m.json"
+    },
+    "Picca": {
+      "id": "nQtP2ibmEnD1V3cd",
+      "pack": "equipaggiamento",
+      "file": "armastd109_picca.json"
+    },
+    "Dardo": {
+      "id": "xUTU2B35cijccKwX",
+      "pack": "equipaggiamento",
+      "file": "armastd012_dardo.json"
+    },
+    "Borsa con 10 ma": {
+      "id": "FELwbqYUSTe8x5Ve",
+      "pack": "equipaggiamento",
+      "file": "bg-staffettaborsa-con-10-ma-546549.json"
+    },
+    "Sciabola": {
+      "id": "8I62KB7ELzFbTST9",
+      "pack": "equipaggiamento",
+      "file": "armastd111_sciabola.json"
+    },
+    "Spadone": {
+      "id": "hl2rgduCIxD8mHFV",
+      "pack": "equipaggiamento",
+      "file": "armastd105_spadone.json"
+    },
+    "L'Elmo del Cavaliere Codardo": {
+      "id": "uEK2sqROwiarlcLE",
+      "pack": "equipaggiamento",
+      "file": "item_006_lelmo_del_cavaliere_codardo.json"
+    },
+    "Dotazione da Esploratore": {
+      "id": "dTvF8o1THHG3O1PL",
+      "pack": "equipaggiamento",
+      "file": "gearkit002_dotazione_da_esploratore.json"
+    },
+    "Alabarda": {
+      "id": "PcX1LJRXe5pvbJAS",
+      "pack": "equipaggiamento",
+      "file": "armastd103_alabarda.json"
+    },
+    "L'Occhio di Vetro del Pirata": {
+      "id": "Id5MQ2aLW6EoCKSj",
+      "pack": "equipaggiamento",
+      "file": "013_locchio_di_vetro_del_pirata.json"
+    },
+    "Gancio da Arrampicata": {
+      "id": "hguaOaBf6DUGhU5B",
+      "pack": "equipaggiamento",
+      "file": "gear010_gancio_da_arrampicata.json"
+    },
+    "Martello Leggero": {
+      "id": "hJNUSqN76cFOCiWb",
+      "pack": "equipaggiamento",
+      "file": "armastd006_martello_leggero.json"
+    },
+    "Armi Scadenti": {
+      "id": "OwR3XcwrMWkaCUhi",
+      "pack": "equipaggiamento",
+      "file": "scadente002_armi.json"
+    },
+    "Scudo": {
+      "id": "eiBovMAp5Sacqp1b",
+      "pack": "equipaggiamento",
+      "file": "armstd301_scudo.json"
+    },
+    "Patenti di Nobiltà": {
+      "id": "zTGyQwXiprtiWgd3",
+      "pack": "equipaggiamento",
+      "file": "oggetto-contraff-004_patenti_nobilta.json"
+    },
+    "Grattachecca del Cocito": {
+      "id": "wfcnxhK3kZUC0EuF",
+      "pack": "equipaggiamento",
+      "file": "intruglio006.json"
+    },
+    "Simbolo sacro d'oro": {
+      "id": "HhN5Zu70OpmVfKHt",
+      "pack": "equipaggiamento",
+      "file": "bg-prelatosimbolo-sacro-doro-c2687a.json"
+    },
+    "Strumento musicale a scelta": {
+      "id": "5JETK1bFZDv9Y2bD",
+      "pack": "equipaggiamento",
+      "file": "bg-innamoratostrumento-musicale-a-scelta-910404.json"
+    },
+    "Il Bastone del Mendicante Re": {
+      "id": "rHdB6qKE5FThK5Tf",
+      "pack": "equipaggiamento",
+      "file": "024_il_bastone_del_mendicante_re.json"
+    },
+    "Presenzio": {
+      "id": "DqFQrBvTyWQGqZTk",
+      "pack": "equipaggiamento",
+      "file": "intruglio010.json"
+    },
+    "Arco Lungo": {
+      "id": "OGElLESfFNdajW5f",
+      "pack": "equipaggiamento",
+      "file": "armastd204_arco_lungo.json"
+    },
+    "Reazioni Sociali all'Equipaggiamento Scadente": {
+      "id": "yQ1yVpyFgk7FtERE",
+      "pack": "equipaggiamento",
+      "file": "scadente-007_reazioni_sociali.json"
+    },
+    "Otre": {
+      "id": "Osc8Zq2F9wJjsHUS",
+      "pack": "equipaggiamento",
+      "file": "gear-002_otre.json"
+    },
+    "Corazza di Scaglie": {
+      "id": "wNiZtRG1fM7r6t4L",
+      "pack": "equipaggiamento",
+      "file": "armstd103_corazza_di_scaglie.json"
+    },
+    "Abito di buona fattura": {
+      "id": "xApcoSHueFz8hqDs",
+      "pack": "equipaggiamento",
+      "file": "equip-bg-impresario-abito.json"
+    },
+    "Documenti Falsi": {
+      "id": "tuYfZ4GNmY5zEcvC",
+      "pack": "equipaggiamento",
+      "file": "oggettocontraff001_documenti_falsi.json"
+    },
+    "Asino o Mulo": {
+      "id": "qs1fIFa8cuKIgo8W",
+      "pack": "equipaggiamento",
+      "file": "animal-001_asino_o_mulo.json"
+    },
+    "Torcia": {
+      "id": "GgjMtfD3krYCr7VE",
+      "pack": "equipaggiamento",
+      "file": "gear005_torcia.json"
+    },
+    "Il Naso di Pinocchio": {
+      "id": "g6dngqCAqkOa22wC",
+      "pack": "equipaggiamento",
+      "file": "012_il_naso_di_pinocchio.json"
+    },
+    "Oggetti di Pregio Falsi": {
+      "id": "5qVUfVoFdwNbfvSa",
+      "pack": "equipaggiamento",
+      "file": "oggettocontraff003_oggetti_pregio_falsi.json"
+    },
+    "Libro di preghiere": {
+      "id": "aXUvdrROHqwppIMv",
+      "pack": "equipaggiamento",
+      "file": "bg-prelatolibro-di-preghiere-091daa.json"
+    },
+    "Il Pugnale del Traditore": {
+      "id": "fOpIDUkGFEofjEKk",
+      "pack": "equipaggiamento",
+      "file": "item_033_il_pugnale_del_traditore.json"
+    },
+    "La Veste del Monaco Apostata": {
+      "id": "fNXu6CMeEm0pEdRO",
+      "pack": "equipaggiamento",
+      "file": "038_la_veste_del_monaco_apostata.json"
+    },
+    "Passaggio in Carrozza (giorno)": {
+      "id": "9qiSu0abuVR1u0QY",
+      "pack": "equipaggiamento",
+      "file": "gearserv006_passaggio_in_carrozza_giorno.json"
+    },
+    "La Pipa del Filosofo": {
+      "id": "v7OxCGUJmCiPIA9U",
+      "pack": "equipaggiamento",
+      "file": "015_la_pipa_del_filosofo.json"
+    },
+    "Spada Corta": {
+      "id": "ewA8cQM1u9meiM6Y",
+      "pack": "equipaggiamento",
+      "file": "spada001.json"
+    },
+    "Pennino": {
+      "id": "3HH1aSKQIArmF6Gt",
+      "pack": "equipaggiamento",
+      "file": "bg-innamoratopennino-c29a33.json"
+    },
+    "La Ruota della Tortura": {
+      "id": "gAe3x2VXYx3W4G8R",
+      "pack": "equipaggiamento",
+      "file": "034_la_ruota_della_tortura.json"
+    },
+    "Pergamena": {
+      "id": "maLNGZf4nls1gfdZ",
+      "pack": "equipaggiamento",
+      "file": "bg-azzeccagarbuglipergamena-683622.json"
+    },
+    "Slitta": {
+      "id": "K1vuxFP0GCyEUy8j",
+      "pack": "equipaggiamento",
+      "file": "gearveh004_slitta.json"
+    },
+    "Serie di dadi o mazzo di minchiate": {
+      "id": "vh93SezPxo0YUsxe",
+      "pack": "equipaggiamento",
+      "file": "bg-staffettaserie-di-dadi-o-mazzo-di-minchiate-73a29f.json"
+    },
+    "Maglia ad Anelli": {
+      "id": "25eQZ2mcQ9vtPrc2",
+      "pack": "equipaggiamento",
+      "file": "armstd201_maglia_ad_anelli.json"
+    },
+    "La Spada Spezzata dell'Eroe": {
+      "id": "wSsWbMdlgRKEkD2c",
+      "pack": "equipaggiamento",
+      "file": "item_050_la_spada_spezzata_delleroe.json"
+    },
+    "Pedaggio Stradale": {
+      "id": "jGgqrIiAA6Y6wDk0",
+      "pack": "equipaggiamento",
+      "file": "gearserv008_pedaggio_stradale.json"
+    },
+    "Pony": {
+      "id": "PI4gobEOjDJYehvp",
+      "pack": "equipaggiamento",
+      "file": "animal006_pony.json"
+    },
+    "Alloggio Confortevole (notte)": {
+      "id": "XXTzIVVkuVSVzczo",
+      "pack": "equipaggiamento",
+      "file": "gearserv004_alloggio_confortevole_notte.json"
+    },
+    "Spada Lunga": {
+      "id": "XNPhTFIkbad1NtZC",
+      "pack": "equipaggiamento",
+      "file": "armastd107_spada_lunga.json"
+    },
+    "Il Tamburo di Guerra Silenzioso": {
+      "id": "pw4yMrvJo7l3Dfbn",
+      "pack": "equipaggiamento",
+      "file": "036_il_tamburo_di_guerra_silenzioso.json"
+    },
+    "Tridente": {
+      "id": "M4oDVkLSK4uHlEKN",
+      "pack": "equipaggiamento",
+      "file": "armastd113_tridente.json"
+    },
+    "Cotta a Lamine": {
+      "id": "qY6BvPfocb0Skrrp",
+      "pack": "equipaggiamento",
+      "file": "armstd203_cotta_a_lamine.json"
+    },
+    "Rete": {
+      "id": "2FHZI78cxcicDQzJ",
+      "pack": "equipaggiamento",
+      "file": "armastd205_rete.json"
+    },
+    "Carro": {
+      "id": "ZS3ZpgvYKoPP6Ekv",
+      "pack": "equipaggiamento",
+      "file": "gear-veh-002_carro.json"
+    },
+    "Barca a Remi": {
+      "id": "lw3AReSsMpjhQVFP",
+      "pack": "equipaggiamento",
+      "file": "gearveh005_barca_a_remi.json"
+    },
+    "Schiavona": {
+      "id": "mu0o1dpDgGpHD7Ph",
+      "pack": "equipaggiamento",
+      "file": "003_schiavona.json"
+    },
+    "Abito da viaggiatore": {
+      "id": "RpQ33TPraBX7EIhS",
+      "pack": "equipaggiamento",
+      "file": "equip-bg-ambulante-abito.json"
+    },
+    "Vesti da sacerdote": {
+      "id": "s2As6VVwFkFfEtfD",
+      "pack": "equipaggiamento",
+      "file": "bg-prelatovesti-da-sacerdote-2d600b.json"
+    },
+    "Armatura di Cuoio Borchiato": {
+      "id": "bRZGGxkqFPVGfR5a",
+      "pack": "equipaggiamento",
+      "file": "armstd003_armatura_di_cuoio_borchiato.json"
+    },
+    "Utensili da Cucina da Campo": {
+      "id": "QZkxlBdEXxqzQVCf",
+      "pack": "equipaggiamento",
+      "file": "gearkit007_utensili_da_cucina_da_campo.json"
+    },
+    "Borsa da Spezie": {
+      "id": "IvULT5U6syJxJhKR",
+      "pack": "equipaggiamento",
+      "file": "gearkit006_borsa_da_spezie.json"
+    },
+    "Il Violino del Diavolo": {
+      "id": "ItTwQuho20bWtHTV",
+      "pack": "equipaggiamento",
+      "file": "021_il_violino_del_diavolo.json"
+    },
+    "Grande Randello": {
+      "id": "vUGRQdT41oe5UkpW",
+      "pack": "equipaggiamento",
+      "file": "armastd003_grande_randello.json"
+    },
+    "Acquamorte": {
+      "id": "RXgRBwaUfSOK3tT5",
+      "pack": "equipaggiamento",
+      "file": "intruglio001.json"
+    },
+    "Armatura di Cuoio": {
+      "id": "uaRb9KQB55nGEbqF",
+      "pack": "equipaggiamento",
+      "file": "armstd002_armatura_di_cuoio.json"
+    },
+    "L'Anello Spezzato": {
+      "id": "gBIT5dPcXwSa74hM",
+      "pack": "equipaggiamento",
+      "file": "040_lanello_spezzato.json"
+    },
+    "Cavallo da Guerra": {
+      "id": "vJQODnbZaHAD8Egd",
+      "pack": "equipaggiamento",
+      "file": "animal005_cavallo_da_guerra.json"
+    },
+    "Panoramica Equipaggiamento Scadente": {
+      "id": "9P0WhRaO1JgRsyp9",
+      "pack": "equipaggiamento",
+      "file": "scadente-000_panorama.json"
+    },
+    "Abito da Viaggio": {
+      "id": "AQDFvaBJldUYtzZf",
+      "pack": "equipaggiamento",
+      "file": "gear-cloth-002_abito_da_viaggio.json"
+    },
+    "Abito Signorile": {
+      "id": "OcxE3oFJD6Kay5vT",
+      "pack": "equipaggiamento",
+      "file": "gear-cloth-003_abito_signorile.json"
+    },
+    "L'Ultimo Chiodo della Croce": {
+      "id": "ijAFjMTlfTKC2aFF",
+      "pack": "equipaggiamento",
+      "file": "020_lultimo_chiodo_della_croce.json"
+    },
+    "Flagello": {
+      "id": "bNr4DsTu8AIC55Mb",
+      "pack": "equipaggiamento",
+      "file": "armastd102_flagello.json"
+    },
+    "Pasto Ricco": {
+      "id": "bOlY2sYPERCuQs7E",
+      "pack": "equipaggiamento",
+      "file": "gear-serv-002_pasto_ricco.json"
+    },
+    "Falce": {
+      "id": "ehrBWTtlkd0D91V5",
+      "pack": "equipaggiamento",
+      "file": "armastd009_falce.json"
+    },
+    "Coperta da Viaggio": {
+      "id": "1sg9eFLiYJaFOdsG",
+      "pack": "equipaggiamento",
+      "file": "gear-015_coperta_da_viaggio.json"
+    },
+    "Piccone da Guerra": {
+      "id": "GO9F01th0cDlocja",
+      "pack": "equipaggiamento",
+      "file": "armastd114_piccone_da_guerra.json"
+    },
+    "L'Ampolla di Sangue di San Geniale": {
+      "id": "5UhB5vNy9FW1yLxZ",
+      "pack": "equipaggiamento",
+      "file": "023_lampolla_di_sangue_di_san_geniale.json"
+    },
+    "L'Idolo Pagano": {
+      "id": "ZmStLebzeJEaTDrW",
+      "pack": "equipaggiamento",
+      "file": "009_lidolo_pagano.json"
+    },
+    "Affitto Stalla per Cavalcatura (notte)": {
+      "id": "CEQV5oJxVRvWcLj9",
+      "pack": "equipaggiamento",
+      "file": "gear-serv-007_affitto_stalla_per_cavalcatura_notte.json"
+    },
+    "L'Elmetto del Soldato Sconosciuto": {
+      "id": "E3k2tPFE1fo6xzHS",
+      "pack": "equipaggiamento",
+      "file": "027_lelmetto_del_soldato_sconosciuto.json"
+    },
+    "Stocco": {
+      "id": "QkDcarRRCoXaVsy7",
+      "pack": "equipaggiamento",
+      "file": "armastd110_stocco.json"
+    },
+    "Armatura di Pelliccia": {
+      "id": "6uxCDiRQv5nDmESb",
+      "pack": "equipaggiamento",
+      "file": "armstd101_armatura_di_pelliccia.json"
+    },
+    "Balestra Pesante": {
+      "id": "sOJGYWCA02E6nfW0",
+      "pack": "equipaggiamento",
+      "file": "armastd203_balestra_pesante.json"
+    },
+    "Il Crocifisso Capovolto": {
+      "id": "nH8YL0BVi6fUfJsv",
+      "pack": "equipaggiamento",
+      "file": "030_il_crocifisso_capovolto.json"
+    },
+    "Cotta di Maglia": {
+      "id": "NfsTVZr97bD8jaDU",
+      "pack": "equipaggiamento",
+      "file": "armstd202_cotta_di_maglia.json"
+    },
+    "Mappe False": {
+      "id": "xEspQoNgPY1CYyVO",
+      "pack": "equipaggiamento",
+      "file": "oggettocontraff002_mappe_false.json"
+    },
+    "Olio (fiaschetta)": {
+      "id": "oLJ0agzd6eHcVbbd",
+      "pack": "equipaggiamento",
+      "file": "gear-007_olio_fiaschetta.json"
+    },
+    "Monte e Animali Scadenti": {
+      "id": "8Gmbr6lSSMxWHVR0",
+      "pack": "equipaggiamento",
+      "file": "scadente004_animali.json"
+    },
+    "Alloggio Sfarzoso (notte)": {
+      "id": "TIfKY3lprjJFwGSM",
+      "pack": "equipaggiamento",
+      "file": "gearserv005_alloggio_sfarzoso_notte.json"
+    },
+    "Sella della Donzella in Pericolo": {
+      "id": "sHKPLEc1a2mx9Qke",
+      "pack": "equipaggiamento",
+      "file": "gearspecial001_sella_della_donzella_in_pericolo.json"
+    },
+    "Pasto Modesto": {
+      "id": "fynkOPleXX4DkrbA",
+      "pack": "equipaggiamento",
+      "file": "gear-serv-001_pasto_modesto.json"
+    },
+    "Pelle d Acqua": {
+      "id": "J1TDtcbthdjonks7",
+      "pack": "equipaggiamento",
+      "file": "gear-016_pelle_d_acqua.json"
+    },
+    "Cavallo da Sella Leggero": {
+      "id": "sXyVa0wl58sKrGfD",
+      "pack": "equipaggiamento",
+      "file": "animal-004_cavallo_da_sella_leggero.json"
+    },
+    "Borsa con 25 ma": {
+      "id": "LX3s1MiSOzo5BQFB",
+      "pack": "equipaggiamento",
+      "file": "bg-prelatoborsa-con-25-ma-1ef80d.json"
+    },
+    "Lo Specchio della Strega": {
+      "id": "Ko1k237aqUUXaQJm",
+      "pack": "equipaggiamento",
+      "file": "018_lo_specchio_della_strega.json"
+    },
+    "Il Pennello del Pittore Maledetto": {
+      "id": "mLE8VCb6GcqHvIoH",
+      "pack": "equipaggiamento",
+      "file": "014_il_pennello_del_pittore_maledetto.json"
+    },
+    "Lancia da Cavalleria": {
+      "id": "L3HBnTDtVuyfXnze",
+      "pack": "equipaggiamento",
+      "file": "armastd106_lancia_da_cavalleria.json"
+    },
+    "Ciondolo d’ossa d’animale": {
+      "id": "IMWdi6OXu93J95c4",
+      "pack": "equipaggiamento",
+      "file": "bg-bradociondolo-dossa-danimale-b53949.json"
+    },
+    "Borsa con 20 ma": {
+      "id": "ZgpsS9ntC7t4lvZu",
+      "pack": "equipaggiamento",
+      "file": "bg-azzeccagarbugliborsa-con-20-ma-e483ea.json"
+    },
+    "Martello da Guerra": {
+      "id": "QHgAego1biVNgHUa",
+      "pack": "equipaggiamento",
+      "file": "armastd115_martello_da_guerra.json"
+    },
+    "Il Quadrifoglio Appassito": {
+      "id": "mZcLCjBcDeO6yQkU",
+      "pack": "equipaggiamento",
+      "file": "016_il_quadrifoglio_appassito.json"
+    },
+    "Componenti Magici Scadenti": {
+      "id": "rwQR9ynUtgAFAmf9",
+      "pack": "equipaggiamento",
+      "file": "scadente005_componenti_magici.json"
+    },
+    "Raccolta di lettere d'amore": {
+      "id": "VXWEr9Ybpey9Oeyk",
+      "pack": "equipaggiamento",
+      "file": "bg-innamoratoraccolta-di-lettere-damore-22e1f7.json"
+    },
+    "Razioni (1 giorno)": {
+      "id": "cON1MVjRGS6lHfTK",
+      "pack": "equipaggiamento",
+      "file": "gear-001_razioni_1_giorno.json"
+    },
+    "Daga": {
+      "id": "yy8sUozmUqJrDfMK",
+      "pack": "equipaggiamento",
+      "file": "armastd002_daga.json"
+    },
+    "Il Fazzoletto della Dama Nera": {
+      "id": "8q8FpVyqi08RRd4r",
+      "pack": "equipaggiamento",
+      "file": "007_il_fazzoletto_della_dama_nera.json"
+    },
+    "Forcone d'Arme": {
+      "id": "XzmkXArlt5sqA5g1",
+      "pack": "equipaggiamento",
+      "file": "001_forcone_darme.json"
+    },
+    "La Lanterna del Guardiano del Faro": {
+      "id": "JGdyU2kP5yVVaYK2",
+      "pack": "equipaggiamento",
+      "file": "010_la_lanterna_del_guardiano_del_faro.json"
+    },
+    "Balestra a Mano": {
+      "id": "wyFk8xDcpKqhKTdz",
+      "pack": "equipaggiamento",
+      "file": "armastd202_balestra_a_mano.json"
+    },
+    "Il Teschio del Santo Eretico": {
+      "id": "STUKCZ6cDgn9zOuy",
+      "pack": "equipaggiamento",
+      "file": "019_il_teschio_del_santo_eretico.json"
+    },
+    "Balestra Leggera": {
+      "id": "meMrCeMs5h4sOqGd",
+      "pack": "equipaggiamento",
+      "file": "armastd011_balestra_leggera.json"
+    },
+    "Armatura Imbottita": {
+      "id": "I1zqicelZT3lnN8g",
+      "pack": "equipaggiamento",
+      "file": "armstd001_armatura_imbottita.json"
+    },
+    "Frusta": {
+      "id": "0kOGF3Zh5Hru6fRa",
+      "pack": "equipaggiamento",
+      "file": "armastd116_frusta.json"
+    },
+    "Cordiale Biondino": {
+      "id": "LFLuhuwWXRFDRXpK",
+      "pack": "equipaggiamento",
+      "file": "intruglio003.json"
+    },
+    "Calzature Rinforzate": {
+      "id": "y0pTseEVcsFeGAaC",
+      "pack": "equipaggiamento",
+      "file": "gear-cloth-005_calzature_rinforzate.json"
+    },
+    "Tenda per Due Persone": {
+      "id": "TpY94uasjfaZSiZR",
+      "pack": "equipaggiamento",
+      "file": "gear014_tenda_per_due_persone.json"
+    },
+    "Piede di porco": {
+      "id": "AbHKuchN0nE10k5M",
+      "pack": "equipaggiamento",
+      "file": "bg-cacciatoredireliquiepiede-di-porco-3c89ba.json"
+    },
+    "Fionda": {
+      "id": "RbBbpq9nJSDdJ9cy",
+      "pack": "equipaggiamento",
+      "file": "armastd014_fionda.json"
+    },
+    "Martello": {
+      "id": "QFoMOWXCVQJxAIrC",
+      "pack": "equipaggiamento",
+      "file": "gear-011_martello.json"
+    },
+    "Custodia per pergamene con appunti di studio": {
+      "id": "uas2idQKQIJbwy91",
+      "pack": "equipaggiamento",
+      "file": "bg-cacciatoredireliquiecustodia-per-pergamene-con-appunti-di-studio-a2992c.json"
+    },
+    "La Corda dell'Impiccato Innocente": {
+      "id": "bBueIwLaumROWwov",
+      "pack": "equipaggiamento",
+      "file": "004_la_corda_dellimpiccato_innocente.json"
+    },
+    "Pugnale": {
+      "id": "aQ8YWtMOCIgB8g69",
+      "pack": "equipaggiamento",
+      "file": "pugnale001.json"
+    },
+    "La Maschera del Carnefice": {
+      "id": "fSlUWoRJh6Q0sXPB",
+      "pack": "equipaggiamento",
+      "file": "011_la_maschera_del_carnefice.json"
+    },
+    "Maglio": {
+      "id": "K8tk6ulvF54siXjf",
+      "pack": "equipaggiamento",
+      "file": "armastd108_maglio.json"
+    },
+    "Libro di poesie": {
+      "id": "BBWtBLWdMNLqqtqD",
+      "pack": "equipaggiamento",
+      "file": "bg-innamoratolibro-di-poesie-d6eb61.json"
+    },
+    "Carretto": {
+      "id": "cnqZOH5zbmks7mW8",
+      "pack": "equipaggiamento",
+      "file": "gear-veh-001_carretto.json"
+    },
+    "Strumenti da Ladro": {
+      "id": "5bwrv1duBkN4r1FL",
+      "pack": "equipaggiamento",
+      "file": "gearkit004_strumenti_da_ladro.json"
+    },
+    "La Lettera Mai Consegnata": {
+      "id": "fMrbzgeQnh5QH7FJ",
+      "pack": "equipaggiamento",
+      "file": "048_la_lettera_mai_consegnata.json"
+    },
+    "Corazza Pettorale": {
+      "id": "OCBQ39ElnXOiz5JG",
+      "pack": "equipaggiamento",
+      "file": "armstd104_corazza_pettorale.json"
+    },
+    "Corda di Canapa (15 m)": {
+      "id": "dpUt2kA88FC92KTU",
+      "pack": "equipaggiamento",
+      "file": "gear003_corda_di_canapa_15_m.json"
+    },
+    "La Rosa di Ferro": {
+      "id": "y3FeWOYRZbNue2Bk",
+      "pack": "equipaggiamento",
+      "file": "017_la_rosa_di_ferro.json"
+    },
+    "La Candela del Vegliardo": {
+      "id": "KSmqbprEOTfIcxbi",
+      "pack": "equipaggiamento",
+      "file": "042_la_candela_del_vegliardo.json"
+    },
+    "Strumenti Scadenti": {
+      "id": "dG7oOVT0zhSTbmv8",
+      "pack": "equipaggiamento",
+      "file": "scadente001_strumenti.json"
+    },
+    "Bue": {
+      "id": "Fupp66WkGzpvThRd",
+      "pack": "equipaggiamento",
+      "file": "animal002_bue.json"
+    },
+    "L'Icona Piangente": {
+      "id": "bXetp4KA3ZTnHQwM",
+      "pack": "equipaggiamento",
+      "file": "047_licona_piangente.json"
+    },
+    "Lanterna Schermata": {
+      "id": "2DY664gsEsNOWifs",
+      "pack": "equipaggiamento",
+      "file": "gear006_lanterna_schermata.json"
+    },
+    "Mezza Armatura a Piastre": {
+      "id": "pXafs7z1Wmdzo5xf",
+      "pack": "equipaggiamento",
+      "file": "armstd105_mezza_armatura_a_piastre.json"
+    },
+    "Trofeo da rissa (Cimelio extra)": {
+      "id": "ou1eCnnUKSlV3Xox",
+      "pack": "equipaggiamento",
+      "file": "bg-attaccabrighetrofeo-da-rissa-cimelio-extra-10db77.json"
+    },
+    "Il Grimorio dello Studente Suicida": {
+      "id": "pcIZ1CpRTvDGncGl",
+      "pack": "equipaggiamento",
+      "file": "029_il_grimorio_dello_studente_suicida.json"
+    },
+    "Alloggio Modesto (notte)": {
+      "id": "X493JL31dqEpJfJe",
+      "pack": "equipaggiamento",
+      "file": "gear-serv-003_alloggio_modesto_notte.json"
+    },
+    "Scudetto": {
+      "id": "gIfAI54A5rQJAOLJ",
+      "pack": "equipaggiamento",
+      "file": "item_001_scudetto.json"
+    },
+    "Sacco": {
+      "id": "lIju8ho8u9MnD1vW",
+      "pack": "equipaggiamento",
+      "file": "gear009_sacco.json"
+    },
+    "Mostrina con i gradi": {
+      "id": "nMioQndG3OhE8KTQ",
+      "pack": "equipaggiamento",
+      "file": "bg-staffettamostrina-con-i-gradi-d65861.json"
+    },
+    "Kit da Scalata": {
+      "id": "ym3RkXmexhpeN1nC",
+      "pack": "equipaggiamento",
+      "file": "gear013_kit_da_scalata.json"
+    },
+    "Corazza di Maglia": {
+      "id": "4bt7XbgaTSgaaKKT",
+      "pack": "equipaggiamento",
+      "file": "armstd102_corazza_di_maglia.json"
+    },
+    "Afrore di Servatico": {
+      "id": "ESF8kc0BBLPsCwBk",
+      "pack": "equipaggiamento",
+      "file": "intruglio-002.json"
+    },
+    "Ascia da Mano": {
+      "id": "W7mxOYNoO5QBpTcT",
+      "pack": "equipaggiamento",
+      "file": "armastd004_ascia_da_mano.json"
+    },
+    "Lo Stendardo Strappato": {
+      "id": "SMU5eG7ObYvV1cIc",
+      "pack": "equipaggiamento",
+      "file": "035_lo_stendardo_strappato.json"
+    },
+    "L'Anello del Vescovo Ladrone": {
+      "id": "XvQHZO29Ag0BvHjy",
+      "pack": "equipaggiamento",
+      "file": "001_lanello_del_vescovo_ladrone.json"
+    },
+    "Elefante": {
+      "id": "o3WaMEvtcmszYneS",
+      "pack": "equipaggiamento",
+      "file": "animal-008_elefante.json"
+    },
+    "Armatura Completa": {
+      "id": "Lbvj0uUqE3lVFCRx",
+      "pack": "equipaggiamento",
+      "file": "armstd204_armatura_completa.json"
+    },
+    "Abito pregiato": {
+      "id": "CGh5BF91vwzKX49F",
+      "pack": "equipaggiamento",
+      "file": "bg-azzeccagarbugliabito-pregiato-c6b44e.json"
+    },
+    "Il Ferro di Cavallo Fortunato": {
+      "id": "ahnicNs44VhCWPRs",
+      "pack": "equipaggiamento",
+      "file": "028_il_ferro_di_cavallo_fortunato.json"
+    },
+    "Arco Corto": {
+      "id": "Zjwj6x9C0lsVzQh0",
+      "pack": "equipaggiamento",
+      "file": "armastd013_arco_corto.json"
+    },
+    "Kit da Guaritore": {
+      "id": "UhB0Tvqy3O4Nrnsq",
+      "pack": "equipaggiamento",
+      "file": "gearkit003_kit_da_guaritore.json"
+    },
+    "Ascia Bipenne": {
+      "id": "peGOPhPMQPnTfIuw",
+      "pack": "equipaggiamento",
+      "file": "armastd101_ascia_bipenne.json"
+    },
+    "Zappa d'Arme": {
+      "id": "zappadarme1f9dac",
+      "pack": "equipaggiamento",
+      "file": "004_zappa_darme.json"
+    },
+    "La Fiala delle Lacrime di Gioia": {
+      "id": "WriTY5hK5ifjQqkO",
+      "pack": "equipaggiamento",
+      "file": "045_la_fiala_delle_lacrime_di_gioia.json"
+    },
+    "Lo Zufolo del Pifferaio": {
+      "id": "A9lukk1fPu7ZdyfR",
+      "pack": "equipaggiamento",
+      "file": "039_lo_zufolo_del_pifferaio.json"
+    },
+    "L'Elmo del Generale Sconfitto": {
+      "id": "UprUeqJ7sIYs9VSl",
+      "pack": "equipaggiamento",
+      "file": "item_044_lelmo_del_generale_sconfitto.json"
+    },
+    "Mastino": {
+      "id": "nNZZnuMO0uzCEBJm",
+      "pack": "equipaggiamento",
+      "file": "animal007_mastino.json"
+    },
+    "Il Dado del Destino": {
+      "id": "Nysy8htfQt9zRPj1",
+      "pack": "equipaggiamento",
+      "file": "043_il_dado_del_destino.json"
+    },
+    "Cerbottana": {
+      "id": "uHXXvD982dBXoDjE",
+      "pack": "equipaggiamento",
+      "file": "armastd201_cerbottana.json"
+    },
+    "La Catena del Cane Infernale": {
+      "id": "yz4RG4P415P5xw62",
+      "pack": "equipaggiamento",
+      "file": "025_la_catena_del_cane_infernale.json"
+    },
+    "Reliquie False": {
+      "id": "Posysm8vDc2N286F",
+      "pack": "equipaggiamento",
+      "file": "oggettocontraff005_reliquie_false.json"
+    },
+    "Panacea dei Fieronzi": {
+      "id": "X011iMFFLHsCDPFf",
+      "pack": "equipaggiamento",
+      "file": "intruglio009.json"
+    },
+    "Libro con i nomi di aspiranti teatranti": {
+      "id": "4lE45npuDMBkhlk5",
+      "pack": "equipaggiamento",
+      "file": "bg-impresariolibro-con-i-nomi-di-aspiranti-teatranti-c9b76b.json"
+    },
+    "L'Uncino del Pirata Fantasma": {
+      "id": "HQ7yEHIv2MUkdlCN",
+      "pack": "equipaggiamento",
+      "file": "037_luncino_del_pirata_fantasma.json"
+    },
+    "Il Bicchiere Avvelenato": {
+      "id": "GxzEuq4moYucbFI4",
+      "pack": "equipaggiamento",
+      "file": "041_il_bicchiere_avvelenato.json"
+    },
+    "Libro sulle leggi della regione di provenienza": {
+      "id": "0uWgpMtIOeOninG0",
+      "pack": "equipaggiamento",
+      "file": "bg-azzeccagarbuglilibro-sulle-leggi-della-regione-di-provenienza-64ca54.json"
+    },
+    "Fuoco d'Aspromonti": {
+      "id": "TwdTU4GAyFVmMkBN",
+      "pack": "equipaggiamento",
+      "file": "intruglio-005.json"
+    },
+    "Guardaroba da Bettola": {
+      "id": "NWQjndY3pcHu0R4k",
+      "pack": "equipaggiamento",
+      "file": "gearcloth004_guardaroba_da_bettola.json"
+    },
+    "Lingua del Mattatore": {
+      "id": "N07K63FA2Tr7qpFt",
+      "pack": "equipaggiamento",
+      "file": "002_lingua_del_mattatore.json"
+    },
+    "L'Orecchio del Confessore": {
+      "id": "Clbmnga8XnhZlnSC",
+      "pack": "equipaggiamento",
+      "file": "032_lorecchio_del_confessore.json"
+    },
+    "Il Boccale del Gigante Ubriacone": {
+      "id": "VLvEjfCcUOxPASGe",
+      "pack": "equipaggiamento",
+      "file": "003_il_boccale_del_gigante_ubriacone.json"
+    },
+    "Il Diario del Condannato": {
+      "id": "HJcVJCl12WpCWK7A",
+      "pack": "equipaggiamento",
+      "file": "026_il_diario_del_condannato.json"
+    },
+    "Il Guanto del Duellante": {
+      "id": "XZwhW6rm1f1uQeK5",
+      "pack": "equipaggiamento",
+      "file": "046_il_guanto_del_duellante.json"
+    },
+    "Cimelio aggiuntivo": {
+      "id": "XaPtcvSBHdAEUeT2",
+      "pack": "equipaggiamento",
+      "file": "bg-lucignolocimelio-aggiuntivo-335bdd.json"
+    },
+    "Mappa con la lista di tutte le locande della città d'origine": {
+      "id": "64U5JyUNPF4rbkVk",
+      "pack": "equipaggiamento",
+      "file": "bg-attaccabrighemappa-con-la-lista-di-tutte-le-locande-della-città-dorigine-f89d8d.json"
+    },
+    "Borsa con tasca segreta per dispacci": {
+      "id": "G8us4a5tyz6YyL6m",
+      "pack": "equipaggiamento",
+      "file": "bg-staffettaborsa-con-tasca-segreta-per-dispacci-1a0c9d.json"
+    },
+    "Lancia": {
+      "id": "1WETxSzY1t8Ovxnh",
+      "pack": "equipaggiamento",
+      "file": "armastd010_lancia.json"
+    },
+    "La Moneta del Traghettatore": {
+      "id": "8e0F4elYEMT4z44e",
+      "pack": "equipaggiamento",
+      "file": "031_la_moneta_del_traghettatore.json"
+    },
+    "Equipaggiamento Scadente": {
+      "id": "5NCOG1n9J5vmSjGK",
+      "pack": "equipaggiamento",
+      "file": "index.json"
+    },
+    "La Mappa del Tesoro Maledetto": {
+      "id": "DfqknBDahL0l2b3d",
+      "pack": "equipaggiamento",
+      "file": "049_la_mappa_del_tesoro_maledetto.json"
+    },
+    "I Dadi del Diavolo": {
+      "id": "2UEmAcmmxs6JnJUg",
+      "pack": "equipaggiamento",
+      "file": "005_i_dadi_del_diavolo.json"
+    },
+    "Pigmenti colorati": {
+      "id": "EbfqPzo7CfcfL78k",
+      "pack": "equipaggiamento",
+      "file": "bg-bradopigmenti-colorati-b09aa0.json"
+    },
+    "Mazzo di minchiate o altro gioco": {
+      "id": "cOLliFw3uuAFBs1M",
+      "pack": "equipaggiamento",
+      "file": "bg-duromazzo-di-minchiate-o-altro-gioco-77bbe2.json"
+    },
+    "Intruglio della Forza": {
+      "id": "xKHedR2gpX6l9Dab",
+      "pack": "equipaggiamento",
+      "file": "intruglio-008.json"
+    },
+    "Estratto di Fandonia": {
+      "id": "To3EQmkhQg4jaWUo",
+      "pack": "equipaggiamento",
+      "file": "intruglio004.json"
+    },
+    "Dotazione da Avventuriero": {
+      "id": "c1L0VosuzP6ufoo1",
+      "pack": "equipaggiamento",
+      "file": "gear-kit-001_dotazione_da_avventuriero.json"
+    },
+    "Il Guanto del Boia": {
+      "id": "HOhXLOJAxnSECDNu",
+      "pack": "equipaggiamento",
+      "file": "008_il_guanto_del_boia.json"
+    },
+    "Impresario - Ideali": {
+      "id": "CMrZE6owY2hymXZ0",
+      "pack": "rollable-tables",
+      "file": "bg-impresario-ideali.json"
+    },
+    "Brado - Ideali": {
+      "id": "KVbKEG128y8QpLJT",
+      "pack": "rollable-tables",
+      "file": "bg-brado-ideali.json"
+    },
+    "Duro - Difetti": {
+      "id": "lPlRuiRkpbpPvxPB",
+      "pack": "rollable-tables",
+      "file": "bg-duro-difetti.json"
+    },
+    "Lucignolo - Difetti": {
+      "id": "ZRrdlTm7PuiiDB4m",
+      "pack": "rollable-tables",
+      "file": "bg-lucignolo-difetti.json"
+    },
+    "Malattie del Regno di Taglia": {
+      "id": "LWRFOEoPuUc73FZO",
+      "pack": "rollable-tables",
+      "file": "malattiebrancalonia.json"
+    },
+    "Incontri Casuali per Strada": {
+      "id": "YPh8NvCgVe1A3usf",
+      "pack": "rollable-tables",
+      "file": "incontristrada.json"
+    },
+    "Brado - Tratti della Personalità": {
+      "id": "3T9fromL6DAvhmdj",
+      "pack": "rollable-tables",
+      "file": "bg-brado-tratti-della-personalità.json"
+    },
+    "Azzeccagarbugli - Difetti": {
+      "id": "guZkWls5xXTw5pOs",
+      "pack": "rollable-tables",
+      "file": "bg-azzeccagarbugli-difetti.json"
+    },
+    "Ricompense per Lavori Sporchi": {
+      "id": "ricompenselavori",
+      "pack": "rollable-tables",
+      "file": "ricompenselavori.json"
+    },
+    "Innamorato - Ideali": {
+      "id": "QVjvKkxpFcYC3oUw",
+      "pack": "rollable-tables",
+      "file": "bg-innamorato-ideali.json"
+    },
+    "Effetti degli Intrugli Dubbi": {
+      "id": "HSIxzV8NkuOIooPh",
+      "pack": "rollable-tables",
+      "file": "intruglidubbi.json"
+    },
+    "Conseguenze dell'Infamia": {
+      "id": "CVXF1QG6S2rvtWtG",
+      "pack": "rollable-tables",
+      "file": "conseguenzeinfamia.json"
+    },
+    "Tempo Atmosferico": {
+      "id": "tempoatmosferico",
+      "pack": "rollable-tables",
+      "file": "tempoatmosferico.json"
+    },
+    "Chi Offre il Lavoro Sporco": {
+      "id": "j8xFmMF0YgB5Vvzb",
+      "pack": "rollable-tables",
+      "file": "patronilavori.json"
+    },
+    "Mestieri del Popolino": {
+      "id": "mestieripopolani",
+      "pack": "rollable-tables",
+      "file": "mestieripopolani.json"
+    },
+    "Lucignolo - Ideali": {
+      "id": "vMJPF4oeXbLPBKA0",
+      "pack": "rollable-tables",
+      "file": "bg-lucignolo-ideali.json"
+    },
+    "Prelato - Tratti della Personalità": {
+      "id": "rXDsVCInTuPkK1Bz",
+      "pack": "rollable-tables",
+      "file": "bg-prelato-tratti-della-personalità.json"
+    },
+    "Azzeccagarbugli - Tratti della Personalità": {
+      "id": "LXdcSl5hOvoAHJem",
+      "pack": "rollable-tables",
+      "file": "bg-azzeccagarbugli-tratti-della-personalità.json"
+    },
+    "Livelli del Contatore Baraonda": {
+      "id": "0YQeRd0ynvCk39jV",
+      "pack": "rollable-tables",
+      "file": "contatorebaraonda.json"
+    },
+    "Prelato - Legami": {
+      "id": "H0VAsJ5fouWHChyX",
+      "pack": "rollable-tables",
+      "file": "bg-prelato-legami.json"
+    },
+    "Azzeccagarbugli - Ideali": {
+      "id": "Z3ttpwt33ocfKWrL",
+      "pack": "rollable-tables",
+      "file": "bg-azzeccagarbugli-ideali.json"
+    },
+    "Ambulante - Difetti": {
+      "id": "VqSVoJr6pzsJVJ4h",
+      "pack": "rollable-tables",
+      "file": "bg-ambulante-difetti.json"
+    },
+    "Ambulante - Tratti della Personalità": {
+      "id": "sypi3Ek9Fmg6ZU2E",
+      "pack": "rollable-tables",
+      "file": "bg-ambulante-tratti-della-personalità.json"
+    },
+    "Passatore - Difetti": {
+      "id": "7SAkD1FqB7wamtEa",
+      "pack": "rollable-tables",
+      "file": "bg-passatore-difetti.json"
+    },
+    "Soprannomi delle Canaglie": {
+      "id": "Wqof4WELWYS7FZgY",
+      "pack": "rollable-tables",
+      "file": "soprannomicanaglie.json"
+    },
+    "Tabella del Menagramo": {
+      "id": "MSLqu7CEZ9QKlHMT",
+      "pack": "rollable-tables",
+      "file": "menagramo.json"
+    },
+    "Fazioni del Regno": {
+      "id": "85bHgq6P3P4eRSHH",
+      "pack": "rollable-tables",
+      "file": "fazionibrancalonia.json"
+    },
+    "Generatore Lavori Sporchi": {
+      "id": "nCG0vVO5IBRhlbSU",
+      "pack": "rollable-tables",
+      "file": "lavorisporchi.json"
+    },
+    "Sogni e Presagi": {
+      "id": "nL9OgCe4viOqHky2",
+      "pack": "rollable-tables",
+      "file": "sognipresagi.json"
+    },
+    "Cacciatore di reliquie - Legami": {
+      "id": "yXHEPjJaMTmqqzN4",
+      "pack": "rollable-tables",
+      "file": "bg-cacciatore-di-reliquie-legami.json"
+    },
+    "Attaccabrighe - Difetti": {
+      "id": "8chDmml0WSo7ngS5",
+      "pack": "rollable-tables",
+      "file": "bg-attaccabrighe-difetti.json"
+    },
+    "Prelato - Difetti": {
+      "id": "aTnOFtBBIPEAI8Z3",
+      "pack": "rollable-tables",
+      "file": "bg-prelato-difetti.json"
+    },
+    "Passatore - Ideali": {
+      "id": "Vhptb105HeLya8CD",
+      "pack": "rollable-tables",
+      "file": "bg-passatore-ideali.json"
+    },
+    "Luoghi Misteriosi": {
+      "id": "luoghimisteriosi",
+      "pack": "rollable-tables",
+      "file": "luoghimisteriosi.json"
+    },
+    "Difetti Oggetti Scadenti": {
+      "id": "BRGP4eXQRBjEWG5d",
+      "pack": "rollable-tables",
+      "file": "difettioggettiscadenti.json"
+    },
+    "Attaccabrighe - Legami": {
+      "id": "w1cx9eMh06XFaGBG",
+      "pack": "rollable-tables",
+      "file": "bg-attaccabrighe-legami.json"
+    },
+    "Staffetta - Ideali": {
+      "id": "fJv9SQ54DMAOeKZd",
+      "pack": "rollable-tables",
+      "file": "bg-staffetta-ideali.json"
+    },
+    "Tables": {
+      "id": "9IlOm50lBxv0bFbi",
+      "pack": "rollable-tables",
+      "file": "tables.json"
+    },
+    "Duro - Ideali": {
+      "id": "dsZf0wLpGp1wFYQa",
+      "pack": "rollable-tables",
+      "file": "bg-duro-ideali.json"
+    },
+    "Ambulante - Ideali": {
+      "id": "oNkYUcmF0kFMq39e",
+      "pack": "rollable-tables",
+      "file": "bg-ambulante-ideali.json"
+    },
+    "Background delle Canaglie": {
+      "id": "tq2BALUYatyfp3YJ",
+      "pack": "rollable-tables",
+      "file": "backgroundcanaglie.json"
+    },
+    "Brado - Difetti": {
+      "id": "vzIfx2SrJlAl8b9s",
+      "pack": "rollable-tables",
+      "file": "bg-brado-difetti.json"
+    },
+    "Lucignolo - Tratti della Personalità": {
+      "id": "HyLzspJGdc8RRjF7",
+      "pack": "rollable-tables",
+      "file": "bg-lucignolo-tratti-della-personalità.json"
+    },
+    "Nomi di Locande e Taverne": {
+      "id": "CxzyNXnwRfvTXzlF",
+      "pack": "rollable-tables",
+      "file": "nomilocande.json"
+    },
+    "Impresario - Tratti della Personalità": {
+      "id": "OIepYgqBsVWw3WaW",
+      "pack": "rollable-tables",
+      "file": "bg-impresario-tratti-della-personalità.json"
+    },
+    "Tesori Nascosti": {
+      "id": "ktbTMzEZzkRMmYtG",
+      "pack": "rollable-tables",
+      "file": "tesorinascosti.json"
+    },
+    "Cacciatore di reliquie - Ideali": {
+      "id": "L36J31zX9hVzRyRL",
+      "pack": "rollable-tables",
+      "file": "bg-cacciatore-di-reliquie-ideali.json"
+    },
+    "Impresario - Difetti": {
+      "id": "Ot4awt6F31DrGt65",
+      "pack": "rollable-tables",
+      "file": "bg-impresario-difetti.json"
+    },
+    "Voci e Dicerie": {
+      "id": "7fj2uAKFkbD1y7aJ",
+      "pack": "rollable-tables",
+      "file": "vocidicerie.json"
+    },
+    "Insulti Tipici di Brancalonia": {
+      "id": "zvTIzo9xAYYzjiIT",
+      "pack": "rollable-tables",
+      "file": "insultibrancalonia.json"
+    },
+    "Prelato - Ideali": {
+      "id": "USxxzTyEbr3pHVXq",
+      "pack": "rollable-tables",
+      "file": "bg-prelato-ideali.json"
+    },
+    "Azzeccagarbugli - Legami": {
+      "id": "95AEUOAmoAnfPOPj",
+      "pack": "rollable-tables",
+      "file": "bg-azzeccagarbugli-legami.json"
+    },
+    "Duro - Legami": {
+      "id": "6Te8PzC08Lpuqm2S",
+      "pack": "rollable-tables",
+      "file": "bg-duro-legami.json"
+    },
+    "Ambulante - Legami": {
+      "id": "CLh8GivenPA6Zhsx",
+      "pack": "rollable-tables",
+      "file": "bg-ambulante-legami.json"
+    },
+    "Cacciatore di reliquie - Tratti della Personalità": {
+      "id": "sjGqPpbdPjvCi2PW",
+      "pack": "rollable-tables",
+      "file": "bg-cacciatore-di-reliquie-tratti-della-personalità.json"
+    },
+    "Crimini e Punizioni": {
+      "id": "0LqSqFu6rGkjNTYL",
+      "pack": "rollable-tables",
+      "file": "criminipene.json"
+    },
+    "Fuggitivo - Ideali": {
+      "id": "10JcVrQVTvsqKVFq",
+      "pack": "rollable-tables",
+      "file": "bg-fuggitivo-ideali.json"
+    },
+    "Eventi durante una Rissa da Taverna": {
+      "id": "cjFSX1N9SsQQfBwT",
+      "pack": "rollable-tables",
+      "file": "eventirissa.json"
+    },
+    "Innamorato - Difetti": {
+      "id": "7y7WV5SWVe5uxRar",
+      "pack": "rollable-tables",
+      "file": "bg-innamorato-difetti.json"
+    },
+    "Passatore - Legami": {
+      "id": "JT0e1uzJfNFr3TV3",
+      "pack": "rollable-tables",
+      "file": "bg-passatore-legami.json"
+    },
+    "Staffetta - Legami": {
+      "id": "MXcznG6DodwrOVt0",
+      "pack": "rollable-tables",
+      "file": "bg-staffetta-legami.json"
+    },
+    "Staffetta - Tratti della Personalità": {
+      "id": "mn4JitpBzFsTUhF4",
+      "pack": "rollable-tables",
+      "file": "bg-staffetta-tratti-della-personalità.json"
+    },
+    "Attaccabrighe - Ideali": {
+      "id": "mCXI60x6Eq7NTIAo",
+      "pack": "rollable-tables",
+      "file": "bg-attaccabrighe-ideali.json"
+    },
+    "Duro - Tratti della Personalità": {
+      "id": "TWxnY4wl0JMME4kC",
+      "pack": "rollable-tables",
+      "file": "bg-duro-tratti-della-personalità.json"
+    },
+    "Menu della Taverna": {
+      "id": "e3jF9teKqQodoIxg",
+      "pack": "rollable-tables",
+      "file": "menutaverna.json"
+    },
+    "Cacciatore di reliquie - Difetti": {
+      "id": "C16hAwvA96CYe2h9",
+      "pack": "rollable-tables",
+      "file": "bg-cacciatore-di-reliquie-difetti.json"
+    },
+    "Impresario - Legami": {
+      "id": "0FZT854Jzjt6H0z7",
+      "pack": "rollable-tables",
+      "file": "bg-impresario-legami.json"
+    },
+    "Innamorato - Tratti della Personalità": {
+      "id": "ZqcLh8MRFkRMabQZ",
+      "pack": "rollable-tables",
+      "file": "bg-innamorato-tratti-della-personalità.json"
+    },
+    "Hazard Ambientali": {
+      "id": "hazardambientali",
+      "pack": "rollable-tables",
+      "file": "hazardambientali.json"
+    },
+    "Eventi nel Rifugio": {
+      "id": "zFH91ZPTPBSz416Y",
+      "pack": "rollable-tables",
+      "file": "eventihaven.json"
+    },
+    "Brado - Legami": {
+      "id": "39dqqetVmHXWVOjm",
+      "pack": "rollable-tables",
+      "file": "bg-brado-legami.json"
+    },
+    "Attaccabrighe - Tratti della Personalità": {
+      "id": "SmWPN92vVjhaznoI",
+      "pack": "rollable-tables",
+      "file": "bg-attaccabrighe-tratti-della-personalità.json"
+    },
+    "Passatore - Tratti della Personalità": {
+      "id": "Smb0AXuQOeKzGNPW",
+      "pack": "rollable-tables",
+      "file": "bg-passatore-tratti-della-personalità.json"
+    },
+    "Maledizioni Minori": {
+      "id": "4aMnpu9AGFO9JRv6",
+      "pack": "rollable-tables",
+      "file": "maledizioniminori.json"
+    },
+    "Fuggitivo - Tratti della Personalità": {
+      "id": "aq80wkHHJ0h6wfxf",
+      "pack": "rollable-tables",
+      "file": "bg-fuggitivo-tratti-della-personalità.json"
+    },
+    "Lucignolo - Legami": {
+      "id": "Q9zsJPlVja31uQ2z",
+      "pack": "rollable-tables",
+      "file": "bg-lucignolo-legami.json"
+    },
+    "Bevande della Taverna": {
+      "id": "C4hvzOjp4YPVKI1b",
+      "pack": "rollable-tables",
+      "file": "bevandetaverna.json"
+    },
+    "Trappole nei Dungeon": {
+      "id": "xFCgVnvdlVSrIGiO",
+      "pack": "rollable-tables",
+      "file": "trappoledungeon.json"
+    },
+    "Bottino Scadente": {
+      "id": "lFXxNhWEnNVsbqNV",
+      "pack": "rollable-tables",
+      "file": "bottinoscadente.json"
+    },
+    "Innamorato - Legami": {
+      "id": "Gi9KqhXHntIq2Vzf",
+      "pack": "rollable-tables",
+      "file": "bg-innamorato-legami.json"
+    },
+    "Complicazioni Lavori Sporchi": {
+      "id": "Qsj16rGPDfx0gV2Y",
+      "pack": "rollable-tables",
+      "file": "complicazionilavori.json"
+    },
+    "Staffetta - Difetti": {
+      "id": "Qz23Yi0E1c9qosGU",
+      "pack": "rollable-tables",
+      "file": "bg-staffetta-difetti.json"
+    },
+    "Ambulante": {
+      "id": "SCZOQUs6dwSMGMuW",
+      "pack": "backgrounds",
+      "file": "ambulante.json"
+    },
+    "Passatore": {
+      "id": "YA02Wj2Z5jNBJhuv",
+      "pack": "backgrounds",
+      "file": "passatore.json"
+    },
+    "Locandiere": {
+      "id": "locandierevcqp61",
+      "pack": "backgrounds",
+      "file": "locandiere.json"
+    },
+    "Cacciatore di reliquie": {
+      "id": "kZnrQOHIYOSyOsAK",
+      "pack": "backgrounds",
+      "file": "cacciatore_di_reliquie.json"
+    },
+    "Villano": {
+      "id": "zam9ll6tVYVti8Dg",
+      "pack": "backgrounds",
+      "file": "villano.json"
+    },
+    "Innamorato": {
+      "id": "70tpUeOPIw5GaIlp",
+      "pack": "backgrounds",
+      "file": "innamorato.json"
+    },
+    "Contrabbandiere": {
+      "id": "Uz7knHB8tJ24kHWB",
+      "pack": "backgrounds",
+      "file": "contrabbandiere.json"
+    },
+    "Disertore": {
+      "id": "FzDfJPcQdqqsfyJN",
+      "pack": "backgrounds",
+      "file": "disertore.json"
+    },
+    "Pellegrino": {
+      "id": "pellegrinovu1zl4",
+      "pack": "backgrounds",
+      "file": "pellegrino.json"
+    },
+    "Impresario": {
+      "id": "Dav78dxdSkYR1nJ1",
+      "pack": "backgrounds",
+      "file": "impresario.json"
+    },
+    "Duro": {
+      "id": "Xh0Wit6xNBg6i1cW",
+      "pack": "backgrounds",
+      "file": "duro.json"
+    },
+    "Azzeccagarbugli": {
+      "id": "tQu8qVBF2R3X5c68",
+      "pack": "backgrounds",
+      "file": "azzeccagarbugli.json"
+    },
+    "Staffetta": {
+      "id": "WUkKXPJBT9nutYsv",
+      "pack": "backgrounds",
+      "file": "staffetta.json"
+    },
+    "Attaccabrighe": {
+      "id": "7ZvKCuTTkvUVK1FA",
+      "pack": "backgrounds",
+      "file": "attaccabrighe.json"
+    },
+    "Brado": {
+      "id": "8oVCWjLqIETIoB33",
+      "pack": "backgrounds",
+      "file": "brado.json"
+    },
+    "Lucignolo": {
+      "id": "TlElhe3MzIQPRzjA",
+      "pack": "backgrounds",
+      "file": "lucignolo.json"
+    },
+    "Prelato": {
+      "id": "t2d0OEceqtzhfhq1",
+      "pack": "backgrounds",
+      "file": "prelato.json"
+    },
+    "Bargello": {
+      "id": "vzOOOo25fVZ256zT",
+      "pack": "backgrounds",
+      "file": "bargello.json"
+    },
+    "Background di Brancalonia": {
+      "id": "EEsOdEbYtbGzjC3l",
+      "pack": "backgrounds",
+      "file": "index.json"
+    },
+    "Cantastorie": {
+      "id": "4jzTzyTxVU5iyElo",
+      "pack": "backgrounds",
+      "file": "cantastorie.json"
+    },
+    "Cialtrone": {
+      "id": "I8Fw0b7jQZExK3Ip",
+      "pack": "backgrounds",
+      "file": "cialtrone.json"
+    },
+    "Fuggitivo": {
+      "id": "LC8qaXhVl0b7oo1I",
+      "pack": "backgrounds",
+      "file": "fuggitivo.json"
+    },
+    "danni": {
+      "id": "MJhOdqplQyDP6QGW",
+      "pack": "regole",
+      "file": "rissabasedanni.json"
+    },
+    "Bicchierata": {
+      "id": "f1qcENXiMdUxkJAV",
+      "pack": "regole",
+      "file": "rissa-mossa-bicchierata.json"
+    },
+    "Tipo e sottotipo": {
+      "id": "vAzijnKNxEPquw7L",
+      "pack": "regole",
+      "file": "generatore-tipo.json"
+    },
+    "Regole di Bagordi": {
+      "id": "zFmD7VLVX0oad55A",
+      "pack": "regole",
+      "file": "bagordiintroduzione.json"
+    },
+    "Randellata": {
+      "id": "fkGZwhtKaEsxwW98",
+      "pack": "regole",
+      "file": "rissa-mossa-randellata.json"
+    },
+    "Giostra dei Poveri": {
+      "id": "nMHTj11XMrFaRw7J",
+      "pack": "regole",
+      "file": "giostradeipoveri.json"
+    },
+    "Regola": {
+      "id": "1VSRfcNkTAWJpRcl",
+      "pack": "regole",
+      "file": "modificatori.json"
+    },
+    "Cosa ci si incontra": {
+      "id": "zOIKAEle0RQ3EGeK",
+      "pack": "regole",
+      "file": "strade-incontri.json"
+    },
+    "Tipo di strada": {
+      "id": "stradetipo011cbc",
+      "pack": "regole",
+      "file": "strade-tipo.json"
+    },
+    "Finta": {
+      "id": "zBF4sJcn35vtMUM6",
+      "pack": "regole",
+      "file": "rissa-mossa-finta.json"
+    },
+    "Nome e insegna": {
+      "id": "KVUZHCyzURwleFw1",
+      "pack": "regole",
+      "file": "generatorenomeinsegna.json"
+    },
+    "recupero": {
+      "id": "1jqdzs7HQu3jhEqm",
+      "pack": "regole",
+      "file": "rissa-base-recupero.json"
+    },
+    "Armi di Brancalonia": {
+      "id": "xSk4xvmEy7IUrPPS",
+      "pack": "regole",
+      "file": "armi.json"
+    },
+    "Botte alla Botte": {
+      "id": "o5AFfuKEFevpob11",
+      "pack": "regole",
+      "file": "botte-alla-botte.json"
+    },
+    "Saccagnata": {
+      "id": "U3LpqpBxxtdo1cTu",
+      "pack": "regole",
+      "file": "rissamossasaccagnata.json"
+    },
+    "Presa dell'Orso": {
+      "id": "Y33lCUKgaCvRhZWx",
+      "pack": "regole",
+      "file": "rissa-mossa-presa-dell-orso.json"
+    },
+    "armi": {
+      "id": "z7wZ5GwU4V9SR9pk",
+      "pack": "regole",
+      "file": "rissa-base-armi.json"
+    },
+    "All'Ospedale": {
+      "id": "NJQcEsEVVo868ciA",
+      "pack": "regole",
+      "file": "rissa-batoste-6.json"
+    },
+    "Sdubbidata": {
+      "id": "coBG3OpreoQcyMeM",
+      "pack": "regole",
+      "file": "rissamossasdubbidata.json"
+    },
+    "Generatore di Bettole": {
+      "id": "RGdOnAWg23esdsuS",
+      "pack": "regole",
+      "file": "generatoreintroduzione.json"
+    },
+    "Botte da Orbi e Bisacce Sfondate": {
+      "id": "BI9fJxKxJP5ksHLl",
+      "pack": "regole",
+      "file": "bagordi-tabella.json"
+    },
+    "Colpo con Oggetto": {
+      "id": "YX7ilNouHHCEw9rR",
+      "pack": "regole",
+      "file": "rissamossabaseoggettoimprovvisato.json"
+    },
+    "Sgrinfia": {
+      "id": "V4OzYoVSC2mGrnhs",
+      "pack": "regole",
+      "file": "rissa-mossa-sgrinfia.json"
+    },
+    "Dove va la strada": {
+      "id": "zw4cngwuyLe3nr0e",
+      "pack": "regole",
+      "file": "strade-destinazioni.json"
+    },
+    "Qualcosa da bere?": {
+      "id": "C03wl4VyHtdsfoMJ",
+      "pack": "regole",
+      "file": "generatore-bevande.json"
+    },
+    "Buttafuori": {
+      "id": "HvjNfrpXgXv4ktFH",
+      "pack": "regole",
+      "file": "rissamossabuttafuori.json"
+    },
+    "Per poterla percorrere": {
+      "id": "Ccuo2pwTnWP80lLo",
+      "pack": "regole",
+      "file": "stradeaccesso.json"
+    },
+    "Applicare la Tabella": {
+      "id": "AXNajDqrgAVM3Ghl",
+      "pack": "regole",
+      "file": "bagordi-istruzioni.json"
+    },
+    "Ammaccato": {
+      "id": "ngYIcbfVpcaKkWDZ",
+      "pack": "regole",
+      "file": "rissabatoste1.json"
+    },
+    "Testata": {
+      "id": "fbUHatyImmi4tHUP",
+      "pack": "regole",
+      "file": "rissa-mossa-base-testata.json"
+    },
+    "ko": {
+      "id": "bY8fwmVlWP5pE0dz",
+      "pack": "regole",
+      "file": "rissa-base-ko.json"
+    },
+    "Provocazione": {
+      "id": "t3lAkLF0rud4dctr",
+      "pack": "regole",
+      "file": "rissamossaprovocazione.json"
+    },
+    "Fresco": {
+      "id": "dPsVaMEdlabhcks2",
+      "pack": "regole",
+      "file": "rissa-batoste-0.json"
+    },
+    "Cimeli": {
+      "id": "6jaUR1OcauWZKN6T",
+      "pack": "regole",
+      "file": "cimeli.json"
+    },
+    "Pugno/Calcio": {
+      "id": "3vSog4XzTiFDmX2a",
+      "pack": "regole",
+      "file": "rissa-mossa-base-pugno.json"
+    },
+    "Morso": {
+      "id": "flYe97imWnafHftd",
+      "pack": "regole",
+      "file": "rissa-mossa-morso.json"
+    },
+    "Capocciata": {
+      "id": "CsSxlPuS49rLE72L",
+      "pack": "regole",
+      "file": "rissa-mossa-capocciata.json"
+    },
+    "Inciampo": {
+      "id": "BGBYJZcPfXTXu9D2",
+      "pack": "regole",
+      "file": "rissamossainciampo.json"
+    },
+    "Gara di Mangiate": {
+      "id": "oUcM916Wg3rTGFxd",
+      "pack": "regole",
+      "file": "gara-di-mangiate.json"
+    },
+    "Spinta": {
+      "id": "fugUTqubXmWDqILz",
+      "pack": "regole",
+      "file": "rissamossabasespinta.json"
+    },
+    "Sediata": {
+      "id": "yG07VuRPwL5FuxGE",
+      "pack": "regole",
+      "file": "rissamossasediata.json"
+    },
+    "Cantico da Bettola": {
+      "id": "2mBdBDwV8h5WLTEB",
+      "pack": "regole",
+      "file": "generatore-citazione.json"
+    },
+    "Raffica di Pugni": {
+      "id": "b2P72dU0oe7bWaw0",
+      "pack": "regole",
+      "file": "rissamossarafficadipugni.json"
+    },
+    "Tenutario": {
+      "id": "pXcyTbsOezsfMEv5",
+      "pack": "regole",
+      "file": "generatoretenutario.json"
+    },
+    "Malconcio": {
+      "id": "PRAamLqnYlvQueeV",
+      "pack": "regole",
+      "file": "rissa-batoste-3.json"
+    },
+    "magia": {
+      "id": "gyuRPYcI3JSQksRQ",
+      "pack": "regole",
+      "file": "rissa-base-magia.json"
+    },
+    "Pesto": {
+      "id": "mSSm6G6ymhpHiBra",
+      "pack": "regole",
+      "file": "rissabatoste2.json"
+    },
+    "Cazzottone Rotante": {
+      "id": "ib1G2Xuq6DIGDD2A",
+      "pack": "regole",
+      "file": "rissa-mossa-cazzottone-rotante.json"
+    },
+    "Tabella dei Rischi del Mestiere": {
+      "id": "Oaizglcu6HLjegcT",
+      "pack": "regole",
+      "file": "rischimestieretabella.json"
+    },
+    "K.O.": {
+      "id": "Flhv8iaCXJTgJWos",
+      "pack": "regole",
+      "file": "rissa-batoste-5.json"
+    },
+    "Specialita della casa": {
+      "id": "uFV3JGWP2bUB7t0J",
+      "pack": "regole",
+      "file": "generatore-specialita.json"
+    },
+    "Particolarita": {
+      "id": "HF4xWyEMdMQXCnhJ",
+      "pack": "regole",
+      "file": "generatoreparticolarita.json"
+    },
+    "attivazione": {
+      "id": "F3dTHShTokYPfAgZ",
+      "pack": "regole",
+      "file": "rissa-base-attivazione.json"
+    },
+    "Regole di Brancalonia": {
+      "id": "GctAwtzwi3GOXBN4",
+      "pack": "regole",
+      "file": "index.json"
+    },
+    "Minchiate": {
+      "id": "IKFILkaqH7qd5KcU",
+      "pack": "regole",
+      "file": "minchiate.json"
+    },
+    "Conciato per le Feste": {
+      "id": "TioCoY2BNMEDXlI9",
+      "pack": "regole",
+      "file": "rissabatoste4.json"
+    },
+    "🛏️ Sistema Riposo": {
+      "id": "4aXPnIZoDHqlSLMy",
+      "pack": "macro",
+      "file": "000016.json"
+    },
+    "🗡️ Oggetto Scadente - Rottura": {
+      "id": "ZVeGuT50EVfUer6u",
+      "pack": "macro",
+      "file": "oggettoscadente.json"
+    },
+    "🎭 Gestione Infamia": {
+      "id": "jtarQdHmhXiT6yf7",
+      "pack": "macro",
+      "file": "000001.json"
+    },
+    "🎰 Menagramo": {
+      "id": "dNJicrzhLkquum9G",
+      "pack": "macro",
+      "file": "000006.json"
+    },
+    "🙏 Invocazione ai Santi": {
+      "id": "kbcYIZbuIuiHAqcp",
+      "pack": "macro",
+      "file": "invocazionesanti.json"
+    },
+    "🏰 Sistema Fazioni": {
+      "id": "PuJ86U9r1HnUOnPx",
+      "pack": "macro",
+      "file": "000010.json"
+    },
+    "🛡️ Equipaggiamento Scadente": {
+      "id": "vdMKzhqCRIlKgGRK",
+      "pack": "macro",
+      "file": "000011.json"
+    },
+    "🌲 Incontri Selvaggi": {
+      "id": "0exUchRIfZS80TnJ",
+      "pack": "macro",
+      "file": "000007.json"
+    },
+    "🤢 Sistema Malattie": {
+      "id": "Dh2MZvqTTmwUr5ju",
+      "pack": "macro",
+      "file": "000008.json"
+    },
+    "Mostra Regole Brancalonia": {
+      "id": "qOSURS089Mlz9UPE",
+      "pack": "macro",
+      "file": "mostraregole.json"
+    },
+    "🎲 Tira su Tabella": {
+      "id": "lxX0WAgLQP8ji5eu",
+      "pack": "macro",
+      "file": "000012.json"
+    },
+    "⚔️ Gestione Compagnia di Ventura": {
+      "id": "DNrSneyKzXBX9aXa",
+      "pack": "macro",
+      "file": "gestionebanda.json"
+    },
+    "🍺 Rissa da Taverna": {
+      "id": "0M84rtjYtNH9Zv1v",
+      "pack": "macro",
+      "file": "000004.json"
+    },
+    "💰 Lavori Sporchi": {
+      "id": "6uqn4gNnJLKp47CT",
+      "pack": "macro",
+      "file": "000005.json"
+    },
+    "👑 Privilegi Background": {
+      "id": "6nigfmdsOH9lJTuR",
+      "pack": "macro",
+      "file": "000013.json"
+    },
+    "⚔️ Sistema Duelli": {
+      "id": "VlmWuOAJQKuVehXl",
+      "pack": "macro",
+      "file": "000009.json"
+    },
+    "🎪 Intrattenimento Taverna": {
+      "id": "Ar4vgQwQKE9KyL4t",
+      "pack": "macro",
+      "file": "000014.json"
+    },
+    "🏛️ Gestione Compagnia": {
+      "id": "kmwEgb4wuDNzgi0K",
+      "pack": "macro",
+      "file": "000002.json"
+    },
+    "😈 Tracker Infamia": {
+      "id": "DFnh5vJWW3kWDWWh",
+      "pack": "macro",
+      "file": "trackerinfamia.json"
+    },
+    "🏠 Gestione Haven": {
+      "id": "xjUcrpmbbrVvUIwI",
+      "pack": "macro",
+      "file": "000003.json"
+    },
+    "📜 Malefatte e Taglie": {
+      "id": "9aDeg4sm2kwgCGny",
+      "pack": "macro",
+      "file": "000015.json"
+    },
+    "🥊 Botte da Orbi": {
+      "id": "zTG0kJXHE1RNJX3h",
+      "pack": "macro",
+      "file": "bottedaorbi.json"
+    },
+    "Bracaloniani": {
+      "id": "k5tCKvAbDS2FYCkQ",
+      "pack": "razze",
+      "file": "variantebracaloniani.json"
+    },
+    "Pupo": {
+      "id": "nVfWRBjyTTNDS5qo",
+      "pack": "razze",
+      "file": "sottorazzapupo.json"
+    },
+    "Levantini": {
+      "id": "UOnRWhX8KTaeMVED",
+      "pack": "razze",
+      "file": "variantelevantini.json"
+    },
+    "Inesistente": {
+      "id": "7jyXXyXe4bTgVC8d",
+      "pack": "razze",
+      "file": "inesistente.json"
+    },
+    "Svanzici": {
+      "id": "YbeZPYwtHFhhwry3",
+      "pack": "razze",
+      "file": "variantesvanzici.json"
+    },
+    "Gatto Lupesco": {
+      "id": "FqZmaSbH4rsGrjPQ",
+      "pack": "razze",
+      "file": "gatto_lupesco.json"
+    },
+    "Pinocchio": {
+      "id": "q8DV0XG3oaNYRHcn",
+      "pack": "razze",
+      "file": "sottorazzapinocchio.json"
+    },
+    "Pantegano": {
+      "id": "GJRmaTmtNHZJe4je",
+      "pack": "razze",
+      "file": "pantegano.json"
+    },
+    "Stirpi di Brancalonia": {
+      "id": "aUJ4fx4Ps66II3sb",
+      "pack": "razze",
+      "file": "index.json"
+    },
+    "Accrocco di Reliquie": {
+      "id": "tZuoc9GB3LIPF1rP",
+      "pack": "npc",
+      "file": "accroccodireliquie.json"
+    },
+    "Folla Inferocita": {
+      "id": "64aKEGWZMl8W1PWF",
+      "pack": "npc",
+      "file": "follainferocita.json"
+    },
+    "Capobirro": {
+      "id": "E7wtrisyQY6CUaRe",
+      "pack": "npc",
+      "file": "capobirro.json"
+    },
+    "Vilupera": {
+      "id": "4TmA5P6hRTy0iicY",
+      "pack": "npc",
+      "file": "vilupera.json"
+    },
+    "Duellante": {
+      "id": "Sm1PFsJaRSIhNv9p",
+      "pack": "npc",
+      "file": "duellante.json"
+    },
+    "Leone di Nemea": {
+      "id": "2lSlHwSDNlAH7L4V",
+      "pack": "npc",
+      "file": "leonedinemea.json"
+    },
+    "Dragone": {
+      "id": "nLh6AobEskom1TqV",
+      "pack": "npc",
+      "file": "dragone.json"
+    },
+    "Confinato": {
+      "id": "fFM8ZVqoUc1Q53dS",
+      "pack": "npc",
+      "file": "confinato.json"
+    },
+    "Monaco Corrotto": {
+      "id": "S3taOfZnpaCkEzzi",
+      "pack": "npc",
+      "file": "png_minori003_monacocorrotto.json"
+    },
+    "Tagliagole": {
+      "id": "tagliagoledfb057",
+      "pack": "npc",
+      "file": "tagliagole.json"
+    },
+    "Il Patriarca Re": {
+      "id": "O5RbmwoRe0WHBInb",
+      "pack": "npc",
+      "file": "png_leggendari001_ilpatriarcare.json"
+    },
+    "Cane Infernale di Quartiere": {
+      "id": "bmNHmunhTgV1Sqld",
+      "pack": "npc",
+      "file": "mostri_minori001_caneinfernalediquartiere.json"
+    },
+    "Sciame di Corvoragni": {
+      "id": "PvD66rLArLJ1xB5z",
+      "pack": "npc",
+      "file": "sciamedicorvoragni.json"
+    },
+    "Drago delle Paludi (Tarantasio Minore)": {
+      "id": "MlBazyoMLK7U8epE",
+      "pack": "npc",
+      "file": "mostri_maggiori001_dragodellepaluditarantasiominore.json"
+    },
+    "Animali Parlanti": {
+      "id": "krmDiRnf00HSJLtg",
+      "pack": "npc",
+      "file": "animaliparlanti.json"
+    },
+    "Bigatto": {
+      "id": "APx83Z6sGr9Awxt3",
+      "pack": "npc",
+      "file": "bigatto.json"
+    },
+    "Birro": {
+      "id": "dmVzn1YtakTR2zCR",
+      "pack": "npc",
+      "file": "birro.json"
+    },
+    "Strega della Palude": {
+      "id": "WLhyIeSIrY4RgtlX",
+      "pack": "npc",
+      "file": "mostri_maggiori003_stregadellapalude.json"
+    },
+    "Foionco": {
+      "id": "JVtp8ozIgFIoImIP",
+      "pack": "npc",
+      "file": "foionco.json"
+    },
+    "Ombra del Bestemmiatore": {
+      "id": "5agGf8Dghnk1IyGt",
+      "pack": "npc",
+      "file": "mostri_minori003_ombradelbestemmiatore.json"
+    },
+    "Cacciatore di Equitaglia": {
+      "id": "5gophgUmrcgTxs1q",
+      "pack": "npc",
+      "file": "cacciatorediequitaglia.json"
+    },
+    "Orlando il Malnato": {
+      "id": "PXQyyGGuATkyRuTr",
+      "pack": "npc",
+      "file": "png_leggendari002_orlandoilmalnato.json"
+    },
+    "Gabelliere Corrotto": {
+      "id": "ZnVfOYdNel8MAilU",
+      "pack": "npc",
+      "file": "png_minori001_gabellierecorrotto.json"
+    },
+    "Pagano": {
+      "id": "4YpHmcro4Svt58dF",
+      "pack": "npc",
+      "file": "pagano.json"
+    },
+    "Comandante": {
+      "id": "comandanteb69bf5",
+      "pack": "npc",
+      "file": "comandante.json"
+    },
+    "Serpegatto": {
+      "id": "serpegattob8fdcb",
+      "pack": "npc",
+      "file": "serpegatto.json"
+    },
+    "Madonna Violante": {
+      "id": "PshsGC7SsiUuIjBB",
+      "pack": "npc",
+      "file": "png_maggiori002_madonnaviolante.json"
+    },
+    "Bagatto": {
+      "id": "niyRz2WIbH5z4KBB",
+      "pack": "npc",
+      "file": "bagatto.json"
+    },
+    "Capitano Fieramosca": {
+      "id": "BJOQ4jvZEoVNn4gj",
+      "pack": "npc",
+      "file": "png_maggiori001_capitanofieramosca.json"
+    },
+    "Lo Scarrafone d'Oro": {
+      "id": "QP8fZ1PZQdXim4kM",
+      "pack": "npc",
+      "file": "creature_uniche002_loscarrafonedoro.json"
+    },
+    "Il Gatto Mammone": {
+      "id": "YdnrS5DPm8lAvvJA",
+      "pack": "npc",
+      "file": "creature_uniche001_ilgattomammone.json"
+    },
+    "Malacoda": {
+      "id": "GdfLUgYKa5YyCotK",
+      "pack": "npc",
+      "file": "malacoda.json"
+    },
+    "Folletto": {
+      "id": "fDaC5S6nNpChXkJq",
+      "pack": "npc",
+      "file": "folletto.json"
+    },
+    "Alimentale di Polenta": {
+      "id": "7c0yYvtiEJoQ83tx",
+      "pack": "npc",
+      "file": "alimentaledipolenta.json"
+    },
+    "Spiritello della Cantina": {
+      "id": "oHu1t0lvblZGt9M6",
+      "pack": "npc",
+      "file": "mostri_minori002_spiritellodellacantina.json"
+    },
+    "Bavalischio": {
+      "id": "pbgmVzUwgSgh7W2c",
+      "pack": "npc",
+      "file": "bavalischio.json"
+    },
+    "Cavaliere Senza Testa": {
+      "id": "DJqHd8o4rcpl7nsi",
+      "pack": "npc",
+      "file": "mostri_maggiori002_cavalieresenzatesta.json"
+    },
+    "Befana": {
+      "id": "96k4hRm0NsAarbJo",
+      "pack": "npc",
+      "file": "befana.json"
+    },
+    "Agente di Equitaglia": {
+      "id": "LlTWdGIbaZew1wGo",
+      "pack": "npc",
+      "file": "agentediequitaglia.json"
+    },
+    "Brigante Veterano": {
+      "id": "YIcBpugX2et22lxn",
+      "pack": "npc",
+      "file": "png_minori002_briganteveterano.json"
+    },
+    "Fra' Cagnaccio": {
+      "id": "n9d0uHpoITGBVnph",
+      "pack": "npc",
+      "file": "png_maggiori003_fracagnaccio.json"
+    },
+    "Orco Cattivo": {
+      "id": "lSAIson7PRbb1lRw",
+      "pack": "npc",
+      "file": "orcocattivo.json"
+    },
+    "Marroca": {
+      "id": "VxTUnzUZG3gjJTOB",
+      "pack": "npc",
+      "file": "marroca.json"
+    },
+    "Anguana": {
+      "id": "fD3IMW7LnPw8zWfN",
+      "pack": "npc",
+      "file": "anguana.json"
+    }
+  },
+  "spells": {
+    "Guida": {
+      "id": "spellguida9ad237",
+      "pack": "incantesimi",
+      "file": "spell-guida.json"
+    },
+    "Individuazione del Magico": {
+      "id": "qsbIiLnVhTrLH1wS",
+      "pack": "incantesimi",
+      "file": "spellindividuazionemagia.json"
+    },
+    "Passo Traslato": {
+      "id": "dfOoSJUf9P18LzIR",
+      "pack": "incantesimi",
+      "file": "spell-passo-traslato.json"
+    },
+    "Spell Base 018 Accecare Assordare": {
+      "id": "Z5XZtiIPXNh5HgAG",
+      "pack": "incantesimi",
+      "file": "spell-base-018_accecare_assordare.json"
+    },
+    "Marchio Incandescente": {
+      "id": "pEf5phizFhd0y5sE",
+      "pack": "incantesimi",
+      "file": "spellmarchioincandescente.json"
+    },
+    "Levitazione": {
+      "id": "ri7WoQaoWEFCN3No",
+      "pack": "incantesimi",
+      "file": "spell-levitazione.json"
+    },
+    "Spell Base 003 Caratteristica Potenziata": {
+      "id": "TRDOQMjSHZRilP8F",
+      "pack": "incantesimi",
+      "file": "spell-base-003_caratteristica_potenziata.json"
+    },
+    "Volare": {
+      "id": "17kUyzlrhcXqL5lA",
+      "pack": "incantesimi",
+      "file": "spell-volare.json"
+    },
+    "Ritirata Veloce": {
+      "id": "Eu7JxIirVVtpWuOx",
+      "pack": "incantesimi",
+      "file": "spell-ritirata-veloce.json"
+    },
+    "Infliggi Ferite": {
+      "id": "BtdzyqKn7RudjLyE",
+      "pack": "incantesimi",
+      "file": "spell-infliggi-ferite.json"
+    },
+    "Lentezza": {
+      "id": "XVJcXkRyjSZym6vK",
+      "pack": "incantesimi",
+      "file": "spelllentezza.json"
+    },
+    "Scurovisione": {
+      "id": "fnziUJxUv1pXSM8A",
+      "pack": "incantesimi",
+      "file": "spell-scurovisione.json"
+    },
+    "Fulmine Tracciante": {
+      "id": "TZrsGuiI27RKArhq",
+      "pack": "incantesimi",
+      "file": "spell-fulmine-tracciante.json"
+    },
+    "Mani Brucianti": {
+      "id": "ihxzdKdiWMkoMJGi",
+      "pack": "incantesimi",
+      "file": "spell-mani-brucianti.json"
+    },
+    "Palla di Fuoco": {
+      "id": "Ar7YafgIhI0STWXA",
+      "pack": "incantesimi",
+      "file": "spellpalladifuoco.json"
+    },
+    "Anatema": {
+      "id": "1qwt792hv7p4ZZyH",
+      "pack": "incantesimi",
+      "file": "spell-anatema.json"
+    },
+    "Fiotto Acido": {
+      "id": "EgAX1aZpkO8iO0mc",
+      "pack": "incantesimi",
+      "file": "spellfiottoacido.json"
+    },
+    "Oscurità": {
+      "id": "1WkMvYKmVaI5aCWL",
+      "pack": "incantesimi",
+      "file": "spelloscurita.json"
+    },
+    "Resistenza": {
+      "id": "Y8eDn4lteee3FH3I",
+      "pack": "incantesimi",
+      "file": "spell-resistenza.json"
+    },
+    "Mondare": {
+      "id": "6zQD2KXxoL8nfkIB",
+      "pack": "incantesimi",
+      "file": "spell-mondare.json"
+    },
+    "Passo Fatato": {
+      "id": "YlwKAvy2XoNMqfrT",
+      "pack": "incantesimi",
+      "file": "spellpassofatato.json"
+    },
+    "Benedizione": {
+      "id": "iakGxIUzEhJFt0ev",
+      "pack": "incantesimi",
+      "file": "spell-benedizione.json"
+    },
+    "Luce": {
+      "id": "bLyH9HLpxwUuxGtU",
+      "pack": "incantesimi",
+      "file": "spellluce.json"
+    },
+    "Cura Ferite": {
+      "id": "IeRcq2XxdjfuGP4w",
+      "pack": "incantesimi",
+      "file": "spell-cura-ferite.json"
+    },
+    "Parola Guaritrice": {
+      "id": "G7xGGPeIDFXMDFaJ",
+      "pack": "incantesimi",
+      "file": "spell-parola-guaritrice.json"
+    },
+    "Dardo Incantato": {
+      "id": "jUj0UNZcJRyBB6Mw",
+      "pack": "incantesimi",
+      "file": "spelldardoincantato.json"
+    },
+    "Assicurazione": {
+      "id": "ZMApsmTXu78mfWSf",
+      "pack": "incantesimi",
+      "file": "spell-assicurazione.json"
+    },
+    "Sacra Fiamma": {
+      "id": "c5lJOZIwpp8qRClR",
+      "pack": "incantesimi",
+      "file": "spell-sacra-fiamma.json"
+    },
+    "Spell Base 020 Animare I Morti": {
+      "id": "Sh8bGvBqjDQai0xE",
+      "pack": "incantesimi",
+      "file": "spell-base-020_animare_i_morti.json"
+    },
+    "Comprensione dei Linguaggi": {
+      "id": "16Ne3kpFZLxkqw5d",
+      "pack": "incantesimi",
+      "file": "spellcomprensionelinguaggi.json"
+    },
+    "Spruzzo Velenoso": {
+      "id": "v7TuNbBtOaf7JXQX",
+      "pack": "incantesimi",
+      "file": "spell-spruzzo-velenoso.json"
+    },
+    "Invisibilità": {
+      "id": "rOBmNVSRmGdVBMtz",
+      "pack": "incantesimi",
+      "file": "spellinvisibilita.json"
+    },
+    "Charme": {
+      "id": "x2xtiw8gmUKmjG7m",
+      "pack": "incantesimi",
+      "file": "spellcharme.json"
+    },
+    "Eroismo": {
+      "id": "3NUz5lNc2uA09F3C",
+      "pack": "incantesimi",
+      "file": "spell-eroismo.json"
+    },
+    "Esorcismo": {
+      "id": "jZM8psSoXZ8LVjlC",
+      "pack": "incantesimi",
+      "file": "spellesorcismo.json"
+    },
+    "Frantumare": {
+      "id": "l92L0bmhgvZARrpb",
+      "pack": "incantesimi",
+      "file": "spell-frantumare.json"
+    },
+    "Prestidigitazione": {
+      "id": "W6IhTMAHtn1Di9K8",
+      "pack": "incantesimi",
+      "file": "spellprestidigitazione.json"
+    },
+    "Colpo Accurato": {
+      "id": "Nw7E0JJDGx5oQ7UF",
+      "pack": "incantesimi",
+      "file": "spellcolpoaccurato.json"
+    },
+    "Spell Base 002 Purificare Cibo E Bevande": {
+      "id": "FmzGDq6DxndMeTWV",
+      "pack": "incantesimi",
+      "file": "spell-base-002_purificare_cibo_e_bevande.json"
+    },
+    "Raggio di Gelo": {
+      "id": "lSetzz63lxesh9To",
+      "pack": "incantesimi",
+      "file": "spell-raggio-di-gelo.json"
+    },
+    "Lama Arcana": {
+      "id": "HlRaRf15a64gOgwH",
+      "pack": "incantesimi",
+      "file": "spell-lama-arcana.json"
+    },
+    "Spell Base 011 Guardiani Spirituali": {
+      "id": "VMvqOevfcQU89aIM",
+      "pack": "incantesimi",
+      "file": "spell-base-011_guardiani_spirituali.json"
+    },
+    "Tocco Gelido": {
+      "id": "iNbgOfi1h0ZcZsNR",
+      "pack": "incantesimi",
+      "file": "spelltoccogelido.json"
+    },
+    "Spell Base 006 Dissolvi Magie": {
+      "id": "f2fQ4l4nsJWd9GNb",
+      "pack": "incantesimi",
+      "file": "spell-base-006_dissolvi_magie.json"
+    },
+    "Amicizia": {
+      "id": "1flOBbfZDoqOR577",
+      "pack": "incantesimi",
+      "file": "spell-amicizia.json"
+    },
+    "Raggio Rovente": {
+      "id": "QtyQlBhfWPlyAkOW",
+      "pack": "incantesimi",
+      "file": "spellraggiorovente.json"
+    },
+    "Mano Magica": {
+      "id": "I14HzN0qfhykoKUz",
+      "pack": "incantesimi",
+      "file": "spell-mano-magica.json"
+    },
+    "Produrre Fiamma": {
+      "id": "sCxIBxxjGpSJCD53",
+      "pack": "incantesimi",
+      "file": "spellprodurrefiamma.json"
+    },
+    "Blocca Persone": {
+      "id": "TXEJBxHOwS2WGmFd",
+      "pack": "incantesimi",
+      "file": "spellbloccapersone.json"
+    },
+    "Sonno": {
+      "id": "spellsonno1b8953",
+      "pack": "incantesimi",
+      "file": "spellsonno.json"
+    },
+    "Banchetto dei Poveri": {
+      "id": "AS4cSPxMI6xRmj0F",
+      "pack": "incantesimi",
+      "file": "spell-banchetto-dei-poveri.json"
+    },
+    "Onda Tonante": {
+      "id": "MTfcDShZCyjqJpVk",
+      "pack": "incantesimi",
+      "file": "spell-onda-tonante.json"
+    },
+    "Artificio Druidico": {
+      "id": "LC4v1RAUloAvWTji",
+      "pack": "incantesimi",
+      "file": "spellartificiodruidico.json"
+    },
+    "Messaggio": {
+      "id": "xl1nKEdwXJp9Vfk3",
+      "pack": "incantesimi",
+      "file": "spell-messaggio.json"
+    },
+    "Bollo di Qualità": {
+      "id": "quYyTDNTQnFlblJs",
+      "pack": "incantesimi",
+      "file": "spellbollodiqualita.json"
+    },
+    "Colpo Shocking": {
+      "id": "xl0uHGDd1cBvUeKs",
+      "pack": "incantesimi",
+      "file": "spell-colpo-shocking.json"
+    },
+    "Taumaturgia": {
+      "id": "m4GTq2BXtuXfV6lN",
+      "pack": "incantesimi",
+      "file": "spelltaumaturgia.json"
+    },
+    "Armatura Magica": {
+      "id": "RbaoPHIaSZZXaMAx",
+      "pack": "incantesimi",
+      "file": "spell-armatura-magica.json"
+    },
+    "Controincantesimo": {
+      "id": "bFBLSAHYByvwauYr",
+      "pack": "incantesimi",
+      "file": "spellcontroincantesimo.json"
+    },
+    "Identificare": {
+      "id": "IGH7yBmO43fNhv01",
+      "pack": "incantesimi",
+      "file": "spell-identificare.json"
+    },
+    "Spell Base 012 Rimuovi Maledizione": {
+      "id": "PLoM4B0DwTB5uDeX",
+      "pack": "incantesimi",
+      "file": "spell-base-012_rimuovi_maledizione.json"
+    },
+    "Trucchetto della Mano": {
+      "id": "evvns8FY5NeRUGPY",
+      "pack": "incantesimi",
+      "file": "spell-trucchetto-della-mano.json"
+    },
+    "Randello Incantato": {
+      "id": "LYCQnuqNQJrtvFlX",
+      "pack": "incantesimi",
+      "file": "spell-randello-incantato.json"
+    },
+    "Ragnatela": {
+      "id": "imALkWmYpLIlvUgA",
+      "pack": "incantesimi",
+      "file": "spell-ragnatela.json"
+    },
+    "Suggestione": {
+      "id": "p4kKYZ7b67tLli1I",
+      "pack": "incantesimi",
+      "file": "spellsuggestione.json"
+    },
+    "Invisibilità Superiore": {
+      "id": "jTjmV2GjEfzafKHx",
+      "pack": "incantesimi",
+      "file": "spell-invisibilita-superiore.json"
+    },
+    "Vita Falsata": {
+      "id": "MljbZ7IPYf2BLQ77",
+      "pack": "incantesimi",
+      "file": "spell-vita-falsata.json"
+    },
+    "Spell Base 005 Creare Cibo E Acqua": {
+      "id": "jDmDGPsy0tYPYNYP",
+      "pack": "incantesimi",
+      "file": "spell-base-005_creare_cibo_e_acqua.json"
+    },
+    "Dardo di Fuoco": {
+      "id": "xt8GmWRur6MSIf0A",
+      "pack": "incantesimi",
+      "file": "spelldardodifuoco.json"
+    },
+    "Silenzio": {
+      "id": "gI5gsc6OfPS18wnR",
+      "pack": "incantesimi",
+      "file": "spell-silenzio.json"
+    },
+    "Spell Base 009 Protezione Dal Bene E Dal Male": {
+      "id": "okor7wNuHQbe4ICm",
+      "pack": "incantesimi",
+      "file": "spell-base-009_protezione_dal_bene_e_dal_male.json"
+    },
+    "Comando": {
+      "id": "eAjKqIBUhzctBygO",
+      "pack": "incantesimi",
+      "file": "spellcomando.json"
+    },
+    "Spell Base 004 Ristorare Inferiore": {
+      "id": "7o6CyFxGPfbUrKYP",
+      "pack": "incantesimi",
+      "file": "spell-base-004_ristorare_inferiore.json"
+    },
+    "Riparare": {
+      "id": "tIv6yB5Lf0tMIl7H",
+      "pack": "incantesimi",
+      "file": "spellriparare.json"
+    },
+    "Spell Base 008 Eroismo": {
+      "id": "QP88jea2IgvzOtYV",
+      "pack": "incantesimi",
+      "file": "spell-base-008_eroismo.json"
+    },
+    "Blocca Mostri": {
+      "id": "YUdSdEAPV3Y3nMNl",
+      "pack": "incantesimi",
+      "file": "spellbloccamostri.json"
+    },
+    "Spell Base 021 Scagliare Maledizione": {
+      "id": "XAjtk0Nc6Wj0azMz",
+      "pack": "incantesimi",
+      "file": "spell-base-021_scagliare_maledizione.json"
+    },
+    "Spell Base 014 Passo Senza Tracce": {
+      "id": "bM4Zz5kUKOZKv8D9",
+      "pack": "incantesimi",
+      "file": "spell-base-014_passo_senza_tracce.json"
+    },
+    "Emanazione Angelica": {
+      "id": "gM6XFq6F73vLlTkN",
+      "pack": "incantesimi",
+      "file": "spell-emanazione-angelica.json"
+    },
+    "Deflagrazione Occulta": {
+      "id": "a4ez6v5aB5bdGTIZ",
+      "pack": "incantesimi",
+      "file": "spell-deflagrazione-occulta.json"
+    },
+    "Spell Base 007 Fiamma Sacra": {
+      "id": "HO3hUamnTvlPjqf4",
+      "pack": "incantesimi",
+      "file": "spell-base-007_fiamma_sacra.json"
+    },
+    "Porta Dimensionale": {
+      "id": "7GiDJua2uO6vZVPG",
+      "pack": "incantesimi",
+      "file": "spell-porta-dimensionale.json"
+    },
+    "Illusione Minore": {
+      "id": "k92XLfZjBnVA44K9",
+      "pack": "incantesimi",
+      "file": "spell-illusione-minore.json"
+    },
+    "Spell Base 017 Sonno": {
+      "id": "OlzXDXQ2O44H6rrI",
+      "pack": "incantesimi",
+      "file": "spell-base-017_sonno.json"
+    },
+    "Scudo": {
+      "id": "spellscudo181a24",
+      "pack": "incantesimi",
+      "file": "spell-scudo.json"
+    },
+    "Racconto Agghiacciante": {
+      "id": "fsDYxzdVrK6fCzbI",
+      "pack": "incantesimi",
+      "file": "spellraccontoagghiacciante.json"
+    },
+    "Velocità": {
+      "id": "sQyp7J86sndkMuv7",
+      "pack": "incantesimi",
+      "file": "spellvelocita.json"
+    },
+    "Spell Base 019 Crescita Di Spine": {
+      "id": "DGJp19QSoN91orTY",
+      "pack": "incantesimi",
+      "file": "spell-base-019_crescita_di_spine.json"
+    },
+    "Spell Base 001 Benedizione": {
+      "id": "4dXdmQ5K2bSGe8Jf",
+      "pack": "incantesimi",
+      "file": "spell-base-001_benedizione.json"
+    },
+    "Beffa Crudele": {
+      "id": "lIBBXnZExCWPQIOH",
+      "pack": "incantesimi",
+      "file": "spell-beffa-crudele.json"
+    },
+    "Spell Base 016 Anatema": {
+      "id": "ntALiKAasSPYmuSR",
+      "pack": "incantesimi",
+      "file": "spell-base-016_anatema.json"
+    },
+    "Spell Base 010 Arma Spirituale": {
+      "id": "C6yWZKAPsIRPEPJJ",
+      "pack": "incantesimi",
+      "file": "spell-base-010_arma_spirituale.json"
+    },
+    "Spell Base 015 Evoca Cavalcatura": {
+      "id": "q9KWTgTHWZu72hRj",
+      "pack": "incantesimi",
+      "file": "spell-base-015_evoca_cavalcatura.json"
+    },
+    "Spell Base 013 Comando": {
+      "id": "2DKoTBuQzHwaKKRN",
+      "pack": "incantesimi",
+      "file": "spell-base-013_comando.json"
+    }
+  },
+  "classes": {
+    "totem": {
+      "id": "6q7MyAkplbix1nx6",
+      "pack": "sottoclassi",
+      "file": "classbarbarocamminototem.json"
+    },
+    "Dominio della Luce": {
+      "id": "7pFPfCSdGXkTkSfV",
+      "pack": "sottoclassi",
+      "file": "classchiericodominioluce.json"
+    },
+    "Dominio della Natura": {
+      "id": "pMrLvc29MPclRb7d",
+      "pack": "sottoclassi",
+      "file": "classchiericodominionatura.json"
+    },
+    "Dominio della Tempesta": {
+      "id": "oWBOFYhQbaW2sp8p",
+      "pack": "sottoclassi",
+      "file": "classchiericodominiotempesta.json"
+    },
+    "Dominio della Conoscenza": {
+      "id": "dzBNhnN0Ewp2yZZ2",
+      "pack": "sottoclassi",
+      "file": "classchiericodominioconoscenza.json"
+    },
+    "Scuola di Trasmutazione": {
+      "id": "Afr58xJEOdq2g4K7",
+      "pack": "sottoclassi",
+      "file": "classmagoscuolatrasmutazione.json"
+    },
+    "Collegio della Conoscenza": {
+      "id": "5M9J0y22aBBp3d0U",
+      "pack": "sottoclassi",
+      "file": "classbardocollegioconoscenza.json"
+    },
+    "Scuola di Ammaliamento": {
+      "id": "9NZVUD8Tgxdz1rBm",
+      "pack": "sottoclassi",
+      "file": "classmagoscuolaammaliamento.json"
+    },
+    "berserker": {
+      "id": "nY8fkBU2lZ5mBfSw",
+      "pack": "sottoclassi",
+      "file": "classbarbarocamminoberserker.json"
+    },
+    "Scuola di Invocazione": {
+      "id": "QdvetZmEDcx1oBv4",
+      "pack": "sottoclassi",
+      "file": "classmagoscuolainvocazione.json"
+    },
+    "Scuola di Divinazione": {
+      "id": "pnpYX1DGLbmpRBZa",
+      "pack": "sottoclassi",
+      "file": "classmagoscuoladivinazione.json"
+    },
+    "Collegio del Valore": {
+      "id": "3lgkqFr0EE76YWFw",
+      "pack": "sottoclassi",
+      "file": "classbardocollegiovalore.json"
+    },
+    "Scuola di Evocazione": {
+      "id": "ZgubMeefrZt8an3Q",
+      "pack": "sottoclassi",
+      "file": "classmagoscuolaevocazione.json"
+    },
+    "Dominio dell'Inganno": {
+      "id": "sLkLb0YCJKDgyQFZ",
+      "pack": "sottoclassi",
+      "file": "classchiericodominioinganno.json"
+    },
+    "Circolo della Luna": {
+      "id": "ymCqzVIyNl8X7qGl",
+      "pack": "sottoclassi",
+      "file": "classdruidocircololuna.json"
+    },
+    "Dominio della Guerra": {
+      "id": "d3PjRVgvJ48CutS8",
+      "pack": "sottoclassi",
+      "file": "classchiericodominioguerra.json"
+    },
+    "Scuola di Necromanzia": {
+      "id": "mLblDGKyX0KLJ8gf",
+      "pack": "sottoclassi",
+      "file": "classmagoscuolanecromanzia.json"
+    },
+    "Dominio della Vita": {
+      "id": "VzleM79NVZ0rzMdl",
+      "pack": "sottoclassi",
+      "file": "classchiericodominiovita.json"
+    },
+    "Scuola di Abiurazione": {
+      "id": "lZ9ADmxLAAhrqQND",
+      "pack": "sottoclassi",
+      "file": "classmagoscuolaabiurazione.json"
+    },
+    "Scuola di Illusione": {
+      "id": "3rkEzNlThi48eqOT",
+      "pack": "sottoclassi",
+      "file": "classmagoscuolaillusione.json"
+    },
+    "Circolo della Terra": {
+      "id": "GDJZR3VT0vSRO8ay",
+      "pack": "sottoclassi",
+      "file": "classdruidocircoloterra.json"
+    },
+    "Monaco": {
+      "id": "qDHBUasrmTzCPsqp",
+      "pack": "classi",
+      "file": "monaco.json"
+    },
+    "Ranger": {
+      "id": "Y36u4iXaoMNBWFiq",
+      "pack": "classi",
+      "file": "ranger.json"
+    },
+    "Warlock": {
+      "id": "5SEtN4JkttdY7nXI",
+      "pack": "classi",
+      "file": "warlock.json"
+    },
+    "Guerriero": {
+      "id": "rVxYaXx686L02huD",
+      "pack": "classi",
+      "file": "guerriero.json"
+    },
+    "Barbaro": {
+      "id": "h38dssPzwZALTCis",
+      "pack": "classi",
+      "file": "barbaro.json"
+    },
+    "Ladro": {
+      "id": "7WbjEcMQXdWnNnN3",
+      "pack": "classi",
+      "file": "ladro.json"
+    },
+    "Mago": {
+      "id": "jzOHERbeh0eRDyoz",
+      "pack": "classi",
+      "file": "mago.json"
+    },
+    "Chierico": {
+      "id": "jaj0ARq6zrJ4oLXm",
+      "pack": "classi",
+      "file": "chierico.json"
+    },
+    "Druido": {
+      "id": "RV8s0aOCe28I47SC",
+      "pack": "classi",
+      "file": "druido.json"
+    },
+    "Paladino": {
+      "id": "GT6giFbutUPyX4ZP",
+      "pack": "classi",
+      "file": "paladino.json"
+    },
+    "Stregone": {
+      "id": "bWa19tRZmTp3ZKoY",
+      "pack": "classi",
+      "file": "stregone.json"
+    },
+    "Bardo": {
+      "id": "g2FxiHdiWnd6O0f7",
+      "pack": "classi",
+      "file": "bardo.json"
+    },
+    "Classi di Brancalonia": {
+      "id": "Qg94qk0pBrRq5ZZR",
+      "pack": "classi",
+      "file": "index.json"
+    }
+  },
+  "features": {
+    "Arcanum Mistico (9° livello)": {
+      "id": "11dbc9a7b5000988",
+      "pack": "brancalonia-features",
+      "file": "11dbc9a7b5000988.json"
+    },
+    "magia_protezione": {
+      "id": "NYg5jqx7okBwp3hl",
+      "pack": "brancalonia-features",
+      "file": "scaramante_stregonelivello_1magia_protezione.json"
+    },
+    "Privilegio del Patrono": {
+      "id": "c517c327a4dc33e6",
+      "pack": "brancalonia-features",
+      "file": "c517c327a4dc33e6.json"
+    },
+    "Arte di Arrangiarsi": {
+      "id": "m7frOoOdOCkTUC5e",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-impresario.json"
+    },
+    "Competenza": {
+      "id": "dae104805967d17d",
+      "pack": "brancalonia-features",
+      "file": "dae104805967d17d.json"
+    },
+    "Attacco Extra": {
+      "id": "bjRiFaUhizuMemLP",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_5attaccoextra.json"
+    },
+    "Indomito": {
+      "id": "6Plh93Kc2KfvSS4F",
+      "pack": "emeriticenze",
+      "file": "indomito.json"
+    },
+    "Nemico Prescelto": {
+      "id": "CSlnDCJ5TfYSBDAJ",
+      "pack": "brancalonia-features",
+      "file": "classrangerlivello_1nemicoprescelto.json"
+    },
+    "Attacco Extra (Superiore)": {
+      "id": "1OQN5TTrIopzfIjy",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_11-attacco-extra-superiore.json"
+    },
+    "Quiete della Mente": {
+      "id": "5b89d63c631affb3",
+      "pack": "brancalonia-features",
+      "file": "5b89d63c631affb3.json"
+    },
+    "Passo Veloce": {
+      "id": "c5887471b28e68ae",
+      "pack": "brancalonia-features",
+      "file": "c5887471b28e68ae.json"
+    },
+    "Costruito": {
+      "id": "6i1cgn7kwfia4sh7",
+      "pack": "brancalonia-features",
+      "file": "race-pinocchio-costruito.json"
+    },
+    "incanalare_divinita_recitare": {
+      "id": "NVbFQp6Yx5PvD5mu",
+      "pack": "brancalonia-features",
+      "file": "miracolaro_chiericolivello_2incanalare_divinita_recitare.json"
+    },
+    "incantesimi_circolo": {
+      "id": "ztv6eAt5NzqFw8jn",
+      "pack": "brancalonia-features",
+      "file": "benandante_druidolivello_3incantesimi_circolo.json"
+    },
+    "Corpo Senza Tempo": {
+      "id": "a0aef8a4971326b8",
+      "pack": "brancalonia-features",
+      "file": "a0aef8a4971326b8.json"
+    },
+    "Inafferrabile": {
+      "id": "r260Jq02lan0skFM",
+      "pack": "brancalonia-features",
+      "file": "classladrolivello_18inafferrabile.json"
+    },
+    "Distruggere Non Morti (GS 4)": {
+      "id": "634530eeda6c1b58",
+      "pack": "brancalonia-features",
+      "file": "634530eeda6c1b58.json"
+    },
+    "Aumento dei Punteggi di Caratteristica": {
+      "id": "z240rxesNVHgK8ZY",
+      "pack": "brancalonia-features",
+      "file": "classmagolivello_12aumentocaratteristica3.json"
+    },
+    "Attacco Extra (Migliorato)": {
+      "id": "Y3oeK6szkPN3zWgI",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_6-attacco-extra-migliorato.json"
+    },
+    "Istinto Ferino": {
+      "id": "NDylwiHsEoeD8BxR",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_7-istinto-ferino.json"
+    },
+    "Aura di Coraggio": {
+      "id": "smYXQeDv8ZLr5YZu",
+      "pack": "brancalonia-features",
+      "file": "classpaladinolivello_10auracoraggio.json"
+    },
+    "Linguaggio del Sole e della Luna": {
+      "id": "f8ad5b1d21dd8901",
+      "pack": "brancalonia-features",
+      "file": "f8ad5b1d21dd8901.json"
+    },
+    "Magia del Patto": {
+      "id": "5b9d20fea378d233",
+      "pack": "brancalonia-features",
+      "file": "5b9d20fea378d233.json"
+    },
+    "Aura di Protezione": {
+      "id": "AOVaqLcxeksfi4l4",
+      "pack": "brancalonia-features",
+      "file": "classpaladinolivello_6auraprotezione.json"
+    },
+    "Ispirazione Bardica": {
+      "id": "2FEguYigMmPrEINZ",
+      "pack": "brancalonia-features",
+      "file": "classbardolivello_1ispirazionebardica.json"
+    },
+    "Libro degli Incantesimi": {
+      "id": "hsPK1rWPX7pkndv4",
+      "pack": "brancalonia-features",
+      "file": "classmagolivello_1libroincantesimi.json"
+    },
+    "Incantesimi": {
+      "id": "cZODJkJuWOOZajXt",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_1-incantesimi.json"
+    },
+    "tocco_malasorte": {
+      "id": "aU4OgxhVEormTnPV",
+      "pack": "brancalonia-features",
+      "file": "menagramo_warlocklivello_6tocco_malasorte.json"
+    },
+    "Campione Primordiale": {
+      "id": "65uwR8HQwlqZ9LNB",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_20-campione-primordiale.json"
+    },
+    "Dono del Patto": {
+      "id": "229ceb9d18c2d69c",
+      "pack": "brancalonia-features",
+      "file": "229ceb9d18c2d69c.json"
+    },
+    "Archetipo del Ranger": {
+      "id": "73SN66Yez2OAconz",
+      "pack": "brancalonia-features",
+      "file": "classrangerlivello_3archetiporanger.json"
+    },
+    "porgi_altra_guancia": {
+      "id": "HKEK6kqmTJPNbUu9",
+      "pack": "brancalonia-features",
+      "file": "frate_monacolivello_3porgi_altra_guancia.json"
+    },
+    "Costituzione Possente": {
+      "id": "kHEmjKW9bybHm5E9",
+      "pack": "brancalonia-features",
+      "file": "tratto003_costituzione_possente.json"
+    },
+    "Attacco Furtivo": {
+      "id": "KJgH5J8TeGENeMF0",
+      "pack": "brancalonia-features",
+      "file": "classladrolivello_1attaccofurtivo.json"
+    },
+    "Critico Brutale (1 dado)": {
+      "id": "5c4be4511e2d33e1",
+      "pack": "brancalonia-features",
+      "file": "5c4be4511e2d33e1.json"
+    },
+    "maestro_esibizione": {
+      "id": "BLWJVwlabUTKOKBs",
+      "pack": "brancalonia-features",
+      "file": "mattatore_rangerlivello_3maestro_esibizione.json"
+    },
+    "Aumento Caratteristica 4": {
+      "id": "Ew8mQ4CsrQ7MpjoQ",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_16-aumento-caratteristica-4.json"
+    },
+    "Sensi Acuti": {
+      "id": "mcb8l8dfbDPGWSbU",
+      "pack": "brancalonia-features",
+      "file": "tratto007_animali_sensi_acuti.json"
+    },
+    "Giuramento Sacro": {
+      "id": "1rODTX1bEClk8vUJ",
+      "pack": "brancalonia-features",
+      "file": "class-paladino-livello_3-giuramento-sacro.json"
+    },
+    "Miglioramenti dell'Aura": {
+      "id": "b2c436e139afb88f",
+      "pack": "brancalonia-features",
+      "file": "b2c436e139afb88f.json"
+    },
+    "Archetipo Ladresco": {
+      "id": "4eorwj8ailot169t",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_3-archetipo-ladresco.json"
+    },
+    "Fortuna del Briccone": {
+      "id": "xkrv1rh8u323o6mg",
+      "pack": "brancalonia-features",
+      "file": "race-svanzici-fortuna-del-briccone.json"
+    },
+    "Forma Selvatica": {
+      "id": "Avn8Ovc6fqTVazIg",
+      "pack": "brancalonia-features",
+      "file": "classdruidolivello_2formaselvatica.json"
+    },
+    "Resistenza al Mare": {
+      "id": "lgxz1pmyqawx0eek",
+      "pack": "brancalonia-features",
+      "file": "race-levantini-resistenza-al-mare.json"
+    },
+    "Campione del Giuramento": {
+      "id": "V5uiQkY033ZmMZai",
+      "pack": "brancalonia-features",
+      "file": "classpaladinolivello_20campionegiuramento.json"
+    },
+    "Nemico Favorito": {
+      "id": "d06bb53dc9373f7a",
+      "pack": "brancalonia-features",
+      "file": "d06bb53dc9373f7a.json"
+    },
+    "Privilegio dell'Archetipo": {
+      "id": "0gg4x1sa8mk9myzl",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_13-privilegio-dellarchetipo.json"
+    },
+    "Schivata Prodigiosa": {
+      "id": "e16cfec3d1066cce",
+      "pack": "brancalonia-features",
+      "file": "e16cfec3d1066cce.json"
+    },
+    "Archetipo Marziale": {
+      "id": "6i301oFGeHAQSJtX",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_3archetipomarziale.json"
+    },
+    "Padronanza degli Incantesimi": {
+      "id": "7w4p6jkkmkbtamov",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_18-padronanza-degli-incantesimi.json"
+    },
+    "Metamagia": {
+      "id": "1rbS1YYYpAIXIk86",
+      "pack": "brancalonia-features",
+      "file": "class-stregone-livello_3-metamagia.json"
+    },
+    "Arcanum Mistico (7° livello)": {
+      "id": "d1519ebee24e4c0e",
+      "pack": "brancalonia-features",
+      "file": "d1519ebee24e4c0e.json"
+    },
+    "Colpi Potenziati dal Ki": {
+      "id": "HW9eM2C3hBmDtvE8",
+      "pack": "brancalonia-features",
+      "file": "classmonacolivello_6colpiki.json"
+    },
+    "Colpo Fortunato": {
+      "id": "81dc89eb2e16090d",
+      "pack": "brancalonia-features",
+      "file": "81dc89eb2e16090d.json"
+    },
+    "Forma Selvatica Migliorata (GS 1/2)": {
+      "id": "234185d21039cc8a",
+      "pack": "brancalonia-features",
+      "file": "234185d21039cc8a.json"
+    },
+    "Movimento Veloce": {
+      "id": "Xuxf4NhCBE7ynuub",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_5-movimento-veloce.json"
+    },
+    "Tradizione Monastica": {
+      "id": "FVvBpHBYxn3uqwzP",
+      "pack": "brancalonia-features",
+      "file": "classmonacolivello_3tradizionemonastica.json"
+    },
+    "Azione Scaltra": {
+      "id": "zuarigv2rnpvoap8",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_2-azione-scaltra.json"
+    },
+    "Movimento senza Armatura": {
+      "id": "8dh3oJU7rHGyJUQY",
+      "pack": "brancalonia-features",
+      "file": "class-monaco-livello_2-movimento-senza-armatura.json"
+    },
+    "Stile di Combattimento": {
+      "id": "io88rD63mNJLf0BO",
+      "pack": "brancalonia-features",
+      "file": "classpaladinolivello_2stilecombattimento.json"
+    },
+    "Indomito (tre usi)": {
+      "id": "EE3ok6xvJRAg9lSh",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_17indomitosupremo.json"
+    },
+    "Gergo Ladresco": {
+      "id": "2v2ro9agupg6c2wj",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_1-gergo-ladresco.json"
+    },
+    "Senso Divino": {
+      "id": "THOh5d5BFLURBIAi",
+      "pack": "brancalonia-features",
+      "file": "class-paladino-livello_1-senso-divino.json"
+    },
+    "Privilegio della Tradizione": {
+      "id": "a3a4286d84f62da6",
+      "pack": "brancalonia-features",
+      "file": "a3a4286d84f62da6.json"
+    },
+    "Arcidruido": {
+      "id": "5aeba80d469f3bdd",
+      "pack": "brancalonia-features",
+      "file": "5aeba80d469f3bdd.json"
+    },
+    "Resistenza Infernale": {
+      "id": "rroSb7BtMI393Hni",
+      "pack": "brancalonia-features",
+      "file": "tratto001_resistenza_infernale.json"
+    },
+    "Action Surge (due usi)": {
+      "id": "7SQH7c60zSzlNzXt",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_17actionsurgemigliorato.json"
+    },
+    "guardiano_danza_macabra": {
+      "id": "HzZhfr0WeuGNCSc4",
+      "pack": "brancalonia-features",
+      "file": "benandante_druidolivello_6guardiano_danza_macabra.json"
+    },
+    "Collegio Bardico": {
+      "id": "cdc6cae1ebab0364",
+      "pack": "brancalonia-features",
+      "file": "cdc6cae1ebab0364.json"
+    },
+    "Invisibilità Naturale": {
+      "id": "b9nfip1u5gkb47mk",
+      "pack": "brancalonia-features",
+      "file": "race-inesistente-invisibilità-naturale.json"
+    },
+    "Ispirazione Superiore": {
+      "id": "0fef1e1efe5b44b5",
+      "pack": "brancalonia-features",
+      "file": "0fef1e1efe5b44b5.json"
+    },
+    "Indomabile": {
+      "id": "u9yxiKyKDTgMy6Vd",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_9indomabile.json"
+    },
+    "Scurovisione": {
+      "id": "zixqjkp2goed9pkw",
+      "pack": "brancalonia-features",
+      "file": "race-pantegano-scurovisione.json"
+    },
+    "Dominio Divino": {
+      "id": "Uu8RCct1CqvlZi4h",
+      "pack": "brancalonia-features",
+      "file": "classchiericolivello_1dominiodivino.json"
+    },
+    "Distruggere Non-Morti": {
+      "id": "gbvrVsfITYfrKMSL",
+      "pack": "brancalonia-features",
+      "file": "classchiericolivello_11distruggerenonmorti.json"
+    },
+    "Aura del Coraggio": {
+      "id": "tvtHqpi16FwvNwjp",
+      "pack": "brancalonia-features",
+      "file": "class-paladino-livello_10-aura-coraggio.json"
+    },
+    "silenzio_in_sala": {
+      "id": "wgntoAMkIzZakcuO",
+      "pack": "brancalonia-features",
+      "file": "arlecchino_bardolivello_6silenzio_in_sala.json"
+    },
+    "Elusivo": {
+      "id": "0m6xbj3fgtjk9w9b",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_18-elusivo.json"
+    },
+    "Azione Impetuosa": {
+      "id": "3CwQJYeCEobSrmaP",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_2azioneimpetuosa.json"
+    },
+    "Scatto d'Azione (2 usi)": {
+      "id": "bdc321abbcf19505",
+      "pack": "brancalonia-features",
+      "file": "bdc321abbcf19505.json"
+    },
+    "Critico Brutale (2 dadi)": {
+      "id": "aiyocmlc1d8lmd1a",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_13-critico-brutale-(2-dadi).json"
+    },
+    "scuola_scherma": {
+      "id": "UEdf1cCxyzAyDVHm",
+      "pack": "brancalonia-features",
+      "file": "spadaccino_guerrierolivello_3scuola_scherma.json"
+    },
+    "Deflettere Proiettili": {
+      "id": "b8f075889f9c3d2a",
+      "pack": "brancalonia-features",
+      "file": "b8f075889f9c3d2a.json"
+    },
+    "Artigli Naturali": {
+      "id": "b64aj7np8ozsih2a",
+      "pack": "brancalonia-features",
+      "file": "race-gatto lupesco-artigli-naturali.json"
+    },
+    "Patto Magico": {
+      "id": "eoKlktevPeIsuqXT",
+      "pack": "brancalonia-features",
+      "file": "classwarlocklivello_1pattomagico.json"
+    },
+    "Aumento Punteggi di Caratteristica": {
+      "id": "1ezzw2A5cOsY96Oh",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_6attaccoextramigliorato.json"
+    },
+    "Origine Stregonesca": {
+      "id": "Gr36QoclaiV4ehj6",
+      "pack": "brancalonia-features",
+      "file": "class-stregone-livello_1-origine-stregonesca.json"
+    },
+    "Archetipo Ranger": {
+      "id": "9uj84MoxA49yEeDV",
+      "pack": "brancalonia-features",
+      "file": "class-ranger-livello_3-archetipo-ranger.json"
+    },
+    "Imposizione Mani": {
+      "id": "VsvQrnGC1PFcFIoz",
+      "pack": "brancalonia-features",
+      "file": "class-paladino-livello_1-imposizione-mani.json"
+    },
+    "Privilegio del Giuramento": {
+      "id": "9f01f8412e72de78",
+      "pack": "brancalonia-features",
+      "file": "9f01f8412e72de78.json"
+    },
+    "Sangue Levantino": {
+      "id": "u87hef3825t64h7w",
+      "pack": "brancalonia-features",
+      "file": "race-levantini-sangue-levantino.json"
+    },
+    "Incanalare Divinità": {
+      "id": "b53d9d84d9258440",
+      "pack": "brancalonia-features",
+      "file": "b53d9d84d9258440.json"
+    },
+    "Aura Protezione": {
+      "id": "REwqlPocf2tKhb0V",
+      "pack": "brancalonia-features",
+      "file": "class-paladino-livello_6-aura-protezione.json"
+    },
+    "Tradizione Arcana Privilegio": {
+      "id": "4k88LIuvnMVdAl5k",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_6-tradizione-arcana-privilegio.json"
+    },
+    "Patrono Ultraterreno": {
+      "id": "aiPGcksQ1frkxgh7",
+      "pack": "brancalonia-features",
+      "file": "classwarlocklivello_1patronoultraterreno.json"
+    },
+    "Indomabile (3)": {
+      "id": "rwmdbjy28l36vo3r",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_17-indomabile-(3).json"
+    },
+    "Ki": {
+      "id": "f3c25a86f47fa81d",
+      "pack": "brancalonia-features",
+      "file": "f3c25a86f47fa81d.json"
+    },
+    "Distruggere Non Morti": {
+      "id": "QUl53Xe8wJCbcZ9a",
+      "pack": "brancalonia-features",
+      "file": "class-chierico-livello_11-distruggere-non-morti.json"
+    },
+    "Circolo Druidico": {
+      "id": "TauyL4FoR9fFtm6K",
+      "pack": "brancalonia-features",
+      "file": "classdruidolivello_2circolodruidico.json"
+    },
+    "tecnica_mano_ferro_piuma": {
+      "id": "JGeQWaxpDBEu5m1j",
+      "pack": "brancalonia-features",
+      "file": "frate_monacolivello_6tecnica_mano_ferro_piuma.json"
+    },
+    "Attacco Extra (3)": {
+      "id": "a9vwi3v4i7ukrikd",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_20-attacco-extra-(3).json"
+    },
+    "Corpo Vuoto": {
+      "id": "72a03613a6c480ce",
+      "pack": "brancalonia-features",
+      "file": "72a03613a6c480ce.json"
+    },
+    "Attacco Extra Supremo": {
+      "id": "1J8akKfcoQbOUOle",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_20-attacco-extra-supremo.json"
+    },
+    "Incantesimi Bestiali": {
+      "id": "3b1c21aa02bae1ed",
+      "pack": "brancalonia-features",
+      "file": "3b1c21aa02bae1ed.json"
+    },
+    "Recupero Energie": {
+      "id": "brsPf5vNBLtGgb3c",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_1-recupero-energie.json"
+    },
+    "Aumento Caratteristica 5": {
+      "id": "JkaI541ZoyFbFrD4",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_19-aumento-caratteristica-5.json"
+    },
+    "Colpo Divino Migliorato": {
+      "id": "0Fdoi5Dx4g4roeo7",
+      "pack": "brancalonia-features",
+      "file": "classchiericolivello_14colpodivinomigliorato.json"
+    },
+    "Anima di Diamante": {
+      "id": "D4E7gNRRCjzNZ6QV",
+      "pack": "brancalonia-features",
+      "file": "classmonacolivello_14animadiamante.json"
+    },
+    "esperto_oggetti_magici": {
+      "id": "w1R9YLVnNzg9XzA6",
+      "pack": "brancalonia-features",
+      "file": "guiscardo_magolivello_2esperto_oggetti_magici.json"
+    },
+    "Intervento Divino Migliorato": {
+      "id": "dUyqZxhULJkManbb",
+      "pack": "brancalonia-features",
+      "file": "class-chierico-livello_20-intervento-divino-migliorato.json"
+    },
+    "Maestro Occulto": {
+      "id": "d27ca8ce6a67b508",
+      "pack": "brancalonia-features",
+      "file": "d27ca8ce6a67b508.json"
+    },
+    "Privilegio del Dominio": {
+      "id": "322a6547896fd78c",
+      "pack": "brancalonia-features",
+      "file": "322a6547896fd78c.json"
+    },
+    "Fonte Magia": {
+      "id": "hPSxG2xaLGrOwuCg",
+      "pack": "brancalonia-features",
+      "file": "class-stregone-livello_2-fonte-magia.json"
+    },
+    "Distruggere Non-Morti (CR 3)": {
+      "id": "pHRdHthBRjEAms36",
+      "pack": "brancalonia-features",
+      "file": "classchiericolivello_20distruggerenonmortifinale.json"
+    },
+    "Naso che Cresce": {
+      "id": "qcxr7kwqqolnhh9r",
+      "pack": "brancalonia-features",
+      "file": "race-pinocchio-naso-che-cresce.json"
+    },
+    "Archetipo del Furfante": {
+      "id": "032a2bd6c8cdd657",
+      "pack": "brancalonia-features",
+      "file": "032a2bd6c8cdd657.json"
+    },
+    "Forza Indomabile": {
+      "id": "YzMjMXGsN5ZYxzSE",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_18-forza-indomabile.json"
+    },
+    "Nemico Letale": {
+      "id": "4b5aa69c4c5b7687",
+      "pack": "brancalonia-features",
+      "file": "4b5aa69c4c5b7687.json"
+    },
+    "Evasione": {
+      "id": "ZtnGIpI608WbYmTr",
+      "pack": "brancalonia-features",
+      "file": "class-monaco-livello_7-evasione.json"
+    },
+    "Forma Selvatica Migliorata (GS 1)": {
+      "id": "aa83a4cbed13a1c4",
+      "pack": "brancalonia-features",
+      "file": "aa83a4cbed13a1c4.json"
+    },
+    "Movimento Senza Armatura Migliorato": {
+      "id": "433e496b24c29289",
+      "pack": "brancalonia-features",
+      "file": "433e496b24c29289.json"
+    },
+    "Critico Brutale (3 dadi)": {
+      "id": "867xktqdqm4oup6c",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_17-critico-brutale-(3-dadi).json"
+    },
+    "Tuttofare": {
+      "id": "ff2e71fc0a1ee670",
+      "pack": "brancalonia-features",
+      "file": "ff2e71fc0a1ee670.json"
+    },
+    "cercatore_tesori": {
+      "id": "j69D1LlRAKDc9luz",
+      "pack": "brancalonia-features",
+      "file": "guiscardo_magolivello_2cercatore_tesori.json"
+    },
+    "Coraggioso": {
+      "id": "mcrstie13fxz5fdd",
+      "pack": "brancalonia-features",
+      "file": "race-generic-coraggioso.json"
+    },
+    "Caduta Lenta": {
+      "id": "d1b5fdd263568233",
+      "pack": "brancalonia-features",
+      "file": "d1b5fdd263568233.json"
+    },
+    "protetto_dal_fato": {
+      "id": "qUD0yZT4iOK34iML",
+      "pack": "brancalonia-features",
+      "file": "scaramante_stregonelivello_1protetto_dal_fato.json"
+    },
+    "Furtività Naturale": {
+      "id": "fi4a731y2546z6pb",
+      "pack": "brancalonia-features",
+      "file": "race-pantegano-furtività-naturale.json"
+    },
+    "Invocazioni Occulte": {
+      "id": "41c8480318a27f30",
+      "pack": "brancalonia-features",
+      "file": "41c8480318a27f30.json"
+    },
+    "Magia Del Patto": {
+      "id": "XczI5bRPiL6H0Uu7",
+      "pack": "brancalonia-features",
+      "file": "class-warlock-livello_1-magia-del-patto.json"
+    },
+    "Indomabile (2)": {
+      "id": "9uf7e998wx6wu6v0",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_13-indomabile-(2).json"
+    },
+    "Colpo Stordente": {
+      "id": "SPAiZKoNA5Nvv825",
+      "pack": "brancalonia-features",
+      "file": "classmonacolivello_5stunningstrike.json"
+    },
+    "Competenza Superiore": {
+      "id": "a59620f830c90611",
+      "pack": "brancalonia-features",
+      "file": "a59620f830c90611.json"
+    },
+    "competenze_bonus": {
+      "id": "p6y2gFjm2ALQMO9T",
+      "pack": "brancalonia-features",
+      "file": "arlecchino_bardolivello_3competenze_bonus.json"
+    },
+    "Fonte della Magia": {
+      "id": "38SVvGZT5RxPuarJ",
+      "pack": "brancalonia-features",
+      "file": "classstregonelivello_2fontemagia.json"
+    },
+    "Colpo di Fortuna": {
+      "id": "jq1aw3zxni77etrk",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_20-colpo-di-fortuna.json"
+    },
+    "Consapevolezza Primordiale": {
+      "id": "ILOdpWWGUJIFfD9V",
+      "pack": "brancalonia-features",
+      "file": "class-ranger-livello_3-consapevolezza-primordiale.json"
+    },
+    "Incanalare Divinita Supremo": {
+      "id": "6Q2mypgD3N6zaAOk",
+      "pack": "brancalonia-features",
+      "file": "class-chierico-livello_18-incanalare-divinita-supremo.json"
+    },
+    "Vulnerabilita": {
+      "id": "IZwizyTmTfj6n0sO",
+      "pack": "brancalonia-features",
+      "file": "tratto003_vulnerabilita.json"
+    },
+    "Agilità Felina": {
+      "id": "xd2i8x6iusd7t2v8",
+      "pack": "brancalonia-features",
+      "file": "race-gatto lupesco-agilità-felina.json"
+    },
+    "Difesa Senza Armatura": {
+      "id": "ZZnCBQ6u9QRwJsb8",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_1-difesa-senza-armatura.json"
+    },
+    "Cultura Marittima": {
+      "id": "720xg91y2380m1e6",
+      "pack": "brancalonia-features",
+      "file": "race-levantini-cultura-marittima.json"
+    },
+    "Ira": {
+      "id": "xNhYHhM192BqFbfq",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_1-ira.json"
+    },
+    "Arcanum Mistico (8° livello)": {
+      "id": "735bc7725ebaec32",
+      "pack": "brancalonia-features",
+      "file": "735bc7725ebaec32.json"
+    },
+    "Con la Pioggia o con il Vento...": {
+      "id": "HNy18htLGGBoYvIw",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-staffetta.json"
+    },
+    "Critico Brutale": {
+      "id": "CCGF8tjwNu0xFWfU",
+      "pack": "brancalonia-features",
+      "file": "classbarbarolivello_9criticobrutale.json"
+    },
+    "Perfezione Interiore": {
+      "id": "3K2HahrrdedDXu9n",
+      "pack": "brancalonia-features",
+      "file": "classmonacolivello_20perfezioneinteriore.json"
+    },
+    "Fonte di Magia": {
+      "id": "16be55c2c3fac5a4",
+      "pack": "brancalonia-features",
+      "file": "16be55c2c3fac5a4.json"
+    },
+    "Azione Astuta": {
+      "id": "3Q1fHkyTjZobLaRp",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_2-azione-astuta.json"
+    },
+    "Ira Implacabile": {
+      "id": "eGRrtygmJIoH6eWd",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_11-ira-implacabile.json"
+    },
+    "Sangue Antico": {
+      "id": "NfJ5Y7QxAyfDV1jQ",
+      "pack": "brancalonia-features",
+      "file": "tratto003_sangue_antico.json"
+    },
+    "Cortesia": {
+      "id": "VABfUBSkFQFr822P",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-innamorato.json"
+    },
+    "Morso Affilato": {
+      "id": "2jnuwl880de0jbsh",
+      "pack": "brancalonia-features",
+      "file": "race-pantegano-morso-affilato.json"
+    },
+    "Scomparire": {
+      "id": "52e11ae5aa391ebd",
+      "pack": "brancalonia-features",
+      "file": "52e11ae5aa391ebd.json"
+    },
+    "Privilegio del Circolo": {
+      "id": "1b2089b532ee0186",
+      "pack": "brancalonia-features",
+      "file": "1b2089b532ee0186.json"
+    },
+    "A cena con le Fate": {
+      "id": "BTDvGUFvjpBJoZtV",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-lucignolo.json"
+    },
+    "batocchio": {
+      "id": "QhRAOjyskpoGfIsO",
+      "pack": "brancalonia-features",
+      "file": "arlecchino_bardolivello_3batocchio.json"
+    },
+    "Restauro Stregonesco": {
+      "id": "49f291c1b0442654",
+      "pack": "brancalonia-features",
+      "file": "49f291c1b0442654.json"
+    },
+    "Marchio Del Diavolo": {
+      "id": "z8eci6ES1Mbirt3L",
+      "pack": "brancalonia-features",
+      "file": "tratto004_marchio_del_diavolo.json"
+    },
+    "Quiete Mentale": {
+      "id": "LOEJvsyx0F2tfUEu",
+      "pack": "brancalonia-features",
+      "file": "class-monaco-livello_7-quiete-mentale.json"
+    },
+    "Supremazia della Tradizione Arcana": {
+      "id": "WOxvH3CpOTDGzoEy",
+      "pack": "brancalonia-features",
+      "file": "classmagolivello_14tradizionearcanasuprema.json"
+    },
+    "Imposizione delle Mani": {
+      "id": "bUwEs5mrfd2DRVdX",
+      "pack": "brancalonia-features",
+      "file": "classpaladinolivello_1imposizionemani.json"
+    },
+    "Rispetto e Influenza": {
+      "id": "0nkqB9ieHY9nhciu",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-prelato.json"
+    },
+    "dominio_calendario": {
+      "id": "oyg3Qv8EE1baIEOa",
+      "pack": "brancalonia-features",
+      "file": "miracolaro_chiericolivello_1dominio_calendario.json"
+    },
+    "Competenza Esperta": {
+      "id": "aa33nc6mnppjlu9s",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_1-competenza-esperta.json"
+    },
+    "incantesimi_giuramento": {
+      "id": "MQwxAkgym4f3WTZQ",
+      "pack": "brancalonia-features",
+      "file": "cavaliere_errante_paladinolivello_3incantesimi_giuramento.json"
+    },
+    "Corpo di Legno": {
+      "id": "031rgwh3ckrtq09x",
+      "pack": "brancalonia-features",
+      "file": "race-pinocchio-corpo-di-legno.json"
+    },
+    "difesa_senza_armatura": {
+      "id": "BElGrp4A5WtsUK4w",
+      "pack": "brancalonia-features",
+      "file": "arlecchino_bardolivello_3difesa_senza_armatura.json"
+    },
+    "Tradizione Arcana Suprema": {
+      "id": "91XdlMtzgnyT1Mh1",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_14-tradizione-arcana-suprema.json"
+    },
+    "Distruggere Non-Morti (CR 2)": {
+      "id": "idMZlOH5ykj9GZ4Q",
+      "pack": "brancalonia-features",
+      "file": "classchiericolivello_17distruggerenonmortisupremo.json"
+    },
+    "Lingua del Sole e della Luna": {
+      "id": "P9exODCeZT535yta",
+      "pack": "brancalonia-features",
+      "file": "classmonacolivello_13linguasoleluna.json"
+    },
+    "Privilegio della Tradizione Arcana": {
+      "id": "X5PXLxXjAOQwKdpE",
+      "pack": "brancalonia-features",
+      "file": "classmagolivello_6tradizionearcanaprivilegio.json"
+    },
+    "Purezza del Corpo": {
+      "id": "OpRFd6tB5AZEFFb5",
+      "pack": "brancalonia-features",
+      "file": "classmonacolivello_10purezzacorpo.json"
+    },
+    "Arti Marziali": {
+      "id": "1448aa2cca99cafd",
+      "pack": "brancalonia-features",
+      "file": "1448aa2cca99cafd.json"
+    },
+    "Indomito Supremo": {
+      "id": "OV7dcWEDXeaKPIGq",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_17-indomito-supremo.json"
+    },
+    "Action Surge Migliorato": {
+      "id": "6guAvARK4wvnIoTe",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_17-action-surge-migliorato.json"
+    },
+    "brigantaggio": {
+      "id": "PbACaCx6JdMcNAnL",
+      "pack": "brancalonia-features",
+      "file": "brigante_ladrolivello_3brigantaggio.json"
+    },
+    "Relentless": {
+      "id": "pVtBBOwepxCDo6Tn",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_15-relentless.json"
+    },
+    "Attacco Extra (2)": {
+      "id": "14ec473c511f9c74",
+      "pack": "brancalonia-features",
+      "file": "14ec473c511f9c74.json"
+    },
+    "Competenza Esperta (2)": {
+      "id": "qn1205o6nh2bdpxy",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_8-competenza-esperta-(2).json"
+    },
+    "Radici": {
+      "id": "ZJ5psDJmH1NWuLow",
+      "pack": "brancalonia-features",
+      "file": "tratto004_vegetali_radici.json"
+    },
+    "Salute Divina": {
+      "id": "c17f85cbb51c245c",
+      "pack": "brancalonia-features",
+      "file": "c17f85cbb51c245c.json"
+    },
+    "Tocco Purificatore": {
+      "id": "c8d8b13ba9029d78",
+      "pack": "brancalonia-features",
+      "file": "c8d8b13ba9029d78.json"
+    },
+    "Contraffazione": {
+      "id": "696ae8daac876f56",
+      "pack": "brancalonia-features",
+      "file": "696ae8daac876f56.json"
+    },
+    "Movimento Muri Acqua": {
+      "id": "1vzU2T4oZixoDLwK",
+      "pack": "brancalonia-features",
+      "file": "class-monaco-livello_9-movimento-muri-acqua.json"
+    },
+    "Sensi Ferini": {
+      "id": "2c0694eab0f3167d",
+      "pack": "brancalonia-features",
+      "file": "2c0694eab0f3167d.json"
+    },
+    "occhio_mattatore": {
+      "id": "4SojvmN45KHJb7tI",
+      "pack": "brancalonia-features",
+      "file": "mattatore_rangerlivello_3occhio_mattatore.json"
+    },
+    "Azione Impetuosa (2)": {
+      "id": "5h68josfwm7hwzel",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_17-azione-impetuosa-(2).json"
+    },
+    "Indomabile (3 usi)": {
+      "id": "86c5cb3ae957e352",
+      "pack": "brancalonia-features",
+      "file": "86c5cb3ae957e352.json"
+    },
+    "Intervento Divino": {
+      "id": "40dd4873974ff058",
+      "pack": "brancalonia-features",
+      "file": "40dd4873974ff058.json"
+    },
+    "Archetipo Marziale - Maestria": {
+      "id": "j7d5m4t3xvkqhju2",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_15-archetipo-marziale---maestria.json"
+    },
+    "Punizione Divina": {
+      "id": "M4Taba9uJHBcu1eo",
+      "pack": "brancalonia-features",
+      "file": "class-paladino-livello_2-punizione-divina.json"
+    },
+    "Segreti Magici": {
+      "id": "b771ddf4b6cfb9b5",
+      "pack": "brancalonia-features",
+      "file": "b771ddf4b6cfb9b5.json"
+    },
+    "Ira Persistente": {
+      "id": "31Ohn7Aw6EIQf1Ne",
+      "pack": "brancalonia-features",
+      "file": "classbarbarolivello_15irapersistente.json"
+    },
+    "Incantesimi Distintivi": {
+      "id": "oCrlx8nqCKGzJ9Gq",
+      "pack": "brancalonia-features",
+      "file": "classmagolivello_20signaturespells.json"
+    },
+    "Segreti Magici Aggiuntivi": {
+      "id": "724f9d40e414a244",
+      "pack": "brancalonia-features",
+      "file": "724f9d40e414a244.json"
+    },
+    "Trucchetti Aggiuntivi": {
+      "id": "63257b420c2165f1",
+      "pack": "brancalonia-features",
+      "file": "63257b420c2165f1.json"
+    },
+    "Colpi Ki": {
+      "id": "lBenJHo73ozgriHW",
+      "pack": "brancalonia-features",
+      "file": "class-monaco-livello_6-colpi-ki.json"
+    },
+    "Distruggere Non Morti Supremo": {
+      "id": "3Am5NCO9MsIuRgyh",
+      "pack": "brancalonia-features",
+      "file": "class-chierico-livello_17-distruggere-non-morti-supremo.json"
+    },
+    "Relentless (Archetipo)": {
+      "id": "g4P0GW9dNLClUjFv",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_15relentless.json"
+    },
+    "Campione Giuramento": {
+      "id": "nWh77hlkufjdikEs",
+      "pack": "brancalonia-features",
+      "file": "class-paladino-livello_20-campione-giuramento.json"
+    },
+    "Libro Incantesimi": {
+      "id": "fcobPVC3apbb0xze",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_1-libro-incantesimi.json"
+    },
+    "Cammino Primordiale": {
+      "id": "mweY0QfjD6C8Wi2f",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_3-cammino-primordiale.json"
+    },
+    "Aumento Caratteristica": {
+      "id": "hteBXy9rECuZvaxe",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_4-aumento-caratteristica.json"
+    },
+    "Tocco Purificante": {
+      "id": "O8sH0E4KVkjg8tdk",
+      "pack": "brancalonia-features",
+      "file": "classpaladinolivello_14toccopurificante.json"
+    },
+    "Minaccioso": {
+      "id": "xeIDuatm7f9WX1JV",
+      "pack": "brancalonia-features",
+      "file": "tratto004_minaccioso.json"
+    },
+    "Passare Inosservato": {
+      "id": "lm1abbjh078q4kur",
+      "pack": "brancalonia-features",
+      "file": "race-inesistente-passare-inosservato.json"
+    },
+    "Fotosintesi": {
+      "id": "0wnqlBmXfvAYSmpT",
+      "pack": "brancalonia-features",
+      "file": "tratto003_vegetali_fotosintesi.json"
+    },
+    "Faccia da Duro": {
+      "id": "2uEbXxFbKjvN5Uap",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-duro.json"
+    },
+    "Recupero Arcano": {
+      "id": "mynM43Yvh2M5JuNr",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_1-recupero-arcano.json"
+    },
+    "Anima Diamante": {
+      "id": "2vPR00kKiBdAQKLQ",
+      "pack": "brancalonia-features",
+      "file": "class-monaco-livello_14-anima-diamante.json"
+    },
+    "Privilegio dell'Origine": {
+      "id": "78477123a63e21f2",
+      "pack": "brancalonia-features",
+      "file": "78477123a63e21f2.json"
+    },
+    "Fame Insaziabile": {
+      "id": "lgk32mSOfSzf7JJv",
+      "pack": "brancalonia-features",
+      "file": "tratto005_fame_insaziabile.json"
+    },
+    "Incanalare Divinità (3 usi)": {
+      "id": "cdZPymPczTxqSx6i",
+      "pack": "brancalonia-features",
+      "file": "classchiericolivello_18incanalaredivinitasupremo.json"
+    },
+    "Attacco Irruento": {
+      "id": "uNYxB0EmqfdaiO8o",
+      "pack": "brancalonia-features",
+      "file": "classbarbarolivello_2attaccoirruento.json"
+    },
+    "Privilegio del Collegio": {
+      "id": "85bff85a55ba8e4a",
+      "pack": "brancalonia-features",
+      "file": "85bff85a55ba8e4a.json"
+    },
+    "Resistenza alle Malattie": {
+      "id": "ki65iso5zc1zdyu5",
+      "pack": "brancalonia-features",
+      "file": "race-pantegano-resistenza-alle-malattie.json"
+    },
+    "Memoria Evanescente": {
+      "id": "4k9xwije9dhh1egq",
+      "pack": "brancalonia-features",
+      "file": "race-inesistente-memoria-evanescente.json"
+    },
+    "Movimento Senza Armatura": {
+      "id": "ngz3TDTVBiLLNhuU",
+      "pack": "brancalonia-features",
+      "file": "classmonacolivello_2movimentosenzaarmatura.json"
+    },
+    "Versatilita Abilita": {
+      "id": "2HrYrPzTOL75cpnR",
+      "pack": "brancalonia-features",
+      "file": "tratto002_versatilita_abilita.json"
+    },
+    "Armi Naturali": {
+      "id": "4oWWga1Enjk0GZKZ",
+      "pack": "brancalonia-features",
+      "file": "tratto006_animali_armi_naturali.json"
+    },
+    "Indomabile (2 usi)": {
+      "id": "2fac295fad041809",
+      "pack": "brancalonia-features",
+      "file": "2fac295fad041809.json"
+    },
+    "Tradizione Arcana": {
+      "id": "fUCMVeJGloVR8umB",
+      "pack": "brancalonia-features",
+      "file": "classmagolivello_2tradizionearcana.json"
+    },
+    "Percezione Cieca": {
+      "id": "KmpLZoiQKvBbEwpt",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_14-percezione-cieca.json"
+    },
+    "Esploratore Nato": {
+      "id": "CrJsZ7tvrEzeQOQT",
+      "pack": "brancalonia-features",
+      "file": "class-ranger-livello_1-esploratore-nato.json"
+    },
+    "proteggere_bisognosi": {
+      "id": "1UMv0JpRUvilahQ4",
+      "pack": "brancalonia-features",
+      "file": "cavaliere_errante_paladinolivello_3proteggere_bisognosi.json"
+    },
+    "Talento Affidabile": {
+      "id": "ololne3m6gday6zz",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_11-talento-affidabile.json"
+    },
+    "Lingua Sole Luna": {
+      "id": "wN57MET77DeZiesJ",
+      "pack": "brancalonia-features",
+      "file": "class-monaco-livello_13-lingua-sole-luna.json"
+    },
+    "Pugno Stordente": {
+      "id": "708d887c76cd8083",
+      "pack": "brancalonia-features",
+      "file": "708d887c76cd8083.json"
+    },
+    "Costrutto": {
+      "id": "ICUnrLWfcMPzU3mY",
+      "pack": "brancalonia-features",
+      "file": "tratto001_costrutto.json"
+    },
+    "Eredita Infernale": {
+      "id": "nP998RsXxd2wMdJX",
+      "pack": "brancalonia-features",
+      "file": "tratto002_eredita_infernale.json"
+    },
+    "Pelle Corteccia": {
+      "id": "JonJMsQ3DVBUuBvr",
+      "pack": "brancalonia-features",
+      "file": "tratto002_vegetali_pelle_corteccia.json"
+    },
+    "Indomito Migliorato": {
+      "id": "IE21F2NfI7HwFrW2",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_13-indomito-migliorato.json"
+    },
+    "Survivor (Archetipo Champion)": {
+      "id": "gowwKx6Sr3KApjUt",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_18survivor.json"
+    },
+    "Colpo Divino": {
+      "id": "uq1KaVTUvFWA5KZC",
+      "pack": "brancalonia-features",
+      "file": "classchiericolivello_8colpodivino.json"
+    },
+    "maestria_fandonica": {
+      "id": "TTboWyAWpBD1HISw",
+      "pack": "brancalonia-features",
+      "file": "guiscardo_magolivello_6maestria_fandonica.json"
+    },
+    "Indomabile (1 uso)": {
+      "id": "7b5c9b1a6571371c",
+      "pack": "brancalonia-features",
+      "file": "7b5c9b1a6571371c.json"
+    },
+    "Signature Spells": {
+      "id": "4dVMvosNxUjYKIDC",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_20-signature-spells.json"
+    },
+    "Competenze": {
+      "id": "xr7iXuoQ6afDNG4B",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_1-competenze.json"
+    },
+    "Punti Stregoneria": {
+      "id": "wTYkxlvGnqIhYkYj",
+      "pack": "brancalonia-features",
+      "file": "classstregonelivello_2puntistregoneria.json"
+    },
+    "Dimestichezza Selvatica": {
+      "id": "W9PidYynFf2sWBMi",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-brado.json"
+    },
+    "Senza Tempo": {
+      "id": "a84ae9e796eeb8f8",
+      "pack": "brancalonia-features",
+      "file": "a84ae9e796eeb8f8.json"
+    },
+    "Incanalare Divinita Migliorato": {
+      "id": "92BsAi3aNCDGP8Ru",
+      "pack": "brancalonia-features",
+      "file": "class-chierico-livello_6-incanalare-divinita-migliorato.json"
+    },
+    "Mente Sfuggente": {
+      "id": "ac70e3a974390233",
+      "pack": "brancalonia-features",
+      "file": "ac70e3a974390233.json"
+    },
+    "tirare_giu_santi": {
+      "id": "dsIagliKqnhsD9Np",
+      "pack": "brancalonia-features",
+      "file": "miracolaro_chiericolivello_1tirare_giu_santi.json"
+    },
+    "guardare_oltre_velo": {
+      "id": "kn4QAIcgkuZQUBbz",
+      "pack": "brancalonia-features",
+      "file": "benandante_druidolivello_2guardare_oltre_velo.json"
+    },
+    "Jack Tuttofare": {
+      "id": "MAlh20jWGoJLhALe",
+      "pack": "brancalonia-features",
+      "file": "class-bardo-livello_2-jack-tuttofare.json"
+    },
+    "Percezione del Pericolo": {
+      "id": "nEF1K1G3TDZXNe5M",
+      "pack": "brancalonia-features",
+      "file": "classbarbarolivello_2percezionedelpericolo.json"
+    },
+    "Indomito (due usi)": {
+      "id": "Up3j8JZ6u9E0p3Na",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_13indomitomigliorato.json"
+    },
+    "Rissaiolo": {
+      "id": "mGEm9Wq1fPvCMrGt",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-attaccabrighe.json"
+    },
+    "Aumento Caratteristica 3": {
+      "id": "ciSOokwQTNaGYabb",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_12-aumento-caratteristica-3.json"
+    },
+    "Distruggere Non Morti (GS 1/2)": {
+      "id": "750b7d7f815dcf26",
+      "pack": "brancalonia-features",
+      "file": "750b7d7f815dcf26.json"
+    },
+    "lista_ampliata": {
+      "id": "HYKWWpCk95CgWYLn",
+      "pack": "brancalonia-features",
+      "file": "menagramo_warlocklivello_1lista_ampliata.json"
+    },
+    "Storie della Strada": {
+      "id": "fdzv2NaTnxEYpUTm",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-ambulante.json"
+    },
+    "Survivor": {
+      "id": "59MnpAATN9AAE9Pf",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_18-survivor.json"
+    },
+    "Parlantina": {
+      "id": "0tpwpq7igg47zzb9",
+      "pack": "brancalonia-features",
+      "file": "race-svanzici-parlantina.json"
+    },
+    "Arcanum Mistico (6° livello)": {
+      "id": "faa8ad52b07861f3",
+      "pack": "brancalonia-features",
+      "file": "faa8ad52b07861f3.json"
+    },
+    "Distruggere Non Morti (GS 1)": {
+      "id": "f8d9767b9374850d",
+      "pack": "brancalonia-features",
+      "file": "f8d9767b9374850d.json"
+    },
+    "Riparazione": {
+      "id": "JRuVfCCl7k9G1LSa",
+      "pack": "brancalonia-features",
+      "file": "tratto002_riparazione.json"
+    },
+    "Agilità del Ratto": {
+      "id": "ntj6q6vs6pkzks2k",
+      "pack": "brancalonia-features",
+      "file": "race-pantegano-agilità-del-ratto.json"
+    },
+    "Astuzia Svanzica": {
+      "id": "5imw6a1fznbp23ia",
+      "pack": "brancalonia-features",
+      "file": "race-svanzici-astuzia-svanzica.json"
+    },
+    "ispirare_compagni": {
+      "id": "iPOYqMYc3pL0WKsG",
+      "pack": "brancalonia-features",
+      "file": "cavaliere_errante_paladinolivello_3ispirare_compagni.json"
+    },
+    "Esploratore Naturale": {
+      "id": "659771a4c60474da",
+      "pack": "brancalonia-features",
+      "file": "659771a4c60474da.json"
+    },
+    "Studioso di Reliquie": {
+      "id": "zxd9iazJly7DY3Sp",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-cacciatore_di_reliquie.json"
+    },
+    "Fonte d'Ispirazione": {
+      "id": "250fac41c96dcc73",
+      "pack": "brancalonia-features",
+      "file": "250fac41c96dcc73.json"
+    },
+    "Resilienza Implacabile": {
+      "id": "d8M7jrVUgSQ1qmOz",
+      "pack": "brancalonia-features",
+      "file": "tratto001_resilienza_implacabile.json"
+    },
+    "Senso Cieco": {
+      "id": "igtl29mejpj8jmeu",
+      "pack": "brancalonia-features",
+      "file": "class-ladro-livello_14-senso-cieco.json"
+    },
+    "Puzza Di Zolfo": {
+      "id": "cRl8mQYUrO4iWn5B",
+      "pack": "brancalonia-features",
+      "file": "tratto003_puzza_di_zolfo.json"
+    },
+    "Scatto d'Azione": {
+      "id": "a410ca7c95f935d3",
+      "pack": "brancalonia-features",
+      "file": "a410ca7c95f935d3.json"
+    },
+    "Stunning Strike": {
+      "id": "d7w94Nmnu1bDylsZ",
+      "pack": "brancalonia-features",
+      "file": "class-monaco-livello_5-stunning-strike.json"
+    },
+    "Padronanza Incantesimi": {
+      "id": "O3MVsTwildMDyM1m",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_18-padronanza-incantesimi.json"
+    },
+    "Purezza Corpo": {
+      "id": "oLBZTfJvvJNZM0jw",
+      "pack": "brancalonia-features",
+      "file": "class-monaco-livello_10-purezza-corpo.json"
+    },
+    "Patto Mistico": {
+      "id": "NXbZZB1nM5xZ69XV",
+      "pack": "brancalonia-features",
+      "file": "classwarlocklivello_3pattomistico.json"
+    },
+    "Occultamento Naturale": {
+      "id": "88340b2b62584047",
+      "pack": "brancalonia-features",
+      "file": "88340b2b62584047.json"
+    },
+    "per_tutti_santi": {
+      "id": "PXntnqx8EQH99W1p",
+      "pack": "brancalonia-features",
+      "file": "miracolaro_chiericolivello_6per_tutti_santi.json"
+    },
+    "Deviare Proiettili": {
+      "id": "3bSgHyWOyEEQ1XB7",
+      "pack": "brancalonia-features",
+      "file": "classmonacolivello_3deviareproiettili.json"
+    },
+    "Druidico": {
+      "id": "878c69ad55fc4d51",
+      "pack": "brancalonia-features",
+      "file": "878c69ad55fc4d51.json"
+    },
+    "Maestria della Tradizione Arcana": {
+      "id": "4I7q59S2RmErTmr2",
+      "pack": "brancalonia-features",
+      "file": "classmagolivello_10tradizionearcanamaestria.json"
+    },
+    "Aumento Caratteristica 2": {
+      "id": "PV4C0m3D3wMavWPA",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_8-aumento-caratteristica-2.json"
+    },
+    "Incanalare Divinità (2 usi)": {
+      "id": "BIXqnTKldxSFD7Jt",
+      "pack": "brancalonia-features",
+      "file": "classchiericolivello_6incanalaredivinitamigliorato.json"
+    },
+    "Canzone di Riposo": {
+      "id": "7e64dbbaf9f65f0d",
+      "pack": "brancalonia-features",
+      "file": "7e64dbbaf9f65f0d.json"
+    },
+    "Incantesimi Firma": {
+      "id": "ht2urp0g76zgu2br",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_20-incantesimi-firma.json"
+    },
+    "chincaglieria_magica": {
+      "id": "JuYXTdpIwDteXhQQ",
+      "pack": "brancalonia-features",
+      "file": "guiscardo_magolivello_2chincaglieria_magica.json"
+    },
+    "iattura": {
+      "id": "0S1Gdb7ke4h52APm",
+      "pack": "brancalonia-features",
+      "file": "menagramo_warlocklivello_1iattura.json"
+    },
+    "Incanalare Divinita": {
+      "id": "GpzloXdYhAlzcK62",
+      "pack": "brancalonia-features",
+      "file": "class-chierico-livello_2-incanalare-divinita.json"
+    },
+    "Uno Con La Natura": {
+      "id": "PUo4T0kjQKOeyPqV",
+      "pack": "brancalonia-features",
+      "file": "tratto001_comuni_uno_con_la_natura.json"
+    },
+    "Consapevolezza Primitiva": {
+      "id": "9eb9c2fc848e3fd0",
+      "pack": "brancalonia-features",
+      "file": "9eb9c2fc848e3fd0.json"
+    },
+    "Tradizione Arcana Maestria": {
+      "id": "vuUQO2Lj9pQpqhua",
+      "pack": "brancalonia-features",
+      "file": "class-mago-livello_10-tradizione-arcana-maestria.json"
+    },
+    "Adattabile": {
+      "id": "VmNQZEZEEbmCFP7P",
+      "pack": "brancalonia-features",
+      "file": "tratto002_adattabile.json"
+    },
+    "Senza Bisogni Vitali": {
+      "id": "87nlrouyk96y8dmn",
+      "pack": "brancalonia-features",
+      "file": "race-pinocchio-senza-bisogni-vitali.json"
+    },
+    "Maestro Combattente": {
+      "id": "G75IykNtU6lmQGDL",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_7-maestro-combattente.json"
+    },
+    "Punizione Migliorata": {
+      "id": "7IJJEiUZ3Dn1uSLI",
+      "pack": "brancalonia-features",
+      "file": "class-paladino-livello_11-punizione-migliorata.json"
+    },
+    "Versatilità": {
+      "id": "uorelwb7edtt32dn",
+      "pack": "brancalonia-features",
+      "file": "race-generic-versatilità.json"
+    },
+    "Punizione Divina Migliorata": {
+      "id": "rzznMAFyddaKQ46Y",
+      "pack": "brancalonia-features",
+      "file": "classpaladinolivello_11punizionemigliorata.json"
+    },
+    "Privilegio Da Rissa": {
+      "id": "L8ZPvckeabWBkZNv",
+      "pack": "brancalonia-features",
+      "file": "tratto001_privilegio_da_rissa.json"
+    },
+    "Attacchi Selvaggi": {
+      "id": "zQw5iFdYLJtMGIDl",
+      "pack": "brancalonia-features",
+      "file": "tratto002_attacchi_selvaggi.json"
+    },
+    "Agilità Halfling": {
+      "id": "640osjf8ykome9vu",
+      "pack": "brancalonia-features",
+      "file": "race-generic-agilità-halfling.json"
+    },
+    "Risolvere Guai": {
+      "id": "k3xBpq9UAlAXEuCJ",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-azzeccagarbugli.json"
+    },
+    "Senza Confini": {
+      "id": "WW3VNs1BB31tTytP",
+      "pack": "brancalonia-features",
+      "file": "feat-bg-passatore.json"
+    },
+    "Percezione Del Pericolo": {
+      "id": "8ENDzl1ngSAvnHCT",
+      "pack": "brancalonia-features",
+      "file": "class-barbaro-livello_2-percezione-del-pericolo.json"
+    },
+    "Perfezione dell'Essere": {
+      "id": "30a530a8b2be12a2",
+      "pack": "brancalonia-features",
+      "file": "30a530a8b2be12a2.json"
+    },
+    "Secondo Fiato": {
+      "id": "0aaa48783eac3c07",
+      "pack": "brancalonia-features",
+      "file": "0aaa48783eac3c07.json"
+    },
+    "Istinti Ferali": {
+      "id": "1or6vNCsrd8dbYai",
+      "pack": "brancalonia-features",
+      "file": "tratto005_animali_istinti_ferali.json"
+    },
+    "Recupero Straordinario": {
+      "id": "vrnj87v48izm3x4v",
+      "pack": "brancalonia-features",
+      "file": "class-guerriero-livello_1-recupero-straordinario.json"
+    },
+    "arte_imboscata": {
+      "id": "tGGUm2fYxloElalP",
+      "pack": "brancalonia-features",
+      "file": "brigante_ladrolivello_3arte_imboscata.json"
+    },
+    "Distruggere Non Morti Finale": {
+      "id": "BRdW0lzb14GT03JD",
+      "pack": "brancalonia-features",
+      "file": "class-chierico-livello_20-distruggere-non-morti-finale.json"
+    },
+    "Fascino Innato": {
+      "id": "WAYZ2FLysysj3KnP",
+      "pack": "brancalonia-features",
+      "file": "tratto004_fascino_innato.json"
+    },
+    "Ascendenza Fatata": {
+      "id": "cmcAf3saOWSMsY9Z",
+      "pack": "brancalonia-features",
+      "file": "tratto001_ascendenza_fatata.json"
+    },
+    "Know Your Enemy (Archetipo)": {
+      "id": "RDsJycHtnd6Dj0iv",
+      "pack": "brancalonia-features",
+      "file": "classguerrierolivello_7maestrocombattente.json"
+    },
+    "rituale_scaramantico": {
+      "id": "zB1OdFXcMgF2Kuqu",
+      "pack": "brancalonia-features",
+      "file": "scaramante_stregonelivello_6rituale_scaramantico.json"
+    },
+    "Rissaiolo Professionista": {
+      "id": "ElAC9xg1zUvfkxRs",
+      "pack": "emeriticenze",
+      "file": "rissaiolo_professionista.json"
+    },
+    "Gioco di Squadra": {
+      "id": "RX8ldQSmaHS2De82",
+      "pack": "emeriticenze",
+      "file": "gioco_di_squadra.json"
+    },
+    "Recupero Migliorato": {
+      "id": "WNJrxRUFzxE9uKFE",
+      "pack": "emeriticenze",
+      "file": "recupero_migliorato.json"
+    },
+    "Il Dono del Talento": {
+      "id": "eKmE7u6yUdEYW5LF",
+      "pack": "emeriticenze",
+      "file": "il_dono_del_talento.json"
+    },
+    "Fandonia Migliorata": {
+      "id": "eJQ3qRq5TLM4Ou3f",
+      "pack": "emeriticenze",
+      "file": "fandonia_migliorata.json"
+    },
+    "Fandonia Potenziata": {
+      "id": "YbVUa7diKoHBrBte",
+      "pack": "emeriticenze",
+      "file": "fandonia_potenziata.json"
+    },
+    "Emeriticenza Assoluta": {
+      "id": "uQEMPoZuCDtP7LVH",
+      "pack": "emeriticenze",
+      "file": "emeriticenza_assoluta.json"
+    },
+    "Energumeno": {
+      "id": "energumeno41d582",
+      "pack": "emeriticenze",
+      "file": "energumeno.json"
+    },
+    "Affinamento": {
+      "id": "aHg9j6if8ZVThSJR",
+      "pack": "emeriticenze",
+      "file": "affinamento.json"
+    },
+    "Arma Preferita": {
+      "id": "bPo0irLrsA7rU5eB",
+      "pack": "emeriticenze",
+      "file": "arma_preferita.json"
+    },
+    "Sangue della Vilupera": {
+      "id": "AyhHjNk4Y7WEHBmN",
+      "pack": "talenti",
+      "file": "sangue_della_vilupera.json"
+    },
+    "Scudanza": {
+      "id": "6UEeN4OKJSP547Le",
+      "pack": "talenti",
+      "file": "scudanza.json"
+    },
+    "Speziale": {
+      "id": "bOWrLte5W79Tsakj",
+      "pack": "talenti",
+      "file": "speziale.json"
+    },
+    "Scaglianza": {
+      "id": "scaglianzadd4fb5",
+      "pack": "talenti",
+      "file": "scaglianza.json"
+    },
+    "Antica Arte Culinaria": {
+      "id": "ZMky2LsZrFJmXjX9",
+      "pack": "talenti",
+      "file": "antica_arte_culinaria.json"
+    },
+    "Supercazzola": {
+      "id": "2CSHqXGjgqJCfIdz",
+      "pack": "talenti",
+      "file": "supercazzola.json"
+    },
+    "Compagno della Selva": {
+      "id": "QRYgt3ZgXYjx7GP8",
+      "pack": "talenti",
+      "file": "compagno_della_selva.json"
+    },
+    "Anima Contadina": {
+      "id": "mtnMhD7Mbt8hHynz",
+      "pack": "talenti",
+      "file": "anima_contadina.json"
+    }
+  }
+}

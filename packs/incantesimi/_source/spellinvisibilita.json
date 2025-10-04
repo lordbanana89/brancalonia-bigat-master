@@ -1,0 +1,114 @@
+{
+  "_id": "rOBmNVSRmGdVBMtz",
+  "_key": "!item!spellinvisibilita3461bf",
+  "name": "Invisibilità",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una creatura che tocchi diventa invisibile fino al termine dell'incantesimo. Qualsiasi cosa il bersaglio stia indossando o trasportando è invisibile finché resta sulla persona del bersaglio. L'incantesimo termina per un bersaglio che attacca o lancia un incantesimo.</p><h3>Note per il DM</h3><p><em>Invisibility è utility/escape potente. Termina con azioni offensive lo bilancia. Ottimo per infiltrazione e scouting.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.254",
+    "level": 2,
+    "school": "ill",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-invisibilita",
+      "fonte": "D&D 5e PHB p.254",
+      "note_dm": "Invisibility è utility/escape potente. Termina con azioni offensive lo bilancia. Ottimo per infiltrazione e scouting.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "attivazione": "action",
+        "range": "touch",
+        "durata": "1 hour",
+        "concentrazione": true,
+        "condizione": "invisible"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Illusione",
+        "level": 2
+      }
+    }
+  }
+}

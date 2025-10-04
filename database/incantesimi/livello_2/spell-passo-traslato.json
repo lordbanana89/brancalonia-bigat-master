@@ -1,0 +1,57 @@
+{
+  "id": "spell-passo-traslato",
+  "nome": "Passo Traslato",
+  "nome_inglese": "Misty Step",
+  "livello": 2,
+  "scuola": "Evocazione",
+  "tempo_lancio": "1 azione bonus",
+  "gittata": "Personale",
+  "componenti": {
+    "verbale": true
+  },
+  "durata": "Istantanea",
+  "descrizione": "Brevemente circondato da nebbia argentata, ti teletrasporti fino a 30 piedi in uno spazio non occupato che puoi vedere.",
+  "classi": ["Mago", "Stregone", "Warlock"],
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 2,
+    "attivazione": "bonus",
+    "range": "self",
+    "teleport": "30 ft"
+  },
+  "meccaniche": {
+    "bonus_action": "Non usa azione principale",
+    "line_of_sight": "Deve vedere destinazione",
+    "no_opportunity": "Non provoca opportunity attack",
+    "verbal_only": "Castable se restrained"
+  },
+  "valore_tattico": {
+    "escape": "Fuga da grapple/restrain",
+    "positioning": "Riposizionamento istantaneo",
+    "pursuit": "Inseguire nemici",
+    "elevation": "Salire/scendere livelli"
+  },
+  "limitazioni": [
+    "Solo 30 piedi",
+    "Deve vedere destinazione",
+    "Usa spell slot prezioso",
+    "Non attraversa muri"
+  ],
+  "combo": [
+    "Cast spell + misty step stesso turno",
+    "Escape + dash per 60 ft totali",
+    "Teleport dietro per sneak attack setup",
+    "Reach obiettivi elevati"
+  ],
+  "fey_touched": {
+    "feat_bonus": "1/long rest gratis",
+    "valore": "Aggiunge mobilità a qualsiasi build"
+  },
+  "confronto": {
+    "vs_dimension_door": "Meno range ma bonus action",
+    "vs_thunder_step": "No damage ma level 2",
+    "vs_disengage": "Migliore ma costa slot"
+  },
+  "note_dm": "Misty Step è escape/mobilità premium. Bonus action lo rende eccezionale. Solo verbale permette cast in situazioni difficili.",
+  "fonte": "D&D 5e PHB p.260"
+}

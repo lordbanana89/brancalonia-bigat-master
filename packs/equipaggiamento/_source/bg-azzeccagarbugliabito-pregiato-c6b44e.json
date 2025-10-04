@@ -1,0 +1,52 @@
+{
+  "_id": "CGh5BF91vwzKX49F",
+  "_key": "!item!bg-azzeccagarbugliabito-pregiato-c6b44e",
+  "name": "Abito pregiato",
+  "type": "equipment",
+  "img": "icons/equipment/chest/shirt-simple-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Abito pregiato - Equipaggiamento iniziale del background azzeccagarbugli.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "armor": {
+      "value": 10,
+      "dex": null
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "stealth": false,
+    "attunement": "",
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "azzeccagarbugli"
+    }
+  }
+}

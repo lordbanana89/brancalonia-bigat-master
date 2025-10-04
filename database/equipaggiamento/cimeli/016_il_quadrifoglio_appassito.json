@@ -1,0 +1,39 @@
+{
+  "id": "016",
+  "nome": "Il Quadrifoglio Appassito",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Quadrifoglio secco in ampolla di vetro",
+  "proprieta": "Una volta al giorno, puoi ritirare un tiro di dado",
+  "valore": "777 mo",
+  "storia": "L'uomo più fortunato del mondo morì il giorno che lo trovò",
+  "limite": "Dopo 7 usi si sbriciola",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "limited_use",
+      "maxUsesTotal": 7,
+      "currentUsesTotal": 7,
+      "maxUsesDaily": 1,
+      "currentUsesDaily": 1,
+      "resetPeriod": "day",
+      "lastReset": 0,
+      "onDeplete": "item_destroyed",
+      "depleteMessage": "Il quadrifoglio si sbriciola in polvere!"
+    },
+    "hooks": ["dnd5e.preRollAbilityTest", "dnd5e.preRollAbilitySave", "dnd5e.preRollAttack"],
+    "macros": ["rerollDice"],
+    "ui_config": {
+      "showUsesInSheet": true,
+      "showDailyUses": true,
+      "showTotalUses": true,
+      "warningThreshold": 3,
+      "usesLabel": "Usi giornalieri / totali"
+    }
+  },
+  "img": "icons/magic/nature/leaf-clover-inscribed.webp"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gear-serv-005",
+  "nome": "Alloggio Sfarzoso (notte)",
+  "categoria": "oggetto_comune",
+  "sottotipo": "servizi_alloggio",
+  "costo": "4 mo",
+  "peso": "—",
+  "descrizione": "Suite con servizio in camera, bagno caldo e guardia privata.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

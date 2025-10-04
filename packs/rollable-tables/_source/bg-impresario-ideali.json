@@ -1,0 +1,106 @@
+{
+  "_id": "CMrZE6owY2hymXZ0",
+  "_key": "!tables!CMrZE6owY2hymXZ0",
+  "name": "Impresario - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "jg0aMPfjheQuq779",
+      "type": 0,
+      "text": "Comunione. C'è posto per chiunque dietro il sipario. (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!jg0aMPfjheQuq779"
+    },
+    {
+      "_id": "XaCgqgic0rWVuhGY",
+      "type": 0,
+      "text": "Liceità. L'arte va espressa nel rispetto di chi ospita lo spettacolo. (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!XaCgqgic0rWVuhGY"
+    },
+    {
+      "_id": "iVTGVKZnbOeKbIXg",
+      "type": 0,
+      "text": "Autodeterminazione. Ciò che serve allo spettacolo viene prima di tutto. (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!iVTGVKZnbOeKbIXg"
+    },
+    {
+      "_id": "AruhnMH24BCt1bkU",
+      "type": 0,
+      "text": "Fino all'osso. Il mondo è di chi sa prenderselo, usando chi serve. (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!AruhnMH24BCt1bkU"
+    },
+    {
+      "_id": "WCO5RENtzKKhmwD4",
+      "type": 0,
+      "text": "Lo spettacolo deve continuare. Qualsiasi cosa accada, la rappresentazione non si ferma. (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!WCO5RENtzKKhmwD4"
+    },
+    {
+      "_id": "5IAwrwtbnmprlK3q",
+      "type": 0,
+      "text": "Il copione. Ognuno ha una parte da recitare e nulla accade per caso. (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!5IAwrwtbnmprlK3q"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "impresario",
+      "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

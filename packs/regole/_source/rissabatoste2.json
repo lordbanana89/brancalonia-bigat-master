@@ -1,0 +1,22 @@
+{
+  "_id": "mSSm6G6ymhpHiBra",
+  "_key": "!journal!rissabatoste27bcaa9",
+  "name": "Pesto",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-batoste-2",
+      "fonte": "Brancalonia Manuale Base"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

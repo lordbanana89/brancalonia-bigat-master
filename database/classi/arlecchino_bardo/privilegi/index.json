@@ -1,0 +1,28 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "arlecchino_bardo-livello_3-competenze_bonus",
+      "nome": "Competenze Bonus",
+      "file": "arlecchino_bardo-livello_3-competenze_bonus.json"
+    },
+    {
+      "id": "arlecchino_bardo-livello_3-batocchio",
+      "nome": "Batocchio",
+      "file": "arlecchino_bardo-livello_3-batocchio.json"
+    },
+    {
+      "id": "arlecchino_bardo-livello_3-difesa_senza_armatura",
+      "nome": "Difesa Senza Armatura",
+      "file": "arlecchino_bardo-livello_3-difesa_senza_armatura.json"
+    },
+    {
+      "id": "arlecchino_bardo-livello_6-silenzio_in_sala",
+      "nome": "Silenzio In Sala",
+      "file": "arlecchino_bardo-livello_6-silenzio_in_sala.json"
+    }
+  ]
+}

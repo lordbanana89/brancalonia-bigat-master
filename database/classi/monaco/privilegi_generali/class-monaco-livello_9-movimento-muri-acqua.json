@@ -1,0 +1,31 @@
+{
+  "id": "class-monaco-livello_9-movimento-muri-acqua",
+  "nome": "Movimento Senza Armatura Migliorato",
+  "nome_brancalonia": "Camminare sui Muri e sull'Acqua",
+  "livello": 9,
+  "tipo": "passivo",
+  "descrizione": "Al 9° livello, ottieni la capacità di muoverti lungo superfici verticali e attraverso liquidi nel tuo turno senza cadere durante il movimento.",
+  "meccaniche": {
+    "wall_running": "Corri su muri verticali",
+    "water_walking": "Corri su liquidi",
+    "limitazione": "Solo durante movimento, cadi se ti fermi"
+  },
+  "implementazione_foundry": {
+    "tipo": "movement_mode",
+    "wall_run": true,
+    "water_walk": true
+  },
+  "applicazioni": {
+    "combat": "Posizionamento impossibile",
+    "exploration": "Bypassa ostacoli",
+    "escape": "Fughe cinematiche",
+    "infiltration": "Accesso unico"
+  },
+  "combo": {
+    "con_speed_50ft": "50ft verticale per turno",
+    "con_dash": "100ft+ su muri",
+    "con_slow_fall": "Salta da qualsiasi altezza"
+  },
+  "note_dm": "Wall/water running trasforma il monaco in ninja. Cambia completamente movement options e tattiche.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.79"
+}

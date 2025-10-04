@@ -1,0 +1,68 @@
+{
+  "id": "spell-invisibilita-superiore",
+  "nome": "Invisibilità Superiore",
+  "nome_inglese": "Greater Invisibility",
+  "livello": 4,
+  "scuola": "Illusione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Contatto",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "Concentrazione, fino a 1 minuto",
+  "descrizione": "Tu o una creatura che tocchi diventate invisibili fino al termine dell'incantesimo. Qualsiasi cosa il bersaglio stia indossando o trasportando è invisibile fintanto che resta sulla persona del bersaglio.",
+  "classi": ["Bardo", "Mago", "Stregone"],
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 4,
+    "attivazione": "action",
+    "range": "touch",
+    "durata": "1 minute",
+    "concentrazione": true,
+    "condizione": "invisible"
+  },
+  "differenza_da_invisibility": {
+    "non_termina": "Attaccare NON rompe invisibilità",
+    "cast_spell": "Puoi castare rimanendo invisible",
+    "durata": "1 minuto vs 1 ora",
+    "livello": "4° vs 2° livello"
+  },
+  "benefici_combattimento": {
+    "advantage_attacks": "Tutti attacchi con vantaggio",
+    "disadvantage_defense": "Attacchi contro con svantaggio",
+    "no_target_spell": "Immune a spell che richiedono sight",
+    "hide_anywhere": "Può nascondersi ovunque"
+  },
+  "valore_tattico": {
+    "assassino": "Rogue con advantage ogni turno",
+    "caster_protetto": "Mago può castare indisturbato",
+    "tank_evasivo": "Fighter unhittable",
+    "scout_combat": "Info gathering durante fight"
+  },
+  "counters": [
+    "See Invisibility spell",
+    "True Sight",
+    "Faerie Fire",
+    "Blindsight/Tremorsense",
+    "Area damage (no target needed)"
+  ],
+  "confronto": {
+    "vs_blur": "Invisible > disadvantage only",
+    "vs_mirror_image": "Continuo vs limitato",
+    "vs_sanctuary": "Offensive vs defensive"
+  },
+  "limitazioni": [
+    "Solo 1 minuto durata",
+    "Concentrazione vulnerabile",
+    "Touch range",
+    "Suoni/tracce ancora presenti"
+  ],
+  "build_synergy": [
+    "Arcane Trickster perfetto",
+    "Eldritch Knight con War Magic",
+    "Sorcerer Subtle Spell combo"
+  ],
+  "note_dm": "Greater Invisibility è top tier combat buff. Advantage/disadvantage ogni round è enorme. Solo 1 minuto bilancia potenza.",
+  "fonte": "D&D 5e PHB p.246"
+}

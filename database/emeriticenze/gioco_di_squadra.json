@@ -1,0 +1,20 @@
+{
+  "nome": "Gioco di Squadra",
+  "fonte": "Manuale Base p.40",
+  "tipo": "emeriticenza",
+  "descrizione": "Azione aiuto come azione bonus",
+  "requisiti": "6° livello + 9000 PE extra",
+  "usi_massimi": null,
+  "meccaniche": {
+    "aiuto_rapido": {
+      "tipo": "narrativo",
+      "descrizione": "Può effettuare azione di aiuto come azione bonus",
+      "nota": "Richiede gestione durante combattimento"
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "emeriticenza_gioco_di_squadra",
+    "compendio": "emeriticenze"
+  }
+}

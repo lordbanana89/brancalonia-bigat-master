@@ -1,0 +1,60 @@
+{
+  "id": "022",
+  "nome": "La Zappa del Contadino Ribelle",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Zappa rugginosa ma ancora tagliente",
+  "proprieta": "Conta come arma +1 contro nobili e soldati",
+  "valore": "100 mo",
+  "storia": "Usata per decapitare il Barone oppressore",
+  "bonus": "Il portatore non può essere intimidito da autorità",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.bonuses.mwak.attack",
+        "mode": 2,
+        "value": "1",
+        "priority": 20
+      },
+      {
+        "key": "system.bonuses.mwak.damage",
+        "mode": 2,
+        "value": "1",
+        "priority": 20
+      },
+      {
+        "key": "flags.dnd5e.advantage.save.wis",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "requiresConditional": true,
+      "conditionalType": "target_noble_or_soldier",
+      "bonusCondition": "vs_nobili_soldati",
+      "immunityIntimidation": "authority_figures",
+      "description": "+1 arma vs nobili/soldati, immune intimidazione autorità"
+    },
+    "hooks": ["dnd5e.preRollAttack", "dnd5e.rollDamage"],
+    "macros": [],
+    "ui_config": {
+      "showConditional": true,
+      "conditionalText": "Bonus +1 attivo contro: Nobili, Soldati, Guardie, Autorità",
+      "showImmunity": true,
+      "immunityText": "✅ Immune a intimidazione da figure d'autorità"
+    },
+    "narrative_reminders": [
+      "Il bonus +1 si applica SOLO contro nobili, soldati e autorità",
+      "Il portatore non può essere intimidito da figure d'autorità",
+      "Simbolo potente di rivolta contadina",
+      "Può creare tensioni sociali con nobiltà",
+      "Usata per decapitare un Barone - ha storia di sangue"
+    ]
+  },
+  "img": "icons/tools/farming/hoe-simple-steel-brown.webp"
+}

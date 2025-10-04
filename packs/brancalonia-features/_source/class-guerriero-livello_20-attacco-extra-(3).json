@@ -1,0 +1,39 @@
+{
+  "_id": "a9vwi3v4i7ukrikd",
+  "_key": "!item!a9vwi3v4i7ukrikd",
+  "name": "Attacco Extra (3)",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Puoi attaccare quattro volte",
+      "chat": ""
+    },
+    "requirements": "Livello 20",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

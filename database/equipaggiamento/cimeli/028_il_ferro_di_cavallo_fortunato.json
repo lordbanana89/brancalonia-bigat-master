@@ -1,0 +1,39 @@
+{
+  "id": "028",
+  "nome": "Il Ferro di Cavallo Fortunato",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Ferro di cavallo dorato trovato sulla strada",
+  "proprieta": "Una volta al giorno trasforma un fallimento critico in successo normale",
+  "valore": "300 mo",
+  "storia": "Dal cavallo che vinse 100 corse",
+  "durata": "Perde potere dopo 77 utilizzi",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "limited_use",
+      "maxUsesTotal": 77,
+      "currentUsesTotal": 77,
+      "maxUsesDaily": 1,
+      "currentUsesDaily": 1,
+      "resetPeriod": "day",
+      "lastReset": 0,
+      "onDeplete": "item_powerless",
+      "depleteMessage": "Il ferro di cavallo perde la sua fortuna e diventa un oggetto comune."
+    },
+    "hooks": ["dnd5e.preRollAttack", "dnd5e.preRollAbilityTest"],
+    "macros": ["convertCriticalFail"],
+    "ui_config": {
+      "showUsesInSheet": true,
+      "showDailyUses": true,
+      "showTotalUses": true,
+      "warningThreshold": 10,
+      "usesLabel": "Conversioni giornaliere / totali"
+    }
+  },
+  "img": "icons/commodities/metal/horseshoe-steel.webp"
+}

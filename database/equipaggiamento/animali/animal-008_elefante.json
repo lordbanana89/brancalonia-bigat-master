@@ -1,0 +1,17 @@
+{
+  "id": "animal-008",
+  "nome": "Elefante",
+  "categoria": "animale_equipaggiamento",
+  "tipo": "cavalcatura_esotica",
+  "costo": "200 mo",
+  "velocita": "12 m",
+  "capacita_carico": "600 kg",
+  "descrizione": "Imponente bestia da carico utilizzata per guerre o parate.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Cavalcature e Animali"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

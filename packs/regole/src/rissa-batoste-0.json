@@ -1,0 +1,22 @@
+{
+  "_id": "dPsVaMEdlabhcks2",
+  "_key": "!journal!rissabatoste0f43afc",
+  "name": "Fresco",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-batoste-0",
+      "fonte": "Brancalonia Manuale Base"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

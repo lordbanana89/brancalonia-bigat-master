@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-006",
+  "nome": "Martello Leggero",
+  "categoria": "arma_standard",
+  "tipo": "semplice_mischia",
+  "costo": "2 mo",
+  "danni": "1d4 contundenti",
+  "proprieta": [
+    "Leggera",
+    "Lancio (6/18 m)"
+  ],
+  "peso": "0.9 kg",
+  "descrizione": "Martello da lancio con testa metallica equilibrata.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "_id": "Qz23Yi0E1c9qosGU",
+  "_key": "!tables!Qz23Yi0E1c9qosGU",
+  "name": "Staffetta - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "DePaxGanUMEiLjRc",
+      "type": 0,
+      "text": "Sono paranoica e temo di essere pedinata.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!DePaxGanUMEiLjRc"
+    },
+    {
+      "_id": "vaz2ZPQ6NLxggSmv",
+      "type": 0,
+      "text": "Ho servito una fazione odiata: farei di tutto per tenerlo segreto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!vaz2ZPQ6NLxggSmv"
+    },
+    {
+      "_id": "vCvq33pxPnvFPQa0",
+      "type": 0,
+      "text": "Un tic nervoso mi tradisce ogni volta che mento.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!vCvq33pxPnvFPQa0"
+    },
+    {
+      "_id": "wZgZh1ciDwO2SblP",
+      "type": 0,
+      "text": "Metto a rischio la vita dei compagni pur di non fallire.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!wZgZh1ciDwO2SblP"
+    },
+    {
+      "_id": "HF5iR5rmTOb3p0nk",
+      "type": 0,
+      "text": "Ho una pessima igiene personale.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!HF5iR5rmTOb3p0nk"
+    },
+    {
+      "_id": "SbU52K1J3TkciLLn",
+      "type": 0,
+      "text": "Ho memoria corta e scarso senso dell'orientamento.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!SbU52K1J3TkciLLn"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "staffetta",
+      "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

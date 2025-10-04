@@ -1,0 +1,159 @@
+{
+  "id": "class-chierico-livello_10-intervento-divino",
+  "nome": "Intervento Divino",
+  "nome_brancalonia": "Miracolo dei Santi",
+  "livello": 10,
+  "tipo": "attivo",
+  "descrizione": "A partire dal 10° livello, puoi invocare la tua divinità perché intervenga in tuo aiuto quando il bisogno è disperato. Implorare l'aiuto della tua divinità richiede un'azione. Descrivi l'assistenza che cerchi e tira un d100. Se ottieni un numero uguale o inferiore al tuo livello da chierico, la tua divinità interviene.",
+  "meccaniche": {
+    "azione_richiesta": "Azione",
+    "tiro": "d100",
+    "successo": "Risultato ≤ livello chierico",
+    "probabilità": {
+      "livello_10": "10%",
+      "livello_15": "15%",
+      "livello_19": "19%",
+      "livello_20": "100% (automatico)"
+    },
+    "recupero": {
+      "fallimento": "Riposo lungo",
+      "successo": "7 giorni"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "divine_intervention",
+    "formula": "1d100",
+    "dc": "@classes.cleric.levels",
+    "cooldown": {
+      "fail": "long_rest",
+      "success": "7_days"
+    }
+  },
+  "natura_intervento": {
+    "dm_decide": "Effetto a discrezione DM",
+    "suggerimenti": [
+      "Effetto di qualsiasi incantesimo chierico",
+      "Effetto di incantesimo di dominio",
+      "Miracolo narrativo appropriato"
+    ],
+    "scala": "Generalmente = spell 7°-9° livello"
+  },
+  "esempi_interventi": {
+    "combattimento": [
+      "Heal di massa istantaneo",
+      "Resurrezione immediata",
+      "Teletrasporto di gruppo",
+      "Time Stop divino"
+    ],
+    "esplorazione": [
+      "Conoscenza divina rivelata",
+      "Passaggio sicuro garantito",
+      "Visione del futuro",
+      "Comunicazione con divinità"
+    ],
+    "sociale": [
+      "Conversione istantanea NPC",
+      "Verità rivelata pubblicamente",
+      "Miracolo che convince folle",
+      "Benedizione su comunità"
+    ]
+  },
+  "interpretazione_divinità": {
+    "war_god": "Rinforzi divini, armi benedette",
+    "life_god": "Guarigione miracolosa, resurrezione",
+    "knowledge_god": "Rivelazioni, profezie",
+    "trickery_god": "Illusioni massive, inganni",
+    "nature_god": "Controllo elementi, animali",
+    "tempest_god": "Tempeste, fulmini dal cielo"
+  },
+  "gestione_probabilità": {
+    "tentativi_per_successo": {
+      "10%": "~10 tentativi medi",
+      "15%": "~7 tentativi medi",
+      "19%": "~5 tentativi medi"
+    },
+    "strategie": [
+      "Usa in momenti davvero disperati",
+      "Non sprecare su problemi minori",
+      "Considera il cooldown 7 giorni"
+    ]
+  },
+  "lucky_feat_interaction": {
+    "raw": "Lucky non funziona (non è check/save/attack)",
+    "homebrew": "Alcuni DM permettono"
+  },
+  "confronto_wish": {
+    "divine_intervention": {
+      "pro": "No componenti, no slot",
+      "contro": "Probabilità bassa, DM decide"
+    },
+    "wish": {
+      "pro": "Effetto garantito (base)",
+      "contro": "9° livello slot, rischi"
+    }
+  },
+  "livello_20_cambiamento": {
+    "automatico": "Sempre funziona",
+    "da_probabilistico": "A deterministico",
+    "impatto": "Miracolo garantito ogni 7 giorni",
+    "paragone": "Come Wish gratuito settimanale"
+  },
+  "situazioni_ideali": {
+    "tpk_imminente": "Salvare party da wipe",
+    "boss_finale": "Momento critico campagna",
+    "narrativo": "Climax storia personaggio",
+    "impossibile": "Risolvere l'irrisolvibile"
+  },
+  "comunicazione_dm": {
+    "preparazione": "Discuti prima della sessione",
+    "aspettative": "Allinea su scala potere",
+    "temi": "Appropria a divinità seguita",
+    "limiti": "Cosa NON può fare"
+  },
+  "effetti_narrativi": {
+    "manifestazione": [
+      "Avatar divino appare",
+      "Voce dal cielo",
+      "Miracolo naturale",
+      "Visione collettiva"
+    ],
+    "conseguenze": [
+      "Fama del miracolo si sparge",
+      "Conversioni di massa",
+      "Pellegrinaggi al luogo",
+      "Chierico diventa santo"
+    ]
+  },
+  "bilanciamento": {
+    "non_abusabile": "Cooldown 7 giorni severo",
+    "incertezza": "Mai garantito (fino al 20)",
+    "dm_controllo": "DM decide effetto esatto",
+    "narrativo": "Deve essere disperato"
+  },
+  "multiclasse_considerazioni": {
+    "solo_livelli_chierico": "Non conta altri livelli",
+    "investimento": "Serve dedication a chierico"
+  },
+  "storie_famose": {
+    "esempi_campagne": [
+      "Fermare esercito demoniaco",
+      "Salvare città da cataclisma",
+      "Resurrezione re morto",
+      "Purificare terra corrotta"
+    ]
+  },
+  "errori_comuni": {
+    "uso_triviale": "Sprecare su problemi minori",
+    "aspettative_eccessive": "Volere onnipotenza",
+    "dimenticare_cooldown": "Non tracciare 7 giorni",
+    "non_provare": "Paura di 'sprecare' il tiro"
+  },
+  "narrazione_brancalonia": {
+    "santi_intercessori": "Santi del Regno intervengono",
+    "miracoli_popolari": "Storie che diventano leggende",
+    "fede_semplice": "Preghiere del popolino esaudite",
+    "ironia_divina": "Dei capricciosi del Regno"
+  },
+  "note_dm": "Divine Intervention è il momento spotlight definitivo del chierico. Usalo per creare momenti memorabili. L'effetto dovrebbe essere proporzionale alla disperazione della situazione.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+}

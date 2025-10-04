@@ -1,0 +1,23 @@
+{
+  "id": "spadaccino_guerriero-livello_3-scuola_scherma",
+  "livello": 3,
+  "nome": "Scuola di Scherma",
+  "tipo": "multiplo",
+  "fonte": "Manuale Base p.23",
+  "descrizione": "L'addestramento nelle scuole cittadine ti concede tre tecniche coreografiche che alternano difesa, offesa e studio dell'avversario.",
+  "tecniche": {
+    "Studiare l'Avversario": {
+      "tipo": "attivo",
+      "descrizione": "Quando usi l'azione Schivata, il tuo prossimo attacco entro la fine del turno successivo ha vantaggio",
+      "condizione": "Devi effettuare l'attacco prima dell'inizio del tuo turno successivo"
+    },
+    "Zappa e Spada": {
+      "tipo": "passivo",
+      "descrizione": "+1 alla CA mentre impugni un'arma da mischia in ciascuna mano"
+    },
+    "Duello": {
+      "tipo": "attivo",
+      "descrizione": "Se sei entro 1,5 metri da un solo avversario, aggiungi il tuo bonus di competenza ai danni delle armi da mischia contro di lui"
+    }
+  }
+}

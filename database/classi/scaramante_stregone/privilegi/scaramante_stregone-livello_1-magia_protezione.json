@@ -1,0 +1,11 @@
+{
+  "id": "scaramante_stregone-livello_1-magia_protezione",
+  "livello": 1,
+  "nome": "Magia di Protezione",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.28",
+  "descrizione": "Le superstizioni ti insegnano formule di abiurazione. Quando apprendi un trucchetto o un incantesimo da stregone puoi scegliere anche dal catalogo delle abiurazioni.",
+  "effetti": [
+    "Ogni volta che impari un trucchetto o incantesimo da stregone puoi selezionare un incantesimo di Abiurazione in aggiunta alle opzioni normali"
+  ]
+}

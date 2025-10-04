@@ -1,0 +1,117 @@
+{
+  "id": "class-monaco-livello_1-difesa-senza-armatura",
+  "nome": "Difesa Senza Armatura",
+  "nome_brancalonia": "Via del Corpo",
+  "livello": 1,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 1° livello, mentre non indossi armatura e non usi scudo, la tua CA è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Saggezza.",
+  "meccaniche": {
+    "formula_ca": "10 + DEX mod + WIS mod",
+    "requisiti": "Nessuna armatura, nessuno scudo",
+    "stack": "Non cumula con altre formule CA"
+  },
+  "implementazione_foundry": {
+    "tipo": "ac_calculation",
+    "formula": "10 + @abilities.dex.mod + @abilities.wis.mod",
+    "condizione": "No armor, no shield"
+  },
+  "calcoli_ca": {
+    "point_buy_start": {
+      "dex_16_wis_16": "CA 16 (10+3+3)",
+      "confronto": "= Chain shirt + shield"
+    },
+    "livello_8": {
+      "dex_18_wis_18": "CA 18 (10+4+4)",
+      "confronto": "= Plate armor"
+    },
+    "livello_20": {
+      "dex_20_wis_20": "CA 20 (10+5+5)",
+      "confronto": "Meglio di plate + shield base"
+    }
+  },
+  "confronto_armature": {
+    "vs_leather": "Inizialmente simile (11+DEX)",
+    "vs_studded": "Supera con WIS 14+ (12+DEX)",
+    "vs_medium": "Competitivo con stats alti",
+    "vs_heavy": "Raggiunge plate con ottimizzazione"
+  },
+  "vantaggi": {
+    "mobilità": "Nessuna penalità stealth",
+    "economico": "Non serve comprare armature",
+    "sempre_pronto": "CA piena anche sorpreso",
+    "nuoto": "Nessun problema in acqua"
+  },
+  "sinergie": {
+    "con_mobility": "Alta CA + movimento",
+    "con_patient_defense": "Dodge per CA effettiva 23+",
+    "con_shield_spell": "Non applicabile (multiclasse)",
+    "con_haste": "+2 AC aggiuntiva"
+  },
+  "build_ottimizzazione": {
+    "priorità_stats": {
+      "1": "DEX (AC + hit + damage)",
+      "2": "WIS (AC + ki DC)",
+      "3": "CON (HP)"
+    },
+    "obiettivi_asi": {
+      "livello_4": "DEX 18 o WIS 18",
+      "livello_8": "DEX 20 o WIS 20",
+      "livello_12": "Entrambe 20 idealmente"
+    }
+  },
+  "multiclasse_considerazioni": {
+    "barbarian": "Può usare CON invece di WIS",
+    "conflitti": "Non stack formule multiple",
+    "migliore_vince": "Scegli formula più alta"
+  },
+  "magic_items": {
+    "bracers_defense": "+2 CA bonus (stack)",
+    "ring_protection": "+1 CA (stack)",
+    "cloak_protection": "+1 CA (stack)",
+    "ioun_stone": "+1 CA (stack)"
+  },
+  "tattiche": {
+    "posizionamento": "Sfrutta mobilità per evitare attacchi",
+    "hit_and_run": "Entra, colpisci, esci",
+    "patient_defense": "Quando circondato",
+    "kiting": "Mantieni distanza con movimento"
+  },
+  "progressione_difese": {
+    "livello_1-4": "CA 16-17 tipica",
+    "livello_5-10": "CA 17-18 con ASI",
+    "livello_11-16": "CA 18-19 comune",
+    "livello_17-20": "CA 19-20 possibile"
+  },
+  "errori_comuni": {
+    "trascurare_wis": "Focus solo DEX = CA bassa",
+    "armor_tentazione": "Indossare armor = perde privilegi",
+    "shield": "Anche buckler blocca capacità",
+    "multiclasse_male": "Non capire conflitti formule"
+  },
+  "narrazione_brancalonia": {
+    "filosofia": "Il corpo è l'armatura",
+    "addestramento": "Anni di disciplina",
+    "istinto": "Schivare è naturale",
+    "fluidità": "Muoversi come acqua"
+  },
+  "note_dm": "Unarmored Defense rende il monaco unico. Richiede investimento in due stats ma premia con CA competitiva e totale libertà di movimento.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.78",
+  "name": "Difesa Senza Armatura",
+  "img": "systems/dnd5e/icons/icons/items/armor/plate.webp-scale-grey.webp",
+  "_id": "U1yLVg4kEzmw8bx0",
+  "_key": "!item!class-monaco-livello_1-difesa-senza-armatura",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

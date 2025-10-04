@@ -1,0 +1,46 @@
+{
+  "id": "013",
+  "nome": "L'Occhio di Vetro del Pirata",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Occhio di vetro con pupilla dorata",
+  "proprieta": "Chi lo mette nell'orbita vede attraverso nebbia e tempeste",
+  "valore": "1000 mo",
+  "storia": "Il pirata Guercio vide il tesoro ma morì prima di raggiungerlo",
+  "prezzo": "Deve sacrificare un occhio vero",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "flags.brancalonia.seeWeather",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "permanent_sacrifice",
+      "cost": "one_real_eye",
+      "eyeSacrificed": false,
+      "benefit": "Visione attraverso nebbia e tempeste",
+      "description": "Sacrificio occhio reale per visione meteo"
+    },
+    "hooks": [],
+    "macros": ["installGlassEye"],
+    "ui_config": {
+      "showSacrificeStatus": true,
+      "confirmDialog": true,
+      "warningText": "⚠️ ATTENZIONE: Richiede sacrificio PERMANENTE di un occhio reale!"
+    },
+    "narrative_reminders": [
+      "Deve essere inserito nell'orbita al posto di un occhio vero",
+      "Il sacrificio dell'occhio è permanente e irreversibile",
+      "Fornisce visione perfetta attraverso nebbia, tempeste e maltempo",
+      "Utile per navigazione e esplorazione"
+    ]
+  },
+  "img": "icons/commodities/gems/pearl-brown-grey.webp"
+}

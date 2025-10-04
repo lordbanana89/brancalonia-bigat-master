@@ -1,0 +1,22 @@
+{
+  "id": "gioco-botte-alla-botte",
+  "titolo": "Botte alla Botte",
+  "descrizione": "Sfida di lancio alla botte sospesa che custodisce le puntate dei partecipanti; resistenza al vino e precisione fanno la differenza.",
+  "preparazione": {
+    "posta": "Puntata uguale per tutti i partecipanti, inserita nella botte",
+    "assetto": "La botte o contenitore equivalente viene appesa con corde o catene",
+    "parametri_condottiero": "Stabilire CA, PF e eventuali tratti speciali della botte"
+  },
+  "svolgimento": [
+    "Ogni partecipante dichiara quanti colpi effettuera e beve altrettanti boccali di birra.",
+    "Per ogni boccale bevuto si effettua un tiro salvezza su Costituzione CD 10 + numero di boccali; fallire impone svantaggio a tutti i tiri successivi.",
+    "Partendo da chi ha bevuto di piu e proseguendo in ordine decrescente, ognuno effettua i colpi dichiarati contro la botte.",
+    "Un colpo critico infrange immediatamente la botte.",
+    "Il gioco termina quando la botte e distrutta o quando tutti hanno esaurito i colpi: chi infligge il colpo di grazia incassa l'intero bottino; se la botte resiste, il locandiere trattiene il premio e i partecipanti non pagano le birre."
+  ],
+  "varianti": "Ogni taverna puo cambiare armi da lancio, robustezza della botte o aggiungere costumi scenici per i contendenti.",
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "58"
+  }
+}

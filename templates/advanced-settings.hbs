@@ -1,0 +1,56 @@
+<div class="brancalonia-advanced-settings">
+  <h2><i class="fas fa-cogs"></i> Impostazioni Avanzate</h2>
+
+  <div class="form-group">
+    <label>
+      <input type="checkbox" name="debugMode" {{checked debugMode}}>
+      Debug Mode
+    </label>
+    <p class="notes">Abilita logging dettagliato nella console per troubleshooting</p>
+  </div>
+
+  <hr>
+
+  <div class="form-group">
+    <label>UI Scale (%)</label>
+    <input type="range" name="uiScale" value="{{uiScale}}" min="50" max="150" step="10">
+    <span class="range-value">{{uiScale}}%</span>
+    <p class="notes">Scala l'interfaccia utente (50% - 150%)</p>
+  </div>
+
+  <hr>
+
+  <div class="form-group">
+    <label>
+      <input type="checkbox" name="autoHide" {{checked autoHide}}>
+      Auto-nascondi interfaccia
+    </label>
+    <p class="notes">Nascondi automaticamente elementi UI quando non in uso</p>
+  </div>
+
+  {{#if isGM}}
+  <hr>
+
+  <div class="form-group">
+    <label>
+      <input type="checkbox" name="enforceGM" {{checked enforceGM}}>
+      Forza impostazioni GM
+    </label>
+    <p class="notes">Applica le tue impostazioni a tutti i giocatori</p>
+  </div>
+  {{/if}}
+
+  <hr>
+
+  <div class="form-group">
+    <label>CSS Personalizzato</label>
+    <textarea name="customCSS" rows="10">{{customCSS}}</textarea>
+    <p class="notes">Aggiungi CSS personalizzato (usare con cautela)</p>
+  </div>
+
+  <footer>
+    <button type="submit">
+      <i class="fas fa-save"></i> Salva Impostazioni
+    </button>
+  </footer>
+</div>

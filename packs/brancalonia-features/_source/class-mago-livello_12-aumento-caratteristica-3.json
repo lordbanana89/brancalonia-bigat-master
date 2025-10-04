@@ -1,0 +1,40 @@
+{
+  "id": "class-mago-livello_12-aumento-caratteristica-3",
+  "nome": "Aumento dei Punteggi di Caratteristica",
+  "nome_brancalonia": "Perfezionamento Arcano",
+  "livello": 12,
+  "tipo": "advancement",
+  "descrizione": "Al 12° livello, puoi aumentare un punteggio di caratteristica di 2, o due punteggi di 1, o scegliere un talento.",
+  "meccaniche": {
+    "come_sempre": "ASI standard"
+  },
+  "implementazione_foundry": {
+    "tipo": "advancement",
+    "advancement_type": "AbilityScoreImprovement"
+  },
+  "scelte_tipiche_12": {
+    "talento": "Lucky, Alert, o Metamagic Adept",
+    "costituzione": "+2 CON per HP e concentrazione",
+    "destrezza": "+2 DEX per AC e iniziativa"
+  },
+  "note_dm": "Al 12°, molti maghi prendono talenti per specializzazione avendo già INT 20.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.115",
+  "name": "Aumento Caratteristica 3",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "_id": "ciSOokwQTNaGYabb",
+  "_key": "!item!class-mago-livello_12-aumento-caratteristica-3",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

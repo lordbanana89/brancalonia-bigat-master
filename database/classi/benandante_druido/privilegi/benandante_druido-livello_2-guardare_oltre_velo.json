@@ -1,0 +1,13 @@
+{
+  "id": "benandante_druido-livello_2-guardare_oltre_velo",
+  "livello": 2,
+  "nome": "Guardare Oltre il Velo",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.21",
+  "descrizione": "Lo sguardo del benandante trapassa la notte e il regno dei morti. Riesci a distinguere i contorni del mondo sia nell’oscurità comune sia in quella magica, e avverti l’eco dei non morti che si avvicinano.",
+  "effetti": [
+    "Ottieni scurovisione fino a 36 metri (120 piedi), valida anche contro l'oscurità magica",
+    "Percepisci la presenza di ogni creatura non morta entro 18 metri (60 piedi), anche oltre il velo o dietro coperture leggere"
+  ],
+  "note": "La percezione dei non morti non rivela la loro posizione esatta né li identifica, ma ti permette di sapere se sono presenti nel raggio indicato."
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "PRAamLqnYlvQueeV",
+  "_key": "!journal!rissabatoste3d120b2",
+  "name": "Malconcio",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-batoste-3",
+      "fonte": "Brancalonia Manuale Base"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

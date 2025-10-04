@@ -1,0 +1,18 @@
+{
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "descrizione.json"
+    },
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "livelli.json"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "oggetto-contraff-001",
+  "nome": "Documenti Falsi",
+  "categoria": "oggetto_contraffatto",
+  "costo": "10 mo",
+  "descrizione": "Set di pergamene contraffatte che imitano permessi, contratti o lettere credenziali ufficiali.",
+  "utilizzo": "Conferiscono un bonus narrativo alle prove sociali finché non vengono esaminati con cura; trattati come equipaggiamento scadente per eventuali verifiche (rischio di smascheramento).",
+  "note_meccaniche": "Seguono le regole di Equipaggiamento Contraffatto: funzionano come la versione scadente del documento originale.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  }
+}

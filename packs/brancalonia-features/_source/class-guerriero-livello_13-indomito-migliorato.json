@@ -1,0 +1,106 @@
+{
+  "id": "class-guerriero-livello_13-indomito-migliorato",
+  "nome": "Indomito (due usi)",
+  "nome_brancalonia": "Resilienza Leggendaria",
+  "livello": 13,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 13° livello, puoi usare Indomito due volte tra un riposo lungo e l'altro.",
+  "meccaniche": {
+    "usi_disponibili": 2,
+    "recupero": "Riposo lungo",
+    "progressione": {
+      "livello_9": "1 uso",
+      "livello_13": "2 usi",
+      "livello_17": "3 usi"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "resource_increase",
+    "risorsa": "Indomito",
+    "valore": 2
+  },
+  "impatto_tattico": {
+    "flessibilità": "Usa su save meno critici",
+    "sopravvivenza": "Due chance contro effetti letali",
+    "affidabilità": "Meno conservativo nell'uso"
+  },
+  "gestione_usi": {
+    "combattimenti_giorno": {
+      "pochi_2-3": "Uno per battaglia importante",
+      "medi_4-5": "Conserva per boss",
+      "molti_6+": "Usa quando necessario"
+    },
+    "priorità": [
+      "Save or die effects",
+      "Incapacitazione lunga durata",
+      "Controllo mentale/possessione",
+      "Effetti che rimuovono dal combat"
+    ]
+  },
+  "confronto_progressione": {
+    "livello_9-12": {
+      "limite": "Molto selettivo",
+      "stress": "Decisione difficile"
+    },
+    "livello_13-16": {
+      "comfort": "Più libertà d'uso",
+      "coverage": "Copre più minacce"
+    },
+    "livello_17+": {
+      "abbondanza": "Quasi sempre disponibile",
+      "strategia": "Usa liberamente"
+    }
+  },
+  "combinazioni_difensive": {
+    "con_lucky": "4+ reroll totali al giorno",
+    "con_resilient": "Competenza + reroll",
+    "con_magic_items": "Cloak/ring + reroll",
+    "con_bless": "1d4 + reroll se serve"
+  },
+  "analisi_statistica": {
+    "miglioramento_sopravvivenza": {
+      "vs_save_difficili": "+40% chance sopravvivere",
+      "vs_encounter_mortali": "Doppia rete sicurezza"
+    },
+    "confronto_classi": {
+      "vs_legendary_resistance": "Meno affidabile ma gratuito",
+      "vs_portent": "Meno controllo ma più usi",
+      "vs_diamond_soul": "Meno consistente ma universale"
+    }
+  },
+  "situazioni_esempio": {
+    "round_1": "Fallisce save vs Hold Person, usa Indomito",
+    "round_3": "Fallisce save vs Disintegrate, usa secondo",
+    "flessibilità": "Non deve conservare per 'quello perfetto'"
+  },
+  "build_synergy": {
+    "tank": "Due chance resistere controllo",
+    "damage": "Resta attivo per fare danni",
+    "support": "Non essere burden per party"
+  },
+  "narrazione_brancalonia": {
+    "veterano_indurito": "Ha visto troppo per cedere",
+    "volontà_ferro": "Mente e corpo temprati",
+    "sopravvissuto": "Sempre una carta in più"
+  },
+  "note_dm": "Due usi di Indomito cambiano drasticamente la psicologia del giocatore. Meno ansia nell'usarlo, più probabilità di sopravvivere a encounter difficili.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "name": "Indomito Migliorato",
+  "img": "icons/equipment/shield/buckler-wooden-boss-steel.webp",
+  "_id": "IE21F2NfI7HwFrW2",
+  "_key": "!item!class-guerriero-livello_13-indomito-migliorato",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

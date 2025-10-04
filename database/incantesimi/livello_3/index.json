@@ -1,0 +1,53 @@
+{
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 9,
+  "elementi": [
+    {
+      "id": "assicurazione",
+      "nome": "Assicurazione",
+      "file": "spell-assicurazione.json"
+    },
+    {
+      "id": "banchetto-dei-poveri",
+      "nome": "Banchetto dei Poveri",
+      "file": "spell-banchetto-dei-poveri.json"
+    },
+    {
+      "id": "controincantesimo",
+      "nome": "Controincantesimo",
+      "file": "spell-controincantesimo.json"
+    },
+    {
+      "id": "emanazione-angelica",
+      "nome": "Emanazione Angelica",
+      "file": "spell-emanazione-angelica.json"
+    },
+    {
+      "id": "lentezza",
+      "nome": "Lentezza",
+      "file": "spell-lentezza.json"
+    },
+    {
+      "id": "mondare",
+      "nome": "Mondare",
+      "file": "spell-mondare.json"
+    },
+    {
+      "id": "palla-di-fuoco",
+      "nome": "Palla di Fuoco",
+      "file": "spell-palla-di-fuoco.json"
+    },
+    {
+      "id": "velocità",
+      "nome": "Velocità",
+      "file": "spell-velocita.json"
+    },
+    {
+      "id": "volare",
+      "nome": "Volare",
+      "file": "spell-volare.json"
+    }
+  ]
+}

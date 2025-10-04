@@ -1,0 +1,123 @@
+{
+  "id": "class-guerriero-livello_1-stile-combattimento",
+  "nome": "Stile di Combattimento",
+  "nome_brancalonia": "Scuola di Scherma",
+  "livello": 1,
+  "tipo": "passivo",
+  "descrizione": "Adotti uno stile particolare di combattimento come tua specialità. Scegli una delle seguenti opzioni. Non puoi scegliere uno Stile di Combattimento più di una volta, anche se in seguito hai la possibilità di sceglierne un altro.",
+  "meccaniche": {
+    "tipo_scelta": "Permanente",
+    "numero_scelte": 1,
+    "cambio_possibile": "Solo con talento o privilegi speciali"
+  },
+  "opzioni_disponibili": {
+    "archery": {
+      "nome": "Tiro con l'Arco",
+      "nome_brancalonia": "Tiratore Scelto",
+      "effetto": "+2 ai tiri per colpire con armi a distanza",
+      "implementazione": {
+        "key": "system.bonuses.rwak.attack",
+        "mode": 2,
+        "value": "2"
+      }
+    },
+    "defense": {
+      "nome": "Difesa",
+      "nome_brancalonia": "Guardia Ferrea",
+      "effetto": "+1 alla CA mentre indossi un'armatura",
+      "implementazione": {
+        "key": "system.attributes.ac.bonus",
+        "mode": 2,
+        "value": "1",
+        "condition": "system.attributes.ac.armor !== null"
+      }
+    },
+    "dueling": {
+      "nome": "Duellare",
+      "nome_brancalonia": "Spadaccino Elegante",
+      "effetto": "+2 ai danni quando impugni un'arma da mischia in una mano e nessun'altra arma",
+      "implementazione": {
+        "key": "system.bonuses.mwak.damage",
+        "mode": 2,
+        "value": "2",
+        "condition": "one-handed weapon only"
+      }
+    },
+    "great_weapon": {
+      "nome": "Combattere con Armi Possenti",
+      "nome_brancalonia": "Colpi Devastanti",
+      "effetto": "Quando ottieni 1 o 2 su un dado di danno per un attacco con un'arma da mischia a due mani, puoi ritirare il dado",
+      "implementazione": {
+        "nota": "Richiede macro per ritiro dadi",
+        "flag": "flags.dnd5e.gwf"
+      }
+    },
+    "protection": {
+      "nome": "Protezione",
+      "nome_brancalonia": "Difensore Fedele",
+      "effetto": "Con scudo, puoi imporre svantaggio a un attacco contro un alleato entro 1.5m come reazione",
+      "implementazione": {
+        "tipo": "reazione",
+        "requisito": "Scudo equipaggiato"
+      }
+    },
+    "two_weapon": {
+      "nome": "Combattere con Due Armi",
+      "nome_brancalonia": "Doppia Lama",
+      "effetto": "Aggiungi il modificatore di caratteristica ai danni del secondo attacco quando combatti con due armi",
+      "implementazione": {
+        "key": "flags.dnd5e.twf",
+        "value": "true"
+      }
+    }
+  },
+  "stili_aggiuntivi": {
+    "tasha": [
+      "Blind Fighting",
+      "Interception",
+      "Superior Technique",
+      "Thrown Weapon Fighting",
+      "Unarmed Fighting"
+    ],
+    "brancalonia": [
+      "Scherma Villana (bonus intimidire)",
+      "Guardia del Brigante (bonus contro imboscate)"
+    ]
+  },
+  "sinergie": {
+    "con_talenti": {
+      "sharpshooter": "Archery riduce penalità -5/+10",
+      "great_weapon_master": "GWF aumenta danni medi",
+      "dual_wielder": "Two-Weapon con armi non leggere",
+      "defensive_duelist": "Dueling + parata con reazione"
+    },
+    "con_multiclasse": {
+      "ranger": "Può prendere stile aggiuntivo",
+      "paladino": "Può prendere stile aggiuntivo",
+      "champion": "Stile aggiuntivo al 10° livello"
+    }
+  },
+  "guida_scelta": {
+    "tank": "Defense per +1 CA costante",
+    "dps_melee": "Great Weapon o Dueling",
+    "dps_ranged": "Archery quasi obbligatorio",
+    "support": "Protection per proteggere alleati",
+    "versatile": "Defense funziona sempre"
+  },
+  "calcoli_impatto": {
+    "archery": {
+      "aumento_hit": "+10% probabilità colpire",
+      "dps_increase": "~15-20% DPS totale"
+    },
+    "dueling": {
+      "danno_extra": "+2 fisso per attacco",
+      "con_attacchi_extra": "+4-8 per turno"
+    },
+    "gwf": {
+      "danno_medio_d12": "Da 6.5 a 7.33",
+      "danno_medio_2d6": "Da 7 a 8.33"
+    }
+  },
+  "note_dm": "Lo stile di combattimento definisce molto del ruolo del guerriero in battaglia. È una scelta permanente importante.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72"
+}

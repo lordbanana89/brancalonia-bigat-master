@@ -1,0 +1,15 @@
+{
+  "id": "gear-006",
+  "nome": "Lanterna Schermata",
+  "categoria": "provvista_avventuriera",
+  "costo": "10 mo",
+  "peso": "1 kg",
+  "descrizione": "Produce luce intensa in un cono di 18 m (fioca per ulteriori 18 m); funziona per 6 ore con 1 litro di olio.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

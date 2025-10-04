@@ -1,0 +1,41 @@
+{
+  "id": "026",
+  "nome": "Il Diario del Condannato",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Libro con pagine che si scrivono da sole",
+  "proprieta": "Scrive automaticamente i peccati di chi lo possiede",
+  "valore": "400 mo",
+  "storia": "Il condannato era innocente ma il diario lo incastrò",
+  "utilita": "Può essere usato come prova in tribunale",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "narrative_only",
+      "effectDescription": "Registra automaticamente le malefatte",
+      "utility": "Prova in tribunale"
+    },
+    "hooks": ["createChatMessage"],
+    "macros": [],
+    "ui_config": {
+      "dmReminder": true,
+      "reminderText": "Log peccati/crimini del portatore automaticamente"
+    },
+    "narrative_reminders": [
+      "Il diario scrive AUTOMATICAMENTE ogni peccato/crimine del possessore",
+      "La scrittura è leggibile e in italiano/lingua comune",
+      "Include dettagli: data, luogo, natura del peccato",
+      "Può essere usato come PROVA IN TRIBUNALE (considerato magicamente veritiero)",
+      "Il condannato originale era innocente ma il diario lo incastrò",
+      "Impossibile distruggere le pagine già scritte",
+      "Può essere lasciato in un luogo sicuro per nascondere prove",
+      "Terribile per criminali, ottimo per garantire onestà",
+      "DM: decidere cosa costituisce 'peccato' (crimini? bugie? pensieri?)"
+    ]
+  },
+  "img": "icons/sundries/books/book-worn-brown-blue.webp"
+}

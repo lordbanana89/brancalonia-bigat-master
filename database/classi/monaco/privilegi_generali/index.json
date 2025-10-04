@@ -1,0 +1,108 @@
+{
+  "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 20,
+  "elementi": [
+    {
+      "id": "class-monaco-livello_1-arti-marziali",
+      "nome": "Pugni del Vento",
+      "file": "class-monaco-livello_1-arti-marziali.json"
+    },
+    {
+      "id": "class-monaco-livello_1-difesa-senza-armatura",
+      "nome": "Via del Corpo",
+      "file": "class-monaco-livello_1-difesa-senza-armatura.json"
+    },
+    {
+      "id": "class-monaco-livello_2-ki",
+      "nome": "Energia Interiore",
+      "file": "class-monaco-livello_2-ki.json"
+    },
+    {
+      "id": "class-monaco-livello_2-movimento-senza-armatura",
+      "nome": "Passo del Vento",
+      "file": "class-monaco-livello_2-movimento-senza-armatura.json"
+    },
+    {
+      "id": "class-monaco-livello_3-deviare-proiettili",
+      "nome": "Mani Come Scudi",
+      "file": "class-monaco-livello_3-deviare-proiettili.json"
+    },
+    {
+      "id": "class-monaco-livello_3-tradizione-monastica",
+      "nome": "Via del Guerriero",
+      "file": "class-monaco-livello_3-tradizione-monastica.json"
+    },
+    {
+      "id": "class-monaco-livello_4-aumento-caratteristica",
+      "nome": "Perfezionamento del Guerriero",
+      "file": "class-monaco-livello_4-aumento-caratteristica.json"
+    },
+    {
+      "id": "class-monaco-livello_4-caduta-lenta",
+      "nome": "Piuma Nel Vento",
+      "file": "class-monaco-livello_4-caduta-lenta.json"
+    },
+    {
+      "id": "class-monaco-livello_5-stunning-strike",
+      "nome": "Pugno Paralizzante",
+      "file": "class-monaco-livello_5-stunning-strike.json"
+    },
+    {
+      "id": "class-monaco-livello_5-attacco-extra",
+      "nome": "Raffica del Frate",
+      "file": "class-monaco-livello_5-attacco-extra.json"
+    },
+    {
+      "id": "class-monaco-livello_6-colpi-ki",
+      "nome": "Pugni Mistici",
+      "file": "class-monaco-livello_6-colpi-ki.json"
+    },
+    {
+      "id": "class-monaco-livello_7-quiete-mentale",
+      "nome": "Pace Interiore",
+      "file": "class-monaco-livello_7-quiete-mentale.json"
+    },
+    {
+      "id": "class-monaco-livello_7-evasione",
+      "nome": "Schivata Perfetta",
+      "file": "class-monaco-livello_7-evasione.json"
+    },
+    {
+      "id": "class-monaco-livello_9-movimento-muri-acqua",
+      "nome": "Camminare Sui Muri e Sull'acqua",
+      "file": "class-monaco-livello_9-movimento-muri-acqua.json"
+    },
+    {
+      "id": "class-monaco-livello_10-purezza-corpo",
+      "nome": "Corpo Incorruttibile",
+      "file": "class-monaco-livello_10-purezza-corpo.json"
+    },
+    {
+      "id": "class-monaco-livello_13-lingua-sole-luna",
+      "nome": "Parlata Universale",
+      "file": "class-monaco-livello_13-lingua-sole-luna.json"
+    },
+    {
+      "id": "class-monaco-livello_14-anima-diamante",
+      "nome": "Spirito Indomito",
+      "file": "class-monaco-livello_14-anima-diamante.json"
+    },
+    {
+      "id": "class-monaco-livello_15-corpo-senza-tempo",
+      "nome": "Eternità della Carne",
+      "file": "class-monaco-livello_15-corpo-senza-tempo.json"
+    },
+    {
+      "id": "class-monaco-livello_18-corpo-vuoto",
+      "nome": "Forma Eterea",
+      "file": "class-monaco-livello_18-corpo-vuoto.json"
+    },
+    {
+      "id": "class-monaco-livello_20-perfezione-interiore",
+      "nome": "Maestria Assoluta",
+      "file": "class-monaco-livello_20-perfezione-interiore.json"
+    }
+  ]
+}

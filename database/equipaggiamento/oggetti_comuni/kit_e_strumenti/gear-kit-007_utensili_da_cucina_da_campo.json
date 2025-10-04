@@ -1,0 +1,16 @@
+{
+  "id": "gear-kit-007",
+  "nome": "Utensili da Cucina da Campo",
+  "categoria": "oggetto_comune",
+  "sottotipo": "kit_e_strumenti",
+  "costo": "2 mo",
+  "peso": "3 kg",
+  "descrizione": "Pentolino, mestolo, coltello da cucina e tagliere pieghevole.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

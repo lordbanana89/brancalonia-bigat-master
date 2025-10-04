@@ -1,0 +1,46 @@
+{
+  "progressione": [
+    {
+      "livello": 1,
+      "slot": 1
+    },
+    {
+      "livello": 3,
+      "slot": 2
+    },
+    {
+      "livello": 5,
+      "slot": 3
+    },
+    {
+      "livello": 7,
+      "slot": 4
+    },
+    {
+      "livello": 9,
+      "slot": 5
+    },
+    {
+      "livello": 11,
+      "slot": 6
+    },
+    {
+      "livello": 13,
+      "slot": 7
+    },
+    {
+      "livello": 15,
+      "slot": 8
+    },
+    {
+      "livello": 17,
+      "slot": 9
+    },
+    {
+      "livello": 19,
+      "slot": 10
+    }
+  ],
+  "uso": "Ogni slot = 1 uso di Mossa per Rissa",
+  "recupero": "Tutti gli slot si recuperano dopo riposo breve"
+}

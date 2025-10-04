@@ -1,0 +1,12 @@
+{
+  "id": "guiscardo_mago-livello_2-chincaglieria_magica",
+  "livello": 2,
+  "nome": "Chincaglieria Magica",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.24",
+  "descrizione": "Ogni guiscardo viaggia con borse piene di reliquie malfunzionanti, specchi infranti e bacchette scheggiate. Anche quando sembrano cianfrusaglie sprigionano una scintilla di Fandonia.",
+  "effetti": [
+    "Puoi usare qualsiasi oggetto magico in tuo possesso come focus arcano",
+    "Ottieni un oggetto magico non comune a scelta dalla tabella del Ciarpame Magico (Manuale Base p.67) o da una lista analoga decisa dal Condottiero"
+  ]
+}

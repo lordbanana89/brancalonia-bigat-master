@@ -1,0 +1,91 @@
+{
+  "id": "bagordi-tabella-botte-da-orbi",
+  "titolo": "Botte da Orbi e Bisacce Sfondate",
+  "dado": "1d20",
+  "voci": [
+    {
+      "tiro": 1,
+      "descrizione": "Buttate fuori questo sacco di letame! Ti hanno completamente derubato e spogliato di qualsiasi cosa possedessi, abbandonandoti in un fetido rigagnolo. Inoltre, i birri ti trascinano via nel pubblico ludibrio e ti gettano in gattabuia. Cancella tutti i tuoi oggetti comuni e i Cimeli che ti portavi dietro. Inoltre, per farti tirare fuori di galera senza troppe conseguenze, hai usato un Favore."
+    },
+    {
+      "tiro": 2,
+      "descrizione": "Mamma! C'e qualcuno nudo nella stalla! Ti hanno completamente derubato e spogliato di qualsiasi cosa possedessi. Lo so, non e una bella situazione, ma poteva andare peggio... Cancella tutti i tuoi oggetti comuni e i Cimeli che ti portavi dietro."
+    },
+    {
+      "tiro": 3,
+      "descrizione": "Certo! Solo il tempo di prendere il borsello... Qualcuno ti ha tagliato via la borsa, con tutto quello che c'era dentro."
+    },
+    {
+      "tiro": 4,
+      "descrizione": "Senti come puzza questa feccia! Ti fai una pessima fama nei dintorni, di molesto ubriacone, donnaiolo e compagnia disonorevole. Durante il prossimo tiro per i Rischi del Mestiere devi aggiungere 5 al totale del gruppo."
+    },
+    {
+      "tiro": 5,
+      "descrizione": "Chiedo scusa, non volevo versargliela addosso. Hai scatenato la rissa piu spaventosa che si fosse vista in citta negli ultimi anni. Tu, i tuoi sconosciuti avversari e i tuoi ancora piu sconosciuti alleati avete letteralmente distrutto una Bettola. Devi pagare un'altra volta la cifra che hai dilapidato o Sfascio di Bettole Aggravato (30 mo) verra aggiunto alla lista delle tue malefatte."
+    },
+    {
+      "tiro": 6,
+      "descrizione": "Tutto sul mio conto! La situazione ti e sfuggita di mano e sei riuscito a dilapidare in una sola notte il doppio del previsto. Se non possiedi abbastanza denaro, hai contratto dei debiti e un'accusa di Insolvenza (per un numero di mo pari al debito) verra aggiunta alla lista delle tue malefatte."
+    },
+    {
+      "tiro": 7,
+      "descrizione": "Secondino! Ancora un po' di quella sbobba, di grazia. I tuoi schiamazzi notturni hanno attirato le guardie. Tu e quelle canaglie con cui stavi cantando sguaiatamente \"L'uccellin della comare\" siete finiti in galera. Devi pagare 2 mo o rimanere in prigione per altri 3 giorni, e a quel punto tutti si accorgeranno della Taglia che pende sulla tua testa."
+    },
+    {
+      "tiro": 8,
+      "descrizione": "Un'offerta che non puoi rifiutare. Un pericoloso malvivente del luogo ti ha seguito tutta la notte, coprendo i tuoi debiti e offrendosi di pagare per te. All'inizio sei stato compiaciuto di questa cosa (recuperi la somma dilapidata), ma adesso hai un debito nei suoi confronti. E lui ha un favore da chiederti."
+    },
+    {
+      "tiro": 9,
+      "descrizione": "Ehi tu, porco, levale le mani di dosso! Quella che sembrava una laida donnaccia, si rivela essere la sussiegosa moglie di un funzionario del Duca-Conte, che non gradisce le tue attenzioni verso la consorte. Il potente individuo fara di tutto d'ora in poi per ostacolare i tuoi interessi e facendo di tutto per mandarti al bando o in galera. Aggiungi 2 a tutti i prossimi tiri per i Rischi del Mestiere a cui partecipi."
+    },
+    {
+      "tiro": 10,
+      "descrizione": "Amore! La colazione e pronta! Al mattino scopri di avere sposato una persona del posto e a quanto pare l'unione risulta confermata dal Credo. Magari la cosa non e cosi brutta come credevi... ma se per caso gia stai pensando di abbandonare il tetto coniugale ricorda che si tratta di una vera e propria malefatta!"
+    },
+    {
+      "tiro": 11,
+      "descrizione": "Come osi, vile marrano? Mai litigare da ubriachi. Prima di poterti dedicare al prossimo lavoretto, ti aspetta un duello al primo sangue con il figlio del Conestabile. Forse e meglio farsi sconfiggere senza troppo clamore..."
+    },
+    {
+      "tiro": 12,
+      "descrizione": "Questo posto e un vero mortorio! Nonostante le tue pessime intenzioni, vanno tutti a letto presto e nessuno ti da retta. Riesci a dilapidare solo meta della cifra prevista."
+    },
+    {
+      "tiro": 13,
+      "descrizione": "Tu, tu, tu e tu... e anche tu! E stata la notte brava piu devastante della tua vita. Tutto come da programma. Complimenti! Per tutto il prossimo lavoretto, considera un +1 alla tua Nomea."
+    },
+    {
+      "tiro": 14,
+      "descrizione": "E questo che diavolo e? Ti ritrovi in tasca l'atto di proprieta di una cosa chiamata \"Vecchia Babbiona\". Per quello che ne sai, potrebbe essere una vacca, un ronzino, la mappa di un tesoro, una magione fuori citta o quella bagnarola a vela ancorata al porto. In alternativa, puoi aggiungere 1 Cimelio ai tuoi averi."
+    },
+    {
+      "tiro": 15,
+      "descrizione": "Che cosa hai detto di voler essere, tu? Un giovane non proprio in gamba ha deciso di diventare tuo tirapiedi, per imparare da te come si vive l'avventura."
+    },
+    {
+      "tiro": 16,
+      "descrizione": "... e poi e entrata una marionetta vestita da scimmia... Serata epica! La piu colossale rassegna di nefandezze, dissolutezze e cialtronerie che tu abbia mai visto. C'erano donne, narghile, botti usate come piscine, maiali, pappagalli e un caimano. Per tutto il prossimo lavoretto, considera un +2 alla tua Nomea."
+    },
+    {
+      "tiro": 17,
+      "descrizione": "Oh, ecco il mio caro amico! Un estroverso pezzo grosso della citta ti ha preso in simpatia quando siete scappati dal bordello in fiamme, saltando via sui tetti. Adesso, questo influente personaggio e ben felice di ricambiarti un favore."
+    },
+    {
+      "tiro": 18,
+      "descrizione": "Prendo la vecchia! Una serata splendida, a base di eccessi e turpitudini. Il mattino dopo ti rendi conto che quella che credevi un'attempata baldracca era davvero la ricca baronessa che diceva di essere. E ha pagato tutto di tasca propria. Chissa per quale motivo, ti ritrovi il sedere arrossato e nel borsello la cifra che avevi deciso di dilapidare piu un'ulteriore pari quantita di monete."
+    },
+    {
+      "tiro": 19,
+      "descrizione": "Non ho mai visto tanti assi in un solo mazzo! Hai giocato a tutti i tavoli della citta e vinto e perso intere fortune. Alla fine della nottata ti ritrovi in tasca 4 volte la cifra che avevi deciso di dilapidare, in aggiunta a tutto quello che possedevi gia."
+    },
+    {
+      "tiro": 20,
+      "descrizione": "Per Donna Lama, questa citta sembra l'anticamera dell'Inferno! Contagiata dal tuo inesauribile entusiasmo, l'intera citta cede alla rivoluzione che le imponi. Per una notte il vino scorre a fiumi, i bordelli sono pieni, le piazze gremite di gente ubriaca e felice. Una notte che non verra dimenticata mai piu! E in tutta la confusione sei riuscito anche a non tirar fuori un soldo... Recuperi il denaro che avevi dilapidato e considera permanentemente la tua Nomea come di un livello superiore."
+    }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "62-63"
+  }
+}

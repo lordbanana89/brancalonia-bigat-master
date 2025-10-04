@@ -1,0 +1,129 @@
+{
+  "id": "class-guerriero-livello_9-indomito",
+  "nome": "Indomito",
+  "nome_brancalonia": "Tenacia del Veterano",
+  "livello": 9,
+  "tipo": "attivo",
+  "descrizione": "A partire dal 9° livello, puoi ritirare un tiro salvezza che hai fallito. Se lo fai, devi usare il nuovo tiro, e non puoi usare questa capacità di nuovo fino a che non finisci un riposo lungo.",
+  "meccaniche": {
+    "trigger": "Fallisci un tiro salvezza",
+    "effetto": "Ritira il tiro salvezza",
+    "obbligo": "Devi usare il nuovo risultato",
+    "usi": {
+      "livello_9": "1 per riposo lungo",
+      "livello_13": "2 per riposo lungo",
+      "livello_17": "3 per riposo lungo"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "reroll_save",
+    "risorse": {
+      "nome": "Indomito",
+      "valore": "1-3 basato su livello",
+      "recupero": "Riposo lungo"
+    },
+    "flags": {
+      "timing": "Dopo fallimento, prima conseguenze"
+    }
+  },
+  "valore_tattico": {
+    "save_or_die": "Evita effetti letali",
+    "save_or_suck": "Evita incapacitazioni",
+    "boss_abilities": "Resisti a poteri devastanti",
+    "trap_saves": "Sopravvivi a trappole mortali"
+  },
+  "confronto": {
+    "vs_legendary_resistance": "Simile ma richiede nuovo tiro",
+    "vs_lucky": "Lucky è più versatile",
+    "vs_diamond_soul": "Monaco ha competenza tutti save",
+    "unico": "Gratis, no risorse extra"
+  },
+  "ottimizzazione_uso": {
+    "priorità_alta": [
+      "Save contro morte istantanea",
+      "Save contro pietrificazione",
+      "Save contro incapacitazione lunga",
+      "Save contro possessione"
+    ],
+    "priorità_media": [
+      "Save contro stun/paralisi",
+      "Save contro charme importante",
+      "Save contro paura in momenti critici"
+    ],
+    "priorità_bassa": [
+      "Save contro danni dimezzabili",
+      "Save contro effetti minori",
+      "Save quando hai altre difese"
+    ]
+  },
+  "calcoli_probabilità": {
+    "miglioramento_medio": {
+      "save_difficile_DC18": {
+        "bonus_+2": "25% → 44% successo",
+        "bonus_+5": "40% → 64% successo"
+      },
+      "save_facile_DC13": {
+        "bonus_+7": "60% → 84% successo",
+        "bonus_+9": "70% → 91% successo"
+      }
+    },
+    "efficacia": "Meglio su save difficili che facili"
+  },
+  "sinergie": {
+    "con_bless": "Ritira con +1d4 attivo",
+    "con_resistance": "Ritira con vantaggio cantrip",
+    "con_paladin_aura": "Ritira con bonus CHA",
+    "con_magic_items": "Anelli/mantelli protezione"
+  },
+  "situazioni_chiave": {
+    "disintegrate": "Evita morte istantanea",
+    "hold_person": "Evita paralisi in mischia",
+    "banishment": "Resta nel combattimento",
+    "dragon_breath": "Dimezza danni massicci"
+  },
+  "progressione_usi": {
+    "livello_9-12": {
+      "usi": 1,
+      "strategia": "Conserva per save critici"
+    },
+    "livello_13-16": {
+      "usi": 2,
+      "strategia": "Uno per combattimento importante"
+    },
+    "livello_17+": {
+      "usi": 3,
+      "strategia": "Usa liberamente su save importanti"
+    }
+  },
+  "interazione_archetipi": {
+    "eldritch_knight": "Protegge concentrazione spell",
+    "samurai": "Combina con Strength Before Death",
+    "cavalier": "Mantieni posizione difensiva",
+    "battle_master": "Resta attivo per manovre"
+  },
+  "esempi_narrativi": {
+    "eroico": "Resistere a magia del lich",
+    "determinazione": "Alzarsi dopo colpo devastante",
+    "veterano": "Esperienza supera magia",
+    "volontà": "Pura forza di volontà"
+  },
+  "errori_comuni": {
+    "spreco": "Usare su save poco importanti",
+    "dimenticanza": "Non dichiarare prima conseguenze",
+    "timing": "Aspettare troppo per usarlo",
+    "conservazione": "Troppo conservativo al 17+"
+  },
+  "varianti_homebrew": {
+    "indomito_migliorato": "Aggiungi bonus = prof al ritiro",
+    "indomito_selettivo": "Specializza per tipo save",
+    "indomito_di_gruppo": "Alleato entro 10ft ritira"
+  },
+  "narrazione_brancalonia": {
+    "veterani": "Spadaccini che han visto tutto",
+    "sopravvissuti": "Superare maledizioni e sortilegi",
+    "leggendari": "Eroi che sfidano il destino",
+    "tenaci": "Mai arrendersi, mai cedere"
+  },
+  "note_dm": "Indomito è la rete di sicurezza del guerriero contro save importanti. Diventa molto potente al 17° con 3 usi. Ricorda che deve ritirare, non auto-successo.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72"
+}

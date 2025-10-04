@@ -1,0 +1,59 @@
+{
+  "id": "class-chierico-dominio-vita",
+  "nome": "Dominio della Vita",
+  "fonte": "Manuale del Giocatore p.60",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Competenza nelle Armature Pesanti",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bonus Proficiency (Life)"
+        }
+      },
+      {
+        "nome": "Discepolo della Vita",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Disciple of Life"
+        }
+      }
+    ],
+    "livello_2": [
+      {
+        "nome": "Incanalare Divinità: Preservare la Vita",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Preserve Life"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Guaritore Benedetto",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Blessed Healer"
+        }
+      }
+    ],
+    "livello_8": [
+      {
+        "nome": "Colpo Divino (radioso)",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Divine Strike (Life)"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Guarigione Suprema",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Supreme Healing"
+        }
+      }
+    ]
+  }
+}

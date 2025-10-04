@@ -1,0 +1,92 @@
+{
+  "id": "class-chierico-livello_18-incanalare-divinita-supremo",
+  "nome": "Incanalare Divinità (3 usi)",
+  "nome_brancalonia": "Condotto Divino Perfetto",
+  "livello": 18,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 18° livello, puoi usare Incanalare Divinità tre volte tra un riposo breve o lungo.",
+  "meccaniche": {
+    "usi_disponibili": 3,
+    "recupero": "Riposo breve o lungo",
+    "flessibilità_massima": "Usa liberamente"
+  },
+  "implementazione_foundry": {
+    "tipo": "resource_increase",
+    "risorsa": "Channel Divinity",
+    "valore": 3
+  },
+  "impatto_tier_4": {
+    "sempre_disponibile": "1+ per combattimento",
+    "versatilità": "Copre ogni situazione",
+    "dominio_potenza": "Triplo uso abilità dominio"
+  },
+  "esempi_uso_triplo": {
+    "war_domain": [
+      "3 × Guided Strike = 3 hit garantiti",
+      "3 × War God's Blessing per alleati"
+    ],
+    "tempest_domain": [
+      "3 × Destructive Wrath = 3 max damage",
+      "3 × 48 danni Chain Lightning"
+    ],
+    "life_domain": [
+      "3 × Preserve Life = gruppo sempre up",
+      "3 × 30+ HP curati"
+    ],
+    "light_domain": [
+      "3 × Radiance of Dawn = clear battlefield",
+      "3 × 2d10+18 radianti AoE"
+    ]
+  },
+  "gestione_combattimenti_lunghi": {
+    "round_1": "Channel per dominanza iniziale",
+    "round_critico": "Channel per momento chiave",
+    "emergenza": "Channel per salvare situazione",
+    "flessibilità": "Mai senza opzioni"
+  },
+  "turn_undead_spam": {
+    "tre_ondate": "Controllo totale non-morti",
+    "destroy_cr_2": "Elimina masse ogni uso",
+    "dominio_battlefield": "Non-morti impossibilitati"
+  },
+  "confronto_risorse_tier_4": {
+    "vs_wizard_arcane_recovery": "Più frequente (short rest)",
+    "vs_sorcerer_points": "Più impattante per uso",
+    "vs_warlock_mystic_arcanum": "Più flessibile"
+  },
+  "combo_spell_alte": {
+    "flame_strike": "Channel + 8d6 damage",
+    "fire_storm": "Channel + 7d10 AoE",
+    "earthquake": "Channel + controllo terreno"
+  },
+  "errori_comuni": {
+    "conservare": "A livello 18 usa liberalmente",
+    "dimenticare_short": "Non recuperare tra fight",
+    "monotonia": "Usare sempre stesso channel"
+  },
+  "narrazione_brancalonia": {
+    "avatar_divino": "Incarnazione del dio",
+    "santo_militante": "Miracoli continui",
+    "leggenda": "Potere divino illimitato"
+  },
+  "note_dm": "Tre Channel Divinity rendono il chierico 18+ estremamente versatile. Ogni dominio brilla con 3 usi per short rest.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+  "name": "Incanalare Divinita Supremo",
+  "img": "icons/magic/symbols/cross-circle-blue.webp",
+  "_id": "6Q2mypgD3N6zaAOk",
+  "_key": "!item!class-chierico-livello_18-incanalare-divinita-supremo",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

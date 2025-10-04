@@ -1,0 +1,308 @@
+/* ================================================ */
+/* BRANCALONIA UNIFIED DESIGN TOKENS               */
+/* Complete token system for Italian Renaissance   */
+/* theme aligned with crlngn-ui patterns          */
+/* Compatible with dnd5e v5.1.9 & Foundry v12/v13 */
+/* ================================================ */
+
+@layer tokens {
+  :root,
+  .theme-brancalonia {
+    /* =============================================
+       COLOR TOKENS - Italian Renaissance Palette
+       Extracted from existing theme and optimized
+       for WCAG AA contrast compliance
+       ============================================= */
+
+    /* Primary Colors - Parchment & Ink */
+    --bcl-bg: #15110C;                    /* Dark tavern background */
+    --bcl-surface: #F3E6CC;                /* Main parchment surface */
+    --bcl-paper: #E7D6AE;                  /* Standard paper texture */
+    --bcl-paper-weak: #EFE0BD;             /* Light paper variant */
+    --bcl-paper-strong: #D9C38F;           /* Dark paper variant */
+
+    /* Text Hierarchy */
+    --bcl-ink: #2B1F14;                    /* Primary text - sepia ink */
+    --bcl-ink-weak: #4A3826;               /* Secondary text */
+    --bcl-ink-strong: #1C140D;             /* Emphasized text */
+    --bcl-muted: #6C5A43;                  /* Muted/disabled text */
+
+    /* Brand Colors - Renaissance Accents */
+    --bcl-gold: #C9A54A;                   /* Primary gold - buttons/accents */
+    --bcl-gold-leaf: #D4AF37;              /* Bright gold - hover states */
+    --bcl-emerald: #2E7D64;                /* Renaissance green */
+    --bcl-accent: #8C2B27;                 /* Wine red accent */
+    --bcl-accent-strong: #5E1715;          /* Deep wine - active states */
+
+    /* Semantic State Colors */
+    --bcl-success: #2F8F5B;                /* Success green */
+    --bcl-warning: #C27C1A;                /* Warning amber */
+    --bcl-danger: #952C2C;                 /* Danger red */
+    --bcl-info: #4166F5;                   /* Info ultramarine */
+
+    /* Interactive States */
+    --bcl-focus: #7A5E1F;                  /* Focus outline color */
+    --bcl-border: #B99D6B;                 /* Standard border */
+    --bcl-divider: #D6C193;                /* Light divider */
+
+    /* Special Brancalonia Elements */
+    --bcl-seal-wax: #8E1D22;               /* Wax seal red */
+    --bcl-ribbon: #7E1F1B;                 /* Ribbon/banner color */
+    --bcl-nav: #223F4A;                    /* Navigation/map blue-green */
+    --bcl-shadow-ink: rgba(28, 20, 13, 0.35);      /* Ink shadow */
+    --bcl-paper-overlay: rgba(43, 31, 20, 0.06);   /* Paper texture overlay */
+
+    /* State Background Overlays */
+    --bcl-success-bg: rgba(47, 143, 91, 0.1);
+    --bcl-warning-bg: rgba(194, 124, 26, 0.1);
+    --bcl-danger-bg: rgba(149, 44, 44, 0.1);
+    --bcl-info-bg: rgba(65, 102, 245, 0.1);
+
+    /* =============================================
+       TYPOGRAPHY TOKENS
+       ============================================= */
+
+    /* Font Families */
+    --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
+    --bcl-font-serif: "Alegreya", "EB Garamond", Georgia, serif;
+    --bcl-font-sans: "Inter", system-ui, -apple-system, "Segoe UI", "Roboto", sans-serif;
+    --bcl-font-mono: "JetBrains Mono", "Fira Code", ui-monospace, "SFMono-Regular", "Menlo", monospace;
+    --bcl-font-script: "Uncial Antiqua", "MedievalSharp", cursive;
+
+    /* Font Sizes - rem based for accessibility */
+    --bcl-font-size-2xs: 0.625rem;        /* 10px */
+    --bcl-font-size-xs: 0.75rem;          /* 12px */
+    --bcl-font-size-sm: 0.875rem;         /* 14px */
+    --bcl-font-size-md: 1rem;             /* 16px - base */
+    --bcl-font-size-lg: 1.125rem;         /* 18px */
+    --bcl-font-size-xl: 1.25rem;          /* 20px */
+    --bcl-font-size-2xl: 1.5rem;          /* 24px */
+    --bcl-font-size-3xl: 1.875rem;        /* 30px */
+    --bcl-font-size-4xl: 2.25rem;         /* 36px */
+
+    /* Font Weights */
+    --bcl-font-weight-light: 300;
+    --bcl-font-weight-regular: 400;
+    --bcl-font-weight-medium: 500;
+    --bcl-font-weight-semibold: 600;
+    --bcl-font-weight-bold: 700;
+    --bcl-font-weight-black: 900;
+
+    /* Line Heights */
+    --bcl-line-height-tight: 1.2;
+    --bcl-line-height-normal: 1.45;
+    --bcl-line-height-relaxed: 1.6;
+    --bcl-line-height-loose: 1.8;
+
+    /* Letter Spacing */
+    --bcl-letter-spacing-tight: -0.02em;
+    --bcl-letter-spacing-normal: 0;
+    --bcl-letter-spacing-wide: 0.02em;
+    --bcl-letter-spacing-wider: 0.04em;
+    --bcl-letter-spacing-widest: 0.08em;
+
+    /* =============================================
+       SPACING TOKENS - 4pt grid system
+       ============================================= */
+
+    --bcl-space-0: 0;
+    --bcl-space-1: 0.25rem;               /* 4px */
+    --bcl-space-2: 0.5rem;                /* 8px */
+    --bcl-space-3: 0.75rem;               /* 12px */
+    --bcl-space-4: 1rem;                  /* 16px */
+    --bcl-space-5: 1.25rem;               /* 20px */
+    --bcl-space-6: 1.5rem;                /* 24px */
+    --bcl-space-8: 2rem;                  /* 32px */
+    --bcl-space-10: 2.5rem;               /* 40px */
+    --bcl-space-12: 3rem;                 /* 48px */
+    --bcl-space-16: 4rem;                 /* 64px */
+    --bcl-space-20: 5rem;                 /* 80px */
+
+    /* =============================================
+       RADIUS TOKENS
+       ============================================= */
+
+    --bcl-radius-none: 0;
+    --bcl-radius-sm: 0.25rem;             /* 4px */
+    --bcl-radius-md: 0.5rem;              /* 8px */
+    --bcl-radius-lg: 0.75rem;             /* 12px */
+    --bcl-radius-xl: 1rem;                /* 16px */
+    --bcl-radius-2xl: 1.5rem;             /* 24px */
+    --bcl-radius-round: 50%;
+    --bcl-radius-pill: 9999px;
+
+    /* =============================================
+       SHADOW TOKENS
+       ============================================= */
+
+    --bcl-shadow-xs: 0 1px 2px 0 rgba(28, 20, 13, 0.05);
+    --bcl-shadow-sm: 0 1px 3px 0 rgba(28, 20, 13, 0.1), 0 1px 2px -1px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-md: 0 4px 6px -1px rgba(28, 20, 13, 0.1), 0 2px 4px -2px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-lg: 0 10px 15px -3px rgba(28, 20, 13, 0.1), 0 4px 6px -4px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-xl: 0 20px 25px -5px rgba(28, 20, 13, 0.1), 0 8px 10px -6px rgba(28, 20, 13, 0.1);
+    --bcl-shadow-2xl: 0 25px 50px -12px rgba(28, 20, 13, 0.25);
+    --bcl-shadow-inner: inset 0 2px 4px 0 rgba(28, 20, 13, 0.05);
+
+    /* Renaissance-specific shadows */
+    --bcl-shadow-parchment: 0 2px 8px rgba(112, 66, 20, 0.15);
+    --bcl-shadow-gold: 0 4px 16px rgba(212, 175, 55, 0.3);
+    --bcl-shadow-wax: 0 3px 12px rgba(142, 29, 34, 0.4);
+
+    /* =============================================
+       TRANSITION TOKENS
+       ============================================= */
+
+    --bcl-transition-fast: 150ms ease-in-out;
+    --bcl-transition-normal: 250ms ease-in-out;
+    --bcl-transition-slow: 350ms ease-in-out;
+
+    /* Easing functions */
+    --bcl-ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --bcl-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --bcl-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* =============================================
+       Z-INDEX TOKENS - Layer management
+       ============================================= */
+
+    --bcl-z-dropdown: 1000;
+    --bcl-z-sticky: 1020;
+    --bcl-z-fixed: 1030;
+    --bcl-z-backdrop: 1040;
+    --bcl-z-modal: 1050;
+    --bcl-z-popover: 1060;
+    --bcl-z-tooltip: 1070;
+
+    /* =============================================
+       Alias per Theme Engine Carolingiano
+       Mantiene retrocompatibilità con --branca-*
+       ============================================= */
+
+    --branca-bg: var(--bcl-bg);
+    --branca-surface: var(--bcl-surface);
+    --branca-paper: var(--bcl-paper);
+    --branca-ink: var(--bcl-ink);
+    --branca-muted: var(--bcl-muted);
+    --branca-gold: var(--bcl-gold);
+    --branca-emerald: var(--bcl-emerald);
+    --branca-accent: var(--bcl-accent);
+    --branca-accent-strong: var(--bcl-accent-strong);
+    --branca-success: var(--bcl-success);
+    --branca-warning: var(--bcl-warning);
+    --branca-danger: var(--bcl-danger);
+    --branca-focus: var(--bcl-focus);
+    --branca-border: var(--bcl-border);
+    --branca-divider: var(--bcl-divider);
+
+    /* Alias legacy per compatibilità */
+    --branca-burnt-sienna: #8B4513;
+    --branca-raw-sienna: #C68E3F;
+    --branca-venetian-red: var(--bcl-accent);
+    --branca-ochre-yellow: var(--bcl-warning);
+    --branca-burnt-umber: var(--bcl-ink-weak);
+    --branca-malachite: var(--bcl-emerald);
+    --branca-ultramarine: #4166F5;
+    --branca-lead-white: var(--bcl-surface);
+    --branca-bone-black: var(--bcl-ink);
+    --branca-gold-leaf: var(--bcl-gold);
+    --branca-cinabrese: #E8B19D;
+    --branca-wine-red: var(--bcl-accent-strong);
+    --branca-terracotta: #CB6843;
+    --branca-warm-grey: var(--bcl-muted);
+    --branca-parchment: var(--bcl-paper);
+    --branca-sepia: #704214;
+
+    /* Alias UI legacy */
+    --branca-background: var(--bcl-paper);
+    --branca-text-primary: var(--bcl-ink);
+    --branca-text-secondary: var(--bcl-ink-weak);
+    --branca-error: var(--bcl-danger);
+
+    /* Alias font legacy */
+    --branca-font-display: var(--bcl-font-display);
+    --branca-font-body: var(--bcl-font-serif);
+    --branca-font-special: 'Uncial Antiqua', cursive;
+
+    /* ============================================
+       DND5E V5.1.9 INTEGRATION
+       Map Brancalonia tokens to dnd5e system variables
+       ============================================ */
+
+    /* dnd5e color system */
+    --dnd5e-color-parchment: var(--bcl-paper);
+    --dnd5e-color-card: var(--bcl-paper-weak);
+    --dnd5e-border-gold: 1px solid var(--bcl-gold);
+
+    /* Foundry color system (used by dnd5e v5+) */
+    --color-warm-1: var(--bcl-paper-weak);
+    --color-warm-2: var(--bcl-gold);
+    --color-warm-3: #D4AF37; /* gold-leaf */
+    --color-warm-4: var(--bcl-accent);
+
+    --color-cool-1: var(--bcl-emerald);
+    --color-cool-2: var(--bcl-nav);
+    --color-cool-3: var(--bcl-accent);
+
+    /* Highlight color (user-configurable in crlngn-ui) */
+    --color-highlights: var(--bcl-gold);
+    --color-highlights-75: rgba(201, 165, 74, 0.75);
+  }
+
+  /* =============================================
+     Dark Mode Tokens
+     ============================================= */
+
+  .theme-brancalonia[data-theme="dark"],
+  :root.theme-brancalonia.dark {
+    --bcl-bg: #0F0C08;
+    --bcl-surface: #2B2218;
+    --bcl-paper: #3A2E20;
+    --bcl-paper-weak: #453626;
+    --bcl-paper-strong: #302518;
+
+    --bcl-ink: #F3E6CC;
+    --bcl-ink-weak: #D9C38F;
+    --bcl-ink-strong: #FAF6ED;
+    --bcl-muted: #C9B691;
+
+    --bcl-border: #7A6546;
+    --bcl-divider: #5E4C35;
+
+    /* Accenti invariati per brand consistency */
+    --bcl-gold: #C9A54A;
+    --bcl-emerald: #2E7D64;
+    --bcl-accent: #8C2B27;
+    --bcl-accent-strong: #5E1715;
+    --bcl-success: #2F8F5B;
+    --bcl-warning: #C27C1A;
+    --bcl-danger: #952C2C;
+  }
+}
+
+/* =============================================
+   Tabella Token per Documentazione
+   =============================================
+
+   Token               | Valore Light    | Valore Dark     | Uso
+   ------------------- | --------------- | --------------- | ------------------------
+   --bcl-bg            | #15110C         | #0F0C08         | Background principale
+   --bcl-surface       | #F3E6CC         | #2B2218         | Superficie finestre
+   --bcl-paper         | #E7D6AE         | #3A2E20         | Background contenuti
+   --bcl-paper-weak    | #EFE0BD         | #453626         | Background secondario
+   --bcl-paper-strong  | #D9C38F         | #302518         | Background enfasi
+   --bcl-ink           | #2B1F14         | #F3E6CC         | Testo principale
+   --bcl-ink-weak      | #4A3826         | #D9C38F         | Testo secondario
+   --bcl-ink-strong    | #1C140D         | #FAF6ED         | Testo enfasi
+   --bcl-muted         | #6C5A43         | #C9B691         | Testo disabilitato
+   --bcl-gold          | #C9A54A         | #C9A54A         | Oro/accent primario
+   --bcl-emerald       | #2E7D64         | #2E7D64         | Verde smeraldo
+   --bcl-accent        | #8C2B27         | #8C2B27         | Rosso ceralacca
+   --bcl-accent-strong | #5E1715         | #5E1715         | Rosso vino
+   --bcl-success       | #2F8F5B         | #2F8F5B         | Stato successo
+   --bcl-warning       | #C27C1A         | #C27C1A         | Stato warning
+   --bcl-danger        | #952C2C         | #952C2C         | Stato errore
+   --bcl-focus         | #7A5E1F         | #7A5E1F         | Focus outline
+   --bcl-border        | #B99D6B         | #7A6546         | Bordi elementi
+   --bcl-divider       | #D6C193         | #5E4C35         | Linee divisorie
+
+   ============================================= */

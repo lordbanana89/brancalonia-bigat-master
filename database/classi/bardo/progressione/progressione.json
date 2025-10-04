@@ -1,0 +1,493 @@
+{
+  "tabella": [
+    {
+      "livello": 1,
+      "bonus_competenza": 2,
+      "trucchi_conosciuti": 2,
+      "incantesimi_conosciuti": 4,
+      "slot_incantesimo": {
+        "1": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Incantesimi da Bardo",
+          "fonte": "Manuale del Giocatore p.53",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Spellcasting (Bard)"
+          }
+        },
+        {
+          "id": "class-bardo-livello_1-ispirazione-bardica",
+          "nome": "Parole di Incoraggiamento",
+          "file": "../privilegi_generali/class-bardo-livello_1-ispirazione-bardica.json"
+        }
+      ]
+    },
+    {
+      "livello": 2,
+      "bonus_competenza": 2,
+      "trucchi_conosciuti": 2,
+      "incantesimi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 3
+      },
+      "privilegi": [
+        {
+          "id": "class-bardo-livello_2-jack-tuttofare",
+          "nome": "Maestro di Mille Arti",
+          "file": "../privilegi_generali/class-bardo-livello_2-jack-tuttofare.json"
+        },
+        {
+          "nome": "Canto di Riposo (d6)",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Song of Rest (Bard)"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 3,
+      "bonus_competenza": 2,
+      "trucchi_conosciuti": 2,
+      "incantesimi_conosciuti": 6,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 2
+      },
+      "privilegi": [
+        {
+          "id": "class-bardo-livello_3-collegio-bardico",
+          "nome": "Scuola degli Artisti",
+          "file": "../privilegi_generali/class-bardo-livello_3-collegio-bardico.json"
+        },
+        {
+          "nome": "Competenza Esperta",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Expertise"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 4,
+      "bonus_competenza": 2,
+      "trucchi_conosciuti": 3,
+      "incantesimi_conosciuti": 7,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 5,
+      "bonus_competenza": 3,
+      "trucchi_conosciuti": 3,
+      "incantesimi_conosciuti": 8,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Ispirazione Bardica (d8)",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Bardic Inspiration (d8)"
+          }
+        },
+        {
+          "nome": "Fonte di Ispirazione",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Font of Inspiration"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "bonus_competenza": 3,
+      "trucchi_conosciuti": 3,
+      "incantesimi_conosciuti": 9,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Controincanto",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Countercharm"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 7,
+      "bonus_competenza": 3,
+      "trucchi_conosciuti": 3,
+      "incantesimi_conosciuti": 10,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 8,
+      "bonus_competenza": 3,
+      "trucchi_conosciuti": 3,
+      "incantesimi_conosciuti": 11,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 9,
+      "bonus_competenza": 4,
+      "trucchi_conosciuti": 3,
+      "incantesimi_conosciuti": 12,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Canto di Riposo (d8)",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Song of Rest (d8)"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 10,
+      "bonus_competenza": 4,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 14,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Ispirazione Bardica (d10)",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Bardic Inspiration (d10)"
+          }
+        },
+        {
+          "nome": "Competenza Esperta",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Expertise"
+          }
+        },
+        {
+          "nome": "Segreti Magici",
+          "fonte": "Manuale del Giocatore p.55",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Magical Secrets"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 11,
+      "bonus_competenza": 4,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 15,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 12,
+      "bonus_competenza": 4,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 15,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 13,
+      "bonus_competenza": 5,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 16,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Canto di Riposo (d10)",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Song of Rest (d10)"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 14,
+      "bonus_competenza": 5,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 18,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Segreti Magici",
+          "fonte": "Manuale del Giocatore p.55",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Magical Secrets"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 15,
+      "bonus_competenza": 5,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 19,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Ispirazione Bardica (d12)",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Bardic Inspiration (d12)"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 16,
+      "bonus_competenza": 5,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 19,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 17,
+      "bonus_competenza": 6,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 20,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Canto di Riposo (d12)",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Song of Rest (d12)"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 18,
+      "bonus_competenza": 6,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 22,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Segreti Magici",
+          "fonte": "Manuale del Giocatore p.55",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Magical Secrets"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 19,
+      "bonus_competenza": 6,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 22,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.54",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 20,
+      "bonus_competenza": 6,
+      "trucchi_conosciuti": 4,
+      "incantesimi_conosciuti": 22,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Ispirazione Superiore",
+          "fonte": "Manuale del Giocatore p.55",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Superior Inspiration"
+          }
+        }
+      ]
+    }
+  ]
+}

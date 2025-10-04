@@ -1,0 +1,79 @@
+{
+  "_id": "X493JL31dqEpJfJe",
+  "_key": "!item!gearserv003alloggiomodestonotte6cae50",
+  "name": "Alloggio Modesto (notte)",
+  "type": "equipment",
+  "img": "icons/environment/settlement/house-wooden-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Branda in dormitorio comune con biancheria logora.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "identified": true,
+    "quantity": 1,
+    "weight": "—",
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "armor": {
+      "value": 10,
+      "type": "light",
+      "dex": null
+    },
+    "strength": 0,
+    "stealth": false,
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "gear-serv-003",
+      "fonte": {
+        "manuale": "Manuale Base",
+        "pagine": "Equipaggiamento da Avventura"
+      },
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "tabella": [
+    {
+      "livello": 1,
+      "bonus_competenza": 2,
+      "slot_incantesimo": {},
+      "privilegi": [
+        {
+          "id": "class-paladino-livello_1-senso-divino",
+          "nome": "Senso Divino",
+          "file": "../privilegi_generali/class-paladino-livello_1-senso-divino.json"
+        },
+        {
+          "id": "class-paladino-livello_1-imposizione-mani",
+          "nome": "Imposizione delle Mani",
+          "file": "../privilegi_generali/class-paladino-livello_1-imposizione-mani.json"
+        }
+      ]
+    },
+    {
+      "livello": 2,
+      "bonus_competenza": 2,
+      "slot_incantesimo": {
+        "1": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Incantesimi da Paladino",
+          "fonte": "Manuale del Giocatore p.82",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Spellcasting (Paladin)"
+          }
+        },
+        {
+          "id": "class-paladino-livello_2-stile-combattimento",
+          "nome": "Stile di Combattimento",
+          "file": "../privilegi_generali/class-paladino-livello_2-stile-combattimento.json"
+        },
+        {
+          "id": "class-paladino-livello_2-punizione-divina",
+          "nome": "Punizione Divina",
+          "file": "../privilegi_generali/class-paladino-livello_2-punizione-divina.json"
+        }
+      ]
+    },
+    {
+      "livello": 3,
+      "bonus_competenza": 2,
+      "slot_incantesimo": {
+        "1": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Salute Divina",
+          "fonte": "Manuale del Giocatore p.83",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Divine Health"
+          }
+        },
+        {
+          "id": "class-paladino-livello_3-giuramento-sacro",
+          "nome": "Giuramento Sacro",
+          "file": "../privilegi_generali/class-paladino-livello_3-giuramento-sacro.json"
+        }
+      ]
+    },
+    {
+      "livello": 4,
+      "bonus_competenza": 2,
+      "slot_incantesimo": {
+        "1": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.83",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 5,
+      "bonus_competenza": 3,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 2
+      },
+      "privilegi": [
+        {
+          "id": "class-paladino-livello_5-attacco-extra",
+          "nome": "Attacco Extra",
+          "file": "../privilegi_generali/class-paladino-livello_5-attacco-extra.json"
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "bonus_competenza": 3,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 2
+      },
+      "privilegi": [
+        {
+          "id": "class-paladino-livello_6-aura-protezione",
+          "nome": "Aura di Protezione",
+          "file": "../privilegi_generali/class-paladino-livello_6-aura-protezione.json"
+        }
+      ]
+    },
+    {
+      "livello": 7,
+      "bonus_competenza": 3,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Privilegio del Giuramento",
+          "fonte": "Manuale del Giocatore p.83",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Oath Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 8,
+      "bonus_competenza": 3,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.83",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 9,
+      "bonus_competenza": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 10,
+      "bonus_competenza": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      },
+      "privilegi": [
+        {
+          "id": "class-paladino-livello_10-aura-coraggio",
+          "nome": "Aura del Coraggio",
+          "file": "../privilegi_generali/class-paladino-livello_10-aura-coraggio.json"
+        }
+      ]
+    },
+    {
+      "livello": 11,
+      "bonus_competenza": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      },
+      "privilegi": [
+        {
+          "id": "class-paladino-livello_11-punizione-migliorata",
+          "nome": "Punizione Migliorata",
+          "file": "../privilegi_generali/class-paladino-livello_11-punizione-migliorata.json"
+        }
+      ]
+    },
+    {
+      "livello": 12,
+      "bonus_competenza": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.83",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 13,
+      "bonus_competenza": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 14,
+      "bonus_competenza": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      },
+      "privilegi": [
+        {
+          "id": "class-paladino-livello_14-tocco-purificante",
+          "nome": "Tocco Purificante",
+          "file": "../privilegi_generali/class-paladino-livello_14-tocco-purificante.json"
+        }
+      ]
+    },
+    {
+      "livello": 15,
+      "bonus_competenza": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Privilegio del Giuramento",
+          "fonte": "Manuale del Giocatore p.83",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Oath Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 16,
+      "bonus_competenza": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.83",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 17,
+      "bonus_competenza": 6,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Privilegio del Giuramento",
+          "fonte": "Manuale del Giocatore p.83",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Oath Feature"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 18,
+      "bonus_competenza": 6,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Aura Migliorata",
+          "fonte": "Manuale del Giocatore p.85",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Aura Improvements"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 19,
+      "bonus_competenza": 6,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.83",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 20,
+      "bonus_competenza": 6,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      },
+      "privilegi": [
+        {
+          "id": "class-paladino-livello_20-campione-giuramento",
+          "nome": "Campione del Giuramento",
+          "file": "../privilegi_generali/class-paladino-livello_20-campione-giuramento.json"
+        }
+      ]
+    }
+  ]
+}

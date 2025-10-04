@@ -1,0 +1,72 @@
+{
+  "_id": "7e64dbbaf9f65f0d",
+  "_key": "!item!7e64dbbaf9f65f0d",
+  "name": "Canzone di Riposo",
+  "type": "feat",
+  "img": "icons/magic/sonic/scream-wail-shout-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Canzone di Riposo (2° livello)</strong></p><p>A partire dal 2° livello, puoi usare musica o orazione rilassante per aiutare a rivitalizzare i tuoi alleati feriti durante un riposo breve. Se tu o qualsiasi creatura amichevole che può sentire la tua esibizione recuperate punti ferita alla fine del riposo breve spendendo uno o più Dadi Vita, ognuna di quelle creature recupera 1d6 punti ferita extra.</p><p>I punti ferita extra aumentano quando raggiungi determinati livelli in questa classe: a 1d8 al 9° livello, a 1d10 al 13° livello, e a 1d12 al 17° livello.</p><p><strong>Nota:</strong> Devi eseguire per tutto il riposo breve (minimo 1 ora) affinché questo privilegio funzioni.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.54",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "Durante un riposo breve"
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "ally"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": null,
+      "max": "1",
+      "per": "sr",
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Bardo Livello 2",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "bardo",
+      "livello": 2
+    }
+  }
+}

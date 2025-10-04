@@ -1,0 +1,18 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "class-ranger-archetipo-bestie",
+      "nome": "Class Ranger Archetipo Bestie",
+      "file": "class-ranger-archetipo-bestie.json"
+    },
+    {
+      "id": "class-ranger-archetipo-cacciatore",
+      "nome": "Class Ranger Archetipo Cacciatore",
+      "file": "class-ranger-archetipo-cacciatore.json"
+    }
+  ]
+}

@@ -1,0 +1,3309 @@
+foundry.mjs:180974 _______________________________________________________________
+ _____ ___  _   _ _   _ ____  ______   __ __     _______ _____
+|  ___/ _ \| | | | \ | |  _ \|  _ \ \ / / \ \   / |_   _|_   _|
+| |_ | | | | | | |  \| | | | | |_) \ V /   \ \ / /  | |   | |
+|  _|| |_| | |_| | |\  | |_| |  _ < | |     \ V /   | |   | |
+|_|   \___/ \___/|_| \_|____/|_| \_\|_|      \_/    |_|   |_|
+===============================================================
+foundry.mjs:180975 Foundry VTT | Foundry Virtual Tabletop ESModule loaded
+foundry.mjs:6724 Error: The `ActorSheetMixin` application has been deprecated and integrated into `BaseActorSheet`.
+Deprecated since Version DnD5e 5.0
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at ActorSheetMixin (sheet-mixin.mjs:11:17)
+    at base-sheet.mjs:45:43
+logCompatibilityWarning @ foundry.mjs:6724
+ActorSheetMixin @ sheet-mixin.mjs:11
+(anonymous) @ base-sheet.mjs:45
+multilevel.js:1839 Multilevel Tokens |  Loaded
+brancalonia-compatibility-fix.js:224 ✅ Brancalonia Compatibility Fix loaded
+brancalonia-v13-modern.js:7 🚀 Brancalonia V13 Modern - Initializing
+brancalonia-icon-interceptor.js:6 🎯 Brancalonia Icon Interceptor - TOTAL INTERCEPTION MODE v8.3.8
+brancalonia-icon-interceptor.js:607 🎯 Installing universal icon interceptor...
+brancalonia-icon-interceptor.js:650 ✅ Universal interceptor installed
+brancalonia-icon-interceptor.js:919 
+🎯 ICON INTERCEPTOR COMMANDS:
+- IconInterceptor.scan() - Check interception status
+- IconInterceptor.fix('fa-icon', '\uf123') - Add new mapping
+- IconInterceptor.forceFixAll() - Re-intercept all icons
+
+brancalonia-slugify-fix.js:8 🔧 Brancalonia | Slugify Fix - Loading...
+brancalonia-slugify-fix.js:70 ✅ Brancalonia | slugify function defined globally
+brancalonia-slugify-fix.js:195 ✅ Brancalonia Slugify Fix loaded successfully
+foundry.mjs:6724 Error: You are accessing the global "SceneNavigation" which is now namespaced under foundry.applications.ui.SceneNavigation
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at SceneNavigation.js:9:45
+    at SceneNavigation.js:9:36
+    at index.js:2:39619
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ SceneNavigation.js:9
+(anonymous) @ SceneNavigation.js:9
+(anonymous) @ index.js:2
+foundry.mjs:6724 Error: You are accessing the global "Token" which is now namespaced under foundry.canvas.placeables.Token
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at initConfig (config.js:5:5)
+    at main.js:7:1
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+initConfig @ config.js:5
+(anonymous) @ main.js:7
+foundry.mjs:6724 Error: You are accessing the global "JournalTextPageSheet" which is now namespaced under foundry.appv1.sheets.JournalTextPageSheet
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at gathererSheet.js:4:36
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ gathererSheet.js:4
+foundry.mjs:6724 Error: You are accessing the global "ClientSettings" which is now namespaced under foundry.helpers.ClientSettings
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at initWorldToClient (worldToClient.js:14:5)
+    at index.js:2:116735
+    at index.js:2:120687
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+initWorldToClient @ worldToClient.js:14
+(anonymous) @ index.js:2
+(anonymous) @ index.js:2
+foundry.mjs:6724 Error: You are accessing the global "ClientSettings" which is now namespaced under foundry.helpers.ClientSettings
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at wrapRegister (worldToClient.js:54:5)
+    at initWorldToClient (worldToClient.js:16:5)
+    at index.js:2:116735
+    at index.js:2:120687
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+wrapRegister @ worldToClient.js:54
+initWorldToClient @ worldToClient.js:16
+(anonymous) @ index.js:2
+(anonymous) @ index.js:2
+foundry.mjs:180987 Foundry VTT | Reestablishing existing session dcf1456ec5c97422cf0b7670
+foundry.mjs:168753 Foundry VTT | Connected to server socket using session dcf1456ec5c97422cf0b7670
+foundry.mjs:6724 Error: You are accessing the global "ClientSettings" which is now namespaced under foundry.helpers.ClientSettings
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at unwrapRegister (worldToClient.js:73:5)
+    at updateRegisterWrapper (worldToClient.js:28:9)
+    at ClientSettings.registerFirst (worldToClient.js:50:5)
+    at ClientSettings.register (worldToClient.js:56:27)
+    at LibWrapperSettings.init (libWrapper-settings.js:77:17)
+    at 🎁libWrapperInit (libWrapper-api.js:810:23)
+    at 🎁call_listeners [as call_listeners] (libWrapper-wrapper.js:767:7)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:184:12)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+unwrapRegister @ worldToClient.js:73
+updateRegisterWrapper @ worldToClient.js:28
+registerFirst @ worldToClient.js:50
+ClientSettings.register @ worldToClient.js:56
+init @ libWrapper-settings.js:77
+🎁libWrapperInit @ libWrapper-api.js:810
+🎁call_listeners @ libWrapper-wrapper.js:767
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:184
+window.addEventListener.once @ foundry.mjs:180998
+ libWrapper: Version 1.13.4.0 (8c218e3) ready.
+ Foundry VTT | Initializing Foundry Virtual Tabletop Game
+ D&D 5e | Initializing the D&D Fifth Game System - Version 5.1.9_____________________________________      ______ _____ _____|  _  \___  |  _  \  ___|  ___|| | | ( _ ) | | | |___ \| |__| | | / _ \/\ | | |   \ \  __|| |/ / (_>  < |/ //\__/ / |___|___/ \___/\/___/ \____/\____/_______________________________
+ D&D 5e | Registering Module Data
+ Italian Modules Translation | Inizializzazione
+ 
+logCompatibilityWarning @ foundry.mjs:6724
+Application @ foundry.mjs:36991
+MacroWheel @ main.js:3
+(anonymous) @ config.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ Multilevel Tokens |  Initialized
+ 
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ lib-wrapper.js:1
+ue @ lib-wrapper.js:1
+ge @ lib-wrapper.js:1
+🎁register @ lib-wrapper.js:1
+(anonymous) @ config.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ 
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ lib-wrapper.js:1
+ue @ lib-wrapper.js:1
+ge @ lib-wrapper.js:1
+🎁register @ lib-wrapper.js:1
+(anonymous) @ config.js:8
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ Carolingian UI | Brancalonia Settings | Initializing... Dungeons & Dragons Fifth Edition
+ 🎨 Brancalonia compatibility fix initialized
+ 🔧 Brancalonia Compatibility Fix: D&D 5e v5.1.9 detected
+ ✅ Using D&D 5e v5.x+ hook system (renderActorSheetV2, renderItemSheetV2)
+ 🎯 Brancalonia Init Wrapper v1.0.0
+ 
+╔════════════════════════════════════════════════╗
+║  🎭 BRANCALONIA - Il Regno di Taglia v11.0.0  ║
+║  Initializing Italian Renaissance Experience   ║
+╚════════════════════════════════════════════════╝
+    
+ 🔧 Brancalonia Init Fix - Ensuring proper initialization
+ ✅ game.brancalonia protected and ready
+ 🎨 Brancalonia UI Coordinator | Initializing
+ 🎨 UI Coordinator | Using dnd5e v5.x hooks
+ 🎨 UI Coordinator | Sheet class patching skipped (dnd5e v5.x)
+ ✅ UI Coordinator ready
+ 🚀 Brancalonia Module Activator v10.1.0
+ ✅ Foundry v13 confirmed - Using modern APIs only
+ 📦 D&D 5e version: 5.1.9
+ 🔄 Registering modern D&D 5e v5.x hooks
+ ⚙️ Registering Brancalonia settings
+ 📜 Brancalonia Sheets | Initializing character sheet modifications
+ 🎭 Brancalonia Sheets | Using dnd5e v5.x hooks (renderActorSheetV2)
+ ✅ Brancalonia Sheets | Character sheet modifications applied
+ 🎯 Starting total DOM observation...
+ 🎯 Activating aggressive icon interception...
+ Scanned and fixed 0 icons
+ ✅ Total interception system active
+ Brancalonia | Sistema tema v4.4.0 - Architettura Carolingian UI
+ Brancalonia | Impostazioni tema registrate
+ Brancalonia | Tema applicato con theme-brancalonia class
+ Brancalonia | Tema applicato con theme-brancalonia class
+ Brancalonia | Theme settings registered
+ 🔧 Brancalonia | Slugify Fix - Init Hook
+ ⚠️ Brancalonia | Could not add slugify to foundry.utils: Cannot define property slugify, object is not extensible
+(anonymous) @ brancalonia-slugify-fix.js:106
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ 📚 Brancalonia | Inizializzazione Compendium Manager Consolidato
+ 🏠 Inizializzazione Sistema Haven
+ 🎮 Brancalonia | Inizializzazione Malefatte System
+ 💰 Inizializzazione Sistema Malefatte e Taglie
+ ✅ Sistema Malefatte e Taglie inizializzato
+ 🔮 Brancalonia | Inizializzazione Sistema Menagramo
+ 🔮 Sistema maledizioni Menagramo configurato
+ ✅ Brancalonia | Sistema Menagramo inizializzato con successo
+ 🍺 Brancalonia | Inizializzazione Tavern Entertainment Consolidato
+ 🎲 Giochi da taverna configurati
+ 🍺 Sistema bagordi configurato
+ ✅ Brancalonia | Tavern Entertainment inizializzato con successo
+ 🌲 Brancalonia | Inizializzazione sistema incontri selvaggi
+ ✅ Sistema incontri selvaggi inizializzato
+level-cap.js:170 🎭 Inizializzazione Level Cap System...
+level-cap.js:483 🎭 Actor esteso con metodi per emeriticenze
+level-cap.js:191 ✅ Level Cap System inizializzato con successo!
+brancalonia-dice-theme.js:177 🎨 Brancalonia Dice Theme: Initializing Dice So Nice integration
+brancalonia-dice-theme.js:181 ✅ Dice So Nice detected, theme will be applied
+background-privileges.js:9 🎭 Brancalonia | Inizializzazione privilegi background
+background-privileges.js:313 BackgroundPrivileges comandi chat registrati
+factions-system.js:1327 🎮 Brancalonia | Inizializzazione Factions System
+factions-system.js:337 🏰 Inizializzazione Sistema Fazioni
+factions-system.js:358 ✅ Sistema Fazioni inizializzato
+dueling-system.js:1257 🎮 Brancalonia | Inizializzazione Dueling System
+dueling-system.js:194 ⚔️ Inizializzazione Sistema Duelli
+dueling-system.js:214 ✅ Sistema Duelli inizializzato
+shoddy-equipment.js:816 Brancalonia | Inizializzazione Sistema Equipaggiamento Scadente...
+shoddy-equipment.js:16 Brancalonia | Inizializzazione Sistema Equipaggiamento Scadente...
+shoddy-equipment.js:78 Brancalonia | Settings Equipaggiamento Scadente registrate
+shoddy-equipment.js:107 Brancalonia | Hooks Equipaggiamento Scadente registrati
+shoddy-equipment.js:142 Brancalonia | Comandi chat Equipaggiamento Scadente registrati
+shoddy-equipment.js:11 Brancalonia | Sistema Equipaggiamento Scadente inizializzato
+shoddy-equipment.js:32 Brancalonia | Sistema Equipaggiamento Scadente inizializzato con successo
+rest-system.js:989 Brancalonia | Inizializzazione Sistema di Riposo della Canaglia...
+rest-system.js:23 Brancalonia | Inizializzazione Sistema di Riposo della Canaglia...
+rest-system.js:91 Brancalonia | Settings Sistema di Riposo registrate
+rest-system.js:115 Brancalonia | Hooks Sistema di Riposo registrati
+rest-system.js:157 Brancalonia | Comandi chat Sistema di Riposo registrati
+rest-system.js:18 Brancalonia | Sistema di Riposo della Canaglia inizializzato
+rest-system.js:39 Brancalonia | Sistema di Riposo della Canaglia inizializzato con successo
+covo-granlussi-v2.js:28 Brancalonia | Inizializzazione Covo System V2...
+covo-granlussi-v2.js:41 Brancalonia | Covo System V2 inizializzato
+favori-system.js:1388 Brancalonia | Inizializzazione Sistema Favori...
+favori-system.js:34 Brancalonia | Inizializzazione Sistema Favori...
+favori-system.js:102 Brancalonia | Settings Sistema Favori registrate
+favori-system.js:125 Brancalonia | Hooks Sistema Favori registrati
+favori-system.js:172 Brancalonia | Comandi chat Sistema Favori registrati
+favori-system.js:29 Brancalonia | Sistema Favori inizializzato
+favori-system.js:50 Brancalonia | Sistema Favori inizializzato con successo
+brancalonia-rischi-mestiere.js:9 ⚠️ Brancalonia | Inizializzazione Sistema Rischi del Mestiere
+brancalonia-cursed-relics.js:9 🎭 Brancalonia | Inizializzazione Sistema Cimeli Maledetti
+brancalonia-cursed-relics.js:259 Brancalonia | Compendium equipaggiamento non trovato
+_initCimeli @ brancalonia-cursed-relics.js:259
+initialize @ brancalonia-cursed-relics.js:24
+(anonymous) @ brancalonia-cursed-relics.js:1137
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+brancalonia-active-effects.js:493 📜 Brancalonia: Active Effects Runtime registrato
+brancalonia-conditions.js:9 🎭 Brancalonia | Inizializzazione Sistema Condizioni Custom
+brancalonia-mechanics.js:14 🎲 Brancalonia | Inizializzazione Meccaniche di Gioco
+brancalonia-mechanics.js:581 ⚙️ Configurazione regole opzionali di Brancalonia
+brancalonia-mechanics.js:231 ⚙️ Meccaniche aggiuntive di Brancalonia configurate
+brancalonia-mechanics.js:36 ✅ Brancalonia | Meccaniche di Gioco inizializzate con successo
+foundry.mjs:6724 Error: You are accessing the global "SceneDirectory" which is now namespaced under foundry.applications.sidebar.tabs.SceneDirectory
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at libWrapper-misc.js:16:10
+    at ue (libWrapper-api.js:133:16)
+    at ge (libWrapper-api.js:152:19)
+    at 🎁register [as register] (libWrapper-api.js:539:14)
+    at initConfig (index.js:2:39055)
+    at Object.fn (index.js:2:39593)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ libWrapper-misc.js:16
+ue @ libWrapper-api.js:133
+ge @ libWrapper-api.js:152
+🎁register @ libWrapper-api.js:539
+initConfig @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:860:42)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:860:42)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3823:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3823
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3823:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3823
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphEffectSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3850:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3850
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphEffectSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3850:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3850
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.transformationPresets` is deprecated, use `CONFIG.DND5E.transformation.presets` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3881:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3881
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.transformationPresets` is deprecated, use `CONFIG.DND5E.transformation.presets` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3881:19)
+    at _deepClone (foundry.mjs:860:42)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at Object.fn (module.js:69:39)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3881
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+(anonymous) @ module.js:69
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:860:42)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:860:42)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3823:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3823
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3823:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3823
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphEffectSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3850:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3850
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphEffectSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3850:19)
+    at _deepClone (foundry.mjs:868:35)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3850
+_deepClone @ foundry.mjs:868
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.transformationPresets` is deprecated, use `CONFIG.DND5E.transformation.presets` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3881:19)
+    at _deepClone (foundry.mjs:860:17)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3881
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.transformationPresets` is deprecated, use `CONFIG.DND5E.transformation.presets` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3881:19)
+    at _deepClone (foundry.mjs:860:42)
+    at _deepClone (foundry.mjs:868:16)
+    at Object.deepClone (foundry.mjs:835:10)
+    at onPostInit (index.js:2:32454)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3881
+_deepClone @ foundry.mjs:860
+_deepClone @ foundry.mjs:868
+deepClone @ foundry.mjs:835
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at deleteKeys (index.js:2:31287)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellPreparationModes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3415:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3415
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at deleteKeys (index.js:2:31287)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: CONFIG.DND5E.spellcastingTypes is deprecated, use CONFIG.DND5E.spellcasting instead.
+Deprecated since Version DnD5e 5.1
+Backwards-compatible support will be removed in Version DnD5e 5.4
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3437:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3437
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3823:19)
+    at deleteKeys (index.js:2:31287)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3823
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3823:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3823
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphEffectSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3850:19)
+    at deleteKeys (index.js:2:31287)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3850
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.polymorphEffectSettings` is deprecated, use `CONFIG.DND5E.transformation` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3850:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3850
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.transformationPresets` is deprecated, use `CONFIG.DND5E.transformation.presets` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3881:19)
+    at deleteKeys (index.js:2:31287)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3881
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: `CONFIG.DND5E.transformationPresets` is deprecated, use `CONFIG.DND5E.transformation.presets` instead.
+Deprecated since Version DnD5e 4.4
+Backwards-compatible support will be removed in Version DnD5e 5.2
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at Object.get (config.mjs:3881:19)
+    at deleteKeys (index.js:2:31272)
+    at deleteKeys (index.js:2:31314)
+    at onPostInit (index.js:2:32733)
+    at Object.fn (index.js:2:32747)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ config.mjs:3881
+deleteKeys @ index.js:2
+deleteKeys @ index.js:2
+onPostInit @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "KeyboardManager" which is now namespaced under foundry.helpers.interaction.KeyboardManager
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at registerHotkeys (index.js:2:95357)
+    at Object.fn (index.js:2:95508)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+registerHotkeys @ index.js:2
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "DocumentSheetConfig" which is now namespaced under foundry.applications.apps.DocumentSheetConfig
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (main.js:70:5)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ main.js:70
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "KeyboardManager" which is now namespaced under foundry.helpers.interaction.KeyboardManager
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (main.js:77:46)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ main.js:77
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "Token" which is now namespaced under foundry.canvas.placeables.Token
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at libWrapper-misc.js:16:10
+    at ue (libWrapper-api.js:133:16)
+    at ge (libWrapper-api.js:152:19)
+    at 🎁register [as register] (libWrapper-api.js:539:14)
+    at Object.fn (config.js:6:20)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ libWrapper-misc.js:16
+ue @ libWrapper-api.js:133
+ge @ libWrapper-api.js:152
+🎁register @ libWrapper-api.js:539
+(anonymous) @ config.js:6
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "Token" which is now namespaced under foundry.canvas.placeables.Token
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (config.js:7:9)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ config.js:7
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "Token" which is now namespaced under foundry.canvas.placeables.Token
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (config.js:8:9)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ config.js:8
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: The V1 Application framework is deprecated, and will be removed in a later core software version. Please use the V2 version of the Application framework available under foundry.applications.api.ApplicationV2.
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 16
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at new Application (foundry.mjs:36991:21)
+    at new FormApplication (foundry.mjs:38023:5)
+    at new LevelsUI (ui.js:3:5)
+    at Object.fn (config.js:118:24)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+Application @ foundry.mjs:36991
+FormApplication @ foundry.mjs:38023
+LevelsUI @ ui.js:3
+(anonymous) @ config.js:118
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+monks-active-tiles.js:11 monks-active-tiles |  Initializing Monks Active Tiles
+monks-wall-enhancement.js:7 monks-wall-enhancement |  initializing
+foundry.mjs:6724 Error: You are accessing the global "loadTemplates" which is now namespaced under foundry.applications.handlebars.loadTemplates
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at preloadTemplates (preloadTemplates.mjs:9:2)
+    at Object.fn (hooks.mjs:57:15)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.initialize (foundry.mjs:168912:13)
+    at 🎁foundry.Game.prototype.initialize#0 (libWrapper-wrapper.js:188:54)
+    at window.addEventListener.once (foundry.mjs:180998:25)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+preloadTemplates @ preloadTemplates.mjs:9
+(anonymous) @ hooks.mjs:57
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+module.js:33 [S&S] Registering keyboard shortcuts 
+module.js:33 [S&S] Keyboard shortcuts registered successfully 
+module.js:33 [S&S] Loading calendar collection from URL: module:seasons-and-stars 
+ Who Brings What?: Initializing module...
+ Who Brings What?: Module initialized successfully!
+ 🚀 Brancalonia Module Activator v10.1.0
+ 📜 Brancalonia Sheets | Initializing character sheet modifications
+ 🎭 Brancalonia Sheets | Using dnd5e v5.x hooks (renderActorSheetV2)
+ ✅ Brancalonia Sheets | Character sheet modifications applied
+ 🏠 Inizializzazione Sistema Haven
+ ⚠️ Module compagnia-manager skipped due to failed dependency: reputation-infamia-unified
+initModule @ BrancaloniaCore.js:274
+await in initModule
+_initializeModules @ BrancaloniaCore.js:315
+await in _initializeModules
+init @ BrancaloniaCore.js:101
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ ⚠️ Module compagnia-manager skipped due to failed dependency: reputation-infamia-unified
+initModule @ BrancaloniaCore.js:274
+await in initModule
+initModule @ BrancaloniaCore.js:272
+_initializeModules @ BrancaloniaCore.js:315
+await in _initializeModules
+init @ BrancaloniaCore.js:101
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ ⚠️ Module dirty-jobs skipped due to failed dependency: compagnia-manager
+initModule @ BrancaloniaCore.js:274
+await in initModule
+_initializeModules @ BrancaloniaCore.js:315
+await in _initializeModules
+init @ BrancaloniaCore.js:101
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ ⚠️ Module malefatte-taglie-nomea skipped due to failed dependency: reputation-infamia-unified
+initModule @ BrancaloniaCore.js:274
+await in initModule
+_initializeModules @ BrancaloniaCore.js:315
+await in _initializeModules
+init @ BrancaloniaCore.js:101
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ Inizializzazione MenagramoSystem...
+ MenagramoSystem hooks registrati!
+ MenagramoSystem | game.chatCommands not available, skipping chat commands registration
+ ❌ Failed to initialize module menagramo-system: 
+initModule @ BrancaloniaCore.js:306
+await in initModule
+_initializeModules @ BrancaloniaCore.js:315
+await in _initializeModules
+init @ BrancaloniaCore.js:101
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ Inizializzazione MenagramoSystem...
+ MenagramoSystem hooks registrati!
+ MenagramoSystem | game.chatCommands not available, skipping chat commands registration
+ ❌ Failed to initialize module menagramo-system: 
+initModule @ BrancaloniaCore.js:306
+await in initModule
+initModule @ BrancaloniaCore.js:272
+_initializeModules @ BrancaloniaCore.js:315
+await in _initializeModules
+init @ BrancaloniaCore.js:101
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ ⚠️ Module menagramo-warlock-patron skipped due to failed dependency: menagramo-system
+initModule @ BrancaloniaCore.js:274
+await in initModule
+_initializeModules @ BrancaloniaCore.js:315
+await in _initializeModules
+init @ BrancaloniaCore.js:101
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ 🌲 Brancalonia | Inizializzazione sistema incontri selvaggi
+ ✅ Sistema incontri selvaggi inizializzato
+ 🎭 Brancalonia | Inizializzazione privilegi background
+ BackgroundPrivileges comandi chat registrati
+ 🏰 Inizializzazione Sistema Fazioni
+ ✅ Sistema Fazioni inizializzato
+ ⚔️ Inizializzazione Sistema Duelli
+ ✅ Sistema Duelli inizializzato
+ Brancalonia | Inizializzazione Sistema Equipaggiamento Scadente...
+ Brancalonia | Settings Equipaggiamento Scadente registrate
+ Brancalonia | Hooks Equipaggiamento Scadente registrati
+ Brancalonia | Comandi chat Equipaggiamento Scadente registrati
+ Brancalonia | Sistema Equipaggiamento Scadente inizializzato
+ Brancalonia | Sistema Equipaggiamento Scadente inizializzato con successo
+ ⚠️ Module covo-migration skipped due to failed dependency: covo-granlussi-v2
+initModule @ BrancaloniaCore.js:274
+await in initModule
+_initializeModules @ BrancaloniaCore.js:315
+await in _initializeModules
+init @ BrancaloniaCore.js:101
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ ⚠️ Module covo-macros skipped due to failed dependency: covo-granlussi-v2
+initModule @ BrancaloniaCore.js:274
+await in initModule
+_initializeModules @ BrancaloniaCore.js:315
+await in _initializeModules
+init @ BrancaloniaCore.js:101
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ Brancalonia | Inizializzazione Sistema Favori...
+ Brancalonia | Settings Sistema Favori registrate
+ Brancalonia | Hooks Sistema Favori registrati
+ Brancalonia | Comandi chat Sistema Favori registrati
+ Brancalonia | Sistema Favori inizializzato
+ Brancalonia | Sistema Favori inizializzato con successo
+ 🎭 Brancalonia | Inizializzazione Sistema Condizioni Custom
+ 🎲 Brancalonia | Inizializzazione Meccaniche di Gioco
+ ⚙️ Configurazione regole opzionali di Brancalonia
+ ⚙️ Meccaniche aggiuntive di Brancalonia configurate
+ ✅ Brancalonia | Meccaniche di Gioco inizializzate con successo
+ ✅ Brancalonia Core initialized successfully
+ 📦 Loaded modules: 33
+ ⚠️ Failed modules: ['menagramo-system']
+init @ BrancaloniaCore.js:116
+await in init
+(anonymous) @ BrancaloniaCore.js:567
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/active-effects.hbs
+ Brancalonia Promise Rejection: 
+(anonymous) @ BrancaloniaCore.js:426
+foundry.mjs:166794 Uncaught (in promise) 
+registerMenu @ foundry.mjs:166794
+registerSettings @ SettingsUtil.mjs:107
+await in registerSettings
+(anonymous) @ Main.mjs:54
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+initialize @ foundry.mjs:168912
+🎁foundry.Game.prototype.initialize#0 @ lib-wrapper.js:1
+window.addEventListener.once @ foundry.mjs:180998
+ Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/active-effects.hbs
+ [S&S] CalendarLoader: Successfully loaded calendar from module:seasons-and-stars 
+ Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/active-effects2.hbs
+ Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/active-effects2.hbs
+ Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/inventory.hbs
+ Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/inventory.hbs
+ Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/apps/parts/trait-list.hbs
+ Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/apps/parts/trait-list.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/apps/parts/traits-list.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/apps/parts/traits-list.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-classes.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-classes.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-trait-pills.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-trait-pills.hbs
+foundry.mjs:167728 Foundry VTT | Loaded localization file lang/en.json
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-traits.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-traits.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-features.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-features.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-inventory.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-inventory.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-spellbook.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-spellbook.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-warnings.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-warnings.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-warnings-dialog.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/actor-warnings-dialog.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/biography-textbox.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/parts/biography-textbox.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-bastion.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-bastion.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-biography.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-biography.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-details.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/character-details.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/creature-special-traits.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/creature-special-traits.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/group-members.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/group-members.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/npc-biography.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/actors/tabs/npc-biography.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/chat/parts/card-activities.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/chat/parts/card-activities.hbs
+foundry.mjs:167728 Foundry VTT | Loaded localization file systems/dnd5e/lang/en.json
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/chat/parts/card-deltas.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/chat/parts/card-deltas.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-background.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-background.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-class.hbs
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/beavers-system-interface/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/beavers-crafting/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/bsa-dnd5e/lang/en.json
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-class.hbs
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/combat-tracker-dock/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/compact-scene-navigation/languages/en.json
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-consumable.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-consumable.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-container.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-container.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-equipment.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-equipment.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-facility.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-facility.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-feat.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-feat.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-loot.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-loot.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-mountable.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-mountable.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-species.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-species.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-spell.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-spell.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-spellcasting.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-spellcasting.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-starting-equipment.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-starting-equipment.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-subclass.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-subclass.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-tool.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-tool.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-weapon.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/details/details-weapon.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/parts/item-summary.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/parts/item-summary.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/parts/item-tooltip.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/parts/item-tooltip.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/parts/spell-block.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/items/parts/spell-block.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-activation.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-activation.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-damage.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-damage.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-duration.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-duration.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-range.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-range.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-targets.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-targets.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-uses.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/field-uses.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/fieldlist.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/fieldlist.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/formlist.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/shared/fields/formlist.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/journal/parts/journal-legacy-traits.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/journal/parts/journal-legacy-traits.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/journal/parts/journal-modern-traits.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/journal/parts/journal-modern-traits.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/journal/parts/journal-table.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/journal/parts/journal-table.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/activity/parts/activity-usage-notes.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/activity/parts/activity-usage-notes.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/advancement/parts/advancement-ability-score-control.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/advancement/parts/advancement-ability-score-control.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/advancement/parts/advancement-controls.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/advancement/parts/advancement-controls.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/advancement/parts/advancement-spell-config.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/advancement/parts/advancement-spell-config.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/gameplay-form.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/abilities-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/activation-costs-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/actor-sheet-form.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/actor-sizes-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/armor-calculations-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/config-form.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/config-edit-in-list.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/bloodied-form.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/counters-form.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/counters-form-individual.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/counters-list.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/counters-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/counters-triggers-list.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/counters/dnd5e/counters-actor.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/counters/dnd5e/counters-item-group-legacy.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/creature-types-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/currency-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/damage-types-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/encumbrance-form.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/item-properties-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/item-sheet-form.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/rolls-form.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/movement-senses-config-form-group.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/skills-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/spell-schools-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/debug-form.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/import-dialog.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/orcnog-card-viewer/templates/card-viewer.html
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/config-list.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/sheet/character-details.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/roll-request-card.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/footer.hbs
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/custom-dnd5e/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/damage-numbers/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/dice-so-nice/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/dnd5e-system-customizer/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/dynamic-soundscapes/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/epic-rolls-5e/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/filepicker-plus/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/foundry-taskbar/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/fvtt-paper-doll-ui/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/hexplorer/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/hide-party-hp/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/gatherer/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/hover-distance/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/image-context/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/journal-page-popout/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/levelsautocover/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/inactive-tokens-lmao/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/levels/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/lib-wrapper/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/light-switch/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/media-optimizer/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/monks-active-tiles/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/macro-wheel/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/monks-wall-enhancement/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/levels-layer-effects/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/levelsvolumetrictemplates/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/multilevel-tokens/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/orcnog-card-viewer/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/party-monitor-dock/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/progress-tracker/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/puzzle-locks/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/quick-doors/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/quickdraw/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/recycle-bin/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/rich-info-tooltips/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/ripper-premium-dice/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/ripper-premium-dice-ea/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/seasons-and-stars/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/simple-quest/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/simple-timekeeping/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/situational-shortcuts/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/theripper-premium-hub/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/tidy5e-sheet/lang/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/token-notes/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/tokenflip/languages/en.json
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/wall-height/lang/en.json
+module.js:33 [S&S] CalendarLoader: Successfully loaded calendar from module:seasons-and-stars/calendars/gregorian-canonical-hours-variants.json 
+foundry.mjs:167728 Foundry VTT | Loaded localization file modules/world-setting-sync/languages/en.json
+index.js:2 This list will be used to exclude modules, system, and core settings from synchronization.<br>On a Master world, exclusions will not be saved to the synchronization file.<br>On a non-Master world, exclusions will be ignored when loading settings from the synchronization file.
+module.js:33 [S&S] CalendarLoader: Successfully loaded calendar from module:seasons-and-stars/calendars/gregorian.json 
+module.js:33 [S&S] Collection load completed: 2 successful, 0 failed 
+module.js:33 [S&S] CalendarLoader: Successfully loaded calendar from module:seasons-and-stars/calendars/gregorian.json 
+module.js:33 [S&S] Loading calendar collection from URL: module:seasons-and-stars 
+module.js:33 [S&S] CalendarLoader: Successfully loaded calendar from module:seasons-and-stars 
+module.js:33 [S&S] CalendarLoader: Successfully loaded calendar from module:seasons-and-stars/calendars/gregorian-canonical-hours-variants.json 
+module.js:33 [S&S] CalendarLoader: Successfully loaded calendar from module:seasons-and-stars/calendars/gregorian.json 
+module.js:33 [S&S] Collection load completed: 2 successful, 0 failed 
+module.js:33 [S&S] CalendarLoader: Successfully loaded calendar from module:seasons-and-stars/calendars/gregorian-canonical-hours-variants.json 
+foundry.mjs:167377 Foundry VTT | Synchronized official game time in 14ms
+utils.mjs:435 D&D 5e | Setting Up Compendium Packs
+brancalonia-slugify-fix.js:112 🔧 Brancalonia | Slugify Fix - Setup Hook
+brancalonia-slugify-fix.js:123 ✅ Brancalonia | slugify added to game object
+brancalonia-slugify-fix.js:138 📊 Brancalonia | Slugify availability check:
+brancalonia-slugify-fix.js:139 (index)namevalue(index)namevalue0'globalThis.slugify''function'1'window.slugify''function'2'String.prototype.slugify''function'3'foundry.utils.slugify''undefined'4'game.slugify''function'Array(5)
+module.js:33 [S&S] Core module fully initialized synchronously during setup - API ready for compatibility modules 
+brancalonia-module-activator.js:332 ⚙️ Brancalonia | Fase SETUP
+brancalonia-module-activator.js:332 ⚙️ Brancalonia | Fase SETUP
+module.js:33 [S&S] Notes Manager async initialization complete 
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/ui/scene-navigation.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tab.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/ui/players.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/ui/hotbar.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/ui/scene-controls-layers.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/ui/scene-controls-tools.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/chat/log.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/chat/notifications.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/chat/input.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/combat/header.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/combat/tracker.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/combat/footer.hbs
+brancalonia-v13-modern.js:247 ⚔️ Combat tracker rendered - Using modern API
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/directory/header.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/directory/directory.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/partials/scene-partial.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/partials/folder-partial.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/directory/footer.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/partials/document-partial.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/playlist/controls.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/playlist/playlist-partial.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/playlist/playing.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/playlist/sound-partial.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/compendiums.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/partials/pack-partial.hbs
+brancalonia-icon-interceptor.js:734 ❌ No mapping for icon classes: fa-toolbox (element classes: fas, fa-toolbox)
+interceptIcon @ brancalonia-icon-interceptor.js:734
+(anonymous) @ brancalonia-icon-interceptor.js:822
+(anonymous) @ brancalonia-icon-interceptor.js:814
+(anonymous) @ brancalonia-icon-interceptor.js:812
+childList
+injectSidebarButton @ compendium-browser.mjs:1294
+(anonymous) @ dnd5e.mjs:601
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+#callHooks @ foundry.mjs:27956
+#dispatchEvent @ foundry.mjs:27940
+(anonymous) @ foundry.mjs:27913
+Promise.then
+_doEvent @ foundry.mjs:27911
+#render @ foundry.mjs:27247
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+render @ foundry.mjs:101915
+#renderTabs @ foundry.mjs:113697
+_onFirstRender @ foundry.mjs:113637
+await in _onFirstRender
+_doEvent @ foundry.mjs:27910
+#render @ foundry.mjs:27245
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+initializeUI @ foundry.mjs:169243
+setupGame @ foundry.mjs:169023
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/tabs/settings.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/sidebar/chat-message.hbs
+foundry.mjs:6724 Error: The renderChatMessage hook is deprecated. Please use renderChatMessageHTML instead, which now passes an HTMLElement argument instead of jQuery.
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at ChatMessage5e.renderHTML (foundry.mjs:43262:21)
+    at async ChatMessage5e.renderHTML (chat-message.mjs:119:18)
+    at async #doRenderBatch (foundry.mjs:102262:23)
+    at async #try (foundry.mjs:7166:17)
+logCompatibilityWarning @ foundry.mjs:6724
+renderHTML @ foundry.mjs:43262
+await in renderHTML
+renderHTML @ chat-message.mjs:119
+renderMessage @ foundry.mjs:103453
+#doRenderBatch @ foundry.mjs:102262
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+renderBatch @ foundry.mjs:103147
+_onFirstRender @ foundry.mjs:102345
+await in _onFirstRender
+_onFirstRender @ chat-log.mjs:21
+_doEvent @ foundry.mjs:27910
+#render @ foundry.mjs:27245
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+render @ foundry.mjs:101915
+#renderTabs @ foundry.mjs:113697
+_onFirstRender @ foundry.mjs:113637
+await in _onFirstRender
+_doEvent @ foundry.mjs:27910
+#render @ foundry.mjs:27245
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+initializeUI @ foundry.mjs:169243
+setupGame @ foundry.mjs:169023
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template systems/dnd5e/templates/chat/roll-breakdown.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/dice/roll.hbs
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'renderChatLog'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+#callHooks @ foundry.mjs:27956
+#dispatchEvent @ foundry.mjs:27940
+(anonymous) @ foundry.mjs:27913
+Promise.then
+_doEvent @ foundry.mjs:27911
+#render @ foundry.mjs:27247
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+render @ foundry.mjs:101915
+#renderTabs @ foundry.mjs:113697
+_onFirstRender @ foundry.mjs:113637
+await in _onFirstRender
+_doEvent @ foundry.mjs:27910
+#render @ foundry.mjs:27245
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+initializeUI @ foundry.mjs:169243
+setupGame @ foundry.mjs:169023
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'renderChatLog'. Cannot read properties of null (reading 'prepend')
+[Detected 1 package: epic-rolls-5e(5.0.1)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at #callHooks (foundry.mjs:27956:15)
+    at #dispatchEvent (foundry.mjs:27940:36)
+    at foundry.mjs:27913:26
+    at async #render (foundry.mjs:27247:5)
+    at async #try (foundry.mjs:7166:17)Caused by: TypeError: Cannot read properties of null (reading 'prepend')
+[Detected 1 package: epic-rolls-5e(5.0.1)]
+    at Object.fn (index.js:2:104287)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at #callHooks (foundry.mjs:27956:15)
+    at #dispatchEvent (foundry.mjs:27940:36)
+    at foundry.mjs:27913:26
+    at async #render (foundry.mjs:27247:5)
+    at async #try (foundry.mjs:7166:17)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+#callHooks @ foundry.mjs:27956
+#dispatchEvent @ foundry.mjs:27940
+(anonymous) @ foundry.mjs:27913
+Promise.then
+_doEvent @ foundry.mjs:27911
+#render @ foundry.mjs:27247
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+render @ foundry.mjs:101915
+#renderTabs @ foundry.mjs:113697
+_onFirstRender @ foundry.mjs:113637
+await in _onFirstRender
+_doEvent @ foundry.mjs:27910
+#render @ foundry.mjs:27245
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+initializeUI @ foundry.mjs:169243
+setupGame @ foundry.mjs:169023
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:75081 Foundry VTT | Fonts loaded and ready.
+foundry.mjs:46134 Foundry VTT | Viewing Scene Foundry Virtual Tabletop
+foundry.mjs:94273 Foundry VTT | Drawing game canvas for scene Foundry Virtual Tabletop
+foundry.mjs:84160 Foundry VTT | Loading 62 Assets
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Refused to load the script 'blob:<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' <URL>". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+foundry.mjs:85100 Foundry VTT | Drawing the HiddenCanvasGroup canvas group
+foundry.mjs:85100 Foundry VTT | Drawing the RenderedCanvasGroup canvas group
+foundry.mjs:85100 Foundry VTT | Drawing the EnvironmentCanvasGroup canvas group
+foundry.mjs:85100 Foundry VTT | Drawing the PrimaryCanvasGroup canvas group
+foundry.mjs:89985 Foundry VTT | Drawing the WeatherEffects canvas layer
+foundry.mjs:85100 Foundry VTT | Drawing the EffectsCanvasGroup canvas group
+foundry.mjs:89985 Foundry VTT | Drawing the CanvasBackgroundAlterationEffects canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the CanvasIlluminationEffects canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the CanvasColorationEffects canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the CanvasDarknessEffects canvas layer
+foundry.mjs:85100 Foundry VTT | Drawing the CanvasVisibility canvas group
+foundry.mjs:85100 Foundry VTT | Drawing the InterfaceCanvasGroup canvas group
+foundry.mjs:89985 Foundry VTT | Drawing the GridLayer canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the RegionLayer canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the DrawingsLayer canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the TemplateLayer canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the TilesLayer canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the WallsLayer canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the TokenLayer5e canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the SoundsLayer canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the LightingLayer canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the NotesLayer canvas layer
+foundry.mjs:89985 Foundry VTT | Drawing the ControlsLayer canvas layer
+foundry.mjs:85100 Foundry VTT | Drawing the OverlayCanvasGroup canvas group
+ui.js:878 LEVELSWelcome to the 3rd Dimension
+brancalonia-v13-modern.js:218 🗺️ Canvas ready - Using modern Canvas API
+foundry.mjs:168817 Applying buffered socket event: userActivity
+foundry.mjs:23819 Foundry VTT | Error thrown in hooked function '' for hook 'ready'
+#call @ foundry.mjs:23819
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:23839 Error: Error thrown in hooked function '' for hook 'ready'. TopNavigation.checkSideBar is not a function
+[Detected 1 package: brancalonia-bigat(11.4.5)]
+    at Hooks.onError (foundry.mjs:23838:24)
+    at 🎁Hooks.onError#0 (libWrapper-wrapper.js:188:54)
+    at #call (foundry.mjs:23820:36)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.setupGame (foundry.mjs:169038:13)
+    at async #initializeGameView (foundry.mjs:170481:5)
+    at async Game.initialize (foundry.mjs:168932:5)
+    at async window.addEventListener.once (foundry.mjs:180998:3)Caused by: TypeError: TopNavigation.checkSideBar is not a function
+[Detected 1 package: brancalonia-bigat(11.4.5)]
+    at Object.fn (Main.mjs:120:21)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.setupGame (foundry.mjs:169038:13)
+    at async #initializeGameView (foundry.mjs:170481:5)
+    at async Game.initialize (foundry.mjs:168932:5)
+    at async window.addEventListener.once (foundry.mjs:180998:3)
+onError @ foundry.mjs:23839
+🎁Hooks.onError#0 @ libWrapper-wrapper.js:188
+#call @ foundry.mjs:23820
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+brancalonia-modules-init-fix.js:44 🚀 Initializing Brancalonia modules in correct order
+brancalonia-modules-init-fix.js:96 📦 Initializing HavenSystem
+haven-system.js:220 🏠 Inizializzazione Sistema Haven
+brancalonia-v13-modern.js:381 📡 Setting up Brancalonia sockets
+brancalonia-v13-modern.js:403 ✨ Brancalonia V13 Modern - READY
+brancalonia-v13-modern.js:404 📋 Active features:
+brancalonia-v13-modern.js:405   - Modern Actor Sheets ✅
+brancalonia-v13-modern.js:406   - Modern Canvas API ✅
+brancalonia-v13-modern.js:407   - Modern Combat Tracker ✅
+brancalonia-v13-modern.js:408   - Modern Compendiums ✅
+brancalonia-v13-modern.js:409   - Modern Settings ✅
+brancalonia-v13-modern.js:410   - Modern Sockets ✅
+foundry.mjs:115049 🎭 Brancalonia V13 - Pronto all'avventura! 
+brancalonia-theme.mjs:66 Brancalonia | Sistema tema caricato con successo
+brancalonia-theme.mjs:67 Per ripristinare il tema in caso di problemi, esegui nella console: brancaloniaResetTheme()
+brancalonia-theme-settings.js:87 Brancalonia | Theme flags applied: {sheets: true, chat: true, compendium: true, decorations: true}
+brancalonia-slugify-fix.js:144 ✅ Brancalonia | Slugify Fix - Loaded and Ready
+brancalonia-slugify-fix.js:150 🧪 Brancalonia | Slugify test: "Test Slugify Brancalonia!" → "test-slugify-brancalonia"
+menagramo-warlock-patron.js:1114 Brancalonia | Sistema Menagramo caricato
+tavern-entertainment-consolidated.js:1076 Brancalonia | Tavern Entertainment caricato
+environmental-hazards.js:1181 🎮 Brancalonia | Inizializzazione Environmental Hazards System
+environmental-hazards.js:354 🌿 Inizializzazione Sistema Hazard Ambientali
+environmental-hazards.js:377 ✅ Sistema Hazard Ambientali inizializzato
+level-cap.js:541 🎭 Macro Level Cap create con successo
+shoddy-equipment.js:163 Brancalonia | Macro Equipaggiamento Scadente registrate
+rest-system.js:195 Brancalonia | Macro Sistema di Riposo registrate
+covo-granlussi-v2.js:1206 Brancalonia | Sistema Covo V2 pronto
+covo-migration.js:564 Brancalonia | Sistema migrazione covo pronto. Usa game.brancalonia.migration.migrateAll() per iniziare.
+favori-system.js:210 Brancalonia | Macro Sistema Favori registrate
+brancalonia-cursed-relics.js:1148 Brancalonia | Sistema Cimeli Maledetti pronto
+log.mjs:12 Card Viewer | Initializing
+log.mjs:12 Card Viewer | Ready
+foundry.mjs:6724 Error: The V1 Application framework is deprecated, and will be removed in a later core software version. Please use the V2 version of the Application framework available under foundry.applications.api.ApplicationV2.
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 16
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at new Application (foundry.mjs:36991:21)
+    at h.f (app.js:2:1)
+    at new h (app.js:6:9)
+    at Object.fn (index.js:2:43501)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.setupGame (foundry.mjs:169038:13)
+    at async #initializeGameView (foundry.mjs:170481:5)
+    at async Game.initialize (foundry.mjs:168932:5)
+    at async window.addEventListener.once (foundry.mjs:180998:3)
+logCompatibilityWarning @ foundry.mjs:6724
+Application @ foundry.mjs:36991
+f @ app.js:2
+h @ app.js:6
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:37334 Foundry VTT | Rendering h
+foundry.mjs:6724 Error: The V1 Application framework is deprecated, and will be removed in a later core software version. Please use the V2 version of the Application framework available under foundry.applications.api.ApplicationV2.
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 16
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at new Application (foundry.mjs:36991:21)
+    at new RecycleBin (recycleBin.js:6:9)
+    at Object.fn (main.js:14:23)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.setupGame (foundry.mjs:169038:13)
+    at async #initializeGameView (foundry.mjs:170481:5)
+    at async Game.initialize (foundry.mjs:168932:5)
+    at async window.addEventListener.once (foundry.mjs:180998:3)
+logCompatibilityWarning @ foundry.mjs:6724
+Application @ foundry.mjs:36991
+RecycleBin @ recycleBin.js:6
+(anonymous) @ main.js:14
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: The V1 Application framework is deprecated, and will be removed in a later core software version. Please use the V2 version of the Application framework available under foundry.applications.api.ApplicationV2.
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 16
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at new Application (foundry.mjs:36991:21)
+    at SimpleQuest._createSuperInternal (app.js:2:1)
+    at new SimpleQuest (app.js:81:9)
+    at Object.fn (index.js:2:357318)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at Game.setupGame (foundry.mjs:169038:13)
+    at async #initializeGameView (foundry.mjs:170481:5)
+    at async Game.initialize (foundry.mjs:168932:5)
+    at async window.addEventListener.once (foundry.mjs:180998:3)
+logCompatibilityWarning @ foundry.mjs:6724
+Application @ foundry.mjs:36991
+_createSuperInternal @ app.js:2
+SimpleQuest @ app.js:81
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+weapon-effects.js:446 Who Brings What?: System ready, registering global functions...
+weapon-effects.js:456 Who Brings What?: weaponImages setting already populated with 19 images
+weapon-effects.js:605 Who Brings What?: Module fully loaded and ready for use!
+compendium-manager.mjs:88 🔓 Sblocco automatico compendi Brancalonia...
+foundry.mjs:115049 Compendi Brancalonia sbloccati! 
+compendium-manager.mjs:704 📚 Comandi console Compendium registrati:
+compendium-manager.mjs:705   - unlockPack(packName)
+compendium-manager.mjs:706   - countPackItems()
+compendium-manager.mjs:707   - searchPacks(searchTerm)
+shoddy-equipment.js:214 Brancalonia | Configurazione equipaggiamento scadente caricata
+rest-system.js:329 Brancalonia | Configurazioni riposo caricate
+favori-system.js:349 Brancalonia | Configurazione favori caricata
+shoddy-equipment.js:214 Brancalonia | Configurazione equipaggiamento scadente caricata
+favori-system.js:349 Brancalonia | Configurazione favori caricata
+foundry.mjs:6724 Error: You are accessing the global "getTemplate" which is now namespaced under foundry.applications.handlebars.getTemplate
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (main.js:227:2)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.call (foundry.mjs:23799:40)
+    at Object.fn (main.js:19:8)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ main.js:227
+#call @ foundry.mjs:23816
+call @ foundry.mjs:23799
+(anonymous) @ main.js:19
+await in (anonymous)
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "getTemplate" which is now namespaced under foundry.applications.handlebars.getTemplate
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (main.js:230:2)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.call (foundry.mjs:23799:40)
+    at Object.fn (main.js:19:8)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ main.js:230
+#call @ foundry.mjs:23816
+call @ foundry.mjs:23799
+(anonymous) @ main.js:19
+await in (anonymous)
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "getTemplate" which is now namespaced under foundry.applications.handlebars.getTemplate
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (main.js:233:2)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.call (foundry.mjs:23799:40)
+    at Object.fn (main.js:19:8)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ main.js:233
+#call @ foundry.mjs:23816
+call @ foundry.mjs:23799
+(anonymous) @ main.js:19
+await in (anonymous)
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "getTemplate" which is now namespaced under foundry.applications.handlebars.getTemplate
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (main.js:236:2)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.call (foundry.mjs:23799:40)
+    at Object.fn (main.js:19:8)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ main.js:236
+#call @ foundry.mjs:23816
+call @ foundry.mjs:23799
+(anonymous) @ main.js:19
+await in (anonymous)
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "getTemplate" which is now namespaced under foundry.applications.handlebars.getTemplate
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (main.js:239:2)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.call (foundry.mjs:23799:40)
+    at Object.fn (main.js:19:8)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ main.js:239
+#call @ foundry.mjs:23816
+call @ foundry.mjs:23799
+(anonymous) @ main.js:19
+await in (anonymous)
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:6724 Error: You are accessing the global "getTemplate" which is now namespaced under foundry.applications.handlebars.getTemplate
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at registerHandleBars (beavers-test.js:2:2)
+    at Object.fn (main.js:21:2)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+registerHandleBars @ beavers-test.js:2
+(anonymous) @ main.js:21
+await in (anonymous)
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+brancalonia-modules-init-fix.js:96 📦 Initializing CompagniaManager
+compagnia-manager.js:21 Inizializzazione CompagniaManager...
+compagnia-manager.js:107 CompagniaManager hooks registrati!
+compagnia-manager.js:129 CompagniaManager comandi chat registrati!
+compagnia-manager.js:57 CompagniaManager inizializzato correttamente!
+shoddy-equipment.js:175 Brancalonia | Sistema Equipaggiamento Scadente configurato
+foundry.mjs:115049 Sistema Equipaggiamento Scadente attivo 
+rest-system.js:290 Brancalonia | Sistema di Riposo della Canaglia configurato
+foundry.mjs:115049 Sistema di Riposo della Canaglia attivo 
+favori-system.js:270 Brancalonia | Sistema Favori configurato
+foundry.mjs:6724 Error: The V1 Application framework is deprecated, and will be removed in a later core software version. Please use the V2 version of the Application framework available under foundry.applications.api.ApplicationV2.
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 16
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at new Application (foundry.mjs:36991:21)
+    at new Soundscapes (Soundscapes.js:12:9)
+    at Object.fn (config.js:24:9)
+logCompatibilityWarning @ foundry.mjs:6724
+Application @ foundry.mjs:36991
+Soundscapes @ Soundscapes.js:12
+(anonymous) @ config.js:24
+await in (anonymous)
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+shoddy-equipment.js:175 Brancalonia | Sistema Equipaggiamento Scadente configurato
+favori-system.js:270 Brancalonia | Sistema Favori configurato
+brancalonia-modules-init-fix.js:96 📦 Initializing DuelingSystem
+dueling-system.js:194 ⚔️ Inizializzazione Sistema Duelli
+dueling-system.js:214 ✅ Sistema Duelli inizializzato
+module.js:33 [S&S] UI setup complete - module fully ready 
+brancalonia-modules-init-fix.js:96 📦 Initializing FactionsSystem
+factions-system.js:337 🏰 Inizializzazione Sistema Fazioni
+factions-system.js:358 ✅ Sistema Fazioni inizializzato
+brancalonia-modules-init-fix.js:96 📦 Initializing ShoddyEquipment
+shoddy-equipment.js:16 Brancalonia | Inizializzazione Sistema Equipaggiamento Scadente...
+shoddy-equipment.js:78 Brancalonia | Settings Equipaggiamento Scadente registrate
+shoddy-equipment.js:107 Brancalonia | Hooks Equipaggiamento Scadente registrati
+shoddy-equipment.js:142 Brancalonia | Comandi chat Equipaggiamento Scadente registrati
+shoddy-equipment.js:11 Brancalonia | Sistema Equipaggiamento Scadente inizializzato
+shoddy-equipment.js:32 Brancalonia | Sistema Equipaggiamento Scadente inizializzato con successo
+brancalonia-modules-init-fix.js:96 📦 Initializing BackgroundPrivileges
+background-privileges.js:9 🎭 Brancalonia | Inizializzazione privilegi background
+background-privileges.js:313 BackgroundPrivileges comandi chat registrati
+brancalonia-modules-init-fix.js:96 📦 Initializing FavoriSystem
+favori-system.js:34 Brancalonia | Inizializzazione Sistema Favori...
+favori-system.js:102 Brancalonia | Settings Sistema Favori registrate
+favori-system.js:125 Brancalonia | Hooks Sistema Favori registrati
+favori-system.js:172 Brancalonia | Comandi chat Sistema Favori registrati
+favori-system.js:29 Brancalonia | Sistema Favori inizializzato
+favori-system.js:50 Brancalonia | Sistema Favori inizializzato con successo
+brancalonia-modules-init-fix.js:96 📦 Initializing BrancaloniaSheets
+brancalonia-sheets.js:9 📜 Brancalonia Sheets | Initializing character sheet modifications
+brancalonia-sheets.js:26 🎭 Brancalonia Sheets | Using dnd5e v5.x hooks (renderActorSheetV2)
+brancalonia-sheets.js:16 ✅ Brancalonia Sheets | Character sheet modifications applied
+brancalonia-modules-init-fix.js:96 📦 Initializing BrancaloniaCovoV2
+covo-granlussi-v2.js:28 Brancalonia | Inizializzazione Covo System V2...
+covo-granlussi-v2.js:41 Brancalonia | Covo System V2 inizializzato
+brancalonia-modules-init-fix.js:96 📦 Initializing BrancaloniaConditions
+brancalonia-conditions.js:9 🎭 Brancalonia | Inizializzazione Sistema Condizioni Custom
+brancalonia-modules-init-fix.js:96 📦 Initializing BrancaloniaMechanics
+brancalonia-mechanics.js:14 🎲 Brancalonia | Inizializzazione Meccaniche di Gioco
+brancalonia-mechanics.js:581 ⚙️ Configurazione regole opzionali di Brancalonia
+brancalonia-mechanics.js:231 ⚙️ Meccaniche aggiuntive di Brancalonia configurate
+brancalonia-mechanics.js:36 ✅ Brancalonia | Meccaniche di Gioco inizializzate con successo
+brancalonia-modules-init-fix.js:120 ✅ All Brancalonia modules initialized successfully
+brancalonia-v13-modern.js:247 ⚔️ Combat tracker rendered - Using modern API
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/hud/waypoint-label.hbs
+foundry.mjs:115049 Sistema Favori attivo 
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/custom-dnd5e/templates/conditions-edit.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/beavers-system-interface/templates/select.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/beavers-crafting/templates/beavers-folders.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/beavers-crafting/templates/beavers-recipe-folder-item.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/beavers-crafting/templates/beavers-actor-folder-item.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/beavers-crafting/templates/beavers-recipe-component.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/beavers-crafting/templates/beavers-recipe.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/beavers-system-interface/templates/beavers-input-field.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/party-monitor-dock/templates/party-monitor-dock.hbs
+foundry.mjs:6724 Error: You are accessing the global "CardsConfig" which is now namespaced under foundry.applications.sheets.CardDeckConfig
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.fn (hooks.mjs:160:28)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at h._callHooks (foundry.mjs:37427:15)
+    at h._render (foundry.mjs:37389:10)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+(anonymous) @ hooks.mjs:160
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+_callHooks @ foundry.mjs:37427
+_render @ foundry.mjs:37389
+await in _render
+render @ foundry.mjs:37301
+🎁call_wrapped @ libWrapper-wrapper.js:511
+🎁Application.prototype.render#puzzle-locks @ index.js:2
+🎁call_wrapper @ libWrapper-wrapper.js:639
+🎁Application.prototype.render#0 @ libWrapper-wrapper.js:193
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.razze Compendium containing 9 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of beavers-crafting.ingredients Compendium containing 25 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of dnd5e.classes Compendium containing 12 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.talenti Compendium containing 9 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.sottoclassi Compendium containing 22 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.backgrounds Compendium containing 23 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.emeriticenze Compendium containing 12 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.incantesimi Compendium containing 95 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.equipaggiamento Compendium containing 235 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of custom-dnd5e.custom-dnd5e-items Compendium containing 5 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.classi Compendium containing 14 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of dnd5e.subclasses Compendium containing 12 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of beavers-crafting.ingredients Compendium containing 25 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.razze Compendium containing 9 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of dnd5e.classes24 Compendium containing 282 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.talenti Compendium containing 9 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.brancalonia-features Compendium containing 358 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.sottoclassi Compendium containing 22 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.backgrounds Compendium containing 23 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.emeriticenze Compendium containing 12 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.equipaggiamento Compendium containing 235 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.incantesimi Compendium containing 95 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of custom-dnd5e.custom-dnd5e-items Compendium containing 5 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.classi Compendium containing 14 entries
+foundry.mjs:6724 Error: You are accessing the global "renderTemplate" which is now namespaced under foundry.applications.handlebars.renderTemplate
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at TheRipperPremiumHUB._callee4$ (TheRipperPremiumHUB.js:127:28)
+    at tryCatch (TheRipperPremiumHUB.js:2:1)
+    at Generator.<anonymous> (TheRipperPremiumHUB.js:2:1)
+    at Generator.next (TheRipperPremiumHUB.js:2:1)
+    at TheRipperPremiumHUB_asyncGeneratorStep (TheRipperPremiumHUB.js:2:1)
+    at _next (TheRipperPremiumHUB.js:2:1)
+    at TheRipperPremiumHUB.js:2:1
+    at new Promise (<anonymous>)
+    at TheRipperPremiumHUB.<anonymous> (TheRipperPremiumHUB.js:2:1)
+    at TheRipperPremiumHUB.displayAnnouncements (TheRipperPremiumHUB.js:141:6)
+    at TheRipperPremiumHUB._callee$ (TheRipperPremiumHUB.js:73:14)
+    at tryCatch (TheRipperPremiumHUB.js:2:1)
+    at Generator.<anonymous> (TheRipperPremiumHUB.js:2:1)
+    at Generator.next (TheRipperPremiumHUB.js:2:1)
+    at TheRipperPremiumHUB_asyncGeneratorStep (TheRipperPremiumHUB.js:2:1)
+    at _next (TheRipperPremiumHUB.js:2:1)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+_callee4$ @ TheRipperPremiumHUB.js:127
+tryCatch @ TheRipperPremiumHUB.js:2
+(anonymous) @ TheRipperPremiumHUB.js:2
+(anonymous) @ TheRipperPremiumHUB.js:2
+TheRipperPremiumHUB_asyncGeneratorStep @ TheRipperPremiumHUB.js:2
+_next @ TheRipperPremiumHUB.js:2
+(anonymous) @ TheRipperPremiumHUB.js:2
+(anonymous) @ TheRipperPremiumHUB.js:2
+displayAnnouncements @ TheRipperPremiumHUB.js:141
+_callee$ @ TheRipperPremiumHUB.js:73
+tryCatch @ TheRipperPremiumHUB.js:2
+(anonymous) @ TheRipperPremiumHUB.js:2
+(anonymous) @ TheRipperPremiumHUB.js:2
+TheRipperPremiumHUB_asyncGeneratorStep @ TheRipperPremiumHUB.js:2
+_next @ TheRipperPremiumHUB.js:2
+Promise.then
+TheRipperPremiumHUB_asyncGeneratorStep @ TheRipperPremiumHUB.js:2
+_next @ TheRipperPremiumHUB.js:2
+(anonymous) @ TheRipperPremiumHUB.js:2
+(anonymous) @ TheRipperPremiumHUB.js:2
+init @ TheRipperPremiumHUB.js:74
+TheRipperPremiumHUB @ TheRipperPremiumHUB.js:9
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+brancalonia-icon-interceptor.js:805 Scanned and fixed 457 icons
+foundry.mjs:24921 Foundry VTT | Constructed index of brancalonia-bigat.brancalonia-features Compendium containing 358 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of dnd5e.classes24 Compendium containing 282 entries
+dice-so-nice-integration.js:148 Brancalonia | Dice So Nice colorsets registered successfully
+brancalonia-dice-theme.js:125 🎲 Skipping dice presets - using colorsets only
+brancalonia-dice-theme.js:152 🎲 Brancalonia Dice Theme: Successfully loaded colorsets for Dice So Nice
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/simple-timekeeping/templates/simple-timekeeping.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/seasons-and-stars/templates/calendar-widget.hbs
+foundry.mjs:24921 Foundry VTT | Constructed index of kctg-5e.kctg-dnd5e Compendium containing 833 entries
+foundry.mjs:6724 Error: The renderChatMessage hook is deprecated. Please use renderChatMessageHTML instead, which now passes an HTMLElement argument instead of jQuery.
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at ChatMessage5e.renderHTML (foundry.mjs:43262:21)
+    at async ChatMessage5e.renderHTML (chat-message.mjs:119:18)
+    at async #postOne (foundry.mjs:103371:18)
+    at async #try (foundry.mjs:7166:17)
+logCompatibilityWarning @ foundry.mjs:6724
+renderHTML @ foundry.mjs:43262
+await in renderHTML
+renderHTML @ chat-message.mjs:119
+renderMessage @ foundry.mjs:103453
+#postOne @ foundry.mjs:103371
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+postOne @ foundry.mjs:103134
+_onCreate @ foundry.mjs:43357
+(anonymous) @ foundry.mjs:58631
+(anonymous) @ foundry.mjs:58637
+#handleCreateDocuments @ foundry.mjs:58637
+await in #handleCreateDocuments
+_createDocuments @ foundry.mjs:58550
+await in _createDocuments
+create @ foundry.mjs:58170
+await in create
+createDocuments @ foundry.mjs:12486
+create @ foundry.mjs:12632
+(anonymous) @ brancalonia-modules-init-fix.js:124
+await in (anonymous)
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+worker.js:72 Worker TextureCompressor of FogExtractor | Initialized Worker
+foundry.mjs:6724 Error: The renderChatMessage hook is deprecated. Please use renderChatMessageHTML instead, which now passes an HTMLElement argument instead of jQuery.
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at Object.logCompatibilityWarning (foundry.mjs:6712:17)
+    at ChatMessage5e.renderHTML (foundry.mjs:43262:21)
+    at async ChatMessage5e.renderHTML (chat-message.mjs:119:18)
+    at async #postNotification (foundry.mjs:103321:19)
+logCompatibilityWarning @ foundry.mjs:6724
+renderHTML @ foundry.mjs:43262
+await in renderHTML
+renderHTML @ chat-message.mjs:119
+renderMessage @ foundry.mjs:103453
+#postNotification @ foundry.mjs:103321
+notify @ foundry.mjs:103109
+#postOne @ foundry.mjs:103384
+await in #postOne
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+postOne @ foundry.mjs:103134
+_onCreate @ foundry.mjs:43357
+(anonymous) @ foundry.mjs:58631
+(anonymous) @ foundry.mjs:58637
+#handleCreateDocuments @ foundry.mjs:58637
+await in #handleCreateDocuments
+_createDocuments @ foundry.mjs:58550
+await in _createDocuments
+create @ foundry.mjs:58170
+await in create
+createDocuments @ foundry.mjs:12486
+create @ foundry.mjs:12632
+(anonymous) @ brancalonia-modules-init-fix.js:124
+await in (anonymous)
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+brancalonia-init-wrapper.js:192 🎭 Brancalonia - Report Inizializzazione (0/22 moduli caricati)
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/theripper-premium-hub/templates/announcements.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/generic/tab-navigation.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template modules/world-setting-sync/templates/settings-sync.hbs
+foundry.mjs:65814 Foundry VTT | Retrieved and compiled template templates/generic/form-footer.hbs
+foundry.mjs:6724 Error: You are accessing the global "JournalPageSheet" which is now namespaced under foundry.appv1.sheets.JournalPageSheet
+Deprecated since Version 13
+Backwards-compatible support will be removed in Version 15
+    at logCompatibilityWarning (foundry.mjs:6712:17)
+    at get (foundry.mjs:180955:9)
+    at Object.createTaskbarButton [as fn] (taskbar.js:571:28)
+    at #call (foundry.mjs:23816:20)
+    at Hooks.callAll (foundry.mjs:23775:17)
+    at #callHooks (foundry.mjs:27956:15)
+    at #dispatchEvent (foundry.mjs:27940:36)
+    at SettingsSync._doEvent (foundry.mjs:27920:26)
+    at #render (foundry.mjs:27247:16)
+    at async #try (foundry.mjs:7166:17)
+logCompatibilityWarning @ foundry.mjs:6724
+get @ foundry.mjs:180955
+createTaskbarButton @ taskbar.js:571
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+#callHooks @ foundry.mjs:27956
+#dispatchEvent @ foundry.mjs:27940
+_doEvent @ foundry.mjs:27920
+#render @ foundry.mjs:27247
+await in #render
+#try @ foundry.mjs:7166
+(anonymous) @ foundry.mjs:7139
+add @ foundry.mjs:7137
+render @ foundry.mjs:27174
+_setupDiff2 @ SettingsSync.js:168
+_callee3$ @ SettingsSync.js:108
+tryCatch @ SettingsSync.js:2
+(anonymous) @ SettingsSync.js:2
+(anonymous) @ SettingsSync.js:2
+SettingsSync_asyncGeneratorStep @ SettingsSync.js:2
+_next @ SettingsSync.js:2
+Promise.then
+SettingsSync_asyncGeneratorStep @ SettingsSync.js:2
+_next @ SettingsSync.js:2
+Promise.then
+SettingsSync_asyncGeneratorStep @ SettingsSync.js:2
+_next @ SettingsSync.js:2
+(anonymous) @ SettingsSync.js:2
+(anonymous) @ SettingsSync.js:2
+_initializeData3 @ SettingsSync.js:108
+_initializeData2 @ SettingsSync.js:512
+SettingsSync @ SettingsSync.js:12
+(anonymous) @ index.js:2
+#call @ foundry.mjs:23816
+callAll @ foundry.mjs:23775
+setupGame @ foundry.mjs:169038
+await in setupGame
+#initializeGameView @ foundry.mjs:170481
+_initializeView @ foundry.mjs:170458
+initialize @ foundry.mjs:168932
+await in initialize
+🎁foundry.Game.prototype.initialize#0 @ libWrapper-wrapper.js:188
+window.addEventListener.once @ foundry.mjs:180998
+foundry.mjs:24921 Foundry VTT | Constructed index of kctg-5e.kctg-dnd5e Compendium containing 833 entries
+foundry.mjs:24921 Foundry VTT | Constructed index of dnd5e.spells24 Compendium containing 340 entries
+brancalonia-icon-interceptor.js:805 Scanned and fixed 487 icons
+foundry.mjs:115049 Sistema Equipaggiamento Scadente attivo 
+foundry.mjs:115049 Sistema Favori attivo 
+foundry.mjs:115049 Sistema Privilegi Background caricato con successo! 
+foundry.mjs:115049 Sistema Condizioni Custom caricato con successo! 
+brancalonia-icon-interceptor.js:805 Scanned and fixed 485 icons
+foundry.mjs:121979 Foundry VTT | Activating pending audio playback with user gesture.
+covo-macros.js:11 Brancalonia | Registrazione macro sistema Covo...
+covo-macros.js:92 Brancalonia | Macro aggiornata: 🏠 Crea Nuovo Covo
+covo-macros.js:92 Brancalonia | Macro aggiornata: 📊 Status del Mio Covo
+covo-macros.js:92 Brancalonia | Macro aggiornata: 💰 Gestisci Tesoro Covo
+covo-macros.js:92 Brancalonia | Macro aggiornata: 🔨 Costruisci Granlusso
+covo-macros.js:92 Brancalonia | Macro aggiornata: 🧪 Raccogli Intruglio
+covo-macros.js:92 Brancalonia | Macro aggiornata: 🐎 Noleggia Cavalcatura
+covo-macros.js:92 Brancalonia | Macro aggiornata: 🛠️ Ripara Equipaggiamento
+covo-macros.js:92 Brancalonia | Macro aggiornata: 🛍️ Visita Borsa Nera
+covo-macros.js:92 Brancalonia | Macro aggiornata: 👥 Gestisci Membri Covo
+covo-macros.js:92 Brancalonia | Macro aggiornata: 🔄 Migra Vecchi Covi
+foundry.mjs:115049 Macro del sistema Covo registrate! 
+brancalonia-icon-interceptor.js:805 Scanned and fixed 482 icons
+brancalonia-icon-interceptor.js:805 Scanned and fixed 456 icons
+brancalonia-icon-interceptor.js:805 Scanned and fixed 456 icons

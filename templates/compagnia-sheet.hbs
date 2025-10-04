@@ -1,0 +1,30 @@
+<section class="brancalonia-compagnia">
+  <header>
+    <h2>{{name}}</h2>
+    {{#if motto}}
+      <p class="compagnia-motto">{{motto}}</p>
+    {{/if}}
+  </header>
+  {{#if members}}
+    <h3>Membri</h3>
+    <ul>
+      {{#each members}}
+        <li>{{this.name}}{{#if this.role}} – {{this.role}}{{/if}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#if treasury}}
+    <p class="compagnia-treasury">Tesoro: {{treasury}} ducati</p>
+  {{/if}}
+  {{#if jobs}}
+    <h3>Incarichi</h3>
+    <ul>
+      {{#each jobs}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#if description}}
+    <div class="compagnia-description">{{{description}}}</div>
+  {{/if}}
+</section>

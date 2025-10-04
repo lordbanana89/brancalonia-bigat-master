@@ -1,0 +1,58 @@
+{
+  "id": "spell-mani-brucianti",
+  "nome": "Mani Brucianti",
+  "nome_inglese": "Burning Hands",
+  "livello": 1,
+  "scuola": "Invocazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Personale (cono di 15 piedi)",
+  "componenti": {
+    "verbale": true,
+    "somatica": true
+  },
+  "durata": "Istantanea",
+  "descrizione": "Mentre tieni le mani con i pollici che si toccano e le dita allargate, un sottile velo di fiamme si sprigiona dalle tue dita tese. Ogni creatura in un cono di 15 piedi deve effettuare un tiro salvezza su Destrezza. Una creatura subisce 3d6 danni da fuoco con un tiro salvezza fallito, o la metà dei danni con uno riuscito. Il fuoco incendia qualsiasi oggetto infiammabile nell'area che non sia indossato o trasportato.",
+  "classi": ["Mago", "Stregone"],
+  "scaling": {
+    "slot_1": "3d6",
+    "slot_2": "4d6",
+    "slot_3": "5d6",
+    "slot_4": "6d6",
+    "slot_5": "7d6"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "action",
+    "area": "15 ft cone",
+    "save": "dexterity",
+    "danno": "3d6",
+    "danno_tipo": "fire",
+    "half_on_save": true
+  },
+  "area_effetto": {
+    "forma": "Cono 15 piedi",
+    "origine": "Dal caster",
+    "caselle_5ft": "~6 quadrati",
+    "positioning": "Critico per max bersagli"
+  },
+  "danno_analisi": {
+    "slot_1": "10.5 medi (3d6)",
+    "slot_2": "14 medi (4d6)",
+    "confronto": "Meno di fireball ma lv1"
+  },
+  "tattiche": [
+    "Ottimo vs gruppi stretti",
+    "Corridoi stretti ideali",
+    "Combo con crowd control",
+    "Accende oggetti ambientali"
+  ],
+  "problemi": [
+    "Range corto espone a pericolo",
+    "Cono piccolo difficile posizionare",
+    "Fire damage comune resistenza",
+    "Allies in area problema"
+  ],
+  "note_dm": "Burning Hands è AoE economico livello 1. Cono corto richiede posizionamento aggressivo. Può accendere ambiente.",
+  "fonte": "D&D 5e PHB p.220"
+}

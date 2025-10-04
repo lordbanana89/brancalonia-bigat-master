@@ -1,0 +1,106 @@
+{
+  "_id": "7SAkD1FqB7wamtEa",
+  "_key": "!tables!7SAkD1FqB7wamtEa",
+  "name": "Passatore - Difetti",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "euaLbwmVcJy4B0Wb",
+      "type": 0,
+      "text": "Quando cedo ai piaceri, perdo il controllo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!euaLbwmVcJy4B0Wb"
+    },
+    {
+      "_id": "eQdwHyW6P6dy9TtW",
+      "type": 0,
+      "text": "Non ammetto che qualcun altro faccia strada al posto mio.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!eQdwHyW6P6dy9TtW"
+    },
+    {
+      "_id": "bBxAL61ppXfdrgKB",
+      "type": 0,
+      "text": "Sovrastimo sempre le mie capacità.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!bBxAL61ppXfdrgKB"
+    },
+    {
+      "_id": "iNyD1Z6WEHrfAuUF",
+      "type": 0,
+      "text": "Credo di poter comunicare con i lupi.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!iNyD1Z6WEHrfAuUF"
+    },
+    {
+      "_id": "allprzpsc7UHZan3",
+      "type": 0,
+      "text": "Non so mantenere un segreto.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!allprzpsc7UHZan3"
+    },
+    {
+      "_id": "Jd4kla73DIhblfsn",
+      "type": 0,
+      "text": "Metto di proposito i compagni in situazioni pericolose per temprarli.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!Jd4kla73DIhblfsn"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "passatore",
+      "tipo": "difetti"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

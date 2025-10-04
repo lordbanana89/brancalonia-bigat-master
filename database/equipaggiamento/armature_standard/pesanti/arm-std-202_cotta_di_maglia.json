@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-202",
+  "nome": "Cotta di Maglia",
+  "categoria": "armatura_standard",
+  "tipo": "pesante",
+  "costo": "75 mo",
+  "classe_armatura": "16",
+  "bonus_ca": null,
+  "forza_minima": "13",
+  "furtivita": "Svantaggio",
+  "peso": "24.9 kg",
+  "descrizione": "Tunica di anelli intrecciati con imbottitura interna.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

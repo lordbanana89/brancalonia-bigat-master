@@ -1,0 +1,79 @@
+{
+  "_id": "2UEmAcmmxs6JnJUg",
+  "_key": "!item!idadideldiavoloa8c71e",
+  "name": "I Dadi del Diavolo",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Coppia di dadi d'osso sempre freddi al tatto</p><h3>Proprietà</h3><p>Con doppio 6 vinci sempre la posta, con doppio 1 perdi l'anima</p><h3>Storia</h3><p><em>Vinti al Diavolo stesso da un giocatore fortunato</em></p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 666,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "005",
+      "categoria": "cimelo",
+      "storia": "Vinti al Diavolo stesso da un giocatore fortunato",
+      "proprieta_originale": "Con doppio 6 vinci sempre la posta, con doppio 1 perdi l'anima",
+      "implementazione": {
+        "tipo": "narrativo",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

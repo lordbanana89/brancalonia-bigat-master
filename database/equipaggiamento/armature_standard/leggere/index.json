@@ -1,0 +1,21 @@
+{
+  "categoria": "Armature Leggere",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "arm-std-001",
+      "nome": "Armatura Imbottita",
+      "file": "arm-std-001_armatura_imbottita.json"
+    },
+    {
+      "id": "arm-std-002",
+      "nome": "Armatura di Cuoio",
+      "file": "arm-std-002_armatura_di_cuoio.json"
+    },
+    {
+      "id": "arm-std-003",
+      "nome": "Armatura di Cuoio Borchiato",
+      "file": "arm-std-003_armatura_di_cuoio_borchiato.json"
+    }
+  ]
+}

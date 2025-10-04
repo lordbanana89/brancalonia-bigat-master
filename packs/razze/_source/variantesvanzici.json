@@ -1,0 +1,114 @@
+{
+  "_id": "YbeZPYwtHFhhwry3",
+  "_key": "!item!variantesvanzicia5de9b",
+  "name": "Svanzici",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base",
+    "movement": {
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 0,
+      "units": "ft"
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "",
+      "custom": ""
+    },
+    "advancement": [
+      {
+        "_id": "cwhc4p0zrw1iuoni",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "X3wZukzMfXZC90rA",
+        "type": "size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Size",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "255pmob8pwhbx394",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.5imw6a1fznbp23ia"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Astuzia Svanzica",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "fuoscfu8s4ciajdw",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.0tpwpq7igg47zzb9"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Parlantina",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "zif1a0z5zehbj1vb",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.xkrv1rh8u323o6mg"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Fortuna del Briccone",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "race-umano-variante-svanzici",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "GctAwtzwi3GOXBN4",
+  "_key": "!journal!index2865ce",
+  "name": "Regole di Brancalonia",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "description": "62 journal entries - Regole complete per Infamia, Compagnia, Haven, Risse, Lavori Sporchi, Menagramo, Malattie, Duelli, Fazioni e Reputazione"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

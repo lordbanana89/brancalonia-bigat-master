@@ -1,0 +1,15 @@
+{
+  "id": "gear-005",
+  "nome": "Torcia",
+  "categoria": "provvista_avventuriera",
+  "costo": "1 mr",
+  "peso": "0.5 kg",
+  "descrizione": "Quando accesa illumina un raggio di 6 m di luce intensa e ulteriori 6 m di luce fioca per 1 ora.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Supercazzola",
+  "fonte": "Manuale Base p.39",
+  "tipo": "talento",
+  "descrizione": "Turlupina creature con sicumera, parlantina e nonsense",
+  "requisiti": "Carisma 13 o superiore",
+  "meccaniche": {
+    "competenza_prematurata": {
+      "tipo": "narrativo",
+      "descrizione": "Ottiene competenza prematurata per due, anche un pochino antani in prefettura",
+      "nota": "Effetto puramente narrativo e comico"
+    },
+    "dadi_supercazzola": {
+      "tipo": "attivo",
+      "descrizione": "2 dadi supercazzola d4, recuperati a riposo breve/lungo",
+      "implementazione": "flags.brancalonia-bigat.supercazzolaDice = 2",
+      "mode": 2
+    },
+    "reazione_confusione": {
+      "tipo": "narrativo",
+      "descrizione": "Reazione: spendi dado per sottrarre d4 da tiro nemico entro 18m",
+      "nota": "Richiede sistema custom per gestione reazioni e dadi risorsa"
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "supercazzola",
+    "compendio": "talenti"
+  }
+}

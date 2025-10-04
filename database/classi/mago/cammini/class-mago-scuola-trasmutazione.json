@@ -1,0 +1,50 @@
+{
+  "id": "class-mago-scuola-trasmutazione",
+  "nome": "Scuola di Trasmutazione",
+  "fonte": "Manuale del Giocatore p.87",
+  "progressione": {
+    "livello_2": [
+      {
+        "nome": "Savant della Trasmutazione",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Transmutation Savant"
+        }
+      },
+      {
+        "nome": "Alchimia Minore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Minor Alchemy"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Pietra del Trasmutatore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Transmuter's Stone"
+        }
+      }
+    ],
+    "livello_10": [
+      {
+        "nome": "Mutare Forma",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Shapechanger"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Maestro della Trasmutazione",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Master Transmuter"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "class-chierico-dominio-inganno",
+  "nome": "Dominio dell'Inganno",
+  "fonte": "Manuale del Giocatore p.62",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Benedizione dell'Impostore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Blessing of the Trickster"
+        }
+      }
+    ],
+    "livello_2": [
+      {
+        "nome": "Incanalare Divinità: Evocare Duplicato",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Invoke Duplicity"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Incanalare Divinità: Manto delle Ombre",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Channel Divinity: Cloak of Shadows"
+        }
+      }
+    ],
+    "livello_8": [
+      {
+        "nome": "Colpo Divino (necrotico)",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Divine Strike (Trickery)"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Duplicato Superiore",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Improved Duplicity"
+        }
+      }
+    ]
+  }
+}

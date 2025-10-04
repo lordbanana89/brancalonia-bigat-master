@@ -1,0 +1,39 @@
+{
+  "_id": "pgbqe11y9iefwt0g",
+  "_key": "!item!pgbqe11y9iefwt0g",
+  "name": "Mente Sfuggente",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Competenza nei TS di Saggezza",
+      "chat": ""
+    },
+    "requirements": "Livello 15",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

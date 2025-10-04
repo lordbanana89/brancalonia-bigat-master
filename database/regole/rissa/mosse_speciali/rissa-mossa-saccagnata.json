@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-saccagnata",
+  "nome": "Saccagnata",
+  "requisiti": "Nessuno",
+  "costo": "1 slot",
+  "effetto": "Attacco a sorpresa nelle parti basse. Il bersaglio deve fare TS Costituzione CD 8 + prof + For o essere stordito 1 turno",
+  "limitazioni": "Non funziona su creature senza anatomia",
+  "fonte": "Brancalonia Manuale Base"
+}

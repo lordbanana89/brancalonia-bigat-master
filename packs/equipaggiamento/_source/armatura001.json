@@ -1,0 +1,50 @@
+{
+  "_id": "67x4mcPHywsoo1CE",
+  "_key": "!item!armatura001",
+  "name": "Armatura di Cuoio",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Armatura leggera di cuoio bollito.</p>"
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "armor": {
+      "value": 11,
+      "dex": null
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "stealth": false,
+    "rarity": "common",
+    "attunement": "",
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

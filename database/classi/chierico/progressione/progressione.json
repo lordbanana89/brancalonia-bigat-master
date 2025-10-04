@@ -1,0 +1,397 @@
+{
+  "tabella": [
+    {
+      "livello": 1,
+      "bonus_competenza": 2,
+      "trucchi_conosciuti": 3,
+      "slot_incantesimo": {
+        "1": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Incantesimi da Chierico",
+          "fonte": "Manuale del Giocatore p.57",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Spellcasting (Cleric)"
+          }
+        },
+        {
+          "nome": "Dominio Divino",
+          "fonte": "Manuale del Giocatore p.58",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Divine Domain"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 2,
+      "bonus_competenza": 2,
+      "trucchi_conosciuti": 3,
+      "slot_incantesimo": {
+        "1": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Incanalare Divinità (1 uso)",
+          "fonte": "Manuale del Giocatore p.58",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Channel Divinity"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 3,
+      "bonus_competenza": 2,
+      "trucchi_conosciuti": 3,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 2
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 4,
+      "bonus_competenza": 2,
+      "trucchi_conosciuti": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.60",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 5,
+      "bonus_competenza": 3,
+      "trucchi_conosciuti": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      },
+      "privilegi": [
+        {
+          "nome": "Distruggere Non-Morti (GS 1/2)",
+          "fonte": "Manuale del Giocatore p.59",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Destroy Undead"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 6,
+      "bonus_competenza": 3,
+      "trucchi_conosciuti": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      },
+      "privilegi": [
+        {
+          "id": "class-chierico-livello_6-incanalare-divinita-migliorato",
+          "nome": "Grazia Divina Rinnovata",
+          "file": "../privilegi_generali/class-chierico-livello_6-incanalare-divinita-migliorato.json"
+        }
+      ]
+    },
+    {
+      "livello": 7,
+      "bonus_competenza": 3,
+      "trucchi_conosciuti": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 8,
+      "bonus_competenza": 3,
+      "trucchi_conosciuti": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      },
+      "privilegi": [
+        {
+          "id": "class-chierico-livello_8-colpo-divino",
+          "nome": "Furia Benedetta",
+          "file": "../privilegi_generali/class-chierico-livello_8-colpo-divino.json"
+        }
+      ]
+    },
+    {
+      "livello": 9,
+      "bonus_competenza": 4,
+      "trucchi_conosciuti": 4,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 10,
+      "bonus_competenza": 4,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      },
+      "privilegi": [
+        {
+          "id": "class-chierico-livello_10-intervento-divino",
+          "nome": "Miracolo dei Santi",
+          "file": "../privilegi_generali/class-chierico-livello_10-intervento-divino.json"
+        }
+      ]
+    },
+    {
+      "livello": 11,
+      "bonus_competenza": 4,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "privilegi": [
+        {
+          "id": "class-chierico-livello_11-distruggere-non-morti",
+          "nome": "Purificazione Sacra",
+          "file": "../privilegi_generali/class-chierico-livello_11-distruggere-non-morti.json",
+          "nota": "La soglia di soppressione sale a GS 1"
+        }
+      ]
+    },
+    {
+      "livello": 12,
+      "bonus_competenza": 4,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.60",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 13,
+      "bonus_competenza": 5,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 14,
+      "bonus_competenza": 5,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      },
+      "privilegi": [
+        {
+          "id": "class-chierico-livello_14-colpo-divino-migliorato",
+          "nome": "Ira Celeste",
+          "file": "../privilegi_generali/class-chierico-livello_14-colpo-divino-migliorato.json"
+        }
+      ]
+    },
+    {
+      "livello": 15,
+      "bonus_competenza": 5,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      },
+      "privilegi": []
+    },
+    {
+      "livello": 16,
+      "bonus_competenza": 5,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.60",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 17,
+      "bonus_competenza": 6,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "privilegi": [
+        {
+          "id": "class-chierico-livello_17-distruggere-non-morti-supremo",
+          "nome": "Annientamento Sacro",
+          "file": "../privilegi_generali/class-chierico-livello_17-distruggere-non-morti-supremo.json"
+        }
+      ]
+    },
+    {
+      "livello": 18,
+      "bonus_competenza": 6,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "privilegi": [
+        {
+          "id": "class-chierico-livello_18-incanalare-divinita-supremo",
+          "nome": "Condotto Divino Perfetto",
+          "file": "../privilegi_generali/class-chierico-livello_18-incanalare-divinita-supremo.json"
+        }
+      ]
+    },
+    {
+      "livello": 19,
+      "bonus_competenza": 6,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "privilegi": [
+        {
+          "nome": "Aumento dei Punteggi di Caratteristica",
+          "fonte": "Manuale del Giocatore p.60",
+          "riferimento_compendio": {
+            "pack": "dnd5e.classfeatures",
+            "name": "Ability Score Improvement"
+          }
+        }
+      ]
+    },
+    {
+      "livello": 20,
+      "bonus_competenza": 6,
+      "trucchi_conosciuti": 5,
+      "slot_incantesimo": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      },
+      "privilegi": [
+        {
+          "id": "class-chierico-livello_20-distruggere-non-morti-finale",
+          "nome": "Flagello dei Non-Morti",
+          "file": "../privilegi_generali/class-chierico-livello_20-distruggere-non-morti-finale.json"
+        },
+        {
+          "id": "class-chierico-livello_20-intervento-divino-migliorato",
+          "nome": "Miracolo Garantito",
+          "file": "../privilegi_generali/class-chierico-livello_20-intervento-divino-migliorato.json"
+        }
+      ]
+    }
+  ]
+}

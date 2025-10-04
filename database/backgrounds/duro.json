@@ -1,0 +1,142 @@
+{
+  "nome": "Duro",
+  "fonte": "Manuale Base p.35",
+  "tipo": "background",
+  "descrizione": "Cresciuto tra angherie e violenze, temprato dalle difficoltà estreme",
+  "testo": {
+    "introduzione": [
+      "Il duro è nato e cresciuto in mezzo a soprusi, privazioni e pestaggi, ma quella vita lo ha temprato invece di piegarlo.",
+      "Conosce il peggio del Regno, non teme intimidazioni e affronta ogni minaccia con lo sguardo di chi ha già visto l’inferno.",
+      "Che provenga dalla Penumbria o dai quartieri più malfamati, rimane un avversario la cui pazienza è meglio non mettere alla prova."
+    ],
+    "privilegio": {
+      "nome": "Faccia da Duro",
+      "descrizione": "Quando il duro usa la sua Nomea nelle interazioni sociali, la sua Taglia gli aumenta di un livello."
+    }
+  },
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Atletica e Intimidire",
+      "implementazione": {
+        "atletica": "system.skills.ath.value = 1",
+        "intimidire": "system.skills.itm.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Un tipo di gioco a scelta",
+      "implementazione": "flags.brancalonia-bigat.gameChoice = true",
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Baccaglio (gergo furfantesco)",
+      "implementazione": "system.traits.languages.value.push('baccaglio')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Ciondolo di Santa Predatoria, mazzo di minchiate o altro gioco, abito comune, borsa con 15 ma"
+    },
+    "privilegio_faccia_da_duro": {
+      "tipo": "attivo",
+      "descrizione": "Quando usa la sua Nomea nelle interazioni sociali, la sua Taglia aumenta di 1 livello",
+      "implementazione": "flags.brancalonia-bigat.facciaDaDuro = true",
+      "mode": 5
+    }
+  },
+  "dettagli": {
+    "identificatore": "duro",
+    "ricchezza_iniziale": "15 ma",
+    "equipaggiamento": [
+      "Ciondolo di Santa Predatoria",
+      "Mazzo di minchiate o altro gioco",
+      "Abito comune",
+      "Borsa con 15 ma"
+    ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "atletica",
+        "intimidire"
+      ]
+    },
+    {
+      "tipo": "competenze_strumenti",
+      "scelte": 1,
+      "categoria": "strumenti_gioco"
+    },
+    {
+      "tipo": "linguaggi",
+      "elenco": [
+        "baccaglio"
+      ]
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "Faccia da Duro",
+      "descrizione": "Quando interagisci con la tua Nomea, considerala di un livello superiore.",
+      "fonte": "Manuale Base p.35",
+      "implementazione": {
+        "faccia_da_duro": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "Non abbasso mai lo sguardo e non chiedo scusa a nessuno.",
+        "Ho solo due espressioni: con la pipa e senza la pipa.",
+        "Non darmi fastidio né farmi complimenti, o ne farai una tragedia.",
+        "Sotto questa scorza ho un cuore tenero ma farò di tutto per nasconderlo.",
+        "Mi interessa solo contare denaro e taglie.",
+        "Credo che gli uomini siano mostri, ma amo gli animali e non farei loro del male.",
+        "Non sopporto la compagnia e preferisco restare solo.",
+        "Parlo solo se indispensabile: una parola è troppa, due sono poche."
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Cuore d’oro. Non c’è cattivo più cattivo di un buono che diventa cattivo. (Buono)",
+        "Intransigenza. Se questo è l’ordine, va eseguito a ogni costo. (Legale)",
+        "Cinismo. Il mondo va in rovina: pensiamo a noi stessi. (Caotico)",
+        "Potere. Con le lame come nella vita vince il più forte. (Malvagio)",
+        "Banderuola. Con Frangia o Altomagna, purché se magna. (Neutrale)",
+        "Bottino. Riempirsi le tasche e andare a bere: non c’è altro. (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "Morirei solo per chi combatte al mio fianco.",
+        "Ho una lista di chi mi ha fatto un torto e la recito ogni sera.",
+        "L’unica persona che mi abbia amato: non la dimenticherò mai.",
+        "Sono stato tradito molte volte, ma uno in particolare la pagherà.",
+        "Porto con me una vecchia taglia di qualcuno che inseguo da anni.",
+        "Se il mio vecchio capitano mi chiamasse, rimetterei in piedi la banda in un attimo."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "Disprezzo chi non si dimostra un bravo combattente.",
+        "Le cicatrici dell’anima non guariranno mai.",
+        "Non mi fido di nessuno e dormo con un occhio aperto.",
+        "Se serve a salvarmi, tradirò anche i compagni.",
+        "Non sono più capace di amare niente e nessuno.",
+        "Sono sanguinario e violento fino all’efferatezza."
+      ]
+    }
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "duro001",
+    "compendio": "backgrounds"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "_id": "yQ1yVpyFgk7FtERE",
+  "_key": "!item!scadente007reazionisociali072564",
+  "name": "Reazioni Sociali all'Equipaggiamento Scadente",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-rusted-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Effetti sociali negativi dovuti all'uso di oggetti scadenti davanti a nobili e benestanti.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "armor": {
+      "value": 10,
+      "type": "light",
+      "dex": null
+    },
+    "strength": 0,
+    "stealth": false,
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "scadente-007",
+      "fonte": {
+        "manuale": "Manuale Base",
+        "pagine": "64"
+      },
+      "validazione": {
+        "stato": "da_validare",
+        "estratto_da": "manuale_brancalonia.txt"
+      }
+    }
+  }
+}

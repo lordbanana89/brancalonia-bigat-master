@@ -1,0 +1,41 @@
+{
+  "id": "generatore-bettole-nome-insegna",
+  "titolo": "Nome e insegna",
+  "dado": "1d6 (+dadi aggiuntivi)",
+  "voci": [
+    {
+      "tiro": 1,
+      "schema": "del(la) + 1d20 + 1d10",
+      "dettaglio": "1d20: 1 Maiale, 2 Maiala, 3 Cinghiale, 4 Scrofa, 5 Sorcio, 6 Sorcia, 7 Oca, 8 Gallina, 9 Gallo, 10 Gatto, 11 Gatta, 12 Bue, 13 Vacca, 14 Capra, 15 Caprone, 16 Somaro, 17 Somara, 18 Pellicagna, 19 Pescecane, 20 Pantegano. 1d10: Nero, d'Oro, Rosso, Spennato, Cecato, Ubriaco, Cotto, Grasso, Sapiente, Zoppo."
+    },
+    {
+      "tiro": 2,
+      "schema": "del + 1d6",
+      "dettaglio": "1 Impiccato; 2 Soldo Bucato; 3 Malaffare; 4 Infame; 5 Lurido; 6 Boia."
+    },
+    {
+      "tiro": 3,
+      "schema": "della + 1d6",
+      "dettaglio": "1 Patata; 2 Gatta ignuda; 3 Maiala girata; 4 Donna baffuta; 5 Comare; 6 Brigantessa."
+    },
+    {
+      "tiro": 4,
+      "schema": "della/di + 1d6",
+      "dettaglio": "1 Mamma; 2 Nonna; 3 Zia; 4 Sorella; 5 tua Madre; 6 tua Sorella."
+    },
+    {
+      "tiro": 5,
+      "schema": "del + 1d6",
+      "dettaglio": "1 Pentolone; 2 Calderone; 3 Forchettone; 4 Mestolone; 5 Cucchiaione; 6 Boccalone."
+    },
+    {
+      "tiro": 6,
+      "schema": "di + Nome del Tenutario",
+      "dettaglio": "Usa direttamente il nome del tenutario generato nella tabella dedicata."
+    }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "83"
+  }
+}

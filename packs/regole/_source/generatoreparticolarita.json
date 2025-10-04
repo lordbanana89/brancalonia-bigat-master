@@ -1,0 +1,25 @@
+{
+  "_id": "HF4xWyEMdMQXCnhJ",
+  "_key": "!journal!generatoreparticolarita9afa43",
+  "name": "Particolarita",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "generatore-bettole-particolarita",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "84"
+      }
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

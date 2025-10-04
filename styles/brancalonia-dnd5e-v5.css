@@ -1,0 +1,269 @@
+/**
+ * BRANCALONIA THEME - Based on Carolingian UI
+ * Usa il template CSS di Carolingian UI con colori tema Brancalonia
+ */
+
+/* Override variabili colore per tema Brancalonia */
+:root,
+body {
+  /* Colori primari Brancalonia */
+  --bcl-gold: #c9a54a;
+  --bcl-gold-hover: #d4af37;
+  --bcl-red: #8c2b27;
+  --bcl-paper: #f3e6cc;
+  --bcl-paper-weak: #f9f4e8;
+  --bcl-ink: #2d1b0e;
+
+  /* Override Carolingian UI colors con tema Brancalonia */
+  --color-highlights: #c9a54a;
+  --color-highlights-15: rgba(201, 165, 74, 0.15);
+  --color-highlights-25: rgba(201, 165, 74, 0.25);
+  --color-highlights-50: rgba(201, 165, 74, 0.5);
+  --color-highlights-75: rgba(201, 165, 74, 0.75);
+  --color-highlights-90: rgba(201, 165, 74, 0.9);
+
+  --color-warm-1: #e8d5a8;
+  --color-warm-2: #c9a54a;
+  --color-warm-3: #a8884a;
+
+  --color-scrollbar: #d4af37;
+  --color-scrollbar-border: #c9a54a;
+  --color-shadow-primary: rgba(201, 165, 74, 0.5);
+  --toggle-active-bg-color: rgba(201, 165, 74, 0.5);
+  --toggle-active-border-color: rgba(201, 165, 74, 0.75);
+  --control-active-border-color: #c9a54a;
+  --color-text-accent: #c9a54a;
+
+  --dnd5e-color-maroon: #8c2b27;
+  --dnd5e-tabs-bg: #c9a54a;
+}
+
+/* DnD5e sheets - applicato globalmente */
+body {
+  --dnd5e-border-gold: none;
+
+  .dnd5e2.actor .meter {
+    border: 1px solid transparent;
+  }
+
+  .dnd5e2.actor fieldset {
+    border: 1px solid transparent;
+  }
+
+  /* XP Bar con colori Brancalonia */
+  .dnd5e2.sheet.actor.character .sheet-header > .right > div:last-child .xp-bar::after {
+    background: var(--bcl-gold);
+    box-shadow: none;
+  }
+
+  /* Sheet header con background pergamena */
+  &:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character .sheet-header,
+  .theme-light.dnd5e2.sheet.actor.character .sheet-header {
+    position: relative;
+    background: transparent;
+    z-index: 0;
+  }
+
+  &:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character:not(.theme-dark) .window-content .sheet-header:before,
+  .theme-light.dnd5e2.sheet.actor.character:not(.theme-dark) .window-content .sheet-header:before {
+    content: '';
+    background: linear-gradient(135deg, var(--bcl-paper) 0%, var(--bcl-paper-weak) 100%);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor.character:not(.theme-dark) .window-content .sheet-header:after,
+  .theme-light.dnd5e2.sheet.actor.character:not(.theme-dark) .window-content .sheet-header:after {
+    content: '';
+    position: absolute;
+    background: var(--color-highlights-15);
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Card headers con gradiente oro */
+  &:is(.dnd5e-theme-dark, .theme-dark) .dnd5e2.sheet.actor .card .header,
+  .dnd5e2.dnd5e-theme-dark.sheet.actor .card .header,
+  &:is(.dnd5e-theme-light, .theme-light) .dnd5e2.sheet.actor .card .header,
+  .dnd5e2.dnd5e-theme-light.sheet.actor .card .header {
+    background: linear-gradient(to right, var(--bcl-gold), var(--bcl-gold-hover));
+    color: var(--bcl-ink);
+    font-weight: 600;
+  }
+
+  /* Tabs con tema Brancalonia */
+  .dnd5e2.sheet.actor nav.tabs {
+    background: #f9f4e8 !important;
+    border-bottom: 2px solid #c9a54a !important;
+  }
+
+  .dnd5e2.sheet.actor nav.tabs .item {
+    color: #2d1b0e !important;
+    border-bottom: 3px solid transparent !important;
+    transition: all 0.2s ease-out;
+  }
+
+  .dnd5e2.sheet.actor nav.tabs .item:hover {
+    background: #f3e6cc !important;
+    color: #c9a54a !important;
+  }
+
+  .dnd5e2.sheet.actor nav.tabs .item.active {
+    background: #f3e6cc !important;
+    color: #c9a54a !important;
+    border-bottom-color: #c9a54a !important;
+    font-weight: 700;
+  }
+
+  /* Ability scores con colori oro */
+  .dnd5e2.sheet.actor .ability-score:hover {
+    background: linear-gradient(135deg, #c9a54a, #d4af37) !important;
+  }
+
+  /* Skills section */
+  .dnd5e2.sheet.actor .skills {
+    background: #f9f4e8 !important;
+    border: 1px solid #c9a54a !important;
+  }
+
+  .dnd5e2.sheet.actor .skill:hover {
+    background: #f3e6cc !important;
+    border-left: 2px solid #c9a54a !important;
+  }
+}
+
+/* Scrollbar custom Brancalonia */
+body.brancalonia-bigat .dnd5e2.sheet.actor ::-webkit-scrollbar {
+  width: 8px;
+}
+
+body.brancalonia-bigat .dnd5e2.sheet.actor ::-webkit-scrollbar-track {
+  background: var(--bcl-paper-weak);
+}
+
+body.brancalonia-bigat .dnd5e2.sheet.actor ::-webkit-scrollbar-thumb {
+  background: var(--bcl-gold);
+  border-radius: 4px;
+}
+
+body.brancalonia-bigat .dnd5e2.sheet.actor ::-webkit-scrollbar-thumb:hover {
+  background: var(--bcl-gold-hover);
+}
+
+/* Abilita interazioni con la sidebar in tema Brancalonia */
+.theme-brancalonia #sidebar,
+.theme-brancalonia #sidebar-tabs,
+.theme-brancalonia #sidebar-tabs > .item,
+.theme-brancalonia nav#sidebar,
+.theme-brancalonia nav#sidebar .item,
+.theme-brancalonia nav#sidebar .collapse-toggle {
+  pointer-events: auto;
+}
+
+/* Garantisce che la barra dei controlli rimanga interattiva */
+.theme-brancalonia #controls,
+.theme-brancalonia #controls *,
+.theme-brancalonia #ui-left,
+.theme-brancalonia #ui-left * {
+  pointer-events: auto !important;
+}
+
+/* FIX CRITICO: Abilita interazioni con i compendi */
+.theme-brancalonia .compendium-browser,
+.theme-brancalonia .compendium-browser *,
+.theme-brancalonia .compendium-browser .window-content,
+.theme-brancalonia .compendium-browser .directory-list,
+.theme-brancalonia .compendium-browser .directory-item,
+.theme-brancalonia .compendium-browser .directory-item *,
+.theme-brancalonia .window-app,
+.theme-brancalonia .window-app *,
+.theme-brancalonia .window-app .window-content,
+.theme-brancalonia .window-app .window-content * {
+  pointer-events: auto !important;
+}
+
+/* Forza scrollbar dei compendi a essere interattive */
+.theme-brancalonia .compendium-browser ::-webkit-scrollbar,
+.theme-brancalonia .compendium-browser ::-webkit-scrollbar-thumb,
+.theme-brancalonia .window-app ::-webkit-scrollbar,
+.theme-brancalonia .window-app ::-webkit-scrollbar-thumb {
+  pointer-events: auto !important;
+}
+
+
+/* ================================================ */
+/* NUCLEAR OPTION: FORCE ALL COMPENDIUM INTERACTION */
+/* This rule has maximum specificity and !important  */
+/* ================================================ */
+
+/* Force ALL elements in compendium browser to be interactive */
+.theme-brancalonia .compendium-browser,
+.theme-brancalonia .compendium-browser *,
+.theme-brancalonia .compendium-browser .window-content,
+.theme-brancalonia .compendium-browser .window-content *,
+.theme-brancalonia .compendium-browser .directory-list,
+.theme-brancalonia .compendium-browser .directory-list *,
+.theme-brancalonia .compendium-browser .directory-item,
+.theme-brancalonia .compendium-browser .directory-item *,
+.theme-brancalonia .compendium-browser .directory-item:hover,
+.theme-brancalonia .compendium-browser .directory-item:hover *,
+.theme-brancalonia .compendium-browser .directory-item:focus,
+.theme-brancalonia .compendium-browser .directory-item:focus *,
+.theme-brancalonia .compendium-browser .directory-item:active,
+.theme-brancalonia .compendium-browser .directory-item:active *,
+.theme-brancalonia .window-app,
+.theme-brancalonia .window-app *,
+.theme-brancalonia .window-app .window-content,
+.theme-brancalonia .window-app .window-content *,
+.theme-brancalonia .window-app .window-content:hover,
+.theme-brancalonia .window-app .window-content:hover *,
+.theme-brancalonia .window-app .window-content:focus,
+.theme-brancalonia .window-app .window-content:focus *,
+.theme-brancalonia .window-app .window-content:active,
+.theme-brancalonia .window-app .window-content:active * {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Force scrollbars to be interactive */
+.theme-brancalonia .compendium-browser ::-webkit-scrollbar,
+.theme-brancalonia .compendium-browser ::-webkit-scrollbar-thumb,
+.theme-brancalonia .compendium-browser ::-webkit-scrollbar-track,
+.theme-brancalonia .window-app ::-webkit-scrollbar,
+.theme-brancalonia .window-app ::-webkit-scrollbar-thumb,
+.theme-brancalonia .window-app ::-webkit-scrollbar-track {
+  pointer-events: auto !important;
+}
+
+/* Force all buttons and controls in compendiums */
+.theme-brancalonia .compendium-browser button,
+.theme-brancalonia .compendium-browser .control,
+.theme-brancalonia .compendium-browser .button,
+.theme-brancalonia .compendium-browser input,
+.theme-brancalonia .compendium-browser select,
+.theme-brancalonia .compendium-browser textarea,
+.theme-brancalonia .window-app button,
+.theme-brancalonia .window-app .control,
+.theme-brancalonia .window-app .button,
+.theme-brancalonia .window-app input,
+.theme-brancalonia .window-app select,
+.theme-brancalonia .window-app textarea {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Override any potential conflicting rules from Carolingian UI */
+body.theme-brancalonia .compendium-browser,
+body.theme-brancalonia .compendium-browser *,
+body.theme-brancalonia .window-app,
+body.theme-brancalonia .window-app * {
+  pointer-events: auto !important;
+}

@@ -1,0 +1,18 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "frate_monaco-livello_3-porgi_altra_guancia",
+      "nome": "Porgi L'altra Guancia",
+      "file": "frate_monaco-livello_3-porgi_altra_guancia.json"
+    },
+    {
+      "id": "frate_monaco-livello_6-tecnica_mano_ferro_piuma",
+      "nome": "Tecnica della Mano di Ferro e di Piuma",
+      "file": "frate_monaco-livello_6-tecnica_mano_ferro_piuma.json"
+    }
+  ]
+}

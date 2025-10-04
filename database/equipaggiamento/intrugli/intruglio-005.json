@@ -1,0 +1,9 @@
+{
+  "id": "intruglio-005",
+  "nome": "Fuoco d'Aspromonti",
+  "costo": "25 mo",
+  "peso": "0.5 kg",
+  "effetto": "Se bevuto da morto entro 1 minuto: risorge con 1 PF, incapacitato 1 ora",
+  "tipo_meccanica": "consumabile",
+  "fonte": "Manuale Base p.65-66"
+}

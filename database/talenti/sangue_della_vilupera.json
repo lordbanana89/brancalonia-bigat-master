@@ -1,0 +1,29 @@
+{
+  "nome": "Sangue della Vilupera",
+  "fonte": "Manuale Base p.39",
+  "tipo": "talento",
+  "descrizione": "Immunità ai veleni per esposizione prolungata",
+  "requisiti": "Nessuno",
+  "meccaniche": {
+    "incremento_costituzione": {
+      "tipo": "advancement",
+      "descrizione": "Costituzione +1 (max 20)",
+      "implementazione": "Gestito da Advancement API",
+      "mode": "advancement"
+    },
+    "immunita_veleno": {
+      "tipo": "attivo",
+      "descrizione": "Immunità a danni da veleno e condizione avvelenato",
+      "implementazione": {
+        "immunita_danni": "system.traits.di.value.push('poison')",
+        "immunita_condizione": "system.traits.ci.value.push('poisoned')"
+      },
+      "mode": 2
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "sangue_della_vilupera",
+    "compendio": "talenti"
+  }
+}

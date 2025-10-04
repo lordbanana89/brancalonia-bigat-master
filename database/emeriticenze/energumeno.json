@@ -1,0 +1,21 @@
+{
+  "nome": "Energumeno",
+  "fonte": "Manuale Base p.40",
+  "tipo": "emeriticenza",
+  "descrizione": "Aumenta punti ferita massimi",
+  "requisiti": "6° livello + 9000 PE extra",
+  "usi_massimi": null,
+  "meccaniche": {
+    "pf_aggiuntivi": {
+      "tipo": "attivo",
+      "descrizione": "PF massimi +6 + mod Costituzione",
+      "implementazione": "system.attributes.hp.bonuses.overall = 6 + @abilities.con.mod",
+      "mode": 2
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "emeriticenza_energumeno",
+    "compendio": "emeriticenze"
+  }
+}

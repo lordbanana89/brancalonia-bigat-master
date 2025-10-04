@@ -1,0 +1,42 @@
+{
+  "id": "class-monaco-via-quattro_elementi",
+  "nome": "Via dei Quattro Elementi",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Disciplina Elementale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Elemental Disciplines"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Disciplina Aggiuntiva",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Elemental Discipline (6th)"
+        }
+      }
+    ],
+    "livello_11": [
+      {
+        "nome": "Disciplina Aggiuntiva",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Elemental Discipline (11th)"
+        }
+      }
+    ],
+    "livello_17": [
+      {
+        "nome": "Disciplina Aggiuntiva",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Elemental Discipline (17th)"
+        }
+      }
+    ]
+  }
+}

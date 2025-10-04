@@ -1,0 +1,115 @@
+{
+  "_id": "QtyQlBhfWPlyAkOW",
+  "_key": "!item!spellraggiorovente2c0907",
+  "name": "Raggio Rovente",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Crei tre raggi di fuoco e li scagli verso bersagli entro gittata. Puoi scagliarli verso un bersaglio o diversi. Effettua un attacco a distanza con incantesimo per ogni raggio. Se colpisci, il bersaglio subisce 2d6 danni da fuoco.</p><h3>Note per il DM</h3><p><em>Scorching Ray è il single-target damage di livello 2. Flessibilità bersagli ottima. Scaling lineare efficiente. Fire damage limitante.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.273",
+    "level": 2,
+    "school": "con",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": 120,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-raggio-rovente",
+      "fonte": "D&D 5e PHB p.273",
+      "note_dm": "Scorching Ray è il single-target damage di livello 2. Flessibilità bersagli ottima. Scaling lineare efficiente. Fire damage limitante.",
+      "implementazione": {
+        "tipo": "spell",
+        "livello": 2,
+        "attivazione": "action",
+        "range": 120,
+        "attacco": "ranged spell",
+        "danno_per_raggio": "2d6",
+        "danno_tipo": "fire",
+        "numero_attacchi": 3
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Invocazione",
+        "level": 2
+      }
+    }
+  }
+}

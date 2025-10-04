@@ -1,0 +1,44 @@
+{
+  "id": "034",
+  "nome": "La Ruota della Tortura",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Miniatura di ruota di tortura in legno",
+  "proprieta": "Girandola, infligge dolore a distanza a chi hai toccato nelle ultime 24 ore",
+  "meccanica": "Bersaglio subisce 1d4 danni e svantaggio per 1 turno",
+  "valore": "400 mo",
+  "storia": "Modellino della ruota dove morirono 100 eretici",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "touch_tracker",
+      "touchedTargets": [],
+      "touchExpiry": 86400,
+      "damage": "1d4",
+      "damageType": "psychic",
+      "effect": "disadvantage_1_turn",
+      "actionType": "action"
+    },
+    "hooks": [],
+    "macros": ["turnWheel"],
+    "ui_config": {
+      "showTouchedTargets": true,
+      "targetsLabel": "Bersagli toccati (24h)",
+      "showDamage": true,
+      "damageText": "1d4 danni psichici + svantaggio 1 turno"
+    },
+    "narrative_reminders": [
+      "Traccia automaticamente chi il portatore ha toccato (24h)",
+      "Come azione, girare la ruota infligge 1d4 danni psichici",
+      "Il bersaglio subisce anche svantaggio per 1 turno",
+      "Nessun limite di distanza",
+      "Il bersaglio percepisce dolore lancinante",
+      "100 eretici morirono sulla ruota originale"
+    ]
+  },
+  "img": "icons/tools/fasteners/wheel-spoked-tan.webp"
+}

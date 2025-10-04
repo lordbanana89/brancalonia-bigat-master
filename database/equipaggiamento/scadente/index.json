@@ -1,0 +1,48 @@
+{
+  "categoria": "Equipaggiamento_scadente",
+  "descrizione": "Regole e categorie per gestire oggetti, armi, armature, animali e componenti di qualità scadente.",
+  "fonte": "Manuale Base p.62-63",
+  "totale": 8,
+  "elementi": [
+    {
+      "id": "scadente-000",
+      "nome": "Panoramica Equipaggiamento Scadente",
+      "file": "scadente-000_panorama.json"
+    },
+    {
+      "id": "scadente-001",
+      "nome": "Strumenti Scadenti",
+      "file": "scadente-001_strumenti.json"
+    },
+    {
+      "id": "scadente-002",
+      "nome": "Armi Scadenti",
+      "file": "scadente-002_armi.json"
+    },
+    {
+      "id": "scadente-003",
+      "nome": "Armature Scadenti",
+      "file": "scadente-003_armature.json"
+    },
+    {
+      "id": "scadente-004",
+      "nome": "Monte e Animali Scadenti",
+      "file": "scadente-004_animali.json"
+    },
+    {
+      "id": "scadente-005",
+      "nome": "Componenti Magici Scadenti",
+      "file": "scadente-005_componenti_magici.json"
+    },
+    {
+      "id": "scadente-006",
+      "nome": "Effetti Generici",
+      "file": "scadente-006_effetti_generici.json"
+    },
+    {
+      "id": "scadente-007",
+      "nome": "Reazioni Sociali",
+      "file": "scadente-007_reazioni_sociali.json"
+    }
+  ]
+}

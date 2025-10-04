@@ -1,0 +1,163 @@
+{
+  "id": "class-barbaro-livello_3-cammino-primordiale",
+  "nome": "Cammino Primordiale",
+  "nome_brancalonia": "Via del Pagano",
+  "livello": 3,
+  "tipo": "advancement",
+  "descrizione": "Al 3° livello, scegli un cammino che plasma la natura della tua ira. La tua scelta ti conferisce privilegi al 3° livello e poi di nuovo al 6°, 10° e 14° livello.",
+  "meccaniche": {
+    "tipo_scelta": "Sottoclasse permanente",
+    "livelli_privilegi": [3, 6, 10, 14],
+    "cambio_possibile": "Solo con consenso del DM e giustificazione narrativa"
+  },
+  "cammini_disponibili": {
+    "manuale_base": [
+      {
+        "id": "berserker",
+        "nome": "Cammino del Berserker",
+        "nome_brancalonia": "Via della Furia Cieca",
+        "descrizione": "Per alcuni barbari, l'ira è un mezzo per un fine: quello della violenza. Il Cammino del Berserker è un percorso di furia sfrenata, grondante di sangue.",
+        "tema": "Danno massimo, esaurimento come costo",
+        "privilegio_3": "Frenesia",
+        "file": "cammini/berserker/index.json"
+      },
+      {
+        "id": "totem",
+        "nome": "Cammino del Guerriero Totemico",
+        "nome_brancalonia": "Via degli Spiriti Selvaggi",
+        "descrizione": "Il Cammino del Guerriero Totemico è un viaggio spirituale, dove il barbaro accetta uno spirito animale come guida, protettore e ispirazione.",
+        "tema": "Versatilità, resistenze, utilità",
+        "privilegio_3": "Cercatore di Spiriti + Totem",
+        "file": "cammini/totem/index.json"
+      }
+    ],
+    "macaronicon": [
+      {
+        "id": "montanaro",
+        "nome": "Cammino del Montanaro",
+        "nome_brancalonia": "Via della Grappa Sacra",
+        "descrizione": "I Montanari sono barbari delle montagne di Brancalonia che hanno scoperto il segreto di distillare grappe magiche che potenziano la loro ira.",
+        "tema": "Alchimia barbara, grappe potenziate",
+        "privilegio_3": "Distillatore Selvaggio",
+        "file": "cammini/montanaro/index.json"
+      }
+    ],
+    "altri_manuali": [
+      {
+        "id": "zealot",
+        "nome": "Cammino dello Zelota",
+        "descrizione": "Furia divina, resurrezione gratuita",
+        "fonte": "Xanathar's Guide"
+      },
+      {
+        "id": "ancestral",
+        "nome": "Cammino del Guardiano Ancestrale",
+        "descrizione": "Spiriti protettivi, tank support",
+        "fonte": "Xanathar's Guide"
+      },
+      {
+        "id": "storm",
+        "nome": "Cammino dell'Araldo della Tempesta",
+        "descrizione": "Magia elementale, aure tempestose",
+        "fonte": "Xanathar's Guide"
+      },
+      {
+        "id": "beast",
+        "nome": "Cammino della Bestia",
+        "descrizione": "Trasformazioni bestiali, armi naturali",
+        "fonte": "Tasha's Cauldron"
+      },
+      {
+        "id": "wild_magic",
+        "nome": "Cammino della Magia Selvaggia",
+        "descrizione": "Surge di magia caotica in ira",
+        "fonte": "Tasha's Cauldron"
+      }
+    ]
+  },
+  "implementazione_foundry": {
+    "tipo": "subclass_choice",
+    "advancement": {
+      "type": "ItemChoice",
+      "level": 3,
+      "title": "Cammino Primordiale",
+      "hint": "Scegli il tuo cammino barbaro"
+    },
+    "configurazione": {
+      "system.details.subclass": "[nome_cammino]",
+      "items": "Aggiungi privilegi del cammino scelto"
+    }
+  },
+  "guida_scelta": {
+    "berserker": {
+      "pro": [
+        "Massimo output di danno",
+        "Attacco bonus con azione bonus",
+        "Immune a charme e paura in ira"
+      ],
+      "contro": [
+        "Esaurimento dalla Frenesia",
+        "Meno versatilità",
+        "Burnout a lungo termine"
+      ],
+      "ideale_per": "Giocatori che vogliono DISTRUGGERE"
+    },
+    "totem": {
+      "pro": [
+        "Molto versatile",
+        "Resistenze extra o mobilità",
+        "Rituali utility fuori combattimento"
+      ],
+      "contro": [
+        "Meno danno del Berserker",
+        "Scelte complesse per build",
+        "Alcuni totem sono situazionali"
+      ],
+      "ideale_per": "Giocatori che vogliono opzioni"
+    },
+    "montanaro": {
+      "pro": [
+        "Grappe uniche di Brancalonia",
+        "Mix di danno e utilità",
+        "Flavor fantastico per ambientazione"
+      ],
+      "contro": [
+        "Richiede preparazione grappe",
+        "Risorse limitate",
+        "Specifico per Brancalonia"
+      ],
+      "ideale_per": "Giocatori che amano l'ambientazione"
+    }
+  },
+  "progressione_privilegi": {
+    "livello_3": "Primo privilegio del cammino",
+    "livello_6": "Secondo privilegio (spesso difensivo)",
+    "livello_10": "Terzo privilegio (utilità o sociale)",
+    "livello_14": "Capstone del cammino (molto potente)"
+  },
+  "multiclasse_considerazioni": {
+    "nota": "Il cammino definisce molto del barbaro",
+    "sinergie_comuni": [
+      "Berserker + Champion (critico migliorato)",
+      "Totem + Druido (tema natura)",
+      "Zealot + Paladino (tema divino)"
+    ]
+  },
+  "impatto_narrativo": {
+    "berserker": "Temuto per la sua violenza incontrollabile",
+    "totem": "Rispettato come sciamano guerriero",
+    "montanaro": "Famoso per le sue grappe leggendarie",
+    "importanza": "Definisce l'identità del personaggio"
+  },
+  "note_dm": {
+    "bilanciamento": "Tutti i cammini sono bilanciati diversamente. Berserker è nova damage, Totem è sustain.",
+    "personalizzazione": "Considera cammini homebrew per campagne uniche",
+    "progressione": "I privilegi del cammino sono spesso i più importanti per il barbaro"
+  },
+  "collegamenti": {
+    "berserker": "cammini/berserker/index.json",
+    "totem": "cammini/totem/index.json",
+    "montanaro": "cammini/montanaro/index.json"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49-50"
+}

@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione Stregone",
+  "descrizione": "Tabella di progressione per la classe Stregone con bonus competenza, slot incantesimo e privilegi per livello.",
+  "fonte": "Manuale del Giocatore p.99-106",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione-stregone",
+      "nome": "Tabella Progressione Stregone",
+      "file": "progressione.json"
+    }
+  ]
+}

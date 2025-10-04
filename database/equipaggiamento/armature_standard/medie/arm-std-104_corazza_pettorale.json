@@ -1,0 +1,20 @@
+{
+  "id": "arm-std-104",
+  "nome": "Corazza Pettorale",
+  "categoria": "armatura_standard",
+  "tipo": "media",
+  "costo": "400 mo",
+  "classe_armatura": "14 + Mod Destrezza (max 2)",
+  "bonus_ca": null,
+  "forza_minima": "—",
+  "furtivita": "—",
+  "peso": "9.1 kg",
+  "descrizione": "Pettorale metallico liscio con protezioni leggere per braccia e gambe.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armature"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

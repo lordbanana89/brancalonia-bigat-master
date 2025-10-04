@@ -1,0 +1,81 @@
+{
+  "_id": "Posysm8vDc2N286F",
+  "_key": "!item!oggettocontraff005reliquiefalse802435",
+  "name": "Reliquie False",
+  "type": "equipment",
+  "img": "icons/sundries/misc/aged-parchment-book.webp",
+  "system": {
+    "description": {
+      "value": "<p>Finti resti sacri, ossa o reliquiari costruiti per ingannare credenti e pellegrini.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "armor": {
+      "value": 10,
+      "type": "light",
+      "dex": null
+    },
+    "strength": 0,
+    "stealth": false,
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "oggetto-contraff-005",
+      "fonte": {
+        "manuale": "Manuale Base",
+        "pagine": "64-65"
+      },
+      "validazione": {
+        "stato": "da_validare",
+        "estratto_da": "manuale_brancalonia.txt"
+      },
+      "note": "Se usate per ottenere favore divino o bonus spirituali, il Condottiero applica le complicazioni dell'equipaggiamento contraffatto (es. malfunzionamento narrativo, aumento di CD)."
+    }
+  }
+}

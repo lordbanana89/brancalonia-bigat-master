@@ -1,0 +1,56 @@
+{
+  "categoria": "Database",
+  "descrizione": "Indice complessivo dei contenuti strutturati del modulo Brancalonia.",
+  "fonte": "Brancalonia Manuale Base e supplementi Macaronicon",
+  "totale": 8,
+  "elementi": [
+    {
+      "id": "backgrounds",
+      "nome": "Background",
+      "file": "backgrounds/index.json",
+      "conteggio": 13
+    },
+    {
+      "id": "classi",
+      "nome": "Classi",
+      "file": "classi/index.json",
+      "conteggio": 21
+    },
+    {
+      "id": "emeriticenze",
+      "nome": "Emeriticenze",
+      "file": "emeriticenze/index.json",
+      "conteggio": 11
+    },
+    {
+      "id": "equipaggiamento",
+      "nome": "Equipaggiamento",
+      "file": "equipaggiamento/index.json",
+      "conteggio": 2
+    },
+    {
+      "id": "incantesimi",
+      "nome": "Incantesimi",
+      "file": "incantesimi/index.json",
+      "conteggio": 8
+    },
+    {
+      "id": "razze",
+      "nome": "Razze",
+      "file": "razze/index.json",
+      "conteggio": 3
+    },
+    {
+      "id": "regole",
+      "nome": "Regole",
+      "file": "regole/index.json",
+      "conteggio": 3
+    },
+    {
+      "id": "talenti",
+      "nome": "Talenti",
+      "file": "talenti/index.json",
+      "conteggio": 8
+    }
+  ]
+}

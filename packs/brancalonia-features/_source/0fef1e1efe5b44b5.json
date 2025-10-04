@@ -1,0 +1,72 @@
+{
+  "_id": "0fef1e1efe5b44b5",
+  "_key": "!item!0fef1e1efe5b44b5",
+  "name": "Ispirazione Superiore",
+  "type": "feat",
+  "img": "icons/magic/light/explosion-star-sun-large-orange-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ispirazione Superiore (20° livello)</strong></p><p>Al 20° livello, quando tiri per l'iniziativa e non hai usi di Ispirazione Bardica rimasti, recuperi un uso.</p><p>Questo ti assicura di avere sempre almeno un uso di Ispirazione Bardica disponibile all'inizio del combattimento, permettendoti di supportare i tuoi alleati anche nelle situazioni più disperate.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.54",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "Quando tiri iniziativa senza usi di Ispirazione Bardica"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Bardo Livello 20",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "bardo",
+      "livello": 20
+    }
+  }
+}

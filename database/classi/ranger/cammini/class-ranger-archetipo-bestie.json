@@ -1,0 +1,42 @@
+{
+  "id": "class-ranger-archetipo-bestie",
+  "nome": "Maestro delle Bestie",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Compagno Animale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Ranger's Companion"
+        }
+      }
+    ],
+    "livello_7": [
+      {
+        "nome": "Addestramento Eccezionale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Exceptional Training"
+        }
+      }
+    ],
+    "livello_11": [
+      {
+        "nome": "Furia Bestiale",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bestial Fury"
+        }
+      }
+    ],
+    "livello_15": [
+      {
+        "nome": "Condivisione degli Incantesimi",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Share Spells"
+        }
+      }
+    ]
+  }
+}

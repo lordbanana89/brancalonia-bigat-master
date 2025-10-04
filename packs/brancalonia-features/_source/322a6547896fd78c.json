@@ -1,0 +1,72 @@
+{
+  "_id": "322a6547896fd78c",
+  "_key": "!item!322a6547896fd78c",
+  "name": "Privilegio del Dominio",
+  "type": "feat",
+  "img": "icons/magic/symbols/chevron-elipse-circle-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Privilegio del Dominio (17° livello)</strong></p><p>Al 17° livello, ottieni il privilegio culminante del tuo Dominio Divino.</p><p>Ogni Dominio conferisce un potente privilegio a questo livello:</p><ul><li><strong>Dominio della Vita:</strong> Guaritore Supremo</li><li><strong>Dominio della Luce:</strong> Corona di Luce</li><li><strong>Dominio della Tempesta:</strong> Figlio della Tempesta</li><li>Altri domini hanno i loro privilegi specifici</li></ul><p><strong>Nota:</strong> Il privilegio specifico viene concesso automaticamente dal sistema in base al Dominio selezionato.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.59-63",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Chierico Livello 17",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "chierico",
+      "livello": 17
+    }
+  }
+}

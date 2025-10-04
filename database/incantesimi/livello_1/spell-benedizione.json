@@ -1,0 +1,64 @@
+{
+  "id": "spell-benedizione",
+  "nome": "Benedizione",
+  "nome_inglese": "Bless",
+  "livello": 1,
+  "scuola": "Ammaliamento",
+  "tempo_lancio": "1 azione",
+  "gittata": "30 piedi",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Una spruzzata di acqua santa"
+  },
+  "durata": "Concentrazione, fino a 1 minuto",
+  "descrizione": "Benedici fino a tre creature a tua scelta entro gittata. Ogni volta che un bersaglio effettua un tiro per colpire o un tiro salvezza prima che l'incantesimo finisca, il bersaglio può tirare un d4 e aggiungere il numero tirato al tiro per colpire o tiro salvezza.",
+  "classi": ["Chierico", "Paladino"],
+  "scaling": {
+    "descrizione": "+1 creatura per slot level sopra 1°",
+    "slot_2": "4 creature",
+    "slot_3": "5 creature",
+    "slot_4": "6 creature",
+    "slot_5": "7 creature"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 1,
+    "attivazione": "action",
+    "range": 30,
+    "bersagli": 3,
+    "durata": "1 minute",
+    "concentrazione": true,
+    "bonus": "1d4 to attacks and saves"
+  },
+  "valore": {
+    "bonus_medio": "+2.5 media (d4)",
+    "doppio_beneficio": "Attack AND saves",
+    "no_save": "Auto successo su alleati",
+    "multi_target": "3+ creature base"
+  },
+  "matematica": {
+    "hit_increase": "~12.5% più hit chance",
+    "save_increase": "~12.5% più save chance",
+    "party_wide": "Moltiplica per 3+ targets"
+  },
+  "confronto": {
+    "vs_faerie_fire": "d4 < advantage ma più versatile",
+    "vs_guidance": "Combat vs utility",
+    "vs_heroism": "Più targets ma no immunity fear"
+  },
+  "utilizzo_ottimale": [
+    "Inizio combat per durata massima",
+    "Prima di save importante party",
+    "Buff martial characters",
+    "Counter fear/save effects"
+  ],
+  "concentrazione_problema": {
+    "compete": "Blocca altri concentration",
+    "perdibile": "Save per mantenerlo",
+    "target_caster": "Nemici focussano caster"
+  },
+  "note_dm": "Bless è uno dei migliori buff. +1d4 sembra poco ma su 3+ alleati per minuto è enorme value. Compete per concentration.",
+  "fonte": "D&D 5e PHB p.219"
+}

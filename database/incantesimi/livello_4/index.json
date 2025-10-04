@@ -1,0 +1,18 @@
+{
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "invisibilità-superiore",
+      "nome": "Invisibilità Superiore",
+      "file": "spell-invisibilita-superiore.json"
+    },
+    {
+      "id": "porta-dimensionale",
+      "nome": "Porta Dimensionale",
+      "file": "spell-porta-dimensionale.json"
+    }
+  ]
+}

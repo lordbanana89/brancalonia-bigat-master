@@ -1,0 +1,44 @@
+{
+  "id": "spell-riparare",
+  "nome": "Riparare",
+  "nome_inglese": "Mending",
+  "livello": 0,
+  "scuola": "Trasmutazione",
+  "tempo_lancio": "1 minuto",
+  "gittata": "Contatto",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Due calamite"
+  },
+  "durata": "Istantanea",
+  "descrizione": "Questo incantesimo ripara una singola rottura o lacerazione in un oggetto che tocchi, come un anello di catena rotto, due metà di una chiave spezzata, un mantello strappato o una borsa di pelle che perde. Finché la rottura o lo strappo non è più grande di 1 piede in qualsiasi dimensione, lo ripari, non lasciando traccia del danno precedente. Questo incantesimo può riparare fisicamente un oggetto magico o costrutto, ma non può ripristinare la magia in tale oggetto.",
+  "classi": ["Bardo", "Chierico", "Druido", "Mago", "Stregone"],
+  "implementazione_foundry": {
+    "tipo": "cantrip",
+    "attivazione": "1 minute",
+    "range": "touch",
+    "durata": "instantaneous"
+  },
+  "limitazioni": {
+    "dimensione_rottura": "Max 1 piede",
+    "magia": "Non ripristina proprietà magiche",
+    "complessità": "Solo rotture semplici",
+    "materiale_mancante": "Serve tutto il materiale originale"
+  },
+  "utilizzi_pratici": [
+    "Riparare equipaggiamento danneggiato",
+    "Falsificare documenti strappati",
+    "Riparare corde tagliate",
+    "Sistemare vestiti dopo combattimento",
+    "Riparare frecce rotte"
+  ],
+  "interazioni_speciali": {
+    "oggetti_magici": "Ripara forma fisica, non magia",
+    "costrutti": "Può curare 1 HP con riposo lungo",
+    "documenti": "Utile per ricostruire prove"
+  },
+  "note_dm": "Mending è utility pura. Tempo lancio 1 minuto lo rende inutile in combat. Ottimo per mantenimento equipment e investigazione.",
+  "fonte": "D&D 5e PHB p.259"
+}

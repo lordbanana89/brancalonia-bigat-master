@@ -1,0 +1,52 @@
+{
+  "classe": "chierico",
+  "fonte": "Manuale Base",
+  "categorie": [
+    {
+      "nome": "Dominio del Calendario",
+      "descrizione": "Invocazioni ai Santi associate al nuovo Dominio introdotto in Brancalonia.",
+      "livelli": [
+        {
+          "livello": 1,
+          "incantesimi": [
+            {
+              "id": "spell-base-009",
+              "nome": "Protezione dal Bene e dal Male"
+            },
+            {
+              "id": "spell-base-002",
+              "nome": "Purificare Cibo e Bevande"
+            }
+          ]
+        },
+        {
+          "livello": 2,
+          "incantesimi": [
+            {
+              "id": "spell-base-003",
+              "nome": "Caratteristica Potenziata"
+            },
+            {
+              "id": "spell-base-004",
+              "nome": "Ristorare Inferiore"
+            }
+          ]
+        },
+        {
+          "livello": 3,
+          "incantesimi": [
+            {
+              "id": "spell-base-005",
+              "nome": "Creare Cibo e Acqua"
+            },
+            {
+              "id": "spell-base-006",
+              "nome": "Dissolvi Magie"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totale": 6
+}

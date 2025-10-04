@@ -1,0 +1,72 @@
+{
+  "_id": "uNYxB0EmqfdaiO8o",
+  "_key": "!item!classbarbarolivello2attaccoirruento996be5",
+  "name": "Attacco Irruento",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-axe-blood-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Attacco Irruento (2° livello)</strong></p><p>A partire dal 2° livello, puoi gettare da parte qualsiasi preoccupazione per la difesa e attaccare con selvaggia disperazione.</p><p>Quando effettui il tuo primo attacco nel turno, puoi decidere di attaccare in modo irruento.</p><p><strong>Benefici:</strong> Hai vantaggio ai tiri per colpire con attacchi in mischia che usano Forza durante questo turno.</p><p><strong>Svantaggio:</strong> I tiri per colpire contro di te hanno vantaggio fino al tuo prossimo turno.</p><p><strong>Nota tattica:</strong> Usa l'Attacco Irruento quando è più importante colpire il bersaglio che difenderti, come quando vuoi abbattere rapidamente un nemico debole o quando hai alta CA e molti PF.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.48",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "Quando effettui il primo attacco nel turno"
+    },
+    "duration": {
+      "value": "1",
+      "units": "turn"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-barbaro-livello_2-attacco-irruento",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48"
+    }
+  }
+}

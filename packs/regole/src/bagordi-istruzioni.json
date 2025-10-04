@@ -1,0 +1,25 @@
+{
+  "_id": "AXNajDqrgAVM3Ghl",
+  "_key": "!journal!bagordiistruzionia78391",
+  "name": "Applicare la Tabella",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "bagordi-istruzioni",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "62"
+      }
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

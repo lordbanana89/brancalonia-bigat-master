@@ -1,0 +1,49 @@
+{
+  "id": "049",
+  "nome": "La Mappa del Tesoro Maledetto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Mappa che cambia ogni volta che la guardi",
+  "proprieta": "Porta sempre a un tesoro, mai lo stesso",
+  "maledizione": "Il tesoro vale sempre meno del viaggio",
+  "valore": "Variable",
+  "storia": "1000 avventurieri la seguirono, 10 tornarono",
+  "maledizione_specifica": "Il tesoro vale sempre meno del viaggio",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "narrative_only",
+      "dmTool": true,
+      "properties": {
+        "generatesQuests": true,
+        "treasureAlwaysLessThanCost": true,
+        "lastTreasureValue": 0
+      }
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "dmOnly": true,
+      "dmReminder": true,
+      "reminderText": "Genera quest: tesoro < costo viaggio"
+    },
+    "narrative_reminders": [
+      "La mappa CAMBIA ogni volta che la guardi",
+      "Porta sempre a un tesoro reale (mai falsi)",
+      "Mai lo stesso tesoro due volte",
+      "MALEDIZIONE: Il tesoro vale SEMPRE meno delle spese del viaggio",
+      "Include: costi viaggio, equipaggiamento perso, healing, resurrezioni",
+      "1000 avventurieri la seguirono, solo 10 tornarono",
+      "Ottima per generare avventure secondarie ironiche",
+      "I tesori sono reali ma economicamente disastrosi",
+      "Può portare a luoghi pericolosi o remoti",
+      "Rappresenta avidità che porta a rovina",
+      "DM: calcolare costi viaggio e dare tesoro di valore inferiore"
+    ]
+  },
+  "img": "icons/sundries/documents/document-treasure-map.webp"
+}

@@ -1,0 +1,142 @@
+{
+  "_id": "q8DV0XG3oaNYRHcn",
+  "_key": "!item!sottorazzapinocchiob12f3d",
+  "name": "Pinocchio",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base",
+    "movement": {
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 0,
+      "units": "ft"
+    },
+    "type": {
+      "value": "construct",
+      "subtype": "",
+      "custom": ""
+    },
+    "advancement": [
+      {
+        "_id": "kan2ujg3puksdkqc",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "kKRwKN69gK5iSKQm",
+        "type": "size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Size",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "EnMNWcTLm77rjVLl",
+        "type": "trait",
+        "configuration": {
+          "grants": [
+            "construct_resilience"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Construct Nature",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "y0c866sgv8cswu5u",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.031rgwh3ckrtq09x"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Corpo di Legno",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "2cpzafjrq5o5jrzs",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.qcxr7kwqqolnhh9r"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Naso che Cresce",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "t2unj4kee1y9ht6r",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.87nlrouyk96y8dmn"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Senza Bisogni Vitali",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "74vs82n7w57cfcg0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.6i1cgn7kwfia4sh7"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Costruito",
+        "icon": "icons/svg/upgrade.svg"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "race-marionetta-sottorazza-pinocchio",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

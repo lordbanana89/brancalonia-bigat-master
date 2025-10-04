@@ -1,0 +1,46 @@
+{
+  "id": "046",
+  "nome": "Il Guanto del Duellante",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Guanto bianco macchiato di sangue",
+  "proprieta": "Chi viene schiaffeggiato deve accettare la sfida o subire -4 Carisma per 1 mese",
+  "valore": "400 mo",
+  "storia": "Il duellante morì al suo 100° duello",
+  "onore": "Il possessore non può rifiutare sfide",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "honor_code",
+      "onUse": "target_accepts_or_penalty",
+      "penalty": "-4_cha",
+      "penaltyDuration": 2592000,
+      "ownerConstraint": "cannot_refuse_challenges",
+      "description": "Sfida formale, penalità -4 CAR 1 mese se rifiuto"
+    },
+    "hooks": [],
+    "macros": ["challengeDuel"],
+    "ui_config": {
+      "showEffect": true,
+      "effectText": "Schiaffo = sfida formale",
+      "showPenalty": true,
+      "penaltyText": "Target rifiuta = -4 CAR per 1 mese",
+      "showConstraint": true,
+      "constraintText": "⚠️ Tu NON puoi rifiutare sfide!"
+    },
+    "narrative_reminders": [
+      "Schiaffeggiare qualcuno = sfida formale a duello",
+      "Target deve accettare o subire -4 Carisma per 1 mese",
+      "Il portatore NON può rifiutare sfide ricevute",
+      "Il codice d'onore è magicamente vincolante",
+      "Il duellante originale morì al 100° duello",
+      "Le macchie di sangue non si lavano via",
+      "Ottimo per provocare duelli, pericoloso per il portatore"
+    ]
+  },
+  "img": "icons/equipment/hand/glove-fancy-blue.webp"
+}

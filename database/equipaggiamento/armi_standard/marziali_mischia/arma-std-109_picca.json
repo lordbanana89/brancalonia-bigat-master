@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-109",
+  "nome": "Picca",
+  "categoria": "arma_standard",
+  "tipo": "marziale_mischia",
+  "costo": "5 mo",
+  "danni": "1d10 perforanti",
+  "proprieta": [
+    "Portata",
+    "Due Mani"
+  ],
+  "peso": "8.2 kg",
+  "descrizione": "Arma ad asta lunghissima usata per respingere cariche.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

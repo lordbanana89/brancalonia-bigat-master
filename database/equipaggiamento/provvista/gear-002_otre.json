@@ -1,0 +1,15 @@
+{
+  "id": "gear-002",
+  "nome": "Otre",
+  "categoria": "provvista_avventuriera",
+  "costo": "2 ma",
+  "peso": "2 kg (pieno)",
+  "descrizione": "Contenitore in pelle trattata che può contenere fino a 4 litri di liquido.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

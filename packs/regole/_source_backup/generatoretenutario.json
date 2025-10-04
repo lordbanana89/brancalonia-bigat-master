@@ -1,0 +1,43 @@
+{
+  "_id": "generatoretenutarioeba056",
+  "_key": "!journal!generatoretenutarioeba056",
+  "name": "Tenutario",
+  "img": "icons/svg/book.svg",
+  "pages": [
+    {
+      "_id": "generatoretenutarioeba056page1",
+      "name": "Tenutario",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "generatore-bettole-tenutario",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "84"
+      }
+    }
+  },
+  "type": "journal"
+}

@@ -1,0 +1,7 @@
+2025/10/04-13:53:09.845872 17340b000 Recovering log #119
+2025/10/04-13:53:09.846375 17340b000 Delete type=3 #117
+2025/10/04-13:53:09.846428 17340b000 Delete type=0 #119
+2025/10/04-13:53:09.847839 173ca3000 Level-0 table #123: started
+2025/10/04-13:53:09.848596 173ca3000 Level-0 table #123: 90426 bytes OK
+2025/10/04-13:53:09.848667 173ca3000 Delete type=0 #121
+2025/10/04-13:53:09.848733 173ca3000 Manual compaction at level-0 from '!item!spell-base-001_benedizione' @ 72057594037927935 : 1 .. '!item!spellvolare48ca66' @ 0 : 0; will stop at (end)

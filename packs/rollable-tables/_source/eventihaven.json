@@ -1,0 +1,265 @@
+{
+  "_id": "zFH91ZPTPBSz416Y",
+  "name": "Eventi nel Rifugio",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Eventi nel Rifugio",
+  "results": [
+    {
+      "_id": "eventi-haven_0",
+      "type": 0,
+      "text": "Infiltrazione di ratti giganti",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_0"
+    },
+    {
+      "_id": "eventi-haven_1",
+      "type": 0,
+      "text": "Crollo parziale del tetto",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_1"
+    },
+    {
+      "_id": "eventi-haven_2",
+      "type": 0,
+      "text": "Ispezione delle guardie cittadine",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_2"
+    },
+    {
+      "_id": "eventi-haven_3",
+      "type": 0,
+      "text": "Mercante ambulante alla porta",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_3"
+    },
+    {
+      "_id": "eventi-haven_4",
+      "type": 0,
+      "text": "Festa spontanea degli abitanti",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_4"
+    },
+    {
+      "_id": "eventi-haven_5",
+      "type": 0,
+      "text": "Incendio in cucina",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_5"
+    },
+    {
+      "_id": "eventi-haven_6",
+      "type": 0,
+      "text": "Arrivo di rifugiati bisognosi",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_6"
+    },
+    {
+      "_id": "eventi-haven_7",
+      "type": 0,
+      "text": "Scoperta di una stanza segreta",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_7"
+    },
+    {
+      "_id": "eventi-haven_8",
+      "type": 0,
+      "text": "Infestazione di parassiti",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_8"
+    },
+    {
+      "_id": "eventi-haven_9",
+      "type": 0,
+      "text": "Visita di un nobile in incognito",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_9"
+    },
+    {
+      "_id": "eventi-haven_10",
+      "type": 0,
+      "text": "Rissa tra membri della compagnia",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_10"
+    },
+    {
+      "_id": "eventi-haven_11",
+      "type": 0,
+      "text": "Furto notturno di provviste",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_11"
+    },
+    {
+      "_id": "eventi-haven_12",
+      "type": 0,
+      "text": "Arrivo di un menestrello",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_12"
+    },
+    {
+      "_id": "eventi-haven_13",
+      "type": 0,
+      "text": "Epidemia minore (influenza)",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_13"
+    },
+    {
+      "_id": "eventi-haven_14",
+      "type": 0,
+      "text": "Tesoro trovato nelle fondamenta",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_14"
+    },
+    {
+      "_id": "eventi-haven_15",
+      "type": 0,
+      "text": "Attacco di banditi",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_15"
+    },
+    {
+      "_id": "eventi-haven_16",
+      "type": 0,
+      "text": "Manifestazione fantasma",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_16"
+    },
+    {
+      "_id": "eventi-haven_17",
+      "type": 0,
+      "text": "Proposta di alleanza da criminali",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_17"
+    },
+    {
+      "_id": "eventi-haven_18",
+      "type": 0,
+      "text": "Miglioramento gratuito di una stanza",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_18"
+    },
+    {
+      "_id": "eventi-haven_19",
+      "type": 0,
+      "text": "Nulla di particolare, tutto tranquillo",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "_key": "!results!eventi-haven_19"
+    }
+  ],
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 2100,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!eventihaven",
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

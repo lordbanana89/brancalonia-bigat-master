@@ -1,0 +1,168 @@
+{
+  "nome": "Impresario",
+  "fonte": "Brancalonia Macaronicon p.37-38",
+  "tipo": "background",
+  "descrizione": "Faccendiere dello spettacolo che organizza compagnie, intrattenimenti e truffe sceniche in tutto il Regno",
+  "testo": {
+    "introduzione": [
+      "Guiti, teatranti, burattinai e saltimbanchi si rivolgono all'impresario per trovare palchi, committenti e pubblico pagante.",
+      "Tra agganci nobiliari, clausole capestro e promesse fumose sa far quadrare incassi e spettacoli, improvvisando soluzioni quando tutto sembra crollare.",
+      "Al tavolo delle trattative è un artista di furbizia: sa trasformare fiaschi imminenti in trionfi teatrali o in fughe con l'incasso sotto braccio."
+    ],
+    "privilegio": {
+      "nome": "Arte di Arrangiarsi",
+      "descrizione": "È abituato a rimediare a ogni imprevisto scenico: può improvvisare scenografie, personale e repertorio per salvare uno spettacolo o un affare all'ultimo momento."
+    }
+  },
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Intuizione e Persuasione",
+      "implementazione": {
+        "intuizione": "system.skills.ins.value = 1",
+        "persuasione": "system.skills.per.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Due tipi di gioco",
+      "implementazione": {
+        "gioco1": "system.tools.game1.value = 1",
+        "gioco2": "system.tools.game2.value = 1"
+      },
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Baccaglio e Maccheronico",
+      "implementazione": {
+        "baccaglio": "system.traits.languages.value.push('baccaglio')",
+        "maccheronico": "system.traits.languages.value.push('maccheronico')"
+      },
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Libro con nomi di aspiranti teatranti, abito di buona fattura, borsa con 20 ma"
+    },
+    "privilegio_arte_arrangiarsi": {
+      "tipo": "attivo",
+      "descrizione": "Può improvvisare elementi di uno spettacolo per evitare figuracce o trasformare una situazione sociale in un evento remunerativo",
+      "implementazione": {
+        "arte_arrangiarsi": "flags.brancalonia-bigat.arteArrangiarsi = true"
+      },
+      "mode": 5
+    }
+  },
+  "dettagli": {
+    "identificatore": "impresario",
+    "ricchezza_iniziale": "20 ma",
+    "equipaggiamento": [
+      "Libro con i nomi di aspiranti teatranti",
+      "Abito di buona fattura",
+      "Borsa con 20 ma"
+    ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "intuizione",
+        "persuasione"
+      ]
+    },
+    {
+      "tipo": "competenze_strumenti",
+      "scelte": 2,
+      "categoria": "strumenti_gioco"
+    },
+    {
+      "tipo": "linguaggi",
+      "elenco": [
+        "baccaglio",
+        "maccheronico"
+      ]
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "Arte di Arrangiarsi",
+      "descrizione": "Improvvisa tutto ciò che serve per mettere in piedi uno spettacolo credibile o risolvere un imprevisto scenico.",
+      "fonte": "Brancalonia Macaronicon p.37-38",
+      "implementazione": {
+        "arte_arrangiarsi": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "Parla spesso in Maccheronico e si atteggia a personaggio di fama.",
+        "Agisce sempre in funzione del proprio guadagno.",
+        "Potrebbe convincere chiunque di avere un talento innato.",
+        "Vede la vita come il più grande spettacolo e ne trae ispirazione continua.",
+        "Ama l'arte quanto l'agio e non sacrificherebbe mai l'una per l'altro.",
+        "Considera la parola data poetica ma poco vincolante.",
+        "È alla continua ricerca di nuovi talenti e avventure.",
+        "Vive la propria vita un atto di pièce alla volta."
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Comunione. C'è posto per chiunque dietro il sipario. (Buono)",
+        "Liceità. L'arte va espressa nel rispetto di chi ospita lo spettacolo. (Legale)",
+        "Autodeterminazione. Ciò che serve allo spettacolo viene prima di tutto. (Caotico)",
+        "Fino all'osso. Il mondo è di chi sa prenderselo, usando chi serve. (Malvagio)",
+        "Lo spettacolo deve continuare. Qualsiasi cosa accada, la rappresentazione non si ferma. (Neutrale)",
+        "Il copione. Ognuno ha una parte da recitare e nulla accade per caso. (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "La mia compagnia è la mia forza.",
+        "Devo tutto al vecchio maestro che mi insegnò il mestiere.",
+        "Proteggo a ogni costo la copia originale del canovaccio de 'La Febbra'.",
+        "Sono segretamente innamorato della mia prima attrice.",
+        "Vivo per regalare emozioni a chiunque incontri.",
+        "Non metterò mai nulla al di sopra dell'arte e dello spettacolo."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "Sono geloso di chi possiede un vero talento.",
+        "Sono un truffatore che usa gli altri per il proprio tornaconto.",
+        "Sono un visionario irresponsabile e faccio sempre il passo più lungo della gamba.",
+        "Penso solo allo spettacolo e ai guadagni.",
+        "Pretendo il massimo dagli altri ma io faccio ben poco per loro.",
+        "Ho manie di grandezza e di controllo."
+      ]
+    },
+    "tabelle_aggiuntive": [
+      {
+        "nome": "Tipo di Spettacolo",
+        "dado": "d10",
+        "voci": [
+          "Teatro di strada, mimi e giocoleria.",
+          "Cortigianeria, ricevimenti e compagnia d'alto bordo.",
+          "Opera, concerti, balletti e grandi spettacoli da palcoscenico.",
+          "Canzoni, poemi e musica di strada o da camera.",
+          "Prestidigitazione e magia d'avanspettacolo.",
+          "Teatro di marionette, burattini oppure ombre serindie.",
+          "Circhi e spettacoli di combattimento.",
+          "Commedia dell'arte, sceneggiate e monologhi.",
+          "Sacra rappresentazione.",
+          "Farsa, burla e truffa."
+        ]
+      }
+    ]
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "impresario001",
+    "compendio": "backgrounds_macaronicon"
+  }
+}

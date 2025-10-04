@@ -1,0 +1,235 @@
+/* ================================================ */
+/* BRANCALONIA THEME - MAIN ENTRY POINT            */
+/* Italian Renaissance UI Theme for Foundry VTT    */
+/* Compatible with dnd5e v5.1.9 and Foundry v12/v13*/
+/* ================================================ */
+
+/*
+ * CRITICAL IMPORT ORDER:
+ * 1. Tokens - Design system variables
+ * 2. Main - Core styles with .theme-brancalonia scope
+ * 3. Decorations - Italian Renaissance SVG ornaments
+ * 4. DnD5e Compat - System-specific styles
+ * 5. Module Compat - Third-party module integrations
+ * 6. Fixes - Critical patches and overrides
+ */
+
+/* ================================================
+   IMPORT ORDER OTTIMIZZATO
+   Rimossi file legacy e ridondanti
+   ================================================ */
+
+/* 1. Design System Tokens - Base del tema */
+/* RIMOSSO: Ora caricato direttamente da module.json PRIMA di questo file */
+/* @import url('./brancalonia-tokens.css'); */
+/* AGGIORNATO: Usa brancalonia-tokens-unified.css da module.json */
+
+/* 1b. Variables Fix - Ensure global availability */
+@import url('./brancalonia-variables-fix.css');
+
+/* 2. Core Theme Styles - Stili principali */
+@import url('./brancalonia-main.css');
+
+/* 3. Renaissance Decorations - Ornamenti SVG */
+@import url('./brancalonia-decorations.css');
+
+/* 4. D&D 5e Compatibility - Sistema specifico */
+/* DEPRECATO: @import url('./brancalonia-dnd5e-compat.css'); */
+/* Usare brancalonia-dnd5e-v5.css caricato direttamente da module.json */
+
+/* 5. Module Compatibility - Integrazioni */
+@import url('./brancalonia-module-compat.css');
+
+/* 6. Actor Sheet Styles - Schede personaggio */
+/* DEPRECATO: @import url('./brancalonia-actor-sheet-complete.css'); */
+/* Sostituito da brancalonia-dnd5e-v5.css (120 selettori obsoleti .dnd5e) */
+
+/* 7. Actor Sheet Layout Fix - Risolve problemi di impaginazione */
+/* DEPRECATO: @import url('./brancalonia-actor-sheet-layout-fix.css'); */
+/* Sostituito da brancalonia-dnd5e-v5.css (9 selettori obsoleti .dnd5e) */
+
+/* 8. Wilderness Encounters - Sistema incontri selvaggi */
+@import url('./wilderness-encounters.css');
+
+/* 9. Critical Fixes - Patch finali consolidati */
+@import url('./brancalonia-fixes-consolidated.css');
+
+/* FILE RIMOSSI (legacy/ridondanti):
+ * - brancalonia-fontawesome-local.css (integrato in fixes)
+ * - brancalonia-icons-fix.css (integrato in fixes)
+ * - brancalonia-theme-system-v2.css (48KB legacy!)
+ * - brancalonia-theme-variables.css (sostituito da tokens)
+ * - tokens.css (duplicato di brancalonia-tokens)
+ */
+
+/* ================================================
+   THEME ACTIVATION
+   Apply .theme-brancalonia class to body to enable
+   ================================================ */
+
+body.theme-brancalonia {
+  /* Theme is active - all styles are scoped under this class */
+  font-size: var(--bcl-font-size-md);
+
+  /* Ensure proper layering for pseudo-elements */
+  position: relative;
+
+  /* Smooth transitions for theme switching */
+  transition: background-color var(--bcl-transition-normal),
+              color var(--bcl-transition-normal);
+}
+
+/* ================================================
+   ROOT OVERRIDES
+   Only for critical system-wide changes
+   ================================================ */
+
+body.theme-brancalonia {
+  /* Override Foundry's default background */
+  background: var(--bcl-bg-primary);
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(201, 165, 74, 0.02) 10px,
+      rgba(201, 165, 74, 0.02) 20px
+    );
+  background-attachment: fixed;
+}
+
+/* ================================================
+   PERFORMANCE OPTIMIZATIONS
+   ================================================ */
+
+/* GPU acceleration - Applied conservatively */
+@layer module {
+  body.theme-brancalonia .window-app {
+    will-change: auto;
+  }
+
+  body.theme-brancalonia .window-app.minimized,
+  body.theme-brancalonia .window-app.maximized {
+    will-change: transform;
+  }
+}
+
+/* Optimize animations */
+body.theme-brancalonia * {
+  /* Disable animation on low-end devices */
+  animation-play-state: running;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.theme-brancalonia * {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+  }
+}
+
+/* ================================================
+   ACCESSIBILITY FEATURES
+   ================================================ */
+
+/* Focus visible for keyboard navigation */
+body.theme-brancalonia *:focus-visible {
+  outline: 3px solid var(--bcl-focus-color);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  body.theme-brancalonia {
+    --bcl-text-primary: #000000;
+    --bcl-surface-primary: #FFFFFF;
+    --bcl-border: #000000;
+    --bcl-focus-color: #0066CC;
+  }
+}
+
+/* ================================================
+   PRINT STYLES
+   ================================================ */
+
+@media print {
+  body.theme-brancalonia {
+    /* Remove decorative elements for printing */
+    background: white !important;
+    color: black !important;
+  }
+
+  body.theme-brancalonia .window-app::before,
+  body.theme-brancalonia .window-app::after,
+  body.theme-brancalonia .bcl-seal,
+  body.theme-brancalonia .bcl-ribbon,
+  body.theme-brancalonia .bcl-corner-tl::before,
+  body.theme-brancalonia .bcl-corner-tr::before,
+  body.theme-brancalonia .bcl-corner-bl::before,
+  body.theme-brancalonia .bcl-corner-br::before {
+    display: none !important;
+  }
+
+  body.theme-brancalonia * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+
+/* ================================================
+   DARK MODE SUPPORT
+   ================================================ */
+
+body.theme-brancalonia[data-theme="dark"],
+body.theme-brancalonia.dark-mode {
+  /* Dark mode is handled in tokens.css */
+  /* This ensures proper application */
+  background: var(--bcl-bg-primary);
+}
+
+/* ================================================
+   COMPATIBILITY FLAGS
+   ================================================ */
+
+/* Flag for modules to detect theme is active */
+body.theme-brancalonia {
+  --brancalonia-theme-active: 1;
+  --brancalonia-version: "8.3.7";
+  --brancalonia-compat-dnd5e: "5.1.9";
+  --brancalonia-compat-foundry: "12-13";
+}
+
+/* ================================================
+   DEBUG MODE (Development only)
+   ================================================ */
+
+body.theme-brancalonia[data-debug="true"] {
+  /* Show element boundaries for debugging */
+  * {
+    outline: 1px solid rgba(255, 0, 0, 0.1);
+  }
+
+  /* Highlight elements missing proper scope */
+  :not(.theme-brancalonia) > .dnd5e,
+  :not(.theme-brancalonia) > .sheet,
+  :not(.theme-brancalonia) > .window-app {
+    background: rgba(255, 0, 0, 0.1) !important;
+    outline: 2px solid red !important;
+  }
+
+  /* Show CSS variable values */
+  &::after {
+    content: "Theme: Brancalonia | Mode: Debug | Version: 8.3.7";
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: var(--bcl-surface-elevated);
+    color: var(--bcl-text-primary);
+    padding: var(--bcl-space-2);
+    font-family: var(--bcl-font-mono);
+    font-size: var(--bcl-font-size-xs);
+    border: 1px solid var(--bcl-gold);
+    border-radius: var(--bcl-radius-sm);
+    z-index: 999999;
+  }
+}

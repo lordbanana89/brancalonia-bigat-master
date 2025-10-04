@@ -1,0 +1,13 @@
+{
+  "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "class-stregone-livello_2-punti-stregoneria",
+      "nome": "Potere del Scaramante",
+      "file": "class-stregone-livello_2-punti-stregoneria.json"
+    }
+  ]
+}

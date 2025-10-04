@@ -1,0 +1,142 @@
+{
+  "id": "class-barbaro-livello_18-forza-indomabile",
+  "nome": "Forza Indomabile",
+  "nome_brancalonia": "Possanza Leggendaria",
+  "livello": 18,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 18° livello, se il totale di una prova di Forza è inferiore al tuo punteggio di Forza, puoi usare quel punteggio al posto del totale.",
+  "meccaniche": {
+    "funzionamento": {
+      "applicazione": "Prove di Forza (non attacchi o TS)",
+      "calcolo": "Se (d20 + modificatori) < punteggio Forza, usa punteggio",
+      "esempio": "Con Forza 20, minimo risultato = 20"
+    },
+    "cosa_copre": {
+      "si_applica": [
+        "Prove di Forza pure",
+        "Prove di Atletica",
+        "Prove per sfondare porte",
+        "Prove per spezzare catene",
+        "Prove di lotta (grapple)",
+        "Prove di spinta (shove)"
+      ],
+      "non_si_applica": [
+        "Tiri per colpire con Forza",
+        "Tiri salvezza su Forza",
+        "Tiri per danni",
+        "Iniziativa"
+      ]
+    },
+    "calcoli_pratici": {
+      "forza_20": {
+        "risultato_minimo": 20,
+        "successo_automatico": "CD 20 o meno",
+        "probabilita_cd_25": "30% (serve 5+ sul d20)"
+      },
+      "forza_24": {
+        "risultato_minimo": 24,
+        "successo_automatico": "CD 24 o meno",
+        "probabilita_cd_30": "35% (serve 6+ sul d20)"
+      }
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "passivo_automatico",
+    "macro": {
+      "trigger": "Dopo tiro di prova Forza",
+      "logica": "if (total < actor.system.abilities.str.value) { total = actor.system.abilities.str.value; }",
+      "messaggio": "Forza Indomabile: risultato minimo [valore]"
+    },
+    "flag": "flags.dnd5e.reliableTalent.str"
+  },
+  "confronto_abilità": {
+    "talento_affidabile_ladro": "Minimo 10 su prove con competenza",
+    "forza_indomabile": "Minimo = punteggio Forza (18-24)",
+    "differenza": "Molto più potente ma solo per Forza"
+  },
+  "applicazioni_pratiche": {
+    "atletica": {
+      "salto_lungo": "Sempre distanza massima",
+      "arrampicata": "Successo quasi garantito",
+      "nuoto": "Non fallisce in acque calme"
+    },
+    "combattimento": {
+      "lotta": "Quasi impossibile sfuggire alla presa",
+      "spinta": "Spinge quasi sempre con successo",
+      "disarmare": "Se il DM lo permette, molto efficace"
+    },
+    "esplorazione": {
+      "porte": "Sfonda porte normali automaticamente",
+      "ostacoli": "Rimuove macerie facilmente",
+      "trasporto": "Porta alleati/tesori pesanti"
+    }
+  },
+  "sinergie": {
+    "con_vantaggio_ira": "Ira dà vantaggio, questo dà minimo",
+    "con_atletica_esperto": "Con expertise, bonus enorme",
+    "con_campione_primordiale": "Forza 24 = minimo 24",
+    "con_oggetti_magici": "Cintura dei Giganti aumenta il minimo"
+  },
+  "esempi_eroici": {
+    "sfondare_porta": {
+      "cd": 20,
+      "con_forza_20": "Successo automatico",
+      "narrazione": "La porta esplode al primo colpo"
+    },
+    "trattenere_ponte": {
+      "situazione": "Tenere chiusa porta contro orda",
+      "prova_contestata": "Minimo 20+ contro loro tiri",
+      "esito": "Quasi impossibile essere sopraffatti"
+    },
+    "salvare_alleato": {
+      "situazione": "Alleato cade da dirupo",
+      "prova": "Atletica per afferrarlo",
+      "risultato": "Successo quasi garantito"
+    }
+  },
+  "ottimizzazione": {
+    "priorità": [
+      "Massimizzare Forza (20 base + 4 al 20°)",
+      "Expertise in Atletica se multiclasse",
+      "Oggetti che aumentano Forza"
+    ],
+    "build_grappler": {
+      "devastante": "Quasi imbattibile nelle lotte",
+      "combo": "Lotta + Spinta prona + attacchi"
+    }
+  },
+  "limitazioni": {
+    "importante": "NON si applica a tiri salvezza",
+    "bilanciamento": "Molti effetti richiedono TS non prove",
+    "contromisure_dm": "Effetti magici, TS Saggezza/Destrezza"
+  },
+  "narrazione_brancalonia": {
+    "descrizione": "Il Pagano ha forza sovrumana costante",
+    "esempi": [
+      "Piegare sbarre di prigione a mani nude",
+      "Sollevare carri per salvare bambini",
+      "Lanciare nemici come proiettili"
+    ],
+    "reputazione": "Diventa leggenda vivente di forza"
+  },
+  "note_dm": "Privilegio molto cinematografico. Permette momenti eroici garantiti. Ricorda che non si applica ai tiri salvezza per bilanciamento.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49",
+  "name": "Forza Indomabile",
+  "img": "icons/equipment/shield/buckler-wooden-boss-steel.webp",
+  "_id": "YzMjMXGsN5ZYxzSE",
+  "_key": "!item!class-barbaro-livello_18-forza-indomabile",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

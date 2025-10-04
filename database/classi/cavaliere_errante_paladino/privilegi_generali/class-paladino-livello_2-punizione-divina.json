@@ -1,0 +1,64 @@
+{
+  "id": "class-paladino-livello_2-punizione-divina",
+  "nome": "Punizione Divina",
+  "nome_brancalonia": "Colpo del Giusto",
+  "livello": 2,
+  "tipo": "attivo",
+  "descrizione": "A partire dal 2° livello, quando colpisci una creatura con un attacco con arma da mischia, puoi spendere uno slot incantesimo per infliggere danni radiosi al bersaglio, in aggiunta ai danni dell'arma. Il danno extra è 2d8 per uno slot incantesimo di 1° livello, più 1d8 per ogni livello dello slot superiore al 1°, fino a un massimo di 5d8. Il danno aumenta di 1d8 se il bersaglio è un non morto o un immondo.",
+  "meccaniche": {
+    "attivazione": {
+      "trigger": "Dopo aver colpito con attacco melee",
+      "costo": "1 slot incantesimo",
+      "tipo": "nessuna azione"
+    },
+    "danno_base": {
+      "slot_1": "2d8 radiosi",
+      "slot_2": "3d8 radiosi",
+      "slot_3": "4d8 radiosi",
+      "slot_4": "5d8 radiosi",
+      "slot_5": "5d8 radiosi (max)"
+    },
+    "bonus_vs_nemici": {
+      "non_morti": "+1d8",
+      "immondi": "+1d8",
+      "totale_max": "6d8 con slot 4°+"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "on_hit_effect",
+    "danno": "@item.level + 1)d8",
+    "tipo_danno": "radiant",
+    "condizione": "Consuma slot"
+  },
+  "calcoli_danno": {
+    "danno_medio": {
+      "slot_1": "9 (2d8)",
+      "slot_2": "13.5 (3d8)",
+      "slot_3": "18 (4d8)",
+      "slot_4": "22.5 (5d8)",
+      "vs_undead_4": "27 (6d8)"
+    },
+    "critico": "Dadi raddoppiati come weapon"
+  },
+  "confronto": {
+    "vs_sneak_attack": "Paladino usa risorse, ladro no",
+    "vs_spell": "Più danno di molti spell stesso livello",
+    "nova_potential": "Miglior burst damage del gioco"
+  },
+  "tattiche": {
+    "conservazione": "Salvare per critici o boss",
+    "nova": "Tutti slot in un combattimento",
+    "efficienza": "Slot bassi per minion, alti per boss"
+  },
+  "sinergie": {
+    "con_critico": "Smite raddoppia su crit",
+    "con_attacchi_extra": "Più chance di colpire",
+    "multiclasse_warlock": "Slot che tornano su short rest"
+  },
+  "limitazioni": {
+    "solo_melee": "No ranged smite RAW",
+    "slot_dipendente": "Finiti slot, finiti smite",
+    "max_5d8": "Cap al danno"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85"
+}

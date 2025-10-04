@@ -1,0 +1,48 @@
+{
+  "id": "019",
+  "nome": "Il Teschio del Santo Eretico",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Teschio umano con aureola dipinta",
+  "proprieta": "Protegge da possessione e controllo mentale in 3m",
+  "valore": "400 mo",
+  "storia": "Santo scomunicato per aver dubitato del Papa",
+  "controindicazione": "I chierici lo considerano blasfemo",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "flags.dnd5e.conditionImmunity",
+        "mode": 5,
+        "value": "charmed",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "aura_protection",
+      "auraRange": 10,
+      "protectionType": ["possession", "mind_control", "charmed"],
+      "socialPenalty": "clerics_hostile",
+      "description": "Protezione mentale 3m, chierici ostili"
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "showAuraRange": true,
+      "auraRangeText": "Aura protezione: 3m (10 piedi)",
+      "showWarning": true,
+      "warningText": "⚠️ I chierici lo considerano blasfemo!"
+    },
+    "narrative_reminders": [
+      "Aura di 3m (10 piedi) protegge da possessione e controllo mentale",
+      "Immunità a condizione Charmed per chi è nell'aura",
+      "I chierici e religiosi reagiscono con ostilità",
+      "Il santo era eretico ma le sue reliquie mantengono potere",
+      "Ottimo contro mind flayer, vampiri, succubi"
+    ]
+  },
+  "img": "icons/magic/death/skull-humanoid-crown-white.webp"
+}

@@ -1,0 +1,78 @@
+{
+  "_id": "SMU5eG7ObYvV1cIc",
+  "_key": "!item!lostendardostrappatob67a6e",
+  "name": "Lo Stendardo Strappato",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vessillo di battaglia lacerato e bruciato</p><h3>Proprietà</h3><p>Alleati entro 9m hanno vantaggio contro paura ma svantaggio a ritirarsi</p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 600,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "035",
+      "categoria": "cimelo",
+      "proprieta_originale": "Alleati entro 9m hanno vantaggio contro paura ma svantaggio a ritirarsi",
+      "implementazione": {
+        "tipo": "magico_minore",
+        "attivo": true,
+        "active_effects": []
+      }
+    }
+  }
+}

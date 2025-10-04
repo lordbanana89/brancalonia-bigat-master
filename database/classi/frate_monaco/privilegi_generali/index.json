@@ -1,0 +1,23 @@
+{
+  "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "class-monaco-livello_1-arti-marziali",
+      "nome": "Pugni del Frate",
+      "file": "class-monaco-livello_1-arti-marziali.json"
+    },
+    {
+      "id": "class-monaco-livello_1-difesa-senza-armatura",
+      "nome": "Vesti del Frate",
+      "file": "class-monaco-livello_1-difesa-senza-armatura.json"
+    },
+    {
+      "id": "class-monaco-livello_2-ki",
+      "nome": "Spirito del Frate",
+      "file": "class-monaco-livello_2-ki.json"
+    }
+  ]
+}

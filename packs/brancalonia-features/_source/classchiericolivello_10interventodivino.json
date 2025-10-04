@@ -1,0 +1,72 @@
+{
+  "_id": "mlvwRapncOObN6Pv",
+  "_key": "!item!classchiericolivello10interventodivinoa347f1",
+  "name": "Intervento Divino",
+  "type": "feat",
+  "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>A partire dal 10° livello, puoi invocare la tua divinità perché intervenga in tuo aiuto quando il bisogno è grande. Implorare l'aiuto della tua divinità richiede un'azione. Descrivi l'assistenza che cerchi, e tira un dado percentuale. Se tiri un numero pari o inferiore al tuo livello da chierico, la tua divinità interviene. Il DM sceglie la natura dell'intervento; l'effetto di qualsiasi incantesimo da chierico o incantesimo di dominio sarebbe appropriato. Se la tua divinità interviene, non puoi usare di nuovo questo privilegio per 7 giorni. Altrimenti, puoi usarlo di nuovo dopo aver completato un riposo lungo. Al 20° livello, la tua richiesta di intervento ha successo automaticamente, senza bisogno di tirare.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-chierico-livello_10-intervento-divino",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59"
+    }
+  }
+}

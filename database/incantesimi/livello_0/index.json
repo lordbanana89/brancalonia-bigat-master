@@ -1,0 +1,138 @@
+{
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 26,
+  "elementi": [
+    {
+      "id": "amicizia",
+      "nome": "Amicizia",
+      "file": "spell-amicizia.json"
+    },
+    {
+      "id": "artificio-druidico",
+      "nome": "Artificio Druidico",
+      "file": "spell-artificio-druidico.json"
+    },
+    {
+      "id": "beffa-crudele",
+      "nome": "Beffa Crudele",
+      "file": "spell-beffa-crudele.json"
+    },
+    {
+      "id": "colpo-accurato",
+      "nome": "Colpo Accurato",
+      "file": "spell-colpo-accurato.json"
+    },
+    {
+      "id": "colpo-shocking",
+      "nome": "Colpo Shocking",
+      "file": "spell-colpo-shocking.json"
+    },
+    {
+      "id": "dardo-di-fuoco",
+      "nome": "Dardo di Fuoco",
+      "file": "spell-dardo-di-fuoco.json"
+    },
+    {
+      "id": "deflagrazione-occulta",
+      "nome": "Deflagrazione Occulta",
+      "file": "spell-deflagrazione-occulta.json"
+    },
+    {
+      "id": "fiotto-acido",
+      "nome": "Fiotto Acido",
+      "file": "spell-fiotto-acido.json"
+    },
+    {
+      "id": "guida",
+      "nome": "Guida",
+      "file": "spell-guida.json"
+    },
+    {
+      "id": "illusione-minore",
+      "nome": "Illusione Minore",
+      "file": "spell-illusione-minore.json"
+    },
+    {
+      "id": "lama-arcana",
+      "nome": "Lama Arcana",
+      "file": "spell-lama-arcana.json"
+    },
+    {
+      "id": "luce",
+      "nome": "Luce",
+      "file": "spell-luce.json"
+    },
+    {
+      "id": "mano-magica",
+      "nome": "Mano Magica",
+      "file": "spell-mano-magica.json"
+    },
+    {
+      "id": "messaggio",
+      "nome": "Messaggio",
+      "file": "spell-messaggio.json"
+    },
+    {
+      "id": "prestidigitazione",
+      "nome": "Prestidigitazione",
+      "file": "spell-prestidigitazione.json"
+    },
+    {
+      "id": "produrre-fiamma",
+      "nome": "Produrre Fiamma",
+      "file": "spell-produrre-fiamma.json"
+    },
+    {
+      "id": "raggio-di-gelo",
+      "nome": "Raggio di Gelo",
+      "file": "spell-raggio-di-gelo.json"
+    },
+    {
+      "id": "randello-incantato",
+      "nome": "Randello Incantato",
+      "file": "spell-randello-incantato.json"
+    },
+    {
+      "id": "resistenza",
+      "nome": "Resistenza",
+      "file": "spell-resistenza.json"
+    },
+    {
+      "id": "riparare",
+      "nome": "Riparare",
+      "file": "spell-riparare.json"
+    },
+    {
+      "id": "sacra-fiamma",
+      "nome": "Sacra Fiamma",
+      "file": "spell-sacra-fiamma.json"
+    },
+    {
+      "id": "spruzzo-velenoso",
+      "nome": "Spruzzo Velenoso",
+      "file": "spell-spruzzo-velenoso.json"
+    },
+    {
+      "id": "taumaturgia",
+      "nome": "Taumaturgia",
+      "file": "spell-taumaturgia.json"
+    },
+    {
+      "id": "tocco-gelido",
+      "nome": "Tocco Gelido",
+      "file": "spell-tocco-gelido.json"
+    },
+    {
+      "id": "trucchetto-della-mano",
+      "nome": "Trucchetto della Mano",
+      "file": "spell-trucchetto-della-mano.json"
+    },
+    {
+      "id": "vita-falsata",
+      "nome": "Vita Falsata",
+      "file": "spell-vita-falsata.json"
+    }
+  ]
+}

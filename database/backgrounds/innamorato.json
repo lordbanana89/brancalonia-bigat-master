@@ -1,0 +1,153 @@
+{
+  "nome": "Innamorato",
+  "fonte": "Brancalonia Macaronicon p.38-39",
+  "tipo": "background",
+  "descrizione": "Cortigiano raffinato dell'Amor Cortese, addestrato a poesia, diplomazia e seduzione",
+  "testo": {
+    "introduzione": [
+      "Cresciuto tra corti, salotti e ricevimenti, l'innamorato padroneggia l'etichetta, la poesia e i giochi dell'amor cortese.",
+      "La sua vita è fatta di corteggiamenti, intrighi sentimentali e raffinate arti liberali studiate per conquistare favori e incarichi prestigiosi.",
+      "Dietro le moine si cela un carattere carismatico: può essere idealista, manipolatore o un cicisbeo annoiato in cerca di emozioni vere."
+    ],
+    "privilegio": {
+      "nome": "Cortesia",
+      "descrizione": "Grazie ai modi impeccabili ottiene ospitalità e piccoli favori nelle case dove la cortesia è apprezzata e annulla gli svantaggi sociali dovuti all'equipaggiamento scadente."
+    }
+  },
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Persuasione e Storia",
+      "implementazione": {
+        "persuasione": "system.skills.per.value = 1",
+        "storia": "system.skills.his.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Uno strumento musicale a scelta e scorte da calligrafo",
+      "implementazione": {
+        "strumento_musicale": "flags.brancalonia-bigat.toolChoice = 'musical'",
+        "scorte_calligrafo": "system.tools.calligraphers.value = 1"
+      },
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Draconiano",
+      "implementazione": "system.traits.languages.value.push('draconiano')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Strumento musicale scelto, raccolta di lettere d'amore, libro di poesie, calamaio e pennino, borsa con 15 ma"
+    },
+    "privilegio_cortesia": {
+      "tipo": "attivo",
+      "descrizione": "Ottiene vitto e alloggio presso chi apprezza la cortesia e ignora gli svantaggi sociali dovuti all'equipaggiamento scadente",
+      "implementazione": {
+        "ospitalita_cortesia": "flags.brancalonia-bigat.cortesiaOspitalita = true",
+        "no_svantaggio_equip": "flags.brancalonia-bigat.cortesiaNoSvantaggio = true"
+      },
+      "mode": 5
+    }
+  },
+  "dettagli": {
+    "identificatore": "innamorato",
+    "ricchezza_iniziale": "15 ma",
+    "equipaggiamento": [
+      "Strumento musicale a scelta",
+      "Raccolta di lettere d'amore",
+      "Libro di poesie",
+      "Calamaio di inchiostro nero",
+      "Pennino",
+      "Borsa con 15 ma"
+    ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "persuasione",
+        "storia"
+      ]
+    },
+    {
+      "tipo": "competenze_strumenti",
+      "elenco": [
+        "strumento_musicale",
+        "scorte_da_calligrafo"
+      ]
+    },
+    {
+      "tipo": "linguaggi",
+      "elenco": [
+        "draconiano"
+      ]
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "Cortesia",
+      "descrizione": "Ottiene ospitalità presso chi valore la cortesia e ignora gli svantaggi sociali dell'equipaggiamento scadente.",
+      "fonte": "Brancalonia Macaronicon p.39",
+      "implementazione": {
+        "ospitalita_cortesia": true,
+        "no_svantaggio_equip": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "Non si priva mai di nulla che cuore ed ego desiderino.",
+        "Sa far arrossire chiunque con modi e lusinghe.",
+        "Non conosce il concetto di lavorare o darsi da fare.",
+        "Ama la filosofia e disprezza le menti chiuse.",
+        "Mantiene un atteggiamento sempre positivo e sprezzante.",
+        "Saprebbe infilarsi nel letto di re o regine senza vantarsene.",
+        "È tormentato dalla propria incapacità di controllare le passioni.",
+        "Parla di sé in terza persona e si comporta da superiore."
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Fiducia. Vedo il mondo con fantasia e credo negli altri. (Buono)",
+        "Etichetta. Non comprometto mai l'immagine con volgarità. (Legale)",
+        "Plutonianticismo. È meglio amare e soffrire che non amare affatto. (Caotico)",
+        "Plagio. Uso emozioni altrui per il mio vantaggio. (Malvagio)",
+        "Filosofia. Ogni sentimento è giustificabile e filtro il mondo attraverso di esso. (Neutrale)",
+        "Autenticità. Cerco emozioni vere oltre le corti. (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "Voglio diventare un eroe per conquistare un cuore inaccessibile.",
+        "Un animale parlante mi ha introdotto tra la gioventù altolocata di Vortiga.",
+        "Porto le fedi nuziali dei miei genitori come simbolo dell'amore vero.",
+        "Ho un sigillo in ceralacca personalizzato e stravagante.",
+        "Ho un amante illustre e segreto che mi mantiene.",
+        "Ho fondato un circolo letterario di giovani poeti."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "Cerco di sedurre qualsiasi adulto consenziente.",
+        "Sono eccessivamente pieno di me stesso.",
+        "Sono un ritardatario cronico e inaffidabile.",
+        "Sono insensatamente competitivo, anche con gli amici.",
+        "Nascondo un segreto che mi marchierebbe come Infame.",
+        "Non so accettare un rifiuto."
+      ]
+    }
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "innamorato001",
+    "compendio": "backgrounds_macaronicon"
+  }
+}

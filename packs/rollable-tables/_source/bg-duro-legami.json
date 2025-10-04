@@ -1,0 +1,106 @@
+{
+  "_id": "6Te8PzC08Lpuqm2S",
+  "_key": "!tables!6Te8PzC08Lpuqm2S",
+  "name": "Duro - Legami",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "9Zq6HlnjZ76Oh6az",
+      "type": 0,
+      "text": "Morirei solo per chi combatte al mio fianco.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!9Zq6HlnjZ76Oh6az"
+    },
+    {
+      "_id": "6H8UsfKz7MQlo4J5",
+      "type": 0,
+      "text": "Ho una lista di chi mi ha fatto un torto e la recito ogni sera.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!6H8UsfKz7MQlo4J5"
+    },
+    {
+      "_id": "Q28d7FXt7qpOuSQB",
+      "type": 0,
+      "text": "L’unica persona che mi abbia amato: non la dimenticherò mai.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!Q28d7FXt7qpOuSQB"
+    },
+    {
+      "_id": "tiF3mCIUU31UZan7",
+      "type": 0,
+      "text": "Sono stato tradito molte volte, ma uno in particolare la pagherà.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!tiF3mCIUU31UZan7"
+    },
+    {
+      "_id": "1wHZ48dMGPc4DjBa",
+      "type": 0,
+      "text": "Porto con me una vecchia taglia di qualcuno che inseguo da anni.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!1wHZ48dMGPc4DjBa"
+    },
+    {
+      "_id": "SlWS3iklsIcAsQkR",
+      "type": 0,
+      "text": "Se il mio vecchio capitano mi chiamasse, rimetterei in piedi la banda in un attimo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!SlWS3iklsIcAsQkR"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "duro",
+      "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

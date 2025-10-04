@@ -1,0 +1,44 @@
+{
+  "id": "024",
+  "nome": "Il Bastone del Mendicante Re",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Bastone nodoso che sembra senza valore",
+  "proprieta": "Chi lo porta viene sempre sfamato da sconosciuti",
+  "valore": "10 mo (10000 mo se identificato)",
+  "storia": "Il Re visse come mendicante per conoscere il suo popolo",
+  "segreto": "È lo scettro reale mascherato",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "social_benefit",
+      "effectDescription": "NPCs sfamano automaticamente il portatore",
+      "identified": false,
+      "trueValue": 10000
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "showSecret": false,
+      "secretReveal": "Identificare magicamente rivela lo scettro reale",
+      "dmReminder": true,
+      "reminderText": "Strangers provide food automatically"
+    },
+    "narrative_reminders": [
+      "Il portatore viene SEMPRE sfamato da sconosciuti",
+      "Gli NPCs offrono cibo spontaneamente senza motivazione",
+      "Funziona anche in città ostili o con razze nemiche",
+      "Sembra un bastone da mendicante senza valore (10mo)",
+      "Identificare Magicamente rivela: è lo SCETTRO REALE mascherato",
+      "Valore reale se identificato: 10.000 mo",
+      "Il Re lo usò per vivere tra il suo popolo da mendicante",
+      "Può essere riconosciuto da nobili eruditi (Storia CD 20)",
+      "Plot hook: restituire lo scettro al regno?"
+    ]
+  },
+  "img": "icons/weapons/staves/staff-simple-spiral-green.webp"
+}

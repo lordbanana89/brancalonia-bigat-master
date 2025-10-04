@@ -1,0 +1,106 @@
+{
+  "_id": "oNkYUcmF0kFMq39e",
+  "_key": "!tables!oNkYUcmF0kFMq39e",
+  "name": "Ambulante - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "gkeciovycAdY1Olc",
+      "type": 0,
+      "text": "Fratellanza (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!gkeciovycAdY1Olc"
+    },
+    {
+      "_id": "G1DKS0aWSdSs1zMC",
+      "type": 0,
+      "text": "Rispetto (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!G1DKS0aWSdSs1zMC"
+    },
+    {
+      "_id": "9KzWHsJ2tcygCFZW",
+      "type": 0,
+      "text": "Buon senso (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!9KzWHsJ2tcygCFZW"
+    },
+    {
+      "_id": "To56Bqsqgvxehp4V",
+      "type": 0,
+      "text": "Interesse personale (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!To56Bqsqgvxehp4V"
+    },
+    {
+      "_id": "zUZKYVRdPiXRrErk",
+      "type": 0,
+      "text": "Legge della strada (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!zUZKYVRdPiXRrErk"
+    },
+    {
+      "_id": "Al7qg31J2AZWan3i",
+      "type": 0,
+      "text": "Viaggio (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!Al7qg31J2AZWan3i"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "ambulante",
+      "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

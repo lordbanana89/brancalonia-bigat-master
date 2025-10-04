@@ -1,0 +1,11 @@
+{
+  "id": "guiscardo_mago-livello_2-esperto_oggetti_magici",
+  "livello": 2,
+  "nome": "Esperto di Oggetti Magici",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.24",
+  "descrizione": "Hai passato ore a smontare reliquie, aprire bacchette incrinate e decifrare pergamene fatiscenti. Quando un oggetto magico è coinvolto, le tue dita agiscono il doppio più rapide.",
+  "benefici": {
+    "competenza_raddoppiata": "Raddoppi il bonus di competenza alle prove di caratteristica che coinvolgono oggetti o congegni magici"
+  }
+}

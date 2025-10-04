@@ -1,0 +1,47 @@
+{
+  "id": "027",
+  "nome": "L'Elmetto del Soldato Sconosciuto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Elmetto ammaccato senza insegne",
+  "proprieta": "Chi lo indossa viene dimenticato appena esce dalla vista",
+  "valore": "600 mo",
+  "storia": "Il soldato salvò il Regno ma nessuno lo ricorda",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.skills.ste.bonuses.check",
+        "mode": 2,
+        "value": "2",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "memory_effect",
+      "effectDescription": "Dimenticato quando fuori dalla vista",
+      "stealthAdvantage": true,
+      "socialPenalty": "forgotten_immediately"
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "showEffect": true,
+      "effectText": "🌫️ Sei dimenticato appena fuori dalla vista",
+      "showBenefit": true,
+      "benefitText": "Vantaggio Furtività e infiltrazione"
+    },
+    "narrative_reminders": [
+      "Appena il portatore esce dalla linea di vista, viene dimenticato",
+      "NPCs non ricordano di aver mai visto il portatore",
+      "Ottimo per infiltrazione e spionaggio",
+      "Terribile per costruire reputazione o relazioni",
+      "Gli alleati stretti possono ricordare con sforzo",
+      "Il soldato salvò il Regno ma nessuno sa chi fosse"
+    ]
+  },
+  "img": "icons/equipment/head/helm-barbute-steel.webp"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gear-011",
+  "nome": "Martello",
+  "categoria": "provvista_avventuriera",
+  "costo": "1 mo",
+  "peso": "1.5 kg",
+  "descrizione": "Strumento base per piantare chiodi o spaccare superfici.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "rischi-mestiere-tabella",
+  "titolo": "Tabella dei Rischi del Mestiere",
+  "dado": "1d100",
+  "voci": [
+    { "intervallo": "1-15", "descrizione": "Non succede nulla." },
+    { "intervallo": "16-20", "descrizione": "La cricca viene ricattata da un Infame che minaccia di venderla ai birri." },
+    { "intervallo": "21-25", "descrizione": "La cricca incontra un birro che riconosce visibilmente i suoi membri." },
+    { "intervallo": "26-30", "descrizione": "Un agente di Equitaglia da la caccia alla cricca." },
+    { "intervallo": "31-35", "descrizione": "Un individuo in cerca di vendetta vuole mettere i bastoni tra le ruote alla cricca." },
+    { "intervallo": "36-40", "descrizione": "La cricca incontra un gruppo di 1d4 birri che riconoscono visibilmente i suoi membri." },
+    { "intervallo": "41-45", "descrizione": "Persone comuni riconoscono la cricca e fanno una soffiata ai birri." },
+    { "intervallo": "46-50", "descrizione": "La cricca incontra una pattuglia di 2d4 birri e un capobirro sulle tracce di malviventi." },
+    { "intervallo": "51-55", "descrizione": "Un mercante chiede aiuto alla cricca per un affare chiaramente illegale." },
+    { "intervallo": "56-60", "descrizione": "Un cavaliere e convinto che il male si annidi nella cricca e inizia a darle la caccia." },
+    { "intervallo": "61-64", "descrizione": "Un Infame cerca di intascare le taglie della banda e indica il covo ai birri." },
+    { "intervallo": "65-68", "descrizione": "Un Infame si intrufola nel covo e tenta di rubarne il bottino." },
+    { "intervallo": "69-71", "descrizione": "Tre cacciatori di Equitaglia si mettono sulle tracce dell'intera banda per consegnarla ai birri." },
+    { "intervallo": "72-74", "descrizione": "Un membro della banda diventa Infame e decide di tradirla." },
+    { "intervallo": "75-77", "descrizione": "I Turchini ritengono che la banda sia troppo efferata e fanno crescere orecchie d'asino ai membri." },
+    { "intervallo": "78-80", "descrizione": "Una befana ha soggiogato il capobanda con un incantesimo e ora lui obbedisce ai suoi voleri." },
+    { "intervallo": "81-83", "descrizione": "Un pezzo grosso ricatta il capobanda e lo costringe a usare la banda per i propri lavoretti." },
+    { "intervallo": "84-86", "descrizione": "Un'altra banda ha ricevuto lo stesso incarico della cricca e ora due galli condividono il pollaio." },
+    { "intervallo": "87-89", "descrizione": "Un pezzo grosso ricatta il capobanda e lo costringe a consegnare agli arresti i suoi scagnozzi." },
+    { "intervallo": "90-92", "descrizione": "Una banda rivale desidera impossessarsi del covo della cricca." },
+    { "intervallo": "93-95", "descrizione": "Un confinato perseguita la banda per una malefatta passata." },
+    { "intervallo": "96-98", "descrizione": "Un malacoda, incuriosito dalla gravita delle malefatte, visita il covo per raccogliere qualche anima." },
+    { "intervallo": "99+", "descrizione": "Editto: un pezzo grosso decreta la banda flagello della regione e ordina di assalire covo e membri a vista." }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "50"
+  }
+}

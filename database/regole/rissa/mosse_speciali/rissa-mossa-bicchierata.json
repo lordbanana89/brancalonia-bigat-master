@@ -1,0 +1,9 @@
+{
+  "id": "rissa-mossa-bicchierata",
+  "nome": "Bicchierata",
+  "requisiti": "Nessuno",
+  "costo": "1 slot",
+  "effetto": "Lanci un bicchiere pieno. Attacco a distanza 6/18m, 1d4 Batoste + accecato 1 turno",
+  "munizioni": "Richiede bicchiere con liquido",
+  "fonte": "Brancalonia Manuale Base"
+}

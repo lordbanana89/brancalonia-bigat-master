@@ -1,0 +1,19 @@
+{
+  "id": "spell-base-017",
+  "nome": "Sonno",
+  "nome_originale": "Sleep",
+  "livello": 1,
+  "scuola": "Ammaliamento",
+  "classi": [
+    "Bardo",
+    "Stregone",
+    "Mago"
+  ],
+  "compendio_fonte": {
+    "pack": "dnd5e.spells",
+    "entry_name": "Sleep",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Sleep).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale."
+}

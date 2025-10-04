@@ -1,0 +1,298 @@
+body.brancalonia-bigat {
+  --max-players-width: 230px;
+  --crlngn-avatar-size: calc(var(--control-item-size) - 10px); 
+
+  .dnd5e2#bastion-turn {
+    width: var(--max-players-width);
+    background-color: var(--control-bg-color);
+    color: var(--control-icon-color);
+    margin: 0;
+  }
+
+  &.crlngn-players-minimized {
+    .dnd5e2#bastion-turn {
+      width: var(--control-item-size);
+
+      span {
+        max-width: 0;
+        overflow: hidden;
+      }
+
+      &:hover {
+        width: var(--max-players-width);
+        overflow: auto;
+
+        span {
+          max-width: initial;
+          overflow: initial;
+        }
+      }
+    }
+  }
+
+  #players:not(.brancalonia-bigat){
+    margin-left: 16px;
+    padding-bottom: calc(var(--crlngn-margin-bottom, 0px) + 16px);
+  }
+
+  #players.brancalonia-bigat, #players.brancalonia-bigat.minimized {
+    > div, .players-list button, .players-list > div {
+      display: flex;
+      justify-content: flex-start;
+      color: inherit;
+
+      i {
+        display: inline-block;
+        margin: 0 3px 0 0;
+        min-width: calc(var(--control-item-size) - 10px);
+        text-align: center;
+      }
+    }
+    > button { 
+      background-color: var(--button-background-color);
+      margin: 4px 0;
+    }
+    > button:hover {
+      background-color: var(--color-highlights);
+      color: var(--color-light-1);
+      font-weight: 500;
+      transition: none;
+    }
+  }
+
+  #players.brancalonia-bigat.minimized {
+    > div, .players-list button, .players-list > div {
+      overflow: hidden;
+      text-overflow: clip;
+      display: flex;
+      justify-content: flex-start;
+      white-space: nowrap;
+      border: 0;
+      padding: 0;
+      color: var(--default-color);
+      margin: 0.15em 0;
+    }
+  }
+
+  #players.brancalonia-bigat.minimized:hover {
+    .players-list button, .players-list div {
+      display: flex;
+      align-items: center;
+      overflow: auto;
+      justify-content: center;
+      white-space:initial;
+      background: var(--button-background-color);
+
+      &:hover {
+        background-color: var(--color-highlights);
+        color: var(--color-light-1);
+      }
+    }
+  }
+
+  #players.brancalonia-bigat {
+    gap: 0;
+    margin-left: 0;
+    padding-bottom: var(--crlngn-margin-bottom, 0px);
+    /*margin-bottom: var(--crlngn-margin-bottom, 0px);*/
+
+    #players-active .players-list {
+      padding-bottom: 0;
+      margin-bottom: 4px;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    #performance-stats {
+      padding: 6px 12px 10px 4px;
+    }
+
+    #performance-stats button:focus,
+    #performance-stats button:hover,
+    #performance-stats button:active {
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+    }
+
+    #players-active, #players-inactive {
+      width: var(--max-players-width);
+      padding: 10px;
+      border-radius: 0;
+      border-top-right-radius: var(--crlngn-border-radius);
+      gap: 0;
+
+      .player::before {
+        --color-margin: calc((var(--crlngn-avatar-size) - 10px) / 2);
+        height: 0.6rem;
+        background: var(--player-color, rgba(255,255,255,0.5));
+        border: 1px solid rgba(255,255,255,0.25);
+        border-radius: 2px;
+        margin: 0 var(--color-margin);
+      }
+    }
+
+    #performance-stats {
+      font-family: var(--crlngn-font-family);
+    }
+    
+    #players-active{
+      transition: border-top-right-radius 0.1s ease-out 0.5s;
+      
+    }
+    #players-inactive{
+      border-bottom: 1px solid var(--color-dark-bg-75);
+      background: var(--color-secondary-90);
+    }
+
+    &.expanded {
+      #players-active{
+        border-radius: 0;
+        border-top-right-radius: 0;
+        transition: border-top-right-radius 0.1s ease-out 0s;
+      }
+    }
+
+    &.minimized {
+      pointer-events: all;
+      #players-active, #players-inactive {
+        width: var(--control-item-size);
+        max-width: var(--control-item-size);
+        padding: 6px;
+        overflow: hidden;
+      }
+
+      &:hover{
+        #players-active, #players-inactive {
+          width: var(--max-players-width, 200px);
+          max-width: var(--max-players-width, 200px);
+        }
+      }
+      
+
+      li {
+        flex-wrap: nowrap;
+        flex: 0 0 auto;
+        width: auto;
+        overflow: hidden;
+      }
+
+      .player:before{
+        flex: 0 0 .6rem;
+        margin-right: 0;
+      }
+      
+      #performance-stats{
+        padding: 6px 0 10px 0;
+        #latency, #fps {
+          display: none;
+        }
+
+        button#players-expand{
+          min-width: 28px;
+          padding: 0 10px;
+        }
+      }
+
+      #players-active:hover  #performance-stats{
+        padding: 6px 12px 10px 4px;
+        #latency, #fps {
+          display: block;
+        }
+        #players-expand {
+          width: var(--crlngn-avatar-size);
+          flex: 0 0 var(--crlngn-avatar-size);
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+
+      #players-active, #players-inactive {
+        .player{
+          > span {
+            margin-left: 5px;
+          }
+          &:before {
+            --color-margin: calc((var(--crlngn-avatar-size) - 10px) / 2);
+            margin: 0 var(--color-margin);
+          }
+        }
+      }
+      
+    }
+
+    #players-inactive{
+      padding: 0px 6px;
+    }
+    &.expanded #players-inactive{
+      padding: 6px;
+    }
+    
+    #players-active {
+      padding: 6px;
+    }
+
+    &.crlngn-avatars{
+
+      li:last-child{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+        border-spacing: 5px;
+      }
+
+      li {
+
+        > img.crlngn-avatar {
+          width: var(--crlngn-avatar-size);
+          height: var(--crlngn-avatar-size);
+          object-fit: cover;
+          overflow: hidden;
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          border-bottom: 3px solid var(--player-color);
+          border-radius: 4px;
+          background-color: rgba(255,255,255,0.15);
+          flex: 0 0 var(--crlngn-avatar-size);
+          padding: 0;
+          margin-right: 4px;
+          margin-bottom: -1px;
+          z-index: 1;
+        }
+  
+        &:before {
+          display: none;
+        }
+      }
+
+      #players-inactive img.crlngn-avatar{
+        filter: saturate(0.2);
+      }
+
+      &.minimized {
+        #players-active, #players-inactive{
+          padding: 8px 4px 0 4px;
+          margin: 0;
+        }
+
+        /* Rest Recovery 5e */
+        .rest-recovery-prompt-rest-button {
+          background: transparent;
+          min-width: 180px;
+          width: 100%;
+          &:hover{
+            background: var(--color-dark-bg-25);
+          }
+        }
+      }
+    }
+
+    &.crlngn-avatars.minimized {
+      #players-inactive {
+        padding: 0px;
+        /*max-height: 0px;*/
+      }
+    }
+
+  }
+  
+}

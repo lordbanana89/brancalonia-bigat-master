@@ -1,0 +1,68 @@
+{
+  "id": "class-bardo-livello_1-ispirazione-bardica",
+  "nome": "Ispirazione Bardica",
+  "nome_brancalonia": "Parole di Incoraggiamento",
+  "livello": 1,
+  "tipo": "attivo",
+  "descrizione": "Puoi ispirare gli altri attraverso parole o musica. Per farlo, usi un'azione bonus nel tuo turno per scegliere una creatura diversa da te entro 60 piedi che possa sentirti. Quella creatura guadagna un dado di Ispirazione Bardica.",
+  "meccaniche": {
+    "azione": "Bonus action",
+    "range": "60 ft",
+    "dado": {
+      "livello_1": "d6",
+      "livello_5": "d8",
+      "livello_10": "d10",
+      "livello_15": "d12"
+    },
+    "usi": "CHA mod (recupero riposo lungo, short al 5°)",
+    "durata": "10 minuti"
+  },
+  "implementazione_foundry": {
+    "tipo": "bardic_inspiration",
+    "risorsa": "@abilities.cha.mod",
+    "dado_scala": true
+  },
+  "utilizzi_dado": {
+    "ability_check": "Aggiungi a check",
+    "attack_roll": "Aggiungi per colpire",
+    "saving_throw": "Aggiungi a save"
+  },
+  "evoluzione": {
+    "livello_5": "Recupero short rest (Font of Inspiration)",
+    "livello_10": "d10 + Magical Secrets",
+    "livello_14": "d12 + college features"
+  },
+  "college_modifiche": {
+    "lore": "Cutting Words (sottrai da nemici)",
+    "valor": "Combat Inspiration (AC o damage)",
+    "glamour": "Mantle of Inspiration (temp HP + movimento)",
+    "swords": "Blade Flourish options",
+    "eloquence": "Minimo = 10 su Persuasion/Deception"
+  },
+  "gestione_risorse": {
+    "livello_1-4": "Conserva per save critici",
+    "livello_5+": "Usa liberalmente (short rest)",
+    "priorità": "Save > Attack > Ability"
+  },
+  "calcoli_impatto": {
+    "media_bonus": {
+      "d6": "+3.5 medio",
+      "d8": "+4.5 medio",
+      "d10": "+5.5 medio",
+      "d12": "+6.5 medio"
+    },
+    "success_rate": "Trasforma ~20% fallimenti in successi"
+  },
+  "tattiche": {
+    "pre_roll": "Alcuni college permettono post-roll",
+    "distribuzione": "Spread party o focus key player",
+    "timing": "Inizio combat per durata massima"
+  },
+  "narrazione_brancalonia": {
+    "musica": "Melodie che danno coraggio",
+    "parole": "Discorsi ispiranti",
+    "presenza": "Carisma che motiva"
+  },
+  "note_dm": "Bardic Inspiration è il cuore del bardo. Supporto flessibile che scala bene. Short rest recovery al 5° è game changer.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.53"
+}

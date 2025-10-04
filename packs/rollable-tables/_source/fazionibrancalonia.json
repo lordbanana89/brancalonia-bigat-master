@@ -1,0 +1,169 @@
+{
+  "_id": "85bHgq6P3P4eRSHH",
+  "name": "Fazioni del Regno",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella ufficiale di Brancalonia: Fazioni del Regno",
+  "results": [
+    {
+      "_id": "fazioni-brancalonia_0",
+      "type": 0,
+      "text": "Chiesa Calendaria - Clero corrotto ma potente",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_0"
+    },
+    {
+      "_id": "fazioni-brancalonia_1",
+      "type": 0,
+      "text": "Ordine Draconiano - Cavalieri cacciatori di mostri",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_1"
+    },
+    {
+      "_id": "fazioni-brancalonia_2",
+      "type": 0,
+      "text": "Benandanti - Combattenti spirituali segreti",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_2"
+    },
+    {
+      "_id": "fazioni-brancalonia_3",
+      "type": 0,
+      "text": "Mano Nera - Organizzazione criminale suprema",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_3"
+    },
+    {
+      "_id": "fazioni-brancalonia_4",
+      "type": 0,
+      "text": "Gilda dei Mercanti - Controllano il commercio",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_4"
+    },
+    {
+      "_id": "fazioni-brancalonia_5",
+      "type": 0,
+      "text": "Guardie Cittadine - Forze dell'ordine corruttibili",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_5"
+    },
+    {
+      "_id": "fazioni-brancalonia_6",
+      "type": 0,
+      "text": "Confraternita dei Ladri - Unione dei tagliaborse",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_6"
+    },
+    {
+      "_id": "fazioni-brancalonia_7",
+      "type": 0,
+      "text": "Nobiltà Locale - Signorotti arroganti",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_7"
+    },
+    {
+      "_id": "fazioni-brancalonia_8",
+      "type": 0,
+      "text": "Popolino - Masse oppresse ma numerose",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_8"
+    },
+    {
+      "_id": "fazioni-brancalonia_9",
+      "type": 0,
+      "text": "Briganti della Foresta - Fuorilegge organizzati",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_9"
+    },
+    {
+      "_id": "fazioni-brancalonia_10",
+      "type": 0,
+      "text": "Streghe e Fattucchiere - Praticanti di magia proibita",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_10"
+    },
+    {
+      "_id": "fazioni-brancalonia_11",
+      "type": 0,
+      "text": "Compagnia Mercenaria - Soldati di ventura",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!fazioni-brancalonia_11"
+    }
+  ],
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 1300,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!fazionibrancalonia",
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

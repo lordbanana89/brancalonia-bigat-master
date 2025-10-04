@@ -1,0 +1,81 @@
+{
+  "id": "spell-base-019",
+  "nome": "Crescita di Spine",
+  "nome_originale": "Spike Growth",
+  "livello": 2,
+  "scuola": "Trasmutazione",
+  "classi": [
+    "Druido",
+    "Ranger"
+  ],
+  "compendio_fonte": {
+    "entry_name": "Spike Growth",
+    "entry_id": null
+  },
+  "descrizione": "Utilizzare la descrizione originale del compendio dnd5e (Spike Growth).",
+  "note": "Entry locale per mappare il nome italiano all'incantesimo del compendio ufficiale.",
+  "name": "Spell Base 019 Crescita Di Spine",
+  "img": "icons/magic/symbols/star-pointed-purple.webp",
+  "_id": "DGJp19QSoN91orTY",
+  "_key": "!item!spell-base-019_crescita_di_spine",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "folder": null,
+  "type": "spell",
+  "system": {
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "consumed": false,
+      "cost": 0,
+      "supply": 0,
+      "value": ""
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "units": "inst",
+      "value": ""
+    },
+    "range": {
+      "units": "ft",
+      "value": null,
+      "long": null
+    },
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {},
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "components": {
+      "vocal": false,
+      "somatic": false,
+      "material": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "source": "Brancalonia"
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

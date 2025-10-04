@@ -1,0 +1,23 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "scaramante_stregone-livello_1-magia_protezione",
+      "nome": "Magia di Protezione",
+      "file": "scaramante_stregone-livello_1-magia_protezione.json"
+    },
+    {
+      "id": "scaramante_stregone-livello_1-protetto_dal_fato",
+      "nome": "Protetto Dal Fato",
+      "file": "scaramante_stregone-livello_1-protetto_dal_fato.json"
+    },
+    {
+      "id": "scaramante_stregone-livello_6-rituale_scaramantico",
+      "nome": "Rituale Scaramantico",
+      "file": "scaramante_stregone-livello_6-rituale_scaramantico.json"
+    }
+  ]
+}

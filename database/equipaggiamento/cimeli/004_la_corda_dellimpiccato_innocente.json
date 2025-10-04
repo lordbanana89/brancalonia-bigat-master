@@ -1,0 +1,41 @@
+{
+  "id": "004",
+  "nome": "La Corda dell'Impiccato Innocente",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Pezzo di corda con nodo scorsoio",
+  "proprieta": "Impossibile da spezzare con la forza (richiede taglio)",
+  "effetto_speciale": "Chi la tocca sente il collo stringersi per un momento",
+  "valore": "100 mo",
+  "storia": "Usata per impiccare un innocente che maledisse i suoi carnefici",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "narrative_only",
+      "properties": {
+        "indestructible": true,
+        "requiresCutting": true,
+        "touchEffect": "sensazione_soffocamento"
+      }
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "showReminder": true,
+      "reminderText": "Non spezzabile, toccarla causa soffocamento momentaneo"
+    },
+    "narrative_reminders": [
+      "La corda NON può essere spezzata con la forza bruta",
+      "Può essere tagliata con armi affilate o fuoco",
+      "Chi la tocca sente il collo stringersi per un momento",
+      "L'innocente impiccato maledisse i suoi carnefici",
+      "Utile come corda indistruttibile per utility",
+      "Può causare disagio emotivo quando usata"
+    ]
+  },
+  "img": "icons/tools/fasteners/rope-noose-brown.webp"
+}

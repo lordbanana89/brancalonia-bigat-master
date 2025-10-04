@@ -1,0 +1,16 @@
+{
+  "id": "gear-cloth-001",
+  "nome": "Abito Comune",
+  "categoria": "oggetto_comune",
+  "sottotipo": "abbigliamento",
+  "costo": "5 ma",
+  "peso": "1.5 kg",
+  "descrizione": "Tunica, pantaloni e mantello di lana grezza adatti alla gente del popolo.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

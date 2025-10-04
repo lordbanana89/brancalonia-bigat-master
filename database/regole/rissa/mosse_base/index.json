@@ -1,0 +1,28 @@
+{
+  "categoria": "Regole",
+  "descrizione": "Contenuti della categoria Regole",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "rissa-mossa-base-pugno",
+      "nome": "Pugnocalcio",
+      "file": "rissa-mossa-base-pugno.json"
+    },
+    {
+      "id": "rissa-mossa-base-testata",
+      "nome": "Testata",
+      "file": "rissa-mossa-base-testata.json"
+    },
+    {
+      "id": "rissa-mossa-base-oggetto-improvvisato",
+      "nome": "Colpo Con Oggetto",
+      "file": "rissa-mossa-base-oggetto-improvvisato.json"
+    },
+    {
+      "id": "rissa-mossa-base-spinta",
+      "nome": "Spinta",
+      "file": "rissa-mossa-base-spinta.json"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "_id": "992018da5d8fce8d",
+  "_key": "!item!992018da5d8fce8d",
+  "name": "Forma Selvatica",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Forma Selvatica (2° livello)</strong></p><p>A partire dal 2° livello, puoi usare la tua azione per assumere magicamente la forma di una bestia che hai già visto. Puoi usare questa feature due volte. Recuperi gli usi spesi quando completi un riposo breve o lungo.</p><p>Puoi rimanere in forma bestiale per un numero di ore pari alla metà del tuo livello da druido (arrotondato per difetto). Poi ritorni alla tua forma normale a meno che non spenda un altro uso. Puoi tornare prima usando un'azione bonus. Se cadi privo di sensi, scendi a 0 punti ferita o muori, torni automaticamente alla forma normale.</p><p>Le restrizioni su quali bestie puoi assumere si basano sul tuo livello.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.66",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "Druido Livello 2",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "druido",
+      "livello": 2
+    }
+  }
+}

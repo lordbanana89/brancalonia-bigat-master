@@ -1,0 +1,21 @@
+{
+  "id": "mattatore_ranger-livello_3-occhio_mattatore",
+  "livello": 3,
+  "nome": "Occhio del Mattatore",
+  "tipo": "attivo",
+  "fonte": "Manuale Base p.27",
+  "descrizione": "Indichi la preda al pubblico e tutti trattengono il respiro. Con un gesto delimiti il bersaglio e lo studi finché non crolla.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione_bonus",
+      "bersaglio": "Una creatura visibile entro 18 metri",
+      "durata": "1 minuto",
+      "ricarica": "Riposo breve o lungo"
+    },
+    "effetti": [
+      "Aggiungi il tuo bonus di competenza ai danni inflitti al bersaglio",
+      "I tuoi attacchi contro il bersaglio mettono a segno un colpo critico con un tiro di 19-20",
+      "Aggiungi il tuo modificatore di Saggezza alla CA contro gli attacchi del bersaglio"
+    ]
+  }
+}

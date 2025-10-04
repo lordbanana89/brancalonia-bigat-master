@@ -1,0 +1,23 @@
+{
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "variante-bracaloniani",
+      "nome": "Variante Bracaloniani",
+      "file": "variante-bracaloniani.json"
+    },
+    {
+      "id": "variante-levantini",
+      "nome": "Variante Levantini",
+      "file": "variante-levantini.json"
+    },
+    {
+      "id": "variante-svanzici",
+      "nome": "Variante Svanzici",
+      "file": "variante-svanzici.json"
+    }
+  ]
+}

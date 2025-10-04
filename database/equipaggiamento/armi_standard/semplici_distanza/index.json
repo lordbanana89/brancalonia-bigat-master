@@ -1,0 +1,26 @@
+{
+  "categoria": "Armi Semplici A Distanza",
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "arma-std-011",
+      "nome": "Balestra Leggera",
+      "file": "arma-std-011_balestra_leggera.json"
+    },
+    {
+      "id": "arma-std-012",
+      "nome": "Dardo",
+      "file": "arma-std-012_dardo.json"
+    },
+    {
+      "id": "arma-std-013",
+      "nome": "Arco Corto",
+      "file": "arma-std-013_arco_corto.json"
+    },
+    {
+      "id": "arma-std-014",
+      "nome": "Fionda",
+      "file": "arma-std-014_fionda.json"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "class-chierico-livello_1-dominio-divino",
+  "nome": "Dominio Divino",
+  "nome_brancalonia": "Via del Miracolaro",
+  "livello": 1,
+  "tipo": "sottoclasse",
+  "descrizione": "Scegli un dominio relativo alla tua divinità. Il tuo dominio ti garantisce incantesimi di dominio e altri privilegi al 1° livello. Ti garantisce anche modi aggiuntivi per usare Incanalare Divinità quando ottieni quel privilegio al 2° livello, e benefici aggiuntivi al 6°, 8° e 17° livello.",
+  "meccaniche": {
+    "scelta": "Permanente al 1° livello",
+    "benefici": {
+      "livello_1": [
+        "Incantesimi dominio",
+        "Privilegio dominio"
+      ],
+      "livello_2": [
+        "Incanalare Divinità opzione"
+      ],
+      "livello_6": [
+        "Privilegio dominio"
+      ],
+      "livello_8": [
+        "Privilegio dominio potente"
+      ],
+      "livello_17": [
+        "Capstone dominio"
+      ]
+    }
+  },
+  "domini_brancalonia": {
+    "vita": {
+      "nome": "Dominio della Vita",
+      "nome_brancalonia": "Via della Guarigione",
+      "divinita": "Santi guaritori",
+      "bonus": "Armature pesanti, guarigione potenziata",
+      "incantesimi_1": [
+        "Bless",
+        "Cure Wounds"
+      ],
+      "tema": "Guarigione e protezione"
+    },
+    "luce": {
+      "nome": "Dominio della Luce",
+      "nome_brancalonia": "Via del Sole",
+      "divinita": "San Michele",
+      "bonus": "Trucchetto Light, Warding Flare",
+      "incantesimi_1": [
+        "Burning Hands",
+        "Faerie Fire"
+      ],
+      "tema": "Danno radioso e protezione"
+    },
+    "tempesta": {
+      "nome": "Dominio della Tempesta",
+      "nome_brancalonia": "Via del Tuono",
+      "divinita": "Santi del mare",
+      "bonus": "Armature pesanti, Wrath of Storm",
+      "incantesimi_1": [
+        "Fog Cloud",
+        "Thunderwave"
+      ],
+      "tema": "Controllo elementi"
+    },
+    "inganno": {
+      "nome": "Dominio dell'Inganno",
+      "nome_brancalonia": "Via della Maschera",
+      "divinita": "Santi ladri",
+      "bonus": "Blessing of Trickster",
+      "incantesimi_1": [
+        "Charm Person",
+        "Disguise Self"
+      ],
+      "tema": "Illusione e sotterfugio"
+    },
+    "guerra": {
+      "nome": "Dominio della Guerra",
+      "nome_brancalonia": "Via della Spada",
+      "divinita": "San Giorgio",
+      "bonus": "Armature pesanti, War Priest",
+      "incantesimi_1": [
+        "Divine Favor",
+        "Shield of Faith"
+      ],
+      "tema": "Combattimento divino"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "subclass_choice",
+    "effetti": {
+      "incantesimi_sempre_preparati": true,
+      "privilegi_bonus": "Varia per dominio",
+      "channel_divinity": "Opzioni extra al 2°"
+    }
+  },
+  "impatto_build": {
+    "vita": "Miglior guaritore del gioco",
+    "luce": "Blaster con protezioni",
+    "tempesta": "Controllo battlefield e danno",
+    "inganno": "Versatilità sociale",
+    "guerra": "Chierico combattente"
+  },
+  "sinergie": {
+    "multiclasse": {
+      "vita_druido": "Guarigione estrema",
+      "guerra_guerriero": "Tank divino",
+      "inganno_ladro": "Infiltratore sacro"
+    }
+  },
+  "progressione_potere": {
+    "livello_1": "Definisce identità",
+    "livello_2": "Channel Divinity unico",
+    "livello_6": "Potenziamento significativo",
+    "livello_8": "Divine Strike o Potent Cantrip",
+    "livello_17": "Capstone devastante"
+  },
+  "note_dm": "Il dominio definisce completamente lo stile di gioco del chierico. Considera il setting quando approvi domini.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.59",
+  "name": "Dominio Divino",
+  "img": "icons/magic/holy/yin-yang-balance-symbol.webp",
+  "_id": "ajdaWwlhn3NHFoRf",
+  "_key": "!item!class-chierico-livello_1-dominio-divino",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

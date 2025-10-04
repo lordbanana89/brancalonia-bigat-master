@@ -1,0 +1,133 @@
+{
+  "nome": "Attaccabrighe",
+  "fonte": "Manuale Base p.32",
+  "tipo": "background",
+  "descrizione": "Provocatore di risse e scazzottate, campione di bettola",
+  "testo": {
+    "introduzione": [
+      "Nel Regno le risse sono diffuse quanto le partite a dadi e l’attaccabrighe vive per scatenarne sempre di nuove, cercando il brivido delle scazzottate e della prepotenza ostentata.",
+      "Fra bettole, scommesse e sfide notturne, questi fanfaroni della bottega si guadagnano una fama chiassosa e sanno come trasformare un litigio in uno spettacolo di cazzotti e risate.",
+      "Campioni conclamati di schiaffoni e braccio di ferro, richiamano a sé tifosi e rivali in egual misura, pronti a dimostrare di essere i padroni incontrastati della bettola."
+    ],
+    "privilegio": {
+      "nome": "Rissaiolo",
+      "descrizione": "Conosce ogni trucco delle bettole del Regno: ottiene uno slot mossa aggiuntivo quando partecipa alle Risse."
+    }
+  },
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Intrattenere e Intuizione",
+      "implementazione": {
+        "intrattenere": "system.skills.prf.value = 1",
+        "intuizione": "system.skills.ins.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Due tipi di gioco",
+      "implementazione": {
+        "gioco1": "system.tools.game1.value = 1",
+        "gioco2": "system.tools.game2.value = 1"
+      },
+      "mode": 5
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Trofeo da rissa (Cimelio extra), mappa locande città origine, abito comune, borsa 15 ma"
+    },
+    "privilegio_rissaiolo": {
+      "tipo": "attivo",
+      "descrizione": "Ottiene 1 slot mossa aggiuntivo nelle Risse",
+      "implementazione": "flags.brancalonia-bigat.mosseRissa = 1",
+      "mode": 2
+    }
+  },
+  "dettagli": {
+    "identificatore": "attaccabrighe",
+    "ricchezza_iniziale": "15 ma",
+    "equipaggiamento": [
+      "Trofeo da rissa (Cimelio extra)",
+      "Mappa con la lista di tutte le locande della città d'origine",
+      "Abito comune",
+      "Borsa con 15 ma"
+    ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "intrattenere",
+        "intuizione"
+      ]
+    },
+    {
+      "tipo": "competenze_strumenti",
+      "scelte": 2,
+      "categoria": "strumenti_gioco"
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "Rissaiolo",
+      "descrizione": "Ottieni sempre uno slot mossa aggiuntivo quando partecipi a una Rissa.",
+      "fonte": "Manuale Base p.32",
+      "implementazione": {
+        "slot_mossa_extra": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "L’attaccabrighe cerca ogni occasione per buttarla in caciara e prendere qualcuno a sberle.",
+        "Non è davvero lui a provocare le risse, ma ogni volta che ce n’è una in ballo non riesce a tirarsi indietro.",
+        "La presunzione è la sua caratteristica principale, e non perde occasione per dichiararsi superiore a qualcuno in qualcosa.",
+        "Per salvare l’onore e la propria nomea, l’attaccabrighe è pronto a tutto.",
+        "È uno smargiasso che racconta sempre panzane colossali.",
+        "Sa trascorrere intere giornate nelle bettole mangiando e bevendo a tutto spiano.",
+        "Importuna continuamente le persone che ritiene attraenti, provocando ogni sorta di reazione contraria.",
+        "Pretende di mangiare e bere sempre a scrocco, adducendo ogni sorta di scuse."
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Onore. Difendere il proprio e l’altrui onore è la cosa più importante. (Buono)",
+        "Gloria. Cerca sempre di coprirsi di gloria e ammirazione. (Legale)",
+        "Bagordi. Vive per gozzoviglie e divertimenti. (Caotico)",
+        "Guadagno. Riempirsi le tasche con le scommesse e i cimeli degli sconfitti. (Malvagio)",
+        "Vittoria. Ricerca continuamente l’ammirazione della gente. (Neutrale)",
+        "Pancia piena. La vita è troppo complicata: pensa solo a riempirsi la pancia e svuotare la vescica. (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "La prima persona che lo abbia davvero menato, dimostrandogli che c’è sempre qualcuno più forte.",
+        "Un combattente incontrato in una rissa che giocava sporco e lo ha battuto a tradimento.",
+        "Il campione che lo ha sconfitto all’ultimo incontro alla Fiera della Beata Ignoranza.",
+        "I vecchi compagni che ha dovuto abbandonare quando i birri gli hanno messo una taglia sulla testa.",
+        "L’amata Dulcinea, incontrata solo una volta e che ha rapito il suo cuore.",
+        "L’anziano eremita che lo ha accolto quando era solo e in fuga, insegnandogli la Cinquina di Dio."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "Ha una superbia sconfinata.",
+        "Ha appetiti colossali e pensa sempre a soddisfarli.",
+        "È un mentitore compulsivo.",
+        "Continua a ripetere “Sapete qual è il mio peggior difetto?” cambiando risposta ogni volta.",
+        "Ha abitudini disgustose come mettersi gli stivali sul tavolo o pulirsi i denti col pugnale.",
+        "Molesta continuamente le altre persone finché non scoppia la rissa."
+      ]
+    }
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "attaccabrighe001",
+    "compendio": "backgrounds"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "_id": "mCXI60x6Eq7NTIAo",
+  "_key": "!tables!mCXI60x6Eq7NTIAo",
+  "name": "Attaccabrighe - Ideali",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "NaNjT9Q9lZNheX6U",
+      "type": 0,
+      "text": "Onore. Difendere il proprio e l’altrui onore è la cosa più importante. (Buono)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!NaNjT9Q9lZNheX6U"
+    },
+    {
+      "_id": "wQIDN9MUTCszEiaS",
+      "type": 0,
+      "text": "Gloria. Cerca sempre di coprirsi di gloria e ammirazione. (Legale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!wQIDN9MUTCszEiaS"
+    },
+    {
+      "_id": "KQPi2tb2FHoozCgE",
+      "type": 0,
+      "text": "Bagordi. Vive per gozzoviglie e divertimenti. (Caotico)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!KQPi2tb2FHoozCgE"
+    },
+    {
+      "_id": "z6u5Fgfm2geC4Pcx",
+      "type": 0,
+      "text": "Guadagno. Riempirsi le tasche con le scommesse e i cimeli degli sconfitti. (Malvagio)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!z6u5Fgfm2geC4Pcx"
+    },
+    {
+      "_id": "kiOskTVHp33k2lbI",
+      "type": 0,
+      "text": "Vittoria. Ricerca continuamente l’ammirazione della gente. (Neutrale)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!kiOskTVHp33k2lbI"
+    },
+    {
+      "_id": "EaZWzu2NSvjVbESW",
+      "type": 0,
+      "text": "Pancia piena. La vita è troppo complicata: pensa solo a riempirsi la pancia e svuotare la vescica. (Qualsiasi)",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!EaZWzu2NSvjVbESW"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "attaccabrighe",
+      "tipo": "ideali"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

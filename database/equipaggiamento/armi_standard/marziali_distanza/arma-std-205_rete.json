@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-205",
+  "nome": "Rete",
+  "categoria": "arma_standard",
+  "tipo": "marziale_distanza",
+  "costo": "1 mo",
+  "danni": "—",
+  "proprieta": [
+    "Speciale",
+    "Lancio (1,5/4,5 m)"
+  ],
+  "peso": "1.4 kg",
+  "descrizione": "Rete intrecciata per intrappolare bersagli di taglia Media o inferiore.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

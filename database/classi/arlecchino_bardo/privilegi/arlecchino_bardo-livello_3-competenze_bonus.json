@@ -1,0 +1,16 @@
+{
+  "id": "arlecchino_bardo-livello_3-competenze_bonus",
+  "livello": 3,
+  "nome": "Competenze Bonus",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.19",
+  "descrizione": "Quando entri nel Collegio del Carnevale impari a indossare una maschera e a trasformare ogni gesto in spettacolo. Acquisisci padronanza degli strumenti necessari a truccarti, cucire costumi e intrattenere il pubblico.",
+  "benefici": {
+    "competenze": [
+      "Trucchi per il camuffamento",
+      "Strumenti da tessitore",
+      "Un gioco a tua scelta"
+    ]
+  },
+  "note": "Le nuove competenze riflettono l'addestramento scenico di un arlecchino e possono essere impiegate anche per prove sociali legate alla Commedia dell'Arte."
+}

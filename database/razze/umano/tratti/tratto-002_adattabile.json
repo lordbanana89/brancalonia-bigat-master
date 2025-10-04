@@ -1,0 +1,10 @@
+{
+  "id": "race-umano-tratto-adattabile",
+  "nome": "Adattabile",
+  "categoria": "brancalonia",
+  "dettagli": {
+    "descrizione": "Ottieni competenza in un'abilità a scelta",
+    "meccanica": "Scegli una qualsiasi abilità"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

@@ -1,0 +1,265 @@
+{
+  "_id": "ktbTMzEZzkRMmYtG",
+  "name": "Tesori Nascosti",
+  "img": "icons/svg/d20-highlight.svg",
+  "description": "Tabella di Brancalonia: Tesori Nascosti",
+  "results": [
+    {
+      "_id": "tesori-nascosti_0",
+      "type": 0,
+      "text": "100 ducati in monete antiche",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_0"
+    },
+    {
+      "_id": "tesori-nascosti_1",
+      "type": 0,
+      "text": "Gioiello di famiglia (vale 50 ducati)",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_1"
+    },
+    {
+      "_id": "tesori-nascosti_2",
+      "type": 0,
+      "text": "Mappa di un tesoro più grande",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_2"
+    },
+    {
+      "_id": "tesori-nascosti_3",
+      "type": 0,
+      "text": "Arma +1 arrugginita ma funzionante",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_3"
+    },
+    {
+      "_id": "tesori-nascosti_4",
+      "type": 0,
+      "text": "Pozione di guarigione (2d4+2)",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_4"
+    },
+    {
+      "_id": "tesori-nascosti_5",
+      "type": 0,
+      "text": "Libro di incantesimi con 3 incantesimi",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_5"
+    },
+    {
+      "_id": "tesori-nascosti_6",
+      "type": 0,
+      "text": "Anello magico minore",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_6"
+    },
+    {
+      "_id": "tesori-nascosti_7",
+      "type": 0,
+      "text": "Reliquia santa (riduce Infamia di 5)",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_7"
+    },
+    {
+      "_id": "tesori-nascosti_8",
+      "type": 0,
+      "text": "Pergamena con incantesimo di 3° livello",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_8"
+    },
+    {
+      "_id": "tesori-nascosti_9",
+      "type": 0,
+      "text": "Armatura di maglia elfica",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_9"
+    },
+    {
+      "_id": "tesori-nascosti_10",
+      "type": 0,
+      "text": "Borsa conservante",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_10"
+    },
+    {
+      "_id": "tesori-nascosti_11",
+      "type": 0,
+      "text": "Mantello élfico",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_11"
+    },
+    {
+      "_id": "tesori-nascosti_12",
+      "type": 0,
+      "text": "Stivali della velocità",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_12"
+    },
+    {
+      "_id": "tesori-nascosti_13",
+      "type": 0,
+      "text": "Cintura della forza gigantesca",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_13"
+    },
+    {
+      "_id": "tesori-nascosti_14",
+      "type": 0,
+      "text": "Bacchetta magica con 7 cariche",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_14"
+    },
+    {
+      "_id": "tesori-nascosti_15",
+      "type": 0,
+      "text": "Pietra della fortuna",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_15"
+    },
+    {
+      "_id": "tesori-nascosti_16",
+      "type": 0,
+      "text": "Spada fiammeggiante",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_16"
+    },
+    {
+      "_id": "tesori-nascosti_17",
+      "type": 0,
+      "text": "Scudo +2",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_17"
+    },
+    {
+      "_id": "tesori-nascosti_18",
+      "type": 0,
+      "text": "Oggetto maledetto!",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_18"
+    },
+    {
+      "_id": "tesori-nascosti_19",
+      "type": 0,
+      "text": "Artefatto leggendario",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "_key": "!results!tesori-nascosti_19"
+    }
+  ],
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "sort": 1900,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "_key": "!tables!tesorinascosti",
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

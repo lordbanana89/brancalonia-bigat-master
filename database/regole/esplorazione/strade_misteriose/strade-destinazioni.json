@@ -1,0 +1,22 @@
+{
+  "id": "strade-destinazioni",
+  "titolo": "Dove va la strada",
+  "dado": "1d20",
+  "voci": [
+    { "intervallo": "1-10", "descrizione": "Da nessuna parte: le canaglie devono tornare indietro e perdono 2d4 ore di cammino." },
+    { "tiro": 11, "descrizione": "Al cancello coperto di edera di una villa abbandonata." },
+    { "tiro": 12, "descrizione": "Al covo di una banda del luogo, forse ostile forse amichevole." },
+    { "tiro": 13, "descrizione": "A una necropoli dimenticata dove riposano patriarchi dell'Impero che dispensano consigli notturni." },
+    { "tiro": 14, "descrizione": "Nel cuore della Fumarea, seguendo una via ignota ai piu." },
+    { "tiro": 15, "descrizione": "In una regione confinante: perfetta per sfuggire ai birri o contrabbandare merci." },
+    { "tiro": 16, "descrizione": "Direttamente alla destinazione desiderata, piu velocemente del previsto." },
+    { "tiro": 17, "descrizione": "A un corso d'acqua navigabile con molo e chiatta ormeggiata." },
+    { "tiro": 18, "descrizione": "A un convento isolato: potrebbe praticare Di Vino Amore, accoglienza, tredici penitenze o Condotta Manesca." },
+    { "tiro": 19, "descrizione": "Nelle Contrade Dimenticate." },
+    { "tiro": 20, "descrizione": "In una valle perduta abitata da morganti delle caverne, terrasche, bavalischi e bigatti colossali." }
+  ],
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "87"
+  }
+}

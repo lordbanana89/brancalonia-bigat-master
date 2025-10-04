@@ -1,0 +1,156 @@
+{
+  "id": "class-ladro-livello_5-schivata-prodigiosa",
+  "nome": "Schivata Prodigiosa",
+  "nome_brancalonia": "Riflessi del Gatto",
+  "livello": 5,
+  "tipo": "reazione",
+  "descrizione": "A partire dal 5° livello, quando un attaccante che puoi vedere ti colpisce con un attacco, puoi usare la tua reazione per dimezzare i danni dell'attacco contro di te.",
+  "meccaniche": {
+    "attivazione": {
+      "trigger": "Essere colpito da un attacco",
+      "requisiti": [
+        "Puoi vedere l'attaccante",
+        "Reazione disponibile"
+      ],
+      "tipo": "reazione"
+    },
+    "effetto": {
+      "riduzione_danni": "50% (dimezza)",
+      "tipo_danni": "Tutti i tipi di danno dell'attacco",
+      "applicazione": "Dopo il tiro danni ma prima di applicarli"
+    },
+    "limitazioni": {
+      "visibilita": "Devi vedere l'attaccante",
+      "frequenza": "Una volta per round (usa reazione)",
+      "non_funziona": [
+        "Attacchi da creature invisibili",
+        "Attacchi quando sei incapacitato",
+        "Danni da area (non sono attacchi)"
+      ]
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "reazione_difensiva",
+    "trigger": "Dopo essere colpito",
+    "effetto": {
+      "damage_reduction": "0.5",
+      "applicazione": "Multiplier al danno totale"
+    },
+    "macro": {
+      "prompt": "Usare Schivata Prodigiosa?",
+      "calcolo": "damage = Math.floor(damage / 2)"
+    },
+    "flags": {
+      "dnd5e.uncannyDodge": true
+    }
+  },
+  "calcoli_sopravvivenza": {
+    "danno_medio_livello_5": {
+      "attacco_tipico": "2d6+4 (11 danni)",
+      "con_schivata": "5-6 danni",
+      "risparmio": "~50% danni"
+    },
+    "danno_critico": {
+      "critico_normale": "4d6+4 (18 danni)",
+      "con_schivata": "9 danni",
+      "valore": "Salva da critici devastanti"
+    },
+    "confronto_hp": {
+      "ladro_livello_5": "~33 HP medi",
+      "attacco_forte": "15 danni",
+      "con_schivata": "7-8 danni",
+      "turni_extra": "Raddoppia sopravvivenza effettiva"
+    }
+  },
+  "tattiche_uso": {
+    "priorita_alta": [
+      "Critici confermati",
+      "Attacchi con molti dadi",
+      "Colpi che porterebbero a 0 PF",
+      "Attacchi con effetti on-hit"
+    ],
+    "priorita_bassa": [
+      "Attacchi deboli",
+      "Quando hai molti HP",
+      "Se hai guarigione disponibile"
+    ],
+    "considerazioni": [
+      "Solo una volta per round",
+      "Usa su attacco più forte",
+      "Conserva per boss"
+    ]
+  },
+  "confronto_difese": {
+    "vs_barbaro_resistenze": {
+      "barbaro": "Sempre 50% danni fisici in Ira",
+      "ladro": "50% UN attacco per round",
+      "differenza": "Barbaro più consistente, Ladro più versatile"
+    },
+    "vs_monaco_deflect": {
+      "monaco": "1d10+mod+livello riduzione",
+      "ladro": "50% flat",
+      "efficacia": "Ladro meglio su danni alti"
+    },
+    "vs_shield_spell": {
+      "shield": "Previene il colpo (+5 CA)",
+      "uncanny_dodge": "Dimezza dopo colpito",
+      "risorsa": "Shield usa slot, UD usa reazione"
+    }
+  },
+  "sinergie": {
+    "con_evasion": "Copre attacchi ed effetti area",
+    "con_cunning_action": "Hide per evitare di essere bersaglio",
+    "multiclasse": {
+      "monk": "UD + Deflect Missiles",
+      "fighter": "UD + Second Wind per tank",
+      "barbaro": "UD + resistenze (75% riduzione)"
+    },
+    "oggetti": {
+      "armor_resistance": "Stack per 75% riduzione",
+      "adamantine": "Previene critici + UD"
+    }
+  },
+  "evoluzione": {
+    "tier_1": "Non disponibile",
+    "tier_2_5": "Salva vita cruciale",
+    "tier_3": "Ancora molto utile",
+    "tier_4": "Mitiga colpi devastanti"
+  },
+  "esempi_gioco": {
+    "vs_gigante": {
+      "attacco": "3d12+8 (27 danni medi)",
+      "con_ud": "13-14 danni",
+      "impatto": "Da morte certa a sopravvivibile"
+    },
+    "vs_assassino": {
+      "sneak_attack": "8d6+5 (33 danni)",
+      "con_ud": "16-17 danni",
+      "ironia": "Ladro contro ladro"
+    },
+    "vs_dragon_breath": {
+      "non_funziona": "Non è un attacco",
+      "usa_evasion": "Evasion per danni area"
+    }
+  },
+  "errori_comuni": {
+    "ogni_attacco": "NO - solo UNA volta per round",
+    "area_damage": "NO - non funziona su AoE",
+    "invisibile": "NO - devi vedere attaccante"
+  },
+  "narrazione_brancalonia": {
+    "descrizione": "Il Brigante schiva all'ultimo istante",
+    "esempi": [
+      "Deviare la lama con il pugnale",
+      "Rotolare via dal colpo",
+      "Usare il mantello per confondere"
+    ],
+    "flavor": "Riflessi sovrumani dei ladri del Regno"
+  },
+  "interazioni_speciali": {
+    "con_sentinel": "UD funziona su attacchi opportunità",
+    "con_riposte": "UD su contrattacchi subiti",
+    "con_rogue_vs_rogue": "Entrambi possono usare UD"
+  },
+  "note_dm": "Uncanny Dodge è vitale per la sopravvivenza del ladro. Senza, è troppo fragile in melee. Ricorda che usa la reazione.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.96"
+}

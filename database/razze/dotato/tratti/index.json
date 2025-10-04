@@ -1,0 +1,28 @@
+{
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "tratto-001-ascendenza-fatata",
+      "nome": "Tratto 001 Ascendenza Fatata",
+      "file": "tratto-001_ascendenza_fatata.json"
+    },
+    {
+      "id": "tratto-002-versatilita-abilita",
+      "nome": "Tratto 002 Versatilita Abilita",
+      "file": "tratto-002_versatilita_abilita.json"
+    },
+    {
+      "id": "tratto-003-sangue-antico",
+      "nome": "Tratto 003 Sangue Antico",
+      "file": "tratto-003_sangue_antico.json"
+    },
+    {
+      "id": "tratto-004-fascino-innato",
+      "nome": "Tratto 004 Fascino Innato",
+      "file": "tratto-004_fascino_innato.json"
+    }
+  ]
+}

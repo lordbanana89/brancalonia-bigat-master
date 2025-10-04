@@ -1,0 +1,53 @@
+{
+  "categoria": "Privilegi Generali",
+  "descrizione": "Contenuti della categoria Privilegi Generali",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 9,
+  "elementi": [
+    {
+      "id": "class-chierico-livello_6-incanalare-divinita-migliorato",
+      "nome": "Grazia Divina Rinnovata",
+      "file": "class-chierico-livello_6-incanalare-divinita-migliorato.json"
+    },
+    {
+      "id": "class-chierico-livello_8-colpo-divino",
+      "nome": "Furia Benedetta",
+      "file": "class-chierico-livello_8-colpo-divino.json"
+    },
+    {
+      "id": "class-chierico-livello_10-intervento-divino",
+      "nome": "Miracolo dei Santi",
+      "file": "class-chierico-livello_10-intervento-divino.json"
+    },
+    {
+      "id": "class-chierico-livello_11-distruggere-non-morti",
+      "nome": "Purificazione Sacra",
+      "file": "class-chierico-livello_11-distruggere-non-morti.json"
+    },
+    {
+      "id": "class-chierico-livello_14-colpo-divino-migliorato",
+      "nome": "Ira Celeste",
+      "file": "class-chierico-livello_14-colpo-divino-migliorato.json"
+    },
+    {
+      "id": "class-chierico-livello_17-distruggere-non-morti-supremo",
+      "nome": "Annientamento Sacro",
+      "file": "class-chierico-livello_17-distruggere-non-morti-supremo.json"
+    },
+    {
+      "id": "class-chierico-livello_18-incanalare-divinita-supremo",
+      "nome": "Condotto Divino Perfetto",
+      "file": "class-chierico-livello_18-incanalare-divinita-supremo.json"
+    },
+    {
+      "id": "class-chierico-livello_20-distruggere-non-morti-finale",
+      "nome": "Flagello dei Non-morti",
+      "file": "class-chierico-livello_20-distruggere-non-morti-finale.json"
+    },
+    {
+      "id": "class-chierico-livello_20-intervento-divino-migliorato",
+      "nome": "Miracolo Garantito",
+      "file": "class-chierico-livello_20-intervento-divino-migliorato.json"
+    }
+  ]
+}

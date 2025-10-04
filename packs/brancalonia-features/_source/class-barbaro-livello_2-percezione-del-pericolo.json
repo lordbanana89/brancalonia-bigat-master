@@ -1,0 +1,116 @@
+{
+  "id": "class-barbaro-livello_2-percezione-del-pericolo",
+  "nome": "Percezione del Pericolo",
+  "nome_brancalonia": "Istinto del Pagano",
+  "livello": 2,
+  "tipo": "passivo",
+  "descrizione": "Al 2° livello ottieni un senso straordinario quando le cose intorno a te non sono come dovrebbero essere, che ti offre un vantaggio quando schivi il pericolo. Hai vantaggio ai tiri salvezza di Destrezza contro effetti che puoi vedere, come trappole e incantesimi. Per ottenere questo beneficio, non devi essere accecato, assordato o incapacitato.",
+  "meccaniche": {
+    "beneficio": {
+      "tipo": "vantaggio_condizionale",
+      "applicazione": "Tiri salvezza su Destrezza",
+      "requisito_visibilita": "L'effetto deve essere visibile"
+    },
+    "condizioni": {
+      "requisiti_attivazione": [
+        "Non essere accecato",
+        "Non essere assordato",
+        "Non essere incapacitato"
+      ],
+      "nota": "Tutte le condizioni devono essere soddisfatte simultaneamente"
+    },
+    "esempi_applicazione": {
+      "si_applica": [
+        "Palla di fuoco (visibile)",
+        "Fulmine (visibile)",
+        "Trappole meccaniche visibili",
+        "Soffio del drago (visibile)",
+        "Caduta massi (visibile)",
+        "Esplosioni (visibili)"
+      ],
+      "non_si_applica": [
+        "Trappole invisibili",
+        "Effetti mentali con TS Destrezza",
+        "Effetti che originano da fonti non visibili",
+        "Attacchi a sorpresa non percepiti"
+      ]
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "passivo_condizionale",
+    "active_effects": [
+      {
+        "label": "Percezione del Pericolo",
+        "key": "flags.dnd5e.advantage.ability.save.dex",
+        "mode": 5,
+        "value": "1",
+        "disabled": false,
+        "transfer": true
+      }
+    ],
+    "macro_condizione": {
+      "verifica": [
+        "!actor.statuses.has('blind')",
+        "!actor.statuses.has('deaf')",
+        "!actor.statuses.has('incapacitated')"
+      ],
+      "messaggio": "Percezione del Pericolo attiva contro effetti visibili"
+    },
+    "note_implementazione": "Il DM deve verificare manualmente se l'effetto è visibile"
+  },
+  "interazioni": {
+    "con_evasione": {
+      "descrizione": "Se multiclassi con Ladro, si combina con Evasione",
+      "effetto": "Vantaggio al TS + dimezzare/annullare danni"
+    },
+    "con_schivata": {
+      "descrizione": "Non si applica agli attacchi, solo ai TS",
+      "chiarimento": "Schivata dà svantaggio agli attacchi, non è correlato"
+    },
+    "con_iniziativa": {
+      "descrizione": "Non influenza l'iniziativa",
+      "nota": "Istinto Ferino (7° livello) gestisce quello"
+    }
+  },
+  "calcoli_probabilita": {
+    "ts_normale": {
+      "cd_15": "30% di successo con +0 Destrezza",
+      "cd_15_con_bonus": "50% con +4 Destrezza"
+    },
+    "con_vantaggio": {
+      "cd_15": "51% di successo con +0 Destrezza",
+      "cd_15_con_bonus": "75% con +4 Destrezza",
+      "incremento_medio": "+20-25% di probabilità"
+    }
+  },
+  "sinergie_brancalonia": {
+    "trappole_dungeon": "Molto utile nei dungeon pieni di trappole di Brancalonia",
+    "risse": "Non si applica nelle Risse (niente TS Destrezza)",
+    "esplorazione": "Eccellente per rovine e catacombe"
+  },
+  "confronto_classi": {
+    "monaco": "I monaci ottengono Evasione al 7° livello",
+    "ladro": "I ladri ottengono Evasione al 7° livello",
+    "barbaro": "Unico ad averlo dal 2° livello"
+  },
+  "note_dm": "Ricorda al giocatore di questo privilegio quando chiedi TS Destrezza contro effetti visibili. Molti giocatori lo dimenticano.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.48",
+  "name": "Percezione Del Pericolo",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+  "_id": "8ENDzl1ngSAvnHCT",
+  "_key": "!item!class-barbaro-livello_2-percezione-del-pericolo",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

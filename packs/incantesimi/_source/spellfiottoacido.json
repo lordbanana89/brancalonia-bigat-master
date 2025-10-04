@@ -1,0 +1,114 @@
+{
+  "_id": "EgAX1aZpkO8iO0mc",
+  "_key": "!item!spellfiottoacidoa39f2b",
+  "name": "Fiotto Acido",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Lanci una bolla acida. Scegli una creatura entro gittata, o scegli due creature entro gittata che si trovano entro 5 piedi l'una dall'altra. Un bersaglio deve superare un tiro salvezza su Destrezza o subire 1d6 danni da acido.</p><h3>Note per il DM</h3><p><em>Acid Splash è debole per danno singolo ma unico per doppio target. DEX save invece di attack roll può essere utile vs high AC.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.211",
+    "level": 0,
+    "school": "evo",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-fiotto-acido",
+      "fonte": "D&D 5e PHB p.211",
+      "note_dm": "Acid Splash è debole per danno singolo ma unico per doppio target. DEX save invece di attack roll può essere utile vs high AC.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": 60,
+        "save": "dexterity",
+        "danno": "1d6",
+        "danno_tipo": "acid",
+        "target": "1 o 2 creature (entro 5 ft)"
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Evocazione",
+        "level": 0
+      }
+    }
+  }
+}

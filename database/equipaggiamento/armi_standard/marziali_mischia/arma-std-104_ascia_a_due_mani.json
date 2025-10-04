@@ -1,0 +1,21 @@
+{
+  "id": "arma-std-104",
+  "nome": "Ascia a Due Mani",
+  "categoria": "arma_standard",
+  "tipo": "marziale_mischia",
+  "costo": "30 mo",
+  "danni": "1d12 taglienti",
+  "proprieta": [
+    "Pesante",
+    "Due Mani"
+  ],
+  "peso": "3.2 kg",
+  "descrizione": "Colossale ascia da guerra che richiede forza immane.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Tabella Armi"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

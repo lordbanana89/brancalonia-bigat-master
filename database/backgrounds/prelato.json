@@ -1,0 +1,137 @@
+{
+  "nome": "Prelato",
+  "fonte": "Brancalonia Macaronicon p.42-43",
+  "tipo": "background",
+  "descrizione": "Alto membro del Credo o di un culto, rispettato ma disposto a sporcarsi le mani come canaglia",
+  "testo": {
+    "introduzione": [
+      "Abati, badesse, ordinali e oroscopi che un tempo guidavano comunità religiose ora percorrono il Regno come canaglie.",
+      "La loro posizione, l'autorità spirituale e i contatti con chiese e monasteri aprono porte e cuori, ma attirano anche aspettative elevate.",
+      "Alcuni cercano redenzione o nuovi seguaci, altri sfruttano il prestigio ecclesiastico per missioni meno devotate."
+    ],
+    "privilegio": {
+      "nome": "Rispetto e Influenza",
+      "descrizione": "Gode di ospitalità, aiuti e riconoscimento da parte dei fedeli e delle comunità religiose della propria fede, finché mantiene buona reputazione."
+    }
+  },
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Persuasione e Religione",
+      "implementazione": {
+        "persuasione": "system.skills.per.value = 1",
+        "religione": "system.skills.rel.value = 1"
+      },
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Draconiano e Lingua Ignota",
+      "implementazione": {
+        "draconiano": "system.traits.languages.value.push('draconiano')",
+        "lingua_ignota": "system.traits.languages.value.push('lingua_ignota')"
+      },
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Simbolo sacro d'oro, libro di preghiere, vesti da sacerdote, borsa con 25 ma"
+    },
+    "privilegio_rispetto_influenza": {
+      "tipo": "attivo",
+      "descrizione": "Riceve ospitalità e sostegno dai fedeli della stessa religione finché mantiene buona reputazione",
+      "implementazione": {
+        "rispetto_influenza": "flags.brancalonia-bigat.rispettoInfluenza = true"
+      },
+      "mode": 5
+    }
+  },
+  "dettagli": {
+    "identificatore": "prelato",
+    "ricchezza_iniziale": "25 ma",
+    "equipaggiamento": [
+      "Simbolo sacro d'oro",
+      "Libro di preghiere",
+      "Vesti da sacerdote",
+      "Borsa con 25 ma"
+    ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "persuasione",
+        "religione"
+      ]
+    },
+    {
+      "tipo": "linguaggi",
+      "elenco": [
+        "draconiano",
+        "lingua_ignota"
+      ]
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "Rispetto e Influenza",
+      "descrizione": "Puoi contare su ospitalità e aiuto presso chiese, santuari e fedeli della tua religione.",
+      "fonte": "Brancalonia Macaronicon p.42",
+      "implementazione": {
+        "rispetto_influenza": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "Aiuta sempre un credente in difficoltà.",
+        "Conosce bene le vie del Padre Terno e scherza sul fatto che siano tre.",
+        "Disprezza la povertà dopo aver assaporato agi e vizi della prelatura.",
+        "È una fonte inesauribile di parabole e invettive, soprattutto da ubriaco.",
+        "Ha perso la propria Credenza e si sente smarrito.",
+        "Ha scelto la prelatura per convenienza, fuggendo alla miseria.",
+        "Legge segni divini in ogni evento insolito.",
+        "Riporta i peccatori sulla retta via con versetti o mazzate."
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Guida. Proteggo il mio gregge di canaglie e fedeli. (Buono)",
+        "Rigore. I dettami del Credo vanno applicati senza compromessi. (Legale)",
+        "Libero arbitrio. Ognuno deve scegliere come seguire il cammino. (Caotico)",
+        "Carriera. Uso la fede per scalare i ranghi del Credo. (Malvagio)",
+        "Fede. Tutto rientra nell'equilibrio del grande disegno. (Neutrale)",
+        "Redenzione. Devo rimediare ai peccati della mia vita passata. (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "Devo la vita a Padre Sgroppino che mi salvò e mi istruì.",
+        "Il mio simbolo sacro d'oro vale più della mia stessa vita.",
+        "Mi prendo cura degli infanti del Regno come anime da guidare.",
+        "Uno dei miei genitori è l'ultimo legame con la vita prima della prelatura.",
+        "Considero la mia comunità religiosa come una famiglia.",
+        "Cerco vendetta contro l'eresiarca che rapì le mie sorelle."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "Sono un inguaribile avvinazzato.",
+        "Sono un impostore che conosce a malapena il Segno della Tombola.",
+        "Mi fido troppo della bontà delle persone.",
+        "Ho il terrore di perdere la mia fede.",
+        "Aborro la fatica.",
+        "Coltivo un vizio poco consono alla mia carica."
+      ]
+    }
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "prelato001",
+    "compendio": "backgrounds_macaronicon"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "010",
+  "nome": "La Lanterna del Guardiano del Faro",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Lanterna che brucia senza olio",
+  "proprieta": "Luce penetra nebbia magica e oscurità, rivela creature invisibili",
+  "maledizione": "Attira spiriti dei naufraghi (1 incontro casuale extra di notte)",
+  "valore": "600 mo",
+  "storia": "Il guardiano lasciò spegnere il faro causando 100 morti",
+  "maledizione_specifica": "Attira spiriti dei naufraghi (1 incontro casuale extra di notte)",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.attributes.senses.darkvision",
+        "mode": 4,
+        "value": "120",
+        "priority": 20
+      },
+      {
+        "key": "flags.brancalonia.seeInvisible",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "random_encounter",
+      "encounterType": "spiriti_naufraghi",
+      "encounterFrequency": "notte",
+      "attractsSpirits": true
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "dmReminder": true,
+      "reminderText": "Incontro casuale spiriti naufraghi di notte"
+    }
+  },
+  "img": "icons/sundries/lights/lantern-iron-yellow.webp"
+}

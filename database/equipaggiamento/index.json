@@ -1,0 +1,18 @@
+{
+  "categoria": "Equipaggiamento",
+  "descrizione": "Contenuti della categoria equipaggiamento",
+  "fonte": "Manuale Base",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "ciarpame-magico",
+      "nome": "Ciarpame Magico",
+      "file": "ciarpame_magico.json"
+    },
+    {
+      "id": "intrugli",
+      "nome": "Intrugli",
+      "file": "intrugli.json"
+    }
+  ]
+}

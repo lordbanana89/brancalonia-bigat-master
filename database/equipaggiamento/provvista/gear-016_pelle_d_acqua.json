@@ -1,0 +1,15 @@
+{
+  "id": "gear-016",
+  "nome": "Pelle d Acqua",
+  "categoria": "provvista_avventuriera",
+  "costo": "1 mo",
+  "peso": "3 kg (piena)",
+  "descrizione": "Grande otre rinforzato adatto a trasportare fino a 12 litri di acqua.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "011",
+  "nome": "La Maschera del Carnefice",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Cappuccio nero con buchi per gli occhi",
+  "proprieta": "Immunità a essere riconosciuto, +2 Intimidire",
+  "maledizione": "Non può essere tolta per 24 ore una volta indossata",
+  "valore": "350 mo",
+  "storia": "Il carnefice giustiziò suo fratello senza saperlo",
+  "maledizione_specifica": "Non può essere tolta per 24 ore una volta indossata",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.skills.itm.bonuses.check",
+        "mode": 2,
+        "value": "2",
+        "priority": 20
+      },
+      {
+        "key": "flags.brancalonia.unrecognizable",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "timed_curse",
+      "wornTimestamp": 0,
+      "lockDuration": 86400,
+      "canRemove": true,
+      "description": "Non rimovibile per 24h dall'indossamento"
+    },
+    "hooks": ["preDeleteItem", "updateItem"],
+    "macros": [],
+    "ui_config": {
+      "showTimer": true,
+      "timerText": "Rimovibile tra: {time}",
+      "blockRemoval": true,
+      "warningText": "⚠️ Non puoi togliere la maschera per 24 ore!"
+    },
+    "narrative_reminders": [
+      "Una volta indossata, NON può essere rimossa per 24 ore",
+      "Fornisce anonimato completo (non sei riconoscibile)",
+      "+2 alle prove di Intimidire",
+      "Il timer parte dal momento dell'equipaggiamento"
+    ]
+  },
+  "img": "icons/equipment/head/mask-carved-scream-tan.webp"
+}

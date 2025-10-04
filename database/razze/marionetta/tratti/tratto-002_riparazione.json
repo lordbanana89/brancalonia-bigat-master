@@ -1,0 +1,10 @@
+{
+  "id": "race-marionetta-tratto-riparazione",
+  "nome": "Riparazione",
+  "categoria": "base",
+  "dettagli": {
+    "descrizione": "Riposo breve con attrezzi ripara 1d6+Cos PF",
+    "riposo_lungo": "Recuperi tutti i PF se riparato"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "class-paladino-livello_2-punizione-divina",
+  "nome": "Punizione Divina",
+  "nome_brancalonia": "Colpo Sacro",
+  "livello": 2,
+  "tipo": "attivo",
+  "descrizione": "A partire dal 2° livello, quando colpisci una creatura con un attacco con arma da mischia, puoi spendere uno slot incantesimo per infliggere danno radiante al bersaglio, in aggiunta al danno dell'arma.",
+  "meccaniche": {
+    "trigger": "Hit con melee weapon",
+    "costo": "1 spell slot",
+    "danno_base": "2d8 radianti per slot 1°",
+    "danno_scaling": "+1d8 per livello slot",
+    "max_danno": "5d8 (slot 4°+)",
+    "vs_undead_fiend": "+1d8 extra"
+  },
+  "implementazione_foundry": {
+    "tipo": "divine_smite",
+    "damage_formula": "(1+@spellLevel)d8[radiant]",
+    "max_dice": 5,
+    "bonus_vs_type": "+1d8 vs undead/fiend"
+  },
+  "danno_per_slot": {
+    "slot_1": "2d8 (9 medi), 3d8 vs undead",
+    "slot_2": "3d8 (13.5 medi), 4d8 vs undead",
+    "slot_3": "4d8 (18 medi), 5d8 vs undead",
+    "slot_4": "5d8 (22.5 medi), 6d8 vs undead",
+    "slot_5": "5d8 (cap), 6d8 vs undead"
+  },
+  "crit_interaction": {
+    "raddoppia_dadi": "Smite dopo sapere se crit",
+    "crit_smite_1": "4d8 radianti",
+    "crit_smite_4": "10d8 radianti!"
+  },
+  "confronto_damage": {
+    "vs_sneak_attack": "Paladin burst vs rogue consistent",
+    "vs_hunter_mark": "Smite frontloaded vs sustained",
+    "vs_fireball": "Single target vs AoE"
+  },
+  "gestione_slot": {
+    "nova_potential": "Tutti slot in un combat",
+    "conservazione": "Save per boss/undead",
+    "crit_fishing": "Smite solo su critici"
+  },
+  "errori_comuni": {
+    "ranged": "NO, solo melee",
+    "pre_dichiarare": "NO, dopo hit confermato",
+    "spell_attack": "NO, solo weapon attack"
+  },
+  "note_dm": "Divine Smite è il signature del paladino. Nova potential alto ma brucia risorse velocemente.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
+  "name": "Punizione Divina",
+  "img": "icons/magic/holy/projectiles-blades-salvo-yellow.webp",
+  "_id": "M4Taba9uJHBcu1eo",
+  "_key": "!item!class-paladino-livello_2-punizione-divina",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "scadente-001",
+  "nome": "Strumenti Scadenti",
+  "categoria": "equipaggiamento_scadente",
+  "costo_relativo": "1/10 del prezzo standard",
+  "descrizione": "Utensili e strumenti da lavoro di fattura pessima, spesso assemblati alla buona da ciarlatani.",
+  "effetti_meccanici": {
+    "malus": "Quando si usano in una prova, il Condottiero può applicare inconvenienti narrativi.",
+    "rottura": "Se la prova è fallita di 5 o più, lo strumento si rompe e deve essere riparato o sostituito."
+  },
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "62-63"
+  },
+  "validazione": {
+    "stato": "da_validare",
+    "estratto_da": "manuale_brancalonia.txt"
+  },
+  "dettagli": "Quando si utilizza un oggetto o uno strumento di qualità scadente in una prova, è possibile incorrere in qualche inconveniente. Il Condottiero può scegliere di volta in volta quali effetti applicare in base alla situazione e all'oggetto. Inoltre, se la prova viene fallita di 5 o più, l'oggetto si rompe."
+}

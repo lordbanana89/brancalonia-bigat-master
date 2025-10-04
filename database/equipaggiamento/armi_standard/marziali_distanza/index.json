@@ -1,0 +1,31 @@
+{
+  "categoria": "Armi Marziali A Distanza",
+  "totale": 5,
+  "elementi": [
+    {
+      "id": "arma-std-201",
+      "nome": "Cerbottana",
+      "file": "arma-std-201_cerbottana.json"
+    },
+    {
+      "id": "arma-std-202",
+      "nome": "Balestra A Mano",
+      "file": "arma-std-202_balestra_a_mano.json"
+    },
+    {
+      "id": "arma-std-203",
+      "nome": "Balestra Pesante",
+      "file": "arma-std-203_balestra_pesante.json"
+    },
+    {
+      "id": "arma-std-204",
+      "nome": "Arco Lungo",
+      "file": "arma-std-204_arco_lungo.json"
+    },
+    {
+      "id": "arma-std-205",
+      "nome": "Rete",
+      "file": "arma-std-205_rete.json"
+    }
+  ]
+}

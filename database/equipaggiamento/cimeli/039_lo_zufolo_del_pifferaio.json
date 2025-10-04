@@ -1,0 +1,48 @@
+{
+  "id": "039",
+  "nome": "Lo Zufolo del Pifferaio",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Flauto di osso decorato",
+  "proprieta": "I topi (e i bambini sotto i 10 anni) devono seguire la musica",
+  "valore": "900 mo",
+  "storia": "Il pifferaio non fu mai pagato",
+  "pericolo": "Dopo 1 ora di uso, TS Carisma CD 15 o perdita controllo",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "mind_control_with_risk",
+      "targetTypes": ["rats", "children_under_10"],
+      "duration": "music_duration",
+      "riskTime": 3600,
+      "saveType": "cha",
+      "saveDC": 15,
+      "onFailure": "perdita_controllo_suonatore"
+    },
+    "hooks": [],
+    "macros": ["playFlute"],
+    "ui_config": {
+      "showTargets": true,
+      "targetsText": "Controlla: topi e bambini <10 anni",
+      "showRisk": true,
+      "riskText": "⚠️ Dopo 1h: TS CAR CD15 o perdi controllo!"
+    },
+    "narrative_reminders": [
+      "TUTTI i topi entro portata uditiva seguono la musica (no TS)",
+      "TUTTI i bambini sotto 10 anni seguono la musica (no TS)",
+      "Il controllo dura finché si suona",
+      "Dopo 1 ORA di uso continuo: suonatore fa TS CAR CD15",
+      "Fallimento TS = il suonatore perde controllo e continua a suonare",
+      "Perdita controllo = continua a suonare ossessivamente",
+      "Il pifferaio originale non fu mai pagato per i suoi servizi",
+      "Riferimento al Pifferaio di Hamelin",
+      "Ottimo per invasioni di topi o situazioni disperate",
+      "MOLTO pericoloso se usato troppo a lungo"
+    ]
+  },
+  "img": "icons/tools/instruments/flute-simple-bone.webp"
+}

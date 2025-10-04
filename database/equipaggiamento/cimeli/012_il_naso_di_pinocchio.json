@@ -1,0 +1,40 @@
+{
+  "id": "012",
+  "nome": "Il Naso di Pinocchio",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Pezzo di legno a forma di naso",
+  "proprieta": "Si allunga quando il portatore mente",
+  "valore": "200 mo",
+  "storia": "Tagliato dal famoso burattino quando divenne bambino vero",
+  "utilizzo": "Rivela automaticamente le bugie del portatore",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "lie_detector",
+      "triggerCondition": "bugia",
+      "visualEffect": "Naso si allunga visibilmente"
+    },
+    "hooks": ["dnd5e.preRollSkill"],
+    "macros": [],
+    "ui_config": {
+      "showReminder": true,
+      "reminderText": "⚠️ Si allunga quando menti!"
+    },
+    "narrative_reminders": [
+      "Il naso si allunga OGNI volta che il portatore mente",
+      "L'allungamento è visibile a tutti i presenti",
+      "Non può essere nascosto o mascherato",
+      "Rende impossibile mentire efficacemente",
+      "Ottimo per garantire onestà forzata",
+      "Terribile per ladri, truffatori e diplomati",
+      "Tagliato dal vero Pinocchio quando divenne umano",
+      "Svantaggio automatico a tutte le prove di Inganno"
+    ]
+  },
+  "img": "icons/equipment/head/mask-carved-tan.webp"
+}

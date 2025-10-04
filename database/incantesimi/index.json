@@ -1,0 +1,48 @@
+{
+  "categoria": "Liste Incantesimi Manuale Base",
+  "descrizione": "Placeholder in attesa di estrazione completa dalle pagine del manuale.",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 8,
+  "elementi": [
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "chierico.json"
+    },
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "druido.json"
+    },
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "bardo.json"
+    },
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "paladino.json"
+    },
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "ranger.json"
+    },
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "mago.json"
+    },
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "stregone.json"
+    },
+    {
+      "id": "unknown",
+      "nome": "Senza Nome",
+      "file": "warlock.json"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "_id": "31Ohn7Aw6EIQf1Ne",
+  "_key": "!item!classbarbarolivello15irapersistente4d5814",
+  "name": "Ira Persistente",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-hand-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ira Persistente (15° livello)</strong></p><p>A partire dal 15° livello, la tua ira è così feroce che termina prematuramente solo se cadi privo di sensi o se scegli di porvi termine.</p><p>Normalmente l'ira termina se il tuo turno finisce e non hai attaccato o subito danni. Con questa feature, la tua ira persiste indipendentemente da ciò che fai o non fai, rendendoti una forza inarrestabile sul campo di battaglia.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale del Giocatore p.49",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "equipped": false,
+    "identified": true,
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": 0,
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "class-barbaro-livello_15-ira-persistente",
+      "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.49"
+    }
+  }
+}

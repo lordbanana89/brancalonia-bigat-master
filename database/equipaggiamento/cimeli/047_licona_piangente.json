@@ -1,0 +1,44 @@
+{
+  "id": "047",
+  "nome": "L'Icona Piangente",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Dipinto sacro che piange sangue",
+  "proprieta": "Predice disgrazie (piange 24 ore prima)",
+  "valore": "800 mo",
+  "storia": "Pianse per 7 giorni prima della peste",
+  "utilita": "Permette di prepararsi al peggio",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "precognition",
+      "warningTime": 86400,
+      "warningType": "disgrazie",
+      "visualCue": "pianto_sangue",
+      "cryingTimestamp": 0
+    },
+    "hooks": [],
+    "macros": [],
+    "ui_config": {
+      "dmOnly": true,
+      "dmReminder": true,
+      "reminderText": "Attiva 24h prima di disgrazie pianificate"
+    },
+    "narrative_reminders": [
+      "L'icona piange SANGUE 24 ore prima di una disgrazia maggiore",
+      "Disgrazia = evento che causa sofferenza/morte su larga scala",
+      "Include: battaglie, pestilenze, carestie, disastri naturali",
+      "NON include: pericoli minori o morte di singoli individui",
+      "Pianse per 7 giorni prima della Grande Peste",
+      "Il pianto è visibile e continuo fino all'evento",
+      "Permette al gruppo di prepararsi o fuggire",
+      "Strumento DM per foreshadowing drammatico",
+      "Le lacrime di sangue non si asciugano finché non accade l'evento"
+    ]
+  },
+  "img": "icons/magic/death/skull-angel-wings.webp"
+}

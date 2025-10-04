@@ -1,0 +1,30 @@
+{
+  "id": "frate_monaco-livello_6-tecnica_mano_ferro_piuma",
+  "livello": 6,
+  "nome": "Tecnica della Mano di Ferro e di Piuma",
+  "tipo": "attivo",
+  "fonte": "Manuale Base p.25",
+  "descrizione": "La raffica di colpi del frate alterna carezze e mazzate. Ogni colpo è un precetto: sbilanciare, spingere o rendere incerti i passi dell'avversario.",
+  "meccaniche": {
+    "attivazione": {
+      "momento": "Quando colpisci con un attacco concesso da Raffica di Colpi"
+    },
+    "opzioni": [
+      {
+        "nome": "Caduta a Terra",
+        "tiro_salvezza": "Destrezza",
+        "effetto": "Il bersaglio cade prono se fallisce"
+      },
+      {
+        "nome": "Spinta",
+        "tiro_salvezza": "Forza",
+        "effetto": "Il bersaglio viene spinto di 3 metri lontano da te. Se urta un ostacolo subisce danni pari al tuo colpo senz'armi; se contro una creatura, quest'ultima deve superare un TS su Forza o subire gli stessi danni"
+      },
+      {
+        "nome": "Mano di Piuma",
+        "tiro_salvezza": "Costituzione",
+        "effetto": "Il bersaglio subisce svantaggio agli attacchi nel suo prossimo turno se fallisce"
+      }
+    ]
+  }
+}

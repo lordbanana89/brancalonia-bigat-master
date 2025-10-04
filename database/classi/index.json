@@ -1,0 +1,113 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 21,
+  "elementi": [
+    {
+      "id": "arlecchino_bardo",
+      "nome": "Arlecchino",
+      "file": "arlecchino_bardo/index.json"
+    },
+    {
+      "id": "class-bardo",
+      "nome": "Bardo",
+      "file": "bardo/index.json"
+    },
+    {
+      "id": "benandante_druido",
+      "nome": "Benandante",
+      "file": "benandante_druido/index.json"
+    },
+    {
+      "id": "brigante_ladro",
+      "nome": "Brigante",
+      "file": "brigante_ladro/index.json"
+    },
+    {
+      "id": "cavaliere_errante_paladino",
+      "nome": "Cavaliere Errante",
+      "file": "cavaliere_errante_paladino/index.json"
+    },
+    {
+      "id": "class-chierico",
+      "nome": "Chierico",
+      "file": "chierico/index.json"
+    },
+    {
+      "id": "class-druido",
+      "nome": "Druido",
+      "file": "druido/index.json"
+    },
+    {
+      "id": "frate_monaco",
+      "nome": "Frate",
+      "file": "frate_monaco/index.json"
+    },
+    {
+      "id": "guiscardo_mago",
+      "nome": "Guiscardo",
+      "file": "guiscardo_mago/index.json"
+    },
+    {
+      "id": "class-mago",
+      "nome": "Mago",
+      "file": "mago/index.json"
+    },
+    {
+      "id": "mattatore_ranger",
+      "nome": "Mattatore",
+      "file": "mattatore_ranger/index.json"
+    },
+    {
+      "id": "menagramo_warlock",
+      "nome": "Menagramo",
+      "file": "menagramo_warlock/index.json"
+    },
+    {
+      "id": "miracolaro_chierico",
+      "nome": "Miracolaro",
+      "file": "miracolaro_chierico/index.json"
+    },
+    {
+      "id": "class-monaco",
+      "nome": "Monaco",
+      "file": "monaco/index.json"
+    },
+    {
+      "id": "pagano_barbaro",
+      "nome": "Pagano",
+      "file": "pagano_barbaro/index.json"
+    },
+    {
+      "id": "class-paladino",
+      "nome": "Paladino",
+      "file": "paladino/index.json"
+    },
+    {
+      "id": "class-ranger",
+      "nome": "Ranger",
+      "file": "ranger/index.json"
+    },
+    {
+      "id": "scaramante_stregone",
+      "nome": "Scaramante",
+      "file": "scaramante_stregone/index.json"
+    },
+    {
+      "id": "spadaccino_guerriero",
+      "nome": "Spadaccino",
+      "file": "spadaccino_guerriero/index.json"
+    },
+    {
+      "id": "class-stregone",
+      "nome": "Stregone",
+      "file": "stregone/index.json"
+    },
+    {
+      "id": "class-warlock",
+      "nome": "Warlock",
+      "file": "warlock/index.json"
+    }
+  ]
+}

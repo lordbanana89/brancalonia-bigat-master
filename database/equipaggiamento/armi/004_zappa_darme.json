@@ -1,0 +1,20 @@
+{
+  "id": "arma-base-004",
+  "nome": "Zappa d'Arme",
+  "categoria": "arma",
+  "sottotipo": "mischia",
+  "costo": "2 mo",
+  "danni": "1d6 taglienti",
+  "peso": "2 kg",
+  "proprieta": ["Versatile (1d8)"],
+  "descrizione": "Attrezzo contadino rinforzato per alternare il lavoro nei campi alla difesa dei granai.",
+  "note_meccaniche": null,
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "64-65"
+  },
+  "validazione": {
+    "estratto_da": "manuale_brancalonia.txt",
+    "stato": "da_validare"
+  }
+}

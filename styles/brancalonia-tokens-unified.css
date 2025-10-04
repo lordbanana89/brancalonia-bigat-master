@@ -1,0 +1,301 @@
+/* ================================================ */
+/* BRANCALONIA UNIFIED TOKEN SYSTEM                */
+/* Sistema unificato allineato con crlngn-ui       */
+/* Basato sui colori REALI estratti dal tema       */
+/* ================================================ */
+
+@layer tokens {
+  /* ================================================
+     ROOT TOKENS - Disponibili globalmente
+     ================================================ */
+  :root {
+    /* =============================================
+       PALETTE RINASCIMENTALE ITALIANA - Colori primitivi
+       Estratti dal sistema esistente
+       ============================================= */
+
+    /* Pigmenti autentici rinascimentali */
+    --bcl-raw-sienna: #C68E3F;        /* Terra di Siena grezza */
+    --bcl-raw-umber: #6B4423;         /* Terra d'ombra grezza */
+    --bcl-burnt-sienna: #8B4513;      /* Terra di Siena bruciata */
+    --bcl-burnt-umber: #4A3826;       /* Terra d'ombra bruciata */
+    --bcl-ochre: #CC9A2E;              /* Ocra gialla */
+    --bcl-venetian-red: #C80815;      /* Rosso veneziano */
+    --bcl-terracotta: #CB6843;        /* Terracotta toscana */
+    --bcl-malachite: #0F7938;         /* Verde malachite */
+    --bcl-ultramarine: #4166F5;       /* Blu oltremare */
+    --bcl-gold-leaf: #D4AF37;         /* Foglia d'oro */
+    --bcl-lead-white: #FAF6ED;        /* Bianco di piombo */
+    --bcl-bone-black: #1C1814;        /* Nero d'ossa */
+    --bcl-sepia: #704214;              /* Seppia */
+    --bcl-verdigris: #43B3AE;         /* Verderame */
+    --bcl-cinnabar: #E34234;          /* Cinabro */
+    --bcl-wine: #722F37;               /* Rosso vino */
+  }
+
+  /* ================================================
+     THEME SCOPED TOKENS
+     Tutti i token semantici sotto .theme-brancalonia
+     ================================================ */
+
+  .theme-brancalonia {
+    /* =============================================
+       COLORI SEMANTICI - Light Mode (default)
+       Basati sulla palette esistente del tema
+       ============================================= */
+
+    /* Backgrounds - Gerarchici */
+    --bcl-bg: #15110C;                        /* Sfondo principale scuro */
+    --bcl-bg-secondary: #1F1A13;              /* Sfondo secondario */
+    --bcl-bg-tertiary: #2B2218;               /* Sfondo terziario */
+
+    /* Surfaces - Pergamena */
+    --bcl-surface: #F3E6CC;                   /* Superficie pergamena chiara */
+    --bcl-paper: #E7D6AE;                     /* Carta invecchiata */
+    --bcl-paper-weak: #EFE0BD;                /* Carta più chiara */
+    --bcl-paper-strong: #D9C38F;              /* Carta più scura */
+    --bcl-surface-elevated: #FAF6ED;          /* Superficie elevata */
+    --bcl-surface-sunken: #D9C38F;            /* Superficie affondata */
+
+    /* Text - Inchiostro */
+    --bcl-ink: #2B1F14;                       /* Inchiostro principale */
+    --bcl-ink-weak: #4A3826;                  /* Inchiostro debole */
+    --bcl-ink-strong: #1C1814;                /* Inchiostro forte (bone black) */
+    --bcl-muted: #6C5A43;                     /* Testo mutato */
+    --bcl-text-disabled: #8B7E6A;             /* Testo disabilitato */
+    --bcl-text-inverse: #FAF6ED;              /* Testo inverso */
+
+    /* Interactive - Oro e accenti */
+    --bcl-gold: #C9A54A;                      /* Oro principale */
+    --bcl-gold-hover: #D4AF37;                /* Oro hover (gold leaf) */
+    --bcl-gold-active: #B8943A;               /* Oro attivo */
+    --bcl-emerald: #2E7D64;                   /* Smeraldo (derivato da malachite) */
+    --bcl-accent: #C80815;                    /* Accento rosso veneziano */
+    --bcl-accent-strong: #722F37;             /* Accento forte (wine) */
+
+    /* States - Stati semantici */
+    --bcl-success: #2E7D64;                   /* Successo verde */
+    --bcl-warning: #CC9A2E;                   /* Warning ocra */
+    --bcl-danger: #C80815;                    /* Pericolo rosso */
+    --bcl-info: #4166F5;                      /* Info blu */
+
+    /* Special - Elementi decorativi */
+    --bcl-seal-wax: #8E1D22;                  /* Ceralacca */
+    --bcl-ribbon: #7E1F1B;                    /* Nastro */
+    --bcl-nav: #223F4A;                       /* Navigazione/mappa */
+    --bcl-shadow-ink: rgba(28, 24, 20, 0.35); /* Ombra inchiostro */
+    --bcl-paper-overlay: rgba(43, 31, 20, 0.06); /* Overlay pergamena */
+
+    /* Focus & Borders */
+    --bcl-focus: #C9A54A;                     /* Focus oro */
+    --bcl-focus-shadow: 0 0 0 3px rgba(201, 165, 74, 0.25);
+    --bcl-border: rgba(139, 126, 106, 0.4);   /* Bordo normale */
+    --bcl-divider: rgba(139, 126, 106, 0.2);  /* Divisore sottile */
+    --bcl-border-strong: rgba(139, 126, 106, 0.6); /* Bordo forte */
+
+    /* =============================================
+       TIPOGRAFIA - Font stack rinascimentale
+       ============================================= */
+
+    --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
+    --bcl-font-serif: "Alegreya", "EB Garamond", Georgia, serif;
+    --bcl-font-sans: "Inter", system-ui, -apple-system, sans-serif;
+    --bcl-font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --bcl-font-script: "Uncial Antiqua", "MedievalSharp", cursive;
+
+    /* Font sizes - Sistema rem scalabile */
+    --bcl-font-size-2xs: 0.625rem;   /* 10px */
+    --bcl-font-size-xs: 0.75rem;     /* 12px */
+    --bcl-font-size-sm: 0.875rem;    /* 14px */
+    --bcl-font-size-md: 1rem;        /* 16px */
+    --bcl-font-size-lg: 1.125rem;    /* 18px */
+    --bcl-font-size-xl: 1.25rem;     /* 20px */
+    --bcl-font-size-2xl: 1.5rem;     /* 24px */
+    --bcl-font-size-3xl: 1.875rem;   /* 30px */
+    --bcl-font-size-4xl: 2.25rem;    /* 36px */
+
+    /* Font weights */
+    --bcl-font-weight-light: 300;
+    --bcl-font-weight-regular: 400;
+    --bcl-font-weight-medium: 500;
+    --bcl-font-weight-semibold: 600;
+    --bcl-font-weight-bold: 700;
+    --bcl-font-weight-black: 900;
+
+    /* Line heights */
+    --bcl-line-height-tight: 1.2;
+    --bcl-line-height-normal: 1.45;
+    --bcl-line-height-relaxed: 1.6;
+    --bcl-line-height-loose: 1.8;
+
+    /* Letter spacing */
+    --bcl-letter-spacing-tight: -0.02em;
+    --bcl-letter-spacing-normal: 0;
+    --bcl-letter-spacing-wide: 0.02em;
+    --bcl-letter-spacing-wider: 0.04em;
+    --bcl-letter-spacing-widest: 0.08em;
+
+    /* =============================================
+       SPACING - Sistema 4pt grid (crlngn-ui)
+       ============================================= */
+
+    --bcl-space-0: 0;
+    --bcl-space-1: 0.25rem;   /* 4px */
+    --bcl-space-2: 0.5rem;    /* 8px */
+    --bcl-space-3: 0.75rem;   /* 12px */
+    --bcl-space-4: 1rem;      /* 16px */
+    --bcl-space-5: 1.25rem;   /* 20px */
+    --bcl-space-6: 1.5rem;    /* 24px */
+    --bcl-space-8: 2rem;      /* 32px */
+    --bcl-space-10: 2.5rem;   /* 40px */
+    --bcl-space-12: 3rem;     /* 48px */
+    --bcl-space-16: 4rem;     /* 64px */
+
+    /* =============================================
+       RADIUS - Angoli rinascimentali
+       ============================================= */
+
+    --bcl-radius-none: 0;
+    --bcl-radius-sm: 0.25rem;    /* 4px */
+    --bcl-radius-md: 0.5rem;     /* 8px */
+    --bcl-radius-lg: 0.75rem;    /* 12px */
+    --bcl-radius-xl: 1rem;       /* 16px */
+    --bcl-radius-2xl: 1.5rem;    /* 24px */
+    --bcl-radius-round: 50%;
+    --bcl-radius-pill: 9999px;
+
+    /* =============================================
+       SHADOWS - Ombre pergamena
+       ============================================= */
+
+    --bcl-shadow-xs: 0 1px 2px 0 rgba(28, 24, 20, 0.05);
+    --bcl-shadow-sm: 0 1px 3px 0 rgba(28, 24, 20, 0.1), 0 1px 2px -1px rgba(28, 24, 20, 0.1);
+    --bcl-shadow-md: 0 4px 6px -1px rgba(28, 24, 20, 0.1), 0 2px 4px -2px rgba(28, 24, 20, 0.1);
+    --bcl-shadow-lg: 0 10px 15px -3px rgba(28, 24, 20, 0.1), 0 4px 6px -4px rgba(28, 24, 20, 0.1);
+    --bcl-shadow-xl: 0 20px 25px -5px rgba(28, 24, 20, 0.1), 0 8px 10px -6px rgba(28, 24, 20, 0.1);
+    --bcl-shadow-2xl: 0 25px 50px -12px rgba(28, 24, 20, 0.25);
+    --bcl-shadow-inner: inset 0 2px 4px 0 rgba(28, 24, 20, 0.05);
+
+    /* Ombre speciali rinascimentali */
+    --bcl-shadow-parchment: 0 2px 8px rgba(112, 66, 20, 0.15);
+    --bcl-shadow-gold: 0 4px 16px rgba(212, 175, 55, 0.3);
+    --bcl-shadow-wax: 0 3px 12px rgba(142, 29, 34, 0.4);
+
+    /* =============================================
+       TRANSITIONS - Animazioni fluide
+       ============================================= */
+
+    --bcl-transition-fast: 150ms ease-in-out;
+    --bcl-transition-normal: 250ms ease-in-out;
+    --bcl-transition-slow: 350ms ease-in-out;
+
+    --bcl-ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --bcl-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --bcl-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* =============================================
+       Z-INDEX - Layers gerarchici
+       ============================================= */
+
+    --bcl-z-base: 0;
+    --bcl-z-dropdown: 1000;
+    --bcl-z-sticky: 1020;
+    --bcl-z-fixed: 1030;
+    --bcl-z-backdrop: 1040;
+    --bcl-z-modal: 1050;
+    --bcl-z-popover: 1060;
+    --bcl-z-tooltip: 1070;
+    --bcl-z-notification: 1080;
+
+    /* =============================================
+       RETROCOMPATIBILITÀ
+       Alias per sistemi legacy
+       ============================================= */
+
+    /* Sistema --branca-* per Theme Engine Carolingiano */
+    --branca-bg: var(--bcl-bg);
+    --branca-surface: var(--bcl-surface);
+    --branca-paper: var(--bcl-paper);
+    --branca-ink: var(--bcl-ink);
+    --branca-muted: var(--bcl-muted);
+    --branca-gold: var(--bcl-gold);
+    --branca-emerald: var(--bcl-emerald);
+    --branca-accent: var(--bcl-accent);
+    --branca-accent-strong: var(--bcl-accent-strong);
+    --branca-success: var(--bcl-success);
+    --branca-warning: var(--bcl-warning);
+    --branca-danger: var(--bcl-danger);
+    --branca-focus: var(--bcl-focus);
+    --branca-border: var(--bcl-border);
+    --branca-divider: var(--bcl-divider);
+  }
+
+  /* ================================================
+     DARK MODE
+     Inversione intelligente mantenendo contrasti
+     ================================================ */
+
+  .theme-brancalonia[data-theme="dark"],
+  .theme-brancalonia.dark-mode {
+    /* Backgrounds - Invertiti */
+    --bcl-bg: #0F0C08;
+    --bcl-bg-secondary: #1A1611;
+    --bcl-bg-tertiary: #252018;
+
+    /* Surfaces - Scuriti */
+    --bcl-surface: #2B2218;
+    --bcl-paper: #3A2E20;
+    --bcl-paper-weak: #352A1F;
+    --bcl-paper-strong: #453626;
+    --bcl-surface-elevated: #453626;
+    --bcl-surface-sunken: #201A13;
+
+    /* Text - Invertiti */
+    --bcl-ink: #F3E6CC;
+    --bcl-ink-weak: #D9C38F;
+    --bcl-ink-strong: #FAF6ED;
+    --bcl-muted: #C9B691;
+    --bcl-text-disabled: #7A6546;
+    --bcl-text-inverse: #2B1F14;
+
+    /* Interactive - Mantenuti luminosi */
+    --bcl-gold: #C9A54A;
+    --bcl-gold-hover: #D4AF37;
+    --bcl-gold-active: #B8943A;
+
+    /* Borders - Adattati */
+    --bcl-border: rgba(201, 182, 145, 0.2);
+    --bcl-divider: rgba(201, 182, 145, 0.1);
+    --bcl-border-strong: rgba(201, 182, 145, 0.3);
+  }
+
+  /* ================================================
+     HIGH CONTRAST MODE
+     Accessibilità WCAG AAA
+     ================================================ */
+
+  @media (prefers-contrast: high) {
+    .theme-brancalonia {
+      --bcl-ink: #000000;
+      --bcl-ink-strong: #000000;
+      --bcl-surface: #FFFFFF;
+      --bcl-paper: #FFFFFF;
+      --bcl-border: #000000;
+      --bcl-focus: #0066CC;
+      --bcl-focus-shadow: 0 0 0 3px rgba(0, 102, 204, 0.5);
+    }
+  }
+
+  /* ================================================
+     REDUCED MOTION
+     Rispetta preferenze utente
+     ================================================ */
+
+  @media (prefers-reduced-motion: reduce) {
+    .theme-brancalonia {
+      --bcl-transition-fast: 0ms;
+      --bcl-transition-normal: 0ms;
+      --bcl-transition-slow: 0ms;
+    }
+  }
+}

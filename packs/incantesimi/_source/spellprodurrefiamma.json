@@ -1,0 +1,118 @@
+{
+  "_id": "sCxIBxxjGpSJCD53",
+  "_key": "!item!spellprodurrefiamma6e2d71",
+  "name": "Produrre Fiamma",
+  "type": "spell",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Una fiamma tremolante appare nella tua mano. La fiamma vi rimane per la durata e non ti ferisce né danneggia il tuo equipaggiamento. La fiamma fornisce luce intensa in un raggio di 10 piedi e luce fioca per altri 10 piedi. L'incantesimo termina se lo congedi come azione o se lo lanci di nuovo. Puoi anche attaccare con la fiamma, anche se farlo termina l'incantesimo. Quando lanci questo incantesimo, o come azione in un turno successivo, puoi scagliare la fiamma verso una creatura entro 30 piedi da te. Effettua un attacco a distanza con incantesimo. Se colpisci, il bersaglio subisce 1d8 danni da fuoco.</p><h3>Note per il DM</h3><p><em>Produce Flame è versatile utilità/combat. Ottimo per druidi che vogliono luce senza occupare slot. Attacco termina incantesimo.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "D&D 5e PHB p.269",
+    "level": 0,
+    "school": "evo",
+    "components": {
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "spell-produrre-fiamma",
+      "fonte": "D&D 5e PHB p.269",
+      "note_dm": "Produce Flame è versatile utilità/combat. Ottimo per druidi che vogliono luce senza occupare slot. Attacco termina incantesimo.",
+      "implementazione": {
+        "tipo": "cantrip",
+        "attivazione": "action",
+        "range": 30,
+        "durata": "10 minutes",
+        "attacco": "ranged spell",
+        "danno": "1d8",
+        "danno_tipo": "fire",
+        "luce": {
+          "bright": 10,
+          "dim": 20
+        }
+      }
+    },
+    "dnd5e": {
+      "itemData": {
+        "school": "Evocazione",
+        "level": 0
+      }
+    }
+  }
+}

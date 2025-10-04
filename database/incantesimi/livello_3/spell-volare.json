@@ -1,0 +1,70 @@
+{
+  "id": "spell-volare",
+  "nome": "Volare",
+  "nome_inglese": "Fly",
+  "livello": 3,
+  "scuola": "Trasmutazione",
+  "tempo_lancio": "1 azione",
+  "gittata": "Contatto",
+  "componenti": {
+    "verbale": true,
+    "somatica": true,
+    "materiale": true,
+    "materiale_descrizione": "Una piuma d'ala di qualsiasi uccello"
+  },
+  "durata": "Concentrazione, fino a 10 minuti",
+  "descrizione": "Tocchi una creatura consenziente. Il bersaglio ottiene una velocità di volo di 60 piedi per la durata. Quando l'incantesimo termina, il bersaglio cade se è ancora in aria, a meno che non possa fermare la caduta.",
+  "classi": ["Mago", "Stregone", "Warlock"],
+  "scaling": {
+    "descrizione": "+1 creatura per slot level sopra 3°",
+    "slot_4": "2 creature",
+    "slot_5": "3 creature",
+    "slot_6": "4 creature"
+  },
+  "implementazione_foundry": {
+    "tipo": "spell",
+    "livello": 3,
+    "attivazione": "action",
+    "range": "touch",
+    "durata": "10 minutes",
+    "concentrazione": true,
+    "movimento": "60 ft fly speed"
+  },
+  "meccaniche_volo": {
+    "velocita": "60 ft (12 quadretti)",
+    "manovrabilita": "Perfetta (hover possibile)",
+    "altezza": "Nessun limite in teoria",
+    "caduta": "Cade quando finisce"
+  },
+  "vantaggi_tattici": [
+    "Bypass terreno/ostacoli",
+    "Range advantage",
+    "Melee immunity da non-volanti",
+    "Esplorazione verticale",
+    "Fuga garantita"
+  ],
+  "problemi": [
+    "Concentrazione vulnerabile",
+    "Caduta se concentration lost",
+    "Indoor spesso limitato",
+    "Bersaglio ovvio per ranged"
+  ],
+  "caduta_gestione": {
+    "feather_fall": "Reaction per salvare",
+    "levitate": "Più sicuro ma più lento",
+    "fine_vicino_terra": "Pianificare atterraggio"
+  },
+  "confronto_movement": {
+    "vs_levitate": "Fly più veloce e libero",
+    "vs_spider_climb": "Fly non richiede superfici",
+    "vs_misty_step": "Fly continuo vs teleport"
+  },
+  "combo": [
+    "Archer/caster mobile platform",
+    "Grapple + fly = drop enemies",
+    "Scout aereo per party",
+    "Bypass dungeon sections"
+  ],
+  "note_dm": "Fly cambia encounter design. 60 ft speed è velocissimo. Concentrazione è unico limite reale. Indoor/underground limita utilità.",
+  "fonte": "D&D 5e PHB p.243"
+}

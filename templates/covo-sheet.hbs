@@ -1,0 +1,300 @@
+<form class="{{cssClass}} covo-sheet" autocomplete="off">
+  {{!-- Header --}}
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+    <div class="header-fields">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{actor.name}}" placeholder="Nome del Covo"/>
+      </h1>
+      <div class="covo-stats">
+        <div class="stat-box">
+          <label>💰 Tesoro</label>
+          <div class="stat-value">
+            <input type="number" name="system.currency.gp" value="{{actor.system.currency.gp}}" />
+            <span>mo</span>
+          </div>
+        </div>
+        <div class="stat-box">
+          <label>⭐ Reputazione</label>
+          <div class="stat-value">{{reputation}}</div>
+        </div>
+        <div class="stat-box">
+          <label>🏠 Granlussi</label>
+          <div class="stat-value">{{stats.activeGranlussi}}/5</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Navigation Tabs --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="overview">Panoramica</a>
+    <a class="item" data-tab="granlussi">Granlussi</a>
+    <a class="item" data-tab="members">Membri</a>
+    <a class="item" data-tab="treasury">Finanze</a>
+    <a class="item" data-tab="notes">Note</a>
+  </nav>
+
+  {{!-- Sheet Content --}}
+  <section class="sheet-body">
+
+    {{!-- Overview Tab --}}
+    <div class="tab overview" data-group="primary" data-tab="overview">
+      <div class="overview-grid">
+
+        {{!-- Status Summary --}}
+        <div class="status-card">
+          <h2>📊 Stato del Covo</h2>
+          <div class="status-grid">
+            <div class="status-item">
+              <span class="label">Fondato:</span>
+              <span class="value">{{formatDate founded}}</span>
+            </div>
+            <div class="status-item">
+              <span class="label">Valore Totale:</span>
+              <span class="value">{{stats.totalInvestment}} mo</span>
+            </div>
+            <div class="status-item">
+              <span class="label">Membri Attivi:</span>
+              <span class="value">{{members.length}}</span>
+            </div>
+            <div class="status-item">
+              <span class="label">Completamento:</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: {{multiply stats.activeGranlussi 20}}%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {{!-- Active Benefits --}}
+        <div class="benefits-card">
+          <h2>✨ Benefici Attivi</h2>
+          <ul class="benefits-list">
+            {{#each granlussi as |granlusso|}}
+              {{#if (gt granlusso.system.level.value 0)}}
+                <li class="benefit-item">
+                  <img src="{{granlusso.img}}" width="24" height="24">
+                  <div>
+                    <strong>{{granlusso.name}} Lv.{{granlusso.system.level.value}}</strong>
+                    <span>{{lookup (lookup granlusso.flags.brancalonia-bigat.benefits granlusso.system.level.value) 'description'}}</span>
+                  </div>
+                </li>
+              {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+
+        {{!-- Construction Queue --}}
+        {{#if constructionQueue.length}}
+        <div class="construction-card">
+          <h2>🔨 Costruzioni in Corso</h2>
+          {{#each constructionQueue as |project|}}
+            <div class="construction-item">
+              <h4>{{project.name}}</h4>
+              <div class="construction-progress">
+                <div class="progress-bar">
+                  <div class="progress-fill construction" style="width: {{project.percentComplete}}%"></div>
+                </div>
+                <span class="progress-text">{{project.progress.daysCompleted}}/{{project.progress.daysRequired}} giorni</span>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+        {{/if}}
+
+        {{!-- Quick Actions --}}
+        <div class="actions-card">
+          <h2>⚡ Azioni Rapide</h2>
+          <div class="action-buttons">
+            <button class="action-btn open-covo-scene" title="Visualizza la scena del covo">
+              <i class="fas fa-map"></i> Mappa Covo
+            </button>
+            <button class="action-btn manage-treasury" title="Gestisci il tesoro">
+              <i class="fas fa-coins"></i> Gestisci Tesoro
+            </button>
+            <button class="action-btn view-members" title="Visualizza membri">
+              <i class="fas fa-users"></i> Vedi Membri
+            </button>
+            <button class="action-btn open-journal" title="Apri registro del covo">
+              <i class="fas fa-book"></i> Registro
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Granlussi Tab --}}
+    <div class="tab granlussi" data-group="primary" data-tab="granlussi">
+      <div class="granlussi-grid">
+        {{#each granlussi as |granlusso|}}
+          <div class="granlusso-card {{#if (eq granlusso.system.level.value 3)}}max-level{{/if}}">
+            <div class="granlusso-header">
+              <img src="{{granlusso.img}}" width="48" height="48">
+              <div class="granlusso-info">
+                <h3>{{granlusso.name}}</h3>
+                <div class="level-display">
+                  <span class="level-text">Livello {{granlusso.system.level.value}}/3</span>
+                  <div class="level-dots">
+                    {{#times 3}}
+                      <span class="level-dot {{#if (lte this ../granlusso.system.level.value)}}active{{/if}}"></span>
+                    {{/times}}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="granlusso-description">
+              {{{granlusso.system.description.value}}}
+            </div>
+
+            {{!-- Current Benefits --}}
+            {{#if (gt granlusso.system.level.value 0)}}
+              <div class="current-benefits">
+                <h4>Benefici Attuali:</h4>
+                {{#each granlusso.flags.brancalonia-bigat.benefits as |benefit level|}}
+                  {{#if (lte level ../granlusso.system.level.value)}}
+                    <div class="benefit-level">
+                      <span class="level-badge">Lv.{{level}}</span>
+                      <span>{{benefit.description}}</span>
+                    </div>
+                  {{/if}}
+                {{/each}}
+              </div>
+            {{/if}}
+
+            {{!-- Upgrade Section --}}
+            {{#if (lt granlusso.system.level.value 3)}}
+              <div class="upgrade-section">
+                <h4>Prossimo Livello:</h4>
+                <div class="next-benefit">
+                  {{#with (lookup granlusso.flags.brancalonia-bigat.benefits (add granlusso.system.level.value 1)) as |nextBenefit|}}
+                    <p>{{nextBenefit.description}}</p>
+                    <div class="upgrade-cost">
+                      <span>💰 Costo: {{nextBenefit.cost}} mo</span>
+                      {{#if ../constructionTimeEnabled}}
+                        <span>⏱️ Tempo: {{multiply (add ../granlusso.system.level.value 1) 7}} giorni</span>
+                      {{/if}}
+                    </div>
+                  {{/with}}
+                </div>
+                <button class="upgrade-granlusso" data-item-id="{{granlusso._id}}">
+                  <i class="fas fa-arrow-up"></i> Migliora
+                </button>
+              </div>
+            {{else}}
+              <div class="max-level-badge">
+                <i class="fas fa-star"></i> Livello Massimo
+              </div>
+            {{/if}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    {{!-- Members Tab --}}
+    <div class="tab members" data-group="primary" data-tab="members">
+      <div class="members-section">
+        <h2>Membri della Compagnia</h2>
+        <table class="members-table">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Classe</th>
+              <th>Livello</th>
+              <th>Ruolo</th>
+              <th>Stato</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each members as |member|}}
+              <tr>
+                <td>
+                  <img src="{{member.img}}" width="24" height="24">
+                  <a class="entity-link" data-entity="Actor" data-id="{{member._id}}">{{member.name}}</a>
+                </td>
+                <td>{{member.system.details.class}}</td>
+                <td>{{member.system.details.level}}</td>
+                <td>{{member.flags.brancalonia-bigat.compagniaRole}}</td>
+                <td>
+                  {{#if member.system.attributes.hp.value}}
+                    <span class="status-active">Attivo</span>
+                  {{else}}
+                    <span class="status-ko">KO</span>
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+
+        <div class="members-actions">
+          <button class="add-member"><i class="fas fa-user-plus"></i> Aggiungi Membro</button>
+          <button class="manage-roles"><i class="fas fa-user-tag"></i> Gestisci Ruoli</button>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Treasury Tab --}}
+    <div class="tab treasury" data-group="primary" data-tab="treasury">
+      <div class="treasury-section">
+        <div class="treasury-header">
+          <h2>💰 Tesoro del Covo</h2>
+          <div class="treasury-balance">
+            <span class="balance-label">Saldo Attuale:</span>
+            <span class="balance-amount">{{treasury}} mo</span>
+          </div>
+        </div>
+
+        <div class="treasury-controls">
+          <button class="manage-treasury deposit">
+            <i class="fas fa-plus-circle"></i> Deposita
+          </button>
+          <button class="manage-treasury withdraw">
+            <i class="fas fa-minus-circle"></i> Preleva
+          </button>
+          <button class="distribute-loot">
+            <i class="fas fa-coins"></i> Dividi Bottino
+          </button>
+        </div>
+
+        <div class="transactions-log">
+          <h3>Registro Transazioni</h3>
+          <table class="transactions-table">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Descrizione</th>
+                <th>Entrata</th>
+                <th>Uscita</th>
+                <th>Saldo</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each transactions as |transaction|}}
+                <tr>
+                  <td>{{formatDate transaction.date}}</td>
+                  <td>{{transaction.description}}</td>
+                  <td class="amount-in">{{#if transaction.deposit}}+{{transaction.amount}}{{/if}}</td>
+                  <td class="amount-out">{{#unless transaction.deposit}}-{{transaction.amount}}{{/unless}}</td>
+                  <td>{{transaction.balance}}</td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Notes Tab --}}
+    <div class="tab notes" data-group="primary" data-tab="notes">
+      <div class="notes-section">
+        <h2>📝 Note del Covo</h2>
+        <div class="editor">
+          {{editor enrichedBiography target="system.details.biography.value" button=true owner=owner editable=editable}}
+        </div>
+      </div>
+    </div>
+
+  </section>
+</form>

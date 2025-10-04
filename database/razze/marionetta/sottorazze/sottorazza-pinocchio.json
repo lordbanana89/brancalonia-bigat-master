@@ -1,0 +1,14 @@
+{
+  "id": "race-marionetta-sottorazza-pinocchio",
+  "nome": "Pinocchio",
+  "dettagli": {
+    "nome": "Pinocchio",
+    "taglia": "Media",
+    "bonus": "+1 Destrezza",
+    "tratto": {
+      "bugie_visibili": "Il naso si allunga quando menti",
+      "desiderio_umanita": "Cerca di diventare umano vero"
+    }
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

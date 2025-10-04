@@ -1,0 +1,21 @@
+{
+  "nome": "Emeriticenza Assoluta",
+  "fonte": "Manuale Base p.40",
+  "tipo": "emeriticenza",
+  "descrizione": "Bonus competenza diventa +4",
+  "requisiti": "6° livello + 9000 PE extra; Possedere altre 2 emeriticenze",
+  "usi_massimi": 1,
+  "meccaniche": {
+    "bonus_competenza": {
+      "tipo": "attivo",
+      "descrizione": "Bonus competenza diventa +4",
+      "implementazione": "system.attributes.prof = 4",
+      "mode": 5
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "emeriticenza_assoluta",
+    "compendio": "emeriticenze"
+  }
+}

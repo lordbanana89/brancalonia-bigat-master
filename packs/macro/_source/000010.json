@@ -1,0 +1,29 @@
+{
+  "_id": "PuJ86U9r1HnUOnPx",
+  "name": "🏰 Sistema Fazioni",
+  "type": "script",
+  "author": "brancalonia",
+  "img": "icons/environment/settlement/castle-flags.webp",
+  "scope": "global",
+  "command": "// Macro per Sistema Fazioni\nif (!game.modules.get('brancalonia-bigat')?.active) {\n  ui.notifications.error('Modulo Brancalonia non attivo!');\n  return;\n}\n\nconst factions = game.brancalonia?.FactionsSystem;\nif (!factions) {\n  ui.notifications.error('Sistema Fazioni non disponibile!');\n  return;\n}\n\n// Ottieni reputazione attuale\nconst currentRep = factions.getAllReputations();\n\nnew Dialog({\n  title: '🏰 Sistema Fazioni',\n  content: `\n    <div style=\"padding: 10px;\">\n      <h3>Reputazione con le Fazioni</h3>\n      <div style=\"background: #f5e6d3; padding: 10px; border-radius: 5px; margin: 10px 0;\">\n        <table style=\"width: 100%;\">\n          <tr><th>Fazione</th><th>Reputazione</th><th>Status</th></tr>\n          <tr><td>🦅 Aquile</td><td>${currentRep.aquile || 0}</td><td>${factions.getStatus('aquile')}</td></tr>\n          <tr><td>🐺 Lupi</td><td>${currentRep.lupi || 0}</td><td>${factions.getStatus('lupi')}</td></tr>\n          <tr><td>🐻 Orsi</td><td>${currentRep.orsi || 0}</td><td>${factions.getStatus('orsi')}</td></tr>\n          <tr><td>🦊 Volpi</td><td>${currentRep.volpi || 0}</td><td>${factions.getStatus('volpi')}</td></tr>\n          <tr><td>⛪ Chiesa</td><td>${currentRep.chiesa || 0}</td><td>${factions.getStatus('chiesa')}</td></tr>\n          <tr><td>👑 Nobiltà</td><td>${currentRep.nobilta || 0}</td><td>${factions.getStatus('nobilta')}</td></tr>\n        </table>\n      </div>\n      <hr>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"faction-select\">Fazione:</label>\n        <select id=\"faction-select\" style=\"margin-left: 10px;\">\n          <option value=\"aquile\">🦅 Aquile</option>\n          <option value=\"lupi\">🐺 Lupi</option>\n          <option value=\"orsi\">🐻 Orsi</option>\n          <option value=\"volpi\">🦊 Volpi</option>\n          <option value=\"chiesa\">⛪ Chiesa</option>\n          <option value=\"nobilta\">👑 Nobiltà</option>\n        </select>\n      </div>\n      <div style=\"margin: 10px 0;\">\n        <label for=\"rep-change\">Modifica:</label>\n        <input type=\"number\" id=\"rep-change\" value=\"0\" style=\"width: 60px; margin-left: 10px;\"/>\n      </div>\n    </div>\n  `,\n  buttons: {\n    modify: {\n      icon: '<i class=\"fas fa-edit\"></i>',\n      label: 'Modifica Reputazione',\n      callback: (html) => {\n        const faction = html.find('#faction-select').val();\n        const change = parseInt(html.find('#rep-change').val());\n        factions.modifyReputation(faction, change);\n      }\n    },\n    mission: {\n      icon: '<i class=\"fas fa-scroll\"></i>',\n      label: 'Genera Missione',\n      callback: (html) => {\n        const faction = html.find('#faction-select').val();\n        factions.generateFactionMission(faction);\n      }\n    },\n    benefits: {\n      icon: '<i class=\"fas fa-gift\"></i>',\n      label: 'Mostra Benefici',\n      callback: (html) => {\n        const faction = html.find('#faction-select').val();\n        factions.showFactionBenefits(faction);\n      }\n    },\n    rivalries: {\n      icon: '<i class=\"fas fa-balance-scale\"></i>',\n      label: 'Rivalità',\n      callback: () => {\n        factions.showRivalries();\n      }\n    },\n    cancel: {\n      icon: '<i class=\"fas fa-times\"></i>',\n      label: 'Chiudi'\n    }\n  },\n  default: 'modify'\n}).render(true);",
+  "folder": null,
+  "sort": 100009,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "category": "reputation"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "coreVersion": "13.0.0",
+    "createdTime": 1700000009000,
+    "modifiedTime": 1700000009000,
+    "lastModifiedBy": "brancalonia"
+  },
+  "_key": "!macros!brancalonia010",
+  "system": {}
+}

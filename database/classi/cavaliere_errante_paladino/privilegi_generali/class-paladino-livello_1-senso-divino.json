@@ -1,0 +1,52 @@
+{
+  "id": "class-paladino-livello_1-senso-divino",
+  "nome": "Senso Divino",
+  "nome_brancalonia": "Intuito del Cavaliere",
+  "livello": 1,
+  "tipo": "attivo",
+  "descrizione": "La presenza del male forte registra sui tuoi sensi come un odore nocivo, e il bene potente suona come musica celestiale alle tue orecchie. Come azione, puoi aprire la tua consapevolezza per rilevare tali forze. Fino alla fine del tuo prossimo turno, conosci la posizione di qualsiasi celestiale, immondo o non morto entro 18 metri da te che non sia dietro copertura totale.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "azione",
+      "durata": "Fino fine prossimo turno",
+      "raggio": "18 metri (60 piedi)"
+    },
+    "rileva": {
+      "creature": ["Celestiali", "Immondi", "Non morti"],
+      "info": ["Posizione", "Tipo (non identità)"],
+      "attraverso": "Muri e ostacoli non-totali"
+    },
+    "usi": {
+      "formula": "1 + modificatore Carisma",
+      "minimo": 1,
+      "recupero": "Riposo lungo"
+    },
+    "limitazioni": {
+      "copertura_totale": "Blocca rilevamento",
+      "info_limitate": "Non rivela identità o numero esatto"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "ability",
+    "uses": {
+      "max": "1 + @abilities.cha.mod",
+      "per": "lr"
+    },
+    "raggio": 60
+  },
+  "uso_tattico": {
+    "esplorazione": "Controllare stanze prima di entrare",
+    "combattimento": "Trovare nemici invisibili",
+    "sociale": "Identificare infiltrati"
+  },
+  "esempi": {
+    "dungeon": "Rileva non morti in cripta",
+    "città": "Identifica demoni camuffati",
+    "investigazione": "Trova vampiro nascosto"
+  },
+  "evoluzione": {
+    "livello_1": "Base detection",
+    "con_giuramento": "Alcuni giuramenti potenziano"
+  },
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.84"
+}

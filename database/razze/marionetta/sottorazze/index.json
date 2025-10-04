@@ -1,0 +1,18 @@
+{
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 2,
+  "elementi": [
+    {
+      "id": "sottorazza-pinocchio",
+      "nome": "Sottorazza Pinocchio",
+      "file": "sottorazza-pinocchio.json"
+    },
+    {
+      "id": "sottorazza-pupo",
+      "nome": "Sottorazza Pupo",
+      "file": "sottorazza-pupo.json"
+    }
+  ]
+}

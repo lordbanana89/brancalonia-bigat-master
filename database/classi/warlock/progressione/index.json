@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione Warlock",
+  "descrizione": "Tabella di progressione per la classe Warlock con bonus competenza, slot incantesimo e privilegi per livello.",
+  "fonte": "Manuale del Giocatore p.109-111",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione-warlock",
+      "nome": "Tabella Progressione Warlock",
+      "file": "progressione.json"
+    }
+  ]
+}

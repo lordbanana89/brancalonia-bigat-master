@@ -1,0 +1,44 @@
+{
+  "id": "025",
+  "nome": "La Catena del Cane Infernale",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Catena di ferro che scotta al tocco",
+  "proprieta": "Può trattenere qualsiasi creatura (Forza CD 30 per spezzare)",
+  "maledizione": "Attira cani infernali nel raggio di 1 km",
+  "valore": "800 mo",
+  "storia": "Usata per incatenare Cerbero per una notte",
+  "maledizione_specifica": "Attira cani infernali nel raggio di 1 km",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "restraint_with_encounter",
+      "restraintDC": 30,
+      "restraintType": "str",
+      "encounterType": "cani_infernali",
+      "encounterRange": 1000,
+      "encounterFrequency": "random",
+      "description": "Trattenere creatura (FOR CD30), attira cani infernali 1km"
+    },
+    "hooks": [],
+    "macros": ["restrainWithChain"],
+    "ui_config": {
+      "showDC": true,
+      "dcText": "FOR CD 30 per spezzare",
+      "dmReminder": true,
+      "reminderText": "⚠️ Incontri casuali con cani infernali entro 1 km"
+    },
+    "narrative_reminders": [
+      "Può trattenere QUALSIASI creatura, nessun limite di taglia",
+      "CD 30 Forza per spezzare = praticamente impossibile",
+      "Attira hell hounds e altri cani infernali nel raggio di 1 km",
+      "La catena scotta al tocco (danno fuoco minore)",
+      "Usata da Ercole per incatenare Cerbero"
+    ]
+  },
+  "img": "icons/tools/fasteners/chain-iron-steel.webp"
+}

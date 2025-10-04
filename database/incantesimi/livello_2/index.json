@@ -1,0 +1,68 @@
+{
+  "categoria": "Incantesimi",
+  "descrizione": "Contenuti della categoria Incantesimi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 12,
+  "elementi": [
+    {
+      "id": "blocca-persone",
+      "nome": "Blocca Persone",
+      "file": "spell-blocca-persone.json"
+    },
+    {
+      "id": "esorcismo",
+      "nome": "Esorcismo",
+      "file": "spell-esorcismo.json"
+    },
+    {
+      "id": "frantumare",
+      "nome": "Frantumare",
+      "file": "spell-frantumare.json"
+    },
+    {
+      "id": "invisibilità",
+      "nome": "Invisibilità",
+      "file": "spell-invisibilita.json"
+    },
+    {
+      "id": "levitazione",
+      "nome": "Levitazione",
+      "file": "spell-levitazione.json"
+    },
+    {
+      "id": "oscurità",
+      "nome": "Oscurità",
+      "file": "spell-oscurita.json"
+    },
+    {
+      "id": "passo-traslato",
+      "nome": "Passo Traslato",
+      "file": "spell-passo-traslato.json"
+    },
+    {
+      "id": "raggio-rovente",
+      "nome": "Raggio Rovente",
+      "file": "spell-raggio-rovente.json"
+    },
+    {
+      "id": "ragnatela",
+      "nome": "Ragnatela",
+      "file": "spell-ragnatela.json"
+    },
+    {
+      "id": "scurovisione",
+      "nome": "Scurovisione",
+      "file": "spell-scurovisione.json"
+    },
+    {
+      "id": "silenzio",
+      "nome": "Silenzio",
+      "file": "spell-silenzio.json"
+    },
+    {
+      "id": "suggestione",
+      "nome": "Suggestione",
+      "file": "spell-suggestione.json"
+    }
+  ]
+}

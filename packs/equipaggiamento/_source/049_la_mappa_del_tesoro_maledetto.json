@@ -1,0 +1,84 @@
+{
+  "_id": "DfqknBDahL0l2b3d",
+  "_key": "!item!lamappadeltesoromaledetto66f5dd",
+  "name": "La Mappa del Tesoro Maledetto",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Mappa che cambia ogni volta che la guardi</p><h3>Proprietà</h3><p>Porta sempre a un tesoro, mai lo stesso</p><h3>Storia</h3><p><em>1000 avventurieri la seguirono, 10 tornarono</em></p><h3>Maledizione</h3><p><strong>Il tesoro vale sempre meno del viaggio</strong></p><p>Il tesoro vale sempre meno del viaggio</p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": [
+      "mgc",
+      "cursed"
+    ],
+    "cursed": true,
+    "curse": "Il tesoro vale sempre meno del viaggio"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "049",
+      "categoria": "cimelo",
+      "storia": "1000 avventurieri la seguirono, 10 tornarono",
+      "proprieta_originale": "Porta sempre a un tesoro, mai lo stesso",
+      "maledizione": "Il tesoro vale sempre meno del viaggio",
+      "maledizione_specifica": "Il tesoro vale sempre meno del viaggio",
+      "implementazione": {
+        "tipo": "maledetto",
+        "attivo": false,
+        "active_effects": []
+      }
+    }
+  }
+}

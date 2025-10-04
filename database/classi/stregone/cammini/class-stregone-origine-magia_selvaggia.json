@@ -1,0 +1,49 @@
+{
+  "id": "class-stregone-origine-magia_selvaggia",
+  "nome": "Magia Selvaggia",
+  "progressione": {
+    "livello_1": [
+      {
+        "nome": "Surge Selvaggio della Magia",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Wild Magic Surge"
+        }
+      },
+      {
+        "nome": "Fortuna del Caos",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Tides of Chaos"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Sublimare la Fortuna",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bend Luck"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Controllo del Caos",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Controlled Chaos"
+        }
+      }
+    ],
+    "livello_18": [
+      {
+        "nome": "Tempesta del Caos",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Spell Bombardment"
+        }
+      }
+    ]
+  }
+}

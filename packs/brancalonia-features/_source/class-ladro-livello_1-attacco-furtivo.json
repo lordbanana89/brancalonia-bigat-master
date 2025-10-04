@@ -1,0 +1,39 @@
+{
+  "_id": "7yvfgsm4pj5lxzs0",
+  "_key": "!item!7yvfgsm4pj5lxzs0",
+  "name": "Attacco Furtivo",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Infliggi danni extra con attacchi precisi",
+      "chat": ""
+    },
+    "requirements": "Livello 1",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

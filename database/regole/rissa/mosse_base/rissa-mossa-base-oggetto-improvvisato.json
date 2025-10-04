@@ -1,0 +1,8 @@
+{
+  "id": "rissa-mossa-base-oggetto-improvvisato",
+  "nome": "Colpo con Oggetto",
+  "danno": "1d4 + Forza Batoste",
+  "descrizione": "Sedia, boccale, bottiglia",
+  "speciale": "L'oggetto si rompe con 1-2 sul d20",
+  "fonte": "Brancalonia Manuale Base"
+}

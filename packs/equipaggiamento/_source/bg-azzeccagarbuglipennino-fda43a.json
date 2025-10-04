@@ -1,0 +1,38 @@
+{
+  "_id": "bymwjxCuEIdFGzTy",
+  "_key": "!item!bg-azzeccagarbuglipennino-fda43a",
+  "name": "Pennino",
+  "type": "loot",
+  "img": "icons/tools/scribal/quill-feather-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pennino - Equipaggiamento iniziale del background azzeccagarbugli.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "tipo": "equipaggiamento_background",
+      "background": "azzeccagarbugli"
+    }
+  }
+}

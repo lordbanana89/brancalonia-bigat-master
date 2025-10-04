@@ -1,0 +1,28 @@
+{
+  "categoria": "Razze",
+  "descrizione": "Contenuti della categoria Razze",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 4,
+  "elementi": [
+    {
+      "id": "tratto-001-resistenza-infernale",
+      "nome": "Tratto 001 Resistenza Infernale",
+      "file": "tratto-001_resistenza_infernale.json"
+    },
+    {
+      "id": "tratto-002-eredita-infernale",
+      "nome": "Tratto 002 Eredita Infernale",
+      "file": "tratto-002_eredita_infernale.json"
+    },
+    {
+      "id": "tratto-003-puzza-di-zolfo",
+      "nome": "Tratto 003 Puzza di Zolfo",
+      "file": "tratto-003_puzza_di_zolfo.json"
+    },
+    {
+      "id": "tratto-004-marchio-del-diavolo",
+      "nome": "Tratto 004 Marchio del Diavolo",
+      "file": "tratto-004_marchio_del_diavolo.json"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "categoria": "Scudi",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "arm-std-301",
+      "nome": "Scudo",
+      "file": "arm-std-301_scudo.json"
+    }
+  ]
+}

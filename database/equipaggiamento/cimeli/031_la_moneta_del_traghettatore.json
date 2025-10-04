@@ -1,0 +1,41 @@
+{
+  "id": "031",
+  "nome": "La Moneta del Traghettatore",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Antica moneta sempre fredda",
+  "proprieta": "Chi muore con essa può tornare in vita una volta (una sola volta nella vita)",
+  "valore": "Inestimabile",
+  "storia": "Rubata a Caronte stesso",
+  "attivazione": "Deve essere tenuta sotto la lingua al momento della morte",
+  "implementazione": {
+    "tipo": "con_trigger",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "one_shot_lifetime",
+      "used": false,
+      "activationCondition": "hp_zero",
+      "activationRequirement": "under_tongue",
+      "effectDescription": "Resurrezione automatica a 1 HP",
+      "resurrectHP": 1
+    },
+    "hooks": ["updateActor"],
+    "macros": ["checkResurrection"],
+    "ui_config": {
+      "showStatus": true,
+      "statusText": {
+        "unused": "✨ Carica disponibile",
+        "used": "❌ Già utilizzata"
+      }
+    },
+    "narrative_reminders": [
+      "La moneta deve essere sotto la lingua al momento della morte",
+      "Funziona solo UNA volta nella vita del personaggio",
+      "Dopo l'uso, la moneta diventa un normale oggetto senza valore"
+    ]
+  },
+  "img": "icons/commodities/currency/coin-embossed-skull-gold.webp"
+}

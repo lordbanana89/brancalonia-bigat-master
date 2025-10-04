@@ -1,0 +1,125 @@
+{
+  "_id": "nVfWRBjyTTNDS5qo",
+  "_key": "!item!sottorazzapupofa97e7",
+  "name": "Pupo",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "description": {
+      "value": "",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Manuale Base",
+    "movement": {
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 0,
+      "units": "ft"
+    },
+    "type": {
+      "value": "construct",
+      "subtype": "",
+      "custom": ""
+    },
+    "advancement": [
+      {
+        "_id": "oz25ni960utfrxy4",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {
+          "size": "sm"
+        },
+        "level": 0,
+        "title": "Taglia",
+        "icon": "icons/svg/upgrade.svg"
+      },
+      {
+        "_id": "OXGFHs9UO4Pp3n3f",
+        "type": "size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Size",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "URdwiD2sQ9lYAQgF",
+        "type": "trait",
+        "configuration": {
+          "grants": [
+            "construct_resilience"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "Construct Nature",
+        "icon": "",
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "spdhyykpsyz3y58l",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.classladrolivello20colpodifortunaee8fd2"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Fortuna"
+      },
+      {
+        "_id": "tu761ltosegwdq5p",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.mcrstie13fxz5fdd"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Coraggioso"
+      },
+      {
+        "_id": "jlzdqsclpx7sylc6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.brancalonia.brancalonia-features.Item.640osjf8ykome9vu"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 0,
+        "title": "Agilità Halfling"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "race-marionetta-sottorazza-pupo",
+      "fonte": "Brancalonia Manuale Base"
+    }
+  }
+}

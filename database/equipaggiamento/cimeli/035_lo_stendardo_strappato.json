@@ -1,0 +1,47 @@
+{
+  "id": "035",
+  "nome": "Lo Stendardo Strappato",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Vessillo di battaglia lacerato e bruciato",
+  "proprieta": "Alleati entro 9m hanno vantaggio contro paura ma svantaggio a ritirarsi",
+  "valore": "600 mo",
+  "storia_tragica": "L'ultimo vessillo della battaglia perduta",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "flags.dnd5e.advantage.save.wis",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "aura_effect",
+      "auraRange": 30,
+      "auraTargets": "allies",
+      "effectDescription": "Vantaggio vs paura, svantaggio a ritirarsi",
+      "fearImmunity": false,
+      "retreatPenalty": true
+    },
+    "hooks": ["dnd5e.preRollSave"],
+    "macros": [],
+    "ui_config": {
+      "showAuraRange": true,
+      "auraRangeText": "Aura 9m (30 piedi)",
+      "showWarning": true,
+      "warningText": "⚠️ Gli alleati nell'aura hanno svantaggio ai tentativi di ritirata"
+    },
+    "narrative_reminders": [
+      "L'aura funziona solo mentre lo stendardo è impugnato/piantato",
+      "Alleati entro 9m guadagnano vantaggio ai TS contro paura",
+      "Gli stessi alleati subiscono svantaggio quando tentano di ritirarsi",
+      "Può creare situazioni tattiche interessanti (eroismo vs fuga)"
+    ]
+  },
+  "img": "icons/equipment/waist/banner-flag-red.webp"
+}

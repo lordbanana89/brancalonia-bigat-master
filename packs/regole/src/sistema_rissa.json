@@ -1,0 +1,22 @@
+{
+  "_id": "7mr6cvmc8SQvH0pa",
+  "_key": "!journal!sistemarissa72a9a6",
+  "name": "Regola",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "categoria": "sistema_rissa",
+      "fonte": "Manuale Base p.51-56"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

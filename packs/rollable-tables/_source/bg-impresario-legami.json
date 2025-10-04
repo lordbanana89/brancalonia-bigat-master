@@ -1,0 +1,106 @@
+{
+  "_id": "0FZT854Jzjt6H0z7",
+  "_key": "!tables!0FZT854Jzjt6H0z7",
+  "name": "Impresario - Legami",
+  "img": "icons/svg/d20-grey.svg",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "3k5jmQ3V8lxARTk8",
+      "type": 0,
+      "text": "La mia compagnia è la mia forza.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_key": "!results!3k5jmQ3V8lxARTk8"
+    },
+    {
+      "_id": "GuQtAWNnDDCLV2y1",
+      "type": 0,
+      "text": "Devo tutto al vecchio maestro che mi insegnò il mestiere.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_key": "!results!GuQtAWNnDDCLV2y1"
+    },
+    {
+      "_id": "aXjK8qweDppO8O7l",
+      "type": 0,
+      "text": "Proteggo a ogni costo la copia originale del canovaccio de 'La Febbra'.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_key": "!results!aXjK8qweDppO8O7l"
+    },
+    {
+      "_id": "1nz8ma8DvctBwoJM",
+      "type": 0,
+      "text": "Sono segretamente innamorato della mia prima attrice.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_key": "!results!1nz8ma8DvctBwoJM"
+    },
+    {
+      "_id": "E9T5fY0V00vzoEpp",
+      "type": 0,
+      "text": "Vivo per regalare emozioni a chiunque incontri.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_key": "!results!E9T5fY0V00vzoEpp"
+    },
+    {
+      "_id": "GZHRqWV88fPcJzCI",
+      "type": 0,
+      "text": "Non metterò mai nulla al di sopra dell'arte e dello spettacolo.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_key": "!results!GZHRqWV88fPcJzCI"
+    }
+  ],
+  "flags": {
+    "brancalonia": {
+      "background": "impresario",
+      "tipo": "legami"
+    },
+    "brancalonia-bigat": {
+      "isOfficial": true
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "type": "table",
+  "system": {}
+}

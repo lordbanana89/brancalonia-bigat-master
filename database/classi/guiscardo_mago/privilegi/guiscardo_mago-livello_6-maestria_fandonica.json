@@ -1,0 +1,12 @@
+{
+  "id": "guiscardo_mago-livello_6-maestria_fandonica",
+  "livello": 6,
+  "nome": "Maestria Fandonica",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.24",
+  "descrizione": "Il catalogo personale di reliquie cresce e tu sai come piegarle alla tua volontà. I vincoli che limitano gli altri maghi per te sono semplici formalità burocratiche.",
+  "effetti": [
+    "Puoi sintonizzarti con un massimo di quattro oggetti magici contemporaneamente",
+    "Ignori eventuali prerequisiti richiesti per la sintonia con un oggetto magico"
+  ]
+}

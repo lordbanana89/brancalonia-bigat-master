@@ -1,0 +1,22 @@
+{
+  "id": "miracolaro_chierico-livello_1-tirare_giu_santi",
+  "livello": 1,
+  "nome": "Tirare Giù i Santi",
+  "tipo": "reazione",
+  "fonte": "Manuale Base p.20",
+  "descrizione": "Con un'imprecazione o una preghiera rapida tiri giù dal calendario il santo giusto per ribaltare il risultato di un tiro.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "reazione",
+      "momento": "Quando fallisci un tiro o vieni colpito da un attacco"
+    },
+    "effetti": [
+      "Aggiungi il tuo modificatore di Saggezza al tiro appena effettuato",
+      "Oppure sottrai il tuo modificatore di Saggezza al tiro per colpire dell'attaccante"
+    ],
+    "usi": {
+      "valore": "Modificatore di Saggezza (minimo 1)",
+      "recupero": "Riposo lungo"
+    }
+  }
+}

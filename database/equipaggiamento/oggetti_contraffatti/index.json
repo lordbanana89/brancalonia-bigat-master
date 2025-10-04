@@ -1,0 +1,33 @@
+{
+  "categoria": "Oggetti_contraffatti",
+  "descrizione": "Merci taroccate che imitano documenti, mappe e reliquie diffuse nel Regno.",
+  "fonte": "Manuale Base p.64-65",
+  "totale": 5,
+  "elementi": [
+    {
+      "id": "oggetto-contraff-001",
+      "nome": "Documenti Falsi",
+      "file": "oggetto-contraff-001_documenti_falsi.json"
+    },
+    {
+      "id": "oggetto-contraff-002",
+      "nome": "Mappe False",
+      "file": "oggetto-contraff-002_mappe_false.json"
+    },
+    {
+      "id": "oggetto-contraff-003",
+      "nome": "Oggetti di Pregio Falsi",
+      "file": "oggetto-contraff-003_oggetti_pregio_falsi.json"
+    },
+    {
+      "id": "oggetto-contraff-004",
+      "nome": "Patenti di Nobiltà",
+      "file": "oggetto-contraff-004_patenti_nobilta.json"
+    },
+    {
+      "id": "oggetto-contraff-005",
+      "nome": "Reliquie False",
+      "file": "oggetto-contraff-005_reliquie_false.json"
+    }
+  ]
+}

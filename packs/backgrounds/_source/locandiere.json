@@ -1,0 +1,49 @@
+{
+  "_id": "locandierevcqp61",
+  "_key": "!item!locandierevcqp61",
+  "name": "Locandiere",
+  "type": "background",
+  "img": "icons/environment/settlement/tavern-interior.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Gestore di osteria, taverna o locanda, esperto nell'arte dell'ospitalità e del pettegolezzo</em></p>\n",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Brancalonia Macaronicon p.41-42",
+    "identifier": "locandiere",
+    "advancement": [
+      {
+        "_id": "WnhaabwOMNLBhw4J",
+        "type": "Trait",
+        "configuration": {
+          "choices": [
+            {
+              "count": 2
+            }
+          ],
+          "grants": [],
+          "mode": "choose",
+          "allowReplacements": false
+        },
+        "value": {}
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "fonte": "Brancalonia Macaronicon p.41-42",
+      "validazione": {
+        "implementato": false,
+        "file_id": "locandiere_background_macaronicon",
+        "compendio": "backgrounds_macaronicon"
+      }
+    }
+  }
+}

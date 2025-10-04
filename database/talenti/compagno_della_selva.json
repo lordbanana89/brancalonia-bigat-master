@@ -1,0 +1,28 @@
+{
+  "nome": "Compagno della Selva",
+  "fonte": "Manuale Base p.37",
+  "tipo": "talento",
+  "descrizione": "Affinità speciale con la selva e legame con animale selvatico",
+  "requisiti": "Razza: Selvatico",
+  "meccaniche": {
+    "expertise_natura": {
+      "tipo": "attivo",
+      "descrizione": "Bonus competenza raddoppiato per Natura e Sopravvivenza",
+      "implementazione": {
+        "natura": "system.skills.nat.value = 2",
+        "sopravvivenza": "system.skills.sur.value = 2"
+      },
+      "mode": 5
+    },
+    "bestia_amica": {
+      "tipo": "narrativo",
+      "descrizione": "Rito 8 ore per legame con bestia Media o inferiore GS 1/4, obbedisce ai comandi",
+      "nota": "Meccanica complessa che richiede gestione companion"
+    }
+  },
+  "validazione": {
+    "implementato": false,
+    "file_id": "compagno_della_selva",
+    "compendio": "talenti"
+  }
+}

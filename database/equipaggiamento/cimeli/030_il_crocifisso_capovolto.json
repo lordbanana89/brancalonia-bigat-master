@@ -1,0 +1,52 @@
+{
+  "id": "030",
+  "nome": "Il Crocifisso Capovolto",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Croce d'argento che si capovolge da sola",
+  "proprieta": "Protegge dai demoni ma attira l'Inquisizione",
+  "meccanica": "+5 ai TS contro demoni, -5 alle prove sociali con religiosi",
+  "valore": "250 mo",
+  "storia": "Benedetto per errore durante messa nera",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 3,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.bonuses.abilities.save",
+        "mode": 2,
+        "value": "5",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [
+      {
+        "key": "system.skills.per.bonuses.check",
+        "mode": 2,
+        "value": "-5",
+        "priority": 20
+      },
+      {
+        "key": "system.skills.dec.bonuses.check",
+        "mode": 2,
+        "value": "-5",
+        "priority": 20
+      }
+    ],
+    "tracking_flags": {
+      "requiresConditional": true,
+      "conditionalType": "demon_effects_and_religious_npcs",
+      "bonusCondition": "vs_demoni",
+      "malusCondition": "vs_religiosi",
+      "description": "+5 TS contro demoni, -5 sociali con religiosi"
+    },
+    "hooks": ["dnd5e.preRollSave", "dnd5e.preRollSkill"],
+    "macros": [],
+    "ui_config": {
+      "showWarning": true,
+      "warningText": "⚠️ Attira ostilità da religiosi e Inquisizione"
+    }
+  },
+  "img": "icons/magic/symbols/cross-stone-green.webp"
+}

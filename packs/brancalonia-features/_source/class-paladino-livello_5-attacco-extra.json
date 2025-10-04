@@ -1,0 +1,36 @@
+{
+  "id": "class-paladino-livello_5-attacco-extra",
+  "nome": "Attacco Extra",
+  "nome_brancalonia": "Furia del Giusto",
+  "livello": 5,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 5° livello, puoi attaccare due volte, invece che una, quando usi l'azione di Attacco nel tuo turno.",
+  "meccaniche": {
+    "numero_attacchi": 2,
+    "azione_richiesta": "Attack action"
+  },
+  "impatto": {
+    "dpr_raddoppiato": "2x chance hit/smite",
+    "smite_opportunità": "2 chance per round"
+  },
+  "note_dm": "Extra Attack raddoppia output del paladino e chance di smite.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.85",
+  "name": "Attacco Extra",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "_id": "x6Ceu3Mz0eCkNWk4",
+  "_key": "!item!class-paladino-livello_5-attacco-extra",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gear-010",
+  "nome": "Gancio da Arrampicata",
+  "categoria": "provvista_avventuriera",
+  "costo": "2 mo",
+  "peso": "0.5 kg",
+  "descrizione": "Gancio metallico a quattro punte usato con una corda per scalare.",
+  "fonte": {
+    "manuale": "Manuale Base",
+    "pagine": "Equipaggiamento da Avventura"
+  },
+  "validazione": {
+    "stato": "da_validare"
+  }
+}

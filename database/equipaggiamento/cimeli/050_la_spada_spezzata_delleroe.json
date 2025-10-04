@@ -1,0 +1,53 @@
+{
+  "id": "050",
+  "nome": "La Spada Spezzata dell'Eroe",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Metà di una spada leggendaria",
+  "proprieta": "Anche spezzata conta come +2, se riforgiata diventa +5",
+  "valore": "3000 mo (30000 se completa)",
+  "storia": "Si spezzò uccidendo il drago",
+  "ricerca": "L'altra metà è perduta da secoli",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "system.magicalBonus",
+        "mode": 2,
+        "value": "2",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "upgradeable",
+      "currentBonus": 2,
+      "maxBonus": 5,
+      "upgradeCondition": "riforgiata_completa",
+      "missingPiece": "altra_meta",
+      "description": "+2 ora, +5 se riforgiata"
+    },
+    "hooks": [],
+    "macros": ["forgeSword"],
+    "ui_config": {
+      "showBonus": true,
+      "bonusText": "⚔️ Bonus attuale: +2",
+      "showUpgrade": true,
+      "upgradeText": "✨ Potenziale: +5 se riforgiata",
+      "showQuest": true,
+      "questText": "🔍 Trova l'altra metà!"
+    },
+    "narrative_reminders": [
+      "Attualmente fornisce +2 a colpire e danni",
+      "Se riforgiata con l'altra metà diventa +5",
+      "L'altra metà è perduta da secoli (quest hook!)",
+      "Si spezzò uccidendo un drago leggendario",
+      "La riforgiatura richiede un fabbro maestro",
+      "Valore passa da 3000mo a 30000mo se completa",
+      "Ottima per campagne con arco narrativo epico"
+    ]
+  },
+  "img": "icons/weapons/swords/sword-bastard-broadfire.webp"
+}

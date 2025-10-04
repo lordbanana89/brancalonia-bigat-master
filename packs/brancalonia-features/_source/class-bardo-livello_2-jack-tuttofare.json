@@ -1,0 +1,77 @@
+{
+  "id": "class-bardo-livello_2-jack-tuttofare",
+  "nome": "Jack Tuttofare",
+  "nome_brancalonia": "Maestro di Mille Arti",
+  "livello": 2,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 2° livello, puoi aggiungere metà del tuo bonus di competenza, arrotondato per difetto, a qualsiasi prova di caratteristica che effettui che non includa già il tuo bonus di competenza.",
+  "meccaniche": {
+    "beneficio": {
+      "formula": "Competenza ÷ 2 (arrotondato difetto)",
+      "applicazione": "Prove senza competenza",
+      "include": [
+        "Abilità",
+        "Iniziativa",
+        "Arnesi",
+        "Prove pure caratteristica"
+      ]
+    },
+    "progressione": {
+      "livello_2": "+1",
+      "livello_5": "+1",
+      "livello_9": "+2",
+      "livello_13": "+2",
+      "livello_17": "+3"
+    }
+  },
+  "implementazione_foundry": {
+    "tipo": "global_bonus",
+    "formula": "floor(@prof / 2)",
+    "applicazione": "Non-proficient checks"
+  },
+  "valore_pratico": {
+    "versatilita": "Competente in tutto",
+    "affidabilita": "Nessun check veramente negativo",
+    "iniziativa": "+1-3 sempre"
+  },
+  "confronto": {
+    "vs_expertise": "Expertise meglio per specializzazione",
+    "vs_reliable": "Reliable meglio per competenze",
+    "unico": "Jack copre TUTTO"
+  },
+  "sinergie": {
+    "con_guidance": "+1d4 extra",
+    "con_enhance_ability": "Vantaggio + bonus",
+    "multiclasse_rogue": "Jack + Reliable devastante"
+  },
+  "esempi": {
+    "non_competente": {
+      "athletics": "+0 → +1/2/3",
+      "arcana": "+0 → +1/2/3"
+    },
+    "iniziativa": {
+      "base": "+3 (DEX)",
+      "con_jack": "+4/5/6"
+    }
+  },
+  "note_dm": "Jack of All Trades rende il bardo utile in ogni situazione. Non sottovalutare il bonus iniziativa.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.54",
+  "name": "Jack Tuttofare",
+  "img": "icons/sundries/gaming/playing-cards-black-gold.webp",
+  "_id": "MAlh20jWGoJLhALe",
+  "_key": "!item!class-bardo-livello_2-jack-tuttofare",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

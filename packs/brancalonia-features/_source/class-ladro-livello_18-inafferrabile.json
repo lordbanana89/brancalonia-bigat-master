@@ -1,0 +1,184 @@
+{
+  "id": "class-ladro-livello_18-inafferrabile",
+  "nome": "Inafferrabile",
+  "nome_brancalonia": "Ombra Intoccabile",
+  "livello": 18,
+  "tipo": "passivo",
+  "descrizione": "A partire dal 18° livello, sei così elusivo che gli attaccanti raramente riescono a prenderti alla sprovvista. Nessun tiro per colpire ha vantaggio contro di te finché non sei incapacitato.",
+  "meccaniche": {
+    "effetto": {
+      "beneficio": "Nessuno ha mai vantaggio contro di te",
+      "condizione": "A meno che tu non sia incapacitato"
+    },
+    "cosa_nega": [
+      "Vantaggio da essere prono",
+      "Vantaggio da essere restrained",
+      "Vantaggio da attaccante invisibile",
+      "Vantaggio da pack tactics",
+      "Vantaggio da Reckless Attack",
+      "Vantaggio da paralizzato (ma auto-crit rimane)",
+      "Vantaggio da stunned",
+      "Vantaggio da qualsiasi fonte"
+    ],
+    "non_previene": [
+      "Critici automatici (paralizzato melee)",
+      "Svantaggio ai tuoi attacchi",
+      "Altri benefici del vantaggio (Sneak Attack nemico)"
+    ]
+  },
+  "implementazione_foundry": {
+    "tipo": "immunita_condizionale",
+    "flags": {
+      "": true
+    },
+    "effetto": "Ignora tutti i vantaggi agli attacchi contro di te",
+    "eccezione": "status.incapacitated === true"
+  },
+  "impatto_sopravvivenza": {
+    "statistico": {
+      "riduzione_hit_chance": "~25% meno probabilità di essere colpito",
+      "vs_pack_tactics": "Nega completamente",
+      "vs_invisibili": "Combatti alla pari"
+    },
+    "scenari_comuni": {
+      "circondato": "Nemici non hanno vantaggio per flanking",
+      "prono": "Non dà vantaggio ai nemici melee",
+      "restrained": "Solo impedisce movimento, no vantaggio"
+    }
+  },
+  "confronto_difese_18": {
+    "vs_barbaro_persistence": {
+      "barbaro": "Rage non finisce",
+      "ladro": "Mai vantaggio contro",
+      "tipo": "Entrambi difensivi tier 4"
+    },
+    "vs_monk_empty_body": {
+      "monaco": "Invisibilità + resistenza 4 ki",
+      "ladro": "Passivo sempre attivo",
+      "risorsa": "Monaco limitato, ladro no"
+    },
+    "vs_fighter_survivor": {
+      "fighter": "Regen 5-10 HP/turno",
+      "ladro": "Meno probabilità di essere colpito",
+      "stile": "Fighter recupera, ladro evita"
+    }
+  },
+  "sinergie_difensive": {
+    "con_uncanny_dodge": "Meno colpi + dimezza danni",
+    "con_evasion": "Copre attacchi e AoE",
+    "con_high_ac": {
+      "studded_+3": "AC 20+",
+      "risultato": "Estremamente difficile da colpire"
+    },
+    "con_defensive_items": {
+      "cloak_displacement": "Svantaggio + no vantaggio",
+      "blur_spell": "Svantaggio + no vantaggio"
+    }
+  },
+  "vs_specifiche_abilita": {
+    "barbaro_reckless": {
+      "normale": "Barbaro ha vantaggio",
+      "vs_elusive": "Attacco normale, no vantaggio"
+    },
+    "wolf_pack_tactics": {
+      "normale": "Vantaggio con alleati",
+      "vs_elusive": "Mai vantaggio"
+    },
+    "invisible_stalker": {
+      "normale": "Vantaggio da invisibile",
+      "vs_elusive": "Attacco normale"
+    },
+    "faerie_fire": {
+      "normale": "Vantaggio a tutti",
+      "vs_elusive": "No vantaggio comunque"
+    }
+  },
+  "tattiche_nemici": {
+    "cosa_funziona": [
+      "Attacchi normali con bonus alti",
+      "Save-or-suck spells",
+      "Danni ad area",
+      "Multiattacco",
+      "True Strike (prossimo turno)"
+    ],
+    "cosa_non_funziona": [
+      "Cercare vantaggio",
+      "Pack tactics",
+      "Invisibilità per vantaggio",
+      "Restrain per vantaggio"
+    ]
+  },
+  "build_synergy": {
+    "tank_rogue": {
+      "high_ac": "20+ AC base",
+      "elusive": "No vantaggio",
+      "uncanny_dodge": "Dimezza un colpo",
+      "risultato": "Sorprendentemente tanky"
+    },
+    "mobile_rogue": {
+      "cunning_action": "Sempre mobile",
+      "elusive": "Non punito se caught",
+      "mobile_feat": "No opportunity attacks"
+    }
+  },
+  "esempi_gioco": {
+    "vs_ancient_dragon": {
+      "situazione": "Prone da frightening presence",
+      "normale": "Vantaggio agli attacchi",
+      "con_elusive": "No vantaggio, solo prone"
+    },
+    "vs_assassin": {
+      "situazione": "Assassino invisibile attacca",
+      "normale": "Vantaggio + Sneak Attack",
+      "con_elusive": "No vantaggio (ma SA si)"
+    },
+    "grappled_surrounded": {
+      "situazione": "Grappled da 3 nemici",
+      "normale": "Tutti hanno vantaggio",
+      "con_elusive": "Nessuno ha vantaggio"
+    }
+  },
+  "valore_tier_4": {
+    "importanza": "Critica per sopravvivenza",
+    "frequenza": "Sempre rilevante",
+    "power_level": "Top tier difesa passiva"
+  },
+  "limitazioni": {
+    "incapacitated": "Non funziona se incapacitato",
+    "non_immune_cc": "Ancora soggetto a controlli",
+    "no_ac_bonus": "Non aumenta AC base"
+  },
+  "narrazione_brancalonia": {
+    "descrizione": "Il Brigante è diventato un'ombra vivente",
+    "esempi_flavor": [
+      "Si muove prima che l'attacco arrivi",
+      "Istinti soprannaturali di evasione",
+      "Impossibile da cogliere impreparato"
+    ],
+    "leggenda": "I migliori briganti sono intoccabili"
+  },
+  "ruling_importanti": {
+    "always_on": "Sempre attivo, no azione",
+    "all_sources": "Nega TUTTI i vantaggi",
+    "still_straight": "Tiro normale, non svantaggio"
+  },
+  "note_dm": "Elusive è una delle migliori difese passive del gioco. Cambia completamente la matematica degli incontri di alto livello.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.97",
+  "name": "Inafferrabile",
+  "img": "icons/skills/trades/thievery-pickpocket-bribery-brown.webp",
+  "_id": "hCz7pnRPxgsBUZHK",
+  "_key": "!item!class-ladro-livello_18-inafferrabile",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "class-bardo-collegio-valore",
+  "nome": "Collegio del Valore",
+  "fonte": "Manuale del Giocatore p.55",
+  "descrizione": "Scaldi d'armi e cantastorie che guidano gli alleati in battaglia con impeto e magia.",
+  "progressione": {
+    "livello_3": [
+      {
+        "nome": "Competenze Marziali",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Bonus Proficiencies (Valor)"
+        }
+      },
+      {
+        "nome": "Ispirazione in Battaglia",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Combat Inspiration"
+        }
+      }
+    ],
+    "livello_6": [
+      {
+        "nome": "Attacco Extra",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Extra Attack (Valor)"
+        }
+      }
+    ],
+    "livello_14": [
+      {
+        "nome": "Magia di Battaglia",
+        "riferimento_compendio": {
+          "pack": "dnd5e.classfeatures",
+          "name": "Battle Magic"
+        }
+      }
+    ]
+  }
+}

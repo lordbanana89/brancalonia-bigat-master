@@ -1,0 +1,107 @@
+{
+  "nome": "Pantegano",
+  "fonte": "Brancalonia Macaronicon p.10-11",
+  "tipo": "razza",
+  "descrizione": "Uomini ratto di origine magica o paradossale, popolo murino di taglia piccola",
+  "origine": "Regno dei topi dell'Età Arcaica, sovrano Psycharpax",
+  "caratteristiche_fisiche": [
+    "Folta peluria",
+    "Orecchie e dentatura prominente",
+    "Volti affilati",
+    "Mani sottili",
+    "Piedi lunghi e affusolati",
+    "Coda glabra"
+  ],
+  "attitudini": [
+    "Congegneria e oreficeria",
+    "Artigianato di precisione",
+    "Contraffazione",
+    "Manutenzione luoghi sotterranei"
+  ],
+  "meccaniche": {
+    "incremento_caratteristiche": {
+      "tipo": "passivo",
+      "descrizione": "Destrezza +2, Costituzione +1",
+      "implementazione": {
+        "destrezza": "system.abilities.dex.value + 2",
+        "costituzione": "system.abilities.con.value + 1"
+      },
+      "mode": 2
+    },
+    "eta": {
+      "tipo": "narrativo",
+      "maturita": "9-10 anni",
+      "vita_massima": "50 anni circa"
+    },
+    "taglia": {
+      "tipo": "passivo",
+      "valore": "Piccola",
+      "altezza": "90 cm",
+      "peso": "20 kg"
+    },
+    "velocita": {
+      "tipo": "attivo",
+      "descrizione": "Velocità base 7,5 metri",
+      "implementazione": "system.attributes.movement.walk = 25",
+      "mode": 5
+    },
+    "scurovisione": {
+      "tipo": "attivo",
+      "descrizione": "Vista superiore fino a 18 metri",
+      "implementazione": "system.attributes.senses.darkvision = 60",
+      "mode": 5
+    },
+    "agile_scattante": {
+      "tipo": "narrativo",
+      "descrizione": "Muove attraverso spazi creature più grandi, si nasconde se oscurato da creatura più grande"
+    },
+    "vita_da_ratti": {
+      "tipo": "attivo",
+      "descrizione": "Immune alle malattie",
+      "implementazione": "system.traits.ci.value.push('diseased')",
+      "mode": 2
+    },
+    "lesto_vivere": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Furtività e Percezione",
+      "implementazione": {
+        "furtivita": "system.skills.ste.value = 1",
+        "percezione": "system.skills.prc.value = 1"
+      },
+      "mode": 5
+    },
+    "fuggire_per_combattere": {
+      "tipo": "narrativo",
+      "descrizione": "Svantaggio TS contro spaventato"
+    },
+    "privilegio_rissa_pantemima": {
+      "tipo": "narrativo",
+      "descrizione": "Reazione dopo batosta: finge ferito, non può essere attaccato fino a prossimo turno, 1/rissa"
+    }
+  },
+  "nomi_tipici": {
+    "maschili": [
+      "Acacio", "Angelino", "Ammicchio", "Anatolio", "Basilio",
+      "Bebio", "Bernardo", "Bianco", "Casconio", "Cico",
+      "Durmio", "Furbigno", "Geronimo", "Gigio", "Lollio",
+      "Marciano", "Michelino", "Mineco", "Nicarco", "Paconio",
+      "Ragunio", "Roderico", "Scheggia", "Scrocchio", "Teo",
+      "Torquato", "Trappola"
+    ],
+    "femminili": "Gli stessi declinati al femminile"
+  },
+  "cognomi": {
+    "pattern": "Nome del cibo preferito",
+    "esempi": ["della Caciotta", "del Grana", "Nocciola", "Stracchino"]
+  },
+  "soprannomi": [
+    "Frignoni", "Nutrie", "Pustole", "Ratti", "Robi",
+    "Sorci", "Sorcini", "Topastri", "Topi di fogna", "Topo-Cani"
+  ],
+  "filosofia": "Il vero eroe è colui che sopravvive per combattere un altro giorno",
+  "validazione": {
+    "implementato": false,
+    "file_id": "pantegano_macaronicon",
+    "compendio": "razze_macaronicon"
+  }
+}

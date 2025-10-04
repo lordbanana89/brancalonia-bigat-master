@@ -1,0 +1,146 @@
+{
+  "nome": "Lucignolo",
+  "fonte": "Brancalonia Macaronicon p.40-41",
+  "tipo": "background",
+  "descrizione": "Ambasciatore tra Fandonia e Regno, abituato a trattare con fate, buffardelli e umani",
+  "testo": {
+    "introduzione": [
+      "Scambiato dalle fate, benedetto da madrine o cresciuto tra buffardelli, il lucignolo vive a cavallo tra due mondi.",
+      "Conosce rituali, formule e galatei per entrare nella Fandonia, banchettare con gli esseri fatati e uscirne senza rimanere intrappolato.",
+      "Gli umani lo vedono come portatore di incanto, i folletti come mortale privilegiato: una posizione che suscita diffidenza ma apre molte porte."
+    ],
+    "privilegio": {
+      "nome": "A cena con le Fate",
+      "descrizione": "Sa ottenere ospitalità e aiuto dalle creature fatate quando si trova nel luogo e nel momento giusto, evitando clausole insidiose e lunghe permanenze nel loro reame."
+    }
+  },
+  "meccaniche": {
+    "competenze_abilita": {
+      "tipo": "attivo",
+      "descrizione": "Competenza in Inganno e Persuasione",
+      "implementazione": {
+        "inganno": "system.skills.dec.value = 1",
+        "persuasione": "system.skills.per.value = 1"
+      },
+      "mode": 5
+    },
+    "competenze_strumenti": {
+      "tipo": "attivo",
+      "descrizione": "Due tipi di gioco",
+      "implementazione": {
+        "gioco1": "system.tools.game1.value = 1",
+        "gioco2": "system.tools.game2.value = 1"
+      },
+      "mode": 5
+    },
+    "linguaggi": {
+      "tipo": "attivo",
+      "descrizione": "Baccaglio",
+      "implementazione": "system.traits.languages.value.push('baccaglio')",
+      "mode": 2
+    },
+    "equipaggiamento": {
+      "tipo": "narrativo",
+      "descrizione": "Abito comune, Cimelio extra, borsa con 15 ma"
+    },
+    "privilegio_cena_fate": {
+      "tipo": "attivo",
+      "descrizione": "Può chiedere ospitalità e sostegno agli esseri fatati, evitando clausole sfavorevoli",
+      "implementazione": {
+        "cena_fate": "flags.brancalonia-bigat.cenaFate = true"
+      },
+      "mode": 5
+    }
+  },
+  "dettagli": {
+    "identificatore": "lucignolo",
+    "ricchezza_iniziale": "15 ma",
+    "equipaggiamento": [
+      "Abito comune",
+      "Cimelio aggiuntivo",
+      "Borsa con 15 ma"
+    ]
+  },
+  "avanzamento": [
+    {
+      "tipo": "competenze_abilita",
+      "abilita": [
+        "inganno",
+        "persuasione"
+      ]
+    },
+    {
+      "tipo": "competenze_strumenti",
+      "scelte": 2,
+      "categoria": "strumenti_gioco"
+    },
+    {
+      "tipo": "linguaggi",
+      "elenco": [
+        "baccaglio"
+      ]
+    },
+    {
+      "tipo": "privilegio",
+      "nome": "A cena con le Fate",
+      "descrizione": "Puoi chiedere ospitalità e sostegno alle creature fatate senza cadere nelle loro trappole.",
+      "fonte": "Brancalonia Macaronicon p.40",
+      "implementazione": {
+        "cena_fate": true
+      }
+    }
+  ],
+  "caratterizzazione": {
+    "tratti": {
+      "dado": "d8",
+      "voci": [
+        "Ha una canzone o una barzelletta per ogni occasione, soprattutto in momenti inopportuni.",
+        "Ama stare all'aria aperta e dormire sui rami.",
+        "È passionale e genuino, non accetta compromessi.",
+        "Crede che solo entrando in connessione con la Fandonia si capisca davvero la vita.",
+        "Cresciuto dai buffardelli, adora fare scherzi.",
+        "È intollerante con chi maltratta le creature fatate.",
+        "Si sente a metà fra due mondi e cerca un luogo da chiamare casa.",
+        "Adora gioco, scommesse, cibo, fumo e bagordi."
+      ]
+    },
+    "ideali": {
+      "dado": "d6",
+      "voci": [
+        "Carità. Aiuto fate e orfanelli con ciò che guadagno. (Buono)",
+        "Comunità. Ricambio l'aiuto ricevuto dalla gente fatata. (Legale)",
+        "Fandonia. Sono imprevedibile e maliardo come il reame fatato. (Caotico)",
+        "Vendetta. Voglio eliminare gli esseri fatati che considero una maledizione. (Malvagio)",
+        "Fratellanza. Sogno la convivenza tra popolo fatato e umano. (Neutrale)",
+        "Incanto. La vita è un sogno a occhi aperti. (Qualsiasi)"
+      ]
+    },
+    "legami": {
+      "dado": "d6",
+      "voci": [
+        "La befana che mi allevava è ancora là fuori e temo il suo ritorno.",
+        "Proteggo la comunità di buffardelli che considero la mia famiglia.",
+        "So di avere un gemello da qualche parte e lo voglio ritrovare.",
+        "Sono innamorato della Bambina Turchina e voglio diventare un eroe per lei.",
+        "Voglio sensibilizzare gli umani verso il mondo fatato.",
+        "Sogno di aprire un'attività nel paese dei balocchi."
+      ]
+    },
+    "difetti": {
+      "dado": "d6",
+      "voci": [
+        "Sono ossessionato dall'idea che tutti mi giudichino dall'alto.",
+        "Dipendo dall'Estratto di Fandonia.",
+        "Sono uno sbruffone e un codardo.",
+        "Nel profondo disprezzo gli umani.",
+        "Cerco di imbrogliare chiunque per divertimento.",
+        "Non so resistere alla tentazione di stuzzicare il can che dorme."
+      ]
+    }
+  },
+  "validazione": {
+    "implementato": true,
+    "file_id": "lucignolo001",
+    "compendio": "backgrounds_macaronicon"
+  }
+}

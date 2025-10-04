@@ -1,0 +1,9 @@
+{
+  "id": "intruglio-006",
+  "nome": "Grattachecca del Cocito",
+  "costo": "3 mo",
+  "peso": "0.5 kg",
+  "effetto": "Protezione alte temperature, vantaggio Inganno per fingersi malato. Durata 48 ore",
+  "tipo_meccanica": "consumabile",
+  "fonte": "Manuale Base p.65-66"
+}

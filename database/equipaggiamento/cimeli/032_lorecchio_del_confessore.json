@@ -1,0 +1,41 @@
+{
+  "id": "032",
+  "nome": "L'Orecchio del Confessore",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Orecchio mummificato in scatola",
+  "proprieta": "Posto contro un muro, permette di sentire attraverso",
+  "maledizione": "Si sentono anche confessioni di peccati casuali",
+  "valore": "350 mo",
+  "storia": "Il confessore vendeva i segreti ai potenti",
+  "maledizione_specifica": "Si sentono anche confessioni di peccati casuali",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "narrative_only",
+      "effectDescription": "Ascolto muri + sussurri peccati casuali"
+    },
+    "hooks": [],
+    "macros": ["listenThroughWall"],
+    "ui_config": {
+      "showReminder": true,
+      "reminderText": "Senti attraverso muri + confessioni casuali"
+    },
+    "narrative_reminders": [
+      "Posto contro un muro, permette di sentire tutto dall'altra parte",
+      "Funziona anche attraverso muri spessi (fino a 30cm)",
+      "MALEDIZIONE: Si sentono anche confessioni di peccati casuali",
+      "Le confessioni sono sussurri di peccati commessi nel passato",
+      "Possono essere peccati di persone vicine o lontane nel tempo",
+      "Le confessioni possono disturbare o rivelare segreti",
+      "Il confessore originale vendeva i segreti ai potenti",
+      "Ottimo per spionaggio, disturbante per uso prolungato",
+      "DM: le confessioni possono essere plot hooks"
+    ]
+  },
+  "img": "icons/commodities/biological/organ-heart-pink.webp"
+}

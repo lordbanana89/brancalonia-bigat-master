@@ -1,0 +1,19 @@
+{
+  "id": "class-barbaro-cammino-totem",
+  "nome": "totem",
+  "livelli": {
+    "livello_3": {
+      "cercatore_spirituale": "Rituale per parlare con spiriti animali",
+      "totem_animale": "Scegli orso/aquila/lupo per benefici"
+    },
+    "livello_6": {
+      "aspetto_bestia": "Nuovo totem o potenziamento esistente"
+    },
+    "livello_10": {
+      "camminatore_spirituale": "Comunione con natura come rituale"
+    },
+    "livello_14": {
+      "sintonia_totemica": "Benefici massimi del totem scelto"
+    }
+  }
+}

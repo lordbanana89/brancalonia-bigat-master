@@ -1,0 +1,23 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 3,
+  "elementi": [
+    {
+      "id": "class-monaco-via-mano-aperta",
+      "nome": "Class Monaco Via Mano Aperta",
+      "file": "class-monaco-via-mano_aperta.json"
+    },
+    {
+      "id": "class-monaco-via-ombra",
+      "nome": "Class Monaco Via Ombra",
+      "file": "class-monaco-via-ombra.json"
+    },
+    {
+      "id": "class-monaco-via-quattro-elementi",
+      "nome": "Class Monaco Via Quattro Elementi",
+      "file": "class-monaco-via-quattro_elementi.json"
+    }
+  ]
+}

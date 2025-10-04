@@ -1,0 +1,25 @@
+{
+  "_id": "6jaUR1OcauWZKN6T",
+  "_key": "!journal!cimeli54ec55",
+  "name": "Cimeli",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "condotta-cimeli",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "69-70"
+      }
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

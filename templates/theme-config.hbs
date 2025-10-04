@@ -1,0 +1,413 @@
+<section class="form-content">
+  <nav class="tabs">
+    <a class="item" data-tab="colors" data-action="changeTab"><i class="fas fa-palette"></i> Colori</a>
+    <a class="item" data-tab="images" data-action="changeTab"><i class="fas fa-image"></i> Immagini</a>
+    <a class="item" data-tab="presets" data-action="changeTab"><i class="fas fa-folder"></i> Preset</a>
+    <a class="item" data-tab="advanced" data-action="changeTab"><i class="fas fa-code"></i> Avanzato</a>
+  </nav>
+
+  <div class="content">
+    <!-- Tab Colori -->
+    <div class="tab" data-tab="colors">
+      <h3>🎨 Controlli Base</h3>
+      <div class="form-group">
+        <label>Contenuto Controlli</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlContent" value="{{theme.colors.controlContent_noAlpha}}">
+          <input type="text" name="theme.colors.controlContent" value="{{theme.colors.controlContent}}">
+          <button type="button" data-action="resetColor" data-color="controlContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Bordo Controlli</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlBorder" value="{{theme.colors.controlBorder_noAlpha}}">
+          <input type="text" name="theme.colors.controlBorder" value="{{theme.colors.controlBorder}}">
+          <button type="button" data-action="resetColor" data-color="controlBorder"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Contenuto Focus</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlFocusContent" value="{{theme.colors.controlFocusContent_noAlpha}}">
+          <input type="text" name="theme.colors.controlFocusContent" value="{{theme.colors.controlFocusContent}}">
+          <button type="button" data-action="resetColor" data-color="controlFocusContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Contenuto Inattivo</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlInactiveContent" value="{{theme.colors.controlInactiveContent_noAlpha}}">
+          <input type="text" name="theme.colors.controlInactiveContent" value="{{theme.colors.controlInactiveContent}}">
+          <button type="button" data-action="resetColor" data-color="controlInactiveContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Riempimento 1</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlFill1" value="{{theme.colors.controlFill1_noAlpha}}">
+          <input type="text" name="theme.colors.controlFill1" value="{{theme.colors.controlFill1}}">
+          <button type="button" data-action="resetColor" data-color="controlFill1"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Riempimento 2</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlFill2" value="{{theme.colors.controlFill2_noAlpha}}">
+          <input type="text" name="theme.colors.controlFill2" value="{{theme.colors.controlFill2}}">
+          <button type="button" data-action="resetColor" data-color="controlFill2"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <h3>✨ Controlli Highlight</h3>
+      <div class="form-group">
+        <label>Contenuto Highlight</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlHighlightContent" value="{{theme.colors.controlHighlightContent_noAlpha}}">
+          <input type="text" name="theme.colors.controlHighlightContent" value="{{theme.colors.controlHighlightContent}}">
+          <button type="button" data-action="resetColor" data-color="controlHighlightContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Bordo Highlight</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlHighlightBorder" value="{{theme.colors.controlHighlightBorder_noAlpha}}">
+          <input type="text" name="theme.colors.controlHighlightBorder" value="{{theme.colors.controlHighlightBorder}}">
+          <button type="button" data-action="resetColor" data-color="controlHighlightBorder"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Riempimento Highlight 1</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlHighlightFill1" value="{{theme.colors.controlHighlightFill1_noAlpha}}">
+          <input type="text" name="theme.colors.controlHighlightFill1" value="{{theme.colors.controlHighlightFill1}}">
+          <button type="button" data-action="resetColor" data-color="controlHighlightFill1"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Riempimento Highlight 2</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlHighlightFill2" value="{{theme.colors.controlHighlightFill2_noAlpha}}">
+          <input type="text" name="theme.colors.controlHighlightFill2" value="{{theme.colors.controlHighlightFill2}}">
+          <button type="button" data-action="resetColor" data-color="controlHighlightFill2"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <h3>🔥 Controlli Attivi</h3>
+      <div class="form-group">
+        <label>Contenuto Attivo</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlActiveContent" value="{{theme.colors.controlActiveContent_noAlpha}}">
+          <input type="text" name="theme.colors.controlActiveContent" value="{{theme.colors.controlActiveContent}}">
+          <button type="button" data-action="resetColor" data-color="controlActiveContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Bordo Attivo</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlActiveBorder" value="{{theme.colors.controlActiveBorder_noAlpha}}">
+          <input type="text" name="theme.colors.controlActiveBorder" value="{{theme.colors.controlActiveBorder}}">
+          <button type="button" data-action="resetColor" data-color="controlActiveBorder"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Riempimento Attivo 1</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlActiveFill1" value="{{theme.colors.controlActiveFill1_noAlpha}}">
+          <input type="text" name="theme.colors.controlActiveFill1" value="{{theme.colors.controlActiveFill1}}">
+          <button type="button" data-action="resetColor" data-color="controlActiveFill1"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Riempimento Attivo 2</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.controlActiveFill2" value="{{theme.colors.controlActiveFill2_noAlpha}}">
+          <input type="text" name="theme.colors.controlActiveFill2" value="{{theme.colors.controlActiveFill2}}">
+          <button type="button" data-action="resetColor" data-color="controlActiveFill2"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <h3>📱 Applicazioni Header</h3>
+      <div class="form-group">
+        <label>Header Contenuto</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appHeaderContent" value="{{theme.colors.appHeaderContent_noAlpha}}">
+          <input type="text" name="theme.colors.appHeaderContent" value="{{theme.colors.appHeaderContent}}">
+          <button type="button" data-action="resetColor" data-color="appHeaderContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Header Focus</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appHeaderFocusContent" value="{{theme.colors.appHeaderFocusContent_noAlpha}}">
+          <input type="text" name="theme.colors.appHeaderFocusContent" value="{{theme.colors.appHeaderFocusContent}}">
+          <button type="button" data-action="resetColor" data-color="appHeaderFocusContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Header Sfondo 1</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appHeaderFill1" value="{{theme.colors.appHeaderFill1_noAlpha}}">
+          <input type="text" name="theme.colors.appHeaderFill1" value="{{theme.colors.appHeaderFill1}}">
+          <button type="button" data-action="resetColor" data-color="appHeaderFill1"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Header Sfondo 2</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appHeaderFill2" value="{{theme.colors.appHeaderFill2_noAlpha}}">
+          <input type="text" name="theme.colors.appHeaderFill2" value="{{theme.colors.appHeaderFill2}}">
+          <button type="button" data-action="resetColor" data-color="appHeaderFill2"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <h3>📄 Applicazioni Body</h3>
+      <div class="form-group">
+        <label>Body Contenuto</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appBodyContent" value="{{theme.colors.appBodyContent_noAlpha}}">
+          <input type="text" name="theme.colors.appBodyContent" value="{{theme.colors.appBodyContent}}">
+          <button type="button" data-action="resetColor" data-color="appBodyContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Body Contenuto Secondario</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appBodyContentSecondary" value="{{theme.colors.appBodyContentSecondary_noAlpha}}">
+          <input type="text" name="theme.colors.appBodyContentSecondary" value="{{theme.colors.appBodyContentSecondary}}">
+          <button type="button" data-action="resetColor" data-color="appBodyContentSecondary"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Body Sfondo 1</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appBodyPrimaryFill1" value="{{theme.colors.appBodyPrimaryFill1_noAlpha}}">
+          <input type="text" name="theme.colors.appBodyPrimaryFill1" value="{{theme.colors.appBodyPrimaryFill1}}">
+          <button type="button" data-action="resetColor" data-color="appBodyPrimaryFill1"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Body Sfondo 2</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appBodyPrimaryFill2" value="{{theme.colors.appBodyPrimaryFill2_noAlpha}}">
+          <input type="text" name="theme.colors.appBodyPrimaryFill2" value="{{theme.colors.appBodyPrimaryFill2}}">
+          <button type="button" data-action="resetColor" data-color="appBodyPrimaryFill2"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Bordo Applicazione</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appBorder" value="{{theme.colors.appBorder_noAlpha}}">
+          <input type="text" name="theme.colors.appBorder" value="{{theme.colors.appBorder}}">
+          <button type="button" data-action="resetColor" data-color="appBorder"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Nome Sezione Contenuto</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appNameSectionContent" value="{{theme.colors.appNameSectionContent_noAlpha}}">
+          <input type="text" name="theme.colors.appNameSectionContent" value="{{theme.colors.appNameSectionContent}}">
+          <button type="button" data-action="resetColor" data-color="appNameSectionContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Nome Sezione Ombra</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.appNameSectionShadow" value="{{theme.colors.appNameSectionShadow_noAlpha}}">
+          <input type="text" name="theme.colors.appNameSectionShadow" value="{{theme.colors.appNameSectionShadow}}">
+          <button type="button" data-action="resetColor" data-color="appNameSectionShadow"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <h3>🎯 Elementi Vari</h3>
+      <div class="form-group">
+        <label>Bordo Generico</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscBorder" value="{{theme.colors.miscBorder_noAlpha}}">
+          <input type="text" name="theme.colors.miscBorder" value="{{theme.colors.miscBorder}}">
+          <button type="button" data-action="resetColor" data-color="miscBorder"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Riempimento Generico</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscFill" value="{{theme.colors.miscFill_noAlpha}}">
+          <input type="text" name="theme.colors.miscFill" value="{{theme.colors.miscFill}}">
+          <button type="button" data-action="resetColor" data-color="miscFill"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Riempimento Primario</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscFillPrimary" value="{{theme.colors.miscFillPrimary_noAlpha}}">
+          <input type="text" name="theme.colors.miscFillPrimary" value="{{theme.colors.miscFillPrimary}}">
+          <button type="button" data-action="resetColor" data-color="miscFillPrimary"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Riempimento Secondario</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscFillSecondary" value="{{theme.colors.miscFillSecondary_noAlpha}}">
+          <input type="text" name="theme.colors.miscFillSecondary" value="{{theme.colors.miscFillSecondary}}">
+          <button type="button" data-action="resetColor" data-color="miscFillSecondary"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Contenuto Inattivo</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscInactiveContent" value="{{theme.colors.miscInactiveContent_noAlpha}}">
+          <input type="text" name="theme.colors.miscInactiveContent" value="{{theme.colors.miscInactiveContent}}">
+          <button type="button" data-action="resetColor" data-color="miscInactiveContent"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Ombra Highlight</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscShadowHighlight" value="{{theme.colors.miscShadowHighlight_noAlpha}}">
+          <input type="text" name="theme.colors.miscShadowHighlight" value="{{theme.colors.miscShadowHighlight}}">
+          <button type="button" data-action="resetColor" data-color="miscShadowHighlight"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Link Normale</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscLinkIdle" value="{{theme.colors.miscLinkIdle_noAlpha}}">
+          <input type="text" name="theme.colors.miscLinkIdle" value="{{theme.colors.miscLinkIdle}}">
+          <button type="button" data-action="resetColor" data-color="miscLinkIdle"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Link Hover</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscLinkFocus" value="{{theme.colors.miscLinkFocus_noAlpha}}">
+          <input type="text" name="theme.colors.miscLinkFocus" value="{{theme.colors.miscLinkFocus}}">
+          <button type="button" data-action="resetColor" data-color="miscLinkFocus"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Colore Rilancio Dadi</label>
+        <div class="color-input">
+          <input type="color" name="theme.colors.miscReroll" value="{{theme.colors.miscReroll_noAlpha}}">
+          <input type="text" name="theme.colors.miscReroll" value="{{theme.colors.miscReroll}}">
+          <button type="button" data-action="resetColor" data-color="miscReroll"><i class="fas fa-undo"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Immagini -->
+    <div class="tab" data-tab="images">
+      <div class="form-group">
+        <label>Logo/Accento</label>
+        <input type="text" name="theme.images.appAccentImage" value="{{theme.images.appAccentImage}}">
+        <p class="notes">Percorso relativo all'immagine logo/accento (es. modules/brancalonia-bigat/assets/artwork/fond.webp)</p>
+      </div>
+
+      <div class="form-group">
+        <label>Sfondo Sezioni</label>
+        <input type="text" name="theme.images.appSectionBgImage" value="{{theme.images.appSectionBgImage}}">
+        <p class="notes">Percorso relativo all'immagine di sfondo delle sezioni</p>
+      </div>
+
+      <div class="form-group">
+        <label>Sfondo Applicazione</label>
+        <input type="text" name="theme.images.appBgImage" value="{{theme.images.appBgImage}}">
+        <p class="notes">Percorso relativo all'immagine di sfondo dell'applicazione</p>
+      </div>
+
+      <div class="form-group">
+        <label>Sfondo Sidebar</label>
+        <input type="text" name="theme.images.sidebarBgImage" value="{{theme.images.sidebarBgImage}}">
+        <p class="notes">Percorso relativo all'immagine di sfondo della sidebar</p>
+      </div>
+    </div>
+
+    <!-- Tab Preset -->
+    <div class="tab" data-tab="presets">
+      <div class="form-group">
+        <label>Carica Preset</label>
+        <select id="preset-select">
+          {{#each presets}}
+          <option value="{{this.id}}">{{this.name}}</option>
+          {{/each}}
+        </select>
+        <button type="button" data-action="loadPreset">
+          <i class="fas fa-download"></i> Carica
+        </button>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <label>Gestione Tema</label>
+        <div class="button-group">
+          <button type="button" data-action="exportTheme">
+            <i class="fas fa-file-export"></i> Esporta Tema
+          </button>
+          <button type="button" data-action="importTheme">
+            <i class="fas fa-file-import"></i> Importa Tema
+          </button>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Preset Disponibili:</h3>
+      <ul>
+        <li><strong>Default</strong>: Tema pergamena classico di Brancalonia</li>
+        <li><strong>Taverna</strong>: Atmosfera calda da osteria</li>
+        <li><strong>Notte</strong>: Tema scuro per sessioni notturne</li>
+        <li><strong>Mare</strong>: Colori azzurri e acquatici</li>
+      </ul>
+    </div>
+
+    <!-- Tab Avanzato -->
+    <div class="tab" data-tab="advanced">
+      <div class="form-group">
+        <label>CSS Personalizzato</label>
+        <textarea name="theme.advanced" rows="15">{{theme.advanced}}</textarea>
+        <p class="notes">Aggiungi CSS personalizzato che verrà applicato dopo le variabili del tema. Usa con cautela!</p>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <label>Reset Emergenza</label>
+        <p class="notes">Se il tema si rompe, puoi ripristinarlo aprendo la console (F12) ed eseguendo: <code>brancaloniaResetTheme()</code></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="form-footer sheet-footer">
+    <button type="submit">
+      <i class="fas fa-save"></i> Salva Tema
+    </button>
+  </footer>
+</section>

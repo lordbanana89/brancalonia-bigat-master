@@ -1,0 +1,84 @@
+{
+  "_id": "8q8FpVyqi08RRd4r",
+  "_key": "!item!ilfazzolettodelladamanerac1ed60",
+  "name": "Il Fazzoletto della Dama Nera",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Fazzoletto di seta nera profumato</p><h3>Proprietà</h3><p>Chi lo annusa ha vantaggio alle prove di Carisma con il sesso opposto per 1 ora</p><h3>Storia</h3><p><em>La Dama Nera ebbe 13 amanti che si uccisero per lei</em></p><h3>Maledizione</h3><p><strong>Deve fare TS Saggezza CD 13 o innamorarsi della prima persona che vede</strong></p><p>Deve fare TS Saggezza CD 13 o innamorarsi della prima persona che vede</p>",
+      "chat": "",
+      "unidentified": "Un oggetto misterioso"
+    },
+    "source": "Brancalonia Manuale Base",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 1,
+    "type": {
+      "value": "trinket",
+      "subtype": "",
+      "baseItem": ""
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "day",
+      "recovery": "1d6+4",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "properties": [
+      "mgc",
+      "cursed"
+    ],
+    "cursed": true,
+    "curse": "Deve fare TS Saggezza CD 13 o innamorarsi della prima persona che vede"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "007",
+      "categoria": "cimelo",
+      "storia": "La Dama Nera ebbe 13 amanti che si uccisero per lei",
+      "proprieta_originale": "Chi lo annusa ha vantaggio alle prove di Carisma con il sesso opposto per 1 ora",
+      "maledizione": "Deve fare TS Saggezza CD 13 o innamorarsi della prima persona che vede",
+      "maledizione_specifica": "Deve fare TS Saggezza CD 13 o innamorarsi della prima persona che vede",
+      "implementazione": {
+        "tipo": "magico_minore",
+        "attivo": true,
+        "active_effects": []
+      }
+    }
+  }
+}

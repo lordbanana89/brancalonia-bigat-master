@@ -1,0 +1,39 @@
+{
+  "_id": "wsnko47fg25zj8au",
+  "_key": "!item!wsnko47fg25zj8au",
+  "name": "Schivata Prodigiosa",
+  "type": "feat",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "Dimezza i danni di un attacco",
+      "chat": ""
+    },
+    "requirements": "Livello 5",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

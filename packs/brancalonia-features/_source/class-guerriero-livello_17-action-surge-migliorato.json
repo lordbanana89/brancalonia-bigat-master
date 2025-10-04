@@ -1,0 +1,141 @@
+{
+  "id": "class-guerriero-livello_17-action-surge-migliorato",
+  "nome": "Action Surge (due usi)",
+  "nome_brancalonia": "Frenesia di Battaglia",
+  "livello": 17,
+  "tipo": "attivo",
+  "descrizione": "A partire dal 17° livello, puoi usare Action Surge due volte prima di un riposo, ma solo una volta nello stesso turno.",
+  "meccaniche": {
+    "usi_disponibili": 2,
+    "recupero": "Riposo breve o lungo",
+    "limitazione": "Max 1 per turno",
+    "effetto": "Azione aggiuntiva + movimento"
+  },
+  "implementazione_foundry": {
+    "tipo": "resource_increase",
+    "risorsa": "Action Surge",
+    "valore": 2,
+    "flags": {
+      "once_per_turn": true
+    }
+  },
+  "impatto_combattimento": {
+    "flessibilità": "Surge in 2 round diversi",
+    "consistenza": "Più nova potential",
+    "durata": "Copre combattimenti lunghi",
+    "tattica": "Surge round 1 e round critico"
+  },
+  "calcoli_ottimali": {
+    "con_4_attacchi": {
+      "round_surge": "8 attacchi totali",
+      "danno_greatsword": "8 × (2d6+5) = 96 medi",
+      "danno_con_gwm": "8 × (2d6+15) = 176 medi"
+    },
+    "due_round_surge": {
+      "totale_combat": "16 attacchi extra in 2 round",
+      "flessibilità": "Adatta a situazione"
+    }
+  },
+  "gestione_risorse": {
+    "primo_uso": {
+      "quando": "Round 1 o momento critico",
+      "obiettivo": "Eliminare minaccia/alpha strike"
+    },
+    "secondo_uso": {
+      "quando": "Boss phase 2 o emergenza",
+      "obiettivo": "Finire combat o salvare party"
+    }
+  },
+  "confronto_progressione": {
+    "livello_2-16": {
+      "limite": "1 surge per rest",
+      "uso": "Molto conservativo"
+    },
+    "livello_17+": {
+      "comfort": "2 surge disponibili",
+      "uso": "Più aggressivo"
+    }
+  },
+  "sinergie_archetipi": {
+    "battle_master": "8 attacchi = 8 potenziali manovre",
+    "champion": "8 attacchi = più chance crit",
+    "samurai": "8 attacchi con vantaggio",
+    "echo_knight": "Echo attacca anche lui",
+    "eldritch_knight": "Spell + 8 attacchi impossibile"
+  },
+  "tattiche_avanzate": {
+    "alpha_strike": "Round 1 surge per dominanza",
+    "boss_killer": "Surge quando vulnerabile",
+    "emergency": "Surge per salvare alleati",
+    "positioning": "Surge per movimento tattico"
+  },
+  "combo_devastanti": {
+    "con_haste": "9 attacchi in un turno",
+    "con_potion_speed": "Extra azione per 10 totali",
+    "con_battlemaster": "8 manovre in un turno",
+    "con_magic_weapons": "Moltiplica effetti arma"
+  },
+  "analisi_dpr": {
+    "burst_round": {
+      "normale": "4 attacchi = 48 danni medi",
+      "con_surge": "8 attacchi = 96 danni medi",
+      "con_gwm": "8 attacchi = 176 danni medi"
+    },
+    "su_due_round": {
+      "round_1_surge": "8 attacchi",
+      "round_2_normale": "4 attacchi",
+      "round_3_surge": "8 attacchi",
+      "totale": "20 attacchi in 3 round"
+    }
+  },
+  "limitazioni": {
+    "uno_per_turno": "Non stackable stesso round",
+    "riposo_breve": "Serve rest per recuperare",
+    "no_reaction": "Non dà reazioni extra",
+    "no_bonus_action": "Non dà bonus action extra"
+  },
+  "paragone_nova": {
+    "vs_paladin_smite": "Fighter più consistente",
+    "vs_assassin_crit": "Fighter più affidabile",
+    "vs_wizard_meteor": "Fighter no risorse limitate",
+    "unico": "Nova ripetibile più volte"
+  },
+  "psicologia_combattimento": {
+    "intimidazione": "8 attacchi terrorizzano",
+    "morale_nemici": "Può rompere morale",
+    "focus_fire": "Elimina bersagli chiave",
+    "momentum": "Cambia corso battaglia"
+  },
+  "errori_comuni": {
+    "doppio_surge": "Tentare 2 surge stesso turno",
+    "conservare_troppo": "Non usare per paura",
+    "timing_sbagliato": "Surge su bersagli minori",
+    "dimenticare_movimento": "Surge dà anche movimento"
+  },
+  "narrazione_brancalonia": {
+    "berserker_moment": "Furia incontenibile",
+    "maestro_supremo": "Velocità sovrumana",
+    "leggenda_vivente": "Muove come fulmine",
+    "veterano_supremo": "Battaglia è casa sua"
+  },
+  "note_dm": "Due Action Surge rendono il Fighter 17+ una forza devastante. Può nova due volte per short rest. Con 4 attacchi base, significa 8 attacchi quando serve.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.72",
+  "name": "Action Surge Migliorato",
+  "img": "icons/equipment/weapons/sword-two-handed-cross-blue.webp",
+  "_id": "6guAvARK4wvnIoTe",
+  "_key": "!item!class-guerriero-livello_17-action-surge-migliorato",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

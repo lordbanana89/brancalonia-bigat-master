@@ -1,0 +1,64 @@
+{
+  "_id": "25eQZ2mcQ9vtPrc2",
+  "_key": "!item!armstd201magliaadanelli947cab",
+  "name": "Maglia ad Anelli",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Abito di cuoio con anelli metallici cuciti sopra.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Manuale Base",
+    "quantity": 1,
+    "weight": 18.1,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "identified": true,
+    "rarity": "common",
+    "attunement": 0,
+    "type": {
+      "value": "armor",
+      "subtype": "medium",
+      "baseItem": "chainmail"
+    },
+    "armor": {
+      "value": 14,
+      "type": "medium",
+      "dex": 2,
+      "magicalBonus": 0
+    },
+    "strength": 0,
+    "stealth": false,
+    "properties": [],
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "arm-std-201",
+      "categoria": "armatura_standard",
+      "validazione": {
+        "stato": "da_validare"
+      }
+    }
+  }
+}

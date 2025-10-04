@@ -1,0 +1,43 @@
+{
+  "id": "017",
+  "nome": "La Rosa di Ferro",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Rosa di ferro battuto perfettamente realistica",
+  "proprieta": "Chi la regala fa automaticamente colpo (successo automatico Persuasione in corteggiamento)",
+  "maledizione": "L'amore dura solo fino al prossimo tramonto",
+  "valore": "300 mo",
+  "storia": "Forgiata da un fabbro per la donna che lo rifiutò",
+  "maledizione_specifica": "L'amore dura solo fino al prossimo tramonto",
+  "implementazione": {
+    "tipo": "narrativo",
+    "priorita": 1,
+    "attivo": true,
+    "active_effects_benedizione": [],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "trackingType": "time_limited_effect",
+      "duration": "fino_tramonto",
+      "effectDescription": "Amore vero ma effimero",
+      "autoSuccess": "persuasione_corteggiamento"
+    },
+    "hooks": [],
+    "macros": ["giftRose"],
+    "ui_config": {
+      "showReminder": true,
+      "reminderText": "Successo auto corteggiamento, amore dura fino tramonto"
+    },
+    "narrative_reminders": [
+      "Regalare la rosa = successo AUTOMATICO in corteggiamento",
+      "Non serve tirare Persuasione, l'amore è istantaneo",
+      "L'amore è genuino e profondo... ma temporaneo",
+      "Dura solo fino al prossimo tramonto",
+      "Dopo il tramonto, l'amore svanisce completamente",
+      "La rosa può essere recuperata e riutilizzata",
+      "Il fabbro la forgiò per la donna che lo rifiutò",
+      "Rappresenta amore impossibile e destinato a finire",
+      "Può causare heartbreak drammatico al tramonto"
+    ]
+  },
+  "img": "icons/magic/nature/rose-thorned-red.webp"
+}

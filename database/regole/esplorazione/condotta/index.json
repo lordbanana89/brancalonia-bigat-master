@@ -1,0 +1,16 @@
+{
+  "categoria": "Regole",
+  "descrizione": "Materiale di supporto per il Condottiero: generatori di cimeli, linee guida sul tono e sulla gestione delle campagne.",
+  "fonte": {
+    "manuale": "Manuale Base Brancalonia",
+    "pagine": "69-72"
+  },
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "cimeli",
+      "nome": "Cimeli",
+      "file": "cimeli.json"
+    }
+  ]
+}

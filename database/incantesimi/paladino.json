@@ -1,0 +1,39 @@
+{
+  "classe": "paladino",
+  "fonte": "Manuale Base",
+  "categorie": [
+    {
+      "nome": "Giuramento della Cavalleresca Erranza",
+      "descrizione": "Incantesimi del giuramento dei cavalieri erranti.",
+      "livelli": [
+        {
+          "livello": 3,
+          "incantesimi": [
+            {
+              "id": "spell-base-001",
+              "nome": "Benedizione"
+            },
+            {
+              "id": "spell-base-013",
+              "nome": "Comando"
+            }
+          ]
+        },
+        {
+          "livello": 5,
+          "incantesimi": [
+            {
+              "id": "spell-base-014",
+              "nome": "Passo senza Tracce"
+            },
+            {
+              "id": "spell-base-015",
+              "nome": "Evoca Cavalcatura"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totale": 4
+}

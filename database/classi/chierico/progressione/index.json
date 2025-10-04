@@ -1,0 +1,13 @@
+{
+  "categoria": "Progressione Chierico",
+  "descrizione": "Tabella di progressione per la classe Chierico con bonus competenza, slot incantesimo e privilegi per livello.",
+  "fonte": "Manuale del Giocatore p.56-63",
+  "totale": 1,
+  "elementi": [
+    {
+      "id": "progressione-chierico",
+      "nome": "Tabella Progressione Chierico",
+      "file": "progressione.json"
+    }
+  ]
+}

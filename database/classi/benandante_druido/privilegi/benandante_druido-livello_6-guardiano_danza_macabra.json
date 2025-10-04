@@ -1,0 +1,23 @@
+{
+  "id": "benandante_druido-livello_6-guardiano_danza_macabra",
+  "livello": 6,
+  "nome": "Guardiano della Danza Macabra",
+  "tipo": "reazione",
+  "fonte": "Manuale Base p.21",
+  "descrizione": "Le creature non morte percepiscono il tuo patto con gli spiriti e esitano a ferirti. Il tuo sguardo li ammonisce a cercare un altro bersaglio, pena il fallimento del loro attacco.",
+  "meccaniche": {
+    "attivazione": {
+      "tipo": "reazione",
+      "momento": "Quando un non morto ti sceglie come bersaglio di un attacco"
+    },
+    "tiro_salvezza": {
+      "abilità": "Saggezza",
+      "cd": "CD incantesimi del druido",
+      "esito": {
+        "fallimento": "Il non morto deve scegliere un bersaglio diverso, altrimenti l'attacco fallisce automaticamente",
+        "successo": "L'attacco procede e la creatura diventa immune a questo effetto per 24 ore"
+      }
+    }
+  },
+  "note": "La creatura è consapevole dell'effetto prima di portare l'attacco; se non sono disponibili altri bersagli validi l'attacco viene annullato." 
+}

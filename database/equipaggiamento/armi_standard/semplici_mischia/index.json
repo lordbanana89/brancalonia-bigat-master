@@ -1,0 +1,56 @@
+{
+  "categoria": "Armi Semplici da Mischia",
+  "totale": 10,
+  "elementi": [
+    {
+      "id": "arma-std-001",
+      "nome": "Bastone Ferrato",
+      "file": "arma-std-001_bastone_ferrato.json"
+    },
+    {
+      "id": "arma-std-002",
+      "nome": "Daga",
+      "file": "arma-std-002_daga.json"
+    },
+    {
+      "id": "arma-std-003",
+      "nome": "Grande Randello",
+      "file": "arma-std-003_grande_randello.json"
+    },
+    {
+      "id": "arma-std-004",
+      "nome": "Ascia da Mano",
+      "file": "arma-std-004_ascia_da_mano.json"
+    },
+    {
+      "id": "arma-std-005",
+      "nome": "Giavellotto",
+      "file": "arma-std-005_giavellotto.json"
+    },
+    {
+      "id": "arma-std-006",
+      "nome": "Martello Leggero",
+      "file": "arma-std-006_martello_leggero.json"
+    },
+    {
+      "id": "arma-std-007",
+      "nome": "Mazza",
+      "file": "arma-std-007_mazza.json"
+    },
+    {
+      "id": "arma-std-008",
+      "nome": "Bastone",
+      "file": "arma-std-008_bastone.json"
+    },
+    {
+      "id": "arma-std-009",
+      "nome": "Falce",
+      "file": "arma-std-009_falce.json"
+    },
+    {
+      "id": "arma-std-010",
+      "nome": "Lancia",
+      "file": "arma-std-010_lancia.json"
+    }
+  ]
+}

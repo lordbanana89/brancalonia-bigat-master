@@ -1,0 +1,22 @@
+{
+  "_id": "bY8fwmVlWP5pE0dz",
+  "_key": "!journal!rissabaseko5890c6",
+  "name": "ko",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "rissa-base-ko",
+      "fonte": "Brancalonia Manuale Base"
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

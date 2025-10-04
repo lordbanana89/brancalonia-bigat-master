@@ -1,0 +1,113 @@
+{
+  "id": "class-chierico-livello_14-colpo-divino-migliorato",
+  "nome": "Colpo Divino Migliorato",
+  "nome_brancalonia": "Ira Celeste",
+  "livello": 14,
+  "tipo": "passivo",
+  "descrizione": "Al 14° livello, i danni extra del tuo Colpo Divino aumentano a 2d8.",
+  "meccaniche": {
+    "danno_aumentato": "2d8 radianti",
+    "media_danno": "9 danni extra medi",
+    "frequenza": "1 volta per turno",
+    "sempre_disponibile": "Nessun costo risorse"
+  },
+  "implementazione_foundry": {
+    "tipo": "damage_bonus_increase",
+    "formula": "2d8[radiant]",
+    "limitazione": "1/turno su weapon attack"
+  },
+  "impatto_matematico": {
+    "aumento_dpr": {
+      "da_1d8": "4.5 medi",
+      "a_2d8": "9 medi",
+      "incremento": "+100% danno divino"
+    },
+    "paragone_attacco_extra": {
+      "divine_strike": "9 extra garantiti",
+      "extra_attack": "~12 medi (ma serve hit)"
+    }
+  },
+  "confronto_tier_3": {
+    "vs_fighter_3_attacks": "Fighter più attacchi, cleric spell",
+    "vs_paladin_improved_smite": "Simile ma cleric gratis",
+    "vs_rogue_sneak_7d6": "Rogue più ma condizionale"
+  },
+  "build_ottimizzazione": {
+    "war_domain": {
+      "war_priest": "2 chance applicare",
+      "guided_strike": "Garantisce hit",
+      "totale": "Fino a 18 extra se entrambi hit"
+    },
+    "tempest_domain": {
+      "martial_weapons": "Greatsword + divine",
+      "thunderous_strike": "Push + damage"
+    }
+  },
+  "multiclasse_valore": {
+    "fighter_11": "3 attacchi = applicazione garantita",
+    "ranger_5": "2 attacchi + spells",
+    "paladin_5": "2 attacchi + smite stack"
+  },
+  "magic_weapons_scaling": {
+    "flame_tongue": "2d6 fire + 2d8 radiant",
+    "+3_weapon": "+3 hit/damage + 2d8",
+    "vorpal": "Crit devastanti + 2d8"
+  },
+  "combat_reliability": {
+    "no_save": "Danno automatico su hit",
+    "no_resource": "Sempre disponibile",
+    "tipo_raro": "Radiante raramente resistito"
+  },
+  "spell_synergy": {
+    "spiritual_weapon": "Non stack (non TUO attacco)",
+    "spirit_guardians": "Damage zone + strike",
+    "holy_aura": "Vantaggio + divine strike"
+  },
+  "tier_3_threats": {
+    "efficace_contro": [
+      "Death Knights (vulnerabile radiante)",
+      "Liches (non-morti)",
+      "Vampiri (non-morti)"
+    ]
+  },
+  "paragone_cantrip_damage": {
+    "sacred_flame_14": "3d8 (13.5 medi)",
+    "divine_strike": "2d8 (9 medi) + weapon",
+    "totale": "Weapon + divine > cantrip"
+  },
+  "alternative_blessed_strikes": {
+    "tasha_option": "1d8 a cantrip O weapon",
+    "flessibilità": "Copre più situazioni",
+    "ma": "Non scala a 2d8"
+  },
+  "errori_comuni": {
+    "dimenticare_aumento": "Usare ancora 1d8",
+    "stack_tentativi": "Applicare più volte/turno",
+    "spiritual_confusion": "Credere che triggeri"
+  },
+  "narrazione_brancalonia": {
+    "arma_consacrata": "Brucia di fuoco sacro",
+    "vendetta_divina": "Giustizia celestiale",
+    "campione_fede": "Ogni colpo una preghiera"
+  },
+  "note_dm": "Il raddoppio a 2d8 al 14° rende il chierico combattente molto più minaccioso. 9 danni medi gratuiti ogni turno sono significativi nel tier 3.",
+  "fonte": "Brancalonia Manuale Base, D&D 5e PHB p.58",
+  "name": "Colpo Divino Migliorato",
+  "img": "icons/magic/lightning/bolt-strike-forked-yellow.webp",
+  "_id": "nnWrwhF1sIhLrhUZ",
+  "_key": "!item!class-chierico-livello_14-colpo-divino-migliorato",
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "folder": null,
+  "type": "feat",
+  "system": {},
+  "flags": {
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  }
+}

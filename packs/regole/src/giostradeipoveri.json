@@ -1,0 +1,25 @@
+{
+  "_id": "nMHTj11XMrFaRw7J",
+  "_key": "!journal!giostradeipoveri02cc5e",
+  "name": "Giostra dei Poveri",
+  "type": "journal",
+  "img": "icons/svg/book.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia": {
+      "id_originale": "gioco-giostra-dei-poveri",
+      "fonte": {
+        "manuale": "Manuale Base Brancalonia",
+        "pagine": "59"
+      }
+    },
+    "brancalonia-bigat": {
+      "migrated": true,
+      "version": "12.0.4"
+    }
+  },
+  "system": {}
+}

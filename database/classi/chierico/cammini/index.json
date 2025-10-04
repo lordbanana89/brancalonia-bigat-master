@@ -1,0 +1,43 @@
+{
+  "categoria": "Classi",
+  "descrizione": "Contenuti della categoria Classi",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 7,
+  "elementi": [
+    {
+      "id": "class-chierico-dominio-conoscenza",
+      "nome": "Class Chierico Dominio Conoscenza",
+      "file": "class-chierico-dominio-conoscenza.json"
+    },
+    {
+      "id": "class-chierico-dominio-guerra",
+      "nome": "Class Chierico Dominio Guerra",
+      "file": "class-chierico-dominio-guerra.json"
+    },
+    {
+      "id": "class-chierico-dominio-inganno",
+      "nome": "Class Chierico Dominio Inganno",
+      "file": "class-chierico-dominio-inganno.json"
+    },
+    {
+      "id": "class-chierico-dominio-luce",
+      "nome": "Class Chierico Dominio Luce",
+      "file": "class-chierico-dominio-luce.json"
+    },
+    {
+      "id": "class-chierico-dominio-natura",
+      "nome": "Class Chierico Dominio Natura",
+      "file": "class-chierico-dominio-natura.json"
+    },
+    {
+      "id": "class-chierico-dominio-tempesta",
+      "nome": "Class Chierico Dominio Tempesta",
+      "file": "class-chierico-dominio-tempesta.json"
+    },
+    {
+      "id": "class-chierico-dominio-vita",
+      "nome": "Class Chierico Dominio Vita",
+      "file": "class-chierico-dominio-vita.json"
+    }
+  ]
+}

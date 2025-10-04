@@ -1,0 +1,14 @@
+{
+  "id": "race-malebranche-tratto-eredita_infernale",
+  "nome": "Eredita Infernale",
+  "categoria": "base",
+  "dettagli": {
+    "descrizione": "Conosci trucchetto Taumaturgia",
+    "progressione": {
+      "livello_3": "Rimprovero Infernale 1/giorno come incantesimo di 2° livello",
+      "livello_5": "Oscurità 1/giorno"
+    },
+    "caratteristica": "Carisma per CD e attacco"
+  },
+  "fonte": "Brancalonia Manuale Base"
+}

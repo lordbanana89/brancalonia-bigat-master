@@ -1,0 +1,48 @@
+{
+  "categoria": "Talenti",
+  "descrizione": "Contenuti della categoria Talenti",
+  "fonte": "Brancalonia Manuale Base",
+  "totale": 8,
+  "elementi": [
+    {
+      "id": "anima-contadina",
+      "nome": "Anima Contadina",
+      "file": "anima_contadina.json"
+    },
+    {
+      "id": "antica-arte-culinaria",
+      "nome": "Antica Arte Culinaria",
+      "file": "antica_arte_culinaria.json"
+    },
+    {
+      "id": "compagno-della-selva",
+      "nome": "Compagno della Selva",
+      "file": "compagno_della_selva.json"
+    },
+    {
+      "id": "sangue-della-vilupera",
+      "nome": "Sangue della Vilupera",
+      "file": "sangue_della_vilupera.json"
+    },
+    {
+      "id": "scaglianza",
+      "nome": "Scaglianza",
+      "file": "scaglianza.json"
+    },
+    {
+      "id": "scudanza",
+      "nome": "Scudanza",
+      "file": "scudanza.json"
+    },
+    {
+      "id": "speziale",
+      "nome": "Speziale",
+      "file": "speziale.json"
+    },
+    {
+      "id": "supercazzola",
+      "nome": "Supercazzola",
+      "file": "supercazzola.json"
+    }
+  ]
+}

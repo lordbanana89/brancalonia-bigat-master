@@ -1,0 +1,50 @@
+{
+  "id": "037",
+  "nome": "L'Uncino del Pirata Fantasma",
+  "categoria": "Cimelo",
+  "fonte": "Brancalonia Manuale Base",
+  "descrizione": "Uncino arrugginito che gocciola acqua salata",
+  "proprieta": "Può toccare e ferire creature incorporee",
+  "maledizione": "Il braccio si paralizza durante le tempeste",
+  "valore": "550 mo",
+  "storia": "Il pirata cerca ancora la sua mano",
+  "maledizione_specifica": "Il braccio si paralizza durante le tempeste",
+  "implementazione": {
+    "tipo": "meccanico",
+    "priorita": 2,
+    "attivo": true,
+    "active_effects_benedizione": [
+      {
+        "key": "flags.brancalonia.attackIncorporeal",
+        "mode": 5,
+        "value": "1",
+        "priority": 20
+      }
+    ],
+    "active_effects_maledizione": [],
+    "tracking_flags": {
+      "requiresConditional": true,
+      "conditionalType": "weather_curse",
+      "curseCondition": "tempesta",
+      "curseEffect": "braccio_paralizzato",
+      "description": "Colpisce incorporei, paralisi in tempesta"
+    },
+    "hooks": ["dnd5e.preRollAttack"],
+    "macros": [],
+    "ui_config": {
+      "showBenefit": true,
+      "benefitText": "✅ Può colpire creature incorporee (fantasmi, spettri)",
+      "showCurse": true,
+      "curseText": "⚠️ Braccio paralizzato durante tempeste"
+    },
+    "narrative_reminders": [
+      "Permette di colpire e ferire creature incorporee",
+      "Durante tempeste, il braccio con l'uncino si paralizza",
+      "L'uncino gocciola costantemente acqua salata",
+      "Il pirata fantasma cerca ancora la sua mano perduta",
+      "Ottimo contro non-morti incorporei (fantasmi, spettri)",
+      "La paralisi dura per tutta la durata della tempesta"
+    ]
+  },
+  "img": "icons/commodities/metal/hook-iron.webp"
+}

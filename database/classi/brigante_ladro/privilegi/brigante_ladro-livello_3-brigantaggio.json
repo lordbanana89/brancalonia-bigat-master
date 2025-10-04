@@ -1,0 +1,15 @@
+{
+  "id": "brigante_ladro-livello_3-brigantaggio",
+  "livello": 3,
+  "nome": "Brigantaggio",
+  "tipo": "passivo",
+  "fonte": "Manuale Base p.23",
+  "descrizione": "I briganti sono ladroni di campagna che vivono tra monti e foreste. Conosci i sentieri nascosti, i rumori degli animali e le tracce lasciate dalle carovane: l’ambiente è il tuo complice più fidato.",
+  "benefici": {
+    "competenze": [
+      "Natura",
+      "Sopravvivenza"
+    ]
+  },
+  "note": "Se possiedi già una di queste competenze puoi scegliere qualunque altra abilità della classe ladro." 
+}
