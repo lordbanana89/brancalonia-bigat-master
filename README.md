@@ -60,6 +60,97 @@ Modulo **enterprise-grade** completo per giocare a **Brancalonia - Il Regno di T
 - **Event-driven architecture** per integrazione modulare
 - **Zero linter errors** su 86 file JavaScript
 
+### 🔧 Fix UI/UX e Compatibilità Carolingian UI (v13.0.38-44)
+
+#### 🚨 Problema Risolto: Sidebar e Finestre Non Cliccabili
+
+Tra le versioni **13.0.38** e **13.0.44** sono stati risolti problemi critici di interazione UI causati da conflitti con il modulo **Carolingian UI**. Questi fix sono fondamentali per la piena funzionalità del modulo.
+
+#### 📋 Chain Completa dei Fix
+
+**Versione 13.0.38-41**: Fix `#scene-navigation` Width
+- **Problema**: `#scene-navigation` aveva larghezza calcolata su `--scene-nav-full-width` (~1882px) che copriva la sidebar
+- **Causa**: La variabile CSS utilizzava `100vw` invece di considerare la larghezza sidebar
+- **Soluzione**: Cambiato a `--scene-nav-partial-width` che sottrae la larghezza sidebar dal calcolo
+- **File**: `modules/crlngn-ui/styles/scene-nav.css:32,148-149`
+- **Risultato**: Sidebar destra cliccabile ✅
+
+**Versione 13.0.42**: Fix `#ui-left-column-2` Pointer-Events
+- **Problema**: `#ui-left-column-2` (1782px) aveva `pointer-events: auto` e bloccava i click sulla sidebar
+- **Causa**: Contenitore Carolingian UI si estendeva su quasi tutto lo schermo
+- **Soluzione**: Aggiunto `pointer-events: none !important` a `#ui-left-column-2`
+- **File**: `modules/crlngn-ui/styles/scene-nav.css:50,105`
+- **Risultato**: Sidebar ancora più accessibile ✅
+
+**Versione 13.0.43**: Fix `#ui-left` Pointer-Events per Finestre
+- **Problema**: `SECTION#ui-left` (3174px × 943px) con `pointer-events: auto` intercettava TUTTI i click su finestre e overlay
+- **Causa**: Container principale Carolingian UI copriva quasi l'intero viewport con z-index 30
+- **Soluzione**: Aggiunto `pointer-events: none !important` a `#ui-left`
+- **File**: `modules/crlngn-ui/styles/scene-nav.css:59`
+- **Risultato**: Finestre trascinabili, cliccabili e completamente funzionanti ✅
+
+**Versione 13.0.44**: Fix Controlli Sinistra (FINALE)
+- **Problema**: Con `#ui-left` a `pointer-events: none`, anche i figli (scene-controls) perdevano l'interattività
+- **Causa**: `pointer-events: none` su un parent fa passare i click attraverso anche se i figli hanno `pointer-events: auto`
+- **Soluzione**: Aggiunto esplicitamente `pointer-events: auto !important` ai figli diretti:
+  - `#ui-left-column-1`
+  - `#ui-left-column-2`
+  - `#scene-controls`
+- **File**: `modules/crlngn-ui/styles/scene-nav.css:62-67`
+- **Risultato**: Controlli sinistra (Token, Tiles, Walls, ecc.) completamente funzionanti ✅
+
+#### ✅ Stato Finale (v13.0.44+)
+
+Tutte le interazioni UI funzionano perfettamente:
+- ✅ **Sidebar destra** (Chat, Actors, Items, Compendium) - completamente cliccabile
+- ✅ **Controlli sinistra** (Token, Tiles, Drawings, Walls, Lighting, ecc.) - tutti funzionanti
+- ✅ **Finestre applicazioni** (Background, Item sheets, ecc.) - trascinabili, cliccabili, ridimensionabili
+- ✅ **Scene navigation** - navigazione scene funzionante
+- ✅ **Player list** - gestione giocatori accessibile
+
+#### 🧪 Come Verificare
+
+Dopo l'installazione, testa l'interazione UI:
+
+```javascript
+// Console test (F12)
+console.log("Versione:", game.modules.get("brancalonia-bigat")?.version); // Deve essere >= 13.0.44
+
+// Verifica pointer-events
+const uiLeft = document.querySelector('#ui-left');
+const sceneControls = document.querySelector('#scene-controls');
+console.log("ui-left:", window.getComputedStyle(uiLeft).pointerEvents); // Deve essere "none"
+console.log("scene-controls:", window.getComputedStyle(sceneControls).pointerEvents); // Deve essere "auto"
+```
+
+**Test Manuali**:
+1. **Attiva una scena** (Scene tab → tasto destro → Activate) - **NECESSARIO per i controlli canvas!**
+2. Clicca sui **controlli sinistra** (Token, Tiles, ecc.) - devono attivarsi
+3. Apri una **finestra dal Compendium** - deve essere trascinabile
+4. Clicca nella **sidebar destra** - deve rispondere ai click
+
+#### 🎯 Root Cause Analysis
+
+Il problema era causato da una catena di container Carolingian UI sovrapposti:
+
+```
+BODY
+ └─ #interface
+     └─ SECTION#ui-left (3174×943px, z-index:30, pointer-events:auto) ❌
+         ├─ #ui-left-column-1 (pointer-events:auto) 
+         │   └─ #scene-controls (controlli sinistra) ✅
+         ├─ #ui-left-column-2 (1782px, pointer-events:auto) ❌
+         │   └─ #scene-navigation (menu scene) ✅
+         └─ [... altri elementi ...]
+
+SIDEBAR (z-index:auto, destra) ❌ bloccata da ui-left
+WINDOWS (.window-app, z-index:102) ❌ bloccate da ui-left
+```
+
+**Soluzione Implementata**:
+- `#ui-left`: `pointer-events: none` - lascia passare click verso finestre/sidebar
+- `#ui-left-column-1, #ui-left-column-2, #scene-controls`: `pointer-events: auto` - permettono click sui contenuti
+
 ### 📊 Contenuti del Modulo
 - **13 Compendi Completi** con **1.137 documenti** totali
 - **Stirpi/Razze**: 9 razze uniche di Brancalonia
