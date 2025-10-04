@@ -5,6 +5,21 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.40] - 2025-10-04
+
+### ✅ **HOTFIX CRITICO - File .mjs mancanti**
+
+**PROBLEMA**: La release v13.0.39 escludeva TUTTI i file `.mjs` dallo ZIP, inclusi i 34 file necessari in `modules/crlngn-ui/`
+**CAUSA**: Il comando ZIP aveva `"*.mjs"` nell'esclusione globale
+**SOLUZIONE**: 
+- ✅ Rimossa l'esclusione globale di `*.mjs`
+- ✅ Inclusi solo i file `.mjs` necessari (esclusi solo test e build scripts)
+- ✅ Verificato che `modules/crlngn-ui/module.mjs` e tutti gli altri 33 file `.mjs` siano presenti
+
+**QUESTA È LA VERSIONE DEFINITIVAMENTE CORRETTA!**
+
+---
+
 ## [13.0.39] - 2025-10-04
 
 ### ✅ **HOTFIX - CSS non incluso nella release precedente**
