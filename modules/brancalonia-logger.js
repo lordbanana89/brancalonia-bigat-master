@@ -1155,20 +1155,6 @@ const getLogger = () => {
   return logger;
 };
 
-// Safe logger instance - funziona anche se chiamato prima dell'inizializzazione
-const logger = new Proxy(loggerInstance, {
-  get(target, prop) {
-    // Se il logger non è ancora inizializzato, restituisci funzioni no-op
-    if (!target || !target[prop]) {
-      if (typeof target[prop] === 'function') {
-        return () => {}; // No-op function
-      }
-      return undefined;
-    }
-    return target[prop];
-  }
-});
-
 // Export per compatibilità
 export {
   getLogger,

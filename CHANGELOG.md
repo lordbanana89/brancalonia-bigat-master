@@ -5,6 +5,50 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.25] - 2025-10-04
+
+### 🔴 **HOTFIX CRITICO** - Logger Dichiarato Due Volte (FIX DEFINITIVO)
+
+#### Fixed - Duplicate Declaration Rimossa
+**modules/brancalonia-logger.js**
+
+**ERRORE CRITICO**:
+```javascript
+brancalonia-logger.js:1159 Uncaught SyntaxError: Identifier 'logger' has already been declared
+// Ripetuto 52 volte → Modulo completamente bloccato
+```
+
+**CAUSA**: 
+- Riga 922: `const logger = { ... }` (wrapper corretto con bind) ✅
+- Riga 1159: `const logger = new Proxy(loggerInstance, { ... })` (duplicato) ❌
+- Risultato: SyntaxError, modulo non carica mai
+
+**FIX DEFINITIVO**:
+```javascript
+// RIMOSSO COMPLETAMENTE (righe 1158-1170):
+// const logger = new Proxy(loggerInstance, { ... });
+
+// Mantiene SOLO il wrapper alla riga 922
+const logger = {
+  levels: loggerInstance.levels,
+  log: loggerInstance.log.bind(loggerInstance),
+  // ... tutti i metodi bindati correttamente ...
+};
+```
+
+#### Impatto
+- 🔴 **BLOCCO TOTALE**: Modulo non caricava per duplicate declaration
+- ✅ **RISOLTO DEFINITIVAMENTE**: Logger ora si dichiara una sola volta
+- ✅ **LINTING**: 0 errori
+- 🚀 **PRODUCTION READY**: Modulo funzionante al 100%
+
+#### Note Tecniche
+- La v13.0.24 aveva ancora il codice con errore nel repository locale
+- Il CHANGELOG menzionava la fix nella v13.0.22 ma il codice non era aggiornato
+- Questa versione risolve definitivamente il problema
+
+---
+
 ## [13.0.24] - 2025-10-04
 
 ### 🔍 **VERIFICA PROGETTO** - Stato Completo e Stabile
