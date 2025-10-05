@@ -494,31 +494,67 @@ class DiseasesSystem {
         }
       });
 
-      // Hook per aggiungere pulsante malattie alle schede personaggio
-      Hooks.on('renderActorSheet', (app, html, data) => {
-        try {
-          if (app.actor.type !== 'character' || !game.user.isGM) return;
-          if (!game.settings.get('brancalonia-bigat', 'enableDiseases')) return;
+      // Fixed: Use SheetCoordinator
+      const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+      
+      if (SheetCoordinator) {
+        SheetCoordinator.registerModule(
+          'DiseasesSystem',
+          async (app, html, data) => {
+            try {
+              if (app.actor.type !== 'character' || !game.user.isGM) return;
+              if (!game.settings.get('brancalonia-bigat', 'enableDiseases')) return;
 
-          // Vanilla JS fallback per jQuery
-          const element = html instanceof jQuery ? html[0] : html;
-          const windowTitle = element.querySelector('.window-header .window-title');
+              const element = html instanceof jQuery ? html[0] : html;
+              const windowTitle = element.querySelector('.window-header .window-title');
 
-          if (windowTitle) {
-            const button = document.createElement('button');
-            button.className = 'disease-manager-btn';
-            button.title = 'Gestione Malattie';
-            button.innerHTML = '<i class="fas fa-virus"></i>';
-            button.addEventListener('click', () => {
-              window.DiseasesSystem.renderDiseaseManager(app.actor);
-            });
-            windowTitle.insertAdjacentElement('afterend', button);
+              if (windowTitle && !element.querySelector('.disease-manager-btn')) {
+                const button = document.createElement('button');
+                button.className = 'disease-manager-btn';
+                button.title = 'Gestione Malattie';
+                button.innerHTML = '<i class="fas fa-virus"></i>';
+                button.addEventListener('click', () => {
+                  window.DiseasesSystem.renderDiseaseManager(app.actor);
+                });
+                windowTitle.insertAdjacentElement('afterend', button);
+              }
+            } catch (error) {
+              this._statistics.errors.push(`renderActorSheet: ${error.message}`);
+              logger.error(this.MODULE_NAME, 'Errore rendering diseases UI', error);
+            }
+          },
+          {
+            priority: 70,
+            types: ['character'],
+            gmOnly: true
           }
-        } catch (error) {
-          this._statistics.errors.push(`renderActorSheet hook: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore in renderActorSheet hook', error);
-        }
-      });
+        );
+      } else {
+        // Fallback
+        Hooks.on('renderActorSheet', (app, html, data) => {
+          try {
+            if (app.actor.type !== 'character' || !game.user.isGM) return;
+            if (!game.settings.get('brancalonia-bigat', 'enableDiseases')) return;
+
+            const element = html instanceof jQuery ? html[0] : html;
+            const windowTitle = element.querySelector('.window-header .window-title');
+
+            if (windowTitle) {
+              const button = document.createElement('button');
+              button.className = 'disease-manager-btn';
+              button.title = 'Gestione Malattie';
+              button.innerHTML = '<i class="fas fa-virus"></i>';
+              button.addEventListener('click', () => {
+                window.DiseasesSystem.renderDiseaseManager(app.actor);
+              });
+              windowTitle.insertAdjacentElement('afterend', button);
+            }
+          } catch (error) {
+            this._statistics.errors.push(`renderActorSheet hook: ${error.message}`);
+            logger.error(this.MODULE_NAME, 'Errore in renderActorSheet hook', error);
+          }
+        });
+      }
 
       logger.debug?.(this.MODULE_NAME, '4 hooks registrati');
     } catch (error) {
