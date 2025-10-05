@@ -205,40 +205,47 @@ class BrancaloniaSheets {
         return;
       }
 
-      logger.debug(this.MODULE_NAME, 'Registrazione modifiche sheet...');
+      logger.debug(this.MODULE_NAME, 'Registrazione con SheetCoordinator...');
 
-      // Hook renderActorSheet con delay per Carolingian UI
-      Hooks.on('renderActorSheet', async (app, html, data) => {
-        try {
-          // Verifica se Carolingian UI è attivo
-          const carolingianActive = !!window.brancaloniaSettings?.SheetsUtil;
-          const delay = game.settings.get('brancalonia-bigat', 'sheetsDelayAfterCarolingian') || 100;
+      // Fixed: Use SheetCoordinator instead of direct Hook (prevents 20+ hooks issue)
+      SheetCoordinator.registerModule(
+        'BrancaloniaSheets',
+        async (app, html, data) => {
+          try {
+            // Verifica se Carolingian UI è attivo
+            const carolingianActive = !!window.brancaloniaSettings?.SheetsUtil;
+            const delay = game.settings.get('brancalonia-bigat', 'sheetsDelayAfterCarolingian') || 100;
 
-          if (carolingianActive) {
-            logger.debug(this.MODULE_NAME, `Attendendo ${delay}ms per Carolingian UI...`);
-            await new Promise(resolve => setTimeout(resolve, delay));
+            if (carolingianActive) {
+              logger.debug(this.MODULE_NAME, `Attendendo ${delay}ms per Carolingian UI...`);
+              await new Promise(resolve => setTimeout(resolve, delay));
+            }
+
+            // Applica modifiche Brancalonia
+            if (data.actor?.type === 'character') {
+              const sheetHtml = await this.modifyCharacterSheet(app, html, data);
+              this.attachEventListeners(sheetHtml ?? html, data);
+            } else if (data.actor?.type === 'npc') {
+              this.modifyNPCSheet(app, html, data);
+            }
+
+          } catch (error) {
+            logger.error(this.MODULE_NAME, 'Errore in sheet render', error);
+            this.statistics.errors.push({
+              type: 'render',
+              message: error.message,
+              actorId: data.actor?._id,
+              timestamp: Date.now()
+            });
           }
-
-          // Applica modifiche Brancalonia
-          if (data.actor?.type === 'character') {
-            const sheetHtml = await this.modifyCharacterSheet(app, html, data);
-            this.attachEventListeners(sheetHtml ?? html, data);
-          } else if (data.actor?.type === 'npc') {
-            this.modifyNPCSheet(app, html, data);
-          }
-
-        } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore in renderActorSheet hook', error);
-          this.statistics.errors.push({
-            type: 'render-hook',
-            message: error.message,
-            actorId: data.actor?._id,
-            timestamp: Date.now()
-          });
+        },
+        {
+          priority: 50, // Base priority for main sheets module
+          types: ['character', 'npc']
         }
-      });
+      );
 
-      logger.info(this.MODULE_NAME, 'Hook renderActorSheet registrato con successo');
+      logger.info(this.MODULE_NAME, 'Registrato con SheetCoordinator (priority: 50)');
 
     } catch (error) {
       logger.error(this.MODULE_NAME, 'Errore nella registrazione hook', error);
