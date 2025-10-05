@@ -602,19 +602,40 @@ class TavernBrawlSystem {
       }
     });
 
-    // Hook per aggiungere pulsante rissa alle schede personaggio
-    Hooks.on('renderActorSheet', (app, html) => {
-      if (app.actor.type !== 'character' || !game.user.isGM) return;
-      if (!game.settings.get('brancalonia-bigat', 'brawlSystemEnabled')) return;
+    // Fixed: Use SheetCoordinator
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule('TavernBrawl', async (app, html) => {
+        if (app.actor.type !== 'character' || !game.user.isGM) return;
+        if (!game.settings.get('brancalonia-bigat', 'brawlSystemEnabled')) return;
 
-      const button = $(`<button class="brawl-manager-btn" title="Inizia Rissa">
-        <i class="fas fa-fist-raised"></i>
-      </button>`);
-      html.find('.window-header .window-title').after(button);
-      button.click(() => {
-        window.TavernBrawlSystem.startBrawl();
+        const button = $(`<button class="brawl-manager-btn" title="Inizia Rissa">
+          <i class="fas fa-fist-raised"></i>
+        </button>`);
+        html.find('.window-header .window-title').after(button);
+        button.click(() => {
+          window.TavernBrawlSystem.startBrawl();
+        });
+      }, {
+        priority: 70,
+        types: ['character'],
+        gmOnly: true
       });
-    });
+    } else {
+      Hooks.on('renderActorSheet', (app, html) => {
+        if (app.actor.type !== 'character' || !game.user.isGM) return;
+        if (!game.settings.get('brancalonia-bigat', 'brawlSystemEnabled')) return;
+
+        const button = $(`<button class="brawl-manager-btn" title="Inizia Rissa">
+          <i class="fas fa-fist-raised"></i>
+        </button>`);
+        html.find('.window-header .window-title').after(button);
+        button.click(() => {
+          window.TavernBrawlSystem.startBrawl();
+        });
+      });
+    }
 
     this._state.hooksRegistered = true;
     logger.info(this.MODULE_NAME, '✅ Hooks Sistema Risse registrati');
