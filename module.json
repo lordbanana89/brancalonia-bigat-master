@@ -88,7 +88,7 @@
     "modules/brancalonia-rischi-mestiere.js",
     "modules/brancalonia-cursed-relics.js",
     "modules/brancalonia-cimeli-manager.js",
-    "modules/data/active-effects-registry-generated.js",
+    "data/active-effects-registry-generated.js",
     "modules/brancalonia-active-effects.js",
     "modules/brancalonia-conditions.js",
     "modules/brancalonia-mechanics.js",

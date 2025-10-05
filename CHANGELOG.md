@@ -10,6 +10,7 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 ### 🔧 Manifest Hotfix
 - **Download URL**: Ripristinato l'URL del pacchetto a `archive/refs/heads/main.zip` come da README, evitando 404 sui compendi durante l'installazione.
 - **Version Sync**: Aggiornato `module.json` alla versione 13.0.59 per allineare manifest e pacchetto scaricato.
+- **Active Effects Registry**: Spostato `active-effects-registry-generated.js` in `data/` e aggiornati tutti i riferimenti (manifest, documentazione) per prevenire il 404 durante il caricamento runtime.
 
 ---
 
@@ -1125,7 +1126,7 @@ Hooks.once('ready', () => {
 ### 🔴 **CRITICAL FIX** - Active Effects Registry Mancante in Git
 
 #### Fixed - File Non Committato
-**modules/data/active-effects-registry-generated.js (101KB)**
+**data/active-effects-registry-generated.js (101KB)**
 
 **PROBLEMA CRITICO**: 
 - File esisteva localmente (101KB, 3.991 righe)
@@ -1227,7 +1228,7 @@ done
   "esmodules": [
     ...
     "modules/brancalonia-cimeli-manager.js",
-    "modules/data/active-effects-registry-generated.js",  // ← AGGIUNTO
+    "data/active-effects-registry-generated.js",  // ← AGGIUNTO
     "modules/brancalonia-active-effects.js",
     ...
   ]
@@ -1352,7 +1353,7 @@ Conversione di TUTTI i warning normali/tecnici da `logger.warn`/`console.warn` a
    - Fix: Rimosso doppio `modules/` nel path
    - **Problema**: Path errato nella v13.0.13 generava 404:
      ```javascript
-     /modules/brancalonia-bigat/modules/data/active-effects-registry-generated.js ❌
+     /modules/brancalonia-bigat/data/active-effects-registry-generated.js ❌
      // Genera: GET ...modules/brancalonia-bigat/modules/data/... 404 Not Found
      ```
    - **Corretto**: Rimosso segmento `modules/` duplicato:
@@ -1390,7 +1391,7 @@ Conversione di TUTTI i warning normali/tecnici da `logger.warn`/`console.warn` a
      ```
    - **Corretto**: Usato path assoluto con leading slash:
      ```
-     /modules/brancalonia-bigat/modules/data/active-effects-registry-generated.js ✅
+     /modules/brancalonia-bigat/data/active-effects-registry-generated.js ✅
      ```
    - Browser richiede leading `/` per ES module imports assoluti
 
@@ -1417,7 +1418,7 @@ Conversione di TUTTI i warning normali/tecnici da `logger.warn`/`console.warn` a
    - Fix: `Failed to resolve module specifier` per path errato
    - **Problema**: Path aveva doppio `modules/`: 
      ```
-     modules/brancalonia-bigat/modules/data/active-effects-registry-generated.js ❌
+     modules/brancalonia-bigat/data/active-effects-registry-generated.js ❌
      ```
    - **Corretto**: Rimosso `modules/` ridondante:
      ```

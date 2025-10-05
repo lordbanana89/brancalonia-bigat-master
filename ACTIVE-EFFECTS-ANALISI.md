@@ -39,7 +39,7 @@ Il modulo applica automaticamente Active Effects agli item dei compendi per aggi
    - Privilegi Sottoclassi (13 entries)
 
 2. **Registry Generato** (443 entries)
-   - Caricato dinamicamente da `modules/data/active-effects-registry-generated.js`
+   - Caricato dinamicamente da `data/active-effects-registry-generated.js`
    - Merge automatico con priorità al manuale
 
 ### Coverage
@@ -79,7 +79,7 @@ import(`${baseUrl}/...?cacheBust=${Date.now()}`);
 **Risolto**: Rimosso cacheBust, Foundry gestisce già la cache correttamente
 ```javascript
 // DOPO
-import(`${baseUrl}/modules/data/active-effects-registry-generated.js`);
+import(`${baseUrl}/data/active-effects-registry-generated.js`);
 ```
 
 ---
@@ -369,4 +369,3 @@ Il file **`brancalonia-active-effects.js`** è:
 **Verificato da**: AI Assistant  
 **Data**: 3 Ottobre 2025  
 **Versione Analizzata**: 11.1.0-effects
-

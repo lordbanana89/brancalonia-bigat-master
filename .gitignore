@@ -4,6 +4,7 @@ npm-debug.log*
 
 # Foundry (ignora Data/ di Foundry, MA permetti modules/data/)
 /Data/
+!data/active-effects-registry-generated.js
 !modules/data/
 *.lock
 *.db

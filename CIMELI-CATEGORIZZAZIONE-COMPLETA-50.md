@@ -16,7 +16,7 @@ Questo documento descrive, per ciascuno dei 50 cimeli presenti nel database (`da
 
 ## 🧩 Linee guida comuni
 
-- **Active Effects**: registrare gli effetti nel generatore `modules/data/active-effects-registry-generated.js` (chiave = slug nome) e richiamarli tramite `BrancaloniaActiveEffects.applyCimelio(actor, 'slug')`.
+- **Active Effects**: registrare gli effetti nel generatore `data/active-effects-registry-generated.js` (chiave = slug nome) e richiamarli tramite `BrancaloniaActiveEffects.applyCimelio(actor, 'slug')`.
 - **Flag e Tracking**: usare `actor.setFlag('brancalonia-bigat', 'cimeli.<nomeFlag>', valore)` per contatori e stati.
 - **Dialog/Script**: centralizzare le logiche di consumo (es. sorsi, usi giornalieri) in un nuovo modulo helper `modules/brancalonia-cimeli-manager.js` con API:
   - `CimeliManager.consumeUse(actor, cimelioId)`
@@ -276,5 +276,4 @@ Questo documento descrive, per ciascuno dei 50 cimeli presenti nel database (`da
 
 ## ✅ Stato
 La mappatura e le istruzioni operative sono ora complete per tutti i 50 cimeli. Ogni voce del database ha una chiara traduzione in logica Foundry pronta per essere implementata.
-
 
