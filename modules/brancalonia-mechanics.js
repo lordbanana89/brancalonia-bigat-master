@@ -176,7 +176,7 @@ class BrancaloniaMechanics {
    * Registra comandi chat
    */
   static registerChatCommands() {
-    Hooks.on('chatMessage', (html, content, msg) => {
+    Hooks.on('chatMessage', async (html, content, msg) => {
       if (!content.startsWith('/')) return true;
 
       const [command, ...args] = content.slice(1).split(' ');
@@ -186,13 +186,13 @@ class BrancaloniaMechanics {
           this.generateRandomNPCCommand(args[0]);
           return false;
         case 'complicazione':
-          this.rollComplication();
+          await this.rollComplication();
           return false;
         case 'voce-taverna':
-          this.rollTavernRumor();
+          await this.rollTavernRumor();
           return false;
         case 'bottino-scadente':
-          this.rollShoddyLoot();
+          await this.rollShoddyLoot();
           return false;
         case 'piazza-trappola':
           if (args[0]) this.createTrapMacro(args[0]);

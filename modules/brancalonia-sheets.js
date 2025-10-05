@@ -416,7 +416,7 @@ class BrancaloniaSheets {
     }
   }
 
-  static addInfamiaSystem(html, actor) {
+  static async addInfamiaSystem(html, actor) {
     try {
       moduleLogger.startPerformance('sheets-add-infamia');
 
@@ -500,7 +500,7 @@ class BrancaloniaSheets {
         const compagnia = actor.getFlag('brancalonia-bigat', 'compagnia') || {};
 
         // Fixed: Use Handlebars template instead of inline HTML
-        const compagniaHTML = await renderTemplate(
+        const compagniaHTML = await foundry.applications.handlebars.renderTemplate(
           'modules/brancalonia-bigat/templates/compagnia-sheet-full.hbs',
           {
             compagnia,
@@ -566,7 +566,7 @@ class BrancaloniaSheets {
         const lavori = actor.getFlag('brancalonia-bigat', 'lavoriSporchi') || [];
 
         // Fixed: Use Handlebars template instead of inline HTML
-        const lavoriHTML = await renderTemplate(
+        const lavoriHTML = await foundry.applications.handlebars.renderTemplate(
           'modules/brancalonia-bigat/templates/lavori-section.hbs',
           {
             lavori,
@@ -648,7 +648,7 @@ class BrancaloniaSheets {
         const rifugio = actor.getFlag('brancalonia-bigat', 'rifugio') || {};
 
         // Fixed: Use Handlebars template
-        const rifugioHTML = await renderTemplate(
+        const rifugioHTML = await foundry.applications.handlebars.renderTemplate(
           'modules/brancalonia-bigat/templates/rifugio-section.hbs',
           {
             rifugio,
@@ -743,7 +743,7 @@ class BrancaloniaSheets {
         const malefatte = actor.getFlag('brancalonia-bigat', 'malefatte') || [];
 
         // Fixed: Use Handlebars template with i18n and statistics
-        const malefatteHTML = await renderTemplate(
+        const malefatteHTML = await foundry.applications.handlebars.renderTemplate(
           'modules/brancalonia-bigat/templates/malefatte-section.hbs',
           {
             malefatte,

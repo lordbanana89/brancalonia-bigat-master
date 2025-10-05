@@ -704,7 +704,7 @@ if (malefatteSystem) {
   /**
    * Controlla malefatte automatiche per crimini
    */
-  _checkForAutomaticMalefatta(actor, skillId, rollTotal) {
+  async _checkForAutomaticMalefatta(actor, skillId, rollTotal) {
     const crimeMap = {
       sle: { // Sleight of Hand
         malefatta: this.malefatte.find(m => m.id === 10), // Borseggio
