@@ -152,10 +152,21 @@ class BrancaloniaMechanics {
       this.handleActorUpdate(actor, update, options, userId);
     });
 
-    // Hook per character sheet
-    Hooks.on('renderActorSheet', (app, html, data) => {
-      this.enhanceCharacterSheet(app, html, data);
-    });
+    // Fixed: Use SheetCoordinator
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule('BrancaloniaMechanics', async (app, html, data) => {
+        this.enhanceCharacterSheet(app, html, data);
+      }, {
+        priority: 80,
+        types: ['character']
+      });
+    } else {
+      Hooks.on('renderActorSheet', (app, html, data) => {
+        this.enhanceCharacterSheet(app, html, data);
+      });
+    }
   }
 
   /**
