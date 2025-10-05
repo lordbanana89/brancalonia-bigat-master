@@ -53,7 +53,13 @@ class SettingsRegistration {
       moduleLogger.startPerformance('settings-config-load');
       moduleLogger.info('📂 Caricamento settings-config.json...');
 
-      const response = await fetch('modules/brancalonia-bigat/settings-config.json');
+      const module = game.modules.get(this.MODULE_ID);
+      const basePath = module?.url || `modules/${this.MODULE_ID}`;
+      const targetPath = foundry.utils?.getRoute
+        ? foundry.utils.getRoute(`${basePath}/settings-config.json`)
+        : `${basePath}/settings-config.json`;
+
+      const response = await fetch(targetPath);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

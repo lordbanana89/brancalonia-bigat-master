@@ -18,7 +18,11 @@ let GENERATED_EFFECTS_REGISTRY = {};
 async function loadGeneratedRegistry() {
   // Fix: usa path assoluto con leading slash per ES module import
   // Il file si trova in /modules/brancalonia-bigat/data/ (non /modules/brancalonia-bigat/modules/data/)
-  const registryPath = `/modules/${MODULE_ID}/data/active-effects-registry-generated.js`;
+  const module = game.modules.get(MODULE_ID);
+  const basePath = module?.url || `modules/${MODULE_ID}`;
+  const registryPath = foundry.utils?.getRoute
+    ? foundry.utils.getRoute(`${basePath}/data/active-effects-registry-generated.js`)
+    : `${basePath}/data/active-effects-registry-generated.js`;
 
   try {
     const { GENERATED_EFFECTS_REGISTRY: registry } = await import(
