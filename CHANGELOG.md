@@ -5,6 +5,27 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.50] - 2025-10-05
+
+### 🔧 UI Coordinator Complete Fix
+- **Haven Content**: Risolto JSON parsing error in `_createHavenContent`
+- **Lavori Content**: Risolto JSON parsing error in `_createLavoriContent`  
+- **Malefatte Content**: Risolto JSON parsing error in `_createMalefatteContent`
+- **renderTemplate**: Migrati tutti i `renderTemplate` deprecati a `foundry.applications.handlebars.renderTemplate`
+- **Pattern Fix**: Applicato controllo `undefined` prima di `foundry.utils.duplicate()` in tutte le funzioni
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **UI Coordinator**: Completamente funzionante senza errori JSON
+- **Tab Content**: Tutte le tab (Infamia, Compagnia, Haven, Lavori, Malefatte) funzionanti
+
+### 📋 Technical Details
+- **Files Modified**: 1 file (brancalonia-ui-coordinator.js) con 10 inserimenti e 7 rimozioni
+- **Error Resolution**: Eliminati tutti gli errori JSON parsing nel UI Coordinator
+- **API Migration**: Completata migrazione da `renderTemplate` globale a API namespaced
+
+---
+
 ## [13.0.49] - 2025-10-05
 
 ### 🔧 Critical Bug Fixes
