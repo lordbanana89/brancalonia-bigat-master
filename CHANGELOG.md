@@ -5,6 +5,14 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.59] - 2025-10-06
+
+### 🔧 Manifest Hotfix
+- **Download URL**: Ripristinato l'URL del pacchetto a `archive/refs/heads/main.zip` come da README, evitando 404 sui compendi durante l'installazione.
+- **Version Sync**: Aggiornato `module.json` alla versione 13.0.59 per allineare manifest e pacchetto scaricato.
+
+---
+
 ## [13.0.58] - 2025-10-05
 
 ### 🔧 Critical Settings Configuration Path Fix
