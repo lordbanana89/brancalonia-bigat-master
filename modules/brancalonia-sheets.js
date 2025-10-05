@@ -347,14 +347,10 @@ class BrancaloniaSheets {
   }
 
   static addBackgroundTexture(html) {
+    // Fixed: Use CSS class instead of inline styles
     const sheetBody = html.find('.sheet-body');
     if (sheetBody.length) {
-      sheetBody.css({
-        'background-image': 'linear-gradient(rgba(244, 228, 188, 0.9), rgba(255, 248, 220, 0.9))',
-        'background-blend-mode': 'multiply',
-        'background-size': 'cover',
-        'background-position': 'center'
-      });
+      sheetBody.addClass('brancalonia-parchment-background');
     }
   }
 

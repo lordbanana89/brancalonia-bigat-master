@@ -1,0 +1,84 @@
+/* Brancalonia Sheet Enhancements */
+
+/* Parchment background texture */
+.brancalonia-parchment-background {
+  background-image: linear-gradient(rgba(244, 228, 188, 0.9), rgba(255, 248, 220, 0.9));
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Portrait frame */
+.brancalonia-portrait-container {
+  position: relative;
+}
+
+.portrait-frame.renaissance {
+  border: 3px solid #8b4513;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.frame-ornament {
+  position: absolute;
+  font-size: 1.5rem;
+  color: #d4af37;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.frame-ornament.top-left {
+  top: -10px;
+  left: -10px;
+}
+
+.frame-ornament.top-right {
+  top: -10px;
+  right: -10px;
+}
+
+.frame-ornament.bottom-left {
+  bottom: -10px;
+  left: -10px;
+}
+
+.frame-ornament.bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+
+/* NPC Sheet */
+.brancalonia-npc-sheet .npc-faction {
+  background: #f4e4bc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 10px;
+  border-left: 4px solid #8b4513;
+}
+
+.npc-faction .faction-label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Character sheet sections */
+.brancalonia-section {
+  margin: 15px 0;
+  padding: 12px;
+  background: rgba(244, 235, 212, 0.3);
+  border: 2px solid #8b4513;
+  border-radius: 6px;
+}
+
+.section-header.ornate {
+  text-align: center;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.section-header h2,
+.section-header h3 {
+  margin: 0;
+  color: #8b4513;
+  font-family: 'Cinzel', serif;
+}
