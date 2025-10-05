@@ -5,6 +5,28 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.53] - 2025-10-05
+
+### 🔧 Critical Settings Registration Fix
+- **Path Fix**: Corretto path settings-config.json da 'modules/brancalonia-bigat/modules/settings-config.json' a 'modules/settings-config.json'
+- **Error Resolution**: Risolto errore critico 'brancalonia-bigat.debugMode' is not a registered game setting
+- **Error Resolution**: Risolto errore critico 'brancalonia-bigat.disableUI' is not a registered game setting
+- **Settings Loading**: Ora il sistema carica correttamente tutti i 23 settings
+- **Initialization**: Eliminati errori fatali di inizializzazione Brancalonia
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **Settings Registration**: Tutti i 23 settings registrati correttamente
+- **Module Initialization**: Inizializzazione senza errori critici
+- **Error Handling**: Gestione errori migliorata
+
+### 📋 Technical Details
+- **Files Modified**: 1 file (settings-registration.js) con 1 inserimento e 1 rimozione
+- **Critical Fix**: Risolto errore che impediva l'inizializzazione del modulo
+- **Path Resolution**: Corretto path per caricamento configurazione settings
+
+---
+
 ## [13.0.52] - 2025-10-05
 
 ### 🔧 Active Effects Warning Fix
