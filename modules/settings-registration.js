@@ -139,6 +139,12 @@ class SettingsRegistration {
         settingData.onChange = settingConfig.onChange;
       }
 
+      // Ensure game.settings is available
+      if (!game?.settings) {
+        moduleLogger.warn(`game.settings non ancora disponibile per ${settingConfig.key}`);
+        return false;
+      }
+
       // Register the setting
       game.settings.register(namespace, settingName, settingData);
 
@@ -225,6 +231,21 @@ class SettingsRegistration {
     try {
       moduleLogger.startPerformance('settings-registration-init');
       moduleLogger.info('🔧 Inizializzazione registrazione settings...');
+
+      // Ensure game.settings is available
+      if (!game?.settings) {
+        moduleLogger.warn('game.settings non ancora disponibile, attesa...');
+        await new Promise(resolve => {
+          const checkSettings = () => {
+            if (game?.settings) {
+              resolve();
+            } else {
+              setTimeout(checkSettings, 100);
+            }
+          };
+          checkSettings();
+        });
+      }
 
       // Load configuration
       const config = await this.loadConfig();

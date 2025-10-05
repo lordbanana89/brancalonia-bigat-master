@@ -5,6 +5,28 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.55] - 2025-10-05
+
+### 🔧 Final Settings Registration Fix
+- **Timing Fix**: Aggiunto controllo disponibilità `game.settings` prima della registrazione
+- **Retry Logic**: Implementata attesa automatica fino a disponibilità di `game.settings`
+- **Error Handling**: Migliorata gestione errori di registrazione settings
+- **File Position**: Corretto posizionamento `settings-config.json` nella directory corretta
+- **Path Fix**: Aggiornato path caricamento configurazione settings
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **Settings Registration**: Sistema completamente funzionante
+- **Module Initialization**: Inizializzazione senza errori critici
+- **Error Prevention**: Eliminati errori di timing inizializzazione
+
+### 📋 Technical Details
+- **Files Modified**: 1 file (settings-registration.js) con controlli timing migliorati
+- **Critical Fix**: Risolto problema registrazione settings con controllo disponibilità API
+- **Initialization Order**: Migliorato ordine inizializzazione per compatibilità Foundry VTT
+
+---
+
 ## [13.0.54] - 2025-10-05
 
 ### 🔧 SyntaxError Fix - app.isEditable not defined
@@ -34,7 +56,7 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 ## [13.0.53] - 2025-10-05
 
 ### 🔧 Critical Settings Registration Fix
-- **Path Fix**: Corretto path settings-config.json da 'modules/brancalonia-bigat/modules/settings-config.json' a 'modules/settings-config.json'
+- **Path Fix**: Corretto path settings-config.json da 'modules/settings-config.json' a 'modules/brancalonia-bigat/settings-config.json'
 - **Error Resolution**: Risolto errore critico 'brancalonia-bigat.debugMode' is not a registered game setting
 - **Error Resolution**: Risolto errore critico 'brancalonia-bigat.disableUI' is not a registered game setting
 - **Settings Loading**: Ora il sistema carica correttamente tutti i 23 settings
