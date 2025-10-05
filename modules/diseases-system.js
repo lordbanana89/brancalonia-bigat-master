@@ -441,7 +441,7 @@ class DiseasesSystem {
   static _registerHooks() {
     try {
       // Hook per esposizione a malattie
-      Hooks.on('updateActor', (actor, update, options, userId) => {
+      Hooks.on('updateActor', async (actor, update, options, userId) => {
         try {
           if (!game.settings.get('brancalonia-bigat', 'enableDiseases')) return;
 

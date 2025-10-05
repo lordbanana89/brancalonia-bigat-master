@@ -208,6 +208,24 @@
         "light": "Chiaro",
         "custom": "Personalizzato"
       }
+    },
+    {
+      "key": "brancalonia-bigat.debugMode",
+      "type": "bool",
+      "default": false,
+      "name": "Modalità Debug",
+      "hint": "Abilita logging dettagliato per debugging (solo per sviluppatori)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.disableUI",
+      "type": "bool",
+      "default": false,
+      "name": "Disabilita UI Brancalonia",
+      "hint": "Disabilita completamente le modifiche UI di Brancalonia",
+      "scope": "world",
+      "config": true
     }
   ],
   "menus": []

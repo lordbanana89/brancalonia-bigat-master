@@ -499,7 +499,7 @@ if (malefatteSystem) {
   /**
    * Seleziona malefatte casuali
    */
-  _selectRandomMalefatte(count) {
+  async _selectRandomMalefatte(count) {
     const selected = [];
     for (let i = 0; i < count; i++) {
       // Fixed: Use Roll() for game-critical random selection

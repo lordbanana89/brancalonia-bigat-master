@@ -431,7 +431,7 @@ class BrancaloniaSheets {
         const maxInfamia = actor.getFlag('brancalonia-bigat', 'infamiaMax') || 10;
 
         // Fixed: Use Handlebars template with i18n
-        const infamiaHTML = await renderTemplate(
+        const infamiaHTML = await foundry.applications.handlebars.renderTemplate(
           'modules/brancalonia-bigat/templates/infamia-section.hbs',
           {
             infamia: currentInfamia,

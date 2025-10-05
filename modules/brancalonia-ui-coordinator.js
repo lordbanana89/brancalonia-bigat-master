@@ -1122,11 +1122,12 @@ class BrancaloniaUICoordinator {
   }
 
   static async _createCompagniaContent(actor) {
-    const compagnia = foundry.utils.duplicate(actor.getFlag(this.ID, 'compagnia')) || {};
+    const compagniaData = actor.getFlag(this.ID, 'compagnia');
+    const compagnia = compagniaData ? foundry.utils.duplicate(compagniaData) : {};
     const members = compagnia.membri || compagnia.members || [];
     const reputation = Number(compagnia.reputazione ?? 0);
 
-    return renderTemplate('modules/brancalonia-bigat/templates/compagnia-sheet-full.hbs', {
+    return foundry.applications.handlebars.renderTemplate('modules/brancalonia-bigat/templates/compagnia-sheet-full.hbs', {
       compagnia,
       members,
       reputationLabel: this._getReputationLabel(reputation),

@@ -157,7 +157,7 @@ class CimeliMaledetti {
     }
   }
 
-  static _createAutomaticMacros() {
+  static async _createAutomaticMacros() {
     try {
       // Verifica che game.macros sia disponibile
       if (!game.macros) {
