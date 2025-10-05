@@ -25,13 +25,25 @@ async function loadGeneratedRegistry() {
       /* webpackIgnore: true */ registryPath
     );
     GENERATED_EFFECTS_REGISTRY = registry ?? {};
+    moduleLogger?.debug?.(
+      MODULE_NAME,
+      'Registro effetti generato caricato con successo'
+    );
   } catch (error) {
     // Fallback manuale se il file generato non è disponibile
-    moduleLogger?.warn?.(
-      MODULE_NAME,
-      'Registro effetti generato non disponibile. Uso fallback manuale.',
-      error
-    );
+    // Non loggare come warning se è solo un file mancante (comportamento normale)
+    if (error.message?.includes('404') || error.message?.includes('Not Found')) {
+      moduleLogger?.debug?.(
+        MODULE_NAME,
+        'Registro effetti generato non presente (normale). Uso fallback manuale.'
+      );
+    } else {
+      moduleLogger?.warn?.(
+        MODULE_NAME,
+        'Errore caricamento registro effetti generato. Uso fallback manuale.',
+        error
+      );
+    }
     GENERATED_EFFECTS_REGISTRY = {};
   }
 
