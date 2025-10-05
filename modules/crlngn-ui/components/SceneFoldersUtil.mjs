@@ -435,7 +435,13 @@ export class SceneNavFolders {
         const li = document.createElement('li');
         li.className = 'search-folder';
         li.dataset.folderId = folder.id;
-        li.innerHTML = `<a><i class="fas fa-folder"></i> ${folder.name}</a>`;
+        // Fixed: XSS prevention - use textContent instead of innerHTML
+        const icon = document.createElement('i');
+        icon.className = 'fas fa-folder';
+        const link = document.createElement('a');
+        link.appendChild(icon);
+        link.appendChild(document.createTextNode(` ${folder.name}`));
+        li.appendChild(link);
         li.addEventListener('click', SceneNavFolders.onSelectSearchedFolder);
         searchResultsContainer.appendChild(li);
       });
@@ -448,7 +454,13 @@ export class SceneNavFolders {
       const li = document.createElement('li');
       li.className = 'search-scene';
       li.dataset.sceneId = scene.id;
-      li.innerHTML = `<a><i class="fas fa-map"></i> ${scene.name}</a>`;
+      // Fixed: XSS prevention - use textContent instead of innerHTML
+      const icon = document.createElement('i');
+      icon.className = 'fas fa-map';
+      const link = document.createElement('a');
+      link.appendChild(icon);
+      link.appendChild(document.createTextNode(` ${scene.name}`));
+      li.appendChild(link);
       li.addEventListener('dblclick', TopNavigation.onActivateScene);
       li.addEventListener('click', TopNavigation.onSelectScene);
       searchResultsContainer.appendChild(li);

@@ -230,7 +230,8 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
         }
       ];
 
-      macros.forEach(async macroData => {
+      // Fixed: Use for...of instead of forEach(async)
+      for (const macroData of macros) {
         try {
           const existingMacro = game?.macros?.find(m => m.name === macroData.name);
           if (!existingMacro) {
@@ -242,7 +243,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
         } catch (error) {
           logger.error(MODULE_NAME, `Errore creazione macro ${macroData.name}`, error);
         }
-      });
+      }
 
     } catch (error) {
       logger.error(MODULE_NAME, 'Errore creazione macro cimeli', error);

@@ -752,8 +752,16 @@ export class CompendiumManager {
     const reader = new FileReader();
 
     reader.onload = async (event) => {
+      let data;
       try {
-        const data = JSON.parse(event.target.result);
+        data = JSON.parse(event.target.result);
+      } catch (parseError) {
+        logger.error(CompendiumManager.MODULE_NAME, 'File JSON non valido', parseError);
+        ui.notifications.error('File JSON non valido o corrotto!');
+        return;
+      }
+      
+      try {
         let imported = 0;
 
         for (let [packName, documents] of Object.entries(data)) {

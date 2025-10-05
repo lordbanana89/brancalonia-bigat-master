@@ -1436,9 +1436,10 @@ class FavoriSystem {
   }
 
   // Cleanup favori temporanei alla fine del lavoretto
-  cleanupTemporaryFavors(actors) {
+  async cleanupTemporaryFavors(actors) {
     try {
-      actors.forEach(async actor => {
+      // Fixed: Use for...of instead of forEach(async) to properly await
+      for (const actor of actors) {
         // Rimuovi compare temporaneo
         if (actor.getFlag('brancalonia-bigat', 'compareEsperto')) {
           await actor.unsetFlag('brancalonia-bigat', 'compareEsperto');
@@ -1452,7 +1453,7 @@ class FavoriSystem {
         }
 
         logger.info(FavoriSystem.MODULE_NAME, `Favori temporanei puliti per ${actor.name}`);
-      });
+      }
     } catch (error) {
       FavoriSystem._statistics.errors.push(`cleanupTemporaryFavors: ${error.message}`);
       logger.error(FavoriSystem.MODULE_NAME, 'Errore cleanup favori', error);

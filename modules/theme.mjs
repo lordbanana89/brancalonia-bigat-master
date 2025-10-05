@@ -411,7 +411,15 @@ export class Theme {
           logger.info(Theme.MODULE_NAME, `Import tema da file: ${file.name}`);
 
           const text = await file.text();
-          const data = JSON.parse(text);
+          // Fixed: JSON.parse with try-catch
+          let data;
+          try {
+            data = JSON.parse(text);
+          } catch (parseError) {
+            logger.error(Theme.MODULE_NAME, 'File tema non valido', parseError);
+            ui.notifications.error('File tema non valido o corrotto!');
+            return;
+          }
 
           // Validate data structure
           if (!data.colors) {

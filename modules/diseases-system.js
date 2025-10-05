@@ -445,9 +445,13 @@ class DiseasesSystem {
 
           if (update.system?.attributes?.hp?.value !== undefined) {
             const hpLoss = (actor.system.attributes.hp.value - update.system.attributes.hp.value);
-            if (hpLoss > 10 && Math.random() < 0.1) {
-              // 10% possibilità di infezione con ferite gravi
-              window.DiseasesSystem._checkDiseaseExposure(actor, 'morbo_putrescente');
+            // Fixed: Use Roll() for game-critical check (10% = 1-10 on d100)
+            if (hpLoss > 10) {
+              const chanceRoll = await new Roll('1d100').evaluate({ async: true });
+              if (chanceRoll.total <= 10) {
+                // 10% possibilità di infezione con ferite gravi
+                window.DiseasesSystem._checkDiseaseExposure(actor, 'morbo_putrescente');
+              }
             }
           }
         } catch (error) {

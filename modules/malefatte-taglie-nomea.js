@@ -483,8 +483,9 @@ if (malefatteSystem) {
   _selectRandomMalefatte(count) {
     const selected = [];
     for (let i = 0; i < count; i++) {
-      const roll = Math.floor(Math.random() * 20) + 1;
-      selected.push(this.malefatte.find(m => m.id === roll));
+      // Fixed: Use Roll() for game-critical random selection
+      const roll = await new Roll('1d20').evaluate({ async: true });
+      selected.push(this.malefatte.find(m => m.id === roll.total));
     }
     return selected;
   }
@@ -496,10 +497,13 @@ if (malefatteSystem) {
     const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
     const nomea = this._calculateNomea(taglia);
 
-    await actor.setFlag('brancalonia-bigat', 'malefatte', malefatte);
-    await actor.setFlag('brancalonia-bigat', 'taglia', taglia);
-    await actor.setFlag('brancalonia-bigat', 'nomea', nomea.level);
-    await actor.setFlag('brancalonia-bigat', 'nomeaName', nomea.name);
+    // Fixed: Batch update atomico invece di 4 setFlag separati
+    await actor.update({
+      'flags.brancalonia-bigat.malefatte': malefatte,
+      'flags.brancalonia-bigat.taglia': taglia,
+      'flags.brancalonia-bigat.nomea': nomea.level,
+      'flags.brancalonia-bigat.nomeaName': nomea.name
+    });
 
     if (malefatte.length > 0) {
       ChatMessage.create({
@@ -547,15 +551,18 @@ if (malefatteSystem) {
     const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
     const nomea = this._calculateNomea(taglia);
 
-    await actor.setFlag('brancalonia-bigat', 'malefatte', malefatte);
-    await actor.setFlag('brancalonia-bigat', 'taglia', taglia);
-    await actor.setFlag('brancalonia-bigat', 'nomea', nomea.level);
-    await actor.setFlag('brancalonia-bigat', 'nomeaName', nomea.name);
-
     // Segna come recente per il Barattiere
     const recentMalefatte = actor.flags.brancalonia?.recentMalefatte || [];
     recentMalefatte.push(malefatta);
-    await actor.setFlag('brancalonia-bigat', 'recentMalefatte', recentMalefatte);
+
+    // Fixed: Batch update atomico invece di 5 setFlag separati
+    await actor.update({
+      'flags.brancalonia-bigat.malefatte': malefatte,
+      'flags.brancalonia-bigat.taglia': taglia,
+      'flags.brancalonia-bigat.nomea': nomea.level,
+      'flags.brancalonia-bigat.nomeaName': nomea.name,
+      'flags.brancalonia-bigat.recentMalefatte': recentMalefatte
+    });
 
     ChatMessage.create({
       content: `
@@ -587,10 +594,13 @@ if (malefatteSystem) {
     const taglia = malefatte.reduce((sum, m) => sum + m.value, 0);
     const nomea = this._calculateNomea(taglia);
 
-    await actor.setFlag('brancalonia-bigat', 'malefatte', malefatte);
-    await actor.setFlag('brancalonia-bigat', 'taglia', taglia);
-    await actor.setFlag('brancalonia-bigat', 'nomea', nomea.level);
-    await actor.setFlag('brancalonia-bigat', 'nomeaName', nomea.name);
+    // Fixed: Batch update atomico
+    await actor.update({
+      'flags.brancalonia-bigat.malefatte': malefatte,
+      'flags.brancalonia-bigat.taglia': taglia,
+      'flags.brancalonia-bigat.nomea': nomea.level,
+      'flags.brancalonia-bigat.nomeaName': nomea.name
+    });
 
     ChatMessage.create({
       content: `
@@ -629,10 +639,13 @@ if (malefatteSystem) {
     const newTaglia = Math.max(0, currentTaglia - amount);
     const nomea = this._calculateNomea(newTaglia);
 
-    await actor.update({ 'system.currency.gp': money - amount });
-    await actor.setFlag('brancalonia-bigat', 'taglia', newTaglia);
-    await actor.setFlag('brancalonia-bigat', 'nomea', nomea.level);
-    await actor.setFlag('brancalonia-bigat', 'nomeaName', nomea.name);
+    // Fixed: Batch update atomico (currency + flags)
+    await actor.update({
+      'system.currency.gp': money - amount,
+      'flags.brancalonia-bigat.taglia': newTaglia,
+      'flags.brancalonia-bigat.nomea': nomea.level,
+      'flags.brancalonia-bigat.nomeaName': nomea.name
+    });
 
     ChatMessage.create({
       content: `
@@ -660,8 +673,11 @@ if (malefatteSystem) {
     const taglia = actor.flags.brancalonia?.taglia || 0;
     const nomea = this._calculateNomea(taglia);
 
-    await actor.setFlag('brancalonia-bigat', 'nomea', nomea.level);
-    await actor.setFlag('brancalonia-bigat', 'nomeaName', nomea.name);
+    // Fixed: Batch update atomico
+    await actor.update({
+      'flags.brancalonia-bigat.nomea': nomea.level,
+      'flags.brancalonia-bigat.nomeaName': nomea.name
+    });
 
     return nomea;
   }
@@ -687,8 +703,10 @@ if (malefatteSystem) {
 
     const crime = crimeMap[skillId];
     if (crime && rollTotal >= crime.threshold) {
-      // 30% chance di essere scoperti
-      if (Math.random() < 0.3) {
+      // Fixed: Use Roll() instead of Math.random() for game-critical RNG
+      // 30% chance di essere scoperti (tiro <= 30 su d100)
+      const chanceRoll = await new Roll('1d100').evaluate({ async: true });
+      if (chanceRoll.total <= 30) {
         this.addMalefatta(actor, crime.malefatta);
       }
     }

@@ -1287,31 +1287,45 @@ if (duelSystem) {
     if (winner) {
       const rewards = duel.type.rewards;
 
+      // Fixed: Batch updates atomici per evitare race conditions
+      const winnerUpdates = {};
+      const loserUpdates = {};
+
       // Infamia
       if (rewards.winner.infamy) {
         const currentInfamia = winner.flags.brancalonia?.infamia || 0;
-        await winner.setFlag('brancalonia-bigat', 'infamia', currentInfamia + rewards.winner.infamy);
+        winnerUpdates['flags.brancalonia-bigat.infamia'] = currentInfamia + rewards.winner.infamy;
       }
       if (rewards.loser.infamy) {
         const currentInfamia = loser.flags.brancalonia?.infamia || 0;
-        await loser.setFlag('brancalonia-bigat', 'infamia', currentInfamia + rewards.loser.infamy);
-      }
-
-      // Reputazione
-      if (rewards.winner.reputation) {
-        await this._adjustReputation(winner, rewards.winner.reputation);
-      }
-      if (rewards.loser.reputation) {
-        await this._adjustReputation(loser, rewards.loser.reputation);
+        loserUpdates['flags.brancalonia-bigat.infamia'] = currentInfamia + rewards.loser.infamy;
       }
 
       // Oro
       if (rewards.winner.gold) {
         const goldRoll = await new Roll(rewards.winner.gold).evaluate();
-        await winner.update({
-          'system.currency.du': winner.system.currency.du + goldRoll.total
-        });
+        winnerUpdates['system.currency.du'] = winner.system.currency.du + goldRoll.total;
       }
+
+      // Applica batch updates
+      const updatePromises = [];
+      if (Object.keys(winnerUpdates).length > 0) {
+        updatePromises.push(winner.update(winnerUpdates));
+      }
+      if (Object.keys(loserUpdates).length > 0) {
+        updatePromises.push(loser.update(loserUpdates));
+      }
+
+      // Reputazione (separata perché usa metodo custom)
+      if (rewards.winner.reputation) {
+        updatePromises.push(this._adjustReputation(winner, rewards.winner.reputation));
+      }
+      if (rewards.loser.reputation) {
+        updatePromises.push(this._adjustReputation(loser, rewards.loser.reputation));
+      }
+
+      // Esegui tutti gli update in parallelo
+      await Promise.all(updatePromises);
     }
 
     // Messaggio finale

@@ -116,6 +116,11 @@ class GlobalErrorHandler {
       this._state.listener = listener;
       this._state.initialized = true;
 
+      // Fixed: Auto-cleanup su beforeunload
+      window.addEventListener('beforeunload', () => {
+        this.cleanup();
+      });
+
       this._statistics.initTime = performance.now() - startTime;
 
       logger.info(

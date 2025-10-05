@@ -412,7 +412,8 @@ class BrancaloniaRischiMestiere {
         }
       ];
 
-      macros.forEach(async macroData => {
+      // Fixed: Use for...of instead of forEach(async)
+      for (const macroData of macros) {
         try {
           const existingMacro = game?.macros?.find(m => m.name === macroData.name);
           if (!existingMacro) {
@@ -424,7 +425,7 @@ class BrancaloniaRischiMestiere {
         } catch (error) {
           logger.error(this.MODULE_NAME, `Errore creazione macro ${macroData.name}`, error);
         }
-      });
+      }
 
     } catch (error) {
       logger.error(this.MODULE_NAME, 'Errore nella creazione macro rischi', error);

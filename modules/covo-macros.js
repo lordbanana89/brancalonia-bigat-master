@@ -837,7 +837,15 @@ class CovoMacros {
     },
     render: (html) => {
       html.find('.buy-item').click(async (event) => {
-        const item = JSON.parse(event.currentTarget.dataset.item);
+        // Fixed: JSON.parse with try-catch to prevent crashes
+        let item;
+        try {
+          item = JSON.parse(event.currentTarget.dataset.item);
+        } catch (error) {
+          logger.error('CovoMacros', 'Errore parsing item data', error);
+          ui.notifications.error('Dati item corrotti!');
+          return;
+        }
 
         const confirmed = await foundry.appv1.sheets.Dialog.confirm({
           title: "Conferma Acquisto",
