@@ -1429,33 +1429,68 @@ Hooks.on('updateToken', (token, update, options, userId) => {
   }
 });
 
-Hooks.on('renderActorSheet', (app, html, data) => {
-  if (!game.user.isGM) return;
+// Fixed: Use SheetCoordinator
+const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
 
-  const actor = app.actor;
-  if (actor.type !== 'character' && actor.type !== 'npc') return;
+if (SheetCoordinator) {
+  SheetCoordinator.registerModule('EnvironmentalHazards', async (app, html, data) => {
+    if (!game.user.isGM) return;
 
-  // Aggiungi sezione resistenze hazard
-  const hazardSection = $(`
-    <div class="form-group">
-      <label>Resistenze Hazard Ambientali</label>
-      <div class="form-fields">
-        <button type="button" class="manage-hazard-resistances">
-          <i class="fas fa-shield-alt"></i> Gestisci Resistenze
-        </button>
+    const actor = app.actor;
+    if (actor.type !== 'character' && actor.type !== 'npc') return;
+
+    const hazardSection = $(`
+      <div class="form-group">
+        <label>Resistenze Hazard Ambientali</label>
+        <div class="form-fields">
+          <button type="button" class="manage-hazard-resistances">
+            <i class="fas fa-shield-alt"></i> Gestisci Resistenze
+          </button>
+        </div>
       </div>
-    </div>
-  `);
+    `);
 
-  html.find('.tab.details .form-group').last().after(hazardSection);
+    html.find('.tab.details .form-group').last().after(hazardSection);
 
-  hazardSection.find('.manage-hazard-resistances').click(() => {
-    const instance = game.brancalonia?.environmentalHazards;
-    if (instance) {
-      instance.showHazardResistanceDialog(actor);
-    }
+    hazardSection.find('.manage-hazard-resistances').click(() => {
+      const instance = game.brancalonia?.environmentalHazards;
+      if (instance) {
+        instance.showHazardResistanceDialog(actor);
+      }
+    });
+  }, {
+    priority: 75,
+    types: ['character', 'npc'],
+    gmOnly: true
   });
-});
+} else {
+  Hooks.on('renderActorSheet', (app, html, data) => {
+    if (!game.user.isGM) return;
+
+    const actor = app.actor;
+    if (actor.type !== 'character' && actor.type !== 'npc') return;
+
+    const hazardSection = $(`
+      <div class="form-group">
+        <label>Resistenze Hazard Ambientali</label>
+        <div class="form-fields">
+          <button type="button" class="manage-hazard-resistances">
+            <i class="fas fa-shield-alt"></i> Gestisci Resistenze
+          </button>
+        </div>
+      </div>
+    `);
+
+    html.find('.tab.details .form-group').last().after(hazardSection);
+
+    hazardSection.find('.manage-hazard-resistances').click(() => {
+      const instance = game.brancalonia?.environmentalHazards;
+      if (instance) {
+        instance.showHazardResistanceDialog(actor);
+      }
+    });
+  });
+}
 
 // ================================================
 // PUBLIC API
