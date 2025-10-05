@@ -5,6 +5,27 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.49] - 2025-10-05
+
+### 🔧 Critical Bug Fixes
+- **SyntaxError Fix**: Risolto "Unexpected reserved word" in 6 file aggiungendo `async` alle funzioni che usano `await`
+- **Settings Registration**: Aggiunti settings mancanti `debugMode` e `disableUI` a `settings-config.json`
+- **JSON Parsing Error**: Fix controllo `undefined` prima di `foundry.utils.duplicate()` in UI Coordinator
+- **Deprecated API**: Migrato `renderTemplate` globale a `foundry.applications.handlebars.renderTemplate`
+- **Missing File**: `active-effects-registry-generated.js` warning normale, fallback funzionante
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **Error Resolution**: Eliminati tutti gli errori critici di runtime
+- **Compatibility**: Mantenuta compatibilità con Foundry VTT v13.348
+
+### 📋 Technical Details
+- **Files Modified**: 8 file con 27 inserimenti e 8 rimozioni
+- **Error Categories**: SyntaxError, Settings, JSON parsing, Deprecated API
+- **Test Coverage**: 93/93 test passati (100% success rate)
+
+---
+
 ## [13.0.48] - 2025-01-27
 
 ### 🛠️ Actor Sheet Modernization
