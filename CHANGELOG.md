@@ -5,6 +5,14 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.61] - 2025-10-06
+
+### 🔧 Path Resolution Hotfix
+- **Settings Loader**: ora usa `module.root` (fallback su `modules/<id>`) per costruire il percorso di `settings-config.json`, evitando fetch verso URL GitHub quando il modulo è installato da release zip.
+- **Active Effects Registry**: stessa logica applicata al registry generato, così l’import dinamico funziona sia su installazioni locali sia su hosting remoto.
+
+---
+
 ## [13.0.60] - 2025-10-06
 
 ### 🔧 Settings & Active Effects Loader Fix
