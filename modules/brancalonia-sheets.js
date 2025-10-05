@@ -626,67 +626,18 @@ class BrancaloniaSheets {
       if (biographyTab.length && !html.find('.rifugio-section').length) {
         const rifugio = actor.getFlag('brancalonia-bigat', 'rifugio') || {};
 
-      const rifugioHTML = `
-                <div class="rifugio-section brancalonia-section">
-                    <div class="section-header ornate">
-                        <h2>
-                            <span class="icon">🏠</span>
-                            Il Rifugio
-                            <span class="icon">🏠</span>
-                        </h2>
-                    </div>
-                    <div class="section-content">
-                        <div class="rifugio-main">
-                            <div class="field-group">
-                                <label>Nome del Rifugio:</label>
-                                <input type="text" name="flags.brancalonia-bigat.rifugio.nome"
-                                       value="${rifugio.nome || ''}"
-                                       placeholder="Es: La Taverna del Gatto Nero" />
-                            </div>
-                            <div class="field-group">
-                                <label>Ubicazione:</label>
-                                <input type="text" name="flags.brancalonia-bigat.rifugio.ubicazione"
-                                       value="${rifugio.ubicazione || ''}"
-                                       placeholder="Es: Vicolo dei Ladri, Tarantasia" />
-                            </div>
-                            <div class="field-group">
-                                <label>Tipo di Rifugio:</label>
-                                <select name="flags.brancalonia-bigat.rifugio.tipo">
-                                    <option value="taverna" ${rifugio.tipo === 'taverna' ? 'selected' : ''}>Taverna</option>
-                                    <option value="locanda" ${rifugio.tipo === 'locanda' ? 'selected' : ''}>Locanda</option>
-                                    <option value="bordello" ${rifugio.tipo === 'bordello' ? 'selected' : ''}>Bordello</option>
-                                    <option value="magazzino" ${rifugio.tipo === 'magazzino' ? 'selected' : ''}>Magazzino</option>
-                                    <option value="palazzo" ${rifugio.tipo === 'palazzo' ? 'selected' : ''}>Palazzo Abbandonato</option>
-                                    <option value="nave" ${rifugio.tipo === 'nave' ? 'selected' : ''}>Nave</option>
-                                    <option value="altro" ${rifugio.tipo === 'altro' ? 'selected' : ''}>Altro</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="rifugio-comfort">
-                            <h4>Livello di Comfort:</h4>
-                            <div class="comfort-selector">
-                                ${this.renderComfortLevels(rifugio.comfort || 1)}
-                            </div>
-                            <div class="comfort-benefits">
-                                <h5>Benefici del Comfort:</h5>
-                                ${this.getComfortBenefits(rifugio.comfort || 1)}
-                            </div>
-                        </div>
-                        <div class="rifugio-features">
-                            <h4>Caratteristiche Speciali:</h4>
-                            <div class="features-grid">
-                                ${this.renderRifugioFeatures(rifugio.features || [])}
-                            </div>
-                        </div>
-                        <div class="rifugio-description">
-                            <label>Descrizione:</label>
-                            <textarea name="flags.brancalonia-bigat.rifugio.descrizione"
-                                      rows="4"
-                                      placeholder="Descrivi l'aspetto e l'atmosfera del rifugio...">${rifugio.descrizione || ''}</textarea>
-                        </div>
-                    </div>
-                </div>
-            `;
+        // Fixed: Use Handlebars template
+        const rifugioHTML = await renderTemplate(
+          'modules/brancalonia-bigat/templates/rifugio-section.hbs',
+          {
+            rifugio,
+            comfortLevels: this.renderComfortLevels(rifugio.comfort || 1),
+            comfortBenefits: this.getComfortBenefits(rifugio.comfort || 1),
+            features: this.renderRifugioFeatures(rifugio.features || []),
+            canEdit: true
+          }
+        );
+        
         biographyTab.append(rifugioHTML);
 
         const renderTime = logger.endPerformance('sheets-add-rifugio');
