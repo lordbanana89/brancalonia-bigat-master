@@ -354,8 +354,11 @@ class TavernBrawlMacros {
     const mosseGeneriche = Object.entries(system.mosseGeneriche).slice(0, 6);
     const mosseMagiche = Object.entries(system.mosseMagiche).slice(0, 4);
     
-    new Dialog({
-      title: `🥊 Scegli Mossa - ${actor.name}`,
+    // Fixed: Migrated to DialogV2
+    const dialog = new foundry.applications.api.DialogV2({
+      window: {
+        title: `🥊 Scegli Mossa - ${actor.name}`
+      },
       content: `
         <div style="padding: 10px;">
           <div style="margin-bottom: 15px; padding: 8px; background: #fff3cd; border-left: 4px solid #ffc107;">
@@ -403,53 +406,60 @@ class TavernBrawlMacros {
           </div>
         </div>
       `,
-      buttons: {
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Annulla'
-        }
-      },
-      render: (html) => {
-        html.find('.mossa-btn').on('click', async function() {
-          const mossaKey = $(this).data('mossa');
-          const targets = game.user.targets;
+      buttons: [{
+        action: 'cancel',
+        icon: 'fas fa-times',
+        label: 'Annulla'
+      }],
+      render: (event, html) => {
+        html.querySelectorAll('.mossa-btn').forEach(btn => {
+          btn.addEventListener('click', async function() {
+            const mossaKey = this.dataset.mossa;
+            const targets = game.user.targets;
+            
+            // Verifica se la mossa richiede un bersaglio
+            const richiedeBersaglio = ![
+              'finta', 'allaPugna', 'sottoIlTavolo', 'sediataSpiriturale'
+            ].includes(mossaKey);
+            
+            if (richiedeBersaglio && targets.size === 0) {
+              ui.notifications.warn('Seleziona un bersaglio per questa mossa!');
+              return;
+            }
+            
+            const target = richiedeBersaglio ? Array.from(targets)[0] : null;
+            await system._executeMossa(actor, target, mossaKey);
+            
+            dialog.close();
+          });
           
-          // Verifica se la mossa richiede un bersaglio
-          const richiedeBersaglio = ![
-            'finta', 'allaPugna', 'sottoIlTavolo', 'sediataSpiriturale'
-          ].includes(mossaKey);
-          
-          if (richiedeBersaglio && targets.size === 0) {
-            ui.notifications.warn('Seleziona un bersaglio per questa mossa!');
-            return;
-          }
-          
-          const target = richiedeBersaglio ? Array.from(targets)[0] : null;
-          await system._executeMossa(actor, target, mossaKey);
-          
-          // Chiudi il dialog
-          html.closest('.app').find('.header-button.close').click();
-        });
-        
-        html.find('.mossa-btn').on('mouseenter', function() {
-          $(this).css('background', '#ffd700');
-        }).on('mouseleave', function() {
-          const isMagica = $(this).data('mossa') in system.mosseMagiche;
-          $(this).css('background', isMagica ? '#e6d4ff' : '#f4e4bc');
+          btn.addEventListener('mouseenter', function() {
+            this.style.background = '#ffd700';
+          });
+          btn.addEventListener('mouseleave', function() {
+            const isMagica = this.dataset.mossa in system.mosseMagiche;
+            this.style.background = isMagica ? '#e6d4ff' : '#f4e4bc';
+          });
         });
       }
     }, {
+      classes: ['brawl-mosse-dialog'],
       width: 500,
       height: 600
-    }).render(true);
+    });
+    
+    dialog.render(true);
   }
 
   /**
    * Dialog per raccogliere oggetto di scena
    */
   static async dialogRaccogliOggetto(actor) {
-    new Dialog({
-      title: '🪑 Raccogli Oggetto di Scena',
+    // Fixed: Migrated to DialogV2
+    new foundry.applications.api.DialogV2({
+      window: {
+        title: '🪑 Raccogli Oggetto di Scena'
+      },
       content: `
         <div style="padding: 10px;">
           <p style="text-align: center; margin-bottom: 15px;">
@@ -473,28 +483,28 @@ class TavernBrawlMacros {
           </div>
         </div>
       `,
-      buttons: {
-        comune: {
-          icon: '<i class="fas fa-box"></i>',
-          label: 'Comune',
-          callback: async () => {
-            await window.TavernBrawlSystem.pickUpProp(actor, 'comune');
-          }
-        },
-        epico: {
-          icon: '<i class="fas fa-star"></i>',
-          label: 'Epico',
-          callback: async () => {
-            await window.TavernBrawlSystem.pickUpProp(actor, 'epico');
-          }
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Annulla'
+      buttons: [{
+        action: 'comune',
+        icon: 'fas fa-box',
+        label: 'Comune',
+        default: true,
+        callback: async () => {
+          await window.TavernBrawlSystem.pickUpProp(actor, 'comune');
         }
-      },
-      default: 'comune'
+      }, {
+        action: 'epico',
+        icon: 'fas fa-star',
+        label: 'Epico',
+        callback: async () => {
+          await window.TavernBrawlSystem.pickUpProp(actor, 'epico');
+        }
+      }, {
+        action: 'cancel',
+        icon: 'fas fa-times',
+        label: 'Annulla'
+      }]
     }, {
+      classes: ['brawl-pickup-dialog'],
       width: 400
     }).render(true);
   }
