@@ -57,7 +57,6 @@ class BrancaloniaSheets {
 
       // Register sheet modifications
       this.registerSheetModifications();
-      this.registerSheetListeners();
       this.registerDataModels();
 
       const initTime = logger.endPerformance('sheets-init');
@@ -218,7 +217,8 @@ class BrancaloniaSheets {
 
           // Applica modifiche Brancalonia
           if (data.actor?.type === 'character') {
-            await this.modifyCharacterSheet(app, html, data);
+            const sheetHtml = await this.modifyCharacterSheet(app, html, data);
+            this.attachEventListeners(sheetHtml ?? html, data);
           } else if (data.actor?.type === 'npc') {
             this.modifyNPCSheet(app, html, data);
           }
@@ -239,15 +239,6 @@ class BrancaloniaSheets {
     } catch (error) {
       logger.error(this.MODULE_NAME, 'Errore nella registrazione hook', error);
     }
-  }
-
-  static registerSheetListeners() {
-    // Register custom event listeners for Brancalonia elements
-    Hooks.on('renderActorSheet', (app, html, data) => {
-      if (data.actor?.type === 'character') {
-        this.attachEventListeners(html, data);
-      }
-    });
   }
 
   static registerDataModels() {
@@ -327,6 +318,8 @@ class BrancaloniaSheets {
         timestamp: Date.now()
       });
 
+      return $html;
+
     } catch (error) {
       logger.error(this.MODULE_NAME, 'Errore nel rendering sheet', error);
       this.statistics.errors.push({
@@ -356,7 +349,7 @@ class BrancaloniaSheets {
 
     // Add Renaissance portrait frame
     const portrait = header.find('.profile');
-    if (portrait.length) {
+    if (portrait.length && !portrait.closest('.brancalonia-portrait-container').length) {
       portrait.wrap(`
                 <div class="brancalonia-portrait-container">
                     <div class="portrait-frame renaissance">
@@ -992,6 +985,7 @@ class BrancaloniaSheets {
                     <span class="faction-name">${faction}</span>
                 </div>
             `);
+      }
     }
   }
 
@@ -1068,8 +1062,12 @@ class BrancaloniaSheets {
     try {
       logger.startPerformance('sheets-attach-listeners');
 
+      const $root = html instanceof jQuery ? html : $(html);
+
       // Infamia adjustments
-      html.find('.infamia-adjust').click(async ev => {
+      $root.find('.infamia-adjust')
+        .off('click.brancalonia')
+        .on('click.brancalonia', async ev => {
         try {
           const adjustment = parseInt($(ev.currentTarget).data('adjust'));
           const actor = game.actors.get(data.actor._id);
@@ -1096,18 +1094,24 @@ class BrancaloniaSheets {
       });
 
     // Baraonda actions
-    html.find('.baraonda-btn').click(ev => {
-      const action = $(ev.currentTarget).data('action');
-      const actor = game.actors.get(data.actor._id);
-      this.handleBaraondaAction(actor, action);
-    });
+    $root.find('.baraonda-btn')
+      .off('click.brancalonia')
+      .on('click.brancalonia', ev => {
+        const action = $(ev.currentTarget).data('action');
+        const actor = game.actors.get(data.actor._id);
+        this.handleBaraondaAction(actor, action);
+      });
 
       // Lavori Sporchi management
-      html.find('.add-lavoro-btn').click(() => {
+      $root.find('.add-lavoro-btn')
+        .off('click.brancalonia')
+        .on('click.brancalonia', () => {
         this.openLavoroDialog(data.actor);
       });
 
-      html.find('.toggle-lavoro').click(async ev => {
+      $root.find('.toggle-lavoro')
+        .off('click.brancalonia')
+        .on('click.brancalonia', async ev => {
         try {
           const idx = $(ev.currentTarget).data('lavoro-id');
           const actor = game.actors.get(data.actor._id);
@@ -1141,14 +1145,28 @@ class BrancaloniaSheets {
       });
 
     // Add member to Compagnia
-    html.find('.add-member-btn').click(() => {
-      this.openAddMemberDialog(data.actor);
-    });
+    $root.find('.add-member-btn')
+      .off('click.brancalonia')
+      .on('click.brancalonia', () => {
+        this.openAddMemberDialog(data.actor);
+      });
+
+      $root.find('.remove-member')
+        .off('click.brancalonia')
+        .on('click.brancalonia', ev => {
+          const memberIndex = parseInt($(ev.currentTarget).data('member-id'));
+          const actor = game.actors.get(data.actor._id);
+          if (Number.isInteger(memberIndex)) {
+            this.removeCompagniaMember(actor, memberIndex);
+          }
+        });
 
       // Add Malefatta
-      html.find('.add-malefatta-btn').click(() => {
-        this.openMalefattaDialog(data.actor);
-      });
+      $root.find('.add-malefatta-btn')
+        .off('click.brancalonia')
+        .on('click.brancalonia', () => {
+          this.openMalefattaDialog(data.actor);
+        });
 
       const listenerTime = logger.endPerformance('sheets-attach-listeners');
       logger.debug(this.MODULE_NAME, `Event listeners collegati in ${listenerTime?.toFixed(2)}ms`);
@@ -1352,6 +1370,26 @@ class BrancaloniaSheets {
       },
       default: 'save'
     }).render(true);
+  }
+
+  static async removeCompagniaMember(actor, index) {
+    try {
+      const compagnia = foundry.utils.deepClone(actor.getFlag('brancalonia-bigat', 'compagnia') || {});
+      if (!Array.isArray(compagnia.membri)) return;
+
+      const [removed] = compagnia.membri.splice(index, 1);
+      await actor.setFlag('brancalonia-bigat', 'compagnia', compagnia);
+
+      logger.info(this.MODULE_NAME, `Membro rimosso dalla compagnia di ${actor.name}`, removed);
+
+      logger.events.emit('sheets:member-removed', {
+        actorId: actor.id,
+        removedMember: removed,
+        timestamp: Date.now()
+      });
+    } catch (error) {
+      logger.error(this.MODULE_NAME, 'Errore nella rimozione membro compagnia', error);
+    }
   }
 
   /**
