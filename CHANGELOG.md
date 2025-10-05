@@ -5,6 +5,14 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.60] - 2025-10-06
+
+### 🔧 Settings & Active Effects Loader Fix
+- **Dynamic Paths**: `settings-registration.js` e `brancalonia-active-effects.js` ora risolvono `module.url` tramite `foundry.utils.getRoute(...)`, mantenendo il supporto sia ai release zip (`main.zip`) sia ai clone di repository.
+- **Registry Load**: L’import del registry generato degli Active Effects usa il nuovo path, eliminando definitivamente i 404 e gli errori “setting non registrato”.
+
+---
+
 ## [13.0.59] - 2025-10-06
 
 ### 🔧 Manifest Hotfix
