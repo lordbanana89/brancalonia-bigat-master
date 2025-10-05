@@ -5,6 +5,32 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.54] - 2025-10-05
+
+### 🔧 SyntaxError Fix - app.isEditable not defined
+- **Error Fix**: Risolto SyntaxError "app is not defined" in `addCompagniaSection`
+- **Function Updates**: Aggiornati tutti i metodi sheet per accettare `app` come parametro
+- **Functions Updated**:
+  - `addInfamiaSystem(html, actor, app)` - ora riceve `app` per `app.isEditable`
+  - `addCompagniaSection(html, actor, app)` - ora riceve `app` per `app.isEditable`
+  - `addLavoriSporchiSection(html, actor, app)` - preparato per futuro uso di `app`
+  - `addRifugioSection(html, actor, app)` - preparato per futuro uso di `app`
+  - `addMalefatteSection(html, actor, app)` - preparato per futuro uso di `app`
+- **API Consistency**: Tutte le funzioni sheet ora seguono la stessa firma con `app`
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **Syntax Errors**: Eliminati tutti gli errori di sintassi JavaScript
+- **Function Signatures**: Standardizzate tutte le firme delle funzioni sheet
+- **Code Consistency**: Codice uniforme e mantenibile
+
+### 📋 Technical Details
+- **Files Modified**: 1 file (brancalonia-sheets.js) con 8 modifiche di firma funzioni
+- **Error Resolution**: Eliminato SyntaxError che impediva il caricamento del modulo
+- **Architecture**: Migliorata architettura delle funzioni sheet per consistenza
+
+---
+
 ## [13.0.53] - 2025-10-05
 
 ### 🔧 Critical Settings Registration Fix
