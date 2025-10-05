@@ -87,6 +87,23 @@
         "Title": "Toggle Sheet Section"
       }
     },
+    "Notifications": {
+      "SelectCharacter": "Select a character",
+      "CharactersOnly": "Only characters can use this system",
+      "NoItemsToRepair": "No broken or shoddy equipment to repair",
+      "InsufficientGold": "Insufficient gold",
+      "NeedHaven": "You need a haven to access this feature",
+      "NoContacts": "No contacts available at the moment",
+      "RecipeUnknown": "Unknown recipe",
+      "BrewFailed": "Brew failed. Ingredients wasted",
+      "ReloadPage": "Reload page to apply UI changes"
+    },
+    "Errors": {
+      "Generic": "An error occurred",
+      "ActorNotFound": "Character not found",
+      "InvalidData": "Invalid data",
+      "SystemNotAvailable": "System not available"
+    },
     "Common": {
       "Save": "Save",
       "Cancel": "Cancel",

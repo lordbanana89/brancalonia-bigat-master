@@ -102,6 +102,23 @@
         "Title": "Toggle Sezione Sheets"
       }
     },
+    "Notifications": {
+      "SelectCharacter": "Seleziona un personaggio",
+      "CharactersOnly": "Solo i personaggi possono usare questo sistema",
+      "NoItemsToRepair": "Nessun equipaggiamento rotto o scadente da riparare",
+      "InsufficientGold": "Oro insufficiente",
+      "NeedHaven": "Serve un covo per accedere a questa funzione",
+      "NoContacts": "Nessun contatto disponibile al momento",
+      "RecipeUnknown": "Ricetta sconosciuta",
+      "BrewFailed": "Intruglio fallito. Ingredienti sprecati",
+      "ReloadPage": "Ricarica la pagina per applicare le modifiche UI"
+    },
+    "Errors": {
+      "Generic": "Si è verificato un errore",
+      "ActorNotFound": "Personaggio non trovato",
+      "InvalidData": "Dati non validi",
+      "SystemNotAvailable": "Sistema non disponibile"
+    },
     "Common": {
       "Save": "Salva",
       "Cancel": "Annulla",
