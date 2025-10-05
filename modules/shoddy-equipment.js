@@ -152,8 +152,17 @@ class ShoddyEquipment {
     Hooks.on('updateItem', ShoddyEquipment._onUpdateItem);
     Hooks.on('preUpdateItem', ShoddyEquipment._onPreUpdateItem);
 
-    // Hook per gestione attori e sheet
-    Hooks.on('renderActorSheet', ShoddyEquipment._onRenderActorSheet);
+    // Fixed: Use SheetCoordinator
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule('ShoddyEquipment', ShoddyEquipment._onRenderActorSheet, {
+        priority: 70,
+        types: ['character']
+      });
+    } else {
+      Hooks.on('renderActorSheet', ShoddyEquipment._onRenderActorSheet);
+    }
     Hooks.on('renderItemSheet', ShoddyEquipment._onRenderItemSheet);
 
     // Hook per controllo rottura durante l'uso
