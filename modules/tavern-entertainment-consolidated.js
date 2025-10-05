@@ -151,10 +151,21 @@ class BrancaloniaTavernEntertainment {
       this.handleCanvasReady();
     });
 
-    // Hook per character sheet
-    Hooks.on('renderActorSheet', (app, html, data) => {
-      this.enhanceCharacterSheet(app, html, data);
-    });
+    // Fixed: Use SheetCoordinator
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule('TavernEntertainment', async (app, html, data) => {
+        this.enhanceCharacterSheet(app, html, data);
+      }, {
+        priority: 70,
+        types: ['character']
+      });
+    } else {
+      Hooks.on('renderActorSheet', (app, html, data) => {
+        this.enhanceCharacterSheet(app, html, data);
+      });
+    }
 
     // Hook per scene controls
     Hooks.on('getSceneControlButtons', (controls) => {
