@@ -5,6 +5,14 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.62] - 2025-10-06
+
+### 🔧 Module Path Resolution (bis)
+- **Settings Loader**: forza il fallback a `modules/<id>` quando `module.root`/`module.data.path` non sono disponibili o contengono URL remoti, assicurando che `settings-config.json` venga sempre recuperato dalla directory installata.
+- **Active Effects Registry**: stessa logica per il registry generato, evitando di comporre path che iniziano con `http://…` e portano a 404.
+
+---
+
 ## [13.0.61] - 2025-10-06
 
 ### 🔧 Path Resolution Hotfix

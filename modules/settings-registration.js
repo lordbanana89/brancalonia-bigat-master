@@ -54,13 +54,13 @@ class SettingsRegistration {
       moduleLogger.info('📂 Caricamento settings-config.json...');
 
       const module = game.modules.get(this.MODULE_ID);
-      let basePath = `modules/${this.MODULE_ID}`;
+      let basePath = module?.root ?? module?.data?.path ?? `modules/${this.MODULE_ID}`;
 
-      if (module?.root) {
-        basePath = module.root;
-      } else if (module?.url?.startsWith('modules/')) {
-        basePath = module.url;
+      if (basePath.startsWith('http')) {
+        basePath = `modules/${this.MODULE_ID}`;
       }
+
+      basePath = basePath.replace(/\/+$|^\/+/, '');
 
       const targetPath = foundry.utils?.getRoute
         ? foundry.utils.getRoute(`${basePath}/settings-config.json`)
