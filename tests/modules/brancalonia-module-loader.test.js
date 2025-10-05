@@ -2,6 +2,7 @@
  * Test suite per BrancaloniaModuleLoader
  */
 
+import '../setup.js';
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { BrancaloniaModuleLoader } from '../../modules/brancalonia-module-loader.js';
 
@@ -17,7 +18,12 @@ vi.mock('../../modules/brancalonia-logger.js', () => ({
     endPerformance: vi.fn(() => 100),
     group: vi.fn(),
     groupEnd: vi.fn(),
-    table: vi.fn()
+    table: vi.fn(),
+    events: {
+      emit: vi.fn(),
+      on: vi.fn(),
+      off: vi.fn()
+    }
   }
 }));
 

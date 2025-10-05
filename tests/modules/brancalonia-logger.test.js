@@ -3,6 +3,7 @@
  * Aggiornato con test per tutte le nuove feature enterprise-grade
  */
 
+import '../setup.js';
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { 
   BrancaloniaLogger, 
@@ -18,6 +19,7 @@ describe('BrancaloniaLogger v2.0.0', () => {
   beforeEach(() => {
     logger = new BrancaloniaLogger();
     vi.clearAllMocks();
+    localStorage.__resetMocks?.();
     localStorage.clear();
   });
 
@@ -82,6 +84,7 @@ describe('BrancaloniaLogger v2.0.0', () => {
 
     it('should not log below configured level', () => {
       logger.setLogLevel('ERROR');
+      console.log.mockClear();
       logger.info('TestModule', 'Should not appear');
       expect(console.log).not.toHaveBeenCalled();
     });
@@ -366,6 +369,7 @@ describe('BrancaloniaLogger v2.0.0', () => {
 
       const sink = new FilteredSink();
       logger.addSink(sink);
+      sink.logs = [];
 
       logger.error('Test', 'Error'); // Should log (ERROR = 0)
       logger.warn('Test', 'Warn');   // Should log (WARN = 1)
@@ -390,6 +394,7 @@ describe('BrancaloniaLogger v2.0.0', () => {
 
       const sink = new ToggleableSink();
       logger.addSink(sink);
+      sink.logs = [];
 
       logger.info('Test', 'First');
       expect(sink.logs.length).toBe(1);

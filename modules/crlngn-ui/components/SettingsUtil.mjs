@@ -36,11 +36,11 @@ export class SettingsUtil {
     
     /**
      * Register each of the settings defined in the SETTINGS constant 
+     * Fixed: Use for...of instead of forEach(async) to ensure sequential execution
      */
     const settingsList = Object.entries(SETTINGS);
-    settingsList.forEach(async(entry) => {
-      const setting = entry[1]; 
-      // LogUtil.log("Registering... ", [entry], true); 
+    for (const [key, setting] of settingsList) {
+      // LogUtil.log("Registering... ", [[key, setting]], true); 
 
       if((setting.showOnRoot && setting.isMenu) || !setting.isMenu){
         const settingObj = { 
@@ -72,7 +72,7 @@ export class SettingsUtil {
         }
       }
 
-    });
+    }
 
     game.keybindings.register(MODULE_ID, "hideInterface", {
       name: game.i18n.localize("CRLNGN_UI.settings.hideInterface.label"),

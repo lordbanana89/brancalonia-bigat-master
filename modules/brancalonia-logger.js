@@ -64,7 +64,7 @@ class LogSink {
    * Livello minimo per questo sink
    * @type {number}
    */
-  minLevel = 0;
+  minLevel = 4;
 
   /**
    * Se il sink è abilitato
@@ -519,7 +519,7 @@ class BrancaloniaLogger {
 
     // Scrivi su tutti i sinks abilitati
     for (const sink of this.sinks) {
-      if (sink.enabled && levelValue >= sink.minLevel) {
+      if (sink.enabled && levelValue <= sink.minLevel) {
         try {
           sink.write(entry);
         } catch (error) {
@@ -801,7 +801,6 @@ class BrancaloniaLogger {
       byModule: {},
       startTime: Date.now()
     };
-    this.info('Logger', 'Statistiche resettate');
   }
 
   /**
@@ -892,6 +891,9 @@ class BrancaloniaLogger {
    * Chiude tutti i sinks e pulisce risorse
    */
   shutdown() {
+    // Rimuovi subito i listener per evitare emissioni durante lo shutdown
+    this.events.clear();
+
     this.info('Logger', 'Shutdown in corso...');
     
     // Pulisci performance marks
@@ -907,9 +909,6 @@ class BrancaloniaLogger {
         }
       }
     }
-    
-    // Pulisci event listeners
-    this.events.clear();
     
     this.info('Logger', 'Shutdown completato');
   }

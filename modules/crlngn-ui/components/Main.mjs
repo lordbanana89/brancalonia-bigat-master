@@ -48,8 +48,10 @@ export class BrancaloniaSettingsMain {
       // Add notification if Foundry version is incompatible
       const foundryVersion = game.data.version;
       const minVersion = "13.339"; // Updated to latest Carolingian UI requirement
-      if(foundryVersion < minVersion){
+      // Use semantic version comparison instead of lexicographic
+      if(!foundry.utils.isNewerVersion(foundryVersion, minVersion) && foundryVersion !== minVersion){
         BrancaloniaSettingsMain.isIncompatible = true;
+        ui.notifications?.error(`Brancalonia requires Foundry v${minVersion}+ (current: ${foundryVersion})`);
         return;
       }
 

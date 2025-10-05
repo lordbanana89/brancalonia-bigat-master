@@ -5,45 +5,45 @@
 
 body.theme-brancalonia-classic {
   /* Surfaces - Pergamena Classica */
-  --bcl-surface: #F3E6CC;
-  --bcl-paper: #E7D6AE;
-  --bcl-paper-weak: #EFE0BD;
-  --bcl-paper-strong: #D9C38F;
-  --bcl-parchment: #F5EDD8;
+  --bcl-surface: #F4EBD4;
+  --bcl-paper: #EFE1C3;
+  --bcl-paper-weak: #F7ECD9;
+  --bcl-paper-strong: #DCC6A1;
+  --bcl-parchment: #FBF6EA;
 
   /* Text - Inchiostro Seppia */
-  --bcl-ink: #2B1F14;
-  --bcl-ink-strong: #1C1814;
-  --bcl-ink-weak: #4A3828;
-  --bcl-text: #2B1F14;
-  --bcl-text-light: #5C4D3E;
+  --bcl-ink: #2C1B14;
+  --bcl-ink-strong: #1F130E;
+  --bcl-ink-weak: #4B3326;
+  --bcl-text: #2C1B14;
+  --bcl-text-light: #71553D;
 
   /* Interactive - Oro Toscano */
-  --bcl-gold: #C9A54A;
-  --bcl-gold-hover: #D4AF37;
-  --bcl-gold-active: #B8943D;
-  --bcl-accent: #C9A54A;
-  --bcl-accent-hover: #D4AF37;
+  --bcl-gold: #C4A04A;
+  --bcl-gold-hover: #D6B35A;
+  --bcl-gold-active: #A98532;
+  --bcl-accent: #8F3B2B;
+  --bcl-accent-hover: #A44B39;
 
   /* Semantic Colors */
-  --bcl-primary: #8B4513;
-  --bcl-primary-hover: #A0522D;
-  --bcl-success: #556B2F;
-  --bcl-warning: #DAA520;
-  --bcl-danger: #8B2500;
-  --bcl-info: #4682B4;
+  --bcl-primary: #8D4F2A;
+  --bcl-primary-hover: #A26033;
+  --bcl-success: #2E6E54;
+  --bcl-warning: #C2882C;
+  --bcl-danger: #9C2F2A;
+  --bcl-info: #3E6689;
 
   /* Borders & Dividers */
-  --bcl-border: #C4A570;
-  --bcl-border-light: #D9C38F;
-  --bcl-border-strong: #8B7355;
-  --bcl-divider: rgba(139, 115, 85, 0.3);
+  --bcl-border: rgba(64, 43, 29, 0.18);
+  --bcl-border-light: rgba(64, 43, 29, 0.12);
+  --bcl-border-strong: rgba(64, 43, 29, 0.28);
+  --bcl-divider: rgba(64, 43, 29, 0.16);
 
   /* Shadows */
-  --bcl-shadow-sm: 0 1px 3px rgba(43, 31, 20, 0.15);
-  --bcl-shadow-md: 0 3px 8px rgba(43, 31, 20, 0.2);
-  --bcl-shadow-lg: 0 6px 16px rgba(43, 31, 20, 0.25);
-  --bcl-shadow-inset: inset 0 2px 4px rgba(43, 31, 20, 0.1);
+  --bcl-shadow-sm: 0 1px 2px rgba(44, 27, 20, 0.08);
+  --bcl-shadow-md: 0 4px 8px rgba(44, 27, 20, 0.12);
+  --bcl-shadow-lg: 0 8px 18px rgba(44, 27, 20, 0.18);
+  --bcl-shadow-inset: inset 0 2px 4px rgba(44, 27, 20, 0.1);
 
   /* Typography */
   --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
@@ -51,11 +51,11 @@ body.theme-brancalonia-classic {
   --bcl-font-ui: "Quattrocento", "Lora", serif;
 
   /* Opacity Levels */
-  --bcl-opacity-subtle: 0.6;
-  --bcl-opacity-medium: 0.8;
-  --bcl-opacity-strong: 0.95;
+  --bcl-opacity-subtle: 0.65;
+  --bcl-opacity-medium: 0.85;
+  --bcl-opacity-strong: 0.97;
 
-  /* Spacing (optional, if needed) */
+  /* Spacing */
   --bcl-spacing-xs: 0.25rem;
   --bcl-spacing-sm: 0.5rem;
   --bcl-spacing-md: 1rem;

@@ -12,58 +12,65 @@ body.theme-brancalonia,
 .brancalonia-sheet,
 .brancalonia-theme {
   /* Core Colors */
-  --bcl-gold: #C9A54A;
-  --bcl-gold-hover: #D4AF37;
-  --bcl-gold-active: #B8943C;
+  --bcl-gold: #C4A04A;
+  --bcl-gold-hover: #D6B35A;
+  --bcl-gold-active: #A98532;
 
   /* Surfaces */
-  --bcl-surface: #F3E6CC;
-  --bcl-surface-primary: #F3E6CC;
-  --bcl-surface-secondary: #EFE0BD;
-  --bcl-surface-tertiary: #E7D6AE;
-  --bcl-surface-elevated: #FAF6ED;
-  --bcl-surface-sunken: #D9C38F;
+  --bcl-surface: #F4EBD4;
+  --bcl-surface-primary: #F4EBD4;
+  --bcl-surface-secondary: #EAD9B9;
+  --bcl-surface-tertiary: #E1CCA4;
+  --bcl-surface-elevated: #FBF6EA;
+  --bcl-surface-sunken: #CEB78E;
 
-  --bcl-paper: #E7D6AE;
-  --bcl-paper-weak: #EFE0BD;
-  --bcl-paper-strong: #D9C38F;
+  --bcl-paper: #EFE1C3;
+  --bcl-paper-weak: #F7ECD9;
+  --bcl-paper-strong: #DCC6A1;
 
   /* Text/Ink */
-  --bcl-ink: #2B1F14;
-  --bcl-ink-weak: #4A3826;
-  --bcl-ink-strong: #1C1814;
-  --bcl-text-primary: #2B1F14;
-  --bcl-text-secondary: #4A3826;
-  --bcl-text-tertiary: #6B5744;
-  --bcl-text-inverse: #FAF6ED;
+  --bcl-ink: #2C1B14;
+  --bcl-ink-weak: #4B3326;
+  --bcl-ink-strong: #1F130E;
+  --bcl-text-primary: #2C1B14;
+  --bcl-text-secondary: #4B3326;
+  --bcl-text-tertiary: #71553D;
+  --bcl-text-inverse: #FCF7EC;
 
   /* Accents */
-  --bcl-accent: #C80815;
-  --bcl-accent-strong: #722F37;
-  --bcl-venetian-red: #C80815;
-  --bcl-wine: #722F37;
-  --bcl-terracotta: #CB6843;
-  --bcl-malachite: #0F7938;
+  --bcl-accent: #8F3B2B;
+  --bcl-accent-strong: #74291D;
+  --bcl-venetian-red: #A5422C;
+  --bcl-wine: #6D2A2A;
+  --bcl-terracotta: #C26B3C;
+  --bcl-malachite: #2E6E54;
+  --bcl-copper: #B16933;
+  --bcl-copper-hover: #C37A42;
+  --bcl-sepia: #A77A3A;
+  --bcl-sepia-hover: #BC8C49;
+  --bcl-venetian: #A8602A;
+  --bcl-venetian-hover: #C47538;
 
   /* Renaissance Colors */
-  --bcl-raw-sienna: #C68E3F;
-  --bcl-raw-umber: #6B4423;
-  --bcl-burnt-sienna: #8B4513;
-  --bcl-burnt-umber: #4A3826;
-  --bcl-ochre: #CC9A2E;
+  --bcl-raw-sienna: #B97B32;
+  --bcl-raw-umber: #6A4327;
+  --bcl-burnt-sienna: #874529;
+  --bcl-burnt-umber: #4D3422;
+  --bcl-ochre: #BE8F2D;
 
   /* Borders */
-  --bcl-border: rgba(43, 31, 20, 0.2);
-  --bcl-border-weak: rgba(43, 31, 20, 0.1);
-  --bcl-border-strong: rgba(43, 31, 20, 0.3);
+  --bcl-border: rgba(64, 43, 29, 0.18);
+  --bcl-border-weak: rgba(64, 43, 29, 0.1);
+  --bcl-border-strong: rgba(64, 43, 29, 0.28);
+  --bcl-divider: rgba(64, 43, 29, 0.16);
 
   /* Shadows */
-  --bcl-shadow-sm: 0 1px 2px rgba(43, 31, 20, 0.1);
-  --bcl-shadow-md: 0 2px 4px rgba(43, 31, 20, 0.15);
-  --bcl-shadow-lg: 0 4px 8px rgba(43, 31, 20, 0.2);
-  --bcl-shadow-xl: 0 8px 16px rgba(43, 31, 20, 0.25);
-  --bcl-shadow-parchment: 0 2px 8px rgba(107, 68, 35, 0.15);
-  --bcl-shadow-gold: rgba(201, 165, 74, 0.4);
+  --bcl-shadow-sm: 0 1px 2px rgba(44, 27, 20, 0.08);
+  --bcl-shadow-md: 0 4px 8px rgba(44, 27, 20, 0.12);
+  --bcl-shadow-lg: 0 8px 18px rgba(44, 27, 20, 0.18);
+  --bcl-shadow-xl: 0 14px 28px rgba(44, 27, 20, 0.22);
+  --bcl-shadow-parchment: 0 3px 9px rgba(129, 86, 40, 0.18);
+  --bcl-shadow-gold: 0 4px 12px rgba(198, 160, 74, 0.3);
 
   /* Spacing */
   --bcl-space-1: 0.25rem;
@@ -82,9 +89,9 @@ body.theme-brancalonia,
   --bcl-radius-full: 9999px;
 
   /* Font Families */
-  --bcl-font-display: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
-  --bcl-font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --bcl-font-mono: 'Courier New', Courier, monospace;
+  --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
+  --bcl-font-body: "Crimson Text", "Libre Baskerville", Georgia, serif;
+  --bcl-font-mono: "Source Code Pro", "Courier New", monospace;
 
   /* Font Sizes */
   --bcl-font-size-xs: 0.75rem;
@@ -97,15 +104,19 @@ body.theme-brancalonia,
   --bcl-font-size-4xl: 2.25rem;
 
   /* Font Weights */
+  --bcl-font-weight-light: 300;
+  --bcl-font-weight-regular: 400;
   --bcl-font-weight-normal: 400;
   --bcl-font-weight-medium: 500;
   --bcl-font-weight-semibold: 600;
   --bcl-font-weight-bold: 700;
+  --bcl-font-weight-black: 900;
 
   /* Line Heights */
   --bcl-leading-tight: 1.25;
   --bcl-leading-normal: 1.5;
   --bcl-leading-relaxed: 1.75;
+  --bcl-line-height-normal: 1.5;
 
   /* Transitions */
   --bcl-transition-fast: 150ms ease-in-out;
@@ -113,20 +124,27 @@ body.theme-brancalonia,
   --bcl-transition-slow: 350ms ease-in-out;
 
   /* Focus */
-  --bcl-focus-color: var(--bcl-gold);
+  --bcl-focus-color: #B98A3C;
   --bcl-focus-width: 3px;
   --bcl-focus-offset: 2px;
+  --bcl-focus-shadow: 0 0 0 3px rgba(185, 138, 60, 0.35);
 
   /* Interactive States */
-  --bcl-interactive-normal: #C9A54A;
-  --bcl-interactive-hover: #D4AF37;
-  --bcl-interactive-active: #B8943C;
-  --bcl-interactive-disabled: rgba(201, 165, 74, 0.4);
+  --bcl-interactive-normal: #9B4E1E;
+  --bcl-interactive-hover: #B15F2B;
+  --bcl-interactive-active: #7D3D16;
+  --bcl-interactive-disabled: rgba(155, 78, 30, 0.35);
+
+  /* Feedback States */
+  --bcl-success: #2E6E54;
+  --bcl-warning: #C2882C;
+  --bcl-danger: #9C2F2A;
+  --bcl-info: #3E6689;
 
   /* Background gradients */
-  --bcl-bg-primary: linear-gradient(135deg, #F3E6CC 0%, #E7D6AE 100%);
-  --bcl-bg-secondary: linear-gradient(135deg, #EFE0BD 0%, #D9C38F 100%);
-  --bcl-bg-header: linear-gradient(135deg, #F4E4BC 0%, #E7D6AE 100%);
+  --bcl-bg-primary: linear-gradient(135deg, #F4EBD4 0%, #E1CCA4 100%);
+  --bcl-bg-secondary: linear-gradient(135deg, #EAD9B9 0%, #D6BE91 100%);
+  --bcl-bg-header: linear-gradient(135deg, #F8F1E2 0%, #E1CCA4 100%);
 
   /* Z-index scale */
   --bcl-z-dropdown: 100;

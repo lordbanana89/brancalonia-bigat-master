@@ -5,45 +5,45 @@
 
 body.theme-brancalonia-dark {
   /* Surfaces - Pergamena Scura */
-  --bcl-surface: #2B1F14;
-  --bcl-paper: #3A2B1F;
-  --bcl-paper-weak: #322619;
-  --bcl-paper-strong: #4A3828;
-  --bcl-parchment: #1C1814;
+  --bcl-surface: #22170F;
+  --bcl-paper: #2E2116;
+  --bcl-paper-weak: #38281A;
+  --bcl-paper-strong: #463322;
+  --bcl-parchment: #1B130E;
 
   /* Text - Inchiostro Chiaro */
-  --bcl-ink: #E7D6AE;
-  --bcl-ink-strong: #F3E6CC;
-  --bcl-ink-weak: #C4A570;
-  --bcl-text: #E7D6AE;
-  --bcl-text-light: #D9C38F;
+  --bcl-ink: #E9DDBF;
+  --bcl-ink-strong: #F5EAD0;
+  --bcl-ink-weak: #C7B189;
+  --bcl-text: #E9DDBF;
+  --bcl-text-light: #D5C39B;
 
   /* Interactive - Oro Luminoso */
-  --bcl-gold: #D4AF37;
-  --bcl-gold-hover: #F0C75E;
-  --bcl-gold-active: #C9A54A;
-  --bcl-accent: #D4AF37;
-  --bcl-accent-hover: #F0C75E;
+  --bcl-gold: #CDA542;
+  --bcl-gold-hover: #E0B757;
+  --bcl-gold-active: #A88534;
+  --bcl-accent: #A85C2E;
+  --bcl-accent-hover: #BF6C3A;
 
   /* Semantic Colors - Dark adjusted */
-  --bcl-primary: #C4764B;
-  --bcl-primary-hover: #D98A5F;
-  --bcl-success: #7A9D4A;
-  --bcl-warning: #E5B84A;
-  --bcl-danger: #C65D3B;
-  --bcl-info: #6FA8DC;
+  --bcl-primary: #C47C3F;
+  --bcl-primary-hover: #D68E4E;
+  --bcl-success: #4A8A61;
+  --bcl-warning: #C2892C;
+  --bcl-danger: #B44A37;
+  --bcl-info: #5D89B4;
 
   /* Borders & Dividers */
-  --bcl-border: #5C4D3E;
-  --bcl-border-light: #4A3828;
-  --bcl-border-strong: #8B7355;
-  --bcl-divider: rgba(231, 214, 174, 0.2);
+  --bcl-border: rgba(233, 221, 191, 0.28);
+  --bcl-border-light: rgba(233, 221, 191, 0.18);
+  --bcl-border-strong: rgba(233, 221, 191, 0.42);
+  --bcl-divider: rgba(233, 221, 191, 0.24);
 
   /* Shadows */
-  --bcl-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --bcl-shadow-md: 0 3px 8px rgba(0, 0, 0, 0.4);
-  --bcl-shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.5);
-  --bcl-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  --bcl-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --bcl-shadow-md: 0 4px 10px rgba(0, 0, 0, 0.45);
+  --bcl-shadow-lg: 0 12px 26px rgba(0, 0, 0, 0.55);
+  --bcl-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.35);
 
   /* Typography */
   --bcl-font-display: "Cinzel", "Playfair Display", Georgia, serif;
