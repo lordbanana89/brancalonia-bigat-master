@@ -78,8 +78,11 @@ class TavernBrawlMacros {
       this.statistics.dialogsShown++;
       logger.debug?.(this.MODULE_NAME, `Dialog inizia rissa mostrato per ${tokens.length} token`);
 
-    new Dialog({
-      title: '🍺 Inizia Rissa da Taverna',
+    // Fixed: Migrated to DialogV2
+    new foundry.applications.api.DialogV2({
+      window: {
+        title: '🍺 Inizia Rissa da Taverna'
+      },
       content: `
         <div style="padding: 10px;">
           <h3 style="border-bottom: 2px solid #8b4513; margin-bottom: 10px;">
@@ -127,41 +130,42 @@ class TavernBrawlMacros {
           </div>
         </div>
       `,
-      buttons: {
-        start: {
-          icon: '<i class="fas fa-fist-raised"></i>',
-          label: 'INIZIA RISSA!',
-          callback: async (html) => {
-            const usePericoli = html.find('[name="pericoliVaganti"]').is(':checked');
-            const useEventi = html.find('[name="eventiAtmosfera"]').is(':checked');
-            
-            // Imposta setting eventi
-            if (!useEventi) {
-              await game.settings.set('brancalonia-bigat', 'brawlAutoEventi', 0);
-            } else {
-              await game.settings.set('brancalonia-bigat', 'brawlAutoEventi', 2);
-            }
-            
-            // Avvia rissa
-            await window.TavernBrawlSystem.startBrawl();
-            
-            ui.notifications.info('🍺 RISSA INIZIATA! Che il caos abbia inizio!');
+      buttons: [{
+        action: 'start',
+        icon: 'fas fa-fist-raised',
+        label: 'INIZIA RISSA!',
+        default: true,
+        callback: async (event, button, dialog) => {
+          const html = dialog.element;
+          const usePericoli = html.querySelector('[name="pericoliVaganti"]').checked;
+          const useEventi = html.querySelector('[name="eventiAtmosfera"]').checked;
+          
+          // Imposta setting eventi
+          if (!useEventi) {
+            await game.settings.set('brancalonia-bigat', 'brawlAutoEventi', 0);
+          } else {
+            await game.settings.set('brancalonia-bigat', 'brawlAutoEventi', 2);
           }
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Annulla'
+          
+          // Avvia rissa
+          await window.TavernBrawlSystem.startBrawl();
+          
+          ui.notifications.info('🍺 RISSA INIZIATA! Che il caos abbia inizio!');
         }
-      },
-      default: 'start',
-      render: (html) => {
-        html.find('button').css({
-          'font-size': '14px',
-          'font-weight': 'bold',
-          'padding': '8px 16px'
+      }, {
+        action: 'cancel',
+        icon: 'fas fa-times',
+        label: 'Annulla'
+      }],
+      render: (event, html) => {
+        html.querySelectorAll('button').forEach(btn => {
+          btn.style.fontSize = '14px';
+          btn.style.fontWeight = 'bold';
+          btn.style.padding = '8px 16px';
         });
       }
     }, {
+      classes: ['brawl-start-dialog'],
       width: 500
     }).render(true);
     } catch (error) {
@@ -190,8 +194,11 @@ class TavernBrawlMacros {
       return this.dialogAzioniPersonaggio(tokens[0]);
     }
 
-    new Dialog({
-      title: '🍺 Rissa in Corso',
+    // Fixed: Migrated to DialogV2
+    new foundry.applications.api.DialogV2({
+      window: {
+        title: '🍺 Rissa in Corso'
+      },
       content: `
         <div style="padding: 10px;">
           <h3 style="color: #8b4513; text-align: center; margin-bottom: 15px;">
@@ -208,44 +215,44 @@ class TavernBrawlMacros {
           </p>
         </div>
       `,
-      buttons: {
-        actions: {
-          icon: '<i class="fas fa-hand-rock"></i>',
-          label: 'Azioni Personaggio',
-          callback: () => {
-            const token = canvas.tokens.controlled[0];
-            if (!token) {
-              ui.notifications.warn('Seleziona un token per vedere le sue azioni!');
-              return;
-            }
-            this.dialogAzioniPersonaggio(token);
+      buttons: [{
+        action: 'actions',
+        icon: 'fas fa-hand-rock',
+        label: 'Azioni Personaggio',
+        default: true,
+        callback: () => {
+          const token = canvas.tokens.controlled[0];
+          if (!token) {
+            ui.notifications.warn('Seleziona un token per vedere le sue azioni!');
+            return;
           }
-        },
-        eventi: {
-          icon: '<i class="fas fa-exclamation-triangle"></i>',
-          label: 'Trigger Evento',
-          callback: () => this.dialogEventi()
-        },
-        status: {
-          icon: '<i class="fas fa-info-circle"></i>',
-          label: 'Stato Rissa',
-          callback: () => this.mostraStatoRissa()
-        },
-        end: {
-          icon: '<i class="fas fa-stop"></i>',
-          label: 'Termina Rissa',
-          callback: async () => {
-            await window.TavernBrawlSystem.endBrawl();
-            ui.notifications.info('Rissa terminata!');
-          }
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Chiudi'
+          this.dialogAzioniPersonaggio(token);
         }
-      },
-      default: 'actions'
+      }, {
+        action: 'eventi',
+        icon: 'fas fa-exclamation-triangle',
+        label: 'Trigger Evento',
+        callback: () => this.dialogEventi()
+      }, {
+        action: 'status',
+        icon: 'fas fa-info-circle',
+        label: 'Stato Rissa',
+        callback: () => this.mostraStatoRissa()
+      }, {
+        action: 'end',
+        icon: 'fas fa-stop',
+        label: 'Termina Rissa',
+        callback: async () => {
+          await window.TavernBrawlSystem.endBrawl();
+          ui.notifications.info('Rissa terminata!');
+        }
+      }, {
+        action: 'cancel',
+        icon: 'fas fa-times',
+        label: 'Chiudi'
+      }]
     }, {
+      classes: ['brawl-active-dialog'],
       width: 450
     }).render(true);
   }
@@ -316,6 +323,14 @@ class TavernBrawlMacros {
             } else {
               this.dialogRaccogliOggetto(actor);
             }
+          }
+        },
+        difesa: {
+          icon: '<i class="fas fa-shield-alt"></i>',
+          label: 'Difesa Totale',
+          callback: () => {
+            actor.setFlag('brancalonia-bigat', 'brawlDefending', true);
+            ui.notifications.info(`${actor.name} si mette in difesa totale!`);
           }
         },
         cancel: {
