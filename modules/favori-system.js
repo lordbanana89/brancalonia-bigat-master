@@ -220,8 +220,16 @@ class FavoriSystem {
       }
     });
 
-    // Hook per rendering actor sheet
-    Hooks.on('renderActorSheet', FavoriSystem._onRenderActorSheet);
+    // Fixed: Use SheetCoordinator
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule('FavoriSystem', FavoriSystem._onRenderActorSheet, {
+        priority: 65,
+        types: ['character']
+      });
+    } else {
+      Hooks.on('renderActorSheet', FavoriSystem._onRenderActorSheet);
+    }
 
     // Hook per Sbraco - gestione Barattiere
     Hooks.on('brancalonia.sbracoStarted', FavoriSystem._onSbracoStarted);
