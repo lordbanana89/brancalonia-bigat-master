@@ -401,37 +401,20 @@ class BrancaloniaSheets {
         const currentInfamia = actor.getFlag('brancalonia-bigat', 'infamia') || 0;
         const maxInfamia = actor.getFlag('brancalonia-bigat', 'infamiaMax') || 10;
 
-      const infamiaHTML = `
-                <div class="infamia-tracker brancalonia-resource">
-                    <div class="resource-header">
-                        <h3>
-                            <span class="icon">🗡️</span>
-                            Infamia
-                            <span class="tooltip-anchor" data-tooltip="La tua reputazione nel mondo criminale">ⓘ</span>
-                        </h3>
-                    </div>
-                    <div class="resource-content">
-                        <div class="infamia-bar">
-                            <div class="infamia-fill" style="width: ${(currentInfamia / maxInfamia) * 100}%"></div>
-                            <div class="infamia-segments">
-                                ${this.generateInfamiaSegments(maxInfamia)}
-                            </div>
-                        </div>
-                        <div class="infamia-controls">
-                            <button class="infamia-adjust" data-adjust="-1" title="Diminuisci Infamia">−</button>
-                            <input type="number" class="infamia-value" name="flags.brancalonia-bigat.infamia"
-                                   value="${currentInfamia}" min="0" max="${maxInfamia}" />
-                            <span class="separator">/</span>
-                            <input type="number" class="infamia-max" name="flags.brancalonia-bigat.infamiaMax"
-                                   value="${maxInfamia}" min="1" />
-                            <button class="infamia-adjust" data-adjust="1" title="Aumenta Infamia">+</button>
-                        </div>
-                        <div class="infamia-status">
-                            ${this.getInfamiaStatus(currentInfamia)}
-                        </div>
-                    </div>
-                </div>
-            `;
+        // Fixed: Use Handlebars template with i18n
+        const infamiaHTML = await renderTemplate(
+          'modules/brancalonia-bigat/templates/infamia-section.hbs',
+          {
+            infamia: currentInfamia,
+            infamiaMax: maxInfamia,
+            infamiaPercentage: (currentInfamia / maxInfamia) * 100,
+            infamiaLevel: this.getInfamiaLabel(currentInfamia),
+            infamiaClass: this.getInfamiaClass(currentInfamia),
+            segments: this.generateInfamiaSegments(maxInfamia),
+            canEdit: true
+          }
+        );
+        
         resourcesSection.after(infamiaHTML);
 
         const renderTime = logger.endPerformance('sheets-add-infamia');
