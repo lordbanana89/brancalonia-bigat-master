@@ -5,6 +5,28 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.51] - 2025-10-05
+
+### 🔧 Critical SyntaxError and renderTemplate Fixes
+- **SyntaxError Fix**: Risolto "Unexpected reserved word" in `addInfamiaSystem` (brancalonia-sheets.js)
+- **SyntaxError Fix**: Risolto "Unexpected reserved word" in `_checkForAutomaticMalefatta` (malefatte-taglie-nomea.js)
+- **renderTemplate Migration**: Migrati 4 `renderTemplate` deprecati in `brancalonia-sheets.js` a `foundry.applications.handlebars.renderTemplate`
+- **Async/Await Fix**: Risolti problemi async/await in `brancalonia-mechanics.js` chatMessage hook
+- **Function Signatures**: Aggiunto `async` alle funzioni che usano `await` per Roll e renderTemplate
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **Syntax Errors**: Eliminati tutti gli errori SyntaxError
+- **API Compliance**: Tutti i renderTemplate ora usano API namespaced moderna
+- **Async Handling**: Corretto handling async/await in tutti i moduli
+
+### 📋 Technical Details
+- **Files Modified**: 3 file con 10 inserimenti e 10 rimozioni
+- **Error Resolution**: Eliminati tutti gli errori di sintassi JavaScript
+- **API Migration**: Completata migrazione da API deprecate a moderne
+
+---
+
 ## [13.0.50] - 2025-10-05
 
 ### 🔧 UI Coordinator Complete Fix
