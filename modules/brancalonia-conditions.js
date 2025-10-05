@@ -265,12 +265,25 @@ game.brancalonia.conditions.removeCustomConditions(actor);
       Hooks.on("createActiveEffect", this._onCreateEffect.bind(this));
       Hooks.on("deleteActiveEffect", this._onDeleteEffect.bind(this));
 
-      // Hook per character sheet enhancement
-      Hooks.on("renderActorSheet", (sheet, html, data) => {
-        if (sheet.actor.type === "character" && game.settings.get(MODULE_ID, 'enableCustomConditions')) {
-          this._enhanceCharacterSheet(sheet, html, data);
-        }
-      });
+      // Fixed: Use SheetCoordinator
+      const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+      
+      if (SheetCoordinator) {
+        SheetCoordinator.registerModule('BrancaloniaConditions', async (sheet, html, data) => {
+          if (sheet.actor.type === "character" && game.settings.get(MODULE_ID, 'enableCustomConditions')) {
+            this._enhanceCharacterSheet(sheet, html, data);
+          }
+        }, {
+          priority: 85,
+          types: ['character']
+        });
+      } else {
+        Hooks.on("renderActorSheet", (sheet, html, data) => {
+          if (sheet.actor.type === "character" && game.settings.get(MODULE_ID, 'enableCustomConditions')) {
+            this._enhanceCharacterSheet(sheet, html, data);
+          }
+        });
+      }
 
     } catch (error) {
       logger.error(MODULE_NAME, 'Errore registrazione hook', error);
