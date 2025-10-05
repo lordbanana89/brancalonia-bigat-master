@@ -329,19 +329,40 @@ class MenagramoSystem {
       }
     });
 
-    // Hook per aggiungere pulsante menagramo alle schede personaggio
-    Hooks.on('renderActorSheet', (app, html, data) => {
-      if (app.actor.type !== 'character' || !game.user.isGM) return;
-      if (!game.settings.get('brancalonia-bigat', 'menagramoEnabled')) return;
+    // Fixed: Use SheetCoordinator
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule('MenagramoSystem', async (app, html, data) => {
+        if (app.actor.type !== 'character' || !game.user.isGM) return;
+        if (!game.settings.get('brancalonia-bigat', 'menagramoEnabled')) return;
 
-      const button = $(`<button class="menagramo-manager-btn" title="Gestione Menagramo">
-        <i class="fas fa-skull"></i>
-      </button>`);
-      html.find('.window-header .window-title').after(button);
-      button.click(() => {
-        window.MenagramoSystem.showMenagramoDialog(app.actor);
+        const button = $(`<button class="menagramo-manager-btn" title="Gestione Menagramo">
+          <i class="fas fa-skull"></i>
+        </button>`);
+        html.find('.window-header .window-title').after(button);
+        button.click(() => {
+          window.MenagramoSystem.showMenagramoDialog(app.actor);
+        });
+      }, {
+        priority: 70,
+        types: ['character'],
+        gmOnly: true
       });
-    });
+    } else {
+      Hooks.on('renderActorSheet', (app, html, data) => {
+        if (app.actor.type !== 'character' || !game.user.isGM) return;
+        if (!game.settings.get('brancalonia-bigat', 'menagramoEnabled')) return;
+
+        const button = $(`<button class="menagramo-manager-btn" title="Gestione Menagramo">
+          <i class="fas fa-skull"></i>
+        </button>`);
+        html.find('.window-header .window-title').after(button);
+        button.click(() => {
+          window.MenagramoSystem.showMenagramoDialog(app.actor);
+        });
+      });
+    }
 
     logger.info(MenagramoSystem.MODULE_NAME, 'MenagramoSystem hooks registrati!');
   }
