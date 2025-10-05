@@ -164,12 +164,25 @@ class BackgroundPrivileges {
         }
       });
 
-      // Hook per character sheet rendering
-      Hooks.on('renderActorSheet', (sheet, html, data) => {
-        if (sheet.actor.type === 'character' && this.getSetting('enable')) {
-          this._enhanceCharacterSheet(sheet, html, data);
-        }
-      });
+      // Fixed: Use SheetCoordinator
+      const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+      
+      if (SheetCoordinator) {
+        SheetCoordinator.registerModule('BackgroundPrivileges', async (sheet, html, data) => {
+          if (sheet.actor.type === 'character' && this.getSetting('enable')) {
+            this._enhanceCharacterSheet(sheet, html, data);
+          }
+        }, {
+          priority: 80,
+          types: ['character']
+        });
+      } else {
+        Hooks.on('renderActorSheet', (sheet, html, data) => {
+          if (sheet.actor.type === 'character' && this.getSetting('enable')) {
+            this._enhanceCharacterSheet(sheet, html, data);
+          }
+        });
+      }
 
       // Hook per incontri selvaggi (Brado)
       Hooks.on('brancalonia.wildEncounter', (actor, encounterData) => {

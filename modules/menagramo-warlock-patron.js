@@ -157,10 +157,21 @@ class BrancaloniaMenagramo {
       return this.handleItemUse(item, config, options);
     });
 
-    // Hook per character sheet
-    Hooks.on('renderActorSheet', (app, html, data) => {
-      this.enhanceCharacterSheet(app, html, data);
-    });
+    // Fixed: Use SheetCoordinator
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule('MenagramoWarlockPatron', async (app, html, data) => {
+        this.enhanceCharacterSheet(app, html, data);
+      }, {
+        priority: 75,
+        types: ['character']
+      });
+    } else {
+      Hooks.on('renderActorSheet', (app, html, data) => {
+        this.enhanceCharacterSheet(app, html, data);
+      });
+    }
 
     // Hook per item sheet
     Hooks.on('renderItemSheet', (app, html, data) => {
