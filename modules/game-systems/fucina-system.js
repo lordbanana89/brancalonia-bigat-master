@@ -16,27 +16,35 @@ class FucinaSystem {
     }
 
     const content = this._renderDialog(items);
-    new Dialog({
-      title: '🔨 Fucina del Covo',
+    
+    // Fixed: Migrated to DialogV2 (Foundry v13)
+    new foundry.applications.api.DialogV2({
+      window: {
+        title: '🔨 Fucina del Covo'
+      },
       content,
-      buttons: {
-        repair: {
-          icon: '<i class="fas fa-hammer"></i>',
-          label: 'Ripara',
-          callback: async (html) => {
-            const itemId = html.find('[name="fucina-item"]').val();
-            const target = items.find((i) => i.id === itemId);
-            if (!target) return;
+      buttons: [{
+        action: 'repair',
+        label: 'Ripara',
+        icon: 'fas fa-hammer',
+        default: true,
+        callback: async (event, button, dialog) => {
+          const html = dialog.element;
+          const itemId = html.querySelector('[name="fucina-item"]').value;
+          const target = items.find((i) => i.id === itemId);
+          if (target) {
             await this._executeRepair(actor, target);
           }
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Annulla'
         }
-      },
-      default: 'repair'
-    }, { width: 520 }).render(true);
+      }, {
+        action: 'cancel',
+        label: 'Annulla',
+        icon: 'fas fa-times'
+      }]
+    }, { 
+      classes: ['fucina-dialog'],
+      width: 520
+    }).render(true);
   }
 
   static _validateActor(actor) {
