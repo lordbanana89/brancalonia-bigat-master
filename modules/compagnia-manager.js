@@ -215,17 +215,40 @@ class CompagniaManager {
     logger.debug(this.MODULE_NAME, 'Registrazione hooks...');
     
     try {
-      Hooks.on('renderActorSheet', (app, html) => {
-        try {
-          const manager = game.brancalonia?.compagnia;
-          if (!manager) return;
-          if (app.actor?.type === 'character' && manager._isInCompagnia(app.actor)) {
-            manager._addCompagniaTab(app, html);
+      // Fixed: Migrated to SheetCoordinator to prevent duplication
+      if (typeof SheetCoordinator !== 'undefined') {
+        SheetCoordinator.registerModule(
+          'CompagniaManager',
+          async (app, html) => {
+            try {
+              const manager = game.brancalonia?.compagnia;
+              if (!manager) return;
+              if (app.actor?.type === 'character' && manager._isInCompagnia(app.actor)) {
+                manager._addCompagniaTab(app, html);
+              }
+            } catch (error) {
+              logger.error(this.MODULE_NAME, 'Errore rendering compagnia', error);
+            }
+          },
+          {
+            priority: 60,
+            types: ['character']
           }
-        } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore renderActorSheet hook', error);
-        }
-      });
+        );
+      } else {
+        // Fallback se coordinator non disponibile
+        Hooks.on('renderActorSheet', (app, html) => {
+          try {
+            const manager = game.brancalonia?.compagnia;
+            if (!manager) return;
+            if (app.actor?.type === 'character' && manager._isInCompagnia(app.actor)) {
+              manager._addCompagniaTab(app, html);
+            }
+          } catch (error) {
+            logger.error(this.MODULE_NAME, 'Errore renderActorSheet hook', error);
+          }
+        });
+      }
 
       Hooks.on('dnd5e.createItem', (item) => {
         try {

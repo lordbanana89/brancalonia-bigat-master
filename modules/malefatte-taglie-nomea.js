@@ -339,12 +339,30 @@ if (malefatteSystem) {
   }
 
   _setupHooks() {
-    // Hook per scheda personaggio
-    Hooks.on('renderActorSheet', (app, html, data) => {
-      if (app.actor.type === 'character') {
-        this._renderTagliaSection(app, html);
-      }
-    });
+    // Fixed: Use SheetCoordinator to prevent duplication
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule(
+        'MalefatteTaglieNomea',
+        async (app, html) => {
+          if (app.actor.type === 'character') {
+            this._renderTagliaSection(app, html);
+          }
+        },
+        {
+          priority: 60,
+          types: ['character']
+        }
+      );
+    } else {
+      // Fallback
+      Hooks.on('renderActorSheet', (app, html, data) => {
+        if (app.actor.type === 'character') {
+          this._renderTagliaSection(app, html);
+        }
+      });
+    }
 
     // Hook per creazione personaggio
     Hooks.on('createActor', (actor) => {
