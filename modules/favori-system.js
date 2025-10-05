@@ -29,8 +29,10 @@
  * @requires dnd5e
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'FavoriSystem';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} FavoriStatistics
  * @property {number} initTime - Tempo inizializzazione (ms)
@@ -60,7 +62,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class FavoriSystem {
   static VERSION = '3.0.0';
-  static MODULE_NAME = 'FavoriSystem';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'favori-system';
 
   /**
@@ -105,10 +107,10 @@ class FavoriSystem {
       this.initialized = false;
       this.favoriTypes = {};
 
-      logger.info(FavoriSystem.MODULE_NAME, 'Constructor Sistema Favori');
+      moduleLogger.info('Constructor Sistema Favori');
     } catch (error) {
       FavoriSystem._statistics.errors.push(`Constructor: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore inizializzazione constructor', error);
+      moduleLogger.error('Errore inizializzazione constructor', error);
     }
   }
 
@@ -121,7 +123,7 @@ class FavoriSystem {
     const startTime = performance.now();
 
     try {
-      logger.info(this.MODULE_NAME, `Inizializzazione Favori System v${this.VERSION}`);
+      moduleLogger.info(`Inizializzazione Favori System v${this.VERSION}`);
 
       // Registra le settings
       FavoriSystem.registerSettings();
@@ -142,7 +144,7 @@ class FavoriSystem {
 
       this._statistics.initTime = performance.now() - startTime;
 
-      logger.info(
+      moduleLogger.info(
         this.MODULE_NAME,
         `✅ Inizializzazione completata in ${this._statistics.initTime.toFixed(2)}ms`
       );
@@ -156,7 +158,7 @@ class FavoriSystem {
       return instance;
     } catch (error) {
       this._statistics.errors.push(error.message);
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione Sistema Favori', error);
+      moduleLogger.error('Errore inizializzazione Sistema Favori', error);
       if (ui?.notifications) {
         ui.notifications.error(`Errore inizializzazione Sistema Favori: ${error.message}`);
       }
@@ -173,7 +175,7 @@ class FavoriSystem {
       type: Boolean,
       default: true,
       onChange: value => {
-        logger.info(FavoriSystem.MODULE_NAME, `Sistema Favori: ${value ? 'abilitato' : 'disabilitato'}`);
+        moduleLogger.info(`Sistema Favori: ${value ? 'abilitato' : 'disabilitato'}`);
         ui.notifications.info(`Sistema Favori ${value ? 'abilitato' : 'disabilitato'}`);
       }
     });
@@ -206,7 +208,7 @@ class FavoriSystem {
       default: true
     });
 
-    logger.info(this.MODULE_NAME, 'Settings Sistema Favori registrate');
+    moduleLogger.info('Settings Sistema Favori registrate');
   }
 
   static registerHooks() {
@@ -237,7 +239,7 @@ class FavoriSystem {
     // Hook per fine lavoretto - cleanup temporanei
     Hooks.on('brancalonia.jobCompleted', FavoriSystem._onJobCompleted);
 
-    logger.info(this.MODULE_NAME, 'Hooks Sistema Favori registrati');
+    moduleLogger.info('Hooks Sistema Favori registrati');
   }
 
   static registerChatCommands() {
@@ -284,7 +286,7 @@ class FavoriSystem {
       });
     };
 
-    logger.info(this.MODULE_NAME, 'Comandi chat Sistema Favori registrati');
+    moduleLogger.info('Comandi chat Sistema Favori registrati');
   }
 
   static registerMacros() {
@@ -323,7 +325,7 @@ class FavoriSystem {
     }
 
     FavoriSystem._statistics.macrosCreated++;
-    logger.info(this.MODULE_NAME, 'Macro Sistema Favori registrate');
+    moduleLogger.info('Macro Sistema Favori registrate');
   }
 
   // Hook handlers statici
@@ -337,7 +339,7 @@ class FavoriSystem {
       }
     } catch (error) {
       FavoriSystem._statistics.errors.push(`renderActorSheet: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore renderActorSheet', error);
+      moduleLogger.error('Errore renderActorSheet', error);
     }
   }
 
@@ -349,7 +351,7 @@ class FavoriSystem {
       instance.checkBarattiereRequests();
     } catch (error) {
       FavoriSystem._statistics.errors.push(`sbracoStarted: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore sbracoStarted', error);
+      moduleLogger.error('Errore sbracoStarted', error);
     }
   }
 
@@ -361,7 +363,7 @@ class FavoriSystem {
       instance.cleanupTemporaryFavors(actors);
     } catch (error) {
       FavoriSystem._statistics.errors.push(`jobCompleted: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore jobCompleted', error);
+      moduleLogger.error('Errore jobCompleted', error);
     }
   }
 
@@ -373,7 +375,7 @@ class FavoriSystem {
       instance.handleChatCommand(args, speaker);
     } catch (error) {
       FavoriSystem._statistics.errors.push(`chatCommand: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore chat command', error);
+      moduleLogger.error('Errore chat command', error);
       ui.notifications.error('Errore comando sistema favori');
     }
   }
@@ -387,11 +389,11 @@ class FavoriSystem {
       await this.loadFavoriConfig();
 
       this.initialized = true;
-      logger.info(FavoriSystem.MODULE_NAME, 'Sistema Favori configurato');
+      moduleLogger.info('Sistema Favori configurato');
       ui.notifications.info('Sistema Favori attivo');
     } catch (error) {
       FavoriSystem._statistics.errors.push(`initialize: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore inizializzazione sistema favori', error);
+      moduleLogger.error('Errore inizializzazione sistema favori', error);
       ui.notifications.error('Errore inizializzazione Sistema Favori');
     }
   }
@@ -472,7 +474,7 @@ class FavoriSystem {
       FavoriSystem._statistics.favoriByType[type] = 0;
     });
 
-    logger.info(FavoriSystem.MODULE_NAME, `Configurazione favori caricata (${Object.keys(this.favoriTypes).length} tipi)`);
+    moduleLogger.info(`Configurazione favori caricata (${Object.keys(this.favoriTypes).length} tipi)`);
   }
 
   // Renderizza UI Favori sulla scheda
@@ -550,7 +552,7 @@ class FavoriSystem {
       });
     } catch (error) {
       FavoriSystem._statistics.errors.push(`renderFavoriUI: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore render favori UI', error);
+      moduleLogger.error('Errore render favori UI', error);
     }
   }
 
@@ -659,7 +661,7 @@ class FavoriSystem {
       dialog.render(true);
     } catch (error) {
       FavoriSystem._statistics.errors.push(`openFavoreRequestDialog: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore dialog richiesta favore', error);
+      moduleLogger.error('Errore dialog richiesta favore', error);
       ui.notifications.error('Errore apertura dialog richiesta favore');
     }
   }
@@ -872,10 +874,10 @@ class FavoriSystem {
       // Esegui il favore
       await this.executeFavore(actor, type, details);
 
-      logger.info(FavoriSystem.MODULE_NAME, `Favore ${type} processato per ${actor.name}`);
+      moduleLogger.info(`Favore ${type} processato per ${actor.name}`);
     } catch (error) {
       FavoriSystem._statistics.errors.push(`processFavoreRequest: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore processo favore', error);
+      moduleLogger.error('Errore processo favore', error);
       ui.notifications.error('Errore durante il processo del favore');
     }
   }
@@ -922,7 +924,7 @@ class FavoriSystem {
       });
     } catch (error) {
       FavoriSystem._statistics.errors.push(`registerFavore: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore registrazione favore', error);
+      moduleLogger.error('Errore registrazione favore', error);
     }
   }
 
@@ -987,7 +989,7 @@ class FavoriSystem {
       }
     } catch (error) {
       FavoriSystem._statistics.errors.push(`executeFavore: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore esecuzione favore', error);
+      moduleLogger.error('Errore esecuzione favore', error);
       ui.notifications.error('Errore durante l\'esecuzione del favore');
     }
   }
@@ -1053,7 +1055,7 @@ class FavoriSystem {
       }).render(true);
     } catch (error) {
       FavoriSystem._statistics.errors.push(`executeBarattiere: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore barattiere', error);
+      moduleLogger.error('Errore barattiere', error);
     }
   }
 
@@ -1080,7 +1082,7 @@ class FavoriSystem {
       });
     } catch (error) {
       FavoriSystem._statistics.errors.push(`executeCompareEsperto: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore compare esperto', error);
+      moduleLogger.error('Errore compare esperto', error);
     }
   }
 
@@ -1123,7 +1125,7 @@ class FavoriSystem {
       }
     } catch (error) {
       FavoriSystem._statistics.errors.push(`executeGranlussoPrestito: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore granlusso prestito', error);
+      moduleLogger.error('Errore granlusso prestito', error);
     }
   }
 
@@ -1162,7 +1164,7 @@ class FavoriSystem {
       });
     } catch (error) {
       FavoriSystem._statistics.errors.push(`executeInformazioni: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore informazioni', error);
+      moduleLogger.error('Errore informazioni', error);
     }
   }
 
@@ -1188,7 +1190,7 @@ class FavoriSystem {
       });
     } catch (error) {
       FavoriSystem._statistics.errors.push(`executeViaggioIncognito: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore viaggio incognito', error);
+      moduleLogger.error('Errore viaggio incognito', error);
     }
   }
 
@@ -1250,7 +1252,7 @@ class FavoriSystem {
       }).render(true);
     } catch (error) {
       FavoriSystem._statistics.errors.push(`openDebtPaymentDialog: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore dialog pagamento', error);
+      moduleLogger.error('Errore dialog pagamento', error);
     }
   }
 
@@ -1291,7 +1293,7 @@ class FavoriSystem {
       }
     } catch (error) {
       FavoriSystem._statistics.errors.push(`payFavoriDebt: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore pagamento debiti', error);
+      moduleLogger.error('Errore pagamento debiti', error);
       ui.notifications.error('Errore durante il pagamento dei debiti');
     }
   }
@@ -1401,7 +1403,7 @@ class FavoriSystem {
       }).render(true);
     } catch (error) {
       FavoriSystem._statistics.errors.push(`showFavoriStatus: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore status favori', error);
+      moduleLogger.error('Errore status favori', error);
       ui.notifications.error('Errore visualizzazione status favori');
     }
   }
@@ -1439,7 +1441,7 @@ class FavoriSystem {
       });
     } catch (error) {
       FavoriSystem._statistics.errors.push(`checkBarattiereRequests: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore controllo barattiere', error);
+      moduleLogger.error('Errore controllo barattiere', error);
     }
   }
 
@@ -1460,11 +1462,11 @@ class FavoriSystem {
           }
         }
 
-        logger.info(FavoriSystem.MODULE_NAME, `Favori temporanei puliti per ${actor.name}`);
+        moduleLogger.info(`Favori temporanei puliti per ${actor.name}`);
       }
     } catch (error) {
       FavoriSystem._statistics.errors.push(`cleanupTemporaryFavors: ${error.message}`);
-      logger.error(FavoriSystem.MODULE_NAME, 'Errore cleanup favori', error);
+      moduleLogger.error('Errore cleanup favori', error);
     }
   }
 
@@ -1528,10 +1530,10 @@ window.FavoriSystem = FavoriSystem;
 // Inizializzazione automatica
 Hooks.once('init', () => {
   try {
-    logger.info(FavoriSystem.MODULE_NAME, `🎮 Brancalonia | Inizializzazione ${FavoriSystem.MODULE_NAME} v${FavoriSystem.VERSION}`);
+    moduleLogger.info(`🎮 Brancalonia | Inizializzazione ${FavoriSystem.MODULE_NAME} v${FavoriSystem.VERSION}`);
     FavoriSystem.initialize();
   } catch (error) {
-    logger.error(FavoriSystem.MODULE_NAME, 'Errore inizializzazione hook init', error);
+    moduleLogger.error('Errore inizializzazione hook init', error);
   }
 });
 
@@ -1583,7 +1585,7 @@ FavoriSystem.getStatistics = function() {
  * FavoriSystem.resetStatistics();
  */
 FavoriSystem.resetStatistics = function() {
-  logger.info(this.MODULE_NAME, 'Reset statistiche Favori System');
+  moduleLogger.info('Reset statistiche Favori System');
 
   const initTime = this._statistics.initTime;
   const macrosCreated = this._statistics.macrosCreated;
@@ -1638,7 +1640,7 @@ FavoriSystem.getFavoriTypes = function() {
  */
 FavoriSystem.requestFavoreViaAPI = async function(actor) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   return await this._state.instance.openFavoreRequestDialog(actor);
@@ -1653,7 +1655,7 @@ FavoriSystem.requestFavoreViaAPI = async function(actor) {
  */
 FavoriSystem.showStatusViaAPI = function(actor) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   return this._state.instance.showFavoriStatus(actor);
@@ -1670,7 +1672,7 @@ FavoriSystem.showStatusViaAPI = function(actor) {
  */
 FavoriSystem.payDebtViaAPI = async function(actor) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   return await this._state.instance.openDebtPaymentDialog(actor);

@@ -7,12 +7,15 @@
  * @updated 2025-10-03 - Integrazione Logger v2.0.0
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Activator';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class BrancaloniaModuleActivator {
   static ID = 'brancalonia-bigat';
   static VERSION = '11.0.0';
-  static MODULE_NAME = 'Activator';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Mappa di tutti i moduli e le loro funzioni di inizializzazione
@@ -360,20 +363,20 @@ class BrancaloniaModuleActivator {
    * Inizializza il sistema di attivazione
    */
   static initialize() {
-    logger.startPerformance('activator-init');
-    logger.info(this.MODULE_NAME, `Inizializzazione Module Activator v${this.VERSION}`);
+    moduleLogger.startPerformance('activator-init');
+    moduleLogger.info(`Inizializzazione Module Activator v${this.VERSION}`);
 
     try {
       // Registra settings globali
       this.registerGlobalSettings();
-      logger.debug(this.MODULE_NAME, 'Settings globali registrate');
+      moduleLogger.debug('Settings globali registrate');
 
       // Hook per inizializzazione
       // Init hook rimosso - viene chiamato da initialize() esterno
 
       // Hook per ready
       Hooks.once('ready', () => {
-        logger.info(this.MODULE_NAME, 'Fase READY iniziata');
+        moduleLogger.info('Fase READY iniziata');
         this.readyPhase();
 
         // Mostra report di attivazione
@@ -385,14 +388,14 @@ class BrancaloniaModuleActivator {
 
       // Hook per setup
       Hooks.once('setup', () => {
-        logger.info(this.MODULE_NAME, 'Fase SETUP iniziata');
+        moduleLogger.info('Fase SETUP iniziata');
         this.setupPhase();
       });
 
-      const initTime = logger.endPerformance('activator-init');
-      logger.info(this.MODULE_NAME, `Module Activator inizializzato in ${initTime?.toFixed(2)}ms`);
+      const initTime = moduleLogger.endPerformance('activator-init');
+      moduleLogger.info(`Module Activator inizializzato in ${initTime?.toFixed(2)}ms`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore critico durante inizializzazione', error);
+      moduleLogger.error('Errore critico durante inizializzazione', error);
       throw error;
     }
   }
@@ -427,8 +430,8 @@ class BrancaloniaModuleActivator {
    * Fase ready - attiva tutti i moduli
    */
   static readyPhase() {
-    logger.startPerformance('ready-phase');
-    logger.info(this.MODULE_NAME, 'Inizio attivazione moduli...');
+    moduleLogger.startPerformance('ready-phase');
+    moduleLogger.info('Inizio attivazione moduli...');
 
     const results = {
       success: [],
@@ -449,10 +452,10 @@ class BrancaloniaModuleActivator {
         const mainSetting = config.settings[0];
         if (game.settings.get(this.ID, mainSetting) === false) {
           results.disabled.push(config.name);
-          logger.debug(this.MODULE_NAME, `Modulo disabilitato`, { module: config.name, id });
+          moduleLogger.debug(`Modulo disabilitato`, { module: config.name, id });
           
           // Emit event
-          logger.events.emit('activator:module-disabled', {
+          moduleLogger.events.emit('activator:module-disabled', {
             module: config.name,
             id,
             timestamp: Date.now()
@@ -463,26 +466,26 @@ class BrancaloniaModuleActivator {
 
       try {
         // Track performance per modulo
-        logger.startPerformance(`module-${id}`);
+        moduleLogger.startPerformance(`module-${id}`);
         
         // Tenta l'inizializzazione
         const success = config.init();
         
-        const moduleTime = logger.endPerformance(`module-${id}`);
+        const moduleTime = moduleLogger.endPerformance(`module-${id}`);
         results.timings[id] = moduleTime;
 
         if (success) {
           results.success.push(config.name);
           game.brancalonia.modules[id] = true;
           
-          logger.info(this.MODULE_NAME, `Modulo attivato (${processed}/${totalModules})`, {
+          moduleLogger.info(`Modulo attivato (${processed}/${totalModules})`, {
             module: config.name,
             id,
             loadTime: moduleTime?.toFixed(2) + 'ms'
           });
 
           // Emit event
-          logger.events.emit('activator:module-activated', {
+          moduleLogger.events.emit('activator:module-activated', {
             module: config.name,
             id,
             loadTime: moduleTime,
@@ -490,13 +493,13 @@ class BrancaloniaModuleActivator {
           });
         } else {
           results.failed.push(config.name);
-          logger.warn(this.MODULE_NAME, `Modulo non trovato o non inizializzato`, {
+          moduleLogger.warn(`Modulo non trovato o non inizializzato`, {
             module: config.name,
             id
           });
 
           // Emit event
-          logger.events.emit('activator:module-failed', {
+          moduleLogger.events.emit('activator:module-failed', {
             module: config.name,
             id,
             reason: 'not_found_or_not_initialized',
@@ -505,14 +508,14 @@ class BrancaloniaModuleActivator {
         }
       } catch (error) {
         results.failed.push(config.name);
-        logger.error(this.MODULE_NAME, `Errore attivazione modulo`, {
+        moduleLogger.error(`Errore attivazione modulo`, {
           module: config.name,
           id,
           error
         });
 
         // Emit event
-        logger.events.emit('activator:module-failed', {
+        moduleLogger.events.emit('activator:module-failed', {
           module: config.name,
           id,
           error: error.message,
@@ -527,7 +530,7 @@ class BrancaloniaModuleActivator {
     const slowestId = Object.entries(results.timings).reduce((a, b) => b[1] > a[1] ? b : a)[0];
     const fastestId = Object.entries(results.timings).reduce((a, b) => b[1] < a[1] ? b : a)[0];
 
-    const readyTime = logger.endPerformance('ready-phase');
+    const readyTime = moduleLogger.endPerformance('ready-phase');
 
     // Salva risultati con statistiche
     game.brancalonia.activationResults = results;
@@ -543,7 +546,7 @@ class BrancaloniaModuleActivator {
     };
 
     // Log finale
-    logger.info(this.MODULE_NAME, `Attivazione moduli completata in ${readyTime?.toFixed(2)}ms`, {
+    moduleLogger.info(`Attivazione moduli completata in ${readyTime?.toFixed(2)}ms`, {
       activated: results.success.length,
       failed: results.failed.length,
       disabled: results.disabled.length,
@@ -552,7 +555,7 @@ class BrancaloniaModuleActivator {
     });
 
     // Emit event finale
-    logger.events.emit('activator:system-initialized', {
+    moduleLogger.events.emit('activator:system-initialized', {
       totalModules,
       activated: results.success.length,
       failed: results.failed.length,
@@ -734,8 +737,8 @@ class BrancaloniaModuleActivator {
    * Esegue test del sistema
    */
   static async runSystemTest() {
-    logger.startPerformance('system-test');
-    logger.info(this.MODULE_NAME, 'Inizio test sistema...');
+    moduleLogger.startPerformance('system-test');
+    moduleLogger.info('Inizio test sistema...');
 
     const tests = [];
 
@@ -772,18 +775,18 @@ class BrancaloniaModuleActivator {
       });
     }
 
-    const testTime = logger.endPerformance('system-test');
+    const testTime = moduleLogger.endPerformance('system-test');
     const passedCount = tests.filter(t => t.passed).length;
 
     // Log risultati
-    logger.info(this.MODULE_NAME, `Test sistema completato in ${testTime?.toFixed(2)}ms`, {
+    moduleLogger.info(`Test sistema completato in ${testTime?.toFixed(2)}ms`, {
       passed: passedCount,
       total: tests.length,
       success: passedCount === tests.length
     });
 
     // Emit event
-    logger.events.emit('activator:test-completed', {
+    moduleLogger.events.emit('activator:test-completed', {
       tests,
       passed: passedCount,
       total: tests.length,
@@ -833,9 +836,9 @@ class BrancaloniaModuleActivator {
   static registerDebugCommands() {
     // Comando per forzare reinizializzazione
     window.brancaloniaReinit = () => {
-      logger.info(this.MODULE_NAME, 'Reinizializzazione forzata richiesta');
+      moduleLogger.info('Reinizializzazione forzata richiesta');
       this.readyPhase();
-      logger.info(this.MODULE_NAME, 'Reinizializzazione completata');
+      moduleLogger.info('Reinizializzazione completata');
       return 'Reinizializzazione completata';
     };
 
@@ -843,27 +846,27 @@ class BrancaloniaModuleActivator {
     window.brancaloniaTestModule = (moduleName) => {
       const config = this.modules[moduleName];
       if (!config) {
-        logger.warn(this.MODULE_NAME, `Modulo ${moduleName} non trovato per test`);
+        moduleLogger.warn(`Modulo ${moduleName} non trovato per test`);
         return `Modulo ${moduleName} non trovato`;
       }
 
       try {
-        logger.startPerformance(`test-${moduleName}`);
+        moduleLogger.startPerformance(`test-${moduleName}`);
         const result = config.init();
-        const testTime = logger.endPerformance(`test-${moduleName}`);
+        const testTime = moduleLogger.endPerformance(`test-${moduleName}`);
         
         if (result) {
-          logger.info(this.MODULE_NAME, `Test modulo ${config.name} riuscito`, {
+          moduleLogger.info(`Test modulo ${config.name} riuscito`, {
             module: moduleName,
             time: testTime?.toFixed(2) + 'ms'
           });
           return `✅ ${config.name} inizializzato in ${testTime?.toFixed(2)}ms`;
         } else {
-          logger.warn(this.MODULE_NAME, `Test modulo ${config.name} fallito`);
+          moduleLogger.warn(`Test modulo ${config.name} fallito`);
           return `❌ ${config.name} fallito`;
         }
       } catch (e) {
-        logger.error(this.MODULE_NAME, `Errore test modulo ${config.name}`, e);
+        moduleLogger.error(`Errore test modulo ${config.name}`, e);
         return `❌ Errore: ${e.message}`;
       }
     };
@@ -876,12 +879,12 @@ class BrancaloniaModuleActivator {
     // Statistiche attivazione
     window.brancaloniaStats = () => {
       const stats = game.brancalonia.activationStats;
-      logger.info(this.MODULE_NAME, 'Statistiche attivazione richieste');
-      logger.table(stats);
+      moduleLogger.info('Statistiche attivazione richieste');
+      moduleLogger.table(stats);
       return stats;
     };
 
-    logger.info(this.MODULE_NAME, 'Comandi debug registrati in console', {
+    moduleLogger.info('Comandi debug registrati in console', {
       commands: ['brancaloniaReinit()', 'brancaloniaTestModule(name)', 'brancaloniaModules()', 'brancaloniaStats()']
     });
   }
@@ -890,7 +893,7 @@ class BrancaloniaModuleActivator {
    * Carica configurazioni salvate
    */
   static loadConfigurations() {
-    logger.debug(this.MODULE_NAME, 'Caricamento configurazioni custom...');
+    moduleLogger.debug('Caricamento configurazioni custom...');
     
     // Carica configurazioni personalizzate se esistono
     // Controlla se il setting è registrato prima di usarlo
@@ -899,20 +902,20 @@ class BrancaloniaModuleActivator {
       customConfig = game.settings.get(this.ID, 'customModuleConfig') || {};
       
       if (Object.keys(customConfig).length > 0) {
-        logger.info(this.MODULE_NAME, 'Configurazioni custom caricate', {
+        moduleLogger.info('Configurazioni custom caricate', {
           count: Object.keys(customConfig).length
         });
       }
     } catch (error) {
       // Setting non ancora registrato, usa default vuoto
-      logger.debug(this.MODULE_NAME, 'customModuleConfig setting not yet registered, using defaults');
+      moduleLogger.debug('customModuleConfig setting not yet registered, using defaults');
     }
 
     // Applica configurazioni custom
     for (const [id, config] of Object.entries(customConfig)) {
       if (this.modules[id]) {
         Object.assign(this.modules[id], config);
-        logger.debug(this.MODULE_NAME, `Configurazione custom applicata a ${id}`);
+        moduleLogger.debug(`Configurazione custom applicata a ${id}`);
       }
     }
   }
@@ -921,8 +924,8 @@ class BrancaloniaModuleActivator {
    * Esegue un comando specifico
    */
   static executeCommand(command, ...args) {
-    logger.startPerformance(`command-${command}`);
-    logger.info(this.MODULE_NAME, 'Esecuzione comando', { command, args });
+    moduleLogger.startPerformance(`command-${command}`);
+    moduleLogger.info('Esecuzione comando', { command, args });
 
     // Trova il modulo che gestisce questo comando
     for (const [id, config] of Object.entries(this.modules)) {
@@ -932,16 +935,16 @@ class BrancaloniaModuleActivator {
         if (window[className] && typeof window[className].handleCommand === 'function') {
           try {
             const result = window[className].handleCommand(command, ...args);
-            const cmdTime = logger.endPerformance(`command-${command}`);
+            const cmdTime = moduleLogger.endPerformance(`command-${command}`);
             
-            logger.info(this.MODULE_NAME, 'Comando eseguito con successo', {
+            moduleLogger.info('Comando eseguito con successo', {
               command,
               module: config.name,
               time: cmdTime?.toFixed(2) + 'ms'
             });
 
             // Emit event
-            logger.events.emit('activator:command-executed', {
+            moduleLogger.events.emit('activator:command-executed', {
               command,
               module: config.name,
               args,
@@ -952,14 +955,14 @@ class BrancaloniaModuleActivator {
 
             return result;
           } catch (error) {
-            logger.error(this.MODULE_NAME, 'Errore esecuzione comando', {
+            moduleLogger.error('Errore esecuzione comando', {
               command,
               module: config.name,
               error
             });
 
             // Emit event
-            logger.events.emit('activator:command-executed', {
+            moduleLogger.events.emit('activator:command-executed', {
               command,
               module: config.name,
               args,
@@ -974,7 +977,7 @@ class BrancaloniaModuleActivator {
       }
     }
 
-    logger.warn(this.MODULE_NAME, `Comando ${command} non trovato`);
+    moduleLogger.warn(`Comando ${command} non trovato`);
     return null;
   }
 }

@@ -10,7 +10,8 @@ import {
   LogSink, 
   ConsoleSink, 
   LocalStorageSink,
-  LogEventEmitter 
+  LogEventEmitter, createModuleLogger,
+  logger as globalLogger
 } from '../../modules/brancalonia-logger.js';
 
 describe('BrancaloniaLogger v2.0.0', () => {
@@ -782,6 +783,45 @@ describe('BrancaloniaLogger v2.0.0', () => {
       logger.exportLogs({ level: 'ERROR' });
 
       expect(document.createElement).toHaveBeenCalled();
+    });
+  });
+
+  describe('Module Scoped Logger', () => {
+    it('should cache scoped loggers per module', () => {
+      const scopedA = logger.forModule('ScopedModule');
+      const scopedB = logger.forModule('ScopedModule');
+
+      expect(scopedA).toBe(scopedB);
+    });
+
+    it('should inject module name automatically', () => {
+      logger.setLogLevel('TRACE');
+      console.log.mockClear();
+
+      const scoped = logger.forModule('ScopedModule');
+      scoped.info('Hello Scoped');
+
+      const call = console.log.mock.calls.at(-1);
+      expect(call[0]).toContain('[ScopedModule]');
+      expect(call[0]).toContain('Hello Scoped');
+    });
+
+    it('createModuleLogger should reuse global scoped logger', () => {
+      const previousLevel = globalLogger.logLevel;
+      globalLogger.setLogLevel?.('TRACE');
+      console.log.mockClear();
+
+      const globalScopedA = createModuleLogger('GlobalScoped');
+      const globalScopedB = createModuleLogger('GlobalScoped');
+
+      expect(globalScopedA).toBe(globalScopedB);
+
+      globalScopedA.info('Hello Global');
+      const call = console.log.mock.calls.at(-1);
+      expect(call[0]).toContain('[GlobalScoped]');
+      expect(call[0]).toContain('Hello Global');
+
+      globalLogger.setLogLevel?.(previousLevel);
     });
   });
 

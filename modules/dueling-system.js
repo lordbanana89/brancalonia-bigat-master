@@ -23,8 +23,10 @@
  * @requires dnd5e
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'DuelingSystem';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} DuelingStatistics
  * @property {number} initTime - Tempo inizializzazione (ms)
@@ -53,7 +55,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class DuelingSystem {
   static VERSION = '3.0.0';
-  static MODULE_NAME = 'DuelingSystem';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'dueling-system';
 
   /**
@@ -286,7 +288,7 @@ class DuelingSystem {
       });
     } catch (error) {
       DuelingSystem._statistics.errors.push(`Constructor: ${error.message}`);
-      logger.error(DuelingSystem.MODULE_NAME, 'Errore inizializzazione constructor', error);
+      moduleLogger.error('Errore inizializzazione constructor', error);
     }
 
     // Non chiamare i metodi privati nel constructor
@@ -301,7 +303,7 @@ class DuelingSystem {
     const startTime = performance.now();
 
     try {
-      logger.info(this.MODULE_NAME, `Inizializzazione Dueling System v${this.VERSION}`);
+      moduleLogger.info(`Inizializzazione Dueling System v${this.VERSION}`);
 
       // Creazione istanza globale
       const instance = new DuelingSystem();
@@ -326,7 +328,7 @@ class DuelingSystem {
       this._state.initialized = true;
       this._statistics.initTime = performance.now() - startTime;
 
-      logger.info(
+      moduleLogger.info(
         this.MODULE_NAME,
         `✅ Inizializzazione completata in ${this._statistics.initTime.toFixed(2)}ms`
       );
@@ -340,7 +342,7 @@ class DuelingSystem {
       });
     } catch (error) {
       this._statistics.errors.push(error.message);
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -384,10 +386,10 @@ class DuelingSystem {
         default: true
       });
 
-      logger.debug?.(this.MODULE_NAME, '3 settings registrati');
+      moduleLogger.debug?.('3 settings registrati');
     } catch (error) {
       this._statistics.errors.push(`Settings registration: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore registrazione settings', error);
+      moduleLogger.error('Errore registrazione settings', error);
       throw error;
     }
   }
@@ -609,7 +611,7 @@ if (duelSystem) {
       const duelType = this.duelTypes[type];
       if (!duelType) {
         ui.notifications.error(`Tipo di duello ${type} non valido!`);
-        logger.warn(DuelingSystem.MODULE_NAME, `Tipo duello non valido: ${type}`);
+        moduleLogger.warn(`Tipo duello non valido: ${type}`);
         return null;
       }
 
@@ -683,7 +685,7 @@ if (duelSystem) {
       DuelingSystem._state.activeDuels.set(duelId, duelData);
 
       const duelTime = performance.now() - startTime;
-      logger.info(
+      moduleLogger.info(
         DuelingSystem.MODULE_NAME,
         `Duello iniziato: ${challenger.name} vs ${challenged.name} (${duelType.name}, ${duelTime.toFixed(2)}ms)`
       );
@@ -700,7 +702,7 @@ if (duelSystem) {
       return duelData;
     } catch (error) {
       DuelingSystem._statistics.errors.push(`startDuel: ${error.message}`);
-      logger.error(DuelingSystem.MODULE_NAME, 'Errore avvio duello', error);
+      moduleLogger.error('Errore avvio duello', error);
       ui.notifications.error('Errore nell\'avvio del duello!');
       return null;
     }
@@ -756,10 +758,10 @@ if (duelSystem) {
         await this._createDuelArena(duelData);
       }
 
-      logger.debug?.(DuelingSystem.MODULE_NAME, 'Scena duello preparata');
+      moduleLogger.debug?.('Scena duello preparata');
     } catch (error) {
       DuelingSystem._statistics.errors.push(`_prepareDuelScene: ${error.message}`);
-      logger.error(DuelingSystem.MODULE_NAME, 'Errore preparazione scena duello', error);
+      moduleLogger.error('Errore preparazione scena duello', error);
     }
   }
 
@@ -775,7 +777,7 @@ if (duelSystem) {
     try {
       const style = this.fightingStyles[styleName];
       if (!style) {
-        logger.warn(DuelingSystem.MODULE_NAME, `Stile combattimento non valido: ${styleName}`);
+        moduleLogger.warn(`Stile combattimento non valido: ${styleName}`);
         return;
       }
 
@@ -823,10 +825,10 @@ if (duelSystem) {
 
       await actor.createEmbeddedDocuments('ActiveEffect', [effectData]);
 
-      logger.debug?.(DuelingSystem.MODULE_NAME, `Stile ${styleName} applicato a ${actor.name}`);
+      moduleLogger.debug?.(`Stile ${styleName} applicato a ${actor.name}`);
     } catch (error) {
       DuelingSystem._statistics.errors.push(`_applyFightingStyle: ${error.message}`);
-      logger.error(DuelingSystem.MODULE_NAME, 'Errore applicazione stile combattimento', error);
+      moduleLogger.error('Errore applicazione stile combattimento', error);
     }
   }
 
@@ -866,11 +868,11 @@ if (duelSystem) {
       const combat = await Combat.create(combatData);
       await combat.startCombat();
 
-      logger.info(DuelingSystem.MODULE_NAME, `Combattimento duello avviato: ${duelData.id}`);
+      moduleLogger.info(`Combattimento duello avviato: ${duelData.id}`);
       return combat;
     } catch (error) {
       DuelingSystem._statistics.errors.push(`_startDuelCombat: ${error.message}`);
-      logger.error(DuelingSystem.MODULE_NAME, 'Errore avvio combattimento duello', error);
+      moduleLogger.error('Errore avvio combattimento duello', error);
       throw error;
     }
   }
@@ -1014,14 +1016,14 @@ if (duelSystem) {
       const move = this.specialMoves[moveName];
       if (!move) {
         ui.notifications.error(`Mossa ${moveName} non valida!`);
-        logger.warn(DuelingSystem.MODULE_NAME, `Mossa non valida: ${moveName}`);
+        moduleLogger.warn(`Mossa non valida: ${moveName}`);
         return false;
       }
 
       // Controlla requisiti
       if (!this._checkMoveRequirements(actor, move)) {
         ui.notifications.warn(`Non soddisfi i requisiti per ${move.name}`);
-        logger.debug?.(DuelingSystem.MODULE_NAME, `Requisiti non soddisfatti per ${moveName}`);
+        moduleLogger.debug?.(`Requisiti non soddisfatti per ${moveName}`);
         return false;
       }
 
@@ -1055,7 +1057,7 @@ if (duelSystem) {
         DuelingSystem._statistics.movesByType[moveName]++;
 
         const moveTime = performance.now() - moveStart;
-        logger.info(
+        moduleLogger.info(
           DuelingSystem.MODULE_NAME,
           `Mossa ${move.name} eseguita da ${actor.name} (${moveTime.toFixed(2)}ms)`
         );
@@ -1088,7 +1090,7 @@ if (duelSystem) {
       }
     } catch (error) {
       DuelingSystem._statistics.errors.push(`executeSpecialMove: ${error.message}`);
-      logger.error(DuelingSystem.MODULE_NAME, 'Errore esecuzione mossa speciale', error);
+      moduleLogger.error('Errore esecuzione mossa speciale', error);
       ui.notifications.error('Errore nell\'esecuzione della mossa!');
       return false;
     }
@@ -1215,14 +1217,14 @@ if (duelSystem) {
       const combat = game?.combat;
       if (!combat?.flags?.brancalonia?.isDuel) {
         ui.notifications.warn('Non sei in un duello!');
-        logger.warn(DuelingSystem.MODULE_NAME, 'Tentativo arresa fuori dal duello');
+        moduleLogger.warn('Tentativo arresa fuori dal duello');
         return;
       }
 
       const duelId = combat.flags.brancalonia.duelId;
       const duel = this.activeDuels.get(duelId);
       if (!duel) {
-        logger.warn(DuelingSystem.MODULE_NAME, `Duello non trovato: ${duelId}`);
+        moduleLogger.warn(`Duello non trovato: ${duelId}`);
         return;
       }
 
@@ -1250,10 +1252,10 @@ if (duelSystem) {
         }
       }).render(true);
 
-      logger.debug?.(DuelingSystem.MODULE_NAME, `Richiesta arresa: ${actor.name}`);
+      moduleLogger.debug?.(`Richiesta arresa: ${actor.name}`);
     } catch (error) {
       DuelingSystem._statistics.errors.push(`requestSubmission: ${error.message}`);
-      logger.error(DuelingSystem.MODULE_NAME, 'Errore richiesta sottomissione', error);
+      moduleLogger.error('Errore richiesta sottomissione', error);
       ui.notifications.error('Errore nella richiesta di resa!');
     }
   }
@@ -1377,7 +1379,7 @@ if (duelSystem) {
       }
 
       const endTime = performance.now() - endStart;
-      logger.info(
+      moduleLogger.info(
         DuelingSystem.MODULE_NAME,
         `Duello terminato: ${winner?.name || 'Pareggio'} (${reason}, ${endTime.toFixed(2)}ms)`
       );
@@ -1393,7 +1395,7 @@ if (duelSystem) {
       });
     } catch (error) {
       DuelingSystem._statistics.errors.push(`_endDuel: ${error.message}`);
-      logger.error(DuelingSystem.MODULE_NAME, 'Errore termine duello', error);
+      moduleLogger.error('Errore termine duello', error);
       ui.notifications.error('Errore nella conclusione del duello!');
     }
   }
@@ -1716,7 +1718,7 @@ DuelingSystem.getStatistics = function() {
  * DuelingSystem.resetStatistics();
  */
 DuelingSystem.resetStatistics = function() {
-  logger.info(this.MODULE_NAME, 'Reset statistiche Dueling System');
+  moduleLogger.info('Reset statistiche Dueling System');
 
   const initTime = this._statistics.initTime;
   const macrosCreated = this._statistics.macrosCreated;
@@ -1810,7 +1812,7 @@ DuelingSystem.getActiveDuels = function() {
  */
 DuelingSystem.startDuelViaAPI = async function(challenger, challenged, type, options) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return null;
   }
   return await this._state.instance.startDuel(challenger, challenged, type, options);
@@ -1829,12 +1831,12 @@ DuelingSystem.startDuelViaAPI = async function(challenger, challenged, type, opt
  */
 DuelingSystem.endDuelViaAPI = async function(duelId, winner, reason) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   const duel = this._state.activeDuels.get(duelId);
   if (!duel) {
-    logger.warn(this.MODULE_NAME, `Duello non trovato: ${duelId}`);
+    moduleLogger.warn(`Duello non trovato: ${duelId}`);
     return;
   }
   await this._state.instance._endDuel(duel, winner, reason);
@@ -1853,7 +1855,7 @@ DuelingSystem.endDuelViaAPI = async function(duelId, winner, reason) {
  */
 DuelingSystem.executeSpecialMoveViaAPI = async function(actor, moveName, target) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return false;
   }
   return await this._state.instance.executeSpecialMove(actor, moveName, target);

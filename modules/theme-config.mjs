@@ -22,10 +22,12 @@
  * new ThemeConfig().render(true);
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 import { Theme } from './theme.mjs';
 import { MODULE, THEMES } from './settings.mjs';
 
+const MODULE_LABEL = 'Theme Config UI';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * Statistiche del theme config UI
  * @private
@@ -49,7 +51,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
   foundry.applications.api.ApplicationV2
 ) {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Theme Config UI';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Costruttore
@@ -58,13 +60,13 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
   constructor(options = {}) {
     super(options);
     
-    logger.debug(ThemeConfig.MODULE_NAME, 'Creazione nuova istanza ThemeConfig');
+    moduleLogger.debug('Creazione nuova istanza ThemeConfig');
     
     try {
       this.theme = game.settings.get(MODULE, 'theme');
-      logger.debug(ThemeConfig.MODULE_NAME, 'Tema corrente caricato');
+      moduleLogger.debug('Tema corrente caricato');
     } catch (error) {
-      logger.error(ThemeConfig.MODULE_NAME, 'Errore caricamento tema corrente', error);
+      moduleLogger.error('Errore caricamento tema corrente', error);
       this.theme = THEMES.default;
     }
   }
@@ -118,7 +120,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       const app = target.closest('.application').application;
       const tabName = target.dataset.tab;
 
-      logger.debug(ThemeConfig.MODULE_NAME, `Cambio tab: ${tabName}`);
+      moduleLogger.debug(`Cambio tab: ${tabName}`);
 
       // Rimuovi active da tutti i tab
       app.element.querySelectorAll('.tabs .item').forEach(t => t.classList.remove('active'));
@@ -133,7 +135,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       app._activeTab = tabName;
 
     } catch (error) {
-      logger.error(ThemeConfig.MODULE_NAME, 'Errore cambio tab', error);
+      moduleLogger.error('Errore cambio tab', error);
     }
   }
 
@@ -146,7 +148,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
   _onRender(context, options) {
     super._onRender(context, options);
 
-    logger.debug(ThemeConfig.MODULE_NAME, 'UI renderizzata, setup handlers...');
+    moduleLogger.debug('UI renderizzata, setup handlers...');
 
     try {
       // Attiva il tab corrente
@@ -172,7 +174,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
             _statistics.colorChanges++;
             this._updatePreview();
             
-            logger.debug(ThemeConfig.MODULE_NAME, `Colore cambiato (total: ${_statistics.colorChanges})`);
+            moduleLogger.debug(`Colore cambiato (total: ${_statistics.colorChanges})`);
           });
 
           // Quando cambia il text, aggiorna il color picker (se valido)
@@ -187,10 +189,10 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
         }
       });
 
-      logger.debug(ThemeConfig.MODULE_NAME, 'Handlers setup completato');
+      moduleLogger.debug('Handlers setup completato');
 
     } catch (error) {
-      logger.error(ThemeConfig.MODULE_NAME, 'Errore setup handlers', error);
+      moduleLogger.error('Errore setup handlers', error);
       _statistics.errors.push({
         type: 'render-setup',
         message: error.message,
@@ -249,7 +251,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       const preset = app.element.querySelector('#preset-select')?.value;
       
       if (preset && THEMES[preset]) {
-        logger.info(ThemeConfig.MODULE_NAME, `Caricamento preset: ${preset}`);
+        moduleLogger.info(`Caricamento preset: ${preset}`);
         
         app.theme = THEMES[preset];
         await app.render();
@@ -257,10 +259,10 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
         _statistics.presetLoads++;
         
         ui.notifications.info(`Tema ${preset} caricato`);
-        logger.info(ThemeConfig.MODULE_NAME, `Preset "${preset}" caricato con successo`);
+        moduleLogger.info(`Preset "${preset}" caricato con successo`);
 
         // Emit event
-        logger.events.emit('theme:config-preset-loaded', {
+        moduleLogger.events.emit('theme:config-preset-loaded', {
           preset,
           loadCount: _statistics.presetLoads,
           timestamp: Date.now()
@@ -268,7 +270,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       }
 
     } catch (error) {
-      logger.error(ThemeConfig.MODULE_NAME, 'Errore caricamento preset', error);
+      moduleLogger.error('Errore caricamento preset', error);
       _statistics.errors.push({
         type: 'preset-load',
         message: error.message,
@@ -288,7 +290,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
    */
   static async exportTheme(event, target) {
     try {
-      logger.info(ThemeConfig.MODULE_NAME, 'Export tema...');
+      moduleLogger.info('Export tema...');
       
       const app = target.closest('.application').application;
       const theme = Theme.from(app.theme);
@@ -297,16 +299,16 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       _statistics.exports++;
       
       ui.notifications.info('Tema esportato');
-      logger.info(ThemeConfig.MODULE_NAME, 'Tema esportato con successo');
+      moduleLogger.info('Tema esportato con successo');
 
       // Emit event
-      logger.events.emit('theme:config-exported', {
+      moduleLogger.events.emit('theme:config-exported', {
         exportCount: _statistics.exports,
         timestamp: Date.now()
       });
 
     } catch (error) {
-      logger.error(ThemeConfig.MODULE_NAME, 'Errore export tema', error);
+      moduleLogger.error('Errore export tema', error);
       _statistics.errors.push({
         type: 'export',
         message: error.message,
@@ -326,7 +328,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
    */
   static async importTheme(event, target) {
     try {
-      logger.info(ThemeConfig.MODULE_NAME, 'Import tema...');
+      moduleLogger.info('Import tema...');
       
       const app = target.closest('.application').application;
       const theme = await Theme.importFromJSONDialog();
@@ -338,19 +340,19 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
         _statistics.imports++;
         
         ui.notifications.success('Tema importato con successo');
-        logger.info(ThemeConfig.MODULE_NAME, 'Tema importato con successo');
+        moduleLogger.info('Tema importato con successo');
 
         // Emit event
-        logger.events.emit('theme:config-imported', {
+        moduleLogger.events.emit('theme:config-imported', {
           importCount: _statistics.imports,
           timestamp: Date.now()
         });
       } else {
-        logger.debug(ThemeConfig.MODULE_NAME, 'Import annullato');
+        moduleLogger.debug('Import annullato');
       }
 
     } catch (error) {
-      logger.error(ThemeConfig.MODULE_NAME, 'Errore import tema', error);
+      moduleLogger.error('Errore import tema', error);
       _statistics.errors.push({
         type: 'import',
         message: error.message,
@@ -375,7 +377,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       const textInput = button.parentElement.querySelector('input[type="text"]');
       const defaultTheme = THEMES.default;
 
-      logger.debug(ThemeConfig.MODULE_NAME, `Reset colore: ${colorKey}`);
+      moduleLogger.debug(`Reset colore: ${colorKey}`);
 
       // Estrai il valore di default usando il data-color
       const defaultValue = defaultTheme.colors[colorKey] || '#000000';
@@ -395,10 +397,10 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       const app = target.closest('.application').application;
       app._updatePreview();
 
-      logger.debug(ThemeConfig.MODULE_NAME, `Colore ${colorKey} resettato a ${defaultValue}`);
+      moduleLogger.debug(`Colore ${colorKey} resettato a ${defaultValue}`);
 
     } catch (error) {
-      logger.error(ThemeConfig.MODULE_NAME, 'Errore reset colore', error);
+      moduleLogger.error('Errore reset colore', error);
     }
   }
 
@@ -416,10 +418,10 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       const theme = Theme.from(formData.theme || this.theme);
       theme.apply();
 
-      logger.debug(ThemeConfig.MODULE_NAME, 'Preview aggiornata');
+      moduleLogger.debug('Preview aggiornata');
 
     } catch (error) {
-      logger.error(ThemeConfig.MODULE_NAME, 'Errore aggiornamento preview', error);
+      moduleLogger.error('Errore aggiornamento preview', error);
     }
   }
 
@@ -434,8 +436,8 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
    * @fires theme:config-saved
    */
   static async formHandler(event, form, formData) {
-    logger.startPerformance('theme-config-submit');
-    logger.info(ThemeConfig.MODULE_NAME, 'Submit form configurazione...');
+    moduleLogger.startPerformance('theme-config-submit');
+    moduleLogger.info('Submit form configurazione...');
 
     try {
       // Estrai i dati dal form
@@ -472,7 +474,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
             themeData.colors[colorKey] = defaultValue || '#000000';
             
             invalidColors++;
-            logger.warn(ThemeConfig.MODULE_NAME, `Colore non valido per ${colorKey}: ${value}, usando default: ${defaultValue}`);
+            moduleLogger.warn(`Colore non valido per ${colorKey}: ${value}, usando default: ${defaultValue}`);
           }
         } else if (key.startsWith('theme.images.')) {
           const imageKey = key.replace('theme.images.', '');
@@ -492,13 +494,13 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
 
       _statistics.formSubmits++;
 
-      const submitTime = logger.endPerformance('theme-config-submit');
+      const submitTime = moduleLogger.endPerformance('theme-config-submit');
 
       ui.notifications.success('Tema salvato e applicato');
-      logger.info(ThemeConfig.MODULE_NAME, `Tema salvato in ${submitTime?.toFixed(2)}ms (${invalidColors} colori corretti)`);
+      moduleLogger.info(`Tema salvato in ${submitTime?.toFixed(2)}ms (${invalidColors} colori corretti)`);
 
       // Emit event
-      logger.events.emit('theme:config-saved', {
+      moduleLogger.events.emit('theme:config-saved', {
         submitCount: _statistics.formSubmits,
         invalidColors,
         submitTime,
@@ -506,7 +508,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       });
 
     } catch (error) {
-      logger.error(ThemeConfig.MODULE_NAME, 'Errore salvataggio tema', error);
+      moduleLogger.error('Errore salvataggio tema', error);
       ui.notifications.error('Errore nel salvare il tema. Ripristino tema default.');
 
       _statistics.errors.push({
@@ -520,9 +522,9 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
         await game.settings.set(MODULE, 'theme', THEMES.default);
         const defaultTheme = Theme.from(THEMES.default);
         defaultTheme.apply();
-        logger.info(ThemeConfig.MODULE_NAME, 'Tema default ripristinato dopo errore');
+        moduleLogger.info('Tema default ripristinato dopo errore');
       } catch (restoreError) {
-        logger.error(ThemeConfig.MODULE_NAME, 'Errore ripristino tema default', restoreError);
+        moduleLogger.error('Errore ripristino tema default', restoreError);
       }
     }
   }
@@ -539,11 +541,11 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       icon: "fas fa-undo",
       onclick: () => {
         try {
-          logger.info(ThemeConfig.MODULE_NAME, 'Reset tema a default');
+          moduleLogger.info('Reset tema a default');
           this.theme = THEMES.default;
           this.render();
         } catch (error) {
-          logger.error(ThemeConfig.MODULE_NAME, 'Errore reset tema', error);
+          moduleLogger.error('Errore reset tema', error);
         }
       }
     });
@@ -575,7 +577,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
    * ThemeConfig.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(ThemeConfig.MODULE_NAME, 'Reset statistiche');
+    moduleLogger.info('Reset statistiche');
 
     _statistics.formSubmits = 0;
     _statistics.colorChanges = 0;
@@ -584,7 +586,7 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
     _statistics.imports = 0;
     _statistics.errors = [];
 
-    logger.info(ThemeConfig.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -597,12 +599,12 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
   static showReport() {
     const stats = ThemeConfig.getStatistics();
 
-    logger.group('📊 Brancalonia Theme Config UI - Report');
+    moduleLogger.group('📊 Brancalonia Theme Config UI - Report');
 
-    logger.info(ThemeConfig.MODULE_NAME, 'VERSION:', ThemeConfig.VERSION);
+    moduleLogger.info('VERSION:', ThemeConfig.VERSION);
 
-    logger.group('📈 Statistics');
-    logger.table([
+    moduleLogger.group('📈 Statistics');
+    moduleLogger.table([
       { Metric: 'Form Submits', Value: stats.formSubmits },
       { Metric: 'Color Changes', Value: stats.colorChanges },
       { Metric: 'Preset Loads', Value: stats.presetLoads },
@@ -610,17 +612,17 @@ export class ThemeConfig extends foundry.applications.api.HandlebarsApplicationM
       { Metric: 'Imports', Value: stats.imports },
       { Metric: 'Errors', Value: stats.errors.length }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors');
+      moduleLogger.group('🐛 Errors');
       stats.errors.forEach((err, i) => {
-        logger.error(ThemeConfig.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return stats;
   }

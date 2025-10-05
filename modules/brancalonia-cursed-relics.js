@@ -3,15 +3,16 @@
  * Gestisce gli oggetti magici con benedizioni e maledizioni
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
 const MODULE_ID = 'brancalonia-bigat';
 const MODULE_NAME = 'CursedRelics';
+const moduleLogger = createModuleLogger(MODULE_NAME);
 
 class CimeliMaledetti {
   static initialize() {
     try {
-      logger.info(MODULE_NAME, 'Inizializzazione Sistema Cimeli Maledetti');
+      moduleLogger.info('Inizializzazione Sistema Cimeli Maledetti');
 
       // Registra le impostazioni
       this._registerSettings();
@@ -32,10 +33,10 @@ class CimeliMaledetti {
       game.brancalonia = game.brancalonia || {};
       game.brancalonia.cimeliMaledetti = this;
 
-      logger.info(MODULE_NAME, 'Sistema Cimeli Maledetti caricato con successo');
+      moduleLogger.info('Sistema Cimeli Maledetti caricato con successo');
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore inizializzazione Sistema Cimeli Maledetti', error);
+      moduleLogger.error('Errore inizializzazione Sistema Cimeli Maledetti', error);
       if (ui?.notifications) {
         ui.notifications.error(`Errore nel caricamento del sistema cimeli: ${error?.message || 'Errore sconosciuto'}`);
       }
@@ -92,7 +93,7 @@ class CimeliMaledetti {
       });
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore registrazione impostazioni cimeli', error);
+      moduleLogger.error('Errore registrazione impostazioni cimeli', error);
     }
   }
 
@@ -110,11 +111,11 @@ class CimeliMaledetti {
       };
 
       if (game.settings.get(MODULE_ID, 'debugCimeliMaledetti')) {
-        logger.debug(MODULE_NAME, 'Proprietà cimeli registrate in D&D5E');
+        moduleLogger.debug('Proprietà cimeli registrate in D&D5E');
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore setup proprietà cimeli', error);
+      moduleLogger.error('Errore setup proprietà cimeli', error);
     }
   }
   static cimeli = new Map();
@@ -152,7 +153,7 @@ class CimeliMaledetti {
       });
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore registrazione comandi chat cimeli', error);
+      moduleLogger.error('Errore registrazione comandi chat cimeli', error);
     }
   }
 
@@ -160,7 +161,7 @@ class CimeliMaledetti {
     try {
       // Verifica che game.macros sia disponibile
       if (!game.macros) {
-        logger.warn(MODULE_NAME, 'game.macros non ancora disponibile, macro creation skipped');
+        moduleLogger.warn('game.macros non ancora disponibile, macro creation skipped');
         return;
       }
 
@@ -237,16 +238,16 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
           if (!existingMacro) {
             await Macro.create(macroData);
             if (game.settings.get(MODULE_ID, 'debugCimeliMaledetti')) {
-              logger.debug(MODULE_NAME, `Macro '${macroData.name}' creata automaticamente`);
+              moduleLogger.debug(`Macro '${macroData.name}' creata automaticamente`);
             }
           }
         } catch (error) {
-          logger.error(MODULE_NAME, `Errore creazione macro ${macroData.name}`, error);
+          moduleLogger.error(`Errore creazione macro ${macroData.name}`, error);
         }
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore creazione macro cimeli', error);
+      moduleLogger.error('Errore creazione macro cimeli', error);
     }
   }
 
@@ -260,7 +261,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       // Carica cimeli dal compendium
       const pack = game.packs.get("brancalonia-bigat.equipaggiamento");
       if (!pack) {
-        logger.warn(MODULE_NAME, 'Compendium equipaggiamento non trovato');
+        moduleLogger.warn('Compendium equipaggiamento non trovato');
         return;
       }
 
@@ -294,7 +295,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
 
                 // Check if duration value is invalid
                 if (!CimeliMaledetti._isValidDurationValue(durationValue)) {
-                  logger.warn(MODULE_NAME, `Fixing invalid duration in ${item.name}: "${durationValue}" -> ""`);
+                  moduleLogger.warn(`Fixing invalid duration in ${item.name}: "${durationValue}" -> ""`);
                   updatedActivities[activityId] = {
                     ...activity,
                     duration: {
@@ -313,7 +314,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
                 // Use updateSource to avoid validation during processing
                 item.updateSource({ 'system.activities': updatedActivities });
               } catch (error) {
-                logger.error(MODULE_NAME, `Error fixing item ${item.name}`, error);
+                moduleLogger.error(`Error fixing item ${item.name}`, error);
                 skipItem = true;
               }
             }
@@ -324,7 +325,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
             validItems.push(item);
           }
         } catch (error) {
-          logger.warn(MODULE_NAME, `Skipping problematic item ${item.name}`, error);
+          moduleLogger.warn(`Skipping problematic item ${item.name}`, error);
           // Skip this item if it can't be processed
         }
       }
@@ -345,11 +346,11 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       });
 
       if (game.settings.get(MODULE_ID, 'debugCimeliMaledetti')) {
-        logger.debug(MODULE_NAME, `Caricati ${this.cimeli.size} cimeli`, Array.from(this.cimeli.keys()));
+        moduleLogger.debug(`Caricati ${this.cimeli.size} cimeli`, Array.from(this.cimeli.keys()));
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore caricamento cimeli', error);
+      moduleLogger.error('Errore caricamento cimeli', error);
     }
   }
 
@@ -376,7 +377,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
           this.tiraCimelo(); // Default action
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore comando cimelo', error);
+      moduleLogger.error('Errore comando cimelo', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
@@ -399,7 +400,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
           this._showCimeliHelp();
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore comando maledizione', error);
+      moduleLogger.error('Errore comando maledizione', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
@@ -567,7 +568,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       const impl = item.system?.implementazione || item.flags?.brancalonia?.implementazione;
       
       if (!impl || !impl.attivo) {
-        logger.debug(MODULE_NAME, `${item.name} non è attivo o manca implementazione`);
+        moduleLogger.debug(`${item.name} non è attivo o manca implementazione`);
         return [];
       }
 
@@ -590,7 +591,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
             }
           }
         });
-        logger.debug(MODULE_NAME, `Applicata benedizione da ${item.name}`);
+        moduleLogger.debug(`Applicata benedizione da ${item.name}`);
       }
 
       if (impl.active_effects_maledizione?.length > 0) {
@@ -612,7 +613,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
             }
           }
         });
-        logger.debug(MODULE_NAME, `Applicata maledizione da ${item.name}`);
+        moduleLogger.debug(`Applicata maledizione da ${item.name}`);
       }
 
       // Inizializza tracking flags se presenti
@@ -622,14 +623,14 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
 
       // FALLBACK: Se non ci sono active_effects nel nuovo formato, prova il vecchio parsing
       if (effects.length === 0) {
-        logger.warn(MODULE_NAME, `${item.name} usa vecchio formato, fallback a parsing`);
+        moduleLogger.warn(`${item.name} usa vecchio formato, fallback a parsing`);
         return this._legacyParseEffetti(actor, item);
       }
 
       return effects;
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore applicazione effetti cimelo', error);
+      moduleLogger.error('Errore applicazione effetti cimelo', error);
       return [];
     }
   }
@@ -649,10 +650,10 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
           itemName: item.name,
           initialized: Date.now()
         });
-        logger.debug(MODULE_NAME, `Inizializzati tracking flags per ${item.name}`);
+        moduleLogger.debug(`Inizializzati tracking flags per ${item.name}`);
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore inizializzazione tracking flags', error);
+      moduleLogger.error('Errore inizializzazione tracking flags', error);
     }
   }
 
@@ -710,7 +711,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
 
       return effects;
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore parsing legacy', error);
+      moduleLogger.error('Errore parsing legacy', error);
       return [];
     }
   }
@@ -725,7 +726,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
         return validator._isValidDurationValue(value);
       }
     } catch (error) {
-      logger.warn(MODULE_NAME, 'Impossibile delegare la validazione durata al Data Validator', error);
+      moduleLogger.warn('Impossibile delegare la validazione durata al Data Validator', error);
     }
 
     if (value === '' || value === null || value === undefined) return true;
@@ -791,13 +792,13 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       }
 
       if (game.settings.get(MODULE_ID, 'debugCimeliMaledetti')) {
-        logger.debug(MODULE_NAME, 'Benedizione parsata', { desc, changes });
+        moduleLogger.debug('Benedizione parsata', { desc, changes });
       }
 
       return changes;
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore parsing benedizione', error);
+      moduleLogger.error('Errore parsing benedizione', error);
       return [];
     }
   }
@@ -870,13 +871,13 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       }
 
       if (game.settings.get(MODULE_ID, 'debugCimeliMaledetti')) {
-        logger.debug(MODULE_NAME, 'Maledizione parsata', { desc, changes });
+        moduleLogger.debug('Maledizione parsata', { desc, changes });
       }
 
       return changes;
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore parsing maledizione', error);
+      moduleLogger.error('Errore parsing maledizione', error);
       return [];
     }
   }
@@ -934,7 +935,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
         });
 
         if (game.settings.get(MODULE_ID, 'debugCimeliMaledetti')) {
-          logger.debug(MODULE_NAME, 'Cimelo generato', { name: cimelo.name, id: cimeloId });
+          moduleLogger.debug('Cimelo generato', { name: cimelo.name, id: cimeloId });
         }
 
         return cimelo;
@@ -944,7 +945,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore tiro cimelo casuale', error);
+      moduleLogger.error('Errore tiro cimelo casuale', error);
       ui.notifications.error("Errore nella generazione del cimelo!");
       return null;
     }
@@ -1000,7 +1001,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       }).render(true);
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore dialogo identificazione', error);
+      moduleLogger.error('Errore dialogo identificazione', error);
       ui.notifications.error("Errore nell'apertura del dialogo!");
     }
   }
@@ -1029,7 +1030,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       });
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore identificazione cimelo', error);
+      moduleLogger.error('Errore identificazione cimelo', error);
       ui.notifications.error("Errore nell'identificazione!");
     }
   }
@@ -1084,7 +1085,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore tentativo rimozione maledizione', error);
+      moduleLogger.error('Errore tentativo rimozione maledizione', error);
       ui.notifications.error("Errore nel tentativo di rimozione!");
     }
   }
@@ -1186,7 +1187,7 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       });
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore registrazione hook cimeli', error);
+      moduleLogger.error('Errore registrazione hook cimeli', error);
     }
   }
 
@@ -1311,11 +1312,11 @@ game.brancalonia.cimeliMaledetti.tentaRimozioneMaledizione(actor);
       document.head.appendChild(style);
 
       if (game.settings.get(MODULE_ID, 'debugCimeliMaledetti')) {
-        logger.debug(MODULE_NAME, 'Stili CSS cimeli applicati');
+        moduleLogger.debug('Stili CSS cimeli applicati');
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore aggiunta stili CSS', error);
+      moduleLogger.error('Errore aggiunta stili CSS', error);
     }
   }
 
@@ -1327,7 +1328,7 @@ Hooks.once("init", () => {
   try {
     CimeliMaledetti.initialize();
   } catch (error) {
-    logger.error(MODULE_NAME, 'Errore critico inizializzazione CimeliMaledetti', error);
+    moduleLogger.error('Errore critico inizializzazione CimeliMaledetti', error);
     ui.notifications.error("Errore nel caricamento del sistema cimeli maledetti!");
   }
 });
@@ -1338,7 +1339,7 @@ Hooks.once("ready", async () => {
   CimeliMaledetti._createAutomaticMacros();
   // Inizializza il database dei cimeli ORA che i compendium sono disponibili
   await CimeliMaledetti._initCimeli();
-  logger.info(MODULE_NAME, 'Sistema Cimeli Maledetti pronto');
+  moduleLogger.info('Sistema Cimeli Maledetti pronto');
 });
 
 // Rendi disponibile globalmente

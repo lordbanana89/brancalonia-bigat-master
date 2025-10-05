@@ -9,11 +9,14 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Reputation-Infamia System';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class ReputationInfamiaSystem {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Reputation-Infamia System';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'brancalonia-reputation-infamia';
   static NAMESPACE = 'brancalonia-bigat';
 
@@ -203,8 +206,8 @@ class ReputationInfamiaSystem {
    */
   static async initialize() {
     try {
-      logger.startPerformance('reputation-init');
-      logger.info(this.MODULE_NAME, '🎭 Inizializzazione Sistema Unificato Reputazione e Infamia v2.0.0');
+      moduleLogger.startPerformance('reputation-init');
+      moduleLogger.info('🎭 Inizializzazione Sistema Unificato Reputazione e Infamia v2.0.0');
 
       // Crea istanza singleton
       game.brancalonia = game.brancalonia || {};
@@ -230,17 +233,17 @@ class ReputationInfamiaSystem {
 
       instance._state.initialized = true;
 
-      const initTime = logger.endPerformance('reputation-init');
-      logger.info(this.MODULE_NAME, `✅ Sistema Reputazione e Infamia inizializzato in ${initTime?.toFixed(2)}ms`);
+      const initTime = moduleLogger.endPerformance('reputation-init');
+      moduleLogger.info(`✅ Sistema Reputazione e Infamia inizializzato in ${initTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('reputation-infamia:initialized', {
+      moduleLogger.events.emit('reputation-infamia:initialized', {
         version: this.VERSION,
         initTime,
         timestamp: Date.now()
       });
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -1560,9 +1563,9 @@ game.brancalonia.reputationInfamia._showReputationDialog(controlled);
         `
         });
       }
-      logger.info(ReputationInfamiaSystem.MODULE_NAME, '✅ Macro Reputation-Infamia create');
+      moduleLogger.info('✅ Macro Reputation-Infamia create');
     } catch (error) {
-      logger.error(ReputationInfamiaSystem.MODULE_NAME, 'Errore creazione macro Gestione Reputazione e Infamia', error);
+      moduleLogger.error('Errore creazione macro Gestione Reputazione e Infamia', error);
     }
   }
 
@@ -1627,7 +1630,7 @@ game.brancalonia.reputationInfamia._showReputationDialog(controlled);
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, '📊 Statistiche reset');
+    moduleLogger.info('📊 Statistiche reset');
   }
 
   /**

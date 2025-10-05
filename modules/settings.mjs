@@ -19,7 +19,7 @@
  * registerSettings();
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 import { Theme } from './theme.mjs';
 import { ThemeConfig } from './theme-config.mjs';
 
@@ -40,6 +40,7 @@ export const VERSION = '2.0.0';
  * @constant {string}
  */
 export const MODULE_NAME = 'Theme Settings';
+const moduleLogger = createModuleLogger(MODULE_NAME);
 
 /**
  * Statistiche del settings manager
@@ -198,7 +199,7 @@ export const THEMES = {
  * registerSettings();
  */
 export function registerSettings() {
-  logger.info('Theme Settings', 'Registrazione settings...');
+  moduleLogger.info('Registrazione settings...');
 
   try {
     // Menu configurazione tema
@@ -211,7 +212,7 @@ export function registerSettings() {
       restricted: true
     });
 
-    logger.debug('Theme Settings', 'Menu "themeConfig" registrato');
+    moduleLogger.debug('Menu "themeConfig" registrato');
 
     // Impostazione tema corrente
     game.settings.register(MODULE, 'theme', {
@@ -221,23 +222,23 @@ export function registerSettings() {
       default: THEMES.default,
       onChange: (themeData) => {
         try {
-          logger.debug('Theme Settings', 'Setting "theme" onChange triggered');
+          moduleLogger.debug('Setting "theme" onChange triggered');
 
           const theme = Theme.from(themeData);
           theme.apply();
 
           _statistics.themeChanges++;
 
-          logger.info('Theme Settings', 'Tema cambiato e applicato');
+          moduleLogger.info('Tema cambiato e applicato');
 
           // Emit event
-          logger.events.emit('theme:changed', {
+          moduleLogger.events.emit('theme:changed', {
             changeCount: _statistics.themeChanges,
             timestamp: Date.now()
           });
 
         } catch (error) {
-          logger.error('Theme Settings', 'Errore onChange theme', error);
+          moduleLogger.error('Errore onChange theme', error);
           _statistics.errors.push({
             type: 'theme-onchange',
             message: error.message,
@@ -247,7 +248,7 @@ export function registerSettings() {
       }
     });
 
-    logger.debug('Theme Settings', 'Setting "theme" registrata');
+    moduleLogger.debug('Setting "theme" registrata');
 
     // Selezione tema predefinito
     game.settings.register(MODULE, 'themePreset', {
@@ -265,16 +266,16 @@ export function registerSettings() {
       default: 'default',
       onChange: async (preset) => {
         try {
-          logger.info('Theme Settings', `Preset cambiato: "${preset}"`);
+          moduleLogger.info(`Preset cambiato: "${preset}"`);
 
           if (preset !== 'custom' && THEMES[preset]) {
             await game.settings.set(MODULE, 'theme', THEMES[preset]);
             _statistics.presetChanges++;
 
-            logger.info('Theme Settings', `Preset "${preset}" applicato`);
+            moduleLogger.info(`Preset "${preset}" applicato`);
 
             // Emit event
-            logger.events.emit('theme:preset-changed', {
+            moduleLogger.events.emit('theme:preset-changed', {
               preset,
               changeCount: _statistics.presetChanges,
               timestamp: Date.now()
@@ -282,7 +283,7 @@ export function registerSettings() {
           }
 
         } catch (error) {
-          logger.error('Theme Settings', `Errore onChange preset "${preset}"`, error);
+          moduleLogger.error(`Errore onChange preset "${preset}"`, error);
           _statistics.errors.push({
             type: 'preset-onchange',
             message: error.message,
@@ -293,7 +294,7 @@ export function registerSettings() {
       }
     });
 
-    logger.debug('Theme Settings', 'Setting "themePreset" registrata');
+    moduleLogger.debug('Setting "themePreset" registrata');
 
     // Abilita tema
     game.settings.register(MODULE, 'themeEnabled', {
@@ -304,27 +305,27 @@ export function registerSettings() {
       type: Boolean,
       default: true,
       onChange: () => {
-        logger.info('Theme Settings', 'Setting "themeEnabled" cambiata, reload richiesto');
+        moduleLogger.info('Setting "themeEnabled" cambiata, reload richiesto');
         window.location.reload();
       }
     });
 
-    logger.debug('Theme Settings', 'Setting "themeEnabled" registrata');
+    moduleLogger.debug('Setting "themeEnabled" registrata');
 
     // Mark as registered
     _statistics.settingsRegistered = true;
 
-    logger.info('Theme Settings', '✅ Tutte le impostazioni tema registrate con successo');
+    moduleLogger.info('✅ Tutte le impostazioni tema registrate con successo');
 
     // Emit event
-    logger.events.emit('theme:settings-registered', {
+    moduleLogger.events.emit('theme:settings-registered', {
       moduleName: MODULE,
       presetsAvailable: Object.keys(THEMES).length,
       timestamp: Date.now()
     });
 
   } catch (error) {
-    logger.error('Theme Settings', 'Errore registrazione settings', error);
+    moduleLogger.error('Errore registrazione settings', error);
     _statistics.errors.push({
       type: 'settings-registration',
       message: error.message,
@@ -382,7 +383,7 @@ export function getStatistics() {
  * resetStatistics();
  */
 export function resetStatistics() {
-  logger.info('Theme Settings', 'Reset statistiche');
+  moduleLogger.info('Reset statistiche');
 
   const settingsRegistered = _statistics.settingsRegistered;
 
@@ -391,7 +392,7 @@ export function resetStatistics() {
   _statistics.settingsRegistered = settingsRegistered;
   _statistics.errors = [];
 
-  logger.info('Theme Settings', 'Statistiche resettate');
+  moduleLogger.info('Statistiche resettate');
 }
 
 /**
@@ -405,35 +406,35 @@ export function resetStatistics() {
 export function showReport() {
   const stats = getStatistics();
 
-  logger.group('📊 Brancalonia Theme Settings - Report');
+  moduleLogger.group('📊 Brancalonia Theme Settings - Report');
 
-  logger.info('Theme Settings', 'MODULE:', MODULE);
-  logger.info('Theme Settings', 'Presets Available:', Object.keys(THEMES).length);
+  moduleLogger.info('MODULE:', MODULE);
+  moduleLogger.info('Presets Available:', Object.keys(THEMES).length);
 
-  logger.group('📈 Statistics');
-  logger.table([
+  moduleLogger.group('📈 Statistics');
+  moduleLogger.table([
     { Metric: 'Settings Registered', Value: stats.settingsRegistered ? 'Yes' : 'No' },
     { Metric: 'Preset Changes', Value: stats.presetChanges },
     { Metric: 'Theme Changes', Value: stats.themeChanges },
     { Metric: 'Errors', Value: stats.errors.length }
   ]);
-  logger.groupEnd();
+  moduleLogger.groupEnd();
 
-  logger.group('🎨 Available Presets');
+  moduleLogger.group('🎨 Available Presets');
   Object.keys(THEMES).forEach(key => {
-    logger.info('Theme Settings', `- ${key}`);
+    moduleLogger.info(`- ${key}`);
   });
-  logger.groupEnd();
+  moduleLogger.groupEnd();
 
   if (stats.errors.length > 0) {
-    logger.group('🐛 Errors');
+    moduleLogger.group('🐛 Errors');
     stats.errors.forEach((err, i) => {
-      logger.error('Theme Settings', `Error ${i + 1}:`, err.type, '-', err.message);
+      moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
     });
-    logger.groupEnd();
+    moduleLogger.groupEnd();
   }
 
-  logger.groupEnd();
+  moduleLogger.groupEnd();
 
   return stats;
 }

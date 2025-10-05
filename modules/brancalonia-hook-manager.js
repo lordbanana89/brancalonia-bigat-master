@@ -6,7 +6,9 @@
  * @version 1.0.0
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+const MODULE_LABEL = 'Brancalonia Hook Manager';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class HookManager {
   /**
@@ -56,7 +58,7 @@ class HookManager {
     
     this._statistics.registered++;
     
-    logger.trace('HookManager', `Hook registrato: ${moduleName}.${hookName} (ID: ${id})`);
+    moduleLogger.trace('HookManager', `Hook registrato: ${moduleName}.${hookName} (ID: ${id})`);
     return id;
   }
 
@@ -72,7 +74,7 @@ class HookManager {
     const id = Hooks.once(hookName, callback);
     
     // Non tracciamo Hooks.once perché si auto-rimuovono
-    logger.trace('HookManager', `Hook once registrato: ${moduleName}.${hookName} (ID: ${id})`);
+    moduleLogger.trace('HookManager', `Hook once registrato: ${moduleName}.${hookName} (ID: ${id})`);
     return id;
   }
 
@@ -95,7 +97,7 @@ class HookManager {
         removed++;
         this._statistics.removed++;
       } catch (error) {
-        logger.warn('HookManager', `Errore rimozione hook ${hookName}:${id}`, error);
+        moduleLogger.warn('HookManager', `Errore rimozione hook ${hookName}:${id}`, error);
       }
     });
     
@@ -103,7 +105,7 @@ class HookManager {
     this._statistics.modules--;
     
     if (removed > 0) {
-      logger.info('HookManager', `Cleanup completato: ${removed} hooks rimossi per ${moduleName}`);
+      moduleLogger.info('HookManager', `Cleanup completato: ${removed} hooks rimossi per ${moduleName}`);
     }
     
     return removed;
@@ -118,13 +120,13 @@ class HookManager {
     const modules = Array.from(this._hooks.keys());
     let totalRemoved = 0;
     
-    logger.info('HookManager', `Cleanup globale: ${modules.length} moduli da pulire`);
+    moduleLogger.info('HookManager', `Cleanup globale: ${modules.length} moduli da pulire`);
     
     modules.forEach(moduleName => {
       totalRemoved += this.cleanup(moduleName);
     });
     
-    logger.info('HookManager', `Cleanup completo: ${totalRemoved} hooks rimossi totali`);
+    moduleLogger.info('HookManager', `Cleanup completo: ${totalRemoved} hooks rimossi totali`);
     return totalRemoved;
   }
 
@@ -147,7 +149,7 @@ class HookManager {
     hooks.splice(index, 1);
     this._statistics.removed++;
     
-    logger.debug('HookManager', `Hook rimosso: ${moduleName}.${hook.hookName}:${hookId}`);
+    moduleLogger.debug('HookManager', `Hook rimosso: ${moduleName}.${hook.hookName}:${hookId}`);
     
     if (hooks.length === 0) {
       this._hooks.delete(moduleName);
@@ -254,7 +256,7 @@ class HookManager {
 // Cleanup su beforeunload
 if (typeof window !== 'undefined') {
   window.addEventListener('beforeunload', () => {
-    logger.info('HookManager', 'Cleanup automatico su beforeunload');
+    moduleLogger.info('HookManager', 'Cleanup automatico su beforeunload');
     HookManager.cleanupAll();
   });
 }
@@ -265,7 +267,7 @@ Hooks.once('init', () => {
   if (typeof Hooks.on === 'function') {
     Hooks.on('disableModule', (moduleId) => {
       if (moduleId === 'brancalonia-bigat') {
-        logger.info('HookManager', 'Modulo disabilitato, cleanup completo');
+        moduleLogger.info('HookManager', 'Modulo disabilitato, cleanup completo');
         HookManager.cleanupAll();
       }
     });

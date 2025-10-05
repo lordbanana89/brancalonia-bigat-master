@@ -7,12 +7,15 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Menagramo Warlock Patron';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class BrancaloniaMenagramo {
   static ID = 'brancalonia-bigat';
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Menagramo Warlock Patron';
+  static MODULE_NAME = MODULE_LABEL;
   static MODULE_ID = 'menagramo-warlock-patron';
 
   // Statistics tracking (enterprise-grade)
@@ -44,8 +47,8 @@ class BrancaloniaMenagramo {
    */
   static initialize() {
     try {
-      logger.startPerformance('menagramo-patron-init');
-      logger.info(this.MODULE_NAME, '🔮 Inizializzazione Sistema Menagramo Warlock Patron');
+      moduleLogger.startPerformance('menagramo-patron-init');
+      moduleLogger.info('🔮 Inizializzazione Sistema Menagramo Warlock Patron');
 
       // Registra settings
       this.registerSettings();
@@ -69,11 +72,11 @@ class BrancaloniaMenagramo {
       this.setupMaledizioni();
 
       this._state.initialized = true;
-      const perfTime = logger.endPerformance('menagramo-patron-init');
-      logger.info(this.MODULE_NAME, `✅ Sistema Menagramo Warlock Patron inizializzato con successo (${perfTime?.toFixed(2)}ms)`);
+      const perfTime = moduleLogger.endPerformance('menagramo-patron-init');
+      moduleLogger.info(`✅ Sistema Menagramo Warlock Patron inizializzato con successo (${perfTime?.toFixed(2)}ms)`);
       
       // Event emitter
-      logger.events.emit('menagramo-patron:initialized', {
+      moduleLogger.events.emit('menagramo-patron:initialized', {
         version: this.VERSION,
         timestamp: Date.now()
       });
@@ -83,7 +86,7 @@ class BrancaloniaMenagramo {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, '❌ Errore inizializzazione Menagramo Warlock Patron', error);
+      moduleLogger.error('❌ Errore inizializzazione Menagramo Warlock Patron', error);
       ui.notifications.error('Errore durante l\'inizializzazione del sistema Menagramo');
     }
   }
@@ -265,7 +268,7 @@ class BrancaloniaMenagramo {
       }
     } catch (error) {
       this.statistics.errors.push({ type: 'createMacros', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore creazione macro', error);
+      moduleLogger.error('Errore creazione macro', error);
     }
   }
 
@@ -292,7 +295,7 @@ class BrancaloniaMenagramo {
       ]
     };
 
-    logger.debug?.(this.MODULE_NAME, '🔮 Sistema maledizioni Menagramo configurato');
+    moduleLogger.debug?.('🔮 Sistema maledizioni Menagramo configurato');
   }
 
   /**
@@ -315,7 +318,7 @@ class BrancaloniaMenagramo {
       }
     } catch (error) {
       this.statistics.errors.push({ type: 'handleWarlockCreation', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore gestione creazione Warlock', error);
+      moduleLogger.error('Errore gestione creazione Warlock', error);
     }
   }
 
@@ -364,11 +367,11 @@ class BrancaloniaMenagramo {
 
       this.statistics.patronsCreated++;
       this.statistics.spellsGranted++;
-      logger.info(this.MODULE_NAME, `✅ ${actor.name} ha ottenuto la capacità Iattura del Menagramo`);
+      moduleLogger.info(`✅ ${actor.name} ha ottenuto la capacità Iattura del Menagramo`);
       ui.notifications.info(`${actor.name} ha ottenuto la capacità Iattura del Menagramo`);
     } catch (error) {
       this.statistics.errors.push({ type: 'addMenagramoFeatures', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore aggiunta features Menagramo', error);
+      moduleLogger.error('Errore aggiunta features Menagramo', error);
     }
   }
 
@@ -405,7 +408,7 @@ class BrancaloniaMenagramo {
       }
     } catch (error) {
       this.statistics.errors.push({ type: 'handleLevelUpdate', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore gestione aggiornamento livello', error);
+      moduleLogger.error('Errore gestione aggiornamento livello', error);
     }
   }
 
@@ -572,7 +575,7 @@ class BrancaloniaMenagramo {
       return true;
     } catch (error) {
       this.statistics.errors.push({ type: 'handleItemUse', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore gestione uso item', error);
+      moduleLogger.error('Errore gestione uso item', error);
       return true;
     }
   }
@@ -654,7 +657,7 @@ class BrancaloniaMenagramo {
       this.statistics.iatturaUsed++;
     } catch (error) {
       this.statistics.errors.push({ type: 'iattura', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore Iattura', error);
+      moduleLogger.error('Errore Iattura', error);
       ui.notifications.error('Errore durante il lancio della Iattura');
     }
   }
@@ -710,7 +713,7 @@ class BrancaloniaMenagramo {
       this.statistics.cursesApplied++;
     } catch (error) {
       this.statistics.errors.push({ type: 'toccoMalasorte', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore Tocco della Malasorte', error);
+      moduleLogger.error('Errore Tocco della Malasorte', error);
       ui.notifications.error('Errore durante il Tocco della Malasorte');
     }
   }
@@ -765,7 +768,7 @@ class BrancaloniaMenagramo {
       this.statistics.cursesByType[curseType] = (this.statistics.cursesByType[curseType] || 0) + 1;
     } catch (error) {
       this.statistics.errors.push({ type: 'maledizioneSuperiore', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore Maledizione Superiore', error);
+      moduleLogger.error('Errore Maledizione Superiore', error);
       ui.notifications.error('Errore durante la Maledizione Superiore');
     }
   }
@@ -878,7 +881,7 @@ class BrancaloniaMenagramo {
       this.statistics.cursesByType[curseType] = (this.statistics.cursesByType[curseType] || 0) + 1;
     } catch (error) {
       this.statistics.errors.push({ type: 'applyRandomCurse', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore maledizione casuale', error);
+      moduleLogger.error('Errore maledizione casuale', error);
       ui.notifications.error('Errore durante l\'applicazione della maledizione');
     }
   }
@@ -910,7 +913,7 @@ class BrancaloniaMenagramo {
       });
     } catch (error) {
       this.statistics.errors.push({ type: 'removeCurse', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore rimozione maledizione', error);
+      moduleLogger.error('Errore rimozione maledizione', error);
       ui.notifications.error('Errore durante la rimozione della maledizione');
     }
   }
@@ -1037,7 +1040,7 @@ class BrancaloniaMenagramo {
       }
     } catch (error) {
       this.statistics.errors.push({ type: 'enhanceCharacterSheet', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore enhancing character sheet', error);
+      moduleLogger.error('Errore enhancing character sheet', error);
     }
   }
 
@@ -1055,7 +1058,7 @@ class BrancaloniaMenagramo {
       }
     } catch (error) {
       this.statistics.errors.push({ type: 'enhanceItemSheet', message: error.message, timestamp: Date.now() });
-      logger.error(this.MODULE_NAME, 'Errore enhancing item sheet', error);
+      moduleLogger.error('Errore enhancing item sheet', error);
     }
   }
 
@@ -1119,7 +1122,7 @@ class BrancaloniaMenagramo {
       dialogsShown: 0,
       errors: []
     };
-    logger.info(this.MODULE_NAME, '📊 Statistiche resettate');
+    moduleLogger.info('📊 Statistiche resettate');
   }
 
   /**

@@ -6,12 +6,15 @@
  * @version 1.0.0
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 import { HookManager } from './brancalonia-hook-manager.js';
+
+const MODULE_LABEL = 'SheetCoordinator';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class SheetCoordinator {
   static VERSION = '1.0.0';
-  static MODULE_NAME = 'SheetCoordinator';
+  static MODULE_NAME = MODULE_LABEL;
   
   /**
    * Registry dei moduli che vogliono modificare le sheet
@@ -39,7 +42,7 @@ class SheetCoordinator {
    */
   static initialize() {
     if (this._initialized) {
-      logger.warn(this.MODULE_NAME, 'Già inizializzato');
+      moduleLogger.warn('Già inizializzato');
       return;
     }
 
@@ -53,7 +56,7 @@ class SheetCoordinator {
     );
 
     this._initialized = true;
-    logger.info(this.MODULE_NAME, 'Coordinator inizializzato - UNICO hook registrato');
+    moduleLogger.info('Coordinator inizializzato - UNICO hook registrato');
   }
 
   /**
@@ -76,7 +79,7 @@ class SheetCoordinator {
 
     this.registry.set(moduleName, config);
     
-    logger.debug(this.MODULE_NAME, `Modulo registrato: ${moduleName}`, {
+    moduleLogger.debug(`Modulo registrato: ${moduleName}`, {
       priority: config.priority,
       types: config.types
     });
@@ -88,7 +91,7 @@ class SheetCoordinator {
   static unregisterModule(moduleName) {
     const removed = this.registry.delete(moduleName);
     if (removed) {
-      logger.debug(this.MODULE_NAME, `Modulo rimosso: ${moduleName}`);
+      moduleLogger.debug(`Modulo rimosso: ${moduleName}`);
     }
     return removed;
   }
@@ -119,7 +122,7 @@ class SheetCoordinator {
         })
         .sort((a, b) => a[1].priority - b[1].priority); // Ordina per priorità
 
-      logger.debug(this.MODULE_NAME, `Rendering ${actorType} sheet: ${applicableModules.length} moduli applicabili`);
+      moduleLogger.debug(`Rendering ${actorType} sheet: ${applicableModules.length} moduli applicabili`);
 
       // Esegui ogni modulo in ordine di priorità
       for (const [moduleName, config] of applicableModules) {
@@ -127,7 +130,7 @@ class SheetCoordinator {
           await config.handler(app, html, data);
           this.statistics.modulesExecuted++;
           
-          logger.trace(this.MODULE_NAME, `Modulo eseguito: ${moduleName}`);
+          moduleLogger.trace(`Modulo eseguito: ${moduleName}`);
         } catch (error) {
           this.statistics.errors.push({
             module: moduleName,
@@ -135,7 +138,7 @@ class SheetCoordinator {
             timestamp: Date.now()
           });
           
-          logger.error(this.MODULE_NAME, `Errore modulo ${moduleName}`, error);
+          moduleLogger.error(`Errore modulo ${moduleName}`, error);
         }
       }
 
@@ -144,10 +147,10 @@ class SheetCoordinator {
         (this.statistics.avgRenderTime * (this.statistics.renderCalls - 1)) + renderTime
       ) / this.statistics.renderCalls;
 
-      logger.debug(this.MODULE_NAME, `Render completato in ${renderTime.toFixed(2)}ms (${applicableModules.length} moduli)`);
+      moduleLogger.debug(`Render completato in ${renderTime.toFixed(2)}ms (${applicableModules.length} moduli)`);
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore critico in coordinator', error);
+      moduleLogger.error('Errore critico in coordinator', error);
     }
   }
 
@@ -170,7 +173,7 @@ class SheetCoordinator {
     this.registry.clear();
     this._initialized = false;
     
-    logger.info(this.MODULE_NAME, 'Coordinator shutdown completato');
+    moduleLogger.info('Coordinator shutdown completato');
   }
 }
 

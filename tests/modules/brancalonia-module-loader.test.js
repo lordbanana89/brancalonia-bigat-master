@@ -7,8 +7,8 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { BrancaloniaModuleLoader } from '../../modules/brancalonia-module-loader.js';
 
 // Mock del logger
-vi.mock('../../modules/brancalonia-logger.js', () => ({
-  default: {
+vi.mock('../../modules/brancalonia-logger.js', () => {
+  const mockLogger = {
     debug: vi.fn(),
     info: vi.fn(),
     warn: vi.fn(),
@@ -24,8 +24,14 @@ vi.mock('../../modules/brancalonia-logger.js', () => ({
       on: vi.fn(),
       off: vi.fn()
     }
-  }
-}));
+  };
+
+  return {
+    default: mockLogger,
+    logger: mockLogger,
+    createModuleLogger: vi.fn(() => mockLogger)
+  };
+});
 
 describe('BrancaloniaModuleLoader', () => {
   let moduleLoader;

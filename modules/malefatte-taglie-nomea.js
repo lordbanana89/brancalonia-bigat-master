@@ -8,13 +8,14 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { getLogger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
-const logger = getLogger();
+const MODULE_LABEL = 'Malefatte-Taglie-Nomea System';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class MalefatteTaglieNomeaSystem {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Malefatte-Taglie-Nomea System';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'malefatte-taglie-nomea';
 
   constructor() {
@@ -121,8 +122,8 @@ class MalefatteTaglieNomeaSystem {
    */
   static initialize() {
     try {
-      logger.startPerformance('malefatte-init');
-      logger.info(this.MODULE_NAME, '💰 Inizializzazione Sistema Malefatte e Taglie');
+      moduleLogger.startPerformance('malefatte-init');
+      moduleLogger.info('💰 Inizializzazione Sistema Malefatte e Taglie');
 
       // Registrazione settings
       this.registerSettings();
@@ -144,17 +145,17 @@ class MalefatteTaglieNomeaSystem {
 
       instance._state.initialized = true;
 
-      const initTime = logger.endPerformance('malefatte-init');
-      logger.info(this.MODULE_NAME, `✅ Sistema Malefatte e Taglie inizializzato in ${initTime?.toFixed(2)}ms`);
+      const initTime = moduleLogger.endPerformance('malefatte-init');
+      moduleLogger.info(`✅ Sistema Malefatte e Taglie inizializzato in ${initTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('malefatte:initialized', {
+      moduleLogger.events.emit('malefatte:initialized', {
         version: this.VERSION,
         initTime,
         timestamp: Date.now()
       });
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -287,7 +288,7 @@ if (malefatteSystem) {
     const existing = game?.macros?.find(m => m.name === macroData.name);
     if (!existing) {
       Macro.create(macroData);
-      logger.info(this.MODULE_NAME, '✅ Macro Malefatte creata');
+      moduleLogger.info('✅ Macro Malefatte creata');
     }
   }
 
@@ -1582,7 +1583,7 @@ if (malefatteSystem) {
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, '📊 Statistiche reset');
+    moduleLogger.info('📊 Statistiche reset');
   }
 
   /**
@@ -1670,7 +1671,7 @@ window.MalefatteTaglieNomeaSystem = MalefatteTaglieNomeaSystem;
 
 // Auto-inizializzazione
 Hooks.once('init', () => {
-  logger.info('Brancalonia', '🎮 Inizializzazione Malefatte System');
+  moduleLogger.info('Brancalonia', '🎮 Inizializzazione Malefatte System');
   MalefatteTaglieNomeaSystem.initialize();
 });
 

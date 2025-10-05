@@ -9,8 +9,10 @@
  * @requires brancalonia-logger.js
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Compagnia Manager';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} CompagniaRole
  * @property {string} label - Nome del ruolo
@@ -56,7 +58,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class CompagniaManager {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Compagnia Manager';
+  static MODULE_NAME = MODULE_LABEL;
   
   /**
    * @type {CompagniaStatistics}
@@ -119,8 +121,8 @@ class CompagniaManager {
    * @fires compagnia:initialized
    */
   static initialize() {
-    logger.startPerformance('compagnia-init');
-    logger.info(this.MODULE_NAME, `Inizializzazione Compagnia Manager v${this.VERSION}...`);
+    moduleLogger.startPerformance('compagnia-init');
+    moduleLogger.info(`Inizializzazione Compagnia Manager v${this.VERSION}...`);
 
     try {
       CompagniaManager._registerSettings();
@@ -138,20 +140,20 @@ class CompagniaManager {
       CompagniaManager._registerChatCommands();
       CompagniaManager._createMacro();
 
-      const initTime = logger.endPerformance('compagnia-init');
+      const initTime = moduleLogger.endPerformance('compagnia-init');
       this.statistics.initTime = initTime;
 
-      logger.info(this.MODULE_NAME, `✅ Compagnia Manager inizializzato in ${initTime?.toFixed(2)}ms`);
+      moduleLogger.info(`✅ Compagnia Manager inizializzato in ${initTime?.toFixed(2)}ms`);
       
       // Emit event
-      logger.events.emit('compagnia:initialized', {
+      moduleLogger.events.emit('compagnia:initialized', {
         version: this.VERSION,
         initTime,
         timestamp: Date.now()
       });
       
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione', error);
+      moduleLogger.error('Errore inizializzazione', error);
       this.statistics.errors.push({
         type: 'initialization',
         message: error.message,
@@ -168,14 +170,14 @@ class CompagniaManager {
    * @returns {void}
    */
   static _registerSettings() {
-    logger.debug(this.MODULE_NAME, 'Registrazione settings...');
+    moduleLogger.debug('Registrazione settings...');
     
     const register = (key, data) => {
       try {
         game.settings.register('brancalonia-bigat', key, data);
-        logger.debug(this.MODULE_NAME, `Setting ${key} registrato`);
+        moduleLogger.debug(`Setting ${key} registrato`);
       } catch (error) {
-        logger.error(this.MODULE_NAME, `Registrazione setting ${key} fallita`, error);
+        moduleLogger.error(`Registrazione setting ${key} fallita`, error);
         this.statistics.errors.push({
           type: 'setting-registration',
           message: `Failed to register ${key}: ${error.message}`,
@@ -202,7 +204,7 @@ class CompagniaManager {
       default: true
     });
     
-    logger.info(this.MODULE_NAME, '✅ 2 settings registrati');
+    moduleLogger.info('✅ 2 settings registrati');
   }
 
   /**
@@ -212,7 +214,7 @@ class CompagniaManager {
    * @returns {void}
    */
   static _registerHooks() {
-    logger.debug(this.MODULE_NAME, 'Registrazione hooks...');
+    moduleLogger.debug('Registrazione hooks...');
     
     try {
       // Fixed: Migrated to SheetCoordinator to prevent duplication
@@ -227,7 +229,7 @@ class CompagniaManager {
                 manager._addCompagniaTab(app, html);
               }
             } catch (error) {
-              logger.error(this.MODULE_NAME, 'Errore rendering compagnia', error);
+              moduleLogger.error('Errore rendering compagnia', error);
             }
           },
           {
@@ -245,7 +247,7 @@ class CompagniaManager {
               manager._addCompagniaTab(app, html);
             }
           } catch (error) {
-            logger.error(this.MODULE_NAME, 'Errore renderActorSheet hook', error);
+            moduleLogger.error('Errore renderActorSheet hook', error);
           }
         });
       }
@@ -258,7 +260,7 @@ class CompagniaManager {
             manager._checkLootSharing(item);
           }
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore dnd5e.createItem hook', error);
+          moduleLogger.error('Errore dnd5e.createItem hook', error);
         }
       });
 
@@ -275,7 +277,7 @@ class CompagniaManager {
             }
           }
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore dnd5e.updateActor hook', error);
+          moduleLogger.error('Errore dnd5e.updateActor hook', error);
         }
       });
 
@@ -289,18 +291,18 @@ class CompagniaManager {
               this.statistics.socketMessages++;
             }
           } catch (error) {
-            logger.error(this.MODULE_NAME, 'Errore socket handler', error);
+            moduleLogger.error('Errore socket handler', error);
           }
         });
-        logger.debug(this.MODULE_NAME, 'Socket listener registrato');
+        moduleLogger.debug('Socket listener registrato');
       } else {
-        logger.warn(this.MODULE_NAME, 'game.socket non disponibile: aggiornamenti compagnia disabilitati');
+        moduleLogger.warn('game.socket non disponibile: aggiornamenti compagnia disabilitati');
       }
 
-      logger.info(this.MODULE_NAME, '✅ 4 hooks registrati (renderActorSheet, dnd5e.createItem, dnd5e.updateActor, socket)');
+      moduleLogger.info('✅ 4 hooks registrati (renderActorSheet, dnd5e.createItem, dnd5e.updateActor, socket)');
       
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione hooks', error);
+      moduleLogger.error('Errore registrazione hooks', error);
       this.statistics.errors.push({
         type: 'hook-registration',
         message: error.message,
@@ -317,7 +319,7 @@ class CompagniaManager {
    * @returns {void}
    */
   static _registerChatCommands() {
-    logger.debug(this.MODULE_NAME, 'Registrazione comandi chat...');
+    moduleLogger.debug('Registrazione comandi chat...');
     
     try {
       Hooks.on('chatMessage', (html, content) => {
@@ -325,11 +327,11 @@ class CompagniaManager {
         const [command, ...args] = content.trim().split(/\s+/);
         const parameters = args.join(' ');
         
-        logger.debug(this.MODULE_NAME, `Comando chat ricevuto: ${command}`);
+        moduleLogger.debug(`Comando chat ricevuto: ${command}`);
         this.statistics.chatCommands++;
         
         CompagniaManager._handleChatCommand(command, parameters).catch(error => {
-          logger.error(this.MODULE_NAME, `Errore comando ${command}`, error);
+          moduleLogger.error(`Errore comando ${command}`, error);
           this.statistics.errors.push({
             type: 'chat-command',
             message: `${command}: ${error.message}`,
@@ -339,9 +341,9 @@ class CompagniaManager {
         return false;
       });
 
-      logger.info(this.MODULE_NAME, '✅ Comandi chat registrati (5 comandi disponibili)');
+      moduleLogger.info('✅ Comandi chat registrati (5 comandi disponibili)');
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione comandi chat', error);
+      moduleLogger.error('Errore registrazione comandi chat', error);
       throw error;
     }
   }
@@ -356,7 +358,7 @@ class CompagniaManager {
    * @returns {Promise<void>}
    */
   static async _handleChatCommand(command, parameters) {
-    logger.startPerformance(`cmd-${command}`);
+    moduleLogger.startPerformance(`cmd-${command}`);
     
     try {
       switch (command) {
@@ -376,16 +378,16 @@ class CompagniaManager {
           CompagniaManager._commandShowHelp();
           break;
         default:
-          logger.warn(this.MODULE_NAME, `Comando non riconosciuto: ${command}`);
+          moduleLogger.warn(`Comando non riconosciuto: ${command}`);
           ui.notifications.warn("Comando compagnia non riconosciuto. Usa /compagnia-help per l'aiuto.");
       }
       
-      const execTime = logger.endPerformance(`cmd-${command}`);
-      logger.info(this.MODULE_NAME, `✅ Comando ${command} eseguito in ${execTime?.toFixed(2)}ms`);
+      const execTime = moduleLogger.endPerformance(`cmd-${command}`);
+      moduleLogger.info(`✅ Comando ${command} eseguito in ${execTime?.toFixed(2)}ms`);
       
     } catch (error) {
-      logger.endPerformance(`cmd-${command}`);
-      logger.error(this.MODULE_NAME, `Comando ${command} fallito`, error);
+      moduleLogger.endPerformance(`cmd-${command}`);
+      moduleLogger.error(`Comando ${command} fallito`, error);
       ui.notifications.error('Errore nell\'esecuzione del comando compagnia.');
       throw error;
     }
@@ -401,18 +403,18 @@ class CompagniaManager {
    */
   static async _commandCreateCompagnia(parameters) {
     try {
-      logger.debug(this.MODULE_NAME, `/compagnia-crea: ${parameters || 'default name'}`);
+      moduleLogger.debug(`/compagnia-crea: ${parameters || 'default name'}`);
       
       const tokens = canvas.tokens.controlled;
       if (tokens.length < 2) {
-        logger.warn(this.MODULE_NAME, `/compagnia-crea: Solo ${tokens.length} token selezionati`);
+        moduleLogger.warn(`/compagnia-crea: Solo ${tokens.length} token selezionati`);
         ui.notifications.error('Seleziona almeno 2 token per creare una compagnia!');
         return;
       }
 
       const actors = tokens.map(t => t.actor).filter(a => a.type === 'character');
       if (actors.length < 2) {
-        logger.warn(this.MODULE_NAME, `/compagnia-crea: Solo ${actors.length} personaggi validi`);
+        moduleLogger.warn(`/compagnia-crea: Solo ${actors.length} personaggi validi`);
         ui.notifications.error('Seleziona almeno 2 personaggi per creare una compagnia!');
         return;
       }
@@ -420,7 +422,7 @@ class CompagniaManager {
       const name = parameters || 'Compagnia Senza Nome';
       const manager = game.brancalonia?.compagnia;
       if (!manager) {
-        logger.error(this.MODULE_NAME, 'CompagniaManager instance non disponibile');
+        moduleLogger.error('CompagniaManager instance non disponibile');
         ui.notifications.error('Sistema Compagnia non disponibile!');
         return;
       }
@@ -432,10 +434,10 @@ class CompagniaManager {
           content: `Compagnia "${compagnia.name}" creata con successo!`,
           speaker: { alias: 'Sistema Compagnia' }
         });
-        logger.info(this.MODULE_NAME, `✅ Compagnia creata: ${compagnia.name} (${actors.length} membri)`);
+        moduleLogger.info(`✅ Compagnia creata: ${compagnia.name} (${actors.length} membri)`);
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /compagnia-crea', error);
+      moduleLogger.error('Errore /compagnia-crea', error);
       throw error;
     }
   }
@@ -521,7 +523,7 @@ class CompagniaManager {
    */
   static _commandShowHelp() {
     try {
-      logger.debug(this.MODULE_NAME, '/compagnia-help: Mostra help');
+      moduleLogger.debug('/compagnia-help: Mostra help');
       
       const helpText = `
         <div class="brancalonia-help">
@@ -547,9 +549,9 @@ class CompagniaManager {
         whisper: [game.user.id]
       });
       
-      logger.info(this.MODULE_NAME, '✅ Help mostrato');
+      moduleLogger.info('✅ Help mostrato');
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /compagnia-help', error);
+      moduleLogger.error('Errore /compagnia-help', error);
     }
   }
 
@@ -561,7 +563,7 @@ class CompagniaManager {
    */
   static _createMacro() {
     try {
-      logger.debug(this.MODULE_NAME, 'Creazione macro gestione compagnia...');
+      moduleLogger.debug('Creazione macro gestione compagnia...');
       
       // Usiamo una normale stringa e escape manuale per evitare conflitti di sintassi
       const macroCommand = [
@@ -636,14 +638,14 @@ class CompagniaManager {
       const existingMacro = game?.macros?.find(m => m.name === macroData.name && m.flags['brancalonia-bigat']?.isSystemMacro);
 
       if (existingMacro) {
-        logger.debug(this.MODULE_NAME, 'Macro già esistente, skip');
+        moduleLogger.debug('Macro già esistente, skip');
         return;
       }
 
       game.macros.documentClass.create(macroData).then(() => {
-        logger.info(this.MODULE_NAME, '✅ Macro Gestione Compagnia creata');
+        moduleLogger.info('✅ Macro Gestione Compagnia creata');
       }).catch(error => {
-        logger.error(this.MODULE_NAME, 'Creazione macro compagnia fallita', error);
+        moduleLogger.error('Creazione macro compagnia fallita', error);
         this.statistics.errors.push({
           type: 'macro-creation',
           message: error.message,
@@ -651,7 +653,7 @@ class CompagniaManager {
         });
       });
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore creazione macro', error);
+      moduleLogger.error('Errore creazione macro', error);
     }
   }
 
@@ -738,7 +740,7 @@ class CompagniaManager {
 
       return compagnia;
     } catch (error) {
-      logger.error('CompagniaManager', 'Creazione compagnia fallita', error);
+      moduleLogger.error('CompagniaManager', 'Creazione compagnia fallita', error);
       ui.notifications.error('Errore durante la creazione della compagnia.');
       return null;
     }
@@ -1322,11 +1324,11 @@ class CompagniaManager {
    */
   _handleCompagniaUpdate(data) {
     try {
-      logger.debug(CompagniaManager.MODULE_NAME, 'Aggiornamento compagnia ricevuto via socket');
+      moduleLogger.debug('Aggiornamento compagnia ricevuto via socket');
       // Aggiorna UI per tutti i client
       ui.actors.render();
     } catch (error) {
-      logger.error(CompagniaManager.MODULE_NAME, 'Errore handleCompagniaUpdate', error);
+      moduleLogger.error('Errore handleCompagniaUpdate', error);
     }
   }
   
@@ -1398,7 +1400,7 @@ class CompagniaManager {
         reputation: c.flags['brancalonia-bigat']?.reputation || 0
       }));
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore getCompagniaList', error);
+      moduleLogger.error('Errore getCompagniaList', error);
       return [];
     }
   }
@@ -1416,7 +1418,7 @@ class CompagniaManager {
     try {
       const compagnia = game.actors.get(compagniaId);
       if (!compagnia || !compagnia.flags['brancalonia-bigat']?.isCompagnia) {
-        logger.warn(this.MODULE_NAME, `Compagnia ${compagniaId} non trovata`);
+        moduleLogger.warn(`Compagnia ${compagniaId} non trovata`);
         return null;
       }
       
@@ -1438,7 +1440,7 @@ class CompagniaManager {
         charter: flags.charter
       };
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore getCompagniaInfo ${compagniaId}`, error);
+      moduleLogger.error(`Errore getCompagniaInfo ${compagniaId}`, error);
       return null;
     }
   }
@@ -1456,7 +1458,7 @@ class CompagniaManager {
   static getRoleList() {
     const instance = this._state.instance;
     if (!instance) {
-      logger.warn(this.MODULE_NAME, 'CompagniaManager instance non disponibile');
+      moduleLogger.warn('CompagniaManager instance non disponibile');
       return {};
     }
     return { ...instance.compagniaRoles };
@@ -1475,17 +1477,17 @@ class CompagniaManager {
    */
   static async createCompagniaViaAPI(actors, name = 'Compagnia Senza Nome') {
     try {
-      logger.info(this.MODULE_NAME, `API: Creazione compagnia "${name}" con ${actors.length} membri`);
+      moduleLogger.info(`API: Creazione compagnia "${name}" con ${actors.length} membri`);
       
       const instance = this._state.instance;
       if (!instance) {
-        logger.error(this.MODULE_NAME, 'CompagniaManager instance non disponibile');
+        moduleLogger.error('CompagniaManager instance non disponibile');
         return null;
       }
       
       return await instance.createCompagnia(actors, name);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore createCompagniaViaAPI', error);
+      moduleLogger.error('Errore createCompagniaViaAPI', error);
       return null;
     }
   }
@@ -1498,7 +1500,7 @@ class CompagniaManager {
    * CompagniaManager.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche Compagnia Manager');
+    moduleLogger.info('Reset statistiche Compagnia Manager');
 
     const initTime = this.statistics.initTime;
 
@@ -1528,7 +1530,7 @@ class CompagniaManager {
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -1543,13 +1545,13 @@ class CompagniaManager {
     const status = this.getStatus();
     const compagnie = this.getCompagniaList();
 
-    logger.group('🎭 Brancalonia Compagnia Manager - Report');
+    moduleLogger.group('🎭 Brancalonia Compagnia Manager - Report');
 
-    logger.info(this.MODULE_NAME, 'VERSION:', this.VERSION);
-    logger.info(this.MODULE_NAME, 'Initialized:', status.initialized);
+    moduleLogger.info('VERSION:', this.VERSION);
+    moduleLogger.info('Initialized:', status.initialized);
 
-    logger.group('📊 Statistics');
-    logger.table([
+    moduleLogger.group('📊 Statistics');
+    moduleLogger.table([
       { Metric: 'Init Time', Value: `${stats.initTime?.toFixed(2)}ms` },
       { Metric: 'Compagnie Create', Value: stats.compagniesCreated },
       { Metric: 'Membri Aggiunti', Value: stats.membersAdded },
@@ -1564,37 +1566,37 @@ class CompagniaManager {
       { Metric: 'Tesoro Totale', Value: `${stats.totalTreasury} ducati` },
       { Metric: 'Errors', Value: stats.errors.length }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('👥 Ruoli Assegnati');
-    logger.table(Object.entries(stats.rolesByType).map(([role, count]) => ({
+    moduleLogger.group('👥 Ruoli Assegnati');
+    moduleLogger.table(Object.entries(stats.rolesByType).map(([role, count]) => ({
       Ruolo: role,
       Count: count
     })));
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('🏴 Compagnie Attive');
+    moduleLogger.group('🏴 Compagnie Attive');
     if (compagnie.length === 0) {
-      logger.info(this.MODULE_NAME, 'Nessuna compagnia attiva');
+      moduleLogger.info('Nessuna compagnia attiva');
     } else {
-      logger.table(compagnie.map(c => ({
+      moduleLogger.table(compagnie.map(c => ({
         Nome: c.name,
         Membri: c.members.length,
         Tesoro: `${c.treasury} ducati`,
         Infamia: c.collectiveInfamia
       })));
     }
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors (Last 5)');
+      moduleLogger.group('🐛 Errors (Last 5)');
       stats.errors.slice(-5).forEach((err, i) => {
-        logger.error(this.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return { status, stats, compagnie };
   }
@@ -1613,7 +1615,7 @@ Hooks.once('ready', () => {
       Hooks.once('socketlib.ready', () => CompagniaManager.initialize());
     }
   } catch (error) {
-    logger.error(CompagniaManager.MODULE_NAME, 'Errore durante l\'inizializzazione hook ready', error);
+    moduleLogger.error('Errore durante l\'inizializzazione hook ready', error);
     CompagniaManager.statistics.errors.push({
       type: 'ready-hook',
       message: error.message,

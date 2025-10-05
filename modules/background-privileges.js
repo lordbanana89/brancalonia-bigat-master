@@ -3,11 +3,12 @@
  * Implementa i privilegi speciali dei background di Brancalonia
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
 const MODULE_ID = 'brancalonia-bigat';
 const FLAG_SCOPE = 'brancalonia-bigat';
 const MODULE_NAME = 'BackgroundPrivileges';
+const moduleLogger = createModuleLogger(MODULE_NAME);
 
 class BackgroundPrivileges {
   static SETTINGS = {
@@ -19,7 +20,7 @@ class BackgroundPrivileges {
 
   static async initialize() {
     try {
-      logger.info(MODULE_NAME, 'Inizializzazione privilegi background');
+      moduleLogger.info('Inizializzazione privilegi background');
       this._registerSettings();
       this._registerHooks();
       this._registerChatCommands();
@@ -29,9 +30,9 @@ class BackgroundPrivileges {
       game.brancalonia.backgroundPrivileges = this;
 
       Hooks.callAll('brancalonia.backgroundPrivilegesReady', this);
-      logger.info(MODULE_NAME, 'Sistema Privilegi Background pronto');
+      moduleLogger.info('Sistema Privilegi Background pronto');
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore durante l\'inizializzazione', error);
+      moduleLogger.error('Errore durante l\'inizializzazione', error);
       ui?.notifications?.error('Errore nel caricamento del sistema privilegi background!');
     }
   }
@@ -48,9 +49,9 @@ class BackgroundPrivileges {
         default: true,
         onChange: value => {
           if (value) {
-            logger.info(MODULE_NAME, 'Privilegi background attivati');
+            moduleLogger.info('Privilegi background attivati');
           } else {
-            logger.warn(MODULE_NAME, 'Privilegi background disattivati');
+            moduleLogger.warn('Privilegi background disattivati');
           }
         }
       });
@@ -85,7 +86,7 @@ class BackgroundPrivileges {
         default: false
       });
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore nella registrazione impostazioni', error);
+      moduleLogger.error('Errore nella registrazione impostazioni', error);
     }
   }
 
@@ -192,7 +193,7 @@ class BackgroundPrivileges {
         return encounterData;
       });
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore nella registrazione degli hook', error);
+      moduleLogger.error('Errore nella registrazione degli hook', error);
     }
   }
 
@@ -323,9 +324,9 @@ class BackgroundPrivileges {
         return true;
       });
 
-      logger.info(MODULE_NAME, 'Comandi chat registrati');
+      moduleLogger.info('Comandi chat registrati');
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore nella registrazione comandi chat', error);
+      moduleLogger.error('Errore nella registrazione comandi chat', error);
     }
   }
 
@@ -438,12 +439,12 @@ class BackgroundPrivileges {
         if (!existingMacro) {
           await game.macros.documentClass.create(macroData);
           if (game.settings.get('brancalonia-bigat', this.SETTINGS.debug)) {
-            logger.info(MODULE_NAME, `Macro '${macroData.name}' creata automaticamente`);
+            moduleLogger.info(`Macro '${macroData.name}' creata automaticamente`);
           }
         }
       }));
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore creazione macro', error);
+      moduleLogger.error('Errore creazione macro', error);
     }
   }
 
@@ -484,7 +485,7 @@ class BackgroundPrivileges {
         }
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore inizializzazione privilegi attore', error);
+      moduleLogger.error('Errore inizializzazione privilegi attore', error);
     }
   }
 
@@ -493,7 +494,7 @@ class BackgroundPrivileges {
       // Verifica se il background è cambiato e riapplica i privilegi
       this._initializeBackgroundPrivileges(actor);
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore aggiornamento privilegi', error);
+      moduleLogger.error('Errore aggiornamento privilegi', error);
     }
   }
 
@@ -521,7 +522,7 @@ class BackgroundPrivileges {
           this._showPrivilegiHelp();
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore comando privilegi', error);
+      moduleLogger.error('Errore comando privilegi', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
@@ -542,7 +543,7 @@ class BackgroundPrivileges {
 
       this.showBackgroundPrivileges(actor);
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore comando background', error);
+      moduleLogger.error('Errore comando background', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
@@ -644,7 +645,7 @@ class BackgroundPrivileges {
         speaker: ChatMessage.getSpeaker({ actor })
       });
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore nel mostrare privilegi background', error);
+      moduleLogger.error('Errore nel mostrare privilegi background', error);
       ui.notifications.error('Errore nel mostrare i privilegi!');
     }
   }
@@ -691,7 +692,7 @@ class BackgroundPrivileges {
         }
       });
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore migliorando la scheda', error);
+      moduleLogger.error('Errore migliorando la scheda', error);
     }
   }
 
@@ -716,7 +717,7 @@ class BackgroundPrivileges {
         });
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore applicando bonus Ambulante', error);
+      moduleLogger.error('Errore applicando bonus Ambulante', error);
     }
   }
 
@@ -739,7 +740,7 @@ class BackgroundPrivileges {
         });
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore applicando bonus Attaccabrighe', error);
+      moduleLogger.error('Errore applicando bonus Attaccabrighe', error);
     }
   }
 
@@ -790,7 +791,7 @@ class BackgroundPrivileges {
 
       return true; // Procedi con l'aggiunta della Malefatta
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore privilegio Azzeccagarbugli', error);
+      moduleLogger.error('Errore privilegio Azzeccagarbugli', error);
       return true;
     }
   }
@@ -820,7 +821,7 @@ class BackgroundPrivileges {
 
       return encounterData; // Altri tipi di incontri procedono normalmente
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore privilegio Brado', error);
+      moduleLogger.error('Errore privilegio Brado', error);
       return encounterData;
     }
   }
@@ -849,7 +850,7 @@ class BackgroundPrivileges {
 
       return effectiveTaglia;
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore privilegio Duro', error);
+      moduleLogger.error('Errore privilegio Duro', error);
       return this.getFlag(actor, 'taglia') || 0;
     }
   }
@@ -885,7 +886,7 @@ class BackgroundPrivileges {
           rollData.flavor = `${rollData.flavor || ''} [Studioso di Reliquie +1]`;
 
           if (this.getSetting('debug')) {
-            logger.info(MODULE_NAME, `Applicato bonus Studioso di Reliquie a ${rollData.skill}`);
+            moduleLogger.info(`Applicato bonus Studioso di Reliquie a ${rollData.skill}`);
           }
         }
       }
@@ -906,7 +907,7 @@ class BackgroundPrivileges {
         }
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore applicando bonus background', error);
+      moduleLogger.error('Errore applicando bonus background', error);
     }
   }
 
@@ -933,7 +934,7 @@ Hooks.once('init', () => {
   try {
     BackgroundPrivileges.initialize();
   } catch (error) {
-    logger.error(MODULE_NAME, 'Errore critico inizializzazione', error);
+    moduleLogger.error('Errore critico inizializzazione', error);
     ui.notifications.error('Errore nel caricamento del sistema privilegi background!');
   }
 });

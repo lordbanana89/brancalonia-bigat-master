@@ -32,8 +32,10 @@
  * const config = ThemeSettingsManager.getConfiguration();
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Theme Settings';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} ThemeConfiguration
  * @property {boolean} carolingianActive - Se Carolingian UI è attivo
@@ -58,7 +60,7 @@ import logger from './brancalonia-logger.js';
  */
 class ThemeSettingsManager {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Theme Settings';
+  static MODULE_NAME = MODULE_LABEL;
   static MODULE_ID = 'brancalonia-bigat';
 
   /**
@@ -94,8 +96,8 @@ class ThemeSettingsManager {
    * @fires theme:initialized
    */
   static initialize() {
-    logger.startPerformance('theme-init');
-    logger.info(this.MODULE_NAME, 'Inizializzazione Theme Settings...');
+    moduleLogger.startPerformance('theme-init');
+    moduleLogger.info('Inizializzazione Theme Settings...');
 
     try {
       // Verifica se Carolingian UI è attivo
@@ -116,13 +118,13 @@ class ThemeSettingsManager {
       this._state.initialized = true;
 
       // Track init time
-      const initTime = logger.endPerformance('theme-init');
+      const initTime = moduleLogger.endPerformance('theme-init');
       this.statistics.initTime = initTime;
 
-      logger.info(this.MODULE_NAME, `Inizializzazione completata in ${initTime?.toFixed(2)}ms (mode: ${this.statistics.themeMode})`);
+      moduleLogger.info(`Inizializzazione completata in ${initTime?.toFixed(2)}ms (mode: ${this.statistics.themeMode})`);
 
       // Emit event
-      logger.events.emit('theme:initialized', {
+      moduleLogger.events.emit('theme:initialized', {
         version: this.VERSION,
         themeMode: this.statistics.themeMode,
         carolingianActive: this._state.carolingianActive,
@@ -131,7 +133,7 @@ class ThemeSettingsManager {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       this.statistics.errors.push({
         type: 'initialization',
         message: error.message,
@@ -154,27 +156,27 @@ class ThemeSettingsManager {
       this.statistics.carolingianDetected = !!carolingianActive;
 
       if (carolingianActive) {
-        logger.info(this.MODULE_NAME, '✅ Carolingian UI rilevato e attivo');
+        moduleLogger.info('✅ Carolingian UI rilevato e attivo');
         this.statistics.themeMode = 'full';
 
         // Emit event
-        logger.events.emit('theme:carolingian-detected', {
+        moduleLogger.events.emit('theme:carolingian-detected', {
           active: true,
           timestamp: Date.now()
         });
       } else {
-        logger.warn(this.MODULE_NAME, '⚠️ Carolingian UI non rilevato, uso tema base');
+        moduleLogger.warn('⚠️ Carolingian UI non rilevato, uso tema base');
         this.statistics.themeMode = 'basic';
 
         // Emit event
-        logger.events.emit('theme:carolingian-detected', {
+        moduleLogger.events.emit('theme:carolingian-detected', {
           active: false,
           timestamp: Date.now()
         });
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore rilevamento Carolingian UI', error);
+      moduleLogger.error('Errore rilevamento Carolingian UI', error);
       this._state.carolingianActive = false;
       this.statistics.themeMode = 'basic';
       this.statistics.errors.push({
@@ -194,9 +196,9 @@ class ThemeSettingsManager {
   static _applyBasicTheme() {
     try {
       document.body.classList.add('brancalonia-bigat');
-      logger.info(this.MODULE_NAME, 'Tema base applicato');
+      moduleLogger.info('Tema base applicato');
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore applicazione tema base', error);
+      moduleLogger.error('Errore applicazione tema base', error);
       this.statistics.errors.push({
         type: 'basic-theme-apply',
         message: error.message,
@@ -212,26 +214,26 @@ class ThemeSettingsManager {
    * @returns {void}
    */
   static _integrateWithCarolingianUI() {
-    logger.startPerformance('theme-integration');
-    logger.info(this.MODULE_NAME, '🎨 Integrazione con Carolingian UI...');
+    moduleLogger.startPerformance('theme-integration');
+    moduleLogger.info('🎨 Integrazione con Carolingian UI...');
 
     try {
       // Registra settings specifiche Brancalonia
       this._registerSettings();
 
-      logger.info(this.MODULE_NAME, '✅ Integrazione Carolingian UI completata');
+      moduleLogger.info('✅ Integrazione Carolingian UI completata');
 
-      const integrationTime = logger.endPerformance('theme-integration');
-      logger.debug(this.MODULE_NAME, `Integrazione completata in ${integrationTime?.toFixed(2)}ms`);
+      const integrationTime = moduleLogger.endPerformance('theme-integration');
+      moduleLogger.debug(`Integrazione completata in ${integrationTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('theme:integration-complete', {
+      moduleLogger.events.emit('theme:integration-complete', {
         integrationTime,
         timestamp: Date.now()
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante integrazione Carolingian UI', error);
+      moduleLogger.error('Errore durante integrazione Carolingian UI', error);
       this.statistics.errors.push({
         type: 'carolingian-integration',
         message: error.message,
@@ -262,17 +264,17 @@ class ThemeSettingsManager {
             this._state.decorationsEnabled = value;
             this.statistics.decorationToggles++;
 
-            logger.info(this.MODULE_NAME, `Decorazioni ${value ? 'abilitate' : 'disabilitate'}`);
+            moduleLogger.info(`Decorazioni ${value ? 'abilitate' : 'disabilitate'}`);
 
             // Emit event
-            logger.events.emit('theme:decorations-changed', {
+            moduleLogger.events.emit('theme:decorations-changed', {
               enabled: value,
               toggleCount: this.statistics.decorationToggles,
               timestamp: Date.now()
             });
 
           } catch (error) {
-            logger.error(this.MODULE_NAME, 'Errore toggle decorazioni', error);
+            moduleLogger.error('Errore toggle decorazioni', error);
             this.statistics.errors.push({
               type: 'decorations-toggle',
               message: error.message,
@@ -282,7 +284,7 @@ class ThemeSettingsManager {
         }
       });
 
-      logger.debug(this.MODULE_NAME, 'Setting "enableDecorations" registrata');
+      moduleLogger.debug('Setting "enableDecorations" registrata');
 
       // Setting: Integrazione Carolingian (hidden)
       game.settings.register(this.MODULE_ID, 'carolingianIntegration', {
@@ -294,10 +296,10 @@ class ThemeSettingsManager {
         default: true
       });
 
-      logger.debug(this.MODULE_NAME, 'Setting "carolingianIntegration" registrata (hidden)');
+      moduleLogger.debug('Setting "carolingianIntegration" registrata (hidden)');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione settings', error);
+      moduleLogger.error('Errore registrazione settings', error);
       this.statistics.errors.push({
         type: 'settings-registration',
         message: error.message,
@@ -319,10 +321,10 @@ class ThemeSettingsManager {
         ThemeSettingsManager._addIntegrationInfo(html); // Fix: usa nome classe invece di this
       });
 
-      logger.debug(this.MODULE_NAME, 'Hook renderSettingsConfig registrato');
+      moduleLogger.debug('Hook renderSettingsConfig registrato');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione hooks', error);
+      moduleLogger.error('Errore registrazione hooks', error);
       this.statistics.errors.push({
         type: 'hooks-registration',
         message: error.message,
@@ -351,10 +353,10 @@ class ThemeSettingsManager {
         this._addIntegrationInfoVanilla(html);
       }
 
-      logger.debug(this.MODULE_NAME, `Info integrazione aggiunte (render #${this.statistics.settingsRenders})`);
+      moduleLogger.debug(`Info integrazione aggiunte (render #${this.statistics.settingsRenders})`);
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore aggiunta info integrazione', error);
+      moduleLogger.error('Errore aggiunta info integrazione', error);
       this.statistics.errors.push({
         type: 'integration-info',
         message: error.message,
@@ -384,7 +386,7 @@ class ThemeSettingsManager {
       `);
 
       carolingianSection.append(integrationNote);
-      logger.debug(this.MODULE_NAME, 'Info integrazione aggiunte (jQuery)');
+      moduleLogger.debug('Info integrazione aggiunte (jQuery)');
     }
   }
 
@@ -398,7 +400,7 @@ class ThemeSettingsManager {
   static _addIntegrationInfoVanilla(html) {
     const element = html instanceof HTMLElement ? html : (html?.[0] || html?.element);
     if (!element) {
-      logger.warn(this.MODULE_NAME, 'Elemento HTML non valido per info integrazione');
+      moduleLogger.warn('Elemento HTML non valido per info integrazione');
       return;
     }
 
@@ -421,7 +423,7 @@ class ThemeSettingsManager {
       `;
 
       carolingianSection.appendChild(integrationNote);
-      logger.debug(this.MODULE_NAME, 'Info integrazione aggiunte (Vanilla JS)');
+      moduleLogger.debug('Info integrazione aggiunte (Vanilla JS)');
     }
   }
 
@@ -460,7 +462,7 @@ class ThemeSettingsManager {
         initialized: this._state.initialized
       };
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore recupero configurazione', error);
+      moduleLogger.error('Errore recupero configurazione', error);
       return {
         carolingianActive: false,
         decorationsEnabled: false,
@@ -497,10 +499,10 @@ class ThemeSettingsManager {
    */
   static async toggleDecorations(enabled) {
     try {
-      logger.info(this.MODULE_NAME, `Toggle decorazioni: ${enabled}`);
+      moduleLogger.info(`Toggle decorazioni: ${enabled}`);
       await game.settings.set(this.MODULE_ID, 'enableDecorations', enabled);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore toggle decorazioni', error);
+      moduleLogger.error('Errore toggle decorazioni', error);
       throw error;
     }
   }
@@ -513,7 +515,7 @@ class ThemeSettingsManager {
    * ThemeSettingsManager.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche');
+    moduleLogger.info('Reset statistiche');
 
     const carolingianDetected = this.statistics.carolingianDetected;
     const initTime = this.statistics.initTime;
@@ -528,7 +530,7 @@ class ThemeSettingsManager {
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -542,14 +544,14 @@ class ThemeSettingsManager {
     const stats = this.getStatistics();
     const config = this.getConfiguration();
 
-    logger.group('📊 Brancalonia Theme Settings - Report');
+    moduleLogger.group('📊 Brancalonia Theme Settings - Report');
 
-    logger.info(this.MODULE_NAME, 'VERSION:', this.VERSION);
-    logger.info(this.MODULE_NAME, 'Theme Mode:', config.themeMode);
-    logger.info(this.MODULE_NAME, 'Initialized:', config.initialized);
+    moduleLogger.info('VERSION:', this.VERSION);
+    moduleLogger.info('Theme Mode:', config.themeMode);
+    moduleLogger.info('Initialized:', config.initialized);
 
-    logger.group('📈 Statistics');
-    logger.table([
+    moduleLogger.group('📈 Statistics');
+    moduleLogger.table([
       { Metric: 'Carolingian Detected', Value: stats.carolingianDetected ? 'Yes' : 'No' },
       { Metric: 'Theme Mode', Value: stats.themeMode },
       { Metric: 'Decoration Toggles', Value: stats.decorationToggles },
@@ -558,23 +560,23 @@ class ThemeSettingsManager {
       { Metric: 'Errors', Value: stats.errors.length },
       { Metric: 'Uptime', Value: `${(stats.uptime / 1000).toFixed(0)}s` }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('⚙️ Configuration');
-    logger.info(this.MODULE_NAME, 'Carolingian Active:', config.carolingianActive);
-    logger.info(this.MODULE_NAME, 'Decorations Enabled:', config.decorationsEnabled);
-    logger.info(this.MODULE_NAME, 'Integration Enabled:', config.integrationEnabled);
-    logger.groupEnd();
+    moduleLogger.group('⚙️ Configuration');
+    moduleLogger.info('Carolingian Active:', config.carolingianActive);
+    moduleLogger.info('Decorations Enabled:', config.decorationsEnabled);
+    moduleLogger.info('Integration Enabled:', config.integrationEnabled);
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors');
+      moduleLogger.group('🐛 Errors');
       stats.errors.forEach((err, i) => {
-        logger.error(this.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return stats;
   }

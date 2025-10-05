@@ -15,12 +15,15 @@
  * - API pubblica completa
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 import { SheetCoordinator } from './brancalonia-sheet-coordinator.js';
+
+const MODULE_LABEL = 'Sheets';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class BrancaloniaSheets {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Sheets';
+  static MODULE_NAME = MODULE_LABEL;
   
   static statistics = {
     totalRenders: 0,
@@ -47,8 +50,8 @@ class BrancaloniaSheets {
 
   static initialize() {
     try {
-      logger.startPerformance('sheets-init');
-      logger.info(this.MODULE_NAME, 'Inizializzazione modifiche sheet personaggi...');
+      moduleLogger.startPerformance('sheets-init');
+      moduleLogger.info('Inizializzazione modifiche sheet personaggi...');
 
       // Fixed: Preload Handlebars templates
       this._loadTemplates();
@@ -60,16 +63,16 @@ class BrancaloniaSheets {
       this.registerSheetModifications();
       this.registerDataModels();
 
-      const initTime = logger.endPerformance('sheets-init');
+      const initTime = moduleLogger.endPerformance('sheets-init');
       this.statistics.initTime = initTime;
 
-      logger.info(this.MODULE_NAME, `Sistema inizializzato in ${initTime?.toFixed(2)}ms`, {
+      moduleLogger.info(`Sistema inizializzato in ${initTime?.toFixed(2)}ms`, {
         features: ['infamia', 'compagnia', 'lavori', 'rifugio', 'malefatte'],
         carolingianUI: !!window.brancaloniaSettings?.SheetsUtil
       });
 
       // Emit event
-      logger.events.emit('sheets:initialized', {
+      moduleLogger.events.emit('sheets:initialized', {
         version: this.VERSION,
         initTime,
         carolingianUIActive: !!window.brancaloniaSettings?.SheetsUtil,
@@ -77,7 +80,7 @@ class BrancaloniaSheets {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       this.statistics.errors.push({
         type: 'initialization',
         message: error.message,
@@ -103,7 +106,7 @@ class BrancaloniaSheets {
 
     loadTemplates(templatePaths);
 
-    logger.debug(this.MODULE_NAME, `Template Handlebars precaricati (${templatePaths.length} templates)`);
+    moduleLogger.debug(`Template Handlebars precaricati (${templatePaths.length} templates)`);
   }
 
   static _registerSettings() {
@@ -117,7 +120,7 @@ class BrancaloniaSheets {
         type: Boolean,
         default: true,
         onChange: value => {
-          logger.info(this.MODULE_NAME, `Sheets UI: ${value ? 'abilitata' : 'disabilitata'}`);
+          moduleLogger.info(`Sheets UI: ${value ? 'abilitata' : 'disabilitata'}`);
           if (value) {
             ui.notifications.info('Ricarica la pagina per applicare le modifiche UI');
           }
@@ -183,13 +186,13 @@ class BrancaloniaSheets {
         default: false
       });
 
-      logger.debug(this.MODULE_NAME, 'Settings registrate', {
+      moduleLogger.debug('Settings registrate', {
         count: 10,
         features: 5
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nella registrazione settings', error);
+      moduleLogger.error('Errore nella registrazione settings', error);
       this.statistics.errors.push({
         type: 'settings',
         message: error.message,
@@ -201,11 +204,11 @@ class BrancaloniaSheets {
   static registerSheetModifications() {
     try {
       if (!game.settings.get('brancalonia-bigat', 'enableBrancaloniaSheets')) {
-        logger.info(this.MODULE_NAME, 'Sheets UI disabilitata tramite settings');
+        moduleLogger.info('Sheets UI disabilitata tramite settings');
         return;
       }
 
-      logger.debug(this.MODULE_NAME, 'Registrazione con SheetCoordinator...');
+      moduleLogger.debug('Registrazione con SheetCoordinator...');
 
       // Fixed: Use SheetCoordinator instead of direct Hook (prevents 20+ hooks issue)
       SheetCoordinator.registerModule(
@@ -217,7 +220,7 @@ class BrancaloniaSheets {
             const delay = game.settings.get('brancalonia-bigat', 'sheetsDelayAfterCarolingian') || 100;
 
             if (carolingianActive) {
-              logger.debug(this.MODULE_NAME, `Attendendo ${delay}ms per Carolingian UI...`);
+              moduleLogger.debug(`Attendendo ${delay}ms per Carolingian UI...`);
               await new Promise(resolve => setTimeout(resolve, delay));
             }
 
@@ -230,7 +233,7 @@ class BrancaloniaSheets {
             }
 
           } catch (error) {
-            logger.error(this.MODULE_NAME, 'Errore in sheet render', error);
+            moduleLogger.error('Errore in sheet render', error);
             this.statistics.errors.push({
               type: 'render',
               message: error.message,
@@ -245,10 +248,10 @@ class BrancaloniaSheets {
         }
       );
 
-      logger.info(this.MODULE_NAME, 'Registrato con SheetCoordinator (priority: 50)');
+      moduleLogger.info('Registrato con SheetCoordinator (priority: 50)');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nella registrazione hook', error);
+      moduleLogger.error('Errore nella registrazione hook', error);
     }
   }
 
@@ -276,8 +279,8 @@ class BrancaloniaSheets {
 
   static async modifyCharacterSheet(app, html, data) {
     try {
-      logger.startPerformance('sheets-render');
-      logger.debug(this.MODULE_NAME, `Rendering sheet per ${data.actor.name}`);
+      moduleLogger.startPerformance('sheets-render');
+      moduleLogger.debug(`Rendering sheet per ${data.actor.name}`);
 
       const actor = app.actor;
 
@@ -337,17 +340,17 @@ class BrancaloniaSheets {
         this.addDecorativeElements($html);
       }
 
-      const renderTime = logger.endPerformance('sheets-render');
+      const renderTime = moduleLogger.endPerformance('sheets-render');
       
       // Update statistics
       this.statistics.totalRenders++;
       this.statistics.lastRenderTime = Date.now();
       this.statistics.avgRenderTime = ((this.statistics.avgRenderTime * (this.statistics.totalRenders - 1)) + renderTime) / this.statistics.totalRenders;
 
-      logger.info(this.MODULE_NAME, `Sheet ${data.actor.name} renderizzata in ${renderTime?.toFixed(2)}ms`);
+      moduleLogger.info(`Sheet ${data.actor.name} renderizzata in ${renderTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('sheets:sheet-rendered', {
+      moduleLogger.events.emit('sheets:sheet-rendered', {
         actorId: actor.id,
         actorName: actor.name,
         renderTime,
@@ -358,7 +361,7 @@ class BrancaloniaSheets {
       return $html;
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel rendering sheet', error);
+      moduleLogger.error('Errore nel rendering sheet', error);
       this.statistics.errors.push({
         type: 'render',
         message: error.message,
@@ -415,10 +418,10 @@ class BrancaloniaSheets {
 
   static addInfamiaSystem(html, actor) {
     try {
-      logger.startPerformance('sheets-add-infamia');
+      moduleLogger.startPerformance('sheets-add-infamia');
 
       if (!game.settings.get('brancalonia-bigat', 'sheetsShowInfamia')) {
-        logger.debug(this.MODULE_NAME, 'Sezione Infamia disabilitata');
+        moduleLogger.debug('Sezione Infamia disabilitata');
         return;
       }
 
@@ -444,14 +447,14 @@ class BrancaloniaSheets {
         
         resourcesSection.after(infamiaHTML);
 
-        const renderTime = logger.endPerformance('sheets-add-infamia');
+        const renderTime = moduleLogger.endPerformance('sheets-add-infamia');
         this.statistics.sectionsByType.infamia++;
 
-        logger.debug(this.MODULE_NAME, `Sezione Infamia aggiunta in ${renderTime?.toFixed(2)}ms`);
+        moduleLogger.debug(`Sezione Infamia aggiunta in ${renderTime?.toFixed(2)}ms`);
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nell\'aggiunta sezione Infamia', error);
+      moduleLogger.error('Errore nell\'aggiunta sezione Infamia', error);
       this.statistics.errors.push({
         type: 'section-infamia',
         message: error.message,
@@ -485,10 +488,10 @@ class BrancaloniaSheets {
 
   static addCompagniaSection(html, actor) {
     try {
-      logger.startPerformance('sheets-add-compagnia');
+      moduleLogger.startPerformance('sheets-add-compagnia');
 
       if (!game.settings.get('brancalonia-bigat', 'sheetsShowCompagnia')) {
-        logger.debug(this.MODULE_NAME, 'Sezione Compagnia disabilitata');
+        moduleLogger.debug('Sezione Compagnia disabilitata');
         return;
       }
 
@@ -509,14 +512,14 @@ class BrancaloniaSheets {
         
         biographyTab.append(compagniaHTML);
 
-        const renderTime = logger.endPerformance('sheets-add-compagnia');
+        const renderTime = moduleLogger.endPerformance('sheets-add-compagnia');
         this.statistics.sectionsByType.compagnia++;
 
-        logger.debug(this.MODULE_NAME, `Sezione Compagnia aggiunta in ${renderTime?.toFixed(2)}ms`);
+        moduleLogger.debug(`Sezione Compagnia aggiunta in ${renderTime?.toFixed(2)}ms`);
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nell\'aggiunta sezione Compagnia', error);
+      moduleLogger.error('Errore nell\'aggiunta sezione Compagnia', error);
       this.statistics.errors.push({
         type: 'section-compagnia',
         message: error.message,
@@ -551,10 +554,10 @@ class BrancaloniaSheets {
 
   static addLavoriSporchiSection(html, actor) {
     try {
-      logger.startPerformance('sheets-add-lavori');
+      moduleLogger.startPerformance('sheets-add-lavori');
 
       if (!game.settings.get('brancalonia-bigat', 'sheetsShowLavori')) {
-        logger.debug(this.MODULE_NAME, 'Sezione Lavori Sporchi disabilitata');
+        moduleLogger.debug('Sezione Lavori Sporchi disabilitata');
         return;
       }
 
@@ -576,14 +579,14 @@ class BrancaloniaSheets {
         
         featuresTab.append(lavoriHTML);
 
-        const renderTime = logger.endPerformance('sheets-add-lavori');
+        const renderTime = moduleLogger.endPerformance('sheets-add-lavori');
         this.statistics.sectionsByType.lavori++;
 
-        logger.debug(this.MODULE_NAME, `Sezione Lavori Sporchi aggiunta in ${renderTime?.toFixed(2)}ms`);
+        moduleLogger.debug(`Sezione Lavori Sporchi aggiunta in ${renderTime?.toFixed(2)}ms`);
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nell\'aggiunta sezione Lavori Sporchi', error);
+      moduleLogger.error('Errore nell\'aggiunta sezione Lavori Sporchi', error);
       this.statistics.errors.push({
         type: 'section-lavori',
         message: error.message,
@@ -633,10 +636,10 @@ class BrancaloniaSheets {
 
   static addRifugioSection(html, actor) {
     try {
-      logger.startPerformance('sheets-add-rifugio');
+      moduleLogger.startPerformance('sheets-add-rifugio');
 
       if (!game.settings.get('brancalonia-bigat', 'sheetsShowRifugio')) {
-        logger.debug(this.MODULE_NAME, 'Sezione Rifugio disabilitata');
+        moduleLogger.debug('Sezione Rifugio disabilitata');
         return;
       }
 
@@ -658,14 +661,14 @@ class BrancaloniaSheets {
         
         biographyTab.append(rifugioHTML);
 
-        const renderTime = logger.endPerformance('sheets-add-rifugio');
+        const renderTime = moduleLogger.endPerformance('sheets-add-rifugio');
         this.statistics.sectionsByType.rifugio++;
 
-        logger.debug(this.MODULE_NAME, `Sezione Rifugio aggiunta in ${renderTime?.toFixed(2)}ms`);
+        moduleLogger.debug(`Sezione Rifugio aggiunta in ${renderTime?.toFixed(2)}ms`);
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nell\'aggiunta sezione Rifugio', error);
+      moduleLogger.error('Errore nell\'aggiunta sezione Rifugio', error);
       this.statistics.errors.push({
         type: 'section-rifugio',
         message: error.message,
@@ -728,10 +731,10 @@ class BrancaloniaSheets {
 
   static addMalefatteSection(html, actor) {
     try {
-      logger.startPerformance('sheets-add-malefatte');
+      moduleLogger.startPerformance('sheets-add-malefatte');
 
       if (!game.settings.get('brancalonia-bigat', 'sheetsShowMalefatte')) {
-        logger.debug(this.MODULE_NAME, 'Sezione Malefatte disabilitata');
+        moduleLogger.debug('Sezione Malefatte disabilitata');
         return;
       }
 
@@ -757,14 +760,14 @@ class BrancaloniaSheets {
         
         biographyTab.append(malefatteHTML);
 
-        const renderTime = logger.endPerformance('sheets-add-malefatte');
+        const renderTime = moduleLogger.endPerformance('sheets-add-malefatte');
         this.statistics.sectionsByType.malefatte++;
 
-        logger.debug(this.MODULE_NAME, `Sezione Malefatte aggiunta in ${renderTime?.toFixed(2)}ms`);
+        moduleLogger.debug(`Sezione Malefatte aggiunta in ${renderTime?.toFixed(2)}ms`);
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nell\'aggiunta sezione Malefatte', error);
+      moduleLogger.error('Errore nell\'aggiunta sezione Malefatte', error);
       this.statistics.errors.push({
         type: 'section-malefatte',
         message: error.message,
@@ -976,7 +979,7 @@ class BrancaloniaSheets {
 
     if (Object.keys(updates).length > 0) {
       await actor.update(updates, { diff: false });
-      logger.debug(this.MODULE_NAME, `Flag Brancalonia garantiti per ${actor.name}`, updates);
+      moduleLogger.debug(`Flag Brancalonia garantiti per ${actor.name}`, updates);
     }
   }
 
@@ -1014,7 +1017,7 @@ class BrancaloniaSheets {
    */
   static attachEventListeners(html, data) {
     try {
-      logger.startPerformance('sheets-attach-listeners');
+      moduleLogger.startPerformance('sheets-attach-listeners');
 
       const $root = html instanceof jQuery ? html : $(html);
 
@@ -1031,10 +1034,10 @@ class BrancaloniaSheets {
           
           await actor.setFlag('brancalonia-bigat', 'infamia', newValue);
 
-          logger.info(this.MODULE_NAME, `Infamia cambiata: ${current} → ${newValue} per ${actor.name}`);
+          moduleLogger.info(`Infamia cambiata: ${current} → ${newValue} per ${actor.name}`);
 
           // Emit event
-          logger.events.emit('sheets:infamia-changed', {
+          moduleLogger.events.emit('sheets:infamia-changed', {
             actorId: actor.id,
             oldValue: current,
             newValue,
@@ -1043,7 +1046,7 @@ class BrancaloniaSheets {
           });
 
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore nel cambiamento Infamia', error);
+          moduleLogger.error('Errore nel cambiamento Infamia', error);
         }
       });
 
@@ -1081,10 +1084,10 @@ class BrancaloniaSheets {
               this.statistics.lavoriCompleted++;
             }
 
-            logger.info(this.MODULE_NAME, `Lavoro "${lavori[idx].title}" ${lavori[idx].completed ? 'completato' : 'riaperto'}`);
+            moduleLogger.info(`Lavoro "${lavori[idx].title}" ${lavori[idx].completed ? 'completato' : 'riaperto'}`);
 
             // Emit event
-            logger.events.emit('sheets:lavoro-completed', {
+            moduleLogger.events.emit('sheets:lavoro-completed', {
               actorId: actor.id,
               lavoroId: idx,
               lavoro: lavori[idx],
@@ -1094,7 +1097,7 @@ class BrancaloniaSheets {
           }
 
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore nel toggle lavoro', error);
+          moduleLogger.error('Errore nel toggle lavoro', error);
         }
       });
 
@@ -1122,11 +1125,11 @@ class BrancaloniaSheets {
           this.openMalefattaDialog(data.actor);
         });
 
-      const listenerTime = logger.endPerformance('sheets-attach-listeners');
-      logger.debug(this.MODULE_NAME, `Event listeners collegati in ${listenerTime?.toFixed(2)}ms`);
+      const listenerTime = moduleLogger.endPerformance('sheets-attach-listeners');
+      moduleLogger.debug(`Event listeners collegati in ${listenerTime?.toFixed(2)}ms`);
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel collegamento event listeners', error);
+      moduleLogger.error('Errore nel collegamento event listeners', error);
       this.statistics.errors.push({
         type: 'event-listeners',
         message: error.message,
@@ -1181,7 +1184,7 @@ class BrancaloniaSheets {
    * @fires sheets:lavoro-added
    */
   static openLavoroDialog(actor) {
-    logger.debug(this.MODULE_NAME, `Apertura dialog Lavoro Sporco per ${actor.name}`);
+    moduleLogger.debug(`Apertura dialog Lavoro Sporco per ${actor.name}`);
 
     new foundry.appv1.sheets.Dialog({
       title: 'Nuovo Lavoro Sporco',
@@ -1224,10 +1227,10 @@ class BrancaloniaSheets {
               lavori.push(newLavoro);
               await actor.setFlag('brancalonia-bigat', 'lavoriSporchi', lavori);
 
-              logger.info(this.MODULE_NAME, `Lavoro Sporco aggiunto: "${newLavoro.title}" (${newLavoro.reward} mo)`);
+              moduleLogger.info(`Lavoro Sporco aggiunto: "${newLavoro.title}" (${newLavoro.reward} mo)`);
 
               // Emit event
-              logger.events.emit('sheets:lavoro-added', {
+              moduleLogger.events.emit('sheets:lavoro-added', {
                 actorId: actor.id,
                 actorName: actor.name,
                 lavoro: newLavoro,
@@ -1236,7 +1239,7 @@ class BrancaloniaSheets {
               });
 
             } catch (error) {
-              logger.error(this.MODULE_NAME, 'Errore aggiunta Lavoro Sporco', error);
+              moduleLogger.error('Errore aggiunta Lavoro Sporco', error);
             }
           }
         },
@@ -1261,7 +1264,7 @@ class BrancaloniaSheets {
    * @fires sheets:member-added
    */
   static openAddMemberDialog(actor) {
-    logger.debug(this.MODULE_NAME, `Apertura dialog Membro Compagnia per ${actor.name}`);
+    moduleLogger.debug(`Apertura dialog Membro Compagnia per ${actor.name}`);
 
     new foundry.appv1.sheets.Dialog({
       title: 'Aggiungi Membro alla Compagnia',
@@ -1302,10 +1305,10 @@ class BrancaloniaSheets {
               compagnia.membri.push(newMember);
               await actor.setFlag('brancalonia-bigat', 'compagnia', compagnia);
 
-              logger.info(this.MODULE_NAME, `Membro Compagnia aggiunto: "${newMember.name}" (${newMember.role})`);
+              moduleLogger.info(`Membro Compagnia aggiunto: "${newMember.name}" (${newMember.role})`);
 
               // Emit event
-              logger.events.emit('sheets:member-added', {
+              moduleLogger.events.emit('sheets:member-added', {
                 actorId: actor.id,
                 actorName: actor.name,
                 member: newMember,
@@ -1314,7 +1317,7 @@ class BrancaloniaSheets {
               });
 
             } catch (error) {
-              logger.error(this.MODULE_NAME, 'Errore aggiunta Membro Compagnia', error);
+              moduleLogger.error('Errore aggiunta Membro Compagnia', error);
             }
           }
         },
@@ -1334,15 +1337,15 @@ class BrancaloniaSheets {
       const [removed] = compagnia.membri.splice(index, 1);
       await actor.setFlag('brancalonia-bigat', 'compagnia', compagnia);
 
-      logger.info(this.MODULE_NAME, `Membro rimosso dalla compagnia di ${actor.name}`, removed);
+      moduleLogger.info(`Membro rimosso dalla compagnia di ${actor.name}`, removed);
 
-      logger.events.emit('sheets:member-removed', {
+      moduleLogger.events.emit('sheets:member-removed', {
         actorId: actor.id,
         removedMember: removed,
         timestamp: Date.now()
       });
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nella rimozione membro compagnia', error);
+      moduleLogger.error('Errore nella rimozione membro compagnia', error);
     }
   }
 
@@ -1363,7 +1366,7 @@ class BrancaloniaSheets {
    * @fires sheets:malefatta-added
    */
   static openMalefattaDialog(actor) {
-    logger.debug(this.MODULE_NAME, `Apertura dialog Malefatta per ${actor.name}`);
+    moduleLogger.debug(`Apertura dialog Malefatta per ${actor.name}`);
 
     new foundry.appv1.sheets.Dialog({
       title: 'Registra Malefatta',
@@ -1408,10 +1411,10 @@ class BrancaloniaSheets {
               malefatte.push(newMalefatta);
               await actor.setFlag('brancalonia-bigat', 'malefatte', malefatte);
 
-              logger.info(this.MODULE_NAME, `Malefatta registrata: "${newMalefatta.type}" (taglia: ${newMalefatta.bounty} mo)`);
+              moduleLogger.info(`Malefatta registrata: "${newMalefatta.type}" (taglia: ${newMalefatta.bounty} mo)`);
 
               // Emit event
-              logger.events.emit('sheets:malefatta-added', {
+              moduleLogger.events.emit('sheets:malefatta-added', {
                 actorId: actor.id,
                 actorName: actor.name,
                 malefatta: newMalefatta,
@@ -1425,10 +1428,10 @@ class BrancaloniaSheets {
               const newInfamia = Math.min(10, currentInfamia + infamiaGain);
               await actor.setFlag('brancalonia-bigat', 'infamia', newInfamia);
 
-              logger.info(this.MODULE_NAME, `Infamia aumentata di ${infamiaGain}: ${currentInfamia} → ${newInfamia}`);
+              moduleLogger.info(`Infamia aumentata di ${infamiaGain}: ${currentInfamia} → ${newInfamia}`);
 
             } catch (error) {
-              logger.error(this.MODULE_NAME, 'Errore registrazione Malefatta', error);
+              moduleLogger.error('Errore registrazione Malefatta', error);
             }
           }
         },
@@ -1485,7 +1488,7 @@ class BrancaloniaSheets {
    * console.log('Statistiche resettate!');
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche sheets');
+    moduleLogger.info('Reset statistiche sheets');
     
     const initTime = this.statistics.initTime;
     
@@ -1507,7 +1510,7 @@ class BrancaloniaSheets {
     
     this.renderHistory = [];
     
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -1526,22 +1529,22 @@ class BrancaloniaSheets {
    */
   static async forceRender(actor) {
     if (!actor) {
-      logger.warn(this.MODULE_NAME, 'forceRender: actor non valido');
+      moduleLogger.warn('forceRender: actor non valido');
       return;
     }
 
-    logger.info(this.MODULE_NAME, `Forcing render per ${actor.name}`);
+    moduleLogger.info(`Forcing render per ${actor.name}`);
 
     try {
       if (actor.sheet?.rendered) {
         await actor.sheet.render(true);
-        logger.info(this.MODULE_NAME, `Sheet ${actor.name} re-renderizzata con successo`);
+        moduleLogger.info(`Sheet ${actor.name} re-renderizzata con successo`);
       } else {
-        logger.warn(this.MODULE_NAME, `Sheet ${actor.name} non renderizzata, apertura...`);
+        moduleLogger.warn(`Sheet ${actor.name} non renderizzata, apertura...`);
         await actor.sheet.render(true);
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore nel force render di ${actor.name}`, error);
+      moduleLogger.error(`Errore nel force render di ${actor.name}`, error);
     }
   }
 
@@ -1560,24 +1563,24 @@ class BrancaloniaSheets {
    * await BrancaloniaSheets.forceRenderAll();
    */
   static async forceRenderAll() {
-    logger.info(this.MODULE_NAME, 'Forcing render di tutte le sheet aperte');
+    moduleLogger.info('Forcing render di tutte le sheet aperte');
 
     const renderedSheets = Object.values(ui.windows).filter(
       w => w instanceof ActorSheet && w.rendered
     );
 
-    logger.info(this.MODULE_NAME, `Trovate ${renderedSheets.length} sheet aperte`);
+    moduleLogger.info(`Trovate ${renderedSheets.length} sheet aperte`);
 
     for (const sheet of renderedSheets) {
       try {
         await sheet.render(true);
-        logger.debug(this.MODULE_NAME, `Sheet ${sheet.actor.name} re-renderizzata`);
+        moduleLogger.debug(`Sheet ${sheet.actor.name} re-renderizzata`);
       } catch (error) {
-        logger.error(this.MODULE_NAME, `Errore render ${sheet.actor.name}`, error);
+        moduleLogger.error(`Errore render ${sheet.actor.name}`, error);
       }
     }
 
-    logger.info(this.MODULE_NAME, `Re-render completato per ${renderedSheets.length} sheet`);
+    moduleLogger.info(`Re-render completato per ${renderedSheets.length} sheet`);
   }
 
   /**
@@ -1628,7 +1631,7 @@ class BrancaloniaSheets {
    * await BrancaloniaSheets.setEnabled(true);
    */
   static async setEnabled(enabled) {
-    logger.info(this.MODULE_NAME, `${enabled ? 'Abilitazione' : 'Disabilitazione'} sistema sheets`);
+    moduleLogger.info(`${enabled ? 'Abilitazione' : 'Disabilitazione'} sistema sheets`);
     await game.settings.set('brancalonia-bigat', 'enableBrancaloniaSheets', enabled);
     
     if (enabled) {
@@ -1654,13 +1657,13 @@ class BrancaloniaSheets {
   static async setSectionEnabled(section, enabled) {
     const settingKey = `sheetsShow${section.charAt(0).toUpperCase() + section.slice(1)}`;
     
-    logger.info(this.MODULE_NAME, `${enabled ? 'Abilitazione' : 'Disabilitazione'} sezione ${section}`);
+    moduleLogger.info(`${enabled ? 'Abilitazione' : 'Disabilitazione'} sezione ${section}`);
     
     try {
       await game.settings.set('brancalonia-bigat', settingKey, enabled);
       await this.forceRenderAll();
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore nel settaggio sezione ${section}`, error);
+      moduleLogger.error(`Errore nel settaggio sezione ${section}`, error);
     }
   }
 
@@ -1693,13 +1696,13 @@ class BrancaloniaSheets {
     const stats = this.getStatistics();
     const config = this.getConfiguration();
 
-    logger.group('📊 Brancalonia Sheets - Report Completo');
+    moduleLogger.group('📊 Brancalonia Sheets - Report Completo');
     
-    logger.info(this.MODULE_NAME, 'VERSION:', this.VERSION);
-    logger.info(this.MODULE_NAME, 'Enabled:', config.enabled);
+    moduleLogger.info('VERSION:', this.VERSION);
+    moduleLogger.info('Enabled:', config.enabled);
     
-    logger.group('📈 Statistics');
-    logger.table([
+    moduleLogger.group('📈 Statistics');
+    moduleLogger.table([
       { Metric: 'Total Renders', Value: stats.totalRenders },
       { Metric: 'Avg Render Time', Value: `${stats.avgRenderTime.toFixed(2)}ms` },
       { Metric: 'Last Render', Value: new Date(stats.lastRenderTime).toLocaleTimeString() },
@@ -1708,30 +1711,30 @@ class BrancaloniaSheets {
       { Metric: 'Uptime', Value: `${(stats.uptime / 1000).toFixed(0)}s` },
       { Metric: 'Errors', Value: stats.errors.length }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('🎨 Sections');
+    moduleLogger.group('🎨 Sections');
     Object.entries(stats.sectionsByType).forEach(([section, count]) => {
-      logger.info(this.MODULE_NAME, `${section}:`, count, `(${config.sections[section] ? '✅ enabled' : '❌ disabled'})`);
+      moduleLogger.info(`${section}:`, count, `(${config.sections[section] ? '✅ enabled' : '❌ disabled'})`);
     });
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('⚙️ Configuration');
-    logger.info(this.MODULE_NAME, 'Decorative Elements:', config.decorativeElements);
-    logger.info(this.MODULE_NAME, 'Italian Translations:', config.italianTranslations);
-    logger.info(this.MODULE_NAME, 'Carolingian Delay:', `${config.carolingianDelay}ms`);
-    logger.info(this.MODULE_NAME, 'Debug Mode:', config.debug);
-    logger.groupEnd();
+    moduleLogger.group('⚙️ Configuration');
+    moduleLogger.info('Decorative Elements:', config.decorativeElements);
+    moduleLogger.info('Italian Translations:', config.italianTranslations);
+    moduleLogger.info('Carolingian Delay:', `${config.carolingianDelay}ms`);
+    moduleLogger.info('Debug Mode:', config.debug);
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors');
+      moduleLogger.group('🐛 Errors');
       stats.errors.forEach((err, i) => {
-        logger.error(this.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message, new Date(err.timestamp).toLocaleTimeString());
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message, new Date(err.timestamp).toLocaleTimeString());
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return stats;
   }
@@ -1772,7 +1775,7 @@ class BrancaloniaSheets {
 
     saveDataToFile(dataStr, 'application/json', filename);
 
-    logger.info(this.MODULE_NAME, `Statistiche esportate in ${filename}`);
+    moduleLogger.info(`Statistiche esportate in ${filename}`);
   }
 }
 

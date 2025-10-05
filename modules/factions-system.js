@@ -26,8 +26,10 @@
  * @requires dnd5e
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'FactionsSystem';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} FactionStatistics
  * @property {number} initTime - Tempo inizializzazione (ms)
@@ -59,7 +61,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class FactionsSystem {
   static VERSION = '3.0.0';
-  static MODULE_NAME = 'FactionsSystem';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'factions-system';
 
   /**
@@ -111,7 +113,7 @@ class FactionsSystem {
       });
     } catch (error) {
       FactionsSystem._statistics.errors.push(`Constructor: ${error.message}`);
-      logger.error(FactionsSystem.MODULE_NAME, 'Errore inizializzazione constructor', error);
+      moduleLogger.error('Errore inizializzazione constructor', error);
     }
     // Database fazioni di Brancalonia
     this.factions = {
@@ -446,7 +448,7 @@ class FactionsSystem {
     const startTime = performance.now();
 
     try {
-      logger.info(this.MODULE_NAME, `Inizializzazione Factions System v${this.VERSION}`);
+      moduleLogger.info(`Inizializzazione Factions System v${this.VERSION}`);
 
       // Creazione istanza globale
       const instance = new FactionsSystem();
@@ -480,7 +482,7 @@ class FactionsSystem {
       this._state.initialized = true;
       this._statistics.initTime = performance.now() - startTime;
 
-      logger.info(
+      moduleLogger.info(
         this.MODULE_NAME,
         `✅ Inizializzazione completata in ${this._statistics.initTime.toFixed(2)}ms (${this._statistics.factionsCount} fazioni)`
       );
@@ -493,7 +495,7 @@ class FactionsSystem {
       });
     } catch (error) {
       this._statistics.errors.push(error.message);
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -618,7 +620,7 @@ if (factionSystem) {
     if (!existing) {
       Macro.create(macroData);
       this._statistics.macrosCreated++;
-      logger.info(this.MODULE_NAME, '✅ Macro Fazioni creata');
+      moduleLogger.info('✅ Macro Fazioni creata');
     }
   }
 
@@ -800,7 +802,7 @@ if (factionSystem) {
       const faction = this.factions[factionKey];
       if (!faction) {
         ui.notifications.error(`Fazione ${factionKey} non trovata!`);
-        logger.warn(FactionsSystem.MODULE_NAME, `Fazione non valida: ${factionKey}`);
+        moduleLogger.warn(`Fazione non valida: ${factionKey}`);
         return;
       }
 
@@ -856,7 +858,7 @@ if (factionSystem) {
       FactionsSystem._statistics.reputationByFaction[factionKey]++;
 
       const repTime = performance.now() - repStart;
-      logger.info(
+      moduleLogger.info(
         FactionsSystem.MODULE_NAME,
         `Reputazione aggiornata: ${actor.name} con ${faction.name} (${amount > 0 ? '+' : ''}${amount}) -> ${newRep} (${repTime.toFixed(2)}ms)`
       );
@@ -875,7 +877,7 @@ if (factionSystem) {
       });
     } catch (error) {
       FactionsSystem._statistics.errors.push(`adjustReputation: ${error.message}`);
-      logger.error(FactionsSystem.MODULE_NAME, 'Errore aggiornamento reputazione', error);
+      moduleLogger.error('Errore aggiornamento reputazione', error);
       ui.notifications.error('Errore nell\'aggiornamento della reputazione!');
     }
   }
@@ -1510,10 +1512,10 @@ window.FactionsSystem = FactionsSystem;
 // Auto-inizializzazione - migrato a init per garantire disponibilità
 Hooks.once('init', () => {
   try {
-    logger.info(FactionsSystem.MODULE_NAME, `🎮 Brancalonia | Inizializzazione ${FactionsSystem.MODULE_NAME} v${FactionsSystem.VERSION}`);
+    moduleLogger.info(`🎮 Brancalonia | Inizializzazione ${FactionsSystem.MODULE_NAME} v${FactionsSystem.VERSION}`);
     FactionsSystem.initialize();
   } catch (error) {
-    logger.error(FactionsSystem.MODULE_NAME, 'Errore inizializzazione hook init', error);
+    moduleLogger.error('Errore inizializzazione hook init', error);
   }
 });
 
@@ -1643,7 +1645,7 @@ FactionsSystem.getStatistics = function() {
  * FactionsSystem.resetStatistics();
  */
 FactionsSystem.resetStatistics = function() {
-  logger.info(this.MODULE_NAME, 'Reset statistiche Factions System');
+  moduleLogger.info('Reset statistiche Factions System');
 
   const initTime = this._statistics.initTime;
   const factionsCount = this._statistics.factionsCount;
@@ -1716,7 +1718,7 @@ FactionsSystem.getFactionsByType = function(type) {
  */
 FactionsSystem.getActorReputation = function(actor, factionKey) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return 0;
   }
   return this._state.instance.getReputation(actor, factionKey);
@@ -1736,7 +1738,7 @@ FactionsSystem.getActorReputation = function(actor, factionKey) {
  */
 FactionsSystem.adjustReputationViaAPI = async function(actor, factionKey, amount, options) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   return await this._state.instance.adjustReputation(actor, factionKey, amount, options);
@@ -1755,7 +1757,7 @@ FactionsSystem.adjustReputationViaAPI = async function(actor, factionKey, amount
  */
 FactionsSystem.startWarViaAPI = async function(faction1Key, faction2Key, reason) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   return await this._state.instance.startFactionWar(faction1Key, faction2Key, reason);

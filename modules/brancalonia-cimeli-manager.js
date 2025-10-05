@@ -9,10 +9,11 @@
  * - Reset giornalieri automatici
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
 const MODULE_ID = 'brancalonia-bigat';
 const MODULE_NAME = 'CimeliManager';
+const moduleLogger = createModuleLogger(MODULE_NAME);
 
 export default class CimeliManager {
 
@@ -21,7 +22,7 @@ export default class CimeliManager {
    */
   static initialize() {
     try {
-      logger.info(MODULE_NAME, 'Inizializzazione Cimeli Manager');
+      moduleLogger.info('Inizializzazione Cimeli Manager');
 
       // Registra settings
       this._registerSettings();
@@ -35,9 +36,9 @@ export default class CimeliManager {
       // Sistema di reset giornaliero
       this._setupDailyReset();
 
-      logger.info(MODULE_NAME, 'Cimeli Manager inizializzato con successo');
+      moduleLogger.info('Cimeli Manager inizializzato con successo');
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
     }
   }
 
@@ -64,9 +65,9 @@ export default class CimeliManager {
         default: false
       });
 
-      logger.info(MODULE_NAME, 'Settings registrati');
+      moduleLogger.info('Settings registrati');
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore registrazione settings', error);
+      moduleLogger.error('Errore registrazione settings', error);
     }
   }
 
@@ -98,10 +99,10 @@ export default class CimeliManager {
           lastDailyReset: 0,
           items: {}
         });
-        logger.info(MODULE_NAME, `Inizializzati flags cimeli per ${actor.name}`);
+        moduleLogger.info(`Inizializzati flags cimeli per ${actor.name}`);
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore inizializzazione flags', error);
+      moduleLogger.error('Errore inizializzazione flags', error);
     }
   }
 
@@ -127,7 +128,7 @@ export default class CimeliManager {
         }
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore equipaggiamento cimelo', error);
+      moduleLogger.error('Errore equipaggiamento cimelo', error);
     }
   }
 
@@ -149,7 +150,7 @@ export default class CimeliManager {
       forceRollResult: this.forceRollResult.bind(this)
     };
 
-    logger.info(MODULE_NAME, 'Macro globali registrate in game.brancalonia.cimeli');
+    moduleLogger.info('Macro globali registrate in game.brancalonia.cimeli');
   }
 
   /**
@@ -161,7 +162,7 @@ export default class CimeliManager {
       await this._checkDailyReset();
     });
 
-    logger.info(MODULE_NAME, 'Sistema reset giornaliero attivo');
+    moduleLogger.info('Sistema reset giornaliero attivo');
   }
 
   /**
@@ -183,7 +184,7 @@ export default class CimeliManager {
         });
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore reset giornaliero', error);
+      moduleLogger.error('Errore reset giornaliero', error);
     }
   }
 
@@ -206,9 +207,9 @@ export default class CimeliManager {
         await actor.setFlag(MODULE_ID, 'cimeli.lastDailyReset', Date.now());
       }
 
-      logger.info(MODULE_NAME, 'Reset giornaliero completato');
+      moduleLogger.info('Reset giornaliero completato');
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore durante reset', error);
+      moduleLogger.error('Errore durante reset', error);
     }
   }
 
@@ -259,7 +260,7 @@ export default class CimeliManager {
       ui.notifications.info(`${item.name}: Uso consumato!`);
       return true;
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore consumo uso', error);
+      moduleLogger.error('Errore consumo uso', error);
       return false;
     }
   }
@@ -289,7 +290,7 @@ export default class CimeliManager {
         await item.update({ 'system.implementazione.attivo': false });
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore gestione esaurimento', error);
+      moduleLogger.error('Errore gestione esaurimento', error);
     }
   }
 
@@ -312,7 +313,7 @@ export default class CimeliManager {
         used: flags.used
       };
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore check usi', error);
+      moduleLogger.error('Errore check usi', error);
       return null;
     }
   }
@@ -370,7 +371,7 @@ export default class CimeliManager {
         ui.notifications.warn('⚠️ Prossimo sorso richiede TS CON CD 15!');
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore drinkBoccale', error);
+      moduleLogger.error('Errore drinkBoccale', error);
     }
   }
 
@@ -399,7 +400,7 @@ export default class CimeliManager {
       // Nota: il reroll effettivo deve essere gestito dal giocatore
       // Questo è solo il tracking dell'uso
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore rerollDice', error);
+      moduleLogger.error('Errore rerollDice', error);
     }
   }
 
@@ -428,7 +429,7 @@ export default class CimeliManager {
         ui.notifications.info(`${actor.name} è tornato in vita! (1 HP)`);
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore checkResurrection', error);
+      moduleLogger.error('Errore checkResurrection', error);
     }
   }
 
@@ -496,7 +497,7 @@ export default class CimeliManager {
       }).render(true);
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore forceRollResult', error);
+      moduleLogger.error('Errore forceRollResult', error);
     }
   }
 }
@@ -515,7 +516,7 @@ Hooks.once("ready", () => {
   try {
     CimeliManager.initialize();
   } catch (error) {
-    logger.error(MODULE_NAME, 'Errore critico inizializzazione CimeliManager', error);
+    moduleLogger.error('Errore critico inizializzazione CimeliManager', error);
     ui.notifications.error("Errore nel caricamento del sistema gestione cimeli!");
   }
 });

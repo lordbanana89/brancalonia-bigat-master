@@ -8,12 +8,16 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_ID = 'brancalonia-bigat';
+const MODULE_LABEL = 'Wilderness Encounters';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class WildernessEncounters {
-  static ID = 'brancalonia-bigat';
+  static ID = MODULE_ID;
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Wilderness Encounters';
+  static MODULE_NAME = MODULE_LABEL;
 
   // Statistics tracking (enterprise-grade)
   static statistics = {
@@ -110,8 +114,8 @@ class WildernessEncounters {
    */
   static initialize() {
     try {
-      logger.startPerformance('wilderness-encounters-init');
-      logger.info(this.MODULE_NAME, '🌲 Inizializzazione sistema incontri selvaggi...');
+      moduleLogger.startPerformance('wilderness-encounters-init');
+      moduleLogger.info('🌲 Inizializzazione sistema incontri selvaggi...');
 
       this._registerSettings();
       this._registerHooks();
@@ -123,11 +127,11 @@ class WildernessEncounters {
       game.brancalonia.wilderness = this;
 
       this._state.initialized = true;
-      const perfTime = logger.endPerformance('wilderness-encounters-init');
-      logger.info(this.MODULE_NAME, `✅ Sistema incontri selvaggi inizializzato (${perfTime?.toFixed(2)}ms)`);
+      const perfTime = moduleLogger.endPerformance('wilderness-encounters-init');
+      moduleLogger.info(`✅ Sistema incontri selvaggi inizializzato (${perfTime?.toFixed(2)}ms)`);
 
       // Event emitter
-      logger.events.emit('wilderness-encounters:initialized', {
+      moduleLogger.events.emit('wilderness-encounters:initialized', {
         version: this.VERSION,
         timestamp: Date.now()
       });
@@ -137,7 +141,7 @@ class WildernessEncounters {
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione sistema incontri selvaggi', error);
+      moduleLogger.error('Errore inizializzazione sistema incontri selvaggi', error);
       ui.notifications.error('Errore durante l\'inizializzazione del sistema incontri selvaggi');
     }
   }
@@ -182,7 +186,7 @@ class WildernessEncounters {
     });
 
     this._state.settingsRegistered = true;
-    logger.info(this.MODULE_NAME, '✅ Settings registrate');
+    moduleLogger.info('✅ Settings registrate');
   }
 
   /**
@@ -213,7 +217,7 @@ class WildernessEncounters {
     });
 
     this._state.hooksRegistered = true;
-    logger.info(this.MODULE_NAME, '✅ Hooks registrati');
+    moduleLogger.info('✅ Hooks registrati');
   }
 
   /**
@@ -240,7 +244,7 @@ class WildernessEncounters {
       return true;
     });
 
-    logger.info(this.MODULE_NAME, '✅ Comandi chat registrati');
+    moduleLogger.info('✅ Comandi chat registrati');
   }
 
   /**
@@ -284,9 +288,9 @@ if (terrain) {
           await game.macros.documentClass.create(macroData);
           this.statistics.macrosCreated++;
           this._state.macrosCreated = true;
-          logger.info(this.MODULE_NAME, `✅ Macro "${macroData.name}" creata`);
+          moduleLogger.info(`✅ Macro "${macroData.name}" creata`);
         } else {
-          logger.debug?.(this.MODULE_NAME, `Macro "${macroData.name}" già esistente`);
+          moduleLogger.debug?.(`Macro "${macroData.name}" già esistente`);
         }
       } catch (error) {
         this.statistics.errors.push({
@@ -294,7 +298,7 @@ if (terrain) {
           message: error.message,
           timestamp: Date.now()
         });
-        logger.error(this.MODULE_NAME, 'Errore creazione macro', error);
+        moduleLogger.error('Errore creazione macro', error);
       }
     });
   }
@@ -310,7 +314,7 @@ if (terrain) {
       const table = this.encounterTables[terrain];
       if (!table) {
         ui.notifications.error(`Terreno "${terrain}" non valido!`);
-        logger.warn(this.MODULE_NAME, `Terreno non valido: ${terrain}`);
+        moduleLogger.warn(`Terreno non valido: ${terrain}`);
         return;
       }
 
@@ -326,7 +330,7 @@ if (terrain) {
 
       if (!encounter) {
         ui.notifications.error('Errore nel trovare incontro!');
-        logger.error(this.MODULE_NAME, `Incontro non trovato per roll ${result} in ${terrain}`);
+        moduleLogger.error(`Incontro non trovato per roll ${result} in ${terrain}`);
         return;
       }
 
@@ -338,7 +342,7 @@ if (terrain) {
         this.statistics.encountersNeutral++;
       }
 
-      logger.info(this.MODULE_NAME, `🎲 Incontro generato: ${encounter.creature} (${table.name}, roll: ${result}, hostile: ${encounter.hostile})`);
+      moduleLogger.info(`🎲 Incontro generato: ${encounter.creature} (${table.name}, roll: ${result}, hostile: ${encounter.hostile})`);
 
       // Controlla privilegi Brado PRIMA di annunciare l'incontro
       let modifiedEncounter = await this._checkBradoPrivilege(encounter);
@@ -353,7 +357,7 @@ if (terrain) {
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore generazione incontro', error);
+      moduleLogger.error('Errore generazione incontro', error);
       ui.notifications.error('Errore durante la generazione dell\'incontro');
     }
   }
@@ -411,7 +415,7 @@ if (terrain) {
           targetValue: dc
         });
 
-        logger.info(this.MODULE_NAME, `🐾 Brado ${brado.name} tenta di calmare ${encounter.creature} (DC ${dc}, roll: ${roll.total})`);
+        moduleLogger.info(`🐾 Brado ${brado.name} tenta di calmare ${encounter.creature} (DC ${dc}, roll: ${roll.total})`);
 
         if (roll.total >= dc) {
           modifiedEncounter.hostile = false;
@@ -419,7 +423,7 @@ if (terrain) {
           modifiedEncounter.originalHostile = true;
 
           this.statistics.bradoSuccesses++;
-          logger.info(this.MODULE_NAME, `✅ ${brado.name} calma con successo le bestie`);
+          moduleLogger.info(`✅ ${brado.name} calma con successo le bestie`);
 
           ChatMessage.create({
             content: `
@@ -435,7 +439,7 @@ if (terrain) {
 
           return modifiedEncounter;
         } else {
-          logger.info(this.MODULE_NAME, `❌ ${brado.name} fallisce nel calmare le bestie`);
+          moduleLogger.info(`❌ ${brado.name} fallisce nel calmare le bestie`);
 
           ChatMessage.create({
             content: `
@@ -456,7 +460,7 @@ if (terrain) {
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore check privilegio Brado', error);
+      moduleLogger.error('Errore check privilegio Brado', error);
       return encounter; // Return unmodified encounter on error
     }
   }
@@ -507,14 +511,14 @@ if (terrain) {
         speaker: { alias: 'Incontro Selvaggio' }
       });
 
-      logger.debug?.(this.MODULE_NAME, `Messaggio incontro creato: ${encounter.creature}`);
+      moduleLogger.debug?.(`Messaggio incontro creato: ${encounter.creature}`);
     } catch (error) {
       this.statistics.errors.push({
         type: '_createEncounterMessage',
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore creazione messaggio incontro', error);
+      moduleLogger.error('Errore creazione messaggio incontro', error);
     }
   }
 
@@ -528,7 +532,7 @@ if (terrain) {
       const tokens = canvas.tokens.controlled;
       if (tokens.length === 0) {
         ui.notifications.warn('Seleziona almeno un token!');
-        logger.warn(this.MODULE_NAME, 'Tentativo fuga senza token selezionato');
+        moduleLogger.warn('Tentativo fuga senza token selezionato');
         return;
       }
 
@@ -542,11 +546,11 @@ if (terrain) {
 
       const dc = 12; // DC base per fuggire
 
-      logger.info(this.MODULE_NAME, `🏃 ${actor.name} tenta fuga (DC ${dc}, roll: ${roll.total})`);
+      moduleLogger.info(`🏃 ${actor.name} tenta fuga (DC ${dc}, roll: ${roll.total})`);
 
       if (roll.total >= dc) {
         this.statistics.escapeSuccesses++;
-        logger.info(this.MODULE_NAME, `✅ Fuga riuscita per ${actor.name}`);
+        moduleLogger.info(`✅ Fuga riuscita per ${actor.name}`);
 
         ChatMessage.create({
           content: `
@@ -557,7 +561,7 @@ if (terrain) {
           `
         });
       } else {
-        logger.info(this.MODULE_NAME, `❌ Fuga fallita per ${actor.name}`);
+        moduleLogger.info(`❌ Fuga fallita per ${actor.name}`);
 
         ChatMessage.create({
           content: `
@@ -575,7 +579,7 @@ if (terrain) {
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore tentativo fuga', error);
+      moduleLogger.error('Errore tentativo fuga', error);
       ui.notifications.error('Errore durante il tentativo di fuga');
     }
   }
@@ -590,7 +594,7 @@ if (terrain) {
       const tokens = canvas.tokens.controlled;
       if (tokens.length === 0) {
         ui.notifications.warn('Seleziona almeno un token!');
-        logger.warn(this.MODULE_NAME, 'Tentativo interazione senza token selezionato');
+        moduleLogger.warn('Tentativo interazione senza token selezionato');
         return;
       }
 
@@ -619,10 +623,10 @@ if (terrain) {
         });
 
         const dc = 10;
-        logger.info(this.MODULE_NAME, `💬 ${actor.name} interazione pacifica (skill: ${interaction}, DC ${dc}, roll: ${roll.total})`);
+        moduleLogger.info(`💬 ${actor.name} interazione pacifica (skill: ${interaction}, DC ${dc}, roll: ${roll.total})`);
 
         if (roll.total >= dc) {
-          logger.info(this.MODULE_NAME, `✅ Interazione riuscita per ${actor.name}`);
+          moduleLogger.info(`✅ Interazione riuscita per ${actor.name}`);
 
           ChatMessage.create({
             content: `
@@ -633,7 +637,7 @@ if (terrain) {
             `
           });
         } else {
-          logger.info(this.MODULE_NAME, `⚠️ Interazione neutra per ${actor.name}`);
+          moduleLogger.info(`⚠️ Interazione neutra per ${actor.name}`);
 
           ChatMessage.create({
             content: `
@@ -651,7 +655,7 @@ if (terrain) {
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore interazione pacifica', error);
+      moduleLogger.error('Errore interazione pacifica', error);
       ui.notifications.error('Errore durante l\'interazione');
     }
   }
@@ -670,14 +674,14 @@ if (terrain) {
           </div>
         `
       });
-      logger.info(this.MODULE_NAME, '🚶 Incontro evitato');
+      moduleLogger.info('🚶 Incontro evitato');
     } catch (error) {
       this.statistics.errors.push({
         type: 'avoidEncounter',
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore evitamento incontro', error);
+      moduleLogger.error('Errore evitamento incontro', error);
     }
   }
 
@@ -694,7 +698,7 @@ if (terrain) {
       const frequency = game.settings.get(this.ID, 'encounterFrequency');
       const roll = Math.random() * 100;
 
-      logger.debug?.(this.MODULE_NAME, `Controllo orario incontri: roll ${roll.toFixed(2)} vs frequenza ${frequency}`);
+      moduleLogger.debug?.(`Controllo orario incontri: roll ${roll.toFixed(2)} vs frequenza ${frequency}`);
 
       if (roll <= frequency) {
         // Determina terreno dalla scena corrente
@@ -706,7 +710,7 @@ if (terrain) {
         else if (scene?.name.toLowerCase().includes('palude')) terrain = 'swamp';
         else if (scene?.name.toLowerCase().includes('pianura')) terrain = 'plains';
 
-        logger.info(this.MODULE_NAME, `⏰ Controllo orario: incontro casuale in ${terrain}`);
+        moduleLogger.info(`⏰ Controllo orario: incontro casuale in ${terrain}`);
         this.rollEncounter(terrain);
       }
     } catch (error) {
@@ -715,7 +719,7 @@ if (terrain) {
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore controllo orario incontri', error);
+      moduleLogger.error('Errore controllo orario incontri', error);
     }
   }
 
@@ -766,14 +770,14 @@ if (terrain) {
       });
 
       html.find('.directory-header').append(button);
-      logger.debug?.(this.MODULE_NAME, 'Pulsante incontri aggiunto alla sidebar');
+      moduleLogger.debug?.('Pulsante incontri aggiunto alla sidebar');
     } catch (error) {
       this.statistics.errors.push({
         type: '_addEncounterButton',
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore aggiunta pulsante sidebar', error);
+      moduleLogger.error('Errore aggiunta pulsante sidebar', error);
     }
   }
 
@@ -800,14 +804,14 @@ if (terrain) {
       `;
 
       ChatMessage.create({ content });
-      logger.info(this.MODULE_NAME, '📖 Aiuto visualizzato');
+      moduleLogger.info('📖 Aiuto visualizzato');
     } catch (error) {
       this.statistics.errors.push({
         type: 'showHelp',
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore visualizzazione aiuto', error);
+      moduleLogger.error('Errore visualizzazione aiuto', error);
     }
   }
 
@@ -875,7 +879,7 @@ if (terrain) {
       macrosCreated: 0,
       errors: []
     };
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -915,25 +919,32 @@ if (terrain) {
       </div>
     `;
 
-    new Dialog({
-      title: 'Report Sistema Incontri Selvaggi',
+    let dialog;
+    dialog = new foundry.applications.api.DialogV2({
+      window: {
+        title: 'Report Sistema Incontri Selvaggi'
+      },
       content: report,
-      buttons: {
-        export: {
-          label: 'Esporta Log',
-          callback: () => {
-            const log = JSON.stringify({ status, stats }, null, 2);
-            const blob = new Blob([log], { type: 'application/json' });
-            saveDataToFile(blob, 'text/json', 'wilderness-encounters-report.json');
-          }
-        },
-        close: {
-          label: 'Chiudi'
+      buttons: [{
+        action: 'export',
+        label: 'Esporta Log',
+        icon: 'fas fa-file-export',
+        callback: () => {
+          const log = JSON.stringify({ status, stats }, null, 2);
+          const blob = new Blob([log], { type: 'application/json' });
+          saveDataToFile(blob, 'text/json', 'wilderness-encounters-report.json');
+          dialog.close();
         }
-      }
-    }).render(true);
+      }, {
+        action: 'close',
+        label: 'Chiudi',
+        icon: 'fas fa-times'
+      }]
+    });
 
-    logger.info(this.MODULE_NAME, 'Report visualizzato', { status, stats });
+    dialog.render(true);
+
+    moduleLogger.info('Report visualizzato', { status, stats });
   }
 }
 
@@ -942,7 +953,7 @@ Hooks.once('init', () => {
   try {
     WildernessEncounters.initialize();
   } catch (error) {
-    logger.error('Wilderness Encounters', 'Errore hook init', error);
+    moduleLogger.error('Errore hook init', error);
   }
 });
 

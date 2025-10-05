@@ -3,7 +3,10 @@
  * Gestisce dipendenze, priorità e caricamento lazy
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Brancalonia Module Loader';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class BrancaloniaModuleLoader {
   constructor() {
@@ -253,24 +256,24 @@ class BrancaloniaModuleLoader {
       ...config
     });
 
-    logger.debug('ModuleLoader', `Registered module: ${name}`, moduleConfig);
+    moduleLogger.debug(`Registered module: ${name}`, moduleConfig);
   }
 
   async loadModule(name) {
     if (this.loadedModules.has(name)) {
-      logger.trace('ModuleLoader', `Module already loaded: ${name}`);
+      moduleLogger.trace(`Module already loaded: ${name}`);
       return true;
     }
 
     const module = this.modules.get(name);
     if (!module) {
       const error = new Error('Module not registered');
-      logger.warn('ModuleLoader', `Module not found: ${name}`);
+      moduleLogger.warn(`Module not found: ${name}`);
 
       this.moduleErrors.set(name, error);
 
       // Emit event
-      logger.events.emit('loader:module-not-found', {
+      moduleLogger.events.emit('loader:module-not-found', {
         module: name,
         timestamp: Date.now()
       });
@@ -278,7 +281,7 @@ class BrancaloniaModuleLoader {
       return false;
     }
 
-    logger.debug('ModuleLoader', `Loading module: ${name}`);
+    moduleLogger.debug(`Loading module: ${name}`);
     const startTime = performance.now();
 
     try {
@@ -298,10 +301,10 @@ class BrancaloniaModuleLoader {
       const loadTime = performance.now() - startTime;
       this.loadTimes.set(name, loadTime);
 
-      logger.info('ModuleLoader', `Loaded module: ${name} (${loadTime.toFixed(2)}ms)`);
+      moduleLogger.info(`Loaded module: ${name} (${loadTime.toFixed(2)}ms)`);
       
       // Emit event
-      logger.events.emit('loader:module-loaded', {
+      moduleLogger.events.emit('loader:module-loaded', {
         module: name,
         loadTime,
         priority: module.priority,
@@ -315,7 +318,7 @@ class BrancaloniaModuleLoader {
       const errorMessage = `Failed to load module: ${name}`;
 
       // Emit event
-      logger.events.emit('loader:module-failed', {
+      moduleLogger.events.emit('loader:module-failed', {
         module: name,
         error: error.message,
         critical: module.critical,
@@ -323,24 +326,24 @@ class BrancaloniaModuleLoader {
       });
 
       if (module.critical) {
-        logger.error('ModuleLoader', errorMessage, error);
+        moduleLogger.error(errorMessage, error);
         // Safe UI notification - check if UI is available
         if (typeof ui !== 'undefined' && ui.notifications) {
           ui.notifications.error(`Critical module failed: ${name}`);
         } else {
-          logger.error('ModuleLoader', `Critical module failed: ${name}`, error);
+          moduleLogger.error(`Critical module failed: ${name}`, error);
         }
         throw error;
       } else {
-        logger.warn('ModuleLoader', errorMessage, error);
+        moduleLogger.warn(errorMessage, error);
         return false;
       }
     }
   }
 
   async loadAll() {
-    logger.info('ModuleLoader', 'Starting module loading sequence');
-    logger.startPerformance('module-loading');
+    moduleLogger.info('Starting module loading sequence');
+    moduleLogger.startPerformance('module-loading');
 
     const sortedModules = Array.from(this.modules.entries())
       .sort((a, b) => (a[1].priority ?? 100) - (b[1].priority ?? 100));
@@ -361,8 +364,8 @@ class BrancaloniaModuleLoader {
     for (const [priority, moduleNames] of priorityGroups) {
       const nonLazyModules = moduleNames.filter(name => !(this.modules.get(name)?.lazy));
       
-      logger.debug('ModuleLoader', `Loading priority group ${priority}`, moduleNames);
-      logger.info('ModuleLoader', `Progress: ${loadedCount}/${totalModulesNonLazy} modules loaded`);
+      moduleLogger.debug(`Loading priority group ${priority}`, moduleNames);
+      moduleLogger.info(`Progress: ${loadedCount}/${totalModulesNonLazy} modules loaded`);
 
       const promises = nonLazyModules.map(name => this.loadModule(name));
 
@@ -381,11 +384,11 @@ class BrancaloniaModuleLoader {
       });
     }
 
-    const totalTime = logger.endPerformance('module-loading');
+    const totalTime = moduleLogger.endPerformance('module-loading');
     this.logLoadingSummary(totalTime);
     
     // Emit final event
-    logger.events.emit('loader:loading-complete', {
+    moduleLogger.events.emit('loader:loading-complete', {
       totalModules: this.modules.size,
       loaded: this.loadedModules.size,
       failed: this.moduleErrors.size,
@@ -397,11 +400,11 @@ class BrancaloniaModuleLoader {
   async loadLazy(moduleName) {
     const module = this.modules.get(moduleName);
     if (!module || !module.lazy) {
-      logger.warn('ModuleLoader', `Module ${moduleName} is not lazy or doesn't exist`);
+      moduleLogger.warn(`Module ${moduleName} is not lazy or doesn't exist`);
       return false;
     }
 
-    logger.info('ModuleLoader', `Lazy loading module: ${moduleName}`);
+    moduleLogger.info(`Lazy loading module: ${moduleName}`);
     return await this.loadModule(moduleName);
   }
 
@@ -420,7 +423,7 @@ class BrancaloniaModuleLoader {
     const slowestModule = sortedTimes.length > 0 ? sortedTimes[0] : null;
     const fastestModule = sortedTimes.length > 0 ? sortedTimes[sortedTimes.length - 1] : null;
 
-    logger.info(
+    moduleLogger.info(
       'ModuleLoader',
       `Module loading complete: ${loaded}/${total} loaded, ${failed} failed (${totalTime?.toFixed(2)}ms total)`,
       {
@@ -431,25 +434,25 @@ class BrancaloniaModuleLoader {
     );
 
     if (failed > 0) {
-      logger.group('Failed Modules');
+      moduleLogger.group('Failed Modules');
       for (const [name, error] of this.moduleErrors) {
-        logger.error('ModuleLoader', `${name}: ${error.message}`);
+        moduleLogger.error(`${name}: ${error.message}`);
       }
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
     const slowModules = sortedTimes.slice(0, 5);
 
     if (slowModules.length > 0) {
-      logger.debug('ModuleLoader', 'Slowest modules:');
-      logger.table(
+      moduleLogger.debug('Slowest modules:');
+      moduleLogger.table(
         slowModules.map(([name, time]) => ({ Module: name, 'Load Time': `${time.toFixed(2)}ms` }))
       );
     }
   }
 
   async reloadModule(name) {
-    logger.info('ModuleLoader', `Reloading module: ${name}`);
+    moduleLogger.info(`Reloading module: ${name}`);
     this.loadedModules.delete(name);
     this.moduleErrors.delete(name);
     return await this.loadModule(name);
@@ -534,7 +537,7 @@ class BrancaloniaModuleLoader {
    * @param {Function} callback - Funzione da chiamare
    */
   on(eventName, callback) {
-    logger.events.on(`loader:${eventName}`, callback);
+    moduleLogger.events.on(`loader:${eventName}`, callback);
   }
 
   /**
@@ -543,7 +546,7 @@ class BrancaloniaModuleLoader {
    * @param {Function} callback - Funzione da rimuovere
    */
   off(eventName, callback) {
-    logger.events.off(`loader:${eventName}`, callback);
+    moduleLogger.events.off(`loader:${eventName}`, callback);
   }
 }
 

@@ -21,8 +21,10 @@
  * @requires dnd5e
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'DirtyJobs';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} DirtyJobStatistics
  * @property {number} initTime - Tempo inizializzazione (ms)
@@ -80,7 +82,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class DirtyJobsSystem {
   static VERSION = '3.0.0';
-  static MODULE_NAME = 'DirtyJobs';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'dirty-jobs';
 
   /**
@@ -281,7 +283,7 @@ class DirtyJobsSystem {
     const startTime = performance.now();
 
     try {
-      logger.info(this.MODULE_NAME, `Inizializzazione Dirty Jobs v${this.VERSION}`);
+      moduleLogger.info(`Inizializzazione Dirty Jobs v${this.VERSION}`);
 
       // Creazione istanza
       this._state.instance = new DirtyJobsSystem();
@@ -306,7 +308,7 @@ class DirtyJobsSystem {
           }
         } catch (error) {
           this._statistics.errors.push(`Ready hook: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore in ready hook', error);
+          moduleLogger.error('Errore in ready hook', error);
         }
       });
 
@@ -323,7 +325,7 @@ class DirtyJobsSystem {
       this._state.initialized = true;
       this._statistics.initTime = performance.now() - startTime;
 
-      logger.info(
+      moduleLogger.info(
         this.MODULE_NAME,
         `✅ Inizializzazione completata in ${this._statistics.initTime.toFixed(2)}ms`
       );
@@ -336,7 +338,7 @@ class DirtyJobsSystem {
       });
     } catch (error) {
       this._statistics.errors.push(error.message);
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -375,10 +377,10 @@ class DirtyJobsSystem {
         default: true
       });
 
-      logger.debug?.(this.MODULE_NAME, '3 settings registrati');
+      moduleLogger.debug?.('3 settings registrati');
     } catch (error) {
       this._statistics.errors.push(`Settings registration: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore registrazione settings', error);
+      moduleLogger.error('Errore registrazione settings', error);
       throw error;
     }
   }
@@ -410,7 +412,7 @@ class DirtyJobsSystem {
           }
         } catch (error) {
           this._statistics.errors.push(`renderJournalDirectory: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore in renderJournalDirectory hook', error);
+          moduleLogger.error('Errore in renderJournalDirectory hook', error);
         }
       });
 
@@ -422,7 +424,7 @@ class DirtyJobsSystem {
           }
         } catch (error) {
           this._statistics.errors.push(`updateJournalEntry: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore in updateJournalEntry hook', error);
+          moduleLogger.error('Errore in updateJournalEntry hook', error);
         }
       });
 
@@ -447,14 +449,14 @@ class DirtyJobsSystem {
           }
         } catch (error) {
           this._statistics.errors.push(`renderJournalSheet: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore in renderJournalSheet hook', error);
+          moduleLogger.error('Errore in renderJournalSheet hook', error);
         }
       });
 
-      logger.debug?.(this.MODULE_NAME, '3 hooks registrati');
+      moduleLogger.debug?.('3 hooks registrati');
     } catch (error) {
       this._statistics.errors.push(`Hook registration: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore registrazione hooks', error);
+      moduleLogger.error('Errore registrazione hooks', error);
       throw error;
     }
   }
@@ -596,15 +598,15 @@ class DirtyJobsSystem {
           return true;
         } catch (error) {
           this._statistics.errors.push(`Chat command: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore esecuzione comando chat', error);
+          moduleLogger.error('Errore esecuzione comando chat', error);
           return true;
         }
       });
 
-      logger.debug?.(this.MODULE_NAME, 'Comandi chat registrati');
+      moduleLogger.debug?.('Comandi chat registrati');
     } catch (error) {
       this._statistics.errors.push(`Chat commands registration: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore registrazione comandi chat', error);
+      moduleLogger.error('Errore registrazione comandi chat', error);
       throw error;
     }
   }
@@ -619,7 +621,7 @@ class DirtyJobsSystem {
       // Verifica se game.macros è disponibile
       if (!game?.macros) {
         // Debug silenzioso - riprova automaticamente durante init
-        logger.debug(
+        moduleLogger.debug(
           this.MODULE_NAME,
           'game.macros non ancora disponibile, retry automatico...'
         );
@@ -632,7 +634,7 @@ class DirtyJobsSystem {
           this._macroRetryCount++;
           setTimeout(() => this._createMacro(), 2000);
         } else {
-          logger.debug(this.MODULE_NAME, 'Macro creation skipped (game.macros not available)');
+          moduleLogger.debug('Macro creation skipped (game.macros not available)');
         }
         return;
       }
@@ -684,15 +686,15 @@ if (!game.user.isGM) {
       if (!existingMacro) {
         Macro.create(macroData).then(() => {
           this._statistics.macrosCreated++;
-          logger.info(this.MODULE_NAME, 'Macro Generatore Lavori Sporchi creata');
+          moduleLogger.info('Macro Generatore Lavori Sporchi creata');
         }).catch(error => {
           this._statistics.errors.push(`Macro creation: ${error.message}`);
-          logger.warn(this.MODULE_NAME, 'Errore creazione macro', error);
+          moduleLogger.warn('Errore creazione macro', error);
         });
       }
     } catch (error) {
       this._statistics.errors.push(`_createMacro: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore in _createMacro', error);
+      moduleLogger.error('Errore in _createMacro', error);
     }
   }
 
@@ -721,14 +723,14 @@ if (!game.user.isGM) {
       const jobData = this.jobTypes[type];
       if (!jobData) {
         ui.notifications.error('Tipo di lavoro non valido!');
-        logger.warn(DirtyJobsSystem.MODULE_NAME, `Tipo lavoro invalido: ${type}`);
+        moduleLogger.warn(`Tipo lavoro invalido: ${type}`);
         return null;
       }
 
       const difficultyData = jobData.difficulty[difficulty];
       if (!difficultyData) {
         ui.notifications.error('Difficoltà non valida!');
-        logger.warn(DirtyJobsSystem.MODULE_NAME, `Difficoltà invalida: ${difficulty}`);
+        moduleLogger.warn(`Difficoltà invalida: ${difficulty}`);
         return null;
       }
 
@@ -817,7 +819,7 @@ if (!game.user.isGM) {
       DirtyJobsSystem._statistics.jobsByType[type]++;
 
       const generationTime = performance.now() - startTime;
-      logger.info(
+      moduleLogger.info(
         DirtyJobsSystem.MODULE_NAME,
         `Lavoro generato: ${job.name} (${generationTime.toFixed(2)}ms)`
       );
@@ -849,7 +851,7 @@ if (!game.user.isGM) {
       return journal;
     } catch (error) {
       DirtyJobsSystem._statistics.errors.push(`generateJob: ${error.message}`);
-      logger.error(DirtyJobsSystem.MODULE_NAME, 'Errore generazione lavoro', error);
+      moduleLogger.error('Errore generazione lavoro', error);
       ui.notifications.error('Errore nella generazione del lavoro!');
       return null;
     }
@@ -922,7 +924,7 @@ if (!game.user.isGM) {
                 await this.generateJob(type, difficulty, options);
               } catch (error) {
                 DirtyJobsSystem._statistics.errors.push(`Dialog callback: ${error.message}`);
-                logger.error(DirtyJobsSystem.MODULE_NAME, 'Errore dialog callback', error);
+                moduleLogger.error('Errore dialog callback', error);
                 ui.notifications.error('Errore nella generazione del lavoro!');
               }
             }
@@ -935,7 +937,7 @@ if (!game.user.isGM) {
         default: 'generate'
       }).render(true);
 
-      logger.debug?.(DirtyJobsSystem.MODULE_NAME, 'Dialog generazione aperto');
+      moduleLogger.debug?.('Dialog generazione aperto');
 
       // Emit event
       Hooks.callAll('dirty-jobs:dialog-opened', {
@@ -943,7 +945,7 @@ if (!game.user.isGM) {
       });
     } catch (error) {
       DirtyJobsSystem._statistics.errors.push(`showJobGeneratorDialog: ${error.message}`);
-      logger.error(DirtyJobsSystem.MODULE_NAME, 'Errore apertura dialog', error);
+      moduleLogger.error('Errore apertura dialog', error);
       ui.notifications.error('Errore nell\'apertura del dialog!');
     }
   }
@@ -957,7 +959,7 @@ if (!game.user.isGM) {
     try {
       const job = journal.flags.brancalonia?.jobData;
       if (!job) {
-        logger.warn(DirtyJobsSystem.MODULE_NAME, 'Job data mancante nel journal');
+        moduleLogger.warn('Job data mancante nel journal');
         return;
       }
 
@@ -965,7 +967,7 @@ if (!game.user.isGM) {
       DirtyJobsSystem._statistics.totalGoldEarned += job.reward;
       DirtyJobsSystem._statistics.totalInfamyGained += job.infamyGain;
 
-      logger.info(
+      moduleLogger.info(
         DirtyJobsSystem.MODULE_NAME,
         `Lavoro completato: ${job.name} (${job.reward} oro, ${job.infamyGain} infamia)`
       );
@@ -993,7 +995,7 @@ if (!game.user.isGM) {
       });
     } catch (error) {
       DirtyJobsSystem._statistics.errors.push(`_handleJobCompletion: ${error.message}`);
-      logger.error(DirtyJobsSystem.MODULE_NAME, 'Errore gestione completamento', error);
+      moduleLogger.error('Errore gestione completamento', error);
     }
   }
 
@@ -1177,7 +1179,7 @@ if (!game.user.isGM) {
    * DirtyJobsSystem.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche Dirty Jobs');
+    moduleLogger.info('Reset statistiche Dirty Jobs');
 
     const initTime = this._statistics.initTime;
     const macrosCreated = this._statistics.macrosCreated;
@@ -1240,7 +1242,7 @@ if (!game.user.isGM) {
    */
   static async generateJobViaAPI(type, difficulty, options) {
     if (!this._state.instance) {
-      logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+      moduleLogger.error('Istanza non inizializzata');
       return null;
     }
     return await this._state.instance.generateJob(type, difficulty, options);
@@ -1254,7 +1256,7 @@ if (!game.user.isGM) {
    */
   static openDialog() {
     if (!this._state.instance) {
-      logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+      moduleLogger.error('Istanza non inizializzata');
       return;
     }
     this._state.instance.showJobGeneratorDialog();

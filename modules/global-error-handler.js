@@ -17,8 +17,10 @@
  * @requires brancalonia-logger.js
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'GlobalErrorHandler';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} ErrorHandlerStatistics
  * @property {number} initTime - Tempo inizializzazione (ms)
@@ -37,7 +39,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class GlobalErrorHandler {
   static VERSION = '3.0.0';
-  static MODULE_NAME = 'GlobalErrorHandler';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'global-error-handler';
 
   /**
@@ -75,7 +77,7 @@ class GlobalErrorHandler {
     const startTime = performance.now();
 
     try {
-      logger.info(this.MODULE_NAME, `Inizializzazione Global Error Handler v${this.VERSION}`);
+      moduleLogger.info(`Inizializzazione Global Error Handler v${this.VERSION}`);
 
       // Handler per unhandled promise rejections
       const listener = (event) => {
@@ -90,7 +92,7 @@ class GlobalErrorHandler {
             this._statistics.dialogErrorsSuppressed++;
             this._statistics.dialogClosures++;
 
-            logger.debug?.(this.MODULE_NAME, 'Dialog closed by user (handled)');
+            moduleLogger.debug?.('Dialog closed by user (handled)');
 
             // Emit event
             Hooks.callAll('error-handler:dialog-suppressed', {
@@ -103,11 +105,11 @@ class GlobalErrorHandler {
 
           // Altri errori - registra ma lascia propagare
           this._statistics.otherErrors++;
-          logger.warn(this.MODULE_NAME, 'Unhandled rejection detected (not suppressed)', reason);
+          moduleLogger.warn('Unhandled rejection detected (not suppressed)', reason);
 
         } catch (error) {
           this._statistics.errors.push(`listener: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore nel listener unhandledrejection', error);
+          moduleLogger.error('Errore nel listener unhandledrejection', error);
         }
       };
 
@@ -123,7 +125,7 @@ class GlobalErrorHandler {
 
       this._statistics.initTime = performance.now() - startTime;
 
-      logger.info(
+      moduleLogger.info(
         this.MODULE_NAME,
         `✅ Inizializzazione completata in ${this._statistics.initTime.toFixed(2)}ms`
       );
@@ -135,7 +137,7 @@ class GlobalErrorHandler {
 
     } catch (error) {
       this._statistics.errors.push(error.message);
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -174,11 +176,11 @@ class GlobalErrorHandler {
         window.removeEventListener('unhandledrejection', this._state.listener);
         this._state.listener = null;
         this._state.initialized = false;
-        logger.info(this.MODULE_NAME, 'Listener rimosso');
+        moduleLogger.info('Listener rimosso');
       }
     } catch (error) {
       this._statistics.errors.push(`cleanup: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore durante cleanup', error);
+      moduleLogger.error('Errore durante cleanup', error);
     }
   }
 }
@@ -224,7 +226,7 @@ GlobalErrorHandler.getStatistics = function() {
  * GlobalErrorHandler.resetStatistics();
  */
 GlobalErrorHandler.resetStatistics = function() {
-  logger.info(this.MODULE_NAME, 'Reset statistiche Global Error Handler');
+  moduleLogger.info('Reset statistiche Global Error Handler');
 
   const initTime = this._statistics.initTime;
 
@@ -264,10 +266,10 @@ window.GlobalErrorHandler = GlobalErrorHandler;
 // Auto-inizializzazione
 Hooks.once('init', () => {
   try {
-    logger.info(GlobalErrorHandler.MODULE_NAME, `🎮 Brancalonia | Inizializzazione ${GlobalErrorHandler.MODULE_NAME} v${GlobalErrorHandler.VERSION}`);
+    moduleLogger.info(`🎮 Brancalonia | Inizializzazione ${GlobalErrorHandler.MODULE_NAME} v${GlobalErrorHandler.VERSION}`);
     GlobalErrorHandler.initialize();
   } catch (error) {
-    logger.error(GlobalErrorHandler.MODULE_NAME, 'Errore inizializzazione hook init', error);
+    moduleLogger.error('Errore inizializzazione hook init', error);
   }
 });
 

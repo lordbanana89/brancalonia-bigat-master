@@ -3,8 +3,11 @@
  * Gestisce l'inizializzazione coordinata di tutti i componenti Brancalonia
  */
 
-import logger from '../../brancalonia-logger.js';
+import { createModuleLogger } from '../../brancalonia-logger.js';
 import moduleLoader from '../../brancalonia-module-loader.js';
+
+const MODULE_LABEL = 'Brancalonia Initialization Manager';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 export class BrancaloniaInitializationManager {
   static initialized = false;
@@ -27,7 +30,7 @@ export class BrancaloniaInitializationManager {
     // Ordina per priorità
     this.initializationSteps.sort((a, b) => a.priority - b.priority);
     
-    logger.debug('InitManager', `Registered initialization step: ${name}`, { priority, critical });
+    moduleLogger.debug(`Registered initialization step: ${name}`, { priority, critical });
   }
   
   /**
@@ -35,12 +38,12 @@ export class BrancaloniaInitializationManager {
    */
   static async initialize() {
     if (this.initialized) {
-      logger.warn('InitManager', 'Already initialized');
+      moduleLogger.warn('Already initialized');
       return;
     }
-    
-    logger.info('InitManager', 'Starting Brancalonia initialization');
-    logger.startPerformance('brancalonia-full-init');
+
+    moduleLogger.info('Starting Brancalonia initialization');
+    moduleLogger.startPerformance('brancalonia-full-init');
     
     try {
       // Esegui tutti i passi in ordine di priorità
@@ -49,12 +52,12 @@ export class BrancaloniaInitializationManager {
       }
       
       this.initialized = true;
-      const totalTime = logger.endPerformance('brancalonia-full-init');
+      const totalTime = moduleLogger.endPerformance('brancalonia-full-init');
       
       this.logInitializationSummary(totalTime);
       
     } catch (error) {
-      logger.error('InitManager', 'Initialization failed', error);
+      moduleLogger.error('Initialization failed', error);
       this.errors.push(error);
       throw error;
     }
@@ -64,8 +67,8 @@ export class BrancaloniaInitializationManager {
    * Esegue un singolo passo di inizializzazione
    */
   static async executeStep(step) {
-    logger.debug('InitManager', `Executing step: ${step.name}`);
-    logger.startPerformance(`init-step-${step.name}`);
+      moduleLogger.debug(`Executing step: ${step.name}`);
+    moduleLogger.startPerformance(`init-step-${step.name}`);
     
     try {
       if (typeof step.step === 'function') {
@@ -75,21 +78,21 @@ export class BrancaloniaInitializationManager {
       }
       
       step.completed = true;
-      const duration = logger.endPerformance(`init-step-${step.name}`);
+      const duration = moduleLogger.endPerformance(`init-step-${step.name}`);
       
-      logger.info('InitManager', `Completed step: ${step.name}`, { duration: `${duration.toFixed(2)}ms` });
+        moduleLogger.info(`Completed step: ${step.name}`, { duration: `${duration.toFixed(2)}ms` });
       
     } catch (error) {
       step.error = error;
       this.errors.push(error);
       
-      const duration = logger.endPerformance(`init-step-${step.name}`);
+      const duration = moduleLogger.endPerformance(`init-step-${step.name}`);
       
       if (step.critical) {
-        logger.error('InitManager', `Critical step failed: ${step.name}`, error);
+        moduleLogger.error(`Critical step failed: ${step.name}`, error);
         throw error;
       } else {
-        logger.warn('InitManager', `Non-critical step failed: ${step.name}`, error);
+        moduleLogger.warn(`Non-critical step failed: ${step.name}`, error);
       }
     }
   }
@@ -102,17 +105,16 @@ export class BrancaloniaInitializationManager {
     const failed = this.initializationSteps.filter(s => s.error).length;
     const total = this.initializationSteps.length;
     
-    logger.info(
-      'InitManager',
+    moduleLogger.info(
       `Initialization complete: ${completed}/${total} steps completed, ${failed} failed (${totalTime?.toFixed(2)}ms total)`
     );
     
     if (failed > 0) {
-      logger.group('Failed Initialization Steps');
+      moduleLogger.group('Failed Initialization Steps');
       for (const step of this.initializationSteps.filter(s => s.error)) {
-        logger.error('InitManager', `${step.name}: ${step.error.message}`);
+        moduleLogger.error(`${step.name}: ${step.error.message}`);
       }
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
     
     // Log performance dei passi più lenti
@@ -123,8 +125,8 @@ export class BrancaloniaInitializationManager {
       .slice(0, 5);
     
     if (slowSteps.length > 0) {
-      logger.debug('InitManager', 'Slowest initialization steps:');
-      logger.table(slowSteps);
+      moduleLogger.debug('Slowest initialization steps:');
+      moduleLogger.table(slowSteps);
     }
   }
   
@@ -154,11 +156,11 @@ export class BrancaloniaInitializationManager {
   static async reinitializeStep(stepName) {
     const step = this.initializationSteps.find(s => s.name === stepName);
     if (!step) {
-      logger.warn('InitManager', `Step not found: ${stepName}`);
+      moduleLogger.warn(`Step not found: ${stepName}`);
       return false;
     }
     
-    logger.info('InitManager', `Re-initializing step: ${stepName}`);
+    moduleLogger.info(`Re-initializing step: ${stepName}`);
     
     // Reset dello stato
     step.completed = false;
@@ -171,7 +173,7 @@ export class BrancaloniaInitializationManager {
       await this.executeStep(step);
       return true;
     } catch (error) {
-      logger.error('InitManager', `Re-initialization failed for step: ${stepName}`, error);
+      moduleLogger.error(`Re-initialization failed for step: ${stepName}`, error);
       return false;
     }
   }
@@ -197,7 +199,7 @@ export class BrancaloniaInitializationManager {
 BrancaloniaInitializationManager.registerStep(
   'logger-init',
   () => {
-    logger.info('InitManager', 'Logger initialized');
+    moduleLogger.info('Logger initialized');
   },
   0,
   true
@@ -216,7 +218,7 @@ BrancaloniaInitializationManager.registerStep(
   'css-optimization',
   () => {
     // CSS optimization will be handled by BrancaloniaCSSOptimizer
-    logger.debug('InitManager', 'CSS optimization step registered');
+    moduleLogger.debug('CSS optimization step registered');
   },
   10,
   false

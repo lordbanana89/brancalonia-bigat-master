@@ -301,31 +301,35 @@ class IntrugliSystem {
   }
 
   static async _promptSkill(actor, skills) {
-    return new Promise((resolve) => {
-      const options = skills.map((skill) => {
-        const label = CONFIG.DND5E.skills[skill]?.label ?? skill.toUpperCase();
-        const mod = actor.system?.skills?.[skill]?.total ?? 0;
-        const modStr = mod >= 0 ? `+${mod}` : mod;
-        return `<option value="${skill}">${label} (${modStr})</option>`;
-      }).join('');
+    const options = skills.map((skill) => {
+      const label = CONFIG.DND5E.skills[skill]?.label ?? skill.toUpperCase();
+      const mod = actor.system?.skills?.[skill]?.total ?? 0;
+      const modStr = mod >= 0 ? `+${mod}` : mod;
+      return `<option value="${skill}">${label} (${modStr})</option>`;
+    }).join('');
 
-      new Dialog({
-        title: 'Scegli abilità',
-        content: `<div class="intrugli-skill"><select id="intrugli-skill">${options}</select></div>`,
-        buttons: {
-          ok: {
-            label: 'Conferma',
-            icon: '<i class="fas fa-check"></i>',
-            callback: (html) => resolve(html.find('#intrugli-skill').val())
-          },
-          cancel: {
-            icon: '<i class="fas fa-times"></i>',
-            label: 'Annulla',
-            callback: () => resolve(null)
-          }
+    const result = await foundry.applications.api.DialogV2.prompt({
+      window: {
+        title: 'Scegli abilità'
+      },
+      content: `<div class="intrugli-skill"><select id="intrugli-skill">${options}</select></div>`,
+      ok: {
+        label: 'Conferma',
+        icon: 'fas fa-check',
+        callback: (event, button, dialogElement) => {
+          const select = dialogElement.querySelector('#intrugli-skill');
+          return select?.value ?? null;
         }
-      }).render(true);
+      },
+      reject: {
+        label: 'Annulla',
+        icon: 'fas fa-times'
+      },
+      modal: true,
+      rejectClose: false
     });
+
+    return result ?? null;
   }
 
   static async _rollSkill(actor, skill, recipe, optionalBonus) {

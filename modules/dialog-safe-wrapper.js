@@ -14,7 +14,7 @@
  * @requires brancalonia-logger.js
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
 /**
  * @typedef {Object} DialogStatistics
@@ -38,6 +38,7 @@ const statistics = {
 
 const VERSION = '2.0.0';
 const MODULE_NAME = 'Safe Dialog';
+const moduleLogger = createModuleLogger(MODULE_NAME);
 
 /**
  * Safe Dialog.confirm wrapper
@@ -64,12 +65,12 @@ export async function safeConfirm(config) {
   statistics.confirmCalls++;
   try {
     const result = await foundry.appv1.sheets.Dialog.confirm(config);
-    logger.debug(MODULE_NAME, 'Dialog confirm: utente ha scelto', result);
+    moduleLogger.debug('Dialog confirm: utente ha scelto', result);
     return result;
   } catch (err) {
     // Dialog closed without choice - return false
     statistics.confirmClosed++;
-    logger.debug(MODULE_NAME, 'Dialog confirm: chiuso senza scelta');
+    moduleLogger.debug('Dialog confirm: chiuso senza scelta');
     return false;
   }
 }
@@ -99,12 +100,12 @@ export async function safePrompt(config) {
   statistics.promptCalls++;
   try {
     const result = await foundry.appv1.sheets.Dialog.prompt(config);
-    logger.debug(MODULE_NAME, 'Dialog prompt: utente ha inserito valore');
+    moduleLogger.debug('Dialog prompt: utente ha inserito valore');
     return result;
   } catch (err) {
     // Dialog closed without input - return null
     statistics.promptClosed++;
-    logger.debug(MODULE_NAME, 'Dialog prompt: chiuso senza input');
+    moduleLogger.debug('Dialog prompt: chiuso senza input');
     return null;
   }
 }
@@ -138,12 +139,12 @@ export async function safeWait(config) {
   try {
     const dialog = new foundry.appv1.sheets.Dialog(config);
     const result = await dialog.wait();
-    logger.debug(MODULE_NAME, 'Dialog wait: utente ha scelto');
+    moduleLogger.debug('Dialog wait: utente ha scelto');
     return result;
   } catch (err) {
     // Dialog closed without choice - return null
     statistics.waitClosed++;
-    logger.debug(MODULE_NAME, 'Dialog wait: chiuso senza scelta');
+    moduleLogger.debug('Dialog wait: chiuso senza scelta');
     return null;
   }
 }
@@ -161,7 +162,7 @@ export function getStatistics() {
  * @returns {void}
  */
 export function resetStatistics() {
-  logger.info(MODULE_NAME, 'Reset statistiche Safe Dialog');
+  moduleLogger.info('Reset statistiche Safe Dialog');
   statistics.confirmCalls = 0;
   statistics.confirmClosed = 0;
   statistics.promptCalls = 0;
@@ -182,5 +183,5 @@ Hooks.once('init', () => {
     resetStatistics
   };
 
-  logger.info(MODULE_NAME, `✅ Safe Dialog wrapper v${VERSION} registered`);
+  moduleLogger.info(`✅ Safe Dialog wrapper v${VERSION} registered`);
 });

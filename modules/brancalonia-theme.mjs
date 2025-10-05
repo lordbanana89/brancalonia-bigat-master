@@ -30,10 +30,12 @@
  * await BrancaloniaThemeOrchestrator.applyTheme('taverna');
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 import { MODULE, registerSettings } from './settings.mjs';
 import { Theme } from './theme.mjs';
 
+const MODULE_LABEL = 'Theme Orchestrator';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} OrchestratorStatus
  * @property {boolean} initialized - Se orchestrator è inizializzato
@@ -61,7 +63,7 @@ import { Theme } from './theme.mjs';
  */
 class BrancaloniaThemeOrchestrator {
   static VERSION = '5.0.0';
-  static MODULE_NAME = 'Theme Orchestrator';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Statistiche del sistema orchestrator
@@ -99,8 +101,8 @@ class BrancaloniaThemeOrchestrator {
    * @fires theme:orchestrator-initialized
    */
   static initialize() {
-    logger.startPerformance('theme-orchestrator-init');
-    logger.info(this.MODULE_NAME, `Inizializzazione Orchestrator v${this.VERSION}...`);
+    moduleLogger.startPerformance('theme-orchestrator-init');
+    moduleLogger.info(`Inizializzazione Orchestrator v${this.VERSION}...`);
 
     try {
       // Rileva sistema D&D 5e
@@ -116,13 +118,13 @@ class BrancaloniaThemeOrchestrator {
       this._state.initialized = true;
 
       // Track init time
-      const initTime = logger.endPerformance('theme-orchestrator-init');
+      const initTime = moduleLogger.endPerformance('theme-orchestrator-init');
       this.statistics.initTime = initTime;
 
-      logger.info(this.MODULE_NAME, `Orchestrator inizializzato in ${initTime?.toFixed(2)}ms`);
+      moduleLogger.info(`Orchestrator inizializzato in ${initTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('theme:orchestrator-initialized', {
+      moduleLogger.events.emit('theme:orchestrator-initialized', {
         version: this.VERSION,
         themeEnabled: this._state.themeEnabled,
         currentPreset: this._state.currentPreset,
@@ -132,7 +134,7 @@ class BrancaloniaThemeOrchestrator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       this.statistics.errors.push({
         type: 'initialization',
         message: error.message,
@@ -154,13 +156,13 @@ class BrancaloniaThemeOrchestrator {
       this.statistics.dnd5eSystem = isDnD5e;
 
       if (isDnD5e) {
-        logger.info(this.MODULE_NAME, '✅ Sistema D&D 5e rilevato');
+        moduleLogger.info('✅ Sistema D&D 5e rilevato');
       } else {
-        logger.warn(this.MODULE_NAME, `⚠️ Sistema non-D&D 5e rilevato: ${game.system.id}`);
+        moduleLogger.warn(`⚠️ Sistema non-D&D 5e rilevato: ${game.system.id}`);
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore rilevamento D&D 5e', error);
+      moduleLogger.error('Errore rilevamento D&D 5e', error);
       this._state.dnd5eDetected = false;
       this.statistics.dnd5eSystem = false;
     }
@@ -175,9 +177,9 @@ class BrancaloniaThemeOrchestrator {
   static _registerSettings() {
     try {
       registerSettings();
-      logger.debug(this.MODULE_NAME, 'Settings registrate con successo');
+      moduleLogger.debug('Settings registrate con successo');
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione settings', error);
+      moduleLogger.error('Errore registrazione settings', error);
       this.statistics.errors.push({
         type: 'settings-registration',
         message: error.message,
@@ -207,13 +209,13 @@ class BrancaloniaThemeOrchestrator {
         theme.apply();
 
         this.statistics.themeApplyCount++;
-        logger.info(this.MODULE_NAME, `Tema applicato: preset "${preset}"`);
+        moduleLogger.info(`Tema applicato: preset "${preset}"`);
       } else {
-        logger.info(this.MODULE_NAME, 'Tema disabilitato nelle impostazioni');
+        moduleLogger.info('Tema disabilitato nelle impostazioni');
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore applicazione tema iniziale', error);
+      moduleLogger.error('Errore applicazione tema iniziale', error);
       this.statistics.errors.push({
         type: 'initial-theme-apply',
         message: error.message,
@@ -229,8 +231,8 @@ class BrancaloniaThemeOrchestrator {
    * @fires theme:orchestrator-ready
    */
   static setupReady() {
-    logger.startPerformance('theme-orchestrator-ready');
-    logger.info(this.MODULE_NAME, 'Setup hook ready...');
+    moduleLogger.startPerformance('theme-orchestrator-ready');
+    moduleLogger.info('Setup hook ready...');
 
     try {
       // Setup D&D 5e sheets integration
@@ -245,14 +247,14 @@ class BrancaloniaThemeOrchestrator {
       this._state.ready = true;
 
       // Track ready time
-      const readyTime = logger.endPerformance('theme-orchestrator-ready');
+      const readyTime = moduleLogger.endPerformance('theme-orchestrator-ready');
       this.statistics.readyTime = readyTime;
 
-      logger.info(this.MODULE_NAME, `Sistema tema pronto in ${readyTime?.toFixed(2)}ms`);
-      logger.info(this.MODULE_NAME, 'Per reset emergenza: brancaloniaResetTheme()');
+      moduleLogger.info(`Sistema tema pronto in ${readyTime?.toFixed(2)}ms`);
+      moduleLogger.info('Per reset emergenza: brancaloniaResetTheme()');
 
       // Emit event
-      logger.events.emit('theme:orchestrator-ready', {
+      moduleLogger.events.emit('theme:orchestrator-ready', {
         sheetsProcessed: this.statistics.sheetsProcessed,
         itemSheetsProcessed: this.statistics.itemSheetsProcessed,
         readyTime,
@@ -260,7 +262,7 @@ class BrancaloniaThemeOrchestrator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante setup ready', error);
+      moduleLogger.error('Errore durante setup ready', error);
       this.statistics.errors.push({
         type: 'ready-setup',
         message: error.message,
@@ -278,7 +280,7 @@ class BrancaloniaThemeOrchestrator {
    */
   static _setupDnD5eSheetsIntegration() {
     try {
-      logger.debug(this.MODULE_NAME, 'Setup integrazione D&D 5e sheets...');
+      moduleLogger.debug('Setup integrazione D&D 5e sheets...');
 
       // Hook renderApplication per D&D 5e v5+ compatibility
       Hooks.on('renderApplication', (app, html, data) => {
@@ -296,10 +298,10 @@ class BrancaloniaThemeOrchestrator {
 
           this.statistics.sheetsProcessed++;
 
-          logger.debug(this.MODULE_NAME, `Sheet processata: ${app.actor.name} (total: ${this.statistics.sheetsProcessed})`);
+          moduleLogger.debug(`Sheet processata: ${app.actor.name} (total: ${this.statistics.sheetsProcessed})`);
 
           // Emit event
-          logger.events.emit('theme:sheet-processed', {
+          moduleLogger.events.emit('theme:sheet-processed', {
             actorName: app.actor.name,
             actorType: app.actor.type,
             sheetType: 'actor',
@@ -308,7 +310,7 @@ class BrancaloniaThemeOrchestrator {
           });
 
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore processing actor sheet', error);
+          moduleLogger.error('Errore processing actor sheet', error);
         }
       });
 
@@ -324,24 +326,24 @@ class BrancaloniaThemeOrchestrator {
 
           this.statistics.itemSheetsProcessed++;
 
-          logger.debug(this.MODULE_NAME, `Item sheet processata (total: ${this.statistics.itemSheetsProcessed})`);
+          moduleLogger.debug(`Item sheet processata (total: ${this.statistics.itemSheetsProcessed})`);
 
           // Emit event
-          logger.events.emit('theme:sheet-processed', {
+          moduleLogger.events.emit('theme:sheet-processed', {
             sheetType: 'item',
             totalProcessed: this.statistics.itemSheetsProcessed,
             timestamp: Date.now()
           });
 
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore processing item sheet', error);
+          moduleLogger.error('Errore processing item sheet', error);
         }
       });
 
-      logger.info(this.MODULE_NAME, 'Integrazione D&D 5e sheets configurata');
+      moduleLogger.info('Integrazione D&D 5e sheets configurata');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore setup D&D 5e integration', error);
+      moduleLogger.error('Errore setup D&D 5e integration', error);
       this.statistics.errors.push({
         type: 'dnd5e-integration-setup',
         message: error.message,
@@ -363,10 +365,10 @@ class BrancaloniaThemeOrchestrator {
         return await this.resetTheme();
       };
 
-      logger.debug(this.MODULE_NAME, 'Comando reset emergenza configurato: window.brancaloniaResetTheme()');
+      moduleLogger.debug('Comando reset emergenza configurato: window.brancaloniaResetTheme()');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore setup comando reset', error);
+      moduleLogger.error('Errore setup comando reset', error);
     }
   }
 
@@ -421,7 +423,7 @@ class BrancaloniaThemeOrchestrator {
    */
   static async applyTheme(preset) {
     try {
-      logger.info(this.MODULE_NAME, `Applicazione tema: ${preset}`);
+      moduleLogger.info(`Applicazione tema: ${preset}`);
 
       const { THEMES } = await import('./settings.mjs');
 
@@ -441,17 +443,17 @@ class BrancaloniaThemeOrchestrator {
       this._state.currentPreset = preset;
       this.statistics.themeApplyCount++;
 
-      logger.info(this.MODULE_NAME, `Tema "${preset}" applicato con successo`);
+      moduleLogger.info(`Tema "${preset}" applicato con successo`);
 
       // Emit event
-      logger.events.emit('theme:applied', {
+      moduleLogger.events.emit('theme:applied', {
         preset,
         applyCount: this.statistics.themeApplyCount,
         timestamp: Date.now()
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore applicazione tema "${preset}"`, error);
+      moduleLogger.error(`Errore applicazione tema "${preset}"`, error);
       this.statistics.errors.push({
         type: 'theme-apply',
         message: error.message,
@@ -473,7 +475,7 @@ class BrancaloniaThemeOrchestrator {
    */
   static async resetTheme() {
     try {
-      logger.info(this.MODULE_NAME, 'Reset tema ai valori default...');
+      moduleLogger.info('Reset tema ai valori default...');
 
       const { THEMES } = await import('./settings.mjs');
       const defaultTheme = THEMES.default;
@@ -488,10 +490,10 @@ class BrancaloniaThemeOrchestrator {
       this.statistics.resetCount++;
 
       ui.notifications.info('Tema ripristinato ai valori default');
-      logger.info(this.MODULE_NAME, 'Tema ripristinato con successo');
+      moduleLogger.info('Tema ripristinato con successo');
 
       // Emit event
-      logger.events.emit('theme:reset', {
+      moduleLogger.events.emit('theme:reset', {
         resetCount: this.statistics.resetCount,
         timestamp: Date.now()
       });
@@ -499,7 +501,7 @@ class BrancaloniaThemeOrchestrator {
       return 'Tema ripristinato ai valori default!';
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore reset tema', error);
+      moduleLogger.error('Errore reset tema', error);
       this.statistics.errors.push({
         type: 'theme-reset',
         message: error.message,
@@ -517,7 +519,7 @@ class BrancaloniaThemeOrchestrator {
    * BrancaloniaThemeOrchestrator.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche');
+    moduleLogger.info('Reset statistiche');
 
     const initTime = this.statistics.initTime;
     const readyTime = this.statistics.readyTime;
@@ -534,7 +536,7 @@ class BrancaloniaThemeOrchestrator {
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -548,14 +550,14 @@ class BrancaloniaThemeOrchestrator {
     const stats = this.getStatistics();
     const status = this.getStatus();
 
-    logger.group('📊 Brancalonia Theme Orchestrator - Report');
+    moduleLogger.group('📊 Brancalonia Theme Orchestrator - Report');
 
-    logger.info(this.MODULE_NAME, 'VERSION:', this.VERSION);
-    logger.info(this.MODULE_NAME, 'Initialized:', status.initialized);
-    logger.info(this.MODULE_NAME, 'Ready:', status.ready);
+    moduleLogger.info('VERSION:', this.VERSION);
+    moduleLogger.info('Initialized:', status.initialized);
+    moduleLogger.info('Ready:', status.ready);
 
-    logger.group('📈 Statistics');
-    logger.table([
+    moduleLogger.group('📈 Statistics');
+    moduleLogger.table([
       { Metric: 'Init Time', Value: `${stats.initTime?.toFixed(2)}ms` },
       { Metric: 'Ready Time', Value: `${stats.readyTime?.toFixed(2)}ms` },
       { Metric: 'Sheets Processed', Value: stats.sheetsProcessed },
@@ -566,23 +568,23 @@ class BrancaloniaThemeOrchestrator {
       { Metric: 'Errors', Value: stats.errors.length },
       { Metric: 'Uptime', Value: `${(stats.uptime / 1000).toFixed(0)}s` }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('⚙️ Status');
-    logger.info(this.MODULE_NAME, 'Theme Enabled:', status.themeEnabled);
-    logger.info(this.MODULE_NAME, 'Current Preset:', status.currentPreset);
-    logger.info(this.MODULE_NAME, 'D&D 5e Detected:', status.dnd5eDetected);
-    logger.groupEnd();
+    moduleLogger.group('⚙️ Status');
+    moduleLogger.info('Theme Enabled:', status.themeEnabled);
+    moduleLogger.info('Current Preset:', status.currentPreset);
+    moduleLogger.info('D&D 5e Detected:', status.dnd5eDetected);
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors');
+      moduleLogger.group('🐛 Errors');
       stats.errors.forEach((err, i) => {
-        logger.error(this.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return stats;
   }

@@ -11,12 +11,14 @@
  */
 
 import moduleLoader from './brancalonia-module-loader.js';
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'ModulesInitFix';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 // Classe per gestire l'inizializzazione
 class BrancaloniaInitFix {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'ModulesInitFix';
+  static MODULE_NAME = MODULE_LABEL;
 
   static statistics = {
     modulesRegistered: 0,
@@ -31,8 +33,8 @@ class BrancaloniaInitFix {
    * Inizializzazione centralizzata di game.brancalonia
    */
   static initializeGameBrancalonia() {
-    logger.startPerformance('init-fix-init');
-    logger.info(this.MODULE_NAME, 'Ensuring proper initialization');
+    moduleLogger.startPerformance('init-fix-init');
+    moduleLogger.info('Ensuring proper initialization');
 
     this.statistics.startTime = Date.now();
 
@@ -64,13 +66,13 @@ class BrancaloniaInitFix {
             BrancaloniaInitFix.statistics.modulesRegistered++;
             
             // Emit event
-            logger.events.emit('init-fix:module-registered', {
+            moduleLogger.events.emit('init-fix:module-registered', {
               moduleName,
               moduleData,
               timestamp: Date.now()
             });
             
-            logger.debug(BrancaloniaInitFix.MODULE_NAME, `Module registered: ${moduleName}`);
+            moduleLogger.debug(`Module registered: ${moduleName}`);
           }
           return game.brancalonia.modules[moduleName];
         },
@@ -83,13 +85,13 @@ class BrancaloniaInitFix {
       };
     }
 
-    const initTime = logger.endPerformance('init-fix-init');
+    const initTime = moduleLogger.endPerformance('init-fix-init');
     this.statistics.initTime = initTime;
     
-    logger.info(this.MODULE_NAME, `game.brancalonia protected and ready (${initTime?.toFixed(2)}ms)`);
+    moduleLogger.info(`game.brancalonia protected and ready (${initTime?.toFixed(2)}ms)`);
     
     // Emit event
-    logger.events.emit('init-fix:initialized', {
+    moduleLogger.events.emit('init-fix:initialized', {
       version: game.brancalonia.version,
       initTime,
       timestamp: Date.now()
@@ -142,12 +144,12 @@ Hooks.once('init', () => {
 
 // Hook per inizializzazione moduli con gestione errori robusta
 Hooks.once('ready', async () => {
-  logger.startPerformance('init-fix-ready');
-  logger.info(BrancaloniaInitFix.MODULE_NAME, 'Coordinating Brancalonia module initialization');
+  moduleLogger.startPerformance('init-fix-ready');
+  moduleLogger.info('Coordinating Brancalonia module initialization');
 
   const loaderStatus = moduleLoader.exportLoadingReport();
   if (loaderStatus.errors.length > 0) {
-    logger.warn(BrancaloniaInitFix.MODULE_NAME, 'Some modules reported errors during loading', loaderStatus.errors);
+    moduleLogger.warn('Some modules reported errors during loading', loaderStatus.errors);
     BrancaloniaInitFix.statistics.errors.push(...loaderStatus.errors.map(e => e.module));
   }
 
@@ -156,7 +158,7 @@ Hooks.once('ready', async () => {
     .filter(([name, config]) => !moduleLoader.getModuleStatus(name).loaded && !config.lazy)
     .length;
 
-  logger.info(BrancaloniaInitFix.MODULE_NAME, `Loading ${totalToLoad} remaining modules...`);
+  moduleLogger.info(`Loading ${totalToLoad} remaining modules...`);
 
   for (const [name, config] of moduleLoader.getConfiguredModules()) {
     const status = moduleLoader.getModuleStatus(name);
@@ -171,9 +173,9 @@ Hooks.once('ready', async () => {
       loadedCount++;
       BrancaloniaInitFix.statistics.modulesInitialized++;
       
-      logger.debug(BrancaloniaInitFix.MODULE_NAME, `Progress: ${loadedCount}/${totalToLoad} modules loaded`);
+      moduleLogger.debug(`Progress: ${loadedCount}/${totalToLoad} modules loaded`);
     } catch (error) {
-      logger.error(BrancaloniaInitFix.MODULE_NAME, `Unable to load module ${name} during ready phase`, error);
+      moduleLogger.error(`Unable to load module ${name} during ready phase`, error);
       BrancaloniaInitFix.statistics.errors.push(name);
     }
   }
@@ -181,12 +183,12 @@ Hooks.once('ready', async () => {
   // Marca come inizializzato
   game.brancalonia.initialized = true;
 
-  const readyTime = logger.endPerformance('init-fix-ready');
+  const readyTime = moduleLogger.endPerformance('init-fix-ready');
   BrancaloniaInitFix.statistics.readyTime = readyTime;
 
   const stats = BrancaloniaInitFix.getStatistics();
   
-  logger.info(
+  moduleLogger.info(
     BrancaloniaInitFix.MODULE_NAME,
     `Initialization complete in ${readyTime?.toFixed(2)}ms`,
     {
@@ -198,7 +200,7 @@ Hooks.once('ready', async () => {
   );
 
   // Emit event
-  logger.events.emit('init-fix:ready', {
+  moduleLogger.events.emit('init-fix:ready', {
     version: game.brancalonia.version,
     modulesCount: stats.modulesInGame,
     readyTime,
@@ -261,7 +263,7 @@ Hooks.on('chatMessage', (html, content, msg) => {
 
 // Funzione per mostrare lo stato dei moduli
 function showBrancaloniaStatus() {
-  logger.info(BrancaloniaInitFix.MODULE_NAME, 'Generating status report');
+  moduleLogger.info('Generating status report');
   
   const modules = game.brancalonia?.modules || {};
   const stats = BrancaloniaInitFix.getStatistics();
@@ -332,18 +334,18 @@ function showBrancaloniaStatus() {
     whisper: [game.user.id]
   });
   
-  logger.debug(BrancaloniaInitFix.MODULE_NAME, 'Status report sent', stats);
+  moduleLogger.debug('Status report sent', stats);
 }
 
 // Funzione per reset moduli (solo GM)
 async function resetBrancaloniaModules() {
   if (!game.user.isGM) {
     ui.notifications.warn('Solo il GM può resettare i moduli Brancalonia');
-    logger.warn(BrancaloniaInitFix.MODULE_NAME, 'Non-GM user attempted reset');
+    moduleLogger.warn('Non-GM user attempted reset');
     return;
   }
 
-  logger.info(BrancaloniaInitFix.MODULE_NAME, 'Reset requested by GM');
+  moduleLogger.info('Reset requested by GM');
 
   try {
     const stats = BrancaloniaInitFix.getStatistics();
@@ -369,10 +371,10 @@ async function resetBrancaloniaModules() {
     });
 
     if (confirm) {
-      logger.warn(BrancaloniaInitFix.MODULE_NAME, 'Resetting all Brancalonia modules');
+      moduleLogger.warn('Resetting all Brancalonia modules');
       
       // Emit event
-      logger.events.emit('init-fix:reset', {
+      moduleLogger.events.emit('init-fix:reset', {
         timestamp: Date.now(),
         statistics: stats
       });
@@ -398,11 +400,11 @@ async function resetBrancaloniaModules() {
         location.reload();
       }, 500);
     } else {
-      logger.debug(BrancaloniaInitFix.MODULE_NAME, 'Reset cancelled by user');
+      moduleLogger.debug('Reset cancelled by user');
     }
   } catch (err) {
     // Dialog chiuso senza scelta - ignora
-    logger.debug(BrancaloniaInitFix.MODULE_NAME, 'Reset cancelled (dialog closed)');
+    moduleLogger.debug('Reset cancelled (dialog closed)');
   }
 }
 
@@ -410,7 +412,7 @@ async function resetBrancaloniaModules() {
 Hooks.once('ready', () => {
   if (typeof window !== 'undefined') {
     window.BrancaloniaInitFix = BrancaloniaInitFix;
-    logger.debug(BrancaloniaInitFix.MODULE_NAME, 'API exposed globally as window.BrancaloniaInitFix');
+    moduleLogger.debug('API exposed globally as window.BrancaloniaInitFix');
   }
 });
 

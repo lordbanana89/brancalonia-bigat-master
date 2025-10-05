@@ -12,12 +12,15 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Tavern Entertainment';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class BrancaloniaTavernEntertainment {
   static ID = 'brancalonia-bigat';
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Tavern Entertainment';
+  static MODULE_NAME = MODULE_LABEL;
 
   // Statistics tracking (enterprise-grade)
   static statistics = {
@@ -46,8 +49,8 @@ class BrancaloniaTavernEntertainment {
    */
   static initialize() {
     try {
-      logger.startPerformance('tavern-entertainment-init');
-      logger.info(this.MODULE_NAME, '🍺 Inizializzazione Sistema Taverne...');
+      moduleLogger.startPerformance('tavern-entertainment-init');
+      moduleLogger.info('🍺 Inizializzazione Sistema Taverne...');
 
       // Registra settings
       this.registerSettings();
@@ -70,11 +73,11 @@ class BrancaloniaTavernEntertainment {
       this.setupBagordi();
 
       this._state.initialized = true;
-      const perfTime = logger.endPerformance('tavern-entertainment-init');
-      logger.info(this.MODULE_NAME, `✅ Sistema Taverne inizializzato con successo (${perfTime?.toFixed(2)}ms)`);
+      const perfTime = moduleLogger.endPerformance('tavern-entertainment-init');
+      moduleLogger.info(`✅ Sistema Taverne inizializzato con successo (${perfTime?.toFixed(2)}ms)`);
       
       // Event emitter
-      logger.events.emit('tavern-entertainment:initialized', {
+      moduleLogger.events.emit('tavern-entertainment:initialized', {
         version: this.VERSION,
         timestamp: Date.now()
       });
@@ -84,7 +87,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione Sistema Taverne', error);
+      moduleLogger.error('Errore inizializzazione Sistema Taverne', error);
       ui.notifications.error('Errore durante l\'inizializzazione del sistema taverne');
     }
   }
@@ -137,7 +140,7 @@ class BrancaloniaTavernEntertainment {
     });
 
     this._state.settingsRegistered = true;
-    logger.info(this.MODULE_NAME, '✅ Settings Sistema Taverne registrate');
+    moduleLogger.info('✅ Settings Sistema Taverne registrate');
   }
 
   /**
@@ -178,7 +181,7 @@ class BrancaloniaTavernEntertainment {
     });
 
     this._state.hooksRegistered = true;
-    logger.info(this.MODULE_NAME, '✅ Hooks Sistema Taverne registrati');
+    moduleLogger.info('✅ Hooks Sistema Taverne registrati');
   }
 
   /**
@@ -222,7 +225,7 @@ class BrancaloniaTavernEntertainment {
       }
     });
 
-    logger.info(this.MODULE_NAME, '✅ Comandi chat Sistema Taverne registrati');
+    moduleLogger.info('✅ Comandi chat Sistema Taverne registrati');
   }
 
   /**
@@ -274,9 +277,9 @@ class BrancaloniaTavernEntertainment {
         if (!existing) {
           await Macro.create(macroData);
           this.statistics.macrosCreated++;
-          logger.info(this.MODULE_NAME, `✅ Macro "${macroData.name}" creata`);
+          moduleLogger.info(`✅ Macro "${macroData.name}" creata`);
         } else {
-          logger.debug?.(this.MODULE_NAME, `Macro "${macroData.name}" già esistente`);
+          moduleLogger.debug?.(`Macro "${macroData.name}" già esistente`);
         }
       } catch (error) {
         this.statistics.errors.push({ 
@@ -284,7 +287,7 @@ class BrancaloniaTavernEntertainment {
           message: `${macroData.name}: ${error.message}`, 
           timestamp: Date.now() 
         });
-        logger.error(this.MODULE_NAME, `Errore creazione macro ${macroData.name}`, error);
+        moduleLogger.error(`Errore creazione macro ${macroData.name}`, error);
       }
     }
   }
@@ -332,7 +335,7 @@ class BrancaloniaTavernEntertainment {
     };
 
     this._state.gamesConfigured = true;
-    logger.info(this.MODULE_NAME, '🎲 Giochi da taverna configurati');
+    moduleLogger.info('🎲 Giochi da taverna configurati');
   }
 
   /**
@@ -365,7 +368,7 @@ class BrancaloniaTavernEntertainment {
     ];
 
     this._state.bagordiConfigured = true;
-    logger.info(this.MODULE_NAME, '🍺 Sistema bagordi configurato');
+    moduleLogger.info('🍺 Sistema bagordi configurato');
   }
 
   /**
@@ -384,7 +387,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore canvas ready', error);
+      moduleLogger.error('Errore canvas ready', error);
     }
   }
 
@@ -417,7 +420,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore aggiunta controlli taverna', error);
+      moduleLogger.error('Errore aggiunta controlli taverna', error);
     }
   }
 
@@ -432,7 +435,7 @@ class BrancaloniaTavernEntertainment {
       await canvas.scene.setFlag(this.ID, 'isTavern', !isTavern);
 
       const message = !isTavern ? 'Modalità Taverna ATTIVATA' : 'Modalità Taverna DISATTIVATA';
-      logger.info(this.MODULE_NAME, message);
+      moduleLogger.info(message);
       ui.notifications.info(message);
 
       if (!isTavern) {
@@ -444,7 +447,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore toggle taverna', error);
+      moduleLogger.error('Errore toggle taverna', error);
     }
   }
 
@@ -468,7 +471,7 @@ class BrancaloniaTavernEntertainment {
         const spent = oldGold - newGold;
         const totalSpent = (actor.getFlag(this.ID, 'totalSpent') || 0) + spent;
         actor.setFlag(this.ID, 'totalSpent', totalSpent);
-        logger.debug?.(this.MODULE_NAME, `${actor.name} ha speso ${spent} mo (totale: ${totalSpent})`);
+        moduleLogger.debug?.(`${actor.name} ha speso ${spent} mo (totale: ${totalSpent})`);
       }
     } catch (error) {
       this.statistics.errors.push({ 
@@ -476,7 +479,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore tracking oro', error);
+      moduleLogger.error('Errore tracking oro', error);
     }
   }
 
@@ -562,7 +565,7 @@ class BrancaloniaTavernEntertainment {
 
       const result = this.bagordiResults.find(r => r.roll === roll.total);
       
-      logger.info(this.MODULE_NAME, `🍺 Bagordi: ${actor.name} - Risultato ${roll.total}: ${result.title}`);
+      moduleLogger.info(`🍺 Bagordi: ${actor.name} - Risultato ${roll.total}: ${result.title}`);
 
       const messageContent = `
         <div class="brancalonia-message bagordi-result">
@@ -588,7 +591,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore risultato bagordi', error);
+      moduleLogger.error('Errore risultato bagordi', error);
       ui.notifications.error('Errore durante i bagordi');
     }
   }
@@ -606,13 +609,13 @@ class BrancaloniaTavernEntertainment {
       switch (result.roll) {
         case 1: // Arrestato
           const days = await new Roll('1d6').evaluate();
-          logger.info(this.MODULE_NAME, `${actor.name} arrestato per ${days.total} giorni`);
+          moduleLogger.info(`${actor.name} arrestato per ${days.total} giorni`);
           ui.notifications.warn(`${actor.name} è in prigione per ${days.total} giorni!`);
           break;
 
         case 2: // Derubato
           await actor.update({ 'system.currency.gp': 0 });
-          logger.warn(this.MODULE_NAME, `${actor.name} derubato di tutto l'oro`);
+          moduleLogger.warn(`${actor.name} derubato di tutto l'oro`);
           ui.notifications.error(`${actor.name} è stato derubato di tutto!`);
           break;
 
@@ -626,7 +629,7 @@ class BrancaloniaTavernEntertainment {
           
           await actor.update({ 'system.attributes.exhaustion': newExhaustion });
           
-          logger.warn(this.MODULE_NAME, `${actor.name} riceve ${exhaustionLevels} livelli di exhaustion (totale: ${newExhaustion})`);
+          moduleLogger.warn(`${actor.name} riceve ${exhaustionLevels} livelli di exhaustion (totale: ${newExhaustion})`);
           ui.notifications.warn(`${actor.name} ha ${exhaustionLevels} livelli di indebolimento! (Totale: ${newExhaustion}/6)`);
           break;
 
@@ -643,14 +646,14 @@ class BrancaloniaTavernEntertainment {
             }]
           };
           await actor.createEmbeddedDocuments('ActiveEffect', [effect]);
-          logger.info(this.MODULE_NAME, `${actor.name} ha Sbornia (svantaggio tiri salvezza CON per 24 ore)`);
+          moduleLogger.info(`${actor.name} ha Sbornia (svantaggio tiri salvezza CON per 24 ore)`);
           break;
 
         case 12: // Fortuna al gioco
           const refund = Math.floor(goldSpent / 2);
           await actor.update({ 'system.currency.gp': actor.system.currency.gp + refund });
           this.statistics.totalGoldWon += refund;
-          logger.info(this.MODULE_NAME, `${actor.name} recupera ${refund} mo`);
+          moduleLogger.info(`${actor.name} recupera ${refund} mo`);
           ui.notifications.info(`${actor.name} recupera ${refund} mo!`);
           break;
 
@@ -658,21 +661,21 @@ class BrancaloniaTavernEntertainment {
           const bonus = await new Roll('1d6').evaluate();
           await actor.update({ 'system.currency.gp': actor.system.currency.gp + bonus.total });
           this.statistics.totalGoldWon += bonus.total;
-          logger.info(this.MODULE_NAME, `${actor.name} vince ${bonus.total} mo extra`);
+          moduleLogger.info(`${actor.name} vince ${bonus.total} mo extra`);
           ui.notifications.info(`${actor.name} vince ${bonus.total} mo extra!`);
           break;
 
         case 18: // Reputazione
           const currentRep = actor.getFlag(this.ID, 'reputation') || 0;
           await actor.setFlag(this.ID, 'reputation', currentRep + 1);
-          logger.info(this.MODULE_NAME, `${actor.name} reputazione +1 (totale: ${currentRep + 1})`);
+          moduleLogger.info(`${actor.name} reputazione +1 (totale: ${currentRep + 1})`);
           break;
 
         case 20: // Jackpot
           const jackpot = goldSpent * 2;
           await actor.update({ 'system.currency.gp': actor.system.currency.gp + jackpot });
           this.statistics.totalGoldWon += jackpot;
-          logger.info(this.MODULE_NAME, `🎰 ${actor.name} JACKPOT! Vince ${jackpot} mo`);
+          moduleLogger.info(`🎰 ${actor.name} JACKPOT! Vince ${jackpot} mo`);
           ui.notifications.info(`${actor.name} vince ${jackpot} mo!`);
           break;
       }
@@ -682,7 +685,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore applicazione effetti bagordi', error);
+      moduleLogger.error('Errore applicazione effetti bagordi', error);
     }
   }
 
@@ -789,7 +792,7 @@ class BrancaloniaTavernEntertainment {
         return;
       }
 
-      logger.info(this.MODULE_NAME, `🎲 ${actor.name} gioca a ${game.name} (posta: ${stake} mo, difficoltà: ${difficulty})`);
+      moduleLogger.info(`🎲 ${actor.name} gioca a ${game.name} (posta: ${stake} mo, difficoltà: ${difficulty})`);
 
       // Controlla oro se necessario
       if (stake > 0 && actor.system.currency.gp < stake) {
@@ -880,9 +883,9 @@ class BrancaloniaTavernEntertainment {
           const currentHp = actor.system.attributes.hp.value;
           const newHp = Math.max(0, currentHp - totalDamage);
           await actor.update({ 'system.attributes.hp.value': newHp });
-          logger.info(this.MODULE_NAME, `${actor.name} subisce ${totalDamage} danni (HP: ${currentHp} -> ${newHp})`);
+          moduleLogger.info(`${actor.name} subisce ${totalDamage} danni (HP: ${currentHp} -> ${newHp})`);
         } else {
-          logger.debug?.(this.MODULE_NAME, `${actor.name} dovrebbe subire ${totalDamage} danni (auto-apply disabilitato)`);
+          moduleLogger.debug?.(`${actor.name} dovrebbe subire ${totalDamage} danni (auto-apply disabilitato)`);
         }
         
         messageContent += `<p><strong>Danni totali subiti:</strong> ${totalDamage}</p>`;
@@ -898,7 +901,7 @@ class BrancaloniaTavernEntertainment {
           this.statistics.totalGoldWon += stake;
         }
         await this.updateTavernStats(actor, 'win', stake);
-        logger.info(this.MODULE_NAME, `✅ ${actor.name} VINCE ${stake} mo (gioco: ${game.name})`);
+        moduleLogger.info(`✅ ${actor.name} VINCE ${stake} mo (gioco: ${game.name})`);
         ui.notifications.info(`${actor.name} vince ${stake} mo!`);
       } else {
         messageContent += `💀 Sconfitta! Perdi ${stake} mo!</h4>`;
@@ -906,7 +909,7 @@ class BrancaloniaTavernEntertainment {
           await actor.update({ 'system.currency.gp': actor.system.currency.gp - stake });
         }
         await this.updateTavernStats(actor, 'loss', stake);
-        logger.info(this.MODULE_NAME, `❌ ${actor.name} PERDE ${stake} mo (gioco: ${game.name})`);
+        moduleLogger.info(`❌ ${actor.name} PERDE ${stake} mo (gioco: ${game.name})`);
         ui.notifications.warn(`${actor.name} perde ${stake} mo!`);
       }
 
@@ -922,7 +925,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore gioco taverna', error);
+      moduleLogger.error('Errore gioco taverna', error);
       ui.notifications.error('Errore durante il gioco');
     }
   }
@@ -957,7 +960,7 @@ class BrancaloniaTavernEntertainment {
     };
 
     const skillKey = skillMap[skill] || skill;
-    logger.debug?.(this.MODULE_NAME, `Roll formula: 1d20 + @skills.${skillKey}.total (skill: ${skill})`);
+    moduleLogger.debug?.(`Roll formula: 1d20 + @skills.${skillKey}.total (skill: ${skill})`);
     return `1d20 + @skills.${skillKey}.total`;
   }
 
@@ -975,17 +978,17 @@ class BrancaloniaTavernEntertainment {
         case 'win':
           const wins = actor.getFlag(this.ID, 'gamesWon') || 0;
           await actor.setFlag(this.ID, 'gamesWon', wins + 1);
-          logger.debug?.(this.MODULE_NAME, `${actor.name} vittorie: ${wins + 1}`);
+          moduleLogger.debug?.(`${actor.name} vittorie: ${wins + 1}`);
           break;
         case 'loss':
           const losses = actor.getFlag(this.ID, 'gamesLost') || 0;
           await actor.setFlag(this.ID, 'gamesLost', losses + 1);
-          logger.debug?.(this.MODULE_NAME, `${actor.name} sconfitte: ${losses + 1}`);
+          moduleLogger.debug?.(`${actor.name} sconfitte: ${losses + 1}`);
           break;
         case 'bagordi':
           const spent = actor.getFlag(this.ID, 'totalSpent') || 0;
           await actor.setFlag(this.ID, 'totalSpent', spent + amount);
-          logger.debug?.(this.MODULE_NAME, `${actor.name} speso totale: ${spent + amount} mo`);
+          moduleLogger.debug?.(`${actor.name} speso totale: ${spent + amount} mo`);
           break;
       }
     } catch (error) {
@@ -994,7 +997,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore aggiornamento statistiche', error);
+      moduleLogger.error('Errore aggiornamento statistiche', error);
     }
   }
 
@@ -1125,7 +1128,7 @@ class BrancaloniaTavernEntertainment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore enhancing character sheet', error);
+      moduleLogger.error('Errore enhancing character sheet', error);
     }
   }
 
@@ -1185,7 +1188,7 @@ class BrancaloniaTavernEntertainment {
       macrosCreated: 0,
       errors: []
     };
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -1245,7 +1248,7 @@ class BrancaloniaTavernEntertainment {
       classes: ['tavern-report-dialog']
     }).render(true);
 
-    logger.info(this.MODULE_NAME, 'Report visualizzato', { status, stats });
+    moduleLogger.info('Report visualizzato', { status, stats });
   }
 }
 
@@ -1261,7 +1264,7 @@ Hooks.once('init', () => {
 
     BrancaloniaTavernEntertainment.initialize();
   } catch (error) {
-    logger.error('Tavern Entertainment', 'Errore hook init', error);
+    moduleLogger.error('Errore hook init', error);
   }
 });
 
@@ -1424,7 +1427,7 @@ Hooks.once('ready', () => {
   `;
   document.head.appendChild(style);
 
-  logger.info('Tavern Entertainment', '✅ CSS e macro caricate');
+  moduleLogger.info('✅ CSS e macro caricate');
 });
 
 // Export ES6

@@ -33,8 +33,10 @@
  * const slug = "Hello World".slugify(); // "hello-world"
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Slugify Fix';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} SlugifyOptions
  * @property {string} [replacement='-'] - Carattere di sostituzione per spazi
@@ -66,7 +68,7 @@ import logger from './brancalonia-logger.js';
  */
 class SlugifyFix {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Slugify Fix';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Statistiche del sistema slugify fix
@@ -95,8 +97,8 @@ class SlugifyFix {
    * @returns {void}
    */
   static initialize() {
-    logger.startPerformance('slugify-init');
-    logger.info(this.MODULE_NAME, 'Inizializzazione Slugify Fix...');
+    moduleLogger.startPerformance('slugify-init');
+    moduleLogger.info('Inizializzazione Slugify Fix...');
 
     // Crea funzione slugify
     this._createSlugifyFunction();
@@ -105,13 +107,13 @@ class SlugifyFix {
     this._defineGlobally();
 
     // Track init time
-    const initTime = logger.endPerformance('slugify-init');
+    const initTime = moduleLogger.endPerformance('slugify-init');
     this.statistics.initTime = initTime;
 
-    logger.info(this.MODULE_NAME, `Inizializzazione completata in ${initTime?.toFixed(2)}ms`);
+    moduleLogger.info(`Inizializzazione completata in ${initTime?.toFixed(2)}ms`);
 
     // Emit event
-    logger.events.emit('slugify:initialized', {
+    moduleLogger.events.emit('slugify:initialized', {
       version: this.VERSION,
       initTime,
       availability: this.statistics.availability,
@@ -179,7 +181,7 @@ class SlugifyFix {
         return result;
 
       } catch (error) {
-        logger.error(this.MODULE_NAME, 'Errore in slugify', error);
+        moduleLogger.error('Errore in slugify', error);
         this.statistics.errors.push({
           type: 'slugify-error',
           message: error.message,
@@ -203,10 +205,10 @@ class SlugifyFix {
     if (typeof globalThis.slugify === 'undefined') {
       globalThis.slugify = slugifyFn;
       this.statistics.availability.globalThis = true;
-      logger.info(this.MODULE_NAME, 'slugify definita in globalThis');
+      moduleLogger.info('slugify definita in globalThis');
     } else {
       this.statistics.availability.globalThis = true;
-      logger.warn(this.MODULE_NAME, 'slugify già esistente in globalThis');
+      moduleLogger.warn('slugify già esistente in globalThis');
     }
 
     // 2. window.slugify (alias di globalThis)
@@ -220,7 +222,7 @@ class SlugifyFix {
         return globalThis.slugify(this, options);
       };
       this.statistics.availability.stringPrototype = true;
-      logger.info(this.MODULE_NAME, 'slugify aggiunta a String.prototype');
+      moduleLogger.info('slugify aggiunta a String.prototype');
     } else {
       this.statistics.availability.stringPrototype = true;
     }
@@ -233,7 +235,7 @@ class SlugifyFix {
    * @returns {void}
    */
   static _integrateFoundryUtils() {
-    logger.debug(this.MODULE_NAME, 'Integrazione con foundry.utils...');
+    moduleLogger.debug('Integrazione con foundry.utils...');
 
     try {
       if (foundry?.utils && !foundry.utils.slugify) {
@@ -247,17 +249,17 @@ class SlugifyFix {
             enumerable: true
           });
           this.statistics.availability.foundryUtils = true;
-          logger.info(this.MODULE_NAME, 'slugify aggiunta a foundry.utils');
+          moduleLogger.info('slugify aggiunta a foundry.utils');
         } else {
           // foundry.utils è frozen - usiamo solo globalThis.slugify
           this.statistics.availability.foundryUtils = false;
-          logger.info(this.MODULE_NAME, 'foundry.utils è frozen, uso globalThis.slugify');
+          moduleLogger.info('foundry.utils è frozen, uso globalThis.slugify');
         }
       } else if (foundry?.utils?.slugify) {
         this.statistics.availability.foundryUtils = true;
       }
     } catch (error) {
-      logger.warn(this.MODULE_NAME, 'Errore integrazione foundry.utils', error);
+      moduleLogger.warn('Errore integrazione foundry.utils', error);
       this.statistics.availability.foundryUtils = false;
       this.statistics.errors.push({
         type: 'foundry-utils-integration',
@@ -274,7 +276,7 @@ class SlugifyFix {
    * @returns {void}
    */
   static _integrateGameObject() {
-    logger.debug(this.MODULE_NAME, 'Integrazione con game object...');
+    moduleLogger.debug('Integrazione con game object...');
 
     try {
       if (game && !game.slugify) {
@@ -285,12 +287,12 @@ class SlugifyFix {
           enumerable: true
         });
         this.statistics.availability.game = true;
-        logger.info(this.MODULE_NAME, 'slugify aggiunta a game object');
+        moduleLogger.info('slugify aggiunta a game object');
       } else if (game?.slugify) {
         this.statistics.availability.game = true;
       }
     } catch (error) {
-      logger.warn(this.MODULE_NAME, 'Errore integrazione game object', error);
+      moduleLogger.warn('Errore integrazione game object', error);
       this.statistics.availability.game = false;
       this.statistics.errors.push({
         type: 'game-object-integration',
@@ -307,7 +309,7 @@ class SlugifyFix {
    * @returns {void}
    */
   static _checkAvailability() {
-    logger.startPerformance('slugify-availability-check');
+    moduleLogger.startPerformance('slugify-availability-check');
 
     const availability = {
       'globalThis.slugify': typeof globalThis.slugify,
@@ -317,14 +319,14 @@ class SlugifyFix {
       'game.slugify': typeof game?.slugify
     };
 
-    logger.debug(this.MODULE_NAME, 'Availability check:', availability);
-    logger.table(Object.entries(availability).map(([name, value]) => ({ Location: name, Type: value })));
+    moduleLogger.debug('Availability check:', availability);
+    moduleLogger.table(Object.entries(availability).map(([name, value]) => ({ Location: name, Type: value })));
 
-    const checkTime = logger.endPerformance('slugify-availability-check');
-    logger.debug(this.MODULE_NAME, `Availability check completato in ${checkTime?.toFixed(2)}ms`);
+    const checkTime = moduleLogger.endPerformance('slugify-availability-check');
+    moduleLogger.debug(`Availability check completato in ${checkTime?.toFixed(2)}ms`);
 
     // Emit event
-    logger.events.emit('slugify:availability-checked', {
+    moduleLogger.events.emit('slugify:availability-checked', {
       availability: this.statistics.availability,
       checkTime,
       timestamp: Date.now()
@@ -338,7 +340,7 @@ class SlugifyFix {
    * @returns {void}
    */
   static _quickTest() {
-    logger.startPerformance('slugify-quick-test');
+    moduleLogger.startPerformance('slugify-quick-test');
 
     try {
       const testString = "Test Slugify Brancalònia!";
@@ -346,16 +348,16 @@ class SlugifyFix {
       const expected = "test-slugify-brancalonia";
 
       if (result === expected) {
-        logger.info(this.MODULE_NAME, `Quick test PASSED: "${testString}" → "${result}"`);
+        moduleLogger.info(`Quick test PASSED: "${testString}" → "${result}"`);
       } else {
-        logger.warn(this.MODULE_NAME, `Quick test FAILED: "${testString}" → "${result}" (expected: "${expected}")`);
+        moduleLogger.warn(`Quick test FAILED: "${testString}" → "${result}" (expected: "${expected}")`);
       }
 
-      const testTime = logger.endPerformance('slugify-quick-test');
-      logger.debug(this.MODULE_NAME, `Quick test completato in ${testTime?.toFixed(2)}ms`);
+      const testTime = moduleLogger.endPerformance('slugify-quick-test');
+      moduleLogger.debug(`Quick test completato in ${testTime?.toFixed(2)}ms`);
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Quick test failed', error);
+      moduleLogger.error('Quick test failed', error);
       this.statistics.errors.push({
         type: 'quick-test',
         message: error.message,
@@ -378,8 +380,8 @@ class SlugifyFix {
    * console.log(`Test: ${results.passed} passed, ${results.failed} failed`);
    */
   static test() {
-    logger.startPerformance('slugify-full-test');
-    logger.info(this.MODULE_NAME, 'Esecuzione test suite completa...');
+    moduleLogger.startPerformance('slugify-full-test');
+    moduleLogger.info('Esecuzione test suite completa...');
 
     const tests = [
       { input: "Hello World", expected: "hello-world" },
@@ -403,10 +405,10 @@ class SlugifyFix {
 
         if (success) {
           passed++;
-          logger.debug(this.MODULE_NAME, `✅ Test PASSED: "${test.input}" → "${result}"`);
+          moduleLogger.debug(`✅ Test PASSED: "${test.input}" → "${result}"`);
         } else {
           failed++;
-          logger.warn(this.MODULE_NAME, `❌ Test FAILED: "${test.input}" → "${result}" (expected: "${test.expected}")`);
+          moduleLogger.warn(`❌ Test FAILED: "${test.input}" → "${result}" (expected: "${test.expected}")`);
         }
 
         results.push({
@@ -418,7 +420,7 @@ class SlugifyFix {
 
       } catch (error) {
         failed++;
-        logger.error(this.MODULE_NAME, `❌ Test ERROR: "${test.input}"`, error);
+        moduleLogger.error(`❌ Test ERROR: "${test.input}"`, error);
         results.push({
           input: test.input,
           expected: test.expected,
@@ -434,11 +436,11 @@ class SlugifyFix {
     this.statistics.testsPassed += passed;
     this.statistics.testsFailed += failed;
 
-    const testTime = logger.endPerformance('slugify-full-test');
-    logger.info(this.MODULE_NAME, `Test suite completata: ${passed} passed, ${failed} failed in ${testTime?.toFixed(2)}ms`);
+    const testTime = moduleLogger.endPerformance('slugify-full-test');
+    moduleLogger.info(`Test suite completata: ${passed} passed, ${failed} failed in ${testTime?.toFixed(2)}ms`);
 
     // Emit event
-    logger.events.emit('slugify:test-complete', {
+    moduleLogger.events.emit('slugify:test-complete', {
       totalTests: tests.length,
       passed,
       failed,
@@ -496,7 +498,7 @@ class SlugifyFix {
    * SlugifyFix.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche');
+    moduleLogger.info('Reset statistiche');
 
     const initTime = this.statistics.initTime;
     const availability = this.statistics.availability;
@@ -511,7 +513,7 @@ class SlugifyFix {
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -526,13 +528,13 @@ class SlugifyFix {
     const stats = this.getStatistics();
     const availability = this.getAvailability();
 
-    logger.group('📊 Brancalonia Slugify Fix - Report');
+    moduleLogger.group('📊 Brancalonia Slugify Fix - Report');
 
-    logger.info(this.MODULE_NAME, 'VERSION:', this.VERSION);
-    logger.info(this.MODULE_NAME, 'Init Time:', stats.initTime?.toFixed(2) + 'ms');
+    moduleLogger.info('VERSION:', this.VERSION);
+    moduleLogger.info('Init Time:', stats.initTime?.toFixed(2) + 'ms');
 
-    logger.group('📈 Statistics');
-    logger.table([
+    moduleLogger.group('📈 Statistics');
+    moduleLogger.table([
       { Metric: 'Total Calls', Value: stats.totalCalls },
       { Metric: 'Total Tests', Value: stats.totalTests },
       { Metric: 'Tests Passed', Value: stats.testsPassed },
@@ -540,24 +542,24 @@ class SlugifyFix {
       { Metric: 'Errors', Value: stats.errors.length },
       { Metric: 'Uptime', Value: `${(stats.uptime / 1000).toFixed(0)}s` }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('🎯 Availability');
+    moduleLogger.group('🎯 Availability');
     Object.entries(availability.runtime).forEach(([location, type]) => {
       const available = type === 'function';
-      logger.info(this.MODULE_NAME, `${available ? '✅' : '❌'} ${location}: ${type}`);
+      moduleLogger.info(`${available ? '✅' : '❌'} ${location}: ${type}`);
     });
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors');
+      moduleLogger.group('🐛 Errors');
       stats.errors.forEach((err, i) => {
-        logger.error(this.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return stats;
   }
@@ -586,7 +588,7 @@ Hooks.once("setup", () => {
 // Hook ready - Test finale e conferma
 Hooks.once("ready", () => {
   SlugifyFix._quickTest();
-  logger.info(SlugifyFix.MODULE_NAME, '✅ Sistema pronto e funzionante');
+  moduleLogger.info('✅ Sistema pronto e funzionante');
 });
 
 // Export per uso come modulo ES6

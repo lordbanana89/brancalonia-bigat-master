@@ -20,8 +20,10 @@
  * - Socket handling
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'V13 Modern';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} V13Statistics
  * @property {number} initTime - Tempo inizializzazione in ms
@@ -43,7 +45,7 @@ import logger from './brancalonia-logger.js';
  */
 class BrancaloniaV13Modern {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'V13 Modern';
+  static MODULE_NAME = MODULE_LABEL;
   static REQUIRED_FOUNDRY_VERSION = '13';
   static REQUIRED_DND5E_VERSION = '5';
 
@@ -129,8 +131,8 @@ class BrancaloniaV13Modern {
    * @fires v13:initialized
    */
   static initialize() {
-    logger.startPerformance('v13-init');
-    logger.info(this.MODULE_NAME, `Inizializzazione V13 Modern v${this.VERSION}...`);
+    moduleLogger.startPerformance('v13-init');
+    moduleLogger.info(`Inizializzazione V13 Modern v${this.VERSION}...`);
 
     try {
       // Version check
@@ -147,13 +149,13 @@ class BrancaloniaV13Modern {
 
       this._state.initialized = true;
 
-      const initTime = logger.endPerformance('v13-init');
+      const initTime = moduleLogger.endPerformance('v13-init');
       this.statistics.initTime = initTime;
 
-      logger.info(this.MODULE_NAME, `✅ V13 Modern inizializzato in ${initTime?.toFixed(2)}ms`);
+      moduleLogger.info(`✅ V13 Modern inizializzato in ${initTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('v13:initialized', {
+      moduleLogger.events.emit('v13:initialized', {
         version: this.VERSION,
         foundryVersion: this._state.foundryVersion,
         dnd5eVersion: this._state.dnd5eVersion,
@@ -162,7 +164,7 @@ class BrancaloniaV13Modern {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione', error);
+      moduleLogger.error('Errore inizializzazione', error);
       this.statistics.errors.push({
         type: 'initialization',
         message: error.message,
@@ -192,14 +194,14 @@ class BrancaloniaV13Modern {
       throw new Error(`Brancalonia requires Foundry v${this.REQUIRED_FOUNDRY_VERSION}. Current: ${foundryVersion}`);
     }
 
-    logger.info(this.MODULE_NAME, `✅ Foundry v${foundryVersion} confirmed - Using modern APIs`);
+    moduleLogger.info(`✅ Foundry v${foundryVersion} confirmed - Using modern APIs`);
 
     // Check D&D 5e v5+
     if (!dnd5eVersion.startsWith(this.REQUIRED_DND5E_VERSION)) {
-      logger.warn(this.MODULE_NAME, `⚠️ D&D 5e v${this.REQUIRED_DND5E_VERSION}.x richiesto per funzionalità complete (Attuale: ${dnd5eVersion})`);
+      moduleLogger.warn(`⚠️ D&D 5e v${this.REQUIRED_DND5E_VERSION}.x richiesto per funzionalità complete (Attuale: ${dnd5eVersion})`);
       ui.notifications.warn('⚠️ D&D 5e v5.x richiesto per funzionalità complete');
     } else {
-      logger.info(this.MODULE_NAME, `✅ D&D 5e v${dnd5eVersion} confirmed`);
+      moduleLogger.info(`✅ D&D 5e v${dnd5eVersion} confirmed`);
     }
   }
 
@@ -209,13 +211,13 @@ class BrancaloniaV13Modern {
    * @private
    */
   static _registerHooks() {
-    logger.info(this.MODULE_NAME, '🔄 Registrazione modern hooks D&D 5e v5.x');
+    moduleLogger.info('🔄 Registrazione modern hooks D&D 5e v5.x');
 
     try {
       // Character sheets
       Hooks.on('renderActorSheetV2', (app, html, data) => {
         if (app.actor.type === 'character') {
-          logger.debug(this.MODULE_NAME, '📝 Character sheet rendered');
+          moduleLogger.debug('📝 Character sheet rendered');
           this._applyCharacterSheetEnhancements(app, html, data);
         }
       });
@@ -223,14 +225,14 @@ class BrancaloniaV13Modern {
       // NPC sheets
       Hooks.on('renderActorSheetV2', (app, html, data) => {
         if (app.actor.type === 'npc') {
-          logger.debug(this.MODULE_NAME, '📝 NPC sheet rendered');
+          moduleLogger.debug('📝 NPC sheet rendered');
           this._applyNPCSheetEnhancements(app, html, data);
         }
       });
 
       // Item sheets
       Hooks.on('renderItemSheetV2', (app, html, data) => {
-        logger.debug(this.MODULE_NAME, '📝 Item sheet rendered');
+        moduleLogger.debug('📝 Item sheet rendered');
         this._applyItemSheetEnhancements(app, html, data);
       });
 
@@ -254,10 +256,10 @@ class BrancaloniaV13Modern {
         await this._handleCompendium(app, html, data);
       });
 
-      logger.debug(this.MODULE_NAME, '✅ Hooks registrati con successo');
+      moduleLogger.debug('✅ Hooks registrati con successo');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione hooks', error);
+      moduleLogger.error('Errore registrazione hooks', error);
       this.statistics.errors.push({
         type: 'register-hooks',
         message: error.message,
@@ -282,7 +284,7 @@ class BrancaloniaV13Modern {
    * @fires v13:sheet-enhanced
    */
   static _applyCharacterSheetEnhancements(app, html, data) {
-    logger.startPerformance(`v13-char-sheet-${app.actor.id}`);
+    moduleLogger.startPerformance(`v13-char-sheet-${app.actor.id}`);
 
     try {
       // In v13 renderActorSheetV2, html può essere un array di HTMLElement
@@ -310,7 +312,7 @@ class BrancaloniaV13Modern {
         const infamiaBtn = element.querySelector('.infamia-btn');
         if (infamiaBtn) {
           infamiaBtn.addEventListener('click', async () => {
-            logger.info(this.MODULE_NAME, '🎭 Apertura Infamia tracker');
+            moduleLogger.info('🎭 Apertura Infamia tracker');
 
             const currentInfamia = app.actor.getFlag('brancalonia-bigat', 'infamia') || 0;
 
@@ -345,7 +347,7 @@ class BrancaloniaV13Modern {
         const baraondaBtn = element.querySelector('.baraonda-btn');
         if (baraondaBtn) {
           baraondaBtn.addEventListener('click', () => {
-            logger.info(this.MODULE_NAME, '⚔️ Avvio Baraonda con modern API');
+            moduleLogger.info('⚔️ Avvio Baraonda con modern API');
             // Usa Canvas moderno
             if (canvas.scene) {
               ui.notifications.info('🎲 Baraonda iniziata!');
@@ -364,11 +366,11 @@ class BrancaloniaV13Modern {
       // Update statistics
       this.statistics.characterSheetsEnhanced++;
 
-      const enhanceTime = logger.endPerformance(`v13-char-sheet-${app.actor.id}`);
-      logger.debug(this.MODULE_NAME, `Character sheet enhanced in ${enhanceTime?.toFixed(2)}ms`);
+      const enhanceTime = moduleLogger.endPerformance(`v13-char-sheet-${app.actor.id}`);
+      moduleLogger.debug(`Character sheet enhanced in ${enhanceTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('v13:sheet-enhanced', {
+      moduleLogger.events.emit('v13:sheet-enhanced', {
         type: 'character',
         actorId: app.actor.id,
         actorName: app.actor.name,
@@ -377,7 +379,7 @@ class BrancaloniaV13Modern {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore enhancement character sheet per ${app.actor.name}`, error);
+      moduleLogger.error(`Errore enhancement character sheet per ${app.actor.name}`, error);
       this.statistics.errors.push({
         type: 'character-sheet-enhancement',
         message: error.message,
@@ -398,7 +400,7 @@ class BrancaloniaV13Modern {
    * @fires v13:sheet-enhanced
    */
   static _applyNPCSheetEnhancements(app, html, data) {
-    logger.startPerformance(`v13-npc-sheet-${app.actor.id}`);
+    moduleLogger.startPerformance(`v13-npc-sheet-${app.actor.id}`);
 
     try {
       // In v13 renderActorSheetV2, html può essere un array di HTMLElement
@@ -424,11 +426,11 @@ class BrancaloniaV13Modern {
       // Update statistics
       this.statistics.npcSheetsEnhanced++;
 
-      const enhanceTime = logger.endPerformance(`v13-npc-sheet-${app.actor.id}`);
-      logger.debug(this.MODULE_NAME, `NPC sheet enhanced in ${enhanceTime?.toFixed(2)}ms`);
+      const enhanceTime = moduleLogger.endPerformance(`v13-npc-sheet-${app.actor.id}`);
+      moduleLogger.debug(`NPC sheet enhanced in ${enhanceTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('v13:sheet-enhanced', {
+      moduleLogger.events.emit('v13:sheet-enhanced', {
         type: 'npc',
         actorId: app.actor.id,
         actorName: app.actor.name,
@@ -437,7 +439,7 @@ class BrancaloniaV13Modern {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore enhancement NPC sheet per ${app.actor.name}`, error);
+      moduleLogger.error(`Errore enhancement NPC sheet per ${app.actor.name}`, error);
       this.statistics.errors.push({
         type: 'npc-sheet-enhancement',
         message: error.message,
@@ -458,7 +460,7 @@ class BrancaloniaV13Modern {
    * @fires v13:sheet-enhanced
    */
   static _applyItemSheetEnhancements(app, html, data) {
-    logger.startPerformance(`v13-item-sheet-${app.item.id}`);
+    moduleLogger.startPerformance(`v13-item-sheet-${app.item.id}`);
 
     try {
       // In v13 renderItemSheetV2, html è un HTMLElement, non jQuery
@@ -480,11 +482,11 @@ class BrancaloniaV13Modern {
       // Update statistics
       this.statistics.itemSheetsEnhanced++;
 
-      const enhanceTime = logger.endPerformance(`v13-item-sheet-${app.item.id}`);
-      logger.debug(this.MODULE_NAME, `Item sheet enhanced in ${enhanceTime?.toFixed(2)}ms`);
+      const enhanceTime = moduleLogger.endPerformance(`v13-item-sheet-${app.item.id}`);
+      moduleLogger.debug(`Item sheet enhanced in ${enhanceTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('v13:sheet-enhanced', {
+      moduleLogger.events.emit('v13:sheet-enhanced', {
         type: 'item',
         itemId: app.item.id,
         itemName: app.item.name,
@@ -493,7 +495,7 @@ class BrancaloniaV13Modern {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore enhancement item sheet per ${app.item.name}`, error);
+      moduleLogger.error(`Errore enhancement item sheet per ${app.item.name}`, error);
       this.statistics.errors.push({
         type: 'item-sheet-enhancement',
         message: error.message,
@@ -516,8 +518,8 @@ class BrancaloniaV13Modern {
    * @fires v13:canvas-ready
    */
   static _handleCanvasReady(canvas) {
-    logger.startPerformance('v13-canvas-ready');
-    logger.info(this.MODULE_NAME, '🗺️ Canvas ready - Using modern Canvas API');
+    moduleLogger.startPerformance('v13-canvas-ready');
+    moduleLogger.info('🗺️ Canvas ready - Using modern Canvas API');
 
     try {
       // Usa API Canvas moderne
@@ -526,7 +528,7 @@ class BrancaloniaV13Modern {
 
       // Applica tema Brancalonia alla scena
       if (isTavernScene) {
-        logger.info(this.MODULE_NAME, '🍺 Tavern scene detected - Applying atmosphere');
+        moduleLogger.info('🍺 Tavern scene detected - Applying atmosphere');
 
         // Usa lighting layer moderno
         canvas.lighting.globalLight = false;
@@ -542,11 +544,11 @@ class BrancaloniaV13Modern {
       // Update statistics
       this.statistics.canvasEnhancements++;
 
-      const canvasTime = logger.endPerformance('v13-canvas-ready');
-      logger.debug(this.MODULE_NAME, `Canvas ready processed in ${canvasTime?.toFixed(2)}ms`);
+      const canvasTime = moduleLogger.endPerformance('v13-canvas-ready');
+      moduleLogger.debug(`Canvas ready processed in ${canvasTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('v13:canvas-ready', {
+      moduleLogger.events.emit('v13:canvas-ready', {
         sceneId: scene.id,
         sceneName: scene.name,
         tavernScene: isTavernScene,
@@ -555,7 +557,7 @@ class BrancaloniaV13Modern {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore canvas ready handler', error);
+      moduleLogger.error('Errore canvas ready handler', error);
       this.statistics.errors.push({
         type: 'canvas-ready',
         message: error.message,
@@ -579,12 +581,12 @@ class BrancaloniaV13Modern {
     const combat = game?.combat;
     if (!combat) {
       // Debug silenzioso - situazione normale quando non c'è combattimento
-      logger.debug(this.MODULE_NAME, 'Combat non disponibile, skip enhancements');
+      moduleLogger.debug('Combat non disponibile, skip enhancements');
       return;
     }
 
-    logger.startPerformance('v13-combat-tracker');
-    logger.debug(this.MODULE_NAME, '⚔️ Combat tracker rendered');
+    moduleLogger.startPerformance('v13-combat-tracker');
+    moduleLogger.debug('⚔️ Combat tracker rendered');
 
     try {
       // renderCombatTracker passa jQuery object
@@ -608,21 +610,21 @@ class BrancaloniaV13Modern {
 
           if (roll.total >= 5) {
             ui.notifications.info('💥 BARAONDA! Tutti attaccano!');
-            logger.info(this.MODULE_NAME, `Baraonda triggered! Roll: ${roll.total}`);
+            moduleLogger.info(`Baraonda triggered! Roll: ${roll.total}`);
           }
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore Baraonda roll', error);
+          moduleLogger.error('Errore Baraonda roll', error);
         }
       });
 
       // Update statistics
       this.statistics.combatTrackerRenders++;
 
-      const trackerTime = logger.endPerformance('v13-combat-tracker');
-      logger.debug(this.MODULE_NAME, `Combat tracker processed in ${trackerTime?.toFixed(2)}ms`);
+      const trackerTime = moduleLogger.endPerformance('v13-combat-tracker');
+      moduleLogger.debug(`Combat tracker processed in ${trackerTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('v13:combat-tracker-ready', {
+      moduleLogger.events.emit('v13:combat-tracker-ready', {
         combatId: combat.id,
         combatants: combat.combatants.size,
         trackerTime,
@@ -630,7 +632,7 @@ class BrancaloniaV13Modern {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore combat tracker handler', error);
+      moduleLogger.error('Errore combat tracker handler', error);
       this.statistics.errors.push({
         type: 'combat-tracker',
         message: error.message,
@@ -677,11 +679,11 @@ class BrancaloniaV13Modern {
       // Update statistics
       if (styled) {
         this.statistics.chatMessagesStyled++;
-        logger.debug(this.MODULE_NAME, `Chat message styled: ${message.id}`);
+        moduleLogger.debug(`Chat message styled: ${message.id}`);
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore chat message handler', error);
+      moduleLogger.error('Errore chat message handler', error);
       this.statistics.errors.push({
         type: 'chat-message',
         message: error.message,
@@ -702,8 +704,8 @@ class BrancaloniaV13Modern {
    * @returns {Promise<void>}
    */
   static async _handleCompendium(app, html, data) {
-    logger.startPerformance('v13-compendium');
-    logger.debug(this.MODULE_NAME, '📚 Compendium rendered');
+    moduleLogger.startPerformance('v13-compendium');
+    moduleLogger.debug('📚 Compendium rendered');
 
     try {
       // renderCompendium passa jQuery object
@@ -725,23 +727,23 @@ class BrancaloniaV13Modern {
 
         // Event handlers
         $html.find('.filter-scadente').click(() => {
-          logger.info(this.MODULE_NAME, '🗑️ Filtraggio oggetti scadenti');
+          moduleLogger.info('🗑️ Filtraggio oggetti scadenti');
           this.statistics.compendiumFilters++;
           // TODO: Implementa filtro scadente
         });
 
         $html.find('.filter-speciale').click(() => {
-          logger.info(this.MODULE_NAME, '⭐ Filtraggio oggetti speciali');
+          moduleLogger.info('⭐ Filtraggio oggetti speciali');
           this.statistics.compendiumFilters++;
           // TODO: Implementa filtro speciale
         });
 
-        const compendiumTime = logger.endPerformance('v13-compendium');
-        logger.debug(this.MODULE_NAME, `Compendium processed in ${compendiumTime?.toFixed(2)}ms`);
+        const compendiumTime = moduleLogger.endPerformance('v13-compendium');
+        moduleLogger.debug(`Compendium processed in ${compendiumTime?.toFixed(2)}ms`);
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore compendium handler', error);
+      moduleLogger.error('Errore compendium handler', error);
       this.statistics.errors.push({
         type: 'compendium',
         message: error.message,
@@ -759,7 +761,7 @@ class BrancaloniaV13Modern {
    * @fires v13:settings-registered
    */
   static _registerSettings() {
-    logger.info(this.MODULE_NAME, '⚙️ Registrazione Brancalonia settings');
+    moduleLogger.info('⚙️ Registrazione Brancalonia settings');
 
     try {
       // Registra settings usando API moderne
@@ -792,16 +794,16 @@ class BrancaloniaV13Modern {
 
       this.statistics.settingsRegistered = 3;
 
-      logger.info(this.MODULE_NAME, '✅ 3 settings registrati con successo');
+      moduleLogger.info('✅ 3 settings registrati con successo');
 
       // Emit event
-      logger.events.emit('v13:settings-registered', {
+      moduleLogger.events.emit('v13:settings-registered', {
         count: 3,
         timestamp: Date.now()
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione settings', error);
+      moduleLogger.error('Errore registrazione settings', error);
       this.statistics.errors.push({
         type: 'settings-registration',
         message: error.message,
@@ -818,13 +820,13 @@ class BrancaloniaV13Modern {
    * @returns {void}
    */
   static _setupSockets() {
-    logger.info(this.MODULE_NAME, '📡 Setup Brancalonia sockets');
+    moduleLogger.info('📡 Setup Brancalonia sockets');
 
     try {
       // Usa socket moderni
       game.socket.on('module.brancalonia-bigat', (data) => {
         try {
-          logger.debug(this.MODULE_NAME, '📨 Received socket data:', data);
+          moduleLogger.debug('📨 Received socket data:', data);
 
           this.statistics.socketMessages++;
 
@@ -836,11 +838,11 @@ class BrancaloniaV13Modern {
               ui.notifications.warn('💥 BARAONDA INIZIATA!');
               break;
             default:
-              logger.warn(this.MODULE_NAME, `Socket action sconosciuta: ${data.action}`);
+              moduleLogger.warn(`Socket action sconosciuta: ${data.action}`);
           }
 
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore handling socket message', error);
+          moduleLogger.error('Errore handling socket message', error);
           this.statistics.errors.push({
             type: 'socket-message',
             message: error.message,
@@ -850,10 +852,10 @@ class BrancaloniaV13Modern {
         }
       });
 
-      logger.debug(this.MODULE_NAME, '✅ Sockets configurati');
+      moduleLogger.debug('✅ Sockets configurati');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore setup sockets', error);
+      moduleLogger.error('Errore setup sockets', error);
       this.statistics.errors.push({
         type: 'socket-setup',
         message: error.message,
@@ -869,14 +871,14 @@ class BrancaloniaV13Modern {
    * @returns {void}
    */
   static onReady() {
-    logger.info(this.MODULE_NAME, '✨ Brancalonia V13 Modern - READY');
-    logger.info(this.MODULE_NAME, '📋 Active features:');
-    logger.info(this.MODULE_NAME, '  - Modern Actor Sheets ✅');
-    logger.info(this.MODULE_NAME, '  - Modern Canvas API ✅');
-    logger.info(this.MODULE_NAME, '  - Modern Combat Tracker ✅');
-    logger.info(this.MODULE_NAME, '  - Modern Compendiums ✅');
-    logger.info(this.MODULE_NAME, '  - Modern Settings ✅');
-    logger.info(this.MODULE_NAME, '  - Modern Sockets ✅');
+    moduleLogger.info('✨ Brancalonia V13 Modern - READY');
+    moduleLogger.info('📋 Active features:');
+    moduleLogger.info('  - Modern Actor Sheets ✅');
+    moduleLogger.info('  - Modern Canvas API ✅');
+    moduleLogger.info('  - Modern Combat Tracker ✅');
+    moduleLogger.info('  - Modern Compendiums ✅');
+    moduleLogger.info('  - Modern Settings ✅');
+    moduleLogger.info('  - Modern Sockets ✅');
 
     this._state.ready = true;
 
@@ -937,7 +939,7 @@ class BrancaloniaV13Modern {
    * BrancaloniaV13Modern.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche V13 Modern');
+    moduleLogger.info('Reset statistiche V13 Modern');
 
     const initTime = this.statistics.initTime;
 
@@ -955,7 +957,7 @@ class BrancaloniaV13Modern {
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -969,16 +971,16 @@ class BrancaloniaV13Modern {
     const stats = this.getStatistics();
     const status = this.getStatus();
 
-    logger.group('🚀 Brancalonia V13 Modern - Report');
+    moduleLogger.group('🚀 Brancalonia V13 Modern - Report');
 
-    logger.info(this.MODULE_NAME, 'VERSION:', this.VERSION);
-    logger.info(this.MODULE_NAME, 'Initialized:', status.initialized);
-    logger.info(this.MODULE_NAME, 'Ready:', status.ready);
-    logger.info(this.MODULE_NAME, 'Foundry:', status.foundryVersion);
-    logger.info(this.MODULE_NAME, 'D&D 5e:', status.dnd5eVersion);
+    moduleLogger.info('VERSION:', this.VERSION);
+    moduleLogger.info('Initialized:', status.initialized);
+    moduleLogger.info('Ready:', status.ready);
+    moduleLogger.info('Foundry:', status.foundryVersion);
+    moduleLogger.info('D&D 5e:', status.dnd5eVersion);
 
-    logger.group('📊 Statistics');
-    logger.table([
+    moduleLogger.group('📊 Statistics');
+    moduleLogger.table([
       { Metric: 'Init Time', Value: `${stats.initTime?.toFixed(2)}ms` },
       { Metric: 'Character Sheets', Value: stats.characterSheetsEnhanced },
       { Metric: 'NPC Sheets', Value: stats.npcSheetsEnhanced },
@@ -992,17 +994,17 @@ class BrancaloniaV13Modern {
       { Metric: 'Socket Messages', Value: stats.socketMessages },
       { Metric: 'Errors', Value: stats.errors.length }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors');
+      moduleLogger.group('🐛 Errors');
       stats.errors.forEach((err, i) => {
-        logger.error(this.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return { status, stats };
   }

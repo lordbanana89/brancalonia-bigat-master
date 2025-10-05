@@ -6,32 +6,35 @@
  * @updated 2025-10-03 - Integrazione Logger v2.0.0
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Mechanics';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class BrancaloniaMechanics {
   static ID = 'brancalonia-bigat';
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Mechanics';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Inizializzazione completa del modulo
    */
   static initialize() {
-    logger.startPerformance('mechanics-init');
-    logger.info(this.MODULE_NAME, 'Inizializzazione Meccaniche di Gioco...');
+    moduleLogger.startPerformance('mechanics-init');
+    moduleLogger.info('Inizializzazione Meccaniche di Gioco...');
 
     try {
       // Registra settings
       this.registerSettings();
-      logger.debug(this.MODULE_NAME, 'Settings registrate');
+      moduleLogger.debug('Settings registrate');
 
       // Registra hooks
       this.registerHooks();
-      logger.debug(this.MODULE_NAME, 'Hooks registrati');
+      moduleLogger.debug('Hooks registrati');
 
       // Registra comandi chat
       this.registerChatCommands();
-      logger.debug(this.MODULE_NAME, 'Comandi chat registrati');
+      moduleLogger.debug('Comandi chat registrati');
 
       // Registra istanza globale
       game.brancalonia = game.brancalonia || {};
@@ -39,13 +42,13 @@ class BrancaloniaMechanics {
 
       // Estende Actor class
       this.extendActorClass();
-      logger.debug(this.MODULE_NAME, 'Actor class estesa');
+      moduleLogger.debug('Actor class estesa');
 
       // Setup meccaniche aggiuntive
       this.setupAdditionalMechanics();
 
-      const initTime = logger.endPerformance('mechanics-init');
-      logger.info(this.MODULE_NAME, `Inizializzazione completata in ${initTime?.toFixed(2)}ms`, {
+      const initTime = moduleLogger.endPerformance('mechanics-init');
+      moduleLogger.info(`Inizializzazione completata in ${initTime?.toFixed(2)}ms`, {
         settings: {
           criticalTables: game.settings.get(this.ID, 'useCriticalTables'),
           honorSystem: game.settings.get(this.ID, 'useHonorSystem'),
@@ -58,7 +61,7 @@ class BrancaloniaMechanics {
       this._setupEventListeners();
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore critico durante inizializzazione', error);
+      moduleLogger.error('Errore critico durante inizializzazione', error);
       ui.notifications.error('Errore durante l\'inizializzazione delle meccaniche di gioco');
       throw error;
     }
@@ -70,21 +73,21 @@ class BrancaloniaMechanics {
    */
   static _setupEventListeners() {
     // Listener per critici
-    logger.events.on('mechanics:critical-hit', (data) => {
-      logger.debug(this.MODULE_NAME, 'Critical hit registered', data);
+    moduleLogger.events.on('mechanics:critical-hit', (data) => {
+      moduleLogger.debug('Critical hit registered', data);
     });
 
     // Listener per fumbles
-    logger.events.on('mechanics:fumble', (data) => {
-      logger.debug(this.MODULE_NAME, 'Fumble registered', data);
+    moduleLogger.events.on('mechanics:fumble', (data) => {
+      moduleLogger.debug('Fumble registered', data);
     });
 
     // Listener per NPC generati
-    logger.events.on('mechanics:npc-generated', (data) => {
-      logger.debug(this.MODULE_NAME, 'NPC generated', data);
+    moduleLogger.events.on('mechanics:npc-generated', (data) => {
+      moduleLogger.debug('NPC generated', data);
     });
 
-    logger.debug(this.MODULE_NAME, 'Event listeners configurati');
+    moduleLogger.debug('Event listeners configurati');
   }
 
   /**
@@ -231,11 +234,11 @@ class BrancaloniaMechanics {
    * Crea macro automatiche
    */
   static async createAutomaticMacros() {
-    logger.startPerformance('create-macros');
+    moduleLogger.startPerformance('create-macros');
     
     // Verifica che game.macros sia disponibile
     if (!game.macros) {
-      logger.warn(this.MODULE_NAME, 'game.macros non ancora disponibile, macro creation skipped');
+      moduleLogger.warn('game.macros non ancora disponibile, macro creation skipped');
       return;
     }
 
@@ -263,49 +266,49 @@ class BrancaloniaMechanics {
         if (!existing) {
           await Macro.create(macroData);
           created++;
-          logger.debug(this.MODULE_NAME, `Macro creata: ${macroData.name}`);
+          moduleLogger.debug(`Macro creata: ${macroData.name}`);
         }
       } catch (error) {
-        logger.error(this.MODULE_NAME, `Errore creazione macro ${macroData.name}`, error);
+        moduleLogger.error(`Errore creazione macro ${macroData.name}`, error);
       }
     }
 
-    const macroTime = logger.endPerformance('create-macros');
-    logger.info(this.MODULE_NAME, `${created} macro create in ${macroTime?.toFixed(2)}ms`);
+    const macroTime = moduleLogger.endPerformance('create-macros');
+    moduleLogger.info(`${created} macro create in ${macroTime?.toFixed(2)}ms`);
   }
 
   static setupAdditionalMechanics() {
-    logger.startPerformance('setup-additional-mechanics');
+    moduleLogger.startPerformance('setup-additional-mechanics');
     
     try {
       // Tabelle casuali per il menagramo e altri eventi
       this.setupRandomTables();
-      logger.debug(this.MODULE_NAME, 'Tabelle casuali configurate');
+      moduleLogger.debug('Tabelle casuali configurate');
 
       // Sistema di Botte (danno non letale esteso)
       this.setupNonLethalCombat();
-      logger.debug(this.MODULE_NAME, 'Sistema combattimento non letale configurato');
+      moduleLogger.debug('Sistema combattimento non letale configurato');
 
       // Sistema Trabocchetti
       this.setupTraps();
-      logger.debug(this.MODULE_NAME, 'Sistema trabocchetti configurato');
+      moduleLogger.debug('Sistema trabocchetti configurato');
 
       // Sistema Padrini/Mentori
       this.setupPatronSystem();
-      logger.debug(this.MODULE_NAME, 'Sistema patroni configurato');
+      moduleLogger.debug('Sistema patroni configurato');
 
       // Oggetti magici specifici di Brancalonia
       this.setupBrancaloniaItems();
-      logger.debug(this.MODULE_NAME, 'Oggetti magici configurati');
+      moduleLogger.debug('Oggetti magici configurati');
 
       // Regole opzionali
       this.setupOptionalRules();
-      logger.debug(this.MODULE_NAME, 'Regole opzionali configurate');
+      moduleLogger.debug('Regole opzionali configurate');
 
-      const setupTime = logger.endPerformance('setup-additional-mechanics');
-      logger.info(this.MODULE_NAME, `Meccaniche aggiuntive configurate in ${setupTime?.toFixed(2)}ms`);
+      const setupTime = moduleLogger.endPerformance('setup-additional-mechanics');
+      moduleLogger.info(`Meccaniche aggiuntive configurate in ${setupTime?.toFixed(2)}ms`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore critico durante setup meccaniche aggiuntive', error);
+      moduleLogger.error('Errore critico durante setup meccaniche aggiuntive', error);
       throw error;
     }
   }
@@ -463,12 +466,12 @@ class BrancaloniaMechanics {
   }
 
   static async createTrapMacro(trapType) {
-    logger.startPerformance('create-trap-macro');
+    moduleLogger.startPerformance('create-trap-macro');
     
     try {
       const trap = CONFIG.BRANCALONIA?.traps?.types?.[trapType];
       if (!trap) {
-        logger.warn(this.MODULE_NAME, `Tipo trappola '${trapType}' non trovato`);
+        moduleLogger.warn(`Tipo trappola '${trapType}' non trovato`);
         ui.notifications.warn(`Tipo di trappola '${trapType}' non trovato`);
         return;
       }
@@ -505,7 +508,7 @@ class BrancaloniaMechanics {
             ui.notifications.info("Trappola piazzata. Ricorda di nasconderla!");
           } catch (error) {
             if (typeof logger !== 'undefined') {
-              logger.error('Mechanics', 'Errore creazione trappola (macro runtime)', error);
+              moduleLogger.error('Errore creazione trappola (macro runtime)', error);
             }
             ui.notifications.error('Errore durante la creazione della trappola');
           }
@@ -515,13 +518,13 @@ class BrancaloniaMechanics {
       await Macro.create(macroData);
       
       // Log evento
-      logger.info(this.MODULE_NAME, 'Macro trappola creata', {
+      moduleLogger.info('Macro trappola creata', {
         trapType,
         trapName: trap.name
       });
 
       // Emit event per analytics
-      logger.events.emit('mechanics:trap-created', {
+      moduleLogger.events.emit('mechanics:trap-created', {
         trapType,
         trapName: trap.name,
         timestamp: Date.now()
@@ -529,10 +532,10 @@ class BrancaloniaMechanics {
 
       ui.notifications.info(`Macro '${macroData.name}' creata`);
 
-      const trapTime = logger.endPerformance('create-trap-macro');
-      logger.debug(this.MODULE_NAME, `Macro trappola creata in ${trapTime?.toFixed(2)}ms`);
+      const trapTime = moduleLogger.endPerformance('create-trap-macro');
+      moduleLogger.debug(`Macro trappola creata in ${trapTime?.toFixed(2)}ms`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore creazione macro trappola', error);
+      moduleLogger.error('Errore creazione macro trappola', error);
       ui.notifications.error('Errore durante la creazione della macro');
     }
   }
@@ -582,11 +585,11 @@ class BrancaloniaMechanics {
 
   // Funzione per assegnare un patrono
   static async assignPatron(actor, patronType) {
-    logger.startPerformance('assign-patron');
+    moduleLogger.startPerformance('assign-patron');
     
     const patron = CONFIG.BRANCALONIA.patrons.types[patronType];
     if (!patron) {
-      logger.warn(this.MODULE_NAME, `Tipo patrono '${patronType}' non trovato`);
+      moduleLogger.warn(`Tipo patrono '${patronType}' non trovato`);
       return;
     }
 
@@ -599,14 +602,14 @@ class BrancaloniaMechanics {
     });
 
     // Log evento
-    logger.info(this.MODULE_NAME, 'Patrono assegnato', {
+    moduleLogger.info('Patrono assegnato', {
       actor: actor.name,
       patronType,
       patronName: patron.name
     });
 
     // Emit event per analytics
-    logger.events.emit('mechanics:patron-assigned', {
+    moduleLogger.events.emit('mechanics:patron-assigned', {
       actor: actor.name,
       patronType,
       patronName: patron.name,
@@ -624,8 +627,8 @@ class BrancaloniaMechanics {
       speaker: ChatMessage.getSpeaker({ actor })
     });
 
-    const patronTime = logger.endPerformance('assign-patron');
-    logger.debug(this.MODULE_NAME, `Patrono assegnato in ${patronTime?.toFixed(2)}ms`);
+    const patronTime = moduleLogger.endPerformance('assign-patron');
+    moduleLogger.debug(`Patrono assegnato in ${patronTime?.toFixed(2)}ms`);
   }
 
   /**
@@ -699,7 +702,7 @@ class BrancaloniaMechanics {
    * Regole opzionali di Brancalonia
    */
   static setupOptionalRules() {
-    logger.debug(this.MODULE_NAME, 'Regole opzionali configurate');
+    moduleLogger.debug('Regole opzionali configurate');
     // Placeholder per future regole opzionali
   }
 
@@ -707,12 +710,12 @@ class BrancaloniaMechanics {
    * Gestisce risultati critici
    */
   static async handleCriticalResults(item, roll) {
-    logger.startPerformance('handle-critical');
+    moduleLogger.startPerformance('handle-critical');
     
     try {
       const d20Result = roll.dice[0]?.results[0]?.result;
       if (!d20Result) {
-        logger.warn(this.MODULE_NAME, 'Nessun risultato d20 trovato nel roll');
+        moduleLogger.warn('Nessun risultato d20 trovato nel roll');
         return;
       }
 
@@ -722,10 +725,10 @@ class BrancaloniaMechanics {
         await this.handleCriticalFailure(item, roll);
       }
 
-      const criticalTime = logger.endPerformance('handle-critical');
-      logger.debug(this.MODULE_NAME, `Gestione critico completata in ${criticalTime?.toFixed(2)}ms`);
+      const criticalTime = moduleLogger.endPerformance('handle-critical');
+      moduleLogger.debug(`Gestione critico completata in ${criticalTime?.toFixed(2)}ms`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore gestione critici', error);
+      moduleLogger.error('Errore gestione critici', error);
     }
   }
 
@@ -754,7 +757,7 @@ class BrancaloniaMechanics {
       const effect = effects[effectIndex];
 
       // Log evento
-      logger.info(this.MODULE_NAME, 'Critico spettacolare!', {
+      moduleLogger.info('Critico spettacolare!', {
         actor: item.parent?.name,
         item: item.name,
         effect,
@@ -762,7 +765,7 @@ class BrancaloniaMechanics {
       });
 
       // Emit event per analytics
-      logger.events.emit('mechanics:critical-hit', {
+      moduleLogger.events.emit('mechanics:critical-hit', {
         actor: item.parent?.name,
         item: item.name,
         effect,
@@ -780,7 +783,7 @@ class BrancaloniaMechanics {
         speaker: ChatMessage.getSpeaker({ actor: item.parent })
       });
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore gestione critico successo', error);
+      moduleLogger.error('Errore gestione critico successo', error);
     }
   }
 
@@ -809,7 +812,7 @@ class BrancaloniaMechanics {
       const fumble = fumbles[fumbleIndex];
 
       // Log evento
-      logger.info(this.MODULE_NAME, 'Fumble catastrofico!', {
+      moduleLogger.info('Fumble catastrofico!', {
         actor: item.parent?.name,
         item: item.name,
         fumble,
@@ -817,7 +820,7 @@ class BrancaloniaMechanics {
       });
 
       // Emit event per analytics
-      logger.events.emit('mechanics:fumble', {
+      moduleLogger.events.emit('mechanics:fumble', {
         actor: item.parent?.name,
         item: item.name,
         fumble,
@@ -835,7 +838,7 @@ class BrancaloniaMechanics {
         speaker: ChatMessage.getSpeaker({ actor: item.parent })
       });
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore gestione critico fallimento', error);
+      moduleLogger.error('Errore gestione critico fallimento', error);
     }
   }
 
@@ -849,9 +852,9 @@ class BrancaloniaMechanics {
         label: 'Danno Non Letale (KO)',
         checked: false
       };
-      logger.debug(this.MODULE_NAME, 'Opzione danno non letale aggiunta');
+      moduleLogger.debug('Opzione danno non letale aggiunta');
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore aggiunta opzione non letale', error);
+      moduleLogger.error('Errore aggiunta opzione non letale', error);
     }
   }
 
@@ -870,7 +873,7 @@ class BrancaloniaMechanics {
         actor.toggleStatusEffect('unconscious', { active: true });
         actor.unsetFlag(this.ID, 'nonLethalDamage');
 
-        logger.info(this.MODULE_NAME, 'KO applicato (danno non letale)', {
+        moduleLogger.info('KO applicato (danno non letale)', {
           actor: actor.name,
           hp
         });
@@ -884,7 +887,7 @@ class BrancaloniaMechanics {
         options.skipDeathSaves = true;
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore gestione aggiornamento attore', error);
+      moduleLogger.error('Errore gestione aggiornamento attore', error);
     }
   }
 
@@ -911,14 +914,14 @@ class BrancaloniaMechanics {
             </div>
           </div>
         `);
-        logger.debug(this.MODULE_NAME, 'Character sheet migliorato con sistema onore', {
+        moduleLogger.debug('Character sheet migliorato con sistema onore', {
           actor: actor.name,
           honor,
           dishonor
         });
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore enhancing character sheet', error);
+      moduleLogger.error('Errore enhancing character sheet', error);
     }
   }
 
@@ -926,12 +929,12 @@ class BrancaloniaMechanics {
    * Tira complicazione
    */
   static async rollComplication() {
-    logger.startPerformance('roll-complication');
+    moduleLogger.startPerformance('roll-complication');
     
     try {
       const table = CONFIG.BRANCALONIA?.tables?.complications;
       if (!table) {
-        logger.warn(this.MODULE_NAME, 'Tabella complicazioni non trovata');
+        moduleLogger.warn('Tabella complicazioni non trovata');
         ui.notifications.warn('Tabella complicazioni non trovata');
         return;
       }
@@ -942,13 +945,13 @@ class BrancaloniaMechanics {
       );
 
       // Log evento
-      logger.info(this.MODULE_NAME, 'Complicazione tirata', {
+      moduleLogger.info('Complicazione tirata', {
         roll: roll.total,
         result: result?.text
       });
 
       // Emit event per analytics
-      logger.events.emit('mechanics:complication', {
+      moduleLogger.events.emit('mechanics:complication', {
         roll: roll.total,
         result: result?.text,
         timestamp: Date.now()
@@ -963,10 +966,10 @@ class BrancaloniaMechanics {
         `
       });
 
-      const rollTime = logger.endPerformance('roll-complication');
-      logger.debug(this.MODULE_NAME, `Complicazione completata in ${rollTime?.toFixed(2)}ms`);
+      const rollTime = moduleLogger.endPerformance('roll-complication');
+      moduleLogger.debug(`Complicazione completata in ${rollTime?.toFixed(2)}ms`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore tiro complicazione', error);
+      moduleLogger.error('Errore tiro complicazione', error);
       ui.notifications.error('Errore durante il tiro della complicazione');
     }
   }
@@ -975,12 +978,12 @@ class BrancaloniaMechanics {
    * Tira voce di taverna
    */
   static async rollTavernRumor() {
-    logger.startPerformance('roll-tavern-rumor');
+    moduleLogger.startPerformance('roll-tavern-rumor');
     
     try {
       const table = CONFIG.BRANCALONIA?.tables?.tavernRumors;
       if (!table) {
-        logger.warn(this.MODULE_NAME, 'Tabella voci di taverna non trovata');
+        moduleLogger.warn('Tabella voci di taverna non trovata');
         ui.notifications.warn('Tabella voci di taverna non trovata');
         return;
       }
@@ -991,13 +994,13 @@ class BrancaloniaMechanics {
       );
 
       // Log evento
-      logger.info(this.MODULE_NAME, 'Voce di taverna tirata', {
+      moduleLogger.info('Voce di taverna tirata', {
         roll: roll.total,
         rumor: result?.text
       });
 
       // Emit event per analytics
-      logger.events.emit('mechanics:tavern-rumor', {
+      moduleLogger.events.emit('mechanics:tavern-rumor', {
         roll: roll.total,
         rumor: result?.text,
         timestamp: Date.now()
@@ -1012,10 +1015,10 @@ class BrancaloniaMechanics {
         `
       });
 
-      const rollTime = logger.endPerformance('roll-tavern-rumor');
-      logger.debug(this.MODULE_NAME, `Voce taverna completata in ${rollTime?.toFixed(2)}ms`);
+      const rollTime = moduleLogger.endPerformance('roll-tavern-rumor');
+      moduleLogger.debug(`Voce taverna completata in ${rollTime?.toFixed(2)}ms`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore tiro voce taverna', error);
+      moduleLogger.error('Errore tiro voce taverna', error);
     }
   }
 
@@ -1023,12 +1026,12 @@ class BrancaloniaMechanics {
    * Tira bottino scadente
    */
   static async rollShoddyLoot() {
-    logger.startPerformance('roll-shoddy-loot');
+    moduleLogger.startPerformance('roll-shoddy-loot');
     
     try {
       const table = CONFIG.BRANCALONIA?.tables?.shoddyLoot;
       if (!table) {
-        logger.warn(this.MODULE_NAME, 'Tabella bottino scadente non trovata');
+        moduleLogger.warn('Tabella bottino scadente non trovata');
         ui.notifications.warn('Tabella bottino scadente non trovata');
         return;
       }
@@ -1039,13 +1042,13 @@ class BrancaloniaMechanics {
       );
 
       // Log evento
-      logger.info(this.MODULE_NAME, 'Bottino scadente tirato', {
+      moduleLogger.info('Bottino scadente tirato', {
         roll: roll.total,
         loot: result?.text
       });
 
       // Emit event per analytics
-      logger.events.emit('mechanics:loot-rolled', {
+      moduleLogger.events.emit('mechanics:loot-rolled', {
         roll: roll.total,
         loot: result?.text,
         timestamp: Date.now()
@@ -1060,10 +1063,10 @@ class BrancaloniaMechanics {
         `
       });
 
-      const rollTime = logger.endPerformance('roll-shoddy-loot');
-      logger.debug(this.MODULE_NAME, `Bottino completato in ${rollTime?.toFixed(2)}ms`);
+      const rollTime = moduleLogger.endPerformance('roll-shoddy-loot');
+      moduleLogger.debug(`Bottino completato in ${rollTime?.toFixed(2)}ms`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore tiro bottino', error);
+      moduleLogger.error('Errore tiro bottino', error);
     }
   }
 
@@ -1071,19 +1074,19 @@ class BrancaloniaMechanics {
    * Genera PNG casuale con comando
    */
   static generateRandomNPCCommand(type = 'generic') {
-    logger.startPerformance('generate-npc-command');
+    moduleLogger.startPerformance('generate-npc-command');
     
     const npc = this.generateRandomNPC(type);
 
     // Log evento
-    logger.info(this.MODULE_NAME, 'PNG generato tramite comando', {
+    moduleLogger.info('PNG generato tramite comando', {
       name: npc.name,
       occupation: npc.occupation,
       type
     });
 
     // Emit event per analytics
-    logger.events.emit('mechanics:npc-generated', {
+    moduleLogger.events.emit('mechanics:npc-generated', {
       name: npc.name,
       occupation: npc.occupation,
       quirk: npc.quirk,
@@ -1104,8 +1107,8 @@ class BrancaloniaMechanics {
       `
     });
 
-    const npcTime = logger.endPerformance('generate-npc-command');
-    logger.debug(this.MODULE_NAME, `PNG generato in ${npcTime?.toFixed(2)}ms`);
+    const npcTime = moduleLogger.endPerformance('generate-npc-command');
+    moduleLogger.debug(`PNG generato in ${npcTime?.toFixed(2)}ms`);
   }
 
   /**

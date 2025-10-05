@@ -26,8 +26,10 @@
  * BrancaloniaUICoordinator.showReport();
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'UI Coordinator';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} UICoordinatorStatistics
  * @property {number} initTime - Tempo inizializzazione in ms
@@ -49,7 +51,7 @@ import logger from './brancalonia-logger.js';
 class BrancaloniaUICoordinator {
   static ID = 'brancalonia-bigat';
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'UI Coordinator';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Registro delle modifiche UI per evitare conflitti
@@ -107,8 +109,8 @@ class BrancaloniaUICoordinator {
    * @fires ui:coordinator-initialized
    */
   static initialize() {
-    logger.startPerformance('ui-coordinator-init');
-    logger.info(this.MODULE_NAME, `Inizializzazione UI Coordinator v${this.VERSION}...`);
+    moduleLogger.startPerformance('ui-coordinator-init');
+    moduleLogger.info(`Inizializzazione UI Coordinator v${this.VERSION}...`);
 
     try {
       // Verifica se Carolingian UI è attivo
@@ -117,11 +119,11 @@ class BrancaloniaUICoordinator {
       this.statistics.carolingianDetected = !!carolingianActive;
 
       if (!carolingianActive) {
-        logger.warn(this.MODULE_NAME, '⚠️ Carolingian UI non attivo, skip integrazione');
+        moduleLogger.warn('⚠️ Carolingian UI non attivo, skip integrazione');
         return;
       }
 
-      logger.info(this.MODULE_NAME, '✅ Carolingian UI attivo, integrazione in corso...');
+      moduleLogger.info('✅ Carolingian UI attivo, integrazione in corso...');
 
       // Integra con Carolingian UI invece di sostituirlo
       this._integrateWithCarolingianUI();
@@ -135,13 +137,13 @@ class BrancaloniaUICoordinator {
       // Mark as initialized
       this._state.initialized = true;
 
-      const initTime = logger.endPerformance('ui-coordinator-init');
+      const initTime = moduleLogger.endPerformance('ui-coordinator-init');
       this.statistics.initTime = initTime;
 
-      logger.info(this.MODULE_NAME, `✅ UI Coordinator pronto in ${initTime?.toFixed(2)}ms`);
+      moduleLogger.info(`✅ UI Coordinator pronto in ${initTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('ui:coordinator-initialized', {
+      moduleLogger.events.emit('ui:coordinator-initialized', {
         version: this.VERSION,
         carolingianActive: this._state.carolingianActive,
         initTime,
@@ -149,7 +151,7 @@ class BrancaloniaUICoordinator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       this.statistics.errors.push({
         type: 'initialization',
         message: error.message,
@@ -168,7 +170,7 @@ class BrancaloniaUICoordinator {
     try {
       // Verifica se SheetsUtil di Carolingian UI è attivo
       if (typeof window.brancaloniaSettings?.SheetsUtil !== 'undefined') {
-        logger.info(this.MODULE_NAME, '🎨 Carolingian UI SheetsUtil rilevato, coordinamento...');
+        moduleLogger.info('🎨 Carolingian UI SheetsUtil rilevato, coordinamento...');
 
         // Registra hook dopo quelli di Carolingian UI per evitare conflitti
         Hooks.once('ready', () => {
@@ -177,12 +179,12 @@ class BrancaloniaUICoordinator {
           }, 1000); // Delay per permettere a Carolingian UI di inizializzarsi completamente
         });
       } else {
-        logger.warn(this.MODULE_NAME, '⚠️ Carolingian UI SheetsUtil non trovato, hooks standard');
+        moduleLogger.warn('⚠️ Carolingian UI SheetsUtil non trovato, hooks standard');
         this._registerCentralHook();
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore integrazione Carolingian UI', error);
+      moduleLogger.error('Errore integrazione Carolingian UI', error);
       this.statistics.errors.push({
         type: 'carolingian-integration',
         message: error.message,
@@ -198,7 +200,7 @@ class BrancaloniaUICoordinator {
    * @returns {void}
    */
   static _registerCompatibilityHooks() {
-    logger.info(this.MODULE_NAME, '🎨 Registrazione compatibility hooks con Carolingian UI');
+    moduleLogger.info('🎨 Registrazione compatibility hooks con Carolingian UI');
 
     try {
       // Hook per actor sheets che funziona insieme a Carolingian UI
@@ -208,19 +210,19 @@ class BrancaloniaUICoordinator {
           const element = (html instanceof jQuery) ? html[0] : (Array.isArray(html) ? html[0] : html);
           
           if (element?.dataset?.crlngnProcessed) {
-            logger.debug(this.MODULE_NAME, 'Sheet già processata da Carolingian UI, aggiungo enhancements');
+            moduleLogger.debug('Sheet già processata da Carolingian UI, aggiungo enhancements');
 
             this.statistics.carolingianIntegrations++;
 
             // Aggiungi solo elementi specifici di Brancalonia che Carolingian UI non gestisce
             await this._addBrancaloniaEnhancements(app, html, data);
           } else if (!element?.dataset?.brancaloniaProcessed) {
-            logger.debug(this.MODULE_NAME, 'Carolingian UI non rilevato, processing completo');
+            moduleLogger.debug('Carolingian UI non rilevato, processing completo');
             await this._processActorSheet(app, html, data);
           }
 
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore hook renderActorSheetV2', error);
+          moduleLogger.error('Errore hook renderActorSheetV2', error);
           this.statistics.errors.push({
             type: 'hook-render-sheet-v2',
             message: error.message,
@@ -229,10 +231,10 @@ class BrancaloniaUICoordinator {
         }
       });
 
-      logger.debug(this.MODULE_NAME, 'Compatibility hooks registrati');
+      moduleLogger.debug('Compatibility hooks registrati');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione compatibility hooks', error);
+      moduleLogger.error('Errore registrazione compatibility hooks', error);
       this.statistics.errors.push({
         type: 'register-compatibility-hooks',
         message: error.message,
@@ -255,7 +257,7 @@ class BrancaloniaUICoordinator {
     try {
       const element = (html instanceof jQuery) ? html[0] : (Array.isArray(html) ? html[0] : html);
       if (!element) {
-        logger.warn(this.MODULE_NAME, 'Elemento HTML non valido per enhancements');
+        moduleLogger.warn('Elemento HTML non valido per enhancements');
         return;
       }
 
@@ -265,10 +267,10 @@ class BrancaloniaUICoordinator {
       // Aggiungi elementi specifici di Brancalonia che Carolingian UI non gestisce
       await this._addBrancaloniaSpecificElements(app, html, data);
 
-      logger.info(this.MODULE_NAME, '✅ Enhancements Brancalonia aggiunti a sheet Carolingian UI');
+      moduleLogger.info('✅ Enhancements Brancalonia aggiunti a sheet Carolingian UI');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore aggiunta enhancements Brancalonia', error);
+      moduleLogger.error('Errore aggiunta enhancements Brancalonia', error);
       this.statistics.errors.push({
         type: 'add-enhancements',
         message: error.message,
@@ -292,7 +294,7 @@ class BrancaloniaUICoordinator {
   static async _addBrancaloniaSpecificElements(app, html, data) {
     const actor = app.actor;
     if (!actor) {
-      logger.warn(this.MODULE_NAME, 'Actor non disponibile per elementi specifici');
+      moduleLogger.warn('Actor non disponibile per elementi specifici');
       return;
     }
 
@@ -332,10 +334,10 @@ class BrancaloniaUICoordinator {
       // Aggiungi elementi decorativi rinascimentali se Carolingian UI non li ha aggiunti
       this._addBrancaloniaDecorativeElements($html, actor);
 
-      logger.debug(this.MODULE_NAME, `Elementi specifici aggiunti per ${actor.name}`);
+      moduleLogger.debug(`Elementi specifici aggiunti per ${actor.name}`);
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore aggiunta elementi specifici', error);
+      moduleLogger.error('Errore aggiunta elementi specifici', error);
       this.statistics.errors.push({
         type: 'add-specific-elements',
         message: error.message,
@@ -445,11 +447,11 @@ class BrancaloniaUICoordinator {
       const systemVersion = parseFloat(game.system?.version || '0');
       const isV5Plus = systemVersion >= 5.0;
 
-      logger.info(this.MODULE_NAME, `Registrazione central hook per D&D 5e v${systemVersion}`);
+      moduleLogger.info(`Registrazione central hook per D&D 5e v${systemVersion}`);
 
       if (isV5Plus) {
         // dnd5e v5.x+ usa renderActorSheetV2
-        logger.info(this.MODULE_NAME, '🎨 Utilizzo hooks D&D 5e v5.x');
+        moduleLogger.info('🎨 Utilizzo hooks D&D 5e v5.x');
         
         Hooks.on('renderActorSheetV2', async (app, html, data) => {
           try {
@@ -460,7 +462,7 @@ class BrancaloniaUICoordinator {
             await this._processActorSheet(app, html, data);
 
           } catch (error) {
-            logger.error(this.MODULE_NAME, 'Errore hook renderActorSheetV2', error);
+            moduleLogger.error('Errore hook renderActorSheetV2', error);
             this.statistics.errors.push({
               type: 'hook-render-sheet-v2',
               message: error.message,
@@ -480,7 +482,7 @@ class BrancaloniaUICoordinator {
                 await this._processActorSheet(app, html, data);
               }
             } catch (error) {
-              logger.error(this.MODULE_NAME, 'Errore UI coordinator', error);
+              moduleLogger.error('Errore UI coordinator', error);
               this.statistics.errors.push({
                 type: 'ui-coordinator',
                 message: error.message,
@@ -500,7 +502,7 @@ class BrancaloniaUICoordinator {
               }
 
             } catch (error) {
-              logger.error(this.MODULE_NAME, 'Errore hook renderActorSheet fallback', error);
+              moduleLogger.error('Errore hook renderActorSheet fallback', error);
               this.statistics.errors.push({
                 type: 'hook-render-sheet-fallback',
                 message: error.message,
@@ -512,7 +514,7 @@ class BrancaloniaUICoordinator {
 
       } else {
         // dnd5e v3.x/v4.x usa hooks legacy
-        logger.info(this.MODULE_NAME, '🎨 Utilizzo compatibility hooks D&D 5e v3/v4');
+        moduleLogger.info('🎨 Utilizzo compatibility hooks D&D 5e v3/v4');
         
         // Usa renderApplication con controllo tipo per compatibilità
         Hooks.on('renderApplication', async (app, html, data) => {
@@ -527,7 +529,7 @@ class BrancaloniaUICoordinator {
             }
 
           } catch (error) {
-            logger.error(this.MODULE_NAME, 'Errore hook renderApplication', error);
+            moduleLogger.error('Errore hook renderApplication', error);
             this.statistics.errors.push({
               type: 'hook-render-application',
               message: error.message,
@@ -537,10 +539,10 @@ class BrancaloniaUICoordinator {
         });
       }
 
-      logger.debug(this.MODULE_NAME, 'Central hooks registrati con successo');
+      moduleLogger.debug('Central hooks registrati con successo');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione central hook', error);
+      moduleLogger.error('Errore registrazione central hook', error);
       this.statistics.errors.push({
         type: 'register-central-hook',
         message: error.message,
@@ -564,11 +566,11 @@ class BrancaloniaUICoordinator {
   static async _processActorSheet(app, html, data, forceType = null) {
     const actor = app.actor;
     if (!actor) {
-      logger.warn(this.MODULE_NAME, 'Actor non disponibile per processing');
+      moduleLogger.warn('Actor non disponibile per processing');
       return;
     }
 
-    logger.startPerformance(`ui-process-sheet-${actor.id}`);
+    moduleLogger.startPerformance(`ui-process-sheet-${actor.id}`);
 
     try {
       // Wrap html in jQuery if needed (Foundry v13 compatibility)
@@ -591,7 +593,7 @@ class BrancaloniaUICoordinator {
       // Determina tipo actor
       const actorType = forceType || actor.type;
 
-      logger.info(this.MODULE_NAME, `🎭 Processing ${actorType} sheet: ${actor.name}`);
+      moduleLogger.info(`🎭 Processing ${actorType} sheet: ${actor.name}`);
 
       // 1. FASE PREPARAZIONE - Setup base
       await this._phase1_PrepareSheet($html, actor, data);
@@ -620,11 +622,11 @@ class BrancaloniaUICoordinator {
       }
       this._state.processedSheets.add(actor.id);
 
-      const processTime = logger.endPerformance(`ui-process-sheet-${actor.id}`);
-      logger.info(this.MODULE_NAME, `✅ Sheet processata in ${processTime?.toFixed(2)}ms`);
+      const processTime = moduleLogger.endPerformance(`ui-process-sheet-${actor.id}`);
+      moduleLogger.info(`✅ Sheet processata in ${processTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('ui:sheet-processed', {
+      moduleLogger.events.emit('ui:sheet-processed', {
         actorId: actor.id,
         actorName: actor.name,
         actorType,
@@ -633,7 +635,7 @@ class BrancaloniaUICoordinator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore processing sheet per ${actor.name}`, error);
+      moduleLogger.error(`Errore processing sheet per ${actor.name}`, error);
       this.statistics.errors.push({
         type: 'process-sheet',
         message: error.message,
@@ -657,7 +659,7 @@ class BrancaloniaUICoordinator {
    * @fires ui:phase-complete
    */
   static async _phase1_PrepareSheet(html, actor, data) {
-    logger.startPerformance(`ui-phase1-${actor.id}`);
+    moduleLogger.startPerformance(`ui-phase1-${actor.id}`);
     
     try {
       // Fix jQuery/HTMLElement compatibility - determina tipo prima di usare
@@ -681,13 +683,13 @@ class BrancaloniaUICoordinator {
       element.dataset.actorId = actor.id;
       element.dataset.brancaloniaVersion = this.VERSION;
 
-      const phaseTime = logger.endPerformance(`ui-phase1-${actor.id}`);
+      const phaseTime = moduleLogger.endPerformance(`ui-phase1-${actor.id}`);
       this._updatePhaseTimings('phase1', phaseTime);
       
-      logger.debug(this.MODULE_NAME, `Fase 1 completata in ${phaseTime?.toFixed(2)}ms`);
+      moduleLogger.debug(`Fase 1 completata in ${phaseTime?.toFixed(2)}ms`);
       
       // Emit event
-      logger.events.emit('ui:phase-complete', {
+      moduleLogger.events.emit('ui:phase-complete', {
         phase: 1,
         actorId: actor.id,
         phaseTime,
@@ -695,7 +697,7 @@ class BrancaloniaUICoordinator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore Fase 1 (Preparazione)', error);
+      moduleLogger.error('Errore Fase 1 (Preparazione)', error);
       this.statistics.errors.push({
         type: 'phase1-prepare',
         message: error.message,
@@ -719,7 +721,7 @@ class BrancaloniaUICoordinator {
    * @fires ui:tab-added
    */
   static async _phase2_ModifyStructure(html, actor, data) {
-    logger.startPerformance(`ui-phase2-${actor.id}`);
+    moduleLogger.startPerformance(`ui-phase2-${actor.id}`);
 
     try {
       // html is already jQuery wrapped by _processActorSheet
@@ -756,25 +758,25 @@ class BrancaloniaUICoordinator {
             this.statistics.tabsAdded++;
             
             // Emit event
-            logger.events.emit('ui:tab-added', {
+            moduleLogger.events.emit('ui:tab-added', {
               tabId: tab.id,
               tabLabel: tab.label,
               actorId: actor.id,
               timestamp: Date.now()
             });
             
-            logger.debug(this.MODULE_NAME, `Tab "${tab.label}" aggiunta`);
+            moduleLogger.debug(`Tab "${tab.label}" aggiunta`);
           }
         });
       }
 
-      const phaseTime = logger.endPerformance(`ui-phase2-${actor.id}`);
+      const phaseTime = moduleLogger.endPerformance(`ui-phase2-${actor.id}`);
       this._updatePhaseTimings('phase2', phaseTime);
       
-      logger.debug(this.MODULE_NAME, `Fase 2 completata in ${phaseTime?.toFixed(2)}ms`);
+      moduleLogger.debug(`Fase 2 completata in ${phaseTime?.toFixed(2)}ms`);
       
       // Emit event
-      logger.events.emit('ui:phase-complete', {
+      moduleLogger.events.emit('ui:phase-complete', {
         phase: 2,
         actorId: actor.id,
         phaseTime,
@@ -782,7 +784,7 @@ class BrancaloniaUICoordinator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore Fase 2 (Struttura)', error);
+      moduleLogger.error('Errore Fase 2 (Struttura)', error);
       this.statistics.errors.push({
         type: 'phase2-structure',
         message: error.message,
@@ -805,12 +807,12 @@ class BrancaloniaUICoordinator {
    * @fires ui:phase-complete
    */
   static async _phase3_AddContent(html, actor, data) {
-    logger.startPerformance(`ui-phase3-${actor.id}`);
+    moduleLogger.startPerformance(`ui-phase3-${actor.id}`);
 
     try {
       const sheetBody = html.find('.sheet-body');
       if (!sheetBody.length) {
-        logger.warn(this.MODULE_NAME, 'Sheet body non trovato, skip Fase 3');
+        moduleLogger.warn('Sheet body non trovato, skip Fase 3');
         return;
       }
 
@@ -834,20 +836,20 @@ class BrancaloniaUICoordinator {
             </section>
           `);
           
-          logger.debug(this.MODULE_NAME, `Contenuto tab "${tabId}" aggiunto`);
+          moduleLogger.debug(`Contenuto tab "${tabId}" aggiunto`);
         }
       }
 
       // Fix per contenuti esistenti mal posizionati
       this._fixExistingContent(html, actor);
 
-      const phaseTime = logger.endPerformance(`ui-phase3-${actor.id}`);
+      const phaseTime = moduleLogger.endPerformance(`ui-phase3-${actor.id}`);
       this._updatePhaseTimings('phase3', phaseTime);
       
-      logger.debug(this.MODULE_NAME, `Fase 3 completata in ${phaseTime?.toFixed(2)}ms`);
+      moduleLogger.debug(`Fase 3 completata in ${phaseTime?.toFixed(2)}ms`);
       
       // Emit event
-      logger.events.emit('ui:phase-complete', {
+      moduleLogger.events.emit('ui:phase-complete', {
         phase: 3,
         actorId: actor.id,
         phaseTime,
@@ -855,7 +857,7 @@ class BrancaloniaUICoordinator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore Fase 3 (Contenuto)', error);
+      moduleLogger.error('Errore Fase 3 (Contenuto)', error);
       this.statistics.errors.push({
         type: 'phase3-content',
         message: error.message,
@@ -878,7 +880,7 @@ class BrancaloniaUICoordinator {
    * @fires ui:phase-complete
    */
   static async _phase4_ApplyStyling(html, actor, data) {
-    logger.startPerformance(`ui-phase4-${actor.id}`);
+    moduleLogger.startPerformance(`ui-phase4-${actor.id}`);
 
     try {
       // Rimuovi stili inline problematici
@@ -906,13 +908,13 @@ class BrancaloniaUICoordinator {
       // Fix per altezze e overflow
       this._fixLayoutIssues(html);
 
-      const phaseTime = logger.endPerformance(`ui-phase4-${actor.id}`);
+      const phaseTime = moduleLogger.endPerformance(`ui-phase4-${actor.id}`);
       this._updatePhaseTimings('phase4', phaseTime);
       
-      logger.debug(this.MODULE_NAME, `Fase 4 completata in ${phaseTime?.toFixed(2)}ms`);
+      moduleLogger.debug(`Fase 4 completata in ${phaseTime?.toFixed(2)}ms`);
       
       // Emit event
-      logger.events.emit('ui:phase-complete', {
+      moduleLogger.events.emit('ui:phase-complete', {
         phase: 4,
         actorId: actor.id,
         phaseTime,
@@ -920,7 +922,7 @@ class BrancaloniaUICoordinator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore Fase 4 (Styling)', error);
+      moduleLogger.error('Errore Fase 4 (Styling)', error);
       this.statistics.errors.push({
         type: 'phase4-styling',
         message: error.message,
@@ -943,7 +945,7 @@ class BrancaloniaUICoordinator {
    * @fires ui:phase-complete
    */
   static async _phase5_BindEvents(html, actor, data) {
-    logger.startPerformance(`ui-phase5-${actor.id}`);
+    moduleLogger.startPerformance(`ui-phase5-${actor.id}`);
 
     try {
       // Rimuovi listener duplicati
@@ -955,7 +957,7 @@ class BrancaloniaUICoordinator {
           const action = event.currentTarget.dataset.action;
           this._handleAction(action, actor, event);
         } catch (error) {
-          logger.error(this.MODULE_NAME, `Errore handling action`, error);
+          moduleLogger.error(`Errore handling action`, error);
         }
       });
 
@@ -965,17 +967,17 @@ class BrancaloniaUICoordinator {
           const tab = event.currentTarget.dataset.tab;
           this._switchTab(html, tab);
         } catch (error) {
-          logger.error(this.MODULE_NAME, `Errore tab switching`, error);
+          moduleLogger.error(`Errore tab switching`, error);
         }
       });
 
-      const phaseTime = logger.endPerformance(`ui-phase5-${actor.id}`);
+      const phaseTime = moduleLogger.endPerformance(`ui-phase5-${actor.id}`);
       this._updatePhaseTimings('phase5', phaseTime);
       
-      logger.debug(this.MODULE_NAME, `Fase 5 completata in ${phaseTime?.toFixed(2)}ms`);
+      moduleLogger.debug(`Fase 5 completata in ${phaseTime?.toFixed(2)}ms`);
       
       // Emit event
-      logger.events.emit('ui:phase-complete', {
+      moduleLogger.events.emit('ui:phase-complete', {
         phase: 5,
         actorId: actor.id,
         phaseTime,
@@ -983,7 +985,7 @@ class BrancaloniaUICoordinator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore Fase 5 (Eventi)', error);
+      moduleLogger.error('Errore Fase 5 (Eventi)', error);
       this.statistics.errors.push({
         type: 'phase5-events',
         message: error.message,
@@ -1007,7 +1009,7 @@ class BrancaloniaUICoordinator {
    * @fires ui:phase-complete
    */
   static async _phase6_Finalize(app, html, actor, data) {
-    logger.startPerformance(`ui-phase6-${actor.id}`);
+    moduleLogger.startPerformance(`ui-phase6-${actor.id}`);
 
     try {
       // Rimuovi elementi duplicati
@@ -1019,13 +1021,13 @@ class BrancaloniaUICoordinator {
       // Trigger evento custom per altri moduli
       Hooks.callAll('brancaloniaSheetReady', app, html, data);
 
-      const phaseTime = logger.endPerformance(`ui-phase6-${actor.id}`);
+      const phaseTime = moduleLogger.endPerformance(`ui-phase6-${actor.id}`);
       this._updatePhaseTimings('phase6', phaseTime);
       
-      logger.debug(this.MODULE_NAME, `Fase 6 completata in ${phaseTime?.toFixed(2)}ms`);
+      moduleLogger.debug(`Fase 6 completata in ${phaseTime?.toFixed(2)}ms`);
       
       // Emit event
-      logger.events.emit('ui:phase-complete', {
+      moduleLogger.events.emit('ui:phase-complete', {
         phase: 6,
         actorId: actor.id,
         phaseTime,
@@ -1033,7 +1035,7 @@ class BrancaloniaUICoordinator {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore Fase 6 (Finalizzazione)', error);
+      moduleLogger.error('Errore Fase 6 (Finalizzazione)', error);
       this.statistics.errors.push({
         type: 'phase6-finalize',
         message: error.message,
@@ -1464,14 +1466,14 @@ class BrancaloniaUICoordinator {
             priority
           });
           
-          logger.debug(this.MODULE_NAME, `Modulo "${moduleId}" registrato con priorità ${priority}`);
+          moduleLogger.debug(`Modulo "${moduleId}" registrato con priorità ${priority}`);
         }
       };
 
-      logger.debug(this.MODULE_NAME, 'Sistema priorità configurato');
+      moduleLogger.debug('Sistema priorità configurato');
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore setup sistema priorità', error);
+      moduleLogger.error('Errore setup sistema priorità', error);
       this.statistics.errors.push({
         type: 'setup-priority-system',
         message: error.message,
@@ -1492,7 +1494,7 @@ class BrancaloniaUICoordinator {
 
       // SKIP per dnd5e v5.x+ (struttura CONFIG.Actor.sheetClasses cambiata/deprecata)
       if (systemVersion >= 5.0) {
-        logger.info(this.MODULE_NAME, '🎨 Sheet class patching skipped (D&D 5e v5.x)');
+        moduleLogger.info('🎨 Sheet class patching skipped (D&D 5e v5.x)');
         return;
       }
 
@@ -1501,7 +1503,7 @@ class BrancaloniaUICoordinator {
         try {
           const sheetClass = CONFIG.Actor.sheetClasses?.character?.['dnd5e.ActorSheet5eCharacter'];
           if (!sheetClass) {
-            logger.warn(this.MODULE_NAME, '⚠️ Sheet class non trovata, skip patch');
+            moduleLogger.warn('⚠️ Sheet class non trovata, skip patch');
             return;
           }
 
@@ -1517,10 +1519,10 @@ class BrancaloniaUICoordinator {
               }
             });
           
-          logger.info(this.MODULE_NAME, '✅ Sheet class patched per D&D 5e v3/v4');
+          moduleLogger.info('✅ Sheet class patched per D&D 5e v3/v4');
 
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore patching sheet class', error);
+          moduleLogger.error('Errore patching sheet class', error);
           this.statistics.errors.push({
             type: 'sheet-class-patch',
             message: error.message,
@@ -1530,7 +1532,7 @@ class BrancaloniaUICoordinator {
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore compatibility fixes', error);
+      moduleLogger.error('Errore compatibility fixes', error);
       this.statistics.errors.push({
         type: 'compatibility-fixes',
         message: error.message,
@@ -1606,11 +1608,11 @@ class BrancaloniaUICoordinator {
    */
   static async forceReprocess(actorId) {
     try {
-      logger.info(this.MODULE_NAME, `Forza re-processing per actor: ${actorId}`);
+      moduleLogger.info(`Forza re-processing per actor: ${actorId}`);
 
       const actor = game.actors.get(actorId);
       if (!actor) {
-        logger.warn(this.MODULE_NAME, `Actor ${actorId} non trovato`);
+        moduleLogger.warn(`Actor ${actorId} non trovato`);
         return false;
       }
 
@@ -1620,18 +1622,18 @@ class BrancaloniaUICoordinator {
       // Trova la sheet aperta
       const sheet = actor.sheet;
       if (!sheet || !sheet.rendered) {
-        logger.warn(this.MODULE_NAME, `Sheet per actor ${actorId} non aperta/renderizzata`);
+        moduleLogger.warn(`Sheet per actor ${actorId} non aperta/renderizzata`);
         return false;
       }
 
       // Re-render sheet
       await sheet.render(true);
 
-      logger.info(this.MODULE_NAME, `✅ Re-processing completato per ${actor.name}`);
+      moduleLogger.info(`✅ Re-processing completato per ${actor.name}`);
       return true;
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore re-processing actor ${actorId}`, error);
+      moduleLogger.error(`Errore re-processing actor ${actorId}`, error);
       this.statistics.errors.push({
         type: 'force-reprocess',
         message: error.message,
@@ -1650,7 +1652,7 @@ class BrancaloniaUICoordinator {
    * BrancaloniaUICoordinator.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche UI Coordinator');
+    moduleLogger.info('Reset statistiche UI Coordinator');
 
     const initTime = this.statistics.initTime;
     const carolingianDetected = this.statistics.carolingianDetected;
@@ -1677,7 +1679,7 @@ class BrancaloniaUICoordinator {
 
     this._state.processedSheets.clear();
 
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -1691,14 +1693,14 @@ class BrancaloniaUICoordinator {
     const stats = this.getStatistics();
     const status = this.getStatus();
 
-    logger.group('🎨 Brancalonia UI Coordinator - Report');
+    moduleLogger.group('🎨 Brancalonia UI Coordinator - Report');
 
-    logger.info(this.MODULE_NAME, 'VERSION:', this.VERSION);
-    logger.info(this.MODULE_NAME, 'Initialized:', status.initialized);
-    logger.info(this.MODULE_NAME, 'Carolingian Active:', status.carolingianActive);
+    moduleLogger.info('VERSION:', this.VERSION);
+    moduleLogger.info('Initialized:', status.initialized);
+    moduleLogger.info('Carolingian Active:', status.carolingianActive);
 
-    logger.group('📊 Statistics');
-    logger.table([
+    moduleLogger.group('📊 Statistics');
+    moduleLogger.table([
       { Metric: 'Init Time', Value: `${stats.initTime?.toFixed(2)}ms` },
       { Metric: 'Sheets Processed', Value: stats.sheetsProcessed },
       { Metric: 'Character Sheets', Value: stats.characterSheets },
@@ -1709,10 +1711,10 @@ class BrancaloniaUICoordinator {
       { Metric: 'Errors', Value: stats.errors.length },
       { Metric: 'Uptime', Value: `${(stats.uptime / 1000).toFixed(0)}s` }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('⚙️ Phase Timings (avg ms)');
-    logger.table([
+    moduleLogger.group('⚙️ Phase Timings (avg ms)');
+    moduleLogger.table([
       { Phase: 'Phase 1 (Prepare)', Time: `${stats.phaseTimings.phase1.toFixed(2)}ms` },
       { Phase: 'Phase 2 (Structure)', Time: `${stats.phaseTimings.phase2.toFixed(2)}ms` },
       { Phase: 'Phase 3 (Content)', Time: `${stats.phaseTimings.phase3.toFixed(2)}ms` },
@@ -1720,17 +1722,17 @@ class BrancaloniaUICoordinator {
       { Phase: 'Phase 5 (Events)', Time: `${stats.phaseTimings.phase5.toFixed(2)}ms` },
       { Phase: 'Phase 6 (Finalize)', Time: `${stats.phaseTimings.phase6.toFixed(2)}ms` }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors');
+      moduleLogger.group('🐛 Errors');
       stats.errors.forEach((err, i) => {
-        logger.error(this.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return { status, stats };
   }

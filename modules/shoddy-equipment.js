@@ -8,11 +8,14 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Shoddy Equipment';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class ShoddyEquipment {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Shoddy Equipment';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'brancalonia-bigat';
 
   // Statistics tracking (enterprise-grade)
@@ -38,7 +41,7 @@ class ShoddyEquipment {
     this.shoddyItems = new Map();
     this.initialized = false;
     this.shoddyConfig = {};
-    logger.debug?.(ShoddyEquipment.MODULE_NAME, 'Istanza creata');
+    moduleLogger.debug?.('Istanza creata');
   }
 
   /**
@@ -52,8 +55,8 @@ class ShoddyEquipment {
    */
   static initialize() {
     try {
-      logger.startPerformance('shoddy-equipment-init');
-      logger.info(this.MODULE_NAME, '🛠️ Inizializzazione Sistema Equipaggiamento Scadente...');
+      moduleLogger.startPerformance('shoddy-equipment-init');
+      moduleLogger.info('🛠️ Inizializzazione Sistema Equipaggiamento Scadente...');
 
       // Registra le settings
       ShoddyEquipment.registerSettings();
@@ -72,11 +75,11 @@ class ShoddyEquipment {
       game.brancalonia.modules['shoddy-equipment'] = this;
 
       this._state.initialized = true;
-      const perfTime = logger.endPerformance('shoddy-equipment-init');
-      logger.info(this.MODULE_NAME, `✅ Sistema Equipaggiamento Scadente inizializzato con successo (${perfTime?.toFixed(2)}ms)`);
+      const perfTime = moduleLogger.endPerformance('shoddy-equipment-init');
+      moduleLogger.info(`✅ Sistema Equipaggiamento Scadente inizializzato con successo (${perfTime?.toFixed(2)}ms)`);
       
       // Event emitter
-      logger.events.emit('shoddy-equipment:initialized', {
+      moduleLogger.events.emit('shoddy-equipment:initialized', {
         version: this.VERSION,
         timestamp: Date.now()
       });
@@ -88,7 +91,7 @@ class ShoddyEquipment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione Sistema Equipaggiamento Scadente', error);
+      moduleLogger.error('Errore inizializzazione Sistema Equipaggiamento Scadente', error);
       if (ui?.notifications) {
         ui.notifications.error(`Errore inizializzazione Sistema Equipaggiamento Scadente: ${error.message}`);
       }
@@ -104,7 +107,7 @@ class ShoddyEquipment {
       type: Boolean,
       default: true,
       onChange: value => {
-        logger.info(ShoddyEquipment.MODULE_NAME, `Equipaggiamento Scadente: ${value ? 'abilitato' : 'disabilitato'}`);
+        moduleLogger.info(`Equipaggiamento Scadente: ${value ? 'abilitato' : 'disabilitato'}`);
         ui.notifications.info(`Sistema Equipaggiamento Scadente ${value ? 'abilitato' : 'disabilitato'}`);
       }
     });
@@ -118,7 +121,7 @@ class ShoddyEquipment {
       range: { min: 0.0, max: 1.0, step: 0.01 },
       default: 0.1,
       onChange: value => {
-        logger.debug?.(ShoddyEquipment.MODULE_NAME, `Probabilità rottura aggiornata: ${value}`);
+        moduleLogger.debug?.(`Probabilità rottura aggiornata: ${value}`);
       }
     });
 
@@ -132,7 +135,7 @@ class ShoddyEquipment {
     });
 
     this._state.settingsRegistered = true;
-    logger.info(this.MODULE_NAME, '✅ Settings Equipaggiamento Scadente registrate');
+    moduleLogger.info('✅ Settings Equipaggiamento Scadente registrate');
   }
 
   static registerHooks() {
@@ -171,7 +174,7 @@ class ShoddyEquipment {
     Hooks.on('dnd5e.useItem', ShoddyEquipment._onUseItem);
 
     this._state.hooksRegistered = true;
-    logger.info(this.MODULE_NAME, '✅ Hooks Equipaggiamento Scadente registrati');
+    moduleLogger.info('✅ Hooks Equipaggiamento Scadente registrati');
   }
 
   static registerChatCommands() {
@@ -206,7 +209,7 @@ class ShoddyEquipment {
       });
     };
 
-    logger.info(this.MODULE_NAME, '✅ Comandi chat Equipaggiamento Scadente registrati');
+    moduleLogger.info('✅ Comandi chat Equipaggiamento Scadente registrati');
   }
 
   static registerMacros() {
@@ -227,7 +230,7 @@ class ShoddyEquipment {
       });
     }
 
-    logger.info(this.MODULE_NAME, '✅ Macro Equipaggiamento Scadente registrate');
+    moduleLogger.info('✅ Macro Equipaggiamento Scadente registrate');
   }
 
   // Inizializza il sistema (chiamato dopo ready)
@@ -239,7 +242,7 @@ class ShoddyEquipment {
       await this.loadShoddyConfig();
 
       this.initialized = true;
-      logger.info(ShoddyEquipment.MODULE_NAME, '✅ Sistema Equipaggiamento Scadente configurato');
+      moduleLogger.info('✅ Sistema Equipaggiamento Scadente configurato');
       ui.notifications.info('Sistema Equipaggiamento Scadente attivo');
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ 
@@ -247,7 +250,7 @@ class ShoddyEquipment {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore inizializzazione equipaggiamento scadente', error);
+      moduleLogger.error('Errore inizializzazione equipaggiamento scadente', error);
       ui.notifications.error('Errore inizializzazione Sistema Equipaggiamento Scadente');
     }
   }
@@ -283,7 +286,7 @@ class ShoddyEquipment {
       }
     };
 
-    logger.debug?.(ShoddyEquipment.MODULE_NAME, 'Configurazione equipaggiamento scadente caricata');
+    moduleLogger.debug?.('Configurazione equipaggiamento scadente caricata');
   }
 
   // Hook handlers statici
@@ -295,7 +298,7 @@ class ShoddyEquipment {
       instance.preCreateItem(document, data, options, userId);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'preCreateItem', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore preCreateItem', error);
+      moduleLogger.error('Errore preCreateItem', error);
     }
   }
 
@@ -307,7 +310,7 @@ class ShoddyEquipment {
       instance.onItemCreate(item, options, userId);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'createItem', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore createItem', error);
+      moduleLogger.error('Errore createItem', error);
     }
   }
 
@@ -319,7 +322,7 @@ class ShoddyEquipment {
       instance.onItemUpdate(item, changes, options, userId);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'updateItem', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore updateItem', error);
+      moduleLogger.error('Errore updateItem', error);
     }
   }
 
@@ -331,7 +334,7 @@ class ShoddyEquipment {
       instance.preUpdateItem(item, changes, options, userId);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'preUpdateItem', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore preUpdateItem', error);
+      moduleLogger.error('Errore preUpdateItem', error);
     }
   }
 
@@ -343,7 +346,7 @@ class ShoddyEquipment {
       instance.enhanceActorSheet(sheet, html, data);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'renderActorSheet', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore renderActorSheet', error);
+      moduleLogger.error('Errore renderActorSheet', error);
     }
   }
 
@@ -355,7 +358,7 @@ class ShoddyEquipment {
       instance.enhanceItemSheet(sheet, html, data);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'renderItemSheet', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore renderItemSheet', error);
+      moduleLogger.error('Errore renderItemSheet', error);
     }
   }
 
@@ -367,7 +370,7 @@ class ShoddyEquipment {
       instance.checkBreakageOnUse(item, item.actor);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'rollAttack', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore rollAttack', error);
+      moduleLogger.error('Errore rollAttack', error);
     }
   }
 
@@ -379,7 +382,7 @@ class ShoddyEquipment {
       instance.checkBreakageOnUse(item, item.actor);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'rollDamage', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore rollDamage', error);
+      moduleLogger.error('Errore rollDamage', error);
     }
   }
 
@@ -391,7 +394,7 @@ class ShoddyEquipment {
       instance.checkBreakageOnUse(item, item.actor);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'useItem', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore useItem', error);
+      moduleLogger.error('Errore useItem', error);
     }
   }
 
@@ -403,7 +406,7 @@ class ShoddyEquipment {
       instance.handleChatCommand(args, speaker);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'chatCommand', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore chat command', error);
+      moduleLogger.error('Errore chat command', error);
       ui.notifications.error('Errore comando equipaggiamento scadente');
     }
   }
@@ -422,7 +425,7 @@ class ShoddyEquipment {
       }
 
       ShoddyEquipment.statistics.shoddyItemsCreated++;
-      logger.info(ShoddyEquipment.MODULE_NAME, `✅ Oggetto marcato come scadente: ${data.name}`);
+      moduleLogger.info(`✅ Oggetto marcato come scadente: ${data.name}`);
     }
   }
 
@@ -492,7 +495,7 @@ class ShoddyEquipment {
       };
 
       await item.createEmbeddedDocuments('ActiveEffect', [effectData]);
-      logger.debug?.(ShoddyEquipment.MODULE_NAME, `Effetti scadenti applicati a: ${item.name}`);
+      moduleLogger.debug?.(`Effetti scadenti applicati a: ${item.name}`);
     }
   }
 
@@ -505,7 +508,7 @@ class ShoddyEquipment {
     if (effects.length > 0) {
       const ids = effects.map(e => e.id);
       await item.deleteEmbeddedDocuments('ActiveEffect', ids);
-      logger.debug?.(ShoddyEquipment.MODULE_NAME, `Effetti scadenti rimossi da: ${item.name}`);
+      moduleLogger.debug?.(`Effetti scadenti rimossi da: ${item.name}`);
     }
   }
 
@@ -629,11 +632,11 @@ class ShoddyEquipment {
       }
 
       ShoddyEquipment.statistics.itemsBroken++;
-      logger.info(ShoddyEquipment.MODULE_NAME, `💥 Oggetto rotto: ${item.name}`);
+      moduleLogger.info(`💥 Oggetto rotto: ${item.name}`);
       ui.notifications.warn(`${item.name} si è rotto!`);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'breakItem', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore rottura oggetto', error);
+      moduleLogger.error('Errore rottura oggetto', error);
       ui.notifications.error('Errore durante la rottura dell\'oggetto');
     }
   }
@@ -676,11 +679,11 @@ class ShoddyEquipment {
       await item.unsetFlag('brancalonia-bigat', 'broken');
 
       ShoddyEquipment.statistics.itemsRepaired++;
-      logger.info(ShoddyEquipment.MODULE_NAME, `🔧 Oggetto riparato: ${item.name} (costo: ${cost} mo)`);
+      moduleLogger.info(`🔧 Oggetto riparato: ${item.name} (costo: ${cost} mo)`);
       ui.notifications.info(`${item.name} riparato per ${cost} mo`);
     } catch (error) {
       ShoddyEquipment.statistics.errors.push({ type: 'repairItem', message: error.message, timestamp: Date.now() });
-      logger.error(ShoddyEquipment.MODULE_NAME, 'Errore riparazione oggetto', error);
+      moduleLogger.error('Errore riparazione oggetto', error);
       ui.notifications.error('Errore durante la riparazione dell\'oggetto');
     }
   }
@@ -951,7 +954,7 @@ class ShoddyEquipment {
       dialogsShown: 0,
       errors: []
     };
-    logger.info(this.MODULE_NAME, '📊 Statistiche resettate');
+    moduleLogger.info('📊 Statistiche resettate');
   }
 
   /**

@@ -4,7 +4,9 @@
  * Identifica e corregge valori di durata non validi nelle attività
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+const MODULE_LABEL = 'Brancalonia Data Validator';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class BrancaloniaDataValidator {
   static ID = 'brancalonia-bigat';
@@ -19,7 +21,7 @@ class BrancaloniaDataValidator {
   };
 
   static initialize() {
-    logger.info('BrancaloniaDataValidator', 'Inizializzazione correttore validazione dati');
+    moduleLogger.info('BrancaloniaDataValidator', 'Inizializzazione correttore validazione dati');
 
     // Registra hook per correzione automatica
     this._registerHooks();
@@ -28,7 +30,7 @@ class BrancaloniaDataValidator {
     game.brancalonia = game.brancalonia || {};
     game.brancalonia.dataValidator = this;
 
-    logger.info('BrancaloniaDataValidator', 'Correttore validazione dati pronto');
+    moduleLogger.info('BrancaloniaDataValidator', 'Correttore validazione dati pronto');
   }
 
   static _registerHooks() {
@@ -36,7 +38,7 @@ class BrancaloniaDataValidator {
     // TEMPORANEAMENTE DISABILITATO - causa crash con dati malformati
     /*
     Hooks.once('ready', async () => {
-      logger.info('BrancaloniaDataValidator', 'Eseguendo correzione validazione completa al ready');
+      moduleLogger.info('BrancaloniaDataValidator', 'Eseguendo correzione validazione completa al ready');
       await this._validateAndFixAllData();
     });
     */
@@ -75,7 +77,7 @@ class BrancaloniaDataValidator {
    * Corregge errori di validazione in tutti i dati di gioco
    */
   static async _validateAndFixAllData() {
-    logger.info('BrancaloniaDataValidator', 'Iniziando validazione completa dati');
+    moduleLogger.info('BrancaloniaDataValidator', 'Iniziando validazione completa dati');
 
     // Reset statistiche
     this.STATISTICS = {
@@ -102,13 +104,13 @@ class BrancaloniaDataValidator {
     this.STATISTICS.totalFixed = fixesApplied;
 
     if (fixesApplied > 0) {
-      logger.warn('BrancaloniaDataValidator', `${fixesApplied} errori di validazione corretti`);
+      moduleLogger.warn('BrancaloniaDataValidator', `${fixesApplied} errori di validazione corretti`);
       ui.notifications.info(`✅ Corretto ${fixesApplied} errori di validazione dati`);
       
       // Log statistiche
-      logger.info('BrancaloniaDataValidator', 'Statistiche correzione:', this.STATISTICS);
+      moduleLogger.info('BrancaloniaDataValidator', 'Statistiche correzione:', this.STATISTICS);
     } else {
-      logger.info('BrancaloniaDataValidator', 'Nessun errore di validazione trovato');
+      moduleLogger.info('BrancaloniaDataValidator', 'Nessun errore di validazione trovato');
     }
 
     return fixesApplied;
@@ -142,7 +144,7 @@ class BrancaloniaDataValidator {
       p.metadata.type === 'Item'
     );
 
-    logger.info('BrancaloniaDataValidator', `Validazione di ${packs.length} compendi Brancalonia`);
+    moduleLogger.info('BrancaloniaDataValidator', `Validazione di ${packs.length} compendi Brancalonia`);
 
     for (const pack of packs) {
       try {
@@ -150,10 +152,10 @@ class BrancaloniaDataValidator {
         fixes += packFixes;
         
         if (packFixes > 0) {
-          logger.info('BrancaloniaDataValidator', `Corretto ${packFixes} errori nel compendio ${pack.metadata.label}`);
+          moduleLogger.info('BrancaloniaDataValidator', `Corretto ${packFixes} errori nel compendio ${pack.metadata.label}`);
         }
       } catch (error) {
-        logger.warn('BrancaloniaDataValidator', `Errore validazione compendio ${pack.metadata.label}:`, error);
+        moduleLogger.warn('BrancaloniaDataValidator', `Errore validazione compendio ${pack.metadata.label}:`, error);
       }
     }
 
@@ -170,7 +172,7 @@ class BrancaloniaDataValidator {
       fixes += await this._validateActorActivities(actor);
       fixes += await this._validateActorItems(actor);
     } catch (error) {
-      logger.error('BrancaloniaDataValidator', `Errore validazione attore ${actor.name}:`, error);
+      moduleLogger.error('BrancaloniaDataValidator', `Errore validazione attore ${actor.name}:`, error);
     }
 
     return fixes;
@@ -212,7 +214,7 @@ class BrancaloniaDataValidator {
 
         // Usa la nuova validazione migliorata
         if (!this._isValidDurationValue(durationValue)) {
-          logger.warn('BrancaloniaDataValidator', `Valore durata non valido trovato in ${actor.name} (${activityId}): "${durationValue}"`);
+          moduleLogger.warn('BrancaloniaDataValidator', `Valore durata non valido trovato in ${actor.name} (${activityId}): "${durationValue}"`);
 
           // Correggi il valore
           const updatedActivities = { ...actor.system.activities };
@@ -231,9 +233,9 @@ class BrancaloniaDataValidator {
 
             fixes++;
             this.STATISTICS.itemsFixed++;
-            logger.info('BrancaloniaDataValidator', `Corretto valore durata in ${actor.name} (${activityId}): "${durationValue}" → ""`);
+            moduleLogger.info('BrancaloniaDataValidator', `Corretto valore durata in ${actor.name} (${activityId}): "${durationValue}" → ""`);
           } catch (error) {
-            logger.error('BrancaloniaDataValidator', `Errore correzione attività ${activityId}:`, error);
+            moduleLogger.error('BrancaloniaDataValidator', `Errore correzione attività ${activityId}:`, error);
           }
         }
       }
@@ -274,7 +276,7 @@ class BrancaloniaDataValidator {
         // Usa la nuova validazione migliorata
         if (!this._isValidDurationValue(durationValue)) {
           const ownerName = actor ? actor.name : 'Sconosciuto';
-          logger.warn('BrancaloniaDataValidator', `Valore durata non valido in item ${item.name} (${ownerName}) (${activityId}): "${durationValue}"`);
+          moduleLogger.warn('BrancaloniaDataValidator', `Valore durata non valido in item ${item.name} (${ownerName}) (${activityId}): "${durationValue}"`);
 
           const updatedActivities = { ...item.system.activities };
           updatedActivities[activityId] = {
@@ -292,9 +294,9 @@ class BrancaloniaDataValidator {
 
             fixes++;
             this.STATISTICS.itemsFixed++;
-            logger.info('BrancaloniaDataValidator', `Corretto valore durata in item ${item.name} (${activityId}): "${durationValue}" → ""`);
+            moduleLogger.info('BrancaloniaDataValidator', `Corretto valore durata in item ${item.name} (${activityId}): "${durationValue}" → ""`);
           } catch (error) {
-            logger.error('BrancaloniaDataValidator', `Errore correzione item ${item.name}:`, error);
+            moduleLogger.error('BrancaloniaDataValidator', `Errore correzione item ${item.name}:`, error);
           }
         }
       }
@@ -318,7 +320,7 @@ class BrancaloniaDataValidator {
         }
       }
     } catch (error) {
-      logger.warn('BrancaloniaDataValidator', `Errore accesso compendio ${pack.metadata.label}:`, error);
+      moduleLogger.warn('BrancaloniaDataValidator', `Errore accesso compendio ${pack.metadata.label}:`, error);
     }
 
     return fixes;
@@ -340,7 +342,7 @@ class BrancaloniaDataValidator {
 
         // Usa la nuova validazione migliorata
         if (!this._isValidDurationValue(durationValue)) {
-          logger.warn('BrancaloniaDataValidator', `Valore durata non valido nel compendio ${pack.metadata.label} (${item.name}): "${durationValue}"`);
+          moduleLogger.warn('BrancaloniaDataValidator', `Valore durata non valido nel compendio ${pack.metadata.label} (${item.name}): "${durationValue}"`);
 
           const updatedActivities = { ...item.system.activities };
           updatedActivities[activityId] = {
@@ -357,9 +359,9 @@ class BrancaloniaDataValidator {
             });
 
             fixes++;
-            logger.info('BrancaloniaDataValidator', `Corretto valore durata nel compendio ${item.name} (${activityId}): "${durationValue}" → ""`);
+            moduleLogger.info('BrancaloniaDataValidator', `Corretto valore durata nel compendio ${item.name} (${activityId}): "${durationValue}" → ""`);
           } catch (error) {
-            logger.error('BrancaloniaDataValidator', `Errore correzione item nel compendio ${item.name}:`, error);
+            moduleLogger.error('BrancaloniaDataValidator', `Errore correzione item nel compendio ${item.name}:`, error);
           }
         }
       }
@@ -372,13 +374,13 @@ class BrancaloniaDataValidator {
    * Gestisce errori di validazione globali
    */
   static _handleValidationError(error) {
-    logger.error('BrancaloniaDataValidator', 'Errore validazione rilevato:', error);
+    moduleLogger.error('BrancaloniaDataValidator', 'Errore validazione rilevato:', error);
 
     // Controlla se è un errore di durata
     // TEMPORANEAMENTE DISABILITATO - causa loop infinito
     /*
     if (error.message && error.message.includes('duration') && error.message.includes('value')) {
-      logger.warn('BrancaloniaDataValidator', 'Errore durata rilevato - eseguendo correzione automatica');
+      moduleLogger.warn('BrancaloniaDataValidator', 'Errore durata rilevato - eseguendo correzione automatica');
 
       // Esegui correzione automatica dopo un breve delay
       setTimeout(async () => {
@@ -392,7 +394,7 @@ class BrancaloniaDataValidator {
    * Verifica se ci sono problemi di validazione attivi
    */
   static async checkForValidationIssues() {
-    logger.info('BrancaloniaDataValidator', 'Controllando problemi di validazione...');
+    moduleLogger.info('BrancaloniaDataValidator', 'Controllando problemi di validazione...');
 
     const issues = [];
     let totalChecked = 0;
@@ -448,7 +450,7 @@ class BrancaloniaDataValidator {
 
     this.VALIDATION_ISSUES = issues;
 
-    logger.info('BrancaloniaDataValidator', `Controllati ${totalChecked} attori, trovati ${issues.length} problemi`);
+    moduleLogger.info('BrancaloniaDataValidator', `Controllati ${totalChecked} attori, trovati ${issues.length} problemi`);
 
     return issues;
   }
@@ -469,18 +471,18 @@ class BrancaloniaDataValidator {
   static showStatistics() {
     const stats = this.getStatistics();
     
-    logger.group('📊 Brancalonia Data Validator - Statistiche');
-    logger.info('BrancaloniaDataValidator', `🔍 Documenti controllati: ${stats.totalChecked}`);
-    logger.info('BrancaloniaDataValidator', `✅ Correzioni applicate: ${stats.totalFixed}`);
-    logger.info('BrancaloniaDataValidator', `👤 Attori corretti: ${stats.actorsFixed}`);
-    logger.info('BrancaloniaDataValidator', `📦 Item corretti: ${stats.itemsFixed}`);
-    logger.info('BrancaloniaDataValidator', `📚 Compendi corretti: ${stats.compendiumsFixed}`);
-    logger.info('BrancaloniaDataValidator', `⚠️ Problemi attuali: ${stats.currentIssues}`);
-    logger.info(
+    moduleLogger.group('📊 Brancalonia Data Validator - Statistiche');
+    moduleLogger.info('BrancaloniaDataValidator', `🔍 Documenti controllati: ${stats.totalChecked}`);
+    moduleLogger.info('BrancaloniaDataValidator', `✅ Correzioni applicate: ${stats.totalFixed}`);
+    moduleLogger.info('BrancaloniaDataValidator', `👤 Attori corretti: ${stats.actorsFixed}`);
+    moduleLogger.info('BrancaloniaDataValidator', `📦 Item corretti: ${stats.itemsFixed}`);
+    moduleLogger.info('BrancaloniaDataValidator', `📚 Compendi corretti: ${stats.compendiumsFixed}`);
+    moduleLogger.info('BrancaloniaDataValidator', `⚠️ Problemi attuali: ${stats.currentIssues}`);
+    moduleLogger.info(
       'BrancaloniaDataValidator',
       `🕐 Ultimo controllo: ${stats.lastRun ? new Date(stats.lastRun).toLocaleString('it-IT') : 'Mai'}`
     );
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return stats;
   }
@@ -489,7 +491,7 @@ class BrancaloniaDataValidator {
    * Corregge tutti i problemi di validazione trovati
    */
   static async fixAllValidationIssues() {
-    logger.info('BrancaloniaDataValidator', 'Correggendo tutti i problemi di validazione...');
+    moduleLogger.info('BrancaloniaDataValidator', 'Correggendo tutti i problemi di validazione...');
 
     const issues = await this.checkForValidationIssues();
     let fixesApplied = 0;
@@ -527,11 +529,11 @@ class BrancaloniaDataValidator {
           }
         }
       } catch (error) {
-        logger.error('BrancaloniaDataValidator', `Errore correzione issue:`, error);
+        moduleLogger.error('BrancaloniaDataValidator', `Errore correzione issue:`, error);
       }
     }
 
-    logger.info('BrancaloniaDataValidator', `Corretto ${fixesApplied}/${issues.length} problemi`);
+    moduleLogger.info('BrancaloniaDataValidator', `Corretto ${fixesApplied}/${issues.length} problemi`);
     return fixesApplied;
   }
 }
@@ -544,7 +546,7 @@ Hooks.once('init', () => {
   try {
     BrancaloniaDataValidator.initialize();
   } catch (error) {
-    logger.error('BrancaloniaDataValidator', 'Errore inizializzazione:', error);
+    moduleLogger.error('BrancaloniaDataValidator', 'Errore inizializzazione:', error);
   }
 });
 

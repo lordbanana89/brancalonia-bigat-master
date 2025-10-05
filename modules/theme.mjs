@@ -23,8 +23,10 @@
  * theme.exportToJson();
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Theme Engine';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} ThemeColors
  * @property {string} controlContent - Colore contenuto controlli
@@ -56,7 +58,7 @@ import logger from './brancalonia-logger.js';
  */
 export class Theme {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Theme Engine';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Statistiche del theme engine
@@ -76,7 +78,7 @@ export class Theme {
    * @param {ThemeData} [data={}] - Dati configurazione tema
    */
   constructor(data = {}) {
-    logger.debug(Theme.MODULE_NAME, 'Creazione nuova istanza Theme');
+    moduleLogger.debug('Creazione nuova istanza Theme');
 
     // Colori base tema pergamena
     this.colors = {
@@ -159,15 +161,15 @@ export class Theme {
    * theme.apply();
    */
   apply() {
-    logger.startPerformance('theme-engine-apply');
-    logger.debug(Theme.MODULE_NAME, 'Applicazione tema...');
+    moduleLogger.startPerformance('theme-engine-apply');
+    moduleLogger.debug('Applicazione tema...');
 
     try {
       // Rimuovi CSS tema precedente
       const oldStyle = document.querySelector("#brancalonia-theme-css");
       if (oldStyle) {
         oldStyle.remove();
-        logger.debug(Theme.MODULE_NAME, 'CSS tema precedente rimosso');
+        moduleLogger.debug('CSS tema precedente rimosso');
       }
 
       // Genera CSS variabili
@@ -186,18 +188,18 @@ export class Theme {
       // Update statistics
       Theme._statistics.applyCount++;
 
-      const applyTime = logger.endPerformance('theme-engine-apply');
-      logger.info(Theme.MODULE_NAME, `Tema applicato in ${applyTime?.toFixed(2)}ms`);
+      const applyTime = moduleLogger.endPerformance('theme-engine-apply');
+      moduleLogger.info(`Tema applicato in ${applyTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('theme:engine-applied', {
+      moduleLogger.events.emit('theme:engine-applied', {
         applyCount: Theme._statistics.applyCount,
         applyTime,
         timestamp: Date.now()
       });
 
     } catch (error) {
-      logger.error(Theme.MODULE_NAME, 'Errore applicazione tema', error);
+      moduleLogger.error('Errore applicazione tema', error);
       Theme._statistics.errors.push({
         type: 'apply',
         message: error.message,
@@ -214,8 +216,8 @@ export class Theme {
    * const css = theme.generateCSS();
    */
   generateCSS() {
-    logger.startPerformance('theme-engine-generate-css');
-    logger.debug(Theme.MODULE_NAME, 'Generazione CSS...');
+    moduleLogger.startPerformance('theme-engine-generate-css');
+    moduleLogger.debug('Generazione CSS...');
 
     try {
       let css = ":root {\n";
@@ -313,13 +315,13 @@ export class Theme {
     // Update statistics
     Theme._statistics.generateCSSCount++;
 
-    const generateTime = logger.endPerformance('theme-engine-generate-css');
-    logger.debug(Theme.MODULE_NAME, `CSS generato in ${generateTime?.toFixed(2)}ms (${css.length} caratteri)`);
+    const generateTime = moduleLogger.endPerformance('theme-engine-generate-css');
+    moduleLogger.debug(`CSS generato in ${generateTime?.toFixed(2)}ms (${css.length} caratteri)`);
 
     return css;
 
     } catch (error) {
-      logger.error(Theme.MODULE_NAME, 'Errore generazione CSS', error);
+      moduleLogger.error('Errore generazione CSS', error);
       Theme._statistics.errors.push({
         type: 'generate-css',
         message: error.message,
@@ -337,7 +339,7 @@ export class Theme {
    * theme.exportToJson();
    */
   exportToJson() {
-    logger.info(Theme.MODULE_NAME, 'Export tema a JSON...');
+    moduleLogger.info('Export tema a JSON...');
 
     try {
       const data = {
@@ -362,17 +364,17 @@ export class Theme {
       // Update statistics
       Theme._statistics.exportCount++;
 
-      logger.info(Theme.MODULE_NAME, 'Tema esportato con successo');
+      moduleLogger.info('Tema esportato con successo');
 
       // Emit event
-      logger.events.emit('theme:engine-exported', {
+      moduleLogger.events.emit('theme:engine-exported', {
         exportCount: Theme._statistics.exportCount,
         fileSize: jsonStr.length,
         timestamp: Date.now()
       });
 
     } catch (error) {
-      logger.error(Theme.MODULE_NAME, 'Errore export tema', error);
+      moduleLogger.error('Errore export tema', error);
       Theme._statistics.errors.push({
         type: 'export',
         message: error.message,
@@ -393,7 +395,7 @@ export class Theme {
    * if (theme) theme.apply();
    */
   static async importFromJSONDialog() {
-    logger.info(Theme.MODULE_NAME, 'Apertura dialog import tema...');
+    moduleLogger.info('Apertura dialog import tema...');
 
     return new Promise((resolve) => {
       const input = document.createElement("input");
@@ -403,12 +405,12 @@ export class Theme {
       input.onchange = async (e) => {
         const file = e.target.files[0];
         if (!file) {
-          logger.debug(Theme.MODULE_NAME, 'Import annullato dall\'utente');
+          moduleLogger.debug('Import annullato dall\'utente');
           return resolve(null);
         }
 
         try {
-          logger.info(Theme.MODULE_NAME, `Import tema da file: ${file.name}`);
+          moduleLogger.info(`Import tema da file: ${file.name}`);
 
           const text = await file.text();
           // Fixed: JSON.parse with try-catch
@@ -416,7 +418,7 @@ export class Theme {
           try {
             data = JSON.parse(text);
           } catch (parseError) {
-            logger.error(Theme.MODULE_NAME, 'File tema non valido', parseError);
+            moduleLogger.error('File tema non valido', parseError);
             ui.notifications.error('File tema non valido o corrotto!');
             return;
           }
@@ -431,10 +433,10 @@ export class Theme {
           // Update statistics
           Theme._statistics.importCount++;
 
-          logger.info(Theme.MODULE_NAME, 'Tema importato con successo');
+          moduleLogger.info('Tema importato con successo');
 
           // Emit event
-          logger.events.emit('theme:engine-imported', {
+          moduleLogger.events.emit('theme:engine-imported', {
             fileName: file.name,
             fileSize: file.size,
             importCount: Theme._statistics.importCount,
@@ -444,7 +446,7 @@ export class Theme {
           resolve(theme);
 
         } catch (error) {
-          logger.error(Theme.MODULE_NAME, 'Errore import tema', error);
+          moduleLogger.error('Errore import tema', error);
           ui.notifications.error("Errore nell'importazione del tema");
 
           Theme._statistics.errors.push({
@@ -487,7 +489,7 @@ export class Theme {
    * Theme.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(Theme.MODULE_NAME, 'Reset statistiche');
+    moduleLogger.info('Reset statistiche');
 
     Theme._statistics = {
       applyCount: 0,
@@ -497,7 +499,7 @@ export class Theme {
       errors: []
     };
 
-    logger.info(Theme.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -510,29 +512,29 @@ export class Theme {
   static showReport() {
     const stats = Theme.getStatistics();
 
-    logger.group('📊 Brancalonia Theme Engine - Report');
+    moduleLogger.group('📊 Brancalonia Theme Engine - Report');
 
-    logger.info(Theme.MODULE_NAME, 'VERSION:', Theme.VERSION);
+    moduleLogger.info('VERSION:', Theme.VERSION);
 
-    logger.group('📈 Statistics');
-    logger.table([
+    moduleLogger.group('📈 Statistics');
+    moduleLogger.table([
       { Metric: 'Apply Count', Value: stats.applyCount },
       { Metric: 'Export Count', Value: stats.exportCount },
       { Metric: 'Import Count', Value: stats.importCount },
       { Metric: 'Generate CSS Count', Value: stats.generateCSSCount },
       { Metric: 'Errors', Value: stats.errors.length }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors');
+      moduleLogger.group('🐛 Errors');
       stats.errors.forEach((err, i) => {
-        logger.error(Theme.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return stats;
   }

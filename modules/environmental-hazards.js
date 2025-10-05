@@ -28,8 +28,10 @@
  * @requires dnd5e
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'EnvironmentalHazardsSystem';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} HazardStatistics
  * @property {number} initTime - Tempo inizializzazione (ms)
@@ -61,7 +63,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class EnvironmentalHazardsSystem {
   static VERSION = '3.0.0';
-  static MODULE_NAME = 'EnvironmentalHazardsSystem';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'environmental-hazards';
 
   /**
@@ -453,7 +455,7 @@ class EnvironmentalHazardsSystem {
       });
     } catch (error) {
       EnvironmentalHazardsSystem._statistics.errors.push(`Constructor: ${error.message}`);
-      logger.error(EnvironmentalHazardsSystem.MODULE_NAME, 'Errore inizializzazione constructor', error);
+      moduleLogger.error('Errore inizializzazione constructor', error);
     }
 
     // Non chiamare i metodi privati nel constructor - saranno chiamati da initialize()
@@ -468,7 +470,7 @@ class EnvironmentalHazardsSystem {
     const startTime = performance.now();
 
     try {
-      logger.info(this.MODULE_NAME, `Inizializzazione Environmental Hazards System v${this.VERSION}`);
+      moduleLogger.info(`Inizializzazione Environmental Hazards System v${this.VERSION}`);
 
       // Creazione istanza globale
       const instance = new EnvironmentalHazardsSystem();
@@ -498,7 +500,7 @@ class EnvironmentalHazardsSystem {
       this._state.initialized = true;
       this._statistics.initTime = performance.now() - startTime;
 
-      logger.info(
+      moduleLogger.info(
         this.MODULE_NAME,
         `✅ Inizializzazione completata in ${this._statistics.initTime.toFixed(2)}ms`
       );
@@ -511,7 +513,7 @@ class EnvironmentalHazardsSystem {
       });
     } catch (error) {
       this._statistics.errors.push(error.message);
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -621,7 +623,7 @@ if (hazardSystem) {
     if (!existing) {
       Macro.create(macroData);
       this._statistics.macrosCreated++;
-      logger.info(this.MODULE_NAME, '✅ Macro Hazard Ambientali creata');
+      moduleLogger.info('✅ Macro Hazard Ambientali creata');
     }
   }
 
@@ -710,7 +712,7 @@ if (hazardSystem) {
       const hazard = this.hazards[hazardName];
       if (!hazard) {
         ui.notifications.error(`Hazard ${hazardName} non trovato!`);
-        logger.warn(EnvironmentalHazardsSystem.MODULE_NAME, `Hazard non valido: ${hazardName}`);
+        moduleLogger.warn(`Hazard non valido: ${hazardName}`);
         return null;
       }
 
@@ -741,7 +743,7 @@ if (hazardSystem) {
       EnvironmentalHazardsSystem._statistics.hazardsByCategory[hazard.type]++;
 
       const triggerTime = performance.now() - triggerStart;
-      logger.info(
+      moduleLogger.info(
         EnvironmentalHazardsSystem.MODULE_NAME,
         `Hazard attivato: ${hazard.name}${actor ? ` su ${actor.name}` : ''} (${triggerTime.toFixed(2)}ms)`
       );
@@ -757,7 +759,7 @@ if (hazardSystem) {
       return hazard;
     } catch (error) {
       EnvironmentalHazardsSystem._statistics.errors.push(`triggerHazard: ${error.message}`);
-      logger.error(EnvironmentalHazardsSystem.MODULE_NAME, 'Errore trigger hazard', error);
+      moduleLogger.error('Errore trigger hazard', error);
       ui.notifications.error('Errore nell\'attivazione dell\'hazard!');
       return null;
     }
@@ -948,7 +950,7 @@ if (hazardSystem) {
         const nearbyHazards = this._getNearbyHazards(actor);
         if (nearbyHazards.length === 0) {
           ui.notifications.info('Nessun pericolo rilevato nelle vicinanze');
-          logger.debug?.(EnvironmentalHazardsSystem.MODULE_NAME, `Nessun hazard vicino a ${actor.name}`);
+          moduleLogger.debug?.(`Nessun hazard vicino a ${actor.name}`);
           return false;
         }
         hazardName = nearbyHazards[0];
@@ -1000,7 +1002,7 @@ if (hazardSystem) {
           EnvironmentalHazardsSystem._statistics.actorsSaved++;
 
           const detectTime = performance.now() - detectStart;
-          logger.info(
+          moduleLogger.info(
             EnvironmentalHazardsSystem.MODULE_NAME,
             `Hazard rilevato: ${hazard.name} da ${actor.name} (${detectTime.toFixed(2)}ms)`
           );
@@ -1034,7 +1036,7 @@ if (hazardSystem) {
       return false;
     } catch (error) {
       EnvironmentalHazardsSystem._statistics.errors.push(`detectHazard: ${error.message}`);
-      logger.error(EnvironmentalHazardsSystem.MODULE_NAME, 'Errore detection hazard', error);
+      moduleLogger.error('Errore detection hazard', error);
       ui.notifications.error('Errore nel rilevamento del pericolo!');
       return false;
     }
@@ -1406,7 +1408,7 @@ window.EnvironmentalHazardsSystem = EnvironmentalHazardsSystem;
 // Auto-inizializzazione - spostata a ready per evitare problemi con game.settings
 Hooks.once('ready', () => {
   try {
-    logger.info(EnvironmentalHazardsSystem.MODULE_NAME, `🎮 Brancalonia | Inizializzazione ${EnvironmentalHazardsSystem.MODULE_NAME} v${EnvironmentalHazardsSystem.VERSION}`);
+    moduleLogger.info(`🎮 Brancalonia | Inizializzazione ${EnvironmentalHazardsSystem.MODULE_NAME} v${EnvironmentalHazardsSystem.VERSION}`);
 
     if (!game.brancalonia) game.brancalonia = {};
     if (!game.brancalonia.modules) game.brancalonia.modules = {};
@@ -1415,7 +1417,7 @@ Hooks.once('ready', () => {
 
     EnvironmentalHazardsSystem.initialize();
   } catch (error) {
-    logger.error(EnvironmentalHazardsSystem.MODULE_NAME, 'Errore inizializzazione hook ready', error);
+    moduleLogger.error('Errore inizializzazione hook ready', error);
   }
 });
 
@@ -1537,7 +1539,7 @@ EnvironmentalHazardsSystem.getStatistics = function() {
  * EnvironmentalHazardsSystem.resetStatistics();
  */
 EnvironmentalHazardsSystem.resetStatistics = function() {
-  logger.info(this.MODULE_NAME, 'Reset statistiche Environmental Hazards System');
+  moduleLogger.info('Reset statistiche Environmental Hazards System');
 
   const initTime = this._statistics.initTime;
   const macrosCreated = this._statistics.macrosCreated;
@@ -1622,7 +1624,7 @@ EnvironmentalHazardsSystem.getOngoingHazards = function() {
  */
 EnvironmentalHazardsSystem.triggerHazardViaAPI = async function(hazardName, actor, options) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return null;
   }
   return await this._state.instance.triggerHazard(hazardName, actor, options);
@@ -1640,7 +1642,7 @@ EnvironmentalHazardsSystem.triggerHazardViaAPI = async function(hazardName, acto
  */
 EnvironmentalHazardsSystem.detectHazardViaAPI = async function(actor, hazardName) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return false;
   }
   return await this._state.instance.detectHazard(actor, hazardName);
@@ -1659,7 +1661,7 @@ EnvironmentalHazardsSystem.detectHazardViaAPI = async function(actor, hazardName
  */
 EnvironmentalHazardsSystem.placeHazardViaAPI = async function(hazardName, x, y) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   return await this._state.instance.placeHazardOnScene(hazardName, x, y);
@@ -1675,7 +1677,7 @@ EnvironmentalHazardsSystem.placeHazardViaAPI = async function(hazardName, x, y) 
  */
 EnvironmentalHazardsSystem.generateRandomHazardViaAPI = function(environment) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return null;
   }
   return this._state.instance.generateRandomHazard(environment);

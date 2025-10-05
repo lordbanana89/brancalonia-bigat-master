@@ -7,13 +7,14 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { getLogger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
-const logger = getLogger();
+const MODULE_LABEL = 'Menagramo Macros';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class MenagramoMacros {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Menagramo Macros';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'menagramo-macros';
   
   /**
@@ -26,10 +27,10 @@ class MenagramoMacros {
    */
   static async createMacros() {
     try {
-      logger.info(this.MODULE_NAME, '🖤 Creazione macro Menagramo...');
+      moduleLogger.info('🖤 Creazione macro Menagramo...');
       
       if (!game.macros) {
-        logger.warn(this.MODULE_NAME, 'game.macros non disponibile, macro creation skipped');
+        moduleLogger.warn('game.macros non disponibile, macro creation skipped');
         return;
       }
 
@@ -61,17 +62,17 @@ class MenagramoMacros {
         // Verifica se esiste già
         const existing = game.macros.find(m => m.name === macroData.name);
         if (existing) {
-          logger.info(this.MODULE_NAME, `Macro "${macroData.name}" già esistente, aggiornamento...`);
+          moduleLogger.info(`Macro "${macroData.name}" già esistente, aggiornamento...`);
           await existing.update({ command: macroData.command });
         } else {
           await Macro.create(macroData);
-          logger.info(this.MODULE_NAME, `✅ Macro "${macroData.name}" creata`);
+          moduleLogger.info(`✅ Macro "${macroData.name}" creata`);
         }
       }
 
-      logger.info(this.MODULE_NAME, '✅ 3 macro Menagramo create con successo!');
+      moduleLogger.info('✅ 3 macro Menagramo create con successo!');
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore creazione macro Menagramo', error);
+      moduleLogger.error('Errore creazione macro Menagramo', error);
     }
   }
 
@@ -304,7 +305,7 @@ Hooks.once('ready', async () => {
   if (game.brancalonia?.menagramo) {
     await MenagramoMacros.createMacros();
   } else {
-    logger.warn(MenagramoMacros.MODULE_NAME, 'MenagramoSystem non disponibile, macro non create');
+    moduleLogger.warn('MenagramoSystem non disponibile, macro non create');
   }
 });
 

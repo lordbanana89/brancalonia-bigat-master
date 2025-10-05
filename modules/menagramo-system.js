@@ -7,11 +7,14 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Menagramo System';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class MenagramoSystem {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Menagramo System';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'menagramo-system';
 
   constructor() {
@@ -182,8 +185,8 @@ class MenagramoSystem {
    */
   static initialize() {
     try {
-      logger.startPerformance('menagramo-init');
-      logger.info(this.MODULE_NAME, 'Inizializzazione MenagramoSystem...');
+      moduleLogger.startPerformance('menagramo-init');
+      moduleLogger.info('Inizializzazione MenagramoSystem...');
 
       // Creazione istanza
       const instance = new MenagramoSystem();
@@ -254,11 +257,11 @@ class MenagramoSystem {
 
       instance._state.initialized = true;
 
-      const initTime = logger.endPerformance('menagramo-init');
-      logger.info(this.MODULE_NAME, `✅ MenagramoSystem inizializzato in ${initTime?.toFixed(2)}ms`);
+      const initTime = moduleLogger.endPerformance('menagramo-init');
+      moduleLogger.info(`✅ MenagramoSystem inizializzato in ${initTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('menagramo:initialized', {
+      moduleLogger.events.emit('menagramo:initialized', {
         version: this.VERSION,
         initTime,
         timestamp: Date.now()
@@ -266,7 +269,7 @@ class MenagramoSystem {
 
       return instance;
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -364,14 +367,14 @@ class MenagramoSystem {
       });
     }
 
-    logger.info(MenagramoSystem.MODULE_NAME, 'MenagramoSystem hooks registrati!');
+    moduleLogger.info('MenagramoSystem hooks registrati!');
   }
 
   static _registerChatCommands() {
     // Verifica che game.chatCommands esista (potrebbe non essere disponibile in tutte le versioni)
     if (!game.chatCommands || typeof game.chatCommands.register !== 'function') {
       // Debug silenzioso - feature opzionale non disponibile in questa versione di Foundry
-      logger.debug(MenagramoSystem.MODULE_NAME, 'game.chatCommands not available (optional feature)');
+      moduleLogger.debug('game.chatCommands not available (optional feature)');
       return;
     }
 
@@ -506,7 +509,7 @@ class MenagramoSystem {
       }
     });
 
-    logger.info(MenagramoSystem.MODULE_NAME, 'MenagramoSystem comandi chat registrati!');
+    moduleLogger.info('MenagramoSystem comandi chat registrati!');
   }
 
   static _createMacro() {
@@ -582,9 +585,9 @@ if (!game.user.isGM) {
 
     if (!existingMacro) {
       game.macros?.documentClass.create(macroData, { keepId: true }).then(() => {
-        logger.info(MenagramoSystem.MODULE_NAME, 'Macro Gestione Menagramo creata!');
+        moduleLogger.info('Macro Gestione Menagramo creata!');
       }).catch(error => {
-        logger.error(MenagramoSystem.MODULE_NAME, 'Errore creazione macro Menagramo', error);
+        moduleLogger.error('Errore creazione macro Menagramo', error);
       });
     }
   }
@@ -980,7 +983,7 @@ if (!game.user.isGM) {
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, '📊 Statistiche reset');
+    moduleLogger.info('📊 Statistiche reset');
   }
 
   /**

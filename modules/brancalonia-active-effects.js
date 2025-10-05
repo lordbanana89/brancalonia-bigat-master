@@ -4,10 +4,11 @@
  * Compatibile con D&D 5e v3.3.1 e Foundry v13
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
 const MODULE_ID = 'brancalonia-bigat';
 const MODULE_NAME = 'ActiveEffects';
+const moduleLogger = createModuleLogger(MODULE_NAME);
 let GENERATED_EFFECTS_REGISTRY = {};
 
 /**
@@ -26,7 +27,7 @@ async function loadGeneratedRegistry() {
     GENERATED_EFFECTS_REGISTRY = registry ?? {};
   } catch (error) {
     // Fallback manuale se il file generato non è disponibile
-    logger?.warn?.(
+    moduleLogger?.warn?.(
       MODULE_NAME,
       'Registro effetti generato non disponibile. Uso fallback manuale.',
       error
@@ -1412,7 +1413,7 @@ Hooks.once('init', () => {
     default: false
   });
 
-  logger.info(MODULE_NAME, 'Runtime registrato');
+  moduleLogger.info('Runtime registrato');
 
   game.brancalonia = game.brancalonia || {};
   game.brancalonia.activeEffects = activeEffectsManager;
@@ -1435,16 +1436,16 @@ Hooks.once('ready', async () => {
   const dryRun = getSetting('dryRun');
 
   if (!getSetting('autoApplyOnReady')) {
-    logger.info(MODULE_NAME, 'Auto apply on ready disabilitato');
+    moduleLogger.info('Auto apply on ready disabilitato');
     return;
   }
 
   if (storedVersion === requiredVersion && !dryRun) {
-    logger.debug(MODULE_NAME, 'Active Effects già aggiornati');
+    moduleLogger.debug('Active Effects già aggiornati');
     return;
   }
 
-  logger.info(MODULE_NAME, `Applicazione effetti (stored=${storedVersion}, required=${requiredVersion}, dryRun=${dryRun})`);
+  moduleLogger.info(`Applicazione effetti (stored=${storedVersion}, required=${requiredVersion}, dryRun=${dryRun})`);
 
   const results = await activeEffectsManager.applyAll({ force: true, dryRun });
   const errors = results.reduce((acc, res) => acc + (res.errors ?? 0), 0);
@@ -1453,7 +1454,7 @@ Hooks.once('ready', async () => {
     await setSetting('version', requiredVersion);
   }
 
-  logger.table(results);
+  moduleLogger.table(results);
 
   if (errors > 0) {
     ui.notifications.error(`Active Effects: ${errors} errori. Controlla la console.`);
@@ -1471,7 +1472,7 @@ Hooks.on('createItem', async (item) => {
 
   const result = await activeEffectsManager.applyToItem(item, { force: false });
   if (result.updated) {
-    logger.debug(MODULE_NAME, `Effetti applicati a item creato ${item.name}`);
+    moduleLogger.debug(`Effetti applicati a item creato ${item.name}`);
   }
 });
 
@@ -1482,13 +1483,13 @@ Hooks.on('chatMessage', (log, message) => {
   switch ((subcommand ?? '').toLowerCase()) {
     case 'apply':
       activeEffectsManager.applyAll({ force: true }).then(results => {
-        logger.table(results);
+        moduleLogger.table(results);
         ui.notifications.info('Active Effects applicati manualmente.');
       });
       break;
     case 'dryrun':
       activeEffectsManager.applyAll({ force: true, dryRun: true }).then(results => {
-        logger.table(results);
+        moduleLogger.table(results);
         ui.notifications.warn('Active Effects dry-run completato.');
       });
       break;
@@ -1585,13 +1586,13 @@ class BrancaloniaActiveEffectsManager {
   async applyToItem(item, { force = false, dryRun = false } = {}) {
     const registryId = resolveRegistryKey(item);
     if (!registryId) {
-      logger.debug(MODULE_NAME, `Item ${item?.name} senza registryId, ignorato`);
+      moduleLogger.debug(`Item ${item?.name} senza registryId, ignorato`);
       return { updated: false, reason: 'no-registry-id' };
     }
 
     const definitions = this.registry[registryId];
     if (!definitions) {
-      logger.debug(MODULE_NAME, `Nessuna definizione effetti per ${registryId}`);
+      moduleLogger.debug(`Nessuna definizione effetti per ${registryId}`);
       return { updated: false, reason: 'no-definition', registryId };
     }
 
@@ -1619,10 +1620,10 @@ class BrancaloniaActiveEffectsManager {
       await item.setFlag(MODULE_ID, 'registryId', registryId);
       await item.setFlag(MODULE_ID, 'hasActiveEffects', true);
 
-      logger.info(MODULE_NAME, `Applicati ${desiredEffects.length} effetti a ${item.name}`, { registryId });
+      moduleLogger.info(`Applicati ${desiredEffects.length} effetti a ${item.name}`, { registryId });
       return { updated: true, registryId };
     } catch (error) {
-      logger.error(MODULE_NAME, `Errore applicando effetti a ${item?.name}`, error);
+      moduleLogger.error(`Errore applicando effetti a ${item?.name}`, error);
       return { updated: false, error, registryId, reason: 'error' };
     }
   }
@@ -1630,7 +1631,7 @@ class BrancaloniaActiveEffectsManager {
   async applyToPack(packId, { force = false, dryRun = false } = {}) {
     const pack = game.packs.get(packId);
     if (!pack) {
-      logger.warn(MODULE_NAME, `Pack ${packId} non trovato`);
+      moduleLogger.warn(`Pack ${packId} non trovato`);
       return { packId, processed: 0, updated: 0, errors: 1, missing: true };
     }
 
@@ -1640,7 +1641,7 @@ class BrancaloniaActiveEffectsManager {
         try {
           return pack.canUserModify(game.user, 'update');
         } catch (err) {
-          logger.warn(MODULE_NAME, `canUserModify non disponibile per ${pack.metadata?.label}`, err);
+          moduleLogger.warn(`canUserModify non disponibile per ${pack.metadata?.label}`, err);
         }
       }
       const docClass = pack.documentClass;
@@ -1651,7 +1652,7 @@ class BrancaloniaActiveEffectsManager {
     };
 
     if (!hasPackAccess()) {
-      logger.warn(MODULE_NAME, `Permessi insufficienti per modificare ${packId}`);
+      moduleLogger.warn(`Permessi insufficienti per modificare ${packId}`);
       return { packId, processed: 0, updated: 0, errors: 1, locked: true };
     }
 

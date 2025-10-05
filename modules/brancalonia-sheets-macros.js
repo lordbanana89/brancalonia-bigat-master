@@ -3,23 +3,25 @@
  * Fornisce macro user-friendly per gestire il sistema sheets
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Sheets Macros';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 export default class BrancaloniaSheetsMacros {
-  static MODULE_NAME = 'Sheets Macros';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Inizializza il sistema macro
    */
   static initialize() {
     try {
-      logger.info(this.MODULE_NAME, 'Inizializzazione macro sheets...');
+      moduleLogger.info('Inizializzazione macro sheets...');
       
       this._createMacros();
       
-      logger.info(this.MODULE_NAME, 'Macro sheets create con successo');
+      moduleLogger.info('Macro sheets create con successo');
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione macro', error);
+      moduleLogger.error('Errore inizializzazione macro', error);
     }
   }
 
@@ -217,15 +219,15 @@ new foundry.applications.api.DialogV2({
       const existing = game.macros.find(m => m.name === macroData.name);
       
       if (existing) {
-        logger.debug(this.MODULE_NAME, `Macro "${macroData.name}" già esistente, aggiornamento...`);
+        moduleLogger.debug(`Macro "${macroData.name}" già esistente, aggiornamento...`);
         await existing.update(macroData);
       } else {
-        logger.debug(this.MODULE_NAME, `Creazione macro "${macroData.name}"...`);
+        moduleLogger.debug(`Creazione macro "${macroData.name}"...`);
         await Macro.create(macroData);
       }
     }
 
-    logger.info(this.MODULE_NAME, `${macros.length} macro create/aggiornate`);
+    moduleLogger.info(`${macros.length} macro create/aggiornate`);
   }
 
   /**
@@ -249,11 +251,11 @@ new foundry.applications.api.DialogV2({
       const macro = game.macros.find(m => m.name === name);
       if (macro) {
         await macro.delete();
-        logger.debug(this.MODULE_NAME, `Macro "${name}" rimossa`);
+        moduleLogger.debug(`Macro "${name}" rimossa`);
       }
     }
 
-    logger.info(this.MODULE_NAME, `${macroNames.length} macro rimosse`);
+    moduleLogger.info(`${macroNames.length} macro rimosse`);
   }
 }
 

@@ -8,11 +8,14 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Level Cap System';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class LevelCapSystem {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Level Cap System';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'level-cap-system';
   static instance = null;
 
@@ -205,13 +208,13 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
    */
   static async initialize() {
     if (this.instance) {
-      logger.debug(this.MODULE_NAME, 'Istanza già inizializzata, ritorno istanza esistente');
+      moduleLogger.debug('Istanza già inizializzata, ritorno istanza esistente');
       return this.instance;
     }
 
     try {
-      logger.startPerformance('level-cap-init');
-      logger.info(this.MODULE_NAME, '🎭 Inizializzazione Level Cap System...');
+      moduleLogger.startPerformance('level-cap-init');
+      moduleLogger.info('🎭 Inizializzazione Level Cap System...');
 
       // Crea istanza globale
       this.instance = new LevelCapSystem();
@@ -237,13 +240,13 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
 
       this.instance._state.initialized = true;
 
-      const initTime = logger.endPerformance('level-cap-init');
+      const initTime = moduleLogger.endPerformance('level-cap-init');
       this.instance.statistics.initTime = initTime;
 
-      logger.info(this.MODULE_NAME, `✅ Level Cap System inizializzato in ${initTime?.toFixed(2)}ms`);
+      moduleLogger.info(`✅ Level Cap System inizializzato in ${initTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('level-cap:initialized', {
+      moduleLogger.events.emit('level-cap:initialized', {
         version: this.VERSION,
         initTime,
         timestamp: Date.now()
@@ -257,7 +260,7 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
         stack: error.stack,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione Level Cap System', error);
+      moduleLogger.error('Errore durante inizializzazione Level Cap System', error);
       throw error;
     }
   }
@@ -554,7 +557,7 @@ ui.notifications.info(\`Recuperate \${improvedFeatures.length} capacità!\`);
       return system.BASE_EMERITICENZA_XP + (count + 1) * system.EMERITICENZA_STEP;
     };
 
-    logger.info(this.MODULE_NAME, '🎭 Actor esteso con metodi per emeriticenze');
+    moduleLogger.info('🎭 Actor esteso con metodi per emeriticenze');
   }
 
   static async _createMacros() {
@@ -619,10 +622,10 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
       this.instance.statistics.macrosCreated = macrosCreated;
       this.instance._state.macrosCreated = true;
 
-      logger.info(this.MODULE_NAME, `🎭 ${macrosCreated} macro Level Cap create con successo`);
+      moduleLogger.info(`🎭 ${macrosCreated} macro Level Cap create con successo`);
 
       // Emit event
-      logger.events.emit('level-cap:macros-created', {
+      moduleLogger.events.emit('level-cap:macros-created', {
         count: macrosCreated,
         timestamp: Date.now()
       });
@@ -632,7 +635,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         message: error.message,
         timestamp: Date.now()
       });
-      logger.warn(this.MODULE_NAME, '⚠️ Errore nella creazione delle macro Level Cap', error);
+      moduleLogger.warn('⚠️ Errore nella creazione delle macro Level Cap', error);
     }
   }
 
@@ -833,10 +836,10 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         speaker: ChatMessage.getSpeaker({ actor })
       });
 
-      logger.info(LevelCapSystem.MODULE_NAME, `Emeriticenza "${em.name}" applicata a ${actor.name}`);
+      moduleLogger.info(`Emeriticenza "${em.name}" applicata a ${actor.name}`);
 
       // Emit event
-      logger.events.emit('level-cap:emeriticenza-granted', {
+      moduleLogger.events.emit('level-cap:emeriticenza-granted', {
         actor: actor.name,
         emeriticenza: emeriticenzaKey,
         name: em.name,
@@ -853,7 +856,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(LevelCapSystem.MODULE_NAME, `Errore nell'applicazione dell'emeriticenza "${emeriticenzaKey}" per ${actor.name}`, error);
+      moduleLogger.error(`Errore nell'applicazione dell'emeriticenza "${emeriticenzaKey}" per ${actor.name}`, error);
       ui.notifications.error("Errore nell'applicazione dell'emeriticenza!");
     }
   }
@@ -1986,7 +1989,7 @@ game.brancalonia.levelCap.showEmeriticenzeManagement(actor);
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, '📊 Statistiche reset');
+    moduleLogger.info('📊 Statistiche reset');
   }
 
   /**

@@ -15,8 +15,10 @@
  * @author Brancalonia Development Team
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Icon Interceptor';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * Classe principale per la gestione delle icone Font Awesome
  * Implementa pattern Singleton
@@ -26,7 +28,7 @@ class IconInterceptor {
    * Nome del modulo per logging
    * @type {string}
    */
-  static MODULE_NAME = 'Icon Interceptor';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Versione del modulo
@@ -96,19 +98,19 @@ class IconInterceptor {
    */
   static async initialize() {
     if (this._initialized) {
-      logger.warn(this.MODULE_NAME, 'Già inizializzato, skip');
+      moduleLogger.warn('Già inizializzato, skip');
       return;
     }
 
     try {
-      logger.info(this.MODULE_NAME, `Inizializzazione v${this.VERSION}...`);
+      moduleLogger.info(`Inizializzazione v${this.VERSION}...`);
 
       // Registra settings
       this._registerSettings();
 
       // Verifica se abilitato
       if (!game.settings.get('brancalonia-bigat', 'enableIconInterceptor')) {
-        logger.info(this.MODULE_NAME, 'Disabilitato nelle impostazioni, skip');
+        moduleLogger.info('Disabilitato nelle impostazioni, skip');
         return;
       }
 
@@ -131,13 +133,13 @@ class IconInterceptor {
       await this._scanAndFixAll();
 
       this._initialized = true;
-      logger.info(this.MODULE_NAME, '✅ Inizializzato con successo');
+      moduleLogger.info('✅ Inizializzato con successo');
 
       // Esponi API globale
       window.IconInterceptor = this._createPublicAPI();
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione:', error);
+      moduleLogger.error('Errore durante inizializzazione:', error);
     }
   }
 
@@ -199,7 +201,7 @@ class IconInterceptor {
   static _loadIconMap() {
     if (this._iconMap) return this._iconMap;
 
-    logger.debug(this.MODULE_NAME, 'Caricamento mappa Unicode...');
+    moduleLogger.debug('Caricamento mappa Unicode...');
 
     // Mappa COMPLETA di TUTTE le icone Font Awesome
     this._iconMap = {
@@ -810,7 +812,7 @@ class IconInterceptor {
       'fa-dna': '\uf471'
     };
 
-    logger.debug(this.MODULE_NAME, `Mappa caricata: ${Object.keys(this._iconMap).length} icone`);
+    moduleLogger.debug(`Mappa caricata: ${Object.keys(this._iconMap).length} icone`);
     return this._iconMap;
   }
 
@@ -820,11 +822,11 @@ class IconInterceptor {
    */
   static _installCreateElementInterceptor() {
     if (this._originalCreateElement) {
-      logger.debug(this.MODULE_NAME, 'Interceptor già installato, skip');
+      moduleLogger.debug('Interceptor già installato, skip');
       return;
     }
 
-    logger.debug(this.MODULE_NAME, 'Installazione interceptor createElement...');
+    moduleLogger.debug('Installazione interceptor createElement...');
 
     // Salva il createElement originale
     this._originalCreateElement = document.createElement;
@@ -868,7 +870,7 @@ class IconInterceptor {
       return element;
     };
 
-    logger.debug(this.MODULE_NAME, '✅ Interceptor installato');
+    moduleLogger.debug('✅ Interceptor installato');
   }
 
   /**
@@ -877,11 +879,11 @@ class IconInterceptor {
    */
   static _startObserver() {
     if (this._observer) {
-      logger.debug(this.MODULE_NAME, 'Observer già attivo, skip');
+      moduleLogger.debug('Observer già attivo, skip');
       return;
     }
 
-    logger.debug(this.MODULE_NAME, 'Avvio MutationObserver...');
+    moduleLogger.debug('Avvio MutationObserver...');
 
     const self = this;
     this._observer = new MutationObserver((mutations) => {
@@ -914,7 +916,7 @@ class IconInterceptor {
       attributeFilter: ['class']
     });
 
-    logger.debug(this.MODULE_NAME, '✅ Observer attivo');
+    moduleLogger.debug('✅ Observer attivo');
   }
 
   /**
@@ -923,7 +925,7 @@ class IconInterceptor {
    */
   static _startPeriodicScan() {
     if (this._scanInterval) {
-      logger.debug(this.MODULE_NAME, 'Scan periodico già attivo, skip');
+      moduleLogger.debug('Scan periodico già attivo, skip');
       return;
     }
 
@@ -935,7 +937,7 @@ class IconInterceptor {
     };
 
     const interval = intervals[mode] || intervals.medium;
-    logger.debug(this.MODULE_NAME, `Avvio scan periodico: ${interval / 1000}s`);
+    moduleLogger.debug(`Avvio scan periodico: ${interval / 1000}s`);
 
     this._scanInterval = setInterval(() => {
       this._scanAndFixAll();
@@ -973,7 +975,7 @@ class IconInterceptor {
       setTimeout(() => self._scanAndFixAll(), 50);
     });
 
-    logger.debug(this.MODULE_NAME, 'Hooks registrati');
+    moduleLogger.debug('Hooks registrati');
   }
 
   /**
@@ -985,11 +987,11 @@ class IconInterceptor {
     const faStyleId = 'fa-cdn-style';
 
     if (document.getElementById(faStyleId)) {
-      logger.debug(this.MODULE_NAME, 'Font Awesome già caricato');
+      moduleLogger.debug('Font Awesome già caricato');
       return;
     }
 
-    logger.debug(this.MODULE_NAME, 'Caricamento Font Awesome CDN...');
+    moduleLogger.debug('Caricamento Font Awesome CDN...');
 
     return new Promise((resolve) => {
       const link = document.createElement('link');
@@ -999,12 +1001,12 @@ class IconInterceptor {
       link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
 
       link.onload = () => {
-        logger.debug(this.MODULE_NAME, '✅ Font Awesome caricato da CDN');
+        moduleLogger.debug('✅ Font Awesome caricato da CDN');
         resolve();
       };
 
       link.onerror = () => {
-        logger.warn(this.MODULE_NAME, 'CDN fallito, carico font locali...');
+        moduleLogger.warn('CDN fallito, carico font locali...');
         this._injectLocalFontAwesomeStyles();
         resolve();
       };
@@ -1058,7 +1060,7 @@ class IconInterceptor {
     `;
     document.head.appendChild(style);
 
-    logger.debug(this.MODULE_NAME, '✅ Stili locali iniettati');
+    moduleLogger.debug('✅ Stili locali iniettati');
   }
 
   /**
@@ -1147,7 +1149,7 @@ class IconInterceptor {
 
       // Log solo in debug mode
       if (game.settings.get('brancalonia-bigat', 'iconInterceptorDebug')) {
-        logger.debug(this.MODULE_NAME, `Intercettata: ${matchedClass} → ${unicode}`);
+        moduleLogger.debug(`Intercettata: ${matchedClass} → ${unicode}`);
       }
 
     } else {
@@ -1161,7 +1163,7 @@ class IconInterceptor {
       if (!hasStyleOnly) {
         this._stats.totalUnmapped++;
         if (game.settings.get('brancalonia-bigat', 'iconInterceptorDebug')) {
-          logger.warn(this.MODULE_NAME, `Nessun mapping per: ${faClasses.join(', ')}`);
+          moduleLogger.warn(`Nessun mapping per: ${faClasses.join(', ')}`);
         }
       }
 
@@ -1194,7 +1196,7 @@ class IconInterceptor {
     this._stats.lastScanTime = performance.now() - startTime;
 
     if (game.settings.get('brancalonia-bigat', 'iconInterceptorDebug')) {
-      logger.debug(this.MODULE_NAME, `Scan completato: ${allIcons.length} icone in ${this._stats.lastScanTime.toFixed(2)}ms`);
+      moduleLogger.debug(`Scan completato: ${allIcons.length} icone in ${this._stats.lastScanTime.toFixed(2)}ms`);
     }
 
     return {
@@ -1240,7 +1242,7 @@ class IconInterceptor {
           performance: self._stats
         };
 
-        logger.info(this.MODULE_NAME, `
+        moduleLogger.info(`
 🎯 ICON INTERCEPTOR STATUS:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📊 Statistiche Correnti:
@@ -1258,11 +1260,11 @@ class IconInterceptor {
         `);
 
         if (withText.length > 0) {
-          logger.warn(this.MODULE_NAME, '❌ Icone con testo:', withText);
+          moduleLogger.warn('❌ Icone con testo:', withText);
         }
 
         if (unmapped.length > 0) {
-          logger.warn(this.MODULE_NAME, '⚠️ Classi non mappate:', unmapped);
+          moduleLogger.warn('⚠️ Classi non mappate:', unmapped);
         }
 
         return stats;
@@ -1282,16 +1284,16 @@ class IconInterceptor {
           self._interceptIcon(icon);
         });
 
-        logger.info(this.MODULE_NAME, `✅ Aggiunto mapping: ${className} → ${unicode}`);
+        moduleLogger.info(`✅ Aggiunto mapping: ${className} → ${unicode}`);
       },
 
       /**
        * Forza riscansione totale
        */
       forceFixAll() {
-        logger.info(this.MODULE_NAME, '🔄 Forzatura riscansione...');
+        moduleLogger.info('🔄 Forzatura riscansione...');
         self._scanAndFixAll().then(result => {
-          logger.info(this.MODULE_NAME, `✅ Completato: ${result.scanned} icone in ${result.time.toFixed(2)}ms`);
+          moduleLogger.info(`✅ Completato: ${result.scanned} icone in ${result.time.toFixed(2)}ms`);
         });
       },
 
@@ -1299,8 +1301,8 @@ class IconInterceptor {
        * Mostra statistiche performance
        */
       stats() {
-        logger.info(this.MODULE_NAME, '📊 Statistiche correnti:');
-        logger.table(self._stats);
+        moduleLogger.info('📊 Statistiche correnti:');
+        moduleLogger.table(self._stats);
         return self._stats;
       },
 
@@ -1315,7 +1317,7 @@ class IconInterceptor {
           lastScanTime: 0,
           startTime: Date.now()
         };
-        logger.info(this.MODULE_NAME, '✅ Statistiche resettate');
+        moduleLogger.info('✅ Statistiche resettate');
       }
     };
   }
@@ -1324,7 +1326,7 @@ class IconInterceptor {
    * Shutdown del sistema (per disable)
    */
   static shutdown() {
-    logger.info(this.MODULE_NAME, 'Shutdown in corso...');
+    moduleLogger.info('Shutdown in corso...');
 
     // Ferma observer
     if (this._observer) {
@@ -1345,7 +1347,7 @@ class IconInterceptor {
     }
 
     this._initialized = false;
-    logger.info(this.MODULE_NAME, '✅ Shutdown completato');
+    moduleLogger.info('✅ Shutdown completato');
   }
 }
 

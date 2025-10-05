@@ -9,8 +9,10 @@
  * @requires brancalonia-logger.js
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Chat Commands';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} CommandDefinition
  * @property {string} description - Descrizione comando
@@ -43,7 +45,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class BrancaloniaChatCommands {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Chat Commands';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'brancalonia-chat-commands';
   static NAMESPACE = 'brancalonia-bigat';
   
@@ -78,27 +80,27 @@ class BrancaloniaChatCommands {
    * @fires chat-commands:initialized
    */
   static initialize() {
-    logger.startPerformance('chat-commands-init');
-    logger.info(this.MODULE_NAME, `Inizializzazione Chat Commands v${this.VERSION}...`);
+    moduleLogger.startPerformance('chat-commands-init');
+    moduleLogger.info(`Inizializzazione Chat Commands v${this.VERSION}...`);
     
     try {
       // Registra handler principale
       Hooks.on('chatMessage', this.handleChatMessage.bind(this));
-      logger.debug(this.MODULE_NAME, 'Hook chatMessage registrato');
+      moduleLogger.debug('Hook chatMessage registrato');
       
       // Registra comandi disponibili
       this.registerCommands();
       
       this._state.initialized = true;
       
-      const initTime = logger.endPerformance('chat-commands-init');
+      const initTime = moduleLogger.endPerformance('chat-commands-init');
       this.statistics.initTime = initTime;
       
-      logger.info(this.MODULE_NAME, `✅ Chat Commands inizializzato in ${initTime?.toFixed(2)}ms`);
-      logger.info(this.MODULE_NAME, `Comandi registrati: ${this.statistics.commandsRegistered}`);
+      moduleLogger.info(`✅ Chat Commands inizializzato in ${initTime?.toFixed(2)}ms`);
+      moduleLogger.info(`Comandi registrati: ${this.statistics.commandsRegistered}`);
       
       // Emit event
-      logger.events.emit('chat-commands:initialized', {
+      moduleLogger.events.emit('chat-commands:initialized', {
         version: this.VERSION,
         commandsRegistered: this.statistics.commandsRegistered,
         initTime,
@@ -106,7 +108,7 @@ class BrancaloniaChatCommands {
       });
       
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione', error);
+      moduleLogger.error('Errore inizializzazione', error);
       this.statistics.errors.push({
         type: 'initialization',
         command: 'system',
@@ -124,7 +126,7 @@ class BrancaloniaChatCommands {
    * @returns {void}
    */
   static registerCommands() {
-    logger.debug(this.MODULE_NAME, 'Registrazione comandi...');
+    moduleLogger.debug('Registrazione comandi...');
     
     this._state.commands = {
       // Sistema Infamia
@@ -228,7 +230,7 @@ class BrancaloniaChatCommands {
       this.statistics.commandsByType[cmd] = 0;
     }
     
-    logger.info(this.MODULE_NAME, `✅ ${this.statistics.commandsRegistered} comandi registrati`);
+    moduleLogger.info(`✅ ${this.statistics.commandsRegistered} comandi registrati`);
   }
   
   /**
@@ -253,18 +255,18 @@ class BrancaloniaChatCommands {
     const cmdData = this._state.commands[command];
     if (!cmdData) return true;
     
-    logger.debug(this.MODULE_NAME, `Comando ricevuto: ${command}`);
-    logger.startPerformance(`cmd-${command}`);
+    moduleLogger.debug(`Comando ricevuto: ${command}`);
+    moduleLogger.startPerformance(`cmd-${command}`);
     
     // Controlla permessi GM
     if (cmdData.gmOnly && !game.user.isGM) {
-      logger.warn(this.MODULE_NAME, `Permesso negato per ${command} (user: ${game.user.name})`);
+      moduleLogger.warn(`Permesso negato per ${command} (user: ${game.user.name})`);
       ui.notifications.warn(`Solo il GM può usare ${command}`);
       
       this.statistics.permissionDenied++;
       
       // Emit event
-      logger.events.emit('chat-commands:permission-denied', {
+      moduleLogger.events.emit('chat-commands:permission-denied', {
         command,
         user: game.user.name,
         timestamp: Date.now()
@@ -277,7 +279,7 @@ class BrancaloniaChatCommands {
     try {
       cmdData.handler(args.slice(1), msg);
       
-      const execTime = logger.endPerformance(`cmd-${command}`);
+      const execTime = moduleLogger.endPerformance(`cmd-${command}`);
       
       // Update statistics
       this.statistics.commandsExecuted++;
@@ -288,10 +290,10 @@ class BrancaloniaChatCommands {
       const totalTime = this.statistics.averageExecutionTime * (this.statistics.commandsExecuted - 1) + execTime;
       this.statistics.averageExecutionTime = totalTime / this.statistics.commandsExecuted;
       
-      logger.info(this.MODULE_NAME, `✅ Comando ${command} eseguito in ${execTime?.toFixed(2)}ms`);
+      moduleLogger.info(`✅ Comando ${command} eseguito in ${execTime?.toFixed(2)}ms`);
       
       // Emit event
-      logger.events.emit('chat-commands:command-executed', {
+      moduleLogger.events.emit('chat-commands:command-executed', {
         command,
         user: game.user.name,
         execTime,
@@ -299,8 +301,8 @@ class BrancaloniaChatCommands {
       });
       
     } catch (error) {
-      logger.endPerformance(`cmd-${command}`);
-      logger.error(this.MODULE_NAME, `Errore comando ${command}`, error);
+      moduleLogger.endPerformance(`cmd-${command}`);
+      moduleLogger.error(`Errore comando ${command}`, error);
       ui.notifications.error(`Errore eseguendo ${command}`);
       
       // Update statistics
@@ -313,7 +315,7 @@ class BrancaloniaChatCommands {
       });
       
       // Emit event
-      logger.events.emit('chat-commands:command-failed', {
+      moduleLogger.events.emit('chat-commands:command-failed', {
         command,
         error: error.message,
         timestamp: Date.now()
@@ -337,19 +339,19 @@ class BrancaloniaChatCommands {
       const action = args[0]?.toLowerCase();
       const value = parseInt(args[1]) || 0;
       
-      logger.debug(this.MODULE_NAME, `/infamia: action=${action}, value=${value}`);
+      moduleLogger.debug(`/infamia: action=${action}, value=${value}`);
       
       // Ottieni attore selezionato
       const actor = canvas.tokens.controlled[0]?.actor;
       if (!actor) {
-        logger.warn(this.MODULE_NAME, '/infamia: Nessun token selezionato');
+        moduleLogger.warn('/infamia: Nessun token selezionato');
         ui.notifications.warn("Seleziona un token!");
         return;
       }
       
       const infamiaSystem = game.brancalonia?.api;
       if (!infamiaSystem) {
-        logger.error(this.MODULE_NAME, '/infamia: Sistema Infamia non disponibile');
+        moduleLogger.error('/infamia: Sistema Infamia non disponibile');
         ui.notifications.error("Sistema Infamia non disponibile!");
         return;
       }
@@ -357,15 +359,15 @@ class BrancaloniaChatCommands {
       switch(action) {
         case 'add':
           await infamiaSystem.addInfamia(actor, value);
-          logger.info(this.MODULE_NAME, `/infamia add: ${value} per ${actor.name}`);
+          moduleLogger.info(`/infamia add: ${value} per ${actor.name}`);
           break;
         case 'remove':
           await infamiaSystem.addInfamia(actor, -value);
-          logger.info(this.MODULE_NAME, `/infamia remove: ${value} per ${actor.name}`);
+          moduleLogger.info(`/infamia remove: ${value} per ${actor.name}`);
           break;
         case 'set':
           await infamiaSystem.setInfamia(actor, value);
-          logger.info(this.MODULE_NAME, `/infamia set: ${value} per ${actor.name}`);
+          moduleLogger.info(`/infamia set: ${value} per ${actor.name}`);
           break;
         case 'get':
         default:
@@ -379,10 +381,10 @@ class BrancaloniaChatCommands {
               <p>Livello: ${level.name}</p>
             </div>`
           });
-          logger.info(this.MODULE_NAME, `/infamia get: ${current} (${level.name}) per ${actor.name}`);
+          moduleLogger.info(`/infamia get: ${current} (${level.name}) per ${actor.name}`);
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /infamia', error);
+      moduleLogger.error('Errore /infamia', error);
       ui.notifications.error('Errore eseguendo /infamia');
       throw error;
     }
@@ -399,11 +401,11 @@ class BrancaloniaChatCommands {
   static async handleHaven(args, msg) {
     try {
       const action = args[0]?.toLowerCase();
-      logger.debug(this.MODULE_NAME, `/haven: action=${action}`);
+      moduleLogger.debug(`/haven: action=${action}`);
       
       const havenSystem = game.brancalonia?.haven;
       if (!havenSystem) {
-        logger.error(this.MODULE_NAME, '/haven: Sistema Haven non disponibile');
+        moduleLogger.error('/haven: Sistema Haven non disponibile');
         ui.notifications.error("Sistema Haven non disponibile!");
         return;
       }
@@ -412,23 +414,23 @@ class BrancaloniaChatCommands {
         case 'create':
           const name = args.slice(1).join(' ') || 'Nuovo Rifugio';
           await havenSystem.createHaven(name);
-          logger.info(this.MODULE_NAME, `/haven create: ${name}`);
+          moduleLogger.info(`/haven create: ${name}`);
           break;
         case 'upgrade':
           await havenSystem.showUpgradeDialog();
-          logger.info(this.MODULE_NAME, '/haven upgrade: Dialog mostrato');
+          moduleLogger.info('/haven upgrade: Dialog mostrato');
           break;
         case 'list':
           await havenSystem.listHavens();
-          logger.info(this.MODULE_NAME, '/haven list: Lista rifugi mostrata');
+          moduleLogger.info('/haven list: Lista rifugi mostrata');
           break;
         case 'info':
         default:
           await havenSystem.showHavenInfo();
-          logger.info(this.MODULE_NAME, '/haven info: Info rifugio mostrate');
+          moduleLogger.info('/haven info: Info rifugio mostrate');
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /haven', error);
+      moduleLogger.error('Errore /haven', error);
       ui.notifications.error('Errore eseguendo /haven');
       throw error;
     }
@@ -445,11 +447,11 @@ class BrancaloniaChatCommands {
   static async handleCompagnia(args, msg) {
     try {
       const action = args[0]?.toLowerCase();
-      logger.debug(this.MODULE_NAME, `/compagnia: action=${action}`);
+      moduleLogger.debug(`/compagnia: action=${action}`);
       
       const compagniaSystem = game.brancalonia?.compagnia;
       if (!compagniaSystem) {
-        logger.error(this.MODULE_NAME, '/compagnia: Sistema Compagnia non disponibile');
+        moduleLogger.error('/compagnia: Sistema Compagnia non disponibile');
         ui.notifications.error("Sistema Compagnia non disponibile!");
         return;
       }
@@ -459,31 +461,31 @@ class BrancaloniaChatCommands {
           const actor = canvas.tokens.controlled[0]?.actor;
           if (actor) {
             await compagniaSystem.addMember(actor);
-            logger.info(this.MODULE_NAME, `/compagnia add: ${actor.name}`);
+            moduleLogger.info(`/compagnia add: ${actor.name}`);
           } else {
-            logger.warn(this.MODULE_NAME, '/compagnia add: Nessun token selezionato');
+            moduleLogger.warn('/compagnia add: Nessun token selezionato');
           }
           break;
         case 'remove':
           const removeActor = canvas.tokens.controlled[0]?.actor;
           if (removeActor) {
             await compagniaSystem.removeMember(removeActor);
-            logger.info(this.MODULE_NAME, `/compagnia remove: ${removeActor.name}`);
+            moduleLogger.info(`/compagnia remove: ${removeActor.name}`);
           } else {
-            logger.warn(this.MODULE_NAME, '/compagnia remove: Nessun token selezionato');
+            moduleLogger.warn('/compagnia remove: Nessun token selezionato');
           }
           break;
         case 'list':
           await compagniaSystem.listMembers();
-          logger.info(this.MODULE_NAME, '/compagnia list: Lista membri mostrata');
+          moduleLogger.info('/compagnia list: Lista membri mostrata');
           break;
         case 'info':
         default:
           await compagniaSystem.showCompagniaInfo();
-          logger.info(this.MODULE_NAME, '/compagnia info: Info compagnia mostrata');
+          moduleLogger.info('/compagnia info: Info compagnia mostrata');
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /compagnia', error);
+      moduleLogger.error('Errore /compagnia', error);
       ui.notifications.error('Errore eseguendo /compagnia');
       throw error;
     }
@@ -499,11 +501,11 @@ class BrancaloniaChatCommands {
    */
   static async handleMenagramo(args, msg) {
     try {
-      logger.debug(this.MODULE_NAME, '/menagramo: Tiro menagramo');
+      moduleLogger.debug('/menagramo: Tiro menagramo');
       
       const menagramoSystem = game.brancalonia?.menagramo;
       if (!menagramoSystem) {
-        logger.error(this.MODULE_NAME, '/menagramo: Sistema Menagramo non disponibile');
+        moduleLogger.error('/menagramo: Sistema Menagramo non disponibile');
         ui.notifications.error("Sistema Menagramo non disponibile!");
         return;
       }
@@ -511,7 +513,7 @@ class BrancaloniaChatCommands {
       // Ottieni attore
       const actor = canvas.tokens.controlled[0]?.actor || game.user.character;
       if (!actor) {
-        logger.warn(this.MODULE_NAME, '/menagramo: Nessun personaggio selezionato');
+        moduleLogger.warn('/menagramo: Nessun personaggio selezionato');
         ui.notifications.warn("Nessun personaggio selezionato!");
         return;
       }
@@ -531,9 +533,9 @@ class BrancaloniaChatCommands {
         flags: { 'brancalonia-bigat': { menagramo: true } }
       });
       
-      logger.info(this.MODULE_NAME, `/menagramo: ${actor.name} - ${result.effect}`);
+      moduleLogger.info(`/menagramo: ${actor.name} - ${result.effect}`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /menagramo', error);
+      moduleLogger.error('Errore /menagramo', error);
       ui.notifications.error('Errore eseguendo /menagramo');
       throw error;
     }
@@ -549,7 +551,7 @@ class BrancaloniaChatCommands {
    */
   static async handleBagordi(args, msg) {
     try {
-      logger.debug(this.MODULE_NAME, '/bagordi: Genera evento taverna');
+      moduleLogger.debug('/bagordi: Genera evento taverna');
       
       const bagordiEvents = [
         "Un menestrello inizia a cantare canzoni oscene!",
@@ -575,9 +577,9 @@ class BrancaloniaChatCommands {
         flags: { 'brancalonia-bigat': { bagordi: true } }
       });
       
-      logger.info(this.MODULE_NAME, `/bagordi: ${event}`);
+      moduleLogger.info(`/bagordi: ${event}`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /bagordi', error);
+      moduleLogger.error('Errore /bagordi', error);
       ui.notifications.error('Errore eseguendo /bagordi');
       throw error;
     }
@@ -592,7 +594,7 @@ class BrancaloniaChatCommands {
    */
   static handleBaraonda(args, msg) {
     try {
-      logger.warn(this.MODULE_NAME, '/baraonda: Comando DEPRECATO richiamato');
+      moduleLogger.warn('/baraonda: Comando DEPRECATO richiamato');
       
       // BaraondaSystem è stato integrato in TavernBrawlSystem
       ui.notifications.warn(
@@ -619,7 +621,7 @@ class BrancaloniaChatCommands {
       
       return false;
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /baraonda (deprecation message)', error);
+      moduleLogger.error('Errore /baraonda (deprecation message)', error);
       return false;
     }
   }
@@ -635,11 +637,11 @@ class BrancaloniaChatCommands {
   static async handleLavoro(args, msg) {
     try {
       const difficulty = args[0]?.toLowerCase() || 'medio';
-      logger.debug(this.MODULE_NAME, `/lavoro: difficulty=${difficulty}`);
+      moduleLogger.debug(`/lavoro: difficulty=${difficulty}`);
       
       const dirtyJobs = game.brancalonia?.dirtyJobs;
       if (!dirtyJobs) {
-        logger.error(this.MODULE_NAME, '/lavoro: Sistema Lavori Sporchi non disponibile');
+        moduleLogger.error('/lavoro: Sistema Lavori Sporchi non disponibile');
         ui.notifications.error("Sistema Lavori Sporchi non disponibile!");
         return;
       }
@@ -658,9 +660,9 @@ class BrancaloniaChatCommands {
         flags: { 'brancalonia-bigat': { dirtyJob: true } }
       });
       
-      logger.info(this.MODULE_NAME, `/lavoro: ${job.title} (${difficulty}) - ${job.reward}MR`);
+      moduleLogger.info(`/lavoro: ${job.title} (${difficulty}) - ${job.reward}MR`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /lavoro', error);
+      moduleLogger.error('Errore /lavoro', error);
       ui.notifications.error('Errore eseguendo /lavoro');
       throw error;
     }
@@ -677,18 +679,18 @@ class BrancaloniaChatCommands {
   static async handleMalattia(args, msg) {
     try {
       const action = args[0]?.toLowerCase();
-      logger.debug(this.MODULE_NAME, `/malattia: action=${action}`);
+      moduleLogger.debug(`/malattia: action=${action}`);
       
       const diseaseSystem = game.brancalonia?.diseases;
       if (!diseaseSystem) {
-        logger.error(this.MODULE_NAME, '/malattia: Sistema Malattie non disponibile');
+        moduleLogger.error('/malattia: Sistema Malattie non disponibile');
         ui.notifications.error("Sistema Malattie non disponibile!");
         return;
       }
       
       const actor = canvas.tokens.controlled[0]?.actor;
       if (!actor && action !== 'list') {
-        logger.warn(this.MODULE_NAME, '/malattia: Nessun token selezionato');
+        moduleLogger.warn('/malattia: Nessun token selezionato');
         ui.notifications.warn("Seleziona un token!");
         return;
       }
@@ -696,23 +698,23 @@ class BrancaloniaChatCommands {
       switch(action) {
         case 'check':
           await diseaseSystem.checkDisease(actor);
-          logger.info(this.MODULE_NAME, `/malattia check: ${actor.name}`);
+          moduleLogger.info(`/malattia check: ${actor.name}`);
           break;
         case 'apply':
           const disease = args[1] || 'random';
           await diseaseSystem.applyDisease(actor, disease);
-          logger.info(this.MODULE_NAME, `/malattia apply: ${disease} a ${actor.name}`);
+          moduleLogger.info(`/malattia apply: ${disease} a ${actor.name}`);
           break;
         case 'cure':
           await diseaseSystem.cureDisease(actor);
-          logger.info(this.MODULE_NAME, `/malattia cure: ${actor.name}`);
+          moduleLogger.info(`/malattia cure: ${actor.name}`);
           break;
         default:
           await diseaseSystem.showDiseaseInfo(actor);
-          logger.info(this.MODULE_NAME, `/malattia info: ${actor.name}`);
+          moduleLogger.info(`/malattia info: ${actor.name}`);
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /malattia', error);
+      moduleLogger.error('Errore /malattia', error);
       ui.notifications.error('Errore eseguendo /malattia');
       throw error;
     }
@@ -728,26 +730,26 @@ class BrancaloniaChatCommands {
    */
   static async handleDuello(args, msg) {
     try {
-      logger.debug(this.MODULE_NAME, '/duello: Avvio duello');
+      moduleLogger.debug('/duello: Avvio duello');
       
       const duelingSystem = game.brancalonia?.dueling;
       if (!duelingSystem) {
-        logger.error(this.MODULE_NAME, '/duello: Sistema Duelli non disponibile');
+        moduleLogger.error('/duello: Sistema Duelli non disponibile');
         ui.notifications.error("Sistema Duelli non disponibile!");
         return;
       }
       
       const tokens = canvas.tokens.controlled;
       if (tokens.length !== 2) {
-        logger.warn(this.MODULE_NAME, `/duello: ${tokens.length} token selezionati (servono 2)`);
+        moduleLogger.warn(`/duello: ${tokens.length} token selezionati (servono 2)`);
         ui.notifications.warn("Seleziona esattamente 2 token per il duello!");
         return;
       }
       
       await duelingSystem.startDuel(tokens[0].actor, tokens[1].actor);
-      logger.info(this.MODULE_NAME, `/duello: ${tokens[0].name} vs ${tokens[1].name}`);
+      moduleLogger.info(`/duello: ${tokens[0].name} vs ${tokens[1].name}`);
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /duello', error);
+      moduleLogger.error('Errore /duello', error);
       ui.notifications.error('Errore eseguendo /duello');
       throw error;
     }
@@ -767,40 +769,40 @@ class BrancaloniaChatCommands {
       const operation = args[1];
       const value = parseInt(args[2]) || 0;
       
-      logger.debug(this.MODULE_NAME, `/fazione: ${factionName} ${operation} ${value}`);
+      moduleLogger.debug(`/fazione: ${factionName} ${operation} ${value}`);
       
       const factionSystem = game.brancalonia?.factions;
       if (!factionSystem) {
-        logger.error(this.MODULE_NAME, '/fazione: Sistema Fazioni non disponibile');
+        moduleLogger.error('/fazione: Sistema Fazioni non disponibile');
         ui.notifications.error("Sistema Fazioni non disponibile!");
         return;
       }
       
       const actor = canvas.tokens.controlled[0]?.actor || game.user.character;
       if (!actor) {
-        logger.warn(this.MODULE_NAME, '/fazione: Nessun personaggio selezionato');
+        moduleLogger.warn('/fazione: Nessun personaggio selezionato');
         ui.notifications.warn("Nessun personaggio selezionato!");
         return;
       }
       
       if (!factionName) {
         await factionSystem.showFactionInfo(actor);
-        logger.info(this.MODULE_NAME, `/fazione: Info fazioni per ${actor.name}`);
+        moduleLogger.info(`/fazione: Info fazioni per ${actor.name}`);
         return;
       }
       
       if (operation === '+') {
         await factionSystem.adjustReputation(actor, factionName, value);
-        logger.info(this.MODULE_NAME, `/fazione: ${actor.name} +${value} rep con ${factionName}`);
+        moduleLogger.info(`/fazione: ${actor.name} +${value} rep con ${factionName}`);
       } else if (operation === '-') {
         await factionSystem.adjustReputation(actor, factionName, -value);
-        logger.info(this.MODULE_NAME, `/fazione: ${actor.name} -${value} rep con ${factionName}`);
+        moduleLogger.info(`/fazione: ${actor.name} -${value} rep con ${factionName}`);
       } else {
         await factionSystem.getFactionReputation(actor, factionName);
-        logger.info(this.MODULE_NAME, `/fazione get: ${actor.name} con ${factionName}`);
+        moduleLogger.info(`/fazione get: ${actor.name} con ${factionName}`);
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /fazione', error);
+      moduleLogger.error('Errore /fazione', error);
       ui.notifications.error('Errore eseguendo /fazione');
       throw error;
     }
@@ -817,7 +819,7 @@ class BrancaloniaChatCommands {
   static async handleHelp(args, msg) {
     try {
       const subcommand = args[0]?.toLowerCase();
-      logger.debug(this.MODULE_NAME, `/brancalonia: subcommand=${subcommand}`);
+      moduleLogger.debug(`/brancalonia: subcommand=${subcommand}`);
       
       switch(subcommand) {
         case 'version':
@@ -830,7 +832,7 @@ class BrancaloniaChatCommands {
             </div>`,
             whisper: [game.user.id]
           });
-          logger.info(this.MODULE_NAME, '/brancalonia version: Mostrato');
+          moduleLogger.info('/brancalonia version: Mostrato');
           break;
           
         case 'info':
@@ -851,7 +853,7 @@ class BrancaloniaChatCommands {
             </div>`,
             whisper: [game.user.id]
           });
-          logger.info(this.MODULE_NAME, '/brancalonia info: Sistemi attivi mostrati');
+          moduleLogger.info('/brancalonia info: Sistemi attivi mostrati');
           break;
           
         case 'help':
@@ -870,10 +872,10 @@ class BrancaloniaChatCommands {
             content: helpContent,
             whisper: [game.user.id]
           });
-          logger.info(this.MODULE_NAME, '/brancalonia help: Lista comandi mostrata');
+          moduleLogger.info('/brancalonia help: Lista comandi mostrata');
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore /brancalonia', error);
+      moduleLogger.error('Errore /brancalonia', error);
       ui.notifications.error('Errore eseguendo /brancalonia');
       throw error;
     }
@@ -946,7 +948,7 @@ class BrancaloniaChatCommands {
    * BrancaloniaChatCommands.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche Chat Commands');
+    moduleLogger.info('Reset statistiche Chat Commands');
 
     const initTime = this.statistics.initTime;
     const commandsRegistered = this.statistics.commandsRegistered;
@@ -968,7 +970,7 @@ class BrancaloniaChatCommands {
       this.statistics.commandsByType[cmd] = 0;
     }
 
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -982,14 +984,14 @@ class BrancaloniaChatCommands {
     const stats = this.getStatistics();
     const status = this.getStatus();
 
-    logger.group('💬 Brancalonia Chat Commands - Report');
+    moduleLogger.group('💬 Brancalonia Chat Commands - Report');
 
-    logger.info(this.MODULE_NAME, 'VERSION:', this.VERSION);
-    logger.info(this.MODULE_NAME, 'Initialized:', status.initialized);
-    logger.info(this.MODULE_NAME, 'Commands Registered:', status.commandsRegistered);
+    moduleLogger.info('VERSION:', this.VERSION);
+    moduleLogger.info('Initialized:', status.initialized);
+    moduleLogger.info('Commands Registered:', status.commandsRegistered);
 
-    logger.group('📊 Statistics');
-    logger.table([
+    moduleLogger.group('📊 Statistics');
+    moduleLogger.table([
       { Metric: 'Init Time', Value: `${stats.initTime?.toFixed(2)}ms` },
       { Metric: 'Commands Executed', Value: stats.commandsExecuted },
       { Metric: 'Successful', Value: stats.successfulCommands },
@@ -998,24 +1000,24 @@ class BrancaloniaChatCommands {
       { Metric: 'Avg Execution Time', Value: `${stats.averageExecutionTime.toFixed(2)}ms` },
       { Metric: 'Errors', Value: stats.errors.length }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('📋 Commands By Type (Top 5)');
+    moduleLogger.group('📋 Commands By Type (Top 5)');
     const topCommands = Object.entries(stats.commandsByType)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 5);
-    logger.table(topCommands.map(([cmd, count]) => ({ Command: cmd, Count: count })));
-    logger.groupEnd();
+    moduleLogger.table(topCommands.map(([cmd, count]) => ({ Command: cmd, Count: count })));
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors (Last 5)');
+      moduleLogger.group('🐛 Errors (Last 5)');
       stats.errors.slice(-5).forEach((err, i) => {
-        logger.error(this.MODULE_NAME, `Error ${i + 1}:`, err.command, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.command, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return { status, stats };
   }

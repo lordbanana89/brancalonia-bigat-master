@@ -15,8 +15,10 @@
  * @requires brancalonia-logger.js
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Compendium Manager';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} CompendiumStatistics
  * @property {number} initTime - Tempo inizializzazione (ms)
@@ -67,7 +69,7 @@ import { logger } from './brancalonia-logger.js';
  */
 export class CompendiumManager {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Compendium Manager';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'brancalonia-bigat';
   static FLAGS = {
     UNLOCKED: 'unlocked',
@@ -122,8 +124,8 @@ export class CompendiumManager {
    * @fires compendium:initialized
    */
   static initialize() {
-    logger.startPerformance('compendium-init');
-    logger.info(this.MODULE_NAME, `Inizializzazione Compendium Manager v${this.VERSION}...`);
+    moduleLogger.startPerformance('compendium-init');
+    moduleLogger.info(`Inizializzazione Compendium Manager v${this.VERSION}...`);
 
     try {
       // Registra impostazioni
@@ -131,39 +133,39 @@ export class CompendiumManager {
 
       // Hook per sblocco automatico
       Hooks.on('renderCompendium', this._onRenderCompendium.bind(this));
-      logger.debug(this.MODULE_NAME, 'Hook renderCompendium registrato');
+      moduleLogger.debug('Hook renderCompendium registrato');
 
       // Hook per context menu
       Hooks.on('getCompendiumEntryContext', this._addContextOptions.bind(this));
-      logger.debug(this.MODULE_NAME, 'Hook getCompendiumEntryContext registrato');
+      moduleLogger.debug('Hook getCompendiumEntryContext registrato');
 
       // Hook per sbloccare automaticamente i pack Brancalonia
       Hooks.once('ready', () => {
         this.unlockBrancaloniaPacks();
         this.registerConsoleCommands();
       });
-      logger.debug(this.MODULE_NAME, 'Hook ready registrato');
+      moduleLogger.debug('Hook ready registrato');
 
       // Hook per toolbar editing
       Hooks.on('renderCompendiumDirectory', this._addToolbarButton.bind(this));
-      logger.debug(this.MODULE_NAME, 'Hook renderCompendiumDirectory registrato');
+      moduleLogger.debug('Hook renderCompendiumDirectory registrato');
       
       this._state.initialized = true;
       
-      const initTime = logger.endPerformance('compendium-init');
+      const initTime = moduleLogger.endPerformance('compendium-init');
       this.statistics.initTime = initTime;
 
-      logger.info(this.MODULE_NAME, `✅ Compendium Manager inizializzato in ${initTime?.toFixed(2)}ms`);
+      moduleLogger.info(`✅ Compendium Manager inizializzato in ${initTime?.toFixed(2)}ms`);
       
       // Emit event
-      logger.events.emit('compendium:initialized', {
+      moduleLogger.events.emit('compendium:initialized', {
         version: this.VERSION,
         initTime,
         timestamp: Date.now()
       });
       
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione', error);
+      moduleLogger.error('Errore inizializzazione', error);
       this.statistics.errors.push({
         type: 'initialization',
         message: error.message,
@@ -180,7 +182,7 @@ export class CompendiumManager {
    * @returns {void}
    */
   static registerSettings() {
-    logger.debug(this.MODULE_NAME, 'Registrazione settings...');
+    moduleLogger.debug('Registrazione settings...');
     
     try {
       game.settings.register(this.ID, 'autoUnlock', {
@@ -191,7 +193,7 @@ export class CompendiumManager {
         type: Boolean,
         default: true,
         onChange: value => {
-          logger.info(this.MODULE_NAME, `Setting autoUnlock cambiato: ${value}`);
+          moduleLogger.info(`Setting autoUnlock cambiato: ${value}`);
           if (value) this.unlockBrancaloniaPacks();
         }
       });
@@ -214,10 +216,10 @@ export class CompendiumManager {
         default: true
       });
       
-      logger.info(this.MODULE_NAME, '✅ 3 settings registrati');
+      moduleLogger.info('✅ 3 settings registrati');
       
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore registrazione settings', error);
+      moduleLogger.error('Errore registrazione settings', error);
       this.statistics.errors.push({
         type: 'settings-registration',
         message: error.message,
@@ -236,18 +238,18 @@ export class CompendiumManager {
    */
   static async unlockBrancaloniaPacks() {
     if (!game.user.isGM) {
-      logger.warn(this.MODULE_NAME, 'unlockBrancaloniaPacks: Solo GM può sbloccare pack');
+      moduleLogger.warn('unlockBrancaloniaPacks: Solo GM può sbloccare pack');
       return;
     }
 
     const autoUnlock = game.settings.get(this.ID, 'autoUnlock');
     if (!autoUnlock) {
-      logger.debug(this.MODULE_NAME, 'autoUnlock disabilitato, skip');
+      moduleLogger.debug('autoUnlock disabilitato, skip');
       return;
     }
 
-    logger.startPerformance('unlock-packs');
-    logger.info(this.MODULE_NAME, '🔓 Sblocco automatico compendi Brancalonia...');
+    moduleLogger.startPerformance('unlock-packs');
+    moduleLogger.info('🔓 Sblocco automatico compendi Brancalonia...');
 
     try {
       let unlockedCount = 0;
@@ -257,31 +259,31 @@ export class CompendiumManager {
         if (pack.metadata.packageName === this.ID) {
           if (pack.locked) {
             await pack.configure({ locked: false });
-            logger.info(this.MODULE_NAME, `✅ Sbloccato: ${pack.metadata.label}`);
+            moduleLogger.info(`✅ Sbloccato: ${pack.metadata.label}`);
             unlockedCount++;
             this.statistics.packsUnlocked++;
           } else {
-            logger.debug(this.MODULE_NAME, `Pack già sbloccato: ${pack.metadata.label}`);
+            moduleLogger.debug(`Pack già sbloccato: ${pack.metadata.label}`);
           }
           // Note: Compendium packs don't support setFlag in Foundry v13
           // Unlocking is sufficient
         }
       }
       
-      const unlockTime = logger.endPerformance('unlock-packs');
-      logger.info(this.MODULE_NAME, `✅ ${unlockedCount} compendi sbloccati in ${unlockTime?.toFixed(2)}ms`);
+      const unlockTime = moduleLogger.endPerformance('unlock-packs');
+      moduleLogger.info(`✅ ${unlockedCount} compendi sbloccati in ${unlockTime?.toFixed(2)}ms`);
 
       ui.notifications.info(`Compendi Brancalonia sbloccati! (${unlockedCount})`);
       
       // Emit event
-      logger.events.emit('compendium:packs-unlocked', {
+      moduleLogger.events.emit('compendium:packs-unlocked', {
         count: unlockedCount,
         unlockTime,
         timestamp: Date.now()
       });
       
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore sblocco pack', error);
+      moduleLogger.error('Errore sblocco pack', error);
       this.statistics.errors.push({
         type: 'unlock-packs',
         message: error.message,
@@ -304,11 +306,11 @@ export class CompendiumManager {
     try {
       const enableEditor = game.settings.get(this.ID, 'enableEditor');
       if (!enableEditor || !game.user.isGM) {
-        logger.debug(this.MODULE_NAME, 'Context menu skip: editor disabled o non-GM');
+        moduleLogger.debug('Context menu skip: editor disabled o non-GM');
         return;
       }
       
-      logger.debug(this.MODULE_NAME, 'Aggiunta opzioni context menu');
+      moduleLogger.debug('Aggiunta opzioni context menu');
       this.statistics.contextMenuOpened++;
 
     // Quick Edit
@@ -358,10 +360,10 @@ export class CompendiumManager {
         };
       }
       
-      logger.debug(this.MODULE_NAME, `✅ 4 opzioni context menu aggiunte`);
+      moduleLogger.debug(`✅ 4 opzioni context menu aggiunte`);
       
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore aggiunta context menu options', error);
+      moduleLogger.error('Errore aggiunta context menu options', error);
       this.statistics.errors.push({
         type: 'context-menu',
         message: error.message,
@@ -567,7 +569,7 @@ export class CompendiumManager {
     }
 
     await game.settings.set(this.ID, 'backups', backups);
-    logger.info(this.MODULE_NAME, `📦 Backup creato per: ${doc.name}`);
+    moduleLogger.info(`📦 Backup creato per: ${doc.name}`);
   }
 
   /**
@@ -620,20 +622,25 @@ export class CompendiumManager {
       </div>
     `;
 
-    const dialog = new Dialog({
-      title: 'Strumenti Compendium Brancalonia',
-      content: content,
-      buttons: {
-        close: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Chiudi'
-        }
+    let dialog;
+    dialog = new foundry.applications.api.DialogV2({
+      window: {
+        title: 'Strumenti Compendium Brancalonia'
       },
-      render: html => {
-        html.find('.tool-btn').click(async (event) => {
-          const action = $(event.currentTarget).data('action');
-          await this.handleToolAction(action);
-          dialog.close();
+      content,
+      buttons: [{
+        action: 'close',
+        icon: 'fas fa-times',
+        label: 'Chiudi'
+      }],
+      render: (event, element) => {
+        element.querySelectorAll('.tool-btn').forEach((button) => {
+          button.addEventListener('click', async (ev) => {
+            const action = button.dataset.action;
+            if (!action) return;
+            await this.handleToolAction(action);
+            dialog.close();
+          });
         });
       }
     }, {
@@ -756,7 +763,7 @@ export class CompendiumManager {
       try {
         data = JSON.parse(event.target.result);
       } catch (parseError) {
-        logger.error(CompendiumManager.MODULE_NAME, 'File JSON non valido', parseError);
+        moduleLogger.error('File JSON non valido', parseError);
         ui.notifications.error('File JSON non valido o corrotto!');
         return;
       }
@@ -866,7 +873,7 @@ export class CompendiumManager {
       if (pack.metadata.packageName === this.ID) {
         // Forza ricompilazione
         await pack.getIndex({ cache: false });
-        logger.info(this.MODULE_NAME, `✅ Ricompilato: ${pack.metadata.label}`);
+        moduleLogger.info(`✅ Ricompilato: ${pack.metadata.label}`);
       }
     }
 
@@ -883,9 +890,9 @@ export class CompendiumManager {
       const pack = game.packs.get(`${this.ID}.${packName}`);
       if (pack) {
         await pack.configure({ locked: false });
-        logger.info(this.MODULE_NAME, `✅ Sbloccato: ${packName}`);
+        moduleLogger.info(`✅ Sbloccato: ${packName}`);
       } else {
-        logger.error(this.MODULE_NAME, `❌ Pack non trovato: ${packName}`);
+        moduleLogger.error(`❌ Pack non trovato: ${packName}`);
       }
     };
 
@@ -895,7 +902,7 @@ export class CompendiumManager {
       for (let pack of game.packs) {
         if (pack.metadata.packageName === this.ID) {
           const count = pack.index.size;
-          logger.info(this.MODULE_NAME, `${pack.metadata.label}: ${count} elementi`);
+          moduleLogger.info(`${pack.metadata.label}: ${count} elementi`);
         }
       }
     };
@@ -921,14 +928,14 @@ export class CompendiumManager {
         }
       }
 
-      logger.table(results);
+      moduleLogger.table(results);
       return results;
     };
 
-    logger.info(this.MODULE_NAME, '📚 Comandi console Compendium registrati:');
-    logger.info(this.MODULE_NAME, '  - unlockPack(packName)');
-    logger.info(this.MODULE_NAME, '  - countPackItems()');
-    logger.info(this.MODULE_NAME, '  - searchPacks(searchTerm)');
+    moduleLogger.info('📚 Comandi console Compendium registrati:');
+    moduleLogger.info('  - unlockPack(packName)');
+    moduleLogger.info('  - countPackItems()');
+    moduleLogger.info('  - searchPacks(searchTerm)');
   }
 
   /**
@@ -955,10 +962,10 @@ export class CompendiumManager {
         `);
 
         html.find('.window-title').append(indicator);
-        logger.debug(this.MODULE_NAME, `Indicatore stato aggiunto: ${app.metadata.label}`);
+        moduleLogger.debug(`Indicatore stato aggiunto: ${app.metadata.label}`);
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore onRenderCompendium', error);
+      moduleLogger.error('Errore onRenderCompendium', error);
     }
   }
   
@@ -1031,7 +1038,7 @@ export class CompendiumManager {
       }
       return packs;
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore getBrancaloniaPacks', error);
+      moduleLogger.error('Errore getBrancaloniaPacks', error);
       return [];
     }
   }
@@ -1049,7 +1056,7 @@ export class CompendiumManager {
     try {
       const pack = game.packs.get(packId);
       if (!pack) {
-        logger.warn(this.MODULE_NAME, `Pack ${packId} non trovato`);
+        moduleLogger.warn(`Pack ${packId} non trovato`);
         return null;
       }
       
@@ -1062,7 +1069,7 @@ export class CompendiumManager {
         packageName: pack.metadata.packageName
       };
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore getPackInfo ${packId}`, error);
+      moduleLogger.error(`Errore getPackInfo ${packId}`, error);
       return null;
     }
   }
@@ -1078,27 +1085,27 @@ export class CompendiumManager {
    */
   static async unlockPackViaAPI(packName) {
     try {
-      logger.info(this.MODULE_NAME, `API: Sblocco pack ${packName}`);
+      moduleLogger.info(`API: Sblocco pack ${packName}`);
       
       const pack = game.packs.get(packName);
       if (!pack) {
-        logger.warn(this.MODULE_NAME, `Pack ${packName} non trovato`);
+        moduleLogger.warn(`Pack ${packName} non trovato`);
         return false;
       }
       
       if (!pack.locked) {
-        logger.debug(this.MODULE_NAME, `Pack ${packName} già sbloccato`);
+        moduleLogger.debug(`Pack ${packName} già sbloccato`);
         return true;
       }
       
       await pack.configure({ locked: false });
       this.statistics.packsUnlocked++;
       
-      logger.info(this.MODULE_NAME, `✅ Pack ${packName} sbloccato via API`);
+      moduleLogger.info(`✅ Pack ${packName} sbloccato via API`);
       return true;
       
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore unlockPackViaAPI ${packName}`, error);
+      moduleLogger.error(`Errore unlockPackViaAPI ${packName}`, error);
       return false;
     }
   }
@@ -1115,11 +1122,11 @@ export class CompendiumManager {
    */
   static async exportPackViaAPI(packName) {
     try {
-      logger.info(this.MODULE_NAME, `API: Export pack ${packName}`);
+      moduleLogger.info(`API: Export pack ${packName}`);
       
       const pack = game.packs.get(packName);
       if (!pack) {
-        logger.warn(this.MODULE_NAME, `Pack ${packName} non trovato`);
+        moduleLogger.warn(`Pack ${packName} non trovato`);
         return null;
       }
       
@@ -1135,11 +1142,11 @@ export class CompendiumManager {
       this.statistics.exportsCompleted++;
       this.statistics.operationsByType.export++;
       
-      logger.info(this.MODULE_NAME, `✅ Esportati ${documents.length} documenti da ${packName}`);
+      moduleLogger.info(`✅ Esportati ${documents.length} documenti da ${packName}`);
       return exportData;
       
     } catch (error) {
-      logger.error(this.MODULE_NAME, `Errore exportPackViaAPI ${packName}`, error);
+      moduleLogger.error(`Errore exportPackViaAPI ${packName}`, error);
       return null;
     }
   }
@@ -1163,7 +1170,7 @@ export class CompendiumManager {
         packId: b.packId
       }));
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore getBackupsList', error);
+      moduleLogger.error('Errore getBackupsList', error);
       return [];
     }
   }
@@ -1176,7 +1183,7 @@ export class CompendiumManager {
    * CompendiumManager.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche Compendium Manager');
+    moduleLogger.info('Reset statistiche Compendium Manager');
 
     const initTime = this.statistics.initTime;
 
@@ -1209,7 +1216,7 @@ export class CompendiumManager {
       errors: []
     };
 
-    logger.info(this.MODULE_NAME, 'Statistiche resettate');
+    moduleLogger.info('Statistiche resettate');
   }
 
   /**
@@ -1224,13 +1231,13 @@ export class CompendiumManager {
     const status = this.getStatus();
     const packs = this.getBrancaloniaPacks();
 
-    logger.group('📚 Brancalonia Compendium Manager - Report');
+    moduleLogger.group('📚 Brancalonia Compendium Manager - Report');
 
-    logger.info(this.MODULE_NAME, 'VERSION:', this.VERSION);
-    logger.info(this.MODULE_NAME, 'Initialized:', status.initialized);
+    moduleLogger.info('VERSION:', this.VERSION);
+    moduleLogger.info('Initialized:', status.initialized);
 
-    logger.group('📊 Statistics');
-    logger.table([
+    moduleLogger.group('📊 Statistics');
+    moduleLogger.table([
       { Metric: 'Init Time', Value: `${stats.initTime?.toFixed(2)}ms` },
       { Metric: 'Packs Sbloccati', Value: stats.packsUnlocked },
       { Metric: 'Documenti Modificati', Value: stats.documentsEdited },
@@ -1248,37 +1255,37 @@ export class CompendiumManager {
       { Metric: 'Avg Operation Time', Value: `${stats.averageOperationTime.toFixed(2)}ms` },
       { Metric: 'Errors', Value: stats.errors.length }
     ]);
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('🔧 Operazioni Per Tipo');
-    logger.table(Object.entries(stats.operationsByType).map(([type, count]) => ({
+    moduleLogger.group('🔧 Operazioni Per Tipo');
+    moduleLogger.table(Object.entries(stats.operationsByType).map(([type, count]) => ({
       Tipo: type,
       Count: count
     })));
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
-    logger.group('📦 Pack Brancalonia');
+    moduleLogger.group('📦 Pack Brancalonia');
     if (packs.length === 0) {
-      logger.info(this.MODULE_NAME, 'Nessun pack Brancalonia trovato');
+      moduleLogger.info('Nessun pack Brancalonia trovato');
     } else {
-      logger.table(packs.map(p => ({
+      moduleLogger.table(packs.map(p => ({
         Label: p.label,
         Tipo: p.type,
         Locked: p.locked ? '🔒' : '🔓',
         Elementi: p.size
       })));
     }
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     if (stats.errors.length > 0) {
-      logger.group('🐛 Errors (Last 5)');
+      moduleLogger.group('🐛 Errors (Last 5)');
       stats.errors.slice(-5).forEach((err, i) => {
-        logger.error(this.MODULE_NAME, `Error ${i + 1}:`, err.type, '-', err.message);
+        moduleLogger.error(`Error ${i + 1}:`, err.type, '-', err.message);
       });
-      logger.groupEnd();
+      moduleLogger.groupEnd();
     }
 
-    logger.groupEnd();
+    moduleLogger.groupEnd();
 
     return { status, stats, packs };
   }

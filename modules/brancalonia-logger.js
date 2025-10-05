@@ -328,6 +328,13 @@ class BrancaloniaLogger {
     this.performanceMarks = new Map();
 
     /**
+     * Cache logger scope per modulo
+     * @type {Map<string, Object>}
+     * @private
+     */
+    this._moduleScopes = new Map();
+
+    /**
      * Timeout auto-cleanup performance marks (default: 60s)
      * @type {number}
      * @private
@@ -375,6 +382,40 @@ class BrancaloniaLogger {
     // Setup sinks di default
     this._setupDefaultSinks();
     this.localStorageEnabled = true; // Configurabile tramite setting Foundry
+  }
+
+  /**
+   * Restituisce un logger con modulo preimpostato
+   * @param {string} moduleName
+   * @returns {Object}
+   */
+  forModule(moduleName) {
+    if (!moduleName) {
+      throw new Error('Module name richiesto per creare un logger scoped');
+    }
+
+    if (this._moduleScopes.has(moduleName)) {
+      return this._moduleScopes.get(moduleName);
+    }
+
+    const scoped = {
+      module: moduleName,
+      log: (level, message, ...args) => this.log(level, moduleName, message, ...args),
+      error: (message, ...args) => this.error(moduleName, message, ...args),
+      warn: (message, ...args) => this.warn(moduleName, message, ...args),
+      info: (message, ...args) => this.info(moduleName, message, ...args),
+      debug: (message, ...args) => this.debug(moduleName, message, ...args),
+      trace: (message, ...args) => this.trace(moduleName, message, ...args),
+      startPerformance: this.startPerformance.bind(this),
+      endPerformance: this.endPerformance.bind(this),
+      group: this.group.bind(this),
+      groupEnd: this.groupEnd.bind(this),
+      table: this.table.bind(this),
+      events: this.events
+    };
+
+    this._moduleScopes.set(moduleName, scoped);
+    return scoped;
   }
 
   /**
@@ -932,6 +973,7 @@ const logger = {
   trace: loggerInstance.trace.bind(loggerInstance),
   startPerformance: loggerInstance.startPerformance.bind(loggerInstance),
   endPerformance: loggerInstance.endPerformance.bind(loggerInstance),
+  forModule: loggerInstance.forModule.bind(loggerInstance),
   getStatistics: loggerInstance.getStatistics.bind(loggerInstance),
   resetStatistics: loggerInstance.resetStatistics.bind(loggerInstance),
   setLogLevel: loggerInstance.setLogLevel.bind(loggerInstance),
@@ -1139,23 +1181,92 @@ if (typeof window !== 'undefined') {
 const getLogger = () => {
   // Se il logger non è ancora inizializzato, restituisci un proxy sicuro
   if (!logger || !logger.log) {
-    return {
-      log: () => {}, // No-op function
-      info: () => {},
-      warn: () => {},
-      error: () => {},
-      debug: () => {},
-      trace: () => {},
+    const noop = () => {};
+    const stubEvents = { on: noop, off: noop, emit: noop };
+    const scopedStub = (moduleName = '') => ({
+      module: moduleName,
+      log: noop,
+      info: noop,
+      warn: noop,
+      error: noop,
+      debug: noop,
+      trace: noop,
       startPerformance: () => Date.now(),
       endPerformance: () => 0,
-      events: { on: () => {}, off: () => {}, emit: () => {} }
+      group: noop,
+      groupEnd: noop,
+      table: noop,
+      events: stubEvents
+    });
+
+    return {
+      log: noop,
+      info: noop,
+      warn: noop,
+      error: noop,
+      debug: noop,
+      trace: noop,
+      startPerformance: () => Date.now(),
+      endPerformance: () => 0,
+      group: noop,
+      groupEnd: noop,
+      table: noop,
+      events: stubEvents,
+      forModule: (moduleName) => scopedStub(moduleName)
     };
   }
   return logger;
 };
 
+/**
+ * Crea un logger con modulo preimpostato
+ * @param {string} moduleName
+ * @returns {Object}
+ */
+const createModuleLogger = (moduleName) => {
+  const baseLogger = getLogger();
+
+  if (typeof baseLogger?.forModule === 'function') {
+    return baseLogger.forModule(moduleName);
+  }
+
+  const call = (method, message, args) => {
+    if (typeof baseLogger?.[method] === 'function') {
+      return baseLogger[method](moduleName, message, ...args);
+    }
+    return undefined;
+  };
+
+  return {
+    module: moduleName,
+    log: (level, message, ...args) => baseLogger?.log?.(level, moduleName, message, ...args),
+    error: (message, ...args) => call('error', message, args),
+    warn: (message, ...args) => call('warn', message, args),
+    info: (message, ...args) => call('info', message, args),
+    debug: (message, ...args) => call('debug', message, args),
+    trace: (message, ...args) => call('trace', message, args),
+    startPerformance: (...args) => {
+      if (typeof baseLogger?.startPerformance === 'function') {
+        return baseLogger.startPerformance(...args);
+      }
+      return Date.now();
+    },
+    endPerformance: (...args) => {
+      if (typeof baseLogger?.endPerformance === 'function') {
+        return baseLogger.endPerformance(...args);
+      }
+      return 0;
+    },
+    group: (...args) => baseLogger?.group?.(...args),
+    groupEnd: (...args) => baseLogger?.groupEnd?.(...args),
+    table: (...args) => baseLogger?.table?.(...args),
+    events: baseLogger?.events ?? { on: () => {}, off: () => {}, emit: () => {} }
+  };
+};
+
 // Export per compatibilità
 export {
+  createModuleLogger,
   getLogger,
   logger,
   logger as default,

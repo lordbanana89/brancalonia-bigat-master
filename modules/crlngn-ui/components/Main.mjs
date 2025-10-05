@@ -20,7 +20,10 @@ import { TokenWheel } from "./TokenWheelUtil.mjs";
 import { BrancaloniaCSSOptimizer } from "./BrancaloniaCSSOptimizer.mjs";
 import { SheetsUtil } from "./SheetsUtil.mjs";
 import { BrancaloniaInitializationManager } from "./BrancaloniaInitializationManager.mjs";
-import logger from '../../brancalonia-logger.js';
+import { createModuleLogger } from '../../brancalonia-logger.js';
+
+const MODULE_LABEL = 'Main';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 /**
  * Main class handling core module initialization and setup
@@ -55,7 +58,7 @@ export class BrancaloniaSettingsMain {
         return;
       }
 
-      logger.info('BrancaloniaSettingsMain', 'Initializing Brancalonia Settings...', { system: game.system.title });
+      moduleLogger.info('Initializing Brancalonia Settings...', { system: game.system.title });
       window.brancaloniaSettings = window.brancaloniaSettings || {};
 
       // Esporta riferimenti per coordinamento con altri moduli Brancalonia
@@ -108,9 +111,9 @@ export class BrancaloniaSettingsMain {
     });
 
     Hooks.once(HOOKS_CORE.READY, () => {
-      logger.info('BrancaloniaSettingsMain', 'Brancalonia Settings Ready', { game: game.id });
+      moduleLogger.info('Brancalonia Settings Ready', { game: game.id });
       if(BrancaloniaSettingsMain.isIncompatible){
-        logger.error('BrancaloniaSettingsMain', 'Foundry VTT version incompatible');
+        moduleLogger.error('Foundry VTT version incompatible');
         ui.notifications.error("Brancalonia Settings richiede Foundry VTT v13+", {permanent: true});
         return;
       }

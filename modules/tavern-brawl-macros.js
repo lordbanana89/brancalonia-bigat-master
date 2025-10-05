@@ -7,11 +7,14 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'Tavern Brawl Macros';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class TavernBrawlMacros {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Tavern Brawl Macros';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'brancalonia-bigat';
 
   // Statistics tracking (enterprise-grade)
@@ -36,7 +39,7 @@ class TavernBrawlMacros {
     try {
       const system = window.TavernBrawlSystem;
       if (!system) {
-        logger.warn(this.MODULE_NAME, 'Sistema Risse non disponibile');
+        moduleLogger.warn('Sistema Risse non disponibile');
         ui.notifications.error('Sistema Risse non disponibile!');
         return;
       }
@@ -56,7 +59,7 @@ class TavernBrawlMacros {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore macro gestione rissa', error);
+      moduleLogger.error('Errore macro gestione rissa', error);
       ui.notifications.error('Errore nella gestione della rissa');
     }
   }
@@ -70,13 +73,13 @@ class TavernBrawlMacros {
     try {
       const tokens = canvas.tokens.controlled;
       if (tokens.length < 2) {
-        logger.debug?.(this.MODULE_NAME, `Tentativo inizia rissa con ${tokens.length} token (minimo 2)`);
+        moduleLogger.debug?.(`Tentativo inizia rissa con ${tokens.length} token (minimo 2)`);
         ui.notifications.warn('Seleziona almeno 2 token per iniziare una rissa!');
         return;
       }
 
       this.statistics.dialogsShown++;
-      logger.debug?.(this.MODULE_NAME, `Dialog inizia rissa mostrato per ${tokens.length} token`);
+      moduleLogger.debug?.(`Dialog inizia rissa mostrato per ${tokens.length} token`);
 
     // Fixed: Migrated to DialogV2
     new foundry.applications.api.DialogV2({
@@ -174,7 +177,7 @@ class TavernBrawlMacros {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore dialog inizia rissa', error);
+      moduleLogger.error('Errore dialog inizia rissa', error);
       ui.notifications.error('Errore nella creazione del dialog');
     }
   }
@@ -186,7 +189,7 @@ class TavernBrawlMacros {
    */
   static async dialogRissaAttiva() {
     this.statistics.dialogsShown++;
-    logger.debug?.(this.MODULE_NAME, 'Dialog rissa attiva mostrato');
+    moduleLogger.debug?.('Dialog rissa attiva mostrato');
     const combat = window.TavernBrawlSystem.brawlCombat;
     const tokens = canvas.tokens.controlled;
     
@@ -276,8 +279,11 @@ class TavernBrawlMacros {
                       batosteLivello >= 4 ? '😵 Molto Malmesso' :
                       batosteLivello >= 2 ? '😣 Contuso' : '😊 In Forma';
 
-    new Dialog({
-      title: `⚔️ Azioni Rissa - ${actor.name}`,
+    let dialog;
+    dialog = new foundry.applications.api.DialogV2({
+      window: {
+        title: `⚔️ Azioni Rissa - ${actor.name}`
+      },
       content: `
         <div style="padding: 10px;">
           <div style="background: #f4e4bc; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
@@ -295,53 +301,60 @@ class TavernBrawlMacros {
           </p>
         </div>
       `,
-      buttons: {
-        saccagnata: {
-          icon: '<i class="fas fa-fist-raised"></i>',
-          label: 'Saccagnata',
-          callback: async () => {
-            const targets = game.user.targets;
-            if (targets.size !== 1) {
-              ui.notifications.warn('Seleziona UN bersaglio per la saccagnata!');
-              return;
-            }
-            await system.executeSaccagnata(actor, Array.from(targets)[0]);
+      buttons: [{
+        action: 'saccagnata',
+        icon: 'fas fa-fist-raised',
+        label: 'Saccagnata',
+        default: true,
+        callback: async () => {
+          const targets = game.user.targets;
+          if (targets.size !== 1) {
+            ui.notifications.warn('Seleziona UN bersaglio per la saccagnata!');
+            return;
           }
-        },
-        mosse: {
-          icon: '<i class="fas fa-magic"></i>',
-          label: `Mosse (${slotDisponibili} slot)`,
-          callback: () => this.dialogScegliMossa(actor, participantData),
-          disabled: slotDisponibili === 0
-        },
-        oggetto: {
-          icon: '<i class="fas fa-chair"></i>',
-          label: participantData.oggettoScena ? 'Usa Oggetto' : 'Raccogli Oggetto',
-          callback: () => {
-            if (participantData.oggettoScena) {
-              this.dialogUsaOggetto(actor, participantData);
-            } else {
-              this.dialogRaccogliOggetto(actor);
-            }
-          }
-        },
-        difesa: {
-          icon: '<i class="fas fa-shield-alt"></i>',
-          label: 'Difesa Totale',
-          callback: () => {
-            actor.setFlag('brancalonia-bigat', 'brawlDefending', true);
-            ui.notifications.info(`${actor.name} si mette in difesa totale!`);
-          }
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Chiudi'
+          await system.executeSaccagnata(actor, Array.from(targets)[0]);
+          dialog.close();
         }
-      },
-      default: 'saccagnata'
+      }, {
+        action: 'mosse',
+        icon: 'fas fa-magic',
+        label: `Mosse (${slotDisponibili} slot)`,
+        disabled: slotDisponibili === 0,
+        callback: () => {
+          this.dialogScegliMossa(actor, participantData);
+          dialog.close();
+        }
+      }, {
+        action: 'oggetto',
+        icon: 'fas fa-chair',
+        label: participantData.oggettoScena ? 'Usa Oggetto' : 'Raccogli Oggetto',
+        callback: () => {
+          if (participantData.oggettoScena) {
+            this.dialogUsaOggetto(actor, participantData);
+          } else {
+            this.dialogRaccogliOggetto(actor);
+          }
+          dialog.close();
+        }
+      }, {
+        action: 'difesa',
+        icon: 'fas fa-shield-alt',
+        label: 'Difesa Totale',
+        callback: () => {
+          actor.setFlag('brancalonia-bigat', 'brawlDefending', true);
+          ui.notifications.info(`${actor.name} si mette in difesa totale!`);
+          dialog.close();
+        }
+      }, {
+        action: 'cancel',
+        icon: 'fas fa-times',
+        label: 'Chiudi'
+      }]
     }, {
       width: 450
-    }).render(true);
+    });
+
+    dialog.render(true);
   }
 
   /**
@@ -741,9 +754,9 @@ if (!game.user.isGM && !window.TavernBrawlSystem.activeBrawl) {
 
     Macro.create(mainMacroData).then(() => {
       TavernBrawlMacros.statistics.macrosCreated++;
-      logger.info(TavernBrawlMacros.MODULE_NAME, '✅ Macro Gestione Risse creata');
+      moduleLogger.info('✅ Macro Gestione Risse creata');
     }).catch((error) => {
-      logger.debug?.(TavernBrawlMacros.MODULE_NAME, 'Macro Gestione Risse già esistente');
+      moduleLogger.debug?.('Macro Gestione Risse già esistente');
     });
 
     // Macro Eventi Rapidi
@@ -773,9 +786,9 @@ if (!game.user.isGM) {
 
     Macro.create(eventiMacroData).then(() => {
       TavernBrawlMacros.statistics.macrosCreated++;
-      logger.info(TavernBrawlMacros.MODULE_NAME, '✅ Macro Eventi Rissa creata');
+      moduleLogger.info('✅ Macro Eventi Rissa creata');
     }).catch(() => {
-      logger.debug?.(TavernBrawlMacros.MODULE_NAME, 'Macro Eventi Rissa già esistente');
+      moduleLogger.debug?.('Macro Eventi Rissa già esistente');
     });
 
     // Macro Stato Rapido
@@ -803,13 +816,13 @@ if (!window.TavernBrawlSystem.activeBrawl) {
 
     Macro.create(statoMacroData).then(() => {
       TavernBrawlMacros.statistics.macrosCreated++;
-      logger.info(TavernBrawlMacros.MODULE_NAME, '✅ Macro Stato Rissa creata');
+      moduleLogger.info('✅ Macro Stato Rissa creata');
     }).catch(() => {
-      logger.debug?.(TavernBrawlMacros.MODULE_NAME, 'Macro Stato Rissa già esistente');
+      moduleLogger.debug?.('Macro Stato Rissa già esistente');
     });
 
     TavernBrawlMacros._state.macrosRegistered = true;
-    logger.info(TavernBrawlMacros.MODULE_NAME, '✅ Tutte le macro registrate con successo');
+    moduleLogger.info('✅ Tutte le macro registrate con successo');
   }
 
   /**
@@ -849,7 +862,7 @@ if (!window.TavernBrawlSystem.activeBrawl) {
       actionsExecuted: 0,
       errors: []
     };
-    logger.info(this.MODULE_NAME, '📊 Statistiche resettate');
+    moduleLogger.info('📊 Statistiche resettate');
   }
 }
 
@@ -859,19 +872,19 @@ window.TavernBrawlMacros = TavernBrawlMacros;
 // Auto-registra le macro al ready
 Hooks.once('ready', () => {
   try {
-    logger.startPerformance('tavern-brawl-macros-init');
-    logger.info(TavernBrawlMacros.MODULE_NAME, '🍺 Inizializzazione Macro Risse...');
+    moduleLogger.startPerformance('tavern-brawl-macros-init');
+    moduleLogger.info('🍺 Inizializzazione Macro Risse...');
     
     if (game.user.isGM) {
       TavernBrawlMacros.registerMacros();
     }
     
     TavernBrawlMacros._state.initialized = true;
-    const perfTime = logger.endPerformance('tavern-brawl-macros-init');
-    logger.info(TavernBrawlMacros.MODULE_NAME, `✅ Macro Risse inizializzate (${perfTime?.toFixed(2)}ms)`);
+    const perfTime = moduleLogger.endPerformance('tavern-brawl-macros-init');
+    moduleLogger.info(`✅ Macro Risse inizializzate (${perfTime?.toFixed(2)}ms)`);
     
     // Event emitter
-    logger.events.emit('tavern-brawl-macros:initialized', {
+    moduleLogger.events.emit('tavern-brawl-macros:initialized', {
       version: TavernBrawlMacros.VERSION,
       timestamp: Date.now()
     });
@@ -881,10 +894,8 @@ Hooks.once('ready', () => {
       message: error.message, 
       timestamp: Date.now() 
     });
-    logger.error(TavernBrawlMacros.MODULE_NAME, 'Errore inizializzazione Macro Risse', error);
+    moduleLogger.error('Errore inizializzazione Macro Risse', error);
   }
 });
 
 export default TavernBrawlMacros;
-
-

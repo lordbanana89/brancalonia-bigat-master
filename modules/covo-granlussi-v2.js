@@ -9,8 +9,10 @@
  * @requires brancalonia-logger.js
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Covo System';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} CovoStatistics
  * @property {number} initTime - Tempo inizializzazione (ms)
@@ -40,7 +42,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class BrancaloniaCovoV2 {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Covo System';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'brancalonia-bigat';
   static FLAGS = {
     COVO: 'covo',
@@ -84,8 +86,8 @@ class BrancaloniaCovoV2 {
    * @fires covo:initialized
    */
   static initialize() {
-    logger.startPerformance('covo-init');
-    logger.info(this.MODULE_NAME, `Inizializzazione Covo System v${this.VERSION}...`);
+    moduleLogger.startPerformance('covo-init');
+    moduleLogger.info(`Inizializzazione Covo System v${this.VERSION}...`);
 
     this.registerSettings();
     this.registerActorTypes();
@@ -100,13 +102,13 @@ class BrancaloniaCovoV2 {
 
     this._state.initialized = true;
 
-    const initTime = logger.endPerformance('covo-init');
+    const initTime = moduleLogger.endPerformance('covo-init');
     this.statistics.initTime = initTime;
 
-    logger.info(this.MODULE_NAME, `✅ Covo System inizializzato in ${initTime?.toFixed(2)}ms`);
+    moduleLogger.info(`✅ Covo System inizializzato in ${initTime?.toFixed(2)}ms`);
 
     // Emit event
-    logger.events.emit('covo:initialized', {
+    moduleLogger.events.emit('covo:initialized', {
       version: this.VERSION,
       initTime,
       timestamp: Date.now()
@@ -189,7 +191,7 @@ class BrancaloniaCovoV2 {
             source.system.properties = [];
           }
         } catch (error) {
-          logger.error(this.MODULE_NAME, 'Errore migrazione proprietà item', error, source);
+          moduleLogger.error('Errore migrazione proprietà item', error, source);
           this.statistics.errors.push({
             type: 'item-migration',
             message: error.message,
@@ -1315,8 +1317,8 @@ class BrancaloniaCovoV2 {
         return;
       }
 
-      logger.startPerformance('covo-migration');
-      logger.info(this.MODULE_NAME, '🔄 Inizio migrazione sistema Covo...');
+      moduleLogger.startPerformance('covo-migration');
+      moduleLogger.info('🔄 Inizio migrazione sistema Covo...');
 
       try {
         // Trova tutti gli attori con dati del vecchio covo
@@ -1427,13 +1429,13 @@ class BrancaloniaCovoV2 {
           width: 500
         }).render(true);
 
-        const migrationTime = logger.endPerformance('covo-migration');
-        logger.info(this.MODULE_NAME, `✅ Migrazione sistema Covo completata in ${migrationTime?.toFixed(2)}ms!`);
+        const migrationTime = moduleLogger.endPerformance('covo-migration');
+        moduleLogger.info(`✅ Migrazione sistema Covo completata in ${migrationTime?.toFixed(2)}ms!`);
         
         BrancaloniaCovoV2.statistics.migrationsCompleted++;
         
       } catch (error) {
-        logger.error(this.MODULE_NAME, 'Errore durante la migrazione', error);
+        moduleLogger.error('Errore durante la migrazione', error);
         BrancaloniaCovoV2.statistics.errors.push({
           type: 'migration-failed',
           message: error.message,
@@ -1502,7 +1504,7 @@ class BrancaloniaCovoV2 {
       }
 
       // Log migrazione
-      logger.info(this.MODULE_NAME, `✅ Migrato covo: ${covoName} con ${actors.length} membri`);
+      moduleLogger.info(`✅ Migrato covo: ${covoName} con ${actors.length} membri`);
 
       return newCovo;
     }
@@ -1779,7 +1781,7 @@ class BrancaloniaCovoV2 {
       }
 
       ui.notifications.info(`Rimossi vecchi dati da ${cleaned} attori.`);
-      logger.info(this.MODULE_NAME, `🧹 Rimossi vecchi dati da ${cleaned} attori`);
+      moduleLogger.info(`🧹 Rimossi vecchi dati da ${cleaned} attori`);
     }
 
     /**
@@ -1866,7 +1868,7 @@ class BrancaloniaCovoV2 {
         width: 500
       }).render(true);
 
-      logger.info(this.MODULE_NAME, '✅ Verifica migrazione completata', report);
+      moduleLogger.info('✅ Verifica migrazione completata', report);
       BrancaloniaCovoV2.statistics.migrationsVerified++;
       return report;
     }
@@ -1889,36 +1891,36 @@ class BrancaloniaCovoV2 {
    */
   static applyRestBenefits(actor, restType) {
     try {
-      logger.startPerformance('covo-rest-benefits');
+      moduleLogger.startPerformance('covo-rest-benefits');
 
       // Trova il Covo dell'attore tramite compagnia
       const compagniaId = actor.getFlag('brancalonia-bigat', 'compagniaId');
       if (!compagniaId) {
-        logger.debug?.(this.MODULE_NAME, `Actor ${actor.name} non ha una compagnia`);
+        moduleLogger.debug?.(`Actor ${actor.name} non ha una compagnia`);
         return null;
       }
 
       const compagnia = game.actors.get(compagniaId);
       if (!compagnia) {
-        logger.warn(this.MODULE_NAME, `Compagnia ${compagniaId} non trovata per ${actor.name}`);
+        moduleLogger.warn(`Compagnia ${compagniaId} non trovata per ${actor.name}`);
         return null;
       }
 
       const covoId = compagnia.getFlag('brancalonia-bigat', 'covoId');
       if (!covoId) {
-        logger.debug?.(this.MODULE_NAME, `Compagnia ${compagnia.name} non ha un Covo`);
+        moduleLogger.debug?.(`Compagnia ${compagnia.name} non ha un Covo`);
         return null;
       }
 
       const covo = game.actors.get(covoId);
       if (!covo) {
-        logger.warn(this.MODULE_NAME, `Covo ${covoId} non trovato`);
+        moduleLogger.warn(`Covo ${covoId} non trovato`);
         return null;
       }
 
       // Verifica che sia un Covo v2
       if (!covo.getFlag('brancalonia-bigat', 'isCovo')) {
-        logger.warn(this.MODULE_NAME, `Actor ${covo.name} non è un Covo valido`);
+        moduleLogger.warn(`Actor ${covo.name} non è un Covo valido`);
         return null;
       }
 
@@ -1945,46 +1947,46 @@ class BrancaloniaCovoV2 {
             if (restType === 'long') {
               benefits.removeExhaustion = true;
             }
-            logger.debug?.(this.MODULE_NAME, `Benefici Cantina applicati: +1 HD, +2 HP, remove exhaustion`);
+            moduleLogger.debug?.(`Benefici Cantina applicati: +1 HD, +2 HP, remove exhaustion`);
             break;
 
           case 'distilleria':
             // Distilleria: Bonus guarigione alchemica
             benefits.extraHealing += 1;
-            logger.debug?.(this.MODULE_NAME, `Benefici Distilleria applicati: +1 HP`);
+            moduleLogger.debug?.(`Benefici Distilleria applicati: +1 HP`);
             break;
 
           case 'fucina':
             // Fucina: Non dà benefici di riposo diretti
-            logger.debug?.(this.MODULE_NAME, `Fucina presente ma nessun beneficio riposo diretto`);
+            moduleLogger.debug?.(`Fucina presente ma nessun beneficio riposo diretto`);
             break;
 
           case 'borsa_nera':
             // Borsa Nera: Non dà benefici di riposo diretti
-            logger.debug?.(this.MODULE_NAME, `Borsa Nera presente ma nessun beneficio riposo diretto`);
+            moduleLogger.debug?.(`Borsa Nera presente ma nessun beneficio riposo diretto`);
             break;
 
           case 'scuderie':
             // Scuderie: Non dà benefici di riposo diretti
-            logger.debug?.(this.MODULE_NAME, `Scuderie presenti ma nessun beneficio riposo diretto`);
+            moduleLogger.debug?.(`Scuderie presenti ma nessun beneficio riposo diretto`);
             break;
 
           default:
-            logger.debug?.(this.MODULE_NAME, `Granlusso sconosciuto: ${type}`);
+            moduleLogger.debug?.(`Granlusso sconosciuto: ${type}`);
         }
       });
 
-      const perfTime = logger.endPerformance('covo-rest-benefits');
+      const perfTime = moduleLogger.endPerformance('covo-rest-benefits');
 
       // Se ci sono benefici, logga e return
       if (benefits.extraHitDice > 0 || benefits.extraHealing > 0 || benefits.removeExhaustion) {
-        logger.info(
+        moduleLogger.info(
           this.MODULE_NAME,
           `Benefici riposo Covo applicati per ${actor.name}: HD+${benefits.extraHitDice}, HP+${benefits.extraHealing}, removeExhaustion=${benefits.removeExhaustion} (${perfTime?.toFixed(2)}ms)`
         );
 
         // Emit event
-        logger.events.emit('covo:rest-benefits-applied', {
+        moduleLogger.events.emit('covo:rest-benefits-applied', {
           actor: actor.name,
           covo: covo.name,
           benefits,
@@ -1995,7 +1997,7 @@ class BrancaloniaCovoV2 {
         return benefits;
       }
 
-      logger.debug?.(this.MODULE_NAME, `Nessun beneficio riposo per ${actor.name} dal Covo ${covo.name}`);
+      moduleLogger.debug?.(`Nessun beneficio riposo per ${actor.name} dal Covo ${covo.name}`);
       return null;
 
     } catch (error) {
@@ -2004,7 +2006,7 @@ class BrancaloniaCovoV2 {
         message: error.message,
         timestamp: Date.now()
       });
-      logger.error(this.MODULE_NAME, 'Errore applicazione benefici riposo', error);
+      moduleLogger.error('Errore applicazione benefici riposo', error);
       return null;
     }
   }
@@ -2040,8 +2042,8 @@ Hooks.once('ready', () => {
     }
 
     if (game.settings.get(BrancaloniaCovoV2.ID, 'covoSystemEnabled')) {
-      logger.info(BrancaloniaCovoV2.MODULE_NAME, '✅ Sistema Covo V2 pronto');
-      logger.info(BrancaloniaCovoV2.MODULE_NAME, '🔄 Sistema migrazione covo pronto. Usa game.brancalonia.migration.migrateAll() per iniziare.');
+      moduleLogger.info('✅ Sistema Covo V2 pronto');
+      moduleLogger.info('🔄 Sistema migrazione covo pronto. Usa game.brancalonia.migration.migrateAll() per iniziare.');
 
       // Controlla se ci sono covi vecchi da migrare
       const oldCovos = game.actors.filter(a =>
@@ -2054,7 +2056,7 @@ Hooks.once('ready', () => {
           title: 'Migrazione Sistema Covo',
           content: `<p>Trovati ${oldCovos.length} covi dal vecchio sistema. Vuoi migrarli al nuovo sistema?</p>`,
           yes: () => BrancaloniaCovoV2.Migration.migrateAll(),
-          no: () => logger.info(BrancaloniaCovoV2.MODULE_NAME, 'Migrazione covi annullata')  
+          no: () => moduleLogger.info('Migrazione covi annullata')  
         });
       }
     }

@@ -14,12 +14,15 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 import './tavern-brawl-macros.js';
+
+const MODULE_LABEL = 'Tavern Brawl System';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class TavernBrawlSystem {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Tavern Brawl System';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'brancalonia-bigat';
 
   // Statistics tracking (enterprise-grade)
@@ -475,8 +478,8 @@ class TavernBrawlSystem {
 
   static initialize() {
     try {
-      logger.startPerformance('tavern-brawl-init');
-      logger.info(this.MODULE_NAME, '⚔️ Inizializzazione Sistema Risse...');
+      moduleLogger.startPerformance('tavern-brawl-init');
+      moduleLogger.info('⚔️ Inizializzazione Sistema Risse...');
 
     // Registrazione settings
     game.settings.register('brancalonia-bigat', 'brawlSystemEnabled', {
@@ -546,11 +549,11 @@ class TavernBrawlSystem {
 
     this._state.initialized = true;
     this._state.settingsRegistered = true;
-    const perfTime = logger.endPerformance('tavern-brawl-init');
-    logger.info(this.MODULE_NAME, `✅ Sistema Risse inizializzato con successo (${perfTime?.toFixed(2)}ms)`);
+    const perfTime = moduleLogger.endPerformance('tavern-brawl-init');
+    moduleLogger.info(`✅ Sistema Risse inizializzato con successo (${perfTime?.toFixed(2)}ms)`);
     
     // Event emitter
-    logger.events.emit('tavern-brawl:initialized', {
+    moduleLogger.events.emit('tavern-brawl:initialized', {
       version: this.VERSION,
       timestamp: Date.now()
     });
@@ -560,7 +563,7 @@ class TavernBrawlSystem {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione Sistema Risse', error);
+      moduleLogger.error('Errore inizializzazione Sistema Risse', error);
       if (ui?.notifications) {
         ui.notifications.error(`Errore inizializzazione Sistema Risse: ${error.message}`);
       }
@@ -638,13 +641,13 @@ class TavernBrawlSystem {
     }
 
     this._state.hooksRegistered = true;
-    logger.info(this.MODULE_NAME, '✅ Hooks Sistema Risse registrati');
+    moduleLogger.info('✅ Hooks Sistema Risse registrati');
   }
 
   static _registerChatCommands() {
     const registerCommands = () => {
       if (!game.chatCommands) {
-        logger.warn(this.MODULE_NAME, 'chatCommands non disponibile, uso fallback chatMessage');
+        moduleLogger.warn('chatCommands non disponibile, uso fallback chatMessage');
         TavernBrawlSystem._registerChatFallback();
         return;
       }
@@ -777,7 +780,7 @@ class TavernBrawlSystem {
         });
       }
 
-      logger.info(TavernBrawlSystem.MODULE_NAME, '✅ Comandi chat Sistema Risse registrati');
+      moduleLogger.info('✅ Comandi chat Sistema Risse registrati');
     };
 
     if (game.chatCommands) {
@@ -986,9 +989,9 @@ if (!game.user.isGM) {
       Macro.create(macroData).then(() => {
         TavernBrawlSystem.statistics.errors.length = 0; // Reset su successo
         TavernBrawlSystem._state.macrosCreated = true;
-        logger.info(TavernBrawlSystem.MODULE_NAME, '✅ Macro Gestione Risse creata');
+        moduleLogger.info('✅ Macro Gestione Risse creata');
       }).catch((error) => {
-        logger.debug?.(TavernBrawlSystem.MODULE_NAME, 'Macro Gestione Risse già esistente');
+        moduleLogger.debug?.('Macro Gestione Risse già esistente');
       });
     }
 
@@ -1063,13 +1066,13 @@ if (tokens.length !== 1) {
   async startBrawl() {
     try {
       if (this.activeBrawl) {
-        logger.warn(TavernBrawlSystem.MODULE_NAME, 'Tentativo di iniziare rissa ma già attiva');
+        moduleLogger.warn('Tentativo di iniziare rissa ma già attiva');
         ui.notifications.warn("C'è già una rissa in corso!");
         return;
       }
 
       TavernBrawlSystem.statistics.brawlsStarted++;
-      logger.info(TavernBrawlSystem.MODULE_NAME, '⚔️ Inizio rissa...');
+      moduleLogger.info('⚔️ Inizio rissa...');
 
     // Chiama hook per background-privileges (Attaccabrighe)
     const participants = canvas.tokens.controlled.map(t => t.actor).filter(a => a);
@@ -1153,14 +1156,14 @@ if (tokens.length !== 1) {
     // Inizia il combattimento
     await combat.startCombat();
       
-      logger.info(TavernBrawlSystem.MODULE_NAME, `✅ Rissa iniziata con ${tokens.length} partecipanti`);
+      moduleLogger.info(`✅ Rissa iniziata con ${tokens.length} partecipanti`);
     } catch (error) {
       TavernBrawlSystem.statistics.errors.push({ 
         type: 'startBrawl', 
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(TavernBrawlSystem.MODULE_NAME, 'Errore iniziando rissa', error);
+      moduleLogger.error('Errore iniziando rissa', error);
       ui.notifications.error('Errore durante inizio rissa');
     }
   }
@@ -1206,7 +1209,7 @@ if (tokens.length !== 1) {
    */
   async executeSaccagnata(actor, target) {
     TavernBrawlSystem.statistics.saccagnateExecuted++;
-    logger.debug?.(TavernBrawlSystem.MODULE_NAME, `Saccagnata: ${actor.name} -> ${target.actor.name}`);
+    moduleLogger.debug?.(`Saccagnata: ${actor.name} -> ${target.actor.name}`);
     
     const attackRoll = await new Roll(
       `1d20 + @str + @prof`,
@@ -1250,13 +1253,13 @@ if (tokens.length !== 1) {
 
     // Verifica slot mossa
     if (participantData.slotMossaUsati >= participantData.slotMossaMax) {
-      logger.warn(TavernBrawlSystem.MODULE_NAME, `${actor.name} non ha slot mossa disponibili`);
+      moduleLogger.warn(`${actor.name} non ha slot mossa disponibili`);
       ui.notifications.warn('Non hai più slot mossa disponibili!');
       return;
     }
 
     TavernBrawlSystem.statistics.mosseExecuted++;
-    logger.debug?.(TavernBrawlSystem.MODULE_NAME, `Mossa "${mossaKey}" eseguita da ${actor.name}`);
+    moduleLogger.debug?.(`Mossa "${mossaKey}" eseguita da ${actor.name}`);
 
     // Consuma slot mossa (alcune mosse sono reazioni e non consumano)
     const isReazione = [
@@ -2544,7 +2547,7 @@ if (tokens.length !== 1) {
     if (!participantData) return;
 
     TavernBrawlSystem.statistics.batosteTotali += amount;
-    logger.debug?.(TavernBrawlSystem.MODULE_NAME, `${actor.name} subisce ${amount} batosta/e (totale: ${participantData.batoste + amount})`);
+    moduleLogger.debug?.(`${actor.name} subisce ${amount} batosta/e (totale: ${participantData.batoste + amount})`);
 
     participantData.batoste = Math.min(6, participantData.batoste + amount);
 
@@ -2583,7 +2586,7 @@ if (tokens.length !== 1) {
     // Se raggiunge 6 batoste, è KO
     if (participantData.batoste >= 6) {
       TavernBrawlSystem.statistics.koCount++;
-      logger.info(TavernBrawlSystem.MODULE_NAME, `💀 ${actor.name} è KO! (6 batoste)`);
+      moduleLogger.info(`💀 ${actor.name} è KO! (6 batoste)`);
       
       await ChatMessage.create({
         content: `<h3 style="color: red;">${actor.name} è INCOSCIENTE!</h3>`,
@@ -2611,7 +2614,7 @@ if (tokens.length !== 1) {
     if (!participantData) return;
 
     TavernBrawlSystem.statistics.propsUsed++;
-    logger.debug?.(TavernBrawlSystem.MODULE_NAME, `${actor.name} raccoglie oggetto ${tipo}`);
+    moduleLogger.debug?.(`${actor.name} raccoglie oggetto ${tipo}`);
 
     const oggettiComuni = [
       'Bottiglia', 'Brocca', 'Posate', 'Zappa', 'Candelabro',
@@ -2726,7 +2729,7 @@ if (tokens.length !== 1) {
     const normalized = this.classiMapping[rawClass];
     
     if (!normalized) {
-      logger.warn(TavernBrawlSystem.MODULE_NAME, `Classe non riconosciuta: "${rawClass}". Supportate: ${Object.keys(this.classiMapping).join(', ')}`);
+      moduleLogger.warn(`Classe non riconosciuta: "${rawClass}". Supportate: ${Object.keys(this.classiMapping).join(', ')}`);
       return rawClass; // Fallback al nome originale
     }
     
@@ -2829,7 +2832,7 @@ if (tokens.length !== 1) {
 
     TavernBrawlSystem.statistics.pericoliVagantiTriggered++;
     const pericolo = pericoli[Math.floor(Math.random() * pericoli.length)];
-    logger.info(TavernBrawlSystem.MODULE_NAME, `💥 Pericolo Vagante: ${pericolo.name}`);
+    moduleLogger.info(`💥 Pericolo Vagante: ${pericolo.name}`);
 
     await ChatMessage.create({
       content: `
@@ -2851,7 +2854,7 @@ if (tokens.length !== 1) {
   async triggerEventoAtmosfera() {
     TavernBrawlSystem.statistics.eventiAtmosferaTriggered++;
     const evento = this.eventiAtmosfera[Math.floor(Math.random() * this.eventiAtmosfera.length)];
-    logger.debug?.(TavernBrawlSystem.MODULE_NAME, `🍺 Evento Atmosfera: ${evento}`);
+    moduleLogger.debug?.(`🍺 Evento Atmosfera: ${evento}`);
     
     await ChatMessage.create({
       content: `
@@ -2872,7 +2875,7 @@ if (tokens.length !== 1) {
     if (!this.activeBrawl) return;
 
     TavernBrawlSystem.statistics.brawlsEnded++;
-    logger.info(TavernBrawlSystem.MODULE_NAME, '🏁 Fine rissa');
+    moduleLogger.info('🏁 Fine rissa');
 
     // Determina vincitori e vinti
     const conscious = [];
@@ -2995,7 +2998,7 @@ if (tokens.length !== 1) {
       koCount: 0,
       errors: []
     };
-    logger.info(this.MODULE_NAME, '📊 Statistiche resettate');
+    moduleLogger.info('📊 Statistiche resettate');
   }
 
   /**
@@ -3050,7 +3053,7 @@ Hooks.once('ready', () => {
 
     TavernBrawlSystem.initialize();
   } catch (error) {
-    logger.error(TavernBrawlSystem.MODULE_NAME, 'Errore durante inizializzazione', error);
+    moduleLogger.error('Errore durante inizializzazione', error);
     TavernBrawlSystem.statistics.errors.push({ 
       type: 'ready-hook', 
       message: error.message, 

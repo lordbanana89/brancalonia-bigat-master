@@ -10,11 +10,14 @@
  * - API estesa per diagnostica
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
+
+const MODULE_LABEL = 'RischiMestiere';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 
 class BrancaloniaRischiMestiere {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'RischiMestiere';
+  static MODULE_NAME = MODULE_LABEL;
 
   static statistics = {
     totalRolls: 0,
@@ -34,8 +37,8 @@ class BrancaloniaRischiMestiere {
 
   static initialize() {
     try {
-      logger.startPerformance('rischi-init');
-      logger.info(this.MODULE_NAME, 'Inizializzazione Sistema Rischi del Mestiere...');
+      moduleLogger.startPerformance('rischi-init');
+      moduleLogger.info('Inizializzazione Sistema Rischi del Mestiere...');
 
       // Registra le impostazioni
       this._registerSettings();
@@ -53,24 +56,24 @@ class BrancaloniaRischiMestiere {
       game.brancalonia = game.brancalonia || {};
       game.brancalonia.rischiMestiere = this;
 
-      const initTime = logger.endPerformance('rischi-init');
+      const initTime = moduleLogger.endPerformance('rischi-init');
       this.statistics.initTime = initTime;
 
-      logger.info(this.MODULE_NAME, `Sistema inizializzato con successo in ${initTime?.toFixed(2)}ms`);
+      moduleLogger.info(`Sistema inizializzato con successo in ${initTime?.toFixed(2)}ms`);
 
       if (ui?.notifications) {
         ui.notifications.info("Sistema Rischi del Mestiere caricato con successo!");
       }
 
       // Emit event
-      logger.events.emit('rischi:initialized', {
+      moduleLogger.events.emit('rischi:initialized', {
         version: this.VERSION,
         initTime,
         timestamp: Date.now()
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       this.statistics.errors.push({
         type: 'initialization',
         message: error.message,
@@ -133,7 +136,7 @@ class BrancaloniaRischiMestiere {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nella registrazione impostazioni', error);
+      moduleLogger.error('Errore nella registrazione impostazioni', error);
       this.statistics.errors.push({
         type: 'settings',
         message: error.message,
@@ -301,11 +304,11 @@ class BrancaloniaRischiMestiere {
     };
 
       if (game.settings.get('brancalonia-bigat', 'debugRischiMestiere')) {
-        logger.debug(this.MODULE_NAME, 'Tabella Rischi del Mestiere configurata', CONFIG.BRANCALONIA.rischiMestiere);
+        moduleLogger.debug('Tabella Rischi del Mestiere configurata', CONFIG.BRANCALONIA.rischiMestiere);
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel setup dei rischi', error);
+      moduleLogger.error('Errore nel setup dei rischi', error);
       this.statistics.errors.push({
         type: 'setup',
         message: error.message,
@@ -347,7 +350,7 @@ class BrancaloniaRischiMestiere {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nella registrazione comandi chat', error);
+      moduleLogger.error('Errore nella registrazione comandi chat', error);
       this.statistics.errors.push({
         type: 'chat-commands',
         message: error.message,
@@ -360,7 +363,7 @@ class BrancaloniaRischiMestiere {
     try {
       // Verifica che game.macros sia disponibile
       if (!game.macros) {
-        logger.warn(this.MODULE_NAME, 'game.macros non ancora disponibile, macro creation skipped');
+        moduleLogger.warn('game.macros non ancora disponibile, macro creation skipped');
         return;
       }
 
@@ -419,16 +422,16 @@ class BrancaloniaRischiMestiere {
           if (!existingMacro) {
             await game.macros.documentClass.create(macroData);
             if (game.settings.get('brancalonia-bigat', 'debugRischiMestiere')) {
-              logger.debug(this.MODULE_NAME, `Macro '${macroData.name}' creata automaticamente`);
+              moduleLogger.debug(`Macro '${macroData.name}' creata automaticamente`);
             }
           }
         } catch (error) {
-          logger.error(this.MODULE_NAME, `Errore creazione macro ${macroData.name}`, error);
+          moduleLogger.error(`Errore creazione macro ${macroData.name}`, error);
         }
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nella creazione macro rischi', error);
+      moduleLogger.error('Errore nella creazione macro rischi', error);
       this.statistics.errors.push({
         type: 'macros',
         message: error.message,
@@ -442,14 +445,14 @@ class BrancaloniaRischiMestiere {
    */
   static async tiraRischiMestiere(cricca, modificatore = 0) {
     try {
-      logger.startPerformance('rischi-roll');
+      moduleLogger.startPerformance('rischi-roll');
       
       if (!game.settings.get('brancalonia-bigat', 'enableRischiMestiere')) {
         ui.notifications.warn("Sistema Rischi del Mestiere disabilitato!");
         return null;
       }
       
-      logger.debug(this.MODULE_NAME, `Tiro Rischi per ${cricca.length} membri`, { modificatore });
+      moduleLogger.debug(`Tiro Rischi per ${cricca.length} membri`, { modificatore });
       
       // Calcola il modificatore totale
       let modTotale = modificatore;
@@ -496,12 +499,12 @@ class BrancaloniaRischiMestiere {
       this.statistics.avgRollValue = ((this.statistics.avgRollValue * (this.statistics.totalRolls - 1)) + risultato) / this.statistics.totalRolls;
       this.statistics.highestNomea = Math.max(this.statistics.highestNomea, nomeaMax);
 
-      const rollTime = logger.endPerformance('rischi-roll');
+      const rollTime = moduleLogger.endPerformance('rischi-roll');
 
-      logger.info(this.MODULE_NAME, `Tiro completato: ${risultato} (${evento?.tipo || 'neutro'}) in ${rollTime?.toFixed(2)}ms`);
+      moduleLogger.info(`Tiro completato: ${risultato} (${evento?.tipo || 'neutro'}) in ${rollTime?.toFixed(2)}ms`);
 
       if (game.settings.get('brancalonia-bigat', 'debugRischiMestiere')) {
-        logger.debug(this.MODULE_NAME, 'Risultato Rischi del Mestiere', {
+        moduleLogger.debug('Risultato Rischi del Mestiere', {
           risultato,
           evento: evento?.tipo,
           modificatore: modTotale,
@@ -512,7 +515,7 @@ class BrancaloniaRischiMestiere {
       }
 
       // Emit event
-      logger.events.emit('rischi:rolled', {
+      moduleLogger.events.emit('rischi:rolled', {
         risultato,
         evento: evento?.tipo,
         modificatore: modTotale,
@@ -533,7 +536,7 @@ class BrancaloniaRischiMestiere {
       };
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel tiro Rischi del Mestiere', error);
+      moduleLogger.error('Errore nel tiro Rischi del Mestiere', error);
       this.statistics.errors.push({
         type: 'roll',
         message: error.message,
@@ -549,8 +552,8 @@ class BrancaloniaRischiMestiere {
    */
   static async gestisciEvento(evento, cricca) {
     try {
-      logger.startPerformance('rischi-event-handling');
-      logger.info(this.MODULE_NAME, `Gestione evento: ${evento.tipo}`);
+      moduleLogger.startPerformance('rischi-event-handling');
+      moduleLogger.info(`Gestione evento: ${evento.tipo}`);
 
     let contenutoChat = `<div class="brancalonia-rischi">
       <h3>⚠️ Rischi del Mestiere</h3>
@@ -609,10 +612,10 @@ class BrancaloniaRischiMestiere {
           await membro.actor.setFlag("brancalonia-bigat", "taglia", tagliaAttuale + evento.tagliaExtra);
           this.statistics.totalTaglieApplicate += evento.tagliaExtra;
         }
-        logger.info(this.MODULE_NAME, `Editto applicato: +${evento.tagliaExtra}g su ${cricca.length} membri`);
+        moduleLogger.info(`Editto applicato: +${evento.tagliaExtra}g su ${cricca.length} membri`);
         
         // Emit event
-        logger.events.emit('rischi:taglia-increased', {
+        moduleLogger.events.emit('rischi:taglia-increased', {
           incremento: evento.tagliaExtra,
           membri: cricca.length,
           timestamp: Date.now()
@@ -664,11 +667,11 @@ class BrancaloniaRischiMestiere {
         timestamp: Date.now()
       });
 
-      const eventTime = logger.endPerformance('rischi-event-handling');
-      logger.info(this.MODULE_NAME, `Evento gestito in ${eventTime?.toFixed(2)}ms`);
+      const eventTime = moduleLogger.endPerformance('rischi-event-handling');
+      moduleLogger.info(`Evento gestito in ${eventTime?.toFixed(2)}ms`);
 
       // Emit event
-      logger.events.emit('rischi:event-triggered', {
+      moduleLogger.events.emit('rischi:event-triggered', {
         tipo: evento.tipo,
         evento: evento.evento,
         eventTime,
@@ -676,7 +679,7 @@ class BrancaloniaRischiMestiere {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nella gestione evento rischi', error);
+      moduleLogger.error('Errore nella gestione evento rischi', error);
       this.statistics.errors.push({
         type: 'event-handling',
         message: error.message,
@@ -708,7 +711,7 @@ class BrancaloniaRischiMestiere {
           this._showRischiHelp();
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel comando rischi', error);
+      moduleLogger.error('Errore nel comando rischi', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
@@ -724,7 +727,7 @@ class BrancaloniaRischiMestiere {
         this.mostraDialogoImbosco();
       }
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel comando imbosco', error);
+      moduleLogger.error('Errore nel comando imbosco', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
@@ -824,7 +827,7 @@ class BrancaloniaRischiMestiere {
       }
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel tiro veloce rischi', error);
+      moduleLogger.error('Errore nel tiro veloce rischi', error);
       ui.notifications.error("Errore nel tiro veloce!");
     }
   }
@@ -851,10 +854,10 @@ class BrancaloniaRischiMestiere {
       this.statistics.totalImbosco++;
       this.statistics.totalImboscoWeeks += settimane;
 
-      logger.info(this.MODULE_NAME, `Imbosco aggiornato: ${nuovoImbosco} settimane (modificatore: -${nuovoImbosco * 3})`);
+      moduleLogger.info(`Imbosco aggiornato: ${nuovoImbosco} settimane (modificatore: -${nuovoImbosco * 3})`);
 
       // Emit event
-      logger.events.emit('rischi:imbosco-applied', {
+      moduleLogger.events.emit('rischi:imbosco-applied', {
         settimane,
         totale: nuovoImbosco,
         modificatore: -(nuovoImbosco * 3),
@@ -862,7 +865,7 @@ class BrancaloniaRischiMestiere {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nell\'applicazione imbosco', error);
+      moduleLogger.error('Errore nell\'applicazione imbosco', error);
       this.statistics.errors.push({
         type: 'imbosco-apply',
         message: error.message,
@@ -879,15 +882,15 @@ class BrancaloniaRischiMestiere {
     try {
       await game.settings.set("brancalonia-bigat", "settimaneImbosco", 0);
       
-      logger.info(this.MODULE_NAME, 'Imbosco resettato');
+      moduleLogger.info('Imbosco resettato');
 
       // Emit event
-      logger.events.emit('rischi:imbosco-reset', {
+      moduleLogger.events.emit('rischi:imbosco-reset', {
         timestamp: Date.now()
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel reset imbosco', error);
+      moduleLogger.error('Errore nel reset imbosco', error);
       this.statistics.errors.push({
         type: 'imbosco-reset',
         message: error.message,
@@ -927,7 +930,7 @@ class BrancaloniaRischiMestiere {
       });
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nella registrazione hook', error);
+      moduleLogger.error('Errore nella registrazione hook', error);
       this.statistics.errors.push({
         type: 'hooks',
         message: error.message,
@@ -1026,7 +1029,7 @@ class BrancaloniaRischiMestiere {
     }).render(true);
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel dialogo rischi', error);
+      moduleLogger.error('Errore nel dialogo rischi', error);
       ui.notifications.error("Errore nell'apertura del dialogo!");
     }
   }
@@ -1076,7 +1079,7 @@ class BrancaloniaRischiMestiere {
       }).render(true);
 
     } catch (error) {
-      logger.error(this.MODULE_NAME, 'Errore nel dialogo imbosco', error);
+      moduleLogger.error('Errore nel dialogo imbosco', error);
       ui.notifications.error("Errore nell'apertura del dialogo!");
     }
   }
@@ -1125,7 +1128,7 @@ class BrancaloniaRischiMestiere {
    * Reset statistiche
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche');
+    moduleLogger.info('Reset statistiche');
     
     this.statistics = {
       totalRolls: 0,

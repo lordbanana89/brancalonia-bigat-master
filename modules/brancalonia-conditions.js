@@ -6,15 +6,16 @@
  * NOTA: Batoste sono gestite da TavernBrawlSystem (tavern-brawl.js)
  */
 
-import logger from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
 const MODULE_ID = 'brancalonia-bigat';
 const MODULE_NAME = 'Conditions';
+const moduleLogger = createModuleLogger(MODULE_NAME);
 
 class BrancaloniaConditions {
   static initialize() {
     try {
-      logger.info(MODULE_NAME, 'Inizializzazione Sistema Condizioni Custom');
+      moduleLogger.info('Inizializzazione Sistema Condizioni Custom');
 
       // Registra le impostazioni
       this._registerSettings();
@@ -32,10 +33,10 @@ class BrancaloniaConditions {
       game.brancalonia = game.brancalonia || {};
       game.brancalonia.conditions = this;
 
-      logger.info(MODULE_NAME, 'Sistema Condizioni Custom caricato con successo');
+      moduleLogger.info('Sistema Condizioni Custom caricato con successo');
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore inizializzazione Sistema Condizioni', error);
+      moduleLogger.error('Errore inizializzazione Sistema Condizioni', error);
       if (ui?.notifications) {
         ui.notifications.error(`Errore nel caricamento del sistema condizioni: ${error?.message || 'Errore sconosciuto'}`);
       }
@@ -92,7 +93,7 @@ class BrancaloniaConditions {
       });
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore registrazione impostazioni', error);
+      moduleLogger.error('Errore registrazione impostazioni', error);
     }
   }
 
@@ -120,11 +121,11 @@ class BrancaloniaConditions {
       };
 
       if (game.settings.get(MODULE_ID, 'debugConditions')) {
-        logger.debug(MODULE_NAME, 'Condizioni custom configurate', this.customConditions);
+        moduleLogger.debug('Condizioni custom configurate', this.customConditions);
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore setup condizioni custom', error);
+      moduleLogger.error('Errore setup condizioni custom', error);
     }
   }
 
@@ -167,7 +168,7 @@ class BrancaloniaConditions {
       });
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore registrazione comandi chat', error);
+      moduleLogger.error('Errore registrazione comandi chat', error);
     }
   }
 
@@ -175,7 +176,7 @@ class BrancaloniaConditions {
     try {
       // Verifica che game.macros sia disponibile
       if (!game.macros) {
-        logger.warn(MODULE_NAME, 'game.macros non ancora disponibile, macro creation skipped');
+        moduleLogger.warn('game.macros non ancora disponibile, macro creation skipped');
         return;
       }
 
@@ -239,7 +240,7 @@ game.brancalonia.conditions.removeCustomConditions(actor);
           const existingMacro = game?.macros?.find(m => m.name === macroData.name);
           if (existingMacro) {
             if (game.settings.get(MODULE_ID, 'debugConditions')) {
-              logger.info(MODULE_NAME, `Macro '${macroData.name}' già presente, nessuna creazione necessaria`);
+              moduleLogger.info(`Macro '${macroData.name}' già presente, nessuna creazione necessaria`);
             }
             continue;
           }
@@ -247,15 +248,15 @@ game.brancalonia.conditions.removeCustomConditions(actor);
           await Macro.create(macroData);
 
           if (game.settings.get(MODULE_ID, 'debugConditions')) {
-            logger.debug(MODULE_NAME, `Macro '${macroData.name}' creata automaticamente`);
+            moduleLogger.debug(`Macro '${macroData.name}' creata automaticamente`);
           }
         } catch (error) {
-          logger.error(MODULE_NAME, `Errore creazione macro ${macroData.name}`, error);
+          moduleLogger.error(`Errore creazione macro ${macroData.name}`, error);
         }
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore creazione macro condizioni', error);
+      moduleLogger.error('Errore creazione macro condizioni', error);
     }
   }
 
@@ -286,7 +287,7 @@ game.brancalonia.conditions.removeCustomConditions(actor);
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore registrazione hook', error);
+      moduleLogger.error('Errore registrazione hook', error);
     }
   }
 
@@ -320,7 +321,7 @@ game.brancalonia.conditions.removeCustomConditions(actor);
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore gestione creazione effetto', error);
+      moduleLogger.error('Errore gestione creazione effetto', error);
     }
   }
 
@@ -349,7 +350,7 @@ game.brancalonia.conditions.removeCustomConditions(actor);
       }
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore gestione rimozione effetto', error);
+      moduleLogger.error('Errore gestione rimozione effetto', error);
     }
   }
 
@@ -380,7 +381,7 @@ game.brancalonia.conditions.removeCustomConditions(actor);
           this._showConditionsHelp();
       }
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore comando condizione', error);
+      moduleLogger.error('Errore comando condizione', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
@@ -403,7 +404,7 @@ game.brancalonia.conditions.removeCustomConditions(actor);
 
       this.createCustomCondition(actor, 'ubriaco');
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore comando ubriaco', error);
+      moduleLogger.error('Errore comando ubriaco', error);
       ui.notifications.error("Errore nell'esecuzione del comando!");
     }
   }
@@ -499,7 +500,7 @@ game.brancalonia.conditions.removeCustomConditions(actor);
     }
     
     if (conditionType === 'menagramo' || conditionType === 'sfortuna') {
-      logger.warn(MODULE_NAME, 'Menagramo e Sfortuna sono gestiti da MenagramoSystem! Usa la macro "🖤 Applica Menagramo"');
+      moduleLogger.warn('Menagramo e Sfortuna sono gestiti da MenagramoSystem! Usa la macro "🖤 Applica Menagramo"');
       return;
     }
     
@@ -555,7 +556,7 @@ game.brancalonia.conditions.removeCustomConditions(actor);
       });
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore enhancement scheda personaggio', error);
+      moduleLogger.error('Errore enhancement scheda personaggio', error);
     }
   }
 
@@ -599,7 +600,7 @@ game.brancalonia.conditions.removeCustomConditions(actor);
       }).render(true);
 
     } catch (error) {
-      logger.error(MODULE_NAME, 'Errore creazione dialogo condizione', error);
+      moduleLogger.error('Errore creazione dialogo condizione', error);
     }
   }
 }

@@ -9,8 +9,10 @@
  * @requires brancalonia-logger.js
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Covo Macros';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * Covo Macros - Sistema Macro Predefinite
  * 
@@ -29,7 +31,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class CovoMacros {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Covo Macros';
+  static MODULE_NAME = MODULE_LABEL;
 
   /**
    * Registra tutte le macro del sistema
@@ -38,7 +40,7 @@ class CovoMacros {
    * @returns {Promise<void>}
    */
   static async registerAll() {
-    logger.info(this.MODULE_NAME, `Registrazione macro sistema Covo v${this.VERSION}...`);
+    moduleLogger.info(`Registrazione macro sistema Covo v${this.VERSION}...`);
 
     const macros = [
       {
@@ -119,10 +121,10 @@ class CovoMacros {
 
       if (macro) {
         await macro.update(macroData);
-        logger.debug(this.MODULE_NAME, `Macro aggiornata: ${macroData.name}`);
+        moduleLogger.debug(`Macro aggiornata: ${macroData.name}`);
       } else {
         macro = await game.macros.documentClass.create(macroData);
-        logger.debug(this.MODULE_NAME, `Macro creata: ${macroData.name}`);
+        moduleLogger.debug(`Macro creata: ${macroData.name}`);
       }
     }
 
@@ -842,7 +844,7 @@ class CovoMacros {
         try {
           item = JSON.parse(event.currentTarget.dataset.item);
         } catch (error) {
-          logger.error('CovoMacros', 'Errore parsing item data', error);
+          moduleLogger.error('CovoMacros', 'Errore parsing item data', error);
           ui.notifications.error('Dati item corrotti!');
           return;
         }
@@ -1027,10 +1029,10 @@ Hooks.once('ready', async () => {
         await CovoMacros.registerAll();
       }
     } else if (!settingExists) {
-      logger.warn(CovoMacros.MODULE_NAME, 'Covo system not initialized, skipping macro creation prompt');
+      moduleLogger.warn('Covo system not initialized, skipping macro creation prompt');
     }
   } catch (e) {
-    logger.error(CovoMacros.MODULE_NAME, 'Error in covo macros ready hook', e);
+    moduleLogger.error('Error in covo macros ready hook', e);
   }
 
   // Registra globalmente per uso manuale

@@ -23,8 +23,10 @@
  * @requires dnd5e
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'DiseasesSystem';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} DiseaseStatistics
  * @property {number} initTime - Tempo inizializzazione (ms)
@@ -51,7 +53,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class DiseasesSystem {
   static VERSION = '3.0.0';
-  static MODULE_NAME = 'DiseasesSystem';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'diseases-system';
 
   /**
@@ -104,7 +106,7 @@ class DiseasesSystem {
       };
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`Constructor: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore inizializzazione constructor', error);
+      moduleLogger.error('Errore inizializzazione constructor', error);
     }
 
     // Database completo delle malattie di Brancalonia
@@ -348,7 +350,7 @@ class DiseasesSystem {
     const startTime = performance.now();
 
     try {
-      logger.info(this.MODULE_NAME, `Inizializzazione Diseases System v${this.VERSION}`);
+      moduleLogger.info(`Inizializzazione Diseases System v${this.VERSION}`);
 
       // Creazione istanza
       this._state.instance = new DiseasesSystem();
@@ -418,7 +420,7 @@ class DiseasesSystem {
       this._state.initialized = true;
       this._statistics.initTime = performance.now() - startTime;
 
-      logger.info(
+      moduleLogger.info(
         this.MODULE_NAME,
         `✅ Inizializzazione completata in ${this._statistics.initTime.toFixed(2)}ms`
       );
@@ -431,7 +433,7 @@ class DiseasesSystem {
       });
     } catch (error) {
       this._statistics.errors.push(error.message);
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -456,7 +458,7 @@ class DiseasesSystem {
           }
         } catch (error) {
           this._statistics.errors.push(`updateActor hook: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore in updateActor hook', error);
+          moduleLogger.error('Errore in updateActor hook', error);
         }
       });
 
@@ -472,7 +474,7 @@ class DiseasesSystem {
           }
         } catch (error) {
           this._statistics.errors.push(`restCompleted hook: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore in restCompleted hook', error);
+          moduleLogger.error('Errore in restCompleted hook', error);
         }
       });
 
@@ -490,7 +492,7 @@ class DiseasesSystem {
           }
         } catch (error) {
           this._statistics.errors.push(`applyDamage hook: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore in applyDamage hook', error);
+          moduleLogger.error('Errore in applyDamage hook', error);
         }
       });
 
@@ -520,7 +522,7 @@ class DiseasesSystem {
               }
             } catch (error) {
               this._statistics.errors.push(`renderActorSheet: ${error.message}`);
-              logger.error(this.MODULE_NAME, 'Errore rendering diseases UI', error);
+              moduleLogger.error('Errore rendering diseases UI', error);
             }
           },
           {
@@ -551,15 +553,15 @@ class DiseasesSystem {
             }
           } catch (error) {
             this._statistics.errors.push(`renderActorSheet hook: ${error.message}`);
-            logger.error(this.MODULE_NAME, 'Errore in renderActorSheet hook', error);
+            moduleLogger.error('Errore in renderActorSheet hook', error);
           }
         });
       }
 
-      logger.debug?.(this.MODULE_NAME, '4 hooks registrati');
+      moduleLogger.debug?.('4 hooks registrati');
     } catch (error) {
       this._statistics.errors.push(`Hook registration: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore registrazione hooks', error);
+      moduleLogger.error('Errore registrazione hooks', error);
       throw error;
     }
   }
@@ -608,7 +610,7 @@ class DiseasesSystem {
               return false;
             } catch (error) {
               this._statistics.errors.push(`Chat command infetta: ${error.message}`);
-              logger.error(this.MODULE_NAME, 'Errore comando infetta', error);
+              moduleLogger.error('Errore comando infetta', error);
               ui.notifications.error('Errore nell\'infettare il personaggio!');
               return false;
             }
@@ -641,7 +643,7 @@ class DiseasesSystem {
               return false;
             } catch (error) {
               this._statistics.errors.push(`Chat command cura: ${error.message}`);
-              logger.error(this.MODULE_NAME, 'Errore comando cura', error);
+              moduleLogger.error('Errore comando cura', error);
               ui.notifications.error('Errore nella cura della malattia!');
               return false;
             }
@@ -665,7 +667,7 @@ class DiseasesSystem {
               return false;
             } catch (error) {
               this._statistics.errors.push(`Chat command gestisci: ${error.message}`);
-              logger.error(this.MODULE_NAME, 'Errore comando gestisci', error);
+              moduleLogger.error('Errore comando gestisci', error);
               ui.notifications.error('Errore nella gestione delle malattie!');
               return false;
             }
@@ -690,7 +692,7 @@ class DiseasesSystem {
               return false;
             } catch (error) {
               this._statistics.errors.push(`Chat command epidemia: ${error.message}`);
-              logger.error(this.MODULE_NAME, 'Errore comando epidemia', error);
+              moduleLogger.error('Errore comando epidemia', error);
               ui.notifications.error('Errore nella generazione dell\'epidemia!');
               return false;
             }
@@ -720,7 +722,7 @@ class DiseasesSystem {
               return false;
             } catch (error) {
               this._statistics.errors.push(`Chat command lista: ${error.message}`);
-              logger.error(this.MODULE_NAME, 'Errore comando lista', error);
+              moduleLogger.error('Errore comando lista', error);
               ui.notifications.error('Errore nella visualizzazione delle malattie!');
               return false;
             }
@@ -755,7 +757,7 @@ class DiseasesSystem {
               return false;
             } catch (error) {
               this._statistics.errors.push(`Chat command help: ${error.message}`);
-              logger.error(this.MODULE_NAME, 'Errore comando help', error);
+              moduleLogger.error('Errore comando help', error);
               ui.notifications.error('Errore nella visualizzazione dell\'aiuto!');
               return false;
             }
@@ -770,15 +772,15 @@ class DiseasesSystem {
           return true;
         } catch (error) {
           this._statistics.errors.push(`Chat message handler: ${error.message}`);
-          logger.error(this.MODULE_NAME, 'Errore handler messaggi chat', error);
+          moduleLogger.error('Errore handler messaggi chat', error);
           return true;
         }
       });
 
-      logger.debug?.(this.MODULE_NAME, '6 comandi chat registrati');
+      moduleLogger.debug?.('6 comandi chat registrati');
     } catch (error) {
       this._statistics.errors.push(`Chat commands registration: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore registrazione comandi chat', error);
+      moduleLogger.error('Errore registrazione comandi chat', error);
       throw error;
     }
   }
@@ -853,15 +855,15 @@ if (!game.user.isGM) {
       if (!existingMacro) {
         Macro.create(macroData).then(() => {
           this._statistics.macrosCreated++;
-          logger.info(this.MODULE_NAME, 'Macro Gestione Malattie creata');
+          moduleLogger.info('Macro Gestione Malattie creata');
         }).catch(error => {
           this._statistics.errors.push(`Macro creation: ${error.message}`);
-          logger.warn(this.MODULE_NAME, 'Errore creazione macro', error);
+          moduleLogger.warn('Errore creazione macro', error);
         });
       }
     } catch (error) {
       this._statistics.errors.push(`_createMacro: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore in _createMacro', error);
+      moduleLogger.error('Errore in _createMacro', error);
     }
   }
 
@@ -883,7 +885,7 @@ if (!game.user.isGM) {
       const disease = this.diseases[diseaseName];
       if (!disease) {
         ui.notifications.error(`Malattia ${diseaseName} non trovata!`);
-        logger.warn(DiseasesSystem.MODULE_NAME, `Malattia non valida: ${diseaseName}`);
+        moduleLogger.warn(`Malattia non valida: ${diseaseName}`);
         return;
       }
 
@@ -951,7 +953,7 @@ if (!game.user.isGM) {
       DiseasesSystem._statistics.activeInfections++;
 
       const infectionTime = performance.now() - startTime;
-      logger.info(
+      moduleLogger.info(
         DiseasesSystem.MODULE_NAME,
         `Infezione ${disease.name} applicata a ${actor.name} (${infectionTime.toFixed(2)}ms)`
       );
@@ -965,7 +967,7 @@ if (!game.user.isGM) {
       });
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`infectActor: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore infezione attore', error);
+      moduleLogger.error('Errore infezione attore', error);
       ui.notifications.error('Errore nell\'infettare il personaggio!');
     }
   }
@@ -987,7 +989,7 @@ if (!game.user.isGM) {
       const stageData = disease.symptoms[stageKey];
 
       if (!stageData) {
-        logger.warn(DiseasesSystem.MODULE_NAME, `Stadio ${stage} non trovato per ${diseaseName}`);
+        moduleLogger.warn(`Stadio ${stage} non trovato per ${diseaseName}`);
         return;
       }
 
@@ -1068,7 +1070,7 @@ if (!game.user.isGM) {
       DiseasesSystem._statistics.stageProgressions++;
 
       const applyTime = performance.now() - stageStart;
-      logger.debug?.(DiseasesSystem.MODULE_NAME, `Stadio ${stage} ${disease.name} applicato a ${actor.name} (${applyTime.toFixed(2)}ms)`);
+      moduleLogger.debug?.(`Stadio ${stage} ${disease.name} applicato a ${actor.name} (${applyTime.toFixed(2)}ms)`);
 
       // Emit event
       Hooks.callAll('diseases:stage-progressed', {
@@ -1079,7 +1081,7 @@ if (!game.user.isGM) {
       });
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`_applyDiseaseStage: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore applicazione stadio malattia', error);
+      moduleLogger.error('Errore applicazione stadio malattia', error);
       ui.notifications.error('Errore nella progressione della malattia!');
     }
   }
@@ -1118,10 +1120,10 @@ if (!game.user.isGM) {
     }
 
       await actor.setFlag('brancalonia-bigat', 'diseases', diseases);
-      logger.debug?.(DiseasesSystem.MODULE_NAME, `Progressione completata per ${actor.name}`);
+      moduleLogger.debug?.(`Progressione completata per ${actor.name}`);
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`_progressDiseases: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore progressione malattie', error);
+      moduleLogger.error('Errore progressione malattie', error);
     }
   }
 
@@ -1177,7 +1179,7 @@ if (!game.user.isGM) {
           speaker: ChatMessage.getSpeaker({ actor })
         });
 
-        logger.info(
+        moduleLogger.info(
           DiseasesSystem.MODULE_NAME,
           `Guarigione naturale: ${actor.name} da ${recovered.join(', ')}`
         );
@@ -1191,7 +1193,7 @@ if (!game.user.isGM) {
       }
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`_checkDiseaseRecovery: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore controllo guarigione', error);
+      moduleLogger.error('Errore controllo guarigione', error);
     }
   }
 
@@ -1212,7 +1214,7 @@ if (!game.user.isGM) {
 
       if (diseaseIndex === -1) {
         ui.notifications.info(`${actor.name} non ha ${diseaseName}`);
-        logger.warn(DiseasesSystem.MODULE_NAME, `Tentativo cura malattia non presente: ${diseaseName}`);
+        moduleLogger.warn(`Tentativo cura malattia non presente: ${diseaseName}`);
         return false;
       }
 
@@ -1221,7 +1223,7 @@ if (!game.user.isGM) {
 
       if (!cure) {
         ui.notifications.error(`Metodo di cura ${method} non disponibile`);
-        logger.warn(DiseasesSystem.MODULE_NAME, `Metodo cura non valido: ${method} per ${diseaseName}`);
+        moduleLogger.warn(`Metodo cura non valido: ${method} per ${diseaseName}`);
         return false;
       }
 
@@ -1261,7 +1263,7 @@ if (!game.user.isGM) {
       DiseasesSystem._statistics.activeInfections--;
 
       const cureTime = performance.now() - cureStart;
-      logger.info(
+      moduleLogger.info(
         DiseasesSystem.MODULE_NAME,
         `Malattia ${disease.name} curata da ${actor.name} (${method}) (${cureTime.toFixed(2)}ms)`
       );
@@ -1277,7 +1279,7 @@ if (!game.user.isGM) {
       return true;
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`cureDisease: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore cura malattia', error);
+      moduleLogger.error('Errore cura malattia', error);
       ui.notifications.error('Errore nella cura della malattia!');
       return false;
     }
@@ -1307,10 +1309,10 @@ if (!game.user.isGM) {
 
       await this.infectActor(actor, diseaseName);
 
-      logger.debug?.(DiseasesSystem.MODULE_NAME, `Esposizione malattia: ${diseaseName} per ${actor.name}`);
+      moduleLogger.debug?.(`Esposizione malattia: ${diseaseName} per ${actor.name}`);
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`_checkDiseaseExposure: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore controllo esposizione', error);
+      moduleLogger.error('Errore controllo esposizione', error);
     }
   }
 
@@ -1340,7 +1342,7 @@ if (!game.user.isGM) {
           // Aggiorna statistiche contagio
           DiseasesSystem._statistics.contagionsTriggered++;
 
-          logger.info(
+          moduleLogger.info(
             DiseasesSystem.MODULE_NAME,
             `Contagio: ${target.name} infettato da ${source.name} con ${disease.name}`
           );
@@ -1364,7 +1366,7 @@ if (!game.user.isGM) {
       }
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`_checkContagion: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore controllo contagio', error);
+      moduleLogger.error('Errore controllo contagio', error);
     }
   }
 
@@ -1428,7 +1430,7 @@ if (!game.user.isGM) {
       DiseasesSystem._statistics.epidemicsGenerated++;
 
       const epidemicTime = performance.now() - epidemicStart;
-      logger.info(
+      moduleLogger.info(
         DiseasesSystem.MODULE_NAME,
         `Epidemia generata: ${disease.name} (${severity}, ${epidemicTime.toFixed(2)}ms)`
       );
@@ -1443,7 +1445,7 @@ if (!game.user.isGM) {
       });
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`generateEpidemic: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore generazione epidemia', error);
+      moduleLogger.error('Errore generazione epidemia', error);
       ui.notifications.error('Errore nella generazione dell\'epidemia!');
     }
   }
@@ -1506,7 +1508,7 @@ if (!game.user.isGM) {
 
       dialog.render(true);
 
-      logger.debug?.(DiseasesSystem.MODULE_NAME, `Dialog gestione aperto per ${actor.name}`);
+      moduleLogger.debug?.(`Dialog gestione aperto per ${actor.name}`);
 
       // Emit event
       Hooks.callAll('diseases:dialog-opened', {
@@ -1516,7 +1518,7 @@ if (!game.user.isGM) {
       });
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`renderDiseaseManager: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore apertura dialog gestione', error);
+      moduleLogger.error('Errore apertura dialog gestione', error);
       ui.notifications.error('Errore nell\'apertura del dialog di gestione!');
     }
   }
@@ -1566,7 +1568,7 @@ if (!game.user.isGM) {
         }
       }).render(true);
 
-      logger.debug?.(DiseasesSystem.MODULE_NAME, `Dialog cura aperto per ${disease.name} di ${actor.name}`);
+      moduleLogger.debug?.(`Dialog cura aperto per ${disease.name} di ${actor.name}`);
 
       // Emit event
       Hooks.callAll('diseases:dialog-opened', {
@@ -1577,7 +1579,7 @@ if (!game.user.isGM) {
       });
     } catch (error) {
       DiseasesSystem._statistics.errors.push(`showCureDialog: ${error.message}`);
-      logger.error(DiseasesSystem.MODULE_NAME, 'Errore apertura dialog cura', error);
+      moduleLogger.error('Errore apertura dialog cura', error);
       ui.notifications.error('Errore nell\'apertura del dialog di cura!');
     }
   }
@@ -1629,7 +1631,7 @@ DiseasesSystem.getStatistics = function() {
  * DiseasesSystem.resetStatistics();
  */
 DiseasesSystem.resetStatistics = function() {
-  logger.info(this.MODULE_NAME, 'Reset statistiche Diseases System');
+  moduleLogger.info('Reset statistiche Diseases System');
 
   const initTime = this._statistics.initTime;
   const macrosCreated = this._statistics.macrosCreated;
@@ -1698,7 +1700,7 @@ DiseasesSystem.getActiveInfections = function(actor) {
  */
 DiseasesSystem.infectActorViaAPI = async function(actor, disease, options) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   await this._state.instance.infectActor(actor, disease, options);
@@ -1717,7 +1719,7 @@ DiseasesSystem.infectActorViaAPI = async function(actor, disease, options) {
  */
 DiseasesSystem.cureActorViaAPI = async function(actor, disease, method) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return false;
   }
   return await this._state.instance.cureDisease(actor, disease, method);
@@ -1735,7 +1737,7 @@ DiseasesSystem.cureActorViaAPI = async function(actor, disease, method) {
  */
 DiseasesSystem.checkContagionViaAPI = async function(target, source) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   await this._state.instance._checkContagion(target, source);
@@ -1752,7 +1754,7 @@ DiseasesSystem.checkContagionViaAPI = async function(target, source) {
  */
 DiseasesSystem.generateEpidemicViaAPI = async function(options) {
   if (!this._state.instance) {
-    logger.error(this.MODULE_NAME, 'Istanza non inizializzata');
+    moduleLogger.error('Istanza non inizializzata');
     return;
   }
   await this._state.instance.generateEpidemic(options);

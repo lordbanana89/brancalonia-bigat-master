@@ -8,15 +8,17 @@
  * @author Brancalonia BIGAT Team
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'Settings Registration';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * Classe per la registrazione automatica delle impostazioni
  * @class
  */
 class SettingsRegistration {
   static VERSION = '2.0.0';
-  static MODULE_NAME = 'Settings Registration';
+  static MODULE_NAME = MODULE_LABEL;
   static MODULE_ID = 'brancalonia-bigat';
 
   // Statistics tracking
@@ -48,8 +50,8 @@ class SettingsRegistration {
    */
   static async loadConfig() {
     try {
-      logger.startPerformance('settings-config-load');
-      logger.info(this.MODULE_NAME, '📂 Caricamento settings-config.json...');
+      moduleLogger.startPerformance('settings-config-load');
+      moduleLogger.info('📂 Caricamento settings-config.json...');
 
       const response = await fetch('modules/brancalonia-bigat/modules/settings-config.json');
       if (!response.ok) {
@@ -59,10 +61,10 @@ class SettingsRegistration {
       const config = await response.json();
       this._state.configLoaded = true;
 
-      const perfTime = logger.endPerformance('settings-config-load');
+      const perfTime = moduleLogger.endPerformance('settings-config-load');
       this.statistics.configLoadTime = perfTime;
 
-      logger.info(this.MODULE_NAME, `✅ Configurazione caricata: ${config.settings.length} settings, ${config.menus.length} menus (${perfTime?.toFixed(2)}ms)`);
+      moduleLogger.info(`✅ Configurazione caricata: ${config.settings.length} settings, ${config.menus.length} menus (${perfTime?.toFixed(2)}ms)`);
       
       return config;
     } catch (error) {
@@ -71,7 +73,7 @@ class SettingsRegistration {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore caricamento settings-config.json', error);
+      moduleLogger.error('Errore caricamento settings-config.json', error);
       ui.notifications.error('Errore caricamento configurazione Brancalonia');
       return null;
     }
@@ -100,7 +102,7 @@ class SettingsRegistration {
       const [namespace, settingName] = settingConfig.key.split('.');
       
       if (namespace !== this.MODULE_ID) {
-        logger.warn(this.MODULE_NAME, `Setting namespace mismatch: ${namespace} !== ${this.MODULE_ID}`);
+        moduleLogger.warn(`Setting namespace mismatch: ${namespace} !== ${this.MODULE_ID}`);
       }
 
       // Map type string to actual type
@@ -141,7 +143,7 @@ class SettingsRegistration {
       game.settings.register(namespace, settingName, settingData);
 
       this.statistics.settingsRegistered++;
-      logger.debug?.(this.MODULE_NAME, `✅ Registrato: ${settingConfig.key}`);
+      moduleLogger.debug?.(`✅ Registrato: ${settingConfig.key}`);
 
       return true;
     } catch (error) {
@@ -152,7 +154,7 @@ class SettingsRegistration {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, `Errore registrazione setting: ${settingConfig.key}`, error);
+      moduleLogger.error(`Errore registrazione setting: ${settingConfig.key}`, error);
       return false;
     }
   }
@@ -178,7 +180,7 @@ class SettingsRegistration {
       const [namespace, menuName] = menuConfig.key.split('.');
 
       if (namespace !== this.MODULE_ID) {
-        logger.warn(this.MODULE_NAME, `Menu namespace mismatch: ${namespace} !== ${this.MODULE_ID}`);
+        moduleLogger.warn(`Menu namespace mismatch: ${namespace} !== ${this.MODULE_ID}`);
       }
 
       const menuData = {
@@ -193,7 +195,7 @@ class SettingsRegistration {
       game.settings.registerMenu(namespace, menuName, menuData);
 
       this.statistics.menusRegistered++;
-      logger.debug?.(this.MODULE_NAME, `✅ Menu registrato: ${menuConfig.key}`);
+      moduleLogger.debug?.(`✅ Menu registrato: ${menuConfig.key}`);
 
       return true;
     } catch (error) {
@@ -204,7 +206,7 @@ class SettingsRegistration {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, `Errore registrazione menu: ${menuConfig.key}`, error);
+      moduleLogger.error(`Errore registrazione menu: ${menuConfig.key}`, error);
       return false;
     }
   }
@@ -221,8 +223,8 @@ class SettingsRegistration {
    */
   static async initialize() {
     try {
-      logger.startPerformance('settings-registration-init');
-      logger.info(this.MODULE_NAME, '🔧 Inizializzazione registrazione settings...');
+      moduleLogger.startPerformance('settings-registration-init');
+      moduleLogger.info('🔧 Inizializzazione registrazione settings...');
 
       // Load configuration
       const config = await this.loadConfig();
@@ -241,12 +243,12 @@ class SettingsRegistration {
       }
 
       this._state.initialized = true;
-      const perfTime = logger.endPerformance('settings-registration-init');
+      const perfTime = moduleLogger.endPerformance('settings-registration-init');
 
-      logger.info(this.MODULE_NAME, `✅ Registrazione completata: ${this.statistics.settingsRegistered} settings, ${this.statistics.menusRegistered} menus (${perfTime?.toFixed(2)}ms)`);
+      moduleLogger.info(`✅ Registrazione completata: ${this.statistics.settingsRegistered} settings, ${this.statistics.menusRegistered} menus (${perfTime?.toFixed(2)}ms)`);
       
       // Event emitter
-      logger.events.emit('settings-registration:initialized', {
+      moduleLogger.events.emit('settings-registration:initialized', {
         version: this.VERSION,
         settingsCount: this.statistics.settingsRegistered,
         menusCount: this.statistics.menusRegistered,
@@ -260,7 +262,7 @@ class SettingsRegistration {
         message: error.message, 
         timestamp: Date.now() 
       });
-      logger.error(this.MODULE_NAME, 'Errore inizializzazione settings registration', error);
+      moduleLogger.error('Errore inizializzazione settings registration', error);
       ui.notifications.error('Errore durante la registrazione delle impostazioni Brancalonia');
       return false;
     }
@@ -325,7 +327,7 @@ class SettingsRegistration {
       configLoadTime: 0,
       errors: []
     };
-    logger.info(this.MODULE_NAME, '📊 Statistiche resettate');
+    moduleLogger.info('📊 Statistiche resettate');
   }
 
   /**

@@ -17,8 +17,10 @@
  * @requires dice-so-nice (Foundry VTT Module)
  */
 
-import { logger } from './brancalonia-logger.js';
+import { createModuleLogger } from './brancalonia-logger.js';
 
+const MODULE_LABEL = 'DiceTheme';
+const moduleLogger = createModuleLogger(MODULE_LABEL);
 /**
  * @typedef {Object} DiceThemeStatistics
  * @property {number} initTime - Tempo di inizializzazione (ms)
@@ -56,7 +58,7 @@ import { logger } from './brancalonia-logger.js';
  */
 class BrancaloniaDiceTheme {
   static VERSION = '3.0.0';
-  static MODULE_NAME = 'DiceTheme';
+  static MODULE_NAME = MODULE_LABEL;
   static ID = 'brancalonia-dice-theme';
 
   /**
@@ -190,7 +192,7 @@ class BrancaloniaDiceTheme {
     const startTime = performance.now();
 
     try {
-      logger.info(this.MODULE_NAME, `Inizializzazione Dice Theme v${this.VERSION}`);
+      moduleLogger.info(`Inizializzazione Dice Theme v${this.VERSION}`);
 
       // Registra hooks
       this._registerHooks();
@@ -201,7 +203,7 @@ class BrancaloniaDiceTheme {
       this._state.initialized = true;
       this._statistics.initTime = performance.now() - startTime;
 
-      logger.info(
+      moduleLogger.info(
         this.MODULE_NAME,
         `✅ Inizializzazione completata in ${this._statistics.initTime.toFixed(2)}ms`
       );
@@ -213,7 +215,7 @@ class BrancaloniaDiceTheme {
       });
     } catch (error) {
       this._statistics.errors.push(error.message);
-      logger.error(this.MODULE_NAME, 'Errore durante inizializzazione', error);
+      moduleLogger.error('Errore durante inizializzazione', error);
       throw error;
     }
   }
@@ -234,10 +236,10 @@ class BrancaloniaDiceTheme {
       // Hook: brancaloniaThemeChanged
       Hooks.on('brancaloniaThemeChanged', (theme) => this._onThemeChanged(theme));
 
-      logger.debug?.(this.MODULE_NAME, '3 hooks registrati');
+      moduleLogger.debug?.('3 hooks registrati');
     } catch (error) {
       this._statistics.errors.push(`Hook registration: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore registrazione hooks', error);
+      moduleLogger.error('Errore registrazione hooks', error);
       throw error;
     }
   }
@@ -290,10 +292,10 @@ class BrancaloniaDiceTheme {
         }
       });
 
-      logger.debug?.(this.MODULE_NAME, '3 settings registrati');
+      moduleLogger.debug?.('3 settings registrati');
     } catch (error) {
       this._statistics.errors.push(`Settings registration: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore registrazione settings', error);
+      moduleLogger.error('Errore registrazione settings', error);
       throw error;
     }
   }
@@ -310,13 +312,13 @@ class BrancaloniaDiceTheme {
     try {
       // Verifica che Dice So Nice sia attivo
       if (!game.modules.get('dice-so-nice')?.active) {
-        logger.info(this.MODULE_NAME, 'Dice So Nice non attivo, skip registrazione tema');
+        moduleLogger.info('Dice So Nice non attivo, skip registrazione tema');
         return;
       }
 
       // Verifica che dice3d sia valido
       if (!dice3d) {
-        logger.error(this.MODULE_NAME, 'Dice So Nice API non disponibile');
+        moduleLogger.error('Dice So Nice API non disponibile');
         return;
       }
 
@@ -326,11 +328,11 @@ class BrancaloniaDiceTheme {
         dice3d.addColorset(colorset, 'default');
         this._statistics.colorsetsRegistered++;
         this._state.colorsets.push(config.name);
-        logger.debug?.(this.MODULE_NAME, `Registrato colorset: ${config.description}`);
+        moduleLogger.debug?.(`Registrato colorset: ${config.description}`);
       });
 
       this._state.dice3dReady = true;
-      logger.info(this.MODULE_NAME, `Caricati ${this._statistics.colorsetsRegistered} colorset per Dice So Nice`);
+      moduleLogger.info(`Caricati ${this._statistics.colorsetsRegistered} colorset per Dice So Nice`);
 
       // Emit event
       Hooks.callAll('dice-theme:colorsets-registered', {
@@ -339,7 +341,7 @@ class BrancaloniaDiceTheme {
       });
     } catch (error) {
       this._statistics.errors.push(`Colorset registration: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore registrazione colorset', error);
+      moduleLogger.error('Errore registrazione colorset', error);
     }
   }
 
@@ -384,7 +386,7 @@ class BrancaloniaDiceTheme {
       }
     } catch (error) {
       this._statistics.errors.push(`Roll complete: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore gestione roll complete', error);
+      moduleLogger.error('Errore gestione roll complete', error);
     }
   }
 
@@ -399,7 +401,7 @@ class BrancaloniaDiceTheme {
   static _onThemeChanged(theme) {
     try {
       if (game.modules.get('dice-so-nice')?.active && game.dice3d) {
-        logger.info(this.MODULE_NAME, 'Tema cambiato: aggiornamento colorset dadi');
+        moduleLogger.info('Tema cambiato: aggiornamento colorset dadi');
         Hooks.call('diceSoNiceReady', game.dice3d);
         this._statistics.themeChanges++;
 
@@ -408,7 +410,7 @@ class BrancaloniaDiceTheme {
       }
     } catch (error) {
       this._statistics.errors.push(`Theme change: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore durante cambio tema', error);
+      moduleLogger.error('Errore durante cambio tema', error);
     }
   }
 
@@ -459,10 +461,10 @@ class BrancaloniaDiceTheme {
         criticalHits: this._statistics.criticalHits
       });
 
-      logger.debug?.(this.MODULE_NAME, `Colpo critico rilevato (totale: ${this._statistics.criticalHits})`);
+      moduleLogger.debug?.(`Colpo critico rilevato (totale: ${this._statistics.criticalHits})`);
     } catch (error) {
       this._statistics.errors.push(`Critical hit: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore gestione critico', error);
+      moduleLogger.error('Errore gestione critico', error);
     }
   }
 
@@ -487,10 +489,10 @@ class BrancaloniaDiceTheme {
         fumbles: this._statistics.fumbles
       });
 
-      logger.debug?.(this.MODULE_NAME, `Fumble rilevato (totale: ${this._statistics.fumbles})`);
+      moduleLogger.debug?.(`Fumble rilevato (totale: ${this._statistics.fumbles})`);
     } catch (error) {
       this._statistics.errors.push(`Fumble: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore gestione fumble', error);
+      moduleLogger.error('Errore gestione fumble', error);
     }
   }
 
@@ -515,7 +517,7 @@ class BrancaloniaDiceTheme {
           }, false);
 
           this._statistics.soundsPlayed++;
-          logger.debug?.(this.MODULE_NAME, `Suono riprodotto: ${type}.${format}`);
+          moduleLogger.debug?.(`Suono riprodotto: ${type}.${format}`);
           return; // Successo, esci
         } catch (err) {
           // Prova formato successivo
@@ -523,10 +525,10 @@ class BrancaloniaDiceTheme {
       }
 
       // Nessun formato trovato
-      logger.debug?.(this.MODULE_NAME, `Suono ${type} non trovato`);
+      moduleLogger.debug?.(`Suono ${type} non trovato`);
     } catch (error) {
       this._statistics.errors.push(`Play sound: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore riproduzione suono', error);
+      moduleLogger.error('Errore riproduzione suono', error);
     }
   }
 
@@ -624,7 +626,7 @@ class BrancaloniaDiceTheme {
    * BrancaloniaDiceTheme.resetStatistics();
    */
   static resetStatistics() {
-    logger.info(this.MODULE_NAME, 'Reset statistiche Dice Theme');
+    moduleLogger.info('Reset statistiche Dice Theme');
     
     const initTime = this._statistics.initTime;
     const colorsetsRegistered = this._statistics.colorsetsRegistered;
@@ -653,12 +655,12 @@ class BrancaloniaDiceTheme {
     try {
       if (!game.dice3d) {
         ui.notifications.warn("Dice So Nice non è attivo");
-        logger.warn(this.MODULE_NAME, 'Test dadi: Dice So Nice non disponibile');
+        moduleLogger.warn('Test dadi: Dice So Nice non disponibile');
         return;
       }
 
       ui.notifications.info(`🎲 Test colorset Brancalonia: ${this._state.colorsets.length} temi`);
-      logger.info(this.MODULE_NAME, `Test dadi: inizio test di ${this._state.colorsets.length} colorset`);
+      moduleLogger.info(`Test dadi: inizio test di ${this._state.colorsets.length} colorset`);
 
       this._state.colorsets.forEach((colorset, index) => {
         setTimeout(() => {
@@ -674,7 +676,7 @@ class BrancaloniaDiceTheme {
           });
 
           this._statistics.testRollsExecuted++;
-          logger.debug?.(this.MODULE_NAME, `Test dadi: ${colorset} (${index + 1}/${this._state.colorsets.length})`);
+          moduleLogger.debug?.(`Test dadi: ${colorset} (${index + 1}/${this._state.colorsets.length})`);
         }, index * 2500); // 2.5 secondi tra ogni set
       });
 
@@ -684,7 +686,7 @@ class BrancaloniaDiceTheme {
       });
     } catch (error) {
       this._statistics.errors.push(`Test: ${error.message}`);
-      logger.error(this.MODULE_NAME, 'Errore durante test colorset', error);
+      moduleLogger.error('Errore durante test colorset', error);
     }
   }
 
@@ -734,7 +736,7 @@ Hooks.once('ready', () => {
   // Alias per compatibility
   window.brancaloniaTestDice = () => BrancaloniaDiceTheme.testColorsets();
 
-  logger.info(
+  moduleLogger.info(
     BrancaloniaDiceTheme.MODULE_NAME,
     `✅ API globale registrata: game.brancalonia.diceTheme`
   );
