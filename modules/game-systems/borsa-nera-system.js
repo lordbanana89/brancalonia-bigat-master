@@ -42,24 +42,31 @@ class BorsaNeraSystem {
       </div>
     `;
 
-    new Dialog({
-      title: '🛍️ Borsa Nera',
-      content,
-      buttons: {
-        close: {
-          label: 'Chiudi',
-          icon: '<i class="fas fa-times"></i>'
-        }
+    // Fixed: Migrated to DialogV2 (Foundry v13)
+    const dialog = new foundry.applications.api.DialogV2({
+      window: {
+        title: '🛍️ Borsa Nera'
       },
-      render: (html) => {
-        html[0].querySelectorAll('.buy-item').forEach((btn) => {
+      content,
+      buttons: [{
+        action: 'close',
+        label: 'Chiudi',
+        icon: 'fas fa-times'
+      }],
+      render: (event, html) => {
+        html.querySelectorAll('.buy-item').forEach((btn) => {
           btn.addEventListener('click', async (event) => {
             const index = Number(event.currentTarget.dataset.index);
             await this._buyItem(actor, covo, inventory[index]);
+            dialog.close();
           });
         });
       }
-    }, { width: 720, height: 640 }).render(true);
+    }, { 
+      classes: ['borsa-nera-dialog'],
+      width: 720,
+      height: 640
+    }).render(true);
   }
 
   static _validateActor(actor) {
