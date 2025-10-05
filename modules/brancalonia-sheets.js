@@ -770,33 +770,22 @@ class BrancaloniaSheets {
       if (biographyTab.length && !html.find('.malefatte-section').length) {
         const malefatte = actor.getFlag('brancalonia-bigat', 'malefatte') || [];
 
-      const malefatteHTML = `
-                <div class="malefatte-section brancalonia-section">
-                    <div class="section-header">
-                        <h3>
-                            <span class="icon">📜</span>
-                            Registro delle Malefatte
-                            <span class="tooltip-anchor" data-tooltip="I crimini e misfatti commessi">ⓘ</span>
-                        </h3>
-                    </div>
-                    <div class="section-content">
-                        <div class="malefatte-stats">
-                            <div class="crime-counter">
-                                <span class="crime-type">Furti: ${malefatte.filter(m => m.type === 'furto').length}</span>
-                                <span class="crime-type">Truffe: ${malefatte.filter(m => m.type === 'truffa').length}</span>
-                                <span class="crime-type">Risse: ${malefatte.filter(m => m.type === 'rissa').length}</span>
-                                <span class="crime-type">Omicidi: ${malefatte.filter(m => m.type === 'omicidio').length}</span>
-                            </div>
-                        </div>
-                        <div class="malefatte-list">
-                            ${this.renderMalefatteList(malefatte)}
-                        </div>
-                        <button class="add-malefatta-btn">
-                            <span class="icon">⚖️</span> Registra Malefatta
-                        </button>
-                    </div>
-                </div>
-            `;
+        // Fixed: Use Handlebars template with i18n and statistics
+        const malefatteHTML = await renderTemplate(
+          'modules/brancalonia-bigat/templates/malefatte-section.hbs',
+          {
+            malefatte,
+            stats: {
+              furto: malefatte.filter(m => m.type === 'furto').length,
+              truffa: malefatte.filter(m => m.type === 'truffa').length,
+              rissa: malefatte.filter(m => m.type === 'rissa').length,
+              omicidio: malefatte.filter(m => m.type === 'omicidio').length
+            },
+            totalBounty: malefatte.reduce((sum, m) => sum + (m.bounty || 0), 0),
+            canEdit: true
+          }
+        );
+        
         biographyTab.append(malefatteHTML);
 
         const renderTime = logger.endPerformance('sheets-add-malefatte');
