@@ -516,8 +516,72 @@ class TavernBrawlMacros {
     const oggetto = participantData.oggettoScena;
     const isComune = oggetto.tipo === 'comune';
     
-    new Dialog({
-      title: `Usa ${oggetto.nome}`,
+    // Fixed: Migrated to DialogV2
+    const buttons = isComune ? [{
+      action: 'attack',
+      icon: 'fas fa-crosshairs',
+      label: 'Attacco (+1d4)',
+      default: true,
+      callback: async () => {
+        await window.TavernBrawlSystem.useProp(actor, 'attack');
+      }
+    }, {
+      action: 'defense',
+      icon: 'fas fa-shield-alt',
+      label: 'Difesa (+2 CA)',
+      callback: async () => {
+        await window.TavernBrawlSystem.useProp(actor, 'defense');
+      }
+    }, {
+      action: 'bonus',
+      icon: 'fas fa-bolt',
+      label: 'Azione Bonus',
+      callback: async () => {
+        await window.TavernBrawlSystem.useProp(actor, 'bonus');
+      }
+    }, {
+      action: 'cancel',
+      icon: 'fas fa-times',
+      label: 'Annulla'
+    }] : [{
+      action: 'damage',
+      icon: 'fas fa-fire',
+      label: '+1 Batosta',
+      default: true,
+      callback: async () => {
+        await window.TavernBrawlSystem.useProp(actor, 'damage');
+      }
+    }, {
+      action: 'stun',
+      icon: 'fas fa-dizzy',
+      label: 'Stordimento',
+      callback: async () => {
+        await window.TavernBrawlSystem.useProp(actor, 'stun');
+      }
+    }, {
+      action: 'area',
+      icon: 'fas fa-expand',
+      label: 'Area (2 bersagli)',
+      callback: async () => {
+        await window.TavernBrawlSystem.useProp(actor, 'area');
+      }
+    }, {
+      action: 'defense',
+      icon: 'fas fa-shield-alt',
+      label: 'Difesa Epica (+5 CA)',
+      callback: async () => {
+        await window.TavernBrawlSystem.useProp(actor, 'defense');
+      }
+    }, {
+      action: 'cancel',
+      icon: 'fas fa-times',
+      label: 'Annulla'
+    }];
+    
+    new foundry.applications.api.DialogV2({
+      window: {
+        title: `Usa ${oggetto.nome}`
+      },
       content: `
         <div style="padding: 10px;">
           <div style="background: ${isComune ? '#f4e4bc' : '#ffd700'}; padding: 15px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
@@ -530,68 +594,9 @@ class TavernBrawlMacros {
           </p>
         </div>
       `,
-      buttons: isComune ? {
-        attack: {
-          icon: '<i class="fas fa-crosshairs"></i>',
-          label: 'Attacco (+1d4)',
-          callback: async () => {
-            await window.TavernBrawlSystem.useProp(actor, 'attack');
-          }
-        },
-        defense: {
-          icon: '<i class="fas fa-shield-alt"></i>',
-          label: 'Difesa (+2 CA)',
-          callback: async () => {
-            await window.TavernBrawlSystem.useProp(actor, 'defense');
-          }
-        },
-        bonus: {
-          icon: '<i class="fas fa-bolt"></i>',
-          label: 'Azione Bonus',
-          callback: async () => {
-            await window.TavernBrawlSystem.useProp(actor, 'bonus');
-          }
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Annulla'
-        }
-      } : {
-        damage: {
-          icon: '<i class="fas fa-fire"></i>',
-          label: '+1 Batosta',
-          callback: async () => {
-            await window.TavernBrawlSystem.useProp(actor, 'damage');
-          }
-        },
-        stun: {
-          icon: '<i class="fas fa-dizzy"></i>',
-          label: 'Stordimento',
-          callback: async () => {
-            await window.TavernBrawlSystem.useProp(actor, 'stun');
-          }
-        },
-        area: {
-          icon: '<i class="fas fa-expand"></i>',
-          label: 'Area (2 bersagli)',
-          callback: async () => {
-            await window.TavernBrawlSystem.useProp(actor, 'area');
-          }
-        },
-        defense: {
-          icon: '<i class="fas fa-shield-alt"></i>',
-          label: 'Difesa Epica (+5 CA)',
-          callback: async () => {
-            await window.TavernBrawlSystem.useProp(actor, 'defense');
-          }
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Annulla'
-        }
-      },
-      default: isComune ? 'attack' : 'damage'
+      buttons
     }, {
+      classes: ['brawl-use-prop-dialog'],
       width: 400
     }).render(true);
   }
@@ -600,8 +605,11 @@ class TavernBrawlMacros {
    * Dialog per eventi e pericoli
    */
   static async dialogEventi() {
-    new Dialog({
-      title: '⚡ Trigger Eventi Rissa',
+    // Fixed: Migrated to DialogV2
+    new foundry.applications.api.DialogV2({
+      window: {
+        title: '⚡ Trigger Eventi Rissa'
+      },
       content: `
         <div style="padding: 10px;">
           <p style="text-align: center; margin-bottom: 15px; font-weight: bold;">
@@ -623,38 +631,38 @@ class TavernBrawlMacros {
           </div>
         </div>
       `,
-      buttons: {
-        atmosfera: {
-          icon: '<i class="fas fa-wind"></i>',
-          label: 'Evento Atmosfera',
-          callback: async () => {
-            await window.TavernBrawlSystem.triggerEventoAtmosfera();
-          }
-        },
-        pericolo: {
-          icon: '<i class="fas fa-exclamation-triangle"></i>',
-          label: 'Pericolo Vagante',
-          callback: async () => {
-            await window.TavernBrawlSystem.activatePericoloVagante();
-          }
-        },
-        entrambi: {
-          icon: '<i class="fas fa-fire"></i>',
-          label: 'Entrambi!',
-          callback: async () => {
-            await window.TavernBrawlSystem.triggerEventoAtmosfera();
-            setTimeout(async () => {
-              await window.TavernBrawlSystem.activatePericoloVagante();
-            }, 1000);
-          }
-        },
-        cancel: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Annulla'
+      buttons: [{
+        action: 'atmosfera',
+        icon: 'fas fa-wind',
+        label: 'Evento Atmosfera',
+        default: true,
+        callback: async () => {
+          await window.TavernBrawlSystem.triggerEventoAtmosfera();
         }
-      },
-      default: 'atmosfera'
+      }, {
+        action: 'pericolo',
+        icon: 'fas fa-exclamation-triangle',
+        label: 'Pericolo Vagante',
+        callback: async () => {
+          await window.TavernBrawlSystem.activatePericoloVagante();
+        }
+      }, {
+        action: 'entrambi',
+        icon: 'fas fa-fire',
+        label: 'Entrambi!',
+        callback: async () => {
+          await window.TavernBrawlSystem.triggerEventoAtmosfera();
+          setTimeout(async () => {
+            await window.TavernBrawlSystem.activatePericoloVagante();
+          }, 1000);
+        }
+      }, {
+        action: 'cancel',
+        icon: 'fas fa-times',
+        label: 'Annulla'
+      }]
     }, {
+      classes: ['brawl-events-dialog'],
       width: 400
     }).render(true);
   }
@@ -686,16 +694,20 @@ class TavernBrawlMacros {
     
     content += '</table></div>';
     
-    new Dialog({
-      title: 'Stato Rissa',
+    // Fixed: Migrated to DialogV2
+    new foundry.applications.api.DialogV2({
+      window: {
+        title: 'Stato Rissa'
+      },
       content,
-      buttons: {
-        close: {
-          icon: '<i class="fas fa-times"></i>',
-          label: 'Chiudi'
-        }
-      }
+      buttons: [{
+        action: 'close',
+        icon: 'fas fa-times',
+        label: 'Chiudi',
+        default: true
+      }]
     }, {
+      classes: ['brawl-status-dialog'],
       width: 500
     }).render(true);
   }
