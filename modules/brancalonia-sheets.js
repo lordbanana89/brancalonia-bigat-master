@@ -232,9 +232,10 @@ class BrancaloniaSheets {
 
   static registerDataModels() {
     // Extend actor data model for Brancalonia fields
-    Hooks.on('preCreateActor', (document, data, options, userId) => {
+    // Fixed: Made async to properly await initialization
+    Hooks.on('preCreateActor', async (document, data, options, userId) => {
       if (data.type === 'character') {
-        this.initializeBrancaloniaData(document);
+        await this.initializeBrancaloniaData(document, data);
       }
     });
   }
@@ -1024,7 +1025,9 @@ class BrancaloniaSheets {
     const faction = app.actor.getFlag('brancalonia-bigat', 'faction');
     if (faction) {
       const header = $html.find('.sheet-header');
-      header.append(`
+      // Fixed: Guard per prevenire duplicati ad ogni render
+      if (!header.find('.npc-faction').length) {
+        header.append(`
                 <div class="npc-faction">
                     <span class="faction-label">Fazione:</span>
                     <span class="faction-name">${faction}</span>
@@ -1051,16 +1054,23 @@ class BrancaloniaSheets {
     };
   }
 
-  static initializeBrancaloniaData(actor) {
-    // Set default Brancalonia data
-    actor.setFlag('brancalonia-bigat', 'initialized', true);
-    actor.setFlag('brancalonia-bigat', 'infamia', 0);
-    actor.setFlag('brancalonia-bigat', 'infamiaMax', 10);
-    actor.setFlag('brancalonia-bigat', 'baraonda', 0);
-    actor.setFlag('brancalonia-bigat', 'compagnia', {});
-    actor.setFlag('brancalonia-bigat', 'rifugio', { comfort: 1 });
-    actor.setFlag('brancalonia-bigat', 'lavoriSporchi', []);
-    actor.setFlag('brancalonia-bigat', 'malefatte', []);
+  static async initializeBrancaloniaData(actor, data) {
+    // Fixed: Batch update atomico invece di 8 setFlag separati
+    // Previene race condition durante actor creation
+    await actor.updateSource({
+      'flags.brancalonia-bigat': {
+        initialized: true,
+        infamia: 0,
+        infamiaMax: 10,
+        baraonda: 0,
+        compagnia: {},
+        rifugio: { comfort: 1 },
+        lavoriSporchi: [],
+        malefatte: []
+      }
+    });
+    
+    logger.debug(this.MODULE_NAME, `Dati Brancalonia inizializzati per nuovo actor (${data.name || 'Unnamed'})`);
   }
 
   static calculateInfamiaLevel(actor) {
