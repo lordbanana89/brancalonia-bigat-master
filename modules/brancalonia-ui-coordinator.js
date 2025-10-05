@@ -1109,7 +1109,7 @@ class BrancaloniaUICoordinator {
     const level = this._getInfamiaLevel(infamia);
     const canEdit = actor.isOwner || game.user.isGM;
 
-    return renderTemplate('modules/brancalonia-bigat/templates/infamia-section.hbs', {
+    return foundry.applications.handlebars.renderTemplate('modules/brancalonia-bigat/templates/infamia-section.hbs', {
       infamia,
       infamiaMax,
       infamiaPercentage: Math.min(100, (infamia / infamiaMax) * 100),
@@ -1136,12 +1136,13 @@ class BrancaloniaUICoordinator {
   }
 
   static async _createHavenContent(actor) {
-    const rifugio = foundry.utils.duplicate(actor.getFlag(this.ID, 'rifugio')) || {};
+    const rifugioData = actor.getFlag(this.ID, 'rifugio');
+    const rifugio = rifugioData ? foundry.utils.duplicate(rifugioData) : {};
     const comfortLevel = Number(rifugio.comfort ?? rifugio.level ?? 1);
     const features = Array.isArray(rifugio.features) ? rifugio.features : [];
     const canEdit = actor.isOwner || game.user.isGM;
 
-    return renderTemplate('modules/brancalonia-bigat/templates/rifugio-section.hbs', {
+    return foundry.applications.handlebars.renderTemplate('modules/brancalonia-bigat/templates/rifugio-section.hbs', {
       rifugio,
       comfortLevels: this._renderComfortLevels(comfortLevel, canEdit),
       comfortBenefits: this._getComfortBenefits(comfortLevel),
@@ -1151,10 +1152,11 @@ class BrancaloniaUICoordinator {
   }
 
   static async _createLavoriContent(actor) {
-    const lavori = foundry.utils.duplicate(actor.getFlag(this.ID, 'lavoriSporchi')) || [];
+    const lavoriData = actor.getFlag(this.ID, 'lavoriSporchi');
+    const lavori = lavoriData ? foundry.utils.duplicate(lavoriData) : [];
     const canEdit = actor.isOwner || game.user.isGM;
 
-    return renderTemplate('modules/brancalonia-bigat/templates/lavori-section.hbs', {
+    return foundry.applications.handlebars.renderTemplate('modules/brancalonia-bigat/templates/lavori-section.hbs', {
       lavori,
       completedCount: lavori.filter(l => l.completed).length,
       activeCount: lavori.filter(l => !l.completed).length,
@@ -1164,11 +1166,12 @@ class BrancaloniaUICoordinator {
   }
 
   static async _createMalefatteContent(actor) {
-    const malefatte = foundry.utils.duplicate(actor.getFlag(this.ID, 'malefatte')) || [];
+    const malefatteData = actor.getFlag(this.ID, 'malefatte');
+    const malefatte = malefatteData ? foundry.utils.duplicate(malefatteData) : [];
     const canEdit = actor.isOwner || game.user.isGM;
     const stats = this._summarizeMalefatte(malefatte);
 
-    return renderTemplate('modules/brancalonia-bigat/templates/malefatte-section.hbs', {
+    return foundry.applications.handlebars.renderTemplate('modules/brancalonia-bigat/templates/malefatte-section.hbs', {
       malefatte,
       stats,
       totalBounty: malefatte.reduce((sum, m) => sum + (Number(m.bounty) || 0), 0),
