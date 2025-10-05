@@ -213,16 +213,29 @@ Hooks.once('ready', async () => {
   });
 });
 
-// Fix per hook deprecati
-Hooks.on('renderActorSheet', (app, html, data) => {
-  // Fix per jQuery/HTMLElement compatibility
-  const element = html[0] || html;
+// Fixed: Use SheetCoordinator
+const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
 
-  // Aggiungi classe Brancalonia se è un personaggio del sistema
-  if (app.actor?.type === 'character') {
-    element.classList.add('brancalonia-sheet');
-  }
-});
+if (SheetCoordinator) {
+  SheetCoordinator.registerModule('ModulesInitFix', async (app, html, data) => {
+    const element = html[0] || html;
+
+    if (app.actor?.type === 'character') {
+      element.classList?.add('brancalonia-sheet');
+    }
+  }, {
+    priority: 5,
+    types: ['character']
+  });
+} else {
+  Hooks.on('renderActorSheet', (app, html, data) => {
+    const element = html[0] || html;
+
+    if (app.actor?.type === 'character') {
+      element.classList.add('brancalonia-sheet');
+    }
+  });
+}
 
 // Fix per chat commands
 Hooks.on('chatMessage', (html, content, msg) => {

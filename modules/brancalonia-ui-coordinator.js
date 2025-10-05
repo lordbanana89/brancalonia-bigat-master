@@ -469,23 +469,46 @@ class BrancaloniaUICoordinator {
           }
         });
 
-        // Fallback generico per altri tipi di sheet
-        Hooks.on('renderActorSheet', async (app, html, data) => {
-          try {
-            const element = (html instanceof jQuery) ? html[0] : html;
-            if (!element?.dataset?.brancaloniaProcessed) {
-              await this._processActorSheet(app, html, data);
+        // Fixed: Use SheetCoordinator for fallback
+        const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+        
+        if (SheetCoordinator) {
+          SheetCoordinator.registerModule('UICoordinator', async (app, html, data) => {
+            try {
+              const element = (html instanceof jQuery) ? html[0] : html;
+              if (!element?.dataset?.brancaloniaProcessed) {
+                await this._processActorSheet(app, html, data);
+              }
+            } catch (error) {
+              logger.error(this.MODULE_NAME, 'Errore UI coordinator', error);
+              this.statistics.errors.push({
+                type: 'ui-coordinator',
+                message: error.message,
+                timestamp: Date.now()
+              });
             }
+          }, {
+            priority: 90,
+            types: ['character', 'npc']
+          });
+        } else {
+          Hooks.on('renderActorSheet', async (app, html, data) => {
+            try {
+              const element = (html instanceof jQuery) ? html[0] : html;
+              if (!element?.dataset?.brancaloniaProcessed) {
+                await this._processActorSheet(app, html, data);
+              }
 
-          } catch (error) {
-            logger.error(this.MODULE_NAME, 'Errore hook renderActorSheet fallback', error);
-            this.statistics.errors.push({
-              type: 'hook-render-sheet-fallback',
-              message: error.message,
-              timestamp: Date.now()
-            });
-          }
-        });
+            } catch (error) {
+              logger.error(this.MODULE_NAME, 'Errore hook renderActorSheet fallback', error);
+              this.statistics.errors.push({
+                type: 'hook-render-sheet-fallback',
+                message: error.message,
+                timestamp: Date.now()
+              });
+            }
+          });
+        }
 
       } else {
         // dnd5e v3.x/v4.x usa hooks legacy
