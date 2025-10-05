@@ -1,0 +1,232 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Brancalonia BIGAT Settings Configuration",
+  "description": "Configurazione centralizzata delle impostazioni del modulo Brancalonia BIGAT",
+  "version": "2.0.0",
+  "settings": [
+    {
+      "key": "brancalonia-bigat.enableCompagniaManager",
+      "type": "bool",
+      "default": true,
+      "name": "Gestione Compagnia",
+      "hint": "Abilita il sistema di gestione della Compagnia (ruoli, tesoreria, infamia condivisa)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableCovo",
+      "type": "bool",
+      "default": true,
+      "name": "Sistema Covo",
+      "hint": "Abilita il sistema Covo (Rifugio) con Granlussi e benefici",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableCriticalFumbles",
+      "type": "bool",
+      "default": true,
+      "name": "Fumble Critici",
+      "hint": "Abilita le tabelle di critici e fumble per i tiri di attacco",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableDirtyJobs",
+      "type": "bool",
+      "default": true,
+      "name": "Lavori Sporchi",
+      "hint": "Abilita il sistema dei Lavori Sporchi (rapine, estorsioni, contrabbando, ecc.)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableDiseases",
+      "type": "bool",
+      "default": true,
+      "name": "Sistema Malattie",
+      "hint": "Abilita il sistema delle malattie brancaloniane (8 malattie con progressione multi-stadio)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableDueling",
+      "type": "bool",
+      "default": true,
+      "name": "Sistema Duelli",
+      "hint": "Abilita il sistema dei duelli formali (5 tipi, 9 stili di combattimento, codice d'onore)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableEnvironmentalHazards",
+      "type": "bool",
+      "default": true,
+      "name": "Hazard Ambientali",
+      "hint": "Abilita il sistema degli hazard ambientali (pericoli naturali, trappole, meteo)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableFactions",
+      "type": "bool",
+      "default": true,
+      "name": "Sistema Fazioni",
+      "hint": "Abilita il sistema delle fazioni (reputazione, alleanze, rivalità, guerre)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableFavori",
+      "type": "bool",
+      "default": true,
+      "name": "Favori della Banda",
+      "hint": "Abilita il sistema dei Favori della Banda (7 tipi di favori, costi, debiti)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableInfamiaSystem",
+      "type": "bool",
+      "default": true,
+      "name": "Sistema Infamia",
+      "hint": "Abilita il sistema dell'Infamia (reputazione negativa con autorità/popolazione)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableLevelCap",
+      "type": "bool",
+      "default": true,
+      "name": "Livello Massimo (Eroi di Bassa Lega)",
+      "hint": "Abilita il sistema del livello massimo a 6 con Emeriticenze",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableMalefatte",
+      "type": "bool",
+      "default": true,
+      "name": "Sistema Malefatte e Taglie",
+      "hint": "Abilita il sistema delle Malefatte (20 standard + 9 gravi), Taglie e Nomea",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableMenagramo",
+      "type": "bool",
+      "default": true,
+      "name": "Sistema Menagramo",
+      "hint": "Abilita il sistema del Menagramo (4 livelli di sfortuna, 20 eventi, 5 rimozioni)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableRestSystem",
+      "type": "bool",
+      "default": true,
+      "name": "Sistema Riposo Brancaloniano",
+      "hint": "Abilita il sistema di riposo custom con benefici del Covo",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableShoddyEquipment",
+      "type": "bool",
+      "default": true,
+      "name": "Oggetti Scadenti",
+      "hint": "Abilita il sistema degli oggetti scadenti (equipaggiamento di bassa qualità)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableTavernBrawl",
+      "type": "bool",
+      "default": true,
+      "name": "Sistema Rissa da Taverna",
+      "hint": "Abilita il sistema della Rissa da Taverna (Batoste, mosse, oggetti di scena)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableTavernEntertainment",
+      "type": "bool",
+      "default": true,
+      "name": "Bagordi e Intrattenimento",
+      "hint": "Abilita il sistema dei Bagordi e Intrattenimento da taverna",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.enableWildernessEncounters",
+      "type": "bool",
+      "default": true,
+      "name": "Incontri nella Wilderness",
+      "hint": "Abilita il sistema degli incontri casuali nella wilderness",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.levelCapValue",
+      "type": "number",
+      "default": 6,
+      "name": "Valore Livello Massimo",
+      "hint": "Livello massimo per gli Eroi di Bassa Lega (default: 6)",
+      "scope": "world",
+      "config": true,
+      "range": {
+        "min": 3,
+        "max": 10,
+        "step": 1
+      }
+    },
+    {
+      "key": "brancalonia-bigat.startingInfamia",
+      "type": "number",
+      "default": 0,
+      "name": "Infamia Iniziale",
+      "hint": "Valore di Infamia iniziale per nuovi personaggi",
+      "scope": "world",
+      "config": true,
+      "range": {
+        "min": 0,
+        "max": 100,
+        "step": 1
+      }
+    },
+    {
+      "key": "brancalonia-bigat.themePreset",
+      "type": "string",
+      "default": "renaissance",
+      "name": "Tema UI",
+      "hint": "Preset del tema visuale per l'interfaccia (renaissance, dark, light, custom)",
+      "scope": "world",
+      "config": true,
+      "choices": {
+        "renaissance": "Rinascimento Brancaloniano",
+        "dark": "Scuro",
+        "light": "Chiaro",
+        "custom": "Personalizzato"
+      }
+    },
+    {
+      "key": "brancalonia-bigat.debugMode",
+      "type": "bool",
+      "default": false,
+      "name": "Modalità Debug",
+      "hint": "Abilita logging dettagliato per debugging (solo per sviluppatori)",
+      "scope": "world",
+      "config": true
+    },
+    {
+      "key": "brancalonia-bigat.disableUI",
+      "type": "bool",
+      "default": false,
+      "name": "Disabilita UI Brancalonia",
+      "hint": "Disabilita completamente le modifiche UI di Brancalonia",
+      "scope": "world",
+      "config": true
+    }
+  ],
+  "menus": []
+}

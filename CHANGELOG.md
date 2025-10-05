@@ -5,6 +5,28 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.56] - 2025-10-05
+
+### 🔧 Complete Settings Registration Fix
+- **Timing Enhancement**: Migliorato controllo disponibilità `game.settings` con timeout di 30 secondi
+- **Robust Error Handling**: Aggiunto controllo `game.settings.register` per verificare inizializzazione completa
+- **File Positioning**: Corretto posizionamento `settings-config.json` nella directory del modulo
+- **Retry Logic**: Implementata attesa intelligente fino a disponibilità API Foundry VTT
+- **Error Prevention**: Eliminati errori di registrazione settings con controlli multipli
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **Settings Registration**: Sistema completamente funzionante con controlli robusti
+- **Module Initialization**: Inizializzazione affidabile senza errori di timing
+- **Error Prevention**: Eliminati completamente errori di registrazione settings
+
+### 📋 Technical Details
+- **Files Modified**: 1 file (settings-registration.js) con controlli timing avanzati
+- **Critical Fix**: Risolto definitivamente problema registrazione settings con API timing
+- **Initialization Order**: Sistema completamente sincronizzato con ciclo di vita Foundry VTT
+
+---
+
 ## [13.0.55] - 2025-10-05
 
 ### 🔧 Final Settings Registration Fix

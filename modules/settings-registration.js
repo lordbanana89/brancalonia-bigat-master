@@ -139,9 +139,10 @@ class SettingsRegistration {
         settingData.onChange = settingConfig.onChange;
       }
 
-      // Ensure game.settings is available
-      if (!game?.settings) {
-        moduleLogger.warn(`game.settings non ancora disponibile per ${settingConfig.key}`);
+      // Ensure game.settings is available and fully initialized
+      if (!game?.settings?.register) {
+        moduleLogger.error(`game.settings API non disponibile per ${settingConfig.key} - skipping registration`);
+        this.statistics.settingsFailures++;
         return false;
       }
 
@@ -232,15 +233,24 @@ class SettingsRegistration {
       moduleLogger.startPerformance('settings-registration-init');
       moduleLogger.info('🔧 Inizializzazione registrazione settings...');
 
-      // Ensure game.settings is available
-      if (!game?.settings) {
-        moduleLogger.warn('game.settings non ancora disponibile, attesa...');
+      // Ensure game.settings is available and fully initialized
+      if (!game?.settings?.register) {
+        moduleLogger.warn('game.settings API non ancora disponibile, attesa massima 30 secondi...');
+        const maxWait = 30000; // 30 seconds
+        const checkInterval = 100;
+        let waited = 0;
+
         await new Promise(resolve => {
           const checkSettings = () => {
-            if (game?.settings) {
+            waited += checkInterval;
+            if (game?.settings?.register) {
+              moduleLogger.info(`game.settings API disponibile dopo ${waited}ms`);
               resolve();
+            } else if (waited >= maxWait) {
+              moduleLogger.error(`Timeout: game.settings API non disponibile dopo ${maxWait}ms`);
+              resolve(); // Continue anyway to avoid hanging
             } else {
-              setTimeout(checkSettings, 100);
+              setTimeout(checkSettings, checkInterval);
             }
           };
           checkSettings();
