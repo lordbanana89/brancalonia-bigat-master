@@ -44,13 +44,59 @@
       "NoRecords": "No crimes registered",
       "TotalBounty": "Total Bounty"
     },
+    "Dialogs": {
+      "Intrugli": {
+        "Title": "🧪 Brew Concoction",
+        "SelectRecipe": "Select the type of concoction to prepare",
+        "IngredientsRequired": "Ingredients must be in character inventory"
+      },
+      "Fucina": {
+        "Title": "🔨 Haven Forge",
+        "Repair": "Repair",
+        "SelectItem": "Choose an item to repair"
+      },
+      "BorsaNera": {
+        "Title": "🛍️ Black Market",
+        "GoldAvailable": "Available Gold",
+        "PriceHint": "Prices consider haven level"
+      },
+      "Menagramo": {
+        "Apply": "🖤 Apply Menagramo",
+        "Remove": "🍀 Remove Menagramo",
+        "SelectLevel": "Select Menagramo level",
+        "SelectMethod": "How do you want to remove the curse",
+        "NoActive": "⚠️ No Active Menagramo",
+        "TriggerAnyway": "Trigger unfortunate event anyway"
+      },
+      "Wilderness": {
+        "Title": "⚠️ Wilderness Encounter",
+        "Resolve": "Resolve",
+        "Flee": "Flee",
+        "Ignore": "Ignore"
+      },
+      "TavernReport": {
+        "Title": "Tavern System Report",
+        "ExportLog": "Export Log"
+      },
+      "MigrationProgress": {
+        "Title": "Migration in progress...",
+        "InProgress": "Migration in progress",
+        "DoNotClose": "Do not close this window!"
+      },
+      "SheetsToggle": {
+        "Title": "Toggle Sheet Section"
+      }
+    },
     "Common": {
       "Save": "Save",
       "Cancel": "Cancel",
       "Remove": "Remove",
       "Edit": "Edit",
       "Close": "Close",
-      "Confirm": "Confirm"
+      "Confirm": "Confirm",
+      "Yes": "Yes",
+      "No": "No",
+      "Apply": "Apply"
     }
   }
 }

@@ -59,13 +59,59 @@
       "NoRecords": "Nessuna malefatta registrata",
       "TotalBounty": "Taglia Totale"
     },
+    "Dialogs": {
+      "Intrugli": {
+        "Title": "🧪 Preparazione Intrugli",
+        "SelectRecipe": "Seleziona il tipo di intruglio da preparare",
+        "IngredientsRequired": "Gli ingredienti devono trovarsi nello zaino"
+      },
+      "Fucina": {
+        "Title": "🔨 Fucina del Covo",
+        "Repair": "Ripara",
+        "SelectItem": "Scegli un oggetto da riparare"
+      },
+      "BorsaNera": {
+        "Title": "🛍️ Borsa Nera",
+        "GoldAvailable": "Oro disponibile",
+        "PriceHint": "I prezzi tengono conto del livello del covo"
+      },
+      "Menagramo": {
+        "Apply": "🖤 Applica Menagramo",
+        "Remove": "🍀 Rimuovi Menagramo",
+        "SelectLevel": "Seleziona il livello di Menagramo",
+        "SelectMethod": "Come vuoi rimuovere il menagramo",
+        "NoActive": "⚠️ Nessun Menagramo Attivo",
+        "TriggerAnyway": "Vuoi tirare un evento sfortunato comunque"
+      },
+      "Wilderness": {
+        "Title": "⚠️ Incontro Selvaggio",
+        "Resolve": "Risolvi",
+        "Flee": "Fuggi",
+        "Ignore": "Ignora"
+      },
+      "TavernReport": {
+        "Title": "Report Sistema Taverne",
+        "ExportLog": "Esporta Log"
+      },
+      "MigrationProgress": {
+        "Title": "Migrazione in corso...",
+        "InProgress": "Migrazione in corso",
+        "DoNotClose": "Non chiudere questa finestra!"
+      },
+      "SheetsToggle": {
+        "Title": "Toggle Sezione Sheets"
+      }
+    },
     "Common": {
       "Save": "Salva",
       "Cancel": "Annulla",
       "Remove": "Rimuovi",
       "Edit": "Modifica",
       "Close": "Chiudi",
-      "Confirm": "Conferma"
+      "Confirm": "Conferma",
+      "Yes": "Sì",
+      "No": "No",
+      "Apply": "Applica"
     }
   }
 }
