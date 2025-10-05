@@ -188,18 +188,37 @@ function registerLegacyHooks() {
   Hooks.on('renderActorSheet5eCharacter', handleCharacter);
   Hooks.on('renderActorSheet5eNPC', handleNpc);
 
-  // Extra fallback per v2.x e precedenti
-  Hooks.on('renderActorSheet', (app, html, data) => {
-    try {
-      if (app.actor.type === 'character') {
-        handleCharacter(app, html, data);
-      } else if (app.actor.type === 'npc') {
-        handleNpc(app, html);
+  // Fixed: Use SheetCoordinator for v2.x fallback
+  const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+  
+  if (SheetCoordinator) {
+    SheetCoordinator.registerModule('CompatibilityFix', async (app, html, data) => {
+      try {
+        if (app.actor.type === 'character') {
+          handleCharacter(app, html, data);
+        } else if (app.actor.type === 'npc') {
+          handleNpc(app, html);
+        }
+      } catch (error) {
+        logger.error(MODULE_NAME, 'Errore compatibility fix', error);
       }
-    } catch (error) {
-      logger.error(MODULE_NAME, 'Errore fallback renderActorSheet', error);
-    }
-  });
+    }, {
+      priority: 10,
+      types: ['character', 'npc']
+    });
+  } else {
+    Hooks.on('renderActorSheet', (app, html, data) => {
+      try {
+        if (app.actor.type === 'character') {
+          handleCharacter(app, html, data);
+        } else if (app.actor.type === 'npc') {
+          handleNpc(app, html);
+        }
+      } catch (error) {
+        logger.error(MODULE_NAME, 'Errore fallback renderActorSheet', error);
+      }
+    });
+  }
 
   logger.debug(MODULE_NAME, 'Hook legacy registrati');
 }
