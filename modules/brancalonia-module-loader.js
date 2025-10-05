@@ -264,14 +264,17 @@ class BrancaloniaModuleLoader {
 
     const module = this.modules.get(name);
     if (!module) {
+      const error = new Error('Module not registered');
       logger.warn('ModuleLoader', `Module not found: ${name}`);
-      
+
+      this.moduleErrors.set(name, error);
+
       // Emit event
       logger.events.emit('loader:module-not-found', {
         module: name,
         timestamp: Date.now()
       });
-      
+
       return false;
     }
 
@@ -363,9 +366,19 @@ class BrancaloniaModuleLoader {
 
       const promises = nonLazyModules.map(name => this.loadModule(name));
 
-      await Promise.allSettled(promises);
-      
-      loadedCount += nonLazyModules.length;
+      const results = await Promise.allSettled(promises);
+
+      const newlyLoaded = results.filter(r => r.status === 'fulfilled' && r.value === true).length;
+      loadedCount += newlyLoaded;
+
+      results.forEach((result, idx) => {
+        if (result.status === 'rejected') {
+          const moduleName = nonLazyModules[idx];
+          if (!this.moduleErrors.has(moduleName)) {
+            this.moduleErrors.set(moduleName, result.reason ?? new Error('Unknown load failure'));
+          }
+        }
+      });
     }
 
     const totalTime = logger.endPerformance('module-loading');

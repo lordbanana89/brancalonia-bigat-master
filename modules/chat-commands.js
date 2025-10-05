@@ -282,7 +282,7 @@ class BrancaloniaChatCommands {
       // Update statistics
       this.statistics.commandsExecuted++;
       this.statistics.successfulCommands++;
-      this.statistics.commandsByType[command]++;
+      this.statistics.commandsByType[command] = (this.statistics.commandsByType[command] || 0) + 1;
       
       // Update average execution time
       const totalTime = this.statistics.averageExecutionTime * (this.statistics.commandsExecuted - 1) + execTime;

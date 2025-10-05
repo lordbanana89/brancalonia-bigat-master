@@ -87,19 +87,17 @@ class BrancaloniaSheets {
 
   static _loadTemplates() {
     // Fixed: Preload all Handlebars templates for caching
-    loadTemplates([
-      'modules/brancalonia-bigat/templates/compagnia-sheet-full.hbs',
-      'modules/brancalonia-bigat/templates/infamia-section.hbs',
-      'modules/brancalonia-bigat/templates/lavori-section.hbs',
-      'modules/brancalonia-bigat/templates/malefatte-section.hbs',
-      'modules/brancalonia-bigat/templates/infamia-tracker.hbs',
+    const templatePaths = [
       'modules/brancalonia-bigat/templates/compagnia-sheet.hbs',
       'modules/brancalonia-bigat/templates/dirty-job-card.hbs',
       'modules/brancalonia-bigat/templates/haven-manager.hbs',
+      'modules/brancalonia-bigat/templates/infamia-tracker.hbs',
       'modules/brancalonia-bigat/templates/quick-edit.hbs'
-    ]);
-    
-    logger.debug(this.MODULE_NAME, 'Template Handlebars precaricati (9 templates)');
+    ];
+
+    loadTemplates(templatePaths);
+
+    logger.debug(this.MODULE_NAME, `Template Handlebars precaricati (${templatePaths.length} templates)`);
   }
 
   static _registerSettings() {
@@ -242,12 +240,24 @@ class BrancaloniaSheets {
   }
 
   static registerDataModels() {
-    // Extend actor data model for Brancalonia fields
-    // Fixed: Made async to properly await initialization
-    Hooks.on('preCreateActor', async (document, data, options, userId) => {
-      if (data.type === 'character') {
-        await this.initializeBrancaloniaData(document, data);
-      }
+    // Extend actor data model per inserire i flag di default su nuovi attori
+    Hooks.on('preCreateActor', (document, data) => {
+      if (data.type !== 'character') return;
+
+      const defaults = {
+        initialized: true,
+        infamia: 0,
+        infamiaMax: 10,
+        baraonda: 0,
+        compagnia: {},
+        rifugio: { comfort: 1 },
+        lavoriSporchi: [],
+        malefatte: []
+      };
+
+      data.flags = data.flags ?? {};
+      const existing = data.flags['brancalonia-bigat'] ?? {};
+      data.flags['brancalonia-bigat'] = foundry.utils.mergeObject(defaults, existing, { inplace: false, overwrite: false });
     });
   }
 
@@ -277,6 +287,9 @@ class BrancaloniaSheets {
 
       // Modify header section
       this.enhanceSheetHeader($html, data);
+
+      // Garantisce che i flag di stato siano presenti prima di manipolare la UI
+      await this.ensureBrancaloniaFlags(actor);
 
       // Add Brancalonia resource trackers
       this.addInfamiaSystem($html, actor);
@@ -1007,23 +1020,29 @@ class BrancaloniaSheets {
     };
   }
 
-  static async initializeBrancaloniaData(actor, data) {
-    // Fixed: Batch update atomico invece di 8 setFlag separati
-    // Previene race condition durante actor creation
-    await actor.updateSource({
-      'flags.brancalonia-bigat': {
-        initialized: true,
-        infamia: 0,
-        infamiaMax: 10,
-        baraonda: 0,
-        compagnia: {},
-        rifugio: { comfort: 1 },
-        lavoriSporchi: [],
-        malefatte: []
+  static async ensureBrancaloniaFlags(actor) {
+    const updates = {};
+    const base = 'flags.brancalonia-bigat';
+
+    const ensure = (key, value) => {
+      if (actor.getFlag('brancalonia-bigat', key) === undefined) {
+        updates[`${base}.${key}`] = value;
       }
-    });
-    
-    logger.debug(this.MODULE_NAME, `Dati Brancalonia inizializzati per nuovo actor (${data.name || 'Unnamed'})`);
+    };
+
+    ensure('initialized', true);
+    ensure('infamia', 0);
+    ensure('infamiaMax', 10);
+    ensure('baraonda', 0);
+    ensure('compagnia', {});
+    ensure('rifugio', { comfort: 1 });
+    ensure('lavoriSporchi', []);
+    ensure('malefatte', []);
+
+    if (Object.keys(updates).length > 0) {
+      await actor.update(updates, { diff: false });
+      logger.debug(this.MODULE_NAME, `Flag Brancalonia garantiti per ${actor.name}`, updates);
+    }
   }
 
   static calculateInfamiaLevel(actor) {

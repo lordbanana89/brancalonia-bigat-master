@@ -113,7 +113,7 @@ class BrancaloniaConditions {
             { key: "system.abilities.wis.value", mode: 2, value: "-2" },
             { key: "system.abilities.cha.value", mode: 2, value: "+2" },
             { key: "flags.dnd5e.disadvantage.skill.prc", mode: 5, value: "1" },
-            { key: "flags.dnd5e.advantage.save.wis", mode: 5, value: "fear" }
+            { key: "flags.dnd5e.advantage.save.wis", mode: 5, value: true }
           ],
           note: "Condizione custom per Brancalonia VTT, non nel manuale base. Utile per bagordi e cimeli."
         }
@@ -152,6 +152,10 @@ class BrancaloniaConditions {
 
       // Hook per intercettare i comandi chat
       Hooks.on("chatMessage", (chatLog, message, chatData) => {
+        if (!game.settings.get(MODULE_ID, 'enableCustomConditions')) {
+          return true;
+        }
+
         const command = message.split(' ')[0].toLowerCase();
 
         if (game.brancalonia.chatCommands[command]) {
