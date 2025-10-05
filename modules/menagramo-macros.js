@@ -100,9 +100,11 @@ if (!actor) {
   return;
 }
 
-// Dialog per scegliere il livello
-new Dialog({
-  title: "🖤 Applica Menagramo",
+// Fixed: Migrated to DialogV2 with proper error handling
+new foundry.applications.api.DialogV2({
+  window: {
+    title: "🖤 Applica Menagramo"
+  },
   content: \`
     <div style="padding: 10px;">
       <p><strong>Seleziona il livello di Menagramo per \${actor.name}:</strong></p>
@@ -124,28 +126,30 @@ new Dialog({
       </div>
     </div>
   \`,
-  buttons: {
-    apply: {
-      icon: '<i class="fas fa-skull"></i>',
-      label: "Applica Menagramo",
-      callback: async (html) => {
-        const level = html.find('#menagramo-level').val();
-        
-        try {
-          await game.brancalonia.menagramo.apply(actor, level);
-          ui.notifications.info(\`Menagramo \${level} applicato a \${actor.name}!\`);
-        } catch (error) {
-          console.error("Errore nell'applicazione del menagramo:", error);
-          ui.notifications.error("Errore nell'applicazione del menagramo!");
-        }
+  buttons: [{
+    action: 'apply',
+    label: "Applica Menagramo",
+    icon: 'fas fa-skull',
+    default: true,
+    callback: async (event, button, dialog) => {
+      const html = dialog.element;
+      const level = html.querySelector('#menagramo-level').value;
+      
+      try {
+        await game.brancalonia.menagramo.apply(actor, level);
+        ui.notifications.info(\`Menagramo \${level} applicato a \${actor.name}!\`);
+      } catch (error) {
+        console.error("Errore nell'applicazione del menagramo:", error);
+        ui.notifications.error("Errore nell'applicazione del menagramo!");
       }
-    },
-    cancel: {
-      icon: '<i class="fas fa-times"></i>',
-      label: "Annulla"
     }
-  },
-  default: "apply"
+  }, {
+    action: 'cancel',
+    label: "Annulla",
+    icon: 'fas fa-times'
+  }]
+}, {
+  classes: ['menagramo-apply-dialog']
 }).render(true);
 `;
   }
@@ -175,9 +179,11 @@ if (!actor) {
   return;
 }
 
-// Dialog per scegliere il metodo di rimozione
-new Dialog({
-  title: "🍀 Rimuovi Menagramo",
+// Fixed: Migrated to DialogV2 with proper method selection
+new foundry.applications.api.DialogV2({
+  window: {
+    title: "🍀 Rimuovi Menagramo"
+  },
   content: \`
     <div style="padding: 10px;">
       <p><strong>Come vuoi rimuovere il menagramo da \${actor.name}?</strong></p>
@@ -202,28 +208,30 @@ new Dialog({
       </div>
     </div>
   \`,
-  buttons: {
-    remove: {
-      icon: '<i class="fas fa-hands-helping"></i>',
-      label: "Rimuovi",
-      callback: async (html) => {
-        const method = html.find('#removal-method').val();
-        
-        try {
-          await game.brancalonia.menagramo.remove(actor, method);
-          ui.notifications.success(\`Menagramo rimosso da \${actor.name}!\`);
-        } catch (error) {
-          console.error("Errore nella rimozione del menagramo:", error);
-          ui.notifications.error("Errore nella rimozione del menagramo!");
-        }
+  buttons: [{
+    action: 'remove',
+    label: "Rimuovi",
+    icon: 'fas fa-hands-helping',
+    default: true,
+    callback: async (event, button, dialog) => {
+      const html = dialog.element;
+      const method = html.querySelector('#removal-method').value;
+      
+      try {
+        await game.brancalonia.menagramo.remove(actor, method);
+        ui.notifications.success(\`Menagramo rimosso da \${actor.name}!\`);
+      } catch (error) {
+        console.error("Errore nella rimozione del menagramo:", error);
+        ui.notifications.error("Errore nella rimozione del menagramo!");
       }
-    },
-    cancel: {
-      icon: '<i class="fas fa-times"></i>',
-      label: "Annulla"
     }
-  },
-  default: "remove"
+  }, {
+    action: 'cancel',
+    label: "Annulla",
+    icon: 'fas fa-times'
+  }]
+}, {
+  classes: ['menagramo-remove-dialog']
 }).render(true);
 `;
   }
@@ -259,23 +267,28 @@ const hasMenagramo = actor.effects.some(e =>
 );
 
 if (!hasMenagramo) {
-  new Dialog({
-    title: "⚠️ Nessun Menagramo Attivo",
+  // Fixed: Migrated to DialogV2 for confirmation dialog
+  new foundry.applications.api.DialogV2({
+    window: {
+      title: "⚠️ Nessun Menagramo Attivo"
+    },
     content: \`
       <p>\${actor.name} non ha il menagramo attivo.</p>
       <p>Vuoi tirare un evento sfortunato comunque?</p>
     \`,
-    buttons: {
-      yes: {
-        label: "Sì, tira comunque",
-        callback: async () => {
-          await game.brancalonia.menagramo.triggerMisfortune(actor);
-        }
-      },
-      no: {
-        label: "No, annulla"
+    buttons: [{
+      action: 'yes',
+      label: "Sì, tira comunque",
+      default: true,
+      callback: async () => {
+        await game.brancalonia.menagramo.triggerMisfortune(actor);
       }
-    }
+    }, {
+      action: 'no',
+      label: "No, annulla"
+    }]
+  }, {
+    classes: ['menagramo-confirm-dialog']
   }).render(true);
 } else {
   // Tira direttamente se ha il menagramo
