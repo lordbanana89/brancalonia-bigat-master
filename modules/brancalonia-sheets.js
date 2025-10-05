@@ -308,21 +308,21 @@ class BrancaloniaSheets {
       await this.ensureBrancaloniaFlags(actor);
 
       // Add Brancalonia resource trackers
-      this.addInfamiaSystem($html, actor, app);
+      await this.addInfamiaSystem($html, actor, app);
       
       // Fixed: Delegate to specialized systems to avoid duplication
       // Compagnia managed by compagnia-manager.js
       // Malefatte/Taglia managed by malefatte-taglie-nomea.js
       // We only add sections if systems are not loaded
       if (!game.brancalonia?.compagniaManager) {
-        this.addCompagniaSection($html, actor, app);
+        await this.addCompagniaSection($html, actor, app);
       }
       
-      this.addLavoriSporchiSection($html, actor, app);
-      this.addRifugioSection($html, actor, app);
+      await this.addLavoriSporchiSection($html, actor, app);
+      await this.addRifugioSection($html, actor, app);
       
       if (!game.brancalonia?.malefatteSystem) {
-        this.addMalefatteSection($html, actor, app);
+        await this.addMalefatteSection($html, actor, app);
       }
 
       // Enhance existing sections
@@ -486,7 +486,7 @@ class BrancaloniaSheets {
   // BaraondaSystem rimosso - integrato in TavernBrawlSystem
   // Usa la macro "🍺 Gestione Risse" per le risse da taverna
 
-  static addCompagniaSection(html, actor, app) {
+  static async addCompagniaSection(html, actor, app) {
     try {
       moduleLogger.startPerformance('sheets-add-compagnia');
 
@@ -552,7 +552,7 @@ class BrancaloniaSheets {
     return 'Leggendari';
   }
 
-  static addLavoriSporchiSection(html, actor, app) {
+  static async addLavoriSporchiSection(html, actor, app) {
     try {
       moduleLogger.startPerformance('sheets-add-lavori');
 
@@ -634,7 +634,7 @@ class BrancaloniaSheets {
         `;
   }
 
-  static addRifugioSection(html, actor, app) {
+  static async addRifugioSection(html, actor, app) {
     try {
       moduleLogger.startPerformance('sheets-add-rifugio');
 
@@ -729,7 +729,7 @@ class BrancaloniaSheets {
         `).join('');
   }
 
-  static addMalefatteSection(html, actor, app) {
+  static async addMalefatteSection(html, actor, app) {
     try {
       moduleLogger.startPerformance('sheets-add-malefatte');
 

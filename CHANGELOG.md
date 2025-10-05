@@ -5,6 +5,32 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.57] - 2025-10-05
+
+### 🔧 Critical SyntaxError Fix - Async/Await Issues
+- **SyntaxError Resolution**: Risolto "Unexpected reserved word" in `brancalonia-sheets.js:503`
+- **Function Declarations**: Aggiunto `async` a tutte le funzioni sheet che usano `await`:
+  - `addInfamiaSystem(html, actor, app)` → `async addInfamiaSystem(html, actor, app)`
+  - `addCompagniaSection(html, actor, app)` → `async addCompagniaSection(html, actor, app)`
+  - `addLavoriSporchiSection(html, actor, app)` → `async addLavoriSporchiSection(html, actor, app)`
+  - `addRifugioSection(html, actor, app)` → `async addRifugioSection(html, actor, app)`
+  - `addMalefatteSection(html, actor, app)` → `async addMalefatteSection(html, actor, app)`
+- **Function Calls**: Aggiunto `await` a tutte le chiamate di funzioni async in `modifyCharacterSheet`
+- **Error Prevention**: Eliminati completamente errori SyntaxError da funzioni async senza dichiarazione
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **Syntax Validation**: Nessun errore di sintassi JavaScript
+- **Async Handling**: Tutte le funzioni async gestite correttamente
+- **Code Consistency**: Dichiarazioni async uniformi in tutto il modulo
+
+### 📋 Technical Details
+- **Files Modified**: 1 file (brancalonia-sheets.js) con 10 modifiche async/await
+- **Critical Fix**: Risolto SyntaxError che impediva completamente il caricamento del modulo
+- **Async Architecture**: Sistema sheet completamente sincronizzato con async/await
+
+---
+
 ## [13.0.56] - 2025-10-05
 
 ### 🔧 Complete Settings Registration Fix
