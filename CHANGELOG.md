@@ -5,6 +5,16 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.48] - 2025-01-27
+
+### 🛠️ Actor Sheet Modernization
+
+- **UI Coordinator**: centralized tab injection now targets a single navigation bar, eliminating duplicate "Infamia"/"Compagnia" entries and aligning with Carolingian UI structure (`modules/brancalonia-ui-coordinator.js`).
+- **Template Rendering**: character sub-tabs (Infamia, Compagnia, Rifugio, Lavori, Malefatte) now render via the existing Handlebars templates, restoring full mechanics coverage and data-driven markup.
+- **Tab Events**: click handling syncs with Foundry's native tab controller, allowing proper interaction across both `.sheet-navigation` and `.tabs` elements.
+- **CSS Alignment**: actor sheet primary tab panels stay hidden until activated and adopt consistent spacing to stop content overlap (`styles/brancalonia-dnd5e-v5.css`).
+- **Infamia Helpers**: added scoped status/segment utilities to feed template data and provide tooltip metadata for reputation effects.
+
 ## [13.0.47] - 2025-01-27
 
 ### 🎯 **ANALISI PROFONDA E REFACTORING COMPLETO**
@@ -1715,4 +1725,3 @@ Vedere release precedenti su GitHub per changelog completo.
 
 [13.0.0]: https://github.com/lordbanana89/brancalonia-bigat-master/compare/v12.0.8...v13.0.0
 [12.0.8]: https://github.com/lordbanana89/brancalonia-bigat-master/releases/tag/v12.0.8
-

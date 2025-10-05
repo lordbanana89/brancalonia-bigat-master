@@ -123,6 +123,16 @@ body {
     font-weight: 700;
   }
 
+  .dnd5e2.sheet.actor .sheet-body > .tab[data-group="primary"] {
+    display: none;
+    padding: 1.25rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .dnd5e2.sheet.actor .sheet-body > .tab[data-group="primary"].active {
+    display: block;
+  }
+
   /* Ability scores con colori oro */
   .dnd5e2.sheet.actor .ability-score:hover {
     background: linear-gradient(135deg, #c9a54a, #d4af37) !important;

@@ -348,11 +348,36 @@ class BrancaloniaUICoordinator {
   }
 
   /**
+   * Seleziona la navigazione principale per l'actor sheet
+   * @param {jQuery|HTMLElement|Array} html
+   * @returns {jQuery|null}
+   * @private
+   */
+  static _selectPrimaryNavigation(html) {
+    if (!html) return null;
+
+    if (html instanceof jQuery) {
+      const sheetNav = html.find('.sheet-navigation').first();
+      if (sheetNav.length) return sheetNav;
+      const tabsNav = html.find('.tabs').first();
+      return tabsNav.length ? tabsNav : null;
+    }
+
+    const element = Array.isArray(html) ? html[0] : html;
+    if (!(element instanceof HTMLElement)) {
+      return null;
+    }
+
+    const navElement = element.querySelector('.sheet-navigation') || element.querySelector('.tabs');
+    return navElement ? $(navElement) : null;
+  }
+
+  /**
    * Aggiunge tab Infamia
    */
   static _addInfamiaTab($html, actor) {
-    const nav = $html.find('.sheet-navigation, .tabs');
-    if (nav.length === 0) return;
+    const nav = this._selectPrimaryNavigation($html);
+    if (!nav) return;
 
     const infamiaTab = $(`
       <a class="item" data-tab="infamia">
@@ -385,8 +410,8 @@ class BrancaloniaUICoordinator {
    * Aggiunge tab Compagnia
    */
   static _addCompagniaTab($html, actor) {
-    const nav = $html.find('.sheet-navigation, .tabs');
-    if (nav.length === 0) return;
+    const nav = this._selectPrimaryNavigation($html);
+    if (!nav) return;
 
     const compagniaTab = $(`
       <a class="item" data-tab="compagnia">
@@ -402,8 +427,8 @@ class BrancaloniaUICoordinator {
    * Aggiunge tab Rifugio
    */
   static _addHavenTab($html, actor) {
-    const nav = $html.find('.sheet-navigation, .tabs');
-    if (nav.length === 0) return;
+    const nav = this._selectPrimaryNavigation($html);
+    if (!nav) return;
 
     const havenTab = $(`
       <a class="item" data-tab="haven">
@@ -608,7 +633,7 @@ class BrancaloniaUICoordinator {
       await this._phase4_ApplyStyling($html, actor, data);
 
       // 5. FASE EVENTI - Binding event listeners
-      await this._phase5_BindEvents($html, actor, data);
+      await this._phase5_BindEvents(app, $html, actor, data);
 
       // 6. FASE FINALIZZAZIONE - Cleanup e ottimizzazioni
       await this._phase6_Finalize(app, $html, actor, data);
@@ -726,10 +751,10 @@ class BrancaloniaUICoordinator {
     try {
       // html is already jQuery wrapped by _processActorSheet
 
-      // Trova navigation tabs
-      const nav = html.find('.sheet-navigation, .tabs, nav.sheet-tabs');
+      // Trova navigation tabs prioritizzando la barra principale
+      const nav = this._selectPrimaryNavigation(html);
 
-      if (nav.length && actor.type === 'character') {
+      if (nav && actor.type === 'character') {
         // Aggiungi tabs Brancalonia in ordine corretto
         const tabsToAdd = [
           { id: 'infamia', label: 'Infamia', icon: 'fas fa-skull', priority: 10 },
@@ -944,7 +969,7 @@ class BrancaloniaUICoordinator {
    * @returns {Promise<void>}
    * @fires ui:phase-complete
    */
-  static async _phase5_BindEvents(html, actor, data) {
+  static async _phase5_BindEvents(app, html, actor, data) {
     moduleLogger.startPerformance(`ui-phase5-${actor.id}`);
 
     try {
@@ -962,10 +987,15 @@ class BrancaloniaUICoordinator {
       });
 
       // Tab switching
-      html.on('click.brancalonia', '.tabs .item', (event) => {
+      html.on('click.brancalonia', '.tabs .item, .sheet-navigation .item', (event) => {
         try {
+          event.preventDefault();
+          event.stopPropagation();
           const tab = event.currentTarget.dataset.tab;
-          this._switchTab(html, tab);
+          if (tab) {
+            this._switchTab(html, tab);
+            this._activateNativeTab(app, tab);
+          }
         } catch (error) {
           moduleLogger.error(`Errore tab switching`, error);
         }
@@ -1073,149 +1103,76 @@ class BrancaloniaUICoordinator {
    * @param {Actor} actor - Actor document
    * @returns {string} HTML content
    */
-  static _createInfamiaContent(actor) {
-    const infamia = actor.getFlag(this.ID, 'infamia') || 0;
+  static async _createInfamiaContent(actor) {
+    const infamia = actor.getFlag(this.ID, 'infamia') ?? 0;
+    const infamiaMax = Math.max(1, actor.getFlag(this.ID, 'infamiaMax') ?? 10);
     const level = this._getInfamiaLevel(infamia);
+    const canEdit = actor.isOwner || game.user.isGM;
 
-    return `
-      <div class="infamia-tracker">
-        <h3 class="section-header">
-          <i class="fas fa-skull"></i>
-          Livello Infamia
-        </h3>
-
-        <div class="infamia-display">
-          <div class="infamia-value">${infamia}</div>
-          <div class="infamia-level">${level.name}</div>
-        </div>
-
-        <div class="infamia-bar">
-          <div class="infamia-fill" style="width: ${Math.min(100, infamia)}%"></div>
-        </div>
-
-        <div class="infamia-controls">
-          <button data-action="infamia-add" data-value="1">
-            <i class="fas fa-plus"></i> +1
-          </button>
-          <button data-action="infamia-add" data-value="5">
-            <i class="fas fa-plus"></i> +5
-          </button>
-          <button data-action="infamia-subtract" data-value="1">
-            <i class="fas fa-minus"></i> -1
-          </button>
-          <button data-action="infamia-subtract" data-value="5">
-            <i class="fas fa-minus"></i> -5
-          </button>
-        </div>
-
-        <div class="infamia-effects">
-          <h4>Effetti Attuali:</h4>
-          <ul>
-            ${level.effects.map(e => `<li>${e}</li>`).join('')}
-          </ul>
-        </div>
-      </div>
-    `;
+    return renderTemplate('modules/brancalonia-bigat/templates/infamia-section.hbs', {
+      infamia,
+      infamiaMax,
+      infamiaPercentage: Math.min(100, (infamia / infamiaMax) * 100),
+      infamiaLevel: level.name,
+      infamiaClass: this._getInfamiaClass(level.name),
+      segments: this._generateInfamiaSegments(infamiaMax, infamia),
+      statusMarkup: this._getInfamiaStatusMarkup(level),
+      canEdit
+    });
   }
 
-  static _createCompagniaContent(actor) {
-    const compagniaId = actor.getFlag(this.ID, 'compagniaId');
-    const compagnia = compagniaId ? game.actors.get(compagniaId) : null;
+  static async _createCompagniaContent(actor) {
+    const compagnia = foundry.utils.duplicate(actor.getFlag(this.ID, 'compagnia')) || {};
+    const members = compagnia.membri || compagnia.members || [];
+    const reputation = Number(compagnia.reputazione ?? 0);
 
-    if (!compagnia) {
-      return `
-        <div class="compagnia-empty">
-          <h3>Nessuna Compagnia</h3>
-          <p>Non fai parte di nessuna compagnia.</p>
-          <button data-action="join-compagnia">
-            <i class="fas fa-users"></i> Unisciti a una Compagnia
-          </button>
-        </div>
-      `;
-    }
-
-    return `
-      <div class="compagnia-info">
-        <h3>${compagnia.name}</h3>
-        <div class="compagnia-members">
-          <h4>Membri:</h4>
-          <ul>
-            ${compagnia.getFlag(this.ID, 'members')?.map(id => {
-              const member = game.actors.get(id);
-              return member ? `<li>${member.name}</li>` : '';
-            }).join('') || '<li>Nessun membro</li>'}
-          </ul>
-        </div>
-        <button data-action="leave-compagnia">
-          <i class="fas fa-sign-out-alt"></i> Lascia Compagnia
-        </button>
-      </div>
-    `;
+    return renderTemplate('modules/brancalonia-bigat/templates/compagnia-sheet-full.hbs', {
+      compagnia,
+      members,
+      reputationLabel: this._getReputationLabel(reputation),
+      canEdit: actor.isOwner || game.user.isGM
+    });
   }
 
-  static _createHavenContent(actor) {
-    const haven = actor.getFlag(this.ID, 'haven') || {};
+  static async _createHavenContent(actor) {
+    const rifugio = foundry.utils.duplicate(actor.getFlag(this.ID, 'rifugio')) || {};
+    const comfortLevel = Number(rifugio.comfort ?? rifugio.level ?? 1);
+    const features = Array.isArray(rifugio.features) ? rifugio.features : [];
+    const canEdit = actor.isOwner || game.user.isGM;
 
-    return `
-      <div class="haven-info">
-        <h3>Il Tuo Rifugio</h3>
-        <div class="haven-details">
-          <p><strong>Nome:</strong> ${haven.name || 'Nessun rifugio'}</p>
-          <p><strong>Tipo:</strong> ${haven.type || 'N/A'}</p>
-          <p><strong>Livello:</strong> ${haven.level || 0}</p>
-        </div>
-        <button data-action="manage-haven">
-          <i class="fas fa-home"></i> Gestisci Rifugio
-        </button>
-      </div>
-    `;
+    return renderTemplate('modules/brancalonia-bigat/templates/rifugio-section.hbs', {
+      rifugio,
+      comfortLevels: this._renderComfortLevels(comfortLevel, canEdit),
+      comfortBenefits: this._getComfortBenefits(comfortLevel),
+      features: this._renderRifugioFeatures(features, canEdit),
+      canEdit
+    });
   }
 
-  static _createLavoriContent(actor) {
-    const jobs = actor.getFlag(this.ID, 'activeJobs') || [];
+  static async _createLavoriContent(actor) {
+    const lavori = foundry.utils.duplicate(actor.getFlag(this.ID, 'lavoriSporchi')) || [];
+    const canEdit = actor.isOwner || game.user.isGM;
 
-    return `
-      <div class="lavori-list">
-        <h3>Lavori Sporchi Attivi</h3>
-        ${jobs.length > 0 ? `
-          <ul class="job-list">
-            ${jobs.map(job => `
-              <li class="job-item">
-                <strong>${job.name}</strong>
-                <span class="job-reward">${job.reward} du</span>
-                <button data-action="complete-job" data-job-id="${job.id}">
-                  Completa
-                </button>
-              </li>
-            `).join('')}
-          </ul>
-        ` : '<p>Nessun lavoro attivo</p>'}
-        <button data-action="find-job">
-          <i class="fas fa-search"></i> Cerca Lavoro
-        </button>
-      </div>
-    `;
+    return renderTemplate('modules/brancalonia-bigat/templates/lavori-section.hbs', {
+      lavori,
+      completedCount: lavori.filter(l => l.completed).length,
+      activeCount: lavori.filter(l => !l.completed).length,
+      totalEarnings: this._calculateTotalEarnings(lavori),
+      canEdit
+    });
   }
 
-  static _createMalefatteContent(actor) {
-    const malefatte = actor.getFlag(this.ID, 'malefatte') || [];
+  static async _createMalefatteContent(actor) {
+    const malefatte = foundry.utils.duplicate(actor.getFlag(this.ID, 'malefatte')) || [];
+    const canEdit = actor.isOwner || game.user.isGM;
+    const stats = this._summarizeMalefatte(malefatte);
 
-    return `
-      <div class="malefatte-list">
-        <h3>Le Tue Malefatte</h3>
-        ${malefatte.length > 0 ? `
-          <ul>
-            ${malefatte.map(m => `
-              <li>
-                <strong>${m.name}</strong>
-                <span class="malefatta-date">${m.date}</span>
-                <span class="infamia-gain">+${m.infamia} Infamia</span>
-              </li>
-            `).join('')}
-          </ul>
-        ` : '<p>Nessuna malefatta registrata</p>'}
-      </div>
-    `;
+    return renderTemplate('modules/brancalonia-bigat/templates/malefatte-section.hbs', {
+      malefatte,
+      stats,
+      totalBounty: malefatte.reduce((sum, m) => sum + (Number(m.bounty) || 0), 0),
+      canEdit
+    });
   }
 
   static _createPrivilegiContent(actor) {
@@ -1357,12 +1314,122 @@ class BrancaloniaUICoordinator {
   }
 
   static _getInfamiaLevel(value) {
-    if (value >= 100) return { name: 'Nemico Pubblico', effects: ['Taglia enorme', 'Kill on sight'] };
-    if (value >= 75) return { name: 'Fuorilegge', effects: ['Taglia maggiore', 'Bandito dalle città'] };
-    if (value >= 50) return { name: 'Ricercato', effects: ['Taglia minore', '-2 Persuasione'] };
-    if (value >= 25) return { name: 'Mal Visto', effects: ['Guardie sospettose', '-1 Persuasione'] };
-    if (value >= 10) return { name: 'Poco Noto', effects: ['Piccoli sconti dai criminali'] };
-    return { name: 'Sconosciuto', effects: [] };
+    if (value >= 100) return { name: 'Nemico Pubblico', icon: '💀', effects: ['Taglia enorme', 'Kill on sight'] };
+    if (value >= 75) return { name: 'Fuorilegge', icon: '⚔️', effects: ['Taglia maggiore', 'Bandito dalle città'] };
+    if (value >= 50) return { name: 'Ricercato', icon: '🚨', effects: ['Taglia minore', '-2 Persuasione'] };
+    if (value >= 25) return { name: 'Mal Visto', icon: '👁️', effects: ['Guardie sospettose', '-1 Persuasione'] };
+    if (value >= 10) return { name: 'Poco Noto', icon: '🕵️', effects: ['Piccoli sconti dai criminali'] };
+    return { name: 'Sconosciuto', icon: '🎭', effects: [] };
+  }
+
+  static _getInfamiaClass(levelName) {
+    const slugify = foundry?.utils?.slugify ?? ((str) => String(str).toLowerCase().replace(/[^a-z0-9]+/g, '-'));
+    const slug = slugify(levelName || 'sconosciuto', { replacement: '-' });
+    return `infamia-${slug}`;
+  }
+
+  static _generateInfamiaSegments(max, current) {
+    const cappedMax = Math.max(1, Number(max) || 1);
+    const value = Number(current) || 0;
+    let segments = '';
+    for (let i = 1; i <= cappedMax; i += 1) {
+      const filled = i <= value ? 'filled' : '';
+      segments += `<div class="segment ${filled}" data-level="${i}"></div>`;
+    }
+    return segments;
+  }
+
+  static _getInfamiaStatusMarkup(level) {
+    if (!level) return '';
+    const effects = Array.isArray(level.effects) && level.effects.length
+      ? level.effects.join(' • ')
+      : 'Nessun effetto attivo';
+    return `<span class="infamia-status" data-tooltip="${effects}">${level.icon || ''} ${effects}</span>`;
+  }
+
+  static _getReputationLabel(value) {
+    if (value <= -7) return 'Maledetti';
+    if (value <= -4) return 'Malvisti';
+    if (value <= -1) return 'Sospetti';
+    if (value === 0) return 'Sconosciuti';
+    if (value <= 3) return 'Conosciuti';
+    if (value <= 6) return 'Rispettati';
+    if (value <= 9) return 'Famosi';
+    return 'Leggendari';
+  }
+
+  static _calculateTotalEarnings(lavori) {
+    return (lavori || [])
+      .filter(l => l && l.completed)
+      .reduce((total, lavoro) => total + (Number(lavoro?.reward) || 0), 0);
+  }
+
+  static _summarizeMalefatte(malefatte) {
+    const categories = { furto: 0, truffa: 0, rissa: 0, omicidio: 0 };
+    for (const entry of malefatte || []) {
+      const type = (entry?.type || '').toLowerCase();
+      if (categories[type] !== undefined) categories[type] += 1;
+    }
+    return categories;
+  }
+
+  static _renderComfortLevels(currentLevel, canEdit) {
+    const levels = [
+      { level: 1, name: 'Squallido', icon: '🕸️' },
+      { level: 2, name: 'Modesto', icon: '🪑' },
+      { level: 3, name: 'Confortevole', icon: '🛋️' },
+      { level: 4, name: 'Lussuoso', icon: '👑' },
+      { level: 5, name: 'Principesco', icon: '🏰' }
+    ];
+
+    return levels.map(l => {
+      const checked = l.level === currentLevel ? 'checked' : '';
+      const disabled = canEdit ? '' : 'disabled';
+      const selected = l.level === currentLevel ? 'selected' : '';
+      return `
+        <label class="comfort-level ${selected}">
+          <input type="radio" name="flags.brancalonia-bigat.rifugio.comfort" value="${l.level}" ${checked} ${disabled} />
+          <span class="comfort-icon">${l.icon}</span>
+          <span class="comfort-name">${l.name}</span>
+        </label>
+      `;
+    }).join('');
+  }
+
+  static _getComfortBenefits(level) {
+    const benefits = {
+      1: 'Riposo Lungo recupera solo metà dei Dadi Vita',
+      2: 'Riposo normale, nessun bonus',
+      3: '+1 ai tiri di recupero durante il riposo',
+      4: '+2 ai tiri di recupero, riposo breve in 30 minuti',
+      5: '+3 ai tiri di recupero, ispirazione gratuita dopo riposo lungo'
+    };
+    const value = benefits[level] || benefits[1];
+    return `<p class="comfort-benefit">${value}</p>`;
+  }
+
+  static _renderRifugioFeatures(features, canEdit) {
+    const enabled = Array.isArray(features) ? features : [];
+    const availableFeatures = [
+      { id: 'cantina', name: 'Cantina Segreta', icon: '🍷' },
+      { id: 'armeria', name: 'Armeria', icon: '⚔️' },
+      { id: 'laboratorio', name: 'Laboratorio', icon: '⚗️' },
+      { id: 'biblioteca', name: 'Biblioteca', icon: '📚' },
+      { id: 'prigione', name: 'Prigione', icon: '🔒' },
+      { id: 'passaggio', name: 'Passaggio Segreto', icon: '🚪' },
+      { id: 'torre', name: 'Torre di Guardia', icon: '🗼' },
+      { id: 'stalla', name: 'Stalla', icon: '🐴' }
+    ];
+
+    const disabled = canEdit ? '' : 'disabled';
+
+    return availableFeatures.map(f => `
+      <label class="feature-checkbox ${enabled.includes(f.id) ? 'selected' : ''}">
+        <input type="checkbox" name="flags.brancalonia-bigat.rifugio.features" value="${f.id}" ${enabled.includes(f.id) ? 'checked' : ''} ${disabled} />
+        <span class="feature-icon">${f.icon}</span>
+        <span class="feature-name">${f.name}</span>
+      </label>
+    `).join('');
   }
 
   static _handleAction(action, actor, event) {
@@ -1385,12 +1452,38 @@ class BrancaloniaUICoordinator {
 
   static _switchTab(html, tabId) {
     // Switch active tab
-    html.find('.tabs .item').removeClass('active');
+    html.find('.tabs .item, .sheet-navigation .item').removeClass('active');
     html.find(`.tabs .item[data-tab="${tabId}"]`).addClass('active');
+    html.find(`.sheet-navigation .item[data-tab="${tabId}"]`).addClass('active');
 
     // Switch content
     html.find('.tab').removeClass('active');
     html.find(`.tab[data-tab="${tabId}"]`).addClass('active');
+  }
+
+  static _activateNativeTab(app, tabId) {
+    if (!app) return;
+
+    try {
+      if (Array.isArray(app._tabs)) {
+        for (const tab of app._tabs) {
+          if (typeof tab?.activate === 'function') {
+            tab.activate(tabId, { triggerCallback: true });
+          }
+        }
+      }
+
+      if (app._tabsByName && typeof app._tabsByName === 'object') {
+        const groups = Object.values(app._tabsByName);
+        for (const group of groups) {
+          if (group && typeof group.activate === 'function') {
+            group.activate(tabId, { triggerCallback: true });
+          }
+        }
+      }
+    } catch (error) {
+      moduleLogger.debug?.('Impossibile sincronizzare tab native', error);
+    }
   }
 
   static _fixExistingContent(html, actor) {
