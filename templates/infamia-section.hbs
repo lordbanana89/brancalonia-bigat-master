@@ -1,0 +1,46 @@
+<div class="infamia-tracker brancalonia-resource">
+  <div class="resource-header">
+    <h3>
+      <span class="icon">🗡️</span>
+      {{localize "BRANCALONIA.Infamia.Title"}}
+      <span class="tooltip-anchor" data-tooltip="{{localize 'BRANCALONIA.Infamia.Tooltip'}}">ⓘ</span>
+    </h3>
+  </div>
+  <div class="resource-content">
+    <div class="infamia-bar">
+      <div class="infamia-fill" style="width: {{infamiaPercentage}}%"></div>
+      <div class="infamia-segments">
+        {{{segments}}}
+      </div>
+    </div>
+    <div class="infamia-controls">
+      {{#if canEdit}}
+        <button type="button" class="infamia-adjust" data-adjust="-1" 
+                aria-label="{{localize 'BRANCALONIA.Infamia.Decrease'}}"
+                title="{{localize 'BRANCALONIA.Infamia.Decrease'}}">
+          −
+        </button>
+        <input type="number" class="infamia-value" name="flags.brancalonia-bigat.infamia"
+               value="{{infamia}}" min="0" max="{{infamiaMax}}"
+               aria-label="{{localize 'BRANCALONIA.Infamia.Current'}}" />
+        <span class="separator">/</span>
+        <input type="number" class="infamia-max" name="flags.brancalonia-bigat.infamiaMax"
+               value="{{infamiaMax}}" min="1"
+               aria-label="{{localize 'BRANCALONIA.Infamia.Max'}}" />
+        <button type="button" class="infamia-adjust" data-adjust="1"
+                aria-label="{{localize 'BRANCALONIA.Infamia.Increase'}}"
+                title="{{localize 'BRANCALONIA.Infamia.Increase'}}">
+          +
+        </button>
+      {{else}}
+        <span class="infamia-display">{{infamia}} / {{infamiaMax}}</span>
+      {{/if}}
+    </div>
+    <div class="infamia-status">
+      <span class="level-indicator {{infamiaClass}}">
+        {{infamiaLevel}}
+      </span>
+    </div>
+  </div>
+</div>
+

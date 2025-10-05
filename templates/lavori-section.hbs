@@ -1,0 +1,58 @@
+<div class="lavori-section brancalonia-section">
+  <div class="section-header ornate">
+    <h2>
+      <span class="icon">💼</span>
+      {{localize "BRANCALONIA.LavoriSporchi.Title"}}
+      <span class="icon">💼</span>
+    </h2>
+  </div>
+  <div class="section-content">
+    <div class="lavori-list">
+      {{#if lavori.length}}
+        {{#each lavori}}
+          <div class="lavoro-entry {{#if this.completed}}completed{{/if}}" data-index="{{@index}}">
+            <div class="lavoro-header">
+              <h4>{{this.title}}</h4>
+              <span class="lavoro-reward">{{this.reward}} mo</span>
+            </div>
+            <div class="lavoro-details">
+              {{#if this.description}}
+                <p class="lavoro-description">{{this.description}}</p>
+              {{/if}}
+              {{#if this.deadline}}
+                <p class="lavoro-deadline">
+                  <i class="far fa-calendar"></i> {{localize "BRANCALONIA.LavoriSporchi.Deadline"}}: {{this.deadline}}
+                </p>
+              {{/if}}
+            </div>
+            {{#if ../canEdit}}
+              <div class="lavoro-actions">
+                <button type="button" class="toggle-lavoro" data-index="{{@index}}"
+                        aria-label="{{#if this.completed}}{{localize 'BRANCALONIA.LavoriSporchi.Reopen'}}{{else}}{{localize 'BRANCALONIA.LavoriSporchi.Complete'}}{{/if}}">
+                  <i class="fas {{#if this.completed}}fa-undo{{else}}fa-check{{/if}}"></i>
+                  {{#if this.completed}}
+                    {{localize "BRANCALONIA.LavoriSporchi.Reopen"}}
+                  {{else}}
+                    {{localize "BRANCALONIA.LavoriSporchi.Complete"}}
+                  {{/if}}
+                </button>
+                <button type="button" class="archive-lavori-btn" data-index="{{@index}}"
+                        aria-label="{{localize 'BRANCALONIA.LavoriSporchi.Archive'}} {{this.title}}">
+                  <i class="fas fa-archive"></i>
+                </button>
+              </div>
+            {{/if}}
+          </div>
+        {{/each}}
+      {{else}}
+        <p class="empty-state">{{localize "BRANCALONIA.LavoriSporchi.NoJobs"}}</p>
+      {{/if}}
+    </div>
+    {{#if canEdit}}
+      <button type="button" class="add-lavoro-btn" aria-label="{{localize 'BRANCALONIA.LavoriSporchi.Add'}}">
+        <i class="fas fa-plus"></i> {{localize "BRANCALONIA.LavoriSporchi.Add"}}
+      </button>
+    {{/if}}
+  </div>
+</div>
+

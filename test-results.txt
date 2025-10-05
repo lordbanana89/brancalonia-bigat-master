@@ -1,0 +1,15 @@
+
+> test
+> vitest --run
+
+
+ RUN  v3.2.4 /Users/erik/Desktop/brancalonia-bigat-master
+
+ ✓ tests/modules/brancalonia-module-loader.test.js (21 tests) 19ms
+ ✓ tests/modules/brancalonia-logger.test.js (69 tests) 16ms
+
+ Test Files  2 passed (2)
+      Tests  90 passed (90)
+   Start at  20:02:54
+   Duration  305ms (transform 72ms, setup 0ms, collect 101ms, tests 36ms, environment 0ms, prepare 111ms)
+

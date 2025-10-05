@@ -1,0 +1,48 @@
+<div class="malefatte-section brancalonia-section">
+  <div class="section-header ornate">
+    <h3>
+      <span class="icon">📜</span>
+      {{localize "BRANCALONIA.Malefatte.Title"}}
+      <span class="tooltip-anchor" data-tooltip="{{localize 'BRANCALONIA.Malefatte.Tooltip'}}">ⓘ</span>
+    </h3>
+  </div>
+  <div class="section-content">
+    <div class="malefatte-stats">
+      <div class="crime-counter">
+        <span class="crime-type">{{localize "BRANCALONIA.Malefatte.Theft"}}: {{stats.furto}}</span>
+        <span class="crime-type">{{localize "BRANCALONIA.Malefatte.Fraud"}}: {{stats.truffa}}</span>
+        <span class="crime-type">{{localize "BRANCALONIA.Malefatte.Brawl"}}: {{stats.rissa}}</span>
+        <span class="crime-type">{{localize "BRANCALONIA.Malefatte.Murder"}}: {{stats.omicidio}}</span>
+      </div>
+      <div class="total-bounty">
+        {{localize "BRANCALONIA.Malefatte.TotalBounty"}}: <strong>{{totalBounty}} mo</strong>
+      </div>
+    </div>
+    <div class="malefatte-list">
+      {{#if malefatte.length}}
+        {{#each malefatte}}
+          <div class="malefatta-entry">
+            <div class="malefatta-info">
+              <span class="malefatta-type">{{this.type}}</span>
+              <span class="malefatta-bounty">{{this.bounty}} mo</span>
+              {{#if this.date}}
+                <span class="malefatta-date">{{this.date}}</span>
+              {{/if}}
+            </div>
+            {{#if this.description}}
+              <p class="malefatta-description">{{this.description}}</p>
+            {{/if}}
+          </div>
+        {{/each}}
+      {{else}}
+        <p class="no-malefatte">{{localize "BRANCALONIA.Malefatte.NoRecords"}}</p>
+      {{/if}}
+    </div>
+    {{#if canEdit}}
+      <button type="button" class="add-malefatta-btn" aria-label="{{localize 'BRANCALONIA.Malefatte.Add'}}">
+        <span class="icon">⚖️</span> {{localize "BRANCALONIA.Malefatte.Add"}}
+      </button>
+    {{/if}}
+  </div>
+</div>
+

@@ -49,6 +49,9 @@ class BrancaloniaSheets {
       logger.startPerformance('sheets-init');
       logger.info(this.MODULE_NAME, 'Inizializzazione modifiche sheet personaggi...');
 
+      // Fixed: Preload Handlebars templates
+      this._loadTemplates();
+
       // Registra settings
       this._registerSettings();
 
@@ -81,6 +84,23 @@ class BrancaloniaSheets {
         timestamp: Date.now()
       });
     }
+  }
+
+  static _loadTemplates() {
+    // Fixed: Preload all Handlebars templates for caching
+    loadTemplates([
+      'modules/brancalonia-bigat/templates/compagnia-sheet-full.hbs',
+      'modules/brancalonia-bigat/templates/infamia-section.hbs',
+      'modules/brancalonia-bigat/templates/lavori-section.hbs',
+      'modules/brancalonia-bigat/templates/malefatte-section.hbs',
+      'modules/brancalonia-bigat/templates/infamia-tracker.hbs',
+      'modules/brancalonia-bigat/templates/compagnia-sheet.hbs',
+      'modules/brancalonia-bigat/templates/dirty-job-card.hbs',
+      'modules/brancalonia-bigat/templates/haven-manager.hbs',
+      'modules/brancalonia-bigat/templates/quick-edit.hbs'
+    ]);
+    
+    logger.debug(this.MODULE_NAME, 'Template Handlebars precaricati (9 templates)');
   }
 
   static _registerSettings() {
@@ -466,61 +486,17 @@ class BrancaloniaSheets {
       if (biographyTab.length && !html.find('.compagnia-section').length) {
         const compagnia = actor.getFlag('brancalonia-bigat', 'compagnia') || {};
 
-      const compagniaHTML = `
-                <div class="compagnia-section brancalonia-section">
-                    <div class="section-header ornate">
-                        <h2>
-                            <span class="icon">⚔️</span>
-                            La Compagnia
-                            <span class="icon">⚔️</span>
-                        </h2>
-                    </div>
-                    <div class="section-content">
-                        <div class="compagnia-info">
-                            <div class="field-group">
-                                <label>Nome della Compagnia:</label>
-                                <input type="text" name="flags.brancalonia-bigat.compagnia.nome"
-                                       value="${compagnia.nome || ''}"
-                                       placeholder="Es: I Fratelli del Pugnale" />
-                            </div>
-                            <div class="field-group">
-                                <label>Motto:</label>
-                                <input type="text" name="flags.brancalonia-bigat.compagnia.motto"
-                                       value="${compagnia.motto || ''}"
-                                       placeholder="Es: 'Vino, Oro e Gloria!'" />
-                            </div>
-                            <div class="field-group">
-                                <label>Stemma/Simbolo:</label>
-                                <textarea name="flags.brancalonia-bigat.compagnia.stemma"
-                                          placeholder="Descrivi lo stemma della compagnia..."
-                                          rows="3">${compagnia.stemma || ''}</textarea>
-                            </div>
-                        </div>
-                        <div class="compagnia-members">
-                            <h4>Membri della Compagnia:</h4>
-                            <div class="members-list">
-                                ${this.renderCompagniaMembers(compagnia.membri || [])}
-                            </div>
-                            <button class="add-member-btn">
-                                <span class="icon">➕</span> Aggiungi Membro
-                            </button>
-                        </div>
-                        <div class="compagnia-reputation">
-                            <h4>Reputazione della Compagnia:</h4>
-                            <div class="reputation-tracker">
-                                <input type="range" name="flags.brancalonia-bigat.compagnia.reputazione"
-                                       min="-10" max="10" value="${compagnia.reputazione || 0}"
-                                       class="reputation-slider" />
-                                <div class="reputation-labels">
-                                    <span class="rep-negative">Infame</span>
-                                    <span class="rep-current">${this.getReputationLabel(compagnia.reputazione || 0)}</span>
-                                    <span class="rep-positive">Eroica</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
+        // Fixed: Use Handlebars template instead of inline HTML
+        const compagniaHTML = await renderTemplate(
+          'modules/brancalonia-bigat/templates/compagnia-sheet-full.hbs',
+          {
+            compagnia,
+            members: compagnia.membri || [],
+            reputationLabel: this.getReputationLabel(compagnia.reputazione || 0),
+            canEdit: app.isEditable
+          }
+        );
+        
         biographyTab.append(compagniaHTML);
 
         const renderTime = logger.endPerformance('sheets-add-compagnia');

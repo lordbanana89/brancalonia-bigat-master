@@ -1,0 +1,57 @@
+{
+  "BRANCALONIA": {
+    "Compagnia": {
+      "Title": "The Company",
+      "Name": "Company Name",
+      "NamePlaceholder": "e.g., The Dagger Brothers",
+      "Motto": "Motto",
+      "MottoPlaceholder": "e.g., 'Wine, Gold and Glory!'",
+      "Symbol": "Emblem/Symbol",
+      "SymbolPlaceholder": "Describe the company emblem...",
+      "Members": "Company Members",
+      "NoMembers": "No members registered yet",
+      "AddMember": "Add Member",
+      "RemoveMember": "Remove Member"
+    },
+    "Infamia": {
+      "Title": "Infamy and Reputation",
+      "Current": "Current Infamy",
+      "Max": "Maximum",
+      "Level": "Level",
+      "Adjust": "Adjust Infamy",
+      "Increase": "Increase Infamy",
+      "Decrease": "Decrease Infamy"
+    },
+    "LavoriSporchi": {
+      "Title": "Dirty Jobs",
+      "Add": "Add Job",
+      "NoJobs": "No jobs in progress",
+      "JobTitle": "Job Title",
+      "Reward": "Reward",
+      "Deadline": "Deadline",
+      "Complete": "Complete",
+      "Archive": "Archive",
+      "Status": "Status",
+      "Active": "Active",
+      "Completed": "Completed"
+    },
+    "Malefatte": {
+      "Title": "Crime Registry",
+      "Add": "Register Crime",
+      "Type": "Crime Type",
+      "Bounty": "Bounty",
+      "Date": "Date",
+      "NoRecords": "No crimes registered",
+      "TotalBounty": "Total Bounty"
+    },
+    "Common": {
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "Remove": "Remove",
+      "Edit": "Edit",
+      "Close": "Close",
+      "Confirm": "Confirm"
+    }
+  }
+}
+
