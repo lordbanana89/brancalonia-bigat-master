@@ -298,10 +298,21 @@ class BrancaloniaSheets {
 
       // Add Brancalonia resource trackers
       this.addInfamiaSystem($html, actor);
-      this.addCompagniaSection($html, actor);
+      
+      // Fixed: Delegate to specialized systems to avoid duplication
+      // Compagnia managed by compagnia-manager.js
+      // Malefatte/Taglia managed by malefatte-taglie-nomea.js
+      // We only add sections if systems are not loaded
+      if (!game.brancalonia?.compagniaManager) {
+        this.addCompagniaSection($html, actor);
+      }
+      
       this.addLavoriSporchiSection($html, actor);
       this.addRifugioSection($html, actor);
-      this.addMalefatteSection($html, actor);
+      
+      if (!game.brancalonia?.malefatteSystem) {
+        this.addMalefatteSection($html, actor);
+      }
 
       // Enhance existing sections
       this.enhanceAbilitiesSection($html, actor);
