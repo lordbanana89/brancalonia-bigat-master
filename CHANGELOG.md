@@ -5,6 +5,27 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.58] - 2025-10-05
+
+### 🔧 Critical Settings Configuration Path Fix
+- **Path Correction**: Corretto path caricamento `settings-config.json` da `modules/settings-config.json` a `modules/brancalonia-bigat/settings-config.json`
+- **File Positioning**: Posizionato correttamente `settings-config.json` nella directory del modulo per Foundry VTT
+- **404 Error Resolution**: Eliminato errore 404 caricamento configurazione settings
+- **Module Structure**: Struttura del modulo completamente compatibile con Foundry VTT
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **File Structure**: Struttura del modulo corretta per Foundry VTT
+- **Configuration Loading**: Sistema configurazione completamente funzionante
+- **Settings Registration**: Sistema registrazione settings completamente operativo
+
+### 📋 Technical Details
+- **Files Modified**: 1 file (settings-registration.js) con correzione path caricamento
+- **Critical Fix**: Risolto problema caricamento configurazione che impediva registrazione settings
+- **Module Structure**: Struttura del modulo completamente compatibile con Foundry VTT
+
+---
+
 ## [13.0.57] - 2025-10-05
 
 ### 🔧 Critical SyntaxError Fix - Async/Await Issues

@@ -53,7 +53,7 @@ class SettingsRegistration {
       moduleLogger.startPerformance('settings-config-load');
       moduleLogger.info('📂 Caricamento settings-config.json...');
 
-      const response = await fetch('modules/settings-config.json');
+      const response = await fetch('modules/brancalonia-bigat/settings-config.json');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
