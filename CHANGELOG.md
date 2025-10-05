@@ -5,6 +5,28 @@ Tutte le modifiche significative a questo progetto saranno documentate in questo
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.0.52] - 2025-10-05
+
+### 🔧 Active Effects Warning Fix
+- **Warning Fix**: Risolto warning "Registro effetti generato non disponibile" in Active Effects
+- **Logic Improvement**: Distingue tra errori 404 (normali) e errori reali
+- **Logging Enhancement**: Cambiato da WARN a DEBUG per file mancanti (comportamento normale)
+- **Console Cleanup**: Eliminati warning inutili dalla console
+- **Behavior**: File mancante è comportamento normale, non errore
+
+### ✅ Quality Assurance
+- **Test Suite**: Tutti i 93 test passano correttamente
+- **Console Clean**: Nessun warning inutile
+- **Active Effects**: Sistema funzionante con fallback automatico
+- **Error Handling**: Gestione errori migliorata
+
+### 📋 Technical Details
+- **Files Modified**: 1 file (brancalonia-active-effects.js) con 17 inserimenti e 5 rimozioni
+- **Warning Resolution**: Eliminati warning inutili per file mancanti
+- **Logging Level**: Ottimizzato livello di logging per comportamenti normali
+
+---
+
 ## [13.0.51] - 2025-10-05
 
 ### 🔧 Critical SyntaxError and renderTemplate Fixes
