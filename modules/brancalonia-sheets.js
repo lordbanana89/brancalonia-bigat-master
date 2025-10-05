@@ -16,6 +16,7 @@
  */
 
 import logger from './brancalonia-logger.js';
+import { SheetCoordinator } from './brancalonia-sheet-coordinator.js';
 
 class BrancaloniaSheets {
   static VERSION = '2.0.0';
