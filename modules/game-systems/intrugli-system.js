@@ -150,20 +150,33 @@ class IntrugliSystem {
       </div>
     `;
 
-    new Dialog({
-      title: '🧪 Preparazione Intrugli',
+    // Fixed: Migrated to DialogV2 (Foundry v13)
+    const dialog = new foundry.applications.api.DialogV2({
+      window: {
+        title: '🧪 Preparazione Intrugli'
+      },
       content,
-      buttons: { close: { label: 'Chiudi', icon: '<i class="fas fa-times"></i>' } },
-      render: (html) => {
-        html[0].querySelectorAll('.recipe-card button').forEach((btn) => {
+      buttons: [{
+        action: 'close',
+        label: 'Chiudi',
+        icon: 'fas fa-times'
+      }],
+      render: (event, html) => {
+        html.querySelectorAll('.recipe-card button').forEach((btn) => {
           btn.addEventListener('click', async (event) => {
             const id = event.currentTarget.dataset.recipe;
             await this.brewIntruglio(actor, id);
-            html.closest('.dialog')?.querySelector('.dialog-buttons button')?.click?.();
+            dialog.close();
           });
         });
       }
-    }, { width: 700, height: 600 }).render(true);
+    }, { 
+      classes: ['intrugli-dialog'],
+      width: 700,
+      height: 600
+    });
+    
+    dialog.render(true);
   }
 
   static _recipeCard(recipe) {
