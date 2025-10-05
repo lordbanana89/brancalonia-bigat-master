@@ -1359,9 +1359,11 @@ class BrancaloniaCovoV2 {
           return;
         }
 
-        // Progress dialog
-        const progressDialog = new Dialog({
-          title: 'Migrazione in corso...',
+        // Fixed: Progress dialog migrated to DialogV2
+        const progressDialog = new foundry.applications.api.DialogV2({
+          window: {
+            title: 'Migrazione in corso...'
+          },
           content: `
             <div style="padding: 20px; text-align: center;">
               <h3>🔄 Migrazione in corso...</h3>
@@ -1374,11 +1376,12 @@ class BrancaloniaCovoV2 {
               <p style="color: #666; font-size: 0.9em;">Non chiudere questa finestra!</p>
             </div>
           `,
-          buttons: {},
-          close: () => false
+          buttons: [],
+          close: () => false,
+          rejectClose: true
         }, {
-          width: 400,
-          closeOnEscape: false
+          classes: ['migration-progress-dialog'],
+          width: 400
         });
 
         progressDialog.render(true);

@@ -181,26 +181,31 @@ const content = \`
   </form>
 \`;
 
-new Dialog({
-  title: 'Toggle Sezione Sheets',
-  content,
-  buttons: {
-    apply: {
-      label: 'Applica',
-      callback: async (html) => {
-        const section = html.find('[name="section"]').val();
-        const action = html.find('[name="action"]').val();
-        const enabled = action === 'enable';
-        
-        await BrancaloniaSheets.setSectionEnabled(section, enabled);
-        ui.notifications.info(\`Sezione \${section} \${enabled ? 'abilitata' : 'disabilitata'}!\`);
-      }
-    },
-    cancel: {
-      label: 'Annulla'
-    }
+// Fixed: Migrated to DialogV2
+new foundry.applications.api.DialogV2({
+  window: {
+    title: 'Toggle Sezione Sheets'
   },
-  default: 'apply'
+  content,
+  buttons: [{
+    action: 'apply',
+    label: 'Applica',
+    default: true,
+    callback: async (event, button, dialog) => {
+      const html = dialog.element;
+      const section = html.querySelector('[name="section"]').value;
+      const action = html.querySelector('[name="action"]').value;
+      const enabled = action === 'enable';
+      
+      await BrancaloniaSheets.setSectionEnabled(section, enabled);
+      ui.notifications.info(\`Sezione \${section} \${enabled ? 'abilitata' : 'disabilitata'}!\`);
+    }
+  }, {
+    action: 'cancel',
+    label: 'Annulla'
+  }]
+}, {
+  classes: ['sheets-toggle-dialog']
 }).render(true);`,
         img: 'icons/svg/explosion.svg',
         folder: null

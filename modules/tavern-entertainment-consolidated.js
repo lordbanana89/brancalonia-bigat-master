@@ -1211,22 +1211,27 @@ class BrancaloniaTavernEntertainment {
       </div>
     `;
 
-    new Dialog({
-      title: 'Report Sistema Taverne',
+    // Fixed: Migrated to DialogV2
+    new foundry.applications.api.DialogV2({
+      window: {
+        title: 'Report Sistema Taverne'
+      },
       content: report,
-      buttons: {
-        export: {
-          label: 'Esporta Log',
-          callback: () => {
-            const log = JSON.stringify({ status, stats }, null, 2);
-            const blob = new Blob([log], { type: 'application/json' });
-            saveDataToFile(blob, 'text/json', 'tavern-entertainment-report.json');
-          }
-        },
-        close: {
-          label: 'Chiudi'
+      buttons: [{
+        action: 'export',
+        label: 'Esporta Log',
+        callback: () => {
+          const log = JSON.stringify({ status, stats }, null, 2);
+          const blob = new Blob([log], { type: 'application/json' });
+          saveDataToFile(blob, 'text/json', 'tavern-entertainment-report.json');
         }
-      }
+      }, {
+        action: 'close',
+        label: 'Chiudi',
+        default: true
+      }]
+    }, {
+      classes: ['tavern-report-dialog']
     }).render(true);
 
     logger.info(this.MODULE_NAME, 'Report visualizzato', { status, stats });
