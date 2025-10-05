@@ -86,14 +86,17 @@ class BrancaloniaSheets {
   }
 
   static _loadTemplates() {
-    // Fixed: Preload all Handlebars templates for caching
+    // Fixed: Preload ALL Handlebars templates for caching
     const templatePaths = [
       'modules/brancalonia-bigat/templates/compagnia-sheet.hbs',
       'modules/brancalonia-bigat/templates/compagnia-sheet-full.hbs',
-      'modules/brancalonia-bigat/templates/dirty-job-card.hbs',
-      'modules/brancalonia-bigat/templates/haven-manager.hbs',
       'modules/brancalonia-bigat/templates/infamia-tracker.hbs',
       'modules/brancalonia-bigat/templates/infamia-section.hbs',
+      'modules/brancalonia-bigat/templates/lavori-section.hbs',
+      'modules/brancalonia-bigat/templates/malefatte-section.hbs',
+      'modules/brancalonia-bigat/templates/rifugio-section.hbs',
+      'modules/brancalonia-bigat/templates/dirty-job-card.hbs',
+      'modules/brancalonia-bigat/templates/haven-manager.hbs',
       'modules/brancalonia-bigat/templates/quick-edit.hbs'
     ];
 
