@@ -458,11 +458,23 @@ class ReputationInfamiaSystem {
    * Setup degli hooks di sistema
    */
   _setupHooks() {
-    // Hook rendering scheda attore (per UI)
-    Hooks.on('renderActorSheet', (app, html, data) => {
-      if (!game.settings.get(ReputationInfamiaSystem.NAMESPACE, 'trackInfamia')) return;
-      this._renderReputationUI(app, html, data);
-    });
+    // Fixed: Use SheetCoordinator
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule('ReputationInfamia', async (app, html, data) => {
+        if (!game.settings.get(ReputationInfamiaSystem.NAMESPACE, 'trackInfamia')) return;
+        this._renderReputationUI(app, html, data);
+      }, {
+        priority: 70,
+        types: ['character']
+      });
+    } else {
+      Hooks.on('renderActorSheet', (app, html, data) => {
+        if (!game.settings.get(ReputationInfamiaSystem.NAMESPACE, 'trackInfamia')) return;
+        this._renderReputationUI(app, html, data);
+      });
+    }
 
     // Hook su update attore
     Hooks.on('updateActor', (actor, data, options, userId) => {

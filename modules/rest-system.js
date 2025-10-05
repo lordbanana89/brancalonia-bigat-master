@@ -105,8 +105,17 @@ class BrancaloniaRestSystem {
     Hooks.on('dnd5e.restCompleted', BrancaloniaRestSystem._onRestCompleted);
     Hooks.on('dnd5e.preRestCompleted', BrancaloniaRestSystem._onPreRestCompleted);
 
-    // Hook per gestione attori e sheet
-    Hooks.on('renderActorSheet', BrancaloniaRestSystem._onRenderActorSheet);
+    // Fixed: Use SheetCoordinator
+    const SheetCoordinator = window.SheetCoordinator || game.brancalonia?.SheetCoordinator;
+    
+    if (SheetCoordinator) {
+      SheetCoordinator.registerModule('RestSystem', BrancaloniaRestSystem._onRenderActorSheet, {
+        priority: 70,
+        types: ['character']
+      });
+    } else {
+      Hooks.on('renderActorSheet', BrancaloniaRestSystem._onRenderActorSheet);
+    }
     Hooks.on('renderRestDialog', BrancaloniaRestSystem._onRenderRestDialog);
 
     // Hook per controllo location
