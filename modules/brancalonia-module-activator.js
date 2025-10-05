@@ -372,7 +372,7 @@ class BrancaloniaModuleActivator {
       // Init hook rimosso - viene chiamato da initialize() esterno
 
       // Hook per ready
-      Hooks.once('init', () => {
+      Hooks.once('ready', () => {
         logger.info(this.MODULE_NAME, 'Fase READY iniziata');
         this.readyPhase();
 
@@ -982,7 +982,7 @@ class BrancaloniaModuleActivator {
 // Inizializza quando Foundry è pronto
 // Inizializzazione principale - solo una volta
 if (!window.BrancaloniaModuleActivator) {
-  Hooks.once('init', () => {
+  Hooks.once('ready', () => {
     BrancaloniaModuleActivator.initialize();
   });
 

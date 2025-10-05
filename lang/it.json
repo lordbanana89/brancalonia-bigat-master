@@ -27,6 +27,24 @@
       "Feared": "Temuto",
       "Legendary": "Leggendario"
     },
+    "LavoriSporchi": {
+      "Title": "Lavori Sporchi",
+      "Tooltip": "Missioni e incarichi completati",
+      "Add": "Nuovo Lavoro",
+      "Archive": "Archivia Completati",
+      "NoJobs": "Nessun lavoro registrato",
+      "Completed": "Completati",
+      "Active": "In Corso",
+      "TotalEarnings": "Guadagno Totale",
+      "Registry": "Registro dei Lavori",
+      "JobTitle": "Titolo",
+      "Client": "Cliente",
+      "Reward": "Ricompensa",
+      "Description": "Descrizione",
+      "Deadline": "Scadenza",
+      "Complete": "Completa",
+      "Reopen": "Riapri"
+    },
     "Compagnia": {
       "Reputation": "Reputazione della Compagnia",
       "Infamous": "Infame",

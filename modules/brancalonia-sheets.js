@@ -89,9 +89,11 @@ class BrancaloniaSheets {
     // Fixed: Preload all Handlebars templates for caching
     const templatePaths = [
       'modules/brancalonia-bigat/templates/compagnia-sheet.hbs',
+      'modules/brancalonia-bigat/templates/compagnia-sheet-full.hbs',
       'modules/brancalonia-bigat/templates/dirty-job-card.hbs',
       'modules/brancalonia-bigat/templates/haven-manager.hbs',
       'modules/brancalonia-bigat/templates/infamia-tracker.hbs',
+      'modules/brancalonia-bigat/templates/infamia-section.hbs',
       'modules/brancalonia-bigat/templates/quick-edit.hbs'
     ];
 
@@ -417,6 +419,7 @@ class BrancaloniaSheets {
             infamiaLevel: this.getInfamiaLabel(currentInfamia),
             infamiaClass: this.getInfamiaClass(currentInfamia),
             segments: this.generateInfamiaSegments(maxInfamia),
+            statusMarkup: this.getInfamiaStatus(Math.min(currentInfamia, maxInfamia)),
             canEdit: true
           }
         );
@@ -541,45 +544,18 @@ class BrancaloniaSheets {
       if (featuresTab.length && !html.find('.lavori-sporchi-section').length) {
         const lavori = actor.getFlag('brancalonia-bigat', 'lavoriSporchi') || [];
 
-      const lavoriHTML = `
-                <div class="lavori-sporchi-section brancalonia-section">
-                    <div class="section-header">
-                        <h3>
-                            <span class="icon">💰</span>
-                            Lavori Sporchi
-                            <span class="tooltip-anchor" data-tooltip="Missioni e incarichi completati">ⓘ</span>
-                        </h3>
-                    </div>
-                    <div class="section-content">
-                        <div class="lavori-summary">
-                            <div class="stat-box">
-                                <span class="stat-label">Completati:</span>
-                                <span class="stat-value">${lavori.filter(l => l.completed).length}</span>
-                            </div>
-                            <div class="stat-box">
-                                <span class="stat-label">In Corso:</span>
-                                <span class="stat-value">${lavori.filter(l => !l.completed).length}</span>
-                            </div>
-                            <div class="stat-box">
-                                <span class="stat-label">Guadagno Totale:</span>
-                                <span class="stat-value">${this.calculateTotalEarnings(lavori)} 🪙</span>
-                            </div>
-                        </div>
-                        <div class="lavori-list">
-                            <h4>Registro dei Lavori:</h4>
-                            ${this.renderLavoriList(lavori)}
-                        </div>
-                        <div class="lavori-actions">
-                            <button class="add-lavoro-btn">
-                                <span class="icon">📋</span> Nuovo Lavoro
-                            </button>
-                            <button class="archive-lavori-btn">
-                                <span class="icon">📚</span> Archivia Completati
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            `;
+        // Fixed: Use Handlebars template instead of inline HTML
+        const lavoriHTML = await renderTemplate(
+          'modules/brancalonia-bigat/templates/lavori-section.hbs',
+          {
+            lavori,
+            completedCount: lavori.filter(l => l.completed).length,
+            activeCount: lavori.filter(l => !l.completed).length,
+            totalEarnings: this.calculateTotalEarnings(lavori),
+            canEdit: true
+          }
+        );
+        
         featuresTab.append(lavoriHTML);
 
         const renderTime = logger.endPerformance('sheets-add-lavori');
@@ -1008,7 +984,8 @@ class BrancaloniaSheets {
 
     // Ensure Brancalonia flags exist
     if (!actor.getFlag('brancalonia-bigat', 'initialized')) {
-      this.initializeBrancaloniaData(actor);
+      // Effettua init soft senza attendere per evitare ritardi non necessari
+      this.ensureBrancaloniaFlags(actor);
     }
 
     // Calculate derived values

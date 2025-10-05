@@ -1,12 +1,28 @@
-<div class="lavori-section brancalonia-section">
-  <div class="section-header ornate">
-    <h2>
-      <span class="icon">💼</span>
+<div class="lavori-sporchi-section brancalonia-section">
+  <div class="section-header">
+    <h3>
+      <span class="icon">💰</span>
       {{localize "BRANCALONIA.LavoriSporchi.Title"}}
-      <span class="icon">💼</span>
-    </h2>
+      <span class="tooltip-anchor" data-tooltip="{{localize 'BRANCALONIA.LavoriSporchi.Tooltip'}}">ⓘ</span>
+    </h3>
   </div>
   <div class="section-content">
+    <div class="lavori-summary">
+      <div class="stat-box">
+        <span class="stat-label">{{localize "BRANCALONIA.LavoriSporchi.Completed"}}:</span>
+        <span class="stat-value">{{completedCount}}</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">{{localize "BRANCALONIA.LavoriSporchi.Active"}}:</span>
+        <span class="stat-value">{{activeCount}}</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">{{localize "BRANCALONIA.LavoriSporchi.TotalEarnings"}}:</span>
+        <span class="stat-value">{{totalEarnings}} 🪙</span>
+      </div>
+    </div>
+    <div class="lavori-list">
+      <h4>{{localize "BRANCALONIA.LavoriSporchi.Registry"}}:</h4>
     <div class="lavori-list">
       {{#if lavori.length}}
         {{#each lavori}}
@@ -48,10 +64,16 @@
         <p class="empty-state">{{localize "BRANCALONIA.LavoriSporchi.NoJobs"}}</p>
       {{/if}}
     </div>
+    </div>
     {{#if canEdit}}
-      <button type="button" class="add-lavoro-btn" aria-label="{{localize 'BRANCALONIA.LavoriSporchi.Add'}}">
-        <i class="fas fa-plus"></i> {{localize "BRANCALONIA.LavoriSporchi.Add"}}
-      </button>
+      <div class="lavori-actions">
+        <button type="button" class="add-lavoro-btn" aria-label="{{localize 'BRANCALONIA.LavoriSporchi.Add'}}">
+          <span class="icon">📋</span> {{localize "BRANCALONIA.LavoriSporchi.Add"}}
+        </button>
+        <button type="button" class="archive-lavori-btn" aria-label="{{localize 'BRANCALONIA.LavoriSporchi.Archive'}}">
+          <span class="icon">📚</span> {{localize "BRANCALONIA.LavoriSporchi.Archive"}}
+        </button>
+      </div>
     {{/if}}
   </div>
 </div>

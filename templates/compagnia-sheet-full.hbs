@@ -1,72 +1,57 @@
 <div class="compagnia-section brancalonia-section">
   <div class="section-header ornate">
-    <h2>
-      <span class="icon">⚔️</span>
-      {{localize "BRANCALONIA.Compagnia.Title"}}
-      <span class="icon">⚔️</span>
-    </h2>
+    <h2><span class="icon">⚔️</span> La Compagnia <span class="icon">⚔️</span></h2>
   </div>
   <div class="section-content">
     <div class="compagnia-info">
       <div class="field-group">
-        <label>{{localize "BRANCALONIA.Compagnia.Name"}}:</label>
-        <input type="text" name="flags.brancalonia-bigat.compagnia.nome"
-               value="{{compagnia.nome}}"
-               placeholder="{{localize 'BRANCALONIA.Compagnia.NamePlaceholder'}}" 
-               {{#unless canEdit}}disabled{{/unless}} />
+        <label>Nome della Compagnia:</label>
+        <input type="text" name="flags.brancalonia-bigat.compagnia.nome" value="{{compagnia.nome}}"
+               placeholder="Es: I Fratelli del Pugnale" {{#unless canEdit}}disabled{{/unless}} />
       </div>
       <div class="field-group">
-        <label>{{localize "BRANCALONIA.Compagnia.Motto"}}:</label>
-        <input type="text" name="flags.brancalonia-bigat.compagnia.motto"
-               value="{{compagnia.motto}}"
-               placeholder="{{localize 'BRANCALONIA.Compagnia.MottoPlaceholder'}}"
-               {{#unless canEdit}}disabled{{/unless}} />
+        <label>Motto:</label>
+        <input type="text" name="flags.brancalonia-bigat.compagnia.motto" value="{{compagnia.motto}}"
+               placeholder="Es: 'Vino, Oro e Gloria!'" {{#unless canEdit}}disabled{{/unless}} />
       </div>
       <div class="field-group">
-        <label>{{localize "BRANCALONIA.Compagnia.Symbol"}}:</label>
-        <textarea name="flags.brancalonia-bigat.compagnia.stemma"
-                  placeholder="{{localize 'BRANCALONIA.Compagnia.SymbolPlaceholder'}}"
-                  rows="3"
-                  {{#unless canEdit}}disabled{{/unless}}>{{compagnia.stemma}}</textarea>
+        <label>Stemma/Simbolo:</label>
+        <textarea name="flags.brancalonia-bigat.compagnia.stemma" rows="3"
+                  placeholder="Descrivi lo stemma della compagnia..." {{#unless canEdit}}disabled{{/unless}}>{{compagnia.stemma}}</textarea>
       </div>
     </div>
     <div class="compagnia-members">
-      <h4>{{localize "BRANCALONIA.Compagnia.Members"}}:</h4>
+      <h4>Membri della Compagnia:</h4>
       <div class="members-list">
         {{#if members.length}}
           {{#each members}}
             <div class="member-entry" data-member-id="{{@index}}">
               <span class="member-name">{{this.name}}</span>
               <span class="member-role">{{this.role}}</span>
-              {{#if ../canEdit}}
-                <button type="button" class="remove-member" data-index="{{@index}}"
-                        aria-label="{{localize 'BRANCALONIA.Compagnia.RemoveMember'}} {{this.name}}">
-                  <i class="fas fa-times"></i>
-                </button>
+              {{#if ../../canEdit}}
+              <button type="button" class="remove-member" data-member-id="{{@index}}" aria-label="Rimuovi membro">✖</button>
               {{/if}}
             </div>
           {{/each}}
         {{else}}
-          <p class="no-members">{{localize "BRANCALONIA.Compagnia.NoMembers"}}</p>
+          <p class="no-members">Nessun membro registrato</p>
         {{/if}}
       </div>
       {{#if canEdit}}
-        <button type="button" class="add-member-btn" aria-label="{{localize 'BRANCALONIA.Compagnia.AddMember'}}">
-          <span class="icon">➕</span> {{localize "BRANCALONIA.Compagnia.AddMember"}}
-        </button>
+      <button type="button" class="add-member-btn">
+        <span class="icon">➕</span> Aggiungi Membro
+      </button>
       {{/if}}
     </div>
     <div class="compagnia-reputation">
-      <h4>{{localize "BRANCALONIA.Compagnia.Reputation"}}:</h4>
+      <h4>Reputazione della Compagnia:</h4>
       <div class="reputation-tracker">
-        <input type="range" name="flags.brancalonia-bigat.compagnia.reputazione"
-               min="-10" max="10" value="{{compagnia.reputazione}}"
-               class="reputation-slider"
-               {{#unless canEdit}}disabled{{/unless}} />
+        <input type="range" name="flags.brancalonia-bigat.compagnia.reputazione" min="-10" max="10"
+               value="{{compagnia.reputazione}}" class="reputation-slider" {{#unless canEdit}}disabled{{/unless}} />
         <div class="reputation-labels">
-          <span class="rep-negative">{{localize "BRANCALONIA.Compagnia.Infamous"}}</span>
+          <span class="rep-negative">Infame</span>
           <span class="rep-current">{{reputationLabel}}</span>
-          <span class="rep-positive">{{localize "BRANCALONIA.Compagnia.Heroic"}}</span>
+          <span class="rep-positive">Eroica</span>
         </div>
       </div>
     </div>
