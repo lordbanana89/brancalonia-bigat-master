@@ -13,9 +13,9 @@ import { BrancaloniaModuleLoader } from '../modules/brancalonia-module-loader.js
 class BrancaloniaCore {
 
   static ID = 'brancalonia-bigat';
-  static VERSION = '11.0.0';
-  static MINIMUM_DND5E = '5.0.0';
-  static MINIMUM_FOUNDRY = '12.0.0';
+  static VERSION = '13.0.63';
+  static MINIMUM_DND5E = '5.1.0';
+  static MINIMUM_FOUNDRY = '13.0.0';
 
   /**
    * Map of module dependencies
