@@ -6,9 +6,7 @@
   "img": "icons/sundries/scrolls/scroll-plain-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Pergamena - Equipaggiamento iniziale del background azzeccagarbugli.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Pergamena - Equipaggiamento iniziale del background azzeccagarbugli.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -27,10 +25,9 @@
     },
     "uses": {
       "value": 0,
-      "max": "",
       "recovery": []
     },
-    "attunement": ""
+    "identifier": "bg-azzeccagarbuglipergamena-683622"
   },
   "effects": [],
   "folder": null,

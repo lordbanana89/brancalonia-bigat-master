@@ -6,9 +6,7 @@
   "img": "icons/tools/scribal/ink-pot-glass-corked-black.webp",
   "system": {
     "description": {
-      "value": "<p>Calamaio di inchiostro nero - Equipaggiamento iniziale del background azzeccagarbugli.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Calamaio di inchiostro nero - Equipaggiamento iniziale del background azzeccagarbugli.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-azzeccagarbuglicalamaio-di-inchiostro-nero-b058f4"
   },
   "effects": [],
   "folder": null,

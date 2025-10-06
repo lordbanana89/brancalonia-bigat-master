@@ -261,5 +261,15 @@
   "_key": "!tables!bottinoscadente",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Bottino Scadente - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bottinoscadente",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

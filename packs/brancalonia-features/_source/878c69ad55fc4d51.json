@@ -6,36 +6,24 @@
   "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Druidico (1° livello)</strong></p><p>Conosci il Druidico, il linguaggio segreto dei druidi. Puoi parlarlo e usarlo per lasciare messaggi nascosti. Tu e altri che conoscono questa lingua notate automaticamente tali messaggi. Altri notano la presenza del messaggio con una prova di Saggezza (Percezione) CD 15 ma non possono decifrarlo senza magia.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Druidico (1° livello)</strong></p><p>Conosci il Druidico, il linguaggio segreto dei druidi. Puoi parlarlo e usarlo per lasciare messaggi nascosti. Tu e altri che conoscono questa lingua notate automaticamente tali messaggi. Altri notano la presenza del messaggio con una prova di Saggezza (Percezione) CD 15 ma non possono decifrarlo senza magia.</p>"
     },
     "source": "Manuale del Giocatore p.66",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Druido Livello 1",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "878c69ad55fc4d51"
   },
   "effects": [],
   "folder": null,

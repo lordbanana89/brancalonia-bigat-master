@@ -6,46 +6,35 @@
   "img": "icons/consumables/potions/bottle-round-corked-red.webp",
   "system": {
     "description": {
-      "value": "<p>Contenitore in pelle trattata che può contenere fino a 4 litri di liquido.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Contenitore in pelle trattata che può contenere fino a 4 litri di liquido.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "2 kg (pieno)",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
     },
     "rarity": "common",
-    "attunement": 0
+    "attunement": 0,
+    "identifier": "gear-002_otre"
   },
   "effects": [],
   "folder": null,

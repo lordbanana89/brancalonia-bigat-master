@@ -6,36 +6,24 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Come azione, puoi aprire la tua consapevolezza per rilevare presenze sacre o profane. Fino alla fine del tuo turno successivo, conosci posizione e tipo di celestiali, immondi o non morti entro 18 metri.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Come azione, puoi aprire la tua consapevolezza per rilevare presenze sacre o profane. Fino alla fine del tuo turno successivo, conosci posizione e tipo di celestiali, immondi o non morti entro 18 metri.</p>"
     },
     "source": "Player's Handbook (D&D 5e)",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Paladino Livello 1",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "79276b5885728f2e"
   },
   "effects": [],
   "folder": null,

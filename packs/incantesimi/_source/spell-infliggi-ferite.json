@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Effettua un attacco con incantesimo in mischia contro una creatura che puoi raggiungere. Se colpisci, il bersaglio subisce 3d10 danni necrotici.</p><h3>Note per il DM</h3><p><em>Inflict Wounds è il più alto danno single-target livello 1. Touch range lo bilancia. Ottimo per cleric aggressivi.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Effettua un attacco con incantesimo in mischia contro una creatura che puoi raggiungere. Se colpisci, il bersaglio subisce 3d10 danni necrotici.</p><h3>Note per il DM</h3><p><em>Inflict Wounds è il più alto danno single-target livello 1. Touch range lo bilancia. Ottimo per cleric aggressivi.</em></p>"
     },
     "source": "D&D 5e PHB p.253",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-infliggi-ferite"
   },
   "effects": [],
   "folder": null,

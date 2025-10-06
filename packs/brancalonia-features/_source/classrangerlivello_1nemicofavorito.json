@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 1° livello, hai esperienza significativa nello studiare, rintracciare, cacciare e persino parlare con un certo tipo di nemico. Scegli un tipo di nemico favorito. Hai vantaggio alle prove di Saggezza (Sopravvivenza) per rintracciare i tuoi nemici favoriti, così come alle prove di Intelligenza per ricordare informazioni su di loro. Quando ottieni questo privilegio, impari anche un linguaggio a tua scelta parlato dai tuoi nemici favoriti, se ne parlano uno.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 1° livello, hai esperienza significativa nello studiare, rintracciare, cacciare e persino parlare con un certo tipo di nemico. Scegli un tipo di nemico favorito. Hai vantaggio alle prove di Saggezza (Sopravvivenza) per rintracciare i tuoi nemici favoriti, così come alle prove di Intelligenza per ricordare informazioni su di loro. Quando ottieni questo privilegio, impari anche un linguaggio a tua scelta parlato dai tuoi nemici favoriti, se ne parlano uno.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.91",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classrangerlivello_1nemicofavorito"
   },
   "effects": [],
   "folder": null,

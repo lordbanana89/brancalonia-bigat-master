@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 9° livello, puoi ritirare un tiro salvezza fallito. Se lo fai, devi usare il nuovo tiro, e non puoi usare di nuovo questo privilegio fino a che non completi un riposo lungo. Puoi usare questo privilegio due volte tra i riposi lunghi a partire dal 13° livello e tre volte a partire dal 17° livello.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 9° livello, puoi ritirare un tiro salvezza fallito. Se lo fai, devi usare il nuovo tiro, e non puoi usare di nuovo questo privilegio fino a che non completi un riposo lungo. Puoi usare questo privilegio due volte tra i riposi lunghi a partire dal 13° livello e tre volte a partire dal 17° livello.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.72",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classguerrierolivello_9indomabile"
   },
   "effects": [],
   "folder": null,

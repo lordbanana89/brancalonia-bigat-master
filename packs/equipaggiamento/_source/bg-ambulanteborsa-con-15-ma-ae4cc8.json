@@ -6,9 +6,7 @@
   "img": "icons/containers/bags/sack-simple-leather-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Borsa con 15 ma - Equipaggiamento iniziale del background ambulante.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Borsa con 15 ma - Equipaggiamento iniziale del background ambulante.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -32,16 +30,16 @@
       "gp": 0,
       "pp": 0
     },
-    "attunement": "",
     "armor": {
       "type": "trinket",
       "value": null,
       "dex": null
     },
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "bg-ambulanteborsa-con-15-ma-ae4cc8",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

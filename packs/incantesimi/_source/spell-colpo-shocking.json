@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Un fulmine balza dalla tua mano per dare una scossa a una creatura che cerchi di toccare. Effettua un attacco in mischia con incantesimo contro il bersaglio. Hai vantaggio sul tiro per colpire se il bersaglio indossa armatura di metallo. Se colpisci, il bersaglio subisce 1d8 danni da fulmine e non può effettuare reazioni fino all'inizio del suo prossimo turno.</p><h3>Note per il DM</h3><p><em>Shocking Grasp è escape tool per wizard in melee. No reaction è potentissimo. Advantage vs metal armor lo rende anti-knight.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Un fulmine balza dalla tua mano per dare una scossa a una creatura che cerchi di toccare. Effettua un attacco in mischia con incantesimo contro il bersaglio. Hai vantaggio sul tiro per colpire se il bersaglio indossa armatura di metallo. Se colpisci, il bersaglio subisce 1d8 danni da fulmine e non può effettuare reazioni fino all'inizio del suo prossimo turno.</p><h3>Note per il DM</h3><p><em>Shocking Grasp è escape tool per wizard in melee. No reaction è potentissimo. Advantage vs metal armor lo rende anti-knight.</em></p>"
     },
     "source": "D&D 5e PHB p.275",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-colpo-shocking"
   },
   "effects": [],
   "folder": null,

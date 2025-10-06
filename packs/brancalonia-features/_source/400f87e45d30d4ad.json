@@ -6,36 +6,24 @@
   "img": "icons/environment/wilderness/tree-spruce.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Privilegio del Circolo (10° livello)</strong></p><p>Al 10° livello, ottieni un privilegio avanzato del tuo Circolo Druidico.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Privilegio del Circolo (10° livello)</strong></p><p>Al 10° livello, ottieni un privilegio avanzato del tuo Circolo Druidico.</p>"
     },
     "source": "Player's Handbook (D&D 5e)",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Druido Livello 10",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "400f87e45d30d4ad"
   },
   "effects": [],
   "folder": null,

@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Una creatura a tua scelta che puoi vedere entro gittata recupera punti ferita pari a 1d4 + il tuo modificatore di caratteristica da incantatore. Questo incantesimo non ha effetto su non morti o costrutti.</p><h3>Note per il DM</h3><p><em>Healing Word è il miglior combat healing per action economy. Range + bonus action lo rende superiore a Cure Wounds in fight.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Una creatura a tua scelta che puoi vedere entro gittata recupera punti ferita pari a 1d4 + il tuo modificatore di caratteristica da incantatore. Questo incantesimo non ha effetto su non morti o costrutti.</p><h3>Note per il DM</h3><p><em>Healing Word è il miglior combat healing per action economy. Range + bonus action lo rende superiore a Cure Wounds in fight.</em></p>"
     },
     "source": "D&D 5e PHB p.250",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "bonus",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-parola-guaritrice"
   },
   "effects": [],
   "folder": null,

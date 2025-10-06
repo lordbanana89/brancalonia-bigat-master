@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Quando raggiungi il 6° livello, e poi di nuovo all'8°, 12°, 14°, 16° e 19° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, o puoi aumentare due punteggi di caratteristica a tua scelta di 1. Come di norma, non puoi aumentare un punteggio di caratteristica sopra 20 usando questa capacità. Usando la regola opzionale dei talenti, puoi scegliere invece un talento.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Quando raggiungi il 6° livello, e poi di nuovo all'8°, 12°, 14°, 16° e 19° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, o puoi aumentare due punteggi di caratteristica a tua scelta di 1. Come di norma, non puoi aumentare un punteggio di caratteristica sopra 20 usando questa capacità. Usando la regola opzionale dei talenti, puoi scegliere invece un talento.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.72",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classguerrierolivello_6attaccoextramigliorato"
   },
   "effects": [],
   "folder": null,

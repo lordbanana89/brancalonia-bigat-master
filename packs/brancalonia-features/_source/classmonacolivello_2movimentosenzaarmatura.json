@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 2° livello, la tua velocità aumenta di 10 piedi mentre non indossi armatura e non usi scudo. Questo bonus aumenta quando raggiungi certi livelli da monaco.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 2° livello, la tua velocità aumenta di 10 piedi mentre non indossi armatura e non usi scudo. Questo bonus aumenta quando raggiungi certi livelli da monaco.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.78",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classmonacolivello_2movimentosenzaarmatura"
   },
   "effects": [],
   "folder": null,

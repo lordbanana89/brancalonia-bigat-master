@@ -6,36 +6,24 @@
   "img": "icons/magic/nature/wolf-paw-glow-large-green.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Incantesimi Bestiali (18° livello)</strong></p><p>A partire dal 18° livello, puoi lanciare molti dei tuoi incantesimi da druido in qualsiasi forma assumi tramite Forma Selvatica. Puoi eseguire le componenti somatiche e verbali di un incantesimo da druido mentre sei in forma bestiale, ma non puoi fornire componenti materiali.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Incantesimi Bestiali (18° livello)</strong></p><p>A partire dal 18° livello, puoi lanciare molti dei tuoi incantesimi da druido in qualsiasi forma assumi tramite Forma Selvatica. Puoi eseguire le componenti somatiche e verbali di un incantesimo da druido mentre sei in forma bestiale, ma non puoi fornire componenti materiali.</p>"
     },
     "source": "Manuale del Giocatore p.65",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Druido Livello 18",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "3b1c21aa02bae1ed"
   },
   "effects": [],
   "folder": null,

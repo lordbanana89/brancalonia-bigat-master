@@ -6,9 +6,7 @@
   "img": "icons/sundries/books/book-worn-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Libro con i nomi di aspiranti teatranti - Equipaggiamento iniziale del background impresario.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Libro con i nomi di aspiranti teatranti - Equipaggiamento iniziale del background impresario.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-impresariolibro-con-i-nomi-di-aspiranti-teatranti-c9b76b"
   },
   "effects": [],
   "folder": null,

@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Piastre di metallo sovrapposte cucite su un supporto di cuoio.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Piastre di metallo sovrapposte cucite su un supporto di cuoio.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -35,16 +33,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd103_corazza_di_scaglie",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Tocchi una creatura consenziente. Il bersaglio ottiene una velocità di volo di 60 piedi per la durata. Quando l'incantesimo termina, il bersaglio cade se è ancora in aria, a meno che non possa fermare la caduta.</p><h3>Note per il DM</h3><p><em>Fly cambia encounter design. 60 ft speed è velocissimo. Concentrazione è unico limite reale. Indoor/underground limita utilità.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Tocchi una creatura consenziente. Il bersaglio ottiene una velocità di volo di 60 piedi per la durata. Quando l'incantesimo termina, il bersaglio cade se è ancora in aria, a meno che non possa fermare la caduta.</p><h3>Note per il DM</h3><p><em>Fly cambia encounter design. 60 ft speed è velocissimo. Concentrazione è unico limite reale. Indoor/underground limita utilità.</em></p>"
     },
     "source": "D&D 5e PHB p.243",
     "level": 3,
@@ -32,8 +30,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 10,
@@ -47,41 +44,28 @@
     "target": {
       "value": 1,
       "width": null,
-      "units": "",
       "type": "creature"
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-volare"
   },
   "effects": [],
   "folder": null,

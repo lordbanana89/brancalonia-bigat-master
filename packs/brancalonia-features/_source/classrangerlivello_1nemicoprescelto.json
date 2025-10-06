@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 1° livello, hai esperienza significativa nello studio, tracciamento, caccia e persino nel parlare con un certo tipo di nemico. Scegli un tipo di nemico prescelto.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 1° livello, hai esperienza significativa nello studio, tracciamento, caccia e persino nel parlare con un certo tipo di nemico. Scegli un tipo di nemico prescelto.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.91",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classrangerlivello_1nemicoprescelto"
   },
   "effects": [],
   "folder": null,

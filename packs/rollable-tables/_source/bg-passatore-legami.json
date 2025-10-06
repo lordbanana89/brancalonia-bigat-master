@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Passatore - Legami - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-passatore-legami",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

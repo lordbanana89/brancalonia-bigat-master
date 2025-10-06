@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Orecchio mummificato in scatola</p><h3>Proprietà</h3><p>Posto contro un muro, permette di sentire attraverso</p><h3>Storia</h3><p><em>Il confessore vendeva i segreti ai potenti</em></p><h3>Maledizione</h3><p><strong>Si sentono anche confessioni di peccati casuali</strong></p><p>Si sentono anche confessioni di peccati casuali</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "Si sentono anche confessioni di peccati casuali"
+    "curse": "Si sentono anche confessioni di peccati casuali",
+    "identifier": "032_lorecchio_del_confessore",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

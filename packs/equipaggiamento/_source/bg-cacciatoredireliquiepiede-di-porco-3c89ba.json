@@ -6,9 +6,7 @@
   "img": "icons/tools/hand/crowbar-black.webp",
   "system": {
     "description": {
-      "value": "<p>Piede di porco - Equipaggiamento iniziale del background cacciatore_di_reliquie.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Piede di porco - Equipaggiamento iniziale del background cacciatore_di_reliquie.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-cacciatoredireliquiepiede-di-porco-3c89ba"
   },
   "effects": [],
   "folder": null,

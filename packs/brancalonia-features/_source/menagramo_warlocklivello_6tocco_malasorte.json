@@ -6,36 +6,25 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Area 6m: tutte le creature (tranne warlock) hanno svantaggio ad attacchi/prove/TS per CAR mod round. Dopo l'uso, warlock a 0 PF</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Area 6m: tutte le creature (tranne warlock) hanno svantaggio ad attacchi/prove/TS per CAR mod round. Dopo l'uso, warlock a 0 PF</p>"
     },
     "source": "Brancalonia",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
       "max": null,
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +36,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "menagramo_warlocklivello_6tocco_malasorte"
   },
   "effects": [],
   "folder": null,

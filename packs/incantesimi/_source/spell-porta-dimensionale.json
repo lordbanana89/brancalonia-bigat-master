@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Ti teletrasporti dalla tua posizione attuale a qualsiasi altro punto entro gittata. Arrivi esattamente nel punto desiderato. Può essere un luogo che puoi vedere, uno che puoi visualizzare, o uno che puoi descrivere indicando distanza e direzione. Puoi portare oggetti con te fintanto che il loro peso non supera ciò che puoi trasportare. Puoi anche portare una creatura consenziente della tua taglia o più piccola che sta trasportando equipaggiamento fino alla sua capacità di carico. La creatura deve essere entro 5 piedi da te quando lanci questo incantesimo. Se arriveresti in un luogo già occupato da un oggetto o una creatura, tu e qualsiasi creatura che viaggia con te subite 4d6 danni da forza, e l'incantesimo fallisce nel teletrasportarvi.</p><h3>Utilizzi Tipici</h3><ul><li>Escape garantito da prigione</li><li>Bypass dungeon sections</li><li>Infiltrazione istantanea</li><li>Evacuazione emergenza con alleato</li><li>Raggiungere luoghi inaccessibili</li></ul><h3>Note per il DM</h3><p><em>Dimension Door è escape/infiltrazione definitiva. 500 ft copre la maggior parte delle situazioni. Solo verbale lo rende unstoppable.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Ti teletrasporti dalla tua posizione attuale a qualsiasi altro punto entro gittata. Arrivi esattamente nel punto desiderato. Può essere un luogo che puoi vedere, uno che puoi visualizzare, o uno che puoi descrivere indicando distanza e direzione. Puoi portare oggetti con te fintanto che il loro peso non supera ciò che puoi trasportare. Puoi anche portare una creatura consenziente della tua taglia o più piccola che sta trasportando equipaggiamento fino alla sua capacità di carico. La creatura deve essere entro 5 piedi da te quando lanci questo incantesimo. Se arriveresti in un luogo già occupato da un oggetto o una creatura, tu e qualsiasi creatura che viaggia con te subite 4d6 danni da forza, e l'incantesimo fallisce nel teletrasportarvi.</p><h3>Utilizzi Tipici</h3><ul><li>Escape garantito da prigione</li><li>Bypass dungeon sections</li><li>Infiltrazione istantanea</li><li>Evacuazione emergenza con alleato</li><li>Raggiungere luoghi inaccessibili</li></ul><h3>Note per il DM</h3><p><em>Dimension Door è escape/infiltrazione definitiva. 500 ft copre la maggior parte delle situazioni. Solo verbale lo rende unstoppable.</em></p>"
     },
     "source": "D&D 5e PHB p.233",
     "level": 4,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-porta-dimensionale"
   },
   "effects": [],
   "folder": null,

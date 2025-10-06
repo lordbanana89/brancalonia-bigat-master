@@ -261,5 +261,15 @@
   "_key": "!tables!nomilocande",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Nomi di Locande e Taverne - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "nomilocande",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

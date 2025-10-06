@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Rosa di ferro battuto perfettamente realistica</p><h3>Proprietà</h3><p>Chi la regala fa automaticamente colpo (successo automatico Persuasione in corteggiamento)</p><h3>Storia</h3><p><em>Forgiata da un fabbro per la donna che lo rifiutò</em></p><h3>Maledizione</h3><p><strong>L'amore dura solo fino al prossimo tramonto</strong></p><p>L'amore dura solo fino al prossimo tramonto</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "L'amore dura solo fino al prossimo tramonto"
+    "curse": "L'amore dura solo fino al prossimo tramonto",
+    "identifier": "017_la_rosa_di_ferro",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

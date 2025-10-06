@@ -6,36 +6,24 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Attingi a una profonda riserva di magia dentro di te. Hai punti stregoneria pari al tuo livello da stregone. Puoi trasformare punti stregoneria in slot incantesimo e viceversa.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Attingi a una profonda riserva di magia dentro di te. Hai punti stregoneria pari al tuo livello da stregone. Puoi trasformare punti stregoneria in slot incantesimo e viceversa.</p>"
     },
     "source": "Player's Handbook (D&D 5e)",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Stregone Livello 2",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "16be55c2c3fac5a4"
   },
   "effects": [],
   "folder": null,

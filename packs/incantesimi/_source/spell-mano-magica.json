@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Una mano spettrale fluttuante appare in un punto a tua scelta entro gittata. La mano dura per la durata o finché non la congedi come azione. La mano svanisce se si trova a più di 30 piedi da te o se lanci di nuovo questo incantesimo. Puoi usare la tua azione per controllare la mano. Può manipolare oggetti, aprire porte e contenitori non chiusi a chiave, riporre o recuperare oggetti da contenitori aperti, o versare il contenuto di una fiala. Può muoversi fino a 30 piedi ogni volta che la usi. La mano non può attaccare, attivare oggetti magici o trasportare più di 10 libbre.</p><h3>Note per il DM</h3><p><em>Mage Hand è versatile utilità. Arcane Trickster la rende molto più potente. Utile per puzzle e esplorazione sicura.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Una mano spettrale fluttuante appare in un punto a tua scelta entro gittata. La mano dura per la durata o finché non la congedi come azione. La mano svanisce se si trova a più di 30 piedi da te o se lanci di nuovo questo incantesimo. Puoi usare la tua azione per controllare la mano. Può manipolare oggetti, aprire porte e contenitori non chiusi a chiave, riporre o recuperare oggetti da contenitori aperti, o versare il contenuto di una fiala. Può muoversi fino a 30 piedi ogni volta che la usi. La mano non può attaccare, attivare oggetti magici o trasportare più di 10 libbre.</p><h3>Note per il DM</h3><p><em>Mage Hand è versatile utilità. Arcane Trickster la rende molto più potente. Utile per puzzle e esplorazione sicura.</em></p>"
     },
     "source": "D&D 5e PHB p.256",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-mano-magica"
   },
   "effects": [],
   "folder": null,

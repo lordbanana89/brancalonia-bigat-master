@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Al 18° livello, raggiungi l'apice della resilienza in battaglia. All'inizio di ciascuno dei tuoi turni, recuperi punti ferita pari a 5 + il tuo modificatore di Costituzione se non hai più della metà dei tuoi punti ferita rimanenti. Non guadagni questo beneficio se hai 0 punti ferita.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Al 18° livello, raggiungi l'apice della resilienza in battaglia. All'inizio di ciascuno dei tuoi turni, recuperi punti ferita pari a 5 + il tuo modificatore di Costituzione se non hai più della metà dei tuoi punti ferita rimanenti. Non guadagni questo beneficio se hai 0 punti ferita.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.73",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classguerrierolivello_18survivor"
   },
   "effects": [],
   "folder": null,

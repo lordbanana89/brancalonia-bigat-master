@@ -6,36 +6,24 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Ottieni i seguenti benefici mentre sei disarmato o usi solo armi da monaco: puoi usare Des per attacchi/danni, puoi tirare il dado Arti Marziali al posto del danno normale, quando effettui Attacco con attacco senza armi o arma da monaco, puoi effettuare un attacco senza armi come azione bonus.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Ottieni i seguenti benefici mentre sei disarmato o usi solo armi da monaco: puoi usare Des per attacchi/danni, puoi tirare il dado Arti Marziali al posto del danno normale, quando effettui Attacco con attacco senza armi o arma da monaco, puoi effettuare un attacco senza armi come azione bonus.</p>"
     },
     "source": "Player's Handbook (D&D 5e)",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Monaco Livello 1",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "1448aa2cca99cafd"
   },
   "effects": [],
   "folder": null,

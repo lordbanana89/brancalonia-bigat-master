@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Crei tre raggi di fuoco e li scagli verso bersagli entro gittata. Puoi scagliarli verso un bersaglio o diversi. Effettua un attacco a distanza con incantesimo per ogni raggio. Se colpisci, il bersaglio subisce 2d6 danni da fuoco.</p><h3>Note per il DM</h3><p><em>Scorching Ray è il single-target damage di livello 2. Flessibilità bersagli ottima. Scaling lineare efficiente. Fire damage limitante.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Crei tre raggi di fuoco e li scagli verso bersagli entro gittata. Puoi scagliarli verso un bersaglio o diversi. Effettua un attacco a distanza con incantesimo per ogni raggio. Se colpisci, il bersaglio subisce 2d6 danni da fuoco.</p><h3>Note per il DM</h3><p><em>Scorching Ray è il single-target damage di livello 2. Flessibilità bersagli ottima. Scaling lineare efficiente. Fire damage limitante.</em></p>"
     },
     "source": "D&D 5e PHB p.273",
     "level": 2,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellraggiorovente"
   },
   "effects": [],
   "folder": null,

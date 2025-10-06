@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Cacciatore di reliquie - Ideali - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-cacciatore-di-reliquie-ideali",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

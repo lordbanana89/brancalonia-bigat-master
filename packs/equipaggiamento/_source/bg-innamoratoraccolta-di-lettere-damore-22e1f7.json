@@ -6,9 +6,7 @@
   "img": "icons/sundries/scrolls/scroll-rolled-red.webp",
   "system": {
     "description": {
-      "value": "<p>Raccolta di lettere d'amore - Equipaggiamento iniziale del background innamorato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Raccolta di lettere d'amore - Equipaggiamento iniziale del background innamorato.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-innamoratoraccolta-di-lettere-damore-22e1f7"
   },
   "effects": [],
   "folder": null,

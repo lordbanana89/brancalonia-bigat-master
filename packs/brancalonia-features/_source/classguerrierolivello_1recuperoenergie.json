@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Hai una riserva di resistenza limitata a cui puoi attingere per proteggerti dai danni. Nel tuo turno, puoi usare un'azione bonus per riguadagnare punti ferita pari a 1d10 + il tuo livello da guerriero. Una volta usato questo privilegio, devi completare un riposo breve o lungo prima di poterlo usare di nuovo.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Hai una riserva di resistenza limitata a cui puoi attingere per proteggerti dai danni. Nel tuo turno, puoi usare un'azione bonus per riguadagnare punti ferita pari a 1d10 + il tuo livello da guerriero. Una volta usato questo privilegio, devi completare un riposo breve o lungo prima di poterlo usare di nuovo.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.72",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classguerrierolivello_1recuperoenergie"
   },
   "effects": [],
   "folder": null,

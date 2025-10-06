@@ -6,9 +6,7 @@
   "img": "icons/commodities/treasure/gem-pearl-white.webp",
   "system": {
     "description": {
-      "value": "<p>Cimelio aggiuntivo - Equipaggiamento iniziale del background lucignolo.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Cimelio aggiuntivo - Equipaggiamento iniziale del background lucignolo.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-lucignolocimelio-aggiuntivo-335bdd"
   },
   "effects": [],
   "folder": null,

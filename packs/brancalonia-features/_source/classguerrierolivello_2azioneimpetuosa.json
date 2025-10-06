@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 2° livello, puoi spingerti oltre i tuoi normali limiti per un istante. Nel tuo turno, puoi effettuare un'azione aggiuntiva oltre alla tua azione regolare e a una possibile azione bonus. Una volta usato questo privilegio, devi completare un riposo breve o lungo prima di poterlo usare di nuovo. A partire dal 17° livello, puoi usarlo due volte prima di un riposo, ma solo una volta nello stesso turno.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 2° livello, puoi spingerti oltre i tuoi normali limiti per un istante. Nel tuo turno, puoi effettuare un'azione aggiuntiva oltre alla tua azione regolare e a una possibile azione bonus. Una volta usato questo privilegio, devi completare un riposo breve o lungo prima di poterlo usare di nuovo. A partire dal 17° livello, puoi usarlo due volte prima di un riposo, ma solo una volta nello stesso turno.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.72",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classguerrierolivello_2azioneimpetuosa"
   },
   "effects": [],
   "folder": null,

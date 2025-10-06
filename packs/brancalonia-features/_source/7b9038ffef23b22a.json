@@ -6,36 +6,24 @@
   "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Incantesimi (1° livello)</strong></p><p>Come condotto per il potere divino, puoi lanciare incantesimi da chierico.</p><p><strong>Trucchetti:</strong> Conosci tre trucchetti da chierico di tua scelta. Impari trucchetti aggiuntivi di tua scelta a livelli superiori.</p><p><strong>Preparare e lanciare incantesimi:</strong> Prepari la lista degli incantesimi da chierico disponibili per il lancio. Scegli un numero di incantesimi da chierico pari al tuo modificatore di Saggezza + il tuo livello da chierico (minimo 1). Gli incantesimi devono essere di un livello per cui hai slot incantesimo.</p><p><strong>Abilità da incantatore:</strong> Saggezza è la tua abilità da incantatore. CD tiro salvezza = 8 + bonus competenza + modificatore Saggezza. Bonus attacco = bonus competenza + modificatore Saggezza.</p><p><strong>Rituale:</strong> Puoi lanciare un incantesimo da chierico come rituale se ha il tag rituale e lo hai preparato.</p><p><strong>Focus:</strong> Puoi usare un simbolo sacro come focus per i tuoi incantesimi da chierico.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Incantesimi (1° livello)</strong></p><p>Come condotto per il potere divino, puoi lanciare incantesimi da chierico.</p><p><strong>Trucchetti:</strong> Conosci tre trucchetti da chierico di tua scelta. Impari trucchetti aggiuntivi di tua scelta a livelli superiori.</p><p><strong>Preparare e lanciare incantesimi:</strong> Prepari la lista degli incantesimi da chierico disponibili per il lancio. Scegli un numero di incantesimi da chierico pari al tuo modificatore di Saggezza + il tuo livello da chierico (minimo 1). Gli incantesimi devono essere di un livello per cui hai slot incantesimo.</p><p><strong>Abilità da incantatore:</strong> Saggezza è la tua abilità da incantatore. CD tiro salvezza = 8 + bonus competenza + modificatore Saggezza. Bonus attacco = bonus competenza + modificatore Saggezza.</p><p><strong>Rituale:</strong> Puoi lanciare un incantesimo da chierico come rituale se ha il tag rituale e lo hai preparato.</p><p><strong>Focus:</strong> Puoi usare un simbolo sacro come focus per i tuoi incantesimi da chierico.</p>"
     },
     "source": "Manuale del Giocatore p.58",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Chierico Livello 1",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "7b9038ffef23b22a"
   },
   "effects": [],
   "folder": null,

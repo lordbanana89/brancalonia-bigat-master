@@ -6,36 +6,24 @@
   "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Intervento Divino Migliorato (20° livello)</strong></p><p>Al 20° livello, il tuo appello di Intervento Divino ha automaticamente successo, senza bisogno di tirare.</p><p>Questo rappresenta il culmine del tuo legame con la tua divinità. Non devi più affidarti alla fortuna: quando chiami aiuto, la tua divinità risponde sempre.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Intervento Divino Migliorato (20° livello)</strong></p><p>Al 20° livello, il tuo appello di Intervento Divino ha automaticamente successo, senza bisogno di tirare.</p><p>Questo rappresenta il culmine del tuo legame con la tua divinità. Non devi più affidarti alla fortuna: quando chiami aiuto, la tua divinità risponde sempre.</p>"
     },
     "source": "Manuale del Giocatore p.59",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Chierico Livello 20",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "297f41d015142695"
   },
   "effects": [],
   "folder": null,

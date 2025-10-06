@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Ambulante - Legami - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-ambulante-legami",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

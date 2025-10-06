@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Una fiamma tremolante appare nella tua mano. La fiamma vi rimane per la durata e non ti ferisce né danneggia il tuo equipaggiamento. La fiamma fornisce luce intensa in un raggio di 10 piedi e luce fioca per altri 10 piedi. L'incantesimo termina se lo congedi come azione o se lo lanci di nuovo. Puoi anche attaccare con la fiamma, anche se farlo termina l'incantesimo. Quando lanci questo incantesimo, o come azione in un turno successivo, puoi scagliare la fiamma verso una creatura entro 30 piedi da te. Effettua un attacco a distanza con incantesimo. Se colpisci, il bersaglio subisce 1d8 danni da fuoco.</p><h3>Note per il DM</h3><p><em>Produce Flame è versatile utilità/combat. Ottimo per druidi che vogliono luce senza occupare slot. Attacco termina incantesimo.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Una fiamma tremolante appare nella tua mano. La fiamma vi rimane per la durata e non ti ferisce né danneggia il tuo equipaggiamento. La fiamma fornisce luce intensa in un raggio di 10 piedi e luce fioca per altri 10 piedi. L'incantesimo termina se lo congedi come azione o se lo lanci di nuovo. Puoi anche attaccare con la fiamma, anche se farlo termina l'incantesimo. Quando lanci questo incantesimo, o come azione in un turno successivo, puoi scagliare la fiamma verso una creatura entro 30 piedi da te. Effettua un attacco a distanza con incantesimo. Se colpisci, il bersaglio subisce 1d8 danni da fuoco.</p><h3>Note per il DM</h3><p><em>Produce Flame è versatile utilità/combat. Ottimo per druidi che vogliono luce senza occupare slot. Attacco termina incantesimo.</em></p>"
     },
     "source": "D&D 5e PHB p.269",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 10,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellprodurrefiamma"
   },
   "effects": [],
   "folder": null,

@@ -6,36 +6,24 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Puoi usare la tua azione per spendere 4 punti ki e diventare invisibile per 1 minuto. Durante quel tempo, hai anche resistenza a tutti i danni tranne quelli da forza.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Puoi usare la tua azione per spendere 4 punti ki e diventare invisibile per 1 minuto. Durante quel tempo, hai anche resistenza a tutti i danni tranne quelli da forza.</p>"
     },
     "source": "Player's Handbook (D&D 5e)",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Monaco Livello 18",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "72a03613a6c480ce"
   },
   "effects": [],
   "folder": null,

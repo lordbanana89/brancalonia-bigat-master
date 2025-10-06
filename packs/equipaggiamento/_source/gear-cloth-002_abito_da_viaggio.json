@@ -6,40 +6,28 @@
   "img": "icons/equipment/chest/shirt-simple-white.webp",
   "system": {
     "description": {
-      "value": "<p>Vestiario resistente con cappuccio e mantello cerato per lunghi viaggi.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Vestiario resistente con cappuccio e mantello cerato per lunghi viaggi.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "2 kg",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "gear-cloth-002_abito_da_viaggio",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

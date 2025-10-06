@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Piastre sagomate che coprono il corpo, lasciando alcune aree protette da cuoio.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Piastre sagomate che coprono il corpo, lasciando alcune aree protette da cuoio.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -35,16 +33,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd105_mezza_armatura_a_piastre",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

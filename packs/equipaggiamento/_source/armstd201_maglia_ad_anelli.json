@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Abito di cuoio con anelli metallici cuciti sopra.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Abito di cuoio con anelli metallici cuciti sopra.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -35,16 +33,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd201_maglia_ad_anelli",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

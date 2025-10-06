@@ -6,36 +6,24 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Se effettui una prova di caratteristica con un'abilità o arnese in cui sei competente e ottieni 9 o meno sul d20, considera il risultato come 10.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Se effettui una prova di caratteristica con un'abilità o arnese in cui sei competente e ottieni 9 o meno sul d20, considera il risultato come 10.</p>"
     },
     "source": "Player's Handbook (D&D 5e)",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Ladro Livello 11",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "a08282de0aee9d2f"
   },
   "effects": [],
   "folder": null,

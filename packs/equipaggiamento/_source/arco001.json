@@ -24,8 +24,7 @@
           "1d6 + @mod",
           "piercing"
         ]
-      ],
-      "versatile": ""
+      ]
     },
     "range": {
       "value": 80,
@@ -37,11 +36,10 @@
       "two"
     ],
     "rarity": "common",
-    "attunement": "",
     "type": {
-      "value": "simpleM",
-      "baseItem": ""
-    }
+      "value": "simpleM"
+    },
+    "identifier": "arco001"
   },
   "effects": [],
   "folder": null,

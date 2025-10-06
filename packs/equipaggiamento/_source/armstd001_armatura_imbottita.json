@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Giacca trapuntata imbottita di lana o cotone.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Giacca trapuntata imbottita di lana o cotone.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -35,16 +33,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd001_armatura_imbottita",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

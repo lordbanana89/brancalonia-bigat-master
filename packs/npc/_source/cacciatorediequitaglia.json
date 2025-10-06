@@ -9,10 +9,7 @@
       "str": {
         "value": 14,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 2,
         "save": 2,
@@ -21,10 +18,7 @@
       "dex": {
         "value": 18,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 4,
         "save": 4,
@@ -33,10 +27,7 @@
       "con": {
         "value": 14,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 2,
         "save": 2,
@@ -45,10 +36,7 @@
       "int": {
         "value": 13,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -57,10 +45,7 @@
       "wis": {
         "value": 14,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 2,
         "save": 2,
@@ -69,10 +54,7 @@
       "cha": {
         "value": 12,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -82,8 +64,7 @@
     "attributes": {
       "ac": {
         "flat": 16,
-        "calc": "natural",
-        "formula": ""
+        "calc": "natural"
       },
       "hp": {
         "value": 71,
@@ -121,7 +102,6 @@
         "units": "ft",
         "special": "Percezione Passiva 15"
       },
-      "spellcasting": "",
       "prof": 3,
       "spelldc": null,
       "death": {
@@ -131,18 +111,12 @@
     },
     "details": {
       "biography": {
-        "value": "<p>I Cacciatori di Taglia sono tra i più grossi figli di una somara che le canaglie potrebbero incontrare: ossi duri, veterani di guerre, spedizioni e indagini, abituati a trattare alla pari con capitani di ventura, capibanda e ufficiali. Si tratta spesso di cagnacci da tenersi lontano dalle terga con trucchi e accordi, piuttosto che da affrontare a brutto muso.</p><h3>Note Brancalonia</h3>",
-        "public": ""
+        "value": "<p>I Cacciatori di Taglia sono tra i più grossi figli di una somara che le canaglie potrebbero incontrare: ossi duri, veterani di guerre, spedizioni e indagini, abituati a trattare alla pari con capitani di ventura, capibanda e ufficiali. Si tratta spesso di cagnacci da tenersi lontano dalle terga con trucchi e accordi, piuttosto che da affrontare a brutto muso.</p><h3>Note Brancalonia</h3>"
       },
       "alignment": "Qualsiasi",
-      "race": "",
       "type": {
-        "value": "humanoid",
-        "subtype": "",
-        "swarm": "",
-        "custom": ""
+        "value": "humanoid"
       },
-      "environment": "",
       "cr": 5,
       "spellLevel": 0,
       "xp": {
@@ -154,29 +128,24 @@
       "size": "med",
       "di": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dr": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dv": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "ci": {
-        "value": [],
-        "custom": ""
+        "value": []
       },
       "languages": {
         "value": [
           "baccaglio",
           "common"
-        ],
-        "custom": ""
+        ]
       }
     },
     "currency": {
@@ -190,10 +159,7 @@
       "acr": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -202,10 +168,7 @@
       "ani": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -214,10 +177,7 @@
       "arc": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -226,10 +186,7 @@
       "ath": {
         "value": 1,
         "ability": "str",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 5,
         "passive": 15,
         "prof": 1,
@@ -238,10 +195,7 @@
       "dec": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -250,10 +204,7 @@
       "his": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -262,10 +213,7 @@
       "ins": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -274,10 +222,7 @@
       "inti": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -286,10 +231,7 @@
       "inv": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -298,10 +240,7 @@
       "med": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -310,10 +249,7 @@
       "nat": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -322,10 +258,7 @@
       "prc": {
         "value": 1,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 5,
         "passive": 15,
         "prof": 1,
@@ -334,10 +267,7 @@
       "prf": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -346,10 +276,7 @@
       "per": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -358,10 +285,7 @@
       "rel": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -370,10 +294,7 @@
       "slt": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -382,10 +303,7 @@
       "ste": {
         "value": 1,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 7,
         "passive": 17,
         "prof": 1,
@@ -394,10 +312,7 @@
       "sur": {
         "value": 1,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 5,
         "passive": 15,
         "prof": 1,
@@ -458,30 +373,12 @@
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
-      "spell": {
-        "dc": ""
-      }
+      "mwak": {},
+      "rwak": {},
+      "msak": {},
+      "rsak": {},
+      "abilities": {},
+      "spell": {}
     },
     "resources": {
       "legact": {
@@ -496,7 +393,23 @@
         "value": false,
         "initiative": 0
       }
-    }
+    },
+    "saves": {
+      "fortitude": {
+        "value": 0,
+        "proficient": false
+      },
+      "reflex": {
+        "value": 0,
+        "proficient": false
+      },
+      "will": {
+        "value": 0,
+        "proficient": false
+      }
+    },
+    "identifier": "cacciatorediequitaglia",
+    "source": "Brancalonia"
   },
   "items": [
     {
@@ -507,65 +420,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Se il cacciatore fallisce un tiro salvezza, può scegliere invece di superarlo.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Se il cacciatore fallisce un tiro salvezza, può scegliere invece di superarlo.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -580,65 +470,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Una volta per turno, il cacciatore infligge 14 (4d6) danni extra quando colpisce un bersaglio con un attacco con un'arma e dispone di vantaggio al tiro per colpire, oppure quando il bersaglio si trova entro 1,5 metri da un alleato del cacciatore (purché l'alleato non sia incapacitato e il cacciatore non subisca svantaggio al tiro per colpire).</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Una volta per turno, il cacciatore infligge 14 (4d6) danni extra quando colpisce un bersaglio con un attacco con un'arma e dispone di vantaggio al tiro per colpire, oppure quando il bersaglio si trova entro 1,5 metri da un alleato del cacciatore (purché l'alleato non sia incapacitato e il cacciatore non subisca svantaggio al tiro per colpire).</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -653,65 +520,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Il cacciatore di taglia dispone di vantaggio alle prove di Saggezza (Percezione) basate sull'udito o sulla vista.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Il cacciatore di taglia dispone di vantaggio alle prove di Saggezza (Percezione) basate sull'udito o sulla vista.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -726,65 +570,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Il cacciatore di taglia dispone di vantaggio a un tiro per colpire contro una creatura se almeno uno degli alleati del combattente si trova entro 1,5 metri dalla creatura e non è incapacitato.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Il cacciatore di taglia dispone di vantaggio a un tiro per colpire contro una creatura se almeno uno degli alleati del combattente si trova entro 1,5 metri dalla creatura e non è incapacitato.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -799,65 +620,43 @@
       "img": "icons/skills/melee/strike-slashes-red.webp",
       "system": {
         "description": {
-          "value": "<p>Il cacciatore può effettuare tre attacchi in mischia: due con la spada corta e uno con il pugnale. Oppure effettua due attacchi a distanza (non più di uno con la balestra a mano o con la rete).</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Il cacciatore può effettuare tre attacchi in mischia: due con la spada corta e uno con il pugnale. Oppure effettua due attacchi a distanza (non più di uno con la balestra a mano o con la rete).</p>"
         },
-        "source": "",
         "activation": {
           "type": "action",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -872,11 +671,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -885,21 +681,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -909,22 +699,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "mwak",
         "attackBonus": "+7",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -932,17 +716,13 @@
               "1d6 + 4",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -955,11 +735,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -968,21 +745,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -992,22 +763,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "mwak",
         "attackBonus": "+7",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -1015,17 +780,13 @@
               "1d4 + 4",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -1038,11 +799,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -1051,21 +809,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -1075,22 +827,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "rwak",
         "attackBonus": "+7",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -1098,17 +844,13 @@
               "1d6 + 4",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -1121,11 +863,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -1134,21 +873,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -1158,35 +891,25 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "rwak",
         "attackBonus": "+5",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -1199,65 +922,43 @@
       "img": "icons/skills/defensive/shield-block-gray.webp",
       "system": {
         "description": {
-          "value": "<p>Il cacciatore di taglia aggiunge 3 alla sua CA contro un attacco in mischia che lo colpirebbe. Per farlo, il cacciatore deve vedere l'attaccante e deve impugnare un'arma da mischia.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Il cacciatore di taglia aggiunge 3 alla sua CA contro un attacco in mischia che lo colpirebbe. Per farlo, il cacciatore deve vedere l'attaccante e deve impugnare un'arma da mischia.</p>"
         },
-        "source": "",
         "activation": {
           "type": "reaction",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false

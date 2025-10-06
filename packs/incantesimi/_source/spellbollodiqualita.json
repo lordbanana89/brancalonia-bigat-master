@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>L'incantatore tocca un oggetto o una creatura di qualità scadente e, finché l'incantesimo non termina, il bersaglio perde la qualità scadente.</p><h3>Ai Livelli Superiori</h3><p>Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 3° livello, la durata aumenta a 8 ore.</p><h3>Utilizzi Tipici</h3><ul><li>Rendere utilizzabile equipaggiamento scarso</li><li>Preparare armi per battaglia importante</li><li>Vendere oggetti a prezzo pieno temporaneamente</li><li>Impressionare con equipaggiamento 'migliore'</li><li>Superare prove con strumenti scadenti</li></ul><h3>Note per il DM</h3><p><em>Bollo di Qualità è spell unico di Brancalonia che riflette l'economia povera del setting. Utile per superare limitazioni equipment scadente.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>L'incantatore tocca un oggetto o una creatura di qualità scadente e, finché l'incantesimo non termina, il bersaglio perde la qualità scadente.</p><h3>Ai Livelli Superiori</h3><p>Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 3° livello, la durata aumenta a 8 ore.</p><h3>Utilizzi Tipici</h3><ul><li>Rendere utilizzabile equipaggiamento scarso</li><li>Preparare armi per battaglia importante</li><li>Vendere oggetti a prezzo pieno temporaneamente</li><li>Impressionare con equipaggiamento 'migliore'</li><li>Superare prove con strumenti scadenti</li></ul><h3>Note per il DM</h3><p><em>Bollo di Qualità è spell unico di Brancalonia che riflette l'economia povera del setting. Utile per superare limitazioni equipment scadente.</em></p>"
     },
     "source": "Brancalonia Macaronicon p.51",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "bonus",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "level",
-      "formula": ""
+      "mode": "level"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellbollodiqualita"
   },
   "effects": [
     {

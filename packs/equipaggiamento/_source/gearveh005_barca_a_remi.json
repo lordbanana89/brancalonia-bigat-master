@@ -6,40 +6,28 @@
   "img": "icons/environment/settlement/wagon-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Piccola imbarcazione che può trasportare quattro persone e bagagli.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Piccola imbarcazione che può trasportare quattro persone e bagagli.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "180 kg",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "gearveh005_barca_a_remi",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

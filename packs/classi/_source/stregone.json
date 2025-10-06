@@ -6,9 +6,7 @@
   "img": "icons/magic/fire/orb-orange-2.webp",
   "system": {
     "description": {
-      "value": "<p><em>Incantatore istintivo che alimenta la magia con il potere della propria stirpe o di una forza caotica.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Incantatore istintivo che alimenta la magia con il potere della propria stirpe o di una forza caotica.</em></p>"
     },
     "source": "Manuale del Giocatore p.100",
     "identifier": "stregone",
@@ -479,7 +477,8 @@
       "cha"
     ],
     "startingEquipment": [],
-    "hitDice": "d6"
+    "hitDice": "d6",
+    "proficiency": 2
   },
   "effects": [],
   "folder": null,

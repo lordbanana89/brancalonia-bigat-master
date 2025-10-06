@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 3° livello, puoi usare la tua azione e spendere uno slot incantesimo da ranger per focalizzare la tua consapevolezza sulla regione attorno a te. Per 1 minuto per livello dello slot incantesimo speso, puoi percepire se i seguenti tipi di creature sono presenti entro 1 miglio da te (o entro 6 miglia se sei nel tuo terreno prescelto): aberrazioni, celestiali, draghi, elementali, folletti, immondi e non-morti.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 3° livello, puoi usare la tua azione e spendere uno slot incantesimo da ranger per focalizzare la tua consapevolezza sulla regione attorno a te. Per 1 minuto per livello dello slot incantesimo speso, puoi percepire se i seguenti tipi di creature sono presenti entro 1 miglio da te (o entro 6 miglia se sei nel tuo terreno prescelto): aberrazioni, celestiali, draghi, elementali, folletti, immondi e non-morti.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.92",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classrangerlivello_3consapevolezzaprimordiale"
   },
   "effects": [],
   "folder": null,

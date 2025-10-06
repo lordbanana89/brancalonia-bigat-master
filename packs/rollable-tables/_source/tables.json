@@ -16413,5 +16413,15 @@
   },
   "_key": "!tables!tables",
   "effects": [],
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Tables - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "tables",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

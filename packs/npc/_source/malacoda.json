@@ -9,10 +9,7 @@
       "str": {
         "value": 22,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 6,
         "save": 6,
@@ -21,10 +18,7 @@
       "dex": {
         "value": 16,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 3,
         "save": 3,
@@ -33,10 +27,7 @@
       "con": {
         "value": 20,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 5,
         "save": 5,
@@ -45,10 +36,7 @@
       "int": {
         "value": 13,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -57,10 +45,7 @@
       "wis": {
         "value": 15,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 2,
         "save": 2,
@@ -69,10 +54,7 @@
       "cha": {
         "value": 18,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 4,
         "save": 4,
@@ -82,8 +64,7 @@
     "attributes": {
       "ac": {
         "flat": 18,
-        "calc": "natural",
-        "formula": ""
+        "calc": "natural"
       },
       "hp": {
         "value": 199,
@@ -121,7 +102,6 @@
         "units": "ft",
         "special": "Percezione Passiva 12"
       },
-      "spellcasting": "",
       "prof": 5,
       "spelldc": null,
       "death": {
@@ -131,18 +111,12 @@
     },
     "details": {
       "biography": {
-        "value": "<p>L'inferno pullula di esseri immondi, bestie orribili, diavoli e mostri. I Malebranche che si vedono in giro per il Regno, ormai trasformati in esseri mortali, sono solo un'ombra degli orrori che si aggirano tra i gironi, i cerchi e le bolge del regno della Grande Bestia. Se ai comuni Malebranche (quelli ancora \"diabolici\") di solito non è permesso mettere piede fuori dalla Porta Eterna, i Malacoda, loro diretti superiori, possono a volte uscire dall'Inferno, attraversare le rovine di Plutonia e muoversi verso campagne e città per compiere terrificanti missioni.</p><h3>Note Brancalonia</h3>",
-        "public": ""
+        "value": "<p>L'inferno pullula di esseri immondi, bestie orribili, diavoli e mostri. I Malebranche che si vedono in giro per il Regno, ormai trasformati in esseri mortali, sono solo un'ombra degli orrori che si aggirano tra i gironi, i cerchi e le bolge del regno della Grande Bestia. Se ai comuni Malebranche (quelli ancora \"diabolici\") di solito non è permesso mettere piede fuori dalla Porta Eterna, i Malacoda, loro diretti superiori, possono a volte uscire dall'Inferno, attraversare le rovine di Plutonia e muoversi verso campagne e città per compiere terrificanti missioni.</p><h3>Note Brancalonia</h3>"
       },
       "alignment": "Legale malvagio",
-      "race": "",
       "type": {
-        "value": "fiend",
-        "subtype": "",
-        "swarm": "",
-        "custom": ""
+        "value": "fiend"
       },
-      "environment": "",
       "cr": 14,
       "spellLevel": 0,
       "xp": {
@@ -154,30 +128,25 @@
       "size": "lg",
       "di": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dr": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dv": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "ci": {
-        "value": [],
-        "custom": ""
+        "value": []
       },
       "languages": {
         "value": [
           "male parole",
           "common",
           "telepatia 36 m"
-        ],
-        "custom": ""
+        ]
       }
     },
     "currency": {
@@ -191,10 +160,7 @@
       "acr": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -203,10 +169,7 @@
       "ani": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -215,10 +178,7 @@
       "arc": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -227,10 +187,7 @@
       "ath": {
         "value": 0,
         "ability": "str",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -239,10 +196,7 @@
       "dec": {
         "value": 2,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 9,
         "passive": 19,
         "prof": 2,
@@ -251,10 +205,7 @@
       "his": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -263,10 +214,7 @@
       "ins": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -275,10 +223,7 @@
       "inti": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -287,10 +232,7 @@
       "inv": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -299,10 +241,7 @@
       "med": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -311,10 +250,7 @@
       "nat": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -323,10 +259,7 @@
       "prc": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -335,10 +268,7 @@
       "prf": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -347,10 +277,7 @@
       "per": {
         "value": 2,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 9,
         "passive": 19,
         "prof": 2,
@@ -359,10 +286,7 @@
       "rel": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -371,10 +295,7 @@
       "slt": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -383,10 +304,7 @@
       "ste": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -395,10 +313,7 @@
       "sur": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -459,30 +374,12 @@
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
-      "spell": {
-        "dc": ""
-      }
+      "mwak": {},
+      "rwak": {},
+      "msak": {},
+      "rsak": {},
+      "abilities": {},
+      "spell": {}
     },
     "resources": {
       "legact": {
@@ -497,7 +394,23 @@
         "value": false,
         "initiative": 0
       }
-    }
+    },
+    "saves": {
+      "fortitude": {
+        "value": 0,
+        "proficient": false
+      },
+      "reflex": {
+        "value": 0,
+        "proficient": false
+      },
+      "will": {
+        "value": 0,
+        "proficient": false
+      }
+    },
+    "identifier": "malacoda",
+    "source": "Brancalonia"
   },
   "items": [
     {
@@ -508,65 +421,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Se il malacoda fallisce un tiro salvezza, può scegliere invece di superarlo.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Se il malacoda fallisce un tiro salvezza, può scegliere invece di superarlo.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -581,65 +471,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>L'oscurità magica non ostacola la scurovisione del malacoda.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>L'oscurità magica non ostacola la scurovisione del malacoda.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -654,65 +521,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Ogni creatura che inizi il proprio turno entro 6 metri dal malacoda e che sia consapevole del malacoda deve effettuare un tiro salvezza su Saggezza con CD 16, a meno che il malacoda non sia incapacitato; se la creatura fallisce il tiro salvezza, è spaventata o affascinata (a scelta del malacoda) fino all'inizio del proprio turno successivo, mentre se lo supera, è immune alla Maestà Infernale del malacoda per le 24 ore successive.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Ogni creatura che inizi il proprio turno entro 6 metri dal malacoda e che sia consapevole del malacoda deve effettuare un tiro salvezza su Saggezza con CD 16, a meno che il malacoda non sia incapacitato; se la creatura fallisce il tiro salvezza, è spaventata o affascinata (a scelta del malacoda) fino all'inizio del proprio turno successivo, mentre se lo supera, è immune alla Maestà Infernale del malacoda per le 24 ore successive.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -727,65 +571,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Un malacoda non può vagare a lungo nel mondo terreno. Per ogni giorno che un malacoda spende fuori dell'Inferno, i suoi punti ferita massimi calano di 20. Se un malacoda scende a 0 punti ferita, non muore ma sprofonda nuovamente nelle malebolge dove rimarrà vincolato per 1 anno e 1 giorno. Se il malacoda riesce a portare a compimento la missione per cui è stato inviato o evocato, può tornare all'Inferno (prima possibile) senza vincoli o punizioni.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Un malacoda non può vagare a lungo nel mondo terreno. Per ogni giorno che un malacoda spende fuori dell'Inferno, i suoi punti ferita massimi calano di 20. Se un malacoda scende a 0 punti ferita, non muore ma sprofonda nuovamente nelle malebolge dove rimarrà vincolato per 1 anno e 1 giorno. Se il malacoda riesce a portare a compimento la missione per cui è stato inviato o evocato, può tornare all'Inferno (prima possibile) senza vincoli o punizioni.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -800,65 +621,43 @@
       "img": "icons/skills/melee/strike-slashes-red.webp",
       "system": {
         "description": {
-          "value": "<p>Il malacoda effettua 2 attacchi in mischia con il Nero Forcone. Può usare Scagliare Malefiamme al posto di qualsiasi attacco in mischia.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Il malacoda effettua 2 attacchi in mischia con il Nero Forcone. Può usare Scagliare Malefiamme al posto di qualsiasi attacco in mischia.</p>"
         },
-        "source": "",
         "activation": {
           "type": "action",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -873,11 +672,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -886,21 +682,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -910,22 +700,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "mwak",
         "attackBonus": "+11",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -933,17 +717,13 @@
               "2d8 + 6",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -956,11 +736,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -969,21 +746,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -993,22 +764,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "mwak",
         "attackBonus": "+11",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -1016,17 +781,13 @@
               "1d8 + 6",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -1039,11 +800,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -1052,21 +810,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -1076,22 +828,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "rwak",
         "attackBonus": "+9",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -1099,17 +845,13 @@
               "2d6",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }

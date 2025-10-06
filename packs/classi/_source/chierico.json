@@ -6,9 +6,7 @@
   "img": "icons/magic/holy/chalice-glowing-gold.webp",
   "system": {
     "description": {
-      "value": "<p><em>Servitore devoto di un potere divino che canalizza miracoli per sostenere, punire e guidare.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Servitore devoto di un potere divino che canalizza miracoli per sostenere, punire e guidare.</em></p>"
     },
     "source": "Manuale del Giocatore p.56",
     "identifier": "chierico",
@@ -529,7 +527,8 @@
       "wis"
     ],
     "startingEquipment": [],
-    "hitDice": "d8"
+    "hitDice": "d8",
+    "proficiency": 2
   },
   "effects": [],
   "folder": null,

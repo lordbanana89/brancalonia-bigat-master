@@ -6,36 +6,24 @@
   "img": "icons/magic/life/heart-shadow-red.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Ira Implacabile (11° livello)</strong></p><p>A partire dall'11° livello, la tua ira può tenerti in combattimento nonostante ferite gravissime.</p><p>Se scendi a 0 punti ferita mentre sei in ira e non muori sul colpo, puoi effettuare un tiro salvezza su Costituzione con CD 10. Se lo superi, scendi invece a 1 punto ferita.</p><p>Ogni volta che usi questo privilegio dopo la prima, la CD aumenta di 5. Quando completi un riposo breve o lungo, la CD ritorna a 10.</p><p><strong>Esempio:</strong> Prima volta CD 10, seconda volta CD 15, terza volta CD 20, ecc.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Ira Implacabile (11° livello)</strong></p><p>A partire dall'11° livello, la tua ira può tenerti in combattimento nonostante ferite gravissime.</p><p>Se scendi a 0 punti ferita mentre sei in ira e non muori sul colpo, puoi effettuare un tiro salvezza su Costituzione con CD 10. Se lo superi, scendi invece a 1 punto ferita.</p><p>Ogni volta che usi questo privilegio dopo la prima, la CD aumenta di 5. Quando completi un riposo breve o lungo, la CD ritorna a 10.</p><p><strong>Esempio:</strong> Prima volta CD 10, seconda volta CD 15, terza volta CD 20, ecc.</p>"
     },
     "source": "Manuale del Giocatore p.49",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classbarbarolivello_11iraimplacabile"
   },
   "effects": [],
   "folder": null,

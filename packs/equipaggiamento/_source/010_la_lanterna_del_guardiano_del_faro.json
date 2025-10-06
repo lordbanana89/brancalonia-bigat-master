@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Lanterna che brucia senza olio</p><h3>Proprietà</h3><p>Luce penetra nebbia magica e oscurità, rivela creature invisibili</p><h3>Storia</h3><p><em>Il guardiano lasciò spegnere il faro causando 100 morti</em></p><h3>Maledizione</h3><p><strong>Attira spiriti dei naufraghi (1 incontro casuale extra di notte)</strong></p><p>Attira spiriti dei naufraghi (1 incontro casuale extra di notte)</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "Attira spiriti dei naufraghi (1 incontro casuale extra di notte)"
+    "curse": "Attira spiriti dei naufraghi (1 incontro casuale extra di notte)",
+    "identifier": "010_la_lanterna_del_guardiano_del_faro",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

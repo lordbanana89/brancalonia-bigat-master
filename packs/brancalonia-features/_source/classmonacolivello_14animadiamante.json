@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 14° livello, la tua padronanza del ki ti garantisce competenza in tutti i tiri salvezza. Inoltre, quando fai un tiro salvezza e fallisci, puoi spendere 1 punto ki per ritirarlo e prendere il secondo risultato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 14° livello, la tua padronanza del ki ti garantisce competenza in tutti i tiri salvezza. Inoltre, quando fai un tiro salvezza e fallisci, puoi spendere 1 punto ki per ritirarlo e prendere il secondo risultato.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.79",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classmonacolivello_14animadiamante"
   },
   "effects": [],
   "folder": null,

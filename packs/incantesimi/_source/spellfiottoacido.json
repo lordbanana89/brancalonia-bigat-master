@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Lanci una bolla acida. Scegli una creatura entro gittata, o scegli due creature entro gittata che si trovano entro 5 piedi l'una dall'altra. Un bersaglio deve superare un tiro salvezza su Destrezza o subire 1d6 danni da acido.</p><h3>Note per il DM</h3><p><em>Acid Splash è debole per danno singolo ma unico per doppio target. DEX save invece di attack roll può essere utile vs high AC.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Lanci una bolla acida. Scegli una creatura entro gittata, o scegli due creature entro gittata che si trovano entro 5 piedi l'una dall'altra. Un bersaglio deve superare un tiro salvezza su Destrezza o subire 1d6 danni da acido.</p><h3>Note per il DM</h3><p><em>Acid Splash è debole per danno singolo ma unico per doppio target. DEX save invece di attack roll può essere utile vs high AC.</em></p>"
     },
     "source": "D&D 5e PHB p.211",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellfiottoacido"
   },
   "effects": [],
   "folder": null,

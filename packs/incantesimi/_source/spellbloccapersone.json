@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Scegli un umanoide che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza o essere paralizzato per la durata. Alla fine di ognuno dei suoi turni, il bersaglio può effettuare un altro tiro salvezza su Saggezza. Con un successo, l'incantesimo termina sul bersaglio.</p><h3>Note per il DM</h3><p><em>Hold Person è save-or-die virtuale. Paralyzed + auto-crit devastante. Solo umanoidi lo bilancia. Save ripetuti danno speranza.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Scegli un umanoide che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza o essere paralizzato per la durata. Alla fine di ognuno dei suoi turni, il bersaglio può effettuare un altro tiro salvezza su Saggezza. Con un successo, l'incantesimo termina sul bersaglio.</p><h3>Note per il DM</h3><p><em>Hold Person è save-or-die virtuale. Paralyzed + auto-crit devastante. Solo umanoidi lo bilancia. Save ripetuti danno speranza.</em></p>"
     },
     "source": "D&D 5e PHB p.251",
     "level": 2,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellbloccapersone"
   },
   "effects": [],
   "folder": null,

@@ -6,9 +6,7 @@
   "img": "icons/containers/bags/case-scroll-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Custodia per pergamene con appunti di studio - Equipaggiamento iniziale del background cacciatore_di_reliquie.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Custodia per pergamene con appunti di studio - Equipaggiamento iniziale del background cacciatore_di_reliquie.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-cacciatoredireliquiecustodia-per-pergamene-con-appunti-di-studio-a2992c"
   },
   "effects": [],
   "folder": null,

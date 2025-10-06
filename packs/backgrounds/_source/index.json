@@ -6,11 +6,8 @@
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p>22 background - Ambulante, Duro, Furfante, Prelato, Saggio, Villano e varianti.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>22 background - Ambulante, Duro, Furfante, Prelato, Saggio, Villano e varianti.</p>"
     },
-    "source": "",
     "identifier": "index",
     "advancement": [
       {
@@ -31,7 +28,10 @@
     ],
     "traits": {},
     "startingEquipment": [],
-    "wealth": ""
+    "wealth": "15",
+    "source": {
+      "custom": "Brancalonia"
+    }
   },
   "effects": [],
   "folder": null,
@@ -41,7 +41,6 @@
   },
   "flags": {
     "brancalonia": {
-      "fonte": "",
       "tipo": "background"
     }
   }

@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Pelli e pellicce ispessite sovrapposte.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Pelli e pellicce ispessite sovrapposte.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -22,8 +20,7 @@
     "attunement": 0,
     "type": {
       "value": "armor",
-      "subtype": "light",
-      "baseItem": ""
+      "subtype": "light"
     },
     "armor": {
       "value": 12,
@@ -35,16 +32,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd101_armatura_di_pelliccia",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

@@ -21,5 +21,17 @@
       "version": "12.0.4"
     }
   },
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Cantico da Bettola - Regola di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "identifier": "generatore-citazione"
+  },
+  "folder": null,
+  "effects": []
 }

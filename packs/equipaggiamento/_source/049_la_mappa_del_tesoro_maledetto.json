@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Mappa che cambia ogni volta che la guardi</p><h3>Proprietà</h3><p>Porta sempre a un tesoro, mai lo stesso</p><h3>Storia</h3><p><em>1000 avventurieri la seguirono, 10 tornarono</em></p><h3>Maledizione</h3><p><strong>Il tesoro vale sempre meno del viaggio</strong></p><p>Il tesoro vale sempre meno del viaggio</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "Il tesoro vale sempre meno del viaggio"
+    "curse": "Il tesoro vale sempre meno del viaggio",
+    "identifier": "049_la_mappa_del_tesoro_maledetto",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

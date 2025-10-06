@@ -6,9 +6,7 @@
   "img": "icons/equipment/neck/necklace-simple-gold.webp",
   "system": {
     "description": {
-      "value": "<p>Monile di Santa Percorrenza - Equipaggiamento iniziale del background ambulante.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Monile di Santa Percorrenza - Equipaggiamento iniziale del background ambulante.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-ambulantemonile-di-santa-percorrenza-5b1532"
   },
   "effects": [],
   "folder": null,

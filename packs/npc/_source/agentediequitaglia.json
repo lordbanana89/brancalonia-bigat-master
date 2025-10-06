@@ -9,10 +9,7 @@
       "str": {
         "value": 10,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 0,
         "save": 0,
@@ -21,10 +18,7 @@
       "dex": {
         "value": 14,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 2,
         "save": 2,
@@ -33,10 +27,7 @@
       "con": {
         "value": 12,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -45,10 +36,7 @@
       "int": {
         "value": 13,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -57,10 +45,7 @@
       "wis": {
         "value": 13,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -69,10 +54,7 @@
       "cha": {
         "value": 12,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -82,8 +64,7 @@
     "attributes": {
       "ac": {
         "flat": 13,
-        "calc": "natural",
-        "formula": ""
+        "calc": "natural"
       },
       "hp": {
         "value": 16,
@@ -121,7 +102,6 @@
         "units": "ft",
         "special": "Percezione Passiva 13"
       },
-      "spellcasting": "",
       "prof": 9,
       "spelldc": null,
       "death": {
@@ -131,18 +111,12 @@
     },
     "details": {
       "biography": {
-        "value": "<p>Sono i Cacciatori di Taglia di rango inferiore. Si occupano delle prime indagini e dei casi meno pericolosi, per poi raggrupparsi o invocare l'aiuto di un superiore quando si tratta di arrestare canaglie di un certo peso.</p><h3>Note Brancalonia</h3><p><strong>Ruolo:</strong> Cacciatori di Taglia di rango inferiore</p>",
-        "public": ""
+        "value": "<p>Sono i Cacciatori di Taglia di rango inferiore. Si occupano delle prime indagini e dei casi meno pericolosi, per poi raggrupparsi o invocare l'aiuto di un superiore quando si tratta di arrestare canaglie di un certo peso.</p><h3>Note Brancalonia</h3><p><strong>Ruolo:</strong> Cacciatori di Taglia di rango inferiore</p>"
       },
       "alignment": "Qualsiasi allineamento",
-      "race": "",
       "type": {
-        "value": "humanoid",
-        "subtype": "",
-        "swarm": "",
-        "custom": ""
+        "value": "humanoid"
       },
-      "environment": "",
       "cr": 1,
       "spellLevel": 0,
       "xp": {
@@ -154,29 +128,24 @@
       "size": "med",
       "di": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dr": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dv": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "ci": {
-        "value": [],
-        "custom": ""
+        "value": []
       },
       "languages": {
         "value": [
           "maccheronico",
           "common"
-        ],
-        "custom": ""
+        ]
       }
     },
     "currency": {
@@ -190,10 +159,7 @@
       "acr": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -202,10 +168,7 @@
       "ani": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -214,10 +177,7 @@
       "arc": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -226,10 +186,7 @@
       "ath": {
         "value": 0,
         "ability": "str",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -238,10 +195,7 @@
       "dec": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -250,10 +204,7 @@
       "his": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -262,10 +213,7 @@
       "ins": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -274,10 +222,7 @@
       "inti": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -286,10 +231,7 @@
       "inv": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -298,10 +240,7 @@
       "med": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -310,10 +249,7 @@
       "nat": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -322,10 +258,7 @@
       "prc": {
         "value": 1,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 3,
         "passive": 13,
         "prof": 1,
@@ -334,10 +267,7 @@
       "prf": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -346,10 +276,7 @@
       "per": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -358,10 +285,7 @@
       "rel": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -370,10 +294,7 @@
       "slt": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -382,10 +303,7 @@
       "ste": {
         "value": 1,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 4,
         "passive": 14,
         "prof": 1,
@@ -394,10 +312,7 @@
       "sur": {
         "value": 1,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 3,
         "passive": 13,
         "prof": 1,
@@ -458,30 +373,12 @@
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
-      "spell": {
-        "dc": ""
-      }
+      "mwak": {},
+      "rwak": {},
+      "msak": {},
+      "rsak": {},
+      "abilities": {},
+      "spell": {}
     },
     "resources": {
       "legact": {
@@ -496,7 +393,23 @@
         "value": false,
         "initiative": 0
       }
-    }
+    },
+    "saves": {
+      "fortitude": {
+        "value": 0,
+        "proficient": false
+      },
+      "reflex": {
+        "value": 0,
+        "proficient": false
+      },
+      "will": {
+        "value": 0,
+        "proficient": false
+      }
+    },
+    "identifier": "agentediequitaglia",
+    "source": "Brancalonia"
   },
   "items": [
     {
@@ -507,65 +420,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>L'agente dispone di vantaggio alle prove di Saggezza (Percezione) basate sull'udito o sulla vista.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>L'agente dispone di vantaggio alle prove di Saggezza (Percezione) basate sull'udito o sulla vista.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -580,65 +470,43 @@
       "img": "icons/skills/melee/strike-slashes-red.webp",
       "system": {
         "description": {
-          "value": "<p>L'agente di Equitaglia può effettuare due attacchi in mischia: uno con la spada corta e uno con il pugnale.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>L'agente di Equitaglia può effettuare due attacchi in mischia: uno con la spada corta e uno con il pugnale.</p>"
         },
-        "source": "",
         "activation": {
           "type": "action",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -653,11 +521,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -666,21 +531,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -690,22 +549,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "mwak",
         "attackBonus": "+4",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -713,17 +566,13 @@
               "1d6 + 2",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -736,11 +585,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -749,21 +595,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -773,22 +613,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "mwak",
         "attackBonus": "+4",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -796,17 +630,13 @@
               "1d4 + 2",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -819,11 +649,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -832,21 +659,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -856,22 +677,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "rwak",
         "attackBonus": "+4",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -879,17 +694,13 @@
               "1d1",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -902,11 +713,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -915,21 +723,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -939,35 +741,25 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "rwak",
         "attackBonus": "+4",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }

@@ -6,9 +6,7 @@
   "img": "icons/skills/trades/academics-study-reading-book.webp",
   "system": {
     "description": {
-      "value": "<p><em>Ambasciatore tra Fandonia e Regno, abituato a trattare con fate, buffardelli e umani</em></p>\n<p>Scambiato dalle fate, benedetto da madrine o cresciuto tra buffardelli, il lucignolo vive a cavallo tra due mondi.</p>\n<p>Conosce rituali, formule e galatei per entrare nella Fandonia, banchettare con gli esseri fatati e uscirne senza rimanere intrappolato.</p>\n<p>Gli umani lo vedono come portatore di incanto, i folletti come mortale privilegiato: una posizione che suscita diffidenza ma apre molte porte.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Inganno e Persuasione</p>\n<p><strong>Competenze Strumenti:</strong> Due tipi di gioco</p>\n<p><strong>Linguaggi:</strong> Baccaglio</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Abito comune</li>\n<li>Cimelio aggiuntivo</li>\n<li>Borsa con 15 ma</li>\n</ul>\n\n<h3>Privilegio: A cena con le Fate</h3>\n<p>Sa ottenere ospitalità e aiuto dalle creature fatate quando si trova nel luogo e nel momento giusto, evitando clausole insidiose e lunghe permanenze nel loro reame.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Ha una canzone o una barzelletta per ogni occasione, soprattutto in momenti inopportuni.</td></tr>\n<tr><td>2</td><td>Ama stare all'aria aperta e dormire sui rami.</td></tr>\n<tr><td>3</td><td>È passionale e genuino, non accetta compromessi.</td></tr>\n<tr><td>4</td><td>Crede che solo entrando in connessione con la Fandonia si capisca davvero la vita.</td></tr>\n<tr><td>5</td><td>Cresciuto dai buffardelli, adora fare scherzi.</td></tr>\n<tr><td>6</td><td>È intollerante con chi maltratta le creature fatate.</td></tr>\n<tr><td>7</td><td>Si sente a metà fra due mondi e cerca un luogo da chiamare casa.</td></tr>\n<tr><td>8</td><td>Adora gioco, scommesse, cibo, fumo e bagordi.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Carità. Aiuto fate e orfanelli con ciò che guadagno. (Buono)</td></tr>\n<tr><td>2</td><td>Comunità. Ricambio l'aiuto ricevuto dalla gente fatata. (Legale)</td></tr>\n<tr><td>3</td><td>Fandonia. Sono imprevedibile e maliardo come il reame fatato. (Caotico)</td></tr>\n<tr><td>4</td><td>Vendetta. Voglio eliminare gli esseri fatati che considero una maledizione. (Malvagio)</td></tr>\n<tr><td>5</td><td>Fratellanza. Sogno la convivenza tra popolo fatato e umano. (Neutrale)</td></tr>\n<tr><td>6</td><td>Incanto. La vita è un sogno a occhi aperti. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>La befana che mi allevava è ancora là fuori e temo il suo ritorno.</td></tr>\n<tr><td>2</td><td>Proteggo la comunità di buffardelli che considero la mia famiglia.</td></tr>\n<tr><td>3</td><td>So di avere un gemello da qualche parte e lo voglio ritrovare.</td></tr>\n<tr><td>4</td><td>Sono innamorato della Bambina Turchina e voglio diventare un eroe per lei.</td></tr>\n<tr><td>5</td><td>Voglio sensibilizzare gli umani verso il mondo fatato.</td></tr>\n<tr><td>6</td><td>Sogno di aprire un'attività nel paese dei balocchi.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Sono ossessionato dall'idea che tutti mi giudichino dall'alto.</td></tr>\n<tr><td>2</td><td>Dipendo dall'Estratto di Fandonia.</td></tr>\n<tr><td>3</td><td>Sono uno sbruffone e un codardo.</td></tr>\n<tr><td>4</td><td>Nel profondo disprezzo gli umani.</td></tr>\n<tr><td>5</td><td>Cerco di imbrogliare chiunque per divertimento.</td></tr>\n<tr><td>6</td><td>Non so resistere alla tentazione di stuzzicare il can che dorme.</td></tr>\n</tbody></table>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Ambasciatore tra Fandonia e Regno, abituato a trattare con fate, buffardelli e umani</em></p>\n<p>Scambiato dalle fate, benedetto da madrine o cresciuto tra buffardelli, il lucignolo vive a cavallo tra due mondi.</p>\n<p>Conosce rituali, formule e galatei per entrare nella Fandonia, banchettare con gli esseri fatati e uscirne senza rimanere intrappolato.</p>\n<p>Gli umani lo vedono come portatore di incanto, i folletti come mortale privilegiato: una posizione che suscita diffidenza ma apre molte porte.</p>\n<p><strong>Competenze Abilità:</strong> Competenza in Inganno e Persuasione</p>\n<p><strong>Competenze Strumenti:</strong> Due tipi di gioco</p>\n<p><strong>Linguaggi:</strong> Baccaglio</p>\n<p><strong>Equipaggiamento:</strong></p>\n<ul>\n<li>Abito comune</li>\n<li>Cimelio aggiuntivo</li>\n<li>Borsa con 15 ma</li>\n</ul>\n\n<h3>Privilegio: A cena con le Fate</h3>\n<p>Sa ottenere ospitalità e aiuto dalle creature fatate quando si trova nel luogo e nel momento giusto, evitando clausole insidiose e lunghe permanenze nel loro reame.</p>\n\n<h3>Tratti della Personalità</h3>\n<table><thead><tr><th>d8</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Ha una canzone o una barzelletta per ogni occasione, soprattutto in momenti inopportuni.</td></tr>\n<tr><td>2</td><td>Ama stare all'aria aperta e dormire sui rami.</td></tr>\n<tr><td>3</td><td>È passionale e genuino, non accetta compromessi.</td></tr>\n<tr><td>4</td><td>Crede che solo entrando in connessione con la Fandonia si capisca davvero la vita.</td></tr>\n<tr><td>5</td><td>Cresciuto dai buffardelli, adora fare scherzi.</td></tr>\n<tr><td>6</td><td>È intollerante con chi maltratta le creature fatate.</td></tr>\n<tr><td>7</td><td>Si sente a metà fra due mondi e cerca un luogo da chiamare casa.</td></tr>\n<tr><td>8</td><td>Adora gioco, scommesse, cibo, fumo e bagordi.</td></tr>\n</tbody></table>\n\n<h3>Ideali</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Carità. Aiuto fate e orfanelli con ciò che guadagno. (Buono)</td></tr>\n<tr><td>2</td><td>Comunità. Ricambio l'aiuto ricevuto dalla gente fatata. (Legale)</td></tr>\n<tr><td>3</td><td>Fandonia. Sono imprevedibile e maliardo come il reame fatato. (Caotico)</td></tr>\n<tr><td>4</td><td>Vendetta. Voglio eliminare gli esseri fatati che considero una maledizione. (Malvagio)</td></tr>\n<tr><td>5</td><td>Fratellanza. Sogno la convivenza tra popolo fatato e umano. (Neutrale)</td></tr>\n<tr><td>6</td><td>Incanto. La vita è un sogno a occhi aperti. (Qualsiasi)</td></tr>\n</tbody></table>\n\n<h3>Legami</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>La befana che mi allevava è ancora là fuori e temo il suo ritorno.</td></tr>\n<tr><td>2</td><td>Proteggo la comunità di buffardelli che considero la mia famiglia.</td></tr>\n<tr><td>3</td><td>So di avere un gemello da qualche parte e lo voglio ritrovare.</td></tr>\n<tr><td>4</td><td>Sono innamorato della Bambina Turchina e voglio diventare un eroe per lei.</td></tr>\n<tr><td>5</td><td>Voglio sensibilizzare gli umani verso il mondo fatato.</td></tr>\n<tr><td>6</td><td>Sogno di aprire un'attività nel paese dei balocchi.</td></tr>\n</tbody></table>\n\n<h3>Difetti</h3>\n<table><thead><tr><th>d6</th><th>Voce</th></tr></thead><tbody>\n<tr><td>1</td><td>Sono ossessionato dall'idea che tutti mi giudichino dall'alto.</td></tr>\n<tr><td>2</td><td>Dipendo dall'Estratto di Fandonia.</td></tr>\n<tr><td>3</td><td>Sono uno sbruffone e un codardo.</td></tr>\n<tr><td>4</td><td>Nel profondo disprezzo gli umani.</td></tr>\n<tr><td>5</td><td>Cerco di imbrogliare chiunque per divertimento.</td></tr>\n<tr><td>6</td><td>Non so resistere alla tentazione di stuzzicare il can che dorme.</td></tr>\n</tbody></table>"
     },
     "source": "Brancalonia Macaronicon p.40-41",
     "identifier": "lucignolo",
@@ -33,7 +31,6 @@
         },
         "level": 0,
         "title": "Competenze del Background",
-        "classRestriction": "",
         "appliedEffects": []
       },
       {
@@ -55,7 +52,6 @@
         },
         "level": 0,
         "title": "Strumenti del Background",
-        "classRestriction": "",
         "appliedEffects": []
       },
       {
@@ -76,7 +72,6 @@
         },
         "level": 0,
         "title": "Linguaggi del Background",
-        "classRestriction": "",
         "appliedEffects": []
       }
     ],
@@ -85,22 +80,19 @@
         "_id": "3407907c22b6653e",
         "type": "linked",
         "count": 1,
-        "sort": 0,
-        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-lucignoloabito-comune-51bca6"
+        "sort": 0
       },
       {
         "_id": "11e57ac5740614f1",
         "type": "linked",
         "count": 1,
-        "sort": 100000,
-        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-lucignolocimelio-aggiuntivo-335bdd"
+        "sort": 100000
       },
       {
         "_id": "3e76be15b9fce35c",
         "type": "linked",
         "count": 1,
-        "sort": 200000,
-        "uuid": "Compendium.brancalonia.equipaggiamento.Item.bg-lucignoloborsa-con-15-ma-4f0b2b"
+        "sort": 200000
       }
     ],
     "wealth": "15"

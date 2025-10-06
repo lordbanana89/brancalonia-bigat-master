@@ -6,9 +6,7 @@
   "img": "icons/weapons/swords/sword-guard-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Attrezzo contadino rinforzato per alternare il lavoro nei campi alla difesa dei granai.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Attrezzo contadino rinforzato per alternare il lavoro nei campi alla difesa dei granai.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -24,19 +22,12 @@
       "ver"
     ],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": 5,
@@ -45,19 +36,14 @@
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": null,
-      "recovery": "",
       "autoDestroy": false,
       "autoUse": true
     },
-    "ability": "",
     "actionType": "mwak",
     "attackBonus": "0",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
       "parts": [
@@ -65,19 +51,16 @@
           "1d6",
           "slashing"
         ]
-      ],
-      "versatile": ""
+      ]
     },
-    "formula": "",
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "flat"
     },
     "type": {
-      "value": "simpleM",
-      "baseItem": ""
-    }
+      "value": "simpleM"
+    },
+    "identifier": "004_zappa_darme"
   },
   "effects": [],
   "folder": null,

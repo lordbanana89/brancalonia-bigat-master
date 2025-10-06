@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Il tuo tocco benedetto può guarire ferite. Hai una riserva di potere curativo che si ricarica quando fai un riposo lungo. Con quella riserva, puoi ripristinare un numero totale di punti ferita pari al tuo livello da paladino × 5.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Il tuo tocco benedetto può guarire ferite. Hai una riserva di potere curativo che si ricarica quando fai un riposo lungo. Con quella riserva, puoi ripristinare un numero totale di punti ferita pari al tuo livello da paladino × 5.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.84",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classpaladinolivello_1imposizionemani"
   },
   "effects": [],
   "folder": null,

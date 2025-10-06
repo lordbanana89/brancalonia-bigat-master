@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Elmo lucido che sembra sempre nuovo</p><h3>Proprietà</h3><p>+1 CA ma svantaggio ai TS contro paura</p><h3>Storia</h3><p><em>Il cavaliere fuggì da 100 battaglie e morì nel suo letto</em></p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "head",
-      "subtype": "",
-      "baseItem": ""
+      "value": "head"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -61,11 +50,12 @@
       "dex": null
     },
     "speed": {
-      "value": null,
-      "conditions": ""
+      "value": null
     },
     "strength": 0,
-    "stealth": false
+    "stealth": false,
+    "identifier": "item_006_lelmo_del_cavaliere_codardo",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

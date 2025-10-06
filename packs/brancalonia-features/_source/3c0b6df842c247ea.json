@@ -6,36 +6,24 @@
   "img": "icons/magic/symbols/runes-star-pentagon-orange.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Incantesimi (1° livello)</strong></p><p>Hai imparato a intrecciare la magia attraverso parole di potere e musica. Consulta il capitolo 10 del Manuale del Giocatore per le regole sulla magia.</p><p><strong>Trucchetti:</strong> Conosci 2 trucchetti da bardo. Ne impari altri salendo di livello.</p><p><strong>Slot Incantesimo:</strong> La tabella del Bardo mostra quanti slot hai per livello. Per lanciare un incantesimo, devi spendere uno slot del livello dell'incantesimo o superiore.</p><p><strong>Caratteristica da Incantatore:</strong> Il Carisma è la tua caratteristica da incantatore. La CD dei tuoi TS è 8 + bonus competenza + mod Carisma. Il tuo bonus di attacco con incantesimi è bonus competenza + mod Carisma.</p><p><strong>Lancio Rituale:</strong> Puoi lanciare qualsiasi incantesimo da bardo che conosci come rituale se ha il tag rituale.</p><p><strong>Focus da Incantatore:</strong> Puoi usare uno strumento musicale come focus da incantatore.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Incantesimi (1° livello)</strong></p><p>Hai imparato a intrecciare la magia attraverso parole di potere e musica. Consulta il capitolo 10 del Manuale del Giocatore per le regole sulla magia.</p><p><strong>Trucchetti:</strong> Conosci 2 trucchetti da bardo. Ne impari altri salendo di livello.</p><p><strong>Slot Incantesimo:</strong> La tabella del Bardo mostra quanti slot hai per livello. Per lanciare un incantesimo, devi spendere uno slot del livello dell'incantesimo o superiore.</p><p><strong>Caratteristica da Incantatore:</strong> Il Carisma è la tua caratteristica da incantatore. La CD dei tuoi TS è 8 + bonus competenza + mod Carisma. Il tuo bonus di attacco con incantesimi è bonus competenza + mod Carisma.</p><p><strong>Lancio Rituale:</strong> Puoi lanciare qualsiasi incantesimo da bardo che conosci come rituale se ha il tag rituale.</p><p><strong>Focus da Incantatore:</strong> Puoi usare uno strumento musicale come focus da incantatore.</p>"
     },
     "source": "Manuale del Giocatore p.51",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Bardo Livello 1",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "3c0b6df842c247ea"
   },
   "effects": [],
   "folder": null,

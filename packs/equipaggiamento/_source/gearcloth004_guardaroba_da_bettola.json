@@ -6,40 +6,28 @@
   "img": "icons/equipment/chest/shirt-simple-white.webp",
   "system": {
     "description": {
-      "value": "<p>Camicia aperta, pantaloni larghi e fascia per stare comodi in taverna.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Camicia aperta, pantaloni larghi e fascia per stare comodi in taverna.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "1 kg",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "gearcloth004_guardaroba_da_bettola",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

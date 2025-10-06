@@ -6,40 +6,28 @@
   "img": "icons/environment/settlement/house-wooden-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Suite con servizio in camera, bagno caldo e guardia privata.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Suite con servizio in camera, bagno caldo e guardia privata.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "—",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "gearserv005_alloggio_sfarzoso_notte",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

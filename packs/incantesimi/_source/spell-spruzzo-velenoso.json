@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Estendi la mano verso una creatura che puoi vedere entro gittata e proietti uno sbuffo di gas nocivo dal tuo palmo. La creatura deve superare un tiro salvezza su Costituzione o subire 1d12 danni da veleno.</p><h3>Note per il DM</h3><p><em>Poison Spray ha il danno più alto ma enormi limitazioni. Range 10 ft lo rende rischioso. Poison resistance/immunity molto comune.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Estendi la mano verso una creatura che puoi vedere entro gittata e proietti uno sbuffo di gas nocivo dal tuo palmo. La creatura deve superare un tiro salvezza su Costituzione o subire 1d12 danni da veleno.</p><h3>Note per il DM</h3><p><em>Poison Spray ha il danno più alto ma enormi limitazioni. Range 10 ft lo rende rischioso. Poison resistance/immunity molto comune.</em></p>"
     },
     "source": "D&D 5e PHB p.266",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -47,7 +42,6 @@
     "target": {
       "value": 1,
       "width": null,
-      "units": "",
       "type": "creature"
     },
     "save": {
@@ -56,21 +50,15 @@
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "save",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
       "parts": [
@@ -78,15 +66,10 @@
           "1d12",
           "poison"
         ]
-      ],
-      "versatile": ""
+      ]
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-spruzzo-velenoso"
   },
   "effects": [],
   "folder": null,

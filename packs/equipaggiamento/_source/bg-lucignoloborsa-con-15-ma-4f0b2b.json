@@ -6,9 +6,7 @@
   "img": "icons/containers/bags/sack-simple-leather-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Borsa con 15 ma - Equipaggiamento iniziale del background lucignolo.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Borsa con 15 ma - Equipaggiamento iniziale del background lucignolo.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -32,16 +30,16 @@
       "gp": 0,
       "pp": 0
     },
-    "attunement": "",
     "armor": {
       "type": "trinket",
       "value": null,
       "dex": null
     },
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "bg-lucignoloborsa-con-15-ma-4f0b2b",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

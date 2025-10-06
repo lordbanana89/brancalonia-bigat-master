@@ -6,9 +6,7 @@
   "img": "icons/equipment/shield/heater-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Scudo rotondo o rettangolare da impugnare con il braccio.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Scudo rotondo o rettangolare da impugnare con il braccio.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -35,16 +33,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd301_scudo",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

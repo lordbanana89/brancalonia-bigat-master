@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Dai un comando di una parola a una creatura che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza o seguire il comando nel suo prossimo turno. L'incantesimo non ha effetto se il bersaglio è non morto, se non comprende il tuo linguaggio, o se il tuo comando è direttamente dannoso per esso.</p><h3>Note per il DM</h3><p><em>Command è controllo potente ma breve. Creatività nei comandi premiata. WIS save comune problema. Scaling ottimo.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Dai un comando di una parola a una creatura che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza o seguire il comando nel suo prossimo turno. L'incantesimo non ha effetto se il bersaglio è non morto, se non comprende il tuo linguaggio, o se il tuo comando è direttamente dannoso per esso.</p><h3>Note per il DM</h3><p><em>Command è controllo potente ma breve. Creatività nei comandi premiata. WIS save comune problema. Scaling ottimo.</em></p>"
     },
     "source": "D&D 5e PHB p.223",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellcomando"
   },
   "effects": [],
   "folder": null,

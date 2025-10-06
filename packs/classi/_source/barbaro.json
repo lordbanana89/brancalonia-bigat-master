@@ -6,9 +6,7 @@
   "img": "icons/skills/melee/strike-axe-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Guerriero selvaggio dalla furia primordiale.</em></p>\n<p>Vedi il Manuale del Giocatore per i dettagli completi.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Guerriero selvaggio dalla furia primordiale.</em></p>\n<p>Vedi il Manuale del Giocatore per i dettagli completi.</p>"
     },
     "source": "Manuale del Giocatore p.46",
     "identifier": "barbarian",
@@ -28,7 +26,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.miracolarochiericolivello2incanalaredivinitarecitare82c66a",
               "optional": false
             }
           ],
@@ -45,7 +42,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-monaco-livello_1-difesa-senza-armatura",
               "optional": false
             }
           ],
@@ -62,7 +58,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_2-attacco-irruento",
               "optional": false
             }
           ],
@@ -79,7 +74,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_2-percezione-del-pericolo",
               "optional": false
             }
           ],
@@ -96,7 +90,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_3-cammino-primordiale",
               "optional": false
             }
           ],
@@ -126,7 +119,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-guerriero-livello_11-attacco-extra-superiore",
               "optional": false
             }
           ],
@@ -143,7 +135,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_5-movimento-veloce",
               "optional": false
             }
           ],
@@ -160,7 +151,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_7-istinto-ferino",
               "optional": false
             }
           ],
@@ -207,7 +197,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_9-critico-brutale",
               "optional": false
             }
           ],
@@ -224,7 +213,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_11-ira-implacabile",
               "optional": false
             }
           ],
@@ -254,7 +242,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.aiyocmlc1d8lmd1a",
               "optional": false
             }
           ],
@@ -271,7 +258,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_15-ira-persistente",
               "optional": false
             }
           ],
@@ -301,7 +287,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.867xktqdqm4oup6c",
               "optional": false
             }
           ],
@@ -318,7 +303,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_18-forza-indomabile",
               "optional": false
             }
           ],
@@ -348,7 +332,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-barbaro-livello_20-campione-primordiale",
               "optional": false
             }
           ],
@@ -376,8 +359,7 @@
       ]
     },
     "spellcasting": {
-      "progression": "none",
-      "ability": ""
+      "progression": "none"
     },
     "hd": {
       "denomination": "d12",
@@ -387,7 +369,8 @@
       "str"
     ],
     "startingEquipment": [],
-    "hitDice": "d12"
+    "hitDice": "d12",
+    "proficiency": 2
   },
   "effects": [],
   "folder": null,

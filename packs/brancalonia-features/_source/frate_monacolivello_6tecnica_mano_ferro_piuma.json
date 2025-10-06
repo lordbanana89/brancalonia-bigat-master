@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Con Raffica di Colpi può imporre un effetto: prone (TS DES), spinta 3m (TS FOR), svantaggio prossimo attacco (TS CON)</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Con Raffica di Colpi può imporre un effetto: prone (TS DES), spinta 3m (TS FOR), svantaggio prossimo attacco (TS CON)</p>"
     },
     "source": "Brancalonia",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "frate_monacolivello_6tecnica_mano_ferro_piuma"
   },
   "effects": [],
   "folder": null,

@@ -6,15 +6,12 @@
   "img": "icons/magic/fire/flame-burning-creature-skeleton.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Ira (1° livello)</strong></p><p>In battaglia, combatti con una ferocia primordiale. Nel tuo turno, puoi entrare in ira come azione bonus.</p><p><strong>Mentre sei in ira:</strong></p><ul><li>Hai vantaggio alle prove di Forza e ai tiri salvezza su Forza</li><li>Quando fai un attacco in mischia con un'arma usando Forza, ottieni un bonus al tiro per il danno che aumenta man mano che sali di livello come barbaro (vedi tabella del Barbaro)</li><li>Hai resistenza ai danni contundenti, perforanti e taglienti</li></ul><p><strong>Limitazioni:</strong> Non puoi lanciare incantesimi o concentrarti su incantesimi mentre sei in ira. Se puoi già andare in ira, puoi entrare in ira anche se stai indossando un'armatura pesante.</p><p><strong>Durata:</strong> L'ira dura 1 minuto. Termina prima se sei incosciente o se il tuo turno termina e non hai attaccato una creatura ostile dal tuo ultimo turno o subito danni da allora. Puoi anche terminare l'ira nel tuo turno come azione bonus.</p><p>Puoi andare in ira il numero di volte mostrato nella colonna Ire della tabella del Barbaro. Recuperi tutti gli usi spesi dopo un riposo lungo.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Ira (1° livello)</strong></p><p>In battaglia, combatti con una ferocia primordiale. Nel tuo turno, puoi entrare in ira come azione bonus.</p><p><strong>Mentre sei in ira:</strong></p><ul><li>Hai vantaggio alle prove di Forza e ai tiri salvezza su Forza</li><li>Quando fai un attacco in mischia con un'arma usando Forza, ottieni un bonus al tiro per il danno che aumenta man mano che sali di livello come barbaro (vedi tabella del Barbaro)</li><li>Hai resistenza ai danni contundenti, perforanti e taglienti</li></ul><p><strong>Limitazioni:</strong> Non puoi lanciare incantesimi o concentrarti su incantesimi mentre sei in ira. Se puoi già andare in ira, puoi entrare in ira anche se stai indossando un'armatura pesante.</p><p><strong>Durata:</strong> L'ira dura 1 minuto. Termina prima se sei incosciente o se il tuo turno termina e non hai attaccato una creatura ostile dal tuo ultimo turno o subito danni da allora. Puoi anche terminare l'ira nel tuo turno come azione bonus.</p><p>Puoi andare in ira il numero di volte mostrato nella colonna Ire della tabella del Barbaro. Recuperi tutti gli usi spesi dopo un riposo lungo.</p>"
     },
     "source": "Manuale del Giocatore p.48",
     "activation": {
       "type": "bonus",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": "1",
@@ -22,20 +19,16 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": 2,
       "max": "2",
-      "per": "lr",
-      "recovery": ""
+      "per": "lr"
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +40,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classbarbarolivello_1ira"
   },
   "effects": [],
   "folder": null,

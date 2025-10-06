@@ -6,36 +6,24 @@
   "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Percezione del Pericolo (2° livello)</strong></p><p>Al 2° livello ottieni un senso straordinario quando le cose intorno a te non sono come dovrebbero essere, che ti offre un vantaggio quando schivi il pericolo.</p><p>Hai vantaggio ai tiri salvezza di Destrezza contro effetti che puoi vedere, come trappole e incantesimi.</p><p><strong>Limitazione:</strong> Per ottenere questo beneficio, non devi essere accecato, assordato o incapacitato.</p><p><strong>Esempi di applicazione:</strong> Schivare una palla di fuoco, evitare una lama che scende dal soffitto, saltare via da un pavimento che crolla.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Percezione del Pericolo (2° livello)</strong></p><p>Al 2° livello ottieni un senso straordinario quando le cose intorno a te non sono come dovrebbero essere, che ti offre un vantaggio quando schivi il pericolo.</p><p>Hai vantaggio ai tiri salvezza di Destrezza contro effetti che puoi vedere, come trappole e incantesimi.</p><p><strong>Limitazione:</strong> Per ottenere questo beneficio, non devi essere accecato, assordato o incapacitato.</p><p><strong>Esempi di applicazione:</strong> Schivare una palla di fuoco, evitare una lama che scende dal soffitto, saltare via da un pavimento che crolla.</p>"
     },
     "source": "Manuale del Giocatore p.48",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classbarbarolivello_2percezionedelpericolo"
   },
   "effects": [],
   "folder": null,

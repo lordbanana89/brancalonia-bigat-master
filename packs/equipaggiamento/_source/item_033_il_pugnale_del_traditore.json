@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Pugnale con elsa a forma di serpente</p><h3>Proprietà</h3><p>+3 a colpire e danni contro alleati e amici</p><h3>Storia</h3><p><em>Usato per pugnalare Cesare</em></p><h3>Maledizione</h3><p><strong>Costringe a fare TS Saggezza CD 15 per non tradire alleati in momenti critici</strong></p><p>Costringe a fare TS Saggezza CD 15 per non tradire alleati in momenti critici</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -60,9 +49,9 @@
     "cursed": true,
     "curse": "Costringe a fare TS Saggezza CD 15 per non tradire alleati in momenti critici",
     "damage": {
-      "parts": [],
-      "versatile": ""
-    }
+      "parts": []
+    },
+    "identifier": "item_033_il_pugnale_del_traditore"
   },
   "effects": [],
   "folder": null,

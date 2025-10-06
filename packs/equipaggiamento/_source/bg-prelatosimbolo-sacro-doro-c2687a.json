@@ -6,9 +6,7 @@
   "img": "icons/commodities/treasure/token-gold-cross.webp",
   "system": {
     "description": {
-      "value": "<p>Simbolo sacro d'oro - Equipaggiamento iniziale del background prelato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Simbolo sacro d'oro - Equipaggiamento iniziale del background prelato.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-prelatosimbolo-sacro-doro-c2687a"
   },
   "effects": [],
   "folder": null,

@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 13° livello, impari a toccare il ki di altre menti così che comprendi tutti i linguaggi parlati. Inoltre, qualsiasi creatura che può capire un linguaggio può capire ciò che dici.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 13° livello, impari a toccare il ki di altre menti così che comprendi tutti i linguaggi parlati. Inoltre, qualsiasi creatura che può capire un linguaggio può capire ciò che dici.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.79",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classmonacolivello_13linguasoleluna"
   },
   "effects": [],
   "folder": null,

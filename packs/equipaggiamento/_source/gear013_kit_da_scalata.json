@@ -6,46 +6,35 @@
   "img": "icons/consumables/potions/bottle-round-corked-red.webp",
   "system": {
     "description": {
-      "value": "<p>Comprende imbragature, ramponi, martello, chiodi speciali, piccozza e corde di sicurezza.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Comprende imbragature, ramponi, martello, chiodi speciali, piccozza e corde di sicurezza.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "5 kg",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
     },
     "rarity": "common",
-    "attunement": 0
+    "attunement": 0,
+    "identifier": "gear013_kit_da_scalata"
   },
   "effects": [],
   "folder": null,

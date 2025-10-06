@@ -6,9 +6,7 @@
   "img": "icons/containers/bags/sack-simple-leather-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Borsa con 10 ma - Equipaggiamento iniziale del background cacciatore_di_reliquie.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Borsa con 10 ma - Equipaggiamento iniziale del background cacciatore_di_reliquie.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -32,16 +30,16 @@
       "gp": 0,
       "pp": 0
     },
-    "attunement": "",
     "armor": {
       "type": "trinket",
       "value": null,
       "dex": null
     },
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "bg-cacciatoredireliquieborsa-con-10-ma-e1f4e0",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

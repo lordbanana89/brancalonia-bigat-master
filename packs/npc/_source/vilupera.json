@@ -9,10 +9,7 @@
       "str": {
         "value": 20,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 5,
         "save": 5,
@@ -21,10 +18,7 @@
       "dex": {
         "value": 14,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 2,
         "save": 2,
@@ -33,10 +27,7 @@
       "con": {
         "value": 18,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 4,
         "save": 4,
@@ -45,10 +36,7 @@
       "int": {
         "value": 5,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": -3,
         "save": -3,
@@ -57,10 +45,7 @@
       "wis": {
         "value": 12,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -69,10 +54,7 @@
       "cha": {
         "value": 6,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": -2,
         "save": -2,
@@ -82,8 +64,7 @@
     "attributes": {
       "ac": {
         "flat": 14,
-        "calc": "natural",
-        "formula": ""
+        "calc": "natural"
       },
       "hp": {
         "value": 123,
@@ -121,7 +102,6 @@
         "units": "ft",
         "special": "Percezione Passiva 17"
       },
-      "spellcasting": "",
       "prof": 3,
       "spelldc": null,
       "death": {
@@ -131,18 +111,12 @@
     },
     "details": {
       "biography": {
-        "value": "<p>La vilupera è una bestia abominevole e altamente letale originaria della Penumbria. Anatomicamente si presenta come un ibrido bicefalo tra una vipera e un lupo di grossa taglia, con quattro zampe e una coppia di colli tortuosi che culminano in musi dentati con un doppio ordine di zanne. Un esemplare adulto tocca i due quintali per sette piedi di lunghezza e la lassità mandibolare (comune ai grandi serpenti) consente a ogni fauce un grado di dilatazione tale da ingoiare senza sforzo il capo di un garzone. I canini sono inoltre intrisi di un veleno ad azione istantanea, la cui tossina paralizzante neutralizza le vittime in pochi istanti. La coda è una, nodosa come un cappio e lunga in media quanto il corpo, terminante in un sonaglio vibratile.</p><h3>Note Brancalonia</h3>",
-        "public": ""
+        "value": "<p>La vilupera è una bestia abominevole e altamente letale originaria della Penumbria. Anatomicamente si presenta come un ibrido bicefalo tra una vipera e un lupo di grossa taglia, con quattro zampe e una coppia di colli tortuosi che culminano in musi dentati con un doppio ordine di zanne. Un esemplare adulto tocca i due quintali per sette piedi di lunghezza e la lassità mandibolare (comune ai grandi serpenti) consente a ogni fauce un grado di dilatazione tale da ingoiare senza sforzo il capo di un garzone. I canini sono inoltre intrisi di un veleno ad azione istantanea, la cui tossina paralizzante neutralizza le vittime in pochi istanti. La coda è una, nodosa come un cappio e lunga in media quanto il corpo, terminante in un sonaglio vibratile.</p><h3>Note Brancalonia</h3>"
       },
       "alignment": "Senza allineamento",
-      "race": "",
       "type": {
-        "value": "monstrosity",
-        "subtype": "",
-        "swarm": "",
-        "custom": ""
+        "value": "monstrosity"
       },
-      "environment": "",
       "cr": 6,
       "spellLevel": 0,
       "xp": {
@@ -154,26 +128,21 @@
       "size": "lg",
       "di": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dr": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dv": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "ci": {
-        "value": [],
-        "custom": ""
+        "value": []
       },
       "languages": {
-        "value": [],
-        "custom": ""
+        "value": []
       }
     },
     "currency": {
@@ -187,10 +156,7 @@
       "acr": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -199,10 +165,7 @@
       "ani": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -211,10 +174,7 @@
       "arc": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -223,10 +183,7 @@
       "ath": {
         "value": 0,
         "ability": "str",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -235,10 +192,7 @@
       "dec": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -247,10 +201,7 @@
       "his": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -259,10 +210,7 @@
       "ins": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -271,10 +219,7 @@
       "inti": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -283,10 +228,7 @@
       "inv": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -295,10 +237,7 @@
       "med": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -307,10 +246,7 @@
       "nat": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -319,10 +255,7 @@
       "prc": {
         "value": 2,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 7,
         "passive": 17,
         "prof": 2,
@@ -331,10 +264,7 @@
       "prf": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -343,10 +273,7 @@
       "per": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -355,10 +282,7 @@
       "rel": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -367,10 +291,7 @@
       "slt": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -379,10 +300,7 @@
       "ste": {
         "value": 1,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 5,
         "passive": 15,
         "prof": 1,
@@ -391,10 +309,7 @@
       "sur": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -455,30 +370,12 @@
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
-      "spell": {
-        "dc": ""
-      }
+      "mwak": {},
+      "rwak": {},
+      "msak": {},
+      "rsak": {},
+      "abilities": {},
+      "spell": {}
     },
     "resources": {
       "legact": {
@@ -493,7 +390,23 @@
         "value": false,
         "initiative": 0
       }
-    }
+    },
+    "saves": {
+      "fortitude": {
+        "value": 0,
+        "proficient": false
+      },
+      "reflex": {
+        "value": 0,
+        "proficient": false
+      },
+      "will": {
+        "value": 0,
+        "proficient": false
+      }
+    },
+    "identifier": "vilupera",
+    "source": "Brancalonia"
   },
   "items": [
     {
@@ -504,65 +417,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>La vilupera dispone di vantaggio alle prove di Saggezza (Percezione) e ai tiri salvezza contro le condizioni di accecato, affascinato, assordato, privo di sensi, spaventato e stordito.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>La vilupera dispone di vantaggio alle prove di Saggezza (Percezione) e ai tiri salvezza contro le condizioni di accecato, affascinato, assordato, privo di sensi, spaventato e stordito.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -577,65 +467,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Quando una delle due teste della vilupera dorme, l'altra testa è sveglia.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Quando una delle due teste della vilupera dorme, l'altra testa è sveglia.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -650,65 +517,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Grazie alla sua natura bicefala, la vilupera riceve una reazione extra che può essere usata soltanto per gli attacchi di opportunità.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Grazie alla sua natura bicefala, la vilupera riceve una reazione extra che può essere usata soltanto per gli attacchi di opportunità.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -723,65 +567,43 @@
       "img": "icons/skills/melee/strike-slashes-red.webp",
       "system": {
         "description": {
-          "value": "<p>La vilupera effettua due attacchi con il morso.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>La vilupera effettua due attacchi con il morso.</p>"
         },
-        "source": "",
         "activation": {
           "type": "action",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -796,11 +618,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -809,21 +628,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -833,22 +646,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "mwak",
         "attackBonus": "+8",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -856,17 +663,13 @@
               "2d6 + 5",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }

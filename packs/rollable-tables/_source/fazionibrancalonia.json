@@ -165,5 +165,15 @@
   "_key": "!tables!fazionibrancalonia",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Fazioni del Regno - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "fazionibrancalonia",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

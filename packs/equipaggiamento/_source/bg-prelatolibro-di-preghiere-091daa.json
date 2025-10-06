@@ -6,9 +6,7 @@
   "img": "icons/sundries/books/book-worn-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Libro di preghiere - Equipaggiamento iniziale del background prelato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Libro di preghiere - Equipaggiamento iniziale del background prelato.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-prelatolibro-di-preghiere-091daa"
   },
   "effects": [],
   "folder": null,

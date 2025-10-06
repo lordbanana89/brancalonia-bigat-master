@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Crei un suono o un'immagine di un oggetto entro gittata che dura per la durata. L'illusione termina anche se la congedi come azione o lanci di nuovo questo incantesimo. Se crei un suono, il suo volume può variare da un sussurro a un urlo. Può essere la tua voce, la voce di qualcun altro, il ruggito di un leone, un rullo di tamburi o qualsiasi altro suono tu scelga. Il suono continua per tutta la durata, o puoi fare suoni discreti in momenti diversi prima che l'incantesimo finisca. Se crei un'immagine di un oggetto come una sedia, impronte di fango o un piccolo baule, non deve essere più grande di un cubo di 5 piedi. L'immagine non può creare suono, luce, odore o qualsiasi altro effetto sensoriale. L'interazione fisica con l'immagine rivela che è un'illusione, perché le cose possono passarci attraverso.</p><h3>Note per il DM</h3><p><em>Minor Illusion è limitato ma creativo. No componente verbale lo rende ottimo per stealth. Investigation check permette di scoprirla.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Crei un suono o un'immagine di un oggetto entro gittata che dura per la durata. L'illusione termina anche se la congedi come azione o lanci di nuovo questo incantesimo. Se crei un suono, il suo volume può variare da un sussurro a un urlo. Può essere la tua voce, la voce di qualcun altro, il ruggito di un leone, un rullo di tamburi o qualsiasi altro suono tu scelga. Il suono continua per tutta la durata, o puoi fare suoni discreti in momenti diversi prima che l'incantesimo finisca. Se crei un'immagine di un oggetto come una sedia, impronte di fango o un piccolo baule, non deve essere più grande di un cubo di 5 piedi. L'immagine non può creare suono, luce, odore o qualsiasi altro effetto sensoriale. L'interazione fisica con l'immagine rivela che è un'illusione, perché le cose possono passarci attraverso.</p><h3>Note per il DM</h3><p><em>Minor Illusion è limitato ma creativo. No componente verbale lo rende ottimo per stealth. Investigation check permette di scoprirla.</em></p>"
     },
     "source": "D&D 5e PHB p.260",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-illusione-minore"
   },
   "effects": [],
   "folder": null,

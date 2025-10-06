@@ -6,36 +6,25 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Creatura entro 40m che può sentire: svantaggio al prossimo TS contro magia del warlock. 1/riposo breve o lungo</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Creatura entro 40m che può sentire: svantaggio al prossimo TS contro magia del warlock. 1/riposo breve o lungo</p>"
     },
     "source": "Brancalonia",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
       "max": null,
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +36,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "menagramo_warlocklivello_1iattura"
   },
   "effects": [],
   "folder": null,

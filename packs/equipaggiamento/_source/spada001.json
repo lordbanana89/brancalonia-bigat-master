@@ -24,8 +24,7 @@
           "1d6 + @mod",
           "slashing"
         ]
-      ],
-      "versatile": ""
+      ]
     },
     "range": {
       "value": null,
@@ -37,11 +36,10 @@
       "lgt"
     ],
     "rarity": "common",
-    "attunement": "",
     "type": {
-      "value": "simpleM",
-      "baseItem": ""
-    }
+      "value": "simpleM"
+    },
+    "identifier": "spada001"
   },
   "effects": [],
   "folder": null,

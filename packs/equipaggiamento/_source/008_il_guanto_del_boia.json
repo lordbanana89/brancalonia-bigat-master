@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Guanto di cuoio nero macchiato di sangue</p><h3>Proprietà</h3><p>Chi lo indossa sa sempre se qualcuno mente sulla propria colpevolezza</p><h3>Storia</h3><p><em>Il boia giustiziò 1000 persone, metà innocenti</em></p><h3>Maledizione</h3><p><strong>Le mani puzzano sempre di sangue</strong></p><p>Le mani puzzano sempre di sangue</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "Le mani puzzano sempre di sangue"
+    "curse": "Le mani puzzano sempre di sangue",
+    "identifier": "008_il_guanto_del_boia",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

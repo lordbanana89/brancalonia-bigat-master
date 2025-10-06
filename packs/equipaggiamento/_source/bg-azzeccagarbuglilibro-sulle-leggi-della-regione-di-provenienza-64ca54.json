@@ -6,9 +6,7 @@
   "img": "icons/sundries/books/book-worn-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Libro sulle leggi della regione di provenienza - Equipaggiamento iniziale del background azzeccagarbugli.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Libro sulle leggi della regione di provenienza - Equipaggiamento iniziale del background azzeccagarbugli.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-azzeccagarbuglilibro-sulle-leggi-della-regione-di-provenienza-64ca54"
   },
   "effects": [],
   "folder": null,

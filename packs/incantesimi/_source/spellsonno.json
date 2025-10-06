@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Questo incantesimo fa cadere le creature in un sonno magico. Tira 5d8; il totale è quanti punti ferita di creature questo incantesimo può influenzare. Le creature entro 20 piedi da un punto che scegli entro gittata sono influenzate in ordine crescente dei loro punti ferita attuali (ignorando creature incoscienti). Iniziando con la creatura che ha i punti ferita attuali più bassi, ogni creatura influenzata da questo incantesimo cade incosciente fino a quando l'incantesimo termina, il dormiente subisce danni o qualcuno usa un'azione per scuotere o schiaffeggiare il dormiente sveglio. Sottrai i punti ferita di ogni creatura dal totale prima di passare alla creatura con i successivi punti ferita più bassi. I punti ferita di una creatura devono essere uguali o inferiori al totale rimanente perché quella creatura sia influenzata.</p><h3>Note per il DM</h3><p><em>Sleep potentissimo a bassi livelli, debole dopo. No save lo rende affidabile vs minions. Immunità elfi importante.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Questo incantesimo fa cadere le creature in un sonno magico. Tira 5d8; il totale è quanti punti ferita di creature questo incantesimo può influenzare. Le creature entro 20 piedi da un punto che scegli entro gittata sono influenzate in ordine crescente dei loro punti ferita attuali (ignorando creature incoscienti). Iniziando con la creatura che ha i punti ferita attuali più bassi, ogni creatura influenzata da questo incantesimo cade incosciente fino a quando l'incantesimo termina, il dormiente subisce danni o qualcuno usa un'azione per scuotere o schiaffeggiare il dormiente sveglio. Sottrai i punti ferita di ogni creatura dal totale prima di passare alla creatura con i successivi punti ferita più bassi. I punti ferita di una creatura devono essere uguali o inferiori al totale rimanente perché quella creatura sia influenzata.</p><h3>Note per il DM</h3><p><em>Sleep potentissimo a bassi livelli, debole dopo. No save lo rende affidabile vs minions. Immunità elfi importante.</em></p>"
     },
     "source": "D&D 5e PHB p.276",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellsonno"
   },
   "effects": [],
   "folder": null,

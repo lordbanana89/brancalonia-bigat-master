@@ -261,5 +261,15 @@
   "_key": "!tables!insultibrancalonia",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Insulti Tipici di Brancalonia - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "insultibrancalonia",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

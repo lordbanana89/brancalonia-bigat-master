@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Una creatura consenziente che tocchi è pervasa da coraggio. Fino al termine dell'incantesimo, la creatura è immune all'essere spaventata e ottiene punti ferita temporanei pari al tuo modificatore di caratteristica da incantatore all'inizio di ognuno dei suoi turni. Quando l'incantesimo termina, il bersaglio perde tutti i punti ferita temporanei rimanenti da questo incantesimo.</p><h3>Note per il DM</h3><p><em>Heroism è ottimo sustained protection. THP ogni turno accumula molto. Fear immunity situazionale ma potente quando serve.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Una creatura consenziente che tocchi è pervasa da coraggio. Fino al termine dell'incantesimo, la creatura è immune all'essere spaventata e ottiene punti ferita temporanei pari al tuo modificatore di caratteristica da incantatore all'inizio di ognuno dei suoi turni. Quando l'incantesimo termina, il bersaglio perde tutti i punti ferita temporanei rimanenti da questo incantesimo.</p><h3>Note per il DM</h3><p><em>Heroism è ottimo sustained protection. THP ogni turno accumula molto. Fear immunity situazionale ma potente quando serve.</em></p>"
     },
     "source": "D&D 5e PHB p.250",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-eroismo"
   },
   "effects": [],
   "folder": null,

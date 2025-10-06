@@ -18,5 +18,17 @@
       "version": "12.0.4"
     }
   },
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>armi - Regola di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "identifier": "rissa-base-armi"
+  },
+  "folder": null,
+  "effects": []
 }

@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Nel tuo studio dell'occulto, hai portato alla luce invocazioni occulte, frammenti di conoscenza proibita che ti infondono abilità magiche permanenti. Al 2° livello, guadagni due invocazioni occulte a tua scelta.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Nel tuo studio dell'occulto, hai portato alla luce invocazioni occulte, frammenti di conoscenza proibita che ti infondono abilità magiche permanenti. Al 2° livello, guadagni due invocazioni occulte a tua scelta.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.107",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classwarlocklivello_2invocazioniocculte"
   },
   "effects": [],
   "folder": null,

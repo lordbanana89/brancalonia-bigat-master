@@ -6,36 +6,24 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Critico Brutale (9° livello)</strong></p><p>Quando ottieni un colpo critico con un attacco in mischia con arma, puoi tirare un dado danno addizionale dell'arma e aggiungerlo al danno extra del critico.</p><p>Questo dado aumenta a due dadi al 13° livello e tre dadi al 17° livello.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Critico Brutale (9° livello)</strong></p><p>Quando ottieni un colpo critico con un attacco in mischia con arma, puoi tirare un dado danno addizionale dell'arma e aggiungerlo al danno extra del critico.</p><p>Questo dado aumenta a due dadi al 13° livello e tre dadi al 17° livello.</p>"
     },
     "source": "Manuale del Giocatore p.49",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Barbaro Livello 9",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "5c4be4511e2d33e1"
   },
   "effects": [
     {

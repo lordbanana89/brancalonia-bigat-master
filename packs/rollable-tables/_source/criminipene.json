@@ -165,5 +165,15 @@
   "_key": "!tables!criminipene",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Crimini e Punizioni - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "criminipene",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

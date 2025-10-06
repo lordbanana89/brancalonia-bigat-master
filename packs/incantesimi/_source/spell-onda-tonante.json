@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Un'onda di forza tonante si propaga da te. Ogni creatura in un cubo di 15 piedi che origina da te deve effettuare un tiro salvezza su Costituzione. Con un fallimento, una creatura subisce 2d8 danni da tuono ed è spinta di 10 piedi lontano da te. Con un successo, la creatura subisce metà danni e non è spinta. Inoltre, oggetti non fissati che sono completamente dentro l'area di effetto sono automaticamente spinti 10 piedi lontano da te dall'effetto dell'incantesimo, e l'incantesimo emette un boato tonante udibile fino a 300 piedi.</p><h3>Note per il DM</h3><p><em>Thunderwave ottimo controllo livello 1. Push 10 ft molto utile tatticamente. Rumore 300 ft è svantaggio importante.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Un'onda di forza tonante si propaga da te. Ogni creatura in un cubo di 15 piedi che origina da te deve effettuare un tiro salvezza su Costituzione. Con un fallimento, una creatura subisce 2d8 danni da tuono ed è spinta di 10 piedi lontano da te. Con un successo, la creatura subisce metà danni e non è spinta. Inoltre, oggetti non fissati che sono completamente dentro l'area di effetto sono automaticamente spinti 10 piedi lontano da te dall'effetto dell'incantesimo, e l'incantesimo emette un boato tonante udibile fino a 300 piedi.</p><h3>Note per il DM</h3><p><em>Thunderwave ottimo controllo livello 1. Push 10 ft molto utile tatticamente. Rumore 300 ft è svantaggio importante.</em></p>"
     },
     "source": "D&D 5e PHB p.282",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-onda-tonante"
   },
   "effects": [],
   "folder": null,

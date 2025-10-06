@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Tenti di interrompere una creatura nel processo di lancio di un incantesimo. Se la creatura sta lanciando un incantesimo di 3° livello o inferiore, il suo incantesimo fallisce e non ha effetto. Se sta lanciando un incantesimo di 4° livello o superiore, effettua una prova di caratteristica usando la tua caratteristica da incantatore. La CD è uguale a 10 + il livello dell'incantesimo. Con un successo, l'incantesimo della creatura fallisce e non ha effetto.</p><h3>Note per il DM</h3><p><em>Counterspell definisce meta high-level. Reaction economy cruciale. Identificare spell optional ma utile. Counter-war può dominare combat.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Tenti di interrompere una creatura nel processo di lancio di un incantesimo. Se la creatura sta lanciando un incantesimo di 3° livello o inferiore, il suo incantesimo fallisce e non ha effetto. Se sta lanciando un incantesimo di 4° livello o superiore, effettua una prova di caratteristica usando la tua caratteristica da incantatore. La CD è uguale a 10 + il livello dell'incantesimo. Con un successo, l'incantesimo della creatura fallisce e non ha effetto.</p><h3>Note per il DM</h3><p><em>Counterspell definisce meta high-level. Reaction economy cruciale. Identificare spell optional ma utile. Counter-war può dominare combat.</em></p>"
     },
     "source": "D&D 5e PHB p.228",
     "level": 3,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "reaction",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellcontroincantesimo"
   },
   "effects": [],
   "folder": null,

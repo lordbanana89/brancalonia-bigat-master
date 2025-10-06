@@ -5,11 +5,7 @@
   "type": "race",
   "img": "icons/environment/people/group.webp",
   "system": {
-    "description": {
-      "value": "",
-      "chat": "",
-      "unidentified": ""
-    },
+    "description": {},
     "source": "Brancalonia Manuale Base",
     "movement": {
       "walk": 30,
@@ -21,9 +17,7 @@
       "units": "ft"
     },
     "type": {
-      "value": "construct",
-      "subtype": "",
-      "custom": ""
+      "value": "construct"
     },
     "advancement": [
       {
@@ -52,7 +46,6 @@
         "value": {},
         "level": 0,
         "title": "Size",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
@@ -66,16 +59,13 @@
         "value": {},
         "level": 0,
         "title": "Construct Nature",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
         "_id": "spdhyykpsyz3y58l",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.classladrolivello20colpodifortunaee8fd2"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -86,9 +76,7 @@
         "_id": "tu761ltosegwdq5p",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.mcrstie13fxz5fdd"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -99,16 +87,17 @@
         "_id": "jlzdqsclpx7sylc6",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.640osjf8ykome9vu"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
         "level": 0,
         "title": "Agilità Halfling"
       }
-    ]
+    ],
+    "identifier": "sottorazzapupo",
+    "speed": 30,
+    "size": "medium"
   },
   "effects": [],
   "folder": null,

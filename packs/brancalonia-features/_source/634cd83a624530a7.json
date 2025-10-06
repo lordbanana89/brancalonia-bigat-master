@@ -6,9 +6,7 @@
   "img": "icons/magic/light/explosion-star-large-orange.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Ispirazione Bardica (1° livello)</strong></p><p>Puoi ispirare altri attraverso parole stimolanti o musica. Per farlo, usa un'azione bonus nel tuo turno per scegliere una creatura diversa da te entro 18 metri che possa sentirti. Quella creatura ottiene un dado di Ispirazione Bardica, un d6.</p><p>Una volta entro i prossimi 10 minuti, la creatura può tirare il dado e aggiungere il numero ottenuto a una prova di caratteristica, tiro per colpire o tiro salvezza che effettua. La creatura può aspettare di vedere il risultato del d20 prima di decidere di usare il dado, ma deve decidere prima che il GM dica se il tiro ha successo o fallisce.</p><p>Una volta usato il dado, è perso. Una creatura può avere un solo dado di Ispirazione Bardica alla volta.</p><p>Puoi usare questo privilegio un numero di volte pari al tuo modificatore di Carisma (minimo 1). Recuperi tutti gli usi spesi quando completi un riposo lungo.</p><p><strong>Progressione dado:</strong> Il dado diventa d8 al 5° livello, d10 al 10° livello e d12 al 15° livello.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Ispirazione Bardica (1° livello)</strong></p><p>Puoi ispirare altri attraverso parole stimolanti o musica. Per farlo, usa un'azione bonus nel tuo turno per scegliere una creatura diversa da te entro 18 metri che possa sentirti. Quella creatura ottiene un dado di Ispirazione Bardica, un d6.</p><p>Una volta entro i prossimi 10 minuti, la creatura può tirare il dado e aggiungere il numero ottenuto a una prova di caratteristica, tiro per colpire o tiro salvezza che effettua. La creatura può aspettare di vedere il risultato del d20 prima di decidere di usare il dado, ma deve decidere prima che il GM dica se il tiro ha successo o fallisce.</p><p>Una volta usato il dado, è perso. Una creatura può avere un solo dado di Ispirazione Bardica alla volta.</p><p>Puoi usare questo privilegio un numero di volte pari al tuo modificatore di Carisma (minimo 1). Recuperi tutti gli usi spesi quando completi un riposo lungo.</p><p><strong>Progressione dado:</strong> Il dado diventa d8 al 5° livello, d10 al 10° livello e d12 al 15° livello.</p>"
     },
     "source": "Manuale del Giocatore p.53",
     "activation": {
@@ -23,7 +21,6 @@
     "target": {
       "value": 1,
       "width": null,
-      "units": "",
       "type": "creature"
     },
     "range": {
@@ -34,8 +31,7 @@
     "uses": {
       "value": null,
       "max": "@abilities.cha.mod",
-      "per": "lr",
-      "recovery": ""
+      "per": "lr"
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +45,13 @@
     "attunement": 0,
     "requirements": "Bardo Livello 1",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "634cd83a624530a7"
   },
   "effects": [],
   "folder": null,

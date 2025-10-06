@@ -30,16 +30,16 @@
       "pp": 0
     },
     "rarity": "common",
-    "attunement": "",
     "armor": {
       "type": "trinket",
       "value": null,
       "dex": null
     },
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "borsa001",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

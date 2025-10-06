@@ -6,36 +6,24 @@
   "img": "icons/magic/nature/leaf-glow-triple-green.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Incantesimi (1° livello)</strong></p><p>Attingendo dalla divina essenza della natura stessa, puoi lanciare incantesimi per plasmare quell'essenza secondo la tua volontà.</p><p><strong>Trucchetti:</strong> Conosci due trucchetti da druido di tua scelta. Impari trucchetti aggiuntivi ai livelli superiori.</p><p><strong>Preparare e lanciare:</strong> Prepari la lista degli incantesimi da druido disponibili per il lancio, scegliendoli dalla lista degli incantesimi da druido. Quando lo fai, scegli un numero di incantesimi da druido pari al tuo modificatore di Saggezza + il tuo livello da druido (minimo 1). Gli incantesimi devono essere di un livello per cui hai slot.</p><p><strong>Abilità da incantatore:</strong> Saggezza. CD = 8 + bonus competenza + mod. Saggezza.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Incantesimi (1° livello)</strong></p><p>Attingendo dalla divina essenza della natura stessa, puoi lanciare incantesimi per plasmare quell'essenza secondo la tua volontà.</p><p><strong>Trucchetti:</strong> Conosci due trucchetti da druido di tua scelta. Impari trucchetti aggiuntivi ai livelli superiori.</p><p><strong>Preparare e lanciare:</strong> Prepari la lista degli incantesimi da druido disponibili per il lancio, scegliendoli dalla lista degli incantesimi da druido. Quando lo fai, scegli un numero di incantesimi da druido pari al tuo modificatore di Saggezza + il tuo livello da druido (minimo 1). Gli incantesimi devono essere di un livello per cui hai slot.</p><p><strong>Abilità da incantatore:</strong> Saggezza. CD = 8 + bonus competenza + mod. Saggezza.</p>"
     },
     "source": "Manuale del Giocatore p.66",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Druido Livello 1",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "5bd886d25134eb1b"
   },
   "effects": [],
   "folder": null,

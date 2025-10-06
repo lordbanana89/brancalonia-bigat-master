@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Cuoio rinforzato da piccoli rivetti metallici.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Cuoio rinforzato da piccoli rivetti metallici.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -35,16 +33,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd003_armatura_di_cuoio_borchiato",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

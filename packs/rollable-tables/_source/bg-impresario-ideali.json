@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Impresario - Ideali - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-impresario-ideali",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

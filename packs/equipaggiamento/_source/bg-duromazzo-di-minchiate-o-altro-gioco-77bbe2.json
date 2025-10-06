@@ -6,9 +6,7 @@
   "img": "icons/sundries/gaming/playing-cards.webp",
   "system": {
     "description": {
-      "value": "<p>Mazzo di minchiate o altro gioco - Equipaggiamento iniziale del background duro.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Mazzo di minchiate o altro gioco - Equipaggiamento iniziale del background duro.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-duromazzo-di-minchiate-o-altro-gioco-77bbe2"
   },
   "effects": [],
   "folder": null,

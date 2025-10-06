@@ -6,9 +6,7 @@
   "img": "icons/environment/people/group.webp",
   "system": {
     "description": {
-      "value": "<p>Pura coscienza astratta racchiusa in abiti vuoti, armature o mantelli che si muovono da soli</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Pura coscienza astratta racchiusa in abiti vuoti, armature o mantelli che si muovono da soli</p>"
     },
     "source": "Brancalonia Macaronicon p.8-9",
     "movement": {
@@ -21,9 +19,7 @@
       "units": "ft"
     },
     "type": {
-      "value": "humanoid",
-      "subtype": "",
-      "custom": ""
+      "value": "humanoid"
     },
     "advancement": [
       {
@@ -52,7 +48,6 @@
         "value": {},
         "level": 0,
         "title": "Size",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
@@ -66,16 +61,13 @@
         "value": {},
         "level": 0,
         "title": "Incorporeal Movement",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
         "_id": "1y4cmpwk7aj1va10",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.b9nfip1u5gkb47mk"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -87,9 +79,7 @@
         "_id": "fupebjlwzyi1195e",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.lm1abbjh078q4kur"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -101,9 +91,7 @@
         "_id": "xj5mzjc2wwwjvydu",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.4k9xwije9dhh1egq"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -111,7 +99,10 @@
         "title": "Memoria Evanescente",
         "icon": "icons/svg/upgrade.svg"
       }
-    ]
+    ],
+    "identifier": "inesistente",
+    "speed": 30,
+    "size": "medium"
   },
   "effects": [],
   "folder": null,

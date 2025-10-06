@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Puoi ispirare gli altri attraverso parole o musica. Per farlo, usi un'azione bonus nel tuo turno per scegliere una creatura diversa da te entro 60 piedi che possa sentirti. Quella creatura guadagna un dado di Ispirazione Bardica.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Puoi ispirare gli altri attraverso parole o musica. Per farlo, usi un'azione bonus nel tuo turno per scegliere una creatura diversa da te entro 60 piedi che possa sentirti. Quella creatura guadagna un dado di Ispirazione Bardica.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.53",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classbardolivello_1ispirazionebardica"
   },
   "effects": [],
   "folder": null,

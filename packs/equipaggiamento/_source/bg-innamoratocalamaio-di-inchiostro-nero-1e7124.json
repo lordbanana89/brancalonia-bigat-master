@@ -6,9 +6,7 @@
   "img": "icons/tools/scribal/ink-pot-glass-corked-black.webp",
   "system": {
     "description": {
-      "value": "<p>Calamaio di inchiostro nero - Equipaggiamento iniziale del background innamorato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Calamaio di inchiostro nero - Equipaggiamento iniziale del background innamorato.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-innamoratocalamaio-di-inchiostro-nero-1e7124"
   },
   "effects": [],
   "folder": null,

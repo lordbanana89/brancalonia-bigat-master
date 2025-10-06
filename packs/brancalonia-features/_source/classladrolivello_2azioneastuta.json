@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 2° livello, il tuo pensiero rapido e la tua agilità ti permettono di muoverti e agire velocemente. Puoi effettuare un'azione bonus in ognuno dei tuoi turni in combattimento. Questa azione può essere usata solo per Dash, Disimpegno o Nascondersi.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 2° livello, il tuo pensiero rapido e la tua agilità ti permettono di muoverti e agire velocemente. Puoi effettuare un'azione bonus in ognuno dei tuoi turni in combattimento. Questa azione può essere usata solo per Dash, Disimpegno o Nascondersi.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.96",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classladrolivello_2azioneastuta"
   },
   "effects": [],
   "folder": null,

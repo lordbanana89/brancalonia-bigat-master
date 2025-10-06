@@ -6,9 +6,7 @@
   "img": "icons/magic/light/explosion-star-sun-large-orange-purple.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Ispirazione Superiore (20° livello)</strong></p><p>Al 20° livello, quando tiri per l'iniziativa e non hai usi di Ispirazione Bardica rimasti, recuperi un uso.</p><p>Questo ti assicura di avere sempre almeno un uso di Ispirazione Bardica disponibile all'inizio del combattimento, permettendoti di supportare i tuoi alleati anche nelle situazioni più disperate.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Ispirazione Superiore (20° livello)</strong></p><p>Al 20° livello, quando tiri per l'iniziativa e non hai usi di Ispirazione Bardica rimasti, recuperi un uso.</p><p>Questo ti assicura di avere sempre almeno un uso di Ispirazione Bardica disponibile all'inizio del combattimento, permettendoti di supportare i tuoi alleati anche nelle situazioni più disperate.</p>"
     },
     "source": "Manuale del Giocatore p.54",
     "activation": {
@@ -16,26 +14,18 @@
       "cost": null,
       "condition": "Quando tiri iniziativa senza usi di Ispirazione Bardica"
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +39,13 @@
     "attunement": 0,
     "requirements": "Bardo Livello 20",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "0fef1e1efe5b44b5"
   },
   "effects": [],
   "folder": null,

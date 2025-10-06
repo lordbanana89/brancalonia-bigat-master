@@ -127,5 +127,16 @@
     "default": 0
   },
   "effects": [],
-  "type": "table"
+  "type": "table",
+  "system": {
+    "description": {
+      "value": "<p>Duro - Tratti della Personalità - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-duro-tratti-della-personalità",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

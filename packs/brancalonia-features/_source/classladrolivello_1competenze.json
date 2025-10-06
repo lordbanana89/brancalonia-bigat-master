@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Al 1° livello, scegli due delle tue competenze in abilità, o una competenza in abilità e la tua competenza con gli arnesi da scasso. Il tuo bonus di competenza è raddoppiato per qualsiasi prova di caratteristica che effettui che usa una delle competenze scelte. Al 6° livello, puoi scegliere altre due delle tue competenze (in abilità o arnesi da scasso) per ottenere questo beneficio.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Al 1° livello, scegli due delle tue competenze in abilità, o una competenza in abilità e la tua competenza con gli arnesi da scasso. Il tuo bonus di competenza è raddoppiato per qualsiasi prova di caratteristica che effettui che usa una delle competenze scelte. Al 6° livello, puoi scegliere altre due delle tue competenze (in abilità o arnesi da scasso) per ottenere questo beneficio.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.96",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classladrolivello_1competenze"
   },
   "effects": [],
   "folder": null,

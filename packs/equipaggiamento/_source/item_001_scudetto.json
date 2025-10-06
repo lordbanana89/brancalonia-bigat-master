@@ -6,9 +6,7 @@
   "img": "systems/dnd5e/icons/icons/items/armor/plate.webp",
   "system": {
     "description": {
-      "value": "<p>Piccolo scudo da parata ornato con le insegne di una città dedita al Calcio Draconiano.</p><h3>Note Meccaniche</h3><p>+1 alle prove di Carisma con gli abitanti della città a cui è consacrato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Piccolo scudo da parata ornato con le insegne di una città dedita al Calcio Draconiano.</p><h3>Note Meccaniche</h3><p>+1 alle prove di Carisma con gli abitanti della città a cui è consacrato.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -22,8 +20,7 @@
     "attunement": 0,
     "type": {
       "value": "armor",
-      "subtype": "light",
-      "baseItem": ""
+      "subtype": "light"
     },
     "armor": {
       "value": 10,
@@ -35,20 +32,17 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "speed": {
-      "value": null,
-      "conditions": ""
-    }
+      "value": null
+    },
+    "identifier": "item_001_scudetto",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Uncino arrugginito che gocciola acqua salata</p><h3>Proprietà</h3><p>Può toccare e ferire creature incorporee</p><h3>Storia</h3><p><em>Il pirata cerca ancora la sua mano</em></p><h3>Maledizione</h3><p><strong>Il braccio si paralizza durante le tempeste</strong></p><p>Il braccio si paralizza durante le tempeste</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "Il braccio si paralizza durante le tempeste"
+    "curse": "Il braccio si paralizza durante le tempeste",
+    "identifier": "037_luncino_del_pirata_fantasma",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

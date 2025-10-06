@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Usa FOR invece di DES per Difesa Senza Armatura e Deviare Proiettili, reazione: spende 1 ki per colpo senz'armi quando colpito</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Usa FOR invece di DES per Difesa Senza Armatura e Deviare Proiettili, reazione: spende 1 ki per colpo senz'armi quando colpito</p>"
     },
     "source": "Brancalonia",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "frate_monacolivello_3porgi_altra_guancia"
   },
   "effects": [],
   "folder": null,

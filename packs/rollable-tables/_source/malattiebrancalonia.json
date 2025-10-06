@@ -141,5 +141,15 @@
   "_key": "!tables!malattiebrancalonia",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Malattie del Regno di Taglia - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "malattiebrancalonia",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

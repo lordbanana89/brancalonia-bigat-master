@@ -6,36 +6,24 @@
   "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Intervento Divino (10° livello)</strong></p><p>A partire dal 10° livello, puoi invocare l'aiuto diretto della tua divinità quando ne hai più bisogno.</p><p>Implorare l'intervento della tua divinità richiede un'azione. Descrivi l'assistenza che cerchi e tira un d100. Se ottieni un numero uguale o inferiore al tuo livello da chierico, la tua divinità interviene. Il GM sceglie la natura dell'intervento; l'effetto di qualsiasi incantesimo da chierico o incantesimo del dominio è appropriato.</p><p>Se la divinità interviene, non puoi più usare questo privilegio per 7 giorni. Altrimenti, puoi usarlo di nuovo dopo un riposo lungo.</p><p>Al 20° livello, il tuo appello ha automaticamente successo (vedi Intervento Divino Migliorato).</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Intervento Divino (10° livello)</strong></p><p>A partire dal 10° livello, puoi invocare l'aiuto diretto della tua divinità quando ne hai più bisogno.</p><p>Implorare l'intervento della tua divinità richiede un'azione. Descrivi l'assistenza che cerchi e tira un d100. Se ottieni un numero uguale o inferiore al tuo livello da chierico, la tua divinità interviene. Il GM sceglie la natura dell'intervento; l'effetto di qualsiasi incantesimo da chierico o incantesimo del dominio è appropriato.</p><p>Se la divinità interviene, non puoi più usare questo privilegio per 7 giorni. Altrimenti, puoi usarlo di nuovo dopo un riposo lungo.</p><p>Al 20° livello, il tuo appello ha automaticamente successo (vedi Intervento Divino Migliorato).</p>"
     },
     "source": "Manuale del Giocatore p.59",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Chierico Livello 10",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "40dd4873974ff058"
   },
   "effects": [],
   "folder": null,

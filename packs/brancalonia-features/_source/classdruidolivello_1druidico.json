@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Conosci il Druidico, il linguaggio segreto dei druidi. Puoi parlare il linguaggio e usarlo per lasciare messaggi nascosti. Tu e altri che conoscono questo linguaggio notate automaticamente tali messaggi. Altri notano la presenza del messaggio con una prova riuscita di Saggezza (Percezione) CD 15 ma non possono decifrarlo senza magia.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Conosci il Druidico, il linguaggio segreto dei druidi. Puoi parlare il linguaggio e usarlo per lasciare messaggi nascosti. Tu e altri che conoscono questo linguaggio notate automaticamente tali messaggi. Altri notano la presenza del messaggio con una prova riuscita di Saggezza (Percezione) CD 15 ma non possono decifrarlo senza magia.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.66",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classdruidolivello_1druidico"
   },
   "effects": [],
   "folder": null,

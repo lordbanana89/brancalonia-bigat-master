@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Ferro di cavallo dorato trovato sulla strada</p><h3>Proprietà</h3><p>Una volta al giorno trasforma un fallimento critico in successo normale</p><h3>Storia</h3><p><em>Dal cavallo che vinse 100 corse</em></p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,25 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "Perde potere dopo 77 utilizzi",
-      "units": ""
+      "value": "Perde potere dopo 77 utilizzi"
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -55,7 +46,9 @@
     },
     "properties": [
       "mgc"
-    ]
+    ],
+    "identifier": "028_il_ferro_di_cavallo_fortunato",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

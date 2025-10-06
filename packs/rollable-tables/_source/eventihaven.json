@@ -261,5 +261,15 @@
   "_key": "!tables!eventihaven",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Eventi nel Rifugio - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "eventihaven",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

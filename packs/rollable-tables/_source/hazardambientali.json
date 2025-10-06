@@ -261,5 +261,15 @@
   "_key": "!tables!hazardambientali",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Hazard Ambientali - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "hazardambientali",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

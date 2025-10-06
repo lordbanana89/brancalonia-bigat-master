@@ -23,17 +23,16 @@
       "dex": null
     },
     "speed": {
-      "value": null,
-      "conditions": ""
+      "value": null
     },
     "strength": 0,
     "stealth": false,
     "rarity": "common",
-    "attunement": "",
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "scudo001",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

@@ -6,9 +6,7 @@
   "img": "icons/magic/symbols/rune-sigil-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Studioso delle arti arcane che trasforma intuizione e studio in potere magico puro.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Studioso delle arti arcane che trasforma intuizione e studio in potere magico puro.</em></p>"
     },
     "source": "Manuale del Giocatore p.78",
     "identifier": "mago",
@@ -256,7 +254,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.gvhiaw8atxnengdz",
               "optional": false
             }
           ],
@@ -273,7 +270,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-mago-livello_1-recupero-arcano",
               "optional": false
             }
           ],
@@ -290,7 +286,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.class-mago-livello_6-tradizione-arcana-privilegio",
               "optional": false
             }
           ],
@@ -320,7 +315,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.cho9yy09b52nhvh6",
               "optional": false
             }
           ],
@@ -350,7 +344,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.cho9yy09b52nhvh6",
               "optional": false
             }
           ],
@@ -380,7 +373,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.cho9yy09b52nhvh6",
               "optional": false
             }
           ],
@@ -410,7 +402,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.7w4p6jkkmkbtamov",
               "optional": false
             }
           ],
@@ -440,7 +431,6 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.brancalonia-bigat.brancalonia-features.Item.ht2urp0g76zgu2br",
               "optional": false
             }
           ],
@@ -479,7 +469,8 @@
       "int"
     ],
     "startingEquipment": [],
-    "hitDice": "d6"
+    "hitDice": "d6",
+    "proficiency": 2
   },
   "effects": [],
   "folder": null,

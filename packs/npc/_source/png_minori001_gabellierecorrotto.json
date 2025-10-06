@@ -9,10 +9,7 @@
       "str": {
         "value": 10,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 0,
         "save": 0,
@@ -21,10 +18,7 @@
       "dex": {
         "value": 10,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 0,
         "save": 0,
@@ -33,10 +27,7 @@
       "con": {
         "value": 10,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 0,
         "save": 0,
@@ -45,10 +36,7 @@
       "int": {
         "value": 10,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 0,
         "save": 0,
@@ -57,10 +45,7 @@
       "wis": {
         "value": 10,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 0,
         "save": 0,
@@ -69,10 +54,7 @@
       "cha": {
         "value": 10,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 0,
         "save": 0,
@@ -82,8 +64,7 @@
     "attributes": {
       "ac": {
         "flat": 10,
-        "calc": "default",
-        "formula": ""
+        "calc": "default"
       },
       "hp": {
         "value": 1,
@@ -118,10 +99,8 @@
         "blindsight": 0,
         "tremorsense": 0,
         "truesight": 0,
-        "units": "ft",
-        "special": ""
+        "units": "ft"
       },
-      "spellcasting": "",
       "prof": 9,
       "spelldc": null,
       "death": {
@@ -131,18 +110,12 @@
     },
     "details": {
       "biography": {
-        "value": "<p>Esattore delle tasse che abusa del suo potere</p>",
-        "public": ""
+        "value": "<p>Esattore delle tasse che abusa del suo potere</p>"
       },
       "alignment": "Legale Malvagio",
-      "race": "",
       "type": {
-        "value": "humanoid",
-        "subtype": "",
-        "swarm": "",
-        "custom": ""
+        "value": "humanoid"
       },
-      "environment": "",
       "cr": 1,
       "spellLevel": 0,
       "xp": {
@@ -154,26 +127,21 @@
       "size": "med",
       "di": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dr": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dv": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "ci": {
-        "value": [],
-        "custom": ""
+        "value": []
       },
       "languages": {
-        "value": [],
-        "custom": ""
+        "value": []
       }
     },
     "currency": {
@@ -187,10 +155,7 @@
       "acr": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -199,10 +164,7 @@
       "ani": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -211,10 +173,7 @@
       "arc": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -223,10 +182,7 @@
       "ath": {
         "value": 0,
         "ability": "str",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -235,10 +191,7 @@
       "dec": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -247,10 +200,7 @@
       "his": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -259,10 +209,7 @@
       "ins": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -271,10 +218,7 @@
       "inti": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -283,10 +227,7 @@
       "inv": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -295,10 +236,7 @@
       "med": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -307,10 +245,7 @@
       "nat": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -319,10 +254,7 @@
       "prc": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -331,10 +263,7 @@
       "prf": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -343,10 +272,7 @@
       "per": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -355,10 +281,7 @@
       "rel": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -367,10 +290,7 @@
       "slt": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -379,10 +299,7 @@
       "ste": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -391,10 +308,7 @@
       "sur": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -455,30 +369,12 @@
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
-      "spell": {
-        "dc": ""
-      }
+      "mwak": {},
+      "rwak": {},
+      "msak": {},
+      "rsak": {},
+      "abilities": {},
+      "spell": {}
     },
     "resources": {
       "legact": {
@@ -493,7 +389,23 @@
         "value": false,
         "initiative": 0
       }
-    }
+    },
+    "saves": {
+      "fortitude": {
+        "value": 0,
+        "proficient": false
+      },
+      "reflex": {
+        "value": 0,
+        "proficient": false
+      },
+      "will": {
+        "value": 0,
+        "proficient": false
+      }
+    },
+    "identifier": "png_minori001_gabellierecorrotto",
+    "source": "Brancalonia"
   },
   "items": [],
   "effects": [],

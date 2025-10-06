@@ -24,8 +24,7 @@
           "1d4 + @mod",
           "piercing"
         ]
-      ],
-      "versatile": ""
+      ]
     },
     "range": {
       "value": 20,
@@ -38,11 +37,10 @@
       "thr"
     ],
     "rarity": "common",
-    "attunement": "",
     "type": {
-      "value": "simpleM",
-      "baseItem": ""
-    }
+      "value": "simpleM"
+    },
+    "identifier": "pugnale001"
   },
   "effects": [],
   "folder": null,

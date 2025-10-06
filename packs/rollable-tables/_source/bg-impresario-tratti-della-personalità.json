@@ -127,5 +127,16 @@
     "default": 0
   },
   "effects": [],
-  "type": "table"
+  "type": "table",
+  "system": {
+    "description": {
+      "value": "<p>Impresario - Tratti della Personalità - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-impresario-tratti-della-personalità",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

@@ -165,5 +165,15 @@
   "_key": "!tables!sognipresagi",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Sogni e Presagi - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "sognipresagi",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

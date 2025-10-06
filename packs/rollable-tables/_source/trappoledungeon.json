@@ -165,5 +165,15 @@
   "_key": "!tables!trappoledungeon",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Trappole nei Dungeon - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "trappoledungeon",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

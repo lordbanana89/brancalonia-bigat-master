@@ -32,8 +32,7 @@
     "materials": {
       "consumed": false,
       "cost": 0,
-      "supply": 0,
-      "value": ""
+      "supply": 0
     },
     "preparation": {
       "mode": "prepared",
@@ -41,12 +40,10 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "units": "inst",
-      "value": ""
+      "units": "inst"
     },
     "range": {
       "units": "ft",
@@ -59,9 +56,7 @@
       },
       "template": {},
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "components": {
       "vocal": false,
@@ -69,15 +64,21 @@
       "material": false
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
-    "source": "Brancalonia"
+    "source": "Brancalonia",
+    "description": {
+      "value": "<p>Spell Base 020 Animare I Morti - Incantesimo di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "spell-base-020_animare_i_morti"
   },
   "flags": {
     "brancalonia-bigat": {
       "migrated": true,
       "version": "12.0.4"
     }
-  }
+  },
+  "effects": []
 }

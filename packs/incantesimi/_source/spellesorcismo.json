@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>L'incantatore pronuncia invocazioni al Padre Terno, alla Cinquina o a tutto il Tombolone e sceglie un folletto, un immondo o un non morto entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti sarà incapacitato per la durata dell'incantesimo e deve spendere i suoi turni tentando di allontanarsi il più possibile dall'incantatore; inoltre, non può volontariamente muoversi in uno spazio entro 9 metri da lui. Alla fine di ogni suo turno, il bersaglio può effettuare un altro tiro salvezza su Saggezza. Se lo supera, l'incantesimo su di esso termina. Per la durata dell'incantesimo, l'incantatore può usare la funzione speciale seguente. Spezzare Ammaliamento: Con la sua azione, l'incantatore tocca una creatura situata entro la sua portata che sia affascinata, spaventata o posseduta da un immondo, folletto o non morto. La creatura toccata non è più affascinata, spaventata o posseduta da tali creature.</p><h3>Utilizzi Tipici</h3><ul><li>Combattere possessioni</li><li>Liberare alleati controllati</li><li>Forzare ritirata demoni</li><li>Proteggere area da non morti</li><li>Esorcismi rituali roleplay</li></ul><h3>Note per il DM</h3><p><em>Esorcismo è spell tematico di Brancalonia. Mix tra Turn Undead e Protection from Evil. Forte vs specifici nemici.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>L'incantatore pronuncia invocazioni al Padre Terno, alla Cinquina o a tutto il Tombolone e sceglie un folletto, un immondo o un non morto entro gittata. Il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti sarà incapacitato per la durata dell'incantesimo e deve spendere i suoi turni tentando di allontanarsi il più possibile dall'incantatore; inoltre, non può volontariamente muoversi in uno spazio entro 9 metri da lui. Alla fine di ogni suo turno, il bersaglio può effettuare un altro tiro salvezza su Saggezza. Se lo supera, l'incantesimo su di esso termina. Per la durata dell'incantesimo, l'incantatore può usare la funzione speciale seguente. Spezzare Ammaliamento: Con la sua azione, l'incantatore tocca una creatura situata entro la sua portata che sia affascinata, spaventata o posseduta da un immondo, folletto o non morto. La creatura toccata non è più affascinata, spaventata o posseduta da tali creature.</p><h3>Utilizzi Tipici</h3><ul><li>Combattere possessioni</li><li>Liberare alleati controllati</li><li>Forzare ritirata demoni</li><li>Proteggere area da non morti</li><li>Esorcismi rituali roleplay</li></ul><h3>Note per il DM</h3><p><em>Esorcismo è spell tematico di Brancalonia. Mix tra Turn Undead e Protection from Evil. Forte vs specifici nemici.</em></p>"
     },
     "source": "Brancalonia Macaronicon p.52",
     "level": 2,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellesorcismo"
   },
   "effects": [],
   "folder": null,

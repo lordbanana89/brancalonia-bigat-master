@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Dall'11° livello, sei così pervaso di giustizia che tutti i tuoi colpi in mischia sono infusi di potere divino. Quando colpisci una creatura con un'arma da mischia, la creatura subisce 1d8 danni radianti extra.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Dall'11° livello, sei così pervaso di giustizia che tutti i tuoi colpi in mischia sono infusi di potere divino. Quando colpisci una creatura con un'arma da mischia, la creatura subisce 1d8 danni radianti extra.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.85",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classpaladinolivello_11punizionemigliorata"
   },
   "effects": [],
   "folder": null,

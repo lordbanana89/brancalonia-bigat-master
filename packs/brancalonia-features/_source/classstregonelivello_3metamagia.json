@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Al 3° livello, ottieni la capacità di distorcere i tuoi incantesimi per adattarli ai tuoi bisogni. Guadagni due delle seguenti opzioni di Metamagia a tua scelta. Ne guadagni un'altra al 10° e 17° livello.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Al 3° livello, ottieni la capacità di distorcere i tuoi incantesimi per adattarli ai tuoi bisogni. Guadagni due delle seguenti opzioni di Metamagia a tua scelta. Ne guadagni un'altra al 10° e 17° livello.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.101",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classstregonelivello_3metamagia"
   },
   "effects": [],
   "folder": null,

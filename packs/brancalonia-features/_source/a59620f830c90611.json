@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/academics-study-reading-runes.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Competenza Superiore (10° livello)</strong></p><p>Al 10° livello, puoi scegliere altre due delle tue competenze nelle abilità. Il tuo bonus di competenza viene raddoppiato per qualsiasi prova di caratteristica che effettui usando una di quelle competenze scelte.</p><p>Questo è un ampliamento della feature Competenza ottenuta al 3° livello. Ora puoi avere fino a 4 abilità con il bonus di competenza raddoppiato (2 dal 3° livello + 2 dal 10° livello).</p><p><strong>Come applicare:</strong> Nella scheda personaggio, seleziona l'icona di Expertise (doppio cerchio) accanto alle due abilità scelte aggiuntive. Il sistema raddoppierà automaticamente il bonus di competenza per quelle abilità.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Competenza Superiore (10° livello)</strong></p><p>Al 10° livello, puoi scegliere altre due delle tue competenze nelle abilità. Il tuo bonus di competenza viene raddoppiato per qualsiasi prova di caratteristica che effettui usando una di quelle competenze scelte.</p><p>Questo è un ampliamento della feature Competenza ottenuta al 3° livello. Ora puoi avere fino a 4 abilità con il bonus di competenza raddoppiato (2 dal 3° livello + 2 dal 10° livello).</p><p><strong>Come applicare:</strong> Nella scheda personaggio, seleziona l'icona di Expertise (doppio cerchio) accanto alle due abilità scelte aggiuntive. Il sistema raddoppierà automaticamente il bonus di competenza per quelle abilità.</p>"
     },
     "source": "Manuale del Giocatore p.54",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Bardo Livello 10",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "a59620f830c90611"
   },
   "effects": [],
   "folder": null,

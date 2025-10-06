@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Il legno di un bastone o quarterstaff che impugni è infuso del potere della natura. Per la durata, puoi usare la tua caratteristica da incantatore invece della Forza per i tiri per colpire e danno degli attacchi in mischia usando quell'arma, e il dado di danno dell'arma diventa un d8. L'arma diventa anche magica, se già non lo era. L'incantesimo termina se lo lanci di nuovo o se lasci andare l'arma.</p><h3>Note per il DM</h3><p><em>Shillelagh trasforma druido in melee viable. Bonus action cast importante per action economy. Ottimo per druidi non-moon.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Il legno di un bastone o quarterstaff che impugni è infuso del potere della natura. Per la durata, puoi usare la tua caratteristica da incantatore invece della Forza per i tiri per colpire e danno degli attacchi in mischia usando quell'arma, e il dado di danno dell'arma diventa un d8. L'arma diventa anche magica, se già non lo era. L'incantesimo termina se lo lanci di nuovo o se lasci andare l'arma.</p><h3>Note per il DM</h3><p><em>Shillelagh trasforma druido in melee viable. Bonus action cast importante per action economy. Ottimo per druidi non-moon.</em></p>"
     },
     "source": "D&D 5e PHB p.275",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "bonus",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-randello-incantato"
   },
   "effects": [],
   "folder": null,

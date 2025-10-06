@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Teschio umano con aureola dipinta</p><h3>Proprietà</h3><p>Protegge da possessione e controllo mentale in 3m</p><h3>Storia</h3><p><em>Santo scomunicato per aver dubitato del Papa</em></p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -55,7 +44,9 @@
     },
     "properties": [
       "mgc"
-    ]
+    ],
+    "identifier": "019_il_teschio_del_santo_eretico",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

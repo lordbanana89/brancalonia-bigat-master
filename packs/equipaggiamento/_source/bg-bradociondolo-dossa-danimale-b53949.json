@@ -6,9 +6,7 @@
   "img": "icons/equipment/neck/pendant-silver.webp",
   "system": {
     "description": {
-      "value": "<p>Ciondolo d’ossa d’animale - Equipaggiamento iniziale del background brado.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Ciondolo d’ossa d’animale - Equipaggiamento iniziale del background brado.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-bradociondolo-dossa-danimale-b53949"
   },
   "effects": [],
   "folder": null,

@@ -141,5 +141,15 @@
   "_key": "!tables!complicazionilavori",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Complicazioni Lavori Sporchi - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "complicazionilavori",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

@@ -165,5 +165,15 @@
   "_key": "!tables!menutaverna",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Menu della Taverna - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "menutaverna",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

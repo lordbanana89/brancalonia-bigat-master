@@ -6,9 +6,7 @@
   "img": "icons/commodities/treasure/token-gold-cross.webp",
   "system": {
     "description": {
-      "value": "<p>Un simbolo sacro degli ambulanti.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Un simbolo sacro degli ambulanti.</p>"
     },
     "source": "Manuale Base p.35",
     "quantity": 1,
@@ -17,49 +15,33 @@
       "value": 5,
       "denomination": "gp"
     },
-    "rarity": "",
     "identified": true,
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "duration": {
-      "value": null,
-      "units": ""
+      "value": null
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "ability": null,
-    "actionType": "",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
@@ -71,14 +53,14 @@
     "hp": {
       "value": 0,
       "max": 0,
-      "dt": null,
-      "conditions": ""
+      "dt": null
     },
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "equip-bg-duro-monile",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

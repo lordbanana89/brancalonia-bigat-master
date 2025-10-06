@@ -21,5 +21,17 @@
       "version": "12.0.4"
     }
   },
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Applicare la Tabella - Regola di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "identifier": "bagordi-istruzioni"
+  },
+  "folder": null,
+  "effects": []
 }

@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Cuoio indurito e sagomato per proteggere il corpo.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Cuoio indurito e sagomato per proteggere il corpo.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -35,16 +33,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd002_armatura_di_cuoio",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

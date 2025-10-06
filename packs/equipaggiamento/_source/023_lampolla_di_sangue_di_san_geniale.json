@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Fiala di cristallo con sangue che si liquefa</p><h3>Proprietà</h3><p>Si liquefa in presenza di pericolo mortale entro 30m</p><h3>Storia</h3><p><em>San Geniale fu martirizzato 7 volte</em></p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -55,7 +44,9 @@
     },
     "properties": [
       "mgc"
-    ]
+    ],
+    "identifier": "023_lampolla_di_sangue_di_san_geniale",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

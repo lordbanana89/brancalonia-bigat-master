@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/shirt-simple-white.webp",
   "system": {
     "description": {
-      "value": "<p>Abito di buona fattura - Equipaggiamento iniziale del background impresario.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Abito di buona fattura - Equipaggiamento iniziale del background impresario.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -26,16 +24,15 @@
       "dex": null
     },
     "speed": {
-      "value": null,
-      "conditions": ""
+      "value": null
     },
     "strength": 0,
     "stealth": false,
-    "attunement": "",
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "bg-impresarioabito-di-buona-fattura-c49596",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

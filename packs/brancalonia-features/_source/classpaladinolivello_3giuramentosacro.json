@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Quando raggiungi il 3° livello, fai il giuramento che ti lega come paladino per sempre. Fino a quel momento eri in una fase preparatoria, impegnato nel cammino ma non ancora giurato ad esso. Il tuo giuramento ti garantisce privilegi al 3° livello e di nuovo al 7°, 15° e 20° livello.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Quando raggiungi il 3° livello, fai il giuramento che ti lega come paladino per sempre. Fino a quel momento eri in una fase preparatoria, impegnato nel cammino ma non ancora giurato ad esso. Il tuo giuramento ti garantisce privilegi al 3° livello e di nuovo al 7°, 15° e 20° livello.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.85",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classpaladinolivello_3giuramentosacro"
   },
   "effects": [],
   "folder": null,

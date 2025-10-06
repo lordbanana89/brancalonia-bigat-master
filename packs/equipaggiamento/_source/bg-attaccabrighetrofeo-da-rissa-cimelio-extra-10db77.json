@@ -6,9 +6,7 @@
   "img": "icons/commodities/treasure/trophy-cup-gold.webp",
   "system": {
     "description": {
-      "value": "<p>Trofeo da rissa (Cimelio extra) - Equipaggiamento iniziale del background attaccabrighe.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Trofeo da rissa (Cimelio extra) - Equipaggiamento iniziale del background attaccabrighe.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-attaccabrighetrofeo-da-rissa-cimelio-extra-10db77"
   },
   "effects": [],
   "folder": null,

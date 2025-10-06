@@ -6,36 +6,24 @@
   "img": "icons/equipment/chest/breastplate-layered-steel.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Difesa Senza Armatura (1° livello)</strong></p><p>Mentre non indossi armatura, la tua Classe Armatura è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Costituzione.</p><p>Puoi usare uno scudo e ottenere comunque questo beneficio.</p><p><strong>Esempio:</strong> Un barbaro di 1° livello con Destrezza 14 (+2) e Costituzione 16 (+3) ha CA 15 senza armatura (10 + 2 + 3 = 15). Se usa uno scudo, la sua CA diventa 17.</p><p><strong>Nota:</strong> Questa feature è sempre attiva quando non indossi armatura. Il sistema di D&D 5e calcola automaticamente la tua CA migliore tra le opzioni disponibili (armatura indossata, Difesa Senza Armatura, ecc.).</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Difesa Senza Armatura (1° livello)</strong></p><p>Mentre non indossi armatura, la tua Classe Armatura è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Costituzione.</p><p>Puoi usare uno scudo e ottenere comunque questo beneficio.</p><p><strong>Esempio:</strong> Un barbaro di 1° livello con Destrezza 14 (+2) e Costituzione 16 (+3) ha CA 15 senza armatura (10 + 2 + 3 = 15). Se usa uno scudo, la sua CA diventa 17.</p><p><strong>Nota:</strong> Questa feature è sempre attiva quando non indossi armatura. Il sistema di D&D 5e calcola automaticamente la tua CA migliore tra le opzioni disponibili (armatura indossata, Difesa Senza Armatura, ecc.).</p>"
     },
     "source": "Manuale del Giocatore p.48",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classbarbarolivello_1difesasenzaarmatura"
   },
   "effects": [
     {

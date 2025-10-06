@@ -6,9 +6,7 @@
   "img": "icons/sundries/books/book-worn-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Libro di poesie - Equipaggiamento iniziale del background innamorato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Libro di poesie - Equipaggiamento iniziale del background innamorato.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-innamoratolibro-di-poesie-d6eb61"
   },
   "effects": [],
   "folder": null,

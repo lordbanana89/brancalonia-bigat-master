@@ -6,36 +6,24 @@
   "img": "icons/magic/perception/eye-slit-white-red.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Istinto Ferino (7° livello)</strong></p><p>Al 7° livello, i tuoi istinti sono così affinati che hai vantaggio ai tiri per l'iniziativa.</p><p>Inoltre, se sei sorpreso all'inizio del combattimento e non sei incapacitato, puoi agire normalmente nel tuo primo turno, ma solo se entri in ira prima di fare qualsiasi altra cosa in quel turno.</p><p><strong>Benefici:</strong> Questo privilegio ti rende estremamente difficile da sorprendere e ti permette di agire per primo nella maggior parte dei combattimenti.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Istinto Ferino (7° livello)</strong></p><p>Al 7° livello, i tuoi istinti sono così affinati che hai vantaggio ai tiri per l'iniziativa.</p><p>Inoltre, se sei sorpreso all'inizio del combattimento e non sei incapacitato, puoi agire normalmente nel tuo primo turno, ma solo se entri in ira prima di fare qualsiasi altra cosa in quel turno.</p><p><strong>Benefici:</strong> Questo privilegio ti rende estremamente difficile da sorprendere e ti permette di agire per primo nella maggior parte dei combattimenti.</p>"
     },
     "source": "Manuale del Giocatore p.49",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classbarbarolivello_7istintoferino"
   },
   "effects": [],
   "folder": null,

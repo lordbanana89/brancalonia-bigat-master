@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Camicia di anelli metallici indossata sotto abiti comuni.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Camicia di anelli metallici indossata sotto abiti comuni.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -35,16 +33,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd102_corazza_di_maglia",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

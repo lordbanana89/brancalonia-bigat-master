@@ -6,9 +6,7 @@
   "img": "icons/weapons/swords/sword-guard-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Ascia a due lame bilanciata per colpi possenti.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Ascia a due lame bilanciata per colpi possenti.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -24,40 +22,27 @@
       "ver"
     ],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": null,
-      "recovery": "",
       "autoDestroy": false,
       "autoUse": true
     },
-    "ability": "",
     "actionType": "mwak",
     "attackBonus": "0",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
       "parts": [
@@ -65,19 +50,16 @@
           "1d8",
           "slashing"
         ]
-      ],
-      "versatile": ""
+      ]
     },
-    "formula": "",
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "flat"
     },
     "type": {
-      "value": "simpleM",
-      "baseItem": ""
-    }
+      "value": "simpleM"
+    },
+    "identifier": "armastd101_ascia_bipenne"
   },
   "effects": [],
   "folder": null,

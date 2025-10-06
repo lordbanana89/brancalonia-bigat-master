@@ -27,5 +27,8 @@
   "effects": [],
   "sort": 0,
   "folder": null,
-  "system": {}
+  "system": {
+    "identifier": "gestionebanda",
+    "source": "Brancalonia"
+  }
 }

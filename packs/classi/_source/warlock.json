@@ -6,9 +6,7 @@
   "img": "icons/magic/unholy/orb-glowing-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Negromante del patto che stringe accordi con potenze ultraterrene per brandire magie innaturali.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Negromante del patto che stringe accordi con potenze ultraterrene per brandire magie innaturali.</em></p>"
     },
     "source": "Manuale del Giocatore p.105",
     "identifier": "warlock",
@@ -28,9 +26,7 @@
         "configuration": {
           "identifier": "eldritch-invocations",
           "type": "number",
-          "distance": {
-            "units": ""
-          },
+          "distance": {},
           "scale": {}
         },
         "value": {
@@ -50,9 +46,7 @@
         "configuration": {
           "identifier": "pact-slots",
           "type": "number",
-          "distance": {
-            "units": ""
-          },
+          "distance": {},
           "scale": {}
         },
         "value": {
@@ -69,9 +63,7 @@
         "configuration": {
           "identifier": "pact-slots",
           "type": "number",
-          "distance": {
-            "units": ""
-          },
+          "distance": {},
           "scale": {}
         },
         "value": {
@@ -397,7 +389,8 @@
       "cha"
     ],
     "startingEquipment": [],
-    "hitDice": "d8"
+    "hitDice": "d8",
+    "proficiency": 2
   },
   "effects": [],
   "folder": null,

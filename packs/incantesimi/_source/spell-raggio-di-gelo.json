@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Un raggio gelido di luce bianco-blu sfreccia verso una creatura entro gittata. Effettua un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, subisce 1d8 danni da freddo e la sua velocità è ridotta di 10 piedi fino all'inizio del tuo prossimo turno.</p><h3>Note per il DM</h3><p><em>Ray of Frost è controllo più che danno. -10 speed può essere cruciale tatticamente. Ottimo per wizard che vuole mantenere distanza.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Un raggio gelido di luce bianco-blu sfreccia verso una creatura entro gittata. Effettua un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, subisce 1d8 danni da freddo e la sua velocità è ridotta di 10 piedi fino all'inizio del tuo prossimo turno.</p><h3>Note per il DM</h3><p><em>Ray of Frost è controllo più che danno. -10 speed può essere cruciale tatticamente. Ottimo per wizard che vuole mantenere distanza.</em></p>"
     },
     "source": "D&D 5e PHB p.271",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-raggio-di-gelo"
   },
   "effects": [],
   "folder": null,

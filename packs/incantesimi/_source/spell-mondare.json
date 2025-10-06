@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>L'incantatore tocca un punto e infonde un flusso di potere sacro (o sacrilego) in un'area del raggio massimo di 18 metri. L'incantesimo fallisce se il raggio include già un'area sotto l'effetto di un incantesimo mondare. Folletti, immondi e non morti non possono entrare nell'area e non possono affascinare, spaventare o possedere le creature all'interno dell'area. Ogni creatura affascinata, spaventata o posseduta da una creatura del genere non è più affascinata, spaventata e posseduta una volta entrata nell'area. L'incantatore può escludere uno o più tipi di creature dal subire questo effetto. Inoltre, per tutta la durata, l'incantatore può porre un effetto addizionale: ogni immondo, folletto o non morto che entra nell'area per la prima volta in un turno o che vi inizia il proprio turno deve effettuare un tiro salvezza su Carisma. Se lo fallisce, la creatura non può entrare nell'area o, nel caso vi si trovi già, deve usare il proprio movimento per lasciarla nel modo più diretto. L'area si muove con l'incantatore.</p><h3>Utilizzi Tipici</h3><ul><li>Santificare luoghi sacri</li><li>Proteggere accampamenti lunghi</li><li>Creare safe zone permanenti</li><li>Purificare aree corrotte</li><li>Base anti-undead</li></ul><h3>Note per il DM</h3><p><em>Mondare è versione Brancalonia economica di Hallow. 12 ore cast time lo rende strategico non tattico. Ottimo per basi.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>L'incantatore tocca un punto e infonde un flusso di potere sacro (o sacrilego) in un'area del raggio massimo di 18 metri. L'incantesimo fallisce se il raggio include già un'area sotto l'effetto di un incantesimo mondare. Folletti, immondi e non morti non possono entrare nell'area e non possono affascinare, spaventare o possedere le creature all'interno dell'area. Ogni creatura affascinata, spaventata o posseduta da una creatura del genere non è più affascinata, spaventata e posseduta una volta entrata nell'area. L'incantatore può escludere uno o più tipi di creature dal subire questo effetto. Inoltre, per tutta la durata, l'incantatore può porre un effetto addizionale: ogni immondo, folletto o non morto che entra nell'area per la prima volta in un turno o che vi inizia il proprio turno deve effettuare un tiro salvezza su Carisma. Se lo fallisce, la creatura non può entrare nell'area o, nel caso vi si trovi già, deve usare il proprio movimento per lasciarla nel modo più diretto. L'area si muove con l'incantatore.</p><h3>Utilizzi Tipici</h3><ul><li>Santificare luoghi sacri</li><li>Proteggere accampamenti lunghi</li><li>Creare safe zone permanenti</li><li>Purificare aree corrotte</li><li>Base anti-undead</li></ul><h3>Note per il DM</h3><p><em>Mondare è versione Brancalonia economica di Hallow. 12 ore cast time lo rende strategico non tattico. Ottimo per basi.</em></p>"
     },
     "source": "Brancalonia Macaronicon p.52",
     "level": 3,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,13 +29,9 @@
     },
     "activation": {
       "type": "hour",
-      "cost": 12,
-      "condition": ""
+      "cost": 12
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "range": {
       "value": null,
       "long": null,
@@ -46,42 +39,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-mondare"
   },
   "effects": [],
   "folder": null,

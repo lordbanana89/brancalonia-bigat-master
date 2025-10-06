@@ -6,9 +6,7 @@
   "img": "icons/equipment/neck/pendant-silver.webp",
   "system": {
     "description": {
-      "value": "<p>Ciondolo di Santa Predatoria - Equipaggiamento iniziale del background duro.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Ciondolo di Santa Predatoria - Equipaggiamento iniziale del background duro.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-durociondolo-di-santa-predatoria-0c7268"
   },
   "effects": [],
   "folder": null,

@@ -25,5 +25,9 @@
     "lastModifiedBy": "brancalonia"
   },
   "_key": "!macros!brancalonia012",
-  "system": {}
+  "system": {
+    "identifier": "000012",
+    "source": "Brancalonia"
+  },
+  "effects": []
 }

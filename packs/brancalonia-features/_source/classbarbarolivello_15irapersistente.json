@@ -6,36 +6,24 @@
   "img": "icons/magic/fire/flame-burning-hand-purple.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Ira Persistente (15° livello)</strong></p><p>A partire dal 15° livello, la tua ira è così feroce che termina prematuramente solo se cadi privo di sensi o se scegli di porvi termine.</p><p>Normalmente l'ira termina se il tuo turno finisce e non hai attaccato o subito danni. Con questa feature, la tua ira persiste indipendentemente da ciò che fai o non fai, rendendoti una forza inarrestabile sul campo di battaglia.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Ira Persistente (15° livello)</strong></p><p>A partire dal 15° livello, la tua ira è così feroce che termina prematuramente solo se cadi privo di sensi o se scegli di porvi termine.</p><p>Normalmente l'ira termina se il tuo turno finisce e non hai attaccato o subito danni. Con questa feature, la tua ira persiste indipendentemente da ciò che fai o non fai, rendendoti una forza inarrestabile sul campo di battaglia.</p>"
     },
     "source": "Manuale del Giocatore p.49",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classbarbarolivello_15irapersistente"
   },
   "effects": [],
   "folder": null,

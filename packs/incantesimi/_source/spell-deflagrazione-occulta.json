@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Un raggio di energia crepitante sfreccia verso una creatura entro gittata. Effettua un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, il bersaglio subisce 1d10 danni da forza. L'incantesimo crea più raggi quando raggiungi livelli superiori.</p><h3>Note per il DM</h3><p><em>Eldritch Blast è IL cantrip del warlock. Con invocazioni diventa attacco base migliore di molte armi. Ogni raggio è attacco separato.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Un raggio di energia crepitante sfreccia verso una creatura entro gittata. Effettua un attacco a distanza con incantesimo contro il bersaglio. Se colpisci, il bersaglio subisce 1d10 danni da forza. L'incantesimo crea più raggi quando raggiungi livelli superiori.</p><h3>Note per il DM</h3><p><em>Eldritch Blast è IL cantrip del warlock. Con invocazioni diventa attacco base migliore di molte armi. Ogni raggio è attacco separato.</em></p>"
     },
     "source": "D&D 5e PHB p.237",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-deflagrazione-occulta"
   },
   "effects": [],
   "folder": null,

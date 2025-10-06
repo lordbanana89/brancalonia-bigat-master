@@ -6,9 +6,7 @@
   "img": "icons/tools/instruments/lute-gold-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Strumento musicale a scelta - Equipaggiamento iniziale del background innamorato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Strumento musicale a scelta - Equipaggiamento iniziale del background innamorato.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -23,10 +21,8 @@
     "rarity": "common",
     "toolType": "artisan",
     "ability": "int",
-    "chatFlavor": "",
     "proficient": null,
-    "bonus": "",
-    "attunement": ""
+    "identifier": "bg-innamoratostrumento-musicale-a-scelta-910404"
   },
   "effects": [],
   "folder": null,

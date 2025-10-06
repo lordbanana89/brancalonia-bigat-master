@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>L'incantatore narra un racconto inquietante che soltanto una creatura a sua scelta e situata entro gittata è in grado di udire; la mente del bersaglio viene sconvolta dall'energia psychica generata dall'incantesimo. Il bersaglio deve effettuare un tiro salvezza su Saggezza. Se lo fallisce, diventa spaventato per la durata dell'incantesimo. Alla fine di ogni turno del bersaglio, prima che l'incantesimo termini, il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti subirà 1d8 danni psichici. Se lo supera, l'incantesimo termina.</p><h3>Ai Livelli Superiori</h3><p>Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 2° livello o superiore, i danni aumentano di 1d8 per ogni slot di livello superiore al 1°.</p><h3>Utilizzi Tipici</h3><ul><li>Shutdown single target</li><li>Danno over time economico</li><li>Forzare ritirata nemico</li><li>Combo con altri fear effects</li><li>Boss killer se fallisce saves</li></ul><h3>Note per il DM</h3><p><em>Racconto Agghiacciante è spell bardo Brancalonia che combina controllo e danno. Bonus action eccellente. Flavor narrativo perfetto per setting.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>L'incantatore narra un racconto inquietante che soltanto una creatura a sua scelta e situata entro gittata è in grado di udire; la mente del bersaglio viene sconvolta dall'energia psychica generata dall'incantesimo. Il bersaglio deve effettuare un tiro salvezza su Saggezza. Se lo fallisce, diventa spaventato per la durata dell'incantesimo. Alla fine di ogni turno del bersaglio, prima che l'incantesimo termini, il bersaglio deve superare un tiro salvezza su Saggezza, altrimenti subirà 1d8 danni psichici. Se lo supera, l'incantesimo termina.</p><h3>Ai Livelli Superiori</h3><p>Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 2° livello o superiore, i danni aumentano di 1d8 per ogni slot di livello superiore al 1°.</p><h3>Utilizzi Tipici</h3><ul><li>Shutdown single target</li><li>Danno over time economico</li><li>Forzare ritirata nemico</li><li>Combo con altri fear effects</li><li>Boss killer se fallisce saves</li></ul><h3>Note per il DM</h3><p><em>Racconto Agghiacciante è spell bardo Brancalonia che combina controllo e danno. Bonus action eccellente. Flavor narrativo perfetto per setting.</em></p>"
     },
     "source": "Brancalonia Macaronicon p.52",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "bonus",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,12 +42,9 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
@@ -61,27 +54,17 @@
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellraccontoagghiacciante"
   },
   "effects": [],
   "folder": null,

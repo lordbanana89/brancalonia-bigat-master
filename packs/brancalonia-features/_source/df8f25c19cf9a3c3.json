@@ -6,36 +6,24 @@
   "img": "icons/magic/symbols/star-inverted-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Privilegio del Dominio (8° livello)</strong></p><p>All'8° livello, ottieni un privilegio aggiuntivo del tuo Dominio Divino. Consulta la descrizione del tuo specifico Dominio per i dettagli su quale privilegio ottieni.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Privilegio del Dominio (8° livello)</strong></p><p>All'8° livello, ottieni un privilegio aggiuntivo del tuo Dominio Divino. Consulta la descrizione del tuo specifico Dominio per i dettagli su quale privilegio ottieni.</p>"
     },
     "source": "Manuale del Giocatore p.59-63",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Chierico Livello 8",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "df8f25c19cf9a3c3"
   },
   "effects": [],
   "folder": null,

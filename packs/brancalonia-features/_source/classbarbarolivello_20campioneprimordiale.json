@@ -6,36 +6,24 @@
   "img": "icons/creatures/mammals/bull-horns-eyes-glow-orange.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Campione Primordiale (20° livello)</strong></p><p>Al 20° livello, incarni il potere della natura selvaggia. I tuoi punteggi di Forza e Costituzione aumentano di 4. Il tuo massimo per questi punteggi ora è 24.</p><p>Questo aumento è permanente e porta il tuo bonus alle caratteristiche a livelli sovrumani (+7 con Forza e Costituzione a 24).</p><p><strong>Nota:</strong> Aggiorna manualmente i punteggi di Forza e Costituzione sulla scheda personaggio quando raggiungi il 20° livello.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Campione Primordiale (20° livello)</strong></p><p>Al 20° livello, incarni il potere della natura selvaggia. I tuoi punteggi di Forza e Costituzione aumentano di 4. Il tuo massimo per questi punteggi ora è 24.</p><p>Questo aumento è permanente e porta il tuo bonus alle caratteristiche a livelli sovrumani (+7 con Forza e Costituzione a 24).</p><p><strong>Nota:</strong> Aggiorna manualmente i punteggi di Forza e Costituzione sulla scheda personaggio quando raggiungi il 20° livello.</p>"
     },
     "source": "Manuale del Giocatore p.49",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classbarbarolivello_20campioneprimordiale"
   },
   "effects": [],
   "folder": null,

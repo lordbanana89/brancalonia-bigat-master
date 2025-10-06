@@ -6,9 +6,7 @@
   "img": "icons/tools/scribal/quill-feather-white.webp",
   "system": {
     "description": {
-      "value": "<p>Pennino - Equipaggiamento iniziale del background innamorato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Pennino - Equipaggiamento iniziale del background innamorato.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-innamoratopennino-c29a33"
   },
   "effects": [],
   "folder": null,

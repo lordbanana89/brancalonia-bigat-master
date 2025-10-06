@@ -6,36 +6,24 @@
   "img": "icons/magic/holy/meditation-chi-focus-blue.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Incanalare Divinità (2° livello)</strong></p><p>Al 2° livello, ottieni la capacità di incanalare energia divina direttamente dalla tua divinità, usandola per alimentare effetti magici.</p><p>Inizi con due effetti: Scacciare Non Morti e un effetto determinato dal tuo dominio. Alcuni domini ti concedono effetti aggiuntivi man mano che avanzi di livello.</p><p>Quando usi Incanalare Divinità, scegli quale effetto creare. Devi poi completare un riposo breve o lungo per usare di nuovo Incanalare Divinità.</p><p>Al 6° livello puoi usare Incanalare Divinità due volte tra un riposo e l'altro, e al 18° livello tre volte. Quando completi un riposo breve o lungo recuperi gli usi spesi.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Incanalare Divinità (2° livello)</strong></p><p>Al 2° livello, ottieni la capacità di incanalare energia divina direttamente dalla tua divinità, usandola per alimentare effetti magici.</p><p>Inizi con due effetti: Scacciare Non Morti e un effetto determinato dal tuo dominio. Alcuni domini ti concedono effetti aggiuntivi man mano che avanzi di livello.</p><p>Quando usi Incanalare Divinità, scegli quale effetto creare. Devi poi completare un riposo breve o lungo per usare di nuovo Incanalare Divinità.</p><p>Al 6° livello puoi usare Incanalare Divinità due volte tra un riposo e l'altro, e al 18° livello tre volte. Quando completi un riposo breve o lungo recuperi gli usi spesi.</p>"
     },
     "source": "Manuale del Giocatore p.58-59",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Chierico Livello 2",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "b53d9d84d9258440"
   },
   "effects": [],
   "folder": null,

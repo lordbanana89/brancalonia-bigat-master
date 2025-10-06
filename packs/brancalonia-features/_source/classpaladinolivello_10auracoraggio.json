@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 10° livello, tu e le creature amichevoli entro 10 piedi da te non potete essere spaventati mentre sei cosciente. Al 18° livello, il raggio di questa aura aumenta a 30 piedi.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 10° livello, tu e le creature amichevoli entro 10 piedi da te non potete essere spaventati mentre sei cosciente. Al 18° livello, il raggio di questa aura aumenta a 30 piedi.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.85",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classpaladinolivello_10auracoraggio"
   },
   "effects": [],
   "folder": null,

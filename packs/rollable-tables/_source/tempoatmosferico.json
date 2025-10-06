@@ -153,5 +153,15 @@
   "_key": "!tables!tempoatmosferico",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Tempo Atmosferico - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "tempoatmosferico",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

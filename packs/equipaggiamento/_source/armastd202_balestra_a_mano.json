@@ -6,9 +6,7 @@
   "img": "icons/weapons/swords/sword-guard-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Balestra compatta impugnabile con una mano.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Balestra compatta impugnabile con una mano.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -26,40 +24,27 @@
       "lod"
     ],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": null,
-      "recovery": "",
       "autoDestroy": false,
       "autoUse": true
     },
-    "ability": "",
     "actionType": "mwak",
     "attackBonus": "0",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
       "parts": [
@@ -67,19 +52,16 @@
           "1d6",
           "piercing"
         ]
-      ],
-      "versatile": ""
+      ]
     },
-    "formula": "",
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "flat"
     },
     "type": {
-      "value": "simpleM",
-      "baseItem": ""
-    }
+      "value": "simpleM"
+    },
+    "identifier": "armastd202_balestra_a_mano"
   },
   "effects": [],
   "folder": null,

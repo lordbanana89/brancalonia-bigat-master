@@ -6,36 +6,24 @@
   "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Forma Selvatica (2° livello)</strong></p><p>A partire dal 2° livello, puoi usare la tua azione per assumere magicamente la forma di una bestia che hai già visto. Puoi usare questa feature due volte. Recuperi gli usi spesi quando completi un riposo breve o lungo.</p><p>Puoi rimanere in forma bestiale per un numero di ore pari alla metà del tuo livello da druido (arrotondato per difetto). Poi ritorni alla tua forma normale a meno che non spenda un altro uso. Puoi tornare prima usando un'azione bonus. Se cadi privo di sensi, scendi a 0 punti ferita o muori, torni automaticamente alla forma normale.</p><p>Le restrizioni su quali bestie puoi assumere si basano sul tuo livello.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Forma Selvatica (2° livello)</strong></p><p>A partire dal 2° livello, puoi usare la tua azione per assumere magicamente la forma di una bestia che hai già visto. Puoi usare questa feature due volte. Recuperi gli usi spesi quando completi un riposo breve o lungo.</p><p>Puoi rimanere in forma bestiale per un numero di ore pari alla metà del tuo livello da druido (arrotondato per difetto). Poi ritorni alla tua forma normale a meno che non spenda un altro uso. Puoi tornare prima usando un'azione bonus. Se cadi privo di sensi, scendi a 0 punti ferita o muori, torni automaticamente alla forma normale.</p><p>Le restrizioni su quali bestie puoi assumere si basano sul tuo livello.</p>"
     },
     "source": "Manuale del Giocatore p.66",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Druido Livello 2",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "992018da5d8fce8d"
   },
   "effects": [],
   "folder": null,

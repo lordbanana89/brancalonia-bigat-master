@@ -6,36 +6,24 @@
   "img": "icons/magic/symbols/rune-sigil-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Trucchetti Aggiuntivi (4° livello)</strong></p><p>Al 4° livello, impari un trucchetto aggiuntivo dalla lista degli incantesimi da bardo di tua scelta.</p><p>I trucchetti sono incantesimi di livello 0 che puoi lanciare a volontà, senza spendere slot incantesimo. Sono ideali per effetti minori ma utili come <em>Luci Danzanti</em>, <em>Mano Magica</em>, o <em>Messaggio</em>.</p><p>Come mostrato nella tabella del Bardo nel Manuale del Giocatore p.52, al 4° livello conosci 3 trucchetti totali (2 dall'1° livello + 1 nuovo al 4° livello).</p><p><strong>Nota:</strong> Aggiungi il trucchetto scelto alla tua scheda personaggio nella sezione incantesimi. Il sistema gestisce automaticamente i trucchetti come incantesimi lanciabili illimitatamente.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Trucchetti Aggiuntivi (4° livello)</strong></p><p>Al 4° livello, impari un trucchetto aggiuntivo dalla lista degli incantesimi da bardo di tua scelta.</p><p>I trucchetti sono incantesimi di livello 0 che puoi lanciare a volontà, senza spendere slot incantesimo. Sono ideali per effetti minori ma utili come <em>Luci Danzanti</em>, <em>Mano Magica</em>, o <em>Messaggio</em>.</p><p>Come mostrato nella tabella del Bardo nel Manuale del Giocatore p.52, al 4° livello conosci 3 trucchetti totali (2 dall'1° livello + 1 nuovo al 4° livello).</p><p><strong>Nota:</strong> Aggiungi il trucchetto scelto alla tua scheda personaggio nella sezione incantesimi. Il sistema gestisce automaticamente i trucchetti come incantesimi lanciabili illimitatamente.</p>"
     },
     "source": "Manuale del Giocatore p.52-54",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Bardo Livello 4",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "63257b420c2165f1"
   },
   "effects": [],
   "folder": null,

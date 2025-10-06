@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Croce d'argento che si capovolge da sola</p><h3>Proprietà</h3><p>Protegge dai demoni ma attira l'Inquisizione</p><h3>Storia</h3><p><em>Benedetto per errore durante messa nera</em></p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -55,7 +44,9 @@
     },
     "properties": [
       "mgc"
-    ]
+    ],
+    "identifier": "030_il_crocifisso_capovolto",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

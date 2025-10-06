@@ -5,11 +5,7 @@
   "type": "race",
   "img": "icons/environment/people/group.webp",
   "system": {
-    "description": {
-      "value": "",
-      "chat": "",
-      "unidentified": ""
-    },
+    "description": {},
     "source": "Brancalonia Manuale Base",
     "movement": {
       "walk": 30,
@@ -21,9 +17,7 @@
       "units": "ft"
     },
     "type": {
-      "value": "humanoid",
-      "subtype": "",
-      "custom": ""
+      "value": "humanoid"
     },
     "advancement": [
       {
@@ -52,16 +46,13 @@
         "value": {},
         "level": 0,
         "title": "Size",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
         "_id": "fvkve257kikpboda",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.u87hef3825t64h7w"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -73,9 +64,7 @@
         "_id": "112ebm40myqsa6ck",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.720xg91y2380m1e6"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -87,9 +76,7 @@
         "_id": "aoldj9blai38o5fs",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.lgxz1pmyqawx0eek"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -97,7 +84,10 @@
         "title": "Resistenza al Mare",
         "icon": "icons/svg/upgrade.svg"
       }
-    ]
+    ],
+    "identifier": "variantelevantini",
+    "speed": 30,
+    "size": "medium"
   },
   "effects": [],
   "folder": null,

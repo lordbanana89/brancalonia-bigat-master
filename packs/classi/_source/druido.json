@@ -6,9 +6,7 @@
   "img": "icons/magic/nature/tree-elm-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Custode dei cicli naturali che richiama la magia della terra e muta forma per proteggere il reame.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Custode dei cicli naturali che richiama la magia della terra e muta forma per proteggere il reame.</em></p>"
     },
     "source": "Manuale del Giocatore p.64",
     "identifier": "druido",
@@ -549,7 +547,8 @@
       "wis"
     ],
     "startingEquipment": [],
-    "hitDice": "d8"
+    "hitDice": "d8",
+    "proficiency": 2
   },
   "effects": [],
   "folder": null,

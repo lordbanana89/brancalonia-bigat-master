@@ -6,36 +6,24 @@
   "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Cavallo rapido per spostamenti veloci; non addestrato al combattimento.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Cavallo rapido per spostamenti veloci; non addestrato al combattimento.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -46,7 +34,8 @@
       "denomination": "gp"
     },
     "rarity": "common",
-    "attunement": 0
+    "attunement": 0,
+    "identifier": "animal-004_cavallo_da_sella_leggero"
   },
   "effects": [],
   "folder": null,

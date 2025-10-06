@@ -261,5 +261,15 @@
   "_key": "!tables!patronilavori",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Chi Offre il Lavoro Sporco - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "patronilavori",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

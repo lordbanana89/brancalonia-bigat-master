@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Durante il tuo addestramento da ladro hai imparato il gergo ladresco, un misto segreto di dialetto, gergo e codice che ti permette di nascondere messaggi in conversazioni apparentemente normali. Solo un'altra creatura che conosce il gergo ladresco capisce tali messaggi. Ci vuole quattro volte più tempo per trasmettere un tale messaggio che per dire la stessa idea chiaramente. Inoltre, comprendi un insieme di segni e simboli segreti usati per trasmettere messaggi brevi e semplici.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Durante il tuo addestramento da ladro hai imparato il gergo ladresco, un misto segreto di dialetto, gergo e codice che ti permette di nascondere messaggi in conversazioni apparentemente normali. Solo un'altra creatura che conosce il gergo ladresco capisce tali messaggi. Ci vuole quattro volte più tempo per trasmettere un tale messaggio che per dire la stessa idea chiaramente. Inoltre, comprendi un insieme di segni e simboli segreti usati per trasmettere messaggi brevi e semplici.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.96",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classladrolivello_1gergoladresco"
   },
   "effects": [],
   "folder": null,

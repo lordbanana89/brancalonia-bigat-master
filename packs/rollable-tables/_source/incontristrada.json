@@ -153,5 +153,15 @@
   "_key": "!tables!incontristrada",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Incontri Casuali per Strada - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "incontristrada",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

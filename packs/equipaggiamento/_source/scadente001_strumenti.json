@@ -6,36 +6,24 @@
   "img": "icons/tools/instruments/harp-simple-wooden.webp",
   "system": {
     "description": {
-      "value": "<p>Utensili e strumenti da lavoro di fattura pessima, spesso assemblati alla buona da ciarlatani.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Utensili e strumenti da lavoro di fattura pessima, spesso assemblati alla buona da ciarlatani.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "scadente001_strumenti",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Due metà di un anello nuziale</p><h3>Proprietà</h3><p>Chi possiede entrambe le metà può controllare chi indossa una metà</p><h3>Storia</h3><p><em>Gli amanti furono divisi dalla guerra</em></p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "ring",
-      "subtype": "",
-      "baseItem": ""
+      "value": "ring"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -55,7 +44,9 @@
     },
     "properties": [
       "mgc"
-    ]
+    ],
+    "identifier": "040_lanello_spezzato",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

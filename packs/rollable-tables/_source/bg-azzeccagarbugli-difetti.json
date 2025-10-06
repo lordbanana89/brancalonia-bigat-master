@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Azzeccagarbugli - Difetti - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-azzeccagarbugli-difetti",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

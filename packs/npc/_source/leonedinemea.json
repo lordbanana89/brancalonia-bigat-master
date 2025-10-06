@@ -9,10 +9,7 @@
       "str": {
         "value": 24,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 7,
         "save": 7,
@@ -21,10 +18,7 @@
       "dex": {
         "value": 12,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -33,10 +27,7 @@
       "con": {
         "value": 18,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 4,
         "save": 4,
@@ -45,10 +36,7 @@
       "int": {
         "value": 10,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 0,
         "save": 0,
@@ -57,10 +45,7 @@
       "wis": {
         "value": 12,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 1,
         "save": 1,
@@ -69,10 +54,7 @@
       "cha": {
         "value": 14,
         "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
+        "bonuses": {},
         "min": 3,
         "mod": 2,
         "save": 2,
@@ -82,8 +64,7 @@
     "attributes": {
       "ac": {
         "flat": 16,
-        "calc": "natural",
-        "formula": ""
+        "calc": "natural"
       },
       "hp": {
         "value": 152,
@@ -121,7 +102,6 @@
         "units": "ft",
         "special": "Percezione Passiva 11"
       },
-      "spellcasting": "",
       "prof": 4,
       "spelldc": null,
       "death": {
@@ -131,18 +111,12 @@
     },
     "details": {
       "biography": {
-        "value": "<p>Il feroce campione indiscusso dell'arena, una mostruosità leggendaria di incredibile potenza fisica e abilità combattiva. È mediamente intelligente ed è in grado di parlare il Draconiano, sebbene con uno strano accento gutturale. Il Leone di Nemea rappresenta la sfida definitiva per qualsiasi gladiatore che osi affrontarlo nell'arena.</p><h3>Note Brancalonia</h3><p><strong>Ruolo:</strong> Campione dell'arena di Aegis</p>",
-        "public": ""
+        "value": "<p>Il feroce campione indiscusso dell'arena, una mostruosità leggendaria di incredibile potenza fisica e abilità combattiva. È mediamente intelligente ed è in grado di parlare il Draconiano, sebbene con uno strano accento gutturale. Il Leone di Nemea rappresenta la sfida definitiva per qualsiasi gladiatore che osi affrontarlo nell'arena.</p><h3>Note Brancalonia</h3><p><strong>Ruolo:</strong> Campione dell'arena di Aegis</p>"
       },
       "alignment": "Legale neutrale",
-      "race": "",
       "type": {
-        "value": "monstrosity",
-        "subtype": "",
-        "swarm": "",
-        "custom": ""
+        "value": "monstrosity"
       },
-      "environment": "",
       "cr": 9,
       "spellLevel": 0,
       "xp": {
@@ -154,29 +128,24 @@
       "size": "lg",
       "di": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dr": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "dv": {
         "value": [],
-        "bypasses": [],
-        "custom": ""
+        "bypasses": []
       },
       "ci": {
-        "value": [],
-        "custom": ""
+        "value": []
       },
       "languages": {
         "value": [
           "draconiano",
           "common"
-        ],
-        "custom": ""
+        ]
       }
     },
     "currency": {
@@ -190,10 +159,7 @@
       "acr": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -202,10 +168,7 @@
       "ani": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -214,10 +177,7 @@
       "arc": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -226,10 +186,7 @@
       "ath": {
         "value": 2,
         "ability": "str",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 12,
         "passive": 22,
         "prof": 2,
@@ -238,10 +195,7 @@
       "dec": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -250,10 +204,7 @@
       "his": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -262,10 +213,7 @@
       "ins": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -274,10 +222,7 @@
       "inti": {
         "value": 2,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 7,
         "passive": 17,
         "prof": 2,
@@ -286,10 +231,7 @@
       "inv": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -298,10 +240,7 @@
       "med": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -310,10 +249,7 @@
       "nat": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -322,10 +258,7 @@
       "prc": {
         "value": 2,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 6,
         "passive": 16,
         "prof": 2,
@@ -334,10 +267,7 @@
       "prf": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -346,10 +276,7 @@
       "per": {
         "value": 0,
         "ability": "cha",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -358,10 +285,7 @@
       "rel": {
         "value": 0,
         "ability": "int",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -370,10 +294,7 @@
       "slt": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -382,10 +303,7 @@
       "ste": {
         "value": 0,
         "ability": "dex",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -394,10 +312,7 @@
       "sur": {
         "value": 0,
         "ability": "wis",
-        "bonuses": {
-          "check": "",
-          "passive": ""
-        },
+        "bonuses": {},
         "mod": 0,
         "passive": 10,
         "prof": 0,
@@ -458,30 +373,12 @@
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
-      "spell": {
-        "dc": ""
-      }
+      "mwak": {},
+      "rwak": {},
+      "msak": {},
+      "rsak": {},
+      "abilities": {},
+      "spell": {}
     },
     "resources": {
       "legact": {
@@ -496,7 +393,23 @@
         "value": false,
         "initiative": 0
       }
-    }
+    },
+    "saves": {
+      "fortitude": {
+        "value": 0,
+        "proficient": false
+      },
+      "reflex": {
+        "value": 0,
+        "proficient": false
+      },
+      "will": {
+        "value": 0,
+        "proficient": false
+      }
+    },
+    "identifier": "leonedinemea",
+    "source": "Brancalonia"
   },
   "items": [
     {
@@ -507,65 +420,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Il Leone di Nemea dispone di vantaggio ai tiri salvezza contro la condizione di spaventato.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Il Leone di Nemea dispone di vantaggio ai tiri salvezza contro la condizione di spaventato.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -580,65 +470,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Quando il Leone di Nemea colpisce con un'arma da mischia, l'attacco infligge un dado extra del tipo di danno dell'arma (già incluso nell'attacco).</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Quando il Leone di Nemea colpisce con un'arma da mischia, l'attacco infligge un dado extra del tipo di danno dell'arma (già incluso nell'attacco).</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -653,65 +520,42 @@
       "img": "icons/skills/social/diplomacy-peace-alliance.webp",
       "system": {
         "description": {
-          "value": "<p>Se il Leone di Nemea fallisce un tiro salvezza, può scegliere invece di superarlo.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Se il Leone di Nemea fallisce un tiro salvezza, può scegliere invece di superarlo.</p>"
         },
-        "source": "",
         "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -726,65 +570,43 @@
       "img": "icons/skills/melee/strike-slashes-red.webp",
       "system": {
         "description": {
-          "value": "<p>Il Leone di Nemea effettua tre attacchi in mischia.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Il Leone di Nemea effettua tre attacchi in mischia.</p>"
         },
-        "source": "",
         "activation": {
           "type": "action",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -799,11 +621,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -812,21 +631,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -836,22 +649,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "mwak",
         "attackBonus": "+11",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -859,17 +666,13 @@
               "2d6 + 7",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -882,11 +685,8 @@
       "img": "icons/weapons/claws/claw-bear-brown.webp",
       "system": {
         "description": {
-          "value": "<p></p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p></p>"
         },
-        "source": "",
         "quantity": 1,
         "weight": 0,
         "price": {
@@ -895,21 +695,15 @@
         },
         "attunement": 0,
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "activation": {
           "type": "action",
-          "cost": 1,
-          "condition": ""
+          "cost": 1
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": 1,
           "width": null,
-          "units": "",
           "type": "creature"
         },
         "range": {
@@ -919,22 +713,16 @@
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
-        "ability": "",
         "actionType": "mwak",
         "attackBonus": "+11",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
           "parts": [
@@ -942,17 +730,13 @@
               "2d6 + 7",
               "bludgeoning"
             ]
-          ],
-          "versatile": ""
+          ]
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "weaponType": "natural",
-        "baseItem": "",
         "properties": {},
         "proficient": true
       }
@@ -965,65 +749,43 @@
       "img": "icons/skills/melee/strike-slashes-red.webp",
       "system": {
         "description": {
-          "value": "<p>Il Leone di Nemea emette un ruggito magico. Ogni creatura entro 9 m che fallisce un tiro salvezza su Saggezza con CD 15 è spaventata per 1 minuto. Una creatura spaventata può ripetere il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto per lei termina.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Il Leone di Nemea emette un ruggito magico. Ogni creatura entro 9 m che fallisce un tiro salvezza su Saggezza con CD 15 è spaventata per 1 minuto. Una creatura spaventata può ripetere il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto per lei termina.</p>"
         },
-        "source": "",
         "activation": {
           "type": "action",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false
@@ -1038,65 +800,43 @@
       "img": "icons/skills/defensive/shield-block-gray.webp",
       "system": {
         "description": {
-          "value": "<p>Il Leone di Nemea aggiunge 4 alla sua CA contro un attacco in mischia che lo colpirebbe. Per farlo, il Leone di Nemea deve vedere l'attaccante e deve impugnare un'arma da mischia.</p>",
-          "chat": "",
-          "unidentified": ""
+          "value": "<p>Il Leone di Nemea aggiunge 4 alla sua CA contro un attacco in mischia che lo colpirebbe. Per farlo, il Leone di Nemea deve vedere l'attaccante e deve impugnare un'arma da mischia.</p>"
         },
-        "source": "",
         "activation": {
           "type": "reaction",
-          "cost": null,
-          "condition": ""
+          "cost": null
         },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
+        "duration": {},
         "target": {
           "value": null,
-          "width": null,
-          "units": "",
-          "type": ""
+          "width": null
         },
         "range": {
           "value": null,
-          "long": null,
-          "units": ""
+          "long": null
         },
         "uses": {
           "value": null,
-          "max": "",
-          "per": null,
-          "recovery": ""
+          "per": null
         },
         "consume": {
-          "type": "",
           "target": null,
           "amount": null
         },
         "ability": null,
-        "actionType": "",
-        "attackBonus": "",
-        "chatFlavor": "",
         "critical": {
-          "threshold": null,
-          "damage": ""
+          "threshold": null
         },
         "damage": {
-          "parts": [],
-          "versatile": ""
+          "parts": []
         },
-        "formula": "",
         "save": {
-          "ability": "",
           "dc": null,
           "scaling": "spell"
         },
         "type": {
-          "value": "monster",
-          "subtype": ""
+          "value": "monster"
         },
-        "requirements": "",
         "recharge": {
           "value": null,
           "charged": false

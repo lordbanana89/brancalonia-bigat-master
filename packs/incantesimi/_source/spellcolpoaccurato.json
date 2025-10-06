@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Estendi la tua mano e punti un dito verso un bersaglio entro gittata. La tua magia ti garantisce una breve intuizione sulle difese del bersaglio. Nel tuo prossimo turno, ottieni vantaggio sul tuo primo tiro per colpire contro il bersaglio, a patto che questo incantesimo non sia terminato.</p><h3>Note per il DM</h3><p><em>True Strike è considerato uno dei peggiori cantrip. Action economy terribile. Quasi sempre meglio attaccare due volte.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Estendi la tua mano e punti un dito verso un bersaglio entro gittata. La tua magia ti garantisce una breve intuizione sulle difese del bersaglio. Nel tuo prossimo turno, ottieni vantaggio sul tuo primo tiro per colpire contro il bersaglio, a patto che questo incantesimo non sia terminato.</p><h3>Note per il DM</h3><p><em>True Strike è considerato uno dei peggiori cantrip. Action economy terribile. Quasi sempre meglio attaccare due volte.</em></p>"
     },
     "source": "D&D 5e PHB p.284",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellcolpoaccurato"
   },
   "effects": [],
   "folder": null,

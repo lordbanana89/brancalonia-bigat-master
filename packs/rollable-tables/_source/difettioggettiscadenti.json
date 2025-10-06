@@ -141,5 +141,15 @@
   "_key": "!tables!difettioggettiscadenti",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Difetti Oggetti Scadenti - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "difettioggettiscadenti",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

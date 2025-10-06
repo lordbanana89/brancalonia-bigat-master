@@ -165,5 +165,15 @@
   "_key": "!tables!ricompenselavori",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Ricompense per Lavori Sporchi - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "ricompenselavori",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

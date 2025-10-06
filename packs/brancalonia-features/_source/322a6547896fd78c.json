@@ -6,36 +6,24 @@
   "img": "icons/magic/symbols/chevron-elipse-circle-blue.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Privilegio del Dominio (17° livello)</strong></p><p>Al 17° livello, ottieni il privilegio culminante del tuo Dominio Divino.</p><p>Ogni Dominio conferisce un potente privilegio a questo livello:</p><ul><li><strong>Dominio della Vita:</strong> Guaritore Supremo</li><li><strong>Dominio della Luce:</strong> Corona di Luce</li><li><strong>Dominio della Tempesta:</strong> Figlio della Tempesta</li><li>Altri domini hanno i loro privilegi specifici</li></ul><p><strong>Nota:</strong> Il privilegio specifico viene concesso automaticamente dal sistema in base al Dominio selezionato.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Privilegio del Dominio (17° livello)</strong></p><p>Al 17° livello, ottieni il privilegio culminante del tuo Dominio Divino.</p><p>Ogni Dominio conferisce un potente privilegio a questo livello:</p><ul><li><strong>Dominio della Vita:</strong> Guaritore Supremo</li><li><strong>Dominio della Luce:</strong> Corona di Luce</li><li><strong>Dominio della Tempesta:</strong> Figlio della Tempesta</li><li>Altri domini hanno i loro privilegi specifici</li></ul><p><strong>Nota:</strong> Il privilegio specifico viene concesso automaticamente dal sistema in base al Dominio selezionato.</p>"
     },
     "source": "Manuale del Giocatore p.59-63",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Chierico Livello 17",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "322a6547896fd78c"
   },
   "effects": [],
   "folder": null,

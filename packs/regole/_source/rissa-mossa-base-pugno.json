@@ -18,5 +18,17 @@
       "version": "12.0.4"
     }
   },
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Pugno/Calcio - Regola di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "identifier": "rissa-mossa-base-pugno"
+  },
+  "folder": null,
+  "effects": []
 }

@@ -6,36 +6,24 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Se il tuo attacco manca un bersaglio entro gittata, puoi trasformarlo in un colpo. Oppure, se fallisci una prova di caratteristica, puoi trasformare il tiro in un 20.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Se il tuo attacco manca un bersaglio entro gittata, puoi trasformarlo in un colpo. Oppure, se fallisci una prova di caratteristica, puoi trasformare il tiro in un 20.</p>"
     },
     "source": "Player's Handbook (D&D 5e)",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Ladro Livello 20",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "81dc89eb2e16090d"
   },
   "effects": [],
   "folder": null,

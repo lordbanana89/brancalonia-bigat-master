@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Passatore - Difetti - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-passatore-difetti",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

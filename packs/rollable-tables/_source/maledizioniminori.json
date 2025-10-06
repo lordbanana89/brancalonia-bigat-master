@@ -141,5 +141,15 @@
   "_key": "!tables!maledizioniminori",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Maledizioni Minori - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "maledizioniminori",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

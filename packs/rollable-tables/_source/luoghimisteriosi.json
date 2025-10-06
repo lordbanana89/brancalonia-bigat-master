@@ -261,5 +261,15 @@
   "_key": "!tables!luoghimisteriosi",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Luoghi Misteriosi - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "luoghimisteriosi",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

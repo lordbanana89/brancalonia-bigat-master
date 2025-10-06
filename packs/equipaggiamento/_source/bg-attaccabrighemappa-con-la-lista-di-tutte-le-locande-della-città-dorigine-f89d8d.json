@@ -6,9 +6,7 @@
   "img": "icons/sundries/documents/map-folded-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Mappa con la lista di tutte le locande della città d'origine - Equipaggiamento iniziale del background attaccabrighe.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Mappa con la lista di tutte le locande della città d'origine - Equipaggiamento iniziale del background attaccabrighe.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-attaccabrighemappa-con-la-lista-di-tutte-le-locande-della-città-dorigine-f89d8d"
   },
   "effects": [],
   "folder": null,

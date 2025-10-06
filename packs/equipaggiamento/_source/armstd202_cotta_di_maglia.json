@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-cloth-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Tunica di anelli intrecciati con imbottitura interna.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Tunica di anelli intrecciati con imbottitura interna.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -35,16 +33,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd202_cotta_di_maglia",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

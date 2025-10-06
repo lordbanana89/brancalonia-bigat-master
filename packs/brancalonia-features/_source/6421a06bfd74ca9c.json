@@ -6,36 +6,24 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Hai una riserva di potere curativo che si ripristina dopo un riposo lungo. Puoi toccare una creatura e ripristinare PF fino al massimo della riserva. Puoi anche curare 5 PF dalla riserva per rimuovere una malattia o veleno.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Hai una riserva di potere curativo che si ripristina dopo un riposo lungo. Puoi toccare una creatura e ripristinare PF fino al massimo della riserva. Puoi anche curare 5 PF dalla riserva per rimuovere una malattia o veleno.</p>"
     },
     "source": "Player's Handbook (D&D 5e)",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Paladino Livello 1",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "6421a06bfd74ca9c"
   },
   "effects": [],
   "folder": null,

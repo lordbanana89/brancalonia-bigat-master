@@ -261,5 +261,15 @@
   "_key": "!tables!mestieripopolani",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Mestieri del Popolino - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "mestieripopolani",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

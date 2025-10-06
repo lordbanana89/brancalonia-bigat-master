@@ -6,9 +6,7 @@
   "img": "icons/tools/instruments/lute-brown.webp",
   "system": {
     "description": {
-      "value": "<p><em>Artista e sciamano della parola che intreccia musica e magia per ispirare, ingannare e incantare.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Artista e sciamano della parola che intreccia musica e magia per ispirare, ingannare e incantare.</em></p>"
     },
     "source": "Manuale del Giocatore p.51",
     "identifier": "bardo",
@@ -591,7 +589,8 @@
       "cha"
     ],
     "startingEquipment": [],
-    "hitDice": "d8"
+    "hitDice": "d8",
+    "proficiency": 2
   },
   "effects": [],
   "folder": null,

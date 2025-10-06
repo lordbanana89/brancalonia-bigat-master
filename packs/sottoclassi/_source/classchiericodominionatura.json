@@ -5,37 +5,23 @@
   "type": "subclass",
   "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
   "system": {
-    "description": {
-      "value": "",
-      "chat": "",
-      "unidentified": ""
-    },
+    "description": {},
     "source": "Manuale del Giocatore p.61",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,13 +33,13 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "classIdentifier": "",
     "advancement": [
       {
         "level": 3,
         "features": []
       }
-    ]
+    ],
+    "identifier": "classchiericodominionatura"
   },
   "effects": [],
   "folder": null,

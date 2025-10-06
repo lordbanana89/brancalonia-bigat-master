@@ -6,36 +6,24 @@
   "img": "icons/magic/symbols/question-stone-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Segreti Magici Aggiuntivi (14° livello)</strong></p><p>Al 14° livello, puoi scegliere due incantesimi aggiuntivi da qualsiasi classe, inclusa questa. Un incantesimo che scegli deve essere di un livello che puoi lanciare, come mostrato nella tabella del Bardo, o un trucchetto.</p><p>Gli incantesimi scelti contano come incantesimi da bardo per te ma non contano nel numero di incantesimi da bardo che conosci.</p><p><strong>Nota:</strong> Questo è un potenziamento alla feature Segreti Magici ottenuta al 10° livello. Insieme a quella feature, ora conosci 6 incantesimi aggiuntivi scelti liberamente (2 al 10° livello, 2 al 14° livello, e 2 al 18° livello quando otterrai Segreti Magici Superiori).</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Segreti Magici Aggiuntivi (14° livello)</strong></p><p>Al 14° livello, puoi scegliere due incantesimi aggiuntivi da qualsiasi classe, inclusa questa. Un incantesimo che scegli deve essere di un livello che puoi lanciare, come mostrato nella tabella del Bardo, o un trucchetto.</p><p>Gli incantesimi scelti contano come incantesimi da bardo per te ma non contano nel numero di incantesimi da bardo che conosci.</p><p><strong>Nota:</strong> Questo è un potenziamento alla feature Segreti Magici ottenuta al 10° livello. Insieme a quella feature, ora conosci 6 incantesimi aggiuntivi scelti liberamente (2 al 10° livello, 2 al 14° livello, e 2 al 18° livello quando otterrai Segreti Magici Superiori).</p>"
     },
     "source": "Manuale del Giocatore p.54",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Bardo Livello 14",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "724f9d40e414a244"
   },
   "effects": [],
   "folder": null,

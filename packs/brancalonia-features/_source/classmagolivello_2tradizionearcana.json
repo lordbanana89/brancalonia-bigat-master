@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Al 2° livello, scegli una tradizione arcana, modellando la tua pratica della magia su una delle otto scuole di magia.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Al 2° livello, scegli una tradizione arcana, modellando la tua pratica della magia su una delle otto scuole di magia.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.115",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classmagolivello_2tradizionearcana"
   },
   "effects": [],
   "folder": null,

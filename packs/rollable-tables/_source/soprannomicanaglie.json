@@ -261,5 +261,15 @@
   "_key": "!tables!soprannomicanaglie",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Soprannomi delle Canaglie - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "soprannomicanaglie",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

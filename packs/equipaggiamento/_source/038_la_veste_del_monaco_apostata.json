@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Saio con simboli sacri scuciti</p><h3>Proprietà</h3><p>Immunità a individuazione magica e divinazione</p><h3>Storia</h3><p><em>Il monaco rinnegò 7 religioni</em></p><h3>Maledizione</h3><p><strong>Non può entrare in luoghi consacrati</strong></p><p>Non può entrare in luoghi consacrati</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "Non può entrare in luoghi consacrati"
+    "curse": "Non può entrare in luoghi consacrati",
+    "identifier": "038_la_veste_del_monaco_apostata",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

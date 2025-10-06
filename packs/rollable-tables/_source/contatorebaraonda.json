@@ -93,5 +93,15 @@
   "_key": "!tables!contatorebaraonda",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Livelli del Contatore Baraonda - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "contatorebaraonda",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

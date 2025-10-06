@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/academics-merchant-scribe.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Tuttofare (2° livello)</strong></p><p>A partire dal 2° livello, puoi aggiungere metà del tuo bonus di competenza (arrotondato per difetto) a qualsiasi prova di caratteristica che effettui che non include già il tuo bonus di competenza.</p><p>Questo si applica a tutte le abilità in cui non sei competente e alle prove di caratteristica pure (senza abilità specifiche).</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Tuttofare (2° livello)</strong></p><p>A partire dal 2° livello, puoi aggiungere metà del tuo bonus di competenza (arrotondato per difetto) a qualsiasi prova di caratteristica che effettui che non include già il tuo bonus di competenza.</p><p>Questo si applica a tutte le abilità in cui non sei competente e alle prove di caratteristica pure (senza abilità specifiche).</p>"
     },
     "source": "Manuale del Giocatore p.54",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Bardo Livello 2",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "ff2e71fc0a1ee670"
   },
   "effects": [
     {

@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 4° livello, puoi usare la tua reazione quando cadi per ridurre qualsiasi danno da caduta che subisci di un ammontare pari a cinque volte il tuo livello da monaco.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 4° livello, puoi usare la tua reazione quando cadi per ridurre qualsiasi danno da caduta che subisci di un ammontare pari a cinque volte il tuo livello da monaco.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.79",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classmonacolivello_4cadutalenta"
   },
   "effects": [],
   "folder": null,

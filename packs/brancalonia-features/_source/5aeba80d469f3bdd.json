@@ -6,30 +6,55 @@
   "img": "icons/creatures/mammals/elk-moose-marked-green.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Arcidruido (20° livello)</strong></p><p>Al 20° livello, puoi usare la Forma Selvatica un numero illimitato di volte.</p><p>Inoltre, puoi ignorare le componenti verbali e somatiche dei tuoi incantesimi da druido, così come qualsiasi componente materiale che non abbia un costo e non sia consumata dall'incantesimo. Ottieni questo beneficio sia nella tua forma normale che nella Forma Selvatica.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Arcidruido (20° livello)</strong></p><p>Al 20° livello, puoi usare la Forma Selvatica un numero illimitato di volte.</p><p>Inoltre, puoi ignorare le componenti verbali e somatiche dei tuoi incantesimi da druido, così come qualsiasi componente materiale che non abbia un costo e non sia consumata dall'incantesimo. Ottieni questo beneficio sia nella tua forma normale che nella Forma Selvatica.</p>"
     },
     "source": "Manuale del Giocatore p.65",
-    "activation": {"type": "", "cost": null, "condition": ""},
-    "duration": {"value": "", "units": ""},
-    "target": {"value": null, "width": null, "units": "", "type": ""},
-    "range": {"value": null, "long": null, "units": ""},
-    "uses": {"value": null, "max": "", "per": null, "recovery": ""},
+    "activation": {
+      "cost": null
+    },
+    "duration": {},
+    "target": {
+      "value": null,
+      "width": null
+    },
+    "range": {
+      "value": null,
+      "long": null
+    },
+    "uses": {
+      "value": null,
+      "per": null
+    },
     "equipped": false,
     "identified": true,
     "quantity": 1,
     "weight": 0,
-    "price": {"value": 0, "denomination": "gp"},
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
     "rarity": "common",
     "attunement": 0,
     "requirements": "Druido Livello 20",
-    "type": {"value": "class", "subtype": ""},
-    "recharge": {"value": null, "charged": false}
+    "type": {
+      "value": "class"
+    },
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "identifier": "5aeba80d469f3bdd"
   },
   "effects": [],
   "folder": null,
   "sort": 0,
-  "ownership": {"default": 0},
-  "flags": {"brancalonia-bigat": {"classe": "druido", "livello": 20}}
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "brancalonia-bigat": {
+      "classe": "druido",
+      "livello": 20
+    }
+  }
 }

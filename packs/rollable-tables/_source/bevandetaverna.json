@@ -141,5 +141,15 @@
   "_key": "!tables!bevandetaverna",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Bevande della Taverna - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bevandetaverna",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

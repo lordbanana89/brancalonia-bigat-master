@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Suggerisci un corso di attività (limitato a una o due frasi) e influenzi magicamente una creatura che puoi vedere entro gittata e che può sentirti e capirti. Creature che non possono essere affascinate sono immuni a questo effetto. La suggestione deve essere formulata in modo che il corso d'azione sembri ragionevole. Chiedere alla creatura di pugnalarsi, lanciarsi su una lancia, immolarsi o fare qualche altro atto ovviamente dannoso termina automaticamente l'incantesimo. Il bersaglio deve effettuare un tiro salvezza su Saggezza. Con un fallimento, segue il corso d'azione che hai descritto al meglio delle sue capacità. Il corso d'azione suggerito può continuare per l'intera durata. Se l'attività suggerita può essere completata in un tempo più breve, l'incantesimo termina quando il soggetto finisce ciò che gli è stato chiesto di fare.</p><h3>Note per il DM</h3><p><em>Suggestion richiede creatività. 'Ragionevole' è soggettivo - DM decide. 8 ore durata lo rende potentissimo se usato bene.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Suggerisci un corso di attività (limitato a una o due frasi) e influenzi magicamente una creatura che puoi vedere entro gittata e che può sentirti e capirti. Creature che non possono essere affascinate sono immuni a questo effetto. La suggestione deve essere formulata in modo che il corso d'azione sembri ragionevole. Chiedere alla creatura di pugnalarsi, lanciarsi su una lancia, immolarsi o fare qualche altro atto ovviamente dannoso termina automaticamente l'incantesimo. Il bersaglio deve effettuare un tiro salvezza su Saggezza. Con un fallimento, segue il corso d'azione che hai descritto al meglio delle sue capacità. Il corso d'azione suggerito può continuare per l'intera durata. Se l'attività suggerita può essere completata in un tempo più breve, l'incantesimo termina quando il soggetto finisce ciò che gli è stato chiesto di fare.</p><h3>Note per il DM</h3><p><em>Suggestion richiede creatività. 'Ragionevole' è soggettivo - DM decide. 8 ore durata lo rende potentissimo se usato bene.</em></p>"
     },
     "source": "D&D 5e PHB p.279",
     "level": 2,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 8,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spellsuggestione"
   },
   "effects": [],
   "folder": null,

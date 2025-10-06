@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Fino a tre creature a tua scelta che puoi vedere entro gittata devono effettuare tiri salvezza su Carisma. Ogni volta che un bersaglio che fallisce questo tiro salvezza effettua un tiro per colpire o un tiro salvezza prima che l'incantesimo finisca, il bersaglio deve tirare un d4 e sottrarre il numero tirato dal tiro per colpire o tiro salvezza.</p><h3>Note per il DM</h3><p><em>Bane sottovalutato ma potente. -1d4 su nemici multipli riduce molto threat. CHA save spesso fallisce. Compete per concentration.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Fino a tre creature a tua scelta che puoi vedere entro gittata devono effettuare tiri salvezza su Carisma. Ogni volta che un bersaglio che fallisce questo tiro salvezza effettua un tiro per colpire o un tiro salvezza prima che l'incantesimo finisca, il bersaglio deve tirare un d4 e sottrarre il numero tirato dal tiro per colpire o tiro salvezza.</p><h3>Note per il DM</h3><p><em>Bane sottovalutato ma potente. -1d4 su nemici multipli riduce molto threat. CHA save spesso fallisce. Compete per concentration.</em></p>"
     },
     "source": "D&D 5e PHB p.216",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-anatema"
   },
   "effects": [],
   "folder": null,

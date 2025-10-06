@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Una barriera invisibile di forza magica appare e ti protegge. Fino all'inizio del tuo prossimo turno, hai un bonus di +5 alla CA, incluso contro l'attacco che ha innescato l'incantesimo, e non subisci danni da dardo incantato.</p><h3>Note per il DM</h3><p><em>Shield è tra i migliori spell difensivi. Reaction dopo sapere hit è potentissimo. Immunity a Magic Missile bonus.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Una barriera invisibile di forza magica appare e ti protegge. Fino all'inizio del tuo prossimo turno, hai un bonus di +5 alla CA, incluso contro l'attacco che ha innescato l'incantesimo, e non subisci danni da dardo incantato.</p><h3>Note per il DM</h3><p><em>Shield è tra i migliori spell difensivi. Reaction dopo sapere hit è potentissimo. Immunity a Magic Missile bonus.</em></p>"
     },
     "source": "D&D 5e PHB p.275",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "reaction",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 1,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-scudo"
   },
   "effects": [],
   "folder": null,

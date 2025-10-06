@@ -6,36 +6,24 @@
   "img": "icons/environment/people/group.webp",
   "system": {
     "description": {
-      "value": "<p>9 stirpi - Benandanti, Giffonita, Marionetta, Morgante, Pantegana, Silfo, Unomorto e varianti.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>9 stirpi - Benandanti, Giffonita, Marionetta, Morgante, Pantegana, Silfo, Unomorto e varianti.</p>"
     },
     "source": "Brancalonia",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -46,7 +34,10 @@
       "denomination": "gp"
     },
     "rarity": "common",
-    "attunement": 0
+    "attunement": 0,
+    "identifier": "index",
+    "speed": 30,
+    "size": "medium"
   },
   "effects": [],
   "folder": null,

@@ -6,36 +6,24 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>258 items - Armi, armature, oggetti scadenti e equipaggiamento iniziale per background.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>258 items - Armi, armature, oggetti scadenti e equipaggiamento iniziale per background.</p>"
     },
     "source": "Manuale Base p.62-63",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "index",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

@@ -6,40 +6,28 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Tariffa tipica per attraversare un ponte o una porta cittadina.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Tariffa tipica per attraversare un ponte o una porta cittadina.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "—",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "gearserv008_pedaggio_stradale",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

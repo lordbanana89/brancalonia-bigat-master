@@ -261,5 +261,15 @@
   "_key": "!tables!backgroundcanaglie",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Background delle Canaglie - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "backgroundcanaglie",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

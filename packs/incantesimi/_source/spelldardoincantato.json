@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Crei tre dardi di forza magica incandescente. Ogni dardo colpisce una creatura a tua scelta che puoi vedere entro gittata. Un dardo infligge 1d4+1 danni da forza al suo bersaglio. I dardi colpiscono tutti simultaneamente e puoi dirigerli per colpire una creatura o diverse.</p><h3>Ai Livelli Superiori</h3><p>Quando lanci questo incantesimo usando uno slot di 2° livello o superiore, l'incantesimo crea un dardo aggiuntivo per ogni livello dello slot sopra il 1°.</p><h3>Note per il DM</h3><p><em>Magic Missile è l'incantesimo più affidabile. Sempre colpisce, ottimo per finire nemici o rompere concentrazione. Shield è il counter perfetto.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Crei tre dardi di forza magica incandescente. Ogni dardo colpisce una creatura a tua scelta che puoi vedere entro gittata. Un dardo infligge 1d4+1 danni da forza al suo bersaglio. I dardi colpiscono tutti simultaneamente e puoi dirigerli per colpire una creatura o diverse.</p><h3>Ai Livelli Superiori</h3><p>Quando lanci questo incantesimo usando uno slot di 2° livello o superiore, l'incantesimo crea un dardo aggiuntivo per ogni livello dello slot sopra il 1°.</p><h3>Note per il DM</h3><p><em>Magic Missile è l'incantesimo più affidabile. Sempre colpisce, ottimo per finire nemici o rompere concentrazione. Shield è il counter perfetto.</em></p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.257",
     "level": 1,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "level",
-      "formula": ""
+      "mode": "level"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spelldardoincantato"
   },
   "effects": [],
   "folder": null,

@@ -6,36 +6,24 @@
   "img": "icons/sundries/misc/aged-parchment-book.webp",
   "system": {
     "description": {
-      "value": "<p>Riproduzioni artefatte di mappe nautiche o terrestri, spesso usate per depistare o raggirare avventurieri.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Riproduzioni artefatte di mappe nautiche o terrestri, spesso usate per depistare o raggirare avventurieri.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "oggettocontraff002_mappe_false",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

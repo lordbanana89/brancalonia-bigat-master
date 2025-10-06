@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Catena di ferro che scotta al tocco</p><h3>Proprietà</h3><p>Può trattenere qualsiasi creatura (Forza CD 30 per spezzare)</p><h3>Storia</h3><p><em>Usata per incatenare Cerbero per una notte</em></p><h3>Maledizione</h3><p><strong>Attira cani infernali nel raggio di 1 km</strong></p><p>Attira cani infernali nel raggio di 1 km</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "Attira cani infernali nel raggio di 1 km"
+    "curse": "Attira cani infernali nel raggio di 1 km",
+    "identifier": "025_la_catena_del_cane_infernale",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

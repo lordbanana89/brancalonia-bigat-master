@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 18° livello, puoi usare la tua azione per spendere 4 punti ki per diventare invisibile per 1 minuto. Durante quel tempo, hai anche resistenza a tutti i danni tranne i danni da forza. Inoltre, puoi spendere 8 punti ki per lanciare l'incantesimo proiezione astrale, senza bisogno di componenti materiali.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 18° livello, puoi usare la tua azione per spendere 4 punti ki per diventare invisibile per 1 minuto. Durante quel tempo, hai anche resistenza a tutti i danni tranne i danni da forza. Inoltre, puoi spendere 8 punti ki per lanciare l'incantesimo proiezione astrale, senza bisogno di componenti materiali.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.79",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classmonacolivello_18corpovuoto"
   },
   "effects": [],
   "folder": null,

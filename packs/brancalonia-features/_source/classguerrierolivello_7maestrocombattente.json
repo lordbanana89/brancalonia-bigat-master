@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>A partire dal 7° livello, se spendi almeno 1 minuto osservando o interagendo con un'altra creatura al di fuori del combattimento, puoi apprendere alcune informazioni sulle sue capacità comparate alle tue.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>A partire dal 7° livello, se spendi almeno 1 minuto osservando o interagendo con un'altra creatura al di fuori del combattimento, puoi apprendere alcune informazioni sulle sue capacità comparate alle tue.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.73-74",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classguerrierolivello_7maestrocombattente"
   },
   "effects": [],
   "folder": null,

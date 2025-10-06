@@ -6,36 +6,24 @@
   "img": "icons/skills/trades/gaming-gambling-dice-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Hai imparato a recuperare parte della tua energia magica studiando il tuo libro degli incantesimi. Una volta al giorno quando finisci un riposo breve, puoi scegliere slot incantesimi spesi da recuperare. Gli slot possono avere un livello combinato pari o inferiore alla metà del tuo livello da mago (arrotondato per eccesso), e nessuno degli slot può essere di 6° livello o superiore.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Hai imparato a recuperare parte della tua energia magica studiando il tuo libro degli incantesimi. Una volta al giorno quando finisci un riposo breve, puoi scegliere slot incantesimi spesi da recuperare. Gli slot possono avere un livello combinato pari o inferiore alla metà del tuo livello da mago (arrotondato per eccesso), e nessuno degli slot può essere di 6° livello o superiore.</p>"
     },
     "source": "Brancalonia Manuale Base, D&D 5e PHB p.115",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -47,15 +35,14 @@
     },
     "rarity": "common",
     "attunement": 0,
-    "requirements": "",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "classmagolivello_1recuperoarcano"
   },
   "effects": [],
   "folder": null,

@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Enorme boccale di peltro ammaccato</p><h3>Proprietà</h3><p>Non si svuota mai completamente di birra</p><h3>Storia</h3><p><em>Appartenuto al gigante Bevo che morì affogato nella birra</em></p><h3>Maledizione</h3><p><strong>Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora</strong></p><p>Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora"
+    "curse": "Dopo 3 sorsi, TS Costituzione CD 15 o ubriaco per 1 ora",
+    "identifier": "003_il_boccale_del_gigante_ubriacone",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

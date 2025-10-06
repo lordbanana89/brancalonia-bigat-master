@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Pennello che gocciola sempre vernice rossa</p><h3>Proprietà</h3><p>Dipinti sembrano vivi, soggetti si muovono</p><h3>Storia</h3><p><em>Il pittore dipinse il Diavolo dal vero</em></p><h3>Maledizione</h3><p><strong>I ritratti invecchiano al posto del soggetto</strong></p><p>I ritratti invecchiano al posto del soggetto</p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -58,7 +47,9 @@
       "cursed"
     ],
     "cursed": true,
-    "curse": "I ritratti invecchiano al posto del soggetto"
+    "curse": "I ritratti invecchiano al posto del soggetto",
+    "identifier": "014_il_pennello_del_pittore_maledetto",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

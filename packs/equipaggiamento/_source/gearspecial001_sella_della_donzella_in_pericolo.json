@@ -6,40 +6,28 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Sella con meccanismo a scatto ideata da Cinquina d'Oltrefossa per fingere situazioni di difficoltà.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Sella con meccanismo a scatto ideata da Cinquina d'Oltrefossa per fingere situazioni di difficoltà.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "10 kg",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "gearspecial001_sella_della_donzella_in_pericolo",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

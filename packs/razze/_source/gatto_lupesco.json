@@ -6,9 +6,7 @@
   "img": "icons/environment/people/group.webp",
   "system": {
     "description": {
-      "value": "<p>Felini antropomorfi della grandezza di lonze e gattopardi con postura eretta</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Felini antropomorfi della grandezza di lonze e gattopardi con postura eretta</p>"
     },
     "source": "Brancalonia Macaronicon p.7",
     "movement": {
@@ -21,9 +19,7 @@
       "units": "ft"
     },
     "type": {
-      "value": "humanoid",
-      "subtype": "",
-      "custom": ""
+      "value": "humanoid"
     },
     "advancement": [
       {
@@ -52,7 +48,6 @@
         "value": {},
         "level": 0,
         "title": "Size",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
@@ -66,16 +61,13 @@
         "value": {},
         "level": 0,
         "title": "Darkvision",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
         "_id": "s9vo3o32jltyvlvx",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.z43pcdx9c9x6fs00"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -87,9 +79,7 @@
         "_id": "ow4jzcworreh0m9v",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.hk78tuhegw6cgz7b"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -101,9 +91,7 @@
         "_id": "ym0eaf6lr7jhicur",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.b64aj7np8ozsih2a"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -115,9 +103,7 @@
         "_id": "vcsoe82z2pjzrpwu",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.xd2i8x6iusd7t2v8"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -125,7 +111,10 @@
         "title": "Agilità Felina",
         "icon": "icons/svg/upgrade.svg"
       }
-    ]
+    ],
+    "identifier": "gatto_lupesco",
+    "speed": 30,
+    "size": "medium"
   },
   "effects": [],
   "folder": null,

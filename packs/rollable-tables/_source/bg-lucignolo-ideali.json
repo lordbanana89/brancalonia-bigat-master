@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Lucignolo - Ideali - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-lucignolo-ideali",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

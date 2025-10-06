@@ -6,40 +6,28 @@
   "img": "icons/environment/settlement/wagon-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Veicolo a quattro ruote coperto; capacità di carico 600 kg.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Veicolo a quattro ruote coperto; capacità di carico 600 kg.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "100 kg",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
@@ -54,9 +42,10 @@
     "strength": 0,
     "stealth": false,
     "type": {
-      "value": "trinket",
-      "baseItem": ""
-    }
+      "value": "trinket"
+    },
+    "identifier": "gear-veh-002_carro",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-blue-purple.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Fonte d'Ispirazione (5° livello)</strong></p><p>A partire dal 5° livello, recuperi tutti gli usi spesi della tua Ispirazione Bardica quando completi un riposo breve o lungo.</p><p>Normalmente, al 1° livello, recuperi gli usi di Ispirazione Bardica solo dopo un riposo lungo. Questa feature migliora significativamente la tua capacità di supportare il gruppo, permettendoti di usare l'Ispirazione Bardica più liberamente durante le avventure sapendo che potrai recuperarla durante i riposi brevi.</p><p><strong>Nota:</strong> Il sistema di D&D 5e gestisce automaticamente il recupero degli usi quando il personaggio completa un riposo breve o lungo, se la feature ha questa proprietà impostata.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Fonte d'Ispirazione (5° livello)</strong></p><p>A partire dal 5° livello, recuperi tutti gli usi spesi della tua Ispirazione Bardica quando completi un riposo breve o lungo.</p><p>Normalmente, al 1° livello, recuperi gli usi di Ispirazione Bardica solo dopo un riposo lungo. Questa feature migliora significativamente la tua capacità di supportare il gruppo, permettendoti di usare l'Ispirazione Bardica più liberamente durante le avventure sapendo che potrai recuperarla durante i riposi brevi.</p><p><strong>Nota:</strong> Il sistema di D&D 5e gestisce automaticamente il recupero degli usi quando il personaggio completa un riposo breve o lungo, se la feature ha questa proprietà impostata.</p>"
     },
     "source": "Manuale del Giocatore p.54",
     "activation": {
@@ -16,26 +14,18 @@
       "cost": null,
       "condition": "Riposo breve o lungo"
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +39,13 @@
     "attunement": 0,
     "requirements": "Bardo Livello 5",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "250fac41c96dcc73"
   },
   "effects": [],
   "folder": null,

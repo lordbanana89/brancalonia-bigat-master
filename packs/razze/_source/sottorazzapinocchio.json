@@ -5,11 +5,7 @@
   "type": "race",
   "img": "icons/environment/people/group.webp",
   "system": {
-    "description": {
-      "value": "",
-      "chat": "",
-      "unidentified": ""
-    },
+    "description": {},
     "source": "Brancalonia Manuale Base",
     "movement": {
       "walk": 30,
@@ -21,9 +17,7 @@
       "units": "ft"
     },
     "type": {
-      "value": "construct",
-      "subtype": "",
-      "custom": ""
+      "value": "construct"
     },
     "advancement": [
       {
@@ -52,7 +46,6 @@
         "value": {},
         "level": 0,
         "title": "Size",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
@@ -66,16 +59,13 @@
         "value": {},
         "level": 0,
         "title": "Construct Nature",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
         "_id": "y0c866sgv8cswu5u",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.031rgwh3ckrtq09x"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -87,9 +77,7 @@
         "_id": "2cpzafjrq5o5jrzs",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.qcxr7kwqqolnhh9r"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -101,9 +89,7 @@
         "_id": "t2unj4kee1y9ht6r",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.87nlrouyk96y8dmn"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -115,9 +101,7 @@
         "_id": "74vs82n7w57cfcg0",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.6i1cgn7kwfia4sh7"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -125,7 +109,10 @@
         "title": "Costruito",
         "icon": "icons/svg/upgrade.svg"
       }
-    ]
+    ],
+    "identifier": "sottorazzapinocchio",
+    "speed": 30,
+    "size": "medium"
   },
   "effects": [],
   "folder": null,

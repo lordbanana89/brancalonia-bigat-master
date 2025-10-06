@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>Una radianza simile a fiamma discende su una creatura che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Destrezza o subire 1d8 danni radiosi. Il bersaglio non ottiene beneficio da copertura per questo tiro salvezza.</p><h3>Note per il DM</h3><p><em>Sacred Flame unico per ignorare copertura. Ottimo vs nemici dietro ripari. DEX save invece di attack utile in certe situazioni.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Una radianza simile a fiamma discende su una creatura che puoi vedere entro gittata. Il bersaglio deve superare un tiro salvezza su Destrezza o subire 1d8 danni radiosi. Il bersaglio non ottiene beneficio da copertura per questo tiro salvezza.</p><h3>Note per il DM</h3><p><em>Sacred Flame unico per ignorare copertura. Ottimo vs nemici dietro ripari. DEX save invece di attack utile in certe situazioni.</em></p>"
     },
     "source": "D&D 5e PHB p.272",
     "level": 0,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,11 +29,9 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
-      "value": "",
       "units": "inst"
     },
     "range": {
@@ -46,42 +41,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-sacra-fiamma"
   },
   "effects": [],
   "folder": null,

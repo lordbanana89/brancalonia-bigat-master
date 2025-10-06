@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Cacciatore di reliquie - Legami - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-cacciatore-di-reliquie-legami",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

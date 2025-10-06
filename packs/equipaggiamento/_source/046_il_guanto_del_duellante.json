@@ -7,7 +7,6 @@
   "system": {
     "description": {
       "value": "<p>Guanto bianco macchiato di sangue</p><h3>Proprietà</h3><p>Chi viene schiaffeggiato deve accettare la sfida o subire -4 Carisma per 1 mese</p><h3>Storia</h3><p><em>Il duellante morì al suo 100° duello</em></p>",
-      "chat": "",
       "unidentified": "Un oggetto misterioso"
     },
     "source": "Brancalonia Manuale Base",
@@ -21,33 +20,23 @@
     "rarity": "common",
     "attunement": 1,
     "type": {
-      "value": "trinket",
-      "subtype": "",
-      "baseItem": ""
+      "value": "trinket"
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
       "per": "day",
       "recovery": "1d6+4",
       "autoDestroy": false,
@@ -55,7 +44,9 @@
     },
     "properties": [
       "mgc"
-    ]
+    ],
+    "identifier": "046_il_guanto_del_duellante",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

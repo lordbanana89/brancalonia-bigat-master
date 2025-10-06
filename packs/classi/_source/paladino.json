@@ -6,9 +6,7 @@
   "img": "icons/equipment/shield/heater-steel-sword.webp",
   "system": {
     "description": {
-      "value": "<p><em>Campione giurato che incarna ideali sacri, combina arti marziali e potere divino.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Campione giurato che incarna ideali sacri, combina arti marziali e potere divino.</em></p>"
     },
     "source": "Manuale del Giocatore p.82",
     "identifier": "paladino",
@@ -529,7 +527,8 @@
       "cha"
     ],
     "startingEquipment": [],
-    "hitDice": "d10"
+    "hitDice": "d10",
+    "proficiency": 2
   },
   "effects": [],
   "folder": null,

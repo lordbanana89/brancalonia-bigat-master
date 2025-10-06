@@ -261,5 +261,15 @@
   "_key": "!tables!tesorinascosti",
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Tesori Nascosti - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "tesorinascosti",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

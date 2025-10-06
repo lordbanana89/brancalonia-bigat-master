@@ -6,9 +6,7 @@
   "img": "icons/tools/scribal/paints-paint-brush.webp",
   "system": {
     "description": {
-      "value": "<p>Pigmenti colorati - Equipaggiamento iniziale del background brado.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Pigmenti colorati - Equipaggiamento iniziale del background brado.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -21,7 +19,7 @@
     },
     "identified": true,
     "rarity": "common",
-    "attunement": ""
+    "identifier": "bg-bradopigmenti-colorati-b09aa0"
   },
   "effects": [],
   "folder": null,

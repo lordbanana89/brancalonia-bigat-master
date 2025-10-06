@@ -6,9 +6,7 @@
   "img": "icons/skills/social/theft-pickpocket-bribery.webp",
   "system": {
     "description": {
-      "value": "<p><em>Fannullone professionista, scroccone e perdigiorno che vive alle spalle altrui</em></p>\n",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><em>Fannullone professionista, scroccone e perdigiorno che vive alle spalle altrui</em></p>\n"
     },
     "source": "Brancalonia Macaronicon p.38-39",
     "identifier": "cialtrone",
@@ -28,7 +26,9 @@
         },
         "value": {}
       }
-    ]
+    ],
+    "startingEquipment": [],
+    "wealth": "15"
   },
   "effects": [],
   "folder": null,

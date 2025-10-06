@@ -5,11 +5,7 @@
   "type": "race",
   "img": "icons/environment/people/group.webp",
   "system": {
-    "description": {
-      "value": "",
-      "chat": "",
-      "unidentified": ""
-    },
+    "description": {},
     "source": "Brancalonia Manuale Base",
     "movement": {
       "walk": 30,
@@ -21,9 +17,7 @@
       "units": "ft"
     },
     "type": {
-      "value": "humanoid",
-      "subtype": "",
-      "custom": ""
+      "value": "humanoid"
     },
     "advancement": [
       {
@@ -52,23 +46,23 @@
         "value": {},
         "level": 0,
         "title": "Size",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
         "_id": "cahipqlsatcweleo",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.uorelwb7edtt32dn"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
         "level": 0,
         "title": "Versatilità"
       }
-    ]
+    ],
+    "identifier": "variantebracaloniani",
+    "speed": 30,
+    "size": "medium"
   },
   "effects": [],
   "folder": null,

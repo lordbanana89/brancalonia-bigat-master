@@ -6,46 +6,35 @@
   "img": "icons/consumables/potions/bottle-round-corked-red.webp",
   "system": {
     "description": {
-      "value": "<p>Gancio metallico a quattro punte usato con una corda per scalare.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Gancio metallico a quattro punte usato con una corda per scalare.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "0.5 kg",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
     },
     "rarity": "common",
-    "attunement": 0
+    "attunement": 0,
+    "identifier": "gear010_gancio_da_arrampicata"
   },
   "effects": [],
   "folder": null,

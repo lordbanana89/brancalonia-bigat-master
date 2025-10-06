@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Impresario - Legami - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-impresario-legami",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

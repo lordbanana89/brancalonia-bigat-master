@@ -6,9 +6,7 @@
   "img": "icons/equipment/chest/breastplate-scale-steel.webp",
   "system": {
     "description": {
-      "value": "<p>Pettorale metallico liscio con protezioni leggere per braccia e gambe.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Pettorale metallico liscio con protezioni leggere per braccia e gambe.</p>"
     },
     "source": "Manuale Base",
     "quantity": 1,
@@ -22,8 +20,7 @@
     "attunement": 0,
     "type": {
       "value": "armor",
-      "subtype": "light",
-      "baseItem": ""
+      "subtype": "light"
     },
     "armor": {
       "value": 14,
@@ -35,16 +32,14 @@
     "stealth": false,
     "properties": [],
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
-    }
+      "per": null
+    },
+    "identifier": "armstd104_corazza_pettorale",
+    "equipped": false
   },
   "effects": [],
   "folder": null,

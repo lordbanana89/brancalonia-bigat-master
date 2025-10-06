@@ -102,5 +102,15 @@
   },
   "effects": [],
   "type": "table",
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Innamorato - Difetti - Tabella di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "identifier": "bg-innamorato-difetti",
+    "source": "Brancalonia",
+    "results": [],
+    "formula": "1d6"
+  }
 }

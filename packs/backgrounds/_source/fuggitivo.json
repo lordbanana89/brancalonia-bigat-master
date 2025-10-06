@@ -96,7 +96,16 @@
         },
         "value": {}
       }
-    ]
+    ],
+    "source": "Brancalonia",
+    "description": {
+      "value": "<p>Fuggitivo - Background di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "startingEquipment": [],
+    "wealth": "15",
+    "identifier": "fuggitivo"
   },
   "flags": {
     "brancalonia-bigat": {

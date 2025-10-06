@@ -5,11 +5,7 @@
   "type": "race",
   "img": "icons/environment/people/group.webp",
   "system": {
-    "description": {
-      "value": "",
-      "chat": "",
-      "unidentified": ""
-    },
+    "description": {},
     "source": "Brancalonia Manuale Base",
     "movement": {
       "walk": 30,
@@ -21,9 +17,7 @@
       "units": "ft"
     },
     "type": {
-      "value": "humanoid",
-      "subtype": "",
-      "custom": ""
+      "value": "humanoid"
     },
     "advancement": [
       {
@@ -52,16 +46,13 @@
         "value": {},
         "level": 0,
         "title": "Size",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
         "_id": "255pmob8pwhbx394",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.5imw6a1fznbp23ia"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -73,9 +64,7 @@
         "_id": "fuoscfu8s4ciajdw",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.0tpwpq7igg47zzb9"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -87,9 +76,7 @@
         "_id": "zif1a0z5zehbj1vb",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.xkrv1rh8u323o6mg"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -97,7 +84,10 @@
         "title": "Fortuna del Briccone",
         "icon": "icons/svg/upgrade.svg"
       }
-    ]
+    ],
+    "identifier": "variantesvanzici",
+    "speed": 30,
+    "size": "medium"
   },
   "effects": [],
   "folder": null,

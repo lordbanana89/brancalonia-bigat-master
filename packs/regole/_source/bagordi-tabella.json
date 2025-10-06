@@ -21,5 +21,17 @@
       "version": "12.0.4"
     }
   },
-  "system": {}
+  "system": {
+    "description": {
+      "value": "<p>Botte da Orbi e Bisacce Sfondate - Regola di Brancalonia</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "custom": "Brancalonia"
+    },
+    "identifier": "bagordi-tabella"
+  },
+  "folder": null,
+  "effects": []
 }

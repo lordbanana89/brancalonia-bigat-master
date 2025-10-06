@@ -6,9 +6,7 @@
   "img": "icons/weapons/staves/staff-simple.webp",
   "system": {
     "description": {
-      "value": "<p>Bastone - Equipaggiamento iniziale del background brado.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Bastone - Equipaggiamento iniziale del background brado.</p>"
     },
     "source": {
       "custom": "Brancalonia"
@@ -27,8 +25,7 @@
           "1d6 + @mod",
           "bludgeoning"
         ]
-      ],
-      "versatile": ""
+      ]
     },
     "properties": [],
     "range": {
@@ -36,11 +33,10 @@
       "long": null,
       "units": "ft"
     },
-    "attunement": "",
     "type": {
-      "value": "simpleM",
-      "baseItem": ""
-    }
+      "value": "simpleM"
+    },
+    "identifier": "bg-bradobastone-32dd24"
   },
   "effects": [],
   "folder": null,

@@ -6,36 +6,24 @@
   "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>13 classi - Barbaro, Bardo, Chierico, Druido, Guerriero, Ladro, Mago, Monaco, Paladino, Ranger, Stregone, Warlock e Burattinaio.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>13 classi - Barbaro, Bardo, Chierico, Druido, Guerriero, Ladro, Mago, Monaco, Paladino, Ranger, Stregone, Warlock e Burattinaio.</p>"
     },
     "source": "Brancalonia",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -58,9 +46,14 @@
       "choices": [],
       "value": []
     },
-    "startingEquipment": "",
     "levels": 1,
-    "primaryAbility": "str"
+    "primaryAbility": "str",
+    "proficiency": 2,
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    },
+    "identifier": "index"
   },
   "effects": [],
   "folder": null,

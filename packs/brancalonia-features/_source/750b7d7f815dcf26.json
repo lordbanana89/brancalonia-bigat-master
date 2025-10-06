@@ -6,36 +6,24 @@
   "img": "icons/magic/holy/explosion-beam-impact-silhouette.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Distruggere Non Morti - GS 1/2 (5° livello)</strong></p><p>Al 5° livello, quando un non morto fallisce il suo tiro salvezza contro il tuo privilegio Incanalare Divinità: Scacciare Non Morti, viene istantaneamente distrutto se il suo grado di sfida è 1/2 o inferiore.</p><p>Questo significa che zombi, scheletri e altri non morti deboli vengono completamente annientati dalla tua energia divina invece di essere solo scacciati.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Distruggere Non Morti - GS 1/2 (5° livello)</strong></p><p>Al 5° livello, quando un non morto fallisce il suo tiro salvezza contro il tuo privilegio Incanalare Divinità: Scacciare Non Morti, viene istantaneamente distrutto se il suo grado di sfida è 1/2 o inferiore.</p><p>Questo significa che zombi, scheletri e altri non morti deboli vengono completamente annientati dalla tua energia divina invece di essere solo scacciati.</p>"
     },
     "source": "Manuale del Giocatore p.59",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "equipped": false,
     "identified": true,
@@ -49,13 +37,13 @@
     "attunement": 0,
     "requirements": "Chierico Livello 5",
     "type": {
-      "value": "class",
-      "subtype": ""
+      "value": "class"
     },
     "recharge": {
       "value": null,
       "charged": false
-    }
+    },
+    "identifier": "750b7d7f815dcf26"
   },
   "effects": [],
   "folder": null,

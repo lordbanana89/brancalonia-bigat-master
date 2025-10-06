@@ -6,9 +6,7 @@
   "img": "icons/environment/people/group.webp",
   "system": {
     "description": {
-      "value": "<p>Uomini ratto di origine magica o paradossale, popolo murino di taglia piccola</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Uomini ratto di origine magica o paradossale, popolo murino di taglia piccola</p>"
     },
     "source": "Brancalonia Macaronicon p.10-11",
     "movement": {
@@ -21,9 +19,7 @@
       "units": "ft"
     },
     "type": {
-      "value": "humanoid",
-      "subtype": "",
-      "custom": ""
+      "value": "humanoid"
     },
     "advancement": [
       {
@@ -52,7 +48,6 @@
         "value": {},
         "level": 0,
         "title": "Size",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
@@ -66,16 +61,13 @@
         "value": {},
         "level": 0,
         "title": "Darkvision",
-        "icon": "",
         "classRestriction": "primary"
       },
       {
         "_id": "sgflanndq587jrip",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.zixqjkp2goed9pkw"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -87,9 +79,7 @@
         "_id": "vslsmbyf4kpgn2fu",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.fi4a731y2546z6pb"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -101,9 +91,7 @@
         "_id": "bfo3m3kt1v6sddbf",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.ki65iso5zc1zdyu5"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -115,9 +103,7 @@
         "_id": "wxaq4g16hwuf6wm3",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.2jnuwl880de0jbsh"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -129,9 +115,7 @@
         "_id": "qcxyzljzsv1b0qvh",
         "type": "ItemGrant",
         "configuration": {
-          "items": [
-            "Compendium.brancalonia.brancalonia-features.Item.ntj6q6vs6pkzks2k"
-          ],
+          "items": [],
           "optional": false
         },
         "value": {},
@@ -139,7 +123,10 @@
         "title": "Agilità del Ratto",
         "icon": "icons/svg/upgrade.svg"
       }
-    ]
+    ],
+    "identifier": "pantegano",
+    "speed": 30,
+    "size": "medium"
   },
   "effects": [],
   "folder": null,

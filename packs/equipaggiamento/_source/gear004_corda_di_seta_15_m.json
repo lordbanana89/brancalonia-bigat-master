@@ -6,46 +6,35 @@
   "img": "icons/consumables/potions/bottle-round-corked-red.webp",
   "system": {
     "description": {
-      "value": "<p>Corda leggera ma resistente, spesso usata dagli avventurieri più ricchi.</p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>Corda leggera ma resistente, spesso usata dagli avventurieri più ricchi.</p>"
     },
     "source": "Manuale Base",
     "activation": {
-      "type": "",
-      "cost": null,
-      "condition": ""
+      "cost": null
     },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
+    "duration": {},
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "range": {
       "value": null,
-      "long": null,
-      "units": ""
+      "long": null
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "identified": true,
     "quantity": 1,
-    "weight": "3 kg",
+    "weight": 0,
     "price": {
       "value": 0,
       "denomination": "gp"
     },
     "rarity": "common",
-    "attunement": 0
+    "attunement": 0,
+    "identifier": "gear004_corda_di_seta_15_m"
   },
   "effects": [],
   "folder": null,

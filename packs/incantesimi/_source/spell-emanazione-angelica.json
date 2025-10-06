@@ -6,9 +6,7 @@
   "img": "icons/magic/light/orb-lightbulb-gray.webp",
   "system": {
     "description": {
-      "value": "<p>L'incantatore tocca una creatura consenziente che viene pervasa da un'aura di energia angelica e delle ali di luce si sprigionano dalla sua schiena. Finché l'incantesimo non termina, la creatura ottiene una velocità di volare di 9 metri, non può diventare malata, è dotata di resistenza ai danni da veleno e dispone di vantaggio ai tiri salvezza contro gli effetti che provocano qualsiasi condizione tra le seguenti: accecato, affascinato, assordato, avvelenato, paralizzato, spaventato e stordito.</p><h3>Note per il DM</h3><p><em>Emanazione Angelica è buff potente multiuso di Brancalonia. Combina mobilità e protezione. Ali luminose hanno impatto roleplay.</em></p>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p>L'incantatore tocca una creatura consenziente che viene pervasa da un'aura di energia angelica e delle ali di luce si sprigionano dalla sua schiena. Finché l'incantesimo non termina, la creatura ottiene una velocità di volare di 9 metri, non può diventare malata, è dotata di resistenza ai danni da veleno e dispone di vantaggio ai tiri salvezza contro gli effetti che provocano qualsiasi condizione tra le seguenti: accecato, affascinato, assordato, avvelenato, paralizzato, spaventato e stordito.</p><h3>Note per il DM</h3><p><em>Emanazione Angelica è buff potente multiuso di Brancalonia. Combina mobilità e protezione. Ali luminose hanno impatto roleplay.</em></p>"
     },
     "source": "Brancalonia Macaronicon p.51",
     "level": 3,
@@ -21,7 +19,6 @@
       "concentration": false
     },
     "materials": {
-      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -32,8 +29,7 @@
     },
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": ""
+      "cost": 1
     },
     "duration": {
       "value": 10,
@@ -46,42 +42,28 @@
     },
     "target": {
       "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "width": null
     },
     "save": {
-      "ability": "",
       "dc": null,
       "scaling": "spell"
     },
     "scaling": {
-      "mode": "none",
-      "formula": ""
+      "mode": "none"
     },
     "uses": {
       "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "per": null
     },
     "actionType": "util",
-    "attackBonus": "",
-    "chatFlavor": "",
     "critical": {
-      "threshold": null,
-      "damage": ""
+      "threshold": null
     },
     "damage": {
-      "parts": [],
-      "versatile": ""
+      "parts": []
     },
-    "formula": "",
-    "requirements": "",
-    "type": {
-      "value": "",
-      "subtype": ""
-    }
+    "type": {},
+    "identifier": "spell-emanazione-angelica"
   },
   "effects": [],
   "folder": null,
