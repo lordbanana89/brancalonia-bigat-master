@@ -189,7 +189,6 @@ Hooks.once('ready', async () => {
   const stats = BrancaloniaInitFix.getStatistics();
   
   moduleLogger.info(
-    BrancaloniaInitFix.MODULE_NAME,
     `Initialization complete in ${readyTime?.toFixed(2)}ms`,
     {
       modulesRegistered: stats.modulesRegistered,

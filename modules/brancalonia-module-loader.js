@@ -14,6 +14,7 @@ class BrancaloniaModuleLoader {
     this.loadedModules = new Set();
     this.moduleErrors = new Map();
     this.loadTimes = new Map();
+    this.loadingModules = new Map();
 
     this.moduleConfig = {
       // Core modules - Priority 0 (caricati per primi)
@@ -265,6 +266,11 @@ class BrancaloniaModuleLoader {
       return true;
     }
 
+    if (this.loadingModules.has(name)) {
+      moduleLogger.trace(`Module load already in progress: ${name}`);
+      return this.loadingModules.get(name);
+    }
+
     const module = this.modules.get(name);
     if (!module) {
       const error = new Error('Module not registered');
@@ -281,63 +287,73 @@ class BrancaloniaModuleLoader {
       return false;
     }
 
-    moduleLogger.debug(`Loading module: ${name}`);
-    const startTime = performance.now();
+    const loadPromise = (async () => {
+      moduleLogger.debug(`Loading module: ${name}`);
+      const startTime = performance.now();
+
+      try {
+        for (const dep of module.dependencies) {
+          if (!await this.loadModule(dep)) {
+            throw new Error(`Dependency failed: ${dep}`);
+          }
+        }
+
+        if (typeof module.loader === 'function') {
+          await module.loader();
+        } else if (typeof module.loader === 'string') {
+          await import(module.loader);
+        }
+
+        this.loadedModules.add(name);
+        const loadTime = performance.now() - startTime;
+        this.loadTimes.set(name, loadTime);
+
+        moduleLogger.info(`Loaded module: ${name} (${loadTime.toFixed(2)}ms)`);
+        
+        // Emit event
+        moduleLogger.events.emit('loader:module-loaded', {
+          module: name,
+          loadTime,
+          priority: module.priority,
+          lazy: module.lazy,
+          timestamp: Date.now()
+        });
+        
+        return true;
+      } catch (error) {
+        this.moduleErrors.set(name, error);
+        const errorMessage = `Failed to load module: ${name}`;
+
+        // Emit event
+        moduleLogger.events.emit('loader:module-failed', {
+          module: name,
+          error: error.message,
+          critical: module.critical,
+          timestamp: Date.now()
+        });
+
+        if (module.critical) {
+          moduleLogger.error(errorMessage, error);
+          // Safe UI notification - check if UI is available
+          if (typeof ui !== 'undefined' && ui.notifications) {
+            ui.notifications.error(`Critical module failed: ${name}`);
+          } else {
+            moduleLogger.error(`Critical module failed: ${name}`, error);
+          }
+          throw error;
+        } else {
+          moduleLogger.warn(errorMessage, error);
+          return false;
+        }
+      }
+    })();
+
+    this.loadingModules.set(name, loadPromise);
 
     try {
-      for (const dep of module.dependencies) {
-        if (!await this.loadModule(dep)) {
-          throw new Error(`Dependency failed: ${dep}`);
-        }
-      }
-
-      if (typeof module.loader === 'function') {
-        await module.loader();
-      } else if (typeof module.loader === 'string') {
-        await import(module.loader);
-      }
-
-      this.loadedModules.add(name);
-      const loadTime = performance.now() - startTime;
-      this.loadTimes.set(name, loadTime);
-
-      moduleLogger.info(`Loaded module: ${name} (${loadTime.toFixed(2)}ms)`);
-      
-      // Emit event
-      moduleLogger.events.emit('loader:module-loaded', {
-        module: name,
-        loadTime,
-        priority: module.priority,
-        lazy: module.lazy,
-        timestamp: Date.now()
-      });
-      
-      return true;
-    } catch (error) {
-      this.moduleErrors.set(name, error);
-      const errorMessage = `Failed to load module: ${name}`;
-
-      // Emit event
-      moduleLogger.events.emit('loader:module-failed', {
-        module: name,
-        error: error.message,
-        critical: module.critical,
-        timestamp: Date.now()
-      });
-
-      if (module.critical) {
-        moduleLogger.error(errorMessage, error);
-        // Safe UI notification - check if UI is available
-        if (typeof ui !== 'undefined' && ui.notifications) {
-          ui.notifications.error(`Critical module failed: ${name}`);
-        } else {
-          moduleLogger.error(`Critical module failed: ${name}`, error);
-        }
-        throw error;
-      } else {
-        moduleLogger.warn(errorMessage, error);
-        return false;
-      }
+      return await loadPromise;
+    } finally {
+      this.loadingModules.delete(name);
     }
   }
 
@@ -424,7 +440,6 @@ class BrancaloniaModuleLoader {
     const fastestModule = sortedTimes.length > 0 ? sortedTimes[sortedTimes.length - 1] : null;
 
     moduleLogger.info(
-      'ModuleLoader',
       `Module loading complete: ${loaded}/${total} loaded, ${failed} failed (${totalTime?.toFixed(2)}ms total)`,
       {
         avgLoadTime: avgTime?.toFixed(2) + 'ms',

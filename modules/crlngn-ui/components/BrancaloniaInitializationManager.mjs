@@ -67,27 +67,29 @@ export class BrancaloniaInitializationManager {
    * Esegue un singolo passo di inizializzazione
    */
   static async executeStep(step) {
-      moduleLogger.debug(`Executing step: ${step.name}`);
+    moduleLogger.debug(`Executing step: ${step.name}`);
     moduleLogger.startPerformance(`init-step-${step.name}`);
-    
+
     try {
       if (typeof step.step === 'function') {
         await step.step();
       } else if (typeof step.step === 'string') {
         await import(step.step);
       }
-      
+
       step.completed = true;
       const duration = moduleLogger.endPerformance(`init-step-${step.name}`);
-      
-        moduleLogger.info(`Completed step: ${step.name}`, { duration: `${duration.toFixed(2)}ms` });
-      
+      step.duration = duration;
+
+      moduleLogger.info(`Completed step: ${step.name}`, { duration: `${duration.toFixed(2)}ms` });
+
     } catch (error) {
       step.error = error;
       this.errors.push(error);
-      
+
       const duration = moduleLogger.endPerformance(`init-step-${step.name}`);
-      
+      step.duration = duration;
+
       if (step.critical) {
         moduleLogger.error(`Critical step failed: ${step.name}`, error);
         throw error;

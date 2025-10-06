@@ -162,6 +162,47 @@ describe('BrancaloniaModuleLoader', () => {
       expect(result).toBe(false);
       expect(mainLoader).not.toHaveBeenCalled();
     });
+
+    it('should reuse in-flight dependency loads to prevent duplicate initialization', async () => {
+      const executionLog = [];
+      let resolveDependency;
+
+      const dependencyLoader = vi.fn().mockImplementation(() => {
+        executionLog.push('dependency-start');
+        return new Promise((resolve) => {
+          resolveDependency = () => {
+            executionLog.push('dependency-end');
+            resolve(true);
+          };
+        });
+      });
+
+      const mainLoader = vi.fn().mockImplementation(() => {
+        executionLog.push('main');
+      });
+
+      moduleLoader.registerModule('dependency', dependencyLoader);
+      moduleLoader.registerModule('main-module', mainLoader, {
+        dependencies: ['dependency']
+      });
+
+      const dependencyPromise = moduleLoader.loadModule('dependency');
+      const mainPromise = moduleLoader.loadModule('main-module');
+
+      await Promise.resolve();
+      expect(dependencyLoader).toHaveBeenCalledTimes(1);
+      expect(typeof resolveDependency).toBe('function');
+
+      resolveDependency();
+
+      await Promise.all([dependencyPromise, mainPromise]);
+
+      expect(dependencyLoader).toHaveBeenCalledTimes(1);
+      expect(mainLoader).toHaveBeenCalledTimes(1);
+      expect(moduleLoader.loadedModules.has('dependency')).toBe(true);
+      expect(moduleLoader.loadedModules.has('main-module')).toBe(true);
+      expect(executionLog).toEqual(['dependency-start', 'dependency-end', 'main']);
+    });
   });
 
   describe('Batch Loading', () => {
