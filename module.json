@@ -319,7 +319,7 @@
   },
   "url": "https://github.com/lordbanana89/brancalonia-bigat-master",
   "manifest": "https://raw.githubusercontent.com/lordbanana89/brancalonia-bigat-master/main/module.json",
-  "download": "https://github.com/lordbanana89/brancalonia-bigat-master/archive/refs/heads/main.zip",
+  "download": "https://github.com/lordbanana89/brancalonia-bigat-master/raw/main/dist/brancalonia-bigat.zip",
   "license": "LICENSE",
   "readme": "README.md",
   "media": [
